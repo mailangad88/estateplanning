@@ -30,6 +30,11 @@ export interface ConsentRecord {
   smsConsent: boolean;
   smsConsentText: string | null;
   acknowledgedNoRelationship: boolean;
+  /**
+   * Whether the person agreed to ad measurement (offline conversions sent to Google Ads and Meta).
+   * Absent means the form never asked. The conversion exporter skips only an explicit false.
+   */
+  marketingConsent?: boolean;
   pageUrl: string;
   ip: string | null;
   userAgent: string | null;

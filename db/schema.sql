@@ -347,6 +347,48 @@ CREATE TABLE crm_deliveries (
 CREATE INDEX crm_deliveries_lead_idx ON crm_deliveries (lead_id);
 CREATE INDEX crm_deliveries_status_idx ON crm_deliveries (status, last_attempt_at);
 
+-- Conversions log (src/server/conversions): one row per lead, conversion type and provider, so each event is sent once.
+-- id is '<provider>:<type>:<lead_id>'. Ids, times, status and value only: contact details are rebuilt from the lead at send time.
+CREATE TABLE conversion_events (
+  id          text PRIMARY KEY,
+  lead_id     text NOT NULL REFERENCES leads(id),
+  provider    text NOT NULL CHECK (provider IN ('google_ads','meta')),
+  type        text NOT NULL CHECK (type IN ('qualified_lead','consult_booked','consult_held','retainer_signed')),
+  event_id    text NOT NULL,                     -- dedupe key sent to Meta
+  occurred_at timestamptz NOT NULL,
+  value_cents bigint CHECK (value_cents IS NULL OR value_cents >= 0),
+  currency    text NOT NULL DEFAULT 'USD',
+  status      text NOT NULL CHECK (status IN ('pending','sent','failed','abandoned','skipped')),
+  reason      text,
+  attempts    integer NOT NULL DEFAULT 0,
+  channel     text,                              -- 'api', 'mock' or 'manual_csv'
+  created_at  timestamptz NOT NULL,
+  updated_at  timestamptz NOT NULL,
+  sent_at     timestamptz
+);
+CREATE INDEX conversion_events_lead_idx ON conversion_events (lead_id);
+CREATE INDEX conversion_events_status_idx ON conversion_events (status, provider);
+
+-- Review-request tracking (src/server/nurture/reviews.ts): proves every eligible client was asked.
+-- id is 'review-<lead_id>'. Exclusions use written, rule-based codes only, never sentiment.
+CREATE TABLE review_requests (
+  id               text PRIMARY KEY,
+  lead_id          text NOT NULL REFERENCES leads(id),
+  matter_type      text NOT NULL,
+  anchor_at        timestamptz NOT NULL,         -- signing or closing: the T+0 the offsets count from
+  eligible         boolean NOT NULL,
+  exclusion_code   text CHECK (exclusion_code IN ('GUARDIANSHIP','OPTOUT','UNIFORM_HOLD','DISPUTE_HOLD','SENSITIVE_TRACK')),
+  exclusion_note   text,
+  asked_at         timestamptz,
+  reminded_at      timestamptz,
+  reminder_channel text CHECK (reminder_channel IN ('sms','email')),
+  opted_out_at     timestamptz,
+  posted_at        timestamptz,                  -- self-reported ("I posted"), never inferred
+  created_at       timestamptz NOT NULL,
+  CHECK ((eligible AND exclusion_code IS NULL) OR (NOT eligible AND exclusion_code IS NOT NULL))
+);
+CREATE UNIQUE INDEX review_requests_lead_idx ON review_requests (lead_id);
+
 -- Hash-chained, append-only (see src/server/audit/log.ts).
 CREATE TABLE audit_events (
   id            text PRIMARY KEY,
@@ -531,6 +573,8 @@ ALTER TABLE sequence_enrollments ENABLE ROW LEVEL SECURITY;  ALTER TABLE sequenc
 ALTER TABLE suppressions         ENABLE ROW LEVEL SECURITY;  ALTER TABLE suppressions         FORCE ROW LEVEL SECURITY;
 ALTER TABLE fact_verifications   ENABLE ROW LEVEL SECURITY;  ALTER TABLE fact_verifications   FORCE ROW LEVEL SECURITY;
 ALTER TABLE crm_deliveries       ENABLE ROW LEVEL SECURITY;  ALTER TABLE crm_deliveries       FORCE ROW LEVEL SECURITY;
+ALTER TABLE conversion_events    ENABLE ROW LEVEL SECURITY;  ALTER TABLE conversion_events    FORCE ROW LEVEL SECURITY;
+ALTER TABLE review_requests      ENABLE ROW LEVEL SECURITY;  ALTER TABLE review_requests      FORCE ROW LEVEL SECURITY;
 ALTER TABLE audit_events         ENABLE ROW LEVEL SECURITY;  ALTER TABLE audit_events         FORCE ROW LEVEL SECURITY;
 
 -- Workers (public intake form, e-sign webhooks, nurture engine, routing) are trusted
@@ -552,6 +596,8 @@ CREATE POLICY service_all ON billable_events      FOR ALL TO app_service USING (
 CREATE POLICY service_all ON sequence_enrollments FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON suppressions         FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON crm_deliveries       FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON conversion_events    FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON review_requests      FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_read ON fee_rule_versions   FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON fact_verifications  FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON invoices            FOR SELECT TO app_service USING (true);
@@ -685,6 +731,17 @@ CREATE POLICY crm_deliveries_select ON crm_deliveries FOR SELECT TO app_user USI
   OR (app_role() = 'firm_admin' AND lead_access(lead_id) = 'full')
 );
 
+-- conversion_events (conversions admin page): read-only for platform_admin and marketing. Ids, status and value only.
+CREATE POLICY conversion_events_select ON conversion_events FOR SELECT TO app_user USING (
+  app_role() IN ('platform_admin','marketing')
+);
+
+-- review_requests (review tracking report): read-only; platform_admin sees all, firm_admin only their firm's leads.
+CREATE POLICY review_requests_select ON review_requests FOR SELECT TO app_user USING (
+  app_role() = 'platform_admin'
+  OR (app_role() = 'firm_admin' AND lead_access(lead_id) = 'full')
+);
+
 -- fees: platform_admin only; firm_admin reads their firm's non-draft invoices.
 CREATE POLICY fee_rules_admin ON fee_rule_versions FOR ALL TO app_user
   USING (app_role() = 'platform_admin') WITH CHECK (app_role() = 'platform_admin');
@@ -720,7 +777,7 @@ GRANT SELECT, INSERT                 ON documents, comments, activities, invoice
 GRANT SELECT, INSERT                 ON fact_verifications TO app_user;
 GRANT UPDATE                         ON invoices TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON sequence_enrollments TO app_user;
-GRANT SELECT                         ON lead_offer_cards, client_consults, lead_funnel_daily, crm_deliveries TO app_user;
+GRANT SELECT                         ON lead_offer_cards, client_consults, lead_funnel_daily, crm_deliveries, conversion_events, review_requests TO app_user;
 
 -- Audit trail: INSERT only. No SELECT/UPDATE/DELETE/TRUNCATE grant to the app at all
 -- except SELECT for the platform_admin/firm_admin policy above.
@@ -731,7 +788,7 @@ REVOKE UPDATE, DELETE, TRUNCATE ON fact_verifications FROM PUBLIC, app_user, app
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, leads, assignments, documents, comments,
   activities, consults, engagements, tasks, billable_events, sequence_enrollments, suppressions TO app_service;
-GRANT SELECT, INSERT, UPDATE ON crm_deliveries TO app_service;
+GRANT SELECT, INSERT, UPDATE ON crm_deliveries, conversion_events, review_requests TO app_service;
 GRANT SELECT, INSERT ON invoices TO app_service;
 GRANT SELECT ON fee_rule_versions TO app_service;
 GRANT SELECT ON fact_verifications TO app_service; -- approvals are written in the approver's own session

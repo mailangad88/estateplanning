@@ -356,3 +356,62 @@ export interface CrmDelivery {
   lastAttemptAt: string;
   deliveredAt?: string;
 }
+
+export type ConversionProvider = "google_ads" | "meta";
+export type ConversionType = "qualified_lead" | "consult_booked" | "consult_held" | "retainer_signed";
+/**
+ * - pending: due and not yet sent
+ * - sent: accepted by the provider (or exported for a manual upload)
+ * - failed: a retry could still work
+ * - abandoned: retries ran out, or the provider rejected it; needs a person
+ * - skipped: deliberately not sent (`reason` says why: consent, sensitive, too old, no identifier)
+ */
+export type ConversionStatus = "pending" | "sent" | "failed" | "abandoned" | "skipped";
+
+/**
+ * Conversions log: one row per lead, conversion type and provider, so an event is sent once.
+ * Holds ids, times, status and the value only, never contact details (those are rebuilt from the lead at send time).
+ * `id` is `${provider}:${type}:${leadId}`; `eventId` is the dedupe key sent to Meta.
+ */
+export interface ConversionEvent {
+  id: string;
+  leadId: string;
+  provider: ConversionProvider;
+  type: ConversionType;
+  eventId: string;
+  occurredAt: string;
+  valueCents?: number;
+  currency: string;
+  status: ConversionStatus;
+  reason?: string;
+  attempts: number;
+  /** "api", "mock" or "manual_csv" */
+  channel?: string;
+  createdAt: string;
+  updatedAt: string;
+  sentAt?: string;
+}
+
+/**
+ * Review-request tracking, one row per client matter (the tracking sheet in gbp-posts-and-reviews.md 3.9).
+ * It exists to prove every eligible client was asked. Exclusions use written, rule-based codes only.
+ * `id` is `review-${leadId}`.
+ */
+export type ReviewExclusionCode = "GUARDIANSHIP" | "OPTOUT" | "UNIFORM_HOLD" | "DISPUTE_HOLD" | "SENSITIVE_TRACK";
+export interface ReviewRequest {
+  id: string;
+  leadId: string;
+  matterType: MatterType;
+  /** Signing (or closing) date: the T+0 the offsets count from */
+  anchorAt: string;
+  eligible: boolean;
+  exclusionCode?: ReviewExclusionCode;
+  exclusionNote?: string;
+  askedAt?: string;
+  remindedAt?: string;
+  reminderChannel?: "sms" | "email";
+  optedOutAt?: string;
+  /** Self-reported only. Never inferred. */
+  postedAt?: string;
+  createdAt: string;
+}

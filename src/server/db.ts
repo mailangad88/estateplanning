@@ -10,6 +10,7 @@ import type {
   AuditEvent,
   Comment,
   Consult,
+  ConversionEvent,
   CrmDelivery,
   DocumentRecord,
   Engagement,
@@ -17,6 +18,7 @@ import type {
   Lawyer,
   Lead,
   Person,
+  ReviewRequest,
   Task,
   User,
 } from "@/server/types";
@@ -125,6 +127,8 @@ export interface Db {
   factVerifications: Collection<FactVerification>;
   automationState: Collection<AutomationState>;
   crmDeliveries: Collection<CrmDelivery>;
+  conversionEvents: Collection<ConversionEvent>;
+  reviewRequests: Collection<ReviewRequest>;
   audit: AppendOnly<AuditEvent>;
 }
 
@@ -158,6 +162,8 @@ export function createMemoryDb(): Db {
     factVerifications: new MemoryCollection(),
     automationState: new MemoryCollection(),
     crmDeliveries: new MemoryCollection(),
+    conversionEvents: new MemoryCollection(),
+    reviewRequests: new MemoryCollection(),
     audit: new MemoryAppendOnly(),
   };
 }

@@ -77,8 +77,29 @@ const SOURCE_PARAMS = [
   ["utm_term", "utmTerm"],
   ["utm_content", "utmContent"],
   ["gclid", "gclid"],
+  ["gbraid", "gbraid"],
+  ["wbraid", "wbraid"],
   ["fbclid", "fbclid"],
 ] as const;
+
+function cookie(name: string): string | undefined {
+  try {
+    const hit = document.cookie.split("; ").find((c) => c.startsWith(`${name}=`));
+    return hit ? decodeURIComponent(hit.slice(name.length + 1)) || undefined : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+/**
+ * Meta's browser ids. _fbp and _fbc are first-party cookies set by the Meta pixel when one is installed.
+ * Without the pixel, _fbc is rebuilt from fbclid in Meta's documented format (fb.1.<ms>.<fbclid>).
+ */
+export function metaBrowserIds(fbclid: string | undefined, now = Date.now()): { fbc?: string; fbp?: string } {
+  const fbp = cookie("_fbp");
+  const fbc = cookie("_fbc") ?? (fbclid ? `fb.1.${now}.${fbclid}` : undefined);
+  return { ...(fbc ? { fbc } : {}), ...(fbp ? { fbp } : {}) };
+}
 
 /**
  * Attribution for this browsing session. The first page with campaign parameters wins,
@@ -88,13 +109,14 @@ export function sessionSource(): Record<string, string> {
   const saved = read<Record<string, string>>(session, SOURCE_KEY);
   const params = new URLSearchParams(window.location.search);
   const hasCampaign = SOURCE_PARAMS.some(([p]) => params.get(p));
-  if (saved && !hasCampaign) return saved;
+  if (saved && !hasCampaign) return { ...metaBrowserIds(undefined), ...saved }; // the pixel may have set its cookies after the first page
   const s: Record<string, string> = { landingPage: window.location.href };
   if (document.referrer) s.referrer = document.referrer;
   for (const [param, key] of SOURCE_PARAMS) {
     const v = params.get(param);
     if (v) s[key] = v;
   }
+  Object.assign(s, metaBrowserIds(s.fbclid));
   write(session, SOURCE_KEY, s);
   return s;
 }
