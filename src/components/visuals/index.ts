@@ -9,3 +9,4 @@ export { Icon, iconNames } from "./icons/Icon";
 export * from "./diagrams";
 export * from "./illustrations";
 export * from "./covers";
+export * from "./video";

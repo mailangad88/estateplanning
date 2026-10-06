@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { firm } from "@/config/firm";
 import "./globals.css";
+import "@/components/visuals/visuals.css";
 
 export const metadata: Metadata = {
   title: `${firm.brandName} | Estate planning with a real attorney`,

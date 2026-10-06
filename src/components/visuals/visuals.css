@@ -45,3 +45,10 @@
 .v-video video { display: block; width: 100%; height: auto; border-radius: 12px; background: var(--v-sand, #f1e9dc); }
 .v-video details { margin-top: 8px; font-size: 0.9rem; }
 
+.v-chapters { padding-left: 0; list-style: none; }
+.v-chapters button { font: inherit; font-variant-numeric: tabular-nums; background: none; border: 0; color: var(--accent, #1f5f8b); cursor: pointer; padding: 0; text-decoration: underline; }
+.v-video-grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); padding: 0; list-style: none; }
+.v-video-grid img { display: block; width: 100%; height: auto; border-radius: 8px; }
+.v-gallery { display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.v-gallery .card h3 { font-size: 0.95rem; margin: 8px 0 0; }
+.v-gallery code { font-size: 0.8rem; color: var(--muted, #5b6470); }
