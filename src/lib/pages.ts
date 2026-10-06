@@ -1,3 +1,4 @@
+import { getMagnets } from "@/lib/magnets";
 import { TOOLS } from "@/config/tools";
 import { EXPLAINERS } from "@/explainers/data";
 import { getChecklists, getComparisons, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
@@ -29,6 +30,7 @@ export function allPages(): SitePage[] {
     { path: "/compare", title: "Comparisons", description: "Side-by-side comparisons.", updated: TODAY, section: "Main" },
     { path: "/life-events", title: "Life events", description: "Planning for life's big moments.", updated: TODAY, section: "Main" },
     { path: "/tools", title: "Tools", description: "Free calculators and tools.", updated: TODAY, section: "Main" },
+    { path: "/free", title: "Free resource library", description: "Free printable checklists, worksheets, planners, kits and email courses.", updated: TODAY, section: "Main" },
     { path: "/checklists", title: "Checklists", description: "Printable checklists and worksheets.", updated: TODAY, section: "Main" },
     { path: "/explainers", title: "Explainers", description: "Animated explainers.", updated: TODAY, section: "Main" },
     { path: "/course", title: "7-day course", description: "Your estate plan in 7 days.", updated: TODAY, section: "Main" },
@@ -41,6 +43,7 @@ export function allPages(): SitePage[] {
   for (const c of getComparisons()) pages.push({ path: `/compare/${c.slug}`, title: c.title, description: c.description, updated: c.updated, section: "Comparisons" });
   for (const l of getLifeEvents()) pages.push({ path: `/life-events/${l.slug}`, title: l.title, description: l.description, updated: l.updated, section: "Life events" });
   for (const k of getChecklists()) pages.push({ path: `/checklists/${k.slug}`, title: k.title, description: k.description, updated: k.updated, section: "Checklists" });
+  for (const m of getMagnets()) pages.push({ path: `/free/${m.slug}`, title: m.title, description: m.description, updated: m.updated, section: "Free resources" });
   for (const t of TOOLS) pages.push({ path: `/tools/${t.slug}`, title: t.title, description: t.description, updated: TODAY, section: "Tools" });
   for (const e of EXPLAINERS) pages.push({ path: `/explainers/${e.slug}`, title: e.title, description: e.description, updated: TODAY, section: "Explainers" });
   for (const l of getLessons()) pages.push({ path: `/course/${l.day}`, title: l.title, description: l.description, updated: l.updated, section: "7-day course" });

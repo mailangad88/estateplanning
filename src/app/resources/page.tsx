@@ -4,7 +4,7 @@ import { TOOLS } from "@/config/tools";
 import { EXPLAINERS } from "@/explainers/data";
 import { getChecklists, getComparisons, getFaqs, getGlossary, getGuides, getLessons, getLifeEvents, getMistakes, getPosts } from "@/lib/content";
 import { CardGrid, PageHeader } from "@/components/ui";
-import { GUIDES } from "@/content/guides";
+import { getMagnets } from "@/lib/magnets";
 
 export const metadata: Metadata = {
   title: "Free estate planning resources",
@@ -19,6 +19,7 @@ export default function Resources() {
     { href: "/compare", label: "Comparisons", count: getComparisons().length, body: "Side-by-side choices, factor by factor." },
     { href: "/life-events", label: "Life events", count: getLifeEvents().length, body: "What to do after a big change." },
     { href: "/tools", label: "Calculators and tools", count: TOOLS.length, body: "Run the numbers privately." },
+    { href: "/free", label: "Free downloads and email courses", count: getMagnets().length, body: "Workbooks, planners, kits and templates to print and keep." },
     { href: "/checklists", label: "Checklists and worksheets", count: getChecklists().length, body: "Tick off on screen or print." },
     { href: "/explainers", label: "Animated explainers", count: EXPLAINERS.length, body: "Two-minute videos with transcripts." },
     { href: "/course", label: "7-day course", count: getLessons().length, body: "One lesson and one task a day." },
@@ -40,9 +41,14 @@ export default function Resources() {
           </li>
         ))}
       </ul>
-      <h2>Printable guides to download</h2>
-      <p>Longer workbooks you can save as a PDF. We email you a copy so you can find it later.</p>
-      <CardGrid items={GUIDES.map((g) => ({ href: `/resources/${g.slug}`, title: g.title, description: g.summary, tag: `${g.pages} pages` }))} />
+      <h2>Popular free downloads</h2>
+      <p>Printable workbooks and email courses. We email you a copy so you can find it later.</p>
+      <CardGrid
+        items={getMagnets()
+          .filter((m) => ["estate-planning-checklist", "guardian-for-your-kids-worksheet", "estate-plan-document-locator", "executor-first-30-days-guide", "trust-funding-checklist", "new-parents-5-day-course"].includes(m.slug))
+          .map((m) => ({ href: `/free/${m.slug}`, title: m.title, description: m.promise, tag: "Free download" }))}
+      />
+      <p><Link href="/free">See all {getMagnets().length} free downloads</Link></p>
     </>
   );
 }

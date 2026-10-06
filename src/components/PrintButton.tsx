@@ -2,7 +2,7 @@
 
 export default function PrintButton() {
   return (
-    <button type="button" className="button small" onClick={() => window.print()}>
+    <button type="button" className="button" onClick={() => window.print()}>
       Print or save as PDF
     </button>
   );

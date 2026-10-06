@@ -6,7 +6,7 @@ import { deliverLead, type LeadRecord } from "@/lib/crm";
 import { effectiveContactMethod, leadSubmissionSchema } from "@/lib/lead";
 import { educationTopics } from "@/lib/quiz";
 import { captureTags, scoreLead, segmentTags } from "@/lib/scoring";
-import { findGuide } from "@/content/guides";
+import { getMagnet } from "@/lib/magnets";
 
 export async function POST(request: Request) {
   let json: unknown;
@@ -26,7 +26,7 @@ export async function POST(request: Request) {
   // Honeypot filled: answer like a success so bots learn nothing, but drop the lead.
   if (lead.website) return NextResponse.json({ ok: true, served: true, topics: [] });
 
-  const guide = lead.capture.resource ? findGuide(lead.capture.resource) : undefined;
+  const guide = lead.capture.resource ? getMagnet(lead.capture.resource) : undefined;
   if (lead.capture.tool === "guide" && !guide) {
     return NextResponse.json({ error: "That guide could not be found" }, { status: 422 });
   }
@@ -56,7 +56,7 @@ export async function POST(request: Request) {
       capture: lead.capture,
       priorTools: lead.priorTools,
     }),
-    segments: [...new Set([...segmentTags(lead.answers), ...captureTags(lead.capture, guide?.segments)])],
+    segments: [...new Set([...segmentTags(lead.answers), ...captureTags(lead.capture)])],
     source: lead.source,
     capture: lead.capture,
     visitorId: lead.visitorId,
@@ -87,6 +87,6 @@ export async function POST(request: Request) {
     ok: true,
     served: record.score.tier !== "not_a_fit",
     topics: educationTopics(lead.answers),
-    ...(guide ? { guideUrl: `/resources/${guide.slug}/read` } : {}),
+    ...(guide ? { guideUrl: `/free/${guide.slug}/view` } : {}),
   });
 }
