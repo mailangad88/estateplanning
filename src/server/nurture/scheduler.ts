@@ -106,7 +106,7 @@ export const GRIEF_RESOURCES = ["after-a-death-checklist", "executor-first-30-da
  * or a tool used in heir mode (probate and executor calculators).
  */
 export function isGriefLead(lead: Pick<Lead, "segments" | "matterType" | "capture">): boolean {
-  if (lead.matterType === "administration" || lead.segments.includes("estate_administration")) return true;
+  if (lead.matterType === "administration" || lead.segments.some((s) => ["estate_administration", "heir_probate", "executor_or_heir"].includes(s))) return true;
   if (lead.capture?.resource && GRIEF_RESOURCES.includes(lead.capture.resource)) return true;
   return lead.capture?.result?.mode === "heir";
 }

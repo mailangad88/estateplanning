@@ -41,7 +41,7 @@ export function matterTypeFromQuiz(a: Partial<QuizAnswers>): MatterType {
 export function offerSummary(lead: Pick<Lead, "matterType" | "state" | "county" | "urgent" | "score">): string {
   const where = lead.county ? `${lead.county} County, ${lead.state}` : lead.state;
   const urgency = lead.urgent ? "Time-sensitive. " : "";
-  return `${urgency}${MATTER_LABELS[lead.matterType]} in ${where}. Intake score ${lead.score.score} (${lead.score.tier}).`;
+  return `${urgency}${MATTER_LABELS[lead.matterType]} in ${where}. Intake score ${lead.score.score} (grade ${lead.score.grade}).`;
 }
 
 function normalizePhone(p: string) {

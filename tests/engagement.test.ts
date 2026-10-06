@@ -36,7 +36,7 @@ function setup() {
   db.persons.insert({ id: "p1", firstName: "Pat", lastName: "Client", email: "pat@x.test", phone: "+15555550100", language: "es", state: "TX" });
   db.leads.insert({
     id: "lead1", personId: "p1", createdAt: T0.toISOString(), stage: "consult_held", stageHistory: [], matterType: "new_plan", state: "TX", urgent: false,
-    score: { score: 80, tier: "hot", redFlags: [] }, segments: [], source: {},
+    score: { score: 80, tier: "hot", grade: "A", urgent: false, components: [], redFlags: [] }, segments: [], source: {},
     consent: buildConsentRecord({ smsConsent: true, acknowledgedNoRelationship: true, pageUrl: "/x", ip: null, userAgent: null, now: T0 }),
     offerSummary: "s",
     conflictCard: { clientName: "Pat Client", parties: [], matterType: "new_plan", state: "TX", clearance: "clear" },

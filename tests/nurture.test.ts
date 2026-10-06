@@ -34,7 +34,7 @@ function fixture(opts: { state?: string; sms?: boolean; segments?: string[]; ans
     matterType: "new_plan",
     state,
     urgent: false,
-    score: { score: 60, tier: "warm", redFlags: [] },
+    score: { score: 60, tier: "warm", grade: "B", urgent: false, components: [], redFlags: [] },
     segments: opts.segments ?? [],
     source: {},
     consent: buildConsentRecord({ smsConsent: opts.sms ?? true, acknowledgedNoRelationship: true, pageUrl: "https://x.test", ip: null, userAgent: null, now: T0 }),

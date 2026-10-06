@@ -52,6 +52,10 @@ export interface CaseHeader {
   urgent: boolean;
   score: number;
   tier: string;
+  /** A/B/C by score; `urgent` is separate */
+  grade?: string;
+  /** Why the lead scored what it did. Left out of the pre-acceptance view. */
+  scoreComponents?: { label: string; points: number }[];
   stage: Lead["stage"];
   assignedLawyer?: string;
   /** For an open offer: when it expires */
@@ -156,6 +160,8 @@ export function buildCaseView(db: Db, actor: Actor, leadId: string, now = new Da
     urgent: lead.urgent,
     score: lead.score.score,
     tier: lead.score.tier,
+    grade: lead.score.grade,
+    scoreComponents: access === "conflict_card" ? undefined : lead.score.components?.map((c) => ({ label: c.label, points: c.points })),
     stage: lead.stage,
     assignedLawyer: lawyer?.name,
     offerExpiresAt: openOffer?.expiresAt,
