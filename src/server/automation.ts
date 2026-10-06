@@ -10,6 +10,7 @@
  */
 import type { CrmSync } from "@/server/crm/sync";
 import type { AutomationState, Db } from "@/server/db";
+import { syncReviewRequests } from "@/server/nurture/reviews";
 import { enrollForNewLead, onExit, onStageChange, sweepQuietLeads } from "@/server/nurture/scheduler";
 import { applyTriage } from "@/server/services/triage";
 import type { ExitReason, Stage } from "@/server/types";
@@ -26,12 +27,13 @@ export interface AutomationResult {
   crmSynced: number;
   crmFailures: number;
   movedToLongTerm: number;
+  reviewRequestsStarted: number;
 }
 
 export async function runAutomations(db: Db, crm: CrmSync | null, now = new Date()): Promise<AutomationResult> {
   const state = await loadState(db);
   const events = (await db.audit.list((e) => e.seq > state.cursorSeq)).sort((a, b) => a.seq - b.seq);
-  const result: AutomationResult = { processedEvents: events.length, enrolled: 0, stageChanges: 0, exits: 0, crmSynced: 0, crmFailures: 0, movedToLongTerm: 0 };
+  const result: AutomationResult = { processedEvents: events.length, enrolled: 0, stageChanges: 0, exits: 0, crmSynced: 0, crmFailures: 0, movedToLongTerm: 0, reviewRequestsStarted: 0 };
 
   const touchedLeads = new Set<string>();
   const newLeads: string[] = [];
@@ -93,6 +95,8 @@ export async function runAutomations(db: Db, crm: CrmSync | null, now = new Date
   for (const id of comments) await crmCall(() => crm!.syncComment(db, id));
 
   result.movedToLongTerm = (await sweepQuietLeads(db, now)).length;
+  // Review requests missed by the stage hook (and opt-outs to copy onto the tracking rows).
+  result.reviewRequestsStarted = (await syncReviewRequests(db, now)).started.length;
   // Advance only past the events read at the start: anything written meanwhile (including this run's
   // own sync and nurture events) is read next time, where it reconciles to a no-op if nothing changed.
   const lastSeq = events.at(-1)?.seq ?? state.cursorSeq;
