@@ -12,7 +12,7 @@ import { magnetsForState } from "@/lib/magnets";
 import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
 import { servedStates } from "@/config/firm";
-import { findByUrl, getCities, getStateGuide, getStateGuides, isIndexable, refToUrl, type StateFacts } from "@/lib/library";
+import { findByUrl, getCities, getClusterArticles, getPillar, getStateGuide, getStateGuides, isIndexable, refToUrl, type StateFacts } from "@/lib/library";
 import { breadcrumbSchema, faqSchema, graph, stateGuideSchema } from "@/lib/schema";
 import { getStates as getLocalStatePages, type StatePage } from "@/lib/states";
 import { Breadcrumbs as UiBreadcrumbs, Cta, FaqList, ReviewNote } from "@/components/ui";
@@ -108,6 +108,10 @@ export default async function StatePage({ params }: { params: Promise<Params> })
     .filter((x) => x !== undefined && "title" in x)
     .map((x) => x as { url: string; title: string; description: string });
 
+  // A state with its own library cluster (the launch state) links every page in it.
+  const statePillar = getPillar(s.slug);
+  const stateLibrary = statePillar ? [statePillar, ...getClusterArticles(s.slug)] : [];
+
   return (
     <article className="content">
       <JsonLd data={graph(stateGuideSchema(s), breadcrumbSchema(crumbs), faqSchema(faqs))} />
@@ -167,6 +171,13 @@ export default async function StatePage({ params }: { params: Promise<Params> })
             <Link href="/plan-finder">find the plan that fits your family</Link>.
           </p>
         </section>
+      )}
+      {stateLibrary.length > 0 && (
+        <LinkList
+          id="state-library"
+          title={`${s.name} guides in depth`}
+          items={stateLibrary.map((a) => ({ url: a.url, title: a.title, description: a.description }))}
+        />
       )}
       <LinkList
         id="state-resources"

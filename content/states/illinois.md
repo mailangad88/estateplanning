@@ -5,7 +5,7 @@ title: "Estate planning in Illinois: wills, trusts and probate"
 description: "Illinois estate planning: two-witness wills, a $4 million state estate tax exclusion, the $150,000 small estate affidavit and transfer on death instruments."
 updated: "2026-10-06"
 answer: >-
-  Illinois wills need two credible witnesses but no notary, and handwritten wills are not valid. Illinois has its own estate tax with a $4 million exclusion, far below the federal $15 million. A small estate affidavit works for estates up to $150,000 with no real estate, and the original will must be filed with the court within 30 days of death.
+  Illinois wills need two credible witnesses but no notary, and handwritten wills are not valid. Illinois has its own estate tax with a $4 million exclusion, far below the federal $15 million. A small estate affidavit works for estates up to $150,000 with no real estate, and whoever holds the original will must file it with the court as soon as the person dies.
 facts:
   willSigning: "Written, signed by the testator (18 or older), and attested in the testator's presence by two credible witnesses. Notarization is not required."
   selfProving: "Yes. A witness attestation clause signed at execution lets the court admit the will without live witness testimony (755 ILCS 5/6-4)."
@@ -25,7 +25,7 @@ faqs:
   - q: "How much can be in an Illinois estate before the state estate tax applies?"
     a: "Illinois taxes estates over $4 million, an amount that does not move with the federal exemption. A family can owe Illinois tax while owing nothing federally, so planning for married couples often focuses on how assets are split between spouses."
   - q: "Do I have to file the will with the court after someone dies in Illinois?"
-    a: "Yes. Whoever has the original will must file it with the clerk of the circuit court in the county of the decedent's residence within 30 days of learning of the death, even if no probate case is opened."
+    a: "Yes. Whoever has the original will must file it with the clerk of the circuit court in the county of the decedent's residence immediately after the death (755 ILCS 5/6-1), even if no probate case is opened. Hiding a will for 30 days after learning of the death is a felony."
   - q: "Can I use a small estate affidavit if the deceased owned a house?"
     a: "No. Illinois small estate affidavits are limited to estates with no real estate. If the decedent owned a home in their sole name, the family generally needs a probate case or a recorded transfer on death instrument."
   - q: "Are handwritten wills valid in Illinois?"
@@ -47,7 +47,7 @@ A spouse who is left out or given little can renounce the will and take one-thir
 
 Probate takes place in the circuit court of the county where the decedent lived, under the Illinois Probate Act of 1975. Illinois has a few features that families should know:
 
-1. **Filing the will is mandatory.** Anyone holding the original will must deliver it to the circuit clerk within 30 days after learning of the death.
+1. **Filing the will is mandatory.** Anyone holding the original will must file it with the circuit clerk immediately after the death (755 ILCS 5/6-1). Keeping it hidden for 30 days after learning of the death is a crime.
 2. **Independent administration is the usual route.** If the will allows it and no one objects, the executor can handle most steps without court orders at each stage, which saves time and money.
 3. **Creditor claims run on a fixed clock.** After the executor publishes notice, creditors have a limited window of at least six months from first publication to file claims, and that window is a major reason estates stay open for most of a year.
 4. **Real estate drives the timeline.** A house in the decedent's sole name typically means opening a case.

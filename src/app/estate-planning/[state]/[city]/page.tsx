@@ -74,9 +74,23 @@ export default async function CityPage({ params }: { params: Promise<Params> }) 
         <PageMeta updated={c.updated} />
       </PageHero>
       <h2>What {c.name} families should know</h2>
-      {c.localNotes.map((n) => (
-        <p key={n}>{n}</p>
-      ))}
+      {c.localNotes.map((n) => {
+        // Notes cite their official source inline as "(source: https://...)"; show it as a link.
+        const m = /\s*\(source: (https?:\/\/[^\s)]+)\)/.exec(n);
+        return (
+          <p key={n}>
+            {m ? n.replace(m[0], "") : n}
+            {m && (
+              <>
+                {" "}
+                <a href={m[1]} rel="nofollow noopener" target="_blank">
+                  (source)
+                </a>
+              </>
+            )}
+          </p>
+        );
+      })}
       {c.probateCourt && (
         <>
           <h2>Where probate happens for {c.name} residents</h2>

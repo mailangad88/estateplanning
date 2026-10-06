@@ -25,3 +25,17 @@ Rules that apply to every template:
 - Every page links to its pillar, two or more pages in other clusters, and a free tool or checklist, and ends
   with `## How we can help` pointing to the [plan finder](/plan-finder).
 - Frontmatter adds `review: pending` and `intent: <intent>`. Only the attorney changes `review` to `approved`.
+
+Visuals, tools and free resources (Angad, 2026-10-06: every page as visual as possible):
+
+- The article visual kit (`src/config/visual-kit.ts`) gives every H2 section a picture automatically. Place
+  the right one yourself where it helps most, with a marker on its own line in the body:
+  `<!-- visual: whatif id=<scenario id> -->`, `<!-- visual: picker id=<picker id> -->`,
+  `<!-- visual: timeline id=<timeline id> -->`, `<!-- visual: diagram name=<Diagram> -->`, or
+  `<!-- visual: download slug=<free resource> -->`. A section with a table or numbered steps already counts
+  as a visual.
+- `npm run embeds -- <cluster>/<slug>` prints the what-if scenarios, `/decide` guide and free
+  resource that fit a page (from `src/lib/page-embeds.ts`). Link the decision guide from the text where the
+  reader is choosing between options, and name the free resource where the reader would use it.
+- Link at least six other pages from the body text itself, not just the boxes around it.
+  `tests/interlinking.test.ts` fails a library page with fewer.

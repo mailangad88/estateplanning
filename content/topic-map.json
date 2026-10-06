@@ -49,6 +49,65 @@
       ]
     },
     {
+      "slug": "illinois",
+      "name": "Illinois",
+      "pillar": "Illinois estate planning and probate: the complete guide",
+      "articles": [
+        [
+          "illinois-probate-process",
+          "Illinois probate, step by step: independent vs supervised administration"
+        ],
+        [
+          "how-long-does-probate-take-in-illinois",
+          "How long does probate take in Illinois?"
+        ],
+        [
+          "illinois-probate-costs",
+          "What probate costs in Illinois: court fees, publication, bonds and attorney fees"
+        ],
+        [
+          "illinois-small-estate-affidavit",
+          "The Illinois small estate affidavit: who can use it and how"
+        ],
+        [
+          "illinois-estate-tax",
+          "The Illinois estate tax: the $4 million exclusion and how the tax is figured"
+        ],
+        [
+          "illinois-will-requirements",
+          "Illinois will requirements: witnesses, signing and self-proving"
+        ],
+        [
+          "who-inherits-without-a-will-in-illinois",
+          "Who inherits if you die without a will in Illinois?"
+        ],
+        [
+          "illinois-power-of-attorney-for-property",
+          "The Illinois statutory power of attorney for property"
+        ],
+        [
+          "illinois-healthcare-power-of-attorney",
+          "Illinois healthcare power of attorney, living will and POLST"
+        ],
+        [
+          "illinois-guardianship",
+          "Guardianship in Illinois: adults with disabilities and minor children"
+        ],
+        [
+          "illinois-living-trusts",
+          "Living trusts in Illinois: the Illinois Trust Code and funding"
+        ],
+        [
+          "illinois-transfer-on-death-instrument",
+          "The Illinois transfer on death instrument for real estate"
+        ],
+        [
+          "illinois-spouse-rights-at-death",
+          "A surviving spouse's rights in Illinois: renouncing the will and the spouse's award"
+        ]
+      ]
+    },
+    {
       "slug": "what-if",
       "name": "What if you wait?",
       "pillar": "What happens if you put off estate planning: the scenarios families actually face",

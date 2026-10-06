@@ -10,6 +10,7 @@ import { magnetsFor, type Magnet } from "@/lib/magnets";
  * Keys are library cluster slugs; values are paths in the other collections.
  */
 const BY_CLUSTER: Record<string, string[]> = {
+  illinois: ["/guides/how-probate-works", "/guides/how-to-make-a-will", "/guides/powers-of-attorney", "/guides/healthcare-directives-and-living-wills", "/guides/funding-your-trust", "/compare/transfer-on-death-deed-vs-trust"],
   basics: ["/compare/online-will-vs-estate-attorney", "/blog/how-to-talk-to-your-parents-about-their-estate-plan"],
   wills: ["/guides/how-to-make-a-will", "/guides/what-makes-a-will-valid", "/compare/pour-over-will-vs-simple-will", "/blog/should-you-name-co-executors-in-your-will", "/blog/what-is-a-pour-over-will-and-why-do-trusts-have-one", "/blog/does-a-spouse-inherit-everything-if-there-is-no-will", "/blog/can-an-executor-also-be-a-beneficiary"],
   trusts: ["/guides/irrevocable-trusts-explained", "/guides/funding-your-trust", "/compare/revocable-vs-irrevocable-trust", "/compare/joint-ownership-vs-trust", "/blog/should-i-put-my-house-in-a-trust", "/blog/can-a-beneficiary-also-be-the-trustee", "/blog/what-does-a-trustee-actually-do-each-year"],
@@ -32,6 +33,7 @@ const BY_CLUSTER: Record<string, string[]> = {
 
 /** Free tools and printable checklists for each cluster: the lead capture points for library readers. */
 const TOOLS_BY_CLUSTER: Record<string, string[]> = {
+  illinois: ["/tools/small-estate-checker", "/tools/probate-cost-estimator", "/decide/ways-to-avoid-probate", "/tools/will-or-trust", "/checklists/first-30-days-after-a-death"],
   basics: ["/tools/plan-readiness-assessment", "/checklists/documents-to-gather-before-your-consult", "/checklists/asset-and-account-inventory", "/checklists/letter-of-instruction-outline"],
   wills: ["/decide/per-stirpes-vs-per-capita", "/tools/who-inherits", "/tools/will-or-trust", "/checklists/choosing-an-executor-worksheet", "/tools/plan-readiness-assessment"],
   trusts: ["/decide/types-of-trusts", "/tools/will-or-trust", "/checklists/trust-funding-checklist", "/tools/probate-cost-estimator"],
