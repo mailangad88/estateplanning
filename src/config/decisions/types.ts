@@ -87,6 +87,8 @@ export interface DecisionGuide {
   shortcuts: { when: string; pick: string }[];
   /** Registry name from components/visuals/diagrams, shown in the "how it works" band. */
   diagrams: string[];
+  /** Interactive widgets from components/decision/widgets, shown before the diagrams. */
+  widgets?: string[];
   howTo: { name: string; steps: { name: string; text: string }[] };
   faqs: Faq[];
   related: { href: string; label: string }[];
