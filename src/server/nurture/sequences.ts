@@ -269,9 +269,51 @@ const annualReview: Sequence = {
   ],
 };
 
+/**
+ * Sequence G: families handling an estate after a death. Human first, few messages,
+ * long spacing, no sales cadence, one text at most. While it runs no other pre-sale
+ * sequence starts, and the lead never moves to long_term marketing.
+ */
+const griefSupport: Sequence = {
+  id: "grief_support",
+  name: "After a death (estate administration)",
+  trigger: { kind: "segment_tag", segment: "estate_administration", description: "Estate administration lead, after-a-death guide, or heir mode in a tool" },
+  goal: "A calm first conversation when the family is ready",
+  exitWhen: [BOOKED, EXIT_SET, UNSUB],
+  steps: [
+    step("g0_call", "call_task", { minutes: 0 }, ["bf-TODO-administration-first-call"], "Human call within the first hour; staff use the gentle script"),
+    step("g1_condolence", "email", { minutes: 5 }, ["bf-TODO-administration-condolence"], "Condolence from the attorney and what happens next", { transactional: true }),
+    step("g_sms_1", "sms", { hours: 2 }, ["bf-TODO-administration-condolence"], "One text after a missed call, never again unless they reply"),
+    step("g2_first_weeks", "email", { days: 2 }, ["bf-TODO-administration-first-weeks"], "A short list of what usually matters in the first weeks"),
+    step("g3_probate", "email", { days: 7 }, ["bf-TODO-probate-plain-language"], "Probate in plain language for this state"),
+    step("g4_trust_vs_probate", "email", { days: 14 }, ["bf-TODO-trust-administration-vs-probate"], "Trust administration versus probate, and when each applies"),
+    step("g5_check_in", "email", { days: 30 }, ["bf-TODO-administration-check-in"], "Gentle check-in and an offer to talk"),
+    step("g6_deadlines", "email", { days: 60 }, ["bf-TODO-administration-deadlines-taxes"], "Deadlines and taxes: when to call a professional"),
+    step("g7_last_note", "email", { days: 90 }, ["bf-TODO-administration-last-note"], "Last note, no ask"),
+  ],
+};
+
+/** Sequence B: someone downloaded a guide or checklist. Deliver it, then invite the quiz and a consult. */
+const magnetFollowUp: Sequence = {
+  id: "magnet_follow_up",
+  name: "Guide download follow-up",
+  trigger: { kind: "segment_tag", segment: "resource:*", description: "A guide or checklist was requested (not the after-a-death guide)" },
+  goal: "Turn the download into a quiz or a consult",
+  exitWhen: [BOOKED, EXIT_SET, UNSUB],
+  steps: [
+    step("mg_1_delivery", "email", { minutes: 0 }, ["bf-TODO-magnet-how-to-use"], "Deliver the file and how to use it", { transactional: true }),
+    step("mg_2_one_thing", "email", { days: 2 }, ["bf-TODO-magnet-highest-leverage-item"], "The single most useful item to do today"),
+    step("mg_3_quiz", "email", { days: 5 }, ["bf-TODO-quiz-invite"], "Invite to the plan finder", { exceptSegments: ["tool:plan_finder"] }),
+    step("mg_4_explainer", "email", { days: 9 }, ["bf-TODO-will-vs-trust"], "Probate versus a trust, with the short video", { video: true }),
+    step("mg_5_consult", "email", { days: 14 }, ["bf-TODO-what-the-consult-covers"], "What a first meeting looks like and how to book it"),
+  ],
+};
+
 export const SEQUENCES: Sequence[] = [
   speedToLead,
   quizFollowUp,
+  griefSupport,
+  magnetFollowUp,
   ...LIFE_EVENT_SEGMENTS.map(lifeEvent),
   consultBooked,
   noShowRecovery,

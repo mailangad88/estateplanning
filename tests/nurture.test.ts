@@ -14,13 +14,13 @@ import {
   sensitiveContentIssues,
   insideSendWindow,
 } from "@/server/nurture/compliance";
-import { dueSends, enroll, enrollForNewLead, evaluateSends, markSent, onStageChange } from "@/server/nurture/scheduler";
+import { dueSends, enroll, enrollForNewLead, evaluateSends, markSent, onExit, onStageChange, sweepQuietLeads } from "@/server/nurture/scheduler";
 
 const T0 = new Date("2026-10-06T17:00:00Z"); // 10:00 PDT, 13:00 EDT
 const MIN = 60_000;
 const HOUR = 3_600_000;
 
-function fixture(opts: { state?: string; sms?: boolean; segments?: string[]; answers?: Lead["intake"]["answers"] } = {}) {
+function fixture(opts: { state?: string; sms?: boolean; segments?: string[]; answers?: Lead["intake"]["answers"]; capture?: Lead["capture"] } = {}) {
   const db = createMemoryDb();
   const state = opts.state ?? "CA";
   const person: Person = { id: "p1", firstName: "Dana", lastName: "Lee", email: "dana@example.com", phone: "+1 (555) 010-0100", language: "en", state };
@@ -48,6 +48,7 @@ function fixture(opts: { state?: string; sms?: boolean; segments?: string[]; ans
       assets: {},
       answers: opts.answers ?? {},
     },
+    capture: opts.capture,
   };
   db.leads.insert(lead);
   return { db, lead, person };
@@ -249,11 +250,30 @@ describe("scheduler", () => {
   });
 
   it("enrollForNewLead picks sequences from quiz answers and segments", () => {
-    const { db, lead } = fixture({ segments: ["new_parent", "estate_administration"], answers: { children: "minors" } });
+    const { db, lead } = fixture({ segments: ["new_parent", "tool:plan_finder"], answers: { children: "minors" } });
     const ids = enrollForNewLead(db, lead, T0).map((e) => e.sequenceId);
     expect(ids).toEqual(["speed_to_lead", "quiz_follow_up", "life_event_new_parent"]);
     const { db: db2, lead: lead2 } = fixture();
     expect(enrollForNewLead(db2, lead2, T0).map((e) => e.sequenceId)).toEqual(["speed_to_lead"]);
+  });
+
+  it("a guide download adds the guide follow-up", () => {
+    const { db, lead } = fixture({ segments: ["tool:guide", "resource:new-parents-guide", "new_parent"] });
+    expect(enrollForNewLead(db, lead, T0).map((e) => e.sequenceId)).toEqual(["speed_to_lead", "magnet_follow_up", "life_event_new_parent"]);
+  });
+
+  it("routes grieving families to the gentle track only, and never to long_term", () => {
+    for (const overrides of [
+      { segments: ["new_parent", "estate_administration"] },
+      { segments: ["tool:guide", "resource:after-a-death-checklist"], capture: { tool: "guide", resource: "after-a-death-checklist" } },
+      { segments: ["tool:cost_calculator"], capture: { tool: "cost_calculator", result: { mode: "heir" } } },
+    ]) {
+      const { db, lead } = fixture(overrides as Parameters<typeof fixture>[0]);
+      expect(enrollForNewLead(db, lead, T0).map((e) => e.sequenceId)).toEqual(["grief_support"]);
+      onExit(db, lead.id, "unresponsive", T0);
+      expect(db.enrollments.list((e) => e.sequenceId === "long_term")).toHaveLength(0);
+      expect(sweepQuietLeads(db, new Date(T0.getTime() + 90 * 86_400_000))).toEqual([]);
+    }
   });
 
   it("stops the enrollment when the lead reaches an exit stage or is exited", () => {
