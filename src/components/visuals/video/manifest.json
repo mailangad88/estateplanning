@@ -1,1 +1,844 @@
-[]
+[
+  {
+    "id": "v01",
+    "slug": "what-happens-if-you-die-without-a-will",
+    "title": "What happens if you die without a will, in 60 seconds",
+    "description": "A calm 60-second explanation of intestacy: who inherits under default state rules, who is left out, and why choosing a plan is usually a short meeting.",
+    "durationSec": 60,
+    "isoDuration": "PT1M",
+    "uploadDate": "2026-10-06",
+    "funnelStage": "top",
+    "src": "/media/videos/what-happens-if-you-die-without-a-will.mp4",
+    "verticalSrc": "/media/videos/what-happens-if-you-die-without-a-will-vertical.mp4",
+    "poster": "/media/videos/what-happens-if-you-die-without-a-will-poster.jpg",
+    "captions": "/media/videos/what-happens-if-you-die-without-a-will.vtt",
+    "transcriptSrc": "/media/videos/what-happens-if-you-die-without-a-will.txt",
+    "transcript": "If you die without a will, you don't get a say in who receives your things. Every state has a default rulebook, called intestacy. In most states, it generally starts with your spouse and children. With no spouse or children, it moves to parents, then siblings, then more distant relatives. An unmarried partner, a close friend, or a charity usually gets nothing. And a judge, not you, may decide who raises your minor children. The court appoints someone to handle things. That process can take months. A will, plus powers of attorney, lets you choose instead. It usually takes a short meeting. Not sure what you need? Take our three-minute plan finder.",
+    "chapters": [
+      {
+        "title": "No will?",
+        "startSec": 0
+      },
+      {
+        "title": "State default rules: intestacy",
+        "startSec": 8
+      },
+      {
+        "title": "Spouse and children, then parents, then siblings, then others",
+        "startSec": 17
+      },
+      {
+        "title": "Partner, friend, charity: no claim. Guardian?",
+        "startSec": 25
+      },
+      {
+        "title": "Court-supervised, often months",
+        "startSec": 36.5
+      },
+      {
+        "title": "Will + powers of attorney = your choices",
+        "startSec": 43
+      },
+      {
+        "title": "Take the 3-minute plan finder",
+        "startSec": 51
+      }
+    ],
+    "topics": [
+      "wills",
+      "intestacy"
+    ],
+    "cta": {
+      "label": "Take the 3-minute plan finder",
+      "href": "/plan-finder?utm_source=video&utm_medium=remotion&utm_campaign=no-will-60s",
+      "url": "https://familyplanlaw.com/plan-finder?utm_source=video&utm_medium=remotion&utm_campaign=no-will-60s"
+    },
+    "disclaimer": "General education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship. Attorney advertising."
+  },
+  {
+    "id": "v02",
+    "slug": "the-probate-timeline-animated",
+    "title": "The probate timeline, animated",
+    "description": "A slow, honest walk through the usual phases of probate, from opening the case to closing the estate, with every state-specific window marked as varying.",
+    "durationSec": 90,
+    "isoDuration": "PT1M30S",
+    "uploadDate": "2026-10-06",
+    "funnelStage": "middle",
+    "src": "/media/videos/the-probate-timeline-animated.mp4",
+    "verticalSrc": "/media/videos/the-probate-timeline-animated-vertical.mp4",
+    "poster": "/media/videos/the-probate-timeline-animated-poster.jpg",
+    "captions": "/media/videos/the-probate-timeline-animated.vtt",
+    "transcriptSrc": "/media/videos/the-probate-timeline-animated.txt",
+    "transcript": "Probate is the court process of settling someone's estate. Timelines vary a lot, but here is the usual path. First, the will, if there is one, is filed, and the court appoints a personal representative. That often takes a few weeks. Next, creditors and heirs are notified. There is a set window for creditor claims, often several months. The representative inventories assets, may order appraisals, and pays valid debts and taxes. A final income tax return is needed for the person who died. Sometimes the estate itself has to file returns too. When the court is satisfied, assets go to the people named in the will, or to heirs under state law. Then the estate is closed. A simple one can take under a year. A contested or complex one can take much longer. If you are handling an estate, our checklist can help. We are glad to talk when you are ready.",
+    "chapters": [
+      {
+        "title": "Probate: settling an estate",
+        "startSec": 0
+      },
+      {
+        "title": "Weeks 1 to 4: open the case",
+        "startSec": 11
+      },
+      {
+        "title": "Months 1 to 4: notices and claims",
+        "startSec": 23
+      },
+      {
+        "title": "Inventory, appraise, pay debts",
+        "startSec": 33
+      },
+      {
+        "title": "Tax returns",
+        "startSec": 41.5
+      },
+      {
+        "title": "Distribution",
+        "startSec": 53
+      },
+      {
+        "title": "Closed: simple vs. complex",
+        "startSec": 64
+      },
+      {
+        "title": "Get the probate checklist",
+        "startSec": 76
+      }
+    ],
+    "topics": [
+      "probate"
+    ],
+    "cta": {
+      "label": "Get the probate checklist or book a consultation",
+      "href": "/probate-checklist?utm_source=video&utm_medium=remotion&utm_campaign=probate-timeline",
+      "url": "https://familyplanlaw.com/probate-checklist?utm_source=video&utm_medium=remotion&utm_campaign=probate-timeline"
+    },
+    "disclaimer": "General education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship. Attorney advertising."
+  },
+  {
+    "id": "v03",
+    "slug": "how-a-revocable-living-trust-works",
+    "title": "How a revocable living trust works",
+    "description": "A diagram-first explanation of the roles in a revocable living trust, why funding matters, and what happens at incapacity and at death.",
+    "durationSec": 90,
+    "isoDuration": "PT1M30S",
+    "uploadDate": "2026-10-06",
+    "funnelStage": "middle",
+    "src": "/media/videos/how-a-revocable-living-trust-works.mp4",
+    "verticalSrc": "/media/videos/how-a-revocable-living-trust-works-vertical.mp4",
+    "poster": "/media/videos/how-a-revocable-living-trust-works-poster.jpg",
+    "captions": "/media/videos/how-a-revocable-living-trust-works.vtt",
+    "transcriptSrc": "/media/videos/how-a-revocable-living-trust-works.txt",
+    "transcript": "A living trust is like a container you create to hold your assets. You usually wear three hats: the person who creates it, the one who manages it, and, while alive, the one who benefits. Then you move assets into it. This step is called funding, and it is the part people forget. If you become unable to manage things, the successor trustee you chose steps in, without a court. When you die, the trust assets pass to your beneficiaries as you set out, often without probate. Retirement accounts usually stay as they are, with a beneficiary form. A trust costs more up front. And it is revocable, so you can change it. Wondering if you need one? Our plan finder is a good place to start.",
+    "chapters": [
+      {
+        "title": "Living trust = container",
+        "startSec": 0
+      },
+      {
+        "title": "Grantor. Trustee. Beneficiary.",
+        "startSec": 10.5
+      },
+      {
+        "title": "Funding: retitle the assets",
+        "startSec": 24.5
+      },
+      {
+        "title": "Incapacity: successor trustee steps in",
+        "startSec": 37
+      },
+      {
+        "title": "At death: assets pass as written",
+        "startSec": 49
+      },
+      {
+        "title": "Retirement accounts: beneficiary form. Revocable: you can change it",
+        "startSec": 61
+      },
+      {
+        "title": "Take the plan finder",
+        "startSec": 76
+      }
+    ],
+    "topics": [
+      "trusts",
+      "funding"
+    ],
+    "cta": {
+      "label": "Get the trust funding checklist",
+      "href": "/trust-funding-checklist?utm_source=video&utm_medium=remotion&utm_campaign=rlt-diagram",
+      "url": "https://familyplanlaw.com/trust-funding-checklist?utm_source=video&utm_medium=remotion&utm_campaign=rlt-diagram"
+    },
+    "disclaimer": "General education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship. Attorney advertising."
+  },
+  {
+    "id": "v04",
+    "slug": "the-medicaid-five-year-look-back-explained",
+    "title": "The Medicaid five-year look-back, explained",
+    "description": "What Medicaid's 60-month look-back is, why it exists, what counts as a transfer, and why you should talk to an elder law attorney before moving anything.",
+    "durationSec": 75,
+    "isoDuration": "PT1M15S",
+    "uploadDate": "2026-10-06",
+    "funnelStage": "middle",
+    "src": "/media/videos/the-medicaid-five-year-look-back-explained.mp4",
+    "verticalSrc": "/media/videos/the-medicaid-five-year-look-back-explained-vertical.mp4",
+    "poster": "/media/videos/the-medicaid-five-year-look-back-explained-poster.jpg",
+    "captions": "/media/videos/the-medicaid-five-year-look-back-explained.vtt",
+    "transcriptSrc": "/media/videos/the-medicaid-five-year-look-back-explained.txt",
+    "transcript": "If you may need nursing home care, Medicaid looks back five years at your gifts. Medicare doesn't pay for long-term care. Medicaid does, but only when your assets and income are low. If you gave away assets in that window before applying, Medicaid can set a penalty period when it won't pay. Gifts to family, retitling a home, even large cash transfers may count. There are exceptions, for example for a spouse or a disabled child. They are technical and vary by state. Planning early gives more choices than planning in a crisis. Don't move assets before talking to an elder law attorney in your state. Our guide explains the basics.",
+    "chapters": [
+      {
+        "title": "5-year look-back",
+        "startSec": 0
+      },
+      {
+        "title": "Medicare: not long-term care. Medicaid: needs-based.",
+        "startSec": 10
+      },
+      {
+        "title": "Gifts in the window can mean a penalty period",
+        "startSec": 21
+      },
+      {
+        "title": "What can count",
+        "startSec": 33
+      },
+      {
+        "title": "Exceptions exist",
+        "startSec": 42
+      },
+      {
+        "title": "Early planning = more options",
+        "startSec": 53.5
+      },
+      {
+        "title": "Talk to an attorney before moving assets",
+        "startSec": 61.5
+      }
+    ],
+    "topics": [
+      "medicaid"
+    ],
+    "cta": {
+      "label": "Read the elder planning guide",
+      "href": "/elder-planning-guide?utm_source=video&utm_medium=remotion&utm_campaign=medicaid-lookback",
+      "url": "https://familyplanlaw.com/elder-planning-guide?utm_source=video&utm_medium=remotion&utm_campaign=medicaid-lookback"
+    },
+    "disclaimer": "General education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship. Attorney advertising."
+  },
+  {
+    "id": "v05",
+    "slug": "special-needs-trust-how-a-gift-can-protect-benefits",
+    "title": "Special needs trust: how a gift can protect benefits",
+    "description": "Why a direct inheritance can threaten SSI and Medicaid, and how a special needs trust can hold money for extras without replacing benefits.",
+    "durationSec": 75,
+    "isoDuration": "PT1M15S",
+    "uploadDate": "2026-10-06",
+    "funnelStage": "middle",
+    "src": "/media/videos/special-needs-trust-how-a-gift-can-protect-benefits.mp4",
+    "verticalSrc": "/media/videos/special-needs-trust-how-a-gift-can-protect-benefits-vertical.mp4",
+    "poster": "/media/videos/special-needs-trust-how-a-gift-can-protect-benefits-poster.jpg",
+    "captions": "/media/videos/special-needs-trust-how-a-gift-can-protect-benefits.vtt",
+    "transcriptSrc": "/media/videos/special-needs-trust-how-a-gift-can-protect-benefits.txt",
+    "transcript": "If your child receives benefits like SSI or Medicaid, a direct inheritance can put those benefits at risk. These programs limit the money a person can hold. For SSI, that is two thousand dollars for one person. An inheritance can push someone past it. A special needs trust holds the inheritance instead, and a trustee spends it on extras. Think therapies, travel, a phone, activities. It supplements benefits. It doesn't replace them. There are different types, depending on whose money funds it. The rules differ, including what happens to leftover funds. Many families also write a letter of intent, describing routines, doctors, and what makes their child happy. Every situation is different. Our guide can help you prepare for a conversation with an attorney.",
+    "chapters": [
+      {
+        "title": "Inheritance can put benefits at risk",
+        "startSec": 0
+      },
+      {
+        "title": "SSI resource limit: $2,000 (individual)",
+        "startSec": 10.5
+      },
+      {
+        "title": "Trust holds it. Trustee pays.",
+        "startSec": 24
+      },
+      {
+        "title": "Supplements, doesn't replace",
+        "startSec": 33
+      },
+      {
+        "title": "Third-party vs. first-party trusts",
+        "startSec": 41.5
+      },
+      {
+        "title": "Letter of intent",
+        "startSec": 52.5
+      },
+      {
+        "title": "Get the special needs trust guide",
+        "startSec": 62.5
+      }
+    ],
+    "topics": [
+      "trusts",
+      "medicaid",
+      "special-needs"
+    ],
+    "cta": {
+      "label": "Get the special needs trust guide",
+      "href": "/special-needs-trust-guide?utm_source=video&utm_medium=remotion&utm_campaign=snt-explainer",
+      "url": "https://familyplanlaw.com/special-needs-trust-guide?utm_source=video&utm_medium=remotion&utm_campaign=snt-explainer"
+    },
+    "disclaimer": "General education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship. Attorney advertising."
+  },
+  {
+    "id": "v06",
+    "slug": "why-your-beneficiary-form-beats-your-will",
+    "title": "Why your beneficiary form beats your will",
+    "description": "Retirement accounts and life insurance usually pass by the named beneficiary, not by the will. Check your forms.",
+    "durationSec": 45,
+    "isoDuration": "PT45S",
+    "uploadDate": "2026-10-06",
+    "funnelStage": "top",
+    "src": "/media/videos/why-your-beneficiary-form-beats-your-will.mp4",
+    "verticalSrc": "/media/videos/why-your-beneficiary-form-beats-your-will-vertical.mp4",
+    "poster": "/media/videos/why-your-beneficiary-form-beats-your-will-poster.jpg",
+    "captions": "/media/videos/why-your-beneficiary-form-beats-your-will.vtt",
+    "transcriptSrc": "/media/videos/why-your-beneficiary-form-beats-your-will.txt",
+    "transcript": "Your will says one thing. Your beneficiary form says another. Which wins? For retirement accounts and life insurance, usually the form. Those assets pass to whoever is named, no matter what the will says. That means an old form can send money to a former spouse, or leave out a child. Check each account. Name a backup. Update after marriage, divorce, births, and deaths. Our checklist walks you through it. It takes ten minutes.",
+    "chapters": [
+      {
+        "title": "Will vs. beneficiary form",
+        "startSec": 0
+      },
+      {
+        "title": "Accounts pass to the named beneficiary",
+        "startSec": 7.5
+      },
+      {
+        "title": "Old forms cause surprises",
+        "startSec": 19
+      },
+      {
+        "title": "Check. Back up. Update.",
+        "startSec": 28.5
+      },
+      {
+        "title": "Download the beneficiary checklist",
+        "startSec": 35.5
+      }
+    ],
+    "topics": [
+      "wills",
+      "beneficiaries"
+    ],
+    "cta": {
+      "label": "Download the beneficiary checklist",
+      "href": "/beneficiary-checklist?utm_source=video&utm_medium=remotion&utm_campaign=beneficiary-form",
+      "url": "https://familyplanlaw.com/beneficiary-checklist?utm_source=video&utm_medium=remotion&utm_campaign=beneficiary-form"
+    },
+    "disclaimer": "General education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship. Attorney advertising."
+  },
+  {
+    "id": "v07",
+    "slug": "executor-vs-trustee-vs-power-of-attorney",
+    "title": "Executor vs trustee vs power of attorney: who does what",
+    "description": "Three roles people mix up, explained by when each one acts: after death, over a trust, or while you are alive and unable to act.",
+    "durationSec": 60,
+    "isoDuration": "PT1M",
+    "uploadDate": "2026-10-06",
+    "funnelStage": "top",
+    "src": "/media/videos/executor-vs-trustee-vs-power-of-attorney.mp4",
+    "verticalSrc": "/media/videos/executor-vs-trustee-vs-power-of-attorney-vertical.mp4",
+    "poster": "/media/videos/executor-vs-trustee-vs-power-of-attorney-poster.jpg",
+    "captions": "/media/videos/executor-vs-trustee-vs-power-of-attorney.vtt",
+    "transcriptSrc": "/media/videos/executor-vs-trustee-vs-power-of-attorney.txt",
+    "transcript": "Three roles, three different jobs. People mix them up all the time. An executor handles your estate after you die. They file the will, pay debts, and distribute what's left. A trustee manages what's inside a trust, for you while you are alive, and for your beneficiaries later. A power of attorney lets an agent act for you while you're alive, usually for money and property. It ends at death. A separate health care directive names who speaks for you on medical choices. Choose people who are honest and organized, and name backups. Our guide helps.",
+    "chapters": [
+      {
+        "title": "Executor. Trustee. Agent.",
+        "startSec": 0
+      },
+      {
+        "title": "Executor: after death",
+        "startSec": 8
+      },
+      {
+        "title": "Trustee: manages the trust",
+        "startSec": 18.5
+      },
+      {
+        "title": "Power of attorney: while alive",
+        "startSec": 29
+      },
+      {
+        "title": "Health care directive: medical choices",
+        "startSec": 40.5
+      },
+      {
+        "title": "Get the guide",
+        "startSec": 48.5
+      }
+    ],
+    "topics": [
+      "trusts",
+      "poa",
+      "executor"
+    ],
+    "cta": {
+      "label": "Get the guide to choosing your people",
+      "href": "/choosing-fiduciaries-guide?utm_source=video&utm_medium=remotion&utm_campaign=roles-explainer",
+      "url": "https://familyplanlaw.com/choosing-fiduciaries-guide?utm_source=video&utm_medium=remotion&utm_campaign=roles-explainer"
+    },
+    "disclaimer": "General education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship. Attorney advertising."
+  },
+  {
+    "id": "v08",
+    "slug": "will-vs-trust-a-decision-tree",
+    "title": "Will vs trust: a decision tree",
+    "description": "Four questions that help you see whether a will, a trust, or both fits, with the caveat that a lawyer should confirm for your state.",
+    "durationSec": 90,
+    "isoDuration": "PT1M30S",
+    "uploadDate": "2026-10-06",
+    "funnelStage": "top",
+    "src": "/media/videos/will-vs-trust-a-decision-tree.mp4",
+    "verticalSrc": "/media/videos/will-vs-trust-a-decision-tree-vertical.mp4",
+    "poster": "/media/videos/will-vs-trust-a-decision-tree-poster.jpg",
+    "captions": "/media/videos/will-vs-trust-a-decision-tree.vtt",
+    "transcriptSrc": "/media/videos/will-vs-trust-a-decision-tree.txt",
+    "transcript": "Do you need a will, a trust, or both? Four questions can point you in the right direction. Question one. Do you have minor children? If yes, a will matters, because it is where you name a guardian. Question two. Do you own real estate, or want to avoid probate? A funded living trust may help. In some states, probate is light, so it depends. Question three. Do you want control over timing, like money at certain ages, or care for a family member with a disability? A trust gives more control. Question four. Is privacy important? A will becomes a public record in probate. A trust usually stays private. Even with a trust, most people still sign a simple will, called a pour-over will, plus powers of attorney. This is a starting point, not advice. Take the plan finder and bring the results to a meeting.",
+    "chapters": [
+      {
+        "title": "Will, trust, or both?",
+        "startSec": 0
+      },
+      {
+        "title": "Minor children? Name a guardian in a will",
+        "startSec": 11
+      },
+      {
+        "title": "Real estate or probate concerns? Trust may help",
+        "startSec": 23
+      },
+      {
+        "title": "Want control over timing? Trusts add control",
+        "startSec": 38
+      },
+      {
+        "title": "Privacy matters? Wills can become public",
+        "startSec": 53
+      },
+      {
+        "title": "Most plans also include a pour-over will and powers of attorney",
+        "startSec": 64
+      },
+      {
+        "title": "Take the plan finder",
+        "startSec": 76
+      }
+    ],
+    "topics": [
+      "wills",
+      "trusts",
+      "probate"
+    ],
+    "cta": {
+      "label": "Take the plan finder quiz",
+      "href": "/plan-finder?utm_source=video&utm_medium=remotion&utm_campaign=will-vs-trust",
+      "url": "https://familyplanlaw.com/plan-finder?utm_source=video&utm_medium=remotion&utm_campaign=will-vs-trust"
+    },
+    "disclaimer": "General education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship. Attorney advertising."
+  },
+  {
+    "id": "v09",
+    "slug": "funding-your-trust-the-six-assets-to-retitle",
+    "title": "Funding your trust: the six assets to retitle",
+    "description": "A trust only controls what is in it. Six asset types to check: real estate, bank accounts, brokerage accounts, retirement accounts, life insurance, and personal property.",
+    "durationSec": 75,
+    "isoDuration": "PT1M15S",
+    "uploadDate": "2026-10-06",
+    "funnelStage": "bottom",
+    "src": "/media/videos/funding-your-trust-the-six-assets-to-retitle.mp4",
+    "verticalSrc": "/media/videos/funding-your-trust-the-six-assets-to-retitle-vertical.mp4",
+    "poster": "/media/videos/funding-your-trust-the-six-assets-to-retitle-poster.jpg",
+    "captions": "/media/videos/funding-your-trust-the-six-assets-to-retitle.vtt",
+    "transcriptSrc": "/media/videos/funding-your-trust-the-six-assets-to-retitle.txt",
+    "transcript": "You signed the trust. Great. But a trust only controls what is in it. One. Your home. This usually means a new deed, recorded in the county where the property sits. Two. Bank accounts. Many banks retitle the account, or add a payable-on-death name, depending on the plan. Three. Brokerage accounts. Typically you retitle them to the trust with your broker. Four. Retirement accounts. These usually stay out of the trust. You name the beneficiary on the form. Ask before changing anything, because of taxes. Five. Life insurance. Review who is the beneficiary, and whether the trust should be. Six. Everything else, like furniture, jewelry, and keepsakes. A short assignment document can cover these. Our checklist tracks all six. Download it and bring it to your next meeting.",
+    "chapters": [
+      {
+        "title": "Signing isn't enough",
+        "startSec": 0
+      },
+      {
+        "title": "Real estate: new deed",
+        "startSec": 8
+      },
+      {
+        "title": "Bank accounts: retitle or POD",
+        "startSec": 17.5
+      },
+      {
+        "title": "Brokerage accounts: retitle",
+        "startSec": 27
+      },
+      {
+        "title": "Retirement: usually name beneficiaries, not the trust",
+        "startSec": 35
+      },
+      {
+        "title": "Life insurance: check beneficiary",
+        "startSec": 47
+      },
+      {
+        "title": "Personal property: assignment",
+        "startSec": 55
+      },
+      {
+        "title": "Get the funding checklist",
+        "startSec": 64
+      }
+    ],
+    "topics": [
+      "trusts",
+      "funding"
+    ],
+    "cta": {
+      "label": "Get the funding checklist",
+      "href": "/trust-funding-checklist?utm_source=video&utm_medium=remotion&utm_campaign=funding-six-assets",
+      "url": "https://familyplanlaw.com/trust-funding-checklist?utm_source=video&utm_medium=remotion&utm_campaign=funding-six-assets"
+    },
+    "disclaimer": "General education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship. Attorney advertising."
+  },
+  {
+    "id": "v10",
+    "slug": "probate-vs-trust-cost-and-time",
+    "title": "Probate vs trust: cost and time comparison",
+    "description": "An honest side-by-side of probate and trust administration: time, cost, privacy, and effort, with state variation flagged.",
+    "durationSec": 60,
+    "isoDuration": "PT1M",
+    "uploadDate": "2026-10-06",
+    "funnelStage": "middle",
+    "src": "/media/videos/probate-vs-trust-cost-and-time.mp4",
+    "verticalSrc": "/media/videos/probate-vs-trust-cost-and-time-vertical.mp4",
+    "poster": "/media/videos/probate-vs-trust-cost-and-time-poster.jpg",
+    "captions": "/media/videos/probate-vs-trust-cost-and-time.vtt",
+    "transcriptSrc": "/media/videos/probate-vs-trust-cost-and-time.txt",
+    "transcript": "Probate or trust? Here is a plain comparison. Time. Probate is court-supervised, so it often takes months to over a year. A trust can usually be settled faster, since no court has to approve each step. Cost. Probate can mean court fees and attorney fees set by statute or by hourly rate, depending on the state. A trust costs more to set up, but often less to administer. Privacy. Probate filings are public. Trust administration usually stays private. Effort. A trust has to be funded and kept up to date. Skip that, and some assets may still go through probate. Smaller estates may not need either. Talk to us about your numbers.",
+    "chapters": [
+      {
+        "title": "Probate vs. trust",
+        "startSec": 0
+      },
+      {
+        "title": "Time: months to a year+ vs. often faster",
+        "startSec": 5
+      },
+      {
+        "title": "Cost: court + attorney fees vs. higher setup, lower later",
+        "startSec": 18
+      },
+      {
+        "title": "Privacy: public vs. private",
+        "startSec": 33
+      },
+      {
+        "title": "Effort: trusts need funding",
+        "startSec": 39
+      },
+      {
+        "title": "Book a consultation",
+        "startSec": 50
+      }
+    ],
+    "topics": [
+      "trusts",
+      "probate"
+    ],
+    "cta": {
+      "label": "Book a consultation",
+      "href": "/consultation?utm_source=video&utm_medium=remotion&utm_campaign=probate-vs-trust",
+      "url": "https://familyplanlaw.com/consultation?utm_source=video&utm_medium=remotion&utm_campaign=probate-vs-trust"
+    },
+    "disclaimer": "General education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship. Attorney advertising."
+  },
+  {
+    "id": "v11",
+    "slug": "guardianship-for-minor-children-how-courts-decide",
+    "title": "Guardianship for minor children: how courts decide",
+    "description": "How a court picks a guardian when parents have not named one, and what naming guardians in a will changes.",
+    "durationSec": 60,
+    "isoDuration": "PT1M",
+    "uploadDate": "2026-10-06",
+    "funnelStage": "top",
+    "src": "/media/videos/guardianship-for-minor-children-how-courts-decide.mp4",
+    "verticalSrc": "/media/videos/guardianship-for-minor-children-how-courts-decide-vertical.mp4",
+    "poster": "/media/videos/guardianship-for-minor-children-how-courts-decide-poster.jpg",
+    "captions": "/media/videos/guardianship-for-minor-children-how-courts-decide.vtt",
+    "transcriptSrc": "/media/videos/guardianship-for-minor-children-how-courts-decide.txt",
+    "transcript": "If something happened to both parents, who would raise your children? If you haven't said, a court decides. It looks at what's in the child's best interests, often starting with relatives. Courts usually give weight to the guardian you name in your will, though they still review it. Name a backup. Pick someone whose values and home you trust, not just a favorite relative. Separate from guardian of the person, you can set up money management, often through a trust, so the guardian doesn't have to ask a court for funds. Our guide has questions to talk over with your partner. Start there.",
+    "chapters": [
+      {
+        "title": "Who would raise your children?",
+        "startSec": 0
+      },
+      {
+        "title": "No nomination: the court decides, best interests of the child",
+        "startSec": 7
+      },
+      {
+        "title": "Name a guardian in your will",
+        "startSec": 17.5
+      },
+      {
+        "title": "Name a backup",
+        "startSec": 27
+      },
+      {
+        "title": "Money: a trust can manage it",
+        "startSec": 36
+      },
+      {
+        "title": "Get the guardian guide",
+        "startSec": 49.5
+      }
+    ],
+    "topics": [
+      "wills",
+      "guardianship"
+    ],
+    "cta": {
+      "label": "Get the guardian guide",
+      "href": "/guardianship-guide?utm_source=video&utm_medium=remotion&utm_campaign=guardianship",
+      "url": "https://familyplanlaw.com/guardianship-guide?utm_source=video&utm_medium=remotion&utm_campaign=guardianship"
+    },
+    "disclaimer": "General education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship. Attorney advertising."
+  },
+  {
+    "id": "v12",
+    "slug": "first-30-days-after-a-loved-one-dies",
+    "title": "First 30 days after a loved one dies: a calm checklist",
+    "description": "A gentle, practical checklist for the first month: what truly cannot wait, what can wait, and when to ask for help. No pressure and no sales language.",
+    "durationSec": 120,
+    "isoDuration": "PT2M",
+    "uploadDate": "2026-10-06",
+    "funnelStage": "gentle",
+    "src": "/media/videos/first-30-days-after-a-loved-one-dies.mp4",
+    "verticalSrc": "/media/videos/first-30-days-after-a-loved-one-dies-vertical.mp4",
+    "poster": "/media/videos/first-30-days-after-a-loved-one-dies-poster.jpg",
+    "captions": "/media/videos/first-30-days-after-a-loved-one-dies.vtt",
+    "transcriptSrc": "/media/videos/first-30-days-after-a-loved-one-dies.txt",
+    "transcript": "I'm sorry you're here. If someone you love has died, there's a lot to do, but not all of it today. Let's go one step at a time. First few days. Get several certified copies of the death certificate. The funeral home often helps order them. You'll need them for many accounts. Secure the home, pets, and mail. Let close family and key people know. Social Security is usually notified by the funeral home. Find the documents. Look for a will, trust, insurance policies, and account lists. If you find a will, don't change or throw it away, even if it looks old. Week one to two. Speak to an attorney if there's a will or trust, a house, or complicated family. Many offer a first conversation. Keep paying essential bills, like mortgage or rent, utilities, and insurance, so nothing lapses. Keep a log of what you pay and why. Week three to four. Ask for life insurance claim forms, and check retirement accounts for named beneficiaries. Avoid moving money out of the person's accounts yet. Don't rush big decisions. Selling the house, distributing items, or paying heirs early can create problems later. Court filings, if needed, usually start within weeks to months, and deadlines vary by state. A professional can tell you which apply. Look after yourself too. Ask for help. People usually want to. Our checklist keeps all of this in one place. And when you are ready, we're glad to talk.",
+    "chapters": [
+      {
+        "title": "Take one step at a time",
+        "startSec": 0
+      },
+      {
+        "title": "Days 1 to 3: death certificates",
+        "startSec": 13
+      },
+      {
+        "title": "Secure home, pets, mail",
+        "startSec": 24.5
+      },
+      {
+        "title": "Locate the will and key papers",
+        "startSec": 35
+      },
+      {
+        "title": "Weeks 1 to 2: talk to an attorney if needed",
+        "startSec": 48.5
+      },
+      {
+        "title": "Keep essentials current",
+        "startSec": 60
+      },
+      {
+        "title": "Weeks 3 to 4: claim forms and beneficiary checks",
+        "startSec": 71
+      },
+      {
+        "title": "Pause big decisions",
+        "startSec": 83
+      },
+      {
+        "title": "Court deadlines vary",
+        "startSec": 91.5
+      },
+      {
+        "title": "Ask for help",
+        "startSec": 102
+      },
+      {
+        "title": "Download the checklist",
+        "startSec": 108
+      }
+    ],
+    "topics": [
+      "wills"
+    ],
+    "cta": {
+      "label": "Download the first-30-days checklist, or call when you are ready",
+      "href": "/first-30-days-checklist?utm_source=video&utm_medium=remotion&utm_campaign=first-30-days",
+      "url": "https://familyplanlaw.com/first-30-days-checklist?utm_source=video&utm_medium=remotion&utm_campaign=first-30-days"
+    },
+    "disclaimer": "General education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship. Attorney advertising."
+  },
+  {
+    "id": "v13",
+    "slug": "estate-tax-thresholds-explained",
+    "title": "Estate tax thresholds explained",
+    "description": "The federal estate tax exemption for 2026, how portability works for married couples, and why some states have their own, lower thresholds. Config-driven; re-render every year.",
+    "durationSec": 75,
+    "isoDuration": "PT1M15S",
+    "uploadDate": "2026-10-06",
+    "funnelStage": "middle",
+    "src": "/media/videos/estate-tax-thresholds-explained.mp4",
+    "verticalSrc": "/media/videos/estate-tax-thresholds-explained-vertical.mp4",
+    "poster": "/media/videos/estate-tax-thresholds-explained-poster.jpg",
+    "captions": "/media/videos/estate-tax-thresholds-explained.vtt",
+    "transcriptSrc": "/media/videos/estate-tax-thresholds-explained.txt",
+    "transcript": "Most estates owe no federal estate tax. The threshold is high, and for 2026 it is fifteen million dollars per person. Only the amount above that is taxed, at rates that top out at forty percent. For married couples, portability lets a surviving spouse use the unused part of the first spouse's exemption, but you generally have to file a return to elect it. Gifts during life count against the same exemption, but each year you can give a set amount per person without it counting. For 2026, that is nineteen thousand dollars. Some states have their own estate or inheritance tax, often with much lower thresholds. Check your state's rules. Thresholds change with law and inflation, so check the year. Planning matters even if you are under them, for income tax basis and for control. Not sure where you stand? Let's look at your numbers together.",
+    "chapters": [
+      {
+        "title": "2026 federal exemption: $15 million per person",
+        "startSec": 0
+      },
+      {
+        "title": "Top federal rate: 40%",
+        "startSec": 10.5
+      },
+      {
+        "title": "Portability: surviving spouse can use unused exemption",
+        "startSec": 18.5
+      },
+      {
+        "title": "Annual gift exclusion 2026: $19,000 per person",
+        "startSec": 31.5
+      },
+      {
+        "title": "State taxes: lower thresholds in some states",
+        "startSec": 45
+      },
+      {
+        "title": "Thresholds change. Check the year.",
+        "startSec": 53.5
+      },
+      {
+        "title": "Book an estate tax review",
+        "startSec": 65.5
+      }
+    ],
+    "topics": [
+      "estate-tax"
+    ],
+    "cta": {
+      "label": "Book an estate tax review",
+      "href": "/consultation?utm_source=video&utm_medium=remotion&utm_campaign=estate-tax-thresholds",
+      "url": "https://familyplanlaw.com/consultation?utm_source=video&utm_medium=remotion&utm_campaign=estate-tax-thresholds"
+    },
+    "disclaimer": "General education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship. Attorney advertising."
+  },
+  {
+    "id": "v14",
+    "slug": "what-a-power-of-attorney-can-and-cannot-do",
+    "title": "What a power of attorney can and cannot do",
+    "description": "What an agent under a durable power of attorney can do, what they cannot, and why careful choice and clear wording matter.",
+    "durationSec": 60,
+    "isoDuration": "PT1M",
+    "uploadDate": "2026-10-06",
+    "funnelStage": "top",
+    "src": "/media/videos/what-a-power-of-attorney-can-and-cannot-do.mp4",
+    "verticalSrc": "/media/videos/what-a-power-of-attorney-can-and-cannot-do-vertical.mp4",
+    "poster": "/media/videos/what-a-power-of-attorney-can-and-cannot-do-poster.jpg",
+    "captions": "/media/videos/what-a-power-of-attorney-can-and-cannot-do.vtt",
+    "transcriptSrc": "/media/videos/what-a-power-of-attorney-can-and-cannot-do.txt",
+    "transcript": "A power of attorney lets someone you trust handle your affairs if you can't. It's one of the most useful documents you can sign. A durable one keeps working if you become incapacitated. That is when it matters most. Your agent can often pay bills, manage accounts, file taxes, and deal with property, within the powers you give. They can't make a will for you, and the authority ends when you die. And they must act in your interest, not their own. Some powers, like making large gifts or changing your trust, usually need to be spelled out. Banks may ask for their own forms, so plan ahead. Pick carefully, and name a backup. Our guide has the questions to ask.",
+    "chapters": [
+      {
+        "title": "Power of attorney: someone you trust acts for you",
+        "startSec": 0
+      },
+      {
+        "title": "Durable: continues after incapacity",
+        "startSec": 11
+      },
+      {
+        "title": "Can: bills, accounts, taxes, property",
+        "startSec": 18.5
+      },
+      {
+        "title": "Cannot: sign your will; act after death; self-deal",
+        "startSec": 27.5
+      },
+      {
+        "title": "Special powers must be listed",
+        "startSec": 38.5
+      },
+      {
+        "title": "Get the power of attorney guide",
+        "startSec": 50.5
+      }
+    ],
+    "topics": [
+      "poa"
+    ],
+    "cta": {
+      "label": "Get the power of attorney guide",
+      "href": "/power-of-attorney-guide?utm_source=video&utm_medium=remotion&utm_campaign=poa-can-cannot",
+      "url": "https://familyplanlaw.com/power-of-attorney-guide?utm_source=video&utm_medium=remotion&utm_campaign=poa-can-cannot"
+    },
+    "disclaimer": "General education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship. Attorney advertising."
+  },
+  {
+    "id": "v15",
+    "slug": "blended-family-estate-plan-protecting-spouse-and-children",
+    "title": "How a blended-family plan can protect a spouse and children",
+    "description": "Why default rules and simple 'everything to my spouse' plans can disinherit children from a prior relationship, and how trusts can balance both.",
+    "durationSec": 90,
+    "isoDuration": "PT1M30S",
+    "uploadDate": "2026-10-06",
+    "funnelStage": "middle",
+    "src": "/media/videos/blended-family-estate-plan-protecting-spouse-and-children.mp4",
+    "verticalSrc": "/media/videos/blended-family-estate-plan-protecting-spouse-and-children-vertical.mp4",
+    "poster": "/media/videos/blended-family-estate-plan-protecting-spouse-and-children-poster.jpg",
+    "captions": "/media/videos/blended-family-estate-plan-protecting-spouse-and-children.vtt",
+    "transcriptSrc": "/media/videos/blended-family-estate-plan-protecting-spouse-and-children.txt",
+    "transcript": "In a blended family, the usual plan can backfire. Meet Pat, who remarried and has two kids from before. Pat leaves everything to the new spouse, trusting them to take care of the kids later. But once it's the spouse's, the spouse decides. A new will, a new partner, even a fair decision, and the kids may get nothing. The reverse also happens. Pat leaves everything to the kids, and the spouse may lose the home. A trust can split the roles. The spouse gets income, or use of the home, for life. After that, what remains goes to the children. A neutral trustee can reduce conflict. Clear writing helps too, about who pays taxes, repairs, and insurance. Beneficiary forms, a prenup, and titling matter just as much, because they can override the plan. Every family is different. A short conversation can show you the options.",
+    "chapters": [
+      {
+        "title": "Blended family: the usual plan can backfire",
+        "startSec": 0
+      },
+      {
+        "title": "Everything to the spouse",
+        "startSec": 11
+      },
+      {
+        "title": "Once it's theirs, it's their choice",
+        "startSec": 21
+      },
+      {
+        "title": "Or: everything to the kids",
+        "startSec": 34
+      },
+      {
+        "title": "Trust: spouse first, then children",
+        "startSec": 44.5
+      },
+      {
+        "title": "Neutral trustee. Clear terms.",
+        "startSec": 58
+      },
+      {
+        "title": "Forms and titles can override the plan",
+        "startSec": 68.5
+      },
+      {
+        "title": "Book a consultation",
+        "startSec": 78.5
+      }
+    ],
+    "topics": [
+      "trusts",
+      "blended-family"
+    ],
+    "cta": {
+      "label": "Book a blended-family planning consultation",
+      "href": "/consultation?utm_source=video&utm_medium=remotion&utm_campaign=blended-family",
+      "url": "https://familyplanlaw.com/consultation?utm_source=video&utm_medium=remotion&utm_campaign=blended-family"
+    },
+    "disclaimer": "General education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship. Attorney advertising."
+  }
+]

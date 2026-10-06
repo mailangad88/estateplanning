@@ -10,3 +10,4 @@ export * from "./diagrams";
 export * from "./illustrations";
 export * from "./covers";
 export * from "./video";
+export { PageMedia, PAGE_MEDIA } from "./PageMedia";

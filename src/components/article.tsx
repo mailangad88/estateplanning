@@ -4,6 +4,7 @@ import { articleLd, breadcrumbLd, JsonLd } from "@/lib/seo";
 import { Breadcrumbs, Cta, FaqList, Prose, ReviewNote, Toc } from "@/components/ui";
 import { EmailCapture, SensitiveMarker } from "@/components/capture";
 import { libraryLinksFor } from "@/lib/site-links";
+import { PageMedia } from "@/components/visuals/PageMedia";
 
 export interface RelatedLink {
   href: string;
@@ -52,6 +53,7 @@ export function ArticlePage(props: {
         <p className="lead">{props.description}</p>
       )}
       {props.before}
+      <PageMedia path={props.path} />
       <Toc headings={props.headings} />
       <Prose html={props.html} />
       {props.after}
