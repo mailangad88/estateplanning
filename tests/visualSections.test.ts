@@ -62,3 +62,16 @@ describe("visual kit data", () => {
     expect(diagramRegistry.length).toBeGreaterThan(10);
   });
 });
+
+describe("decision embeds", () => {
+  it("parses a decision marker and defaults to the map", () => {
+    expect(parseMarker("decision", " slug=types-of-trusts")).toEqual({ type: "decision", slug: "types-of-trusts", part: "map" });
+    expect(parseMarker("decision", " slug=types-of-trusts part=bogus")).toBeNull();
+  });
+  it("picks a matching decision guide for a choice heading, once per page", () => {
+    const html = "<p>Intro</p><h2>Which trust should you choose?</h2><p>a</p><h2>Which one is right for you?</h2><p>b</p>";
+    const segs = planVisuals({ html, path: "/learn/trusts/types-of-trusts", title: "Types of trusts" });
+    const decisions = segs.filter((s) => "visual" in s && s.visual.type === "decision");
+    expect(decisions).toHaveLength(1);
+  });
+});

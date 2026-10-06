@@ -8,6 +8,7 @@ import { PLAN_DOCS, whatIfFor } from "@/config/what-if-scenarios";
 import { learnHrefFor } from "@/config/life-game";
 import { diagramRegistry } from "@/components/visuals/diagrams/registry";
 import { ICON_MAP } from "@/components/visual-card";
+import { DecisionEmbed } from "@/components/decision/DecisionEmbed";
 import { topicFor } from "@/lib/visual-topic";
 import { planVisuals, type PlanInput } from "@/lib/visual-sections";
 import { WhatIfCard, type WhatIfData } from "./whatif-card";
@@ -127,6 +128,9 @@ export function VisualEmbed({ v, props, n }: { v: VisualSpec; props: RichProsePr
       }
       break;
     }
+    case "decision":
+      body = <DecisionEmbed slug={v.slug} part={v.part} />;
+      break;
     case "related": {
       const list = (props.related ?? []).slice(0, 4);
       if (list.length) {
@@ -151,6 +155,8 @@ export function VisualEmbed({ v, props, n }: { v: VisualSpec; props: RichProsePr
     }
   }
   if (!body) return null;
+  // Decision guides carry their own kicker and heading.
+  if (v.type === "decision") return <div className="vk vk--decision">{body}</div>;
   return (
     <aside className={`vk vk--${v.type}`} aria-label={label}>
       <p className="vk__label">{label}</p>

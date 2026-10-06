@@ -7,6 +7,7 @@
 import { decorateSections } from "@/lib/prose-sections";
 import { diagramRegistry } from "@/components/visuals/diagrams/registry";
 import { WHAT_IF_SCENARIOS } from "@/config/what-if-scenarios";
+import { DECISIONS } from "@/config/decisions";
 import { MARKER_RE, PICKERS, TIMELINES, parseMarker, type VisualSpec } from "@/config/visual-kit";
 
 export type Segment = { html: string } | { visual: VisualSpec };
@@ -63,7 +64,13 @@ function candidates(input: PlanInput) {
     .map((d) => d.name);
   const pickers = PICKERS.filter((p) => p.match.test(hay)).map((p) => p.id);
   const timelines = TIMELINES.filter((t) => t.match.test(hay)).map((t) => t.id);
-  return { scenarios, diagrams, pickers, timelines, probateTopic: /probate|trust|will|house|home|estate|executor|deed/.test(hay) };
+  // Decision guides that list this page as related, then ones whose title shares two or more words.
+  const decisions = DECISIONS.filter((d) => !input.path.startsWith(`/decide/${d.slug}`))
+    .map((d) => ({ slug: d.slug, score: (d.related.some((r) => r.href === input.path) ? 3 : 0) + overlap(pageWords, words(`${d.slug} ${d.title}`)) }))
+    .filter((d) => d.score >= 2)
+    .sort((a, b) => b.score - a.score)
+    .map((d) => d.slug);
+  return { scenarios, diagrams, pickers, timelines, decisions, probateTopic: /probate|trust|will|house|home|estate|executor|deed/.test(hay) };
 }
 
 /** Plans the article: HTML segments with a visual after each section that needs one. */
@@ -87,7 +94,7 @@ export function planVisuals(input: PlanInput): Segment[] {
   };
   const calm = Boolean(input.sensitive);
   // Most of each kind a page gets from auto-picking, so pages mix visuals instead of repeating one.
-  const CAP: Partial<Record<VisualSpec["type"], number>> = { diagram: 2, whatif: 2, download: 1, tool: 1, picker: 1, timeline: 1 };
+  const CAP: Partial<Record<VisualSpec["type"], number>> = { diagram: 2, whatif: 2, download: 1, tool: 1, picker: 1, timeline: 1, decision: 1 };
   const count: Partial<Record<VisualSpec["type"], number>> = {};
   const capped = (t: VisualSpec["type"]) => (count[t] ?? 0) >= (CAP[t] ?? 1);
 
@@ -101,6 +108,7 @@ export function planVisuals(input: PlanInput): Segment[] {
       return { type: "whatif-strip", ids } as VisualSpec;
     },
     picker: () => (calm ? null : firstUnused(c.pickers, (id) => ({ type: "picker", id }))),
+    decision: () => firstUnused(c.decisions, (slug) => ({ type: "decision", slug, part: "map" })),
     timeline: () => firstUnused(c.timelines, (id) => ({ type: "timeline", id })),
     diagram: () => firstUnused(c.diagrams, (name) => ({ type: "diagram", name })),
     slider: () => (calm || !c.probateTopic ? null : firstUnused(["probate-cost"] as const, (id) => ({ type: "slider", id }))),
@@ -108,13 +116,14 @@ export function planVisuals(input: PlanInput): Segment[] {
     tool: () => firstUnused(input.tools ?? [], (slug) => ({ type: "tool", slug })),
     related: () => (input.hasRelated ? firstUnused([0], () => ({ type: "related" })) : null),
   };
-  const rotation = [pick.diagram, pick.whatif, pick.download, pick.picker, pick.timeline, pick.tool, pick.strip, pick.slider, pick.related];
+  const rotation = [pick.decision, pick.diagram, pick.whatif, pick.download, pick.picker, pick.timeline, pick.tool, pick.strip, pick.slider, pick.related];
 
   // The rotation starts one step further on for each section, so a page mixes kinds of visual.
   let turn = 0;
   function auto(heading: string): VisualSpec | null {
     const byHeading = [
       COST.test(heading) ? pick.slider : null,
+      CHOICE.test(heading) ? pick.decision : null,
       CHOICE.test(heading) ? pick.picker : null,
       RISK.test(heading) ? pick.whatif : null,
       PROCESS.test(heading) ? pick.timeline : null,

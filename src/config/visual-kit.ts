@@ -23,7 +23,9 @@ export type VisualSpec =
   | { type: "diagram"; name: string }
   | { type: "download"; slug: string }
   | { type: "related" }
-  | { type: "tool"; slug: string };
+  | { type: "tool"; slug: string }
+  /** A piece of a /decide guide: its picker, 2D map, table, option cards or shortcuts. */
+  | { type: "decision"; slug: string; part: "picker" | "map" | "table" | "cards" | "shortcuts" };
 
 export type VisualType = VisualSpec["type"];
 
@@ -157,6 +159,7 @@ export const VISUAL_LABELS: Record<VisualType, string> = {
   download: "Free resource",
   related: "Keep exploring",
   tool: "Free tool",
+  decision: "Compare your options",
 };
 
 const MARKER = /<!--\s*visual:\s*([a-z-]+)((?:\s+[a-z]+=[^\s>]+)*)\s*-->/gi;
@@ -174,6 +177,10 @@ export function parseMarker(type: string, args: string): VisualSpec | null {
     case "download": return kv.slug ? { type: "download", slug: kv.slug } : null;
     case "related": return { type: "related" };
     case "tool": return kv.slug ? { type: "tool", slug: kv.slug } : null;
+    case "decision": {
+      const part = (kv.part ?? "map") as Extract<VisualSpec, { type: "decision" }>["part"];
+      return kv.slug && ["picker", "map", "table", "cards", "shortcuts"].includes(part) ? { type: "decision", slug: kv.slug, part } : null;
+    }
     default: return null;
   }
 }
