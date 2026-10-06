@@ -194,7 +194,6 @@ label.field input[type="range"] { padding: 0; border: 0; }
   box-shadow: 0 4px 16px rgb(0 0 0 / 0.15);
 }
 .exit-banner span { flex: 1; }
-.exit-banner 
 /* Probate vs trust explainer */
 .explainer { margin: 24px 0; }
 .explainer svg { width: 100%; height: auto; }

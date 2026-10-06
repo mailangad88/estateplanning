@@ -1,35 +1,35 @@
 /* Generated from tokens.ts. Visual palette as CSS variables, light and dark. */
 :root {
-  --v-paper: #fbfaf7;
+  --v-paper: #fbf8f3;
   --v-surface: #ffffff;
-  --v-sand: #f1e9dc;
-  --v-sand-deep: #e3d5bf;
-  --v-ink: #1d2b3a;
-  --v-muted: #5b6470;
-  --v-line: #d9d6cf;
-  --v-accent: #1f5f8b;
-  --v-accent-deep: #174a6d;
-  --v-accent-tint: #dcebf5;
-  --v-clay: #c4784a;
-  --v-clay-tint: #f6e3d6;
+  --v-sand: #f3ebdf;
+  --v-sand-deep: #e6d7c0;
+  --v-ink: #1b2a30;
+  --v-muted: #56616a;
+  --v-line: #e3dcd0;
+  --v-accent: #1f6670;
+  --v-accent-deep: #17505b;
+  --v-accent-tint: #dcecec;
+  --v-clay: #c06a40;
+  --v-clay-tint: #f7e6da;
   --v-sage: #6f957a;
-  --v-sage-tint: #e2ede4;
-  --v-gold: #d8a842;
+  --v-sage-tint: #e4eee6;
+  --v-gold: #e2ae45;
   --v-gold-tint: #f8edd2;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --v-paper: #15171a;
-    --v-surface: #1d2024;
-    --v-sand: #2a2722;
+    --v-paper: #121a1c;
+    --v-surface: #1a2427;
+    --v-sand: #262420;
     --v-sand-deep: #3a342b;
-    --v-ink: #eceae6;
-    --v-muted: #a7adb5;
-    --v-line: #3a3e44;
-    --v-accent: #6fb0dd;
-    --v-accent-deep: #9ccbea;
-    --v-accent-tint: #1e3446;
-    --v-clay: #e09a6e;
+    --v-ink: #ece8e1;
+    --v-muted: #a9b3b6;
+    --v-line: #33403f;
+    --v-accent: #7fc4c9;
+    --v-accent-deep: #a8dade;
+    --v-accent-tint: #1a3639;
+    --v-clay: #e3946a;
     --v-clay-tint: #3d2a1f;
     --v-sage: #93bb9e;
     --v-sage-tint: #22332a;
@@ -46,11 +46,11 @@
 .v-video details { margin-top: 8px; font-size: 0.9rem; }
 
 .v-chapters { padding-left: 0; list-style: none; }
-.v-chapters button { font: inherit; font-variant-numeric: tabular-nums; background: none; border: 0; color: var(--accent, #1f5f8b); cursor: pointer; padding: 0; text-decoration: underline; }
+.v-chapters button { font: inherit; font-variant-numeric: tabular-nums; background: none; border: 0; color: var(--accent, #17505b); cursor: pointer; padding: 0; text-decoration: underline; }
 .v-video-grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); padding: 0; list-style: none; }
 .v-video-grid img { display: block; width: 100%; height: auto; border-radius: 8px; }
 .v-gallery { display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
 .v-gallery .card h3 { font-size: 0.95rem; margin: 8px 0 0; }
 .v-gallery code { font-size: 0.8rem; color: var(--muted, #5b6470); }
 .v-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-.v-scroll:focus-visible { outline: 2px solid var(--accent, #1f5f8b); outline-offset: 2px; }
+.v-scroll:focus-visible { outline: 2px solid var(--accent, #17505b); outline-offset: 2px; }

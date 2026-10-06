@@ -24,6 +24,7 @@ related:
   - caregivers
   - real-estate-investors
   - blended-families
+  - pre-retirees
 faqs:
   - q: "I have a house in two states. Do I need two wills?"
     a: "Usually not. One will can cover property in both places, but it may still need to be probated in each state. A living trust that holds both properties usually avoids that. An attorney can tell you which fits."
