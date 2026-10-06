@@ -12,7 +12,7 @@ export default function GuidesIndex() {
   const guides = getGuides();
   return (
     <>
-      <PageHeader title="Estate planning guides" lead="Plain-English explanations of how each part of an estate plan works, the steps involved and the mistakes to avoid." />
+      <PageHeader kicker="Guides" art="HeroWills" title="Estate planning guides" lead="Plain-English explanations of how each part of an estate plan works, the steps involved and the mistakes to avoid." />
       {Object.entries(GUIDE_CATEGORIES).map(([key, label]) => {
         const items = guides.filter((g) => g.category === key);
         if (!items.length) return null;

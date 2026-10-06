@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBox from "@/components/CtaBox";
 import JsonLd from "@/components/JsonLd";
+import { PageHero } from "@/components/page-hero";
 import LinkList from "@/components/LinkList";
 import PageMeta from "@/components/PageMeta";
 import { findByUrl, getBacklinks, getGlossary, getGlossaryEntry, refToUrl } from "@/lib/library";
@@ -49,9 +50,9 @@ export default async function TermPage({ params }: { params: Promise<Params> }) 
   return (
     <article className="content">
       <JsonLd data={graph(definedTermSchema(g), breadcrumbSchema(crumbs))} />
-      <Breadcrumbs items={crumbs} />
-      <h1>{g.term}</h1>
-      <PageMeta updated="" />
+      <PageHero compact crumbs={<Breadcrumbs items={crumbs} />} kicker="Glossary term" path={g.url} title={g.term}>
+        <PageMeta updated="" />
+      </PageHero>
       <section className="answer-box" aria-label="Definition">
         <h2 className="answer-label">Definition</h2>
         <p className="answer">{g.short}</p>

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { EXPLAINERS } from "@/explainers/data";
 import ExplainerPlayer from "@/explainers/Player";
-import { Breadcrumbs, Cta } from "@/components/ui";
+import { Breadcrumbs, CardGrid, Cta } from "@/components/ui";
+import { PageHero } from "@/components/page-hero";
 import { JsonLd, breadcrumbLd, howToLd } from "@/lib/seo";
 import { VideoExplainer } from "@/components/visuals/video/VideoExplainer";
 import { EXPLAINER_VIDEO } from "@/components/visuals/video/explainerMap";
@@ -28,8 +28,13 @@ export default async function ExplainerPage({ params }: Props) {
   const video = EXPLAINER_VIDEO[e.slug];
   return (
     <article>
-      <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/explainers", label: "Explainers" }, { label: e.title }]} />
-      <h1>{e.title}</h1>
+      <PageHero
+        compact
+        crumbs={<Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/explainers", label: "Explainers" }, { label: e.title }]} />}
+        kicker="Step-by-step explainer"
+        path={`/explainers/${e.slug}`}
+        title={e.title}
+      />
       <div className="answer"><strong>In short</strong>{e.intro} {e.outro}</div>
       <ExplainerPlayer slug={e.slug} />
       {video ? (
@@ -47,7 +52,7 @@ export default async function ExplainerPage({ params }: Props) {
       </ol>
       <p>{e.outro}</p>
       <h2>Learn more</h2>
-      <ul>{e.related.map((r) => <li key={r}><Link href={r}>{r.replace(/^\/[^/]+\//, "").replace(/-/g, " ")}</Link></li>)}</ul>
+      <CardGrid items={e.related.map((r) => ({ href: r, title: r.replace(/^\/[^/]+\//, "").replace(/-/g, " ") }))} />
       <Cta />
       <JsonLd
         data={[

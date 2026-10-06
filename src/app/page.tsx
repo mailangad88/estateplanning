@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import ProbateVsTrustAnimation from "@/components/ProbateVsTrustAnimation";
 import { firm, packages } from "@/config/firm";
 import { TOOLS } from "@/config/tools";
-import { EXPLAINERS } from "@/explainers/data";
+import { videos } from "@/components/visuals/video/videos";
 import { getChecklists, getFaqs, getGuides, getLifeEvents, getPosts } from "@/lib/content";
 import { getClusters, getPillar } from "@/lib/library";
 import { CardGrid, FaqList } from "@/components/ui";
@@ -22,9 +22,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
+const FEATURED_VIDEOS = ["how-a-revocable-living-trust-works", "what-happens-if-you-die-without-a-will", "will-vs-trust-a-decision-tree", "executor-vs-trustee-vs-power-of-attorney", "guardianship-for-minor-children-how-courts-decide", "first-30-days-after-a-loved-one-dies"];
+
 const SITUATIONS = [
-  { href: "/wills", title: "I have no will or plan at all", description: "What a will does, and what it cannot do." },
-  { href: "/living-trusts", title: "I own a home and have kids", description: "Whether a living trust helps, and when it does not." },
+  { href: "/wills", title: "I have no will or plan at all", description: "What a will does, and what it cannot do.", image: "/media/illustrations/HeroWills.webp" },
+  { href: "/living-trusts", title: "I own a home and have kids", description: "Whether a living trust helps, and when it does not.", image: "/media/illustrations/HeroFamilyHome.webp" },
   { href: "/estate-planning-for-parents", title: "My parent is aging and I am worried", description: "The documents that matter first, and how to start the talk." },
   { href: "/probate", title: "Someone I love just died and I am the executor or heir", description: "What to do first, and what has a deadline." },
   { href: "/guides/updating-your-estate-plan", title: "I have a plan but it is old", description: "When a plan is worth reviewing." },
@@ -50,8 +52,7 @@ export default function Home() {
               Protect the people you love, <em>in plain English.</em>
             </h1>
             <p className="lead">
-              An estate plan says who makes decisions for you if you cannot, and who gets what if you die. {firm.brandName} prepares
-              wills, living trusts, powers of attorney and healthcare directives at flat fees, with {firm.attorneyName} on the phone.
+              Wills, living trusts and powers of attorney at flat fees, explained plainly, with {firm.attorneyName} on the phone.
             </p>
             <p className="cta-row">
               <Link className="button large" href="/plan-finder">Start the plan finder</Link>
@@ -83,7 +84,7 @@ export default function Home() {
         <SectionHead
           kicker="Start where you are"
           title="Your plan changes as your life does"
-          lead="A couple who just married worries about different things than a retiree or a family with three kids. Follow the cycle and pick the stage closest to yours."
+          lead="Pick the stage closest to yours."
           center
         />
         <LifeCycle />
@@ -95,22 +96,17 @@ export default function Home() {
       </Band>
 
       <Band tone="sand" label="What a plan includes">
-        <SectionHead kicker="What you get" title="Four documents do most of the work" lead="We explain each one plainly and tell you when you may not need it." />
-        <div className="feature-grid">
-          <FeatureCard icon="FileText" title="A will" href="/wills" cta="About wills">
-            Names who receives your property, who raises your minor children, and who carries out your wishes.
-          </FeatureCard>
-          <FeatureCard icon="ShieldCheck" tone="sage" title="A living trust" href="/living-trusts" cta="About living trusts">
-            Passes property to your family without a court process. It does not make sense for everyone, and we will say so.
-          </FeatureCard>
-          <FeatureCard icon="Scale" tone="clay" title="A power of attorney" href="/power-of-attorney" cta="About powers of attorney">
-            Names someone to handle money and property if you cannot, so your family does not have to ask a court.
-          </FeatureCard>
-          <FeatureCard icon="Stethoscope" tone="gold" title="Healthcare directives" href="/healthcare-directives" cta="About healthcare directives">
-            Put your medical wishes in writing and name who speaks for you when you cannot.
-          </FeatureCard>
-        </div>
-        <p style={{ marginTop: 28 }}>
+        <SectionHead kicker="What you get" title="Four documents do most of the work" center />
+        <CardGrid
+          media="art"
+          items={[
+            { href: "/wills", title: "A will", description: "Who gets what, and who raises your kids.", image: "/media/illustrations/HeroWills.webp" },
+            { href: "/living-trusts", title: "A living trust", description: "Keeps your home out of probate court.", image: "/media/illustrations/HeroTrusts.webp" },
+            { href: "/power-of-attorney", title: "A power of attorney", description: "Someone you trust handles the money.", image: "/media/illustrations/HeroPowersOfAttorney.webp" },
+            { href: "/healthcare-directives", title: "Healthcare directives", description: "Your medical wishes, in writing.", image: "/media/illustrations/SpotDocumentsSigned.webp" },
+          ]}
+        />
+        <p className="band-foot">
           Helping after a death instead? See <Link href="/probate">probate</Link> and <Link href="/trust-administration">trust administration</Link>.
         </p>
       </Band>
@@ -122,10 +118,10 @@ export default function Home() {
             <Steps
               vertical
               steps={[
-                { title: "Answer a few questions", text: "About your family, your home and what you want to protect. About two minutes." },
-                { title: "Talk to our team", text: `We call you ${firm.responseTime} and book a time with the attorney. The team are not lawyers.` },
-                { title: "Meet your attorney", text: "You get a recommendation and a flat-fee quote. Nothing is signed on the call." },
-                { title: "Sign and you're done", text: "We guide the signing and help you move assets into your trust." },
+                { title: "Answer a few questions", text: "About two minutes, online." },
+                { title: "Talk to our team", text: `We call you ${firm.responseTime} to book your consult.` },
+                { title: "Meet your attorney", text: "Get a recommendation and a flat-fee quote." },
+                { title: "Sign and you're done", text: "We guide the signing and the follow-through." },
               ]}
             />
             <p className="cta-row" style={{ marginTop: 32 }}>
@@ -140,7 +136,7 @@ export default function Home() {
       </Band>
 
       <Band tone="brand" label="Free tools">
-        <SectionHead kicker="Free tools" title="Honest answers before you talk to anyone" lead="Calculators and quizzes that tell you plainly when you do not need us." />
+        <SectionHead kicker="Free tools" title="Honest answers before you talk to anyone" lead="They tell you plainly when you do not need us." />
         <div className="feature-grid">
           {heroTools.map((t) => (
             <FeatureCard key={t.slug} icon={TOOL_ICONS[t.slug] ?? "Check"} title={t.title} href={`/tools/${t.slug}`} cta="Try it">
@@ -195,55 +191,58 @@ export default function Home() {
       </Band>
 
       <Band tone="clay" label="Free downloads">
-        <SectionHead kicker="Free downloads" title="Worksheets, kits and email courses" lead={<>Printable help for every stage of life. <Link href="/free">See all {getMagnets().length}</Link>.</>} />
+        <SectionHead kicker="Free downloads" title="Worksheets, kits and email courses" lead={<Link href="/free">See all {getMagnets().length} free resources</Link>} />
         <CardGrid
           items={["guardian-for-your-kids-worksheet", "estate-planning-checklist", "estate-plan-document-locator", "consult-prep-workbook", "new-parents-5-day-course", "executor-first-30-days-guide"]
             .map((slug) => getMagnets().find((m) => m.slug === slug))
             .filter((m) => m !== undefined)
-            .map((m) => ({ href: `/free/${m.slug}`, title: m.title, description: m.promise, tag: `Free ${MAGNET_FORMATS[m.format].toLowerCase()}` }))}
+            .map((m) => ({ href: `/free/${m.slug}`, title: m.title, tag: `Free ${MAGNET_FORMATS[m.format].toLowerCase()}` }))}
         />
         <EmailCapture
           kind="course"
           interest="7-day-course"
           title="Free course: your estate plan in 7 days"
-          body="One short lesson and one small task a day, so you walk into a consult ready. Plus our 12 printable checklists."
+          body="One short lesson and one small task a day, so you walk into a consult ready."
           cta="Start the free course"
           success="You're in. Lesson 1 is on its way."
         />
       </Band>
 
-      <Band label="Where people start">
-        <SectionHead kicker="Common starting points" title="Where most people start" />
-        <CardGrid items={SITUATIONS} />
-        <h3 className="band-subhead">Start with your life event</h3>
-        <CardGrid items={getLifeEvents().map((l) => ({ href: `/life-events/${l.slug}`, title: l.event, description: l.description }))} />
+      <Band label="Watch">
+        <SectionHead kicker="Watch" title="Short videos, plain answers" lead={<Link href="/videos">All {videos.length} videos</Link>} />
+        <CardGrid items={FEATURED_VIDEOS.map((slug) => videos.find((v) => v.slug === slug)).filter((v) => v !== undefined).map((v) => ({ href: `/videos/${v.slug}`, title: v.title, tag: "Video" }))} />
       </Band>
 
-      <Band tone="sky" label="Learn">
+      <Band tone="sky" label="Where people start">
+        <SectionHead kicker="Common starting points" title="Where most people start" />
+        <CardGrid media="art" items={SITUATIONS} />
+        <h3 className="band-subhead">Or start with a life event</h3>
+        <ul className="pill-row">
+          {getLifeEvents().map((l) => <li key={l.slug}><Link href={`/life-events/${l.slug}`}>{l.event}</Link></li>)}
+        </ul>
+      </Band>
+
+      <Band label="Learn">
         <SectionHead
           kicker="Learn at your own pace"
           title="Most-read guides"
           lead={<><Link href="/guides">All {guides.length} guides</Link> · <Link href="/blog">{getPosts().length} questions answered</Link> · <Link href="/compare">Comparisons</Link> · <Link href="/estate-planning">Rules by state</Link></>}
         />
-        <CardGrid items={featured.map((g) => ({ href: `/guides/${g.slug}`, title: g.title, description: g.description, tag: `${g.readingMinutes} min read` }))} />
-        <h3 className="band-subhead">Browse the library by topic</h3>
+        <CardGrid items={featured.map((g) => ({ href: `/guides/${g.slug}`, title: g.title, tag: `${g.readingMinutes} min read` }))} />
+        <h3 className="band-subhead">Browse by topic</h3>
         <ul className="pill-row">
           {getClusters()
             .filter((c) => getPillar(c.slug))
             .map((c) => (
               <li key={c.slug}><Link href={c.url}>{c.name}</Link></li>
             ))}
+          <li><Link href="/learn">Everything in the library</Link></li>
         </ul>
-        <p>
-          Or see <Link href="/learn">every guide in the library</Link>.
-        </p>
-        <h3 className="band-subhead">Watch: how it works in two minutes</h3>
-        <CardGrid items={EXPLAINERS.slice(0, 3).map((e) => ({ href: `/explainers/${e.slug}`, title: e.title, description: e.description, tag: "Animated" }))} />
-        <h3 className="band-subhead">Two-minute quizzes</h3>
-        <CardGrid items={getQuizzes().slice(0, 6).map((q) => ({ href: `/quizzes/${q.slug}`, title: q.title, description: q.promise, tag: `${q.questions.length} questions` }))} />
-        <h3 className="band-subhead">Printable checklists</h3>
+        <h3 className="band-subhead">Quizzes and checklists</h3>
         <ul className="pill-row">
-          {getChecklists().map((c) => <li key={c.slug}><Link href={`/checklists/${c.slug}`}>{c.title}</Link></li>)}
+          {getQuizzes().slice(0, 4).map((q) => <li key={q.slug}><Link href={`/quizzes/${q.slug}`}>{q.title}</Link></li>)}
+          {getChecklists().slice(0, 4).map((c) => <li key={c.slug}><Link href={`/checklists/${c.slug}`}>{c.title}</Link></li>)}
+          <li><Link href="/explainers">Animated explainers</Link></li>
         </ul>
       </Band>
 

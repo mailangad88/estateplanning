@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { bySlug, getChecklists } from "@/lib/content";
 import { Breadcrumbs, ReviewNote } from "@/components/ui";
+import { PageHero } from "@/components/page-hero";
 import { EmailCapture } from "@/components/capture";
 import { breadcrumbLd, howToLd, JsonLd } from "@/lib/seo";
 import ChecklistView from "./Checklist";
@@ -23,9 +24,15 @@ export default async function ChecklistPage({ params }: Props) {
   if (!c) notFound();
   return (
     <article>
-      <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/checklists", label: "Checklists" }, { label: c.title }]} />
-      <h1>{c.title}</h1>
-      <ReviewNote reviewed={c.reviewed} updated={c.updated} />
+      <PageHero
+        compact
+        crumbs={<Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/checklists", label: "Checklists" }, { label: c.title }]} />}
+        kicker="Checklist"
+        path={`/checklists/${c.slug}`}
+        title={c.title}
+      >
+        <ReviewNote reviewed={c.reviewed} updated={c.updated} />
+      </PageHero>
       <p className="lead">{c.intro}</p>
       <ChecklistView slug={c.slug} sections={c.sections} />
       <EmailCapture kind="magnet" interest={`checklist:${c.slug}`} title="Email me a printable copy" body="We'll send this checklist and a reminder to review it once a year." cta="Send the checklist" />

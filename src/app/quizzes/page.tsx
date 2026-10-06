@@ -12,7 +12,7 @@ export default function Quizzes() {
   const quizzes = getQuizzes();
   return (
     <>
-      <PageHeader title="Quizzes" lead="A few minutes each. See your score right away, and get the full answer review by email." />
+      <PageHeader kicker="Two-minute quizzes" art="SpotQuestions" title="Quizzes" lead="A few minutes each. See your score right away, and get the full answer review by email." />
       <CardGrid items={quizzes.map((q) => ({ href: `/quizzes/${q.slug}`, title: q.title, description: q.promise, tag: `${q.questions.length} questions` }))} />
     </>
   );

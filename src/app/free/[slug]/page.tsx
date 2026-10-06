@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import MagnetOptIn from "@/components/MagnetOptIn";
-import { Breadcrumbs, ReviewNote } from "@/components/ui";
+import { Breadcrumbs, CardGrid, ReviewNote } from "@/components/ui";
+import { PageHero } from "@/components/page-hero";
 import { MAGNET_CATEGORIES, MAGNET_FORMATS, getMagnet, getMagnets, translationsOf } from "@/lib/magnets";
 import { resolveSlug } from "@/lib/links";
 import { breadcrumbLd, JsonLd } from "@/lib/seo";
@@ -41,10 +42,14 @@ export default async function MagnetLanding({ params }: Props) {
 
   return (
     <article className="magnet-landing" lang={m.lang}>
-      <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/free", label: "Free resources" }, { label: m.title }]} />
-      <p className="tag">Free {formatLabel.toLowerCase()} · {MAGNET_CATEGORIES[m.category] ?? m.category}</p>
-      <h1>{m.title}</h1>
-      <p className="lead">{m.promise}</p>
+      <PageHero
+        compact
+        crumbs={<Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/free", label: "Free resources" }, { label: m.title }]} />}
+        kicker={`Free ${formatLabel.toLowerCase()} · ${MAGNET_CATEGORIES[m.category] ?? m.category}`}
+        path={`/free/${m.slug}`}
+        title={m.title}
+        lead={m.promise}
+      />
       {alternates.map((a) => (
         <p key={a.slug} className="meta">
           <Link href={`/free/${a.slug}`} hrefLang={a.lang} lang={a.lang}>{a.lang === "es" ? "También disponible en español" : "Also available in English"}</Link>
@@ -73,27 +78,13 @@ export default async function MagnetLanding({ params }: Props) {
       {related.length > 0 && (
         <section>
           <h2>Read more on this topic</h2>
-          <ul className="cards">
-            {related.map((r) => (
-              <li key={r.href}>
-                <Link href={r.href} className="card-link"><span className="tag">{r.kind}</span><strong>{r.title}</strong></Link>
-              </li>
-            ))}
-          </ul>
+          <CardGrid items={related.map((r) => ({ href: r.href, title: r.title, tag: r.kind }))} />
         </section>
       )}
       {more.length > 0 && (
         <section>
           <h2>More free resources</h2>
-          <ul className="cards">
-            {more.map((x) => (
-              <li key={x.slug}>
-                <Link href={`/free/${x.slug}`} className="card-link">
-                  <span className="tag">{MAGNET_FORMATS[x.format]}</span><strong>{x.title}</strong><span className="card-desc">{x.promise}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <CardGrid items={more.map((x) => ({ href: `/free/${x.slug}`, title: x.title, description: x.promise, tag: MAGNET_FORMATS[x.format] }))} />
         </section>
       )}
       <p className="notice">General information, not legal advice. Laws differ by state. Attorney advertising.</p>

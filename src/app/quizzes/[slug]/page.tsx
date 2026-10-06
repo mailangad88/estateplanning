@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, ReviewNote } from "@/components/ui";
+import { PageHero } from "@/components/page-hero";
 import { MAGNET_FORMATS, getMagnet } from "@/lib/magnets";
 import { getQuiz, getQuizzes, maxPoints } from "@/lib/quizzes";
 import { breadcrumbLd, JsonLd } from "@/lib/seo";
@@ -24,9 +25,14 @@ export default async function QuizPage({ params }: Props) {
   const m = getMagnet(q.magnet);
   return (
     <article>
-      <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/quizzes", label: "Quizzes" }, { label: q.title }]} />
-      <h1>{q.title}</h1>
-      <p className="lead">{q.promise}</p>
+      <PageHero
+        compact
+        crumbs={<Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/quizzes", label: "Quizzes" }, { label: q.title }]} />}
+        kicker="Quiz"
+        path={`/quizzes/${q.slug}`}
+        title={q.title}
+        lead={q.promise}
+      />
       <QuizRunner
         quiz={{ slug: q.slug, kind: q.kind, questions: q.questions, bands: q.bands, max: maxPoints(q) }}
         magnet={m ? { slug: m.slug, title: m.title, format: m.format, formatLabel: MAGNET_FORMATS[m.format], tag: m.tag, sequence: m.sequence } : null}
