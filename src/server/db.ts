@@ -21,6 +21,7 @@ import type {
   Partner,
   PartnerGift,
   PartnerReferral,
+  PageApproval,
   PaymentRecord,
   Person,
   ReviewRequest,
@@ -132,6 +133,7 @@ export interface Db {
   suppressions: Collection<Suppression>;
   factVerifications: Collection<FactVerification>;
   templateApprovals: Collection<TemplateApproval>;
+  pageApprovals: Collection<PageApproval>;
   automationState: Collection<AutomationState>;
   crmDeliveries: Collection<CrmDelivery>;
   seminars: Collection<Seminar>;
@@ -173,6 +175,7 @@ export function createMemoryDb(): Db {
     suppressions: new MemoryCollection(),
     factVerifications: new MemoryCollection(),
     templateApprovals: new MemoryCollection(),
+    pageApprovals: new MemoryCollection(),
     automationState: new MemoryCollection(),
     crmDeliveries: new MemoryCollection(),
     seminars: new MemoryCollection(),

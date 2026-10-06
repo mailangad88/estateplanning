@@ -15,6 +15,7 @@ import type {
 import type { FeeRuleVersion, Invoice } from "@/server/fees/admin";
 import type { BillableEvent } from "@/lib/fees";
 import type { SequenceEnrollment, Suppression, TemplateApproval } from "@/server/nurture/types";
+import type { PageApproval } from "@/server/types";
 import type { AutomationState } from "@/server/db";
 import type { FactVerification } from "@/lib/facts";
 
@@ -176,6 +177,11 @@ const fixtures = {
   suppressions: { id: "email:a@x.test", channel: "email", address: "a@x.test", reason: "STOP", at: T0 } satisfies Required<Suppression>,
   factVerifications: { id: "state.CA.small_estate_threshold@1", factId: "state.CA.small_estate_threshold", version: 1, approvedValue: "$208,850", approvedBy: "u-admin", approvedAt: T0, note: "checked" } satisfies Required<FactVerification>,
   templateApprovals: { id: "qz_1_results@1", templateKey: "qz_1_results", version: 1, contentHash: "a".repeat(64), approvedBy: "u-admin", approvedAt: T0, note: "checked" } satisfies Required<TemplateApproval>,
+  pageApprovals: {
+    id: "pa_1", path: "/guides/what-is-a-will", file: "content/guides/what-is-a-will.md", contentHash: "b".repeat(64), tier: "low",
+    approvedBy: "u-admin", approverRole: "platform_admin", approverName: "Admin", approvedAt: T0, note: "checked", batchId: "batch_1",
+    prUrl: "https://github.com/o/r/pull/1", editedFromHash: "c".repeat(64),
+  } satisfies Required<PageApproval>,
   crmDeliveries: {
     id: "l1", leadId: "l1", event: "lead.created", status: "failed", httpStatus: 503, attempts: 3, error: "HTTP 503",
     createdAt: T0, updatedAt: T0, lastAttemptAt: T0, deliveredAt: T0,
@@ -291,6 +297,7 @@ const platformDb = {
   get feeRuleVersions() { return as({ userId: "u-admin", role: "platform_admin" }).feeRuleVersions; },
   get factVerifications() { return as({ userId: "u-admin", role: "platform_admin" }).factVerifications; },
   get templateApprovals() { return as({ userId: "u-admin", role: "platform_admin" }).templateApprovals; },
+  get pageApprovals() { return as({ userId: "u-admin", role: "platform_admin" }).pageApprovals; },
 };
 
 beforeAll(async () => {
@@ -342,7 +349,7 @@ suite("postgres integration", () => {
       const coll = (service as unknown as Record<string, { get(id: string): Promise<unknown>; insert(x: unknown): Promise<unknown> }>)[key];
       if (!["users", "firms", "lawyers", "persons", "leads"].includes(key)) {
         // fee rules and fact approvals are written in a platform admin session only; app_service can read them
-        await (key === "feeRuleVersions" ? platformDb.feeRuleVersions : key === "factVerifications" ? platformDb.factVerifications : key === "templateApprovals" ? platformDb.templateApprovals : coll).insert(fx as never);
+        await (key === "feeRuleVersions" ? platformDb.feeRuleVersions : key === "factVerifications" ? platformDb.factVerifications : key === "templateApprovals" ? platformDb.templateApprovals : key === "pageApprovals" ? platformDb.pageApprovals : coll).insert(fx as never);
       }
       expect(await coll.get((fx as { id: string }).id), key).toEqual(fx);
     }
@@ -410,6 +417,31 @@ suite("postgres integration", () => {
       await expect(s.templateApprovals.insert({ ...next, id: `x-${role}@9`, templateKey: `x-${role}`, version: 9, approvedBy: `u-${role}` }), role).rejects.toThrow();
     }
     await expect(service.templateApprovals.update(next.id, { note: "edited" })).rejects.toThrow();
+  });
+
+  maybe("page approvals: attorneys and admins approve as themselves in their own role, others see nothing, rows are immutable", async () => {
+    const attorney = as({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" });
+    const next: PageApproval = {
+      ...fixtures.pageApprovals, id: "pa_2", contentHash: "d".repeat(64), approvedBy: "u-attorney", approverRole: "attorney",
+      approverName: "Avery", prUrl: undefined, editedFromHash: undefined,
+    };
+    await attorney.pageApprovals.insert(next);
+    expect(await attorney.pageApprovals.get("pa_2")).toEqual(next);
+    // cannot approve in someone else's name, or claim another role
+    await expect(attorney.pageApprovals.insert({ ...next, id: "pa_3", contentHash: "e".repeat(64), approvedBy: "u-admin" })).rejects.toThrow();
+    await expect(attorney.pageApprovals.insert({ ...next, id: "pa_4", contentHash: "f".repeat(64), approverRole: "platform_admin" })).rejects.toThrow();
+    // one approval per (path, content hash)
+    await expect(attorney.pageApprovals.insert({ ...next, id: "pa_dup" })).rejects.toThrow();
+    // the service role reads approvals but cannot write them
+    expect((await service.pageApprovals.list()).length).toBe(2);
+    await expect(service.pageApprovals.insert({ ...next, id: "svc", contentHash: "9".repeat(64) })).rejects.toThrow();
+    for (const role of ["intake", "marketing", "firm_admin", "paralegal", "client"] as const) {
+      const s = as({ userId: `u-${role}`, role, firmId: "f1", lawyerId: "lw1", supportsLawyerIds: ["lw1"] });
+      expect(await s.pageApprovals.list(), role).toEqual([]);
+      await expect(s.pageApprovals.insert({ ...next, id: `x-${role}`, contentHash: `${role}`.padEnd(64, "0"), approvedBy: `u-${role}`, approverRole: role }), role).rejects.toThrow();
+    }
+    await expect(service.pageApprovals.update(next.id, { note: "edited" })).rejects.toThrow();
+    await expect(attorney.pageApprovals.update(next.id, { note: "edited" })).rejects.toThrow();
   });
 
   maybe("where pushdown", async () => {

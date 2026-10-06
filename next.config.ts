@@ -3,6 +3,12 @@ import { MERGED_PAGES } from "./src/config/merged-pages";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // Page review hashes the content files at request time, so they must ship with these server functions.
+  outputFileTracingIncludes: {
+    "/portal/pages": ["./content/**/*"],
+    "/api/portal/pages/**": ["./content/**/*"],
+    "/api/portal/page-approvals/**": ["./content/**/*"],
+  },
   async headers() {
     const staging = process.env.SITE_ENV === "staging" || process.env.VERCEL_ENV === "preview";
     return staging ? [{ source: "/(.*)", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] }] : [];

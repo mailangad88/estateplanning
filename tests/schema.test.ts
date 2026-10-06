@@ -7,7 +7,7 @@ const sql = readFileSync(join(__dirname, "..", "db", "schema.sql"), "utf8");
 const TABLES = [
   "users", "firms", "lawyers", "persons", "leads", "assignments", "documents", "comments", "activities",
   "consults", "engagements", "payments", "tasks", "fee_rule_versions", "billable_events", "invoices",
-  "sequence_enrollments", "suppressions", "fact_verifications", "template_approvals", "crm_deliveries", "seminars", "partners", "partner_gifts", "partner_referrals",
+  "sequence_enrollments", "suppressions", "fact_verifications", "template_approvals", "page_approvals", "crm_deliveries", "seminars", "partners", "partner_gifts", "partner_referrals",
   "conversion_events", "review_requests", "audit_events",
 ];
 
@@ -23,6 +23,14 @@ describe("db/schema.sql", () => {
     expect(sql).toMatch(/CREATE TRIGGER audit_events_immutable BEFORE UPDATE OR DELETE ON audit_events/);
     const grants = sql.split("\n").filter((l) => /^GRANT/.test(l) && /audit_events/.test(l));
     for (const g of grants) expect(g).not.toMatch(/UPDATE|DELETE|TRUNCATE/);
+  });
+
+  it("page_approvals is append-only, written only by attorneys and platform admins as themselves", () => {
+    expect(sql).toMatch(/CREATE TRIGGER page_approvals_immutable BEFORE UPDATE OR DELETE ON page_approvals/);
+    expect(sql).toMatch(/REVOKE UPDATE, DELETE, TRUNCATE ON page_approvals FROM PUBLIC, app_user, app_service;/);
+    expect(sql).toMatch(/CREATE POLICY page_approvals_insert ON page_approvals FOR INSERT TO app_user\s+WITH CHECK \(app_role\(\) IN \('platform_admin','attorney'\) AND approved_by = app_user_id\(\) AND approver_role = app_role\(\)\)/);
+    expect(sql).toMatch(/GRANT SELECT ON page_approvals TO app_service;/);
+    expect(sql).not.toMatch(/GRANT [A-Z, ]*(INSERT|UPDATE|DELETE)[A-Z, ]* ON page_approvals TO app_service/);
   });
 
   it("fee_rule_versions is append-only", () => {

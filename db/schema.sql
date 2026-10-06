@@ -348,6 +348,26 @@ CREATE TABLE template_approvals (
   UNIQUE (template_key, version)
 );
 
+-- Attorney approval of a site page for publication (src/server/content/pageApprovals.ts). Append-only. An
+-- approval counts only while content_hash equals the sha256 of the page's content file now; content files
+-- live in the repo, so scripts/apply-page-approvals.mjs writes the frontmatter flag in a normal commit.
+CREATE TABLE page_approvals (
+  id            text PRIMARY KEY,
+  path          text NOT NULL,                 -- site path, e.g. '/learn/wills/what-is-a-will'
+  file          text NOT NULL,                 -- content file relative to the repo root
+  content_hash  text NOT NULL,                 -- sha256 of the file's bytes as reviewed
+  tier          text NOT NULL CHECK (tier IN ('low','medium','high')),
+  approved_by   text NOT NULL,
+  approver_role text NOT NULL,
+  approver_name text NOT NULL,
+  approved_at   timestamptz NOT NULL,
+  note          text NOT NULL,
+  batch_id      text NOT NULL,
+  pr_url        text,                          -- the pull request carrying the flag into git, if one was opened
+  edited_from_hash text,                       -- set when edited in the portal: hash of the file before the edits
+  UNIQUE (path, content_hash)
+);
+
 -- Second factor per user (src/server/pg/mfa.ts). Secret encrypted by the app (AES-256-GCM).
 CREATE TABLE user_mfa (
   user_id              text PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
@@ -603,6 +623,8 @@ CREATE TRIGGER fact_verifications_immutable BEFORE UPDATE OR DELETE ON fact_veri
   FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
 CREATE TRIGGER template_approvals_immutable BEFORE UPDATE OR DELETE ON template_approvals
   FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
+CREATE TRIGGER page_approvals_immutable BEFORE UPDATE OR DELETE ON page_approvals
+  FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
 
 -- Only the assigned attorney approves an engagement (approve_engagement in policy.ts).
 -- Row policies cannot see which column changed, so a trigger guards it for app_user.
@@ -689,6 +711,7 @@ ALTER TABLE sequence_enrollments ENABLE ROW LEVEL SECURITY;  ALTER TABLE sequenc
 ALTER TABLE suppressions         ENABLE ROW LEVEL SECURITY;  ALTER TABLE suppressions         FORCE ROW LEVEL SECURITY;
 ALTER TABLE fact_verifications   ENABLE ROW LEVEL SECURITY;  ALTER TABLE fact_verifications   FORCE ROW LEVEL SECURITY;
 ALTER TABLE template_approvals  ENABLE ROW LEVEL SECURITY;  ALTER TABLE template_approvals  FORCE ROW LEVEL SECURITY;
+ALTER TABLE page_approvals       ENABLE ROW LEVEL SECURITY;  ALTER TABLE page_approvals       FORCE ROW LEVEL SECURITY;
 ALTER TABLE crm_deliveries       ENABLE ROW LEVEL SECURITY;  ALTER TABLE crm_deliveries       FORCE ROW LEVEL SECURITY;
 ALTER TABLE seminars             ENABLE ROW LEVEL SECURITY;  ALTER TABLE seminars             FORCE ROW LEVEL SECURITY;
 ALTER TABLE partners             ENABLE ROW LEVEL SECURITY;  ALTER TABLE partners             FORCE ROW LEVEL SECURITY;
@@ -727,6 +750,7 @@ CREATE POLICY service_all ON review_requests      FOR ALL TO app_service USING (
 CREATE POLICY service_read ON fee_rule_versions   FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON fact_verifications  FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON template_approvals FOR SELECT TO app_service USING (true);
+CREATE POLICY service_read ON page_approvals      FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON invoices            FOR SELECT TO app_service USING (true);
 CREATE POLICY service_write_invoices ON invoices  FOR INSERT TO app_service WITH CHECK (true);
 CREATE POLICY service_append ON audit_events      FOR INSERT TO app_service WITH CHECK (true);
@@ -900,6 +924,12 @@ CREATE POLICY template_approvals_select ON template_approvals FOR SELECT TO app_
 CREATE POLICY template_approvals_insert ON template_approvals FOR INSERT TO app_user
   WITH CHECK (app_role() IN ('platform_admin','attorney') AND approved_by = app_user_id());
 
+-- page approvals (approve_pages): attorneys and platform admins read and approve, as themselves and in their own role.
+CREATE POLICY page_approvals_select ON page_approvals FOR SELECT TO app_user
+  USING (app_role() IN ('platform_admin','attorney'));
+CREATE POLICY page_approvals_insert ON page_approvals FOR INSERT TO app_user
+  WITH CHECK (app_role() IN ('platform_admin','attorney') AND approved_by = app_user_id() AND approver_role = app_role());
+
 -- partners (manage_partners): platform_admin sees and manages all; firm_admin only partners of their own firm.
 CREATE POLICY partners_admin ON partners FOR ALL TO app_user
   USING (app_role() = 'platform_admin' OR (app_role() = 'firm_admin' AND firm_id IS NOT NULL AND firm_id = app_firm_id()))
@@ -934,6 +964,7 @@ GRANT SELECT                         ON payments TO app_user;
 GRANT SELECT, INSERT                 ON documents, comments, activities, invoices, billable_events, fee_rule_versions TO app_user;
 GRANT SELECT, INSERT                 ON fact_verifications TO app_user;
 GRANT SELECT, INSERT                 ON template_approvals TO app_user;
+GRANT SELECT, INSERT                 ON page_approvals TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON partners TO app_user;
 GRANT SELECT, INSERT                 ON partner_gifts TO app_user;
 GRANT SELECT, UPDATE                 ON partner_referrals TO app_user;
@@ -949,6 +980,7 @@ REVOKE UPDATE, DELETE, TRUNCATE ON audit_events FROM PUBLIC, app_user, app_servi
 REVOKE UPDATE, DELETE, TRUNCATE ON fee_rule_versions FROM PUBLIC, app_user, app_service;
 REVOKE UPDATE, DELETE, TRUNCATE ON fact_verifications FROM PUBLIC, app_user, app_service;
 REVOKE UPDATE, DELETE, TRUNCATE ON template_approvals FROM PUBLIC, app_user, app_service;
+REVOKE UPDATE, DELETE, TRUNCATE ON page_approvals FROM PUBLIC, app_user, app_service;
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, leads, assignments, documents, comments,
   activities, consults, engagements, payments, tasks, billable_events, sequence_enrollments, suppressions TO app_service;
@@ -961,6 +993,7 @@ GRANT SELECT, INSERT ON invoices TO app_service;
 GRANT SELECT ON fee_rule_versions TO app_service;
 GRANT SELECT ON fact_verifications TO app_service; -- approvals are written in the approver's own session
 GRANT SELECT ON template_approvals TO app_service; -- the sender reads approvals; they are written in the approver's own session
+GRANT SELECT ON page_approvals TO app_service; -- the apply script and export read them; written in the approver's own session
 GRANT INSERT ON audit_events TO app_service;
 
 -- The automation runner reads the audit log as its event feed (ids and actions only).
