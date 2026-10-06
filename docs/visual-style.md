@@ -64,6 +64,14 @@ illustrations.filter((i) => i.topics.includes("wills"));
 | Share images | `src/lib/og.tsx`, `/og` route | 1200x630, `ogImageUrl(title, kicker?, variant?)`. Home uses `src/app/opengraph-image.tsx`. |
 | Explainer videos (15) | `video/` (Remotion), `public/media/videos/` | Captioned MP4s, WebVTT captions, posters, `manifest.json`. `<VideoExplainer slug>` adds the player, chapters, transcript and VideoObject JSON-LD. Hub at `/videos`, one page per video at `/videos/[slug]`, video sitemap at `/videos/sitemap.xml`. |
 
+## Visuals on articles and share images, automatically
+
+- Any page rendered through `ArticlePage` (guides, comparisons, blog, life events) shows its diagram and video
+  from `PAGE_MEDIA` in `src/components/visuals/PageMedia.tsx`. Add a row there to put a visual on a page.
+- Every route has an `opengraph-image.tsx` that draws a share image from the page's title in `allPages()`
+  (`src/lib/page-og.tsx`). A new route only needs a copy of a sibling's `opengraph-image.tsx`.
+- The four interactive explainers that share a topic with a rendered video embed it (`explainerMap.ts`).
+
 ## Static files (email, PDFs, social)
 
 `npm run visuals:export` writes standalone SVG, PNG and WebP files to `public/media/covers/` and
