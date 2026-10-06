@@ -20,6 +20,14 @@ import { JsonLd as SeoJsonLd, breadcrumbLd, legalServiceLd } from "@/lib/seo";
 
 type Params = { state: string };
 
+/** Tools that read a state, linked with ?state= so the state question is already answered. */
+const STATE_TOOLS = [
+  { slug: "probate-cost-estimator", title: "Probate cost estimator", description: "What probate could cost here, using this state's rules where they are set by statute." },
+  { slug: "state-death-tax-checker", title: "Estate and inheritance tax checker", description: "Whether this state taxes an estate or the heirs, and from what amount." },
+  { slug: "small-estate-checker", title: "Small estate checker", description: "Whether a family can use a simpler process instead of full probate." },
+  { slug: "medicaid-savings-runway", title: "How long will savings last in a nursing home?", description: "Care costs against savings, with this state's Medicaid rules." },
+];
+
 export const dynamicParams = false;
 
 /*
@@ -122,6 +130,11 @@ export default async function StatePage({ params }: { params: Promise<Params> })
           Laws change. Confirm current rules with an attorney licensed in {s.name} before relying on this summary.
         </p>
       </section>
+      <LinkList
+        id="state-tools"
+        title={`Run the numbers for ${s.name}`}
+        items={STATE_TOOLS.map((t) => ({ url: `/tools/${t.slug}?state=${s.abbr}`, title: t.title, description: t.description }))}
+      />
       <Toc headings={s.headings} />
       <div className="prose" dangerouslySetInnerHTML={{ __html: s.html }} />
       {local && local.counties.length > 0 && (
