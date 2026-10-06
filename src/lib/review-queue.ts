@@ -97,7 +97,7 @@ function aiScores(): Record<string, { fraction_ai: number }> {
 const AI_REWRITE = Number(process.env.PANGRAM_MAX_AI ?? 0.5);
 
 /** Content file for a page path, to match AI-text scores. */
-function fileFor(p: string): string {
+export function fileFor(p: string): string {
   const m = /^\/learn\/([^/]+)(?:\/([^/]+))?$/.exec(p);
   if (m) return `content/learn/${m[1]}/${m[2] ?? "index"}.md`;
   const s = /^\/estate-planning\/([^/]+)$/.exec(p);
