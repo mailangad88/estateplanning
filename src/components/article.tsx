@@ -2,7 +2,9 @@ import Link from "next/link";
 import type { Faq, Heading } from "@/lib/content";
 import { articleLd, breadcrumbLd, JsonLd } from "@/lib/seo";
 import { Breadcrumbs, Cta, FaqList, Prose, ReviewNote, Toc } from "@/components/ui";
-import { EmailCapture } from "@/components/capture";
+import { EmailCapture, SensitiveMarker } from "@/components/capture";
+import { libraryLinksFor } from "@/lib/site-links";
+import { PageMedia } from "@/components/visuals/PageMedia";
 import MagnetOptIn from "@/components/MagnetOptIn";
 import { MAGNET_FORMATS, magnetsFor, pillarOf } from "@/lib/magnets";
 import { quizzesFor } from "@/lib/quizzes";
@@ -17,6 +19,10 @@ export function ArticlePage(props: {
   section: { name: string; path: string };
   path: string;
   title: string;
+  /** H1 when it differs from the shorter `title` used in breadcrumbs. */
+  heading?: string;
+  /** Skip analytics events and the exit-intent offer on this page. */
+  sensitive?: boolean;
   description: string;
   answer?: string;
   updated: string;
@@ -27,7 +33,7 @@ export function ArticlePage(props: {
   related: RelatedLink[];
   before?: React.ReactNode;
   after?: React.ReactNode;
-  magnet?: { interest: string; title: string; body: string };
+  magnet?: { interest: string; title: string; body: string; cta?: string };
 }) {
   // Free resources written for this page (or this post's pillar guide) replace the generic email offer.
   const offers = magnetsFor(props.path);
@@ -38,10 +44,12 @@ export function ArticlePage(props: {
     props.section,
     { name: props.title, path: props.path },
   ];
+  const seen = new Set(props.related.map((r) => r.href));
+  const related = [...props.related, ...libraryLinksFor(props.path).filter((l) => !seen.has(l.href))];
   return (
     <article>
       <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: props.section.path, label: props.section.name }, { label: props.title }]} />
-      <h1>{props.title}</h1>
+      <h1>{props.heading ?? props.title}</h1>
       <ReviewNote reviewed={props.reviewed} updated={props.updated} />
       {props.answer ? (
         <div className="answer">
@@ -52,6 +60,7 @@ export function ArticlePage(props: {
         <p className="lead">{props.description}</p>
       )}
       {props.before}
+      <PageMedia path={props.path} />
       <Toc headings={props.headings} />
       {quiz && (
         <p className="quiz-teaser no-print">
@@ -61,7 +70,7 @@ export function ArticlePage(props: {
       <Prose html={props.html} />
       {props.after}
       <FaqList faqs={props.faqs ?? []} />
-      {lead ? (
+      {lead && !props.sensitive ? (
         <section className="magnet-callout">
           <MagnetOptIn
             magnet={{ slug: lead.slug, title: lead.title, format: lead.format, formatLabel: MAGNET_FORMATS[lead.format], tag: lead.tag, sequence: lead.sequence }}
@@ -85,15 +94,15 @@ export function ArticlePage(props: {
           )}
         </section>
       ) : props.magnet ? (
-        <EmailCapture kind="magnet" interest={props.magnet.interest} title={props.magnet.title} body={props.magnet.body} />
+        <EmailCapture kind="magnet" interest={props.magnet.interest} title={props.magnet.title} body={props.magnet.body} cta={props.magnet.cta} sensitive={props.sensitive} />
       ) : (
         <Cta />
       )}
-      {props.related.length > 0 && (
+      {related.length > 0 && (
         <section>
           <h2>Keep reading</h2>
           <ul className="cards">
-            {props.related.map((r) => (
+            {related.map((r) => (
               <li key={r.href}>
                 <Link href={r.href} className="card-link">
                   <span className="tag">{r.kind}</span>
@@ -108,6 +117,7 @@ export function ArticlePage(props: {
         This page is general information, not legal advice. Laws differ by state. Talk to an attorney licensed in your
         state about your situation.
       </p>
+      {props.sensitive && <SensitiveMarker />}
       <JsonLd data={[articleLd({ title: props.title, description: props.description, path: props.path, updated: props.updated }), breadcrumbLd(crumbs)]} />
     </article>
   );

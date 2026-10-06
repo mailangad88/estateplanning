@@ -1,0 +1,111 @@
+import Link from "next/link";
+import { devLoginEnabled } from "@/server/auth/session";
+import { lawyerDashboard, visibleLeads } from "@/server/portal/caseView";
+import { currentActor, getDb } from "@/server/runtime";
+import { MATTER_LABELS } from "@/server/services/leads";
+
+export const dynamic = "force-dynamic";
+export const metadata = { title: "Portal", robots: { index: false, follow: false } };
+
+function SignIn() {
+  const db = getDb();
+  return (
+    <>
+      <h1>Portal sign-in</h1>
+      {devLoginEnabled() ? (
+        <form method="post" action="/api/auth/dev-login" className="card">
+          <p className="notice">Development sign-in. Turned off in production, where sign-in goes through the identity provider with two-step verification.</p>
+          <label className="field">
+            Sign in as
+            <select name="userId">
+              {db.users.list((u) => u.active).map((u) => (
+                <option key={u.id} value={u.id}>{u.name} ({u.role.replace("_", " ")})</option>
+              ))}
+            </select>
+          </label>
+          <button className="button">Sign in</button>
+        </form>
+      ) : (
+        <p>Use the sign-in link from your firm. Sign-in requires two-step verification.</p>
+      )}
+    </>
+  );
+}
+
+function minutesLeft(iso: string) {
+  return Math.max(0, Math.round((new Date(iso).getTime() - Date.now()) / 60_000));
+}
+
+export default async function PortalHome() {
+  const actor = await currentActor();
+  if (!actor) return <SignIn />;
+  const db = getDb();
+  const user = db.users.get(actor.userId);
+
+  if (actor.role === "marketing") {
+    const leads = db.leads.list();
+    const byStage = new Map<string, number>();
+    for (const l of leads) byStage.set(l.stage, (byStage.get(l.stage) ?? 0) + 1);
+    return (
+      <>
+        <h1>Funnel</h1>
+        <p className="notice">Marketing sees totals only, never individual intake details.</p>
+        <table><tbody>{[...byStage].map(([s, n]) => <tr key={s}><td>{s.replaceAll("_", " ")}</td><td>{n}</td></tr>)}</tbody></table>
+        <SignOut />
+      </>
+    );
+  }
+
+  const dash = actor.role === "attorney" ? lawyerDashboard(db, actor) : null;
+  const leads = visibleLeads(db, actor).sort((a, b) => Number(b.lead.urgent) - Number(a.lead.urgent) || b.lead.createdAt.localeCompare(a.lead.createdAt));
+
+  return (
+    <>
+      <h1>Hello, {user?.name}</h1>
+      {dash && (
+        <>
+          <h2>New offers</h2>
+          {dash.offers.length === 0 ? <p>No open offers.</p> : (
+            <ul>
+              {dash.offers.map((o) => (
+                <li key={o.assignmentId}>
+                  <Link href={`/portal/leads/${o.leadId}`}>{o.offerSummary}</Link> · {minutesLeft(o.expiresAt)} min left to respond
+                </li>
+              ))}
+            </ul>
+          )}
+          <h2>Today</h2>
+          <p>
+            {dash.todaysConsults.length} consults today · {dash.awaitingSignature.length} engagements awaiting signature · {dash.drafting.length} in drafting · {dash.overdueTasks.length} overdue tasks
+          </p>
+          <p className="notice">
+            Accept speed {dash.metrics.avgAcceptMinutes ?? "n/a"} min · Show rate {dash.metrics.showRate === null ? "n/a" : `${Math.round(dash.metrics.showRate * 100)}%`} · Signed rate {dash.metrics.signedRate === null ? "n/a" : `${Math.round(dash.metrics.signedRate * 100)}%`}
+          </p>
+        </>
+      )}
+      <h2>{actor.role === "attorney" ? "Your cases" : "Leads"}</h2>
+      {leads.length === 0 ? <p>Nothing here yet.</p> : (
+        <table>
+          <thead><tr><th>Lead</th><th>Matter</th><th>Stage</th><th>Access</th></tr></thead>
+          <tbody>
+            {leads.map(({ lead, access }) => (
+              <tr key={lead.id}>
+                <td><Link href={`/portal/leads/${lead.id}`}>{lead.urgent ? "Urgent · " : ""}{lead.id.slice(0, 8)}</Link></td>
+                <td>{MATTER_LABELS[lead.matterType]}, {lead.state}</td>
+                <td>{lead.exit ? `Closed (${lead.exit.reason.replaceAll("_", " ")})` : lead.stage.replaceAll("_", " ")}</td>
+                <td>{access === "conflict_card" ? "Offer: conflict card only" : access}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+      <SignOut />
+    </>
+  );
+}
+
+function SignOut() {
+  return (
+    <form method="post" action="/api/auth/logout"><button className="button secondary">Sign out</button></form>
+  );
+}

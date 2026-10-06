@@ -46,6 +46,19 @@ export interface LifeEvent extends BaseDoc {
   checklist: string[];
 }
 
+export interface Audience extends BaseDoc {
+  /** Page heading (H1). `title` is the shorter name used in cards, breadcrumbs and the title tag. */
+  headline: string;
+  /** Short "does this sound like you" situations, shown near the top. */
+  hooks: string[];
+  /** Email-only lead magnet. Null when the page has none. */
+  magnet: { title: string; body: string; cta?: string } | null;
+  faqs: Faq[];
+  /** Health, disability or family-structure topics: no analytics events, no remarketing. */
+  sensitive: boolean;
+  order: number;
+}
+
 export interface Lesson extends BaseDoc {
   day: number;
   task: string;
@@ -205,6 +218,23 @@ export function getLifeEvents(): LifeEvent[] {
       event: String(data.event ?? slug),
       checklist: Array.isArray(data.checklist) ? data.checklist.map(String) : [],
     })),
+  );
+}
+
+export function getAudiences(): Audience[] {
+  return cached("audiences", () =>
+    readDir("audiences", (slug, data, body) => {
+      const m = (data.magnet ?? null) as Record<string, unknown> | null;
+      return {
+        ...base(slug, data, body),
+        headline: String(data.headline ?? data.title ?? slug),
+        hooks: Array.isArray(data.hooks) ? data.hooks.map(String) : [],
+        magnet: m && m.title ? { title: String(m.title), body: String(m.body ?? ""), cta: m.cta ? String(m.cta) : undefined } : null,
+        faqs: faqs(data),
+        sensitive: data.sensitive === true,
+        order: Number(data.order ?? 99),
+      };
+    }).sort((a, b) => a.order - b.order || a.title.localeCompare(b.title)),
   );
 }
 

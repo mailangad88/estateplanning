@@ -1,51 +1,110 @@
 import type { Metadata } from "next";
-import { getGlossary } from "@/lib/content";
-import { Cta, PageHeader } from "@/components/ui";
-import { JsonLd, abs } from "@/lib/seo";
+import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import CtaBox from "@/components/CtaBox";
+import JsonLd from "@/components/JsonLd";
+import { getGlossary as getShortDefinitions } from "@/lib/content";
+import { getGlossary } from "@/lib/library";
+import { absoluteUrl } from "@/config/site";
+import { breadcrumbSchema, definedTermSetSchema, graph } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Estate planning glossary: terms and acronyms explained",
-  description: "Plain-English definitions of estate planning terms and acronyms, from administrator to UTMA.",
+  description:
+    "Plain-English definitions of estate planning terms and acronyms, from administrator to UTMA, with examples and links to the guides that explain them.",
   alternates: { canonical: "/glossary" },
 };
 
-export default function GlossaryPage() {
-  const terms = getGlossary();
-  const letters = [...new Set(terms.map((t) => t.term[0].toUpperCase()))];
+interface Row {
+  slug: string;
+  term: string;
+  definition: string;
+  /** Set when the term has its own page with an example and related guides. */
+  url?: string;
+  seeAlso: string[];
+}
+
+/**
+ * Merges the full-page glossary entries (content/glossary/*.md) with the short definitions in
+ * content/glossary.json. Terms with a page link to it; the rest are defined inline with an anchor.
+ */
+function rows(): Row[] {
+  const pages = getGlossary();
+  const out: Row[] = pages.map((g) => ({ slug: g.slug, term: g.term, definition: g.short, url: g.url, seeAlso: g.seeAlso }));
+  const norm = (s: string) => s.toLowerCase().replace(/\(.*?\)/g, "").replace(/[^a-z0-9]/g, "");
+  for (const t of getShortDefinitions()) {
+    if (out.some((r) => r.slug === t.slug || norm(r.term) === norm(t.term))) continue;
+    const term = t.acronym && t.acronym !== t.term ? `${t.term} (${t.acronym})` : t.term;
+    out.push({ slug: t.slug, term, definition: t.definition, seeAlso: t.related ?? [] });
+  }
+  return out.sort((a, b) => a.term.localeCompare(b.term));
+}
+
+export default function GlossaryIndex() {
+  const entries = rows();
+  const crumbs = [
+    { name: "Home", url: "/" },
+    { name: "Glossary", url: "/glossary" },
+  ];
+  const letters = Array.from(new Set(entries.map((e) => e.term[0].toUpperCase())));
+  const href = (slug: string) => {
+    const r = entries.find((e) => e.slug === slug);
+    return r ? (r.url ?? `#${r.slug}`) : null;
+  };
+  const setSchema = definedTermSetSchema(getGlossary());
+  setSchema.hasDefinedTerm = entries.map((e) => ({
+    "@type": "DefinedTerm",
+    name: e.term,
+    description: e.definition,
+    url: absoluteUrl(e.url ?? `/glossary#${e.slug}`),
+  }));
+
   return (
-    <>
-      <PageHeader title="Estate planning glossary" lead={`${terms.length} terms and acronyms, explained in plain English.`} />
-      <nav className="az" aria-label="Jump to letter">
-        {letters.map((l) => <a key={l} href={`#letter-${l}`}>{l}</a>)}
-      </nav>
-      <dl className="glossary">
+    <div className="content">
+      <JsonLd data={graph(breadcrumbSchema(crumbs), setSchema)} />
+      <Breadcrumbs items={crumbs} />
+      <h1>Estate planning glossary</h1>
+      <p className="lead">
+        {entries.length} terms and acronyms in plain English. Terms in the library have their own page with an example and
+        the guides that explain them in depth.
+      </p>
+      <nav aria-label="Jump to letter" className="az">
         {letters.map((l) => (
-          <div key={l}>
-            <h2 id={`letter-${l}`}>{l}</h2>
-            {terms.filter((t) => t.term[0].toUpperCase() === l).map((t) => (
-              <div key={t.slug}>
-                <dt id={t.slug}>{t.term}{t.acronym && t.acronym !== t.term ? ` (${t.acronym})` : ""}</dt>
-                <dd>
-                  {t.definition}
-                  {t.related?.length > 0 && (
-                    <span className="notice"> See also: {t.related.map((r, i) => <span key={r}>{i > 0 && ", "}<a href={`#${r}`}>{terms.find((x) => x.slug === r)?.term ?? r}</a></span>)}</span>
-                  )}
-                </dd>
-              </div>
-            ))}
-          </div>
+          <a key={l} href={`#letter-${l}`}>{l}</a>
         ))}
-      </dl>
-      <Cta />
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "DefinedTermSet",
-          name: "Estate planning glossary",
-          url: abs("/glossary"),
-          hasDefinedTerm: terms.map((t) => ({ "@type": "DefinedTerm", name: t.term, description: t.definition, url: abs(`/glossary#${t.slug}`) })),
-        }}
-      />
-    </>
+      </nav>
+      {letters.map((l) => (
+        <section key={l} aria-labelledby={`letter-${l}`}>
+          <h2 id={`letter-${l}`}>{l}</h2>
+          <dl className="glossary-list">
+            {entries
+              .filter((e) => e.term[0].toUpperCase() === l)
+              .map((e) => {
+                const also = e.seeAlso.map((s) => [s, href(s)] as const).filter(([, h]) => h);
+                return (
+                  <div key={e.slug} id={e.slug}>
+                    <dt>{e.url ? <Link href={e.url}>{e.term}</Link> : e.term}</dt>
+                    <dd>
+                      {e.definition}
+                      {also.length > 0 && (
+                        <span className="notice">
+                          {" "}See also:{" "}
+                          {also.map(([s, h], i) => (
+                            <span key={s}>
+                              {i > 0 && ", "}
+                              <a href={h!}>{entries.find((x) => x.slug === s)?.term ?? s}</a>
+                            </span>
+                          ))}
+                        </span>
+                      )}
+                    </dd>
+                  </div>
+                );
+              })}
+          </dl>
+        </section>
+      ))}
+      <CtaBox />
+    </div>
   );
 }
