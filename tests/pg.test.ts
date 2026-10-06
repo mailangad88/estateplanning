@@ -14,7 +14,7 @@ import type {
 } from "@/server/types";
 import type { FeeRuleVersion, Invoice } from "@/server/fees/admin";
 import type { BillableEvent } from "@/lib/fees";
-import type { SequenceEnrollment, Suppression } from "@/server/nurture/types";
+import type { SequenceEnrollment, Suppression, TemplateApproval } from "@/server/nurture/types";
 import type { AutomationState } from "@/server/db";
 import type { FactVerification } from "@/lib/facts";
 
@@ -175,6 +175,7 @@ const fixtures = {
   } satisfies Required<SequenceEnrollment>,
   suppressions: { id: "email:a@x.test", channel: "email", address: "a@x.test", reason: "STOP", at: T0 } satisfies Required<Suppression>,
   factVerifications: { id: "state.CA.small_estate_threshold@1", factId: "state.CA.small_estate_threshold", version: 1, approvedValue: "$208,850", approvedBy: "u-admin", approvedAt: T0, note: "checked" } satisfies Required<FactVerification>,
+  templateApprovals: { id: "qz_1_results@1", templateKey: "qz_1_results", version: 1, contentHash: "a".repeat(64), approvedBy: "u-admin", approvedAt: T0, note: "checked" } satisfies Required<TemplateApproval>,
   crmDeliveries: {
     id: "l1", leadId: "l1", event: "lead.created", status: "failed", httpStatus: 503, attempts: 3, error: "HTTP 503",
     createdAt: T0, updatedAt: T0, lastAttemptAt: T0, deliveredAt: T0,
@@ -289,6 +290,7 @@ const as = (s: PgSession) => createPgDb({ pool, session: s });
 const platformDb = {
   get feeRuleVersions() { return as({ userId: "u-admin", role: "platform_admin" }).feeRuleVersions; },
   get factVerifications() { return as({ userId: "u-admin", role: "platform_admin" }).factVerifications; },
+  get templateApprovals() { return as({ userId: "u-admin", role: "platform_admin" }).templateApprovals; },
 };
 
 beforeAll(async () => {
@@ -340,7 +342,7 @@ suite("postgres integration", () => {
       const coll = (service as unknown as Record<string, { get(id: string): Promise<unknown>; insert(x: unknown): Promise<unknown> }>)[key];
       if (!["users", "firms", "lawyers", "persons", "leads"].includes(key)) {
         // fee rules and fact approvals are written in a platform admin session only; app_service can read them
-        await (key === "feeRuleVersions" ? platformDb.feeRuleVersions : key === "factVerifications" ? platformDb.factVerifications : coll).insert(fx as never);
+        await (key === "feeRuleVersions" ? platformDb.feeRuleVersions : key === "factVerifications" ? platformDb.factVerifications : key === "templateApprovals" ? platformDb.templateApprovals : coll).insert(fx as never);
       }
       expect(await coll.get((fx as { id: string }).id), key).toEqual(fx);
     }
@@ -388,6 +390,26 @@ suite("postgres integration", () => {
       await expect(s.factVerifications.insert({ ...next, id: `x-${role}@9`, factId: `x-${role}`, version: 9, approvedBy: `u-${role}` }), role).rejects.toThrow();
     }
     await expect(service.factVerifications.update(next.id, { note: "edited" })).rejects.toThrow();
+  });
+
+  maybe("template approvals: attorneys and admins approve as themselves, others see nothing, rows are immutable", async () => {
+    const attorney = as({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" });
+    const next = { ...fixtures.templateApprovals, id: "qz_1_results@2", version: 2, approvedBy: "u-attorney" };
+    await attorney.templateApprovals.insert(next);
+    // cannot approve in someone else's name
+    await expect(attorney.templateApprovals.insert({ ...next, id: "qz_1_results@3", version: 3, approvedBy: "u-admin" })).rejects.toThrow();
+    // one row per (template, version)
+    await expect(service.templateApprovals.insert({ ...next, id: "dup" })).rejects.toThrow();
+    expect((await attorney.templateApprovals.list(undefined, { templateKey: "qz_1_results" })).map((v) => v.version).sort()).toEqual([1, 2]);
+    // the sender reads approvals through the service role but cannot write them
+    expect((await service.templateApprovals.list()).length).toBe(2);
+    await expect(service.templateApprovals.insert({ ...next, id: "svc@1", templateKey: "svc", version: 1 })).rejects.toThrow();
+    for (const role of ["intake", "marketing", "firm_admin", "paralegal"] as const) {
+      const s = as({ userId: `u-${role}`, role, firmId: "f1", lawyerId: "lw1", supportsLawyerIds: ["lw1"] });
+      expect(await s.templateApprovals.list(), role).toEqual([]);
+      await expect(s.templateApprovals.insert({ ...next, id: `x-${role}@9`, templateKey: `x-${role}`, version: 9, approvedBy: `u-${role}` }), role).rejects.toThrow();
+    }
+    await expect(service.templateApprovals.update(next.id, { note: "edited" })).rejects.toThrow();
   });
 
   maybe("where pushdown", async () => {
