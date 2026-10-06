@@ -4,6 +4,7 @@ import { firm } from "@/config/firm";
 import { ExitIntent, StickyContactBar } from "@/components/capture";
 import { JsonLd, legalServiceLd, SITE_URL } from "@/lib/seo";
 import "./globals.css";
+import "@/components/visuals/visuals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
