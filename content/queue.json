@@ -4307,6 +4307,174 @@
    "priority": 2,
    "status": "queued",
    "source": "Angad's what-if request (2026-10-06)"
+  },
+  {
+   "id": "K420",
+   "keyword": "What happens if the hospital won't tell me anything about my family member?",
+   "intent": "scenario",
+   "cluster": "healthcare-directives",
+   "slug": "hipaa-authorization",
+   "priority": 2,
+   "status": "covered",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)",
+   "coveredBy": "/learn/healthcare-directives/hipaa-authorization",
+   "scenarioId": "hospital-wont-talk"
+  },
+  {
+   "id": "K421",
+   "keyword": "What happens if probate takes years?",
+   "intent": "scenario",
+   "cluster": "probate",
+   "slug": "how-long-does-probate-take",
+   "priority": 2,
+   "status": "covered",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)",
+   "coveredBy": "/learn/probate/how-long-does-probate-take",
+   "scenarioId": "probate-delay"
+  },
+  {
+   "id": "K422",
+   "keyword": "What happens if someone dies owning property in two states?",
+   "intent": "scenario",
+   "cluster": "probate",
+   "slug": "ancillary-probate",
+   "priority": 2,
+   "status": "covered",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)",
+   "coveredBy": "/learn/probate/ancillary-probate",
+   "scenarioId": "property-in-two-states"
+  },
+  {
+   "id": "K423",
+   "keyword": "What happens if a parent needs long-term care and has no plan to pay for it?",
+   "intent": "scenario",
+   "cluster": "elder-care",
+   "slug": "medicaid-planning",
+   "priority": 2,
+   "status": "covered",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)",
+   "coveredBy": "/learn/elder-care/medicaid-planning",
+   "scenarioId": "long-term-care-costs"
+  },
+  {
+   "id": "K424",
+   "keyword": "What happens if no one can get into a loved one's online accounts after they die?",
+   "intent": "scenario",
+   "cluster": "digital-assets",
+   "slug": "digital-assets-in-your-estate-plan",
+   "priority": 2,
+   "status": "covered",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)",
+   "coveredBy": "/learn/digital-assets/digital-assets-in-your-estate-plan",
+   "scenarioId": "digital-accounts-locked"
+  },
+  {
+   "id": "K425",
+   "keyword": "What happens to a joint bank account when one owner dies?",
+   "intent": "scenario",
+   "cluster": "property-and-assets",
+   "slug": "joint-tenancy-risks",
+   "priority": 2,
+   "status": "covered",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)",
+   "coveredBy": "/learn/property-and-assets/joint-tenancy-risks",
+   "scenarioId": "joint-account-surprise"
+  },
+  {
+   "id": "K426",
+   "keyword": "What happens to my pets if I die?",
+   "intent": "scenario",
+   "cluster": "property-and-assets",
+   "slug": "pet-trusts",
+   "priority": 2,
+   "status": "covered",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)",
+   "coveredBy": "/learn/property-and-assets/pet-trusts",
+   "scenarioId": "pets-left-behind"
+  },
+  {
+   "id": "K427",
+   "keyword": "What happens to a small business if the owner dies with no plan?",
+   "intent": "scenario",
+   "cluster": "business-owners",
+   "slug": "business-succession-planning",
+   "priority": 2,
+   "status": "covered",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)",
+   "coveredBy": "/learn/business-owners/business-succession-planning",
+   "scenarioId": "business-has-no-plan"
+  },
+  {
+   "id": "K428",
+   "keyword": "What happens if my will and my beneficiary form say different things?",
+   "intent": "scenario",
+   "cluster": "wills",
+   "slug": "what-a-will-cannot-do",
+   "priority": 2,
+   "status": "covered",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)",
+   "coveredBy": "/learn/wills/what-a-will-cannot-do",
+   "scenarioId": "beneficiary-form-overrides-will"
+  },
+  {
+   "id": "K429",
+   "keyword": "What happens if no one knows my end-of-life wishes?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "end-of-life-wishes-unknown",
+   "priority": 1,
+   "status": "queued",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)"
+  },
+  {
+   "id": "K430",
+   "keyword": "What happens if the house is stuck in probate?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "house-stuck-in-probate",
+   "priority": 1,
+   "status": "queued",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)"
+  },
+  {
+   "id": "K431",
+   "keyword": "What happens if my parent remarries and the new spouse inherits everything?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "new-spouse-takes-all",
+   "priority": 1,
+   "status": "queued",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)"
+  },
+  {
+   "id": "K432",
+   "keyword": "What happens if siblings fight over a parent's estate?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "family-dispute",
+   "priority": 1,
+   "status": "queued",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)"
+  },
+  {
+   "id": "K433",
+   "keyword": "What happens if a caregiver cannot get medical or bank records for the person they care for?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "caregiver-cant-access-records",
+   "priority": 1,
+   "status": "queued",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)"
+  },
+  {
+   "id": "K434",
+   "keyword": "What happens if the executor is overwhelmed or cannot do the job?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "executor-burden",
+   "priority": 1,
+   "status": "queued",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)"
   }
  ]
 }
