@@ -73,7 +73,7 @@ The petition asks the court to admit the will, if there is one, and to name the 
 
 ## Step 5: Notice to heirs
 
-After the will is admitted or the administrator is appointed, the representative sends notice to heirs and legatees. The notice explains their right to ask the court about the will's validity, within a limited time. <!-- verify: deadlines in 755 ILCS 5/6-10, including the 42 day contest period -->
+After the will is admitted or the administrator is appointed, the representative sends notice to heirs and legatees. The notice explains their rights: an heir can ask the court to require formal proof of the will within 42 days after it is admitted (755 ILCS 5/6-21), and can file a will contest within 6 months after admission (755 ILCS 5/8-1). <!-- verify: confirm both deadlines against current statute text -->
 
 - **Date notices mailed:** ____________________
 - **People notified (names and addresses):** ____________________
