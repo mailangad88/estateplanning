@@ -3,15 +3,22 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { smsConsentText } from "@/lib/consent";
+import { filterEvent } from "@/lib/analytics";
+import { useTrackingNumber } from "@/components/TrackedPhone";
 
 type Kind = "magnet" | "course" | "newsletter" | "callback" | "question" | "report";
 
-/** Pushes a non-identifying analytics event (GA4 / GTM dataLayer). Never send names, emails or answers. */
+/**
+ * Pushes a non-identifying analytics event (GA4 / GTM dataLayer). Never send names, emails or answers.
+ * `filterEvent` strips health and orientation terms and restricts sensitive pages (config/sensitive.ts).
+ */
 export function track(event: string, props: Record<string, string | number> = {}) {
   try {
+    const payload = filterEvent(event, props, window.location.pathname);
+    if (!payload) return;
     const w = window as unknown as { dataLayer?: object[] };
     w.dataLayer = w.dataLayer ?? [];
-    w.dataLayer.push({ event, ...props });
+    w.dataLayer.push(payload);
   } catch {
     // analytics must never break the page
   }
@@ -194,7 +201,8 @@ export function CallbackForm({ interest = "callback" }: { interest?: string }) {
 }
 
 /** Bottom bar on phones: call, text, book. Hidden on wide screens and in print. */
-export function StickyContactBar({ phone, textNumber }: { phone: string; textNumber?: string | null }) {
+export function StickyContactBar({ phone: fallback, textNumber }: { phone: string; textNumber?: string | null }) {
+  const phone = useTrackingNumber(fallback); // dynamic number insertion by first-touch source
   const digits = phone.replace(/\D/g, "");
   return (
     <div className="sticky-bar no-print">

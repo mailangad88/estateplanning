@@ -7,9 +7,12 @@
  * 2. Placeholders (enforced for production deploys): unfilled firm facts or attorney
  *    slots must never publish. Runs before `next build`; fails only when
  *    VERCEL_ENV=production or LAUNCH_CHECK=strict, so previews still build.
+ * 3. Advertising rules (enforced for production deploys): every served state
+ *    (SERVED_STATES) needs an entry in src/config/compliance.ts with verified: true.
  */
 import fs from "node:fs";
 import path from "node:path";
+import { pathToFileURL } from "node:url";
 
 const ROOT = process.cwd();
 const DIRS = ["content", "src"];
@@ -25,9 +28,35 @@ const BANNED = [
   { re: /\bfree (will|trust|consultation)\b/i, why: "'free' offers have state-specific rules" },
 ];
 // Phrases that contain a banned word but are not advertising claims.
-const ALLOW = [/specialists you see/i, /medical specialists?/i, /certified specialist/i];
+const ALLOW = [
+  /specialists you see/i,
+  /medical specialists?/i,
+  /certified specialist/i,
+  // Required outcome disclaimers (research/attorney-advertising-rules-by-state.md 1c).
+  /does not constitute a guarantee, warranty, or prediction regarding the outcome/i,
+  /past experience does not guarantee a similar result/i,
+];
 
 const PLACEHOLDERS = [/\[(Firm|Attorney|Office|Bar number|Flat fee)[^\]]*\]/, /\[firm placeholder/i, /ATTORNEY TO CONFIRM/, /\[VERIFY[^\]]*\]/, /\[ATTORNEY[^\]]*\]/, /\[STATE\]/, /\bPLACEHOLDER\b/, /\(000\) 000-0000/];
+
+/** Loads STATE_RULES from the typed config (Node type stripping), falling back to a text parse. */
+async function loadStateRules() {
+  const file = path.join(ROOT, "src/config/compliance.ts");
+  if (!fs.existsSync(file)) return null;
+  try {
+    process.removeAllListeners("warning"); // silence the module-type notice from type stripping
+    const mod = await import(pathToFileURL(file).href);
+    if (mod.STATE_RULES) return mod.STATE_RULES;
+  } catch {
+    // older Node without type stripping: fall through
+  }
+  const src = fs.readFileSync(file, "utf8");
+  const body = src.slice(src.indexOf("export const STATE_RULES"));
+  const out = {};
+  const re = /^ {2}([A-Z]{2}): \{([\s\S]*?)^ {2}\},/gm;
+  for (let m; (m = re.exec(body)); ) out[m[1]] = { verified: /^\s*verified: true,/m.test(m[2]) };
+  return Object.keys(out).length ? out : null;
+}
 
 function walk(dir, out = []) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -68,5 +97,29 @@ if (placeholders.length) {
     console.warn(`${msg} Run with LAUNCH_CHECK=strict to list them.`);
   }
 }
+// Advertising rules per served state (B21).
+const served = (process.env.SERVED_STATES ?? process.env.NEXT_PUBLIC_SERVED_STATES ?? "XX")
+  .split(",")
+  .map((x) => x.trim().toUpperCase())
+  .filter(Boolean);
+const ruleProblems = [];
+const stateRules = await loadStateRules();
+if (!stateRules) ruleProblems.push("could not read src/config/compliance.ts");
+else
+  for (const st of served) {
+    const r = stateRules[st];
+    if (!r) ruleProblems.push(`${st}: no entry in src/config/compliance.ts (the conservative default is shown, but the state must be researched)`);
+    else if (r.verified !== true) ruleProblems.push(`${st}: rules not verified by the attorney (verified: false)`);
+  }
+if (ruleProblems.length) {
+  const msg = `Advertising rules not ready for served states (${served.join(", ")}).`;
+  if (strict) {
+    console.error(`${msg}\n  ${ruleProblems.join("\n  ")}`);
+    failed = true;
+  } else {
+    console.warn(`${msg} ${ruleProblems.length} issue(s); run with LAUNCH_CHECK=strict to list them.`);
+  }
+}
+
 if (failed) process.exit(1);
 console.log("Launch check passed.");
