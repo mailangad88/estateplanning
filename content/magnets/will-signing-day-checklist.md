@@ -18,6 +18,10 @@ related:
   - guides/how-to-make-a-will
   - checklists/documents-to-gather-before-your-consult
   - guides/choosing-an-executor
+diagram: WillValidity
+answers:
+  - "Who can be a witness to a will?"
+  - "What is a self-proved will?"
 reviewed: false
 updated: "2026-10-06"
 ---

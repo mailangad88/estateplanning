@@ -19,6 +19,22 @@ related:
   - checklists/choosing-a-guardian-worksheet
   - tools/guardian-fund-calculator
   - guides/leaving-money-to-minors
+diagram: GuardianshipDecision
+answers:
+  - "How do I choose a guardian for my children?"
+  - "Who should I name as guardian for my kids?"
+  - "What qualities should a guardian for my children have?"
+  - "Should I choose a sibling or a friend as guardian?"
+  - "Should I choose grandparents as guardians?"
+  - "Should I name a guardian who has children of their own?"
+  - "Should siblings be split up between guardians?"
+  - "Should I tell the person I choose as guardian?"
+  - "What if my spouse and I disagree about who should be guardian?"
+  - "Can I name a backup guardian?"
+  - "Can I name two people as co-guardians?"
+  - "Can I name a friend as guardian instead of family?"
+  - "Can I name a married couple as guardians?"
+  - "Can I name someone as guardian who is older than me?"
 reviewed: false
 updated: "2026-10-06"
 ---

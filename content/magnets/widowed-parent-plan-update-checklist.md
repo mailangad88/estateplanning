@@ -18,6 +18,17 @@ related:
   - guides/updating-your-estate-plan
   - guides/guardianship-for-minor-children
   - checklists/beneficiary-designation-audit
+answers:
+  - "Do I need a new will after being widowed?"
+  - "Should I update my estate plan after my spouse dies?"
+  - "How soon should I update my estate plan after my spouse dies?"
+  - "Who should be my healthcare agent after my spouse dies?"
+  - "Who should be my power of attorney after my spouse dies?"
+  - "How do I change the beneficiaries after my spouse dies?"
+  - "Do I need to retitle the house and accounts after my spouse dies?"
+  - "Should I put my adult children on my accounts after my spouse dies?"
+  - "Should I downsize or sell the house after my spouse dies?"
+  - "What happens to Social Security survivor benefits for a widow?"
 reviewed: false
 updated: "2026-10-06"
 ---

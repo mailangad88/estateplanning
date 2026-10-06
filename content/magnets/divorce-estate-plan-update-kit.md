@@ -19,6 +19,18 @@ related:
   - guides/updating-your-estate-plan
   - guides/powers-of-attorney
   - guides/guardianship-for-minor-children
+answers:
+  - "What estate planning steps should I take after divorce, in order?"
+  - "Can I change my beneficiary while the divorce is pending?"
+  - "Do I need to update my estate plan when I get divorced?"
+  - "Do I need to update my estate plan after divorce?"
+  - "Is my ex still my healthcare agent after divorce?"
+  - "Is my ex still my power of attorney after divorce?"
+  - "Does divorce automatically remove my ex from my will?"
+  - "Does divorce cancel a will?"
+  - "Do I need to update my will after a divorce?"
+  - "What happens to my will if I am divorced but my ex is the executor?"
+  - "Do I need an estate plan if I'm divorced?"
 reviewed: false
 updated: "2026-10-06"
 ---

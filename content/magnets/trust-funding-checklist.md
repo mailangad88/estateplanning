@@ -21,6 +21,18 @@ related:
   - checklists/asset-and-account-inventory
   - compare/pour-over-will-vs-simple-will
   - guides/irrevocable-trusts-explained
+diagram: TrustFundingAssets
+answers:
+  - "How do I fund a trust?"
+  - "Should I put my car in a trust?"
+  - "Do I need to retitle my car for a trust?"
+  - "Putting car in a trust vs. TOD title?"
+  - "Should I put my bank accounts in a trust?"
+  - "Should I put my savings in a trust?"
+  - "Should I put my business in a trust?"
+  - "What is an assignment of personal property?"
+  - "How do I assign personal property to my trust?"
+  - "What is a trust certification?"
 reviewed: false
 updated: "2026-10-06"
 ---

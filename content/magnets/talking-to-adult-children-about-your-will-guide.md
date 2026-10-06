@@ -18,6 +18,10 @@ related:
   - guides/estate-planning-for-blended-families
   - blog/how-to-talk-to-your-parents-about-their-estate-plan
   - guides/updating-your-estate-plan
+answers:
+  - "Should I tell my children what is in my will?"
+  - "Should I tell my children about my estate plan?"
+  - "Should I treat my children equally in my will?"
 reviewed: false
 updated: "2026-10-06"
 ---

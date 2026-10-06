@@ -18,6 +18,8 @@ related:
   - guides/medicaid-and-long-term-care-planning
   - tools/medicaid-lookback-date
   - guides/powers-of-attorney
+answers:
+  - "Should I pay for a parent's care and then be reimbursed?"
 reviewed: false
 updated: "2026-10-06"
 ---

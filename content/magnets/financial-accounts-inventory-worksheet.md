@@ -19,6 +19,12 @@ related:
   - guides/beneficiary-designations
   - guides/how-probate-works
   - tools/beneficiary-audit
+answers:
+  - "How do I figure out the value of my estate?"
+  - "What counts as part of my estate?"
+  - "What happens to my bank account when I die?"
+  - "What happens to my assets when I die?"
+  - "What happens to my IRA when I die?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -19,6 +19,18 @@ related:
   - blog/how-long-does-probate-take
   - checklists/first-30-days-after-a-death
   - tools/executor-workload
+diagram: ProbateTimeline
+answers:
+  - "How long does probate take?"
+  - "How long does it take to settle an estate?"
+  - "How long can an estate stay open?"
+  - "Why is probate taking so long?"
+  - "Can probate take years?"
+  - "How can I speed up probate?"
+  - "How long after probate do beneficiaries get paid?"
+  - "When do heirs get their inheritance in probate?"
+  - "How long does an executor have to settle an estate?"
+  - "How long does an executor have to distribute assets?"
 reviewed: false
 updated: "2026-10-06"
 ---

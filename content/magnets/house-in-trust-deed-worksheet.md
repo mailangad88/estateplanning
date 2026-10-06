@@ -18,6 +18,22 @@ related:
   - checklists/trust-funding-checklist
   - blog/should-i-put-my-house-in-a-trust
   - guides/revocable-living-trust-explained
+answers:
+  - "How do I transfer a house into a trust?"
+  - "How do I retitle my house into a trust?"
+  - "Do I need a quitclaim deed or a warranty deed for a trust?"
+  - "Do I need a new deed to put my house in a trust?"
+  - "Does a deed transfer to a trust affect title insurance?"
+  - "Does putting a house in a trust affect title insurance?"
+  - "Does a deed transfer to a trust affect my homestead exemption?"
+  - "Does a trust affect homestead exemption?"
+  - "How do I put my house in a trust and keep the homestead exemption?"
+  - "Does a deed transfer to a trust affect my mortgage?"
+  - "Does a trust affect homeowners insurance?"
+  - "Does a deed transfer to a trust affect my homeowner's insurance?"
+  - "What is the Garn-St Germain Act?"
+  - "Does transferring a house to a trust trigger transfer tax?"
+  - "Does a deed transfer to a trust need a lawyer?"
 reviewed: false
 updated: "2026-10-06"
 ---

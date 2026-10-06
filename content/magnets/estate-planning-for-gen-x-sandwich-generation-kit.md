@@ -19,6 +19,11 @@ related:
   - guides/guardianship-for-minor-children
   - guides/medicaid-and-long-term-care-planning
   - checklists/important-contacts-list
+answers:
+  - "How do I help my parents with estate planning?"
+  - "What estate planning do I need if I am a caregiver for a parent?"
+  - "How do I write an estate plan for my parents?"
+  - "Can I do estate planning if I have dementia?"
 reviewed: false
 updated: "2026-10-06"
 ---

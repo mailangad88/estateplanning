@@ -18,6 +18,9 @@ related:
   - guides/transfer-on-death-and-payable-on-death
   - guides/revocable-living-trust-explained
   - guides/how-probate-works
+answers:
+  - "Should I put rental property in a trust?"
+  - "What is a due-on-sale clause?"
 reviewed: false
 updated: "2026-10-06"
 ---

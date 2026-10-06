@@ -18,6 +18,9 @@ related:
   - guides/choosing-an-executor
   - checklists/letter-of-instruction-outline
   - guides/how-to-make-a-will
+answers:
+  - "How do I prepare my family for my death?"
+  - "How do I prepare for an unexpected death?"
 reviewed: false
 updated: "2026-10-06"
 ---

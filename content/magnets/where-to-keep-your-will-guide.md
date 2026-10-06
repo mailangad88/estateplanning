@@ -18,6 +18,9 @@ related:
   - guides/how-to-make-a-will
   - checklists/letter-of-instruction-outline
   - guides/choosing-an-executor
+answers:
+  - "Where should I keep my will?"
+  - "Should I keep my will in a safe deposit box?"
 reviewed: false
 updated: "2026-10-06"
 ---

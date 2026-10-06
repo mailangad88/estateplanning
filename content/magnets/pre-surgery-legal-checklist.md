@@ -18,6 +18,9 @@ related:
   - guides/powers-of-attorney
   - compare/living-will-vs-healthcare-power-of-attorney
   - life-events/serious-diagnosis
+answers:
+  - "Can I get an advance directive at the hospital?"
+  - "Should healthy people have an advance directive?"
 reviewed: false
 updated: "2026-10-06"
 ---

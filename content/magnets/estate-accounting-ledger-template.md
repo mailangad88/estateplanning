@@ -18,6 +18,14 @@ related:
   - guides/choosing-an-executor
   - tools/executor-workload
   - checklists/first-30-days-after-a-death
+answers:
+  - "What is an estate accounting?"
+  - "Does an executor have to give an accounting to beneficiaries?"
+  - "What is a final accounting in probate?"
+  - "Do I have to give an accounting in probate?"
+  - "How do I do an estate inventory?"
+  - "Can an executor be paid?"
+  - "What happens if an executor distributes assets too early?"
 reviewed: false
 updated: "2026-10-06"
 ---

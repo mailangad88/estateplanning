@@ -19,6 +19,19 @@ related:
   - compare/power-of-attorney-vs-guardianship
   - compare/special-needs-trust-vs-able-account
   - guides/healthcare-directives-and-living-wills
+answers:
+  - "Do parents lose access to medical information when a child turns 18?"
+  - "Do I automatically have guardianship of my child with a disability at 18?"
+  - "Does SSI change at age 18?"
+  - "Is guardianship required when my child with a disability turns 18?"
+  - "Will my child's SSI change at 18?"
+  - "What is the difference between full and limited guardianship?"
+  - "When should I start the guardianship process before my child turns 18?"
+  - "What is a health care proxy or power of attorney for an adult child with a disability?"
+  - "Can an adult with a disability sign a power of attorney?"
+  - "What is a limited guardianship?"
+  - "Can I open an ABLE account for my child in any state?"
+  - "What happens if I leave money directly to a person on SSI?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -19,6 +19,14 @@ related:
   - life-events/new-baby
   - tools/life-insurance-needs
   - tools/guardian-fund-calculator
+answers:
+  - "What does an estate plan look like for a single parent?"
+  - "Do single parents need a different plan for guardianship?"
+  - "Should single parents name a guardian?"
+  - "How much life insurance do I need if I have young children?"
+  - "Can I name a minor as beneficiary of my life insurance?"
+  - "What is the difference between a guardian and a trustee?"
+  - "How does the guardian get money to take care of the kids?"
 reviewed: false
 updated: "2026-10-06"
 ---

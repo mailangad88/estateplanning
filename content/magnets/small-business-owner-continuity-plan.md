@@ -18,6 +18,10 @@ related:
   - life-events/starting-a-business
   - checklists/important-contacts-list
   - guides/powers-of-attorney
+answers:
+  - "What happens to employees when a business owner dies?"
+  - "What happens to a small business without a will?"
+  - "What happens to my business if I get a serious diagnosis?"
 reviewed: false
 updated: "2026-10-06"
 ---

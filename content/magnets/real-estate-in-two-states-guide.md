@@ -19,6 +19,12 @@ related:
   - compare/probate-vs-non-probate-assets
   - compare/transfer-on-death-deed-vs-trust
   - tools/probate-cost-estimator
+answers:
+  - "Can I put out-of-state property in a trust?"
+  - "Can a trust own real estate in another state?"
+  - "Do I need a trust if I own real estate in multiple states?"
+  - "What is an out-of-state executor?"
+  - "Do I owe state estate tax on property I own in another state?"
 reviewed: false
 updated: "2026-10-06"
 ---

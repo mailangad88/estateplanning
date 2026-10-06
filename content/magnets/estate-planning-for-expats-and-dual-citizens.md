@@ -18,6 +18,8 @@ related:
   - life-events/moving-to-a-new-state
   - guides/how-probate-works
   - guides/powers-of-attorney
+answers:
+  - "Can a US citizen living abroad make a will?"
 reviewed: false
 updated: "2026-10-06"
 ---

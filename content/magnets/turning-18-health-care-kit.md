@@ -18,6 +18,13 @@ related:
   - guides/powers-of-attorney
   - compare/living-will-vs-healthcare-power-of-attorney
   - checklists/important-contacts-list
+answers:
+  - "Does an 18-year-old need an advance directive?"
+  - "What is a healthcare directive for a minor child turning 18?"
+  - "Should a young adult have a power of attorney?"
+  - "At what age should you get a power of attorney?"
+  - "At what age should you have an advance directive?"
+  - "Is my US advance directive valid when I travel abroad?"
 reviewed: false
 updated: "2026-10-06"
 ---

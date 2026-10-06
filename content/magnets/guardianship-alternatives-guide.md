@@ -18,6 +18,16 @@ related:
   - guides/powers-of-attorney
   - guides/special-needs-trusts
   - life-events/caring-for-aging-parents
+diagram: GuardianshipDecision
+answers:
+  - "When does a parent need a guardian instead of a power of attorney?"
+  - "What is a representative payee?"
+  - "How do I manage my parent's finances without a power of attorney?"
+  - "What is the difference between a power of attorney and guardianship?"
+  - "Does a power of attorney avoid guardianship?"
+  - "Can I just add my name to my parent's bank account?"
+  - "Should I add my child to my bank account for care?"
+  - "How do I get power of attorney for someone who is incapacitated?"
 reviewed: false
 updated: "2026-10-06"
 ---

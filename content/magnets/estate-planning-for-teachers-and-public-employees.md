@@ -18,6 +18,8 @@ related:
   - checklists/beneficiary-designation-audit
   - life-events/retirement
   - compare/beneficiary-designation-vs-will
+answers:
+  - "Do I need an estate plan if everything has a beneficiary named?"
 reviewed: false
 updated: "2026-10-06"
 ---

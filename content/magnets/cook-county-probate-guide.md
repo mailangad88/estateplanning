@@ -18,6 +18,16 @@ related:
   - guides/settling-an-estate-step-by-step
   - checklists/first-30-days-after-a-death
   - life-events/death-of-a-parent
+diagram: ProbateTimeline
+answers:
+  - "Where do I file probate?"
+  - "What are the steps of probate?"
+  - "Who gets notified in probate?"
+  - "What is an inventory in probate?"
+  - "Can a probate be contested?"
+  - "Do beneficiaries have to be notified of probate?"
+  - "Can a will waive the bond requirement?"
+  - "Do I have to go to court for probate?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -18,6 +18,9 @@ related:
   - guides/how-to-make-a-will
   - guides/powers-of-attorney
   - guides/digital-assets-estate-planning
+answers:
+  - "Is a pet trust part of estate planning?"
+  - "Can I leave money to a pet in my will?"
 reviewed: false
 updated: "2026-10-06"
 ---

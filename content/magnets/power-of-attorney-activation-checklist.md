@@ -18,6 +18,16 @@ related:
   - compare/power-of-attorney-vs-guardianship
   - checklists/important-contacts-list
   - life-events/caring-for-aging-parents
+answers:
+  - "The bank won't accept my power of attorney. What now?"
+  - "Why do banks reject powers of attorney?"
+  - "Can a bank refuse a valid power of attorney?"
+  - "Does a power of attorney work at every bank?"
+  - "What is a springing power of attorney?"
+  - "How is incapacity proven for a springing power of attorney?"
+  - "Can a power of attorney change my will?"
+  - "What happens to a power of attorney when the person dies?"
+  - "Can a power of attorney be used after death?"
 reviewed: false
 updated: "2026-10-06"
 ---

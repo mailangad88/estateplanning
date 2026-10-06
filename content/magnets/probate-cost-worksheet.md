@@ -19,6 +19,20 @@ related:
   - guides/settling-an-estate-step-by-step
   - blog/how-long-does-probate-take
   - tools/small-estate-checker
+answers:
+  - "How much does probate cost?"
+  - "Is probate really that expensive?"
+  - "Is probate 5% of the estate?"
+  - "Who pays the cost of probate?"
+  - "How can I reduce probate costs?"
+  - "How much do probate attorneys charge?"
+  - "Do probate lawyers charge by the hour or a percentage?"
+  - "How much is the probate court filing fee?"
+  - "How much does an executor bond cost?"
+  - "Do I need a bond to be executor?"
+  - "What are probate assets?"
+  - "What assets go through probate?"
+  - "How much does it cost to settle an estate?"
 reviewed: false
 updated: "2026-10-06"
 ---

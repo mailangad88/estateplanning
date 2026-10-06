@@ -19,6 +19,11 @@ related:
   - checklists/important-contacts-list
   - guides/healthcare-directives-and-living-wills
   - guides/medicaid-and-long-term-care-planning
+answers:
+  - "What is a geriatric care manager?"
+  - "How do I get power of attorney for a parent who lives in another state?"
+  - "What are the signs a parent is not safe living alone?"
+  - "What are my options if my parent refuses care?"
 reviewed: false
 updated: "2026-10-06"
 ---

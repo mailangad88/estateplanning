@@ -19,6 +19,15 @@ related:
   - compare/transfer-on-death-deed-vs-trust
   - compare/joint-ownership-vs-trust
   - guides/estate-and-inheritance-taxes
+answers:
+  - "How do I leave a vacation home to my children?"
+  - "How do I keep the house in the family for generations?"
+  - "How do I protect family land from being sold?"
+  - "Trust vs. LLC for vacation home?"
+  - "Should I put my vacation home in a trust or an LLC?"
+  - "Should I put a vacation home in a trust?"
+  - "What if the heirs cannot afford the property taxes?"
+  - "How do I plan for a vacation home in an estate tax state?"
 reviewed: false
 updated: "2026-10-06"
 ---

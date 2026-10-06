@@ -18,6 +18,12 @@ related:
   - guides/updating-your-estate-plan
   - guides/medicaid-and-long-term-care-planning
   - checklists/beneficiary-designation-audit
+answers:
+  - "What estate planning do I need in my 60s?"
+  - "What estate planning documents should a 60-year-old have?"
+  - "Does estate planning change when you turn 65?"
+  - "What is the best age to buy long-term care insurance?"
+  - "Is a retirement account part of estate planning?"
 reviewed: false
 updated: "2026-10-06"
 ---

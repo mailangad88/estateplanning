@@ -19,6 +19,9 @@ related:
   - guides/powers-of-attorney
   - guides/transfer-on-death-and-payable-on-death
   - guides/what-happens-if-you-die-without-a-will
+answers:
+  - "What does an estate plan include?"
+  - "question"
 reviewed: false
 updated: "2026-10-06"
 ---

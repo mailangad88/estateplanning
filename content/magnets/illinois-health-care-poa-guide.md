@@ -18,6 +18,15 @@ related:
   - compare/living-will-vs-healthcare-power-of-attorney
   - blog/who-makes-medical-decisions-if-you-have-no-healthcare-directive
   - blog/what-is-a-hipaa-release-and-why-does-it-belong-in-your-plan
+diagram: PoaHealthcareRoles
+answers:
+  - "What are the advance directive requirements in Illinois?"
+  - "When does a healthcare power of attorney take effect?"
+  - "Who can be my healthcare agent?"
+  - "Can my doctor be my healthcare agent?"
+  - "What is a healthcare power of attorney?"
+  - "Can my healthcare agent authorize life support removal?"
+  - "What is the difference between a living will and a healthcare power of attorney?"
 reviewed: false
 updated: "2026-10-06"
 ---

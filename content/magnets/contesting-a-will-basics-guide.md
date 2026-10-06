@@ -19,6 +19,20 @@ related:
   - compare/will-vs-trust
   - guides/revocable-living-trust-explained
   - guides/updating-your-estate-plan
+answers:
+  - "Can a will be contested?"
+  - "Can a will be overturned?"
+  - "Can a will be contested after probate?"
+  - "What are grounds for contesting a will?"
+  - "How long do you have to contest a will?"
+  - "How much does it cost to contest a will?"
+  - "What is undue influence in estate planning?"
+  - "What is undue influence on a will?"
+  - "What is lack of testamentary capacity?"
+  - "What is testamentary capacity?"
+  - "Is a will valid if signed under pressure?"
+  - "What makes a will invalid?"
+  - "Can a will be thrown out?"
 reviewed: false
 updated: "2026-10-06"
 ---

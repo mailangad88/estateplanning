@@ -18,6 +18,11 @@ related:
   - guides/revocable-living-trust-explained
   - guides/choosing-a-trustee
   - guides/estate-planning-for-blended-families
+answers:
+  - "What is a spendthrift trust?"
+  - "What is an incentive trust?"
+  - "Does a trust protect assets from divorce?"
+  - "Does a trust protect assets from creditors?"
 reviewed: false
 updated: "2026-10-06"
 ---

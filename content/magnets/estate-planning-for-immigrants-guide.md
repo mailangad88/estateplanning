@@ -18,6 +18,11 @@ related:
   - guides/how-to-make-a-will
   - guides/estate-and-inheritance-taxes
   - life-events/moving-to-a-new-state
+answers:
+  - "What estate planning do I need if I am an immigrant or non-citizen?"
+  - "What estate planning do I need if my spouse is not a US citizen?"
+  - "Can I leave something to a person who is a non-citizen?"
+  - "Can I make a will if I am a non-US citizen?"
 reviewed: false
 updated: "2026-10-06"
 ---

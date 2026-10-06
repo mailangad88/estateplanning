@@ -18,6 +18,9 @@ related:
   - life-events/caring-for-aging-parents
   - guides/choosing-a-trustee
   - guides/medicaid-and-long-term-care-planning
+answers:
+  - "What are the signs of elder financial abuse?"
+  - "How do I protect an elderly parent from scams?"
 reviewed: false
 updated: "2026-10-06"
 ---

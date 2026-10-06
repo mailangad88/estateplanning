@@ -19,6 +19,11 @@ related:
   - guides/powers-of-attorney
   - guides/healthcare-directives-and-living-wills
   - guides/medicaid-and-long-term-care-planning
+answers:
+  - "What should I review in my estate plan when I retire?"
+  - "Do I need to update my estate plan when I retire?"
+  - "Should I downsize my estate plan as I age?"
+  - "Should I give my house to my children now to avoid nursing home costs?"
 reviewed: false
 updated: "2026-10-06"
 ---

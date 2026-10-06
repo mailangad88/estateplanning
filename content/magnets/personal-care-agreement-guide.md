@@ -18,6 +18,12 @@ related:
   - life-events/caring-for-aging-parents
   - tools/medicaid-lookback-date
   - guides/powers-of-attorney
+diagram: MedicaidLookback
+answers:
+  - "What is a personal care agreement?"
+  - "What is a personal care agreement for a parent?"
+  - "Can a power of attorney be a caregiver and be paid under a personal care agreement?"
+  - "Does Medicaid have a look-back for home care?"
 reviewed: false
 updated: "2026-10-06"
 ---

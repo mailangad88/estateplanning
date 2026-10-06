@@ -18,6 +18,16 @@ related:
   - blog/what-happens-to-a-mortgage-when-the-owner-dies
   - life-events/death-of-a-parent
   - checklists/first-30-days-after-a-death
+answers:
+  - "Can a house be sold during probate?"
+  - "Can I sell the house before probate is finished?"
+  - "Can I sell inherited property before probate is done?"
+  - "How does an executor sell a house?"
+  - "How do I sell inherited property?"
+  - "Can an executor sell estate property without court approval?"
+  - "How does an executor value a house?"
+  - "How do I find the date-of-death value of a house?"
+  - "Do I need an appraisal for an inherited house?"
 reviewed: false
 updated: "2026-10-06"
 ---

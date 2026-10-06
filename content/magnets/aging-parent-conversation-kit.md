@@ -18,6 +18,10 @@ related:
   - guides/powers-of-attorney
   - guides/healthcare-directives-and-living-wills
   - checklists/documents-to-gather-before-your-consult
+answers:
+  - "How do I bring up power of attorney with my parents?"
+  - "What if a parent will not talk about estate planning?"
+  - "Who can see a parent's bank accounts?"
 reviewed: false
 updated: "2026-10-06"
 ---

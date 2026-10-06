@@ -19,6 +19,17 @@ related:
   - guides/leaving-money-to-minors
   - checklists/beneficiary-designation-audit
   - guides/beneficiary-designations
+answers:
+  - "Who should I name as guardian for my kids after divorce?"
+  - "What if my children's other parent is still alive?"
+  - "Who gets custody of my child if I die without a will?"
+  - "What happens if I leave money directly to a minor child?"
+  - "Should the guardian and trustee be different people?"
+  - "What is the difference between UTMA and a trust for a child?"
+  - "What about my retirement account if my ex is still the beneficiary?"
+  - "Can my ex-spouse still collect my life insurance after divorce?"
+  - "What happens if my ex gets my assets when I die?"
+  - "How do I protect my kids' inheritance after a divorce?"
 reviewed: false
 updated: "2026-10-06"
 ---

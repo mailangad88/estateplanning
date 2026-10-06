@@ -18,6 +18,14 @@ related:
   - checklists/first-30-days-after-a-death
   - guides/how-probate-works
   - life-events/death-of-a-parent
+answers:
+  - "What if I don't want to be executor?"
+  - "Do I have to do everything at once after a death?"
+  - "What is the first thing an executor should do?"
+  - "Who needs probate?"
+  - "What documents do I need to settle an estate?"
+  - "Do I need a lawyer to settle an estate?"
+  - "How do I make sure I'm protected as executor?"
 reviewed: false
 updated: "2026-10-06"
 ---

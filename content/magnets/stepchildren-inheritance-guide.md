@@ -18,6 +18,19 @@ related:
   - guides/what-happens-if-you-die-without-a-will
   - guides/beneficiary-designations
   - blog/does-a-spouse-inherit-everything-if-there-is-no-will
+diagram: BlendedFamilyPlan
+answers:
+  - "Can I inherit from my stepparent?"
+  - "Does my stepfather's estate go to me if he has no will?"
+  - "Do stepchildren inherit if there is no will?"
+  - "Do stepchildren have any right to inheritance?"
+  - "What is the difference between a stepchild and a child under intestacy law?"
+  - "Can an adult be adopted for inheritance purposes?"
+  - "How do I get adult adoption to inherit from a stepparent?"
+  - "Can I adopt my adult stepchild to make them an heir?"
+  - "How do I leave something to my stepchildren?"
+  - "Do step-grandchildren inherit?"
+  - "What if I want my stepchildren to inherit only after my spouse dies?"
 reviewed: false
 updated: "2026-10-06"
 ---

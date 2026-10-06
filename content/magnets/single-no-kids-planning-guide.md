@@ -19,6 +19,15 @@ related:
   - guides/choosing-an-executor
   - guides/powers-of-attorney
   - guides/digital-assets-estate-planning
+answers:
+  - "Do I need an estate plan if I have no children?"
+  - "What does an estate plan look like for a single person?"
+  - "Who inherits if I am single with no kids and no will?"
+  - "What if I have no one to name as power of attorney?"
+  - "Who should be my executor if I have no family?"
+  - "Who makes medical decisions for me if I have no spouse or children?"
+  - "Can I leave my estate to a friend or a charity?"
+  - "Can we leave our estate to charity if we have no children?"
 reviewed: false
 updated: "2026-10-06"
 ---

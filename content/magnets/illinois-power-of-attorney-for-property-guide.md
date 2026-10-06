@@ -18,6 +18,18 @@ related:
   - compare/power-of-attorney-vs-guardianship
   - guides/choosing-an-executor
   - checklists/important-contacts-list
+answers:
+  - "How do I get a power of attorney in Illinois?"
+  - "Does a power of attorney need to be notarized?"
+  - "Does a power of attorney need to be witnessed?"
+  - "Can I limit the powers I give my agent?"
+  - "Can I make my power of attorney effective only after a certain date?"
+  - "Should I give my agent power to gift?"
+  - "What is a gifting power in a power of attorney?"
+  - "Should I name a successor agent?"
+  - "Can I name more than one power of attorney agent?"
+  - "What is fiduciary duty for a power of attorney?"
+  - "Does a power of attorney agent get paid?"
 reviewed: false
 updated: "2026-10-06"
 ---

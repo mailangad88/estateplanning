@@ -18,6 +18,16 @@ related:
   - guides/settling-an-estate-step-by-step
   - life-events/death-of-a-parent
   - checklists/first-30-days-after-a-death
+answers:
+  - "What is a small estate affidavit?"
+  - "What is the small estate limit in Illinois?"
+  - "What is the small estate limit?"
+  - "How do I use a small estate affidavit?"
+  - "Can you skip probate for a small estate?"
+  - "Does a house count toward the small estate limit?"
+  - "Can a small estate include real estate?"
+  - "What if the bank refuses my small estate affidavit?"
+  - "Is probate required for a small estate?"
 reviewed: false
 updated: "2026-10-06"
 ---

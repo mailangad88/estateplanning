@@ -18,6 +18,9 @@ related:
   - guides/what-is-estate-planning
   - life-events/retirement
   - guides/estate-planning-for-blended-families
+answers:
+  - "What is an ethical will?"
+  - "What is a legacy letter?"
 reviewed: false
 updated: "2026-10-06"
 ---

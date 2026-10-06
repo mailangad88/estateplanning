@@ -18,6 +18,12 @@ related:
   - compare/living-will-vs-healthcare-power-of-attorney
   - blog/who-makes-medical-decisions-if-you-have-no-healthcare-directive
   - guides/powers-of-attorney
+diagram: PoaHealthcareRoles
+answers:
+  - "Who should I choose as my healthcare agent?"
+  - "Should I name an alternate healthcare agent?"
+  - "Can I name more than one healthcare agent?"
+  - "What can a healthcare agent decide?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -19,6 +19,8 @@ related:
   - checklists/funeral-and-burial-wishes
   - life-events/caring-for-aging-parents
   - guides/medicaid-and-long-term-care-planning
+answers:
+  - "What estate planning do I need if I am LGBTQ?"
 reviewed: false
 updated: "2026-10-06"
 ---

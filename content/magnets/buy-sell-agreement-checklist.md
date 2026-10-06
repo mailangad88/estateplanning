@@ -18,6 +18,18 @@ related:
   - life-events/starting-a-business
   - guides/beneficiary-designations
   - tools/life-insurance-needs
+diagram: BusinessSuccession
+answers:
+  - "What is a buy-sell agreement?"
+  - "What is a cross-purchase agreement?"
+  - "What is an entity redemption agreement?"
+  - "How do I fund a buy-sell agreement?"
+  - "How do I price a business for a buy-sell agreement?"
+  - "How often should a buy-sell agreement be updated?"
+  - "Should my buy-sell agreement be funded with life insurance?"
+  - "Does my will override a buy-sell agreement?"
+  - "Do heirs have to honor a buy-sell agreement?"
+  - "What is a stock redemption plan?"
 reviewed: false
 updated: "2026-10-06"
 ---

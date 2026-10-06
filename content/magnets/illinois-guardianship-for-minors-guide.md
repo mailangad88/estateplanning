@@ -19,6 +19,17 @@ related:
   - life-events/new-baby
   - tools/guardian-picker
   - compare/power-of-attorney-vs-guardianship
+diagram: GuardianshipDecision
+answers:
+  - "What is guardianship of a minor?"
+  - "What is a standby guardian?"
+  - "What is the difference between a temporary guardian and a standby guardian?"
+  - "Can I name a guardian in a separate letter or document?"
+  - "Does the court have to follow the guardian I name in my will?"
+  - "Can the court override the guardian I name in my will?"
+  - "How do I name a guardian for my children in a will?"
+  - "What language should a will use to name a guardian?"
+  - "Can a will name a guardian for my children?"
 reviewed: false
 updated: "2026-10-06"
 ---

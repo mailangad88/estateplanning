@@ -19,6 +19,11 @@ related:
   - life-events/new-baby
   - guides/digital-assets-estate-planning
   - guides/how-to-make-a-will
+answers:
+  - "What happens to my student loans when I die?"
+  - "Do I need a will if I just graduated and have student loans?"
+  - "Do I need a will in my 20s?"
+  - "What happens to my digital accounts and social media if I die young?"
 reviewed: false
 updated: "2026-10-06"
 ---

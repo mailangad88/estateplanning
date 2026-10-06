@@ -18,6 +18,22 @@ related:
   - guides/estate-and-inheritance-taxes
   - tools/state-death-tax-checker
   - guides/updating-your-estate-plan
+diagram: EstateTaxThresholds
+answers:
+  - "What is the gross estate?"
+  - "Which assets are included in the taxable estate?"
+  - "What is the taxable estate?"
+  - "What are the downsides of relying on portability?"
+  - "Do jointly owned assets count toward the estate tax?"
+  - "Do retirement accounts count toward the estate tax?"
+  - "Does life insurance count as part of my estate?"
+  - "Does my house count toward the estate tax?"
+  - "What is the 2026 estate tax exemption per person and per couple?"
+  - "Is it worth planning for estate tax if my estate is under the exemption?"
+  - "How do I plan if my estate is close to the exemption?"
+  - "How does inflation adjust the estate tax exemption?"
+  - "What deductions reduce the estate tax?"
+  - "Do gifts made before death count toward the estate tax?"
 reviewed: false
 updated: "2026-10-06"
 ---

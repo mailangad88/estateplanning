@@ -18,6 +18,23 @@ related:
   - blog/does-a-spouse-inherit-everything-if-there-is-no-will
   - blog/who-gets-the-house-if-theres-no-will-and-no-spouse
   - guides/how-to-make-a-will
+diagram: IntestacyLadder
+answers:
+  - "Who inherits if I die without a will?"
+  - "What is the order of inheritance without a will?"
+  - "What is intestacy?"
+  - "What is per stirpes?"
+  - "Can stepchildren inherit without a will?"
+  - "Can half siblings inherit without a will?"
+  - "Can siblings inherit if there is no will?"
+  - "Who inherits if there is no spouse or children?"
+  - "What happens to my property if I have no will and no relatives?"
+  - "What happens to my estate if I die with no heirs?"
+  - "What is escheat?"
+  - "Who inherits if I die with no will and no relatives?"
+  - "If I die without children, does my spouse get everything?"
+  - "Can an ex-spouse inherit without a will?"
+  - "Do half-siblings inherit if there is no will?"
 reviewed: false
 updated: "2026-10-06"
 ---

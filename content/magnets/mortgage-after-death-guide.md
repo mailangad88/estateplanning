@@ -18,6 +18,12 @@ related:
   - guides/settling-an-estate-step-by-step
   - checklists/first-30-days-after-a-death
   - guides/how-probate-works
+answers:
+  - "What happens to a mortgage after death?"
+  - "Do I have to pay off a mortgage on an inherited house?"
+  - "What do I do if I inherit a house with a mortgage?"
+  - "What happens if I die with a mortgage?"
+  - "What happens if I die with a reverse mortgage?"
 reviewed: false
 updated: "2026-10-06"
 ---

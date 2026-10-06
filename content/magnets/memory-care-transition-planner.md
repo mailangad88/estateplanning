@@ -18,6 +18,9 @@ related:
   - guides/medicaid-and-long-term-care-planning
   - guides/powers-of-attorney
   - checklists/important-contacts-list
+answers:
+  - "What is memory care?"
+  - "How do I talk to my parent about moving to a nursing home?"
 reviewed: false
 updated: "2026-10-06"
 ---

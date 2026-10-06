@@ -18,6 +18,9 @@ related:
   - guides/settling-an-estate-step-by-step
   - guides/transfer-on-death-and-payable-on-death
   - checklists/asset-and-account-inventory
+answers:
+  - "How do I leave a timeshare to my heirs?"
+  - "Can a beneficiary disclaim an inheritance and who gets it instead?"
 reviewed: false
 updated: "2026-10-06"
 ---

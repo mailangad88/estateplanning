@@ -18,6 +18,16 @@ related:
   - guides/settling-an-estate-step-by-step
   - life-events/death-of-a-parent
   - checklists/first-30-days-after-a-death
+answers:
+  - "Can I roll over an inherited IRA?"
+  - "Can a spouse roll over an inherited IRA?"
+  - "Do I have to take RMDs from an inherited IRA?"
+  - "Do I pay tax on an inherited 401(k)?"
+  - "Do I pay tax on an inherited IRA?"
+  - "How are inherited IRAs taxed?"
+  - "What happens to a deceased person's 401(k)?"
+  - "What happens to an IRA after the owner dies?"
+  - "What happens if I name my trust as the beneficiary of my IRA?"
 reviewed: false
 updated: "2026-10-06"
 ---

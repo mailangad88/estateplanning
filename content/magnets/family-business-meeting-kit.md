@@ -18,6 +18,10 @@ related:
   - life-events/starting-a-business
   - guides/estate-planning-for-blended-families
   - tools/estate-tax-estimator
+diagram: BusinessSuccession
+answers:
+  - "How do I transfer my business to my children?"
+  - "Selling a business vs. passing it to family: which is better?"
 reviewed: false
 updated: "2026-10-06"
 ---

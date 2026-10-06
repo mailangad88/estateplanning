@@ -18,6 +18,13 @@ related:
   - checklists/digital-assets-inventory
   - checklists/first-30-days-after-a-death
   - life-events/death-of-a-parent
+diagram: DigitalAssets
+answers:
+  - "How do I access a deceased person's email?"
+  - "How do I access a deceased person's phone or computer?"
+  - "How do I close a deceased person's social media accounts?"
+  - "How do I handle a deceased person's online accounts?"
+  - "What happens to a deceased person's cell phone plan?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -18,6 +18,10 @@ related:
   - tools/medicaid-lookback-date
   - tools/medicaid-savings-runway
   - life-events/caring-for-aging-parents
+answers:
+  - "What is the difference between Medicare and Medicaid?"
+  - "Medicare vs. Medicaid for nursing home care?"
+  - "What is a Medicaid waiver for home care?"
 reviewed: false
 updated: "2026-10-06"
 ---

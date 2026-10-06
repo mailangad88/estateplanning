@@ -18,6 +18,17 @@ related:
   - life-events/starting-a-business
   - guides/powers-of-attorney
   - guides/revocable-living-trust-explained
+diagram: BusinessSuccession
+answers:
+  - "What is business succession planning?"
+  - "When should I start planning for succession of my business?"
+  - "Buy-sell agreement vs. succession plan: which do I need?"
+  - "How do I train a successor?"
+  - "Who should I choose to run my business after I die?"
+  - "What happens to my business when I die?"
+  - "What is a operating agreement succession clause?"
+  - "What if my business has digital assets or customer data only I can access?"
+  - "What if my executor does not know how to run the business?"
 reviewed: false
 updated: "2026-10-06"
 ---

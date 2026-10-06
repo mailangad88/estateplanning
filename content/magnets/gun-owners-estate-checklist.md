@@ -18,6 +18,14 @@ related:
   - checklists/asset-and-account-inventory
   - guides/revocable-living-trust-explained
   - guides/settling-an-estate-step-by-step
+answers:
+  - "How do I dispose of a deceased person's firearms?"
+  - "How do I handle a deceased person's guns in a state with strict laws?"
+  - "How do I transfer a firearm to an heir?"
+  - "What if a firearm is an antique or a class of regulated weapon?"
+  - "What if the guns are illegal in the heir's state?"
+  - "Who gets the guns when a gun owner dies?"
+  - "Should I leave my guns in my will or in a trust?"
 reviewed: false
 updated: "2026-10-06"
 ---

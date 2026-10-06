@@ -18,6 +18,8 @@ related:
   - guides/irrevocable-trusts-explained
   - guides/estate-planning-for-blended-families
   - guides/business-succession-planning
+answers:
+  - "Charitable remainder trust vs. donor-advised fund?"
 reviewed: false
 updated: "2026-10-06"
 ---

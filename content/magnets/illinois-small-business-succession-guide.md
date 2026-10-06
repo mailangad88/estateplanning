@@ -19,6 +19,15 @@ related:
   - guides/revocable-living-trust-explained
   - guides/beneficiary-designations
   - guides/choosing-a-trustee
+diagram: BusinessSuccession
+answers:
+  - "How does my state treat LLC interests at death?"
+  - "Does my operating agreement override my will?"
+  - "How do I transfer LLC membership interest to a trust?"
+  - "How do I put an LLC into a revocable trust?"
+  - "What is a transfer-on-death LLC interest?"
+  - "What happens to S corp status if a trust inherits shares?"
+  - "How do I transfer S corporation stock to a trust?"
 reviewed: false
 updated: "2026-10-06"
 ---

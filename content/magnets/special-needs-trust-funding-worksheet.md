@@ -19,6 +19,18 @@ related:
   - guides/beneficiary-designations
   - compare/special-needs-trust-vs-able-account
   - checklists/asset-and-account-inventory
+diagram: SpecialNeedsTrust
+answers:
+  - "How do I figure out how much money my disabled child will need for life?"
+  - "How much should I leave for a child with special needs?"
+  - "Can a special needs trust be a beneficiary of a life insurance policy?"
+  - "Can a special needs trust own life insurance?"
+  - "Can I name a special needs trust as IRA beneficiary?"
+  - "What are the rules for naming a special needs trust as beneficiary of a retirement account?"
+  - "Can a special needs trust hold a retirement account or IRA?"
+  - "How do I tell relatives how to leave money to my special needs child?"
+  - "What if relatives want to leave money to my child with a disability?"
+  - "Who should be the trustee of a special needs trust?"
 reviewed: false
 updated: "2026-10-06"
 ---

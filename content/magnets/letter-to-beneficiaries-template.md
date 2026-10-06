@@ -18,6 +18,12 @@ related:
   - guides/choosing-an-executor
   - blog/what-does-a-trustee-actually-do-each-year
   - checklists/first-30-days-after-a-death
+answers:
+  - "Does an executor have to notify beneficiaries?"
+  - "What does an executor need to give beneficiaries?"
+  - "Does an executor have to give beneficiaries a copy of the will?"
+  - "What is a receipt and release?"
+  - "What is a final distribution?"
 reviewed: false
 updated: "2026-10-06"
 ---

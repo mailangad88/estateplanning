@@ -18,6 +18,8 @@ related:
   - guides/updating-your-estate-plan
   - checklists/beneficiary-designation-audit
   - tools/plan-review-reminder
+answers:
+  - "How do I talk to my parents about their estate plan?"
 reviewed: false
 updated: "2026-10-06"
 ---

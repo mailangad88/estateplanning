@@ -19,6 +19,10 @@ related:
   - guides/revocable-living-trust-explained
   - life-events/retirement
   - guides/estate-planning-for-blended-families
+diagram: BusinessSuccession
+answers:
+  - "What happens to a farm when the farmer dies?"
+  - "Is passing a farm to children subject to special tax rules?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -19,6 +19,16 @@ related:
   - guides/estate-and-inheritance-taxes
   - guides/irrevocable-trusts-explained
   - guides/leaving-money-to-minors
+answers:
+  - "Can a trust own life insurance?"
+  - "Should I put my life insurance in a trust?"
+  - "Can a trust be a beneficiary of life insurance?"
+  - "Should I name my children directly or a trust on my life insurance?"
+  - "Is it better to name individuals or a trust as beneficiary of life insurance?"
+  - "Do life insurance proceeds count toward the estate tax?"
+  - "What should I do with life insurance in a taxable estate?"
+  - "Can I name a minor child as a beneficiary?"
+  - "How do I name a guardian-like person to manage a child's life insurance money?"
 reviewed: false
 updated: "2026-10-06"
 ---

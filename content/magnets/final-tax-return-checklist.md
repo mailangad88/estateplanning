@@ -18,6 +18,18 @@ related:
   - checklists/first-30-days-after-a-death
   - life-events/death-of-a-parent
   - guides/how-probate-works
+answers:
+  - "Do I need to file a tax return for someone who died?"
+  - "Who files taxes after someone dies?"
+  - "Who files the final tax return for a deceased person?"
+  - "When is the final tax return due after death?"
+  - "What is Form 56?"
+  - "What is a Form 1310 refund for a deceased taxpayer?"
+  - "How do I claim a deceased person's tax refund?"
+  - "What happens to a deceased person's tax refund?"
+  - "Can a surviving spouse file jointly in the year of death?"
+  - "How do I notify the IRS of a death?"
+  - "How do I get a deceased person's tax transcripts?"
 reviewed: false
 updated: "2026-10-06"
 ---

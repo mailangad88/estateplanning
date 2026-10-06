@@ -19,6 +19,13 @@ related:
   - guides/leaving-money-to-minors
   - life-events/new-baby
   - checklists/choosing-a-guardian-worksheet
+answers:
+  - "Is a child born outside of marriage entitled to inherit?"
+  - "Can I name my unmarried partner as guardian of my child?"
+  - "What if my partner and I disagree about who should be guardian?"
+  - "Can my unmarried partner stay in our home if I die?"
+  - "Who handles funeral decisions for an unmarried partner?"
+  - "Can my partner's family kick me out if they die without a will?"
 reviewed: false
 updated: "2026-10-06"
 ---

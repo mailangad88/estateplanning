@@ -18,6 +18,8 @@ related:
   - guides/what-makes-a-will-valid
   - checklists/letter-of-instruction-outline
   - guides/updating-your-estate-plan
+answers:
+  - "How do I leave a specific item to a specific person?"
 reviewed: false
 updated: "2026-10-06"
 ---

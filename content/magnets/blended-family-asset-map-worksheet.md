@@ -18,6 +18,11 @@ related:
   - compare/joint-ownership-vs-trust
   - guides/beneficiary-designations
   - checklists/asset-and-account-inventory
+diagram: BlendedFamilyPlan
+answers:
+  - "What is the biggest estate planning risk in a blended family?"
+  - "Who gets the house in a second marriage?"
+  - "How do I protect my spouse and my children from a prior marriage?"
 reviewed: false
 updated: "2026-10-06"
 ---

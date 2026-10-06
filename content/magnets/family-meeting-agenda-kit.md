@@ -18,6 +18,8 @@ related:
   - blog/how-to-talk-to-your-parents-about-their-estate-plan
   - life-events/caring-for-aging-parents
   - checklists/important-contacts-list
+answers:
+  - "How do I talk to my family about my estate plan?"
 reviewed: false
 updated: "2026-10-06"
 ---

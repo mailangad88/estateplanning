@@ -20,6 +20,18 @@ related:
   - tools/plan-review-reminder
   - life-events/moving-to-a-new-state
   - guides/estate-and-inheritance-taxes
+diagram: PlanReviewTriggers
+answers:
+  - "How often should I review my estate plan?"
+  - "When should I update my estate plan?"
+  - "What life events require updating an estate plan?"
+  - "What life events should make me update my estate plan?"
+  - "Do I need to update my estate plan after a death in the family?"
+  - "Do I need to update my estate plan after having a baby?"
+  - "Do I need to update my estate plan after moving to another state?"
+  - "Do I need to update my estate plan if I buy or sell a house?"
+  - "Do I need to update my estate plan if I get an inheritance?"
+  - "Do I need to update my estate plan when tax laws change?"
 reviewed: false
 updated: "2026-10-06"
 ---

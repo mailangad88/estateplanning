@@ -18,6 +18,7 @@ related:
   - checklists/digital-assets-inventory
   - guides/choosing-an-executor
   - guides/how-to-make-a-will
+diagram: DigitalAssets
 reviewed: false
 updated: "2026-10-06"
 ---

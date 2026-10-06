@@ -19,6 +19,14 @@ related:
   - guides/healthcare-directives-and-living-wills
   - guides/transfer-on-death-and-payable-on-death
   - checklists/important-contacts-list
+diagram: WillValidity
+answers:
+  - "How many witnesses do you need for a will?"
+  - "Can a beneficiary be a witness to a will?"
+  - "Do estate planning documents need to be witnessed?"
+  - "Do I need a notary for estate planning documents?"
+  - "Does a will have to be notarized?"
+  - "What is the difference between a witnessed will and a notarized will?"
 reviewed: false
 updated: "2026-10-06"
 ---

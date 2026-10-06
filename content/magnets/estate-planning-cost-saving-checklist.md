@@ -19,6 +19,9 @@ related:
   - checklists/documents-to-gather-before-your-consult
   - tools/will-or-trust
   - tools/probate-cost-estimator
+answers:
+  - "Are there low cost estate planning options?"
+  - "Is it worth paying for a will?"
 reviewed: false
 updated: "2026-10-06"
 ---

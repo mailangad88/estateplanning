@@ -19,6 +19,15 @@ related:
   - guides/revocable-living-trust-explained
   - compare/executor-vs-trustee
   - guides/settling-an-estate-step-by-step
+answers:
+  - "What are a trustee's duties?"
+  - "What does a successor trustee do?"
+  - "What is fiduciary duty?"
+  - "Does a trust need an EIN?"
+  - "When does a trust need its own tax ID number?"
+  - "Does a trust need its own bank account?"
+  - "Can a beneficiary see the trust document?"
+  - "What are the rights of a trust beneficiary?"
 reviewed: false
 updated: "2026-10-06"
 ---

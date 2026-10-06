@@ -18,6 +18,8 @@ related:
   - life-events/caring-for-aging-parents
   - guides/what-makes-a-will-valid
   - guides/updating-your-estate-plan
+answers:
+  - "What are the signs of undue influence over an elderly person?"
 reviewed: false
 updated: "2026-10-06"
 ---

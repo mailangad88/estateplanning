@@ -18,6 +18,8 @@ related:
   - life-events/serious-diagnosis
   - life-events/caring-for-aging-parents
   - compare/living-will-vs-healthcare-power-of-attorney
+answers:
+  - "What is the difference between custodial care and skilled care?"
 reviewed: false
 updated: "2026-10-06"
 ---

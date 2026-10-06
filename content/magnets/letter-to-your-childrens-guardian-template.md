@@ -18,6 +18,11 @@ related:
   - checklists/choosing-a-guardian-worksheet
   - life-events/new-baby
   - tools/guardian-fund-calculator
+answers:
+  - "What should I put in a guardian letter of instruction?"
+  - "Should I write a letter of wishes for my children's guardian?"
+  - "What does a guardian need to know about my children?"
+  - "Can I leave instructions for how my children are raised?"
 reviewed: false
 updated: "2026-10-06"
 ---

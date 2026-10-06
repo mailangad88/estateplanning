@@ -18,6 +18,14 @@ related:
   - compare/living-will-vs-healthcare-power-of-attorney
   - blog/who-makes-medical-decisions-if-you-have-no-healthcare-directive
   - life-events/serious-diagnosis
+answers:
+  - "What does a living will cover?"
+  - "What should a living will say?"
+  - "What is a feeding tube decision in a living will?"
+  - "What is a ventilator and can I decline it in my living will?"
+  - "What is CPR and when can I refuse it?"
+  - "Can I put my wishes about dementia in a living will?"
+  - "What does it mean to refuse life support?"
 reviewed: false
 updated: "2026-10-06"
 ---

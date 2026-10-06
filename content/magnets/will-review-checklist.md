@@ -18,6 +18,13 @@ related:
   - checklists/annual-estate-plan-review
   - guides/what-makes-a-will-valid
   - guides/how-to-make-a-will
+answers:
+  - "Do wills expire?"
+  - "Is a 20 year old will still valid?"
+  - "How often should I update my will?"
+  - "What happens if I have a baby after I make my will?"
+  - "What happens if I have a child after I sign my will?"
+  - "Should I update my will when I have another child?"
 reviewed: false
 updated: "2026-10-06"
 ---

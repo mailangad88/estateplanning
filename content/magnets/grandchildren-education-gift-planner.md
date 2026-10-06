@@ -18,6 +18,9 @@ related:
   - guides/estate-and-inheritance-taxes
   - guides/irrevocable-trusts-explained
   - checklists/asset-and-account-inventory
+answers:
+  - "Is a 529 plan part of my estate plan?"
+  - "What is a UTMA account?"
 reviewed: false
 updated: "2026-10-06"
 ---

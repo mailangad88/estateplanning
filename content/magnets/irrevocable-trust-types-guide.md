@@ -19,6 +19,17 @@ related:
   - guides/medicaid-and-long-term-care-planning
   - guides/special-needs-trusts
   - guides/estate-and-inheritance-taxes
+diagram: RevocableVsIrrevocable
+answers:
+  - "What is an irrevocable trust?"
+  - "What is an ILIT?"
+  - "What is a Medicaid asset protection trust?"
+  - "What is a special needs trust?"
+  - "Can I put an existing life insurance policy into an ILIT?"
+  - "Can an irrevocable trust be revoked?"
+  - "Can an irrevocable trust be changed?"
+  - "What is the difference between a revocable and an irrevocable trust?"
+  - "What is the difference between a living trust and an irrevocable trust?"
 reviewed: false
 updated: "2026-10-06"
 ---

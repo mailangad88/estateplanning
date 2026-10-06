@@ -18,6 +18,21 @@ related:
   - guides/revocable-living-trust-explained
   - guides/irrevocable-trusts-explained
   - guides/transfer-on-death-and-payable-on-death
+answers:
+  - "How do I find the stepped-up basis of an inherited asset?"
+  - "What is the carryover basis rule for gifts?"
+  - "Do I get a step-up in basis on gifted property?"
+  - "Step-up in basis vs. carryover basis: which applies?"
+  - "Is it better to gift appreciated property or let heirs inherit it?"
+  - "Do I get a step-up in basis on inherited stock?"
+  - "Can I lose step-up if I transfer my house to my child before death?"
+  - "Do assets in an irrevocable trust get a step-up?"
+  - "Do assets in an irrevocable trust get a step-up in basis?"
+  - "Do assets in a trust get a step-up in basis?"
+  - "Do jointly owned assets get a full step-up?"
+  - "How does the step-up work in community property states?"
+  - "What is the alternate valuation date for estate tax?"
+  - "How does the step-up in basis work for a house owned by a married couple?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -18,6 +18,11 @@ related:
   - guides/what-is-estate-planning
   - checklists/letter-of-instruction-outline
   - guides/estate-and-inheritance-taxes
+answers:
+  - "How do I leave art and collectibles to my heirs?"
+  - "How do I value artwork and collectibles for estate tax?"
+  - "Does the step-up apply to inherited collectibles?"
+  - "How do I divide personal belongings fairly among heirs?"
 reviewed: false
 updated: "2026-10-06"
 ---

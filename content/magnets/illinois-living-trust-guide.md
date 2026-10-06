@@ -19,6 +19,18 @@ related:
   - guides/funding-your-trust
   - checklists/trust-funding-checklist
   - tools/will-or-trust
+diagram: LivingTrustFlow
+answers:
+  - "Does a house in a trust avoid probate?"
+  - "Does a trust avoid probate?"
+  - "Does a trust protect from Medicaid spend-down?"
+  - "Does a trust avoid estate taxes?"
+  - "Does a revocable trust reduce estate tax?"
+  - "What are the advantages and disadvantages of a trust?"
+  - "What is the downside of a living trust?"
+  - "Do I need a trust if I have a will?"
+  - "Does a trust affect my Medicaid eligibility?"
+  - "Are assets in a revocable trust subject to estate tax?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -18,6 +18,9 @@ related:
   - checklists/digital-assets-inventory
   - guides/how-to-make-a-will
   - checklists/letter-of-instruction-outline
+diagram: DigitalAssets
+answers:
+  - "Who gets the family photos and heirlooms?"
 reviewed: false
 updated: "2026-10-06"
 ---

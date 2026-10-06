@@ -18,6 +18,10 @@ related:
   - tools/medicaid-lookback-date
   - life-events/caring-for-aging-parents
   - life-events/retirement
+answers:
+  - "How soon do I need to start planning for long-term care?"
+  - "What is a continuing care retirement community?"
+  - "What is assisted living versus a nursing home?"
 reviewed: false
 updated: "2026-10-06"
 ---

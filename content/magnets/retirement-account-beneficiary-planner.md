@@ -19,6 +19,20 @@ related:
   - blog/do-retirement-accounts-go-through-probate
   - checklists/beneficiary-designation-audit
   - guides/leaving-money-to-minors
+answers:
+  - "Do I have to take annual withdrawals from an inherited IRA under the 10-year rule?"
+  - "Does a spouse beneficiary have to cash out an IRA within 10 years?"
+  - "Does a surviving spouse have to take required minimum distributions from an inherited IRA?"
+  - "How does an inherited Roth IRA work?"
+  - "Should I name my estate as beneficiary of my IRA?"
+  - "Should I name my spouse or my trust as beneficiary of my 401(k)?"
+  - "Can a trust be a beneficiary of a retirement account?"
+  - "Can a trust inherit an IRA?"
+  - "Should I put my retirement accounts in a trust?"
+  - "Does a trust beneficiary pay higher tax rates on an inherited IRA?"
+  - "What happens when a beneficiary disclaims a retirement account?"
+  - "What happens if there is no beneficiary on a 401(k)?"
+  - "What happens if there is no beneficiary on an IRA?"
 reviewed: false
 updated: "2026-10-06"
 ---

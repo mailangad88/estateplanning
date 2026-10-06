@@ -18,6 +18,14 @@ related:
   - guides/settling-an-estate-step-by-step
   - checklists/first-30-days-after-a-death
   - blog/who-gets-the-house-if-theres-no-will-and-no-spouse
+answers:
+  - "How do I clean out a parent's house?"
+  - "How do I get rid of a deceased person's belongings?"
+  - "What happens to my parent's belongings?"
+  - "What do I do with inherited firearms?"
+  - "What do I do with inherited jewelry and personal items?"
+  - "How does an executor handle jewelry and heirlooms?"
+  - "How does an executor distribute personal belongings?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -18,6 +18,8 @@ related:
   - guides/settling-an-estate-step-by-step
   - guides/how-probate-works
   - blog/what-happens-to-a-mortgage-when-the-owner-dies
+answers:
+  - "How does an executor handle the deceased's mail and bills?"
 reviewed: false
 updated: "2026-10-06"
 ---

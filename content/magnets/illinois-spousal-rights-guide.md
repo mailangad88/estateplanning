@@ -19,6 +19,8 @@ related:
   - guides/revocable-living-trust-explained
   - compare/will-vs-trust
   - life-events/getting-married
+answers:
+  - "What is a spousal waiver of inheritance rights?"
 reviewed: false
 updated: "2026-10-06"
 ---

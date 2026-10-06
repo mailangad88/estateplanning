@@ -18,6 +18,13 @@ related:
   - guides/what-happens-if-you-die-without-a-will
   - compare/will-vs-trust
   - guides/how-probate-works
+answers:
+  - "Is estate planning only for rich people?"
+  - "Do I need an estate plan if I don't have much money?"
+  - "Does a will go through probate?"
+  - "Does an estate plan avoid probate?"
+  - "Can I add my child to the deed of my home?"
+  - "Should I name my children as joint owners on my accounts?"
 reviewed: false
 updated: "2026-10-06"
 ---

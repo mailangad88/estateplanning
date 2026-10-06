@@ -18,6 +18,10 @@ related:
   - life-events/caring-for-aging-parents
   - tools/medicaid-lookback-date
   - guides/powers-of-attorney
+answers:
+  - "Who qualifies for VA Aid and Attendance?"
+  - "Can I get VA Aid and Attendance and Medicaid at the same time?"
+  - "VA benefits vs. Medicaid for long-term care?"
 reviewed: false
 updated: "2026-10-06"
 ---

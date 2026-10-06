@@ -18,6 +18,14 @@ related:
   - guides/what-is-estate-planning
   - checklists/asset-and-account-inventory
   - tools/plan-readiness-assessment
+answers:
+  - "What should I bring to my first estate planning meeting?"
+  - "What do estate planning lawyers ask?"
+  - "What happens at an estate planning appointment?"
+  - "What is an estate planning questionnaire?"
+  - "How do I inventory my assets for estate planning?"
+  - "What assets should I list for my estate plan?"
+  - "Where do I start with estate planning?"
 reviewed: false
 updated: "2026-10-06"
 ---

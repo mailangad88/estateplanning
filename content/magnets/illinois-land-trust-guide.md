@@ -19,6 +19,8 @@ related:
   - guides/funding-your-trust
   - compare/will-vs-trust
   - guides/revocable-living-trust-explained
+answers:
+  - "What is a land trust?"
 reviewed: false
 updated: "2026-10-06"
 ---

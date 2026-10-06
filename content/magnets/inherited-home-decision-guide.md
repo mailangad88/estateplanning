@@ -18,6 +18,17 @@ related:
   - guides/settling-an-estate-step-by-step
   - guides/how-probate-works
   - compare/probate-vs-non-probate-assets
+answers:
+  - "Should I sell an inherited house or keep it?"
+  - "Should I keep or sell my parent's house?"
+  - "What happens to a deceased person's house?"
+  - "Who has to sign to sell an inherited house?"
+  - "Who can sign the deed on a house in probate?"
+  - "What if siblings disagree about selling an inherited house?"
+  - "What if I inherit a house with siblings?"
+  - "Does inherited property get stepped-up basis?"
+  - "How does step-up in basis work for a house?"
+  - "How long do I have to sell an inherited house?"
 reviewed: false
 updated: "2026-10-06"
 ---

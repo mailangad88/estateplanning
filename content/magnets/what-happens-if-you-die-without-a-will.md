@@ -19,6 +19,17 @@ related:
   - guides/how-probate-works
   - guides/guardianship-for-minor-children
   - compare/probate-vs-non-probate-assets
+diagram: IntestacyLadder
+answers:
+  - "Does my spouse automatically inherit everything if I die without a will?"
+  - "Does my spouse automatically inherit if I die without a will?"
+  - "What happens if I don't have an estate plan?"
+  - "What happens to my kids if I die without a will?"
+  - "Who gets my house if I die without a will?"
+  - "Who gets my stuff if I don't name a beneficiary in my will?"
+  - "What happens to my children if I die and there is no guardian named?"
+  - "How does intestacy work when there are children from different marriages?"
+  - "What happens to my estate if I die with kids from two marriages and no will?"
 reviewed: false
 updated: "2026-10-06"
 ---

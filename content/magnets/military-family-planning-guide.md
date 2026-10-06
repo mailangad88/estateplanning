@@ -19,6 +19,8 @@ related:
   - guides/how-to-make-a-will
   - guides/beneficiary-designations
   - checklists/important-contacts-list
+answers:
+  - "Who gets my children if I am deployed in the military?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -18,6 +18,7 @@ related:
   - checklists/digital-assets-inventory
   - guides/choosing-an-executor
   - guides/powers-of-attorney
+diagram: DigitalAssets
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -18,6 +18,14 @@ related:
   - guides/how-to-make-a-will
   - guides/estate-and-inheritance-taxes
   - guides/revocable-living-trust-explained
+answers:
+  - "What wording do I use to name a charity as beneficiary?"
+  - "Can I name a charity as a beneficiary of my IRA?"
+  - "Can I name multiple charities on one account?"
+  - "Can I name a university or foundation as beneficiary?"
+  - "Is it better to give to charity from an IRA or from cash?"
+  - "QCD vs. donor-advised fund: which is better for IRA owners?"
+  - "Does leaving money to charity reduce the estate tax?"
 reviewed: false
 updated: "2026-10-06"
 ---

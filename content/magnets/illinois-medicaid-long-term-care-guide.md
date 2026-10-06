@@ -19,6 +19,16 @@ related:
   - life-events/caring-for-aging-parents
   - tools/medicaid-savings-runway
   - guides/transfer-on-death-and-payable-on-death
+diagram: MedicaidLookback
+answers:
+  - "How do I qualify for Medicaid nursing home coverage?"
+  - "Does Medicaid count my spouse's assets?"
+  - "How do I prove Medicaid assets for the look-back?"
+  - "Does Medicaid count a prepaid funeral?"
+  - "Can I buy a pre-need funeral plan before Medicaid?"
+  - "Will Medicaid take my house if I go into a nursing home?"
+  - "Will Medicaid take my house?"
+  - "How do I find my parent's financial records for a Medicaid application?"
 reviewed: false
 updated: "2026-10-06"
 ---

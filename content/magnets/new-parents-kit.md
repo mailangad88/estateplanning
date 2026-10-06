@@ -18,6 +18,9 @@ related:
   - guides/leaving-money-to-minors
   - life-events/new-baby
   - tools/guardian-fund-calculator
+answers:
+  - "What are the five documents new parents should have?"
+  - "Should new parents get a trust or just a will?"
 reviewed: false
 updated: "2026-10-06"
 ---

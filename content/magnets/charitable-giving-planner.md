@@ -19,6 +19,10 @@ related:
   - guides/how-to-make-a-will
   - guides/irrevocable-trusts-explained
   - checklists/beneficiary-designation-audit
+answers:
+  - "What is a charitable remainder trust?"
+  - "What is a charitable lead trust?"
+  - "Should I give charitable gifts through my will or while alive?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -18,6 +18,22 @@ related:
   - guides/special-needs-trusts
   - guides/medicaid-and-long-term-care-planning
   - guides/leaving-money-to-minors
+answers:
+  - "Can I roll a 529 plan into an ABLE account?"
+  - "Can a parent or sibling contribute to an ABLE account?"
+  - "What can ABLE account money be spent on?"
+  - "What is the ABLE account age limit of 46?"
+  - "When did the ABLE age of onset change to 46?"
+  - "Can an ABLE account and a special needs trust be used together?"
+  - "Does Medicaid take money from an ABLE account after death?"
+  - "Does an ABLE account affect SSI?"
+  - "Does an ABLE account count for SSI?"
+  - "How much can be put into an ABLE account each year?"
+  - "Is an ABLE account better than a special needs trust?"
+  - "What happens to an ABLE account when the owner dies?"
+  - "What is an ABLE account?"
+  - "What is the SSI resource limit?"
+  - "Who is eligible for an ABLE account?"
 reviewed: false
 updated: "2026-10-06"
 ---

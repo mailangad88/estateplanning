@@ -18,6 +18,8 @@ related:
   - guides/guardianship-for-minor-children
   - guides/healthcare-directives-and-living-wills
   - checklists/beneficiary-designation-audit
+answers:
+  - "What information should I leave for my family when I die?"
 reviewed: false
 updated: "2026-10-06"
 ---

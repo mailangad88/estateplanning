@@ -18,6 +18,14 @@ related:
   - guides/updating-your-estate-plan
   - guides/funding-your-trust
   - compare/revocable-vs-irrevocable-trust
+answers:
+  - "Can I change my trust after I create it?"
+  - "What is a trust amendment vs a restatement?"
+  - "Can a trust be amended by a will?"
+  - "Can a trust beneficiary be changed?"
+  - "How do I replace a trustee?"
+  - "Do I need to update my trust if I move?"
+  - "What happens if I move to another state with a living trust?"
 reviewed: false
 updated: "2026-10-06"
 ---

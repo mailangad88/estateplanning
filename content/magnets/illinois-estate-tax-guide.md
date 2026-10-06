@@ -18,6 +18,13 @@ related:
   - tools/state-death-tax-checker
   - tools/estate-tax-estimator
   - guides/revocable-living-trust-explained
+diagram: EstateTaxThresholds
+answers:
+  - "What is the Illinois estate tax exemption?"
+  - "What is a credit shelter trust?"
+  - "What is an AB trust or bypass trust?"
+  - "What is an A-B trust?"
+  - "Should I worry about estate tax if I live in a state with a low exemption?"
 reviewed: false
 updated: "2026-10-06"
 ---

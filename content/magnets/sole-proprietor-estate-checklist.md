@@ -18,6 +18,15 @@ related:
   - life-events/starting-a-business
   - guides/powers-of-attorney
   - checklists/asset-and-account-inventory
+diagram: BusinessSuccession
+answers:
+  - "Does a sole proprietor need an estate plan?"
+  - "What happens to a sole proprietorship when the owner dies?"
+  - "Does a freelancer need an estate plan?"
+  - "What estate planning do I need if I am self-employed?"
+  - "Who inherits my freelance income and accounts?"
+  - "Who owns the customer list after I die?"
+  - "Who owns my domain names and websites after I die?"
 reviewed: false
 updated: "2026-10-06"
 ---

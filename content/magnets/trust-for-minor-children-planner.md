@@ -19,6 +19,20 @@ related:
   - life-events/new-baby
   - guides/choosing-a-trustee
   - tools/guardian-fund-calculator
+diagram: MoneyForMinors
+answers:
+  - "Do I need a trust if I have minor children?"
+  - "How do I set up a trust for a minor?"
+  - "What is a trust for minors?"
+  - "What happens to a trust if a beneficiary is a minor?"
+  - "At what age should a child inherit from a trust?"
+  - "What is a good age for a child to receive an inheritance?"
+  - "Can a trust hold money until a child turns 25?"
+  - "How do I set up a trust fund for my child?"
+  - "Can a trust pay for a child's first home?"
+  - "Can a trust pay for college?"
+  - "What is a trust distribution standard like HEMS?"
+  - "What happens if a child inherits money without a trust?"
 reviewed: false
 updated: "2026-10-06"
 ---

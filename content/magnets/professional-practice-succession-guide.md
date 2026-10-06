@@ -18,6 +18,14 @@ related:
   - life-events/starting-a-business
   - guides/powers-of-attorney
   - tools/life-insurance-needs
+diagram: BusinessSuccession
+answers:
+  - "What happens to a professional practice when the owner dies?"
+  - "What happens to a medical practice when the physician owner dies?"
+  - "What happens to a law practice when the lawyer owner dies?"
+  - "Can a nonprofessional inherit a professional corporation in my state?"
+  - "Can a professional LLC pass to heirs who are not licensed?"
+  - "What if my business relies on my professional license?"
 reviewed: false
 updated: "2026-10-06"
 ---

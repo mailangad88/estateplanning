@@ -18,6 +18,16 @@ related:
   - life-events/getting-married
   - guides/beneficiary-designations
   - compare/joint-ownership-vs-trust
+diagram: BlendedFamilyPlan
+answers:
+  - "Does remarriage revoke my will?"
+  - "What happens if I never update my will after remarrying?"
+  - "Does remarriage change my children's beneficiary designations?"
+  - "Who should be the beneficiary of my 401(k) in a second marriage?"
+  - "Can I name my children as 401(k) beneficiaries if I am married?"
+  - "What happens to my IRA if I remarry and my kids are beneficiaries?"
+  - "Should I remarry and what does it mean for my estate plan?"
+  - "What if my spouse and my kids do not get along and share a house?"
 reviewed: false
 updated: "2026-10-06"
 ---

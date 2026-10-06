@@ -18,6 +18,15 @@ related:
   - guides/how-to-make-a-will
   - guides/what-makes-a-will-valid
   - compare/pour-over-will-vs-simple-will
+answers:
+  - "What are the risks of a DIY will?"
+  - "What are the risks of doing estate planning myself?"
+  - "LegalZoom vs an estate planning lawyer: which is better?"
+  - "Are online wills and trusts legally binding?"
+  - "Do I need a lawyer to make a will?"
+  - "Is it worth paying a lawyer for a simple estate plan?"
+  - "Can I do estate planning myself?"
+  - "Can a will be signed without witnesses?"
 reviewed: false
 updated: "2026-10-06"
 ---

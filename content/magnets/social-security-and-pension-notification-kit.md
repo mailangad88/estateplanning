@@ -18,6 +18,16 @@ related:
   - guides/settling-an-estate-step-by-step
   - life-events/death-of-a-parent
   - checklists/important-contacts-list
+answers:
+  - "How do I notify Social Security of a death?"
+  - "Does the funeral home notify Social Security?"
+  - "Can I keep the deceased's Social Security check for the month they died?"
+  - "Do I have to return Social Security money after a death?"
+  - "What happens to a deceased person's Social Security payments?"
+  - "How do I claim a deceased person's pension?"
+  - "What happens to a pension after death?"
+  - "What happens to an annuity after death?"
+  - "How do I claim life insurance after death?"
 reviewed: false
 updated: "2026-10-06"
 ---

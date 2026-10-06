@@ -19,6 +19,12 @@ related:
   - checklists/first-30-days-after-a-death
   - tools/executor-workload
   - life-events/death-of-a-parent
+answers:
+  - "How long does an executor have to file a will?"
+  - "Is there a deadline to probate a will?"
+  - "What is the creditor claim period in probate?"
+  - "Do I have to notify heirs in probate?"
+  - "What is the elective share in probate?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -19,6 +19,9 @@ related:
   - guides/medicaid-and-long-term-care-planning
   - guides/healthcare-directives-and-living-wills
   - checklists/important-contacts-list
+answers:
+  - "How do I freeze a parent's credit?"
+  - "When should an adult child get involved in a parent's finances?"
 reviewed: false
 updated: "2026-10-06"
 ---

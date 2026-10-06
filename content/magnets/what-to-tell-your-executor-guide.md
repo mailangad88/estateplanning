@@ -19,6 +19,13 @@ related:
   - checklists/important-contacts-list
   - guides/settling-an-estate-step-by-step
   - checklists/digital-assets-inventory
+answers:
+  - "What should I do with my passwords for my estate?"
+  - "How do I make sure my executor can unlock my phone?"
+  - "How do I share my passwords securely with my family?"
+  - "Should I keep my passwords in a notebook?"
+  - "Password list vs. password manager for estate planning?"
+  - "Can I delegate access to my accounts without sharing my password?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -19,6 +19,16 @@ related:
   - compare/probate-vs-non-probate-assets
   - life-events/death-of-a-parent
   - checklists/first-30-days-after-a-death
+diagram: IntestacyLadder
+answers:
+  - "What is an heirship affidavit?"
+  - "Who inherits if my parent dies without a will?"
+  - "How do I prove I am an heir?"
+  - "What if heirs can't be found?"
+  - "What happens if I die without a will and have a spouse and kids?"
+  - "What happens if I die without a will and have no family?"
+  - "What if I have no heirs?"
+  - "Can the state take my assets if I have no heirs?"
 reviewed: false
 updated: "2026-10-06"
 ---

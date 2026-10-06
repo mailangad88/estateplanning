@@ -18,6 +18,9 @@ related:
   - checklists/asset-and-account-inventory
   - life-events/serious-diagnosis
   - checklists/digital-assets-inventory
+answers:
+  - "What happens to my subscription services when I die?"
+  - "Can parents pay my bills or manage my accounts if I am hospitalized?"
 reviewed: false
 updated: "2026-10-06"
 ---

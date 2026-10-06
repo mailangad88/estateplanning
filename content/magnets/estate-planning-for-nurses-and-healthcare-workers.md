@@ -18,6 +18,11 @@ related:
   - guides/guardianship-for-minor-children
   - compare/living-will-vs-healthcare-power-of-attorney
   - guides/beneficiary-designations
+answers:
+  - "What is a healthcare proxy?"
+  - "What is an advance directive?"
+  - "What is a living will?"
+  - "What is a durable power of attorney?"
 reviewed: false
 updated: "2026-10-06"
 ---

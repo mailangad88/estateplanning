@@ -19,6 +19,14 @@ related:
   - guides/irrevocable-trusts-explained
   - guides/special-needs-trusts
   - guides/leaving-money-to-minors
+answers:
+  - "Do I need a trust for a child with addiction?"
+  - "What happens to a trust if a beneficiary has an addiction?"
+  - "What is a discretionary trust?"
+  - "Can I put conditions on a trust distribution?"
+  - "How can a trust control when my children get money?"
+  - "Does a trust have to be distributed all at once?"
+  - "Can I name one child as trustee over my other children?"
 reviewed: false
 updated: "2026-10-06"
 ---

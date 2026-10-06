@@ -18,6 +18,14 @@ related:
   - compare/probate-vs-non-probate-assets
   - checklists/first-30-days-after-a-death
   - guides/transfer-on-death-and-payable-on-death
+answers:
+  - "How does an executor handle a car?"
+  - "What do I do with an inherited car?"
+  - "What happens to a deceased person's car?"
+  - "How do I transfer a car title after death?"
+  - "Is probate required for a car?"
+  - "What happens to a car in probate?"
+  - "How do I notify the DMV of a death?"
 reviewed: false
 updated: "2026-10-06"
 ---

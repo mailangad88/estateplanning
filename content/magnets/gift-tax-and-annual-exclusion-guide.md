@@ -18,6 +18,20 @@ related:
   - tools/estate-tax-estimator
   - guides/leaving-money-to-minors
   - life-events/retirement
+answers:
+  - "Annual exclusion vs. lifetime exemption: how do they differ?"
+  - "Are gifts between spouses taxable?"
+  - "Are gifts to charity subject to gift tax?"
+  - "Can I give $19,000 to each grandchild every year?"
+  - "Do I need to report gifts under the annual exclusion?"
+  - "How much can I give my children before I owe gift tax?"
+  - "How much can a married couple gift each year tax-free?"
+  - "Is paying someone's tuition a taxable gift?"
+  - "Is paying a relative's medical bills a taxable gift?"
+  - "Is forgiving a loan to my child a gift?"
+  - "What is a Form 709?"
+  - "What is a gift splitting election?"
+  - "When do I have to file a gift tax return?"
 reviewed: false
 updated: "2026-10-06"
 ---

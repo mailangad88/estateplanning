@@ -18,6 +18,14 @@ related:
   - guides/settling-an-estate-step-by-step
   - checklists/first-30-days-after-a-death
   - life-events/death-of-a-parent
+diagram: ProbateTimeline
+answers:
+  - "How does probate work in Illinois?"
+  - "What is the probate process step by step?"
+  - "How do I get letters testamentary?"
+  - "How do I get appointed as administrator of an estate?"
+  - "How do I open probate for my parent?"
+  - "What is probate in simple terms?"
 reviewed: false
 updated: "2026-10-06"
 ---

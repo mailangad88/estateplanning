@@ -18,6 +18,17 @@ related:
   - life-events/death-of-a-parent
   - checklists/first-30-days-after-a-death
   - guides/estate-and-inheritance-taxes
+answers:
+  - "Does an estate have to file a final personal tax return?"
+  - "What is the estate income tax return (Form 1041)?"
+  - "How do I prove date-of-death value for a house?"
+  - "Do I have to pay income tax on inherited money?"
+  - "Do I owe federal tax on an inheritance I receive?"
+  - "Do I have to report an inheritance on my tax return?"
+  - "What is the holding period for inherited property?"
+  - "What happens if I sell inherited property right away?"
+  - "Do I pay capital gains if I sell my house after my spouse dies?"
+  - "What is the penalty for missing a required minimum distribution from an inherited IRA?"
 reviewed: false
 updated: "2026-10-06"
 ---

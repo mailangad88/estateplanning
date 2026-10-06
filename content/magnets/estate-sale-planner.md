@@ -18,6 +18,10 @@ related:
   - guides/settling-an-estate-step-by-step
   - checklists/asset-and-account-inventory
   - guides/how-probate-works
+answers:
+  - "What is an estate sale?"
+  - "Should I hire an estate liquidator?"
+  - "How does an executor value personal property?"
 reviewed: false
 updated: "2026-10-06"
 ---

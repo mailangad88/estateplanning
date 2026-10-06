@@ -18,6 +18,8 @@ related:
   - guides/how-to-make-a-will
   - guides/how-probate-works
   - checklists/letter-of-instruction-outline
+answers:
+  - "Should I put my estate planning documents in a safe deposit box?"
 reviewed: false
 updated: "2026-10-06"
 ---

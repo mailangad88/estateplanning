@@ -18,6 +18,16 @@ related:
   - checklists/documents-to-gather-before-your-consult
   - guides/updating-your-estate-plan
   - checklists/letter-of-instruction-outline
+answers:
+  - "How do I organize my estate planning documents?"
+  - "How do I organize my important papers for my family?"
+  - "What is an estate planning binder or \"in case of death\" file?"
+  - "Where should I keep my estate planning documents?"
+  - "Who should have copies of my estate planning documents?"
+  - "Should I tell my family where my estate planning documents are?"
+  - "What documents does my family need after I die?"
+  - "What should I include in a letter of instruction?"
+  - "How do I make sure my family can find my accounts?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -19,6 +19,8 @@ related:
   - guides/powers-of-attorney
   - guides/estate-and-inheritance-taxes
   - tools/state-death-tax-checker
+answers:
+  - "What are the requirements for a valid will?"
 reviewed: false
 updated: "2026-10-06"
 ---

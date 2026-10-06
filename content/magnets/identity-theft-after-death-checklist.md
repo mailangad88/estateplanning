@@ -18,6 +18,10 @@ related:
   - guides/settling-an-estate-step-by-step
   - life-events/death-of-a-parent
   - blog/what-to-do-with-a-parents-bank-account-after-death
+answers:
+  - "How do I notify credit bureaus of a death?"
+  - "How do I cancel a deceased person's credit cards?"
+  - "How do I stop a deceased person's mail?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -18,6 +18,14 @@ related:
   - guides/beneficiary-designations
   - compare/beneficiary-designation-vs-will
   - checklists/beneficiary-designation-audit
+diagram: TodPodTransfers
+answers:
+  - "What is a TOD designation on a brokerage account?"
+  - "What is a beneficiary on a bank account?"
+  - "How do I split an account unequally among my children?"
+  - "How do I leave more to one child than another through beneficiary forms?"
+  - "Do beneficiary designations need to be notarized or witnessed?"
+  - "What if my beneficiary form was lost by the company?"
 reviewed: false
 updated: "2026-10-06"
 ---

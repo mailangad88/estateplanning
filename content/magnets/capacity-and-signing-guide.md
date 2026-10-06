@@ -18,6 +18,14 @@ related:
   - guides/powers-of-attorney
   - life-events/serious-diagnosis
   - guides/revocable-living-trust-explained
+diagram: WillValidity
+answers:
+  - "How is mental capacity determined?"
+  - "How do I know if someone has capacity to sign a power of attorney?"
+  - "How do I get a parent evaluated for capacity?"
+  - "Can a person with dementia sign an advance directive?"
+  - "Can I get a power of attorney after someone has been declared incompetent?"
+  - "What are the signs of dementia that affect legal capacity?"
 reviewed: false
 updated: "2026-10-06"
 ---

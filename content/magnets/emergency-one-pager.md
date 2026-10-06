@@ -18,6 +18,14 @@ related:
   - guides/guardianship-for-minor-children
   - checklists/important-contacts-list
   - life-events/new-baby
+answers:
+  - "Who takes my children if I am hospitalized?"
+  - "Will a hospital treat my child if I am not there?"
+  - "Who can pick up my child from school in an emergency?"
+  - "Do I need an emergency plan for my children when I travel?"
+  - "Can I give someone temporary authority over my children without going to court?"
+  - "Who handles my affairs if I am hospitalized unexpectedly?"
+  - "What is a medical consent form for a child I am not the parent of?"
 reviewed: false
 updated: "2026-10-06"
 ---

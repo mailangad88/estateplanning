@@ -18,6 +18,16 @@ related:
   - guides/choosing-an-executor
   - life-events/death-of-a-parent
   - blog/can-an-executor-also-be-a-beneficiary
+answers:
+  - "What if siblings fight over the estate?"
+  - "What happens if there is a dispute among heirs?"
+  - "What is a probate dispute?"
+  - "What can I do if the executor is not doing their job?"
+  - "What can I do if the executor won't give me information?"
+  - "What if the executor is also the main beneficiary?"
+  - "Can I be both executor and beneficiary?"
+  - "What are the most common reasons estates end up in court?"
+  - "What are the most common reasons for family fights over inheritance?"
 reviewed: false
 updated: "2026-10-06"
 ---

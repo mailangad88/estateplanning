@@ -18,6 +18,8 @@ related:
   - guides/updating-your-estate-plan
   - checklists/important-contacts-list
   - checklists/letter-of-instruction-outline
+answers:
+  - "What is a family meeting about estate planning?"
 reviewed: false
 updated: "2026-10-06"
 ---

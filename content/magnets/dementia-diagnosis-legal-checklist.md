@@ -18,6 +18,8 @@ related:
   - guides/powers-of-attorney
   - guides/healthcare-directives-and-living-wills
   - compare/power-of-attorney-vs-guardianship
+answers:
+  - "My parent has dementia and no power of attorney. What can I do?"
 reviewed: false
 updated: "2026-10-06"
 ---

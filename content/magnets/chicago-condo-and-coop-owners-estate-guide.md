@@ -19,6 +19,8 @@ related:
   - guides/transfer-on-death-and-payable-on-death
   - compare/joint-ownership-vs-trust
   - guides/funding-your-trust
+answers:
+  - "What is joint tenancy with right of survivorship?"
 reviewed: false
 updated: "2026-10-06"
 ---

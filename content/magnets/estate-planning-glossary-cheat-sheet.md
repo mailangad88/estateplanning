@@ -18,6 +18,21 @@ related:
   - guides/revocable-living-trust-explained
   - guides/how-to-make-a-will
   - guides/how-probate-works
+answers:
+  - "What is a personal representative?"
+  - "What is a self-proving affidavit?"
+  - "What is a residuary estate?"
+  - "What is a legacy or bequest?"
+  - "What is a fiduciary?"
+  - "What is a probate estate?"
+  - "What is per capita in a will?"
+  - "What is a HIPAA authorization and do I need one?"
+  - "What does \"right of survivorship\" mean?"
+  - "What is community property?"
+  - "What is the difference between joint tenancy and tenants in common?"
+  - "What is a disclaimer of inheritance?"
+  - "What is a settlor or grantor?"
+  - "What is a beneficiary?"
 reviewed: false
 updated: "2026-10-06"
 ---

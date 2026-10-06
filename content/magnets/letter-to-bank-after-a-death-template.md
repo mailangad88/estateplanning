@@ -18,6 +18,13 @@ related:
   - checklists/first-30-days-after-a-death
   - blog/what-to-do-with-a-parents-bank-account-after-death
   - checklists/asset-and-account-inventory
+answers:
+  - "How do I notify banks of a death?"
+  - "What happens to a deceased person's bank account?"
+  - "How do I close a deceased person's accounts?"
+  - "How does an executor get access to a bank account?"
+  - "Can the bank freeze accounts after death?"
+  - "What happens to a joint bank account after death?"
 reviewed: false
 updated: "2026-10-06"
 ---

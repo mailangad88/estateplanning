@@ -19,6 +19,11 @@ related:
   - compare/joint-ownership-vs-trust
   - tools/life-insurance-needs
   - guides/funding-your-trust
+answers:
+  - "Does a mortgage have to be paid when the owner dies?"
+  - "Should I add my child to the deed to avoid probate if it loses step-up?"
+  - "Should I hold property with my unmarried partner as joint tenants?"
+  - "What if I own a house with an unmarried partner?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -19,6 +19,19 @@ related:
   - guides/estate-planning-for-blended-families
   - guides/revocable-living-trust-explained
   - checklists/beneficiary-designation-audit
+answers:
+  - "Does a prenup replace estate planning?"
+  - "What happens if my estate plan contradicts our prenup?"
+  - "Does a prenup override a will?"
+  - "Does a prenup cover what happens at death or only divorce?"
+  - "Can a prenup stop my spouse from inheriting from me?"
+  - "Can a spouse waive their inheritance rights in a prenup?"
+  - "Does a prenup waive my spouse's rights to my 401(k)?"
+  - "Does a prenup protect inheritance for my children?"
+  - "What is spousal consent for a retirement plan beneficiary?"
+  - "Does my spouse have to waive rights to my 401(k)?"
+  - "What does a prenup need to be valid?"
+  - "What is a prenuptial agreement?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -18,6 +18,16 @@ related:
   - compare/transfer-on-death-deed-vs-trust
   - guides/how-probate-works
   - life-events/buying-a-home
+diagram: TodPodTransfers
+answers:
+  - "What is a transfer-on-death deed?"
+  - "Does my state allow transfer-on-death deeds?"
+  - "Does a TOD deed avoid probate?"
+  - "When does a TOD deed take effect?"
+  - "How do I revoke a TOD deed?"
+  - "How do I record a TOD deed?"
+  - "How do I clear a TOD deed after death?"
+  - "What if the TOD beneficiary does not want the property?"
 reviewed: false
 updated: "2026-10-06"
 ---

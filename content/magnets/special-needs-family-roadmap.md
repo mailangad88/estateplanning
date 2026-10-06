@@ -18,6 +18,19 @@ related:
   - compare/special-needs-trust-vs-able-account
   - guides/medicaid-and-long-term-care-planning
   - guides/guardianship-for-minor-children
+diagram: SpecialNeedsTrust
+answers:
+  - "What estate planning do I need if I have a child with special needs?"
+  - "Do I need an estate plan if I have a disabled child?"
+  - "Can I leave my disabled child out of my will?"
+  - "Should I disinherit my child with a disability to protect benefits?"
+  - "Does an inheritance affect SSI?"
+  - "What is the best way to leave money to a child with a disability?"
+  - "What is the difference between a first-party and a third-party special needs trust?"
+  - "What is a first-party special needs trust?"
+  - "What is a third-party special needs trust?"
+  - "Who takes care of my child with a disability when I die?"
+  - "What happens to a child with a disability when parents die?"
 reviewed: false
 updated: "2026-10-06"
 ---

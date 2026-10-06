@@ -18,6 +18,10 @@ related:
   - checklists/letter-of-instruction-outline
   - guides/how-to-make-a-will
   - guides/estate-planning-for-blended-families
+answers:
+  - "How do I decide who gets sentimental items?"
+  - "What is a personal property memorandum?"
+  - "What is a letter of wishes for personal belongings?"
 reviewed: false
 updated: "2026-10-06"
 ---

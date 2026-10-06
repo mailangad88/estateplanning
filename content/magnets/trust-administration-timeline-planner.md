@@ -18,6 +18,9 @@ related:
   - guides/revocable-living-trust-explained
   - checklists/first-30-days-after-a-death
   - tools/executor-workload
+answers:
+  - "What happens to a living trust when the grantor dies?"
+  - "Who is in charge of a trust when the grantor dies?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -18,6 +18,15 @@ related:
   - checklists/letter-of-instruction-outline
   - guides/guardianship-for-minor-children
   - checklists/important-contacts-list
+answers:
+  - "What is a letter of intent for a special needs child?"
+  - "How long should a letter of intent be?"
+  - "Is a letter of intent legally binding?"
+  - "Should I include money matters in the letter of intent?"
+  - "What should a letter of intent include?"
+  - "When should I write a letter of intent?"
+  - "Who should receive a copy of the letter of intent?"
+  - "Do I need to update a letter of intent every year?"
 reviewed: false
 updated: "2026-10-06"
 ---

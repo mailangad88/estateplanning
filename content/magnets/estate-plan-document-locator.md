@@ -19,6 +19,10 @@ related:
   - checklists/letter-of-instruction-outline
   - guides/digital-assets-estate-planning
   - life-events/caring-for-aging-parents
+diagram: PlanReviewTriggers
+answers:
+  - "What happens if my family can't find my documents?"
+  - "What happens if my documents are in a safe deposit box that no one can open?"
 reviewed: false
 updated: "2026-10-06"
 ---

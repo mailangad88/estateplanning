@@ -18,6 +18,9 @@ related:
   - life-events/caring-for-aging-parents
   - tools/medicaid-savings-runway
   - guides/powers-of-attorney
+answers:
+  - "What happens if I run out of money in assisted living?"
+  - "Assisted living vs. nursing home: which does Medicaid pay for?"
 reviewed: false
 updated: "2026-10-06"
 ---

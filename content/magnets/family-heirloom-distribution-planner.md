@@ -18,6 +18,9 @@ related:
   - guides/estate-planning-for-blended-families
   - checklists/letter-of-instruction-outline
   - guides/settling-an-estate-step-by-step
+answers:
+  - "How do I pass on sentimental items and family heirlooms?"
+  - "How do I divide personal property between my children?"
 reviewed: false
 updated: "2026-10-06"
 ---

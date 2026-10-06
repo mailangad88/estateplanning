@@ -18,6 +18,12 @@ related:
   - guides/medicaid-and-long-term-care-planning
   - checklists/first-30-days-after-a-death
   - guides/how-probate-works
+answers:
+  - "What happens to medical debt after death?"
+  - "What happens if I die with medical debt?"
+  - "What happens if my estate is worth less than my debts?"
+  - "What is Medicaid estate recovery?"
+  - "Does Medicaid take the house after death?"
 reviewed: false
 updated: "2026-10-06"
 ---

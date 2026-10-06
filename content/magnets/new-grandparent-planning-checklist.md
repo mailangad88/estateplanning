@@ -18,6 +18,8 @@ related:
   - guides/leaving-money-to-minors
   - guides/guardianship-for-minor-children
   - guides/estate-and-inheritance-taxes
+answers:
+  - "Do I need to update my plan when a grandchild is born?"
 reviewed: false
 updated: "2026-10-06"
 ---

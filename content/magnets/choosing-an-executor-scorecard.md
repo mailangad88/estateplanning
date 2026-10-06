@@ -19,6 +19,12 @@ related:
   - checklists/choosing-an-executor-worksheet
   - tools/executor-workload
   - blog/can-an-executor-also-be-a-beneficiary
+answers:
+  - "How do I choose an executor?"
+  - "Who should I name as executor of my will?"
+  - "Can a professional serve as my executor or agent?"
+  - "What is a professional fiduciary?"
+  - "What does an executor of a will do?"
 reviewed: false
 updated: "2026-10-06"
 ---

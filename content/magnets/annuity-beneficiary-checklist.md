@@ -18,6 +18,12 @@ related:
   - checklists/beneficiary-designation-audit
   - compare/probate-vs-non-probate-assets
   - tools/beneficiary-audit
+answers:
+  - "Are annuity death benefits taxable to beneficiaries?"
+  - "Who gets my annuity when I die?"
+  - "Does the step-up apply to inherited annuities?"
+  - "What happens if I name my estate as the beneficiary?"
+  - "What does \"estate\" as beneficiary mean?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -18,6 +18,13 @@ related:
   - guides/how-to-make-a-will
   - guides/what-makes-a-will-valid
   - compare/pour-over-will-vs-simple-will
+answers:
+  - "What is a codicil?"
+  - "Should I use a codicil or write a new will?"
+  - "Can I change my will after I sign it?"
+  - "How do I change my will?"
+  - "Can I cross something out on a will?"
+  - "What happens to an old will when I make a new one?"
 reviewed: false
 updated: "2026-10-06"
 ---
