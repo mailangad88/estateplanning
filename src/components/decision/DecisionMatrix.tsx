@@ -26,7 +26,7 @@ export function DecisionMatrix({ guide }: { guide: DecisionGuide }) {
   const tone = (id: string) => guide.families.find((f) => f.id === id)?.tone ?? "accent";
   return (
     <div className="dg-matrix">
-      <div className="dg-filter" role="group" aria-label={`Filter ${guide.noun} types`}>
+      <div className="dg-filter" role="group" aria-label={`Filter ${guide.noun} options`}>
         <button type="button" aria-pressed={family === "all"} onClick={() => setFamily("all")}>
           All {guide.options.length}
         </button>
@@ -36,10 +36,10 @@ export function DecisionMatrix({ guide }: { guide: DecisionGuide }) {
           </button>
         ))}
       </div>
-      <div className="dg-table-wrap" tabIndex={0} role="region" aria-label={`Comparison table of ${guide.noun} types`}>
+      <div className="dg-table-wrap" tabIndex={0} role="region" aria-label={`Comparison table of ${guide.noun} options`}>
         <table className="dg-table">
           <caption className="sr-only">
-            Each {guide.noun} type compared on {guide.dimensions.map((d) => d.label.toLowerCase()).join(", ")}.
+            Each option compared on {guide.dimensions.map((d) => d.label.toLowerCase()).join(", ")}.
           </caption>
           <thead>
             <tr>

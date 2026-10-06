@@ -6,7 +6,7 @@ import { graph, itemListSchema } from "@/lib/schema";
 import { JsonLd } from "@/lib/seo";
 
 const TITLE = "Estate planning decision guides";
-const DESCRIPTION = "Visual guides for the choices people get stuck on: which trust, which power of attorney, will or trust and more. Answer a few questions and compare every option side by side.";
+const DESCRIPTION = "Visual guides for the choices people get stuck on: which trust, which power of attorney, how to pass on your house and more. Answer a few questions and compare every option side by side.";
 
 export const metadata: Metadata = {
   title: TITLE,

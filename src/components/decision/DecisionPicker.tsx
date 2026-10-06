@@ -123,7 +123,7 @@ export function DecisionPicker({ guide }: { guide: DecisionGuide }) {
 
         {bars.length > 1 && (
           <figure className="dg-bars">
-            <figcaption>How each {guide.noun} matched your answers</figcaption>
+            <figcaption>How each option matched your answers</figcaption>
             <ol>
               {bars.map((b) => (
                 <li key={b.option.id}>

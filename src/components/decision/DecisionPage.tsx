@@ -39,7 +39,7 @@ export function DecisionPage({ guide }: { guide: DecisionGuide }) {
         crumbs={<Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/decide", label: "Decision guides" }, { label: guide.title }]} />}
       >
         <p className="cta-row">
-          <a className="button large" href="#picker">Find my {guide.noun}</a>
+          <a className="button large" href="#picker">Find what fits me</a>
           <a className="button secondary large" href="#compare">Compare all {n}</a>
         </p>
       </PageHero>
@@ -79,8 +79,8 @@ export function DecisionPage({ guide }: { guide: DecisionGuide }) {
         <DecisionMatrix guide={guide} />
       </Band>
 
-      <Band label={`Every ${guide.noun} type explained`}>
-        <SectionHead kicker="The details" title={`Every ${guide.noun} type, in plain words`} />
+      <Band label="Each option explained">
+        <SectionHead kicker="The details" title="Each option, in plain words" />
         <OptionCards guide={guide} />
       </Band>
 
@@ -113,7 +113,7 @@ export function DecisionPage({ guide }: { guide: DecisionGuide }) {
         <div className="dg-cta">
           <div>
             <p className="kicker">Not sure yet?</p>
-            <h2>Get a straight answer about your {guide.noun}</h2>
+            <h2>Get a straight answer for your family</h2>
             <p>Bring your picker result to a consult. We confirm what fits under your state&apos;s law and quote a flat fee before anything is signed.</p>
           </div>
           <p className="cta-row">
@@ -136,7 +136,7 @@ export function DecisionPage({ guide }: { guide: DecisionGuide }) {
             </li>
           ))}
         </ul>
-        <p className="notice">General information, not legal advice. Trust law differs by state.</p>
+        <p className="notice">General information, not legal advice. Laws differ by state.</p>
       </section>
 
       <JsonLd data={articleLd({ title: guide.title, description: guide.description, path, updated: guide.updated, reviewed: guide.reviewed, crumbs })} />
