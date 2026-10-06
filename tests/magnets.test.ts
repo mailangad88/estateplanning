@@ -1,6 +1,8 @@
 import { describe, expect, it } from "vitest";
 import { TOOLS } from "@/config/tools";
 import { getChecklists, getComparisons, getGlossary, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
+import { getQuizzes } from "@/lib/quizzes";
+import { DECISIONS } from "@/config/decisions";
 import { MAGNET_CATEGORIES, MAGNET_FORMATS, getMagnets, magnetsFor } from "@/lib/magnets";
 
 const magnets = getMagnets();
@@ -15,6 +17,8 @@ function knownPaths() {
   getLessons().forEach((l) => s.add(`/course/${l.day}`));
   TOOLS.forEach((t) => s.add(`/tools/${t.slug}`));
   magnets.forEach((m) => s.add(`/free/${m.slug}`));
+  getQuizzes().forEach((q) => s.add(`/quizzes/${q.slug}`));
+  DECISIONS.forEach((d) => s.add(`/decide/${d.slug}`));
   return s;
 }
 
