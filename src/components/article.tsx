@@ -94,6 +94,7 @@ export function ArticlePage(props: {
         tools={tool ? [{ href: `/tools/${tool.slug}`, title: tool.title }] : []}
         related={related.slice(3)}
         excludeDiagrams={pageDiagramNames(props.path)}
+        widget={tool?.slug}
       />
       {props.after}
       <FaqList faqs={props.faqs ?? []} />

@@ -8,7 +8,7 @@ import { decorateSections } from "@/lib/prose-sections";
 import { diagramRegistry } from "@/components/visuals/diagrams/registry";
 import { WHAT_IF_SCENARIOS } from "@/config/what-if-scenarios";
 import { DECISIONS } from "@/config/decisions";
-import { MARKER_RE, PICKERS, TIMELINES, parseMarker, type VisualSpec } from "@/config/visual-kit";
+import { MARKER_RE, PICKERS, TIMELINES, isWidget, parseMarker, type VisualSpec } from "@/config/visual-kit";
 
 export type Segment = { html: string } | { visual: VisualSpec };
 
@@ -28,7 +28,19 @@ export interface PlanInput {
   hasRelated?: boolean;
   /** Diagrams already on the page (by registry name), so they are not shown twice. */
   excludeDiagrams?: string[];
+  /** The page's own tool (config/tools toolFor), drawn inline when it is one of the kit's widgets. */
+  widget?: string;
+  /**
+   * Hand-tuned picks for this page from the SEO thread (lib/page-embeds suggestEmbeds). They go ahead of
+   * topic matching: what-if ids first, the /decide guide first, and the free resource first.
+   */
+  suggested?: { whatIf: string[]; decide?: string; resource?: string };
 }
+
+const front = <T,>(first: (T | undefined)[], rest: T[]) => {
+  const head = first.filter((x): x is T => x !== undefined);
+  return [...head, ...rest.filter((x) => !head.includes(x))];
+};
 
 const SKIP = /faq|frequently|sources|references|bottom line|key takeaways|in short|summary|disclaimer|related/i;
 const COST = /cost|fee|expens|how much|price|pay for|afford/i;
@@ -70,7 +82,15 @@ function candidates(input: PlanInput) {
     .filter((d) => d.score >= 2)
     .sort((a, b) => b.score - a.score)
     .map((d) => d.slug);
-  return { scenarios, diagrams, pickers, timelines, decisions, probateTopic: /probate|trust|will|house|home|estate|executor|deed/.test(hay) };
+  const sug = input.suggested;
+  const known = new Set(WHAT_IF_SCENARIOS.map((s) => s.id));
+  const decideKnown = DECISIONS.some((d) => d.slug === sug?.decide) && !input.path.startsWith(`/decide/${sug?.decide}`);
+  return {
+    scenarios: front((sug?.whatIf ?? []).filter((id) => known.has(id)), scenarios),
+    decisions: front([decideKnown ? sug?.decide : undefined], decisions),
+    downloads: front([sug?.resource && input.downloads?.includes(sug.resource) ? sug.resource : undefined], input.downloads ?? []),
+    widget: isWidget(input.widget) ? input.widget : undefined,
+    diagrams, pickers, timelines, probateTopic: /probate|trust|will|house|home|estate|executor|deed/.test(hay) };
 }
 
 /** Plans the article: HTML segments with a visual after each section that needs one. */
@@ -83,6 +103,7 @@ export function planVisuals(input: PlanInput): Segment[] {
     used.add(key(v));
     if (v.type === "whatif-strip") v.ids.forEach((id) => used.add(key({ type: "whatif", id })));
     if (v.type === "whatif") used.add(`whatif:${v.id}`);
+    if (v.type === "widget") used.add(`widget:${v.slug}`);
     return v;
   };
   const firstUnused = <T,>(list: T[], make: (x: T) => VisualSpec) => {
@@ -94,7 +115,7 @@ export function planVisuals(input: PlanInput): Segment[] {
   };
   const calm = Boolean(input.sensitive);
   // Most of each kind a page gets from auto-picking, so pages mix visuals instead of repeating one.
-  const CAP: Partial<Record<VisualSpec["type"], number>> = { diagram: 2, whatif: 2, download: 1, tool: 1, picker: 1, timeline: 1, decision: 1 };
+  const CAP: Partial<Record<VisualSpec["type"], number>> = { diagram: 2, whatif: 2, download: 1, tool: 1, picker: 1, timeline: 1, decision: 1, widget: 1 };
   const count: Partial<Record<VisualSpec["type"], number>> = {};
   const capped = (t: VisualSpec["type"]) => (count[t] ?? 0) >= (CAP[t] ?? 1);
 
@@ -112,8 +133,10 @@ export function planVisuals(input: PlanInput): Segment[] {
     timeline: () => firstUnused(c.timelines, (id) => ({ type: "timeline", id })),
     diagram: () => firstUnused(c.diagrams, (name) => ({ type: "diagram", name })),
     slider: () => (calm || !c.probateTopic ? null : firstUnused(["probate-cost"] as const, (id) => ({ type: "slider", id }))),
-    download: () => firstUnused(input.downloads ?? [], (slug) => ({ type: "download", slug })),
-    tool: () => firstUnused(input.tools ?? [], (slug) => ({ type: "tool", slug })),
+    download: () => firstUnused(c.downloads, (slug) => ({ type: "download", slug })),
+    // The page's tool as a link card, unless it is already drawn inline.
+    tool: () => firstUnused((input.tools ?? []).filter((t) => !(c.widget && used.has(`widget:${c.widget}`) && t.endsWith(`/${c.widget}`))), (slug) => ({ type: "tool", slug })),
+    widget: () => (c.widget ? firstUnused([c.widget], (slug) => ({ type: "widget", slug })) : null),
     related: () => (input.hasRelated ? firstUnused([0], () => ({ type: "related" })) : null),
   };
   const rotation = [pick.decision, pick.diagram, pick.whatif, pick.download, pick.picker, pick.timeline, pick.tool, pick.strip, pick.slider, pick.related];
@@ -131,7 +154,8 @@ export function planVisuals(input: PlanInput): Segment[] {
     ];
     const turned = [...rotation.slice(turn % rotation.length), ...rotation.slice(0, turn % rotation.length)];
     turn++;
-    for (const f of [...byHeading, ...turned]) {
+    // The page's own inline tool comes first, so an early section gets something to try.
+    for (const f of [pick.widget, ...byHeading, ...turned]) {
       const cand = f ? f() : null;
       if (!cand || capped(cand.type)) continue;
       const v = take(cand);
