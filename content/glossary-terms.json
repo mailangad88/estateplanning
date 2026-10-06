@@ -1,0 +1,30 @@
+{
+  "_note": "Glossary slugs. Definitions live in content/glossary/{slug}.md. URL /glossary/{slug}.",
+  "terms": [
+    ["administrator", "Administrator"], ["advance-directive", "Advance directive"], ["agent", "Agent (power of attorney)"],
+    ["ancillary-probate", "Ancillary probate"], ["annual-exclusion", "Annual gift tax exclusion"], ["beneficiary", "Beneficiary"],
+    ["bequest", "Bequest"], ["codicil", "Codicil"], ["community-property", "Community property"],
+    ["conservatorship", "Conservatorship"], ["contingent-beneficiary", "Contingent beneficiary"], ["decedent", "Decedent"],
+    ["disclaimer", "Disclaimer (of an inheritance)"], ["durable-power-of-attorney", "Durable power of attorney"], ["elective-share", "Elective share"],
+    ["estate", "Estate"], ["estate-tax", "Estate tax"], ["executor", "Executor"],
+    ["fiduciary", "Fiduciary"], ["funding", "Trust funding"], ["grantor", "Grantor (settlor, trustor)"],
+    ["guardian", "Guardian"], ["healthcare-proxy", "Healthcare proxy"], ["heir", "Heir"],
+    ["hipaa-authorization", "HIPAA authorization"], ["holographic-will", "Holographic will"], ["incapacity", "Incapacity"],
+    ["inheritance-tax", "Inheritance tax"], ["intestate", "Intestate"], ["irrevocable-trust", "Irrevocable trust"],
+    ["joint-tenancy", "Joint tenancy with right of survivorship"], ["letters-testamentary", "Letters testamentary"], ["living-trust", "Living trust"],
+    ["living-will", "Living will"], ["look-back-period", "Medicaid look-back period"], ["marital-deduction", "Unlimited marital deduction"],
+    ["no-contest-clause", "No-contest clause"], ["payable-on-death", "Payable-on-death (POD)"], ["per-capita", "Per capita"],
+    ["per-stirpes", "Per stirpes"], ["personal-representative", "Personal representative"], ["polst", "POLST"],
+    ["portability", "Portability"], ["pour-over-will", "Pour-over will"], ["power-of-attorney", "Power of attorney"],
+    ["principal", "Principal (power of attorney)"], ["probate", "Probate"], ["probate-estate", "Probate estate"],
+    ["qtip-trust", "QTIP trust"], ["residuary-estate", "Residuary estate"], ["revocable-trust", "Revocable trust"],
+    ["self-proving-affidavit", "Self-proving affidavit"], ["small-estate-affidavit", "Small estate affidavit"], ["special-needs-trust", "Special needs trust"],
+    ["spendthrift-clause", "Spendthrift clause"], ["springing-power-of-attorney", "Springing power of attorney"], ["step-up-in-basis", "Step-up in basis"],
+    ["successor-trustee", "Successor trustee"], ["tenancy-by-the-entirety", "Tenancy by the entirety"], ["testamentary-trust", "Testamentary trust"],
+    ["testator", "Testator"], ["transfer-on-death", "Transfer-on-death (TOD)"], ["transfer-on-death-deed", "Transfer-on-death deed"],
+    ["trust", "Trust"], ["trustee", "Trustee"], ["undue-influence", "Undue influence"],
+    ["utma", "UTMA account"], ["able-account", "ABLE account"], ["buy-sell-agreement", "Buy-sell agreement"],
+    ["digital-assets", "Digital assets"], ["fiduciary-duty", "Fiduciary duty"], ["intestate-succession", "Intestate succession"],
+    ["testamentary-capacity", "Testamentary capacity"], ["dnr", "Do-not-resuscitate order (DNR)"], ["generation-skipping-transfer-tax", "Generation-skipping transfer tax"]
+  ]
+}

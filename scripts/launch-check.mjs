@@ -14,7 +14,7 @@ import path from "node:path";
 const ROOT = process.cwd();
 const DIRS = ["content", "src"];
 const EXT = new Set([".md", ".json", ".ts", ".tsx"]);
-const SKIP = new Set(["content/STYLE.md", "content/states/_template.json", "scripts/launch-check.mjs"]);
+const SKIP = new Set(["content/STYLE.md", "content/LEARN-STYLE.md", "content/states/_template.json", "scripts/launch-check.mjs"]);
 
 const BANNED = [
   { re: /\bexperts?\b/i, why: "'expert' implies a credential" },

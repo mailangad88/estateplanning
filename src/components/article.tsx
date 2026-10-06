@@ -3,6 +3,7 @@ import type { Faq, Heading } from "@/lib/content";
 import { articleLd, breadcrumbLd, JsonLd } from "@/lib/seo";
 import { Breadcrumbs, Cta, FaqList, Prose, ReviewNote, Toc } from "@/components/ui";
 import { EmailCapture } from "@/components/capture";
+import { libraryLinksFor } from "@/lib/site-links";
 
 export interface RelatedLink {
   href: string;
@@ -31,6 +32,8 @@ export function ArticlePage(props: {
     props.section,
     { name: props.title, path: props.path },
   ];
+  const seen = new Set(props.related.map((r) => r.href));
+  const related = [...props.related, ...libraryLinksFor(props.path).filter((l) => !seen.has(l.href))];
   return (
     <article>
       <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: props.section.path, label: props.section.name }, { label: props.title }]} />
@@ -54,11 +57,11 @@ export function ArticlePage(props: {
       ) : (
         <Cta />
       )}
-      {props.related.length > 0 && (
+      {related.length > 0 && (
         <section>
           <h2>Keep reading</h2>
           <ul className="cards">
-            {props.related.map((r) => (
+            {related.map((r) => (
               <li key={r.href}>
                 <Link href={r.href} className="card-link">
                   <span className="tag">{r.kind}</span>
