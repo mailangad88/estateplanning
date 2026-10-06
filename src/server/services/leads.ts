@@ -52,21 +52,21 @@ function normalizePhone(p: string) {
  * Finds an existing person by email, phone or browser id so one person never
  * becomes two records. Phone is optional on some forms, so an empty phone never matches.
  */
-export function findPerson(db: Db, email: string, phone: string, visitorId?: string): Person | undefined {
+export async function findPerson(db: Db, email: string, phone: string, visitorId?: string): Promise<Person | undefined> {
   const e = email.trim().toLowerCase();
   const p = normalizePhone(phone);
-  const byContact = db.persons.list((x) => x.email.toLowerCase() === e || (p !== "" && normalizePhone(x.phone) === p))[0];
+  const byContact = (await db.persons.list((x) => x.email.toLowerCase() === e || (p !== "" && normalizePhone(x.phone) === p)))[0];
   if (byContact || !visitorId) return byContact;
-  const prior = db.leads.list((l) => l.visitorId === visitorId)[0];
-  return prior ? db.persons.get(prior.personId) : undefined;
+  const prior = (await db.leads.list((l) => l.visitorId === visitorId))[0];
+  return prior ? await db.persons.get(prior.personId) : undefined;
 }
 
 /** Creates the person (or reuses a match) and a new lead from a website submission. */
-export function ingestLead(db: Db, record: LeadRecord, now = new Date()): Lead {
+export async function ingestLead(db: Db, record: LeadRecord, now = new Date()): Promise<Lead> {
   const c = record.contact;
-  let person = findPerson(db, c.email, c.phone, record.visitorId);
+  let person = await findPerson(db, c.email, c.phone, record.visitorId);
   if (!person) {
-    person = db.persons.insert({
+    person = await db.persons.insert({
       id: randomUUID(),
       firstName: c.firstName,
       lastName: c.lastName,
@@ -79,8 +79,7 @@ export function ingestLead(db: Db, record: LeadRecord, now = new Date()): Lead {
   }
   const a = record.answers;
   // A returning client goes back to the lawyer who handled their last matter.
-  const previous = db.leads
-    .list((l) => l.personId === person.id && !!l.assignedLawyerId)
+  const previous = (await db.leads.list((l) => l.personId === person.id && !!l.assignedLawyerId, { personId: person.id }))
     .sort((x, y) => y.createdAt.localeCompare(x.createdAt))[0];
 
   const matterType = matterTypeFromQuiz(a);
@@ -128,25 +127,25 @@ export function ingestLead(db: Db, record: LeadRecord, now = new Date()): Lead {
     priorTools: record.priorTools,
     visitorId: record.visitorId,
   };
-  db.leads.insert(lead);
-  audit(db, "system", { action: "lead.create", resourceType: "lead", resourceId: lead.id, leadId: lead.id, at: now });
+  await db.leads.insert(lead);
+  await audit(db, "system", { action: "lead.create", resourceType: "lead", resourceId: lead.id, leadId: lead.id, at: now });
   return lead;
 }
 
-export function setStage(db: Db, actor: AuditActor, leadId: string, stage: Stage, now = new Date()): Lead {
-  const lead = db.leads.get(leadId);
+export async function setStage(db: Db, actor: AuditActor, leadId: string, stage: Stage, now = new Date()): Promise<Lead> {
+  const lead = await db.leads.get(leadId);
   if (!lead) throw new Error("Lead not found");
   if (lead.stage === stage) return lead;
   const at = now.toISOString();
   const by = actor === "system" ? "system" : actor.userId;
-  const next = db.leads.update(leadId, { stage, stageHistory: [...lead.stageHistory, { stage, at, by }] });
-  audit(db, actor, { action: "lead.stage", resourceType: "lead", resourceId: leadId, leadId, detail: { from: lead.stage, to: stage }, at: now });
+  const next = await db.leads.update(leadId, { stage, stageHistory: [...lead.stageHistory, { stage, at, by }] });
+  await audit(db, actor, { action: "lead.stage", resourceType: "lead", resourceId: leadId, leadId, detail: { from: lead.stage, to: stage }, at: now });
   return next;
 }
 
-export function exitLead(db: Db, actor: AuditActor, leadId: string, reason: ExitReason, note?: string, now = new Date()): Lead {
-  const next = db.leads.update(leadId, { exit: { reason, at: now.toISOString(), note } });
-  audit(db, actor, { action: "lead.exit", resourceType: "lead", resourceId: leadId, leadId, detail: { reason }, at: now });
+export async function exitLead(db: Db, actor: AuditActor, leadId: string, reason: ExitReason, note?: string, now = new Date()): Promise<Lead> {
+  const next = await db.leads.update(leadId, { exit: { reason, at: now.toISOString(), note } });
+  await audit(db, actor, { action: "lead.exit", resourceType: "lead", resourceId: leadId, leadId, detail: { reason }, at: now });
   return next;
 }
 
@@ -164,10 +163,10 @@ export interface IntakeUpdate {
 }
 
 /** Intake edits. Changing the conflict parties resets clearance, because the check must be re-run. */
-export function updateIntake(db: Db, actor: Actor, leadId: string, update: IntakeUpdate, now = new Date()): Lead {
-  const lead = db.leads.get(leadId);
+export async function updateIntake(db: Db, actor: Actor, leadId: string, update: IntakeUpdate, now = new Date()): Promise<Lead> {
+  const lead = await db.leads.get(leadId);
   if (!lead) throw new Error("Lead not found");
-  assertCan(canOnLead(actor, "edit_intake", lead, db.assignments.list((a) => a.leadId === leadId), now));
+  assertCan(canOnLead(actor, "edit_intake", lead, await db.assignments.list(undefined, { leadId }), now));
   if (update.summary !== undefined && update.summary.split("\n").length > 5) {
     throw new Error("Keep the intake summary to five lines");
   }
@@ -190,8 +189,8 @@ export function updateIntake(db: Db, actor: Actor, leadId: string, update: Intak
     ? { ...lead.conflictCard, parties: update.conflictParties, clearance: "pending" as const }
     : lead.conflictCard;
   const urgent = intake.redFlags.length > 0 || intake.deadlines.some((d) => new Date(d.date).getTime() - now.getTime() < 7 * 86_400_000);
-  const next = db.leads.update(leadId, { intake, conflictCard, urgent, offerSummary: offerSummary({ ...lead, urgent }), intakeOwnerId: lead.intakeOwnerId ?? actor.userId });
-  audit(db, actor, { action: "intake.update", resourceType: "lead", resourceId: leadId, leadId, detail: { fields: Object.keys(update) }, at: now });
+  const next = await db.leads.update(leadId, { intake, conflictCard, urgent, offerSummary: offerSummary({ ...lead, urgent }), intakeOwnerId: lead.intakeOwnerId ?? actor.userId });
+  await audit(db, actor, { action: "intake.update", resourceType: "lead", resourceId: leadId, leadId, detail: { fields: Object.keys(update) }, at: now });
   return next;
 }
 
@@ -199,13 +198,13 @@ export function updateIntake(db: Db, actor: Actor, leadId: string, update: Intak
  * Records the result of the firm's conflict check. Under the in-firm structure the
  * firm runs its own conflict database against the card; this stores the answer.
  */
-export function recordConflictCheck(db: Db, actor: Actor, leadId: string, result: "clear" | "conflict", now = new Date()): Lead {
-  const lead = db.leads.get(leadId);
+export async function recordConflictCheck(db: Db, actor: Actor, leadId: string, result: "clear" | "conflict", now = new Date()): Promise<Lead> {
+  const lead = await db.leads.get(leadId);
   if (!lead) throw new Error("Lead not found");
   assertCan(actor.role === "platform_admin" || actor.role === "intake" || actor.role === "firm_admin", "Only intake or firm admins record conflict checks");
-  const next = db.leads.update(leadId, { conflictCard: { ...lead.conflictCard, clearance: result } });
-  audit(db, actor, { action: "conflict.check", resourceType: "lead", resourceId: leadId, leadId, detail: { result }, at: now });
-  if (result === "conflict") exitLead(db, actor, leadId, "conflict", undefined, now);
-  else if (lead.stage === "qualified" || lead.stage === "contacted" || lead.stage === "new") setStage(db, actor, leadId, "conflict_check", now);
-  return db.leads.get(leadId) ?? next;
+  const next = await db.leads.update(leadId, { conflictCard: { ...lead.conflictCard, clearance: result } });
+  await audit(db, actor, { action: "conflict.check", resourceType: "lead", resourceId: leadId, leadId, detail: { result }, at: now });
+  if (result === "conflict") await exitLead(db, actor, leadId, "conflict", undefined, now);
+  else if (lead.stage === "qualified" || lead.stage === "contacted" || lead.stage === "new") await setStage(db, actor, leadId, "conflict_check", now);
+  return await db.leads.get(leadId) ?? next;
 }

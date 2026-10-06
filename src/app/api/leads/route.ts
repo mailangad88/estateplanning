@@ -90,7 +90,7 @@ export async function POST(request: Request) {
   // loses the lead: the CRM delivery above has already succeeded.
   if (process.env.PORTAL_INGEST_LEADS === "true") {
     try {
-      ingestLead(getDb(), record, now);
+      await ingestLead(await getDb(), record, now);
     } catch (err) {
       console.error("portal ingest failed", { id: record.id, error: err instanceof Error ? err.message : String(err) });
     }

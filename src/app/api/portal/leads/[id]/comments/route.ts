@@ -6,6 +6,6 @@ export async function POST(request: Request, { params }: { params: Promise<{ id:
   const { id } = await params;
   return withActor(request, async ({ db, actor }) => {
     const body = await readJson<{ body: string; visibility?: Visibility; parentId?: string }>(request);
-    return addComment(db, actor, { leadId: id, body: String(body.body ?? ""), visibility: body.visibility, parentId: body.parentId });
+    return await addComment(db, actor, { leadId: id, body: String(body.body ?? ""), visibility: body.visibility, parentId: body.parentId });
   });
 }

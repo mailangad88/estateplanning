@@ -50,8 +50,8 @@ export class CrmSync {
     }
   }
 
-  private record(db: Db, operation: string, leadId: string, ok: boolean) {
-    audit(db, "system", {
+  private async record(db: Db, operation: string, leadId: string, ok: boolean) {
+    await audit(db, "system", {
       action: "crm.sync",
       resourceType: "lead",
       resourceId: leadId,
@@ -63,26 +63,26 @@ export class CrmSync {
   private async run<T>(db: Db, operation: string, leadId: string, fn: () => Promise<T>): Promise<T> {
     try {
       const out = await this.retry(fn);
-      this.record(db, operation, leadId, true);
+      await this.record(db, operation, leadId, true);
       return out;
     } catch (err) {
-      this.record(db, operation, leadId, false);
+      await this.record(db, operation, leadId, false);
       throw err;
     }
   }
 
   /** Creates contact and matter once. Returns the matter id; later calls return the stored one. */
   async syncLead(db: Db, leadId: string): Promise<{ matterId: string; created: boolean }> {
-    const lead = db.leads.get(leadId);
+    const lead = await db.leads.get(leadId);
     if (!lead) throw new Error(`lead not found: ${leadId}`);
     if (lead.crmId) return { matterId: lead.crmId, created: false };
-    const person = db.persons.get(lead.personId);
+    const person = await db.persons.get(lead.personId);
     if (!person) throw new Error(`person not found for lead ${leadId}`);
     const matterId = await this.run(db, "upsertLead", leadId, async () => {
       const { contactId } = await this.adapter.upsertContact(person, lead);
       return (await this.adapter.upsertMatter(lead, person, { contactId })).matterId;
     });
-    db.leads.update(leadId, { crmId: matterId });
+    await db.leads.update(leadId, { crmId: matterId });
     return { matterId, created: true };
   }
 
@@ -90,12 +90,12 @@ export class CrmSync {
   async syncStage(db: Db, leadId: string): Promise<void> {
     const { matterId, created } = await this.syncLead(db, leadId);
     if (created) return;
-    const lead = db.leads.get(leadId)!;
+    const lead = (await db.leads.get(leadId))!;
     await this.run(db, "setStage", leadId, () => this.adapter.setStage(matterId, lead.stage, lead.exit?.reason));
   }
 
   async syncActivity(db: Db, activityId: string): Promise<void> {
-    const activity = db.activities.get(activityId);
+    const activity = await db.activities.get(activityId);
     if (!activity) throw new Error(`activity not found: ${activityId}`);
     const { matterId } = await this.syncLead(db, activity.leadId);
     await this.run(db, "logActivity", activity.leadId, () => this.adapter.logActivity(matterId, activity));
@@ -103,7 +103,7 @@ export class CrmSync {
 
   /** Returns false (and sends nothing) unless the comment is firm-visible. */
   async syncComment(db: Db, commentId: string): Promise<boolean> {
-    const comment = db.comments.get(commentId);
+    const comment = await db.comments.get(commentId);
     if (!comment) throw new Error(`comment not found: ${commentId}`);
     if (comment.visibility !== "firm") return false;
     const { matterId } = await this.syncLead(db, comment.leadId);
@@ -113,7 +113,7 @@ export class CrmSync {
 
   /** Firm-visible, virus-scanned-clean documents only. */
   async syncDocument(db: Db, documentId: string): Promise<boolean> {
-    const doc = db.documents.get(documentId);
+    const doc = await db.documents.get(documentId);
     if (!doc) throw new Error(`document not found: ${documentId}`);
     if (doc.visibility !== "firm" || doc.scanStatus !== "clean") return false;
     if (!this.opts.documentUrl) throw new Error("documentUrl option required to sync documents");

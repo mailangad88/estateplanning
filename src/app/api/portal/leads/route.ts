@@ -4,8 +4,8 @@ import { withActor } from "@/server/http";
 
 /** Leads the signed-in user can see. Open offers list only non-confidential fields. */
 export async function GET(request: Request) {
-  return withActor(request, ({ db, actor }) => ({
-    leads: visibleLeads(db, actor).map(({ lead, access }) => ({
+  return withActor(request, async ({ db, actor }) => ({
+    leads: (await visibleLeads(db, actor)).map(({ lead, access }) => ({
       id: lead.id,
       access,
       matterType: MATTER_LABELS[lead.matterType],

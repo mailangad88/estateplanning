@@ -117,6 +117,9 @@ CREATE TABLE leads (
   client_choice_lawyer_ids  text[],
   crm_id                    text,
   intake_owner_id           text REFERENCES users(id),
+  capture                   jsonb,                           -- {tool, resource?, result?}: which site tool captured the lead
+  prior_tools               text[],                          -- capture tools this visitor used before, oldest first
+  visitor_id                text,                            -- browser id used to merge repeat submissions
   CHECK (assigned_lawyer_id IS NULL OR firm_id IS NOT NULL)
 );
 CREATE INDEX leads_assigned_lawyer_idx ON leads (assigned_lawyer_id) WHERE assigned_lawyer_id IS NOT NULL;
@@ -294,6 +297,16 @@ CREATE TABLE suppressions (
   at      timestamptz NOT NULL
 );
 
+-- Second factor per user (src/server/pg/mfa.ts). Secret encrypted by the app (AES-256-GCM).
+CREATE TABLE user_mfa (
+  user_id              text PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
+  totp_secret_enc      text NOT NULL,
+  last_used_step       bigint NOT NULL DEFAULT 0,
+  recovery_code_hashes text[] NOT NULL DEFAULT '{}',
+  enrolled_at          timestamptz,
+  created_at           timestamptz NOT NULL DEFAULT now()
+);
+
 -- Automation runner cursor (src/server/automation.ts). Only app_service touches it; no client data.
 CREATE TABLE automation_state (
   id         text PRIMARY KEY CHECK (id = 'automation'),
@@ -313,7 +326,7 @@ CREATE TABLE audit_events (
   resource_type text NOT NULL,
   resource_id   text NOT NULL,
   lead_id       text,                          -- deliberately no FK: the trail outlives the lead
-  detail        jsonb,
+  detail        json,                          -- json, not jsonb: the hash covers the exact key order
   prev_hash     text NOT NULL,
   hash          text NOT NULL
 );
@@ -674,5 +687,11 @@ GRANT INSERT ON audit_events TO app_service;
 GRANT SELECT ON audit_events TO app_service;
 CREATE POLICY audit_events_service_read ON audit_events FOR SELECT TO app_service USING (true);
 GRANT SELECT, INSERT, UPDATE ON automation_state TO app_service;
+
+-- Only the service role reads or writes second-factor secrets; app_user has no grant at all.
+ALTER TABLE user_mfa ENABLE ROW LEVEL SECURITY;
+ALTER TABLE user_mfa FORCE ROW LEVEL SECURITY;
+CREATE POLICY user_mfa_service ON user_mfa FOR ALL TO app_service USING (true) WITH CHECK (true);
+GRANT SELECT, INSERT, UPDATE ON user_mfa TO app_service;
 
 COMMIT;

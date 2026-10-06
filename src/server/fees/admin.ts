@@ -73,20 +73,20 @@ export const feeRuleInput = z.object({
 });
 export type FeeRuleInput = z.infer<typeof feeRuleInput>;
 
-export function ruleHistory(db: Db, ruleId: string): FeeRuleVersion[] {
-  return db.feeRuleVersions.list((v) => v.ruleId === ruleId).sort((a, b) => a.version - b.version);
+export async function ruleHistory(db: Db, ruleId: string): Promise<FeeRuleVersion[]> {
+  return (await db.feeRuleVersions.list((v) => v.ruleId === ruleId)).sort((a, b) => a.version - b.version);
 }
 
-export function currentRuleVersions(db: Db): FeeRuleVersion[] {
+export async function currentRuleVersions(db: Db): Promise<FeeRuleVersion[]> {
   const latest = new Map<string, FeeRuleVersion>();
-  for (const v of db.feeRuleVersions.list()) {
+  for (const v of await db.feeRuleVersions.list()) {
     const cur = latest.get(v.ruleId);
     if (!cur || v.version > cur.version) latest.set(v.ruleId, v);
   }
   return [...latest.values()].sort((a, b) => a.ruleId.localeCompare(b.ruleId));
 }
 
-function writeVersion(
+async function writeVersion(
   db: Db,
   actorId: string,
   rule: FeeRule,
@@ -94,11 +94,11 @@ function writeVersion(
   reason: string,
   /** undefined keeps the previous version's counsel record; null clears it */
   counsel?: FeeRuleVersion["counsel"] | null,
-): FeeRuleVersion {
-  const prev = ruleHistory(db, rule.id).at(-1);
+): Promise<FeeRuleVersion> {
+  const prev = (await ruleHistory(db, rule.id)).at(-1);
   const version = (prev?.version ?? 0) + 1;
   const check = checkRule(rule, structure);
-  return db.feeRuleVersions.insert({
+  return await db.feeRuleVersions.insert({
     id: `${rule.id}@${version}`,
     ruleId: rule.id,
     version,
@@ -113,9 +113,9 @@ function writeVersion(
 }
 
 /** Loads the starting rules from config once, as version 1 by "system". */
-export function seedFeeRules(db: Db, rules: FeeRule[], structure: BusinessStructure): void {
+export async function seedFeeRules(db: Db, rules: FeeRule[], structure: BusinessStructure): Promise<void> {
   for (const rule of rules) {
-    if (ruleHistory(db, rule.id).length === 0) writeVersion(db, "system", rule, structure, "Initial configuration");
+    if ((await ruleHistory(db, rule.id)).length === 0) await writeVersion(db, "system", rule, structure, "Initial configuration");
   }
 }
 
@@ -124,23 +124,23 @@ export function seedFeeRules(db: Db, rules: FeeRule[], structure: BusinessStruct
  * changed rule that needs counsel approval loses its previous approval, because
  * counsel approved specific terms.
  */
-export function saveFeeRule(
+export async function saveFeeRule(
   db: Db,
   actor: Actor,
   input: FeeRuleInput,
   reason: string,
   structure: BusinessStructure,
-): FeeRuleVersion {
+): Promise<FeeRuleVersion> {
   assertCan(can(actor, "manage_fee_rules"), "Only platform admins can edit fee rules");
   if (!reason.trim()) throw new Error("A reason is required for every fee rule change");
   const parsed = feeRuleInput.parse(input);
   if (parsed.effectiveTo && parsed.effectiveTo <= parsed.effectiveFrom) throw new Error("End date must be after the start date");
-  const prev = ruleHistory(db, parsed.id).at(-1);
+  const prev = (await ruleHistory(db, parsed.id)).at(-1);
   const { counselApprovedAt: _dropped, ...prevTerms } = prev?.rule ?? ({} as FeeRule);
   const termsUnchanged = prev && JSON.stringify(prevTerms) === JSON.stringify(parsed);
   const rule: FeeRule = { ...parsed, counselApprovedAt: termsUnchanged ? prev?.rule.counselApprovedAt : undefined };
-  const v = writeVersion(db, actor.userId, rule, structure, reason, termsUnchanged ? prev?.counsel : null);
-  audit(db, actor, { action: "fee_rule.save", resourceType: "fee_rule", resourceId: v.id, detail: { billable: v.billable } });
+  const v = await writeVersion(db, actor.userId, rule, structure, reason, termsUnchanged ? prev?.counsel : null);
+  await audit(db, actor, { action: "fee_rule.save", resourceType: "fee_rule", resourceId: v.id, detail: { billable: v.billable } });
   return v;
 }
 
@@ -148,15 +148,15 @@ export function saveFeeRule(
  * Records that ethics counsel approved a rule under the current structure.
  * Refused outright for fee types the structure prohibits: no approval unlocks those.
  */
-export function recordCounselApproval(
+export async function recordCounselApproval(
   db: Db,
   actor: Actor,
   ruleId: string,
   counsel: { name: string; opinionRef: string; approvedOn: string },
   structure: BusinessStructure,
-): FeeRuleVersion {
+): Promise<FeeRuleVersion> {
   assertCan(can(actor, "approve_fee_rule"), "Only platform admins can record counsel approval");
-  const prev = ruleHistory(db, ruleId).at(-1);
+  const prev = (await ruleHistory(db, ruleId)).at(-1);
   if (!prev) throw new Error(`No fee rule ${ruleId}`);
   const permission = feePermission(prev.rule.feeType, structure);
   if (permission === "prohibited") {
@@ -165,29 +165,30 @@ export function recordCounselApproval(
   if (!counsel.name.trim() || !counsel.opinionRef.trim()) throw new Error("Counsel name and opinion reference are required");
   isoDate.parse(counsel.approvedOn);
   const rule: FeeRule = { ...prev.rule, counselApprovedAt: counsel.approvedOn };
-  const v = writeVersion(db, actor.userId, rule, structure, `Counsel approval recorded (${counsel.opinionRef})`, {
+  const v = await writeVersion(db, actor.userId, rule, structure, `Counsel approval recorded (${counsel.opinionRef})`, {
     name: counsel.name,
     opinionRef: counsel.opinionRef,
   });
-  audit(db, actor, { action: "fee_rule.counsel_approval", resourceType: "fee_rule", resourceId: v.id, detail: { billable: v.billable } });
+  await audit(db, actor, { action: "fee_rule.counsel_approval", resourceType: "fee_rule", resourceId: v.id, detail: { billable: v.billable } });
   return v;
 }
 
-export function recordBillableEvent(db: Db, event: Omit<BillableEvent, "id"> & { id?: string }): BillableEvent {
-  return db.billableEvents.insert({ ...event, id: event.id ?? randomUUID() });
+export async function recordBillableEvent(db: Db, event: Omit<BillableEvent, "id"> & { id?: string }): Promise<BillableEvent> {
+  return await db.billableEvents.insert({ ...event, id: event.id ?? randomUUID() });
 }
 
-function eventsFor(db: Db, firmId: string, periodStart: string, periodEnd: string, lawyerFirm: (lawyerId: string) => string | undefined) {
-  return db.billableEvents.list((e) => {
+async function eventsFor(db: Db, firmId: string, periodStart: string, periodEnd: string, lawyerFirm: Map<string, string>) {
+  return await db.billableEvents.list((e) => {
     const day = e.occurredAt.slice(0, 10);
     if (day < periodStart || day >= periodEnd) return false;
-    return !e.lawyerId || lawyerFirm(e.lawyerId) === firmId;
+    return !e.lawyerId || lawyerFirm.get(e.lawyerId) === firmId;
   });
 }
 
-export function previewInvoice(db: Db, firmId: string, periodStart: string, periodEnd: string, structure: BusinessStructure) {
-  const versions = currentRuleVersions(db);
-  const events = eventsFor(db, firmId, periodStart, periodEnd, (id) => db.lawyers.get(id)?.firmId);
+export async function previewInvoice(db: Db, firmId: string, periodStart: string, periodEnd: string, structure: BusinessStructure) {
+  const versions = await currentRuleVersions(db);
+  const lawyerFirm = new Map((await db.lawyers.list()).map((l) => [l.id, l.firmId]));
+  const events = await eventsFor(db, firmId, periodStart, periodEnd, lawyerFirm);
   const result = computeCharges(events, versions.map((v) => v.rule), structure);
   const versionOf = new Map(versions.map((v) => [v.ruleId, v.id]));
   const lines: InvoiceLine[] = result.lines.map((l) => ({ ...l, ruleVersionId: versionOf.get(l.ruleId)! }));
@@ -195,17 +196,17 @@ export function previewInvoice(db: Db, firmId: string, periodStart: string, peri
 }
 
 /** Creates a draft invoice. An admin reviews and approves it before anything is sent. */
-export function createInvoice(
+export async function createInvoice(
   db: Db,
   actor: Actor,
   firmId: string,
   periodStart: string,
   periodEnd: string,
   structure: BusinessStructure,
-): Invoice {
+): Promise<Invoice> {
   assertCan(can(actor, "manage_fee_rules"));
-  const p = previewInvoice(db, firmId, periodStart, periodEnd, structure);
-  const invoice = db.invoices.insert({
+  const p = await previewInvoice(db, firmId, periodStart, periodEnd, structure);
+  const invoice = await db.invoices.insert({
     id: randomUUID(),
     firmId,
     periodStart,
@@ -219,31 +220,31 @@ export function createInvoice(
     createdBy: actor.userId,
     credits: [],
   });
-  audit(db, actor, { action: "invoice.create", resourceType: "invoice", resourceId: invoice.id, detail: { totalCents: invoice.totalCents } });
+  await audit(db, actor, { action: "invoice.create", resourceType: "invoice", resourceId: invoice.id, detail: { totalCents: invoice.totalCents } });
   return invoice;
 }
 
 /** Credits a line, for example a duplicate or out-of-area lead. Only on a draft invoice. */
-export function creditInvoiceLine(db: Db, actor: Actor, invoiceId: string, eventId: string, reason: string): Invoice {
+export async function creditInvoiceLine(db: Db, actor: Actor, invoiceId: string, eventId: string, reason: string): Promise<Invoice> {
   assertCan(can(actor, "manage_fee_rules"));
-  const inv = db.invoices.get(invoiceId);
+  const inv = await db.invoices.get(invoiceId);
   if (!inv) throw new Error("Invoice not found");
   if (inv.status !== "draft") throw new Error("Only draft invoices can be credited; issue a credit note instead");
   const amount = inv.lines.filter((l) => l.eventId === eventId).reduce((s, l) => s + l.amountCents, 0);
   if (amount === 0) throw new Error("No billed line for that event");
   if (inv.credits.some((c) => c.eventId === eventId)) throw new Error("That event is already credited");
   const credits = [...inv.credits, { eventId, reason, amountCents: amount }];
-  const next = db.invoices.update(invoiceId, { credits, totalCents: inv.totalCents - amount });
-  audit(db, actor, { action: "invoice.credit", resourceType: "invoice", resourceId: invoiceId, detail: { eventId, amountCents: amount } });
+  const next = await db.invoices.update(invoiceId, { credits, totalCents: inv.totalCents - amount });
+  await audit(db, actor, { action: "invoice.credit", resourceType: "invoice", resourceId: invoiceId, detail: { eventId, amountCents: amount } });
   return next;
 }
 
-export function approveInvoice(db: Db, actor: Actor, invoiceId: string): Invoice {
+export async function approveInvoice(db: Db, actor: Actor, invoiceId: string): Promise<Invoice> {
   assertCan(can(actor, "manage_fee_rules"));
-  const inv = db.invoices.get(invoiceId);
+  const inv = await db.invoices.get(invoiceId);
   if (!inv) throw new Error("Invoice not found");
   if (inv.status !== "draft") throw new Error(`Invoice is ${inv.status}`);
-  const next = db.invoices.update(invoiceId, { status: "approved", approvedBy: actor.userId });
-  audit(db, actor, { action: "invoice.approve", resourceType: "invoice", resourceId: invoiceId });
+  const next = await db.invoices.update(invoiceId, { status: "approved", approvedBy: actor.userId });
+  await audit(db, actor, { action: "invoice.approve", resourceType: "invoice", resourceId: invoiceId });
   return next;
 }
