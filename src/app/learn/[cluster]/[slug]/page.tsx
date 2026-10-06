@@ -11,7 +11,10 @@ import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
 import { getAllArticles, getArticle, getCluster, getGlossaryEntry, getRelated , isIndexable } from "@/lib/library";
 import ToolsBox from "@/components/ToolsBox";
-import { siteLinksFor, toolsFor } from "@/lib/site-links";
+import { isSensitiveLibraryPage, magnetsForLibrary, siteLinksFor, toolsFor } from "@/lib/site-links";
+import MagnetOptIn from "@/components/MagnetOptIn";
+import { SensitiveMarker } from "@/components/capture";
+import { MAGNET_FORMATS } from "@/lib/magnets";
 import { articleSchema, breadcrumbSchema, faqSchema, graph } from "@/lib/schema";
 
 type Params = { cluster: string; slug: string };
@@ -51,6 +54,10 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
   ];
   const related = getRelated(a);
   const terms = a.glossary.map(getGlossaryEntry).filter((g) => g !== undefined);
+  const sensitive = isSensitiveLibraryPage(clusterSlug, slug);
+  const offers = magnetsForLibrary(a.url, clusterSlug);
+  const lead = sensitive ? undefined : offers[0];
+  const moreOffers = lead ? offers.slice(1) : offers;
 
   return (
     <article className="content">
@@ -63,6 +70,31 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
       <div className="prose" dangerouslySetInnerHTML={{ __html: a.html }} />
       <ToolsBox items={toolsFor(clusterSlug)} />
       <Faqs faqs={a.faqs} />
+      {sensitive && <SensitiveMarker />}
+      {lead && (
+        <section className="magnet-callout">
+          <MagnetOptIn
+            magnet={{ slug: lead.slug, title: lead.title, format: lead.format, formatLabel: MAGNET_FORMATS[lead.format], tag: lead.tag, sequence: lead.sequence }}
+            heading={`Free ${MAGNET_FORMATS[lead.format].toLowerCase()}: ${lead.title}`}
+          />
+        </section>
+      )}
+      {moreOffers.length > 0 && (
+        <section aria-labelledby="free-resources">
+          <h2 id="free-resources">{lead ? "More free resources on this topic" : "Free resources on this topic"}</h2>
+          <ul className="cards">
+            {moreOffers.map((o) => (
+              <li key={o.slug}>
+                <Link href={`/free/${o.slug}`} className="card-link">
+                  <span className="tag">Free {MAGNET_FORMATS[o.format].toLowerCase()}</span>
+                  <strong>{o.title}</strong>
+                  <span className="card-desc">{o.promise}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       <CtaBox topic={cluster.name} />
       {terms.length > 0 && (
         <section className="terms" aria-labelledby="terms">

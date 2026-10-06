@@ -323,7 +323,7 @@
   ],
   "cta": {
    "text": "Get the probate checklist or book a consultation",
-   "url": "{{SITE_URL}}/probate-checklist?utm_source=video&utm_medium=remotion&utm_campaign=probate-timeline",
+   "url": "{{SITE_URL}}/free/executor-roadmap?utm_source=video&utm_medium=remotion&utm_campaign=probate-timeline",
    "cardSceneId": "s8-cta"
   },
   "disclaimer": {
@@ -347,7 +347,7 @@
   },
   "youtube": {
    "title": "The probate timeline, animated | {{FIRM_SHORT_NAME}}",
-   "description": "A slow, honest walk through the usual phases of probate, from opening the case to closing the estate, with every state-specific window marked as varying.\n\nChapters:\n0:00 Intro\n0:11 Weeks 1 to 4: open the case\n0:23 Months 1 to 4: notices and claims\n0:33 Inventory, appraise, pay debts\n0:42 Tax returns\n0:53 Distribution\n1:04 Closed: simple vs\n1:16 Next step\n\nNext step: Get the probate checklist or book a consultation: {{SITE_URL}}/probate-checklist?utm_source=video&utm_medium=remotion&utm_campaign=probate-timeline\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/the-probate-timeline-animated",
+   "description": "A slow, honest walk through the usual phases of probate, from opening the case to closing the estate, with every state-specific window marked as varying.\n\nChapters:\n0:00 Intro\n0:11 Weeks 1 to 4: open the case\n0:23 Months 1 to 4: notices and claims\n0:33 Inventory, appraise, pay debts\n0:42 Tax returns\n0:53 Distribution\n1:04 Closed: simple vs\n1:16 Next step\n\nNext step: Get the probate checklist or book a consultation: {{SITE_URL}}/free/executor-roadmap?utm_source=video&utm_medium=remotion&utm_campaign=probate-timeline\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/the-probate-timeline-animated",
    "chapters": [
     {
      "time": "0:00",
@@ -520,7 +520,7 @@
   ],
   "cta": {
    "text": "Get the trust funding checklist",
-   "url": "{{SITE_URL}}/trust-funding-checklist?utm_source=video&utm_medium=remotion&utm_campaign=rlt-diagram",
+   "url": "{{SITE_URL}}/free/trust-funding-checklist?utm_source=video&utm_medium=remotion&utm_campaign=rlt-diagram",
    "cardSceneId": "s7-cta"
   },
   "disclaimer": {
@@ -544,7 +544,7 @@
   },
   "youtube": {
    "title": "How a revocable living trust works | {{FIRM_SHORT_NAME}}",
-   "description": "A diagram-first explanation of the roles in a revocable living trust, why funding matters, and what happens at incapacity and at death.\n\nChapters:\n0:00 Intro\n0:10 Grantor\n0:24 Funding: retitle the assets\n0:37 Incapacity: successor trustee steps in\n0:49 At death: assets pass as written\n1:01 Retirement accounts: beneficiary form\n1:16 Next step\n\nNext step: Get the trust funding checklist: {{SITE_URL}}/trust-funding-checklist?utm_source=video&utm_medium=remotion&utm_campaign=rlt-diagram\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/how-a-revocable-living-trust-works",
+   "description": "A diagram-first explanation of the roles in a revocable living trust, why funding matters, and what happens at incapacity and at death.\n\nChapters:\n0:00 Intro\n0:10 Grantor\n0:24 Funding: retitle the assets\n0:37 Incapacity: successor trustee steps in\n0:49 At death: assets pass as written\n1:01 Retirement accounts: beneficiary form\n1:16 Next step\n\nNext step: Get the trust funding checklist: {{SITE_URL}}/free/trust-funding-checklist?utm_source=video&utm_medium=remotion&utm_campaign=rlt-diagram\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/how-a-revocable-living-trust-works",
    "chapters": [
     {
      "time": "0:00",
@@ -712,7 +712,7 @@
   ],
   "cta": {
    "text": "Read the elder planning guide",
-   "url": "{{SITE_URL}}/elder-planning-guide?utm_source=video&utm_medium=remotion&utm_campaign=medicaid-lookback",
+   "url": "{{SITE_URL}}/free/long-term-care-planning-primer?utm_source=video&utm_medium=remotion&utm_campaign=medicaid-lookback",
    "cardSceneId": "s7-cta"
   },
   "disclaimer": {
@@ -736,7 +736,7 @@
   },
   "youtube": {
    "title": "The Medicaid five-year look-back, explained | {{FIRM_SHORT_NAME}}",
-   "description": "What Medicaid's 60-month look-back is, why it exists, what counts as a transfer, and why you should talk to an elder law attorney before moving anything.\n\nChapters:\n0:00 Intro\n0:10 Medicare: not long-term care\n0:21 Gifts in the window can mean a penalty period\n0:33 What can count\n0:42 Exceptions exist\n0:54 Early planning = more options\n1:02 Next step\n\nNext step: Read the elder planning guide: {{SITE_URL}}/elder-planning-guide?utm_source=video&utm_medium=remotion&utm_campaign=medicaid-lookback\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/the-medicaid-five-year-look-back-explained",
+   "description": "What Medicaid's 60-month look-back is, why it exists, what counts as a transfer, and why you should talk to an elder law attorney before moving anything.\n\nChapters:\n0:00 Intro\n0:10 Medicare: not long-term care\n0:21 Gifts in the window can mean a penalty period\n0:33 What can count\n0:42 Exceptions exist\n0:54 Early planning = more options\n1:02 Next step\n\nNext step: Read the elder planning guide: {{SITE_URL}}/free/long-term-care-planning-primer?utm_source=video&utm_medium=remotion&utm_campaign=medicaid-lookback\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/the-medicaid-five-year-look-back-explained",
    "chapters": [
     {
      "time": "0:00",
@@ -921,7 +921,7 @@
   ],
   "cta": {
    "text": "Get the special needs trust guide",
-   "url": "{{SITE_URL}}/special-needs-trust-guide?utm_source=video&utm_medium=remotion&utm_campaign=snt-explainer",
+   "url": "{{SITE_URL}}/free/special-needs-family-roadmap?utm_source=video&utm_medium=remotion&utm_campaign=snt-explainer",
    "cardSceneId": "s7-cta"
   },
   "disclaimer": {
@@ -945,7 +945,7 @@
   },
   "youtube": {
    "title": "Special needs trust: how a gift can protect benefits | {{FIRM_SHORT_NAME}}",
-   "description": "Why a direct inheritance can threaten SSI and Medicaid, and how a special needs trust can hold money for extras without replacing benefits.\n\nChapters:\n0:00 Intro\n0:10 SSI resource limit: {{usdShort:ssiResourceLimitIndividual}} (individual)\n0:24 Trust holds it\n0:33 Supplements, doesn't replace\n0:42 Third-party vs\n0:52 Letter of intent\n1:02 Next step\n\nNext step: Get the special needs trust guide: {{SITE_URL}}/special-needs-trust-guide?utm_source=video&utm_medium=remotion&utm_campaign=snt-explainer\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/special-needs-trust-how-a-gift-can-protect-benefits",
+   "description": "Why a direct inheritance can threaten SSI and Medicaid, and how a special needs trust can hold money for extras without replacing benefits.\n\nChapters:\n0:00 Intro\n0:10 SSI resource limit: {{usdShort:ssiResourceLimitIndividual}} (individual)\n0:24 Trust holds it\n0:33 Supplements, doesn't replace\n0:42 Third-party vs\n0:52 Letter of intent\n1:02 Next step\n\nNext step: Get the special needs trust guide: {{SITE_URL}}/free/special-needs-family-roadmap?utm_source=video&utm_medium=remotion&utm_campaign=snt-explainer\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/special-needs-trust-how-a-gift-can-protect-benefits",
    "chapters": [
     {
      "time": "0:00",
@@ -1093,7 +1093,7 @@
   ],
   "cta": {
    "text": "Download the beneficiary checklist",
-   "url": "{{SITE_URL}}/beneficiary-checklist?utm_source=video&utm_medium=remotion&utm_campaign=beneficiary-form",
+   "url": "{{SITE_URL}}/free/beneficiary-designation-audit?utm_source=video&utm_medium=remotion&utm_campaign=beneficiary-form",
    "cardSceneId": "s5-cta"
   },
   "disclaimer": {
@@ -1117,7 +1117,7 @@
   },
   "youtube": {
    "title": "Why your beneficiary form beats your will | {{FIRM_SHORT_NAME}}",
-   "description": "Retirement accounts and life insurance usually pass by the named beneficiary, not by the will. Check your forms.\n\nChapters:\n0:00 Intro\n0:08 Accounts pass to the named beneficiary\n0:19 Old forms cause surprises\n0:28 Check\n0:36 Next step\n\nNext step: Download the beneficiary checklist: {{SITE_URL}}/beneficiary-checklist?utm_source=video&utm_medium=remotion&utm_campaign=beneficiary-form\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/why-your-beneficiary-form-beats-your-will",
+   "description": "Retirement accounts and life insurance usually pass by the named beneficiary, not by the will. Check your forms.\n\nChapters:\n0:00 Intro\n0:08 Accounts pass to the named beneficiary\n0:19 Old forms cause surprises\n0:28 Check\n0:36 Next step\n\nNext step: Download the beneficiary checklist: {{SITE_URL}}/free/beneficiary-designation-audit?utm_source=video&utm_medium=remotion&utm_campaign=beneficiary-form\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/why-your-beneficiary-form-beats-your-will",
    "chapters": [
     {
      "time": "0:00",
@@ -1260,7 +1260,7 @@
   ],
   "cta": {
    "text": "Get the guide to choosing your people",
-   "url": "{{SITE_URL}}/choosing-fiduciaries-guide?utm_source=video&utm_medium=remotion&utm_campaign=roles-explainer",
+   "url": "{{SITE_URL}}/checklists/choosing-an-executor-worksheet?utm_source=video&utm_medium=remotion&utm_campaign=roles-explainer",
    "cardSceneId": "s6-cta"
   },
   "disclaimer": {
@@ -1284,7 +1284,7 @@
   },
   "youtube": {
    "title": "Executor vs trustee vs power of attorney: who does what | {{FIRM_SHORT_NAME}}",
-   "description": "Three roles people mix up, explained by when each one acts: after death, over a trust, or while you are alive and unable to act.\n\nChapters:\n0:00 Intro\n0:08 Executor: after death\n0:18 Trustee: manages the trust\n0:29 Power of attorney: while alive\n0:40 Health care directive: medical choices\n0:48 Next step\n\nNext step: Get the guide to choosing your people: {{SITE_URL}}/choosing-fiduciaries-guide?utm_source=video&utm_medium=remotion&utm_campaign=roles-explainer\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/executor-vs-trustee-vs-power-of-attorney",
+   "description": "Three roles people mix up, explained by when each one acts: after death, over a trust, or while you are alive and unable to act.\n\nChapters:\n0:00 Intro\n0:08 Executor: after death\n0:18 Trustee: manages the trust\n0:29 Power of attorney: while alive\n0:40 Health care directive: medical choices\n0:48 Next step\n\nNext step: Get the guide to choosing your people: {{SITE_URL}}/checklists/choosing-an-executor-worksheet?utm_source=video&utm_medium=remotion&utm_campaign=roles-explainer\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/executor-vs-trustee-vs-power-of-attorney",
    "chapters": [
     {
      "time": "0:00",
@@ -1647,7 +1647,7 @@
   ],
   "cta": {
    "text": "Get the funding checklist",
-   "url": "{{SITE_URL}}/trust-funding-checklist?utm_source=video&utm_medium=remotion&utm_campaign=funding-six-assets",
+   "url": "{{SITE_URL}}/free/trust-funding-checklist?utm_source=video&utm_medium=remotion&utm_campaign=funding-six-assets",
    "cardSceneId": "s8-cta"
   },
   "disclaimer": {
@@ -1671,7 +1671,7 @@
   },
   "youtube": {
    "title": "Funding your trust: the six assets to retitle | {{FIRM_SHORT_NAME}}",
-   "description": "A trust only controls what is in it. Six asset types to check: real estate, bank accounts, brokerage accounts, retirement accounts, life insurance, and personal property.\n\nChapters:\n0:00 Intro\n0:08 1\n0:18 2\n0:27 3\n0:35 4\n0:47 5\n0:55 6\n1:04 Next step\n\nNext step: Get the funding checklist: {{SITE_URL}}/trust-funding-checklist?utm_source=video&utm_medium=remotion&utm_campaign=funding-six-assets\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/funding-your-trust-the-six-assets-to-retitle",
+   "description": "A trust only controls what is in it. Six asset types to check: real estate, bank accounts, brokerage accounts, retirement accounts, life insurance, and personal property.\n\nChapters:\n0:00 Intro\n0:08 1\n0:18 2\n0:27 3\n0:35 4\n0:47 5\n0:55 6\n1:04 Next step\n\nNext step: Get the funding checklist: {{SITE_URL}}/free/trust-funding-checklist?utm_source=video&utm_medium=remotion&utm_campaign=funding-six-assets\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/funding-your-trust-the-six-assets-to-retitle",
    "chapters": [
     {
      "time": "0:00",
@@ -1825,7 +1825,7 @@
   ],
   "cta": {
    "text": "Book a consultation",
-   "url": "{{SITE_URL}}/consultation?utm_source=video&utm_medium=remotion&utm_campaign=probate-vs-trust",
+   "url": "{{SITE_URL}}/intake?utm_source=video&utm_medium=remotion&utm_campaign=probate-vs-trust",
    "cardSceneId": "s6-cta"
   },
   "disclaimer": {
@@ -1849,7 +1849,7 @@
   },
   "youtube": {
    "title": "Probate vs trust: cost and time comparison | {{FIRM_SHORT_NAME}}",
-   "description": "An honest side-by-side of probate and trust administration: time, cost, privacy, and effort, with state variation flagged.\n\nChapters:\n0:00 Intro\n0:05 Time: months to a year+ vs\n0:18 Cost: court + attorney fees vs\n0:33 Privacy: public vs\n0:39 Effort: trusts need funding\n0:50 Next step\n\nNext step: Book a consultation: {{SITE_URL}}/consultation?utm_source=video&utm_medium=remotion&utm_campaign=probate-vs-trust\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/probate-vs-trust-cost-and-time",
+   "description": "An honest side-by-side of probate and trust administration: time, cost, privacy, and effort, with state variation flagged.\n\nChapters:\n0:00 Intro\n0:05 Time: months to a year+ vs\n0:18 Cost: court + attorney fees vs\n0:33 Privacy: public vs\n0:39 Effort: trusts need funding\n0:50 Next step\n\nNext step: Book a consultation: {{SITE_URL}}/intake?utm_source=video&utm_medium=remotion&utm_campaign=probate-vs-trust\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/probate-vs-trust-cost-and-time",
    "chapters": [
     {
      "time": "0:00",
@@ -1997,7 +1997,7 @@
   ],
   "cta": {
    "text": "Get the guardian guide",
-   "url": "{{SITE_URL}}/guardianship-guide?utm_source=video&utm_medium=remotion&utm_campaign=guardianship",
+   "url": "{{SITE_URL}}/free/guardian-for-your-kids-worksheet?utm_source=video&utm_medium=remotion&utm_campaign=guardianship",
    "cardSceneId": "s6-cta"
   },
   "disclaimer": {
@@ -2021,7 +2021,7 @@
   },
   "youtube": {
    "title": "Guardianship for minor children: how courts decide | {{FIRM_SHORT_NAME}}",
-   "description": "How a court picks a guardian when parents have not named one, and what naming guardians in a will changes.\n\nChapters:\n0:00 Intro\n0:07 No nomination: the court decides, best interests of the chil\n0:18 Name a guardian in your will\n0:27 Name a backup\n0:36 Money: a trust can manage it\n0:50 Next step\n\nNext step: Get the guardian guide: {{SITE_URL}}/guardianship-guide?utm_source=video&utm_medium=remotion&utm_campaign=guardianship\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/guardianship-for-minor-children-how-courts-decide",
+   "description": "How a court picks a guardian when parents have not named one, and what naming guardians in a will changes.\n\nChapters:\n0:00 Intro\n0:07 No nomination: the court decides, best interests of the chil\n0:18 Name a guardian in your will\n0:27 Name a backup\n0:36 Money: a trust can manage it\n0:50 Next step\n\nNext step: Get the guardian guide: {{SITE_URL}}/free/guardian-for-your-kids-worksheet?utm_source=video&utm_medium=remotion&utm_campaign=guardianship\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/guardianship-for-minor-children-how-courts-decide",
    "chapters": [
     {
      "time": "0:00",
@@ -2233,7 +2233,7 @@
   ],
   "cta": {
    "text": "Download the first-30-days checklist, or call when you are ready",
-   "url": "{{SITE_URL}}/first-30-days-checklist?utm_source=video&utm_medium=remotion&utm_campaign=first-30-days",
+   "url": "{{SITE_URL}}/free/executor-first-30-days-guide?utm_source=video&utm_medium=remotion&utm_campaign=first-30-days",
    "cardSceneId": "s11-cta"
   },
   "disclaimer": {
@@ -2257,7 +2257,7 @@
   },
   "youtube": {
    "title": "First 30 days after a loved one dies: a calm checklist | {{FIRM_SHORT_NAME}}",
-   "description": "A gentle, practical checklist for the first month: what truly cannot wait, what can wait, and when to ask for help. No pressure and no sales language.\n\nChapters:\n0:00 Intro\n0:13 Days 1 to 3: death certificates\n0:24 Secure home, pets, mail\n0:35 Locate the will and key papers\n0:48 Weeks 1 to 2: talk to an attorney if needed\n1:00 Keep essentials current\n1:11 Weeks 3 to 4: claim forms and beneficiary checks\n1:23 Pause big decisions\n1:32 Court deadlines vary\n1:42 Ask for help\n1:48 Next step\n\nNext step: Download the first-30-days checklist, or call when you are ready: {{SITE_URL}}/first-30-days-checklist?utm_source=video&utm_medium=remotion&utm_campaign=first-30-days\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/first-30-days-after-a-loved-one-dies",
+   "description": "A gentle, practical checklist for the first month: what truly cannot wait, what can wait, and when to ask for help. No pressure and no sales language.\n\nChapters:\n0:00 Intro\n0:13 Days 1 to 3: death certificates\n0:24 Secure home, pets, mail\n0:35 Locate the will and key papers\n0:48 Weeks 1 to 2: talk to an attorney if needed\n1:00 Keep essentials current\n1:11 Weeks 3 to 4: claim forms and beneficiary checks\n1:23 Pause big decisions\n1:32 Court deadlines vary\n1:42 Ask for help\n1:48 Next step\n\nNext step: Download the first-30-days checklist, or call when you are ready: {{SITE_URL}}/free/executor-first-30-days-guide?utm_source=video&utm_medium=remotion&utm_campaign=first-30-days\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/first-30-days-after-a-loved-one-dies",
    "chapters": [
     {
      "time": "0:00",
@@ -2442,7 +2442,7 @@
   ],
   "cta": {
    "text": "Book an estate tax review",
-   "url": "{{SITE_URL}}/consultation?utm_source=video&utm_medium=remotion&utm_campaign=estate-tax-thresholds",
+   "url": "{{SITE_URL}}/intake?utm_source=video&utm_medium=remotion&utm_campaign=estate-tax-thresholds",
    "cardSceneId": "s7-cta"
   },
   "disclaimer": {
@@ -2466,7 +2466,7 @@
   },
   "youtube": {
    "title": "Estate tax thresholds explained | {{FIRM_SHORT_NAME}}",
-   "description": "The federal estate tax exemption for 2026, how portability works for married couples, and why some states have their own, lower thresholds. Config-driven; re-render every year.\n\nChapters:\n0:00 Intro\n0:10 Top federal rate: {{pct:topEstateTaxRate}}\n0:18 Portability: surviving spouse can use unused exemption\n0:32 Annual gift exclusion {{taxYear}}: {{usdShort:annualGiftExclusion}} per person\n0:45 State taxes: lower thresholds in some states\n0:54 Thresholds change\n1:06 Next step\n\nNext step: Book an estate tax review: {{SITE_URL}}/consultation?utm_source=video&utm_medium=remotion&utm_campaign=estate-tax-thresholds\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/estate-tax-thresholds-explained\n\nFigures reflect tax year 2026 and are re-verified yearly.",
+   "description": "The federal estate tax exemption for 2026, how portability works for married couples, and why some states have their own, lower thresholds. Config-driven; re-render every year.\n\nChapters:\n0:00 Intro\n0:10 Top federal rate: {{pct:topEstateTaxRate}}\n0:18 Portability: surviving spouse can use unused exemption\n0:32 Annual gift exclusion {{taxYear}}: {{usdShort:annualGiftExclusion}} per person\n0:45 State taxes: lower thresholds in some states\n0:54 Thresholds change\n1:06 Next step\n\nNext step: Book an estate tax review: {{SITE_URL}}/intake?utm_source=video&utm_medium=remotion&utm_campaign=estate-tax-thresholds\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/estate-tax-thresholds-explained\n\nFigures reflect tax year 2026 and are re-verified yearly.",
    "chapters": [
     {
      "time": "0:00",
@@ -2637,7 +2637,7 @@
   ],
   "cta": {
    "text": "Get the power of attorney guide",
-   "url": "{{SITE_URL}}/power-of-attorney-guide?utm_source=video&utm_medium=remotion&utm_campaign=poa-can-cannot",
+   "url": "{{SITE_URL}}/free/power-of-attorney-agent-handbook?utm_source=video&utm_medium=remotion&utm_campaign=poa-can-cannot",
    "cardSceneId": "s6-cta"
   },
   "disclaimer": {
@@ -2661,7 +2661,7 @@
   },
   "youtube": {
    "title": "What a power of attorney can and cannot do | {{FIRM_SHORT_NAME}}",
-   "description": "What an agent under a durable power of attorney can do, what they cannot, and why careful choice and clear wording matter.\n\nChapters:\n0:00 Intro\n0:11 Durable: continues after incapacity\n0:18 Can: bills, accounts, taxes, property\n0:28 Cannot: sign your will; act after death; self-deal\n0:38 Special powers must be listed\n0:50 Next step\n\nNext step: Get the power of attorney guide: {{SITE_URL}}/power-of-attorney-guide?utm_source=video&utm_medium=remotion&utm_campaign=poa-can-cannot\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/what-a-power-of-attorney-can-and-cannot-do",
+   "description": "What an agent under a durable power of attorney can do, what they cannot, and why careful choice and clear wording matter.\n\nChapters:\n0:00 Intro\n0:11 Durable: continues after incapacity\n0:18 Can: bills, accounts, taxes, property\n0:28 Cannot: sign your will; act after death; self-deal\n0:38 Special powers must be listed\n0:50 Next step\n\nNext step: Get the power of attorney guide: {{SITE_URL}}/free/power-of-attorney-agent-handbook?utm_source=video&utm_medium=remotion&utm_campaign=poa-can-cannot\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/what-a-power-of-attorney-can-and-cannot-do",
    "chapters": [
     {
      "time": "0:00",
@@ -2838,7 +2838,7 @@
   ],
   "cta": {
    "text": "Book a blended-family planning consultation",
-   "url": "{{SITE_URL}}/consultation?utm_source=video&utm_medium=remotion&utm_campaign=blended-family",
+   "url": "{{SITE_URL}}/intake?utm_source=video&utm_medium=remotion&utm_campaign=blended-family",
    "cardSceneId": "s8-cta"
   },
   "disclaimer": {
@@ -2862,7 +2862,7 @@
   },
   "youtube": {
    "title": "How a blended-family plan can protect a spouse and children | {{FIRM_SHORT_NAME}}",
-   "description": "Why default rules and simple 'everything to my spouse' plans can disinherit children from a prior relationship, and how trusts can balance both.\n\nChapters:\n0:00 Intro\n0:11 Everything to the spouse\n0:21 Once it's theirs, it's their choice\n0:34 Or: everything to the kids\n0:44 Trust: spouse first, then children\n0:58 Neutral trustee\n1:08 Forms and titles can override the plan\n1:18 Next step\n\nNext step: Book a blended-family planning consultation: {{SITE_URL}}/consultation?utm_source=video&utm_medium=remotion&utm_campaign=blended-family\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/blended-family-estate-plan-protecting-spouse-and-children",
+   "description": "Why default rules and simple 'everything to my spouse' plans can disinherit children from a prior relationship, and how trusts can balance both.\n\nChapters:\n0:00 Intro\n0:11 Everything to the spouse\n0:21 Once it's theirs, it's their choice\n0:34 Or: everything to the kids\n0:44 Trust: spouse first, then children\n0:58 Neutral trustee\n1:08 Forms and titles can override the plan\n1:18 Next step\n\nNext step: Book a blended-family planning consultation: {{SITE_URL}}/intake?utm_source=video&utm_medium=remotion&utm_campaign=blended-family\n\nGeneral education, not legal advice. Laws vary by state. Viewing this video does not create an attorney-client relationship.\n{{ATTORNEY_ADVERTISING_LABEL}}\n\nTranscript and sources: {{SITE_URL}}/videos/blended-family-estate-plan-protecting-spouse-and-children",
    "chapters": [
     {
      "time": "0:00",
