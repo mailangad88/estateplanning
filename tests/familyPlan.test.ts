@@ -36,16 +36,16 @@ import {
   encryptPlanBody,
   familyPlanConfigured,
   hashEmail,
-  issuePlanSession,
   linkPlanToNewLead,
   loadOwnPlan,
   organizerSummaryForLead,
   previewPlan,
-  readPlanSession,
   saveOwnPlan,
   startPlanSignIn,
 } from "@/server/services/familyPlan";
+import { resolvePlanSession } from "@/server/services/planAccount";
 import { acceptOffer } from "@/server/services/routing";
+import { signInPlan, tokenFrom } from "./planSignIn";
 import type { Actor } from "@/server/types";
 
 const NOW = new Date("2026-10-06T15:00:00Z");
@@ -336,19 +336,8 @@ describe("encryption", () => {
 let db: Db;
 let sent: { to: string; text: string }[];
 
-function tokenFrom(text: string): string {
-  const m = /token=([^\s]+)/.exec(text);
-  if (!m) throw new Error("no link in email");
-  return m[1];
-}
-
-async function signIn(email: string, now = NOW) {
-  const r = await startPlanSignIn(db, { email, consent: true, consentVersion: FAMILY_PLAN_CONSENT_VERSION }, now);
-  expect(r).toEqual({ ok: true });
-  const done = await completePlanSignIn(db, tokenFrom(sent[sent.length - 1].text), now);
-  if (!done) throw new Error("sign-in failed");
-  return done;
-}
+const signIn = (email: string, now = NOW) => signInPlan(db, sent, email, now);
+const planIdOf = async (token: string, now = NOW) => (await resolvePlanSession(db, token, now))?.planId ?? null;
 
 beforeEach(async () => {
   db = createMemoryDb();
@@ -372,7 +361,7 @@ describe("sign-in with an emailed link", () => {
     expect(stored.consent).toEqual({ version: FAMILY_PLAN_CONSENT_VERSION, at: NOW.toISOString() });
     expect(stored.emailHash).toBe(hashEmail("new@x.test"));
     expect(JSON.stringify(await db.familyPlans.list())).not.toContain("new@x.test");
-    expect(readPlanSession(done.sessionToken, NOW)).toBe(done.planId);
+    expect(await planIdOf(done.sessionToken)).toBe(done.planId);
 
     const actions = (await db.audit.list()).map((e) => e.action);
     expect(actions).toEqual(expect.arrayContaining(["family_plan.link_requested", "family_plan.create", "family_plan.sign_in"]));
@@ -386,7 +375,7 @@ describe("sign-in with an emailed link", () => {
     expect(await completePlanSignIn(db, token, NOW)).toBeNull();
     await startPlanSignIn(db, { email: "again@x.test", consent: true, consentVersion: FAMILY_PLAN_CONSENT_VERSION }, NOW);
     expect(await completePlanSignIn(db, tokenFrom(sent[1].text), new Date(NOW.getTime() + 31 * 60_000))).toBeNull();
-    const second = await signIn("AGAIN@x.test");
+    const second = await signIn("AGAIN@x.test", new Date(NOW.getTime() + 60_000));
     expect(second.planId).toBe(first.planId);
     expect(second.created).toBe(false);
     expect(await db.familyPlans.list()).toHaveLength(2); // this one and the seeded demo plan
@@ -455,7 +444,7 @@ describe("saving and deleting your own plan", () => {
     expect(await deleteOwnPlan(db, planId, NOW)).toBe(true);
     expect(await db.familyPlans.get(planId)).toBeUndefined();
     expect(await db.familyPlanBodies.get(planId)).toBeUndefined();
-    expect(await loadOwnPlan(db, readPlanSession(sessionToken, NOW)!)).toBeNull();
+    expect(await planIdOf(sessionToken)).toBeNull();
     expect(await deleteOwnPlan(db, planId, NOW)).toBe(false);
     const del = await db.audit.list((e) => e.action === "family_plan.delete");
     expect(del).toEqual([expect.objectContaining({ resourceId: planId, actorRole: "planner" })]);
@@ -469,16 +458,17 @@ describe("permissions", () => {
     const { sessionToken, planId } = await signIn("perm@x.test");
     expect(await actorFromSession(db, sessionToken, NOW)).toBeNull();
     const portal = issueSession("u-admin", true, NOW);
-    expect(readPlanSession(portal, NOW)).toBeNull();
-    expect(readPlanSession(sessionToken + "x", NOW)).toBeNull();
-    expect(readPlanSession(issuePlanSession(planId, NOW), new Date(NOW.getTime() + 8 * 86_400_000))).toBeNull();
+    expect(await planIdOf(portal)).toBeNull();
+    expect(await planIdOf(sessionToken + "x")).toBeNull();
+    expect(await planIdOf(sessionToken)).toBe(planId);
+    expect(await planIdOf(sessionToken, new Date(NOW.getTime() + 8 * 86_400_000))).toBeNull();
   });
 
   it("a session opens only its own plan", async () => {
     const a = await signIn("a@x.test");
     const b = await signIn("b@x.test");
-    expect(readPlanSession(a.sessionToken, NOW)).toBe(a.planId);
-    expect((await loadOwnPlan(db, readPlanSession(a.sessionToken, NOW)!))!.id).toBe(a.planId);
+    expect(await planIdOf(a.sessionToken)).toBe(a.planId);
+    expect((await loadOwnPlan(db, (await planIdOf(a.sessionToken))!))!.id).toBe(a.planId);
     expect(a.planId).not.toBe(b.planId);
     // a body copied onto another plan's row does not open there
     const bBody = (await db.familyPlanBodies.get(b.planId))!;

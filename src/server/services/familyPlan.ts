@@ -1,11 +1,14 @@
 /**
  * "My family plan" organizer, server side.
  *
- * Sign-in: a visitor enters their email and agrees to the consent text; we email a single-use link
- * (through the normal transports, which only log in development); the link opens a plan session, a
- * signed cookie carrying nothing but the plan id. That session is not a portal session and has no
- * User behind it: it can read and change one plan, and nothing else. In Postgres it runs as the
- * "planner" RLS role (src/server/runtime.ts plannerDb), where every other table returns no rows.
+ * Accounts: the plan row is the account, one per verified email. A visitor enters their email and agrees
+ * to the consent text; we email a single-use link (through the normal transports, which only log in
+ * development). Using the link proves the mailbox and gives a short pre-auth step only; a plan session
+ * exists only after the second factor (an authenticator code, or a one-time recovery code), and the first
+ * sign-in must set that factor up before any plan data is returned or saved. Second factor, devices,
+ * idle and absolute timeouts, export and account deletion live in planAccount.ts. A plan session is not
+ * a portal session and has no User behind it: it can read and change one plan, and nothing else. In
+ * Postgres it runs as the "planner" RLS role (scopeToPlan), where every other table returns no rows.
  *
  * Storage: the answers are encrypted with AES-256-GCM (FAMILY_PLAN_KEY), bound to the plan id. The
  * plain columns hold only the derived summary (counts, value ranges, gaps), which is what an attorney
@@ -64,6 +67,9 @@ export function familyPlanConfigured(env: Record<string, string | undefined> = p
 
 const derive = (label: string) => createHash("sha256").update(`${label}:${rawKey()}`).digest();
 
+/** A 32-byte key for one purpose, derived from FAMILY_PLAN_KEY (the account's TOTP secret uses its own label). */
+export const familyPlanKey = derive;
+
 /** Keyed hash of a normalized email address. Finds a plan without storing the address. */
 export function hashEmail(email: string): string {
   return createHmac("sha256", derive("family-plan-email")).update(email.trim().toLowerCase()).digest("hex");
@@ -86,9 +92,10 @@ export function decryptPlanBody(planId: string, stored: string): FamilyPlanBody 
 // Sign-in link and plan session
 // ---------------------------------------------------------------------------
 
-export const PLAN_SESSION_COOKIE = "ep_plan";
-export const PLAN_SESSION_TTL_S = 7 * 24 * 3600;
 export const PLAN_LINK_TTL_S = 30 * 60;
+/** The step between the email link and the second factor. Short: it only lets the visitor enter a code. */
+export const PLAN_PREAUTH_COOKIE = "ep_plan_preauth";
+export const PLAN_PREAUTH_TTL_S = 10 * 60;
 
 interface LinkPayload {
   /** email hash */
@@ -102,9 +109,11 @@ interface LinkPayload {
   lid?: string;
 }
 
-interface SessionPayload {
+interface PreauthPayload {
   pid: string;
   exp: number;
+  /** the lead to link once the second factor passes, from the link */
+  lid?: string;
 }
 
 interface Deps {
@@ -200,14 +209,16 @@ export async function consumeLink(db: Db, jti: string, now = new Date()): Promis
 const plannerActor = (planId: string): AuditActor => ({ userId: planId, role: "planner" });
 
 /**
- * Link token -> plan session. Creates the plan on first sign-in (recording the consent the visitor
- * agreed to), prefilled from their lead's answers when one exists. `db` must be the service store.
+ * Link token -> pre-auth token (the step before the second factor). Creates the account on first use: a
+ * plan row found again by the email hash, with an empty body and the consent the visitor agreed to.
+ * Nothing the visitor wrote is stored, nothing is prefilled and no lead is linked until the second factor
+ * passes (finishPlanSignIn). `db` must be the service store.
  */
 export async function completePlanSignIn(
   db: Db,
   token: string,
   now = new Date(),
-): Promise<{ planId: string; sessionToken: string; created: boolean } | null> {
+): Promise<{ planId: string; preauthToken: string; created: boolean } | null> {
   const p = readToken<LinkPayload>("plan_link", token);
   const valid = !!p && typeof p.eh === "string" && typeof p.jti === "string" && Math.floor(now.getTime() / 1000) < p.exp;
   if (!p || !valid || !(await consumeLink(db, p.jti, now))) {
@@ -219,22 +230,10 @@ export async function completePlanSignIn(
   let plan = (await db.familyPlans.list(undefined, { emailHash: p.eh }))[0];
   let created = false;
   if (!plan) {
-    const lead = p.lid ? await db.leads.get(p.lid) : undefined;
-    const person = lead ? await db.persons.get(lead.personId) : undefined;
-    const body = (lead && prefillPlan({ answers: lead.intake.answers, state: person?.state ?? lead.state, answersFrom: "lead" })) || emptyPlan();
-    const summary = summarizePlan(body);
+    const body = emptyPlan();
+    const summary = summarizePlan(body, now.getUTCFullYear());
     const id = `fp_${randomUUID()}`;
-    plan = {
-      id,
-      emailHash: p.eh,
-      summary,
-      sectionsDone: summary.sectionsDone,
-      gapCount: summary.gaps.length,
-      consent,
-      prefilledFrom: body.prefill?.sources.length ? [...body.prefill.sources] : undefined,
-      createdAt: at,
-      updatedAt: at,
-    };
+    plan = { id, emailHash: p.eh, summary, sectionsDone: summary.sectionsDone, gapCount: summary.gaps.length, consent, createdAt: at, updatedAt: at };
     await db.familyPlans.insert(plan);
     await db.familyPlanBodies.insert({ id, ciphertext: encryptPlanBody(id, body), updatedAt: at });
     created = true;
@@ -242,35 +241,68 @@ export async function completePlanSignIn(
       action: "family_plan.create",
       resourceType: "family_plan",
       resourceId: id,
-      detail: { consentVersion: consent.version, prefilled: !!plan.prefilledFrom },
+      detail: { consentVersion: consent.version },
       at: now,
     });
   } else {
     await db.familyPlans.update(plan.id, { consent });
   }
-  if (p.lid && plan.leadId !== p.lid) await linkPlan(db, plan.id, p.lid, now);
-  await audit(db, plannerActor(plan.id), { action: "family_plan.sign_in", resourceType: "family_plan", resourceId: plan.id, at: now });
-  return { planId: plan.id, sessionToken: issuePlanSession(plan.id, now), created };
+  await audit(db, plannerActor(plan.id), { action: "family_plan.link_used", resourceType: "family_plan", resourceId: plan.id, at: now });
+  return { planId: plan.id, preauthToken: issuePlanPreauth(plan.id, p.lid, now), created };
 }
 
-export function issuePlanSession(planId: string, now = new Date()): string {
-  return signToken("plan_session", { pid: planId, exp: Math.floor(now.getTime() / 1000) + PLAN_SESSION_TTL_S } satisfies SessionPayload);
+/** The pre-auth token proves the email link was used; it opens nothing but the code step. */
+export function issuePlanPreauth(planId: string, leadId: string | undefined, now = new Date()): string {
+  const payload: PreauthPayload = { pid: planId, exp: Math.floor(now.getTime() / 1000) + PLAN_PREAUTH_TTL_S };
+  if (leadId) payload.lid = leadId;
+  return signToken("plan_preauth", payload);
 }
 
-/** The plan id a plan session proves, or null. Portal session tokens are signed for another purpose and never pass. */
-export function readPlanSession(token: string | undefined, now = new Date()): string | null {
-  const p = readToken<SessionPayload>("plan_session", token);
+export function readPlanPreauth(token: string | undefined, now = new Date()): { planId: string; leadId?: string } | null {
+  const p = readToken<PreauthPayload>("plan_preauth", token);
   if (!p || typeof p.pid !== "string" || !p.pid.startsWith("fp_") || Math.floor(now.getTime() / 1000) >= p.exp) return null;
-  return p.pid;
+  return { planId: p.pid, leadId: typeof p.lid === "string" ? p.lid : undefined };
 }
 
-export function planSessionCookie(token: string): string {
+export function planPreauthCookie(token: string): string {
   const secure = process.env.NODE_ENV === "production" ? "; Secure" : "";
-  return `${PLAN_SESSION_COOKIE}=${token}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${PLAN_SESSION_TTL_S}${secure}`;
+  return `${PLAN_PREAUTH_COOKIE}=${token}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${PLAN_PREAUTH_TTL_S}${secure}`;
 }
 
-export function clearPlanSessionCookie(): string {
-  return `${PLAN_SESSION_COOKIE}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0`;
+export function clearPlanPreauthCookie(): string {
+  return `${PLAN_PREAUTH_COOKIE}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0`;
+}
+
+/**
+ * After the second factor passes. On the first sign-in, an untouched plan is prefilled from the
+ * visitor's lead (if the link found one); on every sign-in the plan is linked to that lead. `db` must be
+ * the service store.
+ */
+export async function finishPlanSignIn(db: Db, planId: string, leadId: string | undefined, firstSignIn: boolean, now = new Date()): Promise<void> {
+  const plan = await db.familyPlans.get(planId);
+  if (!plan || !leadId) return;
+  const lead = await db.leads.get(leadId);
+  if (!lead) return;
+  if (firstSignIn && plan.sectionsDone === 0 && plan.gapCount === 0 && !plan.prefilledFrom) {
+    const stored = await db.familyPlanBodies.get(planId);
+    const current = stored ? decryptPlanBody(planId, stored.ciphertext) : emptyPlan();
+    const person = await db.persons.get(lead.personId);
+    const body = prefillPlan({ answers: lead.intake.answers, state: person?.state ?? lead.state, answersFrom: "lead" });
+    if (body && JSON.stringify(current) === JSON.stringify(emptyPlan())) {
+      const summary = summarizePlan(body, now.getUTCFullYear());
+      const at = now.toISOString();
+      await db.familyPlanBodies.update(planId, { ciphertext: encryptPlanBody(planId, body), updatedAt: at });
+      await db.familyPlans.update(planId, {
+        summary,
+        sectionsDone: summary.sectionsDone,
+        gapCount: summary.gaps.length,
+        prefilledFrom: body.prefill?.sources.length ? [...body.prefill.sources] : undefined,
+        updatedAt: at,
+      });
+      await audit(db, "system", { action: "family_plan.prefill", resourceType: "family_plan", resourceId: planId, detail: { from: "lead" }, at: now });
+    }
+  }
+  if (plan.leadId !== leadId) await linkPlan(db, planId, leadId, now);
 }
 
 // ---------------------------------------------------------------------------
@@ -329,13 +361,27 @@ export async function saveOwnPlan(db: Db, planId: string, input: unknown, now = 
   };
 }
 
-/** Hard delete: the answers and the summary are removed, not flagged. The audit entry keeps only the id. */
+/**
+ * Hard delete of the whole account: every signed-in device, the second factor and recovery codes, the
+ * answers and the summary are removed, not flagged. The audit entry keeps only ids and a count. Callers
+ * ask for a fresh code first (deletePlanAccount in planAccount.ts).
+ */
 export async function deleteOwnPlan(db: Db, planId: string, now = new Date()): Promise<boolean> {
   const plan = await db.familyPlans.get(planId);
   if (!plan) return false;
+  const sessions = await db.planSessions.list(undefined, { planId });
+  for (const s of sessions) await db.planSessions.remove(s.id);
+  await db.planMfa.remove(planId);
   await db.familyPlanBodies.remove(planId);
   await db.familyPlans.remove(planId);
-  await audit(db, plannerActor(planId), { action: "family_plan.delete", resourceType: "family_plan", resourceId: planId, leadId: plan.leadId, at: now });
+  await audit(db, plannerActor(planId), {
+    action: "family_plan.delete",
+    resourceType: "family_plan",
+    resourceId: planId,
+    leadId: plan.leadId,
+    detail: { sessionsEnded: sessions.length },
+    at: now,
+  });
   return true;
 }
 

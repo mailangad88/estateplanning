@@ -19,6 +19,8 @@ import type {
   FamilyPlanBodyRecord,
   Firm,
   PlanLinkUse,
+  PlanMfaRecord,
+  PlanSession,
   Lawyer,
   Lead,
   Partner,
@@ -152,6 +154,8 @@ export interface Db {
   familyPlans: Collection<FamilyPlan>;
   familyPlanBodies: Collection<FamilyPlanBodyRecord>;
   planLinkUses: Collection<PlanLinkUse>;
+  planMfa: Collection<PlanMfaRecord>;
+  planSessions: Collection<PlanSession>;
   audit: AppendOnly<AuditEvent>;
 }
 
@@ -196,6 +200,8 @@ export function createMemoryDb(): Db {
     familyPlans: new MemoryCollection(),
     familyPlanBodies: new MemoryCollection(),
     planLinkUses: new MemoryCollection(),
+    planMfa: new MemoryCollection(),
+    planSessions: new MemoryCollection(),
     audit: new MemoryAppendOnly(),
   };
 }

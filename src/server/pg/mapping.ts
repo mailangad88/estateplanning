@@ -263,6 +263,21 @@ export const TABLES = {
     columns: [t("id", "id"), t("ciphertext", "ciphertext"), ts("updatedAt", "updated_at")],
   },
   planLinkUses: { table: "plan_link_uses", columns: [t("id", "id"), ts("usedAt", "used_at")] },
+  planMfa: {
+    table: "plan_mfa",
+    columns: [
+      t("id", "id"), t("totpSecretEnc", "totp_secret_enc"), t("pendingSecretEnc", "pending_secret_enc", true),
+      n("lastUsedStep", "last_used_step"), a("recoveryCodeHashes", "recovery_code_hashes"), ts("enrolledAt", "enrolled_at", true),
+      n("failedAttempts", "failed_attempts"), ts("lockedUntil", "locked_until", true), ts("createdAt", "created_at"), ts("updatedAt", "updated_at"),
+    ],
+  },
+  planSessions: {
+    table: "plan_sessions",
+    columns: [
+      t("id", "id"), t("planId", "plan_id"), ts("createdAt", "created_at"), ts("lastSeenAt", "last_seen_at"), ts("expiresAt", "expires_at"),
+      t("userAgent", "user_agent", true), t("ipPrefix", "ip_prefix", true), b("viaRecoveryCode", "via_recovery_code", true),
+    ],
+  },
   audit: {
     table: "audit_events",
     columns: [

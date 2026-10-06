@@ -24,8 +24,11 @@ export default async function OpenPlanPage({ searchParams }: { searchParams: Pro
         {token ? (
           <form method="post" action="/api/my-plan/link">
             <input type="hidden" name="token" value={token} />
-            <p>Press the button to open your plan on this device. The link works once; after that, ask for a new one from the organizer.</p>
-            <button type="submit" className="button">Open my plan</button>
+            <p>
+              Press the button to continue on this device. Next you will enter a code from your authenticator app, or set one up if this is
+              your first time. The link works once; after that, ask for a new one from the organizer.
+            </p>
+            <button type="submit" className="button">Continue</button>
           </form>
         ) : (
           <p>This link is missing its code. <a href="/my-plan">Go back to the organizer</a> and ask for a new link.</p>

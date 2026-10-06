@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { clearPlanSessionCookie, deleteOwnPlan, loadOwnPlan, saveOwnPlan } from "@/server/services/familyPlan";
+import { loadOwnPlan, saveOwnPlan } from "@/server/services/familyPlan";
+import { clearPlanSessionCookie } from "@/server/services/planAccount";
 import { noStore, readBody, withPlan } from "./shared";
 
 /** The signed-in visitor's own plan. */
@@ -28,12 +29,4 @@ export async function PUT(request: Request) {
   });
 }
 
-/** "Delete my data": removes the plan for good and ends the plan session. */
-export async function DELETE(request: Request) {
-  return withPlan(request, async ({ planId, db }) => {
-    await deleteOwnPlan(db, planId);
-    const res = NextResponse.json({ ok: true, deleted: true }, { headers: noStore });
-    res.headers.append("set-cookie", clearPlanSessionCookie());
-    return res;
-  });
-}
+// Deleting the plan now deletes the account and asks for a fresh code: POST /api/my-plan/account/delete.

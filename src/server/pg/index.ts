@@ -304,6 +304,8 @@ export function createPgDb(opts: { pool?: Pool; session?: PgSession } = {}): PgD
     familyPlans: col(TABLES.familyPlans),
     familyPlanBodies: col(TABLES.familyPlanBodies),
     planLinkUses: col(TABLES.planLinkUses),
+    planMfa: col(TABLES.planMfa),
+    planSessions: col(TABLES.planSessions),
     audit: new PgAudit(pool, session),
     pool,
     session,
