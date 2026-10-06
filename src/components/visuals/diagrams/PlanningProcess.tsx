@@ -21,7 +21,7 @@ const pos = (i: number) => ({ x: 40 + (i % 4) * (CW + 16), y: 120 + Math.floor(i
 export function PlanningProcess({ caption, bare, step }: DiagramProps) {
   const last = pos(7);
   return (
-    <Figure
+    <Figure readable
       width={960}
       height={604}
       bare={bare}

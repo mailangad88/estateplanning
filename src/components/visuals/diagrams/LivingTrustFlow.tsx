@@ -18,7 +18,7 @@ const cx = (i: number) => 40 + i * (CW + 20);
 /** How a revocable living trust moves assets, and what an unfunded asset does. */
 export function LivingTrustFlow({ caption, bare, step }: DiagramProps) {
   return (
-    <Figure
+    <Figure readable
       width={960}
       height={590}
       bare={bare}

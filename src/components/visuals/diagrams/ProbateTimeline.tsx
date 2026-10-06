@@ -28,7 +28,7 @@ const cx = (i: number) => 40 + i * (CW + GAP);
 /** The usual stages of probate, from filing to closing the estate. */
 export function ProbateTimeline({ caption, bare, step }: DiagramProps) {
   return (
-    <Figure
+    <Figure readable
       width={960}
       height={524}
       bare={bare}

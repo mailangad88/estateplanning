@@ -13,7 +13,7 @@ const accounts = [
 /** Beneficiary designations pass assets directly, whatever the will says. */
 export function BeneficiaryBeatsWill({ caption, bare, step }: DiagramProps) {
   return (
-    <Figure
+    <Figure readable
       width={960}
       height={600}
       bare={bare}

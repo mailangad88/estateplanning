@@ -18,7 +18,7 @@ const cx = (i: number) => 40 + i * (CW + 16);
 /** The documents that decide who speaks for you if you cannot. */
 export function PoaHealthcareRoles({ caption, bare, step }: DiagramProps) {
   return (
-    <Figure
+    <Figure readable
       width={960}
       height={560}
       bare={bare}

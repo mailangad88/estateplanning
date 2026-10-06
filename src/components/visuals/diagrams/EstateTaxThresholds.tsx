@@ -13,7 +13,7 @@ const notes = [
 /** The 2026 federal estate tax exclusion in context. */
 export function EstateTaxThresholds({ caption, bare, step }: DiagramProps) {
   return (
-    <Figure
+    <Figure readable
       width={960}
       height={560}
       bare={bare}

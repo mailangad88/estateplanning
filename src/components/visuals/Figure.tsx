@@ -14,6 +14,11 @@ export type FigureProps = {
   /** Render the bare <svg> without the <figure> wrapper (for video frames and OG). */
   bare?: boolean;
   className?: string;
+  /**
+   * Text-heavy diagrams set this so phones get a horizontally scrollable,
+   * legible figure instead of shrinking the labels below reading size.
+   */
+  readable?: boolean;
   children: ReactNode;
 };
 
@@ -22,7 +27,7 @@ export type FigureProps = {
  * The SVG gets role="img" with <title> and <desc>, so the diagram's meaning
  * is available as text to screen readers and crawlers.
  */
-export function Figure({ title, desc, width, height, caption, bare, className, children }: FigureProps) {
+export function Figure({ title, desc, width, height, caption, bare, className, readable, children }: FigureProps) {
   const id = useId().replace(/:/g, "");
   const svg = (
     <svg
@@ -40,7 +45,13 @@ export function Figure({ title, desc, width, height, caption, bare, className, c
   if (bare) return svg;
   return (
     <figure className={["v-figure", className].filter(Boolean).join(" ")}>
-      {svg}
+      {readable ? (
+        <div className="v-scroll" tabIndex={0} role="group" aria-label={`${title} (scroll sideways on small screens)`}>
+          <div style={{ minWidth: Math.round(width * 0.68) }}>{svg}</div>
+        </div>
+      ) : (
+        svg
+      )}
       {caption ? <figcaption>{caption}</figcaption> : null}
     </figure>
   );

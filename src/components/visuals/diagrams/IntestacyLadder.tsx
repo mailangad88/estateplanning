@@ -22,7 +22,7 @@ const leftOut = [
  */
 export function IntestacyLadder({ caption, bare, highlight }: DiagramProps & { highlight?: number }) {
   return (
-    <Figure
+    <Figure readable
       width={960}
       height={560}
       bare={bare}

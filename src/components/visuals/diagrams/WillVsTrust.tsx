@@ -49,7 +49,7 @@ function Column({ x, tone, tint, title, icon, rows, step, n }: { x: number; tone
 /** How a will and a revocable living trust each work after death. */
 export function WillVsTrust({ caption, bare, step }: DiagramProps) {
   return (
-    <Figure
+    <Figure readable
       width={960}
       height={600}
       bare={bare}

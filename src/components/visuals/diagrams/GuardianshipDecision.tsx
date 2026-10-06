@@ -7,7 +7,7 @@ import type { DiagramProps } from "./types";
 /** What happens for minor children if both parents die, with and without a named guardian. */
 export function GuardianshipDecision({ caption, bare, step }: DiagramProps) {
   return (
-    <Figure
+    <Figure readable
       width={960}
       height={600}
       bare={bare}

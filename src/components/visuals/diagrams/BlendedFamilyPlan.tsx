@@ -7,7 +7,7 @@ import type { DiagramProps } from "./types";
 /** One example structure for a blended family, compared with an all-to-spouse will. */
 export function BlendedFamilyPlan({ caption, bare, step }: DiagramProps) {
   return (
-    <Figure
+    <Figure readable
       width={960}
       height={590}
       bare={bare}

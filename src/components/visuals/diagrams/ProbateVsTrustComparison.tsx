@@ -17,7 +17,7 @@ const COLS = { label: { x: 40, w: 196 }, probate: { x: 248, w: 340 }, trust: { x
 /** Probate and a living trust compared on time, privacy, court, cost and multi-state property. */
 export function ProbateVsTrustComparison({ caption, bare, step }: DiagramProps) {
   return (
-    <Figure
+    <Figure readable
       width={960}
       height={630}
       bare={bare}

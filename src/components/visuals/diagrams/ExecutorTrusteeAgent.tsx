@@ -75,7 +75,7 @@ const cardH = 262 - 130 + rowH.reduce((a, b) => a + b, 0) + 6;
 export function ExecutorTrusteeAgent({ caption, bare, step }: DiagramProps) {
   const H = 130 + cardH + 40;
   return (
-    <Figure
+    <Figure readable
       width={960}
       height={H}
       bare={bare}

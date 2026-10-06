@@ -26,7 +26,7 @@ const tone: Record<Asset["kind"], { c: ColorName; tint: ColorName; ink: ColorNam
 /** Six asset types to check when funding a trust. */
 export function TrustFundingAssets({ caption, bare, step }: DiagramProps) {
   return (
-    <Figure
+    <Figure readable
       width={960}
       height={600}
       bare={bare}

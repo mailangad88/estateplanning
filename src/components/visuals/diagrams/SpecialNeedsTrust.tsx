@@ -10,7 +10,7 @@ const extras = ["Therapies", "Travel", "A phone", "Activities"];
 export function SpecialNeedsTrust({ caption, bare, step }: DiagramProps) {
   let px = 520;
   return (
-    <Figure
+    <Figure readable
       width={960}
       height={600}
       bare={bare}

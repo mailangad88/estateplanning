@@ -52,3 +52,5 @@
 .v-gallery { display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
 .v-gallery .card h3 { font-size: 0.95rem; margin: 8px 0 0; }
 .v-gallery code { font-size: 0.8rem; color: var(--muted, #5b6470); }
+.v-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.v-scroll:focus-visible { outline: 2px solid var(--accent, #1f5f8b); outline-offset: 2px; }
