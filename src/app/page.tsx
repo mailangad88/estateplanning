@@ -105,6 +105,9 @@ export default function Home() {
           center
         />
         <LifeGame squares={lifeBoard()} bookHref="/plan-finder" phone={firm.phone} next={{ label: "Find the right plan in two minutes", href: "/plan-finder" }} library={fullLibrary()} id="game-life" />
+        <p className="lgame-band__more">
+          <Link href="/my-plan" className="arrow-link">Ready for the real thing? Organize your family plan in one place <ArrowRight size={16} aria-hidden="true" /></Link>
+        </p>
       </Band>
 
       <Band label="What a plan includes">
@@ -157,7 +160,7 @@ export default function Home() {
           ))}
         </div>
         <p style={{ marginTop: 28 }}>
-          <Link href="/tools">All {TOOLS.length} free tools</Link> · <Link href="/quizzes">{getQuizzes().length} two-minute quizzes</Link> · <Link href="/checklists">Printable checklists</Link>
+          <Link href="/tools">All {TOOLS.length} free tools</Link> · <Link href="/quizzes">{getQuizzes().length} two-minute quizzes</Link> · <Link href="/checklists">Printable checklists</Link> · <Link href="/my-plan">My family plan</Link>
         </p>
       </Band>
 
