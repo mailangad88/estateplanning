@@ -109,6 +109,7 @@ export type GlobalAction =
   | "approve_fee_rule"
   | "manage_users"
   | "view_reports"
+  | "view_lead_health"
   | "manage_content"
   | "view_invoices"
   | "manage_firm_capacity"
@@ -121,6 +122,7 @@ const GLOBAL: Record<GlobalAction, Role[]> = {
   approve_fee_rule: ["platform_admin"],
   manage_users: ["platform_admin", "firm_admin"],
   view_reports: ["platform_admin", "marketing", "firm_admin"],
+  view_lead_health: ["platform_admin", "firm_admin"],
   manage_content: ["platform_admin", "marketing"],
   view_invoices: ["platform_admin", "firm_admin"],
   manage_firm_capacity: ["platform_admin", "firm_admin"],

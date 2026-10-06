@@ -332,3 +332,27 @@ export interface AuditEvent {
   prevHash: string;
   hash: string;
 }
+
+/**
+ * One record per website-to-middleware webhook delivery (src/lib/crm.ts). It carries ids, status and a
+ * short error only: never the payload, so it holds no personal data. `id` is the idempotency key.
+ * - delivered: the middleware answered 2xx
+ * - failed: a retry could still work (network error, 5xx, 429); the cron sweep retries it
+ * - abandoned: the middleware rejected it (other 4xx), or retries ran out; needs a person
+ */
+export type CrmDeliveryStatus = "delivered" | "failed" | "abandoned";
+
+export interface CrmDelivery {
+  id: string;
+  leadId: string;
+  event: string;
+  status: CrmDeliveryStatus;
+  httpStatus?: number;
+  /** HTTP requests made across the first delivery and every retry */
+  attempts: number;
+  error?: string;
+  createdAt: string;
+  updatedAt: string;
+  lastAttemptAt: string;
+  deliveredAt?: string;
+}

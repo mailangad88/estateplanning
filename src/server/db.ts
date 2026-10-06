@@ -10,6 +10,7 @@ import type {
   AuditEvent,
   Comment,
   Consult,
+  CrmDelivery,
   DocumentRecord,
   Engagement,
   Firm,
@@ -123,6 +124,7 @@ export interface Db {
   suppressions: Collection<Suppression>;
   factVerifications: Collection<FactVerification>;
   automationState: Collection<AutomationState>;
+  crmDeliveries: Collection<CrmDelivery>;
   audit: AppendOnly<AuditEvent>;
 }
 
@@ -155,6 +157,7 @@ export function createMemoryDb(): Db {
     suppressions: new MemoryCollection(),
     factVerifications: new MemoryCollection(),
     automationState: new MemoryCollection(),
+    crmDeliveries: new MemoryCollection(),
     audit: new MemoryAppendOnly(),
   };
 }
