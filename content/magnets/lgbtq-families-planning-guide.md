@@ -14,7 +14,7 @@ pages: 8
 tag: lgbtq_planning_guide
 sequence: B
 related:
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - guides/powers-of-attorney
   - guides/healthcare-directives-and-living-wills
   - guides/guardianship-for-minor-children
@@ -81,7 +81,7 @@ Rules for unmarried couples vary a great deal by state, and an attorney can tell
 Many LGBTQ+ people count friends, former partners and mentors as family. The law lets you name them.
 
 - **Agents:** anyone you trust can be named agent under a power of attorney or health care directive.
-- **Executor and trustee:** you can name a friend as executor or trustee. Consider also naming a backup and, if the estate is large, a professional co-trustee. See [choosing a trustee](/guides/choosing-a-trustee).
+- **Executor and trustee:** you can name a friend as executor or trustee. Consider also naming a backup and, if the estate is large, a professional co-trustee. See [choosing a trustee](/learn/trusts/choosing-a-trustee).
 - **Beneficiaries:** you can leave property to anyone, by will, trust or beneficiary form.
 - **Guardians:** you can nominate anyone to care for minor children, though a court makes the final decision.
 - **Contact lists and instructions:** write down who should be told and who should have access to your home and accounts.
@@ -96,7 +96,7 @@ Some people fear that estranged or disapproving relatives will step in after a d
 - **Name agents so no relative's consent is needed.** Agents named in a health care directive generally take priority over relatives.
 - **Disposition authority.** Many states let you name a person to control your remains in a signed document. Ask your attorney about your state's form, and see [funeral and burial wishes](/checklists/funeral-and-burial-wishes).
 - **No-contest clauses.** Many states enforce a clause that reduces or removes a gift to a beneficiary who challenges the will without good cause. Others limit or refuse to enforce them. Whether a clause helps depends on whether the relative has anything to lose. A relative who gets nothing has no reason to hold back.
-- **Trusts and non-probate transfers.** A revocable trust or beneficiary designation keeps assets out of the public probate file, where relatives may see and contest things. See [revocable living trust explained](/guides/revocable-living-trust-explained).
+- **Trusts and non-probate transfers.** A revocable trust or beneficiary designation keeps assets out of the public probate file, where relatives may see and contest things. See [revocable living trust explained](/learn/trusts/revocable-living-trust).
 - **A letter explaining your choices,** which can reduce hurt and sometimes disputes.
 - **Safe storage and sharing.** Tell your agents where the documents are.
 

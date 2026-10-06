@@ -46,7 +46,7 @@ Ray names his three children equally on his life insurance policy. His daughter 
 
 The policy says the survivors share equally. So Ray's two living children each get half. Lisa's sons get nothing from the policy. Had Ray checked the per stirpes box, Lisa's third would have gone to her sons. Because they are minors, it would likely be held by a trust or custodian.
 
-Our guide to [leaving money to minors](/guides/leaving-money-to-minors) explains why that last step matters.
+Our guide to [leaving money to minors](/learn/guardianship/leaving-money-to-minors) explains why that last step matters.
 
 ## Simultaneous deaths
 

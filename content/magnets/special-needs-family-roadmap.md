@@ -16,7 +16,7 @@ sequence: B
 related:
   - guides/special-needs-trusts
   - compare/special-needs-trust-vs-able-account
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - guides/guardianship-for-minor-children
 reviewed: false
 updated: "2026-10-06"

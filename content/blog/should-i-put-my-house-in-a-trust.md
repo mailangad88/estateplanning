@@ -29,7 +29,7 @@ A trust can help in a few ways:
 - **Keeps things private.** Trust transfers generally do not become public court records the way probate does.
 - **Gives you control over timing.** A trust can hold the house for a child until a set age.
 
-Our guide to the [revocable living trust](/guides/revocable-living-trust-explained) explains these benefits in more detail.
+Our guide to the [revocable living trust](/learn/trusts/revocable-living-trust) explains these benefits in more detail.
 
 ## How the transfer works
 

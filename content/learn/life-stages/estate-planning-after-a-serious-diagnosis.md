@@ -111,7 +111,7 @@ This is one person's choices; yours may differ.
 
 ## If time is short, what can an attorney do first?
 
-An attorney can often prepare the most important documents quickly, sometimes in days, starting with the powers of attorney and a simple will. A short plan signed now is generally better than a comprehensive one that is never finished. If you cannot sign, because capacity is gone, the focus shifts to what family members can do, which may include a guardianship or conservatorship proceeding. Our comparison of [power of attorney vs. guardianship](/compare/power-of-attorney-vs-guardianship) explains the difference.
+An attorney can often prepare the most important documents quickly, sometimes in days, starting with the powers of attorney and a simple will. A short plan signed now is generally better than a comprehensive one that is never finished. If you cannot sign, because capacity is gone, the focus shifts to what family members can do, which may include a guardianship or conservatorship proceeding. Our comparison of [power of attorney vs. guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship) explains the difference.
 
 For the bigger picture, see [guide to estate planning by life stage](/learn/life-stages).
 

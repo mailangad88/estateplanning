@@ -1,3 +1,4 @@
+import { getAllArticles } from "@/lib/library";
 import { describe, expect, it } from "vitest";
 import { filterEvent, isRemarketingEvent } from "@/lib/analytics";
 import { isSensitivePath, SENSITIVE_PATH_PREFIXES } from "@/config/sensitive";
@@ -10,7 +11,7 @@ describe("sensitive paths", () => {
     expect(isSensitivePath("/estate-planning-for/new-diagnosis/")).toBe(true);
     expect(isSensitivePath("/estate-planning-for/lgbtq-couples")).toBe(true);
     expect(isSensitivePath("/guides/special-needs-trusts?x=1")).toBe(true);
-    expect(isSensitivePath("/guides/medicaid-and-long-term-care-planning")).toBe(true);
+    expect(isSensitivePath("/learn/elder-care/medicaid-planning")).toBe(true);
     expect(isSensitivePath("/life-events/serious-diagnosis")).toBe(true);
   });
 
@@ -25,6 +26,7 @@ describe("sensitive paths", () => {
       ...getGuides().map((g) => `/guides/${g.slug}`),
       ...getComparisons().map((c) => `/compare/${c.slug}`),
       ...getLifeEvents().map((l) => `/life-events/${l.slug}`),
+      ...getAllArticles().map((a) => a.url),
     ]);
     const planned = ["/estate-planning-for/", "/life-events/estate-planning-after-a-serious-diagnosis"];
     for (const p of SENSITIVE_PATH_PREFIXES) expect(existing.has(p) || planned.some((x) => p.startsWith(x)), p).toBe(true);

@@ -113,6 +113,12 @@ Most of the avoidable probate comes from these errors.
 5. **Not updating after life events.** Divorce, remarriage, births and deaths all change who should be on a form. In some states divorce automatically cancels a former spouse's designation for some assets, but retirement plans governed by federal law often follow the form as written.
 6. **Overlooking small items.** An old bank account, a brokerage account from a previous job or a vehicle can trigger a case by itself, though small estate procedures may handle them. See [small estate procedures](/learn/probate/small-estate-affidavit).
 
+## Is probate always a bad thing?
+
+Not always. Probate gives court oversight, a set deadline for creditor claims and a clear process if family members disagree. Many states also offer a simpler process for small estates.
+
+Most people keep a will even if nearly everything passes outside probate. The will catches assets you forgot, assets you received late, and assets whose beneficiary died first. It is also where parents name a guardian for minor children.
+
 ## Do non-probate assets still matter in the estate?
 
 Yes, for several reasons. They count toward the federal estate tax total, which applies to estates above $15 million per person in 2026, and toward state estate tax in states that have one. They affect fairness among heirs, as in Joan's case. And in some states creditors may be able to reach certain non-probate assets if the probate estate cannot pay valid debts. See [debts in probate](/learn/probate/dealing-with-debts-in-probate). Our [estate and gift tax guide](/learn/estate-tax) covers the tax side.

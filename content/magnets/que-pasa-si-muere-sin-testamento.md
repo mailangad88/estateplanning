@@ -16,11 +16,11 @@ sequence: B
 lang: es
 translation_of: what-happens-if-you-die-without-a-will
 related:
-  - guides/what-happens-if-you-die-without-a-will
+  - learn/wills/dying-without-a-will
   - guides/how-to-make-a-will
   - guides/how-probate-works
   - guides/guardianship-for-minor-children
-  - compare/probate-vs-non-probate-assets
+  - learn/probate/probate-vs-non-probate-assets
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -127,7 +127,7 @@ Las respuestas de la sucesión intestada cambian de un estado a otro. Use estas 
 
 ## Siguiente paso
 
-Lea [qué pasa si muere sin testamento](/guides/what-happens-if-you-die-without-a-will) para la versión más larga, o [reserve una consulta](/plan-finder) para conversar sobre la situación de su familia.
+Lea [qué pasa si muere sin testamento](/learn/wills/dying-without-a-will) para la versión más larga, o [reserve una consulta](/plan-finder) para conversar sobre la situación de su familia.
 
 ## Fuentes
 

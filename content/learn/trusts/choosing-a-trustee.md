@@ -21,6 +21,8 @@ faqs:
     a: "Yes. A corporate trustee is a regulated business whose job is trust administration. It brings continuity, since it does not die or move, but it may be less flexible and may impose minimum asset sizes."
   - q: "What if my trustee turns out to be a poor fit?"
     a: "Good trusts include a way to replace the trustee, such as a trust protector or a majority vote of beneficiaries. Without that, beneficiaries may need to ask a court to remove or replace the trustee for cause."
+  - q: "Can I name two people as co-trustees?"
+    a: "Yes. Co-trustees can split the work and check each other. The trust should say whether they must act together or can act alone, because requiring both signatures on everything can slow things down."
 related:
   - "trusts/revocable-living-trust"
   - "trusts/trusts-for-children"
@@ -83,6 +85,8 @@ A common solution is co-trustees: a family member who knows the beneficiaries an
 6. **Age and health.** Pick someone likely to outlast the trust, and name backups.
 7. **Willingness.** Ask them. Many people say yes out of loyalty and later regret it.
 
+Living far away matters less than it used to, since most banking and paperwork can be done remotely. Selling a house from across the country is harder, though. Birth order is not a qualification either, and the oldest child is not always the best fit.
+
 Be honest about red flags: financial trouble, a history of conflict with the beneficiaries, a spouse who would be influencing decisions, or someone who would also be a beneficiary with a conflicting interest.
 
 ## How should you handle a trustee who is also a beneficiary?
@@ -91,7 +95,7 @@ It is common for a surviving spouse or a child to be both trustee and beneficiar
 
 ## How do you name successor trustees and co-trustees?
 
-Name at least two successors in order. Think about whether the successors must act together or can act alone, and whether a majority of co-trustees can decide. Deadlock between two siblings is a real risk, so many trusts name a tiebreaker, require a professional co-trustee or give the grantor's chosen advisor power to resolve disputes.
+Name at least two successors in order. The trust should also say how incapacity is shown, often by letters from one or two doctors, so your successor can step in when you cannot act. Think about whether the successors must act together or can act alone, and whether a majority of co-trustees can decide. Deadlock between two siblings is a real risk, so many trusts name a tiebreaker, require a professional co-trustee or give the grantor's chosen advisor power to resolve disputes.
 
 Also name how a trustee can be replaced, either by a trust protector (an independent person with power to remove and replace trustees) or by a vote of the beneficiaries. Otherwise the only route may be a court petition; see [whether an executor or trustee can be removed](/learn/after-a-death/can-an-executor-be-removed).
 
@@ -103,6 +107,14 @@ State law usually allows a trustee reasonable compensation unless the trust says
 
 An [executor](/learn/wills/choosing-an-executor) is appointed through a will and handles the probate estate. A trustee operates under a trust, usually privately. A guardian raises children and is chosen in a will. Some parents choose the same person for guardian and trustee; others deliberately split the roles so one person raises the kids and another manages the money. See [guardian vs. trustee](/learn/guardianship/guardian-vs-trustee) for how to think about that decision.
 
+## A short example
+
+Ruth and Harold have three adult children. Alan is an accountant who lives nearby. Claire lives overseas. Tommy has struggled with gambling.
+
+They name Alan as successor trustee and a close friend, Priya, as backup. They do not name Claire because of the distance and time difference. They keep Tommy's share in trust, with Alan paying his bills directly instead of handing him cash.
+
+They also name their longtime financial planner as trust protector, with power to replace Alan with a trust company if he ever wants out. Alan knows this in advance and is relieved. Finally, Ruth and Harold write a letter explaining their reasons. It is not legally binding, but it helps Alan explain his decisions to his siblings.
+
 ## How can you set the trustee up for success?
 
 - **Write a letter of wishes** explaining how you want discretion used, especially for beneficiaries with special circumstances.
@@ -110,6 +122,7 @@ An [executor](/learn/wills/choosing-an-executor) is appointed through a will and
 - **Give clear distribution standards** rather than vague phrases.
 - **Waive or limit bond requirements**, which can be costly.
 - **Share the plan** with the trustee while you are alive: where documents are, which accounts hold what, and who your advisors are.
+- **Keep a current list of assets** and tell the trustee where the original trust document is kept. A trustee who cannot find it cannot act. Our [letter of instruction outline](/checklists/letter-of-instruction-outline) and [important contacts list](/checklists/important-contacts-list) can help.
 - **Review the choice** every few years, as people's lives change.
 
 State rules on trustee duties, notice to beneficiaries and compensation vary. The [state guides](/estate-planning/new-york) (New York, for example) summarize local rules, and our attorneys can explain what applies to your trust.

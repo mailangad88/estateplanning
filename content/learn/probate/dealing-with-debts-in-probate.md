@@ -116,6 +116,8 @@ Denise, 62, died owning a house worth $280,000 with a $120,000 mortgage, a car, 
 
 Now suppose Denise had also co-signed a loan for her friend. That debt would not be hers alone to pay, and the friend's obligation would continue.
 
+Many families feel pressure to pay a relative's debts out of guilt. Paying is a choice, not a requirement, unless one of the situations above applies to you.
+
 ## What should an executor do about debts?
 
 The following steps keep an executor on safe ground.
@@ -127,6 +129,8 @@ The following steps keep an executor on safe ground.
 5. Review each claim, and deny the ones that are invalid or time-barred.
 6. Pay in priority order once the claims period ends, or earlier only if the estate is clearly solvent.
 7. Wait to make final distributions until debts and taxes are settled.
+
+Keep copies of every letter you send and get written confirmation when a debt is settled or closed. If the estate cannot pay everything, tell the creditors in writing that the estate is insolvent, and ask an attorney to help you handle the shortfall properly.
 
 Our [executor duties guide](/learn/after-a-death/executor-duties) goes into all of this in more depth, and [small estate procedures](/learn/probate/small-estate-affidavit) explain how the affidavit route handles debts.
 

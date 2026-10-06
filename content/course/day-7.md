@@ -75,7 +75,7 @@ If you have a trust, assets often need to be moved into it. This is called fundi
 
 ## Keep your plan current
 
-A plan is not a one-time task. People commonly review it every few years and after big changes, such as a marriage, a birth, a divorce, a move or a death. The guide to [updating your estate plan](/guides/updating-your-estate-plan) covers when to look again. The [plan review reminder](/tools/plan-review-reminder) can nudge you.
+A plan is not a one-time task. People commonly review it every few years and after big changes, such as a marriage, a birth, a divorce, a move or a death. The guide to [updating your estate plan](/learn/basics/when-to-update-your-estate-plan) covers when to look again. The [plan review reminder](/tools/plan-review-reminder) can nudge you.
 
 ## A quick example
 

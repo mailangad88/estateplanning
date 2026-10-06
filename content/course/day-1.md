@@ -30,7 +30,7 @@ A [will](/guides/how-to-make-a-will) says who gets your property and names an ex
 
 ### A revocable living trust
 
-Some people use a [revocable living trust](/guides/revocable-living-trust-explained) as the main document instead. You keep control while you are alive. When you die, your trustee can usually pass assets on without probate. Whether a trust makes sense depends on your assets, your family and your state.
+Some people use a [revocable living trust](/learn/trusts/revocable-living-trust) as the main document instead. You keep control while you are alive. When you die, your trustee can usually pass assets on without probate. Whether a trust makes sense depends on your assets, your family and your state.
 
 ### Powers of attorney
 
@@ -46,7 +46,7 @@ Life insurance, retirement accounts and many bank accounts pass by a beneficiary
 
 ## What happens without a plan
 
-If you die without a will, your state's law decides who inherits. It may not match what you would have chosen. The guide on [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will) walks through it.
+If you die without a will, your state's law decides who inherits. It may not match what you would have chosen. The guide on [what happens if you die without a will](/learn/wills/dying-without-a-will) walks through it.
 
 If you become unable to make decisions without powers of attorney, a court may appoint a guardian or conservator. That process can be slow, costly and public.
 
@@ -79,4 +79,4 @@ Keep your list somewhere you will find it. You will use it on day seven.
 
 ## Coming up tomorrow
 
-Day two is about your people: family, beneficiaries, and the people you might trust with a role. If you want a head start, read [what is estate planning](/guides/what-is-estate-planning).
+Day two is about your people: family, beneficiaries, and the people you might trust with a role. If you want a head start, read [what is estate planning](/learn/basics/what-is-estate-planning).
