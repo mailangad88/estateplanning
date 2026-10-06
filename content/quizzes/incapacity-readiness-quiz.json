@@ -1,0 +1,227 @@
+{
+  "title": "Incapacity Readiness Quiz",
+  "promise": "If you could not speak for yourself tomorrow, who would decide? Ten questions to find out how ready you are.",
+  "description": "Ten questions on powers of attorney, healthcare agents, directives, HIPAA releases and account access to see how ready you are if you could not decide.",
+  "kind": "assessment",
+  "category": "incapacity",
+  "magnet": "power-of-attorney-agent-handbook",
+  "related": [
+    "guides/powers-of-attorney",
+    "guides/healthcare-directives-and-living-wills",
+    "compare/living-will-vs-healthcare-power-of-attorney"
+  ],
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Do you have a signed financial power of attorney?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes, but it is old or I am not sure of the details",
+          "points": 1
+        },
+        {
+          "label": "Yes, recent and signed",
+          "points": 2
+        }
+      ],
+      "explanation": "A financial power of attorney lets someone you choose handle money matters if you cannot. Without one, family may need a court to appoint a guardian or conservator, which takes time and money. Rules for signing and witnessing vary by state."
+    },
+    {
+      "id": "q2",
+      "prompt": "Is your financial agent someone you trust, with a named backup?",
+      "options": [
+        {
+          "label": "No agent named",
+          "points": 0
+        },
+        {
+          "label": "An agent, no backup",
+          "points": 1
+        },
+        {
+          "label": "Agent and backup both named",
+          "points": 2
+        }
+      ],
+      "explanation": "An agent can spend, sell and sign for you, so trust matters more than titles. A backup keeps the document useful if the first choice cannot serve. Many people also choose someone who is organized and local."
+    },
+    {
+      "id": "q3",
+      "prompt": "Do you have a healthcare power of attorney (healthcare proxy)?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes, but I have not reviewed it",
+          "points": 1
+        },
+        {
+          "label": "Yes, reviewed recently",
+          "points": 2
+        }
+      ],
+      "explanation": "This document names a person to make medical decisions when you cannot. Without one, state law usually sets an order of family members who can decide, and that may not match your choice. Terms differ by state."
+    },
+    {
+      "id": "q4",
+      "prompt": "Have you written down your wishes for medical care (living will or advance directive)?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Talked about it only",
+          "points": 1
+        },
+        {
+          "label": "Yes, in writing",
+          "points": 2
+        }
+      ],
+      "explanation": "A directive records what treatment you would or would not want in certain situations. It guides your agent and the care team. Talking with your family beforehand helps them follow it."
+    },
+    {
+      "id": "q5",
+      "prompt": "Have you signed a HIPAA authorization so named people can talk to your doctors?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Not sure",
+          "points": 1
+        },
+        {
+          "label": "Yes",
+          "points": 2
+        }
+      ],
+      "explanation": "Privacy rules can limit what providers share, even with close family. A HIPAA release names who may receive medical information. Many healthcare powers of attorney include one, but it is worth checking."
+    },
+    {
+      "id": "q6",
+      "prompt": "Do your agents know they have been chosen, and do they understand your wishes?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "They know, but we have not discussed details",
+          "points": 1
+        },
+        {
+          "label": "Yes, we have talked it through",
+          "points": 2
+        }
+      ],
+      "explanation": "Being named by surprise is hard for an agent. A conversation about values and preferences makes later decisions easier. Many people give agents a written summary."
+    },
+    {
+      "id": "q7",
+      "prompt": "Can your agents find your documents quickly?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Maybe, with some searching",
+          "points": 1
+        },
+        {
+          "label": "Yes, location known and copies shared",
+          "points": 2
+        }
+      ],
+      "explanation": "A document locked in a safe deposit box no one can open can slow down urgent decisions. Some people keep copies with the agent and with their doctor. Hospitals often ask for a copy."
+    },
+    {
+      "id": "q8",
+      "prompt": "Could someone pay your bills and manage your accounts if you were in the hospital?",
+      "options": [
+        {
+          "label": "No, only I have access",
+          "points": 0
+        },
+        {
+          "label": "Partly, a few things",
+          "points": 1
+        },
+        {
+          "label": "Yes, there is a plan",
+          "points": 2
+        }
+      ],
+      "explanation": "Mortgage, utilities and insurance keep coming due. Banks often want their own forms or a valid power of attorney, so it helps to ask ahead. Some people add a trusted person as an authorized user or joint signer, which has its own trade-offs."
+    },
+    {
+      "id": "q9",
+      "prompt": "Do you have a way for someone to get into your phone, email and digital accounts?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Partly, passwords in my head",
+          "points": 1
+        },
+        {
+          "label": "Yes, a list or a password manager with access set up",
+          "points": 2
+        }
+      ],
+      "explanation": "Phones, email and cloud storage may hold bills, photos and contacts. Many services have legacy or emergency contact features. Do not put passwords in a will, since wills can become public."
+    },
+    {
+      "id": "q10",
+      "prompt": "Have you reviewed these documents in the last five years?",
+      "options": [
+        {
+          "label": "Never",
+          "points": 0
+        },
+        {
+          "label": "Longer than five years ago",
+          "points": 1
+        },
+        {
+          "label": "Yes, within five years",
+          "points": 2
+        }
+      ],
+      "explanation": "People, laws and relationships change. An agent may have moved away or passed. Banks may balk at very old powers of attorney, so a refresh can help."
+    }
+  ],
+  "bands": [
+    {
+      "min": 0,
+      "max": 6,
+      "label": "Not yet ready",
+      "summary": "If you could not decide tomorrow, your family might need a court to step in. Powers of attorney and a healthcare agent are the usual starting points. The handbook below explains what agents do."
+    },
+    {
+      "min": 7,
+      "max": 13,
+      "label": "Partly ready",
+      "summary": "You have some pieces, and a few gaps could slow things down. Consider which score of 0 or 1 is easiest to fix first. A good next step is a conversation with the people you chose."
+    },
+    {
+      "min": 14,
+      "max": 20,
+      "label": "Well prepared",
+      "summary": "Your documents and agents appear ready. Keep them current and make sure the people involved can find them. Rules vary by state, so a local attorney can confirm the forms."
+    }
+  ]
+}

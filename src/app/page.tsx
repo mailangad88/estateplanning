@@ -8,6 +8,8 @@ import { getChecklists, getFaqs, getGuides, getLifeEvents, getPosts } from "@/li
 import { getClusters, getPillar } from "@/lib/library";
 import { CardGrid, FaqList } from "@/components/ui";
 import { EmailCapture } from "@/components/capture";
+import { MAGNET_FORMATS, getMagnets } from "@/lib/magnets";
+import { getQuizzes } from "@/lib/quizzes";
 
 const FEATURED_GUIDES = ["what-is-estate-planning", "revocable-living-trust-explained", "guardianship-for-minor-children", "powers-of-attorney", "how-probate-works", "what-happens-if-you-die-without-a-will"];
 
@@ -94,6 +96,18 @@ export default function Home() {
 
       <h2>When you may not need an attorney</h2>
       <p>People who are single, own very little, have no dependents, and have named beneficiaries on every account often manage with a simple will or beneficiary forms. If you are not sure, the plan finder will say so plainly. Consult fee: {firm.consultFee}.</p>
+
+      <h2>Free downloads</h2>
+      <p>Printable worksheets, kits and email courses for every stage of life. <Link href="/free">See all {getMagnets().length}</Link>.</p>
+      <CardGrid
+        items={["guardian-for-your-kids-worksheet", "estate-planning-checklist", "estate-plan-document-locator", "consult-prep-workbook", "new-parents-5-day-course", "executor-first-30-days-guide"]
+          .map((slug) => getMagnets().find((m) => m.slug === slug))
+          .filter((m) => m !== undefined)
+          .map((m) => ({ href: `/free/${m.slug}`, title: m.title, description: m.promise, tag: `Free ${MAGNET_FORMATS[m.format].toLowerCase()}` }))}
+      />
+
+      <h2>Two-minute quizzes</h2>
+      <CardGrid items={getQuizzes().slice(0, 6).map((q) => ({ href: `/quizzes/${q.slug}`, title: q.title, description: q.promise, tag: `${q.questions.length} questions` }))} />
 
       <h2>Most-read guides</h2>
       <CardGrid items={featured.map((g) => ({ href: `/guides/${g.slug}`, title: g.title, description: g.description, tag: `${g.readingMinutes} min read` }))} />

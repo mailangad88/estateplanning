@@ -61,6 +61,10 @@ export interface Magnet {
   headings: Heading[];
   lessons: Lesson[];
   words: number;
+  /** "en" or "es" */
+  lang: string;
+  /** For a translation, the slug of the English original */
+  translationOf?: string;
   /** Raw markdown, used by link checks */
   body: string;
 }
@@ -107,6 +111,8 @@ export function getMagnets(): Magnet[] {
         headings,
         lessons: format === "email-course" ? lessonsOf(content) : [],
         words: content.split(/\s+/).filter(Boolean).length,
+        lang: String(data.lang ?? "en"),
+        translationOf: data.translation_of ? String(data.translation_of) : undefined,
         body: content,
       } satisfies Magnet;
     });
@@ -121,6 +127,12 @@ export function getMagnet(slug: string): Magnet | undefined {
  * Resources to promote on a page, best match first. Blog posts inherit the resources of
  * their pillar guide, so every article in a cluster offers the same lead magnets.
  */
+/** The pillar guide of a blog post path, if any. */
+export function pillarOf(pagePath: string): string | undefined {
+  const key = pagePath.replace(/^\//, "");
+  return key.startsWith("blog/") ? getPosts().find((p) => `blog/${p.slug}` === key)?.pillar : undefined;
+}
+
 export function magnetsFor(pagePath: string, limit = 3): Magnet[] {
   const key = pagePath.replace(/^\//, "").replace(/\/$/, "");
   const keys = [key];
@@ -129,6 +141,7 @@ export function magnetsFor(pagePath: string, limit = 3): Magnet[] {
     if (post?.pillar) keys.push(`guides/${post.pillar}`);
   }
   const scored = getMagnets()
+    .filter((m) => m.lang === "en")
     .map((m) => ({ m, rank: keys.map((k) => m.related.indexOf(k)).filter((i) => i >= 0) }))
     .filter((x) => x.rank.length > 0)
     .sort((a, b) => Math.min(...a.rank) - Math.min(...b.rank) || (a.m.format === "email-course" ? 1 : 0) - (b.m.format === "email-course" ? 1 : 0));
@@ -138,4 +151,10 @@ export function magnetsFor(pagePath: string, limit = 3): Magnet[] {
 /** Opt-in "interest" value sent to /api/subscribe and the CRM. */
 export function magnetInterest(m: Pick<Magnet, "slug">): string {
   return `magnet:${m.slug}`;
+}
+
+/** The other-language versions of a resource (English original and its translations). */
+export function translationsOf(m: Magnet): Magnet[] {
+  const root = m.translationOf ?? m.slug;
+  return getMagnets().filter((x) => x.slug !== m.slug && (x.slug === root || x.translationOf === root));
 }
