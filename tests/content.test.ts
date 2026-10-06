@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
+import { DECISIONS, decisionPath } from "@/config/decisions";
 import { TOOLS } from "@/config/tools";
 import { getChecklists, getComparisons, getGuides, getLifeEvents, getPosts } from "@/lib/content";
 import {
@@ -37,6 +38,7 @@ const validUrls = new Set<string>([
   ...getLifeEvents().map((l) => `/life-events/${l.slug}`),
   ...getChecklists().map((c) => `/checklists/${c.slug}`),
   ...TOOLS.map((t) => `/tools/${t.slug}`),
+  ...DECISIONS.map((d) => decisionPath(d.slug)),
   "/guides", "/compare", "/blog", "/life-events", "/checklists", "/tools", "/faq", "/resources", "/pricing", "/about", "/contact",
 ]);
 

@@ -1,4 +1,5 @@
 import { TOOLS } from "@/config/tools";
+import { DECISIONS, decisionPath } from "@/config/decisions";
 import { getChecklists, getComparisons, getGuides, getLifeEvents, getPosts } from "@/lib/content";
 import { getClusterArticles, getPillar } from "@/lib/library";
 import { magnetsFor, type Magnet } from "@/lib/magnets";
@@ -33,7 +34,7 @@ const BY_CLUSTER: Record<string, string[]> = {
 const TOOLS_BY_CLUSTER: Record<string, string[]> = {
   basics: ["/tools/plan-readiness-assessment", "/checklists/documents-to-gather-before-your-consult", "/checklists/asset-and-account-inventory", "/checklists/letter-of-instruction-outline"],
   wills: ["/tools/will-or-trust", "/checklists/choosing-an-executor-worksheet", "/tools/plan-readiness-assessment"],
-  trusts: ["/tools/will-or-trust", "/checklists/trust-funding-checklist", "/tools/probate-cost-estimator"],
+  trusts: ["/decide/types-of-trusts", "/tools/will-or-trust", "/checklists/trust-funding-checklist", "/tools/probate-cost-estimator"],
   probate: ["/tools/small-estate-checker", "/tools/probate-cost-estimator", "/tools/executor-workload", "/checklists/first-30-days-after-a-death"],
   "after-a-death": ["/checklists/first-30-days-after-a-death", "/tools/small-estate-checker", "/tools/executor-workload", "/tools/probate-cost-estimator"],
   "power-of-attorney": ["/tools/plan-readiness-assessment", "/checklists/important-contacts-list"],
@@ -67,6 +68,7 @@ function lookup(): Map<string, SiteLink> {
     for (const l of getLifeEvents()) index.set(`/life-events/${l.slug}`, { url: `/life-events/${l.slug}`, title: l.title, kind: "Life event" });
     for (const t of TOOLS) index.set(`/tools/${t.slug}`, { url: `/tools/${t.slug}`, title: t.title, kind: "Free tool" });
     for (const c of getChecklists()) index.set(`/checklists/${c.slug}`, { url: `/checklists/${c.slug}`, title: c.title, kind: "Printable checklist" });
+    for (const d of DECISIONS) index.set(decisionPath(d.slug), { url: decisionPath(d.slug), title: d.h1, kind: "Decision guide" });
   }
   return index;
 }
