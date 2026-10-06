@@ -1,6 +1,6 @@
 ---
 title: "Cryptocurrency and estate planning: making sure heirs can access it"
-description: "Crypto can be lost forever if heirs lack the keys. Learn how exchanges, hardware wallets and seed phrases work in an estate, and how to plan so heirs can reach it."
+description: "Crypto can be lost forever if heirs lack the keys. Learn how exchanges, hardware wallets and seed phrases work in an estate, and how to plan for access."
 updated: "2026-10-06"
 answer: >-
   Cryptocurrency is part of your estate, but heirs can only reach it if they have access to the exchange account or the private keys. Without them, the coins may be permanently lost. A good plan combines legal authority for your executor, a secure way to share keys or recovery steps, and a clear record of what you own.

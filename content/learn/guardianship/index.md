@@ -128,7 +128,7 @@ The checklist overlaps with our guide to [estate planning for new parents](/lear
 - Choosing co-guardians who would disagree
 - Assuming a will covers a hospital emergency
 
-Our overview of [common estate planning mistakes](/learn/basics/common-estate-planning-mistakes) lists more across the whole plan.
+Our guides to [wills](/learn/wills), [trusts](/learn/trusts) and [powers of attorney](/learn/power-of-attorney) cover each document in more depth, and our overview of [common estate planning mistakes](/learn/basics/common-estate-planning-mistakes) lists more across the whole plan.
 
 ## How do you talk to family about it?
 

@@ -1,6 +1,6 @@
 ---
 title: "How to choose a guardian for your children"
-description: "A practical way to choose a guardian for your kids: what to weigh, how to compare candidates, how to ask them, and how to name a backup in your will."
+description: "A practical way to choose a guardian for your kids: what to weigh, how to compare candidates, how to ask them, and how to name a backup in your will today."
 updated: "2026-10-06"
 answer: >-
   Choose the person who would raise your children the way you would want them raised, who is willing and able to do it, and who lives a life your kids could fit into. Name a first choice and at least one backup in your will, and talk to each person before you write them down.

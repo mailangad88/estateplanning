@@ -1,6 +1,6 @@
 ---
 title: "Writing a letter of intent for a loved one with a disability"
-description: "A letter of intent tells future caregivers and trustees who your loved one is. Learn what to include, how to organize it, and how to keep it current."
+description: "A letter of intent tells future caregivers and trustees who your loved one is. Learn what to include, how to organize it and how to keep it up to date."
 updated: "2026-10-06"
 answer: >-
   A letter of intent is a non-binding document in which parents describe their loved one's history, routines, health, preferences and hopes, so future guardians, trustees and caregivers can continue the care you give. It does not replace legal documents, but it often decides how well the legal documents work in practice.

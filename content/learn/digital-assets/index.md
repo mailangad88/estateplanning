@@ -128,6 +128,22 @@ Digital assets are not a separate plan. They sit inside the same documents as ev
 
 It also helps to think in terms of three time frames. If you are alive and well, your plan is about convenience and security. If you are incapacitated, it is about whether your agent can pay bills, keep accounts open and reach medical portals. After death, it is about who is in charge and what they can reach. A plan that works in all three is better than one that works only in the last.
 
+## What should you do about subscriptions and automatic payments?
+
+Recurring charges keep running after a death unless someone stops them. Streaming services, software licenses, cloud storage, gym memberships and app subscriptions can quietly drain an account for months. Part of your inventory should list what you pay for, which card or account pays, and which ones your family should cancel and which, such as insurance or utilities, must stay active. A bank statement or credit card statement from the last three months is the easiest way to find them, and your executor will likely want those statements anyway.
+
+Do the same for anything that auto-renews with a tail risk, such as a domain name, a cloud storage plan that holds family photos, or a password manager. Letting one lapse by accident is the most common way digital property disappears.
+
+## How do you explain the plan to the people involved?
+
+A plan nobody knows about does not work. Tell your executor, your agent under your power of attorney and your digital fiduciary where the inventory and access instructions are, and what each of them is expected to do. You do not need to share account details today. You only need to say, "If something happens, here is where to look."
+
+Some families find this easier with a short written note, with the location of the letter, the name of the attorney who holds a copy and the first three things to do. Our article on [talking to your family about your estate plan](/learn/basics/talking-to-family-about-estate-plan) offers ways to open that conversation without it feeling morbid.
+
+## What are realistic expectations?
+
+No plan makes every account recoverable. Some companies will refuse, some services will delete data on a schedule and some licenses end at death. The aim is narrower and achievable: that your family can find the important things, reach the ones that matter most and make informed choices about the rest, instead of starting from nothing during a hard time.
+
 ## How we can help
 
 Digital estate planning works best when your legal documents and your practical access plan fit together. Our attorneys can add digital asset provisions to your will, trust and power of attorney, and help you decide who should hold what. Use the [plan finder](/plan-finder) to see where you stand, or book a consultation when you are ready. A short conversation now can save your family a long and frustrating search later.

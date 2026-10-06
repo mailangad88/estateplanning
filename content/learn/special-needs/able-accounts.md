@@ -1,6 +1,6 @@
 ---
 title: "ABLE accounts: how they work alongside a special needs trust"
-description: "ABLE accounts let people with disabilities save without losing SSI or Medicaid. Learn the 2026 age rule change, limits, payback rules and how they pair with a trust."
+description: "ABLE accounts let people with disabilities save without losing SSI or Medicaid. Learn the 2026 age change, limits, payback rules and how they pair with a trust."
 updated: "2026-10-06"
 answer: >-
   An ABLE account is a tax-advantaged savings account for a person whose disability began before age 46 (before 26 until January 1, 2026). Savings up to $100,000 do not count toward the $2,000 SSI limit, and money spent on qualified disability expenses is tax-free. A state may claim remaining funds for Medicaid after death.

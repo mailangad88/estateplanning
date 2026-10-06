@@ -172,6 +172,10 @@ Many families also find that a written update every month or two, sent to everyo
 
 Disagreements are common, and they are usually about communication, timing or sentimental items, more than money. Start with the document: the will or trust says who gets what, and the executor or trustee must follow it. For keepsakes the document does not cover, some families take turns choosing, or ask a neutral person to help. If a conflict grows, mediation is often faster and kinder than court. If you believe someone has acted improperly, see our article on [removing an executor or trustee](/learn/after-a-death/can-an-executor-be-removed). If you believe the will itself is not valid, see [will contests](/learn/wills/contesting-a-will).
 
+## When should you call an attorney?
+
+Call one if the person owned real estate, a business or substantial accounts, if there is no will, if family members disagree, or if you are unsure what you are signing. Many first meetings are a single conversation that tells you whether probate is needed and what to do this month. If the estate is small and simple, you may need very little help, but a quick check can still save you from a mistake that is expensive to undo.
+
 ## How we can help
 
 Families often tell us the hardest part was not knowing what they did not know. Our attorneys can explain what your state requires, who has authority, what can wait and which steps to take in what order. Start with the [plan finder](/plan-finder) to see where you are, or book a consultation whenever you feel ready. If you are also thinking about your own plan, we are glad to help with that too, when the time is right.

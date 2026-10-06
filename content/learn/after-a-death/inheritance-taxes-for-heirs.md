@@ -1,6 +1,6 @@
 ---
 title: "Do you pay taxes on an inheritance? What heirs should know"
-description: "Most heirs owe no tax on money or property they inherit. Learn when estate tax, state inheritance tax, income tax on retirement accounts and capital gains apply."
+description: "Most heirs owe no tax on what they inherit. Learn when estate tax, state inheritance tax, income tax on retirement accounts and capital gains do apply."
 updated: "2026-10-06"
 answer: >-
   There is no federal inheritance tax, and most heirs owe no income tax on cash or property they inherit. Taxes can still arise: the estate may owe federal or state estate tax, a few states charge an inheritance tax, and inherited retirement accounts are taxed as income when withdrawn.

@@ -1,6 +1,6 @@
 ---
 title: "Special needs trusts: how they protect SSI and Medicaid eligibility"
-description: "How a special needs trust lets a person with a disability receive money without losing SSI or Medicaid, what it can pay for, and how to set one up."
+description: "How a special needs trust lets a person with a disability receive money without losing SSI or Medicaid, what it can pay for, and how a family sets one up."
 updated: "2026-10-06"
 answer: >-
   A special needs trust holds money for a person with a disability so the assets do not count toward the SSI resource limit of $2,000 for an individual or Medicaid asset limits. A trustee pays for extras that benefits do not cover, such as therapies, transportation and equipment, instead of handing cash to the beneficiary.
