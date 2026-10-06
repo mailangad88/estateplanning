@@ -6,4 +6,9 @@ export type DiagramProps = {
   caption?: ReactNode;
   /** Render only the <svg>, for video frames, OG images and exports. */
   bare?: boolean;
+  /**
+   * Progressive reveal for video. When a number, elements that belong to a
+   * later step render hidden (or dimmed); undefined shows everything.
+   */
+  step?: number;
 };
