@@ -2,6 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  async headers() {
+    const staging = process.env.SITE_ENV === "staging" || process.env.VERCEL_ENV === "preview";
+    return staging ? [{ source: "/(.*)", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] }] : [];
+  },
   async redirects() {
     return [
       { source: "/tools/probate-cost", destination: "/tools/probate-cost-estimator", permanent: true },

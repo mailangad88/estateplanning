@@ -1,4 +1,5 @@
 import { createHmac } from "node:crypto";
+import { IS_STAGING } from "@/lib/env";
 import type { ConsentRecord } from "@/lib/consent";
 import type { LeadSubmission } from "@/lib/lead";
 import type { ScoreResult } from "@/lib/scoring";
@@ -203,7 +204,9 @@ export async function postToCrm(
   fetchImpl: typeof fetch = fetch,
   opts: DeliveryOptions = {},
 ): Promise<DeliveryResult> {
-  const url = opts.url ?? process.env.CRM_WEBHOOK_URL;
+  // Staging never forwards submissions to the real CRM unless STAGING_ALLOW_CRM=true.
+  const blocked = IS_STAGING && process.env.STAGING_ALLOW_CRM !== "true";
+  const url = blocked ? undefined : (opts.url ?? process.env.CRM_WEBHOOK_URL);
   if (!url) {
     console.info("record received (no CRM webhook configured)", summary);
     return { delivered: false, target: "log", attempts: 0 };

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { abs } from "@/lib/seo";
+import { IS_STAGING } from "@/lib/env";
 
 /** Search engines and AI assistants are welcome to read and cite the public content. */
 const AI_AGENTS = [
@@ -9,6 +10,8 @@ const AI_AGENTS = [
 ];
 
 export default function robots(): MetadataRoute.Robots {
+  // Staging holds draft content: keep every crawler out.
+  if (IS_STAGING) return { rules: [{ userAgent: "*", disallow: "/" }] };
   return {
     rules: [
       { userAgent: "*", allow: "/", disallow: ["/api/", "/portal"] },

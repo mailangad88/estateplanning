@@ -8,6 +8,7 @@ import MegaFooter from "@/components/MegaFooter";
 import { TrackedPhoneLink } from "@/components/TrackedPhone";
 import Analytics from "@/components/Analytics";
 import { JsonLd, siteGraphLd, SITE_URL } from "@/lib/seo";
+import { IS_STAGING } from "@/lib/env";
 import "./globals.css";
 import "@/components/visuals/visuals.css";
 
@@ -16,12 +17,16 @@ export const metadata: Metadata = {
   title: { default: `${firm.brandName} | Estate planning with a real attorney`, template: `%s | ${firm.brandName}` },
   description: "Wills, trusts and powers of attorney, explained plainly by an estate planning attorney.",
   alternates: { types: { "application/rss+xml": "/feed.xml" } },
+  ...(IS_STAGING ? { robots: { index: false, follow: false } } : {}),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
+        {IS_STAGING && (
+          <div className="staging-banner" role="note">Staging preview. Draft content pending attorney review, not a live law firm site. Test submissions only: forms are not sent to the firm.</div>
+        )}
         <header className="site">
           <div className="container wide">
             <Link href="/" className="brand">{firm.brandName}</Link>
