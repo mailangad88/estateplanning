@@ -102,6 +102,12 @@ export const packages: Package[] = [
   { id: "legacy", name: "Legacy", price: "Quote after consult", for: "Blended families, business owners, property in more than one state, special needs planning or larger estates.", includes: ["Everything in Complete", "Special needs or children's trust provisions", "Additional deeds", "Business interest assignment", "Coordination with your financial advisor or CPA"], excludes: ["Court proceedings", "Tax return preparation", "Work outside the custom scope"] },
 ];
 
+/**
+ * The state the firm launches in (Angad confirmed Illinois, 2026-10-06). Content for it is written first and
+ * reviewed first, whatever SERVED_STATES says on a given deploy.
+ */
+export const LAUNCH_STATE = { abbr: "IL", name: "Illinois", slug: "illinois" } as const;
+
 /** States the firm is licensed in and accepts leads from. "XX" is the placeholder. */
 export function servedStates(): string[] {
   const raw = process.env.SERVED_STATES ?? process.env.NEXT_PUBLIC_SERVED_STATES ?? "XX";

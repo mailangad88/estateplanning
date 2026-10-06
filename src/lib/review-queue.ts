@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { servedStates } from "@/config/firm";
+import { LAUNCH_STATE, servedStates } from "@/config/firm";
 import { getComparisons, getGuides, getLifeEvents, getPosts } from "@/lib/content";
 import { getAllArticles, getStateGuides } from "@/lib/library";
 
@@ -82,7 +82,7 @@ function scoreFor(slug: string, kind: ReviewItem["kind"], words: number, extra: 
   }
   if (extra.launchState) {
     score += 60;
-    reasons.push("launch-state guide");
+    reasons.push(`launch state (${LAUNCH_STATE.name})`);
   }
   if (kind === "pillar") reasons.push("topic hub that links every article in its cluster");
   if (words < 600) score -= 10;
@@ -107,7 +107,7 @@ function fileFor(p: string): string {
 
 /** Every page that needs the attorney's sign-off, highest search value first. */
 export function reviewQueue({ includeReviewed = false } = {}): ReviewItem[] {
-  const served = new Set(servedStates());
+  const served = new Set([...servedStates(), LAUNCH_STATE.abbr]);
   const items: ReviewItem[] = [];
   for (const a of getAllArticles()) {
     const kind = a.kind;
@@ -119,7 +119,7 @@ export function reviewQueue({ includeReviewed = false } = {}): ReviewItem[] {
       reviewed: a.review === "approved",
       words: a.wordCount,
       tier: tierFor(kind === "pillar" ? a.cluster : a.slug, a.cluster, kind),
-      ...scoreFor(key, kind, a.wordCount),
+      ...scoreFor(key, kind, a.wordCount, { launchState: a.cluster === LAUNCH_STATE.slug }),
     });
   }
   for (const s of getStateGuides()) {

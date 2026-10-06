@@ -14,6 +14,7 @@
     "check:site": "node scripts/check-site.mjs",
     "search:index": "tsx scripts/build-search-index.mts",
     "review:queue": "tsx scripts/review-queue.mts",
+    "embeds": "tsx scripts/embeds.mts",
     "check:ai-text": "node scripts/ai-text-check.mjs"
   },
   "dependencies": {

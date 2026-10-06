@@ -25,7 +25,7 @@ const articles = getAllArticles();
 const glossary = getGlossary();
 const states = getStateGuides();
 
-const STATIC_ROUTES = ["/", "/plan-finder", "/learn", "/glossary", "/estate-planning", "/legal/privacy", "/legal/disclaimer", "/legal/sms-terms", "/legal/how-we-work"];
+const STATIC_ROUTES = ["/", "/plan-finder", "/learn", "/glossary", "/estate-planning", "/estate-planning/will-rules", "/estate-planning/illinois-probate-fees", "/legal/privacy", "/legal/disclaimer", "/legal/sms-terms", "/legal/how-we-work"];
 const validUrls = new Set<string>([
   ...STATIC_ROUTES,
   ...articles.map((a) => a.url),

@@ -61,9 +61,11 @@ if (cmd === "stats") {
   const cluster = args[0] && !/^\d+$/.test(args[0]) ? args[0] : undefined;
   const n = Number(args.find((a) => /^\d+$/.test(a)) ?? 20);
   const risk = { low: 0, medium: 1, high: 2 };
+  // Illinois is the launch state: its questions come first.
+  const il = (q) => (q.cluster === "illinois" || /illinois/i.test(q.q) ? 0 : 1);
   const open = bank
     .filter((q) => q.coverage === "none" && (!cluster || q.cluster === cluster))
-    .sort((a, b) => (a.suggest === "page") - (b.suggest === "page") || risk[a.risk] - risk[b.risk] || a.cluster.localeCompare(b.cluster))
+    .sort((a, b) => il(a) - il(b) || (a.suggest === "page") - (b.suggest === "page") || risk[a.risk] - risk[b.risk] || a.cluster.localeCompare(b.cluster))
     .slice(0, n);
   for (const q of open) console.log(`${q.cluster.padEnd(24)} ${q.risk.padEnd(6)} ${q.suggest.padEnd(4)} ${q.q}`);
 } else if (cmd === "pace") {

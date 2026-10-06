@@ -68,6 +68,7 @@ export function allPages(): SitePage[] {
     pages.push({ path: a.url, title: a.title, description: a.description, updated: a.updated || TODAY, section: `Library: ${getCluster(a.cluster)?.name ?? a.cluster}` });
   }
   pages.push({ path: "/estate-planning/will-rules", title: "Will signing rules by state (50-state table)", description: "Witnesses, handwritten wills and self-proving affidavits in every state, with a CSV download.", updated: TODAY, section: "Laws by state" });
+  pages.push({ path: "/estate-planning/illinois-probate-fees", title: "Illinois probate filing fees by county (2026 table)", description: "What Illinois circuit clerks charge to open an estate, file an appearance and file a will, with a CSV download.", updated: TODAY, section: "Laws by state" });
   for (const s of getStateGuides().filter(isIndexable)) {
     pages.push({ path: s.url, title: s.title, description: s.description, updated: s.updated || TODAY, section: "Laws by state" });
   }

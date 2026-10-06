@@ -1,0 +1,93 @@
+{
+  "cities": [
+    {
+      "slug": "chicago",
+      "name": "Chicago",
+      "county": "Cook County",
+      "probateCourt": {
+        "name": "Circuit Court of Cook County, County Department, Probate Division",
+        "address": "Richard J. Daley Center, 50 West Washington St., Room 1202, Chicago, IL 60602",
+        "url": "https://www.cookcountyclerkofcourt.org/divisions/probate-division"
+      },
+      "localNotes": [
+        "Cook County probate cases are handled by the Probate Division of the Circuit Court, with the clerk's main probate office in Room 1202 of the Richard J. Daley Center, 50 West Washington Street, Chicago. Probate case documents are filed electronically through eFile Illinois (source: https://www.cookcountyclerkofcourt.org/divisions/probate-division).",
+        "A will can be filed with the Probate Division in person at the Daley Center, by mail to the Daley Center, or in person at any of the clerk's five branch offices. The clerk lists no fee for filing a will (source: https://www.cookcountyclerkofcourt.org/divisions/probate-division).",
+        "The Cook County Clerk of the Circuit Court lists a Pro Se/Self-Represented Litigant Center and a guide to free and low-cost legal services in Cook County on its probate page (source: https://www.cookcountyclerkofcourt.org/divisions/probate-division).",
+        "Cook County's recorder of deeds is the Cook County Clerk's Recordings office (312.603.3974). The Clerk's Property After Death resource guide describes the Illinois Transfer on Death Instrument as a single document that moves a home at death, and points to the Clerk's forms page (source: https://cookcountyclerkil.gov/publications/property-after-death-resource-guide). Confirm the recording requirements for your instrument with that office or an attorney."
+      ],
+      "nearby": ["wheaton", "aurora"],
+      "updated": "2026-10-06"
+    },
+    {
+      "slug": "wheaton",
+      "name": "Wheaton",
+      "county": "DuPage County",
+      "probateCourt": {
+        "name": "Circuit Court of the 18th Judicial Circuit (DuPage County), Probate and Guardianship",
+        "address": "505 N. County Farm Rd., Wheaton, IL 60187",
+        "url": "https://www.dupagecourts.gov/18th_judicial_circuit_court/probate___guardianship/"
+      },
+      "localNotes": [
+        "DuPage County's court probate and guardianship page lists the Circuit Court Clerk's Office on the first floor of the courthouse at 505 N. County Farm Rd., Wheaton (630-407-8700), and says guardian reports are e-filed through i2file (source: https://www.dupagecourts.gov/18th_judicial_circuit_court/probate___guardianship/).",
+        "The DuPage County Recorder is at 421 N. County Farm Road, Wheaton, open 8 a.m. to 4:30 p.m. Monday to Friday, and accepts documents in person or by mail. This is the office that records a deed or transfer on death instrument for DuPage property (source: https://www.dupageco.org/recorder/).",
+        "The DuPage circuit clerk's filing fee book lists no fee to file a will, and a $300 fee to open a decedent's estate, in the schedule effective September 11, 2026. Fees change, so check the current book (source: https://dupagecircuitclerk.gov/18thJudicial/viewstaticpdf?pdfFile=FilingFeesSchedule.pdf)."
+      ],
+      "nearby": ["chicago", "aurora"],
+      "updated": "2026-10-06"
+    },
+    {
+      "slug": "waukegan",
+      "name": "Waukegan",
+      "county": "Lake County",
+      "probateCourt": {
+        "name": "Circuit Court of the 19th Judicial Circuit (Lake County), Probate Court",
+        "address": "Lake County Courthouse, 18 N. County St., Waukegan, IL 60085",
+        "url": "https://www.19thcircuitcourt.state.il.us/1331/Probate-Court"
+      },
+      "localNotes": [
+        "Lake County's probate court sits in the main courthouse at 18 N. County St., Waukegan; the Probate Division's phone is 847-377-3260 (source: https://www.19thcircuitcourt.state.il.us/1331/Probate-Court).",
+        "The Lake County probate standing order effective January 12, 2026 requires attorneys and parties to e-file with the Circuit Clerk, and sets hearing days by case type, including Wednesdays for adult guardianships and Fridays for self-represented litigants (source: https://19thcircuitcourt.state.il.us/DocumentCenter/View/5887/DJV-Standing-Order---Procedures-for-Probate-Guardianship-Division-Cases---1-12-26)."
+        ,
+        "The Lake County Clerk's Recording Division is at 18 N County St, 6th Floor, Waukegan (847-377-2575, 8:30 a.m. to 5:00 p.m. weekdays). Its deed-recording checklist includes any local municipal transfer tax stamp, which must be obtained before submitting a deed (sources: https://www.lakecountyil.gov/Faq.aspx?QID=558 and https://www.lakecountyil.gov/DocumentCenter/View/3233/Pamphlet---Recording-Deeds-PDF)."
+      ],
+      "nearby": ["chicago"],
+      "updated": "2026-10-06"
+    },
+    {
+      "slug": "joliet",
+      "name": "Joliet",
+      "county": "Will County",
+      "probateCourt": {
+        "name": "Circuit Court of the 12th Judicial Circuit (Will County)",
+        "address": "Will County Courthouse, 100 West Jefferson Street, Joliet, IL 60432",
+        "url": "https://judges.willcountyillinois.com/Court-Services/Locations"
+      },
+      "localNotes": [
+        "The 12th Judicial Circuit lists the Will County Courthouse at 100 West Jefferson Street, Joliet (source: https://judges.willcountyillinois.com/Court-Services/Locations).",
+        "Will County requires civil e-filing through eFileIL and allows remote video hearings under Administrative Order 2023-2 (source: https://judges.willcountyillinois.com/Circuit-Court).",
+        "The Will County Circuit Clerk's fee schedule (effective 07/12/2026, updated 09/03/2026) lists no fee to file a will and a $314 new probate case filing fee. Fees change, so check the current schedule (source: https://www.circuitclerkofwillcounty.com/public-access/fee-schedule).",
+        "The Clerk's site offers Zoom virtual court access and a probate forms page (source: https://circuitclerkofwillcounty.com/Court-Forms)."
+      ],
+      "nearby": ["aurora", "wheaton"],
+      "updated": "2026-10-06"
+    },
+    {
+      "slug": "aurora",
+      "name": "Aurora",
+      "county": "Kane County",
+      "probateCourt": {
+        "name": "Circuit Court of the 16th Judicial Circuit (Kane County), Clerk of the Circuit Court",
+        "address": "540 South Randall Road, St. Charles, IL 60174",
+        "url": "https://cic.countyofkane.org/"
+      },
+      "localNotes": [
+        "The Kane County Circuit Clerk lists an Aurora Branch in addition to its main office at 540 South Randall Road, St. Charles (630-232-3413). The Aurora Branch is open Monday to Friday 8:30 a.m. to noon and 1 to 3 p.m., and the clerk's office handles probate and wills for the 16th Judicial Circuit (source: https://cic.countyofkane.org/Pages/contact-us.aspx).",
+        "Kane County requires e-filing for new cases unless an Exemption from eFiling for Good Cause applies (source: https://cic.countyofkane.org/Pages/Filing-New-Cases.aspx).",
+        "The clerk's fee schedule effective 9/1/2026 lists no fee to file a will and $314 to administer a decedent's estate (source: https://cic.countyofkane.org/Documents/FeeSchedule.pdf).",
+        "The clerk's site points self-represented people to the Kane County Law Library & Self Help Legal Center (source: https://cic.countyofkane.org/Pages/Online-Court-Records.aspx)."
+      ],
+      "nearby": ["wheaton", "joliet"],
+      "updated": "2026-10-06"
+    }
+  ]
+}
