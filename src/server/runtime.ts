@@ -8,6 +8,7 @@ import { cookies } from "next/headers";
 import { actorFromSession, SESSION_COOKIE } from "@/server/auth/session";
 import { createMemoryDb, type Db } from "@/server/db";
 import { seedDemo } from "@/server/seed";
+import { scopeToPlan } from "@/server/services/planAccount";
 import type { Actor } from "@/server/types";
 
 const g = globalThis as unknown as { __epDb?: Promise<Db> };
@@ -63,9 +64,7 @@ export function scopedDb(db: Db, actor: Actor): Db {
  * second layer; the family plan service checks the plan id itself.
  */
 export function plannerDb(db: Db, planId: string): Db {
-  const pg = db as Db & { withSession?: (s: unknown) => Db };
-  if (!pg.withSession) return db;
-  return pg.withSession({ userId: planId, role: "planner" });
+  return scopeToPlan(db, planId);
 }
 
 /** The signed-in actor for a server component or route handler, or null. */

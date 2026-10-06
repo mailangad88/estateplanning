@@ -570,3 +570,44 @@ export interface PlanLinkUse {
   id: string;
   usedAt: string;
 }
+
+/**
+ * The second factor for a family plan account. `id` is the plan id: one account per verified email, one
+ * plan per account. The TOTP secret is encrypted with a key derived from FAMILY_PLAN_KEY and bound to the
+ * plan id; recovery codes are kept as scrypt hashes only. Failed attempts and the lockout live here, in
+ * the database, so the limit holds across app instances.
+ */
+export interface PlanMfaRecord {
+  id: string;
+  totpSecretEnc: string;
+  /** a replacement authenticator being set up, until its first code confirms it */
+  pendingSecretEnc?: string;
+  lastUsedStep: number;
+  recoveryCodeHashes: string[];
+  /** unset until the first valid code confirms the authenticator */
+  enrolledAt?: string;
+  failedAttempts: number;
+  lockedUntil?: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+/**
+ * A signed-in device for a family plan account. `id` is the SHA-256 of the random secret in the cookie,
+ * so the table alone cannot be turned into a working cookie. Only a coarse device summary and an IP
+ * prefix are kept, for the "Signed-in devices" list.
+ */
+export interface PlanSession {
+  id: string;
+  planId: string;
+  createdAt: string;
+  lastSeenAt: string;
+  /** absolute expiry, fixed at sign-in */
+  expiresAt: string;
+  /** e.g. "Safari on iPhone" */
+  userAgent?: string;
+  /** e.g. "203.0.113.0/24" */
+  ipPrefix?: string;
+  /** true when this sign-in used a recovery code */
+  viaRecoveryCode?: boolean;
+}

@@ -68,10 +68,14 @@ interface Props {
   configured: boolean;
   saved?: "new" | "back";
   linkExpired: boolean;
+  /** the email link was used but the code step is not done */
+  pendingCode?: boolean;
+  /** the account was just deleted, or every device signed out, from the account page */
+  ended?: "deleted" | "signed_out" | "timeout";
   phone: string;
 }
 
-export default function FamilyPlanner({ initial, configured, saved, linkExpired, phone }: Props) {
+export default function FamilyPlanner({ initial, configured, saved, linkExpired, pendingCode, ended, phone }: Props) {
   const [signedIn, setSignedIn] = useState(!!initial);
   const [body, setBody] = useState<FamilyPlanBody>(() => initial?.body ?? emptyPlan());
   const [summary, setSummary] = useState<FamilyPlanSummary | null>(initial?.summary ?? null);
@@ -82,6 +86,8 @@ export default function FamilyPlanner({ initial, configured, saved, linkExpired,
   const [prefillShown, setPrefillShown] = useState(false);
   const [ready, setReady] = useState(false);
   const dirty = useRef(false);
+  // A device draft merged into the saved plan stays on the device until the server has it.
+  const draftUploading = useRef(false);
 
   // First visit: pick up the device draft, or start from what the visitor told us earlier.
   useEffect(() => {
@@ -95,11 +101,13 @@ export default function FamilyPlanner({ initial, configured, saved, linkExpired,
       let next = initial.body;
       if (parsed?.ok) next = mergePlans(next, parsed.body);
       if (prefill) next = mergePlans(next, prefill);
-      clearDraft();
       if (JSON.stringify(next) !== JSON.stringify(initial.body)) {
         dirty.current = true;
+        draftUploading.current = !!parsed?.ok;
         setBody(next);
         setSaveState("pending");
+      } else {
+        clearDraft();
       }
       setPrefillShown(!!next.prefill?.sources.length);
     } else if (parsed?.ok) {
@@ -151,6 +159,10 @@ export default function FamilyPlanner({ initial, configured, saved, linkExpired,
           setSaveState("error");
           setMessage(data.error ?? "We could not save that. Please try again.");
           return;
+        }
+        if (draftUploading.current) {
+          clearDraft();
+          draftUploading.current = false;
         }
         setSummary(data.plan.summary);
         setLinked(!!data.plan.linkedToLead);
@@ -224,8 +236,18 @@ export default function FamilyPlanner({ initial, configured, saved, linkExpired,
       </aside>
 
       {linkExpired && <p className={styles.alert} role="alert">That link has expired or was already used. Ask for a new one in &ldquo;Save your plan&rdquo; below.</p>}
+      {pendingCode && !signedIn && (
+        <p className={styles.prefill} role="status">
+          <strong>You are almost signed in.</strong> <Link href="/my-plan/verify">Enter the code from your authenticator app</Link> to open your saved plan.
+        </p>
+      )}
+      {ended === "deleted" && !signedIn && <p className={styles.ok} role="status">Your account and plan are deleted, and every device is signed out.</p>}
+      {ended === "signed_out" && !signedIn && <p className={styles.ok} role="status">You are signed out on every device. Your saved plan is still there.</p>}
+      {ended === "timeout" && !signedIn && <p className={styles.alert} role="status">Your sign-in has ended. Ask for a new link in &ldquo;Save your plan&rdquo; below to open your plan.</p>}
       {saved && signedIn && (
-        <p className={styles.ok} role="status">{saved === "new" ? "Your plan is saved. You can come back to it any time from the link we emailed." : "Welcome back. Here is your plan where you left it."}</p>
+        <p className={styles.ok} role="status">
+          {saved === "new" ? "Two-step verification is on and your plan is saved. Come back any time with a new email link and a code from your app." : "Welcome back. Here is your plan where you left it."}
+        </p>
       )}
 
       {prefillShown && body.prefill?.sources.length ? (
@@ -435,17 +457,6 @@ export default function FamilyPlanner({ initial, configured, saved, linkExpired,
           setSaveState("idle");
           setMessage("You are signed out on this device. Your saved plan is still there; ask for a new link to open it.");
         }}
-        onDeleted={() => {
-          clearDraft();
-          setSignedIn(false);
-          setBody(emptyPlan());
-          setSummary(null);
-          setErrors({});
-          setPrefillShown(false);
-          setSaveState("idle");
-          setMessage(null);
-          dirty.current = false;
-        }}
         onClearDevice={() => {
           clearDraft();
           dirty.current = false;
@@ -570,16 +581,14 @@ function AddAsset({ onAdd }: { onAdd: (type: AssetType) => void }) {
   );
 }
 
-function SavePanel({ configured, signedIn, onSignedOut, onDeleted, onClearDevice }: {
-  configured: boolean; signedIn: boolean; onSignedOut: () => void; onDeleted: () => void; onClearDevice: () => void;
+function SavePanel({ configured, signedIn, onSignedOut, onClearDevice }: {
+  configured: boolean; signedIn: boolean; onSignedOut: () => void; onClearDevice: () => void;
 }) {
   const [email, setEmail] = useState("");
   const [agree, setAgree] = useState(false);
   const [busy, setBusy] = useState(false);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [confirmDelete, setConfirmDelete] = useState(false);
-  const [deleted, setDeleted] = useState(false);
 
   async function requestLink(e: React.FormEvent) {
     e.preventDefault();
@@ -613,46 +622,19 @@ function SavePanel({ configured, signedIn, onSignedOut, onDeleted, onClearDevice
     onSignedOut();
   }
 
-  async function deleteAll() {
-    setBusy(true);
-    try {
-      const res = await fetch("/api/my-plan", { method: "DELETE" });
-      if (res.ok || res.status === 401) {
-        setDeleted(true);
-        setConfirmDelete(false);
-        onDeleted();
-      } else setError("We could not delete your plan. Please try again, or call us and we will do it for you.");
-    } finally {
-      setBusy(false);
-    }
-  }
-
-  if (deleted) {
-    return (
-      <section className={styles.card} id="fp-save" aria-labelledby="fp-save-h">
-        <h2 id="fp-save-h">Your plan is deleted</h2>
-        <p role="status">We removed your answers and the summary for good, and cleared this device. You can start again any time.</p>
-      </section>
-    );
-  }
-
   if (signedIn) {
     return (
       <section className={styles.card} id="fp-save" aria-labelledby="fp-save-h">
         <h2 id="fp-save-h">Your plan is saved</h2>
-        <p>Changes save as you go. To come back on another device, ask for a new link with the same email.</p>
+        <p>
+          Changes save as you go. To come back on another device, ask for a new link with the same email, then enter a code from your
+          authenticator app. You stay signed in on this device for up to 7 days, or until 30 minutes pass without any activity.
+        </p>
         <div className={styles.actions}>
+          <Link className="button small" href="/my-plan/account">Account and security</Link>
           <button type="button" className="button secondary small" onClick={() => void signOut()}>Sign out on this device</button>
-          {!confirmDelete ? (
-            <button type="button" className={styles.danger} onClick={() => setConfirmDelete(true)}>Delete my data</button>
-          ) : (
-            <span className={styles.confirm} role="group" aria-label="Confirm delete">
-              <span>This removes your whole plan for good. It cannot be undone.</span>
-              <button type="button" className={styles.dangerSolid} disabled={busy} onClick={() => void deleteAll()}>Yes, delete everything</button>
-              <button type="button" className="linklike" onClick={() => setConfirmDelete(false)}>Keep my plan</button>
-            </span>
-          )}
         </div>
+        <p className="notice">Download your plan, see signed-in devices and recent activity, or delete your account from Account and security.</p>
         {error && <p className="error" role="alert">{error}</p>}
       </section>
     );
@@ -664,10 +646,13 @@ function SavePanel({ configured, signedIn, onSignedOut, onDeleted, onClearDevice
       {!configured ? (
         <p>Saving is not available yet. Your answers stay on this device until you clear them.</p>
       ) : sent ? (
-        <p role="status">Check your email. The link works once and expires in 30 minutes. Until you open it, your answers stay on this device only.</p>
+        <p role="status">
+          Check your email. The link works once and expires in 30 minutes. After it, you will enter a code from an authenticator app
+          (the first time, you will set one up). Until then, your answers stay on this device only.
+        </p>
       ) : (
         <form onSubmit={(e) => void requestLink(e)} noValidate>
-          <p>Right now your answers are only on this device. Enter your email and we will send a link that saves them. No password needed.</p>
+          <p>Right now your answers are only on this device. Enter your email and we will send a link that saves them. No password: the link, plus a code from an authenticator app on your phone, keeps the plan yours alone.</p>
           <label className="field" htmlFor="fp-email">
             Email
             <input id="fp-email" type="email" autoComplete="email" required value={email} onChange={(e) => setEmail(e.target.value)} />

@@ -8,7 +8,7 @@ const TABLES = [
   "users", "firms", "lawyers", "persons", "leads", "assignments", "documents", "comments", "activities",
   "consults", "engagements", "payments", "tasks", "fee_rule_versions", "billable_events", "invoices",
   "sequence_enrollments", "suppressions", "fact_verifications", "template_approvals", "crm_deliveries", "seminars", "partners", "partner_gifts", "partner_referrals",
-  "conversion_events", "review_requests", "family_plans", "family_plan_bodies", "plan_link_uses", "audit_events",
+  "conversion_events", "review_requests", "family_plans", "family_plan_bodies", "plan_link_uses", "plan_mfa", "plan_sessions", "audit_events",
 ];
 
 describe("db/schema.sql", () => {
@@ -57,6 +57,22 @@ describe("db/schema.sql", () => {
     for (const p of bodies) expect(p).not.toMatch(/'(attorney|intake|platform_admin|firm_admin|paralegal|client|marketing)'/);
     expect(sql).toMatch(/CREATE POLICY family_plans_owner ON family_plans[\s\S]*?app_role\(\) = 'planner' AND id = app_user_id\(\)/);
     expect(sql).toMatch(/CREATE TRIGGER family_plans_owner_guard BEFORE INSERT OR UPDATE ON family_plans/);
+  });
+
+  it("family plan accounts: second factor and devices are the owner's alone; staff have no policy at all", () => {
+    for (const t of ["plan_mfa", "plan_sessions"]) {
+      const policies = sql.match(new RegExp(`CREATE POLICY \\w+ ON ${t}\\b[\\s\\S]*?;`, "g")) ?? [];
+      expect(policies.length, t).toBe(2); // service_all + the owner policy
+      for (const p of policies.filter((x) => /TO app_user/.test(x))) {
+        expect(p).toMatch(/app_role\(\) = 'planner'/);
+        expect(p).not.toMatch(/'(attorney|intake|platform_admin|firm_admin|paralegal|client|marketing)'/);
+      }
+      expect(sql).toMatch(new RegExp(`REFERENCES family_plans\\(id\\) ON DELETE CASCADE[\\s\\S]*?\\n\\);`));
+      const userGrants = sql.split("\n").filter((l) => /^GRANT/.test(l) && new RegExp(`\\b${t}\\b`).test(l) && /TO app_user/.test(l));
+      expect(userGrants.length, t).toBe(1);
+      expect(userGrants[0].split("--")[0]).not.toMatch(/INSERT/); // created by the service role at sign-in, never by a planner
+    }
+    expect(sql).toMatch(/CREATE POLICY audit_select ON audit_events[\s\S]*?app_role\(\) = 'planner' AND resource_type = 'family_plan' AND resource_id = app_user_id\(\)/);
   });
 
   it("marketing only gets the aggregate funnel view", () => {
