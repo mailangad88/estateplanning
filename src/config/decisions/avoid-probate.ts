@@ -318,7 +318,7 @@ export const WAYS_TO_AVOID_PROBATE: DecisionGuide = {
   ],
   related: [
     { href: "/learn/probate/how-to-avoid-probate", label: "How to avoid probate, tool by tool" },
-    { href: "/compare/probate-vs-non-probate-assets", label: "Probate vs non-probate assets" },
+    { href: "/learn/probate/probate-vs-non-probate-assets", label: "Probate vs non-probate assets" },
     { href: "/compare/transfer-on-death-deed-vs-trust", label: "Transfer-on-death deed vs trust" },
     { href: "/compare/joint-ownership-vs-trust", label: "Joint ownership vs trust" },
     { href: "/decide/types-of-trusts", label: "Types of trusts, and which one fits" },

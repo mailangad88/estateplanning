@@ -397,7 +397,7 @@ export const TYPES_OF_TRUSTS: DecisionGuide = {
   related: [
     { href: "/learn/trusts", label: "Trusts explained, the full guide" },
     { href: "/compare/revocable-vs-irrevocable-trust", label: "Revocable vs irrevocable trust" },
-    { href: "/compare/will-vs-trust", label: "Will vs trust" },
+    { href: "/learn/trusts/will-vs-trust", label: "Will vs trust" },
     { href: "/tools/will-or-trust", label: "Will or trust quiz" },
     { href: "/learn/trusts/how-to-fund-a-trust", label: "How to fund a trust" },
     { href: "/learn/trusts/choosing-a-trustee", label: "Choosing a trustee" },

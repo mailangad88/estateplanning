@@ -267,7 +267,7 @@ export const GUARDIANSHIP_VS_CONSERVATORSHIP: DecisionGuide = {
     { q: "Can a guardianship or conservatorship be ended?", a: "Yes, in most states. The person, or someone on their behalf, can ask the court to change or end the order if their abilities improve or the need passes. It also ends at death. The process and evidence needed vary by state, so keep records of the person's progress." },
   ],
   related: [
-    { href: "/compare/power-of-attorney-vs-guardianship", label: "Power of attorney vs guardianship" },
+    { href: "/learn/power-of-attorney/power-of-attorney-vs-guardianship", label: "Power of attorney vs guardianship" },
     { href: "/learn/power-of-attorney/parent-with-dementia-no-power-of-attorney", label: "A parent with dementia and no power of attorney" },
     { href: "/learn/special-needs/guardianship-alternatives-for-adult-children", label: "Turning 18 with a disability" },
     { href: "/learn/healthcare-directives/healthcare-power-of-attorney", label: "Healthcare power of attorney" },

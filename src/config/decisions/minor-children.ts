@@ -83,7 +83,7 @@ export const MONEY_FOR_MINORS: DecisionGuide = {
         effort: { level: 1, text: "Low" },
       },
       map: { x: 40, y: 40 },
-      learn: { href: "/guides/leaving-money-to-minors", label: "Custodial accounts and trusts for minors" },
+      learn: { href: "/learn/guardianship/leaving-money-to-minors", label: "Custodial accounts and trusts for minors" },
     },
     {
       id: "plan-529",

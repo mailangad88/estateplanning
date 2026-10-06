@@ -262,7 +262,7 @@ export const TYPES_OF_POA: DecisionGuide = {
   ],
   related: [
     { href: "/learn/power-of-attorney", label: "Powers of attorney explained" },
-    { href: "/compare/power-of-attorney-vs-guardianship", label: "Power of attorney vs guardianship" },
+    { href: "/learn/power-of-attorney/power-of-attorney-vs-guardianship", label: "Power of attorney vs guardianship" },
     { href: "/compare/living-will-vs-healthcare-power-of-attorney", label: "Living will vs healthcare power of attorney" },
     { href: "/learn/power-of-attorney/choosing-a-power-of-attorney-agent", label: "How to choose your agent" },
     { href: "/learn/power-of-attorney/bank-refuses-power-of-attorney", label: "When a bank refuses a power of attorney" },
