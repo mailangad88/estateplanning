@@ -23,7 +23,7 @@ function lead(id: string, over: Partial<Lead> = {}): Lead {
   return {
     id, personId: `p-${id}`, createdAt: NOW.toISOString(), stage: "qualified", stageHistory: [],
     matterType: "new_plan", state: "TX", urgent: false,
-    score: { score: 70, tier: "hot", redFlags: [] }, segments: [], source: {},
+    score: { score: 70, tier: "hot", grade: "A", urgent: false, components: [], redFlags: [] }, segments: [], source: {},
     consent: {} as Lead["consent"], offerSummary: "Summary",
     conflictCard: { clientName: "A B", parties: [], matterType: "new_plan", state: "TX", clearance: "clear" },
     intake: { summary: "", redFlags: [], deadlines: [], household: { members: [] }, assets: {}, answers: {} },

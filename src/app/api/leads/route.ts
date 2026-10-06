@@ -5,7 +5,7 @@ import { buildConsentRecord } from "@/lib/consent";
 import { deliverLead, type LeadRecord } from "@/lib/crm";
 import { effectiveContactMethod, leadSubmissionSchema } from "@/lib/lead";
 import { educationTopics } from "@/lib/quiz";
-import { captureTags, heardFromTags, scoreLead, segmentTags } from "@/lib/scoring";
+import { captureTags, heardFromTags, scoreLead, segmentTags, toolTags } from "@/lib/scoring";
 import { getDb } from "@/server/runtime";
 import { ingestLead } from "@/server/services/leads";
 import { getMagnet } from "@/lib/magnets";
@@ -58,7 +58,7 @@ export async function POST(request: Request) {
       capture: lead.capture,
       priorTools: lead.priorTools,
     }),
-    segments: [...new Set([...segmentTags(lead.answers), ...captureTags(lead.capture), ...heardFromTags(lead.source)])],
+    segments: [...new Set([...segmentTags(lead.answers), ...captureTags(lead.capture), ...toolTags(lead.capture), ...heardFromTags(lead.source)])],
     source: lead.source,
     heardFrom: lead.source.heardFrom,
     capture: lead.capture,

@@ -44,8 +44,15 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
       <p><Link href="/portal">← Back to the portal</Link></p>
       {/* 1. Header */}
       <h1>{h.urgent && "⚠ "}{h.name}</h1>
-      <p className="lead">{h.matterType} · {h.location} · Score {h.score} ({h.tier}) · {label(h.stage)}{h.assignedLawyer ? ` · ${h.assignedLawyer}` : ""}</p>
+      <p className="lead">{h.matterType} · {h.location} · Score {h.score} (grade {h.grade ?? h.tier}) · {label(h.stage)}{h.assignedLawyer ? ` · ${h.assignedLawyer}` : ""}</p>
       <p><strong>Next step:</strong> {h.nextStep}{h.offerExpiresAt ? ` (respond by ${when(h.offerExpiresAt)})` : ""}</p>
+
+      {h.scoreComponents && h.scoreComponents.length > 0 && (
+        <details>
+          <summary>Why this score</summary>
+          <ul>{h.scoreComponents.map((c, i) => <li key={i}>{c.points > 0 ? "+" : ""}{c.points} {c.label}</li>)}</ul>
+        </details>
+      )}
 
       {view.access === "conflict_card" && h.offerAssignmentId && <OfferActions assignmentId={h.offerAssignmentId} />}
       {view.access === "full" && h.assignedLawyer && actor.role !== "marketing" && <InviteClient leadId={id} />}

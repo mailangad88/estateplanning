@@ -74,6 +74,7 @@ export class LawmaticsAdapter implements CrmAdapter {
       // custom fields that could be mapped to ad-platform audiences.
       description: lead.offerSummary,
       lead_score: lead.score.score,
+      lead_grade: lead.score.grade,
       source: lead.source.utmSource ?? lead.source.referrer,
       // verify against Lawmatics API docs before launch: tags and custom field keys.
       tags: [...cap.tags, ...(cap.sensitiveTrack ? ["sensitive_track"] : [])],

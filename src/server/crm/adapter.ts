@@ -131,7 +131,15 @@ export function fullName(p: Person): string {
  * Segment tags that reveal health, death or disability. They stay out of fields a
  * CRM can sync to ad audiences; workflows get a plain "sensitive track" flag instead.
  */
-export const SENSITIVE_SEGMENTS = ["special_needs", "estate_administration", "widowed", "caregiver"];
+export const SENSITIVE_SEGMENTS = [
+  "special_needs",
+  "estate_administration",
+  "heir_probate",
+  "executor_or_heir",
+  "widowed",
+  "caregiver",
+  "medicaid_planning_interest",
+];
 
 /** What the CRM gets about how the lead was captured: tool, resource and non-sensitive tags. Never the tool's figures. */
 export function captureFields(lead: Lead) {
