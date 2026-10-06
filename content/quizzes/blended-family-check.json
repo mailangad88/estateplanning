@@ -1,0 +1,228 @@
+{
+  "title": "Is Your Plan Ready for Your Blended Family?",
+  "promise": "Ten questions about spouses, stepchildren, children from earlier relationships and your wishes. See how prepared your plan looks.",
+  "description": "Ten questions on beneficiaries, wills, trusts, guardians and conversations to see whether your estate plan fits your blended family.",
+  "kind": "assessment",
+  "category": "family",
+  "magnet": "blended-family-planning-guide",
+  "related": [
+    "guides/estate-planning-for-blended-families",
+    "life-events/getting-married",
+    "guides/beneficiary-designations",
+    "guides/revocable-living-trust-explained"
+  ],
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Have you updated beneficiary forms on your retirement accounts and life insurance since your family changed?",
+      "options": [
+        {
+          "label": "Yes, all of them, after the change",
+          "points": 2
+        },
+        {
+          "label": "Some of them",
+          "points": 1
+        },
+        {
+          "label": "No, or I do not remember",
+          "points": 0
+        }
+      ],
+      "explanation": "Beneficiary forms override a will. An ex-spouse or a former arrangement can still receive the money if the form was never changed, and some states and federal plans follow their own rules. Checking each form after a marriage or divorce is one of the most useful steps."
+    },
+    {
+      "id": "q2",
+      "prompt": "Does your will or trust say what happens for your spouse and for your children from a prior relationship?",
+      "options": [
+        {
+          "label": "Yes, it addresses both",
+          "points": 2
+        },
+        {
+          "label": "It covers one but not the other",
+          "points": 1
+        },
+        {
+          "label": "I have no current plan",
+          "points": 0
+        }
+      ],
+      "explanation": "Without a plan, state law may send most property to the spouse, and the spouse's own plan may then send it to their children, not yours. A will or trust can set out who gets what and in what order. Clear wording helps avoid disputes."
+    },
+    {
+      "id": "q3",
+      "prompt": "If you died first, would your spouse be able to stay in your home?",
+      "options": [
+        {
+          "label": "Yes, my plan provides for it and says for how long",
+          "points": 2
+        },
+        {
+          "label": "I assume so, but nothing is written",
+          "points": 1
+        },
+        {
+          "label": "No, or I have not thought about it",
+          "points": 0
+        }
+      ],
+      "explanation": "Homes are a common flashpoint in blended families. Tools such as a life estate or a trust can let a spouse live there while keeping the home for the children later. The right tool depends on state law, title and the family's goals."
+    },
+    {
+      "id": "q4",
+      "prompt": "Is the home titled in a way that matches your wishes?",
+      "options": [
+        {
+          "label": "Yes, I checked the title and it fits my plan",
+          "points": 2
+        },
+        {
+          "label": "I am not sure how it is titled",
+          "points": 1
+        },
+        {
+          "label": "It is joint with my spouse and I have not thought about what that means",
+          "points": 0
+        }
+      ],
+      "explanation": "Joint ownership with survivorship passes the home to the surviving owner regardless of the will. That can leave your own children with nothing from it. Reviewing the deed shows whether the title and the plan agree."
+    },
+    {
+      "id": "q5",
+      "prompt": "Have you named guardians for any minor children, including those from a prior relationship?",
+      "options": [
+        {
+          "label": "Yes, in a current will",
+          "points": 2
+        },
+        {
+          "label": "I have thought about it but not named anyone",
+          "points": 1
+        },
+        {
+          "label": "No, or it does not apply",
+          "points": 0
+        }
+      ],
+      "explanation": "A will is the usual place to name a guardian for minor children. The other parent generally has priority if they are alive and able, so the choice matters most if both parents die or one cannot serve. A backup guardian is common."
+    },
+    {
+      "id": "q6",
+      "prompt": "What is the main purpose of the life insurance you carry?",
+      "options": [
+        {
+          "label": "It is tied to a clear goal, like providing for my spouse or children",
+          "points": 2
+        },
+        {
+          "label": "I have it, but I have not matched it to a goal",
+          "points": 1
+        },
+        {
+          "label": "I have none, or I do not know",
+          "points": 0
+        }
+      ],
+      "explanation": "Life insurance can give each part of the family a defined share without forcing a sale of the home or other property. Naming the policy's purpose helps you pick beneficiaries and amounts. A review worksheet can show how much coverage fits each goal."
+    },
+    {
+      "id": "q7",
+      "prompt": "Have you talked with your spouse about what each of you wants for your own children?",
+      "options": [
+        {
+          "label": "Yes, openly",
+          "points": 2
+        },
+        {
+          "label": "Briefly",
+          "points": 1
+        },
+        {
+          "label": "No",
+          "points": 0
+        }
+      ],
+      "explanation": "Spouses can have different views on money and on their own children. Talking it through early often prevents surprises later and lets each person plan with real information. A family meeting can be a calm place to share the basics."
+    },
+    {
+      "id": "q8",
+      "prompt": "Have your children, and stepchildren if relevant, heard the broad outline of your plan?",
+      "options": [
+        {
+          "label": "Yes, in general terms",
+          "points": 2
+        },
+        {
+          "label": "Not yet, but I plan to",
+          "points": 1
+        },
+        {
+          "label": "No, and I have no plan to",
+          "points": 0
+        }
+      ],
+      "explanation": "Surprises often cause more conflict than the amounts involved. You do not have to share numbers, but explaining who is in charge and why can help. Many families also leave a short letter that explains their reasons."
+    },
+    {
+      "id": "q9",
+      "prompt": "Do you have a trust or other structure that protects your children's share if your spouse remarries or changes plans?",
+      "options": [
+        {
+          "label": "Yes",
+          "points": 2
+        },
+        {
+          "label": "I have heard of this but have not set it up",
+          "points": 1
+        },
+        {
+          "label": "No, or I did not know this was a concern",
+          "points": 0
+        }
+      ],
+      "explanation": "If everything passes outright to a spouse, the spouse controls where it goes next. Trusts such as a QTIP or a bypass trust can give a spouse income for life and name your children as the final recipients. An attorney can say which options fit your state and estate size."
+    },
+    {
+      "id": "q10",
+      "prompt": "Have you chosen an executor or trustee who can work with both sides of the family?",
+      "options": [
+        {
+          "label": "Yes, someone fair and capable, with a backup",
+          "points": 2
+        },
+        {
+          "label": "I have an idea, but have not asked them",
+          "points": 1
+        },
+        {
+          "label": "No",
+          "points": 0
+        }
+      ],
+      "explanation": "In a blended family, the person in charge may need to balance a spouse's needs with the children's. Some families name a neutral third party, such as a trusted friend or a professional fiduciary. Naming a backup helps if the first choice cannot serve."
+    }
+  ],
+  "bands": [
+    {
+      "min": 0,
+      "max": 6,
+      "label": "Early stage",
+      "summary": "Your plan may not yet reflect your current family, which is common after a marriage or remarriage. Beneficiary forms, the home and a written plan for each part of the family are usually the first places to look. The guide below can help you start."
+    },
+    {
+      "min": 7,
+      "max": 13,
+      "label": "Partly ready",
+      "summary": "You have some pieces in place and some open questions. Naming what each person should receive and checking that titles and beneficiaries match is a common next step. An attorney in your state can help close the gaps."
+    },
+    {
+      "min": 14,
+      "max": 20,
+      "label": "Well prepared",
+      "summary": "Your plan appears to cover both your spouse and your children, with conversations started. Keep it current after births, deaths, moves and changes in the family. A yearly check of beneficiaries and titles helps."
+    }
+  ]
+}
