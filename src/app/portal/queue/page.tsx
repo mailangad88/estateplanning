@@ -26,7 +26,7 @@ export default async function QueuePage() {
             {items.map((i) => (
               <tr key={i.taskId ?? i.leadId}>
                 <td><Link href={`/portal/leads/${i.leadId}`}>{i.urgent ? "Urgent · " : ""}{i.leadId.slice(0, 8)}</Link></td>
-                <td>{i.matter}, {i.state}</td>
+                <td>{i.matter}, {i.state}{i.laneReasons.length > 0 && <><br /><span className="notice">{i.laneReasons.join(" · ")}</span></>}</td>
                 <td>{i.minutesWaiting} min</td>
                 <td>{SLA_LABEL[i.slaStatus]}</td>
                 <td>{i.nextAction}</td>

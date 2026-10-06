@@ -1,7 +1,7 @@
 /**
  * Automation runner. Rather than every service calling nurture and CRM hooks
  * directly, the runner reads the audit log as an event feed and reconciles:
- * new leads get enrolled and synced, stage changes move nurture sequences and the
+ * new leads are triaged, enrolled and synced, stage changes move nurture sequences and the
  * CRM pipeline, exits stop pre-sale sequences, and firm-visible comments reach the
  * CRM. Because it compares each lead's current state with the last state it acted
  * on, a missed or repeated run cannot double-enroll or skip a stage.
@@ -11,6 +11,7 @@
 import type { CrmSync } from "@/server/crm/sync";
 import type { AutomationState, Db } from "@/server/db";
 import { enrollForNewLead, onExit, onStageChange, sweepQuietLeads } from "@/server/nurture/scheduler";
+import { applyTriage } from "@/server/services/triage";
 import type { ExitReason, Stage } from "@/server/types";
 
 async function loadState(db: Db): Promise<AutomationState> {
@@ -53,8 +54,11 @@ export async function runAutomations(db: Db, crm: CrmSync | null, now = new Date
   };
 
   for (const id of newLeads) {
+    if (state.stages[id]) continue;
+    // Triage first: an out-of-practice lead exits here and so never enrolls in nurture.
+    await applyTriage(db, id, now);
     const lead = await db.leads.get(id);
-    if (!lead || state.stages[id]) continue;
+    if (!lead) continue;
     if (!lead.exit) result.enrolled += (await enrollForNewLead(db, lead, now)).length;
     state.stages[id] = lead.stage;
     await crmCall(() => crm!.syncLead(db, id));

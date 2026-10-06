@@ -9,6 +9,7 @@ import { assertCan, can, requireMfa } from "@/server/auth/policy";
 import type { Db } from "@/server/db";
 import type { Notifier } from "@/server/notify";
 import { MATTER_LABELS } from "@/server/services/leads";
+import { triageLead, type TriageLane } from "@/server/services/triage";
 import type { Actor, Lead } from "@/server/types";
 
 export const SPEED_TO_LEAD_MINUTES = 5;
@@ -27,6 +28,9 @@ export interface QueueItem {
   matter: string;
   state: string;
   urgent: boolean;
+  /** Intake lane from triage.ts: after-death and priority leads jump the queue */
+  lane: TriageLane;
+  laneReasons: string[];
   minutesWaiting: number;
   slaStatus: SlaStatus;
   nextAction: string;
@@ -43,7 +47,8 @@ async function firstOutboundAt(db: Db, lead: Lead): Promise<number | null> {
   return valid.length ? Math.min(...valid) : null;
 }
 
-function nextActionFor(lead: Lead, contacted: boolean): string {
+function nextActionFor(lead: Lead, contacted: boolean, lane: TriageLane): string {
+  if (!contacted && lane === "after_death") return "Call within the hour. Listen first, no sales script";
   if (!contacted) return "Call the lead now";
   if (lead.stage === "qualified") return "Run the conflict check";
   if (lead.stage === "conflict_check") return "Finish the conflict check";
@@ -56,6 +61,7 @@ export async function intakeQueue(db: Db, actor: Actor, now = new Date()): Promi
   const users = new Map((await db.users.list()).map((u) => [u.id, u.name]));
   const owner = (id?: string) => (id ? (users.get(id) ?? "Unknown") : "Unclaimed");
   const items: (QueueItem & { breached: boolean; createdAt: number })[] = [];
+  const laneRank: Record<TriageLane, number> = { after_death: 0, priority: 1, standard: 2, out_of_practice: 3 };
 
   for (const lead of await db.leads.list((l) => !l.exit && QUEUE_STAGES.includes(l.stage))) {
     // Same visibility as leadAccess: intake sees their own and unclaimed leads.
@@ -64,17 +70,22 @@ export async function intakeQueue(db: Db, actor: Actor, now = new Date()): Promi
     const minutesWaiting = Math.max(0, Math.floor((now.getTime() - created) / MIN));
     const contactAt = await firstOutboundAt(db, lead);
     const contacted = contactAt !== null;
+    const triage = triageLead(lead);
+    const target = triage.callWithinMinutes ?? SPEED_TO_LEAD_MINUTES;
+    const warnAt = triage.callWithinMinutes ? target - 15 : target - 2;
     let slaStatus: SlaStatus = "ok";
-    if (!contacted) slaStatus = minutesWaiting > SPEED_TO_LEAD_MINUTES ? "breached" : minutesWaiting >= SPEED_TO_LEAD_MINUTES - 2 ? "due_soon" : "ok";
+    if (!contacted) slaStatus = minutesWaiting > target ? "breached" : minutesWaiting >= warnAt ? "due_soon" : "ok";
     items.push({
       leadId: lead.id,
       kind: "lead",
       matter: MATTER_LABELS[lead.matterType],
       state: lead.state,
       urgent: lead.urgent,
+      lane: triage.lane,
+      laneReasons: triage.reasons,
       minutesWaiting,
       slaStatus,
-      nextAction: nextActionFor(lead, contacted),
+      nextAction: nextActionFor(lead, contacted, triage.lane),
       ownerName: owner(lead.intakeOwnerId),
       breached: slaStatus === "breached",
       createdAt: created,
@@ -87,6 +98,7 @@ export async function intakeQueue(db: Db, actor: Actor, now = new Date()): Promi
     if (!lead || lead.exit) continue;
     const due = new Date(t.dueAt).getTime();
     const late = Math.floor((now.getTime() - due) / MIN);
+    const triage = triageLead(lead);
     items.push({
       leadId: lead.id,
       kind: "call_task",
@@ -94,6 +106,8 @@ export async function intakeQueue(db: Db, actor: Actor, now = new Date()): Promi
       matter: MATTER_LABELS[lead.matterType],
       state: lead.state,
       urgent: lead.urgent,
+      lane: triage.lane,
+      laneReasons: triage.reasons,
       minutesWaiting: Math.max(0, late),
       slaStatus: late > 60 ? "breached" : late >= 0 ? "due_soon" : "ok",
       nextAction: t.title,
@@ -103,8 +117,16 @@ export async function intakeQueue(db: Db, actor: Actor, now = new Date()): Promi
     });
   }
 
-  // Urgent first, then speed-to-lead breaches, then oldest.
-  items.sort((a, b) => Number(b.urgent) - Number(a.urgent) || Number(b.breached) - Number(a.breached) || a.createdAt - b.createdAt);
+  // Urgent first, then after-death, then speed-to-lead breaches, then priority lanes, then oldest.
+  const afterDeath = (i: QueueItem) => Number(i.lane === "after_death");
+  items.sort(
+    (a, b) =>
+      Number(b.urgent) - Number(a.urgent) ||
+      afterDeath(b) - afterDeath(a) ||
+      Number(b.breached) - Number(a.breached) ||
+      laneRank[a.lane] - laneRank[b.lane] ||
+      a.createdAt - b.createdAt,
+  );
   return items.map(({ breached: _b, createdAt: _c, ...item }) => item);
 }
 
@@ -124,7 +146,7 @@ export interface SlaAlert {
   /** Stable: the same condition on the same record always yields the same key */
   key: string;
   leadId: string;
-  kind: "speed_to_lead" | "offer_expiring" | "urgent_unaccepted" | "engagement_unsigned";
+  kind: "speed_to_lead" | "after_death" | "offer_expiring" | "urgent_unaccepted" | "engagement_unsigned";
   /** User ids to notify; the lead's intake owner, or all intake users when unclaimed */
   to: string[];
   subject: string;
@@ -138,13 +160,40 @@ export async function slaAlerts(db: Db, now = new Date()): Promise<SlaAlert[]> {
   const users = await db.users.list((u) => u.active);
   const ofRole = (...roles: string[]) => users.filter((u) => roles.includes(u.role)).map((u) => u.id);
   const leads = await db.leads.list((l) => !l.exit);
+  const lawyers = await db.lawyers.list();
   const byId = new Map(leads.map((l) => [l.id, l]));
 
   for (const lead of leads) {
     if (!QUEUE_STAGES.includes(lead.stage)) continue;
     if ((await firstOutboundAt(db, lead)) !== null) continue;
     const waited = Math.floor((now.getTime() - new Date(lead.createdAt).getTime()) / MIN);
-    if (waited <= SPEED_TO_LEAD_MINUTES) continue;
+    const triage = triageLead(lead);
+    if (triage.lane === "after_death") {
+      // A family handling an estate: tell people at once rather than waiting for a breach.
+      alerts.push({
+        key: `after-death:${lead.id}`,
+        leadId: lead.id,
+        kind: "after_death",
+        to: [...new Set([...(lead.intakeOwnerId ? [lead.intakeOwnerId] : ofRole("intake")), ...ofRole("platform_admin")])],
+        subject: "A family handling an estate needs a call within the hour",
+        text: "A new lead is handling a loved one's estate. Call within the hour, listen first, and do not use the sales script.",
+        link: "/portal/queue",
+      });
+      const onCall = new Set(lawyers.filter((l) => l.onCall && l.active).map((l) => l.id));
+      const attorneys = users.filter((u) => u.role === "attorney" && u.lawyerId && onCall.has(u.lawyerId)).map((u) => u.id);
+      if (attorneys.length) {
+        alerts.push({
+          key: `after-death-oncall:${lead.id}`,
+          leadId: lead.id,
+          kind: "after_death",
+          to: attorneys,
+          subject: "On call: a family handling an estate",
+          text: "A new after-death lead came in while you are on call. Intake is calling within the hour; an offer will follow once the conflict check clears.",
+          link: "/portal",
+        });
+      }
+      if (waited <= (triage.callWithinMinutes ?? SPEED_TO_LEAD_MINUTES)) continue;
+    } else if (waited <= SPEED_TO_LEAD_MINUTES) continue;
     alerts.push({
       key: `speed:${lead.id}`,
       leadId: lead.id,
