@@ -1,0 +1,172 @@
+import Link from "next/link";
+import { CallbackForm, EmailCapture } from "@/components/capture";
+import { Breadcrumbs, Cta, ReviewNote } from "@/components/ui";
+import { firm } from "@/config/firm";
+import type { MoneyPageData, Block } from "@/content/money-pages";
+import { abs, breadcrumbLd, howToLd, JsonLd, SITE_URL } from "@/lib/seo";
+
+const TOKEN = /\[([^\]]+)\]\((\/[^)\s]*)\)|\*\*([^*]+)\*\*|(\[(?:Attorney|Flat fee|Firm|Office|Bar number)[^\]]*\])/g;
+
+/** Renders the small inline syntax used in page data: [text](/path), **bold**, and [Attorney: ...] placeholders. */
+export function Rich({ text }: { text: string }) {
+  const out: React.ReactNode[] = [];
+  let last = 0;
+  let i = 0;
+  for (const m of text.matchAll(TOKEN)) {
+    const at = m.index ?? 0;
+    if (at > last) out.push(text.slice(last, at));
+    if (m[1] !== undefined) out.push(<Link key={i++} href={m[2]}>{m[1]}</Link>);
+    else if (m[3] !== undefined) out.push(<strong key={i++}>{m[3]}</strong>);
+    else out.push(<mark key={i++} className="todo">{m[4]}</mark>);
+    last = at + m[0].length;
+  }
+  if (last < text.length) out.push(text.slice(last));
+  return <>{out}</>;
+}
+
+/** Plain text version of inline syntax, for structured data. */
+export function plain(text: string): string {
+  return text.replace(/\[([^\]]+)\]\(\/[^)\s]*\)/g, "$1").replace(/\*\*([^*]+)\*\*/g, "$1");
+}
+
+/** FAQ block that renders inline links and emits FAQPage JSON-LD with the links stripped. */
+export function RichFaqList({ faqs, title = "Common questions" }: { faqs: { q: string; a: string }[]; title?: string }) {
+  const ld = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: plain(f.a) } })),
+  };
+  return (
+    <section>
+      <h2>{title}</h2>
+      {faqs.map((f) => (
+        <details className="faq" key={f.q}>
+          <summary>{f.q}</summary>
+          <p><Rich text={f.a} /></p>
+        </details>
+      ))}
+      <JsonLd data={ld} />
+    </section>
+  );
+}
+
+function BlockView({ b }: { b: Block }) {
+  if ("p" in b) return <p><Rich text={b.p} /></p>;
+  if ("ul" in b) return <ul>{b.ul.map((x) => <li key={x}><Rich text={x} /></li>)}</ul>;
+  if ("ol" in b) return <ol>{b.ol.map((x) => <li key={x}><Rich text={x} /></li>)}</ol>;
+  if ("note" in b) return <aside className="callout"><Rich text={b.note} /></aside>;
+  return (
+    <div className="table-wrap">
+      <table>
+        <thead><tr>{b.table.head.map((h) => <th key={h} scope="col">{h}</th>)}</tr></thead>
+        <tbody>
+          {b.table.rows.map((r) => (
+            <tr key={r[0]}>
+              {r.map((c, i) => (i === 0 ? <th key={i} scope="row"><Rich text={c} /></th> : <td key={i}><Rich text={c} /></td>))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export function MoneyPage({ page }: { page: MoneyPageData }) {
+  const digits = firm.phone.replace(/\D/g, "");
+  const callFirst = page.cta === "call";
+  const crumbs = [{ name: "Home", path: "/" }, { name: page.crumb, path: page.path }];
+  const ld: object[] = [
+    breadcrumbLd(crumbs),
+    page.schema === "contact"
+      ? { "@context": "https://schema.org", "@type": "ContactPage", name: page.h1, url: abs(page.path) }
+      : page.schema === "profile"
+        ? {
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            name: page.h1,
+            url: abs(page.path),
+            mainEntity: { "@type": "Person", name: firm.attorneyName, jobTitle: "Attorney", worksFor: { "@type": "LegalService", name: firm.firmLegalName, url: SITE_URL } },
+          }
+        : {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: page.h1,
+            description: page.description,
+            url: abs(page.path),
+            ...(page.serviceType ? { about: { "@type": "Service", serviceType: page.serviceType, provider: { "@type": "LegalService", name: firm.firmLegalName, url: SITE_URL } } } : {}),
+          },
+  ];
+  if (page.steps) ld.push(howToLd({ name: page.h1, description: page.description, steps: page.steps }));
+
+  const primary = callFirst ? (
+    <a className="button" href={`tel:${digits}`}>Call {firm.phone}</a>
+  ) : (
+    <Link className="button" href="/plan-finder">Start the plan finder</Link>
+  );
+  const secondary = callFirst ? (
+    <Link className="button secondary" href="/plan-finder">Book a consult</Link>
+  ) : (
+    <Link className="button secondary" href="/pricing">See our flat fees</Link>
+  );
+
+  return (
+    <article>
+      <Breadcrumbs items={[{ href: "/", label: "Home" }, { label: page.crumb }]} />
+      <h1>{page.h1}</h1>
+      <ReviewNote reviewed={false} updated="October 2026" />
+      <div className="answer">
+        <strong>In short</strong>
+        <Rich text={page.answer} />
+      </div>
+      <p className="cta-row no-print">{primary}{secondary}</p>
+      {page.jump && (
+        <p className="no-print">{page.jump.map((j, i) => <span key={j.id}>{i > 0 && " · "}<a href={`#${j.id}`}>{j.label}</a></span>)}</p>
+      )}
+      {page.urgent && (
+        <aside className="callout">
+          <strong>{page.urgent.title}</strong> <Rich text={page.urgent.body} /> <a href={`tel:${digits}`}>Call {firm.phone}</a>
+        </aside>
+      )}
+      {page.sections.map((s) => (
+        <section key={s.h} id={s.id}>
+          <h2>{s.h}</h2>
+          {s.blocks.map((b, i) => <BlockView key={i} b={b} />)}
+        </section>
+      ))}
+      {page.callbackForm && (
+        <section id="call-back">
+          <h2>Talk to us about this</h2>
+          <p>Call {firm.phone}, or leave your number and the intake team will call you back. Our stated response time: {firm.responseTime}. They are not lawyers and do not give legal advice.</p>
+          <CallbackForm interest={page.callbackForm} />
+        </section>
+      )}
+      <RichFaqList faqs={page.faqs} />
+      {page.emailCapture && (
+        <EmailCapture kind="magnet" interest={page.emailCapture.interest} title={page.emailCapture.title} body={page.emailCapture.body} />
+      )}
+      <Cta
+        title={page.ctaTitle ?? "Not sure where to start?"}
+        body={page.ctaBody ?? "Take the two-minute questionnaire, or call and ask us. If you may not need an attorney, we will say so. You get a flat-fee quote before anything is signed."}
+      />
+      <section>
+        <h2>Keep reading</h2>
+        <ul className="cards">
+          {page.related.map((r) => (
+            <li key={r.href}>
+              <Link href={r.href} className="card-link">
+                <span className="tag">{r.kind}</span>
+                <strong>{r.title}</strong>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+      <p className="notice">
+        Attorney advertising. This page is general information, not legal advice. Reading it or contacting us does not create an
+        attorney-client relationship; that begins only when we sign a written engagement agreement with you. Laws differ by
+        state and change over time, so check how they apply to your situation before you act.
+      </p>
+      <JsonLd data={ld} />
+    </article>
+  );
+}

@@ -1,4 +1,4 @@
-import { getComparisons, getGuides, getLifeEvents, getPosts, getChecklists } from "@/lib/content";
+import { getAudiences, getComparisons, getGuides, getLifeEvents, getPosts, getChecklists } from "@/lib/content";
 import type { RelatedLink } from "@/components/article";
 
 /** Resolves a slug from any collection to a link, so related lists can mix types. */
@@ -13,6 +13,8 @@ export function resolveSlug(slug: string): RelatedLink | null {
   if (l) return { href: `/life-events/${l.slug}`, title: l.title, kind: "Life event" };
   const k = getChecklists().find((x) => x.slug === slug);
   if (k) return { href: `/checklists/${k.slug}`, title: k.title, kind: "Checklist" };
+  const a = getAudiences().find((x) => x.slug === slug);
+  if (a) return { href: `/estate-planning-for/${a.slug}`, title: a.title, kind: "Situation" };
   return null;
 }
 
