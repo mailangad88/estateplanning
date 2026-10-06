@@ -27,6 +27,8 @@ export interface LifeGameProps {
   next?: { label: string; href: string };
   /** Larger type and the phone number first. */
   senior?: boolean;
+  /** Every what-if for this page, listed under the board. Defaults to the board's own squares. */
+  library?: ResolvedSquare[];
   /** id for the heading, so several boards can sit on one site. */
   id?: string;
 }
@@ -38,7 +40,7 @@ export interface LifeGameProps {
  *
  * Nothing the visitor picks leaves the page: no tracking, no storage, so it is safe on sensitive pages.
  */
-export function LifeGame({ squares, bookHref, phone, next, senior, id = "life-game" }: LifeGameProps) {
+export function LifeGame({ squares, bookHref, phone, next, senior, library, id = "life-game" }: LifeGameProps) {
   const [at, setAt] = useState(0);
   const [reached, setReached] = useState(0);
   const [choices, setChoices] = useState<Record<string, Choice>>({});
@@ -154,6 +156,9 @@ export function LifeGame({ squares, bookHref, phone, next, senior, id = "life-ga
                     <div className="lgame-result lgame-result--wait">
                       <p className="lgame-result__h"><CircleAlert size={20} aria-hidden="true" /> If it waits, this is what usually happens</p>
                       <p>{square.without}</p>
+                      {square.learn && (
+                        <p><Link href={square.learn} className="arrow-link">Read more about this <ArrowRight size={16} aria-hidden="true" /></Link></p>
+                      )}
                       <button type="button" className="lgame-rewind" onClick={() => choose("plan")}>
                         <RotateCcw size={16} aria-hidden="true" /> Rewind and plan for it
                       </button>
@@ -171,6 +176,9 @@ export function LifeGame({ squares, bookHref, phone, next, senior, id = "life-ga
                           </Link>
                         ))}
                       </p>
+                      {square.learn && (
+                        <p><Link href={square.learn} className="arrow-link">Read more about this <ArrowRight size={16} aria-hidden="true" /></Link></p>
+                      )}
                       <details className="lgame-result__without">
                         <summary>What would have happened if it waited?</summary>
                         <p>{square.without}</p>
@@ -237,14 +245,15 @@ export function LifeGame({ squares, bookHref, phone, next, senior, id = "life-ga
 
       {/* Every what-if on one list, for readers who would rather not play. */}
       <details className="lgame-all">
-        <summary>Rather read than play? See every what-if on one page</summary>
+        <summary>Rather read than play? See all {(library ?? whatifs).length} what-ifs on one page</summary>
         <ul>
-          {whatifs.map((s) => (
+          {(library ?? whatifs).map((s) => (
             <li key={s.id}>
               <strong>{s.title}</strong>
               <p><span className="lgame-all__k lgame-all__k--wait">If it waits:</span> {s.without}</p>
               <p><span className="lgame-all__k lgame-all__k--plan">With a plan:</span> {s.withPlan}{" "}
                 {s.docs?.[0] && <Link href={s.docs[0].href}>{s.docs[0].label}</Link>}
+                {s.learn && <>{" · "}<Link href={s.learn}>Read more</Link></>}
               </p>
             </li>
           ))}

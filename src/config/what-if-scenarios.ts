@@ -52,6 +52,11 @@ export interface WhatIfScenario {
   stages: StageSlug[];
   /** Picture used on the card, a file in public/media/illustrations. */
   art: string;
+  /**
+   * The "learn more" page for this scenario, written by the SEO content pipeline. Shown only once the
+   * page exists in content/ (see learnHrefFor in life-game.ts), so queued pages never become dead links.
+   */
+  learn?: string;
   /** False until the attorney has reviewed the wording. */
   reviewed: false;
 }
@@ -59,6 +64,7 @@ export interface WhatIfScenario {
 export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
   {
     id: "die-without-a-will",
+    learn: "/learn/wills/dying-without-a-will",
     title: "What if you die without a will?",
     delay: "We'll write one when we have more to leave.",
     without:
@@ -70,7 +76,8 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
     reviewed: false,
   },
   {
-    id: "unmarried-partner-left-out",
+    id: "unmarried-partner-no-will",
+    learn: "/learn/what-if/unmarried-partner-no-will",
     title: "What if you live together but are not married?",
     delay: "We're basically married. The paperwork can wait.",
     without:
@@ -94,7 +101,8 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
     reviewed: false,
   },
   {
-    id: "incapacity-no-poa",
+    id: "incapacitated-without-power-of-attorney",
+    learn: "/learn/what-if/incapacitated-without-power-of-attorney",
     title: "What if you can't manage your own money for a while?",
     delay: "My spouse can just sign for me.",
     without:
@@ -119,6 +127,7 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
   },
   {
     id: "no-guardian-named",
+    learn: "/learn/guardianship/what-if-no-guardian-named",
     title: "What if both parents die and no guardian is named?",
     delay: "We can't agree on who, so we'll decide later.",
     without:
@@ -130,7 +139,8 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
     reviewed: false,
   },
   {
-    id: "money-to-an-18-year-old",
+    id: "minor-inherits-without-trust",
+    learn: "/learn/what-if/minor-inherits-without-trust",
     title: "What if your child inherits everything at 18?",
     delay: "The life insurance goes to the kids. That's enough.",
     without:
@@ -142,7 +152,8 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
     reviewed: false,
   },
   {
-    id: "ex-still-beneficiary",
+    id: "ex-spouse-still-beneficiary",
+    learn: "/learn/what-if/ex-spouse-still-beneficiary",
     title: "What if your ex is still the beneficiary?",
     delay: "I'll update the forms when things settle down.",
     without:
@@ -202,7 +213,8 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
     reviewed: false,
   },
   {
-    id: "moved-states-old-documents",
+    id: "moved-states-plan-not-updated",
+    learn: "/learn/what-if/moved-states-plan-not-updated",
     title: "What if you moved and your documents are from another state?",
     delay: "We signed all that years ago in our old state.",
     without:
@@ -214,7 +226,8 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
     reviewed: false,
   },
   {
-    id: "stepchildren-left-out",
+    id: "stepchildren-no-will",
+    learn: "/learn/what-if/stepchildren-no-will",
     title: "What if your stepchildren are left out without you meaning to?",
     delay: "Everyone knows I love the kids the same.",
     without:
@@ -250,7 +263,8 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
     reviewed: false,
   },
   {
-    id: "parent-incapacity-caregiver",
+    id: "parent-with-dementia-no-power-of-attorney",
+    learn: "/learn/power-of-attorney/parent-with-dementia-no-power-of-attorney",
     title: "What if your parent can't manage their money and nothing is signed?",
     delay: "We'll talk to Mom and Dad about it at the holidays.",
     without:
@@ -286,7 +300,8 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
     reviewed: false,
   },
   {
-    id: "dementia-diagnosis",
+    id: "too-late-for-a-will",
+    learn: "/learn/what-if/too-late-for-a-will",
     title: "What if a diagnosis comes before the paperwork?",
     delay: "I'm still sharp. There's plenty of time.",
     without:
@@ -298,7 +313,8 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
     reviewed: false,
   },
   {
-    id: "special-needs-benefits-lost",
+    id: "disabled-heir-inherits-directly",
+    learn: "/learn/what-if/disabled-heir-inherits-directly",
     title: "What if an inheritance cuts off a disabled child's benefits?",
     delay: "We'll leave our son the same as his sisters.",
     without:
@@ -322,7 +338,8 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
     reviewed: false,
   },
   {
-    id: "documents-cant-be-found",
+    id: "lost-original-will",
+    learn: "/learn/what-if/lost-original-will",
     title: "What if your family can't find your documents?",
     delay: "It's all in a folder somewhere.",
     without:
@@ -334,7 +351,8 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
     reviewed: false,
   },
   {
-    id: "out-of-date-plan",
+    id: "outdated-will",
+    learn: "/learn/what-if/outdated-will",
     title: "What if your plan still names people from ten years ago?",
     delay: "We did our wills when the kids were born.",
     without:
@@ -391,6 +409,162 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
     fix: ["will", "trust"],
     stages: ["newlyweds-and-young-couples", "retirees-and-snowbirds"],
     art: "HeroFamilyHome",
+    reviewed: false,
+  },
+  {
+    id: "unfunded-trust",
+    learn: "/learn/what-if/unfunded-trust",
+    title: "What if you signed a trust but never moved anything into it?",
+    delay: "We signed the trust. The retitling can wait.",
+    without:
+      "A trust only controls what is titled in its name. A home or account left in your own name usually goes through probate anyway, which is what the trust was meant to avoid.",
+    withPlan: "Funding the trust, with deeds and account titles changed, lets it do its job.",
+    fix: ["trust", "review"],
+    stages: ["homeowners-and-growing-families", "pre-retirees", "retirees-and-snowbirds"],
+    art: "HeroTrusts",
+    reviewed: false,
+  },
+  {
+    id: "no-beneficiary-named",
+    learn: "/learn/what-if/no-beneficiary-named",
+    title: "What if an account has no beneficiary named?",
+    delay: "I'll fill in the beneficiary when HR sends the form again.",
+    without:
+      "With no beneficiary, many accounts and policies pay to your estate. That usually means probate, delay, and for retirement accounts it can mean less flexible tax timing for your heirs.",
+    withPlan: "Naming a beneficiary and a backup lets the money go straight to the people you choose.",
+    fix: ["beneficiaries"],
+    stages: ["newlyweds-and-young-couples", "new-parents", "pre-retirees"],
+    art: "SpotChecklist",
+    reviewed: false,
+  },
+  {
+    id: "estate-as-beneficiary",
+    learn: "/learn/what-if/estate-as-beneficiary",
+    title: "What if you named \"my estate\" as the beneficiary?",
+    delay: "I just wrote \"my estate\". The will sorts it out.",
+    without:
+      "Money paid to your estate usually goes through probate and can be reached by the estate's creditors. Retirement accounts paid to an estate may have to be paid out faster.",
+    withPlan: "Naming people, or a trust, as beneficiaries keeps the money out of probate.",
+    fix: ["beneficiaries", "trust"],
+    stages: ["pre-retirees", "retirees-and-snowbirds"],
+    art: "SpotChecklist",
+    reviewed: false,
+  },
+  {
+    id: "heirs-property",
+    learn: "/learn/property-and-assets/heirs-property",
+    title: "What if family land passes down with no will, again and again?",
+    delay: "The land has always just stayed in the family.",
+    without:
+      "Each generation without a will can split ownership among more relatives. Heirs' property can be hard to sell, borrow against or insure, and in some states one co-owner can ask a court to force a sale.",
+    withPlan: "A will or trust names who owns the land next, so the title stays clear.",
+    fix: ["will", "trust"],
+    stages: ["pre-retirees", "retirees-and-snowbirds", "caregivers"],
+    art: "HeroFamilyHome",
+    reviewed: false,
+  },
+  {
+    id: "siblings-inherit-house-disagree",
+    learn: "/learn/what-if/siblings-inherit-house-disagree",
+    title: "What if your children inherit the house together and disagree?",
+    delay: "They'll each get a share of the house. Fair is fair.",
+    without:
+      "Co-owners must agree to sell, rent or keep the house. If they cannot, one can usually ask a court to order a sale, which costs money and can split the family.",
+    withPlan: "Your plan can say who may keep the house, how the others are paid, or that it is sold.",
+    fix: ["trust", "will"],
+    stages: ["pre-retirees", "retirees-and-snowbirds", "blended-families"],
+    art: "HeroFamilyHome",
+    reviewed: false,
+  },
+  {
+    id: "house-in-late-spouses-name",
+    learn: "/learn/what-if/house-in-late-spouses-name",
+    title: "What if the house was only in your late spouse's name?",
+    delay: "It's our house. Whose name is on the deed doesn't matter.",
+    without:
+      "If the deed names only the spouse who died, the survivor may need probate before they can sell or refinance, even though they live there.",
+    withPlan: "Checking the deed now, and using a trust or joint title, lets the home pass smoothly.",
+    fix: ["trust", "transferOnDeath"],
+    stages: ["retirees-and-snowbirds", "pre-retirees", "homeowners-and-growing-families"],
+    art: "HeroFamilyHome",
+    reviewed: false,
+  },
+  {
+    id: "both-parents-die-no-will",
+    learn: "/learn/what-if/both-parents-die-no-will",
+    title: "What if both parents die without wills?",
+    delay: "We'll do wills once the kids are a bit older.",
+    without:
+      "A court picks the guardian, and the children's inheritance is usually managed under court supervision and handed over at 18 or 21.",
+    withPlan: "Your wills name the guardian, and a trust says who manages the money and until what age.",
+    fix: ["will", "guardian", "childrensTrust"],
+    stages: ["new-parents", "homeowners-and-growing-families"],
+    art: "HeroGuardianship",
+    reviewed: false,
+  },
+  {
+    id: "spouse-died-plan-not-updated",
+    learn: "/learn/what-if/spouse-died-plan-not-updated",
+    title: "What if your spouse dies and your plan still names them?",
+    delay: "I can't face the paperwork right now.",
+    without:
+      "If your will, trust or forms name a spouse who has died and no backup, parts of your plan can fail, and state law may decide who gets that share or who is in charge.",
+    withPlan: "An update names new people, so your plan still works for your family.",
+    fix: ["review", "beneficiaries", "financialPoa"],
+    stages: ["retirees-and-snowbirds", "pre-retirees"],
+    art: "SpotCalendarReview",
+    reviewed: false,
+  },
+  {
+    id: "death-during-divorce",
+    learn: "/learn/what-if/death-during-divorce",
+    title: "What if you die while the divorce is still going through?",
+    delay: "Once the divorce is final, I'll redo everything.",
+    without:
+      "In many states you are still married until the judge signs the decree. A spouse you are divorcing may still inherit, stay the beneficiary and make medical decisions.",
+    withPlan: "Some changes can be made during a divorce. A plan review shows which are allowed in your state.",
+    fix: ["review", "will", "healthcareProxy"],
+    stages: ["blended-families"],
+    art: "HeroBlendedFamily",
+    reviewed: false,
+  },
+  {
+    id: "power-of-attorney-agent-unavailable",
+    learn: "/learn/what-if/power-of-attorney-agent-unavailable",
+    title: "What if the person you named can't serve when the time comes?",
+    delay: "My brother is my agent. That's settled.",
+    without:
+      "If your only named agent has died, moved away or is unwell, the document may not help. The family can be back to asking a court.",
+    withPlan: "Naming a backup agent, and checking in now and then, keeps the plan working.",
+    fix: ["financialPoa", "healthcareProxy", "review"],
+    stages: ["pre-retirees", "retirees-and-snowbirds", "caregivers"],
+    art: "HeroPowersOfAttorney",
+    reviewed: false,
+  },
+  {
+    id: "unsigned-will",
+    learn: "/learn/what-if/unsigned-will",
+    title: "What if your will is written but never properly signed?",
+    delay: "I typed it up. I'll find witnesses later.",
+    without:
+      "Most states require a will to be signed with witnesses, and sometimes a notary. A draft on your computer usually does not count, so state law decides instead.",
+    withPlan: "A signing done the right way for your state makes the will count.",
+    fix: ["will"],
+    stages: [],
+    art: "SpotDocumentsSigned",
+    reviewed: false,
+  },
+  {
+    id: "adult-child-emergency-no-hipaa",
+    learn: "/learn/what-if/adult-child-emergency-no-hipaa",
+    title: "What if your 18-year-old is in the hospital and you can't get answers?",
+    delay: "They're my kid. Of course the doctors will talk to me.",
+    without:
+      "At 18 your child is a legal adult. Without their signed forms, doctors and colleges can decline to share information with you or let you decide for them.",
+    withPlan: "A healthcare proxy, HIPAA release and power of attorney signed by your adult child let you help.",
+    fix: ["healthcareProxy", "hipaa", "financialPoa"],
+    stages: ["homeowners-and-growing-families", "pre-retirees"],
+    art: "HeroPowersOfAttorney",
     reviewed: false,
   },
 ];

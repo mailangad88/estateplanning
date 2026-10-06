@@ -12,7 +12,7 @@ import { EmailCapture } from "@/components/capture";
 import { MAGNET_FORMATS, getMagnets } from "@/lib/magnets";
 import { getQuizzes } from "@/lib/quizzes";
 import { HeroFamilyHome, SpotVideoCall } from "@/components/visuals";
-import { lifeBoard } from "@/config/life-game";
+import { fullLibrary, lifeBoard } from "@/config/life-game";
 import { LifeGame } from "@/components/life-game";
 import { Band, FeatureCard, IconBadge, LifeCycle, SectionHead, Steps, TrustRow } from "@/components/landing";
 
@@ -104,7 +104,7 @@ export default function Home() {
           lead="Seven stages of life, one what-if at each. Plan for it or put it off, and watch your family's plan fill in."
           center
         />
-        <LifeGame squares={lifeBoard()} bookHref="/plan-finder" phone={firm.phone} next={{ label: "Find the right plan in two minutes", href: "/plan-finder" }} id="game-life" />
+        <LifeGame squares={lifeBoard()} bookHref="/plan-finder" phone={firm.phone} next={{ label: "Find the right plan in two minutes", href: "/plan-finder" }} library={fullLibrary()} id="game-life" />
       </Band>
 
       <Band label="What a plan includes">

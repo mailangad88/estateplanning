@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { LIFE_STAGES } from "@/config/life-stages";
 import { PLAN_DOCS, WHAT_IF_SCENARIOS, scenariosForStage } from "@/config/what-if-scenarios";
-import { lifeBoard, serviceBoardFor, stageBoard } from "@/config/life-game";
+import { learnHrefFor, lifeBoard, serviceBoardFor, stageBoard } from "@/config/life-game";
 
 const BANNED = /\b(expert|specialist|guarantee|top-rated|number one|free (will|trust|consultation))\b|#1|best (lawyer|attorney|firm)/i;
 
@@ -51,5 +51,17 @@ describe("life game boards", () => {
       expect(serviceBoardFor(p)).not.toBeNull();
     }
     expect(serviceBoardFor("/probate")).toBeNull();
+  });
+});
+
+describe("learn links", () => {
+  it("appear only for pages that exist", () => {
+    expect(learnHrefFor("/learn/wills/dying-without-a-will")).toBe("/learn/wills/dying-without-a-will");
+    expect(learnHrefFor("/learn/what-if/not-written-yet")).toBeUndefined();
+    expect(learnHrefFor(undefined)).toBeUndefined();
+  });
+
+  it("use the SEO pipeline's slugs as scenario ids", () => {
+    for (const s of WHAT_IF_SCENARIOS) if (s.learn?.startsWith("/learn/what-if/")) expect(s.learn).toBe(`/learn/what-if/${s.id}`);
   });
 });

@@ -6,7 +6,9 @@
  * Boards are plain data so the server can resolve them and hand the client a small, serialisable list.
  */
 import { LIFE_STAGES, lifeStageFor } from "./life-stages";
-import { PLAN_DOCS, whatIfFor, type PlanDocKey } from "./what-if-scenarios";
+import fs from "node:fs";
+import path from "node:path";
+import { PLAN_DOCS, WHAT_IF_SCENARIOS, scenariosForStage, whatIfFor, type PlanDocKey } from "./what-if-scenarios";
 
 export type SquareKind = "start" | "moment" | "whatif" | "finish";
 
@@ -25,9 +27,10 @@ const STAGE_BOARDS: Record<string, BoardDef> = {
     path: [
       { title: "You say yes", text: "A wedding, a move, a shared lease. Your lives are joined. On paper, most of it still is not.", icon: "Heart" },
       "hospital-wont-talk",
-      "unmarried-partner-left-out",
+      "unmarried-partner-no-will",
       { title: "You merge your money", text: "A joint account, a 401(k) at the new job, a life insurance policy through work.", icon: "PiggyBank" },
-      "ex-still-beneficiary",
+      "ex-spouse-still-beneficiary",
+      "no-beneficiary-named",
       "die-without-a-will",
     ],
   },
@@ -36,10 +39,11 @@ const STAGE_BOARDS: Record<string, BoardDef> = {
     path: [
       { title: "The baby arrives", text: "Sleepless nights, a new car seat, and a little person who needs you for everything.", icon: "Baby" },
       "no-guardian-named",
-      "money-to-an-18-year-old",
+      "minor-inherits-without-trust",
       { title: "You get life insurance", text: "A policy through work, maybe one more on top. You fill in the beneficiary form in a hurry.", icon: "ShieldCheck" },
-      "incapacity-no-poa",
-      "special-needs-benefits-lost",
+      "incapacitated-without-power-of-attorney",
+      "unsigned-will",
+      "disabled-heir-inherits-directly",
     ],
   },
   "homeowners-and-growing-families": {
@@ -49,7 +53,8 @@ const STAGE_BOARDS: Record<string, BoardDef> = {
       "house-stuck-in-probate",
       "no-guardian-named",
       { title: "The years fly by", text: "The kids grow, you change jobs, and the documents you signed are still in a drawer.", icon: "CalendarCheck" },
-      "out-of-date-plan",
+      "outdated-will",
+      "unfunded-trust",
       "digital-accounts-locked",
     ],
   },
@@ -57,10 +62,11 @@ const STAGE_BOARDS: Record<string, BoardDef> = {
     start: { title: "Two families become one", text: "Yours, mine and maybe ours. Let's walk through the moments where good intentions can go wrong." },
     path: [
       { title: "You marry again", text: "A new spouse, children from before, and an ex who is still on some of the paperwork.", icon: "Users" },
-      "stepchildren-left-out",
-      "ex-still-beneficiary",
+      "stepchildren-no-will",
+      "ex-spouse-still-beneficiary",
       { title: "You share a home", text: "You move into one house. The question of who gets it later has not come up yet.", icon: "House" },
       "new-spouse-takes-all",
+      "death-during-divorce",
       "family-dispute",
     ],
   },
@@ -68,10 +74,11 @@ const STAGE_BOARDS: Record<string, BoardDef> = {
     start: { title: "Retirement is in sight", text: "Your savings are at their biggest and your kids are grown. Let's walk the next stretch." },
     path: [
       { title: "The kids leave home", text: "The guardian you named is no longer needed. The rest of the plan is a decade old.", icon: "Users" },
-      "out-of-date-plan",
-      "dementia-diagnosis",
+      "outdated-will",
+      "too-late-for-a-will",
       { title: "You count up what you've built", text: "Retirement accounts, a paid-down home, maybe a business. More to protect, more to pass on.", icon: "PiggyBank" },
       "long-term-care-costs",
+      "adult-child-emergency-no-hipaa",
       "probate-delay",
     ],
   },
@@ -83,6 +90,7 @@ const STAGE_BOARDS: Record<string, BoardDef> = {
       "joint-account-surprise",
       { title: "Health comes first", text: "More doctor visits, more forms, and family who want to help.", icon: "Stethoscope" },
       "end-of-life-wishes-unknown",
+      "siblings-inherit-house-disagree",
       "long-term-care-costs",
     ],
   },
@@ -90,10 +98,11 @@ const STAGE_BOARDS: Record<string, BoardDef> = {
     start: { title: "Your parent needs more help", text: "You're driving to appointments and sorting their mail. Let's see what could make it harder." },
     path: [
       { title: "You start helping", text: "A fall, a new diagnosis, or bills that are slipping. You step in.", icon: "HandHeart" },
-      "parent-incapacity-caregiver",
+      "parent-with-dementia-no-power-of-attorney",
       "caregiver-cant-access-records",
       { title: "You take over the bills", text: "You need their bank, their doctors and their accounts to work with you.", icon: "Landmark" },
       "long-term-care-costs",
+      "power-of-attorney-agent-unavailable",
       "family-dispute",
     ],
   },
@@ -104,33 +113,33 @@ const LIFE_BOARD_STOPS: Record<string, { id: string; short: string }> = {
   "newlyweds-and-young-couples": { id: "hospital-wont-talk", short: "Newlyweds" },
   "new-parents": { id: "no-guardian-named", short: "New baby" },
   "homeowners-and-growing-families": { id: "house-stuck-in-probate", short: "First home" },
-  "blended-families": { id: "ex-still-beneficiary", short: "Remarried" },
-  "pre-retirees": { id: "dementia-diagnosis", short: "Pre-retired" },
+  "blended-families": { id: "ex-spouse-still-beneficiary", short: "Remarried" },
+  "pre-retirees": { id: "too-late-for-a-will", short: "Pre-retired" },
   "retirees-and-snowbirds": { id: "long-term-care-costs", short: "Retired" },
-  caregivers: { id: "parent-incapacity-caregiver", short: "Caregiver" },
+  caregivers: { id: "parent-with-dementia-no-power-of-attorney", short: "Caregiver" },
 };
 
 /** Boards for the main service pages, built from the scenarios each document prevents. */
 const SERVICE_BOARDS: Record<string, BoardDef> = {
   wills: {
     start: { title: "You mean to write a will", text: "It is on the list. Let's see what happens to the people you love while it waits." },
-    path: ["die-without-a-will", "no-guardian-named", "executor-burden", "documents-cant-be-found", "family-dispute"],
+    path: ["die-without-a-will", "no-guardian-named", "executor-burden", "unsigned-will", "lost-original-will", "family-dispute"],
   },
   "living-trusts": {
     start: { title: "You own a home and some savings", text: "A trust sounds like something for other people. Let's walk through what it does." },
-    path: ["probate-delay", "house-stuck-in-probate", "property-in-two-states", "new-spouse-takes-all", "joint-account-surprise"],
+    path: ["probate-delay", "unfunded-trust", "house-stuck-in-probate", "property-in-two-states", "new-spouse-takes-all", "joint-account-surprise"],
   },
   "power-of-attorney": {
     start: { title: "You're healthy and in charge", text: "Most people sign a power of attorney after they need one. Let's see why that is too late." },
-    path: ["incapacity-no-poa", "dementia-diagnosis", "parent-incapacity-caregiver", "digital-accounts-locked"],
+    path: ["incapacitated-without-power-of-attorney", "too-late-for-a-will", "parent-with-dementia-no-power-of-attorney", "power-of-attorney-agent-unavailable", "digital-accounts-locked"],
   },
   "healthcare-directives": {
     start: { title: "You're healthy today", text: "Medical decisions come up suddenly. Let's see who would make them for you." },
-    path: ["hospital-wont-talk", "end-of-life-wishes-unknown", "caregiver-cant-access-records", "dementia-diagnosis"],
+    path: ["hospital-wont-talk", "end-of-life-wishes-unknown", "caregiver-cant-access-records", "adult-child-emergency-no-hipaa", "too-late-for-a-will"],
   },
   parents: {
     start: { title: "You're raising kids", text: "They depend on you for everything. Let's see what happens if you can't be there." },
-    path: ["no-guardian-named", "money-to-an-18-year-old", "special-needs-benefits-lost", "incapacity-no-poa", "die-without-a-will"],
+    path: ["no-guardian-named", "minor-inherits-without-trust", "disabled-heir-inherits-directly", "incapacitated-without-power-of-attorney", "die-without-a-will"],
   },
 };
 
@@ -151,8 +160,20 @@ export interface ResolvedSquare {
   without?: string;
   withPlan?: string;
   docs?: ResolvedDoc[];
+  /** A page that explains this scenario in depth, when it has been published. */
+  learn?: string;
   /** Homepage board: the life stage this square stands for. */
   stage?: { label: string; href: string };
+}
+
+/**
+ * The scenario's learn page, only if its content file exists. The SEO pipeline publishes these over
+ * time, so a link appears on the next build after its page lands and never points at a missing page.
+ */
+export function learnHrefFor(href: string | undefined): string | undefined {
+  if (!href?.startsWith("/learn/")) return undefined;
+  const base = path.join(process.cwd(), "content", href.slice(1));
+  return fs.existsSync(`${base}.md`) || fs.existsSync(path.join(base, "index.md")) ? href : undefined;
 }
 
 const doc = (key: PlanDocKey): ResolvedDoc => ({ key, ...PLAN_DOCS[key] });
@@ -172,6 +193,7 @@ function scenarioSquare(id: string, label?: string): ResolvedSquare {
     without: s.without,
     withPlan: s.withPlan,
     docs: s.fix.map(doc),
+    learn: learnHrefFor(s.learn),
   };
 }
 
@@ -231,4 +253,14 @@ const SERVICE_PATHS: Record<string, { key: keyof typeof SERVICE_BOARDS; art: str
 export function serviceBoardFor(path: string): ResolvedSquare[] | null {
   const hit = SERVICE_PATHS[path];
   return hit ? serviceBoard(hit.key, hit.art) : null;
+}
+
+/** Every scenario for a life stage, for the "read them all" list under the board. */
+export function stageLibrary(slug: string): ResolvedSquare[] {
+  return scenariosForStage(slug).map((s) => scenarioSquare(s.id));
+}
+
+/** Every scenario on the site, for the homepage's "read them all" list. */
+export function fullLibrary(): ResolvedSquare[] {
+  return WHAT_IF_SCENARIOS.map((s) => scenarioSquare(s.id));
 }

@@ -14,7 +14,7 @@ import {
   HeroBusinessSuccession, HeroEstateSettlement, HeroPowersOfAttorney, HeroSpecialNeeds, HeroTrusts, HeroWills,
 } from "@/components/visuals";
 import { JsonLd } from "@/lib/seo";
-import { stageBoard } from "@/config/life-game";
+import { stageBoard, stageLibrary } from "@/config/life-game";
 import { LifeGame } from "@/components/life-game";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -163,7 +163,7 @@ export default async function AudiencePage({ params }: Props) {
                   lead="Move along the board. At each what-if, plan for it or put it off, and see what usually happens. Your plan builds as you go."
                   center
                 />
-                <LifeGame squares={board} bookHref={bookHref} phone={firm.phone} next={next} senior={stage.senior} id={`game-${stage.slug}`} />
+                <LifeGame squares={board} bookHref={bookHref} phone={firm.phone} next={next} senior={stage.senior} library={stageLibrary(stage.slug)} id={`game-${stage.slug}`} />
               </Band>
             )}
             {stage ? (
