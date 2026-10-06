@@ -16,6 +16,7 @@ import type { FeeRuleVersion, Invoice } from "@/server/fees/admin";
 import type { BillableEvent } from "@/lib/fees";
 import type { SequenceEnrollment, Suppression } from "@/server/nurture/types";
 import type { AutomationState } from "@/server/db";
+import type { FactVerification } from "@/lib/facts";
 
 const SCHEMA = readFileSync(join(__dirname, "../db/schema.sql"), "utf8");
 
@@ -160,6 +161,7 @@ const fixtures = {
     skipped: [{ stepId: "b", reason: "no sms", at: T0 }],
   } satisfies Required<SequenceEnrollment>,
   suppressions: { id: "email:a@x.test", channel: "email", address: "a@x.test", reason: "STOP", at: T0 } satisfies Required<Suppression>,
+  factVerifications: { id: "state.CA.small_estate_threshold@1", factId: "state.CA.small_estate_threshold", version: 1, approvedValue: "$208,850", approvedBy: "u-admin", approvedAt: T0, note: "checked" } satisfies Required<FactVerification>,
   automationState: { id: "automation", cursorSeq: 42, stages: { l1: "offered" }, exits: { l1: "x" } } satisfies Required<AutomationState>,
 };
 
@@ -322,6 +324,23 @@ suite("postgres integration", () => {
     expect((await platform.feeRuleVersions.list(undefined, { ruleId: "r1" })).length).toBe(1);
     await platform.feeRuleVersions.insert({ ...fixtures.feeRuleVersions, id: "r1@2", version: 2, counsel: undefined, lockReason: undefined });
     expect((await platform.feeRuleVersions.get("r1@2"))?.counsel).toBeUndefined();
+  });
+
+  maybe("fact verifications: attorneys and admins approve as themselves, others see nothing, rows are immutable", async () => {
+    const attorney = as({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" });
+    const next = { ...fixtures.factVerifications, id: "state.CA.small_estate_threshold@2", version: 2, approvedBy: "u-attorney" };
+    await attorney.factVerifications.insert(next);
+    // cannot approve in someone else's name
+    await expect(attorney.factVerifications.insert({ ...next, id: "state.CA.small_estate_threshold@3", version: 3, approvedBy: "u-admin" })).rejects.toThrow();
+    // one row per (fact, version)
+    await expect(service.factVerifications.insert({ ...next, id: "dup" })).rejects.toThrow();
+    expect((await attorney.factVerifications.list()).map((v) => v.version).sort()).toEqual([1, 2]);
+    for (const role of ["intake", "marketing", "firm_admin", "paralegal"] as const) {
+      const s = as({ userId: `u-${role}`, role, firmId: "f1", lawyerId: "lw1", supportsLawyerIds: ["lw1"] });
+      expect(await s.factVerifications.list(), role).toEqual([]);
+      await expect(s.factVerifications.insert({ ...next, id: `x-${role}@9`, factId: `x-${role}`, version: 9, approvedBy: `u-${role}` }), role).rejects.toThrow();
+    }
+    await expect(service.factVerifications.update(next.id, { note: "edited" })).rejects.toThrow();
   });
 
   maybe("where pushdown", async () => {

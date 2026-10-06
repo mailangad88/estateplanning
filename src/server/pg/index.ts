@@ -284,6 +284,7 @@ export function createPgDb(opts: { pool?: Pool; session?: PgSession } = {}): PgD
     invoices: col(TABLES.invoices),
     enrollments: col(TABLES.enrollments),
     suppressions: col(TABLES.suppressions),
+    factVerifications: col(TABLES.factVerifications),
     automationState: col<AutomationState>(TABLES.automationState),
     audit: new PgAudit(pool, session),
     pool,

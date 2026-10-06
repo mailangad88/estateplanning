@@ -297,6 +297,19 @@ CREATE TABLE suppressions (
   at      timestamptz NOT NULL
 );
 
+-- Attorney approval of a published state fact or dollar figure (src/lib/facts.ts). Append-only:
+-- a new approval is a new version, so the history of what was approved and by whom is kept.
+CREATE TABLE fact_verifications (
+  id             text PRIMARY KEY,             -- '<factId>@<version>'
+  fact_id        text NOT NULL,                -- registry id, e.g. 'state.CA.small_estate_threshold'
+  version        integer NOT NULL CHECK (version > 0),
+  approved_value text NOT NULL,                -- the exact value text the attorney approved
+  approved_by    text NOT NULL,
+  approved_at    timestamptz NOT NULL,
+  note           text NOT NULL,
+  UNIQUE (fact_id, version)
+);
+
 -- Second factor per user (src/server/pg/mfa.ts). Secret encrypted by the app (AES-256-GCM).
 CREATE TABLE user_mfa (
   user_id              text PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
@@ -414,6 +427,8 @@ CREATE TRIGGER audit_events_no_truncate BEFORE TRUNCATE ON audit_events
   FOR EACH STATEMENT EXECUTE FUNCTION forbid_mutation();
 CREATE TRIGGER fee_rule_versions_immutable BEFORE UPDATE OR DELETE ON fee_rule_versions
   FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
+CREATE TRIGGER fact_verifications_immutable BEFORE UPDATE OR DELETE ON fact_verifications
+  FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
 
 -- Only the assigned attorney approves an engagement (approve_engagement in policy.ts).
 -- Row policies cannot see which column changed, so a trigger guards it for app_user.
@@ -495,6 +510,7 @@ ALTER TABLE billable_events      ENABLE ROW LEVEL SECURITY;  ALTER TABLE billabl
 ALTER TABLE invoices             ENABLE ROW LEVEL SECURITY;  ALTER TABLE invoices             FORCE ROW LEVEL SECURITY;
 ALTER TABLE sequence_enrollments ENABLE ROW LEVEL SECURITY;  ALTER TABLE sequence_enrollments FORCE ROW LEVEL SECURITY;
 ALTER TABLE suppressions         ENABLE ROW LEVEL SECURITY;  ALTER TABLE suppressions         FORCE ROW LEVEL SECURITY;
+ALTER TABLE fact_verifications   ENABLE ROW LEVEL SECURITY;  ALTER TABLE fact_verifications   FORCE ROW LEVEL SECURITY;
 ALTER TABLE audit_events         ENABLE ROW LEVEL SECURITY;  ALTER TABLE audit_events         FORCE ROW LEVEL SECURITY;
 
 -- Workers (public intake form, e-sign webhooks, nurture engine, routing) are trusted
@@ -516,6 +532,8 @@ CREATE POLICY service_all ON billable_events      FOR ALL TO app_service USING (
 CREATE POLICY service_all ON sequence_enrollments FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON suppressions         FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_read ON fee_rule_versions   FOR SELECT TO app_service USING (true);
+CREATE POLICY service_read ON fact_verifications  FOR SELECT TO app_service USING (true);
+CREATE POLICY service_append ON fact_verifications FOR INSERT TO app_service WITH CHECK (true);
 CREATE POLICY service_read ON invoices            FOR SELECT TO app_service USING (true);
 CREATE POLICY service_write_invoices ON invoices  FOR INSERT TO app_service WITH CHECK (true);
 CREATE POLICY service_append ON audit_events      FOR INSERT TO app_service WITH CHECK (true);
@@ -651,6 +669,12 @@ CREATE POLICY invoices_admin ON invoices FOR ALL TO app_user
 CREATE POLICY invoices_firm_select ON invoices FOR SELECT TO app_user
   USING (app_role() = 'firm_admin' AND firm_id = app_firm_id() AND status <> 'draft');
 
+-- fact verifications (verify_facts): attorneys and platform admins read and approve, as themselves.
+CREATE POLICY fact_verifications_select ON fact_verifications FOR SELECT TO app_user
+  USING (app_role() IN ('platform_admin','attorney'));
+CREATE POLICY fact_verifications_insert ON fact_verifications FOR INSERT TO app_user
+  WITH CHECK (app_role() IN ('platform_admin','attorney') AND approved_by = app_user_id());
+
 -- audit: insert-only for everyone; read by platform_admin, and firm_admin for their leads.
 CREATE POLICY audit_insert ON audit_events FOR INSERT TO app_user WITH CHECK (true);
 CREATE POLICY audit_select ON audit_events FOR SELECT TO app_user USING (
@@ -667,6 +691,7 @@ REVOKE ALL ON lead_offer_cards, client_consults, lead_funnel_daily FROM PUBLIC;
 GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, tasks, suppressions TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON leads, assignments, consults, engagements TO app_user;
 GRANT SELECT, INSERT                 ON documents, comments, activities, invoices, billable_events, fee_rule_versions TO app_user;
+GRANT SELECT, INSERT                 ON fact_verifications TO app_user;
 GRANT UPDATE                         ON invoices TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON sequence_enrollments TO app_user;
 GRANT SELECT                         ON lead_offer_cards, client_consults, lead_funnel_daily TO app_user;
@@ -676,11 +701,13 @@ GRANT SELECT                         ON lead_offer_cards, client_consults, lead_
 GRANT SELECT, INSERT ON audit_events TO app_user;
 REVOKE UPDATE, DELETE, TRUNCATE ON audit_events FROM PUBLIC, app_user, app_service;
 REVOKE UPDATE, DELETE, TRUNCATE ON fee_rule_versions FROM PUBLIC, app_user, app_service;
+REVOKE UPDATE, DELETE, TRUNCATE ON fact_verifications FROM PUBLIC, app_user, app_service;
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, leads, assignments, documents, comments,
   activities, consults, engagements, tasks, billable_events, sequence_enrollments, suppressions TO app_service;
 GRANT SELECT, INSERT ON invoices TO app_service;
 GRANT SELECT ON fee_rule_versions TO app_service;
+GRANT SELECT, INSERT ON fact_verifications TO app_service;
 GRANT INSERT ON audit_events TO app_service;
 
 -- The automation runner reads the audit log as its event feed (ids and actions only).
