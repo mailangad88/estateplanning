@@ -14,10 +14,10 @@ pages: 7
 tag: grandparents_legacy_guide
 sequence: B
 related:
-  - guides/leaving-money-to-minors
-  - guides/revocable-living-trust-explained
+  - learn/guardianship/leaving-money-to-minors
+  - learn/trusts/revocable-living-trust
   - guides/estate-and-inheritance-taxes
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -50,7 +50,7 @@ It feels natural to write "to my grandchildren, in equal shares" in a will or to
 - **Needs-based benefits.** A direct inheritance can affect a grandchild who receives disability benefits. A special needs trust may be a better fit. See [special needs trusts](/guides/special-needs-trusts).
 - **A grandparent may not be in control of timing.** If a grandchild dies before you, the will may say who gets that share. If it says nothing, state law decides.
 
-For more on minors and money, see [leaving money to minors](/guides/leaving-money-to-minors).
+For more on minors and money, see [leaving money to minors](/learn/guardianship/leaving-money-to-minors).
 
 ## The main options
 
@@ -77,7 +77,7 @@ A trust lets you say when and why a grandchild receives money. Examples of featu
 - **Protection** from creditors or a future ex-spouse, in many states.
 - **A single trust for all grandchildren** until the youngest reaches a set age, then splitting into shares. This is sometimes called a "pot trust" and is useful when ages are far apart.
 
-The trustee matters as much as the trust. See [choosing a trustee](/guides/choosing-a-trustee). Many families name a trusted adult child, a professional trustee or both, with a backup. Rules vary by state, and a trust has to be signed correctly to work.
+The trustee matters as much as the trust. See [choosing a trustee](/learn/trusts/choosing-a-trustee). Many families name a trusted adult child, a professional trustee or both, with a backup. Rules vary by state, and a trust has to be signed correctly to work.
 
 ### 529 plans in general terms
 
@@ -107,7 +107,7 @@ Questions to settle:
 
 Giving during life lets you see the result and avoid probate for that money. The annual gift tax exclusion is $19,000 per recipient (the 2025 figure, indexed for inflation) <!-- verify -->, which means gifts below the limit generally do not require a gift tax return. Larger gifts are not necessarily taxed, because they reduce your lifetime exemption, but they may require a filing. Tuition or medical payments made directly to a school or provider are treated separately under federal rules. Ask a tax professional, since details and state rules differ.
 
-Gifts also leave you with less. If you may need money for care later, think about that first. See [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning) for how gifts can interact with eligibility for care.
+Gifts also leave you with less. If you may need money for care later, think about that first. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) for how gifts can interact with eligibility for care.
 
 ## Large estates and the generation-skipping transfer tax
 
@@ -148,4 +148,4 @@ Tip: write one general letter and a short personal note for each grandchild. Dat
 
 ## Next step
 
-Read [leaving money to minors](/guides/leaving-money-to-minors) for the legal background, then [book a consult](/plan-finder) to turn your answers into documents.
+Read [leaving money to minors](/learn/guardianship/leaving-money-to-minors) for the legal background, then [book a consult](/plan-finder) to turn your answers into documents.

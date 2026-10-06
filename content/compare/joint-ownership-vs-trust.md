@@ -37,7 +37,7 @@ Joint ownership with right of survivorship means that when one owner dies, the o
 
 With joint ownership, two or more people own an asset together. With right of survivorship, the last owner standing takes it all. The deed or account form must say so, and the wording rules vary by state.
 
-With a revocable trust, you retitle assets to yourself as trustee. You keep using them as before. At your death, the successor trustee distributes them as the trust directs. See [revocable living trusts explained](/guides/revocable-living-trust-explained).
+With a revocable trust, you retitle assets to yourself as trustee. You keep using them as before. At your death, the successor trustee distributes them as the trust directs. See [revocable living trusts explained](/learn/trusts/revocable-living-trust).
 
 ## When people choose joint ownership
 

@@ -19,7 +19,7 @@ related:
   - checklists/asset-and-account-inventory
   - checklists/important-contacts-list
   - checklists/letter-of-instruction-outline
-  - guides/digital-assets-estate-planning
+  - learn/digital-assets/digital-assets-in-your-estate-plan
   - life-events/caring-for-aging-parents
 reviewed: false
 updated: "2026-10-06"

@@ -45,7 +45,7 @@ An online will can be a sensible fit in situations like these:
 
 Say you are 30, renting, with a 401(k) and a car, and you want everything to go to your sister. A well-made online will, signed correctly, may do that job. The key is following your state's signing rules exactly. See [what makes a will valid](/guides/what-makes-a-will-valid).
 
-Doing nothing has real costs. If you die without a will, state law picks your heirs and the court picks a guardian for minor children. Read [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will).
+Doing nothing has real costs. If you die without a will, state law picks your heirs and the court picks a guardian for minor children. Read [what happens if you die without a will](/learn/wills/dying-without-a-will).
 
 ## When people choose an estate attorney
 

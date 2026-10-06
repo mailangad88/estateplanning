@@ -55,6 +55,8 @@ Applicants must meet four kinds of tests. Rules differ by state, so this is a ge
 
 Applicants also need to be citizens or qualified noncitizens and to reside in the state.
 
+Many states also offer Medicaid programs for care at home or in assisted living. These are often called waiver programs, and waiting lists are common.
+
 ## What assets count and what doesn't?
 
 Medicaid sorts assets into countable and exempt. Exempt assets do not count toward the limit, though some may be reached by estate recovery later.
@@ -104,6 +106,20 @@ Which tool fits depends on timing, the state and the family. The wrong move, suc
 
 Federal law requires states to try to recover the cost of Medicaid long-term care from the estates of recipients who were 55 or older, or who were permanently institutionalized. Recovery can reach the home and other assets in the probate estate, and some states define the estate more broadly to include assets that pass outside probate, such as a living trust or joint accounts. Recovery is delayed or waived when there is a surviving spouse, a minor child, or a blind or disabled child, and states must have hardship procedures. Practices differ widely. For what you can buy to reduce countable assets without creating a gift, see [Medicaid spend-down](/learn/elder-care/medicaid-spend-down); for the insurance side, including partnership policies that can protect assets from recovery, see [long-term care insurance and your estate plan](/learn/elder-care/long-term-care-insurance).
 
+## What mistakes should families avoid?
+
+- **Waiting until a crisis.** The look-back period rewards early planning.
+- **Giving money to children informally.** This can trigger penalties and expose the money to the children's creditors.
+- **Using an old power of attorney.** Without gifting powers, an agent may be unable to plan.
+- **Missing records.** Medicaid often asks for years of bank statements, and unexplained withdrawals can cause delays.
+- **Relying on advice from a friend in another state.** The rules differ too much from state to state.
+
+## An example of planning early
+
+Frank and Dorothy, both 74, own their home and have savings. Frank has early Parkinson's disease. They sign new durable powers of attorney with gifting powers and updated healthcare directives, and they move part of their savings into an irrevocable trust, keeping the rest for daily living.
+
+Four years later Frank enters a nursing home. The trust assets are still inside the look-back window, so their attorney waits. Meanwhile Dorothy uses the spousal protections to keep the house and her share of the remaining savings. Once the look-back passes, Frank qualifies, and the trust assets are protected for Dorothy and their daughter.
+
 ## What documents should be in place first?
 
 Before any application, make sure these exist. They matter more because Medicaid applications are paperwork-heavy and often handled by family members.
@@ -114,6 +130,15 @@ Before any application, make sure these exist. They matter more because Medicaid
 - A list of every account, policy, deed and loan, with five years of statements.
 
 If the person no longer has capacity and the power of attorney does not allow planning moves, a court-supervised guardianship may be required.
+
+## Questions to ask an attorney
+
+- What are my state's asset and income limits right now?
+- Which of my assets are countable here?
+- Does my state's estate recovery reach non-probate assets?
+- Would an asset protection trust make sense for us?
+- How can we protect the spouse who stays home?
+- Does my power of attorney allow the planning we might need?
 
 ## How we can help
 

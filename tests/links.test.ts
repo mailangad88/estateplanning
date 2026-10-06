@@ -5,10 +5,13 @@ import { getQuizzes } from "@/lib/quizzes";
 import { describe, expect, it } from "vitest";
 import { MONEY_PAGES } from "@/content/money-pages";
 import { TOOLS } from "@/config/tools";
+import { DECISIONS, decisionPath } from "@/config/decisions";
 import { EXPLAINERS } from "@/explainers/data";
+import { MERGED_PAGES } from "@/config/merged-pages";
+import { getAllArticles } from "@/lib/library";
 import { getAudiences, getChecklists, getComparisons, getGlossary, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
 
-const STATIC = ["/free", "/quizzes", "/", "/plan-finder", "/resources", "/pricing", "/about", "/contact", "/guides", "/blog", "/compare", "/life-events", "/estate-planning-for", "/learn", "/estate-planning", "/tools", "/checklists", "/explainers", "/videos", "/course", "/glossary", "/faq", "/mistakes", "/legal/privacy", "/legal/disclaimer", "/legal/sms-terms", "/legal/how-we-work", "/editorial-policy", "/intake", "/callback", ...Object.values(MONEY_PAGES).map((m) => m.path)];
+const STATIC = ["/free", "/quizzes", "/", "/plan-finder", "/resources", "/pricing", "/about", "/contact", "/guides", "/blog", "/compare", "/life-events", "/estate-planning-for", "/decide", "/learn", "/estate-planning", "/tools", "/checklists", "/explainers", "/videos", "/course", "/glossary", "/faq", "/mistakes", "/legal/privacy", "/legal/disclaimer", "/legal/sms-terms", "/legal/how-we-work", "/editorial-policy", "/intake", "/callback", ...Object.values(MONEY_PAGES).map((m) => m.path)];
 
 function knownPaths() {
   const s = new Set(STATIC);
@@ -20,9 +23,11 @@ function knownPaths() {
   getAudiences().forEach((a) => s.add(`/estate-planning-for/${a.slug}`));
   getLessons().forEach((l) => s.add(`/course/${l.day}`));
   TOOLS.forEach((t) => s.add(`/tools/${t.slug}`));
+  DECISIONS.forEach((d) => s.add(decisionPath(d.slug)));
   EXPLAINERS.forEach((e) => s.add(`/explainers/${e.slug}`));
   getMagnets().forEach((m) => s.add(`/free/${m.slug}`));
   getQuizzes().forEach((q) => s.add(`/quizzes/${q.slug}`));
+  getAllArticles().forEach((a) => s.add(a.url));
   return s;
 }
 
@@ -48,6 +53,8 @@ describe("internal links in content", () => {
 
   it("every related slug resolves", () => {
     const all = new Set([...getGuides(), ...getPosts(), ...getComparisons(), ...getLifeEvents(), ...getChecklists(), ...getAudiences()].map((x) => x.slug));
+    // Slugs of pages merged into the library still resolve (src/lib/links.ts sends them to the library article).
+    for (const [from] of MERGED_PAGES) all.add(from.split("/").pop()!);
     const missing: string[] = [];
     for (const doc of [...getGuides(), ...getPosts(), ...getComparisons(), ...getLifeEvents(), ...getAudiences()]) {
       for (const r of doc.related) if (!all.has(r)) missing.push(`${doc.slug} -> ${r}`);

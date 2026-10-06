@@ -46,7 +46,7 @@ Once the decree is entered, people commonly:
 
 Your former spouse is often still your children's other parent. If you die, they may become the sole guardian of your children, whatever your will says.
 
-What you can control is the money. Many divorced parents leave assets to a trust for their children. They name someone other than the former spouse as trustee. The guide to [leaving money to minors](/guides/leaving-money-to-minors) explains the options. That way, someone you choose manages what your children inherit.
+What you can control is the money. Many divorced parents leave assets to a trust for their children. They name someone other than the former spouse as trustee. The guide to [leaving money to minors](/learn/guardianship/leaving-money-to-minors) explains the options. That way, someone you choose manages what your children inherit.
 
 ## Common mistakes
 
@@ -79,4 +79,4 @@ This is one person's set of choices. Yours may look different.
 
 Start with the [beneficiary designation audit](/checklists/beneficiary-designation-audit). It lists the accounts people most often forget.
 
-The guide to [updating your estate plan](/guides/updating-your-estate-plan) covers what else to review. When you are ready, [book a consult through the plan finder](/plan-finder).
+The guide to [updating your estate plan](/learn/basics/when-to-update-your-estate-plan) covers what else to review. When you are ready, [book a consult through the plan finder](/plan-finder).

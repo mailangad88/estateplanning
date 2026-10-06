@@ -14,8 +14,8 @@ pages: 8
 tag: glossary_cheat_sheet
 sequence: B
 related:
-  - guides/what-is-estate-planning
-  - guides/revocable-living-trust-explained
+  - learn/basics/what-is-estate-planning
+  - learn/trusts/revocable-living-trust
   - guides/how-to-make-a-will
   - guides/how-probate-works
 reviewed: false
@@ -62,7 +62,7 @@ updated: "2026-10-06"
 
 **Beneficiary (of a trust).** A person or group who receives benefits from the trust, such as income or the final distribution.
 
-**Revocable living trust.** A trust you can change or cancel while alive. Property in it usually avoids probate. See the [revocable living trust guide](/guides/revocable-living-trust-explained).
+**Revocable living trust.** A trust you can change or cancel while alive. Property in it usually avoids probate. See the [revocable living trust guide](/learn/trusts/revocable-living-trust).
 
 **Irrevocable trust.** A trust that usually cannot be changed or ended easily once signed. It may offer tax or asset protection benefits. See [irrevocable trusts explained](/guides/irrevocable-trusts-explained).
 
@@ -154,7 +154,7 @@ updated: "2026-10-06"
 
 **Beneficiary designation.** A form on a retirement account, life insurance or annuity that names who gets it. It often overrides the will. See [beneficiary designations](/guides/beneficiary-designations).
 
-**Payable-on-death (POD).** A bank account feature naming who gets the money at your death. See [TOD and POD](/guides/transfer-on-death-and-payable-on-death).
+**Payable-on-death (POD).** A bank account feature naming who gets the money at your death. See [TOD and POD](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts).
 
 **Transfer-on-death (TOD).** A similar feature for investment accounts, vehicles and, in some states, real estate.
 
@@ -166,11 +166,11 @@ updated: "2026-10-06"
 
 **Disclaimer.** A written refusal to accept an inheritance, which sends it to the next person in line. It has strict timing rules.
 
-**UTMA or UGMA account.** A custodial account that holds money for a minor until they reach an age set by state law. See [leaving money to minors](/guides/leaving-money-to-minors).
+**UTMA or UGMA account.** A custodial account that holds money for a minor until they reach an age set by state law. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors).
 
 **ABLE account.** A tax-advantaged savings account for people with certain disabilities, with limits tied to the annual gift exclusion.
 
-**Medicaid look-back.** A review of gifts and transfers made before applying for long-term care benefits. The federal period is 60 months, though California differs. See [Medicaid planning](/guides/medicaid-and-long-term-care-planning).
+**Medicaid look-back.** A review of gifts and transfers made before applying for long-term care benefits. The federal period is 60 months, though California differs. See [Medicaid planning](/learn/elder-care/medicaid-planning).
 
 ## When to talk to an attorney
 
@@ -182,4 +182,4 @@ updated: "2026-10-06"
 
 ## Next step
 
-Read [what estate planning is](/guides/what-is-estate-planning) and look up more words at [/glossary](/glossary). To discuss your plan, visit [/plan-finder](/plan-finder).
+Read [what estate planning is](/learn/basics/what-is-estate-planning) and look up more words at [/glossary](/glossary). To discuss your plan, visit [/plan-finder](/plan-finder).

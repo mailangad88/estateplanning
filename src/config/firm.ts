@@ -32,6 +32,10 @@ export const firm = {
   /** Profile URLs for the attorney. Empty omits sameAs from structured data. */
   attorneySameAs: [] as string[],
   barLookupUrl: null as string | null, // state bar lawyer-lookup URL, set when known
+  /** Attorney headshot under public/, e.g. "/media/attorney.jpg". Null shows no photo and omits image from schema. */
+  attorneyHeadshot: null as string | null,
+  /** Two or three plain sentences in the attorney's own words, shown on the profile and in Person schema. */
+  attorneyShortBio: "[Attorney: two or three sentence bio in your own words]",
   /**
    * Booking page embedded after a consult request (Calendly, Cal.com, Lawmatics or Clio Grow).
    * Must be an https URL the scheduler allows in an iframe. Null keeps the "our team will reach out"

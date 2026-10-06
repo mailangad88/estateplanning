@@ -29,7 +29,7 @@ For many people, retirement accounts and life insurance are their largest assets
 - Brokerage accounts with a transfer-on-death beneficiary
 - Health savings accounts
 
-Some states also allow [transfer-on-death](/guides/transfer-on-death-and-payable-on-death) designations for cars or real estate.
+Some states also allow [transfer-on-death](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts) designations for cars or real estate.
 
 ## What to look for
 
@@ -38,7 +38,7 @@ When you look up each form, check four things:
 1. **Who is the primary beneficiary?** This is the first person in line.
 2. **Is there a backup?** This is called a contingent beneficiary. It matters if the first person dies before you.
 3. **Is anyone out of date?** Look for former spouses, deceased relatives or people you no longer want to include.
-4. **Is a minor named?** A child under 18 usually cannot receive the money directly. A court may need to appoint someone to manage it. See [leaving money to minors](/guides/leaving-money-to-minors).
+4. **Is a minor named?** A child under 18 usually cannot receive the money directly. A court may need to appoint someone to manage it. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors).
 
 ## Common surprises
 

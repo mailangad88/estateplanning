@@ -21,6 +21,8 @@ faqs:
     a: "You can, but insurers will not pay a minor directly, and the court process that follows is slow and costly. It is usually better to name a trust or an adult custodian under your state's UTMA law as beneficiary, and a trust if the amount is significant."
   - q: "How much should I leave in trust for my kids?"
     a: "There is no standard amount. Start by estimating the cost of housing, education and care until your youngest is self-supporting, subtract what your plan and other income will cover, and fund the gap with life insurance. An attorney or financial professional can help you run the numbers."
+  - q: "Can the guardian also manage the money?"
+    a: "Yes, if you name them as trustee or custodian. Some parents prefer to split the roles so one person raises the children and another manages the funds."
 related:
   - "guardianship"
   - "guardianship/guardian-vs-trustee"
@@ -59,6 +61,8 @@ You can set up a [living trust](/learn/trusts/revocable-living-trust) now and fu
 
 The person who runs the trust is the [trustee](/learn/guardianship/guardian-vs-trustee). Choose a person and a backup with care.
 
+For more than one child, you can choose between two layouts. A pot trust keeps one shared fund for all your children until the youngest reaches a set age, then splits it. It works like a family budget, so a child with bigger needs can get more. Separate trusts give each child their own share right away, held in their own trust.
+
 ### How does a UTMA account work?
 
 A UTMA account lets someone give money or securities to a minor through a custodian. The gift is irrevocable. The custodian invests and spends for the child's benefit, and when the child reaches the age set by state law, the account is theirs with no strings. State ages range from 18 to 25, and some states let the donor pick within a range. Your own state's rules decide, so ask an attorney.
@@ -94,10 +98,15 @@ Review every form, because forms override your will. Our guide to [life insuranc
 
 Dana and Marcus, both 36, have a 4-year-old and a 7-year-old. They carry $1 million in term life insurance each, a house with a mortgage, and about $180,000 in retirement savings. They pick Marcus's sister as guardian and her husband's cousin, an accountant, as trustee. They create a living trust for the children, name the trust as contingent beneficiary on their policies and 401(k)s, and set distributions at 25, 30 and 35. If both die, the guardian raises the children, the trustee pays for housing, school and health, and the children get lump sums as adults. No court account is needed.
 
+## What about gifts during your lifetime?
+
+Many grandparents give money now rather than later. Gifts up to the annual gift tax exclusion generally do not require a gift tax return. Common vehicles include custodial accounts and 529 plans. An attorney or tax advisor can tell you the current limit and how larger gifts are reported.
+
 ## What should the trust say about spending?
 
 Good instructions answer practical questions ahead of time.
 
+- Should the guardian also be the trustee, or should the roles be split?
 - What counts as support and education, and does it include private school or college?
 - Can the trustee help the guardian with housing?
 - How are the children treated if one has a greater need, such as medical costs?

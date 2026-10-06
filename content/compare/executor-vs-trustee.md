@@ -48,7 +48,7 @@ You do not really choose between the roles. You need an executor if you have a w
 - Gets along with the beneficiaries.
 - Is comfortable working with a court, an attorney and an accountant.
 
-Some states have rules about out-of-state executors, such as requiring a bond or a local agent. See [choosing an executor](/guides/choosing-an-executor).
+Some states have rules about out-of-state executors, such as requiring a bond or a local agent. See [choosing an executor](/learn/wills/choosing-an-executor).
 
 ## When people choose a trustee role
 
@@ -59,7 +59,7 @@ A trustee may hold the job far longer, so people often look for someone who:
 - Will likely be available for as long as the trust lasts.
 - Understands the purpose of the trust, such as supporting a child or protecting benefits.
 
-For long-term trusts, some families name a professional trustee, like a bank or trust company, or a professional to serve alongside a family member. See [choosing a trustee](/guides/choosing-a-trustee).
+For long-term trusts, some families name a professional trustee, like a bank or trust company, or a professional to serve alongside a family member. See [choosing a trustee](/learn/trusts/choosing-a-trustee).
 
 ## Using both together
 

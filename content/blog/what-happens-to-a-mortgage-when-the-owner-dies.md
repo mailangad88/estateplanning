@@ -58,7 +58,7 @@ A reverse mortgage usually becomes due when the last borrower dies. Heirs typica
 
 ## Other debts and the house
 
-A mortgage is one kind of secured debt. Credit cards and medical bills work differently. Read [what happens to debt when someone dies](/blog/what-happens-to-debt-when-someone-dies) for the full picture.
+A mortgage is one kind of secured debt. Credit cards and medical bills work differently. Read [what happens to debt when someone dies](/learn/probate/dealing-with-debts-in-probate) for the full picture.
 
 If there was no will, the question of who inherits the house comes first. See [who gets the house if there's no will and no spouse](/blog/who-gets-the-house-if-theres-no-will-and-no-spouse).
 

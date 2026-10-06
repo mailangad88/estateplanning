@@ -53,6 +53,8 @@ For most people, very little changes. Take Maria, 58, who owns a house, a broker
 
 The trust document also names a successor trustee, say her daughter Elena. If Maria has a stroke, two doctors can certify that she can no longer manage her affairs (the document spells out the test), and Elena steps in to pay bills and manage the condo with no court hearing. When Maria dies, Elena follows Maria's written instructions and distributes the assets.
 
+Retirement accounts are a common exception. Many people leave them in their own names because moving them could trigger tax, and instead review the beneficiary form on each one. Doing nothing about them is a mistake, since they are not covered by the trust.
+
 The step that makes this work is [funding the trust](/learn/trusts/how-to-fund-a-trust): changing the title on assets so the trust owns them. A trust that is signed but never funded controls nothing. This is the single most common way living trusts fail, and the fix is simple paperwork done at the start.
 
 ## What are the advantages of a revocable living trust?
@@ -83,6 +85,7 @@ Courts review trusts too, but a will contest happens inside an already public pr
 - **Funding work.** You must retitle assets and keep doing so when you buy a new house or open an account. Beneficiary designations on retirement accounts and life insurance are handled separately.
 - **No tax savings.** A revocable trust is tax neutral. Our article on [whether a trust avoids taxes](/learn/trusts/does-a-trust-avoid-taxes) covers the myths.
 - **No creditor protection.** Assets you can take back are assets your creditors can reach.
+- **No Medicaid qualification.** Assets in a revocable trust are generally counted when Medicaid reviews your finances. See [Medicaid planning](/learn/elder-care/medicaid-planning).
 - **Some friction with institutions.** Banks, brokerages and lenders have their own paperwork for trust accounts, though this is routine for them.
 - **Ongoing maintenance.** A trust should be reviewed when your family or assets change. Our list of [when to update your estate plan](/learn/basics/when-to-update-your-estate-plan) is a good starting point.
 
@@ -99,6 +102,18 @@ Courts review trusts too, but a will contest happens inside an already public pr
 | Can be changed | Yes | Yes |
 
 The full comparison, with examples of who should choose which, is in [will vs. living trust](/learn/trusts/will-vs-trust).
+
+## What mistakes make a trust fail?
+
+- **Never funding the trust.** Signing the document is only half the job. See our [trust funding checklist](/checklists/trust-funding-checklist) for what to retitle.
+- **Forgetting new assets.** A house bought five years later in your own name is outside the trust.
+- **Naming the trust as beneficiary of a retirement account without advice.** This can work, but the trust language needs to fit the tax rules for inherited retirement accounts.
+- **Picking a successor trustee without asking them.** The job takes time and organization.
+- **Never updating it.** Marriage, divorce, a death in the family or a move to a new state are common reasons to review.
+
+## What does it cost and how long does it take?
+
+Costs vary widely by state, by attorney and by how complex your family and assets are. Many firms charge a flat fee for a package that includes the trust, a pour-over will, powers of attorney and healthcare documents. The drafting itself often takes a few weeks. Funding can take longer, because banks and county recorders each have their own process.
 
 ## Who is a good candidate?
 
@@ -127,6 +142,15 @@ A trust is less necessary if your assets are modest, mostly pass by beneficiary 
 At death, the trust becomes irrevocable. The successor trustee obtains a tax ID number for the trust, notifies beneficiaries, inventories assets, pays debts and taxes, and makes distributions. Duties are detailed in our guide to [trust administration](/learn/after-a-death/trust-administration). A trustee has a legal duty to act in the beneficiaries' interest, a [fiduciary duty](/glossary/fiduciary-duty), and can be held accountable if they do not.
 
 State rules vary on notice periods, creditor claims against trust assets and how long administration takes, so ask about your state's process. If you want to see what your state's rules look like, browse our [state guides](/estate-planning/california) such as California, where living trusts are especially common, or look up your own state.
+
+## Questions to ask an attorney
+
+- Is a trust a good fit for my situation, or would a will and beneficiary designations be enough?
+- Will you prepare the deeds to move my real estate into the trust?
+- How does my state treat trusts for property tax, homestead and title insurance?
+- Should my retirement accounts name the trust, my spouse or my children?
+- What happens if I move to another state?
+- Does your fee include help with funding?
 
 ## How we can help
 

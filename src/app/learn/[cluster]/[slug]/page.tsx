@@ -15,6 +15,7 @@ import ToolsBox from "@/components/ToolsBox";
 import { RichProse } from "@/components/embeds/rich-prose";
 import { isSensitiveLibraryPage, magnetsForLibrary, siteLinksFor, toolsFor } from "@/lib/site-links";
 import MagnetOptIn from "@/components/MagnetOptIn";
+import { PageMedia } from "@/components/visuals/PageMedia";
 import { SensitiveMarker } from "@/components/capture";
 import { MAGNET_FORMATS } from "@/lib/magnets";
 import { articleSchema, breadcrumbSchema, faqSchema, graph } from "@/lib/schema";
@@ -68,6 +69,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
         <PageMeta updated={a.updated} words={a.wordCount} reviewed={a.review === "approved"} />
       </PageHero>
       <AnswerBox answer={a.answer} takeaways={a.takeaways} />
+      <PageMedia path={a.url} />
       <Toc headings={a.headings} />
       <RichProse
         html={a.html}

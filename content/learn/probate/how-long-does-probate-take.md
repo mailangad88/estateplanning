@@ -87,6 +87,10 @@ Federal estate tax applies only to estates above the exemption, which is $15 mil
 
 An operating business, a farm, collectibles, digital assets or intellectual property takes time to value and transfer. If the business needs to keep running, the executor may need court permission to continue operating it.
 
+### Co-executors
+
+When two executors must both sign, scheduling and disagreements can slow every step. Naming one executor with a backup is often simpler.
+
 ### Creditor problems
 
 Large medical bills, tax debts, disputed claims or an insolvent estate (where debts exceed assets) require careful sorting and can lengthen the case. In an insolvent estate, state law sets a priority order for paying claims, and the executor must follow it.
@@ -122,6 +126,10 @@ Our [executor duties guide](/learn/after-a-death/executor-duties) goes into each
 ## Can planning shorten the process for your own family?
 
 Yes. Assets that pass by beneficiary designation, joint ownership or a funded trust do not wait for probate at all. A family whose main assets pass this way may only need the court for a handful of items, or not at all. See [how to avoid probate](/learn/probate/how-to-avoid-probate) and the [probate versus non-probate breakdown](/learn/probate/probate-vs-non-probate-assets). The right mix depends on your state and your goals, and a trust is not automatically better for every family.
+
+If a trust is your plan, a pour-over will catches anything you left out of it. Those leftover assets may still need probate.
+
+Heirs sometimes wait without any money for months. In some states, a surviving spouse or children can receive a family allowance during probate. Ask the court or an attorney whether your state offers one.
 
 ## How we can help
 

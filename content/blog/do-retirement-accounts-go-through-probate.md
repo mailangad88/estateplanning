@@ -49,7 +49,7 @@ If you are married and want to name someone else, ask the plan administrator wha
 
 ## Retirement accounts and creditors
 
-Retirement accounts passed to a named beneficiary are generally kept out of the probate estate. That often means they are not used to pay the deceased person's ordinary debts. See [what happens to debt when someone dies](/blog/what-happens-to-debt-when-someone-dies) for details.
+Retirement accounts passed to a named beneficiary are generally kept out of the probate estate. That often means they are not used to pay the deceased person's ordinary debts. See [what happens to debt when someone dies](/learn/probate/dealing-with-debts-in-probate) for details.
 
 ## Keeping retirement accounts out of probate
 
@@ -58,7 +58,7 @@ Common steps include:
 - Name a primary and a contingent beneficiary on every account.
 - Update forms after marriage, divorce, a birth or a death.
 - Get a written confirmation from the custodian.
-- Consider a trust as beneficiary for minors. Our guide to [leaving money to minors](/guides/leaving-money-to-minors) explains why.
+- Consider a trust as beneficiary for minors. Our guide to [leaving money to minors](/learn/guardianship/leaving-money-to-minors) explains why.
 
 ## Naming minors on a retirement account
 

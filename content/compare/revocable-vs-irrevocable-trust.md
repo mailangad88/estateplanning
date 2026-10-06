@@ -36,7 +36,7 @@ A revocable trust lets you keep full control: you can change it, cancel it, or t
 
 ## What "revocable" really means
 
-With a revocable trust, the law treats the assets as still yours. That is why it does not shield you from creditors or reduce estate taxes. It is mainly a tool for avoiding probate and planning for incapacity. See [revocable living trusts explained](/guides/revocable-living-trust-explained).
+With a revocable trust, the law treats the assets as still yours. That is why it does not shield you from creditors or reduce estate taxes. It is mainly a tool for avoiding probate and planning for incapacity. See [revocable living trusts explained](/learn/trusts/revocable-living-trust).
 
 With an irrevocable trust, you transfer assets to a trust you no longer own or control. Because the assets are not yours anymore, they may fall outside your taxable estate. They may also be harder for your creditors to reach, depending on the state.
 
@@ -61,7 +61,7 @@ People usually turn to an irrevocable trust for a specific goal. Common examples
 - Protecting an inheritance for a beneficiary with a disability.
 - Setting aside assets for a beneficiary who struggles with money.
 
-Medicaid planning with an irrevocable trust is very timing sensitive. Most states look back 60 months at transfers when you apply for long-term care Medicaid, and California differs. <!-- verify --> Read [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning) before making any transfers.
+Medicaid planning with an irrevocable trust is very timing sensitive. Most states look back 60 months at transfers when you apply for long-term care Medicaid, and California differs. <!-- verify --> Read [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) before making any transfers.
 
 Irrevocable trusts come in many types, each with its own rules. See [irrevocable trusts explained](/guides/irrevocable-trusts-explained) for an overview.
 

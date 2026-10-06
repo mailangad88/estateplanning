@@ -41,7 +41,7 @@ Older documents may not be accepted easily by banks. Many retirees sign fresh on
 
 ### A will or trust that reflects your life now
 
-Retirement is a natural time to check that your will or trust still fits. Children have grown. Grandchildren have arrived. Some people have remarried. A [revocable living trust](/guides/revocable-living-trust-explained) can make it easier for someone to step in if you become unable to manage your affairs.
+Retirement is a natural time to check that your will or trust still fits. Children have grown. Grandchildren have arrived. Some people have remarried. A [revocable living trust](/learn/trusts/revocable-living-trust) can make it easier for someone to step in if you become unable to manage your affairs.
 
 ### A plan for long-term care
 
@@ -78,6 +78,6 @@ This is one couple's set of choices. Yours may look different.
 
 ## Next step
 
-Start with the [beneficiary designation audit](/checklists/beneficiary-designation-audit) to check every account. The [medicaid look-back date tool](/tools/medicaid-lookback-date) shows how the look-back period works. The guide to [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning) explains the basics.
+Start with the [beneficiary designation audit](/checklists/beneficiary-designation-audit) to check every account. The [medicaid look-back date tool](/tools/medicaid-lookback-date) shows how the look-back period works. The guide to [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) explains the basics.
 
 When you are ready, [book a consult through the plan finder](/plan-finder).
