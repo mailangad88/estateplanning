@@ -11,10 +11,10 @@
 import { assertCan, can, ForbiddenError } from "@/server/auth/policy";
 import type { Db } from "@/server/db";
 import { STAGES, type Actor, type Lead, type Stage } from "@/server/types";
+import { isHumanOutreach } from "@/server/services/contact";
 
 export const MIN_CELL = 5;
 const MIN = 60_000;
-const OUTBOUND = ["call", "sms", "email"];
 
 export interface FunnelOptions {
   from: Date;
@@ -174,7 +174,7 @@ export async function funnelReport(db: Db, actor: Actor, opts: FunnelOptions): P
   };
 
   // Speed to lead: first outbound call/sms/email, or the "contacted" stage, whichever is first.
-  const activities = await db.activities.list((a) => leadIds.has(a.leadId) && a.direction === "outbound" && OUTBOUND.includes(a.kind));
+  const activities = await db.activities.list((a) => leadIds.has(a.leadId) && isHumanOutreach(a));
   const firstOut = new Map<string, number>();
   for (const a of activities) {
     const t = new Date(a.at).getTime();

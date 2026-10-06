@@ -5,25 +5,32 @@
  * by the policy functions in src/server/auth/policy.ts and by row-level security.
  */
 import type {
+  Seminar,
   Activity,
   Assignment,
   AuditEvent,
   Comment,
   Consult,
+  ConversionEvent,
   CrmDelivery,
   DocumentRecord,
   Engagement,
   Firm,
   Lawyer,
   Lead,
+  Partner,
+  PartnerGift,
+  PartnerReferral,
+  PaymentRecord,
   Person,
+  ReviewRequest,
   Task,
   User,
 } from "@/server/types";
 import type { FeeRuleVersion, Invoice } from "@/server/fees/admin";
 import type { BillableEvent } from "@/lib/fees";
 import type { FactVerification } from "@/lib/facts";
-import type { SequenceEnrollment, Suppression } from "@/server/nurture/types";
+import type { SequenceEnrollment, Suppression, TemplateApproval } from "@/server/nurture/types";
 
 export type Where = Record<string, string | number | boolean | null>;
 
@@ -116,6 +123,7 @@ export interface Db {
   activities: Collection<Activity>;
   consults: Collection<Consult>;
   engagements: Collection<Engagement>;
+  payments: Collection<PaymentRecord>;
   tasks: Collection<Task>;
   feeRuleVersions: Collection<FeeRuleVersion>;
   billableEvents: Collection<BillableEvent>;
@@ -123,8 +131,15 @@ export interface Db {
   enrollments: Collection<SequenceEnrollment>;
   suppressions: Collection<Suppression>;
   factVerifications: Collection<FactVerification>;
+  templateApprovals: Collection<TemplateApproval>;
   automationState: Collection<AutomationState>;
   crmDeliveries: Collection<CrmDelivery>;
+  seminars: Collection<Seminar>;
+  partners: Collection<Partner>;
+  partnerGifts: Collection<PartnerGift>;
+  partnerReferrals: Collection<PartnerReferral>;
+  conversionEvents: Collection<ConversionEvent>;
+  reviewRequests: Collection<ReviewRequest>;
   audit: AppendOnly<AuditEvent>;
 }
 
@@ -149,6 +164,7 @@ export function createMemoryDb(): Db {
     activities: new MemoryCollection(),
     consults: new MemoryCollection(),
     engagements: new MemoryCollection(),
+    payments: new MemoryCollection(),
     tasks: new MemoryCollection(),
     feeRuleVersions: new MemoryCollection(),
     billableEvents: new MemoryCollection(),
@@ -156,8 +172,15 @@ export function createMemoryDb(): Db {
     enrollments: new MemoryCollection(),
     suppressions: new MemoryCollection(),
     factVerifications: new MemoryCollection(),
+    templateApprovals: new MemoryCollection(),
     automationState: new MemoryCollection(),
     crmDeliveries: new MemoryCollection(),
+    seminars: new MemoryCollection(),
+    partners: new MemoryCollection(),
+    partnerGifts: new MemoryCollection(),
+    partnerReferrals: new MemoryCollection(),
+    conversionEvents: new MemoryCollection(),
+    reviewRequests: new MemoryCollection(),
     audit: new MemoryAppendOnly(),
   };
 }

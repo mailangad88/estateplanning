@@ -81,17 +81,21 @@ export const firm = {
 };
 
 export interface Package {
+  /** Stable id used on engagements: essentials (good), complete (better), legacy (best) */
+  id: "essentials" | "complete" | "legacy";
   name: string;
   price: string;
   for: string;
   includes: string[];
+  /** Standing exclusions printed on the engagement letter for this package */
+  excludes: string[];
 }
 
 /** Flat-fee packages shown on /pricing. Prices are set by the firm. */
 export const packages: Package[] = [
-  { name: "Essentials", price: "[Flat fee]", for: "One person or a couple with modest assets and no minor children.", includes: ["Will (each spouse)", "Guardian nominations if you have children", "Durable financial power of attorney", "Healthcare power of attorney, living will and HIPAA release", "Signing ceremony"] },
-  { name: "Complete", price: "[Flat fee]", for: "Homeowners and families with minor children. The usual fit for families with a home, not the right fit for everyone.", includes: ["Revocable living trust", "Pour-over will", "Financial and healthcare powers of attorney", "Living will and HIPAA release", "Deed transfer of your home into the trust", "Funding checklist plus one review", "Signing ceremony"] },
-  { name: "Legacy", price: "Quote after consult", for: "Blended families, business owners, property in more than one state, special needs planning or larger estates.", includes: ["Everything in Complete", "Special needs or children's trust provisions", "Additional deeds", "Business interest assignment", "Coordination with your financial advisor or CPA"] },
+  { id: "essentials", name: "Essentials", price: "[Flat fee]", for: "One person or a couple with modest assets and no minor children.", includes: ["Will (each spouse)", "Guardian nominations if you have children", "Durable financial power of attorney", "Healthcare power of attorney, living will and HIPAA release", "Signing ceremony"], excludes: ["Trust drafting", "Real estate deeds", "Tax planning", "Court proceedings"] },
+  { id: "complete", name: "Complete", price: "[Flat fee]", for: "Homeowners and families with minor children. The usual fit for families with a home, not the right fit for everyone.", includes: ["Revocable living trust", "Pour-over will", "Financial and healthcare powers of attorney", "Living will and HIPAA release", "Deed transfer of your home into the trust", "Funding checklist plus one review", "Signing ceremony"], excludes: ["Tax planning beyond the trust", "Deeds not listed in the custom scope", "Court proceedings"] },
+  { id: "legacy", name: "Legacy", price: "Quote after consult", for: "Blended families, business owners, property in more than one state, special needs planning or larger estates.", includes: ["Everything in Complete", "Special needs or children's trust provisions", "Additional deeds", "Business interest assignment", "Coordination with your financial advisor or CPA"], excludes: ["Court proceedings", "Tax return preparation", "Work outside the custom scope"] },
 ];
 
 /** States the firm is licensed in and accepts leads from. "XX" is the placeholder. */
@@ -109,3 +113,41 @@ export const US_STATES = [
   "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT",
   "VT", "VA", "WA", "WV", "WI", "WY",
 ] as const;
+
+/** Optional extras the attorney can add to a package. The attorney sets each price on the engagement. */
+export const addOns = [
+  { id: "annual_review", name: "Annual review plan", description: "A yearly check that the plan still matches your family and assets." },
+  { id: "extra_parcel", name: "Additional real estate parcel", description: "Deed transfer of one more property into the trust." },
+  { id: "document_storage", name: "Original document safekeeping", description: "The firm keeps your signed originals in safekeeping." },
+  { id: "pet_trust", name: "Pet trust", description: "Funds and instructions for the care of a pet." },
+  { id: "digital_assets", name: "Digital asset provisions", description: "Access to online accounts and digital property." },
+  { id: "notary_witness", name: "Notary and witness package", description: "The firm supplies the notary and witnesses at the signing." },
+] as const;
+
+/**
+ * How retainer payments are received and split over time. The attorney sets these.
+ *
+ * `account` defaults to "trust" on purpose. Whether a flat fee paid in advance is earned on receipt
+ * (operating account) or must sit in the client trust account until earned differs by state and
+ * is governed by Rules 1.5 and 1.15 and the engagement letter wording. Trust is the safe default:
+ * putting unearned money in operating is a violation, while holding earned money in trust only
+ * needs a later transfer. Switch to "operating" only after confirming your state allows it and the
+ * letter says so. Every payment records the account it was directed to.
+ *
+ * Plans never carry interest or a financing charge: the installments add up to exactly the fee.
+ */
+export const retainerPayments = {
+  account: "trust" as "trust" | "operating",
+  plan: {
+    enabled: true,
+    maxInstallments: 6,
+    /** Minimum deposit as a percent of the total fee */
+    minDepositPercent: 25,
+    /** Smallest installment, in cents */
+    minInstallmentCents: 10_000,
+    /** Fees below this are paid in full */
+    minTotalCents: 50_000,
+    /** Days after the due date before an unpaid installment is flagged late */
+    lateGraceDays: 3,
+  },
+};

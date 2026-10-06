@@ -5,7 +5,9 @@
  */
 import type { ConsentRecord } from "@/lib/consent";
 import type { BusinessStructure } from "@/lib/fees";
+import type { PartnerStatus, PartnerType, ReleaseStatus, ValueLinked } from "@/lib/partners";
 import type { QuizAnswers } from "@/lib/quiz";
+import type { PackageSelection, PaymentPlan } from "@/lib/retainerPlan";
 import type { ScoreResult } from "@/lib/scoring";
 
 export type Role =
@@ -307,6 +309,34 @@ export interface Engagement {
   history: { status: EngagementStatus; at: string }[];
   remindersSent: string[];
   documentIds: string[];
+  /** Package tier, attorney-set prices and add-ons. Absent on engagements drafted before packages existed. */
+  packageSelection?: PackageSelection;
+  /** How the fee is paid and the status of each installment */
+  paymentPlan?: PaymentPlan;
+}
+
+export type PaymentStatus = "pending" | "paid" | "failed";
+
+/** One payment attempt against an engagement. Money goes straight to the firm's own account, never through the platform. */
+export interface PaymentRecord {
+  id: string;
+  engagementId: string;
+  leadId: string;
+  firmId: string;
+  /** Which installment in the plan this pays; absent for a one-off link */
+  installmentNo?: number;
+  amountCents: number;
+  /** The firm account the payment was directed to when the link was made */
+  account: "operating" | "trust";
+  status: PaymentStatus;
+  provider: string;
+  /** The provider's id for the payment; webhooks are matched on it */
+  providerPaymentId: string;
+  linkUrl?: string;
+  createdAt: string;
+  paidAt?: string;
+  /** Refunds the provider confirmed. Replays are matched on the refund id. */
+  refunds: { id: string; amountCents: number; at: string; reason?: string }[];
 }
 
 export interface Task {
@@ -355,4 +385,148 @@ export interface CrmDelivery {
   updatedAt: string;
   lastAttemptAt: string;
   deliveredAt?: string;
+}
+
+/** One seminar, webinar or community talk, with its costs and the counts entered after it (C17). */
+export interface Seminar {
+  id: string;
+  /** Short code used as utm_campaign on invitations and registration links, and as a "seminar:<code>" lead tag */
+  code: string;
+  title: string;
+  format: "in_person" | "webinar" | "library_talk";
+  heldOn: string;
+  venue?: string;
+  /** Costs in cents by line item, for example venue, mail, ads, refreshments, materials */
+  costs: Record<string, number>;
+  mailPieces?: number;
+  rsvps: number;
+  attendees: number;
+  notes?: string;
+  createdBy: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+// ---------------------------------------------------------------------------
+// Referral partners (partner-kit): tracking only. The firm never pays for a referral.
+// ---------------------------------------------------------------------------
+
+export interface Partner {
+  id: string;
+  /** URL slug of the co-branded page, /partners/<slug> */
+  slug: string;
+  /** Contact person */
+  name: string;
+  org: string;
+  type: PartnerType;
+  /** Code carried in ?ref= links and QR codes, "ref-<slug>" by convention */
+  refCode: string;
+  status: PartnerStatus;
+  /** Staff user who owns the relationship */
+  ownerId?: string;
+  firmId?: string;
+  createdAt: string;
+  /** YYYY-MM-DD the partner signed the referral partner policy */
+  policySignedDate?: string;
+  reciprocalAgreementOnFile: boolean;
+  /** The reciprocal agreement is non-exclusive (Rule 7.2(b)(4)(i)). Must be true before a partner is active. */
+  agreementNonexclusive: boolean;
+  notes?: string;
+}
+
+export interface PartnerGift {
+  id: string;
+  partnerId: string;
+  /** YYYY-MM-DD */
+  date: string;
+  description: string;
+  valueCents: number;
+  /** "flagged" gifts need the attorney's review; blocked gifts are never stored */
+  status: "ok" | "flagged";
+  /** The rule explanations that flagged it */
+  flags: string[];
+  loggedBy: string;
+  reviewNote?: string;
+}
+
+export interface PartnerReferral {
+  id: string;
+  partnerId: string;
+  refCode: string;
+  /** The portal lead this referral created or was attributed to */
+  leadId?: string;
+  createdAt: string;
+  /** partner_form: the partner submitted it. ref_link: the person arrived on a ?ref= link themselves. */
+  origin: "partner_form" | "ref_link";
+  /** The partner confirmed the person agreed to be referred. Always true for partner_form, never for ref_link. */
+  clientConsent: boolean;
+  /** The firm gave the client the Rule 7.2(b)(4) disclosure */
+  disclosureGiven: boolean;
+  disclosureAt?: string;
+  disclosureVersion?: string;
+  releaseStatus: ReleaseStatus;
+  releaseUpdatedAt?: string;
+  releaseUpdatedBy?: string;
+  /** "Is anything of value linked to this referral?" Required before the matter can close. */
+  valueLinked: ValueLinked;
+  valueNote?: string;
+}
+
+export type ConversionProvider = "google_ads" | "meta";
+export type ConversionType = "qualified_lead" | "consult_booked" | "consult_held" | "retainer_signed";
+/**
+ * - pending: due and not yet sent
+ * - sent: accepted by the provider (or exported for a manual upload)
+ * - failed: a retry could still work
+ * - abandoned: retries ran out, or the provider rejected it; needs a person
+ * - skipped: deliberately not sent (`reason` says why: consent, sensitive, too old, no identifier)
+ */
+export type ConversionStatus = "pending" | "sent" | "failed" | "abandoned" | "skipped";
+
+/**
+ * Conversions log: one row per lead, conversion type and provider, so an event is sent once.
+ * Holds ids, times, status and the value only, never contact details (those are rebuilt from the lead at send time).
+ * `id` is `${provider}:${type}:${leadId}`; `eventId` is the dedupe key sent to Meta.
+ */
+export interface ConversionEvent {
+  id: string;
+  leadId: string;
+  provider: ConversionProvider;
+  type: ConversionType;
+  eventId: string;
+  occurredAt: string;
+  valueCents?: number;
+  currency: string;
+  status: ConversionStatus;
+  reason?: string;
+  attempts: number;
+  /** "api", "mock" or "manual_csv" */
+  channel?: string;
+  createdAt: string;
+  updatedAt: string;
+  sentAt?: string;
+}
+
+/**
+ * Review-request tracking, one row per client matter (the tracking sheet in gbp-posts-and-reviews.md 3.9).
+ * It exists to prove every eligible client was asked. Exclusions use written, rule-based codes only.
+ * `id` is `review-${leadId}`.
+ */
+export type ReviewExclusionCode = "GUARDIANSHIP" | "OPTOUT" | "UNIFORM_HOLD" | "DISPUTE_HOLD" | "SENSITIVE_TRACK";
+export interface ReviewRequest {
+  id: string;
+  leadId: string;
+  matterType: MatterType;
+  /** Signing (or closing) date: the T+0 the offsets count from */
+  anchorAt: string;
+  eligible: boolean;
+  exclusionCode?: ReviewExclusionCode;
+  exclusionNote?: string;
+  askedAt?: string;
+  remindedAt?: string;
+  reminderChannel?: "sms" | "email";
+  optedOutAt?: string;
+  /** Self-reported only. Never inferred. */
+  postedAt?: string;
+  createdAt: string;
 }

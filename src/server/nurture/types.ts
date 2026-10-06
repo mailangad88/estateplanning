@@ -28,3 +28,15 @@ export interface SkippedStep {
   reason: string;
   at: string;
 }
+
+/** Attorney approval of one template's exact copy. Append-only; valid only while contentHash matches. */
+export interface TemplateApproval {
+  /** `${templateKey}@${version}` */
+  id: string;
+  templateKey: string;
+  version: number;
+  contentHash: string;
+  approvedBy: string;
+  approvedAt: string;
+  note: string;
+}

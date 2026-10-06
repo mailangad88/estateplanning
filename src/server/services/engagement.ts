@@ -5,14 +5,25 @@
  * ignored. Audit details hold ids and statuses only, never fees or letter text.
  */
 import { randomUUID } from "node:crypto";
-import { firm } from "@/config/firm";
+import { firm, retainerPayments } from "@/config/firm";
+import type { PackageSelection, PaymentPlan } from "@/lib/retainerPlan";
 import type { Db } from "@/server/db";
 import { audit } from "@/server/audit/log";
 import { assertCan, canOnLead, ForbiddenError } from "@/server/auth/policy";
 import type { EsignProvider } from "@/server/esign/provider";
 import type { PaymentProvider } from "@/server/esign/payments";
 import { recordBillableEvent } from "@/server/fees/admin";
-import { STAGES, type Actor, type Engagement, type EngagementStatus, type Lead, type Stage } from "@/server/types";
+import { advanceStage, applyStatus, getEngagement, leadFor, RANK, seen, systemNote } from "@/server/services/engagementShared";
+import {
+  activatePlan,
+  applyPaymentEvent,
+  buildTerms,
+  createPaymentFor,
+  issueDueLinks,
+  tierFor,
+  type RetainerTermsInput,
+} from "@/server/services/retainerPayments";
+import type { Actor, Engagement, EngagementStatus, Lead } from "@/server/types";
 
 export type FeeTreatment = "earned_on_receipt" | "trust_until_milestones";
 
@@ -71,8 +82,15 @@ export const PACKAGES: Record<string, EngagementPackage> = {
 
 export interface DraftInput {
   leadId: string;
-  packageId: string;
-  feeCents: number;
+  /** One of PACKAGES. Not needed when `terms` picks a good/better/best package. */
+  packageId?: string;
+  /** Flat fee in cents. Not needed when `terms` is given: the total comes from the attorney's package and add-on prices. */
+  feeCents?: number;
+  /**
+   * Good/better/best package from the firm config, the attorney's price for it, add-ons and the payment
+   * plan. The firm's payment-account setting decides the fee treatment in the letter.
+   */
+  terms?: RetainerTermsInput;
   customScope?: string;
   feeTreatment?: FeeTreatment;
   couple?: { spouseName: string };
@@ -91,8 +109,22 @@ export function renderLetter(input: {
   feeTreatment: FeeTreatment;
   customScope?: string;
   couple?: { spouseName: string };
+  selection?: PackageSelection;
+  plan?: PaymentPlan;
 }): string {
-  const { clientName, pkg, feeCents, feeTreatment, customScope, couple } = input;
+  const { clientName, pkg, feeCents, feeTreatment, customScope, couple, selection, plan } = input;
+  const addOnScope = selection?.addOns.length ? `\nAdd-ons:\n${lines(selection.addOns.map((a) => a.name))}` : "";
+  const feeText = selection
+    ? `The fee for the services above is a flat fee of ${money(feeCents)}: ${money(selection.tierPriceCents)} for the ${selection.tierName} package${selection.addOns.map((a) => `, ${money(a.priceCents)} for ${a.name}`).join("")}. It covers the included services listed in section 2. Work outside that scope requires a separate written agreement.`
+    : `The fee for the services above is a flat fee of ${money(feeCents)}. It covers the included services listed in section 2. Work outside that scope requires a separate written agreement.`;
+  let paymentText = "Payment is made directly to the Firm through the secure payment link sent with this agreement. Work begins when the signed agreement and payment are received.";
+  if (plan?.mode === "full") {
+    paymentText = "Payment is made in one payment directly to the Firm through the secure payment link sent after you sign this agreement. Work begins when the signed agreement and payment are received.";
+  } else if (plan) {
+    const [dep, ...rest] = plan.installments;
+    const last = rest[rest.length - 1].amountCents;
+    paymentText = `Payment is made directly to the Firm through secure payment links. A deposit of ${money(dep.amountCents)} is due when you sign this agreement, followed by ${rest.length} monthly payment${rest.length === 1 ? "" : "s"} of ${money(rest[0].amountCents)}${last !== rest[0].amountCents ? ` (the last is ${money(last)})` : ""}, the first one month after signing. The payments add up to the flat fee: there is no interest and no charge for paying in installments. Work begins when the signed agreement and the deposit are received.`;
+  }
   const parties = couple ? `${clientName} and ${couple.spouseName} ("Clients")` : `${clientName} ("Client")`;
   const treatment =
     feeTreatment === "earned_on_receipt"
@@ -102,9 +134,9 @@ export function renderLetter(input: {
     "*** DRAFT TEMPLATE: the attorney must replace this wording with the firm's approved engagement letter before sending ***",
     `ENGAGEMENT AGREEMENT\n${firm.firmLegalName}\n${firm.officeAddress}`,
     `1. PARTIES\nThis agreement is between ${firm.firmLegalName} ("Firm") and ${parties}. The responsible attorney is ${firm.attorneyName}.`,
-    `2. SCOPE OF REPRESENTATION\nPackage: ${pkg.name}\nIncluded:\n${lines(pkg.includes)}\nNot included:\n${lines(pkg.excludes)}${customScope ? `\nAdditional scope agreed with the attorney:\n  ${customScope}` : ""}`,
-    `3. FLAT FEE\nThe fee for the services above is a flat fee of ${money(feeCents)}. It covers the included services listed in section 2. Work outside that scope requires a separate written agreement.`,
-    "4. PAYMENT TERMS\nPayment is made directly to the Firm through the secure payment link sent with this agreement. Work begins when the signed agreement and payment are received.",
+    `2. SCOPE OF REPRESENTATION\nPackage: ${pkg.name}\nIncluded:\n${lines(pkg.includes)}\nNot included:\n${lines(pkg.excludes)}${addOnScope}${customScope ? `\nAdditional scope agreed with the attorney:\n  ${customScope}` : ""}`,
+    `3. FLAT FEE\n${feeText}`,
+    `4. PAYMENT TERMS\n${paymentText}`,
     `5. FLAT FEE TREATMENT\n${treatment}`,
     "6. FILE RETENTION\nThe Firm will keep the client file for the period required by the rules of professional conduct and will then destroy it securely. Original signed estate planning documents are returned to the client or held in safekeeping only if agreed in writing.",
     "7. COMMUNICATION CONSENT\nClient consents to the Firm communicating by email, text message and phone using the contact details on file, and understands that unencrypted channels carry some risk. Client may change these preferences at any time.",
@@ -118,42 +150,40 @@ export function renderLetter(input: {
   return parts.join("\n\n");
 }
 
-async function getEngagement(db: Db, id: string): Promise<Engagement> {
-  const e = await db.engagements.get(id);
-  if (!e) throw new Error(`engagement not found: ${id}`);
-  return e;
-}
-
-async function leadFor(db: Db, e: Engagement): Promise<Lead> {
-  const lead = await db.leads.get(e.leadId);
-  if (!lead) throw new Error(`lead not found: ${e.leadId}`);
-  return lead;
-}
-
 async function assertOnLead(db: Db, actor: Actor, e: Engagement, action: "draft_engagement" | "approve_engagement", now: Date): Promise<Lead> {
   const lead = await leadFor(db, e);
   assertCan(canOnLead(actor, action, lead, await db.assignments.list(), now));
   return lead;
 }
 
-/** Moves the lead stage forward only. */
-async function advanceStage(db: Db, lead: Lead, stage: Stage, by: string, at: string) {
-  const current = await db.leads.get(lead.id) ?? lead;
-  if (STAGES.indexOf(stage) <= STAGES.indexOf(current.stage)) return;
-  await db.leads.update(lead.id, { stage, stageHistory: [...current.stageHistory, { stage, at, by }] });
-}
-
-async function systemNote(db: Db, leadId: string, summary: string, at: string, byUserId?: string) {
-  await db.activities.insert({ id: randomUUID(), leadId, kind: "system", at, summary, byUserId });
-}
-
 export async function draftEngagement(db: Db, actor: Actor, input: DraftInput, now = new Date()): Promise<Engagement> {
   const lead = await db.leads.get(input.leadId);
   if (!lead) throw new Error(`lead not found: ${input.leadId}`);
   assertCan(canOnLead(actor, "draft_engagement", lead, await db.assignments.list(), now));
-  const pkg = PACKAGES[input.packageId];
-  if (!pkg) throw new Error(`unknown package: ${input.packageId}`);
-  if (!Number.isInteger(input.feeCents) || input.feeCents <= 0) throw new Error("feeCents must be a positive integer");
+  let pkg: EngagementPackage;
+  let feeCents: number;
+  let terms: ReturnType<typeof buildTerms> | undefined;
+  if (input.terms) {
+    // Good/better/best: the attorney's prices and plan from the firm config. The total is computed, never typed in twice.
+    terms = buildTerms(input.terms);
+    if (input.feeCents !== undefined && input.feeCents !== terms.selection.totalCents) throw new Error("feeCents does not match the package and add-on prices");
+    const tier = tierFor(input.terms.tierId);
+    pkg = {
+      id: tier.id,
+      name: tier.name,
+      includes: tier.includes,
+      excludes: tier.excludes,
+      defaultFeeCents: 0,
+      feeTreatment: retainerPayments.account === "trust" ? "trust_until_milestones" : "earned_on_receipt",
+    };
+    feeCents = terms.selection.totalCents;
+  } else {
+    const found = input.packageId ? PACKAGES[input.packageId] : undefined;
+    if (!found) throw new Error(`unknown package: ${input.packageId}`);
+    pkg = found;
+    feeCents = input.feeCents as number;
+    if (!Number.isInteger(feeCents) || feeCents <= 0) throw new Error("feeCents must be a positive integer");
+  }
   if (input.couple && !input.couple.spouseName.trim()) throw new Error("spouseName required");
   const person = await db.persons.get(lead.personId);
   if (!person) throw new Error(`person not found: ${lead.personId}`);
@@ -165,10 +195,13 @@ export async function draftEngagement(db: Db, actor: Actor, input: DraftInput, n
   const letter = renderLetter({
     clientName: `${person.firstName} ${person.lastName}`,
     pkg,
-    feeCents: input.feeCents,
-    feeTreatment: input.feeTreatment ?? pkg.feeTreatment,
+    feeCents,
+    // With good/better/best terms the firm's payment-account setting decides the treatment, so the letter matches where the money goes.
+    feeTreatment: terms ? pkg.feeTreatment : (input.feeTreatment ?? pkg.feeTreatment),
     customScope: input.customScope,
     couple: input.couple,
+    selection: terms?.selection,
+    plan: terms?.plan,
   });
   const at = now.toISOString();
   const e = await db.engagements.insert({
@@ -177,8 +210,10 @@ export async function draftEngagement(db: Db, actor: Actor, input: DraftInput, n
     firmId,
     lawyerId,
     packageId: pkg.id,
-    feeCents: input.feeCents,
+    feeCents,
     customScope: input.customScope,
+    packageSelection: terms?.selection,
+    paymentPlan: terms?.plan,
     status: "draft",
     provider: input.providerName ?? process.env.ESIGN_PROVIDER ?? "mock",
     letter,
@@ -186,7 +221,7 @@ export async function draftEngagement(db: Db, actor: Actor, input: DraftInput, n
     remindersSent: [],
     documentIds: [],
   });
-  await audit(db, actor, { action: "engagement.draft", resourceType: "engagement", resourceId: e.id, leadId: lead.id, detail: { packageId: pkg.id, status: "draft" }, at: now });
+  await audit(db, actor, { action: "engagement.draft", resourceType: "engagement", resourceId: e.id, leadId: lead.id, detail: { packageId: pkg.id, status: "draft", ...(terms ? { planMode: terms.plan.mode, account: terms.plan.account } : {}) }, at: now });
   return e;
 }
 
@@ -227,13 +262,14 @@ export async function sendEngagement(
     requireSmsCode: true,
     language: person.language,
   });
-  const treatment = /client trust account/.test(e.letter) ? "trust" : "operating";
-  const link = await payments.createPaymentLink({
-    engagementId: e.id,
-    amountCents: e.feeCents,
-    description: `Flat fee, ${PACKAGES[e.packageId]?.name ?? e.packageId}`,
-    account: treatment,
-  });
+  // With a payment plan the link goes out after the retainer is signed (see onSigned). An engagement
+  // drafted without one keeps the original flow: a single link sent with the retainer.
+  let paymentId: string | undefined;
+  if (!e.paymentPlan) {
+    const account = /client trust account/.test(e.letter) ? "trust" : "operating";
+    const rec = await createPaymentFor(db, payments, e, { amountCents: e.feeCents, description: `Flat fee, ${PACKAGES[e.packageId]?.name ?? e.packageId}`, account }, now);
+    paymentId = rec.id;
+  }
 
   const at = now.toISOString();
   const next = await db.engagements.update(e.id, {
@@ -249,24 +285,10 @@ export async function sendEngagement(
     resourceType: "engagement",
     resourceId: e.id,
     leadId: lead.id,
-    detail: { status: "sent", provider: provider.name, envelopeId: envelope.envelopeId, paymentId: link.paymentId },
+    detail: { status: "sent", provider: provider.name, envelopeId: envelope.envelopeId, ...(paymentId ? { paymentId } : {}) },
     at: now,
   });
   return next;
-}
-
-/** Forward order of engagement statuses. "voided" is terminal and handled separately. */
-const RANK: Record<EngagementStatus, number> = { draft: 0, approved: 1, sent: 2, viewed: 3, signed: 4, paid: 5, countersigned: 6, voided: -1 };
-
-function seen(e: Engagement, status: EngagementStatus) {
-  return e.history.some((h) => h.status === status);
-}
-
-/** Moves to `status` only if it is ahead of the current one; always records the history entry once. */
-async function applyStatus(db: Db, e: Engagement, status: EngagementStatus, at: string): Promise<Engagement> {
-  const history = seen(e, status) ? e.history : [...e.history, { status, at }];
-  const forward = RANK[status] > RANK[e.status];
-  return await db.engagements.update(e.id, { status: forward ? status : e.status, history });
 }
 
 export type StoreBlob = (key: string, bytes: Uint8Array) => void | Promise<void>;
@@ -278,6 +300,8 @@ export async function handleEsignWebhook(
   headers: Record<string, string>,
   now = new Date(),
   storeBlob: StoreBlob = () => undefined,
+  /** When given, the payment link is sent as soon as the retainer is signed; otherwise the cron sweep sends it (issueDueLinks). */
+  payments?: PaymentProvider,
 ): Promise<{ processed: number }> {
   const events = provider.parseWebhook(rawBody, headers); // throws on a bad signature
   let processed = 0;
@@ -303,6 +327,8 @@ export async function handleEsignWebhook(
     let next = await applyStatus(db, e, ev.status, ev.at);
     if (ev.status === "signed") {
       next = await onSigned(db, provider, next, ev.at, storeBlob);
+      next = await activatePlan(db, next, ev.at); // fixes the due dates from the signing day
+      if (payments && next.paymentPlan) await issueDueLinks(db, payments, now, e.id);
     }
     await audit(db, "system", { action: `engagement.${ev.status}`, resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { status: next.status }, at: now });
     processed++;
@@ -342,6 +368,7 @@ async function onSigned(db: Db, provider: EsignProvider, e: Engagement, at: stri
   return await db.engagements.update(e.id, { documentIds: [...e.documentIds, ...ids] });
 }
 
+/** Verifies the provider signature, then records each event against its payment. Replays and out-of-order events change nothing. */
 export async function handlePaymentWebhook(
   db: Db,
   payments: PaymentProvider,
@@ -352,23 +379,7 @@ export async function handlePaymentWebhook(
   const events = payments.parseWebhook(rawBody, headers); // throws on a bad signature
   let processed = 0;
   for (const ev of events) {
-    const e = await db.engagements.get(ev.engagementId);
-    if (!e || e.status === "voided") continue;
-    if (ev.status === "failed") {
-      await audit(db, "system", { action: "engagement.payment_failed", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { paymentId: ev.paymentId }, at: now });
-      await systemNote(db, e.leadId, "Payment attempt failed", ev.at);
-      processed++;
-      continue;
-    }
-    if (seen(e, "paid")) continue;
-    await applyStatus(db, e, "paid", ev.at);
-    const lead = await leadFor(db, e);
-    await advanceStage(db, lead, "paid", "system", ev.at);
-    // Analytics only: the fee engine decides if the amount is billable under the firm structure.
-    await recordBillableEvent(db, { type: "fee_collected", occurredAt: ev.at, state: lead.state, lawyerId: e.lawyerId, amountCents: e.feeCents });
-    await systemNote(db, e.leadId, "Engagement fee received", ev.at);
-    await audit(db, "system", { action: "engagement.paid", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { status: "paid", paymentId: ev.paymentId }, at: now });
-    processed++;
+    if (await applyPaymentEvent(db, ev, now)) processed++;
   }
   return { processed };
 }
