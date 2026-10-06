@@ -64,6 +64,7 @@ export function allPages(): SitePage[] {
   for (const a of getAllArticles().filter(isIndexable)) {
     pages.push({ path: a.url, title: a.title, description: a.description, updated: a.updated || TODAY, section: `Library: ${getCluster(a.cluster)?.name ?? a.cluster}` });
   }
+  pages.push({ path: "/estate-planning/will-rules", title: "Will signing rules by state (50-state table)", description: "Witnesses, handwritten wills and self-proving affidavits in every state, with a CSV download.", updated: TODAY, section: "Laws by state" });
   for (const s of getStateGuides().filter(isIndexable)) {
     pages.push({ path: s.url, title: s.title, description: s.description, updated: s.updated || TODAY, section: "Laws by state" });
   }
