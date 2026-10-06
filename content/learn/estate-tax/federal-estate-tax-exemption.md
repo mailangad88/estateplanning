@@ -121,6 +121,8 @@ Ana and Luis, both 66, own a home worth $1.2 million, investments of $4 million,
 
 An executor must file Form 706 if the gross estate plus adjusted taxable gifts is above the exclusion for the year of death, which is $15,000,000 for deaths in 2026. The return is due nine months after the date of death, and a six-month extension to file is available, though any tax is still due at nine months unless a payment extension is granted. Estates owed tax can often pay over time if they hold illiquid assets such as a family business or farm. Even where no filing is required, a return can be useful to elect portability, and it creates an IRS record of date-of-death values that heirs can rely on for basis. Most families who file do so with a CPA and an attorney working together.
 
+Estates near the exclusion sometimes use an [irrevocable life insurance trust](/learn/estate-tax/irrevocable-life-insurance-trust) to keep policy proceeds out of the taxable estate.
+
 ## How we can help
 
 Whether you are well under the threshold or close to it, our attorneys can help you check your state's rules and decide what, if anything, to do about estate tax. Try the [plan finder](/plan-finder) to find a starting point, or book a consultation.

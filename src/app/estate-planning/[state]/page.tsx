@@ -10,7 +10,7 @@ import LinkList from "@/components/LinkList";
 import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
 import { servedStates } from "@/config/firm";
-import { findByUrl, getCities, getStateGuide, getStateGuides, refToUrl, type StateFacts } from "@/lib/library";
+import { findByUrl, getCities, getStateGuide, getStateGuides, isIndexable, refToUrl, type StateFacts } from "@/lib/library";
 import { breadcrumbSchema, faqSchema, graph, stateGuideSchema } from "@/lib/schema";
 import { getStates as getLocalStatePages, type StatePage } from "@/lib/states";
 import { Breadcrumbs as UiBreadcrumbs, Cta, FaqList, ReviewNote } from "@/components/ui";
@@ -48,6 +48,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     title: s.title,
     description: s.description,
     alternates: { canonical: s.url, types: { "text/markdown": `/raw${s.url}.md` } },
+    robots: isIndexable(s) ? undefined : { index: false, follow: true },
     openGraph: { type: "article", title: s.title, description: s.description, url: s.url, modifiedTime: s.updated },
   };
 }
@@ -93,7 +94,7 @@ export default async function StatePage({ params }: { params: Promise<Params> })
       <JsonLd data={graph(stateGuideSchema(s), breadcrumbSchema(crumbs), faqSchema(s.faqs))} />
       <Breadcrumbs items={crumbs} />
       <h1>{s.title}</h1>
-      <PageMeta updated={s.updated} words={s.wordCount} />
+      <PageMeta updated={s.updated} words={s.wordCount} reviewed={s.review === "approved"} />
       <AnswerBox answer={s.answer} />
       <section aria-labelledby="facts">
         <h2 id="facts">{s.name} estate planning at a glance</h2>

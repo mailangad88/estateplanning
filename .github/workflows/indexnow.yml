@@ -1,0 +1,26 @@
+name: IndexNow
+
+# After content lands on main, tell IndexNow search engines which pages changed.
+# Needs repository secret INDEXNOW_KEY and variable SITE_URL; does nothing until both are set.
+on:
+  push:
+    branches: [main]
+    paths: ["content/**"]
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Wait for the deploy to go live
+        run: sleep 180
+      - run: node scripts/indexnow.mjs HEAD~1..HEAD
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+          SITE_URL: ${{ vars.SITE_URL }}
+          REQUIRE_ATTORNEY_REVIEW: ${{ vars.REQUIRE_ATTORNEY_REVIEW }}

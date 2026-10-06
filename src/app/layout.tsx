@@ -3,7 +3,11 @@ import Link from "next/link";
 import SourceTracker from "@/components/SourceTracker";
 import { firm } from "@/config/firm";
 import { ExitIntent, StickyContactBar } from "@/components/capture";
-import { JsonLd, legalServiceLd, SITE_URL } from "@/lib/seo";
+import { Disclosures } from "@/components/Disclosures";
+import MegaFooter from "@/components/MegaFooter";
+import { TrackedPhoneLink } from "@/components/TrackedPhone";
+import Analytics from "@/components/Analytics";
+import { JsonLd, siteGraphLd, SITE_URL } from "@/lib/seo";
 import "./globals.css";
 import "@/components/visuals/visuals.css";
 
@@ -26,10 +30,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/learn">Library</Link>
               <Link href="/blog">Articles</Link>
               <Link href="/tools">Tools</Link>
+              <Link href="/free">Free downloads</Link>
               <Link href="/checklists">Checklists</Link>
               <Link href="/resources">All resources</Link>
               <Link href="/pricing">Pricing</Link>
-              <a href={`tel:${firm.phone.replace(/\D/g, "")}`}>{firm.phone}</a>
+              <TrackedPhoneLink fallback={firm.phone} />
               <Link href="/plan-finder" className="button">Book a consult</Link>
             </nav>
           </div>
@@ -37,24 +42,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="container">{children}</main>
         <StickyContactBar phone={firm.phone} textNumber={firm.textNumber} />
         <ExitIntent />
-        <JsonLd data={legalServiceLd()} />
+        <Analytics />
+        <JsonLd data={siteGraphLd()} />
         <footer className="site">
           <div className="container">
-            <p>
-              Attorney advertising. {firm.firmLegalName}, {firm.officeAddress}. Responsible attorney: {firm.attorneyName}.
-              The information on this site is general education, not legal advice. No attorney-client relationship is
-              formed until an engagement agreement is signed.
-            </p>
-            <p>
-              <Link href="/resources">Resources</Link> · <Link href="/learn">Estate planning library</Link> ·{" "}
-              <Link href="/estate-planning">Laws by state</Link> · <Link href="/glossary">Glossary</Link> · <Link href="/faq">FAQ</Link> ·{" "}
-              <Link href="/explainers">Explainers</Link> · <Link href="/course">Free course</Link> · <Link href="/about">About</Link> ·{" "}
-              <Link href="/contact">Contact</Link> · <Link href="/intake">Full intake form</Link> · <Link href="/callback">Request a call back</Link>
-            </p>
-            <p>
-              <Link href="/legal/privacy">Privacy</Link> · <Link href="/legal/disclaimer">Disclaimer</Link> ·{" "}
-              <Link href="/legal/sms-terms">Text message terms</Link> · <Link href="/legal/how-we-work">How we work</Link>
-            </p>
+            <MegaFooter />
+            <Disclosures />
           </div>
         </footer>
         <SourceTracker />

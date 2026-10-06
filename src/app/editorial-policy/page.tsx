@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { firm } from "@/config/firm";
 import { PageHeader } from "@/components/ui";
 
@@ -13,7 +14,7 @@ export default function EditorialPolicy() {
     <>
       <PageHeader title="Editorial and review policy" lead="Every page on this site is meant to be accurate, specific and useful to a family deciding what to do." />
       <h2>Who writes it</h2>
-      <p>Our content starts from recorded answers {firm.attorneyName} gave to the questions clients ask most. Editors turn those answers into articles in plain English. Software may help with transcription and formatting; it is never the author.</p>
+      <p>Our content starts from recorded answers {firm.attorneyName} gave to the questions clients ask most. Editors turn those answers into articles in plain English. Software, including AI writing tools, may help with research, drafting and formatting. Nothing is marked reviewed until the attorney has checked and approved it; the <Link href="/editorial-policy/review-log">content review log</Link> shows each step and the status of every page.</p>
       <h2>Who reviews it</h2>
       <p>Each page is reviewed by {firm.attorneyName}, {firm.attorneyTitle.toLowerCase()} (bar number {firm.barNumber}). Pages show &quot;Draft pending attorney review&quot; until that review is done, and the review date once it is.</p>
       <h2>Keeping it current</h2>

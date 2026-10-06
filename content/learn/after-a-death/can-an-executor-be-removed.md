@@ -101,6 +101,8 @@ If you are planning your own estate, you can reduce future conflict by choosing 
 
 A contested removal case can cost thousands of dollars in legal fees and take months, and those costs may come out of the estate, which means they can reduce every beneficiary's share. Courts sometimes order a fiduciary who acted improperly to pay the other side's fees, but you should not count on that. Before filing, ask your attorney to estimate costs against what is at stake. If the problem is mainly slow communication, a firm letter and mediation usually cost far less and often work. If money is actively disappearing, acting quickly matters more than saving on fees.
 
+A trustee who will not share information can be asked for an accounting first; see [the trustee's duty to inform and account](/learn/after-a-death/trustee-duty-to-inform-and-account).
+
 ## How we can help
 
 If you are a beneficiary with concerns, or a fiduciary facing complaints, our attorneys can review the documents, explain your state's rules and help you decide whether to resolve the issue informally or in court. Use our [plan finder](/plan-finder) or book a consultation. A calm first conversation often clarifies far more than weeks of worry.

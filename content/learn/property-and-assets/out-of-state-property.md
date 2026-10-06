@@ -110,6 +110,8 @@ A trust or LLC can document these rules. Without them, any co-owner can ask a co
 
 Mineral rights, timeshares and farmland have similar issues, and each may need its own deed or documents. If you own property abroad, the foreign country's law governs it, and you should get advice there.
 
+If you inherit land in another state, [selling inherited property](/learn/after-a-death/selling-inherited-property) explains who signs and how the sale is taxed.
+
 ## How we can help
 
 Property in more than one state is easy to overlook and expensive to fix after a death. Our attorneys can review your deeds, prepare a trust and the funding documents, and coordinate with local counsel where a state requires it. You can start with the [plan finder](/plan-finder) or book a consultation.

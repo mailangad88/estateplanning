@@ -34,6 +34,8 @@ The two arrangements can look similar from the outside, since in both a person m
 
 This article explains how each works, how they compare in practice, and when a court process is still unavoidable. If you are still deciding whether to sign a power of attorney, our overview of [power of attorney](/learn/power-of-attorney) is the best place to start.
 
+If a parent has dementia and no document, see [what to do when there is no power of attorney](/learn/power-of-attorney/parent-with-dementia-no-power-of-attorney).
+
 ## What is a guardianship or conservatorship?
 
 Guardianship and conservatorship are court-supervised arrangements in which a judge declares that an adult cannot manage some or all of their affairs and appoints another person to do it. The adult is called the ward, the protected person or the respondent, depending on the state.

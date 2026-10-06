@@ -1,6 +1,6 @@
 /** One rendered explainer video, as written to manifest.json by video/scripts/render-all.mjs. */
 export type VideoEntry = {
-  id: number;
+  id: string;
   slug: string;
   title: string;
   description: string;

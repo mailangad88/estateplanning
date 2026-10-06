@@ -1,0 +1,217 @@
+{
+  "title": "Estate Planning IQ Quiz",
+  "promise": "Twelve true or false questions. See how much of what people believe about wills, trusts and probate is actually right.",
+  "description": "Test what you know about wills, trusts, probate, beneficiary forms and powers of attorney. Twelve questions with plain-English answers after each one.",
+  "kind": "knowledge",
+  "category": "basics",
+  "magnet": "estate-planning-checklist",
+  "related": [
+    "guides/what-is-estate-planning",
+    "guides/how-probate-works",
+    "guides/what-happens-if-you-die-without-a-will"
+  ],
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "If you die without a will, the state takes everything.",
+      "options": [
+        {
+          "label": "True",
+          "points": 0
+        },
+        {
+          "label": "False",
+          "points": 1
+        }
+      ],
+      "explanation": "False. Every state has intestacy laws that name your heirs, usually a spouse, children, parents or siblings, in a set order. The state only receives property if no relative can be found, which is rare. The bigger issue is that the state's formula, not your wishes, decides who gets what and who is in charge."
+    },
+    {
+      "id": "q2",
+      "prompt": "Having a will means your estate avoids probate.",
+      "options": [
+        {
+          "label": "True",
+          "points": 0
+        },
+        {
+          "label": "False",
+          "points": 1
+        }
+      ],
+      "explanation": "False. A will is the document a probate court reviews, so it usually goes through probate rather than around it. Probate is the court process that validates the will and oversees the transfer of property in your name alone. Assets with a beneficiary or co-owner, or held in a trust, generally pass outside it."
+    },
+    {
+      "id": "q3",
+      "prompt": "A beneficiary designation on a life insurance policy or retirement account generally overrides what your will says.",
+      "options": [
+        {
+          "label": "True",
+          "points": 1
+        },
+        {
+          "label": "False",
+          "points": 0
+        }
+      ],
+      "explanation": "True. These accounts pass by contract to the person named on the form, not by your will. If the form names an ex-spouse and your will names your child, the form usually controls. That is why many people review beneficiary forms after a marriage, divorce, birth or death."
+    },
+    {
+      "id": "q4",
+      "prompt": "A revocable living trust, by itself, eliminates federal estate tax.",
+      "options": [
+        {
+          "label": "True",
+          "points": 0
+        },
+        {
+          "label": "False",
+          "points": 1
+        }
+      ],
+      "explanation": "False. A revocable trust is treated as yours for tax purposes, so its assets are still counted in your estate. Its main strengths are avoiding probate for assets placed in it and planning for incapacity. For 2026 the federal estate tax exemption is $15 million per person<!-- verify -->, and most estates fall below it."
+    },
+    {
+      "id": "q5",
+      "prompt": "Adding your adult child to your house deed is always a safe, simple way to avoid probate.",
+      "options": [
+        {
+          "label": "True",
+          "points": 0
+        },
+        {
+          "label": "False",
+          "points": 1
+        }
+      ],
+      "explanation": "False. It can avoid probate, but it also makes your child a legal co-owner. Their creditors, a divorce or a lawsuit could reach the house, and they may lose a tax benefit on the property's growth in value that heirs often receive. Rules vary by state, so it is worth asking an attorney before retitling a home."
+    },
+    {
+      "id": "q6",
+      "prompt": "A financial power of attorney ends when the person who signed it dies.",
+      "options": [
+        {
+          "label": "True",
+          "points": 1
+        },
+        {
+          "label": "False",
+          "points": 0
+        }
+      ],
+      "explanation": "True. An agent's authority stops at death. After that, the executor named in the will, or a court-appointed administrator, has the authority to act for the estate. An agent who keeps using the account after the death can run into serious legal trouble."
+    },
+    {
+      "id": "q7",
+      "prompt": "Many states let small estates skip full probate using a simplified process.",
+      "options": [
+        {
+          "label": "True",
+          "points": 1
+        },
+        {
+          "label": "False",
+          "points": 0
+        }
+      ],
+      "explanation": "True. Many states offer an affidavit or a short court procedure for estates under a set dollar limit. The limits and the waiting periods differ a lot from state to state, and some states count assets differently. Check your own state's rule or ask a local attorney."
+    },
+    {
+      "id": "q8",
+      "prompt": "Your spouse automatically inherits everything, so a married person with a house and savings does not need to plan.",
+      "options": [
+        {
+          "label": "True",
+          "points": 0
+        },
+        {
+          "label": "False",
+          "points": 1
+        }
+      ],
+      "explanation": "False. Whether a spouse receives everything depends on how assets are titled and on state law. If you have children from a prior relationship, a spouse may share the estate with them, and property in your name alone may still need probate. Rules differ between community property states and others."
+    },
+    {
+      "id": "q9",
+      "prompt": "A will must be notarized to be valid in every state.",
+      "options": [
+        {
+          "label": "True",
+          "points": 0
+        },
+        {
+          "label": "False",
+          "points": 1
+        }
+      ],
+      "explanation": "False. Most states require a will to be signed by the maker and witnessed by two people, not notarized. A notary can be used to create a self-proving affidavit, which can speed up probate. Requirements for witnesses and electronic signing vary by state."
+    },
+    {
+      "id": "q10",
+      "prompt": "You can set up a trust and then forget about it, because a trust does its job even if it holds nothing.",
+      "options": [
+        {
+          "label": "True",
+          "points": 0
+        },
+        {
+          "label": "False",
+          "points": 1
+        }
+      ],
+      "explanation": "False. A trust only controls the assets that are titled in its name or that name it as beneficiary. An empty or partly funded trust can leave assets to go through probate anyway. Funding means retitling accounts and property, which takes follow-through after signing."
+    },
+    {
+      "id": "q11",
+      "prompt": "A living will and a healthcare power of attorney are the same document.",
+      "options": [
+        {
+          "label": "True",
+          "points": 0
+        },
+        {
+          "label": "False",
+          "points": 1
+        }
+      ],
+      "explanation": "False. A living will, also called an advance directive in some states, records your wishes about specific medical treatment. A healthcare power of attorney names a person to make decisions for you when you cannot. Many people use both, and some states combine them into one form."
+    },
+    {
+      "id": "q12",
+      "prompt": "Estate planning is only for people with a lot of money.",
+      "options": [
+        {
+          "label": "True",
+          "points": 0
+        },
+        {
+          "label": "False",
+          "points": 1
+        }
+      ],
+      "explanation": "False. Anyone who owns a home, has children, a bank account or a car, or has views about medical care benefits from having decisions on paper. The documents also name who is in charge and who cares for minor children. Having less wealth does not mean having fewer decisions to make."
+    }
+  ],
+  "bands": [
+    {
+      "min": 0,
+      "max": 4,
+      "label": "Lots of surprises",
+      "summary": "Many people hold beliefs that sound reasonable but do not match how wills, trusts and probate work. The answer review explains each one in plain English. A short checklist is a good place to start."
+    },
+    {
+      "min": 5,
+      "max": 8,
+      "label": "Good instincts",
+      "summary": "You have a solid base, with a few gaps that are common. Check the questions you missed, since those are usually the ones that surprise families later. A checklist can help you see what is already in place."
+    },
+    {
+      "min": 9,
+      "max": 12,
+      "label": "Well informed",
+      "summary": "You know the main rules and the common myths. The next step is making sure your own documents, titles and beneficiary forms match what you know. Rules vary by state, so a local attorney can confirm the details."
+    }
+  ]
+}

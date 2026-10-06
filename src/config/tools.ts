@@ -1,3 +1,4 @@
+import { FIGURES, usdMillions } from "@/config/figures";
 import type { CaptureTool } from "@/lib/lead";
 export interface ToolInfo {
   slug: string;
@@ -23,7 +24,7 @@ export const TOOLS: ToolInfo[] = [
     slug: "estate-tax-estimator",
     title: "Federal estate tax estimator",
     description: "See whether your estate is near the federal estate tax exemption and roughly what tax could be owed.",
-    answer: "Most estates owe no federal estate tax because the 2026 exemption is $15 million per person. This estimator shows how close yours is.",
+    answer: `Most estates owe no federal estate tax because the ${FIGURES.year} exemption is ${usdMillions(FIGURES.federalExemption)} per person. This estimator shows how close yours is.`,
   },
   {
     slug: "probate-cost-estimator",
@@ -94,7 +95,7 @@ export const toolConfig = {
 };
 
 /** Federal estate tax basic exclusion per person for 2026 (One Big Beautiful Bill Act). Verify each year. */
-export const FEDERAL_ESTATE_TAX_EXEMPTION_2026 = 15_000_000;
+export const FEDERAL_ESTATE_TAX_EXEMPTION_2026 = FIGURES.federalExemption;
 
 /**
  * 2026 state estate tax exemption thresholds, in dollars, from secondary sources.

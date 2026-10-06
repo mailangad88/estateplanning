@@ -124,6 +124,8 @@ For larger gifts, an [irrevocable trust](/learn/trusts/irrevocable-trusts) can a
 
 Form 709 is filed with your personal tax return timeline, by April 15 of the year after the gift. You list each gift, the recipient, the date, and the value. If you gave property, you describe it and explain how you valued it, and for real estate or closely held business interests you will usually need a written appraisal. The return shows how much of your lifetime exclusion the gifts used. You attach nothing to your income tax return, and you file Form 709 separately, even when no gift tax is due. Married couples who split gifts each file a return. Keep copies permanently, because your executor will need the totals when settling your estate.
 
+For a side-by-side look at how cash, stock, a house, tuition, and 529 gifts are treated, see [gifting strategies and the gift tax](/learn/estate-tax/gifting-strategies).
+
 ## How we can help
 
 Gifts can be simple or tangled with tax, benefits, and family issues. Our attorneys can help you weigh the options and coordinate gifts with the rest of your plan. Use the [plan finder](/plan-finder) to begin or book a consultation.

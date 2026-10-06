@@ -1,0 +1,16 @@
+{
+  "_note": "Re-verify every December and re-render. Used by on-screen text and voiceover captions of videos 5 and 13.",
+  "taxYear": 2026,
+  "verifiedOn": "2026-10-06",
+  "ssiResourceLimitIndividual": 2000,
+  "ssiResourceLimitCouple": 3000,
+  "fedExemptionIndividual": 15000000,
+  "topEstateTaxRate": 40,
+  "annualGiftExclusion": 19000,
+  "sources": {
+    "fedExemptionIndividual": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax",
+    "topEstateTaxRate": "https://www.law.cornell.edu/uscode/text/26/2001",
+    "annualGiftExclusion": "https://www.irs.gov/businesses/small-businesses-self-employed/frequently-asked-questions-on-gift-taxes",
+    "ssiResourceLimitIndividual": "https://www.ssa.gov/ssi/spotlights/spot-resources.htm"
+  }
+}

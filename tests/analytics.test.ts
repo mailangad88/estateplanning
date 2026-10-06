@@ -1,92 +1,71 @@
-import { beforeEach, describe, expect, it } from "vitest";
-import { ForbiddenError } from "@/server/auth/policy";
-import { funnelReport } from "@/server/analytics";
-import { createMemoryDb, type Db } from "@/server/db";
-import { actorFor, DEMO_FIRM_ID, DEMO_USERS, seedDemo } from "@/server/seed";
-import type { Actor, Lead, Stage } from "@/server/types";
+import { describe, expect, it } from "vitest";
+import { filterEvent, isRemarketingEvent } from "@/lib/analytics";
+import { isSensitivePath, SENSITIVE_PATH_PREFIXES } from "@/config/sensitive";
+import { getComparisons, getGuides, getLifeEvents } from "@/lib/content";
 
-const NOW = new Date("2026-10-06T15:00:00Z");
-const FROM = new Date("2026-10-01T00:00:00Z");
-const TO = new Date("2026-10-07T00:00:00Z");
-const user = (id: string): Actor => actorFor(DEMO_USERS.find((u) => u.id === id)!);
-const min = (m: number) => new Date(new Date("2026-10-03T12:00:00Z").getTime() + m * 60_000).toISOString();
+describe("sensitive paths", () => {
+  it("matches the listed prefixes and pages beneath them", () => {
+    expect(isSensitivePath("/estate-planning-for/special-needs")).toBe(true);
+    expect(isSensitivePath("/estate-planning-for/special-needs/trusts")).toBe(true);
+    expect(isSensitivePath("/estate-planning-for/new-diagnosis/")).toBe(true);
+    expect(isSensitivePath("/estate-planning-for/lgbtq-couples")).toBe(true);
+    expect(isSensitivePath("/guides/special-needs-trusts?x=1")).toBe(true);
+    expect(isSensitivePath("/guides/medicaid-and-long-term-care-planning")).toBe(true);
+    expect(isSensitivePath("/life-events/serious-diagnosis")).toBe(true);
+  });
 
-let db: Db;
-let n = 0;
+  it("does not match ordinary pages", () => {
+    expect(isSensitivePath("/")).toBe(false);
+    expect(isSensitivePath("/guides/how-probate-works")).toBe(false);
+    expect(isSensitivePath("/estate-planning-for/new-parents")).toBe(false);
+  });
 
-async function addLead(over: { source?: string; campaign?: string; tool?: string; stages?: Stage[]; firmId?: string; createdMinutes?: number }) {
-  n++;
-  const stages = over.stages ?? [];
-  const lead = {
-    id: `t-${n}`,
-    personId: "p",
-    createdAt: min(over.createdMinutes ?? 0),
-    stage: stages.at(-1) ?? "new",
-    stageHistory: [{ stage: "new", at: min(0), by: "system" }, ...stages.map((s) => ({ stage: s, at: min(30), by: "x" }))],
-    matterType: "new_plan",
-    state: "TX",
-    urgent: false,
-    score: { score: 50, tier: "B" },
-    segments: [],
-    source: { utmSource: over.source ?? "testsrc", utmCampaign: over.campaign ?? "c1" },
-    firmId: over.firmId,
-    capture: over.tool ? { tool: over.tool } : undefined,
-  } as unknown as Lead;
-  await db.leads.insert(lead);
-  return lead;
-}
+  it("every listed content page exists or is a planned audience page", () => {
+    const existing = new Set([
+      ...getGuides().map((g) => `/guides/${g.slug}`),
+      ...getComparisons().map((c) => `/compare/${c.slug}`),
+      ...getLifeEvents().map((l) => `/life-events/${l.slug}`),
+    ]);
+    const planned = ["/estate-planning-for/", "/life-events/estate-planning-after-a-serious-diagnosis"];
+    for (const p of SENSITIVE_PATH_PREFIXES) expect(existing.has(p) || planned.some((x) => p.startsWith(x)), p).toBe(true);
+  });
 
-beforeEach(async () => {
-  db = createMemoryDb();
-  await seedDemo(db, NOW);
+  it("covers every existing guide, comparison or life event about special needs, diagnosis, Medicaid or elder care", () => {
+    const topical = /special-needs|diagnosis|medicaid|lgbt|same-sex|aging-parents|elder|dementia/;
+    const pages = [
+      ...getGuides().map((g) => `/guides/${g.slug}`),
+      ...getComparisons().map((c) => `/compare/${c.slug}`),
+      ...getLifeEvents().map((l) => `/life-events/${l.slug}`),
+    ].filter((p) => topical.test(p));
+    for (const p of pages) expect(isSensitivePath(p), p).toBe(true);
+  });
 });
 
-describe("funnelReport", () => {
-  it("requires view_reports and scopes firm admins to their firm", async () => {
-    await expect(funnelReport(db, user("u-intake"), { from: FROM, to: TO })).rejects.toBeInstanceOf(ForbiddenError);
-    await addLead({ firmId: DEMO_FIRM_ID });
-    await addLead({ firmId: "other-firm" });
-    const r = await funnelReport(db, user("u-firmadmin"), { from: FROM, to: TO, firmId: "other-firm" });
-    expect(r.period.firmId).toBe(DEMO_FIRM_ID);
-    expect(r.totalLeads).toBe(1);
+describe("filterEvent", () => {
+  it("passes ordinary events on ordinary pages unchanged", () => {
+    expect(filterEvent("cta_book", { from: "sticky" }, "/guides/how-probate-works")).toEqual({ event: "cta_book", from: "sticky" });
+    expect(filterEvent("exit_intent_shown", {}, "/")).toEqual({ event: "exit_intent_shown" });
   });
 
-  it("counts stages reached, suppresses small cells and reports no PII", async () => {
-    for (let i = 0; i < 5; i++) await addLead({ stages: i < 3 ? ["contacted", "qualified", "retainer_signed"] : ["contacted"], tool: "plan_finder" });
-    await addLead({ source: "tiny", stages: ["retainer_signed"] });
-    const r = await funnelReport(db, user("u-marketing"), { from: FROM, to: TO });
-    expect(r.stages.find((s) => s.stage === "qualified")!.reached).toBeGreaterThanOrEqual(3);
-    const row = r.bySource.find((s) => s.source === "testsrc")!;
-    expect(row).toMatchObject({ leads: 5, retainersSigned: 3, signedRate: 0.6 });
-    const tiny = r.bySource.find((s) => s.source === "tiny")!;
-    expect(tiny.leads).toBe(1);
-    expect(tiny.signedRate).toBeNull();
-    expect(r.byTool.find((t) => t.tool === "unknown")!.signedRate).toBeNull();
-    expect(JSON.stringify(r)).not.toMatch(/@example\.com|Rivera|Taylor/);
+  it("skips remarketing-type events on sensitive pages", () => {
+    expect(isRemarketingEvent("exit_intent_shown")).toBe(true);
+    expect(isRemarketingEvent("audience_join")).toBe(true);
+    expect(filterEvent("exit_intent_shown", {}, "/guides/special-needs-trusts")).toBeNull();
+    expect(filterEvent("scroll_depth", { percent: 50 }, "/estate-planning-for/lgbtq")).toBeNull();
   });
 
-  it("computes speed to lead and ROI", async () => {
-    await addLead({ stages: ["contacted"], createdMinutes: 0 });
-    const fast = await addLead({ createdMinutes: 0 });
-    await db.activities.insert({ id: "a1", leadId: fast.id, kind: "call", direction: "outbound", at: min(2), summary: "x" });
-    await db.billableEvents.insert({ id: "b1", type: "ad_spend_posted", occurredAt: min(0), amountCents: 100_000 });
-    await db.billableEvents.insert({ id: "b2", type: "fee_collected", occurredAt: min(0), amountCents: 400_000 });
-    const r = await funnelReport(db, user("u-admin"), { from: FROM, to: TO });
-    expect(r.speedToLead.within5MinRate).toBeGreaterThan(0);
-    expect(r.speedToLead.medianMinutes).not.toBeNull();
-    expect(r.roi).toMatchObject({ adSpendCents: 100_000, revenueCents: 400_000 });
-    expect(r.roi.costPerLeadCents).toBe(Math.round(100_000 / r.totalLeads));
+  it("drops non-essential params on sensitive pages and flags the event", () => {
+    const out = filterEvent("lead_capture", { kind: "magnet", interest: "starter-kit", from: "sticky" }, "/life-events/serious-diagnosis");
+    expect(out).toEqual({ event: "lead_capture", from: "sticky", ads_restricted: 1 });
   });
 
-  it("summarises offers per lawyer", async () => {
-    const l = await addLead({});
-    const base = { leadId: l.id, firmId: DEMO_FIRM_ID, expiresAt: min(30), routingReason: "t", offeredAt: min(0) };
-    await db.assignments.insert({ ...base, id: "as1", lawyerId: "lawyer-a", status: "accepted", respondedAt: min(10), slaMet: true });
-    await db.assignments.insert({ ...base, id: "as2", lawyerId: "lawyer-b", status: "declined", declineReason: "capacity", respondedAt: min(5), slaMet: true });
-    await db.assignments.insert({ ...base, id: "as3", lawyerId: "lawyer-b", status: "expired", slaMet: false });
-    const r = await funnelReport(db, user("u-admin"), { from: FROM, to: TO });
-    expect(r.offers.timeouts).toBeGreaterThanOrEqual(1);
-    expect(r.offers.declinesByReason.capacity).toBe(1);
-    expect(r.offers.perLawyer.find((x) => x.lawyerId === "lawyer-a")!.medianAcceptMinutes).toBe(10);
+  it("strips health and orientation terms from params on every page", () => {
+    const out = filterEvent("lead_capture", { kind: "magnet", interest: "special-needs-trust", topic: "Medicaid planning", step: 2 }, "/tools");
+    expect(out).toEqual({ event: "lead_capture", kind: "magnet", step: 2 });
+    expect(filterEvent("cta_click", { cta_id: "lgbtq-guide" }, "/")).toEqual({ event: "cta_click" });
+  });
+
+  it("does not let props overwrite the event name", () => {
+    expect(filterEvent("click_to_call", { event: "other" }, "/")).toEqual({ event: "click_to_call" });
   });
 });

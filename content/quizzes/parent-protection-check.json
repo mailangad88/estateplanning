@@ -1,0 +1,227 @@
+{
+  "title": "Parent Protection Check",
+  "promise": "Ten questions to see how well your plans protect your children if something happened to you.",
+  "description": "A ten-question check for parents of minor children: guardians, money management, life insurance, beneficiary forms and where your documents are kept.",
+  "kind": "assessment",
+  "category": "family",
+  "magnet": "guardian-for-your-kids-worksheet",
+  "related": [
+    "guides/guardianship-for-minor-children",
+    "life-events/new-baby",
+    "guides/leaving-money-to-minors"
+  ],
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Have you named a guardian for your children in a signed will?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "I have decided but not signed anything",
+          "points": 1
+        },
+        {
+          "label": "Yes, in a signed will",
+          "points": 2
+        }
+      ],
+      "explanation": "In most states, a parent names a guardian for minor children in a will. If no one is named, a court decides, which may not match what you would have chosen. A will is the usual place to record the choice."
+    },
+    {
+      "id": "q2",
+      "prompt": "Have you named a backup guardian?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Thought about it, not recorded",
+          "points": 1
+        },
+        {
+          "label": "Yes, in writing",
+          "points": 2
+        }
+      ],
+      "explanation": "The first choice may be unable or unwilling to serve when the time comes. A backup named in the will gives the court another option you picked. Many parents also name someone to act temporarily until the guardian arrives."
+    },
+    {
+      "id": "q3",
+      "prompt": "Have you asked the people you chose whether they are willing?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Spoke with one of them",
+          "points": 1
+        },
+        {
+          "label": "Yes, all of them agreed",
+          "points": 2
+        }
+      ],
+      "explanation": "Naming someone who has not agreed can cause delays or a refusal. A short conversation about values, location and finances helps both sides. The role is a large commitment, and willingness matters."
+    },
+    {
+      "id": "q4",
+      "prompt": "Do you have a plan for managing money left for your children?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Some idea, not documented",
+          "points": 1
+        },
+        {
+          "label": "Yes, a trust or named custodian",
+          "points": 2
+        }
+      ],
+      "explanation": "Minors generally cannot control significant money directly. Without a plan, a court may set up a conservatorship, and in many states the child gets the funds at 18. A trust or a custodian account with a named manager lets you choose who manages it and when your child receives it."
+    },
+    {
+      "id": "q5",
+      "prompt": "Do you have life insurance that would support your family?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes, but I have not checked the amount",
+          "points": 1
+        },
+        {
+          "label": "Yes, and I reviewed the amount recently",
+          "points": 2
+        }
+      ],
+      "explanation": "Life insurance gives your family cash for living costs, childcare and education. Many people look at income, debts and the number of years until the children are independent when sizing coverage. A tool or an advisor can help work through the numbers."
+    },
+    {
+      "id": "q6",
+      "prompt": "Do your beneficiary forms avoid naming a minor child directly?",
+      "options": [
+        {
+          "label": "I have named a minor child directly",
+          "points": 0
+        },
+        {
+          "label": "I am not sure",
+          "points": 1
+        },
+        {
+          "label": "Yes, they name a trust, custodian or adult",
+          "points": 2
+        }
+      ],
+      "explanation": "If a minor is named directly, a court may need to appoint someone to manage the money until the child is an adult. Naming a trust or a custodian under your state's Uniform Transfers to Minors Act can avoid that. Check forms for life insurance and retirement accounts."
+    },
+    {
+      "id": "q7",
+      "prompt": "Do your beneficiary forms match your current wishes (for example after marriage, divorce or a new baby)?",
+      "options": [
+        {
+          "label": "Not reviewed since before my kids were born",
+          "points": 0
+        },
+        {
+          "label": "Partly reviewed",
+          "points": 1
+        },
+        {
+          "label": "Yes, reviewed recently",
+          "points": 2
+        }
+      ],
+      "explanation": "Forms are not updated automatically after life changes. An outdated form can send money to a former spouse or to someone you did not intend. A short review after each major event is a common habit."
+    },
+    {
+      "id": "q8",
+      "prompt": "Is there written information a caregiver could use right away (medical details, schedules, allergies, doctors)?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "In my head or in scattered notes",
+          "points": 1
+        },
+        {
+          "label": "Yes, in one place",
+          "points": 2
+        }
+      ],
+      "explanation": "In an emergency, whoever steps in needs to know routines, medications and contacts. A one-page sheet kept with your documents is easy to update. It helps a caregiver, even for a short time."
+    },
+    {
+      "id": "q9",
+      "prompt": "Do the people who would step in know where your documents and account information are?",
+      "options": [
+        {
+          "label": "No one does",
+          "points": 0
+        },
+        {
+          "label": "One person knows roughly",
+          "points": 1
+        },
+        {
+          "label": "Yes, and the location is written down",
+          "points": 2
+        }
+      ],
+      "explanation": "Documents that no one can find slow things down. Many families use a fireproof box, a safe or a secure digital folder and tell one trusted person where it is. Share the location, not necessarily the contents."
+    },
+    {
+      "id": "q10",
+      "prompt": "Have you reviewed your plans since your youngest child was born or your family last changed?",
+      "options": [
+        {
+          "label": "Never",
+          "points": 0
+        },
+        {
+          "label": "More than three years ago",
+          "points": 1
+        },
+        {
+          "label": "Within the last few years",
+          "points": 2
+        }
+      ],
+      "explanation": "Families change, and so do laws and assets. Many people review at births, moves, job changes and every few years. A short review keeps guardians, agents and beneficiaries current."
+    }
+  ],
+  "bands": [
+    {
+      "min": 0,
+      "max": 6,
+      "label": "Needs attention",
+      "summary": "Several of the basics are not yet in place, which is common for busy parents. Starting with a guardian choice gives the rest a clear anchor. The worksheet below helps you compare options and record your reasons."
+    },
+    {
+      "min": 7,
+      "max": 13,
+      "label": "Partly protected",
+      "summary": "You have some important pieces, and a few gaps remain. Look at the questions you scored lowest on and pick one to finish this month. A worksheet can help with the guardian choice."
+    },
+    {
+      "min": 14,
+      "max": 20,
+      "label": "Well protected",
+      "summary": "The main safeguards for your children seem to be in place. Keep them current with a review after big life changes. Rules vary by state, so an attorney can confirm that the documents work where you live."
+    }
+  ]
+}

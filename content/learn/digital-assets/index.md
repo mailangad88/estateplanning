@@ -68,6 +68,8 @@ Each platform has its own policy. Facebook and Instagram offer memorialization a
 
 Email deserves special attention because it receives password reset links for almost everything else. If your family can reach your email, they can often recover other accounts. We cover provider by provider in [what happens to social media and email accounts when you die](/learn/digital-assets/social-media-after-death), including what families should and should not do in the first weeks. If you are the family member dealing with accounts now, see our [checklist for what to do when someone dies](/learn/after-a-death/what-to-do-when-someone-dies-checklist).
 
+To name someone with Apple, Google, Facebook or a password manager, follow our steps on [setting up a digital legacy contact](/learn/digital-assets/digital-legacy-contacts).
+
 ## What about cryptocurrency?
 
 Cryptocurrency is the digital asset where mistakes cost the most. Coins on a regulated exchange can usually be claimed through the company's process, with a death certificate and court authority. Coins in a self-custody wallet cannot be recovered without the private key or seed phrase, and no court can reset them.

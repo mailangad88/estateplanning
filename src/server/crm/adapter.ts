@@ -140,6 +140,8 @@ export function captureFields(lead: Lead) {
     tool: lead.capture?.tool,
     resource: lead.capture?.resource,
     priorTools: lead.priorTools ?? [],
+    /** Self-reported "How did you hear about us?" (e.g. ai_assistant), when the visitor answered */
+    heardFrom: lead.source.heardFrom,
     tags: lead.segments.filter((s) => !SENSITIVE_SEGMENTS.includes(s)),
     sensitiveTrack: sensitive,
   };

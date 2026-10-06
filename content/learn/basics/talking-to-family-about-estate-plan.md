@@ -125,6 +125,8 @@ Expect some emotion. People may be sad, anxious or defensive, and some will say 
 4. Set up a way for your executor to find accounts and digital access. See [passwords and access](/learn/digital-assets/passwords-and-access).
 5. Revisit the conversation whenever you update your plan. See [when to review and update your estate plan](/learn/basics/when-to-update-your-estate-plan).
 
+A written [letter of instruction](/learn/basics/letter-of-instruction) can follow the conversation, so the practical details survive even if the discussion is forgotten.
+
 ## How we can help
 
 If you are unsure how to explain a choice to your family, or you want help deciding which parts of your plan to share, our attorneys can talk it through with you. The [plan finder](/plan-finder) is a good first step if you do not yet know which documents you need, and you can book a consultation when you are ready to put your decisions in writing.

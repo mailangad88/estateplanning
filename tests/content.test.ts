@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
+import { getChecklists, getComparisons, getGuides, getLifeEvents, getPosts } from "@/lib/content";
 import {
   getAllArticles,
   getBacklinks,
@@ -28,6 +29,13 @@ const validUrls = new Set<string>([
   ...articles.map((a) => a.url),
   ...glossary.map((g) => g.url),
   ...states.map((s) => s.url),
+  // Other collections on the site that library pages may link to.
+  ...getGuides().map((g) => `/guides/${g.slug}`),
+  ...getComparisons().map((c) => `/compare/${c.slug}`),
+  ...getPosts().map((p) => `/blog/${p.slug}`),
+  ...getLifeEvents().map((l) => `/life-events/${l.slug}`),
+  ...getChecklists().map((c) => `/checklists/${c.slug}`),
+  "/guides", "/compare", "/blog", "/life-events", "/checklists", "/tools", "/faq", "/resources", "/pricing", "/about", "/contact",
 ]);
 
 const allPages = [...articles, ...glossary, ...states];
@@ -178,8 +186,58 @@ describe("page quality", () => {
 
 describe("cross-links to the rest of the site", () => {
   it("every mapped guide, comparison, question and life event exists", async () => {
-    const { clusterMapPaths, siteLinksFor } = await import("@/lib/site-links");
-    const resolved = new Set(getClusters().flatMap((c) => siteLinksFor(c.slug).map((l) => l.url)));
+    const { clusterMapPaths, siteLinksFor, toolsFor } = await import("@/lib/site-links");
+    const resolved = new Set(getClusters().flatMap((c) => [...siteLinksFor(c.slug), ...toolsFor(c.slug)].map((l) => l.url)));
     expect(clusterMapPaths().filter((p) => !resolved.has(p))).toEqual([]);
+  });
+});
+
+describe("landing page quality gate", () => {
+  it("no two pages are near-duplicates (8-word shingle overlap)", () => {
+    const shingles = (text: string) => {
+      const words = text.toLowerCase().replace(/\[([^\]]*)\]\([^)]*\)/g, "$1").match(/[a-z0-9']+/g) ?? [];
+      const out = new Set<string>();
+      for (let i = 0; i + 8 <= words.length; i++) out.add(words.slice(i, i + 8).join(" "));
+      return out;
+    };
+    const pages = [...articles, ...states].map((p) => ({ url: p.url, sh: shingles(p.markdown) }));
+    const dupes: string[] = [];
+    for (let i = 0; i < pages.length; i++) {
+      for (let j = i + 1; j < pages.length; j++) {
+        const a = pages[i].sh;
+        const b = pages[j].sh;
+        let shared = 0;
+        for (const s of a) if (b.has(s)) shared++;
+        const overlap = shared / Math.min(a.size, b.size);
+        if (overlap > 0.15) dupes.push(`${pages[i].url} ~ ${pages[j].url} (${Math.round(overlap * 100)}%)`);
+      }
+    }
+    expect(dupes).toEqual([]);
+  });
+
+  it("every library article sends readers to the plan finder or a free tool", () => {
+    const missing = articles
+      .filter((a) => !a.links.some((l) => l === "/plan-finder" || l.startsWith("/tools/") || l.startsWith("/checklists/")))
+      .map((a) => a.url);
+    expect(missing).toEqual([]);
+  });
+
+  it("the landing page queue is consistent with the topic map", () => {
+    const queue = JSON.parse(fs.readFileSync(path.join(process.cwd(), "content", "queue.json"), "utf8")) as {
+      items: { id: string; slug: string; cluster: string; status: string; intent: string }[];
+    };
+    const ids = new Set<string>();
+    const problems: string[] = [];
+    const statuses = new Set(["queued", "drafted", "published", "covered", "blocked", "skipped"]);
+    for (const q of queue.items) {
+      if (ids.has(q.id)) problems.push(`duplicate id ${q.id}`);
+      ids.add(q.id);
+      if (!statuses.has(q.status)) problems.push(`${q.id} has unknown status ${q.status}`);
+      if (!getClusters().some((c) => c.slug === q.cluster)) problems.push(`${q.id} has unknown cluster ${q.cluster}`);
+      if ((q.status === "drafted" || q.status === "published") && !validUrls.has(`/learn/${q.cluster}/${q.slug}`)) {
+        problems.push(`${q.id} is ${q.status} but /learn/${q.cluster}/${q.slug} does not exist`);
+      }
+    }
+    expect(problems).toEqual([]);
   });
 });

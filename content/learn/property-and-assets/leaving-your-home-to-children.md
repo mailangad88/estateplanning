@@ -115,6 +115,8 @@ Plan for the house to outlast your wishes. Siblings often disagree about whether
 
 Siblings of unequal means may also need an equalizing gift, such as a larger share of other assets for the child who does not get the house. See [inheriting a house](/learn/after-a-death/inheriting-a-house) to understand what your children will face and talking to family about your estate plan to start the conversation.
 
+Land that was never put into anyone's name after a death is a different problem, covered in [heirs' property](/learn/property-and-assets/heirs-property).
+
 ## How we can help
 
 The right way to leave your home depends on your state, your mortgage, your family and your health. Our attorneys can compare the options for your situation and prepare the deed, trust or will that carries out your choice. Start with the [plan finder](/plan-finder) or book a consultation.

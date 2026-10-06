@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { GUIDES, findGuide } from "@/content/guides";
+import { toolConfig } from "@/config/tools";
 import { caStatutoryFee, estimateProbate } from "@/lib/tools/costEstimate";
 import { READINESS_ITEMS, scoreReadiness } from "@/lib/tools/readiness";
 import { weighWillVsTrust } from "@/lib/tools/willVsTrust";
@@ -12,6 +12,37 @@ describe("caStatutoryFee", () => {
     expect(caStatutoryFee(2_000_000)).toBe(33_000);
     expect(caStatutoryFee(5_000_000)).toBe(63_000);
     expect(caStatutoryFee(25_000_000)).toBe(188_000);
+  });
+});
+
+describe("California statutory fee anchors (Prob. Code 10810 attorney, 10800 personal representative)", () => {
+  // Each fee type gets the same schedule, so the anchors apply to the attorney and to the executor.
+  const anchors: [number, number][] = [
+    [100_000, 4_000],
+    [200_000, 7_000],
+    [1_000_000, 23_000],
+    [10_000_000, 113_000],
+    [25_000_000, 188_000],
+  ];
+
+  it.each(anchors)("estate of $%i pays $%i per fee type", (estate, fee) => {
+    expect(caStatutoryFee(estate)).toBe(fee);
+  });
+
+  it.each(anchors)("the California estimate ranges from one fee (executor waives) to both fees, at $%i", (estate, fee) => {
+    const e = estimateProbate({ estateValue: estate, state: "CA", otherStatesWithProperty: 0 });
+    const { filingCostsDollars } = toolConfig.probate;
+    expect(e.probateCost.low).toBe(Math.round((fee + filingCostsDollars.low) / 100) * 100);
+    expect(e.probateCost.high).toBe(Math.round((fee * 2 + filingCostsDollars.high) / 100) * 100);
+  });
+
+  it("never decreases as the estate grows", () => {
+    let prev = 0;
+    for (let v = 0; v <= 26_000_000; v += 50_000) {
+      const fee = caStatutoryFee(v);
+      expect(fee).toBeGreaterThanOrEqual(prev);
+      prev = fee;
+    }
   });
 });
 
@@ -69,13 +100,5 @@ describe("weighWillVsTrust", () => {
 
   it("says either when answers are balanced", () => {
     expect(weighWillVsTrust({ ownsHome: "yes", budgetFirst: "yes" }).lean).toBe("either");
-  });
-});
-
-describe("guides", () => {
-  it("have unique slugs and an attorney questions section", () => {
-    expect(new Set(GUIDES.map((g) => g.slug)).size).toBe(GUIDES.length);
-    for (const g of GUIDES) expect(g.sections.at(-1)?.heading).toMatch(/attorney/i);
-    expect(findGuide("estate-planning-checklist")).toBeDefined();
   });
 });

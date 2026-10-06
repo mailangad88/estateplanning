@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { HEARD_FROM_OPTIONS } from "@/lib/heardFrom";
 import { effectiveContactMethod, leadSubmissionSchema } from "@/lib/lead";
 
 const valid = {
@@ -50,5 +51,22 @@ describe("capture fields", () => {
 
   it("rejects unknown capture tools", () => {
     expect(leadSubmissionSchema.safeParse({ ...valid, capture: { tool: "spam" } }).success).toBe(false);
+  });
+});
+
+describe("how did you hear about us", () => {
+  it("is optional and accepts the listed answers, including AI assistants", () => {
+    expect(leadSubmissionSchema.parse(valid).source.heardFrom).toBeUndefined();
+    const r = leadSubmissionSchema.parse({ ...valid, source: { landingPage: "https://x.test/plan-finder", heardFrom: "ai_assistant" } });
+    expect(r.source.heardFrom).toBe("ai_assistant");
+  });
+
+  it("rejects answers that are not on the list", () => {
+    expect(leadSubmissionSchema.safeParse({ ...valid, source: { heardFrom: "billboard" } }).success).toBe(false);
+  });
+
+  it("offers every option the playbook asks for", () => {
+    expect(HEARD_FROM_OPTIONS.map((o) => o.value)).toEqual(["google_search", "ai_assistant", "social_media", "friend_family", "advisor_cpa", "other"]);
+    expect(HEARD_FROM_OPTIONS.find((o) => o.value === "ai_assistant")?.label).toMatch(/ChatGPT/);
   });
 });

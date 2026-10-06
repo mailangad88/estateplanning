@@ -152,6 +152,17 @@ describe("capture data", async () => {
     expect(f.reqs[0].body.tags).toContain("sensitive_track");
     expect(f.reqs[0].body.tags).not.toContain("estate_administration");
   });
+
+  it("sends the self-reported lead source to both CRMs", async () => {
+    const lead = makeLead({ ...captured, source: { utmSource: "google", heardFrom: "ai_assistant" }, segments: [...captured.segments, "heard:ai_assistant"] });
+    const lm = fakeFetch(() => ({ json: { data: { id: 1 } } }));
+    await new LawmaticsAdapter({ token: "t", fetchImpl: lm.impl }).upsertMatter(lead, person, { contactId: "1" });
+    expect(lm.reqs[0].body.custom_fields.heard_from).toBe("ai_assistant");
+    expect(lm.reqs[0].body.tags).toContain("heard:ai_assistant");
+    const hs = fakeFetch(() => ({ json: { id: "d1" } }));
+    await new HubSpotAdapter({ token: "hs", fetchImpl: hs.impl }).upsertMatter(lead, person, { contactId: "77" });
+    expect(hs.reqs[0].body.properties.ep_heard_from).toBe("ai_assistant");
+  });
 });
 
 describe("CrmSync", async () => {

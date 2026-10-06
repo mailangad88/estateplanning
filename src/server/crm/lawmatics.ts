@@ -77,7 +77,7 @@ export class LawmaticsAdapter implements CrmAdapter {
       source: lead.source.utmSource ?? lead.source.referrer,
       // verify against Lawmatics API docs before launch: tags and custom field keys.
       tags: [...cap.tags, ...(cap.sensitiveTrack ? ["sensitive_track"] : [])],
-      custom_fields: { capture_tool: cap.tool, capture_resource: cap.resource, prior_tools: cap.priorTools.join(",") },
+      custom_fields: { capture_tool: cap.tool, capture_resource: cap.resource, prior_tools: cap.priorTools.join(","), heard_from: cap.heardFrom },
     });
     return { matterId: this.idOf(json) };
   }

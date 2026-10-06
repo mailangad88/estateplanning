@@ -44,6 +44,25 @@ export interface Article extends Rendered {
   faqs: Faq[];
   related: string[];
   glossary: string[];
+  /** "approved" only after the attorney signs off. See isIndexable(). */
+  review: ReviewStatus;
+  /** Search intent from the landing page pipeline (content/templates). */
+  intent?: string;
+}
+
+export type ReviewStatus = "pending" | "approved";
+
+/**
+ * Publish gate. With REQUIRE_ATTORNEY_REVIEW=true (set it in production once the attorney starts
+ * approving pages), pages not marked `review: approved` are noindexed and left out of the sitemap,
+ * llms.txt, llms-full.txt and the RSS feed. Unset, every page is indexable (pre-launch previews).
+ */
+export function isIndexable(page: { review?: ReviewStatus }): boolean {
+  return process.env.REQUIRE_ATTORNEY_REVIEW !== "true" || page.review === "approved";
+}
+
+function asReview(v: unknown): ReviewStatus {
+  return v === "approved" ? "approved" : "pending";
 }
 
 export interface Cluster {
@@ -94,6 +113,7 @@ export interface StateGuide extends Rendered, StateInfo {
   facts: StateFacts;
   faqs: Faq[];
   related: string[];
+  review: ReviewStatus;
 }
 
 export interface City {
@@ -147,7 +167,68 @@ export function refToUrl(ref: string): string {
 
 const LINK_RE = /\]\((\/[^)\s#?]*)[^)]*\)/g;
 
-export function render(markdown: string): Rendered {
+/* Glossary terms auto-linked on first mention. Generic words that would link nearly every sentence are skipped. */
+const AUTOLINK_SKIP = new Set(["estate", "trust", "agent", "principal", "funding", "disclaimer", "heir", "beneficiary", "digital-assets", "probate", "trustee", "executor", "guardian", "power-of-attorney", "fiduciary"]);
+const AUTOLINK_MAX = 6;
+let autolinkTerms: { slug: string; re: RegExp }[] | null = null;
+
+function getAutolinkTerms() {
+  if (!autolinkTerms) {
+    const terms = readJson<{ terms: [string, string][] }>("glossary-terms.json").terms;
+    autolinkTerms = terms
+      .filter(([slug]) => !AUTOLINK_SKIP.has(slug))
+      .flatMap(([slug, name]) => {
+        // "Grantor (settlor, trustor)" -> ["Grantor"]; "Do-not-resuscitate order (DNR)" -> both forms.
+        const base = name.replace(/\s*\(.*?\)\s*/g, " ").trim();
+        const paren = /\(([A-Z]{2,})\)/.exec(name)?.[1];
+        return [base, paren].filter((x): x is string => !!x).map((form) => ({ slug, form }));
+      })
+      .sort((a, b) => b.form.length - a.form.length)
+      .map(({ slug, form }) => ({
+        slug,
+        re: new RegExp(`\\b${form.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/[- ]/g, "[- ]")}s?\\b`, /[A-Z]{2,}/.test(form) ? "" : "i"),
+      }));
+  }
+  return autolinkTerms;
+}
+
+/**
+ * Links the first mention of each glossary term in body text (never inside links, headings,
+ * code or table headers), up to AUTOLINK_MAX per page. Terms the page already links are skipped.
+ */
+export function autolinkGlossary(html: string, alreadyLinked: Set<string>, self?: string): string {
+  const done = new Set<string>(alreadyLinked);
+  if (self) done.add(self);
+  let added = 0;
+  let blocked = 0;
+  return html
+    .split(/(<[^>]+>)/)
+    .map((part) => {
+      if (part.startsWith("<")) {
+        const m = /^<(\/?)(a|h[1-6]|code|pre|th|summary)\b/i.exec(part);
+        if (m) blocked += m[1] ? -1 : 1;
+        return part;
+      }
+      if (blocked > 0 || added >= AUTOLINK_MAX || !part.trim()) return part;
+      let text = part;
+      for (const t of getAutolinkTerms()) {
+        if (added >= AUTOLINK_MAX) break;
+        if (done.has(t.slug)) continue;
+        const m = t.re.exec(text);
+        if (!m) continue;
+        // Avoid splitting a link we just inserted into this text segment.
+        const before = text.slice(0, m.index);
+        if (before.lastIndexOf("<a ") > before.lastIndexOf("</a>")) continue;
+        text = `${before}<a href="/glossary/${t.slug}" class="term">${m[0]}</a>${text.slice(m.index + m[0].length)}`;
+        done.add(t.slug);
+        added++;
+      }
+      return text;
+    })
+    .join("");
+}
+
+export function render(markdown: string, opts: { autolink?: boolean; self?: string } = {}): Rendered {
   const headings: Heading[] = [];
   const seen = new Map<string, number>();
   let html = marked.parse(markdown, { async: false, gfm: true }) as string;
@@ -162,8 +243,14 @@ export function render(markdown: string): Rendered {
   // Wrap tables so they scroll on small screens instead of widening the page.
   html = html.replace(/<table>/g, '<div class="table-wrap"><table>').replace(/<\/table>/g, "</table></div>");
   const links = Array.from(markdown.matchAll(LINK_RE), (m) => m[1].replace(/\/$/, "") || "/");
+  if (opts.autolink) {
+    const linkedTerms = new Set(links.filter((l) => l.startsWith("/glossary/")).map((l) => l.slice("/glossary/".length)));
+    html = autolinkGlossary(html, linkedTerms, opts.self);
+  }
+  // Collect links from the final HTML so auto-linked terms count toward glossary backlinks.
+  const allLinks = Array.from(html.matchAll(/href="(\/[^"#?]*)/g), (m) => m[1].replace(/\/$/, "") || "/");
   const wordCount = markdown.replace(/[#>*_`|\-[\]()]/g, " ").split(/\s+/).filter(Boolean).length;
-  return { markdown, html, headings, wordCount, links };
+  return { markdown, html, headings, wordCount, links: allLinks };
 }
 
 /* ------------------------------------------------------------------ clusters and articles */
@@ -207,7 +294,9 @@ function loadArticle(cluster: string, slug: string | null): Article | null {
     faqs: asFaqs(data.faqs),
     related: asStrings(data.related),
     glossary: asStrings(data.glossary),
-    ...render(content),
+    review: asReview(data.review),
+    intent: data.intent ? String(data.intent) : undefined,
+    ...render(content, { autolink: true }),
   };
 }
 
@@ -287,7 +376,7 @@ export function getGlossary(): GlossaryEntry[] {
           also: asStrings(data.also),
           seeAlso: asStrings(data.seeAlso),
           related: asStrings(data.related),
-          ...render(content),
+          ...render(content, { autolink: true, self: slug }),
         };
       })
       .filter((g): g is GlossaryEntry => g !== null)
@@ -324,7 +413,8 @@ export function getStateGuides(): StateGuide[] {
           facts: (data.facts ?? {}) as StateFacts,
           faqs: asFaqs(data.faqs),
           related: asStrings(data.related),
-          ...render(content),
+          review: asReview(data.review),
+          ...render(content, { autolink: true }),
         };
       })
       .filter((g): g is StateGuide => g !== null);

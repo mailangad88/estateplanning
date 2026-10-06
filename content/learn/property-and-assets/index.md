@@ -75,6 +75,8 @@ Other points from that article:
 
 If you own real estate in more than one state, your estate may need a second probate, called [ancillary probate](/glossary/ancillary-probate), in each state where you hold land. Each state's court has authority over the real estate within its borders. That means separate filings, local attorneys and extra delay. Our article on [owning property in more than one state](/learn/property-and-assets/out-of-state-property) explains how to avoid it with a trust, a transfer-on-death deed or joint ownership, and how some states tax a nonresident's real estate. The probate cluster covers the court process in [ancillary probate](/learn/probate/ancillary-probate).
 
+Land passed down informally through several generations can end up owned by dozens of relatives with no clear deed. Our article on [heirs' property](/learn/property-and-assets/heirs-property) explains the risk of a forced sale and how families clear title.
+
 Vacation homes need more than a title change. If several children will inherit a cabin or beach house, decide who pays the carrying costs, who uses it when, and how someone can leave the group. Without answers, a co-owner can ask a court to force a sale.
 
 ## Is it a good idea to add a child to your deed or bank account?

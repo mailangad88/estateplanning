@@ -113,6 +113,8 @@ If your goal is to help a child with a home, consider whether a transfer-on-deat
 
 Sometimes the way an asset is held decides the outcome. Putting a house in a revocable trust or naming a beneficiary on a transfer-on-death deed generally preserves the step-up, because you keep ownership until death. Adding a child to the deed during your life does not, since it is a gift of part of the home. Some irrevocable trusts include a provision that lets the grantor swap assets or gives a trustee power to include appreciated assets in the estate so they receive a new basis. Because these designs have trade-offs for creditor protection and tax, they should be set up by an attorney who works with your tax advisor.
 
+Donors who hold highly appreciated assets and also want to support charity may find a [charitable remainder trust](/learn/estate-tax/charitable-remainder-trust) or a [donor-advised fund](/learn/estate-tax/donor-advised-funds-and-qcds) a better route than a gift to family.
+
 ## How we can help
 
 Whether to give, sell, or hold appreciated property depends on your family, your state, and your goals. Our attorneys can help you work through the numbers with your tax advisor. Start with the [plan finder](/plan-finder) or book a consultation.

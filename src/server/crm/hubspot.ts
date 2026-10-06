@@ -85,6 +85,7 @@ export class HubSpotAdapter implements CrmAdapter {
         ep_capture_resource: cap.resource ?? "",
         ep_prior_tools: cap.priorTools.join(";"),
         ep_segments: cap.tags.join(";"),
+        ep_heard_from: cap.heardFrom ?? "",
         ep_sensitive_track: cap.sensitiveTrack ? "true" : "false",
       },
       associations: [{ to: { id: ctx.contactId }, types: [{ associationCategory: HS, associationTypeId: 3 }] }],

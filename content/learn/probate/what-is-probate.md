@@ -97,6 +97,8 @@ Many states let heirs collect modest estates without opening a full probate case
 
 Often, yes, at least in large part. Beneficiary designations, joint ownership with the right kind of survivorship, transfer-on-death registrations and a funded living trust can all pass assets directly. They carry tradeoffs, which we explain in [how to avoid probate](/learn/probate/how-to-avoid-probate). A plan should be built around your family and your state, not around avoiding probate for its own sake.
 
+To start the process, see [how to file probate](/learn/probate/how-to-file-probate), and to decide how much help you need, read [do I need a probate lawyer?](/learn/probate/do-i-need-a-probate-lawyer).
+
 ## How we can help
 
 If you are facing probate as an executor or heir, an attorney can tell you which track applies in your state and where the pitfalls are. If you want to keep your own family out of the process, our [plan finder](/plan-finder) can point you toward the documents that fit your situation, or you can book a consultation with one of our attorneys to talk through your options at your own pace.

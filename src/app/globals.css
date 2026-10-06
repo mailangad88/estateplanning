@@ -194,8 +194,7 @@ label.field input[type="range"] { padding: 0; border: 0; }
   box-shadow: 0 4px 16px rgb(0 0 0 / 0.15);
 }
 .exit-banner span { flex: 1; }
-.exit-banner .linklike { text-decoration: none; color: var(--muted); }
-
+.exit-banner 
 /* Probate vs trust explainer */
 .explainer { margin: 24px 0; }
 .explainer svg { width: 100%; height: auto; }
@@ -271,3 +270,47 @@ table.facts th { width: 34%; background: var(--surface); }
 .hub-grid ul { padding-left: 18px; font-size: 0.92rem; margin-bottom: 0; }
 .state-grid { list-style: none; padding: 0; display: grid; gap: 6px 16px; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
 .back-to-pillar { font-size: 0.9rem; color: var(--muted); }
+/* Money pages */
+.todo { background: #fff3c4; color: #4a3b00; border-radius: 3px; padding: 0 3px; }
+@media (prefers-color-scheme: dark) { .todo { background: #4a3b00; color: #ffe9a3; } }
+.callout { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; margin: 16px 0; }
+.cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0; }
+.tools-box { margin: 32px 0; }
+/* Free resource library */
+.library-filters { display: grid; gap: 0 12px; grid-template-columns: 2fr 1fr 1fr 1fr; }
+@media (max-width: 640px) { .library-filters { grid-template-columns: 1fr; } }
+.magnet-landing__grid { display: grid; gap: 24px; grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 760px) { .magnet-landing__grid { grid-template-columns: 1.2fr 1fr; } .magnet-landing__grid .optin { margin-top: 0; position: sticky; top: 16px; } }
+.benefits { list-style: none; padding: 0; margin: 0 0 16px; }
+.benefits li { padding: 6px 0 6px 28px; position: relative; }
+.benefits li::before { content: "✓"; position: absolute; left: 4px; color: var(--accent); font-weight: 700; }
+.inside { margin: 8px 0 0; padding-left: 20px; }
+.optin__fields { display: grid; gap: 0 12px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+.optin--compact { margin: 24px 0; }
+.magnet-view .prose input[type="checkbox"] { width: 1.1em; height: 1.1em; margin-right: 8px; vertical-align: -2px; }
+.magnet-view .prose li:has(> input[type="checkbox"]) { list-style: none; margin-left: -1.2em; }
+.magnet-view .lesson { border-top: 1px solid var(--border); margin-top: 32px; }
+.magnet-callout .cards { margin-top: 8px; }
+@media print {
+  .magnet-view .prose table { break-inside: avoid; }
+  .magnet-view h2 { break-after: avoid; }
+}
+.linklike { background: none; border: 0; padding: 0; color: var(--accent); text-decoration: underline; cursor: pointer; font: inherit; }
+.tool .question { border: 0; padding: 0; margin: 0 0 14px; }
+.tool .question legend { font-weight: 600; margin-bottom: 4px; }
+.magnet-cover { max-width: 260px; margin: 0 0 16px; } .magnet-cover svg { width: 100%; height: auto; }
+/* Quizzes */
+.quiz .question legend { font-size: 1.2rem; margin-bottom: 12px; }
+.quiz-option { display: block; width: 100%; text-align: left; padding: 14px 16px; margin: 0 0 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text); font: inherit; cursor: pointer; }
+.quiz-option:hover, .quiz-option.is-picked { border-color: var(--accent); }
+.quiz .big { font-size: 2.4rem; font-weight: 700; color: var(--accent); }
+.quiz-review li { margin-bottom: 16px; }
+.quiz-teaser { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; }
+/* Mega footer */
+.mega-footer { display: grid; gap: 24px; grid-template-columns: repeat(3, 1fr); margin-bottom: 24px; }
+.mega-footer h2 { font-size: 0.95rem; margin: 0 0 8px; color: var(--fg, inherit); }
+.mega-footer ul { list-style: none; margin: 0; padding: 0; }
+.mega-footer li { padding: 3px 0; }
+.mega-footer .count { color: var(--muted); }
+@media (max-width: 900px) { .mega-footer { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .mega-footer { grid-template-columns: 1fr; } }

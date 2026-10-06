@@ -144,6 +144,8 @@ Each guide in this cluster covers one step of getting started.
 - [Common estate planning mistakes](/learn/basics/common-estate-planning-mistakes) covers the errors that most often cost families money and time, with fixes.
 - [When to review and update your estate plan](/learn/basics/when-to-update-your-estate-plan) identifies the life events and schedules that call for a check.
 - [How to talk to your family about your estate plan](/learn/basics/talking-to-family-about-estate-plan) offers ways to start the conversation and handle the hard parts.
+- [Letter of instruction: what to include, and what it can't do](/learn/basics/letter-of-instruction) explains the informal letter that tells your family where everything is and what you want, and why it cannot replace a will.
+- [Estate planning statistics for 2026](/learn/basics/estate-planning-statistics) collects sourced figures on how many Americans have a will, trust or living will, why people wait, and how few families owe federal estate tax.
 
 ## Where do you go from here?
 

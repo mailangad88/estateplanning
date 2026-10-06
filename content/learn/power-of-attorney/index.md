@@ -75,6 +75,8 @@ A power of attorney can be effective immediately or only after a trigger, usuall
 
 People like springing powers because they delay the agent's authority until it is needed. The cost is practical: someone must prove the trigger, doctors can be reluctant to sign, and banks may resist. An immediate document, with the original held back until needed, is often easier. We lay out the comparison in [springing vs. immediate power of attorney](/learn/power-of-attorney/springing-vs-immediate-power-of-attorney), including drafting tips for the trigger and a HIPAA authorization to support it.
 
+If a parent already has dementia and never signed anything, read [my parent has dementia and no power of attorney: what now?](/learn/power-of-attorney/parent-with-dementia-no-power-of-attorney) for the options.
+
 ## How do you choose an agent?
 
 Choosing an agent is the most important decision in the process. The best agent is honest, organized, willing, available and able to stand up to pressure. The best title is not necessarily the oldest child, and not necessarily the child who lives closest or who asks for the job.
