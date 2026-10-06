@@ -22,6 +22,8 @@ export interface LifeStage {
   label: string;
   /** Who it is for, in a few words. */
   who: string;
+  /** Rough age or timing, shown on the life cycle view. */
+  when: string;
   /** Lucide icon name, see STAGE_ICONS in components/landing.tsx. */
   icon: "Heart" | "Baby" | "House" | "Users" | "Briefcase" | "Sun" | "HandHeart";
   tone: StageTone;
@@ -45,6 +47,7 @@ export interface LifeStage {
 export const LIFE_STAGES: LifeStage[] = [
   {
     slug: "newlyweds-and-young-couples",
+    when: "20s and 30s",
     label: "Newlyweds and young couples",
     who: "Just married or moving in together",
     icon: "Heart",
@@ -63,6 +66,7 @@ export const LIFE_STAGES: LifeStage[] = [
   },
   {
     slug: "new-parents",
+    when: "Starting a family",
     label: "New parents",
     who: "A baby on the way or little ones at home",
     icon: "Baby",
@@ -81,6 +85,7 @@ export const LIFE_STAGES: LifeStage[] = [
   },
   {
     slug: "homeowners-and-growing-families",
+    when: "About 35 to 55",
     label: "Homeowners and growing families",
     who: "Mid-career, a house and kids in school",
     icon: "House",
@@ -99,6 +104,7 @@ export const LIFE_STAGES: LifeStage[] = [
   },
   {
     slug: "blended-families",
+    when: "At any age",
     label: "Blended families",
     who: "Remarried, stepchildren, kids from before",
     icon: "Users",
@@ -117,6 +123,7 @@ export const LIFE_STAGES: LifeStage[] = [
   },
   {
     slug: "pre-retirees",
+    when: "About 55 to 65",
     label: "Pre-retirees",
     who: "About 55 to 65, retirement in sight",
     icon: "Briefcase",
@@ -135,6 +142,7 @@ export const LIFE_STAGES: LifeStage[] = [
   },
   {
     slug: "retirees-and-snowbirds",
+    when: "65 and over",
     label: "Retirees 65 and over",
     who: "Retired, or splitting the year in two states",
     icon: "Sun",
@@ -154,6 +162,7 @@ export const LIFE_STAGES: LifeStage[] = [
   },
   {
     slug: "caregivers",
+    when: "When parents need help",
     label: "Adult children of aging parents",
     who: "Helping a mom or dad who is getting older",
     icon: "HandHeart",

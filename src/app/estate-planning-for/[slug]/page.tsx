@@ -9,7 +9,7 @@ import { bySlug, getAudiences, type Audience } from "@/lib/content";
 import { resolveAll } from "@/lib/links";
 import { ArticlePage } from "@/components/article";
 import { Breadcrumbs } from "@/components/ui";
-import { Band, FeatureCard, SectionHead, StageArt, StageGrid, TrustRow } from "@/components/landing";
+import { Band, FeatureCard, SectionHead, LifeCycle, StageArt, TrustRow } from "@/components/landing";
 import {
   HeroBusinessSuccession, HeroEstateSettlement, HeroPowersOfAttorney, HeroSpecialNeeds, HeroTrusts, HeroWills,
 } from "@/components/visuals";
@@ -196,8 +196,8 @@ export default async function AudiencePage({ params }: Props) {
         after={
           stage ? (
             <Band tone="sage" label="Other life stages">
-              <SectionHead kicker="Different stage?" title="Plans for every stage of life" />
-              <StageGrid exclude={a.slug} />
+              <SectionHead kicker="Different stage?" title="Where you are in the life cycle" center />
+              <LifeCycle current={a.slug} />
             </Band>
           ) : undefined
         }
