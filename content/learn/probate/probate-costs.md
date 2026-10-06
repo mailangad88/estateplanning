@@ -115,6 +115,8 @@ Not always. A trust costs money to create and maintain, and assets must be retit
 
 Large estates have higher fees in dollars, though not always as a percentage. An estate with real estate in several states may owe fees in each state, because ancillary proceedings are separate cases. Our article on [ancillary probate](/learn/probate/ancillary-probate) explains why. Estates with taxes, business interests or disputes involve accountants, appraisers and sometimes litigators, and costs can run well into six figures.
 
+Whether a lawyer is worth the cost for your estate is covered in [do I need a probate lawyer?](/learn/probate/do-i-need-a-probate-lawyer).
+
 ## How we can help
 
 If you are an executor, an attorney can give a realistic cost estimate for your county and explain which fees are negotiable. If you are planning ahead, the [plan finder](/plan-finder) can help you see which tools may keep probate costs low for your family, and a consultation with one of our attorneys can put real numbers to your state's rules.

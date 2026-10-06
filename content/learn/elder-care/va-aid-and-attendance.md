@@ -120,6 +120,8 @@ Applications are made through VA.gov, by mail or with an accredited representati
 6. Social Security, pension and other income letters.
 7. Information about the home, any other real estate and any trusts.
 
+For the bigger picture, see [guide to long-term care planning](/learn/elder-care).
+
 ## How we can help
 
 Our attorneys can look at the VA and Medicaid rules together, review whether a transfer or trust would cause a penalty and prepare the power of attorney and other documents a care plan needs. Use the [plan finder](/plan-finder) to see where to start, or book a consultation. For the claim itself, we will point you to accredited help.

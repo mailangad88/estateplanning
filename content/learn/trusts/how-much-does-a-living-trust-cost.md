@@ -117,6 +117,8 @@ For a longer list, see [how to choose an estate planning attorney](/learn/basics
 
 Not usually while you are alive. A revocable trust is generally treated as a "grantor trust" for income tax purposes, which means you report its income on your own return and the trust typically does not file a separate one. The IRS discusses grantor trust reporting in the instructions for Form 1041 at [irs.gov](https://www.irs.gov/instructions/i1041). After death the trust becomes irrevocable and may need its own tax identification number and returns, which belongs to the administration stage rather than the creation price.
 
+For the bigger picture, see [complete guide to trusts](/learn/trusts).
+
 ## How we can help
 
 If you want a price grounded in your own situation, our [plan finder](/plan-finder) can point you toward the documents that fit your family and assets. You can also book a consultation with one of our attorneys, who can explain what a trust would include for you and what it would cost, in writing, before you decide anything.

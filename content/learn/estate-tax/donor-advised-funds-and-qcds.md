@@ -27,7 +27,7 @@ related:
   - "estate-tax/gifting-strategies"
   - "beneficiary-designations/retirement-account-beneficiaries"
   - "beneficiary-designations/contingent-beneficiaries"
-  - "trusts/naming-a-trust-as-beneficiary"
+  - "beneficiary-designations/naming-a-trust-as-beneficiary"
 glossary: ["beneficiary", "contingent-beneficiary", "residuary-estate", "bequest", "estate-tax", "payable-on-death"]
 ---
 
@@ -106,6 +106,8 @@ Leaving a fixed dollar amount is clear but can be eroded by inflation. A percent
 ## What do state rules change?
 
 States mostly follow the federal tax treatment of QCDs and DAFs, but a few treat retirement distributions or charitable deductions differently, and community property states handle beneficiary rights of a spouse in an IRA in their own way. Consult your [state guide](/estate-planning/florida) and check the rules where you file.
+
+For the bigger picture, see [guide to estate and gift taxes](/learn/estate-tax).
 
 ## How we can help
 

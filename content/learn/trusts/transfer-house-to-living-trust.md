@@ -78,7 +78,7 @@ Often it does, but confirm. Whether an owner's title policy continues after a tr
 
 In many states, a transfer to your own revocable trust is excluded from property tax reassessment and from transfer tax, because you are still the beneficial owner. This is state and county law, not federal, and it varies. Some places require a form to claim the exclusion. California, for example, has its own rules about reassessment on later transfers to children, which can matter when the trust eventually passes the home on.
 
-Check the state rules on [our state guides](/estate-planning), or ask the county assessor before you record. Also check with the county that your homestead exemption, senior discount, veterans' exemption or other reduction continues after the deed. In most places it does for a revocable trust where you are the occupant, but a missed form can cost you the discount for a year.
+Check your state's rules in our [state estate planning guides](/estate-planning/california) if you live in California, or ask the county assessor in any state before you record. Also check with the county that your homestead exemption, senior discount, veterans' exemption or other reduction continues after the deed. In most places it does for a revocable trust where you are the occupant, but a missed form can cost you the discount for a year.
 
 ## What about homeowners insurance?
 

@@ -110,6 +110,8 @@ The [donor-advised funds and QCDs article](/learn/estate-tax/donor-advised-funds
 
 Most states follow the federal treatment of CRTs, but some tax trust income differently, and a few have rules about who may serve as trustee or how a trust is registered. If you own property in more than one state, the trust may have filing duties in each. Check the rules for your state through our [state guides](/estate-planning/california), and read [gifting strategies](/learn/estate-tax/gifting-strategies) for the lifetime giving options that sit alongside a CRT.
 
+For the bigger picture, see [guide to estate and gift taxes](/learn/estate-tax).
+
 ## How we can help
 
 A charitable remainder trust is a significant commitment, so it should be built around your real goals, not just a tax number. Our attorneys can explain how a CRT fits with the rest of your plan and coordinate with your tax advisor and the charity you have in mind. Use the [plan finder](/plan-finder) to get started or book a consultation.

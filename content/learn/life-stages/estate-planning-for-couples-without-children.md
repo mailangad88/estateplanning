@@ -115,6 +115,8 @@ Childless couples often leave part of the estate to charity, and the tools are f
 
 Usually not at the federal level. The federal exemption in 2026 is $15,000,000 per person, so a married couple can shelter $30 million with portability. A few states have estate or inheritance taxes with much lower thresholds, and some tax bequests to siblings, nieces and nephews at higher rates than bequests to children. See [state estate and inheritance taxes](/learn/estate-tax/state-estate-and-inheritance-taxes) to check whether your state is one of them.
 
+For the bigger picture, see [guide to estate planning by life stage](/learn/life-stages).
+
 ## How we can help
 
 Our attorneys can look at your family, your state's intestacy rules and your assets, and then draft documents that cover both the first death and the second. Try the [plan finder](/plan-finder) to see which documents fit a childless couple, or book a consultation to talk about who should be named and how to protect each other.

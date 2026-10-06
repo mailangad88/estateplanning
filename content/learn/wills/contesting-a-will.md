@@ -118,7 +118,7 @@ States differ on enforcement. Some enforce these clauses strictly. Many enforce 
 
 ## Can you disinherit someone?
 
-Usually, within limits. In most states you can leave a child out of your will, provided you do so deliberately. Louisiana has forced heirship for some young or disabled children. A surviving spouse generally cannot be cut out entirely, because of the [elective share](/glossary/elective-share) or community property rules, unless a valid prenuptial or postnuptial agreement says otherwise. If you have children from a prior marriage, specific planning is essential. See [protecting children from a first marriage](/learn/blended-families/protecting-children-from-first-marriage).
+Usually, within limits. In most states you can leave a child out of your will, provided you do so deliberately. Louisiana has forced heirship for some young or disabled children. A surviving spouse generally cannot be cut out entirely, because of the [elective share](/glossary/elective-share) or community property rules, unless a valid prenuptial or postnuptial agreement says otherwise. If you have children from a prior marriage, specific planning is essential. See [protecting children from a first marriage](/learn/blended-families/protecting-children-from-first-marriage). The planning side is covered in [how to disinherit someone or leave unequal shares](/learn/wills/disinheriting-or-unequal-shares).
 
 ## What if you are considering a contest?
 

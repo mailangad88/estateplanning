@@ -129,6 +129,8 @@ Before you build an agreement, look at who else might pay.
 
 Money and care are tangled in most families, and a caregiver agreement can make the arrangement clearer. A written agreement shows that the caregiving child was paid for work, which helps avoid the later argument that they took advantage, and it helps the siblings who are not paid understand why the estate does not need to "make up" for the unpaid care. Where a parent wants to compensate a caregiving child beyond wages, the will or trust is the right place, with the effect on Medicaid considered. For wider conversations, see [helping aging parents plan](/learn/elder-care/helping-aging-parents-plan) and our articles on [spending down for Medicaid](/learn/elder-care/medicaid-spend-down) and [Medicaid planning basics](/learn/elder-care/medicaid-planning).
 
+For the bigger picture, see [guide to long-term care planning](/learn/elder-care).
+
 ## How we can help
 
 A caregiver agreement works only if it matches your state's rules and the rest of the parent's plan. Our attorneys can draft the agreement, check the power of attorney and explain how payments will be viewed if Medicaid is needed. Use the [plan finder](/plan-finder) to see where to start, or book a consultation.

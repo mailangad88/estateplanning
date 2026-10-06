@@ -118,6 +118,8 @@ Most states require 60 months of statements for every account, and sometimes for
 
 A [durable power of attorney](/learn/power-of-attorney/durable-financial-power-of-attorney) lets a trusted agent gather the records and file the application. Without one, family members may be unable to access the accounts.
 
+Payments to a family caregiver are a frequent trap, covered in [paying a family caregiver](/learn/elder-care/paying-a-family-caregiver), and veterans face a separate 36-month rule explained in [VA Aid and Attendance](/learn/elder-care/va-aid-and-attendance).
+
 ## What should you avoid?
 
 - **Informal gifts.** Cash handed to children can trigger a penalty and be gone if a child has a divorce, a lawsuit or a death.

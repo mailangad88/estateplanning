@@ -1,6 +1,6 @@
 ---
 title: "Irrevocable life insurance trusts (ILITs): how they work and who needs one"
-description: "An ILIT keeps a life insurance death benefit out of your taxable estate and controls how heirs receive it. Learn how it works, the 3-year rule, and who benefits."
+description: "An ILIT keeps a life insurance death benefit out of your taxable estate and controls how heirs get it. Learn how it works, the 3-year rule, and who benefits."
 updated: "2026-10-06"
 answer: >-
   An irrevocable life insurance trust (ILIT) owns a life insurance policy so the death benefit is generally not counted in your taxable estate and reaches heirs under rules you set. You give up ownership and control. With a federal exclusion of $15,000,000 per person in 2026, most families do not need an ILIT for federal estate tax.
@@ -108,6 +108,8 @@ A spousal lifetime access trust is another alternative that can hold policies an
 ## What about married couples and second-to-die policies?
 
 Couples sometimes buy a joint "second-to-die" policy that pays only after both have died. Because the marital deduction defers tax until the second death, that is when the cash is needed. An ILIT usually owns such a policy. The estate tax exposure is still tested at the second death, and portability may reduce it, so review [portability for married couples](/learn/estate-tax/portability-for-married-couples) first.
+
+For the bigger picture, see [guide to estate and gift taxes](/learn/estate-tax).
 
 ## How we can help
 

@@ -129,6 +129,8 @@ An estate planning lawyer helps you make a will, trust and related documents whi
 
 State rules and court practices differ, so your county court's website is a useful reference. The [Texas](/estate-planning/texas), [California](/estate-planning/california) and [Florida](/estate-planning/florida) guides show how much the process can vary.
 
+For the bigger picture, see [guide to probate](/learn/probate).
+
 ## How we can help
 
 If you are weighing whether to hire a lawyer, our attorneys can review the estate with you and tell you plainly which parts you can do yourself. Use the [plan finder](/plan-finder) to describe your situation, or book a consultation to talk it through. There is no pressure to hire anyone.

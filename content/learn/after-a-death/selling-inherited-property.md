@@ -64,7 +64,7 @@ Practical points that affect timing:
 
 There is no federal tax on receiving an inheritance. Tax arises only if and when you sell, and it is measured from your **basis**, which for inherited property is generally its fair market value on the date of death. The IRS calls this a stepped-up basis. See [step-up in basis](/learn/estate-tax/step-up-in-basis) for the rule and its limits.
 
-Here is an example. Hector's mother bought her house in 1988 for $85,000. It was worth $410,000 when she died. Hector's basis is $410,000, not $85,000. If he sells for $420,000 and pays $25,000 in commissions and closing costs, he has no taxable gain: the net sale price of $395,000 is below his basis, and the difference is a loss that is generally not deductible on a home he did not use for business. If the house were worth $480,000 at sale, the net gain over basis would be about $55,000.
+Here is an example. Hector's mother bought her house in 1988 for $85,000. It was worth $410,000 when she died. Hector's basis is $410,000, not $85,000. If he sells for $420,000 and pays $25,000 in commissions and closing costs, he has no taxable gain: the net sale price of $395,000 is below his basis, and the difference is a loss that is generally not deductible on a home he did not use for business. If the house were worth $480,000 at sale, the net gain over basis would be about $45,000.
 
 Three details matter:
 

@@ -15,7 +15,7 @@ faqs:
     a: "It costs more up front than a will, it requires you to move assets into it, and it does not by itself reduce taxes or protect you from your own creditors. If it is not funded or updated, it can fail at the moment it is needed."
   - q: "How much money should you have before getting a trust?"
     a: "There is no fixed threshold. Someone with a $300,000 house in a slow-probate state may benefit more than someone with $900,000 in retirement accounts that already pass by beneficiary form. The type of assets and your family situation count for more than the dollar total."
-  - q: "Can I be my own trustee?"
+  - q: "If I set up a living trust, can I still manage my own money?"
     a: "Yes. Most people who create a revocable living trust serve as their own trustee while they are well, and name a successor to take over if they become incapacitated or die. The choice of that successor is the most important decision in the document."
   - q: "Does a living trust protect assets from creditors or lawsuits?"
     a: "A revocable trust generally does not, because you keep control and can take the assets back. Other kinds of trusts may offer limited protection, depending on state law and timing, and they require giving up some control."
@@ -147,6 +147,8 @@ Answer yes or no. Three or more "yes" answers suggest that a conversation about 
 10. Am I willing to retitle my property and keep the trust updated?
 
 Question 10 matters as much as the others. A trust you will not maintain is not a good fit.
+
+For the bigger picture, see [complete guide to trusts](/learn/trusts).
 
 ## How we can help
 

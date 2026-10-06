@@ -113,6 +113,8 @@ This is one person's choices; yours may differ.
 
 An attorney can often prepare the most important documents quickly, sometimes in days, starting with the powers of attorney and a simple will. A short plan signed now is generally better than a comprehensive one that is never finished. If you cannot sign, because capacity is gone, the focus shifts to what family members can do, which may include a guardianship or conservatorship proceeding. Our comparison of [power of attorney vs. guardianship](/compare/power-of-attorney-vs-guardianship) explains the difference.
 
+For the bigger picture, see [guide to estate planning by life stage](/learn/life-stages).
+
 ## How we can help
 
 Our attorneys can meet by phone first, listen to what is happening and suggest the shortest path to the documents that matter most. Use the [plan finder](/plan-finder) if you want to see a list for your situation, or book a consultation and tell us if you need a shorter meeting or a visit away from the office. There is no pressure, and you can begin with a single document.

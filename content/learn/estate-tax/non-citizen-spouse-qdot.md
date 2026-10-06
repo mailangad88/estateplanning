@@ -41,7 +41,7 @@ For married couples where both are citizens, property left to the surviving spou
 
 Congress worried that a non-citizen survivor could take the property abroad and leave the U.S. before death, so the property would never be taxed. To close that gap, the marital deduction is generally denied for property passing to a non-citizen spouse, unless it goes into a QDOT, which keeps the property tied to the U.S. tax system.
 
-This matters only when the estate is large enough for tax to be a question. The federal exclusion is $15,000,000 per person in 2026 (see [the federal estate tax exemption](/learn/estate-tax/federal-estate-tax-exemption)). A couple with $6 million has no federal issue, but a state estate tax, discussed below, can still create one. And in a mixed-citizenship couple, [portability](/learn/estate-tax/portability-for-married-couples) of the unused exclusion works differently than for citizens, so it is worth reviewing the whole picture.
+This matters only when the estate is large enough for tax to be a question. The federal exclusion is $15,000,000 per person in 2026 (see [the federal estate tax exemption](/learn/estate-tax/federal-estate-tax-exemption)). A couple with $6 million has no federal issue, but a state estate tax, discussed below, can still create one. Because a QDOT interacts with the unused exclusion, it also helps to understand [portability](/learn/estate-tax/portability-for-married-couples) before choosing a plan.
 
 ## What is a QDOT and what must it contain?
 
@@ -86,7 +86,7 @@ Gifts above that amount are reported on Form 709 and reduce the giver's lifetime
 
 ## What about retirement accounts?
 
-A 401(k) or IRA left to a non-citizen spouse can raise the same issue. The marital deduction is denied unless the account is made payable to a QDOT, or the spouse becomes a citizen in time. The plan's rules, the trust language, and income tax deferral all interact, so naming a trust as beneficiary requires careful coordination. See [naming a trust as beneficiary](/learn/trusts/naming-a-trust-as-beneficiary) and [retirement account beneficiaries](/learn/beneficiary-designations/retirement-account-beneficiaries). Because inheriting spouses usually have valuable rollover options, how to preserve them is a reason to see an attorney.
+A 401(k) or IRA left to a non-citizen spouse can raise the same issue. The marital deduction is denied unless the account is made payable to a QDOT, or the spouse becomes a citizen in time. The plan's rules, the trust language, and income tax deferral all interact, so naming a trust as beneficiary requires careful coordination. See [naming a trust as beneficiary](/learn/beneficiary-designations/naming-a-trust-as-beneficiary) and [retirement account beneficiaries](/learn/beneficiary-designations/retirement-account-beneficiaries). Because inheriting spouses usually have valuable rollover options, how to preserve them is a reason to see an attorney.
 
 ## What happens to jointly owned property?
 
@@ -110,6 +110,8 @@ U.S. citizens are taxed on worldwide estates. A non-citizen who lives abroad may
 6. Review beneficiary forms on retirement accounts and insurance.
 7. Decide whether to make annual gifts up to $194,000 to equalize ownership.
 8. Revisit your plan if citizenship status changes.
+
+For the bigger picture, see [guide to estate and gift taxes](/learn/estate-tax).
 
 ## How we can help
 

@@ -14,7 +14,7 @@ takeaways:
   - "Insurance pays for care but does not name agents, direct property or handle incapacity, so you still need an estate plan."
   - "Compare benefit triggers, elimination period, inflation protection and the insurer's record of premium increases before buying."
 faqs:
-  - q: "Does Medicare pay for long-term care?"
+  - q: "Will Medicare cover the care so I do not need a policy?"
     a: "No. Medicare does not pay for long-term custodial care. It covers limited skilled nursing facility care after a qualifying hospital stay, up to 100 days with copayments after day 20, but help with bathing, dressing and eating over the long run is not covered."
   - q: "What is a long-term care partnership policy?"
     a: "It is a state-approved policy that lets you keep assets equal to the benefits paid out and still qualify for Medicaid, and in many cases protects those assets from estate recovery. Not every state participates, and rules for using a policy across states vary."

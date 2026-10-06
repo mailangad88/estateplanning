@@ -1,6 +1,6 @@
 ---
 title: "Does a trustee have to notify beneficiaries and give an accounting?"
-description: "Trustees generally must keep beneficiaries informed and keep records, and many must give accountings. See what is required, when, and what beneficiaries can ask for."
+description: "Trustees generally must keep beneficiaries informed and keep records, and many must give accountings. See what is required, when, and what you can ask for."
 updated: "2026-10-06"
 answer: >-
   A trustee generally must keep beneficiaries reasonably informed and keep records, and in most states must provide
