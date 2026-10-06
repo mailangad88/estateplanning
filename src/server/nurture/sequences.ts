@@ -36,6 +36,10 @@ export interface SequenceStep {
   transactional?: boolean;
   /** The email carries the track's video. */
   video?: boolean;
+  /** A review request or reminder: the scheduler applies the review guards (opt-out, "I posted", sensitive track) and records it for tracking. */
+  review?: true;
+  /** Send only when the lead gave no SMS consent (the text reminder goes instead when they did). */
+  onlyWithoutSmsConsent?: true;
 }
 
 export type ExitCondition =
@@ -234,7 +238,6 @@ const planComplete: Sequence = {
   exitWhen: [UNSUB],
   steps: [
     step("pc_funding_guide", "email", { days: 1 }, ["bf-TODO-trust-funding"], "Trust-funding guide", { transactional: true }),
-    step("pc_review_request", "email", { days: 7 }, ["bf-TODO-review-request"], "Ask for a review"),
     // Referral ask is non-monetary. The firm must never pay or reward anyone for referrals
     // (fee-sharing and solicitation rules), so no incentive appears here or in the template.
     step("pc_referral_ask", "email", { days: 21 }, ["bf-TODO-referral-ask-nonmonetary"], "Referral ask, no payment or reward"),
@@ -266,6 +269,25 @@ const annualReview: Sequence = {
   steps: [
     step("ar_offer", "email", { days: 365 }, ["bf-TODO-annual-review"], "Offer the annual plan review"),
     step("ar_sms", "sms", { days: 372 }, ["bf-TODO-annual-review"], "Text follow-up on the review offer"),
+  ],
+};
+
+/**
+ * Sequence F2 and F3: the review request. Starts at signing (stage plan_complete), T+14 email and one T+21
+ * reminder, to every client with no sentiment gating (Google bans gating; FTC 16 CFR Part 465). The reminder is
+ * a text for clients with SMS consent and an email otherwise. Nothing after that, no third ask. Opt-outs and an
+ * "I posted" reply stop it; sensitive tracks are never enrolled. Logic and tracking: src/server/nurture/reviews.ts.
+ */
+const reviewRequest: Sequence = {
+  id: "review_request",
+  name: "Review request",
+  trigger: { kind: "stage", stage: "plan_complete", description: "Plan signed and complete (T+0 is signing)" },
+  goal: "Every eligible client is asked once and reminded once, the same way, with no incentive and no gating",
+  exitWhen: [UNSUB],
+  steps: [
+    step("rr_email_t14", "email", { days: 14 }, ["bf-TODO-review-request"], "Neutral, optional review request to every client", { review: true }),
+    step("rr_reminder_sms_t21", "sms", { days: 21 }, ["bf-TODO-review-reminder"], "One reminder by text, only where the client gave SMS consent", { review: true }),
+    step("rr_reminder_email_t21", "email", { days: 21 }, ["bf-TODO-review-reminder"], "One reminder by email when there is no SMS consent", { review: true, onlyWithoutSmsConsent: true }),
   ],
 };
 
@@ -320,6 +342,7 @@ export const SEQUENCES: Sequence[] = [
   consultHeld,
   signedOnboarding,
   planComplete,
+  reviewRequest,
   longTerm,
   annualReview,
 ];

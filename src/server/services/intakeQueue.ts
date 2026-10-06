@@ -11,6 +11,7 @@ import type { Notifier } from "@/server/notify";
 import { MATTER_LABELS } from "@/server/services/leads";
 import { triageLead, type TriageLane } from "@/server/services/triage";
 import type { Actor, Lead } from "@/server/types";
+import { isHumanOutreach } from "@/server/services/contact";
 
 export const SPEED_TO_LEAD_MINUTES = 5;
 const OFFER_WARN_MINUTES = 10;
@@ -37,11 +38,10 @@ export interface QueueItem {
   ownerName: string;
 }
 
-const OUTBOUND = ["call", "sms", "email"];
 
 async function firstOutboundAt(db: Db, lead: Lead): Promise<number | null> {
   const created = new Date(lead.createdAt).getTime();
-  const times: number[] = (await db.activities.list((a) => a.leadId === lead.id && a.direction === "outbound" && OUTBOUND.includes(a.kind))).map((a) => new Date(a.at).getTime());
+  const times: number[] = (await db.activities.list((a) => a.leadId === lead.id && isHumanOutreach(a))).map((a) => new Date(a.at).getTime());
   for (const h of lead.stageHistory) if (h.stage === "contacted") times.push(new Date(h.at).getTime());
   const valid = times.filter((t) => t >= created);
   return valid.length ? Math.min(...valid) : null;

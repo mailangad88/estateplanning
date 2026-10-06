@@ -218,10 +218,35 @@ CREATE TABLE engagements (
   approved_at          timestamptz,
   history              jsonb NOT NULL DEFAULT '[]',        -- [{status, at}]
   reminders_sent       text[] NOT NULL DEFAULT '{}',
-  document_ids         text[] NOT NULL DEFAULT '{}'
+  document_ids         text[] NOT NULL DEFAULT '{}',
+  package_selection    jsonb,                              -- {tierId, tierName, tierPriceCents, addOns[], totalCents}: attorney-set prices
+  payment_plan         jsonb                               -- {mode, totalCents, account, installments[{n, kind, amountCents, dueOn, status, paymentId, paidAt}]}
 );
 CREATE INDEX engagements_lead_idx   ON engagements (lead_id);
 CREATE INDEX engagements_lawyer_idx ON engagements (lawyer_id, status);
+
+-- One row per payment attempt for an engagement. Money moves from the client straight to the
+-- firm's own processor account; this table records what was asked for and what the processor
+-- confirmed, plus which firm account (operating or trust) the payment was directed to.
+CREATE TABLE payments (
+  id                  text PRIMARY KEY,
+  engagement_id       text NOT NULL REFERENCES engagements(id),
+  lead_id             text NOT NULL REFERENCES leads(id),
+  firm_id             text NOT NULL REFERENCES firms(id),
+  installment_no      bigint,
+  amount_cents        bigint NOT NULL CHECK (amount_cents > 0),
+  account             text NOT NULL CHECK (account IN ('operating','trust')),
+  status              text NOT NULL CHECK (status IN ('pending','paid','failed')),
+  provider            text NOT NULL,
+  provider_payment_id text NOT NULL,
+  link_url            text,
+  created_at          timestamptz NOT NULL,
+  paid_at             timestamptz,
+  refunds             jsonb NOT NULL DEFAULT '[]',        -- [{id, amountCents, at, reason}]
+  UNIQUE (provider, provider_payment_id)
+);
+CREATE INDEX payments_engagement_idx ON payments (engagement_id);
+CREATE INDEX payments_lead_idx       ON payments (lead_id);
 
 CREATE TABLE tasks (
   id       text PRIMARY KEY,
@@ -310,6 +335,19 @@ CREATE TABLE fact_verifications (
   UNIQUE (fact_id, version)
 );
 
+-- Attorney approval of nurture message copy (src/server/nurture/templates.ts). Append-only: a new approval is a
+-- new version. An approval counts only while content_hash equals the hash of the template's current copy.
+CREATE TABLE template_approvals (
+  id            text PRIMARY KEY,              -- '<templateKey>@<version>'
+  template_key  text NOT NULL,                 -- step templateKey, e.g. 'qz_1_results'
+  version       integer NOT NULL CHECK (version > 0),
+  content_hash  text NOT NULL,                 -- sha256 of channel, subject and body as approved
+  approved_by   text NOT NULL,
+  approved_at   timestamptz NOT NULL,
+  note          text NOT NULL,
+  UNIQUE (template_key, version)
+);
+
 -- Second factor per user (src/server/pg/mfa.ts). Secret encrypted by the app (AES-256-GCM).
 CREATE TABLE user_mfa (
   user_id              text PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
@@ -346,6 +384,121 @@ CREATE TABLE crm_deliveries (
 );
 CREATE INDEX crm_deliveries_lead_idx ON crm_deliveries (lead_id);
 CREATE INDEX crm_deliveries_status_idx ON crm_deliveries (status, last_attempt_at);
+
+-- Seminars, webinars and community talks with their costs and entered counts (seminar economics, C17).
+-- Leads attribute through utm_campaign = code or a "seminar:<code>" tag; no personal data lives here.
+CREATE TABLE seminars (
+  id          text PRIMARY KEY,
+  code        text NOT NULL UNIQUE,
+  title       text NOT NULL,
+  format      text NOT NULL CHECK (format IN ('in_person','webinar','library_talk')),
+  held_on     date NOT NULL,
+  venue       text,
+  costs       jsonb NOT NULL DEFAULT '{}',
+  mail_pieces integer CHECK (mail_pieces >= 0),
+  rsvps       integer NOT NULL DEFAULT 0 CHECK (rsvps >= 0),
+  attendees   integer NOT NULL DEFAULT 0 CHECK (attendees >= 0),
+  notes       text,
+  created_by  text NOT NULL,
+  created_at  timestamptz NOT NULL,
+  updated_at  timestamptz NOT NULL
+);
+
+-- Referral partners (src/server/services/partners.ts, src/lib/partners.ts). Tracking only: nothing here records a payment,
+-- because the firm pays nothing for referrals (ABA Model Rule 7.2(b)). No client contact details live in these tables;
+-- a referral points at its lead by id.
+CREATE TABLE partners (
+  id                           text PRIMARY KEY,
+  slug                         text NOT NULL UNIQUE CHECK (slug ~ '^[a-z0-9]([a-z0-9-]{0,62}[a-z0-9])?$'),
+  name                         text NOT NULL,
+  org                          text NOT NULL,
+  type                         text NOT NULL CHECK (type IN ('cpa','financial_advisor','funeral_home','elder_care','realtor','other')),
+  ref_code                     text NOT NULL UNIQUE,
+  status                       text NOT NULL CHECK (status IN ('prospect','active_sequence','active','paused','do_not_contact')),
+  owner_id                     text REFERENCES users(id),
+  firm_id                      text REFERENCES firms(id),
+  created_at                   timestamptz NOT NULL,
+  policy_signed_date           date,
+  reciprocal_agreement_on_file boolean NOT NULL DEFAULT false,
+  agreement_nonexclusive       boolean NOT NULL DEFAULT false,
+  notes                        text
+);
+
+-- Gift log. Blocked gifts (tied to a referral, or a thing of value) are never stored; flagged ones wait for review.
+CREATE TABLE partner_gifts (
+  id           text PRIMARY KEY,
+  partner_id   text NOT NULL REFERENCES partners(id),
+  date         date NOT NULL,
+  description  text NOT NULL,
+  value_cents  integer NOT NULL CHECK (value_cents >= 0),
+  status       text NOT NULL CHECK (status IN ('ok','flagged')),
+  flags        text[] NOT NULL DEFAULT '{}',
+  logged_by    text NOT NULL,
+  review_note  text
+);
+CREATE INDEX partner_gifts_partner_idx ON partner_gifts (partner_id, date);
+
+CREATE TABLE partner_referrals (
+  id                 text PRIMARY KEY,
+  partner_id         text NOT NULL REFERENCES partners(id),
+  ref_code           text NOT NULL,
+  lead_id            text UNIQUE REFERENCES leads(id),
+  created_at         timestamptz NOT NULL,
+  origin             text NOT NULL CHECK (origin IN ('partner_form','ref_link')),
+  client_consent     boolean NOT NULL,
+  disclosure_given   boolean NOT NULL DEFAULT false,
+  disclosure_at      timestamptz,
+  disclosure_version text,
+  release_status     text NOT NULL DEFAULT 'none' CHECK (release_status IN ('none','requested','granted','revoked')),
+  release_updated_at timestamptz,
+  release_updated_by text,
+  value_linked       text NOT NULL DEFAULT 'unanswered' CHECK (value_linked IN ('unanswered','no','yes')),
+  value_note         text,
+  -- A partner-submitted referral always carries the client's agreement to be referred (Rule 1.6).
+  CHECK (origin <> 'partner_form' OR client_consent)
+);
+CREATE INDEX partner_referrals_partner_idx ON partner_referrals (partner_id);
+-- Conversions log (src/server/conversions): one row per lead, conversion type and provider, so each event is sent once.
+-- id is '<provider>:<type>:<lead_id>'. Ids, times, status and value only: contact details are rebuilt from the lead at send time.
+CREATE TABLE conversion_events (
+  id          text PRIMARY KEY,
+  lead_id     text NOT NULL REFERENCES leads(id),
+  provider    text NOT NULL CHECK (provider IN ('google_ads','meta')),
+  type        text NOT NULL CHECK (type IN ('qualified_lead','consult_booked','consult_held','retainer_signed')),
+  event_id    text NOT NULL,                     -- dedupe key sent to Meta
+  occurred_at timestamptz NOT NULL,
+  value_cents bigint CHECK (value_cents IS NULL OR value_cents >= 0),
+  currency    text NOT NULL DEFAULT 'USD',
+  status      text NOT NULL CHECK (status IN ('pending','sent','failed','abandoned','skipped')),
+  reason      text,
+  attempts    integer NOT NULL DEFAULT 0,
+  channel     text,                              -- 'api', 'mock' or 'manual_csv'
+  created_at  timestamptz NOT NULL,
+  updated_at  timestamptz NOT NULL,
+  sent_at     timestamptz
+);
+CREATE INDEX conversion_events_lead_idx ON conversion_events (lead_id);
+CREATE INDEX conversion_events_status_idx ON conversion_events (status, provider);
+
+-- Review-request tracking (src/server/nurture/reviews.ts): proves every eligible client was asked.
+-- id is 'review-<lead_id>'. Exclusions use written, rule-based codes only, never sentiment.
+CREATE TABLE review_requests (
+  id               text PRIMARY KEY,
+  lead_id          text NOT NULL REFERENCES leads(id),
+  matter_type      text NOT NULL,
+  anchor_at        timestamptz NOT NULL,         -- signing or closing: the T+0 the offsets count from
+  eligible         boolean NOT NULL,
+  exclusion_code   text CHECK (exclusion_code IN ('GUARDIANSHIP','OPTOUT','UNIFORM_HOLD','DISPUTE_HOLD','SENSITIVE_TRACK')),
+  exclusion_note   text,
+  asked_at         timestamptz,
+  reminded_at      timestamptz,
+  reminder_channel text CHECK (reminder_channel IN ('sms','email')),
+  opted_out_at     timestamptz,
+  posted_at        timestamptz,                  -- self-reported ("I posted"), never inferred
+  created_at       timestamptz NOT NULL,
+  CHECK ((eligible AND exclusion_code IS NULL) OR (NOT eligible AND exclusion_code IS NOT NULL))
+);
+CREATE UNIQUE INDEX review_requests_lead_idx ON review_requests (lead_id);
 
 -- Hash-chained, append-only (see src/server/audit/log.ts).
 CREATE TABLE audit_events (
@@ -448,6 +601,8 @@ CREATE TRIGGER fee_rule_versions_immutable BEFORE UPDATE OR DELETE ON fee_rule_v
   FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
 CREATE TRIGGER fact_verifications_immutable BEFORE UPDATE OR DELETE ON fact_verifications
   FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
+CREATE TRIGGER template_approvals_immutable BEFORE UPDATE OR DELETE ON template_approvals
+  FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
 
 -- Only the assigned attorney approves an engagement (approve_engagement in policy.ts).
 -- Row policies cannot see which column changed, so a trigger guards it for app_user.
@@ -458,6 +613,8 @@ BEGIN
     OR (TG_OP = 'UPDATE' AND (NEW.approved_by IS DISTINCT FROM OLD.approved_by
                               OR NEW.approved_at IS DISTINCT FROM OLD.approved_at
                               OR NEW.fee_cents IS DISTINCT FROM OLD.fee_cents
+                              OR NEW.package_selection IS DISTINCT FROM OLD.package_selection
+                              OR NEW.payment_plan IS DISTINCT FROM OLD.payment_plan
                               OR (NEW.status = 'approved' AND OLD.status IS DISTINCT FROM 'approved')))
   ) THEN
     RAISE EXCEPTION 'only the assigned attorney can approve an engagement or change its fee' USING ERRCODE = 'insufficient_privilege';
@@ -523,6 +680,7 @@ ALTER TABLE comments             ENABLE ROW LEVEL SECURITY;  ALTER TABLE comment
 ALTER TABLE activities           ENABLE ROW LEVEL SECURITY;  ALTER TABLE activities           FORCE ROW LEVEL SECURITY;
 ALTER TABLE consults             ENABLE ROW LEVEL SECURITY;  ALTER TABLE consults             FORCE ROW LEVEL SECURITY;
 ALTER TABLE engagements          ENABLE ROW LEVEL SECURITY;  ALTER TABLE engagements          FORCE ROW LEVEL SECURITY;
+ALTER TABLE payments             ENABLE ROW LEVEL SECURITY;  ALTER TABLE payments             FORCE ROW LEVEL SECURITY;
 ALTER TABLE tasks                ENABLE ROW LEVEL SECURITY;  ALTER TABLE tasks                FORCE ROW LEVEL SECURITY;
 ALTER TABLE fee_rule_versions    ENABLE ROW LEVEL SECURITY;  ALTER TABLE fee_rule_versions    FORCE ROW LEVEL SECURITY;
 ALTER TABLE billable_events      ENABLE ROW LEVEL SECURITY;  ALTER TABLE billable_events      FORCE ROW LEVEL SECURITY;
@@ -530,7 +688,14 @@ ALTER TABLE invoices             ENABLE ROW LEVEL SECURITY;  ALTER TABLE invoice
 ALTER TABLE sequence_enrollments ENABLE ROW LEVEL SECURITY;  ALTER TABLE sequence_enrollments FORCE ROW LEVEL SECURITY;
 ALTER TABLE suppressions         ENABLE ROW LEVEL SECURITY;  ALTER TABLE suppressions         FORCE ROW LEVEL SECURITY;
 ALTER TABLE fact_verifications   ENABLE ROW LEVEL SECURITY;  ALTER TABLE fact_verifications   FORCE ROW LEVEL SECURITY;
+ALTER TABLE template_approvals  ENABLE ROW LEVEL SECURITY;  ALTER TABLE template_approvals  FORCE ROW LEVEL SECURITY;
 ALTER TABLE crm_deliveries       ENABLE ROW LEVEL SECURITY;  ALTER TABLE crm_deliveries       FORCE ROW LEVEL SECURITY;
+ALTER TABLE seminars             ENABLE ROW LEVEL SECURITY;  ALTER TABLE seminars             FORCE ROW LEVEL SECURITY;
+ALTER TABLE partners             ENABLE ROW LEVEL SECURITY;  ALTER TABLE partners             FORCE ROW LEVEL SECURITY;
+ALTER TABLE partner_gifts        ENABLE ROW LEVEL SECURITY;  ALTER TABLE partner_gifts        FORCE ROW LEVEL SECURITY;
+ALTER TABLE partner_referrals    ENABLE ROW LEVEL SECURITY;  ALTER TABLE partner_referrals    FORCE ROW LEVEL SECURITY;
+ALTER TABLE conversion_events    ENABLE ROW LEVEL SECURITY;  ALTER TABLE conversion_events    FORCE ROW LEVEL SECURITY;
+ALTER TABLE review_requests      ENABLE ROW LEVEL SECURITY;  ALTER TABLE review_requests      FORCE ROW LEVEL SECURITY;
 ALTER TABLE audit_events         ENABLE ROW LEVEL SECURITY;  ALTER TABLE audit_events         FORCE ROW LEVEL SECURITY;
 
 -- Workers (public intake form, e-sign webhooks, nurture engine, routing) are trusted
@@ -547,13 +712,21 @@ CREATE POLICY service_all ON comments             FOR ALL TO app_service USING (
 CREATE POLICY service_all ON activities           FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON consults             FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON engagements          FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON payments             FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON tasks                FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON billable_events      FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON sequence_enrollments FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON suppressions         FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON crm_deliveries       FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON seminars             FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON partners             FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON partner_gifts        FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON partner_referrals    FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON conversion_events    FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON review_requests      FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_read ON fee_rule_versions   FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON fact_verifications  FOR SELECT TO app_service USING (true);
+CREATE POLICY service_read ON template_approvals FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON invoices            FOR SELECT TO app_service USING (true);
 CREATE POLICY service_write_invoices ON invoices  FOR INSERT TO app_service WITH CHECK (true);
 CREATE POLICY service_append ON audit_events      FOR INSERT TO app_service WITH CHECK (true);
@@ -669,6 +842,11 @@ CREATE POLICY engagements_write ON engagements FOR ALL TO app_user
   USING (lead_access(lead_id) = 'full' AND app_role() IN ('attorney','paralegal'))
   WITH CHECK (lead_access(lead_id) = 'full' AND app_role() IN ('attorney','paralegal'));
 
+-- payments: read-only for app_user, same visibility as the engagement (view_engagement): full and
+-- client access see them, intake and others do not. Every write (creating a link, recording a
+-- webhook, a refund) is made by app_service after the policy.ts check.
+CREATE POLICY payments_select ON payments FOR SELECT TO app_user USING (lead_access(lead_id) IN ('full','client'));
+
 -- sequence enrollments: read-only for staff on the lead; workers manage them.
 CREATE POLICY enrollments_select ON sequence_enrollments FOR SELECT TO app_user
   USING (lead_access(lead_id) IN ('full','intake'));
@@ -679,8 +857,23 @@ CREATE POLICY enrollments_admin ON sequence_enrollments FOR ALL TO app_user
 CREATE POLICY suppressions_staff ON suppressions FOR ALL TO app_user
   USING (app_role() IN ('platform_admin','intake')) WITH CHECK (app_role() IN ('platform_admin','intake'));
 
+-- seminars: marketing and platform admins plan events and enter costs and counts.
+CREATE POLICY seminars_marketing ON seminars FOR ALL TO app_user
+  USING (app_role() IN ('platform_admin','marketing')) WITH CHECK (app_role() IN ('platform_admin','marketing'));
+
 -- crm_deliveries (lead health page): read-only for admins; platform_admin sees all, firm_admin only their firm's leads.
 CREATE POLICY crm_deliveries_select ON crm_deliveries FOR SELECT TO app_user USING (
+  app_role() = 'platform_admin'
+  OR (app_role() = 'firm_admin' AND lead_access(lead_id) = 'full')
+);
+
+-- conversion_events (conversions admin page): read-only for platform_admin and marketing. Ids, status and value only.
+CREATE POLICY conversion_events_select ON conversion_events FOR SELECT TO app_user USING (
+  app_role() IN ('platform_admin','marketing')
+);
+
+-- review_requests (review tracking report): read-only; platform_admin sees all, firm_admin only their firm's leads.
+CREATE POLICY review_requests_select ON review_requests FOR SELECT TO app_user USING (
   app_role() = 'platform_admin'
   OR (app_role() = 'firm_admin' AND lead_access(lead_id) = 'full')
 );
@@ -701,6 +894,27 @@ CREATE POLICY fact_verifications_select ON fact_verifications FOR SELECT TO app_
 CREATE POLICY fact_verifications_insert ON fact_verifications FOR INSERT TO app_user
   WITH CHECK (app_role() IN ('platform_admin','attorney') AND approved_by = app_user_id());
 
+-- template approvals (approve_templates): attorneys and platform admins read and approve, as themselves.
+CREATE POLICY template_approvals_select ON template_approvals FOR SELECT TO app_user
+  USING (app_role() IN ('platform_admin','attorney'));
+CREATE POLICY template_approvals_insert ON template_approvals FOR INSERT TO app_user
+  WITH CHECK (app_role() IN ('platform_admin','attorney') AND approved_by = app_user_id());
+
+-- partners (manage_partners): platform_admin sees and manages all; firm_admin only partners of their own firm.
+CREATE POLICY partners_admin ON partners FOR ALL TO app_user
+  USING (app_role() = 'platform_admin' OR (app_role() = 'firm_admin' AND firm_id IS NOT NULL AND firm_id = app_firm_id()))
+  WITH CHECK (app_role() = 'platform_admin' OR (app_role() = 'firm_admin' AND firm_id IS NOT NULL AND firm_id = app_firm_id()));
+-- Gifts and referrals follow the partner row: whoever can see the partner can read them. The gift log is insert-only.
+CREATE POLICY partner_gifts_select ON partner_gifts FOR SELECT TO app_user
+  USING (app_role() IN ('platform_admin','firm_admin') AND EXISTS (SELECT 1 FROM partners p WHERE p.id = partner_id));
+CREATE POLICY partner_gifts_insert ON partner_gifts FOR INSERT TO app_user
+  WITH CHECK (app_role() IN ('platform_admin','firm_admin') AND EXISTS (SELECT 1 FROM partners p WHERE p.id = partner_id));
+CREATE POLICY partner_referrals_select ON partner_referrals FOR SELECT TO app_user
+  USING (app_role() IN ('platform_admin','firm_admin') AND EXISTS (SELECT 1 FROM partners p WHERE p.id = partner_id));
+CREATE POLICY partner_referrals_update ON partner_referrals FOR UPDATE TO app_user
+  USING (app_role() IN ('platform_admin','firm_admin') AND EXISTS (SELECT 1 FROM partners p WHERE p.id = partner_id))
+  WITH CHECK (app_role() IN ('platform_admin','firm_admin') AND EXISTS (SELECT 1 FROM partners p WHERE p.id = partner_id));
+
 -- audit: insert-only for everyone; read by platform_admin, and firm_admin for their leads.
 CREATE POLICY audit_insert ON audit_events FOR INSERT TO app_user WITH CHECK (true);
 CREATE POLICY audit_select ON audit_events FOR SELECT TO app_user USING (
@@ -716,11 +930,17 @@ REVOKE ALL ON lead_offer_cards, client_consults, lead_funnel_daily FROM PUBLIC;
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, tasks, suppressions TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON leads, assignments, consults, engagements TO app_user;
+GRANT SELECT                         ON payments TO app_user;
 GRANT SELECT, INSERT                 ON documents, comments, activities, invoices, billable_events, fee_rule_versions TO app_user;
 GRANT SELECT, INSERT                 ON fact_verifications TO app_user;
+GRANT SELECT, INSERT                 ON template_approvals TO app_user;
+GRANT SELECT, INSERT, UPDATE         ON partners TO app_user;
+GRANT SELECT, INSERT                 ON partner_gifts TO app_user;
+GRANT SELECT, UPDATE                 ON partner_referrals TO app_user;
 GRANT UPDATE                         ON invoices TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON sequence_enrollments TO app_user;
-GRANT SELECT                         ON lead_offer_cards, client_consults, lead_funnel_daily, crm_deliveries TO app_user;
+GRANT SELECT, INSERT, UPDATE         ON seminars TO app_user;
+GRANT SELECT                         ON lead_offer_cards, client_consults, lead_funnel_daily, crm_deliveries, conversion_events, review_requests TO app_user;
 
 -- Audit trail: INSERT only. No SELECT/UPDATE/DELETE/TRUNCATE grant to the app at all
 -- except SELECT for the platform_admin/firm_admin policy above.
@@ -728,13 +948,19 @@ GRANT SELECT, INSERT ON audit_events TO app_user;
 REVOKE UPDATE, DELETE, TRUNCATE ON audit_events FROM PUBLIC, app_user, app_service;
 REVOKE UPDATE, DELETE, TRUNCATE ON fee_rule_versions FROM PUBLIC, app_user, app_service;
 REVOKE UPDATE, DELETE, TRUNCATE ON fact_verifications FROM PUBLIC, app_user, app_service;
+REVOKE UPDATE, DELETE, TRUNCATE ON template_approvals FROM PUBLIC, app_user, app_service;
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, leads, assignments, documents, comments,
-  activities, consults, engagements, tasks, billable_events, sequence_enrollments, suppressions TO app_service;
+  activities, consults, engagements, payments, tasks, billable_events, sequence_enrollments, suppressions TO app_service;
 GRANT SELECT, INSERT, UPDATE ON crm_deliveries TO app_service;
+GRANT SELECT, INSERT, UPDATE ON seminars TO app_service;
+GRANT SELECT, INSERT, UPDATE, DELETE ON partners, partner_referrals TO app_service;
+GRANT SELECT, INSERT ON partner_gifts TO app_service;
+GRANT SELECT, INSERT, UPDATE ON crm_deliveries, conversion_events, review_requests TO app_service;
 GRANT SELECT, INSERT ON invoices TO app_service;
 GRANT SELECT ON fee_rule_versions TO app_service;
 GRANT SELECT ON fact_verifications TO app_service; -- approvals are written in the approver's own session
+GRANT SELECT ON template_approvals TO app_service; -- the sender reads approvals; they are written in the approver's own session
 GRANT INSERT ON audit_events TO app_service;
 
 -- The automation runner reads the audit log as its event feed (ids and actions only).

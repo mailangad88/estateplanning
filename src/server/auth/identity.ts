@@ -5,6 +5,7 @@
  * second factor (see flow.ts) before a full session exists.
  */
 import { createCipheriv, createDecipheriv, createHash, createHmac, randomBytes, randomUUID, timingSafeEqual } from "node:crypto";
+import { emailTransportFromEnv, sendModeFromEnv } from "@/server/notify/transports";
 
 export interface IdentityProvider {
   /** Always resolves {delivered: true} so callers cannot learn whether an address has an account. */
@@ -35,12 +36,13 @@ export interface OidcProvider extends IdentityProvider {
 export type SendEmail = (to: string, subject: string, text: string) => Promise<void>;
 
 export const consoleSendEmail: SendEmail = async (to, subject, text) => {
-  if (process.env.NODE_ENV === "production" && !process.env.EMAIL_TRANSPORT) {
-    throw new Error("EMAIL_TRANSPORT must be configured to send sign-in emails in production");
+  if (sendModeFromEnv() === "live") {
+    await emailTransportFromEnv().send({ to, subject, text, stream: "transactional", tag: "sign-in" });
+    return;
   }
+  // Printing sign-in links is fine on a laptop and unsafe anywhere else.
   if (process.env.NODE_ENV === "production") {
-    // TODO: hand off to the configured transport (SMTP / provider API).
-    throw new Error(`EMAIL_TRANSPORT ${process.env.EMAIL_TRANSPORT} is not implemented yet`);
+    throw new Error("Sign-in emails need OUTBOUND_SEND_MODE=live with an email transport (see src/server/notify/transports.ts)");
   }
   console.log(`[email mock] to=${to} subject=${subject}\n${text}`);
 };

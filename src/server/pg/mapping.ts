@@ -115,7 +115,16 @@ export const TABLES = {
       n("feeCents", "fee_cents"), t("customScope", "custom_scope", true), t("status", "status"), t("provider", "provider"),
       t("providerEnvelopeId", "provider_envelope_id", true), t("letter", "letter", true), t("approvedBy", "approved_by", true),
       ts("approvedAt", "approved_at", true), j("history", "history"), a("remindersSent", "reminders_sent"),
-      a("documentIds", "document_ids"),
+      a("documentIds", "document_ids"), j("packageSelection", "package_selection", true), j("paymentPlan", "payment_plan", true),
+    ],
+  },
+  payments: {
+    table: "payments",
+    columns: [
+      t("id", "id"), t("engagementId", "engagement_id"), t("leadId", "lead_id"), t("firmId", "firm_id"),
+      n("installmentNo", "installment_no", true), n("amountCents", "amount_cents"), t("account", "account"),
+      t("status", "status"), t("provider", "provider"), t("providerPaymentId", "provider_payment_id"),
+      t("linkUrl", "link_url", true), ts("createdAt", "created_at"), ts("paidAt", "paid_at", true), j("refunds", "refunds"),
     ],
   },
   tasks: {
@@ -168,9 +177,24 @@ export const TABLES = {
       t("approvedBy", "approved_by"), ts("approvedAt", "approved_at"), t("note", "note"),
     ],
   },
+  templateApprovals: {
+    table: "template_approvals",
+    columns: [
+      t("id", "id"), t("templateKey", "template_key"), n("version", "version"), t("contentHash", "content_hash"),
+      t("approvedBy", "approved_by"), ts("approvedAt", "approved_at"), t("note", "note"),
+    ],
+  },
   automationState: {
     table: "automation_state",
     columns: [n("cursorSeq", "cursor_seq"), j("stages", "stages"), j("exits", "exits"), t("id", "id")],
+  },
+  seminars: {
+    table: "seminars",
+    columns: [
+      t("id", "id"), t("code", "code"), t("title", "title"), t("format", "format"), d("heldOn", "held_on"), t("venue", "venue", true),
+      j("costs", "costs"), n("mailPieces", "mail_pieces", true), n("rsvps", "rsvps"), n("attendees", "attendees"), t("notes", "notes", true),
+      t("createdBy", "created_by"), ts("createdAt", "created_at"), ts("updatedAt", "updated_at"),
+    ],
   },
   crmDeliveries: {
     table: "crm_deliveries",
@@ -178,6 +202,52 @@ export const TABLES = {
       t("id", "id"), t("leadId", "lead_id"), t("event", "event"), t("status", "status"), n("httpStatus", "http_status", true),
       n("attempts", "attempts"), t("error", "error", true), ts("createdAt", "created_at"), ts("updatedAt", "updated_at"),
       ts("lastAttemptAt", "last_attempt_at"), ts("deliveredAt", "delivered_at", true),
+    ],
+  },
+  partners: {
+    table: "partners",
+    columns: [
+      t("id", "id"), t("slug", "slug"), t("name", "name"), t("org", "org"), t("type", "type"), t("refCode", "ref_code"),
+      t("status", "status"), t("ownerId", "owner_id", true), t("firmId", "firm_id", true), ts("createdAt", "created_at"),
+      d("policySignedDate", "policy_signed_date", true), b("reciprocalAgreementOnFile", "reciprocal_agreement_on_file"),
+      b("agreementNonexclusive", "agreement_nonexclusive"), t("notes", "notes", true),
+    ],
+  },
+  partnerGifts: {
+    table: "partner_gifts",
+    columns: [
+      t("id", "id"), t("partnerId", "partner_id"), d("date", "date"), t("description", "description"),
+      n("valueCents", "value_cents"), t("status", "status"), a("flags", "flags"), t("loggedBy", "logged_by"),
+      t("reviewNote", "review_note", true),
+    ],
+  },
+  partnerReferrals: {
+    table: "partner_referrals",
+    columns: [
+      t("id", "id"), t("partnerId", "partner_id"), t("refCode", "ref_code"), t("leadId", "lead_id", true),
+      ts("createdAt", "created_at"), t("origin", "origin"), b("clientConsent", "client_consent"),
+      b("disclosureGiven", "disclosure_given"), ts("disclosureAt", "disclosure_at", true),
+      t("disclosureVersion", "disclosure_version", true), t("releaseStatus", "release_status"),
+      ts("releaseUpdatedAt", "release_updated_at", true), t("releaseUpdatedBy", "release_updated_by", true),
+      t("valueLinked", "value_linked"), t("valueNote", "value_note", true),
+    ],
+  },
+  conversionEvents: {
+    table: "conversion_events",
+    columns: [
+      t("id", "id"), t("leadId", "lead_id"), t("provider", "provider"), t("type", "type"), t("eventId", "event_id"),
+      ts("occurredAt", "occurred_at"), n("valueCents", "value_cents", true), t("currency", "currency"), t("status", "status"),
+      t("reason", "reason", true), n("attempts", "attempts"), t("channel", "channel", true), ts("createdAt", "created_at"),
+      ts("updatedAt", "updated_at"), ts("sentAt", "sent_at", true),
+    ],
+  },
+  reviewRequests: {
+    table: "review_requests",
+    columns: [
+      t("id", "id"), t("leadId", "lead_id"), t("matterType", "matter_type"), ts("anchorAt", "anchor_at"), b("eligible", "eligible"),
+      t("exclusionCode", "exclusion_code", true), t("exclusionNote", "exclusion_note", true), ts("askedAt", "asked_at", true),
+      ts("remindedAt", "reminded_at", true), t("reminderChannel", "reminder_channel", true), ts("optedOutAt", "opted_out_at", true),
+      ts("postedAt", "posted_at", true), ts("createdAt", "created_at"),
     ],
   },
   audit: {

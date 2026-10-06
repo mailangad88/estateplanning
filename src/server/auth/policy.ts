@@ -5,7 +5,7 @@
  *
  * Roles follow the "Lawyer portal and permissions" table in the plan.
  */
-import type { Actor, Assignment, Lead, Role, Visibility } from "@/server/types";
+import type { Actor, Assignment, Lead, Partner, Role, Visibility } from "@/server/types";
 
 export class ForbiddenError extends Error {
   constructor(message = "You do not have access to this") {
@@ -93,6 +93,8 @@ export function canOnLead(actor: Actor, action: LeadAction, lead: Lead, assignme
       // Only the assigned attorney approves the engagement and its fee. Never a paralegal, never automatic.
       return actor.role === "attorney" && access === "full";
     case "view_engagement":
+      // Also covers the engagement's payments and plan (payments_select in db/schema.sql). Refunds and
+      // pricing use approve_engagement: only the assigned attorney moves client money or sets a fee.
       return access === "full" || access === "client";
     case "manage_tasks":
       return access === "full" || access === "intake";
@@ -110,11 +112,19 @@ export type GlobalAction =
   | "manage_users"
   | "view_reports"
   | "view_lead_health"
+  | "view_conversions"
+  | "manage_conversions"
+  | "view_review_tracking"
+  | "manage_reviews"
   | "manage_content"
   | "view_invoices"
   | "manage_firm_capacity"
   | "work_intake_queue"
-  | "verify_facts";
+  | "verify_facts"
+  | "approve_templates"
+  | "manage_seminars"
+  | "view_partners"
+  | "manage_partners";
 
 const GLOBAL: Record<GlobalAction, Role[]> = {
   configure_routing: ["platform_admin"],
@@ -123,16 +133,39 @@ const GLOBAL: Record<GlobalAction, Role[]> = {
   manage_users: ["platform_admin", "firm_admin"],
   view_reports: ["platform_admin", "marketing", "firm_admin"],
   view_lead_health: ["platform_admin", "firm_admin"],
+  // Ad-platform conversions carry ids, times and fee values: marketing reads, only platform admins export or retry.
+  view_conversions: ["platform_admin", "marketing"],
+  manage_conversions: ["platform_admin"],
+  // The "asked everyone" proof is an audit view. Recording "I posted" or a review opt-out follows a client's own word.
+  view_review_tracking: ["platform_admin", "firm_admin"],
+  manage_reviews: ["platform_admin", "intake", "firm_admin"],
   manage_content: ["platform_admin", "marketing"],
   view_invoices: ["platform_admin", "firm_admin"],
   manage_firm_capacity: ["platform_admin", "firm_admin"],
   work_intake_queue: ["platform_admin", "intake"],
   // Approving a state fact or dollar figure for publication is a legal judgment: attorneys and platform admins only.
   verify_facts: ["platform_admin", "attorney"],
+  // Approving client-facing nurture copy is a legal judgment too. Mirrors the template_approvals RLS policies.
+  approve_templates: ["platform_admin", "attorney"],
+  // Seminar costs and counts are marketing data; readouts are totals only.
+  manage_seminars: ["platform_admin", "marketing"],
+  // Referral partners, their gift log and release status. Mirrors the partners RLS policies.
+  view_partners: ["platform_admin", "firm_admin"],
+  manage_partners: ["platform_admin", "firm_admin"],
 };
 
 export function can(actor: Actor, action: GlobalAction): boolean {
   return GLOBAL[action].includes(actor.role);
+}
+
+/**
+ * One partner record. Platform admins see every partner; firm admins only those of their own firm
+ * (a partner with no firm is platform-only). Mirrors partners_admin in db/schema.sql.
+ */
+export function canOnPartner(actor: Actor, action: "view" | "manage", partner: Pick<Partner, "firmId">): boolean {
+  if (!can(actor, action === "view" ? "view_partners" : "manage_partners")) return false;
+  if (actor.role === "platform_admin") return true;
+  return !!actor.firmId && partner.firmId === actor.firmId;
 }
 
 export function assertCan(ok: boolean, message?: string): void {

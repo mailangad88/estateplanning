@@ -9,6 +9,7 @@
 import { audit } from "@/server/audit/log";
 import { assertCan, canOnLead, leadAccess, readableVisibilities, requireMfa, type LeadAccess } from "@/server/auth/policy";
 import type { Db } from "@/server/db";
+import { clientSummary, summarizePayments, type PaymentStatusSummary } from "@/lib/retainerPlan";
 import { MATTER_LABELS } from "@/server/services/leads";
 import type {
   Activity,
@@ -22,6 +23,7 @@ import type {
   Engagement,
   Intake,
   Lead,
+  PaymentRecord,
   Task,
 } from "@/server/types";
 
@@ -64,6 +66,13 @@ export interface CaseHeader {
   nextStep: string;
 }
 
+/** An engagement with its payments, status and the plain-language summary an attorney can share with the client. */
+export interface EngagementView extends Engagement {
+  payments: PaymentRecord[];
+  paymentStatus: PaymentStatusSummary;
+  clientSummary?: { headline: string; lines: string[] };
+}
+
 export interface CommentNode extends Comment {
   replies: CommentNode[];
 }
@@ -83,7 +92,7 @@ export interface CaseView {
     timeline: Activity[];
     comments: CommentNode[];
     consult: Consult[];
-    engagement: Engagement[];
+    engagement: EngagementView[];
     tasks: Task[];
     source: Lead["source"];
     audit: AuditEvent[];
@@ -237,7 +246,18 @@ export async function buildCaseView(db: Db, actor: Actor, leadId: string, now = 
   if (can("view_engagement")) {
     const engagements = await db.engagements.list(undefined, { leadId });
     // Clients see what was sent to them, not drafts the attorney has not approved.
-    s.engagement = client ? engagements.filter((e) => !["draft", "approved"].includes(e.status)) : engagements;
+    const shown = client ? engagements.filter((e) => !["draft", "approved"].includes(e.status)) : engagements;
+    s.engagement = await Promise.all(
+      shown.map(async (e): Promise<EngagementView> => {
+        const payments = (await db.payments.list(undefined, { engagementId: e.id })).sort((a, b) => a.createdAt.localeCompare(b.createdAt));
+        return {
+          ...e,
+          payments,
+          paymentStatus: summarizePayments(e.paymentPlan, payments),
+          clientSummary: e.packageSelection && e.paymentPlan ? clientSummary(e.packageSelection, e.paymentPlan) : undefined,
+        };
+      }),
+    );
   }
   if (!client) s.tasks = (await db.tasks.list(undefined, { leadId })).sort((a, b) => a.dueAt.localeCompare(b.dueAt));
   if (!client) {

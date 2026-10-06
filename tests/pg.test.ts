@@ -10,11 +10,11 @@ import { audit, verifyAuditChain } from "@/server/audit/log";
 import { PgMfaStore } from "@/server/pg/mfa";
 import { buildCaseView } from "@/server/portal/caseView";
 import type {
-  Activity, Assignment, Comment, Consult, CrmDelivery, DocumentRecord, Engagement, Firm, Lawyer, Lead, Person, Task, User,
+  Activity, Assignment, Comment, Consult, CrmDelivery, DocumentRecord, Seminar, Engagement, Firm, Lawyer, Lead, Partner, PartnerGift, PartnerReferral, PaymentRecord, ConversionEvent, ReviewRequest, Person, Task, User,
 } from "@/server/types";
 import type { FeeRuleVersion, Invoice } from "@/server/fees/admin";
 import type { BillableEvent } from "@/lib/fees";
-import type { SequenceEnrollment, Suppression } from "@/server/nurture/types";
+import type { SequenceEnrollment, Suppression, TemplateApproval } from "@/server/nurture/types";
 import type { AutomationState } from "@/server/db";
 import type { FactVerification } from "@/lib/facts";
 
@@ -142,7 +142,20 @@ const fixtures = {
     id: "e1", leadId: "l1", firmId: "f1", lawyerId: "lw1", packageId: "pk", feeCents: 250000, customScope: "cs", status: "approved",
     provider: "docusign", providerEnvelopeId: "env", letter: "L", approvedBy: "u1", approvedAt: T0,
     history: [{ status: "draft", at: T0 }], remindersSent: ["r1"], documentIds: ["d1"],
+    packageSelection: { tierId: "complete", tierName: "Complete", tierPriceCents: 200000, addOns: [{ id: "pet_trust", name: "Pet trust", priceCents: 50000 }], totalCents: 250000 },
+    paymentPlan: {
+      mode: "plan", totalCents: 250000, account: "trust", activatedAt: T0,
+      installments: [
+        { n: 1, kind: "deposit", amountCents: 100000, dueOn: "2026-10-06", status: "paid", paymentId: "pay1", paidAt: T0 },
+        { n: 2, kind: "installment", amountCents: 150000, dueOn: "2026-11-06", status: "late" },
+      ],
+    },
   } satisfies Required<Engagement>,
+  payments: {
+    id: "pay1", engagementId: "e1", leadId: "l1", firmId: "f1", installmentNo: 1, amountCents: 100000, account: "trust", status: "paid",
+    provider: "lawpay", providerPaymentId: "lp_1", linkUrl: "https://pay.example/lp_1", createdAt: T0, paidAt: T0,
+    refunds: [{ id: "rf1", amountCents: 500, at: T0, reason: "adjustment" }],
+  } satisfies Required<PaymentRecord>,
   tasks: { id: "t1", leadId: "l1", title: "call", ownerId: "u1", dueAt: T0, doneAt: T0 } satisfies Required<Task>,
   feeRuleVersions: {
     id: "r1@1", ruleId: "r1", version: 1,
@@ -162,10 +175,38 @@ const fixtures = {
   } satisfies Required<SequenceEnrollment>,
   suppressions: { id: "email:a@x.test", channel: "email", address: "a@x.test", reason: "STOP", at: T0 } satisfies Required<Suppression>,
   factVerifications: { id: "state.CA.small_estate_threshold@1", factId: "state.CA.small_estate_threshold", version: 1, approvedValue: "$208,850", approvedBy: "u-admin", approvedAt: T0, note: "checked" } satisfies Required<FactVerification>,
+  templateApprovals: { id: "qz_1_results@1", templateKey: "qz_1_results", version: 1, contentHash: "a".repeat(64), approvedBy: "u-admin", approvedAt: T0, note: "checked" } satisfies Required<TemplateApproval>,
   crmDeliveries: {
     id: "l1", leadId: "l1", event: "lead.created", status: "failed", httpStatus: 503, attempts: 3, error: "HTTP 503",
     createdAt: T0, updatedAt: T0, lastAttemptAt: T0, deliveredAt: T0,
   } satisfies Required<CrmDelivery>,
+  seminars: {
+    id: "sem1", code: "trusts101-oct", title: "Trusts 101", format: "library_talk", heldOn: "2026-10-20", venue: "Main library",
+    costs: { venue: 0, mail: 45000 }, mailPieces: 500, rsvps: 30, attendees: 21, notes: "n", createdBy: "u-admin", createdAt: T0, updatedAt: T0,
+  } satisfies Required<Seminar>,
+  partners: {
+    id: "pt1", slug: "example-cpa", name: "Jordan Example", org: "Example CPA PLLC", type: "cpa", refCode: "ref-example-cpa",
+    status: "active", ownerId: "u-attorney", firmId: "f1", createdAt: T0, policySignedDate: "2026-10-07",
+    reciprocalAgreementOnFile: true, agreementNonexclusive: true, notes: "n",
+  } satisfies Required<Partner>,
+  partnerGifts: {
+    id: "pg1", partnerId: "pt1", date: "2026-12-01", description: "Holiday card", valueCents: 500, status: "flagged",
+    flags: ["f"], loggedBy: "u1", reviewNote: "ok",
+  } satisfies Required<PartnerGift>,
+  partnerReferrals: {
+    id: "pr1", partnerId: "pt1", refCode: "ref-example-cpa", leadId: "l1", createdAt: T0, origin: "partner_form", clientConsent: true,
+    disclosureGiven: true, disclosureAt: T0, disclosureVersion: "v1", releaseStatus: "granted", releaseUpdatedAt: T0,
+    releaseUpdatedBy: "u1", valueLinked: "no", valueNote: "n",
+  } satisfies Required<PartnerReferral>,
+  conversionEvents: {
+    id: "google_ads:retainer_signed:l1", leadId: "l1", provider: "google_ads", type: "retainer_signed", eventId: "ep-l1-retainer_signed",
+    occurredAt: T0, valueCents: 250000, currency: "USD", status: "failed", reason: "HTTP 503", attempts: 2, channel: "api",
+    createdAt: T0, updatedAt: T0, sentAt: T0,
+  } satisfies Required<ConversionEvent>,
+  reviewRequests: {
+    id: "review-l1", leadId: "l1", matterType: "new_plan", anchorAt: T0, eligible: false, exclusionCode: "UNIFORM_HOLD", exclusionNote: "n",
+    askedAt: T0, remindedAt: T0, reminderChannel: "sms", optedOutAt: T0, postedAt: T0, createdAt: T0,
+  } satisfies Required<ReviewRequest>,
   automationState: { id: "automation", cursorSeq: 42, stages: { l1: "offered" }, exits: { l1: "x" } } satisfies Required<AutomationState>,
 };
 
@@ -249,6 +290,7 @@ const as = (s: PgSession) => createPgDb({ pool, session: s });
 const platformDb = {
   get feeRuleVersions() { return as({ userId: "u-admin", role: "platform_admin" }).feeRuleVersions; },
   get factVerifications() { return as({ userId: "u-admin", role: "platform_admin" }).factVerifications; },
+  get templateApprovals() { return as({ userId: "u-admin", role: "platform_admin" }).templateApprovals; },
 };
 
 beforeAll(async () => {
@@ -300,7 +342,7 @@ suite("postgres integration", () => {
       const coll = (service as unknown as Record<string, { get(id: string): Promise<unknown>; insert(x: unknown): Promise<unknown> }>)[key];
       if (!["users", "firms", "lawyers", "persons", "leads"].includes(key)) {
         // fee rules and fact approvals are written in a platform admin session only; app_service can read them
-        await (key === "feeRuleVersions" ? platformDb.feeRuleVersions : key === "factVerifications" ? platformDb.factVerifications : coll).insert(fx as never);
+        await (key === "feeRuleVersions" ? platformDb.feeRuleVersions : key === "factVerifications" ? platformDb.factVerifications : key === "templateApprovals" ? platformDb.templateApprovals : coll).insert(fx as never);
       }
       expect(await coll.get((fx as { id: string }).id), key).toEqual(fx);
     }
@@ -348,6 +390,26 @@ suite("postgres integration", () => {
       await expect(s.factVerifications.insert({ ...next, id: `x-${role}@9`, factId: `x-${role}`, version: 9, approvedBy: `u-${role}` }), role).rejects.toThrow();
     }
     await expect(service.factVerifications.update(next.id, { note: "edited" })).rejects.toThrow();
+  });
+
+  maybe("template approvals: attorneys and admins approve as themselves, others see nothing, rows are immutable", async () => {
+    const attorney = as({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" });
+    const next = { ...fixtures.templateApprovals, id: "qz_1_results@2", version: 2, approvedBy: "u-attorney" };
+    await attorney.templateApprovals.insert(next);
+    // cannot approve in someone else's name
+    await expect(attorney.templateApprovals.insert({ ...next, id: "qz_1_results@3", version: 3, approvedBy: "u-admin" })).rejects.toThrow();
+    // one row per (template, version)
+    await expect(service.templateApprovals.insert({ ...next, id: "dup" })).rejects.toThrow();
+    expect((await attorney.templateApprovals.list(undefined, { templateKey: "qz_1_results" })).map((v) => v.version).sort()).toEqual([1, 2]);
+    // the sender reads approvals through the service role but cannot write them
+    expect((await service.templateApprovals.list()).length).toBe(2);
+    await expect(service.templateApprovals.insert({ ...next, id: "svc@1", templateKey: "svc", version: 1 })).rejects.toThrow();
+    for (const role of ["intake", "marketing", "firm_admin", "paralegal"] as const) {
+      const s = as({ userId: `u-${role}`, role, firmId: "f1", lawyerId: "lw1", supportsLawyerIds: ["lw1"] });
+      expect(await s.templateApprovals.list(), role).toEqual([]);
+      await expect(s.templateApprovals.insert({ ...next, id: `x-${role}@9`, templateKey: `x-${role}`, version: 9, approvedBy: `u-${role}` }), role).rejects.toThrow();
+    }
+    await expect(service.templateApprovals.update(next.id, { note: "edited" })).rejects.toThrow();
   });
 
   maybe("where pushdown", async () => {
@@ -466,6 +528,84 @@ suite("postgres integration", () => {
     await expect(as({ userId: "u-admin", role: "platform_admin" }).crmDeliveries.insert({ ...fixtures.crmDeliveries, id: "x" })).rejects.toThrow();
     const updated = await service.crmDeliveries.update("l1", { status: "delivered", error: undefined, httpStatus: 200 });
     expect(updated.error).toBeUndefined();
+  });
+
+  maybe("RLS: seminars are marketing and platform admin data only", async () => {
+    const marketing = as({ userId: "u-mkt", role: "marketing" });
+    const attorney = as({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" });
+    const sem = { ...fixtures.seminars, id: "sem-rls", code: "rls-test" };
+    await marketing.seminars.insert(sem);
+    expect((await marketing.seminars.get("sem-rls"))?.code).toBe("rls-test");
+    expect(await attorney.seminars.list()).toEqual([]);
+    await expect(attorney.seminars.insert({ ...sem, id: "sem-x", code: "x-test" })).rejects.toThrow();
+    await expect(service.seminars.insert({ ...sem, id: "sem-dup" })).rejects.toThrow(); // code is unique
+  });
+
+  maybe("partners: admins read and write their firm's partners, gifts are insert-only, nobody else sees them", async () => {
+    await service.partners.insert({ ...fixtures.partners, id: "pt2", slug: "other", refCode: "ref-other", firmId: "f2", ownerId: undefined });
+    const ids = async (s: PgSession) => (await as(s).partners.list()).map((p) => p.id).sort();
+    expect(await ids({ userId: "u-admin", role: "platform_admin" })).toEqual(["pt1", "pt2"]);
+    expect(await ids({ userId: "u-fa", role: "firm_admin", firmId: "f1" })).toEqual(["pt1"]);
+    for (const role of ["marketing", "intake", "attorney", "paralegal", "client"] as const) {
+      expect(await ids({ userId: `u-${role}`, role, firmId: "f1" }), role).toEqual([]);
+      expect(await (as({ userId: `u-${role}`, role, firmId: "f1" }).partnerReferrals.list()), role).toEqual([]);
+      expect(await (as({ userId: `u-${role}`, role, firmId: "f1" }).partnerGifts.list()), role).toEqual([]);
+    }
+    const fa = as({ userId: "u-fa", role: "firm_admin", firmId: "f1" });
+    expect((await fa.partnerGifts.list()).map((g) => g.id)).toEqual(["pg1"]);
+    expect((await fa.partnerReferrals.list()).map((r) => r.id)).toEqual(["pr1"]);
+    await fa.partnerGifts.insert({ ...fixtures.partnerGifts, id: "pg2" });
+    await expect(fa.partnerGifts.update("pg2", { valueCents: 1 })).rejects.toThrow();
+    await expect(as({ userId: "u-fa2", role: "firm_admin", firmId: "f2" }).partnerGifts.insert({ ...fixtures.partnerGifts, id: "pg3" })).rejects.toThrow();
+    const r = await fa.partnerReferrals.update("pr1", { releaseStatus: "revoked" });
+    expect(r.releaseStatus).toBe("revoked");
+    await expect(as({ userId: "u-fa2", role: "firm_admin", firmId: "f2" }).partnerReferrals.update("pr1", { releaseStatus: "granted" })).rejects.toThrow();
+    await expect(fa.partnerReferrals.insert({ ...fixtures.partnerReferrals, id: "pr9", leadId: undefined })).rejects.toThrow();
+    // a partner-submitted referral cannot exist without the client's consent
+    await expect(service.partnerReferrals.insert({ ...fixtures.partnerReferrals, id: "pr8", leadId: undefined, clientConsent: false })).rejects.toThrow();
+    await fa.partners.insert({ ...fixtures.partners, id: "pt3", slug: "third", refCode: "ref-third" });
+    await expect(fa.partners.insert({ ...fixtures.partners, id: "pt4", slug: "fourth", refCode: "ref-fourth", firmId: "f2" })).rejects.toThrow();
+  });
+
+  maybe("payments: the case's attorney and the client read them, intake and other firms do not, app_user cannot write", async () => {
+    const ids = async (s: PgSession) => (await as(s).payments.list()).map((p) => p.id);
+    expect(await ids({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" })).toEqual(["pay1"]);
+    expect(await ids({ userId: "u-client", role: "client", personId: lead.personId })).toEqual(["pay1"]);
+    expect(await ids({ userId: "u-intake", role: "intake" })).toEqual([]);
+    expect(await ids({ userId: "u-other", role: "attorney", firmId: "f2", lawyerId: "lw2" })).toEqual([]);
+    expect(await ids({ userId: "u-m", role: "marketing" })).toEqual([]);
+    const att = as({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" });
+    await expect(att.payments.insert({ ...fixtures.payments, id: "x", providerPaymentId: "lp_x" })).rejects.toThrow();
+    await expect(att.payments.update("pay1", { status: "failed" })).rejects.toThrow();
+    // a paralegal cannot change the package prices or the plan on an engagement (attorney-set), same as the fee
+    const para = as({ userId: "u-para", role: "paralegal", firmId: "f1", supportsLawyerIds: ["lw1"] });
+    await expect(para.engagements.update("e1", { paymentPlan: undefined })).rejects.toThrow();
+  });
+
+  maybe("conversion_events: platform admin and marketing read, nobody else, app_user cannot write", async () => {
+    const ids = async (s: PgSession) => (await as(s).conversionEvents.list()).map((d) => d.id).sort();
+    expect(await ids({ userId: "u-admin", role: "platform_admin" })).toEqual(["google_ads:retainer_signed:l1"]);
+    expect(await ids({ userId: "u-m", role: "marketing" })).toEqual(["google_ads:retainer_signed:l1"]);
+    for (const [role, extra] of [["firm_admin", { firmId: "f1" }], ["intake", {}], ["attorney", { firmId: "f1", lawyerId: "lw1" }]] as const) {
+      expect(await ids({ userId: "u-x", role, ...extra })).toEqual([]);
+    }
+    await expect(as({ userId: "u-admin", role: "platform_admin" }).conversionEvents.update("google_ads:retainer_signed:l1", { status: "sent" })).rejects.toThrow();
+    const sent = await service.conversionEvents.update("google_ads:retainer_signed:l1", { status: "sent", reason: undefined });
+    expect(sent.status).toBe("sent");
+    expect(sent.reason).toBeUndefined();
+  });
+
+  maybe("review_requests: platform admin reads all, firm admin only their firm's leads, app_user cannot write", async () => {
+    const ids = async (s: PgSession) => (await as(s).reviewRequests.list()).map((d) => d.id).sort();
+    expect(await ids({ userId: "u-admin", role: "platform_admin" })).toEqual(["review-l1"]);
+    expect(await ids({ userId: "u-fa", role: "firm_admin", firmId: "f1" })).toEqual(["review-l1"]);
+    expect(await ids({ userId: "u-fa2", role: "firm_admin", firmId: "f2" })).toEqual([]);
+    expect(await ids({ userId: "u-m", role: "marketing" })).toEqual([]);
+    await expect(as({ userId: "u-admin", role: "platform_admin" }).reviewRequests.update("review-l1", { postedAt: T0 })).rejects.toThrow();
+    const updated = await service.reviewRequests.update("review-l1", { eligible: true, exclusionCode: undefined, exclusionNote: undefined });
+    expect(updated.exclusionCode).toBeUndefined();
+    // eligible and excluded are mutually exclusive in the schema itself
+    await expect(service.reviewRequests.update("review-l1", { exclusionCode: "OPTOUT" })).rejects.toThrow();
   });
 
   maybe("audit_events cannot be updated or deleted", async () => {

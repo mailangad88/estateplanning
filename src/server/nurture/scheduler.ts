@@ -24,6 +24,7 @@ import {
   nextAllowedSendTime,
   insideSendWindow,
 } from "@/server/nurture/compliance";
+import { recordReviewSend, recordReviewStop, reviewStopReason, startReviewRequest } from "@/server/nurture/reviews";
 
 const DAY = 86_400_000;
 const stageIdx = (s: Stage) => STAGES.indexOf(s);
@@ -119,6 +120,8 @@ export function isGriefLead(lead: Pick<Lead, "segments" | "matterType" | "captur
 export async function enrollForNewLead(db: Db, lead: Lead, at: Date): Promise<SequenceEnrollment[]> {
   // Families handling an estate get only the gentle track: no speed-to-lead texts, no marketing.
   if (isGriefLead(lead)) return [await enroll(db, lead.id, "grief_support", at)];
+  // A person a partner referred has not signed up for anything themselves: no automated sequences until they contact us.
+  if (lead.segments.includes("partner_referral")) return [];
   const out = [await enroll(db, lead.id, "speed_to_lead", at)];
   if (Object.keys(lead.intake?.answers ?? {}).length > 0) out.push(await enroll(db, lead.id, "quiz_follow_up", at));
   if (lead.segments.some((s) => s.startsWith("resource:"))) out.push(await enroll(db, lead.id, "magnet_follow_up", at));
@@ -209,6 +212,16 @@ export async function evaluateSends(db: Db, now: Date, ctx: SchedulerCtx = {}): 
       continue;
     }
 
+    // Review requests: a STOP, an "I posted", or a sensitive track ends the whole sequence, including the reminder.
+    if (seq.steps.some((s) => s.review)) {
+      const stopWhy = await reviewStopReason(db, lead, person);
+      if (stopWhy) {
+        await recordReviewStop(db, lead.id, stopWhy, now);
+        await stop(db, enr, `exit:${stopWhy}`, now);
+        continue;
+      }
+    }
+
     const enrolledMs = Date.parse(enr.enrolledAt);
     for (const st of seq.steps) {
       if (enr.sentStepIds.includes(st.id)) continue;
@@ -234,6 +247,7 @@ export async function evaluateSends(db: Db, now: Date, ctx: SchedulerCtx = {}): 
         enr = await skip(db, enr, st.id, "window_passed", now);
         continue;
       }
+      if (st.onlyWithoutSmsConsent && lead.consent.smsConsent === true) { enr = await skip(db, enr, st.id, "sms_reminder_used", now); continue; }
       if (st.channel === "sms" && lead.consent.smsConsent !== true) { enr = await skip(db, enr, st.id, "no_sms_consent", now); continue; }
       if (await isSuppressed(db, st.channel, person)) { enr = await skip(db, enr, st.id, "suppressed", now); continue; }
 
@@ -325,6 +339,7 @@ export async function markSent(db: Db, enrollmentId: string, stepId: string, at:
     detail: { stepId, channel: st.channel, templateKey: st.templateKey },
     at,
   });
+  if (st.review && st.channel !== "call_task") await recordReviewSend(db, enr.leadId, stepId, st.channel, at);
   await maybeComplete(db, updated, seq, at);
   return (await db.enrollments.get(enr.id))!;
 }
@@ -350,6 +365,8 @@ export async function onStageChange(db: Db, leadId: string, stage: Stage, at: Da
       await stopActive(db, leadId, ["signed_onboarding"], "stage:plan_complete", at);
       await enroll(db, leadId, "plan_complete", at);
       await enroll(db, leadId, "annual_review", at);
+      // Sequence F2/F3: tracked and enrolled, or excluded by a written rule (never grief or sensitive tracks).
+      await startReviewRequest(db, leadId, at);
       break;
     default:
       break;

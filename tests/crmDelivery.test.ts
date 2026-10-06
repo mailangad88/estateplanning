@@ -191,7 +191,7 @@ describe("payload map", () => {
       tier: expect.any(String), tags: "homeowner,new_parent", top_need: "living_trust",
       sms_consent: true, sms_consent_timestamp: "2026-10-06T14:03:21.000Z", sms_consent_text_version: "2026-10-06.1", no_relationship_ack: true, email_consent: true,
       consent_page_url: "https://example.com/plan-finder", consent_ip: "203.0.113.9",
-      source: "google", medium: "cpc", campaign: "will-vs-trust", landing_page: "/x", gclid: "g1", fbclid: "",
+      source: "google", medium: "cpc", campaign: "will-vs-trust", landing_page: "/x", gclid: "g1", gbraid: "", wbraid: "", fbclid: "", fbc: "", fbp: "",
       external_lead_id: "lead-1", lead_received_at: "2026-10-06T14:03:22.000Z",
     });
   });
