@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight, Baby, BookOpen, Briefcase, Calculator, ChevronDown, CircleHelp, ClipboardCheck, ClipboardList, Download,
   FileText, GraduationCap, HandHeart, Heart, House, Landmark, Library, ListChecks, MapPin, Menu, Newspaper, Phone,
-  Scale, ScrollText, ShieldCheck, Stethoscope, Sun, Users, Video, X, type LucideIcon,
+  Scale, ScrollText, Search, ShieldCheck, Stethoscope, Sun, Users, Video, X, type LucideIcon,
 } from "lucide-react";
 import { NAV } from "@/config/navigation";
 import { useTrackingNumber } from "@/components/TrackedPhone";
@@ -27,6 +27,20 @@ export function BrandMark() {
       <path d="M20 31 C13 29 13 22 20 18 C27 22 27 29 20 31 Z" fill="#fbf8f3" />
       <path d="M20 31 V23" stroke="var(--brand)" strokeWidth="1.8" strokeLinecap="round" />
     </svg>
+  );
+}
+
+const SEARCH = "__search";
+
+/** Plain GET form to the site search page (/search?q=), so it works without JavaScript. */
+function SearchForm({ id, className = "", autoFocus }: { id: string; className?: string; autoFocus?: boolean }) {
+  return (
+    <form action="/search" method="get" role="search" className={`search-form ${className}`}>
+      <label htmlFor={id} className="sr-only">Search guides, tools and resources</label>
+      <Search size={18} aria-hidden="true" />
+      <input id={id} name="q" type="search" placeholder="Search the site" autoComplete="off" autoFocus={autoFocus} required />
+      <button type="submit" className="button">Search</button>
+    </form>
   );
 }
 
@@ -88,6 +102,7 @@ export default function SiteHeader({ brandName, phone: fallback }: { brandName: 
           <span>{brandName}</span>
         </Link>
         <nav className="mega" aria-label="Main" id="main-nav">
+          <SearchForm className="nav-search" id="drawer-search" />
           <ul className="mega__list">
             {NAV.map((g) => {
               const isOpen = open === g.label;
@@ -144,6 +159,23 @@ export default function SiteHeader({ brandName, phone: fallback }: { brandName: 
             </li>
           </ul>
           <div className="mega__actions">
+            <div className="header-search">
+              <button
+                type="button"
+                className="icon-button header-search__toggle"
+                aria-expanded={open === SEARCH}
+                aria-controls="header-search-panel"
+                aria-label="Search the site"
+                onClick={() => setOpen(open === SEARCH ? null : SEARCH)}
+              >
+                <Search size={18} aria-hidden="true" />
+              </button>
+              {open === SEARCH && (
+                <div className="header-search__panel" id="header-search-panel">
+                  <SearchForm id="header-search" autoFocus />
+                </div>
+              )}
+            </div>
             <a className="header-phone" href={telHref(phone)} aria-label={`Call ${phone}`}>
               <Phone size={16} aria-hidden="true" />
               <span>{phone}</span>
