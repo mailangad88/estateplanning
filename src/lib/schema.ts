@@ -1,5 +1,6 @@
 import { firm } from "@/config/firm";
 import { absoluteUrl, site } from "@/config/site";
+import { ATTORNEY_ID as SEO_ATTORNEY_ID, ORG_ID as SEO_ORG_ID } from "@/lib/seo";
 import type { Article, City, Faq, GlossaryEntry, StateGuide } from "@/lib/library";
 
 /**
@@ -9,9 +10,11 @@ import type { Article, City, Faq, GlossaryEntry, StateGuide } from "@/lib/librar
 
 type Json = Record<string, unknown>;
 
-const ORG_ID = `${site.url}/#firm`;
+// Same @ids as the site-wide graph in the root layout (src/lib/seo.tsx), so every page's Article
+// points at the firm, attorney and website nodes that are actually on the page.
+const ORG_ID = SEO_ORG_ID;
 const SITE_ID = `${site.url}/#website`;
-const ATTORNEY_ID = `${site.url}/#attorney`;
+const ATTORNEY_ID = SEO_ATTORNEY_ID;
 
 export function organizationSchema(): Json {
   return {
@@ -86,21 +89,29 @@ export function faqSchema(faqs: Faq[]): Json | null {
   };
 }
 
-function pageBase(page: { url: string; title: string; description: string; updated: string }): Json {
+function pageBase(page: { url: string; title: string; description: string; updated: string; review?: "pending" | "approved" }): Json {
+  const approved = page.review === "approved";
   return {
     "@id": `${absoluteUrl(page.url)}#article`,
     headline: page.title,
     description: page.description,
     url: absoluteUrl(page.url),
-    mainEntityOfPage: absoluteUrl(page.url),
+    // reviewedBy and lastReviewed belong to WebPage, so the attorney sign-off goes on the page node. It is
+    // added only once the attorney approves the page (review: approved in the frontmatter).
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": absoluteUrl(page.url),
+      ...(approved ? { reviewedBy: { "@id": ATTORNEY_ID }, lastReviewed: page.updated } : {}),
+    },
     datePublished: page.updated,
     dateModified: page.updated,
     inLanguage: "en-US",
     author: { "@id": ORG_ID },
     publisher: { "@id": ORG_ID },
     isPartOf: { "@id": SITE_ID },
-    // reviewedBy is added once the attorney signs off; until then the page is marked pending review.
-    creativeWorkStatus: site.reviewStatus,
+    // Share image from the page's opengraph-image route: Google uses it for Article rich results and Discover.
+    image: { "@type": "ImageObject", url: absoluteUrl(`${page.url}/opengraph-image`), width: 1200, height: 630 },
+    creativeWorkStatus: approved ? "Attorney reviewed" : site.reviewStatus,
   };
 }
 
