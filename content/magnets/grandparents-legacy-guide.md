@@ -18,6 +18,8 @@ related:
   - learn/trusts/revocable-living-trust
   - guides/estate-and-inheritance-taxes
   - learn/basics/when-to-update-your-estate-plan
+answers:
+  - "Should I include grandchildren in my will?"
 reviewed: false
 updated: "2026-10-06"
 ---

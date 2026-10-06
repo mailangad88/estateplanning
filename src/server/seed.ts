@@ -12,6 +12,8 @@ import type { Db } from "@/server/db";
 import { seedFeeRules } from "@/server/fees/admin";
 import { ingestLead, recordConflictCheck, setStage, updateIntake } from "@/server/services/leads";
 import { offerNext } from "@/server/services/routing";
+import { FAMILY_PLAN_CONSENT_VERSION, familyPlanBodySchema, summarizePlan } from "@/lib/familyPlan";
+import { encryptPlanBody, familyPlanConfigured, hashEmail } from "@/server/services/familyPlan";
 import type { Actor, Lawyer, User } from "@/server/types";
 
 export const DEMO_FIRM_ID = "firm-demo";
@@ -83,6 +85,34 @@ function demoRecord(id: string, first: string, last: string, answers: LeadRecord
   };
 }
 
+/** A demo "My family plan" organizer linked to a demo lead, so the portal's organizer summary has something to show. */
+async function seedFamilyPlan(db: Db, leadId: string, email: string, now: Date): Promise<void> {
+  const year = now.getUTCFullYear();
+  const body = familyPlanBodySchema.parse({
+    people: {
+      homeState: "TX", maritalStatus: "married", spouseName: "Jamie Rivera", childrenStatus: "minors",
+      children: [{ id: "c1", name: "Ava", birthYear: year - 4 }, { id: "c2", name: "Leo", birthYear: year }],
+      executor: "Jamie Rivera",
+    },
+    assets: {
+      items: [
+        { id: "a1", type: "real_estate", label: "Our home", valueRange: "250k_1m", titling: "joint_spouse", beneficiary: "no" },
+        { id: "a2", type: "retirement", label: "Work 401(k)", valueRange: "50k_250k", titling: "sole", beneficiary: "not_sure" },
+        { id: "a3", type: "life_insurance", label: "Policy through work", valueRange: "250k_1m", titling: "sole", beneficiary: "yes", beneficiaryName: "Jamie" },
+      ],
+    },
+    documents: { will: { has: "no" }, trust: { has: "no" }, healthcareDirective: { has: "no" } },
+  });
+  const summary = summarizePlan(body, year);
+  const id = "fp_demo-0001";
+  const at = now.toISOString();
+  await db.familyPlans.insert({
+    id, emailHash: hashEmail(email), leadId, summary, sectionsDone: summary.sectionsDone, gapCount: summary.gaps.length,
+    consent: { version: FAMILY_PLAN_CONSENT_VERSION, at }, createdAt: at, updatedAt: at,
+  });
+  await db.familyPlanBodies.insert({ id, ciphertext: encryptPlanBody(id, body), updatedAt: at });
+}
+
 export async function seedDemo(db: Db, now = new Date()): Promise<void> {
   await db.firms.insert({ id: DEMO_FIRM_ID, name: firmConfig.firmLegalName, structure: firmConfig.structure });
   for (const l of lawyers) await db.lawyers.insert(l);
@@ -104,6 +134,7 @@ export async function seedDemo(db: Db, now = new Date()): Promise<void> {
   }, now);
   await setStage(db, intake, a.id, "qualified", now);
   await recordConflictCheck(db, intake, a.id, "clear", now);
+  if (familyPlanConfigured()) await seedFamilyPlan(db, a.id, "taylor@example.com", now);
 
   const b = await ingestLead(
     db,

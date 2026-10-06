@@ -15,8 +15,16 @@ import type {
 import type { FeeRuleVersion, Invoice } from "@/server/fees/admin";
 import type { BillableEvent } from "@/lib/fees";
 import type { SequenceEnrollment, Suppression, TemplateApproval } from "@/server/nurture/types";
+import type { PageApproval } from "@/server/types";
 import type { AutomationState } from "@/server/db";
 import type { FactVerification } from "@/lib/facts";
+import { familyPlanBodySchema, summarizePlan } from "@/lib/familyPlan";
+import type { FamilyPlan, FamilyPlanBodyRecord, PlanLinkUse, PlanMfaRecord, PlanSession } from "@/server/types";
+import { configureFamilyPlan, consumeLink, saveOwnPlan } from "@/server/services/familyPlan";
+import {
+  deletePlanAccount, exportPlanAccount, listActivity, listDevices, regenerateRecoveryCodes, resolvePlanSession, revokePlanSession, verifyPlanSignIn,
+} from "@/server/services/planAccount";
+import { codeFor, signInPlan, useLink } from "./planSignIn";
 
 const SCHEMA = readFileSync(join(__dirname, "../db/schema.sql"), "utf8");
 
@@ -176,6 +184,11 @@ const fixtures = {
   suppressions: { id: "email:a@x.test", channel: "email", address: "a@x.test", reason: "STOP", at: T0 } satisfies Required<Suppression>,
   factVerifications: { id: "state.CA.small_estate_threshold@1", factId: "state.CA.small_estate_threshold", version: 1, approvedValue: "$208,850", approvedBy: "u-admin", approvedAt: T0, note: "checked" } satisfies Required<FactVerification>,
   templateApprovals: { id: "qz_1_results@1", templateKey: "qz_1_results", version: 1, contentHash: "a".repeat(64), approvedBy: "u-admin", approvedAt: T0, note: "checked" } satisfies Required<TemplateApproval>,
+  pageApprovals: {
+    id: "pa_1", path: "/guides/what-is-a-will", file: "content/guides/what-is-a-will.md", contentHash: "b".repeat(64), tier: "low",
+    approvedBy: "u-admin", approverRole: "platform_admin", approverName: "Admin", approvedAt: T0, note: "checked", batchId: "batch_1",
+    prUrl: "https://github.com/o/r/pull/1", editedFromHash: "c".repeat(64),
+  } satisfies Required<PageApproval>,
   crmDeliveries: {
     id: "l1", leadId: "l1", event: "lead.created", status: "failed", httpStatus: 503, attempts: 3, error: "HTTP 503",
     createdAt: T0, updatedAt: T0, lastAttemptAt: T0, deliveredAt: T0,
@@ -208,6 +221,19 @@ const fixtures = {
     askedAt: T0, remindedAt: T0, reminderChannel: "sms", optedOutAt: T0, postedAt: T0, createdAt: T0,
   } satisfies Required<ReviewRequest>,
   automationState: { id: "automation", cursorSeq: 42, stages: { l1: "offered" }, exits: { l1: "x" } } satisfies Required<AutomationState>,
+  familyPlans: {
+    id: "fp_1", emailHash: "h".repeat(64), leadId: "l1", summary: summarizePlan(familyPlanBodySchema.parse({ people: { childrenStatus: "minors" } }), 2026),
+    sectionsDone: 0, gapCount: 1, consent: { version: "family-plan-2026-10", at: T0 }, prefilledFrom: ["lead"], createdAt: T0, updatedAt: T0,
+  } satisfies Required<FamilyPlan>,
+  familyPlanBodies: { id: "fp_1", ciphertext: "v1.iv.tag.ct", updatedAt: T0 } satisfies Required<FamilyPlanBodyRecord>,
+  planLinkUses: { id: "jti-fixture", usedAt: T0 } satisfies Required<PlanLinkUse>,
+  planMfa: {
+    id: "fp_1", totpSecretEnc: "v1.iv.tag.ct", pendingSecretEnc: "v1.iv2.tag2.ct2", lastUsedStep: 59_000_000, recoveryCodeHashes: ["salt:hash", "salt2:hash2"],
+    enrolledAt: T0, failedAttempts: 1, lockedUntil: T0, createdAt: T0, updatedAt: T0,
+  } satisfies Required<PlanMfaRecord>,
+  planSessions: {
+    id: "a".repeat(64), planId: "fp_1", createdAt: T0, lastSeenAt: T0, expiresAt: T0, userAgent: "Safari on iPhone", ipPrefix: "203.0.113.0/24", viaRecoveryCode: true,
+  } satisfies Required<PlanSession>,
 };
 
 describe("every TS field maps to a column", () => {
@@ -291,6 +317,7 @@ const platformDb = {
   get feeRuleVersions() { return as({ userId: "u-admin", role: "platform_admin" }).feeRuleVersions; },
   get factVerifications() { return as({ userId: "u-admin", role: "platform_admin" }).factVerifications; },
   get templateApprovals() { return as({ userId: "u-admin", role: "platform_admin" }).templateApprovals; },
+  get pageApprovals() { return as({ userId: "u-admin", role: "platform_admin" }).pageApprovals; },
 };
 
 beforeAll(async () => {
@@ -342,7 +369,7 @@ suite("postgres integration", () => {
       const coll = (service as unknown as Record<string, { get(id: string): Promise<unknown>; insert(x: unknown): Promise<unknown> }>)[key];
       if (!["users", "firms", "lawyers", "persons", "leads"].includes(key)) {
         // fee rules and fact approvals are written in a platform admin session only; app_service can read them
-        await (key === "feeRuleVersions" ? platformDb.feeRuleVersions : key === "factVerifications" ? platformDb.factVerifications : key === "templateApprovals" ? platformDb.templateApprovals : coll).insert(fx as never);
+        await (key === "feeRuleVersions" ? platformDb.feeRuleVersions : key === "factVerifications" ? platformDb.factVerifications : key === "templateApprovals" ? platformDb.templateApprovals : key === "pageApprovals" ? platformDb.pageApprovals : coll).insert(fx as never);
       }
       expect(await coll.get((fx as { id: string }).id), key).toEqual(fx);
     }
@@ -410,6 +437,31 @@ suite("postgres integration", () => {
       await expect(s.templateApprovals.insert({ ...next, id: `x-${role}@9`, templateKey: `x-${role}`, version: 9, approvedBy: `u-${role}` }), role).rejects.toThrow();
     }
     await expect(service.templateApprovals.update(next.id, { note: "edited" })).rejects.toThrow();
+  });
+
+  maybe("page approvals: attorneys and admins approve as themselves in their own role, others see nothing, rows are immutable", async () => {
+    const attorney = as({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" });
+    const next: PageApproval = {
+      ...fixtures.pageApprovals, id: "pa_2", contentHash: "d".repeat(64), approvedBy: "u-attorney", approverRole: "attorney",
+      approverName: "Avery", prUrl: undefined, editedFromHash: undefined,
+    };
+    await attorney.pageApprovals.insert(next);
+    expect(await attorney.pageApprovals.get("pa_2")).toEqual(next);
+    // cannot approve in someone else's name, or claim another role
+    await expect(attorney.pageApprovals.insert({ ...next, id: "pa_3", contentHash: "e".repeat(64), approvedBy: "u-admin" })).rejects.toThrow();
+    await expect(attorney.pageApprovals.insert({ ...next, id: "pa_4", contentHash: "f".repeat(64), approverRole: "platform_admin" })).rejects.toThrow();
+    // one approval per (path, content hash)
+    await expect(attorney.pageApprovals.insert({ ...next, id: "pa_dup" })).rejects.toThrow();
+    // the service role reads approvals but cannot write them
+    expect((await service.pageApprovals.list()).length).toBe(2);
+    await expect(service.pageApprovals.insert({ ...next, id: "svc", contentHash: "9".repeat(64) })).rejects.toThrow();
+    for (const role of ["intake", "marketing", "firm_admin", "paralegal", "client"] as const) {
+      const s = as({ userId: `u-${role}`, role, firmId: "f1", lawyerId: "lw1", supportsLawyerIds: ["lw1"] });
+      expect(await s.pageApprovals.list(), role).toEqual([]);
+      await expect(s.pageApprovals.insert({ ...next, id: `x-${role}`, contentHash: `${role}`.padEnd(64, "0"), approvedBy: `u-${role}`, approverRole: role }), role).rejects.toThrow();
+    }
+    await expect(service.pageApprovals.update(next.id, { note: "edited" })).rejects.toThrow();
+    await expect(attorney.pageApprovals.update(next.id, { note: "edited" })).rejects.toThrow();
   });
 
   maybe("where pushdown", async () => {
@@ -606,6 +658,158 @@ suite("postgres integration", () => {
     expect(updated.exclusionCode).toBeUndefined();
     // eligible and excluded are mutually exclusive in the schema itself
     await expect(service.reviewRequests.update("review-l1", { exclusionCode: "OPTOUT" })).rejects.toThrow();
+  });
+
+  maybe("RLS: plan accounts. A planner sees and changes only its own second factor and devices; staff see none of it", async () => {
+    // fp_1 (fixture) has a plan_mfa row and a session; fp_9 is another account
+    await service.familyPlans.insert({ ...fixtures.familyPlans, id: "fp_9", emailHash: "z".repeat(64), leadId: undefined, prefilledFrom: undefined });
+    await service.planMfa.insert({ ...fixtures.planMfa, id: "fp_9", pendingSecretEnc: undefined, lockedUntil: undefined });
+    await service.planSessions.insert({ ...fixtures.planSessions, id: "9".repeat(64), planId: "fp_9" });
+    await service.planSessions.insert({ ...fixtures.planSessions, id: "b".repeat(64), viaRecoveryCode: undefined });
+    const planner = as({ userId: "fp_1", role: "planner" });
+    expect((await planner.planMfa.list()).map((r) => r.id)).toEqual(["fp_1"]);
+    expect(await planner.planMfa.get("fp_9")).toBeUndefined();
+    expect((await planner.planSessions.list()).map((r) => r.id).sort()).toEqual(["a".repeat(64), "b".repeat(64)]);
+    expect(await planner.planSessions.get("9".repeat(64))).toBeUndefined();
+    // own rows: update and delete; other rows: nothing; never insert (sign-in does that as the service role)
+    await planner.planMfa.update("fp_1", { failedAttempts: 2 });
+    await expect(planner.planMfa.update("fp_9", { failedAttempts: 0 })).rejects.toThrow(/not found or not permitted/);
+    await expect(planner.planSessions.update("9".repeat(64), { lastSeenAt: T0 })).rejects.toThrow(/not found or not permitted/);
+    await expect(planner.planSessions.update("a".repeat(64), { planId: "fp_9" })).rejects.toThrow();
+    expect(await planner.planSessions.remove("9".repeat(64))).toBe(false);
+    expect(await planner.planMfa.remove("fp_9")).toBe(false);
+    await expect(planner.planMfa.insert({ ...fixtures.planMfa, id: "fp_8" })).rejects.toThrow(/permission denied/);
+    await expect(planner.planSessions.insert({ ...fixtures.planSessions, id: "c".repeat(64) })).rejects.toThrow(/permission denied/);
+    expect(await planner.planSessions.remove("b".repeat(64))).toBe(true);
+    expect(await service.planSessions.get("9".repeat(64))).toBeDefined();
+    // another planner cannot see fp_1's rows
+    const nine = as({ userId: "fp_9", role: "planner" });
+    expect((await nine.planMfa.list()).map((r) => r.id)).toEqual(["fp_9"]);
+    expect((await nine.planSessions.list()).map((r) => r.planId)).toEqual(["fp_9"]);
+    // staff: no rows at all, whatever the role, and no writes
+    for (const s of [
+      { userId: "u-admin", role: "platform_admin" }, { userId: "u-fa", role: "firm_admin", firmId: "f1" }, { userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" },
+      { userId: "u-intake", role: "intake" }, { userId: "u-p", role: "paralegal", firmId: "f1" }, { userId: "u-m", role: "marketing" }, { userId: "u-client", role: "client", personId: "p1" },
+    ] as const) {
+      expect(await as(s).planMfa.list(), s.role).toEqual([]);
+      expect(await as(s).planSessions.list(), s.role).toEqual([]);
+      await expect(as(s).planMfa.update("fp_1", { failedAttempts: 0 })).rejects.toThrow();
+      expect(await as(s).planSessions.remove("a".repeat(64))).toBe(false);
+    }
+    // a planner reads only its own account's audit events
+    await audit(service, "system", { action: "family_plan.link", resourceType: "family_plan", resourceId: "fp_9" });
+    await audit(service, "system", { action: "family_plan.link", resourceType: "family_plan", resourceId: "fp_1" });
+    await audit(service, "system", { action: "x.other", resourceType: "lead", resourceId: "fp_1" });
+    const seen = await planner.audit.list();
+    expect(seen.length).toBeGreaterThan(0);
+    expect(seen.every((e) => e.resourceType === "family_plan" && e.resourceId === "fp_1")).toBe(true);
+    expect((await nine.audit.list()).every((e) => e.resourceId === "fp_9")).toBe(true);
+    // deleting an account takes its second factor and sessions with it (FK cascade as a backstop)
+    await service.familyPlans.remove("fp_9");
+    expect(await service.planMfa.get("fp_9")).toBeUndefined();
+    expect(await service.planSessions.get("9".repeat(64))).toBeUndefined();
+    await service.planMfa.update("fp_1", { failedAttempts: fixtures.planMfa.failedAttempts });
+  });
+
+  maybe("plan accounts end to end through RLS: sign in, devices, activity, recovery codes, export, delete", async () => {
+    const sent: { text: string }[] = [];
+    configureFamilyPlan({ sendEmail: async (_to, _s, text) => void sent.push({ text }), baseUrl: "https://site.test" });
+    const t0 = new Date();
+    const a = await signInPlan(service, sent, "pg-account@x.test", t0);
+    const b = await signInPlan(service, sent, "pg-other@x.test", t0);
+    const ctx = (await resolvePlanSession(service, a.sessionToken, t0))!;
+    expect(ctx.planId).toBe(a.planId);
+    expect((ctx.db as PgDb).session).toEqual({ userId: a.planId, role: "planner" });
+    await saveOwnPlan(ctx.db, a.planId, { papers: { location: "safe" } }, t0);
+    expect((await listDevices(ctx, t0)).map((d) => d.device)).toEqual(["Safari on iPhone"]);
+    const bCtx = (await resolvePlanSession(service, b.sessionToken, t0))!;
+    expect(await revokePlanSession(ctx, bCtx.sessionId, t0)).toEqual({ ok: false, current: false });
+    const activity = (await listActivity(ctx)).map((x) => x.text);
+    expect(activity).toEqual(expect.arrayContaining(["Plan saved", "Signed in", "Two-step verification turned on", "Account created"]));
+    const t1 = new Date(t0.getTime() + 60_000);
+    expect((await regenerateRecoveryCodes(ctx, codeFor(a.planId, t1), t1)).ok).toBe(true);
+    const exp = await exportPlanAccount(ctx, t1);
+    expect(exp?.plan.body.papers.location).toBe("safe");
+    // the code just used does not work again, even from a new sign-in
+    const link = await useLink(service, sent, "pg-account@x.test", t1);
+    expect(await verifyPlanSignIn(service, link.preauthToken, codeFor(a.planId, t1), {}, t1)).toMatchObject({ ok: false, reason: "bad_code" });
+    const t2 = new Date(t0.getTime() + 120_000);
+    expect(await deletePlanAccount(ctx, codeFor(a.planId, t2), t2)).toEqual({ ok: true });
+    expect(await service.familyPlans.get(a.planId)).toBeUndefined();
+    expect(await service.familyPlanBodies.get(a.planId)).toBeUndefined();
+    expect(await service.planMfa.get(a.planId)).toBeUndefined();
+    expect(await service.planSessions.list(undefined, { planId: a.planId })).toEqual([]);
+    expect(await resolvePlanSession(service, a.sessionToken, t2)).toBeNull();
+    expect(await resolvePlanSession(service, b.sessionToken, t2)).not.toBeNull();
+    expect(await service.audit.list(undefined, { action: "family_plan.delete", resourceId: a.planId })).toHaveLength(1);
+  });
+
+  maybe("RLS: a planner sees only its own family plan and nothing else; staff see summaries of leads they hold, never the answers", async () => {
+    // fp_1 is linked to l1 (assigned to lw1, firm f1, intake owner u-intake); fp_2 is not linked to anything
+    await service.familyPlans.insert({ ...fixtures.familyPlans, id: "fp_2", emailHash: "i".repeat(64), leadId: undefined, prefilledFrom: undefined });
+    await service.familyPlanBodies.insert({ id: "fp_2", ciphertext: "v1.other", updatedAt: T0 });
+    const planner = as({ userId: "fp_1", role: "planner" });
+    expect((await planner.familyPlans.list()).map((p) => p.id)).toEqual(["fp_1"]);
+    expect((await planner.familyPlanBodies.list()).map((p) => p.id)).toEqual(["fp_1"]);
+    expect(await planner.familyPlans.get("fp_2")).toBeUndefined();
+    expect(await planner.familyPlanBodies.get("fp_2")).toBeUndefined();
+    // nothing else in the database is visible to a planner session
+    for (const key of ["users", "firms", "lawyers", "persons", "leads", "assignments", "documents", "comments", "activities", "consults",
+      "engagements", "payments", "tasks", "invoices", "enrollments", "suppressions", "crmDeliveries", "seminars", "partners", "partnerGifts",
+      "partnerReferrals", "conversionEvents", "reviewRequests", "factVerifications", "templateApprovals"] as const) {
+      expect(await (planner[key] as { list(): Promise<unknown[]> }).list(), key).toEqual([]);
+    }
+    expect(await planner.leadOfferCards()).toEqual([]);
+    // the audit log: only events about its own account
+    expect((await planner.audit.list()).every((e) => e.resourceType === "family_plan" && e.resourceId === "fp_1")).toBe(true);
+    // it may change its own plan, but not relink it to a lead or touch another plan
+    await planner.familyPlans.update("fp_1", { gapCount: 2 });
+    await planner.familyPlanBodies.update("fp_1", { ciphertext: "v1.new" });
+    await expect(planner.familyPlans.update("fp_1", { leadId: "l-offer" })).rejects.toThrow(/only the server links/);
+    await expect(planner.familyPlans.update("fp_1", { emailHash: "j".repeat(64) })).rejects.toThrow();
+    await expect(planner.familyPlans.update("fp_2", { gapCount: 9 })).rejects.toThrow(/not found or not permitted/);
+    await expect(planner.familyPlans.insert({ ...fixtures.familyPlans, id: "fp_3", emailHash: "k".repeat(64), leadId: undefined })).rejects.toThrow();
+    const own = as({ userId: "fp_3", role: "planner" });
+    await expect(own.familyPlans.insert({ ...fixtures.familyPlans, id: "fp_3", emailHash: "k".repeat(64) })).rejects.toThrow(/only the server links/);
+    expect(await planner.familyPlans.remove("fp_2")).toBe(false);
+    expect(await service.familyPlans.get("fp_2")).toBeDefined();
+    await audit(planner, { userId: "fp_1", role: "planner" }, { action: "family_plan.update", resourceType: "family_plan", resourceId: "fp_1" });
+
+    const ids = async (s: PgSession) => ({
+      plans: (await as(s).familyPlans.list()).map((p) => p.id).sort(),
+      bodies: (await as(s).familyPlanBodies.list()).map((p) => p.id),
+    });
+    expect(await ids({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" })).toEqual({ plans: ["fp_1"], bodies: [] });
+    expect(await ids({ userId: "u-intake", role: "intake" })).toEqual({ plans: ["fp_1"], bodies: [] });
+    expect(await ids({ userId: "u-admin", role: "platform_admin" })).toEqual({ plans: ["fp_1"], bodies: [] });
+    expect(await ids({ userId: "u-other", role: "attorney", firmId: "f2", lawyerId: "lw2" })).toEqual({ plans: [], bodies: [] });
+    expect(await ids({ userId: "u-m", role: "marketing" })).toEqual({ plans: [], bodies: [] });
+    expect(await ids({ userId: "u-client", role: "client", personId: "p1" })).toEqual({ plans: [], bodies: [] });
+    // the case view reads the summary through the attorney's own session
+    const actor = { userId: "u-attorney", role: "attorney" as const, firmId: "f1", lawyerId: "lw1", mfa: true };
+    const view = await buildCaseView(as({ userId: actor.userId, role: actor.role, firmId: actor.firmId, lawyerId: actor.lawyerId }), actor, "l1");
+    expect(view.sections.organizer?.planId).toBe("fp_1");
+    await expect(as({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" }).familyPlans.update("fp_1", { gapCount: 0 })).rejects.toThrow();
+
+    // hard delete by the owner; the body goes with the plan
+    expect(await planner.familyPlanBodies.remove("fp_1")).toBe(true);
+    expect(await planner.familyPlans.remove("fp_1")).toBe(true);
+    expect(await service.familyPlans.get("fp_1")).toBeUndefined();
+    await service.familyPlans.remove("fp_2");
+    expect(await service.familyPlanBodies.get("fp_2")).toBeUndefined(); // ON DELETE CASCADE
+  });
+
+  maybe("plan_link_uses: a link id is consumed once across connections; app_user cannot see or write it", async () => {
+    expect(await consumeLink(service, "jti-pg", new Date())).toBe(true);
+    const other = createPgDb({ pool, session: "service" }); // stands in for another app instance
+    expect(await consumeLink(other, "jti-pg", new Date())).toBe(false);
+    const racers = await Promise.all(Array.from({ length: 5 }, () => consumeLink(createPgDb({ pool, session: "service" }), "jti-race", new Date())));
+    expect(racers.filter(Boolean)).toHaveLength(1);
+    for (const s of [{ userId: "u-admin", role: "platform_admin" }, { userId: "fp_1", role: "planner" }] as const) {
+      await expect(as(s).planLinkUses.list()).rejects.toThrow(/permission denied/);
+      await expect(as(s).planLinkUses.insert({ id: "jti-x", usedAt: T0 })).rejects.toThrow(/permission denied/);
+    }
+    await expect(service.planLinkUses.update("jti-pg", { usedAt: T0 })).rejects.toThrow();
   });
 
   maybe("audit_events cannot be updated or deleted", async () => {

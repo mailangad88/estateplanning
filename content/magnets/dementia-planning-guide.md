@@ -19,6 +19,10 @@ related:
   - life-events/serious-diagnosis
   - life-events/caring-for-aging-parents
   - learn/elder-care/medicaid-planning
+answers:
+  - "Should I use a trust for a parent with dementia?"
+  - "Is a springing or immediate power of attorney better?"
+  - "How do I stop a relative from taking advantage of my parent?"
 reviewed: false
 updated: "2026-10-06"
 ---

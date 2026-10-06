@@ -62,6 +62,7 @@ export const NAV: NavGroup[] = [
   {
     label: "Free tools",
     links: [
+      { href: "/my-plan", label: "My family plan", desc: "Your people, assets and documents in one place", icon: "ClipboardList" },
       { href: "/tools", label: "Calculators", desc: "Will or trust, probate cost and more", icon: "Calculator" },
       { href: "/quizzes", label: "Quizzes", desc: "Two minutes, honest results", icon: "ListChecks" },
       { href: "/free", label: "Free downloads", desc: "Worksheets, kits and guides", icon: "Download" },

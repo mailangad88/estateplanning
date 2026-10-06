@@ -18,6 +18,7 @@ import { signToken } from "@/server/auth/identity";
 import { firm } from "@/config/firm";
 import type { Db } from "@/server/db";
 import type { EmailTransport, SmsTransport } from "@/server/notify/transports";
+import type { NurtureOwner } from "@/server/nurture/owner";
 import { evaluateSends, markSent, type DueSend } from "@/server/nurture/scheduler";
 import { getSequence } from "@/server/nurture/sequences";
 import type { Lawyer, Lead, Person } from "@/server/types";
@@ -35,6 +36,8 @@ export interface SenderDeps {
   sms: SmsTransport;
   /** Public site origin for links, e.g. https://www.example.com */
   baseUrl?: string;
+  /** "crm": email and SMS steps are left to the CRM (left unrecorded); call tasks still run. Default "internal". */
+  owner?: NurtureOwner;
   /** Cap per run so one sweep cannot flood a provider */
   limit?: number;
 }
@@ -49,6 +52,10 @@ export interface SenderResult {
   /** No approved template yet; left due */
   awaitingTemplate: number;
   failed: number;
+  /** Which side sends messages this run */
+  owner: NurtureOwner;
+  /** Email/SMS steps left to the CRM (owner=crm) */
+  crmOwned: number;
   /** Template keys still waiting for approval, so the attorney knows what blocks follow-ups */
   missingTemplates: string[];
 }
@@ -95,7 +102,7 @@ async function consultLookup(db: Db): Promise<(leadId: string) => string | undef
 
 export async function runNurtureSends(db: Db, deps: SenderDeps, now = new Date()): Promise<SenderResult> {
   const { due, deferred } = await evaluateSends(db, now, { consultAt: await consultLookup(db) });
-  const result: SenderResult = { due: due.length, deferred: deferred.length, sent: 0, callTasks: 0, dryRun: 0, awaitingTemplate: 0, failed: 0, missingTemplates: [] };
+  const result: SenderResult = { due: due.length, deferred: deferred.length, sent: 0, callTasks: 0, dryRun: 0, awaitingTemplate: 0, failed: 0, owner: deps.owner ?? "internal", crmOwned: 0, missingTemplates: [] };
   const missing = new Set<string>();
   const baseUrl = deps.baseUrl ?? process.env.APP_URL ?? process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
   const leads = new Map<string, Lead | undefined>();
@@ -106,6 +113,12 @@ export async function runNurtureSends(db: Db, deps: SenderDeps, now = new Date()
     if (d.channel === "call_task") {
       await markSent(db, d.enrollmentId, d.stepId, now);
       result.callTasks++;
+      continue;
+    }
+    if (result.owner === "crm") {
+      // The CRM's own automations send this step. It stays unrecorded on purpose: the enrollment must stay
+      // active (that is the sequence tag the CRM keys on) until a stage change, exit or opt-out stops it.
+      result.crmOwned++;
       continue;
     }
     if (!leads.has(d.leadId)) leads.set(d.leadId, await db.leads.get(d.leadId));

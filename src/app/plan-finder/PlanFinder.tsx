@@ -17,6 +17,7 @@ import {
 } from "@/lib/planFinder";
 import { educationTopics, QUESTIONS, type QuizAnswers } from "@/lib/quiz";
 import { loadVisitor } from "@/lib/visitor";
+import { handOffToPlan } from "@/lib/familyPlanHandoff";
 
 type Phase = "questions" | "out_of_area" | "result" | "contact" | "done";
 
@@ -175,7 +176,9 @@ export default function PlanFinder({ servedStates }: { servedStates: string[] })
               </button>
             </div>
             <p>
-              Not ready yet? Browse our <Link href="/guides">guides</Link> and <Link href="/tools">tools</Link>.
+              Not ready yet? Browse our <Link href="/guides">guides</Link> and <Link href="/tools">tools</Link>, or{" "}
+              <Link href="/my-plan" onClick={() => handOffToPlan({ answers, state })}>organize your family plan</Link>{" "}
+              in one place: your people, what you own and the documents you already have. We start it with your answers.
             </p>
           </section>
         ) : (

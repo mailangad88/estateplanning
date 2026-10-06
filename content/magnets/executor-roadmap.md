@@ -20,6 +20,21 @@ related:
   - checklists/first-30-days-after-a-death
   - tools/executor-workload
   - compare/executor-vs-trustee
+diagram: ExecutorTrusteeAgent
+answers:
+  - "What are the duties of an executor?"
+  - "What does an executor have to do?"
+  - "What are the executor's responsibilities?"
+  - "What is the role of an executor?"
+  - "How does an executor get an EIN for the estate?"
+  - "How does an executor open an estate bank account?"
+  - "How do I settle an estate step by step?"
+  - "What is the order of things to do in settling an estate?"
+  - "How does an executor distribute assets?"
+  - "How does an executor pay bills?"
+  - "How does an executor value the estate?"
+  - "What does it mean to settle an estate?"
+  - "What is estate administration?"
 reviewed: false
 updated: "2026-10-06"
 ---

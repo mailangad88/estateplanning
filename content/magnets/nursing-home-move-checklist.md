@@ -19,6 +19,10 @@ related:
   - tools/medicaid-lookback-date
   - guides/powers-of-attorney
   - checklists/important-contacts-list
+answers:
+  - "What happens to my house if I go into a nursing home?"
+  - "Should I transfer my house to my child before going into a nursing home?"
+  - "What happens if my parent runs out of money in a nursing home?"
 reviewed: false
 updated: "2026-10-06"
 ---

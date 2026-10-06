@@ -19,6 +19,11 @@ related:
   - learn/trusts/will-vs-trust
   - learn/trusts/revocable-living-trust
   - learn/basics/when-to-update-your-estate-plan
+answers:
+  - "How much does estate planning cost?"
+  - "How much does an estate planning attorney charge?"
+  - "How much does a basic estate plan cost?"
+  - "How much does a complete estate plan cost with a trust?"
 reviewed: false
 updated: "2026-10-06"
 ---

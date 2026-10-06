@@ -2,7 +2,8 @@ import { createHash, randomUUID } from "node:crypto";
 import type { Db } from "@/server/db";
 import type { Actor, AuditEvent } from "@/server/types";
 
-export type AuditActor = Pick<Actor, "userId" | "role"> | "system";
+/** A staff or client actor, a visitor signed in to their own family plan ("planner"), or the system. */
+export type AuditActor = Pick<Actor, "userId" | "role"> | { userId: string; role: "planner" } | "system";
 
 export interface AuditInput {
   action: string;

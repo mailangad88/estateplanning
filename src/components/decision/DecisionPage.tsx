@@ -11,6 +11,7 @@ import { articleLd, howToLd, JsonLd } from "@/lib/seo";
 import { DecisionPicker } from "./DecisionPicker";
 import { DecisionMatrix } from "./DecisionMatrix";
 import { DecisionMap, OptionCards, Shortcuts } from "./DecisionVisuals";
+import { DECISION_WIDGETS } from "./widgets";
 import "./decision.css";
 
 /**
@@ -26,6 +27,7 @@ export function DecisionPage({ guide }: { guide: DecisionGuide }) {
   ];
   const digits = firm.phone.replace(/\D/g, "");
   const diagrams = guide.diagrams.map((n) => diagramRegistry.find((d) => d.name === n)).filter((d) => d !== undefined);
+  const widgets = (guide.widgets ?? []).map((w) => ({ name: w, Widget: DECISION_WIDGETS[w] })).filter((w) => w.Widget !== undefined);
   const n = guide.options.length;
   return (
     <article className="dg">
@@ -89,10 +91,13 @@ export function DecisionPage({ guide }: { guide: DecisionGuide }) {
         <Shortcuts guide={guide} />
       </Band>
 
-      {diagrams.length > 0 && (
+      {diagrams.length + widgets.length > 0 && (
         <Band label="How it works">
           <SectionHead kicker="How it works" title="The picture behind the choice" />
           <div className="dg-diagrams">
+            {widgets.map(({ name, Widget }) => (
+              <Widget key={name} />
+            ))}
             {diagrams.map((d) => (
               <d.component key={d.name} />
             ))}

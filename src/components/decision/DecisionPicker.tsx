@@ -13,7 +13,7 @@ import { iconFor } from "./icons";
  * Answers stay in the browser: nothing is sent anywhere, and analytics only sees the guide and the
  * top option's id.
  */
-export function DecisionPicker({ guide }: { guide: DecisionGuide }) {
+export function DecisionPicker({ guide, anchorBase = "" }: { guide: DecisionGuide; anchorBase?: string }) {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<DecisionAnswers>({});
   const [result, setResult] = useState<DecisionResult | null>(null);
@@ -88,7 +88,7 @@ export function DecisionPicker({ guide }: { guide: DecisionGuide }) {
             </>
           )}
           <p className="dg-result__links">
-            <a href={`#opt-${result.top.option.id}`} className="arrow-link">
+            <a href={`${anchorBase}#opt-${result.top.option.id}`} className="arrow-link">
               See how it compares <ArrowRight size={16} aria-hidden="true" />
             </a>
             {result.top.option.learn && (
@@ -107,7 +107,7 @@ export function DecisionPicker({ guide }: { guide: DecisionGuide }) {
                 const Icon = iconFor(a.option.icon);
                 return (
                   <li key={a.option.id}>
-                    <a href={`#opt-${a.option.id}`} className={`dg-chip dg-tone--${toneOf(guide, a.option.family)}`}>
+                    <a href={`${anchorBase}#opt-${a.option.id}`} className={`dg-chip dg-tone--${toneOf(guide, a.option.family)}`}>
                       <Icon size={18} aria-hidden="true" />
                       <span>
                         <strong>{a.option.name}</strong>

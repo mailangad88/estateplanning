@@ -176,19 +176,37 @@ function encKey(): Buffer {
   return createHash("sha256").update("development-only-mfa-encryption-key").digest();
 }
 
-/** AES-256-GCM, output `iv.tag.ciphertext` in base64url. */
-export function encryptSecret(plain: string): string {
+/**
+ * AES-256-GCM with a 32-byte key, output `iv.tag.ciphertext` in base64url. `aad` (additional
+ * authenticated data) binds the ciphertext to a context, such as the row it belongs to: decrypting
+ * with a different `aad` fails, so a ciphertext copied onto another row cannot be read there.
+ */
+export function aesGcmEncrypt(key: Buffer, plain: string, aad?: string): string {
   const iv = randomBytes(12);
-  const c = createCipheriv("aes-256-gcm", encKey(), iv);
+  const c = createCipheriv("aes-256-gcm", key, iv);
+  if (aad !== undefined) c.setAAD(Buffer.from(aad, "utf8"));
   const ct = Buffer.concat([c.update(plain, "utf8"), c.final()]);
   return [iv, c.getAuthTag(), ct].map((b) => b.toString("base64url")).join(".");
 }
 
-export function decryptSecret(stored: string): string {
-  const [iv, tag, ct] = stored.split(".").map((p) => Buffer.from(p, "base64url"));
-  const d = createDecipheriv("aes-256-gcm", encKey(), iv);
+/** Throws when the key, the `aad` or any byte of the stored value is wrong. */
+export function aesGcmDecrypt(key: Buffer, stored: string, aad?: string): string {
+  const parts = stored.split(".");
+  if (parts.length !== 3) throw new Error("Malformed ciphertext");
+  const [iv, tag, ct] = parts.map((p) => Buffer.from(p, "base64url"));
+  if (iv.length !== 12 || tag.length !== 16) throw new Error("Malformed ciphertext");
+  const d = createDecipheriv("aes-256-gcm", key, iv);
+  if (aad !== undefined) d.setAAD(Buffer.from(aad, "utf8"));
   d.setAuthTag(tag);
   return Buffer.concat([d.update(ct), d.final()]).toString("utf8");
+}
+
+export function encryptSecret(plain: string): string {
+  return aesGcmEncrypt(encKey(), plain);
+}
+
+export function decryptSecret(stored: string): string {
+  return aesGcmDecrypt(encKey(), stored);
 }
 
 export class MemoryMfaStore implements MfaStore {

@@ -135,3 +135,14 @@ Rules that keep this honest:
 - Pages that Pangram flags as reading mostly AI-written (`npm run check:ai-text`, needs `PANGRAM_API_KEY`) are
   marked in the queue. The fix is the attorney adding his own words and examples, not paraphrasing.
 - High-value first: the first 50 rows of the queue are the pages most likely to rank in the first months.
+
+**Approving in the portal.** The attorney approves at `/portal/pages` (attorneys only, two-step sign-in):
+low-risk pages in batches with a per-page checkbox and an "I read each page" confirmation, medium- and
+high-risk pages one at a time, optionally edited first (title, description, body). Each approval is stored in
+`page_approvals`, bound to the sha256 of the file the attorney read, and audited as `page.approve`; if the file
+changes before it is published, the page shows "changed since you approved it" and needs a new look. With
+`GITHUB_CONTENT_TOKEN` set, every approval opens one pull request that sets the flag (plus `reviewedBy` and
+`lastReviewed`) and carries any edits; CI checks it and a person merges it. Without the token, someone downloads
+the approvals (button on the page) and runs `npm run review:apply -- --from <file> [--dry-run]` (or with
+`DATABASE_URL`), then commits the result. The script refuses any page whose file no longer matches an attorney
+approval. Nothing in code merges a PR or sets a flag on its own.

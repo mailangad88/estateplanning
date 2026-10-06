@@ -1,5 +1,8 @@
 import { FIGURES, usdMillions } from "@/config/figures";
 import type { CaptureTool } from "@/lib/lead";
+/** The launch state. State-based tools preselect it unless the link carries ?state=XX. */
+export const DEFAULT_TOOL_STATE = (process.env.NEXT_PUBLIC_DEFAULT_STATE ?? "IL").toUpperCase();
+
 export interface ToolInfo {
   slug: string;
   title: string;
@@ -64,15 +67,15 @@ export const TOOLS: ToolInfo[] = [
   },
   {
     slug: "state-death-tax-checker",
-    title: "Estate and inheritance tax checker by state",
-    description: "Check federal estate tax, your state's estate tax and any inheritance tax your heirs could owe, with as-of dates and sources.",
-    answer: "Only about a dozen states plus DC have an estate tax, and five (Kentucky, Maryland, Nebraska, New Jersey and Pennsylvania) have an inheritance tax. Federal estate tax starts above the per-person exemption, so most families owe none.",
+    title: "Illinois estate tax checker (and every other state)",
+    description: "Check whether an estate owes Illinois estate tax above the $4 million exclusion, plus federal estate tax and any other state's estate or inheritance tax.",
+    answer: "Illinois taxes estates above $4 million, and unlike the federal exemption that amount is not portable between spouses, so a married couple can owe Illinois tax even when no federal tax is due. Illinois has no inheritance tax. About a dozen states plus DC have an estate tax, and five have an inheritance tax.",
   },
   {
     slug: "small-estate-checker",
-    title: "Small estate checker: can the family skip full probate?",
-    description: "See whether a loved one's estate may qualify for a small estate affidavit or a simplified court process in their state.",
-    answer: "Many states let a small estate skip full probate, but the limits, waiting periods and real estate rules differ widely. For example, California's affidavit limit is $208,850 for deaths since April 2025, and real estate generally needs a separate route.",
+    title: "Small estate checker: can the family skip probate in Illinois?",
+    description: "See whether a loved one's estate may qualify for the Illinois small estate affidavit or a simplified process in another state.",
+    answer: "In Illinois, a family can usually collect personal property without probate using a small estate affidavit when it totals $150,000 or less for deaths on or after August 15, 2025, not counting vehicles. The affidavit cannot transfer Illinois real estate. Other states set different limits and waiting periods.",
   },
   {
     slug: "medicaid-savings-runway",
@@ -92,7 +95,24 @@ export const TOOLS: ToolInfo[] = [
     description: "Compare up to three possible guardians on the priorities you choose, with notes on backups, money and the conversation to have.",
     answer: "Rate each person against what matters most to you. The best fit is a starting point for a conversation, not a verdict. Many parents also name a backup, and a court makes the final decision, so put your choice in a signed will.",
   },
-
+  {
+    slug: "who-inherits",
+    title: "Who inherits if there is no will?",
+    description: "Pick your family and see a family tree with each heir's share under Illinois intestacy rules.",
+    answer: "In Illinois with no will, a spouse and descendants split the estate half and half; a spouse alone or descendants alone take everything; with neither, parents, siblings and the children of deceased siblings share equally, with a double portion to a surviving parent if the other parent has died.",
+  },
+  {
+    slug: "probate-asset-sorter",
+    title: "Which of my assets go through probate?",
+    description: "Add your assets and how each is held to see which would go through probate, which pass outside it, and why.",
+    answer: "Assets in your name alone with no beneficiary or surviving co-owner usually go through probate. Joint assets with survivorship, assets in a funded living trust, and accounts or property with a living named beneficiary or transfer on death designation usually pass outside it.",
+  },
+  {
+    slug: "inheritance-timeline",
+    title: "When will I get my inheritance? A timeline",
+    description: "Pick how the asset passes and see a visual timeline of the usual steps, with Illinois legal deadlines where confirmed.",
+    answer: "It depends on how the asset passes. Beneficiary and joint assets often transfer within weeks, a living trust often takes months, and probate often takes about a year or more. A dispute or estate tax can add months or years.",
+  },
 ];
 /**
  * Editable assumptions behind the calculators. These are general figures, not quotes.
@@ -168,6 +188,9 @@ export const CA_STATUTORY_TIERS: { upTo: number; rate: number }[] = [
  * First match wins, so the more specific patterns come first.
  */
 const TOOL_BY_PATH: [RegExp, string][] = [
+  [/without-a-will|intestate|intestacy|who-inherits|no-will/, "who-inherits"],
+  [/how-long-does-probate|inheritance-take|when-will-i-get|how-long.*inherit/, "inheritance-timeline"],
+  [/probate-vs-non-probate|non-probate|go-through-probate|avoid-probate/, "probate-asset-sorter"],
   [/small-estate|skip-probate|bank-account-after-death/, "small-estate-checker"],
   [/inheritance-tax|estate-tax|death-tax/, "state-death-tax-checker"],
   [/medicaid|long-term-care|nursing-home|aging-parent/, "medicaid-savings-runway"],

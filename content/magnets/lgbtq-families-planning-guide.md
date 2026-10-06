@@ -19,6 +19,12 @@ related:
   - guides/healthcare-directives-and-living-wills
   - guides/guardianship-for-minor-children
   - checklists/funeral-and-burial-wishes
+answers:
+  - "What estate planning do I need if I am in a same-sex marriage?"
+  - "Do LGBTQ couples need different estate planning documents?"
+  - "What happens to a same-sex spouse's inheritance rights?"
+  - "Does a domestic partnership give inheritance rights?"
+  - "Is a domestic partner treated like a spouse for inheritance?"
 reviewed: false
 updated: "2026-10-06"
 ---

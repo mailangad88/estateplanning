@@ -18,6 +18,12 @@ related:
   - checklists/trust-funding-checklist
   - learn/trusts/revocable-living-trust
   - compare/joint-ownership-vs-trust
+diagram: TrustFundingAssets
+answers:
+  - "What does it mean to fund a trust?"
+  - "How do I retitle bank accounts into a trust?"
+  - "How do I retitle investment accounts into a trust?"
+  - "How do I know if my trust is funded?"
 reviewed: false
 updated: "2026-10-06"
 ---

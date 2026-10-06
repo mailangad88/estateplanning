@@ -20,7 +20,7 @@ function Meter({ level, inverse }: { level: Level; inverse?: boolean }) {
  * Every option against every dimension. Rows are options so the table stays readable with many of
  * them; the first column sticks while the rest scroll sideways on phones. Family chips filter rows.
  */
-export function DecisionMatrix({ guide }: { guide: DecisionGuide }) {
+export function DecisionMatrix({ guide, anchorBase = "" }: { guide: DecisionGuide; anchorBase?: string }) {
   const [family, setFamily] = useState<string>("all");
   const rows = guide.options.filter((o) => family === "all" || o.family === family);
   const tone = (id: string) => guide.families.find((f) => f.id === id)?.tone ?? "accent";
@@ -58,7 +58,7 @@ export function DecisionMatrix({ guide }: { guide: DecisionGuide }) {
               return (
                 <tr key={o.id}>
                   <th scope="row">
-                    <a href={`#opt-${o.id}`} className="dg-rowhead">
+                    <a href={`${anchorBase}#opt-${o.id}`} className="dg-rowhead">
                       <span className={`dg-icon dg-tone--${tone(o.family)}`}>
                         <Icon size={18} aria-hidden="true" />
                       </span>

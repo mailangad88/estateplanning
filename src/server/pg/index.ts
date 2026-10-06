@@ -31,7 +31,8 @@ import {
 export type PgSession =
   | {
       userId: string;
-      role: Role;
+      /** "planner" is a visitor signed in to their own family plan only (userId is the plan id) */
+      role: Role | "planner";
       firmId?: string;
       lawyerId?: string;
       personId?: string;
@@ -205,6 +206,11 @@ class PgCollection<T extends { id: string }> implements Collection<T> {
     if (!rows[0]) throw new Error(`not found or not permitted: ${id}`);
     return fromRow<T>(this.spec, rows[0]);
   }
+
+  async remove(id: string): Promise<boolean> {
+    const r = await inTx(this.pool, this.session, (c) => c.query(`DELETE FROM ${quote(this.spec.table)} WHERE id = $1`, [id]));
+    return (r.rowCount ?? 0) > 0;
+  }
 }
 
 class PgAudit implements AppendOnly<AuditEvent> {
@@ -287,6 +293,7 @@ export function createPgDb(opts: { pool?: Pool; session?: PgSession } = {}): PgD
     suppressions: col(TABLES.suppressions),
     factVerifications: col(TABLES.factVerifications),
     templateApprovals: col(TABLES.templateApprovals),
+    pageApprovals: col(TABLES.pageApprovals),
     automationState: col<AutomationState>(TABLES.automationState),
     crmDeliveries: col(TABLES.crmDeliveries),
     seminars: col(TABLES.seminars),
@@ -295,6 +302,11 @@ export function createPgDb(opts: { pool?: Pool; session?: PgSession } = {}): PgD
     partnerReferrals: col(TABLES.partnerReferrals),
     conversionEvents: col(TABLES.conversionEvents),
     reviewRequests: col(TABLES.reviewRequests),
+    familyPlans: col(TABLES.familyPlans),
+    familyPlanBodies: col(TABLES.familyPlanBodies),
+    planLinkUses: col(TABLES.planLinkUses),
+    planMfa: col(TABLES.planMfa),
+    planSessions: col(TABLES.planSessions),
     audit: new PgAudit(pool, session),
     pool,
     session,

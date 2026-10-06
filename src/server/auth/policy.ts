@@ -54,6 +54,18 @@ export function leadAccess(actor: Actor, lead: Lead, assignments: Assignment[], 
   }
 }
 
+/**
+ * A visitor's "My family plan" organizer, once linked to their lead. Staff who can work the lead's
+ * intake or the whole case see its summary (counts, ranges, gaps), never the answers themselves.
+ * Clients, marketing and offer-stage lawyers do not. The visitor's own access is not an Actor at
+ * all: it is a separate plan session (src/server/services/familyPlan.ts) that reaches nothing else.
+ * Mirrors family_plans_staff_select in db/schema.sql.
+ */
+export function canViewFamilyPlanSummary(actor: Actor, lead: Lead, assignments: Assignment[], now = new Date()): boolean {
+  const access = leadAccess(actor, lead, assignments, now);
+  return access === "full" || access === "intake";
+}
+
 export type LeadAction =
   | "view"
   | "respond_to_offer"
@@ -122,6 +134,7 @@ export type GlobalAction =
   | "work_intake_queue"
   | "verify_facts"
   | "approve_templates"
+  | "approve_pages"
   | "manage_seminars"
   | "view_partners"
   | "manage_partners";
@@ -147,6 +160,8 @@ const GLOBAL: Record<GlobalAction, Role[]> = {
   verify_facts: ["platform_admin", "attorney"],
   // Approving client-facing nurture copy is a legal judgment too. Mirrors the template_approvals RLS policies.
   approve_templates: ["platform_admin", "attorney"],
+  // Approving a site page for publication: the attorney stands behind it. Mirrors the page_approvals RLS policies.
+  approve_pages: ["platform_admin", "attorney"],
   // Seminar costs and counts are marketing data; readouts are totals only.
   manage_seminars: ["platform_admin", "marketing"],
   // Referral partners, their gift log and release status. Mirrors the partners RLS policies.

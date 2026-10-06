@@ -14,6 +14,70 @@ export interface CrmAdapter {
   /** Only comments with visibility "firm" may be passed. Adapters refuse anything else. */
   addNote(matterId: string, comment: Comment): Promise<void>;
   attachDocument(matterId: string, doc: Pick<DocumentRecord, "id" | "name" | "kind" | "contentType" | "sizeBytes">, url: string): Promise<void>;
+  /**
+   * Optional. Pushes the state the CRM's own automations key on when NURTURE_OWNER=crm
+   * (and suppressions in either mode). Full desired state each time, so the call is idempotent.
+   */
+  pushNurtureState?(matterId: string, state: NurtureState): Promise<void>;
+}
+
+/**
+ * What the CRM needs to run sequences without ever marketing to someone it should not.
+ * Never carries sensitive segment names, intake answers or tool figures: only booleans for those.
+ */
+export interface NurtureState {
+  /** Lowercased contact email; adapters that keep consent on the contact use it to find the contact. */
+  contactEmail: string;
+  /** Active sequence ids (our ids, e.g. "quiz_follow_up"). */
+  sequences: string[];
+  /** Letter group A-G (or "long_term") of the first active sequence; for CRMs that key on one value. */
+  sequenceGroup?: string;
+  /** Non-sensitive segment tags. */
+  segments: string[];
+  emailConsent: boolean;
+  smsConsent: boolean;
+  emailSuppressed: boolean;
+  smsSuppressed: boolean;
+  /** After-a-death lead: the CRM must never send marketing. */
+  griefTrack: boolean;
+  consultBooked: boolean;
+  consultHeld: boolean;
+  retainerSigned: boolean;
+  /** One flag the CRM can gate every marketing automation on. */
+  doNotMarket: boolean;
+}
+
+/** Custom field values (strings, as both CRMs accept) for a state. Names are ours; the CRM must create them. */
+export function nurtureFields(s: NurtureState): Record<string, string> {
+  const b = (v: boolean) => (v ? "true" : "false");
+  return {
+    ep_sequences: s.sequences.join(";"),
+    ep_sequence_group: s.sequenceGroup ?? "",
+    ep_email_consent: b(s.emailConsent),
+    ep_sms_consent: b(s.smsConsent),
+    ep_email_suppressed: b(s.emailSuppressed),
+    ep_sms_suppressed: b(s.smsSuppressed),
+    ep_grief_track: b(s.griefTrack),
+    ep_consult_booked: b(s.consultBooked),
+    ep_consult_held: b(s.consultHeld),
+    ep_retainer_signed: b(s.retainerSigned),
+    ep_do_not_market: b(s.doNotMarket),
+  };
+}
+
+/** Tag form of the same state, for CRMs whose automations trigger on tags. */
+export function nurtureTags(s: NurtureState): string[] {
+  const t = s.sequences.map((id) => `ep-seq-${id}`);
+  if (s.emailConsent && !s.emailSuppressed) t.push("ep-email-ok");
+  if (s.smsConsent && !s.smsSuppressed) t.push("ep-sms-ok");
+  if (s.emailSuppressed) t.push("ep-email-suppressed");
+  if (s.smsSuppressed) t.push("ep-sms-suppressed");
+  if (s.griefTrack) t.push("ep-grief-track");
+  if (s.consultBooked) t.push("ep-consult-booked");
+  if (s.consultHeld) t.push("ep-consult-held");
+  if (s.retainerSigned) t.push("ep-retainer-signed");
+  if (s.doNotMarket) t.push("ep-do-not-market");
+  return t;
 }
 
 export type StageMap = Record<Stage | ExitReason, string>;

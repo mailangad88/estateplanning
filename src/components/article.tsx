@@ -1,11 +1,12 @@
 import Link from "next/link";
 import type { Faq, Heading } from "@/lib/content";
 import { articleLd, JsonLd } from "@/lib/seo";
-import { Breadcrumbs, CardGrid, Cta, FaqList, Prose, ReviewNote, Toc } from "@/components/ui";
+import { Breadcrumbs, CardGrid, Cta, FaqList, ReviewNote, Toc } from "@/components/ui";
 import { EmailCapture, SensitiveMarker } from "@/components/capture";
 import { libraryLinksFor } from "@/lib/site-links";
 import { PageHero } from "@/components/page-hero";
-import { PageMedia } from "@/components/visuals/PageMedia";
+import { PageMedia, pageDiagramNames } from "@/components/visuals/PageMedia";
+import { RichProse } from "@/components/embeds/rich-prose";
 import MagnetOptIn from "@/components/MagnetOptIn";
 import { MAGNET_FORMATS, magnetsFor, pillarOf } from "@/lib/magnets";
 import { quizzesFor } from "@/lib/quizzes";
@@ -84,7 +85,16 @@ export function ArticlePage(props: {
           <span className="tag">Free tool</span> <Link href={`/tools/${tool.slug}`}>{tool.title}</Link>
         </p>
       )}
-      <Prose html={props.html} />
+      <RichProse
+        html={props.html}
+        path={props.path}
+        title={props.title}
+        sensitive={props.sensitive}
+        downloads={(props.sensitive ? offers : offers.slice(1)).map((o) => ({ slug: o.slug, title: o.title, promise: o.promise }))}
+        tools={tool ? [{ href: `/tools/${tool.slug}`, title: tool.title }] : []}
+        related={related.slice(3)}
+        excludeDiagrams={pageDiagramNames(props.path)}
+      />
       {props.after}
       <FaqList faqs={props.faqs ?? []} />
       {lead && !props.sensitive ? (

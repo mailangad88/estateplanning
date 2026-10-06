@@ -19,6 +19,9 @@ related:
   - learn/basics/what-is-estate-planning
   - tools/plan-readiness-assessment
   - guides/what-makes-a-will-valid
+answers:
+  - "What questions should I ask an estate planning attorney?"
+  - "Is the first estate planning consultation free?"
 reviewed: false
 updated: "2026-10-06"
 ---

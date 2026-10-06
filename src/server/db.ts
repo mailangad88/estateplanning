@@ -15,12 +15,18 @@ import type {
   CrmDelivery,
   DocumentRecord,
   Engagement,
+  FamilyPlan,
+  FamilyPlanBodyRecord,
   Firm,
+  PlanLinkUse,
+  PlanMfaRecord,
+  PlanSession,
   Lawyer,
   Lead,
   Partner,
   PartnerGift,
   PartnerReferral,
+  PageApproval,
   PaymentRecord,
   Person,
   ReviewRequest,
@@ -40,6 +46,8 @@ export interface Collection<T extends { id: string }> {
   list(filter?: (item: T) => boolean, where?: Where): Promise<T[]>;
   insert(item: T): Promise<T>;
   update(id: string, patch: Partial<T>): Promise<T>;
+  /** Hard delete. Resolves false when nothing visible had that id. */
+  remove(id: string): Promise<boolean>;
 }
 
 /** Audit events are append-only: the collection has no update method. */
@@ -81,6 +89,10 @@ export class MemoryCollection<T extends { id: string }> implements Collection<T>
     const next = { ...existing, ...structuredClone(patch), id };
     this.items.set(id, next);
     return structuredClone(next);
+  }
+
+  async remove(id: string): Promise<boolean> {
+    return this.items.delete(id);
   }
 }
 
@@ -132,6 +144,7 @@ export interface Db {
   suppressions: Collection<Suppression>;
   factVerifications: Collection<FactVerification>;
   templateApprovals: Collection<TemplateApproval>;
+  pageApprovals: Collection<PageApproval>;
   automationState: Collection<AutomationState>;
   crmDeliveries: Collection<CrmDelivery>;
   seminars: Collection<Seminar>;
@@ -140,6 +153,11 @@ export interface Db {
   partnerReferrals: Collection<PartnerReferral>;
   conversionEvents: Collection<ConversionEvent>;
   reviewRequests: Collection<ReviewRequest>;
+  familyPlans: Collection<FamilyPlan>;
+  familyPlanBodies: Collection<FamilyPlanBodyRecord>;
+  planLinkUses: Collection<PlanLinkUse>;
+  planMfa: Collection<PlanMfaRecord>;
+  planSessions: Collection<PlanSession>;
   audit: AppendOnly<AuditEvent>;
 }
 
@@ -173,6 +191,7 @@ export function createMemoryDb(): Db {
     suppressions: new MemoryCollection(),
     factVerifications: new MemoryCollection(),
     templateApprovals: new MemoryCollection(),
+    pageApprovals: new MemoryCollection(),
     automationState: new MemoryCollection(),
     crmDeliveries: new MemoryCollection(),
     seminars: new MemoryCollection(),
@@ -181,6 +200,11 @@ export function createMemoryDb(): Db {
     partnerReferrals: new MemoryCollection(),
     conversionEvents: new MemoryCollection(),
     reviewRequests: new MemoryCollection(),
+    familyPlans: new MemoryCollection(),
+    familyPlanBodies: new MemoryCollection(),
+    planLinkUses: new MemoryCollection(),
+    planMfa: new MemoryCollection(),
+    planSessions: new MemoryCollection(),
     audit: new MemoryAppendOnly(),
   };
 }

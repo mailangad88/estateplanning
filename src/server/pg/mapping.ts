@@ -184,6 +184,15 @@ export const TABLES = {
       t("approvedBy", "approved_by"), ts("approvedAt", "approved_at"), t("note", "note"),
     ],
   },
+  pageApprovals: {
+    table: "page_approvals",
+    columns: [
+      t("id", "id"), t("path", "path"), t("file", "file"), t("contentHash", "content_hash"), t("tier", "tier"),
+      t("approvedBy", "approved_by"), t("approverRole", "approver_role"), t("approverName", "approver_name"),
+      ts("approvedAt", "approved_at"), t("note", "note"), t("batchId", "batch_id"),
+      t("prUrl", "pr_url", true), t("editedFromHash", "edited_from_hash", true),
+    ],
+  },
   automationState: {
     table: "automation_state",
     columns: [n("cursorSeq", "cursor_seq"), j("stages", "stages"), j("exits", "exits"), t("id", "id")],
@@ -248,6 +257,34 @@ export const TABLES = {
       t("exclusionCode", "exclusion_code", true), t("exclusionNote", "exclusion_note", true), ts("askedAt", "asked_at", true),
       ts("remindedAt", "reminded_at", true), t("reminderChannel", "reminder_channel", true), ts("optedOutAt", "opted_out_at", true),
       ts("postedAt", "posted_at", true), ts("createdAt", "created_at"),
+    ],
+  },
+  familyPlans: {
+    table: "family_plans",
+    columns: [
+      t("id", "id"), t("emailHash", "email_hash"), t("leadId", "lead_id", true), j("summary", "summary"),
+      n("sectionsDone", "sections_done"), n("gapCount", "gap_count"), j("consent", "consent"),
+      a("prefilledFrom", "prefilled_from", true), ts("createdAt", "created_at"), ts("updatedAt", "updated_at"),
+    ],
+  },
+  familyPlanBodies: {
+    table: "family_plan_bodies",
+    columns: [t("id", "id"), t("ciphertext", "ciphertext"), ts("updatedAt", "updated_at")],
+  },
+  planLinkUses: { table: "plan_link_uses", columns: [t("id", "id"), ts("usedAt", "used_at")] },
+  planMfa: {
+    table: "plan_mfa",
+    columns: [
+      t("id", "id"), t("totpSecretEnc", "totp_secret_enc"), t("pendingSecretEnc", "pending_secret_enc", true),
+      n("lastUsedStep", "last_used_step"), a("recoveryCodeHashes", "recovery_code_hashes"), ts("enrolledAt", "enrolled_at", true),
+      n("failedAttempts", "failed_attempts"), ts("lockedUntil", "locked_until", true), ts("createdAt", "created_at"), ts("updatedAt", "updated_at"),
+    ],
+  },
+  planSessions: {
+    table: "plan_sessions",
+    columns: [
+      t("id", "id"), t("planId", "plan_id"), ts("createdAt", "created_at"), ts("lastSeenAt", "last_seen_at"), ts("expiresAt", "expires_at"),
+      t("userAgent", "user_agent", true), t("ipPrefix", "ip_prefix", true), b("viaRecoveryCode", "via_recovery_code", true),
     ],
   },
   audit: {

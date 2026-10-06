@@ -25,6 +25,7 @@ import {
   WillValidity,
 } from "./diagrams";
 import { VideoExplainer } from "./video/VideoExplainer";
+import { diagramRegistry } from "./diagrams/registry";
 
 type Media = { diagram?: ComponentType<DiagramProps>; video?: string };
 
@@ -74,6 +75,12 @@ export const PAGE_MEDIA: Record<string, Media> = {
   "/life-events/getting-married": { diagram: BeneficiaryBeatsWill },
   "/life-events/death-of-a-parent": { video: "first-30-days-after-a-loved-one-dies" },
 };
+
+/** Registry names of the diagram already shown at the top of a page, so article bodies skip it. */
+export function pageDiagramNames(path: string): string[] {
+  const D = PAGE_MEDIA[path]?.diagram;
+  return D ? diagramRegistry.filter((d) => d.component === D).map((d) => d.name) : [];
+}
 
 /** The diagram and video for a page, placed after the short answer. Renders nothing for unmapped pages. */
 export function PageMedia({ path }: { path: string }) {

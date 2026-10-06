@@ -1,8 +1,10 @@
 import { describe, expect, it } from "vitest";
 import { DECISIONS, decisionPath } from "@/config/decisions";
 import { TYPES_OF_TRUSTS } from "@/config/decisions/trusts";
+import type { DecisionGuide } from "@/config/decisions/types";
 import { diagramRegistry } from "@/components/visuals/diagrams/registry";
 import { DECISION_ICONS } from "@/components/decision/icons";
+import { DECISION_WIDGETS } from "@/components/decision/widgets";
 import { isComplete, scoreDecision } from "@/lib/decision";
 import { allPages } from "@/lib/pages";
 import { getAllArticles } from "@/lib/library";
@@ -10,6 +12,11 @@ import { getComparisons } from "@/lib/content";
 import { TOOLS } from "@/config/tools";
 
 const words = (s: string) => s.trim().split(/\s+/).length;
+
+// Every guide exported from a data file, registered or not, so a new file is checked before it is wired in.
+const FILE_GUIDES: DecisionGuide[] = Object.values(import.meta.glob("../src/config/decisions/*.ts", { eager: true }))
+  .flatMap((m) => Object.values(m as Record<string, unknown>))
+  .filter((v): v is DecisionGuide => typeof v === "object" && v !== null && "slug" in v && "options" in v && "questions" in v);
 
 describe("decision guide data", () => {
   const known = new Set([
@@ -19,7 +26,12 @@ describe("decision guide data", () => {
     ...TOOLS.map((t) => `/tools/${t.slug}`),
   ]);
 
-  for (const g of DECISIONS) {
+  it("registers every guide data file in DECISIONS", () => {
+    const registered = new Set(DECISIONS.map((g) => g.slug));
+    for (const g of FILE_GUIDES) expect(registered.has(g.slug), `${g.slug} missing from src/config/decisions/index.ts`).toBe(true);
+  });
+
+  for (const g of FILE_GUIDES) {
     describe(g.slug, () => {
       const ids = new Set(g.options.map((o) => o.id));
 
@@ -56,6 +68,7 @@ describe("decision guide data", () => {
       it("links rules of thumb, diagrams and related pages to things that exist", () => {
         for (const s of g.shortcuts) expect(ids.has(s.pick), s.pick).toBe(true);
         for (const d of g.diagrams) expect(diagramRegistry.some((r) => r.name === d), d).toBe(true);
+        for (const w of g.widgets ?? []) expect(DECISION_WIDGETS[w], w).toBeDefined();
         const links = [...g.related.map((r) => r.href), ...g.options.flatMap((o) => (o.learn ? [o.learn.href] : []))];
         expect(links.filter((h) => !known.has(h))).toEqual([]);
       });

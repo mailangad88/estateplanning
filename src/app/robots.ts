@@ -14,8 +14,8 @@ export default function robots(): MetadataRoute.Robots {
   if (IS_STAGING) return { rules: [{ userAgent: "*", disallow: "/" }] };
   return {
     rules: [
-      { userAgent: "*", allow: "/", disallow: ["/api/", "/portal"] },
-      ...AI_AGENTS.map((ua) => ({ userAgent: ua, allow: "/", disallow: ["/api/", "/portal"] })),
+      { userAgent: "*", allow: "/", disallow: ["/api/", "/portal", "/my-plan", "/api/my-plan"] },
+      ...AI_AGENTS.map((ua) => ({ userAgent: ua, allow: "/", disallow: ["/api/", "/portal", "/my-plan", "/api/my-plan"] })),
     ],
     sitemap: abs("/sitemap.xml"),
     host: abs("/"),

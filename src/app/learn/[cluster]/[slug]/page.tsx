@@ -12,6 +12,7 @@ import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
 import { getAllArticles, getArticle, getCluster, getGlossaryEntry, getRelated , isIndexable } from "@/lib/library";
 import ToolsBox from "@/components/ToolsBox";
+import { RichProse } from "@/components/embeds/rich-prose";
 import { isSensitiveLibraryPage, magnetsForLibrary, siteLinksFor, toolsFor } from "@/lib/site-links";
 import MagnetOptIn from "@/components/MagnetOptIn";
 import { PageMedia } from "@/components/visuals/PageMedia";
@@ -70,7 +71,16 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
       <AnswerBox answer={a.answer} takeaways={a.takeaways} />
       <PageMedia path={a.url} />
       <Toc headings={a.headings} />
-      <div className="prose" dangerouslySetInnerHTML={{ __html: a.html }} />
+      <RichProse
+        html={a.html}
+        path={a.url}
+        title={a.title}
+        sensitive={sensitive}
+        explicit={a.visuals}
+        downloads={moreOffers.map((o) => ({ slug: o.slug, title: o.title, promise: o.promise }))}
+        tools={toolsFor(clusterSlug).map((t) => ({ href: t.url, title: t.title }))}
+        related={siteLinksFor(clusterSlug).map((l) => ({ href: l.url, title: l.title, kind: l.kind }))}
+      />
       <ToolsBox items={toolsFor(clusterSlug)} />
       <Faqs faqs={a.faqs} />
       {sensitive && <SensitiveMarker />}

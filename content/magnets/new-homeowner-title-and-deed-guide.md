@@ -19,6 +19,13 @@ related:
   - compare/transfer-on-death-deed-vs-trust
   - guides/funding-your-trust
   - learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts
+answers:
+  - "Joint tenancy vs. tenancy in common?"
+  - "Joint tenancy vs. tenants by the entirety?"
+  - "What is tenancy in common?"
+  - "What is a beneficiary deed?"
+  - "Deed vs. will for real estate?"
+  - "What is community property with right of survivorship?"
 reviewed: false
 updated: "2026-10-06"
 ---

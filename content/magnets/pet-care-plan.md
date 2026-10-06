@@ -18,6 +18,10 @@ related:
   - guides/how-to-make-a-will
   - learn/trusts/revocable-living-trust
   - checklists/letter-of-instruction-outline
+answers:
+  - "What happens to my pets when I die?"
+  - "What estate planning do I need if I have a pet?"
+  - "Who gets my pet if I die and have no family?"
 reviewed: false
 updated: "2026-10-06"
 ---
