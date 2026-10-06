@@ -6,4 +6,6 @@ export * from "./tokens";
 export { Figure } from "./Figure";
 export * from "./primitives";
 export { Icon, iconNames } from "./icons/Icon";
-export { IntestacyLadder } from "./diagrams/IntestacyLadder";
+export * from "./diagrams";
+export * from "./illustrations";
+export * from "./covers";
