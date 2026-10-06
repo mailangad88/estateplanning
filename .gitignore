@@ -9,3 +9,6 @@ next-env.d.ts
 # agent worktrees
 .claude/worktrees/
 /exports
+
+# site search index, built before next build (scripts/build-search-index.mts)
+/public/pagefind/

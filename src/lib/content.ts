@@ -125,12 +125,17 @@ export function slugify(text: string): string {
 
 export function render(markdown: string): { html: string; headings: Heading[] } {
   const headings: Heading[] = [];
+  // Repeated headings ("Example") get -2, -3 suffixes so TOC and deep links stay unique.
+  const seen = new Map<string, number>();
   const marked = new Marked({
     gfm: true,
     renderer: {
       heading({ tokens, depth }) {
         const text = this.parser.parseInline(tokens);
-        const id = slugify(text);
+        let id = slugify(text) || "section";
+        const n = seen.get(id) ?? 0;
+        seen.set(id, n + 1);
+        if (n) id = `${id}-${n + 1}`;
         if (depth === 2) headings.push({ id, text: text.replace(/<[^>]+>/g, "") });
         return `<h${depth} id="${id}">${text}</h${depth}>\n`;
       },
