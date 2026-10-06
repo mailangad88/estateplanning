@@ -91,7 +91,7 @@ An agent who misuses a power of attorney can be sued and, in serious cases, char
 ## Common mistakes
 
 - **Waiting too long.** You must have mental capacity when you sign. Once dementia sets in, it may be too late, and a court process may be the only option.
-- **Using a non-durable form.** A general power that ends at incapacity fails exactly when you need it.
+- **Using a non-durable form.** A general power that ends at incapacity stops working at exactly the moment it would be used.
 - **No successor agent.** If your only agent cannot serve, the document may be useless.
 - **Leaving out gifting or trust powers.** If Medicaid planning might come up later, a power without gifting authority can block it. See [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning).
 - **Not telling the agent where things are.** An agent who cannot find the accounts cannot help. Our [asset and account inventory](/checklists/asset-and-account-inventory) can help.

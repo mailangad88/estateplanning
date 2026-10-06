@@ -52,7 +52,7 @@ Retirement accounts and life insurance pass by beneficiary form, not by will. Th
 
 - Name your spouse on some accounts and your children on others
 - Use life insurance to give children an inheritance right away
-- Name a trust as beneficiary when you need control
+- Name a trust as beneficiary when you want control over how money is used
 
 Federal rules often give a spouse rights in an employer retirement plan, such as a 401(k). Naming someone else usually requires the spouse's written consent. Review all your forms with the [beneficiary designation audit](/checklists/beneficiary-designation-audit).
 

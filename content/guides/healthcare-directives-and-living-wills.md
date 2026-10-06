@@ -48,7 +48,7 @@ A living will records your wishes about end-of-life care. It speaks for you when
 
 Many states combine both pieces into one advance directive form. Others keep them separate. For a closer look at how they differ, see [living will vs health care power of attorney](/compare/living-will-vs-healthcare-power-of-attorney).
 
-## Why you need both
+## Why most people sign both
 
 A living will cannot predict every situation. Real medical choices are messy. A doctor might ask whether to try a treatment for two weeks and see if it helps.
 
