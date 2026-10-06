@@ -856,10 +856,11 @@
    "keyword": "Can you avoid probate by adding a child to the deed?",
    "intent": "question",
    "cluster": "probate",
-   "slug": "can-you-avoid-probate-by-adding-a-child-to-the-deed",
+   "slug": "adding-a-child-to-your-deed",
    "priority": 1,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 3"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 3",
+   "drafted": "2026-10-06"
   },
   {
    "id": "K084",
@@ -3526,30 +3527,33 @@
    "keyword": "Can a trustee be paid?",
    "intent": "question",
    "cluster": "after-a-death",
-   "slug": "can-a-trustee-be-paid",
+   "slug": "trustee-compensation",
    "priority": 1,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 13",
+   "drafted": "2026-10-06"
   },
   {
    "id": "K346",
    "keyword": "What happens if the trustee does nothing?",
    "intent": "question",
    "cluster": "after-a-death",
-   "slug": "what-happens-if-the-trustee-does-nothing",
+   "slug": "when-a-trustee-does-nothing",
    "priority": 1,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 13",
+   "drafted": "2026-10-06"
   },
   {
    "id": "K347",
    "keyword": "Can a beneficiary sue a trustee?",
    "intent": "question",
    "cluster": "after-a-death",
-   "slug": "can-a-beneficiary-sue-a-trustee",
+   "slug": "when-a-trustee-does-nothing",
    "priority": 1,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 13",
+   "drafted": "2026-10-06"
   },
   {
    "id": "K348",
@@ -3879,10 +3883,11 @@
    "keyword": "Can an executor take money out of the estate?",
    "intent": "question",
    "cluster": "probate",
-   "slug": "can-an-executor-take-money-out-of-the-estate",
+   "slug": "can-an-executor-take-money-from-the-estate",
    "priority": 1,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 14"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 14",
+   "drafted": "2026-10-06"
   },
   {
    "id": "K380",

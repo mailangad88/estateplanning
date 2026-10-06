@@ -57,7 +57,7 @@ Many states require the executor to give written notice to heirs and beneficiari
 
 ### 4. Get a tax ID and open an estate account
 
-Apply for an Employer Identification Number (EIN) for the estate on the IRS website, which is free. Take the EIN and your letters to a bank and open an estate checking account. Deposit all incoming money there and pay all expenses from it. Never run estate money through your personal account.
+Apply for an Employer Identification Number (EIN) for the estate on the IRS website, which is free. Take the EIN and your letters to a bank and open an estate checking account. Deposit all incoming money there and pay all expenses from it. Never run estate money through your personal account. For what you may and may not pay yourself from that account, see [can an executor take money out of the estate?](/learn/probate/can-an-executor-take-money-from-the-estate)
 
 ### 5. Inventory and value the assets
 

@@ -67,7 +67,7 @@ Strengths: cheap, and keeps the house out of probate while preserving the tax st
 
 When property is held in [joint tenancy](/glossary/joint-tenancy) with right of survivorship, or by a married couple as [tenants by the entirety](/glossary/tenancy-by-the-entirety) in states that allow it, the surviving owner takes the whole property automatically. Married couples commonly hold their home and bank accounts this way.
 
-Strengths: simple and familiar; works well between spouses. Risks are larger for parents adding children. The child's creditors, divorce or lawsuit can reach the property, the parent may lose control, adding a child to a deed can be treated as a gift with tax consequences, and a child may not get the favorable step-up in basis on the part gifted. Our article on [joint ownership risks](/learn/property-and-assets/joint-tenancy-risks) covers these in detail. Joint ownership with one child can also leave other children out unintentionally.
+Strengths: simple and familiar; works well between spouses. Risks are larger for parents adding children. The child's creditors, divorce or lawsuit can reach the property, the parent may lose control, adding a child to a deed can be treated as a gift with tax consequences, and a child may not get the favorable step-up in basis on the part gifted. Our article on [joint ownership risks](/learn/property-and-assets/joint-tenancy-risks) covers these in detail. Joint ownership with one child can also leave other children out unintentionally. If the asset is your house, see [adding a child to your deed to avoid probate](/learn/probate/adding-a-child-to-your-deed) for a worked tax example and safer alternatives.
 
 ## Tool 5: A funded revocable living trust
 
