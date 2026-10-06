@@ -3,9 +3,9 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { TOOLS } from "@/config/tools";
 import { EXPLAINERS } from "@/explainers/data";
-import { getChecklists, getComparisons, getGlossary, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
+import { getAudiences, getChecklists, getComparisons, getGlossary, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
 
-const STATIC = ["/", "/plan-finder", "/resources", "/pricing", "/about", "/contact", "/guides", "/blog", "/compare", "/life-events", "/tools", "/checklists", "/explainers", "/course", "/glossary", "/faq", "/mistakes", "/legal/privacy", "/legal/disclaimer", "/legal/sms-terms", "/legal/how-we-work"];
+const STATIC = ["/", "/plan-finder", "/resources", "/pricing", "/about", "/contact", "/guides", "/blog", "/compare", "/life-events", "/estate-planning-for", "/contact", "/tools", "/checklists", "/explainers", "/course", "/glossary", "/faq", "/mistakes", "/legal/privacy", "/legal/disclaimer", "/legal/sms-terms", "/legal/how-we-work"];
 
 function knownPaths() {
   const s = new Set(STATIC);
@@ -14,6 +14,7 @@ function knownPaths() {
   getComparisons().forEach((c) => s.add(`/compare/${c.slug}`));
   getLifeEvents().forEach((l) => s.add(`/life-events/${l.slug}`));
   getChecklists().forEach((c) => s.add(`/checklists/${c.slug}`));
+  getAudiences().forEach((a) => s.add(`/estate-planning-for/${a.slug}`));
   getLessons().forEach((l) => s.add(`/course/${l.day}`));
   TOOLS.forEach((t) => s.add(`/tools/${t.slug}`));
   EXPLAINERS.forEach((e) => s.add(`/explainers/${e.slug}`));
@@ -26,7 +27,7 @@ describe("internal links in content", () => {
     const glossary = new Set(getGlossary().map((g) => g.slug));
     const broken: string[] = [];
     const root = path.join(process.cwd(), "content");
-    for (const dir of ["guides", "blog", "compare", "life-events", "course"]) {
+    for (const dir of ["guides", "blog", "compare", "life-events", "course", "audiences"]) {
       for (const f of fs.readdirSync(path.join(root, dir)).filter((x) => x.endsWith(".md"))) {
         const text = fs.readFileSync(path.join(root, dir, f), "utf8");
         for (const m of text.matchAll(/\]\((\/[^)\s]*)\)/g)) {
@@ -41,12 +42,26 @@ describe("internal links in content", () => {
   });
 
   it("every related slug resolves", () => {
-    const all = new Set([...getGuides(), ...getPosts(), ...getComparisons(), ...getLifeEvents(), ...getChecklists()].map((x) => x.slug));
+    const all = new Set([...getGuides(), ...getPosts(), ...getComparisons(), ...getLifeEvents(), ...getChecklists(), ...getAudiences()].map((x) => x.slug));
     const missing: string[] = [];
-    for (const doc of [...getGuides(), ...getPosts(), ...getComparisons(), ...getLifeEvents()]) {
+    for (const doc of [...getGuides(), ...getPosts(), ...getComparisons(), ...getLifeEvents(), ...getAudiences()]) {
       for (const r of doc.related) if (!all.has(r)) missing.push(`${doc.slug} -> ${r}`);
     }
     for (const p of getPosts()) if (!getGuides().some((g) => g.slug === p.pillar)) missing.push(`${p.slug} pillar -> ${p.pillar}`);
     expect(missing).toEqual([]);
+  });
+
+  it("audience pages have the required fields and the sensitive flag where needed", () => {
+    const audiences = getAudiences();
+    expect(audiences.length).toBe(12);
+    const sensitive = audiences.filter((a) => a.sensitive).map((a) => a.slug).sort();
+    expect(sensitive).toEqual(["after-a-death", "after-a-diagnosis", "lgbtq-couples", "special-needs-families"]);
+    for (const a of audiences) {
+      expect(a.reviewed).toBe(false);
+      expect(a.answer.length).toBeGreaterThan(0);
+      expect(a.hooks.length).toBeGreaterThan(0);
+      expect(a.faqs.length).toBeGreaterThanOrEqual(5);
+      expect(a.magnet).not.toBeNull();
+    }
   });
 });

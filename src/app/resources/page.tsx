@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { TOOLS } from "@/config/tools";
 import { EXPLAINERS } from "@/explainers/data";
-import { getChecklists, getComparisons, getFaqs, getGlossary, getGuides, getLessons, getLifeEvents, getMistakes, getPosts } from "@/lib/content";
+import { getAudiences, getChecklists, getComparisons, getFaqs, getGlossary, getGuides, getLessons, getLifeEvents, getMistakes, getPosts } from "@/lib/content";
 import { CardGrid, PageHeader } from "@/components/ui";
 import { GUIDES } from "@/content/guides";
 
@@ -18,6 +18,7 @@ export default function Resources() {
     { href: "/blog", label: "Questions answered", count: getPosts().length, body: "Short answers to specific questions." },
     { href: "/compare", label: "Comparisons", count: getComparisons().length, body: "Side-by-side choices, factor by factor." },
     { href: "/life-events", label: "Life events", count: getLifeEvents().length, body: "What to do after a big change." },
+    { href: "/estate-planning-for", label: "By situation", count: getAudiences().length, body: "Caregivers, new parents, executors, business owners and more." },
     { href: "/tools", label: "Calculators and tools", count: TOOLS.length, body: "Run the numbers privately." },
     { href: "/checklists", label: "Checklists and worksheets", count: getChecklists().length, body: "Tick off on screen or print." },
     { href: "/explainers", label: "Animated explainers", count: EXPLAINERS.length, body: "Two-minute videos with transcripts." },

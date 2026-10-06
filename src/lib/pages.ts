@@ -1,6 +1,6 @@
 import { TOOLS } from "@/config/tools";
 import { EXPLAINERS } from "@/explainers/data";
-import { getChecklists, getComparisons, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
+import { getAudiences, getChecklists, getComparisons, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
 import { getStates } from "@/lib/states";
 import { getAllArticles, getCluster, getGlossary as getTermPages, getStateGuides } from "@/lib/library";
 
@@ -28,6 +28,7 @@ export function allPages(): SitePage[] {
     { path: "/guides", title: "Guides", description: "Estate planning guides.", updated: TODAY, section: "Main" },
     { path: "/blog", title: "Questions, answered", description: "Short answers to specific questions.", updated: TODAY, section: "Main" },
     { path: "/compare", title: "Comparisons", description: "Side-by-side comparisons.", updated: TODAY, section: "Main" },
+    { path: "/estate-planning-for", title: "Estate planning by situation", description: "Planning pages for caregivers, new parents, executors, business owners, families and more.", updated: TODAY, section: "Main" },
     { path: "/life-events", title: "Life events", description: "Planning for life's big moments.", updated: TODAY, section: "Main" },
     { path: "/tools", title: "Tools", description: "Free calculators and tools.", updated: TODAY, section: "Main" },
     { path: "/checklists", title: "Checklists", description: "Printable checklists and worksheets.", updated: TODAY, section: "Main" },
@@ -41,6 +42,7 @@ export function allPages(): SitePage[] {
   for (const p of getPosts()) pages.push({ path: `/blog/${p.slug}`, title: p.title, description: p.description, updated: p.updated, section: "Questions answered" });
   for (const c of getComparisons()) pages.push({ path: `/compare/${c.slug}`, title: c.title, description: c.description, updated: c.updated, section: "Comparisons" });
   for (const l of getLifeEvents()) pages.push({ path: `/life-events/${l.slug}`, title: l.title, description: l.description, updated: l.updated, section: "Life events" });
+  for (const a of getAudiences()) pages.push({ path: `/estate-planning-for/${a.slug}`, title: a.title, description: a.description, updated: a.updated, section: "By situation" });
   for (const k of getChecklists()) pages.push({ path: `/checklists/${k.slug}`, title: k.title, description: k.description, updated: k.updated, section: "Checklists" });
   for (const t of TOOLS) pages.push({ path: `/tools/${t.slug}`, title: t.title, description: t.description, updated: TODAY, section: "Tools" });
   for (const e of EXPLAINERS) pages.push({ path: `/explainers/${e.slug}`, title: e.title, description: e.description, updated: TODAY, section: "Explainers" });

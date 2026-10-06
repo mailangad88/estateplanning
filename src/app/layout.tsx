@@ -46,7 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               formed until an engagement agreement is signed.
             </p>
             <p>
-              <Link href="/resources">Resources</Link> · <Link href="/learn">Estate planning library</Link> ·{" "}
+              <Link href="/resources">Resources</Link> · <Link href="/learn">Estate planning library</Link> · <Link href="/estate-planning-for">By situation</Link> ·{" "}
               <Link href="/estate-planning">Laws by state</Link> · <Link href="/glossary">Glossary</Link> · <Link href="/faq">FAQ</Link> ·{" "}
               <Link href="/explainers">Explainers</Link> · <Link href="/course">Free course</Link> · <Link href="/about">About</Link> ·{" "}
               <Link href="/contact">Contact</Link> · <Link href="/intake">Full intake form</Link> · <Link href="/callback">Request a call back</Link>
