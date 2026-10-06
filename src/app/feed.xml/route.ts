@@ -1,6 +1,6 @@
 import { firm } from "@/config/firm";
 import { absoluteUrl } from "@/config/site";
-import { getAllArticles } from "@/lib/library";
+import { getAllArticles, isIndexable } from "@/lib/library";
 
 export const dynamic = "force-static";
 
@@ -10,7 +10,8 @@ function esc(s: string): string {
 
 /** RSS feed of every guide, newest first, so readers and aggregators pick up new content. */
 export function GET() {
-  const items = [...getAllArticles()]
+  const items = getAllArticles()
+    .filter(isIndexable)
     .sort((a, b) => b.updated.localeCompare(a.updated))
     .map(
       (a) => `    <item>

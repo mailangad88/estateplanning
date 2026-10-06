@@ -44,6 +44,25 @@ export interface Article extends Rendered {
   faqs: Faq[];
   related: string[];
   glossary: string[];
+  /** "approved" only after the attorney signs off. See isIndexable(). */
+  review: ReviewStatus;
+  /** Search intent from the landing page pipeline (content/templates). */
+  intent?: string;
+}
+
+export type ReviewStatus = "pending" | "approved";
+
+/**
+ * Publish gate. With REQUIRE_ATTORNEY_REVIEW=true (set it in production once the attorney starts
+ * approving pages), pages not marked `review: approved` are noindexed and left out of the sitemap,
+ * llms.txt, llms-full.txt and the RSS feed. Unset, every page is indexable (pre-launch previews).
+ */
+export function isIndexable(page: { review?: ReviewStatus }): boolean {
+  return process.env.REQUIRE_ATTORNEY_REVIEW !== "true" || page.review === "approved";
+}
+
+function asReview(v: unknown): ReviewStatus {
+  return v === "approved" ? "approved" : "pending";
 }
 
 export interface Cluster {
@@ -94,6 +113,7 @@ export interface StateGuide extends Rendered, StateInfo {
   facts: StateFacts;
   faqs: Faq[];
   related: string[];
+  review: ReviewStatus;
 }
 
 export interface City {
@@ -274,6 +294,8 @@ function loadArticle(cluster: string, slug: string | null): Article | null {
     faqs: asFaqs(data.faqs),
     related: asStrings(data.related),
     glossary: asStrings(data.glossary),
+    review: asReview(data.review),
+    intent: data.intent ? String(data.intent) : undefined,
     ...render(content, { autolink: true }),
   };
 }
@@ -391,6 +413,7 @@ export function getStateGuides(): StateGuide[] {
           facts: (data.facts ?? {}) as StateFacts,
           faqs: asFaqs(data.faqs),
           related: asStrings(data.related),
+          review: asReview(data.review),
           ...render(content, { autolink: true }),
         };
       })

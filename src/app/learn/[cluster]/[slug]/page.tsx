@@ -9,7 +9,7 @@ import JsonLd from "@/components/JsonLd";
 import LinkList from "@/components/LinkList";
 import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
-import { getAllArticles, getArticle, getCluster, getGlossaryEntry, getRelated } from "@/lib/library";
+import { getAllArticles, getArticle, getCluster, getGlossaryEntry, getRelated , isIndexable } from "@/lib/library";
 import ToolsBox from "@/components/ToolsBox";
 import { siteLinksFor, toolsFor } from "@/lib/site-links";
 import { articleSchema, breadcrumbSchema, faqSchema, graph } from "@/lib/schema";
@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     title: a.title,
     description: a.description,
     alternates: { canonical: a.url, types: { "text/markdown": `/raw${a.url}.md` } },
+    robots: isIndexable(a) ? undefined : { index: false, follow: true },
     openGraph: { type: "article", title: a.title, description: a.description, url: a.url, modifiedTime: a.updated },
   };
 }
@@ -56,7 +57,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
       <JsonLd data={graph(articleSchema(a), breadcrumbSchema(crumbs), faqSchema(a.faqs))} />
       <Breadcrumbs items={crumbs} />
       <h1>{a.title}</h1>
-      <PageMeta updated={a.updated} words={a.wordCount} />
+      <PageMeta updated={a.updated} words={a.wordCount} reviewed={a.review === "approved"} />
       <AnswerBox answer={a.answer} takeaways={a.takeaways} />
       <Toc headings={a.headings} />
       <div className="prose" dangerouslySetInnerHTML={{ __html: a.html }} />

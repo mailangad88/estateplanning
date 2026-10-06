@@ -31,6 +31,8 @@ faqs:
 related:
   - "wills/choosing-an-executor"   # 3-6 cluster/slug references (pillar is "cluster" alone, e.g. "probate")
 glossary: ["intestate", "heir"]     # 2-8 glossary slugs from content/glossary-terms.json used on this page
+review: pending                    # only the attorney changes this to approved
+intent: question                   # landing page pipeline intent (content/templates), optional
 ---
 ```
 
