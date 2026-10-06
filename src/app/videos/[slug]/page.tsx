@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getVideo, VideoExplainer, videos } from "@/components/visuals/video";
+import { explainerForVideo, getVideo, VideoExplainer, videos } from "@/components/visuals/video";
 
 export function generateStaticParams() {
   return videos.map((v) => ({ slug: v.slug }));
@@ -38,6 +38,12 @@ export default async function VideoPage({ params }: { params: Promise<{ slug: st
       <h1>{v.title}</h1>
       <p className="lead">{v.description}</p>
       <VideoExplainer slug={v.slug} pagePath={`/videos/${v.slug}`} transcript={false} />
+      {explainerForVideo(v.slug) ? (
+        <p>
+          Want to go at your own pace? Try the{" "}
+          <Link href={`/explainers/${explainerForVideo(v.slug)}`}>step-by-step interactive version</Link>.
+        </p>
+      ) : null}
       <h2>Transcript</h2>
       <p>{v.transcript}</p>
       {v.cta ? (
