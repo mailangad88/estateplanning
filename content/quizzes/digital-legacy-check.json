@@ -1,0 +1,232 @@
+{
+  "title": "Is Your Digital Life Ready for Your Family?",
+  "promise": "Ten questions about passwords, photos, crypto and online accounts. See how easily your family could reach what matters.",
+  "description": "Answer ten questions about password managers, legacy contacts, two-factor codes, photos and crypto to see if your digital life is ready for family.",
+  "kind": "assessment",
+  "category": "administration",
+  "magnet": "digital-asset-inventory-workbook",
+  "related": [
+    "guides/digital-assets-estate-planning",
+    "checklists/digital-assets-inventory",
+    "checklists/important-contacts-list",
+    "guides/how-to-make-a-will"
+  ],
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Do you use a password manager that your family could open in an emergency?",
+      "options": [
+        {
+          "label": "Yes, with emergency access set up for someone I trust",
+          "points": 2
+        },
+        {
+          "label": "I use one, but no one else can get in",
+          "points": 1
+        },
+        {
+          "label": "No, I keep passwords in my head or on paper",
+          "points": 0
+        }
+      ],
+      "explanation": "Many password managers offer an emergency access feature that lets a trusted person request entry after a waiting period. Without it, your family may be locked out of the one place that holds everything else. Check your manager's settings or help page to see what it offers."
+    },
+    {
+      "id": "q2",
+      "prompt": "Have you set a legacy contact or inactive account manager on your major accounts?",
+      "options": [
+        {
+          "label": "Yes, on the main ones",
+          "points": 2
+        },
+        {
+          "label": "On one or two",
+          "points": 1
+        },
+        {
+          "label": "No, or I do not know what that is",
+          "points": 0
+        }
+      ],
+      "explanation": "Several large tech companies let you name someone who can access some data or memorialize or close the account after you die. Each company sets its own rules and limits. The setting is usually found under privacy or security options."
+    },
+    {
+      "id": "q3",
+      "prompt": "If your phone or email stopped working, could you still get past two-factor sign-in?",
+      "options": [
+        {
+          "label": "Yes, I have backup codes saved somewhere safe",
+          "points": 2
+        },
+        {
+          "label": "I could probably sort it out",
+          "points": 1
+        },
+        {
+          "label": "No, I rely on my phone alone",
+          "points": 0
+        }
+      ],
+      "explanation": "Two-factor codes protect your accounts, and they can also block your family. Backup codes, a second device or a hardware key kept with your documents help. Store them where an executor could find them."
+    },
+    {
+      "id": "q4",
+      "prompt": "Are your photos and videos backed up somewhere other than one phone or computer?",
+      "options": [
+        {
+          "label": "Yes, in more than one place",
+          "points": 2
+        },
+        {
+          "label": "In one place only",
+          "points": 1
+        },
+        {
+          "label": "No, they are only on my device",
+          "points": 0
+        }
+      ],
+      "explanation": "Photos are often the items families value most, and a single device can fail or be locked. A cloud service plus a local drive covers more cases. Note which service holds them so your family knows where to look."
+    },
+    {
+      "id": "q5",
+      "prompt": "If you own cryptocurrency, have you left clear instructions for accessing it?",
+      "options": [
+        {
+          "label": "Yes, written down and stored securely",
+          "points": 2
+        },
+        {
+          "label": "I have a plan in my head only",
+          "points": 1
+        },
+        {
+          "label": "I own crypto but have no instructions",
+          "points": 0
+        },
+        {
+          "label": "I do not own any",
+          "points": 2
+        }
+      ],
+      "explanation": "Crypto held in a private wallet may be lost for good if no one has the keys or recovery phrase. Exchange accounts have their own rules for heirs. Keep instructions in a secure place and avoid putting a recovery phrase in a will, which can become public."
+    },
+    {
+      "id": "q6",
+      "prompt": "Have you named someone to handle your digital assets in your will or other documents?",
+      "options": [
+        {
+          "label": "Yes, a named person with a backup",
+          "points": 2
+        },
+        {
+          "label": "I have a will, but it does not mention digital items",
+          "points": 1
+        },
+        {
+          "label": "No will or no plan",
+          "points": 0
+        }
+      ],
+      "explanation": "Many states have laws that let an executor or agent access some digital records, and the rules for content such as email are narrower. A will or power of attorney can name who is authorized. An attorney can word it so it works under your state's law."
+    },
+    {
+      "id": "q7",
+      "prompt": "Do you keep a list of your online accounts and what each is for?",
+      "options": [
+        {
+          "label": "Yes, and it is kept up to date",
+          "points": 2
+        },
+        {
+          "label": "A partial list",
+          "points": 1
+        },
+        {
+          "label": "No list",
+          "points": 0
+        }
+      ],
+      "explanation": "A list of accounts helps an executor close, transfer or cancel them in the right order. It also prevents forgotten subscriptions and unclaimed balances. The list can name services without storing the passwords."
+    },
+    {
+      "id": "q8",
+      "prompt": "Do you have a list of subscriptions and automatic payments?",
+      "options": [
+        {
+          "label": "Yes, it is current",
+          "points": 2
+        },
+        {
+          "label": "Roughly, from memory",
+          "points": 1
+        },
+        {
+          "label": "No",
+          "points": 0
+        }
+      ],
+      "explanation": "Auto-renewing services keep charging until someone cancels them. A list, or a review of recent card and bank statements, shows what is active. An executor can then cancel what is not needed."
+    },
+    {
+      "id": "q9",
+      "prompt": "Do you own online accounts with money or business value, such as PayPal, domains or an online store?",
+      "options": [
+        {
+          "label": "Yes, and they are in my inventory with access steps",
+          "points": 2
+        },
+        {
+          "label": "Yes, but there is no plan",
+          "points": 0
+        },
+        {
+          "label": "No",
+          "points": 2
+        }
+      ],
+      "explanation": "Accounts with real value may need special steps to transfer or close, and some stop working after a death. Online stores and domain names can lose value if no one renews them. Including these in an inventory lets an executor act quickly."
+    },
+    {
+      "id": "q10",
+      "prompt": "Does your family know where your inventory and instructions are kept?",
+      "options": [
+        {
+          "label": "Yes, I have told them or left a letter",
+          "points": 2
+        },
+        {
+          "label": "Somewhat, but not in detail",
+          "points": 1
+        },
+        {
+          "label": "No",
+          "points": 0
+        }
+      ],
+      "explanation": "A plan helps only if someone can find it. Many people store it with their will, in a fireproof box or with a trusted person. A short letter of instruction can point to the right place without revealing every password."
+    }
+  ],
+  "bands": [
+    {
+      "min": 0,
+      "max": 6,
+      "label": "Getting started",
+      "summary": "Your family would likely face locked accounts and missing information today. A few small steps help a lot: set up emergency access, back up photos and write down where things are. The workbook below gives you a place to start."
+    },
+    {
+      "min": 7,
+      "max": 13,
+      "label": "Partly ready",
+      "summary": "You have some pieces in place, and a few gaps remain. Closing them usually takes an afternoon: legacy contacts, backup codes and a simple account list. The workbook below organizes it all."
+    },
+    {
+      "min": 14,
+      "max": 20,
+      "label": "Well organized",
+      "summary": "Your digital life looks well prepared for your family. Review it each year, since accounts and devices change often. A short check after any new device or account helps keep it current."
+    }
+  ]
+}

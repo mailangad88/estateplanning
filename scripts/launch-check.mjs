@@ -87,7 +87,10 @@ if (banned.length) {
   console.error(`Banned advertising claims (${banned.length}):\n  ${banned.join("\n  ")}`);
   failed = true;
 }
-const strict = process.env.VERCEL_ENV === "production" || process.env.LAUNCH_CHECK === "strict";
+// A staging project (SITE_ENV=staging) builds with placeholders so the drafts can be reviewed;
+// it is noindexed and carries a staging banner. Real production stays strict.
+const staging = process.env.SITE_ENV === "staging";
+const strict = (process.env.VERCEL_ENV === "production" && !staging) || process.env.LAUNCH_CHECK === "strict";
 if (placeholders.length) {
   const msg = `Unfilled placeholders (${placeholders.length}). Production deploys are blocked until these are filled.`;
   if (strict) {

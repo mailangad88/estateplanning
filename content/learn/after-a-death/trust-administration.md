@@ -92,7 +92,7 @@ For an example, Daniel is successor trustee for his mother's $900,000 trust, whi
 
 A trustee must follow the trust terms, act in the beneficiaries' interest, avoid conflicts of interest, keep clear records and treat beneficiaries impartially. Trustees can be personally liable for improper payments or losses. This is why you should keep trust money separate from your own and never borrow from the trust.
 
-If a beneficiary believes you are not performing your duties, they may ask a court to compel an accounting or to remove you. Our article on [removing an executor or trustee](/learn/after-a-death/can-an-executor-be-removed) explains this process. If you are considering whether to serve in the first place, read [how to choose a trustee](/learn/trusts/choosing-a-trustee).
+If a beneficiary believes you are not performing your duties, they may ask a court to compel an accounting or to remove you. Our article on [removing an executor or trustee](/learn/after-a-death/can-an-executor-be-removed) explains this process, and [what beneficiaries can do when a trustee does nothing](/learn/after-a-death/when-a-trustee-does-nothing) covers the steps before court. How trustees are paid for this work, and what beneficiaries can question, is explained in [can a trustee be paid?](/learn/after-a-death/trustee-compensation) If you are considering whether to serve in the first place, read [how to choose a trustee](/learn/trusts/choosing-a-trustee).
 
 ## When should a trustee call an attorney?
 

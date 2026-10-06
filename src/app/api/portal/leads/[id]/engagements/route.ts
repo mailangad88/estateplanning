@@ -6,7 +6,7 @@ export async function POST(request: Request, { params }: { params: Promise<{ id:
   const { id } = await params;
   return withActor(request, async ({ db, actor }) => {
     const input = await readJson<Omit<DraftInput, "leadId">>(request);
-    const e = draftEngagement(db, actor, { ...input, leadId: id });
+    const e = await draftEngagement(db, actor, { ...input, leadId: id });
     return { id: e.id, status: e.status, letter: e.letter };
   });
 }

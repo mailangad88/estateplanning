@@ -15,43 +15,43 @@ export interface OfferResult {
   nextStep?: "refer_to_bar_referral_service_and_long_term_nurture";
 }
 
-function loadInput(db: Db, lead: Lead, now: Date): RoutingInput {
-  const person = db.persons.get(lead.personId);
+async function loadInput(db: Db, lead: Lead, now: Date): Promise<RoutingInput> {
+  const person = await db.persons.get(lead.personId);
   if (!person) throw new Error(`person not found for lead ${lead.id}`);
   const household = person.householdId
-    ? db.persons.list((p) => p.householdId === person.householdId && p.id !== person.id).map((p) => p.id)
+    ? (await db.persons.list((p) => p.householdId === person.householdId && p.id !== person.id)).map((p) => p.id)
     : [];
   return {
     lead,
     person,
     householdPersonIds: household,
-    lawyers: db.lawyers.list(),
-    assignments: db.assignments.list(),
-    leads: db.leads.list(),
-    consults: db.consults.list(),
+    lawyers: await db.lawyers.list(),
+    assignments: await db.assignments.list(),
+    leads: await db.leads.list(),
+    consults: await db.consults.list(),
     now,
   };
 }
 
-export function offerNext(db: Db, leadId: string, now = new Date()): OfferResult {
-  const lead = db.leads.get(leadId);
+export async function offerNext(db: Db, leadId: string, now = new Date()): Promise<OfferResult> {
+  const lead = await db.leads.get(leadId);
   if (!lead) throw new Error(`lead not found: ${leadId}`);
   if (lead.exit) throw new Error("Lead has already exited the pipeline");
   if (lead.conflictCard.clearance === "conflict") throw new Error("Lead has a conflict and cannot be offered");
-  const history = db.assignments.list((a) => a.leadId === leadId);
+  const history = await db.assignments.list(undefined, { leadId });
   if (lead.assignedLawyerId || history.some((a) => a.status === "accepted")) throw new Error("Lead is already accepted");
   if (history.some((a) => a.status === "offered")) throw new Error("Lead already has an open offer");
 
-  const result = rankLawyers(loadInput(db, lead, now));
+  const result = rankLawyers(await loadInput(db, lead, now));
   const top = result.ranked[0];
   if (!top) {
     const hadOffer = history.length > 0;
-    db.leads.update(leadId, {
+    await db.leads.update(leadId, {
       exit: hadOffer
         ? { reason: "declined_by_all", at: now.toISOString() }
         : { reason: "not_a_fit", at: now.toISOString(), note: "No eligible attorney" },
     });
-    audit(db, "system", {
+    await audit(db, "system", {
       action: "routing.no_eligible",
       resourceType: "lead",
       resourceId: leadId,
@@ -62,8 +62,8 @@ export function offerNext(db: Db, leadId: string, now = new Date()): OfferResult
     return { offered: null, nextStep: "refer_to_bar_referral_service_and_long_term_nurture" };
   }
 
-  const lawyer = db.lawyers.get(top.lawyerId)!;
-  const assignment = db.assignments.insert({
+  const lawyer = (await db.lawyers.get(top.lawyerId))!;
+  const assignment = await db.assignments.insert({
     id: randomUUID(),
     leadId,
     lawyerId: lawyer.id,
@@ -73,11 +73,11 @@ export function offerNext(db: Db, leadId: string, now = new Date()): OfferResult
     status: "offered",
     routingReason: top.reason,
   });
-  db.leads.update(leadId, {
+  await db.leads.update(leadId, {
     stage: "offered",
     stageHistory: [...lead.stageHistory, { stage: "offered", at: now.toISOString(), by: "system" }],
   });
-  audit(db, "system", {
+  await audit(db, "system", {
     action: "routing.offer",
     resourceType: "assignment",
     resourceId: assignment.id,
@@ -88,8 +88,8 @@ export function offerNext(db: Db, leadId: string, now = new Date()): OfferResult
   return { offered: assignment };
 }
 
-function ownOffer(db: Db, actor: Actor, assignmentId: string): Assignment {
-  const a = db.assignments.get(assignmentId);
+async function ownOffer(db: Db, actor: Actor, assignmentId: string): Promise<Assignment> {
+  const a = await db.assignments.get(assignmentId);
   if (!a) throw new Error(`assignment not found: ${assignmentId}`);
   if (actor.role !== "attorney" || !actor.lawyerId || actor.lawyerId !== a.lawyerId) {
     throw new ForbiddenError("Only the offered attorney can respond to this offer");
@@ -97,20 +97,20 @@ function ownOffer(db: Db, actor: Actor, assignmentId: string): Assignment {
   return a;
 }
 
-export function acceptOffer(db: Db, actor: Actor, assignmentId: string, now = new Date()): Lead {
-  const a = ownOffer(db, actor, assignmentId);
+export async function acceptOffer(db: Db, actor: Actor, assignmentId: string, now = new Date()): Promise<Lead> {
+  const a = await ownOffer(db, actor, assignmentId);
   if (a.status !== "offered") throw new Error(`Offer is ${a.status}`);
   if (new Date(a.expiresAt) <= now) throw new Error("Offer has expired");
-  const lead = db.leads.get(a.leadId)!;
+  const lead = (await db.leads.get(a.leadId))!;
   if (lead.exit) throw new Error("Lead has already exited the pipeline");
-  db.assignments.update(a.id, { status: "accepted", respondedAt: now.toISOString(), slaMet: true });
-  const updated = db.leads.update(lead.id, {
+  await db.assignments.update(a.id, { status: "accepted", respondedAt: now.toISOString(), slaMet: true });
+  const updated = await db.leads.update(lead.id, {
     assignedLawyerId: a.lawyerId,
     firmId: a.firmId,
     stage: "accepted",
     stageHistory: [...lead.stageHistory, { stage: "accepted", at: now.toISOString(), by: actor.userId }],
   });
-  audit(db, actor, {
+  await audit(db, actor, {
     action: "routing.accept",
     resourceType: "assignment",
     resourceId: a.id,
@@ -121,35 +121,35 @@ export function acceptOffer(db: Db, actor: Actor, assignmentId: string, now = ne
   return updated;
 }
 
-export function declineOffer(
+export async function declineOffer(
   db: Db,
   actor: Actor,
   assignmentId: string,
   reason: DeclineReason,
   note?: string,
   now = new Date(),
-): OfferResult | { offered: null; conflict: true } {
+): Promise<OfferResult | { offered: null; conflict: true }> {
   if (!reason) throw new Error("A decline reason is required");
-  const a = ownOffer(db, actor, assignmentId);
+  const a = await ownOffer(db, actor, assignmentId);
   if (a.status !== "offered") throw new Error(`Offer is ${a.status}`);
-  db.assignments.update(a.id, { status: "declined", declineReason: reason, note, respondedAt: now.toISOString(), slaMet: true });
+  await db.assignments.update(a.id, { status: "declined", declineReason: reason, note, respondedAt: now.toISOString(), slaMet: true });
 
   if (reason === "conflict") {
     // In Model A a conflict for one lawyer is a conflict for the whole firm, so
     // nobody else gets the lead until an attorney reviews it.
-    const lead = db.leads.get(a.leadId)!;
-    db.leads.update(lead.id, { conflictCard: { ...lead.conflictCard, clearance: "conflict" } });
-    db.activities.insert({
+    const lead = (await db.leads.get(a.leadId))!;
+    await db.leads.update(lead.id, { conflictCard: { ...lead.conflictCard, clearance: "conflict" } });
+    await db.activities.insert({
       id: randomUUID(),
       leadId: lead.id,
       kind: "system",
       at: now.toISOString(),
       summary: "An attorney reported a conflict. Routing is paused until an attorney reviews it.",
     });
-    audit(db, actor, { action: "routing.conflict", resourceType: "assignment", resourceId: a.id, leadId: lead.id, at: now });
+    await audit(db, actor, { action: "routing.conflict", resourceType: "assignment", resourceId: a.id, leadId: lead.id, at: now });
     return { offered: null, conflict: true };
   }
-  audit(db, actor, {
+  await audit(db, actor, {
     action: "routing.decline",
     resourceType: "assignment",
     resourceId: a.id,
@@ -157,16 +157,16 @@ export function declineOffer(
     at: now,
     detail: { reason },
   });
-  return offerNext(db, a.leadId, now);
+  return await offerNext(db, a.leadId, now);
 }
 
 /** Cron entry point: expires overdue offers, logs the SLA miss and moves each lead on. */
-export function sweepExpiredOffers(db: Db, now = new Date()): { expired: number; reoffered: number; exhausted: number } {
-  const overdue = db.assignments.list((a) => a.status === "offered" && new Date(a.expiresAt) <= now);
+export async function sweepExpiredOffers(db: Db, now = new Date()): Promise<{ expired: number; reoffered: number; exhausted: number }> {
+  const overdue = await db.assignments.list((a) => a.status === "offered" && new Date(a.expiresAt) <= now);
   const leadIds = new Set<string>();
   for (const a of overdue) {
-    db.assignments.update(a.id, { status: "expired", slaMet: false });
-    audit(db, "system", {
+    await db.assignments.update(a.id, { status: "expired", slaMet: false });
+    await audit(db, "system", {
       action: "routing.timeout",
       resourceType: "assignment",
       resourceId: a.id,
@@ -180,7 +180,7 @@ export function sweepExpiredOffers(db: Db, now = new Date()): { expired: number;
   let exhausted = 0;
   for (const id of leadIds) {
     try {
-      if (offerNext(db, id, now).offered) reoffered++;
+      if ((await offerNext(db, id, now)).offered) reoffered++;
       else exhausted++;
     } catch {
       // Conflict or exit since the offer went out: nothing to route.
@@ -189,13 +189,13 @@ export function sweepExpiredOffers(db: Db, now = new Date()): { expired: number;
   return { expired: overdue.length, reoffered, exhausted };
 }
 
-export function recordClientChoice(db: Db, leadId: string, lawyerIds: string[], now = new Date()): Lead {
-  const lead = db.leads.get(leadId);
+export async function recordClientChoice(db: Db, leadId: string, lawyerIds: string[], now = new Date()): Promise<Lead> {
+  const lead = await db.leads.get(leadId);
   if (!lead) throw new Error(`lead not found: ${leadId}`);
   const unique = [...new Set(lawyerIds)];
   if (unique.length === 0 || unique.length > 3) throw new Error("Choose between 1 and 3 attorneys");
-  for (const id of unique) if (!db.lawyers.get(id)) throw new Error(`lawyer not found: ${id}`);
-  const updated = db.leads.update(leadId, { clientChoiceLawyerIds: unique });
-  audit(db, "system", { action: "routing.client_choice", resourceType: "lead", resourceId: leadId, leadId, at: now, detail: { lawyerIds: unique } });
+  for (const id of unique) if (!await db.lawyers.get(id)) throw new Error(`lawyer not found: ${id}`);
+  const updated = await db.leads.update(leadId, { clientChoiceLawyerIds: unique });
+  await audit(db, "system", { action: "routing.client_choice", resourceType: "lead", resourceId: leadId, leadId, at: now, detail: { lawyerIds: unique } });
   return updated;
 }

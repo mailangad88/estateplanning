@@ -22,28 +22,28 @@ function record(id: string, contact: Partial<LeadRecord["contact"]>, extra: Part
   } as LeadRecord;
 }
 
-describe("ingestLead", () => {
-  it("keeps capture details on the lead", () => {
+describe("ingestLead", async () => {
+  it("keeps capture details on the lead", async () => {
     const db = createMemoryDb();
-    const lead = ingestLead(db, record("l1", {}, { visitorId: "v1" }));
+    const lead = await ingestLead(db, record("l1", {}, { visitorId: "v1" }));
     expect(lead.capture).toEqual({ tool: "guide", resource: "new-parents-guide" });
     expect(lead.priorTools).toEqual(["cost_calculator"]);
     expect(lead.visitorId).toBe("v1");
   });
 
-  it("never merges two people just because neither gave a phone number", () => {
+  it("never merges two people just because neither gave a phone number", async () => {
     const db = createMemoryDb();
-    ingestLead(db, record("l1", { email: "a@example.com" }));
-    ingestLead(db, record("l2", { email: "b@example.com", firstName: "Bo" }));
-    expect(db.persons.list()).toHaveLength(2);
+    await ingestLead(db, record("l1", { email: "a@example.com" }));
+    await ingestLead(db, record("l2", { email: "b@example.com", firstName: "Bo" }));
+    expect(await db.persons.list()).toHaveLength(2);
   });
 
-  it("merges repeat submissions by email, phone or browser id", () => {
+  it("merges repeat submissions by email, phone or browser id", async () => {
     const db = createMemoryDb();
-    ingestLead(db, record("l1", { email: "a@example.com", phone: "5125550100" }, { visitorId: "v9" }));
-    ingestLead(db, record("l2", { email: "A@Example.com" }));
-    ingestLead(db, record("l3", { email: "other@example.com", phone: "15125550100" }));
-    ingestLead(db, record("l4", { email: "third@example.com" }, { visitorId: "v9" }));
-    expect(db.persons.list()).toHaveLength(1);
+    await ingestLead(db, record("l1", { email: "a@example.com", phone: "5125550100" }, { visitorId: "v9" }));
+    await ingestLead(db, record("l2", { email: "A@Example.com" }));
+    await ingestLead(db, record("l3", { email: "other@example.com", phone: "15125550100" }));
+    await ingestLead(db, record("l4", { email: "third@example.com" }, { visitorId: "v9" }));
+    expect(await db.persons.list()).toHaveLength(1);
   });
 });

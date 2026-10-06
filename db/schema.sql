@@ -117,6 +117,9 @@ CREATE TABLE leads (
   client_choice_lawyer_ids  text[],
   crm_id                    text,
   intake_owner_id           text REFERENCES users(id),
+  capture                   jsonb,                           -- {tool, resource?, result?}: which site tool captured the lead
+  prior_tools               text[],                          -- capture tools this visitor used before, oldest first
+  visitor_id                text,                            -- browser id used to merge repeat submissions
   CHECK (assigned_lawyer_id IS NULL OR firm_id IS NOT NULL)
 );
 CREATE INDEX leads_assigned_lawyer_idx ON leads (assigned_lawyer_id) WHERE assigned_lawyer_id IS NOT NULL;
@@ -294,6 +297,29 @@ CREATE TABLE suppressions (
   at      timestamptz NOT NULL
 );
 
+-- Attorney approval of a published state fact or dollar figure (src/lib/facts.ts). Append-only:
+-- a new approval is a new version, so the history of what was approved and by whom is kept.
+CREATE TABLE fact_verifications (
+  id             text PRIMARY KEY,             -- '<factId>@<version>'
+  fact_id        text NOT NULL,                -- registry id, e.g. 'state.CA.small_estate_threshold'
+  version        integer NOT NULL CHECK (version > 0),
+  approved_value text NOT NULL,                -- the exact value text the attorney approved
+  approved_by    text NOT NULL,
+  approved_at    timestamptz NOT NULL,
+  note           text NOT NULL,
+  UNIQUE (fact_id, version)
+);
+
+-- Second factor per user (src/server/pg/mfa.ts). Secret encrypted by the app (AES-256-GCM).
+CREATE TABLE user_mfa (
+  user_id              text PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
+  totp_secret_enc      text NOT NULL,
+  last_used_step       bigint NOT NULL DEFAULT 0,
+  recovery_code_hashes text[] NOT NULL DEFAULT '{}',
+  enrolled_at          timestamptz,
+  created_at           timestamptz NOT NULL DEFAULT now()
+);
+
 -- Automation runner cursor (src/server/automation.ts). Only app_service touches it; no client data.
 CREATE TABLE automation_state (
   id         text PRIMARY KEY CHECK (id = 'automation'),
@@ -301,6 +327,25 @@ CREATE TABLE automation_state (
   stages     jsonb NOT NULL DEFAULT '{}'::jsonb,
   exits      jsonb NOT NULL DEFAULT '{}'::jsonb
 );
+
+-- One row per website-to-middleware webhook delivery (src/lib/crm.ts, src/server/leadDelivery.ts).
+-- id is the idempotency key. Holds ids, status and a short error only: never the payload or any contact detail.
+-- lead_id has no FK: a delivery can outlive, or precede, the portal copy of the lead.
+CREATE TABLE crm_deliveries (
+  id              text PRIMARY KEY,
+  lead_id         text NOT NULL,
+  event           text NOT NULL,
+  status          text NOT NULL CHECK (status IN ('delivered','failed','abandoned')),
+  http_status     integer,
+  attempts        integer NOT NULL DEFAULT 0,
+  error           text,
+  created_at      timestamptz NOT NULL,
+  updated_at      timestamptz NOT NULL,
+  last_attempt_at timestamptz NOT NULL,
+  delivered_at    timestamptz
+);
+CREATE INDEX crm_deliveries_lead_idx ON crm_deliveries (lead_id);
+CREATE INDEX crm_deliveries_status_idx ON crm_deliveries (status, last_attempt_at);
 
 -- Hash-chained, append-only (see src/server/audit/log.ts).
 CREATE TABLE audit_events (
@@ -313,7 +358,7 @@ CREATE TABLE audit_events (
   resource_type text NOT NULL,
   resource_id   text NOT NULL,
   lead_id       text,                          -- deliberately no FK: the trail outlives the lead
-  detail        jsonb,
+  detail        json,                          -- json, not jsonb: the hash covers the exact key order
   prev_hash     text NOT NULL,
   hash          text NOT NULL
 );
@@ -401,6 +446,8 @@ CREATE TRIGGER audit_events_no_truncate BEFORE TRUNCATE ON audit_events
   FOR EACH STATEMENT EXECUTE FUNCTION forbid_mutation();
 CREATE TRIGGER fee_rule_versions_immutable BEFORE UPDATE OR DELETE ON fee_rule_versions
   FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
+CREATE TRIGGER fact_verifications_immutable BEFORE UPDATE OR DELETE ON fact_verifications
+  FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
 
 -- Only the assigned attorney approves an engagement (approve_engagement in policy.ts).
 -- Row policies cannot see which column changed, so a trigger guards it for app_user.
@@ -482,6 +529,8 @@ ALTER TABLE billable_events      ENABLE ROW LEVEL SECURITY;  ALTER TABLE billabl
 ALTER TABLE invoices             ENABLE ROW LEVEL SECURITY;  ALTER TABLE invoices             FORCE ROW LEVEL SECURITY;
 ALTER TABLE sequence_enrollments ENABLE ROW LEVEL SECURITY;  ALTER TABLE sequence_enrollments FORCE ROW LEVEL SECURITY;
 ALTER TABLE suppressions         ENABLE ROW LEVEL SECURITY;  ALTER TABLE suppressions         FORCE ROW LEVEL SECURITY;
+ALTER TABLE fact_verifications   ENABLE ROW LEVEL SECURITY;  ALTER TABLE fact_verifications   FORCE ROW LEVEL SECURITY;
+ALTER TABLE crm_deliveries       ENABLE ROW LEVEL SECURITY;  ALTER TABLE crm_deliveries       FORCE ROW LEVEL SECURITY;
 ALTER TABLE audit_events         ENABLE ROW LEVEL SECURITY;  ALTER TABLE audit_events         FORCE ROW LEVEL SECURITY;
 
 -- Workers (public intake form, e-sign webhooks, nurture engine, routing) are trusted
@@ -502,7 +551,9 @@ CREATE POLICY service_all ON tasks                FOR ALL TO app_service USING (
 CREATE POLICY service_all ON billable_events      FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON sequence_enrollments FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON suppressions         FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON crm_deliveries       FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_read ON fee_rule_versions   FOR SELECT TO app_service USING (true);
+CREATE POLICY service_read ON fact_verifications  FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON invoices            FOR SELECT TO app_service USING (true);
 CREATE POLICY service_write_invoices ON invoices  FOR INSERT TO app_service WITH CHECK (true);
 CREATE POLICY service_append ON audit_events      FOR INSERT TO app_service WITH CHECK (true);
@@ -628,6 +679,12 @@ CREATE POLICY enrollments_admin ON sequence_enrollments FOR ALL TO app_user
 CREATE POLICY suppressions_staff ON suppressions FOR ALL TO app_user
   USING (app_role() IN ('platform_admin','intake')) WITH CHECK (app_role() IN ('platform_admin','intake'));
 
+-- crm_deliveries (lead health page): read-only for admins; platform_admin sees all, firm_admin only their firm's leads.
+CREATE POLICY crm_deliveries_select ON crm_deliveries FOR SELECT TO app_user USING (
+  app_role() = 'platform_admin'
+  OR (app_role() = 'firm_admin' AND lead_access(lead_id) = 'full')
+);
+
 -- fees: platform_admin only; firm_admin reads their firm's non-draft invoices.
 CREATE POLICY fee_rules_admin ON fee_rule_versions FOR ALL TO app_user
   USING (app_role() = 'platform_admin') WITH CHECK (app_role() = 'platform_admin');
@@ -637,6 +694,12 @@ CREATE POLICY invoices_admin ON invoices FOR ALL TO app_user
   USING (app_role() = 'platform_admin') WITH CHECK (app_role() = 'platform_admin');
 CREATE POLICY invoices_firm_select ON invoices FOR SELECT TO app_user
   USING (app_role() = 'firm_admin' AND firm_id = app_firm_id() AND status <> 'draft');
+
+-- fact verifications (verify_facts): attorneys and platform admins read and approve, as themselves.
+CREATE POLICY fact_verifications_select ON fact_verifications FOR SELECT TO app_user
+  USING (app_role() IN ('platform_admin','attorney'));
+CREATE POLICY fact_verifications_insert ON fact_verifications FOR INSERT TO app_user
+  WITH CHECK (app_role() IN ('platform_admin','attorney') AND approved_by = app_user_id());
 
 -- audit: insert-only for everyone; read by platform_admin, and firm_admin for their leads.
 CREATE POLICY audit_insert ON audit_events FOR INSERT TO app_user WITH CHECK (true);
@@ -654,25 +717,35 @@ REVOKE ALL ON lead_offer_cards, client_consults, lead_funnel_daily FROM PUBLIC;
 GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, tasks, suppressions TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON leads, assignments, consults, engagements TO app_user;
 GRANT SELECT, INSERT                 ON documents, comments, activities, invoices, billable_events, fee_rule_versions TO app_user;
+GRANT SELECT, INSERT                 ON fact_verifications TO app_user;
 GRANT UPDATE                         ON invoices TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON sequence_enrollments TO app_user;
-GRANT SELECT                         ON lead_offer_cards, client_consults, lead_funnel_daily TO app_user;
+GRANT SELECT                         ON lead_offer_cards, client_consults, lead_funnel_daily, crm_deliveries TO app_user;
 
 -- Audit trail: INSERT only. No SELECT/UPDATE/DELETE/TRUNCATE grant to the app at all
 -- except SELECT for the platform_admin/firm_admin policy above.
 GRANT SELECT, INSERT ON audit_events TO app_user;
 REVOKE UPDATE, DELETE, TRUNCATE ON audit_events FROM PUBLIC, app_user, app_service;
 REVOKE UPDATE, DELETE, TRUNCATE ON fee_rule_versions FROM PUBLIC, app_user, app_service;
+REVOKE UPDATE, DELETE, TRUNCATE ON fact_verifications FROM PUBLIC, app_user, app_service;
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, leads, assignments, documents, comments,
   activities, consults, engagements, tasks, billable_events, sequence_enrollments, suppressions TO app_service;
+GRANT SELECT, INSERT, UPDATE ON crm_deliveries TO app_service;
 GRANT SELECT, INSERT ON invoices TO app_service;
 GRANT SELECT ON fee_rule_versions TO app_service;
+GRANT SELECT ON fact_verifications TO app_service; -- approvals are written in the approver's own session
 GRANT INSERT ON audit_events TO app_service;
 
 -- The automation runner reads the audit log as its event feed (ids and actions only).
 GRANT SELECT ON audit_events TO app_service;
 CREATE POLICY audit_events_service_read ON audit_events FOR SELECT TO app_service USING (true);
 GRANT SELECT, INSERT, UPDATE ON automation_state TO app_service;
+
+-- Only the service role reads or writes second-factor secrets; app_user has no grant at all.
+ALTER TABLE user_mfa ENABLE ROW LEVEL SECURITY;
+ALTER TABLE user_mfa FORCE ROW LEVEL SECURITY;
+CREATE POLICY user_mfa_service ON user_mfa FOR ALL TO app_service USING (true) WITH CHECK (true);
+GRANT SELECT, INSERT, UPDATE ON user_mfa TO app_service;
 
 COMMIT;

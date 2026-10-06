@@ -2,8 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ForbiddenError, writableVisibilities } from "@/server/auth/policy";
 import { buildCaseView, type CommentNode } from "@/server/portal/caseView";
-import { currentActor, getDb } from "@/server/runtime";
-import { ApproveEngagement, CommentForm, OfferActions } from "@/app/portal/actions";
+import { currentActor, getDb, scopedDb } from "@/server/runtime";
+import { ApproveEngagement, CommentForm, InviteClient, OfferActions } from "@/app/portal/actions";
 
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Case", robots: { index: false, follow: false } };
@@ -32,7 +32,7 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
   if (!actor) return <p>Please <Link href="/portal">sign in</Link>.</p>;
   let view;
   try {
-    view = buildCaseView(getDb(), actor, id);
+    view = await buildCaseView(scopedDb(await getDb(), actor), actor, id);
   } catch (err) {
     if (err instanceof ForbiddenError) return <p>You do not have access to this case.</p>;
     notFound();
@@ -44,10 +44,18 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
       <p><Link href="/portal">← Back to the portal</Link></p>
       {/* 1. Header */}
       <h1>{h.urgent && "⚠ "}{h.name}</h1>
-      <p className="lead">{h.matterType} · {h.location} · Score {h.score} ({h.tier}) · {label(h.stage)}{h.assignedLawyer ? ` · ${h.assignedLawyer}` : ""}</p>
+      <p className="lead">{h.matterType} · {h.location} · Score {h.score} (grade {h.grade ?? h.tier}) · {label(h.stage)}{h.assignedLawyer ? ` · ${h.assignedLawyer}` : ""}</p>
       <p><strong>Next step:</strong> {h.nextStep}{h.offerExpiresAt ? ` (respond by ${when(h.offerExpiresAt)})` : ""}</p>
 
+      {h.scoreComponents && h.scoreComponents.length > 0 && (
+        <details>
+          <summary>Why this score</summary>
+          <ul>{h.scoreComponents.map((c, i) => <li key={i}>{c.points > 0 ? "+" : ""}{c.points} {c.label}</li>)}</ul>
+        </details>
+      )}
+
       {view.access === "conflict_card" && h.offerAssignmentId && <OfferActions assignmentId={h.offerAssignmentId} />}
+      {view.access === "full" && h.assignedLawyer && actor.role !== "marketing" && <InviteClient leadId={id} />}
 
       {/* 2. Summary */}
       {s.summary && (

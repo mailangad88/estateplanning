@@ -28,5 +28,5 @@ Use empty strings for values that do not apply. Missing or empty settings mean "
 - RLS is the second layer behind `src/server/auth/policy.ts`. The SQL mirrors `leadAccess`, `canOnLead` and the comment visibility rules; change both together.
 - Offer-stage lawyers read `lead_offer_cards` only. They have no path to `leads.intake`.
 - Clients read consults through `client_consults` (no notes). Marketing reads `lead_funnel_daily` (counts, no PII).
-- `audit_events` and `fee_rule_versions` are append-only (no grants plus triggers). Chain the next audit hash from `SELECT * FROM audit_last()`.
+- `audit_events`, `fee_rule_versions` and `fact_verifications` are append-only (no grants plus triggers). Chain the next audit hash from `SELECT * FROM audit_last()`.
 - Workers (public intake, e-sign webhooks, nurture, routing accept) connect as `app_service`, which has its own policies and is never used for user-driven requests.

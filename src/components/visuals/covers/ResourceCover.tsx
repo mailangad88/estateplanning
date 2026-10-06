@@ -2,9 +2,10 @@ import type { ReactNode } from "react";
 import { firm } from "@/config/firm";
 import { Figure } from "../Figure";
 import { Icon } from "../icons/Icon";
-import { Blob, Doc, Person, Pill, Text } from "../primitives";
+import { Blob, Pill, Text } from "../primitives";
 import { c, lineProps, type ColorName } from "../tokens";
-import { Plant, Sprout, fillOf } from "../illustrations/kit";
+import { fillOf } from "../illustrations/kit";
+import { CalmMotifs, SideMotifs, type CoverFormat } from "./motifs";
 
 export type CoverPalette = "accent" | "sage" | "clay" | "gold";
 
@@ -18,6 +19,8 @@ export type ResourceCoverProps = {
   palette: CoverPalette;
   /** Quieter composition for sensitive topics: fewer shapes, softer colour. */
   calm?: boolean;
+  /** Composition variant: decides the motif beside the icon. */
+  format?: CoverFormat;
   bare?: boolean;
   caption?: ReactNode;
 };
@@ -45,25 +48,41 @@ export function wrapText(text: string, maxChars: number): string[] {
   return out;
 }
 
+/** Word wrap that avoids a one-word widow on the last line when a narrower wrap keeps the same line count. */
+export function balancedWrap(text: string, maxChars: number): string[] {
+  const base = wrapText(text, maxChars);
+  const last = base[base.length - 1] ?? "";
+  if (base.length < 2 || last.length >= 7) return base;
+  for (let m = maxChars - 1; m >= Math.ceil(maxChars * 0.7); m--) {
+    const alt = wrapText(text, m);
+    if (alt.length === base.length && (alt[alt.length - 1]?.length ?? 0) >= 7) return alt;
+  }
+  return base;
+}
+
 /**
  * Book or report style cover, portrait 600 x 800. Used for lead magnet
  * landing pages, emails and PDF cover pages.
  */
-export function ResourceCover({ title, subtitle, kicker, icon, palette, calm, bare, caption }: ResourceCoverProps) {
+export function ResourceCover({ title, subtitle, kicker, icon, palette, calm, format = "default", bare, caption }: ResourceCoverProps) {
   const p = palettes[palette];
   // Pick the largest title size that fits in four lines.
   let size = 52;
-  let lines = wrapText(title, Math.floor(488 / (size * 0.53)));
+  let lines = balancedWrap(title, Math.floor(488 / (size * 0.53)));
   while (lines.length > 4 && size > 36) {
     size -= 3;
-    lines = wrapText(title, Math.floor(488 / (size * 0.53)));
+    lines = balancedWrap(title, Math.floor(488 / (size * 0.53)));
   }
   const lh = size * 1.14;
   const titleTop = kicker ? 150 : 110;
   const titleBottom = titleTop + size + (lines.length - 1) * lh;
-  const subLines = subtitle ? wrapText(subtitle, 34).slice(0, 3) : [];
+  // Subtitle lines must end above the art panel (y 430).
+  const maxSub = Math.max(0, Math.min(3, Math.floor((404 - (titleBottom + 44)) / 29) + 1));
+  const subWrapped = subtitle ? wrapText(subtitle, 34) : [];
+  // Never cut a subtitle mid-phrase: if it does not fit above the panel, leave it out.
+  const subLines = subWrapped.length <= Math.min(3, maxSub) ? subWrapped : [];
   const cx = 300;
-  const cy = 570;
+  const cy = format === "email-course" ? 540 : 570;
   return (
     <Figure
       width={600}
@@ -93,8 +112,7 @@ export function ResourceCover({ title, subtitle, kicker, icon, palette, calm, ba
           <circle cx={cx} cy={cy} r={86} style={fillOf("surface")} opacity={0.65} />
           <circle cx={cx} cy={cy} r={62} style={fillOf("surface")} />
           <Icon name={icon} size={64} x={cx - 32} y={cy - 32} color={p.deep} tint={p.tint} strokeWidth={1.8} />
-          <Sprout x={120} y={706} s={1.1} />
-          <Sprout x={486} y={706} s={0.9} />
+          <CalmMotifs format={format} t={p} />
         </g>
       ) : (
         <g>
@@ -102,14 +120,7 @@ export function ResourceCover({ title, subtitle, kicker, icon, palette, calm, ba
           <circle cx={cx} cy={cy} r={72} style={fillOf("surface")} />
           <circle cx={cx} cy={cy} r={72} style={{ fill: "none", stroke: c[p.main] }} strokeWidth={2} />
           <Icon name={icon} size={78} x={cx - 39} y={cy - 39} color={p.deep} tint={p.tint} />
-          <g transform="rotate(-9 130 540)">
-            <Doc x={92} y={490} w={68} h={90} ink={p.main} />
-          </g>
-          <Person x={462} y={711} size={120} color={p.second} />
-          <Person x={510} y={711} size={86} color={p.main} child />
-          <circle cx={112} cy={470} r={8} style={fillOf(p.main)} />
-          <circle cx={490} cy={480} r={6} style={fillOf(p.second)} />
-          <Plant x={150} y={711} s={0.9} />
+          <SideMotifs format={format} t={p} />
         </g>
       )}
       <line x1={64} x2={536} y1={738} y2={738} style={{ stroke: c.line }} strokeWidth={2} {...lineProps} />
