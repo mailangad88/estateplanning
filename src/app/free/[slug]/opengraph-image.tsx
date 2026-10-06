@@ -8,5 +8,5 @@ export { generateStaticParams } from "./page";
 
 export default async function Image({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  return pageOgImage(`/resources/${slug}`);
+  return pageOgImage(`/free/${slug}`);
 }

@@ -1,6 +1,6 @@
 import { renderOgImage, type OgVariant } from "@/lib/og";
 import { allPages } from "@/lib/pages";
-import { findGuide } from "@/content/guides";
+import { getMagnet } from "@/lib/magnets";
 import { getVideo } from "@/components/visuals/video/videos";
 
 /** Pages not listed in allPages() (not indexed, or owned outside the content system). */
@@ -33,10 +33,10 @@ export function pageOgInfo(path: string): { title: string; kicker: string } {
   const page = allPages().find((p) => p.path === path);
   if (page) return { title: page.title, kicker: page.section === "Main" ? "Estate planning" : page.section };
   if (EXTRA[path]) return { title: EXTRA[path].title, kicker: EXTRA[path].section };
-  const res = /^\/resources\/([^/]+)/.exec(path);
+  const res = /^\/free\/([^/]+)/.exec(path);
   if (res) {
-    const g = findGuide(res[1]);
-    if (g) return { title: g.title, kicker: "Free guide" };
+    const g = getMagnet(res[1]);
+    if (g) return { title: g.title, kicker: "Free resource" };
   }
   const vid = /^\/videos\/([^/]+)/.exec(path);
   if (vid) {
