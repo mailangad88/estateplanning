@@ -93,6 +93,8 @@ export function canOnLead(actor: Actor, action: LeadAction, lead: Lead, assignme
       // Only the assigned attorney approves the engagement and its fee. Never a paralegal, never automatic.
       return actor.role === "attorney" && access === "full";
     case "view_engagement":
+      // Also covers the engagement's payments and plan (payments_select in db/schema.sql). Refunds and
+      // pricing use approve_engagement: only the assigned attorney moves client money or sets a fee.
       return access === "full" || access === "client";
     case "manage_tasks":
       return access === "full" || access === "intake";

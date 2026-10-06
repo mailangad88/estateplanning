@@ -98,6 +98,25 @@ export function ApproveEngagement({ engagementId, status }: { engagementId: stri
   );
 }
 
+/** Attorney-only: refunds all or part of a paid payment. The amount is in dollars here and sent as cents. */
+export function RefundPayment({ paymentId, maxCents }: { paymentId: string; maxCents: number }) {
+  const { busy, error, run } = useAction();
+  const [open, setOpen] = useState(false);
+  const [dollars, setDollars] = useState((maxCents / 100).toFixed(2));
+  const [reason, setReason] = useState("");
+  if (maxCents <= 0) return null;
+  if (!open) return <button className="button secondary" onClick={() => setOpen(true)}>Refund</button>;
+  const cents = Math.round(Number(dollars) * 100);
+  return (
+    <span>
+      <label>Amount <input inputMode="decimal" value={dollars} onChange={(e) => setDollars(e.target.value)} /></label>{" "}
+      <label>Reason <input value={reason} onChange={(e) => setReason(e.target.value)} /></label>{" "}
+      <button className="button" disabled={busy || !reason.trim() || !(cents > 0 && cents <= maxCents)} onClick={() => run(() => post(`/api/portal/payments/${paymentId}/refund`, { amountCents: cents, reason }))}>Confirm refund</button>
+      {error && <span className="error"> {error}</span>}
+    </span>
+  );
+}
+
 /** Creates a single-use invite to the client portal. The link is shown for the team to send; nothing is emailed from here. */
 export function InviteClient({ leadId }: { leadId: string }) {
   const [busy, setBusy] = useState(false);

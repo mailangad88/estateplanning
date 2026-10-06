@@ -115,7 +115,16 @@ export const TABLES = {
       n("feeCents", "fee_cents"), t("customScope", "custom_scope", true), t("status", "status"), t("provider", "provider"),
       t("providerEnvelopeId", "provider_envelope_id", true), t("letter", "letter", true), t("approvedBy", "approved_by", true),
       ts("approvedAt", "approved_at", true), j("history", "history"), a("remindersSent", "reminders_sent"),
-      a("documentIds", "document_ids"),
+      a("documentIds", "document_ids"), j("packageSelection", "package_selection", true), j("paymentPlan", "payment_plan", true),
+    ],
+  },
+  payments: {
+    table: "payments",
+    columns: [
+      t("id", "id"), t("engagementId", "engagement_id"), t("leadId", "lead_id"), t("firmId", "firm_id"),
+      n("installmentNo", "installment_no", true), n("amountCents", "amount_cents"), t("account", "account"),
+      t("status", "status"), t("provider", "provider"), t("providerPaymentId", "provider_payment_id"),
+      t("linkUrl", "link_url", true), ts("createdAt", "created_at"), ts("paidAt", "paid_at", true), j("refunds", "refunds"),
     ],
   },
   tasks: {

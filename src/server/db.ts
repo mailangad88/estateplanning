@@ -16,6 +16,7 @@ import type {
   Firm,
   Lawyer,
   Lead,
+  PaymentRecord,
   Person,
   Task,
   User,
@@ -116,6 +117,7 @@ export interface Db {
   activities: Collection<Activity>;
   consults: Collection<Consult>;
   engagements: Collection<Engagement>;
+  payments: Collection<PaymentRecord>;
   tasks: Collection<Task>;
   feeRuleVersions: Collection<FeeRuleVersion>;
   billableEvents: Collection<BillableEvent>;
@@ -149,6 +151,7 @@ export function createMemoryDb(): Db {
     activities: new MemoryCollection(),
     consults: new MemoryCollection(),
     engagements: new MemoryCollection(),
+    payments: new MemoryCollection(),
     tasks: new MemoryCollection(),
     feeRuleVersions: new MemoryCollection(),
     billableEvents: new MemoryCollection(),

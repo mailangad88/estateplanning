@@ -278,6 +278,7 @@ export function createPgDb(opts: { pool?: Pool; session?: PgSession } = {}): PgD
     activities: col(TABLES.activities),
     consults: col(TABLES.consults),
     engagements: col(TABLES.engagements),
+    payments: col(TABLES.payments),
     tasks: col(TABLES.tasks),
     feeRuleVersions: col(TABLES.feeRuleVersions),
     billableEvents: col(TABLES.billableEvents),

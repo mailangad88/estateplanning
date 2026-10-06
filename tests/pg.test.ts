@@ -10,7 +10,7 @@ import { audit, verifyAuditChain } from "@/server/audit/log";
 import { PgMfaStore } from "@/server/pg/mfa";
 import { buildCaseView } from "@/server/portal/caseView";
 import type {
-  Activity, Assignment, Comment, Consult, CrmDelivery, DocumentRecord, Engagement, Firm, Lawyer, Lead, Person, Task, User,
+  Activity, Assignment, Comment, Consult, CrmDelivery, DocumentRecord, Engagement, Firm, Lawyer, Lead, PaymentRecord, Person, Task, User,
 } from "@/server/types";
 import type { FeeRuleVersion, Invoice } from "@/server/fees/admin";
 import type { BillableEvent } from "@/lib/fees";
@@ -142,7 +142,20 @@ const fixtures = {
     id: "e1", leadId: "l1", firmId: "f1", lawyerId: "lw1", packageId: "pk", feeCents: 250000, customScope: "cs", status: "approved",
     provider: "docusign", providerEnvelopeId: "env", letter: "L", approvedBy: "u1", approvedAt: T0,
     history: [{ status: "draft", at: T0 }], remindersSent: ["r1"], documentIds: ["d1"],
+    packageSelection: { tierId: "complete", tierName: "Complete", tierPriceCents: 200000, addOns: [{ id: "pet_trust", name: "Pet trust", priceCents: 50000 }], totalCents: 250000 },
+    paymentPlan: {
+      mode: "plan", totalCents: 250000, account: "trust", activatedAt: T0,
+      installments: [
+        { n: 1, kind: "deposit", amountCents: 100000, dueOn: "2026-10-06", status: "paid", paymentId: "pay1", paidAt: T0 },
+        { n: 2, kind: "installment", amountCents: 150000, dueOn: "2026-11-06", status: "late" },
+      ],
+    },
   } satisfies Required<Engagement>,
+  payments: {
+    id: "pay1", engagementId: "e1", leadId: "l1", firmId: "f1", installmentNo: 1, amountCents: 100000, account: "trust", status: "paid",
+    provider: "lawpay", providerPaymentId: "lp_1", linkUrl: "https://pay.example/lp_1", createdAt: T0, paidAt: T0,
+    refunds: [{ id: "rf1", amountCents: 500, at: T0, reason: "adjustment" }],
+  } satisfies Required<PaymentRecord>,
   tasks: { id: "t1", leadId: "l1", title: "call", ownerId: "u1", dueAt: T0, doneAt: T0 } satisfies Required<Task>,
   feeRuleVersions: {
     id: "r1@1", ruleId: "r1", version: 1,
@@ -466,6 +479,21 @@ suite("postgres integration", () => {
     await expect(as({ userId: "u-admin", role: "platform_admin" }).crmDeliveries.insert({ ...fixtures.crmDeliveries, id: "x" })).rejects.toThrow();
     const updated = await service.crmDeliveries.update("l1", { status: "delivered", error: undefined, httpStatus: 200 });
     expect(updated.error).toBeUndefined();
+  });
+
+  maybe("payments: the case's attorney and the client read them, intake and other firms do not, app_user cannot write", async () => {
+    const ids = async (s: PgSession) => (await as(s).payments.list()).map((p) => p.id);
+    expect(await ids({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" })).toEqual(["pay1"]);
+    expect(await ids({ userId: "u-client", role: "client", personId: lead.personId })).toEqual(["pay1"]);
+    expect(await ids({ userId: "u-intake", role: "intake" })).toEqual([]);
+    expect(await ids({ userId: "u-other", role: "attorney", firmId: "f2", lawyerId: "lw2" })).toEqual([]);
+    expect(await ids({ userId: "u-m", role: "marketing" })).toEqual([]);
+    const att = as({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" });
+    await expect(att.payments.insert({ ...fixtures.payments, id: "x", providerPaymentId: "lp_x" })).rejects.toThrow();
+    await expect(att.payments.update("pay1", { status: "failed" })).rejects.toThrow();
+    // a paralegal cannot change the package prices or the plan on an engagement (attorney-set), same as the fee
+    const para = as({ userId: "u-para", role: "paralegal", firmId: "f1", supportsLawyerIds: ["lw1"] });
+    await expect(para.engagements.update("e1", { paymentPlan: undefined })).rejects.toThrow();
   });
 
   maybe("audit_events cannot be updated or deleted", async () => {
