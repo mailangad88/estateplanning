@@ -47,7 +47,7 @@ export function PartnerCreate({ firmId }: { firmId?: string }) {
         e.preventDefault();
         const f = new FormData(e.currentTarget);
         const get = (k: string) => String(f.get(k) ?? "").trim();
-        run(
+        void run(
           () => send("/api/portal/partners", "POST", { slug: get("slug"), name: get("name"), org: get("org"), type: get("type"), firmId, status: "prospect" }),
           () => (e.target as HTMLFormElement).reset(),
         );
@@ -110,7 +110,7 @@ export function GiftForm({ partnerId, today }: { partnerId: string; today: strin
         e.preventDefault();
         const f = new FormData(e.currentTarget);
         const get = (k: string) => String(f.get(k) ?? "").trim();
-        run(
+        void run(
           () =>
             send(`/api/portal/partners/${partnerId}/gifts`, "POST", {
               date: get("date"),
@@ -178,7 +178,7 @@ export function ReferralControls(props: { id: string; releaseStatus: string; dis
           disabled={busy || props.valueLinked === "yes"}
           onClick={() => {
             const note = window.prompt("Describe what is linked to this referral. The attorney will review it.");
-            if (note?.trim()) post({ valueLinked: true, valueNote: note });
+            if (note?.trim()) void post({ valueLinked: true, valueNote: note });
           }}
         >
           Yes

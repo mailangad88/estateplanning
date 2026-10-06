@@ -11,10 +11,10 @@ import { assertCan, can, ForbiddenError } from "@/server/auth/policy";
 import { MIN_CELL, percentile } from "@/server/analytics";
 import type { Db } from "@/server/db";
 import type { Actor, CrmDelivery } from "@/server/types";
+import { isHumanOutreach } from "@/server/services/contact";
 
 const HOUR = 3_600_000;
 const MIN = 60_000;
-const OUTBOUND = ["call", "sms", "email"];
 
 export interface DeliveryWindow {
   label: "24h" | "7d";
@@ -118,7 +118,7 @@ export async function leadHealthReport(db: Db, actor: Actor, opts: LeadHealthOpt
     return t >= since && t <= now;
   });
   const leadIds = new Set(leads.map((l) => l.id));
-  const activities = await db.activities.list((a) => leadIds.has(a.leadId) && a.direction === "outbound" && OUTBOUND.includes(a.kind));
+  const activities = await db.activities.list((a) => leadIds.has(a.leadId) && isHumanOutreach(a));
   const firstOut = new Map<string, number>();
   for (const a of activities) {
     const t = new Date(a.at).getTime();
