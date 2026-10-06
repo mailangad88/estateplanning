@@ -46,6 +46,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               formed until an engagement agreement is signed.
             </p>
             <p>
+              <Link href="/wills">Wills</Link> · <Link href="/living-trusts">Living trusts</Link> · <Link href="/power-of-attorney">Power of attorney</Link> ·{" "}
+              <Link href="/healthcare-directives">Healthcare directives</Link> · <Link href="/probate">Probate</Link> ·{" "}
+              <Link href="/trust-administration">Trust administration</Link> · <Link href="/estate-planning-for-parents">Planning for parents</Link> ·{" "}
+              <Link href="/how-it-works">How it works</Link> · <Link href="/about-the-attorney">About the attorney</Link> · <Link href="/pricing">Pricing</Link>
+            </p>
+            <p>
               <Link href="/resources">Resources</Link> · <Link href="/learn">Estate planning library</Link> · <Link href="/estate-planning-for">By situation</Link> ·{" "}
               <Link href="/estate-planning">Laws by state</Link> · <Link href="/glossary">Glossary</Link> · <Link href="/faq">FAQ</Link> ·{" "}
               <Link href="/explainers">Explainers</Link> · <Link href="/course">Free course</Link> · <Link href="/about">About</Link> ·{" "}

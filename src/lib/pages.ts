@@ -1,3 +1,4 @@
+import { MONEY_PAGES } from "@/content/money-pages";
 import { TOOLS } from "@/config/tools";
 import { EXPLAINERS } from "@/explainers/data";
 import { getAudiences, getChecklists, getComparisons, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
@@ -38,6 +39,7 @@ export function allPages(): SitePage[] {
     { path: "/faq", title: "FAQ", description: "Frequently asked questions.", updated: TODAY, section: "Main" },
     { path: "/mistakes", title: "Mistakes to avoid", description: "Common estate planning mistakes.", updated: TODAY, section: "Main" },
   ];
+  for (const m of Object.values(MONEY_PAGES)) pages.push({ path: m.path, title: m.h1, description: m.description, updated: TODAY, section: "Services" });
   for (const g of getGuides()) pages.push({ path: `/guides/${g.slug}`, title: g.title, description: g.description, updated: g.updated, section: "Guides" });
   for (const p of getPosts()) pages.push({ path: `/blog/${p.slug}`, title: p.title, description: p.description, updated: p.updated, section: "Questions answered" });
   for (const c of getComparisons()) pages.push({ path: `/compare/${c.slug}`, title: c.title, description: c.description, updated: c.updated, section: "Comparisons" });
