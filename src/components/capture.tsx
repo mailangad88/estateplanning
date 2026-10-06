@@ -59,6 +59,7 @@ export function EmailCapture({
   success = "Done. Check your inbox in a few minutes.",
   askPhone = false,
   details,
+  sensitive = false,
 }: {
   kind: Kind;
   interest: string;
@@ -68,6 +69,8 @@ export function EmailCapture({
   success?: string;
   askPhone?: boolean;
   details?: Record<string, string | number | boolean>;
+  /** Health, disability or family-structure pages: send no analytics event about this signup. */
+  sensitive?: boolean;
 }) {
   const [profile, setProfile] = useState<Profile>({});
   const [done, setDone] = useState(false);
@@ -94,7 +97,7 @@ export function EmailCapture({
         website: String(f.get("website") ?? "") || undefined,
       });
       saveProfile({ firstName, email });
-      track("lead_capture", { kind, interest });
+      if (!sensitive) track("lead_capture", { kind, interest });
       setDone(true);
     } catch (err) {
       setError((err as Error).message);
@@ -219,6 +222,7 @@ export function ExitIntent() {
     if (shown || window.matchMedia("(max-width: 800px)").matches) return;
     const armAt = Date.now() + 15000;
     const onLeave = (e: MouseEvent) => {
+      if (document.documentElement.dataset.sensitive === "1") return;
       if (e.clientY > 0 || Date.now() < armAt || window.location.pathname.startsWith("/plan-finder")) return;
       setOpen(true);
       track("exit_intent_shown");
@@ -242,4 +246,15 @@ export function ExitIntent() {
       </div>
     </div>
   );
+}
+
+/** Marks the page as sensitive for the visit: the exit-intent offer stays off. Renders nothing. */
+export function SensitiveMarker() {
+  useEffect(() => {
+    document.documentElement.dataset.sensitive = "1";
+    return () => {
+      delete document.documentElement.dataset.sensitive;
+    };
+  }, []);
+  return null;
 }

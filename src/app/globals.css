@@ -271,3 +271,8 @@ table.facts th { width: 34%; background: var(--surface); }
 .hub-grid ul { padding-left: 18px; font-size: 0.92rem; margin-bottom: 0; }
 .state-grid { list-style: none; padding: 0; display: grid; gap: 6px 16px; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
 .back-to-pillar { font-size: 0.9rem; color: var(--muted); }
+/* Money pages */
+.todo { background: #fff3c4; color: #4a3b00; border-radius: 3px; padding: 0 3px; }
+@media (prefers-color-scheme: dark) { .todo { background: #4a3b00; color: #ffe9a3; } }
+.callout { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; margin: 16px 0; }
+.cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0; }
