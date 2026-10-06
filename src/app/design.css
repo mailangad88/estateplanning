@@ -468,3 +468,26 @@ footer.site .footer-cta .button:hover { text-decoration: none; }
 .band--sky { --band-bg: var(--sky-tint); }
 .stage-hero--accent .cycle-node__text { background: transparent; }
 .cycle-more { text-align: center; margin-top: 28px; }
+
+/* Picture-first cards (components/visual-card.tsx): every card leads with a cover, poster, illustration or big icon. */
+.vcards { list-style: none; padding: 0; margin: 24px 0; display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.vcards > li { display: flex; }
+.vcard { --tint: var(--brand-tint); --ink: var(--brand); display: flex; flex-direction: column; width: 100%; border-radius: var(--radius-lg); overflow: hidden; background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow-sm); color: var(--text); text-decoration: none; transition: transform 0.18s ease, box-shadow 0.18s ease; }
+.vcard:hover, .vcard:focus-visible { transform: translateY(-3px); box-shadow: var(--shadow); text-decoration: none; }
+.vcard--clay { --tint: var(--clay-tint); --ink: var(--clay-text); }
+.vcard--sage { --tint: var(--sage-tint); --ink: var(--sage-deep); }
+.vcard--gold { --tint: var(--gold-tint); --ink: var(--gold-text); }
+.vcard__media { position: relative; display: grid; place-items: center; aspect-ratio: 16 / 10; background: var(--tint); color: var(--ink); overflow: hidden; }
+.vcard__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.vcard--cover .vcard__media { padding: 18px 0 0; }
+.vcard--cover .vcard__media img { width: auto; height: 100%; object-fit: contain; border-radius: 6px 6px 0 0; box-shadow: 0 10px 28px rgb(14 57 64 / 0.2); }
+.vcard--icon .vcard__media { aspect-ratio: 16 / 7; }
+.vcard--icon .vcard__media svg { width: 56px; height: 56px; padding: 14px; box-sizing: content-box; border-radius: 22px; background: var(--surface); box-shadow: var(--shadow-sm); }
+.vcard__play { position: absolute; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: rgb(255 255 255 / 0.92); color: var(--cta); box-shadow: var(--shadow); }
+.vcard__body { display: flex; flex-direction: column; gap: 6px; padding: 16px 18px 18px; flex: 1; }
+.vcard__body strong { font-family: var(--font-display); font-size: 1.12rem; line-height: 1.25; font-weight: 600; }
+.vcard__body .card-desc { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.vcard__go { margin-top: auto; padding-top: 6px; display: inline-flex; align-items: center; gap: 6px; color: var(--brand); font-weight: 600; font-size: 0.9rem; }
+.vcard:hover .vcard__go svg { transform: translateX(3px); }
+.vcard__go svg { transition: transform 0.18s ease; }
+@media (prefers-reduced-motion: reduce) { .vcard, .vcard__go svg { transition: none; } .vcard:hover { transform: none; } }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { firm } from "@/config/firm";
 import type { Faq, Heading } from "@/lib/content";
+import { VisualCardGrid, type CardItem, type CardMedia } from "@/components/visual-card";
 
 export function ReviewNote({ reviewed, updated }: { reviewed: boolean; updated: string }) {
   return (
@@ -63,20 +64,8 @@ export function FaqList({ faqs, title = "Common questions" }: { faqs: Faq[]; tit
   );
 }
 
-export function CardGrid({ items }: { items: { href: string; title: string; description?: string; tag?: string }[] }) {
-  return (
-    <ul className="cards">
-      {items.map((i) => (
-        <li key={i.href}>
-          <Link href={i.href} className="card-link">
-            {i.tag && <span className="tag">{i.tag}</span>}
-            <strong>{i.title}</strong>
-            {i.description && <span className="card-desc">{i.description}</span>}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  );
+export function CardGrid({ items, media }: { items: CardItem[]; media?: CardMedia }) {
+  return <VisualCardGrid items={items} media={media} />;
 }
 
 export function Cta({ title = "Talk it through with an attorney", body }: { title?: string; body?: string }) {
