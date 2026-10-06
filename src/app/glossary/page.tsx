@@ -3,6 +3,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBox from "@/components/CtaBox";
 import JsonLd from "@/components/JsonLd";
+import { PageHero } from "@/components/page-hero";
 import { getGlossary as getShortDefinitions } from "@/lib/content";
 import { getGlossary } from "@/lib/library";
 import { absoluteUrl } from "@/config/site";
@@ -62,12 +63,14 @@ export default function GlossaryIndex() {
   return (
     <div className="content">
       <JsonLd data={graph(breadcrumbSchema(crumbs), setSchema)} />
-      <Breadcrumbs items={crumbs} />
-      <h1>Estate planning glossary</h1>
-      <p className="lead">
-        {entries.length} terms and acronyms in plain English. Terms in the library have their own page with an example and
-        the guides that explain them in depth.
-      </p>
+      <PageHero
+        crumbs={<Breadcrumbs items={crumbs} />}
+        kicker="Glossary"
+        path="/glossary"
+        art="SpotQuestions"
+        title="Estate planning glossary"
+        lead={`${entries.length} terms and acronyms in plain English. Terms in the library have their own page with an example and the guides that explain them in depth.`}
+      />
       <nav aria-label="Jump to letter" className="az">
         {letters.map((l) => (
           <a key={l} href={`#letter-${l}`}>{l}</a>

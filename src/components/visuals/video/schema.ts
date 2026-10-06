@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/seo";
 import type { VideoEntry } from "./types";
 
 /**
@@ -33,5 +34,6 @@ export function videoObjectJsonLd(v: VideoEntry, siteUrl: string, pageUrl?: stri
 
 /** Site origin for absolute URLs in structured data. Set NEXT_PUBLIC_SITE_URL in production. */
 export function siteUrl(): string {
-  return process.env.NEXT_PUBLIC_SITE_URL ?? "https://familyplanlaw.com";
+  // Same origin as canonicals and the sitemap (placeholder until the domain is set), never a guessed domain.
+  return SITE_URL;
 }

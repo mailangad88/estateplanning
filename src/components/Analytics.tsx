@@ -57,6 +57,8 @@ export default function Analytics() {
     };
   }, [path]);
 
+  // Consent Mode v2 defaults (all ad and analytics storage denied) are set in src/app/layout.tsx before this
+  // loads, so GTM tags wait for the visitor's choice made in CookieConsent.
   if (!GTM_ID) return null;
   return (
     <Script id="gtm" strategy="afterInteractive">

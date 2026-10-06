@@ -5,6 +5,7 @@ import { TOOLS } from "@/config/tools";
 import { EXPLAINERS } from "@/explainers/data";
 import { getAudiences, getChecklists, getComparisons, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
 import { getStates } from "@/lib/states";
+import { videos } from "@/components/visuals/video/videos";
 import { getAllArticles, getCluster, getGlossary as getTermPages, getStateGuides, isIndexable } from "@/lib/library";
 
 export interface SitePage {
@@ -69,6 +70,17 @@ export function allPages(): SitePage[] {
   for (const g of getTermPages()) {
     pages.push({ path: g.url, title: `${g.term}: definition`, description: g.short, updated: TODAY, section: "Glossary terms" });
   }
+  // Trust pages (E-E-A-T): how content is written and reviewed, and the firm's legal notices.
+  pages.push(
+    { path: "/editorial-policy", title: "Editorial and review policy", description: "How our guides are written, fact-checked and reviewed by an attorney, and how we correct mistakes.", updated: TODAY, section: "About" },
+    { path: "/legal/how-we-work", title: "How we work", description: "Who the firm represents, when an attorney-client relationship begins, and how intake works.", updated: TODAY, section: "About" },
+    { path: "/legal/attorney-advertising", title: "Attorney advertising notice", description: "Attorney advertising disclosures for this website.", updated: TODAY, section: "About" },
+    { path: "/legal/disclaimer", title: "Disclaimer", description: "This website is general information, not legal advice.", updated: TODAY, section: "About" },
+    { path: "/legal/privacy", title: "Privacy policy", description: "What we collect, why, and the choices you have.", updated: TODAY, section: "About" },
+  );
+  pages.push({ path: "/videos", title: "Estate planning videos", description: "Short explainer videos on wills, trusts, probate and powers of attorney, each with a transcript.", updated: TODAY, section: "Videos" });
+  for (const v of videos) pages.push({ path: `/videos/${v.slug}`, title: v.title, description: v.description, updated: (v.uploadDate || TODAY).slice(0, 10), section: "Videos" });
+
   const seen = new Set<string>();
   return pages.filter((p) => (seen.has(p.path) ? false : (seen.add(p.path), true)));
 }

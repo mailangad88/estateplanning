@@ -14,7 +14,7 @@ export default function Resources() {
   const groups = getHubs();
   return (
     <>
-      <PageHeader title="Free resources" lead="Everything we publish, free, with no sign-up required to read it. Only the printable workbooks ask for an email." />
+      <PageHeader kicker="Free resources" art="SpotSafeStorage" title="Free resources" lead="Everything we publish, free, with no sign-up required to read it. Only the printable workbooks ask for an email." />
       <ul className="cards">
         {groups.map((g) => (
           <li key={g.href}>

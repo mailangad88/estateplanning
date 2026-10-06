@@ -3,6 +3,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBox from "@/components/CtaBox";
 import JsonLd from "@/components/JsonLd";
+import { PageHero } from "@/components/page-hero";
 import { getClusterArticles, getClusters, getPillar } from "@/lib/library";
 import { breadcrumbSchema, graph, itemListSchema } from "@/lib/schema";
 
@@ -27,13 +28,20 @@ export default function LearnHub() {
           itemListSchema("Estate planning guides", clusters.map((c) => ({ name: c.pillarTitle, url: c.url }))),
         )}
       />
-      <Breadcrumbs items={crumbs} />
-      <h1>Estate planning guides</h1>
-      <p className="lead">
-        Clear answers to the questions families ask us most, organized by topic. Start with a guide below, or look up
-        a term in the <Link href="/glossary">estate planning glossary</Link> or your{" "}
-        <Link href="/estate-planning">state&apos;s rules</Link>.
-      </p>
+      <PageHero
+        crumbs={<Breadcrumbs items={crumbs} />}
+        kicker="Guides"
+        path="/learn"
+        art="HeroWills"
+        title="Estate planning guides"
+        lead={
+          <>
+            Clear answers to the questions families ask us most, organized by topic. Start with a guide below, or look
+            up a term in the <Link href="/glossary">estate planning glossary</Link> or your{" "}
+            <Link href="/estate-planning">state&apos;s rules</Link>.
+          </>
+        }
+      />
       <div className="hub-grid">
         {clusters.map((c) => {
           const pillar = getPillar(c.slug)!;

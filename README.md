@@ -117,6 +117,14 @@ The CRM automation must send the promised email with the `/free/<slug>/view` lin
 a free score and band, and an email-gated answer review that also sends a matching free resource
 (`/api/subscribe`, `kind: "report"`, `interest: "quiz:<slug>"`).
 
+## Consult booking (Cal.com)
+
+The owner needs their own Cal.com account (none is created for you). Set `NEXT_PUBLIC_CALCOM_LINK` to
+`username/event-slug` and the consult scheduler shows the Cal.com inline embed and tracks a `consult_booked`
+event. Without it, `schedulerUrl` in `src/config/firm.ts` still works as a plain iframe. To move leads to the
+`consult_booked` stage, create a webhook in Cal.com (booking created, rescheduled, cancelled) that points at
+`/api/webhooks/calcom`, and put its secret in `CALCOM_WEBHOOK_SECRET`. Leads match by `metadata[leadRef]`, else attendee email.
+
 ## A/B tests and analytics
 
 `src/lib/experiments.ts` assigns each visitor a stable variant per experiment (anonymous id, no personal data),

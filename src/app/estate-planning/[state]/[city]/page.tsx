@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBox from "@/components/CtaBox";
 import JsonLd from "@/components/JsonLd";
+import { PageHero } from "@/components/page-hero";
 import PageMeta from "@/components/PageMeta";
 import { servedStates } from "@/config/firm";
 import { getCities, getClusters, getPillar, getStateGuide } from "@/lib/library";
@@ -61,12 +62,17 @@ export default async function CityPage({ params }: { params: Promise<Params> }) 
   return (
     <article className="content">
       <JsonLd data={graph(cityServiceSchema(c), breadcrumbSchema(crumbs))} />
-      <Breadcrumbs items={crumbs} />
-      <h1>Estate planning in {c.name}, {c.state.name}</h1>
-      <PageMeta updated={c.updated} />
-      <p className="lead">
-        Wills, trusts, powers of attorney and probate for families in {c.name} and across {c.county}.
-      </p>
+      <PageHero
+        compact
+        crumbs={<Breadcrumbs items={crumbs} />}
+        kicker={`${c.state.name} local guide`}
+        path={c.url}
+        art="HeroFamilyHome"
+        title={`Estate planning in ${c.name}, ${c.state.name}`}
+        lead={`Wills, trusts, powers of attorney and probate for families in ${c.name} and across ${c.county}.`}
+      >
+        <PageMeta updated={c.updated} />
+      </PageHero>
       <h2>What {c.name} families should know</h2>
       {c.localNotes.map((n) => (
         <p key={n}>{n}</p>

@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBox from "@/components/CtaBox";
 import Faqs from "@/components/Faqs";
 import JsonLd from "@/components/JsonLd";
+import { PageHero } from "@/components/page-hero";
 import LinkList from "@/components/LinkList";
 import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
@@ -18,6 +19,14 @@ import { CallbackForm } from "@/components/capture";
 import { JsonLd as SeoJsonLd, breadcrumbLd, legalServiceLd } from "@/lib/seo";
 
 type Params = { state: string };
+
+/** Tools that read a state, linked with ?state= so the state question is already answered. */
+const STATE_TOOLS = [
+  { slug: "probate-cost-estimator", title: "Probate cost estimator", description: "What probate could cost here, using this state's rules where they are set by statute." },
+  { slug: "state-death-tax-checker", title: "Estate and inheritance tax checker", description: "Whether this state taxes an estate or the heirs, and from what amount." },
+  { slug: "small-estate-checker", title: "Small estate checker", description: "Whether a family can use a simpler process instead of full probate." },
+  { slug: "medicaid-savings-runway", title: "How long will savings last in a nursing home?", description: "Care costs against savings, with this state's Medicaid rules." },
+];
 
 export const dynamicParams = false;
 
@@ -92,9 +101,16 @@ export default async function StatePage({ params }: { params: Promise<Params> })
   return (
     <article className="content">
       <JsonLd data={graph(stateGuideSchema(s), breadcrumbSchema(crumbs), faqSchema(s.faqs))} />
-      <Breadcrumbs items={crumbs} />
-      <h1>{s.title}</h1>
-      <PageMeta updated={s.updated} words={s.wordCount} reviewed={s.review === "approved"} />
+      <PageHero
+        compact
+        crumbs={<Breadcrumbs items={crumbs} />}
+        kicker={`${s.name} state guide`}
+        path={s.url}
+        art="HeroFamilyHome"
+        title={s.title}
+      >
+        <PageMeta updated={s.updated} words={s.wordCount} reviewed={s.review === "approved"} />
+      </PageHero>
       <AnswerBox answer={s.answer} />
       <section aria-labelledby="facts">
         <h2 id="facts">{s.name} estate planning at a glance</h2>
@@ -114,6 +130,11 @@ export default async function StatePage({ params }: { params: Promise<Params> })
           Laws change. Confirm current rules with an attorney licensed in {s.name} before relying on this summary.
         </p>
       </section>
+      <LinkList
+        id="state-tools"
+        title={`Run the numbers for ${s.name}`}
+        items={STATE_TOOLS.map((t) => ({ url: `/tools/${t.slug}?state=${s.abbr}`, title: t.title, description: t.description }))}
+      />
       <Toc headings={s.headings} />
       <div className="prose" dangerouslySetInnerHTML={{ __html: s.html }} />
       {local && local.counties.length > 0 && (
@@ -161,9 +182,16 @@ export default async function StatePage({ params }: { params: Promise<Params> })
 function LocalStatePage({ s }: { s: StatePage }) {
   return (
     <article>
-      <UiBreadcrumbs items={[{ href: "/", label: "Home" }, { label: `Estate planning in ${s.name}` }]} />
-      <h1>{s.title}</h1>
-      <ReviewNote reviewed={s.reviewed} updated={s.updated} />
+      <PageHero
+        compact
+        crumbs={<UiBreadcrumbs items={[{ href: "/", label: "Home" }, { label: `Estate planning in ${s.name}` }]} />}
+        kicker={`${s.name} state guide`}
+        path={`/estate-planning/${s.slug}`}
+        art="HeroFamilyHome"
+        title={s.title}
+      >
+        <ReviewNote reviewed={s.reviewed} updated={s.updated} />
+      </PageHero>
       <div className="answer"><strong>Short answer</strong>{s.answer}</div>
       <h2>{s.name} at a glance</h2>
       <div className="table-wrap">

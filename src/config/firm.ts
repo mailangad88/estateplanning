@@ -38,6 +38,13 @@ export const firm = {
    * message and loads nothing from a third party.
    */
   schedulerUrl: null as string | null,
+  /**
+   * Cal.com booking link as "username/event-slug". When valid it replaces the iframe with the hosted
+   * Cal.com inline embed, which reports bookings back to the site. Null or malformed falls back to schedulerUrl.
+   */
+  calcomLink: (/^[a-z0-9_-]+\/[a-z0-9_-]+$/i.test(process.env.NEXT_PUBLIC_CALCOM_LINK ?? "")
+    ? process.env.NEXT_PUBLIC_CALCOM_LINK!
+    : null) as string | null,
   /** Number visitors can text. Must be registered for business texting (10DLC) before launch. Null hides the Text button. */
   textNumber: "(000) 000-0000" as string | null, // PLACEHOLDER
   /**

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function ChecklistsIndex() {
   return (
     <>
-      <PageHeader title="Checklists and worksheets" lead="Tick items off on screen or print them. Your progress stays on this device; nothing is sent to us unless you ask." />
+      <PageHeader kicker="Checklists" art="SpotChecklist" title="Checklists and worksheets" lead="Tick items off on screen or print them. Your progress stays on this device; nothing is sent to us unless you ask." />
       <CardGrid items={getChecklists().map((c) => ({ href: `/checklists/${c.slug}`, title: c.title, description: c.description, tag: "Printable" }))} />
       <EmailCapture kind="magnet" interest="starter-kit" title="Get all of them in one email" body="Every checklist on this page as a printable bundle." cta="Email me the bundle" />
     </>

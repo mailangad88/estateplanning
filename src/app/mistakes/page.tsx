@@ -13,7 +13,7 @@ export default function MistakesPage() {
   const cats = [...new Set(mistakes.map((m) => m.category))];
   return (
     <>
-      <PageHeader title={`${mistakes.length} estate planning mistakes to avoid`} lead="Each one is common, and each one has a simple fix if it is caught early." />
+      <PageHeader kicker="Mistakes to avoid" art="HeroProbate" title={`${mistakes.length} estate planning mistakes to avoid`} lead="Each one is common, and each one has a simple fix if it is caught early." />
       {cats.map((c) => (
         <section key={c}>
           <h2>{c}</h2>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <>
-      <PageHeader title={`About ${firm.brandName}`} lead={`${firm.brandName} is the client education and intake team of ${firm.firmLegalName}.`} />
+      <PageHeader kicker="About us" art="SpotVideoCall" title={`About ${firm.brandName}`} lead={`${firm.brandName} is the client education and intake team of ${firm.firmLegalName}.`} />
       <h2>{firm.attorneyName}</h2>
       <p>[Attorney bio, written from the brain-file interviews: why estate planning, who they help most, how they explain things, licensure, bar number {firm.barNumber}, education, community involvement. Include a short video introduction.]</p>
       <ul>

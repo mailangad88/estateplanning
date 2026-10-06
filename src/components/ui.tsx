@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { firm } from "@/config/firm";
 import type { Faq, Heading } from "@/lib/content";
+import { decorateSections } from "@/lib/prose-sections";
+import { PageHero } from "@/components/page-hero";
+import { VisualCardGrid, type CardItem, type CardMedia } from "@/components/visual-card";
 
 export function ReviewNote({ reviewed, updated }: { reviewed: boolean; updated: string }) {
   return (
@@ -39,7 +42,7 @@ export function Toc({ headings }: { headings: Heading[] }) {
 }
 
 export function Prose({ html }: { html: string }) {
-  return <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />;
+  return <div className="prose" dangerouslySetInnerHTML={{ __html: decorateSections(html) }} />;
 }
 
 export function FaqList({ faqs, title = "Common questions" }: { faqs: Faq[]; title?: string }) {
@@ -63,20 +66,8 @@ export function FaqList({ faqs, title = "Common questions" }: { faqs: Faq[]; tit
   );
 }
 
-export function CardGrid({ items }: { items: { href: string; title: string; description?: string; tag?: string }[] }) {
-  return (
-    <ul className="cards">
-      {items.map((i) => (
-        <li key={i.href}>
-          <Link href={i.href} className="card-link">
-            {i.tag && <span className="tag">{i.tag}</span>}
-            <strong>{i.title}</strong>
-            {i.description && <span className="card-desc">{i.description}</span>}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  );
+export function CardGrid({ items, media }: { items: CardItem[]; media?: CardMedia }) {
+  return <VisualCardGrid items={items} media={media} />;
 }
 
 export function Cta({ title = "Talk it through with an attorney", body }: { title?: string; body?: string }) {
@@ -89,12 +80,10 @@ export function Cta({ title = "Talk it through with an attorney", body }: { titl
   );
 }
 
-export function PageHeader({ title, lead, children }: { title: string; lead?: string; children?: React.ReactNode }) {
+export function PageHeader({ title, lead, children, kicker, art, path }: { title: string; lead?: string; children?: React.ReactNode; kicker?: string; art?: string; path?: string }) {
   return (
-    <header className="page-header">
+    <PageHero title={title} lead={lead} kicker={kicker} art={art} path={path}>
       {children}
-      <h1>{title}</h1>
-      {lead && <p className="lead">{lead}</p>}
-    </header>
+    </PageHero>
   );
 }

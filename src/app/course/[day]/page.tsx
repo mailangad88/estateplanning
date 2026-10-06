@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getLessons } from "@/lib/content";
 import { Breadcrumbs, Prose, ReviewNote } from "@/components/ui";
+import { PageHero } from "@/components/page-hero";
 import { EmailCapture } from "@/components/capture";
 
 type Props = { params: Promise<{ day: string }> };
@@ -26,9 +27,15 @@ export default async function LessonPage({ params }: Props) {
   const next = lessons.find((x) => x.day === l.day + 1);
   return (
     <article>
-      <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/course", label: "7-day course" }, { label: `Day ${l.day}` }]} />
-      <h1>{l.title}</h1>
-      <ReviewNote reviewed={l.reviewed} updated={l.updated} />
+      <PageHero
+        compact
+        crumbs={<Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/course", label: "7-day course" }, { label: `Day ${l.day}` }]} />}
+        kicker={`7-day course · Day ${l.day}`}
+        path={`/course/${l.day}`}
+        title={l.title}
+      >
+        <ReviewNote reviewed={l.reviewed} updated={l.updated} />
+      </PageHero>
       {l.task && <div className="answer"><strong>Today&apos;s task</strong>{l.task}</div>}
       <Prose html={l.html} />
       {next ? (

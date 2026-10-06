@@ -1,6 +1,7 @@
 import { TOOLS } from "@/config/tools";
 import { getChecklists, getComparisons, getGuides, getLifeEvents, getPosts } from "@/lib/content";
 import { getClusterArticles, getPillar } from "@/lib/library";
+import { magnetsFor, type Magnet } from "@/lib/magnets";
 
 /**
  * Cross-links between the topic-cluster library (/learn) and the site's other collections
@@ -32,18 +33,18 @@ const TOOLS_BY_CLUSTER: Record<string, string[]> = {
   basics: ["/tools/plan-readiness-assessment", "/checklists/documents-to-gather-before-your-consult", "/checklists/asset-and-account-inventory", "/checklists/letter-of-instruction-outline"],
   wills: ["/tools/will-or-trust", "/checklists/choosing-an-executor-worksheet", "/tools/plan-readiness-assessment"],
   trusts: ["/tools/will-or-trust", "/checklists/trust-funding-checklist", "/tools/probate-cost-estimator"],
-  probate: ["/tools/probate-cost-estimator", "/tools/executor-workload", "/checklists/first-30-days-after-a-death"],
-  "after-a-death": ["/checklists/first-30-days-after-a-death", "/tools/executor-workload", "/tools/probate-cost-estimator"],
+  probate: ["/tools/small-estate-checker", "/tools/probate-cost-estimator", "/tools/executor-workload", "/checklists/first-30-days-after-a-death"],
+  "after-a-death": ["/checklists/first-30-days-after-a-death", "/tools/small-estate-checker", "/tools/executor-workload", "/tools/probate-cost-estimator"],
   "power-of-attorney": ["/tools/plan-readiness-assessment", "/checklists/important-contacts-list"],
   "healthcare-directives": ["/checklists/funeral-and-burial-wishes", "/tools/plan-readiness-assessment"],
-  guardianship: ["/checklists/choosing-a-guardian-worksheet", "/tools/guardian-fund-calculator", "/tools/life-insurance-needs"],
+  guardianship: ["/tools/guardian-picker", "/checklists/choosing-a-guardian-worksheet", "/tools/guardian-fund-calculator", "/tools/life-insurance-needs"],
   "life-stages": ["/tools/plan-review-reminder", "/tools/plan-readiness-assessment", "/checklists/annual-estate-plan-review"],
-  "blended-families": ["/checklists/beneficiary-designation-audit", "/tools/plan-review-reminder"],
-  "beneficiary-designations": ["/checklists/beneficiary-designation-audit", "/checklists/asset-and-account-inventory"],
-  "estate-tax": ["/tools/estate-tax-estimator", "/checklists/asset-and-account-inventory"],
+  "blended-families": ["/tools/beneficiary-audit", "/checklists/beneficiary-designation-audit", "/tools/plan-review-reminder"],
+  "beneficiary-designations": ["/tools/beneficiary-audit", "/checklists/beneficiary-designation-audit", "/checklists/asset-and-account-inventory"],
+  "estate-tax": ["/tools/state-death-tax-checker", "/tools/estate-tax-estimator", "/checklists/asset-and-account-inventory"],
   "business-owners": ["/tools/life-insurance-needs", "/checklists/important-contacts-list", "/tools/plan-readiness-assessment"],
   "special-needs": ["/tools/guardian-fund-calculator", "/checklists/letter-of-instruction-outline"],
-  "elder-care": ["/tools/medicaid-lookback-date", "/checklists/documents-to-gather-before-your-consult"],
+  "elder-care": ["/tools/medicaid-savings-runway", "/tools/medicaid-lookback-date", "/checklists/documents-to-gather-before-your-consult"],
   "digital-assets": ["/checklists/digital-assets-inventory", "/checklists/important-contacts-list"],
   "property-and-assets": ["/checklists/trust-funding-checklist", "/tools/will-or-trust", "/tools/probate-cost-estimator"],
 };
@@ -95,4 +96,33 @@ export function libraryLinksFor(path: string, limit = 4): { href: string; title:
   }
   const seen = new Set<string>();
   return out.filter((l) => (seen.has(l.href) ? false : (seen.add(l.href), true))).slice(0, limit);
+}
+
+/**
+ * Library clusters and articles about grief, health or disability. They get the same treatment as the
+ * site's sensitive audience pages (backlog B10): no ad pixels and no email opt-in form, only plain links.
+ */
+const SENSITIVE_CLUSTERS = new Set(["after-a-death", "special-needs", "elder-care"]);
+const SENSITIVE_SLUG = /diagnosis|dementia|lgbtq|same-sex|terminal|grief/;
+
+export function isSensitiveLibraryPage(cluster: string, slug = ""): boolean {
+  return SENSITIVE_CLUSTERS.has(cluster) || SENSITIVE_SLUG.test(slug);
+}
+
+/**
+ * Free resources (/free/<slug>) for a library page: ones that list the page itself in `related`, then
+ * ones attached to the matching guides, life events and comparisons for its cluster.
+ */
+export function magnetsForLibrary(url: string, cluster: string, limit = 3): Magnet[] {
+  const out: Magnet[] = [];
+  const seen = new Set<string>();
+  for (const path of [url, ...(BY_CLUSTER[cluster] ?? [])]) {
+    for (const m of magnetsFor(path)) {
+      if (seen.has(m.slug)) continue;
+      seen.add(m.slug);
+      out.push(m);
+    }
+    if (out.length >= limit) break;
+  }
+  return out.slice(0, limit);
 }

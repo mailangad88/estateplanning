@@ -79,7 +79,7 @@ Strengths: flexible, avoids probate for everything it owns, handles incapacity b
 
 You can avoid probate on an asset by giving it away before death, for example by gifting cash to children or deeding property to them. Gifts are not part of your estate once complete.
 
-Strengths: reduces the probate estate and, for some families, future estate taxes. Risks: you lose control and access; gifts of appreciated property carry over your original tax basis instead of getting a step-up at death; gifts above the annual exclusion ($19,000 per recipient in 2026) require a gift tax return, though most people owe no tax thanks to the lifetime exemption; and gifts made for Medicaid planning trigger a look-back period (see [the Medicaid look-back](/learn/elder-care/medicaid-look-back-period)). Gifting is a significant decision and not a casual shortcut.
+Strengths: reduces the probate estate and, for some families, future estate taxes. Risks: you lose control and access. Gifts of appreciated property carry over your original tax basis instead of getting a step-up at death. Gifts above the annual exclusion ($19,000 per recipient in 2026) require a gift tax return, though most people owe no tax thanks to the lifetime exemption. Gifts made within the Medicaid look-back period can delay eligibility (see [the Medicaid look-back](/learn/elder-care/medicaid-look-back-period)). Gifting is a significant decision and not a casual shortcut.
 
 ## Tool 7: Small estate procedures and other statutory shortcuts
 
