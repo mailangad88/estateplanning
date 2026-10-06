@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
+import type { VisualSpec } from "@/config/visual-kit";
 
 /**
  * Loads the Markdown content in /content: topic-cluster pillars and articles, glossary entries,
@@ -48,6 +49,8 @@ export interface Article extends Rendered {
   review: ReviewStatus;
   /** Search intent from the landing page pipeline (content/templates). */
   intent?: string;
+  /** Visuals placed by the writer, see config/visual-kit.ts. */
+  visuals?: (VisualSpec & { section?: string })[];
 }
 
 export type ReviewStatus = "pending" | "approved";
@@ -296,6 +299,7 @@ function loadArticle(cluster: string, slug: string | null): Article | null {
     glossary: asStrings(data.glossary),
     review: asReview(data.review),
     intent: data.intent ? String(data.intent) : undefined,
+    visuals: Array.isArray(data.visuals) ? (data.visuals as (VisualSpec & { section?: string })[]) : undefined,
     ...render(content, { autolink: true }),
   };
 }
