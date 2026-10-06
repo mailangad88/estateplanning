@@ -87,7 +87,7 @@ const lead: Required<Lead> = {
   id: "l1", personId: "p1", createdAt: T0, stage: "offered",
   stageHistory: [{ stage: "new", at: T0, by: "system" }, { stage: "offered", at: T0, by: "u-intake" }],
   exit: { reason: "not_a_fit", at: T0, note: "n" }, matterType: "new_plan", state: "CA", county: "Marin", urgent: true,
-  score: { score: 80, tier: "hot", redFlags: ["a"], notFitReason: "none" }, segments: ["blended_family"],
+  score: { score: 80, tier: "hot", grade: "A", urgent: true, components: [{ key: "matter", label: "Matter fit", points: 80 }], redFlags: ["a"], notFitReason: "none" }, segments: ["blended_family"],
   source: { utm_source: "google", utm_campaign: "x" },
   consent: {
     version: "v", smsConsent: true, smsConsentText: "t", acknowledgedNoRelationship: true, pageUrl: "/q", ip: null,
