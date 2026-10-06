@@ -28,6 +28,12 @@ export const firm = {
   consultFee: "[Attorney: consult fee, or no fee]",
   draftingTime: "[Attorney: typical drafting time]",
   barLookupUrl: null as string | null, // state bar lawyer-lookup URL, set when known
+  /**
+   * Booking page embedded after a consult request (Calendly, Cal.com, Lawmatics or Clio Grow).
+   * Must be an https URL the scheduler allows in an iframe. Null keeps the "our team will reach out"
+   * message and loads nothing from a third party.
+   */
+  schedulerUrl: null as string | null,
   /** Number visitors can text. Must be registered for business texting (10DLC) before launch. Null hides the Text button. */
   textNumber: "(000) 000-0000" as string | null, // PLACEHOLDER
   /**
