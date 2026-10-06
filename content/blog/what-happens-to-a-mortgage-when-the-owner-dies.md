@@ -38,7 +38,7 @@ If the house is worth less than the loan, heirs can often walk away. The lender'
 
 Frank dies owning a house with a mortgage of about half its value. His will leaves it to his daughter, Mei. Frank's executor keeps making payments from his checking account for the four months the estate is open.
 
-Mei then contacts the servicer, sends a death certificate and the deed, and becomes the "successor in interest." She keeps Frank's original interest rate and pays the loan herself. She did not need to qualify for a new loan.
+Mei then sends the servicer a death certificate and the deed. She becomes the "successor in interest." She keeps Frank's original interest rate and pays the loan herself. She did not need to qualify for a new loan.
 
 ## Steps that help the transition
 
@@ -64,7 +64,7 @@ If there was no will, the question of who inherits the house comes first. See [w
 
 ## When siblings inherit together
 
-Many houses pass to two or more children at once. Then they need to decide together what to do with the mortgage. Common choices are to sell and split what is left, to have one sibling buy out the others with a refinance, or to rent the house and share the costs.
+Many houses pass to two or more children at once. Then they need to decide together what to do with the mortgage. Some sell and split what is left. Some have one sibling refinance and buy out the others. Others rent the house and share the costs.
 
 Writing down the agreement helps, even among close siblings. It should say who pays the mortgage each month and how the sale money will be split.
 

@@ -14,7 +14,7 @@ faqs:
     a: "Yes. Trusts generally cannot name a guardian for minor children, but a will can. That is one more reason people with trusts still sign a pour-over will."
 ---
 
-A pour-over will is a backup will that goes with a living trust. It says, in short, "anything I still own in my own name when I die goes into my trust."
+A pour-over will is a backup will that goes with a living trust. In short, it says "anything still in my name when I die goes into my trust."
 
 It exists because almost nobody moves every asset into their trust. Our guide to [funding your trust](/guides/funding-your-trust) covers how to move assets in. The pour-over will catches what slips through.
 
@@ -30,7 +30,7 @@ The trust stays the main plan. The will points back to it. Our [pour-over will v
 
 ## What a pour-over will does not do
 
-A pour-over will does not avoid probate on what it covers. If you leave a bank account in your own name, that account may have to go through probate before it can "pour" into the trust.
+A pour-over will does not avoid probate on what it covers. Say you leave a bank account in your own name. That account may need probate before it can "pour" into the trust.
 
 It also does not override beneficiary designations. A retirement account that names your brother still goes to your brother. Our post on [whether retirement accounts go through probate](/blog/do-retirement-accounts-go-through-probate) explains why.
 

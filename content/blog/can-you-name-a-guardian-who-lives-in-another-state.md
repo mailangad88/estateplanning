@@ -39,7 +39,7 @@ None of these rule a person out. They are things to plan for so the move is less
 
 Marcus and Elena live in Ohio. Their closest friends moved to Colorado last year and have kids the same age. Marcus and Elena name those friends as guardians.
 
-They also leave money in a trust for moving costs, and they write a letter asking the guardians to keep the kids in touch with their Ohio grandparents. They name Elena's brother, who lives nearby, as backup if the move turns out not to work.
+They also leave money in a trust for moving costs. A letter asks the guardians to keep the kids in touch with their Ohio grandparents. They name Elena's brother, who lives nearby, as backup if the move turns out not to work.
 
 ## Planning that makes distance easier
 

@@ -36,7 +36,7 @@ Most executor-beneficiaries do the job well. Trouble usually starts in a few pre
 
 **The family house.** If one child is executor and wants to keep the house, the others may worry about the price. A written appraisal and clear agreement among the heirs helps a lot.
 
-**Timing.** An executor who lives in the house, or who needs money soon, may be tempted to move faster or slower than is fair to everyone. Siblings notice.
+**Timing.** An executor who lives in the house, or who needs money soon, may move faster or slower than is fair. Siblings notice.
 
 **Personal items.** Jewelry, tools and photos cause more arguments than bank accounts. A list in your will or a [letter of instruction](/checklists/letter-of-instruction-outline) can head this off.
 
@@ -65,4 +65,4 @@ If you are unsure how these rules apply where you live, an attorney licensed in 
 
 ## Next step
 
-Before you decide, it helps to think about how much work the job will be. Try our [executor workload tool](/tools/executor-workload) to get a sense of the time involved, then use the [choosing an executor worksheet](/checklists/choosing-an-executor-worksheet) to compare the people on your list. If you would like help putting your choice in writing, start with the [plan finder](/plan-finder).
+Before you decide, it helps to think about how much work the job will be. Try our [executor workload tool](/tools/executor-workload) to get a sense of the time involved. Then use the [choosing an executor worksheet](/checklists/choosing-an-executor-worksheet) to compare the people on your list. If you would like help putting your choice in writing, start with the [plan finder](/plan-finder).

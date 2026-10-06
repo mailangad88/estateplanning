@@ -44,7 +44,7 @@ See [do retirement accounts go through probate](/blog/do-retirement-accounts-go-
 
 Ray names his three children equally on his life insurance policy. His daughter Lisa dies a few years before him, leaving two young sons. Ray never updates the form.
 
-The policy says the survivors share equally. So Ray's two living children each get half. Lisa's sons get nothing from the policy. Had Ray checked the per stirpes box, Lisa's third would have gone to her sons, likely through a trust or a custodian because they are minors.
+The policy says the survivors share equally. So Ray's two living children each get half. Lisa's sons get nothing from the policy. Had Ray checked the per stirpes box, Lisa's third would have gone to her sons. Because they are minors, it would likely be held by a trust or custodian.
 
 Our guide to [leaving money to minors](/guides/leaving-money-to-minors) explains why that last step matters.
 

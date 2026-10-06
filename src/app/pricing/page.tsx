@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { packages as PACKAGES } from "@/config/firm";
 import { Cta, FaqList, PageHeader } from "@/components/ui";
 
 export const metadata: Metadata = {
@@ -8,12 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/pricing" },
 };
 
-// PLACEHOLDER prices: the firm sets these. Do not publish until the attorney approves the packages and fees.
-const PACKAGES = [
-  { name: "Will package", price: "[Flat fee]", for: "Single people or couples with simpler estates who are comfortable with probate.", includes: ["Will (each spouse)", "Guardian nominations for minor children", "Financial power of attorney", "Healthcare power of attorney and living will", "HIPAA release", "Signing ceremony"] },
-  { name: "Trust package", price: "[Flat fee]", for: "Homeowners and families who want to avoid probate and keep things private.", includes: ["Revocable living trust", "Pour-over will", "Financial and healthcare powers of attorney", "Living will and HIPAA release", "Deed transfer of your home into the trust", "Funding instructions and checklist", "Signing ceremony"] },
-  { name: "Trust plus", price: "[Flat fee]", for: "Blended families, special-needs planning, business owners or property in more than one state.", includes: ["Everything in the trust package", "Special needs or children's trust provisions", "Additional deeds", "Business interest assignment", "Coordination with your financial advisor or CPA"] },
-];
+
 
 export default function Pricing() {
   return (

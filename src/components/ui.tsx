@@ -1,11 +1,12 @@
 import Link from "next/link";
+import { firm } from "@/config/firm";
 import type { Faq, Heading } from "@/lib/content";
 
 export function ReviewNote({ reviewed, updated }: { reviewed: boolean; updated: string }) {
   return (
     <p className="meta">
-      {reviewed ? "Reviewed by our attorney" : "Draft pending attorney review"}
-      {updated ? ` · Updated ${updated}` : ""}
+      {reviewed ? `Reviewed by ${firm.attorneyName}, ${firm.attorneyTitle.toLowerCase()}` : "Draft pending attorney review"}
+      {updated ? ` · Updated ${updated}` : ""} · <Link href="/editorial-policy">How we review</Link>
     </p>
   );
 }

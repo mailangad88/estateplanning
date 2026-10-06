@@ -93,8 +93,8 @@ export default function PlanFinder() {
           <p className="lead">A member of our intake team will reach out shortly to set up your consult.</p>
         ) : (
           <p className="lead">
-            We are not able to help in your state yet. Your state bar&apos;s lawyer referral service can connect you
-            with a licensed estate planning attorney near you.
+            We are not able to help in your state yet. <a href="/not-in-your-state">Here is how to find a licensed
+            estate planning attorney where you live.</a>
           </p>
         )}
         <h2>Topics people in a similar situation often discuss with an attorney</h2>

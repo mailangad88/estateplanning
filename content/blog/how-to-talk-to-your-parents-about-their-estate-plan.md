@@ -14,7 +14,7 @@ faqs:
     a: "Often, yes. Including siblings can prevent later suspicion that one child influenced a parent. If that is not practical, share a summary with siblings afterward so everyone hears the same information."
 ---
 
-The best way to start is with care and a practical question, not with money. Most parents respond better to "Where would I find your papers if something happened?" than to "Who gets the house?"
+The best way to start is with care and a practical question, not with money. Ask "Where would I find your papers if something happened?" That lands better than "Who gets the house?"
 
 Our guide to [what estate planning is](/guides/what-is-estate-planning) explains the documents your parents may already have. This post focuses on how to raise the subject and what to ask.
 

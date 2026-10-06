@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "launch-check": "node scripts/launch-check.mjs",
+    "prebuild": "node scripts/launch-check.mjs"
   },
   "dependencies": {
     "@remotion/player": "^4.0.533",

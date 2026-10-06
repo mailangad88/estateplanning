@@ -39,7 +39,7 @@ Capacity is the legal word for having a clear enough mind to make a will. Courts
 
 The bar is lower than many people think. Someone with early dementia may still have capacity on a good day. What matters is the person's state of mind at the time of signing.
 
-### 3. Free will (no undue influence or fraud)
+### 3. Acting freely (no undue influence or fraud)
 
 The will must reflect your own wishes. A court can throw out a will, or part of one, if someone pressured you so heavily that the choices were really theirs. Courts look at things like isolation from family, a helper who arranged the attorney, and sudden changes that favor that helper.
 

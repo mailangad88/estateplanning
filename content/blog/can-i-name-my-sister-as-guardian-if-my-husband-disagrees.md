@@ -67,7 +67,7 @@ If you worry about your husband's ability to care for the children, the guardian
 
 States differ on how much weight a will's guardian choice gets, at what age a child's preference counts, and how a court handles two conflicting nominations. Some states also let you sign a separate guardian designation outside your will.
 
-If you and your spouse disagree, a short consult with an attorney licensed in your state can help you understand what a court there would likely do.
+If you and your spouse disagree, a short consult can help. An attorney licensed in your state can explain what a court there would likely do.
 
 ## Next step
 
