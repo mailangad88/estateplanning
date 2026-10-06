@@ -15,7 +15,7 @@ export default function BlogIndex() {
   for (const p of posts) byPillar.set(p.pillar, [...(byPillar.get(p.pillar) ?? []), p]);
   return (
     <>
-      <PageHeader title="Questions, answered" lead="Short, direct answers to specific questions, each linked to the full guide on the topic." />
+      <PageHeader kicker="Quick answers" art="SpotQuestions" title="Questions, answered" lead="Short, direct answers to specific questions, each linked to the full guide on the topic." />
       {[...byPillar.entries()].map(([pillar, items]) => {
         const g = guides.find((x) => x.slug === pillar);
         return (

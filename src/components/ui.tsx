@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { firm } from "@/config/firm";
 import type { Faq, Heading } from "@/lib/content";
+import { PageHero } from "@/components/page-hero";
 import { VisualCardGrid, type CardItem, type CardMedia } from "@/components/visual-card";
 
 export function ReviewNote({ reviewed, updated }: { reviewed: boolean; updated: string }) {
@@ -78,12 +79,10 @@ export function Cta({ title = "Talk it through with an attorney", body }: { titl
   );
 }
 
-export function PageHeader({ title, lead, children }: { title: string; lead?: string; children?: React.ReactNode }) {
+export function PageHeader({ title, lead, children, kicker, art, path }: { title: string; lead?: string; children?: React.ReactNode; kicker?: string; art?: string; path?: string }) {
   return (
-    <header className="page-header">
+    <PageHero title={title} lead={lead} kicker={kicker} art={art} path={path}>
       {children}
-      <h1>{title}</h1>
-      {lead && <p className="lead">{lead}</p>}
-    </header>
+    </PageHero>
   );
 }

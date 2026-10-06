@@ -34,7 +34,7 @@ const TOPICS: (Topic & { match: RegExp })[] = [
   { key: "cost", match: /cost|price|pricing|fee/i, art: "SpotCalendarReview", icon: "Receipt", tone: "gold" },
   { key: "checklist", match: /checklist|worksheet|workbook|locator|planner|inventory/i, art: "SpotChecklist", icon: "ClipboardCheck", tone: "sage" },
   { key: "questions", match: /question|faq|glossary|mistake|quiz/i, art: "SpotQuestions", icon: "CircleHelp", tone: "accent" },
-  { key: "update", match: /update|review|life-event|moving|state/i, art: "SpotCalendarReview", icon: "CalendarCheck", tone: "accent" },
+  { key: "update", match: /update|review|life-event|moving|(^|[^e])state/i, art: "SpotCalendarReview", icon: "CalendarCheck", tone: "accent" },
 ];
 
 const DEFAULT: Topic = { key: "family", art: "HeroFamilyHome", icon: "FileText", tone: "accent" };

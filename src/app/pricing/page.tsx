@@ -3,6 +3,7 @@ import Link from "next/link";
 import { firm, packages as PACKAGES } from "@/config/firm";
 import { Rich, RichFaqList } from "@/components/money-page";
 import { Breadcrumbs, Cta, ReviewNote } from "@/components/ui";
+import { PageHero } from "@/components/page-hero";
 import { breadcrumbLd, JsonLd, abs } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -43,19 +44,25 @@ const FAQS = [
 export default function Pricing() {
   return (
     <>
-      <Breadcrumbs items={[{ href: "/", label: "Home" }, { label: "Pricing" }]} />
-      <h1>What estate planning costs</h1>
-      <ReviewNote reviewed={false} updated="October 2026" />
+      <PageHero
+        crumbs={<Breadcrumbs items={[{ href: "/", label: "Home" }, { label: "Pricing" }]} />}
+        kicker="Pricing"
+        path="/pricing"
+        art="SpotCalendarReview"
+        title="What estate planning costs"
+      >
+        <ReviewNote reviewed={false} updated="October 2026" />
+        <p className="cta-row no-print">
+          <Link className="button" href="/plan-finder">Start the plan finder</Link>
+          <Link className="button secondary" href="/how-it-works">See what happens on the call</Link>
+        </p>
+      </PageHero>
       <div className="answer">
         <strong>In short</strong>
         We charge flat fees for estate planning, quoted in writing before you pay. A will-based plan starts at {FEE}. A plan with a
         living trust starts at {FEE}. Complex situations such as blended families, business interests or property in more than one
         state are quoted after a short consult. Everything included and excluded is listed below.
       </div>
-      <p className="cta-row no-print">
-        <Link className="button" href="/plan-finder">Start the plan finder</Link>
-        <Link className="button secondary" href="/how-it-works">See what happens on the call</Link>
-      </p>
 
       <h2>The three packages</h2>
       <ul className="cards">

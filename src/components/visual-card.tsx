@@ -9,7 +9,7 @@ import {
 import { illustrationSrc, topicFor, type Tone } from "@/lib/visual-topic";
 import { videos } from "@/components/visuals/video/videos";
 
-const ICONS: Record<string, LucideIcon> = {
+export const ICON_MAP: Record<string, LucideIcon> = {
   Baby, Briefcase, Calculator, CalendarCheck, CircleHelp, ClipboardCheck, ClipboardList, Download, FileText, Flower2,
   HandHeart, Heart, House, Landmark, ListChecks, Receipt, Scale, ScrollText, ShieldCheck, Stethoscope, Sun, Users,
 };
@@ -49,17 +49,18 @@ function mediaFor(item: CardItem, mode: CardMedia): { media: Media; tone: Tone }
   }
   if (section === "tools") return { media: { kind: "icon", icon: "Calculator" }, tone: t.tone };
   if (section === "quizzes") return { media: { kind: "icon", icon: "ListChecks" }, tone: t.tone };
-  if (mode === "art") return { media: { kind: "art", src: illustrationSrc(t.art) }, tone: t.tone };
+  const artSections = new Set(["guides", "compare", "life-events", "estate-planning-for", "learn"]);
+  if (mode === "art" || (mode === "auto" && artSections.has(section))) return { media: { kind: "art", src: illustrationSrc(t.art) }, tone: t.tone };
   return { media: { kind: "icon", icon: t.icon }, tone: t.tone };
 }
 
 /** Picture-first card grid. Covers for downloads, posters for videos, an illustration or a big icon for the rest. */
 export function VisualCardGrid({ items, media = "auto" }: { items: CardItem[]; media?: CardMedia }) {
   return (
-    <ul className="vcards">
+    <ul className={`vcards${items.length % 4 === 0 ? " vcards--4" : ""}`}>
       {items.map((item) => {
         const { media: m, tone } = mediaFor(item, media);
-        const Icon = m.kind === "icon" ? (ICONS[m.icon] ?? FileText) : null;
+        const Icon = m.kind === "icon" ? (ICON_MAP[m.icon] ?? FileText) : null;
         return (
           <li key={item.href}>
             <Link href={item.href} className={`vcard vcard--${tone} vcard--${m.kind}`}>

@@ -1,6 +1,7 @@
 import Link from "next/link";
+import { PageHero } from "@/components/page-hero";
 import { CallbackForm, EmailCapture } from "@/components/capture";
-import { Breadcrumbs, Cta, ReviewNote } from "@/components/ui";
+import { Breadcrumbs, CardGrid, Cta, ReviewNote } from "@/components/ui";
 import { firm } from "@/config/firm";
 import type { MoneyPageData, Block } from "@/content/money-pages";
 import { abs, breadcrumbLd, howToLd, JsonLd, SITE_URL } from "@/lib/seo";
@@ -53,7 +54,7 @@ export function RichFaqList({ faqs, title = "Common questions" }: { faqs: { q: s
 function BlockView({ b }: { b: Block }) {
   if ("p" in b) return <p><Rich text={b.p} /></p>;
   if ("ul" in b) return <ul>{b.ul.map((x) => <li key={x}><Rich text={x} /></li>)}</ul>;
-  if ("ol" in b) return <ol>{b.ol.map((x) => <li key={x}><Rich text={x} /></li>)}</ol>;
+  if ("ol" in b) return <ol className="step-list">{b.ol.map((x) => <li key={x}><Rich text={x} /></li>)}</ol>;
   if ("note" in b) return <aside className="callout"><Rich text={b.note} /></aside>;
   return (
     <div className="table-wrap">
@@ -111,14 +112,19 @@ export function MoneyPage({ page }: { page: MoneyPageData }) {
 
   return (
     <article>
-      <Breadcrumbs items={[{ href: "/", label: "Home" }, { label: page.crumb }]} />
-      <h1>{page.h1}</h1>
+      <PageHero
+        path={page.path}
+        kicker={page.crumb}
+        title={page.h1}
+        crumbs={<Breadcrumbs items={[{ href: "/", label: "Home" }, { label: page.crumb }]} />}
+      >
+        <p className="cta-row no-print">{primary}{secondary}</p>
+      </PageHero>
       <ReviewNote reviewed={false} updated="October 2026" />
       <div className="answer">
         <strong>In short</strong>
         <Rich text={page.answer} />
       </div>
-      <p className="cta-row no-print">{primary}{secondary}</p>
       {page.jump && (
         <p className="no-print">{page.jump.map((j, i) => <span key={j.id}>{i > 0 && " · "}<a href={`#${j.id}`}>{j.label}</a></span>)}</p>
       )}
@@ -150,16 +156,7 @@ export function MoneyPage({ page }: { page: MoneyPageData }) {
       />
       <section>
         <h2>Keep reading</h2>
-        <ul className="cards">
-          {page.related.map((r) => (
-            <li key={r.href}>
-              <Link href={r.href} className="card-link">
-                <span className="tag">{r.kind}</span>
-                <strong>{r.title}</strong>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <CardGrid items={page.related.map((r) => ({ href: r.href, title: r.title, tag: r.kind }))} />
       </section>
       <p className="notice">
         Attorney advertising. This page is general information, not legal advice. Reading it or contacting us does not create an

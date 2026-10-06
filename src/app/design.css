@@ -470,7 +470,9 @@ footer.site .footer-cta .button:hover { text-decoration: none; }
 .cycle-more { text-align: center; margin-top: 28px; }
 
 /* Picture-first cards (components/visual-card.tsx): every card leads with a cover, poster, illustration or big icon. */
-.vcards { list-style: none; padding: 0; margin: 24px 0; display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.vcards { list-style: none; padding: 0; margin: 24px 0; display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(min(290px, 100%), 1fr)); }
+@media (min-width: 1100px) { .band .vcards--4 { grid-template-columns: repeat(4, 1fr); } }
+.band-foot { margin: 28px 0 0; text-align: center; color: var(--muted); }
 .vcards > li { display: flex; }
 .vcard { --tint: var(--brand-tint); --ink: var(--brand); display: flex; flex-direction: column; width: 100%; border-radius: var(--radius-lg); overflow: hidden; background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow-sm); color: var(--text); text-decoration: none; transition: transform 0.18s ease, box-shadow 0.18s ease; }
 .vcard:hover, .vcard:focus-visible { transform: translateY(-3px); box-shadow: var(--shadow); text-decoration: none; }
@@ -491,3 +493,49 @@ footer.site .footer-cta .button:hover { text-decoration: none; }
 .vcard:hover .vcard__go svg { transform: translateX(3px); }
 .vcard__go svg { transition: transform 0.18s ease; }
 @media (prefers-reduced-motion: reduce) { .vcard, .vcard__go svg { transition: none; } .vcard:hover { transform: none; } }
+
+/* Illustrated page hero (components/page-hero.tsx), used by every hub, guide and service page. */
+.page-hero { padding: 36px 0 56px; margin-bottom: 8px; }
+.page-hero .hero-x { grid-template-columns: 1.1fr 1fr; gap: 48px; }
+.page-hero h1 { font-size: clamp(2rem, 3.8vw, 3rem); line-height: 1.08; letter-spacing: -0.02em; margin: 0 0 16px; }
+.page-hero .lead { color: var(--muted); margin: 0 0 20px; max-width: 540px; }
+.page-hero .cta-row { margin: 8px 0 0; display: flex; flex-wrap: wrap; gap: 12px; }
+.page-hero__kicker { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 16px; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.page-hero__kicker .icon-badge { width: 34px; height: 34px; border-radius: 10px; }
+.page-hero__art img { display: block; width: 100%; height: auto; }
+.page-hero--compact { padding: 28px 0 44px; }
+.page-hero--compact h1 { font-size: clamp(1.8rem, 3.2vw, 2.55rem); }
+.page-hero--compact .page-hero__art { max-width: 460px; justify-self: end; width: 100%; }
+@media (max-width: 900px) {
+  .page-hero { padding: 20px 0 40px; }
+  .page-hero .hero-x { grid-template-columns: 1fr; gap: 28px; }
+  .page-hero__art { max-width: 520px; }
+  .page-hero--compact .page-hero__art { justify-self: start; max-height: 220px; overflow: hidden; border-radius: var(--radius-lg); }
+}
+@media (max-width: 560px) { .page-hero--compact .page-hero__art { display: none; } }
+
+/* Numbered lists read as a visual step track on guides and service pages. */
+.prose ol, .step-list { list-style: none; counter-reset: step; padding: 0; margin: 20px 0; }
+.prose ol > li, .step-list > li { counter-increment: step; position: relative; padding: 2px 0 18px 56px; margin: 0; }
+.prose ol > li::before, .step-list > li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; background: var(--brand); color: #fff; font-weight: 700; font-family: var(--font-display); }
+.prose ol > li:not(:last-child)::after, .step-list > li:not(:last-child)::after { content: ""; position: absolute; left: 18px; top: 42px; bottom: 4px; width: 2px; background: var(--border); }
+.toc ol { list-style: decimal; }
+.toc ol > li { padding: 0; } .toc ol > li::before, .toc ol > li::after { content: none; }
+.prose ul > li::marker { color: var(--sage); }
+.prose h2 { position: relative; }
+.prose h2::before { content: ""; display: block; width: 44px; height: 4px; border-radius: 4px; background: var(--gold); margin-bottom: 14px; }
+.stage-hero .breadcrumbs ol { margin-top: 0; }
+/* Phones: cards turn into compact rows (picture left, words right) so a list does not become a long scroll. */
+@media (max-width: 600px) {
+  .vcards { gap: 12px; }
+  .vcard { flex-direction: row; border-radius: var(--radius); }
+  .vcard__media { aspect-ratio: auto; width: 38%; flex: none; min-height: 112px; }
+  .vcard--cover .vcard__media { padding: 10px 0 0; }
+  .vcard--icon .vcard__media { aspect-ratio: auto; width: 84px; }
+  .vcard--icon .vcard__media svg { width: 30px; height: 30px; padding: 10px; border-radius: 14px; }
+  .vcard__body { padding: 12px 14px; gap: 4px; }
+  .vcard__body strong { font-size: 1rem; }
+  .vcard__go { display: none; }
+  .vcard__play { width: 38px; height: 38px; }
+}
+.stage-hero .breadcrumbs { margin-bottom: 20px; }

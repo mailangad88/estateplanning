@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBox from "@/components/CtaBox";
 import Faqs from "@/components/Faqs";
 import JsonLd from "@/components/JsonLd";
+import { PageHero } from "@/components/page-hero";
 import LinkList from "@/components/LinkList";
 import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
@@ -55,9 +56,9 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
   return (
     <article className="content">
       <JsonLd data={graph(articleSchema(a), breadcrumbSchema(crumbs), faqSchema(a.faqs))} />
-      <Breadcrumbs items={crumbs} />
-      <h1>{a.title}</h1>
-      <PageMeta updated={a.updated} words={a.wordCount} reviewed={a.review === "approved"} />
+      <PageHero compact crumbs={<Breadcrumbs items={crumbs} />} kicker={cluster.name} path={a.url} title={a.title}>
+        <PageMeta updated={a.updated} words={a.wordCount} reviewed={a.review === "approved"} />
+      </PageHero>
       <AnswerBox answer={a.answer} takeaways={a.takeaways} />
       <Toc headings={a.headings} />
       <div className="prose" dangerouslySetInnerHTML={{ __html: a.html }} />

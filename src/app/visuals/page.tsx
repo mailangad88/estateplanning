@@ -8,6 +8,7 @@ import {
   magnets,
   videos,
 } from "@/components/visuals";
+import { PageHero } from "@/components/page-hero";
 
 export const metadata: Metadata = {
   title: "Visual library",
@@ -21,11 +22,18 @@ export const metadata: Metadata = {
 export default function VisualsPage() {
   return (
     <>
-      <h1>Visual library</h1>
-      <p className="lead">
-        Every illustration, diagram, cover and video, ready to drop into a page. Import from{" "}
-        <code>@/components/visuals</code>. The style guide is in <code>docs/visual-style.md</code>.
-      </p>
+      <PageHero
+        kicker="Visual library"
+        path="/visuals"
+        art="SpotSafeStorage"
+        title="Visual library"
+        lead={
+          <>
+            Every illustration, diagram, cover and video, ready to drop into a page. Import from{" "}
+            <code>@/components/visuals</code>. The style guide is in <code>docs/visual-style.md</code>.
+          </>
+        }
+      />
 
       <h2>Diagrams ({diagramRegistry.length})</h2>
       <div className="v-gallery">

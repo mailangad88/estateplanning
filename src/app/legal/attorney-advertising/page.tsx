@@ -4,6 +4,8 @@ import { firm, servedStates } from "@/config/firm";
 import { rulesFor } from "@/config/compliance";
 import { REVIEW_POLICY } from "@/config/reviews";
 import { Disclosures, ResultsNote } from "@/components/Disclosures";
+import { PageHero } from "@/components/page-hero";
+import { Breadcrumbs } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Attorney advertising notice",
@@ -17,7 +19,14 @@ export default function AttorneyAdvertising() {
   const bio = firm.attorneyBio;
   return (
     <>
-      <h1>Attorney advertising notice</h1>
+      <PageHero
+        compact
+        crumbs={<Breadcrumbs items={[{ href: "/", label: "Home" }, { label: "Attorney advertising notice" }]} />}
+        kicker="Legal"
+        path="/legal/attorney-advertising"
+        art="SpotDocumentsSigned"
+        title="Attorney advertising notice"
+      />
       <p className="notice">Draft pending attorney review.</p>
       <p>
         This website is attorney advertising for {firm.firmLegalName}. {firm.brandName} is the firm&apos;s own client education and

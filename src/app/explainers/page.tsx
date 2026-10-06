@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function ExplainersIndex() {
   return (
     <>
-      <PageHeader title="Explainers" lead="Two-minute animations of how the main pieces work, each with a full written transcript." />
+      <PageHeader kicker="Watch and learn" art="SpotVideoCall" title="Explainers" lead="Two-minute animations of how the main pieces work, each with a full written transcript." />
       <CardGrid items={EXPLAINERS.map((e) => ({ href: `/explainers/${e.slug}`, title: e.title, description: e.description, tag: "Animated" }))} />
     </>
   );

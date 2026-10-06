@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
+import { PageHero } from "@/components/page-hero";
 import { getStateGuides } from "@/lib/library";
 import { breadcrumbSchema, graph, itemListSchema } from "@/lib/schema";
 
@@ -26,12 +27,19 @@ export default function StatesIndex() {
           itemListSchema("Estate planning laws by state", guides.map((g) => ({ name: g.name, url: g.url }))),
         )}
       />
-      <Breadcrumbs items={crumbs} />
-      <h1>Estate planning laws by state</h1>
-      <p className="lead">
-        Wills, probate and taxes are governed by state law. Pick your state for its signing rules, probate shortcuts and
-        tax position, then read our <Link href="/learn">national guides</Link> for the concepts behind them.
-      </p>
+      <PageHero
+        crumbs={<Breadcrumbs items={crumbs} />}
+        kicker="Laws by state"
+        path="/estate-planning"
+        art="HeroProbate"
+        title="Estate planning laws by state"
+        lead={
+          <>
+            Wills, probate and taxes are governed by state law. Pick your state for its signing rules, probate shortcuts
+            and tax position, then read our <Link href="/learn">national guides</Link> for the concepts behind them.
+          </>
+        }
+      />
       <ul className="state-grid">
         {guides.map((g) => (
           <li key={g.slug}>

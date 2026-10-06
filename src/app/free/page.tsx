@@ -25,7 +25,7 @@ export default function FreeLibrary() {
   }));
   return (
     <>
-      <PageHeader
+      <PageHeader kicker="Free library" art="SpotChecklist"
         title="Free resource library"
         lead={`${items.length} printable checklists, worksheets, planners, templates and email courses. Written in plain English and free to keep, whether or not you ever work with us.`}
       />

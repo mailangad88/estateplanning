@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function NotInYourState() {
   return (
     <>
-      <PageHeader title="We are not able to help in your state yet" lead={`Estate planning documents follow the law of the state you live in, so you want an attorney licensed there. Today we practice in: ${servedStates().join(", ")}.`} />
+      <PageHeader kicker="Where we practice" art="HeroFamilyHome" title="We are not able to help in your state yet" lead={`Estate planning documents follow the law of the state you live in, so you want an attorney licensed there. Today we practice in: ${servedStates().join(", ")}.`} />
       <h2>Where to look instead</h2>
       <ul>
         <li>Your state bar&apos;s lawyer referral service. Search for &quot;[your state] bar lawyer referral service&quot;.</li>
