@@ -14,6 +14,8 @@ import {
   HeroBusinessSuccession, HeroEstateSettlement, HeroPowersOfAttorney, HeroSpecialNeeds, HeroTrusts, HeroWills,
 } from "@/components/visuals";
 import { JsonLd } from "@/lib/seo";
+import { stageBoard, stageLibrary } from "@/config/life-game";
+import { LifeGame } from "@/components/life-game";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -133,6 +135,8 @@ export default async function AudiencePage({ params }: Props) {
   const bookHref = a.sensitive ? "/contact" : "/plan-finder";
   const stage = lifeStageFor(a.slug);
   const tones = ["accent", "clay", "sage"] as const;
+  const board = stage ? stageBoard(stage.slug) : null;
+  const next = stage && stage.cta.href !== bookHref ? stage.cta : stage?.resource;
   return (
     <div className={stage?.senior ? "is-senior" : undefined}>
       <ArticlePage
@@ -151,6 +155,17 @@ export default async function AudiencePage({ params }: Props) {
         hero={stage ? <StageHero a={a} stage={stage} digits={digits} /> : <SituationHero a={a} digits={digits} bookHref={bookHref} />}
         before={
           <>
+            {stage && board && (
+              <Band label="The life game" className="lgame-band">
+                <SectionHead
+                  kicker="The life game"
+                  title="Play the next few years before they happen"
+                  lead="Move along the board. At each what-if, plan for it or put it off, and see what usually happens. Your plan builds as you go."
+                  center
+                />
+                <LifeGame squares={board} bookHref={bookHref} phone={firm.phone} next={next} senior={stage.senior} library={stageLibrary(stage.slug)} id={`game-${stage.slug}`} />
+              </Band>
+            )}
             {stage ? (
               <Band tone="sand" label="What matters most">
                 <SectionHead kicker="What matters most right now" title={a.headline} />
