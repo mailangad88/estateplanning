@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import ProbateVsTrustAnimation from "@/components/ProbateVsTrustAnimation";
 import { firm } from "@/config/firm";
@@ -9,6 +10,21 @@ import { EmailCapture } from "@/components/capture";
 
 const FEATURED_GUIDES = ["what-is-estate-planning", "revocable-living-trust-explained", "guardianship-for-minor-children", "powers-of-attorney", "how-probate-works", "what-happens-if-you-die-without-a-will"];
 
+export const metadata: Metadata = {
+  title: { absolute: `Estate planning attorney | ${firm.brandName}` },
+  description: `Wills, living trusts and powers of attorney for families, prepared by ${firm.attorneyName}. Flat fees, a clear plan, and a real person on the phone.`,
+  alternates: { canonical: "/" },
+};
+
+const SITUATIONS = [
+  { href: "/wills", title: "I have no will or plan at all", description: "What a will does, and what it cannot do." },
+  { href: "/living-trusts", title: "I own a home and have kids", description: "Whether a living trust helps, and when it does not." },
+  { href: "/estate-planning-for-parents", title: "My parent is aging and I am worried", description: "The documents that matter first, and how to start the talk." },
+  { href: "/probate", title: "Someone I love just died and I am the executor or heir", description: "What to do first, and what has a deadline." },
+  { href: "/guides/updating-your-estate-plan", title: "I have a plan but it is old", description: "When a plan is worth reviewing." },
+  { href: "/pricing", title: "I just want to know what this costs", description: "Flat fees, shown before you sign." },
+];
+
 export default function Home() {
   const guides = getGuides();
   const featured = FEATURED_GUIDES.map((s) => guides.find((g) => g.slug === s)).filter((g) => g !== undefined);
@@ -16,19 +32,38 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <h1>Protect your family with an estate plan written by a real attorney.</h1>
-        <p className="lead">
-          Wills, trusts and powers of attorney, explained in plain English. Answer a few questions in about two minutes,
-          see what people in your situation usually put in place, and book a call with {firm.attorneyName} if you want one.
-        </p>
-        <p style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+        <h1>Estate planning done by an attorney you can call</h1>
+        <div className="answer">
+          <strong>In short</strong>
+          An estate plan says who makes decisions for you if you cannot, and who gets what if you die. {firm.brandName} prepares
+          wills, living trusts, powers of attorney and healthcare directives at flat fees. Start with a two-minute questionnaire,
+          or book a call with {firm.attorneyName}.
+        </div>
+        <p className="cta-row">
           <Link className="button" href="/plan-finder">Start the plan finder</Link>
           <Link className="button secondary" href="/tools/plan-readiness-assessment">Get my readiness score</Link>
+          <a className="button secondary" href={`tel:${firm.phone.replace(/\D/g, "")}`}>Call {firm.phone}</a>
         </p>
-        <p className="notice">Flat-fee quote before you sign anything · No obligation · Your answers stay confidential</p>
+        <p className="notice">{firm.attorneyName}, Bar No. {firm.barNumber}. Flat fees shown on our <Link href="/pricing">pricing page</Link>. No obligation. Your answers stay confidential.</p>
       </section>
 
-      <h2>Start where you are</h2>
+      <h2>Where most people start</h2>
+      <CardGrid items={SITUATIONS} />
+
+      <h2>What an estate plan includes</h2>
+      <p>Four documents do most of the work. We explain each in plain terms and say when it may not be needed.</p>
+      <ul>
+        <li><strong><Link href="/wills">A will</Link></strong> names who receives your property, who raises your minor children, and who carries out your wishes. It takes effect only at death and usually goes through probate, the court process that confirms the will and transfers property.</li>
+        <li><strong><Link href="/living-trusts">A living trust</Link></strong> holds property under your name as trustee while you are alive and passes it to your beneficiaries without a court process when you die. It does not make sense for everyone. Many families with modest assets and no real estate do fine with a will and beneficiary designations.</li>
+        <li><strong><Link href="/power-of-attorney">A durable power of attorney</Link></strong> names someone to handle money and property if you cannot, for example after a stroke. Without one, your family may have to ask a court for authority.</li>
+        <li><strong><Link href="/healthcare-directives">Healthcare directives</Link></strong> put your medical wishes in writing and name who speaks for you when you cannot.</li>
+      </ul>
+      <p>Helping after a death instead? See <Link href="/probate">probate</Link> and <Link href="/trust-administration">trust administration</Link>.</p>
+
+      <h2>What it costs</h2>
+      <p>We charge flat fees, quoted before you sign. Essentials fits one person or a couple with modest assets. Complete fits homeowners and families with minor children. Legacy fits blended families, business owners and property in more than one state. Fees depend on the facts of your situation, and the final fee is in your engagement agreement before you pay anything. <Link href="/pricing">See our flat fees</Link>.</p>
+
+<h2>Start with your life event</h2>
       <CardGrid items={getLifeEvents().map((l) => ({ href: `/life-events/${l.slug}`, title: l.event, description: l.description }))} />
 
       <h2>Free tools</h2>
@@ -36,12 +71,12 @@ export default function Home() {
         <li className="card">
           <strong>How ready is your plan?</strong>
           <p>Ten questions, instant score.</p>
-          <Link className="button small" href="/tools/readiness">Check my score</Link>
+          <Link className="button small" href="/tools/plan-readiness-assessment">Check my score</Link>
         </li>
         <li className="card">
           <strong>What could probate cost?</strong>
           <p>A rough range for your state.</p>
-          <Link className="button small" href="/tools/probate-cost">Estimate it</Link>
+          <Link className="button small" href="/tools/probate-cost-estimator">Estimate it</Link>
         </li>
         <li className="card">
           <strong>Will or trust?</strong>
@@ -55,11 +90,15 @@ export default function Home() {
 
       <h2>How it works</h2>
       <ol className="steps">
-        <li><strong>1. Answer a few questions.</strong><br />About your family, your home and what you want to protect.</li>
-        <li><strong>2. Talk to our team.</strong><br />We confirm the details and set up a consult at a time that suits you.</li>
-        <li><strong>3. Meet your attorney.</strong><br />You get a clear flat-fee quote before anything is signed.</li>
+        <li><strong>1. Answer a few questions (2 minutes).</strong><br />About your family, your home and what you want to protect.</li>
+        <li><strong>2. Talk to our team.</strong><br />We call you {firm.responseTime}, confirm the basics and book a time with the attorney. The team are not lawyers and do not give legal advice.</li>
+        <li><strong>3. Meet your attorney.</strong><br />Consult length: {firm.consultLength}. You get a recommendation and a flat-fee quote. Nothing is signed on the call.</li>
         <li><strong>4. Sign and you're done.</strong><br />We guide the signing and help you move assets into your trust.</li>
       </ol>
+      <p><Link href="/how-it-works">See what happens on the call</Link> · <Link href="/about-the-attorney">About {firm.attorneyName}</Link></p>
+
+      <h2>When you may not need an attorney</h2>
+      <p>People who are single, own very little, have no dependents, and have named beneficiaries on every account often manage with a simple will or beneficiary forms. If you are not sure, the plan finder will say so plainly. Consult fee: {firm.consultFee}.</p>
 
       <h2>Most-read guides</h2>
       <CardGrid items={featured.map((g) => ({ href: `/guides/${g.slug}`, title: g.title, description: g.description, tag: `${g.readingMinutes} min read` }))} />

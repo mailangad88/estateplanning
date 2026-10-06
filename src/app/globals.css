@@ -230,3 +230,9 @@ label.field input[type="range"] { padding: 0; border: 0; }
   body { background: #fff; color: #000; padding: 0; }
 }
 .site-nav { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+
+/* Money pages */
+.todo { background: #fff3c4; color: #4a3b00; border-radius: 3px; padding: 0 3px; }
+@media (prefers-color-scheme: dark) { .todo { background: #4a3b00; color: #ffe9a3; } }
+.callout { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; margin: 16px 0; }
+.cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0; }

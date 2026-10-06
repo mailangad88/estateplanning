@@ -1,11 +1,12 @@
 import fs from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
+import { MONEY_PAGES } from "@/content/money-pages";
 import { TOOLS } from "@/config/tools";
 import { EXPLAINERS } from "@/explainers/data";
 import { getChecklists, getComparisons, getGlossary, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
 
-const STATIC = ["/", "/plan-finder", "/resources", "/pricing", "/about", "/contact", "/guides", "/blog", "/compare", "/life-events", "/tools", "/checklists", "/explainers", "/course", "/glossary", "/faq", "/mistakes", "/legal/privacy", "/legal/disclaimer", "/legal/sms-terms", "/legal/how-we-work"];
+const STATIC = ["/", "/plan-finder", "/resources", "/pricing", "/about", "/contact", "/guides", "/blog", "/compare", "/life-events", "/tools", "/checklists", "/explainers", "/course", "/glossary", "/faq", "/mistakes", "/legal/privacy", "/legal/disclaimer", "/legal/sms-terms", "/legal/how-we-work", "/editorial-policy", "/intake", "/callback", ...Object.values(MONEY_PAGES).map((m) => m.path)];
 
 function knownPaths() {
   const s = new Set(STATIC);
@@ -48,5 +49,27 @@ describe("internal links in content", () => {
     }
     for (const p of getPosts()) if (!getGuides().some((g) => g.slug === p.pillar)) missing.push(`${p.slug} pillar -> ${p.pillar}`);
     expect(missing).toEqual([]);
+  });
+
+  it("money pages and key TSX pages link only to pages that exist", () => {
+    const paths = knownPaths();
+    const glossary = new Set(getGlossary().map((g) => g.slug));
+    const found: string[] = [];
+    const text = JSON.stringify(MONEY_PAGES);
+    for (const m of text.matchAll(/\]\((\/[^)\s"]*)\)/g)) found.push(m[1]);
+    for (const m of text.matchAll(/"href":"(\/[^"]*)"/g)) found.push(m[1]);
+    for (const f of ["src/app/page.tsx", "src/app/pricing/page.tsx", "src/app/contact/page.tsx", "src/app/layout.tsx"]) {
+      const src = fs.readFileSync(path.join(process.cwd(), f), "utf8");
+      for (const m of src.matchAll(/(?:href=|href: )"(\/[^"]*)"/g)) found.push(m[1]);
+      for (const m of src.matchAll(/\]\((\/[^)\s"]*)\)/g)) found.push(m[1]);
+    }
+    const broken = found.filter((l) => {
+      const [p, hash] = l.split("#");
+      const clean = p.replace(/\/$/, "") || "/";
+      if (clean === "/glossary" && hash) return !glossary.has(hash);
+      return !paths.has(clean);
+    });
+    expect(found.length).toBeGreaterThan(50);
+    expect(broken).toEqual([]);
   });
 });
