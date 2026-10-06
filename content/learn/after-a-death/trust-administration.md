@@ -98,6 +98,8 @@ If a beneficiary believes you are not performing your duties, they may ask a cou
 
 Call early if the trust holds real estate in more than one state, a business, retirement accounts, or if beneficiaries disagree. A one-hour consultation in the first month often prevents expensive errors later.
 
+Beneficiaries are entitled to notice and reports, and [does a trustee have to notify beneficiaries and give an accounting?](/learn/after-a-death/trustee-duty-to-inform-and-account) explains the first notice and what an accounting includes.
+
 ## How we can help
 
 You do not have to figure out trust administration by yourself. Our attorneys can explain the notices your state requires, help you with tax IDs, accountings and distributions, and tell you when something needs a court. Try the [plan finder](/plan-finder) or book a consultation whenever you are ready.

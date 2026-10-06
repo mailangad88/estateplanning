@@ -1,4 +1,5 @@
-import { getComparisons, getGuides, getLifeEvents, getPosts } from "@/lib/content";
+import { TOOLS } from "@/config/tools";
+import { getChecklists, getComparisons, getGuides, getLifeEvents, getPosts } from "@/lib/content";
 import { getClusterArticles, getPillar } from "@/lib/library";
 
 /**
@@ -26,6 +27,27 @@ const BY_CLUSTER: Record<string, string[]> = {
   "property-and-assets": ["/blog/should-i-put-my-house-in-a-trust", "/compare/transfer-on-death-deed-vs-trust", "/compare/joint-ownership-vs-trust", "/life-events/buying-a-home"],
 };
 
+/** Free tools and printable checklists for each cluster: the lead capture points for library readers. */
+const TOOLS_BY_CLUSTER: Record<string, string[]> = {
+  basics: ["/tools/plan-readiness-assessment", "/checklists/documents-to-gather-before-your-consult", "/checklists/asset-and-account-inventory", "/checklists/letter-of-instruction-outline"],
+  wills: ["/tools/will-or-trust", "/checklists/choosing-an-executor-worksheet", "/tools/plan-readiness-assessment"],
+  trusts: ["/tools/will-or-trust", "/checklists/trust-funding-checklist", "/tools/probate-cost-estimator"],
+  probate: ["/tools/probate-cost-estimator", "/tools/executor-workload", "/checklists/first-30-days-after-a-death"],
+  "after-a-death": ["/checklists/first-30-days-after-a-death", "/tools/executor-workload", "/tools/probate-cost-estimator"],
+  "power-of-attorney": ["/tools/plan-readiness-assessment", "/checklists/important-contacts-list"],
+  "healthcare-directives": ["/checklists/funeral-and-burial-wishes", "/tools/plan-readiness-assessment"],
+  guardianship: ["/checklists/choosing-a-guardian-worksheet", "/tools/guardian-fund-calculator", "/tools/life-insurance-needs"],
+  "life-stages": ["/tools/plan-review-reminder", "/tools/plan-readiness-assessment", "/checklists/annual-estate-plan-review"],
+  "blended-families": ["/checklists/beneficiary-designation-audit", "/tools/plan-review-reminder"],
+  "beneficiary-designations": ["/checklists/beneficiary-designation-audit", "/checklists/asset-and-account-inventory"],
+  "estate-tax": ["/tools/estate-tax-estimator", "/checklists/asset-and-account-inventory"],
+  "business-owners": ["/tools/life-insurance-needs", "/checklists/important-contacts-list", "/tools/plan-readiness-assessment"],
+  "special-needs": ["/tools/guardian-fund-calculator", "/checklists/letter-of-instruction-outline"],
+  "elder-care": ["/tools/medicaid-lookback-date", "/checklists/documents-to-gather-before-your-consult"],
+  "digital-assets": ["/checklists/digital-assets-inventory", "/checklists/important-contacts-list"],
+  "property-and-assets": ["/checklists/trust-funding-checklist", "/tools/will-or-trust", "/tools/probate-cost-estimator"],
+};
+
 export interface SiteLink {
   url: string;
   title: string;
@@ -40,6 +62,8 @@ function lookup(): Map<string, SiteLink> {
     for (const c of getComparisons()) index.set(`/compare/${c.slug}`, { url: `/compare/${c.slug}`, title: c.title, kind: "Comparison" });
     for (const p of getPosts()) index.set(`/blog/${p.slug}`, { url: `/blog/${p.slug}`, title: p.title, kind: "Question" });
     for (const l of getLifeEvents()) index.set(`/life-events/${l.slug}`, { url: `/life-events/${l.slug}`, title: l.title, kind: "Life event" });
+    for (const t of TOOLS) index.set(`/tools/${t.slug}`, { url: `/tools/${t.slug}`, title: t.title, kind: "Free tool" });
+    for (const c of getChecklists()) index.set(`/checklists/${c.slug}`, { url: `/checklists/${c.slug}`, title: c.title, kind: "Printable checklist" });
   }
   return index;
 }
@@ -50,8 +74,14 @@ export function siteLinksFor(cluster: string): SiteLink[] {
   return (BY_CLUSTER[cluster] ?? []).map((u) => map.get(u)).filter((x): x is SiteLink => x !== undefined);
 }
 
+/** Free tools and checklists for a cluster. */
+export function toolsFor(cluster: string): SiteLink[] {
+  const map = lookup();
+  return (TOOLS_BY_CLUSTER[cluster] ?? []).map((u) => map.get(u)).filter((x): x is SiteLink => x !== undefined);
+}
+
 export function clusterMapPaths(): string[] {
-  return Object.values(BY_CLUSTER).flat();
+  return [...Object.values(BY_CLUSTER).flat(), ...Object.values(TOOLS_BY_CLUSTER).flat()];
 }
 
 /** The reverse direction: library pillars and articles for a page in another collection. */

@@ -139,9 +139,13 @@ A will starts working at death, but the most likely planning problem is not deat
 
 Without them, your family may need to petition a court for a guardianship or conservatorship, which is public, slower and costly. Learn how to protect yourself in the [power of attorney guide](/learn/power-of-attorney), and the [healthcare directives guide](/learn/healthcare-directives) for medical decisions.
 
+If you plan to leave one child less than another, or nothing, read [how to disinherit someone or leave unequal shares](/learn/wills/disinheriting-or-unequal-shares) for the spouse protections and contest risks that apply.
+
 ## How do you build a will that fits your life?
 
 Use this checklist when you plan or review your will.
+
+For typical prices and what to ask providers, see [how much a will costs](/learn/wills/how-much-does-a-will-cost).
 
 1. **List your assets and how each is titled:** alone, joint, with a beneficiary or in a trust.
 2. **Decide who gets what,** including backups if someone dies before you.

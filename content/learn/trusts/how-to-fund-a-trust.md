@@ -52,7 +52,7 @@ Think of it as moving furniture into a storage unit you hold the key to. The uni
 
 ## How do you put your house in a trust?
 
-You sign and record a new deed that transfers title from you to you as trustee. Common types include a quitclaim deed, a grant deed or a warranty deed, depending on state practice. The type matters because it affects title insurance and warranties. An attorney will prepare the deed so that the property description is accurate and the title company will honor it.
+You sign and record a new deed that transfers title from you to you as trustee. Common types include a quitclaim deed, a grant deed or a warranty deed, depending on state practice. The type matters because it affects title insurance and warranties. An attorney will prepare the deed so that the property description is accurate and the title company will honor it. For the full walk-through, including mortgage, title insurance and property tax questions, see [how to transfer a house to a living trust](/learn/trusts/transfer-house-to-living-trust).
 
 Before recording, check:
 

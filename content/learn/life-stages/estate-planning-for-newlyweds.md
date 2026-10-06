@@ -108,6 +108,8 @@ Then a simple "everything to my spouse" plan can leave your children with nothin
 
 Add your spouse to emergency contacts, change your name on accounts if relevant, and tell each other where the documents are. Choose agents with care, and see [how to choose your power of attorney agent](/learn/power-of-attorney/choosing-a-power-of-attorney-agent) if you are unsure. Review your plan after your first child, a home purchase or an out-of-state move. Our [list of review triggers](/learn/basics/when-to-update-your-estate-plan) covers them.
 
+If you are buying a home together, read [estate planning when you buy a home](/learn/life-stages/estate-planning-when-you-buy-a-home) before closing, and if you do not plan to have children, see [estate planning for couples without children](/learn/life-stages/estate-planning-for-couples-without-children).
+
 ## How we can help
 
 A newlywed planning session usually takes one meeting. Try the [plan finder](/plan-finder) to see which documents fit your situation, or schedule a consultation with an estate planning attorney to coordinate your beneficiary forms, titles and wills. We can also review a prenup alongside your plan.

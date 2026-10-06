@@ -96,6 +96,10 @@ Replace your former spouse in every role and on every beneficiary form, but chec
 
 Retirees should review beneficiaries, agents and trust funding, and then plan for long-term care and the tax treatment of retirement accounts. Costs for care can exceed income, and most states look back 60 months at gifts when you apply for Medicaid. Start with [estate planning in retirement](/learn/life-stages/estate-planning-for-retirees), then read the [elder care pillar](/learn/elder-care), which covers [Medicaid planning](/learn/elder-care/medicaid-planning) and [protecting your home](/learn/elder-care/protecting-your-home-from-nursing-home-costs). Adult children trying to help a parent should see [how to help an aging parent get their plan in order](/learn/elder-care/helping-aging-parents-plan).
 
+## What about buying a home, a serious diagnosis or a marriage without children?
+
+Each of these is a trigger rather than an age. Buyers should decide how to take title before closing, and our guide on [estate planning when you buy a home](/learn/life-stages/estate-planning-when-you-buy-a-home) compares joint tenancy, trusts and transfer-on-death deeds. Someone with a new diagnosis should sign a healthcare directive and power of attorney first, as covered in [estate planning after a serious diagnosis](/learn/life-stages/estate-planning-after-a-serious-diagnosis). Married couples with no children face a particular second-death question, answered in [estate planning for couples without children](/learn/life-stages/estate-planning-for-couples-without-children).
+
 ## What should you do after a spouse dies?
 
 Settle your spouse's estate first, then rebuild your own plan over the following months. Your documents probably name your spouse in every important role, and portability of the estate tax exemption may be time-sensitive. Our guide on [updating your plan after your spouse dies](/learn/life-stages/estate-planning-after-spouse-dies) separates the urgent from the optional. The [after a death pillar](/learn/after-a-death) covers the practical steps for the estate itself.
@@ -112,6 +116,9 @@ Settle your spouse's estate first, then rebuild your own plan over the following
 | [Estate planning if you are single or have no children](/learn/life-stages/estate-planning-for-single-people) | Choosing heirs, executors and agents when no family fills the roles. |
 | [Estate planning in retirement: what to review at 60 and beyond](/learn/life-stages/estate-planning-for-retirees) | Long-term care, retirement accounts and taxes for later life. |
 | [Updating your plan after your spouse dies](/learn/life-stages/estate-planning-after-spouse-dies) | Rebuilding roles, portability and retirement account choices after a loss. |
+| [Estate planning when you buy a home: title, trusts and beneficiaries](/learn/life-stages/estate-planning-when-you-buy-a-home) | How to take title at closing, what a trust does to your mortgage and which documents to sign that month. |
+| [Estate planning after a serious diagnosis: the first documents to sign](/learn/life-stages/estate-planning-after-a-serious-diagnosis) | The order to sign directives, powers of attorney and a will, and how capacity and signing logistics work. |
+| [Estate planning for couples without children](/learn/life-stages/estate-planning-for-couples-without-children) | Intestacy surprises, protecting the survivor and deciding who inherits after both deaths. |
 
 ## Which life events should trigger a review?
 

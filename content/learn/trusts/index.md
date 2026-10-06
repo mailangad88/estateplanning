@@ -92,7 +92,7 @@ Quick rules of thumb:
 - **A will-based plan may be enough** when your estate is modest, your assets mostly pass by beneficiary designation, and your state has a simple probate process.
 - **A trust is worth a close look** when you own real estate (especially in more than one state), want incapacity planning, have young or vulnerable beneficiaries or want privacy.
 
-Our article [will vs. living trust](/learn/trusts/will-vs-trust) offers a side-by-side table and a decision checklist. For background on wills, see [what a will cannot do](/learn/wills/what-a-will-cannot-do), and for the probate process see [what is probate](/learn/probate/what-is-probate).
+Our article [will vs. living trust](/learn/trusts/will-vs-trust) offers a side-by-side table and a decision checklist. If you are asking whether a trust is worth it for you, read [do I need a living trust](/learn/trusts/do-i-need-a-living-trust), and for pricing see [how much a living trust costs](/learn/trusts/how-much-does-a-living-trust-cost). For background on wills, see [what a will cannot do](/learn/wills/what-a-will-cannot-do), and for the probate process see [what is probate](/learn/probate/what-is-probate).
 
 ## Why does funding a trust matter?
 
@@ -167,6 +167,9 @@ If a trust is not needed, that is a perfectly good outcome. Many families do wel
 - [Trusts for children: controlling when and how kids inherit](/learn/trusts/trusts-for-children) describes staged distributions, pot trusts and coordinating with guardians and life insurance.
 - [Spendthrift and asset protection trusts for heirs](/learn/trusts/spendthrift-trusts) shows how to shield an inheritance and where the protection ends.
 - [Does a living trust save taxes? Common myths about trusts](/learn/trusts/does-a-trust-avoid-taxes) separates what trusts do for taxes from what they do not.
+- [How much does a living trust cost?](/learn/trusts/how-much-does-a-living-trust-cost) gives typical price ranges, what drives them and the costs people forget.
+- [Do I need a living trust?](/learn/trusts/do-i-need-a-living-trust) lists the situations where a trust helps, where a will is enough and a ten-question self-check.
+- [How to transfer a house to a living trust](/learn/trusts/transfer-house-to-living-trust) covers the deed, mortgage, insurance and property tax steps.
 
 ## How we can help
 

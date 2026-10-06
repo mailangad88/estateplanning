@@ -102,6 +102,8 @@ If the home was in a revocable trust, the trust typically becomes irrevocable at
 
 Check the title and the condition before committing. Order a title search to reveal unpaid property taxes, contractor liens, judgments or a second mortgage, because these stay with the property. An inspection before you move in or list the house will show whether repairs are needed and help you set a realistic price. If the cost of repairs plus liens exceeds the value, selling as is to an investor, or even declining the inheritance through a written disclaimer, can be reasonable. Ask an attorney how your state handles liens against a decedent's property.
 
+If you decide to sell, [selling inherited property](/learn/after-a-death/selling-inherited-property) explains who can sign, how the stepped-up basis works and what to do when siblings disagree.
+
 ## How we can help
 
 Questions about deeds, mortgages, co-owners and taxes are common, and the order in which you do things matters. Our attorneys can explain how title passes in your situation and what to sign. Use the [plan finder](/plan-finder) or schedule a consultation whenever you are ready.

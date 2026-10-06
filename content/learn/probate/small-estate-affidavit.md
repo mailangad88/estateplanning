@@ -111,6 +111,8 @@ You can plan to make the process easier, but be careful about trying to game a t
 
 Start with the basics: secure the property, order certified death certificates, and make a list of every account and debt. Do not pay creditors out of your own pocket without keeping receipts. Do not move or spend the decedent's money before you know whether the estate is small and who is entitled. Our [after-a-death checklist](/learn/after-a-death/what-to-do-when-someone-dies-checklist) walks through the first weeks.
 
+If the estate is too large for the affidavit, [how to file probate](/learn/probate/how-to-file-probate) walks through the full process.
+
 ## How we can help
 
 A small estate does not always need a lawyer, but a short consultation can confirm whether you qualify and keep you from signing something that creates liability. If you are planning ahead, our [plan finder](/plan-finder) can show you which documents help your family avoid court, and you can book a consultation with one of our attorneys to review your situation.

@@ -10,7 +10,8 @@ import LinkList from "@/components/LinkList";
 import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
 import { getCluster, getClusterArticles, getClusters, getPillar } from "@/lib/library";
-import { siteLinksFor } from "@/lib/site-links";
+import ToolsBox from "@/components/ToolsBox";
+import { siteLinksFor, toolsFor } from "@/lib/site-links";
 import { articleSchema, breadcrumbSchema, faqSchema, graph, itemListSchema } from "@/lib/schema";
 
 type Params = { cluster: string };
@@ -70,6 +71,7 @@ export default async function PillarPage({ params }: { params: Promise<Params> }
       />
       <Toc headings={p.headings} />
       <div className="prose" dangerouslySetInnerHTML={{ __html: p.html }} />
+      <ToolsBox items={toolsFor(slug)} />
       <Faqs faqs={p.faqs} />
       <CtaBox topic={cluster.name} />
       <LinkList
