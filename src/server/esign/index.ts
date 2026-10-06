@@ -29,5 +29,8 @@ export function esignProviderFromEnv(env: Env = process.env): EsignProvider {
   if (env.NODE_ENV === "production" && env.ESIGN_ALLOW_MOCK !== "true") {
     throw new Error("E-sign provider is not configured. Set ESIGN_PROVIDER and its credentials, or ESIGN_ALLOW_MOCK=true to override.");
   }
-  return new MockEsignProvider(env.ESIGN_MOCK_SECRET);
+  // One mock per process so envelopes created by one request are there for the webhook that follows.
+  const g = globalThis as unknown as { __epMockEsign?: MockEsignProvider };
+  g.__epMockEsign ??= new MockEsignProvider(env.ESIGN_MOCK_SECRET);
+  return g.__epMockEsign;
 }

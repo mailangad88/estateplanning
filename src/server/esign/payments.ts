@@ -55,3 +55,17 @@ export class MockPaymentProvider implements PaymentProvider {
     return [JSON.parse(rawBody) as PaymentWebhookEvent];
   }
 }
+
+/**
+ * Picks the payment provider. Only the mock exists until the firm's processor
+ * (LawPay, Clio Payments or Stripe on the firm's account) is chosen; production
+ * refuses the mock unless PAYMENTS_ALLOW_MOCK=true.
+ */
+export function paymentProviderFromEnv(env: Record<string, string | undefined> = process.env): PaymentProvider {
+  if (env.NODE_ENV === "production" && env.PAYMENTS_ALLOW_MOCK !== "true") {
+    throw new Error("Payment provider is not configured. Connect the firm's processor, or set PAYMENTS_ALLOW_MOCK=true to override.");
+  }
+  const g = globalThis as unknown as { __epMockPay?: MockPaymentProvider };
+  g.__epMockPay ??= new MockPaymentProvider(env.PAYMENTS_MOCK_SECRET);
+  return g.__epMockPay;
+}
