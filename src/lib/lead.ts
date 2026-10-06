@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { US_STATES } from "@/config/firm";
 import { toolConfig } from "@/config/tools";
+import { HEARD_FROM_VALUES } from "@/lib/heardFrom";
 
 const quizAnswers = z.object({
   matterType: z.enum(["new_plan", "update_plan", "after_death", "elder_care", "not_sure"]),
@@ -73,6 +74,8 @@ export const leadSubmissionSchema = z.object({
       utmContent: z.string().max(200).optional(),
       gclid: z.string().max(300).optional(),
       fbclid: z.string().max(300).optional(),
+      /** Optional "How did you hear about us?" answer. Self-reported, so AI-assistant referrals can be counted. */
+      heardFrom: z.enum(HEARD_FROM_VALUES).optional(),
     })
     .default({}),
   /** Honeypot. Real visitors never see or fill this field. */

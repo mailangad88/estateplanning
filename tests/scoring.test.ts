@@ -1,5 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { captureTags, scoreLead, segmentTags } from "@/lib/scoring";
+import { captureTags, heardFromTags, scoreLead, segmentTags } from "@/lib/scoring";
+
+describe("heardFromTags", () => {
+  it("tags the self-reported source and adds nothing when skipped", () => {
+    expect(heardFromTags({ heardFrom: "ai_assistant" })).toEqual(["heard:ai_assistant"]);
+    expect(heardFromTags({})).toEqual([]);
+  });
+});
 
 describe("scoreLead", () => {
   it("marks out-of-state leads as not a fit", () => {

@@ -306,3 +306,11 @@ table.facts th { width: 34%; background: var(--surface); }
 .quiz .big { font-size: 2.4rem; font-weight: 700; color: var(--accent); }
 .quiz-review li { margin-bottom: 16px; }
 .quiz-teaser { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; }
+/* Mega footer */
+.mega-footer { display: grid; gap: 24px; grid-template-columns: repeat(3, 1fr); margin-bottom: 24px; }
+.mega-footer h2 { font-size: 0.95rem; margin: 0 0 8px; color: var(--fg, inherit); }
+.mega-footer ul { list-style: none; margin: 0; padding: 0; }
+.mega-footer li { padding: 3px 0; }
+.mega-footer .count { color: var(--muted); }
+@media (max-width: 900px) { .mega-footer { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .mega-footer { grid-template-columns: 1fr; } }

@@ -1,3 +1,4 @@
+import { FIGURES, usdFigure } from "@/config/figures";
 import { Figure } from "../Figure";
 import { Card, Pill, Text } from "../primitives";
 import { Icon } from "../icons/Icon";
@@ -6,7 +7,7 @@ import type { DiagramProps } from "./types";
 
 const notes = [
   { icon: "partner", title: "Married couples", body: "A surviving spouse may use the first spouse's unused exclusion (portability). A return generally must be filed to elect it." },
-  { icon: "dollar", title: "Gifts during life", body: "Gifts count against the same exclusion. In 2026, up to $19,000 per person each year does not count." },
+  { icon: "dollar", title: "Gifts during life", body: `Gifts count against the same exclusion. In ${FIGURES.year}, up to ${usdFigure(FIGURES.annualGiftExclusion)} per person each year does not count.` },
   { icon: "map-pin", title: "Some states add more", body: "A few states have an estate or inheritance tax, often with a much lower threshold." },
 ];
 
@@ -19,7 +20,7 @@ export function EstateTaxThresholds({ caption, bare, step }: DiagramProps) {
       bare={bare}
       caption={caption}
       title="2026 federal estate tax threshold"
-      desc="For 2026 the federal estate tax exclusion is $15,000,000 per person, so most estates owe no federal estate tax. Only the value above the exclusion is taxed, at rates that top out at 40 percent. The bar is illustrative and not to scale: a typical estate falls far below the line. Married couples may be able to use a deceased spouse's unused exclusion by filing a return. Some states have their own estate or inheritance tax with lower thresholds."
+      desc={`For ${FIGURES.year} the federal estate tax exclusion is ${usdFigure(FIGURES.federalExemption)} per person, so most estates owe no federal estate tax. Only the value above the exclusion is taxed, at rates that top out at 40 percent. The bar is illustrative and not to scale: a typical estate falls far below the line. Married couples may be able to use a deceased spouse's unused exclusion by filing a return. Some states have their own estate or inheritance tax with lower thresholds.`}
     >
       <Frame h={560} title="Most estates owe no federal estate tax" sub="The 2026 federal exclusion is high. Some states set a lower bar." />
       <Pill x={820} y={30} text="2026 figures" fill="accentTint" ink="accentDeep" size={14} />
@@ -29,7 +30,7 @@ export function EstateTaxThresholds({ caption, bare, step }: DiagramProps) {
         </Text>
         <Card x={40} y={150} w={700} h={58} fill="accentTint" border="accent" />
         <Text x={64} y={186} size={22} weight={700} color="accentDeep">
-          $15,000,000 excluded
+          {usdFigure(FIGURES.federalExemption)} excluded
         </Text>
         <Card x={744} y={150} w={176} h={58} fill="clayTint" border="clay" dashed />
         <Text x={832} y={176} size={15} weight={700} anchor="middle">
