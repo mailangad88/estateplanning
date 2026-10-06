@@ -97,7 +97,7 @@ async function applySession(client: PoolClient, session: PgSession): Promise<voi
   );
 }
 
-async function inTx<R>(pool: Pool, session: PgSession, fn: (c: PoolClient) => Promise<R>): Promise<R> {
+export async function inTx<R>(pool: Pool, session: PgSession, fn: (c: PoolClient) => Promise<R>): Promise<R> {
   const client = await pool.connect();
   let broken = false;
   try {

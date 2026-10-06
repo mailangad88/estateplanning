@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { can } from "@/server/auth/policy";
 import { funnelReport } from "@/server/analytics";
-import { currentActor, getDb } from "@/server/runtime";
+import { currentActor, getDb, scopedDb } from "@/server/runtime";
 
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Analytics", robots: { index: false, follow: false } };
@@ -18,7 +18,7 @@ export default async function AnalyticsPage({ searchParams }: { searchParams: Pr
   const sp = await searchParams;
   const to = sp.to ? new Date(sp.to) : new Date();
   const from = sp.from ? new Date(sp.from) : new Date(to.getTime() - 30 * 86_400_000);
-  const db = await getDb();
+  const db = scopedDb(await getDb(), actor);
   const r = await funnelReport(db, actor, { from, to });
 
   return (

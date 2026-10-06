@@ -2,8 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ForbiddenError, writableVisibilities } from "@/server/auth/policy";
 import { buildCaseView, type CommentNode } from "@/server/portal/caseView";
-import { currentActor, getDb } from "@/server/runtime";
-import { ApproveEngagement, CommentForm, OfferActions } from "@/app/portal/actions";
+import { currentActor, getDb, scopedDb } from "@/server/runtime";
+import { ApproveEngagement, CommentForm, InviteClient, OfferActions } from "@/app/portal/actions";
 
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Case", robots: { index: false, follow: false } };
@@ -32,7 +32,7 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
   if (!actor) return <p>Please <Link href="/portal">sign in</Link>.</p>;
   let view;
   try {
-    view = await buildCaseView(await getDb(), actor, id);
+    view = await buildCaseView(scopedDb(await getDb(), actor), actor, id);
   } catch (err) {
     if (err instanceof ForbiddenError) return <p>You do not have access to this case.</p>;
     notFound();
@@ -48,6 +48,7 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
       <p><strong>Next step:</strong> {h.nextStep}{h.offerExpiresAt ? ` (respond by ${when(h.offerExpiresAt)})` : ""}</p>
 
       {view.access === "conflict_card" && h.offerAssignmentId && <OfferActions assignmentId={h.offerAssignmentId} />}
+      {view.access === "full" && h.assignedLawyer && actor.role !== "marketing" && <InviteClient leadId={id} />}
 
       {/* 2. Summary */}
       {s.summary && (

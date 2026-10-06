@@ -3,7 +3,7 @@ import { firm } from "@/config/firm";
 import { feePermission } from "@/lib/fees";
 import { can } from "@/server/auth/policy";
 import { currentRuleVersions, previewInvoice, ruleHistory } from "@/server/fees/admin";
-import { currentActor, getDb } from "@/server/runtime";
+import { currentActor, getDb, scopedDb } from "@/server/runtime";
 import { DEMO_FIRM_ID } from "@/server/seed";
 import { FeeRuleEditor } from "./FeeRuleEditor";
 
@@ -30,7 +30,7 @@ export default async function FeeAdmin() {
   const actor = await currentActor();
   if (!actor) return <p>Please <Link href="/portal">sign in</Link>.</p>;
   if (!can(actor, "manage_fee_rules")) return <p>Only platform admins can manage fee rules.</p>;
-  const db = await getDb();
+  const db = scopedDb(await getDb(), actor);
   const versions = await currentRuleVersions(db);
   const [start, end] = monthBounds();
   const history: Record<string, Awaited<ReturnType<typeof ruleHistory>>> = {};

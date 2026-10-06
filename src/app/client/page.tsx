@@ -2,7 +2,7 @@ import Link from "next/link";
 import { firm } from "@/config/firm";
 import { ForbiddenError } from "@/server/auth/policy";
 import { clientLeadId, clientStatus } from "@/server/services/clientPortal";
-import { currentActor, getDb } from "@/server/runtime";
+import { currentActor, getDb, scopedDb } from "@/server/runtime";
 import { MessageForm, UploadForm } from "@/app/client/ClientActions";
 
 export const dynamic = "force-dynamic";
@@ -13,7 +13,7 @@ const when = (iso: string) => new Date(iso).toLocaleDateString("en-US", { dateSt
 export default async function ClientHome() {
   const actor = await currentActor();
   if (!actor || actor.role !== "client") return <div className="container"><p>Please use the link from your attorney's office to sign in, or call us at {firm.phone}.</p></div>;
-  const db = await getDb();
+  const db = scopedDb(await getDb(), actor);
   const leadId = await clientLeadId(db, actor);
   if (!leadId) return <div className="container"><p>We could not find your case. Call us at {firm.phone}.</p></div>;
   let s;

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { can } from "@/server/auth/policy";
-import { currentActor, getDb } from "@/server/runtime";
+import { currentActor, getDb, scopedDb } from "@/server/runtime";
 import { intakeQueue } from "@/server/services/intakeQueue";
 import { ClaimButton } from "./QueueActions";
 
@@ -13,7 +13,7 @@ export default async function QueuePage() {
   const actor = await currentActor();
   if (!actor) return <p>Please <Link href="/portal">sign in</Link>.</p>;
   if (!can(actor, "work_intake_queue")) return <p>The intake queue is for the intake team.</p>;
-  const db = await getDb();
+  const db = scopedDb(await getDb(), actor);
   const items = await intakeQueue(db, actor, new Date());
   return (
     <>

@@ -7,6 +7,8 @@ import { Pool } from "pg";
 import { TABLES, type TableSpec } from "@/server/pg/mapping";
 import { createPgDb, type PgDb, type PgSession } from "@/server/pg";
 import { audit, verifyAuditChain } from "@/server/audit/log";
+import { PgMfaStore } from "@/server/pg/mfa";
+import { buildCaseView } from "@/server/portal/caseView";
 import type {
   Activity, Assignment, Comment, Consult, DocumentRecord, Engagement, Firm, Lawyer, Lead, Person, Task, User,
 } from "@/server/types";
@@ -41,7 +43,8 @@ const KIND_FOR_TYPE: Record<string, string> = {
 };
 
 describe("pg mapping covers schema.sql", () => {
-  const tables = parseTables(SCHEMA);
+  // user_mfa is read and written only by PgMfaStore (src/server/pg/mfa.ts), never through the Db mapping.
+  const tables = new Map([...parseTables(SCHEMA)].filter(([t]) => t !== "user_mfa"));
   const specs = Object.values(TABLES) as TableSpec[];
 
   it("maps every table in the schema and no other", () => {
@@ -386,6 +389,42 @@ suite("postgres integration", () => {
     expect(all[0].detail).toEqual({ zeta: expect.any(Number), alpha: { y: 1, x: 2 }, list: [3, 1, 2], bb: "b", a: "a" });
     expect((await service.audit.last())?.seq).toBe(10);
     expect(await service.audit.list(undefined, { leadId: "l1" })).toHaveLength(10);
+  });
+
+  maybe("case view through an offer-stage attorney's session shows only the conflict card", async () => {
+    await service.leads.insert({ ...offerLead, id: "l-card", firmId: undefined, assignedLawyerId: undefined });
+    await service.assignments.insert({
+      id: "a-card", leadId: "l-card", lawyerId: "lw1", firmId: "f1", offeredAt: T0, expiresAt: FUTURE, status: "offered", routingReason: "x",
+    });
+    const actor = { userId: "u-attorney", role: "attorney" as const, firmId: "f1", lawyerId: "lw1", mfa: true };
+    const attorney = as({ userId: actor.userId, role: actor.role, firmId: actor.firmId, lawyerId: actor.lawyerId });
+    const view = await buildCaseView(attorney, actor, "l-card");
+    expect(view.access).toBe("conflict_card");
+    expect(Object.keys(view.sections).sort()).toEqual(["conflict", "summary"]);
+    expect(view.header.offerAssignmentId).toBe("a-card");
+    expect(JSON.stringify(view)).not.toContain("SECRET");
+    const other = as({ userId: "u-other", role: "attorney", firmId: "f2", lawyerId: "lw2" });
+    await expect(buildCaseView(other, { ...actor, userId: "u-other", firmId: "f2", lawyerId: "lw2" }, "l-card")).rejects.toThrow();
+  });
+
+  maybe("MFA secrets are stored encrypted and only the service role can read them", async () => {
+    const store = new PgMfaStore(pool);
+    await store.put("u-intake", { totpSecret: "JBSWY3DPEHPK3PXP", lastUsedStep: 7, recoveryCodeHashes: ["h1", "h2"], enrolledAt: T0 });
+    expect(await store.get("u-intake")).toEqual({ totpSecret: "JBSWY3DPEHPK3PXP", lastUsedStep: 7, recoveryCodeHashes: ["h1", "h2"], enrolledAt: T0 });
+    await store.put("u-intake", { totpSecret: "JBSWY3DPEHPK3PXP", lastUsedStep: 8, recoveryCodeHashes: ["h2"], enrolledAt: T0 });
+    expect((await store.get("u-intake"))?.lastUsedStep).toBe(8);
+    expect(await store.get("nobody")).toBeNull();
+    const raw = await admin.query("SELECT totp_secret_enc FROM user_mfa WHERE user_id = 'u-intake'");
+    expect(raw.rows[0].totp_secret_enc).not.toContain("JBSWY3DP");
+    const c = await admin.connect();
+    try {
+      await c.query("BEGIN");
+      await c.query("SET LOCAL ROLE app_user");
+      await expect(c.query("SELECT * FROM user_mfa")).rejects.toThrow(/permission denied/);
+    } finally {
+      await c.query("ROLLBACK");
+      c.release();
+    }
   });
 
   maybe("audit_events cannot be updated or deleted", async () => {

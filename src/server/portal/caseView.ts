@@ -121,6 +121,41 @@ function nextStep(lead: Lead, access: LeadAccess): string {
   }
 }
 
+/**
+ * Under Postgres row-level security a lawyer holding only an open offer cannot read
+ * the lead row at all; the store exposes the offer card through a narrow view
+ * instead. This turns that card into a minimal lead carrying nothing confidential,
+ * so the same access logic and conflict-card rendering apply to both stores.
+ */
+type OfferCardRow = Pick<Lead, "id" | "offerSummary" | "conflictCard" | "matterType" | "state" | "county" | "urgent" | "score">;
+
+function leadFromOfferCard(card: OfferCardRow): Lead {
+  return {
+    ...card,
+    personId: "",
+    createdAt: "",
+    stage: "offered",
+    stageHistory: [],
+    segments: [],
+    source: {},
+    consent: { version: "", smsConsent: false, smsConsentText: null, acknowledgedNoRelationship: true, pageUrl: "", ip: null, userAgent: null, capturedAt: "" },
+    intake: { summary: "", redFlags: [], deadlines: [], household: { members: [] }, assets: {}, answers: {} },
+  };
+}
+
+async function readLead(db: Db, leadId: string): Promise<Lead | undefined> {
+  const lead = await db.leads.get(leadId);
+  if (lead) return lead;
+  const pg = db as Db & { leadOfferCard?: (id: string) => Promise<OfferCardRow | undefined> };
+  const card = pg.leadOfferCard ? await pg.leadOfferCard(leadId) : undefined;
+  return card ? leadFromOfferCard(card) : undefined;
+}
+
+async function readOfferCards(db: Db): Promise<Lead[]> {
+  const pg = db as Db & { leadOfferCards?: () => Promise<OfferCardRow[]> };
+  return pg.leadOfferCards ? (await pg.leadOfferCards()).map(leadFromOfferCard) : [];
+}
+
 export function threadComments(comments: Comment[]): CommentNode[] {
   const nodes = new Map<string, CommentNode>(comments.map((c) => [c.id, { ...c, replies: [] }]));
   const roots: CommentNode[] = [];
@@ -134,7 +169,7 @@ export function threadComments(comments: Comment[]): CommentNode[] {
 
 export async function buildCaseView(db: Db, actor: Actor, leadId: string, now = new Date()): Promise<CaseView> {
   requireMfa(actor);
-  const lead = await db.leads.get(leadId);
+  const lead = await readLead(db, leadId);
   if (!lead) throw new Error("Lead not found");
   const assignments = await db.assignments.list(undefined, { leadId });
   const access = leadAccess(actor, lead, assignments, now);
@@ -215,7 +250,10 @@ export async function buildCaseView(db: Db, actor: Actor, leadId: string, now = 
 export async function visibleLeads(db: Db, actor: Actor, now = new Date()): Promise<{ lead: Lead; access: LeadAccess }[]> {
   requireMfa(actor);
   const assignments = await db.assignments.list();
-  return (await db.leads.list())
+  const leads = await db.leads.list();
+  const seen = new Set(leads.map((l) => l.id));
+  const cards = (await readOfferCards(db)).filter((c) => !seen.has(c.id));
+  return [...leads, ...cards]
     .map((lead) => ({ lead, access: leadAccess(actor, lead, assignments.filter((a) => a.leadId === lead.id), now) }))
     .filter((x) => x.access !== "none");
 }
@@ -240,7 +278,7 @@ export async function lawyerDashboard(db: Db, actor: Actor, now = new Date()): P
       mine
         .filter((a) => a.status === "offered" && new Date(a.expiresAt) > now)
         .map(async (a) => {
-          const lead = (await db.leads.get(a.leadId))!;
+          const lead = (await readLead(db, a.leadId))!;
           return { assignmentId: a.id, leadId: a.leadId, offerSummary: lead.offerSummary, expiresAt: a.expiresAt, urgent: lead.urgent };
         }),
     )

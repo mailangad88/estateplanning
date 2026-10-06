@@ -12,7 +12,7 @@ export async function POST(request: Request) {
     const target = r.reason === "no_preauth" ? "/portal/login?expired=1" : `/portal/login/verify?error=${r.reason}`;
     return NextResponse.redirect(new URL(target, request.url), 303);
   }
-  const res = NextResponse.redirect(new URL("/portal", request.url), 303);
+  const res = NextResponse.redirect(new URL(r.role === "client" ? "/client" : "/portal", request.url), 303);
   res.headers.append("set-cookie", sessionCookie(r.sessionToken));
   res.headers.append("set-cookie", clearPreauthCookie());
   return res;

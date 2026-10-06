@@ -76,7 +76,7 @@ async function stop(db: Db, enr: SequenceEnrollment, reason: string, at: Date): 
 
 async function stopActive(db: Db, leadId: string, sequenceIds: string[], reason: string, at: Date): Promise<void> {
   for (const e of await db.enrollments.list((e) => e.leadId === leadId && e.status === "active" && sequenceIds.includes(e.sequenceId))) {
-    stop(db, e, reason, at);
+    await stop(db, e, reason, at);
   }
 }
 
@@ -200,12 +200,12 @@ export async function evaluateSends(db: Db, now: Date, ctx: SchedulerCtx = {}): 
     if (!seq || !lead) continue;
     const person = await db.persons.get(lead.personId);
     if (!person) {
-      stop(db, enr, "person_missing", now);
+      await stop(db, enr, "person_missing", now);
       continue;
     }
     const why = await exitReason(db, seq, lead, person);
     if (why) {
-      stop(db, enr, `exit:${why}`, now);
+      await stop(db, enr, `exit:${why}`, now);
       continue;
     }
 
@@ -335,19 +335,19 @@ export async function markSent(db: Db, enrollmentId: string, stepId: string, at:
 export async function onStageChange(db: Db, leadId: string, stage: Stage, at: Date): Promise<void> {
   switch (stage) {
     case "consult_booked":
-      stopActive(db, leadId, PRE_SALE.filter((s) => s !== "consult_booked"), "stage:consult_booked", at);
+      await stopActive(db, leadId, PRE_SALE.filter((s) => s !== "consult_booked"), "stage:consult_booked", at);
       await enroll(db, leadId, "consult_booked", at);
       break;
     case "consult_held":
-      stopActive(db, leadId, ["consult_booked", "no_show_recovery", "long_term"], "stage:consult_held", at);
+      await stopActive(db, leadId, ["consult_booked", "no_show_recovery", "long_term"], "stage:consult_held", at);
       await enroll(db, leadId, "consult_held_not_signed", at);
       break;
     case "retainer_signed":
-      stopActive(db, leadId, PRE_SALE, "stage:retainer_signed", at);
+      await stopActive(db, leadId, PRE_SALE, "stage:retainer_signed", at);
       await enroll(db, leadId, "signed_onboarding", at);
       break;
     case "plan_complete":
-      stopActive(db, leadId, ["signed_onboarding"], "stage:plan_complete", at);
+      await stopActive(db, leadId, ["signed_onboarding"], "stage:plan_complete", at);
       await enroll(db, leadId, "plan_complete", at);
       await enroll(db, leadId, "annual_review", at);
       break;
@@ -358,18 +358,18 @@ export async function onStageChange(db: Db, leadId: string, stage: Stage, at: Da
 
 /** Consult marked no-show: stop reminders, start recovery. */
 export async function onConsultNoShow(db: Db, leadId: string, at: Date): Promise<void> {
-  stopActive(db, leadId, ["consult_booked"], "consult_no_show", at);
+  await stopActive(db, leadId, ["consult_booked"], "consult_no_show", at);
   await enroll(db, leadId, "no_show_recovery", at);
 }
 
 /** Lead exited. Only "unresponsive" goes to long_term; not_a_fit, conflict and the rest stop all nurture. */
 export async function onExit(db: Db, leadId: string, reason: ExitReason, at: Date): Promise<void> {
   if (reason === "unresponsive") {
-    stopActive(db, leadId, PRE_SALE.filter((s) => s !== "long_term"), "exit:unresponsive", at);
+    await stopActive(db, leadId, PRE_SALE.filter((s) => s !== "long_term"), "exit:unresponsive", at);
     const lead = await db.leads.get(leadId);
     if (lead && !isGriefLead(lead)) await enroll(db, leadId, "long_term", at);
   } else {
-    stopActive(db, leadId, PRE_SALE, `exit:${reason}`, at);
+    await stopActive(db, leadId, PRE_SALE, `exit:${reason}`, at);
   }
 }
 

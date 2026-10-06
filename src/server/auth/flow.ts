@@ -4,6 +4,7 @@
  * tokens or addresses; audit detail carries only ids and reasons.
  */
 import type { Db } from "@/server/db";
+import type { Role } from "@/server/types";
 import { audit } from "@/server/audit/log";
 import { issueSession } from "@/server/auth/session";
 import {
@@ -87,6 +88,11 @@ export async function finishLink(db: Db, token: string, now = new Date()): Promi
     return null;
   }
   await audit(db, { userId: user.id, role: user.role }, { action: "auth.link_accepted", resourceType: "user", resourceId: user.id, at: now });
+  return issuePreauth(uid, now);
+}
+
+/** Pending token for a user who has proven who they are by some first factor (email link, client invite). */
+export function issuePreauth(uid: string, now = new Date()): string {
   return signToken("preauth", { uid, exp: Math.floor(now.getTime() / 1000) + PREAUTH_TTL_S } satisfies PreauthPayload);
 }
 
@@ -129,7 +135,7 @@ export async function enrollMfa(
 }
 
 export type VerifyResult =
-  | { ok: true; sessionToken: string; usedRecoveryCode: boolean }
+  | { ok: true; sessionToken: string; usedRecoveryCode: boolean; role: Role }
   | { ok: false; reason: "no_preauth" | "bad_code" | "locked" };
 
 /** Checks a TOTP code or a one-time recovery code and, on success, returns a full session token. */
@@ -180,7 +186,7 @@ export async function verifyMfa(db: Db, preauthToken: string | undefined, code: 
     resourceId: uid,
     at: now,
   });
-  return { ok: true, sessionToken: issueSession(uid, true, now), usedRecoveryCode: usedRecovery };
+  return { ok: true, sessionToken: issueSession(uid, true, now), usedRecoveryCode: usedRecovery, role: user.role };
 }
 
 export function preauthCookie(token: string): string {
