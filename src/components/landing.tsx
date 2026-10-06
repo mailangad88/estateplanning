@@ -73,46 +73,6 @@ export function TrustRow({ items }: { items: { icon: string; text: string }[] })
   );
 }
 
-export function StageCard({ stage }: { stage: LifeStage }) {
-  const Icon = ICONS[stage.icon] ?? Heart;
-  return (
-    <Link href={`/estate-planning-for/${stage.slug}`} className={`stage-card stage-card--${stage.tone}`}>
-      <span className="stage-card__icon">
-        <Icon size={24} aria-hidden="true" />
-      </span>
-      <strong>{stage.label}</strong>
-      <span className="stage-card__who">{stage.who}</span>
-      <span className="stage-card__go">
-        See your plan <ArrowRight size={16} aria-hidden="true" />
-      </span>
-    </Link>
-  );
-}
-
-export function StageGrid({ exclude }: { exclude?: string }) {
-  return (
-    <ul className="stage-grid">
-      {LIFE_STAGES.filter((s) => s.slug !== exclude).map((s) => (
-        <li key={s.slug}>
-          <StageCard stage={s} />
-        </li>
-      ))}
-      <li>
-        <Link href="/plan-finder" className="stage-card stage-card--finder">
-          <span className="stage-card__icon">
-            <Compass size={24} aria-hidden="true" />
-          </span>
-          <strong>Not sure which fits?</strong>
-          <span className="stage-card__who">Answer a few questions and we suggest the right documents.</span>
-          <span className="stage-card__go">
-            Start the plan finder <ArrowRight size={16} aria-hidden="true" />
-          </span>
-        </Link>
-      </li>
-    </ul>
-  );
-}
-
 export function FeatureCard({ icon, tone, title, children, href, cta }: { icon: string; tone?: string; title: string; children: ReactNode; href?: string; cta?: string }) {
   return (
     <div className="feature-card">
@@ -139,5 +99,69 @@ export function Steps({ steps, vertical }: { steps: { title: string; text: React
         </li>
       ))}
     </ol>
+  );
+}
+
+/* ---------- Life cycle view ---------- */
+
+const CYCLE = { w: 1180, h: 840, cx: 590, cy: 400, rx: 450, ry: 300 };
+
+function cyclePoint(i: number, n: number, offset = 0) {
+  const a = ((-90 + ((i + offset) * 360) / n) * Math.PI) / 180;
+  return { x: CYCLE.cx + CYCLE.rx * Math.cos(a), y: CYCLE.cy + CYCLE.ry * Math.sin(a), a };
+}
+
+/**
+ * The life stages as one loop through life, from a new couple to helping aging parents, which is
+ * where the next generation's plan begins. Desktop shows a ring around the plan finder; phones get
+ * the same list as a vertical timeline. `current` marks the stage page the reader is on.
+ */
+export function LifeCycle({ current }: { current?: string }) {
+  const n = LIFE_STAGES.length;
+  const pct = (v: number, of: number) => `${((v / of) * 100).toFixed(3)}%`;
+  return (
+    <div className="cycle">
+      <svg className="cycle__ring" viewBox={`0 0 ${CYCLE.w} ${CYCLE.h}`} aria-hidden="true" focusable="false">
+        <ellipse cx={CYCLE.cx} cy={CYCLE.cy} rx={CYCLE.rx} ry={CYCLE.ry} className="cycle__track" />
+        <ellipse cx={CYCLE.cx} cy={CYCLE.cy} rx={CYCLE.rx} ry={CYCLE.ry} className="cycle__flow" />
+        {LIFE_STAGES.map((s, i) => {
+          // A chevron halfway to the next stage, pointing along the ring (clockwise).
+          const { x, y, a } = cyclePoint(i, n, 0.5);
+          const tangent = (Math.atan2(CYCLE.ry * Math.cos(a), -CYCLE.rx * Math.sin(a)) * 180) / Math.PI;
+          return <path key={s.slug} d="M -7 -9 L 5 0 L -7 9" transform={`translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${tangent.toFixed(1)})`} className="cycle__chevron" />;
+        })}
+      </svg>
+      <ol className="cycle__list">
+        {LIFE_STAGES.map((s, i) => {
+          const { x, y } = cyclePoint(i, n);
+          const Icon = ICONS[s.icon] ?? Heart;
+          const here = s.slug === current;
+          return (
+            <li key={s.slug} className={`cycle__item${i === 0 ? " is-top" : ""}`} style={{ ["--x" as string]: pct(x, CYCLE.w), ["--y" as string]: pct(y, CYCLE.h) }}>
+              <Link href={`/estate-planning-for/${s.slug}`} className={`cycle-node cycle-node--${s.tone}${here ? " is-current" : ""}`} aria-current={here ? "page" : undefined}>
+                <span className="cycle-node__dot">
+                  <Icon size={26} aria-hidden="true" />
+                  <span className="cycle-node__n" aria-hidden="true">{i + 1}</span>
+                </span>
+                <span className="cycle-node__text">
+                  <span className="cycle-node__when">{here ? "You are here" : s.when}</span>
+                  <strong>{s.label}</strong>
+                  <span className="cycle-node__who">{s.who}</span>
+                </span>
+              </Link>
+            </li>
+          );
+        })}
+      </ol>
+      <div className="cycle__hub">
+        <span className="cycle__hub-icon">
+          <Compass size={26} aria-hidden="true" />
+        </span>
+        <p className="kicker">Your plan grows with you</p>
+        <h3>Not sure which fits?</h3>
+        <p>Answer a few questions and we suggest the right documents for where you are now.</p>
+        <Link href="/plan-finder" className="button">Start the plan finder</Link>
+      </div>
+    </div>
   );
 }

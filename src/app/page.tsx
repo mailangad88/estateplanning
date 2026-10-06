@@ -12,7 +12,7 @@ import { EmailCapture } from "@/components/capture";
 import { MAGNET_FORMATS, getMagnets } from "@/lib/magnets";
 import { getQuizzes } from "@/lib/quizzes";
 import { HeroFamilyHome, SpotVideoCall } from "@/components/visuals";
-import { Band, FeatureCard, IconBadge, SectionHead, StageGrid, Steps, TrustRow } from "@/components/landing";
+import { Band, FeatureCard, IconBadge, LifeCycle, SectionHead, Steps, TrustRow } from "@/components/landing";
 
 const FEATURED_GUIDES = ["what-is-estate-planning", "revocable-living-trust-explained", "guardianship-for-minor-children", "powers-of-attorney", "how-probate-works", "what-happens-if-you-die-without-a-will"];
 
@@ -82,11 +82,12 @@ export default function Home() {
       <Band label="Plans by life stage">
         <SectionHead
           kicker="Start where you are"
-          title="Every stage of life needs a different plan"
-          lead="A couple who just married worries about different things than a retiree or a family with three kids. Pick the stage closest to yours."
+          title="Your plan changes as your life does"
+          lead="A couple who just married worries about different things than a retiree or a family with three kids. Follow the cycle and pick the stage closest to yours."
+          center
         />
-        <StageGrid />
-        <p style={{ marginTop: 28 }}>
+        <LifeCycle />
+        <p className="cycle-more">
           <Link href="/estate-planning-for" className="arrow-link">
             Other situations: business owners, special needs, military, after a death <ArrowRight size={16} aria-hidden="true" />
           </Link>
