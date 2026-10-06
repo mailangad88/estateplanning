@@ -13,6 +13,10 @@ export interface LeadRecord {
   score: ScoreResult;
   segments: string[];
   source: LeadSubmission["source"];
+  /** Which tool or form captured the lead, what was requested, and the tool's figures */
+  capture: LeadSubmission["capture"];
+  visitorId?: string;
+  priorTools: LeadSubmission["priorTools"];
   consent: ConsentRecord;
 }
 

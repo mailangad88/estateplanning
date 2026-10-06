@@ -11,6 +11,7 @@ import MedicaidLookback from "@/components/tools/MedicaidLookback";
 import Readiness from "@/components/tools/Readiness";
 import ExecutorPlanner from "@/components/tools/ExecutorPlanner";
 import ReviewReminder from "@/components/tools/ReviewReminder";
+import WillOrTrust from "@/components/tools/WillOrTrust";
 
 const COMPONENTS: Record<string, React.ComponentType> = {
   "estate-tax-estimator": EstateTax,
@@ -21,6 +22,7 @@ const COMPONENTS: Record<string, React.ComponentType> = {
   "plan-readiness-assessment": Readiness,
   "executor-workload": ExecutorPlanner,
   "plan-review-reminder": ReviewReminder,
+  "will-or-trust": WillOrTrust,
 };
 
 type Props = { params: Promise<{ slug: string }> };

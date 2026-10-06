@@ -5,7 +5,10 @@ import { buildConsentRecord } from "@/lib/consent";
 import { deliverLead, type LeadRecord } from "@/lib/crm";
 import { effectiveContactMethod, leadSubmissionSchema } from "@/lib/lead";
 import { educationTopics } from "@/lib/quiz";
-import { scoreLead, segmentTags } from "@/lib/scoring";
+import { captureTags, scoreLead, segmentTags } from "@/lib/scoring";
+import { findGuide } from "@/content/guides";
+import { getDb } from "@/server/runtime";
+import { ingestLead } from "@/server/services/leads";
 
 export async function POST(request: Request) {
   let json: unknown;
@@ -23,7 +26,12 @@ export async function POST(request: Request) {
   const lead = parsed.data;
 
   // Honeypot filled: answer like a success so bots learn nothing, but drop the lead.
-  if (lead.website) return NextResponse.json({ ok: true, topics: [] });
+  if (lead.website) return NextResponse.json({ ok: true, served: true, topics: [] });
+
+  const guide = lead.capture.resource ? findGuide(lead.capture.resource) : undefined;
+  if (lead.capture.tool === "guide" && !guide) {
+    return NextResponse.json({ error: "That guide could not be found" }, { status: 422 });
+  }
 
   const now = new Date();
   const record: LeadRecord = {
@@ -47,9 +55,14 @@ export async function POST(request: Request) {
       answers: lead.answers,
       goals: lead.goals,
       smsConsent: lead.smsConsent,
+      capture: lead.capture,
+      priorTools: lead.priorTools,
     }),
-    segments: segmentTags(lead.answers),
+    segments: [...new Set([...segmentTags(lead.answers), ...captureTags(lead.capture, guide?.segments)])],
     source: lead.source,
+    capture: lead.capture,
+    visitorId: lead.visitorId,
+    priorTools: lead.priorTools,
     consent: buildConsentRecord({
       smsConsent: lead.smsConsent,
       acknowledgedNoRelationship: lead.acknowledgedNoRelationship,
@@ -72,9 +85,20 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "We could not save your request. Please call us." }, { status: 502 });
   }
 
+  // Also hand the lead to the portal backend once it is switched on. A failure here never
+  // loses the lead: the CRM delivery above has already succeeded.
+  if (process.env.PORTAL_INGEST_LEADS === "true") {
+    try {
+      ingestLead(getDb(), record, now);
+    } catch (err) {
+      console.error("portal ingest failed", { id: record.id, error: err instanceof Error ? err.message : String(err) });
+    }
+  }
+
   return NextResponse.json({
     ok: true,
     served: record.score.tier !== "not_a_fit",
     topics: educationTopics(lead.answers),
+    ...(guide ? { guideUrl: `/resources/${guide.slug}/read` } : {}),
   });
 }

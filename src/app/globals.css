@@ -144,6 +144,92 @@ dl.glossary dd { margin: 4px 0 0; }
 .modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 100; padding: 16px; }
 .modal { background: var(--bg); border-radius: 12px; max-width: 560px; width: 100%; padding: 24px; position: relative; max-height: 90vh; overflow: auto; }
 .modal-close { position: absolute; top: 8px; right: 12px; background: none; border: 0; font-size: 1.6rem; cursor: pointer; color: var(--text); }
+/* Lead capture tools */
+.linklike { background: none; border: 0; padding: 0; color: var(--accent); text-decoration: underline; cursor: pointer; font: inherit; }
+.button.small { padding: 8px 14px; font-size: 0.9rem; }
+.field-row { display: grid; gap: 0 12px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.lead-form { margin-top: 24px; }
+.card-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); padding: 0; list-style: none; }
+.card-grid .card { display: flex; flex-direction: column; gap: 8px; }
+.card-grid .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.card-grid .card .button { margin-top: auto; align-self: flex-start; }
+.result { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 24px 0; }
+.result .big { font-size: 2.6rem; font-weight: 700; line-height: 1.1; color: var(--accent); }
+.meter { height: 12px; background: var(--border); border-radius: 6px; overflow: hidden; margin: 12px 0; }
+.meter span { display: block; height: 100%; background: var(--accent); transition: width 0.8s ease; }
+.two-col { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.inline-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.inline-options .option { flex: 1 1 140px; margin: 0; }
+.question { margin-bottom: 20px; }
+.question > p { font-weight: 600; margin: 0 0 8px; }
+label.field input[type="range"] { padding: 0; border: 0; }
+.guide h2 { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
+.guide ul.checklist { list-style: none; padding: 0; }
+.guide ul.checklist li { padding: 6px 0 6px 32px; position: relative; }
+.guide ul.checklist li::before { content: ""; position: absolute; left: 0; top: 10px; width: 18px; height: 18px; border: 2px solid var(--muted); border-radius: 3px; }
+
+/* Sticky call / text bar on phones */
+.contact-bar { display: none; }
+@media (max-width: 720px) {
+  body { padding-bottom: 72px; }
+  .contact-bar {
+    display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; gap: 8px; padding: 10px 12px;
+    background: var(--surface); border-top: 1px solid var(--border);
+  }
+  .contact-bar__item {
+    flex: 1; text-align: center; padding: 10px 8px; border-radius: 8px; border: 1px solid var(--accent);
+    color: var(--accent); text-decoration: none; font-weight: 600; font-size: 0.9rem;
+  }
+  .contact-bar__item--primary { flex: 2; background: var(--accent); color: var(--accent-ink); }
+}
+
+/* Exit offer */
+.modal-backdrop { position: fixed; inset: 0; background: rgb(0 0 0 / 0.45); display: grid; place-items: center; z-index: 50; padding: 16px; }
+.modal { position: relative; background: var(--surface); color: var(--text); border-radius: 12px; padding: 28px; max-width: 480px; width: 100%; }
+.modal h2 { margin-top: 0; }
+.modal__close { position: absolute; top: 12px; right: 14px; text-decoration: none; font-size: 1.1rem; color: var(--muted); }
+.exit-banner {
+  position: fixed; left: 12px; right: 12px; bottom: 80px; z-index: 45; display: flex; align-items: center; gap: 10px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; font-size: 0.9rem;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 0.15);
+}
+.exit-banner span { flex: 1; }
+.exit-banner .linklike { text-decoration: none; color: var(--muted); }
+
+/* Probate vs trust explainer */
+.explainer { margin: 24px 0; }
+.explainer svg { width: 100%; height: auto; }
+.explainer__label { fill: var(--text); font-weight: 600; font-size: 15px; }
+.explainer__cap { fill: var(--muted); font-size: 12px; text-anchor: middle; }
+.explainer__node circle { fill: var(--surface); stroke: var(--border); stroke-width: 2; }
+.explainer__node text { text-anchor: middle; font-size: 18px; }
+.explainer__node .explainer__cap { font-size: 12px; }
+.explainer__node--court circle { stroke: var(--accent); stroke-dasharray: 4 4; }
+.explainer__track { stroke: var(--border); stroke-width: 3; stroke-linecap: round; }
+.explainer__token { fill: var(--accent); }
+.explainer__token--slow { animation: pvt-slow 9s ease-in-out infinite; }
+.explainer__token--fast { animation: pvt-fast 9s ease-in-out infinite; }
+@keyframes pvt-slow {
+  0% { transform: translateX(0); }
+  15% { transform: translateX(250px); }
+  80% { transform: translateX(250px); }
+  95%, 100% { transform: translateX(500px); }
+}
+@keyframes pvt-fast {
+  0% { transform: translateX(0); }
+  15% { transform: translateX(250px); }
+  30%, 100% { transform: translateX(500px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .explainer__token { animation: none; }
+  .meter span { transition: none; }
+}
+
+@media print {
+  header.site, footer.site, .contact-bar, .no-print { display: none !important; }
+  body { background: #fff; color: #000; padding: 0; }
+}
+.site-nav { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
 
 /* ---------- content pages (learn, glossary, state guides) ---------- */
 .breadcrumbs ol { list-style: none; padding: 0; margin: 24px 0 0; display: flex; flex-wrap: wrap; gap: 4px; font-size: 0.85rem; color: var(--muted); }

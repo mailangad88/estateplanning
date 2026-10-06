@@ -25,7 +25,7 @@ export type FeeType =
   | "per_signed_retainer"
   | "comp_plan_accrual";
 
-type Permission = "allowed" | "needs_counsel_approval" | "prohibited";
+export type Permission = "allowed" | "needs_counsel_approval" | "prohibited";
 
 const MATRIX: Record<FeeType, Record<BusinessStructure, Permission>> = {
   monthly_retainer: { in_firm: "prohibited", marketing_services: "allowed", certified_lrs: "allowed", abs: "allowed", saas: "allowed" },
@@ -38,6 +38,12 @@ const MATRIX: Record<FeeType, Record<BusinessStructure, Permission>> = {
   // Firm-wide compensation plan for non-lawyer staff (Rule 5.4(a)(3)). Reported to payroll, never invoiced.
   comp_plan_accrual: { in_firm: "needs_counsel_approval", marketing_services: "prohibited", certified_lrs: "prohibited", abs: "allowed", saas: "prohibited" },
 };
+
+export function feePermission(feeType: FeeType, structure: BusinessStructure): Permission {
+  return MATRIX[feeType][structure];
+}
+
+export const FEE_TYPES = Object.keys(MATRIX) as FeeType[];
 
 export interface FeeRule {
   id: string;

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ProbateVsTrustAnimation from "@/components/ProbateVsTrustAnimation";
 import { firm } from "@/config/firm";
 import { TOOLS } from "@/config/tools";
 import { EXPLAINERS } from "@/explainers/data";
@@ -43,6 +44,9 @@ export default function Home() {
         Or see <Link href="/learn">every guide in the library</Link> and{" "}
         <Link href="/estate-planning">estate planning rules by state</Link>.
       </p>
+
+      <h2>Probate or a trust, in ten seconds</h2>
+      <ProbateVsTrustAnimation />
 
       <h2>How it works</h2>
       <ol className="steps">

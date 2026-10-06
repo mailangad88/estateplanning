@@ -1,3 +1,4 @@
+import type { CaptureTool } from "@/lib/lead";
 import type { QuizAnswers } from "@/lib/quiz";
 
 /** Editable weights. Tune once real conversion data exists. */
@@ -9,7 +10,26 @@ export const SCORE_WEIGHTS = {
   completeness: 15,
   hasGoals: 5,
   reachable: 10,
+  /** How much intent each capture point signals. Asking for a call or filling the intake is a clear request to talk. */
+  toolIntent: {
+    plan_finder: 0,
+    intake: 15,
+    callback: 15,
+    readiness_score: 5,
+    cost_calculator: 5,
+    will_vs_trust: 5,
+    guide: 0,
+    exit_offer: 0,
+  } satisfies Record<CaptureTool, number>,
+  /** Per earlier tool used by the same visitor, capped */
+  repeatVisit: 3,
+  repeatVisitCap: 9,
+  /** Readiness score under 40 means many gaps to talk through */
+  lowReadiness: 5,
 };
+
+/** Capture points where the visitor explicitly asked to be contacted. Always hot. */
+const DIRECT_REQUESTS: CaptureTool[] = ["intake", "callback"];
 
 export type Tier = "hot" | "warm" | "not_a_fit";
 
@@ -28,6 +48,8 @@ export function scoreLead(input: {
   answers: Partial<QuizAnswers>;
   goals?: string;
   smsConsent: boolean;
+  capture?: { tool: CaptureTool; result?: Record<string, string | number | boolean> };
+  priorTools?: CaptureTool[];
 }): ScoreResult {
   const a = input.answers;
   const redFlags: string[] = [];
@@ -51,6 +73,8 @@ export function scoreLead(input: {
     a.ownsBusiness === "yes",
     a.outOfStateProperty === "yes",
     a.assetRange === "1m_5m" || a.assetRange === "over_5m",
+    // Calculator users tell us an estate value even when they skipped the quiz.
+    !a.assetRange && Number(input.capture?.result?.estateValue ?? 0) >= 1_000_000,
   ].filter(Boolean).length;
   score += Math.min(factors * w.complexity, w.complexityCap);
 
@@ -59,7 +83,15 @@ export function scoreLead(input: {
   if (input.goals && input.goals.trim().length > 0) score += w.hasGoals;
   score += w.reachable;
 
-  const tier: Tier = score >= 60 || redFlags.length > 0 ? "hot" : "warm";
+  const tool = input.capture?.tool ?? "plan_finder";
+  score += w.toolIntent[tool];
+  const earlier = new Set(input.priorTools ?? []);
+  earlier.delete(tool);
+  score += Math.min(earlier.size * w.repeatVisit, w.repeatVisitCap);
+  const readiness = input.capture?.result?.readinessScore;
+  if (typeof readiness === "number" && readiness < 40) score += w.lowReadiness;
+
+  const tier: Tier = score >= 60 || redFlags.length > 0 || DIRECT_REQUESTS.includes(tool) ? "hot" : "warm";
   return { score: Math.min(score, 100), tier, redFlags };
 }
 
@@ -74,5 +106,13 @@ export function segmentTags(a: Partial<QuizAnswers>): string[] {
   if (a.matterType === "elder_care") tags.push("caregiver");
   if (a.maritalStatus === "widowed") tags.push("widowed");
   if (a.matterType === "after_death") tags.push("estate_administration");
+  return tags;
+}
+
+/** Tags for the capture point, so nurture emails can follow up on what the visitor used or downloaded. */
+export function captureTags(capture: { tool: CaptureTool; resource?: string }, resourceSegments: string[] = []): string[] {
+  const tags = [`tool:${capture.tool}`];
+  if (capture.resource) tags.push(`resource:${capture.resource}`);
+  for (const s of resourceSegments) if (s !== "general") tags.push(s);
   return tags;
 }
