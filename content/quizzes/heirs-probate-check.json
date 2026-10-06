@@ -1,0 +1,244 @@
+{
+  "title": "Will This Estate Need Probate?",
+  "promise": "Ten calm questions about what your loved one owned and how it was titled. See how likely the estate is to need probate.",
+  "description": "After a death, answer ten questions about titles, beneficiaries, trusts and real estate to see whether probate may be needed for the estate.",
+  "kind": "assessment",
+  "category": "administration",
+  "magnet": "executor-first-30-days-guide",
+  "related": [
+    "guides/how-probate-works",
+    "guides/settling-an-estate-step-by-step",
+    "compare/probate-vs-non-probate-assets",
+    "checklists/first-30-days-after-a-death"
+  ],
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Did your loved one own a home or land in their name alone?",
+      "options": [
+        {
+          "label": "No, or it was owned jointly with a surviving owner",
+          "points": 0
+        },
+        {
+          "label": "It was in a trust, or had a transfer on death deed",
+          "points": 0
+        },
+        {
+          "label": "Yes, in their name alone",
+          "points": 2
+        },
+        {
+          "label": "I do not know yet",
+          "points": 1
+        }
+      ],
+      "explanation": "Real estate in one person's name with no survivor or beneficiary usually needs a court process to transfer. Joint ownership with survivorship, a trust or a recorded transfer on death deed can pass it without probate. A copy of the recorded deed from the county will show how it was held."
+    },
+    {
+      "id": "q2",
+      "prompt": "Do the bank accounts have a joint owner or a payable on death (POD) beneficiary?",
+      "options": [
+        {
+          "label": "Yes, all of them",
+          "points": 0
+        },
+        {
+          "label": "Some do",
+          "points": 1
+        },
+        {
+          "label": "No, or I do not know",
+          "points": 2
+        }
+      ],
+      "explanation": "A surviving joint owner or a POD beneficiary generally collects the account directly with a death certificate and ID. Accounts in one name with no beneficiary are part of the probate estate. The bank can tell you how each account was set up."
+    },
+    {
+      "id": "q3",
+      "prompt": "Do the investment accounts have a transfer on death (TOD) registration?",
+      "options": [
+        {
+          "label": "Yes, or there are no such accounts",
+          "points": 0
+        },
+        {
+          "label": "Some do",
+          "points": 1
+        },
+        {
+          "label": "No, or I do not know",
+          "points": 2
+        }
+      ],
+      "explanation": "A TOD registration lets brokerage assets move to the named person through the firm, without court. Without one, the firm usually asks for court papers naming a personal representative. Recent account statements usually show the registration."
+    },
+    {
+      "id": "q4",
+      "prompt": "Did retirement accounts and life insurance name beneficiaries who are still living?",
+      "options": [
+        {
+          "label": "Yes, all of them",
+          "points": 0
+        },
+        {
+          "label": "Some, or I am not sure",
+          "points": 1
+        },
+        {
+          "label": "No beneficiary named, or the named person died first",
+          "points": 2
+        },
+        {
+          "label": "There are none",
+          "points": 0
+        }
+      ],
+      "explanation": "These assets pass by the beneficiary form, not by the will, and generally skip probate. If no living beneficiary is named, they may fall to the estate or follow the plan's default order. The plan or insurer can confirm what is on file."
+    },
+    {
+      "id": "q5",
+      "prompt": "Was there a living trust, and was property actually put into it?",
+      "options": [
+        {
+          "label": "Yes, and the main assets were in it",
+          "points": 0
+        },
+        {
+          "label": "A trust exists, but I am not sure what it holds",
+          "points": 1
+        },
+        {
+          "label": "There was a trust, but most assets were not in it",
+          "points": 2
+        },
+        {
+          "label": "No trust",
+          "points": 1
+        }
+      ],
+      "explanation": "A trust controls only the assets titled in its name or payable to it. Assets left out of a trust may still need probate, sometimes with a pour-over will that sends them in. The trust document and the successor trustee's records show what was funded."
+    },
+    {
+      "id": "q6",
+      "prompt": "Roughly how much was in the deceased person's name alone, with no beneficiary or co-owner?",
+      "options": [
+        {
+          "label": "Very little",
+          "points": 0
+        },
+        {
+          "label": "A moderate amount",
+          "points": 1
+        },
+        {
+          "label": "A large share of the estate",
+          "points": 2
+        }
+      ],
+      "explanation": "Probate generally covers only assets in the person's sole name. Most states have small-estate procedures, such as an affidavit, that skip full probate below a dollar limit. Those limits vary widely by state, so the local court's website is a good place to look."
+    },
+    {
+      "id": "q7",
+      "prompt": "Did your loved one own real estate in more than one state?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes, but held in a trust or with a beneficiary deed",
+          "points": 0
+        },
+        {
+          "label": "Yes, in their name alone",
+          "points": 2
+        }
+      ],
+      "explanation": "Real estate is generally handled by the state where it is located. A person's name alone on out-of-state property can mean a second court case, called ancillary probate. The process and its cost depend on that state's law."
+    },
+    {
+      "id": "q8",
+      "prompt": "Was there a will?",
+      "options": [
+        {
+          "label": "Yes, and I have the original",
+          "points": 0
+        },
+        {
+          "label": "Yes, but I cannot find the original",
+          "points": 1
+        },
+        {
+          "label": "No will",
+          "points": 2
+        },
+        {
+          "label": "I do not know yet",
+          "points": 1
+        }
+      ],
+      "explanation": "A will does not avoid probate, but it names the executor and states the wishes. Many courts require the original document, so it is worth searching the home, a safe deposit box and the attorney who drafted it. With no will, state law decides who inherits and who serves."
+    },
+    {
+      "id": "q9",
+      "prompt": "Did they own a vehicle, boat or business interest in their name alone?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "A vehicle or small items only",
+          "points": 1
+        },
+        {
+          "label": "A business interest or several titled items",
+          "points": 2
+        }
+      ],
+      "explanation": "Many states have a simple transfer form for vehicles, but a business interest may need someone with legal authority to act. Operating agreements may say who steps in. A business attorney can help if the business is more than a minor side activity."
+    },
+    {
+      "id": "q10",
+      "prompt": "Do you expect disputes, unknown creditors or unclear heirs?",
+      "options": [
+        {
+          "label": "No, the family agrees and the picture is clear",
+          "points": 0
+        },
+        {
+          "label": "Possibly, some things are uncertain",
+          "points": 1
+        },
+        {
+          "label": "Yes, there is disagreement or confusion",
+          "points": 2
+        }
+      ],
+      "explanation": "Disputes and unclear ownership often lead to formal court supervision, even for modest estates. Creditors generally have a set window to make claims, which the court process helps manage. A calm family meeting and written records can reduce the chance of conflict."
+    }
+  ],
+  "bands": [
+    {
+      "min": 0,
+      "max": 6,
+      "label": "Probate seems less likely",
+      "summary": "Most of what your loved one owned seems to pass by title or beneficiary, which generally skips probate. You may still need to collect death certificates and notify institutions. The 30-day guide below lays out the first steps in order."
+    },
+    {
+      "min": 7,
+      "max": 13,
+      "label": "Probate may be needed",
+      "summary": "Some assets appear to be in the person's name alone, and those usually need a court process or a small-estate procedure. State limits differ, so check your local probate court's website. The guide below walks through what to do first."
+    },
+    {
+      "min": 14,
+      "max": 20,
+      "label": "Probate seems likely",
+      "summary": "Much of the estate appears to be in one name without a beneficiary, so a court process is likely. That is common and manageable, and it usually follows set steps. A local probate attorney can explain the timeline and costs in your state."
+    }
+  ]
+}

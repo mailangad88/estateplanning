@@ -85,7 +85,7 @@ describe("free resource library", () => {
   it("offers resources on the pages they name, and on blog posts through their pillar guide", () => {
     const m = magnets.find((x) => x.related.some((r) => r.startsWith("guides/")))!;
     const guidePath = `/${m.related.find((r) => r.startsWith("guides/"))}`;
-    expect(magnetsFor(guidePath).map((x) => x.slug)).toContain(m.slug);
+    expect(magnetsFor(guidePath, 100).map((x) => x.slug)).toContain(m.slug);
     const pillar = guidePath.replace("/guides/", "");
     const post = getPosts().find((p) => p.pillar === pillar);
     if (post) expect(magnetsFor(`/blog/${post.slug}`).length).toBeGreaterThan(0);

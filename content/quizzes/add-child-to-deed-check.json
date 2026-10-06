@@ -1,0 +1,228 @@
+{
+  "title": "Should I Add My Child to My Deed?",
+  "promise": "Ten questions to think through before you put a child's name on your home. See how many common risks may apply to you.",
+  "description": "Thinking of adding a child to your deed? Answer ten questions on creditors, divorce, taxes, Medicaid and fairness to see which risks may apply.",
+  "kind": "assessment",
+  "category": "property",
+  "magnet": "new-homeowner-title-and-deed-guide",
+  "related": [
+    "compare/transfer-on-death-deed-vs-trust",
+    "guides/transfer-on-death-and-payable-on-death",
+    "compare/joint-ownership-vs-trust",
+    "guides/medicaid-and-long-term-care-planning"
+  ],
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "If your child has debts, lawsuits or unpaid taxes, could those reach a home they co-own?",
+      "options": [
+        {
+          "label": "No, my child has no debt problems",
+          "points": 0
+        },
+        {
+          "label": "Possibly, I am not sure of their finances",
+          "points": 1
+        },
+        {
+          "label": "Yes, they have debts or judgments",
+          "points": 2
+        }
+      ],
+      "explanation": "Once a child is on the deed, a creditor of that child may be able to pursue the child's share of the property. That can mean liens or, in some cases, a forced sale. A child's financial trouble then becomes your home's problem."
+    },
+    {
+      "id": "q2",
+      "prompt": "Is your child married, or could they marry or divorce in the future?",
+      "options": [
+        {
+          "label": "Single, with no plans",
+          "points": 0
+        },
+        {
+          "label": "Married, and the marriage seems stable",
+          "points": 1
+        },
+        {
+          "label": "Married or divorcing, or the marriage is uncertain",
+          "points": 2
+        }
+      ],
+      "explanation": "A share of a home can become part of a property division in a divorce, depending on state law. A spouse may also have rights if the child later dies. A deed cannot predict a child's relationships, so this is a common reason people look at other tools."
+    },
+    {
+      "id": "q3",
+      "prompt": "After the deed is signed, are you comfortable needing your child's signature to sell or refinance?",
+      "options": [
+        {
+          "label": "Yes, we agree on how decisions get made",
+          "points": 0
+        },
+        {
+          "label": "I have not thought about it",
+          "points": 1
+        },
+        {
+          "label": "No, I want full control of my home",
+          "points": 2
+        }
+      ],
+      "explanation": "A co-owner generally has to sign to sell or borrow against the home. If the child is unreachable, disagrees or is incapacitated, the process can stall. Adding a child gives up some of the control you have today."
+    },
+    {
+      "id": "q4",
+      "prompt": "Do you know that adding a child to a deed can be a gift for tax purposes?",
+      "options": [
+        {
+          "label": "Yes, and I have talked to a tax preparer or attorney",
+          "points": 0
+        },
+        {
+          "label": "I had heard something, but I am not sure",
+          "points": 1
+        },
+        {
+          "label": "No, I thought it was just paperwork",
+          "points": 2
+        }
+      ],
+      "explanation": "Giving a child a share of your home is generally a gift of that share's value. Gifts above the annual exclusion may require a federal gift tax return, even when no tax is owed because of the lifetime exemption. State rules for transfers and reassessment vary."
+    },
+    {
+      "id": "q5",
+      "prompt": "Do you know how the home's tax basis would change for your child?",
+      "options": [
+        {
+          "label": "Yes, I understand step-up versus carryover basis",
+          "points": 0
+        },
+        {
+          "label": "I have a rough idea",
+          "points": 1
+        },
+        {
+          "label": "No, I have not looked into it",
+          "points": 2
+        }
+      ],
+      "explanation": "Property inherited at death generally gets a stepped-up basis, which can reduce capital gains when it is sold. Property given during life generally keeps your original basis. Adding a child now can mean a larger taxable gain for them later, and a tax professional can run the numbers."
+    },
+    {
+      "id": "q6",
+      "prompt": "Could you need long-term care paid for by Medicaid within the next five years or so?",
+      "options": [
+        {
+          "label": "Very unlikely, and I have other resources",
+          "points": 0
+        },
+        {
+          "label": "Possible, I am not sure",
+          "points": 1
+        },
+        {
+          "label": "Yes, or I am already in or near care",
+          "points": 2
+        }
+      ],
+      "explanation": "Medicaid generally looks back at transfers made in the prior 60 months, with California handled differently. A deed to a child can be treated as a transfer for less than value and cause a penalty period. Timing and the type of transfer matter, so ask an elder law attorney before signing."
+    },
+    {
+      "id": "q7",
+      "prompt": "Do you have more than one child?",
+      "options": [
+        {
+          "label": "No, only one child",
+          "points": 0
+        },
+        {
+          "label": "Yes, and we have discussed how things will be split",
+          "points": 1
+        },
+        {
+          "label": "Yes, and I plan to add just one of them without a plan for the others",
+          "points": 2
+        }
+      ],
+      "explanation": "If one child is on the deed, the home may pass to that child alone at your death, whatever your will says. The other children may get nothing from it, even if you meant it to be shared. Families often discover this only after a death, which is hard on relationships."
+    },
+    {
+      "id": "q8",
+      "prompt": "Have you looked at alternatives that avoid probate without a lifetime transfer?",
+      "options": [
+        {
+          "label": "Yes, I chose a TOD deed or a trust",
+          "points": 0
+        },
+        {
+          "label": "I have heard of them but have not compared them",
+          "points": 1
+        },
+        {
+          "label": "No, adding a child seemed like the only way",
+          "points": 2
+        }
+      ],
+      "explanation": "A transfer on death deed, in states that allow it, names a beneficiary who takes the home at your death while you keep full ownership now. A revocable living trust can do something similar and is available in every state. Each has costs and limits, which the comparison pages explain."
+    },
+    {
+      "id": "q9",
+      "prompt": "Do you plan to keep living in the home and paying its expenses?",
+      "options": [
+        {
+          "label": "Yes, and the deed spells out who pays what",
+          "points": 0
+        },
+        {
+          "label": "Yes, but nothing is written down",
+          "points": 1
+        },
+        {
+          "label": "No, or the plan is unclear",
+          "points": 2
+        }
+      ],
+      "explanation": "Co-owners may have shared responsibility for taxes, insurance and repairs, and the child may have a claim to part of the sale proceeds. Without written terms, disagreements can arise. Some deeds reserve a life estate so the parent keeps the right to live there."
+    },
+    {
+      "id": "q10",
+      "prompt": "Is your main goal to avoid probate on the home?",
+      "options": [
+        {
+          "label": "Yes, and I have compared the options",
+          "points": 0
+        },
+        {
+          "label": "Yes, but I have not compared them",
+          "points": 1
+        },
+        {
+          "label": "Not the main goal, I mainly want to help my child now",
+          "points": 2
+        }
+      ],
+      "explanation": "Avoiding probate is a common reason for a deed change, but other tools can reach it with fewer side effects. If the goal is to help a child now, a gift of a different asset or a written agreement may fit better. A local attorney can match the tool to your goal."
+    }
+  ],
+  "bands": [
+    {
+      "min": 0,
+      "max": 6,
+      "label": "Fewer risk factors",
+      "summary": "Few of the common concerns seem to apply, though each home and family is different. Even so, deed changes are hard to reverse, so many people confirm the tax and state rules first. The guide below explains how titles and deeds work."
+    },
+    {
+      "min": 7,
+      "max": 13,
+      "label": "Several risk factors",
+      "summary": "A handful of the common concerns may apply. Creditors, divorce, taxes and Medicaid timing are the ones that most often change the answer. A transfer on death deed or a revocable trust may reach your goal with fewer of these effects. Rules vary by state."
+    },
+    {
+      "min": 14,
+      "max": 20,
+      "label": "Many risk factors",
+      "summary": "Many of the common concerns seem to apply to your situation. This does not mean adding a child is wrong, only that it is worth comparing alternatives before signing. An attorney licensed in your state can review the options with you."
+    }
+  ]
+}
