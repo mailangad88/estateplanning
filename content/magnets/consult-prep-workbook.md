@@ -15,9 +15,17 @@ tag: consult_prep_workbook
 sequence: B
 related:
   - checklists/documents-to-gather-before-your-consult
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - checklists/asset-and-account-inventory
   - tools/plan-readiness-assessment
+answers:
+  - "What should I bring to my first estate planning meeting?"
+  - "What do estate planning lawyers ask?"
+  - "What happens at an estate planning appointment?"
+  - "What is an estate planning questionnaire?"
+  - "How do I inventory my assets for estate planning?"
+  - "What assets should I list for my estate plan?"
+  - "Where do I start with estate planning?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -82,7 +90,7 @@ Some quick checks as you fill this in:
 - Would two of your choices clash with each other? A co-agent arrangement can stall if they disagree.
 - Is your first choice also the person you would name for everything? Many people spread roles around on purpose, since the best caregiver is not always the best money manager.
 
-If you want a deeper look, the [executor worksheet](/checklists/choosing-an-executor-worksheet) and [guide to choosing a trustee](/guides/choosing-a-trustee) go through the tradeoffs.
+If you want a deeper look, the [executor worksheet](/checklists/choosing-an-executor-worksheet) and [guide to choosing a trustee](/learn/trusts/choosing-a-trustee) go through the tradeoffs.
 
 ## Part 3: Your assets
 
@@ -104,7 +112,7 @@ Round numbers are fine. The goal is the shape of your estate, not an audit. Use 
 | Money owed to you | | | |
 | Debts other than the mortgage | | | |
 
-Two columns carry the most weight. "How is it titled" and "Beneficiary named" often decide who gets an asset regardless of what your will says. A joint account or a retirement account with a named beneficiary passes outside your will. The [probate vs non-probate comparison](/compare/probate-vs-non-probate-assets) explains why. If you do not know a title or a beneficiary, write "check" and look at the most recent statement or call the institution.
+Two columns carry the most weight. "How is it titled" and "Beneficiary named" often decide who gets an asset regardless of what your will says. A joint account or a retirement account with a named beneficiary passes outside your will. The [probate vs non-probate comparison](/learn/probate/probate-vs-non-probate-assets) explains why. If you do not know a title or a beneficiary, write "check" and look at the most recent statement or call the institution.
 
 - **Rough total of everything above:** ______________________
 - **Is there anything unusual: a farm, a business, a foreign asset, a pending lawsuit, a large expected inheritance?** ______________________
@@ -122,7 +130,7 @@ Two columns carry the most weight. "How is it titled" and "Beneficiary named" of
 - [ ] Beneficiary forms on file for retirement accounts and insurance: ______________________
 - [ ] Documents drafted by an online service or a relative: ______________________
 
-If a document is old, written in another state, or predates a marriage, a birth, a divorce or a move, flag it. These are the events that most often leave a plan out of date. The [updating your plan guide](/guides/updating-your-estate-plan) lists the common triggers.
+If a document is old, written in another state, or predates a marriage, a birth, a divorce or a move, flag it. These are the events that most often leave a plan out of date. The [updating your plan guide](/learn/basics/when-to-update-your-estate-plan) lists the common triggers.
 
 ## Part 5: Goals and worries
 

@@ -13,13 +13,26 @@ pages: 6
 tag: probate_vs_trust_guide
 sequence: B
 related:
-  - compare/will-vs-trust
+  - learn/trusts/will-vs-trust
   - guides/how-probate-works
-  - guides/revocable-living-trust-explained
-  - compare/probate-vs-non-probate-assets
+  - learn/trusts/revocable-living-trust
+  - learn/probate/probate-vs-non-probate-assets
   - tools/probate-cost-estimator
   - guides/irrevocable-trusts-explained
   - compare/revocable-vs-irrevocable-trust
+diagram: ProbateVsTrustComparison
+answers:
+  - "Do I need a living trust or is a will enough?"
+  - "Will vs trust: which is better?"
+  - "Is a trust better than a will?"
+  - "Does a will avoid probate for a house?"
+  - "Is a trust only for wealthy people?"
+  - "Does a trust save taxes?"
+  - "What are the pros and cons of a living trust?"
+  - "Which is better, a living trust or a pour-over will?"
+  - "Is a trust a public document?"
+  - "Is a trust harder to contest than a will?"
+  - "Can a trust be contested?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -129,4 +142,4 @@ For each item, write who gets it and how.
 
 ## Next step
 
-Read [How Probate Works](/guides/how-probate-works) and compare [will vs. trust](/compare/will-vs-trust). To talk through your options with an attorney, start at [/plan-finder](/plan-finder).
+Read [How Probate Works](/guides/how-probate-works) and compare [will vs. trust](/learn/trusts/will-vs-trust). To talk through your options with an attorney, start at [/plan-finder](/plan-finder).

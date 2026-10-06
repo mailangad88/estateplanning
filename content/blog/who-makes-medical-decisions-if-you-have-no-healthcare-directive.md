@@ -41,7 +41,7 @@ The default list works well when one obvious person exists and everyone gets alo
 - You have no close family at all.
 - The person who ranks first lives far away or is not well.
 
-In those cases, a court may need to appoint a guardian. Our [power of attorney vs guardianship comparison](/compare/power-of-attorney-vs-guardianship) explains why a court process is usually slower and costlier.
+In those cases, a court may need to appoint a guardian. Our [power of attorney vs guardianship comparison](/learn/power-of-attorney/power-of-attorney-vs-guardianship) explains why a court process is usually slower and costlier.
 
 ## A short example
 
@@ -59,7 +59,7 @@ A healthcare directive lets you pick your decision-maker and record your wishes.
 
 Our [living will vs healthcare power of attorney comparison](/compare/living-will-vs-healthcare-power-of-attorney) explains how the two fit together.
 
-These documents matter most for people the default list does not serve well. See [estate planning for unmarried couples](/blog/estate-planning-for-unmarried-couples) and [estate planning for people with no children](/blog/estate-planning-for-people-with-no-children).
+These documents matter most for people the default list does not serve well. See [estate planning for unmarried couples](/learn/life-stages/estate-planning-for-unmarried-couples) and [estate planning for people with no children](/blog/estate-planning-for-people-with-no-children).
 
 ## How doctors use the default list
 

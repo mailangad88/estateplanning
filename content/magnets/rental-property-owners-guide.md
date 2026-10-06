@@ -14,11 +14,14 @@ pages: 6
 tag: rental_property_guide
 sequence: B
 related:
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
   - guides/how-probate-works
   - guides/funding-your-trust
-  - compare/will-vs-trust
+  - learn/trusts/will-vs-trust
   - compare/transfer-on-death-deed-vs-trust
+answers:
+  - "Do I need a trust if I have an LLC?"
+  - "What is the difference between a trust and an LLC?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -39,7 +42,7 @@ Three common ways to hold a rental are in your personal name, in an LLC, or in a
 
 **LLC.** Many owners use an LLC to try to separate rental risk from personal assets. How well that protection works depends on state law and how the LLC is run. At death, what matters is what the operating agreement says about a member's death and who has authority to manage. A silent agreement may leave a gap.
 
-**Revocable trust.** A trust can hold rental real estate and let a successor trustee step in right away. Deeding property to a trust can raise issues with mortgages, title insurance and property tax reassessment in some places, so ask before you record anything. See [Funding Your Trust](/guides/funding-your-trust) and [Will vs. Trust](/compare/will-vs-trust).
+**Revocable trust.** A trust can hold rental real estate and let a successor trustee step in right away. Deeding property to a trust can raise issues with mortgages, title insurance and property tax reassessment in some places, so ask before you record anything. See [Funding Your Trust](/guides/funding-your-trust) and [Will vs. Trust](/learn/trusts/will-vs-trust).
 
 ## What happens to tenants and leases at death
 
@@ -55,7 +58,7 @@ A lease generally does not end because the landlord died. In most states, the le
 
 If you own real estate in a state other than where you live, a court in that state may need to be involved even if your home state probate is straightforward. This second proceeding is often called **ancillary probate**. It generally means another filing, possibly another attorney and another set of fees and delays.
 
-Ways owners commonly address this, to be discussed with an attorney, include holding the property in a revocable trust, placing it in an LLC, or using a transfer on death deed where state law allows one. Each has trade-offs, and each state sets its own rules. See [Probate vs. Non-Probate Assets](/compare/probate-vs-non-probate-assets).
+Ways owners commonly address this, to be discussed with an attorney, include holding the property in a revocable trust, placing it in an LLC, or using a transfer on death deed where state law allows one. Each has trade-offs, and each state sets its own rules. See [Probate vs. Non-Probate Assets](/learn/probate/probate-vs-non-probate-assets).
 
 ## Property managers
 

@@ -14,10 +14,16 @@ pages: 6
 tag: personal_care_agreement
 sequence: B
 related:
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - life-events/caring-for-aging-parents
   - tools/medicaid-lookback-date
   - guides/powers-of-attorney
+diagram: MedicaidLookback
+answers:
+  - "What is a personal care agreement?"
+  - "What is a personal care agreement for a parent?"
+  - "Can a power of attorney be a caregiver and be paid under a personal care agreement?"
+  - "Does Medicaid have a look-back for home care?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -128,4 +134,4 @@ Take this outline to an attorney who can customize it for your state.
 
 ## Next step
 
-Read [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning) and [caring for aging parents](/life-events/caring-for-aging-parents), then [book a consult](/plan-finder) to draft an agreement that fits your state.
+Read [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) and [caring for aging parents](/life-events/caring-for-aging-parents), then [book a consult](/plan-finder) to draft an agreement that fits your state.

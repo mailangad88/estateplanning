@@ -18,6 +18,14 @@ related:
   - checklists/first-30-days-after-a-death
   - guides/how-probate-works
   - life-events/death-of-a-parent
+answers:
+  - "What if I don't want to be executor?"
+  - "Do I have to do everything at once after a death?"
+  - "What is the first thing an executor should do?"
+  - "Who needs probate?"
+  - "What documents do I need to settle an estate?"
+  - "Do I need a lawyer to settle an estate?"
+  - "How do I make sure I'm protected as executor?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -62,7 +70,7 @@ Mail is a good clue. For a few weeks, note what arrives, since statements and bi
 
 Do not throw away anything yet. Keep original documents in a safe place, and make photos or scans.
 
-Be careful with digital accounts. Laws on access to email and online accounts vary by state and by provider, so check the [digital assets guide](/guides/digital-assets-estate-planning) before logging in.
+Be careful with digital accounts. Laws on access to email and online accounts vary by state and by provider, so check the [digital assets guide](/learn/digital-assets/digital-assets-in-your-estate-plan) before logging in.
 
 If the person had an attorney or accountant, call them. They often know where things are and can answer questions.
 
@@ -118,7 +126,7 @@ Be cautious with scams that target families after a death, such as callers claim
 
 Probate is the court process that confirms an executor and oversees how a will is carried out. Whether it is needed depends on your state and on how assets were owned.
 
-Assets often pass outside probate when they have a named beneficiary, joint owner, or are held in a trust. Examples include life insurance, retirement accounts and jointly owned property. Assets in the deceased person's sole name, without a beneficiary, usually go through probate, though many states have shortcuts for small estates. The [probate vs. non-probate assets comparison](/compare/probate-vs-non-probate-assets) explains the difference.
+Assets often pass outside probate when they have a named beneficiary, joint owner, or are held in a trust. Examples include life insurance, retirement accounts and jointly owned property. Assets in the deceased person's sole name, without a beneficiary, usually go through probate, though many states have shortcuts for small estates. The [probate vs. non-probate assets comparison](/learn/probate/probate-vs-non-probate-assets) explains the difference.
 
 To see where you stand, sort each asset into one of three groups:
 

@@ -19,6 +19,8 @@ related:
   - guides/how-to-make-a-will
   - guides/beneficiary-designations
   - checklists/important-contacts-list
+answers:
+  - "Who gets my children if I am deployed in the military?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -88,7 +90,7 @@ Many service member benefits pass by form, not by will. Check each one.
 - **Servicemembers' Group Life Insurance (SGLI).** The beneficiary is named on a military form, and the form controls who gets the benefit. Check current rules with your personnel office or the Department of Veterans Affairs on who may be named, the available coverage amounts, and special rules for spouses and minors. Naming a minor child directly can cause delays or court involvement, so ask about alternatives.
 - **Death gratuity and other benefits.** These often follow a separate form. Ask your personnel office.
 - **Thrift Savings Plan and other retirement accounts.** Each has its own beneficiary form.
-- **Civilian accounts, bank accounts and vehicles.** Check each one, and consider payable on death designations. See [transfer on death and payable on death](/guides/transfer-on-death-and-payable-on-death).
+- **Civilian accounts, bank accounts and vehicles.** Check each one, and consider payable on death designations. See [transfer on death and payable on death](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts).
 
 Review all forms after marriage, divorce, birth, adoption or a death in the family. See [beneficiary designations](/guides/beneficiary-designations) and the [beneficiary designation audit](/checklists/beneficiary-designation-audit).
 
@@ -114,7 +116,7 @@ A family care plan covers deployment. A guardianship nomination in a will covers
 - **Single parent.** The other legal parent generally has custody rights if you die, unless a court rules otherwise. If the other parent is not a safe option, talk to an attorney about how to document your wishes. Name a guardian and a backup in your will.
 - **Both parents serve.** Name the same guardian in both wills, and a backup. If one parent is killed or injured, the other may be unavailable too. Consider whether the guardian lives near the children's school and family.
 - **Out-of-state caregivers.** Check how your state treats caregiver authorizations and whether the guardian's state will recognize your documents.
-- **Money.** A guardian needs funds. Consider a trust for the children and a trustee separate from the guardian. See [guardianship for minor children](/guides/guardianship-for-minor-children) and [leaving money to minors](/guides/leaving-money-to-minors).
+- **Money.** A guardian needs funds. Consider a trust for the children and a trustee separate from the guardian. See [guardianship for minor children](/guides/guardianship-for-minor-children) and [leaving money to minors](/learn/guardianship/leaving-money-to-minors).
 
 Record:
 
@@ -125,7 +127,7 @@ Record:
 
 ## Digital and pet plans
 
-- **Digital accounts.** List email, banking, phone, cloud storage, social media and subscription accounts. Share a way for the spouse or agent to get in, such as a password manager with emergency access. Do not put passwords in a will. See [digital assets estate planning](/guides/digital-assets-estate-planning) and the [digital assets inventory](/checklists/digital-assets-inventory).
+- **Digital accounts.** List email, banking, phone, cloud storage, social media and subscription accounts. Share a way for the spouse or agent to get in, such as a password manager with emergency access. Do not put passwords in a will. See [digital assets estate planning](/learn/digital-assets/digital-assets-in-your-estate-plan) and the [digital assets inventory](/checklists/digital-assets-inventory).
 - **Phone and email access.** Check whether the carrier or email provider allows a trusted contact.
 - **Pets.** Name a caretaker, a backup, a vet and a budget. Include medications and routines. Some states allow pet trusts. Ask whether the caretaker will board or rehome pets and for how long.
 

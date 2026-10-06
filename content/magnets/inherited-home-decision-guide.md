@@ -17,7 +17,18 @@ related:
   - life-events/death-of-a-parent
   - guides/settling-an-estate-step-by-step
   - guides/how-probate-works
-  - compare/probate-vs-non-probate-assets
+  - learn/probate/probate-vs-non-probate-assets
+answers:
+  - "Should I sell an inherited house or keep it?"
+  - "Should I keep or sell my parent's house?"
+  - "What happens to a deceased person's house?"
+  - "Who has to sign to sell an inherited house?"
+  - "Who can sign the deed on a house in probate?"
+  - "What if siblings disagree about selling an inherited house?"
+  - "What if I inherit a house with siblings?"
+  - "Does inherited property get stepped-up basis?"
+  - "How does step-up in basis work for a house?"
+  - "How long do I have to sell an inherited house?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -38,7 +49,7 @@ Until the title is sorted out, you may not be allowed to sell, rent or even chan
 | Jointly with survivorship | The surviving owner | A recorded death certificate or affidavit |
 | With a transfer on death deed | The named beneficiary, after recording paperwork | State recording requirements |
 
-Heirs who have only been told "the house is yours" often cannot sign a listing agreement or a sale contract until the right person has authority. A title company can usually tell you what it will accept. See [Probate vs. Non-Probate Assets](/compare/probate-vs-non-probate-assets).
+Heirs who have only been told "the house is yours" often cannot sign a listing agreement or a sale contract until the right person has authority. A title company can usually tell you what it will accept. See [Probate vs. Non-Probate Assets](/learn/probate/probate-vs-non-probate-assets).
 
 ## Step 2: Protect the house while you decide
 

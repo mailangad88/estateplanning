@@ -41,7 +41,7 @@ updated: "2026-10-06"
 
 ## What is at stake
 
-- **A partner dies and the spouse inherits.** An operating agreement that is silent can leave you in business with your partner's spouse or heirs, or without a way to buy them out. A buy-sell agreement sets who may buy, at what price, and how it is funded, often with life insurance. See the [business succession planning guide](/guides/business-succession-planning).
+- **A partner dies and the spouse inherits.** An operating agreement that is silent can leave you in business with your partner's spouse or heirs, or without a way to buy them out. A buy-sell agreement sets who may buy, at what price, and how it is funded, often with life insurance. See the [business succession planning guide](/learn/business-owners/business-succession-planning).
 - **You are in the hospital for six weeks.** Nobody else can sign on the bank account, renew a license, file payroll taxes or sign a lease. A durable power of attorney with authority over business matters, plus bank signature cards, addresses it. See [powers of attorney](/guides/powers-of-attorney).
 - **You die and the business is the main asset.** Without a plan, the executor may be left with a business that loses customers and key employees while probate runs.
 - **Heirs who do not want the business, and heirs who do.** Equal shares do not always mean fair. A plan can give the business to the child who works in it and equalize with other assets or insurance.
@@ -66,4 +66,4 @@ updated: "2026-10-06"
 
 ## Next step
 
-Read the [guide to business succession planning](/guides/business-succession-planning), or [book a consultation](/plan-finder) and bring your operating agreement.
+Read the [guide to business succession planning](/learn/business-owners/business-succession-planning), or [book a consultation](/plan-finder) and bring your operating agreement.

@@ -26,7 +26,7 @@ export const SENSITIVE_PATH_PREFIXES: readonly string[] = [
   "/estate-planning-for/elder-care",
   // Existing content
   "/guides/special-needs-trusts",
-  "/guides/medicaid-and-long-term-care-planning",
+  "/learn/elder-care/medicaid-planning",
   "/compare/special-needs-trust-vs-able-account",
   "/life-events/serious-diagnosis",
   "/life-events/caring-for-aging-parents",

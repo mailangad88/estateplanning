@@ -2,7 +2,7 @@
 title: "What does a trustee actually do each year?"
 description: "A trustee's yearly work includes investing, record keeping, taxes, reports and distributions. Here is what a typical year looks like."
 answer: "Each year a trustee typically reviews and manages the trust's investments, keeps records of every dollar in and out, files the trust's tax return, sends required reports to beneficiaries, and makes distributions under the trust's terms. They also pay trust bills, keep property insured, and decide on requests for money."
-pillar: choosing-a-trustee
+pillar: settling-an-estate-step-by-step
 date: 2026-10-06
 updated: 2026-10-06
 reviewed: false
@@ -16,7 +16,7 @@ faqs:
 
 A trustee's yearly work comes down to five things: invest, record, report, pay taxes and distribute. The details depend on the trust, but the rhythm is similar for most.
 
-Our guide to [choosing a trustee](/guides/choosing-a-trustee) helps you pick the right person. This post shows what that person actually signs up for, year after year.
+Our guide to [choosing a trustee](/learn/trusts/choosing-a-trustee) helps you pick the right person. This post shows what that person actually signs up for, year after year.
 
 ## A trustee's year at a glance
 

@@ -22,7 +22,7 @@ An irrevocable trust is a trust you generally cannot change or cancel after you 
 
 That loss of control is the point. Because the assets are no longer yours, the law may treat them differently for tax, Medicaid or creditor purposes.
 
-This makes an irrevocable trust a tool for specific goals, not a general-purpose plan. Most people's main trust is revocable. See [revocable living trusts explained](/guides/revocable-living-trust-explained) for that version.
+This makes an irrevocable trust a tool for specific goals, not a general-purpose plan. Most people's main trust is revocable. See [revocable living trusts explained](/learn/trusts/revocable-living-trust) for that version.
 
 ## Revocable vs. irrevocable at a glance
 
@@ -51,7 +51,7 @@ Some states have their own estate or inheritance tax with much lower thresholds.
 
 Medicaid generally counts assets you own when deciding if you qualify for nursing home coverage. Assets moved into certain irrevocable trusts may stop counting, but only after a look-back period.
 
-In most states that period is 60 months<!-- verify -->. California's rules differ. Our [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning) guide explains the timing.
+In most states that period is 60 months<!-- verify -->. California's rules differ. Our [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) guide explains the timing.
 
 ### Holding life insurance
 
@@ -76,7 +76,7 @@ Names and rules vary. Not every type is available or useful in every state.
 ## How an irrevocable trust is set up
 
 1. **Define the goal.** Tax, Medicaid, insurance and protection goals lead to different designs.
-2. **Choose a trustee.** Often someone other than you. See [choosing a trustee](/guides/choosing-a-trustee).
+2. **Choose a trustee.** Often someone other than you. See [choosing a trustee](/learn/trusts/choosing-a-trustee).
 3. **Sign the trust document.** It sets who benefits, what the trustee may do, and what you keep, if anything.
 4. **Get a tax ID number** if the trust needs one.
 5. **Transfer assets.** Deed real estate, retitle accounts, or have the trust buy an insurance policy.

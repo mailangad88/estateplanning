@@ -14,11 +14,22 @@ pages: 7
 tag: what_happens_without_a_will
 sequence: B
 related:
-  - guides/what-happens-if-you-die-without-a-will
+  - learn/wills/dying-without-a-will
   - guides/how-to-make-a-will
   - guides/how-probate-works
   - guides/guardianship-for-minor-children
-  - compare/probate-vs-non-probate-assets
+  - learn/probate/probate-vs-non-probate-assets
+diagram: IntestacyLadder
+answers:
+  - "Does my spouse automatically inherit everything if I die without a will?"
+  - "Does my spouse automatically inherit if I die without a will?"
+  - "What happens if I don't have an estate plan?"
+  - "What happens to my kids if I die without a will?"
+  - "Who gets my house if I die without a will?"
+  - "Who gets my stuff if I don't name a beneficiary in my will?"
+  - "What happens to my children if I die and there is no guardian named?"
+  - "How does intestacy work when there are children from different marriages?"
+  - "What happens to my estate if I die with kids from two marriages and no will?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -123,7 +134,7 @@ Intestacy answers differ by state. Use these questions with an attorney licensed
 
 ## Next step
 
-Read [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will) for the longer version, or [book a consult](/plan-finder) to talk through your family's situation.
+Read [what happens if you die without a will](/learn/wills/dying-without-a-will) for the longer version, or [book a consult](/plan-finder) to talk through your family's situation.
 
 ## Sources
 

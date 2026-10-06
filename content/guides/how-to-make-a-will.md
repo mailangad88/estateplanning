@@ -47,7 +47,7 @@ For each gift, think about backups. If your brother is to receive your car but h
 
 A will names the people who carry it out. Choose a first choice and at least one backup for each role.
 
-- **Executor** (also called a personal representative): gathers assets, pays debts and distributes property. See [Choosing an Executor](/guides/choosing-an-executor).
+- **Executor** (also called a personal representative): gathers assets, pays debts and distributes property. See [Choosing an Executor](/learn/wills/choosing-an-executor).
 - **Guardian** for minor children: the person who would raise your children if both parents are gone. See [Guardianship for Minor Children](/guides/guardianship-for-minor-children).
 - **Trustee** if your will creates a trust: manages money held for children or others over time.
 
@@ -94,7 +94,7 @@ Before signing, Linda also checks her IRA form. It still listed her ex-husband a
 
 - **No residuary clause.** Property not specifically mentioned may pass as if there were no will.
 - **No backup beneficiaries.** Gifts can fail if someone dies first.
-- **Leaving assets outright to minors.** Children under 18 can't take legal control of property. See [Leaving Money to Minors](/guides/leaving-money-to-minors).
+- **Leaving assets outright to minors.** Children under 18 can't take legal control of property. See [Leaving Money to Minors](/learn/guardianship/leaving-money-to-minors).
 - **Changing the will by hand.** Crossing out lines or writing notes in the margin can invalidate parts of the will in some states. Changes are usually made with a new will or a formal amendment called a codicil.
 - **Assuming the will controls everything.** Beneficiary forms override the will.
 - **Hiding the original.** If no one can find the signed original, the court may treat you as having no will.

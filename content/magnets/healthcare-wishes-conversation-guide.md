@@ -18,6 +18,12 @@ related:
   - compare/living-will-vs-healthcare-power-of-attorney
   - life-events/serious-diagnosis
   - life-events/caring-for-aging-parents
+answers:
+  - "How do I talk to my parents about end-of-life wishes?"
+  - "What should I tell my family about my end-of-life wishes?"
+  - "What questions should I ask myself before writing a living will?"
+  - "What is a values history for end-of-life decisions?"
+  - "Who should have a copy of my advance directive?"
 reviewed: false
 updated: "2026-10-06"
 ---

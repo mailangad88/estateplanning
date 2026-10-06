@@ -15,10 +15,20 @@ tag: moving_states_checklist
 sequence: B
 related:
   - life-events/moving-to-a-new-state
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
   - guides/estate-and-inheritance-taxes
   - guides/powers-of-attorney
   - checklists/annual-estate-plan-review
+answers:
+  - "Can I use the same estate plan if I move?"
+  - "Does moving to a new state invalidate my will?"
+  - "Should I update my estate plan when I move to a new state?"
+  - "What happens if I own a house in two states?"
+  - "What estate planning do I need if I own property in two states?"
+  - "Does a will made in one state hold up in another?"
+  - "Is a will valid in another state?"
+  - "What happens to my will if I move to a different state?"
+  - "Is estate planning different in community property states?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -81,7 +91,7 @@ Some states limit who may serve as executor (personal representative) if the per
 - [ ] Do I need a backup who lives nearby?
 - [ ] Do I want a trust and trustee in place to reduce reliance on court?
 
-See [choosing an executor](/guides/choosing-an-executor) and [executor vs trustee](/compare/executor-vs-trustee).
+See [choosing an executor](/learn/wills/choosing-an-executor) and [executor vs trustee](/compare/executor-vs-trustee).
 
 - **Executor and where they live:** ______________________
 - **Backup executor and where they live:** ______________________
@@ -106,7 +116,7 @@ Checklist:
 | | | | | |
 | | | | | |
 
-See [probate vs non-probate assets](/compare/probate-vs-non-probate-assets) and [how probate works](/guides/how-probate-works).
+See [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets) and [how probate works](/guides/how-probate-works).
 
 ## Updating titles and accounts
 

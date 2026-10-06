@@ -16,9 +16,12 @@ sequence: B
 related:
   - compare/online-will-vs-estate-attorney
   - checklists/documents-to-gather-before-your-consult
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - tools/plan-readiness-assessment
   - guides/what-makes-a-will-valid
+answers:
+  - "What questions should I ask an estate planning attorney?"
+  - "Is the first estate planning consultation free?"
 reviewed: false
 updated: "2026-10-06"
 ---

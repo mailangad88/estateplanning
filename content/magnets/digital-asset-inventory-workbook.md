@@ -14,10 +14,14 @@ pages: 9
 tag: digital_asset_workbook
 sequence: B
 related:
-  - guides/digital-assets-estate-planning
+  - learn/digital-assets/digital-assets-in-your-estate-plan
   - checklists/digital-assets-inventory
-  - guides/choosing-an-executor
+  - learn/wills/choosing-an-executor
   - guides/how-to-make-a-will
+diagram: DigitalAssets
+answers:
+  - "What happens to a deceased person's cryptocurrency?"
+  - "What happens to a deceased person's digital assets?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -191,4 +195,4 @@ Tell them in plain words:
 
 ## Next step
 
-Read the [guide to digital assets and estate planning](/guides/digital-assets-estate-planning), then compare notes with the [Digital Assets Inventory checklist](/checklists/digital-assets-inventory). To talk through your plan, visit [/plan-finder](/plan-finder).
+Read the [guide to digital assets and estate planning](/learn/digital-assets/digital-assets-in-your-estate-plan), then compare notes with the [Digital Assets Inventory checklist](/checklists/digital-assets-inventory). To talk through your plan, visit [/plan-finder](/plan-finder).

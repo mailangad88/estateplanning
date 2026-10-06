@@ -15,9 +15,12 @@ tag: new_parents_kit
 sequence: B
 related:
   - guides/guardianship-for-minor-children
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
   - life-events/new-baby
   - tools/guardian-fund-calculator
+answers:
+  - "What are the five documents new parents should have?"
+  - "Should new parents get a trust or just a will?"
 reviewed: false
 updated: "2026-10-06"
 ---

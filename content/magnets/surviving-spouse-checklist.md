@@ -17,7 +17,12 @@ related:
   - checklists/first-30-days-after-a-death
   - guides/settling-an-estate-step-by-step
   - guides/beneficiary-designations
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
+answers:
+  - "What do I do when my spouse dies?"
+  - "What happens to a deceased person's health insurance?"
+  - "What if my deceased spouse's name is still on the deed?"
+  - "What if my deceased spouse's name is still on the house?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -85,7 +90,7 @@ Your documents likely named your spouse as executor, trustee, agent or guardian.
 - [ ] Guardians for minor children, if any.
 - [ ] Beneficiaries on retirement accounts and life insurance.
 
-You do not need to do all of this in month two. Many people wait until they are ready, usually within the first year, and meet an attorney then. In the meantime, if you have no one named to act for you, it may be worth speaking to an attorney sooner. See [Updating Your Estate Plan](/guides/updating-your-estate-plan).
+You do not need to do all of this in month two. Many people wait until they are ready, usually within the first year, and meet an attorney then. In the meantime, if you have no one named to act for you, it may be worth speaking to an attorney sooner. See [Updating Your Estate Plan](/learn/basics/when-to-update-your-estate-plan).
 
 ## Section 5: Scams aimed at the newly widowed
 

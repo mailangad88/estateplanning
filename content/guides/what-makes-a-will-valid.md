@@ -18,7 +18,7 @@ faqs:
     a: "A growing number of states allow electronic wills signed and witnessed under specific rules, and some allow remote witnessing by video. Many states still require ink on paper, so check your state's current law."
 ---
 
-A will is valid when it meets your state's legal requirements at the moment you sign it. In most states that means four things: you are an adult, you have mental capacity, you sign it voluntarily, and you sign it with the formalities your state requires, usually in front of two witnesses. If any of these is missing, a court can refuse to accept the will. If no valid will is found, your property may pass under state law instead. See [What Happens If You Die Without a Will](/guides/what-happens-if-you-die-without-a-will).
+A will is valid when it meets your state's legal requirements at the moment you sign it. In most states that means four things: you are an adult, you have mental capacity, you sign it voluntarily, and you sign it with the formalities your state requires, usually in front of two witnesses. If any of these is missing, a court can refuse to accept the will. If no valid will is found, your property may pass under state law instead. See [What Happens If You Die Without a Will](/learn/wills/dying-without-a-will).
 
 The details differ from state to state. This guide covers the common requirements and the problems that lead to challenges.
 
@@ -88,7 +88,7 @@ A will that was valid when signed can still be revoked or partly undone.
 - **A later will.** A new will usually revokes earlier ones, especially if it says so.
 - **Physical destruction.** Tearing up or burning the will with the intent to revoke it.
 - **Marriage or divorce.** In many states, divorce automatically cancels gifts to an ex-spouse. In some states, marriage after signing can revoke or change the will.
-- **Hand edits.** Crossing out lines or writing changes on a signed will can cause confusion or partial invalidity. See [Updating Your Estate Plan](/guides/updating-your-estate-plan).
+- **Hand edits.** Crossing out lines or writing changes on a signed will can cause confusion or partial invalidity. See [Updating Your Estate Plan](/learn/basics/when-to-update-your-estate-plan).
 
 ## Common mistakes
 

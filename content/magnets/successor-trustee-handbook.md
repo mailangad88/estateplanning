@@ -14,11 +14,28 @@ pages: 8
 tag: successor_trustee_handbook
 sequence: G
 related:
-  - guides/choosing-a-trustee
+  - learn/trusts/choosing-a-trustee
   - guides/settling-an-estate-step-by-step
   - checklists/first-30-days-after-a-death
   - life-events/death-of-a-parent
   - compare/executor-vs-trustee
+diagram: ExecutorTrusteeAgent
+answers:
+  - "What does a successor trustee do after the grantor dies?"
+  - "What is the first thing a successor trustee should do?"
+  - "How do I get a trust EIN after death?"
+  - "How does trust administration work?"
+  - "What is a trust administration?"
+  - "How does a trustee value trust assets at death?"
+  - "Can I administer a trust myself?"
+  - "How do I distribute trust assets to beneficiaries?"
+  - "How long does trust administration take?"
+  - "Does a trust go through probate after death?"
+  - "Do beneficiaries have to be notified when a trust becomes irrevocable?"
+  - "How much can a trustee charge?"
+  - "Can I fund a trust after the grantor has died?"
+  - "How do I sell a house in a trust after death?"
+  - "Do I need a lawyer to administer a trust?"
 reviewed: false
 updated: "2026-10-06"
 ---

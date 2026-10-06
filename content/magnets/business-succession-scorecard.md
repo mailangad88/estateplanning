@@ -14,10 +14,21 @@ pages: 6
 tag: business_succession_scorecard
 sequence: B
 related:
-  - guides/business-succession-planning
+  - learn/business-owners/business-succession-planning
   - life-events/starting-a-business
   - guides/powers-of-attorney
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
+diagram: BusinessSuccession
+answers:
+  - "What is business succession planning?"
+  - "When should I start planning for succession of my business?"
+  - "Buy-sell agreement vs. succession plan: which do I need?"
+  - "How do I train a successor?"
+  - "Who should I choose to run my business after I die?"
+  - "What happens to my business when I die?"
+  - "What is a operating agreement succession clause?"
+  - "What if my business has digital assets or customer data only I can access?"
+  - "What if my executor does not know how to run the business?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -122,4 +133,4 @@ Choose the three to five lowest scoring questions and turn each into a task. Giv
 
 ## Next step
 
-Read the [Business Succession Planning guide](/guides/business-succession-planning) for the full picture, then take the [Plan Readiness Assessment](/tools/plan-readiness-assessment). To meet an attorney, start at [/plan-finder](/plan-finder).
+Read the [Business Succession Planning guide](/learn/business-owners/business-succession-planning) for the full picture, then take the [Plan Readiness Assessment](/tools/plan-readiness-assessment). To meet an attorney, start at [/plan-finder](/plan-finder).

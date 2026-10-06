@@ -19,6 +19,17 @@ related:
   - guides/how-to-make-a-will
   - guides/powers-of-attorney
   - compare/joint-ownership-vs-trust
+answers:
+  - "Do I need to update my estate plan after getting married?"
+  - "Do newlyweds need to change their wills after marriage?"
+  - "Should I change my beneficiary on my 401(k) after marriage?"
+  - "Should we put each other on our house deed after marriage?"
+  - "Do we need joint or separate wills as a married couple?"
+  - "Should we both have the same will?"
+  - "Should married couples have a joint will or separate wills?"
+  - "How should a couple hold title to a home?"
+  - "Should we name each other as power of attorney and healthcare agent?"
+  - "Should married couples have a joint trust?"
 reviewed: false
 updated: "2026-10-06"
 ---

@@ -14,10 +14,14 @@ pages: 8
 tag: ltc_planning_primer
 sequence: B
 related:
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - tools/medicaid-lookback-date
   - life-events/caring-for-aging-parents
   - life-events/retirement
+answers:
+  - "How soon do I need to start planning for long-term care?"
+  - "What is a continuing care retirement community?"
+  - "What is assisted living versus a nursing home?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -152,4 +156,4 @@ Fill in a monthly figure for each line. Add rows as needed.
 
 ## Next step
 
-Read the [Medicaid and long-term care planning guide](/guides/medicaid-and-long-term-care-planning) and try the [Medicaid look-back date tool](/tools/medicaid-lookback-date). To talk it through, book a consult at [/plan-finder](/plan-finder).
+Read the [Medicaid and long-term care planning guide](/learn/elder-care/medicaid-planning) and try the [Medicaid look-back date tool](/tools/medicaid-lookback-date). To talk it through, book a consult at [/plan-finder](/plan-finder).

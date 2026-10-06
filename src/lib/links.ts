@@ -1,5 +1,7 @@
 import { getAudiences, getComparisons, getGuides, getLifeEvents, getPosts, getChecklists } from "@/lib/content";
 import type { RelatedLink } from "@/components/article";
+import { MERGED_PAGES } from "@/config/merged-pages";
+import { findByUrl } from "@/lib/library";
 
 /** Resolves a slug from any collection to a link, so related lists can mix types. */
 export function resolveSlug(slug: string): RelatedLink | null {
@@ -15,6 +17,10 @@ export function resolveSlug(slug: string): RelatedLink | null {
   if (k) return { href: `/checklists/${k.slug}`, title: k.title, kind: "Checklist" };
   const a = getAudiences().find((x) => x.slug === slug);
   if (a) return { href: `/estate-planning-for/${a.slug}`, title: a.title, kind: "Situation" };
+  // A slug whose page was merged into the library resolves to the library article.
+  const merged = MERGED_PAGES.find(([from]) => from.endsWith(`/${slug}`));
+  const page = merged ? findByUrl(merged[1]) : undefined;
+  if (merged && page && "title" in page) return { href: merged[1], title: page.title, kind: "Library" };
   return null;
 }
 

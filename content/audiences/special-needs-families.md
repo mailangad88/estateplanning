@@ -47,7 +47,7 @@ updated: "2026-10-06"
 - **The wrong trust.** A first-party special needs trust, funded with the beneficiary's own money, must repay Medicaid at death and generally must be created before a set age. A third-party trust, funded by parents or others, has no payback requirement. Parents who leave their own money in a first-party trust by mistake give up that benefit. [VERIFY AT PUBLISH: age limit and payback rules]
 - **Retirement accounts and life insurance** that name the person directly cause the same problem.
 - **No one to carry on.** Parents are often the case manager, advocate and decision-maker. A plan with money and no instructions leaves a trustee guessing.
-- **Turning 18.** A parent's authority as guardian ends at 18. Families choose among guardianship, supported decision-making, powers of attorney and healthcare proxies, depending on capacity and state law. [State check]. See [power of attorney vs guardianship](/compare/power-of-attorney-vs-guardianship).
+- **Turning 18.** A parent's authority as guardian ends at 18. Families choose among guardianship, supported decision-making, powers of attorney and healthcare proxies, depending on capacity and state law. [State check]. See [power of attorney vs guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship).
 
 ABLE accounts changed in 2026: the age at which a disability must have begun was raised, and yearly contributions are tied to the federal gift tax exclusion. [VERIFY AT PUBLISH: confirm current age, limits and the state's ABLE program]. For the trade-offs, see [special needs trust vs ABLE account](/compare/special-needs-trust-vs-able-account).
 

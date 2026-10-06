@@ -18,6 +18,10 @@ related:
   - guides/powers-of-attorney
   - guides/healthcare-directives-and-living-wills
   - checklists/documents-to-gather-before-your-consult
+answers:
+  - "How do I bring up power of attorney with my parents?"
+  - "What if a parent will not talk about estate planning?"
+  - "Who can see a parent's bank accounts?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -89,7 +93,7 @@ Without a document, you generally have little power over your parent's affairs. 
 | Attend appointments with their consent | Sell or move their property |
 | Offer to add yourself as a helper on a bill-pay | Change their documents |
 
-If your parent has lost the ability to sign a power of attorney, a court process may be the only route. A court-ordered guardianship or conservatorship can be time-consuming and costly, which is why planning while a parent can sign matters. See the [power of attorney vs. guardianship comparison](/compare/power-of-attorney-vs-guardianship).
+If your parent has lost the ability to sign a power of attorney, a court process may be the only route. A court-ordered guardianship or conservatorship can be time-consuming and costly, which is why planning while a parent can sign matters. See the [power of attorney vs. guardianship comparison](/learn/power-of-attorney/power-of-attorney-vs-guardianship).
 
 ## Warning signs of financial exploitation
 

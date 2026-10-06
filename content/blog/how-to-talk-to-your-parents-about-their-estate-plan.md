@@ -2,7 +2,7 @@
 title: "How to talk to your parents about their estate plan"
 description: "Practical ways to raise estate planning with aging parents, what to ask, and how to keep the talk about their wishes, not your inheritance."
 answer: "Start with care, not money. Many families open with a recent event, like a friend's illness, and ask where documents are and who should act if something happens. Focus on your parents' wishes and the practical details, not on what you will inherit. Expect more than one conversation, and offer to help, not to take over."
-pillar: what-is-estate-planning
+pillar: how-to-make-a-will
 date: 2026-10-06
 updated: 2026-10-06
 reviewed: false
@@ -16,7 +16,7 @@ faqs:
 
 The best way to start is with care and a practical question, not with money. Ask "Where would I find your papers if something happened?" That lands better than "Who gets the house?"
 
-Our guide to [what estate planning is](/guides/what-is-estate-planning) explains the documents your parents may already have. This post focuses on how to raise the subject and what to ask.
+Our guide to [what estate planning is](/learn/basics/what-is-estate-planning) explains the documents your parents may already have. This post focuses on how to raise the subject and what to ask.
 
 ## Pick a natural opening
 

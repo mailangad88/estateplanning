@@ -9,7 +9,7 @@ const toneOf = (guide: DecisionGuide, family: string) => guide.families.find((f)
  * Every option placed on two axes the guide defines (for trusts: control kept against protection
  * and tax power). Bubbles link to the option's card. Phones show numbered dots with a key below.
  */
-export function DecisionMap({ guide }: { guide: DecisionGuide }) {
+export function DecisionMap({ guide, anchorBase = "" }: { guide: DecisionGuide; anchorBase?: string }) {
   const { map } = guide;
   return (
     <figure className="dg-map">
@@ -24,7 +24,7 @@ export function DecisionMap({ guide }: { guide: DecisionGuide }) {
             return (
               <a
                 key={o.id}
-                href={`#opt-${o.id}`}
+                href={`${anchorBase}#opt-${o.id}`}
                 className={`dg-bubble dg-tone--${toneOf(guide, o.family)}`}
                 style={{ left: `${o.map.x}%`, top: `${100 - o.map.y}%` }}
                 aria-label={o.name}
@@ -46,7 +46,7 @@ export function DecisionMap({ guide }: { guide: DecisionGuide }) {
       <ol className="dg-map__key">
         {guide.options.map((o) => (
           <li key={o.id}>
-            <a href={`#opt-${o.id}`}>{o.name}</a>
+            <a href={`${anchorBase}#opt-${o.id}`}>{o.name}</a>
           </li>
         ))}
       </ol>
@@ -121,7 +121,7 @@ export function OptionCards({ guide }: { guide: DecisionGuide }) {
 }
 
 /** "If this, then consider that" rules of thumb, each linking to the option card. */
-export function Shortcuts({ guide }: { guide: DecisionGuide }) {
+export function Shortcuts({ guide, anchorBase = "" }: { guide: DecisionGuide; anchorBase?: string }) {
   return (
     <ol className="dg-shortcuts">
       {guide.shortcuts.map((s) => {
@@ -135,7 +135,7 @@ export function Shortcuts({ guide }: { guide: DecisionGuide }) {
               {s.when}
             </span>
             <ArrowRight className="dg-shortcuts__arrow" size={22} aria-hidden="true" />
-            <a href={`#opt-${o.id}`} className={`dg-chip dg-tone--${toneOf(guide, o.family)}`}>
+            <a href={`${anchorBase}#opt-${o.id}`} className={`dg-chip dg-tone--${toneOf(guide, o.family)}`}>
               <Icon size={18} aria-hidden="true" />
               <strong>{o.name}</strong>
             </a>

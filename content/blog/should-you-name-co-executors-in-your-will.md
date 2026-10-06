@@ -2,7 +2,7 @@
 title: "Should you name co-executors in your will?"
 description: "Naming two executors can feel fair, but it can also slow things down. Here is how co-executors work and when people choose one instead."
 answer: "You can name two or more co-executors, and some families do it to share the work or avoid picking one child over another. The trade-off is speed. Co-executors often must agree and sign together, so distance, schedules or disagreement can stall the estate. Many people name one executor plus a backup instead."
-pillar: choosing-an-executor
+pillar: settling-an-estate-step-by-step
 date: 2026-10-06
 updated: 2026-10-06
 reviewed: false
@@ -16,7 +16,7 @@ faqs:
 
 You can name co-executors in your will, and it is legal in every state. Whether it is a good idea depends on the people involved and how well they work together.
 
-Our guide to [choosing an executor](/guides/choosing-an-executor) covers the role in full. Here we look only at the question of one person versus two.
+Our guide to [choosing an executor](/learn/wills/choosing-an-executor) covers the role in full. Here we look only at the question of one person versus two.
 
 ## Why people name co-executors
 
@@ -32,7 +32,7 @@ Other reasons come up too:
 
 An executor signs a lot of paperwork. Opening an estate bank account, selling a house, filing tax returns and paying bills all need signatures. With co-executors, banks and courts may require both.
 
-That works fine if both live in the same town and get along. It gets harder if one lives across the country, travels for work or simply disagrees. Each delay adds to [how long probate takes](/blog/how-long-does-probate-take).
+That works fine if both live in the same town and get along. It gets harder if one lives across the country, travels for work or simply disagrees. Each delay adds to [how long probate takes](/learn/probate/how-long-does-probate-take).
 
 Disagreement is the bigger risk. If co-executors cannot agree on selling the house, for example, someone may need to ask the court to decide. That costs money and time.
 

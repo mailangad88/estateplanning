@@ -14,11 +14,16 @@ pages: 6
 tag: plan_cost_guide
 sequence: B
 related:
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - compare/online-will-vs-estate-attorney
-  - compare/will-vs-trust
-  - guides/revocable-living-trust-explained
-  - guides/updating-your-estate-plan
+  - learn/trusts/will-vs-trust
+  - learn/trusts/revocable-living-trust
+  - learn/basics/when-to-update-your-estate-plan
+answers:
+  - "How much does estate planning cost?"
+  - "How much does an estate planning attorney charge?"
+  - "How much does a basic estate plan cost?"
+  - "How much does a complete estate plan cost with a trust?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -49,7 +54,7 @@ Some firms mix the two. For example, they charge a flat fee for core documents a
 
 | Factor | Why it matters |
 |---|---|
-| Will versus trust | A trust package typically includes more documents and more drafting. See [will versus trust](/compare/will-vs-trust) |
+| Will versus trust | A trust package typically includes more documents and more drafting. See [will versus trust](/learn/trusts/will-vs-trust) |
 | Number of documents | Powers of attorney, health care documents and extra trusts add work |
 | Couples versus individuals | Joint plans may share work, though each person's choices still need attention |
 | Family situation | Blended families, a child with special needs or an estranged heir often require custom drafting |

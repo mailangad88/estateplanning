@@ -14,11 +14,20 @@ pages: 8
 tag: vacation_home_guide
 sequence: B
 related:
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
   - guides/how-probate-works
   - compare/transfer-on-death-deed-vs-trust
   - compare/joint-ownership-vs-trust
   - guides/estate-and-inheritance-taxes
+answers:
+  - "How do I leave a vacation home to my children?"
+  - "How do I keep the house in the family for generations?"
+  - "How do I protect family land from being sold?"
+  - "Trust vs. LLC for vacation home?"
+  - "Should I put my vacation home in a trust or an LLC?"
+  - "Should I put a vacation home in a trust?"
+  - "What if the heirs cannot afford the property taxes?"
+  - "How do I plan for a vacation home in an estate tax state?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -54,7 +63,7 @@ Selling can be the kindest answer when the family cannot share, no heir can affo
 
 ### A trust
 
-A revocable living trust can hold title to the cabin during your life and after your death. The trust can name a trustee, set rules for use and costs, and say what happens if someone wants out. See [revocable living trust explained](/guides/revocable-living-trust-explained). A trust can also keep the property out of probate. If the property is in another state, that is a significant benefit (see below).
+A revocable living trust can hold title to the cabin during your life and after your death. The trust can name a trustee, set rules for use and costs, and say what happens if someone wants out. See [revocable living trust explained](/learn/trusts/revocable-living-trust). A trust can also keep the property out of probate. If the property is in another state, that is a significant benefit (see below).
 
 A trust can last for a set period, such as the life of the youngest child, or until the cabin is sold. Some families create a separate trust just for the property, with a cash fund to pay for upkeep.
 
@@ -164,4 +173,4 @@ Work through this in a family meeting, ideally before anyone inherits.
 
 ## Next step
 
-Read about [how probate works](/guides/how-probate-works) and [revocable living trusts](/guides/revocable-living-trust-explained), then [book a consult](/plan-finder) and bring your family worksheet.
+Read about [how probate works](/guides/how-probate-works) and [revocable living trusts](/learn/trusts/revocable-living-trust), then [book a consult](/plan-finder) and bring your family worksheet.

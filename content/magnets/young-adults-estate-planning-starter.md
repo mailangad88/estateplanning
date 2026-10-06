@@ -14,10 +14,25 @@ pages: 5
 tag: young_adults_starter
 sequence: B
 related:
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - guides/beneficiary-designations
   - guides/powers-of-attorney
-  - guides/digital-assets-estate-planning
+  - learn/digital-assets/digital-assets-in-your-estate-plan
+answers:
+  - "Do I need an estate plan if I'm young and single?"
+  - "Do I need a will when I get my first job?"
+  - "Should I name beneficiaries on my first 401(k)?"
+  - "Does an 18-year-old need a will?"
+  - "What documents should an 18-year-old sign?"
+  - "Do college students need a power of attorney?"
+  - "Can an 18-year-old sign a power of attorney without a lawyer?"
+  - "Do I need a will if I'm young?"
+  - "At what age should I start estate planning?"
+  - "At what age should you start estate planning?"
+  - "Do I need an estate plan if I do not own much?"
+  - "Do I need an estate plan if I rent and have no property?"
+  - "Do I need an estate plan if I rent and have no assets?"
+  - "Is estate planning only for older people?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -78,7 +93,7 @@ A lot of what you own is online: photos, social media, email, cloud storage, cry
 - [ ] Write down the accounts that hold money or irreplaceable files.
 - [ ] If you hold cryptocurrency, record how access works, since lost keys often mean lost funds.
 
-See [digital assets estate planning](/guides/digital-assets-estate-planning) and the [digital assets inventory](/checklists/digital-assets-inventory).
+See [digital assets estate planning](/learn/digital-assets/digital-assets-in-your-estate-plan) and the [digital assets inventory](/checklists/digital-assets-inventory).
 
 ## Step 5: A simple will, when it fits
 
@@ -90,7 +105,7 @@ A will is not required in your first week of adult life. A simple will starts to
 - You have **children** (then a guardian choice is a priority).
 - You want to name an **executor** rather than leave the choice to a court.
 
-Without a will, state law decides who inherits, usually a spouse, children or parents. See [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will) and [how to make a will](/guides/how-to-make-a-will).
+Without a will, state law decides who inherits, usually a spouse, children or parents. See [what happens if you die without a will](/learn/wills/dying-without-a-will) and [how to make a will](/guides/how-to-make-a-will).
 
 Online forms can work for very simple situations, but state signing rules are strict. An attorney can say whether a form suits you. See [online will vs estate attorney](/compare/online-will-vs-estate-attorney).
 
@@ -133,4 +148,4 @@ Put a reminder on your calendar once a year, and also review after any of these:
 
 ## Next step
 
-Read [what is estate planning](/guides/what-is-estate-planning) for the wider picture, then take the [plan readiness assessment](/tools/plan-readiness-assessment) or [book a consult](/plan-finder).
+Read [what is estate planning](/learn/basics/what-is-estate-planning) for the wider picture, then take the [plan readiness assessment](/tools/plan-readiness-assessment) or [book a consult](/plan-finder).

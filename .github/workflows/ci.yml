@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      PANGRAM_API_KEY: ${{ secrets.PANGRAM_API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -20,3 +22,10 @@ jobs:
       - run: npm run build
       - name: Check built pages (broken links, JSON-LD, duplicate heading ids)
         run: npm run check:site
+      # AI-text check (Pangram). Runs only when the PANGRAM_API_KEY secret is set; flags changed content pages
+      # that read as mostly AI-written so the attorney rewrites them. See scripts/ai-text-check.mjs.
+      - name: AI-text check on changed content
+        if: ${{ env.PANGRAM_API_KEY != '' }}
+        env:
+          PANGRAM_ENFORCE: "true"
+        run: node scripts/ai-text-check.mjs

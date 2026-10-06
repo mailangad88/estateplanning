@@ -48,8 +48,8 @@ updated: "2026-10-06"
 - **Domicile disputes.** Your domicile is the one place you treat as home, based on facts: where you vote, where your driver's license is, where you spend most of the year, where your doctors are. States that tax estates or income can both claim you. [State check]
 - **A power of attorney or healthcare directive a provider will not accept.** Most states honor out-of-state documents, but banks and hospitals may hesitate. Signing a version that meets the second state's rules can help. [State check]
 - **Incapacity far from adult children.** If your agent lives three states away, can they act quickly? A named local backup helps.
-- **An old plan.** Documents signed 15 years ago may name people who have died or moved, or ignore the way you hold accounts now. See [updating your estate plan](/guides/updating-your-estate-plan) and [estate planning at retirement](/life-events/retirement).
-- **Long-term care.** Planning ahead involves a 60-month Medicaid look-back in most states <!-- verify -->. [VERIFY AT PUBLISH]. See [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning).
+- **An old plan.** Documents signed 15 years ago may name people who have died or moved, or ignore the way you hold accounts now. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan) and [estate planning at retirement](/life-events/retirement).
+- **Long-term care.** Planning ahead involves a 60-month Medicaid look-back in most states <!-- verify -->. [VERIFY AT PUBLISH]. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).
 
 ## What a plan usually includes
 

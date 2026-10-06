@@ -91,7 +91,7 @@ When the Medinas die, Sofia keeps her benefits. Mateo uses the trust to pay for 
 - **Forgetting relatives.** Grandparents, aunts and uncles should know where to direct gifts.
 - **Using the wrong type.** A first-party trust where a third-party trust would do may cause an unnecessary Medicaid payback.
 - **Choosing a trustee without benefits knowledge.** One wrong payment can cause a benefits problem.
-- **Overlooking guardianship and decision-making.** At 18, parents lose automatic authority. Options range from supported decision-making to a guardianship. See [power of attorney vs. guardianship](/compare/power-of-attorney-vs-guardianship).
+- **Overlooking guardianship and decision-making.** At 18, parents lose automatic authority. Options range from supported decision-making to a guardianship. See [power of attorney vs. guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship).
 
 ## Questions to ask an attorney
 

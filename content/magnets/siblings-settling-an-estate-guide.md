@@ -15,9 +15,17 @@ tag: siblings_estate_guide
 sequence: G
 related:
   - guides/settling-an-estate-step-by-step
-  - guides/choosing-an-executor
+  - learn/wills/choosing-an-executor
   - life-events/death-of-a-parent
   - checklists/first-30-days-after-a-death
+answers:
+  - "How do siblings split an estate fairly?"
+  - "What happens if siblings can't agree on the estate?"
+  - "How do I divide belongings among siblings?"
+  - "How do heirs split an inherited house?"
+  - "How do I prevent family fights over inheritance?"
+  - "Who is in charge of the estate when someone dies?"
+  - "How do I grieve and still handle the estate?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -41,7 +49,7 @@ Different people may carry different jobs. Naming them out loud helps.
 | **Beneficiary** | A person who receives something from the will, the trust or an account |
 | **Helper** | A sibling or relative who assists but has no legal authority |
 
-An executor is not automatically "in charge" of the family. The role is a legal duty to follow the will, protect assets, pay debts and taxes, and distribute what is left. See [choosing an executor](/guides/choosing-an-executor) and [settling an estate step by step](/guides/settling-an-estate-step-by-step).
+An executor is not automatically "in charge" of the family. The role is a legal duty to follow the will, protect assets, pay debts and taxes, and distribute what is left. See [choosing an executor](/learn/wills/choosing-an-executor) and [settling an estate step by step](/guides/settling-an-estate-step-by-step).
 
 Questions to settle early:
 

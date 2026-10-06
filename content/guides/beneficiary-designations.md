@@ -34,7 +34,7 @@ These forms usually override your will. For many families, they control more mon
 | Bank accounts | Optional | Called payable on death (POD) |
 | Brokerage accounts | Optional | Called transfer on death (TOD) |
 
-For bank and brokerage versions, see [transfer-on-death and payable-on-death](/guides/transfer-on-death-and-payable-on-death).
+For bank and brokerage versions, see [transfer-on-death and payable-on-death](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts).
 
 ## Why the form beats the will
 
@@ -74,7 +74,7 @@ Naming adult children directly is simple. It works well when they are responsibl
 
 Companies generally will not pay large sums directly to a minor. A court may need to appoint someone to manage the money.
 
-Options include naming a trust or a custodian under your state's transfers to minors law. See [leaving money to minors](/guides/leaving-money-to-minors).
+Options include naming a trust or a custodian under your state's transfers to minors law. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors).
 
 ### A person with a disability
 

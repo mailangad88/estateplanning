@@ -17,8 +17,20 @@ related:
   - guides/beneficiary-designations
   - compare/beneficiary-designation-vs-will
   - checklists/beneficiary-designation-audit
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
   - life-events/divorce
+diagram: BeneficiaryBeatsWill
+answers:
+  - "Do beneficiary designations go through probate?"
+  - "How do I make sure my beneficiary forms match my will?"
+  - "What if my beneficiary designation is out of date and conflicts with my will?"
+  - "How often should I review my beneficiary designations?"
+  - "What life events should trigger a beneficiary review?"
+  - "What happens if a minor is named as a beneficiary?"
+  - "What happens if a beneficiary is on Medicaid or SSI?"
+  - "What is the difference between a beneficiary designation and a will?"
+  - "How do I change the beneficiary on my 401(k)?"
+  - "What is the best way to keep a record of my beneficiary designations?"
 reviewed: false
 updated: "2026-10-06"
 ---

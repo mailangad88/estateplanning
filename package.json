@@ -12,7 +12,9 @@
     "launch-check": "node scripts/launch-check.mjs",
     "prebuild": "node scripts/launch-check.mjs && npm run search:index",
     "check:site": "node scripts/check-site.mjs",
-    "search:index": "tsx scripts/build-search-index.mts"
+    "search:index": "tsx scripts/build-search-index.mts",
+    "review:queue": "tsx scripts/review-queue.mts",
+    "check:ai-text": "node scripts/ai-text-check.mjs"
   },
   "dependencies": {
     "@fontsource-variable/fraunces": "^5.3.0",

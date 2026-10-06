@@ -16,8 +16,21 @@ sequence: B
 related:
   - guides/estate-planning-for-blended-families
   - life-events/getting-married
-  - guides/choosing-a-trustee
+  - learn/trusts/choosing-a-trustee
   - guides/beneficiary-designations
+diagram: BlendedFamilyPlan
+answers:
+  - "What is estate planning for a blended family?"
+  - "Do I need a trust if I have a blended family?"
+  - "What estate planning do I need if I have a blended family?"
+  - "Does my second spouse inherit before my children?"
+  - "If I die, does everything go to my spouse and not my kids?"
+  - "If I remarry, do my children automatically lose their inheritance?"
+  - "How do I make sure my second spouse is provided for?"
+  - "Should my spouse or my child be my trustee?"
+  - "Should I name my spouse or my child as executor?"
+  - "What does a second spouse get if there is no will?"
+  - "How do I leave something to both my spouse and my kids from a prior marriage?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -77,7 +90,7 @@ See [Estate Planning for Blended Families](/guides/estate-planning-for-blended-f
 - **Executor:** consider whether a child or the spouse is better placed to work with the other side.
 - **Guardian:** if minor children from a prior relationship are involved, the other parent's rights come first in most situations.
 
-Read [Choosing a Trustee](/guides/choosing-a-trustee).
+Read [Choosing a Trustee](/learn/trusts/choosing-a-trustee).
 
 ## Who gets what and when: worksheet
 

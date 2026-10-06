@@ -24,13 +24,13 @@ export const PLAN_DOCS = {
   livingWill: { label: "Living will", icon: "Heart", href: "/guides/healthcare-directives-and-living-wills" },
   hipaa: { label: "HIPAA release", icon: "ShieldCheck", href: "/healthcare-directives" },
   guardian: { label: "Guardian nomination", icon: "Baby", href: "/guides/guardianship-for-minor-children" },
-  childrensTrust: { label: "Trust for your children", icon: "PiggyBank", href: "/guides/leaving-money-to-minors" },
+  childrensTrust: { label: "Trust for your children", icon: "PiggyBank", href: "/learn/guardianship/leaving-money-to-minors" },
   beneficiaries: { label: "Beneficiary updates", icon: "Users", href: "/guides/beneficiary-designations" },
   specialNeedsTrust: { label: "Supplemental needs trust", icon: "HandHeart", href: "/guides/special-needs-trusts" },
-  digital: { label: "Digital assets plan", icon: "Lock", href: "/guides/digital-assets-estate-planning" },
-  transferOnDeath: { label: "Transfer on death designations", icon: "House", href: "/guides/transfer-on-death-and-payable-on-death" },
-  longTermCare: { label: "Long-term care plan", icon: "CalendarCheck", href: "/guides/medicaid-and-long-term-care-planning" },
-  business: { label: "Business succession plan", icon: "Briefcase", href: "/guides/business-succession-planning" },
+  digital: { label: "Digital assets plan", icon: "Lock", href: "/learn/digital-assets/digital-assets-in-your-estate-plan" },
+  transferOnDeath: { label: "Transfer on death designations", icon: "House", href: "/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts" },
+  longTermCare: { label: "Long-term care plan", icon: "CalendarCheck", href: "/learn/elder-care/medicaid-planning" },
+  business: { label: "Business succession plan", icon: "Briefcase", href: "/learn/business-owners/business-succession-planning" },
   review: { label: "Plan review", icon: "CalendarCheck", href: "/life-events" },
 } as const;
 

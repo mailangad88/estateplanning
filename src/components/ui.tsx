@@ -8,7 +8,9 @@ import { VisualCardGrid, type CardItem, type CardMedia } from "@/components/visu
 export function ReviewNote({ reviewed, updated }: { reviewed: boolean; updated: string }) {
   return (
     <p className="meta">
-      {reviewed ? `Reviewed by ${firm.attorneyName}, ${firm.attorneyTitle.toLowerCase()}` : "Draft pending attorney review"}
+      {reviewed ? "Reviewed by " : "Draft pending review by "}
+      <Link href="/about-the-attorney" rel="author">{firm.attorneyName}</Link>
+      {reviewed ? `, ${firm.attorneyTitle.toLowerCase()}` : ""}
       {updated ? ` · Updated ${updated}` : ""} · <Link href="/editorial-policy">How we review</Link>
     </p>
   );

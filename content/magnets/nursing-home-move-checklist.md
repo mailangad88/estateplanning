@@ -14,11 +14,15 @@ pages: 5
 tag: nursing_home_move_checklist
 sequence: B
 related:
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - life-events/caring-for-aging-parents
   - tools/medicaid-lookback-date
   - guides/powers-of-attorney
   - checklists/important-contacts-list
+answers:
+  - "What happens to my house if I go into a nursing home?"
+  - "Should I transfer my house to my child before going into a nursing home?"
+  - "What happens if my parent runs out of money in a nursing home?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -94,7 +98,7 @@ Long-term care is costly, and many families eventually look at Medicaid. Plannin
 - [ ] Do not give assets away to "qualify faster" without advice. It often backfires.
 - [ ] Learn how the facility handles a **transition from private pay to Medicaid**, and what notice it requires.
 
-See [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning).
+See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).
 
 ## 6. Day-to-day contacts and information
 
@@ -121,4 +125,4 @@ See [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-p
 
 ## Next step
 
-Read [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning) and [caring for aging parents](/life-events/caring-for-aging-parents). When you are ready, [book a consult](/plan-finder).
+Read [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) and [caring for aging parents](/life-events/caring-for-aging-parents). When you are ready, [book a consult](/plan-finder).

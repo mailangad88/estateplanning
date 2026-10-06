@@ -16,10 +16,25 @@ sequence: G
 related:
   - guides/settling-an-estate-step-by-step
   - guides/how-probate-works
-  - guides/choosing-an-executor
+  - learn/wills/choosing-an-executor
   - checklists/first-30-days-after-a-death
   - tools/executor-workload
   - compare/executor-vs-trustee
+diagram: ExecutorTrusteeAgent
+answers:
+  - "What are the duties of an executor?"
+  - "What does an executor have to do?"
+  - "What are the executor's responsibilities?"
+  - "What is the role of an executor?"
+  - "How does an executor get an EIN for the estate?"
+  - "How does an executor open an estate bank account?"
+  - "How do I settle an estate step by step?"
+  - "What is the order of things to do in settling an estate?"
+  - "How does an executor distribute assets?"
+  - "How does an executor pay bills?"
+  - "How does an executor value the estate?"
+  - "What does it mean to settle an estate?"
+  - "What is estate administration?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -66,7 +81,7 @@ The inventory is a list of what the estate owns, with values as of the date of d
 
 - Real estate usually needs an appraisal. Many people use a licensed appraiser for a date-of-death value.
 - Vehicles, jewelry, art, collections and business interests may each need a separate value.
-- Note which assets pass outside the estate, by beneficiary form, joint ownership or a trust. These are generally not yours to distribute, though you may still need to report them for tax reasons. See [Probate vs. Non-Probate Assets](/compare/probate-vs-non-probate-assets).
+- Note which assets pass outside the estate, by beneficiary form, joint ownership or a trust. These are generally not yours to distribute, though you may still need to report them for tax reasons. See [Probate vs. Non-Probate Assets](/learn/probate/probate-vs-non-probate-assets).
 - Some courts require you to file a formal inventory by a set deadline. Ask the clerk.
 
 ## Phase 4: Creditor notice

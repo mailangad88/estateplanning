@@ -14,11 +14,22 @@ pages: 7
 tag: unmarried_couples_guide
 sequence: B
 related:
-  - guides/what-happens-if-you-die-without-a-will
+  - learn/wills/dying-without-a-will
   - guides/powers-of-attorney
   - guides/beneficiary-designations
   - compare/joint-ownership-vs-trust
   - life-events/buying-a-home
+answers:
+  - "What does an estate plan look like for an unmarried couple?"
+  - "What estate planning documents do unmarried couples need?"
+  - "Should unmarried couples buy a house as joint tenants?"
+  - "Does my partner inherit if we have lived together for years?"
+  - "Can an unmarried partner inherit without a will?"
+  - "Can my partner visit me in the hospital if we are not married?"
+  - "Can I leave my house to my unmarried partner?"
+  - "Can my partner be the beneficiary of my 401(k) if we are not married?"
+  - "Can I leave my property to an unmarried partner in a will?"
+  - "Do unmarried partners pay inheritance tax?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -39,7 +50,7 @@ The same gap shows up in other areas:
 - **Taxes:** Gifts and inheritances between spouses often get special treatment. Unmarried partners may not get the same treatment, so ask an attorney or tax professional.
 - **Benefits:** Survivor benefits under some pensions and Social Security generally depend on marriage.
 
-Read more about [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will).
+Read more about [what happens if you die without a will](/learn/wills/dying-without-a-will).
 
 ## Documents that fill the gaps
 

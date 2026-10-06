@@ -15,9 +15,17 @@ tag: poa_agent_handbook
 sequence: B
 related:
   - guides/powers-of-attorney
-  - compare/power-of-attorney-vs-guardianship
+  - learn/power-of-attorney/power-of-attorney-vs-guardianship
   - life-events/caring-for-aging-parents
   - life-events/serious-diagnosis
+answers:
+  - "What are an agent's duties under a power of attorney?"
+  - "What can a power of attorney agent do?"
+  - "What happens to a power of attorney when the agent dies?"
+  - "Can a power of attorney pay themselves for their work?"
+  - "Can a power of attorney pay their own bills from my account?"
+  - "What happens to my power of attorney if I get divorced?"
+  - "Does a power of attorney expire?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -133,4 +141,4 @@ After the principal dies, keep your records. The executor may ask you to account
 
 ## Next step
 
-Read the [powers of attorney guide](/guides/powers-of-attorney) for how these documents are structured. If you are weighing larger decisions, see the [guide to Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning) or book a consult at [/plan-finder](/plan-finder).
+Read the [powers of attorney guide](/guides/powers-of-attorney) for how these documents are structured. If you are weighing larger decisions, see the [guide to Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) or book a consult at [/plan-finder](/plan-finder).

@@ -18,7 +18,12 @@ related:
   - guides/beneficiary-designations
   - guides/powers-of-attorney
   - guides/healthcare-directives-and-living-wills
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
+answers:
+  - "What should I review in my estate plan when I retire?"
+  - "Do I need to update my estate plan when I retire?"
+  - "Should I downsize my estate plan as I age?"
+  - "Should I give my house to my children now to avoid nursing home costs?"
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -112,7 +117,7 @@ Long-term care is often the largest cost in later life, and one that many people
 - [ ] Do you have any long-term care or hybrid insurance? Read the policy to see what it covers and what triggers benefits.
 - [ ] Do you understand what Medicare does and does not cover for long-term care?
 - [ ] Have you talked with your family about your preferences?
-- [ ] Have you looked at Medicaid planning rules, which are detailed and vary by state? See [Medicaid and Long-Term Care Planning](/guides/medicaid-and-long-term-care-planning).
+- [ ] Have you looked at Medicaid planning rules, which are detailed and vary by state? See [Medicaid and Long-Term Care Planning](/learn/elder-care/medicaid-planning).
 - [ ] Have you named who would coordinate your care?
 
 ## Section 8: Tidy up the basics

@@ -47,7 +47,7 @@ You do not have to tell us your diagnosis. Share only what you want us to know. 
 
 1. **Healthcare power of attorney and living will.** Names who speaks for you if you cannot, and records what you want. A HIPAA release lets that person talk to your care team. See [living will vs healthcare power of attorney](/compare/living-will-vs-healthcare-power-of-attorney).
 2. **Durable power of attorney for finances.** Names who pays bills, handles the bank and deals with insurance if you cannot. It covers a bad month as much as a bad year. See the [powers of attorney guide](/guides/powers-of-attorney).
-3. **A will, or a living trust** if you own a home or accounts you want to pass without court. Names who gets what, who is the executor, and who cares for any children. See [will vs trust](/compare/will-vs-trust).
+3. **A will, or a living trust** if you own a home or accounts you want to pass without court. Names who gets what, who is the executor, and who cares for any children. See [will vs trust](/learn/trusts/will-vs-trust).
 
 Then, on your own schedule: check beneficiary forms on retirement accounts and insurance, which override the will (see the [beneficiary audit](/checklists/beneficiary-designation-audit)), write a [letter of instruction](/checklists/letter-of-instruction-outline), and list accounts and passwords.
 
@@ -56,7 +56,7 @@ Then, on your own schedule: check beneficiary forms on retirement accounts and i
 - **Capacity can change.** A power of attorney and a will require that you understand what you are signing. Treatment, medication or the illness itself can affect that. Signing while you are clear keeps decisions in your hands and out of a courtroom.
 - **Someone has to speak for you.** If no one is named, state default rules decide who makes medical decisions, and that may not be the person you would choose. [State check]
 - **Money questions arrive early.** Bills, disability insurance, employer benefits and leave. An agent who can act spares a family from sorting it out under stress.
-- **Benefit rules can shift the plan.** If long-term care or Medicaid is likely, transfers made in a hurry can cause a penalty period. Talk to an attorney before giving anything away. See [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning).
+- **Benefit rules can shift the plan.** If long-term care or Medicaid is likely, transfers made in a hurry can cause a penalty period. Talk to an attorney before giving anything away. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).
 - **Children and a spouse.** Naming a guardian and a trustee matters more now, not less.
 
 Planning is a common response to bad news. It is not a sign of giving up.
