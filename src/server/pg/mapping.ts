@@ -177,6 +177,13 @@ export const TABLES = {
       t("approvedBy", "approved_by"), ts("approvedAt", "approved_at"), t("note", "note"),
     ],
   },
+  templateApprovals: {
+    table: "template_approvals",
+    columns: [
+      t("id", "id"), t("templateKey", "template_key"), n("version", "version"), t("contentHash", "content_hash"),
+      t("approvedBy", "approved_by"), ts("approvedAt", "approved_at"), t("note", "note"),
+    ],
+  },
   automationState: {
     table: "automation_state",
     columns: [n("cursorSeq", "cursor_seq"), j("stages", "stages"), j("exits", "exits"), t("id", "id")],

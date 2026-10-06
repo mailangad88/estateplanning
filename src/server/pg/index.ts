@@ -286,6 +286,7 @@ export function createPgDb(opts: { pool?: Pool; session?: PgSession } = {}): PgD
     enrollments: col(TABLES.enrollments),
     suppressions: col(TABLES.suppressions),
     factVerifications: col(TABLES.factVerifications),
+    templateApprovals: col(TABLES.templateApprovals),
     automationState: col<AutomationState>(TABLES.automationState),
     crmDeliveries: col(TABLES.crmDeliveries),
     seminars: col(TABLES.seminars),

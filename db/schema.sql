@@ -335,6 +335,19 @@ CREATE TABLE fact_verifications (
   UNIQUE (fact_id, version)
 );
 
+-- Attorney approval of nurture message copy (src/server/nurture/templates.ts). Append-only: a new approval is a
+-- new version. An approval counts only while content_hash equals the hash of the template's current copy.
+CREATE TABLE template_approvals (
+  id            text PRIMARY KEY,              -- '<templateKey>@<version>'
+  template_key  text NOT NULL,                 -- step templateKey, e.g. 'qz_1_results'
+  version       integer NOT NULL CHECK (version > 0),
+  content_hash  text NOT NULL,                 -- sha256 of channel, subject and body as approved
+  approved_by   text NOT NULL,
+  approved_at   timestamptz NOT NULL,
+  note          text NOT NULL,
+  UNIQUE (template_key, version)
+);
+
 -- Second factor per user (src/server/pg/mfa.ts). Secret encrypted by the app (AES-256-GCM).
 CREATE TABLE user_mfa (
   user_id              text PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
@@ -588,6 +601,8 @@ CREATE TRIGGER fee_rule_versions_immutable BEFORE UPDATE OR DELETE ON fee_rule_v
   FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
 CREATE TRIGGER fact_verifications_immutable BEFORE UPDATE OR DELETE ON fact_verifications
   FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
+CREATE TRIGGER template_approvals_immutable BEFORE UPDATE OR DELETE ON template_approvals
+  FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
 
 -- Only the assigned attorney approves an engagement (approve_engagement in policy.ts).
 -- Row policies cannot see which column changed, so a trigger guards it for app_user.
@@ -673,6 +688,7 @@ ALTER TABLE invoices             ENABLE ROW LEVEL SECURITY;  ALTER TABLE invoice
 ALTER TABLE sequence_enrollments ENABLE ROW LEVEL SECURITY;  ALTER TABLE sequence_enrollments FORCE ROW LEVEL SECURITY;
 ALTER TABLE suppressions         ENABLE ROW LEVEL SECURITY;  ALTER TABLE suppressions         FORCE ROW LEVEL SECURITY;
 ALTER TABLE fact_verifications   ENABLE ROW LEVEL SECURITY;  ALTER TABLE fact_verifications   FORCE ROW LEVEL SECURITY;
+ALTER TABLE template_approvals  ENABLE ROW LEVEL SECURITY;  ALTER TABLE template_approvals  FORCE ROW LEVEL SECURITY;
 ALTER TABLE crm_deliveries       ENABLE ROW LEVEL SECURITY;  ALTER TABLE crm_deliveries       FORCE ROW LEVEL SECURITY;
 ALTER TABLE seminars             ENABLE ROW LEVEL SECURITY;  ALTER TABLE seminars             FORCE ROW LEVEL SECURITY;
 ALTER TABLE partners             ENABLE ROW LEVEL SECURITY;  ALTER TABLE partners             FORCE ROW LEVEL SECURITY;
@@ -710,6 +726,7 @@ CREATE POLICY service_all ON conversion_events    FOR ALL TO app_service USING (
 CREATE POLICY service_all ON review_requests      FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_read ON fee_rule_versions   FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON fact_verifications  FOR SELECT TO app_service USING (true);
+CREATE POLICY service_read ON template_approvals FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON invoices            FOR SELECT TO app_service USING (true);
 CREATE POLICY service_write_invoices ON invoices  FOR INSERT TO app_service WITH CHECK (true);
 CREATE POLICY service_append ON audit_events      FOR INSERT TO app_service WITH CHECK (true);
@@ -877,6 +894,12 @@ CREATE POLICY fact_verifications_select ON fact_verifications FOR SELECT TO app_
 CREATE POLICY fact_verifications_insert ON fact_verifications FOR INSERT TO app_user
   WITH CHECK (app_role() IN ('platform_admin','attorney') AND approved_by = app_user_id());
 
+-- template approvals (approve_templates): attorneys and platform admins read and approve, as themselves.
+CREATE POLICY template_approvals_select ON template_approvals FOR SELECT TO app_user
+  USING (app_role() IN ('platform_admin','attorney'));
+CREATE POLICY template_approvals_insert ON template_approvals FOR INSERT TO app_user
+  WITH CHECK (app_role() IN ('platform_admin','attorney') AND approved_by = app_user_id());
+
 -- partners (manage_partners): platform_admin sees and manages all; firm_admin only partners of their own firm.
 CREATE POLICY partners_admin ON partners FOR ALL TO app_user
   USING (app_role() = 'platform_admin' OR (app_role() = 'firm_admin' AND firm_id IS NOT NULL AND firm_id = app_firm_id()))
@@ -910,6 +933,7 @@ GRANT SELECT, INSERT, UPDATE         ON leads, assignments, consults, engagement
 GRANT SELECT                         ON payments TO app_user;
 GRANT SELECT, INSERT                 ON documents, comments, activities, invoices, billable_events, fee_rule_versions TO app_user;
 GRANT SELECT, INSERT                 ON fact_verifications TO app_user;
+GRANT SELECT, INSERT                 ON template_approvals TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON partners TO app_user;
 GRANT SELECT, INSERT                 ON partner_gifts TO app_user;
 GRANT SELECT, UPDATE                 ON partner_referrals TO app_user;
@@ -924,6 +948,7 @@ GRANT SELECT, INSERT ON audit_events TO app_user;
 REVOKE UPDATE, DELETE, TRUNCATE ON audit_events FROM PUBLIC, app_user, app_service;
 REVOKE UPDATE, DELETE, TRUNCATE ON fee_rule_versions FROM PUBLIC, app_user, app_service;
 REVOKE UPDATE, DELETE, TRUNCATE ON fact_verifications FROM PUBLIC, app_user, app_service;
+REVOKE UPDATE, DELETE, TRUNCATE ON template_approvals FROM PUBLIC, app_user, app_service;
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, leads, assignments, documents, comments,
   activities, consults, engagements, payments, tasks, billable_events, sequence_enrollments, suppressions TO app_service;
@@ -935,6 +960,7 @@ GRANT SELECT, INSERT, UPDATE ON crm_deliveries, conversion_events, review_reques
 GRANT SELECT, INSERT ON invoices TO app_service;
 GRANT SELECT ON fee_rule_versions TO app_service;
 GRANT SELECT ON fact_verifications TO app_service; -- approvals are written in the approver's own session
+GRANT SELECT ON template_approvals TO app_service; -- the sender reads approvals; they are written in the approver's own session
 GRANT INSERT ON audit_events TO app_service;
 
 -- The automation runner reads the audit log as its event feed (ids and actions only).
