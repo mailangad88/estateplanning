@@ -539,3 +539,19 @@ footer.site .footer-cta .button:hover { text-decoration: none; }
   .vcard__play { width: 38px; height: 38px; }
 }
 .stage-hero .breadcrumbs { margin-bottom: 20px; }
+
+/* Service pages: icon headings, two-column check cards, icon notes. */
+.h-icon { display: flex; align-items: center; gap: 14px; }
+.h-icon .icon-badge { width: 44px; height: 44px; border-radius: 12px; }
+.mp-section .h-icon::before { content: none; }
+.check-grid { list-style: none; padding: 0; margin: 18px 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
+.check-grid > li { display: flex; gap: 12px; align-items: flex-start; margin: 0; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); line-height: 1.5; }
+.check-grid__mark { flex: none; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--sage-tint); color: var(--sage-deep); margin-top: 1px; }
+.check-grid.is-negative .check-grid__mark { background: var(--clay-tint); color: var(--clay-text); }
+.callout--icon { display: flex; gap: 12px; align-items: flex-start; background: var(--gold-tint); border: 0; border-radius: var(--radius); padding: 16px 18px; }
+.callout--icon > svg { flex: none; color: var(--gold-text); margin-top: 2px; }
+/* Long-form bullets in guides get a calm check mark instead of a dot. */
+.prose ul { list-style: none; padding-left: 0; }
+.prose ul > li { position: relative; padding-left: 30px; }
+.prose ul > li::before { content: ""; position: absolute; left: 4px; top: 0.5em; width: 14px; height: 8px; border-left: 2.5px solid var(--sage); border-bottom: 2.5px solid var(--sage); transform: rotate(-45deg); }
+.prose ul > li:has(> input[type="checkbox"])::before { content: none; }
