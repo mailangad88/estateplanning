@@ -4,8 +4,9 @@ import SourceTracker from "@/components/SourceTracker";
 import { firm } from "@/config/firm";
 import { ExitIntent, StickyContactBar } from "@/components/capture";
 import { Disclosures } from "@/components/Disclosures";
+import MegaFooter from "@/components/MegaFooter";
 import { TrackedPhoneLink } from "@/components/TrackedPhone";
-import { JsonLd, legalServiceLd, SITE_URL } from "@/lib/seo";
+import { JsonLd, siteGraphLd, SITE_URL } from "@/lib/seo";
 import "./globals.css";
 import "@/components/visuals/visuals.css";
 
@@ -40,26 +41,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="container">{children}</main>
         <StickyContactBar phone={firm.phone} textNumber={firm.textNumber} />
         <ExitIntent />
-        <JsonLd data={legalServiceLd()} />
+        <JsonLd data={siteGraphLd()} />
         <footer className="site">
           <div className="container">
+            <MegaFooter />
             <Disclosures />
-            <p>
-              <Link href="/wills">Wills</Link> · <Link href="/living-trusts">Living trusts</Link> · <Link href="/power-of-attorney">Power of attorney</Link> ·{" "}
-              <Link href="/healthcare-directives">Healthcare directives</Link> · <Link href="/probate">Probate</Link> ·{" "}
-              <Link href="/trust-administration">Trust administration</Link> · <Link href="/estate-planning-for-parents">Planning for parents</Link> ·{" "}
-              <Link href="/how-it-works">How it works</Link> · <Link href="/about-the-attorney">About the attorney</Link> · <Link href="/pricing">Pricing</Link>
-            </p>
-            <p>
-              <Link href="/resources">Resources</Link> · <Link href="/learn">Estate planning library</Link> · <Link href="/estate-planning-for">By situation</Link> ·{" "}
-              <Link href="/estate-planning">Laws by state</Link> · <Link href="/glossary">Glossary</Link> · <Link href="/faq">FAQ</Link> ·{" "}
-              <Link href="/explainers">Explainers</Link> · <Link href="/course">Free course</Link> · <Link href="/about">About</Link> ·{" "}
-              <Link href="/contact">Contact</Link> · <Link href="/intake">Full intake form</Link> · <Link href="/callback">Request a call back</Link>
-            </p>
-            <p>
-              <Link href="/legal/privacy">Privacy</Link> · <Link href="/legal/disclaimer">Disclaimer</Link> ·{" "}
-              <Link href="/legal/sms-terms">Text message terms</Link> · <Link href="/legal/how-we-work">How we work</Link>
-            </p>
           </div>
         </footer>
         <SourceTracker />

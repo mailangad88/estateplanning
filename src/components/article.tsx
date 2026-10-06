@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Faq, Heading } from "@/lib/content";
-import { articleLd, breadcrumbLd, JsonLd } from "@/lib/seo";
+import { articleLd, JsonLd } from "@/lib/seo";
 import { Breadcrumbs, Cta, FaqList, Prose, ReviewNote, Toc } from "@/components/ui";
 import { EmailCapture, SensitiveMarker } from "@/components/capture";
 import { libraryLinksFor } from "@/lib/site-links";
@@ -111,7 +111,17 @@ export function ArticlePage(props: {
         state about your situation.
       </p>
       {props.sensitive && <SensitiveMarker />}
-      <JsonLd data={[articleLd({ title: props.title, description: props.description, path: props.path, updated: props.updated }), breadcrumbLd(crumbs)]} />
+      <JsonLd
+        data={articleLd({
+          title: props.title,
+          description: props.description,
+          path: props.path,
+          updated: props.updated,
+          reviewed: props.reviewed,
+          type: props.path.startsWith("/blog/") ? "BlogPosting" : "Article",
+          crumbs,
+        })}
+      />
     </article>
   );
 }

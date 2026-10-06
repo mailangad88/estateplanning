@@ -7,32 +7,77 @@ export function abs(path: string): string {
   return `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
 }
 
-export function breadcrumbLd(items: { name: string; path: string }[]) {
+/** Stable node ids so every page can reference the firm and attorney defined once in the layout. */
+export const ORG_ID = `${SITE_URL}/#organization`;
+export const ATTORNEY_ID = `${SITE_URL}/#attorney`;
+
+function breadcrumbList(items: { name: string; path: string }[]) {
   return {
-    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: items.map((it, i) => ({ "@type": "ListItem", position: i + 1, name: it.name, item: abs(it.path) })),
   };
 }
 
-export function articleLd(input: { title: string; description: string; path: string; updated: string; published?: string }) {
+export function breadcrumbLd(items: { name: string; path: string }[]) {
+  return { "@context": "https://schema.org", ...breadcrumbList(items) };
+}
+
+export interface ArticleLdInput {
+  title: string;
+  description: string;
+  path: string;
+  updated: string;
+  published?: string;
+  /** True only when the attorney has reviewed the page. Controls reviewedBy and lastReviewed. */
+  reviewed?: boolean;
+  /** BlogPosting for blog posts, Article otherwise. */
+  type?: "Article" | "BlogPosting";
+  crumbs: { name: string; path: string }[];
+}
+
+/** One @graph per article page: WebPage, Article or BlogPosting, and BreadcrumbList. The FAQPage block is emitted by the FAQ list. */
+export function articleLd(input: ArticleLdInput) {
+  const pageId = `${abs(input.path)}#webpage`;
+  const articleId = `${abs(input.path)}#article`;
+  const webPage: Record<string, unknown> = {
+    "@type": "WebPage",
+    "@id": pageId,
+    url: abs(input.path),
+    name: input.title,
+    description: input.description,
+    dateModified: input.updated,
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    breadcrumb: { "@id": `${abs(input.path)}#breadcrumb` },
+    mainEntity: { "@id": articleId },
+  };
+  if (input.reviewed === true) {
+    webPage.reviewedBy = { "@id": ATTORNEY_ID };
+    webPage.lastReviewed = input.updated;
+  }
   return {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: input.title,
-    description: input.description,
-    mainEntityOfPage: abs(input.path),
-    datePublished: input.published ?? input.updated,
-    dateModified: input.updated,
-    author: { "@type": "Person", name: firm.attorneyName, jobTitle: "Estate planning attorney" },
-    publisher: { "@type": "LegalService", name: firm.firmLegalName, url: SITE_URL },
+    "@graph": [
+      webPage,
+      {
+        "@type": input.type ?? "Article",
+        "@id": articleId,
+        headline: input.title,
+        description: input.description,
+        mainEntityOfPage: { "@id": pageId },
+        datePublished: input.published ?? input.updated,
+        dateModified: input.updated,
+        author: { "@id": ORG_ID },
+        publisher: { "@id": ORG_ID },
+      },
+      { "@id": `${abs(input.path)}#breadcrumb`, ...breadcrumbList(input.crumbs) },
+    ],
   };
 }
 
-export function legalServiceLd() {
-  return {
-    "@context": "https://schema.org",
-    "@type": "LegalService",
+function legalServiceNode() {
+  const node: Record<string, unknown> = {
+    "@type": ["Organization", "LegalService"],
+    "@id": ORG_ID,
     name: firm.firmLegalName,
     alternateName: firm.brandName,
     url: SITE_URL,
@@ -40,8 +85,40 @@ export function legalServiceLd() {
     address: firm.officeAddress,
     areaServed: (process.env.SERVED_STATES ?? "XX").split(",").map((s) => s.trim()),
     knowsAbout: ["Estate planning", "Wills", "Revocable living trusts", "Powers of attorney", "Probate", "Trust administration"],
-    employee: { "@type": "Attorney", name: firm.attorneyName },
+    employee: { "@id": ATTORNEY_ID },
   };
+  if (firm.sameAs.length) node.sameAs = firm.sameAs;
+  return node;
+}
+
+function attorneyNode() {
+  const node: Record<string, unknown> = {
+    "@type": "Person",
+    "@id": ATTORNEY_ID,
+    name: firm.attorneyName,
+    jobTitle: firm.attorneyTitle,
+    worksFor: { "@id": ORG_ID },
+  };
+  if (firm.attorneySameAs.length) node.sameAs = firm.attorneySameAs;
+  return node;
+}
+
+/** Site-wide graph rendered once by the layout: website, firm and attorney. Pages reference these by @id. */
+export function siteGraphLd() {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "WebSite", "@id": `${SITE_URL}/#website`, url: SITE_URL, name: firm.brandName, publisher: { "@id": ORG_ID } },
+      legalServiceNode(),
+      attorneyNode(),
+    ],
+  };
+}
+
+/** Standalone firm node for pages that override a field, such as areaServed on state pages. */
+export function legalServiceLd() {
+  const { "@id": _id, ...node } = legalServiceNode();
+  return { "@context": "https://schema.org", ...node, employee: { "@type": "Attorney", name: firm.attorneyName } };
 }
 
 export function howToLd(input: { name: string; description: string; steps: { name: string; text: string }[] }) {

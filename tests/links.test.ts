@@ -6,7 +6,7 @@ import { TOOLS } from "@/config/tools";
 import { EXPLAINERS } from "@/explainers/data";
 import { getAudiences, getChecklists, getComparisons, getGlossary, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
 
-const STATIC = ["/free", "/", "/plan-finder", "/resources", "/pricing", "/about", "/contact", "/guides", "/blog", "/compare", "/life-events", "/estate-planning-for", "/learn", "/estate-planning", "/tools", "/checklists", "/explainers", "/course", "/glossary", "/faq", "/mistakes", "/legal/privacy", "/legal/disclaimer", "/legal/sms-terms", "/legal/how-we-work", "/editorial-policy", "/intake", "/callback", ...Object.values(MONEY_PAGES).map((m) => m.path)];
+const STATIC = ["/free", "/", "/plan-finder", "/resources", "/pricing", "/about", "/contact", "/guides", "/blog", "/compare", "/life-events", "/estate-planning-for", "/learn", "/estate-planning", "/tools", "/checklists", "/explainers", "/videos", "/course", "/glossary", "/faq", "/mistakes", "/legal/privacy", "/legal/disclaimer", "/legal/sms-terms", "/legal/how-we-work", "/editorial-policy", "/intake", "/callback", ...Object.values(MONEY_PAGES).map((m) => m.path)];
 
 function knownPaths() {
   const s = new Set(STATIC);
@@ -73,7 +73,7 @@ describe("internal links in content", () => {
     const text = JSON.stringify(MONEY_PAGES);
     for (const m of text.matchAll(/\]\((\/[^)\s"]*)\)/g)) found.push(m[1]);
     for (const m of text.matchAll(/"href":"(\/[^"]*)"/g)) found.push(m[1]);
-    for (const f of ["src/app/page.tsx", "src/app/pricing/page.tsx", "src/app/contact/page.tsx", "src/app/layout.tsx"]) {
+    for (const f of ["src/app/page.tsx", "src/app/pricing/page.tsx", "src/app/contact/page.tsx", "src/app/layout.tsx", "src/components/MegaFooter.tsx"]) {
       const src = fs.readFileSync(path.join(process.cwd(), f), "utf8");
       for (const m of src.matchAll(/(?:href=|href: )"(\/[^"]*)"/g)) found.push(m[1]);
       for (const m of src.matchAll(/\]\((\/[^)\s"]*)\)/g)) found.push(m[1]);
