@@ -8,7 +8,7 @@ const TABLES = [
   "users", "firms", "lawyers", "persons", "leads", "assignments", "documents", "comments", "activities",
   "consults", "engagements", "payments", "tasks", "fee_rule_versions", "billable_events", "invoices",
   "sequence_enrollments", "suppressions", "fact_verifications", "template_approvals", "crm_deliveries", "seminars", "partners", "partner_gifts", "partner_referrals",
-  "conversion_events", "review_requests", "audit_events",
+  "conversion_events", "review_requests", "family_plans", "family_plan_bodies", "audit_events",
 ];
 
 describe("db/schema.sql", () => {
@@ -49,6 +49,14 @@ describe("db/schema.sql", () => {
     const eng = sql.match(/CREATE POLICY engagements_select[\s\S]*?\);/)![0];
     expect(eng).not.toContain("'intake'");
     expect(eng).toContain("status <> 'draft'");
+  });
+
+  it("family plan answers have no staff read path, and planners cannot relink a plan", () => {
+    const bodies = sql.match(/CREATE POLICY family_plan_bodies_\w+[\s\S]*?;/g) ?? [];
+    expect(bodies.length).toBeGreaterThan(0);
+    for (const p of bodies) expect(p).not.toMatch(/'(attorney|intake|platform_admin|firm_admin|paralegal|client|marketing)'/);
+    expect(sql).toMatch(/CREATE POLICY family_plans_owner ON family_plans[\s\S]*?app_role\(\) = 'planner' AND id = app_user_id\(\)/);
+    expect(sql).toMatch(/CREATE TRIGGER family_plans_owner_guard BEFORE INSERT OR UPDATE ON family_plans/);
   });
 
   it("marketing only gets the aggregate funnel view", () => {

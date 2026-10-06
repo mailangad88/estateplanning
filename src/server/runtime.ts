@@ -56,6 +56,18 @@ export function scopedDb(db: Db, actor: Actor): Db {
   });
 }
 
+/**
+ * The store as seen by a visitor signed in to their own family plan. With Postgres the session
+ * role is "planner" and app.user_id is the plan id, so row-level security limits it to that one
+ * plan and its encrypted answers; every other table returns nothing. The memory store has no
+ * second layer; the family plan service checks the plan id itself.
+ */
+export function plannerDb(db: Db, planId: string): Db {
+  const pg = db as Db & { withSession?: (s: unknown) => Db };
+  if (!pg.withSession) return db;
+  return pg.withSession({ userId: planId, role: "planner" });
+}
+
 /** The signed-in actor for a server component or route handler, or null. */
 export async function currentActor(): Promise<Actor | null> {
   const jar = await cookies();

@@ -27,6 +27,7 @@ export const CAPTURE_TOOLS = [
   "guide",
   "exit_offer",
   "callback",
+  "family_plan",
 ] as const;
 export type CaptureTool = (typeof CAPTURE_TOOLS)[number];
 

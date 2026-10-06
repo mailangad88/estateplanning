@@ -15,6 +15,8 @@ import type {
   CrmDelivery,
   DocumentRecord,
   Engagement,
+  FamilyPlan,
+  FamilyPlanBodyRecord,
   Firm,
   Lawyer,
   Lead,
@@ -40,6 +42,8 @@ export interface Collection<T extends { id: string }> {
   list(filter?: (item: T) => boolean, where?: Where): Promise<T[]>;
   insert(item: T): Promise<T>;
   update(id: string, patch: Partial<T>): Promise<T>;
+  /** Hard delete. Resolves false when nothing visible had that id. */
+  remove(id: string): Promise<boolean>;
 }
 
 /** Audit events are append-only: the collection has no update method. */
@@ -81,6 +85,10 @@ export class MemoryCollection<T extends { id: string }> implements Collection<T>
     const next = { ...existing, ...structuredClone(patch), id };
     this.items.set(id, next);
     return structuredClone(next);
+  }
+
+  async remove(id: string): Promise<boolean> {
+    return this.items.delete(id);
   }
 }
 
@@ -140,6 +148,8 @@ export interface Db {
   partnerReferrals: Collection<PartnerReferral>;
   conversionEvents: Collection<ConversionEvent>;
   reviewRequests: Collection<ReviewRequest>;
+  familyPlans: Collection<FamilyPlan>;
+  familyPlanBodies: Collection<FamilyPlanBodyRecord>;
   audit: AppendOnly<AuditEvent>;
 }
 
@@ -181,6 +191,8 @@ export function createMemoryDb(): Db {
     partnerReferrals: new MemoryCollection(),
     conversionEvents: new MemoryCollection(),
     reviewRequests: new MemoryCollection(),
+    familyPlans: new MemoryCollection(),
+    familyPlanBodies: new MemoryCollection(),
     audit: new MemoryAppendOnly(),
   };
 }

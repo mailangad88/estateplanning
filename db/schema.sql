@@ -500,13 +500,38 @@ CREATE TABLE review_requests (
 );
 CREATE UNIQUE INDEX review_requests_lead_idx ON review_requests (lead_id);
 
+-- "My family plan" organizer (src/server/services/familyPlan.ts). A visitor signs in with an emailed link and
+-- gets a 'planner' session scoped to this one row (app.user_id = the plan id). The email address is not stored,
+-- only an HMAC of it. Staff read the summary (counts, ranges, gaps: no names or free text) through the linked
+-- lead's access rules; the answers live encrypted (AES-256-GCM, key held by the app) in family_plan_bodies,
+-- which has no staff policy at all.
+CREATE TABLE family_plans (
+  id             text PRIMARY KEY,
+  email_hash     text NOT NULL UNIQUE,
+  lead_id        text REFERENCES leads(id) ON DELETE SET NULL,
+  summary        jsonb NOT NULL,
+  sections_done  integer NOT NULL CHECK (sections_done BETWEEN 0 AND 5),
+  gap_count      integer NOT NULL CHECK (gap_count >= 0),
+  consent        jsonb NOT NULL,               -- {version, at}: the consent text shown when the visitor saved
+  prefilled_from text[],
+  created_at     timestamptz NOT NULL,
+  updated_at     timestamptz NOT NULL
+);
+CREATE INDEX family_plans_lead_idx ON family_plans (lead_id) WHERE lead_id IS NOT NULL;
+
+CREATE TABLE family_plan_bodies (
+  id          text PRIMARY KEY REFERENCES family_plans(id) ON DELETE CASCADE,
+  ciphertext  text NOT NULL,
+  updated_at  timestamptz NOT NULL
+);
+
 -- Hash-chained, append-only (see src/server/audit/log.ts).
 CREATE TABLE audit_events (
   id            text PRIMARY KEY,
   seq           bigint NOT NULL UNIQUE,
   at            timestamptz NOT NULL,
   actor_id      text NOT NULL,
-  actor_role    text NOT NULL CHECK (actor_role IN ('platform_admin','intake','marketing','firm_admin','attorney','paralegal','client','system')),
+  actor_role    text NOT NULL CHECK (actor_role IN ('platform_admin','intake','marketing','firm_admin','attorney','paralegal','client','planner','system')),
   action        text NOT NULL,
   resource_type text NOT NULL,
   resource_id   text NOT NULL,
@@ -624,6 +649,21 @@ END $$;
 CREATE TRIGGER engagements_approval_guard BEFORE INSERT OR UPDATE ON engagements
   FOR EACH ROW EXECUTE FUNCTION engagement_approval_guard();
 
+-- A planner may edit their own plan's summary but never which lead it is linked to, or whose email it is:
+-- otherwise they could attach their summary to someone else's case. Linking is done by the service role.
+CREATE FUNCTION family_plan_owner_guard() RETURNS trigger LANGUAGE plpgsql AS $$
+BEGIN
+  IF current_user = 'app_user' AND (
+       (TG_OP = 'INSERT' AND NEW.lead_id IS NOT NULL)
+    OR (TG_OP = 'UPDATE' AND (NEW.lead_id IS DISTINCT FROM OLD.lead_id OR NEW.email_hash IS DISTINCT FROM OLD.email_hash))
+  ) THEN
+    RAISE EXCEPTION 'only the server links a family plan to a lead' USING ERRCODE = 'insufficient_privilege';
+  END IF;
+  RETURN NEW;
+END $$;
+CREATE TRIGGER family_plans_owner_guard BEFORE INSERT OR UPDATE ON family_plans
+  FOR EACH ROW EXECUTE FUNCTION family_plan_owner_guard();
+
 -- ---------------------------------------------------------------------------
 -- Views
 -- ---------------------------------------------------------------------------
@@ -696,6 +736,8 @@ ALTER TABLE partner_gifts        ENABLE ROW LEVEL SECURITY;  ALTER TABLE partner
 ALTER TABLE partner_referrals    ENABLE ROW LEVEL SECURITY;  ALTER TABLE partner_referrals    FORCE ROW LEVEL SECURITY;
 ALTER TABLE conversion_events    ENABLE ROW LEVEL SECURITY;  ALTER TABLE conversion_events    FORCE ROW LEVEL SECURITY;
 ALTER TABLE review_requests      ENABLE ROW LEVEL SECURITY;  ALTER TABLE review_requests      FORCE ROW LEVEL SECURITY;
+ALTER TABLE family_plans         ENABLE ROW LEVEL SECURITY;  ALTER TABLE family_plans         FORCE ROW LEVEL SECURITY;
+ALTER TABLE family_plan_bodies   ENABLE ROW LEVEL SECURITY;  ALTER TABLE family_plan_bodies   FORCE ROW LEVEL SECURITY;
 ALTER TABLE audit_events         ENABLE ROW LEVEL SECURITY;  ALTER TABLE audit_events         FORCE ROW LEVEL SECURITY;
 
 -- Workers (public intake form, e-sign webhooks, nurture engine, routing) are trusted
@@ -724,6 +766,8 @@ CREATE POLICY service_all ON partner_gifts        FOR ALL TO app_service USING (
 CREATE POLICY service_all ON partner_referrals    FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON conversion_events    FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON review_requests      FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON family_plans         FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON family_plan_bodies   FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_read ON fee_rule_versions   FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON fact_verifications  FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON template_approvals FOR SELECT TO app_service USING (true);
@@ -915,6 +959,19 @@ CREATE POLICY partner_referrals_update ON partner_referrals FOR UPDATE TO app_us
   USING (app_role() IN ('platform_admin','firm_admin') AND EXISTS (SELECT 1 FROM partners p WHERE p.id = partner_id))
   WITH CHECK (app_role() IN ('platform_admin','firm_admin') AND EXISTS (SELECT 1 FROM partners p WHERE p.id = partner_id));
 
+-- family plans: a planner session sees and changes only its own row (app.user_id is the plan id).
+-- Staff read the summary row of a plan linked to a lead they have full or intake access to; clients and
+-- marketing have no path. The encrypted answers are the owner's alone: no staff policy on family_plan_bodies.
+CREATE POLICY family_plans_owner ON family_plans FOR ALL TO app_user
+  USING (app_role() = 'planner' AND id = app_user_id())
+  WITH CHECK (app_role() = 'planner' AND id = app_user_id());
+CREATE POLICY family_plans_staff_select ON family_plans FOR SELECT TO app_user
+  USING (lead_id IS NOT NULL AND app_role() IN ('platform_admin','intake','firm_admin','attorney','paralegal')
+         AND lead_access(lead_id) IN ('full','intake'));
+CREATE POLICY family_plan_bodies_owner ON family_plan_bodies FOR ALL TO app_user
+  USING (app_role() = 'planner' AND id = app_user_id())
+  WITH CHECK (app_role() = 'planner' AND id = app_user_id());
+
 -- audit: insert-only for everyone; read by platform_admin, and firm_admin for their leads.
 CREATE POLICY audit_insert ON audit_events FOR INSERT TO app_user WITH CHECK (true);
 CREATE POLICY audit_select ON audit_events FOR SELECT TO app_user USING (
@@ -940,6 +997,7 @@ GRANT SELECT, UPDATE                 ON partner_referrals TO app_user;
 GRANT UPDATE                         ON invoices TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON sequence_enrollments TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON seminars TO app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON family_plans, family_plan_bodies TO app_user;
 GRANT SELECT                         ON lead_offer_cards, client_consults, lead_funnel_daily, crm_deliveries, conversion_events, review_requests TO app_user;
 
 -- Audit trail: INSERT only. No SELECT/UPDATE/DELETE/TRUNCATE grant to the app at all
@@ -954,6 +1012,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, leads, a
   activities, consults, engagements, payments, tasks, billable_events, sequence_enrollments, suppressions TO app_service;
 GRANT SELECT, INSERT, UPDATE ON crm_deliveries TO app_service;
 GRANT SELECT, INSERT, UPDATE ON seminars TO app_service;
+GRANT SELECT, INSERT, UPDATE, DELETE ON family_plans, family_plan_bodies TO app_service;
 GRANT SELECT, INSERT, UPDATE, DELETE ON partners, partner_referrals TO app_service;
 GRANT SELECT, INSERT ON partner_gifts TO app_service;
 GRANT SELECT, INSERT, UPDATE ON crm_deliveries, conversion_events, review_requests TO app_service;

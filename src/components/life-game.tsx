@@ -7,6 +7,7 @@ import {
   House, Landmark, Lock, PiggyBank, Phone, RotateCcw, ShieldCheck, Stethoscope, Sun, Trophy, Users, X, type LucideIcon,
 } from "lucide-react";
 import type { ResolvedDoc, ResolvedSquare } from "@/config/life-game";
+import { handOffToPlan } from "@/lib/familyPlanHandoff";
 
 const ICONS: Record<string, LucideIcon> = {
   Baby, Briefcase, CalendarCheck, FileText, Flag, HandHeart, Heart, House, Landmark, Lock, PiggyBank, ShieldCheck, Stethoscope, Sun, Trophy, Users,
@@ -39,6 +40,8 @@ export interface LifeGameProps {
  * their plan tray, and the finish square shows the plan with a way to make it real.
  *
  * Nothing the visitor picks leaves the page: no tracking, no storage, so it is safe on sensitive pages.
+ * The one exception is explicit: clicking "organize your real family plan" on the finish square keeps
+ * the planned document keys on this device for /my-plan to start from (not offered on sensitive pages).
  */
 export function LifeGame({ squares, bookHref, phone, next, senior, library, id = "life-game" }: LifeGameProps) {
   const [at, setAt] = useState(0);
@@ -189,7 +192,7 @@ export function LifeGame({ squares, bookHref, phone, next, senior, library, id =
               )}
 
               {square.kind === "finish" && (
-                <Finish covered={covered} waited={waited} bookHref={bookHref} phone={phone} digits={digits} next={next} senior={senior} onRestart={restart} />
+                <Finish covered={covered} waited={waited} bookHref={bookHref} phone={phone} digits={digits} next={next} senior={senior} onRestart={restart} plannedDocs={[...inPlan]} />
               )}
             </div>
 
@@ -270,10 +273,12 @@ function finishTitle(covered: number, total: number) {
   return `You covered ${covered} of ${total} what-ifs`;
 }
 
-function Finish({ covered, waited, bookHref, phone, digits, next, senior, onRestart }: {
+function Finish({ covered, waited, bookHref, phone, digits, next, senior, onRestart, plannedDocs }: {
   covered: number; waited: ResolvedSquare[]; bookHref: string; phone: string; digits: string;
-  next?: { label: string; href: string }; senior?: boolean; onRestart: () => void;
+  next?: { label: string; href: string }; senior?: boolean; onRestart: () => void; plannedDocs: string[];
 }) {
+  // Sensitive pages pass /contact and collect nothing, so they get no organizer handoff either.
+  const organizer = bookHref !== "/contact";
   const call = (
     <a className={`button${senior ? "" : " secondary"} large`} href={`tel:${digits}`}>
       <Phone size={20} aria-hidden="true" /> Call {phone}
@@ -301,6 +306,11 @@ function Finish({ covered, waited, bookHref, phone, digits, next, senior, onRest
         {next && (
           <>
             {" "}Not ready to talk? <Link href={next.href}>{next.label}</Link>.
+          </>
+        )}
+        {organizer && (
+          <>
+            {" "}Or <Link href="/my-plan" onClick={() => handOffToPlan({ lifeGameDocs: plannedDocs })}>organize your real family plan</Link> in one place.
           </>
         )}
       </p>

@@ -250,6 +250,18 @@ export const TABLES = {
       ts("postedAt", "posted_at", true), ts("createdAt", "created_at"),
     ],
   },
+  familyPlans: {
+    table: "family_plans",
+    columns: [
+      t("id", "id"), t("emailHash", "email_hash"), t("leadId", "lead_id", true), j("summary", "summary"),
+      n("sectionsDone", "sections_done"), n("gapCount", "gap_count"), j("consent", "consent"),
+      a("prefilledFrom", "prefilled_from", true), ts("createdAt", "created_at"), ts("updatedAt", "updated_at"),
+    ],
+  },
+  familyPlanBodies: {
+    table: "family_plan_bodies",
+    columns: [t("id", "id"), t("ciphertext", "ciphertext"), ts("updatedAt", "updated_at")],
+  },
   audit: {
     table: "audit_events",
     columns: [
