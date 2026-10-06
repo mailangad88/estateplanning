@@ -6,21 +6,8 @@ import { Breadcrumbs, ReviewNote } from "@/components/ui";
 import { MAGNET_CATEGORIES, MAGNET_FORMATS, getMagnet, getMagnets, translationsOf } from "@/lib/magnets";
 import { resolveSlug } from "@/lib/links";
 import { breadcrumbLd, JsonLd } from "@/lib/seo";
-import { ResourceCover, type CoverPalette } from "@/components/visuals/covers/ResourceCover";
-import { getMagnet as getCover } from "@/components/visuals/covers/magnets";
-
-const CATEGORY_ART: Record<string, { icon: string; palette: CoverPalette }> = {
-  basics: { icon: "list", palette: "accent" },
-  wills: { icon: "will", palette: "accent" },
-  trusts: { icon: "trust", palette: "sage" },
-  property: { icon: "house", palette: "gold" },
-  incapacity: { icon: "health-directive", palette: "sage" },
-  family: { icon: "family", palette: "clay" },
-  tax: { icon: "dollar", palette: "gold" },
-  "elder-care": { icon: "hand-heart", palette: "sage" },
-  administration: { icon: "sprout", palette: "sage" },
-  business: { icon: "briefcase", palette: "gold" },
-};
+import { ResourceCover } from "@/components/visuals/covers/ResourceCover";
+import { coverPropsFromMagnet } from "@/components/visuals/covers/fromMeta";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -47,15 +34,7 @@ export default async function MagnetLanding({ params }: Props) {
     .filter((x) => x.slug !== m.slug && x.category === m.category && x.lang === m.lang)
     .slice(0, 3);
   const inside = m.format === "email-course" ? m.lessons.map((l) => `Day ${l.day}: ${l.subject}`) : m.headings.map((h) => h.text).filter((t) => !/^(When to talk to an attorney|Next step|Sources|Cuándo hablar con un abogado|Siguiente paso|Fuentes)$/i.test(t));
-  const art = CATEGORY_ART[m.category] ?? CATEGORY_ART.basics;
-  const cover = getCover(m.slug) ?? {
-    title: m.title,
-    subtitle: m.audience,
-    kicker: `Free ${formatLabel.toLowerCase()}`,
-    icon: m.format === "email-course" ? "envelope" : art.icon,
-    palette: art.palette,
-    calm: m.sequence === "G",
-  };
+  const cover = coverPropsFromMagnet(m);
   const es = m.lang === "es";
   const alternates = translationsOf(m);
   const summary = { lang: m.lang, slug: m.slug, title: m.title, format: m.format, formatLabel, tag: m.tag, sequence: m.sequence };
