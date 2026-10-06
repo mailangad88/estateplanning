@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { ForbiddenError, writableVisibilities } from "@/server/auth/policy";
 import { buildCaseView, type CommentNode } from "@/server/portal/caseView";
 import { currentActor, getDb, scopedDb } from "@/server/runtime";
-import { ApproveEngagement, CommentForm, InviteClient, OfferActions } from "@/app/portal/actions";
+import { ApproveEngagement, CommentForm, InviteClient, OfferActions, RefundPayment } from "@/app/portal/actions";
 
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Case", robots: { index: false, follow: false } };
@@ -163,8 +163,54 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
             <ul>
               {s.engagement.map((e) => (
                 <li key={e.id}>
-                  {label(e.packageId)} · {money(e.feeCents)} · <strong>{e.status}</strong>{" "}
+                  {e.packageSelection ? `${e.packageSelection.tierName} package` : label(e.packageId)} · {money(e.feeCents)} · <strong>{e.status}</strong>{" "}
                   {actor.role === "attorney" && <ApproveEngagement engagementId={e.id} status={e.status} />}
+                  {e.packageSelection && e.packageSelection.addOns.length > 0 && (
+                    <p>Add-ons: {e.packageSelection.addOns.map((a) => `${a.name} (${money(a.priceCents)})`).join(", ")}</p>
+                  )}
+                  {e.paymentPlan && (
+                    <div>
+                      <p>
+                        <strong>Payment: {e.paymentPlan.mode === "full" ? "pay in full" : `deposit plus ${e.paymentPlan.installments.length - 1} monthly installments`}</strong>
+                        {" · "}{label(e.paymentStatus.state)} · paid {money(e.paymentStatus.paidCents)} of {money(e.paymentStatus.totalCents)}
+                        {e.paymentStatus.refundedCents > 0 && <> · refunded {money(e.paymentStatus.refundedCents)}</>}
+                        {" · "}paid into the firm {e.paymentPlan.account === "trust" ? "client trust account" : "operating account"}
+                      </p>
+                      <table>
+                        <thead><tr><th>#</th><th>Payment</th><th>Amount</th><th>Due</th><th>Status</th></tr></thead>
+                        <tbody>
+                          {e.paymentPlan.installments.map((i) => (
+                            <tr key={i.n}>
+                              <td>{i.n}</td>
+                              <td>{i.kind === "installment" ? `Installment ${i.n - 1}` : i.kind === "deposit" ? "Deposit" : "Full payment"}</td>
+                              <td>{money(i.amountCents)}</td>
+                              <td>{i.dueOn ?? "On signing"}</td>
+                              <td><strong>{i.status}</strong></td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  )}
+                  {e.payments.length > 0 && (
+                    <ul>
+                      {e.payments.map((p) => (
+                        <li key={p.id}>
+                          {p.installmentNo ? `Payment ${p.installmentNo}` : "Payment"} · {money(p.amountCents)} · {p.status} · {p.account === "trust" ? "trust" : "operating"} account
+                          {p.status === "pending" && p.linkUrl && <> · <a href={p.linkUrl}>payment link</a></>}
+                          {p.refunds.length > 0 && <> · refunded {money(p.refunds.reduce((t, r) => t + r.amountCents, 0))}</>}
+                          {actor.role === "attorney" && p.status === "paid" && <RefundPayment paymentId={p.id} maxCents={p.amountCents - p.refunds.reduce((t, r) => t + r.amountCents, 0)} />}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {e.clientSummary && (
+                    <details>
+                      <summary>Client summary</summary>
+                      <p><strong>{e.clientSummary.headline}</strong></p>
+                      {e.clientSummary.lines.map((l) => <p key={l}>{l}</p>)}
+                    </details>
+                  )}
                 </li>
               ))}
             </ul>

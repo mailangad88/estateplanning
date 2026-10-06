@@ -218,10 +218,35 @@ CREATE TABLE engagements (
   approved_at          timestamptz,
   history              jsonb NOT NULL DEFAULT '[]',        -- [{status, at}]
   reminders_sent       text[] NOT NULL DEFAULT '{}',
-  document_ids         text[] NOT NULL DEFAULT '{}'
+  document_ids         text[] NOT NULL DEFAULT '{}',
+  package_selection    jsonb,                              -- {tierId, tierName, tierPriceCents, addOns[], totalCents}: attorney-set prices
+  payment_plan         jsonb                               -- {mode, totalCents, account, installments[{n, kind, amountCents, dueOn, status, paymentId, paidAt}]}
 );
 CREATE INDEX engagements_lead_idx   ON engagements (lead_id);
 CREATE INDEX engagements_lawyer_idx ON engagements (lawyer_id, status);
+
+-- One row per payment attempt for an engagement. Money moves from the client straight to the
+-- firm's own processor account; this table records what was asked for and what the processor
+-- confirmed, plus which firm account (operating or trust) the payment was directed to.
+CREATE TABLE payments (
+  id                  text PRIMARY KEY,
+  engagement_id       text NOT NULL REFERENCES engagements(id),
+  lead_id             text NOT NULL REFERENCES leads(id),
+  firm_id             text NOT NULL REFERENCES firms(id),
+  installment_no      bigint,
+  amount_cents        bigint NOT NULL CHECK (amount_cents > 0),
+  account             text NOT NULL CHECK (account IN ('operating','trust')),
+  status              text NOT NULL CHECK (status IN ('pending','paid','failed')),
+  provider            text NOT NULL,
+  provider_payment_id text NOT NULL,
+  link_url            text,
+  created_at          timestamptz NOT NULL,
+  paid_at             timestamptz,
+  refunds             jsonb NOT NULL DEFAULT '[]',        -- [{id, amountCents, at, reason}]
+  UNIQUE (provider, provider_payment_id)
+);
+CREATE INDEX payments_engagement_idx ON payments (engagement_id);
+CREATE INDEX payments_lead_idx       ON payments (lead_id);
 
 CREATE TABLE tasks (
   id       text PRIMARY KEY,
@@ -532,6 +557,8 @@ BEGIN
     OR (TG_OP = 'UPDATE' AND (NEW.approved_by IS DISTINCT FROM OLD.approved_by
                               OR NEW.approved_at IS DISTINCT FROM OLD.approved_at
                               OR NEW.fee_cents IS DISTINCT FROM OLD.fee_cents
+                              OR NEW.package_selection IS DISTINCT FROM OLD.package_selection
+                              OR NEW.payment_plan IS DISTINCT FROM OLD.payment_plan
                               OR (NEW.status = 'approved' AND OLD.status IS DISTINCT FROM 'approved')))
   ) THEN
     RAISE EXCEPTION 'only the assigned attorney can approve an engagement or change its fee' USING ERRCODE = 'insufficient_privilege';
@@ -597,6 +624,7 @@ ALTER TABLE comments             ENABLE ROW LEVEL SECURITY;  ALTER TABLE comment
 ALTER TABLE activities           ENABLE ROW LEVEL SECURITY;  ALTER TABLE activities           FORCE ROW LEVEL SECURITY;
 ALTER TABLE consults             ENABLE ROW LEVEL SECURITY;  ALTER TABLE consults             FORCE ROW LEVEL SECURITY;
 ALTER TABLE engagements          ENABLE ROW LEVEL SECURITY;  ALTER TABLE engagements          FORCE ROW LEVEL SECURITY;
+ALTER TABLE payments             ENABLE ROW LEVEL SECURITY;  ALTER TABLE payments             FORCE ROW LEVEL SECURITY;
 ALTER TABLE tasks                ENABLE ROW LEVEL SECURITY;  ALTER TABLE tasks                FORCE ROW LEVEL SECURITY;
 ALTER TABLE fee_rule_versions    ENABLE ROW LEVEL SECURITY;  ALTER TABLE fee_rule_versions    FORCE ROW LEVEL SECURITY;
 ALTER TABLE billable_events      ENABLE ROW LEVEL SECURITY;  ALTER TABLE billable_events      FORCE ROW LEVEL SECURITY;
@@ -625,6 +653,7 @@ CREATE POLICY service_all ON comments             FOR ALL TO app_service USING (
 CREATE POLICY service_all ON activities           FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON consults             FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON engagements          FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON payments             FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON tasks                FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON billable_events      FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON sequence_enrollments FOR ALL TO app_service USING (true) WITH CHECK (true);
@@ -751,6 +780,11 @@ CREATE POLICY engagements_write ON engagements FOR ALL TO app_user
   USING (lead_access(lead_id) = 'full' AND app_role() IN ('attorney','paralegal'))
   WITH CHECK (lead_access(lead_id) = 'full' AND app_role() IN ('attorney','paralegal'));
 
+-- payments: read-only for app_user, same visibility as the engagement (view_engagement): full and
+-- client access see them, intake and others do not. Every write (creating a link, recording a
+-- webhook, a refund) is made by app_service after the policy.ts check.
+CREATE POLICY payments_select ON payments FOR SELECT TO app_user USING (lead_access(lead_id) IN ('full','client'));
+
 -- sequence enrollments: read-only for staff on the lead; workers manage them.
 CREATE POLICY enrollments_select ON sequence_enrollments FOR SELECT TO app_user
   USING (lead_access(lead_id) IN ('full','intake'));
@@ -817,6 +851,7 @@ REVOKE ALL ON lead_offer_cards, client_consults, lead_funnel_daily FROM PUBLIC;
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, tasks, suppressions TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON leads, assignments, consults, engagements TO app_user;
+GRANT SELECT                         ON payments TO app_user;
 GRANT SELECT, INSERT                 ON documents, comments, activities, invoices, billable_events, fee_rule_versions TO app_user;
 GRANT SELECT, INSERT                 ON fact_verifications TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON partners TO app_user;
@@ -835,7 +870,7 @@ REVOKE UPDATE, DELETE, TRUNCATE ON fee_rule_versions FROM PUBLIC, app_user, app_
 REVOKE UPDATE, DELETE, TRUNCATE ON fact_verifications FROM PUBLIC, app_user, app_service;
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, leads, assignments, documents, comments,
-  activities, consults, engagements, tasks, billable_events, sequence_enrollments, suppressions TO app_service;
+  activities, consults, engagements, payments, tasks, billable_events, sequence_enrollments, suppressions TO app_service;
 GRANT SELECT, INSERT, UPDATE ON crm_deliveries TO app_service;
 GRANT SELECT, INSERT, UPDATE ON seminars TO app_service;
 GRANT SELECT, INSERT, UPDATE, DELETE ON partners, partner_referrals TO app_service;

@@ -7,6 +7,7 @@ import type { ConsentRecord } from "@/lib/consent";
 import type { BusinessStructure } from "@/lib/fees";
 import type { PartnerStatus, PartnerType, ReleaseStatus, ValueLinked } from "@/lib/partners";
 import type { QuizAnswers } from "@/lib/quiz";
+import type { PackageSelection, PaymentPlan } from "@/lib/retainerPlan";
 import type { ScoreResult } from "@/lib/scoring";
 
 export type Role =
@@ -308,6 +309,34 @@ export interface Engagement {
   history: { status: EngagementStatus; at: string }[];
   remindersSent: string[];
   documentIds: string[];
+  /** Package tier, attorney-set prices and add-ons. Absent on engagements drafted before packages existed. */
+  packageSelection?: PackageSelection;
+  /** How the fee is paid and the status of each installment */
+  paymentPlan?: PaymentPlan;
+}
+
+export type PaymentStatus = "pending" | "paid" | "failed";
+
+/** One payment attempt against an engagement. Money goes straight to the firm's own account, never through the platform. */
+export interface PaymentRecord {
+  id: string;
+  engagementId: string;
+  leadId: string;
+  firmId: string;
+  /** Which installment in the plan this pays; absent for a one-off link */
+  installmentNo?: number;
+  amountCents: number;
+  /** The firm account the payment was directed to when the link was made */
+  account: "operating" | "trust";
+  status: PaymentStatus;
+  provider: string;
+  /** The provider's id for the payment; webhooks are matched on it */
+  providerPaymentId: string;
+  linkUrl?: string;
+  createdAt: string;
+  paidAt?: string;
+  /** Refunds the provider confirmed. Replays are matched on the refund id. */
+  refunds: { id: string; amountCents: number; at: string; reason?: string }[];
 }
 
 export interface Task {
