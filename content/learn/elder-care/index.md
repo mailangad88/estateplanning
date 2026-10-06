@@ -152,7 +152,10 @@ Many families provide care themselves, and the time and money involved are real.
 - If a parent is slowing down, begin with [how to help an aging parent get their estate plan in order](/learn/elder-care/helping-aging-parents-plan).
 - If you are worried about cost, read [Medicaid planning: the basics](/learn/elder-care/medicaid-planning) and [the look-back period](/learn/elder-care/medicaid-look-back-period).
 - If the house is the main asset, read [protecting your home from nursing home costs](/learn/elder-care/protecting-your-home-from-nursing-home-costs).
-- If a family member is providing care, read [paying a family caregiver](/learn/elder-care/paying-a-family-caregiver); if the person is a veteran or surviving spouse, read [VA Aid and Attendance](/learn/elder-care/va-aid-and-attendance); to understand what can be bought before applying, read [Medicaid spend-down](/learn/elder-care/medicaid-spend-down); and to compare insurance and self-funding, read [long-term care insurance and your estate plan](/learn/elder-care/long-term-care-insurance).
+- If a family member is providing care, read [paying a family caregiver](/learn/elder-care/paying-a-family-caregiver).
+- If the person is a veteran or surviving spouse, read [VA Aid and Attendance](/learn/elder-care/va-aid-and-attendance).
+- To understand what can be bought before applying, read [Medicaid spend-down](/learn/elder-care/medicaid-spend-down).
+- To compare insurance and self-funding, read [long-term care insurance and your estate plan](/learn/elder-care/long-term-care-insurance).
 - If you suspect someone is taking advantage of a loved one, read [protecting older adults from financial exploitation](/learn/elder-care/elder-financial-abuse).
 
 Other pillars worth reading alongside this one: [power of attorney](/learn/power-of-attorney), [advance healthcare directives](/learn/healthcare-directives), [trusts](/learn/trusts) and [special needs planning](/learn/special-needs).

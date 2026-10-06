@@ -1,4 +1,3 @@
-import { firm } from "@/config/firm";
 import { absoluteUrl, site } from "@/config/site";
 import { ATTORNEY_ID as SEO_ATTORNEY_ID, ORG_ID as SEO_ORG_ID } from "@/lib/seo";
 import type { Article, City, Faq, GlossaryEntry, StateGuide } from "@/lib/library";
@@ -10,60 +9,11 @@ import type { Article, City, Faq, GlossaryEntry, StateGuide } from "@/lib/librar
 
 type Json = Record<string, unknown>;
 
-// Same @ids as the site-wide graph in the root layout (src/lib/seo.tsx), so every page's Article
-// points at the firm, attorney and website nodes that are actually on the page.
+// The firm, attorney and website nodes are emitted once per page by siteGraphLd() in src/lib/seo.tsx
+// (root layout). This file only references them, so the firm is one entity everywhere.
 const ORG_ID = SEO_ORG_ID;
 const SITE_ID = `${site.url}/#website`;
 const ATTORNEY_ID = SEO_ATTORNEY_ID;
-
-export function organizationSchema(): Json {
-  return {
-    "@type": ["LegalService", "Attorney"],
-    "@id": ORG_ID,
-    name: firm.brandName,
-    legalName: firm.firmLegalName,
-    url: site.url,
-    telephone: firm.phone,
-    address: firm.officeAddress, // PLACEHOLDER: replace with a PostalAddress once confirmed
-    areaServed: servedArea(),
-    knowsAbout: [
-      "Estate planning", "Wills", "Revocable living trusts", "Probate", "Trust administration",
-      "Powers of attorney", "Advance healthcare directives", "Guardianship", "Special needs planning",
-      "Business succession planning", "Medicaid planning",
-    ],
-    founder: { "@id": ATTORNEY_ID },
-  };
-}
-
-export function attorneySchema(): Json {
-  return {
-    "@type": "Person",
-    "@id": ATTORNEY_ID,
-    name: firm.attorneyName,
-    jobTitle: "Estate planning attorney",
-    worksFor: { "@id": ORG_ID },
-  };
-}
-
-export function websiteSchema(): Json {
-  return {
-    "@type": "WebSite",
-    "@id": SITE_ID,
-    url: site.url,
-    name: firm.brandName,
-    publisher: { "@id": ORG_ID },
-    inLanguage: "en-US",
-  };
-}
-
-function servedArea(): Json[] {
-  const raw = process.env.SERVED_STATES ?? "";
-  return raw
-    .split(",")
-    .map((s) => s.trim())
-    .filter((s) => s && s !== "XX")
-    .map((s) => ({ "@type": "State", name: s }));
-}
 
 export function breadcrumbSchema(items: { name: string; url: string }[]): Json {
   return {

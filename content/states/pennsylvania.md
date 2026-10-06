@@ -33,7 +33,7 @@ faqs:
 related: ["probate", "estate-tax/state-estate-and-inheritance-taxes", "after-a-death/inheritance-taxes-for-heirs", "probate/small-estate-affidavit", "power-of-attorney/durable-financial-power-of-attorney", "wills/how-to-make-a-valid-will"]
 ---
 
-Pennsylvania is one of a small group of states with an inheritance tax, and it has two features that confuse out-of-state families: the Register of Wills, a county official who handles probate paperwork, and a rule that a will needs to be signed only at its end, not initialed on every page or witnessed at signing.
+Pennsylvania is one of a small group of states with an inheritance tax. Two other features confuse out-of-state families. The first is the Register of Wills, a county official who handles probate paperwork. The second is a rule that a will needs to be signed only at its end, not initialed on every page or witnessed at signing.
 
 ## Wills in Pennsylvania
 
