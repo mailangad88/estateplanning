@@ -15,7 +15,7 @@ export function sitemapGroup(page: SitePage): SitemapGroup | null {
   if (s === "Glossary terms") return "glossary";
   if (s === "Laws by state" || s === "Locations") return "states";
   if (["Tools", "Checklists", "Quizzes", "Free resources", "Explainers"].includes(s)) return "tools";
-  if (["Guides", "Questions answered", "Comparisons", "Life events", "By situation", "7-day course"].includes(s)) return "guides";
+  if (["Guides", "Decision guides", "Questions answered", "Comparisons", "Life events", "By situation", "7-day course"].includes(s)) return "guides";
   return "core";
 }
 
