@@ -82,7 +82,7 @@
 .dg-note { background: var(--gold-tint); border-radius: var(--radius); padding: 12px 16px; margin: 20px 0 8px; line-height: 1.5; }
 
 /* Map */
-.dg-map { margin: 0; }
+.dg-map { margin: 0; container-type: inline-size; }
 .dg-map__plot { display: grid; grid-template-columns: auto minmax(0, 1fr); grid-template-rows: auto auto; gap: 8px; }
 .dg-map__field {
   position: relative; aspect-ratio: 16 / 8; min-height: 360px; border-radius: var(--radius-lg); border: 1px solid var(--border);
@@ -120,7 +120,8 @@
   @keyframes dg-pop { from { opacity: 0; transform: translate(-50%, -50%) scale(0.6); } }
 }
 @media (prefers-reduced-motion: reduce) { .dg-bars__fill { animation: none; } }
-@media (max-width: 720px) {
+/* Sized by the map's own width, so it also works inside a narrow article column. */
+@container (max-width: 760px) {
   .dg-map__field { aspect-ratio: 3 / 4; min-height: 0; }
   .dg-map__axis { font-size: 0.7rem; letter-spacing: 0.02em; }
   .dg-bubble__label { display: none; }
@@ -205,3 +206,11 @@
   .dg-table-wrap { overflow: visible; box-shadow: none; }
   .dg-table { min-width: 0; }
 }
+
+/* Embeds: one part of a guide inside an article or landing page (DecisionEmbed). */
+.dg-embed { margin: 40px 0; padding: 28px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); box-shadow: var(--shadow-sm); }
+.dg-embed__head { margin-bottom: 20px; }
+.dg-embed__head h2 { margin: 4px 0 8px; }
+.dg-embed__head .section-lead { margin: 0; color: var(--muted); }
+.dg-embed__more { margin: 20px 0 0; }
+@media (max-width: 640px) { .dg-embed { padding: 18px; margin: 28px 0; } }
