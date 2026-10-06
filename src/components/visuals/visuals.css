@@ -1,0 +1,47 @@
+/* Generated from tokens.ts. Visual palette as CSS variables, light and dark. */
+:root {
+  --v-paper: #fbfaf7;
+  --v-surface: #ffffff;
+  --v-sand: #f1e9dc;
+  --v-sand-deep: #e3d5bf;
+  --v-ink: #1d2b3a;
+  --v-muted: #5b6470;
+  --v-line: #d9d6cf;
+  --v-accent: #1f5f8b;
+  --v-accent-deep: #174a6d;
+  --v-accent-tint: #dcebf5;
+  --v-clay: #c4784a;
+  --v-clay-tint: #f6e3d6;
+  --v-sage: #6f957a;
+  --v-sage-tint: #e2ede4;
+  --v-gold: #d8a842;
+  --v-gold-tint: #f8edd2;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --v-paper: #15171a;
+    --v-surface: #1d2024;
+    --v-sand: #2a2722;
+    --v-sand-deep: #3a342b;
+    --v-ink: #eceae6;
+    --v-muted: #a7adb5;
+    --v-line: #3a3e44;
+    --v-accent: #6fb0dd;
+    --v-accent-deep: #9ccbea;
+    --v-accent-tint: #1e3446;
+    --v-clay: #e09a6e;
+    --v-clay-tint: #3d2a1f;
+    --v-sage: #93bb9e;
+    --v-sage-tint: #22332a;
+    --v-gold: #e6bf66;
+    --v-gold-tint: #3a3121;
+  }
+}
+.v-figure { margin: 32px 0; }
+.v-figure svg { display: block; width: 100%; height: auto; }
+.v-figure figcaption { font-size: 0.85rem; color: var(--muted, #5b6470); margin-top: 8px; }
+.v-icon { display: inline-block; vertical-align: middle; flex: none; }
+.v-video { margin: 32px 0; }
+.v-video video { display: block; width: 100%; height: auto; border-radius: 12px; background: var(--v-sand, #f1e9dc); }
+.v-video details { margin-top: 8px; font-size: 0.9rem; }
+
