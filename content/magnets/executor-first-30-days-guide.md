@@ -19,6 +19,19 @@ related:
   - life-events/death-of-a-parent
   - checklists/first-30-days-after-a-death
   - tools/executor-workload
+answers:
+  - "What is a checklist for after a death?"
+  - "What is the first week after someone dies?"
+  - "What is a pronouncement of death?"
+  - "Who do I call first when someone dies?"
+  - "How many death certificates do I need?"
+  - "What are the first 24 hours after a death?"
+  - "What is an executor checklist?"
+  - "Is there a deadline for the estate tax return?"
+  - "When does an estate have to file Form 1041?"
+  - "What happens to a deceased person's pets?"
+  - "Who needs to be notified when someone dies?"
+  - "Do I need a lawyer when someone dies?"
 reviewed: false
 updated: "2026-10-06"
 ---

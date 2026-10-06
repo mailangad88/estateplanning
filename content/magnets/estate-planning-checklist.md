@@ -21,6 +21,22 @@ related:
   - tools/plan-readiness-assessment
   - guides/estate-and-inheritance-taxes
   - guides/what-makes-a-will-valid
+diagram: PlanningProcess
+answers:
+  - "What estate planning documents do I need at each age?"
+  - "What are the 4 documents everyone should have?"
+  - "What are the five essential estate planning documents?"
+  - "What documents make up a basic estate plan?"
+  - "What is the minimum estate plan everyone should have?"
+  - "What estate planning do I need in my 20s?"
+  - "What estate planning do I need in my 30s?"
+  - "What estate planning do I need in my 40s?"
+  - "What estate planning do I need in my 50s?"
+  - "What estate planning do I need in my 70s?"
+  - "What estate planning documents should a 30-year-old have?"
+  - "What estate planning documents should a 40-year-old have?"
+  - "What estate planning documents should a 50-year-old have?"
+  - "What should be in an estate plan for a couple with young children?"
 reviewed: false
 updated: "2026-10-06"
 ---

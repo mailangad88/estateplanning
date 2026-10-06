@@ -19,6 +19,17 @@ related:
   - guides/beneficiary-designations
   - compare/joint-ownership-vs-trust
   - life-events/buying-a-home
+answers:
+  - "What does an estate plan look like for an unmarried couple?"
+  - "What estate planning documents do unmarried couples need?"
+  - "Should unmarried couples buy a house as joint tenants?"
+  - "Does my partner inherit if we have lived together for years?"
+  - "Can an unmarried partner inherit without a will?"
+  - "Can my partner visit me in the hospital if we are not married?"
+  - "Can I leave my house to my unmarried partner?"
+  - "Can my partner be the beneficiary of my 401(k) if we are not married?"
+  - "Can I leave my property to an unmarried partner in a will?"
+  - "Do unmarried partners pay inheritance tax?"
 reviewed: false
 updated: "2026-10-06"
 ---

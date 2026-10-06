@@ -298,6 +298,9 @@ table.facts th { width: 34%; background: var(--surface); }
 .tool .question { border: 0; padding: 0; margin: 0 0 14px; }
 .tool .question legend { font-weight: 600; margin-bottom: 4px; }
 .magnet-cover { max-width: 260px; margin: 0 0 16px; } .magnet-cover svg { width: 100%; height: auto; }
+.magnet-answers__list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.magnet-answers__list li { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px 10px 38px; position: relative; }
+.magnet-answers__list li::before { content: "?"; position: absolute; left: 12px; top: 10px; width: 18px; height: 18px; border-radius: 50%; background: var(--brand-tint); color: var(--brand); font-weight: 700; font-size: 12px; text-align: center; line-height: 18px; }
 /* Quizzes */
 .quiz .question legend { font-size: 1.2rem; margin-bottom: 12px; }
 .quiz-option { display: block; width: 100%; text-align: left; padding: 14px 16px; margin: 0 0 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text); font: inherit; cursor: pointer; }

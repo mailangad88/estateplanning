@@ -8,6 +8,7 @@ import Faqs from "@/components/Faqs";
 import JsonLd from "@/components/JsonLd";
 import { PageHero } from "@/components/page-hero";
 import LinkList from "@/components/LinkList";
+import { magnetsForState } from "@/lib/magnets";
 import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
 import { servedStates } from "@/config/firm";
@@ -167,6 +168,11 @@ export default async function StatePage({ params }: { params: Promise<Params> })
           </p>
         </section>
       )}
+      <LinkList
+        id="state-resources"
+        title={`Free ${s.name} downloads`}
+        items={magnetsForState(s.abbr).filter((m) => m.lang === "en").map((m) => ({ url: `/free/${m.slug}`, title: m.title, description: m.promise }))}
+      />
       <LinkList
         id="state-tools"
         title={`Run the numbers for ${s.name}`}

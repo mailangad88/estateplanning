@@ -18,6 +18,9 @@ import SmallEstate from "@/components/tools/SmallEstate";
 import MedicaidRunway from "@/components/tools/MedicaidRunway";
 import BeneficiaryAudit from "@/components/tools/BeneficiaryAudit";
 import GuardianPicker from "@/components/tools/GuardianPicker";
+import WhoInherits from "@/components/tools/WhoInherits";
+import AssetSorter from "@/components/tools/AssetSorter";
+import InheritanceTimeline from "@/components/tools/InheritanceTimeline";
 import StatePrefill from "@/components/tools/StatePrefill";
 
 const COMPONENTS: Record<string, React.ComponentType> = {
@@ -35,6 +38,9 @@ const COMPONENTS: Record<string, React.ComponentType> = {
   "medicaid-savings-runway": MedicaidRunway,
   "beneficiary-audit": BeneficiaryAudit,
   "guardian-picker": GuardianPicker,
+  "who-inherits": WhoInherits,
+  "probate-asset-sorter": AssetSorter,
+  "inheritance-timeline": InheritanceTimeline,
 };
 
 /** Tools whose first question is the state; they accept ?state=XX (linked from the state guides). */
@@ -43,6 +49,9 @@ const STATE_AWARE: Record<string, React.ComponentType<{ initialState?: string }>
   "state-death-tax-checker": DeathTax,
   "small-estate-checker": SmallEstate,
   "medicaid-savings-runway": MedicaidRunway,
+  "who-inherits": WhoInherits,
+  "probate-asset-sorter": AssetSorter,
+  "inheritance-timeline": InheritanceTimeline,
 };
 
 type Props = { params: Promise<{ slug: string }> };

@@ -19,6 +19,10 @@ related:
   - learn/guardianship/leaving-money-to-minors
   - checklists/beneficiary-designation-audit
   - compare/beneficiary-designation-vs-will
+answers:
+  - "What is a UTMA custodian for a minor beneficiary?"
+  - "How do I change the beneficiary on my life insurance policy?"
+  - "Should I tell my beneficiaries they are named?"
 reviewed: false
 updated: "2026-10-06"
 ---

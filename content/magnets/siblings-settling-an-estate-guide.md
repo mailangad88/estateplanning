@@ -18,6 +18,14 @@ related:
   - learn/wills/choosing-an-executor
   - life-events/death-of-a-parent
   - checklists/first-30-days-after-a-death
+answers:
+  - "How do siblings split an estate fairly?"
+  - "What happens if siblings can't agree on the estate?"
+  - "How do I divide belongings among siblings?"
+  - "How do heirs split an inherited house?"
+  - "How do I prevent family fights over inheritance?"
+  - "Who is in charge of the estate when someone dies?"
+  - "How do I grieve and still handle the estate?"
 reviewed: false
 updated: "2026-10-06"
 ---

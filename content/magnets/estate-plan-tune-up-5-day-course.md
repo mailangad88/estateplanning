@@ -19,6 +19,15 @@ related:
   - checklists/beneficiary-designation-audit
   - tools/plan-review-reminder
   - life-events/moving-to-a-new-state
+diagram: PlanReviewTriggers
+answers:
+  - "Can I change my estate plan whenever I want?"
+  - "How do I change my estate plan?"
+  - "What are the most common estate planning mistakes with beneficiaries?"
+  - "What happens if I name the wrong beneficiary?"
+  - "What are the most common estate planning mistakes?"
+  - "Do I need to update my plan after my executor or trustee dies?"
+  - "Do I need an estate plan if all my assets are jointly owned?"
 reviewed: false
 updated: "2026-10-06"
 ---

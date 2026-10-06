@@ -2,6 +2,8 @@ import { getAllArticles } from "@/lib/library";
 import { describe, expect, it } from "vitest";
 import { TOOLS } from "@/config/tools";
 import { getChecklists, getComparisons, getGlossary, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
+import { getQuizzes } from "@/lib/quizzes";
+import { DECISIONS } from "@/config/decisions";
 import { MAGNET_CATEGORIES, MAGNET_FORMATS, getMagnets, magnetsFor } from "@/lib/magnets";
 
 const magnets = getMagnets();
@@ -16,6 +18,8 @@ function knownPaths() {
   getLessons().forEach((l) => s.add(`/course/${l.day}`));
   TOOLS.forEach((t) => s.add(`/tools/${t.slug}`));
   magnets.forEach((m) => s.add(`/free/${m.slug}`));
+  getQuizzes().forEach((q) => s.add(`/quizzes/${q.slug}`));
+  DECISIONS.forEach((d) => s.add(`/decide/${d.slug}`));
   getAllArticles().forEach((a) => s.add(a.url));
   return s;
 }
@@ -102,4 +106,39 @@ describe("free resource library", () => {
     ];
     expect(paths.filter((p) => magnetsFor(p).length === 0)).toEqual([]);
   }, 30_000);
+});
+
+describe("magnet page extras", () => {
+  it("names only diagrams that exist", async () => {
+    const { diagramRegistry } = await import("@/components/visuals/diagrams/registry");
+    const names = new Set(diagramRegistry.map((d) => d.name));
+    expect(magnets.filter((m) => m.diagram && !names.has(m.diagram)).map((m) => `${m.slug}: ${m.diagram}`)).toEqual([]);
+  });
+
+  it("links category extras to real tools, quizzes and decision guides", async () => {
+    const { MAGNET_EXTRAS } = await import("@/config/magnet-extras");
+    const { getQuiz } = await import("@/lib/quizzes");
+    const { getDecision } = await import("@/config/decisions");
+    const missing: string[] = [];
+    for (const [cat, x] of Object.entries(MAGNET_EXTRAS)) {
+      x.tools.filter((s) => !TOOLS.some((t) => t.slug === s)).forEach((s) => missing.push(`${cat} tool ${s}`));
+      x.quizzes.filter((s) => !getQuiz(s)).forEach((s) => missing.push(`${cat} quiz ${s}`));
+      x.decide.filter((s) => !getDecision(s)).forEach((s) => missing.push(`${cat} decide ${s}`));
+    }
+    expect(missing).toEqual([]);
+    expect(Object.keys(MAGNET_EXTRAS).sort()).toEqual(Object.keys(MAGNET_CATEGORIES).sort());
+  });
+
+  it("lists each answered question on one resource only", () => {
+    const seen = new Map<string, string>();
+    const dupes: string[] = [];
+    for (const m of magnets.filter((x) => x.lang === "en")) {
+      for (const q of m.answers) {
+        const k = q.trim().toLowerCase();
+        if (seen.has(k)) dupes.push(`${q} (${seen.get(k)}, ${m.slug})`);
+        else seen.set(k, m.slug);
+      }
+    }
+    expect(dupes).toEqual([]);
+  });
 });

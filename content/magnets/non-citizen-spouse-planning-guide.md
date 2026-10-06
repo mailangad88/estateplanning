@@ -19,6 +19,9 @@ related:
   - guides/guardianship-for-minor-children
   - guides/how-to-make-a-will
   - life-events/getting-married
+answers:
+  - "What is the marital deduction?"
+  - "What if I own property in Mexico or Canada and live in the U.S.?"
 reviewed: false
 updated: "2026-10-06"
 ---

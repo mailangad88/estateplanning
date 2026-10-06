@@ -18,6 +18,14 @@ related:
   - learn/power-of-attorney/power-of-attorney-vs-guardianship
   - life-events/caring-for-aging-parents
   - life-events/serious-diagnosis
+answers:
+  - "What are an agent's duties under a power of attorney?"
+  - "What can a power of attorney agent do?"
+  - "What happens to a power of attorney when the agent dies?"
+  - "Can a power of attorney pay themselves for their work?"
+  - "Can a power of attorney pay their own bills from my account?"
+  - "What happens to my power of attorney if I get divorced?"
+  - "Does a power of attorney expire?"
 reviewed: false
 updated: "2026-10-06"
 ---

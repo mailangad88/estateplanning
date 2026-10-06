@@ -18,6 +18,11 @@ related:
   - guides/settling-an-estate-step-by-step
   - guides/beneficiary-designations
   - learn/basics/when-to-update-your-estate-plan
+answers:
+  - "What do I do when my spouse dies?"
+  - "What happens to a deceased person's health insurance?"
+  - "What if my deceased spouse's name is still on the deed?"
+  - "What if my deceased spouse's name is still on the house?"
 reviewed: false
 updated: "2026-10-06"
 ---

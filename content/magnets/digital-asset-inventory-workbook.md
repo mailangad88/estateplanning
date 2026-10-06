@@ -18,6 +18,10 @@ related:
   - checklists/digital-assets-inventory
   - learn/wills/choosing-an-executor
   - guides/how-to-make-a-will
+diagram: DigitalAssets
+answers:
+  - "What happens to a deceased person's cryptocurrency?"
+  - "What happens to a deceased person's digital assets?"
 reviewed: false
 updated: "2026-10-06"
 ---

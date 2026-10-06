@@ -19,6 +19,16 @@ related:
   - guides/estate-and-inheritance-taxes
   - guides/powers-of-attorney
   - checklists/annual-estate-plan-review
+answers:
+  - "Can I use the same estate plan if I move?"
+  - "Does moving to a new state invalidate my will?"
+  - "Should I update my estate plan when I move to a new state?"
+  - "What happens if I own a house in two states?"
+  - "What estate planning do I need if I own property in two states?"
+  - "Does a will made in one state hold up in another?"
+  - "Is a will valid in another state?"
+  - "What happens to my will if I move to a different state?"
+  - "Is estate planning different in community property states?"
 reviewed: false
 updated: "2026-10-06"
 ---

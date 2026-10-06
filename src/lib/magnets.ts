@@ -65,12 +65,38 @@ export interface Magnet {
   lang: string;
   /** For a translation, the slug of the English original */
   translationOf?: string;
+  /** Two-letter code when the resource is written for one state (frontmatter `state`, or inferred from the slug) */
+  state?: string;
+  /** Reader questions this resource answers, copied from the question bank (frontmatter `answers`) */
+  answers: string[];
+  /** Name of a diagram in the visuals registry to show on the landing page (frontmatter `diagram`) */
+  diagram?: string;
   /** Raw markdown, used by link checks */
   body: string;
 }
 
 const DIR = path.join(process.cwd(), "content", "magnets");
+
+/** Illinois resources are named for the state, a county or Chicago. */
+function stateFromSlug(slug: string): string | undefined {
+  return /illinois|chicago|^(cook|dupage|will|kane|mchenry)-county/.test(slug) ? "IL" : undefined;
+}
+
+/** Resources written for one state, newest-first by title for a stable order. */
+export function magnetsForState(code: string): Magnet[] {
+  return getMagnets().filter((m) => m.state === code.toUpperCase());
+}
 let cache: Magnet[] | null = null;
+let cacheKey = "";
+
+/** File names plus modification times, so dev edits still show up without re-parsing on every call. */
+function dirSignature(): string {
+  return fs
+    .readdirSync(DIR)
+    .filter((f) => f.endsWith(".md"))
+    .map((f) => `${f}:${fs.statSync(path.join(DIR, f)).mtimeMs}`)
+    .join("|");
+}
 
 function lessonsOf(body: string): Lesson[] {
   const parts = body.split(/^## Day (\d+):\s*(.+)$/m);
@@ -84,6 +110,9 @@ function lessonsOf(body: string): Lesson[] {
 export function getMagnets(): Magnet[] {
   if (cache && process.env.NODE_ENV === "production") return cache;
   if (!fs.existsSync(DIR)) return [];
+  const key = dirSignature();
+  if (cache && key === cacheKey) return cache;
+  cacheKey = key;
   cache = fs
     .readdirSync(DIR)
     .filter((f) => f.endsWith(".md") && f !== "README.md")
@@ -113,6 +142,9 @@ export function getMagnets(): Magnet[] {
         words: content.split(/\s+/).filter(Boolean).length,
         lang: String(data.lang ?? "en"),
         translationOf: data.translation_of ? String(data.translation_of) : undefined,
+        state: data.state ? String(data.state).toUpperCase() : stateFromSlug(f.replace(/\.md$/, "")),
+        answers: Array.isArray(data.answers) ? data.answers.map(String) : [],
+        diagram: data.diagram ? String(data.diagram) : undefined,
         body: content,
       } satisfies Magnet;
     });

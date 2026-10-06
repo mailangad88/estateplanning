@@ -19,6 +19,11 @@ related:
   - guides/healthcare-directives-and-living-wills
   - learn/elder-care/medicaid-planning
   - tools/medicaid-lookback-date
+answers:
+  - "What are my options if my parent cannot afford care?"
+  - "How do I pay for long-term care without insurance?"
+  - "How do I know if a parent can still live at home safely?"
+  - "How do I become my parent's power of attorney?"
 reviewed: false
 updated: "2026-10-06"
 ---
