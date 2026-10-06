@@ -51,6 +51,8 @@ export interface DeferredSend extends DueSend {
 const PRE_SALE = [
   "speed_to_lead",
   "quiz_follow_up",
+  "grief_support",
+  "magnet_follow_up",
   ...LIFE_EVENT_SEGMENTS.map(lifeEventSequenceId),
   "consult_booked",
   "no_show_recovery",
@@ -96,14 +98,30 @@ export function enroll(db: Db, leadId: string, sequenceId: string, at: Date): Se
   return enr;
 }
 
+/** Guides that go to grieving families. Their downloads route to grief_support, never to marketing. */
+export const GRIEF_RESOURCES = ["after-a-death-checklist", "executor-first-30-days-guide", "what_to_do_when_someone_dies"];
+
+/**
+ * True for estate administration leads: the segment tag, an after-a-death guide,
+ * or a tool used in heir mode (probate and executor calculators).
+ */
+export function isGriefLead(lead: Pick<Lead, "segments" | "matterType" | "capture">): boolean {
+  if (lead.matterType === "administration" || lead.segments.includes("estate_administration")) return true;
+  if (lead.capture?.resource && GRIEF_RESOURCES.includes(lead.capture.resource)) return true;
+  return lead.capture?.result?.mode === "heir";
+}
+
 /**
  * New lead: speed_to_lead at once, quiz_follow_up when quiz answers exist, and one
  * life-event track per matching segment. Life-event tracks start 3 days out and
  * are staggered 2 days apart so a lead with several tags is not flooded.
  */
 export function enrollForNewLead(db: Db, lead: Lead, at: Date): SequenceEnrollment[] {
+  // Families handling an estate get only the gentle track: no speed-to-lead texts, no marketing.
+  if (isGriefLead(lead)) return [enroll(db, lead.id, "grief_support", at)];
   const out = [enroll(db, lead.id, "speed_to_lead", at)];
   if (Object.keys(lead.intake?.answers ?? {}).length > 0) out.push(enroll(db, lead.id, "quiz_follow_up", at));
+  if (lead.segments.some((s) => s.startsWith("resource:"))) out.push(enroll(db, lead.id, "magnet_follow_up", at));
   const tracks = LIFE_EVENT_SEGMENTS.filter((s) => lead.segments.includes(s));
   tracks.forEach((seg, i) => out.push(enroll(db, lead.id, lifeEventSequenceId(seg), new Date(at.getTime() + (3 + 2 * i) * DAY))));
   return out;
@@ -154,7 +172,7 @@ function maybeComplete(db: Db, enr: SequenceEnrollment, seq: Sequence, at: Date)
   // consult_held_not_signed ends with "then monthly", which is the long_term track.
   if (seq.id === "consult_held_not_signed") {
     const lead = db.leads.get(enr.leadId);
-    if (lead && stageIdx(lead.stage) < stageIdx("retainer_signed") && !lead.exit) enroll(db, enr.leadId, "long_term", at);
+    if (lead && stageIdx(lead.stage) < stageIdx("retainer_signed") && !lead.exit && !isGriefLead(lead)) enroll(db, enr.leadId, "long_term", at);
   }
 }
 
@@ -349,7 +367,8 @@ export function onConsultNoShow(db: Db, leadId: string, at: Date): void {
 export function onExit(db: Db, leadId: string, reason: ExitReason, at: Date): void {
   if (reason === "unresponsive") {
     stopActive(db, leadId, PRE_SALE.filter((s) => s !== "long_term"), "exit:unresponsive", at);
-    enroll(db, leadId, "long_term", at);
+    const lead = db.leads.get(leadId);
+    if (lead && !isGriefLead(lead)) enroll(db, leadId, "long_term", at);
   } else {
     stopActive(db, leadId, PRE_SALE, `exit:${reason}`, at);
   }
@@ -365,6 +384,8 @@ export function sweepQuietLeads(db: Db, now: Date): string[] {
   for (const lead of db.leads.list()) {
     if (stageIdx(lead.stage) >= stageIdx("consult_booked")) continue;
     if (lead.exit && lead.exit.reason !== "unresponsive") continue;
+    // Grieving families never get the monthly marketing newsletter.
+    if (isGriefLead(lead)) continue;
     if (db.enrollments.list((e) => e.leadId === lead.id && e.status === "active").length > 0) continue;
     if (db.enrollments.list((e) => e.leadId === lead.id && e.sequenceId === "long_term").length > 0) continue;
     const last = Math.max(

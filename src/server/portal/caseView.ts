@@ -200,7 +200,14 @@ export function buildCaseView(db: Db, actor: Actor, leadId: string, now = new Da
     s.engagement = client ? engagements.filter((e) => !["draft", "approved"].includes(e.status)) : engagements;
   }
   if (!client) s.tasks = db.tasks.list((t) => t.leadId === leadId).sort((a, b) => a.dueAt.localeCompare(b.dueAt));
-  if (!client) s.source = lead.source;
+  if (!client) {
+    s.source = {
+      ...lead.source,
+      captureTool: lead.capture?.tool,
+      captureResource: lead.capture?.resource,
+      priorTools: lead.priorTools?.length ? lead.priorTools.join(", ") : undefined,
+    };
+  }
   if (can("view_audit")) s.audit = db.audit.list((e) => e.leadId === leadId);
   return view;
 }

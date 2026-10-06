@@ -126,3 +126,21 @@ export function assertFirmVisible(comment: Comment): void {
 export function fullName(p: Person): string {
   return `${p.firstName} ${p.lastName}`.trim();
 }
+
+/**
+ * Segment tags that reveal health, death or disability. They stay out of fields a
+ * CRM can sync to ad audiences; workflows get a plain "sensitive track" flag instead.
+ */
+export const SENSITIVE_SEGMENTS = ["special_needs", "estate_administration", "widowed", "caregiver"];
+
+/** What the CRM gets about how the lead was captured: tool, resource and non-sensitive tags. Never the tool's figures. */
+export function captureFields(lead: Lead) {
+  const sensitive = lead.segments.some((s) => SENSITIVE_SEGMENTS.includes(s)) || lead.capture?.result?.mode === "heir";
+  return {
+    tool: lead.capture?.tool,
+    resource: lead.capture?.resource,
+    priorTools: lead.priorTools ?? [],
+    tags: lead.segments.filter((s) => !SENSITIVE_SEGMENTS.includes(s)),
+    sensitiveTrack: sensitive,
+  };
+}
