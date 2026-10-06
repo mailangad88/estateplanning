@@ -27,6 +27,10 @@ export const firm = {
   consultFormat: "[Attorney: phone, video or in person]",
   consultFee: "[Attorney: consult fee, or no fee]",
   draftingTime: "[Attorney: typical drafting time]",
+  /** Profile URLs (state bar, Google Business Profile and similar) that identify the firm. Empty omits sameAs from structured data. */
+  sameAs: [] as string[],
+  /** Profile URLs for the attorney. Empty omits sameAs from structured data. */
+  attorneySameAs: [] as string[],
   barLookupUrl: null as string | null, // state bar lawyer-lookup URL, set when known
   /** Number visitors can text. Must be registered for business texting (10DLC) before launch. Null hides the Text button. */
   textNumber: "(000) 000-0000" as string | null, // PLACEHOLDER
