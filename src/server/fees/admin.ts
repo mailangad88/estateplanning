@@ -92,7 +92,8 @@ function writeVersion(
   rule: FeeRule,
   structure: BusinessStructure,
   reason: string,
-  counsel?: FeeRuleVersion["counsel"],
+  /** undefined keeps the previous version's counsel record; null clears it */
+  counsel?: FeeRuleVersion["counsel"] | null,
 ): FeeRuleVersion {
   const prev = ruleHistory(db, rule.id).at(-1);
   const version = (prev?.version ?? 0) + 1;
@@ -107,7 +108,7 @@ function writeVersion(
     reason,
     billable: check.allowed,
     lockReason: check.allowed ? undefined : check.reason,
-    counsel: counsel ?? prev?.counsel,
+    counsel: counsel === null ? undefined : (counsel ?? prev?.counsel),
   });
 }
 
@@ -138,7 +139,7 @@ export function saveFeeRule(
   const { counselApprovedAt: _dropped, ...prevTerms } = prev?.rule ?? ({} as FeeRule);
   const termsUnchanged = prev && JSON.stringify(prevTerms) === JSON.stringify(parsed);
   const rule: FeeRule = { ...parsed, counselApprovedAt: termsUnchanged ? prev?.rule.counselApprovedAt : undefined };
-  const v = writeVersion(db, actor.userId, rule, structure, reason, termsUnchanged ? prev?.counsel : undefined);
+  const v = writeVersion(db, actor.userId, rule, structure, reason, termsUnchanged ? prev?.counsel : null);
   audit(db, actor, { action: "fee_rule.save", resourceType: "fee_rule", resourceId: v.id, detail: { billable: v.billable } });
   return v;
 }

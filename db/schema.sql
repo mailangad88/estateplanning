@@ -294,6 +294,14 @@ CREATE TABLE suppressions (
   at      timestamptz NOT NULL
 );
 
+-- Automation runner cursor (src/server/automation.ts). Only app_service touches it; no client data.
+CREATE TABLE automation_state (
+  id         text PRIMARY KEY CHECK (id = 'automation'),
+  cursor_seq bigint NOT NULL DEFAULT 0,
+  stages     jsonb NOT NULL DEFAULT '{}'::jsonb,
+  exits      jsonb NOT NULL DEFAULT '{}'::jsonb
+);
+
 -- Hash-chained, append-only (see src/server/audit/log.ts).
 CREATE TABLE audit_events (
   id            text PRIMARY KEY,
@@ -661,5 +669,10 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, leads, a
 GRANT SELECT, INSERT ON invoices TO app_service;
 GRANT SELECT ON fee_rule_versions TO app_service;
 GRANT INSERT ON audit_events TO app_service;
+
+-- The automation runner reads the audit log as its event feed (ids and actions only).
+GRANT SELECT ON audit_events TO app_service;
+CREATE POLICY audit_events_service_read ON audit_events FOR SELECT TO app_service USING (true);
+GRANT SELECT, INSERT, UPDATE ON automation_state TO app_service;
 
 COMMIT;

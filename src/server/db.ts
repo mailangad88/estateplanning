@@ -99,7 +99,16 @@ export interface Db {
   invoices: Collection<Invoice>;
   enrollments: Collection<SequenceEnrollment>;
   suppressions: Collection<Suppression>;
+  automationState: Collection<AutomationState>;
   audit: AppendOnly<AuditEvent>;
+}
+
+/** Cursor into the audit log for the automation runner, plus the last stage it acted on per lead. */
+export interface AutomationState {
+  id: "automation";
+  cursorSeq: number;
+  stages: Record<string, string>;
+  exits: Record<string, string>;
 }
 
 export function createMemoryDb(): Db {
@@ -121,6 +130,7 @@ export function createMemoryDb(): Db {
     invoices: new MemoryCollection(),
     enrollments: new MemoryCollection(),
     suppressions: new MemoryCollection(),
+    automationState: new MemoryCollection(),
     audit: new MemoryAppendOnly(),
   };
 }

@@ -6,6 +6,8 @@ import { deliverLead, type LeadRecord } from "@/lib/crm";
 import { effectiveContactMethod, leadSubmissionSchema } from "@/lib/lead";
 import { educationTopics } from "@/lib/quiz";
 import { scoreLead, segmentTags } from "@/lib/scoring";
+import { getDb } from "@/server/runtime";
+import { ingestLead } from "@/server/services/leads";
 
 export async function POST(request: Request) {
   let json: unknown;
@@ -70,6 +72,16 @@ export async function POST(request: Request) {
   if (failure) {
     console.error("lead delivery failed", { id: record.id, error: failure });
     return NextResponse.json({ error: "We could not save your request. Please call us." }, { status: 502 });
+  }
+
+  // Also hand the lead to the portal backend once it is switched on. A failure here never
+  // loses the lead: the CRM delivery above has already succeeded.
+  if (process.env.PORTAL_INGEST_LEADS === "true") {
+    try {
+      ingestLead(getDb(), record, now);
+    } catch (err) {
+      console.error("portal ingest failed", { id: record.id, error: err instanceof Error ? err.message : String(err) });
+    }
   }
 
   return NextResponse.json({
