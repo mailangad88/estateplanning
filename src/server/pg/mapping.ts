@@ -161,6 +161,13 @@ export const TABLES = {
     table: "suppressions",
     columns: [t("id", "id"), t("channel", "channel"), t("address", "address"), t("reason", "reason"), ts("at", "at")],
   },
+  factVerifications: {
+    table: "fact_verifications",
+    columns: [
+      t("id", "id"), t("factId", "fact_id"), n("version", "version"), t("approvedValue", "approved_value"),
+      t("approvedBy", "approved_by"), ts("approvedAt", "approved_at"), t("note", "note"),
+    ],
+  },
   automationState: {
     table: "automation_state",
     columns: [n("cursorSeq", "cursor_seq"), j("stages", "stages"), j("exits", "exits"), t("id", "id")],

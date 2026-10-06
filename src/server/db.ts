@@ -21,6 +21,7 @@ import type {
 } from "@/server/types";
 import type { FeeRuleVersion, Invoice } from "@/server/fees/admin";
 import type { BillableEvent } from "@/lib/fees";
+import type { FactVerification } from "@/lib/facts";
 import type { SequenceEnrollment, Suppression } from "@/server/nurture/types";
 
 export type Where = Record<string, string | number | boolean | null>;
@@ -120,6 +121,7 @@ export interface Db {
   invoices: Collection<Invoice>;
   enrollments: Collection<SequenceEnrollment>;
   suppressions: Collection<Suppression>;
+  factVerifications: Collection<FactVerification>;
   automationState: Collection<AutomationState>;
   audit: AppendOnly<AuditEvent>;
 }
@@ -151,6 +153,7 @@ export function createMemoryDb(): Db {
     invoices: new MemoryCollection(),
     enrollments: new MemoryCollection(),
     suppressions: new MemoryCollection(),
+    factVerifications: new MemoryCollection(),
     automationState: new MemoryCollection(),
     audit: new MemoryAppendOnly(),
   };
