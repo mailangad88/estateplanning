@@ -29,10 +29,10 @@ function makeLead(over: Partial<Lead> = {}): Lead {
   };
 }
 
-function setup(over: Partial<Lead> = {}) {
+async function setup(over: Partial<Lead> = {}) {
   const db = createMemoryDb();
-  db.persons.insert(person);
-  db.leads.insert(makeLead(over));
+  await db.persons.insert(person);
+  await db.leads.insert(makeLead(over));
   return db;
 }
 
@@ -58,7 +58,7 @@ function fakeFetch(responder: Responder) {
 
 const noSleep = async () => {};
 
-describe("LawmaticsAdapter", () => {
+describe("LawmaticsAdapter", async () => {
   it("creates contact and prospect with bearer auth", async () => {
     const f = fakeFetch((r) => {
       if (r.method === "GET") return { json: { data: [] } };
@@ -94,7 +94,7 @@ describe("LawmaticsAdapter", () => {
   });
 });
 
-describe("HubSpotAdapter", () => {
+describe("HubSpotAdapter", async () => {
   it("updates when the email search finds a contact", async () => {
     const f = fakeFetch((r) => (r.url.endsWith("/search") ? { json: { results: [{ id: "77" }] } } : { json: {} }));
     const a = new HubSpotAdapter({ token: "hs", fetchImpl: f.impl });
@@ -129,7 +129,7 @@ describe("HubSpotAdapter", () => {
   });
 });
 
-describe("capture data", () => {
+describe("capture data", async () => {
   const captured = {
     segments: ["tool:guide", "resource:after-a-death-checklist", "estate_administration", "homeowner"],
     capture: { tool: "guide", resource: "after-a-death-checklist", result: { estimate: 12000 } },
@@ -154,9 +154,9 @@ describe("capture data", () => {
   });
 });
 
-describe("CrmSync", () => {
+describe("CrmSync", async () => {
   it("is idempotent and stores crmId", async () => {
-    const db = setup();
+    const db = await setup();
     const mock = new MockCrmAdapter();
     const sync = new CrmSync(mock, { sleep: noSleep });
     const first = await sync.syncLead(db, "l1");
@@ -164,36 +164,36 @@ describe("CrmSync", () => {
     expect(first.created).toBe(true);
     expect(second).toEqual({ matterId: first.matterId, created: false });
     expect(mock.count("upsertMatter")).toBe(1);
-    expect(db.leads.get("l1")!.crmId).toBe(first.matterId);
-    const ev = db.audit.list().filter((e) => e.action === "crm.sync");
+    expect((await db.leads.get("l1"))!.crmId).toBe(first.matterId);
+    const ev = (await db.audit.list()).filter((e) => e.action === "crm.sync");
     expect(ev).toHaveLength(1);
     expect(ev[0].detail).toEqual({ adapter: "mock", operation: "upsertLead", ok: true });
   });
 
   it("retries on 429 honouring Retry-After, then succeeds", async () => {
-    const db = setup();
+    const db = await setup();
     const mock = new MockCrmAdapter();
     mock.failWith = [new CrmHttpError(429, 3000)];
     const sleeps: number[] = [];
     await new CrmSync(mock, { sleep: async (ms) => void sleeps.push(ms) }).syncLead(db, "l1");
     expect(sleeps).toEqual([3000]);
-    expect(db.leads.get("l1")!.crmId).toBeTruthy();
+    expect((await db.leads.get("l1"))!.crmId).toBeTruthy();
   });
 
   it("backs off exponentially and gives up after 4 attempts", async () => {
-    const db = setup();
+    const db = await setup();
     const mock = new MockCrmAdapter();
     mock.failWith = [new CrmHttpError(503), new CrmHttpError(503), new CrmHttpError(503), new CrmHttpError(503), new CrmHttpError(503)];
     const sleeps: number[] = [];
     await expect(new CrmSync(mock, { sleep: async (ms) => void sleeps.push(ms) }).syncLead(db, "l1")).rejects.toThrow();
     expect(mock.count("upsertContact")).toBe(4);
     expect(sleeps).toEqual([500, 1000, 2000]);
-    expect(db.leads.get("l1")!.crmId).toBeUndefined();
-    expect(db.audit.list().at(-1)!.detail).toMatchObject({ ok: false });
+    expect((await db.leads.get("l1"))!.crmId).toBeUndefined();
+    expect((await db.audit.list()).at(-1)!.detail).toMatchObject({ ok: false });
   });
 
   it("does not retry other 4xx errors", async () => {
-    const db = setup();
+    const db = await setup();
     const mock = new MockCrmAdapter();
     mock.failWith = [new CrmHttpError(401)];
     await expect(new CrmSync(mock, { sleep: noSleep }).syncLead(db, "l1")).rejects.toThrow();
@@ -201,22 +201,22 @@ describe("CrmSync", () => {
   });
 
   it("syncs stage and exit changes", async () => {
-    const db = setup();
+    const db = await setup();
     const mock = new MockCrmAdapter();
     const sync = new CrmSync(mock, { sleep: noSleep });
     await sync.syncLead(db, "l1");
-    db.leads.update("l1", { stage: "contacted", exit: { reason: "unresponsive", at: "2026-10-07T00:00:00Z" } });
+    await db.leads.update("l1", { stage: "contacted", exit: { reason: "unresponsive", at: "2026-10-07T00:00:00Z" } });
     await sync.syncStage(db, "l1");
     expect(mock.calls.find((c) => c.op === "setStage")!.args.slice(1)).toEqual(["contacted", "unresponsive"]);
   });
 
   it("never syncs internal or client comments, syncs firm ones", async () => {
-    const db = setup();
+    const db = await setup();
     const mock = new MockCrmAdapter();
     const base: Comment = { id: "c1", leadId: "l1", authorId: "u", authorName: "Sam", body: "x", visibility: "internal", mentions: [], createdAt: "2026-10-06T00:00:00Z" };
-    db.comments.insert(base);
-    db.comments.insert({ ...base, id: "c2", visibility: "client" });
-    db.comments.insert({ ...base, id: "c3", visibility: "firm" });
+    await db.comments.insert(base);
+    await db.comments.insert({ ...base, id: "c2", visibility: "client" });
+    await db.comments.insert({ ...base, id: "c3", visibility: "firm" });
     const sync = new CrmSync(mock, { sleep: noSleep });
     expect(await sync.syncComment(db, "c1")).toBe(false);
     expect(await sync.syncComment(db, "c2")).toBe(false);
@@ -227,7 +227,7 @@ describe("CrmSync", () => {
   });
 
   it("never sends consent IP or user agent to the CRM", async () => {
-    const db = setup();
+    const db = await setup();
     const f = fakeFetch((r) => {
       if (r.method === "GET") return { json: { data: [] } };
       return { json: { data: { id: 1 } } };
@@ -237,7 +237,7 @@ describe("CrmSync", () => {
     expect(sent).not.toContain("203.0.113.77");
     expect(sent).not.toContain("SecretAgent");
 
-    const db2 = setup();
+    const db2 = await setup();
     const f2 = fakeFetch((r) => (r.url.endsWith("/search") ? { json: { results: [] } } : { json: { id: "1" } }));
     await new CrmSync(new HubSpotAdapter({ token: "t", fetchImpl: f2.impl }), { sleep: noSleep }).syncLead(db2, "l1");
     expect(JSON.stringify(f2.reqs.map((r) => r.body))).not.toContain("203.0.113.77");

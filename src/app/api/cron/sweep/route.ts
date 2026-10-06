@@ -14,9 +14,9 @@ import { sweepExpiredOffers } from "@/server/services/routing";
  */
 export async function POST(request: Request) {
   if (!cronAuthorized(request)) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  const db = getDb();
+  const db = await getDb();
   const now = new Date();
-  const offers = sweepExpiredOffers(db, now);
+  const offers = await sweepExpiredOffers(db, now);
   const reminders = await sendDueReminders(db, esignProviderFromEnv(), now);
   const automations = await runAutomations(db, new CrmSync(crmAdapterFromEnv()), now);
   return NextResponse.json({ offers, reminders, automations });

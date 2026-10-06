@@ -8,9 +8,9 @@ export async function POST(request: Request, { params }: { params: Promise<{ id:
   return withActor(request, async ({ db, actor }) => {
     const { result } = await readJson<{ result: "clear" | "conflict" }>(request);
     if (result !== "clear" && result !== "conflict") throw new Error("result must be clear or conflict");
-    recordConflictCheck(db, actor, id, result);
+    await recordConflictCheck(db, actor, id, result);
     if (result === "conflict") return { ok: true, routed: false };
-    const offer = offerNext(db, id);
+    const offer = await offerNext(db, id);
     return { ok: true, routed: !!offer.offered, nextStep: offer.nextStep };
   });
 }

@@ -12,9 +12,9 @@ import type { Actor } from "@/server/types";
 export type Handler = (ctx: { db: Db; actor: Actor; request: Request }) => Promise<unknown> | unknown;
 
 export async function withActor(request: Request, handler: Handler): Promise<Response> {
-  const db = getDb();
+  const db = await getDb();
   const token = cookieFromHeader(request.headers.get("cookie"));
-  const actor = actorFromSession(db, token);
+  const actor = await actorFromSession(db, token);
   if (!actor || !token) return NextResponse.json({ error: "Sign in to continue" }, { status: 401 });
   try {
     requireMfa(actor);

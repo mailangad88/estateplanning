@@ -7,8 +7,8 @@ import { MATTER_LABELS } from "@/server/services/leads";
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Portal", robots: { index: false, follow: false } };
 
-function SignIn() {
-  const db = getDb();
+async function SignIn() {
+  const db = await getDb();
   return (
     <>
       <h1>Portal sign-in</h1>
@@ -18,7 +18,7 @@ function SignIn() {
           <label className="field">
             Sign in as
             <select name="userId">
-              {db.users.list((u) => u.active).map((u) => (
+              {(await db.users.list((u) => u.active)).map((u) => (
                 <option key={u.id} value={u.id}>{u.name} ({u.role.replace("_", " ")})</option>
               ))}
             </select>
@@ -39,11 +39,11 @@ function minutesLeft(iso: string) {
 export default async function PortalHome() {
   const actor = await currentActor();
   if (!actor) return <SignIn />;
-  const db = getDb();
-  const user = db.users.get(actor.userId);
+  const db = await getDb();
+  const user = await db.users.get(actor.userId);
 
   if (actor.role === "marketing") {
-    const leads = db.leads.list();
+    const leads = await db.leads.list();
     const byStage = new Map<string, number>();
     for (const l of leads) byStage.set(l.stage, (byStage.get(l.stage) ?? 0) + 1);
     return (
@@ -56,8 +56,8 @@ export default async function PortalHome() {
     );
   }
 
-  const dash = actor.role === "attorney" ? lawyerDashboard(db, actor) : null;
-  const leads = visibleLeads(db, actor).sort((a, b) => Number(b.lead.urgent) - Number(a.lead.urgent) || b.lead.createdAt.localeCompare(a.lead.createdAt));
+  const dash = actor.role === "attorney" ? await lawyerDashboard(db, actor) : null;
+  const leads = (await visibleLeads(db, actor)).sort((a, b) => Number(b.lead.urgent) - Number(a.lead.urgent) || b.lead.createdAt.localeCompare(a.lead.createdAt));
 
   return (
     <>

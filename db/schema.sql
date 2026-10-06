@@ -117,6 +117,9 @@ CREATE TABLE leads (
   client_choice_lawyer_ids  text[],
   crm_id                    text,
   intake_owner_id           text REFERENCES users(id),
+  capture                   jsonb,                           -- {tool, resource?, result?}: which site tool captured the lead
+  prior_tools               text[],                          -- capture tools this visitor used before, oldest first
+  visitor_id                text,                            -- browser id used to merge repeat submissions
   CHECK (assigned_lawyer_id IS NULL OR firm_id IS NOT NULL)
 );
 CREATE INDEX leads_assigned_lawyer_idx ON leads (assigned_lawyer_id) WHERE assigned_lawyer_id IS NOT NULL;
@@ -313,7 +316,7 @@ CREATE TABLE audit_events (
   resource_type text NOT NULL,
   resource_id   text NOT NULL,
   lead_id       text,                          -- deliberately no FK: the trail outlives the lead
-  detail        jsonb,
+  detail        json,                          -- json, not jsonb: the hash covers the exact key order
   prev_hash     text NOT NULL,
   hash          text NOT NULL
 );

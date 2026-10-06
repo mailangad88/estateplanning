@@ -32,7 +32,7 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
   if (!actor) return <p>Please <Link href="/portal">sign in</Link>.</p>;
   let view;
   try {
-    view = buildCaseView(getDb(), actor, id);
+    view = await buildCaseView(await getDb(), actor, id);
   } catch (err) {
     if (err instanceof ForbiddenError) return <p>You do not have access to this case.</p>;
     notFound();

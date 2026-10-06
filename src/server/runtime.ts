@@ -10,16 +10,27 @@ import { createMemoryDb, type Db } from "@/server/db";
 import { seedDemo } from "@/server/seed";
 import type { Actor } from "@/server/types";
 
-const g = globalThis as unknown as { __epDb?: Db };
+const g = globalThis as unknown as { __epDb?: Promise<Db> };
 
-export function getDb(): Db {
+async function createDb(): Promise<Db> {
+  if (process.env.DATABASE_URL) {
+    const { createPgDb } = await import("@/server/pg");
+    return createPgDb();
+  }
+  if (process.env.NODE_ENV === "production" && process.env.PORTAL_ALLOW_MEMORY_STORE !== "true") {
+    throw new Error("The in-memory store is for development. Configure DATABASE_URL (Postgres) before running the portal in production.");
+  }
+  const db = createMemoryDb();
+  if (process.env.PORTAL_SEED_DEMO !== "false") await seedDemo(db);
+  return db;
+}
+
+export async function getDb(): Promise<Db> {
   if (!g.__epDb) {
-    if (process.env.NODE_ENV === "production" && process.env.PORTAL_ALLOW_MEMORY_STORE !== "true") {
-      throw new Error("The in-memory store is for development. Configure the Postgres store before running the portal in production.");
-    }
-    const db = createMemoryDb();
-    if (process.env.PORTAL_SEED_DEMO !== "false") seedDemo(db);
-    g.__epDb = db;
+    g.__epDb = createDb().catch((err) => {
+      g.__epDb = undefined; // let the next request retry
+      throw err;
+    });
   }
   return g.__epDb;
 }
@@ -27,5 +38,5 @@ export function getDb(): Db {
 /** The signed-in actor for a server component or route handler, or null. */
 export async function currentActor(): Promise<Actor | null> {
   const jar = await cookies();
-  return actorFromSession(getDb(), jar.get(SESSION_COOKIE)?.value);
+  return await actorFromSession(await getDb(), jar.get(SESSION_COOKIE)?.value);
 }

@@ -9,7 +9,7 @@ export async function POST(request: Request, { params }: { params: Promise<{ id:
   return withActor(request, async ({ db, actor }) => {
     const { reason, note } = await readJson<{ reason: DeclineReason; note?: string }>(request);
     if (!REASONS.includes(reason)) throw new Error("Choose a reason for declining");
-    declineOffer(db, actor, id, reason, note);
+    await declineOffer(db, actor, id, reason, note);
     return { ok: true };
   });
 }
