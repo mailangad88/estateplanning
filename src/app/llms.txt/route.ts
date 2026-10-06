@@ -14,6 +14,7 @@ export function GET() {
     `> Plain-English estate planning education from ${firm.firmLegalName}, an estate planning law firm. Covers wills, trusts, powers of attorney, guardianship, probate, estate taxes and long-term care planning. General information, not legal advice; laws vary by state.`,
     "",
     `Full text of every article: ${abs("/llms-full.txt")}`,
+    `Machine-readable glossary: ${abs("/glossary.json")} · All questions and answers: ${abs("/faq.json")}`,
     `Markdown copy of any library, state or glossary page: add /raw before the path and .md after it, e.g. ${abs("/raw/learn/wills.md")}`,
     `Book a consult: ${abs("/plan-finder")} · Phone: ${firm.phone}`,
     "",
