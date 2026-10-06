@@ -9,6 +9,7 @@ import type { QuizAnswers } from "@/lib/quiz";
 import { audit, type AuditActor } from "@/server/audit/log";
 import { assertCan, canOnLead } from "@/server/auth/policy";
 import type { Db } from "@/server/db";
+import { assertValueQuestionClear, attributeLead, partnerSegments } from "@/server/services/partners";
 import type { Actor, ConflictParty, ExitReason, HouseholdMember, Intake, Lead, MatterType, Person, Stage } from "@/server/types";
 
 export const MATTER_LABELS: Record<MatterType, string> = {
@@ -61,8 +62,16 @@ export async function findPerson(db: Db, email: string, phone: string, visitorId
   return prior ? await db.persons.get(prior.personId) : undefined;
 }
 
-/** Creates the person (or reuses a match) and a new lead from a website submission. */
-export async function ingestLead(db: Db, record: LeadRecord, now = new Date()): Promise<Lead> {
+export interface IngestOptions {
+  /** The caller records the partner referral itself (the partner-submitted form), so ?ref= attribution is skipped. */
+  skipPartnerAttribution?: boolean;
+}
+
+/**
+ * Creates the person (or reuses a match) and a new lead from a website submission. A known partner ref code
+ * (?ref= on the landing page) tags the lead and records a referral for that partner.
+ */
+export async function ingestLead(db: Db, record: LeadRecord, now = new Date(), options: IngestOptions = {}): Promise<Lead> {
   const c = record.contact;
   let person = await findPerson(db, c.email, c.phone, record.visitorId);
   if (!person) {
@@ -116,7 +125,7 @@ export async function ingestLead(db: Db, record: LeadRecord, now = new Date()): 
     stageHistory: [{ stage: "new", at, by: "system" }],
     ...base,
     exit: record.score.tier === "not_a_fit" ? { reason: "not_a_fit", at, note: record.score.notFitReason } : undefined,
-    segments: record.segments,
+    segments: [...new Set([...record.segments, ...(options.skipPartnerAttribution ? [] : await partnerSegments(db, record.source.partnerRef))])],
     source: { ...record.source },
     consent: record.consent,
     offerSummary: offerSummary(base),
@@ -129,6 +138,14 @@ export async function ingestLead(db: Db, record: LeadRecord, now = new Date()): 
   };
   await db.leads.insert(lead);
   await audit(db, "system", { action: "lead.create", resourceType: "lead", resourceId: lead.id, leadId: lead.id, at: now });
+  if (!options.skipPartnerAttribution) {
+    try {
+      await attributeLead(db, lead, record.source.partnerRef, now);
+    } catch (err) {
+      // Attribution is bookkeeping: a failure must never lose the lead.
+      console.error("partner attribution failed", { id: lead.id, error: err instanceof Error ? err.message : String(err) });
+    }
+  }
   return lead;
 }
 
@@ -136,6 +153,8 @@ export async function setStage(db: Db, actor: AuditActor, leadId: string, stage:
   const lead = await db.leads.get(leadId);
   if (!lead) throw new Error("Lead not found");
   if (lead.stage === stage) return lead;
+  // A partner-sourced matter cannot be closed until "is anything of value linked to this referral?" is answered No.
+  if (stage === "plan_complete" || stage === "annual_review") await assertValueQuestionClear(db, leadId);
   const at = now.toISOString();
   const by = actor === "system" ? "system" : actor.userId;
   const next = await db.leads.update(leadId, { stage, stageHistory: [...lead.stageHistory, { stage, at, by }] });

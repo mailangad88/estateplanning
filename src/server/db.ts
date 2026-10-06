@@ -16,6 +16,9 @@ import type {
   Firm,
   Lawyer,
   Lead,
+  Partner,
+  PartnerGift,
+  PartnerReferral,
   Person,
   Task,
   User,
@@ -125,6 +128,9 @@ export interface Db {
   factVerifications: Collection<FactVerification>;
   automationState: Collection<AutomationState>;
   crmDeliveries: Collection<CrmDelivery>;
+  partners: Collection<Partner>;
+  partnerGifts: Collection<PartnerGift>;
+  partnerReferrals: Collection<PartnerReferral>;
   audit: AppendOnly<AuditEvent>;
 }
 
@@ -158,6 +164,9 @@ export function createMemoryDb(): Db {
     factVerifications: new MemoryCollection(),
     automationState: new MemoryCollection(),
     crmDeliveries: new MemoryCollection(),
+    partners: new MemoryCollection(),
+    partnerGifts: new MemoryCollection(),
+    partnerReferrals: new MemoryCollection(),
     audit: new MemoryAppendOnly(),
   };
 }

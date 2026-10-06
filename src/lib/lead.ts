@@ -74,6 +74,8 @@ export const leadSubmissionSchema = z.object({
       utmContent: z.string().max(200).optional(),
       gclid: z.string().max(300).optional(),
       fbclid: z.string().max(300).optional(),
+      /** Referral partner code from a ?ref= link (src/lib/partners.ts). Unknown codes are ignored on the server. */
+      partnerRef: z.string().max(64).optional(),
       /** Optional "How did you hear about us?" answer. Self-reported, so AI-assistant referrals can be counted. */
       heardFrom: z.enum(HEARD_FROM_VALUES).optional(),
     })

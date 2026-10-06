@@ -5,6 +5,7 @@
  */
 import type { ConsentRecord } from "@/lib/consent";
 import type { BusinessStructure } from "@/lib/fees";
+import type { PartnerStatus, PartnerType, ReleaseStatus, ValueLinked } from "@/lib/partners";
 import type { QuizAnswers } from "@/lib/quiz";
 import type { ScoreResult } from "@/lib/scoring";
 
@@ -355,4 +356,69 @@ export interface CrmDelivery {
   updatedAt: string;
   lastAttemptAt: string;
   deliveredAt?: string;
+}
+
+// ---------------------------------------------------------------------------
+// Referral partners (partner-kit): tracking only. The firm never pays for a referral.
+// ---------------------------------------------------------------------------
+
+export interface Partner {
+  id: string;
+  /** URL slug of the co-branded page, /partners/<slug> */
+  slug: string;
+  /** Contact person */
+  name: string;
+  org: string;
+  type: PartnerType;
+  /** Code carried in ?ref= links and QR codes, "ref-<slug>" by convention */
+  refCode: string;
+  status: PartnerStatus;
+  /** Staff user who owns the relationship */
+  ownerId?: string;
+  firmId?: string;
+  createdAt: string;
+  /** YYYY-MM-DD the partner signed the referral partner policy */
+  policySignedDate?: string;
+  reciprocalAgreementOnFile: boolean;
+  /** The reciprocal agreement is non-exclusive (Rule 7.2(b)(4)(i)). Must be true before a partner is active. */
+  agreementNonexclusive: boolean;
+  notes?: string;
+}
+
+export interface PartnerGift {
+  id: string;
+  partnerId: string;
+  /** YYYY-MM-DD */
+  date: string;
+  description: string;
+  valueCents: number;
+  /** "flagged" gifts need the attorney's review; blocked gifts are never stored */
+  status: "ok" | "flagged";
+  /** The rule explanations that flagged it */
+  flags: string[];
+  loggedBy: string;
+  reviewNote?: string;
+}
+
+export interface PartnerReferral {
+  id: string;
+  partnerId: string;
+  refCode: string;
+  /** The portal lead this referral created or was attributed to */
+  leadId?: string;
+  createdAt: string;
+  /** partner_form: the partner submitted it. ref_link: the person arrived on a ?ref= link themselves. */
+  origin: "partner_form" | "ref_link";
+  /** The partner confirmed the person agreed to be referred. Always true for partner_form, never for ref_link. */
+  clientConsent: boolean;
+  /** The firm gave the client the Rule 7.2(b)(4) disclosure */
+  disclosureGiven: boolean;
+  disclosureAt?: string;
+  disclosureVersion?: string;
+  releaseStatus: ReleaseStatus;
+  releaseUpdatedAt?: string;
+  releaseUpdatedBy?: string;
+  /** "Is anything of value linked to this referral?" Required before the matter can close. */
+  valueLinked: ValueLinked;
+  valueNote?: string;
 }

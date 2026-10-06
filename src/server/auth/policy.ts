@@ -5,7 +5,7 @@
  *
  * Roles follow the "Lawyer portal and permissions" table in the plan.
  */
-import type { Actor, Assignment, Lead, Role, Visibility } from "@/server/types";
+import type { Actor, Assignment, Lead, Partner, Role, Visibility } from "@/server/types";
 
 export class ForbiddenError extends Error {
   constructor(message = "You do not have access to this") {
@@ -114,7 +114,9 @@ export type GlobalAction =
   | "view_invoices"
   | "manage_firm_capacity"
   | "work_intake_queue"
-  | "verify_facts";
+  | "verify_facts"
+  | "view_partners"
+  | "manage_partners";
 
 const GLOBAL: Record<GlobalAction, Role[]> = {
   configure_routing: ["platform_admin"],
@@ -129,10 +131,23 @@ const GLOBAL: Record<GlobalAction, Role[]> = {
   work_intake_queue: ["platform_admin", "intake"],
   // Approving a state fact or dollar figure for publication is a legal judgment: attorneys and platform admins only.
   verify_facts: ["platform_admin", "attorney"],
+  // Referral partners, their gift log and release status. Mirrors the partners RLS policies.
+  view_partners: ["platform_admin", "firm_admin"],
+  manage_partners: ["platform_admin", "firm_admin"],
 };
 
 export function can(actor: Actor, action: GlobalAction): boolean {
   return GLOBAL[action].includes(actor.role);
+}
+
+/**
+ * One partner record. Platform admins see every partner; firm admins only those of their own firm
+ * (a partner with no firm is platform-only). Mirrors partners_admin in db/schema.sql.
+ */
+export function canOnPartner(actor: Actor, action: "view" | "manage", partner: Pick<Partner, "firmId">): boolean {
+  if (!can(actor, action === "view" ? "view_partners" : "manage_partners")) return false;
+  if (actor.role === "platform_admin") return true;
+  return !!actor.firmId && partner.firmId === actor.firmId;
 }
 
 export function assertCan(ok: boolean, message?: string): void {
