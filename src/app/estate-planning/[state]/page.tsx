@@ -93,6 +93,15 @@ export default async function StatePage({ params }: { params: Promise<Params> })
     { name: "Laws by state", url: "/estate-planning" },
     { name: s.name, url: s.url },
   ];
+  // "What happens if I die without a will in {State}?" is one of the most searched state questions, so every
+  // guide answers it from its own facts. The FAQ is added only where the guide does not already ask it.
+  const noWillFaq = s.facts.intestacy && !s.faqs.some((f) => /without a will/i.test(f.q))
+    ? [{
+        q: `What happens if you die without a will in ${s.name}?`,
+        a: `${s.name}'s intestacy law decides who inherits, and a court appoints someone to manage the estate. For a married person with children: ${s.facts.intestacy} A court also chooses a guardian for minor children if no one was named.`,
+      }]
+    : [];
+  const faqs = [...s.faqs, ...noWillFaq];
   const related = s.related
     .map((r) => findByUrl(refToUrl(r)))
     .filter((x) => x !== undefined && "title" in x)
@@ -100,7 +109,7 @@ export default async function StatePage({ params }: { params: Promise<Params> })
 
   return (
     <article className="content">
-      <JsonLd data={graph(stateGuideSchema(s), breadcrumbSchema(crumbs), faqSchema(s.faqs))} />
+      <JsonLd data={graph(stateGuideSchema(s), breadcrumbSchema(crumbs), faqSchema(faqs))} />
       <PageHero
         compact
         crumbs={<Breadcrumbs items={crumbs} />}
@@ -130,6 +139,34 @@ export default async function StatePage({ params }: { params: Promise<Params> })
           Laws change. Confirm current rules with an attorney licensed in {s.name} before relying on this summary.
         </p>
       </section>
+      {s.facts.intestacy && (
+        <section aria-labelledby="no-will">
+          <h2 id="no-will">What happens if you die without a will in {s.name}?</h2>
+          <p>
+            {s.name} law writes a default plan for you. It decides who inherits, and a court appoints someone to
+            manage the estate. If you have young children and named no guardian, a judge chooses who raises them.
+          </p>
+          <p>
+            <strong>If you are married with children:</strong> {s.facts.intestacy}
+          </p>
+          {s.facts.spousalRights && (
+            <p>
+              <strong>What a surviving spouse is protected by:</strong> {s.facts.spousalRights}
+            </p>
+          )}
+          {s.facts.smallEstate && (
+            <p>
+              <strong>If the estate is small:</strong> {s.facts.smallEstate}
+            </p>
+          )}
+          <p>
+            Unmarried partners and stepchildren usually inherit nothing under these rules. Read{" "}
+            <Link href="/learn/wills/dying-without-a-will">what happens when someone dies without a will</Link>, see{" "}
+            <Link href="/learn/what-if">what else can go wrong when planning waits</Link>, or{" "}
+            <Link href="/plan-finder">find the plan that fits your family</Link>.
+          </p>
+        </section>
+      )}
       <LinkList
         id="state-tools"
         title={`Run the numbers for ${s.name}`}
@@ -149,7 +186,7 @@ export default async function StatePage({ params }: { params: Promise<Params> })
           <p>{sec.body}</p>
         </section>
       ))}
-      <Faqs faqs={s.faqs} />
+      <Faqs faqs={faqs} />
       {served && <CallbackForm interest={`state:${s.abbr}`} />}
       {cities.length > 0 && (
         <LinkList

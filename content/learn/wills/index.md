@@ -160,6 +160,8 @@ For typical prices and what to ask providers, see [how much a will costs](/learn
 
 Life stage changes which items matter most. If you are a new parent, the guardian decision comes first. If you are retired, beneficiary forms and incapacity planning may matter more. People with a second marriage, a business or a child with special needs need more than a basic will, and the right structure depends on the facts.
 
+An old will can cause as many problems as no will. See [what happens if you die with an outdated will](/learn/what-if/outdated-will), and if time is short, [whether it is too late to make a will](/learn/what-if/too-late-for-a-will).
+
 ## How we can help
 
 You do not need to work out the whole plan alone. Our attorneys can review a will you already have, draft a new one with a proper signing, or help you decide whether a trust-based plan fits better. The [plan finder](/plan-finder) takes a few minutes and suggests which documents suit your situation, or you can book a consultation to talk it over. There is no pressure to decide anything on the first call.

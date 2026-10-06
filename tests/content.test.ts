@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
+import { TOOLS } from "@/config/tools";
 import { getChecklists, getComparisons, getGuides, getLifeEvents, getPosts } from "@/lib/content";
 import {
   getAllArticles,
@@ -35,6 +36,7 @@ const validUrls = new Set<string>([
   ...getPosts().map((p) => `/blog/${p.slug}`),
   ...getLifeEvents().map((l) => `/life-events/${l.slug}`),
   ...getChecklists().map((c) => `/checklists/${c.slug}`),
+  ...TOOLS.map((t) => `/tools/${t.slug}`),
   "/guides", "/compare", "/blog", "/life-events", "/checklists", "/tools", "/faq", "/resources", "/pricing", "/about", "/contact",
 ]);
 

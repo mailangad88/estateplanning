@@ -10,6 +10,7 @@ One template per search intent. Each says what the page must contain beyond the 
 | explainer | A concept or process ("successor trustee checklist", "trust accounting") | explainer.md |
 | comparison | X vs. Y | comparison.md |
 | cost | "How much does X cost" | cost.md |
+| scenario | "What happens if ..." when someone delays or skips a step ("What happens if my ex is still my beneficiary?") | scenario.md |
 | situation | A reader's circumstance or audience ("estate planning for physicians") | situation.md |
 | state-topic | A topic in one state ("probate in Ohio"). Blocked until the launch state is set and facts are attorney-verified | state-topic.md |
 | city | A city the firm genuinely serves. Blocked until the firm confirms service areas | city.md |

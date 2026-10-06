@@ -25,6 +25,7 @@ const BY_CLUSTER: Record<string, string[]> = {
   "special-needs": ["/guides/special-needs-trusts", "/compare/special-needs-trust-vs-able-account"],
   "elder-care": ["/guides/medicaid-and-long-term-care-planning", "/life-events/caring-for-aging-parents", "/blog/how-to-talk-to-your-parents-about-their-estate-plan"],
   "digital-assets": ["/guides/digital-assets-estate-planning"],
+  "what-if": ["/guides/what-happens-if-you-die-without-a-will", "/guides/updating-your-estate-plan", "/blog/what-happens-if-a-beneficiary-dies-before-you", "/blog/who-gets-the-house-if-theres-no-will-and-no-spouse", "/blog/who-makes-medical-decisions-if-you-have-no-healthcare-directive", "/blog/does-a-spouse-inherit-everything-if-there-is-no-will"],
   "property-and-assets": ["/blog/should-i-put-my-house-in-a-trust", "/compare/transfer-on-death-deed-vs-trust", "/compare/joint-ownership-vs-trust", "/life-events/buying-a-home"],
 };
 
@@ -46,6 +47,7 @@ const TOOLS_BY_CLUSTER: Record<string, string[]> = {
   "special-needs": ["/tools/guardian-fund-calculator", "/checklists/letter-of-instruction-outline"],
   "elder-care": ["/tools/medicaid-savings-runway", "/tools/medicaid-lookback-date", "/checklists/documents-to-gather-before-your-consult"],
   "digital-assets": ["/checklists/digital-assets-inventory", "/checklists/important-contacts-list"],
+  "what-if": ["/tools/plan-readiness-assessment", "/tools/beneficiary-audit", "/checklists/annual-estate-plan-review", "/tools/plan-review-reminder"],
   "property-and-assets": ["/checklists/trust-funding-checklist", "/tools/will-or-trust", "/tools/probate-cost-estimator"],
 };
 

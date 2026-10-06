@@ -126,6 +126,8 @@ A will is also only one tool. If you own a home and want it to pass without prob
 
 If you are in the position of settling an intestate estate right now, take the steps in order and do not rush distributions. The court process protects heirs and creditors alike.
 
+Dying without a will is one of several outcomes of putting planning off. See [what happens if you put off estate planning](/learn/what-if) for the others, from an old beneficiary form to an unfunded trust.
+
 ## How we can help
 
 If someone close to you died without a will, our attorneys can explain how your state's rules apply and what the court will expect. If you are planning for your own family, you can use the [plan finder](/plan-finder) to see which documents fit your situation, or book a consultation to talk it through. There is no pressure to decide anything on the first call.
