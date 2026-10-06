@@ -35,7 +35,7 @@ A court usually gives strong weight to the guardian you name. It still has the f
 
 ### A way to manage money for your child
 
-Parents commonly set up one of these. The guide to [leaving money to minors](/guides/leaving-money-to-minors) compares them in more detail.
+Parents commonly set up one of these. The guide to [leaving money to minors](/learn/guardianship/leaving-money-to-minors) compares them in more detail.
 
 - **A trust for your child.** A trustee manages the money and pays for your child's needs. You choose the age at which your child gets control, which can be later than 18.
 - **A custodial account under your state's transfers to minors law.** Simpler, but your child usually gets full control at 18 or 21, depending on your state.

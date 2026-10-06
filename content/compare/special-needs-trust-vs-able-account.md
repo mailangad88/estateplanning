@@ -68,7 +68,7 @@ Say a young woman with a disability works part time. She can deposit some earnin
 
 Many families use both. The special needs trust holds the larger, long-term funds. The trustee moves smaller amounts into the ABLE account for day-to-day needs the beneficiary can handle.
 
-This setup pairs control with independence. Benefit rules are detailed and state programs differ, so coordination matters. See [irrevocable trusts explained](/guides/irrevocable-trusts-explained) and [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning).
+This setup pairs control with independence. Benefit rules are detailed and state programs differ, so coordination matters. See [irrevocable trusts explained](/guides/irrevocable-trusts-explained) and [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).
 
 ## Questions to ask an attorney
 

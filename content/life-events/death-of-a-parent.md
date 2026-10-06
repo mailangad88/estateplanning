@@ -21,9 +21,9 @@ related: [settling-an-estate-step-by-step, how-probate-works, what-happens-if-yo
 
 Your parent's property does not automatically pass to anyone. Someone must gather it, pay debts and taxes, and distribute what is left.
 
-Who does that depends on your parent's plan. A will names an executor, who usually goes through probate. A trust names a trustee, who can often act without a court. If there is no will, state law decides who inherits and who can serve. The guide on [dying without a will](/guides/what-happens-if-you-die-without-a-will) explains that process.
+Who does that depends on your parent's plan. A will names an executor, who usually goes through probate. A trust names a trustee, who can often act without a court. If there is no will, state law decides who inherits and who can serve. The guide on [dying without a will](/learn/wills/dying-without-a-will) explains that process.
 
-Some assets skip all of this. Life insurance, retirement accounts and accounts with a [payable-on-death beneficiary](/guides/transfer-on-death-and-payable-on-death) go straight to the named person.
+Some assets skip all of this. Life insurance, retirement accounts and accounts with a [payable-on-death beneficiary](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts) go straight to the named person.
 
 ## What usually happens first
 

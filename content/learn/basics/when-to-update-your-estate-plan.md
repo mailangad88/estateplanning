@@ -116,11 +116,32 @@ The right tool depends on how big the change is.
 | Major changes | Restate or sign a new will or trust | Cleaner and avoids confusion between versions |
 | New real estate title | New deed | Recorded with the county |
 
+A restatement keeps the original trust's name and date, so assets already titled in the trust stay there. You do not have to retitle everything.
+
 Never write changes on a signed will or trust. Do not discard the old document until the new one is properly signed, and tell your attorney if previous versions exist so there is no conflict. If you restate or replace a document, make sure the older one is clearly revoked, and give updated copies to the people who rely on them.
+
+## Which accounts do people forget to update?
+
+Wills and trusts get the attention, but these items cause many problems.
+
+- **Transfer-on-death and payable-on-death registrations** on bank and brokerage accounts. See [payable-on-death and transfer-on-death accounts](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts).
+- **Joint accounts** opened for convenience. They pass to the co-owner, whatever your will says.
+- **Employer plans and life insurance.** After a divorce, federal rules for employer plans can mean the named beneficiary is paid regardless of the divorce.
+- **Digital accounts** and password managers. See the [digital assets inventory](/checklists/digital-assets-inventory).
 
 ## Does a trust make updating easier?
 
 Often yes. A [revocable trust](/glossary/revocable-trust) can be amended without a court, and changing a successor trustee or a distribution age is usually a short amendment. The tradeoff is that assets must be kept funded, so any new account or property needs to be retitled.
+
+## An example of several changes at once
+
+Mark Feldman signed a will and a life insurance form in 2014, when he was married to Susan and had no children. Since then he divorced, married Jenna, had a daughter and moved to another state. His old will still named Susan as executor. His employer life insurance and his healthcare power of attorney still named Susan, and no guardian was named for his daughter.
+
+His update included a new will, a trust for his daughter, a guardian nomination and new powers of attorney under his new state's forms. He also filed new beneficiary forms with his employer and his IRA custodian. The [beneficiary designation audit](/checklists/beneficiary-designation-audit) helps you find every account the way he did.
+
+## What should you do with the old documents?
+
+Once you sign new documents, the old ones can cause confusion. Many attorneys suggest keeping the old originals in a clearly marked folder, or destroying them on purpose, depending on your state's practice and your attorney's advice. Tell your executor, trustee and agents where the new originals are. Give copies of healthcare forms to your doctors and your healthcare agent. If you have a [letter of instruction](/checklists/letter-of-instruction-outline), update it at the same time so it matches the new plan.
 
 ## What if you never update?
 
@@ -133,6 +154,14 @@ An outdated plan can still work if nothing important changed. If something did, 
 - Check beneficiary forms whenever you receive an annual account statement.
 - Ask your attorney whether they offer periodic review meetings.
 - Tell your family when you update, so they know which version is current. If the conversation feels hard, see [how to talk to your family about your estate plan](/learn/basics/talking-to-family-about-estate-plan).
+
+## Questions to ask an attorney
+
+- Is a codicil enough, or should I sign a new will?
+- Should I amend my trust or restate it?
+- Does my divorce automatically change anything in my state?
+- Are my powers of attorney from another state valid here?
+- What should I do with my old original documents?
 
 ## How we can help
 

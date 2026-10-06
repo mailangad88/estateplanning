@@ -14,11 +14,11 @@ pages: 8
 tag: struggling_beneficiary_guide
 sequence: B
 related:
-  - guides/choosing-a-trustee
-  - guides/revocable-living-trust-explained
+  - learn/trusts/choosing-a-trustee
+  - learn/trusts/revocable-living-trust
   - guides/irrevocable-trusts-explained
   - guides/special-needs-trusts
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -97,7 +97,7 @@ Some families keep the trust going for the beneficiary's whole life, with income
 
 ## Choosing a trustee
 
-The trustee is the most important decision. They need to be fair, organized and able to say no without anger, and also able to say yes. Read [choosing a trustee](/guides/choosing-a-trustee) for the full picture. Points specific to this situation:
+The trustee is the most important decision. They need to be fair, organized and able to say no without anger, and also able to say yes. Read [choosing a trustee](/learn/trusts/choosing-a-trustee) for the full picture. Points specific to this situation:
 
 - **A sibling can be a poor choice.** They may be resented, or have their own conflicts. Some siblings do an excellent job, and some are relieved to be named co-trustee with a professional.
 - **A professional or corporate trustee** is neutral and charges fees, which are a cost against the trust. They may be less flexible with small trusts.
@@ -143,7 +143,7 @@ Many people never tell the beneficiary. Surprises cause fresh pain. If the perso
 - **Writing conditions no trustee can measure.**
 - **Choosing a trustee who dreads the job.**
 - **Leaving the trustee with no guidance.**
-- **Never updating.** A person's situation can improve or worsen, so review the plan after major changes. See [updating your plan](/guides/updating-your-estate-plan).
+- **Never updating.** A person's situation can improve or worsen, so review the plan after major changes. See [updating your plan](/learn/basics/when-to-update-your-estate-plan).
 
 ## When to talk to an attorney
 
@@ -156,4 +156,4 @@ Many people never tell the beneficiary. Surprises cause fresh pain. If the perso
 
 ## Next step
 
-Read [choosing a trustee](/guides/choosing-a-trustee), then [book a consult](/plan-finder) to talk through which structure fits your family.
+Read [choosing a trustee](/learn/trusts/choosing-a-trustee), then [book a consult](/plan-finder) to talk through which structure fits your family.

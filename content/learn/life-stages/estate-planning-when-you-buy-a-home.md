@@ -107,7 +107,7 @@ A house purchase should be followed within weeks by a short set of documents, be
 
 ## When can you wait on a trust?
 
-Many first-time buyers do well to close in a simple, sensible title, sign the basic documents and revisit a trust later. If your home is your only significant asset, you live in a state with an affordable TOD deed or a streamlined small-estate process, and you have no incapacity concerns, a trust may not repay its cost yet. If you own property in two states, have children from a prior relationship, expect to leave the house to several people, or want to avoid a court-supervised conservatorship, a trust looks stronger. Our [do I need a living trust](/learn/trusts/do-i-need-a-living-trust) article lays out the decision, and the [revocable living trust guide](/guides/revocable-living-trust-explained) explains how the pieces fit.
+Many first-time buyers do well to close in a simple, sensible title, sign the basic documents and revisit a trust later. If your home is your only significant asset, you live in a state with an affordable TOD deed or a streamlined small-estate process, and you have no incapacity concerns, a trust may not repay its cost yet. If you own property in two states, have children from a prior relationship, expect to leave the house to several people, or want to avoid a court-supervised conservatorship, a trust looks stronger. Our [do I need a living trust](/learn/trusts/do-i-need-a-living-trust) article lays out the decision, and the [revocable living trust guide](/learn/trusts/revocable-living-trust) explains how the pieces fit.
 
 For the bigger picture, see [guide to estate planning by life stage](/learn/life-stages).
 

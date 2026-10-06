@@ -67,7 +67,7 @@ This page is written calmly on purpose. Nothing here is urgent beyond what the l
 |---|---|
 | Only a will, and assets in the person's name alone | Probate (court-supervised). See [how probate works](/guides/how-probate-works). |
 | A funded living trust, and the person was the trustee | Trust administration, usually without court. See [executor vs trustee](/compare/executor-vs-trustee). |
-| All assets have beneficiaries or joint owners | Often nothing to probate, but there may still be a final tax return. See [probate vs non-probate assets](/compare/probate-vs-non-probate-assets). |
+| All assets have beneficiaries or joint owners | Often nothing to probate, but there may still be a final tax return. See [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets). |
 | A small estate | A small estate procedure may be enough. See [skipping probate for a small estate](/blog/can-you-skip-probate-for-a-small-estate). [State check: thresholds] |
 
 You can estimate time and cost with the [probate cost estimator](/tools/probate-cost-estimator).

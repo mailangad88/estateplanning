@@ -46,7 +46,7 @@ They also leave money in a trust for moving costs. A letter asks the guardians t
 People who choose an out-of-state guardian often take a few extra steps:
 
 - **Name a local backup.** An alternate guardian nearby gives the court a second option.
-- **Leave money for the move.** A trust can cover travel, moving trucks and a larger home. Our guide to [leaving money to minors](/guides/leaving-money-to-minors) explains the options.
+- **Leave money for the move.** A trust can cover travel, moving trucks and a larger home. Our guide to [leaving money to minors](/learn/guardianship/leaving-money-to-minors) explains the options.
 - **Name a short-term caregiver.** Someone local can care for the children for the first few days. Some states have a form for this.
 - **Write a letter of wishes.** Explain your reasons and what traditions or relationships matter. Our [letter of instruction outline](/checklists/letter-of-instruction-outline) helps.
 

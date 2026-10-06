@@ -21,6 +21,10 @@ faqs:
     a: "Yes. You can sign a trust at any time, fund it, and update your will to pour into it. Many people begin with a will when children are young and add a trust as assets grow."
   - q: "Which is harder to contest, a will or a trust?"
     a: "Both can be challenged for lack of capacity, undue influence or fraud. A trust is often less visible, because there is no public probate filing, and well-documented signing helps either document hold up."
+  - q: "Does a trust protect my assets from creditors?"
+    a: "A revocable living trust generally does not. Because you can change or cancel it, the law usually treats the assets as still yours. Some irrevocable trusts can offer protection, and the rules vary by state."
+  - q: "Is a trust only for wealthy people?"
+    a: "No. People with modest estates use trusts too, especially if they own a home, own property in more than one state, or want to avoid court involvement if they become incapacitated."
 related:
   - "trusts/revocable-living-trust"
   - "trusts/how-to-fund-a-trust"
@@ -91,6 +95,8 @@ Anyone can look up a probated will. If you do not want your children, charities 
 ## What about a will and a trust together?
 
 Most trust-based plans use both. The trust holds your house and accounts. A [pour-over will](/learn/wills/pour-over-will) says that anything left outside the trust at death goes into it. If a forgotten asset exceeds your state's small estate limit it will still go through probate, but it ends up governed by the trust's terms.
+
+A typical package also includes a financial power of attorney and a healthcare directive. Those documents cover decisions the trust does not, like medical care.
 
 Your will is also the document where you name guardians. A trust cannot appoint someone to raise your children, so see [how to choose a guardian](/learn/guardianship/how-to-choose-a-guardian) before you sign.
 

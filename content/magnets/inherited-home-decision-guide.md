@@ -17,7 +17,7 @@ related:
   - life-events/death-of-a-parent
   - guides/settling-an-estate-step-by-step
   - guides/how-probate-works
-  - compare/probate-vs-non-probate-assets
+  - learn/probate/probate-vs-non-probate-assets
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -38,7 +38,7 @@ Until the title is sorted out, you may not be allowed to sell, rent or even chan
 | Jointly with survivorship | The surviving owner | A recorded death certificate or affidavit |
 | With a transfer on death deed | The named beneficiary, after recording paperwork | State recording requirements |
 
-Heirs who have only been told "the house is yours" often cannot sign a listing agreement or a sale contract until the right person has authority. A title company can usually tell you what it will accept. See [Probate vs. Non-Probate Assets](/compare/probate-vs-non-probate-assets).
+Heirs who have only been told "the house is yours" often cannot sign a listing agreement or a sale contract until the right person has authority. A title company can usually tell you what it will accept. See [Probate vs. Non-Probate Assets](/learn/probate/probate-vs-non-probate-assets).
 
 ## Step 2: Protect the house while you decide
 

@@ -49,7 +49,7 @@ Even careful people end up with stray assets. Common ones include:
 - An inheritance you received late in life.
 - A lawsuit settlement or insurance payout owed to you.
 
-Without a pour-over will, those assets would pass under your state's intestacy rules, which may not match your trust at all. See [how long probate takes](/blog/how-long-does-probate-take) for what the leftover assets might face.
+Without a pour-over will, those assets would pass under your state's intestacy rules, which may not match your trust at all. See [how long probate takes](/learn/probate/how-long-does-probate-take) for what the leftover assets might face.
 
 ## Keeping the pour-over will small
 
@@ -71,4 +71,4 @@ Signing rules for a will, small estate limits, and how probate handles pour-over
 
 ## Next step
 
-Work through the [trust funding checklist](/checklists/trust-funding-checklist) to shrink what your pour-over will has to catch. Our guide to the [revocable living trust](/guides/revocable-living-trust-explained) covers how the pieces fit together. For help setting up a trust and pour-over will, start with the [plan finder](/plan-finder).
+Work through the [trust funding checklist](/checklists/trust-funding-checklist) to shrink what your pour-over will has to catch. Our guide to the [revocable living trust](/learn/trusts/revocable-living-trust) covers how the pieces fit together. For help setting up a trust and pour-over will, start with the [plan finder](/plan-finder).

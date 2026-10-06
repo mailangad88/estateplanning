@@ -16,7 +16,7 @@ sequence: B
 lang: es
 translation_of: estate-planning-checklist
 related:
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - guides/how-to-make-a-will
   - checklists/annual-estate-plan-review
   - checklists/documents-to-gather-before-your-consult

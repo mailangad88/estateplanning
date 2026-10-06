@@ -12,7 +12,7 @@ resource from `content/magnets`. Follow `content/STYLE.md`. Keep `reviewed: fals
   "kind": "knowledge",            // "knowledge" (one correct answer each) or "assessment" (points add up)
   "category": "basics",           // same keys as content/magnets
   "magnet": "estate-planning-checklist",   // a slug in content/magnets offered with the result
-  "related": ["guides/what-is-estate-planning"],
+  "related": ["learn/basics/what-is-estate-planning"],
   "reviewed": false,
   "updated": "2026-10-06",
   "questions": [

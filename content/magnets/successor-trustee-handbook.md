@@ -14,7 +14,7 @@ pages: 8
 tag: successor_trustee_handbook
 sequence: G
 related:
-  - guides/choosing-a-trustee
+  - learn/trusts/choosing-a-trustee
   - guides/settling-an-estate-step-by-step
   - checklists/first-30-days-after-a-death
   - life-events/death-of-a-parent

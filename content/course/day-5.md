@@ -15,11 +15,11 @@ These choices often take the most thought. You do not need to be final today. A 
 
 ### Executor
 
-Your executor settles your estate after you die. They gather assets, pay bills and taxes, and distribute what is left under your will. The guide to [choosing an executor](/guides/choosing-an-executor) covers the role in detail.
+Your executor settles your estate after you die. They gather assets, pay bills and taxes, and distribute what is left under your will. The guide to [choosing an executor](/learn/wills/choosing-an-executor) covers the role in detail.
 
 ### Trustee
 
-If you have a trust, your successor trustee manages it after you die or if you cannot. If you leave money in trust for children, the trustee may serve for years. See [choosing a trustee](/guides/choosing-a-trustee).
+If you have a trust, your successor trustee manages it after you die or if you cannot. If you leave money in trust for children, the trustee may serve for years. See [choosing a trustee](/learn/trusts/choosing-a-trustee).
 
 ### Guardian for minor children
 

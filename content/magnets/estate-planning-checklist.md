@@ -14,7 +14,7 @@ pages: 6
 tag: estate_planning_checklist
 sequence: B
 related:
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - guides/how-to-make-a-will
   - checklists/annual-estate-plan-review
   - checklists/documents-to-gather-before-your-consult

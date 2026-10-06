@@ -91,6 +91,14 @@ Intestacy handles money and care separately, and neither is handled well. A cour
 
 For the money, a child's inheritance is usually held by a court-supervised conservator until age 18, then paid out in full. Few parents want a teenager to receive a large sum outright on a birthday. A will can create a trust that delays and stages payment. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors) for the options.
 
+## What else can intestacy cost a family?
+
+Dying without a will can add steps and costs beyond who inherits.
+
+- **More court involvement.** Some states require more reporting or court approval for an administrator than for a named executor.
+- **Selling property to divide it.** When several heirs inherit a house together, it is often sold so the value can be split.
+- **Disputes over personal items.** Without written wishes, relatives may disagree about who gets keepsakes.
+
 ## Which assets does intestacy actually control?
 
 Only your probate estate. Intestate succession controls property titled in your name alone with no beneficiary or survivorship feature. Common examples are a house, a car, and bank accounts without a payable-on-death designation.

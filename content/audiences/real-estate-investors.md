@@ -48,7 +48,7 @@ updated: "2026-10-06"
 - **The loan.** Federal law limits lenders from enforcing due-on-sale clauses on certain transfers to a living trust where you stay a beneficiary, and on certain transfers to relatives after a death, but only for residential property with fewer than five dwelling units. It does not cover commercial property or buildings with five or more units. Transfers to an LLC are not covered by those protections. [ATTORNEY: confirm]. Check the loan documents and talk to the lender where needed. See [what happens to a mortgage when the owner dies](/blog/what-happens-to-a-mortgage-when-the-owner-dies).
 - **Insurance and title.** Moving a property to an LLC or trust can affect title insurance and liability coverage. A plan lists what needs updating.
 - **Operations if you cannot act.** Tenants, repairs, security deposits and rent collection do not pause. A power of attorney with authority over real estate and entities, plus a named manager, keeps things moving.
-- **Partners and co-owners.** Operating agreements and partnership terms may decide who owns your share after your death. See the [business succession guide](/guides/business-succession-planning).
+- **Partners and co-owners.** Operating agreements and partnership terms may decide who owns your share after your death. See the [business succession guide](/learn/business-owners/business-succession-planning).
 - **Unequal heirs.** One child wants the rentals and another wants cash. Equalizing without selling takes planning.
 
 ## LLC or trust: what each holds
@@ -63,7 +63,7 @@ updated: "2026-10-06"
 |---|---|
 | Portfolio estate map | Property, how titled, loan, LLC, manager, tenants, insurance and access. Start with the [asset and account inventory](/checklists/asset-and-account-inventory). |
 | Titling review | Decides what moves to a trust or LLC and what should not, such as a primary residence or loans with limits. |
-| Living trust | Holds LLC interests or properties and names successors. See the [revocable living trust guide](/guides/revocable-living-trust-explained). |
+| Living trust | Holds LLC interests or properties and names successors. See the [revocable living trust guide](/learn/trusts/revocable-living-trust). |
 | Power of attorney with real estate and entity powers | A named agent and a backup. |
 | Successor manager instructions | A short letter for the property manager and the successor trustee. |
 | Basis and tax coordination | Your CPA models gifting vs inheritance. |

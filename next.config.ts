@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { MERGED_PAGES } from "./src/config/merged-pages";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
@@ -22,6 +23,8 @@ const nextConfig: NextConfig = {
         { source: `/resources/${from}/read`, destination: `/free/${to}/view`, permanent: true },
       ]),
       { source: "/tools/readiness", destination: "/tools/plan-readiness-assessment", permanent: true },
+      // Duplicate guides, comparisons and posts folded into their library article.
+      ...MERGED_PAGES.map(([source, destination]) => ({ source, destination, permanent: true })),
     ];
   },
 };

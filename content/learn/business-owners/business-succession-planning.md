@@ -87,6 +87,14 @@ Each path trades control, price and speed differently.
 
 Family handoffs raise their own fairness questions, which we cover in [passing a family business to your children](/learn/business-owners/passing-a-family-business-to-children). If one child works in the business and another does not, the plan needs to treat both fairly without dividing the company in a way that cripples it.
 
+## How should the transfer price be set and funded?
+
+Two details cause many disputes. The first is the price. Owners commonly use a fixed value they update every year, a formula such as a multiple of earnings, or an independent appraisal at the time of the event. A fixed value that nobody updated is a common problem. If the business grew, your family may get far less than it is worth. If it shrank, the other owner may overpay.
+
+The second is who buys. In a cross-purchase agreement, the other owners buy a departing owner's share. In an entity redemption agreement, the company buys it back. Some agreements blend both. The tax results differ, so owners usually review the choice with a CPA.
+
+Funding sources include life insurance on each owner, disability buyout insurance, company savings set aside over time, and an installment note paid over several years. Without funding, the surviving owner may not be able to pay, and your family could wait years or the deal could fall apart. Also watch for plans that cover death but ignore a long illness.
+
 ## How does succession planning connect to your estate plan?
 
 Your estate plan is the container the business ownership travels in. If your shares or membership interest are in your own name when you die, they go through probate, which is slow and public. Many owners transfer the interest into a [revocable living trust](/learn/trusts/revocable-living-trust) so a successor trustee can step in without a court, as long as the company documents allow the transfer. Always check the operating agreement or shareholder agreement first, because many restrict who can hold an interest.

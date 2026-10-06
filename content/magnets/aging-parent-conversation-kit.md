@@ -89,7 +89,7 @@ Without a document, you generally have little power over your parent's affairs. 
 | Attend appointments with their consent | Sell or move their property |
 | Offer to add yourself as a helper on a bill-pay | Change their documents |
 
-If your parent has lost the ability to sign a power of attorney, a court process may be the only route. A court-ordered guardianship or conservatorship can be time-consuming and costly, which is why planning while a parent can sign matters. See the [power of attorney vs. guardianship comparison](/compare/power-of-attorney-vs-guardianship).
+If your parent has lost the ability to sign a power of attorney, a court process may be the only route. A court-ordered guardianship or conservatorship can be time-consuming and costly, which is why planning while a parent can sign matters. See the [power of attorney vs. guardianship comparison](/learn/power-of-attorney/power-of-attorney-vs-guardianship).
 
 ## Warning signs of financial exploitation
 

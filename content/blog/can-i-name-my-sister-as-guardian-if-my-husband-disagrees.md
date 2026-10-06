@@ -47,7 +47,7 @@ They agree on Anjali for the children. They name Mark's father as trustee of the
 
 If you are stuck, these approaches often help:
 
-- **Split the roles.** One person raises the children. Another manages the money. Our guide to [leaving money to minors](/guides/leaving-money-to-minors) explains how that works.
+- **Split the roles.** One person raises the children. Another manages the money. Our guide to [leaving money to minors](/learn/guardianship/leaving-money-to-minors) explains how that works.
 - **Write down your reasons.** A short letter explaining your choice can help a court if you cannot agree.
 - **Pick a first choice and an alternate.** Your sister could be first and his choice second, or the other way around.
 - **Use a worksheet together.** Scoring each candidate on the same points can move the talk away from loyalty.

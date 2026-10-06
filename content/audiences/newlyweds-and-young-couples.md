@@ -31,7 +31,7 @@ faqs:
   - q: "We are married. Does my spouse get everything if I die with no will?"
     a: "Often a large share, but not always everything. If you have children, or your parents are living, some states split the estate. Accounts with a named beneficiary skip the will altogether. [State check: intestacy shares]. See the [spouse and no-will article](/blog/does-a-spouse-inherit-everything-if-there-is-no-will)."
   - q: "We live together and are not married. What happens if one of us dies?"
-    a: "In most states your partner inherits nothing by default, and your family does. Your partner may also be left out of hospital decisions. A will, beneficiary forms and healthcare documents fix much of this. [State check: unmarried partners]. See [planning for unmarried couples](/blog/estate-planning-for-unmarried-couples)."
+    a: "In most states your partner inherits nothing by default, and your family does. Your partner may also be left out of hospital decisions. A will, beneficiary forms and healthcare documents fix much of this. [State check: unmarried partners]. See [planning for unmarried couples](/learn/life-stages/estate-planning-for-unmarried-couples)."
   - q: "Do we need a trust before we buy a house?"
     a: "Usually not. Most young couples with a home and little else do fine with wills, beneficiary forms and a clear way of holding title. A trust can come later, as assets and children arrive. A good attorney will tell you if you do not need one yet."
   - q: "Should we just use an online form?"

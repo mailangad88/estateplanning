@@ -31,8 +31,8 @@ Real estate is also tied to the state where it sits. If you own a home in one st
 People commonly choose one of these:
 
 - **Joint ownership with right of survivorship.** Simple for couples. The home passes to the survivor. The plan still needs to cover what happens after the second death.
-- **A [revocable living trust](/guides/revocable-living-trust-explained).** You transfer the home to your trust and keep full control while alive. At your death, your trustee can pass it on without probate.
-- **A [transfer-on-death deed](/guides/transfer-on-death-and-payable-on-death).** Some states let you name a beneficiary for real estate on the deed itself. Not every state allows it.
+- **A [revocable living trust](/learn/trusts/revocable-living-trust).** You transfer the home to your trust and keep full control while alive. At your death, your trustee can pass it on without probate.
+- **A [transfer-on-death deed](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts).** Some states let you name a beneficiary for real estate on the deed itself. Not every state allows it.
 
 Some states offer special ownership forms for married couples. An attorney licensed in your state can explain them.
 

@@ -64,13 +64,13 @@ People rely on a will for:
 - Setting up a trust for children who are still minors.
 - Catching assets when every named beneficiary has died.
 
-Say you name your 10-year-old daughter as beneficiary of your life insurance. Insurers usually will not pay a minor directly, so a court may need to appoint someone to manage the money. Naming a trust for her, created in your will or a living trust, can avoid that. See [leaving money to minors](/guides/leaving-money-to-minors).
+Say you name your 10-year-old daughter as beneficiary of your life insurance. Insurers usually will not pay a minor directly, so a court may need to appoint someone to manage the money. Naming a trust for her, created in your will or a living trust, can avoid that. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors).
 
 ## Using both together
 
 Nearly everyone uses both. The key is keeping them in sync, because the form wins when they disagree.
 
-Say your will leaves everything equally to your three children. Your IRA still names only your oldest child from years ago. That child likely gets the whole IRA. Reviewing forms when you update your will prevents that mismatch. See [updating your estate plan](/guides/updating-your-estate-plan).
+Say your will leaves everything equally to your three children. Your IRA still names only your oldest child from years ago. That child likely gets the whole IRA. Reviewing forms when you update your will prevents that mismatch. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan).
 
 ## Questions to ask an attorney
 

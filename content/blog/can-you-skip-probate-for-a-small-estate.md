@@ -40,7 +40,7 @@ Assets that usually do **not** count include:
 - Payable-on-death and transfer-on-death accounts.
 - Property held in a trust.
 
-So a person can leave a lot of total wealth and still have a small probate estate. Our [probate vs non-probate assets comparison](/compare/probate-vs-non-probate-assets) explains how to sort them.
+So a person can leave a lot of total wealth and still have a small probate estate. Our [probate vs non-probate assets comparison](/learn/probate/probate-vs-non-probate-assets) explains how to sort them.
 
 ## Common limits on the shortcut
 

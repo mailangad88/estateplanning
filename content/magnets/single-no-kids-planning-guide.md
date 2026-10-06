@@ -14,11 +14,11 @@ pages: 7
 tag: single_no_kids_guide
 sequence: B
 related:
-  - guides/what-is-estate-planning
-  - guides/what-happens-if-you-die-without-a-will
-  - guides/choosing-an-executor
+  - learn/basics/what-is-estate-planning
+  - learn/wills/dying-without-a-will
+  - learn/wills/choosing-an-executor
   - guides/powers-of-attorney
-  - guides/digital-assets-estate-planning
+  - learn/digital-assets/digital-assets-in-your-estate-plan
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -56,7 +56,7 @@ Test each candidate with these questions:
 | Executor | | | |
 | Trustee (if you use a trust) | | | |
 
-Name a backup for every role. A single person is a single point of failure. You can use different people for different jobs, since the skills do not always overlap. See [choosing an executor](/guides/choosing-an-executor).
+Name a backup for every role. A single person is a single point of failure. You can use different people for different jobs, since the skills do not always overlap. See [choosing an executor](/learn/wills/choosing-an-executor).
 
 - **My financial agent will be:** ______________________
 - **My health care agent will be:** ______________________
@@ -78,7 +78,7 @@ Use this table to sketch your thinking.
 Points to keep in mind:
 
 - Percentages adjust as your assets change, while fixed dollar amounts may leave later gifts underfunded. Many people use percentages for the bulk and fixed gifts for specific people.
-- A gift to a young niece or nephew generally should not go straight to them. Ask about a trust or custodian arrangement (see [leaving money to minors](/guides/leaving-money-to-minors)).
+- A gift to a young niece or nephew generally should not go straight to them. Ask about a trust or custodian arrangement (see [leaving money to minors](/learn/guardianship/leaving-money-to-minors)).
 - Friends and charities can be named in a will, on beneficiary forms and on transfer-on-death or payable-on-death accounts.
 - If you name a charity, use its exact legal name and tax ID number to avoid confusion.
 - If anyone you name receives government benefits, an inheritance may affect eligibility. Ask an attorney about a special needs trust.
@@ -98,7 +98,7 @@ Use the [beneficiary designation guide](/guides/beneficiary-designations) for th
 
 If you die without a valid will, your state's intestacy law decides who inherits. For a single person without children, the order often runs to parents first, then siblings and their descendants, then more distant relatives. If no relatives are found, property may go to the state. The order and the shares vary widely.
 
-That default may not match what you want. A close friend, a partner you never married or a charity would typically get nothing. A sibling you rarely speak with might. The guide on [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will) walks through this in more depth.
+That default may not match what you want. A close friend, a partner you never married or a charity would typically get nothing. A sibling you rarely speak with might. The guide on [what happens if you die without a will](/learn/wills/dying-without-a-will) walks through this in more depth.
 
 Ask yourself:
 
@@ -129,7 +129,7 @@ If you live alone, no one else may know how to get into your phone, email or clo
 - [ ] Decide what you want deleted, preserved or shared
 - [ ] Keep a short list of recurring subscriptions so bills can be cancelled
 
-See [digital assets and estate planning](/guides/digital-assets-estate-planning).
+See [digital assets and estate planning](/learn/digital-assets/digital-assets-in-your-estate-plan).
 
 ## A starter plan
 

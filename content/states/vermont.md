@@ -2,12 +2,12 @@
 state: "Vermont"
 abbr: "VT"
 title: "Estate planning in Vermont: wills, trusts and probate"
-description: "Vermont wills need three witnesses, probate runs through the Superior Court's Probate Division, and a state estate tax applies above $5 million. A local guide."
+description: "Vermont wills need two witnesses, probate runs through the Superior Court's Probate Division, and a state estate tax applies above $5 million. A local guide."
 updated: "2026-10-06"
 answer: >-
-  Vermont wills require three witnesses, more than most states, and probate is handled by the Probate Division of the Superior Court. Vermont has its own estate tax that applies above $5 million, with a flat rate, and no inheritance tax. Families with a farm, a camp or second home should plan carefully.
+  Vermont wills require two witnesses, and probate is handled by the Probate Division of the Superior Court. Vermont has its own estate tax that applies above $5 million, with a flat rate, and no inheritance tax. Families with a farm, a camp or second home should plan carefully.
 facts:
-  willSigning: "Signed by the testator and attested by three or more credible witnesses; notarization is not required. Confirm current requirements with an attorney."
+  willSigning: "Signed by the testator, or in the testator's name by another person at their direction, in the presence of two or more credible witnesses who sign in the testator's presence; notarization is not required (14 V.S.A. 5). Vermont required three witnesses until 2006."
   selfProving: "Yes. A self-proving affidavit signed before a notary lets the court accept the will without witness testimony."
   holographicWills: "Handwritten, unwitnessed wills are not recognized. Confirm with an attorney."
   maritalProperty: "Common law (separate) property; Vermont does not use community property."
@@ -21,7 +21,7 @@ facts:
   intestacy: "Confirm with an attorney; the spouse's share depends on whether all children are the spouse's."
 faqs:
   - q: "How many witnesses does a Vermont will need?"
-    a: "Vermont requires three or more credible witnesses, which is one more than most states. Because the rule is strict, a will with only two witnesses can be rejected. Confirm the current requirements with a Vermont attorney."
+    a: "Two or more credible witnesses, under 14 V.S.A. 5. Vermont required three until a 2006 change, so an older Vermont will may have three witnesses. That is still valid. Confirm the current requirements with a Vermont attorney."
   - q: "Does Vermont have an estate tax?"
     a: "Yes. Vermont taxes estates above $5 million, a figure that was raised in 2025. A flat rate applies to the amount above the threshold. Most families fall below it, but farms and land holdings can push the total up."
   - q: "Where is probate filed in Vermont?"
@@ -29,17 +29,17 @@ faqs:
   - q: "Does Vermont have an inheritance tax?"
     a: "No. Vermont has no inheritance tax. Its only death tax is the estate tax, which applies only to larger estates."
   - q: "Are handwritten wills valid in Vermont?"
-    a: "Generally no. Vermont expects a will to be witnessed, so a handwritten note without three witnesses is unlikely to be accepted. An attorney can advise on any exception."
+    a: "Generally no. Vermont expects a will to be witnessed, so a handwritten note without two witnesses is unlikely to be accepted. An attorney can advise on any exception."
 related: ["probate", "wills/how-to-make-a-valid-will", "estate-tax/state-estate-and-inheritance-taxes", "property-and-assets/out-of-state-property", "probate/small-estate-affidavit", "business-owners/passing-a-family-business-to-children"]
 ---
 
-Vermont has two features that set it apart for estate planning: a three-witness rule for wills, and a state estate tax that kicks in far below the federal threshold. Add a strong tradition of owning land and camps across generations, and planning ahead has real value.
+Vermont stands apart for estate planning mainly because of its state estate tax, which kicks in far below the federal threshold. Add a strong tradition of owning land and camps across generations, and planning ahead has real value.
 
 For national guidance, see our [wills guide](/learn/wills) and [estate tax guide](/learn/estate-tax).
 
 ## Wills in Vermont
 
-A Vermont will must be in writing, signed by you, and witnessed by three or more credible people. The extra witness is the most important local detail: a will signed with two witnesses, which is enough in most states, may fail. If you moved to Vermont with a will from elsewhere, have an attorney review it. See [how to make a valid will](/learn/wills/how-to-make-a-valid-will).
+A Vermont will must be in writing, signed by you, and witnessed by two or more credible people (14 V.S.A. 5). Vermont required three witnesses until 2006, which is why older Vermont wills often have three. If you moved to Vermont with a will from elsewhere, have an attorney review it. See [how to make a valid will](/learn/wills/how-to-make-a-valid-will).
 
 Notarization is not required. A [self-proving affidavit](/glossary/self-proving-affidavit) signed before a notary can speed probate. Vermont does not accept a handwritten will without witnesses, so [handwritten and DIY wills](/learn/wills/handwritten-and-diy-wills) are risky here.
 

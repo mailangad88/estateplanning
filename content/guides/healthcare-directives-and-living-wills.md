@@ -101,7 +101,7 @@ An attorney licensed in your state can confirm the right form and signing steps.
 - **No one can find it.** A directive locked in a safe deposit box helps no one in an emergency. Give copies to your agent, backup and main doctor.
 - **Never talking to the agent.** An agent who does not know your wishes may freeze or guess.
 - **Vague wording.** "No heroic measures" means different things to different people. Specific choices work better.
-- **Not updating it.** A divorce, a new diagnosis or a death in the family are good times to review it. See [updating your estate plan](/guides/updating-your-estate-plan).
+- **Not updating it.** A divorce, a new diagnosis or a death in the family are good times to review it. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan).
 - **Confusing it with a POLST.** If you are seriously ill, ask your doctor whether a POLST or similar medical order fits too.
 
 ## Where to keep copies

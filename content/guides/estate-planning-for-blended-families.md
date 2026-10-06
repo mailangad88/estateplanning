@@ -30,7 +30,7 @@ In a first marriage, that usually works. In a blended family, it can fail. After
 
 ### Default state rules
 
-If someone dies without a will, state law decides who inherits. In many states, a surviving spouse gets a large share, and the rest goes to the person's children. Stepchildren usually get nothing unless they were adopted. See [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will).
+If someone dies without a will, state law decides who inherits. In many states, a surviving spouse gets a large share, and the rest goes to the person's children. Stepchildren usually get nothing unless they were adopted. See [what happens if you die without a will](/learn/wills/dying-without-a-will).
 
 ## The main planning tools
 
@@ -44,7 +44,7 @@ The trust can let the spouse:
 - Receive income from trust investments
 - Get principal for health, support and similar needs
 
-The spouse cannot change who gets the rest. That protects the children. This setup is often built into a [revocable living trust](/guides/revocable-living-trust-explained) that becomes irrevocable at death.
+The spouse cannot change who gets the rest. That protects the children. This setup is often built into a [revocable living trust](/learn/trusts/revocable-living-trust) that becomes irrevocable at death.
 
 ### Beneficiary designations
 
@@ -70,7 +70,7 @@ Options families commonly consider:
 - A professional or corporate trustee
 - Co-trustees, one from each side of the family
 
-For more on this choice, see [choosing a trustee](/guides/choosing-a-trustee).
+For more on this choice, see [choosing a trustee](/learn/trusts/choosing-a-trustee).
 
 ## A worked example
 
@@ -103,7 +103,7 @@ It also helps to tell your trustee and executor where your documents are kept. T
 - **Assuming stepchildren are included.** They usually are not unless named.
 - **Leaving everything to children outright.** This can leave a surviving spouse without a home.
 - **Naming rival family members as co-trustees** without a tie-breaker.
-- **Never updating after remarriage.** See [updating your estate plan](/guides/updating-your-estate-plan).
+- **Never updating after remarriage.** See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan).
 
 ## Questions to ask an attorney
 
