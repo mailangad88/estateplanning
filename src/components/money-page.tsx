@@ -7,6 +7,8 @@ import { CallbackForm, EmailCapture } from "@/components/capture";
 import { Breadcrumbs, CardGrid, Cta, ReviewNote } from "@/components/ui";
 import { firm } from "@/config/firm";
 import type { MoneyPageData, Block } from "@/content/money-pages";
+import { serviceBoardFor } from "@/config/life-game";
+import { LifeGame } from "@/components/life-game";
 import { abs, breadcrumbLd, howToLd, JsonLd, SITE_URL } from "@/lib/seo";
 
 const TOKEN = /\[([^\]]+)\]\((\/[^)\s]*)\)|\*\*([^*]+)\*\*|(\[(?:Attorney|Flat fee|Firm|Office|Bar number)[^\]]*\])/g;
@@ -122,6 +124,7 @@ export function MoneyPage({ page }: { page: MoneyPageData }) {
             ...(page.serviceType ? { about: { "@type": "Service", serviceType: page.serviceType, provider: { "@type": "LegalService", name: firm.firmLegalName, url: SITE_URL } } } : {}),
           },
   ];
+  const board = serviceBoardFor(page.path);
   if (page.steps) ld.push(howToLd({ name: page.h1, description: page.description, steps: page.steps }));
 
   const primary = callFirst ? (
@@ -150,6 +153,14 @@ export function MoneyPage({ page }: { page: MoneyPageData }) {
         <strong>In short</strong>
         <Rich text={page.answer} />
       </div>
+      {board && (
+        <section className="lgame-section" aria-labelledby="what-if-game">
+          <p className="kicker">The what-if game</p>
+          <h2 id="what-if-game">What happens if this waits?</h2>
+          <p>Move along the board. At each what-if, plan for it or put it off, and see what usually happens.</p>
+          <LifeGame squares={board} bookHref="/plan-finder" phone={firm.phone} senior={callFirst} id="game-service" />
+        </section>
+      )}
       {page.jump && (
         <p className="no-print">{page.jump.map((j, i) => <span key={j.id}>{i > 0 && " · "}<a href={`#${j.id}`}>{j.label}</a></span>)}</p>
       )}

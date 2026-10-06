@@ -12,6 +12,8 @@ import { EmailCapture } from "@/components/capture";
 import { MAGNET_FORMATS, getMagnets } from "@/lib/magnets";
 import { getQuizzes } from "@/lib/quizzes";
 import { HeroFamilyHome, SpotVideoCall } from "@/components/visuals";
+import { lifeBoard } from "@/config/life-game";
+import { LifeGame } from "@/components/life-game";
 import { Band, FeatureCard, IconBadge, LifeCycle, SectionHead, Steps, TrustRow } from "@/components/landing";
 
 const FEATURED_GUIDES = ["what-is-estate-planning", "revocable-living-trust-explained", "guardianship-for-minor-children", "powers-of-attorney", "how-probate-works", "what-happens-if-you-die-without-a-will"];
@@ -95,7 +97,17 @@ export default function Home() {
         </p>
       </Band>
 
-      <Band tone="sand" label="What a plan includes">
+      <Band tone="sand" label="The life game" className="lgame-band">
+        <SectionHead
+          kicker="The life game"
+          title="What could go wrong if your plan waits?"
+          lead="Seven stages of life, one what-if at each. Plan for it or put it off, and watch your family's plan fill in."
+          center
+        />
+        <LifeGame squares={lifeBoard()} bookHref="/plan-finder" phone={firm.phone} next={{ label: "Find the right plan in two minutes", href: "/plan-finder" }} id="game-life" />
+      </Band>
+
+      <Band label="What a plan includes">
         <SectionHead kicker="What you get" title="Four documents do most of the work" center />
         <CardGrid
           media="art"
@@ -111,7 +123,7 @@ export default function Home() {
         </p>
       </Band>
 
-      <Band label="How it works">
+      <Band tone="sand" label="How it works">
         <div className="split">
           <div>
             <SectionHead kicker="How it works" title="From first question to signed plan, in four steps" />
