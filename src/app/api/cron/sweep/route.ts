@@ -9,7 +9,8 @@ import { cronAuthorized } from "@/server/http";
 import { retryFailedDeliveries } from "@/server/leadDelivery";
 import { notifierFromEnv } from "@/server/notify";
 import { emailTransportFromEnv, smsTransportFromEnv } from "@/server/notify/transports";
-import { NO_APPROVED_TEMPLATES, runNurtureSends } from "@/server/nurture/sender";
+import { runNurtureSends } from "@/server/nurture/sender";
+import { ApprovedTemplateSource } from "@/server/nurture/templates";
 import { getDb } from "@/server/runtime";
 import { deliverSlaAlerts } from "@/server/services/intakeQueue";
 import { sendDueReminders } from "@/server/services/engagement";
@@ -49,7 +50,7 @@ export async function POST(request: Request) {
   await job("reminders", () => sendDueReminders(db, esignProviderFromEnv(), now));
   await job("automations", () => runAutomations(db, new CrmSync(crmAdapterFromEnv()), now));
   await job("nurture", () =>
-    runNurtureSends(db, { templates: NO_APPROVED_TEMPLATES, email: emailTransportFromEnv(), sms: smsTransportFromEnv(), limit: 200 }, now),
+    runNurtureSends(db, { templates: new ApprovedTemplateSource(), email: emailTransportFromEnv(), sms: smsTransportFromEnv(), limit: 200 }, now),
   );
   await job("slaAlerts", () => deliverSlaAlerts(db, notifierFromEnv(), now));
   await job("crmRetries", () => retryFailedDeliveries(db, { now }));

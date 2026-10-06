@@ -22,29 +22,9 @@ import { evaluateSends, markSent, type DueSend } from "@/server/nurture/schedule
 import { getSequence } from "@/server/nurture/sequences";
 import type { Lawyer, Lead, Person } from "@/server/types";
 
-export interface TemplateVars {
-  firstName: string;
-  firmName: string;
-  attorneyName?: string;
-  bookingUrl?: string;
-  unsubscribeUrl: string;
-  resourceUrl?: string;
-  reviewUrl?: string;
-  portalUrl?: string;
-}
+import type { TemplateSource, TemplateVars } from "@/server/nurture/templates";
 
-export interface RenderedMessage {
-  subject?: string;
-  text: string;
-  html?: string;
-  templateKey: string;
-  templateVersion: string;
-}
-
-/** Returns null unless the template's current version is attorney-approved. */
-export interface TemplateSource {
-  render(db: Db, templateKey: string, channel: "email" | "sms", vars: TemplateVars): Promise<RenderedMessage | null>;
-}
+export type { RenderedMessage, TemplateSource, TemplateVars } from "@/server/nurture/templates";
 
 /** Nothing approved: every message step waits. The safe default until templates are approved. */
 export const NO_APPROVED_TEMPLATES: TemplateSource = { render: async () => null };
