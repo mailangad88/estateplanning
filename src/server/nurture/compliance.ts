@@ -219,12 +219,12 @@ export function normalizeAddress(channel: Channel | "all", address: string): str
   return digits.length === 11 && digits.startsWith("1") ? digits.slice(1) : digits;
 }
 
-function putSuppression(db: Db, channel: Channel | "all", address: string, reason: string, at: Date): Suppression {
+async function putSuppression(db: Db, channel: Channel | "all", address: string, reason: string, at: Date): Promise<Suppression> {
   const addr = normalizeAddress(channel, address);
   const id = `${channel}:${addr}`;
-  const existing = db.suppressions.get(id);
+  const existing = await db.suppressions.get(id);
   if (existing) return existing;
-  return db.suppressions.insert({ id, channel, address: addr, reason, at: at.toISOString() });
+  return await db.suppressions.insert({ id, channel, address: addr, reason, at: at.toISOString() });
 }
 
 /**
@@ -233,25 +233,25 @@ function putSuppression(db: Db, channel: Channel | "all", address: string, reaso
  * writes an "all" suppression for the address and for the same person's other
  * address. Returns null when the text is not an opt-out.
  */
-export function applyOptOut(
+export async function applyOptOut(
   db: Db,
   input: { channel: Channel; address: string; text: string; at: Date },
-): { scope: Channel | "all"; suppressions: Suppression[] } | null {
+): Promise<{ scope: Channel | "all"; suppressions: Suppression[] } | null> {
   const c = classifyOptOut(input.text);
   if (!c.optOut) return null;
   const scope: Channel | "all" =
     c.scope === "all" ? "all" : c.scope === "sms" ? "sms" : c.scope === "email" ? "email" : c.scope === "call" ? "call_task" : input.channel;
   const addr = normalizeAddress(scope, input.address);
-  const written = [putSuppression(db, scope, addr, `opt_out:${input.text.trim().slice(0, 40)}`, input.at)];
+  const written = [await putSuppression(db, scope, addr, `opt_out:${input.text.trim().slice(0, 40)}`, input.at)];
   if (scope === "all") {
-    const person = db.persons.list().find((p) => normalizeAddress("sms", p.phone) === addr || normalizeAddress("email", p.email) === addr);
+    const person = (await db.persons.list()).find((p) => normalizeAddress("sms", p.phone) === addr || normalizeAddress("email", p.email) === addr);
     if (person) {
       for (const other of [person.phone, person.email]) {
-        if (normalizeAddress("all", other) !== addr) written.push(putSuppression(db, "all", other, "opt_out:do_not_contact", input.at));
+        if (normalizeAddress("all", other) !== addr) written.push(await putSuppression(db, "all", other, "opt_out:do_not_contact", input.at));
       }
     }
   }
-  audit(db, "system", {
+  await audit(db, "system", {
     action: "nurture.opt_out",
     resourceType: "suppression",
     resourceId: written[0].id,
@@ -262,11 +262,10 @@ export function applyOptOut(
 }
 
 /** True when sending on `channel` to this person is suppressed (channel-specific or "all"). */
-export function isSuppressed(db: Db, channel: Channel, person: { phone: string; email: string }): boolean {
+export async function isSuppressed(db: Db, channel: Channel, person: { phone: string; email: string }): Promise<boolean> {
   const addrs = channel === "email" ? [person.email] : [person.phone];
   const all = [person.phone, person.email];
-  return (
-    addrs.some((a) => db.suppressions.get(`${channel}:${normalizeAddress(channel, a)}`)) ||
-    all.some((a) => db.suppressions.get(`all:${normalizeAddress("all", a)}`))
-  );
+  const keys = [...addrs.map((a) => `${channel}:${normalizeAddress(channel, a)}`), ...all.map((a) => `all:${normalizeAddress("all", a)}`)];
+  for (const k of keys) if (await db.suppressions.get(k)) return true;
+  return false;
 }

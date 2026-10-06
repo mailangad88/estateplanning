@@ -17,7 +17,7 @@ const after = (s: number) => new Date(T0.getTime() + s * 1000);
 
 afterEach(() => vi.unstubAllEnvs());
 
-describe("sessions", () => {
+describe("sessions", async () => {
   it("roundtrips", () => {
     const p = readSession(issueSession("u1", true, T0), T0);
     expect(p).toMatchObject({ uid: "u1", mfa: true });
@@ -63,14 +63,14 @@ describe("sessions", () => {
     expect(touchSession(t, after(SESSION_IDLE_S + 60))).toBeNull();
   });
 
-  it("actorFromSession returns an actor, null for inactive or unknown users", () => {
+  it("actorFromSession returns an actor, null for inactive or unknown users", async () => {
     const db = createMemoryDb();
-    db.users.insert({ id: "u1", email: "a@x.test", name: "A", role: "attorney", firmId: "f", lawyerId: "l", active: true });
-    db.users.insert({ id: "u2", email: "b@x.test", name: "B", role: "intake", active: false });
-    expect(actorFromSession(db, issueSession("u1", true, T0), T0)).toMatchObject({ userId: "u1", role: "attorney", lawyerId: "l", mfa: true });
-    expect(actorFromSession(db, issueSession("u2", true, T0), T0)).toBeNull();
-    expect(actorFromSession(db, issueSession("nobody", true, T0), T0)).toBeNull();
-    expect(actorFromSession(db, undefined, T0)).toBeNull();
+    await db.users.insert({ id: "u1", email: "a@x.test", name: "A", role: "attorney", firmId: "f", lawyerId: "l", active: true });
+    await db.users.insert({ id: "u2", email: "b@x.test", name: "B", role: "intake", active: false });
+    expect(await actorFromSession(db, issueSession("u1", true, T0), T0)).toMatchObject({ userId: "u1", role: "attorney", lawyerId: "l", mfa: true });
+    expect(await actorFromSession(db, issueSession("u2", true, T0), T0)).toBeNull();
+    expect(await actorFromSession(db, issueSession("nobody", true, T0), T0)).toBeNull();
+    expect(await actorFromSession(db, undefined, T0)).toBeNull();
   });
 });
 

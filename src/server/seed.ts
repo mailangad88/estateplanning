@@ -83,39 +83,39 @@ function demoRecord(id: string, first: string, last: string, answers: LeadRecord
   };
 }
 
-export function seedDemo(db: Db, now = new Date()): void {
-  db.firms.insert({ id: DEMO_FIRM_ID, name: firmConfig.firmLegalName, structure: firmConfig.structure });
-  for (const l of lawyers) db.lawyers.insert(l);
-  for (const u of DEMO_USERS) db.users.insert(u);
-  seedFeeRules(db, feeRules, firmConfig.structure);
+export async function seedDemo(db: Db, now = new Date()): Promise<void> {
+  await db.firms.insert({ id: DEMO_FIRM_ID, name: firmConfig.firmLegalName, structure: firmConfig.structure });
+  for (const l of lawyers) await db.lawyers.insert(l);
+  for (const u of DEMO_USERS) await db.users.insert(u);
+  await seedFeeRules(db, feeRules, firmConfig.structure);
 
   const intake = actorFor(DEMO_USERS[1]);
   const hour = 3_600_000;
 
-  const a = ingestLead(
+  const a = await ingestLead(
     db,
     demoRecord("lead-0001", "Taylor", "Rivera", { matterType: "new_plan", maritalStatus: "married", children: "minors", ownsHome: "yes", assetRange: "250k_1m", urgency: "this_month", specialNeeds: "no", blendedFamily: "no", ownsBusiness: "no", outOfStateProperty: "no", existingDocuments: "none" }, "We just had our second child and have nothing in place.", new Date(now.getTime() - 5 * hour)),
     new Date(now.getTime() - 5 * hour),
   );
-  updateIntake(db, intake, a.id, {
+  await updateIntake(db, intake, a.id, {
     summary: "Married couple, two children under 5, own a home in Austin.\nNo existing documents.\nWant guardians named and a trust for the kids.\nBoth work full time; prefer evening video consult.\nNo red flags.",
     conflictParties: [{ name: "Jamie Rivera", relationship: "spouse" }],
     householdMembers: [{ name: "Jamie Rivera", relationship: "spouse" }, { name: "Child 1", relationship: "child", age: 4 }, { name: "Child 2", relationship: "child", age: 0 }],
   }, now);
-  setStage(db, intake, a.id, "qualified", now);
-  recordConflictCheck(db, intake, a.id, "clear", now);
+  await setStage(db, intake, a.id, "qualified", now);
+  await recordConflictCheck(db, intake, a.id, "clear", now);
 
-  const b = ingestLead(
+  const b = await ingestLead(
     db,
     demoRecord("lead-0002", "Morgan", "Lee", { matterType: "after_death", maritalStatus: "widowed", children: "adults", ownsHome: "yes", urgency: "recent_death" }, "My father passed last week and I am the executor.", new Date(now.getTime() - 2 * hour)),
     new Date(now.getTime() - 2 * hour),
   );
-  updateIntake(db, intake, b.id, {
+  await updateIntake(db, intake, b.id, {
     summary: "Adult child, named executor in father's will.\nFather died last week in Travis County.\nHouse and a brokerage account; sibling may contest.\nNeeds to know first steps and deadlines.\nFlag: possible family dispute.",
     conflictParties: [{ name: "Robert Lee", relationship: "deceased" }, { name: "Chris Lee", relationship: "heir" }],
     redFlags: [...b.intake.redFlags, "Possible dispute between siblings"],
   }, now);
-  setStage(db, intake, b.id, "qualified", now);
-  recordConflictCheck(db, intake, b.id, "clear", now);
-  offerNext(db, b.id, now);
+  await setStage(db, intake, b.id, "qualified", now);
+  await recordConflictCheck(db, intake, b.id, "clear", now);
+  await offerNext(db, b.id, now);
 }

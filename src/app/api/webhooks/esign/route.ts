@@ -8,7 +8,7 @@ export async function POST(request: Request) {
   const raw = await request.text();
   const headers = Object.fromEntries(request.headers.entries());
   try {
-    const result = await handleEsignWebhook(getDb(), esignProviderFromEnv(), raw, headers, new Date());
+    const result = await handleEsignWebhook(await getDb(), esignProviderFromEnv(), raw, headers, new Date());
     return NextResponse.json(result);
   } catch (err) {
     console.warn("esign webhook rejected", { error: err instanceof Error ? err.message : String(err) });

@@ -121,6 +121,41 @@ function nextStep(lead: Lead, access: LeadAccess): string {
   }
 }
 
+/**
+ * Under Postgres row-level security a lawyer holding only an open offer cannot read
+ * the lead row at all; the store exposes the offer card through a narrow view
+ * instead. This turns that card into a minimal lead carrying nothing confidential,
+ * so the same access logic and conflict-card rendering apply to both stores.
+ */
+type OfferCardRow = Pick<Lead, "id" | "offerSummary" | "conflictCard" | "matterType" | "state" | "county" | "urgent" | "score">;
+
+function leadFromOfferCard(card: OfferCardRow): Lead {
+  return {
+    ...card,
+    personId: "",
+    createdAt: "",
+    stage: "offered",
+    stageHistory: [],
+    segments: [],
+    source: {},
+    consent: { version: "", smsConsent: false, smsConsentText: null, acknowledgedNoRelationship: true, pageUrl: "", ip: null, userAgent: null, capturedAt: "" },
+    intake: { summary: "", redFlags: [], deadlines: [], household: { members: [] }, assets: {}, answers: {} },
+  };
+}
+
+async function readLead(db: Db, leadId: string): Promise<Lead | undefined> {
+  const lead = await db.leads.get(leadId);
+  if (lead) return lead;
+  const pg = db as Db & { leadOfferCard?: (id: string) => Promise<OfferCardRow | undefined> };
+  const card = pg.leadOfferCard ? await pg.leadOfferCard(leadId) : undefined;
+  return card ? leadFromOfferCard(card) : undefined;
+}
+
+async function readOfferCards(db: Db): Promise<Lead[]> {
+  const pg = db as Db & { leadOfferCards?: () => Promise<OfferCardRow[]> };
+  return pg.leadOfferCards ? (await pg.leadOfferCards()).map(leadFromOfferCard) : [];
+}
+
 export function threadComments(comments: Comment[]): CommentNode[] {
   const nodes = new Map<string, CommentNode>(comments.map((c) => [c.id, { ...c, replies: [] }]));
   const roots: CommentNode[] = [];
@@ -132,17 +167,17 @@ export function threadComments(comments: Comment[]): CommentNode[] {
   return roots;
 }
 
-export function buildCaseView(db: Db, actor: Actor, leadId: string, now = new Date()): CaseView {
+export async function buildCaseView(db: Db, actor: Actor, leadId: string, now = new Date()): Promise<CaseView> {
   requireMfa(actor);
-  const lead = db.leads.get(leadId);
+  const lead = await readLead(db, leadId);
   if (!lead) throw new Error("Lead not found");
-  const assignments = db.assignments.list((a) => a.leadId === leadId);
+  const assignments = await db.assignments.list(undefined, { leadId });
   const access = leadAccess(actor, lead, assignments, now);
   assertCan(access !== "none");
-  audit(db, actor, { action: "lead.view", resourceType: "lead", resourceId: leadId, leadId, detail: { access }, at: now });
+  await audit(db, actor, { action: "lead.view", resourceType: "lead", resourceId: leadId, leadId, detail: { access }, at: now });
 
-  const person = db.persons.get(lead.personId);
-  const lawyer = lead.assignedLawyerId ? db.lawyers.get(lead.assignedLawyerId) : undefined;
+  const person = await db.persons.get(lead.personId);
+  const lawyer = lead.assignedLawyerId ? await db.lawyers.get(lead.assignedLawyerId) : undefined;
   const openOffer: Assignment | undefined = assignments.find(
     (a) => a.status === "offered" && a.lawyerId === actor.lawyerId && new Date(a.expiresAt) > now,
   );
@@ -184,22 +219,21 @@ export function buildCaseView(db: Db, actor: Actor, leadId: string, now = new Da
   }
   if (can("view_documents")) {
     const visible = client ? ["client"] : ["internal", "firm", "client"];
-    s.documents = db.documents
-      .list((d) => d.leadId === leadId && visible.includes(d.visibility) && d.scanStatus !== "infected")
+    s.documents = (await db.documents.list((d) => d.leadId === leadId && visible.includes(d.visibility) && d.scanStatus !== "infected", { leadId }))
       .sort((a, b) => b.uploadedAt.localeCompare(a.uploadedAt));
   }
   if (!client) s.answers = lead.intake.answers;
-  if (!client) s.timeline = db.activities.list((a) => a.leadId === leadId).sort((a, b) => a.at.localeCompare(b.at));
+  if (!client) s.timeline = (await db.activities.list(undefined, { leadId })).sort((a, b) => a.at.localeCompare(b.at));
   const readable = readableVisibilities(actor);
-  s.comments = threadComments(db.comments.list((c) => c.leadId === leadId && readable.includes(c.visibility)));
-  s.consult = db.consults.list((c) => c.leadId === leadId).sort((a, b) => a.at.localeCompare(b.at));
+  s.comments = threadComments(await db.comments.list((c) => c.leadId === leadId && readable.includes(c.visibility)));
+  s.consult = (await db.consults.list(undefined, { leadId })).sort((a, b) => a.at.localeCompare(b.at));
   if (client) s.consult = s.consult.map(({ notes: _n, ...c }) => c);
   if (can("view_engagement")) {
-    const engagements = db.engagements.list((e) => e.leadId === leadId);
+    const engagements = await db.engagements.list(undefined, { leadId });
     // Clients see what was sent to them, not drafts the attorney has not approved.
     s.engagement = client ? engagements.filter((e) => !["draft", "approved"].includes(e.status)) : engagements;
   }
-  if (!client) s.tasks = db.tasks.list((t) => t.leadId === leadId).sort((a, b) => a.dueAt.localeCompare(b.dueAt));
+  if (!client) s.tasks = (await db.tasks.list(undefined, { leadId })).sort((a, b) => a.dueAt.localeCompare(b.dueAt));
   if (!client) {
     s.source = {
       ...lead.source,
@@ -208,16 +242,18 @@ export function buildCaseView(db: Db, actor: Actor, leadId: string, now = new Da
       priorTools: lead.priorTools?.length ? lead.priorTools.join(", ") : undefined,
     };
   }
-  if (can("view_audit")) s.audit = db.audit.list((e) => e.leadId === leadId);
+  if (can("view_audit")) s.audit = await db.audit.list(undefined, { leadId });
   return view;
 }
 
 /** Leads an actor can see, for the portal dashboard and queues. */
-export function visibleLeads(db: Db, actor: Actor, now = new Date()): { lead: Lead; access: LeadAccess }[] {
+export async function visibleLeads(db: Db, actor: Actor, now = new Date()): Promise<{ lead: Lead; access: LeadAccess }[]> {
   requireMfa(actor);
-  const assignments = db.assignments.list();
-  return db.leads
-    .list()
+  const assignments = await db.assignments.list();
+  const leads = await db.leads.list();
+  const seen = new Set(leads.map((l) => l.id));
+  const cards = (await readOfferCards(db)).filter((c) => !seen.has(c.id));
+  return [...leads, ...cards]
     .map((lead) => ({ lead, access: leadAccess(actor, lead, assignments.filter((a) => a.leadId === lead.id), now) }))
     .filter((x) => x.access !== "none");
 }
@@ -232,32 +268,37 @@ export interface Dashboard {
 }
 
 /** The attorney's home screen: offers with countdowns, today's consults, open signatures, drafting, overdue tasks. */
-export function lawyerDashboard(db: Db, actor: Actor, now = new Date()): Dashboard {
+export async function lawyerDashboard(db: Db, actor: Actor, now = new Date()): Promise<Dashboard> {
   requireMfa(actor);
   assertCan(actor.role === "attorney" && !!actor.lawyerId, "The dashboard is for attorneys");
   const lawyerId = actor.lawyerId!;
-  const mine = db.assignments.list((a) => a.lawyerId === lawyerId);
-  const offers = mine
-    .filter((a) => a.status === "offered" && new Date(a.expiresAt) > now)
-    .map((a) => {
-      const lead = db.leads.get(a.leadId)!;
-      return { assignmentId: a.id, leadId: a.leadId, offerSummary: lead.offerSummary, expiresAt: a.expiresAt, urgent: lead.urgent };
-    })
-    .sort((a, b) => Number(b.urgent) - Number(a.urgent) || a.expiresAt.localeCompare(b.expiresAt));
+  const mine = await db.assignments.list(undefined, { lawyerId });
+  const offers = (
+    await Promise.all(
+      mine
+        .filter((a) => a.status === "offered" && new Date(a.expiresAt) > now)
+        .map(async (a) => {
+          const lead = (await readLead(db, a.leadId))!;
+          return { assignmentId: a.id, leadId: a.leadId, offerSummary: lead.offerSummary, expiresAt: a.expiresAt, urgent: lead.urgent };
+        }),
+    )
+  ).sort((a, b) => Number(b.urgent) - Number(a.urgent) || a.expiresAt.localeCompare(b.expiresAt));
   const day = now.toISOString().slice(0, 10);
-  const consults = db.consults.list((c) => c.lawyerId === lawyerId);
+  const consults = await db.consults.list(undefined, { lawyerId });
   const todaysConsults = consults.filter((c) => c.at.slice(0, 10) === day && c.status === "booked");
-  const engagements = db.engagements.list((e) => e.lawyerId === lawyerId);
+  const engagements = await db.engagements.list(undefined, { lawyerId });
   const awaitingSignature = engagements.filter((e) => e.status === "sent" || e.status === "viewed");
-  const myLeads = db.leads.list((l) => l.assignedLawyerId === lawyerId);
-  const drafting = myLeads
-    .filter((l) => l.stage === "drafting")
-    .map((l) => {
-      const p = db.persons.get(l.personId);
-      return { leadId: l.id, name: `${p?.firstName ?? ""} ${p?.lastName ?? ""}`.trim() };
-    });
+  const myLeads = await db.leads.list(undefined, { assignedLawyerId: lawyerId });
+  const drafting = await Promise.all(
+    myLeads
+      .filter((l) => l.stage === "drafting")
+      .map(async (l) => {
+        const p = await db.persons.get(l.personId);
+        return { leadId: l.id, name: `${p?.firstName ?? ""} ${p?.lastName ?? ""}`.trim() };
+      }),
+  );
   const myLeadIds = new Set(myLeads.map((l) => l.id));
-  const overdueTasks = db.tasks.list((t) => myLeadIds.has(t.leadId) && !t.doneAt && new Date(t.dueAt) < now);
+  const overdueTasks = await db.tasks.list((t) => myLeadIds.has(t.leadId) && !t.doneAt && new Date(t.dueAt) < now);
 
   const accepted = mine.filter((a) => a.status === "accepted" && a.respondedAt);
   const avgAcceptMinutes = accepted.length
@@ -267,6 +308,6 @@ export function lawyerDashboard(db: Db, actor: Actor, now = new Date()): Dashboa
   const showRate = finished.length ? finished.filter((c) => c.status === "held").length / finished.length : null;
   const signed = engagements.filter((e) => ["signed", "paid", "countersigned"].includes(e.status)).length;
   const signedRate = accepted.length ? signed / accepted.length : null;
-  audit(db, actor, { action: "dashboard.view", resourceType: "lawyer", resourceId: lawyerId, at: now });
+  await audit(db, actor, { action: "dashboard.view", resourceType: "lawyer", resourceId: lawyerId, at: now });
   return { offers, todaysConsults, awaitingSignature, drafting, overdueTasks, metrics: { acceptedOffers: accepted.length, avgAcceptMinutes, showRate, signedRate } };
 }

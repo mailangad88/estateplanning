@@ -61,7 +61,7 @@ export function CommentForm({ leadId, visibilities, parentId }: { leadId: string
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        run(async () => {
+        void run(async () => {
           await post(`/api/portal/leads/${leadId}/comments`, { body, visibility, parentId });
           setBody("");
         });
@@ -95,5 +95,31 @@ export function ApproveEngagement({ engagementId, status }: { engagementId: stri
       {status === "approved" && <button className="button" disabled={busy} onClick={() => run(() => post(`/api/portal/engagements/${engagementId}/send`))}>Send for signature</button>}
       {error && <span className="error"> {error}</span>}
     </span>
+  );
+}
+
+/** Creates a single-use invite to the client portal. The link is shown for the team to send; nothing is emailed from here. */
+export function InviteClient({ leadId }: { leadId: string }) {
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [link, setLink] = useState<string | null>(null);
+  const invite = async () => {
+    setBusy(true);
+    setError(null);
+    try {
+      const json = (await post("/api/client/invite", { leadId })) as { link: string };
+      setLink(json.link);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : String(e));
+    } finally {
+      setBusy(false);
+    }
+  };
+  return (
+    <div>
+      <button className="button secondary" disabled={busy} onClick={() => void invite()}>Invite client to their portal</button>
+      {link && <p className="notice">Send this single-use link to the client: <code>{link}</code></p>}
+      {error && <p className="error">{error}</p>}
+    </div>
   );
 }

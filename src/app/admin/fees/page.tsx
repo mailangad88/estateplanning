@@ -3,7 +3,7 @@ import { firm } from "@/config/firm";
 import { feePermission } from "@/lib/fees";
 import { can } from "@/server/auth/policy";
 import { currentRuleVersions, previewInvoice, ruleHistory } from "@/server/fees/admin";
-import { currentActor, getDb } from "@/server/runtime";
+import { currentActor, getDb, scopedDb } from "@/server/runtime";
 import { DEMO_FIRM_ID } from "@/server/seed";
 import { FeeRuleEditor } from "./FeeRuleEditor";
 
@@ -30,10 +30,12 @@ export default async function FeeAdmin() {
   const actor = await currentActor();
   if (!actor) return <p>Please <Link href="/portal">sign in</Link>.</p>;
   if (!can(actor, "manage_fee_rules")) return <p>Only platform admins can manage fee rules.</p>;
-  const db = getDb();
-  const versions = currentRuleVersions(db);
+  const db = scopedDb(await getDb(), actor);
+  const versions = await currentRuleVersions(db);
   const [start, end] = monthBounds();
-  const preview = previewInvoice(db, DEMO_FIRM_ID, start, end, firm.structure);
+  const history: Record<string, Awaited<ReturnType<typeof ruleHistory>>> = {};
+  for (const v of versions) history[v.ruleId] = await ruleHistory(db, v.ruleId);
+  const preview = await previewInvoice(db, DEMO_FIRM_ID, start, end, firm.structure);
 
   return (
     <>
@@ -60,7 +62,7 @@ export default async function FeeAdmin() {
             <details>
               <summary>History</summary>
               <ul>
-                {ruleHistory(db, v.ruleId).reverse().map((h) => (
+                {history[v.ruleId].reverse().map((h) => (
                   <li key={h.id}>v{h.version} · {h.editedAt.slice(0, 16).replace("T", " ")} · {h.editedBy} · {h.reason}</li>
                 ))}
               </ul>
