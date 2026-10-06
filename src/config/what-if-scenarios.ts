@@ -90,6 +90,7 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
   },
   {
     id: "hospital-wont-talk",
+    learn: "/learn/healthcare-directives/hipaa-authorization",
     title: "What if you are in an accident and the hospital won't talk to your partner?",
     delay: "We're young and healthy. Nothing is going to happen.",
     without:
@@ -166,6 +167,7 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
   },
   {
     id: "beneficiary-form-overrides-will",
+    learn: "/learn/wills/what-a-will-cannot-do",
     title: "What if your beneficiary forms say something different from your will?",
     delay: "My will covers everything.",
     without:
@@ -178,6 +180,7 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
   },
   {
     id: "probate-delay",
+    learn: "/learn/probate/how-long-does-probate-take",
     title: "What if your family has to go through probate?",
     delay: "Probate is for rich people.",
     without:
@@ -202,6 +205,7 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
   },
   {
     id: "property-in-two-states",
+    learn: "/learn/probate/ancillary-probate",
     title: "What if you own a home in two states?",
     delay: "Our will is from the old state. It still works.",
     without:
@@ -289,6 +293,7 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
   },
   {
     id: "long-term-care-costs",
+    learn: "/learn/elder-care/medicaid-planning",
     title: "What if you need years of nursing home care?",
     delay: "We'll worry about long-term care if it happens.",
     without:
@@ -327,6 +332,7 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
   },
   {
     id: "digital-accounts-locked",
+    learn: "/learn/digital-assets/digital-assets-in-your-estate-plan",
     title: "What if no one can get into your online accounts?",
     delay: "My passwords are in my head.",
     without:
@@ -365,6 +371,7 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
   },
   {
     id: "business-has-no-plan",
+    learn: "/learn/business-owners/business-succession-planning",
     title: "What if you can't run your business tomorrow?",
     delay: "My partner and I will figure it out.",
     without:
@@ -389,6 +396,7 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
   },
   {
     id: "joint-account-surprise",
+    learn: "/learn/property-and-assets/joint-tenancy-risks",
     title: "What if adding a child to your account backfires?",
     delay: "I'll just put my daughter on the account. Simpler.",
     without:
@@ -401,6 +409,7 @@ export const WHAT_IF_SCENARIOS: WhatIfScenario[] = [
   },
   {
     id: "pets-left-behind",
+    learn: "/learn/property-and-assets/pet-trusts",
     title: "What if no one is named to look after your pets?",
     delay: "Someone in the family will take the dog.",
     without:
