@@ -127,6 +127,12 @@ export function getMagnet(slug: string): Magnet | undefined {
  * Resources to promote on a page, best match first. Blog posts inherit the resources of
  * their pillar guide, so every article in a cluster offers the same lead magnets.
  */
+/** The pillar guide of a blog post path, if any. */
+export function pillarOf(pagePath: string): string | undefined {
+  const key = pagePath.replace(/^\//, "");
+  return key.startsWith("blog/") ? getPosts().find((p) => `blog/${p.slug}` === key)?.pillar : undefined;
+}
+
 export function magnetsFor(pagePath: string, limit = 3): Magnet[] {
   const key = pagePath.replace(/^\//, "").replace(/\/$/, "");
   const keys = [key];

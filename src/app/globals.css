@@ -259,3 +259,4 @@ label.field input[type="range"] { padding: 0; border: 0; }
 .quiz-option:hover, .quiz-option.is-picked { border-color: var(--accent); }
 .quiz .big { font-size: 2.4rem; font-weight: 700; color: var(--accent); }
 .quiz-review li { margin-bottom: 16px; }
+.quiz-teaser { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; }

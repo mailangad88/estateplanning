@@ -67,3 +67,9 @@ export function maxPoints(q: Pick<Quiz, "questions">): number {
 export function bandFor(q: Pick<Quiz, "bands">, total: number): QuizBand | undefined {
   return q.bands.find((b) => total >= b.min && total <= b.max);
 }
+
+/** Quizzes to suggest on an article page; blog posts inherit their pillar guide's quizzes. */
+export function quizzesFor(pagePath: string, pillar?: string): Quiz[] {
+  const keys = [pagePath.replace(/^\//, ""), ...(pillar ? [`guides/${pillar}`] : [])];
+  return getQuizzes().filter((q) => q.related.some((r) => keys.includes(r.replace(/^\//, ""))));
+}

@@ -4,7 +4,8 @@ import { articleLd, breadcrumbLd, JsonLd } from "@/lib/seo";
 import { Breadcrumbs, Cta, FaqList, Prose, ReviewNote, Toc } from "@/components/ui";
 import { EmailCapture } from "@/components/capture";
 import MagnetOptIn from "@/components/MagnetOptIn";
-import { MAGNET_FORMATS, magnetsFor } from "@/lib/magnets";
+import { MAGNET_FORMATS, magnetsFor, pillarOf } from "@/lib/magnets";
+import { quizzesFor } from "@/lib/quizzes";
 
 export interface RelatedLink {
   href: string;
@@ -31,6 +32,7 @@ export function ArticlePage(props: {
   // Free resources written for this page (or this post's pillar guide) replace the generic email offer.
   const offers = magnetsFor(props.path);
   const lead = offers[0];
+  const quiz = quizzesFor(props.path, pillarOf(props.path))[0];
   const crumbs = [
     { name: "Home", path: "/" },
     props.section,
@@ -51,6 +53,11 @@ export function ArticlePage(props: {
       )}
       {props.before}
       <Toc headings={props.headings} />
+      {quiz && (
+        <p className="quiz-teaser no-print">
+          <span className="tag">2-minute quiz</span> <Link href={`/quizzes/${quiz.slug}`}>{quiz.title}</Link>
+        </p>
+      )}
       <Prose html={props.html} />
       {props.after}
       <FaqList faqs={props.faqs ?? []} />
