@@ -61,6 +61,12 @@ Our [living will vs healthcare power of attorney comparison](/compare/living-wil
 
 These documents matter most for people the default list does not serve well. See [estate planning for unmarried couples](/blog/estate-planning-for-unmarried-couples) and [estate planning for people with no children](/blog/estate-planning-for-people-with-no-children).
 
+## How doctors use the default list
+
+In practice, doctors and hospital staff usually turn to whoever is present and appears to rank highest. They may ask a few questions about your family. Many hospitals have social workers or ethics teams who help when it is unclear.
+
+That process works, but it takes time and can leave family members feeling unsure. It also depends on the right person being reachable. If your spouse is travelling or your children live far away, decisions may wait. A named agent with backups gives the hospital a clear person to call.
+
 ## It depends on your state
 
 Default surrogate lists vary a lot by state. Some include close friends. Some have special rules for certain treatment decisions. An attorney licensed in your state can tell you who would decide for you today.

@@ -62,6 +62,12 @@ A mortgage is one kind of secured debt. Credit cards and medical bills work diff
 
 If there was no will, the question of who inherits the house comes first. See [who gets the house if there's no will and no spouse](/blog/who-gets-the-house-if-theres-no-will-and-no-spouse).
 
+## When siblings inherit together
+
+Many houses pass to two or more children at once. Then they need to decide together what to do with the mortgage. Common choices are to sell and split what is left, to have one sibling buy out the others with a refinance, or to rent the house and share the costs.
+
+Writing down the agreement helps, even among close siblings. It should say who pays the mortgage each month and how the sale money will be split.
+
 ## It depends on your state
 
 State law controls probate timelines, foreclosure steps and how quickly title passes. Some homes skip probate through joint ownership or a [transfer-on-death deed](/compare/transfer-on-death-deed-vs-trust). An attorney licensed in the state where the house sits can confirm the process.

@@ -58,6 +58,17 @@ A trust is not the only option. Some people pick a simpler tool:
 
 If you set up a trust but never record the deed, the house may end up passing through your [pour-over will](/blog/what-is-a-pour-over-will-and-why-do-trusts-have-one) and probate anyway. Once the house is in the trust, your trustee will have [ongoing yearly tasks](/blog/what-does-a-trustee-actually-do-each-year) after you die.
 
+## Common mistakes with a house in trust
+
+People who set up a trust sometimes trip over the same few issues:
+
+- **Never recording the deed.** The trust exists, but the house is still in your name.
+- **Refinancing out of the trust.** Some lenders ask you to move the house out to refinance. People forget to move it back.
+- **Forgetting insurance.** The policy should list the trust as an insured or additional interest.
+- **Buying a new home later** and titling it in your own name.
+
+A quick check of your deed at each [annual estate plan review](/checklists/annual-estate-plan-review) can catch these.
+
 ## It depends on your state
 
 Deed forms, recording fees, transfer tax exemptions, homestead rules and whether a transfer-on-death deed is allowed all vary by state. An attorney licensed where the property sits should prepare or review the deed.

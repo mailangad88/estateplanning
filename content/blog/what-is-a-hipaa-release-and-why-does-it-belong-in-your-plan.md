@@ -67,6 +67,15 @@ A release works only if people can find it. Many people:
 
 The [annual estate plan review](/checklists/annual-estate-plan-review) is a good time to check it.
 
+## When a release is most useful
+
+A release tends to matter most in a few common situations:
+
+- An emergency room visit after an accident.
+- A slow decline, when family needs updates from several doctors.
+- Dealing with an insurer over a denied claim.
+- Supporting a parent who lives in another state.
+
 ## It depends on your state
 
 HIPAA is federal, so the release works across state lines. But state forms for healthcare directives differ, and some include HIPAA wording already. An attorney licensed in your state can make sure your documents work together.

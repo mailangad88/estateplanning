@@ -52,6 +52,17 @@ People who choose an out-of-state guardian often take a few extra steps:
 
 If both parents have different ideas about who to choose, read [what happens when spouses disagree on a guardian](/blog/can-i-name-my-sister-as-guardian-if-my-husband-disagrees).
 
+## Talk to the person first
+
+A guardian can decline the role. Many people only learn their choice will not work after it is too late. Before naming someone in another state, it helps to ask them directly:
+
+- Would they be willing to raise your children in their home?
+- Would they consider moving, or would your children need to move?
+- Does their partner or spouse agree?
+- Do they have room, or would they need a larger home?
+
+These are hard questions, but most people are honoured to be asked. Check in every few years too. Jobs, health and family situations change, and your choice may need to change with them.
+
 ## It depends on your state
 
 Rules vary. Some states have extra steps for nonresident guardians, such as a bond or a local agent for court papers. A court in your state may also hand the case off to a court in the guardian's state later on.

@@ -60,6 +60,12 @@ Common steps include:
 - Get a written confirmation from the custodian.
 - Consider a trust as beneficiary for minors. Our guide to [leaving money to minors](/guides/leaving-money-to-minors) explains why.
 
+## Naming minors on a retirement account
+
+Some parents name their young children directly on a retirement account. That can cause trouble. Most custodians will not pay a large sum to a minor. A court may need to appoint a guardian of the money, which is the kind of process the beneficiary form was meant to avoid.
+
+Common alternatives include naming a trust for the children, or naming a custodian under your state's transfers to minors law. Each has its own tax and timing rules. If you have young children, this is worth raising with an attorney and a tax advisor.
+
 ## It depends on your state
 
 Federal law controls many employer plans, while state law affects IRAs, divorce rules and probate. An attorney licensed in your state can help you check how these rules apply to your accounts.

@@ -63,10 +63,23 @@ When Ruth dies, she has a checking account, a paid-off car, and two credit cards
 
 He pays the cards what the estate can cover under state priority rules. The rest goes unpaid. Aaron never pays a cent of his own, and he sends the card companies a letter saying the estate is insolvent.
 
+## Practical steps for the executor
+
+An executor dealing with debts usually works in a set order:
+
+1. Collect recent statements and open mail to find every creditor.
+2. Send written notice of the death to each creditor.
+3. Publish or send any notice your state requires to start the claim period.
+4. Review each claim for accuracy before paying.
+5. Pay in the order your state requires.
+6. Get written confirmation when a debt is settled or closed.
+
+Keep copies of every letter. If the estate cannot pay everything, an attorney can help you handle the shortfall properly.
+
 ## It depends on your state
 
 Creditor deadlines, priority order and spouse liability all depend on state law. Community property states treat spouses differently. If debts are larger than the estate, speak with an attorney licensed in your state before paying anyone.
 
 ## Next step
 
-If you are an executor, the [executor workload tool](/tools/executor-workload) helps you plan your time, and the [first 30 days after a death checklist](/checklists/first-30-days-after-a-death) lists early steps like notifying creditors. Our [glossary entry on creditors' claims](/glossary#creditor-claim) explains the claim process. For help with a specific estate, visit the [plan finder](/plan-finder).
+If you are an executor, the [executor workload tool](/tools/executor-workload) helps you plan your time, and the [first 30 days after a death checklist](/checklists/first-30-days-after-a-death) lists early steps like notifying creditors. Our [glossary entry on creditors' claims](/glossary#creditor-claim-period) explains the claim process. For help with a specific estate, visit the [plan finder](/plan-finder).

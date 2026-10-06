@@ -64,6 +64,12 @@ Nora names Joan as healthcare agent and financial agent. She names a trust compa
 
 Without children nearby, many people plan to pay for care at home or in a facility. Our guide to [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning) explains how people prepare for those costs.
 
+## Talk to the people you name
+
+People you name as executor, trustee or agent should know about it. Without children, your helpers may be friends or younger relatives who do not expect the role.
+
+A short conversation helps. Tell them where your documents are and what you would want. Ask if they are willing. Give them a copy of your healthcare directive and the name of your attorney. Our [letter of instruction outline](/checklists/letter-of-instruction-outline) is a simple way to write down the details they would need, from passwords to who should care for your pets.
+
 ## It depends on your state
 
 Intestacy order, pet trust rules and the forms for directives and powers of attorney vary by state. An attorney licensed in your state can make sure your documents work there.

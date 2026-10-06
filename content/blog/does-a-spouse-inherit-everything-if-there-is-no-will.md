@@ -55,6 +55,12 @@ In Tom's state, Rachel receives a fixed dollar amount plus half of the rest. Eli
 
 Blended families face this most often. Our guide to [estate planning for blended families](/guides/estate-planning-for-blended-families) covers ways to balance a spouse and children from earlier relationships.
 
+## Why a simple will often helps married couples
+
+Many married couples assume they do not need a will because everything is joint. That can work until the second spouse dies, or until both die together. Then the joint property passes under intestacy rules too.
+
+A will lets you decide who inherits after both of you are gone. It also lets you name a guardian for minor children and an executor you trust. For blended families, it lets each spouse balance the needs of a partner and children from an earlier relationship. Our guide on [how to make a will](/guides/how-to-make-a-will) explains the steps.
+
 ## It depends on your state
 
 How much a spouse inherits without a will is one of the most state-specific rules in estate law. Your state may also give spouses extra rights, like a homestead right in the family home. Check with an attorney licensed in your state.

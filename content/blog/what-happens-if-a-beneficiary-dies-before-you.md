@@ -27,7 +27,7 @@ In a will or trust, a gift to someone who dies before you is said to "lapse." Th
 3. **Your state's anti-lapse law applies.** Many states send the share to the beneficiary's children if the beneficiary was a close relative.
 4. **None of the above applies.** The share often falls into the rest of your estate.
 
-Anti-lapse rules vary a lot by state. Our [glossary](/glossary#anti-lapse) has a short definition.
+Anti-lapse rules vary a lot by state. Our [glossary](/glossary#anti-lapse-statute) has a short definition.
 
 ## Beneficiary forms
 
@@ -54,7 +54,7 @@ Sometimes a couple dies in the same accident. Many states have rules that treat 
 
 ## Ways people plan for this
 
-Most attorneys suggest a few simple habits:
+A few simple habits help:
 
 - Name a contingent beneficiary on every account.
 - Decide whether a deceased child's share should go to their children.
@@ -62,6 +62,12 @@ Most attorneys suggest a few simple habits:
 - Review forms after any death in the family.
 
 Our [beneficiary designation vs will comparison](/compare/beneficiary-designation-vs-will) explains why both need attention.
+
+## Check forms after every family change
+
+Lapsed gifts often happen because a form was filled out once and forgotten. Life insurance from an old job, a small IRA or a savings bond can sit untouched for decades.
+
+A death in the family is a natural time to check. So are marriage, divorce, a birth or a move. Make a list of every account with a beneficiary, note who is named as primary and contingent, and fix gaps. Many custodians let you update forms online in a few minutes. Ask for written confirmation, and keep a copy with your estate plan.
 
 ## It depends on your state
 

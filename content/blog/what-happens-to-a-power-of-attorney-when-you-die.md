@@ -58,6 +58,18 @@ There is often a gap of weeks between a death and an executor's appointment. Dur
 
 Planning can shrink that gap. Common tools include payable-on-death designations, joint accounts and a funded revocable trust. A successor trustee can act right away, without waiting for a court. Our guide to [settling an estate step by step](/guides/settling-an-estate-step-by-step) explains what happens next. For bank accounts specifically, see [what to do with a parent's bank account after death](/blog/what-to-do-with-a-parents-bank-account-after-death).
 
+## Records a former agent should hand over
+
+A former agent's records help the executor work faster and protect the agent from questions later. Useful items include:
+
+- Bank and credit card statements for the period they served.
+- Receipts for large payments, such as care facility bills.
+- A list of accounts they managed, with login information if available.
+- Any gifts made under the power of attorney, and why.
+- Copies of tax returns they prepared or filed.
+
+If the agent and executor are the same person, these records still matter. Other beneficiaries may want to see them.
+
 ## It depends on your state
 
 States differ on how they protect good-faith acts after death and on any limited role a healthcare agent has afterward. An attorney licensed in your state can explain the details.

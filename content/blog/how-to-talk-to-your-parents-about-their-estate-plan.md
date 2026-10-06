@@ -59,6 +59,18 @@ A full plan often includes a will or trust, a financial power of attorney, a hea
 
 If you are named as agent, it helps to know what that role allows. See [can a power of attorney change a will](/blog/can-a-power-of-attorney-change-a-will). If you will be one of two co-executors, read [should you name co-executors in your will](/blog/should-you-name-co-executors-in-your-will) together.
 
+## Things that tend to backfire
+
+A few approaches tend to make parents close the door. Try to avoid:
+
+- Bringing up the subject right after a funeral or diagnosis, when emotions are raw.
+- Asking about specific amounts or who gets what.
+- Showing up with a sibling group that feels like a team against them.
+- Pushing a specific attorney or plan before they are ready.
+- Treating one conversation as the end of it.
+
+Patience usually works better. If the first talk ends early, leave it open. Many parents come back to the topic weeks later, once they have had time to think.
+
 ## It depends on your state
 
 Signing rules, healthcare forms and who can act without documents all vary by state. If your parents live in a different state from you, their plan should follow their state's rules.

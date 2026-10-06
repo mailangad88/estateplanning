@@ -52,6 +52,17 @@ If you are stuck, these approaches often help:
 - **Pick a first choice and an alternate.** Your sister could be first and his choice second, or the other way around.
 - **Use a worksheet together.** Scoring each candidate on the same points can move the talk away from loyalty.
 
+## When the other parent cannot take over
+
+There are a few cases where the surviving parent may not get custody. A court may look elsewhere if the other parent:
+
+- Has had their parental rights ended by a court.
+- Has a serious history of abuse or neglect.
+- Is unable to care for the children because of illness or incarceration.
+- Has been absent from the children's lives for a long time, in some states.
+
+If you worry about your husband's ability to care for the children, the guardian question becomes more serious. A letter explaining your concerns, kept with your will, can help a court. This is a situation where talking to an attorney licensed in your state is worth it.
+
 ## It depends on your state
 
 States differ on how much weight a will's guardian choice gets, at what age a child's preference counts, and how a court handles two conflicting nominations. Some states also let you sign a separate guardian designation outside your will.

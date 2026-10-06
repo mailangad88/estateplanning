@@ -14,7 +14,7 @@ faqs:
     a: "Yes, if you name your partner on the account's beneficiary form. The form controls, regardless of marriage. Some employer plans give a spouse special rights, but those do not apply to an unmarried partner."
 ---
 
-If you are not married, the law usually treats your partner as a stranger when it comes to inheritance and medical decisions. A few documents can change that.
+If you are not married, the law usually treats your partner as a legal stranger for inheritance and medical decisions. A few documents can change that.
 
 Our guide to [what estate planning is](/guides/what-is-estate-planning) covers the core documents. This post explains why each one matters more for couples who are not married.
 
@@ -64,6 +64,12 @@ If you have children together, make sure both partners are legal parents. If onl
 ## Taxes
 
 Married couples can usually leave unlimited amounts to each other without federal estate tax. Unmarried partners cannot. For most couples, this does not matter. For larger estates, our guide to [estate and inheritance taxes](/guides/estate-and-inheritance-taxes) explains the rules. Some states also tax inheritances by non-relatives.
+
+## Writing down the details
+
+Couples often share bills and property without much paperwork. That is fine while you are together. It becomes a problem if one partner dies or becomes ill and family members ask who owned what.
+
+Simple records help. Keep a list of who paid for major purchases, whose name is on each account, and how the home is titled. Our [asset and account inventory](/checklists/asset-and-account-inventory) works well for this. Some couples also sign a cohabitation agreement. It covers what happens to shared property if they separate, and it can support the estate plan if one partner dies.
 
 ## It depends on your state
 

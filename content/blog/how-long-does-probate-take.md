@@ -60,6 +60,19 @@ Probate only covers assets in the person's name alone without a beneficiary. Man
 
 If a trust is your plan, a [pour-over will](/blog/what-is-a-pour-over-will-and-why-do-trusts-have-one) catches anything left out, but those assets may still need probate. Very small estates may qualify for a faster process. See [can you skip probate for a small estate](/blog/can-you-skip-probate-for-a-small-estate).
 
+## What an executor can do to keep things moving
+
+An executor has more control over timing than many people expect. A few habits help:
+
+- Get several certified death certificates early.
+- Gather account statements and titles in the first few weeks.
+- Open an estate bank account as soon as you are appointed.
+- Send required notices promptly so waiting periods start.
+- Keep heirs updated so small questions do not turn into disputes.
+- Ask an accountant early about final tax returns.
+
+Our [first 30 days after a death checklist](/checklists/first-30-days-after-a-death) lists these in order.
+
 ## It depends on your state
 
 Some states have a simpler, less supervised probate track. Others require more court steps. Creditor deadlines also vary. An attorney licensed in the state where the person lived can give a realistic timeline for that county.

@@ -55,6 +55,17 @@ This kind of setup is common in [blended families](/guides/estate-planning-for-b
 
 The idea is close to an executor who is also a beneficiary. See [can an executor also be a beneficiary](/blog/can-an-executor-also-be-a-beneficiary). The main difference is time. A trustee may serve for decades, so the safeguards matter more. Our post on [what a trustee does each year](/blog/what-does-a-trustee-actually-do-each-year) describes that ongoing work.
 
+## Questions to ask before you decide
+
+Before naming a beneficiary as trustee, many people think through a few points:
+
+- **Does this person get along with the other beneficiaries?** A trustee who is already in conflict with a sibling may struggle to be seen as fair.
+- **How long will the trust last?** A trust for a young grandchild may run for twenty years. A trust that pays out right away is a much shorter job.
+- **Is the person organized with money?** Record keeping and tax returns are yearly tasks.
+- **Who steps in if they cannot serve?** A named successor trustee keeps the trust running without a court.
+
+Answering these honestly often points to a simple setup. Sometimes it points to a co-trustee or a professional.
+
 ## It depends on your state
 
 Rules about merger, tax treatment, reporting and trustee pay vary by state and depend on the trust's wording. An attorney licensed in your state can draft safeguards that fit your family.

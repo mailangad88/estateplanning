@@ -60,6 +60,17 @@ If you worry about an agent changing your plan, a few choices can help:
 
 A power of attorney also does not replace a guardianship in every case. Our [power of attorney vs guardianship comparison](/compare/power-of-attorney-vs-guardianship) explains when each applies.
 
+## Signs an agent may be overstepping
+
+Most agents act in good faith. But family members sometimes notice warning signs, such as:
+
+- Large gifts to the agent or the agent's family.
+- New beneficiary forms that favour the agent.
+- Accounts moved into joint names with the agent.
+- The agent refusing to share any records.
+
+None of these prove wrongdoing on their own. An agent may have clear authority and good reasons. But they are worth a calm question, and sometimes a conversation with an attorney. In many states, adult protective services also takes reports about suspected financial abuse of older adults.
+
 ## It depends on your state
 
 States differ on which powers must be spelled out, how agents must report, and what happens to a gift in a will when an agent sells the asset. An attorney licensed in your state can draft a document that matches your wishes.

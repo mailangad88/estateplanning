@@ -68,6 +68,19 @@ Full probate may still be needed if:
 
 If you are dealing with a parent's accounts, read [what to do with a parent's bank account after death](/blog/what-to-do-with-a-parents-bank-account-after-death) for the step-by-step.
 
+## Steps heirs commonly follow
+
+If an estate looks small enough, the process often goes like this:
+
+1. List every asset and how it was owned.
+2. Remove assets that have a beneficiary or co-owner.
+3. Add up what is left and compare it to your state's limit.
+4. Wait for any required period after the death.
+5. Get the state's affidavit form, often from the court website.
+6. Sign it in front of a notary and give it to each bank or holder.
+
+Keep copies of everything. If a creditor or another heir later asks questions, your records show what you did and why.
+
 ## It depends on your state
 
 Small estate limits, waiting periods and forms vary widely. Some states update their limits from time to time. Check your state court website or ask an attorney licensed in your state before signing an affidavit.

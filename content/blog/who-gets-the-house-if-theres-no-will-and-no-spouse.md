@@ -55,6 +55,12 @@ These problems are why many people with a home use a will, trust or deed to say 
 
 If a mortgage is still owed, read [what happens to a mortgage when the owner dies](/blog/what-happens-to-a-mortgage-when-the-owner-dies).
 
+## What the administrator does with the house
+
+The court-appointed administrator has several jobs with the house during probate. They usually change the locks, keep insurance active, and pay the mortgage, taxes and utilities from estate funds. They may also arrange an appraisal so everyone knows its value.
+
+If the heirs agree to sell, the administrator often handles the sale with court approval where required. If one heir wants to keep it, a buyout can sometimes be arranged. Our [executor vs trustee comparison](/compare/executor-vs-trustee) explains how this role differs from a trustee's.
+
 ## It depends on your state
 
 Intestacy rules differ in the details: how shares pass down family lines, whether half-siblings take equally, and whether stepchildren ever qualify. An attorney licensed in the state where the house sits can confirm who the legal heirs are.

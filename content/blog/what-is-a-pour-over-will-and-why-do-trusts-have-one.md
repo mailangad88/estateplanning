@@ -59,6 +59,12 @@ The goal is for the pour-over will to catch as little as possible. People who us
 - Retitle bank and brokerage accounts, or add the trust as payable-on-death beneficiary where allowed.
 - Review accounts once a year with the [annual estate plan review](/checklists/annual-estate-plan-review).
 
+## How it differs from a regular will
+
+A simple will spells out who gets each asset. A pour-over will usually says very little about that. It just points everything to the trust, and the trust holds the details.
+
+That design keeps your plan in one place. If you change who inherits, you update the trust, not the will. The trust is also private in most states, while a will that goes through probate becomes a public record.
+
 ## It depends on your state
 
 Signing rules for a will, small estate limits, and how probate handles pour-over assets vary by state. A pour-over will must meet the same signing rules as any other will. Our guide to [what makes a will valid](/guides/what-makes-a-will-valid) explains those basics.
