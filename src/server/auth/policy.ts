@@ -134,6 +134,7 @@ export type GlobalAction =
   | "work_intake_queue"
   | "verify_facts"
   | "approve_templates"
+  | "approve_pages"
   | "manage_seminars"
   | "view_partners"
   | "manage_partners";
@@ -159,6 +160,8 @@ const GLOBAL: Record<GlobalAction, Role[]> = {
   verify_facts: ["platform_admin", "attorney"],
   // Approving client-facing nurture copy is a legal judgment too. Mirrors the template_approvals RLS policies.
   approve_templates: ["platform_admin", "attorney"],
+  // Approving a site page for publication: the attorney stands behind it. Mirrors the page_approvals RLS policies.
+  approve_pages: ["platform_admin", "attorney"],
   // Seminar costs and counts are marketing data; readouts are totals only.
   manage_seminars: ["platform_admin", "marketing"],
   // Referral partners, their gift log and release status. Mirrors the partners RLS policies.

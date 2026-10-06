@@ -184,6 +184,15 @@ export const TABLES = {
       t("approvedBy", "approved_by"), ts("approvedAt", "approved_at"), t("note", "note"),
     ],
   },
+  pageApprovals: {
+    table: "page_approvals",
+    columns: [
+      t("id", "id"), t("path", "path"), t("file", "file"), t("contentHash", "content_hash"), t("tier", "tier"),
+      t("approvedBy", "approved_by"), t("approverRole", "approver_role"), t("approverName", "approver_name"),
+      ts("approvedAt", "approved_at"), t("note", "note"), t("batchId", "batch_id"),
+      t("prUrl", "pr_url", true), t("editedFromHash", "edited_from_hash", true),
+    ],
+  },
   automationState: {
     table: "automation_state",
     columns: [n("cursorSeq", "cursor_seq"), j("stages", "stages"), j("exits", "exits"), t("id", "id")],

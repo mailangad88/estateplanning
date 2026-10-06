@@ -610,4 +610,33 @@ export interface PlanSession {
   ipPrefix?: string;
   /** true when this sign-in used a recovery code */
   viaRecoveryCode?: boolean;
+
+/**
+ * The attorney's approval of one site page for publication (src/server/content/pageApprovals.ts).
+ * Append-only. It counts only while `contentHash` equals the sha256 of the page's content file as it reads
+ * now; any edit to the file needs a new approval. scripts/apply-page-approvals.mjs turns approvals into the
+ * `review: approved` / `reviewed: true` frontmatter flag in a normal commit.
+ */
+export interface PageApproval {
+  id: string;
+  /** Site path, e.g. /learn/wills/what-is-a-will */
+  path: string;
+  /** Content file relative to the repo root, e.g. content/learn/wills/what-is-a-will.md */
+  file: string;
+  /** sha256 of the content file's bytes at review time */
+  contentHash: string;
+  tier: "low" | "medium" | "high";
+  approvedBy: string;
+  /** Role of the approver at the time. Only attorney approvals are written into content files. */
+  approverRole: Role;
+  /** Display name for the byline record, from the approver's own user row */
+  approverName: string;
+  approvedAt: string;
+  note: string;
+  /** Pages approved together share a batch id. A single high-risk approval is a batch of one. */
+  batchId: string;
+  /** The pull request that carries the flag (and any edits) into git, when GitHub publishing is configured. */
+  prUrl?: string;
+  /** Set when the attorney edited the page in the portal: the hash of the file they opened. `contentHash` is then the edited file's. */
+  editedFromHash?: string;
 }
