@@ -6,7 +6,7 @@
  * transport rather than silently falling back to the log.
  *
  * Adapters call the providers' HTTP APIs with fetch, so no SDK is needed:
- *   email: Postmark (EMAIL_TRANSPORT=postmark)
+ *   email: Resend (EMAIL_TRANSPORT=resend, the lowest-cost default) or Postmark (EMAIL_TRANSPORT=postmark)
  *   text:  Twilio   (SMS_TRANSPORT=twilio)
  * Verify request shapes against the providers' current docs before going live.
  */
@@ -126,6 +126,33 @@ export class PostmarkEmailTransport implements EmailTransport {
   }
 }
 
+/** Resend tag names and values allow only ASCII letters, numbers, underscore and dash. */
+const resendTag = (v: string) => v.replace(/[^A-Za-z0-9_-]/g, "_").slice(0, 256);
+
+export class ResendEmailTransport implements EmailTransport {
+  readonly name = "resend";
+  readonly dryRun = false;
+  constructor(
+    private readonly opts: { apiKey: string; from: string },
+    private readonly fetchImpl: Fetch = fetch,
+  ) {}
+  async send(msg: EmailMessage): Promise<SendResult> {
+    const body: Record<string, unknown> = { from: this.opts.from, to: [msg.to], subject: msg.subject, text: msg.text };
+    if (msg.html) body.html = msg.html;
+    if (msg.headers && Object.keys(msg.headers).length) body.headers = msg.headers;
+    if (msg.tag) body.tags = [{ name: "template", value: resendTag(msg.tag) }];
+    const res = await this.fetchImpl("https://api.resend.com/emails", {
+      method: "POST",
+      headers: { authorization: `Bearer ${this.opts.apiKey}`, "content-type": "application/json" },
+      body: JSON.stringify(body),
+      signal: AbortSignal.timeout(10_000),
+    });
+    await failIfNotOk(res, "Resend");
+    const json = (await res.json().catch(() => ({}))) as { id?: string };
+    return { providerId: json.id ?? "resend", dryRun: false };
+  }
+}
+
 export class TwilioSmsTransport implements SmsTransport {
   readonly name = "twilio";
   readonly dryRun = false;
@@ -155,14 +182,18 @@ export class TwilioSmsTransport implements SmsTransport {
 
 /**
  * The email transport for this process. Log mode always logs. Live mode needs
- * EMAIL_TRANSPORT=postmark, POSTMARK_SERVER_TOKEN and EMAIL_FROM, or it throws.
+ * EMAIL_TRANSPORT=resend with RESEND_API_KEY and EMAIL_FROM, or
+ * EMAIL_TRANSPORT=postmark with POSTMARK_SERVER_TOKEN and EMAIL_FROM, or it throws.
  */
 export function emailTransportFromEnv(env: Env = process.env, fetchImpl: Fetch = fetch): EmailTransport {
   if (sendModeFromEnv(env) !== "live") return new LogEmailTransport();
+  if (env.EMAIL_TRANSPORT === "resend" && env.RESEND_API_KEY && env.EMAIL_FROM) {
+    return new ResendEmailTransport({ apiKey: env.RESEND_API_KEY, from: env.EMAIL_FROM }, fetchImpl);
+  }
   if (env.EMAIL_TRANSPORT === "postmark" && env.POSTMARK_SERVER_TOKEN && env.EMAIL_FROM) {
     return new PostmarkEmailTransport({ serverToken: env.POSTMARK_SERVER_TOKEN, from: env.EMAIL_FROM, marketingStream: env.POSTMARK_MARKETING_STREAM }, fetchImpl);
   }
-  throw new TransportConfigError("OUTBOUND_SEND_MODE=live needs EMAIL_TRANSPORT=postmark, POSTMARK_SERVER_TOKEN and EMAIL_FROM");
+  throw new TransportConfigError("OUTBOUND_SEND_MODE=live needs EMAIL_TRANSPORT=resend (RESEND_API_KEY) or postmark (POSTMARK_SERVER_TOKEN), plus EMAIL_FROM");
 }
 
 /**

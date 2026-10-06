@@ -1,0 +1,176 @@
+/* Sign-in code step and the account page for "My family plan". Colors and type come from the design tokens in design.css. */
+
+.steps {
+  margin: 0 0 16px;
+  padding-left: 22px;
+}
+.steps li {
+  margin-bottom: 10px;
+}
+
+.keyBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  background: var(--sand);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin: 8px 0 4px;
+}
+.key {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  word-break: break-all;
+  color: var(--text);
+}
+
+.codeInput {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 1.25rem;
+  letter-spacing: 0.12em;
+  max-width: 16ch;
+}
+
+.codes {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  counter-reset: code;
+}
+.codes li {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 1.05rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  text-align: center;
+  color: var(--text);
+}
+
+.warn {
+  background: var(--gold-tint);
+  color: var(--text);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin: 12px 0;
+}
+
+.statusRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin: 0 0 12px;
+}
+.on {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  color: var(--sage-deep);
+}
+.on::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--sage);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+}
+.list > li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.list > li:last-child {
+  border-bottom: 0;
+}
+.device {
+  display: grid;
+  gap: 2px;
+}
+.device strong {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--sage-tint);
+  color: var(--sage-deep);
+}
+.tagWarn {
+  background: var(--gold-tint);
+  color: var(--gold-text);
+}
+
+.activity {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 420px;
+  overflow-y: auto;
+}
+.activity li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+.activity li:last-child {
+  border-bottom: 0;
+}
+.activity time {
+  flex: none;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+.inline {
+  border-top: 1px solid var(--border);
+  margin-top: 12px;
+  padding-top: 12px;
+}
+
+.dangerCard {
+  border-color: var(--clay-text);
+}
+
+.back {
+  display: inline-block;
+  margin: 0 0 8px;
+}
+
+@media print {
+  .noPrint {
+    display: none;
+  }
+}

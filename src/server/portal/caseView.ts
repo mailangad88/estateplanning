@@ -11,6 +11,7 @@ import { assertCan, canOnLead, leadAccess, readableVisibilities, requireMfa, typ
 import type { Db } from "@/server/db";
 import { clientSummary, summarizePayments, type PaymentStatusSummary } from "@/lib/retainerPlan";
 import { MATTER_LABELS } from "@/server/services/leads";
+import { organizerSummaryForLead, type OrganizerSummaryView } from "@/server/services/familyPlan";
 import type {
   Activity,
   Actor,
@@ -34,6 +35,7 @@ export const SECTION_ORDER = [
   "conflict",
   "household",
   "assets",
+  "organizer",
   "documents",
   "answers",
   "timeline",
@@ -87,6 +89,8 @@ export interface CaseView {
     conflict: ConflictCard;
     household: Intake["household"];
     assets: Intake["assets"];
+    /** The client's "My family plan" summary (counts, ranges, gaps), when they linked one */
+    organizer: OrganizerSummaryView;
     documents: DocumentRecord[];
     answers: Intake["answers"];
     timeline: Activity[];
@@ -231,6 +235,8 @@ export async function buildCaseView(db: Db, actor: Actor, leadId: string, now = 
     s.conflict = lead.conflictCard;
     s.household = lead.intake.household;
     s.assets = lead.intake.assets;
+    const organizer = await organizerSummaryForLead(db, actor, lead, assignments, now);
+    if (organizer) s.organizer = organizer;
   }
   if (can("view_documents")) {
     const visible = client ? ["client"] : ["internal", "firm", "client"];

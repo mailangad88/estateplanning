@@ -9,6 +9,7 @@ import type { PartnerStatus, PartnerType, ReleaseStatus, ValueLinked } from "@/l
 import type { QuizAnswers } from "@/lib/quiz";
 import type { PackageSelection, PaymentPlan } from "@/lib/retainerPlan";
 import type { ScoreResult } from "@/lib/scoring";
+import type { FamilyPlanSummary } from "@/lib/familyPlan";
 
 export type Role =
   | "platform_admin"
@@ -353,7 +354,7 @@ export interface AuditEvent {
   seq: number;
   at: string;
   actorId: string;
-  actorRole: Role | "system";
+  actorRole: Role | "planner" | "system";
   action: string;
   resourceType: string;
   resourceId: string;
@@ -529,4 +530,84 @@ export interface ReviewRequest {
   /** Self-reported only. Never inferred. */
   postedAt?: string;
   createdAt: string;
+}
+
+// ---------------------------------------------------------------------------
+// "My family plan" organizer (src/lib/familyPlan.ts, src/server/services/familyPlan.ts)
+// ---------------------------------------------------------------------------
+
+/**
+ * One visitor's organizer. Holds only what the portal may show: the derived summary and counts.
+ * The answers themselves live encrypted in FamilyPlanBodyRecord. The email address is not stored,
+ * only a keyed hash of it, used to find the plan again at sign-in and to link it to a lead.
+ */
+export interface FamilyPlan {
+  /** "fp_<uuid>" */
+  id: string;
+  emailHash: string;
+  /** The lead for the same person, once one exists. Set by the server only, never by the planner. */
+  leadId?: string;
+  summary: FamilyPlanSummary;
+  sectionsDone: number;
+  gapCount: number;
+  /** The consent shown when the visitor saved: its version and when they agreed */
+  consent: { version: string; at: string };
+  prefilledFrom?: string[];
+  createdAt: string;
+  updatedAt: string;
+}
+
+/** The encrypted answers for a plan. `id` is the plan id. Staff have no read path to this record. */
+export interface FamilyPlanBodyRecord {
+  id: string;
+  /** AES-256-GCM, bound to the plan id (see encryptPlanBody) */
+  ciphertext: string;
+  updatedAt: string;
+}
+
+/** A family plan sign-in link that has been used. `id` is the link's jti; inserting it twice fails, which is what makes links single-use across instances. */
+export interface PlanLinkUse {
+  id: string;
+  usedAt: string;
+}
+
+/**
+ * The second factor for a family plan account. `id` is the plan id: one account per verified email, one
+ * plan per account. The TOTP secret is encrypted with a key derived from FAMILY_PLAN_KEY and bound to the
+ * plan id; recovery codes are kept as scrypt hashes only. Failed attempts and the lockout live here, in
+ * the database, so the limit holds across app instances.
+ */
+export interface PlanMfaRecord {
+  id: string;
+  totpSecretEnc: string;
+  /** a replacement authenticator being set up, until its first code confirms it */
+  pendingSecretEnc?: string;
+  lastUsedStep: number;
+  recoveryCodeHashes: string[];
+  /** unset until the first valid code confirms the authenticator */
+  enrolledAt?: string;
+  failedAttempts: number;
+  lockedUntil?: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+/**
+ * A signed-in device for a family plan account. `id` is the SHA-256 of the random secret in the cookie,
+ * so the table alone cannot be turned into a working cookie. Only a coarse device summary and an IP
+ * prefix are kept, for the "Signed-in devices" list.
+ */
+export interface PlanSession {
+  id: string;
+  planId: string;
+  createdAt: string;
+  lastSeenAt: string;
+  /** absolute expiry, fixed at sign-in */
+  expiresAt: string;
+  /** e.g. "Safari on iPhone" */
+  userAgent?: string;
+  /** e.g. "203.0.113.0/24" */
+  ipPrefix?: string;
+  /** true when this sign-in used a recovery code */
+  viaRecoveryCode?: boolean;
 }

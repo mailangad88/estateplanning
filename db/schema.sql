@@ -500,13 +500,76 @@ CREATE TABLE review_requests (
 );
 CREATE UNIQUE INDEX review_requests_lead_idx ON review_requests (lead_id);
 
+-- "My family plan" organizer (src/server/services/familyPlan.ts). A visitor signs in with an emailed link and
+-- gets a 'planner' session scoped to this one row (app.user_id = the plan id). The email address is not stored,
+-- only an HMAC of it. Staff read the summary (counts, ranges, gaps: no names or free text) through the linked
+-- lead's access rules; the answers live encrypted (AES-256-GCM, key held by the app) in family_plan_bodies,
+-- which has no staff policy at all.
+CREATE TABLE family_plans (
+  id             text PRIMARY KEY,
+  email_hash     text NOT NULL UNIQUE,
+  lead_id        text REFERENCES leads(id) ON DELETE SET NULL,
+  summary        jsonb NOT NULL,
+  sections_done  integer NOT NULL CHECK (sections_done BETWEEN 0 AND 5),
+  gap_count      integer NOT NULL CHECK (gap_count >= 0),
+  consent        jsonb NOT NULL,               -- {version, at}: the consent text shown when the visitor saved
+  prefilled_from text[],
+  created_at     timestamptz NOT NULL,
+  updated_at     timestamptz NOT NULL
+);
+CREATE INDEX family_plans_lead_idx ON family_plans (lead_id) WHERE lead_id IS NOT NULL;
+
+CREATE TABLE family_plan_bodies (
+  id          text PRIMARY KEY REFERENCES family_plans(id) ON DELETE CASCADE,
+  ciphertext  text NOT NULL,
+  updated_at  timestamptz NOT NULL
+);
+
+-- Used family plan sign-in links (the link token's jti). Inserting an id that is already here fails, so a link
+-- works once even with several app instances. No personal data; only the service role touches it.
+CREATE TABLE plan_link_uses (
+  id       text PRIMARY KEY,
+  used_at  timestamptz NOT NULL
+);
+
+-- Family plan accounts: the plan row is the account (one per verified email, found by email_hash), and these
+-- two tables hold its second factor and its signed-in devices. Both are keyed to the plan and go with it.
+-- The TOTP secret is encrypted by the app and bound to the plan id; recovery codes are scrypt hashes.
+-- Failed attempts and the lockout are stored here so the limit holds across app instances.
+CREATE TABLE plan_mfa (
+  id                   text PRIMARY KEY REFERENCES family_plans(id) ON DELETE CASCADE,
+  totp_secret_enc      text NOT NULL,
+  pending_secret_enc   text,                   -- a replacement authenticator awaiting its first code
+  last_used_step       bigint NOT NULL DEFAULT 0,
+  recovery_code_hashes text[] NOT NULL DEFAULT '{}',
+  enrolled_at          timestamptz,
+  failed_attempts      integer NOT NULL DEFAULT 0 CHECK (failed_attempts >= 0),
+  locked_until         timestamptz,
+  created_at           timestamptz NOT NULL,
+  updated_at           timestamptz NOT NULL
+);
+
+-- One row per signed-in device. id is the SHA-256 of the cookie's random secret, never the secret itself.
+-- Only a coarse device summary ("Safari on iPhone") and an IP prefix (/24 or /48) are kept.
+CREATE TABLE plan_sessions (
+  id                text PRIMARY KEY,
+  plan_id           text NOT NULL REFERENCES family_plans(id) ON DELETE CASCADE,
+  created_at        timestamptz NOT NULL,
+  last_seen_at      timestamptz NOT NULL,
+  expires_at        timestamptz NOT NULL,
+  user_agent        text,
+  ip_prefix         text,
+  via_recovery_code boolean
+);
+CREATE INDEX plan_sessions_plan_idx ON plan_sessions (plan_id);
+
 -- Hash-chained, append-only (see src/server/audit/log.ts).
 CREATE TABLE audit_events (
   id            text PRIMARY KEY,
   seq           bigint NOT NULL UNIQUE,
   at            timestamptz NOT NULL,
   actor_id      text NOT NULL,
-  actor_role    text NOT NULL CHECK (actor_role IN ('platform_admin','intake','marketing','firm_admin','attorney','paralegal','client','system')),
+  actor_role    text NOT NULL CHECK (actor_role IN ('platform_admin','intake','marketing','firm_admin','attorney','paralegal','client','planner','system')),
   action        text NOT NULL,
   resource_type text NOT NULL,
   resource_id   text NOT NULL,
@@ -624,6 +687,21 @@ END $$;
 CREATE TRIGGER engagements_approval_guard BEFORE INSERT OR UPDATE ON engagements
   FOR EACH ROW EXECUTE FUNCTION engagement_approval_guard();
 
+-- A planner may edit their own plan's summary but never which lead it is linked to, or whose email it is:
+-- otherwise they could attach their summary to someone else's case. Linking is done by the service role.
+CREATE FUNCTION family_plan_owner_guard() RETURNS trigger LANGUAGE plpgsql AS $$
+BEGIN
+  IF current_user = 'app_user' AND (
+       (TG_OP = 'INSERT' AND NEW.lead_id IS NOT NULL)
+    OR (TG_OP = 'UPDATE' AND (NEW.lead_id IS DISTINCT FROM OLD.lead_id OR NEW.email_hash IS DISTINCT FROM OLD.email_hash))
+  ) THEN
+    RAISE EXCEPTION 'only the server links a family plan to a lead' USING ERRCODE = 'insufficient_privilege';
+  END IF;
+  RETURN NEW;
+END $$;
+CREATE TRIGGER family_plans_owner_guard BEFORE INSERT OR UPDATE ON family_plans
+  FOR EACH ROW EXECUTE FUNCTION family_plan_owner_guard();
+
 -- ---------------------------------------------------------------------------
 -- Views
 -- ---------------------------------------------------------------------------
@@ -696,6 +774,11 @@ ALTER TABLE partner_gifts        ENABLE ROW LEVEL SECURITY;  ALTER TABLE partner
 ALTER TABLE partner_referrals    ENABLE ROW LEVEL SECURITY;  ALTER TABLE partner_referrals    FORCE ROW LEVEL SECURITY;
 ALTER TABLE conversion_events    ENABLE ROW LEVEL SECURITY;  ALTER TABLE conversion_events    FORCE ROW LEVEL SECURITY;
 ALTER TABLE review_requests      ENABLE ROW LEVEL SECURITY;  ALTER TABLE review_requests      FORCE ROW LEVEL SECURITY;
+ALTER TABLE family_plans         ENABLE ROW LEVEL SECURITY;  ALTER TABLE family_plans         FORCE ROW LEVEL SECURITY;
+ALTER TABLE family_plan_bodies   ENABLE ROW LEVEL SECURITY;  ALTER TABLE family_plan_bodies   FORCE ROW LEVEL SECURITY;
+ALTER TABLE plan_link_uses       ENABLE ROW LEVEL SECURITY;  ALTER TABLE plan_link_uses       FORCE ROW LEVEL SECURITY;
+ALTER TABLE plan_mfa             ENABLE ROW LEVEL SECURITY;  ALTER TABLE plan_mfa             FORCE ROW LEVEL SECURITY;
+ALTER TABLE plan_sessions        ENABLE ROW LEVEL SECURITY;  ALTER TABLE plan_sessions        FORCE ROW LEVEL SECURITY;
 ALTER TABLE audit_events         ENABLE ROW LEVEL SECURITY;  ALTER TABLE audit_events         FORCE ROW LEVEL SECURITY;
 
 -- Workers (public intake form, e-sign webhooks, nurture engine, routing) are trusted
@@ -724,6 +807,11 @@ CREATE POLICY service_all ON partner_gifts        FOR ALL TO app_service USING (
 CREATE POLICY service_all ON partner_referrals    FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON conversion_events    FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON review_requests      FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON family_plans         FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON family_plan_bodies   FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON plan_link_uses       FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON plan_mfa             FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON plan_sessions        FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_read ON fee_rule_versions   FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON fact_verifications  FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON template_approvals FOR SELECT TO app_service USING (true);
@@ -915,11 +1003,38 @@ CREATE POLICY partner_referrals_update ON partner_referrals FOR UPDATE TO app_us
   USING (app_role() IN ('platform_admin','firm_admin') AND EXISTS (SELECT 1 FROM partners p WHERE p.id = partner_id))
   WITH CHECK (app_role() IN ('platform_admin','firm_admin') AND EXISTS (SELECT 1 FROM partners p WHERE p.id = partner_id));
 
+-- family plans: a planner session sees and changes only its own row (app.user_id is the plan id).
+-- Staff read the summary row of a plan linked to a lead they have full or intake access to; clients and
+-- marketing have no path. The encrypted answers are the owner's alone: no staff policy on family_plan_bodies.
+CREATE POLICY family_plans_owner ON family_plans FOR ALL TO app_user
+  USING (app_role() = 'planner' AND id = app_user_id())
+  WITH CHECK (app_role() = 'planner' AND id = app_user_id());
+CREATE POLICY family_plans_staff_select ON family_plans FOR SELECT TO app_user
+  USING (lead_id IS NOT NULL AND app_role() IN ('platform_admin','intake','firm_admin','attorney','paralegal')
+         AND lead_access(lead_id) IN ('full','intake'));
+CREATE POLICY family_plan_bodies_owner ON family_plan_bodies FOR ALL TO app_user
+  USING (app_role() = 'planner' AND id = app_user_id())
+  WITH CHECK (app_role() = 'planner' AND id = app_user_id());
+
+-- Family plan accounts: the second factor and the device list are the owner's alone. A planner session sees
+-- and changes only its own rows; no staff role has any policy here, so staff (even platform_admin) see nothing.
+-- Creating the second factor happens before a session exists, so only the service role may INSERT plan_mfa
+-- (no app_user INSERT grant); sign-ins likewise create plan_sessions rows as the service role.
+CREATE POLICY plan_mfa_owner ON plan_mfa FOR ALL TO app_user
+  USING (app_role() = 'planner' AND id = app_user_id())
+  WITH CHECK (app_role() = 'planner' AND id = app_user_id());
+CREATE POLICY plan_sessions_owner ON plan_sessions FOR ALL TO app_user
+  USING (app_role() = 'planner' AND plan_id = app_user_id())
+  WITH CHECK (app_role() = 'planner' AND plan_id = app_user_id());
+
 -- audit: insert-only for everyone; read by platform_admin, and firm_admin for their leads.
+-- A planner reads the events about its own account (resource family_plan, id = its plan id), for the
+-- activity list on /my-plan/account. Those events carry ids and counts only.
 CREATE POLICY audit_insert ON audit_events FOR INSERT TO app_user WITH CHECK (true);
 CREATE POLICY audit_select ON audit_events FOR SELECT TO app_user USING (
   app_role() = 'platform_admin'
   OR (app_role() = 'firm_admin' AND lead_id IS NOT NULL AND lead_access(lead_id) = 'full')
+  OR (app_role() = 'planner' AND resource_type = 'family_plan' AND resource_id = app_user_id())
 );
 
 -- ---------------------------------------------------------------------------
@@ -940,6 +1055,9 @@ GRANT SELECT, UPDATE                 ON partner_referrals TO app_user;
 GRANT UPDATE                         ON invoices TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON sequence_enrollments TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON seminars TO app_user;
+GRANT SELECT, INSERT, UPDATE, DELETE ON family_plans, family_plan_bodies TO app_user;
+GRANT SELECT, UPDATE, DELETE         ON plan_mfa TO app_user;       -- planner rows only (policy above); no INSERT
+GRANT SELECT, UPDATE, DELETE         ON plan_sessions TO app_user;  -- planner rows only (policy above); no INSERT
 GRANT SELECT                         ON lead_offer_cards, client_consults, lead_funnel_daily, crm_deliveries, conversion_events, review_requests TO app_user;
 
 -- Audit trail: INSERT only. No SELECT/UPDATE/DELETE/TRUNCATE grant to the app at all
@@ -954,6 +1072,9 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, leads, a
   activities, consults, engagements, payments, tasks, billable_events, sequence_enrollments, suppressions TO app_service;
 GRANT SELECT, INSERT, UPDATE ON crm_deliveries TO app_service;
 GRANT SELECT, INSERT, UPDATE ON seminars TO app_service;
+GRANT SELECT, INSERT, UPDATE, DELETE ON family_plans, family_plan_bodies TO app_service;
+GRANT SELECT, INSERT ON plan_link_uses TO app_service; -- app_user has no grant at all
+GRANT SELECT, INSERT, UPDATE, DELETE ON plan_mfa, plan_sessions TO app_service;
 GRANT SELECT, INSERT, UPDATE, DELETE ON partners, partner_referrals TO app_service;
 GRANT SELECT, INSERT ON partner_gifts TO app_service;
 GRANT SELECT, INSERT, UPDATE ON crm_deliveries, conversion_events, review_requests TO app_service;

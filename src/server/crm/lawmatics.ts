@@ -11,6 +11,9 @@ import {
   type CrmAdapter,
   type StageMap,
   captureFields,
+  nurtureFields,
+  nurtureTags,
+  type NurtureState,
 } from "@/server/crm/adapter";
 import type { Activity, Comment, DocumentRecord, ExitReason, Lead, Person, Stage } from "@/server/types";
 
@@ -119,5 +122,15 @@ export class LawmaticsAdapter implements CrmAdapter {
       content_type: doc.contentType,
       url,
     });
+  }
+
+  /**
+   * Nurture state for Lawmatics automations. TO BE VERIFIED against the Lawmatics API docs before
+   * launch: whether tags on a prospect update replace or append (we send the full set), custom field
+   * keys (the "ep_*" fields must be created in Lawmatics first), and where email/SMS opt-out lives
+   * (it may be a contact-level setting that only the CRM's own unsubscribe can change).
+   */
+  async pushNurtureState(matterId: string, state: NurtureState) {
+    await this.call("PUT", `/prospects/${matterId}`, { tags: nurtureTags(state), custom_fields: nurtureFields(state) });
   }
 }

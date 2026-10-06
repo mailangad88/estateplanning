@@ -219,7 +219,7 @@ export function normalizeAddress(channel: Channel | "all", address: string): str
   return digits.length === 11 && digits.startsWith("1") ? digits.slice(1) : digits;
 }
 
-async function putSuppression(db: Db, channel: Channel | "all", address: string, reason: string, at: Date): Promise<Suppression> {
+export async function putSuppression(db: Db, channel: Channel | "all", address: string, reason: string, at: Date): Promise<Suppression> {
   const addr = normalizeAddress(channel, address);
   const id = `${channel}:${addr}`;
   const existing = await db.suppressions.get(id);
