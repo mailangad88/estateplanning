@@ -3,7 +3,8 @@ import Link from "next/link";
 import { TOOLS } from "@/config/tools";
 import { EXPLAINERS } from "@/explainers/data";
 import { getChecklists, getComparisons, getFaqs, getGlossary, getGuides, getLessons, getLifeEvents, getMistakes, getPosts } from "@/lib/content";
-import { PageHeader } from "@/components/ui";
+import { CardGrid, PageHeader } from "@/components/ui";
+import { GUIDES } from "@/content/guides";
 
 export const metadata: Metadata = {
   title: "Free estate planning resources",
@@ -27,7 +28,7 @@ export default function Resources() {
   ];
   return (
     <>
-      <PageHeader title="Free resources" lead="Everything we publish, free, with no sign-up required to read it." />
+      <PageHeader title="Free resources" lead="Everything we publish, free, with no sign-up required to read it. Only the printable workbooks ask for an email." />
       <ul className="cards">
         {groups.map((g) => (
           <li key={g.href}>
@@ -39,6 +40,9 @@ export default function Resources() {
           </li>
         ))}
       </ul>
+      <h2>Printable guides to download</h2>
+      <p>Longer workbooks you can save as a PDF. We email you a copy so you can find it later.</p>
+      <CardGrid items={GUIDES.map((g) => ({ href: `/resources/${g.slug}`, title: g.title, description: g.summary, tag: `${g.pages} pages` }))} />
     </>
   );
 }

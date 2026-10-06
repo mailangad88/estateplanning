@@ -34,3 +34,21 @@ describe("effectiveContactMethod", () => {
     expect(effectiveContactMethod({ preferredContact: "text", smsConsent: true })).toBe("text");
   });
 });
+
+describe("capture fields", () => {
+  it("defaults to the plan finder and accepts tool results", () => {
+    expect(leadSubmissionSchema.parse(valid).capture.tool).toBe("plan_finder");
+    const r = leadSubmissionSchema.parse({ ...valid, capture: { tool: "cost_calculator", result: { estateValue: 500000 } } });
+    expect(r.capture.result?.estateValue).toBe(500000);
+  });
+
+  it("allows a missing last name but still requires a phone", () => {
+    const { lastName: _ignored, ...noLast } = valid;
+    expect(leadSubmissionSchema.safeParse(noLast).success).toBe(true);
+    expect(leadSubmissionSchema.safeParse({ ...valid, phone: "" }).success).toBe(false);
+  });
+
+  it("rejects unknown capture tools", () => {
+    expect(leadSubmissionSchema.safeParse({ ...valid, capture: { tool: "spam" } }).success).toBe(false);
+  });
+});

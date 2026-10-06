@@ -18,6 +18,8 @@ export function allPages(): SitePage[] {
   const pages: SitePage[] = [
     { path: "/", title: "Estate planning with a real attorney", description: "Wills, trusts and powers of attorney, explained plainly.", updated: TODAY, section: "Main" },
     { path: "/plan-finder", title: "Plan finder", description: "Answer a few questions and book a consult.", updated: TODAY, section: "Main" },
+    { path: "/intake", title: "Book a consult", description: "Full intake form for an estate planning consult.", updated: TODAY, section: "Main" },
+    { path: "/callback", title: "Request a call back", description: "Leave your number and pick a time for our intake team to call.", updated: TODAY, section: "Main" },
     { path: "/resources", title: "All resources", description: "Every guide, tool, checklist and explainer.", updated: TODAY, section: "Main" },
     { path: "/pricing", title: "Pricing", description: "Flat-fee estate planning packages.", updated: TODAY, section: "Main" },
     { path: "/about", title: "About the firm", description: "Who we are and how we work.", updated: TODAY, section: "Main" },

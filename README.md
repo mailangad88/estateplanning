@@ -14,6 +14,34 @@ Phase 1 foundation for the estate planning lead generation site described in the
   per-signed-retainer rules are refused unless the business structure permits them and counsel approval
   is recorded. Under the launch structure (`in_firm`) nothing is invoiced.
 
+## Lead capture tools
+
+Every tool shows its headline result before asking for anything, then offers more (a full report or a guide) in
+exchange for name, email, phone and state. All of them post to `/api/leads` through one shared form
+(`src/components/LeadForm.tsx`), so consent, scoring and CRM delivery work the same everywhere.
+
+| Page | What it does | `capture.tool` |
+| --- | --- | --- |
+| `/intake` | Five-step consult request: tap questions first, contact details last | `intake` (always hot) |
+| `/callback` | Short call-back request with a preferred time | `callback` (always hot) |
+| `/tools/readiness` | Ten-question readiness score, gap report after the form | `readiness_score` |
+| `/tools/probate-cost` | Probate cost range (California statutory schedule, general range elsewhere) | `cost_calculator` |
+| `/tools/will-or-trust` | Which factors point toward a will or a trust, breakdown after the form | `will_vs_trust` |
+| `/resources`, `/resources/[slug]` | Six printable guides, opened at `/guides/[slug]` (noindex) after the form | `guide` |
+| Exit offer | Desktop exit-intent modal or small mobile banner, once per 14 days, never to known visitors | `exit_offer` |
+| Phone bar | Sticky Call, Text and Request a call back on phones | n/a |
+
+- **CRM payload** now carries `capture` (tool, resource, figures), `visitorId` and `priorTools`, and segments gain
+  `tool:*` and `resource:*` tags. The CRM automation should send the promised email (guide link or report copy)
+  and, only when `consent.smsConsent` is true, a text.
+- **Progressive profiling:** after a submission the visitor's contact details are kept in their browser, so later
+  forms are prefilled with a "Not you? Clear them" link. Nothing is stored before a submission.
+- **Scoring:** tool intent, repeat use, low readiness and calculator estate value add points (`SCORE_WEIGHTS`).
+- **Calculator figures** live in `src/config/tools.ts` (cost ranges, 2026 federal and state estate tax thresholds,
+  the firm's flat fees, and `phoneOptionalFor` to make phone optional on guides if conversion data says so).
+  The attorney must verify them before launch. Research notes are in the project's shared
+  `research/lead-capture-best-practices.md`.
+
 ## Defaults to confirm
 
 | Setting | Default | Where |
@@ -21,7 +49,8 @@ Phase 1 foundation for the estate planning lead generation site described in the
 | Business structure | `in_firm` (Model A: platform is the firm's marketing and intake department) | `src/config/firm.ts` |
 | Launch state | `XX` placeholder | `SERVED_STATES` env var |
 | CRM | Lawmatics, reached through a Zapier, Make or n8n webhook | `CRM_WEBHOOK_URL` env var |
-| Firm name, attorney, bar number, phone, address | Placeholders | `src/config/firm.ts` |
+| Firm name, attorney, bar number, phone, text number, hours, address | Placeholders | `src/config/firm.ts` |
+| Text number | Must be registered for business texting (10DLC) before the Text button goes live | `firm.textNumber` |
 
 All legal page copy, consent wording and quiz text are drafts that the attorney must approve before launch.
 

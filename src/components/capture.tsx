@@ -194,12 +194,12 @@ export function CallbackForm({ interest = "callback" }: { interest?: string }) {
 }
 
 /** Bottom bar on phones: call, text, book. Hidden on wide screens and in print. */
-export function StickyContactBar({ phone }: { phone: string }) {
+export function StickyContactBar({ phone, textNumber }: { phone: string; textNumber?: string | null }) {
   const digits = phone.replace(/\D/g, "");
   return (
     <div className="sticky-bar no-print">
       <a href={`tel:${digits}`} onClick={() => track("click_to_call")}>Call</a>
-      <a href={`sms:${digits}`} onClick={() => track("click_to_text")}>Text</a>
+      {textNumber && <a href={`sms:${textNumber.replace(/\D/g, "")}`} onClick={() => track("click_to_text")}>Text</a>}
       <Link href="/plan-finder" onClick={() => track("cta_book", { from: "sticky" })}>Book a consult</Link>
     </div>
   );

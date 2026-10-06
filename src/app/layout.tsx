@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SourceTracker from "@/components/SourceTracker";
 import { firm } from "@/config/firm";
 import { ExitIntent, StickyContactBar } from "@/components/capture";
 import { JsonLd, legalServiceLd, SITE_URL } from "@/lib/seo";
@@ -32,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </header>
         <main className="container">{children}</main>
-        <StickyContactBar phone={firm.phone} />
+        <StickyContactBar phone={firm.phone} textNumber={firm.textNumber} />
         <ExitIntent />
         <JsonLd data={legalServiceLd()} />
         <footer className="site">
@@ -45,7 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <p>
               <Link href="/resources">Resources</Link> · <Link href="/glossary">Glossary</Link> · <Link href="/faq">FAQ</Link> ·{" "}
               <Link href="/explainers">Explainers</Link> · <Link href="/course">Free course</Link> · <Link href="/about">About</Link> ·{" "}
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact">Contact</Link> · <Link href="/intake">Full intake form</Link> · <Link href="/callback">Request a call back</Link>
             </p>
             <p>
               <Link href="/legal/privacy">Privacy</Link> · <Link href="/legal/disclaimer">Disclaimer</Link> ·{" "}
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </p>
           </div>
         </footer>
+        <SourceTracker />
       </body>
     </html>
   );

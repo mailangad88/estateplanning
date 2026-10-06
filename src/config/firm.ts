@@ -16,6 +16,8 @@ export const firm = {
   officeHours: "[Office hours]",
   /** What the site promises about response time. Keep it true. */
   responseTime: "[Response time, e.g. within one business day]",
+  /** Number visitors can text. Must be registered for business texting (10DLC) before launch. Null hides the Text button. */
+  textNumber: "(000) 000-0000" as string | null, // PLACEHOLDER
   /**
    * Structure the platform operates under. "in_firm" (Model A in the plan) means
    * the platform is the firm's own marketing and intake department.

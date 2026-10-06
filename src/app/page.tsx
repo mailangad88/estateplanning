@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ProbateVsTrustAnimation from "@/components/ProbateVsTrustAnimation";
 import { firm } from "@/config/firm";
 import { TOOLS } from "@/config/tools";
 import { EXPLAINERS } from "@/explainers/data";
@@ -29,6 +30,28 @@ export default function Home() {
 
       <h2>Start where you are</h2>
       <CardGrid items={getLifeEvents().map((l) => ({ href: `/life-events/${l.slug}`, title: l.event, description: l.description }))} />
+
+      <h2>Free tools</h2>
+      <ul className="card-grid">
+        <li className="card">
+          <strong>How ready is your plan?</strong>
+          <p>Ten questions, instant score.</p>
+          <Link className="button small" href="/tools/readiness">Check my score</Link>
+        </li>
+        <li className="card">
+          <strong>What could probate cost?</strong>
+          <p>A rough range for your state.</p>
+          <Link className="button small" href="/tools/probate-cost">Estimate it</Link>
+        </li>
+        <li className="card">
+          <strong>Will or trust?</strong>
+          <p>See which way your answers point.</p>
+          <Link className="button small" href="/tools/will-or-trust">Compare</Link>
+        </li>
+      </ul>
+
+      <h2>Probate or a trust, in ten seconds</h2>
+      <ProbateVsTrustAnimation />
 
       <h2>How it works</h2>
       <ol className="steps">
