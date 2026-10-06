@@ -347,6 +347,25 @@ CREATE TABLE crm_deliveries (
 CREATE INDEX crm_deliveries_lead_idx ON crm_deliveries (lead_id);
 CREATE INDEX crm_deliveries_status_idx ON crm_deliveries (status, last_attempt_at);
 
+-- Seminars, webinars and community talks with their costs and entered counts (seminar economics, C17).
+-- Leads attribute through utm_campaign = code or a "seminar:<code>" tag; no personal data lives here.
+CREATE TABLE seminars (
+  id          text PRIMARY KEY,
+  code        text NOT NULL UNIQUE,
+  title       text NOT NULL,
+  format      text NOT NULL CHECK (format IN ('in_person','webinar','library_talk')),
+  held_on     date NOT NULL,
+  venue       text,
+  costs       jsonb NOT NULL DEFAULT '{}',
+  mail_pieces integer CHECK (mail_pieces >= 0),
+  rsvps       integer NOT NULL DEFAULT 0 CHECK (rsvps >= 0),
+  attendees   integer NOT NULL DEFAULT 0 CHECK (attendees >= 0),
+  notes       text,
+  created_by  text NOT NULL,
+  created_at  timestamptz NOT NULL,
+  updated_at  timestamptz NOT NULL
+);
+
 -- Hash-chained, append-only (see src/server/audit/log.ts).
 CREATE TABLE audit_events (
   id            text PRIMARY KEY,
@@ -531,6 +550,7 @@ ALTER TABLE sequence_enrollments ENABLE ROW LEVEL SECURITY;  ALTER TABLE sequenc
 ALTER TABLE suppressions         ENABLE ROW LEVEL SECURITY;  ALTER TABLE suppressions         FORCE ROW LEVEL SECURITY;
 ALTER TABLE fact_verifications   ENABLE ROW LEVEL SECURITY;  ALTER TABLE fact_verifications   FORCE ROW LEVEL SECURITY;
 ALTER TABLE crm_deliveries       ENABLE ROW LEVEL SECURITY;  ALTER TABLE crm_deliveries       FORCE ROW LEVEL SECURITY;
+ALTER TABLE seminars             ENABLE ROW LEVEL SECURITY;  ALTER TABLE seminars             FORCE ROW LEVEL SECURITY;
 ALTER TABLE audit_events         ENABLE ROW LEVEL SECURITY;  ALTER TABLE audit_events         FORCE ROW LEVEL SECURITY;
 
 -- Workers (public intake form, e-sign webhooks, nurture engine, routing) are trusted
@@ -552,6 +572,7 @@ CREATE POLICY service_all ON billable_events      FOR ALL TO app_service USING (
 CREATE POLICY service_all ON sequence_enrollments FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON suppressions         FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON crm_deliveries       FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON seminars             FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_read ON fee_rule_versions   FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON fact_verifications  FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON invoices            FOR SELECT TO app_service USING (true);
@@ -679,6 +700,10 @@ CREATE POLICY enrollments_admin ON sequence_enrollments FOR ALL TO app_user
 CREATE POLICY suppressions_staff ON suppressions FOR ALL TO app_user
   USING (app_role() IN ('platform_admin','intake')) WITH CHECK (app_role() IN ('platform_admin','intake'));
 
+-- seminars: marketing and platform admins plan events and enter costs and counts.
+CREATE POLICY seminars_marketing ON seminars FOR ALL TO app_user
+  USING (app_role() IN ('platform_admin','marketing')) WITH CHECK (app_role() IN ('platform_admin','marketing'));
+
 -- crm_deliveries (lead health page): read-only for admins; platform_admin sees all, firm_admin only their firm's leads.
 CREATE POLICY crm_deliveries_select ON crm_deliveries FOR SELECT TO app_user USING (
   app_role() = 'platform_admin'
@@ -721,6 +746,7 @@ GRANT SELECT, INSERT                 ON fact_verifications TO app_user;
 GRANT UPDATE                         ON invoices TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON sequence_enrollments TO app_user;
 GRANT SELECT                         ON lead_offer_cards, client_consults, lead_funnel_daily, crm_deliveries TO app_user;
+GRANT SELECT, INSERT, UPDATE         ON seminars TO app_user;
 
 -- Audit trail: INSERT only. No SELECT/UPDATE/DELETE/TRUNCATE grant to the app at all
 -- except SELECT for the platform_admin/firm_admin policy above.
@@ -732,6 +758,7 @@ REVOKE UPDATE, DELETE, TRUNCATE ON fact_verifications FROM PUBLIC, app_user, app
 GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, leads, assignments, documents, comments,
   activities, consults, engagements, tasks, billable_events, sequence_enrollments, suppressions TO app_service;
 GRANT SELECT, INSERT, UPDATE ON crm_deliveries TO app_service;
+GRANT SELECT, INSERT, UPDATE ON seminars TO app_service;
 GRANT SELECT, INSERT ON invoices TO app_service;
 GRANT SELECT ON fee_rule_versions TO app_service;
 GRANT SELECT ON fact_verifications TO app_service; -- approvals are written in the approver's own session

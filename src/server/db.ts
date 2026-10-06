@@ -5,6 +5,7 @@
  * by the policy functions in src/server/auth/policy.ts and by row-level security.
  */
 import type {
+  Seminar,
   Activity,
   Assignment,
   AuditEvent,
@@ -125,6 +126,7 @@ export interface Db {
   factVerifications: Collection<FactVerification>;
   automationState: Collection<AutomationState>;
   crmDeliveries: Collection<CrmDelivery>;
+  seminars: Collection<Seminar>;
   audit: AppendOnly<AuditEvent>;
 }
 
@@ -158,6 +160,7 @@ export function createMemoryDb(): Db {
     factVerifications: new MemoryCollection(),
     automationState: new MemoryCollection(),
     crmDeliveries: new MemoryCollection(),
+    seminars: new MemoryCollection(),
     audit: new MemoryAppendOnly(),
   };
 }

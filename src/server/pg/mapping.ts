@@ -172,6 +172,14 @@ export const TABLES = {
     table: "automation_state",
     columns: [n("cursorSeq", "cursor_seq"), j("stages", "stages"), j("exits", "exits"), t("id", "id")],
   },
+  seminars: {
+    table: "seminars",
+    columns: [
+      t("id", "id"), t("code", "code"), t("title", "title"), t("format", "format"), d("heldOn", "held_on"), t("venue", "venue", true),
+      j("costs", "costs"), n("mailPieces", "mail_pieces", true), n("rsvps", "rsvps"), n("attendees", "attendees"), t("notes", "notes", true),
+      t("createdBy", "created_by"), ts("createdAt", "created_at"), ts("updatedAt", "updated_at"),
+    ],
+  },
   crmDeliveries: {
     table: "crm_deliveries",
     columns: [

@@ -53,7 +53,7 @@ export default async function PortalHome() {
         <h1>Funnel</h1>
         <p className="notice">Marketing sees totals only, never individual intake details.</p>
         <table><tbody>{[...byStage].map(([s, n]) => <tr key={s}><td>{s.replaceAll("_", " ")}</td><td>{n}</td></tr>)}</tbody></table>
-        <p><Link href="/admin/analytics">Funnel analytics by source and tool</Link></p>
+        <p><Link href="/admin/analytics">Funnel analytics by source and tool</Link> · <Link href="/admin/seminars">Seminars and webinars</Link></p>
         <SignOut />
       </>
     );
@@ -114,6 +114,7 @@ function Nav({ actor }: { actor: Actor }) {
   if (can(actor, "view_reports")) links.push(["/admin/analytics", "Analytics"]);
   if (can(actor, "view_lead_health")) links.push(["/admin/lead-health", "Lead health"]);
   if (can(actor, "manage_firm_capacity")) links.push(["/admin/capacity", "Capacity"]);
+  if (can(actor, "manage_seminars")) links.push(["/admin/seminars", "Seminars"]);
   if (can(actor, "manage_fee_rules")) links.push(["/admin/fees", "Fee rules"]);
   if (can(actor, "verify_facts")) links.push(["/portal/facts", "Fact verification"]);
   if (!links.length) return null;

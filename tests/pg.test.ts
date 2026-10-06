@@ -10,7 +10,7 @@ import { audit, verifyAuditChain } from "@/server/audit/log";
 import { PgMfaStore } from "@/server/pg/mfa";
 import { buildCaseView } from "@/server/portal/caseView";
 import type {
-  Activity, Assignment, Comment, Consult, CrmDelivery, DocumentRecord, Engagement, Firm, Lawyer, Lead, Person, Task, User,
+  Activity, Assignment, Comment, Consult, CrmDelivery, DocumentRecord, Seminar, Engagement, Firm, Lawyer, Lead, Person, Task, User,
 } from "@/server/types";
 import type { FeeRuleVersion, Invoice } from "@/server/fees/admin";
 import type { BillableEvent } from "@/lib/fees";
@@ -166,6 +166,10 @@ const fixtures = {
     id: "l1", leadId: "l1", event: "lead.created", status: "failed", httpStatus: 503, attempts: 3, error: "HTTP 503",
     createdAt: T0, updatedAt: T0, lastAttemptAt: T0, deliveredAt: T0,
   } satisfies Required<CrmDelivery>,
+  seminars: {
+    id: "sem1", code: "trusts101-oct", title: "Trusts 101", format: "library_talk", heldOn: "2026-10-20", venue: "Main library",
+    costs: { venue: 0, mail: 45000 }, mailPieces: 500, rsvps: 30, attendees: 21, notes: "n", createdBy: "u-admin", createdAt: T0, updatedAt: T0,
+  } satisfies Required<Seminar>,
   automationState: { id: "automation", cursorSeq: 42, stages: { l1: "offered" }, exits: { l1: "x" } } satisfies Required<AutomationState>,
 };
 
@@ -466,6 +470,17 @@ suite("postgres integration", () => {
     await expect(as({ userId: "u-admin", role: "platform_admin" }).crmDeliveries.insert({ ...fixtures.crmDeliveries, id: "x" })).rejects.toThrow();
     const updated = await service.crmDeliveries.update("l1", { status: "delivered", error: undefined, httpStatus: 200 });
     expect(updated.error).toBeUndefined();
+  });
+
+  maybe("RLS: seminars are marketing and platform admin data only", async () => {
+    const marketing = as({ userId: "u-mkt", role: "marketing" });
+    const attorney = as({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" });
+    const sem = { ...fixtures.seminars, id: "sem-rls", code: "rls-test" };
+    await marketing.seminars.insert(sem);
+    expect((await marketing.seminars.get("sem-rls"))?.code).toBe("rls-test");
+    expect(await attorney.seminars.list()).toEqual([]);
+    await expect(attorney.seminars.insert({ ...sem, id: "sem-x", code: "x-test" })).rejects.toThrow();
+    await expect(service.seminars.insert({ ...sem, id: "sem-dup" })).rejects.toThrow(); // code is unique
   });
 
   maybe("audit_events cannot be updated or deleted", async () => {

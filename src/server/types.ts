@@ -356,3 +356,23 @@ export interface CrmDelivery {
   lastAttemptAt: string;
   deliveredAt?: string;
 }
+
+/** One seminar, webinar or community talk, with its costs and the counts entered after it (C17). */
+export interface Seminar {
+  id: string;
+  /** Short code used as utm_campaign on invitations and registration links, and as a "seminar:<code>" lead tag */
+  code: string;
+  title: string;
+  format: "in_person" | "webinar" | "library_talk";
+  heldOn: string;
+  venue?: string;
+  /** Costs in cents by line item, for example venue, mail, ads, refreshments, materials */
+  costs: Record<string, number>;
+  mailPieces?: number;
+  rsvps: number;
+  attendees: number;
+  notes?: string;
+  createdBy: string;
+  createdAt: string;
+  updatedAt: string;
+}

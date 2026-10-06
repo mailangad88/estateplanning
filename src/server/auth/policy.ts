@@ -114,7 +114,8 @@ export type GlobalAction =
   | "view_invoices"
   | "manage_firm_capacity"
   | "work_intake_queue"
-  | "verify_facts";
+  | "verify_facts"
+  | "manage_seminars";
 
 const GLOBAL: Record<GlobalAction, Role[]> = {
   configure_routing: ["platform_admin"],
@@ -129,6 +130,8 @@ const GLOBAL: Record<GlobalAction, Role[]> = {
   work_intake_queue: ["platform_admin", "intake"],
   // Approving a state fact or dollar figure for publication is a legal judgment: attorneys and platform admins only.
   verify_facts: ["platform_admin", "attorney"],
+  // Seminar costs and counts are marketing data; readouts are totals only.
+  manage_seminars: ["platform_admin", "marketing"],
 };
 
 export function can(actor: Actor, action: GlobalAction): boolean {
