@@ -9,7 +9,7 @@ import JsonLd from "@/components/JsonLd";
 import LinkList from "@/components/LinkList";
 import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
-import { getCluster, getClusterArticles, getClusters, getPillar } from "@/lib/library";
+import { getCluster, getClusterArticles, getClusters, getPillar , isIndexable } from "@/lib/library";
 import ToolsBox from "@/components/ToolsBox";
 import { siteLinksFor, toolsFor } from "@/lib/site-links";
 import { articleSchema, breadcrumbSchema, faqSchema, graph, itemListSchema } from "@/lib/schema";
@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     title: p.title,
     description: p.description,
     alternates: { canonical: p.url, types: { "text/markdown": `/raw${p.url}.md` } },
+    robots: isIndexable(p) ? undefined : { index: false, follow: true },
     openGraph: { type: "article", title: p.title, description: p.description, url: p.url, modifiedTime: p.updated },
   };
 }
@@ -62,7 +63,7 @@ export default async function PillarPage({ params }: { params: Promise<Params> }
       />
       <Breadcrumbs items={crumbs} />
       <h1>{p.title}</h1>
-      <PageMeta updated={p.updated} words={p.wordCount} />
+      <PageMeta updated={p.updated} words={p.wordCount} reviewed={p.review === "approved"} />
       <AnswerBox answer={p.answer} takeaways={p.takeaways} />
       <LinkList
         id="in-this-guide"

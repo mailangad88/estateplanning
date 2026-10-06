@@ -191,3 +191,53 @@ describe("cross-links to the rest of the site", () => {
     expect(clusterMapPaths().filter((p) => !resolved.has(p))).toEqual([]);
   });
 });
+
+describe("landing page quality gate", () => {
+  it("no two pages are near-duplicates (8-word shingle overlap)", () => {
+    const shingles = (text: string) => {
+      const words = text.toLowerCase().replace(/\[([^\]]*)\]\([^)]*\)/g, "$1").match(/[a-z0-9']+/g) ?? [];
+      const out = new Set<string>();
+      for (let i = 0; i + 8 <= words.length; i++) out.add(words.slice(i, i + 8).join(" "));
+      return out;
+    };
+    const pages = [...articles, ...states].map((p) => ({ url: p.url, sh: shingles(p.markdown) }));
+    const dupes: string[] = [];
+    for (let i = 0; i < pages.length; i++) {
+      for (let j = i + 1; j < pages.length; j++) {
+        const a = pages[i].sh;
+        const b = pages[j].sh;
+        let shared = 0;
+        for (const s of a) if (b.has(s)) shared++;
+        const overlap = shared / Math.min(a.size, b.size);
+        if (overlap > 0.15) dupes.push(`${pages[i].url} ~ ${pages[j].url} (${Math.round(overlap * 100)}%)`);
+      }
+    }
+    expect(dupes).toEqual([]);
+  });
+
+  it("every library article sends readers to the plan finder or a free tool", () => {
+    const missing = articles
+      .filter((a) => !a.links.some((l) => l === "/plan-finder" || l.startsWith("/tools/") || l.startsWith("/checklists/")))
+      .map((a) => a.url);
+    expect(missing).toEqual([]);
+  });
+
+  it("the landing page queue is consistent with the topic map", () => {
+    const queue = JSON.parse(fs.readFileSync(path.join(process.cwd(), "content", "queue.json"), "utf8")) as {
+      items: { id: string; slug: string; cluster: string; status: string; intent: string }[];
+    };
+    const ids = new Set<string>();
+    const problems: string[] = [];
+    const statuses = new Set(["queued", "drafted", "published", "covered", "blocked", "skipped"]);
+    for (const q of queue.items) {
+      if (ids.has(q.id)) problems.push(`duplicate id ${q.id}`);
+      ids.add(q.id);
+      if (!statuses.has(q.status)) problems.push(`${q.id} has unknown status ${q.status}`);
+      if (!getClusters().some((c) => c.slug === q.cluster)) problems.push(`${q.id} has unknown cluster ${q.cluster}`);
+      if ((q.status === "drafted" || q.status === "published") && !validUrls.has(`/learn/${q.cluster}/${q.slug}`)) {
+        problems.push(`${q.id} is ${q.status} but /learn/${q.cluster}/${q.slug} does not exist`);
+      }
+    }
+    expect(problems).toEqual([]);
+  });
+});

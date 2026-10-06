@@ -4,7 +4,7 @@ import { TOOLS } from "@/config/tools";
 import { EXPLAINERS } from "@/explainers/data";
 import { getAudiences, getChecklists, getComparisons, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
 import { getStates } from "@/lib/states";
-import { getAllArticles, getCluster, getGlossary as getTermPages, getStateGuides } from "@/lib/library";
+import { getAllArticles, getCluster, getGlossary as getTermPages, getStateGuides, isIndexable } from "@/lib/library";
 
 export interface SitePage {
   path: string;
@@ -57,10 +57,10 @@ export function allPages(): SitePage[] {
   // Estate planning library: topic-cluster pillars and articles, state law guides, glossary term pages.
   pages.push({ path: "/learn", title: "Estate planning library", description: "Every guide in the library, organized by topic.", updated: TODAY, section: "Main" });
   pages.push({ path: "/estate-planning", title: "Estate planning laws by state", description: "Will signing rules, probate, small estate limits and state taxes for all 50 states and DC.", updated: TODAY, section: "Main" });
-  for (const a of getAllArticles()) {
+  for (const a of getAllArticles().filter(isIndexable)) {
     pages.push({ path: a.url, title: a.title, description: a.description, updated: a.updated || TODAY, section: `Library: ${getCluster(a.cluster)?.name ?? a.cluster}` });
   }
-  for (const s of getStateGuides()) {
+  for (const s of getStateGuides().filter(isIndexable)) {
     pages.push({ path: s.url, title: s.title, description: s.description, updated: s.updated || TODAY, section: "Laws by state" });
   }
   for (const g of getTermPages()) {
