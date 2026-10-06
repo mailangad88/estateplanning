@@ -1,14 +1,16 @@
 import Link from "next/link";
+import { can } from "@/server/auth/policy";
 import { devLoginEnabled } from "@/server/auth/session";
 import { lawyerDashboard, visibleLeads } from "@/server/portal/caseView";
-import { currentActor, getDb } from "@/server/runtime";
+import { currentActor, getDb, scopedDb } from "@/server/runtime";
 import { MATTER_LABELS } from "@/server/services/leads";
+import type { Actor } from "@/server/types";
 
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Portal", robots: { index: false, follow: false } };
 
-function SignIn() {
-  const db = getDb();
+async function SignIn() {
+  const db = await getDb();
   return (
     <>
       <h1>Portal sign-in</h1>
@@ -18,7 +20,7 @@ function SignIn() {
           <label className="field">
             Sign in as
             <select name="userId">
-              {db.users.list((u) => u.active).map((u) => (
+              {(await db.users.list((u) => u.active)).map((u) => (
                 <option key={u.id} value={u.id}>{u.name} ({u.role.replace("_", " ")})</option>
               ))}
             </select>
@@ -26,7 +28,7 @@ function SignIn() {
           <button className="button">Sign in</button>
         </form>
       ) : (
-        <p>Use the sign-in link from your firm. Sign-in requires two-step verification.</p>
+        <p><Link className="button" href="/portal/login">Sign in with your email</Link> Sign-in requires two-step verification.</p>
       )}
     </>
   );
@@ -39,11 +41,11 @@ function minutesLeft(iso: string) {
 export default async function PortalHome() {
   const actor = await currentActor();
   if (!actor) return <SignIn />;
-  const db = getDb();
-  const user = db.users.get(actor.userId);
+  const db = scopedDb(await getDb(), actor);
+  const user = await db.users.get(actor.userId);
 
   if (actor.role === "marketing") {
-    const leads = db.leads.list();
+    const leads = await db.leads.list();
     const byStage = new Map<string, number>();
     for (const l of leads) byStage.set(l.stage, (byStage.get(l.stage) ?? 0) + 1);
     return (
@@ -51,17 +53,19 @@ export default async function PortalHome() {
         <h1>Funnel</h1>
         <p className="notice">Marketing sees totals only, never individual intake details.</p>
         <table><tbody>{[...byStage].map(([s, n]) => <tr key={s}><td>{s.replaceAll("_", " ")}</td><td>{n}</td></tr>)}</tbody></table>
+        <p><Link href="/admin/analytics">Funnel analytics by source and tool</Link></p>
         <SignOut />
       </>
     );
   }
 
-  const dash = actor.role === "attorney" ? lawyerDashboard(db, actor) : null;
-  const leads = visibleLeads(db, actor).sort((a, b) => Number(b.lead.urgent) - Number(a.lead.urgent) || b.lead.createdAt.localeCompare(a.lead.createdAt));
+  const dash = actor.role === "attorney" ? await lawyerDashboard(db, actor) : null;
+  const leads = (await visibleLeads(db, actor)).sort((a, b) => Number(b.lead.urgent) - Number(a.lead.urgent) || b.lead.createdAt.localeCompare(a.lead.createdAt));
 
   return (
     <>
       <h1>Hello, {user?.name}</h1>
+      <Nav actor={actor} />
       {dash && (
         <>
           <h2>New offers</h2>
@@ -102,6 +106,17 @@ export default async function PortalHome() {
       <SignOut />
     </>
   );
+}
+
+function Nav({ actor }: { actor: Actor }) {
+  const links: [string, string][] = [];
+  if (can(actor, "work_intake_queue")) links.push(["/portal/queue", "Intake queue"]);
+  if (can(actor, "view_reports")) links.push(["/admin/analytics", "Analytics"]);
+  if (can(actor, "view_lead_health")) links.push(["/admin/lead-health", "Lead health"]);
+  if (can(actor, "manage_fee_rules")) links.push(["/admin/fees", "Fee rules"]);
+  if (can(actor, "verify_facts")) links.push(["/portal/facts", "Fact verification"]);
+  if (!links.length) return null;
+  return <p>{links.map(([href, text], i) => <span key={href}>{i > 0 && " · "}<Link href={href}>{text}</Link></span>)}</p>;
 }
 
 function SignOut() {

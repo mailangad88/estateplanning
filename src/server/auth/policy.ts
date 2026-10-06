@@ -109,10 +109,12 @@ export type GlobalAction =
   | "approve_fee_rule"
   | "manage_users"
   | "view_reports"
+  | "view_lead_health"
   | "manage_content"
   | "view_invoices"
   | "manage_firm_capacity"
-  | "work_intake_queue";
+  | "work_intake_queue"
+  | "verify_facts";
 
 const GLOBAL: Record<GlobalAction, Role[]> = {
   configure_routing: ["platform_admin"],
@@ -120,10 +122,13 @@ const GLOBAL: Record<GlobalAction, Role[]> = {
   approve_fee_rule: ["platform_admin"],
   manage_users: ["platform_admin", "firm_admin"],
   view_reports: ["platform_admin", "marketing", "firm_admin"],
+  view_lead_health: ["platform_admin", "firm_admin"],
   manage_content: ["platform_admin", "marketing"],
   view_invoices: ["platform_admin", "firm_admin"],
   manage_firm_capacity: ["platform_admin", "firm_admin"],
   work_intake_queue: ["platform_admin", "intake"],
+  // Approving a state fact or dollar figure for publication is a legal judgment: attorneys and platform admins only.
+  verify_facts: ["platform_admin", "attorney"],
 };
 
 export function can(actor: Actor, action: GlobalAction): boolean {

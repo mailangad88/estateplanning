@@ -68,10 +68,10 @@ export function touchSession(token: string, now = new Date()): string | null {
   return `${data}.${sign(data)}`;
 }
 
-export function actorFromSession(db: Db, token: string | undefined, now = new Date()): Actor | null {
+export async function actorFromSession(db: Db, token: string | undefined, now = new Date()): Promise<Actor | null> {
   const p = readSession(token, now);
   if (!p) return null;
-  const user = db.users.get(p.uid);
+  const user = await db.users.get(p.uid);
   if (!user || !user.active) return null;
   return {
     userId: user.id,

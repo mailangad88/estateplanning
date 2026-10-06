@@ -118,47 +118,47 @@ export function renderLetter(input: {
   return parts.join("\n\n");
 }
 
-function getEngagement(db: Db, id: string): Engagement {
-  const e = db.engagements.get(id);
+async function getEngagement(db: Db, id: string): Promise<Engagement> {
+  const e = await db.engagements.get(id);
   if (!e) throw new Error(`engagement not found: ${id}`);
   return e;
 }
 
-function leadFor(db: Db, e: Engagement): Lead {
-  const lead = db.leads.get(e.leadId);
+async function leadFor(db: Db, e: Engagement): Promise<Lead> {
+  const lead = await db.leads.get(e.leadId);
   if (!lead) throw new Error(`lead not found: ${e.leadId}`);
   return lead;
 }
 
-function assertOnLead(db: Db, actor: Actor, e: Engagement, action: "draft_engagement" | "approve_engagement", now: Date): Lead {
-  const lead = leadFor(db, e);
-  assertCan(canOnLead(actor, action, lead, db.assignments.list(), now));
+async function assertOnLead(db: Db, actor: Actor, e: Engagement, action: "draft_engagement" | "approve_engagement", now: Date): Promise<Lead> {
+  const lead = await leadFor(db, e);
+  assertCan(canOnLead(actor, action, lead, await db.assignments.list(), now));
   return lead;
 }
 
 /** Moves the lead stage forward only. */
-function advanceStage(db: Db, lead: Lead, stage: Stage, by: string, at: string) {
-  const current = db.leads.get(lead.id) ?? lead;
+async function advanceStage(db: Db, lead: Lead, stage: Stage, by: string, at: string) {
+  const current = await db.leads.get(lead.id) ?? lead;
   if (STAGES.indexOf(stage) <= STAGES.indexOf(current.stage)) return;
-  db.leads.update(lead.id, { stage, stageHistory: [...current.stageHistory, { stage, at, by }] });
+  await db.leads.update(lead.id, { stage, stageHistory: [...current.stageHistory, { stage, at, by }] });
 }
 
-function systemNote(db: Db, leadId: string, summary: string, at: string, byUserId?: string) {
-  db.activities.insert({ id: randomUUID(), leadId, kind: "system", at, summary, byUserId });
+async function systemNote(db: Db, leadId: string, summary: string, at: string, byUserId?: string) {
+  await db.activities.insert({ id: randomUUID(), leadId, kind: "system", at, summary, byUserId });
 }
 
-export function draftEngagement(db: Db, actor: Actor, input: DraftInput, now = new Date()): Engagement {
-  const lead = db.leads.get(input.leadId);
+export async function draftEngagement(db: Db, actor: Actor, input: DraftInput, now = new Date()): Promise<Engagement> {
+  const lead = await db.leads.get(input.leadId);
   if (!lead) throw new Error(`lead not found: ${input.leadId}`);
-  assertCan(canOnLead(actor, "draft_engagement", lead, db.assignments.list(), now));
+  assertCan(canOnLead(actor, "draft_engagement", lead, await db.assignments.list(), now));
   const pkg = PACKAGES[input.packageId];
   if (!pkg) throw new Error(`unknown package: ${input.packageId}`);
   if (!Number.isInteger(input.feeCents) || input.feeCents <= 0) throw new Error("feeCents must be a positive integer");
   if (input.couple && !input.couple.spouseName.trim()) throw new Error("spouseName required");
-  const person = db.persons.get(lead.personId);
+  const person = await db.persons.get(lead.personId);
   if (!person) throw new Error(`person not found: ${lead.personId}`);
   const lawyerId = lead.assignedLawyerId!;
-  const lawyer = db.lawyers.get(lawyerId);
+  const lawyer = await db.lawyers.get(lawyerId);
   const firmId = lead.firmId ?? lawyer?.firmId;
   if (!firmId) throw new Error("lead has no firm");
 
@@ -171,7 +171,7 @@ export function draftEngagement(db: Db, actor: Actor, input: DraftInput, now = n
     couple: input.couple,
   });
   const at = now.toISOString();
-  const e = db.engagements.insert({
+  const e = await db.engagements.insert({
     id: randomUUID(),
     leadId: lead.id,
     firmId,
@@ -186,22 +186,22 @@ export function draftEngagement(db: Db, actor: Actor, input: DraftInput, now = n
     remindersSent: [],
     documentIds: [],
   });
-  audit(db, actor, { action: "engagement.draft", resourceType: "engagement", resourceId: e.id, leadId: lead.id, detail: { packageId: pkg.id, status: "draft" }, at: now });
+  await audit(db, actor, { action: "engagement.draft", resourceType: "engagement", resourceId: e.id, leadId: lead.id, detail: { packageId: pkg.id, status: "draft" }, at: now });
   return e;
 }
 
-export function approveEngagement(db: Db, actor: Actor, engagementId: string, now = new Date()): Engagement {
-  const e = getEngagement(db, engagementId);
-  assertOnLead(db, actor, e, "approve_engagement", now);
+export async function approveEngagement(db: Db, actor: Actor, engagementId: string, now = new Date()): Promise<Engagement> {
+  const e = await getEngagement(db, engagementId);
+  await assertOnLead(db, actor, e, "approve_engagement", now);
   if (e.status !== "draft") throw new Error(`cannot approve an engagement that is ${e.status}`);
   const at = now.toISOString();
-  const next = db.engagements.update(e.id, {
+  const next = await db.engagements.update(e.id, {
     status: "approved",
     approvedBy: actor.userId,
     approvedAt: at,
     history: [...e.history, { status: "approved", at }],
   });
-  audit(db, actor, { action: "engagement.approve", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { status: "approved" }, at: now });
+  await audit(db, actor, { action: "engagement.approve", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { status: "approved" }, at: now });
   return next;
 }
 
@@ -213,10 +213,10 @@ export async function sendEngagement(
   payments: PaymentProvider,
   now = new Date(),
 ): Promise<Engagement> {
-  const e = getEngagement(db, engagementId);
-  const lead = assertOnLead(db, actor, e, "draft_engagement", now);
+  const e = await getEngagement(db, engagementId);
+  const lead = await assertOnLead(db, actor, e, "draft_engagement", now);
   if (e.status !== "approved" || !e.approvedBy) throw new Error("engagement must be approved by the attorney before sending");
-  const person = db.persons.get(lead.personId);
+  const person = await db.persons.get(lead.personId);
   if (!person || !e.letter) throw new Error("engagement is missing client or letter");
 
   const envelope = await provider.createEnvelope({
@@ -236,15 +236,15 @@ export async function sendEngagement(
   });
 
   const at = now.toISOString();
-  const next = db.engagements.update(e.id, {
+  const next = await db.engagements.update(e.id, {
     status: "sent",
     provider: provider.name,
     providerEnvelopeId: envelope.envelopeId,
     history: [...e.history, { status: "sent", at }],
   });
-  advanceStage(db, lead, "proposal_sent", actor.userId, at);
-  systemNote(db, lead.id, "Engagement sent for signature", at, actor.userId);
-  audit(db, actor, {
+  await advanceStage(db, lead, "proposal_sent", actor.userId, at);
+  await systemNote(db, lead.id, "Engagement sent for signature", at, actor.userId);
+  await audit(db, actor, {
     action: "engagement.send",
     resourceType: "engagement",
     resourceId: e.id,
@@ -263,10 +263,10 @@ function seen(e: Engagement, status: EngagementStatus) {
 }
 
 /** Moves to `status` only if it is ahead of the current one; always records the history entry once. */
-function applyStatus(db: Db, e: Engagement, status: EngagementStatus, at: string): Engagement {
+async function applyStatus(db: Db, e: Engagement, status: EngagementStatus, at: string): Promise<Engagement> {
   const history = seen(e, status) ? e.history : [...e.history, { status, at }];
   const forward = RANK[status] > RANK[e.status];
-  return db.engagements.update(e.id, { status: forward ? status : e.status, history });
+  return await db.engagements.update(e.id, { status: forward ? status : e.status, history });
 }
 
 export type StoreBlob = (key: string, bytes: Uint8Array) => void | Promise<void>;
@@ -282,36 +282,36 @@ export async function handleEsignWebhook(
   const events = provider.parseWebhook(rawBody, headers); // throws on a bad signature
   let processed = 0;
   for (const ev of events) {
-    const e = db.engagements.list((x) => x.providerEnvelopeId === ev.envelopeId)[0];
+    const e = (await db.engagements.list((x) => x.providerEnvelopeId === ev.envelopeId))[0];
     if (!e || e.status === "voided" || seen(e, ev.status as EngagementStatus)) continue; // unknown, voided or duplicate
     if (ev.status === "declined") {
-      audit(db, "system", { action: "engagement.declined", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { status: "declined" }, at: now });
-      systemNote(db, e.leadId, "Client declined the engagement", ev.at);
-      db.engagements.update(e.id, { history: [...e.history, { status: "voided", at: ev.at }], status: "voided" });
+      await audit(db, "system", { action: "engagement.declined", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { status: "declined" }, at: now });
+      await systemNote(db, e.leadId, "Client declined the engagement", ev.at);
+      await db.engagements.update(e.id, { history: [...e.history, { status: "voided", at: ev.at }], status: "voided" });
       processed++;
       continue;
     }
     if (ev.status === "voided") {
-      db.engagements.update(e.id, { status: "voided", history: [...e.history, { status: "voided", at: ev.at }] });
-      audit(db, "system", { action: "engagement.void", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { status: "voided", via: "webhook" }, at: now });
+      await db.engagements.update(e.id, { status: "voided", history: [...e.history, { status: "voided", at: ev.at }] });
+      await audit(db, "system", { action: "engagement.void", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { status: "voided", via: "webhook" }, at: now });
       processed++;
       continue;
     }
     if (ev.status === "sent") continue;
     // A webhook never moves an engagement back: "viewed" after "signed" only adds nothing.
     if (ev.status === "viewed" && RANK[e.status] >= RANK.viewed) continue;
-    let next = applyStatus(db, e, ev.status, ev.at);
+    let next = await applyStatus(db, e, ev.status, ev.at);
     if (ev.status === "signed") {
       next = await onSigned(db, provider, next, ev.at, storeBlob);
     }
-    audit(db, "system", { action: `engagement.${ev.status}`, resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { status: next.status }, at: now });
+    await audit(db, "system", { action: `engagement.${ev.status}`, resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { status: next.status }, at: now });
     processed++;
   }
   return { processed };
 }
 
 async function onSigned(db: Db, provider: EsignProvider, e: Engagement, at: string, storeBlob: StoreBlob): Promise<Engagement> {
-  const lead = leadFor(db, e);
+  const lead = await leadFor(db, e);
   const { pdf, auditCertificate } = await provider.downloadSigned(e.providerEnvelopeId!);
   const files = [
     { kind: "engagement_signed" as const, name: "Signed engagement agreement.pdf", key: `engagements/${e.id}/signed.pdf`, bytes: pdf },
@@ -320,7 +320,7 @@ async function onSigned(db: Db, provider: EsignProvider, e: Engagement, at: stri
   const ids: string[] = [];
   for (const f of files) {
     await storeBlob(f.key, f.bytes);
-    const doc = db.documents.insert({
+    const doc = await db.documents.insert({
       id: randomUUID(),
       leadId: e.leadId,
       name: f.name,
@@ -335,11 +335,11 @@ async function onSigned(db: Db, provider: EsignProvider, e: Engagement, at: stri
     });
     ids.push(doc.id);
   }
-  advanceStage(db, lead, "retainer_signed", "system", at);
+  await advanceStage(db, lead, "retainer_signed", "system", at);
   // Recorded for analytics; the fee engine's compliance lock decides whether anything is billable.
-  recordBillableEvent(db, { type: "retainer_signed", occurredAt: at, state: lead.state, lawyerId: e.lawyerId });
-  systemNote(db, e.leadId, "Engagement signed by client", at);
-  return db.engagements.update(e.id, { documentIds: [...e.documentIds, ...ids] });
+  await recordBillableEvent(db, { type: "retainer_signed", occurredAt: at, state: lead.state, lawyerId: e.lawyerId });
+  await systemNote(db, e.leadId, "Engagement signed by client", at);
+  return await db.engagements.update(e.id, { documentIds: [...e.documentIds, ...ids] });
 }
 
 export async function handlePaymentWebhook(
@@ -352,35 +352,35 @@ export async function handlePaymentWebhook(
   const events = payments.parseWebhook(rawBody, headers); // throws on a bad signature
   let processed = 0;
   for (const ev of events) {
-    const e = db.engagements.get(ev.engagementId);
+    const e = await db.engagements.get(ev.engagementId);
     if (!e || e.status === "voided") continue;
     if (ev.status === "failed") {
-      audit(db, "system", { action: "engagement.payment_failed", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { paymentId: ev.paymentId }, at: now });
-      systemNote(db, e.leadId, "Payment attempt failed", ev.at);
+      await audit(db, "system", { action: "engagement.payment_failed", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { paymentId: ev.paymentId }, at: now });
+      await systemNote(db, e.leadId, "Payment attempt failed", ev.at);
       processed++;
       continue;
     }
     if (seen(e, "paid")) continue;
-    applyStatus(db, e, "paid", ev.at);
-    const lead = leadFor(db, e);
-    advanceStage(db, lead, "paid", "system", ev.at);
+    await applyStatus(db, e, "paid", ev.at);
+    const lead = await leadFor(db, e);
+    await advanceStage(db, lead, "paid", "system", ev.at);
     // Analytics only: the fee engine decides if the amount is billable under the firm structure.
-    recordBillableEvent(db, { type: "fee_collected", occurredAt: ev.at, state: lead.state, lawyerId: e.lawyerId, amountCents: e.feeCents });
-    systemNote(db, e.leadId, "Engagement fee received", ev.at);
-    audit(db, "system", { action: "engagement.paid", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { status: "paid", paymentId: ev.paymentId }, at: now });
+    await recordBillableEvent(db, { type: "fee_collected", occurredAt: ev.at, state: lead.state, lawyerId: e.lawyerId, amountCents: e.feeCents });
+    await systemNote(db, e.leadId, "Engagement fee received", ev.at);
+    await audit(db, "system", { action: "engagement.paid", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { status: "paid", paymentId: ev.paymentId }, at: now });
     processed++;
   }
   return { processed };
 }
 
-export function countersignEngagement(db: Db, actor: Actor, engagementId: string, now = new Date()): Engagement {
-  const e = getEngagement(db, engagementId);
-  assertOnLead(db, actor, e, "approve_engagement", now); // attorney only
+export async function countersignEngagement(db: Db, actor: Actor, engagementId: string, now = new Date()): Promise<Engagement> {
+  const e = await getEngagement(db, engagementId);
+  await assertOnLead(db, actor, e, "approve_engagement", now); // attorney only
   if (actor.lawyerId !== e.lawyerId) throw new ForbiddenError("Only the assigned attorney can countersign");
   if (e.status !== "signed" && e.status !== "paid") throw new Error(`cannot countersign an engagement that is ${e.status}`);
   const at = now.toISOString();
-  const next = db.engagements.update(e.id, { status: "countersigned", history: [...e.history, { status: "countersigned", at }] });
-  audit(db, actor, { action: "engagement.countersign", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { status: "countersigned" }, at: now });
+  const next = await db.engagements.update(e.id, { status: "countersigned", history: [...e.history, { status: "countersigned", at }] });
+  await audit(db, actor, { action: "engagement.countersign", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { status: "countersigned" }, at: now });
   return next;
 }
 
@@ -394,28 +394,28 @@ export const REMINDER_SCHEDULE = [
 /** Sends at most one reminder per engagement per run; thresholds already passed are marked so each fires once. */
 export async function sendDueReminders(db: Db, provider: EsignProvider, now = new Date()): Promise<number> {
   let count = 0;
-  for (const e of db.engagements.list((x) => (x.status === "sent" || x.status === "viewed") && !!x.providerEnvelopeId)) {
+  for (const e of await db.engagements.list((x) => (x.status === "sent" || x.status === "viewed") && !!x.providerEnvelopeId)) {
     const sentAt = [...e.history].reverse().find((h) => h.status === "sent")?.at;
     if (!sentAt) continue;
     const elapsed = now.getTime() - new Date(sentAt).getTime();
     const due = REMINDER_SCHEDULE.filter((r) => elapsed >= r.afterMs && !e.remindersSent.includes(r.key));
     if (due.length === 0) continue;
     await provider.sendReminder(e.providerEnvelopeId!);
-    db.engagements.update(e.id, { remindersSent: [...e.remindersSent, ...due.map((d) => d.key)] });
-    audit(db, "system", { action: "engagement.reminder", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { reminder: due[due.length - 1].key }, at: now });
+    await db.engagements.update(e.id, { remindersSent: [...e.remindersSent, ...due.map((d) => d.key)] });
+    await audit(db, "system", { action: "engagement.reminder", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { reminder: due[due.length - 1].key }, at: now });
     count++;
   }
   return count;
 }
 
 export async function voidEngagement(db: Db, actor: Actor, engagementId: string, provider: EsignProvider, reason: string, now = new Date()): Promise<Engagement> {
-  const e = getEngagement(db, engagementId);
-  assertOnLead(db, actor, e, "draft_engagement", now);
+  const e = await getEngagement(db, engagementId);
+  await assertOnLead(db, actor, e, "draft_engagement", now);
   if (e.status === "voided") return e;
   if (RANK[e.status] >= RANK.signed) throw new Error("a signed engagement cannot be voided");
   if (e.providerEnvelopeId) await provider.voidEnvelope(e.providerEnvelopeId, reason);
   const at = now.toISOString();
-  const next = db.engagements.update(e.id, { status: "voided", history: [...e.history, { status: "voided", at }] });
-  audit(db, actor, { action: "engagement.void", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { status: "voided" }, at: now });
+  const next = await db.engagements.update(e.id, { status: "voided", history: [...e.history, { status: "voided", at }] });
+  await audit(db, actor, { action: "engagement.void", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { status: "voided" }, at: now });
   return next;
 }

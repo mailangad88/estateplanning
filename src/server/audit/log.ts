@@ -27,22 +27,23 @@ function hashEvent(e: Omit<AuditEvent, "hash">): string {
  * so any edit or deletion breaks the chain and `verifyAuditChain` reports it.
  * Detail must never contain intake content, only ids and field names.
  */
-export function audit(db: Db, actor: AuditActor, input: AuditInput): AuditEvent {
-  const last = db.audit.last();
-  const base: Omit<AuditEvent, "hash"> = {
-    id: randomUUID(),
-    seq: (last?.seq ?? 0) + 1,
-    at: (input.at ?? new Date()).toISOString(),
-    actorId: actor === "system" ? "system" : actor.userId,
-    actorRole: actor === "system" ? "system" : actor.role,
-    action: input.action,
-    resourceType: input.resourceType,
-    resourceId: input.resourceId,
-    leadId: input.leadId,
-    detail: input.detail,
-    prevHash: last?.hash ?? GENESIS,
-  };
-  return db.audit.append({ ...base, hash: hashEvent(base) });
+export async function audit(db: Db, actor: AuditActor, input: AuditInput): Promise<AuditEvent> {
+  return db.audit.appendWith((last) => {
+    const base: Omit<AuditEvent, "hash"> = {
+      id: randomUUID(),
+      seq: (last?.seq ?? 0) + 1,
+      at: (input.at ?? new Date()).toISOString(),
+      actorId: actor === "system" ? "system" : actor.userId,
+      actorRole: actor === "system" ? "system" : actor.role,
+      action: input.action,
+      resourceType: input.resourceType,
+      resourceId: input.resourceId,
+      leadId: input.leadId,
+      detail: input.detail,
+      prevHash: last?.hash ?? GENESIS,
+    };
+    return { ...base, hash: hashEvent(base) };
+  });
 }
 
 export function verifyAuditChain(events: AuditEvent[]): { ok: boolean; brokenAtSeq?: number } {

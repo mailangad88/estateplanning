@@ -8,10 +8,10 @@ export async function POST(request: Request) {
   if (!devLoginEnabled()) return NextResponse.json({ error: "Not found" }, { status: 404 });
   const form = await request.formData().catch(() => null);
   const userId = String(form?.get("userId") ?? "");
-  const db = getDb();
-  const user = db.users.get(userId);
+  const db = await getDb();
+  const user = await db.users.get(userId);
   if (!user || !user.active) return NextResponse.json({ error: "Unknown user" }, { status: 400 });
-  audit(db, { userId: user.id, role: user.role }, { action: "auth.dev_login", resourceType: "user", resourceId: user.id });
+  await audit(db, { userId: user.id, role: user.role }, { action: "auth.dev_login", resourceType: "user", resourceId: user.id });
   const target = user.role === "platform_admin" ? "/admin/fees" : "/portal";
   const res = NextResponse.redirect(new URL(target, request.url), 303);
   res.headers.append("set-cookie", sessionCookie(issueSession(user.id, true)));

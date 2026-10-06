@@ -6,19 +6,34 @@ import { NextResponse } from "next/server";
 import { ForbiddenError, requireMfa } from "@/server/auth/policy";
 import { actorFromSession, cookieFromHeader, sessionCookie, touchSession } from "@/server/auth/session";
 import type { Db } from "@/server/db";
-import { getDb } from "@/server/runtime";
+import { getDb, scopedDb } from "@/server/runtime";
 import type { Actor } from "@/server/types";
 
 export type Handler = (ctx: { db: Db; actor: Actor; request: Request }) => Promise<unknown> | unknown;
 
-export async function withActor(request: Request, handler: Handler): Promise<Response> {
-  const db = getDb();
+export interface WithActorOptions {
+  /**
+   * Run writes inside the user's row-level security session too. For tables only the
+   * acting user's role may write (fee rules, fact approvals), so the database rejects a
+   * write the policy check somehow let through.
+   */
+  scopedWrites?: boolean;
+}
+
+export async function withActor(request: Request, handler: Handler, options: WithActorOptions = {}): Promise<Response> {
+  const db = await getDb();
   const token = cookieFromHeader(request.headers.get("cookie"));
-  const actor = actorFromSession(db, token);
+  const actor = await actorFromSession(db, token);
   if (!actor || !token) return NextResponse.json({ error: "Sign in to continue" }, { status: 401 });
   try {
     requireMfa(actor);
-    const result = await handler({ db, actor, request });
+    // Reads run inside the user's row-level security session, so the database enforces
+    // the same visibility rules as policy.ts. Writes are checked by policy.ts in each
+    // service and run as the service role, because several (accepting an offer,
+    // routing to the next lawyer, recording audit events) touch rows the user cannot read.
+    const read = request.method === "GET" || request.method === "HEAD";
+    const scoped = read || options.scopedWrites ? scopedDb(db, actor) : db;
+    const result = await handler({ db: scoped, actor, request });
     const res = result instanceof Response ? result : NextResponse.json(result ?? { ok: true });
     const touched = touchSession(token);
     if (touched) res.headers.append("set-cookie", sessionCookie(touched));

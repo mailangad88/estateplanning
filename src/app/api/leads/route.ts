@@ -2,11 +2,12 @@ import { randomUUID } from "node:crypto";
 import { NextResponse } from "next/server";
 import { servedStates } from "@/config/firm";
 import { buildConsentRecord } from "@/lib/consent";
-import { deliverLead, type LeadRecord } from "@/lib/crm";
+import type { LeadRecord } from "@/lib/crm";
 import { effectiveContactMethod, leadSubmissionSchema } from "@/lib/lead";
 import { educationTopics } from "@/lib/quiz";
-import { captureTags, heardFromTags, scoreLead, segmentTags } from "@/lib/scoring";
+import { captureTags, heardFromTags, scoreLead, segmentTags, toolTags } from "@/lib/scoring";
 import { getDb } from "@/server/runtime";
+import { deliverAndLog } from "@/server/leadDelivery";
 import { ingestLead } from "@/server/services/leads";
 import { getMagnet } from "@/lib/magnets";
 
@@ -58,7 +59,7 @@ export async function POST(request: Request) {
       capture: lead.capture,
       priorTools: lead.priorTools,
     }),
-    segments: [...new Set([...segmentTags(lead.answers), ...captureTags(lead.capture), ...heardFromTags(lead.source)])],
+    segments: [...new Set([...segmentTags(lead.answers), ...captureTags(lead.capture), ...toolTags(lead.capture), ...heardFromTags(lead.source)])],
     source: lead.source,
     heardFrom: lead.source.heardFrom,
     capture: lead.capture,
@@ -74,26 +75,30 @@ export async function POST(request: Request) {
     }),
   };
 
-  let failure: string | null = null;
-  try {
-    const result = await deliverLead(record);
-    if (result.target === "webhook" && !result.delivered) failure = `webhook status ${result.status}`;
-  } catch (err) {
-    failure = String(err);
-  }
-  if (failure) {
-    console.error("lead delivery failed", { id: record.id, error: failure });
-    return NextResponse.json({ error: "We could not save your request. Please call us." }, { status: 502 });
-  }
-
-  // Also hand the lead to the portal backend once it is switched on. A failure here never
-  // loses the lead: the CRM delivery above has already succeeded.
-  if (process.env.PORTAL_INGEST_LEADS === "true") {
+  const ingestEnabled = process.env.PORTAL_INGEST_LEADS === "true";
+  const ingest = async (): Promise<boolean> => {
     try {
-      ingestLead(getDb(), record, now);
+      await ingestLead(await getDb(), record, now);
+      return true;
     } catch (err) {
       console.error("portal ingest failed", { id: record.id, error: err instanceof Error ? err.message : String(err) });
+      return false;
     }
+  };
+
+  // Deliver with a short retry budget and log the outcome (src/server/leadDelivery.ts).
+  const result = await deliverAndLog(getDb, record);
+  if (result.target === "webhook" && !result.delivered) {
+    console.error("lead delivery failed", { id: record.id, status: result.status, attempts: result.attempts, error: result.error });
+    // The request cannot wait out a long outage. If the portal keeps its own copy of the lead, accept it:
+    // the failure is in the delivery log and the cron sweep retries it. Without a stored copy the lead
+    // would be lost, so tell the visitor to call.
+    if (!(ingestEnabled && (await ingest()))) {
+      return NextResponse.json({ error: "We could not save your request. Please call us." }, { status: 502 });
+    }
+  } else if (ingestEnabled) {
+    // Hand the lead to the portal backend too. A failure here never loses the lead: the CRM delivery already succeeded.
+    await ingest();
   }
 
   return NextResponse.json({

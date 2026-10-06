@@ -1,0 +1,1195 @@
+{
+ "_note": "Copied from research/state-data-layer.json (2026-10-06 seed). ad_rules is left out: attorney advertising rules are internal compliance data, not published facts. Registry ids are state.<ABBR>.<key>.",
+ "states": {
+  "CA": {
+   "small_estate_threshold": {
+    "value": "$208,850 (affidavit, Prob. Code 13100) for deaths on/after 2025-04-01; 40-day wait; indexed every 3 years (next 2028-04-01). Prior $184,500 (2022-2025). Statute text still prints an outdated $166,250 figure. Real property generally excluded from affidavit; separate petition routes exist (Prob. Code 13150 spousal/13151 residence) - thresholds not verified. Note: real property counts toward the 13100 cap but cannot be transferred by the affidavit; primary-residence petition cap is $750,000 (Prob. Code 13151).",
+    "source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=13100",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "simplified_probate": {
+    "value": "Yes: affidavit (13100), spousal property petition (13650), small-estate residence petition (13150-13151). Formal probate also has IAEA (independent administration).",
+    "source": "https://selfhelp.courts.ca.gov/probate/small-estate",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "probate_timeline": {
+    "value": "Typically 9-18 months for a formal probate (estimate); creditor claim period 4 months from letters; can run longer with contested matters.",
+    "source": "https://selfhelp.courts.ca.gov/probate",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "executor_fee_rules": {
+    "value": "Statutory, Prob. Code 10800 (PR) and 10810 (attorney): each gets 4% of first $100k, 3% next $100k, 2% next $800k, 1% next $9M, 0.5% next $15M, reasonable above $25M. Computed on gross estate value (not net of encumbrances). Extraordinary fees extra with court approval (10811/10801).",
+    "source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10810",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "estate_tax": {
+    "value": "None at state level; federal only (2026 federal exemption $15M per person under OBBBA).",
+    "source": "https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "inheritance_tax": {
+    "value": "None.",
+    "source": "https://www.ftb.ca.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "community_property": {
+    "value": "Yes (community property state; full basis step-up on both halves).",
+    "source": "https://leginfo.legislature.ca.gov/faces/codes.xhtml",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "upc": {
+    "value": "No (California Probate Code is its own; some UPC-influenced pieces).",
+    "source": "https://leginfo.legislature.ca.gov/faces/codes.xhtml",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "will_witness_notary": {
+    "value": "2 witnesses present at same time (Prob. Code 6110); notary not required. Interested-witness presumption of duress/undue influence (6112).",
+    "source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=6110",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "holographic_will": {
+    "value": "Valid if signature and material provisions in testator's handwriting (6111); no witnesses needed.",
+    "source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=6111",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "self_proving_affidavit": {
+    "value": "Witnesses' attestation clause signed under penalty of perjury (6110(c)); witness declaration at probate (8220). No notary needed.",
+    "source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=6110",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "tod_deed": {
+    "value": "Yes: Revocable Transfer on Death Deed (Prob. Code 5600 et seq.), recorded within 60 days of signing. Statute sunsets 2032-01-01 per state-pages-copy.md research (verify at publish).",
+    "source": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=PROB&division=5&part=4&chapter=1",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "durable_poa": {
+    "value": "Prob. Code 4000 et seq.; statutory form at 4401; must be notarized or signed by 2 witnesses (4121).",
+    "source": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=PROB&division=4.5",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "advance_directive": {
+    "value": "Advance Health Care Directive, statutory form Prob. Code 4701; 2 qualified witnesses or notary (4673).",
+    "source": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=PROB&division=4.7",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "medicaid_lookback": {
+    "value": "Medi-Cal look-back reported as 30 months in CA historically; CA eliminated the asset test 2024-01-01 and reinstated an asset limit (reported $130,000 for 1 person) from 2026-01-01 - both need confirmation against DHCS before publishing.",
+    "source": "https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/default.aspx",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   },
+   "medicaid_home_equity": {
+    "value": "Federal 2026 SSI-linked home-equity cap: minimum $752,000, maximum $1,130,000 (states choose within range); figures are from recall of CMS annual notice, CMS PDF returned 404 this session. CA state election not verified.",
+    "source": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   }
+  },
+  "TX": {
+   "small_estate_threshold": {
+    "value": "$75,000 (Est. Code ch. 205; excludes homestead and exempt property; intestacy limit not found in fetched statute text, verify; 30-day wait; court judge must approve; 2 disinterested witnesses + distributees swear).",
+    "source": "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.205.htm",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "simplified_probate": {
+    "value": "Yes: small estate affidavit (ch. 205), muniment of title (Est. Code ch. 257, will probated w/o administration if no debts other than secured), affidavit of heirship (recorded title evidence), independent administration (ch. 401) as default.",
+    "source": "https://statutes.capitol.texas.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "probate_timeline": {
+    "value": "Muniment of title ~2-4 months; independent administration ~6-12 months (estimate). Will must be probated within 4 years of death.",
+    "source": "https://statutes.capitol.texas.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "executor_fee_rules": {
+    "value": "Executor commission set by Est. Code 352.002: up to 5% of cash received and 5% of cash paid out (court may adjust; will can override). Attorney fees: reasonable, no schedule (Tex. Disciplinary Rule 1.04).",
+    "source": "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.352.htm",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "estate_tax": {
+    "value": "None.",
+    "source": "https://comptroller.texas.gov/taxes/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "inheritance_tax": {
+    "value": "None.",
+    "source": "https://comptroller.texas.gov/taxes/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "community_property": {
+    "value": "Yes.",
+    "source": "https://statutes.capitol.texas.gov/Docs/FA/htm/FA.3.htm",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "upc": {
+    "value": "No (Texas Estates Code, not UPC).",
+    "source": "https://statutes.capitol.texas.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "will_witness_notary": {
+    "value": "2 credible witnesses age 14+ (Est. Code 251.051); notary not required for validity.",
+    "source": "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.251.htm",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "holographic_will": {
+    "value": "Valid if entirely in testator's handwriting and signed (251.052); no witnesses required.",
+    "source": "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.251.htm",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "self_proving_affidavit": {
+    "value": "Yes: self-proving affidavit (251.102-.104), notarized; saves witness testimony at probate.",
+    "source": "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.251.htm",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "tod_deed": {
+    "value": "Yes: Transfer on Death Deed, Est. Code ch. 114 (effective 2015-09-01); must be recorded before death; Lady Bird/ELE deeds less common.",
+    "source": "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.114.htm",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "durable_poa": {
+    "value": "Est. Code ch. 751-752; statutory durable POA form at 752.051; must be signed and notarized.",
+    "source": "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.752.htm",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "advance_directive": {
+    "value": "Directive to Physicians (H&S Code 166.033 form, 2 witnesses or notary) and Medical Power of Attorney (166.164 form, 2 witnesses or notary-like rules); verify current witness rules.",
+    "source": "https://statutes.capitol.texas.gov/Docs/HS/htm/HS.166.htm",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "medicaid_lookback": {
+    "value": "60 months (federal DRA norm). Texas-specific rules not individually verified.",
+    "source": "https://www.hhs.texas.gov/services/health/medicaid-chip",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "medicaid_home_equity": {
+    "value": "Federal 2026 SSI-linked home-equity cap: minimum $752,000, maximum $1,130,000 (states choose within range); figures are from recall of CMS annual notice, CMS PDF returned 404 this session. TX election not verified.",
+    "source": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   }
+  },
+  "FL": {
+   "small_estate_threshold": {
+    "value": "Summary administration (Fla. Stat. 735.201): value of the entire estate subject to administration in Florida, less property exempt from creditors, does not exceed $150,000, OR decedent dead more than 2 years (any value). Amended by ch. 2026-57 (CS/HB 1337), effective 2026-07-01 (was $75,000). Court order required; covers real property (it is an administration, not an affidavit). Disposition without administration (735.301) is far narrower: personal property only, no real property, and nonexempt personal property limited to preferred funeral expenses plus last-60-days medical/hospital expenses.",
+    "source": "https://www.flsenate.gov/Laws/Statutes/2026/735.201",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "simplified_probate": {
+    "value": "Yes: summary administration (735.201), by court order, covers real estate, testate or intestate. Disposition without administration (735.301) for tiny personal-property-only estates. Formal administration otherwise.",
+    "source": "https://www.flsenate.gov/Laws/Statutes/2026/735.201",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "probate_timeline": {
+    "value": "Formal administration typically 6-12 months (estimate); 3-month creditor period after notice; summary admin faster.",
+    "source": "https://www.flcourts.gov/Resources-Services/Office-of-Family-Courts",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "executor_fee_rules": {
+    "value": "PR commission is statutory, Fla. Stat. 733.617: 3% of first $1M of compensable estate value, 2.5% above $1M to $5M, 2% above $5M to $10M, 1.5% above $10M; extraordinary services extra as reasonable. Attorney fees for ordinary services are presumptively reasonable under 733.6171(3): $1,500 up to $40,000; +$750 for $40,000-$70,000; +$750 for $70,000-$100,000; 3% of $100,000-$1M; 2.5% $1M-$3M; 2% $3M-$5M; 1.5% $5M-$10M; 1% above $10M. Court can adjust for extraordinary services.",
+    "source": "https://www.flsenate.gov/Laws/Statutes/2026/733.617",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "estate_tax": {
+    "value": "None.",
+    "source": "https://floridarevenue.com/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "inheritance_tax": {
+    "value": "None.",
+    "source": "https://floridarevenue.com/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "community_property": {
+    "value": "No (common-law state). Optional Florida Community Property Trust Act (Fla. Stat. 736.1501 et seq., 2021) lets spouses elect basis-step-up treatment.",
+    "source": "http://www.leg.state.fl.us/statutes/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "upc": {
+    "value": "No.",
+    "source": "http://www.leg.state.fl.us/statutes/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "will_witness_notary": {
+    "value": "Will must be in writing, signed by testator at the end, and attested by at least 2 witnesses who sign in the presence of the testator and of each other (Fla. Stat. 732.502). Notary not required for validity. Electronic wills allowed (732.521 ff; 732.522: electronic signature, remote witnessing via notary-supervised audio-video).",
+    "source": "https://www.flsenate.gov/Laws/Statutes/2026/732.502",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "holographic_will": {
+    "value": "Not valid as such: a handwritten will is valid only if executed with the 2-witness formalities of 732.502(1); the statute says a will in the testator's handwriting executed in accordance with (1) 'shall not be considered a holographic will'. Out-of-state valid wills may be honored (732.502 ff; not re-opened).",
+    "source": "https://www.flsenate.gov/Laws/Statutes/2026/732.502",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "self_proving_affidavit": {
+    "value": "Yes: will may be self-proved at execution or later by testator's acknowledgment and witnesses' affidavits before an officer authorized to administer oaths, in the statutory form (Fla. Stat. 732.503).",
+    "source": "https://www.flsenate.gov/Laws/Statutes/2026/732.503",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "tod_deed": {
+    "value": "No statutory TOD deed. Standard substitute is the 'enhanced life estate' (Lady Bird) deed recognized by case law.",
+    "source": "http://www.leg.state.fl.us/statutes/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "durable_poa": {
+    "value": "Fla. Stat. ch. 709 (Power of Attorney Act): principal plus 2 witnesses plus notary; no mandatory form; springing POAs invalid since 2011.",
+    "source": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0709/0709.html",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "advance_directive": {
+    "value": "Designation of Health Care Surrogate (765.202, 2 witnesses) and Living Will (765.303, 2 witnesses); suggested forms in statute.",
+    "source": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0765/0765.html",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "medicaid_lookback": {
+    "value": "60 months. Florida asset limit $2,000 individual (recall).",
+    "source": "https://www.myflfamilies.com/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "medicaid_home_equity": {
+    "value": "Federal 2026 SSI-linked home-equity cap: minimum $752,000, maximum $1,130,000 (states choose within range); figures are from recall of CMS annual notice, CMS PDF returned 404 this session. FL election not verified.",
+    "source": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   },
+   "creditor_claim_period": {
+    "value": "Claims barred 3 months after first publication of the notice to creditors, or 30 days after service on a creditor who must be served, whichever is later (733.702); absolute bar 2 years after death regardless of notice (733.710), with narrow exceptions.",
+    "source": "https://www.flsenate.gov/Laws/Statutes/2026/733.702",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "spousal_elective_share": {
+    "value": "Elective share = 30% of the 'elective estate' (Fla. Stat. 732.2065). Election due by the earlier of 6 months after service of the notice of administration on the spouse or 2 years after death (732.2135). Pretermitted-spouse and family allowance rules are separate (not verified).",
+    "source": "https://www.flsenate.gov/Laws/Statutes/2026/732.2065",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "testator_age": {
+    "value": "18 or older, or an emancipated minor, and of sound mind (Fla. Stat. 732.501).",
+    "source": "https://www.flsenate.gov/Laws/Statutes/2026/732.501",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "poa_execution": {
+    "value": "Power of attorney must be signed by the principal and by 2 subscribing witnesses and acknowledged by the principal before a notary (or as in s. 695.03); notary may sign for a physically unable principal under 117.05(14) (Fla. Stat. 709.2105(2)). Springing POAs invalid since 2011 (709.2108; not re-opened).",
+    "source": "https://www.flsenate.gov/Laws/Statutes/2026/709.2105",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "poa_statutory_form": {
+    "value": "No mandatory statutory POA form located in ch. 709 (execution rules in 709.2105 only). Not verified section by section; confirm with attorney.",
+    "source": "https://www.flsenate.gov/Laws/Statutes/2026/Chapter709",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   }
+  },
+  "NY": {
+   "small_estate_threshold": {
+    "value": "$50,000 gross value of personal property (SCPA 1301, Voluntary Administration), exclusive of property set off under EPTL 5-3.1(a). The article 'is not applicable to any interest in real property in this state owned by a decedent', so real property needs regular probate/administration. Fee and wait details not re-verified.",
+    "source": "https://www.nysenate.gov/legislation/laws/SCP/1301",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "simplified_probate": {
+    "value": "Yes: voluntary administration for estates with personal property of $50,000 or less (SCPA Art. 13); personal property only. Otherwise probate/administration in Surrogate's Court.",
+    "source": "https://www.nysenate.gov/legislation/laws/SCP/1301",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "probate_timeline": {
+    "value": "Uncontested probate ~6-12 months, longer in NYC (estimate); 7-month creditor protection for executor under SCPA 1802.",
+    "source": "https://www.nycourts.gov/courts/surrogates/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "executor_fee_rules": {
+    "value": "Statutory commissions (SCPA 2307) on sums received and paid out: 5% of first $100,000; 4% of next $200,000; 3% of next $700,000; 2.5% of next $4,000,000; 2% above $5,000,000. Attorney fees 'reasonable' (SCPA 2110; 22 NYCRR 1215 written retainer; not re-opened).",
+    "source": "https://www.nysenate.gov/legislation/laws/SCP/2307",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "estate_tax": {
+    "value": "Yes. 2026 basic exclusion $7,350,000; 'cliff' - exclusion phases out between 100% and 105% ($7,350,000-$7,717,500) and is lost above that; top rate 16%; no portability. Federal 2026 exemption $15M.",
+    "source": "https://www.mcdermottlaw.com/insights/2026-federal-tax-exemptions-new-yorkers-future-new-york-estate-tax/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "inheritance_tax": {
+    "value": "None.",
+    "source": "https://www.tax.ny.gov/pit/estate/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "community_property": {
+    "value": "No.",
+    "source": "https://www.nysenate.gov/legislation/laws/CONSOLIDATED",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "upc": {
+    "value": "No (EPTL / SCPA).",
+    "source": "https://www.nysenate.gov/legislation/laws/EPT",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "will_witness_notary": {
+    "value": "At least 2 attesting witnesses who, within one 30-day period, both attest the testator's signature; testator signs or acknowledges to each witness and declares the instrument is the will; witnesses sign with residence addresses at the end (EPTL 3-2.1). Notary not required (not a statutory element).",
+    "source": "https://www.nysenate.gov/legislation/laws/EPT/3-2.1",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "holographic_will": {
+    "value": "Not valid unless made by armed-forces members in actual or other specified service or by mariners at sea (EPTL 3-2.2); even then expires per statute (not re-opened).",
+    "source": "https://www.nysenate.gov/legislation/laws/EPT/3-2.2",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "self_proving_affidavit": {
+    "value": "Yes: attesting witness affidavit (SCPA 1406) typically signed at execution; notarized.",
+    "source": "https://www.nysenate.gov/legislation/laws/SCP/1406",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "tod_deed": {
+    "value": "Yes. Real Property Law 424 (transfer on death deed): owner with testamentary capacity transfers to beneficiaries effective at death; deed signed by 2 witnesses present together, acknowledged before a notary, and recorded with the county clerk BEFORE death; no sunset. Effective 2024-07-19 (signed 2024-04-20) per NYSBA; effective date not read from statute.",
+    "source": "https://www.nysenate.gov/legislation/laws/RPP/424",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "durable_poa": {
+    "value": "Gen. Oblig. Law 5-1501B: signed and dated by principal (or by another at direction), acknowledged like a conveyance of real property, AND witnessed by 2 persons not named as agents or gift recipients; the notary may be one of the witnesses; agents must also sign with acknowledgment. Statutory short form (GOL 5-1513) is optional: a form that 'substantially conforms' is lawful.",
+    "source": "https://www.nysenate.gov/legislation/laws/GOB/5-1501B",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "advance_directive": {
+    "value": "Health Care Proxy (Public Health Law Art. 29-C, form in 2981; 2 adult witnesses). Living will recognized by case law, no statutory form. MOLST for seriously ill.",
+    "source": "https://www.nysenate.gov/legislation/laws/PBH/A29-C",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "medicaid_lookback": {
+    "value": "60 months for nursing home Medicaid. A 30-month look-back for community/home care was enacted but implementation depended on federal approval - status not verified.",
+    "source": "https://www.health.ny.gov/health_care/medicaid/",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   },
+   "medicaid_home_equity": {
+    "value": "Federal 2026 SSI-linked home-equity cap: minimum $752,000, maximum $1,130,000 (states choose within range); figures are from recall of CMS annual notice, CMS PDF returned 404 this session. NY election not verified.",
+    "source": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   },
+   "creditor_claim_period": {
+    "value": "No claims bar date as such. Fiduciary is not chargeable for distributions made before a claim is presented if it is not presented within 7 months from the date letters are first issued (SCPA 1802); creditors keep rights against distributees.",
+    "source": "https://www.nysenate.gov/legislation/laws/SCP/1802",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "spousal_elective_share": {
+    "value": "Greater of $50,000 (or net estate if smaller) or one-third of the net estate (EPTL 5-1.1-A), reduced by what passes to the spouse; includes testamentary substitutes. Election within 6 months of letters but not later than 2 years after death; court may extend up to 6 months if requested before expiry.",
+    "source": "https://www.nysenate.gov/legislation/laws/EPT/5-1.1-A",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "testator_age": {
+    "value": "18 or older, of sound mind and memory (EPTL 3-1.1).",
+    "source": "https://www.nysenate.gov/legislation/laws/EPT/3-1.1",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "poa_execution": {
+    "value": "See durable_poa: principal signs and acknowledges before a notary and 2 non-agent witnesses are present (GOL 5-1501B); notary may be a witness.",
+    "source": "https://www.nysenate.gov/legislation/laws/GOB/5-1501B",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "poa_statutory_form": {
+    "value": "Yes, optional: statutory short form power of attorney in GOL 5-1513; use of the form or one that substantially conforms is lawful (2021 reform).",
+    "source": "https://www.nysenate.gov/legislation/laws/GOB/5-1513",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   }
+  },
+  "PA": {
+   "small_estate_threshold": {
+    "value": "$50,000 gross, excluding real estate (20 Pa.C.S. 3102); petition to Orphans' Court (court filing required); no waiting period in 3102.",
+    "source": "https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=20&div=0&chpt=31",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "simplified_probate": {
+    "value": "Yes: 3102 petition (Orphans' Court) and 3101 direct payments; 'short certificate' administration otherwise normal Register of Wills probate.",
+    "source": "https://www.legis.state.pa.us/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "probate_timeline": {
+    "value": "Roughly 9-12 months (estimate); inheritance tax return due 9 months from death (fetched); 1-year creditor/claim exposure under 20 Pa.C.S. 3532 notes.",
+    "source": "https://www.berkspa.gov/departments/register-of-wills/inheritance-tax",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "executor_fee_rules": {
+    "value": "No schedule: personal representative 'reasonable compensation' (20 Pa.C.S. 3537); attorney fee reasonable (Pa. RPC 1.5, Orphans' Court standards).",
+    "source": "https://www.legis.state.pa.us/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "estate_tax": {
+    "value": "None (state estate tax repealed 2013); federal only.",
+    "source": "https://www.revenue.pa.gov/TaxTypes/InheritanceTax/Pages/default.aspx",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "inheritance_tax": {
+    "value": "Yes: 0% spouse/charity (and child 21 or younger to parent), 4.5% lineal descendants, 12% siblings, 15% other; 5% discount if paid within 3 months; return/payment due 9 months. Joint property with non-spouse is taxable.",
+    "source": "https://www.berkspa.gov/departments/register-of-wills/inheritance-tax",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "community_property": {
+    "value": "No.",
+    "source": "https://www.legis.state.pa.us/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "upc": {
+    "value": "No (Probate, Estates and Fiduciaries Code, Title 20).",
+    "source": "https://www.legis.state.pa.us/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "will_witness_notary": {
+    "value": "Signed at the end by testator; witnesses not required for validity by statute (20 Pa.C.S. 2502) but 2 are the convention and aid proof; notary not required.",
+    "source": "https://www.legis.state.pa.us/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "holographic_will": {
+    "value": "Valid if signed at end by the testator (2502), no witnesses required.",
+    "source": "https://www.legis.state.pa.us/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "self_proving_affidavit": {
+    "value": "Yes: notarized affidavit of subscribing witnesses (20 Pa.C.S. 3132.1).",
+    "source": "https://www.legis.state.pa.us/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "tod_deed": {
+    "value": "No statutory TOD deed. HB 2124 introduced 2026-01-09; current status unverified.",
+    "source": "https://www.legis.state.pa.us/",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   },
+   "durable_poa": {
+    "value": "20 Pa.C.S. ch. 56 (Act 95 of 2014): signed, notarized, and 2 witnesses; statutory notice and agent acknowledgment forms in 5601.",
+    "source": "https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=20&div=0&chpt=56",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "advance_directive": {
+    "value": "20 Pa.C.S. ch. 54 (Act 169 of 2006): living will plus health care POA; 2 adult witnesses; notary not required.",
+    "source": "https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=20&div=0&chpt=54",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "medicaid_lookback": {
+    "value": "60 months. Notable: PA filial support law (23 Pa.C.S. 4603) has been used against adult children for parents' care costs (Pittas, 2012) - verify before publishing.",
+    "source": "https://www.dhs.pa.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "medicaid_home_equity": {
+    "value": "Federal 2026 SSI-linked home-equity cap: minimum $752,000, maximum $1,130,000 (states choose within range); figures are from recall of CMS annual notice, CMS PDF returned 404 this session. PA election not verified.",
+    "source": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   }
+  },
+  "IL": {
+   "small_estate_threshold": {
+    "value": "$150,000 gross personal estate (tangible and intangible personal property, motor vehicles excluded from the count; certain vehicle types listed) for the small estate affidavit, 755 ILCS 5/25-1, as amended by P.A. 104-0346 (was $100,000; applies to decedents dying on or after the Act's effective date, 2025-08-15 per a law-firm summary). Affidavit covers personal estate only; Illinois real estate cannot pass by affidavit. Usable if there is no will or the will is already filed and no letters are outstanding.",
+    "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/075500050K25-1.htm",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "simplified_probate": {
+    "value": "Yes: small estate affidavit (personal property); independent administration (755 ILCS 5/28) is the default light-touch court route; summary administration for estates of limited value not individually verified.",
+    "source": "https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2100&ChapterID=60",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "probate_timeline": {
+    "value": "6-12 months for independent administration; creditor claims period runs from first publication of notice, minimum 6 months from first publication (or 3 months from mailing/delivery, whichever later).",
+    "source": "https://www.docdraft.ai/legal-guides/settling-an-estate/illinois",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "executor_fee_rules": {
+    "value": "No schedule: 'reasonable compensation' (755 ILCS 5/27-1); attorney fees reasonable (755 ILCS 5/27-2).",
+    "source": "https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2100&ChapterID=60",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "estate_tax": {
+    "value": "Yes: $4,000,000 exclusion, not portable; graduated rate up to 16%; 35 ILCS 405. 'Cliff-like' interrelated-tax calculation above $4M.",
+    "source": "https://www.docdraft.ai/legal-guides/settling-an-estate/illinois",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "inheritance_tax": {
+    "value": "None.",
+    "source": "https://tax.illinois.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "community_property": {
+    "value": "No.",
+    "source": "https://www.ilga.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "upc": {
+    "value": "No (Illinois Probate Act of 1975).",
+    "source": "https://www.ilga.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "will_witness_notary": {
+    "value": "Writing signed by testator (or by another in testator's presence and at his direction) and attested in the testator's presence by 2 or more credible witnesses (755 ILCS 5/4-3). Notary not required.",
+    "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/075500050K4-3.htm",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "holographic_will": {
+    "value": "Not valid as such: 755 ILCS 5/4-3 requires attestation by 2 or more credible witnesses. Out-of-state wills valid where made are generally recognized (not re-opened).",
+    "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/075500050K4-3.htm",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "self_proving_affidavit": {
+    "value": "Yes: attestation clause (755 ILCS 5/6-4) can serve as proof; notarized witness affidavit common.",
+    "source": "https://www.ilga.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "tod_deed": {
+    "value": "Yes: Residential Real Property Transfer on Death Instrument Act (755 ILCS 27; original P.A. 97-555 eff. 2012-01-01; amended effective 2022-01-01). Instrument must be notarized, witnessed by 2 credible witnesses and recorded before the owner's death (per a law-firm summary of the 2021 amendments). Sunset/repeal date status not confirmed in the text read; verify before publishing.",
+    "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/075500270K1.htm",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "durable_poa": {
+    "value": "Illinois Power of Attorney Act (755 ILCS 45). Statutory short form for property (45/3-3) states the POA is not effective unless signed by at least one witness and the principal's signature is notarized; witness cannot be the agent, a family member of principal or agent, the principal's physician or mental-health provider or their relatives, or an owner/operator of a health care facility where the principal lives. Health care POA is a separate statutory form (45/4-10; witness rules not re-verified).",
+    "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/075500450K3-3.htm",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "advance_directive": {
+    "value": "Statutory health care POA form (755 ILCS 45/4-10) and Living Will Act (755 ILCS 35); witness rules not individually verified; IDPH POLST available.",
+    "source": "https://dph.illinois.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   },
+   "medicaid_lookback": {
+    "value": "60 months.",
+    "source": "https://hfs.illinois.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "medicaid_home_equity": {
+    "value": "Federal 2026 SSI-linked home-equity cap: minimum $752,000, maximum $1,130,000 (states choose within range); figures are from recall of CMS annual notice, CMS PDF returned 404 this session. IL election not verified.",
+    "source": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   },
+   "poa_execution": {
+    "value": "Property POA (statutory form): principal signs; at least 1 qualified witness certifies; notary acknowledges (755 ILCS 45/3-3 form text).",
+    "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/075500450K3-3.htm",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "poa_statutory_form": {
+    "value": "Yes: statutory short form power of attorney for property, 755 ILCS 45/3-3; whether use is optional vs mandatory not opened (statute generally treats it as permissive).",
+    "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/075500450K3-3.htm",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "creditor_claim_period": {
+    "value": "Outer bar: claims are barred 2 years after the decedent's death whether or not letters issue (755 ILCS 5/18-12(b)). Notice bar: claim date set in the published notice under 18-3 (not less than 6 months from first publication, or 3 months from mailing/delivery to known creditor, whichever is later; 18-3 not re-opened).",
+    "source": "https://syfert.com/illinois/sections/755-5-18-12.html",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "spousal_elective_share": {
+    "value": "Spouse may renounce the will and take 1/3 of the entire estate if testator leaves a descendant, 1/2 if none (755 ILCS 5/2-8). Renunciation filed within 7 months after the will is admitted to probate (extendable on petition while litigation affecting the share is pending).",
+    "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/075500050K2-8.htm",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "testator_age": {
+    "value": "18 or older and of sound mind and memory (755 ILCS 5/4-1).",
+    "source": "https://www.ilga.gov/Documents/legislation/ilcs/documents/075500050K4-1.htm",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   }
+  },
+  "OH": {
+   "small_estate_threshold": {
+    "value": "Release from administration: estate assets $35,000 or less (R.C. 2113.03); $100,000 or less where all assets pass to the surviving spouse (summary release; assets and spouse conditions per 2113.03/2113.031). Court order on application of an interested party after notice; applies to both personal and real property (commissioner may execute conveyances). Section effective 2012-01-13 (S.B. 124).",
+    "source": "https://codes.ohio.gov/ohio-revised-code/section-2113.03",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "simplified_probate": {
+    "value": "Yes: release from administration (R.C. 2113.03) by court order; summary release for spouse-takes-all estates; also 'estate administered without administration' filings. Real property can be covered.",
+    "source": "https://codes.ohio.gov/ohio-revised-code/section-2113.03",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "probate_timeline": {
+    "value": "6-12 months typical (estimate); 6-month creditor claim bar after death (R.C. 2117.06).",
+    "source": "https://codes.ohio.gov/ohio-revised-code/section-2117.06",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "executor_fee_rules": {
+    "value": "Statutory executor commission (R.C. 2113.35): 4% of first $100k, 3% of $100k-$400k, 2% above $400k on personal property, income and gross proceeds of real property sold; plus 1% of the value of real property not sold. Valuation: date-of-death FMV (gross sale proceeds for sold real estate). Attorney fees: Sup.R. 71 and local court rules.",
+    "source": "https://codes.ohio.gov/ohio-revised-code/section-2113.35",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "estate_tax": {
+    "value": "None (repealed for deaths on/after 2013-01-01).",
+    "source": "https://tax.ohio.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "inheritance_tax": {
+    "value": "None.",
+    "source": "https://tax.ohio.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "community_property": {
+    "value": "No.",
+    "source": "https://codes.ohio.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "upc": {
+    "value": "No.",
+    "source": "https://codes.ohio.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "will_witness_notary": {
+    "value": "Will in writing (handwritten or typed), signed at the end by testator (or another in testator's conscious presence at his direction), attested and subscribed in the testator's conscious presence by 2 or more competent witnesses who saw the signature or heard testator acknowledge it (R.C. 2107.03). 'Conscious presence' excludes presence by telephonic or electronic means. Notary not required.",
+    "source": "https://codes.ohio.gov/ohio-revised-code/section-2107.03",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "holographic_will": {
+    "value": "A handwritten will is valid only if it also meets the attestation rule of R.C. 2107.03 (2 competent witnesses); unwitnessed holographic wills are not valid.",
+    "source": "https://codes.ohio.gov/ohio-revised-code/section-2107.03",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "self_proving_affidavit": {
+    "value": "No statutory self-proving affidavit; Ohio probate courts admit wills validly executed with 2 witnesses without testimony in the usual case.",
+    "source": "https://codes.ohio.gov/ohio-revised-code/chapter-2107",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   },
+   "tod_deed": {
+    "value": "Yes: Transfer on Death Designation Affidavit (R.C. 5302.22): affidavit verified before a person authorized to administer oaths, naming TOD beneficiaries, recorded with the county recorder BEFORE the owner's death; no consideration and no delivery to beneficiary needed. Statute does not itself require witnesses. Securities TOD is separate (ch. 1709).",
+    "source": "https://codes.ohio.gov/ohio-revised-code/section-5302.22",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "durable_poa": {
+    "value": "Ohio Uniform Power of Attorney Act (R.C. ch. 1337, 1337.21 ff; 1337.25 effective 2012-03-22): POA must be signed by the principal (or by another in the principal's conscious presence at his direction). No witness or notary is required for validity; acknowledgment before a notary only creates a presumption the signature is genuine. Health care POA is separate (1337.11 ff; 2 adult witnesses or notary, not re-verified here).",
+    "source": "https://codes.ohio.gov/ohio-revised-code/section-1337.25",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "advance_directive": {
+    "value": "Health Care POA (R.C. 1337.11 et seq.) and Living Will Declaration (R.C. 2133.02), statutory forms; 2 adult witnesses or notary.",
+    "source": "https://codes.ohio.gov/ohio-revised-code/chapter-2133",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "medicaid_lookback": {
+    "value": "60 months. Ohio has an estate recovery program.",
+    "source": "https://medicaid.ohio.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "medicaid_home_equity": {
+    "value": "Federal 2026 SSI-linked home-equity cap: minimum $752,000, maximum $1,130,000 (states choose within range); figures are from recall of CMS annual notice, CMS PDF returned 404 this session. OH election not verified.",
+    "source": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   },
+   "poa_execution": {
+    "value": "Signed by principal (or at direction in principal's conscious presence); notarization only creates a presumption of genuine signature; no witnesses required (R.C. 1337.25).",
+    "source": "https://codes.ohio.gov/ohio-revised-code/section-1337.25",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "poa_statutory_form": {
+    "value": "Yes, optional: R.C. 1337.60 statutory form power of attorney ('a document substantially in the following form may be used'); property/financial only, excludes health care; special grants (gifts, trusts, beneficiary changes) need express authorization.",
+    "source": "https://codes.ohio.gov/ohio-revised-code/section-1337.60",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "creditor_claim_period": {
+    "value": "All claims must be presented within 6 months after the decedent's death, whether or not an executor or administrator is appointed or the estate is released from administration; later claims are forever barred (R.C. 2117.06).",
+    "source": "https://codes.ohio.gov/ohio-revised-code/section-2117.06",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "spousal_elective_share": {
+    "value": "Surviving spouse may elect against the will and take not more than 1/2 of the net estate, or not more than 1/3 if 2 or more of decedent's children or their descendants survive (R.C. 2106.01). Election deadline: 5 months after the initial appointment of the executor or administrator.",
+    "source": "https://codes.ohio.gov/ohio-revised-code/section-2106.01",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "testator_age": {
+    "value": "18 or older, of sound mind and memory, and not under restraint (R.C. 2107.02).",
+    "source": "https://codes.ohio.gov/ohio-revised-code/section-2107.02",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   }
+  },
+  "GA": {
+   "small_estate_threshold": {
+    "value": "No general small estate affidavit. O.C.G.A. 53-2-40 (petition for order declaring no administration necessary): intestate only, no value limit, no personal representative appointed, all heirs must agree in signed writing, estate owes no debts or creditors consent/are served; real property may be covered (certified order recorded in county deed records within 30 days; security-deed holder consent/service). A separate bank-deposit statute (O.C.G.A. 7-1-239, reported $15,000) was not re-opened. Not available when there is a will.",
+    "source": "https://law.justia.com/codes/georgia/title-53/chapter-2/article-4/section-53-2-40/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "simplified_probate": {
+    "value": "Partly: 53-2-40 no-administration petition (intestate only); year's support for surviving spouse/minor children (O.C.G.A. ch. 53-3, 53-3-1 ff); otherwise petition for letters in probate court.",
+    "source": "https://law.justia.com/codes/georgia/title-53/chapter-2/article-4/section-53-2-40/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "probate_timeline": {
+    "value": "6-12 months typical (estimate); creditors are served notice and have 3 months under O.C.G.A. 53-7-41 (recall).",
+    "source": "https://law.justia.com/codes/georgia/title-53/",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   },
+   "executor_fee_rules": {
+    "value": "Statutory commissions (O.C.G.A. 53-6-60): 2.5% of all money received and 2.5% of all money paid out for debts, legacies or distributive shares; extra items (up to 10% on interest from PR loans, up to 3% of appraised value for property delivered in kind, up to 10% of annual income for working land). Compensation may instead be set by the will, a pre-death written agreement, or a written agreement of all beneficiaries/heirs; annual returns must be filed; court may allow extra compensation on petition (53-6-62).",
+    "source": "https://law.justia.com/codes/georgia/title-53/chapter-6/article-7/section-53-6-60/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "estate_tax": {
+    "value": "None.",
+    "source": "https://dor.georgia.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "inheritance_tax": {
+    "value": "None.",
+    "source": "https://dor.georgia.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "community_property": {
+    "value": "No.",
+    "source": "https://law.justia.com/codes/georgia/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "upc": {
+    "value": "No (Georgia Probate Code, Title 53, adopted 1998 with partial UPC influences).",
+    "source": "https://law.justia.com/codes/georgia/title-53/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "will_witness_notary": {
+    "value": "Writing signed by testator (or another in testator's presence at his direction), attested and subscribed in testator's presence by 2 or more competent witnesses (O.C.G.A. 53-4-20). Notary not required (notary acts only for self-proof, 53-4-24).",
+    "source": "https://law.justia.com/codes/georgia/title-53/chapter-4/article-3/section-53-4-20/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "holographic_will": {
+    "value": "Not valid unless attested like any other will: 53-4-20 requires 2 or more competent witnesses.",
+    "source": "https://law.justia.com/codes/georgia/title-53/chapter-4/article-3/section-53-4-20/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "self_proving_affidavit": {
+    "value": "Yes: will or codicil may be self-proved by affidavits of the testator and attesting witnesses made before a notary, statutory form; a self-proved will can be admitted without witness testimony (O.C.G.A. 53-4-24).",
+    "source": "https://law.justia.com/codes/georgia/title-53/chapter-4/article-3/section-53-4-24/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "tod_deed": {
+    "value": "Yes: Georgia Transfer-on-Death Deeds, O.C.G.A. ch. 44-17 (44-17-1 to 44-17-7: definitions, requirements, statutory form, revocation, beneficiary rights, joint owners, limitations), effective 2024-07-01. Must meet deed formalities (44-2-15 attestation) and be recorded before the owner's death; owner stays owner until death. HB 413 (Act 379, signed 2026-04-22) amended the chapter; sources conflict on whether the beneficiary acceptance-affidavit deadline (previously 9 months) was kept or removed, so the post-2026 acceptance rule is UNVERIFIED and needs attorney review.",
+    "source": "https://law.justia.com/codes/georgia/title-44/chapter-17/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "durable_poa": {
+    "value": "Georgia Uniform POA Act, O.C.G.A. ch. 10-6B (effective 2017-07-01). 10-6B-5: signed by the principal (or by another in principal's presence at express direction) and attested by 2 individuals in the principal's presence, neither named as agent; one attestation must meet 44-2-15 (officer attestation, in practice a notary).",
+    "source": "https://law.justia.com/codes/georgia/title-10/chapter-6b/article-1/section-10-6b-5/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "advance_directive": {
+    "value": "Georgia Advance Directive for Health Care (O.C.G.A. 31-32-4 statutory form); signed with 1-2 witnesses (check form).",
+    "source": "https://law.justia.com/codes/georgia/title-31/chapter-32/",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   },
+   "medicaid_lookback": {
+    "value": "60 months.",
+    "source": "https://medicaid.georgia.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "medicaid_home_equity": {
+    "value": "Federal 2026 SSI-linked home-equity cap: minimum $752,000, maximum $1,130,000 (states choose within range); figures are from recall of CMS annual notice, CMS PDF returned 404 this session. GA election not verified.",
+    "source": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   },
+   "creditor_claim_period": {
+    "value": "Personal representative publishes a notice to creditors within 60 days of qualification, once a week for 4 weeks (O.C.G.A. 53-7-41). Creditors who do not notify the PR within 3 months from publication lose priority and cannot hold the PR liable for funds already distributed; they keep rights if assets remain. This is a priority/liability rule, not a hard bar.",
+    "source": "https://law.justia.com/codes/georgia/title-53/chapter-7/article-4/section-53-7-41/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "testator_age": {
+    "value": "14 or older (O.C.G.A. 53-4-10(a)), absent a legal disability from want of capacity or freedom of action.",
+    "source": "https://law.justia.com/codes/georgia/title-53/chapter-4/article-2/section-53-4-10/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "poa_execution": {
+    "value": "Signed by principal; attested in principal's presence by one competent non-agent witness plus a second non-agent attester meeting 44-2-15 (O.C.G.A. 10-6B-5).",
+    "source": "https://law.justia.com/codes/georgia/title-10/chapter-6b/article-1/section-10-6b-5/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "poa_statutory_form": {
+    "value": "Yes: Article 3 'Statutory Forms' (O.C.G.A. 10-6B-70 and 10-6B-71) contains the sample POA form; whether use is optional not opened.",
+    "source": "https://law.justia.com/codes/georgia/title-10/chapter-6b/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "spousal_elective_share": {
+    "value": "No elective-share statute located in Title 53; spousal protection is year's support (O.C.G.A. 53-3-1 ff). Not verified exhaustively.",
+    "source": "https://law.justia.com/codes/georgia/title-53/chapter-3/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   }
+  },
+  "NC": {
+   "small_estate_threshold": {
+    "value": "Collection by affidavit (N.C.G.S. 28A-25-1 intestate; 28A-25-1.1 testate): personal property, less liens and encumbrances, not over $20,000, or $30,000 if the affiant is the surviving spouse and sole heir (after reduction for spousal allowance under 30-15); at least 30 days after death. Real property is not collected by affidavit (the affidavit must still describe each tract owned).",
+    "source": "https://law.justia.com/codes/north-carolina/chapter-28a/article-25/section-28a-25-1/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "simplified_probate": {
+    "value": "Yes: collection by affidavit (above); also 'summary administration' for small estates and 'Year's allowance' for surviving spouse ($60,000, N.C.G.S. 30-15; amount recalled).",
+    "source": "https://www.ncleg.gov/Laws/GeneralStatutes",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "probate_timeline": {
+    "value": "6-12 months (estimate); creditor notice period at least 3 months from first publication.",
+    "source": "https://www.nccourts.gov/help-topics/wills-and-estates",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "executor_fee_rules": {
+    "value": "Commissions 'not to exceed' 5% of receipts (including value of personal property when received) and expenditures (N.C.G.S. 28A-23-3); no 2% minimum; no commission on distributions to heirs/devisees; for estates of $2,000 or less the clerk may fix the commission; clerk may consider professional fees paid by the estate.",
+    "source": "https://law.justia.com/codes/north-carolina/chapter-28a/article-23/section-28a-23-3/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "estate_tax": {
+    "value": "None (repealed 2013).",
+    "source": "https://www.ncdor.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "inheritance_tax": {
+    "value": "None.",
+    "source": "https://www.ncdor.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "community_property": {
+    "value": "No.",
+    "source": "https://www.ncleg.gov/Laws/GeneralStatutes",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "upc": {
+    "value": "No.",
+    "source": "https://www.ncleg.gov/Laws/GeneralStatutes",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "will_witness_notary": {
+    "value": "Attested written will: signed by testator (or by another in testator's presence at direction), shown to at least 2 competent witnesses by signing before them or acknowledging the signature; witnesses sign in the testator's presence but need not sign in each other's presence (N.C.G.S. 31-3.3). Notary not required.",
+    "source": "https://law.justia.com/codes/north-carolina/chapter-31/article-1/section-31-3-3/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "holographic_will": {
+    "value": "Valid if written entirely in testator's handwriting (incidental non-handwritten matter allowed if it does not affect meaning) and subscribed by the testator, with name written by testator in or on the will; no attesting witness required (N.C.G.S. 31-3.4). The former requirement that it be found among valuable papers or deposited for safekeeping was repealed by S.L. 2021-85, effective 2021-07-08, per the Justia annotation. Proof at probate (31-18.2, reported 3 witnesses to handwriting) not re-opened.",
+    "source": "https://law.justia.com/codes/north-carolina/chapter-31/article-1/section-31-3-4/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "self_proving_affidavit": {
+    "value": "Yes: self-proving affidavit (31-11.6) before notary.",
+    "source": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_31/GS_31-11.6.html",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "tod_deed": {
+    "value": "No TOD deed statute found: a secondary source states NC has not adopted the Uniform Real Property TOD Act and chapters 31/41/47 contain no real-property TOD article (ch. 41 covers securities only). Not confirmed against the statutes; confirm with attorney.",
+    "source": "https://simplytrust.com/forms/tod-deed/north-carolina/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "durable_poa": {
+    "value": "N.C.G.S. ch. 32C (Uniform POA Act): signed by the principal (or by another in principal's conscious presence at direction) and acknowledged before a notary (32C-1-105); no witnesses required. Statutory form is optional (32C-3-301).",
+    "source": "https://law.justia.com/codes/north-carolina/chapter-32c/article-1/section-32c-1-105/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "advance_directive": {
+    "value": "Health Care POA (ch. 32A, 2 witnesses + notary) and Advance Directive for a Natural Death 'Living Will' (G.S. 90-321, 2 witnesses + notary); statutory forms.",
+    "source": "https://www.ncleg.gov/Laws/GeneralStatutes",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "medicaid_lookback": {
+    "value": "60 months.",
+    "source": "https://medicaid.ncdhhs.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "medicaid_home_equity": {
+    "value": "Federal 2026 SSI-linked home-equity cap: minimum $752,000, maximum $1,130,000 (states choose within range); figures are from recall of CMS annual notice, CMS PDF returned 404 this session. NC election not verified.",
+    "source": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   },
+   "creditor_claim_period": {
+    "value": "Pre-death claims barred if not presented by the date in the general notice (at least 90 days after first publication/posting, or 90 days after notice delivery to a known creditor, whichever is later). Absolute bar: claims are barred if the first publication or posting of notice does not occur within 3 years after death. Post-death claims: 6 months from when the claim arises (N.C.G.S. 28A-19-3).",
+    "source": "https://law.justia.com/codes/north-carolina/chapter-28a/article-19/section-28a-19-3/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "spousal_elective_share": {
+    "value": "Surviving spouse's elective share of Total Net Assets by marriage length (N.C.G.S. 30-3.1): under 5 years 15%; 5-10 years 25%; 10-15 years 33%; 15+ years 50%; reduced by property already passing to the spouse. Claim within 6 months after letters issue, no tolling for incapacity (30-3.4, as read).",
+    "source": "https://law.justia.com/codes/north-carolina/chapter-30/article-1a/section-30-3-1/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "testator_age": {
+    "value": "18 or older and of sound mind (N.C.G.S. 31-1).",
+    "source": "https://law.justia.com/codes/north-carolina/chapter-31/article-1/section-31-1/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "poa_execution": {
+    "value": "Signed by principal (or at direction in conscious presence) and acknowledged before a notary or other officer authorized to take acknowledgments (N.C.G.S. 32C-1-105); no witnesses required.",
+    "source": "https://law.justia.com/codes/north-carolina/chapter-32c/article-1/section-32c-1-105/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "poa_statutory_form": {
+    "value": "Yes, optional: N.C.G.S. 32C-3-301 statutory form power of attorney, described as a nonexclusive method of granting a POA.",
+    "source": "https://law.justia.com/codes/north-carolina/chapter-32c/article-3/section-32c-3-301/",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   }
+  },
+  "MI": {
+   "small_estate_threshold": {
+    "value": "$53,000 for 2026 deaths, indexed annually (per a secondary source; MCL 700.3982/3983 pages timed out this pass). Court petition (700.3982): judge signs order assigning property to surviving spouse or heirs; no wait; can reach real property. Affidavit (700.3983): notarized, 28 days after death, cannot be used if the estate includes ANY real property.",
+    "source": "https://ezel.ai/surveys/small-estate-affidavit-thresholds/michigan",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "simplified_probate": {
+    "value": "Yes: small estate affidavit and petition; Michigan also offers informal probate (registrar) vs formal probate (judge) under EPIC.",
+    "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3982",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "probate_timeline": {
+    "value": "Informal probate commonly 6-12 months (estimate); 4-month creditor window after publication (MCL 700.3801).",
+    "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3801",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "executor_fee_rules": {
+    "value": "No schedule: personal representative is entitled to 'reasonable compensation for services performed' (MCL 700.3719), may pay own compensation as it accrues, may renounce in writing; attorney fees governed by MRPC 1.5 reasonableness (not re-opened).",
+    "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3719",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "estate_tax": {
+    "value": "None (state estate tax decoupled/none for current deaths).",
+    "source": "https://www.michigan.gov/treasury",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "inheritance_tax": {
+    "value": "None (repealed).",
+    "source": "https://www.michigan.gov/treasury",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "community_property": {
+    "value": "No.",
+    "source": "https://www.legislature.mi.gov/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "upc": {
+    "value": "Yes: Estates and Protected Individuals Code (EPIC, MCL ch. 700) based on the Uniform Probate Code (adopted 1998).",
+    "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Act-386-of-1998",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "will_witness_notary": {
+    "value": "Will in writing, signed by testator (or by another in testator's conscious presence in testator's name), and signed by at least 2 individuals each of whom signed within a reasonable time after witnessing the signing or acknowledgment (MCL 700.2502(1)). Notary not required. Holographic alternative in 2502(2).",
+    "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2502",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "holographic_will": {
+    "value": "Valid if dated, and the testator's signature and the document's material portions are in the testator's handwriting, whether or not witnessed (MCL 700.2502(2)). Prior entry cited 700.2503, which is actually the harmless-error rule: a non-compliant document is treated as a will if the proponent proves by clear and convincing evidence that the decedent intended it as a will.",
+    "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2502",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "self_proving_affidavit": {
+    "value": "Yes: MCL 700.2504 self-proved will (notarized).",
+    "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2504",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "tod_deed": {
+    "value": "No TOD deed statute located: a secondary source states MI has not adopted the Uniform Real Property TOD Act or any beneficiary-deed statute and relies on enhanced life estate (Lady Bird) deeds under common law and the Powers of Appointment Act (1967 PA 224), per Land Title Standard 9.3. Not confirmed against the statute; confirm with attorney.",
+    "source": "https://simplytrust.com/forms/tod-deed/michigan/",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "durable_poa": {
+    "value": "Michigan Uniform Power of Attorney Act (MCL 556.201 et seq.; effective 2024-07-01, Act 169 of 2023, effective date not re-opened). MCL 556.205: signed by principal (or another in principal's conscious presence); for durability must either be acknowledged before a notary OR signed in the presence of 2 witnesses who also sign, neither a nominated agent. Witnessed-only POAs lack the presumption of genuine signature.",
+    "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-556-205",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "advance_directive": {
+    "value": "Patient Advocate Designation (MCL 700.5506-5515): 2 qualified witnesses, no notary required; no single mandatory statutory form.",
+    "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-5506",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "medicaid_lookback": {
+    "value": "60 months; Michigan estate recovery applies.",
+    "source": "https://www.michigan.gov/mdhhs",
+    "as_of": "2026-10-06",
+    "confidence": "medium"
+   },
+   "medicaid_home_equity": {
+    "value": "Federal 2026 SSI-linked home-equity cap: minimum $752,000, maximum $1,130,000 (states choose within range); figures are from recall of CMS annual notice, CMS PDF returned 404 this session. MI election not verified.",
+    "source": "https://www.medicaid.gov/medicaid/eligibility/index.html",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   },
+   "creditor_claim_period": {
+    "value": "Notice published requires claims within 4 months after publication or be forever barred; known creditors get direct notice (MCL 700.3801). MCL 700.3803: claims presented within 4 months after publication; for known creditors the later of 1 month after notice or 4 months from publication; where notice requirements are not met, up to 3 years after death (per fetched summary).",
+    "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-3803",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "testator_age": {
+    "value": "18 or older with sufficient mental capacity (MCL 700.2501): knows disposition of property, nature and extent of property, natural objects of bounty, and the effect of signing.",
+    "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2501",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "poa_execution": {
+    "value": "Signed by principal; either notarized or signed before 2 non-agent witnesses who also sign (MCL 556.205).",
+    "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-556-205",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   },
+   "poa_statutory_form": {
+    "value": "Not verified; no mandatory statutory form identified. Confirm whether the Act includes an optional statutory form.",
+    "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Act-169-of-2023",
+    "as_of": "2026-10-06",
+    "confidence": "unverified"
+   },
+   "spousal_elective_share": {
+    "value": "Yes (post dower abolition): in a testate estate the surviving spouse may elect to take 1/2 of the intestate share, reduced by 1/2 of property the spouse derived from the decedent by means other than succession (MCL 700.2202(2)); one choice only; election within 63 days after the date for presentment of claims or after service of the inventory on the spouse, whichever is later. Dower abolished effective 2017-04-06 (2016 PA 489) except widows of men who died earlier. Allowances in addition: homestead allowance $15,000 indexed (700.2402), family allowance (700.2403), exempt property (700.2404).",
+    "source": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-700-2202",
+    "as_of": "2026-10-06",
+    "confidence": "high"
+   }
+  }
+ }
+}
