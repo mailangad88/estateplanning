@@ -54,6 +54,18 @@ export function leadAccess(actor: Actor, lead: Lead, assignments: Assignment[], 
   }
 }
 
+/**
+ * A visitor's "My family plan" organizer, once linked to their lead. Staff who can work the lead's
+ * intake or the whole case see its summary (counts, ranges, gaps), never the answers themselves.
+ * Clients, marketing and offer-stage lawyers do not. The visitor's own access is not an Actor at
+ * all: it is a separate plan session (src/server/services/familyPlan.ts) that reaches nothing else.
+ * Mirrors family_plans_staff_select in db/schema.sql.
+ */
+export function canViewFamilyPlanSummary(actor: Actor, lead: Lead, assignments: Assignment[], now = new Date()): boolean {
+  const access = leadAccess(actor, lead, assignments, now);
+  return access === "full" || access === "intake";
+}
+
 export type LeadAction =
   | "view"
   | "respond_to_offer"

@@ -30,7 +30,7 @@ export const SCORE_WEIGHTS = {
 
 /** Capture points where the visitor explicitly asked to be contacted. Always tier "hot". */
 const DIRECT_REQUESTS: CaptureTool[] = ["intake", "callback"];
-const TOOL_CAPTURES: CaptureTool[] = ["readiness_score", "cost_calculator", "will_vs_trust"];
+const TOOL_CAPTURES: CaptureTool[] = ["readiness_score", "cost_calculator", "will_vs_trust", "family_plan"];
 
 /** hot = Urgent, grade A or a direct request; warm = everything else that is served. Kept for existing consumers; prefer `grade` and `urgent`. */
 export type Tier = "hot" | "warm" | "not_a_fit";

@@ -4,6 +4,18 @@ import { ForbiddenError, writableVisibilities } from "@/server/auth/policy";
 import { buildCaseView, type CommentNode } from "@/server/portal/caseView";
 import { currentActor, getDb, scopedDb } from "@/server/runtime";
 import { ApproveEngagement, CommentForm, InviteClient, OfferActions, RefundPayment } from "@/app/portal/actions";
+import {
+  ASSET_TYPE_LABELS,
+  DOC_KEYS,
+  DOC_LABELS,
+  MARITAL_LABELS,
+  SECTION_KEYS,
+  SECTION_LABELS,
+  YES_NO_UNSURE_LABELS,
+  formatTotal,
+  type AssetType,
+} from "@/lib/familyPlan";
+import type { OrganizerSummaryView } from "@/server/services/familyPlan";
 
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Case", robots: { index: false, follow: false } };
@@ -23,6 +35,56 @@ function Comments({ nodes, leadId, visibilities }: { nodes: CommentNode[]; leadI
         </li>
       ))}
     </ul>
+  );
+}
+
+function OrganizerSummary({ view }: { view: OrganizerSummaryView }) {
+  const s = view.summary;
+  const h = s.household;
+  const yes = (b: boolean) => (b ? "named" : "not named");
+  return (
+    <section className="card">
+      <h2>Organizer summary</h2>
+      <p className="notice">
+        From the client&apos;s &ldquo;My family plan&rdquo; organizer, updated {when(view.updatedAt)}. Self-reported counts and ranges only; the client&apos;s
+        names, notes and wishes stay with them. {s.sectionsDone} of {s.sectionsTotal} sections done (
+        {SECTION_KEYS.filter((k) => s.sections[k] === "done").map((k) => SECTION_LABELS[k]).join(", ") || "none yet"}).
+      </p>
+      <h3>Gaps the organizer flagged ({s.gaps.length})</h3>
+      {s.gaps.length === 0 ? <p>None from what they entered.</p> : <ul>{s.gaps.map((g) => <li key={g.code}>{g.text}</li>)}</ul>}
+      <h3>Household</h3>
+      <p>
+        {h.homeState ?? "State not given"} · {h.maritalStatus ? MARITAL_LABELS[h.maritalStatus] : "relationship not given"} · {h.children} children listed, {h.minors} minor
+        {h.minors > 0 && <> · guardian {yes(h.guardianNamed)}, backup {yes(h.backupGuardianNamed)}</>}
+        {" "}· executor {yes(h.executorNamed)} · financial agent {yes(h.financialAgentNamed)} · healthcare agent {yes(h.healthcareAgentNamed)}
+      </p>
+      <h3>Assets ({s.assets.count})</h3>
+      {s.assets.count > 0 && (
+        <>
+          <p>
+            Rough total {formatTotal(s.assets.totalLow, s.assets.totalHigh)}
+            {s.assets.unvalued > 0 ? ` plus ${s.assets.unvalued} not estimated` : ""} · {s.assets.inTrust} in a trust · {s.assets.titledAlone} in their name alone ·{" "}
+            {s.assets.titlingNotSure} titling not sure · {s.assets.beneficiaryNamed} with a beneficiary named · {s.assets.beneficiaryMissing} without
+          </p>
+          <ul>{(Object.entries(s.assets.byType) as [AssetType, number][]).map(([t, n]) => <li key={t}>{ASSET_TYPE_LABELS[t]}: {n}</li>)}</ul>
+        </>
+      )}
+      <h3>Existing documents</h3>
+      <table>
+        <tbody>
+          {DOC_KEYS.map((k) => {
+            const d = s.documents[k];
+            return (
+              <tr key={k}>
+                <td>{DOC_LABELS[k]}</td>
+                <td>{d?.has ? YES_NO_UNSURE_LABELS[d.has] : "not answered"}{d?.yearSigned ? ` · ${d.yearSigned}` : ""}{d?.state ? ` · ${d.state}` : ""}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+      <p className="notice">Wishes written down: {s.hasWishes ? "yes" : "no"} · Where papers are kept: {s.hasPapersLocation ? "noted" : "not noted"}</p>
+    </section>
   );
 }
 
@@ -107,6 +169,9 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
           </p>
         </section>
       )}
+
+      {/* 6b. The client's "My family plan" organizer: counts, ranges and gaps only */}
+      {s.organizer && <OrganizerSummary view={s.organizer} />}
 
       {/* 7. Documents */}
       {s.documents && (

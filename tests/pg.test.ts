@@ -17,6 +17,9 @@ import type { BillableEvent } from "@/lib/fees";
 import type { SequenceEnrollment, Suppression, TemplateApproval } from "@/server/nurture/types";
 import type { AutomationState } from "@/server/db";
 import type { FactVerification } from "@/lib/facts";
+import { familyPlanBodySchema, summarizePlan } from "@/lib/familyPlan";
+import type { FamilyPlan, FamilyPlanBodyRecord, PlanLinkUse } from "@/server/types";
+import { consumeLink } from "@/server/services/familyPlan";
 
 const SCHEMA = readFileSync(join(__dirname, "../db/schema.sql"), "utf8");
 
@@ -208,6 +211,12 @@ const fixtures = {
     askedAt: T0, remindedAt: T0, reminderChannel: "sms", optedOutAt: T0, postedAt: T0, createdAt: T0,
   } satisfies Required<ReviewRequest>,
   automationState: { id: "automation", cursorSeq: 42, stages: { l1: "offered" }, exits: { l1: "x" } } satisfies Required<AutomationState>,
+  familyPlans: {
+    id: "fp_1", emailHash: "h".repeat(64), leadId: "l1", summary: summarizePlan(familyPlanBodySchema.parse({ people: { childrenStatus: "minors" } }), 2026),
+    sectionsDone: 0, gapCount: 1, consent: { version: "family-plan-2026-10", at: T0 }, prefilledFrom: ["lead"], createdAt: T0, updatedAt: T0,
+  } satisfies Required<FamilyPlan>,
+  familyPlanBodies: { id: "fp_1", ciphertext: "v1.iv.tag.ct", updatedAt: T0 } satisfies Required<FamilyPlanBodyRecord>,
+  planLinkUses: { id: "jti-fixture", usedAt: T0 } satisfies Required<PlanLinkUse>,
 };
 
 describe("every TS field maps to a column", () => {
@@ -606,6 +615,73 @@ suite("postgres integration", () => {
     expect(updated.exclusionCode).toBeUndefined();
     // eligible and excluded are mutually exclusive in the schema itself
     await expect(service.reviewRequests.update("review-l1", { exclusionCode: "OPTOUT" })).rejects.toThrow();
+  });
+
+  maybe("RLS: a planner sees only its own family plan and nothing else; staff see summaries of leads they hold, never the answers", async () => {
+    // fp_1 is linked to l1 (assigned to lw1, firm f1, intake owner u-intake); fp_2 is not linked to anything
+    await service.familyPlans.insert({ ...fixtures.familyPlans, id: "fp_2", emailHash: "i".repeat(64), leadId: undefined, prefilledFrom: undefined });
+    await service.familyPlanBodies.insert({ id: "fp_2", ciphertext: "v1.other", updatedAt: T0 });
+    const planner = as({ userId: "fp_1", role: "planner" });
+    expect((await planner.familyPlans.list()).map((p) => p.id)).toEqual(["fp_1"]);
+    expect((await planner.familyPlanBodies.list()).map((p) => p.id)).toEqual(["fp_1"]);
+    expect(await planner.familyPlans.get("fp_2")).toBeUndefined();
+    expect(await planner.familyPlanBodies.get("fp_2")).toBeUndefined();
+    // nothing else in the database is visible to a planner session
+    for (const key of ["users", "firms", "lawyers", "persons", "leads", "assignments", "documents", "comments", "activities", "consults",
+      "engagements", "payments", "tasks", "invoices", "enrollments", "suppressions", "crmDeliveries", "seminars", "partners", "partnerGifts",
+      "partnerReferrals", "conversionEvents", "reviewRequests", "factVerifications", "templateApprovals"] as const) {
+      expect(await (planner[key] as { list(): Promise<unknown[]> }).list(), key).toEqual([]);
+    }
+    expect(await planner.leadOfferCards()).toEqual([]);
+    expect(await planner.audit.list()).toEqual([]);
+    // it may change its own plan, but not relink it to a lead or touch another plan
+    await planner.familyPlans.update("fp_1", { gapCount: 2 });
+    await planner.familyPlanBodies.update("fp_1", { ciphertext: "v1.new" });
+    await expect(planner.familyPlans.update("fp_1", { leadId: "l-offer" })).rejects.toThrow(/only the server links/);
+    await expect(planner.familyPlans.update("fp_1", { emailHash: "j".repeat(64) })).rejects.toThrow();
+    await expect(planner.familyPlans.update("fp_2", { gapCount: 9 })).rejects.toThrow(/not found or not permitted/);
+    await expect(planner.familyPlans.insert({ ...fixtures.familyPlans, id: "fp_3", emailHash: "k".repeat(64), leadId: undefined })).rejects.toThrow();
+    const own = as({ userId: "fp_3", role: "planner" });
+    await expect(own.familyPlans.insert({ ...fixtures.familyPlans, id: "fp_3", emailHash: "k".repeat(64) })).rejects.toThrow(/only the server links/);
+    expect(await planner.familyPlans.remove("fp_2")).toBe(false);
+    expect(await service.familyPlans.get("fp_2")).toBeDefined();
+    await audit(planner, { userId: "fp_1", role: "planner" }, { action: "family_plan.update", resourceType: "family_plan", resourceId: "fp_1" });
+
+    const ids = async (s: PgSession) => ({
+      plans: (await as(s).familyPlans.list()).map((p) => p.id).sort(),
+      bodies: (await as(s).familyPlanBodies.list()).map((p) => p.id),
+    });
+    expect(await ids({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" })).toEqual({ plans: ["fp_1"], bodies: [] });
+    expect(await ids({ userId: "u-intake", role: "intake" })).toEqual({ plans: ["fp_1"], bodies: [] });
+    expect(await ids({ userId: "u-admin", role: "platform_admin" })).toEqual({ plans: ["fp_1"], bodies: [] });
+    expect(await ids({ userId: "u-other", role: "attorney", firmId: "f2", lawyerId: "lw2" })).toEqual({ plans: [], bodies: [] });
+    expect(await ids({ userId: "u-m", role: "marketing" })).toEqual({ plans: [], bodies: [] });
+    expect(await ids({ userId: "u-client", role: "client", personId: "p1" })).toEqual({ plans: [], bodies: [] });
+    // the case view reads the summary through the attorney's own session
+    const actor = { userId: "u-attorney", role: "attorney" as const, firmId: "f1", lawyerId: "lw1", mfa: true };
+    const view = await buildCaseView(as({ userId: actor.userId, role: actor.role, firmId: actor.firmId, lawyerId: actor.lawyerId }), actor, "l1");
+    expect(view.sections.organizer?.planId).toBe("fp_1");
+    await expect(as({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" }).familyPlans.update("fp_1", { gapCount: 0 })).rejects.toThrow();
+
+    // hard delete by the owner; the body goes with the plan
+    expect(await planner.familyPlanBodies.remove("fp_1")).toBe(true);
+    expect(await planner.familyPlans.remove("fp_1")).toBe(true);
+    expect(await service.familyPlans.get("fp_1")).toBeUndefined();
+    await service.familyPlans.remove("fp_2");
+    expect(await service.familyPlanBodies.get("fp_2")).toBeUndefined(); // ON DELETE CASCADE
+  });
+
+  maybe("plan_link_uses: a link id is consumed once across connections; app_user cannot see or write it", async () => {
+    expect(await consumeLink(service, "jti-pg", new Date())).toBe(true);
+    const other = createPgDb({ pool, session: "service" }); // stands in for another app instance
+    expect(await consumeLink(other, "jti-pg", new Date())).toBe(false);
+    const racers = await Promise.all(Array.from({ length: 5 }, () => consumeLink(createPgDb({ pool, session: "service" }), "jti-race", new Date())));
+    expect(racers.filter(Boolean)).toHaveLength(1);
+    for (const s of [{ userId: "u-admin", role: "platform_admin" }, { userId: "fp_1", role: "planner" }] as const) {
+      await expect(as(s).planLinkUses.list()).rejects.toThrow(/permission denied/);
+      await expect(as(s).planLinkUses.insert({ id: "jti-x", usedAt: T0 })).rejects.toThrow(/permission denied/);
+    }
+    await expect(service.planLinkUses.update("jti-pg", { usedAt: T0 })).rejects.toThrow();
   });
 
   maybe("audit_events cannot be updated or deleted", async () => {

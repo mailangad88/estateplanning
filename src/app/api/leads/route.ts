@@ -9,6 +9,8 @@ import { captureTags, heardFromTags, scoreLead, segmentTags, toolTags } from "@/
 import { getDb } from "@/server/runtime";
 import { deliverAndLog } from "@/server/leadDelivery";
 import { ingestLead } from "@/server/services/leads";
+import { cookieFromHeader } from "@/server/auth/session";
+import { linkPlanToNewLead, PLAN_SESSION_COOKIE, readPlanSession } from "@/server/services/familyPlan";
 import { getMagnet } from "@/lib/magnets";
 
 export async function POST(request: Request) {
@@ -78,7 +80,17 @@ export async function POST(request: Request) {
   const ingestEnabled = process.env.PORTAL_INGEST_LEADS === "true";
   const ingest = async (): Promise<boolean> => {
     try {
-      await ingestLead(await getDb(), record, now);
+      const db = await getDb();
+      const stored = await ingestLead(db, record, now);
+      // A visitor signed in to "My family plan" who books from it: link the plan so the attorney sees its summary.
+      const planId = readPlanSession(cookieFromHeader(request.headers.get("cookie"), PLAN_SESSION_COOKIE));
+      if (planId) {
+        try {
+          await linkPlanToNewLead(db, planId, stored, lead.email, now);
+        } catch (err) {
+          console.error("family plan link failed", { id: record.id, error: err instanceof Error ? err.message : String(err) });
+        }
+      }
       return true;
     } catch (err) {
       console.error("portal ingest failed", { id: record.id, error: err instanceof Error ? err.message : String(err) });
