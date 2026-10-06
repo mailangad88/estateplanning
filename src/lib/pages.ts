@@ -2,6 +2,7 @@ import { MONEY_PAGES } from "@/content/money-pages";
 import { getQuizzes } from "@/lib/quizzes";
 import { getMagnets } from "@/lib/magnets";
 import { TOOLS } from "@/config/tools";
+import { DECISIONS, decisionPath } from "@/config/decisions";
 import { EXPLAINERS } from "@/explainers/data";
 import { getAudiences, getChecklists, getComparisons, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
 import { getStates } from "@/lib/states";
@@ -53,6 +54,8 @@ export function allPages(): SitePage[] {
   pages.push({ path: "/quizzes", title: "Quizzes", description: "Estate planning quizzes.", updated: TODAY, section: "Main" });
   for (const q of getQuizzes()) pages.push({ path: `/quizzes/${q.slug}`, title: q.title, description: q.description, updated: q.updated, section: "Quizzes" });
   for (const m of getMagnets()) pages.push({ path: `/free/${m.slug}`, title: m.title, description: m.description, updated: m.updated, section: "Free resources" });
+  pages.push({ path: "/decide", title: "Estate planning decision guides", description: "Visual guides that compare every option and help you pick one.", updated: TODAY, section: "Main" });
+  for (const d of DECISIONS) pages.push({ path: decisionPath(d.slug), title: d.title, description: d.description, updated: d.updated, section: "Decision guides" });
   for (const t of TOOLS) pages.push({ path: `/tools/${t.slug}`, title: t.title, description: t.description, updated: TODAY, section: "Tools" });
   for (const e of EXPLAINERS) pages.push({ path: `/explainers/${e.slug}`, title: e.title, description: e.description, updated: TODAY, section: "Explainers" });
   for (const l of getLessons()) pages.push({ path: `/course/${l.day}`, title: l.title, description: l.description, updated: l.updated, section: "7-day course" });
