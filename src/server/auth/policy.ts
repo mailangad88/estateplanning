@@ -112,6 +112,10 @@ export type GlobalAction =
   | "manage_users"
   | "view_reports"
   | "view_lead_health"
+  | "view_conversions"
+  | "manage_conversions"
+  | "view_review_tracking"
+  | "manage_reviews"
   | "manage_content"
   | "view_invoices"
   | "manage_firm_capacity"
@@ -128,6 +132,12 @@ const GLOBAL: Record<GlobalAction, Role[]> = {
   manage_users: ["platform_admin", "firm_admin"],
   view_reports: ["platform_admin", "marketing", "firm_admin"],
   view_lead_health: ["platform_admin", "firm_admin"],
+  // Ad-platform conversions carry ids, times and fee values: marketing reads, only platform admins export or retry.
+  view_conversions: ["platform_admin", "marketing"],
+  manage_conversions: ["platform_admin"],
+  // The "asked everyone" proof is an audit view. Recording "I posted" or a review opt-out follows a client's own word.
+  view_review_tracking: ["platform_admin", "firm_admin"],
+  manage_reviews: ["platform_admin", "intake", "firm_admin"],
   manage_content: ["platform_admin", "marketing"],
   view_invoices: ["platform_admin", "firm_admin"],
   manage_firm_capacity: ["platform_admin", "firm_admin"],

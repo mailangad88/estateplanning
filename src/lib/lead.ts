@@ -72,10 +72,17 @@ export const leadSubmissionSchema = z.object({
       utmCampaign: z.string().max(200).optional(),
       utmTerm: z.string().max(200).optional(),
       utmContent: z.string().max(200).optional(),
+      /** Ad click ids. Kept on the lead so CRM stage changes can be sent back as offline conversions. */
       gclid: z.string().max(300).optional(),
+      /** Google click ids for iOS app and web-to-app traffic where gclid is not issued. */
+      gbraid: z.string().max(300).optional(),
+      wbraid: z.string().max(300).optional(),
       fbclid: z.string().max(300).optional(),
       /** Referral partner code from a ?ref= link (src/lib/partners.ts). Unknown codes are ignored on the server. */
       partnerRef: z.string().max(64).optional(),
+      /** Meta browser id (_fbc) and click id cookie (_fbp), copied verbatim for Conversions API matching. */
+      fbc: z.string().max(300).optional(),
+      fbp: z.string().max(300).optional(),
       /** Optional "How did you hear about us?" answer. Self-reported, so AI-assistant referrals can be counted. */
       heardFrom: z.enum(HEARD_FROM_VALUES).optional(),
     })

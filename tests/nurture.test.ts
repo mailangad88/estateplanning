@@ -63,7 +63,7 @@ describe("sequence definitions", async () => {
     const ids = SEQUENCES.map((s) => s.id);
     for (const id of [
       "speed_to_lead", "quiz_follow_up", "consult_booked", "no_show_recovery", "consult_held_not_signed",
-      "signed_onboarding", "plan_complete", "long_term", "annual_review", ...LIFE_EVENT_SEGMENTS.map(lifeEventSequenceId),
+      "signed_onboarding", "plan_complete", "review_request", "long_term", "annual_review", ...LIFE_EVENT_SEGMENTS.map(lifeEventSequenceId),
     ]) expect(ids).toContain(id);
     expect(new Set(ids).size).toBe(ids.length);
   });
@@ -351,7 +351,7 @@ describe("scheduler", async () => {
     await onStageChange(db, "l1", "retainer_signed", T0);
     expect(await active()).toEqual(["signed_onboarding"]);
     await onStageChange(db, "l1", "plan_complete", T0);
-    expect(await active()).toEqual(["annual_review", "plan_complete"]);
+    expect(await active()).toEqual(["annual_review", "plan_complete", "review_request"]);
   });
 
   it("hands consult_held_not_signed off to long_term when it finishes", async () => {

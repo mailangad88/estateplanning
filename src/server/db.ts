@@ -11,6 +11,7 @@ import type {
   AuditEvent,
   Comment,
   Consult,
+  ConversionEvent,
   CrmDelivery,
   DocumentRecord,
   Engagement,
@@ -22,6 +23,7 @@ import type {
   PartnerReferral,
   PaymentRecord,
   Person,
+  ReviewRequest,
   Task,
   User,
 } from "@/server/types";
@@ -135,6 +137,8 @@ export interface Db {
   partners: Collection<Partner>;
   partnerGifts: Collection<PartnerGift>;
   partnerReferrals: Collection<PartnerReferral>;
+  conversionEvents: Collection<ConversionEvent>;
+  reviewRequests: Collection<ReviewRequest>;
   audit: AppendOnly<AuditEvent>;
 }
 
@@ -173,6 +177,8 @@ export function createMemoryDb(): Db {
     partners: new MemoryCollection(),
     partnerGifts: new MemoryCollection(),
     partnerReferrals: new MemoryCollection(),
+    conversionEvents: new MemoryCollection(),
+    reviewRequests: new MemoryCollection(),
     audit: new MemoryAppendOnly(),
   };
 }

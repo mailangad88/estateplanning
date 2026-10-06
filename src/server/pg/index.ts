@@ -292,6 +292,8 @@ export function createPgDb(opts: { pool?: Pool; session?: PgSession } = {}): PgD
     partners: col(TABLES.partners),
     partnerGifts: col(TABLES.partnerGifts),
     partnerReferrals: col(TABLES.partnerReferrals),
+    conversionEvents: col(TABLES.conversionEvents),
+    reviewRequests: col(TABLES.reviewRequests),
     audit: new PgAudit(pool, session),
     pool,
     session,

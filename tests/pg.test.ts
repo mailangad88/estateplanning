@@ -10,7 +10,7 @@ import { audit, verifyAuditChain } from "@/server/audit/log";
 import { PgMfaStore } from "@/server/pg/mfa";
 import { buildCaseView } from "@/server/portal/caseView";
 import type {
-  Activity, Assignment, Comment, Consult, CrmDelivery, DocumentRecord, Seminar, Engagement, Firm, Lawyer, Lead, Partner, PartnerGift, PartnerReferral, PaymentRecord, Person, Task, User,
+  Activity, Assignment, Comment, Consult, CrmDelivery, DocumentRecord, Seminar, Engagement, Firm, Lawyer, Lead, Partner, PartnerGift, PartnerReferral, PaymentRecord, ConversionEvent, ReviewRequest, Person, Task, User,
 } from "@/server/types";
 import type { FeeRuleVersion, Invoice } from "@/server/fees/admin";
 import type { BillableEvent } from "@/lib/fees";
@@ -197,6 +197,15 @@ const fixtures = {
     disclosureGiven: true, disclosureAt: T0, disclosureVersion: "v1", releaseStatus: "granted", releaseUpdatedAt: T0,
     releaseUpdatedBy: "u1", valueLinked: "no", valueNote: "n",
   } satisfies Required<PartnerReferral>,
+  conversionEvents: {
+    id: "google_ads:retainer_signed:l1", leadId: "l1", provider: "google_ads", type: "retainer_signed", eventId: "ep-l1-retainer_signed",
+    occurredAt: T0, valueCents: 250000, currency: "USD", status: "failed", reason: "HTTP 503", attempts: 2, channel: "api",
+    createdAt: T0, updatedAt: T0, sentAt: T0,
+  } satisfies Required<ConversionEvent>,
+  reviewRequests: {
+    id: "review-l1", leadId: "l1", matterType: "new_plan", anchorAt: T0, eligible: false, exclusionCode: "UNIFORM_HOLD", exclusionNote: "n",
+    askedAt: T0, remindedAt: T0, reminderChannel: "sms", optedOutAt: T0, postedAt: T0, createdAt: T0,
+  } satisfies Required<ReviewRequest>,
   automationState: { id: "automation", cursorSeq: 42, stages: { l1: "offered" }, exits: { l1: "x" } } satisfies Required<AutomationState>,
 };
 
@@ -549,6 +558,32 @@ suite("postgres integration", () => {
     // a paralegal cannot change the package prices or the plan on an engagement (attorney-set), same as the fee
     const para = as({ userId: "u-para", role: "paralegal", firmId: "f1", supportsLawyerIds: ["lw1"] });
     await expect(para.engagements.update("e1", { paymentPlan: undefined })).rejects.toThrow();
+  });
+
+  maybe("conversion_events: platform admin and marketing read, nobody else, app_user cannot write", async () => {
+    const ids = async (s: PgSession) => (await as(s).conversionEvents.list()).map((d) => d.id).sort();
+    expect(await ids({ userId: "u-admin", role: "platform_admin" })).toEqual(["google_ads:retainer_signed:l1"]);
+    expect(await ids({ userId: "u-m", role: "marketing" })).toEqual(["google_ads:retainer_signed:l1"]);
+    for (const [role, extra] of [["firm_admin", { firmId: "f1" }], ["intake", {}], ["attorney", { firmId: "f1", lawyerId: "lw1" }]] as const) {
+      expect(await ids({ userId: "u-x", role, ...extra })).toEqual([]);
+    }
+    await expect(as({ userId: "u-admin", role: "platform_admin" }).conversionEvents.update("google_ads:retainer_signed:l1", { status: "sent" })).rejects.toThrow();
+    const sent = await service.conversionEvents.update("google_ads:retainer_signed:l1", { status: "sent", reason: undefined });
+    expect(sent.status).toBe("sent");
+    expect(sent.reason).toBeUndefined();
+  });
+
+  maybe("review_requests: platform admin reads all, firm admin only their firm's leads, app_user cannot write", async () => {
+    const ids = async (s: PgSession) => (await as(s).reviewRequests.list()).map((d) => d.id).sort();
+    expect(await ids({ userId: "u-admin", role: "platform_admin" })).toEqual(["review-l1"]);
+    expect(await ids({ userId: "u-fa", role: "firm_admin", firmId: "f1" })).toEqual(["review-l1"]);
+    expect(await ids({ userId: "u-fa2", role: "firm_admin", firmId: "f2" })).toEqual([]);
+    expect(await ids({ userId: "u-m", role: "marketing" })).toEqual([]);
+    await expect(as({ userId: "u-admin", role: "platform_admin" }).reviewRequests.update("review-l1", { postedAt: T0 })).rejects.toThrow();
+    const updated = await service.reviewRequests.update("review-l1", { eligible: true, exclusionCode: undefined, exclusionNote: undefined });
+    expect(updated.exclusionCode).toBeUndefined();
+    // eligible and excluded are mutually exclusive in the schema itself
+    await expect(service.reviewRequests.update("review-l1", { exclusionCode: "OPTOUT" })).rejects.toThrow();
   });
 
   maybe("audit_events cannot be updated or deleted", async () => {

@@ -13,7 +13,7 @@ export function firstTouchFromParams(params: URLSearchParams): FirstTouch | null
   const source = params.get("utm_source")?.trim().toLowerCase() || undefined;
   const medium = params.get("utm_medium")?.trim().toLowerCase() || undefined;
   if (source || medium) return { source, medium };
-  if (params.get("gclid")) return { source: "google", medium: "cpc" };
+  if (params.get("gclid") || params.get("gbraid") || params.get("wbraid")) return { source: "google", medium: "cpc" };
   if (params.get("msclkid")) return { source: "bing", medium: "cpc" };
   if (params.get("fbclid")) return { source: "facebook", medium: "paid_social" };
   return null;

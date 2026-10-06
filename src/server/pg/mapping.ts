@@ -225,6 +225,24 @@ export const TABLES = {
       t("valueLinked", "value_linked"), t("valueNote", "value_note", true),
     ],
   },
+  conversionEvents: {
+    table: "conversion_events",
+    columns: [
+      t("id", "id"), t("leadId", "lead_id"), t("provider", "provider"), t("type", "type"), t("eventId", "event_id"),
+      ts("occurredAt", "occurred_at"), n("valueCents", "value_cents", true), t("currency", "currency"), t("status", "status"),
+      t("reason", "reason", true), n("attempts", "attempts"), t("channel", "channel", true), ts("createdAt", "created_at"),
+      ts("updatedAt", "updated_at"), ts("sentAt", "sent_at", true),
+    ],
+  },
+  reviewRequests: {
+    table: "review_requests",
+    columns: [
+      t("id", "id"), t("leadId", "lead_id"), t("matterType", "matter_type"), ts("anchorAt", "anchor_at"), b("eligible", "eligible"),
+      t("exclusionCode", "exclusion_code", true), t("exclusionNote", "exclusion_note", true), ts("askedAt", "asked_at", true),
+      ts("remindedAt", "reminded_at", true), t("reminderChannel", "reminder_channel", true), ts("optedOutAt", "opted_out_at", true),
+      ts("postedAt", "posted_at", true), ts("createdAt", "created_at"),
+    ],
+  },
   audit: {
     table: "audit_events",
     columns: [
