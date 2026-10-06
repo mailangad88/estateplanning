@@ -109,6 +109,11 @@ export function segmentTags(a: Partial<QuizAnswers>): string[] {
   return tags;
 }
 
+/** Tag for the self-reported "How did you hear about us?" answer, e.g. `heard:ai_assistant`. */
+export function heardFromTags(source: { heardFrom?: string }): string[] {
+  return source.heardFrom ? [`heard:${source.heardFrom}`] : [];
+}
+
 /** Tags for the capture point, so nurture emails can follow up on what the visitor used or downloaded. */
 export function captureTags(capture: { tool: CaptureTool; resource?: string }, resourceSegments: string[] = []): string[] {
   const tags = [`tool:${capture.tool}`];

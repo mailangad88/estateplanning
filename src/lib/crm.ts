@@ -13,6 +13,8 @@ export interface LeadRecord {
   score: ScoreResult;
   segments: string[];
   source: LeadSubmission["source"];
+  /** "How did you hear about us?" answer, copied out of `source` so the CRM can map it to its own field */
+  heardFrom?: LeadSubmission["source"]["heardFrom"];
   /** Which tool or form captured the lead, what was requested, and the tool's figures */
   capture: LeadSubmission["capture"];
   visitorId?: string;

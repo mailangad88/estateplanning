@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import ConsultScheduler from "@/components/ConsultScheduler";
 import LeadForm, { type LeadResponse } from "@/components/LeadForm";
-import { firm } from "@/config/firm";
 import { QUESTIONS, type QuizAnswers } from "@/lib/quiz";
 
 type Answers = Partial<QuizAnswers>;
@@ -39,10 +39,7 @@ export default function Intake() {
       <section aria-live="polite">
         <h1>Thank you. We have your request.</h1>
         {done.served ? (
-          <p className="lead">
-            Someone from our intake team will contact you during office hours ({firm.officeHours}) to set up your consult.
-            If anything is urgent, call {firm.phone}.
-          </p>
+          <ConsultScheduler />
         ) : (
           <p className="lead">
             We are not able to help in your state yet. Your state bar&apos;s lawyer referral service can connect you
@@ -127,6 +124,7 @@ export default function Intake() {
           askCounty
           askPreferredContact
           askGoals
+          askHeardFrom
           goalsLabel="What would you like to get done? (optional)"
           onBack={() => setStep(step - 1)}
           onSuccess={setDone}

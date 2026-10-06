@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { US_STATES } from "@/config/firm";
 import { toolConfig } from "@/config/tools";
+import { HEARD_FROM_OPTIONS } from "@/lib/heardFrom";
 import { noRelationshipText, recordingNoticeText, smsConsentText } from "@/lib/consent";
 import type { CaptureTool } from "@/lib/lead";
 import type { EducationTopic, QuizAnswers } from "@/lib/quiz";
@@ -28,6 +29,10 @@ interface Props {
   askPreferredContact?: boolean;
   askGoals?: boolean;
   goalsLabel?: string;
+  /** Optional "How did you hear about us?" select (consult forms) */
+  askHeardFrom?: boolean;
+  /** State the visitor already chose earlier in the flow; prefills the state field */
+  defaultState?: string;
   onBack?: () => void;
   onSuccess: (data: LeadResponse) => void;
 }
@@ -94,7 +99,7 @@ export default function LeadForm(props: Props) {
           priorTools,
           smsConsent: form.get("smsConsent") === "on",
           acknowledgedNoRelationship: form.get("ack") === "on",
-          source: sessionSource(),
+          source: { ...sessionSource(), heardFrom: get("heardFrom") },
           website: get("website"),
         }),
       });
@@ -151,7 +156,7 @@ export default function LeadForm(props: Props) {
         {err("phone")}
         <label className="field">
           State where you live
-          <select name="state" required defaultValue={known.state ?? ""} key={`s${known.state}`}>
+          <select name="state" required defaultValue={props.defaultState ?? known.state ?? ""} key={`s${props.defaultState ?? known.state}`}>
             <option value="" disabled>Choose a state</option>
             {US_STATES.map((s) => <option key={s} value={s}>{s}</option>)}
           </select>
@@ -172,6 +177,15 @@ export default function LeadForm(props: Props) {
           <label className="field">
             {props.goalsLabel ?? "Anything you want the attorney to know? (optional)"}
             <textarea name="goals" rows={3} />
+          </label>
+        )}
+        {props.askHeardFrom && (
+          <label className="field">
+            How did you hear about us? (optional)
+            <select name="heardFrom" defaultValue="">
+              <option value="">Choose one</option>
+              {HEARD_FROM_OPTIONS.map((o) => <option key={o.value} value={o.value}>{o.label}</option>)}
+            </select>
           </label>
         )}
         <div className="hp" aria-hidden="true">

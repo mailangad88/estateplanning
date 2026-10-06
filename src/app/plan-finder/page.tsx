@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { servedStates } from "@/config/firm";
 import PlanFinder from "./PlanFinder";
 
 export const metadata: Metadata = {
@@ -6,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function PlanFinderPage() {
-  return <PlanFinder />;
+  return <PlanFinder servedStates={servedStates()} />;
 }
