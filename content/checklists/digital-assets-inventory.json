@@ -1,0 +1,64 @@
+{
+  "title": "Digital Assets Inventory",
+  "description": "List your online accounts, devices, and digital property so the people you trust can access, save, or close them.",
+  "intro": "Photos, email, and online accounts can be lost forever if no one knows they exist. List each account and what you want done with it. Do not write passwords on this sheet; note where they are stored instead, such as a password manager.",
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "sections": [
+    {
+      "heading": "Devices",
+      "items": [
+        "List each phone, tablet, and computer and where it is kept",
+        "Note where device passcodes are stored",
+        "List external hard drives and USB backups",
+        "Note any smart home hubs or security systems with accounts"
+      ]
+    },
+    {
+      "heading": "Email and communication",
+      "items": [
+        "List each email address and provider",
+        "Note which email is used for password resets",
+        "List messaging apps with important history",
+        "Note any account legacy or inactive account settings you have turned on"
+      ]
+    },
+    {
+      "heading": "Financial and money apps",
+      "items": [
+        "List online banking and investment logins by institution",
+        "List payment apps such as PayPal or Venmo",
+        "List cryptocurrency exchanges and wallets",
+        "Note where hardware wallets and recovery phrases are stored",
+        "List online businesses, stores, or income accounts"
+      ]
+    },
+    {
+      "heading": "Photos, files, and social media",
+      "items": [
+        "List cloud storage accounts for photos and documents",
+        "List each social media account",
+        "Note whether each social account should be memorialized, downloaded, or deleted",
+        "List domain names, websites, and blogs with renewal dates"
+      ]
+    },
+    {
+      "heading": "Subscriptions and loyalty",
+      "items": [
+        "List streaming and other recurring subscriptions to cancel",
+        "List airline miles, hotel points, and other rewards programs",
+        "List any online accounts that hold store credit or gift cards",
+        "Note which subscriptions should transfer to a family member instead of being cancelled"
+      ]
+    },
+    {
+      "heading": "Access and instructions",
+      "items": [
+        "Name the person you want to handle your digital accounts",
+        "Note the password manager you use and how its emergency access works",
+        "Confirm your will or power of attorney grants authority over digital assets",
+        "Review this list once a year"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "Important Contacts List",
+  "description": "One page with the names and numbers your family, executor, or agents will need in an emergency or after a death.",
+  "intro": "In an emergency, your family should not have to hunt for phone numbers. Fill in a name, phone number, and email for each role that applies to you. Keep a copy with your estate planning documents and give one to your executor.",
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "sections": [
+    {
+      "heading": "People named in your plan",
+      "items": [
+        "Executor and backup executor",
+        "Successor trustee and backup",
+        "Financial agent under your power of attorney",
+        "Health care agent and backup",
+        "Guardian and backup guardian for minor children"
+      ]
+    },
+    {
+      "heading": "Professional advisors",
+      "items": [
+        "Estate planning attorney",
+        "Accountant or tax preparer",
+        "Financial advisor",
+        "Insurance agent",
+        "Banker or trust officer",
+        "Business partners or co-owners"
+      ]
+    },
+    {
+      "heading": "Health care",
+      "items": [
+        "Primary care doctor",
+        "Specialists you see regularly",
+        "Preferred hospital",
+        "Pharmacy",
+        "Home care or hospice provider"
+      ]
+    },
+    {
+      "heading": "Family and friends",
+      "items": [
+        "Spouse or partner",
+        "Adult children",
+        "Siblings or other close relatives",
+        "Close friends to notify",
+        "Neighbor with a spare key"
+      ]
+    },
+    {
+      "heading": "Household and other",
+      "items": [
+        "Employer or human resources contact",
+        "Clergy or spiritual advisor",
+        "Pet caregiver and veterinarian",
+        "Funeral home, if pre-arranged",
+        "Landlord or property manager"
+      ]
+    }
+  ]
+}

@@ -13,6 +13,10 @@ export interface LeadRecord {
   score: ScoreResult;
   segments: string[];
   source: LeadSubmission["source"];
+  /** Which tool or form captured the lead, what was requested, and the tool's figures */
+  capture: LeadSubmission["capture"];
+  visitorId?: string;
+  priorTools: LeadSubmission["priorTools"];
   consent: ConsentRecord;
 }
 
@@ -23,25 +27,28 @@ export interface DeliveryResult {
 }
 
 /**
- * Sends a lead to the CRM. Phase 1 uses a signed webhook (Zapier, Make or n8n)
- * that creates the contact and matter in the firm's CRM (Lawmatics by default).
- * Without a webhook configured, only a non-identifying summary is logged.
+ * Sends a record to the CRM. Phase 1 uses a signed webhook (Zapier, Make or n8n)
+ * that creates the contact in the firm's CRM (Lawmatics by default).
+ * Without a webhook configured, only the non-identifying summary is logged.
  */
-export async function deliverLead(lead: LeadRecord, fetchImpl: typeof fetch = fetch): Promise<DeliveryResult> {
+export async function postToCrm(
+  record: object,
+  summary: Record<string, unknown>,
+  fetchImpl: typeof fetch = fetch,
+): Promise<DeliveryResult> {
   const url = process.env.CRM_WEBHOOK_URL;
   if (!url) {
-    console.info("lead received (no CRM webhook configured)", {
-      id: lead.id,
-      state: lead.contact.state,
-      tier: lead.score.tier,
-      score: lead.score.score,
-    });
+    console.info("record received (no CRM webhook configured)", summary);
     return { delivered: false, target: "log" };
   }
-  const body = JSON.stringify(lead);
+  const body = JSON.stringify(record);
   const headers: Record<string, string> = { "content-type": "application/json" };
   const secret = process.env.CRM_WEBHOOK_SECRET;
   if (secret) headers["x-signature"] = createHmac("sha256", secret).update(body).digest("hex");
   const res = await fetchImpl(url, { method: "POST", headers, body });
   return { delivered: res.ok, target: "webhook", status: res.status };
+}
+
+export function deliverLead(lead: LeadRecord, fetchImpl: typeof fetch = fetch): Promise<DeliveryResult> {
+  return postToCrm({ type: "lead", ...lead }, { id: lead.id, state: lead.contact.state, tier: lead.score.tier, score: lead.score.score }, fetchImpl);
 }

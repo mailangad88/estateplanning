@@ -1,0 +1,302 @@
+[
+  {
+    "title": "Naming a minor as a life insurance beneficiary",
+    "category": "Beneficiaries",
+    "why": "Insurers will not pay a large sum directly to a child, so a court may have to appoint someone to manage the money. The child may then receive it all outright at 18 or 21, depending on the state.",
+    "fix": "Many parents name a trust for the children as beneficiary, or use a transfers-to-minors custodian where the state allows it."
+  },
+  {
+    "title": "Forgetting to update beneficiaries after a divorce",
+    "category": "Beneficiaries",
+    "why": "An ex-spouse may still be listed on a retirement account or insurance policy. Some state laws revoke these designations at divorce, but federal rules for many employer plans can override them.",
+    "fix": "People commonly update every beneficiary form as soon as a divorce is final and keep copies of the confirmation."
+  },
+  {
+    "title": "Leaving no contingent beneficiary",
+    "category": "Beneficiaries",
+    "why": "If the only named beneficiary dies first, the account often falls into the probate estate. That can mean court delays and a result you did not plan for.",
+    "fix": "Most people name at least one backup beneficiary on every account and policy."
+  },
+  {
+    "title": "Assuming the will controls retirement accounts and insurance",
+    "category": "Beneficiaries",
+    "why": "Beneficiary forms usually override the will. A will that splits everything equally does nothing for an IRA that names only one child.",
+    "fix": "People review beneficiary forms alongside the will so both point to the same plan."
+  },
+  {
+    "title": "Naming \"my estate\" as beneficiary",
+    "category": "Beneficiaries",
+    "why": "Naming your estate pulls the asset into probate and can expose it to creditors. For retirement accounts, it can also speed up income taxes for your heirs.",
+    "fix": "Most people name specific people or a trust, with backups, instead of the estate."
+  },
+  {
+    "title": "Leaving money outright to someone on disability benefits",
+    "category": "Beneficiaries",
+    "why": "An inheritance received directly can disqualify a person from SSI or Medicaid until the money is spent down. Benefits that took years to secure may be lost.",
+    "fix": "Families often leave that share to a special needs trust or contribute to an ABLE account instead."
+  },
+  {
+    "title": "Not checking beneficiary forms for years",
+    "category": "Beneficiaries",
+    "why": "Old forms may name a deceased parent, a former partner, or no one at all. Employers and banks also lose forms during mergers and plan changes.",
+    "fix": "Many people request a current copy of each designation every few years and after any major life change."
+  },
+  {
+    "title": "Naming one child on an account and trusting them to share",
+    "category": "Beneficiaries",
+    "why": "That child legally owns the money and has no duty to divide it. Their creditors, divorce, or death can also affect what the siblings receive.",
+    "fix": "People who want equal shares usually name all the children directly or route the account through a trust."
+  },
+  {
+    "title": "Having no will at all",
+    "category": "Wills",
+    "why": "State law decides who inherits and a court picks who manages the estate and raises minor children. Partners, stepchildren, and friends usually get nothing.",
+    "fix": "Even a simple will lets people name an executor, a guardian, and who receives what."
+  },
+  {
+    "title": "Signing a will without the required witnesses",
+    "category": "Wills",
+    "why": "A will that does not meet state signing rules can be thrown out, leaving the estate to pass as if there were no will. Rules on witnesses and notaries differ by state.",
+    "fix": "People typically sign with an attorney present or follow their state's exact formalities, often with a self-proving affidavit."
+  },
+  {
+    "title": "Using a will from another state after moving",
+    "category": "Wills",
+    "why": "Most states honor a will that was valid where it was signed. But its terms and executor choices may not fit the new state's laws. Community property and spousal rights can change too.",
+    "fix": "Many people have their plan reviewed by an attorney licensed in their new state soon after moving."
+  },
+  {
+    "title": "Making handwritten changes on a signed will",
+    "category": "Wills",
+    "why": "Crossing out names or writing in new gifts can invalidate those changes, or in some states the whole will. It also invites disputes over who made the marks.",
+    "fix": "People make changes through a properly signed codicil or a new will."
+  },
+  {
+    "title": "Leaving specific items without a backup plan",
+    "category": "Wills",
+    "why": "If you leave a car or house to someone and sell it before you die, the gift may simply fail. That beneficiary may receive nothing at all.",
+    "fix": "Wills often include backup gifts or a residuary clause that covers what happens if an item is gone."
+  },
+  {
+    "title": "Forgetting a residuary clause",
+    "category": "Wills",
+    "why": "Anything not specifically mentioned in the will may pass under intestacy rules. Assets acquired later are easy to miss.",
+    "fix": "A residuary clause names who receives everything not otherwise given away."
+  },
+  {
+    "title": "Not telling the executor where the will is",
+    "category": "Wills",
+    "why": "A family that cannot find the original will may have to probate an older one or proceed as if there were none. Copies are not always accepted.",
+    "fix": "People tell their executor where the original is kept and how to access it."
+  },
+  {
+    "title": "Creating a trust but never funding it",
+    "category": "Trusts",
+    "why": "A trust only controls assets titled in its name or payable to it. An empty trust leaves the family facing probate despite the cost of setting it up.",
+    "fix": "People retitle accounts and real estate into the trust after signing and use a funding checklist to track each asset."
+  },
+  {
+    "title": "Buying new property outside the trust",
+    "category": "Trusts",
+    "why": "A home or account opened after the trust was created may be titled in your own name. That asset may need probate later.",
+    "fix": "Many people title new assets in the trust's name at purchase and review titles each year."
+  },
+  {
+    "title": "Choosing a successor trustee who cannot handle the job",
+    "category": "Trusts",
+    "why": "A trustee may need to manage investments, keep records, and handle family tension. Someone overwhelmed or far away may make costly mistakes or delays.",
+    "fix": "People pick someone organized and willing, name backups, or consider a professional trustee or co-trustees."
+  },
+  {
+    "title": "Assuming a living trust protects against creditors or nursing home costs",
+    "category": "Trusts",
+    "why": "Because you control a revocable trust, its assets still count as yours. Families can be surprised when those assets must be spent on care.",
+    "fix": "People with these concerns often ask an attorney about irrevocable trusts or Medicaid planning, which follow different rules by state."
+  },
+  {
+    "title": "Giving everything to young adults outright at 18",
+    "category": "Trusts",
+    "why": "A large sum at 18 can be spent quickly or lost to a bad relationship or lawsuit. Many people would not have chosen that age if asked.",
+    "fix": "Parents often use a trust that releases money in stages or at the trustee's discretion for education, health, and support."
+  },
+  {
+    "title": "Making the trust too rigid",
+    "category": "Trusts",
+    "why": "A trust that only pays for listed expenses may not adapt to a beneficiary's changing needs, health, or tax law. The trustee may be unable to help when it matters.",
+    "fix": "Many trusts give the trustee some discretion and include a trust protector or other way to make limited changes."
+  },
+  {
+    "title": "Not giving the successor trustee copies or information",
+    "category": "Trusts",
+    "why": "A successor trustee who cannot find the trust document or account list loses time. Banks will not act without proof of authority.",
+    "fix": "People give their successor trustee a copy of the trust, or tell them where it is, along with an asset list."
+  },
+  {
+    "title": "Skipping a durable power of attorney",
+    "category": "Incapacity",
+    "why": "If you become incapacitated, your family may need a court guardianship or conservatorship to pay your bills. That process is slow, public, and expensive.",
+    "fix": "Most plans include a durable financial power of attorney naming a trusted agent and a backup."
+  },
+  {
+    "title": "Having no health care directive",
+    "category": "Incapacity",
+    "why": "Doctors and family may disagree about your care, and no one has clear authority to decide. Families sometimes end up in court during a crisis.",
+    "fix": "People sign a health care power of attorney and living will, and talk through their wishes with the person they name."
+  },
+  {
+    "title": "Forgetting a HIPAA authorization",
+    "category": "Incapacity",
+    "why": "Privacy rules may stop doctors from sharing information with your family. Your agent may struggle to make informed choices.",
+    "fix": "Many plans include a HIPAA authorization naming the people who may receive medical information."
+  },
+  {
+    "title": "Not preparing documents for adult children",
+    "category": "Incapacity",
+    "why": "Once a child turns 18, parents usually lose the right to manage their finances or see medical records. An accident at college can leave parents locked out.",
+    "fix": "Families often have young adults sign a durable power of attorney, health care power of attorney, and HIPAA authorization."
+  },
+  {
+    "title": "Using a power of attorney the bank will not accept",
+    "category": "Incapacity",
+    "why": "Some institutions refuse old, vague, or out-of-state forms, or insist on their own. Delays can happen just when bills are due.",
+    "fix": "People use a power of attorney drafted for their state and check whether key banks have extra requirements."
+  },
+  {
+    "title": "Naming an agent without asking them",
+    "category": "Incapacity",
+    "why": "The person may be unwilling, unable, or unaware of your wishes. Your plan may fail at the moment it is needed.",
+    "fix": "People ask first, explain their wishes, and name at least one backup agent."
+  },
+  {
+    "title": "Not naming a guardian for minor children",
+    "category": "Family and guardians",
+    "why": "If both parents die, a court chooses who raises the children, possibly after a family dispute. The judge may pick someone you would not have chosen.",
+    "fix": "Parents typically nominate a guardian and a backup in their wills, and talk with those people first."
+  },
+  {
+    "title": "Naming the same person to raise the kids and manage the money without thinking it through",
+    "category": "Family and guardians",
+    "why": "Raising children and managing money are different skills. One person may be loving but not good with finances.",
+    "fix": "Some parents name a guardian for the children and a separate trustee for the money, with clear communication between them."
+  },
+  {
+    "title": "Ignoring stepchildren in a blended family",
+    "category": "Family and guardians",
+    "why": "Stepchildren usually do not inherit under state default rules unless legally adopted. A surviving spouse may also leave everything to their own children.",
+    "fix": "Blended families often use trusts, such as a QTIP trust, to provide for a spouse while protecting each side's children."
+  },
+  {
+    "title": "Not discussing the plan with family",
+    "category": "Family and guardians",
+    "why": "Surprises in a will or trust can lead to hurt feelings, suspicion, and legal challenges. Executors may not know what you intended.",
+    "fix": "Many people share at least the broad outline of their plan and who they have named to key roles."
+  },
+  {
+    "title": "Forgetting about pets",
+    "category": "Family and guardians",
+    "why": "Pets may end up in a shelter if no one is named to care for them. Money left to a pet directly has no legal effect.",
+    "fix": "People name a caregiver and may set up a pet trust or leave funds to the caregiver for the pet's care."
+  },
+  {
+    "title": "Treating children equally when circumstances differ",
+    "category": "Family and guardians",
+    "why": "Equal shares may not be fair if one child has a disability, a large loan from you, or a history of addiction. Equal outright gifts can harm the child who needs protection.",
+    "fix": "Families sometimes adjust shares for past gifts or hold one child's share in a trust with tailored terms."
+  },
+  {
+    "title": "Assuming estate tax only matters for the very wealthy",
+    "category": "Taxes",
+    "why": "The federal exemption is high, but some states tax estates or inheritances at much lower levels. A family with a home and retirement accounts can be caught by a state tax.",
+    "fix": "People check whether their state has an estate or inheritance tax and plan with an attorney licensed there."
+  },
+  {
+    "title": "Not filing for portability after a spouse dies",
+    "category": "Taxes",
+    "why": "The surviving spouse can lose the deceased spouse's unused federal exemption if no estate tax return is filed. That matters if assets grow or the exemption drops.",
+    "fix": "Many surviving spouses file an estate tax return to elect portability even when no tax is owed."
+  },
+  {
+    "title": "Gifting appreciated assets instead of leaving them at death",
+    "category": "Taxes",
+    "why": "Assets given away during life keep the original cost basis. Heirs who receive them at death may get a step-up in basis and owe much less capital gains tax.",
+    "fix": "People often compare the tax effect before giving away stock or real estate that has grown in value."
+  },
+  {
+    "title": "Adding a child to the deed of your house",
+    "category": "Taxes",
+    "why": "It is a gift that may require a gift tax return and exposes the home to the child's creditors. It can also cost the child the step-up in basis. You also may need the child's signature to sell.",
+    "fix": "People often use a trust or, where allowed, a transfer-on-death deed instead."
+  },
+  {
+    "title": "Ignoring income tax on inherited retirement accounts",
+    "category": "Taxes",
+    "why": "Heirs usually owe income tax when they withdraw from a traditional IRA or 401(k). Many non-spouse beneficiaries must empty the account within a set period, which can push them into a higher bracket.",
+    "fix": "People consider who inherits which assets, and some explore Roth conversions or naming charities for retirement accounts."
+  },
+  {
+    "title": "Making large gifts without keeping records",
+    "category": "Taxes",
+    "why": "Gifts above the annual exclusion usually require a gift tax return. Missing returns can cause problems for the estate later.",
+    "fix": "People keep records of large gifts and ask a tax professional whether a filing is required."
+  },
+  {
+    "title": "Never updating the plan",
+    "category": "Process and upkeep",
+    "why": "Marriages, births, deaths, moves, and new assets can make an old plan wrong or incomplete. People named years ago may no longer be the right choice.",
+    "fix": "Many people review their plan every few years and after any major life change."
+  },
+  {
+    "title": "Relying on joint ownership to avoid probate",
+    "category": "Process and upkeep",
+    "why": "Joint ownership only delays probate until the last owner dies. It also exposes the asset to the co-owner's debts and can cut out other heirs.",
+    "fix": "People often use beneficiary designations, transfer-on-death options, or a trust for a more controlled result."
+  },
+  {
+    "title": "Forgetting property in another state",
+    "category": "Process and upkeep",
+    "why": "Real estate in a second state may require a separate probate there. Families can face two court processes and two sets of attorneys.",
+    "fix": "Many owners hold out-of-state property in a living trust or use a transfer-on-death deed where allowed."
+  },
+  {
+    "title": "Not planning for a family business",
+    "category": "Process and upkeep",
+    "why": "Without a plan, a business can stall when the owner dies or becomes ill. Co-owners and heirs may fight over control.",
+    "fix": "Business owners often use buy-sell agreements, powers of attorney that cover the business, and a succession plan."
+  },
+  {
+    "title": "Waiting until a health crisis",
+    "category": "Process and upkeep",
+    "why": "Someone with declining capacity may not be able to sign valid documents. Rushed planning also invites challenges.",
+    "fix": "People plan while healthy and update documents as health changes."
+  },
+  {
+    "title": "Choosing an executor without considering where they live",
+    "category": "Process and upkeep",
+    "why": "Some states limit or add requirements for out-of-state executors, such as a bond or local agent. Distance also makes the job harder.",
+    "fix": "People check their state's rules and may name a local co-executor or backup."
+  },
+  {
+    "title": "Not leaving an asset list",
+    "category": "Records and digital assets",
+    "why": "Executors can miss accounts, policies, and property, and some money ends up with the state's unclaimed property office. Searching takes months.",
+    "fix": "Many people keep an updated asset and account inventory and tell their executor where it is."
+  },
+  {
+    "title": "Ignoring digital assets and passwords",
+    "category": "Records and digital assets",
+    "why": "Family may lose photos, email, cryptocurrency, or online business income. Some accounts are locked forever without access.",
+    "fix": "People list digital accounts, use a password manager with a legacy plan, and give their fiduciaries legal authority to access them."
+  },
+  {
+    "title": "Hiding the original documents too well",
+    "category": "Records and digital assets",
+    "why": "A will locked in a safe deposit box only the deceased could open can delay everything. Lost originals may not be accepted.",
+    "fix": "People store originals somewhere safe and tell their executor and trustee exactly where."
+  },
+  {
+    "title": "Leaving no funeral or burial instructions",
+    "category": "Records and digital assets",
+    "why": "Families may argue or guess during a painful time. Instructions buried in a will may be read after the funeral.",
+    "fix": "Many people write separate funeral and burial wishes and share them with family ahead of time."
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "title": "Documents to Gather Before Your Consult",
+  "description": "A list of the papers and details to pull together before your first estate planning meeting, so the meeting can focus on decisions.",
+  "intro": "Bringing the right papers to your first meeting saves time and helps your attorney see the full picture. You do not need every item on this list. Gather what you can and note what you could not find.",
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "sections": [
+    {
+      "heading": "Existing plan documents",
+      "items": [
+        "Current will and any codicils",
+        "Any trust agreements and amendments",
+        "Financial power of attorney",
+        "Health care power of attorney and living will",
+        "Prenuptial or postnuptial agreement",
+        "Divorce decree or property settlement, if any"
+      ]
+    },
+    {
+      "heading": "Real estate",
+      "items": [
+        "Deed for your home",
+        "Deeds for rental, vacation, or out-of-state property",
+        "Recent mortgage statement for each property",
+        "Property tax bill or assessed value for each property"
+      ]
+    },
+    {
+      "heading": "Financial accounts",
+      "items": [
+        "Most recent statement for each bank account",
+        "Most recent statement for each brokerage or investment account",
+        "Retirement account statements, such as 401(k), 403(b), and IRA",
+        "Pension or annuity statements",
+        "Notes on any cryptocurrency or online-only accounts"
+      ]
+    },
+    {
+      "heading": "Insurance and beneficiary forms",
+      "items": [
+        "Life insurance policy declarations pages",
+        "Beneficiary designation forms for each policy and retirement account",
+        "Long-term care insurance policy",
+        "Disability insurance policy"
+      ]
+    },
+    {
+      "heading": "Business and debts",
+      "items": [
+        "Business operating agreement, bylaws, or partnership agreement",
+        "Buy-sell agreement, if any",
+        "List of loans, credit cards, and other debts with rough balances",
+        "Any money you have lent to family members"
+      ]
+    },
+    {
+      "heading": "People and decisions",
+      "items": [
+        "Full names and contact details for your spouse, children, and grandchildren",
+        "Names of people you are considering as executor, trustee, and agents",
+        "Names of people you are considering as guardian for minor children",
+        "Notes on any family member with special needs, health issues, or money troubles",
+        "Charities you may want to include"
+      ]
+    }
+  ]
+}

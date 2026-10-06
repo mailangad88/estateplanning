@@ -1,0 +1,1154 @@
+[
+  {
+    "term": "Abatement",
+    "slug": "abatement",
+    "acronym": null,
+    "definition": "The order in which gifts in a will are cut back when the estate cannot pay all debts and gifts in full. State law sets a default order, and a will can change it.",
+    "related": [
+      "residuary-estate",
+      "specific-bequest"
+    ]
+  },
+  {
+    "term": "ABLE account",
+    "slug": "able-account",
+    "acronym": "ABLE",
+    "definition": "A tax-advantaged savings account for a person whose disability began before a set age under federal law. Money in the account can pay for disability-related expenses without counting against most means-tested benefits. Family and friends can contribute up to a yearly limit.",
+    "related": [
+      "special-needs-trust",
+      "supplemental-security-income"
+    ]
+  },
+  {
+    "term": "Administrator",
+    "slug": "administrator",
+    "acronym": null,
+    "definition": "The person a court appoints to manage an estate when there is no will, or when the will names no one who can serve. The administrator does the same work an executor would: gathering assets, paying bills, and distributing what is left.",
+    "related": [
+      "executor",
+      "personal-representative",
+      "intestate"
+    ]
+  },
+  {
+    "term": "Advance directive",
+    "slug": "advance-directive",
+    "acronym": null,
+    "definition": "A written document that records your wishes about medical care if you cannot speak for yourself. It often combines a living will and the appointment of a health care agent. The name and form vary by state.",
+    "related": [
+      "living-will",
+      "health-care-power-of-attorney",
+      "physician-orders-for-life-sustaining-treatment"
+    ]
+  },
+  {
+    "term": "Ancillary probate",
+    "slug": "ancillary-probate",
+    "acronym": null,
+    "definition": "A second probate case opened in another state where the person who died owned real estate. If you own a home in one state and a cabin in another, your family may face two court processes. Many people hold out-of-state property in a living trust to avoid this.",
+    "related": [
+      "probate",
+      "domicile",
+      "revocable-living-trust"
+    ]
+  },
+  {
+    "term": "Annual gift tax exclusion",
+    "slug": "annual-gift-tax-exclusion",
+    "acronym": null,
+    "definition": "The amount you can give to any one person each year without filing a gift tax return. The figure is set by federal law and adjusts for inflation. Gifts above it usually just require a filing, not an immediate tax.",
+    "related": [
+      "gift-tax",
+      "crummey-power"
+    ]
+  },
+  {
+    "term": "Anti-lapse statute",
+    "slug": "anti-lapse-statute",
+    "acronym": null,
+    "definition": "A state law that decides what happens when a beneficiary named in a will dies before the person who made it. In many states the gift passes to the beneficiary's descendants instead of failing. The rules differ by state and by how closely related the beneficiary is.",
+    "related": [
+      "lapse",
+      "per-stirpes"
+    ]
+  },
+  {
+    "term": "Asset protection trust",
+    "slug": "asset-protection-trust",
+    "acronym": null,
+    "definition": "An irrevocable trust designed to shield assets from future creditors. Only some states allow you to create one for your own benefit, and the rules are strict. Transfers made to dodge a known debt can be undone by a court.",
+    "related": [
+      "irrevocable-trust",
+      "spendthrift-clause"
+    ]
+  },
+  {
+    "term": "Attorney-in-fact",
+    "slug": "attorney-in-fact",
+    "acronym": null,
+    "definition": "The person you name in a power of attorney to handle financial or legal matters for you. The title does not mean the person is a lawyer. Many documents now use the word \"agent\" instead.",
+    "related": [
+      "power-of-attorney",
+      "durable-power-of-attorney",
+      "fiduciary"
+    ]
+  },
+  {
+    "term": "Beneficiary",
+    "slug": "beneficiary",
+    "acronym": null,
+    "definition": "A person or organization that receives something from a will, trust, insurance policy, or account. You can name primary beneficiaries and backup beneficiaries.",
+    "related": [
+      "primary-beneficiary",
+      "contingent-beneficiary",
+      "beneficiary-designation"
+    ]
+  },
+  {
+    "term": "Beneficiary designation",
+    "slug": "beneficiary-designation",
+    "acronym": null,
+    "definition": "A form you file with a bank, insurer, or retirement plan that says who gets the account when you die. It usually overrides what your will says. Keeping these forms current is one of the simplest parts of a plan.",
+    "related": [
+      "beneficiary",
+      "payable-on-death",
+      "transfer-on-death"
+    ]
+  },
+  {
+    "term": "Bequest",
+    "slug": "bequest",
+    "acronym": null,
+    "definition": "A gift of property made in a will. People sometimes use \"devise\" for gifts of real estate and \"bequest\" for everything else.",
+    "related": [
+      "specific-bequest",
+      "residuary-estate",
+      "will"
+    ]
+  },
+  {
+    "term": "Bypass trust",
+    "slug": "bypass-trust",
+    "acronym": null,
+    "definition": "A trust created at the first spouse's death to hold assets for the surviving spouse while keeping them out of the survivor's taxable estate. It is also called a credit shelter trust or family trust. Portability has made it less necessary for tax reasons, but some families still use it for control or creditor protection.",
+    "related": [
+      "marital-deduction",
+      "portability",
+      "estate-tax"
+    ]
+  },
+  {
+    "term": "Charitable lead trust",
+    "slug": "charitable-lead-trust",
+    "acronym": "CLT",
+    "definition": "A trust that pays a charity for a set number of years, then passes what remains to your family or other beneficiaries. It can reduce gift or estate taxes on the amount that eventually goes to family.",
+    "related": [
+      "charitable-remainder-trust",
+      "irrevocable-trust"
+    ]
+  },
+  {
+    "term": "Charitable remainder trust",
+    "slug": "charitable-remainder-trust",
+    "acronym": "CRT",
+    "definition": "A trust that pays you or others an income stream for life or a set term, then gives what remains to charity. People often fund one with assets that have grown in value, such as stock. It can provide an income tax deduction and spread out capital gains.",
+    "related": [
+      "charitable-lead-trust",
+      "irrevocable-trust"
+    ]
+  },
+  {
+    "term": "Co-trustee",
+    "slug": "co-trustee",
+    "acronym": null,
+    "definition": "One of two or more people who serve as trustee at the same time. Co-trustees usually must act together, which adds a check but can slow things down. The trust document says whether they can act alone.",
+    "related": [
+      "trustee",
+      "successor-trustee"
+    ]
+  },
+  {
+    "term": "Codicil",
+    "slug": "codicil",
+    "acronym": null,
+    "definition": "A formal amendment to an existing will. It must be signed and witnessed with the same formalities as the will itself. Many attorneys now prefer to sign a new will rather than stack codicils.",
+    "related": [
+      "will",
+      "witness"
+    ]
+  },
+  {
+    "term": "Community property",
+    "slug": "community-property",
+    "acronym": null,
+    "definition": "A system used in some states where most property earned during a marriage belongs equally to both spouses. It affects how property passes at death and how it is taxed. Whether you live in a community property state depends on where you live and, sometimes, where you lived while married.",
+    "related": [
+      "separate-property",
+      "step-up-in-basis",
+      "domicile"
+    ]
+  },
+  {
+    "term": "Conservator",
+    "slug": "conservator",
+    "acronym": null,
+    "definition": "A person a court appoints to manage the finances or personal care of an adult who can no longer do so. Some states use the word guardian for this role. A durable power of attorney can often avoid the need for a conservatorship.",
+    "related": [
+      "guardianship",
+      "durable-power-of-attorney",
+      "incapacity"
+    ]
+  },
+  {
+    "term": "Contingent beneficiary",
+    "slug": "contingent-beneficiary",
+    "acronym": null,
+    "definition": "A backup beneficiary who receives the asset if the primary beneficiary has died or declines it. Naming one keeps the asset from falling back into your probate estate.",
+    "related": [
+      "primary-beneficiary",
+      "beneficiary-designation"
+    ]
+  },
+  {
+    "term": "Creditor claim period",
+    "slug": "creditor-claim-period",
+    "acronym": null,
+    "definition": "A window of time during probate when creditors can file claims against the estate. After it closes, most late claims are barred. The length of the period is set by state law.",
+    "related": [
+      "probate",
+      "personal-representative"
+    ]
+  },
+  {
+    "term": "Crummey power",
+    "slug": "crummey-power",
+    "acronym": null,
+    "definition": "A short-term right given to trust beneficiaries to withdraw money added to the trust. It lets gifts to the trust qualify for the annual gift tax exclusion. It is common in life insurance trusts.",
+    "related": [
+      "annual-gift-tax-exclusion",
+      "irrevocable-life-insurance-trust"
+    ]
+  },
+  {
+    "term": "Custodian",
+    "slug": "custodian",
+    "acronym": null,
+    "definition": "An adult who manages property for a minor under a state's transfers-to-minors law. The custodian must use the money for the child's benefit and hand it over when the child reaches the age set by state law.",
+    "related": [
+      "uniform-transfers-to-minors-act",
+      "guardian"
+    ]
+  },
+  {
+    "term": "Decedent",
+    "slug": "decedent",
+    "acronym": null,
+    "definition": "The legal term for a person who has died. You will see it on court forms, tax returns, and bank paperwork.",
+    "related": [
+      "estate",
+      "probate"
+    ]
+  },
+  {
+    "term": "Digital assets",
+    "slug": "digital-assets",
+    "acronym": null,
+    "definition": "Online accounts and electronic records, such as email, photos, social media, cryptocurrency, and domain names. Most states have adopted a law that lets you give your fiduciaries access to them. Your plan can say who may see your accounts and what should happen to them.",
+    "related": [
+      "fiduciary",
+      "letter-of-instruction"
+    ]
+  },
+  {
+    "term": "Disclaimer",
+    "slug": "disclaimer",
+    "acronym": null,
+    "definition": "A formal refusal to accept an inheritance. The property then passes as if you had died before the person who left it to you. Disclaimers must meet strict timing and paperwork rules to work for tax purposes.",
+    "related": [
+      "beneficiary",
+      "contingent-beneficiary"
+    ]
+  },
+  {
+    "term": "Discretionary trust",
+    "slug": "discretionary-trust",
+    "acronym": null,
+    "definition": "A trust where the trustee decides when and how much to pay to beneficiaries. Because the beneficiary cannot demand payments, the assets are often harder for creditors to reach.",
+    "related": [
+      "trustee",
+      "spendthrift-clause",
+      "special-needs-trust"
+    ]
+  },
+  {
+    "term": "Do-not-resuscitate order",
+    "slug": "do-not-resuscitate-order",
+    "acronym": "DNR",
+    "definition": "A medical order telling health care providers not to perform CPR if your heart or breathing stops. A doctor signs it, usually after talking with you or your health care agent. It is different from a living will, which only states your wishes.",
+    "related": [
+      "physician-orders-for-life-sustaining-treatment",
+      "living-will",
+      "advance-directive"
+    ]
+  },
+  {
+    "term": "Domicile",
+    "slug": "domicile",
+    "acronym": null,
+    "definition": "The state you consider your permanent home. Your domicile usually decides which state's laws govern your will and where your main probate case happens. It can matter for state estate or inheritance taxes too.",
+    "related": [
+      "ancillary-probate",
+      "probate"
+    ]
+  },
+  {
+    "term": "Durable power of attorney",
+    "slug": "durable-power-of-attorney",
+    "acronym": null,
+    "definition": "A power of attorney that stays in effect if you become incapacitated. Without the word durable, or similar language required by your state, a power of attorney may end just when your family needs it most.",
+    "related": [
+      "power-of-attorney",
+      "attorney-in-fact",
+      "incapacity"
+    ]
+  },
+  {
+    "term": "Dynasty trust",
+    "slug": "dynasty-trust",
+    "acronym": null,
+    "definition": "A long-lasting trust designed to hold assets for several generations. It can keep property out of each generation's taxable estate and protect it from creditors and divorce. How long a trust can last depends on state law.",
+    "related": [
+      "generation-skipping-transfer-tax",
+      "irrevocable-trust"
+    ]
+  },
+  {
+    "term": "Elective share",
+    "slug": "elective-share",
+    "acronym": null,
+    "definition": "A surviving spouse's right in many states to claim a set portion of the estate, even if the will leaves them less. The rules and amounts differ by state, and community property states handle this differently.",
+    "related": [
+      "community-property",
+      "prenuptial-agreement"
+    ]
+  },
+  {
+    "term": "Estate",
+    "slug": "estate",
+    "acronym": null,
+    "definition": "Everything you own at death, minus what you owe. For tax purposes it includes assets that pass outside probate, such as life insurance and retirement accounts.",
+    "related": [
+      "probate-estate",
+      "estate-tax",
+      "decedent"
+    ]
+  },
+  {
+    "term": "Estate tax",
+    "slug": "estate-tax",
+    "acronym": null,
+    "definition": "A federal tax on the transfer of a large estate at death. Only estates above a high exemption amount owe it. Some states have their own estate tax with a much lower threshold.",
+    "related": [
+      "inheritance-tax",
+      "portability",
+      "marital-deduction"
+    ]
+  },
+  {
+    "term": "Executor",
+    "slug": "executor",
+    "acronym": null,
+    "definition": "The person you name in your will to carry out its terms. The executor collects assets, pays debts and taxes, and distributes property under court supervision. Some states call this role a personal representative.",
+    "related": [
+      "personal-representative",
+      "administrator",
+      "letters-testamentary"
+    ]
+  },
+  {
+    "term": "Fiduciary",
+    "slug": "fiduciary",
+    "acronym": null,
+    "definition": "Someone legally bound to act in another person's best interest, such as a trustee, executor, guardian, or agent under a power of attorney. A fiduciary must be honest, keep good records, and avoid self-dealing.",
+    "related": [
+      "trustee",
+      "executor",
+      "attorney-in-fact"
+    ]
+  },
+  {
+    "term": "Final accounting",
+    "slug": "final-accounting",
+    "acronym": null,
+    "definition": "A report the executor or trustee prepares near the end of an estate or trust. It shows what came in, what was paid out, and what each beneficiary receives. Courts and beneficiaries use it to confirm the job was done properly.",
+    "related": [
+      "executor",
+      "trustee",
+      "inventory"
+    ]
+  },
+  {
+    "term": "Generation-skipping transfer tax",
+    "slug": "generation-skipping-transfer-tax",
+    "acronym": "GST",
+    "definition": "A federal tax on gifts and inheritances that skip a generation, such as gifts to grandchildren. It works alongside the estate and gift tax and has its own exemption.",
+    "related": [
+      "dynasty-trust",
+      "estate-tax",
+      "gift-tax"
+    ]
+  },
+  {
+    "term": "Gift tax",
+    "slug": "gift-tax",
+    "acronym": null,
+    "definition": "A federal tax on large lifetime gifts. Most people never pay it because of the annual exclusion and the lifetime exemption, which is shared with the estate tax.",
+    "related": [
+      "annual-gift-tax-exclusion",
+      "estate-tax"
+    ]
+  },
+  {
+    "term": "Grantor",
+    "slug": "grantor",
+    "acronym": null,
+    "definition": "The person who creates a trust and usually puts property into it. Also called a settlor or trustor.",
+    "related": [
+      "settlor",
+      "trust",
+      "revocable-living-trust"
+    ]
+  },
+  {
+    "term": "Grantor retained annuity trust",
+    "slug": "grantor-retained-annuity-trust",
+    "acronym": "GRAT",
+    "definition": "An irrevocable trust that pays you a fixed annuity for a set term. Afterward, any growth above an IRS interest rate passes to your beneficiaries. It is used to move appreciation on assets out of a taxable estate with little or no gift tax.",
+    "related": [
+      "irrevocable-trust",
+      "gift-tax"
+    ]
+  },
+  {
+    "term": "Guardian",
+    "slug": "guardian",
+    "acronym": null,
+    "definition": "A person responsible for a minor child or an incapacitated adult. Parents can nominate a guardian for their children in a will, and a court makes the final appointment.",
+    "related": [
+      "guardianship",
+      "guardian-ad-litem",
+      "custodian"
+    ]
+  },
+  {
+    "term": "Guardian ad litem",
+    "slug": "guardian-ad-litem",
+    "acronym": null,
+    "definition": "A person a court appoints to represent the interests of a child or incapacitated person during a specific case. The role ends when the case ends.",
+    "related": [
+      "guardian",
+      "guardianship"
+    ]
+  },
+  {
+    "term": "Guardianship",
+    "slug": "guardianship",
+    "acronym": null,
+    "definition": "A court process that gives someone legal authority over a minor or an adult who cannot care for themselves. For adults, it is often slow, public, and costly. Powers of attorney and health care directives can often prevent it.",
+    "related": [
+      "guardian",
+      "conservator",
+      "incapacity"
+    ]
+  },
+  {
+    "term": "Health care power of attorney",
+    "slug": "health-care-power-of-attorney",
+    "acronym": "HCPOA",
+    "definition": "A document naming someone to make medical decisions for you if you cannot. The person is often called your health care agent or proxy. Some states combine it with a living will in one advance directive form.",
+    "related": [
+      "advance-directive",
+      "living-will",
+      "hipaa-authorization"
+    ]
+  },
+  {
+    "term": "Heir",
+    "slug": "heir",
+    "acronym": null,
+    "definition": "A person entitled to inherit under state law when there is no will. People often use the word loosely to mean anyone who inherits.",
+    "related": [
+      "intestate-succession",
+      "beneficiary"
+    ]
+  },
+  {
+    "term": "HIPAA authorization",
+    "slug": "hipaa-authorization",
+    "acronym": "HIPAA",
+    "definition": "A signed release that lets doctors and hospitals share your medical information with people you name. Without it, privacy rules can keep your family in the dark even when they are trying to help.",
+    "related": [
+      "health-care-power-of-attorney",
+      "advance-directive"
+    ]
+  },
+  {
+    "term": "Holographic will",
+    "slug": "holographic-will",
+    "acronym": null,
+    "definition": "A will written entirely or mostly in your own handwriting, often without witnesses. Only some states accept them, and they are easy to challenge.",
+    "related": [
+      "will",
+      "witness"
+    ]
+  },
+  {
+    "term": "Incapacity",
+    "slug": "incapacity",
+    "acronym": null,
+    "definition": "Being unable to manage your own finances or make your own decisions, often because of illness, injury, or dementia. Your documents usually define how incapacity is decided, such as by a letter from one or two doctors.",
+    "related": [
+      "durable-power-of-attorney",
+      "guardianship",
+      "successor-trustee"
+    ]
+  },
+  {
+    "term": "Inheritance tax",
+    "slug": "inheritance-tax",
+    "acronym": null,
+    "definition": "A state tax paid by the person who inherits, based on their relationship to the person who died. Only a few states have one, and close family members are often exempt or taxed at lower rates.",
+    "related": [
+      "estate-tax",
+      "domicile"
+    ]
+  },
+  {
+    "term": "Intestate",
+    "slug": "intestate",
+    "acronym": null,
+    "definition": "Dying without a valid will. State law then decides who inherits, which may not match what you would have chosen.",
+    "related": [
+      "intestate-succession",
+      "administrator",
+      "heir"
+    ]
+  },
+  {
+    "term": "Intestate succession",
+    "slug": "intestate-succession",
+    "acronym": null,
+    "definition": "The default rules in state law that decide who inherits when someone dies without a will. They usually favor a spouse, then children, then parents and siblings. Unmarried partners and stepchildren often receive nothing.",
+    "related": [
+      "intestate",
+      "heir"
+    ]
+  },
+  {
+    "term": "Inventory",
+    "slug": "inventory",
+    "acronym": null,
+    "definition": "A list of the estate's assets and their values, often filed with the probate court. It gives the court and beneficiaries a starting point for the final accounting.",
+    "related": [
+      "final-accounting",
+      "executor",
+      "probate"
+    ]
+  },
+  {
+    "term": "Irrevocable life insurance trust",
+    "slug": "irrevocable-life-insurance-trust",
+    "acronym": "ILIT",
+    "definition": "An irrevocable trust that owns life insurance on your life. When set up correctly, the death benefit stays out of your taxable estate. The trustee manages the payout for your beneficiaries.",
+    "related": [
+      "irrevocable-trust",
+      "crummey-power",
+      "estate-tax"
+    ]
+  },
+  {
+    "term": "Irrevocable trust",
+    "slug": "irrevocable-trust",
+    "acronym": null,
+    "definition": "A trust that generally cannot be changed or cancelled once signed. You give up control in exchange for benefits such as tax savings, creditor protection, or Medicaid planning. Some states and documents allow limited changes through a trust protector or court process.",
+    "related": [
+      "revocable-living-trust",
+      "trust-protector",
+      "medicaid-planning"
+    ]
+  },
+  {
+    "term": "Joint tenancy with right of survivorship",
+    "slug": "joint-tenancy-with-right-of-survivorship",
+    "acronym": "JTWROS",
+    "definition": "A way two or more people own property together where the survivor automatically owns it all when one dies. It avoids probate at the first death but not at the last. It can also expose the property to a co-owner's debts.",
+    "related": [
+      "tenancy-in-common",
+      "probate"
+    ]
+  },
+  {
+    "term": "Lapse",
+    "slug": "lapse",
+    "acronym": null,
+    "definition": "What happens when a gift in a will fails because the beneficiary died first. Unless the will or an anti-lapse statute says otherwise, the gift usually falls into the residuary estate.",
+    "related": [
+      "anti-lapse-statute",
+      "residuary-estate"
+    ]
+  },
+  {
+    "term": "Letter of instruction",
+    "slug": "letter-of-instruction",
+    "acronym": null,
+    "definition": "An informal letter to your family or executor explaining practical details, such as where documents are, who to call, and your personal wishes. It is not legally binding, but it can save your family a lot of searching.",
+    "related": [
+      "digital-assets",
+      "executor"
+    ]
+  },
+  {
+    "term": "Letters testamentary",
+    "slug": "letters-testamentary",
+    "acronym": null,
+    "definition": "A court document that proves the executor has authority to act for the estate. Banks and other institutions usually ask for a certified copy before releasing assets.",
+    "related": [
+      "executor",
+      "probate",
+      "personal-representative"
+    ]
+  },
+  {
+    "term": "Life estate",
+    "slug": "life-estate",
+    "acronym": null,
+    "definition": "The right to use and live in property for the rest of your life, after which it passes to someone else, called the remainderman. People sometimes use it to pass a home outside probate.",
+    "related": [
+      "transfer-on-death-deed",
+      "remainder-beneficiary"
+    ]
+  },
+  {
+    "term": "Living will",
+    "slug": "living-will",
+    "acronym": null,
+    "definition": "A document stating what life-sustaining treatment you want or do not want if you are terminally ill or permanently unconscious. It speaks for you when you cannot. Despite its name, it has nothing to do with property.",
+    "related": [
+      "advance-directive",
+      "health-care-power-of-attorney",
+      "do-not-resuscitate-order"
+    ]
+  },
+  {
+    "term": "Marital deduction",
+    "slug": "marital-deduction",
+    "acronym": null,
+    "definition": "A federal tax rule that lets spouses leave each other unlimited amounts free of estate and gift tax. The receiving spouse generally must be a U.S. citizen. Special rules apply when the spouse is not a citizen.",
+    "related": [
+      "qualified-domestic-trust",
+      "qtip-trust",
+      "estate-tax"
+    ]
+  },
+  {
+    "term": "Medicaid planning",
+    "slug": "medicaid-planning",
+    "acronym": null,
+    "definition": "Arranging assets so a person can qualify for Medicaid to help pay for long-term care. Medicaid reviews gifts and transfers made during a look-back period before an application. The rules vary by state and change often.",
+    "related": [
+      "irrevocable-trust",
+      "incapacity"
+    ]
+  },
+  {
+    "term": "No-contest clause",
+    "slug": "no-contest-clause",
+    "acronym": null,
+    "definition": "A clause in a will or trust saying that a beneficiary who challenges the document loses their gift. Some states enforce these clauses strictly, others only in limited cases. Also called an in terrorem clause.",
+    "related": [
+      "will",
+      "trust"
+    ]
+  },
+  {
+    "term": "Non-probate asset",
+    "slug": "non-probate-asset",
+    "acronym": null,
+    "definition": "Property that passes at death without probate, such as life insurance, retirement accounts, jointly owned property, and assets held in a trust. These assets follow the beneficiary form or title, not your will.",
+    "related": [
+      "probate-estate",
+      "beneficiary-designation",
+      "joint-tenancy-with-right-of-survivorship"
+    ]
+  },
+  {
+    "term": "Notarization",
+    "slug": "notarization",
+    "acronym": null,
+    "definition": "A notary public confirming the identity of the person signing a document and that they signed willingly. Many estate planning documents, such as deeds and powers of attorney, must be notarized to be accepted.",
+    "related": [
+      "self-proving-affidavit",
+      "witness"
+    ]
+  },
+  {
+    "term": "Payable on death",
+    "slug": "payable-on-death",
+    "acronym": "POD",
+    "definition": "A designation on a bank account that names who receives the money when you die. The beneficiary claims it directly from the bank with a death certificate, without probate.",
+    "related": [
+      "transfer-on-death",
+      "beneficiary-designation"
+    ]
+  },
+  {
+    "term": "Per capita",
+    "slug": "per-capita",
+    "acronym": null,
+    "definition": "A way of dividing an inheritance equally among people at the same generation level. Under some versions, a share meant for someone who died first goes to the other survivors, not to that person's children.",
+    "related": [
+      "per-stirpes",
+      "anti-lapse-statute"
+    ]
+  },
+  {
+    "term": "Per stirpes",
+    "slug": "per-stirpes",
+    "acronym": null,
+    "definition": "A way of dividing an inheritance by family branch. If one of your children dies before you, that child's share passes to their own children. It is a common default choice in wills and beneficiary forms.",
+    "related": [
+      "per-capita",
+      "contingent-beneficiary"
+    ]
+  },
+  {
+    "term": "Personal property memorandum",
+    "slug": "personal-property-memorandum",
+    "acronym": null,
+    "definition": "A separate list, referenced in your will, that says who gets specific personal items such as jewelry or furniture. Many states let you update it without re-signing your will. Whether it is binding depends on your state.",
+    "related": [
+      "will",
+      "specific-bequest"
+    ]
+  },
+  {
+    "term": "Personal representative",
+    "slug": "personal-representative",
+    "acronym": null,
+    "definition": "The general term for the person who manages an estate in probate, whether named in a will or appointed by the court. It covers both executors and administrators.",
+    "related": [
+      "executor",
+      "administrator"
+    ]
+  },
+  {
+    "term": "Pet trust",
+    "slug": "pet-trust",
+    "acronym": null,
+    "definition": "A trust that sets aside money for the care of your pets after you die or become incapacitated. You name a caregiver and a trustee who pays for food, vet bills, and other costs.",
+    "related": [
+      "trust",
+      "trustee"
+    ]
+  },
+  {
+    "term": "Physician orders for life-sustaining treatment",
+    "slug": "physician-orders-for-life-sustaining-treatment",
+    "acronym": "POLST",
+    "definition": "A medical order, signed by a doctor and the patient, that tells emergency workers and hospitals what treatment to provide. It is meant for people who are seriously ill or frail. States use different names, such as MOLST or POST.",
+    "related": [
+      "do-not-resuscitate-order",
+      "advance-directive"
+    ]
+  },
+  {
+    "term": "Portability",
+    "slug": "portability",
+    "acronym": null,
+    "definition": "A federal rule that lets a surviving spouse use the unused estate tax exemption of the spouse who died first. It requires filing an estate tax return after the first death, even if no tax is owed.",
+    "related": [
+      "estate-tax",
+      "bypass-trust",
+      "marital-deduction"
+    ]
+  },
+  {
+    "term": "Pour-over will",
+    "slug": "pour-over-will",
+    "acronym": null,
+    "definition": "A will used with a living trust that sends any assets left outside the trust into it at death. It acts as a safety net, but assets that pour over may still go through probate.",
+    "related": [
+      "revocable-living-trust",
+      "trust-funding",
+      "probate"
+    ]
+  },
+  {
+    "term": "Power of attorney",
+    "slug": "power-of-attorney",
+    "acronym": "POA",
+    "definition": "A document that gives someone you choose the authority to act for you in financial or legal matters. It can be broad or limited to certain tasks, and it ends at your death.",
+    "related": [
+      "durable-power-of-attorney",
+      "attorney-in-fact",
+      "springing-power-of-attorney"
+    ]
+  },
+  {
+    "term": "Prenuptial agreement",
+    "slug": "prenuptial-agreement",
+    "acronym": null,
+    "definition": "A contract signed before marriage that sets out how property will be handled during the marriage, at divorce, or at death. It can waive a spouse's elective share, which matters for blended families.",
+    "related": [
+      "elective-share",
+      "community-property"
+    ]
+  },
+  {
+    "term": "Primary beneficiary",
+    "slug": "primary-beneficiary",
+    "acronym": null,
+    "definition": "The first person or organization in line to receive an asset. If the primary beneficiary has died, the contingent beneficiary is next.",
+    "related": [
+      "contingent-beneficiary",
+      "beneficiary-designation"
+    ]
+  },
+  {
+    "term": "Probate",
+    "slug": "probate",
+    "acronym": null,
+    "definition": "The court process for proving a will, paying debts, and transferring property after death. It can take months or longer, and court filings are often public. Many states offer a simpler process for small estates.",
+    "related": [
+      "probate-estate",
+      "small-estate-affidavit",
+      "executor"
+    ]
+  },
+  {
+    "term": "Probate estate",
+    "slug": "probate-estate",
+    "acronym": null,
+    "definition": "The assets that must go through probate, usually those in your sole name with no beneficiary or co-owner. Accounts with beneficiaries and assets in a trust are usually not part of it.",
+    "related": [
+      "probate",
+      "estate",
+      "non-probate-asset"
+    ]
+  },
+  {
+    "term": "QTIP trust",
+    "slug": "qtip-trust",
+    "acronym": "QTIP",
+    "definition": "A qualified terminable interest property trust. It pays income to a surviving spouse for life and qualifies for the marital deduction. The first spouse still decides who receives what is left. Blended families often use one.",
+    "related": [
+      "marital-deduction",
+      "bypass-trust"
+    ]
+  },
+  {
+    "term": "Qualified domestic trust",
+    "slug": "qualified-domestic-trust",
+    "acronym": "QDOT",
+    "definition": "A trust that lets property left to a spouse who is not a U.S. citizen qualify for the marital deduction. Estate tax is deferred until distributions of principal or the spouse's death.",
+    "related": [
+      "marital-deduction",
+      "estate-tax"
+    ]
+  },
+  {
+    "term": "Remainder beneficiary",
+    "slug": "remainder-beneficiary",
+    "acronym": null,
+    "definition": "A person who receives what is left in a trust after the current beneficiary's interest ends. For example, your children may be remainder beneficiaries of a trust that supports your spouse for life.",
+    "related": [
+      "beneficiary",
+      "life-estate",
+      "qtip-trust"
+    ]
+  },
+  {
+    "term": "Residuary estate",
+    "slug": "residuary-estate",
+    "acronym": null,
+    "definition": "Everything left in an estate after specific gifts, debts, expenses, and taxes are paid. A residuary clause in your will says who receives it.",
+    "related": [
+      "specific-bequest",
+      "abatement",
+      "lapse"
+    ]
+  },
+  {
+    "term": "Revocable living trust",
+    "slug": "revocable-living-trust",
+    "acronym": "RLT",
+    "definition": "A trust you create and control during your life, which you can change or cancel at any time. You usually serve as your own trustee. At your death or incapacity, a successor trustee takes over without court involvement.",
+    "related": [
+      "trust-funding",
+      "successor-trustee",
+      "pour-over-will"
+    ]
+  },
+  {
+    "term": "Self-proving affidavit",
+    "slug": "self-proving-affidavit",
+    "acronym": null,
+    "definition": "A sworn statement signed by the witnesses and notarized when a will is signed. It lets the court accept the will without tracking down the witnesses later. Most states allow one.",
+    "related": [
+      "witness",
+      "notarization",
+      "will"
+    ]
+  },
+  {
+    "term": "Separate property",
+    "slug": "separate-property",
+    "acronym": null,
+    "definition": "Property one spouse owns alone, such as assets owned before marriage or received as a gift or inheritance. The definition matters most in community property states and in divorce.",
+    "related": [
+      "community-property",
+      "prenuptial-agreement"
+    ]
+  },
+  {
+    "term": "Settlor",
+    "slug": "settlor",
+    "acronym": null,
+    "definition": "Another word for the person who creates a trust. Also called a grantor or trustor.",
+    "related": [
+      "grantor",
+      "trust"
+    ]
+  },
+  {
+    "term": "Small estate affidavit",
+    "slug": "small-estate-affidavit",
+    "acronym": null,
+    "definition": "A simplified way to collect a small estate's assets without full probate. The heir signs a sworn statement and presents it to the bank or other holder. The value limits and waiting periods are set by each state.",
+    "related": [
+      "probate",
+      "probate-estate"
+    ]
+  },
+  {
+    "term": "Special needs trust",
+    "slug": "special-needs-trust",
+    "acronym": "SNT",
+    "definition": "A trust that holds money for a person with a disability without disqualifying them from means-tested benefits like Medicaid or SSI. The trustee pays for extras that improve quality of life. Some are funded by family, others with the beneficiary's own money, and the rules differ.",
+    "related": [
+      "able-account",
+      "supplemental-security-income",
+      "discretionary-trust"
+    ]
+  },
+  {
+    "term": "Specific bequest",
+    "slug": "specific-bequest",
+    "acronym": null,
+    "definition": "A gift of a particular item or amount in a will. Examples include \"my piano to my niece\" or \"$5,000 to my church.\" If the item is gone at death, the gift may simply fail.",
+    "related": [
+      "bequest",
+      "residuary-estate",
+      "abatement"
+    ]
+  },
+  {
+    "term": "Spendthrift clause",
+    "slug": "spendthrift-clause",
+    "acronym": null,
+    "definition": "A trust provision that stops beneficiaries from selling or pledging their future payments and blocks most creditors from reaching the trust. Some creditors, such as for child support, may still have claims depending on state law.",
+    "related": [
+      "discretionary-trust",
+      "asset-protection-trust"
+    ]
+  },
+  {
+    "term": "Spousal lifetime access trust",
+    "slug": "spousal-lifetime-access-trust",
+    "acronym": "SLAT",
+    "definition": "An irrevocable trust one spouse creates for the other spouse's benefit. It moves assets out of both spouses' taxable estates while the beneficiary spouse can still receive distributions. Divorce or the beneficiary spouse's death can cut off that indirect access.",
+    "related": [
+      "irrevocable-trust",
+      "gift-tax",
+      "estate-tax"
+    ]
+  },
+  {
+    "term": "Springing power of attorney",
+    "slug": "springing-power-of-attorney",
+    "acronym": null,
+    "definition": "A power of attorney that only takes effect when a stated event happens, usually your incapacity. It can delay action because your agent must first prove the event occurred. Not every state allows them.",
+    "related": [
+      "power-of-attorney",
+      "durable-power-of-attorney",
+      "incapacity"
+    ]
+  },
+  {
+    "term": "Step-up in basis",
+    "slug": "step-up-in-basis",
+    "acronym": null,
+    "definition": "A tax rule that resets the cost basis of most inherited assets to their value at the owner's death. If your heirs sell soon after, they may owe little or no capital gains tax. Assets given away during life usually do not get this reset.",
+    "related": [
+      "community-property",
+      "gift-tax"
+    ]
+  },
+  {
+    "term": "Successor trustee",
+    "slug": "successor-trustee",
+    "acronym": null,
+    "definition": "The person or company that takes over managing a trust when the first trustee dies, resigns, or becomes incapacitated. In a living trust, this person plays a role similar to an executor.",
+    "related": [
+      "trustee",
+      "revocable-living-trust",
+      "co-trustee"
+    ]
+  },
+  {
+    "term": "Supplemental Security Income",
+    "slug": "supplemental-security-income",
+    "acronym": "SSI",
+    "definition": "A federal benefit for people with limited income and resources who are aged, blind, or disabled. Receiving an inheritance outright can cause someone to lose it, which is why families use special needs trusts and ABLE accounts.",
+    "related": [
+      "special-needs-trust",
+      "able-account"
+    ]
+  },
+  {
+    "term": "Tenancy in common",
+    "slug": "tenancy-in-common",
+    "acronym": null,
+    "definition": "A way two or more people own property where each owns a share they can leave to anyone. There is no automatic survivorship, so each owner's share may go through probate.",
+    "related": [
+      "joint-tenancy-with-right-of-survivorship",
+      "probate"
+    ]
+  },
+  {
+    "term": "Testamentary trust",
+    "slug": "testamentary-trust",
+    "acronym": null,
+    "definition": "A trust created by your will that only comes into existence after your death and probate. Parents often use one to hold money for young children.",
+    "related": [
+      "will",
+      "trust",
+      "guardian"
+    ]
+  },
+  {
+    "term": "Testate",
+    "slug": "testate",
+    "acronym": null,
+    "definition": "Dying with a valid will. The opposite of intestate.",
+    "related": [
+      "intestate",
+      "testator"
+    ]
+  },
+  {
+    "term": "Testator",
+    "slug": "testator",
+    "acronym": null,
+    "definition": "The person who makes a will. Older documents sometimes use testatrix for a woman.",
+    "related": [
+      "will",
+      "testate"
+    ]
+  },
+  {
+    "term": "Transfer on death",
+    "slug": "transfer-on-death",
+    "acronym": "TOD",
+    "definition": "A designation on investment accounts, and in many states on vehicles, that names who receives the asset at your death. The beneficiary has no rights to it while you are alive.",
+    "related": [
+      "payable-on-death",
+      "transfer-on-death-deed",
+      "beneficiary-designation"
+    ]
+  },
+  {
+    "term": "Transfer-on-death deed",
+    "slug": "transfer-on-death-deed",
+    "acronym": null,
+    "definition": "A deed that names who will receive your home or land when you die, without probate. You keep full ownership and can change it during life. Only some states allow these deeds.",
+    "related": [
+      "transfer-on-death",
+      "life-estate"
+    ]
+  },
+  {
+    "term": "Trust",
+    "slug": "trust",
+    "acronym": null,
+    "definition": "A legal arrangement where one person, the trustee, holds property for the benefit of others, the beneficiaries. The trust document sets the rules for how the property is managed and when it is paid out.",
+    "related": [
+      "trustee",
+      "grantor",
+      "revocable-living-trust"
+    ]
+  },
+  {
+    "term": "Trust funding",
+    "slug": "trust-funding",
+    "acronym": null,
+    "definition": "Moving assets into a trust by retitling them in the trustee's name or naming the trust as beneficiary. A trust only controls the assets it holds, so an unfunded trust may not avoid probate.",
+    "related": [
+      "revocable-living-trust",
+      "pour-over-will"
+    ]
+  },
+  {
+    "term": "Trust protector",
+    "slug": "trust-protector",
+    "acronym": null,
+    "definition": "A person given power in a trust document to make certain changes. Examples include fixing errors, replacing a trustee, or adapting to new tax laws. The role adds flexibility to long-term trusts.",
+    "related": [
+      "irrevocable-trust",
+      "trustee"
+    ]
+  },
+  {
+    "term": "Trustee",
+    "slug": "trustee",
+    "acronym": null,
+    "definition": "The person or institution that manages trust property according to the trust's terms. A trustee is a fiduciary and must act in the beneficiaries' best interest.",
+    "related": [
+      "successor-trustee",
+      "co-trustee",
+      "fiduciary"
+    ]
+  },
+  {
+    "term": "Uniform Transfers to Minors Act",
+    "slug": "uniform-transfers-to-minors-act",
+    "acronym": "UTMA",
+    "definition": "A state law that lets an adult custodian hold property for a child until the child reaches an age set by state law. At that age, the child receives everything outright.",
+    "related": [
+      "custodian",
+      "testamentary-trust"
+    ]
+  },
+  {
+    "term": "Will",
+    "slug": "will",
+    "acronym": null,
+    "definition": "A legal document that says who receives your property at death and who will manage your estate. It can also nominate a guardian for minor children. It must be signed and witnessed under your state's rules, and it goes through probate.",
+    "related": [
+      "executor",
+      "probate",
+      "pour-over-will"
+    ]
+  },
+  {
+    "term": "Witness",
+    "slug": "witness",
+    "acronym": null,
+    "definition": "A person who watches you sign your will and signs it too. Most states require two witnesses, and many say they should not be beneficiaries. The exact rules depend on your state.",
+    "related": [
+      "self-proving-affidavit",
+      "will",
+      "notarization"
+    ]
+  }
+]
