@@ -9,6 +9,7 @@ import { cronAuthorized } from "@/server/http";
 import { retryFailedDeliveries } from "@/server/leadDelivery";
 import { notifierFromEnv } from "@/server/notify";
 import { emailTransportFromEnv, smsTransportFromEnv } from "@/server/notify/transports";
+import { nurtureOwnerFromEnv } from "@/server/nurture/owner";
 import { runNurtureSends } from "@/server/nurture/sender";
 import { ApprovedTemplateSource } from "@/server/nurture/templates";
 import { getDb } from "@/server/runtime";
@@ -24,7 +25,8 @@ import { sweepExpiredOffers } from "@/server/services/routing";
  * - offers: re-route offers past their acceptance window
  * - reminders: engagement letter reminders
  * - automations: triage, nurture enrollment, CRM sync, review requests
- * - nurture: send due follow-up steps (dry run unless OUTBOUND_SEND_MODE=live)
+ * - nurture: send due follow-up steps (dry run unless OUTBOUND_SEND_MODE=live). With NURTURE_OWNER=crm
+ *   message steps are skipped (reported as crmOwned) and call tasks still run
  * - slaAlerts: tell intake and admins about leads past their response targets
  * - crmRetries: retry failed website-to-CRM deliveries
  * - payments: flag late installments and issue links for installments now due
@@ -48,9 +50,17 @@ export async function POST(request: Request) {
 
   await job("offers", () => sweepExpiredOffers(db, now));
   await job("reminders", () => sendDueReminders(db, esignProviderFromEnv(), now));
-  await job("automations", () => runAutomations(db, new CrmSync(crmAdapterFromEnv()), now));
+  // NURTURE_OWNER=crm: the CRM sends email and SMS; we push state and still create call tasks.
+  let owner: "crm" | "internal" = "internal";
+  try {
+    owner = nurtureOwnerFromEnv();
+  } catch (err) {
+    errors.nurtureOwner = err instanceof Error ? err.message : String(err);
+  }
+  out.nurtureOwner = owner;
+  await job("automations", () => runAutomations(db, new CrmSync(crmAdapterFromEnv()), now, { pushNurtureState: owner === "crm" }));
   await job("nurture", () =>
-    runNurtureSends(db, { templates: new ApprovedTemplateSource(), email: emailTransportFromEnv(), sms: smsTransportFromEnv(), limit: 200 }, now),
+    runNurtureSends(db, { templates: new ApprovedTemplateSource(), email: emailTransportFromEnv(), sms: smsTransportFromEnv(), limit: 200, owner }, now),
   );
   await job("slaAlerts", () => deliverSlaAlerts(db, notifierFromEnv(), now));
   await job("crmRetries", () => retryFailedDeliveries(db, { now }));

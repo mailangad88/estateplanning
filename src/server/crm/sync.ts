@@ -9,6 +9,7 @@
  */
 import { audit } from "@/server/audit/log";
 import { CrmHttpError, type CrmAdapter } from "@/server/crm/adapter";
+import { buildNurtureState } from "@/server/crm/nurtureState";
 import type { Db } from "@/server/db";
 
 export interface CrmSyncOptions {
@@ -92,6 +93,33 @@ export class CrmSync {
     if (created) return;
     const lead = (await db.leads.get(leadId))!;
     await this.run(db, "setStage", leadId, () => this.adapter.setStage(matterId, lead.stage, lead.exit?.reason));
+  }
+
+  /**
+   * Pushes consent, suppression, sequence and stage flags for the CRM's automations. No-op (false) when
+   * the adapter has no nurture support or the lead is gone. Creates the CRM record first if needed.
+   */
+  async syncNurtureState(db: Db, leadId: string): Promise<boolean> {
+    if (!this.adapter.pushNurtureState) return false;
+    const state = await buildNurtureState(db, leadId);
+    if (!state) return false;
+    const { matterId } = await this.syncLead(db, leadId);
+    await this.run(db, "pushNurtureState", leadId, () => this.adapter.pushNurtureState!(matterId, state));
+    return true;
+  }
+
+  /** After a local opt-out: pushes the new suppression for every CRM-synced lead of the person. Best effort per lead. */
+  async syncPersonSuppression(db: Db, personId: string): Promise<number> {
+    let pushed = 0;
+    for (const lead of await db.leads.list(undefined, { personId })) {
+      if (!lead.crmId) continue;
+      try {
+        if (await this.syncNurtureState(db, lead.id)) pushed++;
+      } catch (err) {
+        console.error("crm suppression push failed", { leadId: lead.id, error: err instanceof Error ? err.message : String(err) });
+      }
+    }
+    return pushed;
   }
 
   async syncActivity(db: Db, activityId: string): Promise<void> {

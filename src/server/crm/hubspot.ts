@@ -12,6 +12,8 @@ import {
   type CrmAdapter,
   type StageMap,
   captureFields,
+  nurtureFields,
+  type NurtureState,
 } from "@/server/crm/adapter";
 import type { Activity, Comment, DocumentRecord, ExitReason, Lead, Person, Stage } from "@/server/types";
 
@@ -123,5 +125,22 @@ export class HubSpotAdapter implements CrmAdapter {
   ) {
     // Files API upload would need multipart; a linked note keeps the document behind our signed URL.
     await this.note(matterId, `Document (${doc.kind}): ${doc.name} ${url}`, new Date().toISOString());
+  }
+
+  /**
+   * Nurture state for HubSpot workflows. TO BE VERIFIED against HubSpot docs before launch: the "ep_*"
+   * custom properties must exist on deals and contacts, and opting a contact out of marketing email is
+   * done with the contact property hs_email_optout (HubSpot may restrict who can set it; the
+   * subscription-status APIs are the other route).
+   */
+  async pushNurtureState(matterId: string, state: NurtureState) {
+    const properties = nurtureFields(state);
+    await this.call("PATCH", `/crm/v3/objects/deals/${matterId}`, { properties });
+    const contactId = state.contactEmail ? await this.findContact("email", state.contactEmail) : undefined;
+    if (contactId) {
+      await this.call("PATCH", `/crm/v3/objects/contacts/${contactId}`, {
+        properties: { ...properties, ...(state.emailSuppressed ? { hs_email_optout: "true" } : {}) },
+      });
+    }
   }
 }

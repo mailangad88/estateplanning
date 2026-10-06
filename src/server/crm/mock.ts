@@ -1,5 +1,5 @@
 /** In-memory adapter for tests and local development. Records every call. */
-import { assertFirmVisible, type CrmAdapter } from "@/server/crm/adapter";
+import { assertFirmVisible, type CrmAdapter, type NurtureState } from "@/server/crm/adapter";
 import type { Activity, Comment, DocumentRecord, ExitReason, Lead, Person, Stage } from "@/server/types";
 
 export interface MockCall {
@@ -10,6 +10,7 @@ export interface MockCall {
 export class MockCrmAdapter implements CrmAdapter {
   readonly name = "mock";
   calls: MockCall[] = [];
+  nurtureStates = new Map<string, NurtureState>();
   contacts = new Map<string, string>(); // email -> id
   matters = new Map<string, { stage: Stage; exit?: ExitReason; notes: string[] }>();
   /** Test hook: throw this before running the next operation(s). */
@@ -64,5 +65,10 @@ export class MockCrmAdapter implements CrmAdapter {
     url: string,
   ) {
     this.rec("attachDocument", matterId, doc, url);
+  }
+
+  async pushNurtureState(matterId: string, state: NurtureState) {
+    this.rec("pushNurtureState", matterId, state);
+    this.nurtureStates.set(matterId, state);
   }
 }

@@ -30,7 +30,12 @@ export interface AutomationResult {
   reviewRequestsStarted: number;
 }
 
-export async function runAutomations(db: Db, crm: CrmSync | null, now = new Date()): Promise<AutomationResult> {
+export interface AutomationOptions {
+  /** NURTURE_OWNER=crm: after enrollments and stage changes, push sequence, consent and stage flags to the CRM. */
+  pushNurtureState?: boolean;
+}
+
+export async function runAutomations(db: Db, crm: CrmSync | null, now = new Date(), opts: AutomationOptions = {}): Promise<AutomationResult> {
   const state = await loadState(db);
   const events = (await db.audit.list((e) => e.seq > state.cursorSeq)).sort((a, b) => a.seq - b.seq);
   const result: AutomationResult = { processedEvents: events.length, enrolled: 0, stageChanges: 0, exits: 0, crmSynced: 0, crmFailures: 0, movedToLongTerm: 0, reviewRequestsStarted: 0 };
@@ -64,6 +69,7 @@ export async function runAutomations(db: Db, crm: CrmSync | null, now = new Date
     if (!lead.exit) result.enrolled += (await enrollForNewLead(db, lead, now)).length;
     state.stages[id] = lead.stage;
     await crmCall(() => crm!.syncLead(db, id));
+    if (opts.pushNurtureState) await crmCall(() => crm!.syncNurtureState(db, id));
   }
 
   // Retry leads whose first CRM sync failed on an earlier run.
@@ -81,6 +87,7 @@ export async function runAutomations(db: Db, crm: CrmSync | null, now = new Date
         await onStageChange(db, id, lead.stage as Stage, now);
         result.stageChanges++;
         await crmCall(() => crm!.syncStage(db, id));
+        if (opts.pushNurtureState) await crmCall(() => crm!.syncNurtureState(db, id));
       }
       state.stages[id] = lead.stage;
     }
@@ -89,6 +96,7 @@ export async function runAutomations(db: Db, crm: CrmSync | null, now = new Date
       state.exits[id] = lead.exit.reason;
       result.exits++;
       await crmCall(() => crm!.syncStage(db, id));
+      if (opts.pushNurtureState) await crmCall(() => crm!.syncNurtureState(db, id));
     }
   }
 

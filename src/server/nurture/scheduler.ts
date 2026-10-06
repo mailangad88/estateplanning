@@ -148,7 +148,7 @@ async function isSuppressedAll(db: Db, address: string): Promise<boolean> {
   return await db.suppressions.get(`all:${normalizeAddress("all", address)}`) !== undefined;
 }
 
-async function skip(db: Db, enr: SequenceEnrollment, stepId: string, reason: string, at: Date): Promise<SequenceEnrollment> {
+export async function skip(db: Db, enr: SequenceEnrollment, stepId: string, reason: string, at: Date): Promise<SequenceEnrollment> {
   const next = await db.enrollments.update(enr.id, {
     sentStepIds: [...enr.sentStepIds, stepId],
     skipped: [...(enr.skipped ?? []), { stepId, reason, at: at.toISOString() }],

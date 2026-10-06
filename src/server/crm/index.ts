@@ -2,6 +2,8 @@ import type { CrmAdapter } from "@/server/crm/adapter";
 import { HubSpotAdapter } from "@/server/crm/hubspot";
 import { LawmaticsAdapter } from "@/server/crm/lawmatics";
 import { MockCrmAdapter } from "@/server/crm/mock";
+import { CrmSync } from "@/server/crm/sync";
+import { liveCrmConfigured } from "@/server/nurture/owner";
 
 /**
  * Chooses the CRM from env. A missing token falls back to the mock so local dev works,
@@ -23,5 +25,10 @@ export function crmAdapterFromEnv(env: Record<string, string | undefined> = proc
   return new MockCrmAdapter();
 }
 
-export { CrmSync } from "@/server/crm/sync";
+/** A CrmSync for a live (non-mock) CRM, or null when none is configured. For best-effort pushes such as suppressions. */
+export function crmSyncIfLive(env: Record<string, string | undefined> = process.env): CrmSync | null {
+  return liveCrmConfigured(env) ? new CrmSync(crmAdapterFromEnv(env)) : null;
+}
+
+export { CrmSync };
 export type { CrmAdapter } from "@/server/crm/adapter";
