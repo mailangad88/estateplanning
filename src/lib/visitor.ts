@@ -78,6 +78,7 @@ const SOURCE_PARAMS = [
   ["utm_content", "utmContent"],
   ["gclid", "gclid"],
   ["fbclid", "fbclid"],
+  ["ref", "partnerRef"],
 ] as const;
 
 /**
@@ -87,13 +88,15 @@ const SOURCE_PARAMS = [
 export function sessionSource(): Record<string, string> {
   const saved = read<Record<string, string>>(session, SOURCE_KEY);
   const params = new URLSearchParams(window.location.search);
-  const hasCampaign = SOURCE_PARAMS.some(([p]) => params.get(p));
+  // Only partner ref codes ("ref-...") count: other sites use ?ref= for their own purposes.
+  const present = (p: string) => (p === "ref" ? !!params.get(p)?.toLowerCase().startsWith("ref-") : !!params.get(p));
+  const hasCampaign = SOURCE_PARAMS.some(([p]) => present(p));
   if (saved && !hasCampaign) return saved;
   const s: Record<string, string> = { landingPage: window.location.href };
   if (document.referrer) s.referrer = document.referrer;
   for (const [param, key] of SOURCE_PARAMS) {
     const v = params.get(param);
-    if (v) s[key] = v;
+    if (v && present(param)) s[key] = param === "ref" ? v.toLowerCase().slice(0, 64) : v;
   }
   write(session, SOURCE_KEY, s);
   return s;

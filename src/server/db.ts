@@ -17,6 +17,9 @@ import type {
   Firm,
   Lawyer,
   Lead,
+  Partner,
+  PartnerGift,
+  PartnerReferral,
   Person,
   Task,
   User,
@@ -127,6 +130,9 @@ export interface Db {
   automationState: Collection<AutomationState>;
   crmDeliveries: Collection<CrmDelivery>;
   seminars: Collection<Seminar>;
+  partners: Collection<Partner>;
+  partnerGifts: Collection<PartnerGift>;
+  partnerReferrals: Collection<PartnerReferral>;
   audit: AppendOnly<AuditEvent>;
 }
 
@@ -161,6 +167,9 @@ export function createMemoryDb(): Db {
     automationState: new MemoryCollection(),
     crmDeliveries: new MemoryCollection(),
     seminars: new MemoryCollection(),
+    partners: new MemoryCollection(),
+    partnerGifts: new MemoryCollection(),
+    partnerReferrals: new MemoryCollection(),
     audit: new MemoryAppendOnly(),
   };
 }

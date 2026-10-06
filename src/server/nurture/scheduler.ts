@@ -119,6 +119,8 @@ export function isGriefLead(lead: Pick<Lead, "segments" | "matterType" | "captur
 export async function enrollForNewLead(db: Db, lead: Lead, at: Date): Promise<SequenceEnrollment[]> {
   // Families handling an estate get only the gentle track: no speed-to-lead texts, no marketing.
   if (isGriefLead(lead)) return [await enroll(db, lead.id, "grief_support", at)];
+  // A person a partner referred has not signed up for anything themselves: no automated sequences until they contact us.
+  if (lead.segments.includes("partner_referral")) return [];
   const out = [await enroll(db, lead.id, "speed_to_lead", at)];
   if (Object.keys(lead.intake?.answers ?? {}).length > 0) out.push(await enroll(db, lead.id, "quiz_follow_up", at));
   if (lead.segments.some((s) => s.startsWith("resource:"))) out.push(await enroll(db, lead.id, "magnet_follow_up", at));

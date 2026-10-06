@@ -188,6 +188,34 @@ export const TABLES = {
       ts("lastAttemptAt", "last_attempt_at"), ts("deliveredAt", "delivered_at", true),
     ],
   },
+  partners: {
+    table: "partners",
+    columns: [
+      t("id", "id"), t("slug", "slug"), t("name", "name"), t("org", "org"), t("type", "type"), t("refCode", "ref_code"),
+      t("status", "status"), t("ownerId", "owner_id", true), t("firmId", "firm_id", true), ts("createdAt", "created_at"),
+      d("policySignedDate", "policy_signed_date", true), b("reciprocalAgreementOnFile", "reciprocal_agreement_on_file"),
+      b("agreementNonexclusive", "agreement_nonexclusive"), t("notes", "notes", true),
+    ],
+  },
+  partnerGifts: {
+    table: "partner_gifts",
+    columns: [
+      t("id", "id"), t("partnerId", "partner_id"), d("date", "date"), t("description", "description"),
+      n("valueCents", "value_cents"), t("status", "status"), a("flags", "flags"), t("loggedBy", "logged_by"),
+      t("reviewNote", "review_note", true),
+    ],
+  },
+  partnerReferrals: {
+    table: "partner_referrals",
+    columns: [
+      t("id", "id"), t("partnerId", "partner_id"), t("refCode", "ref_code"), t("leadId", "lead_id", true),
+      ts("createdAt", "created_at"), t("origin", "origin"), b("clientConsent", "client_consent"),
+      b("disclosureGiven", "disclosure_given"), ts("disclosureAt", "disclosure_at", true),
+      t("disclosureVersion", "disclosure_version", true), t("releaseStatus", "release_status"),
+      ts("releaseUpdatedAt", "release_updated_at", true), t("releaseUpdatedBy", "release_updated_by", true),
+      t("valueLinked", "value_linked"), t("valueNote", "value_note", true),
+    ],
+  },
   audit: {
     table: "audit_events",
     columns: [

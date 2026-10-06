@@ -10,7 +10,7 @@ import { audit, verifyAuditChain } from "@/server/audit/log";
 import { PgMfaStore } from "@/server/pg/mfa";
 import { buildCaseView } from "@/server/portal/caseView";
 import type {
-  Activity, Assignment, Comment, Consult, CrmDelivery, DocumentRecord, Seminar, Engagement, Firm, Lawyer, Lead, Person, Task, User,
+  Activity, Assignment, Comment, Consult, CrmDelivery, DocumentRecord, Seminar, Engagement, Firm, Lawyer, Lead, Partner, PartnerGift, PartnerReferral, Person, Task, User,
 } from "@/server/types";
 import type { FeeRuleVersion, Invoice } from "@/server/fees/admin";
 import type { BillableEvent } from "@/lib/fees";
@@ -170,6 +170,20 @@ const fixtures = {
     id: "sem1", code: "trusts101-oct", title: "Trusts 101", format: "library_talk", heldOn: "2026-10-20", venue: "Main library",
     costs: { venue: 0, mail: 45000 }, mailPieces: 500, rsvps: 30, attendees: 21, notes: "n", createdBy: "u-admin", createdAt: T0, updatedAt: T0,
   } satisfies Required<Seminar>,
+  partners: {
+    id: "pt1", slug: "example-cpa", name: "Jordan Example", org: "Example CPA PLLC", type: "cpa", refCode: "ref-example-cpa",
+    status: "active", ownerId: "u-attorney", firmId: "f1", createdAt: T0, policySignedDate: "2026-10-07",
+    reciprocalAgreementOnFile: true, agreementNonexclusive: true, notes: "n",
+  } satisfies Required<Partner>,
+  partnerGifts: {
+    id: "pg1", partnerId: "pt1", date: "2026-12-01", description: "Holiday card", valueCents: 500, status: "flagged",
+    flags: ["f"], loggedBy: "u1", reviewNote: "ok",
+  } satisfies Required<PartnerGift>,
+  partnerReferrals: {
+    id: "pr1", partnerId: "pt1", refCode: "ref-example-cpa", leadId: "l1", createdAt: T0, origin: "partner_form", clientConsent: true,
+    disclosureGiven: true, disclosureAt: T0, disclosureVersion: "v1", releaseStatus: "granted", releaseUpdatedAt: T0,
+    releaseUpdatedBy: "u1", valueLinked: "no", valueNote: "n",
+  } satisfies Required<PartnerReferral>,
   automationState: { id: "automation", cursorSeq: 42, stages: { l1: "offered" }, exits: { l1: "x" } } satisfies Required<AutomationState>,
 };
 
@@ -481,6 +495,32 @@ suite("postgres integration", () => {
     expect(await attorney.seminars.list()).toEqual([]);
     await expect(attorney.seminars.insert({ ...sem, id: "sem-x", code: "x-test" })).rejects.toThrow();
     await expect(service.seminars.insert({ ...sem, id: "sem-dup" })).rejects.toThrow(); // code is unique
+  });
+
+  maybe("partners: admins read and write their firm's partners, gifts are insert-only, nobody else sees them", async () => {
+    await service.partners.insert({ ...fixtures.partners, id: "pt2", slug: "other", refCode: "ref-other", firmId: "f2", ownerId: undefined });
+    const ids = async (s: PgSession) => (await as(s).partners.list()).map((p) => p.id).sort();
+    expect(await ids({ userId: "u-admin", role: "platform_admin" })).toEqual(["pt1", "pt2"]);
+    expect(await ids({ userId: "u-fa", role: "firm_admin", firmId: "f1" })).toEqual(["pt1"]);
+    for (const role of ["marketing", "intake", "attorney", "paralegal", "client"] as const) {
+      expect(await ids({ userId: `u-${role}`, role, firmId: "f1" }), role).toEqual([]);
+      expect(await (as({ userId: `u-${role}`, role, firmId: "f1" }).partnerReferrals.list()), role).toEqual([]);
+      expect(await (as({ userId: `u-${role}`, role, firmId: "f1" }).partnerGifts.list()), role).toEqual([]);
+    }
+    const fa = as({ userId: "u-fa", role: "firm_admin", firmId: "f1" });
+    expect((await fa.partnerGifts.list()).map((g) => g.id)).toEqual(["pg1"]);
+    expect((await fa.partnerReferrals.list()).map((r) => r.id)).toEqual(["pr1"]);
+    await fa.partnerGifts.insert({ ...fixtures.partnerGifts, id: "pg2" });
+    await expect(fa.partnerGifts.update("pg2", { valueCents: 1 })).rejects.toThrow();
+    await expect(as({ userId: "u-fa2", role: "firm_admin", firmId: "f2" }).partnerGifts.insert({ ...fixtures.partnerGifts, id: "pg3" })).rejects.toThrow();
+    const r = await fa.partnerReferrals.update("pr1", { releaseStatus: "revoked" });
+    expect(r.releaseStatus).toBe("revoked");
+    await expect(as({ userId: "u-fa2", role: "firm_admin", firmId: "f2" }).partnerReferrals.update("pr1", { releaseStatus: "granted" })).rejects.toThrow();
+    await expect(fa.partnerReferrals.insert({ ...fixtures.partnerReferrals, id: "pr9", leadId: undefined })).rejects.toThrow();
+    // a partner-submitted referral cannot exist without the client's consent
+    await expect(service.partnerReferrals.insert({ ...fixtures.partnerReferrals, id: "pr8", leadId: undefined, clientConsent: false })).rejects.toThrow();
+    await fa.partners.insert({ ...fixtures.partners, id: "pt3", slug: "third", refCode: "ref-third" });
+    await expect(fa.partners.insert({ ...fixtures.partners, id: "pt4", slug: "fourth", refCode: "ref-fourth", firmId: "f2" })).rejects.toThrow();
   });
 
   maybe("audit_events cannot be updated or deleted", async () => {
