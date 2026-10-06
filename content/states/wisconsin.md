@@ -2,7 +2,7 @@
 state: "Wisconsin"
 abbr: "WI"
 title: "Estate planning in Wisconsin: wills, trusts and probate"
-description: "Wisconsin is a marital property state: two-witness wills, a free will-depositing option, survivorship agreements, transfer-on-death deeds and no estate tax."
+description: "Wisconsin is a marital property state: two-witness wills, a will-depositing option with the register in probate, survivorship agreements, transfer-on-death deeds and no estate tax."
 updated: "2026-10-06"
 answer: >-
   Wisconsin is a marital property state, meaning most property acquired during marriage is owned equally by spouses. Wills need two witnesses, handwritten wills are not recognized, and transfer-on-death deeds are available. There is no state estate or inheritance tax, and small estates can use a transfer by affidavit.

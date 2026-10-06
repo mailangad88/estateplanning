@@ -2,7 +2,7 @@
 state: "Nebraska"
 abbr: "NE"
 title: "Estate planning in Nebraska: wills, trusts and probate"
-description: "Nebraska has a county-level inheritance tax, handwritten wills with a date, TOD deeds and a $100,000 small estate affidavit. Plan your Nebraska estate with these rules."
+description: "Nebraska has a county inheritance tax, dated handwritten wills, TOD deeds and a $100,000 small estate affidavit. Plan your Nebraska estate with these rules."
 updated: "2026-10-06"
 answer: >-
   Nebraska requires two witnesses for a will, accepts fully handwritten and dated wills, and handles probate in county court. Its most unusual feature is a county-level inheritance tax: spouses are exempt, but other heirs can owe tax based on how closely they are related. Nebraska has no state estate tax and allows transfer-on-death deeds.
@@ -48,6 +48,8 @@ Without a will, a surviving spouse takes the first $100,000 plus half of the rem
 Probate happens in county court, and Nebraska's version of the Uniform Probate Code offers informal and formal paths, so many estates proceed with limited court involvement. [Probate timing and cost](/learn/probate/how-long-does-probate-take) depend mostly on creditor deadlines, real estate sales and, in Nebraska, the inheritance tax filing.
 
 Nebraska has two small estate affidavits. One covers personal property and goes straight to whoever holds the asset. The other covers real property: all successors sign it and it is recorded with the register of deeds in the county where the land sits. Both have a 30-day waiting period and, as currently reported, a $100,000 limit that was raised in recent years. Confirm current limits, and see [small estate procedures](/learn/probate/small-estate-affidavit) for how they compare with a full case.
+
+Farmland deserves its own mention. Many Nebraska estates are mostly land, which is hard to divide among children who want different things. A will that simply splits the farm equally can force a sale or leave one child farming with siblings as landlords. Planning options include a trust or entity that holds the land with clear management rules, a buy-out right for the child who farms, and life insurance that equalizes shares for the others. See [passing a family business to children](/learn/business-owners/passing-a-family-business-to-children) and [leaving your home to children](/learn/property-and-assets/leaving-your-home-to-children) for how these choices compare.
 
 ## Trusts and avoiding probate in Nebraska
 

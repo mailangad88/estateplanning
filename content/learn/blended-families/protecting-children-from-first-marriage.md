@@ -1,6 +1,6 @@
 ---
 title: "How to make sure children from a first marriage inherit"
-description: "If you remarry, your spouse may end up with everything and your children with nothing. Here are the tools that guarantee both get provided for."
+description: "If you remarry, your spouse may end up with everything and your children with nothing. Here are the tools that provide for both."
 updated: "2026-10-06"
 answer: >-
   To make sure children from a first marriage inherit, do not leave everything to your new spouse outright. Put assets in a trust that supports your spouse for life and then passes to your children, name the children directly on accounts you want them to receive, and align titles and beneficiary forms with that plan. Without these steps, whatever your spouse receives can be left to anyone.
@@ -40,7 +40,7 @@ Children lose out because almost every default rule favors the surviving spouse,
 
 **Intestacy favors the spouse.** If you die without a will, state law divides your estate. Many states give a spouse everything when all of your children are also the spouse's children. When some children are from another relationship, many states reduce the spouse's share and split the rest with the children, but the numbers vary a great deal. See [what happens if you die without a will](/learn/wills/dying-without-a-will) for the general rules.
 
-**Joint ownership skips your will.** A house or bank account titled as [joint tenancy with right of survivorship](/glossary/joint-tenancy) goes straight to the surviving owner. Your will, however carefully written, never touches it.
+**Joint ownership skips your will.** A house or bank account titled as joint tenancy with right of survivorship goes straight to the surviving owner. Your will, however carefully written, never touches it.
 
 **Beneficiary forms control accounts.** A 401(k), IRA or life insurance policy goes to the person named on the form. Many people name a new spouse at the wedding and never think about it again. For a 401(k) covered by federal law, the spouse is the required beneficiary unless they sign a written waiver.
 
@@ -86,7 +86,7 @@ No option is right for everyone. A couple with a modest estate and one house has
 
 In most states a surviving spouse has minimum rights that your plan cannot simply override. If you leave your spouse less than the minimum, they can usually choose the legal minimum instead.
 
-In most states outside the community property group, this is called the [elective share](/glossary/elective-share) or forced share. Depending on the state, it can be a fixed fraction of the estate or a sliding amount tied to the length of the marriage, and some states count trusts and joint accounts when calculating it. Community property states, including Texas and California, treat most property earned during the marriage as owned half by each spouse, so the starting point is different. See our pages on [Texas](/estate-planning/texas) and [California](/estate-planning/california) for how those states handle it.
+In most states outside the community property group, this is called the [elective share](/glossary/elective-share) or forced share. Depending on the state, it can be a fixed fraction of the estate or a sliding amount tied to the length of the marriage, and some states count trusts and joint accounts when calculating it. Community property states, including Texas and California, treat most property earned during the marriage as owned half by each spouse, so the starting point is different. See our pages on Texas and California for how those states handle it.
 
 A spouse can give up these rights in writing. That is the purpose of many [prenuptial and postnuptial agreements](/learn/blended-families/prenuptial-agreements-and-estate-plans). If you did not sign one, plan around the minimum, because a plan built to disinherit a spouse is likely to be challenged.
 
@@ -98,20 +98,20 @@ A spouse can give up these rights in writing. That is the purpose of many [prenu
 4. **Pick a trustee.** Think about this carefully, as the next section explains.
 5. **Retitle and redesignate.** Change deeds, account titles and beneficiary forms so they follow the plan. Ask your spouse to sign any waiver a retirement plan requires.
 6. **Tell the key people.** Your spouse and children should hear the outline from you rather than discover it at a funeral.
-7. **Review after any life change.** See [when to update your estate plan](/learn/basics/when-to-update-your-estate-plan).
+7. **Review after any life change.** See when to update your estate plan.
 
 ## Who should serve as trustee?
 
 Your trustee decides how much your spouse receives and protects what is left for your children, so the person should not be the one most likely to benefit or lose. If your spouse serves as sole trustee, your children may worry that the principal is being spent. If an adult child serves, your spouse may feel supervised by a stepchild.
 
-Common solutions include a bank or trust company, a trusted friend or relative who is not in the family dispute, or co-trustees where a spouse and a child both must agree on major decisions. Whatever you choose, write clear standards: whether the trustee may spend principal for the spouse's health or comfort, how often the trustee reports to the children, and what happens if the trustee cannot serve. Our guide to [choosing a trustee](/learn/trusts/choosing-a-trustee) goes through the tradeoffs, and the [successor trustee](/glossary/successor-trustee) definition explains who steps in.
+Common solutions include a bank or trust company, a trusted friend or relative who is not in the family dispute, or co-trustees where a spouse and a child both must agree on major decisions. Whatever you choose, write clear standards: whether the trustee may spend principal for the spouse's health or comfort, how often the trustee reports to the children, and what happens if the trustee cannot serve. Our guide to [choosing a trustee](/learn/trusts/choosing-a-trustee) goes through the tradeoffs, and the successor trustee definition explains who steps in.
 
 ## What mistakes undo the plan?
 
 - **Leaving a joint account untouched.** It goes to the survivor no matter what the trust says.
 - **Forgetting the retirement account.** A named spouse inherits it outright and can name new beneficiaries. See [retirement account beneficiaries](/learn/beneficiary-designations/retirement-account-beneficiaries).
 - **Vague language.** "To my family" invites argument. Name people and say how shares are divided.
-- **Not keeping the plan current.** An old will naming an ex-spouse may be partly revoked by divorce, but a will that ignores a new marriage can lead to surprises. See [estate planning after divorce](/learn/life-stages/estate-planning-after-divorce) and [estate planning for newlyweds](/learn/life-stages/estate-planning-for-newlyweds).
+- **Not keeping the plan current.** An old will naming an ex-spouse may be partly revoked by divorce, but a will that ignores a new marriage can lead to surprises. See estate planning after divorce and estate planning for newlyweds.
 
 ## How we can help
 

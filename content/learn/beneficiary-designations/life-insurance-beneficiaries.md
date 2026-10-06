@@ -72,7 +72,7 @@ A trust makes sense when you want to control timing or protect the proceeds. Com
 
 - Your children are young and you want an adult trustee to manage the money until they reach ages you choose.
 - A beneficiary receives means-tested benefits, and a direct inheritance could end eligibility. A special needs trust can avoid that.
-- You have children from more than one relationship and want to guarantee a fair split.
+- You have children from more than one relationship and want to make sure the split is fair.
 - A beneficiary struggles with debt, addiction, or a risky marriage.
 
 If you go this route, make sure the trust is signed and in existence before you name it, and use its exact legal name and date on the form. Our guide to [naming a trust as beneficiary](/learn/beneficiary-designations/naming-a-trust-as-beneficiary) covers the details. For families with large policies, an [irrevocable trust](/learn/trusts/irrevocable-trusts) can also own the policy itself to keep it out of a taxable estate.

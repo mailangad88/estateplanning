@@ -97,7 +97,7 @@ Marcus owns 100 percent of an LLC that runs three coffee shops. He dies with no 
 
 ## What about lenders, leases and licenses?
 
-The company may survive your death, but its contracts may not welcome the change. Bank loans often include a change-of-control clause that lets the lender demand repayment when ownership shifts, and personal guarantees stay with your estate until the lender releases them. Commercial leases may require the landlord's consent to a transfer. Professional or trade licenses, such as a contractor, liquor or medical license, frequently cannot pass to an heir who is not qualified, and the business may have to hire a licensed manager or sell. Ask each lender and landlord what a death or transfer would trigger, and get answers in writing while you can.
+The company may survive your death, but its contracts may not welcome the change. Bank loans often include a change-of-control clause that lets the lender demand repayment when ownership shifts, and loans you personally backed stay with your estate until the lender releases them. Commercial leases may require the landlord's consent to a transfer. Professional or trade licenses, such as a contractor, liquor or medical license, frequently cannot pass to an heir who is not qualified, and the business may have to hire a licensed manager or sell. Ask each lender and landlord what a death or transfer would trigger, and get answers in writing while you can.
 
 ## What should you do now?
 

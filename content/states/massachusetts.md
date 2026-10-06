@@ -2,7 +2,7 @@
 state: "Massachusetts"
 abbr: "MA"
 title: "Estate planning in Massachusetts: wills, trusts and probate"
-description: "Massachusetts estate planning: a $2 million state estate tax threshold, the Uniform Probate Code, voluntary administration and health care proxies."
+description: "Massachusetts estate planning: a $2 million state estate tax threshold, the Uniform Probate Code, voluntary administration and health care proxies explained."
 updated: "2026-10-06"
 answer: >-
   Massachusetts taxes estates above $2 million, one of the lowest thresholds in the country and far below the federal $15 million. It follows the Massachusetts Uniform Probate Code, which offers informal probate, and a voluntary administration for small estates of $25,000 or less. A health care proxy is the state's main medical directive.

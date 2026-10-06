@@ -69,7 +69,7 @@ Assets held in a revocable trust get this step-up because you still owned them a
 
 ## Where can trusts actually reduce taxes?
 
-Some trusts are designed for tax goals, but they are specialized and usually for large estates.
+Some trusts are designed for tax goals, but they are complex and usually for large estates.
 
 - **Credit shelter or bypass trusts** use the first spouse's exemption. With portability available, they matter less for federal tax but may still help in states with their own estate tax or for blended families.
 - **Irrevocable life insurance trusts** keep life insurance proceeds outside the taxable estate.

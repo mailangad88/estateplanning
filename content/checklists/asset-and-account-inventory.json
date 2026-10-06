@@ -1,0 +1,67 @@
+{
+  "title": "Asset and Account Inventory",
+  "description": "Record every account, property, and policy in one place so your executor or trustee can find everything without months of searching.",
+  "intro": "An up-to-date inventory is one of the most useful things you can leave your family. For each item, note where it is held, how it is titled, and who the beneficiary is. Store the list somewhere safe and tell your executor where it is.",
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "sections": [
+    {
+      "heading": "Bank accounts",
+      "items": [
+        "List each checking account with bank name and last four digits",
+        "List each savings and money market account",
+        "List each certificate of deposit and its maturity date",
+        "Note how each account is titled: your name, joint, or trust",
+        "Note any payable-on-death beneficiary"
+      ]
+    },
+    {
+      "heading": "Investments and retirement",
+      "items": [
+        "List each brokerage account with firm name and last four digits",
+        "List each 401(k), 403(b), or other employer plan",
+        "List each traditional and Roth IRA",
+        "List pensions and annuities with contact information",
+        "Note the current primary and contingent beneficiary for each",
+        "List stock options, restricted stock, or employee stock plans"
+      ]
+    },
+    {
+      "heading": "Real estate and vehicles",
+      "items": [
+        "List each property with address and how it is titled",
+        "Note mortgage lender and approximate balance for each property",
+        "List each vehicle, boat, or trailer with title location",
+        "Note any transfer-on-death registration on deeds or vehicles"
+      ]
+    },
+    {
+      "heading": "Insurance",
+      "items": [
+        "List each life insurance policy with insurer, policy number, and death benefit",
+        "Note the owner and beneficiaries of each life policy",
+        "List long-term care, disability, and annuity policies",
+        "List home, auto, and umbrella policies with agent contact"
+      ]
+    },
+    {
+      "heading": "Business and other assets",
+      "items": [
+        "List business interests with ownership percentage and key documents",
+        "List money owed to you, such as personal loans",
+        "List valuable collections, jewelry, art, or firearms",
+        "List cryptocurrency holdings and where access details are stored",
+        "Note any expected inheritance or trust you are a beneficiary of"
+      ]
+    },
+    {
+      "heading": "Debts",
+      "items": [
+        "List each mortgage and home equity loan",
+        "List each credit card with issuer",
+        "List car loans, student loans, and personal loans",
+        "Note any debts you co-signed for someone else"
+      ]
+    }
+  ]
+}

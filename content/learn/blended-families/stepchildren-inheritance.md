@@ -82,6 +82,10 @@ Fairness in a blended family rarely means equal, but it does mean explained. Thr
 
 The last approach needs coordination. If you each leave everything to the other, the survivor controls the result. A trust for the surviving spouse that passes to each side's children avoids that, which is the main purpose of a [QTIP or marital trust](/learn/blended-families/qtip-and-marital-trusts).
 
+## What about stepchildren as executors, trustees and decision-makers?
+
+Naming a stepchild to a role is separate from leaving them property, and it is allowed. A stepchild can be your executor, trustee or agent if you trust them, and some families find a stepchild a good neutral choice between a spouse and biological children. The reverse also happens: a surviving spouse is often the default decision-maker, and stepchildren, who may have little legal standing, can be shut out of decisions about a parent's care or the family home. If you want a stepchild involved, name them in your [healthcare directive](/learn/healthcare-directives/healthcare-power-of-attorney) or power of attorney as an agent or successor, and say so in the document. Roles and gifts should be matched deliberately, so the person you trust with the money is not surprised by what they receive, and the people who inherit are not left without a voice.
+
 ## What about taxes?
 
 The federal estate tax treats stepchildren the same as anyone else: it applies to the estate, not to the heir, and as of 2026 only estates above $15 million per person are affected. See the [federal estate tax exemption](/learn/estate-tax/federal-estate-tax-exemption).
@@ -95,6 +99,10 @@ State inheritance taxes are different. In the few states that tax heirs, rates d
 3. **Check forms.** Make sure beneficiaries on accounts and insurance include stepchildren you intend to provide for.
 4. **Talk to your spouse.** Your plan and theirs should fit together. Stepchildren often depend more on their parent's plan than yours.
 5. **Explain your choices.** A short letter saying why you chose each share heads off more conflict than any clause.
+
+## What if the stepchild has a disability or is a minor?
+
+A gift to a stepchild who is a minor, or who receives government benefits, should be held in trust, not paid outright. The same tools apply as for any child: see [trusts for children](/learn/trusts/trusts-for-children) and [leaving money to minors](/learn/guardianship/leaving-money-to-minors). If a stepchild has a disability, a special needs trust can protect eligibility for benefits. Without a trust, an outright gift can be lost to a guardian's fees, or can end a benefit the stepchild depends on.
 
 ## How we can help
 

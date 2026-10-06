@@ -77,7 +77,7 @@ A common solution is co-trustees: a family member who knows the beneficiaries an
 
 1. **Integrity.** The trustee will have access to money and the power to make decisions that affect others.
 2. **Organization.** Records, deadlines and tax filings are central to the job.
-3. **Financial sense.** They need not be an investment expert, but should be comfortable seeking advice.
+3. **Financial sense.** They need not be investment professionals, but should be comfortable seeking advice.
 4. **Neutrality and backbone.** The ability to disappoint a beneficiary without being cruel.
 5. **Availability and location.** Being close to the property helps, and so does being willing to commit time.
 6. **Age and health.** Pick someone likely to outlast the trust, and name backups.

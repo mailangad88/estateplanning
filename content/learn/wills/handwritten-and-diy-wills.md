@@ -41,7 +41,7 @@ A [holographic will](/glossary/holographic-will) is a will written by the testat
 
 - **How much must be handwritten.** Some states require the entire will in your hand. Others accept a will where the "material provisions," meaning the parts that actually give property away, are handwritten, even if the rest is a printed form.
 - **Witnesses.** Many states that allow holographic wills do not require witnesses. States that do not recognize them at all insist on the standard two witnesses, so a handwritten will signed alone is invalid there.
-- **Proof.** The court has to be satisfied the handwriting and signature are yours. Family members or handwriting experts may be called, which adds time and cost.
+- **Proof.** The court has to be satisfied the handwriting and signature are yours. Family members or handwriting analysts may be called, which adds time and cost.
 
 Even where valid, a handwritten will invites problems. People write when they are stressed, ill or in a hurry, and tend to leave out the pieces a lawyer would add: a backup executor, a residuary clause, a guardian for children, and a direction for what happens if a beneficiary dies first.
 

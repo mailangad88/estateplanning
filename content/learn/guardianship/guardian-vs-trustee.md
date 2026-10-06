@@ -125,6 +125,8 @@ A letter is not binding, but it makes decisions easier and gives both people a v
 - Not telling the trustee they were named
 - Giving the guardian no way to access funds in an emergency
 
+For the bigger picture, see [guide to naming a guardian for your children](/learn/guardianship).
+
 ## How we can help
 
 Setting up the guardian and trustee roles together lets each one work without stepping on the other. An estate planning attorney can draft the nomination, the trust, and the instructions in one coordinated plan. Use our [plan finder](/plan-finder) to see where to begin, or book a consultation to talk through your family's situation.

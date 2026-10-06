@@ -9,7 +9,8 @@ import JsonLd from "@/components/JsonLd";
 import LinkList from "@/components/LinkList";
 import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
-import { getCluster, getClusterArticles, getClusters, getPillar } from "@/lib/content";
+import { getCluster, getClusterArticles, getClusters, getPillar } from "@/lib/library";
+import { siteLinksFor } from "@/lib/site-links";
 import { articleSchema, breadcrumbSchema, faqSchema, graph, itemListSchema } from "@/lib/schema";
 
 type Params = { cluster: string };
@@ -71,6 +72,11 @@ export default async function PillarPage({ params }: { params: Promise<Params> }
       <div className="prose" dangerouslySetInnerHTML={{ __html: p.html }} />
       <Faqs faqs={p.faqs} />
       <CtaBox topic={cluster.name} />
+      <LinkList
+        id="more-on-topic"
+        title={`More on ${cluster.name.toLowerCase()}: guides, comparisons and quick answers`}
+        items={siteLinksFor(slug).map((l) => ({ url: l.url, title: l.title, description: l.kind }))}
+      />
       <nav className="topic-nav" aria-labelledby="more-topics">
         <h2 id="more-topics">More estate planning topics</h2>
         <ul className="chips">

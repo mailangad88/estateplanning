@@ -1,0 +1,252 @@
+[
+  {
+    "category": "Getting started",
+    "q": "Do I need an estate plan if I don't have much money?",
+    "a": "Most estate plans are less about money and more about decisions. A plan names who makes medical and money choices if you cannot, and who raises your children. It also says who receives what you own, even a car or small bank account. Without one, state law and sometimes a court fill in those blanks for you."
+  },
+  {
+    "category": "Getting started",
+    "q": "What documents are in a basic estate plan?",
+    "a": "A typical starting set has five parts. They are a will, a durable financial power of attorney, a health care power of attorney, a living will, and a HIPAA authorization. Many people also add a revocable living trust. Your beneficiary designations on accounts and insurance are part of the plan too, even though they are separate forms."
+  },
+  {
+    "category": "Getting started",
+    "q": "At what age should someone start estate planning?",
+    "a": "Many people start at 18, when parents lose automatic legal authority over their adult child's medical and financial matters. Common triggers after that include marriage, buying a home, having a child, or starting a business. There is no age that is too early for a power of attorney and health care directive."
+  },
+  {
+    "category": "Getting started",
+    "q": "What happens if I die without a will?",
+    "a": "Your state's intestate succession law decides who inherits, usually your spouse and children first, then parents and siblings. A court appoints an administrator, and a judge decides who raises your minor children. Unmarried partners, stepchildren, friends, and charities usually receive nothing under these default rules."
+  },
+  {
+    "category": "Getting started",
+    "q": "Can I write my own will online?",
+    "a": "You can, and some simple situations work out fine. The common problems are missed signing formalities, outdated beneficiary forms that contradict the will, and no plan for incapacity. Many people choose an attorney if they have children, a blended family, property in several states, or a family member with special needs."
+  },
+  {
+    "category": "Getting started",
+    "q": "How long does it take to create an estate plan?",
+    "a": "For many families, the process takes a few weeks from first meeting to signing. Much of that time goes into gathering account information and making decisions about guardians, executors, and beneficiaries. Funding a trust afterward can take a little longer, depending on how many accounts you have."
+  },
+  {
+    "category": "Getting started",
+    "q": "What should I bring to my first meeting with an estate planning attorney?",
+    "a": "A good start is a list of assets and debts, recent statements, any existing wills or trusts, and your beneficiary forms. It also helps to have names and contact details for the people you are considering as guardians, executors, and agents. Our documents-to-gather checklist walks through the full list."
+  },
+  {
+    "category": "Getting started",
+    "q": "How often should I update my estate plan?",
+    "a": "Many attorneys suggest a review every three to five years, and right away after a major life change. Marriage, divorce, a birth, a death, a move to another state, or a big change in assets are common reasons to update. A short review can confirm that names, accounts, and wishes are still current."
+  },
+  {
+    "category": "Wills",
+    "q": "What is the difference between a will and a living will?",
+    "a": "A will says who gets your property and who raises your children after you die. A living will says what medical treatment you want if you are terminally ill or permanently unconscious and cannot speak for yourself. They do very different jobs, and many people have both."
+  },
+  {
+    "category": "Wills",
+    "q": "Does a will avoid probate?",
+    "a": "No. A will is the set of instructions the probate court follows. Assets with a named beneficiary, joint ownership with survivorship, or trust ownership usually pass outside probate, whatever the will says."
+  },
+  {
+    "category": "Wills",
+    "q": "Who should I name as executor?",
+    "a": "People often choose someone organized, trustworthy, and willing to deal with paperwork and family questions. It can be a spouse, adult child, friend, or professional. Some states have extra rules for executors who live out of state, so it is worth asking an attorney licensed in your state."
+  },
+  {
+    "category": "Wills",
+    "q": "Can I leave someone out of my will?",
+    "a": "In most states you can leave out adult children or other relatives, though spouses often have rights to a share. Stating clearly in the will that you are leaving someone out on purpose helps prevent claims that it was a mistake. The rules for spouses and minor children vary by state."
+  },
+  {
+    "category": "Wills",
+    "q": "Where should I keep my original will?",
+    "a": "Common choices are a fireproof home safe, the attorney's office vault, or, in some states, the probate court's will deposit. A bank safe deposit box can be hard for family to open after a death. The key is that your executor knows where it is and can get to it."
+  },
+  {
+    "category": "Wills",
+    "q": "Is a handwritten will valid?",
+    "a": "Only some states accept handwritten, unwitnessed wills, called holographic wills. Even where they are allowed, they are easier to challenge and often leave out key provisions. Ask an attorney licensed in your state whether one would be valid there."
+  },
+  {
+    "category": "Wills",
+    "q": "Can I name a guardian for my children in my will?",
+    "a": "Yes. A will is the usual place to nominate a guardian for minor children, plus a backup. A court makes the final appointment, but judges give a parent's written choice a lot of weight."
+  },
+  {
+    "category": "Trusts",
+    "q": "What is a revocable living trust?",
+    "a": "It is a trust you create and control during your life, and you can change or cancel it at any time. You usually act as your own trustee. When you die or become incapacitated, a successor trustee you chose takes over and manages or distributes the assets without court involvement."
+  },
+  {
+    "category": "Trusts",
+    "q": "Do I need a trust or is a will enough?",
+    "a": "It depends on your situation. People often consider a trust if they own real estate in more than one state or want privacy. Other reasons include young beneficiaries and states where probate is slow or expensive. Our will versus trust comparison lays out the trade-offs."
+  },
+  {
+    "category": "Trusts",
+    "q": "Does a living trust protect my assets from creditors or nursing home costs?",
+    "a": "Generally, no. Because you control a revocable trust, its assets are still treated as yours for creditors and for Medicaid. Asset protection and Medicaid planning usually involve irrevocable trusts and other tools, and the rules vary by state."
+  },
+  {
+    "category": "Trusts",
+    "q": "What does funding a trust mean?",
+    "a": "Funding means moving assets into the trust, usually by retitling accounts and real estate in the trustee's name or naming the trust as beneficiary. A trust only controls what it holds. An unfunded trust may leave your family facing probate anyway."
+  },
+  {
+    "category": "Trusts",
+    "q": "Will a trust save my family taxes?",
+    "a": "A basic revocable trust does not reduce income or estate taxes on its own. Some trusts, such as bypass trusts, life insurance trusts, and charitable trusts, are designed with tax goals in mind. Most families today fall below the federal estate tax exemption, but some states tax estates at much lower levels."
+  },
+  {
+    "category": "Trusts",
+    "q": "What is a special needs trust?",
+    "a": "It is a trust that holds money for a person with a disability without disqualifying them from means-tested benefits like Medicaid or SSI. The trustee pays for things that improve quality of life beyond what benefits cover. Leaving money outright to someone on these benefits can cause them to lose eligibility."
+  },
+  {
+    "category": "Trusts",
+    "q": "Can I be the trustee of my own trust?",
+    "a": "With a revocable living trust, yes, and most people are. You keep managing your accounts and property as before. Your trust names who takes over if you can no longer serve."
+  },
+  {
+    "category": "Incapacity",
+    "q": "What happens if I become unable to make decisions and have no plan?",
+    "a": "Your family may have to ask a court to appoint a guardian or conservator to manage your money and medical care. That process can be slow, public, and costly, and the court may not pick the person you would have chosen. A durable power of attorney and health care directive can often avoid it."
+  },
+  {
+    "category": "Incapacity",
+    "q": "What is the difference between a financial and a health care power of attorney?",
+    "a": "A financial power of attorney lets your agent handle money matters, such as paying bills, managing accounts, and dealing with taxes. A health care power of attorney lets your agent make medical decisions when you cannot. Many people name different people for each role."
+  },
+  {
+    "category": "Incapacity",
+    "q": "Can my spouse make decisions for me without a power of attorney?",
+    "a": "Not always. Spouses often have no automatic right to manage accounts or property titled in the other spouse's name. Some states give spouses limited default authority for medical decisions. The rules vary, and banks may still ask for a power of attorney."
+  },
+  {
+    "category": "Incapacity",
+    "q": "Why do I need a HIPAA authorization?",
+    "a": "Federal privacy rules limit what doctors and hospitals can share, even with family. A HIPAA authorization lets the people you name get information about your condition. Your health care agent and loved ones can then ask questions and make informed decisions."
+  },
+  {
+    "category": "Incapacity",
+    "q": "When does a power of attorney take effect?",
+    "a": "Many take effect as soon as you sign them. A springing power of attorney only takes effect when a stated event happens, usually your incapacity. Proving the event occurred can slow things down. Not every state allows springing powers."
+  },
+  {
+    "category": "Incapacity",
+    "q": "What is a POLST and how is it different from a living will?",
+    "a": "A POLST is a medical order signed by a doctor and the patient that emergency workers and hospitals follow right away. A living will states your wishes in general terms. POLST forms are usually meant for people who are seriously ill or frail, and states use different names for them."
+  },
+  {
+    "category": "Incapacity",
+    "q": "Should my adult children have powers of attorney?",
+    "a": "Once a child turns 18, parents usually lose the legal right to see their medical records or manage their finances. Many families have college-age children sign a durable power of attorney, a health care power of attorney, and a HIPAA authorization. That way a parent can step in quickly after an accident or illness."
+  },
+  {
+    "category": "After a death",
+    "q": "What should we do first after someone dies?",
+    "a": "The first few days usually involve getting a legal pronouncement of death, contacting the funeral home, and notifying close family. Ordering several certified death certificates early saves time later. Our first-30-days checklist lists the next steps in order."
+  },
+  {
+    "category": "After a death",
+    "q": "Do we have to go through probate?",
+    "a": "It depends on what the person owned and how it was titled. Assets in a trust, with a named beneficiary, or owned jointly with survivorship usually pass without probate. Many states have simplified procedures for small estates, and the limits vary by state."
+  },
+  {
+    "category": "After a death",
+    "q": "How long does probate take?",
+    "a": "A simple estate can often be settled in several months, while a complicated or contested one can take a year or more. Timing depends on your state's creditor claim period, court backlog, real estate sales, and tax filings. An attorney licensed in the state where probate is opened can give a better estimate."
+  },
+  {
+    "category": "After a death",
+    "q": "Are family members responsible for the deceased person's debts?",
+    "a": "Generally, family members are not personally responsible for a loved one's debts unless they co-signed or jointly held the account. Debts are paid from the estate before beneficiaries receive anything. Some states have rules for spouses and certain medical or nursing home costs, so it helps to get advice before paying anything."
+  },
+  {
+    "category": "After a death",
+    "q": "What does an executor actually do?",
+    "a": "The executor gathers and protects assets, notifies creditors, pays valid debts and taxes, keeps records, and distributes what is left according to the will. Most of the work is paperwork, phone calls, and patience. Our executor workload tool gives a sense of the tasks involved."
+  },
+  {
+    "category": "After a death",
+    "q": "How do we access a loved one's bank account after they die?",
+    "a": "If the account has a payable-on-death beneficiary, that person usually claims it with a death certificate and ID. Otherwise, the bank typically asks for letters testamentary or letters of administration from the probate court, or a small estate affidavit where allowed. Joint owners with survivorship rights usually keep access."
+  },
+  {
+    "category": "After a death",
+    "q": "Does a trust need to be settled after a death?",
+    "a": "Yes. The successor trustee takes over, gathers trust assets, pays final bills and taxes, and distributes property under the trust's terms. It usually happens without court supervision, but the trustee still has legal duties and often must notify beneficiaries."
+  },
+  {
+    "category": "Cost and process",
+    "q": "How much does an estate plan cost?",
+    "a": "Prices depend on what the plan includes. Key factors are whether it has a trust, how many documents are involved, and your family situation. Many firms quote a flat fee for each package so you know the cost upfront. Our current fees are [firm placeholder: flat fee schedule], and we confirm the exact fee before any work begins."
+  },
+  {
+    "category": "Cost and process",
+    "q": "What is a flat fee and what does it include?",
+    "a": "A flat fee is a set price for a defined scope of work, agreed on before the work starts. It usually covers the design meeting, drafting, revisions, and the signing meeting, so you are not billed for every phone call. Our flat fee includes [firm placeholder: list of included services]."
+  },
+  {
+    "category": "Cost and process",
+    "q": "What is not included in a flat fee?",
+    "a": "Flat fees usually cover a defined plan, so work outside that scope may be priced separately. Common examples include recording deeds, transferring business interests, or later amendments. We list these in writing before you sign an engagement letter: [firm placeholder: excluded services and how they are priced]."
+  },
+  {
+    "category": "Cost and process",
+    "q": "How does the estate planning process work?",
+    "a": "It usually starts with an initial consultation to understand your family and goals. Next comes a design meeting to make decisions, then drafts for your review. After that come a signing meeting and help funding any trust. Each step is explained before you move to the next."
+  },
+  {
+    "category": "Cost and process",
+    "q": "How many meetings will I need?",
+    "a": "Many plans take two or three meetings: an initial consultation, a design meeting, and a signing meeting. Some of these can happen by video, though signing often happens in person because of witness and notary rules. Our typical schedule is [firm placeholder: meeting format and timeline]."
+  },
+  {
+    "category": "Cost and process",
+    "q": "How much does probate cost compared to setting up a trust?",
+    "a": "Probate costs include court fees, attorney fees, and sometimes executor commissions, and some states set fees by statute based on the estate's value. A trust usually costs more upfront but can reduce costs and delays later. Our probate cost estimator can give a rough comparison for your situation."
+  },
+  {
+    "category": "Cost and process",
+    "q": "Do I have to pay for updates later?",
+    "a": "Small updates, such as changing an executor, often cost less than a full new plan. Some firms offer review or maintenance programs for a set fee. Our approach to updates is [firm placeholder: update and review policy]."
+  },
+  {
+    "category": "Working with us",
+    "q": "How do I book a consultation?",
+    "a": "You can start by answering a few questions in our plan finder at /plan-finder. It helps us understand your goals before we talk. From there, you can choose a time for an initial consultation. Our consultation details are [firm placeholder: consult length, format, and any fee]."
+  },
+  {
+    "category": "Working with us",
+    "q": "Can we meet by video instead of in person?",
+    "a": "Many parts of the process work well by video, including the first consultation and design meeting. Signing usually happens in person, because many states have specific witness and notary requirements. Our meeting options are [firm placeholder: in-person, video, and phone options]."
+  },
+  {
+    "category": "Working with us",
+    "q": "Which states do you serve?",
+    "a": "Estate planning documents are governed by state law, so an attorney usually needs to be licensed in your state. If you own property in another state, we may coordinate with a local attorney there. We are licensed in [firm placeholder: states of licensure]."
+  },
+  {
+    "category": "Working with us",
+    "q": "Will my information be kept confidential?",
+    "a": "What you share with an attorney while seeking legal advice is generally protected by attorney-client privilege and professional confidentiality rules. That protection lets you speak openly about family, money, and health. Our privacy and data security practices are described at [firm placeholder: privacy policy link]."
+  },
+  {
+    "category": "Working with us",
+    "q": "Can my spouse and I use the same attorney?",
+    "a": "Many married couples plan together with one attorney, which is common and often efficient. The attorney will usually explain how joint representation works, including how information is shared between spouses. If your interests conflict in a serious way, separate attorneys may be suggested."
+  },
+  {
+    "category": "Working with us",
+    "q": "What happens after my documents are signed?",
+    "a": "You receive your original documents and copies, along with instructions on where to keep them and who should have copies. If you have a trust, the next step is funding it by retitling accounts and updating beneficiaries. Our post-signing support includes [firm placeholder: funding help and follow-up]."
+  },
+  {
+    "category": "Working with us",
+    "q": "What are your office hours and how do I reach you?",
+    "a": "Our office hours are [firm placeholder: office hours]. You can reach us at [firm placeholder: phone and email]. We aim to respond to messages within [firm placeholder: response time]."
+  }
+]

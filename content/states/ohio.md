@@ -37,7 +37,7 @@ Ohio's probate system is built around county probate courts that are used to wor
 
 ## Wills in Ohio
 
-An Ohio will must be in writing, signed at the end by you, and witnessed by two competent people who see you sign or hear you acknowledge the signature, and who sign in your conscious presence. Telephone or video presence does not count. A notary is not required, and since Ohio has no self-proving affidavit, the witnesses' signatures are what the probate court looks to. See [how to make a valid will](/learn/wills/how-to-make-a-valid-will). Choosing witnesses who do not inherit avoids a statutory presumption against any gift to a witness.
+An Ohio will must be in writing, signed at the end by you, and witnessed by two competent people who see you sign or hear you acknowledge the signature, and who sign in your conscious presence. Telephone or video presence does not count. A notary is not required, and since Ohio has no self-proving affidavit, the witnesses' signatures are what the probate court looks to. See [how to make a valid will](/learn/wills/how-to-make-a-valid-will). Choosing witnesses who do not inherit avoids the risk that a gift to a witness is voided.
 
 Handwriting is no substitute for witnesses here. Ohio does not recognize [holographic wills](/glossary/holographic-will). A limited rule lets the probate court admit a defective will when clear and convincing evidence shows that the will was prepared by the testator and signed in front of two witnesses, but the two-witness signing itself cannot be waived. Read [handwritten and DIY wills](/learn/wills/handwritten-and-diy-wills).
 

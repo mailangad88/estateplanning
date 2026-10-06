@@ -102,7 +102,7 @@ The process is short.
 3. **Make it effective immediately.** A release that waits for incapacity can bring back the same delay problem.
 4. **Choose a duration.** Federal rules require an expiration date or event. Common choices are a number of years or "until revoked in writing." Some providers reject open-ended forms, so be ready to update.
 5. **Sign and date it.** Witnesses are not required by federal law, but a notary can help, and some providers prefer it.
-6. **Give copies** to each named person, your primary doctor and any specialists, and ask them to add it to your chart.
+6. **Give copies** to each named person, your primary doctor and any other doctors you see regularly, and ask them to add it to your chart.
 7. **Review it** every few years and after any change in relationships.
 
 Where there are multiple providers, you may have to deliver the form to each one. Patient portals also let you add authorized contacts.

@@ -129,7 +129,7 @@ For adult heirs who face lawsuits, divorce, debt or addiction, a trust with a [s
 
 Usually not. A revocable living trust is ignored for income tax and estate tax. Your income is reported on your own return and the trust assets are counted in your estate. The benefit you do get, the [step-up in basis](/glossary/step-up-in-basis) at death, comes from owning assets until you die, whether or not they are in a trust.
 
-Some irrevocable trusts are designed to reduce estate tax, but they are specialized and mostly relevant for estates near or above the exemption. Our article [does a living trust save taxes? Common myths about trusts](/learn/trusts/does-a-trust-avoid-taxes) goes through the common misunderstandings, the federal numbers for 2026 and where trusts can create tax problems, such as retained income taxed at compressed rates. For the full tax picture, see the [federal estate tax exemption](/learn/estate-tax/federal-estate-tax-exemption) and [state estate and inheritance taxes](/learn/estate-tax/state-estate-and-inheritance-taxes).
+Some irrevocable trusts are designed to reduce estate tax, but they are complex and mostly relevant for estates near or above the exemption. Our article [does a living trust save taxes? Common myths about trusts](/learn/trusts/does-a-trust-avoid-taxes) goes through the common misunderstandings, the federal numbers for 2026 and where trusts can create tax problems, such as retained income taxed at compressed rates. For the full tax picture, see the [federal estate tax exemption](/learn/estate-tax/federal-estate-tax-exemption) and [state estate and inheritance taxes](/learn/estate-tax/state-estate-and-inheritance-taxes).
 
 ## What are the most common trust mistakes?
 

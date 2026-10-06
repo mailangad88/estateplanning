@@ -16,7 +16,7 @@ faqs:
   - q: "Can a spendthrift trust protect against divorce?"
     a: "Often, to a degree. If the trust is discretionary and the beneficiary has no right to demand money, a divorcing spouse generally cannot compel distributions, though courts may consider the beneficiary's income when setting support. Results depend on state law and the trust terms."
   - q: "Can I put my own assets in a trust to protect them from creditors?"
-    a: "Only in limited ways. Most states do not protect assets you place in a trust for your own benefit. A minority of states authorize domestic asset protection trusts under strict conditions. These are specialized, and transfers to defeat existing creditors can be undone."
+    a: "Only in limited ways. Most states do not protect assets you place in a trust for your own benefit. A minority of states authorize domestic asset protection trusts under strict conditions. These are complex, and transfers to defeat existing creditors can be undone."
   - q: "Does a spendthrift trust protect assets from the IRS?"
     a: "Generally not. Federal tax liens and some federal claims can reach a beneficiary's interest despite a spendthrift clause. Child support and alimony claims also commonly override it."
   - q: "How long does the protection last?"
@@ -63,7 +63,7 @@ A fully discretionary trust gives the strongest shield because a creditor can on
 - **A beneficiary with creditor or lawsuit exposure,** such as a physician, a business owner or a contractor.
 - **A beneficiary in a troubled marriage,** since a lifetime trust can keep an inheritance separate from marital property. Courts may still count the beneficiary's access to the trust when setting support, so results vary.
 - **A beneficiary with addiction or spending problems,** where discretion lets the trustee pay for housing and treatment but not cash.
-- **A beneficiary with a disability.** A [special needs trust](/learn/special-needs/special-needs-trust) is a specialized form that also protects benefits eligibility.
+- **A beneficiary with a disability.** A [special needs trust](/learn/special-needs/special-needs-trust) is a particular form that also protects benefits eligibility.
 - **A young adult,** where the same concept applies; see [trusts for children](/learn/trusts/trusts-for-children).
 - **A surviving spouse in a second marriage,** where a trust can protect the principal for children from an earlier marriage. See [protecting children from a first marriage](/learn/blended-families/protecting-children-from-first-marriage).
 

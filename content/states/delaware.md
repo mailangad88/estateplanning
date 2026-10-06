@@ -27,7 +27,7 @@ faqs:
   - q: "Does a will have to be notarized in Delaware?"
     a: "No. Delaware requires the testator's signature and two witnesses. A notary only comes in for an optional self-proving affidavit."
   - q: "What is a Delaware asset protection trust?"
-    a: "Delaware law allows a person to put assets in an irrevocable trust for their own benefit and, after a waiting period, shield those assets from future creditors. These trusts are specialized, require a Delaware trustee and are not meant for most families."
+    a: "Delaware law allows a person to put assets in an irrevocable trust for their own benefit and, after a waiting period, shield those assets from future creditors. These trusts are complex, require a Delaware trustee and are not meant for most families."
   - q: "How long does probate take in Delaware?"
     a: "A typical administration runs about six months to a year. Delaware allows creditors to file claims for a limited period after the notice is published, and the estate usually cannot close before that period ends."
 related: ["probate", "trusts/irrevocable-trusts", "trusts/revocable-living-trust", "wills/how-to-make-a-valid-will", "estate-tax/state-estate-and-inheritance-taxes"]
@@ -51,7 +51,7 @@ Delaware residents who also own property in another state should plan for ancill
 
 ## Trusts and avoiding probate in Delaware
 
-Delaware has adopted the Uniform Trust Code and has one of the most trust-friendly legal systems in the country. Features like asset protection trusts, directed trusts and dynasty trusts that can last for generations attract families from other states, but they are specialized tools. See irrevocable trusts and does a trust avoid taxes for the tradeoffs.
+Delaware has adopted the Uniform Trust Code and has one of the most trust-friendly legal systems in the country. Features like asset protection trusts, directed trusts and dynasty trusts that can last for generations attract families from other states, but they are complex tools. See irrevocable trusts and does a trust avoid taxes for the tradeoffs.
 
 For most Delaware families, a [revocable living trust](/learn/trusts/revocable-living-trust) plus beneficiary designations is enough ([how to fund a trust](/learn/trusts/how-to-fund-a-trust)). Joint ownership and payable-on-death accounts also bypass probate; see how to avoid probate. Whether Delaware offers a transfer-on-death deed is a point to confirm with a Delaware attorney.
 

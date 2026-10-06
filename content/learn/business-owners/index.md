@@ -103,7 +103,7 @@ This is the section that matters most. Business owners typically have two sets o
 - **Power of attorney.** Whether the agent has business powers and whether the company recognizes the agent.
 - **Beneficiary designations and insurance.** Whether policies are owned and payable the way the buy-sell requires. The [beneficiary designation guide](/learn/beneficiary-designations) explains why these forms override wills.
 - **Spousal documents.** Consents, prenuptial or postnuptial agreements and community property considerations.
-- **Personal guarantees and loans.** Whether lenders can call a note on a change of control.
+- **Loans you signed for personally.** Whether lenders can call a note on a change of control.
 
 When documents conflict, the contract usually beats the will for the business interest, and the beneficiary form beats the will for the insurance. That is how a plan that looks fine on paper ends up distributing the opposite of what you intended.
 

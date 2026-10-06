@@ -6,7 +6,7 @@ import CtaBox from "@/components/CtaBox";
 import JsonLd from "@/components/JsonLd";
 import LinkList from "@/components/LinkList";
 import PageMeta from "@/components/PageMeta";
-import { findByUrl, getBacklinks, getGlossary, getGlossaryEntry, refToUrl } from "@/lib/content";
+import { findByUrl, getBacklinks, getGlossary, getGlossaryEntry, refToUrl } from "@/lib/library";
 import { breadcrumbSchema, definedTermSchema, graph } from "@/lib/schema";
 
 type Params = { term: string };

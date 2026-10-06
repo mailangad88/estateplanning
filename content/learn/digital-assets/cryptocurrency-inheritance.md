@@ -92,7 +92,7 @@ For example, Omar, 45, holds Bitcoin on an exchange and in a hardware wallet. Hi
 
 ## What should an heir do if the owner has died?
 
-Act carefully and do not guess. Search paper and digital records for exchange statements and tax forms. Look for hardware devices, handwritten word lists or unusual metal plates. Avoid entering random passwords on exchanges, which can lock the account. Protect what you find and secure the devices. Then work through the exchange's deceased-account process with an attorney's help, since they require court-issued authority and may take weeks. If a hardware wallet is found without the seed, a specialist may be able to help, but beware of anyone who contacts you offering to recover coins for an upfront fee, which is a common scam. Our guide to [executor duties](/learn/after-a-death/executor-duties) covers the wider process.
+Act carefully and do not guess. Search paper and digital records for exchange statements and tax forms. Look for hardware devices, handwritten word lists or unusual metal plates. Avoid entering random passwords on exchanges, which can lock the account. Protect what you find and secure the devices. Then work through the exchange's deceased-account process with an attorney's help, since they require court-issued authority and may take weeks. If a hardware wallet is found without the seed, a reputable wallet recovery service may be able to help, but beware of anyone who contacts you offering to recover coins for an upfront fee, which is a common scam. Our guide to [executor duties](/learn/after-a-death/executor-duties) covers the wider process.
 
 ## How we can help
 

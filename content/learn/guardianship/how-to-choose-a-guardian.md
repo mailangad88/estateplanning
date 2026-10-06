@@ -119,6 +119,8 @@ Look again every three to five years, and any time something major changes: a di
 - Leaving the guardian with no money or access to funds
 - Never updating after a move or a death in the family
 
+For the bigger picture, see [guide to naming a guardian for your children](/learn/guardianship).
+
 ## How we can help
 
 Choosing a guardian is a family decision, and a lawyer cannot make it for you. An estate planning attorney can help you write a nomination that is clear and flexible, pair it with a trust for the children's money, and adjust it as life changes. You can start with our [plan finder](/plan-finder) or book a consultation when you are ready.

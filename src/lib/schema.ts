@@ -1,6 +1,6 @@
 import { firm } from "@/config/firm";
 import { absoluteUrl, site } from "@/config/site";
-import type { Article, City, Faq, GlossaryEntry, StateGuide } from "@/lib/content";
+import type { Article, City, Faq, GlossaryEntry, StateGuide } from "@/lib/library";
 
 /**
  * schema.org JSON-LD builders. Entities reference each other by @id so search engines and

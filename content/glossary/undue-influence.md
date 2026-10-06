@@ -1,6 +1,6 @@
 ---
 term: "Undue influence"
-short: "Undue influence is manipulation by someone in a position of trust that overpowers a person's free will and leads them to sign a will or trust they otherwise would not."
+short: "Undue influence is manipulation by someone in a position of trust that overpowers a person's own judgment and leads them to sign a will or trust they otherwise would not."
 also: ["Improper influence"]
 seeAlso: ["testamentary-capacity", "no-contest-clause", "testator"]
 related: ["wills/contesting-a-will", "elder-care/elder-financial-abuse", "wills/how-to-make-a-valid-will"]

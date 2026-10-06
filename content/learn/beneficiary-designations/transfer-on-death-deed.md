@@ -114,6 +114,8 @@ A TOD deed is a good fit for a single home going to one adult child. A trust is 
 
 The beneficiary does not have to open a probate case, but they do have to act. In most states they record a certified death certificate and, often, an affidavit or similar form with the county recorder, within a period the statute sets. Some states give creditors or other interested parties a window to object. Until the paperwork is recorded, the house may be hard to sell or insure in the beneficiary's name. The beneficiary should also contact the mortgage servicer, change the property insurance, and keep paying property taxes. If several beneficiaries inherit, they should agree early on who handles the sale or upkeep. Sorting this out before the death, through a conversation or a written family plan, saves a great deal of stress.
 
+For the bigger picture, see [guide to beneficiary designations](/learn/beneficiary-designations).
+
 ## How we can help
 
 Whether a TOD deed, a trust, or something else fits your home depends on your state, your family, and your long-term care plans. Our attorneys can walk through the options with you. Start with the [plan finder](/plan-finder) or book a consultation.

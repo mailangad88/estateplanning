@@ -1,0 +1,56 @@
+{
+  "title": "Trust Funding Checklist",
+  "description": "Track each asset as you move it into your living trust or point it to the trust, so the trust controls what it should.",
+  "intro": "A trust only controls the assets it holds. After signing, each account and property is either retitled in the trustee's name or set to pass to the trust at death. Work through this list with your attorney and check off each item as it is done.",
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "sections": [
+    {
+      "heading": "Real estate",
+      "items": [
+        "Sign and record a new deed for your home into the trust",
+        "Sign and record deeds for rental or vacation property",
+        "Record deeds for out-of-state property in that state's county",
+        "Notify your homeowner's insurer and add the trust as an insured",
+        "Ask your lender whether any notice is needed"
+      ]
+    },
+    {
+      "heading": "Bank and investment accounts",
+      "items": [
+        "Retitle checking and savings accounts in the trustee's name, or add a payable-on-death to the trust",
+        "Retitle brokerage accounts in the trustee's name",
+        "Retitle certificates of deposit at renewal or with the bank's form",
+        "Update any automatic transfers that depend on account titles"
+      ]
+    },
+    {
+      "heading": "Retirement accounts and insurance",
+      "items": [
+        "Ask your attorney whether to name the trust as beneficiary of each retirement account",
+        "Do not retitle retirement accounts into the trust, since that can trigger tax",
+        "Update life insurance beneficiaries if the plan calls for the trust",
+        "Update annuity beneficiaries where appropriate"
+      ]
+    },
+    {
+      "heading": "Business and other assets",
+      "items": [
+        "Assign LLC or partnership interests to the trust, checking the operating agreement first",
+        "Transfer corporate stock certificates to the trust",
+        "Sign a general assignment of personal property to the trust",
+        "Decide how vehicles will pass, since some states offer transfer-on-death titles",
+        "Assign promissory notes owed to you to the trust"
+      ]
+    },
+    {
+      "heading": "Wrap-up",
+      "items": [
+        "Keep a list of every asset and its funding status",
+        "Store confirmations with your trust document",
+        "Title new assets in the trust's name when you acquire them",
+        "Review funding once a year"
+      ]
+    }
+  ]
+}

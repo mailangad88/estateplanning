@@ -46,7 +46,7 @@ The answer depends on how the business is organized, but the problem is the same
 |---|---|---|
 | Sole proprietorship | No legal separation between you and the business; bank accounts and contracts are in your name | A court-appointed conservator or guardian |
 | Single-member LLC | You are the only member and manager | Court-appointed conservator may take control of the membership interest |
-| Multi-member LLC or partnership | Partners can run it but may lack authority over your share or your personal guarantees | Partners continue; your interest and any guarantees remain exposed |
+| Multi-member LLC or partnership | Partners can run it but may lack authority over your share or loans you personally backed | Partners continue; your interest and any loans you personally backed remain exposed |
 | Corporation | Board and officers continue, but if you are the sole director or president, no one can sign | Remaining directors fill the gap if bylaws allow; otherwise, shareholders may need a meeting |
 
 If a court has to step in, the process is public, slow and costly. A [conservatorship](/glossary/conservatorship) (called guardianship of the estate in some states) can take weeks or months to establish, and the conservator may be a stranger and may be subject to court reporting and approval of major decisions. Our article on [power of attorney vs. guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship) explains why signing documents early avoids that.
@@ -84,7 +84,7 @@ You can name co-agents or a separate agent for business decisions. For high-stak
 Legal documents give authority. They do not tell your agent where anything is. Prepare a short emergency binder or secure digital folder, updated twice a year, with:
 
 - Names and numbers for your attorney, accountant, banker, insurance agent and key customers and vendors
-- Bank accounts, credit lines, loan agreements and personal guarantees
+- Bank accounts, credit lines, loan agreements and any loans you personally backed
 - Where the entity documents, EIN letter, licenses, leases and insurance policies are kept
 - Payroll provider, tax calendar and upcoming deadlines
 - Password manager access and a plan for two-factor authentication (see our article on [passwords and access](/learn/digital-assets/passwords-and-access))

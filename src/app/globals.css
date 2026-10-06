@@ -64,9 +64,88 @@ label.field input, label.field select, label.field textarea {
 .notice { font-size: 0.85rem; color: var(--muted); }
 .hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 
+/* Navigation */
+nav.main { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; font-size: 0.95rem; }
+nav.main a { text-decoration: none; color: var(--text); }
+nav.main a.button { color: var(--accent-ink); padding: 8px 14px; }
+.wide { max-width: 1080px; }
+
+/* Page furniture */
+.page-header { margin-bottom: 24px; }
+.crumbs { font-size: 0.85rem; color: var(--muted); margin-top: 24px; }
+.crumbs a { color: var(--muted); }
+.meta { font-size: 0.85rem; color: var(--muted); margin: 4px 0 16px; }
+.answer { background: var(--surface); border-left: 4px solid var(--accent); border-radius: 6px; padding: 14px 18px; margin: 16px 0 24px; }
+.answer strong { display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); margin-bottom: 4px; }
+.toc { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 18px; margin: 16px 0 24px; }
+.toc summary { font-weight: 600; cursor: pointer; }
+.toc ol { margin: 8px 0 0; padding-left: 20px; }
+.prose h2 { scroll-margin-top: 16px; }
+.prose img { max-width: 100%; }
+.table-wrap { overflow-x: auto; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--surface); }
+details.faq { border-bottom: 1px solid var(--border); padding: 10px 0; }
+details.faq summary { font-weight: 600; cursor: pointer; }
+.cta { background: var(--surface); border: 1px solid var(--accent); border-radius: 10px; padding: 20px; margin: 40px 0; }
+.cta p { margin: 6px 0 14px; }
+.cards { list-style: none; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.card-link { display: flex; flex-direction: column; gap: 4px; height: 100%; padding: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--text); }
+.card-link:hover { border-color: var(--accent); }
+.card-desc { font-size: 0.88rem; color: var(--muted); }
+.tag { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); font-weight: 700; }
+.pill-row { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; }
+.pill-row a { display: inline-block; padding: 4px 10px; border: 1px solid var(--border); border-radius: 999px; text-decoration: none; font-size: 0.85rem; }
+.hero { padding: 24px 0 8px; }
+.stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 24px 0; }
+.stat-row div { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 14px; }
+.stat-row strong { display: block; font-size: 1.5rem; }
+
+/* Tools */
+.tool { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin: 16px 0; }
+.tool .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.result { background: var(--bg); border: 1px dashed var(--accent); border-radius: 8px; padding: 14px 16px; margin-top: 16px; }
+.result .big { font-size: 1.6rem; font-weight: 700; }
+.bar { height: 14px; background: var(--border); border-radius: 7px; overflow: hidden; }
+.bar span { display: block; height: 100%; background: var(--accent); }
+
+/* Checklists */
+.checklist li { list-style: none; margin: 6px 0; }
+.checklist label { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+.checklist input { margin-top: 6px; }
+.checklist ul { padding-left: 0; }
+.no-print {}
+@media print {
+  header.site, footer.site, .no-print, .cta, nav.main { display: none !important; }
+  body { background: #fff; color: #000; font-size: 12pt; }
+  .checklist input { width: 14px; height: 14px; }
+}
+
+/* Glossary */
+.az { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0; }
+.az a { padding: 2px 8px; border: 1px solid var(--border); border-radius: 4px; text-decoration: none; }
+dl.glossary dt { font-weight: 700; margin-top: 18px; scroll-margin-top: 16px; }
+dl.glossary dd { margin: 4px 0 0; }
+
+/* Explainers */
+.player-wrap { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin: 16px 0; background: #fff; }
+
+/* Lead capture */
+.sticky-bar { display: none; }
+@media (max-width: 800px) {
+  .sticky-bar { display: grid; grid-template-columns: 1fr 1fr 2fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; background: var(--surface); border-top: 1px solid var(--border); }
+  .sticky-bar a { text-align: center; padding: 14px 6px; font-weight: 600; text-decoration: none; }
+  .sticky-bar a:last-child { background: var(--accent); color: var(--accent-ink); }
+  body { padding-bottom: 56px; }
+  nav.main a:not(.button) { display: none; }
+  nav.main a.nav-keep { display: inline; }
+}
+.modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 100; padding: 16px; }
+.modal { background: var(--bg); border-radius: 12px; max-width: 560px; width: 100%; padding: 24px; position: relative; max-height: 90vh; overflow: auto; }
+.modal-close { position: absolute; top: 8px; right: 12px; background: none; border: 0; font-size: 1.6rem; cursor: pointer; color: var(--text); }
+
 /* ---------- content pages (learn, glossary, state guides) ---------- */
-.site-nav { display: flex; gap: 16px; flex-wrap: wrap; font-size: 0.95rem; }
-.site-nav a { text-decoration: none; }
 .breadcrumbs ol { list-style: none; padding: 0; margin: 24px 0 0; display: flex; flex-wrap: wrap; gap: 4px; font-size: 0.85rem; color: var(--muted); }
 .breadcrumbs li + li::before { content: "›"; margin-right: 4px; }
 .content h1 { margin-top: 16px; }
@@ -74,7 +153,7 @@ label.field input, label.field select, label.field textarea {
 .review-badge { display: inline-block; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; padding: 2px 8px; border: 1px solid var(--border); border-radius: 999px; margin-right: 6px; }
 .answer-box { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 8px; padding: 16px 20px; margin: 24px 0; }
 .answer-box .answer-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin: 0 0 6px; }
-.answer-box .answer { font-size: 1.05rem; margin: 0; }
+.answer-box .answer { font-size: 1.05rem; margin: 0; padding: 0; background: none; border: 0; border-radius: 0; }
 .takeaways { margin: 12px 0 0; padding-left: 20px; }
 .toc { border: 1px solid var(--border); border-radius: 8px; padding: 12px 20px; margin: 24px 0; font-size: 0.95rem; }
 .toc-title { font-weight: 600; margin: 0 0 4px; }

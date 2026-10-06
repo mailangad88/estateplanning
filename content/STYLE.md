@@ -1,88 +1,28 @@
-# Content guide
+# Content style guide (for every page on the site)
 
-Every page in `content/` is written for a real person who is worried about their family, and for search
-engines and AI answer engines that quote pages they trust. Those goals point the same way: answer the
-question plainly and early, then go deep, be specific, be accurate, and link to the next thing a reader needs.
-
-All content is general education from a law firm's marketing site. It is **pending attorney review** and is
-not legal advice. The firm is the publisher. Do not mention referrals, networks, matching, partner attorneys,
-or fees being shared. Say "our attorneys" or "an estate planning attorney".
-
-## File format
-
-Markdown with YAML frontmatter. Pillars are `content/learn/{cluster}/index.md`; articles are
-`content/learn/{cluster}/{slug}.md`. The slug and title come from `content/topic-map.json` (you may polish the
-title wording, but keep the slug exactly).
-
-```yaml
----
-title: "What happens if you die without a will (intestate succession)"
-description: "150-160 characters. A specific, plain summary that makes someone want to click. No clickbait."
-updated: "2026-10-06"
-answer: >-
-  40-70 words. A direct, self-contained answer to the title's question that an AI assistant or featured
-  snippet could quote word for word. Start with the answer, not a preamble. No "it depends" without saying on what.
-takeaways:
-  - "3-5 short key takeaways, each a complete sentence."
-faqs:
-  - q: "A real question people search for, phrased the way they type it?"
-    a: "A 2-4 sentence answer that stands on its own."
-  # 4-6 FAQs. Do not repeat the same question on another page.
-related:
-  - "wills/choosing-an-executor"   # 3-6 cluster/slug references (pillar is "cluster" alone, e.g. "probate")
-glossary: ["intestate", "heir"]     # 2-8 glossary slugs from content/glossary-terms.json used on this page
----
-```
-
-## Body
-
-- No H1 in the body (the title is the H1). Use `##` for sections and `###` for subsections.
-- Articles: 1,200 to 2,000 words. Pillars: 2,000 to 3,000 words and they must link to **every** article in
-  their cluster with a sentence explaining what it covers, plus link to 3+ other pillars.
-- Open with 1-2 short paragraphs that restate the reader's situation and what they will learn. Then the meat.
-- Use question-shaped `##` headings where natural ("How long does probate take?"), because people and AI
-  assistants search in questions. Put the direct answer in the first sentence under each heading.
-- Include at least one of: a numbered step list, a comparison table (Markdown table), or a checklist.
-- Use concrete, realistic examples with invented first names ("Maria, 58, owns a house and a 401(k)...").
-- Explain where state law differs ("In most states...", "Some states, including X and Y, ..."). Only name a
-  specific state's rule when you are confident it is right; otherwise describe the variation generally.
-- End with a `## How we can help` section of 2-4 sentences that invites the reader to use the
-  [plan finder](/plan-finder) or book a consultation. Calm, no pressure, no urgency tricks, no guarantees.
-
-## Links (this is what makes the site an interlinked engine)
-
-- 5-12 internal links per article, written inline where they help the reader, using descriptive anchor text
-  (never "click here"). Link format is root-relative:
-  - Pillar: `/learn/{cluster}`; article: `/learn/{cluster}/{slug}`
-  - Glossary: `/glossary/{slug}` (only slugs in `content/glossary-terms.json`)
-  - State guides: `/estate-planning/{state-slug}` e.g. `/estate-planning/texas` (lowercase, hyphenated name)
-  - Plan finder: `/plan-finder`
-- Always link the article's own pillar at least once, and at least 2 articles in other clusters.
-- Only link slugs that exist in `content/topic-map.json`. A test fails the build on any broken link.
-- No external links except to primary government sources when genuinely useful (irs.gov, ssa.gov,
-  medicaid.gov, a state legislature or court site). No links to competitors or other law firms.
-
-## Facts to keep consistent across the site
-
-- Federal estate and gift tax basic exclusion: **$15,000,000 per person in 2026** (set by the 2025 tax law,
-  indexed for inflation after 2026; no scheduled sunset). Married couples can shelter $30 million with portability.
-- Gift tax annual exclusion: **$19,000 per recipient in 2026**.
-- Top federal estate tax rate: 40%.
-- Inherited IRAs: most non-spouse beneficiaries must empty the account within 10 years (SECURE Act); eligible
-  designated beneficiaries (surviving spouse, minor child of the owner until majority, disabled or chronically
-  ill person, someone not more than 10 years younger) have other options.
-- Medicaid long-term care look-back: 60 months in nearly all states (California's is being phased in differently; say "most states").
-- Step-up in basis applies to most inherited assets at death; it does not apply to lifetime gifts.
-- Say "currently" or "as of 2026" for any number that changes.
+Everything here is DRAFT educational content, written before the attorney's brain-file interviews.
+Every file carries `reviewed: false` until the attorney approves it, and the site shows a
+"pending attorney review" note on unreviewed pages.
 
 ## Voice
+- Plain English, about an 8th-grade reading level. Short sentences (under 25 words). Short paragraphs (3 sentences max).
+- Talk to the reader as "you". Warm, calm, direct. Like a good lawyer explaining things to a neighbour.
+- Specific over vague: concrete examples ("If you leave your house to your two kids..."), real mechanics, real steps.
+- Educational, never individual advice. Say what people commonly do or consider, never "you need X".
+- Laws vary by state. When a rule differs by state, say so plainly and suggest asking an attorney licensed in the reader's state. Do not state a specific state's rule as if universal.
+- No invented statistics, studies or percentages. Only use well-established federal figures, write "as of 2026", and add an HTML comment `<!-- verify -->` right after the figure.
+  Known figures you may use: federal estate tax exemption $15 million per person for 2026 (indexed for inflation after), annual gift tax exclusion $19,000 per recipient (2025 figure), Medicaid look-back period 60 months (California differs), ABLE account annual contribution limit equals the gift exclusion.
+- No em dashes. Use commas, colons or separate sentences.
+- Banned phrases: "navigate the complexities", "peace of mind" (unless followed by a concrete reason), "in today's world", "it's important to note", "when it comes to", "delve", "crucial", "robust", "seamless", "unlock", "embark", "journey", "landscape", "tapestry", "ever-changing", "game-changer", "comprehensive guide", "in conclusion", "at the end of the day".
+- No headings that are questions repeated in the first sentence. Lead each section with the answer.
+- End each guide with a short "Next step" section pointing to a relevant tool, checklist, or booking a consult at /plan-finder.
 
-- Plain English, eighth-grade reading level, short paragraphs, second person ("you").
-- Warm and steady. Never alarmist, never salesy. No "In today's fast-paced world", "navigating the complex
-  landscape", "it's important to note", "delve", "crucial", "peace of mind" more than once, or ending summaries
-  that repeat the article. No exclamation marks.
-- Specific beats general: name the form, the account type, the deadline type, the person who signs.
-- Never promise outcomes ("avoid all taxes", "guaranteed"), never call the firm "the best" or "experts"
-  or "specialists" (bar rules restrict these words). Use "focus on" instead.
-- Every page must be original. Do not reuse paragraphs between pages; if two pages touch the same idea,
-  explain it briefly and link to the page that owns it.
+## Internal links (use these paths)
+- Guides: /guides/<slug>     Comparisons: /compare/<slug>     Life events: /life-events/<slug>
+- Checklists: /checklists/<slug>     Glossary: /glossary#<term-slug>     Tools: /tools/<slug>
+- Plan finder (book a consult): /plan-finder
+Tool slugs that exist: estate-tax-estimator, probate-cost-estimator, life-insurance-needs, guardian-fund-calculator, medicaid-lookback-date, plan-readiness-assessment, executor-workload, plan-review-reminder.
+
+## Markdown
+- Body is GitHub-flavored markdown. No H1 (the title comes from frontmatter). Use `##` and `###`.
+- Tables allowed. Keep lists parallel. No HTML except the verify comment.

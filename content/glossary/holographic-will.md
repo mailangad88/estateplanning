@@ -6,7 +6,7 @@ seeAlso: ["testator", "codicil", "self-proving-affidavit"]
 related: ["wills/handwritten-and-diy-wills", "wills/how-to-make-a-valid-will", "wills/contesting-a-will"]
 ---
 
-About half of states recognize handwritten wills, usually requiring that the material provisions be in the testator's handwriting and that the document be signed. A few states also require a date. Other states do not accept them at all unless witnessed like an ordinary will. Because no one watches the signing, holographic wills are easy to challenge for lack of capacity, undue influence, or doubt that the handwriting is genuine. Courts often need handwriting experts or relatives to testify.
+About half of states recognize handwritten wills, usually requiring that the material provisions be in the testator's handwriting and that the document be signed. A few states also require a date. Other states do not accept them at all unless witnessed like an ordinary will. Because no one watches the signing, holographic wills are easy to challenge for lack of capacity, undue influence, or doubt that the handwriting is genuine. Courts often need handwriting analysts or relatives to testify.
 
 ## Example
 

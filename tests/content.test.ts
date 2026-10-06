@@ -11,7 +11,7 @@ import {
   getStateGuides,
   getStates,
   refToUrl,
-} from "@/lib/content";
+} from "@/lib/library";
 
 /**
  * Content quality gates: every planned page exists, every internal link resolves, pages are
@@ -173,5 +173,13 @@ describe("page quality", () => {
 
   it("no body repeats the title as an H1", () => {
     expect(allPages.filter((p) => /^# /m.test(p.markdown)).map((p) => p.url)).toEqual([]);
+  });
+});
+
+describe("cross-links to the rest of the site", () => {
+  it("every mapped guide, comparison, question and life event exists", async () => {
+    const { clusterMapPaths, siteLinksFor } = await import("@/lib/site-links");
+    const resolved = new Set(getClusters().flatMap((c) => siteLinksFor(c.slug).map((l) => l.url)));
+    expect(clusterMapPaths().filter((p) => !resolved.has(p))).toEqual([]);
   });
 });

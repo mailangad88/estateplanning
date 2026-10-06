@@ -1,0 +1,32 @@
+{
+  "code": "XX",
+  "name": "State name",
+  "title": "Estate planning in [State]: wills, trusts and probate",
+  "description": "How wills, trusts and probate work in [State], explained by a [State] estate planning attorney.",
+  "answer": "40 to 60 words answering what someone in this state most needs to know first.",
+  "updated": "2026-10-06",
+  "reviewed": false,
+  "indexable": false,
+  "facts": [
+    { "label": "Witnesses required for a will", "value": "ATTORNEY TO CONFIRM" },
+    { "label": "Self-proving affidavit available", "value": "ATTORNEY TO CONFIRM" },
+    { "label": "Small estate procedure threshold", "value": "ATTORNEY TO CONFIRM" },
+    { "label": "Community property state", "value": "ATTORNEY TO CONFIRM" },
+    { "label": "State estate or inheritance tax", "value": "ATTORNEY TO CONFIRM" },
+    { "label": "Transfer-on-death deeds allowed", "value": "ATTORNEY TO CONFIRM" },
+    { "label": "Typical probate timeline", "value": "ATTORNEY TO CONFIRM" }
+  ],
+  "sections": [
+    { "heading": "How probate works in [State]", "body": "Attorney-written: the court, the main steps, what is unusual here." },
+    { "heading": "Making a valid will in [State]", "body": "Attorney-written: signing rules, holographic wills, self-proving affidavits." },
+    { "heading": "Trusts and avoiding probate in [State]", "body": "Attorney-written." },
+    { "heading": "Powers of attorney and health care forms in [State]", "body": "Attorney-written: statutory forms, witness or notary rules." },
+    { "heading": "What we see most often with [State] families", "body": "From the brain file: real, anonymized patterns." }
+  ],
+  "counties": [
+    { "name": "County name", "court": "Probate court name", "notes": "Filing or timing detail only someone local would know" }
+  ],
+  "faqs": [
+    { "q": "State-specific question", "a": "Attorney-confirmed answer." }
+  ]
+}

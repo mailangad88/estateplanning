@@ -1,5 +1,5 @@
 import { absoluteUrl } from "@/config/site";
-import { getAllArticles, getGlossary, getStateGuides, toPlainMarkdown } from "@/lib/content";
+import { getAllArticles, getGlossary, getStateGuides, toPlainMarkdown } from "@/lib/library";
 
 /** Markdown copy of each content page at /raw/{page path}.md, linked from llms.txt. */
 

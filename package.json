@@ -7,20 +7,28 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "visuals:export": "tsx scripts/visuals/export-static.tsx",
+    "test": "vitest run",
+    "launch-check": "node scripts/launch-check.mjs",
+    "prebuild": "node scripts/launch-check.mjs"
   },
   "dependencies": {
+    "@remotion/player": "^4.0.533",
     "gray-matter": "^4.0.3",
+    "lucide-react": "^1.52.0",
     "marked": "^18.1.0",
     "next": "^16.3.8",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
+    "remotion": "^4.0.533",
     "zod": "^4.6.5"
   },
   "devDependencies": {
     "@types/node": "^26.6.4",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "sharp": "^0.35.5",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vitest": "^5.0.3"
   }

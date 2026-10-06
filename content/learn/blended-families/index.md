@@ -127,6 +127,10 @@ It also helps to plan for a period of disability. Many blended-family disputes b
 
 Finally, think about what you would want if the marriage ends. A divorce typically cancels gifts to a former spouse in a will or trust in many states, but not beneficiary forms in every state, and it does not move assets for you. Keep documents current, and review them as soon as a separation begins.
 
+## How do you keep the peace while you plan?
+
+Most blended-family conflict comes from surprise and silence, not from the numbers. Children from a first marriage may fear a new spouse is taking what they expected. A new spouse may fear being pushed out of the home. Stepchildren may fear being treated as outsiders. Telling each person, in plain terms, what you decided and why removes much of that fear. Some families hold a meeting with the attorney present so everyone hears the same thing. Others write a letter to be read at death that explains the reasoning behind unequal shares. Whichever you choose, do it while you can still answer questions.
+
 ## Where should you start?
 
 Start with an honest list of who you want to provide for and in what order. Then follow these steps.

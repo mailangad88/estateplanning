@@ -61,7 +61,7 @@ The [testator](/glossary/testator) must have had [testamentary capacity](/glossa
 
 ### Undue influence
 
-[Undue influence](/glossary/undue-influence) means someone overpowered the testator's free will, so the will reflects the influencer's wishes instead. Courts look for warning signs: a caregiver or new friend who isolates the person, a beneficiary who arranged the lawyer visit or was present at the signing, a sudden change that benefits that person, and a person who was dependent and vulnerable. In many states, if a person in a position of trust receives a large gift, the burden may shift to them to explain it.
+[Undue influence](/glossary/undue-influence) means someone overpowered the testator's own judgment, so the will reflects the influencer's wishes instead. Courts look for warning signs: a caregiver or new friend who isolates the person, a beneficiary who arranged the lawyer visit or was present at the signing, a sudden change that benefits that person, and a person who was dependent and vulnerable. In many states, if a person in a position of trust receives a large gift, the burden may shift to them to explain it.
 
 ### Fraud, forgery or mistake
 
@@ -94,7 +94,7 @@ Contests are expensive. Legal fees can exceed the amount in dispute, they delay 
 
 ## How do you make your will harder to contest?
 
-You cannot guarantee that no one will sue. You can make it much harder to win. The best steps are practical.
+You cannot stop someone from suing. You can make it much harder to win. The best steps are practical.
 
 1. **Use an attorney,** especially for any plan that treats heirs unequally or cuts someone out. A lawyer who meets the client alone, explains the plan, and keeps notes is a strong witness.
 2. **Sign with full formalities** and a self-proving affidavit, using neutral witnesses.

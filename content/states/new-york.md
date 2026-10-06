@@ -5,7 +5,7 @@ title: "Estate planning in New York: wills, trusts and probate"
 description: "New York has a $7.35 million estate tax exemption with a cliff, Surrogate's Court probate, a statutory power of attorney and strict two-witness wills."
 updated: "2026-10-06"
 answer: >-
-  New York has its own estate tax, with a 2026 basic exclusion of $7,350,000 and a cliff that can tax the whole estate if it exceeds that amount by more than 5 percent. A will needs two witnesses, probate happens in Surrogate's Court, and a surviving spouse is guaranteed the greater of $50,000 or one-third of the net estate.
+  New York has its own estate tax, with a 2026 basic exclusion of $7,350,000 and a cliff that can tax the whole estate if it exceeds that amount by more than 5 percent. A will needs two witnesses, probate happens in Surrogate's Court, and a surviving spouse is entitled to the greater of $50,000 or one-third of the net estate.
 facts:
   willSigning: "Signed at the end by the testator in front of two witnesses, who sign within 30 days of each other; notarization is not required (EPTL 3-2.1)."
   selfProving: "Yes. Witnesses can sign an affidavit before a notary so the will is accepted without their testimony (SCPA 1406)."

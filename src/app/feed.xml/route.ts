@@ -1,6 +1,6 @@
 import { firm } from "@/config/firm";
 import { absoluteUrl } from "@/config/site";
-import { getAllArticles } from "@/lib/content";
+import { getAllArticles } from "@/lib/library";
 
 export const dynamic = "force-static";
 

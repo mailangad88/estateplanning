@@ -108,6 +108,8 @@ Review it once a year and after any major purchase, sale, inheritance, marriage,
 
 State rules on deeds, transfer taxes and property tax reassessment vary. Your [state guide](/estate-planning/texas), for example Texas, or an attorney in your state can tell you what applies where you live.
 
+For the bigger picture, see [complete guide to trusts](/learn/trusts).
+
 ## How we can help
 
 Funding is where many do-it-yourself trusts fall short, and where an attorney's checklist and recorded deeds help most. Use the [plan finder](/plan-finder) to see which documents fit your situation, or book a consultation and ask us to walk through every asset you own and how it should be titled.

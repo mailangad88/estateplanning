@@ -49,7 +49,7 @@ There are five common methods, and they differ mainly in whether the house goes 
 
 ## Is a will enough to leave a house to your children?
 
-A will works, but the house must go through [probate](/glossary/probate) first. Your will names the children, the executor files it with the court, and the court issues authority to transfer the deed. Depending on the state, this may take several months to over a year and cost thousands in fees. See [how long probate takes](/learn/probate/how-long-does-probate-take) and [probate costs](/learn/probate/probate-costs).
+A will works, but the house must go through probate first. Your will names the children, the executor files it with the court, and the court issues authority to transfer the deed. Depending on the state, this may take several months to over a year and cost thousands in fees. See how long probate takes and probate costs.
 
 A will is the right base document even if you use another tool, since it handles anything left over. A will alone is a reasonable choice if the estate is simple, probate in your state is quick, and you do not mind the delay. Some states also have simplified procedures for small estates, but a house often exceeds those limits.
 
@@ -100,7 +100,7 @@ Work through these questions in order.
 2. **Do you want to avoid probate?** If yes, choose a trust or TOD deed.
 3. **Will the house pass to someone who needs protection?** A minor, a person with a disability, or a child in a shaky marriage points toward a trust.
 4. **Are there other assets in other places?** A trust pulls the plan together, and a TOD deed handles only the one deed.
-5. **Does your state allow a TOD deed?** Check the state guides, such as [Texas](/estate-planning/texas), [California](/estate-planning/california) and [Florida](/estate-planning/florida), which differ on deed options.
+5. **Does your state allow a TOD deed?** Check the state guides, such as Texas, California and Florida, which differ on deed options.
 6. **Is Medicaid a realistic concern in the next five years?** If yes, see an attorney before doing anything.
 
 ## How can you prevent fights between siblings?
@@ -113,7 +113,7 @@ Plan for the house to outlast your wishes. Siblings often disagree about whether
 - How the carrying costs (tax, insurance, repairs) are shared.
 - What happens if no one agrees after a set period, often a sale and equal division.
 
-Siblings of unequal means may also need an equalizing gift, such as a larger share of other assets for the child who does not get the house. See [inheriting a house](/learn/after-a-death/inheriting-a-house) to understand what your children will face and [talking to family about your estate plan](/learn/basics/talking-to-family-about-estate-plan) to start the conversation.
+Siblings of unequal means may also need an equalizing gift, such as a larger share of other assets for the child who does not get the house. See [inheriting a house](/learn/after-a-death/inheriting-a-house) to understand what your children will face and talking to family about your estate plan to start the conversation.
 
 ## How we can help
 

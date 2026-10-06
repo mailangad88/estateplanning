@@ -13,7 +13,7 @@ takeaways:
 faqs:
   - q: "Do I need a will in each state where I own property?"
     a: "Usually not. One properly signed will is generally accepted in other states, though the second state may require a short ancillary proceeding to use it. A trust holding the property avoids the issue altogether."
-  - q: "What is ancillary probate?"
+  - q: "Do I need ancillary probate if I own a vacation home in another state?"
     a: "It is a probate case in a second state that has authority over real estate located there. The home-state executor or a local appointee presents the will and the court there transfers the property."
   - q: "Can I use a transfer-on-death deed for out-of-state property?"
     a: "Only if the state where the property sits allows it and you follow its rules for signing and recording. The law of the property's state governs, not yours."
@@ -78,11 +78,11 @@ Placing the property in a limited liability company means you own business inter
 
 Yes, in some cases. The federal estate tax applies to your total estate wherever it sits, and as of 2026 only estates above $15 million per person are subject to it. A dozen or so states have their own estate tax, and some states have an inheritance tax. A number of these states tax real estate located within their borders owned by nonresidents, and the thresholds are often much lower than the federal one.
 
-That means an owner who lives in a state with no estate tax but owns a cabin in a state that has one might owe tax there. The rules differ by state, so check the [state estate and inheritance taxes](/learn/estate-tax/state-estate-and-inheritance-taxes) page and the state guides, such as [New York](/estate-planning/new-york), [Washington](/estate-planning/washington) or [Oregon](/estate-planning/oregon), for the states where you own land. Putting a property in a trust does not generally change the state estate tax result, but placing it in an entity sometimes does, which is one more reason to talk to a lawyer.
+That means an owner who lives in a state with no estate tax but owns a cabin in a state that has one might owe tax there. The rules differ by state, so check the [state estate and inheritance taxes](/learn/estate-tax/state-estate-and-inheritance-taxes) page and the state guides, such as New York, Washington or Oregon, for the states where you own land. Putting a property in a trust does not generally change the state estate tax result, but placing it in an entity sometimes does, which is one more reason to talk to a lawyer.
 
 ## What if property is owned in a community property state?
 
-If you live in a community property state, or you move between the two kinds of states, how the property is characterized can change. Property acquired during marriage in a community property state typically stays community even if you move, but real estate in a common-law state follows that state's rules. Surviving spouses may have different rights in each. This is an area where local advice matters, particularly for couples who relocated after retirement. See [community property](/glossary/community-property).
+If you live in a community property state, or you move between the two kinds of states, how the property is characterized can change. Property acquired during marriage in a community property state typically stays community even if you move, but real estate in a common-law state follows that state's rules. Surviving spouses may have different rights in each. This is an area where local advice matters, particularly for couples who relocated after retirement. See community property.
 
 ## How do you plan for a vacation home that several children will inherit?
 

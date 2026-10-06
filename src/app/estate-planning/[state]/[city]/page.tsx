@@ -6,7 +6,7 @@ import CtaBox from "@/components/CtaBox";
 import JsonLd from "@/components/JsonLd";
 import PageMeta from "@/components/PageMeta";
 import { servedStates } from "@/config/firm";
-import { getCities, getClusters, getPillar, getStateGuide } from "@/lib/content";
+import { getCities, getClusters, getPillar, getStateGuide } from "@/lib/library";
 import { breadcrumbSchema, cityServiceSchema, graph } from "@/lib/schema";
 
 /**

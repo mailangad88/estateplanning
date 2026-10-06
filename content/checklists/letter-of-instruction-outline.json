@@ -1,0 +1,58 @@
+{
+  "title": "Letter of Instruction Outline",
+  "description": "An outline for an informal letter that tells your family where things are, who to call, and what matters to you.",
+  "intro": "A letter of instruction is not a legal document, but it fills the gaps a will leaves. It tells your family the practical details in your own words. Use these headings as a starting point and update the letter whenever things change.",
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "sections": [
+    {
+      "heading": "Where to find things",
+      "items": [
+        "Location of your original will, trust, and powers of attorney",
+        "Location of your asset and account inventory",
+        "Location of keys, safe combinations, and safe deposit box",
+        "Location of tax returns from recent years",
+        "Location of birth, marriage, and military discharge papers"
+      ]
+    },
+    {
+      "heading": "People to contact",
+      "items": [
+        "Your estate planning attorney",
+        "Your accountant or tax preparer",
+        "Your financial advisor",
+        "Your insurance agent",
+        "Your employer or benefits office",
+        "Close friends who should be told"
+      ]
+    },
+    {
+      "heading": "Practical matters",
+      "items": [
+        "Bills that are paid automatically and from which account",
+        "Care instructions for pets",
+        "Home maintenance details, such as alarm codes and service providers",
+        "Vehicles and where titles and keys are kept",
+        "Subscriptions and memberships to cancel"
+      ]
+    },
+    {
+      "heading": "Personal wishes",
+      "items": [
+        "Funeral and burial or cremation wishes",
+        "Who should receive personal items with sentimental value",
+        "Stories or family history you want passed on",
+        "Messages to children, grandchildren, or friends"
+      ]
+    },
+    {
+      "heading": "Keeping it current",
+      "items": [
+        "Date the letter each time you update it",
+        "Store it with your estate planning documents",
+        "Tell your executor where it is",
+        "Review it once a year"
+      ]
+    }
+  ]
+}

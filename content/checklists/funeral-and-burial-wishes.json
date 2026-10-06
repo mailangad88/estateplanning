@@ -1,0 +1,56 @@
+{
+  "title": "Funeral and Burial Wishes",
+  "description": "Write down your funeral, burial, or cremation preferences so your family does not have to guess during a hard time.",
+  "intro": "Families often have to make many decisions within days of a death. Writing your wishes down ahead of time spares them guesswork and disagreement. Share this sheet with family, since a will may not be read until after the funeral.",
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "sections": [
+    {
+      "heading": "Disposition",
+      "items": [
+        "Choose burial, cremation, green burial, or body donation",
+        "Note any cemetery plot or niche you own and where the deed is",
+        "Note any prepaid funeral or burial contract and the provider",
+        "State what should happen to cremated remains",
+        "Note any organ and tissue donation wishes"
+      ]
+    },
+    {
+      "heading": "Service",
+      "items": [
+        "Choose a funeral, memorial service, celebration of life, or no service",
+        "Name a preferred funeral home",
+        "Name a preferred place for the service",
+        "List religious or cultural traditions to follow",
+        "List music, readings, or speakers you would like"
+      ]
+    },
+    {
+      "heading": "Details",
+      "items": [
+        "Choose clothing, jewelry, or items to be included",
+        "Note whether you want an open or closed casket",
+        "List people to be asked as pallbearers",
+        "Note whether you prefer flowers or donations to a charity"
+      ]
+    },
+    {
+      "heading": "Notices",
+      "items": [
+        "Write or outline your obituary",
+        "List newspapers or websites for the obituary",
+        "List people and groups who should be notified",
+        "Name the person who should share the news on social media, if anyone"
+      ]
+    },
+    {
+      "heading": "Paying for it",
+      "items": [
+        "Note funds set aside for funeral costs and where they are",
+        "List any veterans or union burial benefits you may be eligible for",
+        "Name the person you want to make final decisions",
+        "Check whether your state lets you appoint someone to control your remains"
+      ]
+    }
+  ]
+}

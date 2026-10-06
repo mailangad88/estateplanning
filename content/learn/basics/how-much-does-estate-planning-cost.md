@@ -100,7 +100,7 @@ Our guide on [choosing an estate planning attorney](/learn/basics/how-to-choose-
 
 ## What does skipping a plan cost?
 
-The price of no plan is paid by your family. Typical costs include court filing fees and attorney fees for probate, court-supervised guardianship if you are incapacitated, a longer timeline before anyone can sell or transfer property, and the personal cost of disputes among relatives. None of these is guaranteed to be large, but all are avoidable at a price that is usually known in advance. The bill for a plan is predictable; the bill for not having one is not.
+The price of no plan is paid by your family. Typical costs include court filing fees and attorney fees for probate, court-supervised guardianship if you are incapacitated, a longer timeline before anyone can sell or transfer property, and the personal cost of disputes among relatives. None of these is certain to be large, but all are avoidable at a price that is usually known in advance. The bill for a plan is predictable; the bill for not having one is not.
 
 ## How can you keep the cost down without cutting corners?
 

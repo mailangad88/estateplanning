@@ -2,7 +2,7 @@
 state: "Michigan"
 abbr: "MI"
 title: "Estate planning in Michigan: wills, trusts and probate"
-description: "Michigan estate planning: witnessed and handwritten wills, no state estate or inheritance tax, probate court will safekeeping, and Lady Bird deeds."
+description: "Michigan estate planning: witnessed and handwritten wills, no state estate or inheritance tax, probate court will safekeeping and Lady Bird deeds explained."
 updated: "2026-10-06"
 answer: >-
   Michigan has no estate or inheritance tax. A will needs two witnesses, but a handwritten will that is dated, signed and handwritten in its material parts is also valid. You can deposit your will with the probate court for safekeeping, and Michigan families often use a Lady Bird deed to pass a home outside probate.

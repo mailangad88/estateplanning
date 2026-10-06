@@ -9,7 +9,8 @@ import JsonLd from "@/components/JsonLd";
 import LinkList from "@/components/LinkList";
 import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
-import { getAllArticles, getArticle, getCluster, getGlossaryEntry, getRelated } from "@/lib/content";
+import { getAllArticles, getArticle, getCluster, getGlossaryEntry, getRelated } from "@/lib/library";
+import { siteLinksFor } from "@/lib/site-links";
 import { articleSchema, breadcrumbSchema, faqSchema, graph } from "@/lib/schema";
 
 type Params = { cluster: string; slug: string };
@@ -76,7 +77,10 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
       <LinkList
         id="related"
         title="Keep reading"
-        items={related.map((r) => ({ url: r.url, title: r.title, description: r.description }))}
+        items={[
+          ...related.map((r) => ({ url: r.url, title: r.title, description: r.description })),
+          ...siteLinksFor(clusterSlug).slice(0, 3).map((l) => ({ url: l.url, title: l.title, description: l.kind })),
+        ]}
       />
       <p className="back-to-pillar">
         Part of our guide: <Link href={cluster.url}>{cluster.pillarTitle}</Link>. Rules differ by state, so see{" "}

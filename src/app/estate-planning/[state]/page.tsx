@@ -10,21 +10,40 @@ import LinkList from "@/components/LinkList";
 import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
 import { servedStates } from "@/config/firm";
-import { findByUrl, getCities, getStateGuide, getStateGuides, refToUrl, type StateFacts } from "@/lib/content";
+import { findByUrl, getCities, getStateGuide, getStateGuides, refToUrl, type StateFacts } from "@/lib/library";
 import { breadcrumbSchema, faqSchema, graph, stateGuideSchema } from "@/lib/schema";
+import { getStates as getLocalStatePages, type StatePage } from "@/lib/states";
+import { Breadcrumbs as UiBreadcrumbs, Cta, FaqList, ReviewNote } from "@/components/ui";
+import { CallbackForm } from "@/components/capture";
+import { JsonLd as SeoJsonLd, breadcrumbLd, legalServiceLd } from "@/lib/seo";
 
 type Params = { state: string };
 
 export const dynamicParams = false;
 
+/*
+ * Two sources feed this route: the 50-state + DC Markdown guides in content/states/*.md (general state law),
+ * and attorney-written local pages in content/states/*.json (courts, counties, local detail) for states the
+ * firm serves. When both exist for a state, the guide renders with the local detail added.
+ */
 export function generateStaticParams(): Params[] {
-  return getStateGuides().map((s) => ({ state: s.slug }));
+  const slugs = new Set([...getStateGuides().map((s) => s.slug), ...getLocalStatePages().map((s) => s.slug)]);
+  return [...slugs].map((state) => ({ state }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { state } = await params;
   const s = getStateGuide(state);
-  if (!s) return {};
+  if (!s) {
+    const local = getLocalStatePages().find((x) => x.slug === state);
+    if (!local) return {};
+    return {
+      title: local.title,
+      description: local.description,
+      alternates: { canonical: `/estate-planning/${local.slug}` },
+      robots: local.indexable ? undefined : { index: false, follow: true },
+    };
+  }
   return {
     title: s.title,
     description: s.description,
@@ -51,7 +70,11 @@ const FACT_LABELS: [keyof StateFacts, string][] = [
 export default async function StatePage({ params }: { params: Promise<Params> }) {
   const { state } = await params;
   const s = getStateGuide(state);
-  if (!s) notFound();
+  const local = getLocalStatePages().find((x) => x.slug === state);
+  if (!s) {
+    if (!local) notFound();
+    return <LocalStatePage s={local} />;
+  }
 
   const served = servedStates().includes(s.abbr);
   const cities = served ? getCities(s.slug) : [];
@@ -92,7 +115,20 @@ export default async function StatePage({ params }: { params: Promise<Params> })
       </section>
       <Toc headings={s.headings} />
       <div className="prose" dangerouslySetInnerHTML={{ __html: s.html }} />
+      {local && local.counties.length > 0 && (
+        <section aria-labelledby="courts">
+          <h2 id="courts">Probate courts we work with in {s.name}</h2>
+          <ul>{local.counties.map((c) => <li key={c.name}><strong>{c.name}:</strong> {c.court}{c.notes ? `. ${c.notes}` : ""}</li>)}</ul>
+        </section>
+      )}
+      {local && local.sections.map((sec) => (
+        <section key={sec.heading}>
+          <h2>{sec.heading}</h2>
+          <p>{sec.body}</p>
+        </section>
+      ))}
       <Faqs faqs={s.faqs} />
+      {served && <CallbackForm interest={`state:${s.abbr}`} />}
       {cities.length > 0 && (
         <LinkList
           id="cities"
@@ -116,6 +152,41 @@ export default async function StatePage({ params }: { params: Promise<Params> })
       <p className="back-to-pillar">
         <Link href="/estate-planning">See estate planning rules in other states</Link>
       </p>
+    </article>
+  );
+}
+
+/** Attorney-written local page for a state that has no Markdown guide (e.g. the template preview). */
+function LocalStatePage({ s }: { s: StatePage }) {
+  return (
+    <article>
+      <UiBreadcrumbs items={[{ href: "/", label: "Home" }, { label: `Estate planning in ${s.name}` }]} />
+      <h1>{s.title}</h1>
+      <ReviewNote reviewed={s.reviewed} updated={s.updated} />
+      <div className="answer"><strong>Short answer</strong>{s.answer}</div>
+      <h2>{s.name} at a glance</h2>
+      <div className="table-wrap">
+        <table>
+          <tbody>{s.facts.map((f) => <tr key={f.label}><th scope="row">{f.label}</th><td>{f.value}</td></tr>)}</tbody>
+        </table>
+      </div>
+      {s.sections.map((sec) => (
+        <section key={sec.heading}>
+          <h2>{sec.heading}</h2>
+          <p>{sec.body}</p>
+        </section>
+      ))}
+      {s.counties.length > 0 && (
+        <section>
+          <h2>Probate courts we work with</h2>
+          <ul>{s.counties.map((c) => <li key={c.name}><strong>{c.name}:</strong> {c.court}{c.notes ? `. ${c.notes}` : ""}</li>)}</ul>
+        </section>
+      )}
+      <FaqList faqs={s.faqs} />
+      <h2>Prefer a call?</h2>
+      <CallbackForm interest={`state:${s.code}`} />
+      <Cta />
+      <SeoJsonLd data={[{ ...legalServiceLd(), areaServed: s.name }, breadcrumbLd([{ name: "Home", path: "/" }, { name: s.title, path: `/estate-planning/${s.slug}` }])]} />
     </article>
   );
 }

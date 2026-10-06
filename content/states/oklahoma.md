@@ -2,7 +2,7 @@
 state: "Oklahoma"
 abbr: "OK"
 title: "Estate planning in Oklahoma: wills, trusts and probate"
-description: "Oklahoma allows handwritten and electronic wills and TOD deeds, has no estate tax, and offers a small estate affidavit and summary administration. Know the rules."
+description: "Oklahoma allows handwritten and electronic wills and TOD deeds, has no estate tax, and offers a small estate affidavit and summary administration. Plan here."
 updated: "2026-10-06"
 answer: >-
   Oklahoma wills need two witnesses who sign at the end of the will, or can be entirely handwritten, dated and signed. Electronic wills have been allowed since November 2024. Probate is in district court, with a 10-day-wait affidavit for personal property and summary administration for larger small estates. Oklahoma has no estate or inheritance tax.
@@ -52,6 +52,8 @@ Oklahoma has two streamlined tracks. A successor can use an affidavit for person
 ## Trusts and avoiding probate in Oklahoma
 
 Oklahoma authorizes transfer-on-death deeds. The deed is signed and recorded before death, names a beneficiary, and lets the owner keep the property and change plans while alive. Our guide to [transfer-on-death deeds](/learn/beneficiary-designations/transfer-on-death-deed) covers common problems. A [revocable living trust](/learn/trusts/revocable-living-trust) is more useful for owners of oil and gas minerals, farmland or several properties, because it keeps management in one place and avoids multiple county filings. Beneficiary designations pass retirement accounts and insurance outside probate; see [how to avoid probate](/learn/probate/how-to-avoid-probate).
+
+Mineral rights are a distinctly Oklahoma issue. Oil and gas interests often pass through probate in the county where the minerals sit, and a family can end up with fractional interests spread across several counties or states. Heirs of mineral owners frequently need a court order or recorded affidavit to receive royalty payments, so naming who takes the minerals in your will or trust, and keeping a list of leases and operators, saves your family time. If you own minerals in another state, [out-of-state property](/learn/property-and-assets/out-of-state-property) and [ancillary probate](/learn/probate/ancillary-probate) explain the extra filings.
 
 ## Taxes
 

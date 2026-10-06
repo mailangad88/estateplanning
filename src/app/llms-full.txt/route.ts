@@ -1,22 +1,45 @@
+import fs from "node:fs";
+import path from "node:path";
+import matter from "gray-matter";
 import { firm } from "@/config/firm";
-import { absoluteUrl, site } from "@/config/site";
-import { getAllArticles, getGlossary, getStateGuides, toPlainMarkdown } from "@/lib/content";
+import { getFaqs, getGlossary } from "@/lib/content";
+import { abs } from "@/lib/seo";
+import { getAllArticles, getStateGuides, toPlainMarkdown } from "@/lib/library";
 
 export const dynamic = "force-static";
 
-/** Full text of every guide, glossary entry and state guide in one Markdown file for AI assistants. */
+const DIRS: [string, string][] = [
+  ["guides", "/guides"],
+  ["blog", "/blog"],
+  ["compare", "/compare"],
+  ["life-events", "/life-events"],
+];
+
+/** Every article as markdown in one file, so AI assistants can read and cite the full content. */
 export function GET() {
-  const parts: string[] = [
-    `# ${firm.brandName}: estate planning guides (full text)`,
+  const out: string[] = [
+    `# ${firm.brandName}: full content`,
     "",
-    `> General education from ${firm.firmLegalName}. Not legal advice. ${site.reviewStatus}. Laws vary by state and change; confirm with a licensed attorney.`,
+    `General estate planning education from ${firm.firmLegalName}. Not legal advice. Laws vary by state.`,
     "",
   ];
-  const source = (url: string) => `Source: ${absoluteUrl(url)}`;
-  for (const a of getAllArticles()) parts.push("---", "", source(a.url), "", toPlainMarkdown(a));
-  for (const s of getStateGuides()) parts.push("---", "", source(s.url), "", toPlainMarkdown(s));
-  parts.push("---", "", "# Glossary", "");
-  for (const g of getGlossary()) parts.push(`- **${g.term}** (${absoluteUrl(g.url)}): ${g.short}`);
-  parts.push("");
-  return new Response(parts.join("\n"), { headers: { "Content-Type": "text/plain; charset=utf-8" } });
+  for (const [dir, base] of DIRS) {
+    const full = path.join(process.cwd(), "content", dir);
+    if (!fs.existsSync(full)) continue;
+    for (const f of fs.readdirSync(full).filter((x) => x.endsWith(".md")).sort()) {
+      const { data, content } = matter(fs.readFileSync(path.join(full, f), "utf8"));
+      const slug = f.replace(/\.md$/, "");
+      out.push(`---`, "", `# ${data.title}`, "", `Source: ${abs(`${base}/${slug}`)}`, "");
+      if (data.answer) out.push(`Short answer: ${data.answer}`, "");
+      out.push(content.replace(/<!--[\s\S]*?-->/g, "").trim(), "");
+    }
+  }
+  for (const page of [...getAllArticles(), ...getStateGuides()]) {
+    out.push("---", "", `Source: ${abs(page.url)}`, "", toPlainMarkdown(page));
+  }
+  out.push("---", "", "# Glossary", "");
+  for (const g of getGlossary()) out.push(`- **${g.term}**: ${g.definition}`);
+  out.push("", "---", "", "# Frequently asked questions", "");
+  for (const f of getFaqs()) out.push(`**${f.q}**`, "", f.a, "");
+  return new Response(out.join("\n"), { headers: { "content-type": "text/plain; charset=utf-8" } });
 }

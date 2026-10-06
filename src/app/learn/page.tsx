@@ -3,7 +3,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBox from "@/components/CtaBox";
 import JsonLd from "@/components/JsonLd";
-import { getClusterArticles, getClusters, getPillar } from "@/lib/content";
+import { getClusterArticles, getClusters, getPillar } from "@/lib/library";
 import { breadcrumbSchema, graph, itemListSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {

@@ -13,7 +13,7 @@ takeaways:
 faqs:
   - q: "Is an inheritance considered income on my tax return?"
     a: "Generally no. At the federal level, money or property you receive as an inheritance is not reported as income. The exceptions are retirement accounts and some other items that carry deferred income tax, such as annuities, and income that the inherited asset earns after the death, such as interest or dividends."
-  - q: "Which states have an inheritance tax?"
+  - q: "Will I owe inheritance tax as an heir, and which states charge it?"
     a: "Only a handful of states currently collect one, and they are mostly in the Northeast and Mid-Atlantic, plus a few elsewhere. The rules and rates change, so confirm current law for the state where the person lived and where property is located. Spouses are usually exempt, and children often pay low rates or none."
   - q: "How much can you inherit without paying federal tax?"
     a: "There is no limit on what an heir can receive federally, because the tax is on the estate, not on you. The estate itself owes federal estate tax only above the basic exclusion amount, which is $15,000,000 per person in 2026. Married couples can combine exclusions with portability."

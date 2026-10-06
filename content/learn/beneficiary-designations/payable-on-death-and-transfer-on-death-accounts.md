@@ -107,6 +107,8 @@ If you have a [revocable living trust](/learn/trusts/revocable-living-trust), ma
 
 Claiming is usually simple, which is the point. The beneficiary contacts the bank or brokerage, sends a certified death certificate and a copy of photo ID, and completes the institution's claim form. For a POD account, the bank often pays within days. For a TOD brokerage account, the beneficiary typically opens an account in their own name, and the firm re-registers the securities there. Joint POD beneficiaries each receive their own share. If a beneficiary cannot be found or has died with no backup, the institution may hold the funds until a court or an executor tells it where to send them. A short list of your accounts and the people named, kept with your will, helps your executor and your beneficiaries know what to look for.
 
+For the bigger picture, see [guide to beneficiary designations](/learn/beneficiary-designations).
+
 ## How we can help
 
 If you are using POD or TOD accounts, we can check whether they work together with your will or trust and whether the final result is fair to everyone you care about. Try the [plan finder](/plan-finder) or schedule a consultation to talk it through.

@@ -29,7 +29,7 @@ faqs:
   - q: "Does North Dakota allow transfer-on-death deeds?"
     a: "Yes. A recorded deed names who receives the property at your death. You keep full control while alive and can revoke it. Record the deed before you die."
   - q: "What is a community property trust in North Dakota?"
-    a: "It is an optional trust that married couples can use to treat property as community property, which can give both halves a stepped-up basis at the first death. It is a specialized tool, so work with an attorney licensed in North Dakota."
+    a: "It is an optional trust that married couples can use to treat property as community property, which can give both halves a stepped-up basis at the first death. It is a complex tool, so work with an attorney licensed in North Dakota."
 related: ["probate", "probate/small-estate-affidavit", "wills/how-to-make-a-valid-will", "beneficiary-designations/transfer-on-death-deed", "estate-tax/step-up-in-basis", "property-and-assets/out-of-state-property"]
 ---
 
@@ -39,7 +39,7 @@ North Dakota's laws are friendly to modern planning. It is a Uniform Probate Cod
 
 A North Dakota will must be signed by you and either witnessed by two people or acknowledged by you before a notary public. That is a real difference from most states, where two witnesses are required. If you use witnesses, adding a self-proving affidavit lets the court accept the will without contacting them. The [general signing rules](/learn/wills/how-to-make-a-valid-will) still help, such as picking witnesses who do not inherit.
 
-A will entirely or materially in your handwriting, with your signature, is valid with no witnesses. See [handwritten and DIY wills](/learn/wills/handwritten-and-diy-wills) for the risks. North Dakota also adopted the Uniform Electronic Wills Act, so a will can be an electronic record that is signed and either witnessed by two people or notarized. North Dakota has no harmless-error rule, so mistakes cannot be repaired by proving what you meant.
+A will is valid with no witnesses if your signature and the material portions are in your handwriting. See [handwritten and DIY wills](/learn/wills/handwritten-and-diy-wills) for the risks. North Dakota also adopted the Uniform Electronic Wills Act, so a will can be an electronic record that is signed and either witnessed by two people or notarized. North Dakota has no harmless-error rule, so mistakes cannot be repaired by proving what you meant.
 
 If you die without a will, your spouse takes everything when all your children are also the spouse's. In a [blended family](/learn/blended-families), the spouse takes a fixed amount plus half of the remainder, and your children take the rest. See [dying without a will](/learn/wills/dying-without-a-will). A spouse also has an elective share that grows with the length of the marriage, plus homestead and family allowances.
 
@@ -53,7 +53,7 @@ North Dakota raised its small estate threshold to $100,000 beginning in August 2
 
 North Dakota authorizes transfer-on-death deeds, so a homeowner can name a beneficiary while keeping control, and revoke the deed later. It must be recorded before death. Our guide to [transfer-on-death deeds](/learn/beneficiary-designations/transfer-on-death-deed) covers the tradeoffs. A [revocable living trust](/learn/trusts/revocable-living-trust) is still the better tool for farm families, owners of land in other states, and parents with young or vulnerable heirs. Retirement account and life insurance beneficiary designations pass outside probate.
 
-North Dakota also has an opt-in community property trust law. Spouses who transfer assets into a trust that elects community property treatment may obtain a full [step-up in basis](/learn/estate-tax/step-up-in-basis) on both halves at the first death, which can reduce capital gains tax for highly appreciated assets such as farmland. This is a specialized structure, and confirm the requirements with an attorney.
+North Dakota also has an opt-in community property trust law. Spouses who transfer assets into a trust that elects community property treatment may obtain a full [step-up in basis](/learn/estate-tax/step-up-in-basis) on both halves at the first death, which can reduce capital gains tax for highly appreciated assets such as farmland. This is a complex structure, and confirm the requirements with an attorney.
 
 ## Taxes
 

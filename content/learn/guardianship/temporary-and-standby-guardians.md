@@ -118,6 +118,8 @@ Priya, a single mother of two, learns she needs surgery that may involve a long 
 
 They do not give the caregiver access to your money, they do not replace a guardian nomination in your will, and they do not decide custody if the other parent disputes. They also may not be recognized in every state, especially in a different state from where you signed. If you travel with your children or have relatives in another state, mention it to your attorney.
 
+For the bigger picture, see [guide to naming a guardian for your children](/learn/guardianship).
+
 ## How we can help
 
 Short-term authority is often the missing piece in an otherwise good plan. An estate planning attorney can prepare delegation and standby documents that match your state's rules and coordinate them with your will, powers of attorney and healthcare directives. You can start with our [plan finder](/plan-finder) or book a consultation.

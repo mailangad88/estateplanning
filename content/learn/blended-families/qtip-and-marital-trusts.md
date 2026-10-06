@@ -18,7 +18,7 @@ faqs:
   - q: "Is a QTIP trust taxable?"
     a: "At the first death, a QTIP election can defer federal estate tax. At the second death, the trust assets are included in the survivor's estate. Income the trust earns is taxed to the trust or the spouse. Heirs generally receive a step-up in basis at the second death."
   - q: "Do I still need a QTIP if my estate is under $15 million?"
-    a: "You may not need it for tax reasons, but you may still want it for control. If the goal is to guarantee that your children inherit after your spouse, a trust of this type is the standard tool even when no estate tax is due."
+    a: "You may not need it for tax reasons, but you may still want it for control. If the goal is to make sure that your children inherit after your spouse, a trust of this type is the standard tool even when no estate tax is due."
   - q: "Can a QTIP trust hold a retirement account?"
     a: "Yes, but the rules are technical. The trust must qualify as a see-through trust, and the SECURE Act's payout rules affect how fast the account must be emptied. Draft it with an attorney who works with retirement benefits."
 related:
@@ -65,7 +65,7 @@ If any of these fails, the trust still exists, but the tax deferral may be lost.
 
 For federal purposes, there is no tax at the first death because of the [marital deduction](/glossary/marital-deduction). The assets are then counted as part of your surviving spouse's estate when they die. As of 2026, the federal exclusion is $15 million per person, so most families will owe nothing either way. See the [federal estate tax exemption](/learn/estate-tax/federal-estate-tax-exemption).
 
-That means the QTIP's tax function matters less than it once did, and its control function matters more. The trust is chosen because you want your children to inherit, not because you are trying to save tax. Estates close to or over the exemption, or in states with their own estate tax and a lower threshold, may still benefit from careful use of the election. See [portability for married couples](/learn/estate-tax/portability-for-married-couples) for the way spouses combine their exclusions, and [state estate and inheritance taxes](/learn/estate-tax/state-estate-and-inheritance-taxes) for state rules.
+That means the QTIP's tax function matters less than it once did, and its control function matters more. The trust is chosen because you want your children to inherit, not because you are trying to save tax. Estates close to or over the exemption, or in states with their own estate tax and a lower threshold, may still benefit from careful use of the election. See [portability for married couples](/learn/estate-tax/portability-for-married-couples) for the way spouses combine their exclusions, and state estate and inheritance taxes for state rules.
 
 One benefit applies at the second death: because QTIP assets are included in the survivor's estate, beneficiaries generally receive a [step-up in basis](/glossary/step-up-in-basis) to market value, which can erase income tax on gains.
 

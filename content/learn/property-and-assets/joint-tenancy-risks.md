@@ -55,7 +55,7 @@ How much of a jointly owned property is included in your estate at death, and so
 
 ### 3. Gift tax reporting
 
-A transfer to a child of a share worth more than the annual exclusion, $19,000 per recipient in 2026, is a taxable gift that must be reported on a gift tax return. You will almost certainly owe no tax because of the $15 million lifetime exclusion, but the return is required, and the gift reduces your remaining exclusion. A bank account is different: putting a child on the account is not usually a completed gift until the child withdraws money for their own use. See [the gift tax annual exclusion](/learn/estate-tax/gift-tax-annual-exclusion).
+A transfer to a child of a share worth more than the annual exclusion, $19,000 per recipient in 2026, is a taxable gift that must be reported on a gift tax return. You will almost certainly owe no tax because of the $15 million lifetime exclusion, but the return is required, and the gift reduces your remaining exclusion. A bank account is different: putting a child on the account is not usually a completed gift until the child withdraws money for their own use. See the gift tax annual exclusion.
 
 ### 4. Medicaid and the look-back
 

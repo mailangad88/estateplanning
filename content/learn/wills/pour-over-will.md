@@ -78,7 +78,7 @@ The key point is step 1: assets passing by pour-over will generally go through [
 
 ## Does a pour-over will avoid probate?
 
-No. A pour-over will does not skip court, since it is a will. It only guarantees that anything caught by probate lands in the right place. Avoiding probate requires funding the trust during your life, as explained in [how to fund a living trust](/learn/trusts/how-to-fund-a-trust), and using tools such as beneficiary designations and transfer-on-death registrations. See [how to avoid probate](/learn/probate/how-to-avoid-probate) for seven options.
+No. A pour-over will does not skip court, since it is a will. It only makes sure that anything caught by probate lands in the right place. Avoiding probate requires funding the trust during your life, as explained in [how to fund a living trust](/learn/trusts/how-to-fund-a-trust), and using tools such as beneficiary designations and transfer-on-death registrations. See [how to avoid probate](/learn/probate/how-to-avoid-probate) for seven options.
 
 Think of the plan as two lines of defense. Funding your trust is the first. The pour-over will is the second, and you hope it has little to do.
 

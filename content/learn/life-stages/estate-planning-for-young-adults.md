@@ -119,6 +119,8 @@ Review them after graduation, a move to a new state, a first full-time job, marr
 
 A young adult who signs these papers at 18 is not preparing to die. They are making sure the people who care most can help in a crisis without going to court.
 
+For the bigger picture, see [guide to estate planning by life stage](/learn/life-stages).
+
 ## How we can help
 
 If you are an 18-year-old or the parent of one, the set of documents above is quick to prepare. Our [plan finder](/plan-finder) can point you to the right starting package, or you can book a consultation with an estate planning attorney for help with your state's signing rules. Many families handle the whole set in a single visit.

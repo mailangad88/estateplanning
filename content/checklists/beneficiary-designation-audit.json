@@ -1,0 +1,51 @@
+{
+  "title": "Beneficiary Designation Audit",
+  "description": "Check every account and policy that passes by beneficiary form, so each one matches the rest of your plan.",
+  "intro": "Beneficiary forms usually override your will, so an outdated form can undo careful planning. Work through each account, request the current designation in writing, and fix any gaps. Repeat this audit after any major life change.",
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "sections": [
+    {
+      "heading": "Accounts to check",
+      "items": [
+        "Each employer retirement plan, such as 401(k) or 403(b)",
+        "Each traditional and Roth IRA",
+        "Each life insurance policy, including employer group coverage",
+        "Each annuity",
+        "Each bank account with a payable-on-death option",
+        "Each brokerage account with a transfer-on-death option",
+        "Health savings accounts",
+        "529 college savings plans, which use a successor owner instead"
+      ]
+    },
+    {
+      "heading": "Questions for each account",
+      "items": [
+        "Request a written copy of the current designation",
+        "Confirm the primary beneficiary is alive and still your choice",
+        "Confirm a contingent beneficiary is named",
+        "Confirm no ex-spouse or deceased person is listed",
+        "Confirm no minor child is named directly",
+        "Confirm the shares add up to 100 percent"
+      ]
+    },
+    {
+      "heading": "Fit with your plan",
+      "items": [
+        "Check whether each designation matches your will or trust",
+        "Check whether any account should name your trust instead of a person",
+        "Check whether any beneficiary receives disability benefits that an inheritance could affect",
+        "Check whether per stirpes language is used where you want children of a deceased beneficiary to inherit"
+      ]
+    },
+    {
+      "heading": "After you make changes",
+      "items": [
+        "Keep the confirmation letter or screenshot for each change",
+        "Record the date and new beneficiaries on your asset inventory",
+        "Set a reminder to repeat the audit in a year",
+        "Tell your executor or trustee where the confirmations are kept"
+      ]
+    }
+  ]
+}

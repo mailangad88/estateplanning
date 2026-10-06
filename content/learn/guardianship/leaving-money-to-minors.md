@@ -108,6 +108,8 @@ Good instructions answer practical questions ahead of time.
 
 Review beneficiary forms and trust terms after any birth, death, divorce, move or big change in assets. A common mistake is a policy bought years ago that still names an ex-spouse, a deceased parent, or "my children" with no trust at all.
 
+For the bigger picture, see [guide to naming a guardian for your children](/learn/guardianship).
+
 ## How we can help
 
 The right vehicle depends on how much you leave, how old your children are, and how much control you want. An estate planning attorney can compare a trust, a custodial account and insurance designations for your family, and draft them to work together. Our [plan finder](/plan-finder) is a quick way to start, and you can book a consultation when you are ready.

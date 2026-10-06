@@ -20,7 +20,7 @@ faqs:
   - q: "What should I ask at the first consultation?"
     a: "Ask how much of their work is estate planning, what they would recommend for your situation and why, what the plan will cost in total, how long it takes, who prepares the documents, and what happens afterward, including funding a trust and updating beneficiary forms."
   - q: "How do I know if an estate planning lawyer is trustworthy?"
-    a: "Check the state bar's disciplinary records, read reviews critically, and watch how they behave in the first meeting. Trustworthy attorneys explain tradeoffs, including options that cost you less. They do not guarantee results, rush you to sign, or recommend complex structures without explaining why."
+    a: "Check the state bar's disciplinary records, read reviews critically, and watch how they behave in the first meeting. Trustworthy attorneys explain tradeoffs, including options that cost you less. They do not promise results, rush you to sign, or recommend complex structures without explaining why."
   - q: "Is a lawyer or a financial adviser better for estate planning?"
     a: "They do different jobs. An attorney drafts and advises on legal documents. A financial adviser or CPA helps with investments and taxes. The best results come when they coordinate, particularly on beneficiary designations and tax planning. Only an attorney can draft your legal documents for you."
 related:
@@ -32,7 +32,7 @@ related:
 glossary: ["fiduciary", "estate", "living-trust", "executor"]
 ---
 
-Picking an attorney for something as personal as your family's future can feel like picking a surgeon: you are not an expert, you cannot easily judge the work, and the consequences show up years later. The good news is that you do not have to judge the legal drafting yourself. You can judge how an attorney listens, explains, prices and follows up, and those predict quality well.
+Picking an attorney for something as personal as your family's future can feel like picking a surgeon: you are not a lawyer, you cannot easily judge the work, and the consequences show up years later. The good news is that you do not have to judge the legal drafting yourself. You can judge how an attorney listens, explains, prices and follows up, and those predict quality well.
 
 This guide covers where to look, what to ask, and what to watch out for. It sits alongside our [estate planning overview](/learn/basics), which explains what a plan includes.
 
@@ -93,7 +93,7 @@ Contrast that with a meeting that starts with a product pitch. If the attorney r
 
 ## What are the red flags?
 
-- **Guarantees.** No one can promise to avoid all taxes, probate or family disputes.
+- **Promised outcomes.** No one can promise to avoid all taxes, probate or family disputes.
 - **Pressure.** Sales events, "today only" prices, or dire warnings meant to hurry you.
 - **Vague fees.** If a firm will not explain what the price covers, move on.
 - **No questions.** If the attorney recommends documents without asking about your family and assets, the plan is generic.

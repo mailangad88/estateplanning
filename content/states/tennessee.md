@@ -61,7 +61,7 @@ The most common timeline driver in Tennessee is real estate: land titles in olde
 
 Beneficiary designations, payable-on-death accounts and jointly owned property pass outside probate. For the home, Tennessee has not clearly authorized transfer-on-death deeds, so confirm with an attorney whether one is available. A [revocable living trust](/learn/trusts/revocable-living-trust) holds title to the home reliably, and Tennessee's Uniform Trust Code governs trustees.
 
-Two Tennessee features are unusual. First, the Tennessee Community Property Trust Act lets married couples, including couples who live elsewhere, hold property in a trust that is treated as community property. The advantage is that both halves can receive a [step-up in basis](/learn/estate-tax/step-up-in-basis) when the first spouse dies, which can reduce capital gains tax on appreciated assets. Second, Tennessee's Investment Services Trust Act allows self-settled asset protection trusts with strict requirements, which is a specialized tool.
+Two Tennessee features are unusual. First, the Tennessee Community Property Trust Act lets married couples, including couples who live elsewhere, hold property in a trust that is treated as community property. The advantage is that both halves can receive a [step-up in basis](/learn/estate-tax/step-up-in-basis) when the first spouse dies, which can reduce capital gains tax on appreciated assets. Second, Tennessee's Investment Services Trust Act allows self-settled asset protection trusts with strict requirements, which is a complex tool.
 
 ## Taxes
 

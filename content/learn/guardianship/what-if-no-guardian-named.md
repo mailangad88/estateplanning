@@ -105,6 +105,8 @@ Preventing the problem takes a few documents and one honest conversation.
 
 It is natural to wait until finances are in better shape or children are older. The cost of waiting is a risk of a court choosing for you. Many parents write a simple will with a guardian nomination first and add trusts later as their assets grow. Our list of [common estate planning mistakes](/learn/basics/common-estate-planning-mistakes) puts "no guardian named" near the top for a reason.
 
+For the bigger picture, see [guide to naming a guardian for your children](/learn/guardianship).
+
 ## How we can help
 
 A guardian nomination is among the shortest pieces of an estate plan and among the most valuable. An estate planning attorney can help you draft one that holds up in your state and connect it with the trust and standby documents that make it work. Try our [plan finder](/plan-finder) to see which documents fit your family, or book a consultation.
