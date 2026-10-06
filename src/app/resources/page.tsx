@@ -5,6 +5,7 @@ import { EXPLAINERS } from "@/explainers/data";
 import { getAudiences, getChecklists, getComparisons, getFaqs, getGlossary, getGuides, getLessons, getLifeEvents, getMistakes, getPosts } from "@/lib/content";
 import { CardGrid, PageHeader } from "@/components/ui";
 import { getMagnets } from "@/lib/magnets";
+import { getQuizzes } from "@/lib/quizzes";
 
 export const metadata: Metadata = {
   title: "Free estate planning resources",
@@ -20,6 +21,7 @@ export default function Resources() {
     { href: "/life-events", label: "Life events", count: getLifeEvents().length, body: "What to do after a big change." },
     { href: "/estate-planning-for", label: "By situation", count: getAudiences().length, body: "Caregivers, new parents, executors, business owners and more." },
     { href: "/tools", label: "Calculators and tools", count: TOOLS.length, body: "Run the numbers privately." },
+    { href: "/quizzes", label: "Quizzes", count: getQuizzes().length, body: "Test what you know and check how protected your family is." },
     { href: "/free", label: "Free downloads and email courses", count: getMagnets().length, body: "Workbooks, planners, kits and templates to print and keep." },
     { href: "/checklists", label: "Checklists and worksheets", count: getChecklists().length, body: "Tick off on screen or print." },
     { href: "/explainers", label: "Animated explainers", count: EXPLAINERS.length, body: "Two-minute videos with transcripts." },

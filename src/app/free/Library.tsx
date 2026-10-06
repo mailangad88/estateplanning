@@ -13,12 +13,14 @@ interface Item {
   categoryLabel: string;
   pages: number;
   audience: string;
+  lang: string;
 }
 
 export default function Library({ items, categories, formats }: { items: Item[]; categories: Record<string, string>; formats: Record<string, string> }) {
   const [category, setCategory] = useState("all");
   const [format, setFormat] = useState("all");
   const [query, setQuery] = useState("");
+  const [lang, setLang] = useState("all");
 
   const usedCategories = Object.entries(categories).filter(([k]) => items.some((i) => i.category === k));
   const usedFormats = Object.entries(formats).filter(([k]) => items.some((i) => i.format === k));
@@ -28,9 +30,10 @@ export default function Library({ items, categories, formats }: { items: Item[];
       (i) =>
         (category === "all" || i.category === category) &&
         (format === "all" || i.format === format) &&
+        (lang === "all" || i.lang === lang) &&
         (!q || `${i.title} ${i.promise} ${i.audience}`.toLowerCase().includes(q)),
     );
-  }, [items, category, format, query]);
+  }, [items, category, format, query, lang]);
 
   return (
     <>
@@ -53,14 +56,22 @@ export default function Library({ items, categories, formats }: { items: Item[];
             {usedFormats.map(([k, v]) => <option key={k} value={k}>{v}</option>)}
           </select>
         </label>
+        <label className="field">
+          Language
+          <select value={lang} onChange={(e) => setLang(e.target.value)}>
+            <option value="all">All</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+          </select>
+        </label>
       </div>
       <p className="meta" aria-live="polite">{shown.length} of {items.length} resources</p>
       <ul className="cards">
         {shown.map((i) => (
           <li key={i.slug}>
             <Link href={`/free/${i.slug}`} className="card-link">
-              <span className="tag">{i.formatLabel} · {i.categoryLabel}</span>
-              <strong>{i.title}</strong>
+              <span className="tag">{i.formatLabel} · {i.lang === "es" ? "Español" : i.categoryLabel}</span>
+              <strong lang={i.lang}>{i.title}</strong>
               <span className="card-desc">{i.promise}</span>
               <span className="meta" style={{ margin: 0 }}>{i.format === "email-course" ? "5 short emails" : `About ${i.pages} printed pages`} · Free</span>
             </Link>

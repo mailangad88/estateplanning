@@ -100,7 +100,7 @@ npm run typecheck
 
 ## Free resource library (lead magnets)
 
-`content/magnets/` holds 44 gated resources: checklists, worksheets, planners, templates, kits and five 5-day
+`content/magnets/` holds 60 gated resources (including 4 in Spanish): checklists, worksheets, planners, templates, kits and five 5-day
 email courses (format in `content/magnets/README.md`). Each gets a landing page at `/free/<slug>` with an
 email-only opt-in (`/api/subscribe`, `kind: "magnet"` or `"course"`, `interest: "magnet:<slug>"`, and
 `details.tag` / `details.sequence` for CRM routing) and a printable, noindexed copy at `/free/<slug>/view`.
@@ -110,3 +110,20 @@ Every guide, comparison, life-event page and blog post (through its pillar guide
 resource's opt-in plus up to two more, chosen from each resource's `related:` list (`src/lib/magnets.ts`).
 Resources with `sequence: G` are for people after a death and must only receive the grief sequence.
 The CRM automation must send the promised email with the `/free/<slug>/view` link (or the course lessons).
+
+## Quizzes
+
+`content/quizzes/*.json` (format in `content/quizzes/README.md`) power `/quizzes/<slug>`: one question per screen,
+a free score and band, and an email-gated answer review that also sends a matching free resource
+(`/api/subscribe`, `kind: "report"`, `interest: "quiz:<slug>"`).
+
+## A/B tests and analytics
+
+`src/lib/experiments.ts` assigns each visitor a stable variant per experiment (anonymous id, no personal data),
+pushes `experiment_view` to the dataLayer and adds `exp_<name>` to opt-in details and `lead_capture` events.
+Running now: `magnet_cta` (button copy), `magnet_fields` (name + email vs email only) and `quiz_gate`
+(score first vs email first with a skip link). Preview a variant with `?exp_<name>=<variant>`.
+
+Set `NEXT_PUBLIC_GTM_ID` to load Google Tag Manager (configure GA4 and ad tags there). `src/components/Analytics.tsx`
+also sends `scroll_depth` and `cta_click`; tools and quizzes send `tool_view`, `tool_start` and `tool_complete`.
+No event carries names, emails, phone numbers or answers.

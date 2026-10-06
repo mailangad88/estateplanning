@@ -9,10 +9,10 @@ function formatDate(iso: string): string {
 }
 
 /** Byline with the review status. Every content page shows this until the attorney approves it. */
-export default function PageMeta({ updated, words }: { updated: string; words?: number }) {
+export default function PageMeta({ updated, words, reviewed = false }: { updated: string; words?: number; reviewed?: boolean }) {
   return (
     <p className="page-meta">
-      <span className="review-badge">{site.reviewStatus}</span>
+      <span className="review-badge">{reviewed ? "Attorney reviewed" : site.reviewStatus}</span>
       {updated && <> Updated <time dateTime={updated}>{formatDate(updated)}</time>.</>}
       {words ? <> {Math.max(1, Math.round(words / 230))} min read.</> : null}{" "}
       General education, <Link href="/legal/disclaimer">not legal advice</Link>.

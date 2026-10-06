@@ -1,10 +1,11 @@
 import { MONEY_PAGES } from "@/content/money-pages";
+import { getQuizzes } from "@/lib/quizzes";
 import { getMagnets } from "@/lib/magnets";
 import { TOOLS } from "@/config/tools";
 import { EXPLAINERS } from "@/explainers/data";
 import { getAudiences, getChecklists, getComparisons, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
 import { getStates } from "@/lib/states";
-import { getAllArticles, getCluster, getGlossary as getTermPages, getStateGuides } from "@/lib/library";
+import { getAllArticles, getCluster, getGlossary as getTermPages, getStateGuides, isIndexable } from "@/lib/library";
 
 export interface SitePage {
   path: string;
@@ -48,6 +49,8 @@ export function allPages(): SitePage[] {
   for (const l of getLifeEvents()) pages.push({ path: `/life-events/${l.slug}`, title: l.title, description: l.description, updated: l.updated, section: "Life events" });
   for (const a of getAudiences()) pages.push({ path: `/estate-planning-for/${a.slug}`, title: a.title, description: a.description, updated: a.updated, section: "By situation" });
   for (const k of getChecklists()) pages.push({ path: `/checklists/${k.slug}`, title: k.title, description: k.description, updated: k.updated, section: "Checklists" });
+  pages.push({ path: "/quizzes", title: "Quizzes", description: "Estate planning quizzes.", updated: TODAY, section: "Main" });
+  for (const q of getQuizzes()) pages.push({ path: `/quizzes/${q.slug}`, title: q.title, description: q.description, updated: q.updated, section: "Quizzes" });
   for (const m of getMagnets()) pages.push({ path: `/free/${m.slug}`, title: m.title, description: m.description, updated: m.updated, section: "Free resources" });
   for (const t of TOOLS) pages.push({ path: `/tools/${t.slug}`, title: t.title, description: t.description, updated: TODAY, section: "Tools" });
   for (const e of EXPLAINERS) pages.push({ path: `/explainers/${e.slug}`, title: e.title, description: e.description, updated: TODAY, section: "Explainers" });
@@ -57,10 +60,10 @@ export function allPages(): SitePage[] {
   // Estate planning library: topic-cluster pillars and articles, state law guides, glossary term pages.
   pages.push({ path: "/learn", title: "Estate planning library", description: "Every guide in the library, organized by topic.", updated: TODAY, section: "Main" });
   pages.push({ path: "/estate-planning", title: "Estate planning laws by state", description: "Will signing rules, probate, small estate limits and state taxes for all 50 states and DC.", updated: TODAY, section: "Main" });
-  for (const a of getAllArticles()) {
+  for (const a of getAllArticles().filter(isIndexable)) {
     pages.push({ path: a.url, title: a.title, description: a.description, updated: a.updated || TODAY, section: `Library: ${getCluster(a.cluster)?.name ?? a.cluster}` });
   }
-  for (const s of getStateGuides()) {
+  for (const s of getStateGuides().filter(isIndexable)) {
     pages.push({ path: s.url, title: s.title, description: s.description, updated: s.updated || TODAY, section: "Laws by state" });
   }
   for (const g of getTermPages()) {

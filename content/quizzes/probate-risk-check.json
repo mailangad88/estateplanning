@@ -1,0 +1,227 @@
+{
+  "title": "Probate Exposure Check",
+  "promise": "Ten questions about how you hold your property. See how much of your estate could end up in probate court.",
+  "description": "Answer ten questions about your home, accounts, retirement plans and business interests to see how much of your estate may be exposed to probate.",
+  "kind": "assessment",
+  "category": "property",
+  "magnet": "probate-vs-trust-guide",
+  "related": [
+    "guides/how-probate-works",
+    "guides/funding-your-trust",
+    "compare/probate-vs-non-probate-assets"
+  ],
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How is your home titled?",
+      "options": [
+        {
+          "label": "In my name alone",
+          "points": 2
+        },
+        {
+          "label": "In a trust, or jointly with right of survivorship, or with a transfer on death deed",
+          "points": 0
+        },
+        {
+          "label": "I am not sure",
+          "points": 2
+        }
+      ],
+      "explanation": "Property in one person's name with no beneficiary generally goes through probate. Joint ownership with survivorship, a trust, or a transfer on death deed in states that allow them can pass it outside probate. Each has trade-offs, and rules vary by state."
+    },
+    {
+      "id": "q2",
+      "prompt": "Do your bank accounts name a payable on death (POD) beneficiary?",
+      "options": [
+        {
+          "label": "No, or I do not know",
+          "points": 2
+        },
+        {
+          "label": "Some do, some do not",
+          "points": 1
+        },
+        {
+          "label": "Yes, all of them",
+          "points": 0
+        }
+      ],
+      "explanation": "A POD designation lets a bank account pass directly to the named person without probate. Accounts with no POD and no co-owner are part of the probate estate. Many banks offer the form at no cost."
+    },
+    {
+      "id": "q3",
+      "prompt": "Do your investment or brokerage accounts have a transfer on death (TOD) registration?",
+      "options": [
+        {
+          "label": "No, or I do not know",
+          "points": 2
+        },
+        {
+          "label": "Some do",
+          "points": 1
+        },
+        {
+          "label": "Yes, all of them, or I have none",
+          "points": 0
+        }
+      ],
+      "explanation": "TOD registration works like POD for brokerage accounts and lets assets pass to the named person outside probate. Without it, the account usually goes through the estate. Check the account application or call the firm to see what is on file."
+    },
+    {
+      "id": "q4",
+      "prompt": "Do your retirement accounts (401(k), IRA) and life insurance have current beneficiaries named?",
+      "options": [
+        {
+          "label": "Yes, and they are up to date",
+          "points": 0
+        },
+        {
+          "label": "Named, but I have not looked in years",
+          "points": 1
+        },
+        {
+          "label": "No, or I do not know",
+          "points": 2
+        }
+      ],
+      "explanation": "Retirement accounts and life insurance pass by beneficiary form and generally skip probate. If no one is named, or the named person has died, the money can fall back to the estate or follow plan default rules. A periodic review keeps the forms current."
+    },
+    {
+      "id": "q5",
+      "prompt": "If you have a living trust, how much of your property is titled in its name?",
+      "options": [
+        {
+          "label": "I do not have a trust",
+          "points": 1
+        },
+        {
+          "label": "Most of it",
+          "points": 0
+        },
+        {
+          "label": "Little or none, or I am not sure",
+          "points": 2
+        }
+      ],
+      "explanation": "A trust avoids probate only for assets it actually owns or receives by beneficiary designation. A signed trust with unretitled accounts and property can leave those assets to be probated anyway. Funding is the step that makes the trust work."
+    },
+    {
+      "id": "q6",
+      "prompt": "Do you own real estate in a state other than where you live?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes, and it is in a trust or has a TOD deed",
+          "points": 0
+        },
+        {
+          "label": "Yes, and it is in my name alone",
+          "points": 2
+        }
+      ],
+      "explanation": "Real estate generally goes through probate in the state where it sits, even if the owner lived elsewhere. That can mean a second court case, called ancillary probate, in a second state. A trust or other non-probate title can help avoid it."
+    },
+    {
+      "id": "q7",
+      "prompt": "How are your vehicles, boats or similar titled property held?",
+      "options": [
+        {
+          "label": "In my name alone",
+          "points": 2
+        },
+        {
+          "label": "With a TOD beneficiary, or jointly",
+          "points": 0
+        },
+        {
+          "label": "I do not own any",
+          "points": 0
+        }
+      ],
+      "explanation": "Many states let you add a beneficiary to a vehicle title or use a simple transfer form for small items. Where those options are not used, the vehicle may be part of the estate. Small-value property is often handled with a simplified process, and rules vary by state."
+    },
+    {
+      "id": "q8",
+      "prompt": "Do you own all or part of a business, or have business interests in your name?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes, held through an LLC or corporation with a succession plan",
+          "points": 1
+        },
+        {
+          "label": "Yes, in my name with no written plan",
+          "points": 2
+        }
+      ],
+      "explanation": "A business interest in your own name can go through probate, and the business may be stuck waiting for someone with legal authority. Operating agreements and succession plans can set out who steps in. A business attorney can help match the plan to the entity type."
+    },
+    {
+      "id": "q9",
+      "prompt": "Roughly, how much of your total property is in your sole name with no beneficiary or co-owner?",
+      "options": [
+        {
+          "label": "Very little",
+          "points": 0
+        },
+        {
+          "label": "About half",
+          "points": 1
+        },
+        {
+          "label": "Most of it",
+          "points": 2
+        }
+      ],
+      "explanation": "Probate generally applies to assets in your sole name without a beneficiary. The more property that sits there, the more would pass through the court. Many states exempt small estates from the full process, so the dollar amount matters."
+    },
+    {
+      "id": "q10",
+      "prompt": "Do you have a will, and does it name an executor?",
+      "options": [
+        {
+          "label": "Yes, current",
+          "points": 0
+        },
+        {
+          "label": "Yes, but it is old or I am unsure it was signed correctly",
+          "points": 1
+        },
+        {
+          "label": "No",
+          "points": 2
+        }
+      ],
+      "explanation": "Without a will, the court appoints an administrator and applies state law to decide heirs. A current will names who is in charge and can name a guardian for children. It does not avoid probate, but it makes the process more orderly."
+    }
+  ],
+  "bands": [
+    {
+      "min": 0,
+      "max": 6,
+      "label": "Low exposure",
+      "summary": "Most of what you own seems to pass by title, beneficiary or trust, which generally keeps it out of probate. Keep records current and recheck after big life changes. A guide to how probate and trusts compare is a useful reference."
+    },
+    {
+      "min": 7,
+      "max": 13,
+      "label": "Some exposure",
+      "summary": "Part of your estate could go through probate, usually the assets in your name alone. Adding POD or TOD designations or funding a trust are common ways people address that. Rules vary by state, so a local attorney can say what fits."
+    },
+    {
+      "min": 14,
+      "max": 20,
+      "label": "High exposure",
+      "summary": "Much of your property appears to be in your name alone, which would usually mean probate. Common tools include POD and TOD registrations, updated deeds and a funded living trust. The guide below compares them in general terms."
+    }
+  ]
+}

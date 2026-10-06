@@ -49,7 +49,7 @@ describe("free resource library", () => {
         continue;
       }
       if (m.words < 700) problems.push(`${m.slug}: only ${m.words} words`);
-      if (!/^## When to talk to an attorney/m.test(m.body)) problems.push(`${m.slug}: no attorney section`);
+      if (!/^## (When to talk to an attorney|Cuándo hablar con un abogado)/m.test(m.body)) problems.push(`${m.slug}: no attorney section`);
     }
     expect(problems).toEqual([]);
   });

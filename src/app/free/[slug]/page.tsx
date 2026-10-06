@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import MagnetOptIn from "@/components/MagnetOptIn";
 import { Breadcrumbs, ReviewNote } from "@/components/ui";
-import { MAGNET_CATEGORIES, MAGNET_FORMATS, getMagnet, getMagnets } from "@/lib/magnets";
+import { MAGNET_CATEGORIES, MAGNET_FORMATS, getMagnet, getMagnets, translationsOf } from "@/lib/magnets";
 import { resolveSlug } from "@/lib/links";
 import { breadcrumbLd, JsonLd } from "@/lib/seo";
 import { ResourceCover, type CoverPalette } from "@/components/visuals/covers/ResourceCover";
@@ -44,9 +44,9 @@ export default async function MagnetLanding({ params }: Props) {
     .filter((r): r is NonNullable<typeof r> => r !== null)
     .slice(0, 4);
   const more = getMagnets()
-    .filter((x) => x.slug !== m.slug && x.category === m.category)
+    .filter((x) => x.slug !== m.slug && x.category === m.category && x.lang === m.lang)
     .slice(0, 3);
-  const inside = m.format === "email-course" ? m.lessons.map((l) => `Day ${l.day}: ${l.subject}`) : m.headings.map((h) => h.text).filter((t) => !/^(When to talk to an attorney|Next step|Sources)$/i.test(t));
+  const inside = m.format === "email-course" ? m.lessons.map((l) => `Day ${l.day}: ${l.subject}`) : m.headings.map((h) => h.text).filter((t) => !/^(When to talk to an attorney|Next step|Sources|Cuándo hablar con un abogado|Siguiente paso|Fuentes)$/i.test(t));
   const art = CATEGORY_ART[m.category] ?? CATEGORY_ART.basics;
   const cover = getCover(m.slug) ?? {
     title: m.title,
@@ -56,14 +56,21 @@ export default async function MagnetLanding({ params }: Props) {
     palette: art.palette,
     calm: m.sequence === "G",
   };
-  const summary = { slug: m.slug, title: m.title, format: m.format, formatLabel, tag: m.tag, sequence: m.sequence };
+  const es = m.lang === "es";
+  const alternates = translationsOf(m);
+  const summary = { lang: m.lang, slug: m.slug, title: m.title, format: m.format, formatLabel, tag: m.tag, sequence: m.sequence };
 
   return (
-    <article className="magnet-landing">
+    <article className="magnet-landing" lang={m.lang}>
       <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/free", label: "Free resources" }, { label: m.title }]} />
       <p className="tag">Free {formatLabel.toLowerCase()} · {MAGNET_CATEGORIES[m.category] ?? m.category}</p>
       <h1>{m.title}</h1>
       <p className="lead">{m.promise}</p>
+      {alternates.map((a) => (
+        <p key={a.slug} className="meta">
+          <Link href={`/free/${a.slug}`} hrefLang={a.lang} lang={a.lang}>{a.lang === "es" ? "También disponible en español" : "Also available in English"}</Link>
+        </p>
+      ))}
       <div className="magnet-landing__grid">
         <div>
           <div className="magnet-cover" aria-hidden="true"><ResourceCover {...cover} bare /></div>
@@ -77,7 +84,7 @@ export default async function MagnetLanding({ params }: Props) {
             {m.format === "email-course" ? "5 short emails" : `About ${m.pages} printed pages`} · Free
           </p>
           <div className="card">
-            <strong>{m.format === "email-course" ? "The lessons" : "What's inside"}</strong>
+            <strong>{m.format === "email-course" ? "The lessons" : es ? "Qué incluye" : "What's inside"}</strong>
             <ol className="inside">{inside.map((t) => <li key={t}>{t}</li>)}</ol>
           </div>
         </div>
