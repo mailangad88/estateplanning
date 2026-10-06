@@ -9,6 +9,16 @@ import { learnHrefFor } from "@/config/life-game";
 import { diagramRegistry } from "@/components/visuals/diagrams/registry";
 import { ICON_MAP } from "@/components/visual-card";
 import { DecisionEmbed } from "@/components/decision/DecisionEmbed";
+import WhoInherits from "@/components/tools/WhoInherits";
+import AssetSorter from "@/components/tools/AssetSorter";
+import InheritanceTimeline from "@/components/tools/InheritanceTimeline";
+import type { WidgetSlug } from "@/config/visual-kit";
+
+const WIDGET_COMPONENTS: Record<WidgetSlug, React.ComponentType<{ initialState?: string }>> = {
+  "who-inherits": WhoInherits,
+  "probate-asset-sorter": AssetSorter,
+  "inheritance-timeline": InheritanceTimeline,
+};
 import { topicFor } from "@/lib/visual-topic";
 import { planVisuals, type PlanInput } from "@/lib/visual-sections";
 import { WhatIfCard, type WhatIfData } from "./whatif-card";
@@ -126,6 +136,16 @@ export function VisualEmbed({ v, props, n }: { v: VisualSpec; props: RichProsePr
           </Link>
         );
       }
+      break;
+    }
+    case "widget": {
+      const W = WIDGET_COMPONENTS[v.slug];
+      body = (
+        <>
+          <div className="vk-widget"><W initialState={launchState()} /></div>
+          <p className="vk-widget__more"><Link href={`/tools/${v.slug}`} className="arrow-link">Open it full size <ArrowRight size={14} aria-hidden="true" /></Link></p>
+        </>
+      );
       break;
     }
     case "decision":

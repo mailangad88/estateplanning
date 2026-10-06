@@ -75,3 +75,32 @@ describe("decision embeds", () => {
     expect(decisions).toHaveLength(1);
   });
 });
+
+describe("inline tools and SEO picks", () => {
+  const html = "<p>Intro</p><h2>How much does it cost?</h2><p>a</p><h2>Who gets what</h2><p>b</p><h2>What could go wrong</h2><p>c</p>";
+  it("draws the page's widget inline once and drops its duplicate link card", () => {
+    const segs = planVisuals({ html, path: "/learn/basics/what-happens-without-a-will", title: "Without a will", widget: "who-inherits", tools: ["/tools/who-inherits"] });
+    const vis = segs.flatMap((s) => ("visual" in s ? [s.visual] : []));
+    expect(vis.filter((v) => v.type === "widget")).toEqual([{ type: "widget", slug: "who-inherits" }]);
+    expect(vis.some((v) => v.type === "tool")).toBe(false);
+  });
+  it("ignores tools that are not widgets", () => {
+    const segs = planVisuals({ html, path: "/learn/x/y", title: "Y", widget: "probate-cost-estimator" });
+    expect(segs.some((s) => "visual" in s && s.visual.type === "widget")).toBe(false);
+  });
+  it("puts the SEO thread's suggested what-if and decision guide ahead of topic matches", () => {
+    const id = WHAT_IF_SCENARIOS[WHAT_IF_SCENARIOS.length - 1].id;
+    const segs = planVisuals({
+      html: "<p>i</p><h2>What if you wait?</h2><p>a</p><h2>Which should you choose?</h2><p>b</p>",
+      path: "/learn/trusts/revocable-living-trust", title: "Revocable living trust",
+      suggested: { whatIf: [id], decide: "types-of-power-of-attorney" },
+    });
+    const vis = segs.flatMap((s) => ("visual" in s ? [s.visual] : []));
+    expect(vis).toContainEqual({ type: "whatif", id });
+    expect(vis).toContainEqual({ type: "decision", slug: "types-of-power-of-attorney", part: "map" });
+  });
+  it("parses a widget marker", () => {
+    expect(parseMarker("widget", " slug=inheritance-timeline")).toEqual({ type: "widget", slug: "inheritance-timeline" });
+    expect(parseMarker("widget", " slug=probate-cost-estimator")).toBeNull();
+  });
+});

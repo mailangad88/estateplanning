@@ -851,3 +851,8 @@ footer.site .footer-cta .button:hover { text-decoration: none; }
 }
 
 .lgame-band__more { margin-top: 24px; text-align: center; }
+
+/* An inline tool inside an article. The tool brings its own card, so no extra frame here. */
+.vk--widget { padding: 0; background: none; border: 0; box-shadow: none; }
+.vk--widget .vk-widget { margin: 0; }
+.vk-widget__more { margin: 10px 0 0; font-size: 0.95rem; }
