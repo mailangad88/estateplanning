@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function SearchPage() {
   return (
     <>
-      <PageHeader title="Search" lead="Find a guide, tool, free resource, state guide or glossary term." />
+      <PageHeader kicker="Search" art="SpotQuestions" title="Search" lead="Find a guide, tool, free resource, state guide or glossary term." />
       <Suspense>
         <SiteSearch />
       </Suspense>
