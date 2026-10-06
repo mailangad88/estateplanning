@@ -95,7 +95,24 @@ export const TOOLS: ToolInfo[] = [
     description: "Compare up to three possible guardians on the priorities you choose, with notes on backups, money and the conversation to have.",
     answer: "Rate each person against what matters most to you. The best fit is a starting point for a conversation, not a verdict. Many parents also name a backup, and a court makes the final decision, so put your choice in a signed will.",
   },
-
+  {
+    slug: "who-inherits",
+    title: "Who inherits if there is no will?",
+    description: "Pick your family and see a family tree with each heir's share under Illinois intestacy rules.",
+    answer: "In Illinois with no will, a spouse and descendants split the estate half and half; a spouse alone or descendants alone take everything; with neither, parents, siblings and the children of deceased siblings share equally, with a double portion to a surviving parent if the other parent has died.",
+  },
+  {
+    slug: "probate-asset-sorter",
+    title: "Which of my assets go through probate?",
+    description: "Add your assets and how each is held to see which would go through probate, which pass outside it, and why.",
+    answer: "Assets in your name alone with no beneficiary or surviving co-owner usually go through probate. Joint assets with survivorship, assets in a funded living trust, and accounts or property with a living named beneficiary or transfer on death designation usually pass outside it.",
+  },
+  {
+    slug: "inheritance-timeline",
+    title: "When will I get my inheritance? A timeline",
+    description: "Pick how the asset passes and see a visual timeline of the usual steps, with Illinois legal deadlines where confirmed.",
+    answer: "It depends on how the asset passes. Beneficiary and joint assets often transfer within weeks, a living trust often takes months, and probate often takes about a year or more. A dispute or estate tax can add months or years.",
+  },
 ];
 /**
  * Editable assumptions behind the calculators. These are general figures, not quotes.
@@ -171,6 +188,9 @@ export const CA_STATUTORY_TIERS: { upTo: number; rate: number }[] = [
  * First match wins, so the more specific patterns come first.
  */
 const TOOL_BY_PATH: [RegExp, string][] = [
+  [/without-a-will|intestate|intestacy|who-inherits|no-will/, "who-inherits"],
+  [/how-long-does-probate|inheritance-take|when-will-i-get|how-long.*inherit/, "inheritance-timeline"],
+  [/probate-vs-non-probate|non-probate|go-through-probate|avoid-probate/, "probate-asset-sorter"],
   [/small-estate|skip-probate|bank-account-after-death/, "small-estate-checker"],
   [/inheritance-tax|estate-tax|death-tax/, "state-death-tax-checker"],
   [/medicaid|long-term-care|nursing-home|aging-parent/, "medicaid-savings-runway"],

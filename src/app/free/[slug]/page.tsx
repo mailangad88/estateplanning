@@ -9,6 +9,11 @@ import { resolveSlug } from "@/lib/links";
 import { breadcrumbLd, JsonLd } from "@/lib/seo";
 import { ResourceCover } from "@/components/visuals/covers/ResourceCover";
 import { coverPropsFromMagnet } from "@/components/visuals/covers/fromMeta";
+import { diagramRegistry } from "@/components/visuals/diagrams/registry";
+import { extrasFor } from "@/config/magnet-extras";
+import { TOOLS } from "@/config/tools";
+import { getQuiz } from "@/lib/quizzes";
+import { getDecision, decisionPath } from "@/config/decisions";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -38,6 +43,25 @@ export default async function MagnetLanding({ params }: Props) {
   const cover = coverPropsFromMagnet(m);
   const es = m.lang === "es";
   const alternates = translationsOf(m);
+  const extras = extrasFor(m.category);
+  const diagram = diagramRegistry.find((d) => d.name === (m.diagram ?? extras.diagram));
+  const Diagram = diagram?.component;
+  const tryIt = es
+    ? []
+    : [
+        ...extras.tools.flatMap((slug) => {
+          const t = TOOLS.find((x) => x.slug === slug);
+          return t ? [{ href: `/tools/${t.slug}`, title: t.title, description: t.description, tag: "Free tool" }] : [];
+        }),
+        ...extras.quizzes.flatMap((slug) => {
+          const q = getQuiz(slug);
+          return q ? [{ href: `/quizzes/${q.slug}`, title: q.title, description: q.description, tag: "Quiz" }] : [];
+        }),
+        ...extras.decide.flatMap((slug) => {
+          const d = getDecision(slug);
+          return d ? [{ href: decisionPath(d.slug), title: d.title, tag: "Visual guide" }] : [];
+        }),
+      ].slice(0, 4);
   const summary = { lang: m.lang, slug: m.slug, title: m.title, format: m.format, formatLabel, tag: m.tag, sequence: m.sequence };
 
   return (
@@ -74,6 +98,24 @@ export default async function MagnetLanding({ params }: Props) {
         </div>
         <MagnetOptIn magnet={summary} />
       </div>
+      {m.answers.length > 0 && (
+        <section className="magnet-answers">
+          <h2>{es ? "Preguntas que responde" : "Questions this answers"}</h2>
+          <ul className="magnet-answers__list">{m.answers.map((q) => <li key={q}>{q}</li>)}</ul>
+        </section>
+      )}
+      {Diagram && (
+        <section className="magnet-diagram">
+          <h2>{es ? "De un vistazo" : "At a glance"}</h2>
+          <Diagram />
+        </section>
+      )}
+      {tryIt.length > 0 && (
+        <section>
+          <h2>Try it yourself</h2>
+          <CardGrid items={tryIt} />
+        </section>
+      )}
       <ReviewNote reviewed={m.reviewed} updated={m.updated} />
       {related.length > 0 && (
         <section>

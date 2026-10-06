@@ -33,10 +33,10 @@ const BY_CLUSTER: Record<string, string[]> = {
 /** Free tools and printable checklists for each cluster: the lead capture points for library readers. */
 const TOOLS_BY_CLUSTER: Record<string, string[]> = {
   basics: ["/tools/plan-readiness-assessment", "/checklists/documents-to-gather-before-your-consult", "/checklists/asset-and-account-inventory", "/checklists/letter-of-instruction-outline"],
-  wills: ["/tools/will-or-trust", "/checklists/choosing-an-executor-worksheet", "/tools/plan-readiness-assessment"],
+  wills: ["/tools/will-or-trust", "/tools/who-inherits", "/checklists/choosing-an-executor-worksheet", "/tools/plan-readiness-assessment"],
   trusts: ["/decide/types-of-trusts", "/tools/will-or-trust", "/checklists/trust-funding-checklist", "/tools/probate-cost-estimator"],
-  probate: ["/decide/ways-to-avoid-probate", "/tools/small-estate-checker", "/tools/probate-cost-estimator", "/tools/executor-workload", "/checklists/first-30-days-after-a-death"],
-  "after-a-death": ["/checklists/first-30-days-after-a-death", "/tools/small-estate-checker", "/tools/executor-workload", "/tools/probate-cost-estimator"],
+  probate: ["/decide/ways-to-avoid-probate", "/tools/probate-asset-sorter", "/tools/inheritance-timeline", "/tools/small-estate-checker", "/tools/probate-cost-estimator", "/tools/executor-workload", "/checklists/first-30-days-after-a-death"],
+  "after-a-death": ["/checklists/first-30-days-after-a-death", "/tools/inheritance-timeline", "/tools/who-inherits", "/tools/small-estate-checker", "/tools/executor-workload", "/tools/probate-cost-estimator"],
   "power-of-attorney": ["/decide/types-of-power-of-attorney", "/tools/plan-readiness-assessment", "/checklists/important-contacts-list"],
   "healthcare-directives": ["/decide/types-of-advance-directives", "/checklists/funeral-and-burial-wishes", "/tools/plan-readiness-assessment"],
   guardianship: ["/decide/leaving-money-to-minor-children", "/tools/guardian-picker", "/checklists/choosing-a-guardian-worksheet", "/tools/guardian-fund-calculator", "/tools/life-insurance-needs"],
@@ -48,8 +48,8 @@ const TOOLS_BY_CLUSTER: Record<string, string[]> = {
   "special-needs": ["/tools/guardian-fund-calculator", "/checklists/letter-of-instruction-outline"],
   "elder-care": ["/decide/guardianship-vs-conservatorship", "/tools/medicaid-savings-runway", "/tools/medicaid-lookback-date", "/checklists/documents-to-gather-before-your-consult"],
   "digital-assets": ["/checklists/digital-assets-inventory", "/checklists/important-contacts-list"],
-  "what-if": ["/tools/plan-readiness-assessment", "/tools/beneficiary-audit", "/checklists/annual-estate-plan-review", "/tools/plan-review-reminder"],
-  "property-and-assets": ["/decide/how-to-leave-your-house-to-your-children", "/checklists/trust-funding-checklist", "/tools/will-or-trust", "/tools/probate-cost-estimator"],
+  "what-if": ["/tools/who-inherits", "/tools/plan-readiness-assessment", "/tools/beneficiary-audit", "/checklists/annual-estate-plan-review", "/tools/plan-review-reminder"],
+  "property-and-assets": ["/decide/how-to-leave-your-house-to-your-children", "/tools/probate-asset-sorter", "/checklists/trust-funding-checklist", "/tools/will-or-trust", "/tools/probate-cost-estimator"],
 };
 
 export interface SiteLink {

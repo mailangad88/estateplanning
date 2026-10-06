@@ -67,6 +67,10 @@ export interface Magnet {
   translationOf?: string;
   /** Two-letter code when the resource is written for one state (frontmatter `state`, or inferred from the slug) */
   state?: string;
+  /** Reader questions this resource answers, copied from the question bank (frontmatter `answers`) */
+  answers: string[];
+  /** Name of a diagram in the visuals registry to show on the landing page (frontmatter `diagram`) */
+  diagram?: string;
   /** Raw markdown, used by link checks */
   body: string;
 }
@@ -139,6 +143,8 @@ export function getMagnets(): Magnet[] {
         lang: String(data.lang ?? "en"),
         translationOf: data.translation_of ? String(data.translation_of) : undefined,
         state: data.state ? String(data.state).toUpperCase() : stateFromSlug(f.replace(/\.md$/, "")),
+        answers: Array.isArray(data.answers) ? data.answers.map(String) : [],
+        diagram: data.diagram ? String(data.diagram) : undefined,
         body: content,
       } satisfies Magnet;
     });
