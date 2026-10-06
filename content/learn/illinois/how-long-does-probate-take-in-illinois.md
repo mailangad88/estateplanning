@@ -43,6 +43,8 @@ A simple estate with a clear will and no disputes can often be closed in a bit m
 
 There is no single legal time limit for an executor to finish. Illinois sets minimum waiting periods and outer limits for specific events. The rest depends on the estate. We do not give an average here, because the statute does not set one, and every county moves at its own pace. For a broader comparison with other states, see our article on [how long probate takes](/learn/probate/how-long-does-probate-take).
 
+<!-- visual: diagram name=ProbateTimeline -->
+
 ## What are the fixed deadlines and waiting periods?
 
 | Event | Time period | Source |
@@ -80,11 +82,15 @@ Several things add months:
 
 Court backlogs also vary by county. Ask the clerk or an attorney in your county what to expect for scheduling.
 
+<!-- visual: whatif id=probate-delay -->
+
 ## Can an estate finish faster than that?
 
 Yes, if it does not need formal probate at all. When the decedent left only personal property under a dollar limit, and no real estate, a family member may collect it with an affidavit. There is no creditor-claim clock in the same way, though the person signing the affidavit remains responsible for paying valid debts. See the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit) and the [small estate checker](/tools/small-estate-checker).
 
 Assets with beneficiary designations, joint ownership with survivorship, or a living trust pass outside probate on their own timeline.
+
+<!-- visual: decision slug=ways-to-avoid-probate part=map -->
 
 ## Example: Ravi and the house that would not sell
 

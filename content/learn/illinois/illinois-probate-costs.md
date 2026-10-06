@@ -50,6 +50,8 @@ This page covers costs only. For the steps, see [Illinois probate, step by step]
 
 The sections below take them one at a time. Do not treat any of these as a quote. Confirm the current amount with your county clerk.
 
+<!-- visual: tool slug=probate-cost-estimator -->
+
 ## How much is the court filing fee?
 
 It depends on the county. The Cook County Clerk of the Circuit Court publishes a probate filing fee schedule that lists $479 as the filing fee for an independent administration and for a probate of a decedent's estate, effective October 1, 2025. That fee does not rise with the size of the estate in the schedule we reviewed. Other counties publish their own schedules, and fees change. Our [table of Illinois probate filing fees by county](/estate-planning/illinois-probate-fees) lists what ten county clerks charge, with a link to each schedule. Check your clerk's website for the current figure. Extra court fees can come up if there are petitions, contested matters or additional certified copies.
@@ -112,6 +114,8 @@ Heirs have a right to see how the money was spent, and an executor who can show 
 5. Plan ahead with a [living trust](/learn/illinois/illinois-living-trusts) or a [transfer on death instrument](/learn/illinois/illinois-transfer-on-death-instrument) for real estate.
 
 You can also try our [probate cost estimator](/tools/probate-cost-estimator) for a rough, non-binding estimate.
+
+<!-- visual: decision slug=ways-to-avoid-probate part=map -->
 
 ## Example: Marcus and a simple estate
 

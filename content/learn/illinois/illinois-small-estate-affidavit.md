@@ -54,6 +54,8 @@ You can use the affidavit only if all of these are true under 755 ILCS 5/25-1:
 
 A 2025 amendment (Public Act 104-346, effective August 15, 2025) raised the limit from $100,000 to $150,000 and moved registered vehicles outside the cap. We believe the new rules apply to people who die on or after that date, but this should be confirmed. A later act (Public Act 104-624) restates the same $150,000 figure with an effective date of January 1, 2027. Check the statute for the current text before you sign.
 
+<!-- visual: tool slug=small-estate-checker -->
+
 ## What counts toward the limit?
 
 Think bank accounts that have no beneficiary, stocks and brokerage accounts in the decedent's name only, the final paycheck, tax refunds and personal items. Assets that already pass by beneficiary designation or joint ownership do not count, because they are not part of the estate to begin with. Our [probate versus non-probate assets article](/learn/probate/probate-vs-non-probate-assets) explains the difference.
@@ -105,6 +107,8 @@ Banks and brokers sometimes ask for extra documents or their own form. The statu
 ## What if the estate is too large or has a house?
 
 Then you generally need probate, or the property may pass another way. A house held with a spouse by survivorship, or covered by a recorded transfer on death instrument, can pass without probate. See our article on the [Illinois transfer on death instrument](/learn/illinois/illinois-transfer-on-death-instrument). For costs of a formal estate, see [what probate costs in Illinois](/learn/illinois/illinois-probate-costs).
+
+<!-- visual: whatif id=house-stuck-in-probate -->
 
 ## Example: Grace and her father's accounts
 

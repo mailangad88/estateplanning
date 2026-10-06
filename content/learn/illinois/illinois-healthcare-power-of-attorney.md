@@ -77,6 +77,8 @@ The attending physician and other health care providers who treat you cannot ser
 
 The Illinois Living Will Act defines a terminal condition as an incurable and irreversible condition where death is imminent and death-delaying procedures only prolong dying. A living will speaks only in that setting. A health care power of attorney reaches more situations, such as a stroke where recovery is uncertain.
 
+<!-- visual: decision slug=types-of-advance-directives part=map -->
+
 ## What is a POLST, and who needs one?
 
 The Illinois Department of Public Health describes the POLST as a practitioner's order that reflects your wishes about treatments such as CPR. Because it is a medical order, a qualified practitioner must sign it along with you or your legal representative. Providers must honor a validly completed form. No one can require a POLST as a condition of treatment.
@@ -94,6 +96,8 @@ Imagine Carlos, 66, who names his sister Elena as agent. After a falling out he 
 Doctors may turn to a family member under state surrogate rules, but the order of who decides may not match what you would choose. If family members disagree, or no one is available, someone may need to ask a court to appoint a guardian. Read our overview of [Illinois guardianship](/learn/illinois/illinois-guardianship) to see how that works. Putting your choices in writing now spares your family that step.
 
 Talk with your agent about your values before you sign. Our [HIPAA authorization](/learn/healthcare-directives/hipaa-authorization) article explains a related form that lets providers share your records.
+
+<!-- visual: whatif id=hospital-wont-talk -->
 
 ## How we can help
 

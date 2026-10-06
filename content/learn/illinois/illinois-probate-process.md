@@ -43,6 +43,8 @@ For the calendar side of this, see [how long probate takes in Illinois](/learn/i
 
 Only assets in the decedent's name alone usually go through probate. Accounts with a named beneficiary, jointly owned property and assets in a living trust pass outside of it. Our general article on [probate versus non-probate assets](/learn/probate/probate-vs-non-probate-assets) explains the split.
 
+<!-- visual: diagram name=ProbateVsTrustComparison -->
+
 ## What are the steps of Illinois probate?
 
 Here is the usual order for a will-based estate. Each step is covered below.
@@ -113,6 +115,8 @@ The executor files a verified report with the court. It states that notice went 
 ## Is there a way to skip these steps?
 
 Sometimes. If the estate has only personal property below the statutory limit and no real estate, a family member may be able to use an affidavit instead of opening an estate. Read our guide to the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit) and try the [small estate checker](/tools/small-estate-checker). Planning ahead with a [living trust or a transfer on death instrument](/learn/illinois/illinois-living-trusts) can also keep assets out of probate.
+
+<!-- visual: decision slug=ways-to-avoid-probate part=map -->
 
 ## Example: Dolores and her brother's estate
 

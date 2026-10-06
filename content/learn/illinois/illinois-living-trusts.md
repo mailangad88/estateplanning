@@ -46,6 +46,8 @@ A living trust (also called a revocable trust) is an arrangement in which you tr
 
 Illinois lists several ways to create a trust. These include transferring property to a trustee, or declaring that you hold identifiable property as trustee (760 ILCS 3/401). A will can also create one at death, but that is a testamentary trust and does not avoid probate.
 
+<!-- visual: diagram name=LivingTrustFlow -->
+
 ## What does a valid Illinois trust need?
 
 The Trust Code lists the elements of a valid trust (760 ILCS 3/402).
@@ -78,6 +80,8 @@ Our [how to fund a trust](/learn/trusts/how-to-fund-a-trust) guide gives more de
 
 For a home in the trust, an attorney will check the deed form, the title insurance, and any mortgage terms before you sign.
 
+<!-- visual: diagram name=TrustFundingAssets -->
+
 ## How does a bank or title company know the trust exists?
 
 Trustees often use a certification of trust instead of handing over the whole document. Under the Trust Code, it states that the trust exists and the date it was signed, identifies the settlor and the current trustee, lists the trustee's powers, and explains how title is held. A person who relies on it without actual knowledge that it is wrong is protected (760 ILCS 3/1013). This keeps the terms of your trust private.
@@ -91,6 +95,8 @@ Contests are limited too. The Code says a challenge to a revocable trust must st
 ## What does a living trust not do?
 
 A living trust is not a tax shield. Its assets are still part of your estate for estate tax purposes, and Illinois has its own estate tax, which is explained in our [Illinois estate tax](/learn/illinois/illinois-estate-tax) article. It also does not protect assets from your own creditors while you are alive. Whether you need one at all depends on your property and family, as our [do I need a living trust](/learn/trusts/do-i-need-a-living-trust) article explains. For a single Illinois house, the [transfer on death instrument](/learn/illinois/illinois-transfer-on-death-instrument) may be a simpler option.
+
+<!-- visual: whatif id=unfunded-trust -->
 
 ## How we can help
 

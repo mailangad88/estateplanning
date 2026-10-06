@@ -96,6 +96,8 @@ The Illinois tax is figured as if everything were in Illinois. It is then multip
 
 The same method applies to nonresidents. A person who lives elsewhere but owns Illinois real estate files based on the percentage of the estate that is in Illinois.
 
+<!-- visual: whatif id=property-in-two-states -->
+
 ## How can a family lower or avoid Illinois estate tax?
 
 Some common tools exist, and the right one depends on the family. None of them works in every case, and each has a cost.
@@ -107,6 +109,8 @@ Some common tools exist, and the right one depends on the family. None of them w
 - **Life insurance in a trust.** An irrevocable trust can keep policy proceeds out of the taxable estate if set up correctly.
 
 A living trust alone does not reduce the tax. See our article on [Illinois living trusts](/learn/illinois/illinois-living-trusts) for why. If you want a rough idea of where you stand, try our [state death tax checker](/tools/state-death-tax-checker) or the [estate tax estimator](/tools/estate-tax-estimator). The federal side is covered in our guide to the [federal estate tax exemption](/learn/estate-tax/federal-estate-tax-exemption).
+
+<!-- visual: tool slug=estate-tax-estimator -->
 
 ## Will the $4 million figure change?
 

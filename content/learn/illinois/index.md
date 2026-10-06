@@ -52,6 +52,8 @@ A useful way to sort the topics is by the question you are asking.
 
 Our [Illinois estate planning page](/estate-planning/illinois) explains how we work with Illinois families. The rest of this guide covers each topic in turn.
 
+<!-- visual: timeline id=making-a-plan -->
+
 ## What makes a will valid in Illinois?
 
 A will must be in writing, signed by an adult of sound mind, and attested in the signer's presence by at least two credible witnesses (755 ILCS 5/4-1 and 4-3). A notary is not required. The witnesses are what count.
@@ -179,6 +181,8 @@ A transfer on death instrument, or TODI, passes real estate at death under 755 I
 
 See [Illinois living trusts](/learn/illinois/illinois-living-trusts) and the [Illinois transfer on death instrument](/learn/illinois/illinois-transfer-on-death-instrument). Our national [trusts guide](/learn/trusts) explains the trust types.
 
+<!-- visual: decision slug=ways-to-avoid-probate part=map -->
+
 ## What should you do next?
 
 Work through these in order, and stop where your situation is covered.
@@ -192,6 +196,8 @@ Work through these in order, and stop where your situation is covered.
 7. Review everything after a move, a marriage, a divorce or a death in the family.
 
 If a death has just happened, file the will with the clerk right away, and mark the deadlines on a calendar. The 7-month renunciation window and the 6-month contest window start when the will is admitted.
+
+<!-- visual: picker id=will-or-trust -->
 
 ## How we can help
 

@@ -95,9 +95,13 @@ Other limits apply too:
 - A prenuptial or postnuptial agreement may waive some or all of these rights. See [prenuptial agreements and estate plans](/learn/blended-families/prenuptial-agreements-and-estate-plans).
 - If the will already gives the spouse about as much as the statutory share, renouncing may gain little and gives up the will's gifts.
 
+<!-- visual: diagram name=BeneficiaryBeatsWill -->
+
 ## What should you do if you are planning ahead?
 
 If you are the one making a will, assume your spouse has these rights. Leaving a spouse out of a will does not prevent a claim. It may only start a dispute. For a second marriage, the choice of how to provide for the spouse and for children from an earlier marriage is the main planning question. Our article on the [family home in a second marriage](/learn/blended-families/family-home-in-second-marriage) goes through the options. If your goal is to give unequal shares, see [disinheriting or unequal shares](/learn/wills/disinheriting-or-unequal-shares).
+
+<!-- visual: whatif id=new-spouse-takes-all -->
 
 ## What should a surviving spouse do first?
 

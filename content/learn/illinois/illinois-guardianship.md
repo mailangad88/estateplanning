@@ -52,6 +52,8 @@ Not necessarily. The statute says guardianship should be used only as necessary 
 
 Take Hal, 81, who has memory loss but still handles his daily routine. A court might give a guardian power over his finances only and leave his personal choices alone.
 
+<!-- visual: decision slug=guardianship-vs-conservatorship part=map -->
+
 ## How does an adult guardianship case work?
 
 The steps below give the general path. Local court practice varies by county.
@@ -85,6 +87,8 @@ Guardianship is slower, public, and more costly than other tools. If the person 
 
 If your parent already has dementia and no documents, ask whether they can still understand and sign. Our attorneys can help judge that question.
 
+<!-- visual: whatif id=parent-with-dementia-no-power-of-attorney -->
+
 ## How does guardianship work for a minor child?
 
 For a child under 18, Article XI of the Probate Act applies. A guardian must be at least 18, live in the United States, and be of sound mind, among other qualifications (755 ILCS 5/11-3). A parent can designate a guardian in writing, including in a will, with at least two credible witnesses (755 ILCS 5/11-5). Some details turn on the wording, so have an attorney review.
@@ -92,6 +96,8 @@ For a child under 18, Article XI of the Probate Act applies. A guardian must be 
 The court may appoint a guardian of the person, the estate, or both when it serves the child's best interest. If a parent is willing and able to make and carry out day-to-day child care decisions, the court generally lacks jurisdiction unless that parent consents or does not object. A minor who is 14 or older may nominate a guardian. The guardianship ends when the child turns 18, or earlier if a parent proves a material change in circumstances (755 ILCS 5/11-14.1).
 
 Choosing the right person matters. Our guides on [how to choose a guardian](/learn/guardianship/how-to-choose-a-guardian) and on [temporary and standby guardians](/learn/guardianship/temporary-and-standby-guardians) can help. Money left to a child is a separate issue, covered in the [guardian versus trustee](/learn/guardianship/guardian-vs-trustee) article.
+
+<!-- visual: picker id=guardian -->
 
 ## How we can help
 

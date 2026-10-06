@@ -46,6 +46,8 @@ It is a signed document that lets you (the principal) name an agent to handle yo
 
 The form is "durable" when it says it survives your incapacity. Our general article on the [durable financial power of attorney](/learn/power-of-attorney/durable-financial-power-of-attorney) explains the idea in every state. In Illinois, the form is also separate from the health care form, which has different rules (see below).
 
+<!-- visual: picker id=who-decides -->
+
 ## How do you sign it so it is valid?
 
 The statute says every property power must bear the signature of a witness to the signing and must be notarized (755 ILCS 45/3-3). Follow these steps.
@@ -86,6 +88,8 @@ The statutory form lists powers in categories. You initial the ones you grant. A
 
 You can grant all of them or only a few. A narrow power can fit a short-term need, such as selling one house while you are abroad.
 
+<!-- visual: diagram name=PoaHealthcareRoles -->
+
 ## Can the agent make gifts or change my beneficiaries?
 
 No, not unless the document says so. The statute provides that the agent has no power under the listed categories to make gifts, to appoint property to others, or to change a beneficiary, unless specific authority is given (755 ILCS 45/3-4). The same section says an agent cannot make or change your will, and cannot revoke or amend a trust unless the form gives that power and refers to the trust.
@@ -109,6 +113,8 @@ If you lose capacity and have no valid power, your family may need to ask the co
 ## What if the bank will not accept it?
 
 Some banks ask for their own forms or question older documents. Our article on [what to do when a bank refuses a power of attorney](/learn/power-of-attorney/bank-refuses-power-of-attorney) lists next steps. Using the statutory form and signing it with a witness and notary removes many objections. Sending your bank a copy early can also help.
+
+<!-- visual: whatif id=incapacitated-without-power-of-attorney -->
 
 ## How we can help
 

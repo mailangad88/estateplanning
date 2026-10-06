@@ -53,6 +53,8 @@ The statute does not list a notary. In Illinois, the witnesses are what count. S
 
 Illinois adds a rule for people who have been found disabled. If a court has appointed a guardian, a will signed after that is presumed invalid. The presumption can be overcome with clear and convincing evidence that the person had capacity when signing (755 ILCS 5/4-1). Doctor notes from the day of signing can help. Our glossary explains [testamentary capacity](/glossary/testamentary-capacity).
 
+<!-- visual: diagram name=WillValidity -->
+
 ## Who can be a witness to an Illinois will?
 
 The law asks for "credible" witnesses. In practice that means adults who can see and understand what is happening and can later say so. The most important point is that witnesses should not receive anything under the will.
@@ -118,9 +120,13 @@ Under 755 ILCS 5/4-7, a will can be revoked by burning, cancelling, tearing or o
 
 To change a will, sign a new one or a witnessed [codicil](/glossary/codicil). Do not cross out lines on a signed will.
 
+<!-- visual: whatif id=outdated-will -->
+
 ## What happens to the will after death?
 
 Whoever holds the will must file it with the clerk of the circuit court immediately upon the death (755 ILCS 5/6-1). The statute also makes it a crime to alter or destroy a will, or hide it for 30 days after death, and a court can order production of a will. Our [Illinois probate guide](/learn/illinois/illinois-probate-process) explains what happens next. If there is no valid will, see [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois).
+
+<!-- visual: whatif id=lost-original-will -->
 
 ## How we can help
 

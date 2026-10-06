@@ -79,6 +79,8 @@ Some people feel like family but are not on the list.
 - **Friends, caregivers and charities.** None of them inherit without a will or a beneficiary designation.
 - **In-laws and ex-spouses.** A former spouse is no longer a spouse once the marriage ends.
 
+<!-- visual: whatif id=unmarried-partner-no-will -->
+
 ## How are children and adopted children treated?
 
 The statute treats children in several settings.
@@ -111,6 +113,8 @@ If there is no spouse and no known kin, the real estate escheats to the county w
 ## How do you avoid these rules?
 
 A valid will lets you choose your own heirs, name an executor and, for parents, nominate a guardian for children. See [Illinois will requirements](/learn/illinois/illinois-will-requirements) for how to sign one so that it holds up. A will can also leave gifts to people the statute leaves out. If you want to keep family from receiving a share, see [disinheriting or unequal shares](/learn/wills/disinheriting-or-unequal-shares).
+
+<!-- visual: tool slug=who-inherits -->
 
 ## How we can help
 

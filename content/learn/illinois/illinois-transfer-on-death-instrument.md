@@ -46,6 +46,8 @@ A transfer on death instrument, often called a TODI, is like a deed that takes e
 
 While you are alive, you keep full control. The beneficiary gets no ownership interest and has no right to notice or to sell. The Act says the instrument is effective without notice to, delivery to, or acceptance by the beneficiary, and no payment is needed (755 ILCS 27/50).
 
+<!-- visual: diagram name=TodPodTransfers -->
+
 ## How do you make a valid TODI?
 
 An invalid instrument can fail without warning. The Act requires the instrument to contain the elements of a properly recordable deed, to say that the transfer happens at the owner's death, and to be executed, witnessed, and acknowledged in substantial compliance with the Act (755 ILCS 27/40). Follow these steps.
@@ -82,6 +84,8 @@ The beneficiary can record a notice of death affidavit. It lists the beneficiary
 ## When is a TODI a good fit, and when is a trust better?
 
 A TODI is simple and cheap, and it keeps control with you. It suits a single piece of real estate going to named people. A trust may suit you better if you have several properties, want to plan for incapacity, or want to leave property to children in stages. Our [living trusts in Illinois](/learn/illinois/illinois-living-trusts) article compares those options. Some assets are not real estate at all. For those, see our article on [how to avoid probate](/learn/probate/how-to-avoid-probate) and our [Illinois probate step-by-step](/learn/illinois/illinois-probate-process) guide.
+
+<!-- visual: decision slug=how-to-leave-your-house-to-your-children part=map -->
 
 ## How we can help
 
