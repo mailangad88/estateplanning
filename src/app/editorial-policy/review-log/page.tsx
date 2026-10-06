@@ -35,7 +35,7 @@ export default function ReviewLog() {
   const reviewed = all.filter((r) => r.reviewed).length;
   return (
     <>
-      <PageHeader
+      <PageHeader kicker="Review status" art="SpotDocumentsSigned"
         title="Content review log"
         lead="How a draft becomes a page we stand behind, and where every page stands today."
       />

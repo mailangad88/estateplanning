@@ -2,7 +2,7 @@
  * Visual tokens for every illustration, diagram, cover, OG image and video.
  *
  * Style in one line: flat, warm, geometric, rounded 2px lines, generous paper
- * space, one blue accent with clay and sage as quiet supporting colours.
+ * space, one teal accent with clay and sage as quiet supporting colours.
  * People are abstract and faceless (a circle head and a rounded body) so no
  * image ever pretends to be a real client or attorney.
  *
@@ -12,38 +12,38 @@
  * visuals.css is loaded and still renders correctly without it.
  */
 export const hex = {
-  paper: "#fbfaf7",
+  paper: "#fbf8f3",
   surface: "#ffffff",
-  sand: "#f1e9dc",
-  sandDeep: "#e3d5bf",
-  ink: "#1d2b3a",
-  muted: "#5b6470",
-  line: "#d9d6cf",
-  accent: "#1f5f8b",
-  accentDeep: "#174a6d",
-  accentTint: "#dcebf5",
-  clay: "#c4784a",
-  clayTint: "#f6e3d6",
+  sand: "#f3ebdf",
+  sandDeep: "#e6d7c0",
+  ink: "#1b2a30",
+  muted: "#56616a",
+  line: "#e3dcd0",
+  accent: "#1f6670",
+  accentDeep: "#17505b",
+  accentTint: "#dcecec",
+  clay: "#c06a40",
+  clayTint: "#f7e6da",
   sage: "#6f957a",
-  sageTint: "#e2ede4",
-  gold: "#d8a842",
+  sageTint: "#e4eee6",
+  gold: "#e2ae45",
   goldTint: "#f8edd2",
 } as const;
 
 export type ColorName = keyof typeof hex;
 
 export const hexDark: Record<ColorName, string> = {
-  paper: "#15171a",
-  surface: "#1d2024",
-  sand: "#2a2722",
+  paper: "#121a1c",
+  surface: "#1a2427",
+  sand: "#262420",
   sandDeep: "#3a342b",
-  ink: "#eceae6",
-  muted: "#a7adb5",
-  line: "#3a3e44",
-  accent: "#6fb0dd",
-  accentDeep: "#9ccbea",
-  accentTint: "#1e3446",
-  clay: "#e09a6e",
+  ink: "#ece8e1",
+  muted: "#a9b3b6",
+  line: "#33403f",
+  accent: "#7fc4c9",
+  accentDeep: "#a8dade",
+  accentTint: "#1a3639",
+  clay: "#e3946a",
   clayTint: "#3d2a1f",
   sage: "#93bb9e",
   sageTint: "#22332a",

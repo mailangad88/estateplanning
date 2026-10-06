@@ -4,6 +4,7 @@ import { firm } from "@/config/firm";
 import { CallbackForm } from "@/components/capture";
 import { Rich, RichFaqList } from "@/components/money-page";
 import { Breadcrumbs, ReviewNote } from "@/components/ui";
+import { PageHero } from "@/components/page-hero";
 import { abs, breadcrumbLd, JsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -25,19 +26,25 @@ export default function Contact() {
   const digits = firm.phone.replace(/\D/g, "");
   return (
     <>
-      <Breadcrumbs items={[{ href: "/", label: "Home" }, { label: "Contact" }]} />
-      <h1>Talk to us</h1>
-      <ReviewNote reviewed={false} updated="October 2026" />
+      <PageHero
+        crumbs={<Breadcrumbs items={[{ href: "/", label: "Home" }, { label: "Contact" }]} />}
+        kicker="Contact"
+        path="/contact"
+        art="SpotVideoCall"
+        title="Talk to us"
+      >
+        <ReviewNote reviewed={false} updated="October 2026" />
+        <p className="cta-row no-print">
+          <a className="button" href={`tel:${digits}`}>Call {firm.phone}</a>
+          <Link className="button secondary" href="/plan-finder">Book a consult</Link>
+        </p>
+      </PageHero>
       <div className="answer">
         <strong>In short</strong>
         The fastest way to reach us is by phone at {firm.phone}. You can also book a consultation online or request a call back, and a
         real person on our intake team will reply. Stated response time: {firm.responseTime}. If someone has just died or a family
         member is in the hospital, call, and tell us that first.
       </div>
-      <p className="cta-row no-print">
-        <a className="button" href={`tel:${digits}`}>Call {firm.phone}</a>
-        <Link className="button secondary" href="/plan-finder">Book a consult</Link>
-      </p>
 
       <h2>Choose how to reach us</h2>
       <ul className="cards">

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function CompareIndex() {
   return (
     <>
-      <PageHeader title="Side-by-side comparisons" lead="The choices families weigh most often, compared factor by factor." />
+      <PageHeader kicker="Compare your options" art="HeroTrusts" title="Side-by-side comparisons" lead="The choices families weigh most often, compared factor by factor." />
       <CardGrid items={getComparisons().map((c) => ({ href: `/compare/${c.slug}`, title: c.title, description: c.description, tag: `${c.optionA} vs ${c.optionB}` }))} />
       <Cta />
     </>

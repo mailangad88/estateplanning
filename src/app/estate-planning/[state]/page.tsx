@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBox from "@/components/CtaBox";
 import Faqs from "@/components/Faqs";
 import JsonLd from "@/components/JsonLd";
+import { PageHero } from "@/components/page-hero";
 import LinkList from "@/components/LinkList";
 import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
@@ -100,9 +101,16 @@ export default async function StatePage({ params }: { params: Promise<Params> })
   return (
     <article className="content">
       <JsonLd data={graph(stateGuideSchema(s), breadcrumbSchema(crumbs), faqSchema(s.faqs))} />
-      <Breadcrumbs items={crumbs} />
-      <h1>{s.title}</h1>
-      <PageMeta updated={s.updated} words={s.wordCount} reviewed={s.review === "approved"} />
+      <PageHero
+        compact
+        crumbs={<Breadcrumbs items={crumbs} />}
+        kicker={`${s.name} state guide`}
+        path={s.url}
+        art="HeroFamilyHome"
+        title={s.title}
+      >
+        <PageMeta updated={s.updated} words={s.wordCount} reviewed={s.review === "approved"} />
+      </PageHero>
       <AnswerBox answer={s.answer} />
       <section aria-labelledby="facts">
         <h2 id="facts">{s.name} estate planning at a glance</h2>
@@ -174,9 +182,16 @@ export default async function StatePage({ params }: { params: Promise<Params> })
 function LocalStatePage({ s }: { s: StatePage }) {
   return (
     <article>
-      <UiBreadcrumbs items={[{ href: "/", label: "Home" }, { label: `Estate planning in ${s.name}` }]} />
-      <h1>{s.title}</h1>
-      <ReviewNote reviewed={s.reviewed} updated={s.updated} />
+      <PageHero
+        compact
+        crumbs={<UiBreadcrumbs items={[{ href: "/", label: "Home" }, { label: `Estate planning in ${s.name}` }]} />}
+        kicker={`${s.name} state guide`}
+        path={`/estate-planning/${s.slug}`}
+        art="HeroFamilyHome"
+        title={s.title}
+      >
+        <ReviewNote reviewed={s.reviewed} updated={s.updated} />
+      </PageHero>
       <div className="answer"><strong>Short answer</strong>{s.answer}</div>
       <h2>{s.name} at a glance</h2>
       <div className="table-wrap">

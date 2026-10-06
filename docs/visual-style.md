@@ -7,7 +7,7 @@ and nothing to attribute.
 ## The style
 
 - **Flat, warm, geometric.** Rounded shapes, 2px round-cap lines, generous paper space.
-- **One accent.** Blue (`accent`) carries the main path or idea. Clay, sage and gold are quiet supporting colours.
+- **One accent.** Teal (`accent`) carries the main path or idea. Clay, sage and gold are quiet supporting colours.
   Sand panels hold side notes. No red, no alarm imagery, no clichéd gavels.
 - **People are abstract and faceless.** A circle head and a rounded body (`<Person />`). We never show a realistic
   person, a stock photo or an AI-generated face, so no image implies a real client or attorney.
@@ -17,8 +17,8 @@ and nothing to attribute.
 - **Accessible.** Every diagram and illustration is an `<svg role="img">` with a `<title>` and a full `<desc>` that
   explains the content in words, so screen readers and crawlers get the same information.
 
-Palette (`tokens.ts`): paper `#fbfaf7`, sand `#f1e9dc`, ink `#1d2b3a`, muted `#5b6470`, accent `#1f5f8b`,
-accent tint `#dcebf5`, clay `#c4784a`, sage `#6f957a`, gold `#d8a842`, each with a tint.
+Palette (`tokens.ts`, matched to the site palette in docs/design-system.md): paper `#fbf8f3`, sand `#f3ebdf`, ink `#1b2a30`, muted `#56616a`, accent `#1f6670`,
+accent tint `#dcecec`, clay `#c06a40`, sage `#6f957a`, gold `#e2ae45`, each with a tint.
 
 ## Using it in a page
 

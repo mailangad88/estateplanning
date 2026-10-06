@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { videos } from "@/components/visuals/video";
+import { PageHero } from "@/components/page-hero";
+import { Breadcrumbs } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Estate planning explainer videos",
@@ -12,11 +14,19 @@ export const metadata: Metadata = {
 export default function VideosPage() {
   return (
     <>
-      <h1>Estate planning, explained in a minute or two</h1>
-      <p className="lead">
-        Short captioned videos on the questions people ask most. Each one has a full transcript. They are general
-        education, not legal advice, and the law varies by state.
-      </p>
+      <PageHero
+        crumbs={<Breadcrumbs items={[{ href: "/", label: "Home" }, { label: "Videos" }]} />}
+        kicker="Videos"
+        path="/videos"
+        art="SpotVideoCall"
+        title="Estate planning, explained in a minute or two"
+        lead={
+          <>
+            Short captioned videos on the questions people ask most. Each one has a full transcript. They are general
+            education, not legal advice, and the law varies by state.
+          </>
+        }
+      />
       {videos.length === 0 ? (
         <p>Videos are on their way.</p>
       ) : (

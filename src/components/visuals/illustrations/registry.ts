@@ -20,6 +20,7 @@ import {
   SpotSafeStorage,
   SpotVideoCall,
 } from "./spots";
+import { HeroNewlyweds, HeroPreRetirees, HeroRetirees } from "./stages";
 
 export type IllustrationEntry = {
   name: string;
@@ -40,6 +41,9 @@ export const illustrations: IllustrationEntry[] = [
   { name: "HeroBlendedFamily", component: HeroBlendedFamily, kind: "hero", topics: ["blended-family", "second-marriage", "stepchildren"] },
   { name: "HeroSpecialNeeds", component: HeroSpecialNeeds, kind: "hero", topics: ["special-needs", "disability", "benefits"] },
   { name: "HeroEstateSettlement", component: HeroEstateSettlement, kind: "hero", topics: ["estate-settlement", "executor", "after-a-death", "grief"] },
+  { name: "HeroNewlyweds", component: HeroNewlyweds, kind: "hero", topics: ["newlyweds", "marriage", "young-couples"] },
+  { name: "HeroPreRetirees", component: HeroPreRetirees, kind: "hero", topics: ["pre-retirees", "retirement", "beneficiaries"] },
+  { name: "HeroRetirees", component: HeroRetirees, kind: "hero", topics: ["retirees", "seniors", "retirement"] },
   { name: "SpotChecklist", component: SpotChecklist, kind: "spot", topics: ["checklist", "getting-started"] },
   { name: "SpotDocumentsSigned", component: SpotDocumentsSigned, kind: "spot", topics: ["signing", "documents", "execution"] },
   { name: "SpotVideoCall", component: SpotVideoCall, kind: "spot", topics: ["consultation", "remote", "contact"] },

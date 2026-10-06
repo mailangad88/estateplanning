@@ -1,6 +1,10 @@
 import Link from "next/link";
+import { Check, Info, X } from "lucide-react";
+import { PageHero } from "@/components/page-hero";
+import { ICON_MAP } from "@/components/visual-card";
+import { topicFor } from "@/lib/visual-topic";
 import { CallbackForm, EmailCapture } from "@/components/capture";
-import { Breadcrumbs, Cta, ReviewNote } from "@/components/ui";
+import { Breadcrumbs, CardGrid, Cta, ReviewNote } from "@/components/ui";
 import { firm } from "@/config/firm";
 import type { MoneyPageData, Block } from "@/content/money-pages";
 import { abs, breadcrumbLd, howToLd, JsonLd, SITE_URL } from "@/lib/seo";
@@ -50,11 +54,18 @@ export function RichFaqList({ faqs, title = "Common questions" }: { faqs: { q: s
   );
 }
 
-function BlockView({ b }: { b: Block }) {
+function BlockView({ b, negative }: { b: Block; negative?: boolean }) {
   if ("p" in b) return <p><Rich text={b.p} /></p>;
-  if ("ul" in b) return <ul>{b.ul.map((x) => <li key={x}><Rich text={x} /></li>)}</ul>;
-  if ("ol" in b) return <ol>{b.ol.map((x) => <li key={x}><Rich text={x} /></li>)}</ol>;
-  if ("note" in b) return <aside className="callout"><Rich text={b.note} /></aside>;
+  if ("ul" in b) {
+    const Mark = negative ? X : Check;
+    return (
+      <ul className={`check-grid${negative ? " is-negative" : ""}`}>
+        {b.ul.map((x) => <li key={x}><span className="check-grid__mark" aria-hidden="true"><Mark size={16} strokeWidth={2.5} /></span><span><Rich text={x} /></span></li>)}
+      </ul>
+    );
+  }
+  if ("ol" in b) return <ol className="step-list">{b.ol.map((x) => <li key={x}><Rich text={x} /></li>)}</ol>;
+  if ("note" in b) return <aside className="callout callout--icon"><Info size={20} aria-hidden="true" /><span><Rich text={b.note} /></span></aside>;
   return (
     <div className="table-wrap">
       <table>
@@ -68,6 +79,21 @@ function BlockView({ b }: { b: Block }) {
         </tbody>
       </table>
     </div>
+  );
+}
+
+function SectionView({ s }: { s: MoneyPageData["sections"][number] }) {
+  const t = topicFor(s.h);
+  const Icon = ICON_MAP[t.icon] ?? ICON_MAP.FileText;
+  const negative = /\b(not|cannot|can't|don't|doesn't|without|mistakes?)\b/i.test(s.h);
+  return (
+    <section id={s.id} className="mp-section">
+      <h2 className="h-icon">
+        <span className={`icon-badge icon-badge--${t.tone}`} aria-hidden="true"><Icon size={22} /></span>
+        {s.h}
+      </h2>
+      {s.blocks.map((b, i) => <BlockView key={i} b={b} negative={negative} />)}
+    </section>
   );
 }
 
@@ -111,14 +137,19 @@ export function MoneyPage({ page }: { page: MoneyPageData }) {
 
   return (
     <article>
-      <Breadcrumbs items={[{ href: "/", label: "Home" }, { label: page.crumb }]} />
-      <h1>{page.h1}</h1>
+      <PageHero
+        path={page.path}
+        kicker={page.crumb}
+        title={page.h1}
+        crumbs={<Breadcrumbs items={[{ href: "/", label: "Home" }, { label: page.crumb }]} />}
+      >
+        <p className="cta-row no-print">{primary}{secondary}</p>
+      </PageHero>
       <ReviewNote reviewed={false} updated="October 2026" />
       <div className="answer">
         <strong>In short</strong>
         <Rich text={page.answer} />
       </div>
-      <p className="cta-row no-print">{primary}{secondary}</p>
       {page.jump && (
         <p className="no-print">{page.jump.map((j, i) => <span key={j.id}>{i > 0 && " · "}<a href={`#${j.id}`}>{j.label}</a></span>)}</p>
       )}
@@ -128,10 +159,7 @@ export function MoneyPage({ page }: { page: MoneyPageData }) {
         </aside>
       )}
       {page.sections.map((s) => (
-        <section key={s.h} id={s.id}>
-          <h2>{s.h}</h2>
-          {s.blocks.map((b, i) => <BlockView key={i} b={b} />)}
-        </section>
+        <SectionView key={s.h} s={s} />
       ))}
       {page.callbackForm && (
         <section id="call-back">
@@ -150,16 +178,7 @@ export function MoneyPage({ page }: { page: MoneyPageData }) {
       />
       <section>
         <h2>Keep reading</h2>
-        <ul className="cards">
-          {page.related.map((r) => (
-            <li key={r.href}>
-              <Link href={r.href} className="card-link">
-                <span className="tag">{r.kind}</span>
-                <strong>{r.title}</strong>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <CardGrid items={page.related.map((r) => ({ href: r.href, title: r.title, tag: r.kind }))} />
       </section>
       <p className="notice">
         Attorney advertising. This page is general information, not legal advice. Reading it or contacting us does not create an

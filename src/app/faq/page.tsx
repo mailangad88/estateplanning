@@ -13,7 +13,7 @@ export default function FaqPage() {
   const cats = [...new Set(faqs.map((f) => f.category))];
   return (
     <>
-      <PageHeader title="Frequently asked questions" lead="Straight answers to the questions we hear most." />
+      <PageHeader kicker="FAQ" art="SpotQuestions" title="Frequently asked questions" lead="Straight answers to the questions we hear most." />
       {cats.map((c) => (
         <FaqList key={c} title={c} faqs={faqs.filter((f) => f.category === c)} />
       ))}

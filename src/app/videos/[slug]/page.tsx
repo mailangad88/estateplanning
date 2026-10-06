@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { explainerForVideo, getVideo, VideoExplainer, videos } from "@/components/visuals/video";
+import { PageHero } from "@/components/page-hero";
+import { Breadcrumbs, CardGrid } from "@/components/ui";
 
 export function generateStaticParams() {
   return videos.map((v) => ({ slug: v.slug }));
@@ -32,11 +34,14 @@ export default async function VideoPage({ params }: { params: Promise<{ slug: st
   const related = videos.filter((o) => o.slug !== v.slug && o.topics.some((t) => v.topics.includes(t))).slice(0, 3);
   return (
     <>
-      <p className="notice">
-        <Link href="/videos">All videos</Link>
-      </p>
-      <h1>{v.title}</h1>
-      <p className="lead">{v.description}</p>
+      <PageHero
+        compact
+        crumbs={<Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/videos", label: "Videos" }, { label: v.title }]} />}
+        kicker="Video explainer"
+        path={`/videos/${v.slug}`}
+        title={v.title}
+        lead={v.description}
+      />
       <VideoExplainer slug={v.slug} pagePath={`/videos/${v.slug}`} transcript={false} />
       {explainerForVideo(v.slug) ? (
         <p>
@@ -60,13 +65,7 @@ export default async function VideoPage({ params }: { params: Promise<{ slug: st
       {related.length ? (
         <>
           <h2>Related videos</h2>
-          <ul>
-            {related.map((r) => (
-              <li key={r.slug}>
-                <Link href={`/videos/${r.slug}`}>{r.title}</Link>
-              </li>
-            ))}
-          </ul>
+          <CardGrid items={related.map((r) => ({ href: `/videos/${r.slug}`, title: r.title }))} />
         </>
       ) : null}
     </>

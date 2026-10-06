@@ -1,9 +1,10 @@
 import Link from "next/link";
 import type { Faq, Heading } from "@/lib/content";
 import { articleLd, JsonLd } from "@/lib/seo";
-import { Breadcrumbs, Cta, FaqList, Prose, ReviewNote, Toc } from "@/components/ui";
+import { Breadcrumbs, CardGrid, Cta, FaqList, Prose, ReviewNote, Toc } from "@/components/ui";
 import { EmailCapture, SensitiveMarker } from "@/components/capture";
 import { libraryLinksFor } from "@/lib/site-links";
+import { PageHero } from "@/components/page-hero";
 import { PageMedia } from "@/components/visuals/PageMedia";
 import MagnetOptIn from "@/components/MagnetOptIn";
 import { MAGNET_FORMATS, magnetsFor, pillarOf } from "@/lib/magnets";
@@ -34,6 +35,8 @@ export function ArticlePage(props: {
   related: RelatedLink[];
   before?: React.ReactNode;
   after?: React.ReactNode;
+  /** Replaces the breadcrumbs and H1 with a designed hero (landing pages). The hero must render the H1. */
+  hero?: React.ReactNode;
   magnet?: { interest: string; title: string; body: string; cta?: string };
 }) {
   // Free resources written for this page (or this post's pillar guide) replace the generic email offer.
@@ -50,8 +53,15 @@ export function ArticlePage(props: {
   const related = [...props.related, ...libraryLinksFor(props.path).filter((l) => !seen.has(l.href))];
   return (
     <article>
-      <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: props.section.path, label: props.section.name }, { label: props.title }]} />
-      <h1>{props.heading ?? props.title}</h1>
+      {props.hero ?? (
+        <PageHero
+          compact
+          path={props.path}
+          kicker={props.section.name}
+          title={props.heading ?? props.title}
+          crumbs={<Breadcrumbs items={[{ href: "/", label: "Home" }, { href: props.section.path, label: props.section.name }, { label: props.title }]} />}
+        />
+      )}
       <ReviewNote reviewed={props.reviewed} updated={props.updated} />
       {props.answer ? (
         <div className="answer">
@@ -86,17 +96,7 @@ export function ArticlePage(props: {
           {offers.length > 1 && (
             <>
               <h2>More free resources on this topic</h2>
-              <ul className="cards">
-                {offers.slice(1).map((o) => (
-                  <li key={o.slug}>
-                    <Link href={`/free/${o.slug}`} className="card-link">
-                      <span className="tag">Free {MAGNET_FORMATS[o.format].toLowerCase()}</span>
-                      <strong>{o.title}</strong>
-                      <span className="card-desc">{o.promise}</span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              <CardGrid items={offers.slice(1).map((o) => ({ href: `/free/${o.slug}`, title: o.title, description: o.promise, tag: `Free ${MAGNET_FORMATS[o.format].toLowerCase()}` }))} />
             </>
           )}
         </section>
@@ -108,16 +108,7 @@ export function ArticlePage(props: {
       {related.length > 0 && (
         <section>
           <h2>Keep reading</h2>
-          <ul className="cards">
-            {related.map((r) => (
-              <li key={r.href}>
-                <Link href={r.href} className="card-link">
-                  <span className="tag">{r.kind}</span>
-                  <strong>{r.title}</strong>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <CardGrid items={related.map((r) => ({ href: r.href, title: r.title, tag: r.kind }))} />
         </section>
       )}
       <p className="notice">

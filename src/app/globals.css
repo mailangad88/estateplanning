@@ -194,7 +194,6 @@ label.field input[type="range"] { padding: 0; border: 0; }
   box-shadow: 0 4px 16px rgb(0 0 0 / 0.15);
 }
 .exit-banner span { flex: 1; }
-.exit-banner 
 /* Probate vs trust explainer */
 .explainer { margin: 24px 0; }
 .explainer svg { width: 100%; height: auto; }
@@ -323,3 +322,7 @@ table.facts th { width: 34%; background: var(--surface); }
 .cookie-consent-actions { display: flex; gap: 8px; flex-wrap: wrap; }
 .cookie-consent-actions .button { flex: 1 1 0; text-align: center; cursor: pointer; }
 @media (max-width: 800px) { .cookie-consent { bottom: 68px; } }
+/* Site search (/search). Functional baseline only; the design system can restyle it. */
+.site-search form { display: grid; gap: 6px; margin: 8px 0 24px; }
+.site-search input[type="search"] { width: 100%; font: inherit; font-size: 1.1rem; padding: 12px 14px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: inherit; }
+.search-results mark { background: none; color: inherit; font-weight: 600; text-decoration: underline; text-decoration-thickness: 2px; }

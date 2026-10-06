@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { TOOLS } from "@/config/tools";
 import { Breadcrumbs, CardGrid } from "@/components/ui";
+import { PageHero } from "@/components/page-hero";
 import { JsonLd, abs, breadcrumbLd } from "@/lib/seo";
 import EstateTax from "@/components/tools/EstateTax";
 import ProbateCost from "@/components/tools/ProbateCost";
@@ -64,8 +65,13 @@ export default async function ToolPage({ params }: Props) {
   if (!t || !Tool) notFound();
   return (
     <article>
-      <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/tools", label: "Tools" }, { label: t.title }]} />
-      <h1>{t.title}</h1>
+      <PageHero
+        compact
+        crumbs={<Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/tools", label: "Tools" }, { label: t.title }]} />}
+        kicker="Planning tool"
+        path={`/tools/${t.slug}`}
+        title={t.title}
+      />
       <div className="answer"><strong>In short</strong>{t.answer}</div>
       {STATE_AWARE[slug] ? <StatePrefill tool={STATE_AWARE[slug]} /> : <Tool />}
       <p className="notice">Estimates are for education only and are not legal, tax or financial advice.</p>

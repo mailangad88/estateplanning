@@ -1,6 +1,7 @@
 import { TOOLS } from "@/config/tools";
 import { getChecklists, getComparisons, getGuides, getLifeEvents, getPosts } from "@/lib/content";
 import { getClusterArticles, getPillar } from "@/lib/library";
+import { magnetsFor, type Magnet } from "@/lib/magnets";
 
 /**
  * Cross-links between the topic-cluster library (/learn) and the site's other collections
@@ -95,4 +96,33 @@ export function libraryLinksFor(path: string, limit = 4): { href: string; title:
   }
   const seen = new Set<string>();
   return out.filter((l) => (seen.has(l.href) ? false : (seen.add(l.href), true))).slice(0, limit);
+}
+
+/**
+ * Library clusters and articles about grief, health or disability. They get the same treatment as the
+ * site's sensitive audience pages (backlog B10): no ad pixels and no email opt-in form, only plain links.
+ */
+const SENSITIVE_CLUSTERS = new Set(["after-a-death", "special-needs", "elder-care"]);
+const SENSITIVE_SLUG = /diagnosis|dementia|lgbtq|same-sex|terminal|grief/;
+
+export function isSensitiveLibraryPage(cluster: string, slug = ""): boolean {
+  return SENSITIVE_CLUSTERS.has(cluster) || SENSITIVE_SLUG.test(slug);
+}
+
+/**
+ * Free resources (/free/<slug>) for a library page: ones that list the page itself in `related`, then
+ * ones attached to the matching guides, life events and comparisons for its cluster.
+ */
+export function magnetsForLibrary(url: string, cluster: string, limit = 3): Magnet[] {
+  const out: Magnet[] = [];
+  const seen = new Set<string>();
+  for (const path of [url, ...(BY_CLUSTER[cluster] ?? [])]) {
+    for (const m of magnetsFor(path)) {
+      if (seen.has(m.slug)) continue;
+      seen.add(m.slug);
+      out.push(m);
+    }
+    if (out.length >= limit) break;
+  }
+  return out.slice(0, limit);
 }

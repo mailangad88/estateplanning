@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function ToolsIndex() {
   return (
     <>
-      <PageHeader title="Free calculators and tools" lead="Run the numbers privately in your browser. Nothing is sent to us unless you ask for a copy." />
+      <PageHeader kicker="Calculators" art="SpotCalendarReview" title="Free calculators and tools" lead="Run the numbers privately in your browser. Nothing is sent to us unless you ask for a copy." />
       <CardGrid items={TOOLS.map((t) => ({ href: `/tools/${t.slug}`, title: t.title, description: t.description, tag: "Free tool" }))} />
     </>
   );

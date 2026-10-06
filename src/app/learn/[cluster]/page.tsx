@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBox from "@/components/CtaBox";
 import Faqs from "@/components/Faqs";
 import JsonLd from "@/components/JsonLd";
+import { PageHero } from "@/components/page-hero";
 import LinkList from "@/components/LinkList";
 import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
@@ -61,9 +62,9 @@ export default async function PillarPage({ params }: { params: Promise<Params> }
           itemListSchema(`${cluster.name} guides`, articles.map((a) => ({ name: a.title, url: a.url }))),
         )}
       />
-      <Breadcrumbs items={crumbs} />
-      <h1>{p.title}</h1>
-      <PageMeta updated={p.updated} words={p.wordCount} reviewed={p.review === "approved"} />
+      <PageHero compact crumbs={<Breadcrumbs items={crumbs} />} kicker={`${cluster.name} guide`} path={cluster.url} title={p.title}>
+        <PageMeta updated={p.updated} words={p.wordCount} reviewed={p.review === "approved"} />
+      </PageHero>
       <AnswerBox answer={p.answer} takeaways={p.takeaways} />
       <LinkList
         id="in-this-guide"

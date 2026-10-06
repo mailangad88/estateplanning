@@ -1,18 +1,32 @@
 import type { Metadata } from "next";
 import { getAudiences } from "@/lib/content";
-import { CardGrid, Cta, PageHeader } from "@/components/ui";
+import { LIFE_STAGES } from "@/config/life-stages";
+import { Breadcrumbs, CardGrid, Cta } from "@/components/ui";
+import { Band, LifeCycle, SectionHead } from "@/components/landing";
 
 export const metadata: Metadata = {
-  title: "Estate planning by situation",
-  description: "Planning pages for caregivers, new parents, executors, business owners, blended families, retirees and more.",
+  title: "Estate planning by life stage and situation",
+  description: "Planning pages for newlyweds, new parents, homeowners, blended families, pre-retirees, retirees, adult children of aging parents, executors, business owners and more.",
   alternates: { canonical: "/estate-planning-for" },
 };
 
 export default function AudienceHub() {
+  const stageSlugs = new Set(LIFE_STAGES.map((s) => s.slug));
+  const others = getAudiences().filter((a) => !stageSlugs.has(a.slug));
   return (
     <>
-      <PageHeader title="Estate planning by situation" lead="Pick the page closest to your situation. Each one covers what is commonly at stake, what a plan usually includes, and what we do not do." />
-      <CardGrid items={getAudiences().map((a) => ({ href: `/estate-planning-for/${a.slug}`, title: a.title, description: a.description }))} />
+      <Band className="stage-hero stage-hero--accent" label="Life stages">
+        <Breadcrumbs items={[{ href: "/", label: "Home" }, { label: "Estate planning by situation" }]} />
+        <SectionHead
+          kicker="Plans by life stage"
+          title="Estate planning for where you are in life"
+          lead="A plan for a newly married couple looks nothing like a plan for a retiree. Pick your stage to see what matters most, and what you can skip."
+        />
+        <LifeCycle />
+      </Band>
+      <h2>Other situations</h2>
+      <p>Each page covers what is commonly at stake, what a plan usually includes, and what we do not do.</p>
+      <CardGrid items={others.map((a) => ({ href: `/estate-planning-for/${a.slug}`, title: a.title, description: a.description }))} />
       <Cta />
     </>
   );
