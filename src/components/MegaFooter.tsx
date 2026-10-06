@@ -52,6 +52,7 @@ export default function MegaFooter() {
       <div>
         <h2>Free resources</h2>
         <ul>
+          <li><Link href="/my-plan">My family plan</Link></li>
           <li><Link href="/free">Free downloads and email courses</Link></li>
           <li><Link href="/quizzes">Quizzes</Link></li>
           <li><Link href="/checklists">Checklists</Link></li>
