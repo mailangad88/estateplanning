@@ -570,3 +570,22 @@ footer.site .footer-cta .button:hover { text-decoration: none; }
 .prose-panel--next { background: var(--brand-tint); }
 .prose-panel--next > h2::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2317505b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14'/%3E%3Cpath d='m12 5 7 7-7 7'/%3E%3C/svg%3E"); }
 @media (max-width: 600px) { .prose-panel { padding: 4px 18px 16px; margin: 28px -4px; } }
+
+/* Motion: content rises in as it scrolls into view (CSS scroll timelines, no JS). Off for reduced motion and old browsers. */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .vcards > li, .feature-card, .tier, .check-grid > li, .prose-panel, .section-head, .step-track > li, .cycle-node {
+      animation: rise-in linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 40%;
+    }
+  }
+  .page-hero__art .art-frame, .hero-band .art-frame { animation: float-in 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+  .page-hero__text { animation: fade-up 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+}
+@keyframes rise-in { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+@keyframes float-in { from { opacity: 0; transform: translateY(24px) scale(0.97); } to { opacity: 1; transform: none; } }
+@keyframes fade-up { from { transform: translateY(12px); } to { opacity: 1; transform: none; } }
+/* Footer links sit next to counts, so they need more than colour to stand out (WCAG link-in-text-block). */
+.mega-footer li a { text-decoration: underline; text-decoration-color: rgb(244 239 230 / 0.3); text-underline-offset: 3px; }
+.mega-footer li a:hover { text-decoration-color: currentColor; }

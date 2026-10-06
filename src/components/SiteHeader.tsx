@@ -144,7 +144,7 @@ export default function SiteHeader({ brandName, phone: fallback }: { brandName: 
             </li>
           </ul>
           <div className="mega__actions">
-            <a className="header-phone" href={telHref(phone)}>
+            <a className="header-phone" href={telHref(phone)} aria-label={`Call ${phone}`}>
               <Phone size={16} aria-hidden="true" />
               <span>{phone}</span>
             </a>
