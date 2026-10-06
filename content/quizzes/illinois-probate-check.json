@@ -1,0 +1,227 @@
+{
+  "title": "Would Your Family Face Probate in Illinois?",
+  "promise": "Ten questions about your Illinois home, accounts and family. See how likely your estate is to end up in probate court.",
+  "description": "Answer ten questions about Illinois real estate, the $150,000 small estate affidavit limit, beneficiaries and trusts to see whether probate is likely.",
+  "kind": "assessment",
+  "category": "probate",
+  "magnet": "illinois-small-estate-affidavit-guide",
+  "related": [
+    "estate-planning/illinois",
+    "tools/small-estate-checker",
+    "tools/probate-cost-estimator"
+  ],
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "How is your Illinois home or land titled?",
+      "options": [
+        {
+          "label": "In my name alone",
+          "points": 2
+        },
+        {
+          "label": "In a trust, or jointly with right of survivorship, or with a recorded transfer on death instrument",
+          "points": 0
+        },
+        {
+          "label": "I am not sure",
+          "points": 2
+        }
+      ],
+      "explanation": "Illinois real estate in one person's name is not covered by the small estate affidavit, so it usually needs a probate case. A trust, survivorship ownership or a recorded transfer on death instrument under 755 ILCS 27 can pass it without probate."
+    },
+    {
+      "id": "q2",
+      "prompt": "Roughly how much personal property (bank accounts, investments, belongings) is in your name alone with no beneficiary?",
+      "options": [
+        {
+          "label": "Under $150,000",
+          "points": 1
+        },
+        {
+          "label": "Over $150,000",
+          "points": 2
+        },
+        {
+          "label": "Very little, because almost everything has a beneficiary or co-owner",
+          "points": 0
+        }
+      ],
+      "explanation": "Illinois lets families use a small estate affidavit when the personal property is $150,000 or less and there is no real estate, under 755 ILCS 5/25-1. Above that amount, or if a home is involved, a court case is more likely."
+    },
+    {
+      "id": "q3",
+      "prompt": "Do you own a vehicle, and does it count toward that total?",
+      "options": [
+        {
+          "label": "I own no vehicle",
+          "points": 0
+        },
+        {
+          "label": "I own one, and I am not sure how it is counted",
+          "points": 1
+        },
+        {
+          "label": "I own one and I have been counting it toward the $150,000",
+          "points": 1
+        }
+      ],
+      "explanation": "For deaths on or after August 15, 2025, Illinois does not count vehicles toward the $150,000 small estate limit. Counting them can make an estate look larger than it is for affidavit purposes."
+    },
+    {
+      "id": "q4",
+      "prompt": "Do your bank and brokerage accounts name a payable on death (POD) or transfer on death (TOD) beneficiary?",
+      "options": [
+        {
+          "label": "Yes, all of them",
+          "points": 0
+        },
+        {
+          "label": "Some do",
+          "points": 1
+        },
+        {
+          "label": "No, or I do not know",
+          "points": 2
+        }
+      ],
+      "explanation": "Accounts with a named beneficiary or a surviving joint owner generally pass directly, outside probate. Accounts in your name alone with no beneficiary count toward the probate estate and toward the $150,000 affidavit limit."
+    },
+    {
+      "id": "q5",
+      "prompt": "Do your retirement accounts and life insurance have current beneficiaries?",
+      "options": [
+        {
+          "label": "Yes, and they are up to date",
+          "points": 0
+        },
+        {
+          "label": "Named, but I have not checked in years",
+          "points": 1
+        },
+        {
+          "label": "No, or I do not know",
+          "points": 2
+        }
+      ],
+      "explanation": "These assets pass by beneficiary form and generally skip probate. If no one is named, or the named person has died, the money may fall back to your estate and add to what a court or affidavit must handle."
+    },
+    {
+      "id": "q6",
+      "prompt": "Do you own real estate outside Illinois?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes, and it is in a trust or has a transfer on death deed",
+          "points": 0
+        },
+        {
+          "label": "Yes, in my name alone",
+          "points": 2
+        }
+      ],
+      "explanation": "Real estate generally goes through probate in the state where it sits. Property in your name alone in another state can mean a second court case there, in addition to any Illinois case."
+    },
+    {
+      "id": "q7",
+      "prompt": "Do you have minor children, or anyone who depends on you?",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes, and I have named a guardian in a will",
+          "points": 1
+        },
+        {
+          "label": "Yes, and I have not named a guardian",
+          "points": 2
+        }
+      ],
+      "explanation": "Only a will can name a guardian for minor children, and a court still confirms the choice. Without one, a judge decides who raises them, which can also lead to a court case for the children's inheritance."
+    },
+    {
+      "id": "q8",
+      "prompt": "Do you have a will?",
+      "options": [
+        {
+          "label": "Yes, current and properly signed",
+          "points": 1
+        },
+        {
+          "label": "Yes, but it is old or I am unsure it was signed correctly",
+          "points": 1
+        },
+        {
+          "label": "No",
+          "points": 2
+        }
+      ],
+      "explanation": "A will does not avoid probate in Illinois. It names who is in charge and who inherits, and the original must be filed with the court after death. With no will, Illinois law decides who inherits and the court appoints an administrator."
+    },
+    {
+      "id": "q9",
+      "prompt": "Do you have a revocable living trust?",
+      "options": [
+        {
+          "label": "Yes, and my home and accounts are titled in it",
+          "points": 0
+        },
+        {
+          "label": "Yes, but I have not retitled much into it",
+          "points": 1
+        },
+        {
+          "label": "No",
+          "points": 2
+        }
+      ],
+      "explanation": "A trust avoids probate only for assets it owns or receives by beneficiary designation. A signed trust with property still in your own name can leave those assets in probate anyway."
+    },
+    {
+      "id": "q10",
+      "prompt": "Do you hold any property jointly with someone, such as a home or account?",
+      "options": [
+        {
+          "label": "Yes, with right of survivorship, and I understand the trade-offs",
+          "points": 0
+        },
+        {
+          "label": "Yes, but I am not sure how it is titled",
+          "points": 1
+        },
+        {
+          "label": "No joint property",
+          "points": 1
+        }
+      ],
+      "explanation": "Joint ownership with survivorship passes to the surviving owner without probate, but it can expose the property to the co-owner's creditors and may cause problems if both owners die together. Property that is not jointly owned stays in your name alone."
+    }
+  ],
+  "bands": [
+    {
+      "min": 0,
+      "max": 6,
+      "label": "Probate unlikely",
+      "summary": "Most of what you own appears to pass by title, beneficiary or trust. Recheck after life changes such as a move, a new home or a death in the family. The small estate affidavit guide explains what Illinois families can do without court."
+    },
+    {
+      "min": 7,
+      "max": 13,
+      "label": "Probate possible",
+      "summary": "Some of your property, or a home in your name alone, could require a court case. Beneficiary designations, a transfer on death instrument or a funded trust are common ways Illinois families address that. An Illinois attorney can say what fits."
+    },
+    {
+      "min": 14,
+      "max": 20,
+      "label": "Probate likely",
+      "summary": "Much of your estate appears to be in your name alone, which would usually mean probate in Illinois. Common tools include beneficiary forms, a recorded transfer on death instrument and a funded trust. The guide below explains the options in general terms."
+    }
+  ]
+}

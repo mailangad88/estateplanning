@@ -1,5 +1,8 @@
 import { FIGURES, usdMillions } from "@/config/figures";
 import type { CaptureTool } from "@/lib/lead";
+/** The launch state. State-based tools preselect it unless the link carries ?state=XX. */
+export const DEFAULT_TOOL_STATE = (process.env.NEXT_PUBLIC_DEFAULT_STATE ?? "IL").toUpperCase();
+
 export interface ToolInfo {
   slug: string;
   title: string;
@@ -64,15 +67,15 @@ export const TOOLS: ToolInfo[] = [
   },
   {
     slug: "state-death-tax-checker",
-    title: "Estate and inheritance tax checker by state",
-    description: "Check federal estate tax, your state's estate tax and any inheritance tax your heirs could owe, with as-of dates and sources.",
-    answer: "Only about a dozen states plus DC have an estate tax, and five (Kentucky, Maryland, Nebraska, New Jersey and Pennsylvania) have an inheritance tax. Federal estate tax starts above the per-person exemption, so most families owe none.",
+    title: "Illinois estate tax checker (and every other state)",
+    description: "Check whether an estate owes Illinois estate tax above the $4 million exclusion, plus federal estate tax and any other state's estate or inheritance tax.",
+    answer: "Illinois taxes estates above $4 million, and unlike the federal exemption that amount is not portable between spouses, so a married couple can owe Illinois tax even when no federal tax is due. Illinois has no inheritance tax. About a dozen states plus DC have an estate tax, and five have an inheritance tax.",
   },
   {
     slug: "small-estate-checker",
-    title: "Small estate checker: can the family skip full probate?",
-    description: "See whether a loved one's estate may qualify for a small estate affidavit or a simplified court process in their state.",
-    answer: "Many states let a small estate skip full probate, but the limits, waiting periods and real estate rules differ widely. For example, California's affidavit limit is $208,850 for deaths since April 2025, and real estate generally needs a separate route.",
+    title: "Small estate checker: can the family skip probate in Illinois?",
+    description: "See whether a loved one's estate may qualify for the Illinois small estate affidavit or a simplified process in another state.",
+    answer: "In Illinois, a family can usually collect personal property without probate using a small estate affidavit when it totals $150,000 or less for deaths on or after August 15, 2025, not counting vehicles. The affidavit cannot transfer Illinois real estate. Other states set different limits and waiting periods.",
   },
   {
     slug: "medicaid-savings-runway",
