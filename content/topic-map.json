@@ -1,0 +1,227 @@
+{
+  "_note": "Master topic-cluster plan. Every cluster has one pillar (URL /learn/{cluster}) and supporting articles (URL /learn/{cluster}/{slug}). Content files live in content/learn/{cluster}/index.md (pillar) and content/learn/{cluster}/{slug}.md. tests/content.test.ts checks every file listed here exists and every internal link resolves.",
+  "clusters": [
+    {
+      "slug": "basics",
+      "name": "Estate planning basics",
+      "pillar": "Estate planning: a plain-English guide to protecting your family",
+      "articles": [
+        ["what-is-estate-planning", "What is estate planning, and who actually needs it?"],
+        ["estate-planning-documents-checklist", "The core estate planning documents, and what each one does"],
+        ["how-much-does-estate-planning-cost", "How much does an estate plan cost? Flat fees, hourly rates and DIY compared"],
+        ["how-to-choose-an-estate-planning-attorney", "How to choose an estate planning attorney: questions to ask"],
+        ["what-to-bring-to-estate-planning-consultation", "What to bring to your first estate planning meeting"],
+        ["common-estate-planning-mistakes", "Common estate planning mistakes that cost families money and time"],
+        ["when-to-update-your-estate-plan", "When to review and update your estate plan"],
+        ["talking-to-family-about-estate-plan", "How to talk to your family about your estate plan"]
+      ]
+    },
+    {
+      "slug": "wills",
+      "name": "Wills",
+      "pillar": "Wills: what they do, what they don't, and how to make one that holds up",
+      "articles": [
+        ["dying-without-a-will", "What happens if you die without a will (intestate succession)"],
+        ["how-to-make-a-valid-will", "How to make a legally valid will: signing, witnesses and notarization"],
+        ["choosing-an-executor", "How to choose an executor, and what to do if no one is a good fit"],
+        ["handwritten-and-diy-wills", "Handwritten, online and DIY wills: when they work and when they fail"],
+        ["pour-over-will", "What is a pour-over will, and why trust-based plans still need one"],
+        ["contesting-a-will", "Will contests: who can challenge a will and how to make yours harder to contest"],
+        ["where-to-keep-your-will", "Where to keep your original will so it can actually be found"],
+        ["what-a-will-cannot-do", "What a will cannot do: assets that pass outside your will"]
+      ]
+    },
+    {
+      "slug": "trusts",
+      "name": "Trusts",
+      "pillar": "Trusts explained: revocable, irrevocable and how to choose",
+      "articles": [
+        ["revocable-living-trust", "Revocable living trusts: how they work, pros and cons"],
+        ["will-vs-trust", "Will vs. living trust: which one fits your situation?"],
+        ["how-to-fund-a-trust", "How to fund a living trust: retitling your home, accounts and more"],
+        ["irrevocable-trusts", "Irrevocable trusts: when giving up control makes sense"],
+        ["choosing-a-trustee", "How to choose a trustee: family member, friend or professional"],
+        ["trusts-for-children", "Trusts for children: controlling when and how kids inherit"],
+        ["spendthrift-trusts", "Spendthrift and asset protection trusts for heirs"],
+        ["does-a-trust-avoid-taxes", "Does a living trust save taxes? Common myths about trusts"]
+      ]
+    },
+    {
+      "slug": "probate",
+      "name": "Probate",
+      "pillar": "Probate explained: how it works, how long it takes and how to avoid it",
+      "articles": [
+        ["what-is-probate", "What is probate? The process step by step"],
+        ["how-long-does-probate-take", "How long does probate take, and what slows it down"],
+        ["probate-costs", "How much does probate cost? Court fees, attorney fees and executor pay"],
+        ["how-to-avoid-probate", "How to avoid probate: seven tools that pass assets directly"],
+        ["small-estate-affidavit", "Small estate procedures: skipping full probate for modest estates"],
+        ["ancillary-probate", "Ancillary probate: what happens when you own property in another state"],
+        ["probate-vs-non-probate-assets", "Probate vs. non-probate assets: what goes through court"],
+        ["dealing-with-debts-in-probate", "What happens to debts when someone dies"]
+      ]
+    },
+    {
+      "slug": "after-a-death",
+      "name": "After a death",
+      "pillar": "What to do when a loved one dies: a practical guide for families",
+      "articles": [
+        ["what-to-do-when-someone-dies-checklist", "What to do when someone dies: a week-by-week checklist"],
+        ["executor-duties", "Executor duties: a step-by-step guide for personal representatives"],
+        ["trust-administration", "Trust administration: what a successor trustee must do"],
+        ["inheritance-taxes-for-heirs", "Do you pay taxes on an inheritance? What heirs should know"],
+        ["inheriting-a-house", "Inheriting a house: options, taxes and what to do first"],
+        ["can-an-executor-be-removed", "Can an executor or trustee be removed? Beneficiary rights explained"],
+        ["final-tax-returns", "Final tax returns for someone who died: income, estate and trust returns"]
+      ]
+    },
+    {
+      "slug": "power-of-attorney",
+      "name": "Power of attorney",
+      "pillar": "Power of attorney: protecting yourself if you can't manage your own affairs",
+      "articles": [
+        ["durable-financial-power-of-attorney", "Durable financial power of attorney: what it covers and why it matters"],
+        ["springing-vs-immediate-power-of-attorney", "Springing vs. immediate power of attorney: which is better?"],
+        ["choosing-a-power-of-attorney-agent", "How to choose your agent under a power of attorney"],
+        ["power-of-attorney-vs-guardianship", "Power of attorney vs. guardianship or conservatorship"],
+        ["when-does-power-of-attorney-end", "When does a power of attorney end?"],
+        ["bank-refuses-power-of-attorney", "What to do when a bank refuses a power of attorney"]
+      ]
+    },
+    {
+      "slug": "healthcare-directives",
+      "name": "Healthcare directives",
+      "pillar": "Advance healthcare directives: making your medical wishes known",
+      "articles": [
+        ["living-will", "What is a living will, and what should it say?"],
+        ["healthcare-power-of-attorney", "Healthcare power of attorney: choosing someone to speak for you"],
+        ["hipaa-authorization", "HIPAA authorizations: why your family may be shut out without one"],
+        ["dnr-and-polst", "DNR orders and POLST forms: how they differ from a living will"],
+        ["dementia-and-advance-directives", "Planning ahead for dementia: directives, capacity and timing"]
+      ]
+    },
+    {
+      "slug": "guardianship",
+      "name": "Guardianship for children",
+      "pillar": "Naming a guardian for your children: a guide for parents",
+      "articles": [
+        ["how-to-choose-a-guardian", "How to choose a guardian for your children"],
+        ["what-if-no-guardian-named", "What happens to your children if you die without naming a guardian"],
+        ["guardian-vs-trustee", "Guardian vs. trustee: who raises your kids and who manages their money"],
+        ["leaving-money-to-minors", "Leaving money to minor children: trusts, UTMA accounts and life insurance"],
+        ["temporary-and-standby-guardians", "Temporary and standby guardians: covering the gap in an emergency"]
+      ]
+    },
+    {
+      "slug": "life-stages",
+      "name": "Planning by life stage",
+      "pillar": "Estate planning by life stage: what to put in place and when",
+      "articles": [
+        ["estate-planning-for-new-parents", "Estate planning for new parents: the five documents to start with"],
+        ["estate-planning-for-young-adults", "Estate planning at 18: documents every young adult should sign"],
+        ["estate-planning-for-newlyweds", "Estate planning after you get married"],
+        ["estate-planning-after-divorce", "Updating your estate plan after divorce"],
+        ["estate-planning-for-unmarried-couples", "Estate planning for unmarried couples"],
+        ["estate-planning-for-single-people", "Estate planning if you are single or have no children"],
+        ["estate-planning-for-retirees", "Estate planning in retirement: what to review at 60 and beyond"],
+        ["estate-planning-after-spouse-dies", "Updating your plan after your spouse dies"]
+      ]
+    },
+    {
+      "slug": "blended-families",
+      "name": "Blended families",
+      "pillar": "Estate planning for blended families: providing for a spouse and children from a prior relationship",
+      "articles": [
+        ["protecting-children-from-first-marriage", "How to make sure children from a first marriage inherit"],
+        ["stepchildren-inheritance", "Do stepchildren inherit? Including stepchildren in your plan"],
+        ["qtip-and-marital-trusts", "QTIP and marital trusts for second marriages"],
+        ["prenuptial-agreements-and-estate-plans", "Prenups, postnups and how they work with your estate plan"],
+        ["family-home-in-second-marriage", "Who gets the house? Planning for the family home in a second marriage"]
+      ]
+    },
+    {
+      "slug": "beneficiary-designations",
+      "name": "Beneficiary designations",
+      "pillar": "Beneficiary designations: the forms that can override your will",
+      "articles": [
+        ["retirement-account-beneficiaries", "Naming beneficiaries for IRAs and 401(k)s, including the 10-year rule"],
+        ["life-insurance-beneficiaries", "Life insurance beneficiaries: common mistakes and how to avoid them"],
+        ["payable-on-death-and-transfer-on-death-accounts", "Payable-on-death and transfer-on-death accounts"],
+        ["transfer-on-death-deed", "Transfer-on-death deeds for real estate"],
+        ["naming-a-trust-as-beneficiary", "Naming a trust as beneficiary: when it helps and when it backfires"],
+        ["contingent-beneficiaries", "Primary vs. contingent beneficiaries, per stirpes and per capita"]
+      ]
+    },
+    {
+      "slug": "estate-tax",
+      "name": "Estate and gift tax",
+      "pillar": "Estate and gift taxes: federal rules, state taxes and planning options",
+      "articles": [
+        ["federal-estate-tax-exemption", "The federal estate tax exemption in 2026 and what it means for you"],
+        ["state-estate-and-inheritance-taxes", "State estate and inheritance taxes: which states tax and how"],
+        ["gift-tax-annual-exclusion", "The gift tax annual exclusion and lifetime gifts"],
+        ["step-up-in-basis", "Step-up in basis: why inheriting can beat gifting"],
+        ["portability-for-married-couples", "Estate tax portability for married couples"]
+      ]
+    },
+    {
+      "slug": "business-owners",
+      "name": "Business owners",
+      "pillar": "Estate planning for business owners: succession, buy-sell agreements and continuity",
+      "articles": [
+        ["business-succession-planning", "Business succession planning: who runs the company if you can't"],
+        ["buy-sell-agreements", "Buy-sell agreements: what they are and how they are funded"],
+        ["llc-ownership-at-death", "What happens to your LLC or corporation shares when you die"],
+        ["passing-a-family-business-to-children", "Passing a family business to your children, fairly"],
+        ["business-owner-incapacity-planning", "Incapacity planning for business owners: keeping the doors open"]
+      ]
+    },
+    {
+      "slug": "special-needs",
+      "name": "Special needs planning",
+      "pillar": "Special needs planning: providing for a loved one without losing benefits",
+      "articles": [
+        ["special-needs-trust", "Special needs trusts: how they protect SSI and Medicaid eligibility"],
+        ["first-party-vs-third-party-special-needs-trust", "First-party vs. third-party special needs trusts"],
+        ["able-accounts", "ABLE accounts: how they work alongside a special needs trust"],
+        ["letter-of-intent", "Writing a letter of intent for a loved one with a disability"],
+        ["guardianship-alternatives-for-adult-children", "Turning 18 with a disability: guardianship and its alternatives"]
+      ]
+    },
+    {
+      "slug": "elder-care",
+      "name": "Elder care and long-term care",
+      "pillar": "Planning for long-term care: Medicaid, nursing homes and protecting what you've built",
+      "articles": [
+        ["medicaid-planning", "Medicaid planning for long-term care: the basics"],
+        ["medicaid-look-back-period", "The Medicaid five-year look-back period explained"],
+        ["protecting-your-home-from-nursing-home-costs", "Can you protect your home from nursing home costs?"],
+        ["helping-aging-parents-plan", "How to help an aging parent get their estate plan in order"],
+        ["elder-financial-abuse", "Protecting older adults from financial exploitation"]
+      ]
+    },
+    {
+      "slug": "digital-assets",
+      "name": "Digital assets",
+      "pillar": "Digital estate planning: accounts, passwords, photos and crypto",
+      "articles": [
+        ["digital-assets-in-your-estate-plan", "How to include digital assets in your estate plan"],
+        ["cryptocurrency-inheritance", "Cryptocurrency and estate planning: making sure heirs can access it"],
+        ["social-media-after-death", "What happens to social media and email accounts when you die"],
+        ["passwords-and-access", "Passwords, password managers and two-factor authentication in an estate plan"]
+      ]
+    },
+    {
+      "slug": "property-and-assets",
+      "name": "Property and special assets",
+      "pillar": "Planning for your home, real estate and special assets",
+      "articles": [
+        ["leaving-your-home-to-children", "Leaving your house to your children: deed, trust or will?"],
+        ["out-of-state-property", "Owning property in more than one state"],
+        ["joint-tenancy-risks", "Adding a child to your deed or bank account: the hidden risks"],
+        ["firearms-in-estate-planning", "Passing on firearms safely and legally"],
+        ["pet-trusts", "Pet trusts: providing for animals after you're gone"]
+      ]
+    }
+  ]
+}

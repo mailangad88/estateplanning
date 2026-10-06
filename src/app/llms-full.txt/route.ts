@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { firm } from "@/config/firm";
 import { getFaqs, getGlossary } from "@/lib/content";
 import { abs } from "@/lib/seo";
+import { getAllArticles, getStateGuides, toPlainMarkdown } from "@/lib/library";
 
 export const dynamic = "force-static";
 
@@ -32,6 +33,9 @@ export function GET() {
       if (data.answer) out.push(`Short answer: ${data.answer}`, "");
       out.push(content.replace(/<!--[\s\S]*?-->/g, "").trim(), "");
     }
+  }
+  for (const page of [...getAllArticles(), ...getStateGuides()]) {
+    out.push("---", "", `Source: ${abs(page.url)}`, "", toPlainMarkdown(page));
   }
   out.push("---", "", "# Glossary", "");
   for (const g of getGlossary()) out.push(`- **${g.term}**: ${g.definition}`);

@@ -4,6 +4,7 @@ import { firm } from "@/config/firm";
 import { TOOLS } from "@/config/tools";
 import { EXPLAINERS } from "@/explainers/data";
 import { getChecklists, getFaqs, getGuides, getLifeEvents, getPosts } from "@/lib/content";
+import { getClusters, getPillar } from "@/lib/library";
 import { CardGrid, FaqList } from "@/components/ui";
 import { EmailCapture } from "@/components/capture";
 
@@ -31,24 +32,18 @@ export default function Home() {
       <h2>Start where you are</h2>
       <CardGrid items={getLifeEvents().map((l) => ({ href: `/life-events/${l.slug}`, title: l.event, description: l.description }))} />
 
-      <h2>Free tools</h2>
-      <ul className="card-grid">
-        <li className="card">
-          <strong>How ready is your plan?</strong>
-          <p>Ten questions, instant score.</p>
-          <Link className="button small" href="/tools/readiness">Check my score</Link>
-        </li>
-        <li className="card">
-          <strong>What could probate cost?</strong>
-          <p>A rough range for your state.</p>
-          <Link className="button small" href="/tools/probate-cost">Estimate it</Link>
-        </li>
-        <li className="card">
-          <strong>Will or trust?</strong>
-          <p>See which way your answers point.</p>
-          <Link className="button small" href="/tools/will-or-trust">Compare</Link>
-        </li>
+      <h2>Browse the library by topic</h2>
+      <ul className="pill-row">
+        {getClusters()
+          .filter((c) => getPillar(c.slug))
+          .map((c) => (
+            <li key={c.slug}><Link href={c.url}>{c.name}</Link></li>
+          ))}
       </ul>
+      <p>
+        Or see <Link href="/learn">every guide in the library</Link> and{" "}
+        <Link href="/estate-planning">estate planning rules by state</Link>.
+      </p>
 
       <h2>Probate or a trust, in ten seconds</h2>
       <ProbateVsTrustAnimation />

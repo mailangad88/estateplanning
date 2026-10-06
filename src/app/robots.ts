@@ -5,6 +5,7 @@ import { abs } from "@/lib/seo";
 const AI_AGENTS = [
   "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "anthropic-ai",
   "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot", "Bingbot", "DuckAssistBot", "meta-externalagent",
+  "Applebot", "GoogleOther", "Amazonbot", "MistralAI-User", "cohere-ai",
 ];
 
 export default function robots(): MetadataRoute.Robots {

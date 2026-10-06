@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: { default: `${firm.brandName} | Estate planning with a real attorney`, template: `%s | ${firm.brandName}` },
   description: "Wills, trusts and powers of attorney, explained plainly by an estate planning attorney.",
+  alternates: { types: { "application/rss+xml": "/feed.xml" } },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/" className="brand">{firm.brandName}</Link>
             <nav className="main" aria-label="Main">
               <Link href="/guides" className="nav-keep">Guides</Link>
+              <Link href="/learn">Library</Link>
               <Link href="/blog">Articles</Link>
               <Link href="/tools">Tools</Link>
               <Link href="/checklists">Checklists</Link>
@@ -44,7 +46,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               formed until an engagement agreement is signed.
             </p>
             <p>
-              <Link href="/resources">Resources</Link> · <Link href="/glossary">Glossary</Link> · <Link href="/faq">FAQ</Link> ·{" "}
+              <Link href="/resources">Resources</Link> · <Link href="/learn">Estate planning library</Link> ·{" "}
+              <Link href="/estate-planning">Laws by state</Link> · <Link href="/glossary">Glossary</Link> · <Link href="/faq">FAQ</Link> ·{" "}
               <Link href="/explainers">Explainers</Link> · <Link href="/course">Free course</Link> · <Link href="/about">About</Link> ·{" "}
               <Link href="/contact">Contact</Link> · <Link href="/intake">Full intake form</Link> · <Link href="/callback">Request a call back</Link>
             </p>
