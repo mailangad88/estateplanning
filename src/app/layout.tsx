@@ -3,6 +3,7 @@ import Link from "next/link";
 import SourceTracker from "@/components/SourceTracker";
 import { firm } from "@/config/firm";
 import { ExitIntent, StickyContactBar } from "@/components/capture";
+import Analytics from "@/components/Analytics";
 import { JsonLd, legalServiceLd, SITE_URL } from "@/lib/seo";
 import "./globals.css";
 import "@/components/visuals/visuals.css";
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="container">{children}</main>
         <StickyContactBar phone={firm.phone} textNumber={firm.textNumber} />
         <ExitIntent />
+        <Analytics />
         <JsonLd data={legalServiceLd()} />
         <footer className="site">
           <div className="container">

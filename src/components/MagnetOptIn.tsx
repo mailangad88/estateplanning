@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { track } from "@/components/capture";
+import { assignedVariants, useVariant } from "@/lib/experiments";
 
 const PROFILE_KEY = "efp-profile";
 const UNLOCKED_KEY = "efp-unlocked";
@@ -28,8 +29,14 @@ function write(key: string, value: unknown) {
   }
 }
 
+/** Experiment variants as flat "exp_<name>" fields for the CRM and dataLayer. */
+function prefixed(v: Record<string, string>): Record<string, string> {
+  return Object.fromEntries(Object.entries(v).map(([k, val]) => [`exp_${k}`, val]));
+}
+
 export interface MagnetSummary {
   slug: string;
+  lang?: string;
   title: string;
   format: string;
   formatLabel: string;
@@ -42,12 +49,20 @@ export interface MagnetSummary {
  * phone and SMS consent are asked only on consult and call-back forms. Returning visitors
  * see their saved name and email, and resources they already unlocked open straight away.
  */
+const ES_FORMATS: Record<string, string> = {
+  checklist: "lista", worksheet: "hoja de trabajo", planner: "planificador", guide: "guía", template: "plantilla",
+  kit: "kit", workbook: "cuaderno", "email-course": "curso por email",
+};
+
 export default function MagnetOptIn({ magnet, compact = false, heading }: { magnet: MagnetSummary; compact?: boolean; heading?: string }) {
   const [profile, setProfile] = useState<Profile>({});
   const [done, setDone] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const isCourse = magnet.format === "email-course";
+  const ctaVariant = useVariant("magnet_cta");
+  const fieldsVariant = useVariant("magnet_fields");
+  const askName = fieldsVariant === "name_email";
   const viewHref = `/free/${magnet.slug}/view`;
 
   useEffect(() => {
@@ -71,7 +86,7 @@ export default function MagnetOptIn({ magnet, compact = false, heading }: { magn
           interest: `magnet:${magnet.slug}`,
           email,
           firstName,
-          details: { tag: magnet.tag, sequence: magnet.sequence, format: magnet.format },
+          details: { tag: magnet.tag, sequence: magnet.sequence, format: magnet.format, lang: magnet.lang ?? "en", ...prefixed(assignedVariants()) },
           pageUrl: window.location.href,
           website: String(f.get("website") ?? "") || undefined,
         }),
@@ -80,13 +95,43 @@ export default function MagnetOptIn({ magnet, compact = false, heading }: { magn
       if (!res.ok) throw new Error(data.fields?.email ?? data.error ?? "Something went wrong. Please try again.");
       write(PROFILE_KEY, { ...read<Profile>(PROFILE_KEY, {}), firstName, email });
       write(UNLOCKED_KEY, [...new Set([...read<string[]>(UNLOCKED_KEY, []), magnet.slug])]);
-      track("lead_capture", { kind: isCourse ? "course" : "magnet", interest: magnet.slug, format: magnet.format });
+      track("lead_capture", { kind: isCourse ? "course" : "magnet", interest: magnet.slug, format: magnet.format, ...prefixed(assignedVariants()) });
       setDone(true);
     } catch (err) {
       setError((err as Error).message);
     } finally {
       setBusy(false);
     }
+  }
+
+  if (magnet.lang === "es") {
+    const kind = ES_FORMATS[magnet.format] ?? "recurso";
+    if (done) {
+      return (
+        <div className="cta optin" role="status" lang="es">
+          <strong>Su {kind} está lista.</strong>
+          <p>También le enviaremos un enlace por email para que la encuentre después.</p>
+          <Link className="button" href={viewHref}>Abrir</Link>
+        </div>
+      );
+    }
+    return (
+      <form className="cta optin no-print" onSubmit={submit} lang="es">
+        <strong>{heading ?? `Reciba gratis: ${magnet.title}`}</strong>
+        <p>Ábrala ahora mismo y le enviaremos una copia por email.</p>
+        <div className="optin__fields">
+          <label className="field">Nombre<input name="firstName" autoComplete="given-name" defaultValue={profile.firstName} key={`f${profile.firstName}`} /></label>
+          <label className="field">Email<input name="email" type="email" inputMode="email" required autoComplete="email" defaultValue={profile.email} key={`e${profile.email}`} /></label>
+        </div>
+        <div className="hp" aria-hidden="true"><input name="website" tabIndex={-1} autoComplete="off" /></div>
+        {error && <p className="error" role="alert">{error}</p>}
+        <button className="button" type="submit" disabled={busy}>{busy ? "Enviando…" : "Acceso inmediato"}</button>
+        <p className="notice">
+          Le enviaremos este recurso y consejos relacionados de vez en cuando. Puede darse de baja cuando quiera. Nunca
+          vendemos su información. Solicitarlo no crea una relación abogado-cliente. <Link href="/legal/privacy">Privacidad</Link>
+        </p>
+      </form>
+    );
   }
 
   if (done) {
@@ -115,10 +160,12 @@ export default function MagnetOptIn({ magnet, compact = false, heading }: { magn
       <strong>{heading ?? (isCourse ? "Start the free course" : `Get the free ${magnet.formatLabel.toLowerCase()}`)}</strong>
       {!compact && <p>{isCourse ? "One short email a day for five days." : "Open it right away, and we'll email you a copy."}</p>}
       <div className="optin__fields">
-        <label className="field">
-          First name
-          <input name="firstName" autoComplete="given-name" defaultValue={profile.firstName} key={`f${profile.firstName}`} />
-        </label>
+        {askName && (
+          <label className="field">
+            First name
+            <input name="firstName" autoComplete="given-name" defaultValue={profile.firstName} key={`f${profile.firstName}`} />
+          </label>
+        )}
         <label className="field">
           Email
           <input name="email" type="email" inputMode="email" required autoComplete="email" defaultValue={profile.email} key={`e${profile.email}`} />
@@ -127,7 +174,13 @@ export default function MagnetOptIn({ magnet, compact = false, heading }: { magn
       <div className="hp" aria-hidden="true"><input name="website" tabIndex={-1} autoComplete="off" /></div>
       {error && <p className="error" role="alert">{error}</p>}
       <button className="button" type="submit" disabled={busy}>
-        {busy ? "Sending…" : isCourse ? "Send me day 1" : "Get instant access"}
+        {busy
+          ? "Sending…"
+          : isCourse
+            ? "Send me day 1"
+            : ctaVariant === "specific"
+              ? `Send me the ${magnet.formatLabel.toLowerCase()}`
+              : "Get instant access"}
       </button>
       <p className="notice">
         {magnet.sequence === "G"

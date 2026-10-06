@@ -22,7 +22,7 @@ export default async function MagnetView({ params }: Props) {
   const m = getMagnet((await params).slug);
   if (!m) notFound();
   return (
-    <article className="magnet-view">
+    <article className="magnet-view" lang={m.lang}>
       <p className="no-print"><Link href={`/free/${m.slug}`}>← {m.title}</Link></p>
       <p className="no-print"><PrintButton /> <span className="notice">Choose &quot;Save as PDF&quot; in the print window to keep a copy.</span></p>
       <p className="tag">{MAGNET_FORMATS[m.format]}</p>
