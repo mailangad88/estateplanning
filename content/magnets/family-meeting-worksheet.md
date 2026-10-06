@@ -14,8 +14,8 @@ pages: 5
 tag: family_meeting_worksheet
 sequence: B
 related:
-  - guides/what-is-estate-planning
-  - guides/updating-your-estate-plan
+  - learn/basics/what-is-estate-planning
+  - learn/basics/when-to-update-your-estate-plan
   - checklists/important-contacts-list
   - checklists/letter-of-instruction-outline
 reviewed: false

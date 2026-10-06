@@ -21,7 +21,7 @@ related: [beneficiary-designations, how-to-make-a-will, powers-of-attorney, esta
 
 Marriage gives your spouse legal rights in your estate. In most states, a surviving spouse has a right to a share of your property even if your will says otherwise. The size of that share, and how it works, varies a lot by state.
 
-If you [die without a will](/guides/what-happens-if-you-die-without-a-will), state law decides who inherits. A spouse usually gets a large share. In some states, your parents or children from an earlier relationship may share the estate with your spouse.
+If you [die without a will](/learn/wills/dying-without-a-will), state law decides who inherits. A spouse usually gets a large share. In some states, your parents or children from an earlier relationship may share the estate with your spouse.
 
 Some states also treat property differently once you marry. Community property states treat most income earned during the marriage as owned by both spouses. Other states use different rules. An attorney licensed in your state can explain which applies to you.
 

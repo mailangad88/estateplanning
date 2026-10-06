@@ -2,7 +2,7 @@
 title: "Can a beneficiary also be the trustee?"
 description: "A beneficiary can usually serve as trustee, but it affects fairness, taxes and creditor protection. Here is how it works and common safeguards."
 answer: "Yes. A beneficiary can usually serve as trustee, and many family trusts work this way. It becomes trickier when the trustee decides how much money they get themselves. Many trusts limit those decisions to a standard like health and support, or add a co-trustee, so the arrangement stays fair and keeps its tax and creditor protections."
-pillar: choosing-a-trustee
+pillar: settling-an-estate-step-by-step
 date: 2026-10-06
 updated: 2026-10-06
 reviewed: false
@@ -16,13 +16,13 @@ faqs:
 
 Yes, in most cases a beneficiary can also be the trustee. It is common in family trusts, such as a surviving spouse serving as trustee of a trust for themselves and the kids.
 
-The question is how to set it up so it stays fair. Our guide to [choosing a trustee](/guides/choosing-a-trustee) covers the wider decision. Here we look at what changes when the trustee also benefits.
+The question is how to set it up so it stays fair. Our guide to [choosing a trustee](/learn/trusts/choosing-a-trustee) covers the wider decision. Here we look at what changes when the trustee also benefits.
 
 ## Why it is so common
 
 Families often want someone close to manage the money. A spouse or adult child already knows the family, does not charge a large fee, and is motivated to do a good job.
 
-For a [revocable living trust](/guides/revocable-living-trust-explained), it is the default. You are usually the trustee and the beneficiary of your own trust while you are alive.
+For a [revocable living trust](/learn/trusts/revocable-living-trust), it is the default. You are usually the trustee and the beneficiary of your own trust while you are alive.
 
 ## Where it gets tricky
 

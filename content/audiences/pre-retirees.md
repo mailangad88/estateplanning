@@ -36,7 +36,7 @@ faqs:
   - q: "Should my adult children be my agents?"
     a: "Often, but not always. Consider who lives nearby, who is good with money, who stays calm, and whether siblings get along. You can name different people for money and for health decisions, and name backups."
   - q: "What about paying for long-term care?"
-    a: "Start with a conversation about what coverage you have, what you could pay yourself, and what Medicaid would require. Medicaid looks back 60 months in most states <!-- verify -->. [State check: look-back period]. See [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning)."
+    a: "Start with a conversation about what coverage you have, what you could pay yourself, and what Medicaid would require. Medicaid looks back 60 months in most states <!-- verify -->. [State check: look-back period]. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning)."
   - q: "What does a pre-retirement review cost?"
     a: "[Flat fee] for a plan review and updates. See the pricing page."
 reviewed: false
@@ -49,7 +49,7 @@ updated: "2026-10-06"
 - **No power of attorney in place.** If you lose capacity without one, your family may need to ask a court to appoint a guardian. That is slower, public and expensive. [State check: guardianship process]. See [powers of attorney](/guides/powers-of-attorney).
 - **A trust that was never funded.** If the deed and accounts were never retitled, the trust may be empty, and probate may follow anyway. See [funding your trust](/guides/funding-your-trust).
 - **Out-of-date names.** Your will may name your children as minors, a friend who moved away, or a brother who has died.
-- **Care you have not discussed.** A long-term care need can use up savings fast. Talking about it early gives you choices later. See [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning).
+- **Care you have not discussed.** A long-term care need can use up savings fast. Talking about it early gives you choices later. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).
 
 ## Naming the right people now that your children are adults
 
@@ -60,7 +60,7 @@ Your children may now be the obvious choices. They may also not be. Think throug
 | Financial agent (power of attorney) | Honest, organized and willing to keep records. Often lives near enough to visit a bank. |
 | Healthcare agent | Calm under stress, able to follow your wishes even if they disagree. |
 | Executor | Patient with paperwork. Can be a different person from your agent. |
-| Trustee | Careful with money and fair to every beneficiary. See [choosing a trustee](/guides/choosing-a-trustee). |
+| Trustee | Careful with money and fair to every beneficiary. See [choosing a trustee](/learn/trusts/choosing-a-trustee). |
 | Backups for each | Someone else if the first choice cannot serve, dies or moves. |
 
 If you have more than one child, explain your choices. A short family talk can prevent a lot of hurt later. If a child has a disability or financial trouble, other tools may fit better. See [special needs families](/estate-planning-for/special-needs-families).

@@ -76,7 +76,7 @@ Furniture, jewelry, art and collections usually do not have titles. A general as
 
 If you own part of an LLC or a small corporation, the interest can usually be assigned to the trust. Check the operating agreement or shareholder agreement first.
 
-Some require consent from other owners. Our guide on [business succession planning](/guides/business-succession-planning) goes deeper.
+Some require consent from other owners. Our guide on [business succession planning](/learn/business-owners/business-succession-planning) goes deeper.
 
 ### 7. Update beneficiary designations where it fits
 
@@ -93,7 +93,7 @@ Some assets are commonly kept outside the trust on purpose.
 - **IRAs, 401(k)s and similar accounts.** Changing the owner can be treated as cashing out. These pass by beneficiary form.
 - **Health savings accounts.** These also pass by beneficiary form.
 - **Vehicles.** Many states have a simple transfer process for cars after death. Some offer transfer-on-death titles.
-- **A small everyday checking account.** Some people keep one in their own name with a payable-on-death beneficiary. Read about [transfer-on-death and payable-on-death](/guides/transfer-on-death-and-payable-on-death).
+- **A small everyday checking account.** Some people keep one in their own name with a payable-on-death beneficiary. Read about [transfer-on-death and payable-on-death](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts).
 
 ## A worked example
 

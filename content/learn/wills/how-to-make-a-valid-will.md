@@ -14,7 +14,7 @@ faqs:
   - q: "Does a will have to be notarized to be valid?"
     a: "In most states, no. Witnesses make the will valid. A notary comes in when you sign a self-proving affidavit, which lets the court accept the will without calling the witnesses to testify. Because it is easy to add, most attorneys include one."
   - q: "How many witnesses do you need for a will?"
-    a: "Two in most states. A few states accept a will with no witnesses in limited situations, such as a fully handwritten one, and Vermont asks for three. Because rules differ, check your own state or have an attorney supervise the signing."
+    a: "Two in most states. A few states accept a will with no witnesses in limited situations, such as a fully handwritten one. Because rules differ, check your own state or have an attorney supervise the signing."
   - q: "Can a beneficiary witness a will?"
     a: "They can in some states, but it is risky. Many states void or reduce the gift to a beneficiary who also served as a witness, and it gives challengers an argument. Choose two neutral adults, such as coworkers or neighbors."
   - q: "What makes a will invalid?"

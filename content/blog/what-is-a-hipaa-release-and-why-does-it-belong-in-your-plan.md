@@ -50,7 +50,7 @@ You can also name people who get information without any decision power. That ca
 
 Ana and Luis are not married. Luis is in a car accident and taken to the emergency room. The staff are unsure whether they can talk to Ana.
 
-Luis had signed a HIPAA release naming Ana, along with a healthcare power of attorney. Ana shows both on her phone. The doctors brief her right away and she helps make decisions as his agent. Our post on [estate planning for unmarried couples](/blog/estate-planning-for-unmarried-couples) explains why this matters even more without a marriage.
+Luis had signed a HIPAA release naming Ana, along with a healthcare power of attorney. Ana shows both on her phone. The doctors brief her right away and she helps make decisions as his agent. Our post on [estate planning for unmarried couples](/learn/life-stages/estate-planning-for-unmarried-couples) explains why this matters even more without a marriage.
 
 ## A financial agent may need it too
 

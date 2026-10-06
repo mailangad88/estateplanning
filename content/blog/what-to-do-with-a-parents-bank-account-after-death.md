@@ -26,7 +26,7 @@ Our guide to [settling an estate step by step](/guides/settling-an-estate-step-b
 | Payable-on-death (POD) beneficiary | The named beneficiary | No |
 | Your parent's name alone | The estate, then heirs under the will or state law | Usually yes |
 
-Our guide to [transfer-on-death and payable-on-death](/guides/transfer-on-death-and-payable-on-death) explains POD accounts in more detail. The [probate vs non-probate assets comparison](/compare/probate-vs-non-probate-assets) shows how the pieces fit.
+Our guide to [transfer-on-death and payable-on-death](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts) explains POD accounts in more detail. The [probate vs non-probate assets comparison](/learn/probate/probate-vs-non-probate-assets) shows how the pieces fit.
 
 ## A power of attorney stops working at death
 
@@ -60,7 +60,7 @@ In some states, other family members can argue the account was only for convenie
 
 Many states have a simpler process for small estates. An heir may be able to collect a modest bank balance with an affidavit instead of opening full probate. Limits and forms vary. See [can you skip probate for a small estate](/blog/can-you-skip-probate-for-a-small-estate).
 
-Bills the account cannot cover raise a different question. Read [what happens to debt when someone dies](/blog/what-happens-to-debt-when-someone-dies).
+Bills the account cannot cover raise a different question. Read [what happens to debt when someone dies](/learn/probate/dealing-with-debts-in-probate).
 
 ## Next step
 

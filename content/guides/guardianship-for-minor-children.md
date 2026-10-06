@@ -37,7 +37,7 @@ A guardian of the person raises the child. A separate role covers the child's mo
 - **Guardian of the person:** daily care, home, school, health care.
 - **Guardian of the estate, conservator, or trustee:** manages any money the child inherits.
 
-Many parents leave money to a trust for the children and name a trustee. This means the guardian doesn't have to go to court to account for every expense, and the money isn't handed to the child outright at 18. See [Leaving Money to Minors](/guides/leaving-money-to-minors) for the options.
+Many parents leave money to a trust for the children and name a trustee. This means the guardian doesn't have to go to court to account for every expense, and the money isn't handed to the child outright at 18. See [Leaving Money to Minors](/learn/guardianship/leaving-money-to-minors) for the options.
 
 Some families give both jobs to one person. Others split them, for example a warm, steady sister raises the kids while a careful, financially minded brother manages the trust.
 
@@ -100,4 +100,4 @@ Some states let parents sign a separate document naming a short-term or standby 
 
 ## Next step
 
-The [choosing a guardian worksheet](/checklists/choosing-a-guardian-worksheet) helps you compare candidates and record your reasons. For more on what happens without a plan, see [What Happens If You Die Without a Will](/guides/what-happens-if-you-die-without-a-will). When you're ready to put your choice in writing, you can book a consult through the [plan finder](/plan-finder).
+The [choosing a guardian worksheet](/checklists/choosing-a-guardian-worksheet) helps you compare candidates and record your reasons. For more on what happens without a plan, see [What Happens If You Die Without a Will](/learn/wills/dying-without-a-will). When you're ready to put your choice in writing, you can book a consult through the [plan finder](/plan-finder).

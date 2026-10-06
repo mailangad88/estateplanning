@@ -35,7 +35,7 @@ A [financial power of attorney](/guides/powers-of-attorney) lets your agent pay 
 
 ### A revocable living trust
 
-If you have a [revocable living trust](/guides/revocable-living-trust-explained), your successor trustee can manage the assets in it if you become unable to. This can be simpler for banks than a power of attorney.
+If you have a [revocable living trust](/learn/trusts/revocable-living-trust), your successor trustee can manage the assets in it if you become unable to. This can be simpler for banks than a power of attorney.
 
 ### Medical orders
 

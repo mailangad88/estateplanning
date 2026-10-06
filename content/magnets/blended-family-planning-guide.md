@@ -16,7 +16,7 @@ sequence: B
 related:
   - guides/estate-planning-for-blended-families
   - life-events/getting-married
-  - guides/choosing-a-trustee
+  - learn/trusts/choosing-a-trustee
   - guides/beneficiary-designations
 reviewed: false
 updated: "2026-10-06"
@@ -77,7 +77,7 @@ See [Estate Planning for Blended Families](/guides/estate-planning-for-blended-f
 - **Executor:** consider whether a child or the spouse is better placed to work with the other side.
 - **Guardian:** if minor children from a prior relationship are involved, the other parent's rights come first in most situations.
 
-Read [Choosing a Trustee](/guides/choosing-a-trustee).
+Read [Choosing a Trustee](/learn/trusts/choosing-a-trustee).
 
 ## Who gets what and when: worksheet
 

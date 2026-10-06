@@ -2,7 +2,7 @@
 title: "Can an executor also be a beneficiary?"
 description: "Yes, your executor can also inherit under your will. Here is how that works, where conflicts come up, and how people reduce friction."
 answer: "Yes. In every state, the person who settles your estate can also inherit from it. Most people name a spouse or adult child who is also a beneficiary. The executor must still treat every beneficiary fairly, keep records, and follow the will, even when their own share is involved."
-pillar: choosing-an-executor
+pillar: settling-an-estate-step-by-step
 date: 2026-10-06
 updated: 2026-10-06
 reviewed: false
@@ -16,7 +16,7 @@ faqs:
 
 Yes, an executor can also be a beneficiary. It is the most common setup there is. Most people name a spouse, an adult child or a sibling to settle their estate, and that same person usually inherits something too.
 
-The law allows it because the executor is a role, not a reward. Our guide to [choosing an executor](/guides/choosing-an-executor) covers who makes a good pick. This post focuses on what happens when the person in charge also has money on the line.
+The law allows it because the executor is a role, not a reward. Our guide to [choosing an executor](/learn/wills/choosing-an-executor) covers who makes a good pick. This post focuses on what happens when the person in charge also has money on the line.
 
 ## The executor wears two hats
 

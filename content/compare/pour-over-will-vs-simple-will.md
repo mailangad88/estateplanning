@@ -37,7 +37,7 @@ A simple will leaves your property directly to the people you name, through prob
 
 A simple will says, in effect, "give my house to my daughter and split the rest between my two sons." It names an executor and, for parents, a guardian. Everything it covers passes through probate. See [how to make a will](/guides/how-to-make-a-will).
 
-A pour-over will says, in effect, "give anything I still own in my own name to my trust." The trust then follows its own instructions. The will is a safety net for assets that never got retitled. See [revocable living trusts explained](/guides/revocable-living-trust-explained).
+A pour-over will says, in effect, "give anything I still own in my own name to my trust." The trust then follows its own instructions. The will is a safety net for assets that never got retitled. See [revocable living trusts explained](/learn/trusts/revocable-living-trust).
 
 ## When people choose a pour-over will
 

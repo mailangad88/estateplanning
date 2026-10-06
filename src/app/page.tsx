@@ -16,7 +16,7 @@ import { fullLibrary, lifeBoard } from "@/config/life-game";
 import { LifeGame } from "@/components/life-game";
 import { Band, FeatureCard, IconBadge, LifeCycle, SectionHead, Steps, TrustRow } from "@/components/landing";
 
-const FEATURED_GUIDES = ["what-is-estate-planning", "revocable-living-trust-explained", "guardianship-for-minor-children", "powers-of-attorney", "how-probate-works", "what-happens-if-you-die-without-a-will"];
+const FEATURED_GUIDES = ["how-to-make-a-will", "funding-your-trust", "guardianship-for-minor-children", "powers-of-attorney", "how-probate-works", "beneficiary-designations"];
 
 export const metadata: Metadata = {
   title: { absolute: `Estate planning attorney | ${firm.brandName}` },
@@ -31,7 +31,7 @@ const SITUATIONS = [
   { href: "/living-trusts", title: "I own a home and have kids", description: "Whether a living trust helps, and when it does not.", image: "/media/illustrations/HeroFamilyHome.webp" },
   { href: "/estate-planning-for-parents", title: "My parent is aging and I am worried", description: "The documents that matter first, and how to start the talk." },
   { href: "/probate", title: "Someone I love just died and I am the executor or heir", description: "What to do first, and what has a deadline." },
-  { href: "/guides/updating-your-estate-plan", title: "I have a plan but it is old", description: "When a plan is worth reviewing." },
+  { href: "/learn/basics/when-to-update-your-estate-plan", title: "I have a plan but it is old", description: "When a plan is worth reviewing." },
   { href: "/pricing", title: "I just want to know what this costs", description: "Flat fees, shown before you sign." },
 ];
 

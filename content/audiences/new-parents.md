@@ -46,7 +46,7 @@ updated: "2026-10-06"
 ## What is at stake
 
 - **No guardian named.** If both parents die or cannot care for a child, the court decides based on the child's best interests. Relatives can disagree, and the judge may pick someone you would not have. See the [guardianship guide](/guides/guardianship-for-minor-children).
-- **Money goes to the child at 18.** In most states a minor cannot hold much property, so a court may open a supervised account and release it all at 18. [State check: age and process]. Many parents would rather have a chosen trustee pay for school and housing and release the balance at 25, 30 or in stages. See [leaving money to minors](/guides/leaving-money-to-minors).
+- **Money goes to the child at 18.** In most states a minor cannot hold much property, so a court may open a supervised account and release it all at 18. [State check: age and process]. Many parents would rather have a chosen trustee pay for school and housing and release the balance at 25, 30 or in stages. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors).
 - **Life insurance naming the child directly.** Naming a minor as beneficiary on a policy or retirement account generally means a court-supervised account. Naming a trust, or a custodian under your state's UTMA, avoids that. [State check: UTMA]. See the [beneficiary designation audit](/checklists/beneficiary-designation-audit).
 - **A guardian is not the same as a money manager.** Your sister may be the right person to raise the child and the wrong one to manage $400,000.
 - **One of you becomes unable to act.** Incapacity can happen to a working-age parent. Powers of attorney and healthcare directives cover that.
@@ -56,7 +56,7 @@ Not getting around to it is normal with a newborn. It is also fixable in an afte
 ## What a plan for you usually includes
 
 1. **Wills for both parents,** naming a guardian and a backup, and a first-choice executor.
-2. **A trust for the children,** either inside the will or in a living trust, naming a trustee and the ages for payments. See [Will vs trust](/compare/will-vs-trust).
+2. **A trust for the children,** either inside the will or in a living trust, naming a trustee and the ages for payments. See [Will vs trust](/learn/trusts/will-vs-trust).
 3. **Beneficiary designations** on life insurance, retirement accounts and bank accounts, coordinated with the plan.
 4. **Durable powers of attorney and healthcare directives** for each parent.
 5. **A guardian letter:** the day-to-day information a guardian needs, such as routines, doctors, schools and values. The [guardian worksheet](/checklists/choosing-a-guardian-worksheet) helps you draft it.

@@ -17,7 +17,9 @@ import { pathToFileURL } from "node:url";
 const ROOT = process.cwd();
 const DIRS = ["content", "src"];
 const EXT = new Set([".md", ".json", ".ts", ".tsx"]);
-const SKIP = new Set(["content/STYLE.md", "content/LEARN-STYLE.md", "content/states/_template.json", "scripts/launch-check.mjs"]);
+const SKIP = new Set(["content/STYLE.md", "content/LEARN-STYLE.md", "content/states/_template.json", "scripts/launch-check.mjs",
+  // Internal research data, never rendered: the question bank holds what people ask, in their words.
+  "content/questions.json"]);
 
 const BANNED = [
   { re: /\bexperts?\b/i, why: "'expert' implies a credential" },

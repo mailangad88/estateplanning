@@ -93,17 +93,17 @@ An agent who misuses a power of attorney can be sued and, in serious cases, char
 - **Waiting too long.** You must have mental capacity when you sign. Once dementia sets in, it may be too late, and a court process may be the only option.
 - **Using a non-durable form.** A general power that ends at incapacity stops working at exactly the moment it would be used.
 - **No successor agent.** If your only agent cannot serve, the document may be useless.
-- **Leaving out gifting or trust powers.** If Medicaid planning might come up later, a power without gifting authority can block it. See [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning).
+- **Leaving out gifting or trust powers.** If Medicaid planning might come up later, a power without gifting authority can block it. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).
 - **Not telling the agent where things are.** An agent who cannot find the accounts cannot help. Our [asset and account inventory](/checklists/asset-and-account-inventory) can help.
 - **Relying on an old document.** Some banks hesitate with forms that are many years old. Reviewing it every few years helps.
 
 ## Power of attorney or guardianship
 
-A power of attorney is private and you choose the agent. A guardianship or conservatorship is a court process, and the judge chooses. Guardianship is often slower, costs more and is public. For a side-by-side view, read [power of attorney vs guardianship](/compare/power-of-attorney-vs-guardianship).
+A power of attorney is private and you choose the agent. A guardianship or conservatorship is a court process, and the judge chooses. Guardianship is often slower, costs more and is public. For a side-by-side view, read [power of attorney vs guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship).
 
 ## How it works with a trust
 
-If you have a [revocable living trust](/guides/revocable-living-trust-explained), your successor trustee manages the trust assets if you become incapacitated. But some things stay outside a trust, such as IRAs, tax filings and a car you forgot to transfer. Your agent covers those. That is why people with trusts still sign a power of attorney.
+If you have a [revocable living trust](/learn/trusts/revocable-living-trust), your successor trustee manages the trust assets if you become incapacitated. But some things stay outside a trust, such as IRAs, tax filings and a car you forgot to transfer. Your agent covers those. That is why people with trusts still sign a power of attorney.
 
 ## Questions to ask an attorney
 

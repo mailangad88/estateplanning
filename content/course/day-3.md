@@ -37,7 +37,7 @@ List each policy: the company, the death benefit, and the beneficiary. Include p
 
 ### A business
 
-If you own a business, note the type (LLC, corporation, sole owner), your share, and any co-owners. The guide to [business succession planning](/guides/business-succession-planning) explains why this matters.
+If you own a business, note the type (LLC, corporation, sole owner), your share, and any co-owners. The guide to [business succession planning](/learn/business-owners/business-succession-planning) explains why this matters.
 
 ### Vehicles and valuables
 

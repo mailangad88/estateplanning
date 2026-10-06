@@ -23,6 +23,10 @@ faqs:
     a: "Your state's intestacy law decides who inherits, usually your spouse and closest relatives in a fixed order. If you become incapacitated, your family may need a court to appoint a guardian or conservator. Neither outcome reflects your preferences, and both can be slower and more expensive than a plan."
   - q: "Is estate planning only for older people?"
     a: "No. Accidents and sudden illness happen at any age, and the incapacity documents matter as much at 35 as at 75. What changes with age is the emphasis: young families focus on guardians and life insurance, retirees on long-term care and taxes."
+  - q: "How often should an estate plan be reviewed?"
+    a: "Many attorneys suggest a quick review every three to five years, and right away after a major life change like a marriage, divorce, birth, death, or move to a new state."
+  - q: "Does an estate plan avoid probate?"
+    a: "Not automatically. A will alone still goes through probate. Tools like a funded living trust, beneficiary designations, and transfer-on-death registrations can keep some or all assets out of probate, depending on your state's rules."
 related:
   - "basics/estate-planning-documents-checklist"
   - "basics/common-estate-planning-mistakes"
@@ -61,6 +65,25 @@ A typical plan combines several documents, each doing a different job. Our guide
 
 Notice that three of the five apply while you are still alive. That surprises people. A will does nothing for you if you are in a coma; a power of attorney and a healthcare directive do.
 
+## How does your property actually pass at death?
+
+Your property passes in one of three ways, and knowing which way each asset travels is the heart of estate planning.
+
+1. **By beneficiary designation.** Life insurance, 401(k)s, IRAs and many bank accounts pass to whoever is named on the account form. The will does not control these.
+2. **By how the asset is titled.** A house held as joint tenants with right of survivorship goes to the surviving owner. Assets titled in a trust follow the trust's instructions.
+3. **By your will.** Anything left over, titled in your name alone with no beneficiary, passes under your will through probate.
+
+This matters because the form beats the will. If your will says "split everything equally between my three children" but your life insurance names only your oldest, the oldest gets all the insurance.
+
+For example, Daniel and Grace, both in their late thirties, have two children, ages 4 and 7. They own a home, two 401(k)s and a term life policy. A basic plan for them might include:
+
+- Wills that leave everything to each other first, then to the children, and name Grace's sister as guardian.
+- A trust for the children, so they do not receive a lump sum at 18.
+- Beneficiary forms that name each other first, then the children's trust as the backup. Naming the minor children directly could force a court to appoint someone to manage the money.
+- Financial and healthcare powers of attorney that name each other, with the sister as backup.
+
+Without a plan, a court would choose the guardian, and each child would likely receive their share outright at 18.
+
 ## Who actually needs an estate plan?
 
 Every adult benefits from some of these documents, but certain situations make a plan urgent rather than merely sensible.
@@ -98,6 +121,8 @@ The federal estate tax only affects estates above the basic exclusion amount, cu
 Every state has default rules, called [intestate succession](/glossary/intestate-succession), that decide who gets your property if you have no valid will. The rules usually split your estate between a surviving spouse and children, or pass it to parents, siblings and more distant relatives in a set order. The rules do not know about the friend you wanted to help, the charity you supported, or the child who cared for you.
 
 Consider Daniel, 62, divorced and living with his partner, Priya. He dies with a house in his name, a bank account and a 401(k) that still names his ex-wife. Without a will, his two adult children inherit the house; Priya has no claim and may have to move out. The 401(k) goes to the ex-wife because the form controls. Every piece of this could have been prevented with a few documents. Read more about [what happens when someone dies without a will](/learn/wills/dying-without-a-will).
+
+Beneficiary forms cause trouble in other ways too. An ex-spouse may still be named on an old 401(k). In some states divorce revokes that automatically, but federal rules for employer plans can override state law.
 
 The incapacity side is just as important. If you suffer a stroke and have no power of attorney, your family may have to petition a court for [guardianship or conservatorship](/learn/power-of-attorney/power-of-attorney-vs-guardianship). That process is public, takes weeks or months, and puts a judge in charge of whom to appoint.
 

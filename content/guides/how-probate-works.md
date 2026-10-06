@@ -39,7 +39,7 @@ Many assets skip probate entirely. These include:
 - Property owned jointly "with right of survivorship"
 - Assets held in a living trust
 
-For a fuller breakdown, see [probate vs non-probate assets](/compare/probate-vs-non-probate-assets).
+For a fuller breakdown, see [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets).
 
 ## The main steps
 
@@ -107,9 +107,9 @@ Probate also has upsides. A court supervises the executor, and there is a firm d
 
 ## Common ways to avoid probate
 
-- A [revocable living trust](/guides/revocable-living-trust-explained), properly funded
+- A [revocable living trust](/learn/trusts/revocable-living-trust), properly funded
 - [Beneficiary designations](/guides/beneficiary-designations) on retirement accounts and life insurance
-- [Transfer-on-death and payable-on-death](/guides/transfer-on-death-and-payable-on-death) designations on bank, brokerage and, in some states, real estate
+- [Transfer-on-death and payable-on-death](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts) designations on bank, brokerage and, in some states, real estate
 - Joint ownership with right of survivorship, though this carries its own risks
 
 Each tool has tradeoffs. Joint ownership, for example, can expose the asset to the other owner's creditors. Compare options in [joint ownership vs trust](/compare/joint-ownership-vs-trust).

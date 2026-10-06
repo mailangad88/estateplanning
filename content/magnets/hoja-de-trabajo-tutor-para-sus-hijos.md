@@ -20,7 +20,7 @@ related:
   - life-events/new-baby
   - checklists/choosing-a-guardian-worksheet
   - tools/guardian-fund-calculator
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
 reviewed: false
 updated: "2026-10-06"
 ---

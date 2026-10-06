@@ -17,7 +17,7 @@ lang: es
 translation_of: new-parents-kit
 related:
   - guides/guardianship-for-minor-children
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
   - life-events/new-baby
   - tools/guardian-fund-calculator
 reviewed: false
