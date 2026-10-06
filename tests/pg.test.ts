@@ -10,7 +10,7 @@ import { audit, verifyAuditChain } from "@/server/audit/log";
 import { PgMfaStore } from "@/server/pg/mfa";
 import { buildCaseView } from "@/server/portal/caseView";
 import type {
-  Activity, Assignment, Comment, Consult, DocumentRecord, Engagement, Firm, Lawyer, Lead, Person, Task, User,
+  Activity, Assignment, Comment, Consult, CrmDelivery, DocumentRecord, Engagement, Firm, Lawyer, Lead, Person, Task, User,
 } from "@/server/types";
 import type { FeeRuleVersion, Invoice } from "@/server/fees/admin";
 import type { BillableEvent } from "@/lib/fees";
@@ -160,6 +160,10 @@ const fixtures = {
     skipped: [{ stepId: "b", reason: "no sms", at: T0 }],
   } satisfies Required<SequenceEnrollment>,
   suppressions: { id: "email:a@x.test", channel: "email", address: "a@x.test", reason: "STOP", at: T0 } satisfies Required<Suppression>,
+  crmDeliveries: {
+    id: "l1", leadId: "l1", event: "lead.created", status: "failed", httpStatus: 503, attempts: 3, error: "HTTP 503",
+    createdAt: T0, updatedAt: T0, lastAttemptAt: T0, deliveredAt: T0,
+  } satisfies Required<CrmDelivery>,
   automationState: { id: "automation", cursorSeq: 42, stages: { l1: "offered" }, exits: { l1: "x" } } satisfies Required<AutomationState>,
 };
 
@@ -425,6 +429,21 @@ suite("postgres integration", () => {
       await c.query("ROLLBACK");
       c.release();
     }
+  });
+
+  maybe("crm_deliveries: admins read (firm admins only their leads), nobody else, app_user cannot write", async () => {
+    // l1 belongs to f1 and is assigned; the seeding test already inserted the delivery for it.
+    await service.crmDeliveries.insert({ ...fixtures.crmDeliveries, id: "ghost", leadId: "no-such-lead" });
+    const ids = async (s: PgSession) => (await as(s).crmDeliveries.list()).map((d) => d.id).sort();
+    expect(await ids({ userId: "u-admin", role: "platform_admin" })).toEqual(["ghost", "l1"]);
+    expect(await ids({ userId: "u-fa", role: "firm_admin", firmId: "f1" })).toEqual(["l1"]);
+    expect(await ids({ userId: "u-fa2", role: "firm_admin", firmId: "f2" })).toEqual([]);
+    expect(await ids({ userId: "u-m", role: "marketing" })).toEqual([]);
+    expect(await ids({ userId: "u-i", role: "intake" })).toEqual([]);
+    await expect(as({ userId: "u-admin", role: "platform_admin" }).crmDeliveries.update("l1", { status: "delivered" })).rejects.toThrow();
+    await expect(as({ userId: "u-admin", role: "platform_admin" }).crmDeliveries.insert({ ...fixtures.crmDeliveries, id: "x" })).rejects.toThrow();
+    const updated = await service.crmDeliveries.update("l1", { status: "delivered", error: undefined, httpStatus: 200 });
+    expect(updated.error).toBeUndefined();
   });
 
   maybe("audit_events cannot be updated or deleted", async () => {

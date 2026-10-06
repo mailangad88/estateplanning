@@ -7,7 +7,7 @@ const sql = readFileSync(join(__dirname, "..", "db", "schema.sql"), "utf8");
 const TABLES = [
   "users", "firms", "lawyers", "persons", "leads", "assignments", "documents", "comments", "activities",
   "consults", "engagements", "tasks", "fee_rule_versions", "billable_events", "invoices",
-  "sequence_enrollments", "suppressions", "audit_events",
+  "sequence_enrollments", "suppressions", "crm_deliveries", "audit_events",
 ];
 
 describe("db/schema.sql", () => {

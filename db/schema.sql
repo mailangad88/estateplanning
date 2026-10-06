@@ -315,6 +315,25 @@ CREATE TABLE automation_state (
   exits      jsonb NOT NULL DEFAULT '{}'::jsonb
 );
 
+-- One row per website-to-middleware webhook delivery (src/lib/crm.ts, src/server/leadDelivery.ts).
+-- id is the idempotency key. Holds ids, status and a short error only: never the payload or any contact detail.
+-- lead_id has no FK: a delivery can outlive, or precede, the portal copy of the lead.
+CREATE TABLE crm_deliveries (
+  id              text PRIMARY KEY,
+  lead_id         text NOT NULL,
+  event           text NOT NULL,
+  status          text NOT NULL CHECK (status IN ('delivered','failed','abandoned')),
+  http_status     integer,
+  attempts        integer NOT NULL DEFAULT 0,
+  error           text,
+  created_at      timestamptz NOT NULL,
+  updated_at      timestamptz NOT NULL,
+  last_attempt_at timestamptz NOT NULL,
+  delivered_at    timestamptz
+);
+CREATE INDEX crm_deliveries_lead_idx ON crm_deliveries (lead_id);
+CREATE INDEX crm_deliveries_status_idx ON crm_deliveries (status, last_attempt_at);
+
 -- Hash-chained, append-only (see src/server/audit/log.ts).
 CREATE TABLE audit_events (
   id            text PRIMARY KEY,
@@ -495,6 +514,7 @@ ALTER TABLE billable_events      ENABLE ROW LEVEL SECURITY;  ALTER TABLE billabl
 ALTER TABLE invoices             ENABLE ROW LEVEL SECURITY;  ALTER TABLE invoices             FORCE ROW LEVEL SECURITY;
 ALTER TABLE sequence_enrollments ENABLE ROW LEVEL SECURITY;  ALTER TABLE sequence_enrollments FORCE ROW LEVEL SECURITY;
 ALTER TABLE suppressions         ENABLE ROW LEVEL SECURITY;  ALTER TABLE suppressions         FORCE ROW LEVEL SECURITY;
+ALTER TABLE crm_deliveries       ENABLE ROW LEVEL SECURITY;  ALTER TABLE crm_deliveries       FORCE ROW LEVEL SECURITY;
 ALTER TABLE audit_events         ENABLE ROW LEVEL SECURITY;  ALTER TABLE audit_events         FORCE ROW LEVEL SECURITY;
 
 -- Workers (public intake form, e-sign webhooks, nurture engine, routing) are trusted
@@ -515,6 +535,7 @@ CREATE POLICY service_all ON tasks                FOR ALL TO app_service USING (
 CREATE POLICY service_all ON billable_events      FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON sequence_enrollments FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON suppressions         FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON crm_deliveries       FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_read ON fee_rule_versions   FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON invoices            FOR SELECT TO app_service USING (true);
 CREATE POLICY service_write_invoices ON invoices  FOR INSERT TO app_service WITH CHECK (true);
@@ -641,6 +662,12 @@ CREATE POLICY enrollments_admin ON sequence_enrollments FOR ALL TO app_user
 CREATE POLICY suppressions_staff ON suppressions FOR ALL TO app_user
   USING (app_role() IN ('platform_admin','intake')) WITH CHECK (app_role() IN ('platform_admin','intake'));
 
+-- crm_deliveries (lead health page): read-only for admins; platform_admin sees all, firm_admin only their firm's leads.
+CREATE POLICY crm_deliveries_select ON crm_deliveries FOR SELECT TO app_user USING (
+  app_role() = 'platform_admin'
+  OR (app_role() = 'firm_admin' AND lead_access(lead_id) = 'full')
+);
+
 -- fees: platform_admin only; firm_admin reads their firm's non-draft invoices.
 CREATE POLICY fee_rules_admin ON fee_rule_versions FOR ALL TO app_user
   USING (app_role() = 'platform_admin') WITH CHECK (app_role() = 'platform_admin');
@@ -669,7 +696,7 @@ GRANT SELECT, INSERT, UPDATE         ON leads, assignments, consults, engagement
 GRANT SELECT, INSERT                 ON documents, comments, activities, invoices, billable_events, fee_rule_versions TO app_user;
 GRANT UPDATE                         ON invoices TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON sequence_enrollments TO app_user;
-GRANT SELECT                         ON lead_offer_cards, client_consults, lead_funnel_daily TO app_user;
+GRANT SELECT                         ON lead_offer_cards, client_consults, lead_funnel_daily, crm_deliveries TO app_user;
 
 -- Audit trail: INSERT only. No SELECT/UPDATE/DELETE/TRUNCATE grant to the app at all
 -- except SELECT for the platform_admin/firm_admin policy above.
@@ -679,6 +706,7 @@ REVOKE UPDATE, DELETE, TRUNCATE ON fee_rule_versions FROM PUBLIC, app_user, app_
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, leads, assignments, documents, comments,
   activities, consults, engagements, tasks, billable_events, sequence_enrollments, suppressions TO app_service;
+GRANT SELECT, INSERT, UPDATE ON crm_deliveries TO app_service;
 GRANT SELECT, INSERT ON invoices TO app_service;
 GRANT SELECT ON fee_rule_versions TO app_service;
 GRANT INSERT ON audit_events TO app_service;
