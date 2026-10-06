@@ -1,0 +1,58 @@
+{
+  "title": "Annual Estate Plan Review",
+  "description": "A once-a-year check to confirm your documents, beneficiaries, and key people still match your life and wishes.",
+  "intro": "An estate plan works best when it reflects your life today. Set aside an hour each year to walk through this list. If anything has changed, note it and decide whether to talk with your attorney.",
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "sections": [
+    {
+      "heading": "Life changes this year",
+      "items": [
+        "Marriage, divorce, or a new partner",
+        "Birth or adoption of a child or grandchild",
+        "Death or serious illness of a family member or someone named in your plan",
+        "Move to a new state",
+        "Change in a beneficiary's needs, such as a disability or money trouble",
+        "New business, retirement, or major job change"
+      ]
+    },
+    {
+      "heading": "Money and property",
+      "items": [
+        "New real estate purchased or sold",
+        "New bank, investment, or retirement accounts opened",
+        "Large change in the value of your estate",
+        "New debts or loans to family",
+        "New assets titled in the trust's name, if you have a trust"
+      ]
+    },
+    {
+      "heading": "People in your plan",
+      "items": [
+        "Confirm your executor and trustee are still willing and able",
+        "Confirm your financial and health care agents are still the right choice",
+        "Confirm your guardian choice for minor children still fits",
+        "Update contact information for everyone named"
+      ]
+    },
+    {
+      "heading": "Documents and forms",
+      "items": [
+        "Request current beneficiary designations on retirement accounts and insurance",
+        "Review your health care wishes and living will",
+        "Update your asset inventory and digital assets list",
+        "Update your letter of instruction",
+        "Confirm originals are stored safely and your executor knows where"
+      ]
+    },
+    {
+      "heading": "Next steps",
+      "items": [
+        "Write down any changes you want to make",
+        "Schedule a review with your attorney if anything significant changed",
+        "Set a reminder for next year's review",
+        "Use the plan review reminder tool to get a yearly prompt"
+      ]
+    }
+  ]
+}
