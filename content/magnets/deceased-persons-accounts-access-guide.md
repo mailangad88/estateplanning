@@ -30,7 +30,7 @@ answers:
   - "How do I stop a deceased person's phone from being billed?"
 related:
   - checklists/first-30-days-after-a-death
-  - guides/digital-assets-estate-planning
+  - learn/digital-assets/digital-assets-in-your-estate-plan
   - guides/settling-an-estate-step-by-step
   - checklists/digital-assets-inventory
 reviewed: false
@@ -132,4 +132,4 @@ Not everything on a phone is meant to be read. Decide as a family who will look 
 
 ## Next step
 
-Use the [first 30 days checklist](/checklists/first-30-days-after-a-death) for the rest of the list. For the legal side, read [digital assets and estate planning](/guides/digital-assets-estate-planning), or start at [our plan finder](/plan-finder) if you want to talk to an attorney.
+Use the [first 30 days checklist](/checklists/first-30-days-after-a-death) for the rest of the list. For the legal side, read [digital assets and estate planning](/learn/digital-assets/digital-assets-in-your-estate-plan), or start at [our plan finder](/plan-finder) if you want to talk to an attorney.

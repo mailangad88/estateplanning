@@ -18,7 +18,7 @@ related:
   - guides/healthcare-directives-and-living-wills
   - life-events/serious-diagnosis
   - life-events/caring-for-aging-parents
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
 answers:
   - "Should I use a trust for a parent with dementia?"
   - "Is a springing or immediate power of attorney better?"
@@ -72,7 +72,7 @@ Also consider a HIPAA release so the agent and family can speak to doctors.
 
 ### 3. Will or trust
 
-A will names an executor and says who gets what. A [revocable living trust](/guides/revocable-living-trust-explained) can add a layer of management: if the person can no longer manage assets, a successor trustee steps in without a court. Assets must actually be retitled into the trust for that to work, which is covered in [funding your trust](/guides/funding-your-trust).
+A will names an executor and says who gets what. A [revocable living trust](/learn/trusts/revocable-living-trust) can add a layer of management: if the person can no longer manage assets, a successor trustee steps in without a court. Assets must actually be retitled into the trust for that to work, which is covered in [funding your trust](/guides/funding-your-trust).
 
 If a trust is used, a trustee can pay bills and care costs from trust assets. This is one reason some families prefer it, but it is not required, and a power of attorney can cover many of the same needs. An attorney can say which fits.
 
@@ -124,7 +124,7 @@ These are hard conversations. A general approach:
 
 - Talk to the doctor about the likely stages, and ask about a social worker or care manager.
 - Learn the care options: in-home help, adult day programs, assisted living, memory care, nursing home.
-- Know what pays for care. Medicare does not generally cover long-term custodial care. Medicaid does for people who qualify, with rules on income and assets. Look-back rules apply to gifts, and the federal look-back period is 60 months<!-- verify --> (California differs). Read [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning) before anyone gives away assets.
+- Know what pays for care. Medicare does not generally cover long-term custodial care. Medicaid does for people who qualify, with rules on income and assets. Look-back rules apply to gifts, and the federal look-back period is 60 months<!-- verify --> (California differs). Read [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) before anyone gives away assets.
 - Check for long-term care insurance and veterans' benefits.
 - Write down the person's routines, favorite foods, music, and what calms them. Future caregivers will be grateful.
 

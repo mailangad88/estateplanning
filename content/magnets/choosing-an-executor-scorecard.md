@@ -14,7 +14,7 @@ pages: 5
 tag: executor_scorecard
 sequence: B
 related:
-  - guides/choosing-an-executor
+  - learn/wills/choosing-an-executor
   - compare/executor-vs-trustee
   - checklists/choosing-an-executor-worksheet
   - tools/executor-workload
@@ -31,7 +31,7 @@ updated: "2026-10-06"
 
 ## How to use this scorecard
 
-The usual advice is to pick the oldest child or the closest friend. A better start is to list what the job involves and ask who fits it. The executor, also called a personal representative in some states, collects assets, pays debts, files returns and distributes what is left. For background see [choosing an executor](/guides/choosing-an-executor). The [executor workload tool](/tools/executor-workload) gives a feel for the time involved.
+The usual advice is to pick the oldest child or the closest friend. A better start is to list what the job involves and ask who fits it. The executor, also called a personal representative in some states, collects assets, pays debts, files returns and distributes what is left. For background see [choosing an executor](/learn/wills/choosing-an-executor). The [executor workload tool](/tools/executor-workload) gives a feel for the time involved.
 
 ## Step 1: Name your candidates
 

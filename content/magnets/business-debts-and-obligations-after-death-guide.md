@@ -26,7 +26,7 @@ answers:
   - "What happens to a business bank account when the owner dies?"
   - "What happens to business assets in probate?"
 related:
-  - guides/business-succession-planning
+  - learn/business-owners/business-succession-planning
   - guides/how-probate-works
   - guides/settling-an-estate-step-by-step
   - life-events/starting-a-business
@@ -110,4 +110,4 @@ A business that is losing money at death is a real decision, not a default. Opti
 
 ## Next step
 
-For planning ahead, read [business succession planning](/guides/business-succession-planning). If a death has already happened, [settling an estate step by step](/guides/settling-an-estate-step-by-step) lays out the order of steps, or start at [our plan finder](/plan-finder).
+For planning ahead, read [business succession planning](/learn/business-owners/business-succession-planning). If a death has already happened, [settling an estate step by step](/guides/settling-an-estate-step-by-step) lays out the order of steps, or start at [our plan finder](/plan-finder).

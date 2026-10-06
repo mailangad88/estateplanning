@@ -14,11 +14,11 @@ pages: 6
 tag: il_checklist
 sequence: B
 related:
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - guides/what-makes-a-will-valid
   - guides/powers-of-attorney
-  - guides/transfer-on-death-and-payable-on-death
-  - guides/what-happens-if-you-die-without-a-will
+  - learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts
+  - learn/wills/dying-without-a-will
 answers:
   - "What does an estate plan include?"
   - "question"

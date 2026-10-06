@@ -251,7 +251,7 @@ export function sumLivingShares(r: InheritResult): Frac {
   return r.heirs.reduce((acc, h) => addFrac(acc, h.share), { n: 0, d: 1 });
 }
 
-export const GUIDE_PATH = "/guides/what-happens-if-you-die-without-a-will";
+export const GUIDE_PATH = "/learn/wills/dying-without-a-will";
 
 export const SUPPORTED_STATE = "IL";
 

@@ -16,7 +16,7 @@ sequence: G
 related:
   - guides/how-probate-works
   - guides/settling-an-estate-step-by-step
-  - blog/how-long-does-probate-take
+  - learn/probate/how-long-does-probate-take
   - checklists/first-30-days-after-a-death
   - tools/executor-workload
 diagram: ProbateTimeline

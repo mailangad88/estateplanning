@@ -14,7 +14,7 @@ pages: 5
 tag: il_intestacy_chart
 sequence: B
 related:
-  - guides/what-happens-if-you-die-without-a-will
+  - learn/wills/dying-without-a-will
   - blog/does-a-spouse-inherit-everything-if-there-is-no-will
   - blog/who-gets-the-house-if-theres-no-will-and-no-spouse
   - guides/how-to-make-a-will
@@ -78,7 +78,7 @@ Per stirpes means by branch. If a person had two children and one died, leaving 
 - [ ] In-laws who are not spouses
 - [ ] A former spouse after divorce, in most cases
 
-If anyone on this list matters to you, intestacy will not reach them. A will or beneficiary form can. Read [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will).
+If anyone on this list matters to you, intestacy will not reach them. A will or beneficiary form can. Read [what happens if you die without a will](/learn/wills/dying-without-a-will).
 
 ## What the chart does not control
 

@@ -16,7 +16,7 @@ sequence: B
 related:
   - guides/estate-and-inheritance-taxes
   - tools/estate-tax-estimator
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
   - life-events/retirement
 answers:
   - "Annual exclusion vs. lifetime exemption: how do they differ?"
@@ -81,7 +81,7 @@ Compare that with leaving the stock at death. Inherited property generally recei
 ## Gifts that cause other problems
 
 - **Medicaid.** Gifts can trigger a look-back penalty on long-term care benefits. Use the [Medicaid look-back tool](/tools/medicaid-lookback-date) before giving large amounts.
-- **Minors.** Large gifts to a child need a custodian or trust. See [leaving money to minors](/guides/leaving-money-to-minors).
+- **Minors.** Large gifts to a child need a custodian or trust. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors).
 - **Creditors and divorce.** A gift to an adult child may be reachable by that child's creditors or in a divorce.
 - **Your own security.** Do not give away money you may need for care later.
 

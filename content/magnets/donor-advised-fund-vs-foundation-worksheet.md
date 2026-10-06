@@ -17,7 +17,7 @@ related:
   - guides/estate-and-inheritance-taxes
   - guides/irrevocable-trusts-explained
   - guides/estate-planning-for-blended-families
-  - guides/business-succession-planning
+  - learn/business-owners/business-succession-planning
 answers:
   - "Charitable remainder trust vs. donor-advised fund?"
 reviewed: false

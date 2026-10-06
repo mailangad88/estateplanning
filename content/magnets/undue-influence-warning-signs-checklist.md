@@ -17,7 +17,7 @@ related:
   - guides/powers-of-attorney
   - life-events/caring-for-aging-parents
   - guides/what-makes-a-will-valid
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
 answers:
   - "What are the signs of undue influence over an elderly person?"
 reviewed: false

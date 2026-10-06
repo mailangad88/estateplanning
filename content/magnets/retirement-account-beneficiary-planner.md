@@ -18,7 +18,7 @@ related:
   - compare/beneficiary-designation-vs-will
   - blog/do-retirement-accounts-go-through-probate
   - checklists/beneficiary-designation-audit
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
 answers:
   - "Do I have to take annual withdrawals from an inherited IRA under the 10-year rule?"
   - "Does a spouse beneficiary have to cash out an IRA within 10 years?"

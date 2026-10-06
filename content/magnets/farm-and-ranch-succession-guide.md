@@ -14,9 +14,9 @@ pages: 8
 tag: farm_succession_guide
 sequence: B
 related:
-  - guides/business-succession-planning
+  - learn/business-owners/business-succession-planning
   - guides/estate-and-inheritance-taxes
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
   - life-events/retirement
   - guides/estate-planning-for-blended-families
 diagram: BusinessSuccession
@@ -183,8 +183,8 @@ Take notes and send them afterward.
 - Heirs disagree or one heir has been working without a written deal.
 - You want to use an LLC, partnership or trust to hold land or the operation.
 - Your estate could face federal or state estate tax.
-- Medicaid planning for long-term care is a concern. See [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning).
+- Medicaid planning for long-term care is a concern. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).
 
 ## Next step
 
-Read [business succession planning](/guides/business-succession-planning), then [book a consult](/plan-finder) and bring your records and the family meeting notes.
+Read [business succession planning](/learn/business-owners/business-succession-planning), then [book a consult](/plan-finder) and bring your records and the family meeting notes.

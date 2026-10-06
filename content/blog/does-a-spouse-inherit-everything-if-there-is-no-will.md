@@ -2,7 +2,7 @@
 title: "Does a spouse inherit everything if there is no will?"
 description: "Not always. Without a will, a surviving spouse may share the estate with children or parents. Here is how state law commonly splits it."
 answer: "Not always. In many states a surviving spouse gets everything only if there are no children, or if all the children are also the spouse's children. If you have children from another relationship, or surviving parents, the spouse may have to share. The split is set by state law, not by what the family expects."
-pillar: what-happens-if-you-die-without-a-will
+pillar: how-to-make-a-will
 date: 2026-10-06
 updated: 2026-10-06
 reviewed: false
@@ -16,7 +16,7 @@ faqs:
 
 Not always. Many people assume their husband or wife gets everything automatically. In a lot of states that is only true if there are no children, or if every child belongs to both spouses.
 
-Our guide to [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will) explains intestacy in general. Here we focus on the spouse's share.
+Our guide to [what happens if you die without a will](/learn/wills/dying-without-a-will) explains intestacy in general. Here we focus on the spouse's share.
 
 ## Common patterns across states
 
@@ -43,7 +43,7 @@ Intestacy rules only reach property in the deceased person's name alone. A lot o
 
 - Jointly owned homes and bank accounts pass to the surviving owner.
 - Life insurance and retirement accounts go to the named beneficiary. See [do retirement accounts go through probate](/blog/do-retirement-accounts-go-through-probate).
-- Accounts with [payable-on-death](/guides/transfer-on-death-and-payable-on-death) designations go to the named person.
+- Accounts with [payable-on-death](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts) designations go to the named person.
 
 So a spouse may receive most of the family's wealth even if the intestacy share is small. Or the reverse, if an old beneficiary form still names an ex. Our [beneficiary designation audit](/checklists/beneficiary-designation-audit) helps catch that.
 

@@ -16,7 +16,7 @@ sequence: B
 related:
   - guides/how-probate-works
   - guides/settling-an-estate-step-by-step
-  - guides/transfer-on-death-and-payable-on-death
+  - learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts
   - checklists/asset-and-account-inventory
 answers:
   - "How do I leave a timeshare to my heirs?"

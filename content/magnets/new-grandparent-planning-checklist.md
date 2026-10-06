@@ -15,7 +15,7 @@ tag: new_grandparent_checklist
 sequence: B
 related:
   - life-events/new-baby
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
   - guides/guardianship-for-minor-children
   - guides/estate-and-inheritance-taxes
 answers:

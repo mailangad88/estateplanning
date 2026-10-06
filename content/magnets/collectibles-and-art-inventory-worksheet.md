@@ -15,7 +15,7 @@ tag: collectibles_inventory_worksheet
 sequence: B
 related:
   - checklists/asset-and-account-inventory
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - checklists/letter-of-instruction-outline
   - guides/estate-and-inheritance-taxes
 answers:

@@ -14,10 +14,10 @@ pages: 6
 tag: business_succession_scorecard
 sequence: B
 related:
-  - guides/business-succession-planning
+  - learn/business-owners/business-succession-planning
   - life-events/starting-a-business
   - guides/powers-of-attorney
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
 diagram: BusinessSuccession
 answers:
   - "What is business succession planning?"
@@ -133,4 +133,4 @@ Choose the three to five lowest scoring questions and turn each into a task. Giv
 
 ## Next step
 
-Read the [Business Succession Planning guide](/guides/business-succession-planning) for the full picture, then take the [Plan Readiness Assessment](/tools/plan-readiness-assessment). To meet an attorney, start at [/plan-finder](/plan-finder).
+Read the [Business Succession Planning guide](/learn/business-owners/business-succession-planning) for the full picture, then take the [Plan Readiness Assessment](/tools/plan-readiness-assessment). To meet an attorney, start at [/plan-finder](/plan-finder).

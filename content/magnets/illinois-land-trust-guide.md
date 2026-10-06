@@ -14,11 +14,11 @@ pages: 5
 tag: il_land_trust_guide
 sequence: B
 related:
-  - guides/transfer-on-death-and-payable-on-death
-  - compare/probate-vs-non-probate-assets
+  - learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts
+  - learn/probate/probate-vs-non-probate-assets
   - guides/funding-your-trust
-  - compare/will-vs-trust
-  - guides/revocable-living-trust-explained
+  - learn/trusts/will-vs-trust
+  - learn/trusts/revocable-living-trust
 answers:
   - "What is a land trust?"
 reviewed: false
@@ -62,7 +62,7 @@ A land trust does not, on its own, avoid probate, reduce taxes, stop a lender fr
 
 ## Land trust and other tools
 
-- **Living trust.** Many Illinois plans assign the beneficial interest to a revocable living trust. The land trust keeps title and the living trust holds the interest. See [revocable living trust explained](/guides/revocable-living-trust-explained).
+- **Living trust.** Many Illinois plans assign the beneficial interest to a revocable living trust. The land trust keeps title and the living trust holds the interest. See [revocable living trust explained](/learn/trusts/revocable-living-trust).
 - **Transfer on death instrument.** The Illinois statute applies to real property transfers made by recorded instrument. It is not the usual tool for a land trust, since the title sits with the trustee. Ask an attorney how to coordinate the two.
 - **Mortgage and exemptions.** Ask the lender and the county assessor how a land trust affects the loan and any homeowner exemptions before you set one up or change it.
 

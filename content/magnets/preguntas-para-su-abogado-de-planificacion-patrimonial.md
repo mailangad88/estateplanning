@@ -18,7 +18,7 @@ translation_of: questions-to-ask-an-estate-planning-attorney
 related:
   - compare/online-will-vs-estate-attorney
   - checklists/documents-to-gather-before-your-consult
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - tools/plan-readiness-assessment
   - guides/what-makes-a-will-valid
 reviewed: false

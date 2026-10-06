@@ -14,7 +14,7 @@ pages: 4
 tag: will_review_checklist
 sequence: B
 related:
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
   - checklists/annual-estate-plan-review
   - guides/what-makes-a-will-valid
   - guides/how-to-make-a-will
@@ -31,7 +31,7 @@ updated: "2026-10-06"
 
 ## How to use this checklist
 
-Find your will, read it start to finish, and tick each item. A will does not expire, but life moves on. People die, move, divorce or change. Marking up a signed will by hand can cause trouble, so write notes on a separate copy instead. For broader reviews see [updating your estate plan](/guides/updating-your-estate-plan).
+Find your will, read it start to finish, and tick each item. A will does not expire, but life moves on. People die, move, divorce or change. Marking up a signed will by hand can cause trouble, so write notes on a separate copy instead. For broader reviews see [updating your estate plan](/learn/basics/when-to-update-your-estate-plan).
 
 ## Step 1: Find the right document
 

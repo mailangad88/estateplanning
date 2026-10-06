@@ -1,3 +1,4 @@
+import { getAllArticles } from "@/lib/library";
 import { describe, expect, it } from "vitest";
 import { TOOLS } from "@/config/tools";
 import { getChecklists, getComparisons, getGlossary, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
@@ -19,6 +20,7 @@ function knownPaths() {
   magnets.forEach((m) => s.add(`/free/${m.slug}`));
   getQuizzes().forEach((q) => s.add(`/quizzes/${q.slug}`));
   DECISIONS.forEach((d) => s.add(`/decide/${d.slug}`));
+  getAllArticles().forEach((a) => s.add(a.url));
   return s;
 }
 

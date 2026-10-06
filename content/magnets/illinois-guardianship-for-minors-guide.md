@@ -18,7 +18,7 @@ related:
   - checklists/choosing-a-guardian-worksheet
   - life-events/new-baby
   - tools/guardian-picker
-  - compare/power-of-attorney-vs-guardianship
+  - learn/power-of-attorney/power-of-attorney-vs-guardianship
 diagram: GuardianshipDecision
 answers:
   - "What is guardianship of a minor?"

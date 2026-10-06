@@ -16,7 +16,7 @@ sequence: B
 related:
   - guides/healthcare-directives-and-living-wills
   - guides/powers-of-attorney
-  - compare/power-of-attorney-vs-guardianship
+  - learn/power-of-attorney/power-of-attorney-vs-guardianship
   - compare/living-will-vs-healthcare-power-of-attorney
 reviewed: false
 updated: "2026-10-06"
@@ -82,7 +82,7 @@ Check the statute for the current order and conditions. The Act may also set lim
 
 ## Money is separate
 
-A health care agent does not manage bank accounts. Illinois uses a separate document, the statutory power of attorney for property. Without it, a family may need to ask a court to appoint a guardian of the estate. See [power of attorney vs guardianship](/compare/power-of-attorney-vs-guardianship) and the [Illinois power of attorney for property guide](/free/illinois-power-of-attorney-for-property-guide).
+A health care agent does not manage bank accounts. Illinois uses a separate document, the statutory power of attorney for property. Without it, a family may need to ask a court to appoint a guardian of the estate. See [power of attorney vs guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship) and the [Illinois power of attorney for property guide](/free/illinois-power-of-attorney-for-property-guide).
 
 ## If a parent has dementia and no power of attorney
 

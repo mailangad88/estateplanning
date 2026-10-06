@@ -35,7 +35,7 @@ related:
   - guides/how-probate-works
   - guides/settling-an-estate-step-by-step
   - checklists/first-30-days-after-a-death
-  - compare/probate-vs-non-probate-assets
+  - learn/probate/probate-vs-non-probate-assets
 reviewed: false
 updated: "2026-10-06"
 ---

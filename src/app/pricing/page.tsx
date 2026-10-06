@@ -33,12 +33,12 @@ const ADDONS = ["Additional real estate deed", "Pet trust", "Digital assets prov
 const FAQS = [
   { q: "Why flat fees instead of hourly?", a: "You know the full cost before you commit, and you can call with questions without watching the clock. Hourly billing suits uncertain or disputed matters, and we say so in advance when something is billed that way." },
   { q: "Does the first consultation cost anything?", a: `Consult fee: ${firm.consultFee}. We state it before you book, and say whether it is credited toward the plan.` },
-  { q: "Why is a trust more expensive than a will?", a: "It is more documents and more work: the trust, a pour-over will, a deed and funding instructions. Whether it is worth it depends on probate costs in your state, the property you own and your family. See [will vs trust](/compare/will-vs-trust)." },
+  { q: "Why is a trust more expensive than a will?", a: "It is more documents and more work: the trust, a pour-over will, a deed and funding instructions. Whether it is worth it depends on probate costs in your state, the property you own and your family. See [will vs trust](/learn/trusts/will-vs-trust)." },
   { q: "What is not included?", a: "Probate, trust administration, litigation and will contests, tax return preparation, Medicaid applications, deeds for property outside the state, and work needed because your situation turns out to be more complex than described. We tell you before doing extra work and quote the difference in writing." },
   { q: "Are there other costs?", a: "Recording a deed costs a county fee, notary or witness fees may apply, and extra complexity may add cost. We list them in the engagement agreement. [Attorney: typical recording fee range in your state]" },
   { q: "Why do online services cost less?", a: "They sell forms. You complete the questions, and nobody checks whether the result fits your facts or your state. Some people are comfortable with that. We charge for the attorney's review and advice. See [online will vs estate attorney](/compare/online-will-vs-estate-attorney)." },
   { q: "Do you offer payment plans?", a: "[Attorney: payment plan terms, or none]. If only the most urgent documents are wanted first, such as a power of attorney and healthcare directive, ask us about doing those on their own." },
-  { q: "Do you offer discounts, or update my plan if the law changes?", a: "[Attorney: only offer what is true, for example couple pricing as shown, and your policy on updates]. See [updating your estate plan](/guides/updating-your-estate-plan)." },
+  { q: "Do you offer discounts, or update my plan if the law changes?", a: "[Attorney: only offer what is true, for example couple pricing as shown, and your policy on updates]. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan)." },
 ];
 
 export default function Pricing() {

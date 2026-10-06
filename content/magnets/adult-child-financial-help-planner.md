@@ -17,7 +17,7 @@ related:
   - guides/estate-and-inheritance-taxes
   - checklists/asset-and-account-inventory
   - guides/how-to-make-a-will
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -34,7 +34,7 @@ Many parents help an adult child with rent, a down payment, debt or a business, 
 - **Amount needed for my own retirement and care:** ______________________
 - **Amount I can give or lend without strain:** ______________________
 
-Give yourself a margin. Helping a child at the cost of your own security can leave the child responsible for you later. If you may need long-term care within a few years, ask about [look-back rules](/guides/medicaid-and-long-term-care-planning), since gifts can affect eligibility.
+Give yourself a margin. Helping a child at the cost of your own security can leave the child responsible for you later. If you may need long-term care within a few years, ask about [look-back rules](/learn/elder-care/medicaid-planning), since gifts can affect eligibility.
 
 ## Step 2: Compare your options
 

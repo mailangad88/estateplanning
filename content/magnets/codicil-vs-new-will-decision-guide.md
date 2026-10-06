@@ -14,7 +14,7 @@ pages: 5
 tag: codicil_vs_new_will
 sequence: B
 related:
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
   - guides/how-to-make-a-will
   - guides/what-makes-a-will-valid
   - compare/pour-over-will-vs-simple-will
@@ -122,7 +122,7 @@ A will changes only what passes under the will. Retirement accounts, life insura
 
 ## Next step
 
-Not sure whether a codicil is enough? [Book a consult](/plan-finder) and bring your current will and any codicils. Our [guide to updating your plan](/guides/updating-your-estate-plan) lists other triggers to review.
+Not sure whether a codicil is enough? [Book a consult](/plan-finder) and bring your current will and any codicils. Our [guide to updating your plan](/learn/basics/when-to-update-your-estate-plan) lists other triggers to review.
 
 ## Sources
 

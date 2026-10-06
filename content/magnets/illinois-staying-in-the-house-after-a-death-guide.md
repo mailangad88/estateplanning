@@ -14,7 +14,7 @@ pages: 6
 tag: il_staying_in_house
 sequence: G
 related:
-  - guides/what-happens-if-you-die-without-a-will
+  - learn/wills/dying-without-a-will
   - guides/how-probate-works
   - life-events/death-of-a-parent
   - compare/joint-ownership-vs-trust
@@ -138,4 +138,4 @@ If any appear, speak with an attorney quickly. In Illinois, removing an occupant
 
 ## Next step
 
-Read [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will) or use the [Illinois heirship worksheet](/free/illinois-heirship-affidavit-worksheet) to see who the heirs are.
+Read [what happens if you die without a will](/learn/wills/dying-without-a-will) or use the [Illinois heirship worksheet](/free/illinois-heirship-affidavit-worksheet) to see who the heirs are.

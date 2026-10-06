@@ -14,8 +14,8 @@ pages: 5
 tag: trust_amend_restate
 sequence: B
 related:
-  - guides/revocable-living-trust-explained
-  - guides/updating-your-estate-plan
+  - learn/trusts/revocable-living-trust
+  - learn/basics/when-to-update-your-estate-plan
   - guides/funding-your-trust
   - compare/revocable-vs-irrevocable-trust
 answers:
@@ -134,7 +134,7 @@ Rules vary by state, so follow your attorney's directions. Typical steps:
 
 ## Next step
 
-If you want a trust reviewed or restated, [book a consult](/plan-finder). Bring the full trust and all amendments. Our [guide to updating your plan](/guides/updating-your-estate-plan) lists when to revisit it.
+If you want a trust reviewed or restated, [book a consult](/plan-finder). Bring the full trust and all amendments. Our [guide to updating your plan](/learn/basics/when-to-update-your-estate-plan) lists when to revisit it.
 
 ## Sources
 

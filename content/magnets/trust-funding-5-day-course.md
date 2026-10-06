@@ -16,7 +16,7 @@ sequence: B
 related:
   - guides/funding-your-trust
   - checklists/trust-funding-checklist
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
   - compare/joint-ownership-vs-trust
 diagram: TrustFundingAssets
 answers:
@@ -83,7 +83,7 @@ Bank and brokerage accounts are often the easiest to fund. Usually it is a short
 Typically, you have two options for a bank account:
 
 - **Retitle it** into the name of the trust, so the trustee is the owner.
-- **Name the trust as the payable-on-death beneficiary,** which keeps the account in your name while you live. See [transfer on death and payable on death](/guides/transfer-on-death-and-payable-on-death).
+- **Name the trust as the payable-on-death beneficiary,** which keeps the account in your name while you live. See [transfer on death and payable on death](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts).
 
 Each approach has tradeoffs, and banks differ in what they will accept.
 

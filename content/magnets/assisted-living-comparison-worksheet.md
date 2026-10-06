@@ -14,7 +14,7 @@ pages: 7
 tag: assisted_living_compare
 sequence: B
 related:
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - life-events/caring-for-aging-parents
   - tools/medicaid-savings-runway
   - guides/powers-of-attorney
@@ -153,7 +153,7 @@ Add a column of notes about what you cannot score, such as how you felt walking 
 
 ## Next step
 
-Learn how care is paid for in the [guide to Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning), and [book a consult](/plan-finder) to review a contract before it is signed.
+Learn how care is paid for in the [guide to Medicaid and long-term care planning](/learn/elder-care/medicaid-planning), and [book a consult](/plan-finder) to review a contract before it is signed.
 
 ## Sources
 

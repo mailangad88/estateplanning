@@ -17,7 +17,7 @@ related:
   - guides/beneficiary-designations
   - compare/beneficiary-designation-vs-will
   - checklists/beneficiary-designation-audit
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
   - life-events/divorce
 diagram: BeneficiaryBeatsWill
 answers:

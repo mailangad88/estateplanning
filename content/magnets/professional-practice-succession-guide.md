@@ -14,7 +14,7 @@ pages: 5
 tag: professional_practice_succession
 sequence: B
 related:
-  - guides/business-succession-planning
+  - learn/business-owners/business-succession-planning
   - life-events/starting-a-business
   - guides/powers-of-attorney
   - tools/life-insurance-needs

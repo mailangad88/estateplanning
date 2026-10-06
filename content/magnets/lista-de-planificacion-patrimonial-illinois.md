@@ -16,10 +16,10 @@ sequence: B
 lang: es
 translation_of: illinois-estate-planning-checklist
 related:
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - guides/what-makes-a-will-valid
   - guides/powers-of-attorney
-  - guides/what-happens-if-you-die-without-a-will
+  - learn/wills/dying-without-a-will
 reviewed: false
 updated: "2026-10-06"
 ---

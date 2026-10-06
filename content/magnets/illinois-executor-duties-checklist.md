@@ -15,7 +15,7 @@ tag: il_executor_duties
 sequence: G
 related:
   - guides/settling-an-estate-step-by-step
-  - guides/choosing-an-executor
+  - learn/wills/choosing-an-executor
   - checklists/first-30-days-after-a-death
   - tools/executor-workload
   - life-events/death-of-a-parent

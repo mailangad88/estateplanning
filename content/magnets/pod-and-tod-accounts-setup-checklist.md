@@ -14,7 +14,7 @@ pages: 5
 tag: pod_tod_setup_checklist
 sequence: B
 related:
-  - guides/transfer-on-death-and-payable-on-death
+  - learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts
   - guides/beneficiary-designations
   - compare/beneficiary-designation-vs-will
   - checklists/beneficiary-designation-audit
@@ -30,7 +30,7 @@ reviewed: false
 updated: "2026-10-06"
 ---
 
-**How to use this checklist.** A payable-on-death (POD) designation on a bank account and a transfer-on-death (TOD) registration on a brokerage account let the account pass directly to the person you name. No probate is needed for those accounts. The beneficiary usually shows a death certificate and ID. This checklist helps you set up each account one at a time. For background, see the [guide to POD and TOD](/guides/transfer-on-death-and-payable-on-death). Rules and forms vary by institution and state.
+**How to use this checklist.** A payable-on-death (POD) designation on a bank account and a transfer-on-death (TOD) registration on a brokerage account let the account pass directly to the person you name. No probate is needed for those accounts. The beneficiary usually shows a death certificate and ID. This checklist helps you set up each account one at a time. For background, see the [guide to POD and TOD](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts). Rules and forms vary by institution and state.
 
 ## Step 1: Inventory your accounts
 

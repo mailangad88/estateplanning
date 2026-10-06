@@ -14,7 +14,7 @@ pages: 6
 tag: caregiver_pay_taxes
 sequence: B
 related:
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - life-events/caring-for-aging-parents
   - guides/powers-of-attorney
   - tools/medicaid-savings-runway
@@ -123,4 +123,4 @@ If your care agreement pays less than your salary, the difference is the true co
 
 ## Next step
 
-Download the [Sibling Caregiving Agreement Worksheet](/free/sibling-caregiving-agreement-worksheet) and the [Personal Care Agreement Guide](/free/personal-care-agreement-guide), or see the [Medicaid and long-term care planning guide](/guides/medicaid-and-long-term-care-planning).
+Download the [Sibling Caregiving Agreement Worksheet](/free/sibling-caregiving-agreement-worksheet) and the [Personal Care Agreement Guide](/free/personal-care-agreement-guide), or see the [Medicaid and long-term care planning guide](/learn/elder-care/medicaid-planning).

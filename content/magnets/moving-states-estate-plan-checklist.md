@@ -15,7 +15,7 @@ tag: moving_states_checklist
 sequence: B
 related:
   - life-events/moving-to-a-new-state
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
   - guides/estate-and-inheritance-taxes
   - guides/powers-of-attorney
   - checklists/annual-estate-plan-review
@@ -91,7 +91,7 @@ Some states limit who may serve as executor (personal representative) if the per
 - [ ] Do I need a backup who lives nearby?
 - [ ] Do I want a trust and trustee in place to reduce reliance on court?
 
-See [choosing an executor](/guides/choosing-an-executor) and [executor vs trustee](/compare/executor-vs-trustee).
+See [choosing an executor](/learn/wills/choosing-an-executor) and [executor vs trustee](/compare/executor-vs-trustee).
 
 - **Executor and where they live:** ______________________
 - **Backup executor and where they live:** ______________________
@@ -116,7 +116,7 @@ Checklist:
 | | | | | |
 | | | | | |
 
-See [probate vs non-probate assets](/compare/probate-vs-non-probate-assets) and [how probate works](/guides/how-probate-works).
+See [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets) and [how probate works](/guides/how-probate-works).
 
 ## Updating titles and accounts
 

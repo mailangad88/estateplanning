@@ -18,7 +18,7 @@ related:
   - guides/powers-of-attorney
   - checklists/important-contacts-list
   - guides/healthcare-directives-and-living-wills
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
 answers:
   - "What is a geriatric care manager?"
   - "How do I get power of attorney for a parent who lives in another state?"
@@ -133,7 +133,7 @@ Put the key facts on a single page and send it to siblings and local helpers. Th
 - **Cost of local help per hour:** ______________________
 - **Who is paying what:** ______________________
 
-Keep a record of anything you pay for your parent. If siblings share the work, agree on how costs and time are counted. Caregiving costs may be a tax issue in some cases, so ask a tax professional. If long-term care costs loom, read [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning) before moving or giving away assets, because gifts can trigger a look-back penalty.
+Keep a record of anything you pay for your parent. If siblings share the work, agree on how costs and time are counted. Caregiving costs may be a tax issue in some cases, so ask a tax professional. If long-term care costs loom, read [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) before moving or giving away assets, because gifts can trigger a look-back penalty.
 
 ## Part 7: Hard conversations
 

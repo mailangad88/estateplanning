@@ -15,9 +15,9 @@ tag: step_up_basis_guide
 sequence: B
 related:
   - guides/estate-and-inheritance-taxes
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
   - guides/irrevocable-trusts-explained
-  - guides/transfer-on-death-and-payable-on-death
+  - learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts
 answers:
   - "How do I find the stepped-up basis of an inherited asset?"
   - "What is the carryover basis rule for gifts?"

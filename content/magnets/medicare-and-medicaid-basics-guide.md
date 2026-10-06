@@ -14,7 +14,7 @@ pages: 5
 tag: medicare_medicaid_basics
 sequence: B
 related:
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - tools/medicaid-lookback-date
   - tools/medicaid-savings-runway
   - life-events/caring-for-aging-parents
@@ -124,7 +124,7 @@ Federal law requires states to try to recover certain Medicaid costs from the es
 
 ## Next step
 
-Read the [Medicaid and long-term care planning guide](/guides/medicaid-and-long-term-care-planning). Then [book a consult through the plan finder](/plan-finder) to talk through your situation.
+Read the [Medicaid and long-term care planning guide](/learn/elder-care/medicaid-planning). Then [book a consult through the plan finder](/plan-finder) to talk through your situation.
 
 ## Sources
 

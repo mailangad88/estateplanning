@@ -31,10 +31,10 @@ answers:
   - "Should I give my house to my children now?"
   - "Quitclaim deed vs. warranty deed for family transfers?"
 related:
-  - guides/transfer-on-death-and-payable-on-death
+  - learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts
   - compare/joint-ownership-vs-trust
   - compare/transfer-on-death-deed-vs-trust
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -98,7 +98,7 @@ Illinois does not have a California-style reassessment on transfer, but exemptio
 
 ## Medicaid
 
-A transfer for less than full value can create a penalty when applying for long-term care Medicaid. The look-back is 60 months. Giving a child part of your home within that period can delay benefits. Read [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning) and talk to an attorney before any transfer if care is a possibility.
+A transfer for less than full value can create a penalty when applying for long-term care Medicaid. The look-back is 60 months. Giving a child part of your home within that period can delay benefits. Read [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) and talk to an attorney before any transfer if care is a possibility.
 
 ## Compare the options
 
@@ -133,4 +133,4 @@ A quitclaim deed passes whatever interest the giver has, with no promise about t
 
 ## Next step
 
-Read [transfer on death and payable on death](/guides/transfer-on-death-and-payable-on-death) and the [joint ownership vs trust comparison](/compare/joint-ownership-vs-trust). To talk to an Illinois attorney, start at [our plan finder](/plan-finder).
+Read [transfer on death and payable on death](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts) and the [joint ownership vs trust comparison](/compare/joint-ownership-vs-trust). To talk to an Illinois attorney, start at [our plan finder](/plan-finder).

@@ -21,7 +21,7 @@ related: [business-succession-planning, powers-of-attorney, revocable-living-tru
 
 Your business is now an asset. It may also be your family's main source of income. If you die or cannot work, someone needs the legal power to keep it running, sell it or close it.
 
-That power does not appear on its own. Without a plan, your family may need a court to appoint someone. The guide to [business succession planning](/guides/business-succession-planning) covers the options. Meanwhile, bills, payroll and customers keep coming.
+That power does not appear on its own. Without a plan, your family may need a court to appoint someone. The guide to [business succession planning](/learn/business-owners/business-succession-planning) covers the options. Meanwhile, bills, payroll and customers keep coming.
 
 If you have co-owners, your death or disability affects them too. Without an agreement, your spouse or children may end up as their new business partners.
 
@@ -43,11 +43,11 @@ With co-owners, a buy-sell agreement sets out who can buy a departing owner's sh
 
 ### A trust for your ownership
 
-Holding your shares or LLC interest in a [revocable living trust](/guides/revocable-living-trust-explained) can avoid probate. Your trustee can step in quickly. Check first whether your operating agreement allows the transfer.
+Holding your shares or LLC interest in a [revocable living trust](/learn/trusts/revocable-living-trust) can avoid probate. Your trustee can step in quickly. Check first whether your operating agreement allows the transfer.
 
 ### Written instructions
 
-A short operating manual helps. It lists key clients, vendors, passwords, where records live, and who to call. Your family may know nothing about your business. The guide to [digital assets](/guides/digital-assets-estate-planning) covers passwords and online accounts.
+A short operating manual helps. It lists key clients, vendors, passwords, where records live, and who to call. Your family may know nothing about your business. The guide to [digital assets](/learn/digital-assets/digital-assets-in-your-estate-plan) covers passwords and online accounts.
 
 ## Common mistakes
 
@@ -80,6 +80,6 @@ This is one owner's set of choices. Yours may look different.
 
 ## Next step
 
-The guide to [business succession planning](/guides/business-succession-planning) goes deeper on handing off a business. The [digital assets inventory](/checklists/digital-assets-inventory) can help you list business logins and accounts.
+The guide to [business succession planning](/learn/business-owners/business-succession-planning) goes deeper on handing off a business. The [digital assets inventory](/checklists/digital-assets-inventory) can help you list business logins and accounts.
 
 When you are ready, [book a consult through the plan finder](/plan-finder).

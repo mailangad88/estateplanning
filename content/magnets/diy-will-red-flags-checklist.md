@@ -72,7 +72,7 @@ See [estate planning for blended families](/guides/estate-planning-for-blended-f
 - [ ] I have valuable collections, intellectual property or foreign assets
 - [ ] Most of my assets are in joint names or have beneficiaries, so the will controls little
 
-If most assets pass outside the will, a will alone may not do what you think. See [probate vs non-probate assets](/compare/probate-vs-non-probate-assets).
+If most assets pass outside the will, a will alone may not do what you think. See [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets).
 
 ## Part 4: Signing red flags
 

@@ -14,9 +14,9 @@ pages: 6
 tag: spendthrift_incentive_trust
 sequence: B
 related:
-  - guides/leaving-money-to-minors
-  - guides/revocable-living-trust-explained
-  - guides/choosing-a-trustee
+  - learn/guardianship/leaving-money-to-minors
+  - learn/trusts/revocable-living-trust
+  - learn/trusts/choosing-a-trustee
   - guides/estate-planning-for-blended-families
 answers:
   - "What is a spendthrift trust?"
@@ -136,7 +136,7 @@ A trust with strong protection but a weak trustee is a bad fit. Ask:
 
 ## Next step
 
-[Book a consult](/plan-finder) to discuss which protections fit your heirs. The [guide on choosing a trustee](/guides/choosing-a-trustee) can help you prepare.
+[Book a consult](/plan-finder) to discuss which protections fit your heirs. The [guide on choosing a trustee](/learn/trusts/choosing-a-trustee) can help you prepare.
 
 ## Sources
 

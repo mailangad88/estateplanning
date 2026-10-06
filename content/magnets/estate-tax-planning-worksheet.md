@@ -17,7 +17,7 @@ related:
   - tools/estate-tax-estimator
   - guides/estate-and-inheritance-taxes
   - tools/state-death-tax-checker
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
 diagram: EstateTaxThresholds
 answers:
   - "What is the gross estate?"

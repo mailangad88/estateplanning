@@ -91,6 +91,13 @@ function legalServiceNode() {
   return node;
 }
 
+/** True for a firm fact that still holds its "[...]" placeholder. Placeholders never go into structured data. */
+const unfilled = (v: string | null | undefined) => !v || /^\[.*\]$/.test(v.trim());
+
+/**
+ * The attorney as a Person: the reviewer every approved page points to (reviewedBy) and the main entity of
+ * /about-the-attorney. Credentials are added only once the attorney has supplied them.
+ */
 function attorneyNode() {
   const node: Record<string, unknown> = {
     "@type": "Person",
@@ -98,8 +105,23 @@ function attorneyNode() {
     name: firm.attorneyName,
     jobTitle: firm.attorneyTitle,
     worksFor: { "@id": ORG_ID },
+    url: abs("/about-the-attorney"),
+    knowsAbout: ["Estate planning", "Wills", "Living trusts", "Powers of attorney", "Probate", "Trust administration"],
   };
-  if (firm.attorneySameAs.length) node.sameAs = firm.attorneySameAs;
+  if (firm.attorneyHeadshot) node.image = abs(firm.attorneyHeadshot);
+  if (!unfilled(firm.attorneyShortBio)) node.description = firm.attorneyShortBio;
+  if (!unfilled(firm.attorneyBio.education)) node.alumniOf = firm.attorneyBio.education;
+  if (!unfilled(firm.barNumber) && !unfilled(firm.licensedState)) {
+    node.hasCredential = {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "license",
+      name: `Attorney license, ${firm.licensedState}`,
+      identifier: firm.barNumber,
+      ...(firm.barLookupUrl ? { url: firm.barLookupUrl } : {}),
+    };
+  }
+  const sameAs = [...firm.attorneySameAs, ...(firm.barLookupUrl ? [firm.barLookupUrl] : [])];
+  if (sameAs.length) node.sameAs = [...new Set(sameAs)];
   return node;
 }
 

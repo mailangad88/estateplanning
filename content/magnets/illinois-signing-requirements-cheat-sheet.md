@@ -17,7 +17,7 @@ related:
   - guides/what-makes-a-will-valid
   - guides/powers-of-attorney
   - guides/healthcare-directives-and-living-wills
-  - guides/transfer-on-death-and-payable-on-death
+  - learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts
   - checklists/important-contacts-list
 diagram: WillValidity
 answers:

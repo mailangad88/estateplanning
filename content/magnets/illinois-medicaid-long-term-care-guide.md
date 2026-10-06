@@ -14,11 +14,11 @@ pages: 5
 tag: il_medicaid_ltc_guide
 sequence: B
 related:
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - tools/medicaid-lookback-date
   - life-events/caring-for-aging-parents
   - tools/medicaid-savings-runway
-  - guides/transfer-on-death-and-payable-on-death
+  - learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts
 diagram: MedicaidLookback
 answers:
   - "How do I qualify for Medicaid nursing home coverage?"

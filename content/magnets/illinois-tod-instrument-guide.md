@@ -14,7 +14,7 @@ pages: 5
 tag: il_tod_instrument_guide
 sequence: B
 related:
-  - guides/transfer-on-death-and-payable-on-death
+  - learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts
   - compare/transfer-on-death-deed-vs-trust
   - guides/how-probate-works
   - life-events/buying-a-home

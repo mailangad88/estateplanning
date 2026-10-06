@@ -15,9 +15,9 @@ tag: il_unequal_inheritance_guide
 sequence: B
 state: IL
 related:
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - guides/how-to-make-a-will
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
   - guides/estate-planning-for-blended-families
 answers:
   - "Can I disinherit an adult child?"
@@ -112,7 +112,7 @@ You can leave a grandchild money directly, but a minor cannot control it. Choice
 | 529 college plan | Funds go for education | Tax and financial aid rules apply |
 | Gift to the parent | Parent decides | Might be diverted to their own debts |
 
-If a grandchild has special needs, do not leave money outright. See /free/special-needs-trust-funding-worksheet. See /guides/leaving-money-to-minors and /free/grandchildren-education-gift-planner.
+If a grandchild has special needs, do not leave money outright. See /free/special-needs-trust-funding-worksheet. See /learn/guardianship/leaving-money-to-minors and /free/grandchildren-education-gift-planner.
 
 ## Nieces, nephews and others
 

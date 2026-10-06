@@ -17,7 +17,7 @@ state: IL
 diagram: SpecialNeedsTrust
 related:
   - guides/special-needs-trusts
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - tools/medicaid-savings-runway
   - checklists/documents-to-gather-before-your-consult
 answers:

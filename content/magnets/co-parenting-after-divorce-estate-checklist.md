@@ -16,7 +16,7 @@ sequence: B
 related:
   - life-events/divorce
   - guides/guardianship-for-minor-children
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
   - checklists/beneficiary-designation-audit
   - guides/beneficiary-designations
 answers:
@@ -137,7 +137,7 @@ If the relationship is not safe or productive, skip the conversation and take yo
 
 ## Next step
 
-Bring this filled-in page to a consult. [Book a consult through the plan finder](/plan-finder) and we can turn your choices into documents your ex cannot undo. For the money side, read the [guide to leaving money to minors](/guides/leaving-money-to-minors).
+Bring this filled-in page to a consult. [Book a consult through the plan finder](/plan-finder) and we can turn your choices into documents your ex cannot undo. For the money side, read the [guide to leaving money to minors](/learn/guardianship/leaving-money-to-minors).
 
 ## Sources
 

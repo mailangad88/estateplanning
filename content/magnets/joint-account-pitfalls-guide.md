@@ -15,7 +15,7 @@ tag: joint_account_pitfalls_guide
 sequence: B
 related:
   - compare/joint-ownership-vs-trust
-  - guides/transfer-on-death-and-payable-on-death
+  - learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts
   - guides/powers-of-attorney
   - blog/what-to-do-with-a-parents-bank-account-after-death
 answers:
@@ -66,7 +66,7 @@ That is useful for spouses. For a parent and a child it creates problems.
 | Revocable trust account | Trustee can manage | Trust | Passes by trust | Needs a trust and the account retitled |
 | Ordinary account plus will | Nothing | Parent only | Probate, in most cases | Delay and cost |
 
-For many families the combination of a power of attorney, a POD designation and a will works better than a joint account, because it separates control from inheritance. See the [guide to POD and TOD](/guides/transfer-on-death-and-payable-on-death).
+For many families the combination of a power of attorney, a POD designation and a will works better than a joint account, because it separates control from inheritance. See the [guide to POD and TOD](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts).
 
 ## Questions to decide on a setup
 

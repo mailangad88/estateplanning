@@ -18,7 +18,7 @@ related:
   - life-events/new-baby
   - checklists/choosing-a-guardian-worksheet
   - tools/guardian-fund-calculator
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
 diagram: GuardianshipDecision
 answers:
   - "How do I choose a guardian for my children?"

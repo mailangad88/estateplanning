@@ -15,7 +15,7 @@ tag: parent_moving_in
 sequence: B
 related:
   - life-events/caring-for-aging-parents
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - guides/powers-of-attorney
   - guides/healthcare-directives-and-living-wills
 reviewed: false
@@ -84,7 +84,7 @@ Rules vary by state. See [powers of attorney](/guides/powers-of-attorney) and th
 - [ ] Ask a tax professional whether you can claim your parent as a dependent or deduct medical costs. The tests include how much the parent earns and how much of their support you provide.
 - [ ] Ask whether any state program pays family caregivers. Some states and the VA have such programs.
 - [ ] Check long-term care insurance, if any, for home care benefits.
-- [ ] If Medicaid may be needed, talk to an attorney before any large gift or transfer. Federal law has a look-back period for gifts, which can block eligibility for a time. Details vary by state. See the [guide to Medicaid and long-term care](/guides/medicaid-and-long-term-care-planning) and the [look-back date tool](/tools/medicaid-lookback-date).
+- [ ] If Medicaid may be needed, talk to an attorney before any large gift or transfer. Federal law has a look-back period for gifts, which can block eligibility for a time. Details vary by state. See the [guide to Medicaid and long-term care](/learn/elder-care/medicaid-planning) and the [look-back date tool](/tools/medicaid-lookback-date).
 
 Money rules that prevent fights:
 

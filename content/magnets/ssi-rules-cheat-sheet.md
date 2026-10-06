@@ -16,7 +16,7 @@ sequence: B
 related:
   - guides/special-needs-trusts
   - life-events/caring-for-aging-parents
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - compare/special-needs-trust-vs-able-account
 answers:
   - "What counts as a resource for SSI?"

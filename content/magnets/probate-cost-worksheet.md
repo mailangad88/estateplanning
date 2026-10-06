@@ -17,7 +17,7 @@ related:
   - tools/probate-cost-estimator
   - guides/how-probate-works
   - guides/settling-an-estate-step-by-step
-  - blog/how-long-does-probate-take
+  - learn/probate/how-long-does-probate-take
   - tools/small-estate-checker
 answers:
   - "How much does probate cost?"
@@ -41,7 +41,7 @@ updated: "2026-10-06"
 
 ## Step 1: Decide what is actually in probate
 
-Probate covers assets held only in the deceased person's name with no beneficiary. Accounts with beneficiaries, jointly owned property with survivorship rights, and assets in a living trust usually skip it. Rules vary by state. See [probate vs non-probate assets](/compare/probate-vs-non-probate-assets).
+Probate covers assets held only in the deceased person's name with no beneficiary. Accounts with beneficiaries, jointly owned property with survivorship rights, and assets in a living trust usually skip it. Rules vary by state. See [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets).
 
 | Asset | Value | In probate? (Yes / No / Not sure) |
 |---|---|---|
@@ -159,7 +159,7 @@ For each route, write what it saves or costs in time and money:
 
 ## Other points to keep in mind
 
-Time is a cost too. Estates often remain open for many months, and creditor claim periods in some states set a minimum. See [how long probate takes](/blog/how-long-does-probate-take). Use the [probate cost estimator](/tools/probate-cost-estimator) for a quick check, then verify it against real quotes.
+Time is a cost too. Estates often remain open for many months, and creditor claim periods in some states set a minimum. See [how long probate takes](/learn/probate/how-long-does-probate-take). Use the [probate cost estimator](/tools/probate-cost-estimator) for a quick check, then verify it against real quotes.
 
 ## When to talk to an attorney
 

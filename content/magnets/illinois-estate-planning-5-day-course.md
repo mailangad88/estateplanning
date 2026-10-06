@@ -14,7 +14,7 @@ pages: 5
 tag: course_illinois_basics
 sequence: B
 related:
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - guides/how-to-make-a-will
   - guides/powers-of-attorney
   - guides/estate-and-inheritance-taxes
@@ -90,7 +90,7 @@ People often consider a trust when they:
 
 A trust also costs more to set up and requires follow-through. The trust only controls what you retitle into it. A trust that sits empty can leave the plan unfinished. Many small estates do fine with a will, beneficiary forms and powers of attorney.
 
-Ask which assets would pass by probate if you did nothing. The [will vs. trust comparison](/compare/will-vs-trust) lays out the tradeoffs.
+Ask which assets would pass by probate if you did nothing. The [will vs. trust comparison](/learn/trusts/will-vs-trust) lays out the tradeoffs.
 
 **Today's task:** List your assets in three groups: those with a named beneficiary, those jointly owned, and those in your name alone. The third group is what a will or trust must address.
 

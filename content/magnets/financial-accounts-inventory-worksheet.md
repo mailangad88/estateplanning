@@ -15,7 +15,7 @@ tag: accounts_inventory
 sequence: B
 related:
   - checklists/asset-and-account-inventory
-  - compare/probate-vs-non-probate-assets
+  - learn/probate/probate-vs-non-probate-assets
   - guides/beneficiary-designations
   - guides/how-probate-works
   - tools/beneficiary-audit
@@ -45,7 +45,7 @@ How an account is titled usually decides who gets it, and it can override your w
 | Trust account | Titled to the trust | Follows the trust terms |
 | Custodial (UTMA or UGMA) | Held for a minor | Moves to the child or a successor custodian, per state law |
 
-Read more in [probate vs non-probate assets](/compare/probate-vs-non-probate-assets) and [beneficiary designations](/guides/beneficiary-designations).
+Read more in [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets) and [beneficiary designations](/guides/beneficiary-designations).
 
 ## Bank accounts
 
@@ -108,7 +108,7 @@ Count and mark after filling it in.
 - [ ] Joint accounts where the other owner is not the person I want to receive it: ____
 - [ ] Accounts that no longer match my will or trust: ____
 
-Anything you ticked is a task. For a minor, ask about a trust or custodian instead of leaving an account to a child directly. See [leaving money to minors](/guides/leaving-money-to-minors).
+Anything you ticked is a task. For a minor, ask about a trust or custodian instead of leaving an account to a child directly. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors).
 
 ## Does the whole picture match your wishes?
 

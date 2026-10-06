@@ -15,9 +15,9 @@ tag: vehicle_transfer_checklist
 sequence: G
 related:
   - guides/how-probate-works
-  - compare/probate-vs-non-probate-assets
+  - learn/probate/probate-vs-non-probate-assets
   - checklists/first-30-days-after-a-death
-  - guides/transfer-on-death-and-payable-on-death
+  - learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts
 answers:
   - "How does an executor handle a car?"
   - "What do I do with an inherited car?"
@@ -70,7 +70,7 @@ We are sorry for your loss. A vehicle looks simple, but how it transfers depends
 | Owned by a trust | The trustee transfers it | Does the trust document name the trustee's powers? |
 | Leased | The lease company controls the transfer | What does the lease say about death? |
 
-Value limits, waiting periods and forms vary by state. See [probate vs non-probate assets](/compare/probate-vs-non-probate-assets), and for Illinois, the [small estate affidavit guide](/free/illinois-small-estate-affidavit-guide).
+Value limits, waiting periods and forms vary by state. See [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets), and for Illinois, the [small estate affidavit guide](/free/illinois-small-estate-affidavit-guide).
 
 ## Step 4: Deal with a loan or lease
 

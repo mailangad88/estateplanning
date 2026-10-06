@@ -14,7 +14,7 @@ pages: 6
 tag: medicaid_asset_sorter
 sequence: B
 related:
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - tools/medicaid-savings-runway
   - checklists/asset-and-account-inventory
   - life-events/caring-for-aging-parents
@@ -139,4 +139,4 @@ A trust you can revoke counts. A trust you cannot touch, set up long enough ago,
 
 ## Next step
 
-Use the [Medicaid savings runway tool](/tools/medicaid-savings-runway) to see how long private pay savings will last, or read the [Medicaid and long-term care planning guide](/guides/medicaid-and-long-term-care-planning).
+Use the [Medicaid savings runway tool](/tools/medicaid-savings-runway) to see how long private pay savings will last, or read the [Medicaid and long-term care planning guide](/learn/elder-care/medicaid-planning).

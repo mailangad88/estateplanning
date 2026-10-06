@@ -14,7 +14,7 @@ pages: 5
 tag: guardianship_alternatives
 sequence: B
 related:
-  - compare/power-of-attorney-vs-guardianship
+  - learn/power-of-attorney/power-of-attorney-vs-guardianship
   - guides/powers-of-attorney
   - guides/special-needs-trusts
   - life-events/caring-for-aging-parents
@@ -38,7 +38,7 @@ updated: "2026-10-06"
 
 A court decides that an adult cannot make some or all decisions, and appoints a guardian, often a relative. Depending on the state, there may be a guardian of the person (health, living situation) and one of the estate or property (money). The process typically involves a petition, notice to family, a medical report, a hearing and ongoing reports to the court. It is public, costs money and can take months. A person under guardianship can lose the right to decide where to live, sign contracts or manage money.
 
-The comparison page on [power of attorney versus guardianship](/compare/power-of-attorney-vs-guardianship) shows the main differences.
+The comparison page on [power of attorney versus guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship) shows the main differences.
 
 ## Start with the problem, not the tool
 
@@ -126,7 +126,7 @@ Even then, many states allow limited guardianship, which covers only the areas o
 
 ## Next step
 
-Compare [power of attorney versus guardianship](/compare/power-of-attorney-vs-guardianship) and [book a consult through the plan finder](/plan-finder) to talk about the least restrictive option for your family.
+Compare [power of attorney versus guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship) and [book a consult through the plan finder](/plan-finder) to talk about the least restrictive option for your family.
 
 ## Sources
 

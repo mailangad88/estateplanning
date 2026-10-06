@@ -21,6 +21,8 @@ faqs:
     a: "State law lets executors receive reasonable compensation from the estate, and professional executors charge fees. A family member can decline pay. Executor fees are taxable income to the executor, so some heirs prefer to waive them if they are also inheriting."
   - q: "What if my executor does not want to serve?"
     a: "They can decline, usually by signing a written declination with the court, and your backup steps in. This is why you should ask first and name alternates. If no named person will serve, the court appoints an administrator."
+  - q: "Can my executor live in another state?"
+    a: "Many states allow it, but some add conditions, such as requiring a bond, a local agent, or limiting out-of-state executors to close relatives. Check the rules in the state where your estate will be probated."
 related:
   - "wills/dying-without-a-will"
   - "wills/how-to-make-a-valid-will"
@@ -42,9 +44,10 @@ An [executor](/glossary/executor) is the person named in your will to settle you
 The work usually includes:
 
 - Locating the original will and filing it with the probate court.
+- Asking the court to be formally appointed.
 - Collecting mail, securing the home and protecting valuables.
 - Getting death certificates and notifying banks, insurers and Social Security.
-- Opening an estate bank account and inventorying assets.
+- Getting a tax ID number for the estate, opening an estate bank account and inventorying assets, sometimes with appraisals.
 - Notifying creditors, paying valid debts and filing tax returns.
 - Selling or distributing property to your beneficiaries.
 - Keeping records and reporting to the court and the beneficiaries.
@@ -67,6 +70,10 @@ Think about the work, not the honor. A good executor tends to be:
 
 Rate each candidate from 1 to 5 on the traits above. A candidate who scores low on organization or honesty should not be your first choice no matter how much you love them. A person with a lower score in availability might still work with a professional co-executor handling the paperwork.
 
+## Who can legally serve?
+
+Most states require the executor to be an adult of sound mind. Many states bar people with certain felony convictions. Some states limit executors who live out of state, such as by requiring a bond or allowing only close relatives. A bank or trust company can also serve, which is more common for large or complicated estates.
+
 ## Who are common choices, and what are the tradeoffs?
 
 | Choice | Strengths | Watch out for |
@@ -78,6 +85,8 @@ Rate each candidate from 1 to 5 on the traits above. A candidate who scores low 
 | Co-executors | Share work, check each other | Decisions can stall if they disagree, some states require unanimity |
 | Bank or trust company | Experienced, continuous, impartial | Fees, minimums, less personal touch |
 | Attorney or professional fiduciary | Legal knowledge, impartial | Fees, may be unfamiliar with your family |
+
+Financial skill helps but is not required, because executors can pay professionals from estate funds for legal and tax work.
 
 Rosa, 64, has three children. Her oldest, Daniel, is a nurse who lives two states away. Her youngest, Elena, lives nearby, runs her own bookkeeping business, and gets along with everyone. Rosa named Elena as executor, Daniel as backup, and told all three children why. The conversation took twenty minutes and removed any suspicion that Elena was being favored.
 

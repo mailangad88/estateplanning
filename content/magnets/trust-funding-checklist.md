@@ -15,9 +15,9 @@ tag: trust_funding_checklist
 sequence: B
 related:
   - guides/funding-your-trust
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
   - checklists/trust-funding-checklist
-  - compare/will-vs-trust
+  - learn/trusts/will-vs-trust
   - checklists/asset-and-account-inventory
   - compare/pour-over-will-vs-simple-will
   - guides/irrevocable-trusts-explained

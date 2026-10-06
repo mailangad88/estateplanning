@@ -15,7 +15,7 @@ pages: 6
 tag: il_nursing_home_admission
 sequence: B
 related:
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - life-events/caring-for-aging-parents
   - guides/healthcare-directives-and-living-wills
   - tools/medicaid-savings-runway
@@ -140,4 +140,4 @@ Ask each facility for its most recent inspection report. Also visit once at a me
 
 ## Next step
 
-Read the [Medicaid and long-term care planning guide](/guides/medicaid-and-long-term-care-planning), then use the [Medicaid savings runway tool](/tools/medicaid-savings-runway).
+Read the [Medicaid and long-term care planning guide](/learn/elder-care/medicaid-planning), then use the [Medicaid savings runway tool](/tools/medicaid-savings-runway).

@@ -15,7 +15,7 @@ tag: single_parents_kit
 sequence: B
 related:
   - guides/guardianship-for-minor-children
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
   - life-events/new-baby
   - tools/life-insurance-needs
   - tools/guardian-fund-calculator
@@ -85,7 +85,7 @@ Children who inherit directly cannot manage the money. Without a plan, a court m
 - **What the trustee can pay for now (school, health care, housing, activities):** ______________________
 - **What I want the trustee to ask the guardian about:** ______________________
 
-Read more in [leaving money to minors](/guides/leaving-money-to-minors).
+Read more in [leaving money to minors](/learn/guardianship/leaving-money-to-minors).
 
 ## Step 4: Size your life insurance
 

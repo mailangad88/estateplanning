@@ -15,8 +15,8 @@ tag: age_60_checklist
 sequence: B
 related:
   - life-events/retirement
-  - guides/updating-your-estate-plan
-  - guides/medicaid-and-long-term-care-planning
+  - learn/basics/when-to-update-your-estate-plan
+  - learn/elder-care/medicaid-planning
   - checklists/beneficiary-designation-audit
 answers:
   - "What estate planning do I need in my 60s?"
@@ -43,7 +43,7 @@ Pull out your will, trust, powers of attorney and health care directive.
 
 Date of last review: ____________________
 
-See [updating your estate plan](/guides/updating-your-estate-plan).
+See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan).
 
 ## Medicare preparation
 
@@ -70,7 +70,7 @@ Medicare does not pay for most long-term custodial care. Families pay from savin
 | Hybrid life or annuity with LTC rider | Death benefit if care is not used | What does it cost versus separate policies? |
 | Medicaid | Needs-based, with look-back rules | Are there transfers we should not make? |
 
-Use the [Medicaid look-back date tool](/tools/medicaid-lookback-date) before giving away assets. See [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning).
+Use the [Medicaid look-back date tool](/tools/medicaid-lookback-date) before giving away assets. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).
 
 ## Retirement accounts and beneficiaries
 

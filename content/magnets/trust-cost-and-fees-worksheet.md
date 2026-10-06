@@ -14,10 +14,10 @@ pages: 5
 tag: trust_cost_worksheet
 sequence: B
 related:
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
   - guides/how-probate-works
   - tools/probate-cost-estimator
-  - compare/probate-vs-non-probate-assets
+  - learn/probate/probate-vs-non-probate-assets
 reviewed: false
 updated: "2026-10-06"
 answers:

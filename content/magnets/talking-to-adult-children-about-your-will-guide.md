@@ -17,7 +17,7 @@ related:
   - guides/how-to-make-a-will
   - guides/estate-planning-for-blended-families
   - blog/how-to-talk-to-your-parents-about-their-estate-plan
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
 answers:
   - "Should I tell my children what is in my will?"
   - "Should I tell my children about my estate plan?"

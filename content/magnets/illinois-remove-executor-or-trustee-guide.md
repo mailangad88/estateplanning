@@ -15,7 +15,7 @@ tag: il_executor_trustee_problems
 sequence: G
 related:
   - guides/settling-an-estate-step-by-step
-  - guides/choosing-a-trustee
+  - learn/trusts/choosing-a-trustee
   - compare/executor-vs-trustee
   - life-events/death-of-a-parent
 reviewed: false

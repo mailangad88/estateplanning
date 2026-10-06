@@ -15,7 +15,7 @@ tag: ethical_will_workbook
 sequence: B
 related:
   - checklists/letter-of-instruction-outline
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - life-events/retirement
   - guides/estate-planning-for-blended-families
 answers:

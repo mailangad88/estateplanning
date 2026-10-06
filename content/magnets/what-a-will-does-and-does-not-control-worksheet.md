@@ -32,7 +32,7 @@ answers:
   - "Do I need a will if everything has a beneficiary?"
 related:
   - guides/beneficiary-designations
-  - compare/probate-vs-non-probate-assets
+  - learn/probate/probate-vs-non-probate-assets
   - compare/beneficiary-designation-vs-will
   - checklists/asset-and-account-inventory
 reviewed: false
@@ -149,4 +149,4 @@ A will can leave a house that has a mortgage. The beneficiary takes the house su
 
 ## Next step
 
-Run the [beneficiary audit tool](/tools/beneficiary-audit), then read [probate vs non-probate assets](/compare/probate-vs-non-probate-assets). To talk with an attorney, start at [plan finder](/plan-finder).
+Run the [beneficiary audit tool](/tools/beneficiary-audit), then read [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets). To talk with an attorney, start at [plan finder](/plan-finder).

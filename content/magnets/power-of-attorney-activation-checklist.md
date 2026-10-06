@@ -15,7 +15,7 @@ tag: poa_activation_checklist
 sequence: B
 related:
   - guides/powers-of-attorney
-  - compare/power-of-attorney-vs-guardianship
+  - learn/power-of-attorney/power-of-attorney-vs-guardianship
   - checklists/important-contacts-list
   - life-events/caring-for-aging-parents
 answers:
@@ -92,7 +92,7 @@ Refusals happen even when the document is valid. Try these steps in order.
 - [ ] Some states have laws about how long an institution has to accept or reject a power of attorney and what reasons are allowed. Ask an attorney whether your state has one.
 - [ ] If the institution still refuses, ask an attorney about a letter, a new document signed on the institution's form, or a court order.
 
-A court-appointed guardian or conservator is the fallback, but it costs more and takes longer. See [power of attorney versus guardianship](/compare/power-of-attorney-vs-guardianship).
+A court-appointed guardian or conservator is the fallback, but it costs more and takes longer. See [power of attorney versus guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship).
 
 ## 5. Keep your money separate
 

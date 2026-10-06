@@ -15,7 +15,7 @@ tag: estate_accounting_ledger
 sequence: G
 related:
   - guides/settling-an-estate-step-by-step
-  - guides/choosing-an-executor
+  - learn/wills/choosing-an-executor
   - tools/executor-workload
   - checklists/first-30-days-after-a-death
 answers:
@@ -60,7 +60,7 @@ List what the person owned on the date of death, with the value on that date. Da
 | Personal items | | Estimate or appraisal | | |
 | | | | | |
 
-Only property that passes through the estate belongs in the ledger. Accounts with a named beneficiary usually pass directly. Keep a separate note of them for completeness. See [probate vs non-probate assets](/compare/probate-vs-non-probate-assets).
+Only property that passes through the estate belongs in the ledger. Accounts with a named beneficiary usually pass directly. Keep a separate note of them for completeness. See [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets).
 
 ## Part 2: Money received
 
@@ -110,7 +110,7 @@ Executor compensation is regulated by state law and the will. If you plan to tak
 |---|---|---|---|---|
 | | | | | |
 
-Do not pay a debt just because a collector calls. Check that the claim is valid and was made on time. See [what happens to debt when someone dies](/blog/what-happens-to-debt-when-someone-dies).
+Do not pay a debt just because a collector calls. Check that the claim is valid and was made on time. See [what happens to debt when someone dies](/learn/probate/dealing-with-debts-in-probate).
 
 ## Part 5: Distributions
 

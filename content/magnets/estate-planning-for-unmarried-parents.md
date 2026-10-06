@@ -15,8 +15,8 @@ tag: unmarried_parents_guide
 sequence: B
 related:
   - guides/guardianship-for-minor-children
-  - blog/estate-planning-for-unmarried-couples
-  - guides/leaving-money-to-minors
+  - learn/life-stages/estate-planning-for-unmarried-couples
+  - learn/guardianship/leaving-money-to-minors
   - life-events/new-baby
   - checklists/choosing-a-guardian-worksheet
 answers:
@@ -69,7 +69,7 @@ Children generally inherit from a parent under intestacy rules if parentage is e
 
 Also:
 
-- A minor cannot manage property directly. A court-supervised arrangement may be needed unless you name an adult to manage the money, or set up a trust. See [leaving money to minors](/guides/leaving-money-to-minors).
+- A minor cannot manage property directly. A court-supervised arrangement may be needed unless you name an adult to manage the money, or set up a trust. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors).
 - Life insurance and retirement accounts pass by beneficiary form, so naming a child directly can cause the same problem. Name a trust or a custodian under your state's Uniform Transfers to Minors Act, with an age you choose.
 - Child support obligations and life insurance are often linked in separation agreements.
 

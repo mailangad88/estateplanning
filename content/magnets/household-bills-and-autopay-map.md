@@ -54,7 +54,7 @@ Stopping these causes real harm quickly: a lapsed policy, a foreclosure notice, 
 | Personal loan | | | | | |
 | Medical payment plan | | | | | |
 
-Whether a debt is joint matters. If you alone are on a card, an agent or spouse generally has no duty to keep it current, though the estate may have to deal with it later. See [what happens to debt when someone dies](/blog/what-happens-to-debt-when-someone-dies).
+Whether a debt is joint matters. If you alone are on a card, an agent or spouse generally has no duty to keep it current, though the estate may have to deal with it later. See [what happens to debt when someone dies](/learn/probate/dealing-with-debts-in-probate).
 
 ## Step 3: Subscriptions and memberships
 

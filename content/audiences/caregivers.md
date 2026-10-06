@@ -47,7 +47,7 @@ updated: "2026-10-06"
 
 **I am not sure.** Book the consultation and bring what you have. We do not diagnose anyone. The attorney talks with your parent, asks about their finances, family and wishes, and decides whether they can understand what they are signing. If not, we tell you plainly and talk about next steps.
 
-**My parent cannot sign.** A power of attorney cannot be signed after capacity is gone. The remaining options are a court-appointed guardian or conservator, or narrower tools such as a representative payee for Social Security or a bank's own agent forms. [VERIFY AT PUBLISH: representative payee rules]. See [Power of attorney vs guardianship](/compare/power-of-attorney-vs-guardianship).
+**My parent cannot sign.** A power of attorney cannot be signed after capacity is gone. The remaining options are a court-appointed guardian or conservator, or narrower tools such as a representative payee for Social Security or a bank's own agent forms. [VERIFY AT PUBLISH: representative payee rules]. See [Power of attorney vs guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship).
 
 ## What is at stake
 
@@ -55,7 +55,7 @@ updated: "2026-10-06"
 - **The hospital wants a decision.** If your father cannot decide and no healthcare agent is named, state law sets a default order of who may decide, often spouse, then adult children. With three siblings who disagree, that default is where fights start. [State check: default order]
 - **The house has to be sold to pay for care.** Without authority to sign, a sale waits for a court.
 - **You are paying bills from your own account.** Many caregivers do. Without a written agreement it can look like a gift to a Medicaid reviewer, and it can make siblings suspicious.
-- **A Medicaid look-back is coming.** Most states look back 60 months at transfers when someone applies for nursing-home Medicaid <!-- verify --> [VERIFY AT PUBLISH: 42 U.S.C. 1396p(c)]. Moving a house or an account to a child in a hurry can cause a penalty period. See [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning) and the [look-back date calculator](/tools/medicaid-lookback-date).
+- **A Medicaid look-back is coming.** Most states look back 60 months at transfers when someone applies for nursing-home Medicaid <!-- verify --> [VERIFY AT PUBLISH: 42 U.S.C. 1396p(c)]. Moving a house or an account to a child in a hurry can cause a penalty period. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) and the [look-back date calculator](/tools/medicaid-lookback-date).
 
 If this is you, you are not behind. You are doing a hard job with partial paperwork.
 

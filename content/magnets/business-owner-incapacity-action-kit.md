@@ -27,7 +27,7 @@ answers:
   - "What is a business continuity plan?"
 related:
   - guides/powers-of-attorney
-  - guides/business-succession-planning
+  - learn/business-owners/business-succession-planning
   - life-events/starting-a-business
   - checklists/important-contacts-list
 reviewed: false

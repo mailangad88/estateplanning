@@ -16,7 +16,7 @@ sequence: G
 related:
   - guides/how-probate-works
   - guides/settling-an-estate-step-by-step
-  - compare/probate-vs-non-probate-assets
+  - learn/probate/probate-vs-non-probate-assets
   - life-events/death-of-a-parent
 reviewed: false
 updated: "2026-10-06"

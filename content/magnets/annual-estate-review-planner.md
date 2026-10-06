@@ -14,7 +14,7 @@ pages: 7
 tag: annual_review_planner
 sequence: B
 related:
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
   - checklists/annual-estate-plan-review
   - checklists/beneficiary-designation-audit
   - tools/plan-review-reminder
@@ -149,7 +149,7 @@ This is general guidance on what people often think about at each stage. It is n
 - **40s:** Review guardian choices as children grow. Check life insurance against debts and income. Retitle assets as they change.
 - **50s:** Consider long-term care options, retirement account beneficiaries and whether children are ready for roles you named them in.
 - **60s:** Review retirement withdrawals, Social Security timing and any gifting plans. Check that agents are still able and willing.
-- **70s and beyond:** Review capacity planning, long-term care funding and who has access to what. Keep one up-to-date packet where family can find it. See the [Medicaid and long-term care guide](/guides/medicaid-and-long-term-care-planning).
+- **70s and beyond:** Review capacity planning, long-term care funding and who has access to what. Keep one up-to-date packet where family can find it. See the [Medicaid and long-term care guide](/learn/elder-care/medicaid-planning).
 
 ## Record of reviews
 
@@ -182,4 +182,4 @@ Tip: keep this log in the same folder as your plan so it is found with the docum
 
 ## Next step
 
-Read the guide to [updating your estate plan](/guides/updating-your-estate-plan) and set a reminder with the [plan review reminder tool](/tools/plan-review-reminder). To schedule a review with an attorney, visit [/plan-finder](/plan-finder).
+Read the guide to [updating your estate plan](/learn/basics/when-to-update-your-estate-plan) and set a reminder with the [plan review reminder tool](/tools/plan-review-reminder). To schedule a review with an attorney, visit [/plan-finder](/plan-finder).

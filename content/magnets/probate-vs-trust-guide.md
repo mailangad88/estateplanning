@@ -13,10 +13,10 @@ pages: 6
 tag: probate_vs_trust_guide
 sequence: B
 related:
-  - compare/will-vs-trust
+  - learn/trusts/will-vs-trust
   - guides/how-probate-works
-  - guides/revocable-living-trust-explained
-  - compare/probate-vs-non-probate-assets
+  - learn/trusts/revocable-living-trust
+  - learn/probate/probate-vs-non-probate-assets
   - tools/probate-cost-estimator
   - guides/irrevocable-trusts-explained
   - compare/revocable-vs-irrevocable-trust
@@ -142,4 +142,4 @@ For each item, write who gets it and how.
 
 ## Next step
 
-Read [How Probate Works](/guides/how-probate-works) and compare [will vs. trust](/compare/will-vs-trust). To talk through your options with an attorney, start at [/plan-finder](/plan-finder).
+Read [How Probate Works](/guides/how-probate-works) and compare [will vs. trust](/learn/trusts/will-vs-trust). To talk through your options with an attorney, start at [/plan-finder](/plan-finder).

@@ -17,7 +17,7 @@ related:
   - life-events/caring-for-aging-parents
   - guides/powers-of-attorney
   - guides/healthcare-directives-and-living-wills
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - tools/medicaid-lookback-date
 answers:
   - "What are my options if my parent cannot afford care?"
@@ -114,7 +114,7 @@ Common options include help at home, adult day programs, assisted living, memory
 - Selling or renting a home
 - Medicaid, which has income and asset limits that vary by state
 
-Medicare generally does not pay for long-term custodial care. Ask a benefits counselor what it does and does not cover. Medicaid planning has a look-back period for gifts, 60 months in most states, so giving away assets without advice can cause a penalty. Try the [Medicaid look-back date tool](/tools/medicaid-lookback-date) and see [Medicaid and Long-Term Care Planning](/guides/medicaid-and-long-term-care-planning).
+Medicare generally does not pay for long-term custodial care. Ask a benefits counselor what it does and does not cover. Medicaid planning has a look-back period for gifts, 60 months in most states, so giving away assets without advice can cause a penalty. Try the [Medicaid look-back date tool](/tools/medicaid-lookback-date) and see [Medicaid and Long-Term Care Planning](/learn/elder-care/medicaid-planning).
 
 ## Share the work among siblings
 

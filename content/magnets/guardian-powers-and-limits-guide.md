@@ -32,7 +32,7 @@ answers:
   - "Can a guardian move out of state with my children?"
 related:
   - guides/guardianship-for-minor-children
-  - compare/power-of-attorney-vs-guardianship
+  - learn/power-of-attorney/power-of-attorney-vs-guardianship
   - checklists/choosing-a-guardian-worksheet
   - tools/guardian-picker
 reviewed: false

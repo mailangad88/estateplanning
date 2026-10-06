@@ -70,7 +70,7 @@ const wills: MoneyPageData = {
         { p: "This is where many people get surprised." },
         {
           ul: [
-            "**It does not avoid probate.** Property that passes under a will goes through the court process. How long and how costly that is depends on your state. See [how probate works](/guides/how-probate-works) and [how long probate takes](/blog/how-long-does-probate-take).",
+            "**It does not avoid probate.** Property that passes under a will goes through the court process. How long and how costly that is depends on your state. See [how probate works](/guides/how-probate-works) and [how long probate takes](/learn/probate/how-long-does-probate-take).",
             "**It does not control accounts with a named beneficiary.** Life insurance, retirement accounts and payable-on-death accounts go to the person named on the form, whatever your will says. See [beneficiary designations](/guides/beneficiary-designations).",
             "**It does not control jointly owned property with survivorship.** The surviving owner takes it.",
             "**It does not help if you become incapacitated.** A will does nothing while you are alive. Many people use a [power of attorney](/power-of-attorney) and a [healthcare directive](/healthcare-directives) for that.",
@@ -90,7 +90,7 @@ const wills: MoneyPageData = {
             "live in a state where probate is simple or inexpensive",
           ],
         },
-        { p: "A living trust is often considered in addition, or instead, for people who own real estate, own property in more than one state, want privacy, or are planning for a beneficiary with a disability. See [will vs trust](/compare/will-vs-trust), [pour-over will vs simple will](/compare/pour-over-will-vs-simple-will) and [living trusts](/living-trusts)." },
+        { p: "A living trust is often considered in addition, or instead, for people who own real estate, own property in more than one state, want privacy, or are planning for a beneficiary with a disability. See [will vs trust](/learn/trusts/will-vs-trust), [pour-over will vs simple will](/compare/pour-over-will-vs-simple-will) and [living trusts](/living-trusts)." },
       ],
     },
     {
@@ -102,7 +102,7 @@ const wills: MoneyPageData = {
     {
       h: "What happens if you die without one",
       blocks: [
-        { p: "Your state's intestacy law decides who inherits, in a fixed order that usually starts with a spouse and children. It may not match what you would have chosen, and it does not name a guardian for your children. See [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will)." },
+        { p: "Your state's intestacy law decides who inherits, in a fixed order that usually starts with a spouse and children. It may not match what you would have chosen, and it does not name a guardian for your children. See [what happens if you die without a will](/learn/wills/dying-without-a-will)." },
       ],
     },
     {
@@ -130,15 +130,15 @@ const wills: MoneyPageData = {
     { q: "Do I need a lawyer to make a will?", a: "No law says you must use one. People with minor children, a home, a blended family or a business often choose to, because mistakes in a will tend to show up after the person is gone, when they cannot be fixed." },
     { q: "Is a will enough, or do I need a trust?", a: "For many people a will is enough. A trust adds value for some people who own real estate, want to skip probate, or have beneficiaries who cannot manage money. The [will or trust comparison](/tools/will-or-trust) shows which way your answers point." },
     { q: "Is a handwritten or online will valid?", a: "It can be, but validity depends on your state's signing rules. A missing witness or signature is a common reason courts reject a document. See [online will vs estate attorney](/compare/online-will-vs-estate-attorney)." },
-    { q: "Can I change my will later?", a: "Yes, by signing a new will or a formal amendment called a codicil, as long as you have the mental capacity to do so. Marriage, divorce, a new child and a move to another state are common reasons to review it. See [updating your estate plan](/guides/updating-your-estate-plan)." },
+    { q: "Can I change my will later?", a: "Yes, by signing a new will or a formal amendment called a codicil, as long as you have the mental capacity to do so. Marriage, divorce, a new child and a move to another state are common reasons to review it. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan)." },
     { q: "Where should I keep my will?", a: `Somewhere your executor can find it quickly and that is safe from fire and loss. [Attorney: whether the firm stores originals]. Many people avoid putting the only original in a bank box that nobody else can open.` },
-    { q: "Who should I pick as executor?", a: "Someone organized, honest and willing, who lives close enough to manage things. They do not have to be a family member. See [choosing an executor](/guides/choosing-an-executor) and the [executor worksheet](/checklists/choosing-an-executor-worksheet)." },
+    { q: "Who should I pick as executor?", a: "Someone organized, honest and willing, who lives close enough to manage things. They do not have to be a family member. See [choosing an executor](/learn/wills/choosing-an-executor) and the [executor worksheet](/checklists/choosing-an-executor-worksheet)." },
     { q: "Can someone contest my will?", a: "Family members can try. They need a legal reason, such as lack of capacity or undue influence, and there are deadlines that vary by state. Clear documentation and proper signing make a challenge harder." },
     { q: "What happens to a will after I die?", a: "Your executor files it with the probate court. The court confirms it, the executor pays debts, and property is distributed. See [how probate works](/guides/how-probate-works)." },
   ],
   related: [
     { href: "/guides/how-to-make-a-will", title: "How to make a will", kind: "Guide" },
-    { href: "/compare/will-vs-trust", title: "Will vs trust", kind: "Compare" },
+    { href: "/learn/trusts/will-vs-trust", title: "Will vs trust", kind: "Compare" },
     { href: "/checklists/asset-and-account-inventory", title: "Asset and account inventory", kind: "Checklist" },
     { href: "/living-trusts", title: "Living trusts", kind: "Service" },
     { href: "/power-of-attorney", title: "Power of attorney", kind: "Service" },
@@ -165,7 +165,7 @@ const livingTrusts: MoneyPageData = {
             "**Beneficiaries.** The people or charities who receive the property, on the terms you set.",
           ],
         },
-        { p: "Because you can revoke or change a revocable trust, the IRS treats its assets as yours for income tax. You keep using your home and accounts as before. See [revocable living trust explained](/guides/revocable-living-trust-explained)." },
+        { p: "Because you can revoke or change a revocable trust, the IRS treats its assets as yours for income tax. You keep using your home and accounts as before. See [revocable living trust explained](/learn/trusts/revocable-living-trust)." },
       ],
     },
     {
@@ -175,7 +175,7 @@ const livingTrusts: MoneyPageData = {
           ul: [
             "**Skip probate for assets titled in the trust.** This can save time and fees and keeps the details out of the public court record. How much it saves depends on your state.",
             "**Handle incapacity without court.** Your successor trustee can step in if you cannot manage things, without a guardianship case.",
-            "**Control timing.** Leave money to a young adult in stages, not all at once at 18. See [leaving money to minors](/guides/leaving-money-to-minors).",
+            "**Control timing.** Leave money to a young adult in stages, not all at once at 18. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors).",
             "**Cover property in more than one state.** One trust can avoid opening probate in each state where you own real estate.",
             "**Provide for a beneficiary with a disability,** with the right terms, to avoid affecting benefits. See [special needs trusts](/guides/special-needs-trusts).",
           ],
@@ -261,20 +261,20 @@ const livingTrusts: MoneyPageData = {
     },
   ],
   faqs: [
-    { q: "What is the difference between a will and a living trust?", a: "A will takes effect at death and goes through probate. A living trust takes effect when you sign it and lets assets inside it pass without probate. A will is where guardians for children are named. See the table above and [will vs trust](/compare/will-vs-trust)." },
+    { q: "What is the difference between a will and a living trust?", a: "A will takes effect at death and goes through probate. A living trust takes effect when you sign it and lets assets inside it pass without probate. A will is where guardians for children are named. See the table above and [will vs trust](/learn/trusts/will-vs-trust)." },
     { q: "Does a living trust avoid estate tax?", a: "No. A revocable trust is counted in your estate for tax purposes. Federal estate tax applies only above a high exemption, and some states have their own estate or inheritance tax. See [estate and inheritance taxes](/guides/estate-and-inheritance-taxes) and the [estate tax estimator](/tools/estate-tax-estimator)." },
     { q: "Do I lose control of my property?", a: "No. As trustee of a revocable trust you buy, sell and use property as you do now. You can change or cancel the trust whenever you have capacity." },
-    { q: "Who should be my successor trustee?", a: "Someone trustworthy and organized who can handle paperwork and difficult family conversations. Many people name a child plus a backup, or a professional if no one fits. See [choosing a trustee](/guides/choosing-a-trustee) and [executor vs trustee](/compare/executor-vs-trustee)." },
+    { q: "Who should be my successor trustee?", a: "Someone trustworthy and organized who can handle paperwork and difficult family conversations. Many people name a child plus a backup, or a professional if no one fits. See [choosing a trustee](/learn/trusts/choosing-a-trustee) and [executor vs trustee](/compare/executor-vs-trustee)." },
     { q: "Do I have to put everything in the trust?", a: "No. Retirement accounts and life insurance usually stay out and pass by beneficiary form. Vehicles and small accounts often stay out too. We tell you which assets people usually move." },
     { q: "What does it mean to fund a trust, and who does it?", a: "Funding means changing ownership of an asset to the trust, such as recording a new deed for your house or retitling a bank account. We prepare the deed and instructions. Some steps, such as bank forms, you complete yourself." },
     { q: "Will my mortgage lender or insurer object if I move my home into a trust?", a: "Federal law generally prevents a lender from calling a loan due when a home goes into your own revocable trust, but people usually tell their insurer and title company. [Attorney: confirm for your state]" },
     { q: "What happens to the trust when I die?", a: "Your successor trustee gathers the assets, pays debts and taxes, and distributes what is left according to the trust. See [trust administration](/trust-administration)." },
   ],
   related: [
-    { href: "/guides/revocable-living-trust-explained", title: "Revocable living trust explained", kind: "Guide" },
+    { href: "/learn/trusts/revocable-living-trust", title: "Revocable living trust explained", kind: "Guide" },
     { href: "/guides/funding-your-trust", title: "Funding your trust", kind: "Guide" },
     { href: "/tools/will-or-trust", title: "Will or trust? A quick comparison", kind: "Tool" },
-    { href: "/compare/will-vs-trust", title: "Will vs trust", kind: "Compare" },
+    { href: "/learn/trusts/will-vs-trust", title: "Will vs trust", kind: "Compare" },
     { href: "/trust-administration", title: "Trust administration", kind: "Service" },
   ],
 };
@@ -320,7 +320,7 @@ const poa: MoneyPageData = {
     {
       h: "Power of attorney vs guardianship",
       blocks: [
-        { p: "If you have no power of attorney and lose capacity, a court may appoint a guardian or conservator. That process is public, slow, supervised and expensive. A power of attorney signed in advance usually avoids it. The catch: it has to be signed while you still have capacity. See [power of attorney vs guardianship](/compare/power-of-attorney-vs-guardianship) and [caring for aging parents](/life-events/caring-for-aging-parents)." },
+        { p: "If you have no power of attorney and lose capacity, a court may appoint a guardian or conservator. That process is public, slow, supervised and expensive. A power of attorney signed in advance usually avoids it. The catch: it has to be signed while you still have capacity. See [power of attorney vs guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship) and [caring for aging parents](/life-events/caring-for-aging-parents)." },
       ],
     },
     {
@@ -355,7 +355,7 @@ const poa: MoneyPageData = {
   ],
   related: [
     { href: "/guides/powers-of-attorney", title: "Powers of attorney", kind: "Guide" },
-    { href: "/compare/power-of-attorney-vs-guardianship", title: "Power of attorney vs guardianship", kind: "Compare" },
+    { href: "/learn/power-of-attorney/power-of-attorney-vs-guardianship", title: "Power of attorney vs guardianship", kind: "Compare" },
     { href: "/blog/can-a-power-of-attorney-change-a-will", title: "Can a power of attorney change a will?", kind: "Article" },
     { href: "/healthcare-directives", title: "Healthcare directives", kind: "Service" },
     { href: "/estate-planning-for-parents", title: "Estate planning for parents", kind: "Service" },
@@ -478,7 +478,7 @@ const probate: MoneyPageData = {
     {
       h: "Is probate required?",
       blocks: [
-        { p: "Not always. Property passes outside probate when it has a named beneficiary, is held jointly with survivorship, or is in a living trust. Many states offer a simplified process for small estates. [Attorney: small-estate limit in your state, with an as-of date]. See [probate vs non-probate assets](/compare/probate-vs-non-probate-assets) and [can you skip probate for a small estate?](/blog/can-you-skip-probate-for-a-small-estate)" },
+        { p: "Not always. Property passes outside probate when it has a named beneficiary, is held jointly with survivorship, or is in a living trust. Many states offer a simplified process for small estates. [Attorney: small-estate limit in your state, with an as-of date]. See [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets) and [can you skip probate for a small estate?](/blog/can-you-skip-probate-for-a-small-estate)" },
       ],
     },
     {
@@ -500,7 +500,7 @@ const probate: MoneyPageData = {
       h: "How long does it take, and what does it cost?",
       blocks: [
         { p: "Delays usually come from missing documents, family disputes, real estate that must be sold, or creditor claims. Court filing fees and attorney fees vary by state. [Attorney: typical timeline, filing fees and attorney fee rules in your state, with sources]" },
-        { p: "See [how long does probate take?](/blog/how-long-does-probate-take) and try the [probate cost estimator](/tools/probate-cost-estimator) and the [executor workload tool](/tools/executor-workload) for a rough picture." },
+        { p: "See [how long does probate take?](/learn/probate/how-long-does-probate-take) and try the [probate cost estimator](/tools/probate-cost-estimator) and the [executor workload tool](/tools/executor-workload) for a rough picture." },
       ],
     },
     {
@@ -531,8 +531,8 @@ const probate: MoneyPageData = {
   faqs: [
     { q: "How long do I have to open probate?", a: "Many states require filing a will with the court within a set time after death, even if no probate is needed. [Attorney: deadline and penalties in your state]. Do not wait." },
     { q: "Can I pay the funeral bill from the person's bank account?", a: "Often the family pays first and is reimbursed by the estate, because accounts may be frozen. Keep every receipt. [Attorney: state rule]" },
-    { q: "Am I personally responsible for the deceased's debts?", a: "Generally no, with exceptions such as a co-signer, a joint account holder, or community property in some states. Executors who distribute property before paying valid debts can become personally liable, so people commonly wait until the debts are known. See [what happens to debt when someone dies](/blog/what-happens-to-debt-when-someone-dies)." },
-    { q: "What if there is no will?", a: "The court appoints an administrator, usually a spouse or adult child, and state law decides who inherits. See [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will)." },
+    { q: "Am I personally responsible for the deceased's debts?", a: "Generally no, with exceptions such as a co-signer, a joint account holder, or community property in some states. Executors who distribute property before paying valid debts can become personally liable, so people commonly wait until the debts are known. See [what happens to debt when someone dies](/learn/probate/dealing-with-debts-in-probate)." },
+    { q: "What if there is no will?", a: "The court appoints an administrator, usually a spouse or adult child, and state law decides who inherits. See [what happens if you die without a will](/learn/wills/dying-without-a-will)." },
     { q: "What if I think the will is invalid, or a sibling is hiding things?", a: "Talk to an attorney soon. Deadlines to contest a will are short in many states. [Attorney: contest period in your state]" },
     { q: "Can I avoid probate now that the person has died?", a: "Sometimes. If assets have a beneficiary or are jointly owned, they pass automatically. If the estate qualifies for a small-estate procedure, that may be used. We can help you check." },
     { q: "Do I have to hire the attorney who drafted the will?", a: "No. You choose the attorney. [Attorney: whether the estate pays an executor's counsel fees in your state]" },
@@ -544,7 +544,7 @@ const probate: MoneyPageData = {
     { href: "/guides/how-probate-works", title: "How probate works", kind: "Guide" },
     { href: "/checklists/first-30-days-after-a-death", title: "First 30 days after a death", kind: "Checklist" },
     { href: "/tools/probate-cost-estimator", title: "Probate cost estimator", kind: "Tool" },
-    { href: "/compare/probate-vs-non-probate-assets", title: "Probate vs non-probate assets", kind: "Compare" },
+    { href: "/learn/probate/probate-vs-non-probate-assets", title: "Probate vs non-probate assets", kind: "Compare" },
     { href: "/trust-administration", title: "Trust administration", kind: "Service" },
   ],
 };
@@ -563,7 +563,7 @@ const trustAdmin: MoneyPageData = {
     {
       h: "Your role in plain terms",
       blocks: [
-        { p: "A trustee is a fiduciary. The law holds you to a high standard: act for the beneficiaries, not yourself; keep trust money separate from yours; keep records; communicate. Trustees are generally allowed reasonable compensation and to hire professionals at the trust's expense. [Attorney: state rule]. See [choosing a trustee](/guides/choosing-a-trustee)." },
+        { p: "A trustee is a fiduciary. The law holds you to a high standard: act for the beneficiaries, not yourself; keep trust money separate from yours; keep records; communicate. Trustees are generally allowed reasonable compensation and to hire professionals at the trust's expense. [Attorney: state rule]. See [choosing a trustee](/learn/trusts/choosing-a-trustee)." },
       ],
     },
     {
@@ -650,7 +650,7 @@ const trustAdmin: MoneyPageData = {
   ctaTitle: "Prefer to talk first?",
   ctaBody: "Call, or leave your number above. If you would rather start online, the plan finder takes about two minutes.",
   related: [
-    { href: "/guides/choosing-a-trustee", title: "Choosing a trustee", kind: "Guide" },
+    { href: "/learn/trusts/choosing-a-trustee", title: "Choosing a trustee", kind: "Guide" },
     { href: "/blog/what-does-a-trustee-actually-do-each-year", title: "What a trustee does each year", kind: "Article" },
     { href: "/checklists/first-30-days-after-a-death", title: "First 30 days after a death", kind: "Checklist" },
     { href: "/probate", title: "Probate", kind: "Service" },
@@ -673,7 +673,7 @@ const parents: MoneyPageData = {
       id: "young-children",
       blocks: [
         { p: "**The first thing to settle is a guardian.** If both parents die without a named guardian, a judge picks, and the family may have to fight it out in court. Naming a guardian in your will is the step many young parents put first. See [guardianship for minor children](/guides/guardianship-for-minor-children), the [guardian worksheet](/checklists/choosing-a-guardian-worksheet), and [can you name a guardian who lives in another state?](/blog/can-you-name-a-guardian-who-lives-in-another-state)" },
-        { p: "**The second is who manages the money.** A minor cannot own much property outright. Without a plan, a court may supervise an account until the child turns 18, and the child then receives all of it at once. A trust lets you pick a manager and release money at ages you choose. See [leaving money to minors](/guides/leaving-money-to-minors) and the [guardian fund calculator](/tools/guardian-fund-calculator)." },
+        { p: "**The second is who manages the money.** A minor cannot own much property outright. Without a plan, a court may supervise an account until the child turns 18, and the child then receives all of it at once. A trust lets you pick a manager and release money at ages you choose. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors) and the [guardian fund calculator](/tools/guardian-fund-calculator)." },
         { p: "A common minimum plan for parents of minors:" },
         {
           ol: [
@@ -702,8 +702,8 @@ const parents: MoneyPageData = {
             "Beneficiary designations on retirement accounts and insurance, which override a will",
           ],
         },
-        { p: "**If your parent has already lost capacity.** A power of attorney cannot be signed after capacity is gone. A guardianship or conservatorship may be the only option. See [power of attorney vs guardianship](/compare/power-of-attorney-vs-guardianship)." },
-        { p: `**Long-term care costs.** Some families plan years ahead for nursing home costs. Medicaid has a look-back period for gifts (${FIGURES.medicaidLookbackMonths} months in most states, California differs), and moving a house without advice can cause a penalty. See [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning) and the [Medicaid look-back date tool](/tools/medicaid-lookback-date). [Attorney: whether this firm advises on Medicaid planning]` },
+        { p: "**If your parent has already lost capacity.** A power of attorney cannot be signed after capacity is gone. A guardianship or conservatorship may be the only option. See [power of attorney vs guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship)." },
+        { p: `**Long-term care costs.** Some families plan years ahead for nursing home costs. Medicaid has a look-back period for gifts (${FIGURES.medicaidLookbackMonths} months in most states, California differs), and moving a house without advice can cause a penalty. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) and the [Medicaid look-back date tool](/tools/medicaid-lookback-date). [Attorney: whether this firm advises on Medicaid planning]` },
         { p: "**Do not put your name on your parent's deed as a shortcut.** It can cause gift tax, capital gains tax, creditor exposure and loss of the stepped-up basis. Ask first. See [caring for aging parents](/life-events/caring-for-aging-parents)." },
       ],
     },
@@ -732,7 +732,7 @@ const parents: MoneyPageData = {
     { q: "Does a power of attorney cost a lot?", a: `It is among the less expensive documents. Our flat fee is ${FEE} on its own, and it is included in each package. See [pricing](/pricing).` },
     { q: "Who should be our children's guardian?", a: "Someone with the values, health, energy and finances to raise them, and who has said yes. It does not have to be the richest relative. See [can I name my sister as guardian if my husband disagrees?](/blog/can-i-name-my-sister-as-guardian-if-my-husband-disagrees)" },
     { q: "What if I am divorced or a single parent?", a: "Your plan may matter more. The other parent normally keeps custody if you die unless a court finds otherwise. [Attorney: state rule]. Many single parents name guardians for the case where both parents cannot serve." },
-    { q: "How often should parents update a plan?", a: "Every few years, and after any marriage, divorce, birth, move or large change in assets. See [updating your estate plan](/guides/updating-your-estate-plan)." },
+    { q: "How often should parents update a plan?", a: "Every few years, and after any marriage, divorce, birth, move or large change in assets. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan)." },
     { q: "What if my parent lives in a different state?", a: "Documents should fit the state where your parent lives. [Attorney: states where the firm is licensed]. If your parent lives elsewhere, we can point you to the state bar's referral service. We do not receive referral fees." },
   ],
   related: [
@@ -819,7 +819,7 @@ const howItWorks: MoneyPageData = {
     {
       h: "What happens after you sign",
       blocks: [
-        { p: "[Attorney: follow-up the firm offers, for example a check-up call after 12 months]. A baby, a move, a divorce or a diagnosis are common reasons to call. See [updating your estate plan](/guides/updating-your-estate-plan) and the [plan review reminder](/tools/plan-review-reminder)." },
+        { p: "[Attorney: follow-up the firm offers, for example a check-up call after 12 months]. A baby, a move, a divorce or a diagnosis are common reasons to call. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan) and the [plan review reminder](/tools/plan-review-reminder)." },
         { p: `Everything is done by or under the supervision of ${A}. Team members schedule and organize. They do not give legal advice or draft documents without the attorney's review. [Attorney: confirm staffing description]` },
       ],
     },
@@ -837,7 +837,7 @@ const howItWorks: MoneyPageData = {
     { href: "/pricing", title: "Pricing", kind: "Page" },
     { href: "/about-the-attorney", title: "About the attorney", kind: "Page" },
     { href: "/checklists/documents-to-gather-before-your-consult", title: "Documents to gather before your consult", kind: "Checklist" },
-    { href: "/guides/what-is-estate-planning", title: "What is estate planning?", kind: "Guide" },
+    { href: "/learn/basics/what-is-estate-planning", title: "What is estate planning?", kind: "Guide" },
     { href: "/contact", title: "Contact", kind: "Page" },
   ],
 };
@@ -940,7 +940,7 @@ const aboutAttorney: MoneyPageData = {
     { href: "/how-it-works", title: "How it works", kind: "Page" },
     { href: "/pricing", title: "Pricing", kind: "Page" },
     { href: "/editorial-policy", title: "How we review content", kind: "Page" },
-    { href: "/guides/what-is-estate-planning", title: "What is estate planning?", kind: "Guide" },
+    { href: "/learn/basics/what-is-estate-planning", title: "What is estate planning?", kind: "Guide" },
     { href: "/contact", title: "Contact", kind: "Page" },
   ],
 };

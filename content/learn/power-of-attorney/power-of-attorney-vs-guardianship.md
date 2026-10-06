@@ -133,6 +133,17 @@ The practical steps are not complicated.
 
 Our [documents checklist](/learn/basics/estate-planning-documents-checklist) lists what a complete plan includes. State rules and terminology differ, so a guide for your own state, such as our [California estate planning guide](/estate-planning/california) or [Florida guide](/estate-planning/florida), can show how local law approaches these questions.
 
+## What questions should you ask an attorney?
+
+Bring these to a planning meeting:
+
+- Should my power of attorney take effect now, or only if I lose capacity?
+- What powers should my agent have, such as making gifts or changing beneficiaries?
+- Who should be my agent, and who should be the backup?
+- Can I nominate a guardian in case one is ever needed?
+- Will banks in my state accept my form, or do they require their own?
+- If a parent already lacks capacity, what are the options short of full guardianship?
+
 ## How we can help
 
 Our attorneys draft powers of attorney, healthcare directives and trusts designed to keep families out of court, and can also advise if a loved one already lacks capacity and a guardianship petition is being considered. Take our [plan finder](/plan-finder) for a quick view of the documents you may need, or book a consultation to talk through your situation.

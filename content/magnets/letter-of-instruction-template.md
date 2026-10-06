@@ -15,7 +15,7 @@ tag: letter_of_instruction_template
 sequence: B
 related:
   - guides/settling-an-estate-step-by-step
-  - guides/choosing-an-executor
+  - learn/wills/choosing-an-executor
   - checklists/letter-of-instruction-outline
   - guides/how-to-make-a-will
 answers:

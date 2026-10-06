@@ -14,9 +14,9 @@ pages: 4
 tag: password_manager_handoff
 sequence: B
 related:
-  - guides/digital-assets-estate-planning
+  - learn/digital-assets/digital-assets-in-your-estate-plan
   - checklists/digital-assets-inventory
-  - guides/choosing-an-executor
+  - learn/wills/choosing-an-executor
   - guides/how-to-make-a-will
 diagram: DigitalAssets
 reviewed: false

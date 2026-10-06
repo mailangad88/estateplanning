@@ -15,7 +15,7 @@ tag: stepchildren_inheritance_guide
 sequence: B
 related:
   - guides/estate-planning-for-blended-families
-  - guides/what-happens-if-you-die-without-a-will
+  - learn/wills/dying-without-a-will
   - guides/beneficiary-designations
   - blog/does-a-spouse-inherit-everything-if-there-is-no-will
 diagram: BlendedFamilyPlan

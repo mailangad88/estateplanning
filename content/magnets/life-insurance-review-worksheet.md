@@ -16,7 +16,7 @@ sequence: B
 related:
   - guides/beneficiary-designations
   - tools/life-insurance-needs
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
   - checklists/beneficiary-designation-audit
   - compare/beneficiary-designation-vs-will
 answers:
@@ -77,7 +77,7 @@ Go through each policy and check every item.
 
 ### Never naming a minor child directly
 
-An insurer generally will not pay a large sum to a child under 18. A court may appoint a conservator to hold the money, with filings, bonds and fees, and the child may receive the whole amount at 18 or 21. Rules vary by state. See [leaving money to minors](/guides/leaving-money-to-minors).
+An insurer generally will not pay a large sum to a child under 18. A court may appoint a conservator to hold the money, with filings, bonds and fees, and the child may receive the whole amount at 18 or 21. Rules vary by state. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors).
 
 Options families consider:
 

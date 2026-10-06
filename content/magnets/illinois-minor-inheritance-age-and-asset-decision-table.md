@@ -29,9 +29,9 @@ answers:
   - "How do I leave money to a minor in a will?"
   - "How do I leave money to my grandchildren in a will?"
 related:
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
   - guides/guardianship-for-minor-children
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
   - tools/guardian-fund-calculator
 reviewed: false
 updated: "2026-10-06"
@@ -151,4 +151,4 @@ Money handled by a court guardian is watched through reports. A guardian who mis
 
 ## Next step
 
-Read [leaving money to minors](/guides/leaving-money-to-minors), or try the [guardian fund calculator](/tools/guardian-fund-calculator). To plan with an attorney, start at [plan finder](/plan-finder).
+Read [leaving money to minors](/learn/guardianship/leaving-money-to-minors), or try the [guardian fund calculator](/tools/guardian-fund-calculator). To plan with an attorney, start at [plan finder](/plan-finder).

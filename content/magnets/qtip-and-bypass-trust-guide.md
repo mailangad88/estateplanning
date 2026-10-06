@@ -16,7 +16,7 @@ sequence: B
 diagram: BlendedFamilyPlan
 related:
   - guides/estate-planning-for-blended-families
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
   - guides/estate-and-inheritance-taxes
   - tools/state-death-tax-checker
 answers:
@@ -98,7 +98,7 @@ If Maria had left everything to Tom outright, Tom could change his will and leav
 | Bank or professional | Neutral | Fees |
 | A trusted friend | Independent | Skills and time |
 
-A spouse can serve as trustee with the children as remainder beneficiaries. Many attorneys then add an independent co-trustee, or limit the spouse to acts that do not favor themselves. See /guides/choosing-a-trustee.
+A spouse can serve as trustee with the children as remainder beneficiaries. Many attorneys then add an independent co-trustee, or limit the spouse to acts that do not favor themselves. See /learn/trusts/choosing-a-trustee.
 
 ## Retirement accounts
 

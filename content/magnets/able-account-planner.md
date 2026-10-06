@@ -16,8 +16,8 @@ sequence: B
 related:
   - compare/special-needs-trust-vs-able-account
   - guides/special-needs-trusts
-  - guides/medicaid-and-long-term-care-planning
-  - guides/leaving-money-to-minors
+  - learn/elder-care/medicaid-planning
+  - learn/guardianship/leaving-money-to-minors
 answers:
   - "Can I roll a 529 plan into an ABLE account?"
   - "Can a parent or sibling contribute to an ABLE account?"

@@ -15,8 +15,8 @@ tag: il_poa_property_guide
 sequence: B
 related:
   - guides/powers-of-attorney
-  - compare/power-of-attorney-vs-guardianship
-  - guides/choosing-an-executor
+  - learn/power-of-attorney/power-of-attorney-vs-guardianship
+  - learn/wills/choosing-an-executor
   - checklists/important-contacts-list
 answers:
   - "How do I get a power of attorney in Illinois?"

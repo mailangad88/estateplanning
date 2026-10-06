@@ -14,7 +14,7 @@ pages: 4
 tag: sole_proprietor_checklist
 sequence: B
 related:
-  - guides/business-succession-planning
+  - learn/business-owners/business-succession-planning
   - life-events/starting-a-business
   - guides/powers-of-attorney
   - checklists/asset-and-account-inventory

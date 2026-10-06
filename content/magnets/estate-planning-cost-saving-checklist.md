@@ -15,7 +15,7 @@ tag: cost_saving_checklist
 sequence: B
 related:
   - compare/online-will-vs-estate-attorney
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - checklists/documents-to-gather-before-your-consult
   - tools/will-or-trust
   - tools/probate-cost-estimator
@@ -100,7 +100,7 @@ See [questions to ask an estate planning attorney](/free/questions-to-ask-an-est
 - **Skipping beneficiary forms.** A cheap will does not fix an old form naming an ex.
 - **Signing without witnesses or a notary.** A document that fails formalities can cost much more to fix.
 - **A trust that is never funded.** A paid trust with an empty title does little.
-- **Adding a child to the deed to avoid probate.** It can create gift, tax and creditor problems. See [transfer on death and payable on death](/guides/transfer-on-death-and-payable-on-death).
+- **Adding a child to the deed to avoid probate.** It can create gift, tax and creditor problems. See [transfer on death and payable on death](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts).
 - **Copying a form from the internet for a complex family.**
 - **Waiting for a crisis.** Planning in a hospital is slower and often more expensive, and capacity may be questioned.
 

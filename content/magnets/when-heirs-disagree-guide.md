@@ -15,7 +15,7 @@ tag: when_heirs_disagree
 sequence: G
 related:
   - guides/settling-an-estate-step-by-step
-  - guides/choosing-an-executor
+  - learn/wills/choosing-an-executor
   - life-events/death-of-a-parent
   - blog/can-an-executor-also-be-a-beneficiary
 answers:
@@ -74,7 +74,7 @@ Being open is your strongest protection. Heirs who see the numbers rarely suspec
 
 ## Step 1: Understand what the documents say
 
-Many fights go away when everyone reads the same pages. Sit down with the will, any trust, and the beneficiary forms for accounts and insurance. Remember that accounts with named beneficiaries pass outside the will, which can make the split look unequal even when no one did anything wrong. See [probate vs non-probate assets](/compare/probate-vs-non-probate-assets).
+Many fights go away when everyone reads the same pages. Sit down with the will, any trust, and the beneficiary forms for accounts and insurance. Remember that accounts with named beneficiaries pass outside the will, which can make the split look unequal even when no one did anything wrong. See [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets).
 
 - **Documents reviewed together on:** ____________________
 - **Questions raised:** ____________________

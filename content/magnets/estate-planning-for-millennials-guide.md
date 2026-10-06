@@ -14,10 +14,10 @@ pages: 5
 tag: millennials_guide
 sequence: B
 related:
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - life-events/getting-married
   - life-events/new-baby
-  - guides/digital-assets-estate-planning
+  - learn/digital-assets/digital-assets-in-your-estate-plan
   - guides/how-to-make-a-will
 answers:
   - "What happens to my student loans when I die?"
@@ -32,7 +32,7 @@ updated: "2026-10-06"
 
 ## 1. A first will, even with modest assets
 
-A will names who inherits, who serves as executor and, if you have children under 18, who you want as guardian. Without one, state law decides, and the default may not match your wishes, especially if you are not married. See [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will).
+A will names who inherits, who serves as executor and, if you have children under 18, who you want as guardian. Without one, state law decides, and the default may not match your wishes, especially if you are not married. See [what happens if you die without a will](/learn/wills/dying-without-a-will).
 
 - **Executor (first choice):** ____________________
 - **Executor (backup):** ____________________

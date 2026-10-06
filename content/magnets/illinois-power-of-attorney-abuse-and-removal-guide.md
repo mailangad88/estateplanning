@@ -16,8 +16,8 @@ tag: il_poa_abuse_removal
 sequence: B
 related:
   - guides/powers-of-attorney
-  - compare/power-of-attorney-vs-guardianship
-  - guides/updating-your-estate-plan
+  - learn/power-of-attorney/power-of-attorney-vs-guardianship
+  - learn/basics/when-to-update-your-estate-plan
   - life-events/caring-for-aging-parents
 answers:
   - "How do I remove a power of attorney agent?"
@@ -139,4 +139,4 @@ Illinois allows the principal to include many of these. Ask your drafter to conf
 
 ## Next step
 
-Read the [powers of attorney guide](/guides/powers-of-attorney), or compare [power of attorney vs guardianship](/compare/power-of-attorney-vs-guardianship). The [Elder Financial Abuse Prevention Kit](/free/elder-financial-abuse-prevention-kit) covers prevention.
+Read the [powers of attorney guide](/guides/powers-of-attorney), or compare [power of attorney vs guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship). The [Elder Financial Abuse Prevention Kit](/free/elder-financial-abuse-prevention-kit) covers prevention.

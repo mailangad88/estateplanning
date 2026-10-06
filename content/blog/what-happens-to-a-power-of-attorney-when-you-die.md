@@ -33,7 +33,7 @@ This is true of financial powers of attorney and healthcare powers of attorney a
 | Accounts with a named beneficiary | The beneficiary collects directly |
 | Joint accounts with survivorship | The surviving owner |
 
-Our [probate vs non-probate assets comparison](/compare/probate-vs-non-probate-assets) explains why each asset goes where it does. The [executor vs trustee comparison](/compare/executor-vs-trustee) covers who does what.
+Our [probate vs non-probate assets comparison](/learn/probate/probate-vs-non-probate-assets) explains why each asset goes where it does. The [executor vs trustee comparison](/compare/executor-vs-trustee) covers who does what.
 
 ## What the agent should and should not do
 

@@ -16,7 +16,7 @@ sequence: B
 related:
   - life-events/caring-for-aging-parents
   - guides/powers-of-attorney
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - guides/healthcare-directives-and-living-wills
 reviewed: false
 updated: "2026-10-06"
@@ -84,7 +84,7 @@ Money is where sibling agreements most often break down. Decide in advance.
 
 ### Paying a sibling for care
 
-Some families pay a sibling who provides a lot of care. Rules vary by state and by benefits. If a parent may need Medicaid for long-term care within the coming years, payments to family without a written agreement can create problems with look-back rules. Talk to an attorney before any payments start. A written agreement signed in advance is usually treated more favorably than money handed over after the fact. See the [guide on Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning).
+Some families pay a sibling who provides a lot of care. Rules vary by state and by benefits. If a parent may need Medicaid for long-term care within the coming years, payments to family without a written agreement can create problems with look-back rules. Talk to an attorney before any payments start. A written agreement signed in advance is usually treated more favorably than money handed over after the fact. See the [guide on Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).
 
 - **Will any sibling be paid?** Yes / No
 - **Rate, hours and who approves:** ______________________

@@ -16,7 +16,7 @@ sequence: B
 related:
   - guides/guardianship-for-minor-children
   - life-events/new-baby
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
   - tools/guardian-fund-calculator
 answers:
   - "How much life insurance do new parents need?"
@@ -55,7 +55,7 @@ A common mistake is choosing a guardian based on guilt or family pressure. Anoth
 
 Children cannot legally manage large sums. If a minor inherits money outright, a court may set up a supervised account, and in many states the child can take the full amount at 18. Few parents want that.
 
-Common options include a trust for the children, a custodial account under your state's uniform transfers law, or naming a trustee to hold insurance proceeds. Each has different costs, controls and ages of release. The guide on [leaving money to minors](/guides/leaving-money-to-minors) compares them.
+Common options include a trust for the children, a custodial account under your state's uniform transfers law, or naming a trustee to hold insurance proceeds. Each has different costs, controls and ages of release. The guide on [leaving money to minors](/learn/guardianship/leaving-money-to-minors) compares them.
 
 To get a rough number, think about what your children would need if your income stopped:
 

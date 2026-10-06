@@ -92,6 +92,10 @@ Caution about adding a partner to a deed: a transfer of half the house is a gift
 
 Priya and Alex, both 41, bought a house together four years ago. Only Priya's name is on the deed because she had better credit. Alex has paid half the mortgage and the renovation costs. If Priya died without a will, the house would go to her mother and brother. Alex would have no legal claim beyond a possible lawsuit. A deed adding Alex or a trust naming him the beneficiary solves it in one afternoon.
 
+## What if you have children together?
+
+Make sure both partners are legal parents. If only one is, the other partner may have no right to raise the child if that parent dies. A will can at least name your partner as guardian. See our [guardianship guide](/learn/guardianship) for how that works.
+
 ## What about gifts and taxes between partners?
 
 You can give your partner up to $19,000 each year in 2026 without a gift tax return, per recipient, under the [annual exclusion](/glossary/annual-exclusion). Larger gifts count against the lifetime exemption and require a return, though most people will not owe tax. See the [gift tax annual exclusion](/learn/estate-tax/gift-tax-annual-exclusion) article. Because the marital deduction is not available, a large bequest uses part of your exemption, which is rarely a problem at current levels but matters for large estates. Some states impose their own estate or inheritance taxes that apply at lower thresholds, and a few tax non-relatives at higher rates. Our [state taxes guide](/learn/estate-tax/state-estate-and-inheritance-taxes) lists how that works.
@@ -103,6 +107,8 @@ Beneficiary designations override your will, so name your partner, with a contin
 ## Should unmarried couples consider a cohabitation agreement?
 
 A cohabitation or property agreement can state who owns what, how shared expenses and the home are handled, and what happens if you separate. It does not replace estate planning, but it can reduce disputes with your partner's family. Many couples treat the agreement and the estate plan as a package.
+
+Simple records help too. Keep a list of who paid for major purchases, whose name is on each account and how the home is titled. If one partner dies or becomes ill, family members may ask who owned what, and a written record answers that.
 
 Couples buying a home together should also read [estate planning when you buy a home](/learn/life-stages/estate-planning-when-you-buy-a-home), since the way you take title decides what the surviving partner receives.
 

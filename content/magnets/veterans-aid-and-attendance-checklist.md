@@ -14,7 +14,7 @@ pages: 5
 tag: va_aid_attendance_checklist
 sequence: B
 related:
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - life-events/caring-for-aging-parents
   - tools/medicaid-lookback-date
   - guides/powers-of-attorney

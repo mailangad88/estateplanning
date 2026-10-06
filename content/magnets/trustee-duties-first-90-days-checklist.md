@@ -15,8 +15,8 @@ tag: trustee_first_90_days
 sequence: G
 related:
   - checklists/first-30-days-after-a-death
-  - guides/choosing-a-trustee
-  - guides/revocable-living-trust-explained
+  - learn/trusts/choosing-a-trustee
+  - learn/trusts/revocable-living-trust
   - compare/executor-vs-trustee
   - guides/settling-an-estate-step-by-step
 answers:

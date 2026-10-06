@@ -15,7 +15,7 @@ tag: caregiver_daily_log
 sequence: B
 related:
   - life-events/caring-for-aging-parents
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - tools/medicaid-lookback-date
   - guides/powers-of-attorney
 answers:

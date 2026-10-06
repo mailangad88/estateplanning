@@ -17,7 +17,7 @@ related:
   - life-events/caring-for-aging-parents
   - guides/powers-of-attorney
   - guides/guardianship-for-minor-children
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - checklists/important-contacts-list
 answers:
   - "How do I help my parents with estate planning?"
@@ -90,7 +90,7 @@ Helping a parent with money can quietly drain your own retirement and children's
 - **How I will record the money I give, loan or spend:** ______________________
 - **Whether I will ask to be repaid from my parent's estate:** ______________________
 
-If you spend a parent's money on their care, keep receipts. If you are paid for care, a written personal care agreement can protect both of you. See [personal care agreements](/free/personal-care-agreement-guide). Gifts and transfers can affect Medicaid eligibility, so ask before moving a parent's money. See [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning).
+If you spend a parent's money on their care, keep receipts. If you are paid for care, a written personal care agreement can protect both of you. See [personal care agreements](/free/personal-care-agreement-guide). Gifts and transfers can affect Medicaid eligibility, so ask before moving a parent's money. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).
 
 ## Step 5: Time limits and work
 

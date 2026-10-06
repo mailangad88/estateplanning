@@ -16,7 +16,7 @@ sequence: B
 related:
   - guides/beneficiary-designations
   - compare/beneficiary-designation-vs-will
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
   - checklists/beneficiary-designation-audit
 reviewed: false
 updated: "2026-10-06"
@@ -95,7 +95,7 @@ If a named person cannot be found, the company usually runs a search and then ma
 
 ## Minors and incapacitated beneficiaries
 
-If a minor is named, the company may require a court-appointed guardian of the property, which takes time. A custodian under UTMA (a person who manages money for a minor) or a trust avoids that. See [leaving money to minors](/guides/leaving-money-to-minors). For a beneficiary who receives Medicaid or SSI, an outright payment can end the benefit, so a special needs trust is usually discussed.
+If a minor is named, the company may require a court-appointed guardian of the property, which takes time. A custodian under UTMA (a person who manages money for a minor) or a trust avoids that. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors). For a beneficiary who receives Medicaid or SSI, an outright payment can end the benefit, so a special needs trust is usually discussed.
 
 ## Fill-in contingent plan
 

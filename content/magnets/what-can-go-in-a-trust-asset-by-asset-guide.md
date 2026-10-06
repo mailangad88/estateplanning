@@ -16,7 +16,7 @@ sequence: B
 diagram: TrustFundingAssets
 related:
   - guides/funding-your-trust
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
   - checklists/trust-funding-checklist
   - checklists/asset-and-account-inventory
 reviewed: false
@@ -96,7 +96,7 @@ A timeshare transfer may require approval or fees, and some resorts restrict who
 
 ## Business interests
 
-A trust can own shares of a corporation, a membership interest in an LLC or a partnership share. Check the operating agreement for transfer limits. The trustee has to be able to act for the business. See the [business succession guide](/guides/business-succession-planning).
+A trust can own shares of a corporation, a membership interest in an LLC or a partnership share. Check the operating agreement for transfer limits. The trustee has to be able to act for the business. See the [business succession guide](/learn/business-owners/business-succession-planning).
 
 ## What happens to anything left out
 

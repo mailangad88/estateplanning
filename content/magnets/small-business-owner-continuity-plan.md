@@ -14,7 +14,7 @@ pages: 6
 tag: small_business_continuity
 sequence: B
 related:
-  - guides/business-succession-planning
+  - learn/business-owners/business-succession-planning
   - life-events/starting-a-business
   - checklists/important-contacts-list
   - guides/powers-of-attorney

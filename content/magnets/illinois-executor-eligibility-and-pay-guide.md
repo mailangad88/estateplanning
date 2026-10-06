@@ -31,7 +31,7 @@ answers:
   - "Can I name a bank or professional as executor?"
   - "Should I name my oldest child as executor?"
 related:
-  - guides/choosing-an-executor
+  - learn/wills/choosing-an-executor
   - compare/executor-vs-trustee
   - checklists/choosing-an-executor-worksheet
   - tools/executor-workload
@@ -149,4 +149,4 @@ Bond: courts can ask an executor to post a surety bond to protect the estate. A 
 
 ## Next step
 
-Read [choosing an executor](/guides/choosing-an-executor), then the [what to tell your executor guide](/free/what-to-tell-your-executor-guide). To plan with an attorney, start at [plan finder](/plan-finder).
+Read [choosing an executor](/learn/wills/choosing-an-executor), then the [what to tell your executor guide](/free/what-to-tell-your-executor-guide). To plan with an attorney, start at [plan finder](/plan-finder).

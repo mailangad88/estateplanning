@@ -17,7 +17,7 @@ related:
   - guides/funding-your-trust
   - checklists/trust-funding-checklist
   - blog/should-i-put-my-house-in-a-trust
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
 answers:
   - "How do I transfer a house into a trust?"
   - "How do I retitle my house into a trust?"

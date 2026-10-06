@@ -16,7 +16,7 @@ sequence: B
 related:
   - guides/powers-of-attorney
   - life-events/caring-for-aging-parents
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - guides/healthcare-directives-and-living-wills
   - checklists/asset-and-account-inventory
 reviewed: false

@@ -14,7 +14,7 @@ pages: 6
 tag: grandchildren_gift_planner
 sequence: B
 related:
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
   - guides/estate-and-inheritance-taxes
   - guides/irrevocable-trusts-explained
   - checklists/asset-and-account-inventory
@@ -41,7 +41,7 @@ Giving while you are alive lets you see the result and can reduce what your esta
 - **Total I am comfortable giving over five years:** ______________________
 - **Amount I need to keep for my own care:** ______________________
 
-Keep enough for your own care first. Long term care can be costly. See [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning) if that is a worry.
+Keep enough for your own care first. Long term care can be costly. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) if that is a worry.
 
 ## Step 2: Know the gift tax basics
 
@@ -75,7 +75,7 @@ Contributions are not deductible on the federal return, though many states give 
 
 ### UTMA and UGMA accounts
 
-The gift is irrevocable. When the child reaches the age set by your state, the child controls it fully and may spend it on anything. Many grandparents like this for small gifts. For larger sums or a young adult who may not be ready, a trust may be better. See [leaving money to minors](/guides/leaving-money-to-minors).
+The gift is irrevocable. When the child reaches the age set by your state, the child controls it fully and may spend it on anything. Many grandparents like this for small gifts. For larger sums or a young adult who may not be ready, a trust may be better. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors).
 
 ### Trusts
 
@@ -122,7 +122,7 @@ A trust lets you set conditions: pay for school, delay access until age 30 or pr
 
 ## Next step
 
-Talk through your plan with an attorney. Start with the [plan finder](/plan-finder), or read [leaving money to minors](/guides/leaving-money-to-minors).
+Talk through your plan with an attorney. Start with the [plan finder](/plan-finder), or read [leaving money to minors](/learn/guardianship/leaving-money-to-minors).
 
 ## Sources
 

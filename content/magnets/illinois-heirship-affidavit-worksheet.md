@@ -15,8 +15,8 @@ tag: il_heirship_worksheet
 sequence: G
 related:
   - guides/how-probate-works
-  - guides/what-happens-if-you-die-without-a-will
-  - compare/probate-vs-non-probate-assets
+  - learn/wills/dying-without-a-will
+  - learn/probate/probate-vs-non-probate-assets
   - life-events/death-of-a-parent
   - checklists/first-30-days-after-a-death
 diagram: IntestacyLadder

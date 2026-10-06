@@ -15,7 +15,7 @@ tag: trust_admin_timeline
 sequence: G
 related:
   - guides/settling-an-estate-step-by-step
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
   - checklists/first-30-days-after-a-death
   - tools/executor-workload
 answers:

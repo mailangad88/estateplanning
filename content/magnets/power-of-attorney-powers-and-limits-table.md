@@ -15,7 +15,7 @@ tag: poa_powers_limits
 sequence: B
 related:
   - guides/powers-of-attorney
-  - compare/power-of-attorney-vs-guardianship
+  - learn/power-of-attorney/power-of-attorney-vs-guardianship
   - compare/living-will-vs-healthcare-power-of-attorney
   - guides/funding-your-trust
 answers:
@@ -141,4 +141,4 @@ An agent can complete forms and gather proof. If the document does not authorize
 
 ## Next step
 
-Read the [powers of attorney guide](/guides/powers-of-attorney), or compare with [power of attorney vs guardianship](/compare/power-of-attorney-vs-guardianship).
+Read the [powers of attorney guide](/guides/powers-of-attorney), or compare with [power of attorney vs guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship).

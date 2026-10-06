@@ -15,7 +15,7 @@ tag: home_care_interview
 sequence: B
 related:
   - life-events/caring-for-aging-parents
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - guides/powers-of-attorney
   - tools/medicaid-savings-runway
 reviewed: false

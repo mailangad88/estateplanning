@@ -17,7 +17,7 @@ related:
   - life-events/serious-diagnosis
   - guides/powers-of-attorney
   - guides/healthcare-directives-and-living-wills
-  - compare/power-of-attorney-vs-guardianship
+  - learn/power-of-attorney/power-of-attorney-vs-guardianship
 answers:
   - "My parent has dementia and no power of attorney. What can I do?"
 reviewed: false
@@ -52,7 +52,7 @@ Signing requires that the person understand what the document does, who the peop
 - [ ] Let the attorney meet the person alone for part of the meeting. This protects against later claims of pressure.
 - [ ] Keep notes about the day.
 
-If capacity is already doubtful, do not have the person sign documents anyway and hope for the best. Documents signed without capacity can be challenged, and the damage can be harder to fix. See the [power of attorney versus guardianship comparison](/compare/power-of-attorney-vs-guardianship).
+If capacity is already doubtful, do not have the person sign documents anyway and hope for the best. Documents signed without capacity can be challenged, and the damage can be harder to fix. See the [power of attorney versus guardianship comparison](/learn/power-of-attorney/power-of-attorney-vs-guardianship).
 
 ## Money safeguards
 
@@ -75,7 +75,7 @@ Dementia can bring unpaid bills, duplicate payments, risky purchases and vulnera
 ## 31 to 90 days: organize and plan
 
 - [ ] Make an inventory of accounts, property, debts and insurance. Use the [asset and account inventory](/checklists/asset-and-account-inventory).
-- [ ] Gather a list of passwords and who can access them. See the [digital assets guide](/guides/digital-assets-estate-planning).
+- [ ] Gather a list of passwords and who can access them. See the [digital assets guide](/learn/digital-assets/digital-assets-in-your-estate-plan).
 - [ ] Locate the deed, titles, tax returns and insurance policies.
 - [ ] Review long-term care insurance and any rights to benefits.
 - [ ] Tell the family what documents exist and where.

@@ -17,7 +17,7 @@ related:
   - guides/what-makes-a-will-valid
   - guides/powers-of-attorney
   - life-events/serious-diagnosis
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
 diagram: WillValidity
 answers:
   - "How is mental capacity determined?"

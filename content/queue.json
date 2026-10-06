@@ -517,7 +517,7 @@
    "priority": 2,
    "status": "covered",
    "source": "keyword-topic-map.md pillar 2",
-   "coveredBy": "/compare/will-vs-trust"
+   "coveredBy": "/learn/trusts/will-vs-trust"
   },
   {
    "id": "K051",
@@ -4475,6 +4475,47 @@
    "priority": 1,
    "status": "queued",
    "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)"
+  },
+  {
+   "id": "K435",
+   "keyword": "Medicaid asset limit by state",
+   "intent": "state",
+   "cluster": "elder-care",
+   "slug": "medicaid-asset-limits-by-state",
+   "priority": 1,
+   "status": "queued",
+   "source": "Decision pages research, plain-article topics (2026-10-06)"
+  },
+  {
+   "id": "K436",
+   "keyword": "Bypass trust vs portability for married couples",
+   "intent": "comparison",
+   "cluster": "estate-tax",
+   "slug": "bypass-trust-vs-portability",
+   "priority": 2,
+   "status": "queued",
+   "source": "Decision pages research, plain-article topics (2026-10-06)"
+  },
+  {
+   "id": "K437",
+   "keyword": "Executor vs administrator vs personal representative",
+   "intent": "definition",
+   "cluster": "after-a-death",
+   "slug": "executor-vs-administrator",
+   "priority": 3,
+   "status": "queued",
+   "source": "Decision pages research, plain-article topics (2026-10-06)"
+  },
+  {
+   "id": "K438",
+   "keyword": "Does a will need to be notarized?",
+   "intent": "state",
+   "cluster": "wills",
+   "slug": "does-a-will-need-to-be-notarized",
+   "priority": 2,
+   "status": "covered",
+   "source": "Decision pages research, plain-article topics (2026-10-06)",
+   "coveredBy": "/estate-planning/will-rules"
   }
  ]
 }

@@ -15,8 +15,8 @@ tag: two_state_property_guide
 sequence: B
 related:
   - guides/how-probate-works
-  - guides/revocable-living-trust-explained
-  - compare/probate-vs-non-probate-assets
+  - learn/trusts/revocable-living-trust
+  - learn/probate/probate-vs-non-probate-assets
   - compare/transfer-on-death-deed-vs-trust
   - tools/probate-cost-estimator
 answers:

@@ -15,7 +15,7 @@ tag: widowed_parent_checklist
 sequence: G
 related:
   - checklists/first-30-days-after-a-death
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
   - guides/guardianship-for-minor-children
   - checklists/beneficiary-designation-audit
 answers:

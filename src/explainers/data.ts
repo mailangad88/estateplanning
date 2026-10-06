@@ -31,7 +31,7 @@ export const EXPLAINERS: Explainer[] = [
       { title: "The court closes the estate", body: "The executor reports to the court and is released." },
     ],
     outro: "Assets with a named beneficiary, joint owner or trust usually skip this process.",
-    related: ["/guides/how-probate-works", "/compare/probate-vs-non-probate-assets", "/tools/probate-cost-estimator"],
+    related: ["/guides/how-probate-works", "/learn/probate/probate-vs-non-probate-assets", "/tools/probate-cost-estimator"],
   },
   {
     slug: "how-a-revocable-trust-works",
@@ -46,7 +46,7 @@ export const EXPLAINERS: Explainer[] = [
       { title: "When you die", body: "The successor trustee pays final bills and distributes to your beneficiaries privately, usually without probate." },
     ],
     outro: "A trust only controls what is titled in it, so funding is the step that makes it work.",
-    related: ["/guides/revocable-living-trust-explained", "/guides/funding-your-trust", "/compare/will-vs-trust"],
+    related: ["/learn/trusts/revocable-living-trust", "/guides/funding-your-trust", "/learn/trusts/will-vs-trust"],
   },
   {
     slug: "what-happens-without-a-will",
@@ -61,7 +61,7 @@ export const EXPLAINERS: Explainer[] = [
       { title: "Unmarried partners and friends get nothing", body: "Intestacy laws generally do not provide for people you are not related to by blood, marriage or adoption." },
     ],
     outro: "A simple will lets you make each of these choices yourself.",
-    related: ["/guides/what-happens-if-you-die-without-a-will", "/guides/how-to-make-a-will", "/guides/guardianship-for-minor-children"],
+    related: ["/learn/wills/dying-without-a-will", "/guides/how-to-make-a-will", "/guides/guardianship-for-minor-children"],
   },
   {
     slug: "what-a-complete-estate-plan-includes",
@@ -77,7 +77,7 @@ export const EXPLAINERS: Explainer[] = [
       { title: "Beneficiary designations", body: "Retirement accounts and life insurance pass by their own forms, so they must match the plan." },
     ],
     outro: "Review the whole set every few years and after big life changes.",
-    related: ["/guides/what-is-estate-planning", "/tools/plan-readiness-assessment", "/checklists/documents-to-gather-before-your-consult"],
+    related: ["/learn/basics/what-is-estate-planning", "/tools/plan-readiness-assessment", "/checklists/documents-to-gather-before-your-consult"],
   },
   {
     slug: "funding-your-trust",

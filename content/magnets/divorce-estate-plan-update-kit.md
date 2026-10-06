@@ -16,7 +16,7 @@ sequence: B
 related:
   - life-events/divorce
   - guides/beneficiary-designations
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
   - guides/powers-of-attorney
   - guides/guardianship-for-minor-children
 answers:
@@ -91,7 +91,7 @@ After the decree, many people consider:
 
 - [ ] A new will naming a new executor and backup
 - [ ] Updating a revocable trust, including the successor trustee and who receives property
-- [ ] Reviewing who receives your property if your children are young, and how they receive it (see [leaving money to minors](/guides/leaving-money-to-minors))
+- [ ] Reviewing who receives your property if your children are young, and how they receive it (see [leaving money to minors](/learn/guardianship/leaving-money-to-minors))
 - [ ] Checking that titles to bank accounts and your home match the settlement
 
 ## Part 4: Agents for financial and medical decisions
@@ -161,4 +161,4 @@ Copy this and add rows. Mark each line when it is finished.
 
 ## Next step
 
-Read the [divorce life-event guide](/life-events/divorce) and the [updating your estate plan](/guides/updating-your-estate-plan) guide, then book a consult through [/plan-finder](/plan-finder) when your divorce attorney says it is time.
+Read the [divorce life-event guide](/life-events/divorce) and the [updating your estate plan](/learn/basics/when-to-update-your-estate-plan) guide, then book a consult through [/plan-finder](/plan-finder) when your divorce attorney says it is time.

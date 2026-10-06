@@ -58,7 +58,7 @@ If you worry about an agent changing your plan, a few choices can help:
 - **Keep your will and power of attorney consistent.** An attorney can draft both with the same goals.
 - **Talk with your family.** Our post on [talking to your parents about their estate plan](/blog/how-to-talk-to-your-parents-about-their-estate-plan) can help start the conversation.
 
-A power of attorney also does not replace a guardianship in every case. Our [power of attorney vs guardianship comparison](/compare/power-of-attorney-vs-guardianship) explains when each applies.
+A power of attorney also does not replace a guardianship in every case. Our [power of attorney vs guardianship comparison](/learn/power-of-attorney/power-of-attorney-vs-guardianship) explains when each applies.
 
 ## Signs an agent may be overstepping
 

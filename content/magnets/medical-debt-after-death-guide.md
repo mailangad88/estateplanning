@@ -15,7 +15,7 @@ tag: medical_debt_after_death_guide
 sequence: G
 related:
   - guides/settling-an-estate-step-by-step
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - checklists/first-30-days-after-a-death
   - guides/how-probate-works
 answers:
@@ -77,7 +77,7 @@ Federal law requires states to try to recover certain Medicaid costs from the es
 - **Notice of recovery received?** ______________________
 - **Date:** ______________________
 
-Read more in [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning). If you receive a recovery notice, an attorney can check whether an exemption or hardship waiver applies.
+Read more in [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning). If you receive a recovery notice, an attorney can check whether an exemption or hardship waiver applies.
 
 ## Step 5: Responding to collectors
 

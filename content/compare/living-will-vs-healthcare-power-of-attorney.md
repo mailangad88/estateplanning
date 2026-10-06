@@ -67,7 +67,7 @@ Say you have three adult children who may not agree. Naming one as your agent, w
 
 Most estate plans include both, along with a HIPAA release so your agent can see records. The living will guides your agent. The agent carries out your wishes and fills in the gaps.
 
-These documents sit beside a financial power of attorney, which covers money rather than medicine. See [powers of attorney](/guides/powers-of-attorney). Together they help your family act without going to court if you are incapacitated, which is a core part of [what estate planning is](/guides/what-is-estate-planning).
+These documents sit beside a financial power of attorney, which covers money rather than medicine. See [powers of attorney](/guides/powers-of-attorney). Together they help your family act without going to court if you are incapacitated, which is a core part of [what estate planning is](/learn/basics/what-is-estate-planning).
 
 ## Questions to ask an attorney
 
@@ -80,4 +80,4 @@ These documents sit beside a financial power of attorney, which covers money rat
 
 ## Next step
 
-Talk with the person you want as your agent before you sign, so they know your wishes. Review these documents after major health changes, as covered in [updating your estate plan](/guides/updating-your-estate-plan). To put them in place, book a consult through the [plan finder](/plan-finder).
+Talk with the person you want as your agent before you sign, so they know your wishes. Review these documents after major health changes, as covered in [updating your estate plan](/learn/basics/when-to-update-your-estate-plan). To put them in place, book a consult through the [plan finder](/plan-finder).

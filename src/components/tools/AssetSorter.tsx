@@ -227,7 +227,7 @@ export default function AssetSorter({ initialState }: { initialState?: string })
           <ul>
             <li><Link href="/guides/how-probate-works">How probate works</Link></li>
             <li><Link href="/guides/beneficiary-designations">Beneficiary designations</Link></li>
-            <li><Link href="/guides/transfer-on-death-and-payable-on-death">Transfer on death and payable on death</Link></li>
+            <li><Link href="/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts">Transfer on death and payable on death</Link></li>
             <li><Link href="/guides/funding-your-trust">Funding your trust</Link></li>
             <li><Link href="/tools/beneficiary-audit">Beneficiary audit</Link></li>
           </ul>

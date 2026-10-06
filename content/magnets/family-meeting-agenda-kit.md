@@ -14,7 +14,7 @@ pages: 6
 tag: family_meeting_agenda
 sequence: B
 related:
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - blog/how-to-talk-to-your-parents-about-their-estate-plan
   - life-events/caring-for-aging-parents
   - checklists/important-contacts-list

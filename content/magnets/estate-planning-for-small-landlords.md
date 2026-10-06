@@ -15,8 +15,8 @@ tag: small_landlords_guide
 sequence: B
 related:
   - compare/transfer-on-death-deed-vs-trust
-  - guides/transfer-on-death-and-payable-on-death
-  - guides/revocable-living-trust-explained
+  - learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts
+  - learn/trusts/revocable-living-trust
   - guides/how-probate-works
 answers:
   - "Should I put rental property in a trust?"
@@ -131,7 +131,7 @@ Shared ownership with no rules often ends in conflict. A trust or LLC operating 
 
 ## Next step
 
-[Book a consult](/plan-finder) to compare holding options for your properties. You can also read our [guide to transfer on death and payable on death](/guides/transfer-on-death-and-payable-on-death).
+[Book a consult](/plan-finder) to compare holding options for your properties. You can also read our [guide to transfer on death and payable on death](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts).
 
 ## Sources
 

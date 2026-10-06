@@ -16,9 +16,9 @@ sequence: B
 related:
   - guides/what-makes-a-will-valid
   - guides/how-to-make-a-will
-  - compare/will-vs-trust
-  - guides/revocable-living-trust-explained
-  - guides/updating-your-estate-plan
+  - learn/trusts/will-vs-trust
+  - learn/trusts/revocable-living-trust
+  - learn/basics/when-to-update-your-estate-plan
 answers:
   - "Can a will be contested?"
   - "Can a will be overturned?"
@@ -121,9 +121,9 @@ You cannot stop anyone from filing a case. You can make a challenge less likely 
 - [ ] If capacity could be questioned because of age or illness, ask the attorney about documenting your understanding at signing, for example with a note from a doctor
 - [ ] Do not let anyone who benefits from the will be present when you discuss it with your attorney
 - [ ] Explain unequal gifts in a letter or a family meeting. See the [family meeting worksheet](/free/family-meeting-worksheet)
-- [ ] Ask whether a [revocable living trust](/guides/revocable-living-trust-explained) fits, since trusts follow different challenge rules, although they can be challenged too
+- [ ] Ask whether a [revocable living trust](/learn/trusts/revocable-living-trust) fits, since trusts follow different challenge rules, although they can be challenged too
 - [ ] Consider a no-contest clause only after asking how your state treats it
-- [ ] Update your plan after major life events. See [updating your estate plan](/guides/updating-your-estate-plan)
+- [ ] Update your plan after major life events. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan)
 
 ## Planning worksheet
 

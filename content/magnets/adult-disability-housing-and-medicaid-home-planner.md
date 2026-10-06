@@ -15,8 +15,8 @@ tag: disability_housing_planner
 sequence: B
 related:
   - guides/special-needs-trusts
-  - guides/medicaid-and-long-term-care-planning
-  - guides/transfer-on-death-and-payable-on-death
+  - learn/elder-care/medicaid-planning
+  - learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts
   - tools/medicaid-lookback-date
 answers:
   - "How do I plan for my adult child's housing after I die?"
@@ -120,4 +120,4 @@ An ABLE account can pay for qualified disability expenses including housing. Usi
 
 ## Next step
 
-Read /guides/special-needs-trusts and /guides/medicaid-and-long-term-care-planning. To plan with an attorney, start at /plan-finder.
+Read /guides/special-needs-trusts and /learn/elder-care/medicaid-planning. To plan with an attorney, start at /plan-finder.

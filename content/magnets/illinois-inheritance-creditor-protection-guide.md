@@ -17,7 +17,7 @@ sequence: B
 related:
   - guides/beneficiary-designations
   - guides/irrevocable-trusts-explained
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
   - compare/revocable-vs-irrevocable-trust
 reviewed: false
 updated: "2026-10-06"

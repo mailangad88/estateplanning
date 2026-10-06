@@ -14,11 +14,11 @@ pages: 7
 tag: what_happens_without_a_will
 sequence: B
 related:
-  - guides/what-happens-if-you-die-without-a-will
+  - learn/wills/dying-without-a-will
   - guides/how-to-make-a-will
   - guides/how-probate-works
   - guides/guardianship-for-minor-children
-  - compare/probate-vs-non-probate-assets
+  - learn/probate/probate-vs-non-probate-assets
 diagram: IntestacyLadder
 answers:
   - "Does my spouse automatically inherit everything if I die without a will?"
@@ -134,7 +134,7 @@ Intestacy answers differ by state. Use these questions with an attorney licensed
 
 ## Next step
 
-Read [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will) for the longer version, or [book a consult](/plan-finder) to talk through your family's situation.
+Read [what happens if you die without a will](/learn/wills/dying-without-a-will) for the longer version, or [book a consult](/plan-finder) to talk through your family's situation.
 
 ## Sources
 

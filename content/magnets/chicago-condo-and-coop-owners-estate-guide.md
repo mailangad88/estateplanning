@@ -16,7 +16,7 @@ sequence: B
 related:
   - life-events/buying-a-home
   - compare/transfer-on-death-deed-vs-trust
-  - guides/transfer-on-death-and-payable-on-death
+  - learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts
   - compare/joint-ownership-vs-trust
   - guides/funding-your-trust
 answers:

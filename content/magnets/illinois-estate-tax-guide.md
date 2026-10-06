@@ -17,7 +17,7 @@ related:
   - guides/estate-and-inheritance-taxes
   - tools/state-death-tax-checker
   - tools/estate-tax-estimator
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
 diagram: EstateTaxThresholds
 answers:
   - "What is the Illinois estate tax exemption?"

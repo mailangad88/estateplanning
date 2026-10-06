@@ -15,7 +15,7 @@ pages: 7
 tag: medicaid_transfer_scenarios
 sequence: B
 related:
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - tools/medicaid-lookback-date
   - tools/medicaid-savings-runway
   - guides/estate-and-inheritance-taxes
@@ -129,4 +129,4 @@ Failing any one item can lose the exemption.
 
 ## Next step
 
-Find your window with the [Medicaid look-back date tool](/tools/medicaid-lookback-date), then see the [Medicaid and long-term care planning guide](/guides/medicaid-and-long-term-care-planning).
+Find your window with the [Medicaid look-back date tool](/tools/medicaid-lookback-date), then see the [Medicaid and long-term care planning guide](/learn/elder-care/medicaid-planning).

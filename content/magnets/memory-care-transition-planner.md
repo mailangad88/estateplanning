@@ -15,7 +15,7 @@ tag: memory_care_transition
 sequence: B
 related:
   - life-events/caring-for-aging-parents
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - guides/powers-of-attorney
   - checklists/important-contacts-list
 answers:
@@ -98,7 +98,7 @@ Agree on roles in writing before the move. Resentment often grows when one sibli
 - **Who visits on which days:** ______________________
 - **How we share updates (group text, weekly call):** ______________________
 
-On cost, ask each community for a written list of what the base rate covers and what is extra. Memory care is mostly paid privately. Medicare generally does not pay for custodial long-term care. Medicaid may help in some settings, but rules and waiting lists vary by state, and Medicaid looks back at asset transfers. Do not give away money or property to "qualify" without legal advice. See the [guide to Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning) and the [Medicaid look-back date tool](/tools/medicaid-lookback-date).
+On cost, ask each community for a written list of what the base rate covers and what is extra. Memory care is mostly paid privately. Medicare generally does not pay for custodial long-term care. Medicaid may help in some settings, but rules and waiting lists vary by state, and Medicaid looks back at asset transfers. Do not give away money or property to "qualify" without legal advice. See the [guide to Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) and the [Medicaid look-back date tool](/tools/medicaid-lookback-date).
 
 ## Step 6: First-week checklist
 

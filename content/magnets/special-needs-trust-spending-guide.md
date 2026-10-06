@@ -17,8 +17,8 @@ diagram: SpecialNeedsTrust
 related:
   - guides/special-needs-trusts
   - compare/special-needs-trust-vs-able-account
-  - guides/choosing-a-trustee
-  - guides/medicaid-and-long-term-care-planning
+  - learn/trusts/choosing-a-trustee
+  - learn/elder-care/medicaid-planning
 answers:
   - "Can a special needs trust pay for a car?"
   - "Can a special needs trust pay for food?"

@@ -14,7 +14,7 @@ pages: 6
 tag: ltc_who_pays_guide
 sequence: B
 related:
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - tools/medicaid-savings-runway
   - life-events/retirement
   - life-events/caring-for-aging-parents
@@ -132,4 +132,4 @@ Medicaid pays for nursing home care once income and assets fall within the state
 
 ## Next step
 
-Use the [Medicaid savings runway tool](/tools/medicaid-savings-runway) to see how long savings cover a monthly gap, or read the [Medicaid and long-term care planning guide](/guides/medicaid-and-long-term-care-planning).
+Use the [Medicaid savings runway tool](/tools/medicaid-savings-runway) to see how long savings cover a monthly gap, or read the [Medicaid and long-term care planning guide](/learn/elder-care/medicaid-planning).

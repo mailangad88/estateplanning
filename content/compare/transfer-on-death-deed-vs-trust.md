@@ -37,7 +37,7 @@ A transfer-on-death deed, sometimes called a beneficiary deed, lets you name who
 
 With a transfer-on-death deed, you sign and record a deed naming one or more beneficiaries. Nothing changes during your life. You can sell, refinance or revoke it. At death, the beneficiary usually records a death certificate and an affidavit to take title.
 
-With a revocable trust, you sign a new deed moving your home into the trust. You manage it as trustee. At death or incapacity, your successor trustee takes over. See [revocable living trusts explained](/guides/revocable-living-trust-explained).
+With a revocable trust, you sign a new deed moving your home into the trust. You manage it as trustee. At death or incapacity, your successor trustee takes over. See [revocable living trusts explained](/learn/trusts/revocable-living-trust).
 
 ## When people choose a transfer-on-death deed
 
@@ -49,7 +49,7 @@ A transfer-on-death deed can be a good fit when:
 - Keeping costs low matters more than detailed instructions.
 - The person lives in a state that allows these deeds.
 
-Say a retired widower owns a paid-off house and has two adult daughters. His bank accounts already have payable-on-death beneficiaries. A transfer-on-death deed may let the whole estate skip probate at little cost. See [transfer on death and payable on death](/guides/transfer-on-death-and-payable-on-death).
+Say a retired widower owns a paid-off house and has two adult daughters. His bank accounts already have payable-on-death beneficiaries. A transfer-on-death deed may let the whole estate skip probate at little cost. See [transfer on death and payable on death](/learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts).
 
 ## When people choose a trust
 
@@ -61,7 +61,7 @@ A trust is often the better fit when:
 - The owner wants conditions, like holding a share until a child turns 30.
 - A beneficiary may have creditors or divorce risk.
 
-Say you want your home to go to your son, but he is 17. A transfer-on-death deed would leave property to a minor, which may require a court-supervised account. A trust can name a trustee to manage it for him. See [leaving money to minors](/guides/leaving-money-to-minors).
+Say you want your home to go to your son, but he is 17. A transfer-on-death deed would leave property to a minor, which may require a court-supervised account. A trust can name a trustee to manage it for him. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors).
 
 ## Using both together
 

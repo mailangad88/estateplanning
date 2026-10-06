@@ -15,7 +15,7 @@ tag: contacts_directory
 sequence: B
 related:
   - checklists/important-contacts-list
-  - guides/choosing-an-executor
+  - learn/wills/choosing-an-executor
   - guides/powers-of-attorney
   - guides/settling-an-estate-step-by-step
 reviewed: false

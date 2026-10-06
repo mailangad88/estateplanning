@@ -14,7 +14,7 @@ pages: 6
 tag: family_business_meeting
 sequence: B
 related:
-  - guides/business-succession-planning
+  - learn/business-owners/business-succession-planning
   - life-events/starting-a-business
   - guides/estate-planning-for-blended-families
   - tools/estate-tax-estimator

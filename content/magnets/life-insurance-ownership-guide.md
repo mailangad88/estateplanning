@@ -18,7 +18,7 @@ related:
   - guides/beneficiary-designations
   - guides/estate-and-inheritance-taxes
   - guides/irrevocable-trusts-explained
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
 answers:
   - "Can a trust own life insurance?"
   - "Should I put my life insurance in a trust?"

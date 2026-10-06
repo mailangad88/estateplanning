@@ -26,10 +26,10 @@ answers:
   - "What if I own a business with my siblings and one dies?"
   - "Do I need my partner's consent to leave my share to my spouse?"
 related:
-  - guides/business-succession-planning
+  - learn/business-owners/business-succession-planning
   - life-events/starting-a-business
   - checklists/asset-and-account-inventory
-  - compare/probate-vs-non-probate-assets
+  - learn/probate/probate-vs-non-probate-assets
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -135,4 +135,4 @@ When an agreement and a will conflict, the agreement usually controls the busine
 
 ## Next step
 
-Take the filled tables to a business or estate attorney. For the bigger picture, read [business succession planning](/guides/business-succession-planning), or start at [our plan finder](/plan-finder).
+Take the filled tables to a business or estate attorney. For the bigger picture, read [business succession planning](/learn/business-owners/business-succession-planning), or start at [our plan finder](/plan-finder).

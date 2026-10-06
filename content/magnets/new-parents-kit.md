@@ -15,7 +15,7 @@ tag: new_parents_kit
 sequence: B
 related:
   - guides/guardianship-for-minor-children
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
   - life-events/new-baby
   - tools/guardian-fund-calculator
 answers:

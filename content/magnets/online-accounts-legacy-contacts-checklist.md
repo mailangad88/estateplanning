@@ -14,9 +14,9 @@ pages: 4
 tag: legacy_contacts_checklist
 sequence: B
 related:
-  - guides/digital-assets-estate-planning
+  - learn/digital-assets/digital-assets-in-your-estate-plan
   - checklists/digital-assets-inventory
-  - guides/choosing-an-executor
+  - learn/wills/choosing-an-executor
   - guides/powers-of-attorney
 diagram: DigitalAssets
 reviewed: false

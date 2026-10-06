@@ -31,7 +31,7 @@ answers:
   - "What can I do if my sibling is trying to get guardianship of our parent?"
   - "What is a guardian ad litem?"
 related:
-  - compare/power-of-attorney-vs-guardianship
+  - learn/power-of-attorney/power-of-attorney-vs-guardianship
   - guides/powers-of-attorney
   - life-events/caring-for-aging-parents
   - guides/healthcare-directives-and-living-wills
@@ -151,4 +151,4 @@ Costs include filing fees, a medical report, a guardian ad litem and attorney fe
 
 ## Next step
 
-Read [power of attorney vs guardianship](/compare/power-of-attorney-vs-guardianship), or use the [incapacity readiness quiz](/quizzes/incapacity-readiness-quiz). For help with a court case, start at [plan finder](/plan-finder).
+Read [power of attorney vs guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship), or use the [incapacity readiness quiz](/quizzes/incapacity-readiness-quiz). For help with a court case, start at [plan finder](/plan-finder).

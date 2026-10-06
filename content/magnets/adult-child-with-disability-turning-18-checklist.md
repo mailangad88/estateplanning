@@ -16,7 +16,7 @@ sequence: B
 related:
   - guides/special-needs-trusts
   - guides/powers-of-attorney
-  - compare/power-of-attorney-vs-guardianship
+  - learn/power-of-attorney/power-of-attorney-vs-guardianship
   - compare/special-needs-trust-vs-able-account
   - guides/healthcare-directives-and-living-wills
 answers:
@@ -76,7 +76,7 @@ Guardianship means a court finds that an adult cannot make some or all decisions
 | Limited guardianship | Court gives a guardian only the powers needed | Partly |
 | Full guardianship | Court transfers most decisions | Largely no |
 
-Your child must be able to understand and sign a power of attorney. An attorney can tell you whether that is realistic. See [power of attorney vs guardianship](/compare/power-of-attorney-vs-guardianship) and [powers of attorney](/guides/powers-of-attorney).
+Your child must be able to understand and sign a power of attorney. An attorney can tell you whether that is realistic. See [power of attorney vs guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship) and [powers of attorney](/guides/powers-of-attorney).
 
 - [ ] Ask the attorney whether your child can sign a power of attorney
 - [ ] If guardianship is likely, ask when to file and how long it takes in your county

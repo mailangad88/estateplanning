@@ -14,7 +14,7 @@ pages: 7
 tag: unmarried_couples_guide
 sequence: B
 related:
-  - guides/what-happens-if-you-die-without-a-will
+  - learn/wills/dying-without-a-will
   - guides/powers-of-attorney
   - guides/beneficiary-designations
   - compare/joint-ownership-vs-trust
@@ -50,7 +50,7 @@ The same gap shows up in other areas:
 - **Taxes:** Gifts and inheritances between spouses often get special treatment. Unmarried partners may not get the same treatment, so ask an attorney or tax professional.
 - **Benefits:** Survivor benefits under some pensions and Social Security generally depend on marriage.
 
-Read more about [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will).
+Read more about [what happens if you die without a will](/learn/wills/dying-without-a-will).
 
 ## Documents that fill the gaps
 

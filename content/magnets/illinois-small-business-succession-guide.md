@@ -14,11 +14,11 @@ pages: 5
 tag: il_business_succession_guide
 sequence: B
 related:
-  - guides/business-succession-planning
+  - learn/business-owners/business-succession-planning
   - life-events/starting-a-business
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
   - guides/beneficiary-designations
-  - guides/choosing-a-trustee
+  - learn/trusts/choosing-a-trustee
 diagram: BusinessSuccession
 answers:
   - "How does my state treat LLC interests at death?"

@@ -15,8 +15,8 @@ pages: 6
 tag: il_medicaid_estate_recovery
 sequence: B
 related:
-  - guides/medicaid-and-long-term-care-planning
-  - compare/probate-vs-non-probate-assets
+  - learn/elder-care/medicaid-planning
+  - learn/probate/probate-vs-non-probate-assets
   - tools/medicaid-savings-runway
   - life-events/caring-for-aging-parents
 answers:
@@ -127,4 +127,4 @@ You can leave property by will or beneficiary designation, but the state's claim
 
 ## Next step
 
-Read the [Medicaid and long-term care planning guide](/guides/medicaid-and-long-term-care-planning), or use the [Medicaid savings runway tool](/tools/medicaid-savings-runway) to see how long savings last.
+Read the [Medicaid and long-term care planning guide](/learn/elder-care/medicaid-planning), or use the [Medicaid savings runway tool](/tools/medicaid-savings-runway) to see how long savings last.

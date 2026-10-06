@@ -47,6 +47,10 @@ export default function StatesIndex() {
           </li>
         ))}
       </ul>
+      <p>
+        Comparing states? See the <Link href="/estate-planning/will-rules">will signing rules in all 50 states</Link>{" "}
+        (witnesses, handwritten wills and self-proving affidavits), with a free CSV download.
+      </p>
       <h2>Which states have an estate or inheritance tax?</h2>
       <div className="table-wrap">
         <table>

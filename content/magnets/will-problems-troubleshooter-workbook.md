@@ -16,7 +16,7 @@ sequence: B
 related:
   - guides/what-makes-a-will-valid
   - guides/how-to-make-a-will
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
   - checklists/annual-estate-plan-review
 reviewed: false
 updated: "2026-10-06"
@@ -118,4 +118,4 @@ If any answer here is uncertain, consider a new will. See [codicil or new will d
 
 ## Next step
 
-Use the [will review checklist](/free/will-review-checklist) and then see [updating your estate plan](/guides/updating-your-estate-plan).
+Use the [will review checklist](/free/will-review-checklist) and then see [updating your estate plan](/learn/basics/when-to-update-your-estate-plan).

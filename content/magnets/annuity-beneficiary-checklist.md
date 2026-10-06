@@ -16,7 +16,7 @@ sequence: B
 related:
   - guides/beneficiary-designations
   - checklists/beneficiary-designation-audit
-  - compare/probate-vs-non-probate-assets
+  - learn/probate/probate-vs-non-probate-assets
   - tools/beneficiary-audit
 answers:
   - "Are annuity death benefits taxable to beneficiaries?"
@@ -52,7 +52,7 @@ Owner and annuitant are often the same person, but not always. Many contracts pa
 - [ ] I have a copy of the current beneficiary form from the insurer, not just my memory of it.
 - [ ] Primary beneficiaries are named with full legal names and percentages that add up to 100.
 - [ ] A contingent beneficiary is named in case a primary dies first.
-- [ ] No beneficiary is a minor child without a plan (see [Leaving Money to Minors](/guides/leaving-money-to-minors)).
+- [ ] No beneficiary is a minor child without a plan (see [Leaving Money to Minors](/learn/guardianship/leaving-money-to-minors)).
 - [ ] No beneficiary receives benefits who may lose eligibility for means-tested programs, unless a special needs trust is named.
 - [ ] If I named a trust, the trust is current and the trustee has the insurer's required wording.
 - [ ] The form matches my wishes after any marriage, divorce, birth or death.

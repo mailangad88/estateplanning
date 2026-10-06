@@ -15,9 +15,9 @@ tag: il_spousal_rights_guide
 sequence: B
 related:
   - guides/estate-planning-for-blended-families
-  - guides/what-happens-if-you-die-without-a-will
-  - guides/revocable-living-trust-explained
-  - compare/will-vs-trust
+  - learn/wills/dying-without-a-will
+  - learn/trusts/revocable-living-trust
+  - learn/trusts/will-vs-trust
   - life-events/getting-married
 answers:
   - "What is a spousal waiver of inheritance rights?"
@@ -40,7 +40,7 @@ Illinois gives a surviving spouse several protections that a will cannot simply 
 
 ## If there is no will
 
-Under the Illinois intestacy statute, a surviving spouse takes the whole estate when the person who died left no descendants. If there are children or other descendants, the spouse takes one half and the descendants share the other half. This matters in second marriages. A spouse's half is no longer protected for the first family once it passes to the spouse. Read more about [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will).
+Under the Illinois intestacy statute, a surviving spouse takes the whole estate when the person who died left no descendants. If there are children or other descendants, the spouse takes one half and the descendants share the other half. This matters in second marriages. A spouse's half is no longer protected for the first family once it passes to the spouse. Read more about [what happens if you die without a will](/learn/wills/dying-without-a-will).
 
 ## Renouncing the will
 

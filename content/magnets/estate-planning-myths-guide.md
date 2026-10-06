@@ -14,9 +14,9 @@ pages: 4
 tag: estate_planning_myths
 sequence: B
 related:
-  - guides/what-is-estate-planning
-  - guides/what-happens-if-you-die-without-a-will
-  - compare/will-vs-trust
+  - learn/basics/what-is-estate-planning
+  - learn/wills/dying-without-a-will
+  - learn/trusts/will-vs-trust
   - guides/how-probate-works
 answers:
   - "Is estate planning only for rich people?"
@@ -37,22 +37,22 @@ updated: "2026-10-06"
 An estate is everything you own: a car, a bank account, a home, a phone full of photos. Planning decides who handles it and who receives it. A plan also names who makes medical and money decisions if you cannot. None of that depends on being rich. The federal estate tax exemption is $15,000,000 per person in 2026, so most families will never owe federal estate tax. They still benefit from a plan.
 
 ### Myth 2: "My spouse automatically gets everything."
-Often not. If you die without a will, state intestacy law decides. Many states split the estate between a spouse and children, especially when some children are not the spouse's. Assets with a named beneficiary or joint owner pass by that title instead. Check your state's rule. See [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will).
+Often not. If you die without a will, state intestacy law decides. Many states split the estate between a spouse and children, especially when some children are not the spouse's. Assets with a named beneficiary or joint owner pass by that title instead. Check your state's rule. See [what happens if you die without a will](/learn/wills/dying-without-a-will).
 
 ### Myth 3: "A will avoids probate."
-A will usually goes through probate. It is the document the court uses. Probate is avoided for assets that pass outside the will, such as accounts with beneficiaries, jointly owned property with survivorship, and property in a funded trust. Many states also have simplified procedures for small estates. Compare options in [probate vs non-probate assets](/compare/probate-vs-non-probate-assets).
+A will usually goes through probate. It is the document the court uses. Probate is avoided for assets that pass outside the will, such as accounts with beneficiaries, jointly owned property with survivorship, and property in a funded trust. Many states also have simplified procedures for small estates. Compare options in [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets).
 
 ### Myth 4: "My will overrides my beneficiary forms."
 It does not. The name on the retirement account, life insurance policy or payable-on-death account controls, even if your will says something different. An ex-spouse or a person who has died is a common problem. Review forms after every life change.
 
 ### Myth 5: "A trust is only for people with millions."
-A revocable living trust can help families of modest means: it can avoid probate on a home, manage assets if you become incapacitated, and set rules for children who inherit young. It also costs more to set up than a simple will and only works if assets are retitled into it. Whether it is worth it depends on your state, assets and family. See [will vs trust](/compare/will-vs-trust).
+A revocable living trust can help families of modest means: it can avoid probate on a home, manage assets if you become incapacitated, and set rules for children who inherit young. It also costs more to set up than a simple will and only works if assets are retitled into it. Whether it is worth it depends on your state, assets and family. See [will vs trust](/learn/trusts/will-vs-trust).
 
 ### Myth 6: "Joint ownership is a simple fix."
 Adding a child to a deed or account can avoid probate, but it can also expose the asset to that child's creditors, divorce or lawsuits, and may create tax problems for the child. It can also disinherit other children by accident. Compare options in [joint ownership vs trust](/compare/joint-ownership-vs-trust).
 
 ### Myth 7: "Once I sign, I am done."
-Plans age. Marriages, births, deaths, moves, new homes, sold businesses and changed laws all matter. A plan can also fail if assets were never retitled. A check every few years, or after any major event, keeps it working. See [updating your estate plan](/guides/updating-your-estate-plan).
+Plans age. Marriages, births, deaths, moves, new homes, sold businesses and changed laws all matter. A plan can also fail if assets were never retitled. A check every few years, or after any major event, keeps it working. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan).
 
 ### Myth 8: "My family knows what I want, so I do not need it in writing."
 Courts and banks can only follow documents. A spoken wish, even one everyone remembers, generally has no legal force. Families who agree today can disagree in grief, especially over a home, heirlooms or an unequal split.
@@ -104,7 +104,7 @@ Each unchecked item is a conversation to have, not a failure.
 
 ## Next step
 
-Gather what you know with the [what is estate planning guide](/guides/what-is-estate-planning), then [book a consult](/plan-finder) to turn the self-check into a plan.
+Gather what you know with the [what is estate planning guide](/learn/basics/what-is-estate-planning), then [book a consult](/plan-finder) to turn the self-check into a plan.
 
 ## Sources
 

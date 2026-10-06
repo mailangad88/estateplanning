@@ -17,7 +17,7 @@ related:
   - guides/how-probate-works
   - guides/settling-an-estate-step-by-step
   - life-events/death-of-a-parent
-  - compare/probate-vs-non-probate-assets
+  - learn/probate/probate-vs-non-probate-assets
 reviewed: false
 updated: "2026-10-06"
 answers:

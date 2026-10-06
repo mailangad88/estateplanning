@@ -14,7 +14,7 @@ pages: 5
 tag: course_plan_tune_up
 sequence: B
 related:
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
   - checklists/annual-estate-plan-review
   - checklists/beneficiary-designation-audit
   - tools/plan-review-reminder
@@ -51,7 +51,7 @@ Check where originals are kept. A will sometimes needs the original, not a copy,
 
 Then read each document slowly. Write a one-paragraph summary in your own words: who gets what, who is in charge, and who raises minor children. If something is hard to follow, mark it with a question.
 
-Pay attention to dates and the state where you signed. Moving states does not usually erase a valid will, but it can change how your documents work. The [updating your estate plan guide](/guides/updating-your-estate-plan) covers this in more detail.
+Pay attention to dates and the state where you signed. Moving states does not usually erase a valid will, but it can change how your documents work. The [updating your estate plan guide](/learn/basics/when-to-update-your-estate-plan) covers this in more detail.
 
 Keep a short list of your attorney, your accountant and your financial advisor.
 
@@ -84,7 +84,7 @@ Former spouses are a common surprise. Some states cancel a former spouse's role 
 
 Also note people who are missing: a new child, a stepchild or a grandchild may not be in your documents.
 
-The [choosing an executor guide](/guides/choosing-an-executor) can help you rethink a role.
+The [choosing an executor guide](/learn/wills/choosing-an-executor) can help you rethink a role.
 
 Many people find that their first choice years ago, such as a close friend or sibling, no longer makes sense. That is normal, and changing names is one of the most common updates. Think about backups too. A plan with only one name per role can fail if that person cannot serve, and a second or third name adds a safety net.
 

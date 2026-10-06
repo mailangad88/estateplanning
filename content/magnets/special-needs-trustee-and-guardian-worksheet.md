@@ -15,7 +15,7 @@ tag: snt_trustee_guardian_ws
 sequence: B
 related:
   - guides/special-needs-trusts
-  - guides/choosing-a-trustee
+  - learn/trusts/choosing-a-trustee
   - guides/guardianship-for-minor-children
   - compare/executor-vs-trustee
 answers:
@@ -137,4 +137,4 @@ If your parents have passed and you are asked to help, ask for the trust documen
 
 ## Next step
 
-Put the choices into the trust and your letter. Start at /plan-finder, or read /guides/choosing-a-trustee.
+Put the choices into the trust and your letter. Start at /plan-finder, or read /learn/trusts/choosing-a-trustee.

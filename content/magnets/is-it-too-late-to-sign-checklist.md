@@ -96,7 +96,7 @@ Five yeses is a good sign. A no on any one is a reason to call an attorney, not 
 ## If the person has already lost capacity
 
 - **Will:** no one can sign a will for them. Without one, state intestacy law decides.
-- **Power of attorney:** if the person cannot understand, a family member may need a court guardianship. See [power of attorney vs guardianship](/compare/power-of-attorney-vs-guardianship).
+- **Power of attorney:** if the person cannot understand, a family member may need a court guardianship. See [power of attorney vs guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship).
 - **Healthcare:** many states have a default list of family decision makers.
 - **Trust:** an existing trust can continue under the successor trustee.
 

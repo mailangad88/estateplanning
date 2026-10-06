@@ -16,7 +16,7 @@ sequence: B
 related:
   - guides/irrevocable-trusts-explained
   - compare/revocable-vs-irrevocable-trust
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - guides/special-needs-trusts
   - guides/estate-and-inheritance-taxes
 diagram: RevocableVsIrrevocable

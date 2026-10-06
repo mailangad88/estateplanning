@@ -15,7 +15,7 @@ tag: beneficiary_letters
 sequence: G
 related:
   - guides/settling-an-estate-step-by-step
-  - guides/choosing-an-executor
+  - learn/wills/choosing-an-executor
   - blog/what-does-a-trustee-actually-do-each-year
   - checklists/first-30-days-after-a-death
 answers:

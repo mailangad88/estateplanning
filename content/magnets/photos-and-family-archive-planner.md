@@ -14,7 +14,7 @@ pages: 5
 tag: photos_family_archive
 sequence: B
 related:
-  - guides/digital-assets-estate-planning
+  - learn/digital-assets/digital-assets-in-your-estate-plan
   - checklists/digital-assets-inventory
   - guides/how-to-make-a-will
   - checklists/letter-of-instruction-outline

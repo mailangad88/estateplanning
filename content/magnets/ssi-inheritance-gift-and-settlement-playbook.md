@@ -17,7 +17,7 @@ related:
   - guides/special-needs-trusts
   - compare/special-needs-trust-vs-able-account
   - guides/beneficiary-designations
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
 answers:
   - "How much can a person on SSI inherit?"
   - "How fast must an SSI recipient report an inheritance?"

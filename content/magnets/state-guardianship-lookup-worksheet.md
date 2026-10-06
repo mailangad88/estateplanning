@@ -32,7 +32,7 @@ answers:
   - "What is the guardianship process in Washington?"
 related:
   - guides/guardianship-for-minor-children
-  - compare/power-of-attorney-vs-guardianship
+  - learn/power-of-attorney/power-of-attorney-vs-guardianship
   - life-events/moving-to-a-new-state
   - guides/powers-of-attorney
 reviewed: false
@@ -134,4 +134,4 @@ A guardian appointed in one state may need to start or transfer a case when the 
 
 ## Next step
 
-Read [power of attorney vs guardianship](/compare/power-of-attorney-vs-guardianship) and the [guardianship for minor children guide](/guides/guardianship-for-minor-children). To speak with an attorney, start at [plan finder](/plan-finder).
+Read [power of attorney vs guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship) and the [guardianship for minor children guide](/guides/guardianship-for-minor-children). To speak with an attorney, start at [plan finder](/plan-finder).

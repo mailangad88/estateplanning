@@ -27,7 +27,7 @@ answers:
   - "Should I use a trust to keep the business out of a child's divorce?"
   - "What happens to a business if the successor is unwilling?"
 related:
-  - guides/business-succession-planning
+  - learn/business-owners/business-succession-planning
   - guides/estate-planning-for-blended-families
   - life-events/starting-a-business
   - checklists/letter-of-instruction-outline
@@ -134,4 +134,4 @@ Shares left outright to a child may be exposed to a spouse in a divorce, dependi
 
 ## Next step
 
-Read [business succession planning](/guides/business-succession-planning) and the [family business succession meeting kit](/free/family-business-meeting-kit). To talk it through, start at [our plan finder](/plan-finder).
+Read [business succession planning](/learn/business-owners/business-succession-planning) and the [family business succession meeting kit](/free/family-business-meeting-kit). To talk it through, start at [our plan finder](/plan-finder).

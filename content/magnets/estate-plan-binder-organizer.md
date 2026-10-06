@@ -14,9 +14,9 @@ pages: 6
 tag: plan_binder_organizer
 sequence: B
 related:
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - checklists/documents-to-gather-before-your-consult
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
   - checklists/letter-of-instruction-outline
 answers:
   - "How do I organize my estate planning documents?"
@@ -103,7 +103,7 @@ See the [beneficiary designation audit](/checklists/beneficiary-designation-audi
 - [ ] Names of the business attorney, accountant and key contacts
 - [ ] Who would run it in an emergency
 
-Skip this tab if you have no business. See [business succession planning](/guides/business-succession-planning) if you do.
+Skip this tab if you have no business. See [business succession planning](/learn/business-owners/business-succession-planning) if you do.
 
 ## Tab 7: Tax and insurance
 

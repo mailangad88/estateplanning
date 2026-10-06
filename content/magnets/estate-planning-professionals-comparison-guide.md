@@ -31,10 +31,10 @@ answers:
   - "Can a lawyer refuse to make a will?"
   - "Can a lawyer's estate plan be wrong?"
 related:
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - compare/online-will-vs-estate-attorney
   - checklists/documents-to-gather-before-your-consult
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
 reviewed: false
 updated: "2026-10-06"
 ---

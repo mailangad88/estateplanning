@@ -2,7 +2,7 @@
 title: "Estate planning for people with no children"
 description: "Without children, state law may send your estate to relatives you barely know. Here is how people without kids choose heirs, helpers and causes."
 answer: "Without children, your estate would usually pass to a spouse, parents, siblings, or more distant relatives under state law if you have no will. A plan lets you choose instead: friends, nieces and nephews, charities, or a partner. It also lets you name trusted people to handle money and medical decisions if you cannot."
-pillar: what-is-estate-planning
+pillar: how-to-make-a-will
 date: 2026-10-06
 updated: 2026-10-06
 reviewed: false
@@ -16,11 +16,11 @@ faqs:
 
 If you do not have children, an estate plan matters just as much. In some ways it matters more, because the default rules may not reflect the people you are closest to.
 
-Our guide to [what estate planning is](/guides/what-is-estate-planning) covers the basic documents. This post focuses on the choices that come up most often for people without kids.
+Our guide to [what estate planning is](/learn/basics/what-is-estate-planning) covers the basic documents. This post focuses on the choices that come up most often for people without kids.
 
 ## Who inherits by default
 
-Without a will, your state's intestacy law decides. If you have no spouse and no children, the usual order is your parents, then siblings, then nieces and nephews, then more distant relatives. Our guide to [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will) explains how that works.
+Without a will, your state's intestacy law decides. If you have no spouse and no children, the usual order is your parents, then siblings, then nieces and nephews, then more distant relatives. Our guide to [what happens if you die without a will](/learn/wills/dying-without-a-will) explains how that works.
 
 That may be fine. But it leaves out close friends, a partner you are not married to, godchildren, and causes you care about.
 
@@ -30,7 +30,7 @@ A will or trust lets you decide. People without children commonly leave money to
 
 - Nieces, nephews or godchildren.
 - Close friends.
-- A partner. See [estate planning for unmarried couples](/blog/estate-planning-for-unmarried-couples).
+- A partner. See [estate planning for unmarried couples](/learn/life-stages/estate-planning-for-unmarried-couples).
 - Charities, schools or religious groups.
 - Pets, through a pet trust in many states.
 
@@ -46,7 +46,7 @@ The harder question is often who will act for you. Parents and children usually 
 | Financial agent | Handles money if you cannot, under a power of attorney. |
 | Healthcare agent | Makes medical decisions if you cannot. |
 
-Many people choose a younger relative, a trusted friend, or a professional fiduciary. If no family member fits, a bank or trust company can serve as trustee for a fee. Our guide to [choosing a trustee](/guides/choosing-a-trustee) covers the trade-offs.
+Many people choose a younger relative, a trusted friend, or a professional fiduciary. If no family member fits, a bank or trust company can serve as trustee for a fee. Our guide to [choosing a trustee](/learn/trusts/choosing-a-trustee) covers the trade-offs.
 
 ## Planning for incapacity
 
@@ -62,7 +62,7 @@ Nora names Joan as healthcare agent and financial agent. She names a trust compa
 
 ## Long-term care costs
 
-Without children nearby, many people plan to pay for care at home or in a facility. Our guide to [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning) explains how people prepare for those costs.
+Without children nearby, many people plan to pay for care at home or in a facility. Our guide to [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) explains how people prepare for those costs.
 
 ## Talk to the people you name
 

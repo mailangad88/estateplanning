@@ -17,7 +17,7 @@ related:
   - guides/beneficiary-designations
   - guides/how-to-make-a-will
   - guides/estate-and-inheritance-taxes
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
 answers:
   - "What wording do I use to name a charity as beneficiary?"
   - "Can I name a charity as a beneficiary of my IRA?"

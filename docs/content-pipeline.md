@@ -92,6 +92,20 @@ A scheduled Claude routine runs once a day. It:
 
 Nothing publishes without a human merge, and nothing is indexed in production without `review: approved`.
 
+### Pacing: the review backlog decides pages or FAQs
+
+`node scripts/queue.mjs next` and `pace` print the mode for the day:
+
+- **New pages** while at most `REVIEW_BACKLOG_LIMIT` (default 150) library pages wait for attorney review.
+- **FAQ mode** above that limit. The routine adds no new URLs. It takes unanswered questions from
+  `content/questions.json` (`coverage: none`, `suggest: faq`) and answers them as FAQ entries on the
+  existing page that fits, a few per page. `claim` refuses new pages in this mode unless `--force` is given
+  for a page Angad asked for.
+
+Every answer still waits for the attorney: an FAQ added to a page rides that page's review. The order the
+attorney reviews in comes from `npm run review:queue` (search value first, grouped into low, medium and high
+risk so low-risk pages can be approved in batches).
+
 ### Why 3 to 4 pages a day, not 50
 
 Google's spam policies treat mass-produced pages made mainly to rank as "scaled content abuse", whoever or
@@ -99,3 +113,25 @@ whatever writes them, and legal pages are held to the highest quality bar ("your
 A few pages a day that each answer something no other page answers, reviewed by the attorney, compound
 into authority. Hundreds of thin pages get a site demoted as a whole. Raise the daily count only when
 reviews keep up and Search Console shows the new pages being indexed and earning impressions.
+
+## 7. Fast attorney review (proposal)
+
+Nothing ranks until the attorney approves it, so review speed sets the pace of the whole site. The queue
+(`npm run review:queue -- --summary`, or the CSV in `/mnt/project-files/seo/review-queue.csv`) orders pages
+by search value and splits them into three risk tiers so the attorney can match effort to risk:
+
+| Tier | What is in it | Suggested review |
+|---|---|---|
+| Low | Definitions, plain comparisons, basics | Batches of 10 to 20: skim for accuracy, approve together |
+| Medium | How a process usually works, with state variation flagged | A few at a time: check the steps and the hedges |
+| High | Costs, tax, Medicaid, disputes, capacity, every state guide | One at a time: check each figure and statute |
+
+Rules that keep this honest:
+
+- The tier is a suggestion for batching. Only the attorney sets `review: approved` (library and state pages)
+  or `reviewed: true` (guides, posts, comparisons). Claude never changes those flags.
+- Approving a page means the attorney stands behind it. Its byline then reads "Reviewed by [attorney] on
+  [date]", and its schema gets `reviewedBy` and `lastReviewed`.
+- Pages that Pangram flags as reading mostly AI-written (`npm run check:ai-text`, needs `PANGRAM_API_KEY`) are
+  marked in the queue. The fix is the attorney adding his own words and examples, not paraphrasing.
+- High-value first: the first 50 rows of the queue are the pages most likely to rank in the first months.

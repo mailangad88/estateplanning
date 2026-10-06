@@ -9,7 +9,7 @@ import { firm } from "@/config/firm";
 import type { MoneyPageData, Block } from "@/content/money-pages";
 import { serviceBoardFor } from "@/config/life-game";
 import { LifeGame } from "@/components/life-game";
-import { abs, breadcrumbLd, howToLd, JsonLd, SITE_URL } from "@/lib/seo";
+import { abs, ATTORNEY_ID, breadcrumbLd, howToLd, JsonLd, SITE_URL } from "@/lib/seo";
 
 const TOKEN = /\[([^\]]+)\]\((\/[^)\s]*)\)|\*\*([^*]+)\*\*|(\[(?:Attorney|Flat fee|Firm|Office|Bar number)[^\]]*\])/g;
 
@@ -113,7 +113,8 @@ export function MoneyPage({ page }: { page: MoneyPageData }) {
             "@type": "ProfilePage",
             name: page.h1,
             url: abs(page.path),
-            mainEntity: { "@type": "Person", name: firm.attorneyName, jobTitle: "Attorney", worksFor: { "@type": "LegalService", name: firm.firmLegalName, url: SITE_URL } },
+            // The attorney Person is defined once in the site-wide graph; reference it so there is one entity.
+            mainEntity: { "@id": ATTORNEY_ID },
           }
         : {
             "@context": "https://schema.org",

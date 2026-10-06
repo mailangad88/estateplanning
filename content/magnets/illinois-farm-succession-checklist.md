@@ -14,11 +14,11 @@ pages: 5
 tag: il_farm_succession_checklist
 sequence: B
 related:
-  - guides/business-succession-planning
+  - learn/business-owners/business-succession-planning
   - guides/estate-and-inheritance-taxes
   - life-events/retirement
-  - guides/revocable-living-trust-explained
-  - guides/medicaid-and-long-term-care-planning
+  - learn/trusts/revocable-living-trust
+  - learn/elder-care/medicaid-planning
 reviewed: false
 updated: "2026-10-06"
 ---

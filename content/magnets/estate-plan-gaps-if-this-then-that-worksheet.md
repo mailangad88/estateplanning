@@ -16,7 +16,7 @@ sequence: B
 related:
   - guides/beneficiary-designations
   - guides/funding-your-trust
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
   - tools/beneficiary-audit
 reviewed: false
 updated: "2026-10-06"

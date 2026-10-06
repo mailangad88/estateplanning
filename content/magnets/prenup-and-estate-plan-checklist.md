@@ -17,7 +17,7 @@ related:
   - life-events/getting-married
   - guides/beneficiary-designations
   - guides/estate-planning-for-blended-families
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
   - checklists/beneficiary-designation-audit
 answers:
   - "Does a prenup replace estate planning?"

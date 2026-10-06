@@ -14,10 +14,10 @@ pages: 5
 tag: pet_trust_guide
 sequence: B
 related:
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
   - guides/how-to-make-a-will
   - guides/powers-of-attorney
-  - guides/digital-assets-estate-planning
+  - learn/digital-assets/digital-assets-in-your-estate-plan
 answers:
   - "Is a pet trust part of estate planning?"
   - "Can I leave money to a pet in my will?"

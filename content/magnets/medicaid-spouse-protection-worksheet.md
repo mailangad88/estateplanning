@@ -14,7 +14,7 @@ pages: 6
 tag: medicaid_spouse_protection
 sequence: B
 related:
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - tools/medicaid-savings-runway
   - life-events/caring-for-aging-parents
   - guides/estate-and-inheritance-taxes
@@ -130,4 +130,4 @@ The healthy spouse should have a will or trust that leaves assets to a trust for
 
 ## Next step
 
-Use the [Medicaid savings runway tool](/tools/medicaid-savings-runway) to see how long savings last, then read the [Medicaid and long-term care planning guide](/guides/medicaid-and-long-term-care-planning).
+Use the [Medicaid savings runway tool](/tools/medicaid-savings-runway) to see how long savings last, then read the [Medicaid and long-term care planning guide](/learn/elder-care/medicaid-planning).

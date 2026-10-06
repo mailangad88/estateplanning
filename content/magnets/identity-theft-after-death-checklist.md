@@ -89,7 +89,7 @@ Keep copies of everything you send.
 ## Step 6: Close or freeze accounts
 
 - [ ] Notify banks, card issuers and lenders of the death. Ask each to mark the account as deceased
-- [ ] Cancel credit cards after paying or documenting the balances. See [what happens to debt when someone dies](/blog/what-happens-to-debt-when-someone-dies)
+- [ ] Cancel credit cards after paying or documenting the balances. See [what happens to debt when someone dies](/learn/probate/dealing-with-debts-in-probate)
 - [ ] Stop automatic payments that should not continue
 - [ ] Remove the deceased as an authorized user on any account you hold
 - [ ] Close or memorialize online accounts. See [digital accounts after death](/free/digital-accounts-after-death-checklist)

@@ -14,7 +14,7 @@ pages: 5
 tag: digital_accounts_after_death
 sequence: G
 related:
-  - guides/digital-assets-estate-planning
+  - learn/digital-assets/digital-assets-in-your-estate-plan
   - checklists/digital-assets-inventory
   - checklists/first-30-days-after-a-death
   - life-events/death-of-a-parent
@@ -131,7 +131,7 @@ Closed accounts and old profiles can be used by thieves. See the [identity theft
 
 ## Planning for your own accounts
 
-This list is easier when someone has planned ahead. Keep an inventory of accounts and say who can act. See [digital assets and estate planning](/guides/digital-assets-estate-planning).
+This list is easier when someone has planned ahead. Keep an inventory of accounts and say who can act. See [digital assets and estate planning](/learn/digital-assets/digital-assets-in-your-estate-plan).
 
 ## When to talk to an attorney
 

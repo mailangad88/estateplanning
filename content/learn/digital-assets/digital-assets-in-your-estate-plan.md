@@ -21,6 +21,10 @@ faqs:
     a: "No. A will is generally filed with the court and can become a public record, and it is not read until after death, which may be too late to help. Instead, name the person in your will and keep access details in a password manager or a secure written location that your executor can find."
   - q: "Do digital assets go through probate?"
     a: "Digital assets that you own, such as a domain name, cryptocurrency held in your name or a business website, are part of your estate and may require probate if they have no beneficiary. Accounts that only license content to you, like a streaming account, often end at your death under the terms of service."
+  - q: "Can my family get into my phone after I die?"
+    a: "Sometimes, but it can be very hard. Phones are encrypted, and manufacturers may not open them without a passcode. Some phones let you add a legacy contact who can request access to stored data."
+  - q: "What happens to cryptocurrency if no one has the keys?"
+    a: "It is usually lost for good. Unlike a bank, there is often no company that can reset access. That is why crypto owners typically leave clear, secure instructions for finding their wallet and keys."
 related:
   - "digital-assets"
   - "digital-assets/passwords-and-access"
@@ -62,7 +66,7 @@ State variations exist, and federal law on privacy and stored communications sti
 
 ## How do you build a digital asset plan?
 
-A good plan has five parts, and you can finish a first version in an afternoon.
+A good plan has six parts, and you can finish a first version in an afternoon.
 
 ### 1. Make an inventory
 
@@ -92,6 +96,12 @@ Set up the legacy options that exist, for instance Apple's Legacy Contact, Googl
 
 Store account access in a password manager and arrange emergency access for a trusted person, or keep a sealed written copy in a safe place. Our article on [passwords, password managers and two-factor authentication](/learn/digital-assets/passwords-and-access) goes through how to do this without creating new risks.
 
+### 6. Plan for phones and cryptocurrency
+
+Phones are usually encrypted, and manufacturers may not unlock them without a passcode. Some phones let you add a legacy contact who can request access to stored data. Write down how to unlock your main devices, and keep that note somewhere secure.
+
+Cryptocurrency is often controlled by private keys or seed phrases. If no one can find them, the value is usually lost. Many owners leave sealed, secure instructions that explain where the wallet is and how to reach the keys, and they avoid writing the keys into any document that could become public. If you hold crypto through an exchange, check whether it allows a beneficiary or has a death claim process.
+
 ## What should go in your documents?
 
 Your documents should name who may act, define digital assets broadly and state your preferences. Common language includes the authority to access, manage, copy, transfer and close accounts and devices, and an explicit statement that you consent to the disclosure of the content of electronic communications to your fiduciary.
@@ -114,8 +124,16 @@ Most problems come from missing information rather than complicated law.
 - **Assuming a beneficiary can simply log in,** which may breach a service's terms and the law.
 - **Leaving cryptocurrency without recovery information,** which can mean it is lost forever. See [cryptocurrency and estate planning](/learn/digital-assets/cryptocurrency-inheritance).
 - **Never updating the list** after changing banks, phones or providers.
+- **Forgetting auto-pay subscriptions,** which keep charging after death.
+- **Not planning for incapacity,** when online banking and business accounts still need managing.
 
 For example, Elaine, 61, keeps all her tax records in cloud storage under a Gmail address. She names her daughter as her agent and executor and adds a digital assets clause to both documents. She sets up Google's Inactive Account Manager to share her Drive with her daughter after 6 months of inactivity, and she adds a one-page inventory to her estate planning binder. Her daughter will not have to guess where anything is.
+
+## An example with a small online business
+
+Derek, 58, runs an online store that sells hand-made furniture. He also has 20 years of family photos in the cloud and some cryptocurrency on a hardware wallet. He lists every account and marks which are business and which are personal. He names his wife as legacy contact on his phone and photo account and sets up emergency access in his password manager.
+
+He has his attorney add digital access language to his will, trust and power of attorney. He stores the wallet's seed phrase in a sealed envelope in a home safe his wife can open. He also gives his business partner admin access to the store's accounts now, so orders keep shipping if he is ever in the hospital.
 
 ## How often should you update the plan?
 
@@ -124,6 +142,14 @@ Review the inventory every year and after any major change, such as a new phone,
 ## Who pays for the work of managing digital assets?
 
 The estate does. A fiduciary can use estate funds to pay for reasonable costs, such as a locksmith for a device, a data recovery service or a technician. Keep receipts.
+
+## Questions to ask an attorney
+
+- Does my state's law on fiduciary access to digital assets apply to me, and how?
+- What digital access language should go in my will, trust and power of attorney?
+- Can I name a separate digital executor?
+- How should I leave instructions for cryptocurrency without risking theft?
+- How do I transfer an online business if I die or become incapacitated?
 
 ## How we can help
 

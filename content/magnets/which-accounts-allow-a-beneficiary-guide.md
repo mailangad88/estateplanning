@@ -16,8 +16,8 @@ sequence: B
 diagram: TodPodTransfers
 related:
   - guides/beneficiary-designations
-  - guides/transfer-on-death-and-payable-on-death
-  - compare/probate-vs-non-probate-assets
+  - learn/beneficiary-designations/payable-on-death-and-transfer-on-death-accounts
+  - learn/probate/probate-vs-non-probate-assets
   - checklists/asset-and-account-inventory
 reviewed: false
 updated: "2026-10-06"

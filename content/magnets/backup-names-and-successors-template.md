@@ -14,8 +14,8 @@ pages: 6
 tag: backup_names_template
 sequence: B
 related:
-  - guides/choosing-an-executor
-  - guides/choosing-a-trustee
+  - learn/wills/choosing-an-executor
+  - learn/trusts/choosing-a-trustee
   - guides/powers-of-attorney
   - guides/guardianship-for-minor-children
   - tools/guardian-picker

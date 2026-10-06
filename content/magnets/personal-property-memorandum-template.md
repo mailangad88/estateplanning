@@ -17,7 +17,7 @@ related:
   - guides/how-to-make-a-will
   - guides/what-makes-a-will-valid
   - checklists/letter-of-instruction-outline
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
 answers:
   - "How do I leave a specific item to a specific person?"
 reviewed: false

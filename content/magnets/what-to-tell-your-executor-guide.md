@@ -14,7 +14,7 @@ pages: 5
 tag: executor_briefing_guide
 sequence: B
 related:
-  - guides/choosing-an-executor
+  - learn/wills/choosing-an-executor
   - checklists/letter-of-instruction-outline
   - checklists/important-contacts-list
   - guides/settling-an-estate-step-by-step
@@ -126,7 +126,7 @@ Executors face questions about fairness. If you plan to divide things unequally,
 
 ## Practical limits of the job
 
-Your executor generally must follow the will and state law, not your verbal wishes. They may need court approval for some steps, and can usually be reimbursed for estate expenses. Many states permit a fee for the work. Read the [choosing an executor guide](/guides/choosing-an-executor) for the duties in more detail.
+Your executor generally must follow the will and state law, not your verbal wishes. They may need court approval for some steps, and can usually be reimbursed for estate expenses. Many states permit a fee for the work. Read the [choosing an executor guide](/learn/wills/choosing-an-executor) for the duties in more detail.
 
 ## Keep it current
 

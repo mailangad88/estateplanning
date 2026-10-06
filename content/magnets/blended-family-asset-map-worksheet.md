@@ -113,7 +113,7 @@ Answer separately first, then compare.
 | Reduce fights | Neutral trustee, written explanations, family meeting |
 | Include stepchildren | Specific gifts in a will or trust |
 
-A neutral trustee, such as a professional or a trusted friend, can reduce tension when a spouse and children have different interests. See [choosing a trustee](/guides/choosing-a-trustee) and [estate planning for blended families](/guides/estate-planning-for-blended-families).
+A neutral trustee, such as a professional or a trusted friend, can reduce tension when a spouse and children have different interests. See [choosing a trustee](/learn/trusts/choosing-a-trustee) and [estate planning for blended families](/guides/estate-planning-for-blended-families).
 
 ## Step 7: Next actions
 

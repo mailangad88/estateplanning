@@ -15,7 +15,7 @@ tag: family_check_in_kit
 sequence: B
 related:
   - checklists/annual-estate-plan-review
-  - guides/updating-your-estate-plan
+  - learn/basics/when-to-update-your-estate-plan
   - checklists/beneficiary-designation-audit
   - tools/plan-review-reminder
 answers:

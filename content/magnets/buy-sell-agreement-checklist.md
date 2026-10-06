@@ -14,7 +14,7 @@ pages: 5
 tag: buy_sell_checklist
 sequence: B
 related:
-  - guides/business-succession-planning
+  - learn/business-owners/business-succession-planning
   - life-events/starting-a-business
   - guides/beneficiary-designations
   - tools/life-insurance-needs

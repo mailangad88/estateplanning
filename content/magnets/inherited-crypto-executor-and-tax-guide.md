@@ -30,7 +30,7 @@ answers:
   - "What if my executor does not understand crypto?"
   - "What if my heirs cannot find my crypto?"
 related:
-  - guides/digital-assets-estate-planning
+  - learn/digital-assets/digital-assets-in-your-estate-plan
   - guides/settling-an-estate-step-by-step
   - checklists/first-30-days-after-a-death
   - tools/estate-tax-estimator
@@ -131,4 +131,4 @@ Hire someone who does. A crypto-literate accountant, an attorney and perhaps a c
 
 ## Next step
 
-For planning your own holdings, read [digital assets and estate planning](/guides/digital-assets-estate-planning) and the [crypto access plan](/free/crypto-and-digital-money-access-plan). To talk to an attorney, start at [our plan finder](/plan-finder).
+For planning your own holdings, read [digital assets and estate planning](/learn/digital-assets/digital-assets-in-your-estate-plan) and the [crypto access plan](/free/crypto-and-digital-money-access-plan). To talk to an attorney, start at [our plan finder](/plan-finder).

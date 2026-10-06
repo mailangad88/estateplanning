@@ -14,7 +14,7 @@ pages: 4
 tag: creditor_death_letters
 sequence: G
 related:
-  - blog/what-happens-to-debt-when-someone-dies
+  - learn/probate/dealing-with-debts-in-probate
   - guides/settling-an-estate-step-by-step
   - guides/how-probate-works
   - blog/what-happens-to-a-mortgage-when-the-owner-dies

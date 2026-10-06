@@ -32,7 +32,7 @@ answers:
 related:
   - guides/what-makes-a-will-valid
   - guides/how-to-make-a-will
-  - guides/what-happens-if-you-die-without-a-will
+  - learn/wills/dying-without-a-will
   - checklists/annual-estate-plan-review
 reviewed: false
 updated: "2026-10-06"

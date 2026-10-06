@@ -28,7 +28,7 @@ answers:
   - "Is a gift of LLC interests subject to gift tax?"
 related:
   - guides/estate-and-inheritance-taxes
-  - guides/business-succession-planning
+  - learn/business-owners/business-succession-planning
   - tools/estate-tax-estimator
   - tools/state-death-tax-checker
 reviewed: false

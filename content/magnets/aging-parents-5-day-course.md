@@ -16,7 +16,7 @@ sequence: B
 related:
   - life-events/caring-for-aging-parents
   - guides/powers-of-attorney
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
   - guides/healthcare-directives-and-living-wills
   - checklists/important-contacts-list
 answers:
@@ -114,7 +114,7 @@ Start by learning your parent's wishes:
 - What matters most about medical care?
 - Who should be involved in decisions?
 
-Then look at the options and costs: home care, assisted living, memory care and nursing homes. Medicare generally does not cover long-term custodial care. Medicaid may help for those who qualify, and the rules differ by state. The [Medicaid and long-term care planning guide](/guides/medicaid-and-long-term-care-planning) explains the basics.
+Then look at the options and costs: home care, assisted living, memory care and nursing homes. Medicare generally does not cover long-term custodial care. Medicaid may help for those who qualify, and the rules differ by state. The [Medicaid and long-term care planning guide](/learn/elder-care/medicaid-planning) explains the basics.
 
 Medicaid looks back at past gifts, commonly for 60 months <!-- verify --> in most states, though California differs. Giving assets away without advice can cause a penalty. The [look-back date tool](/tools/medicaid-lookback-date) can help you understand it.
 

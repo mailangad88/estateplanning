@@ -14,8 +14,8 @@ pages: 5
 tag: il_living_trust_guide
 sequence: B
 related:
-  - guides/revocable-living-trust-explained
-  - compare/will-vs-trust
+  - learn/trusts/revocable-living-trust
+  - learn/trusts/will-vs-trust
   - guides/funding-your-trust
   - checklists/trust-funding-checklist
   - tools/will-or-trust

@@ -31,7 +31,7 @@ answers:
   - "What is a digital executor?"
   - "Should I name a separate digital executor?"
 related:
-  - guides/digital-assets-estate-planning
+  - learn/digital-assets/digital-assets-in-your-estate-plan
   - guides/how-to-make-a-will
   - guides/powers-of-attorney
   - checklists/digital-assets-inventory
@@ -125,4 +125,4 @@ A password in a will is a bad idea, because the will is a public record, and wil
 
 ## Next step
 
-Fill in the [digital asset inventory workbook](/free/digital-asset-inventory-workbook), then read [digital assets and estate planning](/guides/digital-assets-estate-planning). To talk to an Illinois attorney, start at [our plan finder](/plan-finder).
+Fill in the [digital asset inventory workbook](/free/digital-asset-inventory-workbook), then read [digital assets and estate planning](/learn/digital-assets/digital-assets-in-your-estate-plan). To talk to an Illinois attorney, start at [our plan finder](/plan-finder).

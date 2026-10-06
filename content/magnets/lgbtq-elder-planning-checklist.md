@@ -18,7 +18,7 @@ related:
   - guides/healthcare-directives-and-living-wills
   - checklists/funeral-and-burial-wishes
   - life-events/caring-for-aging-parents
-  - guides/medicaid-and-long-term-care-planning
+  - learn/elder-care/medicaid-planning
 answers:
   - "What estate planning do I need if I am LGBTQ?"
 reviewed: false
@@ -76,7 +76,7 @@ Long-term care can be a point of concern. Some people fear returning to the clos
 
 ## Part 5: Money and benefits
 
-- [ ] Married couples generally have equal access to Social Security and Medicaid spousal protections. Learn how a spouse's income and assets are counted before long-term care. See [Medicaid and long-term care planning](/guides/medicaid-and-long-term-care-planning).
+- [ ] Married couples generally have equal access to Social Security and Medicaid spousal protections. Learn how a spouse's income and assets are counted before long-term care. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).
 - [ ] Unmarried partners generally do not receive survivor benefits. Plan accordingly.
 - [ ] Check pension survivor options and whether a named partner is allowed.
 - [ ] Consider long-term care insurance, and ask how the insurer treats domestic partners.

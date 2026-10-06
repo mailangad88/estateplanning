@@ -16,7 +16,7 @@ sequence: B
 diagram: BlendedFamilyPlan
 related:
   - guides/estate-planning-for-blended-families
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
   - compare/joint-ownership-vs-trust
   - compare/transfer-on-death-deed-vs-trust
 answers:
@@ -97,7 +97,7 @@ The person with the right to live there often pays property taxes, insurance and
 
 ## What if your spouse needs care
 
-If a spouse moves to a nursing home, the house may become a Medicaid issue. A house that your spouse owns outright may be countable once the other spouse is gone. A trust that holds the house for their lifetime may be treated differently. See /guides/medicaid-and-long-term-care-planning. Rules vary by state.
+If a spouse moves to a nursing home, the house may become a Medicaid issue. A house that your spouse owns outright may be countable once the other spouse is gone. A trust that holds the house for their lifetime may be treated differently. See /learn/elder-care/medicaid-planning. Rules vary by state.
 
 ## Trigger table
 

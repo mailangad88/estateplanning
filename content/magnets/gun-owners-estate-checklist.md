@@ -14,9 +14,9 @@ pages: 5
 tag: gun_owner_estate_checklist
 sequence: B
 related:
-  - guides/what-is-estate-planning
+  - learn/basics/what-is-estate-planning
   - checklists/asset-and-account-inventory
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
   - guides/settling-an-estate-step-by-step
 answers:
   - "How do I dispose of a deceased person's firearms?"

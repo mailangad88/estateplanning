@@ -30,8 +30,8 @@ answers:
   - "How do I leave a piano or antique to a specific person?"
 related:
   - guides/how-to-make-a-will
-  - compare/probate-vs-non-probate-assets
-  - guides/what-happens-if-you-die-without-a-will
+  - learn/probate/probate-vs-non-probate-assets
+  - learn/wills/dying-without-a-will
   - checklists/asset-and-account-inventory
 reviewed: false
 updated: "2026-10-06"
@@ -107,11 +107,11 @@ Add a backup recipient in case the first one has died. Say who pays for shipping
 
 ## Who gets belongings with no will
 
-If you die without a will, state law says who inherits, usually in the order of spouse, children, parents, then siblings and more distant relatives. Illinois law is in 755 ILCS 5/2-1. <!-- verify: Illinois intestacy order for a spouse with and without descendants --> The family then divides personal belongings, with no instructions about who gets the ring or the piano. See [what happens if you die without a will](/guides/what-happens-if-you-die-without-a-will).
+If you die without a will, state law says who inherits, usually in the order of spouse, children, parents, then siblings and more distant relatives. Illinois law is in 755 ILCS 5/2-1. <!-- verify: Illinois intestacy order for a spouse with and without descendants --> The family then divides personal belongings, with no instructions about who gets the ring or the piano. See [what happens if you die without a will](/learn/wills/dying-without-a-will).
 
 ## Property in another state
 
-Real property in another state usually needs to be handled under that state's law, and sometimes a second probate case. Tangible items kept in another state raise the same question. A trust can avoid the second case. See [probate vs non-probate assets](/compare/probate-vs-non-probate-assets).
+Real property in another state usually needs to be handled under that state's law, and sometimes a second probate case. Tangible items kept in another state raise the same question. A trust can avoid the second case. See [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets).
 
 ## Common mistakes
 

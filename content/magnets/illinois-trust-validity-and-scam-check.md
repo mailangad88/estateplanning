@@ -15,10 +15,10 @@ pages: 6
 tag: il_trust_validity_scam_check
 sequence: B
 related:
-  - guides/revocable-living-trust-explained
+  - learn/trusts/revocable-living-trust
   - guides/funding-your-trust
   - compare/online-will-vs-estate-attorney
-  - compare/will-vs-trust
+  - learn/trusts/will-vs-trust
 reviewed: false
 updated: "2026-10-06"
 answers:
@@ -131,4 +131,4 @@ In Illinois, the Trust Code sets a limit for challenging a revocable trust after
 
 ## Next step
 
-Read [revocable living trusts explained](/guides/revocable-living-trust-explained) and use the [trust funding checklist](/free/trust-funding-checklist). You can also start at [our plan finder](/plan-finder).
+Read [revocable living trusts explained](/learn/trusts/revocable-living-trust) and use the [trust funding checklist](/free/trust-funding-checklist). You can also start at [our plan finder](/plan-finder).

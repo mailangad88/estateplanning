@@ -21,6 +21,8 @@ faqs:
     a: "No. They avoid probate, not tax. The balance still counts in your gross estate, though for 2026 the federal estate tax only applies to estates above $15 million per person."
   - q: "What if my POD beneficiary dies before me?"
     a: "If you named no contingent beneficiary, the account usually becomes part of your estate and goes through probate. Many banks and brokers let you name several beneficiaries and successors, so use that option."
+  - q: "Is a transfer-on-death deed available in every state?"
+    a: "No. Many states allow transfer-on-death deeds for real estate, but some do not, and the rules for signing and recording differ. Ask an attorney licensed in the state where the property is located."
 related:
   - "beneficiary-designations"
   - "beneficiary-designations/transfer-on-death-deed"
@@ -46,6 +48,19 @@ While you are alive, you own the money outright. You can deposit, withdraw, chan
 A transfer-on-death account is the same idea for investments. Nearly every state has adopted a version of the Uniform TOD Security Registration Act, which lets brokerage firms register stocks, bonds, mutual funds, and brokerage accounts in a way that passes to a named person at death. The beneficiary typically opens an account in their own name and the firm moves the assets over, without a sale. The beneficiary receives the benefit of the stepped-up value of the assets at death; our article on [step-up in basis](/learn/estate-tax/step-up-in-basis) explains why that matters.
 
 Real estate has its own version, covered in [transfer-on-death deeds for real estate](/learn/beneficiary-designations/transfer-on-death-deed). Retirement accounts and life insurance use beneficiary forms, covered in [retirement account beneficiaries](/learn/beneficiary-designations/retirement-account-beneficiaries).
+
+## What other assets can have a TOD or POD designation?
+
+Some other assets work in a similar way, though the rules depend on the state and the asset.
+
+| Asset | Common option | Availability |
+|---|---|---|
+| Savings bonds | Co-owner or beneficiary | Federal rules apply |
+| Vehicles | TOD title | Available in some states |
+| Real estate | Transfer-on-death deed, sometimes called a beneficiary deed | Available in many states, not all |
+| Retirement accounts and life insurance | Beneficiary designation | Standard |
+
+Because rules vary, especially for cars and real estate, check what your state allows before planning around it. A car with a TOD title can go to the child who needs it, for example. See [transfer-on-death deeds for real estate](/learn/beneficiary-designations/transfer-on-death-deed).
 
 ## Why use POD or TOD?
 
@@ -88,9 +103,35 @@ If you name "my three kids" on an account and one child dies before you, the sur
 
 A child under 18 cannot collect directly, so the bank or broker may require a court-supervised guardian. A beneficiary who receives public benefits could lose eligibility. In both cases a trust is safer, and you can name it as the POD or TOD beneficiary if the institution allows it. See [naming a trust as beneficiary](/learn/beneficiary-designations/naming-a-trust-as-beneficiary).
 
+### No help if you become incapacitated
+
+A POD or TOD beneficiary has no authority over the account while you are alive. If you cannot manage your money, they cannot step in. You still need a [durable power of attorney](/learn/power-of-attorney/durable-financial-power-of-attorney) for that.
+
+### Uneven results across accounts
+
+If you name different children on different accounts, one account may grow and another may shrink. The children may end up with very different amounts. Naming the same people in equal shares on every account, or using a trust, avoids this.
+
+### Co-owned property
+
+A TOD deed usually works only on your share. Joint ownership rules can override it. See [joint ownership vs. trust](/compare/joint-ownership-vs-trust).
+
 ### Forgotten and out-of-date forms
 
 Banks merge, accounts get renewed, and beneficiary records can be lost. Ask for a written confirmation every few years.
+
+## How do POD and TOD compare with a living trust?
+
+Both avoid probate, but they work differently.
+
+| Feature | POD / TOD | Living trust |
+|---|---|---|
+| Cost to set up | Usually free or low | Attorney fees |
+| Handles incapacity | No | Yes |
+| Can delay or stagger gifts | No, the beneficiary gets it outright | Yes |
+| Good for minor beneficiaries | Usually not | Yes |
+| Coordinating many assets | Each one is separate | One set of instructions |
+
+For real estate in particular, see [transfer-on-death deed vs. trust](/compare/transfer-on-death-deed-vs-trust).
 
 ## How do I set up a POD or TOD designation?
 
@@ -108,6 +149,14 @@ If you have a [revocable living trust](/learn/trusts/revocable-living-trust), ma
 Claiming is usually simple, which is the point. The beneficiary contacts the bank or brokerage, sends a certified death certificate and a copy of photo ID, and completes the institution's claim form. For a POD account, the bank often pays within days. For a TOD brokerage account, the beneficiary typically opens an account in their own name, and the firm re-registers the securities there. Joint POD beneficiaries each receive their own share. If a beneficiary cannot be found or has died with no backup, the institution may hold the funds until a court or an executor tells it where to send them. A short list of your accounts and the people named, kept with your will, helps your executor and your beneficiaries know what to look for.
 
 For the bigger picture, see [guide to beneficiary designations](/learn/beneficiary-designations).
+
+## Questions to ask an attorney
+
+- Does my state allow transfer-on-death deeds and vehicle titles?
+- Are TOD and POD designations enough for my situation, or would a trust work better?
+- How do these designations interact with my will?
+- Can creditors or Medicaid reach these assets after my death in my state?
+- What should I do if a beneficiary needs protection, such as a minor or a person with a disability?
 
 ## How we can help
 

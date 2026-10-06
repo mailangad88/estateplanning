@@ -14,10 +14,10 @@ pages: 6
 tag: minor_children_trust
 sequence: B
 related:
-  - guides/leaving-money-to-minors
+  - learn/guardianship/leaving-money-to-minors
   - guides/guardianship-for-minor-children
   - life-events/new-baby
-  - guides/choosing-a-trustee
+  - learn/trusts/choosing-a-trustee
   - tools/guardian-fund-calculator
 diagram: MoneyForMinors
 answers:
@@ -89,7 +89,7 @@ Look for the person who will be honest, organized and willing to say no. They do
 - **Third choice or corporate trustee:** ______
 - **Should a co-trustee watch the main one?** ______
 
-Consider a bank or trust company as a co-trustee if the amount is large or the family is complicated. See [choosing a trustee](/guides/choosing-a-trustee).
+Consider a bank or trust company as a co-trustee if the amount is large or the family is complicated. See [choosing a trustee](/learn/trusts/choosing-a-trustee).
 
 ## Decision 4: What can trust money pay for?
 
@@ -156,7 +156,7 @@ Annual gifts can also be placed in the trust, within the $19,000 annual exclusio
 
 ## Next step
 
-Ready to set it up? [Book a consult](/plan-finder). The [guide on leaving money to minors](/guides/leaving-money-to-minors) explains the alternatives to a trust.
+Ready to set it up? [Book a consult](/plan-finder). The [guide on leaving money to minors](/learn/guardianship/leaving-money-to-minors) explains the alternatives to a trust.
 
 ## Sources
 

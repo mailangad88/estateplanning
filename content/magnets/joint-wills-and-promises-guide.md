@@ -18,7 +18,7 @@ related:
   - guides/estate-planning-for-blended-families
   - guides/how-to-make-a-will
   - guides/what-makes-a-will-valid
-  - compare/will-vs-trust
+  - learn/trusts/will-vs-trust
 answers:
   - "What is the difference between joint wills and mutual wills?"
   - "What is a contract to make a will?"
@@ -61,7 +61,7 @@ A joint will is rare today and often causes confusion about whether the survivor
 | Joint trust, survivor is trustee and has the power to amend | Can change the trust unless the trust says it is locked |
 | Separate trust, locked at first death | Cannot change the first spouse's trust |
 
-Most trusts for couples say the plan becomes irrevocable at the first death. Others do not. Read the clause titled "amendment" or "irrevocability." If your spouse can change your share of the trust after you die, your children may be left out. See /compare/will-vs-trust.
+Most trusts for couples say the plan becomes irrevocable at the first death. Others do not. Read the clause titled "amendment" or "irrevocability." If your spouse can change your share of the trust after you die, your children may be left out. See /learn/trusts/will-vs-trust.
 
 ## A promise is not a plan
 

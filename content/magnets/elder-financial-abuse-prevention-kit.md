@@ -16,8 +16,8 @@ sequence: B
 related:
   - guides/powers-of-attorney
   - life-events/caring-for-aging-parents
-  - guides/choosing-a-trustee
-  - guides/medicaid-and-long-term-care-planning
+  - learn/trusts/choosing-a-trustee
+  - learn/elder-care/medicaid-planning
 answers:
   - "What are the signs of elder financial abuse?"
   - "How do I protect an elderly parent from scams?"
@@ -135,7 +135,7 @@ Technology and paperwork can reduce risk without taking away independence.
 - [ ] A **durable power of attorney** can be a safeguard, because the agent has a legal duty to act for the principal. It can also be a risk if the wrong person is chosen. See [powers of attorney](/guides/powers-of-attorney).
 - [ ] Ask about naming **two agents who must act together**, or an agent with a **co-agent or monitor** who receives account statements.
 - [ ] Add duties such as keeping records and giving yearly accountings.
-- [ ] Consider a **trust** with an independent trustee for larger assets. See [choosing a trustee](/guides/choosing-a-trustee).
+- [ ] Consider a **trust** with an independent trustee for larger assets. See [choosing a trustee](/learn/trusts/choosing-a-trustee).
 
 ## Choosing honest agents
 
