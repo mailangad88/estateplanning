@@ -390,3 +390,9 @@
 .cta :global(.lead-form) :global(.notice) {
   color: var(--muted);
 }
+
+.openTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  margin: 4px 0 12px;
+}

@@ -108,19 +108,18 @@ interface SessionPayload {
 }
 
 interface Deps {
-  usedLinks: Set<string>;
   emailLimiter: RateLimiter;
   sendEmail?: SendEmail;
   baseUrl?: string;
 }
 
 const g = globalThis as unknown as { __epPlanDeps?: Deps };
-const fresh = (): Deps => ({ usedLinks: new Set(), emailLimiter: new RateLimiter(5, 3600_000) });
+const fresh = (): Deps => ({ emailLimiter: new RateLimiter(5, 3600_000) });
 function deps(): Deps {
   return (g.__epPlanDeps ??= fresh());
 }
 
-/** Swap the mailer or limiter (tests). Resets the used-link memory. */
+/** Swap the mailer or limiter (tests). Used links live in the database (plan_link_uses), not here. */
 export function configureFamilyPlan(overrides: Partial<Deps> = {}): Deps {
   g.__epPlanDeps = { ...fresh(), ...overrides };
   return g.__epPlanDeps;
@@ -172,13 +171,30 @@ export async function startPlanSignIn(
     await (d.sendEmail ?? consoleSendEmail)(
       email,
       "Your family plan link",
-      `Use this link to open and save your family plan. It works once and expires in 30 minutes.\n\n${base}/api/my-plan/link?token=${token}\n\nIf you did not ask for this, you can ignore this email. Nothing has been saved.`,
+      `Use this link to open and save your family plan. It works once and expires in 30 minutes.\n\n${base}/my-plan/open?token=${token}\n\nIf you did not ask for this, you can ignore this email. Nothing has been saved.`,
     );
   } catch (e) {
     console.error("family plan email failed", e instanceof Error ? e.message : "unknown error");
   }
   await audit(db, "system", { action: "family_plan.link_requested", resourceType: "family_plan", resourceId: "email_link", at: now });
   return { ok: true };
+}
+
+/**
+ * Marks a link id used. The insert fails when the id is already there, in this instance or any other,
+ * so whoever inserts first wins and every later attempt is refused. Any other failure also refuses
+ * (fail closed): the visitor can ask for a new link.
+ */
+export async function consumeLink(db: Db, jti: string, now = new Date()): Promise<boolean> {
+  try {
+    await db.planLinkUses.insert({ id: jti, usedAt: now.toISOString() });
+    return true;
+  } catch (e) {
+    const code = (e as { code?: string }).code;
+    const msg = e instanceof Error ? e.message : "";
+    if (code !== "23505" && !msg.startsWith("duplicate id")) console.error("family plan link check failed", msg || "unknown error");
+    return false;
+  }
 }
 
 const plannerActor = (planId: string): AuditActor => ({ userId: planId, role: "planner" });
@@ -193,12 +209,11 @@ export async function completePlanSignIn(
   now = new Date(),
 ): Promise<{ planId: string; sessionToken: string; created: boolean } | null> {
   const p = readToken<LinkPayload>("plan_link", token);
-  const d = deps();
-  if (!p || typeof p.eh !== "string" || typeof p.jti !== "string" || Math.floor(now.getTime() / 1000) >= p.exp || d.usedLinks.has(p.jti)) {
+  const valid = !!p && typeof p.eh === "string" && typeof p.jti === "string" && Math.floor(now.getTime() / 1000) < p.exp;
+  if (!p || !valid || !(await consumeLink(db, p.jti, now))) {
     await audit(db, "system", { action: "family_plan.link_rejected", resourceType: "family_plan", resourceId: "email_link", at: now });
     return null;
   }
-  d.usedLinks.add(p.jti);
   const at = now.toISOString();
   const consent = { version: p.cv, at: p.cat };
   let plan = (await db.familyPlans.list(undefined, { emailHash: p.eh }))[0];

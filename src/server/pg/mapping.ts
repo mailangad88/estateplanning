@@ -262,6 +262,7 @@ export const TABLES = {
     table: "family_plan_bodies",
     columns: [t("id", "id"), t("ciphertext", "ciphertext"), ts("updatedAt", "updated_at")],
   },
+  planLinkUses: { table: "plan_link_uses", columns: [t("id", "id"), ts("usedAt", "used_at")] },
   audit: {
     table: "audit_events",
     columns: [

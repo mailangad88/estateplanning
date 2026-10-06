@@ -564,3 +564,9 @@ export interface FamilyPlanBodyRecord {
   ciphertext: string;
   updatedAt: string;
 }
+
+/** A family plan sign-in link that has been used. `id` is the link's jti; inserting it twice fails, which is what makes links single-use across instances. */
+export interface PlanLinkUse {
+  id: string;
+  usedAt: string;
+}

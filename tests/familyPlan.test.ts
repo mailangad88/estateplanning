@@ -30,6 +30,7 @@ import { acceptInvite, inviteClient } from "@/server/services/clientPortal";
 import {
   completePlanSignIn,
   configureFamilyPlan,
+  consumeLink,
   decryptPlanBody,
   deleteOwnPlan,
   encryptPlanBody,
@@ -365,7 +366,7 @@ describe("sign-in with an emailed link", () => {
 
     const done = await signIn("New@X.test");
     expect(sent[0].to).toBe("new@x.test");
-    expect(sent[0].text).toContain("https://site.test/api/my-plan/link?token=");
+    expect(sent[0].text).toContain("https://site.test/my-plan/open?token=");
     expect(done.created).toBe(true);
     const stored = (await db.familyPlans.get(done.planId))!;
     expect(stored.consent).toEqual({ version: FAMILY_PLAN_CONSENT_VERSION, at: NOW.toISOString() });
@@ -389,6 +390,20 @@ describe("sign-in with an emailed link", () => {
     expect(second.planId).toBe(first.planId);
     expect(second.created).toBe(false);
     expect(await db.familyPlans.list()).toHaveLength(2); // this one and the seeded demo plan
+  });
+
+  it("a link id is consumed once, and stays used for a fresh instance sharing the store", async () => {
+    expect(await consumeLink(db, "jti-1", NOW)).toBe(true);
+    expect(await consumeLink(db, "jti-1", NOW)).toBe(false);
+    expect(await db.planLinkUses.get("jti-1")).toEqual({ id: "jti-1", usedAt: NOW.toISOString() });
+
+    await startPlanSignIn(db, { email: "multi@x.test", consent: true, consentVersion: FAMILY_PLAN_CONSENT_VERSION }, NOW);
+    const token = tokenFrom(sent[0].text);
+    expect(await completePlanSignIn(db, token, NOW)).not.toBeNull();
+    // another instance: no in-process memory, same database
+    configureFamilyPlan({ sendEmail: async () => undefined });
+    expect(await completePlanSignIn(db, token, NOW)).toBeNull();
+    expect(await db.audit.list((e) => e.action === "family_plan.link_rejected")).toHaveLength(1);
   });
 
   it("rate limits link emails per address", async () => {

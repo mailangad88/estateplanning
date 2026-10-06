@@ -8,7 +8,7 @@ const TABLES = [
   "users", "firms", "lawyers", "persons", "leads", "assignments", "documents", "comments", "activities",
   "consults", "engagements", "payments", "tasks", "fee_rule_versions", "billable_events", "invoices",
   "sequence_enrollments", "suppressions", "fact_verifications", "template_approvals", "crm_deliveries", "seminars", "partners", "partner_gifts", "partner_referrals",
-  "conversion_events", "review_requests", "family_plans", "family_plan_bodies", "audit_events",
+  "conversion_events", "review_requests", "family_plans", "family_plan_bodies", "plan_link_uses", "audit_events",
 ];
 
 describe("db/schema.sql", () => {

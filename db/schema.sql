@@ -525,6 +525,13 @@ CREATE TABLE family_plan_bodies (
   updated_at  timestamptz NOT NULL
 );
 
+-- Used family plan sign-in links (the link token's jti). Inserting an id that is already here fails, so a link
+-- works once even with several app instances. No personal data; only the service role touches it.
+CREATE TABLE plan_link_uses (
+  id       text PRIMARY KEY,
+  used_at  timestamptz NOT NULL
+);
+
 -- Hash-chained, append-only (see src/server/audit/log.ts).
 CREATE TABLE audit_events (
   id            text PRIMARY KEY,
@@ -738,6 +745,7 @@ ALTER TABLE conversion_events    ENABLE ROW LEVEL SECURITY;  ALTER TABLE convers
 ALTER TABLE review_requests      ENABLE ROW LEVEL SECURITY;  ALTER TABLE review_requests      FORCE ROW LEVEL SECURITY;
 ALTER TABLE family_plans         ENABLE ROW LEVEL SECURITY;  ALTER TABLE family_plans         FORCE ROW LEVEL SECURITY;
 ALTER TABLE family_plan_bodies   ENABLE ROW LEVEL SECURITY;  ALTER TABLE family_plan_bodies   FORCE ROW LEVEL SECURITY;
+ALTER TABLE plan_link_uses       ENABLE ROW LEVEL SECURITY;  ALTER TABLE plan_link_uses       FORCE ROW LEVEL SECURITY;
 ALTER TABLE audit_events         ENABLE ROW LEVEL SECURITY;  ALTER TABLE audit_events         FORCE ROW LEVEL SECURITY;
 
 -- Workers (public intake form, e-sign webhooks, nurture engine, routing) are trusted
@@ -768,6 +776,7 @@ CREATE POLICY service_all ON conversion_events    FOR ALL TO app_service USING (
 CREATE POLICY service_all ON review_requests      FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON family_plans         FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON family_plan_bodies   FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON plan_link_uses       FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_read ON fee_rule_versions   FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON fact_verifications  FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON template_approvals FOR SELECT TO app_service USING (true);
@@ -1013,6 +1022,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, leads, a
 GRANT SELECT, INSERT, UPDATE ON crm_deliveries TO app_service;
 GRANT SELECT, INSERT, UPDATE ON seminars TO app_service;
 GRANT SELECT, INSERT, UPDATE, DELETE ON family_plans, family_plan_bodies TO app_service;
+GRANT SELECT, INSERT ON plan_link_uses TO app_service; -- app_user has no grant at all
 GRANT SELECT, INSERT, UPDATE, DELETE ON partners, partner_referrals TO app_service;
 GRANT SELECT, INSERT ON partner_gifts TO app_service;
 GRANT SELECT, INSERT, UPDATE ON crm_deliveries, conversion_events, review_requests TO app_service;

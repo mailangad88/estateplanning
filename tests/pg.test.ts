@@ -18,7 +18,8 @@ import type { SequenceEnrollment, Suppression, TemplateApproval } from "@/server
 import type { AutomationState } from "@/server/db";
 import type { FactVerification } from "@/lib/facts";
 import { familyPlanBodySchema, summarizePlan } from "@/lib/familyPlan";
-import type { FamilyPlan, FamilyPlanBodyRecord } from "@/server/types";
+import type { FamilyPlan, FamilyPlanBodyRecord, PlanLinkUse } from "@/server/types";
+import { consumeLink } from "@/server/services/familyPlan";
 
 const SCHEMA = readFileSync(join(__dirname, "../db/schema.sql"), "utf8");
 
@@ -215,6 +216,7 @@ const fixtures = {
     sectionsDone: 0, gapCount: 1, consent: { version: "family-plan-2026-10", at: T0 }, prefilledFrom: ["lead"], createdAt: T0, updatedAt: T0,
   } satisfies Required<FamilyPlan>,
   familyPlanBodies: { id: "fp_1", ciphertext: "v1.iv.tag.ct", updatedAt: T0 } satisfies Required<FamilyPlanBodyRecord>,
+  planLinkUses: { id: "jti-fixture", usedAt: T0 } satisfies Required<PlanLinkUse>,
 };
 
 describe("every TS field maps to a column", () => {
@@ -667,6 +669,19 @@ suite("postgres integration", () => {
     expect(await service.familyPlans.get("fp_1")).toBeUndefined();
     await service.familyPlans.remove("fp_2");
     expect(await service.familyPlanBodies.get("fp_2")).toBeUndefined(); // ON DELETE CASCADE
+  });
+
+  maybe("plan_link_uses: a link id is consumed once across connections; app_user cannot see or write it", async () => {
+    expect(await consumeLink(service, "jti-pg", new Date())).toBe(true);
+    const other = createPgDb({ pool, session: "service" }); // stands in for another app instance
+    expect(await consumeLink(other, "jti-pg", new Date())).toBe(false);
+    const racers = await Promise.all(Array.from({ length: 5 }, () => consumeLink(createPgDb({ pool, session: "service" }), "jti-race", new Date())));
+    expect(racers.filter(Boolean)).toHaveLength(1);
+    for (const s of [{ userId: "u-admin", role: "platform_admin" }, { userId: "fp_1", role: "planner" }] as const) {
+      await expect(as(s).planLinkUses.list()).rejects.toThrow(/permission denied/);
+      await expect(as(s).planLinkUses.insert({ id: "jti-x", usedAt: T0 })).rejects.toThrow(/permission denied/);
+    }
+    await expect(service.planLinkUses.update("jti-pg", { usedAt: T0 })).rejects.toThrow();
   });
 
   maybe("audit_events cannot be updated or deleted", async () => {
