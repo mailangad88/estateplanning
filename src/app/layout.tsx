@@ -5,6 +5,7 @@ import "./globals.css";
 import "@/components/visuals/visuals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://familyplanlaw.com"),
   title: `${firm.brandName} | Estate planning with a real attorney`,
   description: "Wills, trusts and powers of attorney, explained plainly by an estate planning attorney.",
 };
