@@ -610,6 +610,7 @@ export interface PlanSession {
   ipPrefix?: string;
   /** true when this sign-in used a recovery code */
   viaRecoveryCode?: boolean;
+}
 
 /**
  * The attorney's approval of one site page for publication (src/server/content/pageApprovals.ts).
