@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ContactBar from "@/components/ContactBar";
+import ExitOffer from "@/components/ExitOffer";
+import SourceTracker from "@/components/SourceTracker";
 import { firm } from "@/config/firm";
 import "./globals.css";
 
@@ -15,7 +18,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="site">
           <div className="container">
             <Link href="/" className="brand">{firm.brandName}</Link>
-            <a href={`tel:${firm.phone.replace(/\D/g, "")}`}>Call {firm.phone}</a>
+            <nav className="site-nav">
+              <Link href="/tools">Free tools</Link>
+              <Link href="/resources">Guides</Link>
+              <a href={`tel:${firm.phone.replace(/\D/g, "")}`}>Call {firm.phone}</a>
+            </nav>
           </div>
         </header>
         <main className="container">{children}</main>
@@ -32,6 +39,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </p>
           </div>
         </footer>
+        <ContactBar />
+        <ExitOffer />
+        <SourceTracker />
       </body>
     </html>
   );

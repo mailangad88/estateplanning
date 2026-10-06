@@ -10,6 +10,10 @@ export const firm = {
   attorneyName: "[Attorney name]", // PLACEHOLDER
   barNumber: "[Bar number]", // PLACEHOLDER
   phone: "(000) 000-0000", // PLACEHOLDER tracked number
+  /** Number visitors can text. Must be registered for business texting (10DLC) before launch. Null hides the Text button. */
+  textNumber: "(000) 000-0000" as string | null, // PLACEHOLDER
+  /** Office hours shown next to the call button, so nobody expects an instant answer at 2am. */
+  hours: "Mon to Fri, 9am to 6pm", // PLACEHOLDER
   officeAddress: "[Office address]", // PLACEHOLDER, required for attorney advertising and CAN-SPAM
   /**
    * Structure the platform operates under. "in_firm" (Model A in the plan) means

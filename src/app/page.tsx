@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ProbateVsTrustAnimation from "@/components/ProbateVsTrustAnimation";
 import { firm } from "@/config/firm";
 
 export default function Home() {
@@ -10,8 +11,31 @@ export default function Home() {
         an attorney. Then, if you want, book a call with {firm.attorneyName}.
       </p>
       <p>
-        <Link className="button" href="/plan-finder">Start the plan finder</Link>
+        <Link className="button" href="/plan-finder">Start the plan finder</Link>{" "}
+        <Link className="button secondary" href="/intake">Book a consult</Link>
       </p>
+
+      <h2>Free tools</h2>
+      <ul className="card-grid">
+        <li className="card">
+          <strong>How ready is your plan?</strong>
+          <p>Ten questions, instant score.</p>
+          <Link className="button small" href="/tools/readiness">Check my score</Link>
+        </li>
+        <li className="card">
+          <strong>What could probate cost?</strong>
+          <p>A rough range for your state.</p>
+          <Link className="button small" href="/tools/probate-cost">Estimate it</Link>
+        </li>
+        <li className="card">
+          <strong>Will or trust?</strong>
+          <p>See which way your answers point.</p>
+          <Link className="button small" href="/tools/will-or-trust">Compare</Link>
+        </li>
+      </ul>
+
+      <h2>Probate or a trust, in ten seconds</h2>
+      <ProbateVsTrustAnimation />
 
       <h2>How it works</h2>
       <ol className="steps">
@@ -29,6 +53,12 @@ export default function Home() {
         <li>Business succession</li>
         <li>Settling a loved one&apos;s estate</li>
       </ul>
+
+      <h2>Free guides</h2>
+      <p>
+        Printable checklists for new parents, caregivers, families after a loss and anyone getting started.{" "}
+        <Link href="/resources">Browse the guides</Link>.
+      </p>
     </>
   );
 }

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { scoreLead, segmentTags } from "@/lib/scoring";
+import { captureTags, scoreLead, segmentTags } from "@/lib/scoring";
 
 describe("scoreLead", () => {
   it("marks out-of-state leads as not a fit", () => {
@@ -27,5 +27,35 @@ describe("scoreLead", () => {
 describe("segmentTags", () => {
   it("tags parents of minors and homeowners", () => {
     expect(segmentTags({ children: "minors", ownsHome: "yes" })).toEqual(["new_parent", "homeowner"]);
+  });
+});
+
+describe("capture tools", () => {
+  const base = { state: "TX", servedStates: ["TX"], answers: {}, smsConsent: false };
+
+  it("makes a callback request hot", () => {
+    expect(scoreLead({ ...base, capture: { tool: "callback" } }).tier).toBe("hot");
+  });
+
+  it("adds intent for calculators and repeat visits", () => {
+    const guide = scoreLead({ ...base, capture: { tool: "guide" } }).score;
+    const calc = scoreLead({ ...base, capture: { tool: "cost_calculator" } }).score;
+    const repeat = scoreLead({ ...base, capture: { tool: "guide" }, priorTools: ["readiness_score", "will_vs_trust"] }).score;
+    expect(calc).toBeGreaterThan(guide);
+    expect(repeat).toBe(guide + 6);
+  });
+
+  it("counts a calculator estate value as complexity", () => {
+    const small = scoreLead({ ...base, capture: { tool: "cost_calculator", result: { estateValue: 300_000 } } }).score;
+    const large = scoreLead({ ...base, capture: { tool: "cost_calculator", result: { estateValue: 2_000_000 } } }).score;
+    expect(large).toBeGreaterThan(small);
+  });
+
+  it("tags the tool and resource", () => {
+    expect(captureTags({ tool: "guide", resource: "new-parents-guide" }, ["new_parent", "general"])).toEqual([
+      "tool:guide",
+      "resource:new-parents-guide",
+      "new_parent",
+    ]);
   });
 });
