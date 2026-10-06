@@ -62,6 +62,36 @@ export const TOOLS: ToolInfo[] = [
     description: "Check whether your existing will or trust is due for a review, and set a free yearly reminder.",
     answer: "Plans are commonly reviewed every 3 to 5 years and after any major life change such as a birth, marriage, divorce, move or death.",
   },
+  {
+    slug: "state-death-tax-checker",
+    title: "Estate and inheritance tax checker by state",
+    description: "Check federal estate tax, your state's estate tax and any inheritance tax your heirs could owe, with as-of dates and sources.",
+    answer: "Only about a dozen states plus DC have an estate tax, and five (Kentucky, Maryland, Nebraska, New Jersey and Pennsylvania) have an inheritance tax. Federal estate tax starts above the per-person exemption, so most families owe none.",
+  },
+  {
+    slug: "small-estate-checker",
+    title: "Small estate checker: can the family skip full probate?",
+    description: "See whether a loved one's estate may qualify for a small estate affidavit or a simplified court process in their state.",
+    answer: "Many states let a small estate skip full probate, but the limits, waiting periods and real estate rules differ widely. For example, California's affidavit limit is $208,850 for deaths since April 2025, and real estate generally needs a separate route.",
+  },
+  {
+    slug: "medicaid-savings-runway",
+    title: "How long will our savings last in a nursing home?",
+    description: "Estimate how many months savings could cover care before reaching your state's Medicaid asset limit, with the spouse-at-home protection for married couples.",
+    answer: "Divide what you can spend down by the monthly gap between care costs and income. A shortfall of $6,500 a month uses up $150,000 in roughly two years. What can be protected legally is a question for an elder law attorney, because gifts in the five-year look-back can cause penalties.",
+  },
+  {
+    slug: "beneficiary-audit",
+    title: "Beneficiary audit",
+    description: "List your accounts and who is named on each, as categories only, and get a flagged list of gaps to fix.",
+    answer: "A beneficiary form usually overrides your will, so an ex-spouse, a minor child or a blank form can send money where you don't intend. Check each form after any life change.",
+  },
+  {
+    slug: "guardian-picker",
+    title: "Guardian picker: compare who could raise your children",
+    description: "Compare up to three possible guardians on the priorities you choose, with notes on backups, money and the conversation to have.",
+    answer: "Rate each person against what matters most to you. The best fit is a starting point for a conversation, not a verdict. Many parents also name a backup, and a court makes the final decision, so put your choice in a signed will.",
+  },
 
 ];
 /**
@@ -132,3 +162,23 @@ export const CA_STATUTORY_TIERS: { upTo: number; rate: number }[] = [
   { upTo: 10_000_000, rate: 0.01 },
   { upTo: 25_000_000, rate: 0.005 },
 ];
+
+/**
+ * The calculator or decision tool that best fits an article, matched on words in its path.
+ * First match wins, so the more specific patterns come first.
+ */
+const TOOL_BY_PATH: [RegExp, string][] = [
+  [/small-estate|skip-probate|bank-account-after-death/, "small-estate-checker"],
+  [/inheritance-tax|estate-tax|death-tax/, "state-death-tax-checker"],
+  [/medicaid|long-term-care|nursing-home|aging-parent/, "medicaid-savings-runway"],
+  [/beneficiar|retirement-accounts|payable-on-death/, "beneficiary-audit"],
+  [/guardian|new-baby|minor/, "guardian-picker"],
+  [/probate/, "probate-cost-estimator"],
+  [/will-vs-trust|living-trust|revocable/, "will-or-trust"],
+  [/life-insurance/, "life-insurance-needs"],
+];
+
+export function toolFor(path: string): ToolInfo | undefined {
+  const hit = TOOL_BY_PATH.find(([re]) => re.test(path));
+  return hit ? TOOLS.find((t) => t.slug === hit[1]) : undefined;
+}

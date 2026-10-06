@@ -11,8 +11,8 @@ import { estimateProbate } from "@/lib/tools/costEstimate";
 const usd = (n: number) => n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
 const GUIDE = "probate-vs-trust-guide";
 
-export default function ProbateCost() {
-  const [state, setState] = useState("");
+export default function ProbateCost({ initialState }: { initialState?: string } = {}) {
+  const [state, setState] = useState(initialState ?? "");
   const [value, setValue] = useState(600_000);
   const [otherStates, setOtherStates] = useState(0);
   const [done, setDone] = useState<LeadResponse | null>(null);

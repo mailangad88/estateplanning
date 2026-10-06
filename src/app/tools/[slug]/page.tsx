@@ -12,6 +12,12 @@ import Readiness from "@/components/tools/Readiness";
 import ExecutorPlanner from "@/components/tools/ExecutorPlanner";
 import ReviewReminder from "@/components/tools/ReviewReminder";
 import WillOrTrust from "@/components/tools/WillOrTrust";
+import DeathTax from "@/components/tools/DeathTax";
+import SmallEstate from "@/components/tools/SmallEstate";
+import MedicaidRunway from "@/components/tools/MedicaidRunway";
+import BeneficiaryAudit from "@/components/tools/BeneficiaryAudit";
+import GuardianPicker from "@/components/tools/GuardianPicker";
+import StatePrefill from "@/components/tools/StatePrefill";
 
 const COMPONENTS: Record<string, React.ComponentType> = {
   "estate-tax-estimator": EstateTax,
@@ -23,6 +29,19 @@ const COMPONENTS: Record<string, React.ComponentType> = {
   "executor-workload": ExecutorPlanner,
   "plan-review-reminder": ReviewReminder,
   "will-or-trust": WillOrTrust,
+  "state-death-tax-checker": DeathTax,
+  "small-estate-checker": SmallEstate,
+  "medicaid-savings-runway": MedicaidRunway,
+  "beneficiary-audit": BeneficiaryAudit,
+  "guardian-picker": GuardianPicker,
+};
+
+/** Tools whose first question is the state; they accept ?state=XX (linked from the state guides). */
+const STATE_AWARE: Record<string, React.ComponentType<{ initialState?: string }>> = {
+  "probate-cost-estimator": ProbateCost,
+  "state-death-tax-checker": DeathTax,
+  "small-estate-checker": SmallEstate,
+  "medicaid-savings-runway": MedicaidRunway,
 };
 
 type Props = { params: Promise<{ slug: string }> };
@@ -48,7 +67,7 @@ export default async function ToolPage({ params }: Props) {
       <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: "/tools", label: "Tools" }, { label: t.title }]} />
       <h1>{t.title}</h1>
       <div className="answer"><strong>In short</strong>{t.answer}</div>
-      <Tool />
+      {STATE_AWARE[slug] ? <StatePrefill tool={STATE_AWARE[slug]} /> : <Tool />}
       <p className="notice">Estimates are for education only and are not legal, tax or financial advice.</p>
       <h2>More free tools</h2>
       <CardGrid items={TOOLS.filter((x) => x.slug !== slug).slice(0, 4).map((x) => ({ href: `/tools/${x.slug}`, title: x.title, description: x.description }))} />

@@ -8,6 +8,7 @@ import { PageMedia } from "@/components/visuals/PageMedia";
 import MagnetOptIn from "@/components/MagnetOptIn";
 import { MAGNET_FORMATS, magnetsFor, pillarOf } from "@/lib/magnets";
 import { quizzesFor } from "@/lib/quizzes";
+import { toolFor } from "@/config/tools";
 
 export interface RelatedLink {
   href: string;
@@ -39,6 +40,7 @@ export function ArticlePage(props: {
   const offers = magnetsFor(props.path);
   const lead = offers[0];
   const quiz = quizzesFor(props.path, pillarOf(props.path))[0];
+  const tool = toolFor(props.path);
   const crumbs = [
     { name: "Home", path: "/" },
     props.section,
@@ -65,6 +67,11 @@ export function ArticlePage(props: {
       {quiz && (
         <p className="quiz-teaser no-print">
           <span className="tag">2-minute quiz</span> <Link href={`/quizzes/${quiz.slug}`}>{quiz.title}</Link>
+        </p>
+      )}
+      {tool && (
+        <p className="quiz-teaser no-print">
+          <span className="tag">Free tool</span> <Link href={`/tools/${tool.slug}`}>{tool.title}</Link>
         </p>
       )}
       <Prose html={props.html} />
