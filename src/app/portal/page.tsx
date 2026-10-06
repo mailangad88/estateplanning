@@ -113,6 +113,7 @@ function Nav({ actor }: { actor: Actor }) {
   if (can(actor, "work_intake_queue")) links.push(["/portal/queue", "Intake queue"]);
   if (can(actor, "view_reports")) links.push(["/admin/analytics", "Analytics"]);
   if (can(actor, "manage_fee_rules")) links.push(["/admin/fees", "Fee rules"]);
+  if (can(actor, "verify_facts")) links.push(["/portal/facts", "Fact verification"]);
   if (!links.length) return null;
   return <p>{links.map(([href, text], i) => <span key={href}>{i > 0 && " · "}<Link href={href}>{text}</Link></span>)}</p>;
 }
