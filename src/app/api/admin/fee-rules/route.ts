@@ -17,5 +17,5 @@ export async function POST(request: Request) {
   return withActor(request, async ({ db, actor }) => {
     const { rule, reason } = await readJson<{ rule: FeeRuleInput; reason: string }>(request);
     return await saveFeeRule(db, actor, rule, String(reason ?? ""), firm.structure);
-  });
+  }, { scopedWrites: true });
 }

@@ -11,7 +11,16 @@ import type { Actor } from "@/server/types";
 
 export type Handler = (ctx: { db: Db; actor: Actor; request: Request }) => Promise<unknown> | unknown;
 
-export async function withActor(request: Request, handler: Handler): Promise<Response> {
+export interface WithActorOptions {
+  /**
+   * Run writes inside the user's row-level security session too. For tables only the
+   * acting user's role may write (fee rules, fact approvals), so the database rejects a
+   * write the policy check somehow let through.
+   */
+  scopedWrites?: boolean;
+}
+
+export async function withActor(request: Request, handler: Handler, options: WithActorOptions = {}): Promise<Response> {
   const db = await getDb();
   const token = cookieFromHeader(request.headers.get("cookie"));
   const actor = await actorFromSession(db, token);
@@ -22,7 +31,8 @@ export async function withActor(request: Request, handler: Handler): Promise<Res
     // the same visibility rules as policy.ts. Writes are checked by policy.ts in each
     // service and run as the service role, because several (accepting an offer,
     // routing to the next lawyer, recording audit events) touch rows the user cannot read.
-    const scoped = request.method === "GET" || request.method === "HEAD" ? scopedDb(db, actor) : db;
+    const read = request.method === "GET" || request.method === "HEAD";
+    const scoped = read || options.scopedWrites ? scopedDb(db, actor) : db;
     const result = await handler({ db: scoped, actor, request });
     const res = result instanceof Response ? result : NextResponse.json(result ?? { ok: true });
     const touched = touchSession(token);

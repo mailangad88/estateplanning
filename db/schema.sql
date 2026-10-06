@@ -533,7 +533,6 @@ CREATE POLICY service_all ON sequence_enrollments FOR ALL TO app_service USING (
 CREATE POLICY service_all ON suppressions         FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_read ON fee_rule_versions   FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON fact_verifications  FOR SELECT TO app_service USING (true);
-CREATE POLICY service_append ON fact_verifications FOR INSERT TO app_service WITH CHECK (true);
 CREATE POLICY service_read ON invoices            FOR SELECT TO app_service USING (true);
 CREATE POLICY service_write_invoices ON invoices  FOR INSERT TO app_service WITH CHECK (true);
 CREATE POLICY service_append ON audit_events      FOR INSERT TO app_service WITH CHECK (true);
@@ -707,7 +706,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, leads, a
   activities, consults, engagements, tasks, billable_events, sequence_enrollments, suppressions TO app_service;
 GRANT SELECT, INSERT ON invoices TO app_service;
 GRANT SELECT ON fee_rule_versions TO app_service;
-GRANT SELECT, INSERT ON fact_verifications TO app_service;
+GRANT SELECT ON fact_verifications TO app_service; -- approvals are written in the approver's own session
 GRANT INSERT ON audit_events TO app_service;
 
 -- The automation runner reads the audit log as its event feed (ids and actions only).

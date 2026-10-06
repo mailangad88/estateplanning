@@ -242,7 +242,10 @@ let admin: Pool; // superuser, for seeding schema and raw checks
 let pool: Pool;
 let service: PgDb;
 const as = (s: PgSession) => createPgDb({ pool, session: s });
-const platformDb = { get feeRuleVersions() { return as({ userId: "u-admin", role: "platform_admin" }).feeRuleVersions; } };
+const platformDb = {
+  get feeRuleVersions() { return as({ userId: "u-admin", role: "platform_admin" }).feeRuleVersions; },
+  get factVerifications() { return as({ userId: "u-admin", role: "platform_admin" }).factVerifications; },
+};
 
 beforeAll(async () => {
   try {
@@ -292,8 +295,8 @@ suite("postgres integration", () => {
     for (const [key, fx] of Object.entries(fixtures)) {
       const coll = (service as unknown as Record<string, { get(id: string): Promise<unknown>; insert(x: unknown): Promise<unknown> }>)[key];
       if (!["users", "firms", "lawyers", "persons", "leads"].includes(key)) {
-        // fee rule versions are written by platform admins only; app_service can read them
-        await (key === "feeRuleVersions" ? platformDb.feeRuleVersions : coll).insert(fx as never);
+        // fee rules and fact approvals are written in a platform admin session only; app_service can read them
+        await (key === "feeRuleVersions" ? platformDb.feeRuleVersions : key === "factVerifications" ? platformDb.factVerifications : coll).insert(fx as never);
       }
       expect(await coll.get((fx as { id: string }).id), key).toEqual(fx);
     }
