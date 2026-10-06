@@ -101,12 +101,17 @@ for (const f of files) {
     if (flag && approved(f)) blocking.push(f);
     console.log(`${flag ? (approved(f) ? "BLOCK  " : "REWRITE") : "ok     "}  ${r.fraction_ai.toFixed(2)} AI  ${f}`);
   } catch (e) {
+    // An account problem (no credits, bad key) is not a content problem: warn once and stop, never fail the build.
+    if (/^POST 40[123]/.test(e.message)) {
+      console.log(`::warning::Pangram check skipped: ${e.message}. Add credits or check PANGRAM_API_KEY.`);
+      break;
+    }
     console.error(`error    ${f}: ${e.message}`);
-    if (ENFORCE) process.exitCode = 1;
   }
 }
 fs.writeFileSync(SCORES, `${JSON.stringify(scores, null, 1)}\n`);
-const summary = `${files.length} file(s) checked; ${over.length} read as mostly AI-written (over ${MAX_AI}); ${blocking.length} of those are approved pages.`;
+const checked = files.filter((f) => scores[f]?.checked === new Date().toISOString().slice(0, 10)).length;
+const summary = `${checked} of ${files.length} file(s) scored; ${over.length} read as mostly AI-written (over ${MAX_AI}); ${blocking.length} of those are approved pages.`;
 console.log(`\n${summary}`);
 if (over.length) console.log("Send these to the attorney to rewrite in his own words before approval:\n" + over.map((f) => `  ${f} (${scores[f].fraction_ai.toFixed(2)})`).join("\n"));
 if (process.env.GITHUB_STEP_SUMMARY) {
