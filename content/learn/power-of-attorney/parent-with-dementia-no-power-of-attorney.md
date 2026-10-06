@@ -134,6 +134,8 @@ Care for dementia can cost a great deal, and Medicaid may eventually be part of 
 
 Yes. Capacity standards, guardianship names, court procedures and available alternatives vary widely. Check your parent's state, which may not be where you live, through our state guides such as [Florida](/estate-planning/florida) or [New York](/estate-planning/new-york).
 
+If your parent can still sign, [is it too late to make a will?](/learn/what-if/too-late-for-a-will) explains how capacity is judged. For other scenarios like this one, see [what happens if you put off estate planning](/learn/what-if).
+
 ## How we can help
 
 If you are in this situation, an attorney can assess whether your parent can still sign, prepare and supervise the signing, or explain the court route if it is the only one. Our [plan finder](/plan-finder) can point you toward the right documents, or you can book a consultation. Bring whatever you have gathered, even if it is incomplete.

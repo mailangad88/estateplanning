@@ -3948,6 +3948,365 @@
    "priority": 1,
    "status": "queued",
    "source": "keyword-topic-map.md pillar 14"
+  },
+  {
+   "id": "K386",
+   "keyword": "What happens if my ex-spouse is still my beneficiary?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "ex-spouse-still-beneficiary",
+   "priority": 1,
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-06"
+  },
+  {
+   "id": "K387",
+   "keyword": "What happens if there is no beneficiary on a 401(k) or IRA?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "no-beneficiary-named",
+   "priority": 1,
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-06"
+  },
+  {
+   "id": "K388",
+   "keyword": "What happens if there is no beneficiary on a life insurance policy?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "no-beneficiary-named",
+   "priority": 1,
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-06"
+  },
+  {
+   "id": "K389",
+   "keyword": "What happens if I become incapacitated without a power of attorney?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "incapacitated-without-power-of-attorney",
+   "priority": 1,
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-06"
+  },
+  {
+   "id": "K390",
+   "keyword": "What happens if my spouse has a stroke and we have no power of attorney?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "incapacitated-without-power-of-attorney",
+   "priority": 1,
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-06"
+  },
+  {
+   "id": "K391",
+   "keyword": "What happens if you die with an old will?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "outdated-will",
+   "priority": 1,
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-06"
+  },
+  {
+   "id": "K392",
+   "keyword": "What happens if the executor named in my will has died?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "outdated-will",
+   "priority": 1,
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-06"
+  },
+  {
+   "id": "K393",
+   "keyword": "Is it too late to make a will in the hospital?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "too-late-for-a-will",
+   "priority": 1,
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-06"
+  },
+  {
+   "id": "K394",
+   "keyword": "Can someone with dementia make a will?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "too-late-for-a-will",
+   "priority": 1,
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-06"
+  },
+  {
+   "id": "K395",
+   "keyword": "What happens if a living trust was never funded?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "unfunded-trust",
+   "priority": 1,
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-06"
+  },
+  {
+   "id": "K396",
+   "keyword": "What happens if you die without a will?",
+   "intent": "scenario",
+   "cluster": "wills",
+   "slug": "dying-without-a-will",
+   "priority": 1,
+   "status": "covered",
+   "source": "Angad's what-if request (2026-10-06)",
+   "coveredBy": "/learn/wills/dying-without-a-will"
+  },
+  {
+   "id": "K397",
+   "keyword": "What happens if my parent has dementia and no power of attorney?",
+   "intent": "scenario",
+   "cluster": "power-of-attorney",
+   "slug": "parent-with-dementia-no-power-of-attorney",
+   "priority": 1,
+   "status": "covered",
+   "source": "Angad's what-if request (2026-10-06)",
+   "coveredBy": "/learn/power-of-attorney/parent-with-dementia-no-power-of-attorney"
+  },
+  {
+   "id": "K398",
+   "keyword": "What happens to my kids if I die without naming a guardian?",
+   "intent": "scenario",
+   "cluster": "guardianship",
+   "slug": "what-if-no-guardian-named",
+   "priority": 1,
+   "status": "covered",
+   "source": "Angad's what-if request (2026-10-06)",
+   "coveredBy": "/learn/guardianship/what-if-no-guardian-named"
+  },
+  {
+   "id": "K399",
+   "keyword": "What happens if a beneficiary dies before me?",
+   "intent": "scenario",
+   "cluster": "beneficiary-designations",
+   "slug": "contingent-beneficiaries",
+   "priority": 1,
+   "status": "covered",
+   "source": "Angad's what-if request (2026-10-06)",
+   "coveredBy": "/blog/what-happens-if-a-beneficiary-dies-before-you"
+  },
+  {
+   "id": "K400",
+   "keyword": "Who makes medical decisions if I have no healthcare directive?",
+   "intent": "scenario",
+   "cluster": "healthcare-directives",
+   "slug": "no-healthcare-directive",
+   "priority": 1,
+   "status": "covered",
+   "source": "Angad's what-if request (2026-10-06)",
+   "coveredBy": "/blog/who-makes-medical-decisions-if-you-have-no-healthcare-directive"
+  },
+  {
+   "id": "K401",
+   "keyword": "What happens to land passed down without a will?",
+   "intent": "scenario",
+   "cluster": "property-and-assets",
+   "slug": "heirs-property",
+   "priority": 1,
+   "status": "covered",
+   "source": "Angad's what-if request (2026-10-06)",
+   "coveredBy": "/learn/property-and-assets/heirs-property"
+  },
+  {
+   "id": "K402",
+   "keyword": "What happens to my business if I die without a plan?",
+   "intent": "scenario",
+   "cluster": "business-owners",
+   "slug": "llc-ownership-at-death",
+   "priority": 1,
+   "status": "covered",
+   "source": "Angad's what-if request (2026-10-06)",
+   "coveredBy": "/learn/business-owners/llc-ownership-at-death"
+  },
+  {
+   "id": "K403",
+   "keyword": "What happens to crypto if no one has the keys?",
+   "intent": "scenario",
+   "cluster": "digital-assets",
+   "slug": "cryptocurrency-inheritance",
+   "priority": 1,
+   "status": "covered",
+   "source": "Angad's what-if request (2026-10-06)",
+   "coveredBy": "/learn/digital-assets/cryptocurrency-inheritance"
+  },
+  {
+   "id": "K404",
+   "keyword": "What happens to the house if my parent needs a nursing home?",
+   "intent": "scenario",
+   "cluster": "elder-care",
+   "slug": "protecting-your-home-from-nursing-home-costs",
+   "priority": 1,
+   "status": "covered",
+   "source": "Angad's what-if request (2026-10-06)",
+   "coveredBy": "/learn/elder-care/protecting-your-home-from-nursing-home-costs"
+  },
+  {
+   "id": "K405",
+   "keyword": "What happens to stepchildren if a stepparent dies without a will?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "stepchildren-no-will",
+   "priority": 1,
+   "status": "queued",
+   "source": "Angad's what-if request (2026-10-06)"
+  },
+  {
+   "id": "K406",
+   "keyword": "What happens to my partner if we are not married and I die without a will?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "unmarried-partner-no-will",
+   "priority": 1,
+   "status": "queued",
+   "source": "Angad's what-if request (2026-10-06)"
+  },
+  {
+   "id": "K407",
+   "keyword": "What happens if a minor inherits money with no trust?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "minor-inherits-without-trust",
+   "priority": 1,
+   "status": "queued",
+   "source": "Angad's what-if request (2026-10-06)"
+  },
+  {
+   "id": "K408",
+   "keyword": "What happens if the original will cannot be found?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "lost-original-will",
+   "priority": 1,
+   "status": "queued",
+   "source": "Angad's what-if request (2026-10-06)"
+  },
+  {
+   "id": "K409",
+   "keyword": "What happens if someone dies before signing their will?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "unsigned-will",
+   "priority": 2,
+   "status": "queued",
+   "source": "Angad's what-if request (2026-10-06)"
+  },
+  {
+   "id": "K410",
+   "keyword": "What happens if a person on SSI or Medicaid inherits money directly?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "disabled-heir-inherits-directly",
+   "priority": 1,
+   "status": "queued",
+   "source": "Angad's what-if request (2026-10-06)"
+  },
+  {
+   "id": "K411",
+   "keyword": "What happens if siblings inherit a house and cannot agree?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "siblings-inherit-house-disagree",
+   "priority": 1,
+   "status": "queued",
+   "source": "Angad's what-if request (2026-10-06)"
+  },
+  {
+   "id": "K412",
+   "keyword": "What happens if the house is still in my late spouse's name?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "house-in-late-spouses-name",
+   "priority": 2,
+   "status": "queued",
+   "source": "Angad's what-if request (2026-10-06)"
+  },
+  {
+   "id": "K413",
+   "keyword": "What happens if my 18-year-old has a medical emergency and I have no HIPAA release?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "adult-child-emergency-no-hipaa",
+   "priority": 1,
+   "status": "queued",
+   "source": "Angad's what-if request (2026-10-06)"
+  },
+  {
+   "id": "K414",
+   "keyword": "What happens if both parents die without a will?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "both-parents-die-no-will",
+   "priority": 1,
+   "status": "queued",
+   "source": "Angad's what-if request (2026-10-06)"
+  },
+  {
+   "id": "K415",
+   "keyword": "What happens if my spouse dies and I never updated my estate plan?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "spouse-died-plan-not-updated",
+   "priority": 2,
+   "status": "queued",
+   "source": "Angad's what-if request (2026-10-06)"
+  },
+  {
+   "id": "K416",
+   "keyword": "What happens if my only beneficiary is my estate?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "estate-as-beneficiary",
+   "priority": 2,
+   "status": "queued",
+   "source": "Angad's what-if request (2026-10-06)"
+  },
+  {
+   "id": "K417",
+   "keyword": "What happens if you die while a divorce is pending?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "death-during-divorce",
+   "priority": 2,
+   "status": "queued",
+   "source": "Angad's what-if request (2026-10-06)"
+  },
+  {
+   "id": "K418",
+   "keyword": "What happens if my agent under a power of attorney dies or quits?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "power-of-attorney-agent-unavailable",
+   "priority": 2,
+   "status": "queued",
+   "source": "Angad's what-if request (2026-10-06)"
+  },
+  {
+   "id": "K419",
+   "keyword": "What happens if I move to another state and do not update my estate plan?",
+   "intent": "scenario",
+   "cluster": "what-if",
+   "slug": "moved-states-plan-not-updated",
+   "priority": 2,
+   "status": "queued",
+   "source": "Angad's what-if request (2026-10-06)"
   }
  ]
 }

@@ -49,6 +49,37 @@
       ]
     },
     {
+      "slug": "what-if",
+      "name": "What if you wait?",
+      "pillar": "What happens if you put off estate planning: the scenarios families actually face",
+      "articles": [
+        [
+          "ex-spouse-still-beneficiary",
+          "What happens if your ex-spouse is still your beneficiary?"
+        ],
+        [
+          "no-beneficiary-named",
+          "What happens if you never named a beneficiary on a 401(k), IRA or life insurance policy?"
+        ],
+        [
+          "incapacitated-without-power-of-attorney",
+          "What happens if you are incapacitated without a power of attorney?"
+        ],
+        [
+          "outdated-will",
+          "What happens if you die with an outdated will?"
+        ],
+        [
+          "too-late-for-a-will",
+          "Is it too late to make a will? Last-minute wills, capacity and contests"
+        ],
+        [
+          "unfunded-trust",
+          "What happens if you never funded your living trust?"
+        ]
+      ]
+    },
+    {
       "slug": "wills",
       "name": "Wills",
       "pillar": "Wills: what they do, what they don't, and how to make one that holds up",

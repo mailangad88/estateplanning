@@ -176,6 +176,8 @@ State law governs the formalities, such as the number of witnesses and whether a
 
 The right next article depends on where you are. If you are choosing a document type, start with the [durable financial power of attorney](/learn/power-of-attorney/durable-financial-power-of-attorney). If the question is timing, read [springing vs. immediate](/learn/power-of-attorney/springing-vs-immediate-power-of-attorney). If you are deciding who, read [choosing an agent](/learn/power-of-attorney/choosing-a-power-of-attorney-agent). If a family member is already incapacitated and has no documents, read [power of attorney vs. guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship). If you hold a document and need to understand its limits, read [when a power of attorney ends](/learn/power-of-attorney/when-does-power-of-attorney-end), and if an institution is stonewalling you, read [what to do when a bank refuses](/learn/power-of-attorney/bank-refuses-power-of-attorney). For the medical side, continue to our [healthcare directives guide](/learn/healthcare-directives).
 
+If no document is signed in time, read [what happens if you are incapacitated without a power of attorney](/learn/what-if/incapacitated-without-power-of-attorney). It walks through the court process a family faces instead.
+
 ## How we can help
 
 Our attorneys prepare durable financial and healthcare powers of attorney that match your state's rules and your family's situation, and we can review documents you already have. To see which documents you may be missing, use our [plan finder](/plan-finder), or book a consultation when you are ready to talk through who should act for you.
