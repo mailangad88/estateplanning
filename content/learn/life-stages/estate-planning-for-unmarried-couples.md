@@ -104,6 +104,8 @@ Beneficiary designations override your will, so name your partner, with a contin
 
 A cohabitation or property agreement can state who owns what, how shared expenses and the home are handled, and what happens if you separate. It does not replace estate planning, but it can reduce disputes with your partner's family. Many couples treat the agreement and the estate plan as a package.
 
+Couples buying a home together should also read [estate planning when you buy a home](/learn/life-stages/estate-planning-when-you-buy-a-home), since the way you take title decides what the surviving partner receives.
+
 ## How we can help
 
 Unmarried couples often tell us they were not sure whether planning was "worth it" without a marriage. It is, and it is usually a single meeting. Use our [plan finder](/plan-finder) to see which documents fit your household, or book a consultation with an estate planning attorney to coordinate your wills, directives, titles and beneficiary forms. We can also help you compare marriage, registered partnership and a document-based plan without pushing any one of them.

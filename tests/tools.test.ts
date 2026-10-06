@@ -1,5 +1,4 @@
 import { describe, expect, it } from "vitest";
-import { GUIDES, findGuide } from "@/content/guides";
 import { caStatutoryFee, estimateProbate } from "@/lib/tools/costEstimate";
 import { READINESS_ITEMS, scoreReadiness } from "@/lib/tools/readiness";
 import { weighWillVsTrust } from "@/lib/tools/willVsTrust";
@@ -69,13 +68,5 @@ describe("weighWillVsTrust", () => {
 
   it("says either when answers are balanced", () => {
     expect(weighWillVsTrust({ ownsHome: "yes", budgetFirst: "yes" }).lean).toBe("either");
-  });
-});
-
-describe("guides", () => {
-  it("have unique slugs and an attorney questions section", () => {
-    expect(new Set(GUIDES.map((g) => g.slug)).size).toBe(GUIDES.length);
-    for (const g of GUIDES) expect(g.sections.at(-1)?.heading).toMatch(/attorney/i);
-    expect(findGuide("estate-planning-checklist")).toBeDefined();
   });
 });

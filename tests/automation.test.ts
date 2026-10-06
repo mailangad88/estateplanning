@@ -29,10 +29,11 @@ describe("runAutomations", () => {
     expect(r.enrolled).toBeGreaterThanOrEqual(2);
     expect(r.crmSynced).toBe(2);
     expect(r.crmFailures).toBe(0);
-    for (const id of ["lead-0001", "lead-0002"]) {
-      expect(active(id, "speed_to_lead")).toHaveLength(1);
-      expect(db.leads.get(id)!.crmId).toBeTruthy();
-    }
+    expect(active("lead-0001", "speed_to_lead")).toHaveLength(1);
+    // lead-0002 is an estate administration lead: gentle track only, no speed-to-lead texts.
+    expect(active("lead-0002", "grief_support")).toHaveLength(1);
+    expect(active("lead-0002", "speed_to_lead")).toHaveLength(0);
+    for (const id of ["lead-0001", "lead-0002"]) expect(db.leads.get(id)!.crmId).toBeTruthy();
     expect(adapter.count("upsertMatter")).toBe(2);
   });
 

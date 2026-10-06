@@ -89,7 +89,7 @@ Priya, 26, rents an apartment, has a retirement account with a named beneficiary
 
 ## When should you skip DIY and see an attorney?
 
-Move beyond a template if any of these apply:
+Move beyond a template if any of these apply: If price is the worry, [how much a will costs](/learn/wills/how-much-does-a-will-cost) shows typical ranges for each route.
 
 - You own a home or other real estate, especially in more than one state.
 - You own a business or professional practice.

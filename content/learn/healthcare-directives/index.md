@@ -87,6 +87,8 @@ Dementia creates a time-limited opportunity. A person in the early or middle sta
 
 Our article on [planning ahead for dementia](/learn/healthcare-directives/dementia-and-advance-directives) covers capacity, signing order, documentation and long-term care implications, including how powers of attorney connect to [Medicaid planning](/learn/elder-care/medicaid-planning).
 
+Our article on [living will vs. living trust vs. will](/learn/healthcare-directives/living-will-vs-living-trust-vs-will) untangles three similarly named documents, and [does a living will need a notary](/learn/healthcare-directives/does-a-living-will-need-a-notary) explains witness and notary rules before you sign.
+
 ## How do you start the conversation with your family?
 
 The paperwork is the easy part. The conversation is harder and more valuable. A few suggestions:

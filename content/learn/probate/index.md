@@ -113,7 +113,7 @@ An executor who pays heirs before settling valid claims can be personally liable
 
 The executor is the person who makes probate happen. The job includes filing the will, getting appointed, securing property, opening an estate bank account, inventorying assets, notifying creditors and beneficiaries, paying bills and taxes, selling or transferring property and delivering what remains to heirs. Executors owe a [fiduciary duty](/glossary/fiduciary-duty) to the beneficiaries, which means acting honestly and in their interest, keeping records and avoiding conflicts.
 
-The work is manageable for a careful, organized person, especially with an attorney's guidance. It becomes harder when the estate is large, the family is in conflict or the executor lives far away. Many people pick the wrong executor by default, such as the oldest child, rather than the most capable. See [choosing an executor](/learn/wills/choosing-an-executor) for how to decide.
+The work is manageable for a careful, organized person, especially with an attorney's guidance. It becomes harder when the estate is large, the family is in conflict or the executor lives far away. Many people pick the wrong executor by default, such as the oldest child, rather than the most capable. If you are ready to open an estate, [how to file probate](/learn/probate/how-to-file-probate) covers the first filings step by step, and [do I need a probate lawyer?](/learn/probate/do-i-need-a-probate-lawyer) helps you decide how much help to hire. See [choosing an executor](/learn/wills/choosing-an-executor) for how to decide.
 
 ## What about taxes?
 

@@ -113,6 +113,8 @@ Some plans combine the two: a disclaimer trust that the survivor can choose to f
 
 Yes. The survivor can use the DSUE amount to make lifetime gifts, and the IRS treats gifts as using the DSUE first, before the survivor's own exclusion. That can be a smart move when assets are likely to grow, since a gift moves future growth out of the estate. Claire, widowed at 70, has a $4 million DSUE on top of her own exclusion and gives her children a $2 million lake house. The gift is reported on Form 709 and applied to the DSUE first. If she remarries and her new spouse dies, the earlier DSUE could be lost if she has not used it, so the order matters. These strategies are worth discussing with a tax professional before acting.
 
+If your spouse is not a U.S. citizen, the marital deduction rules change; see [estate planning with a non-citizen spouse and QDOTs](/learn/estate-tax/non-citizen-spouse-qdot).
+
 ## How we can help
 
 Portability is easy to miss in the weeks after a death, and the deadline matters. Our attorneys can explain whether a return makes sense for your situation, or help you plan ahead with a trust. Use the [plan finder](/plan-finder) or book a consultation.

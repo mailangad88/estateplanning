@@ -77,6 +77,8 @@ Gifts above the annual exclusion are reported on Form 709 and reduce your $15,00
 
 Before giving significant assets, weigh the other costs. Gifted property keeps your tax basis, so the recipient may owe more capital gains tax than if they had inherited it. Gifts may also be treated as transfers during the Medicaid look-back period, which in most states is 60 months. Our article on the [gift tax annual exclusion](/learn/estate-tax/gift-tax-annual-exclusion) covers 529 plans, gift splitting, and a checklist for deciding whether to give.
 
+For a wider look at lifetime giving, including 529 plans, direct tuition and medical payments, and the Medicaid and basis traps, read [gifting strategies and the gift tax](/learn/estate-tax/gifting-strategies).
+
 ## What is the step-up in basis?
 
 For many families, this rule is worth more than the estate tax exclusion. Basis is the tax starting value of an asset. When someone inherits property, its basis is generally reset to fair market value on the date of death. If the heir sells soon after, little or no capital gain is taxed.
@@ -97,6 +99,8 @@ We cover the election steps, remarriage rules, and a comparison with credit shel
 
 A revocable living trust is a probate tool, not a tax tool. Because you keep control, assets in it are part of your taxable estate and the step-up still applies. Certain irrevocable trusts can take assets out of your taxable estate, such as irrevocable life insurance trusts, but they require giving up control and have their own costs. See [does a trust avoid taxes](/learn/trusts/does-a-trust-avoid-taxes) and [irrevocable trusts](/learn/trusts/irrevocable-trusts) for how the choices compare.
 
+For married couples where one spouse is not a U.S. citizen, the unlimited marital deduction works differently, and a qualified domestic trust may be needed. See [estate planning with a non-citizen spouse and QDOTs](/learn/estate-tax/non-citizen-spouse-qdot).
+
 ## What planning options exist?
 
 The right tools depend on the size of your estate and your state:
@@ -111,6 +115,8 @@ The right tools depend on the size of your estate and your state:
 | Appreciated property | Hold until death for step-up, or sell if it makes sense |
 
 If your estate is large, the generation-skipping transfer tax may also apply to gifts that skip a generation. It has its own exemption, and, as described above, it is not portable between spouses.
+
+Larger estates sometimes add trusts built for a single purpose. An [irrevocable life insurance trust](/learn/estate-tax/irrevocable-life-insurance-trust) keeps policy proceeds out of the taxable estate, and a [charitable remainder trust](/learn/estate-tax/charitable-remainder-trust) pays you income now and gives the remainder to charity. For simpler giving, see [donor-advised funds and qualified charitable distributions](/learn/estate-tax/donor-advised-funds-and-qcds).
 
 Beneficiary forms also feed into the tax picture. Life insurance you own is part of your gross estate, and retirement accounts carry income tax for heirs. Our [beneficiary designation guide](/learn/beneficiary-designations) explains how forms interact with your plan, and [retirement account beneficiaries](/learn/beneficiary-designations/retirement-account-beneficiaries) covers the 10-year rule for inherited IRAs.
 

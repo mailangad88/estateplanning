@@ -3,6 +3,8 @@ import Link from "next/link";
 import SourceTracker from "@/components/SourceTracker";
 import { firm } from "@/config/firm";
 import { ExitIntent, StickyContactBar } from "@/components/capture";
+import { Disclosures } from "@/components/Disclosures";
+import { TrackedPhoneLink } from "@/components/TrackedPhone";
 import { JsonLd, legalServiceLd, SITE_URL } from "@/lib/seo";
 import "./globals.css";
 import "@/components/visuals/visuals.css";
@@ -26,10 +28,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/learn">Library</Link>
               <Link href="/blog">Articles</Link>
               <Link href="/tools">Tools</Link>
+              <Link href="/free">Free downloads</Link>
               <Link href="/checklists">Checklists</Link>
               <Link href="/resources">All resources</Link>
               <Link href="/pricing">Pricing</Link>
-              <a href={`tel:${firm.phone.replace(/\D/g, "")}`}>{firm.phone}</a>
+              <TrackedPhoneLink fallback={firm.phone} />
               <Link href="/plan-finder" className="button">Book a consult</Link>
             </nav>
           </div>
@@ -40,11 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <JsonLd data={legalServiceLd()} />
         <footer className="site">
           <div className="container">
-            <p>
-              Attorney advertising. {firm.firmLegalName}, {firm.officeAddress}. Responsible attorney: {firm.attorneyName}.
-              The information on this site is general education, not legal advice. No attorney-client relationship is
-              formed until an engagement agreement is signed.
-            </p>
+            <Disclosures />
             <p>
               <Link href="/wills">Wills</Link> · <Link href="/living-trusts">Living trusts</Link> · <Link href="/power-of-attorney">Power of attorney</Link> ·{" "}
               <Link href="/healthcare-directives">Healthcare directives</Link> · <Link href="/probate">Probate</Link> ·{" "}

@@ -3,3 +3,4 @@ export { VideoPlayer } from "./VideoPlayer";
 export { videos, getVideo, videosForTopic } from "./videos";
 export { videoObjectJsonLd, siteUrl } from "./schema";
 export type { VideoEntry } from "./types";
+export { EXPLAINER_VIDEO, explainerForVideo } from "./explainerMap";

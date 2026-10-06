@@ -6,7 +6,7 @@ import { TOOLS } from "@/config/tools";
 import { EXPLAINERS } from "@/explainers/data";
 import { getAudiences, getChecklists, getComparisons, getGlossary, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
 
-const STATIC = ["/", "/plan-finder", "/resources", "/pricing", "/about", "/contact", "/guides", "/blog", "/compare", "/life-events", "/estate-planning-for", "/learn", "/estate-planning", "/tools", "/checklists", "/explainers", "/course", "/glossary", "/faq", "/mistakes", "/legal/privacy", "/legal/disclaimer", "/legal/sms-terms", "/legal/how-we-work", "/editorial-policy", "/intake", "/callback", ...Object.values(MONEY_PAGES).map((m) => m.path)];
+const STATIC = ["/free", "/", "/plan-finder", "/resources", "/pricing", "/about", "/contact", "/guides", "/blog", "/compare", "/life-events", "/estate-planning-for", "/learn", "/estate-planning", "/tools", "/checklists", "/explainers", "/course", "/glossary", "/faq", "/mistakes", "/legal/privacy", "/legal/disclaimer", "/legal/sms-terms", "/legal/how-we-work", "/editorial-policy", "/intake", "/callback", ...Object.values(MONEY_PAGES).map((m) => m.path)];
 
 function knownPaths() {
   const s = new Set(STATIC);

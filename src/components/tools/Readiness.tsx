@@ -40,7 +40,7 @@ export default function Readiness() {
             ))}
             <p>
               We will email you a copy, and someone from our intake team may reach out to see if you have questions. You can also{" "}
-              <Link href="/intake">book a consult</Link> or download the <Link href="/resources/estate-planning-checklist">full checklist</Link>.
+              <Link href="/intake">book a consult</Link> or download the <Link href="/free/estate-planning-checklist">full checklist</Link>.
             </p>
           </>
         ) : result.gaps.length > 0 ? (

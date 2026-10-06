@@ -130,11 +130,11 @@ For a closer look, read [do you pay taxes on an inheritance?](/learn/after-a-dea
 
 An inherited house can pass through probate, a trust, a transfer-on-death deed or joint ownership, and the path decides who signs what. Meanwhile it needs insurance, upkeep, tax payments and a plan for the mortgage. Heirs can keep it, sell it, rent it or buy out co-owners.
 
-Rushing to sell or move in is rarely necessary. Our guide to [inheriting a house](/learn/after-a-death/inheriting-a-house) covers insurance for vacant homes, mortgages, siblings who disagree and taxes. If the home is in another state, read about [out-of-state property](/learn/property-and-assets/out-of-state-property).
+Rushing to sell or move in is rarely necessary. Our guide to [inheriting a house](/learn/after-a-death/inheriting-a-house) covers insurance for vacant homes, mortgages, siblings who disagree and taxes. If the home is in another state, read about [out-of-state property](/learn/property-and-assets/out-of-state-property). When the family decides to sell, see [selling inherited property: taxes, timing and who can sign](/learn/after-a-death/selling-inherited-property).
 
 ## What if you think the executor or trustee is doing it wrong?
 
-Beneficiaries have the right to information and honest management. If you are worried, start by asking for an accounting in writing, and consider mediation before a petition. A court can compel information, limit powers or remove a fiduciary who has stolen, neglected the estate or acted in their own interest. Our article on [removing an executor or trustee](/learn/after-a-death/can-an-executor-be-removed) explains the options and the evidence courts look for.
+Beneficiaries have the right to information and honest management. If you are worried, start by asking for an accounting in writing, and consider mediation before a petition. A court can compel information, limit powers or remove a fiduciary who has stolen, neglected the estate or acted in their own interest. Our article on [removing an executor or trustee](/learn/after-a-death/can-an-executor-be-removed) explains the options and the evidence courts look for. Trustees also have a duty to notify and report, which is covered in [does a trustee have to notify beneficiaries and give an accounting?](/learn/after-a-death/trustee-duty-to-inform-and-account)
 
 ## How do digital accounts fit in?
 

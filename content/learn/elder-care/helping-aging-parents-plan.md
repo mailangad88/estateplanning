@@ -105,7 +105,7 @@ Plan for it. The most common conflicts are about who is named, whether one child
 
 ## What about long-term care costs?
 
-Once the basics are signed, ask about how care would be paid. Options include savings, long-term care insurance, home care, assisted living and Medicaid. If a parent may need care within five years, speak with an attorney early about [Medicaid planning](/learn/elder-care/medicaid-planning), the [look-back period](/learn/elder-care/medicaid-look-back-period) and protecting the home. Acting early opens more options. Medicaid rules vary by state, so local advice matters.
+Once the basics are signed, ask about how care would be paid. Options include savings, long-term care insurance, home care, assisted living and Medicaid. If a parent may need care within five years, speak with an attorney early about [Medicaid planning](/learn/elder-care/medicaid-planning), the [look-back period](/learn/elder-care/medicaid-look-back-period) and protecting the home. Acting early opens more options. Medicaid rules vary by state, so local advice matters. If a family member is already providing care, read [paying a family caregiver](/learn/elder-care/paying-a-family-caregiver), and if your parent served in the military, see [VA Aid and Attendance](/learn/elder-care/va-aid-and-attendance).
 
 ## What can you do if your parent has already lost capacity?
 

@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
+import { getChecklists, getComparisons, getGuides, getLifeEvents, getPosts } from "@/lib/content";
 import {
   getAllArticles,
   getBacklinks,
@@ -28,6 +29,13 @@ const validUrls = new Set<string>([
   ...articles.map((a) => a.url),
   ...glossary.map((g) => g.url),
   ...states.map((s) => s.url),
+  // Other collections on the site that library pages may link to.
+  ...getGuides().map((g) => `/guides/${g.slug}`),
+  ...getComparisons().map((c) => `/compare/${c.slug}`),
+  ...getPosts().map((p) => `/blog/${p.slug}`),
+  ...getLifeEvents().map((l) => `/life-events/${l.slug}`),
+  ...getChecklists().map((c) => `/checklists/${c.slug}`),
+  "/guides", "/compare", "/blog", "/life-events", "/checklists", "/tools", "/faq", "/resources", "/pricing", "/about", "/contact",
 ]);
 
 const allPages = [...articles, ...glossary, ...states];
@@ -178,8 +186,8 @@ describe("page quality", () => {
 
 describe("cross-links to the rest of the site", () => {
   it("every mapped guide, comparison, question and life event exists", async () => {
-    const { clusterMapPaths, siteLinksFor } = await import("@/lib/site-links");
-    const resolved = new Set(getClusters().flatMap((c) => siteLinksFor(c.slug).map((l) => l.url)));
+    const { clusterMapPaths, siteLinksFor, toolsFor } = await import("@/lib/site-links");
+    const resolved = new Set(getClusters().flatMap((c) => [...siteLinksFor(c.slug), ...toolsFor(c.slug)].map((l) => l.url)));
     expect(clusterMapPaths().filter((p) => !resolved.has(p))).toEqual([]);
   });
 });

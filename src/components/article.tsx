@@ -4,6 +4,9 @@ import { articleLd, breadcrumbLd, JsonLd } from "@/lib/seo";
 import { Breadcrumbs, Cta, FaqList, Prose, ReviewNote, Toc } from "@/components/ui";
 import { EmailCapture, SensitiveMarker } from "@/components/capture";
 import { libraryLinksFor } from "@/lib/site-links";
+import { PageMedia } from "@/components/visuals/PageMedia";
+import MagnetOptIn from "@/components/MagnetOptIn";
+import { MAGNET_FORMATS, magnetsFor } from "@/lib/magnets";
 
 export interface RelatedLink {
   href: string;
@@ -31,6 +34,9 @@ export function ArticlePage(props: {
   after?: React.ReactNode;
   magnet?: { interest: string; title: string; body: string; cta?: string };
 }) {
+  // Free resources written for this page (or this post's pillar guide) replace the generic email offer.
+  const offers = magnetsFor(props.path);
+  const lead = offers[0];
   const crumbs = [
     { name: "Home", path: "/" },
     props.section,
@@ -52,11 +58,35 @@ export function ArticlePage(props: {
         <p className="lead">{props.description}</p>
       )}
       {props.before}
+      <PageMedia path={props.path} />
       <Toc headings={props.headings} />
       <Prose html={props.html} />
       {props.after}
       <FaqList faqs={props.faqs ?? []} />
-      {props.magnet ? (
+      {lead && !props.sensitive ? (
+        <section className="magnet-callout">
+          <MagnetOptIn
+            magnet={{ slug: lead.slug, title: lead.title, format: lead.format, formatLabel: MAGNET_FORMATS[lead.format], tag: lead.tag, sequence: lead.sequence }}
+            heading={`Free ${MAGNET_FORMATS[lead.format].toLowerCase()}: ${lead.title}`}
+          />
+          {offers.length > 1 && (
+            <>
+              <h2>More free resources on this topic</h2>
+              <ul className="cards">
+                {offers.slice(1).map((o) => (
+                  <li key={o.slug}>
+                    <Link href={`/free/${o.slug}`} className="card-link">
+                      <span className="tag">Free {MAGNET_FORMATS[o.format].toLowerCase()}</span>
+                      <strong>{o.title}</strong>
+                      <span className="card-desc">{o.promise}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+        </section>
+      ) : props.magnet ? (
         <EmailCapture kind="magnet" interest={props.magnet.interest} title={props.magnet.title} body={props.magnet.body} cta={props.magnet.cta} sensitive={props.sensitive} />
       ) : (
         <Cta />

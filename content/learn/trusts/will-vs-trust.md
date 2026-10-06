@@ -113,7 +113,7 @@ If you answered yes to two or more, a trust deserves a serious look. If you answ
 
 ## What does each approach cost?
 
-A will-based plan typically costs less than a trust-based plan, because the trust document is longer and funding takes time. Compare that with probate costs your family may face later, which depend on your state and estate size. Our guide to [estate planning costs](/learn/basics/how-much-does-estate-planning-cost) explains flat fees, hourly rates and DIY risks. If you do choose a trust, expect to spend time [funding it](/learn/trusts/how-to-fund-a-trust), because an unfunded trust does not do its job.
+A will-based plan typically costs less than a trust-based plan, because the trust document is longer and funding takes time. Compare that with probate costs your family may face later, which depend on your state and estate size. Our guide to [estate planning costs](/learn/basics/how-much-does-estate-planning-cost) explains flat fees, hourly rates and DIY risks. If you do choose a trust, expect to spend time [funding it](/learn/trusts/how-to-fund-a-trust), because an unfunded trust does not do its job. For typical price ranges, see [how much a living trust costs](/learn/trusts/how-much-does-a-living-trust-cost) and [how much a will costs](/learn/wills/how-much-does-a-will-cost); to test your own situation, try [do I need a living trust](/learn/trusts/do-i-need-a-living-trust).
 
 ## How we can help
 

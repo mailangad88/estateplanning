@@ -199,6 +199,12 @@ export interface Lead {
   clientChoiceLawyerIds?: string[];
   crmId?: string;
   intakeOwnerId?: string;
+  /** Which site tool or form captured the lead, the resource asked for, and the tool's figures */
+  capture?: { tool: string; resource?: string; result?: Record<string, string | number | boolean> };
+  /** Capture tools this visitor used before, oldest first */
+  priorTools?: string[];
+  /** Browser id used to merge repeat submissions into one person */
+  visitorId?: string;
 }
 
 export type AssignmentStatus = "offered" | "accepted" | "declined" | "expired" | "withdrawn";

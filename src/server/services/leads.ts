@@ -48,17 +48,23 @@ function normalizePhone(p: string) {
   return p.replace(/\D/g, "").replace(/^1(?=\d{10}$)/, "");
 }
 
-/** Finds an existing person by phone or email so one person never becomes two records. */
-export function findPerson(db: Db, email: string, phone: string): Person | undefined {
+/**
+ * Finds an existing person by email, phone or browser id so one person never
+ * becomes two records. Phone is optional on some forms, so an empty phone never matches.
+ */
+export function findPerson(db: Db, email: string, phone: string, visitorId?: string): Person | undefined {
   const e = email.trim().toLowerCase();
   const p = normalizePhone(phone);
-  return db.persons.list((x) => x.email.toLowerCase() === e || normalizePhone(x.phone) === p)[0];
+  const byContact = db.persons.list((x) => x.email.toLowerCase() === e || (p !== "" && normalizePhone(x.phone) === p))[0];
+  if (byContact || !visitorId) return byContact;
+  const prior = db.leads.list((l) => l.visitorId === visitorId)[0];
+  return prior ? db.persons.get(prior.personId) : undefined;
 }
 
 /** Creates the person (or reuses a match) and a new lead from a website submission. */
 export function ingestLead(db: Db, record: LeadRecord, now = new Date()): Lead {
   const c = record.contact;
-  let person = findPerson(db, c.email, c.phone);
+  let person = findPerson(db, c.email, c.phone, record.visitorId);
   if (!person) {
     person = db.persons.insert({
       id: randomUUID(),
@@ -118,6 +124,9 @@ export function ingestLead(db: Db, record: LeadRecord, now = new Date()): Lead {
     conflictCard: { clientName, parties: [], matterType, state: c.state, county: c.county, clearance: "pending" },
     intake,
     previousLawyerId: previous?.assignedLawyerId,
+    capture: record.capture,
+    priorTools: record.priorTools,
+    visitorId: record.visitorId,
   };
   db.leads.insert(lead);
   audit(db, "system", { action: "lead.create", resourceType: "lead", resourceId: lead.id, leadId: lead.id, at: now });

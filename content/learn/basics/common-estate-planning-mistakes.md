@@ -133,6 +133,8 @@ Answer yes or no:
 
 Each "no" is a specific, fixable task.
 
+For a sense of how common these gaps are, see our collection of [estate planning statistics](/learn/basics/estate-planning-statistics).
+
 ## How we can help
 
 If your self-audit turned up a few "no" answers, you are in good company, and most of them take an afternoon or a single meeting to fix. The [plan finder](/plan-finder) can show you what is likely missing, and you can book a consultation with one of our attorneys to review your existing documents and bring them up to date.

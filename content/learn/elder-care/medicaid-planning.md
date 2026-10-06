@@ -102,7 +102,7 @@ Which tool fits depends on timing, the state and the family. The wrong move, suc
 
 ## What is estate recovery?
 
-Federal law requires states to try to recover the cost of Medicaid long-term care from the estates of recipients who were 55 or older, or who were permanently institutionalized. Recovery can reach the home and other assets in the probate estate, and some states define the estate more broadly to include assets that pass outside probate, such as a living trust or joint accounts. Recovery is delayed or waived when there is a surviving spouse, a minor child, or a blind or disabled child, and states must have hardship procedures. Practices differ widely.
+Federal law requires states to try to recover the cost of Medicaid long-term care from the estates of recipients who were 55 or older, or who were permanently institutionalized. Recovery can reach the home and other assets in the probate estate, and some states define the estate more broadly to include assets that pass outside probate, such as a living trust or joint accounts. Recovery is delayed or waived when there is a surviving spouse, a minor child, or a blind or disabled child, and states must have hardship procedures. Practices differ widely. For what you can buy to reduce countable assets without creating a gift, see [Medicaid spend-down](/learn/elder-care/medicaid-spend-down); for the insurance side, including partnership policies that can protect assets from recovery, see [long-term care insurance and your estate plan](/learn/elder-care/long-term-care-insurance).
 
 ## What documents should be in place first?
 
