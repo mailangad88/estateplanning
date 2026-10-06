@@ -849,3 +849,5 @@ footer.site .footer-cta .button:hover { text-decoration: none; }
   .vk-download { grid-template-columns: 80px 1fr; }
   .vk-download img, .vk-download__icon { width: 80px; }
 }
+
+.lgame-band__more { margin-top: 24px; text-align: center; }

@@ -11,7 +11,7 @@ import { MERGED_PAGES } from "@/config/merged-pages";
 import { getAllArticles } from "@/lib/library";
 import { getAudiences, getChecklists, getComparisons, getGlossary, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
 
-const STATIC = ["/free", "/quizzes", "/", "/plan-finder", "/resources", "/pricing", "/about", "/contact", "/guides", "/blog", "/compare", "/life-events", "/estate-planning-for", "/decide", "/learn", "/estate-planning", "/tools", "/checklists", "/explainers", "/videos", "/course", "/glossary", "/faq", "/mistakes", "/legal/privacy", "/legal/disclaimer", "/legal/sms-terms", "/legal/how-we-work", "/editorial-policy", "/intake", "/callback", ...Object.values(MONEY_PAGES).map((m) => m.path)];
+const STATIC = ["/free", "/quizzes", "/", "/plan-finder", "/resources", "/pricing", "/about", "/contact", "/guides", "/blog", "/compare", "/life-events", "/estate-planning-for", "/decide", "/learn", "/estate-planning", "/tools", "/checklists", "/explainers", "/videos", "/course", "/glossary", "/faq", "/mistakes", "/legal/privacy", "/legal/disclaimer", "/legal/sms-terms", "/legal/how-we-work", "/editorial-policy", "/intake", "/callback", "/my-plan", ...Object.values(MONEY_PAGES).map((m) => m.path)];
 
 function knownPaths() {
   const s = new Set(STATIC);
