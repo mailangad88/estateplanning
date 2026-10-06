@@ -121,6 +121,8 @@ Frank and Linda, both 68, found during their review that Frank's will named his 
 
 Also review where the original will is kept; see [where to keep your will](/learn/wills/where-to-keep-your-will). If you are the surviving spouse in a couple, read [updating your plan after your spouse dies](/learn/life-stages/estate-planning-after-spouse-dies).
 
+A new diagnosis changes the timeline, and [estate planning after a serious diagnosis](/learn/life-stages/estate-planning-after-a-serious-diagnosis) explains what to sign first.
+
 ## How we can help
 
 A retirement review is usually a single meeting. Our [plan finder](/plan-finder) can show which parts of your plan need attention, or you can book a consultation with an estate planning attorney to review your documents, beneficiary forms and long-term care options together. Bring your current documents and the [consultation checklist](/learn/basics/what-to-bring-to-estate-planning-consultation).

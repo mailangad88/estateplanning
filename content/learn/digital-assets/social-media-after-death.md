@@ -53,6 +53,8 @@ Policies change, so check the company's current help page. The following summary
 | Microsoft | Limited tools | Request through Microsoft's process; content access is restricted |
 | X, LinkedIn and others | Usually none | Request deactivation with proof of death |
 
+To set one up yourself, see [how to set up a digital legacy contact](/learn/digital-assets/digital-legacy-contacts).
+
 ### Facebook and Instagram
 
 Facebook lets you pick a legacy contact who can manage a memorialized profile, including pinned tributes and profile updates, but cannot read private messages. You can also tell Facebook you want your account deleted when you die. Without either, family members can ask for memorialization or removal and provide proof of death.

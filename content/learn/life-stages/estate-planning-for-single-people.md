@@ -109,6 +109,8 @@ For most single people, federal estate tax is not a concern. The 2026 exemption 
 
 Review it after any move, a death or change of heart involving an agent, a change in health, a sale of a home, or an inheritance of your own. Single people also benefit from a yearly check that each named person is still willing and reachable. Our [update triggers guide](/learn/basics/when-to-update-your-estate-plan) lists them.
 
+If you are married but have no children, the questions are similar with an added second-death twist, covered in [estate planning for couples without children](/learn/life-stages/estate-planning-for-couples-without-children).
+
 ## How we can help
 
 You do not need a family to have a plan, and the plan matters more when you do not. Try the [plan finder](/plan-finder) for a short list of the documents that fit, or schedule a consultation with an estate planning attorney to choose agents, set up a trust and coordinate your beneficiary forms. We can also discuss professional fiduciaries if no one in your circle is a good fit.

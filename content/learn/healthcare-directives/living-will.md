@@ -34,6 +34,8 @@ Few decisions are harder than those made at the end of life, and fewer still are
 
 This article explains what a living will is, what it should say, how to sign it, and where it falls short. It is one of the documents in our guide to [advance healthcare directives](/learn/healthcare-directives).
 
+For how a living will differs from a trust and a will, see [living will vs. living trust vs. will](/learn/healthcare-directives/living-will-vs-living-trust-vs-will); for signing rules, see [does a living will need a notary](/learn/healthcare-directives/does-a-living-will-need-a-notary).
+
 ## What is a living will?
 
 A living will is a written statement of your wishes about medical treatment if you cannot speak for yourself, and it is one type of [advance directive](/glossary/advance-directive). The [living will](/glossary/living-will) takes effect only when you lack the capacity to decide and your condition fits the conditions you described. The name is confusing, since it has little in common with a last will. States use other names, including "declaration," "healthcare directive," "natural death act directive" or "medical directive."

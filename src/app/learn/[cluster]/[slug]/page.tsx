@@ -10,7 +10,8 @@ import LinkList from "@/components/LinkList";
 import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
 import { getAllArticles, getArticle, getCluster, getGlossaryEntry, getRelated } from "@/lib/library";
-import { siteLinksFor } from "@/lib/site-links";
+import ToolsBox from "@/components/ToolsBox";
+import { siteLinksFor, toolsFor } from "@/lib/site-links";
 import { articleSchema, breadcrumbSchema, faqSchema, graph } from "@/lib/schema";
 
 type Params = { cluster: string; slug: string };
@@ -59,6 +60,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
       <AnswerBox answer={a.answer} takeaways={a.takeaways} />
       <Toc headings={a.headings} />
       <div className="prose" dangerouslySetInnerHTML={{ __html: a.html }} />
+      <ToolsBox items={toolsFor(clusterSlug)} />
       <Faqs faqs={a.faqs} />
       <CtaBox topic={cluster.name} />
       {terms.length > 0 && (

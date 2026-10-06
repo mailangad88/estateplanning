@@ -76,7 +76,7 @@ Agencies generally look for four things: a written agreement, a payment rate equ
 | Timing | Pay for care going forward, in step with the work | No large lump sums, no payment for past help |
 | Taxes | Wages reported and taxes handled | Evidence the arrangement is a real job |
 
-A common limit is that agencies are skeptical of paying for what a family member would have done anyway, and some will not credit payment for care that is not medically or functionally needed. A doctor's note describing the parent's needs strengthens the file.
+A common limit is that agencies are skeptical of paying for what a family member would have done anyway, and some will not credit payment for care that is not medically or functionally needed. A doctor's note describing the parent's needs strengthens the file, and a [healthcare directive](/learn/healthcare-directives) lets the caregiver talk to that doctor.
 
 ## Can you pay in advance for years of care?
 

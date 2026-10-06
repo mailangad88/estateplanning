@@ -186,8 +186,8 @@ describe("page quality", () => {
 
 describe("cross-links to the rest of the site", () => {
   it("every mapped guide, comparison, question and life event exists", async () => {
-    const { clusterMapPaths, siteLinksFor } = await import("@/lib/site-links");
-    const resolved = new Set(getClusters().flatMap((c) => siteLinksFor(c.slug).map((l) => l.url)));
+    const { clusterMapPaths, siteLinksFor, toolsFor } = await import("@/lib/site-links");
+    const resolved = new Set(getClusters().flatMap((c) => [...siteLinksFor(c.slug), ...toolsFor(c.slug)].map((l) => l.url)));
     expect(clusterMapPaths().filter((p) => !resolved.has(p))).toEqual([]);
   });
 });

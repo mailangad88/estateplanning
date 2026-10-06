@@ -70,6 +70,10 @@ Notarization is most valuable for two reasons. It makes the document easier to u
 
 Notarization does not fix a poorly chosen witness. If your state requires witnesses and one of yours is disqualified, a notary stamp does not repair that on its own.
 
+### A note on nursing homes and hospitals
+
+If you sign while living in a nursing home or while admitted to a hospital, some states add a rule: a facility employee cannot witness, and a patient advocate or ombudsman may need to be one of the witnesses. People often sign directives during an admission, which is exactly when these rules apply, so ask the social worker which form and witnesses the facility will accept before you sign.
+
 ## What happens if the formalities are wrong?
 
 The consequences vary. A document that misses a statutory requirement may be treated as invalid, as simply persuasive evidence of your wishes, or honored anyway by a hospital acting in good faith. Many states protect providers who follow a directive that seems valid on its face, which means a hospital may follow a defective form, but you should not count on it.
