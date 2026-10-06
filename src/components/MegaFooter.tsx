@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { MONEY_PAGES } from "@/content/money-pages";
 import { TOOLS } from "@/config/tools";
-import { getAudiences } from "@/lib/content";
+import { LIFE_STAGES } from "@/config/life-stages";
 import { getHubs } from "@/lib/hubs";
 
 const SERVICE_KEYS = ["wills", "living-trusts", "power-of-attorney", "healthcare-directives", "probate", "trust-administration", "estate-planning-for-parents"];
@@ -9,7 +9,6 @@ const SERVICE_KEYS = ["wills", "living-trusts", "power-of-attorney", "healthcare
 /** Grouped site map shown above the legal notices. Counts and lists come from the same data the hubs use. */
 export default function MegaFooter() {
   const services = SERVICE_KEYS.map((k) => MONEY_PAGES[k]).filter(Boolean);
-  const audiences = getAudiences();
   const hubs = getHubs().filter((h) => h.href !== "/free" && h.href !== "/quizzes" && h.href !== "/tools" && h.href !== "/estate-planning-for");
   return (
     <nav className="mega-footer" aria-label="Site map">
@@ -24,12 +23,12 @@ export default function MegaFooter() {
         </ul>
       </div>
       <div>
-        <h2>By situation</h2>
+        <h2>By life stage</h2>
         <ul>
-          {audiences.map((a) => (
-            <li key={a.slug}><Link href={`/estate-planning-for/${a.slug}`}>{a.title}</Link></li>
+          {LIFE_STAGES.map((s) => (
+            <li key={s.slug}><Link href={`/estate-planning-for/${s.slug}`}>{s.label}</Link></li>
           ))}
-          <li><Link href="/estate-planning-for">All situations</Link></li>
+          <li><Link href="/estate-planning-for">More situations</Link></li>
         </ul>
       </div>
       <div>

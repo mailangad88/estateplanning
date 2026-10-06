@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import ProbateVsTrustAnimation from "@/components/ProbateVsTrustAnimation";
-import { firm } from "@/config/firm";
+import { firm, packages } from "@/config/firm";
 import { TOOLS } from "@/config/tools";
 import { EXPLAINERS } from "@/explainers/data";
 import { getChecklists, getFaqs, getGuides, getLifeEvents, getPosts } from "@/lib/content";
@@ -10,6 +11,8 @@ import { CardGrid, FaqList } from "@/components/ui";
 import { EmailCapture } from "@/components/capture";
 import { MAGNET_FORMATS, getMagnets } from "@/lib/magnets";
 import { getQuizzes } from "@/lib/quizzes";
+import { HeroFamilyHome, SpotVideoCall } from "@/components/visuals";
+import { Band, FeatureCard, IconBadge, SectionHead, StageGrid, Steps, TrustRow } from "@/components/landing";
 
 const FEATURED_GUIDES = ["what-is-estate-planning", "revocable-living-trust-explained", "guardianship-for-minor-children", "powers-of-attorney", "how-probate-works", "what-happens-if-you-die-without-a-will"];
 
@@ -28,110 +31,220 @@ const SITUATIONS = [
   { href: "/pricing", title: "I just want to know what this costs", description: "Flat fees, shown before you sign." },
 ];
 
+const TOOL_ICONS: Record<string, string> = { "plan-readiness-assessment": "BadgeCheck", "will-or-trust": "Scale", "probate-cost-estimator": "Receipt" };
+
 export default function Home() {
   const guides = getGuides();
   const featured = FEATURED_GUIDES.map((s) => guides.find((g) => g.slug === s)).filter((g) => g !== undefined);
   const faqs = getFaqs().filter((f) => f.category === "Getting started" || f.category === "Cost and process").slice(0, 6);
+  const heroTools = ["plan-readiness-assessment", "will-or-trust", "probate-cost-estimator"].map((s) => TOOLS.find((t) => t.slug === s)).filter((t) => t !== undefined);
   return (
     <>
-      <section className="hero">
-        <h1>Estate planning done by an attorney you can call</h1>
-        <div className="answer">
-          <strong>In short</strong>
-          An estate plan says who makes decisions for you if you cannot, and who gets what if you die. {firm.brandName} prepares
-          wills, living trusts, powers of attorney and healthcare directives at flat fees. Start with a two-minute questionnaire,
-          or book a call with {firm.attorneyName}.
+      <Band className="hero-band" label="Introduction">
+        <div className="hero-x">
+          <div>
+            <Link href="/plan-finder" className="eyebrow">
+              <b>2 minutes</b> Find the plan that fits your family <ArrowRight size={14} aria-hidden="true" />
+            </Link>
+            <h1>
+              Protect the people you love, <em>in plain English.</em>
+            </h1>
+            <p className="lead">
+              An estate plan says who makes decisions for you if you cannot, and who gets what if you die. {firm.brandName} prepares
+              wills, living trusts, powers of attorney and healthcare directives at flat fees, with {firm.attorneyName} on the phone.
+            </p>
+            <p className="cta-row">
+              <Link className="button large" href="/plan-finder">Start the plan finder</Link>
+              <Link className="button secondary large" href="/tools/plan-readiness-assessment">Get my readiness score</Link>
+            </p>
+            <TrustRow
+              items={[
+                { icon: "Receipt", text: "Flat fee, quoted before you sign" },
+                { icon: "BadgeCheck", text: "Prepared by an estate planning attorney" },
+                { icon: "Lock", text: "Your answers stay confidential" },
+              ]}
+            />
+          </div>
+          <div className="art-wrap">
+            <div className="art-frame">
+              <HeroFamilyHome bare />
+            </div>
+            <p className="float-note float-note--a" aria-hidden="true">
+              <IconBadge name="Baby" tone="gold" size={18} /> Guardian named for the kids
+            </p>
+            <p className="float-note float-note--b" aria-hidden="true">
+              <IconBadge name="ShieldCheck" tone="sage" size={18} /> Home kept out of probate court
+            </p>
+          </div>
         </div>
-        <p className="cta-row">
-          <Link className="button" href="/plan-finder">Start the plan finder</Link>
-          <Link className="button secondary" href="/tools/plan-readiness-assessment">Get my readiness score</Link>
-          <a className="button secondary" href={`tel:${firm.phone.replace(/\D/g, "")}`}>Call {firm.phone}</a>
+      </Band>
+
+      <Band label="Plans by life stage">
+        <SectionHead
+          kicker="Start where you are"
+          title="Every stage of life needs a different plan"
+          lead="A couple who just married worries about different things than a retiree or a family with three kids. Pick the stage closest to yours."
+        />
+        <StageGrid />
+        <p style={{ marginTop: 28 }}>
+          <Link href="/estate-planning-for" className="arrow-link">
+            Other situations: business owners, special needs, military, after a death <ArrowRight size={16} aria-hidden="true" />
+          </Link>
         </p>
-        <p className="notice">{firm.attorneyName}, Bar No. {firm.barNumber}. Flat fees shown on our <Link href="/pricing">pricing page</Link>. No obligation. Your answers stay confidential.</p>
-      </section>
+      </Band>
 
-      <h2>Where most people start</h2>
-      <CardGrid items={SITUATIONS} />
+      <Band tone="sand" label="What a plan includes">
+        <SectionHead kicker="What you get" title="Four documents do most of the work" lead="We explain each one plainly and tell you when you may not need it." />
+        <div className="feature-grid">
+          <FeatureCard icon="FileText" title="A will" href="/wills" cta="About wills">
+            Names who receives your property, who raises your minor children, and who carries out your wishes.
+          </FeatureCard>
+          <FeatureCard icon="ShieldCheck" tone="sage" title="A living trust" href="/living-trusts" cta="About living trusts">
+            Passes property to your family without a court process. It does not make sense for everyone, and we will say so.
+          </FeatureCard>
+          <FeatureCard icon="Scale" tone="clay" title="A power of attorney" href="/power-of-attorney" cta="About powers of attorney">
+            Names someone to handle money and property if you cannot, so your family does not have to ask a court.
+          </FeatureCard>
+          <FeatureCard icon="Stethoscope" tone="gold" title="Healthcare directives" href="/healthcare-directives" cta="About healthcare directives">
+            Put your medical wishes in writing and name who speaks for you when you cannot.
+          </FeatureCard>
+        </div>
+        <p style={{ marginTop: 28 }}>
+          Helping after a death instead? See <Link href="/probate">probate</Link> and <Link href="/trust-administration">trust administration</Link>.
+        </p>
+      </Band>
 
-      <h2>What an estate plan includes</h2>
-      <p>Four documents do most of the work. We explain each in plain terms and say when it may not be needed.</p>
-      <ul>
-        <li><strong><Link href="/wills">A will</Link></strong> names who receives your property, who raises your minor children, and who carries out your wishes. It takes effect only at death and usually goes through probate, the court process that confirms the will and transfers property.</li>
-        <li><strong><Link href="/living-trusts">A living trust</Link></strong> holds property under your name as trustee while you are alive and passes it to your beneficiaries without a court process when you die. It does not make sense for everyone. Many families with modest assets and no real estate do fine with a will and beneficiary designations.</li>
-        <li><strong><Link href="/power-of-attorney">A durable power of attorney</Link></strong> names someone to handle money and property if you cannot, for example after a stroke. Without one, your family may have to ask a court for authority.</li>
-        <li><strong><Link href="/healthcare-directives">Healthcare directives</Link></strong> put your medical wishes in writing and name who speaks for you when you cannot.</li>
-      </ul>
-      <p>Helping after a death instead? See <Link href="/probate">probate</Link> and <Link href="/trust-administration">trust administration</Link>.</p>
+      <Band label="How it works">
+        <div className="split">
+          <div>
+            <SectionHead kicker="How it works" title="From first question to signed plan, in four steps" />
+            <Steps
+              vertical
+              steps={[
+                { title: "Answer a few questions", text: "About your family, your home and what you want to protect. About two minutes." },
+                { title: "Talk to our team", text: `We call you ${firm.responseTime} and book a time with the attorney. The team are not lawyers.` },
+                { title: "Meet your attorney", text: "You get a recommendation and a flat-fee quote. Nothing is signed on the call." },
+                { title: "Sign and you're done", text: "We guide the signing and help you move assets into your trust." },
+              ]}
+            />
+            <p className="cta-row" style={{ marginTop: 32 }}>
+              <Link href="/how-it-works" className="arrow-link">See what happens on the call <ArrowRight size={16} aria-hidden="true" /></Link>
+              <Link href="/about-the-attorney" className="arrow-link">About {firm.attorneyName} <ArrowRight size={16} aria-hidden="true" /></Link>
+            </p>
+          </div>
+          <div className="art-frame">
+            <SpotVideoCall bare />
+          </div>
+        </div>
+      </Band>
 
-      <h2>What it costs</h2>
-      <p>We charge flat fees, quoted before you sign. Essentials fits one person or a couple with modest assets. Complete fits homeowners and families with minor children. Legacy fits blended families, business owners and property in more than one state. Fees depend on the facts of your situation, and the final fee is in your engagement agreement before you pay anything. <Link href="/pricing">See our flat fees</Link>.</p>
-
-      <h2>Start with your life event</h2>
-      <CardGrid items={getLifeEvents().map((l) => ({ href: `/life-events/${l.slug}`, title: l.event, description: l.description }))} />
-
-      <h2>Browse the library by topic</h2>
-      <ul className="pill-row">
-        {getClusters()
-          .filter((c) => getPillar(c.slug))
-          .map((c) => (
-            <li key={c.slug}><Link href={c.url}>{c.name}</Link></li>
+      <Band tone="brand" label="Free tools">
+        <SectionHead kicker="Free tools" title="Honest answers before you talk to anyone" lead="Calculators and quizzes that tell you plainly when you do not need us." />
+        <div className="feature-grid">
+          {heroTools.map((t) => (
+            <FeatureCard key={t.slug} icon={TOOL_ICONS[t.slug] ?? "Check"} title={t.title} href={`/tools/${t.slug}`} cta="Try it">
+              {t.description}
+            </FeatureCard>
           ))}
-      </ul>
-      <p>
-        Or see <Link href="/learn">every guide in the library</Link> and{" "}
-        <Link href="/estate-planning">estate planning rules by state</Link>.
-      </p>
+        </div>
+        <p style={{ marginTop: 28 }}>
+          <Link href="/tools">All {TOOLS.length} free tools</Link> · <Link href="/quizzes">{getQuizzes().length} two-minute quizzes</Link> · <Link href="/checklists">Printable checklists</Link>
+        </p>
+      </Band>
 
-      <h2>Probate or a trust, in ten seconds</h2>
-      <ProbateVsTrustAnimation />
+      <Band tone="sand" label="Pricing">
+        <SectionHead
+          kicker="Flat fees"
+          title="Know the price before you start"
+          lead={<>Fees depend on your situation, and the final fee is in your engagement agreement before you pay anything. <Link href="/pricing">See our flat fees</Link>.</>}
+        />
+        <div className="tier-grid">
+          {packages.map((p) => (
+            <div key={p.name} className={`tier${p.name === "Complete" ? " is-featured" : ""}`}>
+              <h3>{p.name}</h3>
+              <p>{p.for}</p>
+              <ul>
+                {p.includes.slice(0, 4).map((i) => <li key={i}>{i}</li>)}
+              </ul>
+              <Link className={`button${p.name === "Complete" ? "" : " secondary"}`} href="/pricing">See what is included</Link>
+            </div>
+          ))}
+        </div>
+      </Band>
 
-      <h2>How it works</h2>
-      <ol className="steps">
-        <li><strong>1. Answer a few questions (2 minutes).</strong><br />About your family, your home and what you want to protect.</li>
-        <li><strong>2. Talk to our team.</strong><br />We call you {firm.responseTime}, confirm the basics and book a time with the attorney. The team are not lawyers and do not give legal advice.</li>
-        <li><strong>3. Meet your attorney.</strong><br />Consult length: {firm.consultLength}. You get a recommendation and a flat-fee quote. Nothing is signed on the call.</li>
-        <li><strong>4. Sign and you're done.</strong><br />We guide the signing and help you move assets into your trust.</li>
-      </ol>
-      <p><Link href="/how-it-works">See what happens on the call</Link> · <Link href="/about-the-attorney">About {firm.attorneyName}</Link></p>
+      <Band label="Probate or a trust">
+        <div className="split">
+          <div>
+            <SectionHead kicker="In ten seconds" title="Probate or a trust?" lead="A will usually goes through a court process called probate. A funded living trust usually does not." />
+            <div className="honest">
+              <IconBadge name="HandHeart" tone="sage" />
+              <div>
+                <h3>When you may not need an attorney</h3>
+                <p>
+                  People who are single, own very little, have no dependents, and have named beneficiaries on every account often
+                  manage with a simple will or beneficiary forms. If you are not sure, the plan finder will say so plainly. Consult fee: {firm.consultFee}.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="feature-card">
+            <ProbateVsTrustAnimation />
+          </div>
+        </div>
+      </Band>
 
-      <h2>When you may not need an attorney</h2>
-      <p>People who are single, own very little, have no dependents, and have named beneficiaries on every account often manage with a simple will or beneficiary forms. If you are not sure, the plan finder will say so plainly. Consult fee: {firm.consultFee}.</p>
+      <Band tone="clay" label="Free downloads">
+        <SectionHead kicker="Free downloads" title="Worksheets, kits and email courses" lead={<>Printable help for every stage of life. <Link href="/free">See all {getMagnets().length}</Link>.</>} />
+        <CardGrid
+          items={["guardian-for-your-kids-worksheet", "estate-planning-checklist", "estate-plan-document-locator", "consult-prep-workbook", "new-parents-5-day-course", "executor-first-30-days-guide"]
+            .map((slug) => getMagnets().find((m) => m.slug === slug))
+            .filter((m) => m !== undefined)
+            .map((m) => ({ href: `/free/${m.slug}`, title: m.title, description: m.promise, tag: `Free ${MAGNET_FORMATS[m.format].toLowerCase()}` }))}
+        />
+        <EmailCapture
+          kind="course"
+          interest="7-day-course"
+          title="Free course: your estate plan in 7 days"
+          body="One short lesson and one small task a day, so you walk into a consult ready. Plus our 12 printable checklists."
+          cta="Start the free course"
+          success="You're in. Lesson 1 is on its way."
+        />
+      </Band>
 
-      <h2>Free downloads</h2>
-      <p>Printable worksheets, kits and email courses for every stage of life. <Link href="/free">See all {getMagnets().length}</Link>.</p>
-      <CardGrid
-        items={["guardian-for-your-kids-worksheet", "estate-planning-checklist", "estate-plan-document-locator", "consult-prep-workbook", "new-parents-5-day-course", "executor-first-30-days-guide"]
-          .map((slug) => getMagnets().find((m) => m.slug === slug))
-          .filter((m) => m !== undefined)
-          .map((m) => ({ href: `/free/${m.slug}`, title: m.title, description: m.promise, tag: `Free ${MAGNET_FORMATS[m.format].toLowerCase()}` }))}
-      />
+      <Band label="Where people start">
+        <SectionHead kicker="Common starting points" title="Where most people start" />
+        <CardGrid items={SITUATIONS} />
+        <h3 className="band-subhead">Start with your life event</h3>
+        <CardGrid items={getLifeEvents().map((l) => ({ href: `/life-events/${l.slug}`, title: l.event, description: l.description }))} />
+      </Band>
 
-      <h2>Two-minute quizzes</h2>
-      <CardGrid items={getQuizzes().slice(0, 6).map((q) => ({ href: `/quizzes/${q.slug}`, title: q.title, description: q.promise, tag: `${q.questions.length} questions` }))} />
-
-      <h2>Most-read guides</h2>
-      <CardGrid items={featured.map((g) => ({ href: `/guides/${g.slug}`, title: g.title, description: g.description, tag: `${g.readingMinutes} min read` }))} />
-      <p><Link href="/guides">All {guides.length} guides</Link> · <Link href="/blog">{getPosts().length} questions answered</Link> · <Link href="/compare">Comparisons</Link></p>
-
-      <h2>Free tools</h2>
-      <CardGrid items={TOOLS.slice(0, 6).map((t) => ({ href: `/tools/${t.slug}`, title: t.title, description: t.description, tag: "Free tool" }))} />
-
-      <h2>Watch: how it works in two minutes</h2>
-      <CardGrid items={EXPLAINERS.slice(0, 3).map((e) => ({ href: `/explainers/${e.slug}`, title: e.title, description: e.description, tag: "Animated" }))} />
-
-      <EmailCapture
-        kind="course"
-        interest="7-day-course"
-        title="Free course: your estate plan in 7 days"
-        body="One short lesson and one small task a day, so you walk into a consult ready. Plus our 12 printable checklists."
-        cta="Start the free course"
-        success="You're in. Lesson 1 is on its way."
-      />
-
-      <h2>Printable checklists</h2>
-      <ul className="pill-row">
-        {getChecklists().map((c) => <li key={c.slug}><Link href={`/checklists/${c.slug}`}>{c.title}</Link></li>)}
-      </ul>
+      <Band tone="sky" label="Learn">
+        <SectionHead
+          kicker="Learn at your own pace"
+          title="Most-read guides"
+          lead={<><Link href="/guides">All {guides.length} guides</Link> · <Link href="/blog">{getPosts().length} questions answered</Link> · <Link href="/compare">Comparisons</Link> · <Link href="/estate-planning">Rules by state</Link></>}
+        />
+        <CardGrid items={featured.map((g) => ({ href: `/guides/${g.slug}`, title: g.title, description: g.description, tag: `${g.readingMinutes} min read` }))} />
+        <h3 className="band-subhead">Browse the library by topic</h3>
+        <ul className="pill-row">
+          {getClusters()
+            .filter((c) => getPillar(c.slug))
+            .map((c) => (
+              <li key={c.slug}><Link href={c.url}>{c.name}</Link></li>
+            ))}
+        </ul>
+        <p>
+          Or see <Link href="/learn">every guide in the library</Link>.
+        </p>
+        <h3 className="band-subhead">Watch: how it works in two minutes</h3>
+        <CardGrid items={EXPLAINERS.slice(0, 3).map((e) => ({ href: `/explainers/${e.slug}`, title: e.title, description: e.description, tag: "Animated" }))} />
+        <h3 className="band-subhead">Two-minute quizzes</h3>
+        <CardGrid items={getQuizzes().slice(0, 6).map((q) => ({ href: `/quizzes/${q.slug}`, title: q.title, description: q.promise, tag: `${q.questions.length} questions` }))} />
+        <h3 className="band-subhead">Printable checklists</h3>
+        <ul className="pill-row">
+          {getChecklists().map((c) => <li key={c.slug}><Link href={`/checklists/${c.slug}`}>{c.title}</Link></li>)}
+        </ul>
+      </Band>
 
       <FaqList faqs={faqs} />
       {/* Client reviews go here once real clients leave them. Never use invented testimonials. */}

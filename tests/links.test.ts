@@ -1,5 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
+import { getMagnets } from "@/lib/magnets";
+import { getQuizzes } from "@/lib/quizzes";
 import { describe, expect, it } from "vitest";
 import { MONEY_PAGES } from "@/content/money-pages";
 import { TOOLS } from "@/config/tools";
@@ -19,6 +21,8 @@ function knownPaths() {
   getLessons().forEach((l) => s.add(`/course/${l.day}`));
   TOOLS.forEach((t) => s.add(`/tools/${t.slug}`));
   EXPLAINERS.forEach((e) => s.add(`/explainers/${e.slug}`));
+  getMagnets().forEach((m) => s.add(`/free/${m.slug}`));
+  getQuizzes().forEach((q) => s.add(`/quizzes/${q.slug}`));
   return s;
 }
 
@@ -54,7 +58,7 @@ describe("internal links in content", () => {
 
   it("audience pages have the required fields and the sensitive flag where needed", () => {
     const audiences = getAudiences();
-    expect(audiences.length).toBe(12);
+    expect(audiences.length).toBe(15);
     const sensitive = audiences.filter((a) => a.sensitive).map((a) => a.slug).sort();
     expect(sensitive).toEqual(["after-a-death", "after-a-diagnosis", "lgbtq-couples", "special-needs-families"]);
     for (const a of audiences) {
@@ -73,7 +77,7 @@ describe("internal links in content", () => {
     const text = JSON.stringify(MONEY_PAGES);
     for (const m of text.matchAll(/\]\((\/[^)\s"]*)\)/g)) found.push(m[1]);
     for (const m of text.matchAll(/"href":"(\/[^"]*)"/g)) found.push(m[1]);
-    for (const f of ["src/app/page.tsx", "src/app/pricing/page.tsx", "src/app/contact/page.tsx", "src/app/layout.tsx", "src/components/MegaFooter.tsx"]) {
+    for (const f of ["src/app/page.tsx", "src/app/pricing/page.tsx", "src/app/contact/page.tsx", "src/app/layout.tsx", "src/components/MegaFooter.tsx", "src/config/navigation.ts", "src/config/life-stages.ts"]) {
       const src = fs.readFileSync(path.join(process.cwd(), f), "utf8");
       for (const m of src.matchAll(/(?:href=|href: )"(\/[^"]*)"/g)) found.push(m[1]);
       for (const m of src.matchAll(/\]\((\/[^)\s"]*)\)/g)) found.push(m[1]);

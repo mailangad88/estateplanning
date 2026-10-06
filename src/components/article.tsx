@@ -33,6 +33,8 @@ export function ArticlePage(props: {
   related: RelatedLink[];
   before?: React.ReactNode;
   after?: React.ReactNode;
+  /** Replaces the breadcrumbs and H1 with a designed hero (landing pages). The hero must render the H1. */
+  hero?: React.ReactNode;
   magnet?: { interest: string; title: string; body: string; cta?: string };
 }) {
   // Free resources written for this page (or this post's pillar guide) replace the generic email offer.
@@ -48,8 +50,12 @@ export function ArticlePage(props: {
   const related = [...props.related, ...libraryLinksFor(props.path).filter((l) => !seen.has(l.href))];
   return (
     <article>
-      <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: props.section.path, label: props.section.name }, { label: props.title }]} />
-      <h1>{props.heading ?? props.title}</h1>
+      {props.hero ?? (
+        <>
+          <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: props.section.path, label: props.section.name }, { label: props.title }]} />
+          <h1>{props.heading ?? props.title}</h1>
+        </>
+      )}
       <ReviewNote reviewed={props.reviewed} updated={props.updated} />
       {props.answer ? (
         <div className="answer">

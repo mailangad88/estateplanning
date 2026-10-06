@@ -24,6 +24,8 @@ related:
   - blended-families
   - special-needs-families
   - military-and-veterans
+  - newlyweds-and-young-couples
+  - homeowners-and-growing-families
 faqs:
   - q: "Do we need a will if we are married and own everything together?"
     a: "Usually yes, for two reasons. If you both die together, jointly owned property has no next owner. And a will is the only place most parents can name a guardian and the person who manages the children's money."
