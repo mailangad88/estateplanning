@@ -176,6 +176,8 @@ State laws differ on witnesses, probate thresholds, community property and taxes
 
 Three things go wrong most often with first-time planners. They sign a will and forget the beneficiary forms. They sign a trust and never retitle the house. They name people without asking them. All three are cheap to avoid when you know to look for them.
 
+Curious what happens when a plan is missing or out of date? Our guide to [what happens if you put off estate planning](/learn/what-if) walks through the most common scenarios.
+
 ## How we can help
 
 If you are not sure where to begin, the [plan finder](/plan-finder) asks a few questions about your family and property and suggests which documents usually matter for your situation. When you are ready to talk it through, you can book a consultation with one of our attorneys, who can explain how the rules in your state apply and what a plan would involve.

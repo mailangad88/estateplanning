@@ -107,6 +107,8 @@ It is natural to wait until finances are in better shape or children are older. 
 
 For the bigger picture, see [guide to naming a guardian for your children](/learn/guardianship).
 
+For other scenarios like this one, see [what happens if you put off estate planning](/learn/what-if).
+
 ## How we can help
 
 A guardian nomination is among the shortest pieces of an estate plan and among the most valuable. An estate planning attorney can help you draft one that holds up in your state and connect it with the trust and standby documents that make it work. Try our [plan finder](/plan-finder) to see which documents fit your family, or book a consultation.

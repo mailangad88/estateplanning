@@ -137,6 +137,8 @@ Think of an estate plan as a set of tools, each of which controls a different gr
 
 A gap or conflict between them is where families get hurt. A thorough review lines them up, and it is one of the least expensive things an attorney does. If you are just starting, our [basics guide](/learn/basics) explains the full set of documents.
 
+Two situations cause most beneficiary problems we see: [an ex-spouse who is still named](/learn/what-if/ex-spouse-still-beneficiary) and [an account with no beneficiary at all](/learn/what-if/no-beneficiary-named). Both are covered in our guide to [what happens when planning waits](/learn/what-if).
+
 ## How we can help
 
 Beneficiary forms are easy to ignore until the moment they matter. Our attorneys can review your accounts, policies, and documents together, point out the mismatches, and help you decide whether a trust should be named. Use our [plan finder](/plan-finder) to see where to begin, or book a consultation when you are ready.

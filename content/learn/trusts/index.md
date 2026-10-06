@@ -171,6 +171,8 @@ If a trust is not needed, that is a perfectly good outcome. Many families do wel
 - [Do I need a living trust?](/learn/trusts/do-i-need-a-living-trust) lists the situations where a trust helps, where a will is enough and a ten-question self-check.
 - [How to transfer a house to a living trust](/learn/trusts/transfer-house-to-living-trust) covers the deed, mortgage, insurance and property tax steps.
 
+A trust only controls what is titled in its name. Read [what happens if you never funded your living trust](/learn/what-if/unfunded-trust) before you assume the job is done.
+
 ## How we can help
 
 Choosing and building the right trust is easier with a short conversation about your assets and your family. The [plan finder](/plan-finder) will suggest which documents suit your situation, and you can book a consultation with one of our attorneys to talk through whether a trust, a will or a combination fits, and to make sure it is drafted, signed and funded under your state's rules.
