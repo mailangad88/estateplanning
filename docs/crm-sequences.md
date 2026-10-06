@@ -8,6 +8,8 @@ Campaigns (the follow-up email and text sequences) can run in the firm's CRM ins
 Set `NURTURE_OWNER=crm` and the CRM sends. The app stays the system of record for leads, consent and
 suppressions, and tells the CRM everything it needs to know so the CRM's automations stay correct.
 
+**Decision 2026-10-06: internal is the chosen default.** Angad chose the lowest-cost route: our own portal and sender run follow-up (email through Resend, texts through Twilio), the HubSpot free CRM adapter is an optional sync, and the Lawmatics adapter stays dormant. `crm` below remains an opt-in for later. Bounces and complaints come in at `POST /api/email/events` (Resend, Svix-signed) and STOP/START texts at `POST /api/sms/inbound` (Twilio-signed). Costs: research/crm-buy-vs-build.md.
+
 `NURTURE_OWNER` is `internal` by default. `crm` only takes effect when a live CRM token is set
 (`LAWMATICS_API_TOKEN`, or `CRM_PROVIDER=hubspot` with `HUBSPOT_PRIVATE_APP_TOKEN`). With the mock or no token it stays
 `internal`, so a missing CRM never silently stops follow-up. An unknown value is reported as an error by the cron sweep.
