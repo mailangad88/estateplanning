@@ -20,7 +20,7 @@ function makeLead(over: Partial<Lead> = {}): Lead {
     id: "l1", personId: "p1", createdAt: "2026-10-06T00:00:00Z", stage: "new", stageHistory: [{ stage: "new", at: "2026-10-06T00:00:00Z", by: "system" }],
     matterType: "new_plan", state: "TX", urgent: false,
     score: scoreLead({ state: "TX", servedStates: ["TX"], answers: { matterType: "new_plan" }, smsConsent: false }),
-    segments: [], source: { utm_source: "google" },
+    segments: [], source: { utmSource: "google" },
     consent: buildConsentRecord({ smsConsent: false, acknowledgedNoRelationship: true, pageUrl: "https://x.test", ip: "203.0.113.77", userAgent: "SecretAgent/1.0" }),
     offerSummary: "Couple wants a new plan.",
     conflictCard: { clientName: "Ana Lee", parties: [], matterType: "new_plan", state: "TX", clearance: "pending" },
@@ -126,6 +126,31 @@ describe("HubSpotAdapter", () => {
     await a.setStage("d1", "paid", "conflict");
     expect(f.reqs[2]).toMatchObject({ method: "PATCH" });
     expect(f.reqs[2].body.properties.dealstage).toBe(HUBSPOT_STAGE_MAP.conflict);
+  });
+});
+
+describe("capture data", () => {
+  const captured = {
+    segments: ["tool:guide", "resource:after-a-death-checklist", "estate_administration", "homeowner"],
+    capture: { tool: "guide", resource: "after-a-death-checklist", result: { estimate: 12000 } },
+    priorTools: ["cost_calculator"],
+  };
+
+  it("sends tool, resource and tags to HubSpot without sensitive segments or tool figures", async () => {
+    const f = fakeFetch(() => ({ json: { id: "d1" } }));
+    await new HubSpotAdapter({ token: "hs", fetchImpl: f.impl }).upsertMatter(makeLead(captured), person, { contactId: "77" });
+    const p = f.reqs[0].body.properties;
+    expect(p).toMatchObject({ ep_capture_tool: "guide", ep_capture_resource: "after-a-death-checklist", ep_prior_tools: "cost_calculator", ep_sensitive_track: "true" });
+    expect(p.ep_segments).toBe("tool:guide;resource:after-a-death-checklist;homeowner");
+    expect(JSON.stringify(f.reqs[0].body)).not.toMatch(/12000|estate_administration/);
+  });
+
+  it("sends the UTM source and capture tags to Lawmatics", async () => {
+    const f = fakeFetch(() => ({ json: { data: { id: 1 } } }));
+    await new LawmaticsAdapter({ token: "t", fetchImpl: f.impl }).upsertMatter(makeLead(captured), person, { contactId: "1" });
+    expect(f.reqs[0].body).toMatchObject({ source: "google", custom_fields: { capture_tool: "guide" } });
+    expect(f.reqs[0].body.tags).toContain("sensitive_track");
+    expect(f.reqs[0].body.tags).not.toContain("estate_administration");
   });
 });
 

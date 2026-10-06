@@ -123,7 +123,7 @@ export function slugify(text: string): string {
     .replace(/^-|-$/g, "");
 }
 
-function render(markdown: string): { html: string; headings: Heading[] } {
+export function render(markdown: string): { html: string; headings: Heading[] } {
   const headings: Heading[] = [];
   const marked = new Marked({
     gfm: true,

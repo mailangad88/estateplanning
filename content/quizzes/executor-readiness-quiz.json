@@ -1,0 +1,187 @@
+{
+  "title": "Executor Readiness Quiz",
+  "promise": "Named as an executor? Ten questions on what the role involves, at your own pace, with no pressure.",
+  "description": "A calm ten-question quiz for people named as executor: what the role involves, what it does not, and where to look for help. Rules vary by state.",
+  "kind": "knowledge",
+  "category": "administration",
+  "magnet": "executor-roadmap",
+  "related": [
+    "guides/choosing-an-executor",
+    "guides/settling-an-estate-step-by-step",
+    "checklists/first-30-days-after-a-death"
+  ],
+  "reviewed": false,
+  "updated": "2026-10-06",
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Being named executor means you must accept the role.",
+      "options": [
+        {
+          "label": "True",
+          "points": 0
+        },
+        {
+          "label": "False",
+          "points": 1
+        }
+      ],
+      "explanation": "False. You can generally decline, and many people do. Reasons include health, distance, time, or a family conflict. In most states you decline in writing or by court filing before taking any action as executor, and the court then looks to the backup named in the will."
+    },
+    {
+      "id": "q2",
+      "prompt": "An executor can pay out inheritances to the beneficiaries right away.",
+      "options": [
+        {
+          "label": "True",
+          "points": 0
+        },
+        {
+          "label": "False",
+          "points": 1
+        }
+      ],
+      "explanation": "False. Debts, taxes and expenses generally come first. If an executor pays beneficiaries too early and the money runs short, the executor may be personally responsible in some situations. Many states set a creditor claim period before the estate can safely be distributed."
+    },
+    {
+      "id": "q3",
+      "prompt": "Estate money should be kept separate from the executor's own money.",
+      "options": [
+        {
+          "label": "True",
+          "points": 1
+        },
+        {
+          "label": "False",
+          "points": 0
+        }
+      ],
+      "explanation": "True. Executors generally open an estate bank account, often after getting a tax ID number from the IRS. Mixing funds makes it hard to account for what happened and can create legal problems. Keep receipts and records of every payment."
+    },
+    {
+      "id": "q4",
+      "prompt": "Executors can usually be paid a fee for their work.",
+      "options": [
+        {
+          "label": "True",
+          "points": 1
+        },
+        {
+          "label": "False",
+          "points": 0
+        }
+      ],
+      "explanation": "True. Most states allow reasonable compensation, set by statute or by a court, and some wills specify an amount. Family members often waive the fee, which is a personal choice. Fees paid to an executor are generally taxable income to the executor."
+    },
+    {
+      "id": "q5",
+      "prompt": "Most estates must be settled within a few weeks.",
+      "options": [
+        {
+          "label": "True",
+          "points": 0
+        },
+        {
+          "label": "False",
+          "points": 1
+        }
+      ],
+      "explanation": "False. Timelines vary by state and by estate. Many take several months to a year or more, depending on the court, creditor periods, property sales and taxes. Some states set deadlines for filing the will or giving notice, so it is worth checking early."
+    },
+    {
+      "id": "q6",
+      "prompt": "An executor has the authority to act as soon as the person dies, even without court approval.",
+      "options": [
+        {
+          "label": "True",
+          "points": 0
+        },
+        {
+          "label": "False",
+          "points": 1
+        }
+      ],
+      "explanation": "False. Authority usually begins when the court appoints the executor and issues letters testamentary, or similar papers. Before that, an executor can generally take only limited steps like arranging a funeral or protecting property. Banks and others will ask to see the court papers."
+    },
+    {
+      "id": "q7",
+      "prompt": "Executors may ask an attorney or accountant for help and pay for it from the estate.",
+      "options": [
+        {
+          "label": "True",
+          "points": 1
+        },
+        {
+          "label": "False",
+          "points": 0
+        }
+      ],
+      "explanation": "True. Reasonable professional fees are normally an estate expense. Many executors hire a lawyer for court filings and a tax professional for final returns. The right amount of help depends on the estate and state."
+    },
+    {
+      "id": "q8",
+      "prompt": "The executor's job includes finding and listing the person's property and debts.",
+      "options": [
+        {
+          "label": "True",
+          "points": 1
+        },
+        {
+          "label": "False",
+          "points": 0
+        }
+      ],
+      "explanation": "True. Executors usually take an inventory of assets and notify creditors, and in many states publish a notice. Mail, statements and online accounts help to find them. It is common to feel overwhelmed at this step, and it can be done in small pieces."
+    },
+    {
+      "id": "q9",
+      "prompt": "If the person's debts are larger than the estate, the executor must pay them personally.",
+      "options": [
+        {
+          "label": "True",
+          "points": 0
+        },
+        {
+          "label": "False",
+          "points": 1
+        }
+      ],
+      "explanation": "False. In general, an executor is not personally liable for the person's debts when acting properly. Debts are paid from the estate, and some creditors may go unpaid when it runs out. Executors can still be held responsible for mistakes, such as paying heirs before debts."
+    },
+    {
+      "id": "q10",
+      "prompt": "The executor should expect to file final tax returns and may need to file for the estate.",
+      "options": [
+        {
+          "label": "True",
+          "points": 1
+        },
+        {
+          "label": "False",
+          "points": 0
+        }
+      ],
+      "explanation": "True. A final income tax return is usually due for the year of death, and some estates must file their own returns. Federal estate tax applies only above a high exemption, $15 million per person for 2026<!-- verify -->, but some states have their own estate or inheritance taxes. A tax professional can confirm what applies."
+    }
+  ],
+  "bands": [
+    {
+      "min": 0,
+      "max": 3,
+      "label": "A lot to learn",
+      "summary": "The role has more moving parts than most people expect, and that is normal. You do not need to learn it all at once. The roadmap below lays out the steps in order and in plain language."
+    },
+    {
+      "min": 4,
+      "max": 7,
+      "label": "A good start",
+      "summary": "You already know several important rules. Review the answers you missed, since a few of them involve personal liability. Take your time, and ask a local attorney about your state's rules."
+    },
+    {
+      "min": 8,
+      "max": 10,
+      "label": "Well prepared",
+      "summary": "You understand the core duties and the common pitfalls. State rules and court procedures still differ, so a local attorney can confirm the next steps. The roadmap below can serve as a checklist."
+    }
+  ]
+}

@@ -11,6 +11,7 @@ import {
   resolveStage,
   type CrmAdapter,
   type StageMap,
+  captureFields,
 } from "@/server/crm/adapter";
 import type { Activity, Comment, DocumentRecord, ExitReason, Lead, Person, Stage } from "@/server/types";
 
@@ -69,6 +70,7 @@ export class HubSpotAdapter implements CrmAdapter {
   }
 
   async upsertMatter(lead: Lead, person: Person, ctx: { contactId: string }) {
+    const cap = captureFields(lead);
     const created = await this.call("POST", "/crm/v3/objects/deals", {
       properties: {
         dealname: `${fullName(person)} - ${lead.matterType}`,
@@ -77,6 +79,13 @@ export class HubSpotAdapter implements CrmAdapter {
         // Quiz free text deliberately stays out of deal properties: HubSpot properties
         // can feed ad audiences. It travels as notes only.
         description: lead.offerSummary,
+        // Custom deal properties to create in HubSpot (configure before launch). Sensitive
+        // segments never appear here; workflows route on ep_sensitive_track instead.
+        ep_capture_tool: cap.tool ?? "",
+        ep_capture_resource: cap.resource ?? "",
+        ep_prior_tools: cap.priorTools.join(";"),
+        ep_segments: cap.tags.join(";"),
+        ep_sensitive_track: cap.sensitiveTrack ? "true" : "false",
       },
       associations: [{ to: { id: ctx.contactId }, types: [{ associationCategory: HS, associationTypeId: 3 }] }],
     });

@@ -10,6 +10,7 @@ import {
   resolveStage,
   type CrmAdapter,
   type StageMap,
+  captureFields,
 } from "@/server/crm/adapter";
 import type { Activity, Comment, DocumentRecord, ExitReason, Lead, Person, Stage } from "@/server/types";
 
@@ -62,6 +63,7 @@ export class LawmaticsAdapter implements CrmAdapter {
   }
 
   async upsertMatter(lead: Lead, person: Person, ctx: { contactId: string }) {
+    const cap = captureFields(lead);
     // verify against Lawmatics API docs before launch: prospect create body and stage field name.
     const json = await this.call("POST", "/prospects", {
       contact_id: ctx.contactId,
@@ -72,7 +74,10 @@ export class LawmaticsAdapter implements CrmAdapter {
       // custom fields that could be mapped to ad-platform audiences.
       description: lead.offerSummary,
       lead_score: lead.score.score,
-      source: lead.source.utm_source ?? lead.source.source,
+      source: lead.source.utmSource ?? lead.source.referrer,
+      // verify against Lawmatics API docs before launch: tags and custom field keys.
+      tags: [...cap.tags, ...(cap.sensitiveTrack ? ["sensitive_track"] : [])],
+      custom_fields: { capture_tool: cap.tool, capture_resource: cap.resource, prior_tools: cap.priorTools.join(",") },
     });
     return { matterId: this.idOf(json) };
   }

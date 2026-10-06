@@ -13,6 +13,8 @@ export const firm = {
   barNumber: "[Bar number]",
   phone: "(000) 000-0000", // PLACEHOLDER tracked number
   officeAddress: "[Office address]",
+  /** City or county and state of a real (bona fide) office. California and Florida require it on every ad. */
+  officeLocality: "[Office city or county, state]",
   officeHours: "[Office hours]",
   /** What the site promises about response time. Keep it true. */
   responseTime: "[Response time, e.g. within one business day]",
@@ -34,6 +36,31 @@ export const firm = {
    * Changing this changes which fee types the fee engine will allow.
    */
   structure: "in_firm" as BusinessStructure,
+  /**
+   * Attorney bio facts used on /about and /legal/attorney-advertising. Every value must come
+   * from the attorney and be checkable (bar profile, diploma). Never fill these from guesses.
+   */
+  attorneyBio: {
+    licensedIn: "[Attorney bar admissions: state and year for each]",
+    education: "[Attorney law school and year]",
+    practiceFocus: "Practice focused on estate planning",
+    /** Only a certification the attorney actually holds, with the certifying body and area named. Null hides it. */
+    certification: null as string | null,
+    /** Awards only from bodies that do not sell them, with issuer and year. Empty hides the list. */
+    awards: [] as string[],
+  },
+  /**
+   * Dynamic number insertion. Keys: "source/medium" (exact), "source" (any medium), or "*" + "/medium" (any source).
+   * The first-touch source of the visit picks the number; anything unmatched shows `phone`.
+   * Each number must be a real call-tracking line forwarding to the office before launch.
+   */
+  trackingNumbers: {
+    "google/cpc": "(000) 000-0000", // PLACEHOLDER Google Ads
+    "bing/cpc": "(000) 000-0000", // PLACEHOLDER Microsoft Ads
+    "facebook/paid_social": "(000) 000-0000", // PLACEHOLDER Meta ads
+    "gbp": "(000) 000-0000", // PLACEHOLDER Google Business Profile (utm_source=gbp)
+    "*/email": "(000) 000-0000", // PLACEHOLDER newsletters and nurture email
+  } as Record<string, string>,
 };
 
 export interface Package {
