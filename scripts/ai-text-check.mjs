@@ -15,7 +15,9 @@
  * Env:
  *   PANGRAM_API_KEY   required; without it the check prints a notice and exits 0 (nothing is sent anywhere)
  *   PANGRAM_MAX_AI    highest allowed fraction_ai, default 0.5
- *   PANGRAM_ENFORCE   "true" makes a page over the limit fail the run (CI); otherwise it only reports
+ *   PANGRAM_ENFORCE   "true" fails the run (CI) when an attorney-approved page is over the limit. Drafts
+ *                     (review: pending) are reported but never block a merge: they are noindexed until
+ *                     approved, and a high score sends them back for a rewrite before approval.
  *
  * Results are saved to content/ai-text-scores.json (path -> score and date), which the review queue reads.
  * Pangram bills per started 1,000 words, so by default only changed files are checked.
@@ -85,6 +87,9 @@ if (!files.length) {
 
 const scores = fs.existsSync(SCORES) ? JSON.parse(fs.readFileSync(SCORES, "utf8")) : {};
 const over = [];
+const blocking = [];
+/** Approved pages are the ones that go live, so only they can fail the run. */
+const approved = (file) => /^(review:\s*approved|reviewed:\s*true)\s*$/m.test((/^---[\s\S]*?\n---/.exec(fs.readFileSync(file, "utf8")) ?? [""])[0]);
 for (const f of files) {
   const text = prose(f);
   if (text.split(/\s+/).length < 100) continue;
@@ -93,14 +98,19 @@ for (const f of files) {
     scores[f] = { fraction_ai: r.fraction_ai, fraction_ai_assisted: r.fraction_ai_assisted, prediction: r.prediction_short, checked: new Date().toISOString().slice(0, 10) };
     const flag = r.fraction_ai > MAX_AI;
     if (flag) over.push(f);
-    console.log(`${flag ? "REWRITE" : "ok     "}  ${r.fraction_ai.toFixed(2)} AI  ${f}`);
+    if (flag && approved(f)) blocking.push(f);
+    console.log(`${flag ? (approved(f) ? "BLOCK  " : "REWRITE") : "ok     "}  ${r.fraction_ai.toFixed(2)} AI  ${f}`);
   } catch (e) {
     console.error(`error    ${f}: ${e.message}`);
     if (ENFORCE) process.exitCode = 1;
   }
 }
 fs.writeFileSync(SCORES, `${JSON.stringify(scores, null, 1)}\n`);
-if (over.length) {
-  console.log(`\n${over.length} page(s) read as mostly AI-written (over ${MAX_AI}). Send them to the attorney to rewrite in his own words.`);
-  if (ENFORCE) process.exitCode = 1;
+const summary = `${files.length} file(s) checked; ${over.length} read as mostly AI-written (over ${MAX_AI}); ${blocking.length} of those are approved pages.`;
+console.log(`\n${summary}`);
+if (over.length) console.log("Send these to the attorney to rewrite in his own words before approval:\n" + over.map((f) => `  ${f} (${scores[f].fraction_ai.toFixed(2)})`).join("\n"));
+if (process.env.GITHUB_STEP_SUMMARY) {
+  const rows = files.filter((f) => scores[f]).map((f) => `| ${f} | ${scores[f].fraction_ai.toFixed(2)} | ${over.includes(f) ? (blocking.includes(f) ? "block" : "rewrite before approval") : "ok"} |`);
+  fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, `### Pangram AI-text check\n\n${summary}\n\n| File | AI fraction | Result |\n|---|---|---|\n${rows.join("\n")}\n`);
 }
+if (blocking.length && ENFORCE) process.exitCode = 1;
