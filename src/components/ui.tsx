@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { firm } from "@/config/firm";
 import type { Faq, Heading } from "@/lib/content";
+import { decorateSections } from "@/lib/prose-sections";
 import { PageHero } from "@/components/page-hero";
 import { VisualCardGrid, type CardItem, type CardMedia } from "@/components/visual-card";
 
@@ -41,7 +42,7 @@ export function Toc({ headings }: { headings: Heading[] }) {
 }
 
 export function Prose({ html }: { html: string }) {
-  return <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />;
+  return <div className="prose" dangerouslySetInnerHTML={{ __html: decorateSections(html) }} />;
 }
 
 export function FaqList({ faqs, title = "Common questions" }: { faqs: Faq[]; title?: string }) {
