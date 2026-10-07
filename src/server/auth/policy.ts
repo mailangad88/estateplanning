@@ -137,7 +137,11 @@ export type GlobalAction =
   | "approve_pages"
   | "manage_seminars"
   | "view_partners"
-  | "manage_partners";
+  | "manage_partners"
+  | "view_pipeline"
+  | "view_retainer_templates"
+  | "manage_retainer_templates"
+  | "approve_retainer_templates";
 
 const GLOBAL: Record<GlobalAction, Role[]> = {
   configure_routing: ["platform_admin"],
@@ -167,6 +171,13 @@ const GLOBAL: Record<GlobalAction, Role[]> = {
   // Referral partners, their gift log and release status. Mirrors the partners RLS policies.
   view_partners: ["platform_admin", "firm_admin"],
   manage_partners: ["platform_admin", "firm_admin"],
+  // The pipeline board: every lead the viewer may see, by stage, with retainer status. Rows follow leadAccess.
+  view_pipeline: ["platform_admin", "firm_admin"],
+  // A firm's own retainer templates, only ever its own firm's (canOnRetainerTemplate). Mirrors retainer_templates RLS.
+  view_retainer_templates: ["platform_admin", "firm_admin", "attorney", "paralegal"],
+  manage_retainer_templates: ["firm_admin", "attorney"],
+  // The wording a client signs is a legal judgment: only an attorney of the firm approves a version.
+  approve_retainer_templates: ["attorney"],
 };
 
 export function can(actor: Actor, action: GlobalAction): boolean {
@@ -181,6 +192,17 @@ export function canOnPartner(actor: Actor, action: "view" | "manage", partner: P
   if (!can(actor, action === "view" ? "view_partners" : "manage_partners")) return false;
   if (actor.role === "platform_admin") return true;
   return !!actor.firmId && partner.firmId === actor.firmId;
+}
+
+/**
+ * One retainer template. A firm sees and changes only its own; platform admins may look at any but never
+ * edit or approve another firm's wording. Mirrors the retainer_templates policies and guard in db/schema.sql.
+ */
+export function canOnRetainerTemplate(actor: Actor, action: "view" | "manage" | "approve", template: { firmId: string }): boolean {
+  const global = action === "view" ? "view_retainer_templates" : action === "manage" ? "manage_retainer_templates" : "approve_retainer_templates";
+  if (!can(actor, global)) return false;
+  if (action === "view" && actor.role === "platform_admin") return true;
+  return !!actor.firmId && template.firmId === actor.firmId;
 }
 
 export function assertCan(ok: boolean, message?: string): void {

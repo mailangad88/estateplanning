@@ -110,6 +110,8 @@ export default async function PortalHome() {
 
 function Nav({ actor }: { actor: Actor }) {
   const links: [string, string][] = [];
+  if (can(actor, "view_pipeline")) links.push(["/admin/pipeline", "Pipeline"]);
+  if (can(actor, "view_retainer_templates")) links.push(["/portal/retainers", "Retainer templates"]);
   if (can(actor, "work_intake_queue")) links.push(["/portal/queue", "Intake queue"]);
   if (can(actor, "view_reports")) links.push(["/admin/analytics", "Analytics"]);
   if (can(actor, "view_lead_health")) links.push(["/admin/lead-health", "Lead health"]);

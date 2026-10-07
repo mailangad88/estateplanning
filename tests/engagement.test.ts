@@ -197,9 +197,12 @@ describe("engagement flow", async () => {
 });
 
 describe("esignProviderFromEnv", () => {
-  it("defaults to mock outside production", () => {
-    expect(esignProviderFromEnv({}).name).toBe("mock");
-    expect(esignProviderFromEnv({ ESIGN_PROVIDER: "docusign" }).name).toBe("mock"); // credentials missing
+  it("defaults to the built-in e-sign everywhere; the mock only when asked for", () => {
+    expect(esignProviderFromEnv({}).name).toBe("builtin");
+    expect(esignProviderFromEnv({ ESIGN_PROVIDER: "docusign" }).name).toBe("builtin"); // credentials missing, development
+    expect(esignProviderFromEnv({ ESIGN_PROVIDER: "mock" }).name).toBe("mock");
+    expect(esignProviderFromEnv({ NODE_ENV: "production", SESSION_SECRET: "x".repeat(32) }).name).toBe("builtin");
+    expect(() => esignProviderFromEnv({ NODE_ENV: "production" })).toThrow(/SECRET/); // the built-in e-sign needs its signing secret
   });
 
   it("selects real providers when credentials exist", () => {
@@ -212,8 +215,8 @@ describe("esignProviderFromEnv", () => {
   });
 
   it("refuses the mock in production unless explicitly allowed", () => {
-    expect(() => esignProviderFromEnv({ NODE_ENV: "production" })).toThrow();
-    expect(() => esignProviderFromEnv({ NODE_ENV: "production", ESIGN_PROVIDER: "docusign" })).toThrow();
-    expect(esignProviderFromEnv({ NODE_ENV: "production", ESIGN_ALLOW_MOCK: "true" }).name).toBe("mock");
+    expect(() => esignProviderFromEnv({ NODE_ENV: "production", ESIGN_PROVIDER: "mock" })).toThrow();
+    expect(() => esignProviderFromEnv({ NODE_ENV: "production", ESIGN_PROVIDER: "docusign", SESSION_SECRET: "x".repeat(32) })).toThrow(/not configured/);
+    expect(esignProviderFromEnv({ NODE_ENV: "production", ESIGN_PROVIDER: "mock", ESIGN_ALLOW_MOCK: "true" }).name).toBe("mock");
   });
 });

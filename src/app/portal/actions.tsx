@@ -93,6 +93,7 @@ export function ApproveEngagement({ engagementId, status }: { engagementId: stri
     <span>
       {status === "draft" && <button className="button" disabled={busy} onClick={() => run(() => post(`/api/portal/engagements/${engagementId}/approve`))}>Approve</button>}
       {status === "approved" && <button className="button" disabled={busy} onClick={() => run(() => post(`/api/portal/engagements/${engagementId}/send`))}>Send for signature</button>}
+      {(status === "signed" || status === "paid") && <button className="button" disabled={busy} onClick={() => run(() => post(`/api/portal/engagements/${engagementId}/countersign`))}>Countersign</button>}
       {error && <span className="error"> {error}</span>}
     </span>
   );

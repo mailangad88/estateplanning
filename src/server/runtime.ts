@@ -25,7 +25,11 @@ async function createDb(): Promise<Db> {
     throw new Error("The in-memory store is for development. Configure DATABASE_URL (Postgres) before running the portal in production.");
   }
   const db = createMemoryDb();
-  if (process.env.PORTAL_SEED_DEMO !== "false") await seedDemo(db);
+  if (process.env.PORTAL_SEED_DEMO !== "false") {
+    await seedDemo(db);
+    const { seedRetainerDemo } = await import("@/server/seedRetainers");
+    await seedRetainerDemo(db);
+  }
   return db;
 }
 
