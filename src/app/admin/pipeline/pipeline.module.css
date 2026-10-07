@@ -1,0 +1,40 @@
+.board { width: min(1180px, calc(100vw - 32px)); position: relative; left: 50%; transform: translateX(-50%); padding: 8px 0 48px; }
+.head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.head h1 { margin: 8px 0; }
+.counts { list-style: none; padding: 0; margin: 12px 0 20px; display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+.count { display: flex; flex-direction: column; gap: 2px; padding: 10px 12px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text); text-decoration: none; height: 100%; }
+.count:hover { border-color: var(--brand); }
+.countOn { border-color: var(--brand); background: var(--brand-tint); box-shadow: inset 0 0 0 1px var(--brand); }
+.countNum { font-size: 1.6rem; font-weight: 700; font-family: var(--font-display); line-height: 1.1; }
+.countLabel { font-size: 0.8rem; color: var(--muted); }
+.filters { display: grid; gap: 8px 12px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); align-items: end; background: var(--sand); border-radius: var(--radius); padding: 12px; margin-bottom: 16px; }
+.filters label { display: flex; flex-direction: column; gap: 4px; font-size: 0.85rem; font-weight: 600; }
+.filters select, .filters input { font: inherit; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text); min-width: 0; }
+.filterActions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.table { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.table th { text-align: left; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); background: var(--sand); padding: 10px 12px; }
+.table td { padding: 12px; border-top: 1px solid var(--border); vertical-align: top; font-size: 0.95rem; }
+.table tr:hover td { background: var(--bg); }
+.who a { font-weight: 700; color: var(--text); }
+.sub { display: block; font-size: 0.82rem; color: var(--muted); }
+.stage { display: inline-block; padding: 2px 10px; border-radius: 999px; background: var(--brand-tint); color: var(--brand-deep); font-size: 0.82rem; font-weight: 600; white-space: nowrap; }
+.badge { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 0.82rem; font-weight: 600; white-space: nowrap; border: 1px solid transparent; }
+.b_not_sent, .b_draft { background: var(--sand); color: var(--muted); }
+.b_sent, .b_viewed { background: var(--gold-tint); color: var(--gold-text); }
+.b_signed, .b_countersigned { background: var(--sage-tint); color: var(--sage-deep); }
+.b_voided { background: var(--clay-tint); color: var(--clay-text); }
+.urgent { color: var(--clay-text); font-weight: 700; }
+.stale { color: var(--clay-text); font-weight: 600; }
+.empty { padding: 24px; text-align: center; color: var(--muted); }
+
+@media (max-width: 760px) {
+  .table, .table tbody, .table tr, .table td { display: block; width: 100%; }
+  .table { border: 0; background: transparent; }
+  .table thead { display: none; }
+  .table tr { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 10px; padding: 8px 12px; }
+  .table tr:hover td { background: transparent; }
+  .table td { border: 0; padding: 4px 0; display: flex; justify-content: space-between; gap: 12px; text-align: right; }
+  .table td::before { content: attr(data-label); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); text-align: left; flex: none; }
+  .table td.who { display: block; text-align: left; font-size: 1.05rem; padding-bottom: 6px; }
+  .table td.who::before { content: none; }
+}

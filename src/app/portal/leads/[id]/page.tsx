@@ -17,6 +17,19 @@ import {
 } from "@/lib/familyPlan";
 import type { OrganizerSummaryView } from "@/server/services/familyPlan";
 
+import { SendRetainer } from "./SendRetainer";
+import { packages, retainerPayments } from "@/config/firm";
+import { STAGES, type MatterType } from "@/server/types";
+import { PACKAGES } from "@/server/services/engagement";
+
+/** Starting prices on the Send retainer form, from the platform's placeholder package fees. The attorney sets the real fee. */
+const TIER_DEFAULT_CENTS: Record<string, number> = {
+  essentials: PACKAGES.will_package.defaultFeeCents,
+  complete: PACKAGES.trust_package.defaultFeeCents,
+  legacy: PACKAGES.couples_trust.defaultFeeCents,
+};
+const TIER_FOR_MATTER: Partial<Record<MatterType, string>> = { new_plan: "complete", update_plan: "essentials", special_needs: "legacy", business_succession: "legacy" };
+
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Case", robots: { index: false, follow: false } };
 
@@ -100,6 +113,9 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
     notFound();
   }
   const { header: h, sections: s } = view;
+  const canSendRetainer =
+    view.access === "full" && (actor.role === "attorney" || actor.role === "paralegal") && !h.nextStep.startsWith("Closed") &&
+    STAGES.indexOf(h.stage) >= STAGES.indexOf("accepted") && STAGES.indexOf(h.stage) <= STAGES.indexOf("proposal_sent");
 
   return (
     <>
@@ -222,14 +238,38 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
 
       {/* 12. Engagement */}
       {s.engagement && (
-        <section>
+        <section id="engagement">
           <h2>Engagement</h2>
-          {s.engagement.length === 0 ? <p>No engagement yet.</p> : (
+          {canSendRetainer && !s.engagement.some((e) => e.status !== "voided") && (
+            <SendRetainer
+              leadId={id}
+              clientFirstName={h.name.split(" ")[0] || "the client"}
+              tiers={packages.map((p) => ({ id: p.id, name: p.name, defaultCents: TIER_DEFAULT_CENTS[p.id] }))}
+              defaultTierId={TIER_FOR_MATTER[h.matterKey] ?? "complete"}
+              spouseName={s.household?.members.find((m) => m.relationship === "spouse" || m.relationship === "partner")?.name}
+              canApprove={actor.role === "attorney"}
+              planAllowed={retainerPayments.plan.enabled}
+            />
+          )}
+          {s.engagement.length === 0 ? (!canSendRetainer && <p>No engagement yet.</p>) : (
             <ul>
               {s.engagement.map((e) => (
                 <li key={e.id}>
                   {e.packageSelection ? `${e.packageSelection.tierName} package` : label(e.packageId)} · {money(e.feeCents)} · <strong>{e.status}</strong>{" "}
                   {actor.role === "attorney" && <ApproveEngagement engagementId={e.id} status={e.status} />}
+                  <p className="notice">
+                    {e.templateName ? `From your template ${e.templateName}` : "Platform draft letter"}
+                    {e.attachment ? ` + ${e.attachment.name}` : ""}
+                    {e.provider === "builtin" && e.status !== "draft" && e.status !== "approved" && <> · <a href={`/client/sign/${e.id}`}>signing page</a></>}
+                  </p>
+                  {e.signatures.length > 0 && (
+                    <ul>
+                      {e.signatures.map((sig) => (
+                        <li key={sig.id}>Signed by {sig.expectedName} (typed “{sig.typedName}”) {when(sig.signedAt)} · document <code>{sig.documentSha256.slice(0, 12)}…</code></li>
+                      ))}
+                      {e.spouseName && e.signatures.length < 2 && <li>Waiting for {e.signatures.some((x) => x.signerRole === "spouse") ? h.name : e.spouseName} to sign</li>}
+                    </ul>
+                  )}
                   {e.packageSelection && e.packageSelection.addOns.length > 0 && (
                     <p>Add-ons: {e.packageSelection.addOns.map((a) => `${a.name} (${money(a.priceCents)})`).join(", ")}</p>
                   )}

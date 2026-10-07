@@ -68,7 +68,7 @@ export function actorFor(user: User, mfa = true): Actor {
   return { userId: user.id, role: user.role, firmId: user.firmId, lawyerId: user.lawyerId, supportsLawyerIds: user.supportsLawyerIds, personId: user.personId, mfa };
 }
 
-function demoRecord(id: string, first: string, last: string, answers: LeadRecord["answers"], goals: string, at: Date): LeadRecord {
+export function demoRecord(id: string, first: string, last: string, answers: LeadRecord["answers"], goals: string, at: Date): LeadRecord {
   return {
     id,
     receivedAt: at.toISOString(),

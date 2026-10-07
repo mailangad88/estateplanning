@@ -11,8 +11,11 @@ export async function POST(request: Request) {
     const form = await request.formData();
     const token = String(form.get("token") ?? "");
     const { userId, session, mfa } = await acceptInvite(await getDb(), token);
+    // A signing invite lands on the agreement. Only client paths are accepted, so the link cannot redirect elsewhere.
+    const next = String(form.get("next") ?? "");
+    const target = /^\/client(\/[\w-]+)*$/.test(next) ? next : "/client";
     if (mfa) {
-      const res = NextResponse.redirect(new URL("/client", request.url), 303);
+      const res = NextResponse.redirect(new URL(target, request.url), 303);
       res.headers.append("set-cookie", sessionCookie(session));
       return res;
     }

@@ -23,10 +23,22 @@ export default async function ClientHome() {
     if (err instanceof ForbiddenError) return <div className="container"><p>Two-step sign-in is needed. <Link href="/portal/login/verify">Continue</Link></p></div>;
     throw err;
   }
+  const agreements = (await db.engagements.list(undefined, { leadId })).filter((e) => e.provider === "builtin" && ["sent", "viewed", "signed", "paid", "countersigned"].includes(e.status));
+  const toSign = agreements.find((e) => e.status === "sent" || e.status === "viewed");
+  const signed = agreements.find((e) => ["signed", "paid", "countersigned"].includes(e.status));
   return (
     <div className="container">
       <h1>Your case</h1>
       {s.attorney && <p className="lead">Your attorney: {s.attorney}</p>}
+      {toSign && (
+        <div className="callout">
+          <p><strong>Your engagement agreement is ready to sign.</strong> It has a plain-language summary at the top and takes about five minutes.</p>
+          <Link className="button" href={`/client/sign/${toSign.id}`}>Review and sign</Link>
+        </div>
+      )}
+      {!toSign && signed && (
+        <p className="callout">Your engagement agreement is signed. <Link href={`/client/sign/${signed.id}`}>See it and download your copy</Link>.</p>
+      )}
       <p><strong>What happens next:</strong> {s.nextStep}</p>
 
       <h2>Where things stand</h2>

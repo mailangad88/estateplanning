@@ -333,6 +333,19 @@ describe("built-in e-sign", () => {
   });
 });
 
+describe("development demo data", () => {
+  it("seeds a firm template, a ready lead, a sent retainer, a signed one and a lost lead", async () => {
+    const { seedDemo } = await import("@/server/seed");
+    const { seedRetainerDemo, simplePdf } = await import("@/server/seedRetainers");
+    const db = createMemoryDb();
+    await seedDemo(db, T0);
+    await seedRetainerDemo(db, T0);
+    const board = await pipelineBoard(db, platform, {}, T0);
+    expect(board.counts).toMatchObject({ consult_held: 1, retainer_sent: 1, retainer_signed: 1, lost: 1 });
+    expect(Buffer.from(simplePdf("x", ["y"])).toString("latin1")).toMatch(/^%PDF-1\.4[\s\S]*%%EOF\n$/);
+  });
+});
+
 describe("pipeline board", () => {
   it("platform admins see every lead, firm admins only their firm's, lawyers and marketing none", async () => {
     const { db, esign, pay, email } = await setup();
