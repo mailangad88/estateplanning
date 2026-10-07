@@ -9,6 +9,8 @@ import styles from "./send.module.css";
 interface Tier { id: string; name: string; defaultCents: number }
 
 interface Props {
+  /** A retainer is already out (or being prepared): the button hides, but a just-sent confirmation stays */
+  hasLive: boolean;
   leadId: string;
   clientFirstName: string;
   tiers: Tier[];
@@ -39,7 +41,7 @@ async function post<T>(url: string, body: unknown): Promise<T> {
 const dollars = (cents: number) => String(Math.round(cents / 100));
 
 /** "Send retainer": opens with everything filled from the lead; the lawyer fills any highlighted gap, then sends. */
-export function SendRetainer({ leadId, clientFirstName, tiers, defaultTierId, spouseName, canApprove, planAllowed }: Props) {
+export function SendRetainer({ hasLive, leadId, clientFirstName, tiers, defaultTierId, spouseName, canApprove, planAllowed }: Props) {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [tierId, setTierId] = useState(defaultTierId);
@@ -103,6 +105,8 @@ export function SendRetainer({ leadId, clientFirstName, tiers, defaultTierId, sp
       </div>
     );
   }
+
+  if (hasLive) return null;
 
   if (!open) {
     return (

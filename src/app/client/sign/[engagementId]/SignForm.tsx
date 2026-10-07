@@ -36,6 +36,8 @@ export function SignForm({ engagementId, documentSha256, signer, nextSigner, dis
       });
       const json = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(json.error ?? "Something went wrong. Please try again.");
+      // Once everyone has signed, the confirmation shows at the top of the page: take them there
+      if (json.complete) window.scrollTo({ top: 0, behavior: "smooth" });
       router.refresh();
     } catch (e) {
       setError(e instanceof Error ? e.message : "Something went wrong. Please try again.");

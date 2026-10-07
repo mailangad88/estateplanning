@@ -240,8 +240,9 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
       {s.engagement && (
         <section id="engagement">
           <h2>Engagement</h2>
-          {canSendRetainer && !s.engagement.some((e) => e.status !== "voided") && (
+          {canSendRetainer && (
             <SendRetainer
+              hasLive={s.engagement.some((e) => e.status !== "voided")}
               leadId={id}
               clientFirstName={h.name.split(" ")[0] || "the client"}
               tiers={packages.map((p) => ({ id: p.id, name: p.name, defaultCents: TIER_DEFAULT_CENTS[p.id] }))}
