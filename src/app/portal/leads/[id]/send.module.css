@@ -12,3 +12,9 @@
 .done { background: var(--sage-tint); border-radius: var(--radius); padding: 14px 16px; margin: 8px 0 16px; }
 .done p { margin: 4px 0; }
 .link { word-break: break-all; font-size: 0.82rem; }
+.couple input[type="email"] { font: inherit; font-weight: 400; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--text); min-width: 0; flex: 1 1 200px; }
+.coupleNote { flex-basis: 100%; }
+.waiting { background: var(--clay-tint); border-radius: var(--radius); padding: 10px 12px; margin: 8px 0; display: grid; gap: 8px; }
+.waiting p { margin: 0; }
+.inviteRow { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.inviteRow input { font: inherit; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--text); min-width: 0; flex: 1 1 200px; }

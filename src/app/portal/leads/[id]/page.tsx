@@ -18,6 +18,8 @@ import {
 import type { OrganizerSummaryView } from "@/server/services/familyPlan";
 
 import { SendRetainer } from "./SendRetainer";
+import { SpouseInvite } from "./SpouseInvite";
+import { firstNameOf } from "@/lib/people";
 import { packages, retainerPayments } from "@/config/firm";
 import { STAGES, type MatterType } from "@/server/types";
 import { PACKAGES } from "@/server/services/engagement";
@@ -268,8 +270,15 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
                       {e.signatures.map((sig) => (
                         <li key={sig.id}>Signed by {sig.expectedName} (typed “{sig.typedName}”) {when(sig.signedAt)} · document <code>{sig.documentSha256.slice(0, 12)}…</code></li>
                       ))}
-                      {e.spouseName && e.signatures.length < 2 && <li>Waiting for {e.signatures.some((x) => x.signerRole === "spouse") ? h.name : e.spouseName} to sign</li>}
                     </ul>
+                  )}
+                  {e.spouseName && e.provider === "builtin" && ["sent", "viewed"].includes(e.status) && !e.signatures.some((x) => x.signerRole === "spouse") && (
+                    canSendRetainer
+                      ? <SpouseInvite engagementId={e.id} spouseFirstName={firstNameOf(e.spouseName)} emailHint={e.spouseEmailHint} />
+                      : <p className="notice">Waiting for {firstNameOf(e.spouseName)}</p>
+                  )}
+                  {e.spouseName && ["sent", "viewed"].includes(e.status) && !e.signatures.some((x) => x.signerRole === "client") && e.signatures.length > 0 && (
+                    <p className="notice">Waiting for {h.name.split(" ")[0]}</p>
                   )}
                   {e.packageSelection && e.packageSelection.addOns.length > 0 && (
                     <p>Add-ons: {e.packageSelection.addOns.map((a) => `${a.name} (${money(a.priceCents)})`).join(", ")}</p>

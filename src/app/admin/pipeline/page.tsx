@@ -113,7 +113,7 @@ export default async function PipelinePage({ searchParams }: { searchParams: Pro
                 {r.exitReason && <span className={styles.sub}>{r.exitReason}</span>}
               </td>
               <td data-label="Days in stage"><span className={r.daysInStage >= 7 && r.column !== "lost" && r.column !== "paid" ? styles.stale : undefined}>{r.daysInStage}</span></td>
-              <td data-label="Retainer"><span className={`${styles.badge} ${styles[`b_${r.retainer}`]}`}>{RETAINER_LABELS[r.retainer]}</span></td>
+              <td data-label="Retainer"><span className={`${styles.badge} ${styles[`b_${r.retainer}`]}`}>{RETAINER_LABELS[r.retainer]}</span>{r.waitingFor && <span className={styles.sub}>Waiting for {r.waitingFor}</span>}</td>
               <td data-label="Last activity">{ago(r.lastActivityAt, now)}<span className={styles.sub}>{date(r.lastActivityAt)}</span></td>
             </tr>
           ))}

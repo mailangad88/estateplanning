@@ -10,6 +10,7 @@ import { audit } from "@/server/audit/log";
 import { assertCan, canOnLead, leadAccess, readableVisibilities, requireMfa, type LeadAccess } from "@/server/auth/policy";
 import type { Db } from "@/server/db";
 import { clientSummary, summarizePayments, type PaymentStatusSummary } from "@/lib/retainerPlan";
+import { maskEmail } from "@/lib/people";
 import { MATTER_LABELS } from "@/server/services/leads";
 import { organizerSummaryForLead, type OrganizerSummaryView } from "@/server/services/familyPlan";
 import type {
@@ -77,6 +78,8 @@ export interface EngagementView extends Engagement {
   signatures: Pick<SignatureRecord, "id" | "signerRole" | "expectedName" | "typedName" | "signedAt" | "documentSha256">[];
   /** The firm template version the letter came from */
   templateName?: string;
+  /** Joint representation, staff view: where the second client's own invite goes ("r•••@example.com") */
+  spouseEmailHint?: string;
   paymentStatus: PaymentStatusSummary;
   clientSummary?: { headline: string; lines: string[] };
 }
@@ -267,10 +270,12 @@ export async function buildCaseView(db: Db, actor: Actor, leadId: string, now = 
           .sort((a, b) => a.signedAt.localeCompare(b.signedAt))
           .map(({ id, signerRole, expectedName, typedName, signedAt, documentSha256 }) => ({ id, signerRole, expectedName, typedName, signedAt, documentSha256 }));
         const template = !client && e.templateId ? await db.retainerTemplates.get(e.templateId) : undefined;
+        const spouse = !client && e.spousePersonId ? await db.persons.get(e.spousePersonId) : undefined;
         return {
           ...e,
           payments,
           signatures,
+          spouseEmailHint: spouse?.email ? maskEmail(spouse.email) : undefined,
           templateName: template ? `${template.name} v${template.version}` : undefined,
           paymentStatus: summarizePayments(e.paymentPlan, payments),
           clientSummary: e.packageSelection && e.paymentPlan ? clientSummary(e.packageSelection, e.paymentPlan) : undefined,

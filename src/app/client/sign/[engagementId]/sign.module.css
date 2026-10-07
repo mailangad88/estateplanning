@@ -35,3 +35,11 @@
   .summary, .sign, .done { padding: 16px; }
   .pdf iframe { height: 55vh; }
 }
+.waiting { background: var(--clay-tint); border-radius: var(--radius-lg); padding: 20px; margin: 16px 0 24px; }
+.waiting h2 { margin-top: 0; font-size: 1.2rem; }
+.waiting p { margin: 6px 0 0; }
+.spouse { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin: 0 0 20px; }
+.spouse h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.spouse p { margin: 4px 0; }
+.spouseRow { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.spouseRow input { flex: 1 1 220px; min-width: 0; font: inherit; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--bg); color: var(--text); }

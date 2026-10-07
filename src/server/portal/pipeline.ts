@@ -5,6 +5,7 @@
  * firm's accepted leads plus open offers to their firm (shown without a name, as the offer card is).
  * Shows the first name only; the case page holds the rest.
  */
+import { firstNameOf } from "@/lib/people";
 import { audit } from "@/server/audit/log";
 import { assertCan, can } from "@/server/auth/policy";
 import type { Db } from "@/server/db";
@@ -75,6 +76,15 @@ export function retainerStatus(engagements: Engagement[]): RetainerStatus {
   return e.status === "viewed" ? "viewed" : "sent";
 }
 
+/** A joint agreement out for signature where one spouse has signed: the first name still to sign. */
+async function waitingFor(db: Db, engagements: Engagement[], clientFirstName?: string): Promise<string | undefined> {
+  const open = engagements.find((e) => e.spouseName && (e.status === "sent" || e.status === "viewed"));
+  if (!open?.spouseName) return undefined;
+  const roles = new Set((await db.signatures.list(undefined, { engagementId: open.id })).map((s) => s.signerRole));
+  if (roles.size !== 1) return undefined;
+  return roles.has("client") ? firstNameOf(open.spouseName) : clientFirstName;
+}
+
 export interface PipelineRow {
   leadId: string;
   /** First name, or "Prospective client" for an open offer */
@@ -91,6 +101,8 @@ export interface PipelineRow {
   exitReason?: string;
   daysInStage: number;
   retainer: RetainerStatus;
+  /** Joint agreement with one signature in: "Waiting for Riley" */
+  waitingFor?: string;
   lastActivityAt: string;
   createdAt: string;
   offerOnly: boolean;
@@ -150,6 +162,7 @@ export async function pipelineBoard(db: Db, actor: Actor, filters: PipelineFilte
       exitReason: lead.exit?.reason.replaceAll("_", " "),
       daysInStage: Math.max(0, Math.floor((now.getTime() - new Date(lead.exit?.at ?? lastStage).getTime()) / DAY)),
       retainer: retainerStatus(mine),
+      waitingFor: await waitingFor(db, mine, person?.firstName),
       lastActivityAt: touched[touched.length - 1],
       createdAt: lead.createdAt,
       offerOnly,

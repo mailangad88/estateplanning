@@ -22,6 +22,8 @@ interface Props {
   planAllowed: boolean;
 }
 
+interface SpouseSent { firstName: string; emailHint: string; delivered: boolean; link?: string }
+
 interface Preview {
   template: { id: string; name: string; version: number; pdf: { name: string; sizeBytes: number } | null } | null;
   segments: Segment[];
@@ -51,20 +53,24 @@ export function SendRetainer({ hasLive, leadId, clientFirstName, tiers, defaultT
   const [months, setMonths] = useState("3");
   const [couple, setCouple] = useState(!!spouseName);
   const [spouse, setSpouse] = useState(spouseName ?? "");
+  const [spouseEmail, setSpouseEmail] = useState("");
   const [values, setValues] = useState<Record<string, string>>({});
   const [preview, setPreview] = useState<Preview | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
-  const [done, setDone] = useState<{ status: string; link?: string; delivered?: boolean; id: string } | null>(null);
+  const [done, setDone] = useState<{ status: string; link?: string; delivered?: boolean; id: string; spouse?: SpouseSent; spouseEmailNeeded?: { firstName: string } } | null>(null);
+  const spouseFirst = spouse.trim().split(/\s+/)[0] || "their spouse";
 
   const cents = Math.round(Number(price) * 100);
   const depositCents = Math.round(Number(deposit || Math.ceil(Number(price) * 0.25)) * 100);
-  const body = {
+  const previewBody = {
     terms: { tierId, tierPriceCents: cents, plan: mode === "full" ? { mode: "full" } : { mode: "plan", depositCents, installments: Number(months) } },
     spouseName: couple ? spouse : undefined,
     mergeValues: values,
   };
-  const key = JSON.stringify(body);
+  // The spouse's email does not change the letter, so typing it does not refresh the preview
+  const body = { ...previewBody, spouseEmail: couple ? spouseEmail.trim() || undefined : undefined };
+  const key = JSON.stringify(previewBody);
 
   useEffect(() => {
     if (!open || !(cents > 0)) return;
@@ -80,8 +86,8 @@ export function SendRetainer({ hasLive, leadId, clientFirstName, tiers, defaultT
     setBusy(true);
     setError(null);
     try {
-      const r = await post<{ id: string; status: string; signingInvite?: { link: string; delivered: boolean } | null }>(`/api/portal/leads/${leadId}/retainer/send`, body);
-      setDone({ id: r.id, status: r.status, link: r.signingInvite?.link, delivered: r.signingInvite?.delivered });
+      const r = await post<{ id: string; status: string; signingInvite?: { link: string; delivered: boolean; spouse?: SpouseSent; spouseEmailNeeded?: { firstName: string } } | null }>(`/api/portal/leads/${leadId}/retainer/send`, body);
+      setDone({ id: r.id, status: r.status, link: r.signingInvite?.link, delivered: r.signingInvite?.delivered, spouse: r.signingInvite?.spouse, spouseEmailNeeded: r.signingInvite?.spouseEmailNeeded });
       router.refresh();
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
@@ -99,6 +105,13 @@ export function SendRetainer({ hasLive, leadId, clientFirstName, tiers, defaultT
           <>
             <p><strong>Sent to {clientFirstName}.</strong> {done.delivered ? "They got an email with a link to read and sign it." : "The email is in dry-run mode (logged, not sent). Send them this single-use link yourself, by text or email:"}</p>
             {done.link && <p><code className={styles.link}>{done.link}</code></p>}
+            {done.spouse && (
+              <>
+                <p><strong>{done.spouse.firstName} gets their own link</strong> ({done.spouse.emailHint}), so each of you signs from your own sign-in. {done.spouse.delivered ? "" : `Dry run: send ${done.spouse.firstName} this one:`}</p>
+                {!done.spouse.delivered && done.spouse.link && <p><code className={styles.link}>{done.spouse.link}</code></p>}
+              </>
+            )}
+            {done.spouseEmailNeeded && <p>{clientFirstName} will be asked for {done.spouseEmailNeeded.firstName}&apos;s email when they sign, so {done.spouseEmailNeeded.firstName} gets their own link. You can also add it below.</p>}
             <p className={styles.small}>You will be notified when it is signed. <a href={`/client/sign/${done.id}`}>See what {clientFirstName} sees</a></p>
           </>
         )}
@@ -157,6 +170,8 @@ export function SendRetainer({ hasLive, leadId, clientFirstName, tiers, defaultT
         <input type="checkbox" checked={couple} onChange={(e) => setCouple(e.target.checked)} />
         Joint representation: both spouses sign
         {couple && <input aria-label="Spouse's full name" value={spouse} onChange={(e) => setSpouse(e.target.value)} placeholder="Spouse's full name" />}
+        {couple && <input type="email" aria-label="Spouse's email" value={spouseEmail} onChange={(e) => setSpouseEmail(e.target.value)} placeholder={`${spouseFirst}'s own email (optional)`} autoComplete="off" />}
+        {couple && <span className={`${styles.small} ${styles.coupleNote}`}>Each spouse signs from their own link and sign-in. Leave the email blank and {clientFirstName} is asked for it when they sign.</span>}
       </label>
 
       {preview && (

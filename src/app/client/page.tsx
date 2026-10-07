@@ -4,6 +4,7 @@ import { ForbiddenError } from "@/server/auth/policy";
 import { clientLeadId, clientStatus } from "@/server/services/clientPortal";
 import { currentActor, getDb, scopedDb } from "@/server/runtime";
 import { MessageForm, UploadForm } from "@/app/client/ClientActions";
+import { firstNameOf } from "@/lib/people";
 
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Your case", robots: { index: false, follow: false } };
@@ -13,9 +14,31 @@ const when = (iso: string) => new Date(iso).toLocaleDateString("en-US", { dateSt
 export default async function ClientHome() {
   const actor = await currentActor();
   if (!actor || actor.role !== "client") return <div className="container"><p>Please use the link from your attorney's office to sign in, or call us at {firm.phone}.</p></div>;
-  const db = scopedDb(await getDb(), actor);
+  const service = await getDb();
+  const db = scopedDb(service, actor);
   const leadId = await clientLeadId(db, actor);
-  if (!leadId) return <div className="container"><p>We could not find your case. Call us at {firm.phone}.</p></div>;
+  if (!leadId) {
+    // A second client on a joint agreement has no case page of their own: just the agreement they sign
+    if (!actor.mfa) return <div className="container"><p>Two-step sign-in is needed. <Link href="/portal/login/verify">Continue</Link></p></div>;
+    const joint = actor.personId
+      ? (await service.engagements.list((e) => e.spousePersonId === actor.personId && e.provider === "builtin" && !["draft", "approved", "voided"].includes(e.status)))
+      : [];
+    if (joint.length === 0) return <div className="container"><p>We could not find your case. Call us at {firm.phone}.</p></div>;
+    const toSign = joint.find((e) => e.status === "sent" || e.status === "viewed");
+    return (
+      <div className="container">
+        <h1>Your engagement agreement</h1>
+        {joint.map((e) => (
+          <div className="callout" key={e.id}>
+            {e === toSign
+              ? <><p><strong>Your engagement agreement is ready to sign.</strong> It has a plain-language summary at the top and takes about five minutes.</p><Link className="button" href={`/client/sign/${e.id}`}>Review and sign</Link></>
+              : <p>Your engagement agreement is signed. <Link href={`/client/sign/${e.id}`}>See it and download your copy</Link>.</p>}
+          </div>
+        ))}
+        <p>Questions? Call us at {firm.phone}.</p>
+      </div>
+    );
+  }
   let s;
   try {
     s = await clientStatus(db, actor, leadId);
@@ -26,11 +49,17 @@ export default async function ClientHome() {
   const agreements = (await db.engagements.list(undefined, { leadId })).filter((e) => e.provider === "builtin" && ["sent", "viewed", "signed", "paid", "countersigned"].includes(e.status));
   const toSign = agreements.find((e) => e.status === "sent" || e.status === "viewed");
   const signed = agreements.find((e) => ["signed", "paid", "countersigned"].includes(e.status));
+  // Joint agreement where this client already signed: "Waiting for Riley"
+  const mineSigned = toSign?.spouseName && (await db.signatures.list(undefined, { engagementId: toSign.id })).some((x) => x.signerRole === "client");
+  const waitingFor = mineSigned && toSign?.spouseName ? firstNameOf(toSign.spouseName) : undefined;
   return (
     <div className="container">
       <h1>Your case</h1>
       {s.attorney && <p className="lead">Your attorney: {s.attorney}</p>}
-      {toSign && (
+      {toSign && waitingFor && (
+        <p className="callout">You signed your engagement agreement. <strong>Waiting for {waitingFor}</strong>, who signs from their own link. <Link href={`/client/sign/${toSign.id}`}>See the agreement</Link>.</p>
+      )}
+      {toSign && !waitingFor && (
         <div className="callout">
           <p><strong>Your engagement agreement is ready to sign.</strong> It has a plain-language summary at the top and takes about five minutes.</p>
           <Link className="button" href={`/client/sign/${toSign.id}`}>Review and sign</Link>

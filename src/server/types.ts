@@ -318,6 +318,8 @@ export interface Engagement {
   templateId?: string;
   /** Joint representation: the second client, who signs too */
   spouseName?: string;
+  /** The second client's own person record (and client login). They sign only the spouse slot, from their own session. */
+  spousePersonId?: string;
   /** The firm's own standard agreement (PDF) attached to the letter, shown in full and signed with it */
   attachment?: EngagementAttachment;
   /** sha256 binding the letter text and the attachment, fixed when the attorney approves. Every signature records it. */
@@ -391,6 +393,8 @@ export interface SignatureRecord {
   typedName: string;
   /** The signed-in client user who signed */
   signedByUserId: string;
+  /** The person whose slot this is: the lead's client, or the engagement's spousePersonId */
+  signerPersonId: string;
   signedAt: string;
   /** e.g. "203.0.113.0/24" */
   ipPrefix?: string;

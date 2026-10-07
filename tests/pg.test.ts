@@ -158,7 +158,7 @@ const fixtures = {
         { n: 2, kind: "installment", amountCents: 150000, dueOn: "2026-11-06", status: "late" },
       ],
     },
-    templateId: "rt_1@1", spouseName: "Bob Lee",
+    templateId: "rt_1@1", spouseName: "Bob Lee", spousePersonId: "p3",
     attachment: { name: "Standard terms.pdf", storageKey: "retainer-templates/f1/abc.pdf", sha256: "a".repeat(64), sizeBytes: 1234 },
     documentSha256: "d".repeat(64),
   } satisfies Required<Engagement>,
@@ -170,7 +170,7 @@ const fixtures = {
   } satisfies Required<RetainerTemplate>,
   signatures: {
     id: "sig1", engagementId: "e1", leadId: "l1", firmId: "f1", signerRole: "client", expectedName: "Ann Lee", typedName: "ann lee",
-    signedByUserId: "u-client", signedAt: T0, ipPrefix: "203.0.113.0/24", userAgent: "Safari on iPhone", letterSha256: "c".repeat(64),
+    signedByUserId: "u-client", signerPersonId: "p1", signedAt: T0, ipPrefix: "203.0.113.0/24", userAgent: "Safari on iPhone", letterSha256: "c".repeat(64),
     attachmentSha256: "a".repeat(64), documentSha256: "d".repeat(64), consentVersion: "esign-consent-2026-10-v1", consentAt: T0, intent: true,
   } satisfies Required<SignatureRecord>,
   blobs: {
@@ -379,8 +379,12 @@ suite("postgres integration", () => {
     await service.lawyers.insert(lawyer("lw2", "f2"));
     await service.persons.insert(person);
     await service.persons.insert({ ...person, id: "p2", email: "p2@x.test", householdId: undefined });
+    await service.persons.insert({ ...person, id: "p3", firstName: "Bob", email: "bob@x.test" }); // Ann's spouse, the second client on e1
     await service.users.insert(fixtures.users);
     await service.users.insert({ id: "u-intake", email: "intake@x.test", name: "Intake", role: "intake", active: true });
+    // the two clients on e1, each with their own login (signature rows are bound to them)
+    await service.users.insert({ id: "u-client", email: "client@x.test", name: "Ann Lee", role: "client", firmId: "f1", personId: "p1", active: true });
+    await service.users.insert({ id: "u-spouse", email: "spouse@x.test", name: "Bob Lee", role: "client", firmId: "f1", personId: "p3", active: true });
     await service.leads.insert(lead);
     await service.leads.insert(offerLead);
     await service.comments.insert({ ...fixtures.comments, id: "c1", parentId: undefined });
@@ -530,14 +534,29 @@ suite("postgres integration", () => {
     await expect(service.signatures.insert({ ...fixtures.signatures, id: "sig-dup" })).rejects.toThrow(); // one per signer role
     await expect(service.blobs.update("retainer-templates/f1/abc.pdf", { data: "eA==" })).rejects.toThrow(/permission denied/);
     const attorney = as({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" });
-    expect((await attorney.signatures.list()).map((s) => s.id)).toEqual(["sig1"]);
+    expect((await attorney.signatures.list()).map((s) => s.id)).toEqual(["sig1"]); // before the second client signs below
     await expect(attorney.signatures.insert({ ...fixtures.signatures, id: "sig2", signerRole: "spouse" })).rejects.toThrow();
+    // each signer signs only their own slot, from their own login, even for the service role
+    const spouseSig = { ...fixtures.signatures, id: "sig-sp", signerRole: "spouse" as const, expectedName: "Bob Lee", typedName: "Bob Lee" };
+    await expect(service.signatures.insert({ ...spouseSig, signedByUserId: "u-client", signerPersonId: "p1" })).rejects.toThrow(/second client/);
+    await expect(service.signatures.insert({ ...spouseSig, signedByUserId: "u-client", signerPersonId: "p3" })).rejects.toThrow(/own client login/);
+    await expect(service.signatures.insert({ ...spouseSig, signedByUserId: "u-attorney", signerPersonId: "p1" })).rejects.toThrow(/own client login/);
+    await expect(service.signatures.insert({ ...spouseSig, signerRole: "client", id: "sig-x", signedByUserId: "u-spouse", signerPersonId: "p3" })).rejects.toThrow(/only the client/);
     const client = as({ userId: "u-client", role: "client", personId: "p1" });
     expect((await client.signatures.list()).map((s) => s.id)).toEqual(["sig1"]);
+    // the second client (no access to the lead itself) sees nothing until they sign, then their own row
+    const spouse = as({ userId: "u-spouse", role: "client", personId: "p3" });
+    expect(await spouse.signatures.list()).toEqual([]);
+    await service.signatures.insert({ ...spouseSig, signedByUserId: "u-spouse", signerPersonId: "p3" });
+    expect((await spouse.signatures.list()).map((s) => s.id)).toEqual(["sig-sp"]);
     const otherClient = as({ userId: "u-c2", role: "client", personId: "p2" });
     expect(await otherClient.signatures.list()).toEqual([]);
     const other = as({ userId: "u-other", role: "attorney", firmId: "f2", lawyerId: "lw2" });
     expect(await other.signatures.list()).toEqual([]);
+    // the second client's person record: visible to whoever sees the engagement, and to themselves
+    expect((await attorney.persons.get("p3"))?.firstName).toBe("Bob");
+    expect((await spouse.persons.get("p3"))?.firstName).toBe("Bob");
+    expect(await other.persons.get("p3")).toBeUndefined();
     for (const s of [attorney, client, as({ userId: "u-admin", role: "platform_admin" })]) {
       await expect(s.blobs.list()).rejects.toThrow(); // no grant at all for app_user
     }

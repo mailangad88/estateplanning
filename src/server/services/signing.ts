@@ -1,11 +1,12 @@
 /**
  * Built-in e-sign: what the client sees on /client/sign/[engagementId] and how a signature is recorded.
  *
- * A signature counts only when the signer (1) is the signed-in client on this case, (2) agreed to use
+ * A signature counts only when the signer (1) is signed in as themselves and signs their own slot (the lead's
+ * client, or the second client from their own login; see coSigner.ts), (2) agreed to use
  * electronic records after reading the consumer disclosure, (3) typed their name as printed on the agreement,
  * (4) ticked "I intend to sign", and (5) signed exactly the document the attorney approved: the page posts back
  * the document hash it showed, and the server recomputes it from the stored letter and PDF bytes. Each
- * signature is an insert-only row. For a couple each spouse signs; when the last required signature is in, a
+ * signature is an insert-only row. For a couple each spouse signs from their own login; when the last signature is in, a
  * signed "signed" event goes through handleEsignWebhook, the same path external providers use, which moves
  * the lead to retainer_signed, stores the signed copy and starts the payment plan.
  */
@@ -24,12 +25,16 @@ import { documentHash, getEngagement, systemNote } from "@/server/services/engag
 import { handleEsignWebhook, PACKAGES } from "@/server/services/engagement";
 import { MATTER_LABELS } from "@/server/services/leads";
 import type { DeviceInfo } from "@/server/services/planAccount";
+import { firstNameOf, maskEmail, signerSlotOf } from "@/server/services/coSigner";
 import { getBlob, putBlob } from "@/server/storage/blobs";
 import type { Actor, Engagement, Lead, SignatureRecord } from "@/server/types";
 
 export interface Signer {
   role: SignatureRecord["signerRole"];
   name: string;
+  firstName: string;
+  /** The person who signs this slot; for the second client, absent until their email is on file */
+  personId?: string;
   signed?: { typedName: string; signedAt: string };
 }
 
@@ -47,6 +52,12 @@ export interface SigningView {
   attachment?: { name: string; sizeBytes: number; sha256: string };
   documentSha256: string;
   signers: Signer[];
+  /** The slot the signed-in person may sign (their own, and only theirs). Absent for staff. */
+  mySlot?: Signer["role"];
+  /** Joint representation: where the second client's own link goes ("r•••@example.com"), once on file */
+  spouseEmailHint?: string;
+  /** "Waiting for Riley": the first names of signers still to sign */
+  waitingFor: string[];
   /** A payment link waiting for the client, once signed */
   paymentLinkUrl?: string;
   countersigned: boolean;
@@ -55,25 +66,30 @@ export interface SigningView {
 const norm = (s: string) => s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z\s'-]/g, " ").replace(/\s+/g, " ").trim();
 export const namesMatch = (typed: string, expected: string) => norm(typed).length > 1 && norm(typed) === norm(expected);
 
-async function loadForClient(db: Db, actor: Actor, engagementId: string, now: Date): Promise<{ e: Engagement; lead: Lead }> {
+/**
+ * The client on the case, the second client named on this engagement (who sees only this agreement), or staff
+ * with full access. `slot` is the signature slot the actor may sign, if any.
+ */
+async function loadForClient(db: Db, actor: Actor, engagementId: string, now: Date): Promise<{ e: Engagement; lead: Lead; slot?: Signer["role"] }> {
   const e = await getEngagement(db, engagementId);
   const lead = await db.leads.get(e.leadId);
   if (!lead) throw new Error("Case not found");
-  const access = leadAccess(actor, lead, await db.assignments.list(undefined, { leadId: lead.id }), now);
+  const slot = signerSlotOf(actor, lead, e);
+  const access = slot === "spouse" ? "client" : leadAccess(actor, lead, await db.assignments.list(undefined, { leadId: lead.id }), now);
   assertCan(access === "client" || access === "full", "This agreement is not yours to open");
   if (access === "client" && (e.status === "draft" || e.status === "approved")) throw new ForbiddenError("This agreement has not been sent yet");
-  return { e, lead };
+  return { e, lead, slot };
 }
 
 async function signersFor(db: Db, e: Engagement, lead: Lead): Promise<Signer[]> {
   const person = await db.persons.get(lead.personId);
   const done = await db.signatures.list(undefined, { engagementId: e.id });
-  const signer = (role: Signer["role"], name: string): Signer => {
+  const signer = (role: Signer["role"], name: string, personId?: string): Signer => {
     const s = done.find((d) => d.signerRole === role);
-    return { role, name, ...(s ? { signed: { typedName: s.typedName, signedAt: s.signedAt } } : {}) };
+    return { role, name, firstName: firstNameOf(name), personId, ...(s ? { signed: { typedName: s.typedName, signedAt: s.signedAt } } : {}) };
   };
-  const out = [signer("client", person ? `${person.firstName} ${person.lastName}`.trim() : "Client")];
-  if (e.spouseName) out.push(signer("spouse", e.spouseName));
+  const out = [signer("client", person ? `${person.firstName} ${person.lastName}`.trim() : "Client", lead.personId)];
+  if (e.spouseName) out.push(signer("spouse", e.spouseName, e.spousePersonId));
   return out;
 }
 
@@ -102,8 +118,9 @@ function stateOf(e: Engagement, signers: Signer[]): SigningState {
 
 /** What the signing page shows. `service` is the service-role store, read after the access check. */
 export async function signingView(service: Db, actor: Actor, engagementId: string, now = new Date()): Promise<SigningView> {
-  const { e, lead } = await loadForClient(service, actor, engagementId, now);
+  const { e, lead, slot } = await loadForClient(service, actor, engagementId, now);
   const { firmName, attorneyName } = await signedCopyInput(service, e);
+  const spouse = e.spousePersonId ? await service.persons.get(e.spousePersonId) : undefined;
   const signers = await signersFor(service, e, lead);
   const tier = e.packageSelection ? TIERS.find((t) => t.id === e.packageSelection!.tierId) : undefined;
   const pkg = PACKAGES[e.packageId];
@@ -125,7 +142,7 @@ export async function signingView(service: Db, actor: Actor, engagementId: strin
       fee: `${money(e.feeCents)} flat fee. It does not go up if the work takes longer.`,
       payment,
       next: [
-        e.spouseName ? "Each of you signs below (it is fine to do this one after the other on the same device)." : "You sign below.",
+        e.spouseName ? "Each of you signs from your own link and sign-in, so each signature is your own." : "You sign below.",
         `${attorneyName} countersigns, and you can download your copy right away.`,
         e.paymentPlan || payments.length ? "You get a secure link to pay the firm directly." : "The office sends you a secure payment link.",
         "Your attorney starts preparing your documents and stays in touch through your case page.",
@@ -135,6 +152,9 @@ export async function signingView(service: Db, actor: Actor, engagementId: strin
     attachment: e.attachment ? { name: e.attachment.name, sizeBytes: e.attachment.sizeBytes, sha256: e.attachment.sha256 } : undefined,
     documentSha256: e.documentSha256 ?? "",
     signers,
+    mySlot: slot,
+    spouseEmailHint: spouse?.email ? maskEmail(spouse.email) : undefined,
+    waitingFor: e.status === "voided" ? [] : signers.filter((s) => !s.signed).map((s) => s.firstName),
     paymentLinkUrl: pending?.linkUrl,
     countersigned: e.status === "countersigned",
   };
@@ -176,15 +196,22 @@ export async function signEngagement(
   opts: { payments?: PaymentProvider; notifier?: Notifier } = {},
   now = new Date(),
 ): Promise<{ complete: boolean; signature: SignatureRecord }> {
-  const { e, lead } = await loadForClient(service, actor, input.engagementId, now);
-  if (actor.role !== "client") throw new ForbiddenError("Only the client signs their agreement");
+  const { e, lead, slot } = await loadForClient(service, actor, input.engagementId, now);
+  if (actor.role !== "client" || !slot || !actor.personId) throw new ForbiddenError("Only the client signs their agreement");
+  // Each person signs only their own slot, from their own sign-in: one person can never sign for both.
+  if (input.signerRole !== slot) {
+    throw new ForbiddenError(slot === "client" && e.spouseName
+      ? `Only ${firstNameOf(e.spouseName)} can sign for ${firstNameOf(e.spouseName)}, from their own link.`
+      : "You can only sign for yourself.");
+  }
   if (e.provider !== "builtin" || !e.providerEnvelopeId) throw new SigningError("This agreement is signed through another service. Use the link in your email.");
   if (e.status !== "sent" && e.status !== "viewed") throw new SigningError(e.status === "voided" ? "This agreement was withdrawn. Please call the office." : "This agreement is already signed.");
   if (!input.consent) throw new SigningError("Please agree to use electronic records and signatures first, or ask the office for a paper copy.");
   if (!input.intent) throw new SigningError("Please tick the box to confirm you intend to sign.");
   const signers = await signersFor(service, e, lead);
-  const me = signers.find((s) => s.role === input.signerRole);
+  const me = signers.find((s) => s.role === slot);
   if (!me) throw new SigningError("There is no such signer on this agreement.");
+  if (me.personId !== actor.personId) throw new ForbiddenError("You can only sign for yourself.");
   if (me.signed) throw new SigningError(`${me.name} has already signed.`);
   if (!namesMatch(input.typedName, me.name)) throw new SigningError(`Type the full name as it appears on the agreement: ${me.name}`);
   const hash = await currentDocumentHash(service, e);
@@ -200,6 +227,7 @@ export async function signEngagement(
     expectedName: me.name,
     typedName: input.typedName.trim().slice(0, 200),
     signedByUserId: actor.userId,
+    signerPersonId: actor.personId,
     signedAt: at,
     ipPrefix: input.device?.ipPrefix,
     userAgent: input.device?.userAgent,

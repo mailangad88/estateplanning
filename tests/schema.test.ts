@@ -108,7 +108,10 @@ describe("db/schema.sql", () => {
     }
     expect(sql).not.toMatch(/CREATE POLICY \w+ ON stored_blobs[^;]*TO app_user/);
     expect(sql.split("\n").filter((l) => /^GRANT/.test(l) && /stored_blobs/.test(l) && /TO app_user/.test(l))).toEqual([]);
-    expect(sql).toMatch(/CREATE POLICY engagement_signatures_select ON engagement_signatures FOR SELECT TO app_user\s+USING \(lead_access\(lead_id\) IN \('full','client'\)\)/);
+    expect(sql).toMatch(/CREATE POLICY engagement_signatures_select ON engagement_signatures FOR SELECT TO app_user\s+USING \(lead_access\(lead_id\) IN \('full','client'\) OR \(app_role\(\) = 'client' AND signer_person_id = app_person_id\(\)\)\)/);
+    // each signer signs only their own slot, from their own client login
+    expect(sql).toMatch(/CREATE TRIGGER engagement_signatures_signer_guard BEFORE INSERT ON engagement_signatures/);
+    expect(sql).toMatch(/signer_person_id\s+text NOT NULL REFERENCES persons\(id\)/);
   });
 
   it("marketing only gets the aggregate funnel view", () => {

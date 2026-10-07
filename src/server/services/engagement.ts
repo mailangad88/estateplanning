@@ -17,6 +17,7 @@ import { advanceStage, applyStatus, documentHash, getEngagement, leadFor, RANK, 
 import { fieldLabel, fillTemplate, type MergeFieldKey, type Segment } from "@/lib/retainerTemplates";
 import { mergeValuesForLead, pickTemplate, templateForLead } from "@/server/services/retainerTemplates";
 import { inviteClient } from "@/server/services/clientPortal";
+import { checkSpouseEmail, firstNameOf, inviteSpouse, setSpouseSigner, type SpouseInvite } from "@/server/services/coSigner";
 import { signingPath } from "@/server/esign/builtin";
 import { emailTransportFromEnv, type EmailTransport } from "@/server/notify/transports";
 import {
@@ -98,7 +99,11 @@ export interface DraftInput {
   terms?: RetainerTermsInput;
   customScope?: string;
   feeTreatment?: FeeTreatment;
-  couple?: { spouseName: string };
+  /**
+   * Joint representation. The second client signs from their own login: with `spouseEmail` they get their
+   * own invite when the agreement is sent; without it the first client is asked for it on the signing page.
+   */
+  couple?: { spouseName: string; spouseEmail?: string };
   /** Defaults to ESIGN_PROVIDER or "builtin" */
   providerName?: string;
   /**
@@ -269,8 +274,10 @@ export async function prepareDraft(db: Db, actor: Actor, input: DraftInput, now 
 export async function draftEngagement(db: Db, actor: Actor, input: DraftInput, now = new Date()): Promise<Engagement> {
   const { lead, firmId, lawyerId, pkg, feeCents, terms, template, letter, missing } = await prepareDraft(db, actor, input, now);
   if (missing.length) throw new MissingFieldsError(missing);
+  const spouseEmail = input.couple?.spouseEmail?.trim();
+  if (input.couple && spouseEmail) await checkSpouseEmail(db, lead, input.couple.spouseName, spouseEmail);
   const at = now.toISOString();
-  const e = await db.engagements.insert({
+  let e = await db.engagements.insert({
     id: randomUUID(),
     leadId: lead.id,
     firmId,
@@ -290,6 +297,7 @@ export async function draftEngagement(db: Db, actor: Actor, input: DraftInput, n
     spouseName: input.couple?.spouseName.trim() || undefined,
     attachment: template?.pdf,
   });
+  if (e.spouseName && spouseEmail) e = (await setSpouseSigner(db, lead, e, spouseEmail)).engagement;
   await audit(db, actor, {
     action: "engagement.draft",
     resourceType: "engagement",
@@ -377,6 +385,10 @@ export interface SigningInvite {
   link: string;
   /** False when the email went to the log only (OUTBOUND_SEND_MODE is not live) */
   delivered: boolean;
+  /** Joint representation: the second client's own invite, when their email is on file */
+  spouse?: SpouseInvite;
+  /** Joint representation without the second client's email: the first client is asked for it when they sign */
+  spouseEmailNeeded?: { firstName: string };
 }
 
 /**
@@ -388,7 +400,14 @@ async function deliverSigningInvite(db: Db, actor: Actor, lead: Lead, e: Engagem
   const person = await db.persons.get(lead.personId);
   const { link } = await inviteClient(db, actor, lead.id, now);
   const target = `${link}&next=${encodeURIComponent(signingPath(e.id))}`;
-  if (!person?.email) return { link: target, delivered: false };
+  // The second client gets their own invite to their own login, after the first client's
+  const spouse = async (): Promise<Pick<SigningInvite, "spouse" | "spouseEmailNeeded">> =>
+    !e.spouseName
+      ? {}
+      : e.spousePersonId
+        ? { spouse: await inviteSpouse(db, actor, e.id, undefined, { email }, now) }
+        : { spouseEmailNeeded: { firstName: firstNameOf(e.spouseName) } };
+  if (!person?.email) return { link: target, delivered: false, ...(await spouse()) };
   const base = (process.env.APP_URL ?? "http://localhost:3000").replace(/\/$/, "");
   const sent = await email.send({
     to: person.email,
@@ -398,7 +417,7 @@ async function deliverSigningInvite(db: Db, actor: Actor, lead: Lead, e: Engagem
     tag: "engagement-signing-invite",
   });
   await systemNote(db, lead.id, sent.dryRun ? "Signing link prepared (email dry run: not sent)" : "Signing link emailed to the client", now.toISOString(), actor.userId);
-  return { link: target, delivered: !sent.dryRun };
+  return { link: target, delivered: !sent.dryRun, ...(await spouse()) };
 }
 
 export type StoreBlob = (key: string, bytes: Uint8Array) => void | Promise<void>;

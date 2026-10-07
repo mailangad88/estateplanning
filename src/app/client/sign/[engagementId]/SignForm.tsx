@@ -8,15 +8,15 @@ interface Props {
   engagementId: string;
   documentSha256: string;
   signer: { role: "client" | "spouse"; name: string };
-  /** The other spouse, when they still have to sign */
-  nextSigner?: string;
+  /** Joint representation: each spouse signs their own copy of this form, from their own sign-in */
+  joint?: boolean;
   disclosure: { heading: string; points: string[] };
   consentText: string;
   intentText: string;
 }
 
 /** One signer's consent, typed name and intent. The page refreshes after each signature. */
-export function SignForm({ engagementId, documentSha256, signer, nextSigner, disclosure, consentText, intentText }: Props) {
+export function SignForm({ engagementId, documentSha256, signer, joint, disclosure, consentText, intentText }: Props) {
   const router = useRouter();
   const [consent, setConsent] = useState(false);
   const [intent, setIntent] = useState(false);
@@ -36,8 +36,8 @@ export function SignForm({ engagementId, documentSha256, signer, nextSigner, dis
       });
       const json = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(json.error ?? "Something went wrong. Please try again.");
-      // Once everyone has signed, the confirmation shows at the top of the page: take them there
-      if (json.complete) window.scrollTo({ top: 0, behavior: "smooth" });
+      // The confirmation (or "Waiting for Riley") shows at the top of the page: take them there
+      window.scrollTo({ top: 0, behavior: "smooth" });
       router.refresh();
     } catch (e) {
       setError(e instanceof Error ? e.message : "Something went wrong. Please try again.");
@@ -53,8 +53,7 @@ export function SignForm({ engagementId, documentSha256, signer, nextSigner, dis
         if (ready) void submit();
       }}
     >
-      <h2>{signer.role === "spouse" ? `Signing as ${signer.name}` : nextSigner ? `Signing as ${signer.name}` : "Sign your agreement"}</h2>
-      {nextSigner && <p className={styles.small}>{nextSigner} signs next, right after you, on this device or later.</p>}
+      <h2>{joint ? `Signing as ${signer.name}` : "Sign your agreement"}</h2>
 
       <div className={styles.disclosure}>
         <strong>{disclosure.heading}</strong>

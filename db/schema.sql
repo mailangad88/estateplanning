@@ -223,6 +223,7 @@ CREATE TABLE engagements (
   payment_plan         jsonb,                              -- {mode, totalCents, account, installments[{n, kind, amountCents, dueOn, status, paymentId, paidAt}]}
   template_id          text,                               -- retainer_templates.id the letter was filled from; NULL = fallback letter
   spouse_name          text,                               -- joint representation: the second client, who signs too
+  spouse_person_id     text REFERENCES persons(id),        -- the second client's own person (and client login); they sign only their own slot
   attachment           jsonb,                              -- {name, storageKey, sha256, sizeBytes}: the firm's own agreement PDF
   document_sha256      text                                -- binds letter + attachment; fixed at approval, recorded on every signature
 );
@@ -623,7 +624,8 @@ CREATE TABLE engagement_signatures (
   signer_role        text NOT NULL CHECK (signer_role IN ('client','spouse')),
   expected_name      text NOT NULL,
   typed_name         text NOT NULL,
-  signed_by_user_id  text NOT NULL,
+  signed_by_user_id  text NOT NULL REFERENCES users(id),
+  signer_person_id   text NOT NULL REFERENCES persons(id),  -- the person whose slot this is; checked by engagement_signature_signer_guard
   signed_at          timestamptz NOT NULL,
   ip_prefix          text,
   user_agent         text,
@@ -763,6 +765,33 @@ CREATE TRIGGER engagement_signatures_no_truncate BEFORE TRUNCATE ON engagement_s
   FOR EACH STATEMENT EXECUTE FUNCTION forbid_mutation();
 CREATE TRIGGER stored_blobs_immutable BEFORE UPDATE OR DELETE ON stored_blobs
   FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
+
+-- Each signer signs only their own slot, from their own client login: the signing user must be a client whose
+-- person is the signer, and that person must be the lead's client (slot 'client') or the engagement's second
+-- client (slot 'spouse'). One person never fills both slots.
+CREATE FUNCTION engagement_signature_signer_guard() RETURNS trigger LANGUAGE plpgsql AS $$
+DECLARE
+  u_person text; u_role text; lead_person text; e_lead text; e_spouse text;
+BEGIN
+  SELECT person_id, role INTO u_person, u_role FROM users WHERE id = NEW.signed_by_user_id;
+  IF u_role IS DISTINCT FROM 'client' OR u_person IS DISTINCT FROM NEW.signer_person_id THEN
+    RAISE EXCEPTION 'a signature must be made by the signer''s own client login';
+  END IF;
+  SELECT lead_id, spouse_person_id INTO e_lead, e_spouse FROM engagements WHERE id = NEW.engagement_id;
+  SELECT person_id INTO lead_person FROM leads WHERE id = NEW.lead_id;
+  IF e_lead IS DISTINCT FROM NEW.lead_id THEN
+    RAISE EXCEPTION 'signature lead does not match the engagement';
+  END IF;
+  IF NEW.signer_role = 'client' AND NEW.signer_person_id IS DISTINCT FROM lead_person THEN
+    RAISE EXCEPTION 'only the client signs the client slot';
+  END IF;
+  IF NEW.signer_role = 'spouse' AND (e_spouse IS NULL OR NEW.signer_person_id IS DISTINCT FROM e_spouse OR e_spouse = lead_person) THEN
+    RAISE EXCEPTION 'only the second client signs the second client slot';
+  END IF;
+  RETURN NEW;
+END $$;
+CREATE TRIGGER engagement_signatures_signer_guard BEFORE INSERT ON engagement_signatures
+  FOR EACH ROW EXECUTE FUNCTION engagement_signature_signer_guard();
 
 -- Retainer templates: the wording of a saved version never changes, for anyone. Status only moves
 -- draft -> approved | retired and approved -> superseded | retired. In a user session only an attorney of the
@@ -996,7 +1025,9 @@ CREATE POLICY users_write ON users FOR ALL TO app_user  -- manage_users; firm ad
 
 -- persons: visible with a lead you can read beyond the offer card (leads RLS applies inside)
 CREATE POLICY persons_select ON persons FOR SELECT TO app_user
-  USING (id = app_person_id() OR EXISTS (SELECT 1 FROM leads l WHERE l.person_id = persons.id));
+  USING (id = app_person_id() OR EXISTS (SELECT 1 FROM leads l WHERE l.person_id = persons.id)
+         -- a second client on a joint engagement: visible to whoever can see that engagement (engagements RLS applies)
+         OR EXISTS (SELECT 1 FROM engagements e WHERE e.spouse_person_id = persons.id));
 CREATE POLICY persons_insert ON persons FOR INSERT TO app_user
   WITH CHECK (app_role() IN ('platform_admin','intake'));
 CREATE POLICY persons_update ON persons FOR UPDATE TO app_user
@@ -1199,7 +1230,7 @@ CREATE POLICY retainer_templates_update ON retainer_templates FOR UPDATE TO app_
 -- signature records: read by whoever sees the whole case or is the client on it. Written by the service
 -- role after the policy.ts check; nobody updates or deletes them.
 CREATE POLICY engagement_signatures_select ON engagement_signatures FOR SELECT TO app_user
-  USING (lead_access(lead_id) IN ('full','client'));
+  USING (lead_access(lead_id) IN ('full','client') OR (app_role() = 'client' AND signer_person_id = app_person_id()));
 -- stored_blobs: no app_user policy at all. The server reads bytes as the service role after its own check.
 
 -- audit: insert-only for everyone; read by platform_admin, and firm_admin for their leads.

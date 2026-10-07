@@ -116,7 +116,7 @@ export const TABLES = {
       t("providerEnvelopeId", "provider_envelope_id", true), t("letter", "letter", true), t("approvedBy", "approved_by", true),
       ts("approvedAt", "approved_at", true), j("history", "history"), a("remindersSent", "reminders_sent"),
       a("documentIds", "document_ids"), j("packageSelection", "package_selection", true), j("paymentPlan", "payment_plan", true),
-      t("templateId", "template_id", true), t("spouseName", "spouse_name", true), j("attachment", "attachment", true),
+      t("templateId", "template_id", true), t("spouseName", "spouse_name", true), t("spousePersonId", "spouse_person_id", true), j("attachment", "attachment", true),
       t("documentSha256", "document_sha256", true),
     ],
   },
@@ -133,7 +133,7 @@ export const TABLES = {
     table: "engagement_signatures",
     columns: [
       t("id", "id"), t("engagementId", "engagement_id"), t("leadId", "lead_id"), t("firmId", "firm_id"), t("signerRole", "signer_role"),
-      t("expectedName", "expected_name"), t("typedName", "typed_name"), t("signedByUserId", "signed_by_user_id"), ts("signedAt", "signed_at"),
+      t("expectedName", "expected_name"), t("typedName", "typed_name"), t("signedByUserId", "signed_by_user_id"), t("signerPersonId", "signer_person_id"), ts("signedAt", "signed_at"),
       t("ipPrefix", "ip_prefix", true), t("userAgent", "user_agent", true), t("letterSha256", "letter_sha256"),
       t("attachmentSha256", "attachment_sha256", true), t("documentSha256", "document_sha256"), t("consentVersion", "consent_version"),
       ts("consentAt", "consent_at"), b("intent", "intent"),

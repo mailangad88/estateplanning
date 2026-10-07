@@ -32,6 +32,8 @@ import {
 } from "@/server/services/retainerTemplates";
 import { markViewed, namesMatch, signEngagement, signingView, SigningError } from "@/server/services/signing";
 import { getBlob } from "@/server/storage/blobs";
+import { acceptInvite, clientStatus, verifyInvite } from "@/server/services/clientPortal";
+import { inviteSpouse } from "@/server/services/coSigner";
 import type { Actor, Lead } from "@/server/types";
 
 const T0 = new Date("2026-10-07T15:00:00Z");
@@ -301,23 +303,76 @@ describe("built-in e-sign", () => {
     await expect(sign(db, esign, pay, { engagementId: e.id, documentSha256: hash })).rejects.toThrow(SigningError);
   });
 
-  it("a couple needs both signatures before the retainer counts as signed", async () => {
+  it("a couple: each spouse gets their own invite and signs only their own slot, from their own login", async () => {
+    const { db, esign, pay, email } = await setup();
+    await approvedTemplate(db);
+    // each spouse needs their own email: the first client's is refused before anything is saved
+    await expect(sendWithTemplate(db, esign, pay, email, { couple: { spouseName: "Jamie Client", spouseEmail: "PAT@x.test" } })).rejects.toThrow(/own email/);
+    expect(await db.engagements.list()).toEqual([]);
+    const e = await sendWithTemplate(db, esign, pay, email, { couple: { spouseName: "Jamie Client", spouseEmail: "jamie@x.test" } });
+    expect(e.letter).toContain("Pat Client and Jamie Client");
+    // two invites: one per spouse, each to their own address and their own login
+    expect(email.sent.map((m) => m.to)).toEqual(["pat@x.test", "jamie@x.test"]);
+    expect(e.signingInvite?.spouse).toMatchObject({ firstName: "Jamie", emailHint: "j•••@x.test", delivered: false });
+    const spouseToken = new URLSearchParams(e.signingInvite!.spouse!.link!.split("?")[1]).get("token")!;
+    const spouseUser = (await db.users.get(verifyInvite(spouseToken, T0)!.uid))!;
+    expect(spouseUser).toMatchObject({ role: "client", email: "jamie@x.test", personId: e.spousePersonId });
+    expect(spouseUser.personId).not.toBe("p1");
+    const spouse: Actor = { userId: spouseUser.id, role: "client", personId: spouseUser.personId, firmId: "f1", mfa: true };
+    // and the spouse signs in through the same single-use invite flow
+    expect((await acceptInvite(db, spouseToken, hours(1))).userId).toBe(spouseUser.id);
+
+    const view = await signingView(db, client, e.id, hours(1));
+    expect(view.signers.map((s) => s.name)).toEqual(["Pat Client", "Jamie Client"]);
+    expect(view.mySlot).toBe("client");
+    expect(view.waitingFor).toEqual(["Pat", "Jamie"]);
+    // the spouse slot cannot be signed from the first client's session
+    await expect(sign(db, esign, pay, { engagementId: e.id, documentSha256: view.documentSha256, signerRole: "spouse", typedName: "Jamie Client" })).rejects.toThrow(ForbiddenError);
+    const first = await sign(db, esign, pay, { engagementId: e.id, documentSha256: view.documentSha256 });
+    expect(first.complete).toBe(false);
+    expect(first.signature).toMatchObject({ signerRole: "client", signerPersonId: "p1", signedByUserId: "u-client" });
+    const partly = await signingView(db, client, e.id, hours(1));
+    expect(partly.state).toBe("partly_signed");
+    expect(partly.waitingFor).toEqual(["Jamie"]);
+    expect((await db.leads.get("lead1"))!.stage).toBe("proposal_sent");
+    expect((await db.engagements.get(e.id))!.status).not.toBe("signed");
+    await expect(sign(db, esign, pay, { engagementId: e.id, documentSha256: view.documentSha256, signerRole: "spouse", typedName: "Jamie Client" })).rejects.toThrow(/Only Jamie can sign/);
+
+    // the spouse sees only this agreement, not the case, and cannot sign the first client's slot
+    const spouseView = await signingView(db, spouse, e.id, hours(2));
+    expect(spouseView.mySlot).toBe("spouse");
+    await expect(clientStatus(db, spouse, "lead1")).rejects.toThrow();
+    const asSpouse = (input: Partial<Parameters<typeof signEngagement>[2]>) =>
+      signEngagement(db, spouse, { engagementId: e.id, documentSha256: view.documentSha256, signerRole: "spouse", typedName: "Jamie Client", consent: true, intent: true, ...input }, esign, { payments: pay }, hours(3));
+    await expect(asSpouse({ signerRole: "client", typedName: "Pat Client" })).rejects.toThrow(ForbiddenError);
+    await expect(asSpouse({ typedName: "Pat Client" })).rejects.toThrow(/Jamie Client/);
+    const second = await asSpouse({});
+    expect(second.complete).toBe(true);
+    expect(second.signature).toMatchObject({ signerRole: "spouse", signerPersonId: spouseUser.personId, signedByUserId: spouseUser.id });
+    expect((await db.leads.get("lead1"))!.stage).toBe("retainer_signed");
+    expect((await db.signatures.list(undefined, { engagementId: e.id })).map((s) => s.signerRole).sort()).toEqual(["client", "spouse"]);
+    expect((await signingView(db, client, e.id, hours(3))).waitingFor).toEqual([]);
+  });
+
+  it("a couple without the spouse's email: the first client gives it and the spouse gets their own link, which the first client never sees", async () => {
     const { db, esign, pay, email } = await setup();
     await approvedTemplate(db);
     const e = await sendWithTemplate(db, esign, pay, email, { couple: { spouseName: "Jamie Client" } });
-    expect(e.letter).toContain("Pat Client and Jamie Client");
-    const view = await signingView(db, client, e.id, hours(1));
-    expect(view.signers.map((s) => s.name)).toEqual(["Pat Client", "Jamie Client"]);
-    const first = await sign(db, esign, pay, { engagementId: e.id, documentSha256: view.documentSha256 });
-    expect(first.complete).toBe(false);
-    expect((await signingView(db, client, e.id, hours(1))).state).toBe("partly_signed");
-    expect((await db.leads.get("lead1"))!.stage).toBe("proposal_sent");
-    expect((await db.engagements.get(e.id))!.status).not.toBe("signed");
-    await expect(sign(db, esign, pay, { engagementId: e.id, documentSha256: view.documentSha256, signerRole: "spouse", typedName: "Pat Client" })).rejects.toThrow(/Jamie Client/);
-    const second = await sign(db, esign, pay, { engagementId: e.id, documentSha256: view.documentSha256, signerRole: "spouse", typedName: "Jamie Client" }, undefined, hours(3));
-    expect(second.complete).toBe(true);
-    expect((await db.leads.get("lead1"))!.stage).toBe("retainer_signed");
-    expect((await db.signatures.list(undefined, { engagementId: e.id })).map((s) => s.signerRole).sort()).toEqual(["client", "spouse"]);
+    expect(e.signingInvite?.spouseEmailNeeded).toEqual({ firstName: "Jamie" });
+    expect(e.spousePersonId).toBeUndefined();
+    // nobody can sign the spouse slot yet: there is no second client login
+    await expect(sign(db, esign, pay, { engagementId: e.id, documentSha256: e.documentSha256!, signerRole: "spouse", typedName: "Jamie Client" })).rejects.toThrow(ForbiddenError);
+    await expect(inviteSpouse(db, client, e.id, "pat@x.test", { email }, hours(1))).rejects.toThrow(/own email/);
+    await expect(inviteSpouse(db, strangerClient, e.id, "jamie@x.test", { email }, hours(1))).rejects.toThrow(ForbiddenError);
+    const byClient = await inviteSpouse(db, client, e.id, "Jamie@X.test", { email }, hours(1));
+    expect(byClient).toEqual({ name: "Jamie Client", firstName: "Jamie", emailHint: "j•••@x.test", delivered: false });
+    expect(byClient).not.toHaveProperty("link"); // holding it would let the first client sign in as Jamie
+    expect(email.sent.at(-1)).toMatchObject({ to: "jamie@x.test", tag: "engagement-signing-invite" });
+    expect((await signingView(db, client, e.id, hours(1))).spouseEmailHint).toBe("j•••@x.test");
+    // the office can resend it, and sees the link to text it
+    const byOffice = await inviteSpouse(db, paralegal, e.id, undefined, { email }, hours(2));
+    expect(byOffice.link).toMatch(/^\/client\/welcome\?token=/);
+    expect((await db.audit.list()).filter((a) => a.action === "engagement.cosigner_invite").map((a) => (a.detail as { requestedBy: string }).requestedBy)).toEqual(["client", "office"]);
   });
 
   it("rejects forged events and sends reminders for unsigned built-in envelopes", async () => {

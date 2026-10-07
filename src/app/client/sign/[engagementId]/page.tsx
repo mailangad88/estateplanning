@@ -6,6 +6,7 @@ import { BuiltinEsignProvider, builtinSecret } from "@/server/esign/builtin";
 import { currentActor, getDb } from "@/server/runtime";
 import { markViewed, signingView, type SigningView } from "@/server/services/signing";
 import { SignForm } from "./SignForm";
+import { SpouseLink } from "./SpouseLink";
 import styles from "./sign.module.css";
 
 export const dynamic = "force-dynamic";
@@ -32,16 +33,24 @@ export default async function SignPage({ params }: { params: Promise<{ engagemen
     if (err instanceof ForbiddenError && /Two-step/.test(err.message)) return <Message><p>One more step to confirm it is you. <Link href="/portal/login/verify">Continue</Link></p></Message>;
     return <Message><p>We could not open this agreement. Please call {firm.phone} and the office will help.</p></Message>;
   }
-  const pending = view.signers.filter((s) => !s.signed);
-  const me = pending[0];
+  // Each person signs only their own slot: the form is for the signed-in signer, never the other spouse.
+  const mine = view.signers.find((s) => s.role === view.mySlot);
+  const me = mine && !mine.signed ? mine : undefined;
+  const others = view.signers.filter((s) => s.role !== view.mySlot);
+  const spouseSlot = view.signers.find((s) => s.role === "spouse");
   const isClient = actor.role === "client";
+  const open = view.state === "ready" || view.state === "partly_signed";
+  // The first client can send the second client their own link (it goes to them, never to this page)
+  const spouseLink = open && view.mySlot === "client" && spouseSlot && !spouseSlot.signed
+    ? <SpouseLink engagementId={view.engagementId} spouseFirstName={spouseSlot.firstName} emailHint={view.spouseEmailHint} />
+    : null;
   const disclosure = esignDisclosure(view.firmName);
 
   return (
     <div className={styles.wrap}>
       <p className={styles.eyebrow}>{view.firmName}</p>
       <h1 className={styles.title}>Your engagement agreement</h1>
-      {!isClient && <p className="notice">Staff preview: this is what the client sees. Only the client can sign.</p>}
+      {!isClient && <p className="notice">Staff preview: this is what the client sees. Each client signs only from their own sign-in.</p>}
 
       {view.state === "voided" && <p className="callout">This agreement was withdrawn by the office. Please call {firm.phone} if you have questions.</p>}
 
@@ -61,11 +70,16 @@ export default async function SignPage({ params }: { params: Promise<{ engagemen
         </section>
       )}
 
-      {view.state === "partly_signed" && (
-        <p className="callout">
-          {view.signers.filter((s) => s.signed).map((s) => s.name).join(" and ")} signed. Waiting for {pending.map((s) => s.name).join(" and ")}.
-        </p>
+      {open && mine?.signed && (
+        <section className={styles.waiting} aria-live="polite">
+          <h2>You signed. Waiting for {view.waitingFor.join(" and ")}.</h2>
+          <p>{others.filter((s) => !s.signed).map((s) => s.firstName).join(" and ")} signs from their own link. You will both get a copy once everyone has signed.</p>
+        </section>
       )}
+      {open && !mine?.signed && view.state === "partly_signed" && (
+        <p className="callout">{view.signers.filter((s) => s.signed).map((s) => s.firstName).join(" and ")} signed. Waiting for {view.waitingFor.join(" and ")}.</p>
+      )}
+      {spouseLink && mine?.signed && spouseLink}
 
       <section className={styles.summary} aria-labelledby="summary-h">
         <h2 id="summary-h">In plain words</h2>
@@ -101,12 +115,13 @@ export default async function SignPage({ params }: { params: Promise<{ engagemen
           engagementId={view.engagementId}
           documentSha256={view.documentSha256}
           signer={{ role: me.role, name: me.name }}
-          nextSigner={pending[1]?.name}
+          joint={view.signers.length > 1}
           disclosure={disclosure}
           consentText={ESIGN_CONSENT_CHECKBOX}
           intentText={ESIGN_INTENT_CHECKBOX}
         />
       )}
+      {spouseLink && !mine?.signed && spouseLink}
       <p className={styles.small}>Document fingerprint (sha256): <code>{view.documentSha256.slice(0, 16)}…</code> It is recorded with your signature so anyone can check the copy was not changed.</p>
     </div>
   );

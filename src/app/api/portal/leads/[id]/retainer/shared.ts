@@ -17,6 +17,8 @@ export const RetainerForm = z.object({
       .optional(),
   }),
   spouseName: z.string().max(200).optional(),
+  /** The second client's own email, for their own invite. Optional: without it the first client is asked for it. */
+  spouseEmail: z.string().max(200).optional(),
   mergeValues: z.record(z.string(), z.string().max(2000)).optional(),
   templateId: z.string().max(200).optional(),
   useFallback: z.boolean().optional(),
@@ -27,7 +29,7 @@ export function draftInput(leadId: string, body: unknown): DraftInput {
   return {
     leadId,
     terms: f.terms,
-    couple: f.spouseName?.trim() ? { spouseName: f.spouseName.trim() } : undefined,
+    couple: f.spouseName?.trim() ? { spouseName: f.spouseName.trim(), spouseEmail: f.spouseEmail?.trim() || undefined } : undefined,
     mergeValues: f.mergeValues,
     templateId: f.templateId || undefined,
     useFallback: f.useFallback,
