@@ -24,6 +24,8 @@ faqs:
     a: "Yes. If a minor is 14 or older, the minor may nominate the guardian for the court to consider (755 ILCS 5/11-5). The court still decides what is in the child's best interest."
   - q: "When does an Illinois guardianship of a minor end?"
     a: "It ends automatically when the child turns 18. A parent can ask the court to end it sooner by showing a material change in circumstances (755 ILCS 5/11-14.1)."
+  - q: "Is guardianship the same as conservatorship in Illinois?"
+    a: "Illinois law uses the word guardian for both roles. A guardian of the person makes personal and care decisions, and a guardian of the estate manages money and property, which is the job some other states call a conservator. The court can appoint one person to do both."
 related:
   - "illinois"
   - "illinois/illinois-power-of-attorney-for-property"

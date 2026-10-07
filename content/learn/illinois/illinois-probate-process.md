@@ -21,6 +21,10 @@ faqs:
     a: "The law allows an executor to file forms, but the process has strict notice, publication and reporting steps, and mistakes can cause personal liability. Many executors hire an attorney for at least part of the work. Our attorneys can explain which steps your estate needs."
   - q: "What happens if there is no will in Illinois?"
     a: "The court appoints an administrator, usually a close relative, and state law decides who inherits. The same steps for notice, claims and closing apply. Our guide on who inherits without a will in Illinois covers the shares."
+  - q: "Does a will avoid probate in Illinois?"
+    a: "No. A will tells the probate court who should receive your property, but the court still oversees the estate. Small estates may use the small estate affidavit, a home can pass by a transfer on death instrument, and assets held in a funded living trust skip probate altogether."
+  - q: "What is the Cook County Probate Division?"
+    a: "It is the part of the Circuit Court of Cook County that handles estates, wills and guardianships for Chicago and the suburbs. The clerk's probate office is in Room 1202 of the Richard J. Daley Center, 50 West Washington Street, documents are filed through eFile Illinois, and the clerk lists no fee for filing a will."
 related:
   - "illinois"
   - "illinois/how-long-does-probate-take-in-illinois"
