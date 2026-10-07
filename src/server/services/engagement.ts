@@ -13,7 +13,12 @@ import { assertCan, canOnLead, ForbiddenError } from "@/server/auth/policy";
 import type { EsignProvider } from "@/server/esign/provider";
 import type { PaymentProvider } from "@/server/esign/payments";
 import { recordBillableEvent } from "@/server/fees/admin";
-import { advanceStage, applyStatus, getEngagement, leadFor, RANK, seen, systemNote } from "@/server/services/engagementShared";
+import { advanceStage, applyStatus, documentHash, getEngagement, leadFor, RANK, seen, systemNote } from "@/server/services/engagementShared";
+import { fieldLabel, fillTemplate, type MergeFieldKey, type Segment } from "@/lib/retainerTemplates";
+import { mergeValuesForLead, pickTemplate, templateForLead } from "@/server/services/retainerTemplates";
+import { inviteClient } from "@/server/services/clientPortal";
+import { signingPath } from "@/server/esign/builtin";
+import { emailTransportFromEnv, type EmailTransport } from "@/server/notify/transports";
 import {
   activatePlan,
   applyPaymentEvent,
@@ -23,7 +28,7 @@ import {
   tierFor,
   type RetainerTermsInput,
 } from "@/server/services/retainerPayments";
-import type { Actor, Engagement, EngagementStatus, Lead } from "@/server/types";
+import type { Actor, Engagement, EngagementStatus, Lead, RetainerTemplate } from "@/server/types";
 
 export type FeeTreatment = "earned_on_receipt" | "trust_until_milestones";
 
@@ -94,8 +99,39 @@ export interface DraftInput {
   customScope?: string;
   feeTreatment?: FeeTreatment;
   couple?: { spouseName: string };
-  /** Defaults to ESIGN_PROVIDER or "mock" */
+  /** Defaults to ESIGN_PROVIDER or "builtin" */
   providerName?: string;
+  /**
+   * The firm's approved retainer template to fill. Omitted: the firm's default (or newest approved) template
+   * for the lead's matter type; the platform's fallback letter only when the firm has none.
+   */
+  templateId?: string;
+  /** Use the platform's fallback letter even when the firm has a template */
+  useFallback?: boolean;
+  /** Values the lawyer typed in for merge fields the record does not have (e.g. the client's address) */
+  mergeValues?: Record<string, string>;
+}
+
+/** The letter cannot go out while a merge field is empty. */
+export class MissingFieldsError extends Error {
+  constructor(readonly fields: MergeFieldKey[]) {
+    super(`Fill in before sending: ${fields.map(fieldLabel).join(", ")}`);
+    this.name = "MissingFieldsError";
+  }
+}
+
+export interface PreparedDraft {
+  lead: Lead;
+  firmId: string;
+  lawyerId: string;
+  pkg: EngagementPackage;
+  feeCents: number;
+  terms?: ReturnType<typeof buildTerms>;
+  template?: RetainerTemplate;
+  letter: string;
+  /** Filled template segments for the preview (fallback letter: one text segment) */
+  segments: Segment[];
+  missing: MergeFieldKey[];
 }
 
 const money = (cents: number) => `$${(cents / 100).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
@@ -156,7 +192,13 @@ async function assertOnLead(db: Db, actor: Actor, e: Engagement, action: "draft_
   return lead;
 }
 
-export async function draftEngagement(db: Db, actor: Actor, input: DraftInput, now = new Date()): Promise<Engagement> {
+/**
+ * Everything a draft needs, without writing anything: the fee and package (existing fee rules and payment
+ * plan limits apply), the firm's template filled with what the client already told us, and which fields are
+ * still missing. The lead page's "Send retainer" preview calls this; draftEngagement calls it and refuses
+ * while anything is missing.
+ */
+export async function prepareDraft(db: Db, actor: Actor, input: DraftInput, now = new Date()): Promise<PreparedDraft> {
   const lead = await db.leads.get(input.leadId);
   if (!lead) throw new Error(`lead not found: ${input.leadId}`);
   assertCan(canOnLead(actor, "draft_engagement", lead, await db.assignments.list(), now));
@@ -192,6 +234,24 @@ export async function draftEngagement(db: Db, actor: Actor, input: DraftInput, n
   const firmId = lead.firmId ?? lawyer?.firmId;
   if (!firmId) throw new Error("lead has no firm");
 
+  const template = input.useFallback
+    ? undefined
+    : input.templateId
+      ? await templateForLead(db, input.templateId, firmId, lead.matterType)
+      : await pickTemplate(db, firmId, lead.matterType);
+  if (template) {
+    const values = await mergeValuesForLead(db, actor, { ...lead, firmId }, {
+      packageName: pkg.name,
+      feeCents,
+      selection: terms?.selection,
+      plan: terms?.plan,
+      spouseName: input.couple?.spouseName,
+      overrides: input.mergeValues,
+    }, now);
+    const filled = fillTemplate(template.body, values);
+    return { lead, firmId, lawyerId, pkg, feeCents, terms, template, letter: filled.text, segments: filled.segments, missing: filled.missing };
+  }
+  // No approved template for this firm and matter: the platform's fallback letter, which keeps its DRAFT banner.
   const letter = renderLetter({
     clientName: `${person.firstName} ${person.lastName}`,
     pkg,
@@ -203,6 +263,12 @@ export async function draftEngagement(db: Db, actor: Actor, input: DraftInput, n
     selection: terms?.selection,
     plan: terms?.plan,
   });
+  return { lead, firmId, lawyerId, pkg, feeCents, terms, letter, segments: [{ text: letter }], missing: [] };
+}
+
+export async function draftEngagement(db: Db, actor: Actor, input: DraftInput, now = new Date()): Promise<Engagement> {
+  const { lead, firmId, lawyerId, pkg, feeCents, terms, template, letter, missing } = await prepareDraft(db, actor, input, now);
+  if (missing.length) throw new MissingFieldsError(missing);
   const at = now.toISOString();
   const e = await db.engagements.insert({
     id: randomUUID(),
@@ -215,13 +281,23 @@ export async function draftEngagement(db: Db, actor: Actor, input: DraftInput, n
     packageSelection: terms?.selection,
     paymentPlan: terms?.plan,
     status: "draft",
-    provider: input.providerName ?? process.env.ESIGN_PROVIDER ?? "mock",
+    provider: input.providerName ?? process.env.ESIGN_PROVIDER ?? "builtin",
     letter,
     history: [{ status: "draft", at }],
     remindersSent: [],
     documentIds: [],
+    templateId: template?.id,
+    spouseName: input.couple?.spouseName.trim() || undefined,
+    attachment: template?.pdf,
   });
-  await audit(db, actor, { action: "engagement.draft", resourceType: "engagement", resourceId: e.id, leadId: lead.id, detail: { packageId: pkg.id, status: "draft", ...(terms ? { planMode: terms.plan.mode, account: terms.plan.account } : {}) }, at: now });
+  await audit(db, actor, {
+    action: "engagement.draft",
+    resourceType: "engagement",
+    resourceId: e.id,
+    leadId: lead.id,
+    detail: { packageId: pkg.id, status: "draft", ...(terms ? { planMode: terms.plan.mode, account: terms.plan.account } : {}), ...(template ? { templateId: template.id } : { template: "fallback" }) },
+    at: now,
+  });
   return e;
 }
 
@@ -235,6 +311,8 @@ export async function approveEngagement(db: Db, actor: Actor, engagementId: stri
     approvedBy: actor.userId,
     approvedAt: at,
     history: [...e.history, { status: "approved", at }],
+    // What the attorney approved is exactly what the client signs: the hash is fixed here and checked at signing.
+    documentSha256: documentHash(e.letter ?? "", e.attachment?.sha256).documentSha256,
   });
   await audit(db, actor, { action: "engagement.approve", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { status: "approved" }, at: now });
   return next;
@@ -247,7 +325,8 @@ export async function sendEngagement(
   provider: EsignProvider,
   payments: PaymentProvider,
   now = new Date(),
-): Promise<Engagement> {
+  opts: { email?: EmailTransport } = {},
+): Promise<Engagement & { signingInvite?: SigningInvite }> {
   const e = await getEngagement(db, engagementId);
   const lead = await assertOnLead(db, actor, e, "draft_engagement", now);
   if (e.status !== "approved" || !e.approvedBy) throw new Error("engagement must be approved by the attorney before sending");
@@ -288,7 +367,38 @@ export async function sendEngagement(
     detail: { status: "sent", provider: provider.name, envelopeId: envelope.envelopeId, ...(paymentId ? { paymentId } : {}) },
     at: now,
   });
-  return next;
+  if (provider.name !== "builtin") return next;
+  const signingInvite = await deliverSigningInvite(db, actor, lead, next, opts.email ?? emailTransportFromEnv(), now);
+  return { ...next, signingInvite };
+}
+
+export interface SigningInvite {
+  /** Single-use sign-in link that lands on the signing page */
+  link: string;
+  /** False when the email went to the log only (OUTBOUND_SEND_MODE is not live) */
+  delivered: boolean;
+}
+
+/**
+ * Built-in e-sign: the client signs in through the existing single-use client invite, which lands on the
+ * signing page. The link is emailed (a dry run, logged only, unless OUTBOUND_SEND_MODE=live) and returned so
+ * the office can also send it by text. The message names no case details.
+ */
+async function deliverSigningInvite(db: Db, actor: Actor, lead: Lead, e: Engagement, email: EmailTransport, now: Date): Promise<SigningInvite> {
+  const person = await db.persons.get(lead.personId);
+  const { link } = await inviteClient(db, actor, lead.id, now);
+  const target = `${link}&next=${encodeURIComponent(signingPath(e.id))}`;
+  if (!person?.email) return { link: target, delivered: false };
+  const base = (process.env.APP_URL ?? "http://localhost:3000").replace(/\/$/, "");
+  const sent = await email.send({
+    to: person.email,
+    subject: "Your engagement agreement is ready to review and sign",
+    text: `Hello ${person.firstName},\n\nYour attorney's office has sent your engagement agreement. You can read it, ask questions and sign it online in about five minutes.\n\nOpen it here: ${base}${target}\n\nThis link works once and expires in 7 days. If it has expired, reply to this email or call the office for a new one.`,
+    stream: "transactional",
+    tag: "engagement-signing-invite",
+  });
+  await systemNote(db, lead.id, sent.dryRun ? "Signing link prepared (email dry run: not sent)" : "Signing link emailed to the client", now.toISOString(), actor.userId);
+  return { link: target, delivered: !sent.dryRun };
 }
 
 export type StoreBlob = (key: string, bytes: Uint8Array) => void | Promise<void>;
@@ -338,10 +448,10 @@ export async function handleEsignWebhook(
 
 async function onSigned(db: Db, provider: EsignProvider, e: Engagement, at: string, storeBlob: StoreBlob): Promise<Engagement> {
   const lead = await leadFor(db, e);
-  const { pdf, auditCertificate } = await provider.downloadSigned(e.providerEnvelopeId!);
+  const { pdf, auditCertificate, contentType = "application/pdf", extension = "pdf" } = await provider.downloadSigned(e.providerEnvelopeId!, { db });
   const files = [
-    { kind: "engagement_signed" as const, name: "Signed engagement agreement.pdf", key: `engagements/${e.id}/signed.pdf`, bytes: pdf },
-    { kind: "audit_certificate" as const, name: "Signature audit certificate.pdf", key: `engagements/${e.id}/audit-certificate.pdf`, bytes: auditCertificate },
+    { kind: "engagement_signed" as const, name: `Signed engagement agreement.${extension}`, key: `engagements/${e.id}/signed.${extension}`, bytes: pdf },
+    { kind: "audit_certificate" as const, name: `Signature audit certificate.${extension}`, key: `engagements/${e.id}/audit-certificate.${extension}`, bytes: auditCertificate },
   ];
   const ids: string[] = [];
   for (const f of files) {
@@ -351,7 +461,7 @@ async function onSigned(db: Db, provider: EsignProvider, e: Engagement, at: stri
       leadId: e.leadId,
       name: f.name,
       kind: f.kind,
-      contentType: "application/pdf",
+      contentType,
       sizeBytes: f.bytes.byteLength,
       storageKey: f.key,
       uploadedBy: "system",
@@ -411,7 +521,9 @@ export async function sendDueReminders(db: Db, provider: EsignProvider, now = ne
     const elapsed = now.getTime() - new Date(sentAt).getTime();
     const due = REMINDER_SCHEDULE.filter((r) => elapsed >= r.afterMs && !e.remindersSent.includes(r.key));
     if (due.length === 0) continue;
-    await provider.sendReminder(e.providerEnvelopeId!);
+    // Only remind through the provider that sent it: a built-in envelope is not DocuSign's to chase, and vice versa.
+    if (e.provider !== provider.name) continue;
+    await provider.sendReminder(e.providerEnvelopeId!, { db });
     await db.engagements.update(e.id, { remindersSent: [...e.remindersSent, ...due.map((d) => d.key)] });
     await audit(db, "system", { action: "engagement.reminder", resourceType: "engagement", resourceId: e.id, leadId: e.leadId, detail: { reminder: due[due.length - 1].key }, at: now });
     count++;

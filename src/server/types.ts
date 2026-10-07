@@ -314,6 +314,110 @@ export interface Engagement {
   packageSelection?: PackageSelection;
   /** How the fee is paid and the status of each installment */
   paymentPlan?: PaymentPlan;
+  /** The firm's retainer template version the letter was filled from. Absent: the platform's fallback letter. */
+  templateId?: string;
+  /** Joint representation: the second client, who signs too */
+  spouseName?: string;
+  /** The firm's own standard agreement (PDF) attached to the letter, shown in full and signed with it */
+  attachment?: EngagementAttachment;
+  /** sha256 binding the letter text and the attachment, fixed when the attorney approves. Every signature records it. */
+  documentSha256?: string;
+}
+
+export interface EngagementAttachment {
+  name: string;
+  /** Key in the blob store (src/server/storage/blobs.ts) */
+  storageKey: string;
+  sha256: string;
+  sizeBytes: number;
+}
+
+// ---------------------------------------------------------------------------
+// Retainer templates (src/server/services/retainerTemplates.ts) and built-in e-sign (src/server/services/signing.ts)
+// ---------------------------------------------------------------------------
+
+/**
+ * - draft: saved, not yet usable
+ * - approved: an attorney of the firm approved this exact wording; usable on new engagements
+ * - superseded: a newer version of the same template was approved
+ * - retired: taken out of use by the firm
+ */
+export type RetainerTemplateStatus = "draft" | "approved" | "superseded" | "retired";
+
+/**
+ * One version of a firm's retainer (engagement letter) template. Each edit is a new row with the next version
+ * number; the wording of a row never changes after it is saved. The wording is the receiving attorney's.
+ * `id` is `${templateKey}@${version}`.
+ */
+export interface RetainerTemplate {
+  id: string;
+  firmId: string;
+  /** Stable across versions */
+  templateKey: string;
+  version: number;
+  name: string;
+  matterTypes: MatterType[];
+  /** Letter text with {{merge_field}} placeholders (src/lib/retainerTemplates.ts) */
+  body: string;
+  /** sha256 of `body` */
+  bodySha256: string;
+  /** The firm's own standard agreement, attached in full to every letter sent from this version */
+  pdf?: EngagementAttachment;
+  status: RetainerTemplateStatus;
+  /** Matter types this version is the firm's default for (one default per matter type per firm) */
+  defaultFor: MatterType[];
+  createdBy: string;
+  createdAt: string;
+  /** The attorney of the firm who approved this exact version */
+  approvedBy?: string;
+  approvedByName?: string;
+  approvedAt?: string;
+}
+
+/**
+ * One electronic signature on an engagement, made with the built-in e-sign. Insert-only: the database refuses
+ * updates and deletes. Holds the typed name, when, a coarse IP prefix and device summary, the hashes of exactly
+ * what was signed and the version of the electronic-records consent the signer agreed to.
+ */
+export interface SignatureRecord {
+  id: string;
+  engagementId: string;
+  leadId: string;
+  firmId: string;
+  signerRole: "client" | "spouse";
+  /** The name printed on the agreement for this signer */
+  expectedName: string;
+  /** What the signer typed */
+  typedName: string;
+  /** The signed-in client user who signed */
+  signedByUserId: string;
+  signedAt: string;
+  /** e.g. "203.0.113.0/24" */
+  ipPrefix?: string;
+  /** e.g. "Safari on iPhone" */
+  userAgent?: string;
+  letterSha256: string;
+  attachmentSha256?: string;
+  documentSha256: string;
+  consentVersion: string;
+  consentAt: string;
+  /** The signer ticked "I intend to sign" */
+  intent: boolean;
+}
+
+/** Bytes kept by the platform: a firm's uploaded agreement PDF or a generated signed copy. Read only by the server after a policy check. */
+export interface StoredBlob {
+  /** The storage key */
+  id: string;
+  sha256: string;
+  contentType: string;
+  sizeBytes: number;
+  /** base64 */
+  data: string;
+  firmId?: string;
+  leadId?: string;
+  createdBy: string;
+  createdAt: string;
 }
 
 export type PaymentStatus = "pending" | "paid" | "failed";
