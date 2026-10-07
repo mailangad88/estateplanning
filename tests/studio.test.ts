@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 import { ForbiddenError } from "@/server/auth/policy";
 import { actorFor, DEMO_USERS } from "@/server/seed";
 import { openTokens, publishToInstagram, sealTokens, uploadToYouTube } from "@/server/studio/channels";
@@ -15,6 +15,7 @@ import { allTopics, pickTopics } from "@/server/studio/topics";
 import type { StudioVideo } from "@/server/studio/types";
 import { headline, SiteDraftWriter } from "@/server/studio/writer";
 import { DEFAULT_SETTINGS } from "@/server/studio/config";
+import { canStudio } from "@/server/studio/access";
 import type { Actor } from "@/server/types";
 
 const NOW = new Date("2026-10-07T14:00:00Z");
@@ -143,6 +144,19 @@ describe("review", () => {
     await expect(review(store, user("attorney"), v.id, { decision: "changes_requested", contentHash: contentHash(v), confirmed: false })).rejects.toThrow(/note/);
     const back = await review(store, user("attorney"), v.id, { decision: "changes_requested", contentHash: contentHash(v), confirmed: false, note: "Shorter hook" });
     expect(back.stage).toBe("changes_requested");
+  });
+});
+
+describe("sign-in", () => {
+  it("hides the studio without two-step sign-in in production", () => {
+    vi.stubEnv("NODE_ENV", "production");
+    try {
+      expect(canStudio({ ...user("platform_admin"), mfa: false }, "view_studio")).toBe(false);
+      expect(canStudio({ ...user("platform_admin"), mfa: true }, "manage_channels")).toBe(true);
+      expect(canStudio({ ...user("intake"), mfa: true }, "view_studio")).toBe(false);
+    } finally {
+      vi.unstubAllEnvs();
+    }
   });
 });
 

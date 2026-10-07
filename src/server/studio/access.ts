@@ -19,13 +19,15 @@ const RULES: Record<StudioAction, Role[]> = {
   manage_channels: ["platform_admin"],
 };
 
+/** Role check plus the portal's two-step sign-in: in production the studio's pages and actions are hidden without it. */
 export function canStudio(actor: Actor, action: StudioAction): boolean {
+  if (!actor.mfa && process.env.NODE_ENV === "production") return false;
   return RULES[action].includes(actor.role);
 }
 
 export function assertStudio(actor: Actor, action: StudioAction): void {
-  if (!canStudio(actor, action)) throw new ForbiddenError("Your role cannot do that in the studio");
   requireMfa(actor);
+  if (!canStudio(actor, action)) throw new ForbiddenError("Your role cannot do that in the studio");
 }
 
 /** Only an attorney's approval clears a video to publish; a platform admin's is recorded but does not count. */
