@@ -1,0 +1,76 @@
+name: Studio
+
+# Hourly run for the social video studio (/admin/studio):
+# 1. calls /api/cron/studio on the site (drafts if STUDIO_AUTO_DRAFT=true, fills slots, posts what is due;
+#    posting is only logged unless the site's STUDIO_PUBLISH_MODE says otherwise), then
+# 2. renders approved videos with Remotion and uploads them to storage (Cloudflare R2 or any S3 bucket).
+# Does nothing until the secrets below are set. Publish slots are on the hour, so hourly is enough.
+#
+# Secrets: STUDIO_SITE_URL (https://...), CRON_SECRET, STUDIO_WORKER_TOKEN,
+#          STUDIO_S3_ENDPOINT, STUDIO_S3_BUCKET, STUDIO_S3_ACCESS_KEY_ID, STUDIO_S3_SECRET_ACCESS_KEY,
+#          STUDIO_MEDIA_BASE_URL (public https base for the bucket)
+
+on:
+  schedule:
+    - cron: "2 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: studio
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      SITE: ${{ secrets.STUDIO_SITE_URL }}
+      CRON_SECRET: ${{ secrets.CRON_SECRET }}
+      STUDIO_WORKER_TOKEN: ${{ secrets.STUDIO_WORKER_TOKEN }}
+      HAS_STORAGE: ${{ secrets.STUDIO_S3_BUCKET != '' }}
+    steps:
+      - name: Scheduled run (draft, schedule, post)
+        if: ${{ env.SITE != '' && env.CRON_SECRET != '' }}
+        run: curl -fsS -X POST -H "Authorization: Bearer $CRON_SECRET" "$SITE/api/cron/studio" | head -c 2000
+
+      - name: Take render jobs
+        id: queue
+        if: ${{ env.SITE != '' && env.STUDIO_WORKER_TOKEN != '' && env.HAS_STORAGE == 'true' }}
+        run: |
+          curl -fsS -X POST -H "Authorization: Bearer $STUDIO_WORKER_TOKEN" "$SITE/api/studio/render-queue?limit=4" > "$RUNNER_TEMP/jobs.json"
+          echo "count=$(jq '.jobs | length' "$RUNNER_TEMP/jobs.json")" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+        if: ${{ steps.queue.outputs.count > 0 }}
+      - uses: actions/setup-node@v4
+        if: ${{ steps.queue.outputs.count > 0 }}
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            video/package-lock.json
+      - name: Install
+        if: ${{ steps.queue.outputs.count > 0 }}
+        run: |
+          npm ci --no-audit --no-fund
+          cd video && npm ci --no-audit --no-fund && npm i --no-save --no-audit --no-fund @aws-sdk/client-s3@3
+          npx remotion browser ensure
+      - name: Render and upload
+        if: ${{ steps.queue.outputs.count > 0 }}
+        working-directory: video
+        env:
+          STUDIO_S3_ENDPOINT: ${{ secrets.STUDIO_S3_ENDPOINT }}
+          STUDIO_S3_BUCKET: ${{ secrets.STUDIO_S3_BUCKET }}
+          STUDIO_S3_ACCESS_KEY_ID: ${{ secrets.STUDIO_S3_ACCESS_KEY_ID }}
+          STUDIO_S3_SECRET_ACCESS_KEY: ${{ secrets.STUDIO_S3_SECRET_ACCESS_KEY }}
+          STUDIO_MEDIA_BASE_URL: ${{ secrets.STUDIO_MEDIA_BASE_URL }}
+        run: node scripts/studio-worker.mjs --jobs "$RUNNER_TEMP/jobs.json" --out "$RUNNER_TEMP/renders"
+      - name: Keep renders when no storage is set
+        if: ${{ steps.queue.outputs.count > 0 && always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: studio-renders
+          path: ${{ runner.temp }}/renders
+          retention-days: 7
+          if-no-files-found: ignore
