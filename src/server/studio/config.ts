@@ -4,7 +4,7 @@
  */
 import { firm } from "@/config/firm";
 import { site } from "@/config/site";
-import type { PublishMode, StudioSettings, VideoFormat } from "./types";
+import type { PublishMode, Series, StudioSettings, VideoFormat } from "./types";
 
 export function publishMode(env: NodeJS.ProcessEnv = process.env): PublishMode {
   const v = env.STUDIO_PUBLISH_MODE;
@@ -16,13 +16,21 @@ export function writerKind(env: NodeJS.ProcessEnv = process.env): "anthropic" | 
   return env.STUDIO_WRITER === "anthropic" && env.ANTHROPIC_API_KEY ? "anthropic" : "site-draft";
 }
 
+const EVERY_DAY = [0, 1, 2, 3, 4, 5, 6];
+const SHORT_TIMES = ["07:00", "11:00", "13:00", "16:00", "19:00", "21:00"];
+
+// Angad's target: 1 to 2 long videos and 5 to 6 shorts a day, shorts on both YouTube and Instagram.
+// On the hour, because the scheduled run (GitHub Actions, hourly) posts what is due.
+export const DEFAULT_SERIES: Series[] = [
+  { id: "youtube_long", name: "YouTube long videos", format: "long", platform: "youtube", enabled: true, recurrence: { start: "2026-10-08", everyWeeks: 1, days: EVERY_DAY, times: ["10:00", "18:00"], holdHours: 12 } },
+  { id: "youtube_shorts", name: "YouTube Shorts", format: "short", platform: "youtube", enabled: true, recurrence: { start: "2026-10-08", everyWeeks: 1, days: EVERY_DAY, times: SHORT_TIMES, holdHours: 12 } },
+  { id: "instagram_reels", name: "Instagram Reels", format: "short", platform: "instagram", enabled: true, recurrence: { start: "2026-10-08", everyWeeks: 1, days: EVERY_DAY, times: SHORT_TIMES, holdHours: 12 } },
+];
+
 export const DEFAULT_SETTINGS: StudioSettings = {
   id: "settings",
   timezone: "America/Chicago",
-  // Angad's target: 1 to 2 long videos and 5 to 6 shorts a day.
-  // On the hour, because the scheduled run (GitHub Actions, hourly) posts what is due.
-  longSlots: ["10:00", "18:00"],
-  shortSlots: ["07:00", "11:00", "13:00", "16:00", "19:00", "21:00"],
+  series: DEFAULT_SERIES,
   bufferDays: 3,
   updatedAt: "2026-10-07T00:00:00.000Z",
 };

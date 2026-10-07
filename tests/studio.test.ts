@@ -5,10 +5,11 @@ import { openTokens, publishToInstagram, sealTokens, uploadToYouTube } from "@/s
 import { runStudioCron } from "@/server/studio/cron";
 import { chunkNarration, direct, planSeconds } from "@/server/studio/director";
 import { contentHash, editScript, generateDrafts, isApproved, review } from "@/server/studio/pipeline";
-import { caption, publishDue } from "@/server/studio/publish";
+import { caption, postNow, publishDue, setPlaces } from "@/server/studio/publish";
 import { checkScript } from "@/server/studio/quality";
 import { claimRenderJobs, recordRender } from "@/server/studio/render";
-import { fillSlots, saveSettings, slots, zonedToUtc } from "@/server/studio/schedule";
+import { describeRecurrence, fillSlots, normalizeSettings, occurrences, saveSeries, saveSettings, slots, zonedToUtc } from "@/server/studio/schedule";
+import { productionSteps } from "@/server/studio/progress";
 import { createMemoryStudioStore, type StudioStore } from "@/server/studio/store";
 import { allTopics, pickTopics } from "@/server/studio/topics";
 import type { StudioVideo } from "@/server/studio/types";
@@ -151,27 +152,62 @@ describe("schedule", () => {
     expect(zonedToUtc("2026-12-07", "10:00", "America/Chicago").toISOString()).toBe("2026-12-07T16:00:00.000Z");
   });
 
-  it("offers 2 long and 6 short slots a day by default", () => {
-    const day = slots(DEFAULT_SETTINGS, new Date("2026-10-07T05:00:00Z"), 1);
-    expect(day.filter((s) => s.format === "long")).toHaveLength(2);
-    expect(day.filter((s) => s.format === "short")).toHaveLength(6);
+  it("offers 2 long videos, 6 YouTube Shorts and 6 Instagram Reels a day by default", () => {
+    const day = slots(DEFAULT_SETTINGS, new Date("2026-10-08T05:00:00Z"), 1);
+    expect(day.filter((s) => s.seriesId === "youtube_long")).toHaveLength(2);
+    expect(day.filter((s) => s.seriesId === "youtube_shorts")).toHaveLength(6);
+    expect(day.filter((s) => s.seriesId === "instagram_reels")).toHaveLength(6);
   });
 
-  it("puts approved videos in the next open slot of their format", async () => {
+  it("follows the recurrence: days, every N weeks, start and end", () => {
+    const rec = { start: "2026-10-05", everyWeeks: 2, days: [1, 3], times: ["09:00"], end: "2026-10-31", holdHours: 0 };
+    const dates = occurrences(rec, "America/Chicago", new Date("2026-10-01T00:00:00Z"), 60).map((d) => d.toISOString().slice(0, 10));
+    expect(dates).toEqual(["2026-10-05", "2026-10-07", "2026-10-19", "2026-10-21"]);
+    expect(describeRecurrence(rec)).toBe("Occurs every 2 weeks on Monday and Wednesday at 9:00 AM starting Monday, October 5, 2026 until Saturday, October 31, 2026.");
+    expect(describeRecurrence(DEFAULT_SETTINGS.series[0].recurrence)).toBe("Occurs every day at 10:00 AM and 6:00 PM starting Thursday, October 8, 2026. Each video waits 12 h before it goes.");
+  });
+
+  it("gives a short one slot in YouTube Shorts and one in Instagram Reels, a long video one YouTube slot", async () => {
     const a = await approved("short");
     const b = await approved("long");
     const done = await fillSlots(store, NOW);
     expect(done.map((v) => v.id).sort()).toEqual([a.id, b.id].sort());
     const short = (await store.getVideo(a.id))!;
     expect(short.stage).toBe("scheduled");
-    expect(new Date(short.slotAt!).getTime()).toBeGreaterThan(NOW.getTime());
+    expect(short.slots!.map((s) => s.seriesId).sort()).toEqual(["instagram_reels", "youtube_shorts"]);
+    expect(new Date(short.slotAt!).getTime()).toBeGreaterThan(NOW.getTime() + 12 * 3_600_000); // the hold window
+    expect((await store.getVideo(b.id))!.slots!.map((s) => s.seriesId)).toEqual(["youtube_long"]);
   });
 
-  it("validates slot times and limits who changes them", async () => {
-    await expect(saveSettings(store, user("marketing"), { longSlots: ["10:00"], shortSlots: [] })).rejects.toThrow(ForbiddenError);
-    await expect(saveSettings(store, user("platform_admin"), { longSlots: ["25:00"], shortSlots: [] })).rejects.toThrow(/not a time/);
-    const s = await saveSettings(store, user("platform_admin"), { longSlots: ["18:00", "09:00"], shortSlots: ["12:00"] }, NOW);
-    expect(s.longSlots).toEqual(["09:00", "18:00"]);
+  it("switching a series off frees its slots; switching it back on refills them", async () => {
+    await expect(saveSeries(store, user("marketing"), "instagram_reels", { enabled: false })).rejects.toThrow(ForbiddenError);
+    const v = await approved("short");
+    await fillSlots(store, NOW);
+    await saveSeries(store, user("platform_admin"), "instagram_reels", { enabled: false }, NOW);
+    expect((await store.getVideo(v.id))!.slots!.map((s) => s.platform)).toEqual(["youtube"]);
+    await saveSeries(store, user("platform_admin"), "instagram_reels", { enabled: true }, NOW);
+    expect((await store.getVideo(v.id))!.slots!.map((s) => s.platform).sort()).toEqual(["instagram", "youtube"]);
+  });
+
+  it("validates recurrence changes and re-slots on the new times", async () => {
+    await expect(saveSeries(store, user("platform_admin"), "youtube_long", { recurrence: { times: ["25:00"] } })).rejects.toThrow(/not a time/);
+    await expect(saveSeries(store, user("platform_admin"), "youtube_long", { recurrence: { days: [] } })).rejects.toThrow(/day/);
+    const v = await approved("long");
+    await fillSlots(store, NOW);
+    const s = await saveSeries(store, user("platform_admin"), "youtube_long", { recurrence: { times: ["15:00"], days: [6] } }, NOW);
+    expect(s.series.find((x) => x.id === "youtube_long")!.recurrence).toMatchObject({ times: ["15:00"], days: [6] });
+    const at = new Date((await store.getVideo(v.id))!.slotAt!);
+    expect(at.toISOString()).toBe("2026-10-10T20:00:00.000Z"); // Saturday 3 PM Chicago
+  });
+
+  it("reads settings saved before series existed", () => {
+    const s = normalizeSettings({ id: "settings", timezone: "America/Chicago", bufferDays: 3, updatedAt: "x", longSlots: ["09:00"], shortSlots: ["12:00"] } as never);
+    expect(s.series.map((x) => x.recurrence.times)).toEqual([["09:00"], ["12:00"], ["12:00"]]);
+  });
+
+  it("only a platform admin changes the buffer", async () => {
+    await expect(saveSettings(store, user("marketing"), { bufferDays: 5 })).rejects.toThrow(ForbiddenError);
+    expect((await saveSettings(store, user("platform_admin"), { bufferDays: 99 }, NOW)).bufferDays).toBe(14);
   });
 });
 
@@ -183,6 +219,47 @@ describe("publishing", () => {
     const out = await publishDue(store, { mode: "off", now: later, fetch: () => { throw new Error("no network"); } });
     expect(out[0].posts.map((p) => [p.platform, p.status])).toEqual([["youtube", "logged"], ["instagram", "logged"]]);
     expect((await store.getVideo(out[0].id))!.stage).toBe("published");
+  });
+
+  it("holds posts for a switched-off series", async () => {
+    await approved("short");
+    await fillSlots(store, NOW);
+    await saveSeries(store, user("platform_admin"), "instagram_reels", { enabled: false }, NOW);
+    const out = await publishDue(store, { mode: "off", now: new Date(NOW.getTime() + 3 * 86_400_000) });
+    expect(out[0].posts.map((p) => p.platform)).toEqual(["youtube"]);
+  });
+
+  it("posts now to the picked places and never twice to the same place", async () => {
+    const v = await approved("short");
+    await expect(postNow(store, user("attorney"), v.id, ["youtube"], { mode: "off", now: NOW })).rejects.toThrow(ForbiddenError);
+    const after = await postNow(store, user("marketing"), v.id, ["youtube"], { mode: "off", now: NOW });
+    expect(after.posts.map((p) => [p.platform, p.status])).toEqual([["youtube", "logged"]]);
+    await expect(postNow(store, user("marketing"), v.id, ["youtube"], { mode: "off", now: NOW })).rejects.toThrow(/already live/);
+    await expect(postNow(store, user("marketing"), v.id, ["youtube", "instagram"], { mode: "live", now: NOW })).rejects.toThrow(/rendered/);
+  });
+
+  it("refuses to post a video the attorney has not approved", async () => {
+    const [v] = await generateDrafts(store, user("marketing"), { format: "short", count: 1, writer, now: NOW });
+    await expect(postNow(store, user("marketing"), v.id, ["youtube"], { mode: "off", now: NOW })).rejects.toThrow(/approved/);
+  });
+
+  it("changes where a video goes; long videos only go to YouTube", async () => {
+    const s = await approved("short");
+    await fillSlots(store, NOW);
+    const yt = await setPlaces(store, user("marketing"), s.id, ["youtube"], NOW);
+    expect(yt.targets).toEqual(["youtube"]);
+    expect(yt.slots!.map((x) => x.platform)).toEqual(["youtube"]);
+    const l = await approved("long");
+    expect((await setPlaces(store, user("marketing"), l.id, ["instagram", "youtube"], NOW)).targets).toEqual(["youtube"]);
+    await expect(setPlaces(store, user("marketing"), l.id, ["instagram"], NOW)).rejects.toThrow(/at least one/);
+  });
+
+  it("shows production steps with the next one to run", async () => {
+    const [draft] = await generateDrafts(store, user("marketing"), { format: "short", count: 1, writer, now: NOW });
+    const steps = productionSteps(draft, "off");
+    expect(steps.map((x) => [x.id, x.state])).toEqual([["research", "done"], ["script", "done"], ["checks", "done"], ["voice", "skipped"], ["review", "next"], ["render", "waiting"], ["schedule", "waiting"], ["post", "waiting"]]);
+    const back = await review(store, user("attorney"), draft.id, { decision: "changes_requested", contentHash: contentHash(draft), confirmed: false, note: "Shorter" });
+    expect(productionSteps(back, "off").find((x) => x.id === "review")!.state).toBe("flagged");
   });
 
   it("pulls a video back to review when its script changed after approval", async () => {
@@ -269,5 +346,7 @@ describe("render hand-off and tokens", () => {
     const out = await runStudioCron(store, { autoDraft: true, writer, publish: { mode: "off" }, now: NOW });
     expect(out.drafted.long + out.drafted.short).toBeGreaterThan(0);
     expect(out.scheduled).toEqual([]); // nothing approved yet
+    const settings = await store.getSettings();
+    expect(settings!.series.find((x) => x.id === "youtube_shorts")!.lastRun!.note).toMatch(/^0 logged, 0 scheduled/);
   });
 });

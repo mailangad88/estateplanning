@@ -2,9 +2,10 @@
  * The studio's scheduled run: keep the review queue topped up (opt-in), fill publish slots
  * with approved videos, then post what is due.
  */
+import { publishMode } from "./config";
 import { generateDrafts } from "./pipeline";
 import { publishDue, type PublishDeps } from "./publish";
-import { bufferStatus, fillSlots, getSettings } from "./schedule";
+import { bufferStatus, fillSlots, getSettings, seriesNote } from "./schedule";
 import type { StudioStore } from "./store";
 import type { Writer } from "./writer";
 
@@ -27,5 +28,11 @@ export async function runStudioCron(store: StudioStore, opts: { autoDraft?: bool
   const drafted = opts.autoDraft ?? process.env.STUDIO_AUTO_DRAFT === "true" ? await topUp(store, { writer: opts.writer, now }) : { off: 0 };
   const scheduled = (await fillSlots(store, now)).map((v) => ({ id: v.id, slotAt: v.slotAt }));
   const published = await publishDue(store, { ...opts.publish, now });
+  // A status line per series for the schedule page.
+  const settings = await getSettings(store);
+  const videos = await store.listVideos();
+  const mode = opts.publish?.mode ?? publishMode();
+  const at = now.toISOString();
+  await store.saveSettings({ ...settings, series: settings.series.map((s) => ({ ...s, lastRun: { at, note: seriesNote(s, settings, videos, mode, now) } })) });
   return { drafted, scheduled, published };
 }

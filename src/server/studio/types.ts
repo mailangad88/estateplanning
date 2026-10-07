@@ -196,8 +196,10 @@ export interface StudioVideo {
   quality?: QualityReport;
   review?: ReviewDecision;
   render: RenderInfo;
-  /** ISO time of the publish slot. */
+  /** ISO time of the earliest publish slot still to go (for sorting and lists). */
   slotAt?: string;
+  /** One publish slot per series this video goes out on (a short goes to YouTube Shorts and Instagram Reels). */
+  slots?: PlannedPost[];
   targets: Platform[];
   posts: PostRecord[];
   history: HistoryEntry[];
@@ -227,12 +229,47 @@ export interface ChannelAccount {
   lastError?: string;
 }
 
+export type SeriesId = "youtube_long" | "youtube_shorts" | "instagram_reels";
+
+export interface PlannedPost {
+  seriesId: SeriesId;
+  platform: Platform;
+  /** ISO time it goes out. */
+  at: string;
+}
+
+/** When a series posts: weekly on some days, at one or more local times. */
+export interface Recurrence {
+  /** First local day, YYYY-MM-DD. */
+  start: string;
+  /** 1 = every week, 2 = every other week... */
+  everyWeeks: number;
+  /** Days of the week, 0 = Sunday ... 6 = Saturday. */
+  days: number[];
+  /** Local times, HH:MM, in the settings timezone. */
+  times: string[];
+  /** Last local day, YYYY-MM-DD; absent means it never ends. */
+  end?: string;
+  /** A video has to be on the schedule this many hours before its slot, so there is time to stop it. */
+  holdHours: number;
+}
+
+/** One stream of posts: long videos on YouTube, Shorts on YouTube, Reels on Instagram. */
+export interface Series {
+  id: SeriesId;
+  name: string;
+  format: VideoFormat;
+  platform: Platform;
+  enabled: boolean;
+  recurrence: Recurrence;
+  /** What the last scheduled run did for this series, in plain words. */
+  lastRun?: { at: string; note: string };
+}
+
 export interface StudioSettings {
   id: "settings";
   timezone: string;
-  /** Local times, HH:MM. Count sets how many a day. */
-  longSlots: string[];
-  shortSlots: string[];
+  series: Series[];
   /** Keep this many days of approved videos ahead of the schedule. */
   bufferDays: number;
   updatedAt: string;

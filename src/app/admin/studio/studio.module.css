@@ -1,0 +1,387 @@
+/* Video studio admin: series list, recurrence editor, production steps, details sidebar. */
+
+.seriesList {
+  display: grid;
+  gap: 14px;
+  margin: 16px 0 28px;
+}
+
+.series {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius, 14px);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-sm, none);
+}
+
+.seriesHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.seriesHead h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.seriesWhen {
+  margin: 6px 0 10px;
+  color: var(--muted);
+}
+
+.seriesFoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+}
+
+.lastRun {
+  color: var(--muted);
+  text-align: right;
+}
+
+.linkButton {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--accent);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.toggle {
+  position: relative;
+  width: 46px;
+  height: 26px;
+  border-radius: 13px;
+  border: 0;
+  background: var(--border);
+  cursor: pointer;
+  flex: none;
+  transition: background 0.15s;
+}
+
+.toggle::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.25);
+  transition: transform 0.15s;
+}
+
+.toggle[aria-checked="true"] {
+  background: var(--accent);
+}
+
+.toggle[aria-checked="true"]::after {
+  transform: translateX(20px);
+}
+
+.toggle:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* Recurrence dialog */
+.dialog {
+  border: 0;
+  border-radius: var(--radius, 14px);
+  padding: 24px;
+  width: min(480px, calc(100vw - 32px));
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-lg, 0 24px 64px rgb(0 0 0 / 0.2));
+}
+
+.dialog::backdrop {
+  background: rgb(0 0 0 / 0.45);
+}
+
+.dialogHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.dialogHead h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 14px 12px;
+  align-items: center;
+}
+
+.formGrid > span {
+  color: var(--muted);
+}
+
+.inline {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input {
+  font: inherit;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.dayPills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.dayPill {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dayPill[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.summary {
+  margin: 18px 0;
+}
+
+.dialogActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Video page */
+.videoLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .videoLayout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius, 14px);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.kicker {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+
+.steps {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-x: auto;
+}
+
+.step {
+  flex: 1 1 0;
+  min-width: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  font-size: 0.85rem;
+  font-weight: 600;
+  gap: 8px;
+}
+
+.step + .step::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 50%;
+  width: 100%;
+  height: 2px;
+  background: var(--border);
+  z-index: 0;
+}
+
+.dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  border: 3px solid var(--surface);
+}
+
+.small {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  display: inline-block;
+}
+
+.done { background: var(--sage, #2e7d4f); }
+.next { background: var(--gold, #e2ae45); }
+.waiting { background: var(--border); }
+.flagged { background: var(--error, #c0392b); }
+.skipped { background: var(--muted); opacity: 0.45; }
+
+.stepNote {
+  font-weight: 400;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 16px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.legend span {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.details {
+  margin: 0;
+}
+
+.details > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.details > div:last-child {
+  border-bottom: 0;
+}
+
+.details dt {
+  color: var(--muted);
+}
+
+.details dd {
+  margin: 0;
+  text-align: right;
+  font-weight: 600;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--sage-tint, #e4eee6);
+  color: var(--sage-deep, #3f6a4f);
+}
+
+.badgeWarn {
+  background: var(--gold-tint, #f8edd2);
+  color: var(--gold-text, #7a5510);
+}
+
+.badgeBad {
+  background: var(--clay-tint, #f7e6da);
+  color: var(--clay-text, #8c3f20);
+}
+
+.places {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+}
+
+.places li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.places li:last-child {
+  border-bottom: 0;
+}
+
+.places label {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex: 1;
+  cursor: pointer;
+}
+
+.places input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.placeName {
+  font-weight: 600;
+}
+
+.placeState {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* The video page breaks out of the narrow reading column to fit the steps and the sidebar. */
+.wide {
+  width: min(1180px, calc(100vw - 32px));
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}

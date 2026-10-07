@@ -100,6 +100,7 @@ export async function editScript(store: StudioStore, actor: Actor, id: string, s
     quality,
     review: undefined,
     slotAt: undefined,
+    slots: undefined,
     stage: quality.passed ? "in_review" : "needs_rewrite",
     render: { status: "not_started", updatedAt: at },
     updatedAt: at,
@@ -112,7 +113,7 @@ export async function rewrite(store: StudioStore, actor: Actor, id: string, writ
   assertStudio(actor, "make_videos");
   const v = await mustGet(store, id);
   if (v.stage === "published") throw new Error("This video is already published");
-  return writeVideo(store, { ...v, slotAt: undefined }, writer, actor.userId);
+  return writeVideo(store, { ...v, slotAt: undefined, slots: undefined }, writer, actor.userId);
 }
 
 /** Attorney decision, tied to the exact script and plan on screen (contentHash). */
@@ -136,8 +137,9 @@ export async function review(
   return store.saveVideo({
     ...v,
     review: decision,
-    stage,
-    slotAt: stage === "approved" ? v.slotAt : undefined,
+    stage: stage === "approved" && v.stage === "scheduled" ? "scheduled" : stage,
+    slotAt: stage === "approved" || stage === "scheduled" ? v.slotAt : undefined,
+    slots: stage === "approved" || stage === "scheduled" ? v.slots : undefined,
     updatedAt: at,
     history: [...v.history, { at, by: actor.userId, event: input.decision, note: counts || input.decision !== "approved" ? input.note : "Recorded; only an attorney's approval clears a video to publish" }],
   });

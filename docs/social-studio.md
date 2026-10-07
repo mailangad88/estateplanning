@@ -22,7 +22,7 @@ Admin area at `/admin/studio`, behind the portal sign-in and its 2FA. It researc
 4. **Director**: `director.ts` maps beats to scenes for the Remotion templates in `src/studio/video`. It is deterministic, so the approval hash covers exactly what renders.
 5. **Attorney review**: the review is tied to `contentHash(script + plan)`. Any edit clears the approval. Only an `attorney` approval counts. A platform admin's approval is recorded but does not count.
 6. **Render**: runs only after approval. The `Studio` GitHub Actions workflow takes jobs from `/api/studio/render-queue`, renders with `video/scripts/render-studio.mjs`, uploads the files to S3-compatible storage (R2), and reports to `/api/studio/render-result`.
-7. **Schedule**: `schedule.ts` fills slots, on the hour in Chicago time. Defaults are 2 long videos and 6 shorts a day. A platform admin can edit them at `/admin/studio/schedule`.
+7. **Schedule**: three series (YouTube long videos, YouTube Shorts, Instagram Reels), each with an on/off switch and a weekly recurrence in Chicago time: days, every N weeks, one or more times, an end date, and a hold window (a video must be on the schedule that many hours before its slot). `schedule.ts` gives each approved video the next open slot in every series it goes to, so one short posts once to Shorts and once to Reels. Defaults are 2 long videos and 6 shorts a day. A platform admin edits them at `/admin/studio/schedule`. Each video page shows its production steps and a "Where it goes" panel to pick places or post now (logged only while publishing is off).
 8. **Publish**: `publish.ts` runs from `/api/cron/studio`.
    - `STUDIO_PUBLISH_MODE=off` (the default) logs what would post.
    - `private` uploads to YouTube as private and skips Instagram.
