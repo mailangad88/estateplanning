@@ -4,6 +4,7 @@ import { devLoginEnabled } from "@/server/auth/session";
 import { lawyerDashboard, visibleLeads } from "@/server/portal/caseView";
 import { currentActor, getDb, scopedDb } from "@/server/runtime";
 import { MATTER_LABELS } from "@/server/services/leads";
+import { canStudio } from "@/server/studio/access";
 import type { Actor } from "@/server/types";
 
 export const dynamic = "force-dynamic";
@@ -112,6 +113,7 @@ function Nav({ actor }: { actor: Actor }) {
   const links: [string, string][] = [];
   if (can(actor, "work_intake_queue")) links.push(["/portal/queue", "Intake queue"]);
   if (can(actor, "view_reports")) links.push(["/admin/analytics", "Analytics"]);
+  if (canStudio(actor, "view_studio")) links.push(["/admin/studio", "Video studio"]);
   if (can(actor, "view_lead_health")) links.push(["/admin/lead-health", "Lead health"]);
   if (can(actor, "manage_firm_capacity")) links.push(["/admin/capacity", "Capacity"]);
   if (can(actor, "manage_seminars")) links.push(["/admin/seminars", "Seminars"]);

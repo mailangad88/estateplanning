@@ -19,7 +19,9 @@ const DIRS = ["content", "src"];
 const EXT = new Set([".md", ".json", ".ts", ".tsx"]);
 const SKIP = new Set(["content/STYLE.md", "content/LEARN-STYLE.md", "content/states/_template.json", "scripts/launch-check.mjs",
   // Internal research data, never rendered: the question bank holds what people ask, in their words.
-  "content/questions.json"]);
+  "content/questions.json",
+  // The studio's list of words its video scripts must not use.
+  "src/server/studio/wordlists.ts"]);
 
 const BANNED = [
   { re: /\bexperts?\b/i, why: "'expert' implies a credential" },

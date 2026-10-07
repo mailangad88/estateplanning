@@ -19,6 +19,7 @@
     "check:ai-text": "node scripts/ai-text-check.mjs"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.132.0",
     "@fontsource-variable/fraunces": "^5.3.0",
     "@fontsource-variable/inter": "^5.3.0",
     "@remotion/player": "^4.0.533",

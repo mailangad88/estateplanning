@@ -6,7 +6,9 @@ import { webpackOverride } from "./webpack-override.mjs";
 
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 export const repoRoot = path.resolve(root, "..");
-export const BROWSER = process.env.REMOTION_BROWSER || "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell";
+const OFFLINE_SHELL = "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell";
+// Undefined lets Remotion download its own browser (CI runners); the offline shell is used when present.
+export const BROWSER = process.env.REMOTION_BROWSER || (fs.existsSync(OFFLINE_SHELL) ? OFFLINE_SHELL : undefined);
 export const readJson = (p) => JSON.parse(fs.readFileSync(path.join(root, p), "utf8"));
 
 export async function makeBundle() {

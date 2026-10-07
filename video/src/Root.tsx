@@ -1,6 +1,7 @@
 import { Composition } from "remotion";
 import { Explainer, type ExplainerProps } from "./Explainer";
 import { SocialCompositions } from "./social/Root";
+import { StudioCompositions } from "./studio/Root";
 import { FPS, SIZES, compId, videos, type Aspect } from "./data";
 
 const aspects: Aspect[] = ["16:9", "9:16"];
@@ -22,5 +23,6 @@ export const RemotionRoot: React.FC = () => (
       )),
     )}
     <SocialCompositions />
+    <StudioCompositions />
   </>
 );
