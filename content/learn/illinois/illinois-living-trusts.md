@@ -24,6 +24,8 @@ faqs:
     a: "The Trust Code sets a short limit. A contest must start by the earlier of two years after the settlor's death or six months after the trustee sends the person a copy of the trust and a notice (760 ILCS 3/604). Ask an attorney how the deadline applies."
   - q: "Does an Illinois living trust avoid the Illinois estate tax?"
     a: "No. A revocable trust is still counted in your estate for estate tax purposes. Illinois has its own estate tax with a lower threshold than the federal one, so tax planning needs separate steps. Our Illinois estate tax article explains the current exclusion."
+  - q: "What is a pour-over will in Illinois?"
+    a: "It is a will that leaves anything you did not move into your living trust to that trust when you die. It works as a safety net, but property that passes under the will may still need probate before it reaches the trust. Funding the trust during your life keeps that to a minimum."
 related:
   - "illinois"
   - "illinois/illinois-transfer-on-death-instrument"
