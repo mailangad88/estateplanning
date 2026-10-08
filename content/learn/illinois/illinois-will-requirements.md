@@ -23,6 +23,10 @@ faqs:
     a: "In practice, the witnesses sign an attestation clause at the signing, or an affidavit at or after the signing, saying they saw you sign and believed you were of sound mind (755 ILCS 5/6-4). The court can then admit the will without hearing from the witnesses."
   - q: "Can someone else sign my will for me in Illinois?"
     a: "Yes, if you direct them to and they sign in your presence (755 ILCS 5/4-3). The witnesses must still watch. For remote signings, the person who signs for you cannot be a witness, a beneficiary, or the spouse or child of a beneficiary."
+  - q: "Can I write my own will in Illinois?"
+    a: "Yes. Illinois does not require a lawyer. The will must be in writing, signed by you while you are at least 18 and of sound mind, and attested in your presence by at least two credible witnesses (755 ILCS 5/4-1 and 4-3). A handwritten will that nobody witnessed does not meet that rule. Our attorneys can review a will you wrote yourself."
+  - q: "Is an oral will valid in Illinois?"
+    a: "No. The Probate Act requires a will to be in writing and signed (755 ILCS 5/4-3), so spoken wishes, even recorded ones, do not make a valid will. Put your plan on paper and sign it with two witnesses."
 related:
   - "illinois"
   - "illinois/who-inherits-without-a-will-in-illinois"

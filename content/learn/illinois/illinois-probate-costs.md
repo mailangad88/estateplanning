@@ -21,6 +21,8 @@ faqs:
     a: "Yes, in a formal estate the creditor notice must be published once a week for three weeks. Mailed notice to known creditors is separate. The newspaper sets its own rate, so call a few local papers if the court allows a choice."
   - q: "Do I pay a surety bond in every Illinois estate?"
     a: "Not always. Courts often require a bond to protect the estate, and the premium is a cost of administration. Many wills ask the court to excuse surety. Ask the clerk or an attorney whether your estate needs one."
+  - q: "How much does probate cost in DuPage County?"
+    a: "DuPage County's circuit clerk schedule effective September 11, 2026 lists $300 to open a probate estate and a $230 appearance fee, with no appearance fee for the executor or administrator. Publication, a bond premium, certified copies and attorney fees come on top. Our Illinois probate fee table compares DuPage with other counties."
 related:
   - "illinois"
   - "illinois/illinois-probate-process"
