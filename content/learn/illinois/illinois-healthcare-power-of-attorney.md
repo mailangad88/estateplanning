@@ -24,6 +24,8 @@ faqs:
     a: "The Illinois Department of Public Health describes the POLST as a practitioner's medical order about treatments such as CPR. It needs the patient's or legal representative's signature and a qualified practitioner's signature, and providers must honor a validly completed form."
   - q: "How do I cancel an Illinois health care power of attorney?"
     a: "You may revoke it by destroying it, signing a written revocation, or stating your revocation aloud in front of a witness who is 18 or older (755 ILCS 45/4-6). Tell your agent, doctors, and hospital, and replace any copies."
+  - q: "Can a power of attorney avoid guardianship in Illinois?"
+    a: "Often, yes. If you sign a health care power of attorney and a property power of attorney while you have capacity, your agents can usually act without asking a court. Without them, family members may need to ask a court to appoint a guardian, which takes time and money and puts the choice of decision maker in a judge's hands."
 related:
   - "illinois"
   - "illinois/illinois-power-of-attorney-for-property"
