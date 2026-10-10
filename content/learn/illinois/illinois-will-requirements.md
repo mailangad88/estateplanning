@@ -27,6 +27,10 @@ faqs:
     a: "Yes. Illinois does not require a lawyer. The will must be in writing, signed by you while you are at least 18 and of sound mind, and attested in your presence by at least two credible witnesses (755 ILCS 5/4-1 and 4-3). A handwritten will that nobody witnessed does not meet that rule. Our attorneys can review a will you wrote yourself."
   - q: "Is an oral will valid in Illinois?"
     a: "No. The Probate Act requires a will to be in writing and signed (755 ILCS 5/4-3), so spoken wishes, even recorded ones, do not make a valid will. Put your plan on paper and sign it with two witnesses."
+  - q: "Does divorce cancel a will in Illinois?"
+    a: "Not the whole will. A divorce cancels the gifts and appointments to the former spouse in a will signed before the divorce, and the rest of the will still stands (755 ILCS 5/4-7). It is still wise to sign a new will after a divorce so it says what you now want."
+  - q: "What is a codicil and can I use one in Illinois?"
+    a: "A codicil is a short document that changes part of an existing will. Illinois allows one, but it must be signed and witnessed with the same formalities as a will. Never cross out or add lines on a signed will, because handwritten changes can cause disputes or even revoke parts of it."
 related:
   - "illinois"
   - "illinois/who-inherits-without-a-will-in-illinois"

@@ -21,6 +21,8 @@ faqs:
     a: "Usually yes, because the executor does not wait for a court order at each step. But independent administration cannot shorten the claims period or the six-month window to contest the will. It mainly removes court scheduling delays."
   - q: "How long after the death should I open probate in Illinois?"
     a: "File the will with the clerk right away, since the law requires that. Opening the estate soon after helps, because the creditor and contest clocks start at publication and admission. Waiting leaves assets frozen and bills unpaid."
+  - q: "When does the six month will contest period start in Illinois?"
+    a: "It starts when the court admits the will to probate. Anyone who wants to contest the will has six months after that date to file (755 ILCS 5/8-1). The clock does not start at the death, so a delay in opening the estate also delays the end of the contest period."
 related:
   - "illinois"
   - "illinois/illinois-probate-process"
