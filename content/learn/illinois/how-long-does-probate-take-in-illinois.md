@@ -23,6 +23,10 @@ faqs:
     a: "File the will with the clerk right away, since the law requires that. Opening the estate soon after helps, because the creditor and contest clocks start at publication and admission. Waiting leaves assets frozen and bills unpaid."
   - q: "When does the six month will contest period start in Illinois?"
     a: "It starts when the court admits the will to probate. Anyone who wants to contest the will has six months after that date to file (755 ILCS 5/8-1). The clock does not start at the death, so a delay in opening the estate also delays the end of the contest period."
+  - q: "How long does an Illinois executor have to mail notice to heirs?"
+    a: "The executor must mail or deliver notice to the heirs and legatees within 14 days after the order admitting the will (755 ILCS 5/6-10). Keep proof of the mailing, because the court can ask for it."
+  - q: "How long does an independent administration take in Illinois?"
+    a: "Usually a bit more than six months for a simple estate, because creditors get at least six months after the notice is published. After the executor files the closing report, an independent executor must also wait 42 days before asking to be discharged (755 ILCS 5/28-11). A house sale, a dispute or a tax return adds time."
 related:
   - "illinois"
   - "illinois/illinois-probate-process"
