@@ -129,7 +129,7 @@ export default function Pricing() {
       <p>Prices belong on this page so you do not have to book a call to find out. {firm.attorneyName} sets them. If your situation needs a different price, you hear it before you pay anything.</p>
 
       <p className="cta-row no-print">
-        <Link className="button" href="/plan-finder">Book a consult</Link>
+        <Link className="button" href="/book?from=pricing">Book a consult</Link>
         <Link className="button secondary" href="/wills">Wills</Link>
         <Link className="button secondary" href="/living-trusts">Living trusts</Link>
       </p>

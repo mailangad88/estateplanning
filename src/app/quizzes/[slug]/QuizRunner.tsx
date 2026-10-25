@@ -204,7 +204,7 @@ export default function QuizRunner({
               <Link className="button" href={`/free/${magnet.slug}/view`}>Open your free {magnet.formatLabel.toLowerCase()}</Link>
             </p>
           )}
-          {magnet?.sequence !== "G" && <p>Want to talk through your results? <Link href="/plan-finder">Book a consult</Link>.</p>}
+          {magnet?.sequence !== "G" && <p>Want to talk through your results? <Link href="/book?from=quiz">Book a consult</Link>.</p>}
         </>
       )}
       <p>

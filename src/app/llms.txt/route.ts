@@ -16,7 +16,7 @@ export function GET() {
     `Full text of every article: ${abs("/llms-full.txt")}`,
     `Machine-readable glossary: ${abs("/glossary.json")} · All questions and answers: ${abs("/faq.json")}`,
     `Markdown copy of any library, state or glossary page: add /raw before the path and .md after it, e.g. ${abs("/raw/learn/wills.md")}`,
-    `Book a consult: ${abs("/plan-finder")} · Phone: ${firm.phone}`,
+    `Book a consult: ${abs("/book")} · Phone: ${firm.phone}`,
     "",
   ];
   for (const s of sections) {

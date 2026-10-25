@@ -140,7 +140,7 @@ export function DecisionPicker({ guide, anchorBase = "" }: { guide: DecisionGuid
 
         {guide.resultNote && <p className="dg-note">{guide.resultNote}</p>}
         <div className="cta-row">
-          <Link className="button" href="/plan-finder">Confirm it with an attorney</Link>
+          <Link className="button" href="/book?from=decide-picker&topic=will-or-trust">Confirm it with an attorney</Link>
           <button type="button" className="button secondary" onClick={restart}>
             <RotateCcw size={16} aria-hidden="true" /> Start over
           </button>

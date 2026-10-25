@@ -45,7 +45,7 @@ export default async function MagnetView({ params }: Props) {
         state and change over time. Using this resource does not create an attorney-client relationship.
       </p>
       {m.sequence === "B" && (
-        <p className="no-print">Questions about your own plan? <Link href="/plan-finder">Book a consult</Link>.</p>
+        <p className="no-print">Questions about your own plan? <Link href="/book?from=free-resource-print">Book a consult</Link>.</p>
       )}
     </article>
   );

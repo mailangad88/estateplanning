@@ -207,7 +207,7 @@ export default function SmallEstate({ initialState }: { initialState?: string })
           />
           <p className="notice">
             Talk it through with an attorney if you would like a person to look at the details.{" "}
-            <Link href="/plan-finder">Book a consult</Link>
+            <Link href="/book?from=small-estate&topic=probate">Book a consult</Link>
           </p>
           <p className="notice">{SMALL_ESTATE_DISCLAIMER}</p>
         </>

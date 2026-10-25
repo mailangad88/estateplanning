@@ -36,7 +36,7 @@ export default function Contact() {
         <ReviewNote reviewed={false} updated="October 2026" />
         <p className="cta-row no-print">
           <a className="button" href={`tel:${digits}`}>Call {firm.phone}</a>
-          <Link className="button secondary" href="/plan-finder">Book a consult</Link>
+          <Link className="button secondary" href="/book?from=contact">Book a consult</Link>
         </p>
       </PageHero>
       <div className="answer">
@@ -52,7 +52,7 @@ export default function Contact() {
         {firm.textNumber && (
           <li><a className="card-link" href={`sms:${firm.textNumber.replace(/\D/g, "")}`}><span className="tag">Text</span><strong>{firm.textNumber}</strong><span className="card-desc">Text a question. Please leave out private details.</span></a></li>
         )}
-        <li><Link className="card-link" href="/plan-finder"><span className="tag">Online</span><strong>Book a consult</strong><span className="card-desc">Two minutes of questions, then pick a time.</span></Link></li>
+        <li><Link className="card-link" href="/book?from=contact"><span className="tag">Online</span><strong>Book a consult</strong><span className="card-desc">Pick a time on the calendar. No questionnaire first.</span></Link></li>
         <li><Link className="card-link" href="/plan-finder"><span className="tag">Not sure</span><strong>Start the plan finder</strong><span className="card-desc">See what people in your situation commonly plan for.</span></Link></li>
       </ul>
 

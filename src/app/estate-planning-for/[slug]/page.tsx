@@ -132,7 +132,7 @@ export default async function AudiencePage({ params }: Props) {
   const path = `/estate-planning-for/${a.slug}`;
   const digits = firm.phone.replace(/\D/g, "");
   // Sensitive pages send visitors to the contact page, not the quiz, so no health or family answers are collected.
-  const bookHref = a.sensitive ? "/contact" : "/plan-finder";
+  const bookHref = a.sensitive ? "/contact" : "/book?from=audience-page";
   const stage = lifeStageFor(a.slug);
   const tones = ["accent", "clay", "sage"] as const;
   const board = stage ? stageBoard(stage.slug) : null;

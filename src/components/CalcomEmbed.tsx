@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useId, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { track } from "@/components/capture";
 import { assignedVariants } from "@/lib/experiments";
 
@@ -9,6 +9,11 @@ interface Props {
   name?: string;
   email?: string;
   leadRef?: string;
+  /** Prefilled into the booking form's notes so the attorney sees context before the call. */
+  notes?: string;
+  /** Extra booking metadata (placement, topic id). Keys and values must not identify the visitor. */
+  metadata?: Record<string, string>;
+  onBooked?: () => void;
 }
 
 type CalFn = ((...args: unknown[]) => void) & { loaded?: boolean; ns?: Record<string, unknown>; q?: unknown[] };
@@ -31,9 +36,11 @@ function loadCal(): CalFn {
 }
 
 /** Inline Cal.com booking calendar. Reports a successful booking through track("consult_booked"). */
-export default function CalcomEmbed({ link, name, email, leadRef }: Props) {
+export default function CalcomEmbed({ link, name, email, leadRef, notes, metadata, onBooked }: Props) {
   const id = "cal-" + useId().replace(/[^a-zA-Z0-9]/g, "");
   const [booked, setBooked] = useState(false);
+  const onBookedRef = useRef(onBooked);
+  onBookedRef.current = onBooked;
 
   useEffect(() => {
     const Cal = loadCal();
@@ -41,21 +48,27 @@ export default function CalcomEmbed({ link, name, email, leadRef }: Props) {
     if (name) config.name = name;
     if (email) config.email = email;
     if (leadRef) config["metadata[leadRef]"] = leadRef;
+    if (notes) config.notes = notes;
+    for (const [k, v] of Object.entries(metadata ?? {})) if (v) config[`metadata[${k}]`] = v;
     Cal("init", { origin: "https://app.cal.com" });
+    document.getElementById(id)?.replaceChildren(); // re-init (new notes) replaces the old calendar instead of stacking a second one
     Cal("inline", { elementOrSelector: "#" + id, calLink: link, config });
     Cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
     let fired = false;
-    const onBooked = () => {
+    const handleBooked = () => {
       if (fired) return;
       fired = true;
       const variants: Record<string, string> = {};
       for (const [k, v] of Object.entries(assignedVariants())) variants[`exp_${k}`] = v;
-      track("consult_booked", { source: "calcom", ...variants });
+      track("consult_booked", { source: "calcom", ...(metadata?.from ? { from: metadata.from } : {}), ...variants });
       setBooked(true);
+      onBookedRef.current?.();
     };
-    Cal("on", { action: "bookingSuccessful", callback: onBooked });
-    Cal("on", { action: "bookingSuccessfulV2", callback: onBooked });
-  }, [id, link, name, email, leadRef]);
+    Cal("on", { action: "bookingSuccessful", callback: handleBooked });
+    Cal("on", { action: "bookingSuccessfulV2", callback: handleBooked });
+    // metadata is compared by value so a new object each render does not re-init the embed
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id, link, name, email, leadRef, notes, JSON.stringify(metadata ?? {})]);
 
   return (
     <>

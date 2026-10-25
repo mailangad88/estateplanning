@@ -180,7 +180,7 @@ export default function SiteHeader({ brandName, phone: fallback }: { brandName: 
               <Phone size={16} aria-hidden="true" />
               <span>{phone}</span>
             </a>
-            <Link href="/plan-finder" className="button">Book a consult</Link>
+            <Link href="/book?from=header" className="button">Book a consult</Link>
           </div>
         </nav>
         <div className="site-header__mobile">

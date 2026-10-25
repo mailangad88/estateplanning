@@ -193,7 +193,7 @@ export default function GuardianPicker() {
           />
 
           <h3>When to talk to an attorney</h3>
-          <p>Naming a guardian in a will is a nomination, and a court makes the final decision based on what serves the child&apos;s interests. An attorney can put your choice and a backup in writing, and set up money for the children. <Link href="/plan-finder">Book a consult</Link>.</p>
+          <p>Naming a guardian in a will is a nomination, and a court makes the final decision based on what serves the child&apos;s interests. An attorney can put your choice and a backup in writing, and set up money for the children. <Link href="/book?from=guardian-picker&topic=kids">Book a consult</Link>.</p>
           <p className="notice">This is general educational information, not legal advice, and using this tool does not create an attorney-client relationship. Laws change and your facts matter.</p>
         </>
       )}

@@ -104,7 +104,7 @@ export default function Home() {
           lead="Seven stages of life, one what-if at each. Plan for it or put it off, and watch your family's plan fill in."
           center
         />
-        <LifeGame squares={lifeBoard()} bookHref="/plan-finder" phone={firm.phone} next={{ label: "Find the right plan in two minutes", href: "/plan-finder" }} library={fullLibrary()} id="game-life" />
+        <LifeGame squares={lifeBoard()} bookHref="/book?from=life-game" phone={firm.phone} next={{ label: "Find the right plan in two minutes", href: "/plan-finder" }} library={fullLibrary()} id="game-life" />
         <p className="lgame-band__more">
           <Link href="/my-plan" className="arrow-link">Ready for the real thing? Organize your family plan in one place <ArrowRight size={16} aria-hidden="true" /></Link>
         </p>

@@ -29,7 +29,7 @@ export default async function PartnerPage({ params }: { params: Promise<{ slug: 
       <p className="lead">{PARTNER_TYPE_LABELS[partner.type]} · {partner.name}</p>
       <p>
         {partner.name} may suggest {firm.brandName} to clients who ask about wills, trusts or powers of attorney. You can reach us yourself at any time:{" "}
-        <Link href="/intake">book a consult</Link> or call {firm.phone}.
+        <Link href="/book?from=partner">book a consult</Link> or call {firm.phone}.
       </p>
       <div className="notice">
         <strong>How this works.</strong> {shortDisclosure(partner.name, partner.org, firm.brandName)}

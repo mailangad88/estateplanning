@@ -117,7 +117,7 @@ export function EmailCapture({
     return (
       <div className="cta" role="status">
         <strong>{success}</strong>
-        <p>Want to talk it through? <Link href="/plan-finder">Book a consult</Link> in about two minutes.</p>
+        <p>Want to talk it through? <Link href="/book?from=email-capture">Book a consult</Link> and pick a time.</p>
       </div>
     );
   }
@@ -211,7 +211,7 @@ export function StickyContactBar({ phone: fallback, textNumber }: { phone: strin
     <div className="sticky-bar no-print">
       <a href={`tel:${digits}`} onClick={() => track("click_to_call")}>Call</a>
       {textNumber && <a href={`sms:${textNumber.replace(/\D/g, "")}`} onClick={() => track("click_to_text")}>Text</a>}
-      <Link href="/plan-finder" onClick={() => track("cta_book", { from: "sticky" })}>Book a consult</Link>
+      <Link href="/book?from=sticky" onClick={() => track("cta_book", { from: "sticky" })}>Book a consult</Link>
     </div>
   );
 }
