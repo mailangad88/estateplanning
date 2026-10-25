@@ -122,7 +122,7 @@ export function DecisionPage({ guide }: { guide: DecisionGuide }) {
             <p>Bring your picker result to a consult. We confirm what fits under your state&apos;s law and quote a flat fee before anything is signed.</p>
           </div>
           <p className="cta-row">
-            <Link className="button large" href="/plan-finder">Book a consult</Link>
+            <Link className="button large" href="/book?from=decide&topic=will-or-trust">Book a consult</Link>
             <a className="button secondary large dg-cta__phone" href={`tel:${digits}`}>
               <Phone size={18} aria-hidden="true" /> Call {firm.phone}
             </a>

@@ -148,7 +148,7 @@ export default function MagnetOptIn({ magnet, compact = false, heading }: { magn
         </Link>
         {magnet.sequence === "B" && (
           <p className="notice" style={{ marginTop: 12 }}>
-            Want help putting it into practice? <Link href="/plan-finder">Book a consult</Link>.
+            Want help putting it into practice? <Link href="/book?from=free-resource">Book a consult</Link>.
           </p>
         )}
       </div>

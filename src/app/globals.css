@@ -329,3 +329,11 @@ table.facts th { width: 34%; background: var(--surface); }
 .site-search form { display: grid; gap: 6px; margin: 8px 0 24px; }
 .site-search input[type="search"] { width: 100%; font: inherit; font-size: 1.1rem; padding: 12px 14px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: inherit; }
 .search-results mark { background: none; color: inherit; font-weight: 600; text-decoration: underline; text-decoration-thickness: 2px; }
+
+/* /book: calendar-first booking */
+.book-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr); gap: 40px; align-items: start; margin-top: 24px; }
+.book-layout aside { position: sticky; top: 96px; }
+.book-layout aside .steps { grid-template-columns: 1fr; }
+@media (max-width: 900px) { .book-layout { grid-template-columns: 1fr; gap: 24px; } .book-layout aside { position: static; } }
+.book-facts { list-style: none; padding: 0; margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.book-facts li { padding: 6px 12px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); font-size: 0.9rem; font-weight: 600; }

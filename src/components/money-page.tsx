@@ -134,7 +134,7 @@ export function MoneyPage({ page }: { page: MoneyPageData }) {
     <Link className="button" href="/plan-finder">Start the plan finder</Link>
   );
   const secondary = callFirst ? (
-    <Link className="button secondary" href="/plan-finder">Book a consult</Link>
+    <Link className="button secondary" href="/book?from=service-page">Book a consult</Link>
   ) : (
     <Link className="button secondary" href="/pricing">See our flat fees</Link>
   );
@@ -159,7 +159,7 @@ export function MoneyPage({ page }: { page: MoneyPageData }) {
           <p className="kicker">The what-if game</p>
           <h2 id="what-if-game">What happens if this waits?</h2>
           <p>Move along the board. At each what-if, plan for it or put it off, and see what usually happens.</p>
-          <LifeGame squares={board} bookHref="/plan-finder" phone={firm.phone} senior={callFirst} id="game-service" />
+          <LifeGame squares={board} bookHref="/book?from=life-game" phone={firm.phone} senior={callFirst} id="game-service" />
         </section>
       )}
       {page.jump && (

@@ -119,7 +119,7 @@ export default function BeneficiaryAudit({ initialState }: { initialState?: stri
             {needsConsultNote(result)
               ? "A former spouse, a minor child or a person on benefits named directly, or several open items, are the usual reasons to get help before changing a form. "
               : "If a form conflicts with your will or trust, or you are unsure what to put, an attorney can help. "}
-            <Link href="/plan-finder">Book a consult</Link>. Free printable checklist:{" "}
+            <Link href="/book?from=beneficiary-audit&topic=review">Book a consult</Link>. Free printable checklist:{" "}
             <Link href="/free/beneficiary-designation-audit">beneficiary designation audit</Link>.
           </p>
         </div>

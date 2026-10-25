@@ -40,7 +40,7 @@ export default function WillOrTrust() {
             </div>
             <p>
               {done.guideUrl && <>Your guide is ready: <Link href={done.guideUrl}>open the probate vs. trust guide</Link>. </>}
-              Want to talk it through? <Link href="/intake">Book a consult</Link>.
+              Want to talk it through? <Link href="/book?from=will-or-trust&topic=will-or-trust">Book a consult</Link>.
             </p>
           </>
         ) : (

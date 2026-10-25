@@ -267,7 +267,7 @@ export default function DeathTax({ initialState }: { initialState?: string }) {
                 {gentle
                   ? "If the estate is near or above a threshold, or the state has an inheritance tax, filing deadlines can be short. Talk it through with an attorney."
                   : "If your estate is near or above a threshold, or your state has an inheritance tax, planning may matter. An attorney can look at your whole picture."}{" "}
-                <Link href="/plan-finder">{gentle ? "Talk it through with an attorney" : "Book a consult"}</Link>
+                <Link href={gentle ? "/book?from=death-tax&topic=probate" : "/book?from=death-tax"}>{gentle ? "Talk it through with an attorney" : "Book a consult"}</Link>
               </p>
             </>
           )}

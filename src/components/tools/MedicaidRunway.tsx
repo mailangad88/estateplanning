@@ -180,7 +180,7 @@ export default function MedicaidRunway({ initialState }: { initialState?: string
             )}
 
             {out.crisis && r.status !== "already_near_limit" && !a.moveWithin14Days && (
-              <p className="notice">With a year or less of savings, many families talk to an elder law attorney soon. <Link href="/plan-finder">Book a consult</Link>.</p>
+              <p className="notice">With a year or less of savings, many families talk to an elder law attorney soon. <Link href="/book?from=medicaid-runway&topic=parent">Book a consult</Link>.</p>
             )}
 
             {out.homeEquityWarning && (
@@ -234,7 +234,7 @@ export default function MedicaidRunway({ initialState }: { initialState?: string
             </p>
 
             <p className="notice">
-              When to talk to an attorney: if savings may last a year or less, if a spouse lives at home, if a home is owned, or before giving away or moving any asset. <Link href="/plan-finder">Book a consult</Link>.
+              When to talk to an attorney: if savings may last a year or less, if a spouse lives at home, if a home is owned, or before giving away or moving any asset. <Link href="/book?from=medicaid-runway&topic=parent">Book a consult</Link>.
             </p>
             <p className="notice">
               This is general educational information, not legal advice, and using this tool does not create an attorney-client relationship. Medicaid rules differ by state and change often. This estimate is not an eligibility determination, and it is not advice about moving or giving away assets, which can trigger penalties. Ask an elder law attorney before you transfer anything. Dollar amounts are ranges for illustration.
@@ -272,7 +272,7 @@ function UrgentBlock() {
   return (
     <div className="cta" role="alert">
       <strong>A move this soon is worth a call to an attorney now</strong>
-      <p>Use the Call button in the bar at the bottom of the screen, or <Link href="/plan-finder">book a consult</Link> and we will get back to you quickly. Please hold off on moving or giving away any money or property until you have talked it through.</p>
+      <p>Use the Call button in the bar at the bottom of the screen, or <Link href="/book?from=medicaid-runway&topic=parent">book a consult</Link> and we will get back to you quickly. Please hold off on moving or giving away any money or property until you have talked it through.</p>
     </div>
   );
 }
