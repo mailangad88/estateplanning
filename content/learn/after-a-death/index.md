@@ -178,6 +178,12 @@ Call one if the person owned real estate, a business or substantial accounts, if
 
 ## More questions people ask
 
+If you suspect an executor is hiding or taking money, [how to report a dishonest executor](/learn/after-a-death/how-to-report-a-dishonest-executor) lists the warning signs, the records to gather and where to report in Illinois or New Jersey.
+
+For adult children, [what to do when your mother or father dies](/learn/after-a-death/what-to-do-when-your-mother-or-father-dies) covers the first week, how siblings split the work and what to leave alone.
+
+A trustee who finds an account outside the trust can read [does a living trust go through probate after death](/learn/after-a-death/does-a-living-trust-go-through-probate-after-death) to see which assets still need a court.
+
 For the health insurance side of a death, [what happens to Medicare and medical bills when someone dies](/learn/after-a-death/what-happens-to-medicare-and-medical-bills-when-someone-dies) covers cancelling plans, refunds, unpaid bills and Medicaid recovery.
 
 Before selling the contents of a home, [how an estate sale works](/learn/after-a-death/how-does-an-estate-sale-work) explains who may authorize it, what to remove first and where the money goes.

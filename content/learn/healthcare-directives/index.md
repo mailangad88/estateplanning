@@ -161,6 +161,10 @@ Healthcare directives handle medical decisions and information. The [durable fin
 
 ## More questions people ask
 
+To plan for the first agent being unavailable, [should I name an alternate healthcare agent](/learn/healthcare-directives/should-i-name-an-alternate-healthcare-agent-and-can-i-remove-one) covers backups, triggers and how to replace an agent.
+
+For women of childbearing age, [does a living will cover pregnancy](/learn/healthcare-directives/does-a-living-will-cover-pregnancy) compares the Illinois and New Jersey rules.
+
 For what makes a living will enforceable and where it falls short, see [is a living will legally binding](/learn/healthcare-directives/is-a-living-will-legally-binding).
 
 To check whether a friend, nurse or doctor is allowed to serve, read [who can be your healthcare agent](/learn/healthcare-directives/can-a-doctor-friend-or-nurse-be-your-healthcare-agent).

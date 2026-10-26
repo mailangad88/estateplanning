@@ -143,6 +143,22 @@ If a death has just happened, find the original will, order certified death cert
 
 ## More questions people ask
 
+If no one knows where the will is, [how to find a will after someone dies in New Jersey](/learn/new-jersey/how-to-find-a-will-after-a-death-in-new-jersey) covers the Will Registry, safe deposit boxes and what to do with a copy.
+
+Parents of minors can read [how to name a guardian for your children in New Jersey](/learn/new-jersey/naming-a-guardian-for-your-children-in-new-jersey) for the will clause, the other parent's consent and standby guardians.
+
+To build the family tree and handle missing relatives, see [how to prove who the heirs are in a New Jersey estate](/learn/new-jersey/proving-who-the-heirs-are-in-a-new-jersey-estate).
+
+New residents can check [whether an out-of-state will is valid in New Jersey](/learn/new-jersey/is-an-out-of-state-will-valid-in-new-jersey) and what to update after the move.
+
+Choosing or accepting the job is covered in [who can be an executor in New Jersey](/learn/new-jersey/who-can-be-an-executor-in-new-jersey), including out-of-state executors, the bond and backups.
+
+If a loved one is in the hospital with no document, [who makes medical decisions in New Jersey without a health care proxy](/learn/new-jersey/who-makes-medical-decisions-in-new-jersey-without-a-health-care-proxy) explains family disagreement and the guardianship fallback.
+
+To replace an agent, [how to revoke a New Jersey power of attorney](/learn/new-jersey/how-to-revoke-a-new-jersey-power-of-attorney) gives the three legal methods and a notice list for banks and the old agent.
+
+For card balances left behind, [credit card debt after a death in New Jersey](/learn/new-jersey/credit-card-debt-after-death-in-new-jersey) explains who is liable and what collectors cannot demand from family.
+
 If you want to leave a child out, [can you disinherit a child in New Jersey](/learn/new-jersey/can-you-disinherit-a-child-in-new-jersey) explains that children have no forced share, how to write it, and what a caveat or contest looks like.
 
 When a marriage ends, [how divorce affects a New Jersey will, trust, power of attorney and beneficiary forms](/learn/new-jersey/how-divorce-affects-a-new-jersey-will-trust-power-of-attorney-and-beneficiary-forms) shows what the statute fixes and which documents you must change yourself.

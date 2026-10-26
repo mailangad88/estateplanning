@@ -154,6 +154,10 @@ State rules matter a great deal here. If you want to see how probate works where
 
 ## More questions people ask
 
+To pick the right court, [which county do you file probate in](/learn/probate/which-county-do-you-file-probate-in) covers domicile, nursing home stays and second homes.
+
+If something turns up after the case ends, [can you reopen a closed probate estate](/learn/probate/can-you-reopen-a-closed-probate-estate) explains petitions, small estate shortcuts and late claims.
+
 If a bank turns down the paperwork, [what to do when a bank refuses a small estate affidavit](/learn/probate/what-to-do-when-a-bank-refuses-a-small-estate-affidavit) explains how to push back and when to open probate.
 
 For the clocks that start at death, see [how long you have to file probate in Illinois or New Jersey](/learn/probate/how-long-do-you-have-to-file-probate-in-illinois-or-new-jersey).

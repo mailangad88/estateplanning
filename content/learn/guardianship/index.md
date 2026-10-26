@@ -175,6 +175,10 @@ You can do the first two this month and the rest over time. A good first step is
 
 ## More questions people ask
 
+For the actual clause and the order of backups, [how to name a guardian in your will](/learn/guardianship/how-to-name-a-guardian-in-your-will-with-backups-and-wording) gives sample wording and Illinois and New Jersey rules.
+
+If an adult guardianship is proposed, in place or being misused, [can a guardianship be contested or ended](/learn/guardianship/can-a-guardianship-be-contested-or-ended) covers the steps in both states.
+
 If a child is about to inherit real estate or an IRA, [what happens when a minor inherits a house or retirement account](/learn/guardianship/what-happens-when-a-minor-inherits-a-house-or-retirement-account) explains who holds it and how to avoid court.
 
 To see which documents actually appoint a guardian, [can you name a guardian without a will](/learn/guardianship/can-you-name-a-guardian-without-a-will) compares wills, trusts, letters and handwritten notes.

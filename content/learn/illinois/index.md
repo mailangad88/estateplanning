@@ -201,6 +201,22 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+If the person had an IMRF, TRS, SURS or SERS pension, [Illinois pension survivor benefits](/learn/illinois/illinois-pension-survivor-benefits-imrf-trs-surs-sers) explains who is paid and why the beneficiary form beats the will.
+
+Once letters issue, [opening an estate bank account in Illinois](/learn/illinois/opening-an-estate-bank-account-in-illinois) covers the EIN, what the bank asks for and the money mistakes to avoid.
+
+If you are choosing someone for your own will, [who can be an executor in Illinois](/learn/illinois/who-can-be-an-executor-in-illinois) covers the qualifications and how to name backups.
+
+If you moved here with a will signed elsewhere, [whether an out-of-state will is valid in Illinois](/learn/illinois/is-an-out-of-state-will-valid-in-illinois) explains what carries over and what to update.
+
+If a house is coming to you or to you and your siblings, [inheriting a house in Illinois](/learn/illinois/inheriting-a-house-in-illinois) covers title, the mortgage, property taxes and whether to sell or keep it.
+
+If you live in Illinois and own a cabin or land elsewhere, [avoiding ancillary probate on out-of-state property](/learn/illinois/illinois-resident-owning-property-in-another-state) explains why a second case happens and how a trust prevents it.
+
+Couples in a civil union can read [civil union partners and Illinois estate law](/learn/illinois/civil-union-partners-and-illinois-estate-law) for inheritance without a will, spouse rights and the documents to sign.
+
+Parents of a child with a disability can follow [special needs planning in Illinois](/learn/illinois/special-needs-planning-in-illinois-for-a-disabled-child) for the order of trust, ABLE account and guardianship alternatives.
+
 To see what the job pays, [how much an executor gets paid in Illinois](/learn/illinois/how-much-does-an-executor-get-paid-in-illinois) explains reasonable compensation, the tax cost of taking it, keeping a time log and how heirs can object.
 
 For income the estate earns after death, [Illinois Form IL-1041 for an estate or trust](/learn/illinois/illinois-form-il-1041-estate-and-trust-income-tax-return) covers who files, the due date, the six-month extension and grantor trusts.

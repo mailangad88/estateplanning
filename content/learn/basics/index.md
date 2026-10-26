@@ -180,6 +180,10 @@ Curious what happens when a plan is missing or out of date? Our guide to [what h
 
 ## More questions people ask
 
+For the personal side of a plan, [what an ethical will is and how to write a legacy letter](/learn/basics/what-is-an-ethical-will-and-how-to-write-a-legacy-letter) gives prompts and an example.
+
+To keep a plan from being overturned, [what undue influence is and how to protect a will from it](/learn/basics/what-is-undue-influence-in-estate-planning) lists the warning signs and safeguards.
+
 To amend or cancel documents correctly, [how to change or revoke your estate plan](/learn/basics/how-to-change-or-revoke-your-estate-plan-step-by-step) goes document by document.
 
 To know what the first meeting is like, [what happens at an estate planning appointment](/learn/basics/what-happens-at-an-estate-planning-appointment-and-what-the-attorney-will-ask) lists the questions and why they are asked.

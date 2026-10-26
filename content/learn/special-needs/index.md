@@ -159,6 +159,10 @@ Include the person with a disability in the conversation as much as they are abl
 
 ## More questions people ask
 
+If a trustee has moved away or the remainder beneficiaries have changed, [whether you can change or revoke a special needs trust](/learn/special-needs/can-you-change-or-revoke-a-special-needs-trust) explains what parents can amend and what stays locked.
+
+Before you book a first meeting, [what to ask a special needs planning attorney and what to bring](/learn/special-needs/what-to-ask-a-special-needs-planning-attorney-and-what-to-bring) gives a document checklist and the questions worth asking.
+
 If a policy will fund the trust, [life insurance for a special needs trust](/learn/special-needs/life-insurance-for-a-special-needs-trust) covers the beneficiary form, who should own the policy, and term versus permanent coverage.
 
 For a grown child with mental illness or addiction, [a trust for an adult child with mental illness or addiction](/learn/special-needs/trust-for-an-adult-child-with-mental-illness-or-addiction) explains when to use a special needs, discretionary or spendthrift trust and who should serve as trustee.

@@ -148,6 +148,10 @@ Related life situations have their own pages: [estate planning after divorce](/l
 
 ## More questions people ask
 
+If you worry about a challenge, [can my stepchildren contest my will](/learn/blended-families/can-stepchildren-contest-a-will-in-a-blended-family) explains who has standing and how to make the plan hold up.
+
+When one spouse will run a trust that the children inherit later, [naming a spouse as trustee for your kids' inheritance](/learn/blended-families/can-my-spouse-be-trustee-for-my-children-from-a-first-marriage) covers the conflict and four safer setups.
+
 If you want a stepchild to inherit as a legal child, [adopting an adult stepchild](/learn/blended-families/adopting-an-adult-stepchild-to-make-them-an-heir) explains how adult adoption works in Illinois and New Jersey and what it can cost your spouse.
 
 When the family company is the main asset, [leaving a business to your children while providing for a second spouse](/learn/blended-families/leaving-a-business-to-your-children-and-providing-for-a-second-spouse) covers voting splits, trusts and insurance.

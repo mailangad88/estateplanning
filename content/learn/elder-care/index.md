@@ -162,6 +162,10 @@ Other pillars worth reading alongside this one: [power of attorney](/learn/power
 
 ## More questions people ask
 
+If you are weighing a policy that pays a death benefit if care is never needed against one with a lower premium, [hybrid long-term care insurance vs traditional policies](/learn/elder-care/hybrid-long-term-care-insurance-vs-traditional-policies) compares them side by side.
+
+To see how the rate, the bed and the resident's monthly income change when Medicaid takes over, read [private pay vs Medicaid in a nursing home](/learn/elder-care/private-pay-vs-medicaid-in-a-nursing-home).
+
 If a house sale is how the bills get paid, [capital gains when you sell a home to pay for nursing home care](/learn/elder-care/capital-gains-when-you-sell-a-home-to-pay-for-nursing-home-care) explains the main-home exclusion, how a facility stay counts, and why a gift can cost more tax than a sale.
 
 To compare your choices side by side, [spend down vs. gifting vs. an asset protection trust](/learn/elder-care/spend-down-vs-gifting-vs-asset-protection-trust-for-medicaid) shows how each works on the same family's numbers and timeline.

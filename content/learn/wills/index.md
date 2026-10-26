@@ -164,6 +164,10 @@ An old will can cause as many problems as no will. See [what happens if you die 
 
 ## More questions people ask
 
+If a beneficiary caused the death, [can someone who kills you inherit from you](/learn/wills/can-someone-who-kills-you-inherit-from-you) explains the slayer rule and how it treats wills, joint property and insurance.
+
+Wondering when the family finds out what a will says? [Is there a reading of the will](/learn/wills/is-there-a-reading-of-the-will) lays out the filing, notice and deadlines in Illinois and New Jersey.
+
 To give to a charity through your will, [how to leave money to charity in your will](/learn/wills/how-to-leave-money-to-charity-in-your-will) covers fixed gifts versus percentages, exact legal names and backup wording.
 
 If you wonder whether a will must be registered, [can you file your will with the court while you are alive](/learn/wills/can-you-file-your-will-with-the-court-while-you-are-alive) explains what Illinois and New Jersey require.

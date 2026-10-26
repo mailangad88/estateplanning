@@ -138,6 +138,12 @@ Our [plan readiness assessment](/tools/plan-readiness-assessment) shows which of
 
 ## More questions people ask
 
+If you want to know what your family faces after a sudden death and the eight steps that close the biggest gaps, read [how to protect your family if you die suddenly](/learn/what-if/protect-your-family-if-you-die-suddenly).
+
+When a parent or spouse has a reverse mortgage, [what happens to a reverse mortgage when the borrower dies](/learn/what-if/what-happens-to-a-reverse-mortgage-when-the-borrower-dies) explains the heirs' deadlines, the 95 percent option and a non-borrowing spouse's rights.
+
+If a family member owed back taxes or child support, [what happens if you die owing taxes or child support](/learn/what-if/what-happens-if-you-die-owing-taxes-or-child-support) shows who pays, in what order, and how an executor avoids personal liability.
+
 If a parent with memory loss signed a new will, [whether a will can be contested because of dementia](/learn/what-if/can-a-will-be-contested-because-of-dementia) explains capacity, undue influence and the Illinois and New Jersey deadlines.
 
 If you have sold or retitled something your will names, [what happens when you sell the house your will leaves to someone](/learn/what-if/what-happens-if-you-sell-the-house-your-will-leaves-to-someone) explains ademption and how to word the gift.

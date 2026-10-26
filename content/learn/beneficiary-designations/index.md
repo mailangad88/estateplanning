@@ -141,6 +141,10 @@ Two situations cause most beneficiary problems we see: [an ex-spouse who is stil
 
 ## More questions people ask
 
+Before naming a trust, [does a trust named as beneficiary need its own tax ID and cost more](/learn/beneficiary-designations/does-a-trust-named-as-beneficiary-need-its-own-tax-id-and-cost-more) covers the EIN, yearly tax work and when the cost is worth it.
+
+If two people die close together, [what happens if the owner and beneficiary die at the same time](/learn/beneficiary-designations/what-happens-if-the-owner-and-beneficiary-die-at-the-same-time) explains survival rules and how to word your forms.
+
 If an account has no beneficiary at all, [what happens with no beneficiary on a bank or brokerage account](/learn/beneficiary-designations/what-happens-if-there-is-no-beneficiary-on-a-bank-or-brokerage-account) explains the probate result and the fix.
 
 When co-beneficiaries dispute a split, [what happens if beneficiaries disagree](/learn/beneficiary-designations/what-if-beneficiaries-disagree-about-how-an-account-or-policy-is-split) covers what companies do and how families settle.
