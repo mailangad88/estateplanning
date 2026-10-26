@@ -138,6 +138,16 @@ Our [plan readiness assessment](/tools/plan-readiness-assessment) shows which of
 
 ## More questions people ask
 
+When siblings co-own an inherited house, [what happens if they cannot agree](/learn/what-if/siblings-inherit-house-and-disagree) explains partition, buyouts and how to avoid a forced sale.
+
+If your child turns 18, [what happens in a medical emergency without a HIPAA release](/learn/what-if/adult-child-medical-emergency-no-hipaa) shows what the hospital can share and the two forms to sign.
+
+For parents of minor children, [what happens if both die without a will](/learn/what-if/both-parents-die-without-a-will) follows the guardian and property decisions a court makes.
+
+If you have never written down your wishes, [what happens when no one knows them](/learn/what-if/nobody-knows-my-end-of-life-wishes) explains the surrogate list and the documents that settle it.
+
+When a home is frozen in a slow estate, [what happens if the house is stuck in probate](/learn/what-if/house-stuck-in-probate) covers carrying costs, causes of delay and ways to move forward.
+
 If a stepparent dies without a will, [what happens to stepchildren](/learn/what-if/stepparent-dies-without-a-will) explains who inherits and what stepchildren can still receive.
 
 For couples who never married, [what happens to an unmarried partner without a will](/learn/what-if/unmarried-partner-dies-without-a-will) covers the home, accounts and what to sign.

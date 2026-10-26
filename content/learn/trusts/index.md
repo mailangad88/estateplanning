@@ -173,6 +173,18 @@ If a trust is not needed, that is a perfectly good outcome. Many families do wel
 
 A trust only controls what is titled in its name. Read [what happens if you never funded your living trust](/learn/what-if/unfunded-trust) before you assume the job is done.
 
+## More questions people ask
+
+For the honest costs of a trust, including funding gaps, upkeep and the lack of tax or creditor benefits, read [the downsides of a living trust](/learn/trusts/what-is-the-downside-of-a-living-trust).
+
+If you worry that a relative could challenge your plan, or you are a beneficiary questioning one, [can a living trust be contested](/learn/trusts/can-a-living-trust-be-contested) covers grounds, who can sue and deadlines.
+
+To see why a revocable trust is not a shield from lawsuits and what does protect assets, read [whether a living trust protects assets from creditors](/learn/trusts/does-a-living-trust-protect-assets-from-creditors).
+
+If you want to keep control of your own trust, [can I be my own trustee](/learn/trusts/can-i-be-my-own-trustee) explains when that works and how to plan the handoff.
+
+For a family-side timeline of the first year after a death, see [what happens to a living trust when you die](/learn/trusts/what-happens-to-a-living-trust-when-you-die).
+
 ## How we can help
 
 Choosing and building the right trust is easier with a short conversation about your assets and your family. The [plan finder](/plan-finder) will suggest which documents suit your situation, and you can book a consultation with one of our attorneys to talk through whether a trust, a will or a combination fits, and to make sure it is drafted, signed and funded under your state's rules.

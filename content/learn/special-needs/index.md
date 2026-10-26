@@ -157,6 +157,18 @@ Include the person with a disability in the conversation as much as they are abl
 - [Writing a letter of intent for a loved one with a disability](/learn/special-needs/letter-of-intent): what to include and how to keep it current.
 - [Turning 18 with a disability: guardianship and its alternatives](/learn/special-needs/guardianship-alternatives-for-adult-children): the legal options and SSI changes at 18.
 
+## More questions people ask
+
+If the money is small or no relative can serve as trustee, [pooled special needs trusts](/learn/special-needs/pooled-special-needs-trusts) explains how nonprofit-run (d)(4)(C) trusts compare with a stand-alone (d)(4)(A) trust.
+
+To see which trust payments reduce SSI and which do not, read [how a special needs trust affects SSI and Medicaid](/learn/special-needs/special-needs-trust-ssi-and-medicaid-rules).
+
+For what the state can claim and who gets the remainder after the beneficiary dies, see the [special needs trust payback provision](/learn/special-needs/special-needs-trust-payback-provision).
+
+If you want to leave money to a disabled child, adult sibling or other relative, [leaving an inheritance without losing benefits](/learn/special-needs/leaving-an-inheritance-to-a-disabled-child-or-sibling) shows how.
+
+For the steps from first meeting to funding, and whether you need a lawyer, see [how to set up a special needs trust](/learn/special-needs/how-to-set-up-a-special-needs-trust).
+
 ## How we can help
 
 Special needs planning works best when the legal documents, the benefits rules and the family's actual daily life are designed together. Our attorneys can draft a trust for your state, coordinate beneficiary designations and prepare decision-making documents. You can start with our [plan finder](/plan-finder) or book a consultation to talk through your family's situation.

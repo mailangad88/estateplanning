@@ -178,6 +178,18 @@ The right next article depends on where you are. If you are choosing a document 
 
 If no document is signed in time, read [what happens if you are incapacitated without a power of attorney](/learn/what-if/incapacitated-without-power-of-attorney). It walks through the court process a family faces instead.
 
+## More questions people ask
+
+If you suspect an agent is misusing the document, [power of attorney abuse](/learn/power-of-attorney/power-of-attorney-abuse) lists the warning signs and the steps to report and stop it.
+
+[Power of attorney and real estate](/learn/power-of-attorney/power-of-attorney-and-real-estate) explains what title companies require and the limits on deeding a house.
+
+[What a power of attorney cannot do](/learn/power-of-attorney/what-a-power-of-attorney-cannot-do) covers changing a will, acting after death and the powers that need explicit wording.
+
+[Does a power of attorney need to be notarized or witnessed](/learn/power-of-attorney/does-a-power-of-attorney-need-to-be-notarized) sets out signing rules, who can witness and what to do if the principal cannot sign.
+
+[How much a power of attorney costs](/learn/power-of-attorney/how-much-does-a-power-of-attorney-cost) compares free forms, online services and attorney fees.
+
 ## How we can help
 
 Our attorneys prepare durable financial and healthcare powers of attorney that match your state's rules and your family's situation, and we can review documents you already have. To see which documents you may be missing, use our [plan finder](/plan-finder), or book a consultation when you are ready to talk through who should act for you.

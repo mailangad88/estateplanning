@@ -571,8 +571,9 @@
    "cluster": "trusts",
    "slug": "what-is-the-downside-of-a-living-trust",
    "priority": 1,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 2"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 2",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K055",
@@ -581,18 +582,20 @@
    "cluster": "trusts",
    "slug": "who-needs-a-living-trust",
    "priority": 1,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 2"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 2",
+   "coveredBy": "/learn/trusts/do-i-need-a-living-trust"
   },
   {
    "id": "K056",
    "keyword": "Can a trust be contested?",
    "intent": "question",
    "cluster": "trusts",
-   "slug": "can-a-trust-be-contested",
+   "slug": "can-a-living-trust-be-contested",
    "priority": 1,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 2"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 2",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K057",
@@ -601,8 +604,9 @@
    "cluster": "trusts",
    "slug": "does-a-living-trust-protect-assets-from-creditors",
    "priority": 1,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 2"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 2",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K058",
@@ -611,8 +615,9 @@
    "cluster": "trusts",
    "slug": "can-i-be-my-own-trustee",
    "priority": 1,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 2"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 2",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K059",
@@ -621,8 +626,9 @@
    "cluster": "trusts",
    "slug": "what-happens-to-a-living-trust-when-you-die",
    "priority": 1,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 2"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 2",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K060",
@@ -642,8 +648,9 @@
    "cluster": "trusts",
    "slug": "how-much-money-should-you-have-before-getting-a-trust",
    "priority": 1,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 2"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 2",
+   "coveredBy": "/learn/trusts/do-i-need-a-living-trust"
   },
   {
    "id": "K062",
@@ -1038,30 +1045,33 @@
    "keyword": "POA abuse",
    "intent": "explainer",
    "cluster": "power-of-attorney",
-   "slug": "poa-abuse",
+   "slug": "power-of-attorney-abuse",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 4"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 4",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K099",
    "keyword": "POA and real estate",
    "intent": "explainer",
    "cluster": "power-of-attorney",
-   "slug": "poa-and-real-estate",
+   "slug": "power-of-attorney-and-real-estate",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 4"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 4",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K100",
    "keyword": "can a POA change a will",
    "intent": "explainer",
    "cluster": "power-of-attorney",
-   "slug": "can-a-poa-change-a-will",
+   "slug": "what-a-power-of-attorney-cannot-do",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 4"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 4",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K101",
@@ -1070,8 +1080,9 @@
    "cluster": "power-of-attorney",
    "slug": "does-poa-end-at-death",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 4"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 4",
+   "coveredBy": "/learn/power-of-attorney/when-does-power-of-attorney-end"
   },
   {
    "id": "K102",
@@ -1110,20 +1121,22 @@
    "keyword": "POA notarization",
    "intent": "explainer",
    "cluster": "power-of-attorney",
-   "slug": "poa-notarization",
+   "slug": "does-a-power-of-attorney-need-to-be-notarized",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 4"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 4",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K106",
    "keyword": "POA cost",
    "intent": "cost",
    "cluster": "power-of-attorney",
-   "slug": "poa-cost",
+   "slug": "how-much-does-a-power-of-attorney-cost",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 4"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 4",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K107",
@@ -1162,20 +1175,22 @@
    "keyword": "What can a power of attorney not do?",
    "intent": "question",
    "cluster": "power-of-attorney",
-   "slug": "what-can-a-power-of-attorney-not-do",
+   "slug": "what-a-power-of-attorney-cannot-do",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 4"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 4",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K111",
    "keyword": "Can a power of attorney take money from my account?",
    "intent": "question",
    "cluster": "power-of-attorney",
-   "slug": "can-a-power-of-attorney-take-money-from-my-account",
+   "slug": "power-of-attorney-abuse",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 4"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 4",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K112",
@@ -1194,8 +1209,9 @@
    "cluster": "power-of-attorney",
    "slug": "does-a-power-of-attorney-need-to-be-notarized",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 4"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 4",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K114",
@@ -1234,8 +1250,9 @@
    "cluster": "power-of-attorney",
    "slug": "how-long-does-power-of-attorney-last",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 4"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 4",
+   "coveredBy": "/learn/power-of-attorney/when-does-power-of-attorney-end"
   },
   {
    "id": "K118",
@@ -1430,8 +1447,9 @@
    "cluster": "healthcare-directives",
    "slug": "what-happens-without-an-advance-directive",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 5"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 5",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K136",
@@ -1451,8 +1469,9 @@
    "cluster": "healthcare-directives",
    "slug": "when-does-a-healthcare-directive-take-effect",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 5"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 5",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K138",
@@ -1470,10 +1489,11 @@
    "keyword": "Can I change my advance directive?",
    "intent": "question",
    "cluster": "healthcare-directives",
-   "slug": "can-i-change-my-advance-directive",
+   "slug": "how-to-change-or-revoke-an-advance-directive",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 5"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 5",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K140",
@@ -1491,10 +1511,11 @@
    "keyword": "Do advance directives work across states?",
    "intent": "question",
    "cluster": "healthcare-directives",
-   "slug": "do-advance-directives-work-across-states",
+   "slug": "do-advance-directives-work-in-other-states",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 5"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 5",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K142",
@@ -1781,40 +1802,44 @@
    "keyword": "pooled trust",
    "intent": "explainer",
    "cluster": "special-needs",
-   "slug": "pooled-trust",
+   "slug": "pooled-special-needs-trusts",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 7",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K169",
    "keyword": "SNT and SSI",
    "intent": "explainer",
    "cluster": "special-needs",
-   "slug": "snt-and-ssi",
+   "slug": "special-needs-trust-ssi-and-medicaid-rules",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 7",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K170",
    "keyword": "SNT and Medicaid",
    "intent": "explainer",
    "cluster": "special-needs",
-   "slug": "snt-and-medicaid",
+   "slug": "special-needs-trust-ssi-and-medicaid-rules",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 7",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K171",
    "keyword": "payback provision",
    "intent": "explainer",
    "cluster": "special-needs",
-   "slug": "payback-provision",
+   "slug": "special-needs-trust-payback-provision",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 7",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K172",
@@ -1832,10 +1857,11 @@
    "keyword": "how to set up special needs trust",
    "intent": "explainer",
    "cluster": "special-needs",
-   "slug": "how-to-set-up-special-needs-trust",
+   "slug": "how-to-set-up-a-special-needs-trust",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 7",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K174",
@@ -1864,20 +1890,22 @@
    "keyword": "leaving inheritance to disabled child",
    "intent": "explainer",
    "cluster": "special-needs",
-   "slug": "leaving-inheritance-to-disabled-child",
+   "slug": "leaving-an-inheritance-to-a-disabled-child-or-sibling",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 7",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K177",
    "keyword": "leaving money to disabled adult sibling",
    "intent": "explainer",
    "cluster": "special-needs",
-   "slug": "leaving-money-to-disabled-adult-sibling",
+   "slug": "leaving-an-inheritance-to-a-disabled-child-or-sibling",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 7",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K178",
@@ -1897,28 +1925,31 @@
    "cluster": "special-needs",
    "slug": "letter-of-intent-special-needs",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 7",
+   "coveredBy": "/learn/special-needs/letter-of-intent"
   },
   {
    "id": "K180",
    "keyword": "(d)(4)(A) trust",
    "intent": "explainer",
    "cluster": "special-needs",
-   "slug": "d-4-a-trust",
+   "slug": "pooled-special-needs-trusts",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 7",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K181",
    "keyword": "(d)(4)(C) trust",
    "intent": "explainer",
    "cluster": "special-needs",
-   "slug": "d-4-c-trust",
+   "slug": "pooled-special-needs-trusts",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 7",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K182",
@@ -1947,10 +1978,11 @@
    "keyword": "Can a parent set up a special needs trust for an adult child?",
    "intent": "question",
    "cluster": "special-needs",
-   "slug": "can-a-parent-set-up-a-special-needs-trust-for-an-adult-child",
+   "slug": "how-to-set-up-a-special-needs-trust",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 7",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K185",
@@ -1968,10 +2000,11 @@
    "keyword": "What happens to special needs trust when the beneficiary dies?",
    "intent": "question",
    "cluster": "special-needs",
-   "slug": "what-happens-to-special-needs-trust-when-the-beneficiary-dies",
+   "slug": "special-needs-trust-payback-provision",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 7",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K187",
@@ -1998,10 +2031,11 @@
    "keyword": "Does an SNT count as income for SSI?",
    "intent": "question",
    "cluster": "special-needs",
-   "slug": "does-an-snt-count-as-income-for-ssi",
+   "slug": "special-needs-trust-ssi-and-medicaid-rules",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 7",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K190",
@@ -2018,20 +2052,22 @@
    "keyword": "Can I leave an inheritance directly to a disabled person?",
    "intent": "question",
    "cluster": "special-needs",
-   "slug": "can-i-leave-an-inheritance-directly-to-a-disabled-person",
+   "slug": "leaving-an-inheritance-to-a-disabled-child-or-sibling",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 7",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K192",
    "keyword": "Do I need a lawyer for a special needs trust?",
    "intent": "question",
    "cluster": "special-needs",
-   "slug": "do-i-need-a-lawyer-for-a-special-needs-trust",
+   "slug": "how-to-set-up-a-special-needs-trust",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 7",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K193",
@@ -2040,8 +2076,9 @@
    "cluster": "special-needs",
    "slug": "what-is-the-difference-between-able-and-snt",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 7",
+   "coveredBy": "/learn/special-needs/able-accounts"
   },
   {
    "id": "K194",
@@ -2050,8 +2087,9 @@
    "cluster": "estate-tax",
    "slug": "estate-tax-exemption-by-year",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 8"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 8",
+   "coveredBy": "/learn/estate-tax/federal-estate-tax-exemption"
   },
   {
    "id": "K195",
@@ -2060,8 +2098,9 @@
    "cluster": "estate-tax",
    "slug": "estate-tax-rates",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 8"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 8",
+   "coveredBy": "/learn/estate-tax/federal-estate-tax-exemption"
   },
   {
    "id": "K196",
@@ -2114,8 +2153,9 @@
    "cluster": "estate-tax",
    "slug": "lifetime-gift-exemption",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 8"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 8",
+   "coveredBy": "/learn/estate-tax/gift-tax-annual-exclusion"
   },
   {
    "id": "K201",
@@ -2135,8 +2175,9 @@
    "cluster": "estate-tax",
    "slug": "ilit",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 8"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 8",
+   "coveredBy": "/learn/estate-tax/irrevocable-life-insurance-trust"
   },
   {
    "id": "K203",
@@ -2145,28 +2186,31 @@
    "cluster": "estate-tax",
    "slug": "qtip-trust",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 8"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 8",
+   "coveredBy": "/learn/blended-families/qtip-and-marital-trusts"
   },
   {
    "id": "K204",
    "keyword": "credit shelter / bypass trust",
    "intent": "explainer",
    "cluster": "estate-tax",
-   "slug": "credit-shelter-bypass-trust",
+   "slug": "bypass-trust-vs-portability",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 8"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 8",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K205",
    "keyword": "GRAT",
    "intent": "explainer",
    "cluster": "estate-tax",
-   "slug": "grat",
+   "slug": "grantor-retained-annuity-trust",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 8"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 8",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K206",
@@ -2175,18 +2219,20 @@
    "cluster": "estate-tax",
    "slug": "charitable-remainder-trust",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 8"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 8",
+   "coveredBy": "/learn/estate-tax/charitable-remainder-trust"
   },
   {
    "id": "K207",
    "keyword": "estate tax return Form 706",
    "intent": "explainer",
    "cluster": "estate-tax",
-   "slug": "estate-tax-return-form-706",
+   "slug": "form-706-estate-tax-return",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 8"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 8",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K208",
@@ -2206,8 +2252,9 @@
    "cluster": "estate-tax",
    "slug": "how-to-reduce-estate-taxes",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 8"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 8",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K210",
@@ -2236,10 +2283,11 @@
    "keyword": "Who pays estate tax?",
    "intent": "question",
    "cluster": "estate-tax",
-   "slug": "who-pays-estate-tax",
+   "slug": "estate-tax-vs-inheritance-tax",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 8"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 8",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K213",
@@ -2248,8 +2296,9 @@
    "cluster": "estate-tax",
    "slug": "at-what-net-worth-do-you-owe-estate-tax",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 8"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 8",
+   "coveredBy": "/learn/estate-tax/federal-estate-tax-exemption"
   },
   {
    "id": "K214",
@@ -2278,10 +2327,11 @@
    "keyword": "How do you avoid estate tax legally?",
    "intent": "question",
    "cluster": "estate-tax",
-   "slug": "how-do-you-avoid-estate-tax-legally",
+   "slug": "how-to-reduce-estate-taxes",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 8"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 8",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K217",
@@ -2299,30 +2349,33 @@
    "keyword": "Does a trust reduce estate taxes?",
    "intent": "question",
    "cluster": "estate-tax",
-   "slug": "does-a-trust-reduce-estate-taxes",
+   "slug": "how-to-reduce-estate-taxes",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 8"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 8",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K219",
    "keyword": "How long do you have to file an estate tax return?",
    "intent": "question",
    "cluster": "estate-tax",
-   "slug": "how-long-do-you-have-to-file-an-estate-tax-return",
+   "slug": "form-706-estate-tax-return",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 8"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 8",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K220",
    "keyword": "What is the difference between estate tax and inheritance tax?",
    "intent": "question",
    "cluster": "estate-tax",
-   "slug": "what-is-the-difference-between-estate-tax-and-inheritance-tax",
+   "slug": "estate-tax-vs-inheritance-tax",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 8"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 8",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K221",
@@ -2331,8 +2384,9 @@
    "cluster": "estate-tax",
    "slug": "what-happens-to-the-exemption-in-the-future",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 8"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 8",
+   "coveredBy": "/learn/estate-tax/federal-estate-tax-exemption"
   },
   {
    "id": "K222",
@@ -4374,10 +4428,11 @@
    "keyword": "What happens if siblings inherit a house and cannot agree?",
    "intent": "scenario",
    "cluster": "what-if",
-   "slug": "siblings-inherit-house-disagree",
+   "slug": "siblings-inherit-house-and-disagree",
    "priority": 1,
-   "status": "queued",
-   "source": "Angad's what-if request (2026-10-06)"
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K412",
@@ -4394,20 +4449,22 @@
    "keyword": "What happens if my 18-year-old has a medical emergency and I have no HIPAA release?",
    "intent": "scenario",
    "cluster": "what-if",
-   "slug": "adult-child-emergency-no-hipaa",
+   "slug": "adult-child-medical-emergency-no-hipaa",
    "priority": 1,
-   "status": "queued",
-   "source": "Angad's what-if request (2026-10-06)"
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K414",
    "keyword": "What happens if both parents die without a will?",
    "intent": "scenario",
    "cluster": "what-if",
-   "slug": "both-parents-die-no-will",
+   "slug": "both-parents-die-without-a-will",
    "priority": 1,
-   "status": "queued",
-   "source": "Angad's what-if request (2026-10-06)"
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K415",
@@ -4572,10 +4629,11 @@
    "keyword": "What happens if no one knows my end-of-life wishes?",
    "intent": "scenario",
    "cluster": "what-if",
-   "slug": "end-of-life-wishes-unknown",
+   "slug": "nobody-knows-my-end-of-life-wishes",
    "priority": 1,
-   "status": "queued",
-   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)"
+   "status": "drafted",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K430",
@@ -4584,8 +4642,9 @@
    "cluster": "what-if",
    "slug": "house-stuck-in-probate",
    "priority": 1,
-   "status": "queued",
-   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)"
+   "status": "drafted",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K431",
@@ -4644,8 +4703,9 @@
    "cluster": "estate-tax",
    "slug": "bypass-trust-vs-portability",
    "priority": 2,
-   "status": "queued",
-   "source": "Decision pages research, plain-article topics (2026-10-06)"
+   "status": "drafted",
+   "source": "Decision pages research, plain-article topics (2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K437",
