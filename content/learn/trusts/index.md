@@ -175,6 +175,12 @@ A trust only controls what is titled in its name. Read [what happens if you neve
 
 ## More questions people ask
 
+If a trust has to outlast you by decades, [what a trust protector and decanting can do](/learn/trusts/what-is-a-trust-protector-and-decanting) explains how it can be fixed without going to court.
+
+To decide how and when your heirs are paid, [trust distribution standards, HEMS and conditions](/learn/trusts/trust-distribution-standards-hems-and-discretion) compares mandatory, discretionary and staged payouts.
+
+If you are weighing a trust against simpler tools, [living trust vs. TOD deed, joint account and beneficiary forms](/learn/trusts/revocable-trust-vs-tod-deed-joint-account-and-beneficiary-forms) compares cost, control and incapacity coverage.
+
 Once the deed is signed, [selling, renting, borrowing against and withdrawing from trust property](/learn/trusts/using-property-in-your-own-living-trust) explains how you keep using what is in your own trust.
 
 To learn what [beneficiaries are entitled to see, how private a trust really is and whether to tell your children](/learn/trusts/what-trust-beneficiaries-can-see-and-when), read this guide.

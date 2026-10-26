@@ -180,6 +180,12 @@ If no document is signed in time, read [what happens if you are incapacitated wi
 
 ## More questions people ask
 
+If you are unsure which kind of document you need, [what the three types of power of attorney are](/learn/power-of-attorney/what-are-the-three-types-of-power-of-attorney) explains general, limited and durable powers and how they combine.
+
+When the person cannot hold a pen, has fading capacity or refuses, [how to get power of attorney when someone can't sign](/learn/power-of-attorney/getting-power-of-attorney-when-someone-cannot-sign) shows what is still possible.
+
+Agencies set their own rules, and [whether a power of attorney works with Social Security, Medicare and the IRS](/learn/power-of-attorney/does-a-power-of-attorney-work-with-social-security-medicare-and-the-irs) lists the extra forms an agent needs.
+
 If you have been named as someone's agent, [what a power of attorney agent has to do](/learn/power-of-attorney/what-does-a-power-of-attorney-agent-have-to-do) covers the legal duties, first-week steps and record keeping.
 
 To decide whether two children should share the role, see [co-agents and successor agents](/learn/power-of-attorney/can-you-name-more-than-one-power-of-attorney-agent).

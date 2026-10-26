@@ -153,6 +153,12 @@ Start with whichever problem would be hardest on your family tomorrow. For many 
 
 ## More questions people ask
 
+If you are under 30 and wondering what to sign first, [making a will in your twenties](/learn/life-stages/making-a-will-in-your-twenties) covers the legal age, student loans and first-job beneficiary forms.
+
+While a divorce is still pending, [estate planning during a separation](/learn/life-stages/estate-planning-during-separation-or-a-pending-divorce) explains what your spouse can still inherit and which changes a court may block.
+
+Before moving money after bad news, [giving away assets after a terminal diagnosis](/learn/life-stages/giving-away-assets-after-a-terminal-diagnosis) weighs gifts against basis, Medicaid and beneficiary changes.
+
 For a decade-by-decade checklist, see [estate planning documents at 30, 40 and 50](/learn/life-stages/estate-planning-documents-at-30-40-and-50).
 
 After a large inheritance or sale, [updating your plan after a windfall or business sale](/learn/life-stages/updating-your-plan-after-a-windfall-or-business-sale) lists what to fix first.

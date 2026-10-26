@@ -148,6 +148,12 @@ No plan makes every account recoverable. Some companies will refuse, some servic
 
 ## More questions people ask
 
+To choose between an exchange, a hardware wallet and a shared-key setup, [which crypto custody setup heirs can actually inherit](/learn/digital-assets/crypto-custody-exchange-self-custody-and-multisig-for-heirs) compares the three.
+
+When the phone is locked and the bank sends codes to it, [what to do about a locked phone, texts and the phone number](/learn/digital-assets/locked-phone-after-death-texts-two-factor-codes-and-the-phone-number) lays out the order of steps.
+
+For the small items that fall between categories, [game libraries, smart home devices and reward points after death](/learn/digital-assets/video-game-smart-home-and-loyalty-accounts-after-death) explains what transfers and what does not.
+
 If you earn money from a web shop or channel, [what happens to an Etsy shop, YouTube channel or online business at death](/learn/digital-assets/online-business-etsy-shop-or-youtube-channel-after-death) explains what passes to heirs, what the platform keeps and how the income is taxed.
 
 When the keys are missing, [what if nobody can find or unlock a dead person's crypto](/learn/digital-assets/lost-seed-phrase-or-crypto-heirs-cannot-find) covers how to search for hidden coins, what a lost seed phrase means and how exchanges and executors can respond.

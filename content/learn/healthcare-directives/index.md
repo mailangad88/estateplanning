@@ -161,6 +161,12 @@ Healthcare directives handle medical decisions and information. The [durable fin
 
 ## More questions people ask
 
+To understand each treatment you might decline, [what it means to refuse life support](/learn/healthcare-directives/what-it-means-to-refuse-life-support) explains CPR, ventilators, feeding tubes and DNI orders in plain language.
+
+Before you fill in a form, [questions to answer before writing a living will](/learn/healthcare-directives/questions-to-answer-before-writing-a-living-will) gives you a values-history worksheet and advice for talking with an aging parent.
+
+For getting the paper to the people who need it, [where to keep your advance directive](/learn/healthcare-directives/where-to-keep-your-advance-directive) covers copies, patient portals, registries and what paramedics follow.
+
 For crises that affect judgment, a [mental health advance directive](/learn/healthcare-directives/mental-health-advance-directive) records treatment choices and who decides.
 
 To understand the words used in serious illness, read [palliative care, hospice and comfort-care orders](/learn/healthcare-directives/palliative-care-hospice-and-comfort-care-orders).

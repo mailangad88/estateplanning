@@ -164,6 +164,12 @@ Related pillars worth reading alongside this one: [trusts](/learn/trusts), [powe
 
 ## More questions people ask
 
+If you own rentals, [what happens to rental properties when a landlord dies](/learn/business-owners/landlord-estate-plan-rental-properties-llc-or-trust) compares a living trust and an LLC and covers deposits, leases and loans.
+
+Self-employed writers, designers and consultants can read [whether a freelancer needs an estate plan](/learn/business-owners/freelancer-estate-plan-royalties-copyrights-and-client-work) to see who inherits royalties, copyrights and unpaid invoices.
+
+Owners of licensed or franchised businesses can see [what happens to a franchise, restaurant or trucking company](/learn/business-owners/franchise-restaurant-or-trucking-company-when-the-owner-dies) when permits and approvals do not pass by will.
+
 If your buy-sell plan is still undecided, [cross-purchase versus entity redemption](/learn/business-owners/cross-purchase-vs-entity-redemption) compares the structures, premium deductibility, and the Connelly estate tax trap.
 
 If you own S corporation stock, [what happens when a trust inherits the shares](/learn/business-owners/s-corporation-shares-inherited-by-a-trust) explains QSST and ESBT elections and the deadlines.

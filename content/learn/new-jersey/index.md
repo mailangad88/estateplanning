@@ -141,6 +141,24 @@ If a death has just happened, find the original will, order certified death cert
 
 <!-- visual: tool slug=will-or-trust -->
 
+## More questions people ask
+
+For long-term care costs, [New Jersey Medicaid and nursing home planning](/learn/new-jersey/new-jersey-medicaid-and-nursing-home-planning) explains the NJ FamilyCare MLTSS limits, the five-year look-back and how the community spouse is protected.
+
+If a parent received Medicaid, [New Jersey Medicaid estate recovery](/learn/new-jersey/new-jersey-estate-recovery) covers what the state can claim, who is protected and the 20-day hardship deadline.
+
+To budget an estate, [probate costs in New Jersey](/learn/new-jersey/probate-costs-in-new-jersey) lists Surrogate fees, bonds, attorney fees and the time cost of tax waivers.
+
+For the family home, [inheriting a house in New Jersey](/learn/new-jersey/inheriting-a-house-in-new-jersey) explains the real property tax waiver, Form L-9 and the sell-or-keep decision.
+
+If you doubt a will, [New Jersey will contests, caveats and undue influence](/learn/new-jersey/new-jersey-will-contests-and-caveats) explains the Surrogate caveat, the four-month complaint deadline and the undue influence presumption.
+
+To see which assets can pass by beneficiary designation, [transfer on death options in New Jersey](/learn/new-jersey/transfer-on-death-options-in-new-jersey) covers the proposed TOD deed, TOD securities, POD accounts and TOD vehicle titles.
+
+Whether a trust is worth it given Surrogate probate is the subject of [living trusts in New Jersey](/learn/new-jersey/living-trusts-in-new-jersey), which also covers the Uniform Trust Code and trustee disclosure duties.
+
+For court-appointed decision-makers and for naming a guardian for minor children, see [guardianship in New Jersey](/learn/new-jersey/guardianship-in-new-jersey).
+
 ## How we can help
 
 Our attorneys can read your documents, explain which New Jersey rules apply and prepare what is missing. The [plan finder](/plan-finder) shows which documents fit your situation, and you can book a consultation from there. This page is general education and is pending attorney review.

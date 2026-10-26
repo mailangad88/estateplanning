@@ -201,6 +201,14 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+If no one holds your health care power of attorney, the [Illinois Health Care Surrogate Act](/learn/illinois/illinois-health-care-surrogate-act-who-decides) explains who the hospital turns to and in what order.
+
+For a parent who received Medicaid long-term care, [Illinois Medicaid estate recovery](/learn/illinois/illinois-medicaid-estate-recovery) covers the $25,000 protection, exempt family members and the hardship waiver.
+
+If a trustee has gone quiet after a death, [what an Illinois trustee must tell beneficiaries](/learn/illinois/illinois-trustee-duty-to-inform-beneficiaries) sets out the 90-day notice and annual accountings.
+
+When a bank or title company wants proof of who the heirs are, [proving heirship in Illinois](/learn/illinois/proving-heirship-in-illinois) explains the affidavit and the court order.
+
 Most estates run with little court oversight, and [independent vs. supervised administration](/learn/illinois/independent-vs-supervised-administration-in-illinois) explains when a judge steps in and how heirs can object.
 
 If you doubt a will, [the Illinois 6-month will contest deadline](/learn/illinois/illinois-will-contest-six-month-deadline) explains who may file, where, and why late notice does not extend the time.
