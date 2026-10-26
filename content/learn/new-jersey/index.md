@@ -143,6 +143,24 @@ If a death has just happened, find the original will, order certified death cert
 
 ## More questions people ask
 
+If you want treatment wishes and a decision-maker in place before a psychiatric crisis, [the New Jersey mental health advance directive](/learn/new-jersey/new-jersey-mental-health-advance-directive-act) explains the state's separate Act, who can serve and how it differs from a general proxy.
+
+If income or savings put a parent over the Medicaid limits, [JACC and other New Jersey home care help for people not on Medicaid](/learn/new-jersey/jacc-new-jersey-home-care-help-for-older-adults-not-on-medicaid) explains who qualifies and how it fits with Medicaid planning.
+
+Before a child leaves for college, [the documents your 18-year-old needs in New Jersey](/learn/new-jersey/documents-your-18-year-old-needs-in-new-jersey) covers the proxy directive, power of attorney and HIPAA release and how each is signed.
+
+To report suspected financial exploitation of an older adult, [how to report elder financial abuse in New Jersey](/learn/new-jersey/how-to-report-elder-financial-abuse-in-new-jersey-adult-protective-services) lists the county Adult Protective Services offices, what happens after a report, and how a power of attorney or trust can help prevent it.
+
+To see which trusts keep creditors away and which do not, read [can you protect assets from creditors with a trust in New Jersey](/learn/new-jersey/can-you-protect-assets-from-creditors-with-a-trust-in-new-jersey), which covers revocable trusts, self-settled trusts and spendthrift trusts for heirs.
+
+If a parent has dementia and you are deciding between papers and a court case, [guardianship vs power of attorney for a parent with dementia in New Jersey](/learn/new-jersey/guardianship-vs-power-of-attorney-for-a-parent-with-dementia-in-new-jersey) sets out when each is enough and the steps for both.
+
+For trust challenges, [contesting a trust in New Jersey](/learn/new-jersey/contesting-a-trust-in-new-jersey-who-can-sue-grounds-and-deadlines) covers who can sue, the grounds and the three-year and four-month deadlines.
+
+If a trust can no longer work as written, [changing an irrevocable trust in New Jersey](/learn/new-jersey/changing-an-irrevocable-trust-in-new-jersey) explains settlement agreements, consent, court modification and decanting.
+
+Couples marrying later in life can read [prenuptial agreements and inheritance rights in New Jersey](/learn/new-jersey/prenuptial-agreements-and-inheritance-rights-in-new-jersey) for how a prenup waives the elective share and fits with a will or trust.
+
 For donor registration and who decides when you did not register, see [organ donation and anatomical gifts in New Jersey](/learn/new-jersey/organ-donation-and-anatomical-gifts-in-new-jersey).
 
 Families inheriting a farm can read [farmland assessment after a death in New Jersey](/learn/new-jersey/new-jersey-farmland-assessment-after-a-death-and-rollback-taxes) for the August 1 application, rollback taxes and keeping the farm in the family.

@@ -159,6 +159,8 @@ Include the person with a disability in the conversation as much as they are abl
 
 ## More questions people ask
 
+If a notice already arrived, [what to do about an SSI overpayment after an inheritance](/learn/special-needs/ssi-overpayment-after-an-inheritance) explains the 60-day appeal, the waiver form and how repayment is withheld.
+
 If a family business or rental property is part of what you want to leave, [whether a special needs trust can own a business or rental property](/learn/special-needs/can-a-special-needs-trust-own-a-business-or-rental-property) covers SSI effects, trustee conflicts and buyout options.
 
 If a trustee has moved away or the remainder beneficiaries have changed, [whether you can change or revoke a special needs trust](/learn/special-needs/can-you-change-or-revoke-a-special-needs-trust) explains what parents can amend and what stays locked.

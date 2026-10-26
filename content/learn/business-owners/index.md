@@ -164,6 +164,8 @@ Related pillars worth reading alongside this one: [trusts](/learn/trusts), [powe
 
 ## More questions people ask
 
+If you own a company in Illinois or New Jersey, [Illinois estate tax and New Jersey inheritance tax on a family business](/learn/business-owners/illinois-estate-tax-and-new-jersey-inheritance-tax-on-a-family-business) shows what each state would charge the business and the heir, with worked examples and where the cash comes from.
+
 If the building matters as much as the company, [should business real estate be in a separate LLC](/learn/business-owners/should-business-real-estate-be-owned-separately-from-the-operating-company) compares one entity with two, with a worked example and the multi-state issues.
 
 If there is no will at all, [who inherits a business when the owner dies without a will](/learn/business-owners/who-inherits-a-business-when-the-owner-dies-without-a-will) shows how intestacy treats LLC interests, shares and sole proprietorships.
