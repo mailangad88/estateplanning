@@ -148,6 +148,12 @@ No plan makes every account recoverable. Some companies will refuse, some servic
 
 ## More questions people ask
 
+If you are wondering how much of this you can do yourself, [do you need a lawyer for a digital estate plan, and what does it cost](/learn/digital-assets/do-you-need-a-lawyer-for-a-digital-estate-plan-and-what-it-costs) separates the free tools from the legal wording.
+
+For people who want some things to stay private, [keeping your family out of your messages and accounts after you die](/learn/digital-assets/can-you-keep-your-family-out-of-your-private-messages-after-you-die) explains what the law protects and where it fails.
+
+To make the list your executor will need, [how to create a digital asset inventory](/learn/digital-assets/how-to-create-a-digital-asset-inventory-your-executor-can-use) walks through it step by step and says what to leave out.
+
 To choose between an exchange, a hardware wallet and a shared-key setup, [which crypto custody setup heirs can actually inherit](/learn/digital-assets/crypto-custody-exchange-self-custody-and-multisig-for-heirs) compares the three.
 
 When the phone is locked and the bank sends codes to it, [what to do about a locked phone, texts and the phone number](/learn/digital-assets/locked-phone-after-death-texts-two-factor-codes-and-the-phone-number) lays out the order of steps.

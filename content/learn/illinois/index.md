@@ -201,6 +201,14 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+To cover a gap in care while you are alive, [Illinois standby and short-term guardians](/learn/illinois/illinois-standby-and-short-term-guardians-for-children) explains the no-court short-term paper, the standby petition, and how long each lasts.
+
+For who decides burial or cremation, [the Illinois Disposition of Remains Act](/learn/illinois/illinois-disposition-of-remains-act) gives the ranked list and the notarized form that overrides it.
+
+[Illinois POLST and DNR orders](/learn/illinois/illinois-polst-and-dnr-orders) explains the uniform medical order, who can sign it, and how hospitals and EMS treat it.
+
+To provide for an animal, [pet trusts in Illinois](/learn/illinois/pet-trusts-in-illinois) covers Section 408, enforcement, funding and what happens to leftover money.
+
 If no one holds your health care power of attorney, the [Illinois Health Care Surrogate Act](/learn/illinois/illinois-health-care-surrogate-act-who-decides) explains who the hospital turns to and in what order.
 
 For a parent who received Medicaid long-term care, [Illinois Medicaid estate recovery](/learn/illinois/illinois-medicaid-estate-recovery) covers the $25,000 protection, exempt family members and the hardship waiver.

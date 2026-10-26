@@ -150,6 +150,12 @@ For a larger picture, start with our guide to [estate planning basics](/learn/ba
 
 ## More questions people ask
 
+If you are worried the county will raise the bill after a transfer, [property tax reassessment and transfer tax when a house passes to family](/learn/property-and-assets/property-tax-reassessment-and-transfer-tax-when-a-house-passes-to-family) explains the local rules to check.
+
+When the deed and the money do not match, [who owns the house when a parent helped pay, you bought before marriage, or you live with a partner](/learn/property-and-assets/who-owns-the-house-when-a-parent-helped-pay-or-you-bought-before-marriage) shows what controls.
+
+When one heir is covering the bills, [who pays for an inherited house and how to be reimbursed](/learn/property-and-assets/who-pays-for-an-inherited-house-upkeep-taxes-and-reimbursing-the-sibling-who-fronts-it) covers the estate stage, the co-owner stage and the paperwork.
+
 To choose the right paper for a transfer, read [quitclaim, warranty, grant and trustee deeds](/learn/property-and-assets/types-of-deeds-quitclaim-warranty-grant-and-trustee-deeds) and what each one promises.
 
 If a parent may have owned oil, gas or other minerals, [what happens to mineral rights and royalties at death](/learn/property-and-assets/mineral-rights-and-royalties-after-the-owner-dies) explains how heirs claim them.

@@ -159,6 +159,16 @@ Include the person with a disability in the conversation as much as they are abl
 
 ## More questions people ask
 
+Retirement money needs its own handling, and [naming a special needs trust as IRA or 401(k) beneficiary](/learn/special-needs/special-needs-trust-as-ira-beneficiary) explains the payout rules and the conduit versus accumulation choice.
+
+To plan who steps in after you, [who will care for your child or sibling after you are gone](/learn/special-needs/who-cares-for-a-person-with-a-disability-after-parents-die) covers naming a guardian, asking a sibling and what changes for benefits.
+
+If you may need nursing home Medicaid yourself, [transferring a house or assets to a disabled child without a penalty](/learn/special-needs/medicaid-transfer-exceptions-for-a-disabled-child) explains the federal exceptions and their risks.
+
+Grandparents who want to help should read [how to leave money to a grandchild with special needs](/learn/special-needs/grandparents-leaving-money-to-a-grandchild-with-special-needs), including how to tell other relatives.
+
+On legal capacity, [whether an adult with a disability can make a will, sign a power of attorney or marry](/learn/special-needs/capacity-and-marriage-for-adults-with-disabilities) explains each standard and how marriage affects SSI.
+
 If someone on SSI is about to receive money, [what to report and how to protect their benefits](/learn/special-needs/ssi-recipient-inheritance-gift-or-settlement-what-to-do) lays out the steps.
 
 Choosing who runs the trust is covered in [who should be trustee of a special needs trust](/learn/special-needs/who-should-be-trustee-of-a-special-needs-trust), including successors and a trust protector.

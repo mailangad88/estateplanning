@@ -138,6 +138,16 @@ For a view of the whole picture, our [basics guide](/learn/basics) and the [prob
 
 ## More questions people ask
 
+To see what the tax looks like in dollars, [how much the federal estate tax is on a $10, $15 or $20 million estate](/learn/estate-tax/estate-tax-on-10-15-and-20-million-dollar-estates) gives worked examples for single people and couples.
+
+If a house or account has two owners, [how the step-up works for spouses, joint owners and community property](/learn/estate-tax/step-up-in-basis-for-married-couples-and-joint-property) explains which share gets a new basis.
+
+If a deadline has already slipped, [what to do when the Form 706 deadline has passed](/learn/estate-tax/missed-the-form-706-deadline) covers extensions, penalties and late portability elections.
+
+Deciding whether to make big gifts at all is the subject of [using your estate tax exemption now or waiting](/learn/estate-tax/use-your-estate-tax-exemption-now-or-wait).
+
+For how a gift to charity is taxed, [charitable gifts and bequests under the gift, estate and income tax](/learn/estate-tax/charitable-gifts-and-bequests-gift-tax-estate-tax-and-income-tax) compares giving now with giving at death.
+
 Wondering whether your house, IRA, life insurance or joint accounts are added up? [What counts toward the federal estate tax](/learn/estate-tax/what-counts-toward-the-estate-tax) goes asset by asset.
 
 For couples weighing a trust that moves wealth out of both estates, the [spousal lifetime access trust (SLAT)](/learn/estate-tax/spousal-lifetime-access-trust-slat) article covers the tax savings, the risk if a spouse dies first, and how it compares with a GRAT.

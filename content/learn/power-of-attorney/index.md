@@ -180,6 +180,12 @@ If no document is signed in time, read [what happens if you are incapacitated wi
 
 ## More questions people ask
 
+If you wonder whether an agent may give away your money, or give it to themselves, [can a power of attorney make gifts](/learn/power-of-attorney/can-a-power-of-attorney-make-gifts) covers gifting clauses, the gift tax and the Medicaid look-back.
+
+After a move, or if you own property in another state or abroad, [whether a power of attorney is valid in another state or country](/learn/power-of-attorney/is-a-power-of-attorney-valid-in-another-state-or-abroad) explains what travels and what needs updating.
+
+If you already have a trust, [why you still need a power of attorney with a living trust](/learn/power-of-attorney/do-i-need-a-power-of-attorney-if-i-have-a-living-trust) shows which assets and agencies the trustee cannot reach.
+
 If you are unsure which kind of document you need, [what the three types of power of attorney are](/learn/power-of-attorney/what-are-the-three-types-of-power-of-attorney) explains general, limited and durable powers and how they combine.
 
 When the person cannot hold a pen, has fading capacity or refuses, [how to get power of attorney when someone can't sign](/learn/power-of-attorney/getting-power-of-attorney-when-someone-cannot-sign) shows what is still possible.

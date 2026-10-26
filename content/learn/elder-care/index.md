@@ -162,6 +162,12 @@ Other pillars worth reading alongside this one: [power of attorney](/learn/power
 
 ## More questions people ask
 
+If a policy premium jumps, lapses or a claim is refused, [what to do when long-term care insurance premiums rise or a claim is denied](/learn/elder-care/when-long-term-care-insurance-premiums-rise-or-a-claim-is-denied) lays out the options and appeal steps.
+
+For people with little savings or no relatives, [what happens if you need long-term care and have no money or no family](/learn/elder-care/what-happens-if-you-need-long-term-care-and-have-no-money-or-no-family) explains Medicaid, local help and who can act for you.
+
+Before leaving work to look after a parent, [should you quit your job to care for a parent](/learn/elder-care/should-you-quit-your-job-to-care-for-a-parent) covers leave options, getting paid, and reimbursing yourself safely.
+
 When the application is the next step, [how to apply for Medicaid for a parent](/learn/elder-care/how-to-apply-for-medicaid-for-a-parent) covers who can sign, what to gather and what to do after a denial.
 
 To sort out the settings and the bills, [assisted living, memory care, hospice and respite care](/learn/elder-care/assisted-living-memory-care-and-hospice-who-pays) shows what each is and who pays.
