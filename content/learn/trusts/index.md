@@ -175,6 +175,16 @@ A trust only controls what is titled in its name. Read [what happens if you neve
 
 ## More questions people ask
 
+Once the deed is signed, [selling, renting, borrowing against and withdrawing from trust property](/learn/trusts/using-property-in-your-own-living-trust) explains how you keep using what is in your own trust.
+
+To learn what [beneficiaries are entitled to see, how private a trust really is and whether to tell your children](/learn/trusts/what-trust-beneficiaries-can-see-and-when), read this guide.
+
+If you relocate or own land elsewhere, [what happens to a living trust across state lines](/learn/trusts/living-trusts-and-moving-or-owning-property-in-another-state) covers what to update and what to leave alone.
+
+For backup plans, [co-trustees, resignation, incapacity and replacing a trustee](/learn/trusts/co-trustees-and-changing-a-trustee) shows how to write a trustee line of succession.
+
+When an advisor throws out labels, [what family, dynasty, credit shelter, Crummey and other trust names mean](/learn/trusts/trust-names-explained-dynasty-credit-shelter-family-and-more) translates them.
+
 To change a trust you already signed, [how to change or revoke a living trust](/learn/trusts/how-to-change-or-revoke-a-living-trust) explains amendments, restatements and when the door has closed.
 
 If you want a trust that starts only at death through your will, [what a testamentary trust is](/learn/trusts/testamentary-trusts) compares it with a living trust.

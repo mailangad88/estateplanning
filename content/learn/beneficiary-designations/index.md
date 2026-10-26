@@ -141,6 +141,16 @@ Two situations cause most beneficiary problems we see: [an ex-spouse who is stil
 
 ## More questions people ask
 
+For the details heirs ask about most, [the inherited IRA 10-year rule, yearly withdrawals and who still gets the stretch](/learn/beneficiary-designations/inherited-ira-10-year-rule-yearly-withdrawals) sorts beneficiaries into their three categories.
+
+Married, remarried or widowed owners can see [whether a spouse must sign off on beneficiary choices](/learn/beneficiary-designations/does-your-spouse-have-to-approve-your-beneficiary-choices), including ERISA consent and community property.
+
+When the person you want to name is a child, cannot manage money, or receives benefits, [naming a minor, incapacitated or benefits-recipient beneficiary](/learn/beneficiary-designations/naming-a-minor-incapacitated-or-benefits-recipient-as-beneficiary) compares UTMA custodians and trusts.
+
+To see what each person would owe, [whether beneficiaries pay taxes on what they receive](/learn/beneficiary-designations/do-beneficiaries-pay-taxes-on-what-they-receive) goes through life insurance, retirement accounts, annuities and TOD assets one at a time.
+
+If you are unsure whether an account can take a form at all, [which accounts can have a beneficiary](/learn/beneficiary-designations/which-accounts-can-have-a-beneficiary) is a one-table reference for banks, 529s, HSAs, pensions and Social Security.
+
 If you want one child to receive more than another, [how to set unequal shares on beneficiary forms](/learn/beneficiary-designations/leaving-unequal-shares-with-beneficiary-forms) shows how the percentages work and why naming one child to share with the others goes wrong.
 
 When someone else manages your money, [whether an agent or guardian can change a beneficiary](/learn/beneficiary-designations/can-a-power-of-attorney-or-guardian-change-a-beneficiary) explains the limits and how late changes get challenged.

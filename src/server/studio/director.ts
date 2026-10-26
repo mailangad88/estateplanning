@@ -28,6 +28,7 @@ const CLUSTER_ICON: Record<string, string> = {
   trusts: "trust",
   probate: "courthouse",
   illinois: "map-pin",
+  "new-jersey": "map-pin",
   "elder-care": "hand-heart",
   "estate-tax": "dollar",
   "what-if": "question-mark",

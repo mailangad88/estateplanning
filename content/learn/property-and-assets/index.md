@@ -150,6 +150,18 @@ For a larger picture, start with our guide to [estate planning basics](/learn/ba
 
 ## More questions people ask
 
+If the house has a loan on it, [what happens to a mortgage when the homeowner dies](/learn/property-and-assets/mortgage-when-the-homeowner-dies) explains who pays, what the lender can demand, and what to do with underwater and reverse mortgages.
+
+When a deed is lost, misspelled or still names someone who died, [how to fix title problems on inherited property](/learn/property-and-assets/fixing-title-problems-on-inherited-property) shows how to find the owner of record and pick the right repair.
+
+To keep a farm, cabin or ancestral land together, [how to keep family land in the family](/learn/property-and-assets/keeping-family-land-in-the-family) covers trusts, LLCs, easements, mineral rights and the written rules that make them work.
+
+For the assets people forget to mention, [what your will covers: timeshares, storage units, safe deposit boxes and farm equipment](/learn/property-and-assets/what-your-will-covers-timeshares-storage-units-safe-deposit-boxes) explains the catch attached to each.
+
+Before you deed your home to a child, [giving your house to your child now](/learn/property-and-assets/giving-your-house-to-your-child-taxes-and-trade-offs) compares gift tax, property tax, basis and Medicaid effects with selling or leaving it at death.
+
+If you co-own a house with a spouse, partner or sibling, [joint tenants vs. tenants in common vs. tenants by the entirety](/learn/property-and-assets/joint-tenants-vs-tenants-in-common-vs-entirety) compares what each form does at death and in a dispute.
+
 For who gets Mom's ring and the piano, [leaving jewelry, heirlooms and sentimental items](/learn/property-and-assets/leaving-jewelry-heirlooms-and-sentimental-items) explains specific gifts, separate memorandums and fair ways to divide belongings.
 
 When a vehicle is titled in one name, [transferring a car, boat, motorcycle or RV after death](/learn/property-and-assets/transfer-a-car-boat-or-rv-after-death) shows which papers and procedures apply.

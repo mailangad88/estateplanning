@@ -180,6 +180,18 @@ Curious what happens when a plan is missing or out of date? Our guide to [what h
 
 ## More questions people ask
 
+To spare your family guesswork, read [how to plan your own funeral in advance](/learn/basics/plan-your-own-funeral-in-advance), including why a will is the wrong place for funeral wishes.
+
+For the whole paper file, not just the will, [how to organize your estate planning documents](/learn/basics/how-to-organize-your-estate-planning-documents) shows who should hold which copy.
+
+If you are weighing a do-it-yourself plan, [can you make an estate plan without a lawyer](/learn/basics/making-an-estate-plan-without-a-lawyer) covers what is legal and where forms fall short.
+
+State law drives most of your plan, and [how estate planning differs by state](/learn/basics/how-estate-planning-differs-by-state) explains which rules change and what to do after a move.
+
+To decide how much plan you need, [basic vs. comprehensive estate plans](/learn/basics/basic-vs-comprehensive-estate-plan) compares the two and says which document matters most.
+
+If you are unsure which professional you need, [estate planning vs. elder law, probate and financial planning](/learn/basics/estate-planning-vs-elder-law-probate-and-financial-planning) sorts out who does what.
+
 If you want to sign remotely, [signing estate planning documents electronically or with a remote notary](/learn/basics/sign-estate-planning-documents-electronically) explains which documents allow it.
 
 If you are helping a parent, [whether you can make an estate plan for someone else](/learn/basics/can-you-make-an-estate-plan-for-someone-else) covers limits, attending the meeting and undue influence.

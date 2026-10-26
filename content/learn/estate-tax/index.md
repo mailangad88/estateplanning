@@ -138,6 +138,12 @@ For a view of the whole picture, our [basics guide](/learn/basics) and the [prob
 
 ## More questions people ask
 
+For everyday situations like a car, a down payment or a forgiven loan, [is it a taxable gift](/learn/estate-tax/is-it-a-taxable-gift-cars-loans-and-down-payments) shows what needs reporting and who pays.
+
+To see what comes off before the tax is figured, [what the estate can deduct before the estate tax](/learn/estate-tax/what-the-estate-can-deduct-before-estate-tax) covers funeral costs, debts, legal fees, charity and the double-deduction trap.
+
+For cross-border families, [foreign inheritances and U.S. estate tax for non-citizens](/learn/estate-tax/foreign-inheritance-and-us-estate-tax-for-non-citizens) explains reporting on Form 3520, nonresident aliens and Americans living abroad.
+
 If the estate owes tax but lacks cash, [what happens if the estate cannot pay the estate tax](/learn/estate-tax/what-if-the-estate-cannot-pay-the-estate-tax) covers extensions, installments and executor liability.
 
 To see how a house, IRA, artwork or crypto is priced for the return, read [how assets are valued for estate tax](/learn/estate-tax/how-assets-are-valued-for-estate-tax).

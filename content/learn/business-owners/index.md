@@ -164,6 +164,18 @@ Related pillars worth reading alongside this one: [trusts](/learn/trusts), [powe
 
 ## More questions people ask
 
+If your buy-sell plan is still undecided, [cross-purchase versus entity redemption](/learn/business-owners/cross-purchase-vs-entity-redemption) compares the structures, premium deductibility, and the Connelly estate tax trap.
+
+If you own S corporation stock, [what happens when a trust inherits the shares](/learn/business-owners/s-corporation-shares-inherited-by-a-trust) explains QSST and ESBT elections and the deadlines.
+
+With no signed agreement, [what to do when a business partner dies](/learn/business-owners/business-partner-dies-without-a-buy-sell-agreement) covers the first month and the buyout options.
+
+For licensed owners, [what happens to a professional practice at the owner's death](/learn/business-owners/professional-practice-owner-dies) covers medical, law and other practices.
+
+If you signed for loans or a lease, [business debts and personal guaranties at death](/learn/business-owners/personal-guaranties-and-business-debts-at-death) explains what the estate owes and how to protect your family.
+
+For the tax side, [taxes when a family business passes to heirs](/learn/business-owners/taxes-when-a-family-business-passes-to-heirs) covers estate tax, the step-up, Section 754 and selling afterward.
+
 If you are weighing a sale to your employees, [ESOP basics for business owners](/learn/business-owners/esop-basics-for-business-owners) explains how it works, the tax rules and where it fits in your estate plan.
 
 For farms and ranches, [farm succession planning](/learn/business-owners/farm-succession-planning) covers fairness to off-farm children, special tax rules and handing over management.

@@ -154,6 +154,16 @@ State rules matter a great deal here. If you want to see how probate works where
 
 ## More questions people ask
 
+If you received a court notice, [what happens at a probate hearing](/learn/probate/what-happens-at-a-probate-hearing) explains what the judge decides and whether beneficiaries need to attend.
+
+To dispute a will or an executor in court, [how to object to probate](/learn/probate/how-to-object-to-probate) covers standing, grounds, caveats and deadlines.
+
+When an estate seems stuck, [what to do when the executor is not doing their job](/learn/probate/executor-not-doing-their-job) lays out the escalation from a letter to a court petition.
+
+For specific loans, [what happens to a mortgage, car loan, student loans and credit cards after death](/learn/probate/what-happens-to-a-mortgage-car-loan-and-student-loans-after-death) takes each debt type in turn.
+
+If the court forms offer several tracks, [formal vs informal probate](/learn/probate/formal-vs-informal-probate) explains supervised, independent and summary options.
+
 Married couples in community property states can read [community property with right of survivorship](/learn/probate/community-property-with-right-of-survivorship) to see how one form of title skips probate and keeps a full tax basis step-up.
 
 Executors wondering when it is safe to pay heirs should read [the probate creditor claims period](/learn/probate/probate-creditor-claims-period).

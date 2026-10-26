@@ -201,6 +201,14 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+Most estates run with little court oversight, and [independent vs. supervised administration](/learn/illinois/independent-vs-supervised-administration-in-illinois) explains when a judge steps in and how heirs can object.
+
+If you doubt a will, [the Illinois 6-month will contest deadline](/learn/illinois/illinois-will-contest-six-month-deadline) explains who may file, where, and why late notice does not extend the time.
+
+To refuse property in writing, [disclaiming an inheritance in Illinois](/learn/illinois/disclaiming-an-inheritance-in-illinois) covers the form, where to file and the acts that bar it.
+
+For locked email and online accounts, [the Illinois digital assets law for executors](/learn/illinois/illinois-digital-assets-law-for-executors) explains what content and records an executor can request.
+
 A deed to two owners is a tenancy in common unless it says otherwise, and [joint tenancy and tenancy by the entirety in Illinois](/learn/illinois/illinois-joint-tenancy-and-tenancy-by-the-entirety) explains the wording survivorship needs.
 
 For how POD, trust and joint accounts pass at death, see [payable-on-death and joint bank accounts in Illinois](/learn/illinois/illinois-payable-on-death-and-joint-bank-accounts).

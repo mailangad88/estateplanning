@@ -178,6 +178,16 @@ Call one if the person owned real estate, a business or substantial accounts, if
 
 ## More questions people ask
 
+For the order in which to tell banks, credit bureaus, the DMV, the IRS and the post office, see [who to notify after someone dies](/learn/after-a-death/who-to-notify-after-someone-dies).
+
+If the paper trail is thin, [how to find a deceased person's accounts and assets](/learn/after-a-death/how-to-find-a-deceased-persons-accounts-and-assets) gives a search plan for accounts, policies, pensions and safe deposit boxes.
+
+If an heir receives SSI or Medicaid, [does an inheritance affect Medicaid or SSI](/learn/after-a-death/does-an-inheritance-affect-medicaid-or-ssi) explains how to protect benefits before the money arrives.
+
+For how inherited retirement accounts, annuities and savings bonds are taxed, see [tax on an inherited IRA, 401(k), annuity or savings bond](/learn/after-a-death/tax-on-inherited-ira-401k-annuity-and-savings-bonds).
+
+To understand why an inheritance is slow and whether an early payment is safe, read [how long it takes to receive an inheritance](/learn/after-a-death/how-long-does-it-take-to-receive-an-inheritance).
+
 Before you order copies from the funeral home, [how many death certificates you need](/learn/after-a-death/how-many-death-certificates-do-i-need) covers who asks for one, the cost and the wait.
 
 For the last check, the $255 payment and who can claim monthly benefits, see [Social Security after a death](/learn/after-a-death/social-security-after-a-death).
