@@ -162,6 +162,16 @@ Other pillars worth reading alongside this one: [power of attorney](/learn/power
 
 ## More questions people ask
 
+Before handing money or a house to your children, read [whether you can give money or a house to your children before applying for Medicaid](/learn/elder-care/gifting-to-children-before-medicaid) for the penalty math and the gifts that are exempt.
+
+If a nursing home stay is already here, [Medicaid crisis planning](/learn/elder-care/medicaid-crisis-planning) explains what can still be done in the first weeks.
+
+To keep a parent at home with Medicaid help, [Medicaid home care waivers](/learn/elder-care/medicaid-home-care-waiver) covers who qualifies, waiting lists and whether a relative can be paid.
+
+When weighing help, [how much Medicaid planning costs and when an attorney is worth it](/learn/elder-care/medicaid-planning-attorney-cost) explains fee structures and do-it-yourself limits.
+
+For an asset-by-asset sort of what counts, see [what assets are exempt from Medicaid](/learn/elder-care/what-assets-are-exempt-from-medicaid).
+
 If you are wondering what the state can claim after a parent dies, [Medicaid estate recovery](/learn/elder-care/medicaid-estate-recovery) explains who is protected, what assets are reached and how a family can respond to a claim.
 
 When one spouse needs care and the other stays home, [how Medicaid works for a married couple](/learn/elder-care/medicaid-for-married-couples) explains the protected savings, income allowance and home.

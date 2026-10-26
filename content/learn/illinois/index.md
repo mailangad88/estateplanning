@@ -199,6 +199,16 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 <!-- visual: picker id=will-or-trust -->
 
+## More questions people ask
+
+If you were named executor and are not sure you want the job, [can you refuse to be an executor in Illinois](/learn/illinois/can-you-refuse-to-be-executor-in-illinois) explains the 30-day rule, who is disqualified and what a non-resident should expect.
+
+For unpaid bills after a death, [credit card debt after a death in Illinois](/learn/illinois/credit-card-debt-after-death-in-illinois) covers creditor notice, the two-year bar and the order debts are paid.
+
+If no one knows whether a will exists, [how to find out if someone left a will in Illinois](/learn/illinois/finding-a-will-after-a-death-in-illinois) covers where to look, the safe deposit box rules and the duty to file.
+
+When an estate stalls, [what heirs can do about a slow Illinois executor](/learn/illinois/what-heirs-can-do-about-a-slow-illinois-executor) explains removal, ending independent administration and the steps to try first.
+
 ## How we can help
 
 Our attorneys can read your documents, explain which Illinois rules apply and prepare what is missing. The [plan finder](/plan-finder) shows which documents fit your situation, and you can book a consultation from there. This page is general education and is pending attorney review.

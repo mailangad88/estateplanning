@@ -164,6 +164,12 @@ An old will can cause as many problems as no will. See [what happens if you die 
 
 ## More questions people ask
 
+A will does not keep you out of court, and [does a will avoid probate](/learn/wills/does-a-will-avoid-probate) explains when it takes effect, what the executor can do first and which assets skip probate.
+
+Before you name an heir for the house, [leaving a house in a will](/learn/wills/leaving-a-house-in-a-will) covers the mortgage, joint title, a spouse's rights and shared inheritances.
+
+If heirs are unhappy with a will, [whether a will can be changed after death](/learn/wills/can-a-will-be-changed-after-death) explains disclaimers, settlement agreements and court corrections.
+
 A short sworn statement can spare your executor a hunt for witnesses, and [the self-proving affidavit explained](/learn/wills/self-proving-affidavit-explained) covers who signs it, what a notary does and what happens without one.
 
 Couples weighing one shared document should read [joint will vs. mutual will](/learn/wills/joint-will-vs-mutual-will) to see how a joint will can lock in the survivor and what to use instead.

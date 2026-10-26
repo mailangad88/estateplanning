@@ -178,6 +178,16 @@ Three things go wrong most often with first-time planners. They sign a will and 
 
 Curious what happens when a plan is missing or out of date? Our guide to [what happens if you put off estate planning](/learn/what-if) walks through the most common scenarios.
 
+## More questions people ask
+
+If you want to sign remotely, [signing estate planning documents electronically or with a remote notary](/learn/basics/sign-estate-planning-documents-electronically) explains which documents allow it.
+
+If you are helping a parent, [whether you can make an estate plan for someone else](/learn/basics/can-you-make-an-estate-plan-for-someone-else) covers limits, attending the meeting and undue influence.
+
+To list what you own, [how to inventory your assets and value your estate](/learn/basics/how-to-inventory-your-assets-and-value-your-estate) walks through it step by step.
+
+If you think you own too little to plan, [whether you need an estate plan with few assets](/learn/basics/do-i-need-an-estate-plan-with-few-assets) covers renters, joint owners and beneficiary forms.
+
 ## How we can help
 
 If you are not sure where to begin, the [plan finder](/plan-finder) asks a few questions about your family and property and suggests which documents usually matter for your situation. When you are ready to talk it through, you can book a consultation with one of our attorneys, who can explain how the rules in your state apply and what a plan would involve.
