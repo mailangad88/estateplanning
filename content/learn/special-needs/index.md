@@ -159,6 +159,12 @@ Include the person with a disability in the conversation as much as they are abl
 
 ## More questions people ask
 
+If the family home is part of the plan, [can a special needs trust own a house](/learn/special-needs/can-a-special-needs-trust-own-a-house) covers titling, taxes, SSI shelter rules and what happens at your death.
+
+Trustees wondering about a car, a trip, a pet or a caregiver can use [what special needs trust funds can pay for](/learn/special-needs/what-can-special-needs-trust-funds-pay-for) as a working list.
+
+To size the trust, [how much to put in a special needs trust](/learn/special-needs/how-much-to-put-in-a-special-needs-trust) walks through estimating lifetime costs and funding the gap.
+
 If the money is small or no relative can serve as trustee, [pooled special needs trusts](/learn/special-needs/pooled-special-needs-trusts) explains how nonprofit-run (d)(4)(C) trusts compare with a stand-alone (d)(4)(A) trust.
 
 To see which trust payments reduce SSI and which do not, read [how a special needs trust affects SSI and Medicaid](/learn/special-needs/special-needs-trust-ssi-and-medicaid-rules).

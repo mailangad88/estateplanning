@@ -178,6 +178,16 @@ Call one if the person owned real estate, a business or substantial accounts, if
 
 ## More questions people ask
 
+Before you order copies from the funeral home, [how many death certificates you need](/learn/after-a-death/how-many-death-certificates-do-i-need) covers who asks for one, the cost and the wait.
+
+For the last check, the $255 payment and who can claim monthly benefits, see [Social Security after a death](/learn/after-a-death/social-security-after-a-death).
+
+If you signed the funeral contract, [who pays for the funeral](/learn/after-a-death/who-pays-for-the-funeral) explains how the estate repays you and what help exists.
+
+To turn down a gift without it counting as your own gift to someone else, read [how to disclaim an inheritance](/learn/after-a-death/how-to-disclaim-an-inheritance).
+
+If you are married or divorcing, [whether an inheritance is marital property](/learn/after-a-death/is-an-inheritance-marital-property) explains how to keep it separate and how support is affected.
+
 If the titles on the court forms are confusing, [executor vs administrator vs personal representative](/learn/after-a-death/executor-vs-administrator-vs-personal-representative) explains which applies and what changes.
 
 To see which trustee mistakes can cost real money, read [whether a trustee can be personally liable](/learn/after-a-death/can-a-trustee-be-personally-liable).

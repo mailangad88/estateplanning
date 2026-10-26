@@ -162,6 +162,12 @@ Other pillars worth reading alongside this one: [power of attorney](/learn/power
 
 ## More questions people ask
 
+If an admissions office hands your child a form to sign, [can a nursing home make my children pay](/learn/elder-care/can-a-nursing-home-make-my-children-pay) explains guarantors, responsible-party signatures and filial responsibility laws.
+
+For the weeks between admission and approval, [paying for a nursing home while waiting for Medicaid](/learn/elder-care/paying-for-a-nursing-home-while-waiting-for-medicaid) covers private pay, retroactive coverage, documents and appeals.
+
+Before you file, [tax breaks and traps when you pay for a parent's care](/learn/elder-care/tax-breaks-when-you-pay-for-a-parents-care) covers medical deductions, dependents, gift tax and the tax cost of selling or giving away a parent's house.
+
 Before handing money or a house to your children, read [whether you can give money or a house to your children before applying for Medicaid](/learn/elder-care/gifting-to-children-before-medicaid) for the penalty math and the gifts that are exempt.
 
 If a nursing home stay is already here, [Medicaid crisis planning](/learn/elder-care/medicaid-crisis-planning) explains what can still be done in the first weeks.

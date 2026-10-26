@@ -180,6 +180,12 @@ If no document is signed in time, read [what happens if you are incapacitated wi
 
 ## More questions people ask
 
+If you have been named as someone's agent, [what a power of attorney agent has to do](/learn/power-of-attorney/what-does-a-power-of-attorney-agent-have-to-do) covers the legal duties, first-week steps and record keeping.
+
+To decide whether two children should share the role, see [co-agents and successor agents](/learn/power-of-attorney/can-you-name-more-than-one-power-of-attorney-agent).
+
+[Power of attorney vs. executor](/learn/power-of-attorney/power-of-attorney-vs-executor) explains who acts while you are alive and who takes over at death.
+
 If you suspect an agent is misusing the document, [power of attorney abuse](/learn/power-of-attorney/power-of-attorney-abuse) lists the warning signs and the steps to report and stop it.
 
 [Power of attorney and real estate](/learn/power-of-attorney/power-of-attorney-and-real-estate) explains what title companies require and the limits on deeding a house.

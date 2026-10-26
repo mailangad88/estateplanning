@@ -161,6 +161,10 @@ Healthcare directives handle medical decisions and information. The [durable fin
 
 ## More questions people ask
 
+For crises that affect judgment, a [mental health advance directive](/learn/healthcare-directives/mental-health-advance-directive) records treatment choices and who decides.
+
+To understand the words used in serious illness, read [palliative care, hospice and comfort-care orders](/learn/healthcare-directives/palliative-care-hospice-and-comfort-care-orders).
+
 If you have signed nothing, [what happens without an advance directive](/learn/healthcare-directives/what-happens-without-an-advance-directive) explains who your state lets decide and where that goes wrong.
 
 To see when your documents start to apply and who certifies incapacity, read [when a healthcare directive takes effect](/learn/healthcare-directives/when-does-a-healthcare-directive-take-effect).

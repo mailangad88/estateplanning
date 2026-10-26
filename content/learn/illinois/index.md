@@ -201,6 +201,14 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+A deed to two owners is a tenancy in common unless it says otherwise, and [joint tenancy and tenancy by the entirety in Illinois](/learn/illinois/illinois-joint-tenancy-and-tenancy-by-the-entirety) explains the wording survivorship needs.
+
+For how POD, trust and joint accounts pass at death, see [payable-on-death and joint bank accounts in Illinois](/learn/illinois/illinois-payable-on-death-and-joint-bank-accounts).
+
+The creditor protection that continues for a spouse and young children is explained in [the Illinois homestead exemption after a death](/learn/illinois/illinois-homestead-exemption-after-a-death).
+
+To end a power of attorney, or to act when an agent misuses one, read [how to revoke an Illinois power of attorney](/learn/illinois/revoking-an-illinois-power-of-attorney).
+
 If you were named executor and are not sure you want the job, [can you refuse to be an executor in Illinois](/learn/illinois/can-you-refuse-to-be-executor-in-illinois) explains the 30-day rule, who is disqualified and what a non-resident should expect.
 
 For unpaid bills after a death, [credit card debt after a death in Illinois](/learn/illinois/credit-card-debt-after-death-in-illinois) covers creditor notice, the two-year bar and the order debts are paid.

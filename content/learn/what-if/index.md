@@ -138,6 +138,18 @@ Our [plan readiness assessment](/tools/plan-readiness-assessment) shows which of
 
 ## More questions people ask
 
+If a will was drafted but never signed, [what happens when someone dies before signing](/learn/what-if/dies-before-signing-their-will) explains intestacy, harmless error rules and a family settlement.
+
+When a spouse dies and the deed never changed, [what happens if the house is still in their name](/learn/what-if/house-still-in-late-spouses-name) shows how title decides whether probate is needed.
+
+Adult children worried about a parent's second marriage can read [what happens if the new spouse inherits everything](/learn/what-if/parent-remarries-and-new-spouse-inherits-everything) to see why it happens and what the parent can do.
+
+For disputes over wills, executors and belongings, [what happens if siblings fight over a parent's estate](/learn/what-if/siblings-fight-over-a-parents-estate) covers contests, costs and mediation.
+
+A family caregiver turned away by a doctor or bank can see [what happens without access to records](/learn/what-if/caregiver-cannot-get-medical-or-bank-records) and which three documents fix it.
+
+If the named executor is buried or unwilling, [what happens when the executor cannot do the job](/learn/what-if/executor-overwhelmed-or-unable-to-serve) explains delegating, declining, resigning and who steps in.
+
 When siblings co-own an inherited house, [what happens if they cannot agree](/learn/what-if/siblings-inherit-house-and-disagree) explains partition, buyouts and how to avoid a forced sale.
 
 If your child turns 18, [what happens in a medical emergency without a HIPAA release](/learn/what-if/adult-child-medical-emergency-no-hipaa) shows what the hospital can share and the two forms to sign.
