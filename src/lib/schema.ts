@@ -1,6 +1,6 @@
 import { absoluteUrl, site } from "@/config/site";
 import { ATTORNEY_ID as SEO_ATTORNEY_ID, ORG_ID as SEO_ORG_ID } from "@/lib/seo";
-import type { Article, City, Faq, GlossaryEntry, StateGuide } from "@/lib/library";
+import type { Article, City, County, Faq, GlossaryEntry, Office, StateGuide } from "@/lib/library";
 
 /**
  * schema.org JSON-LD builders. Entities reference each other by @id so search engines and
@@ -117,6 +117,35 @@ export function cityServiceSchema(c: City): Json {
     provider: { "@id": ORG_ID },
     areaServed: { "@type": "City", name: `${c.name}, ${c.state.abbr}` },
     url: absoluteUrl(c.url),
+  };
+}
+
+export function countyServiceSchema(c: County): Json {
+  return {
+    "@type": "LegalService",
+    "@id": `${absoluteUrl(c.url)}#service`,
+    name: `Estate planning and probate help in ${c.name}, ${c.state.name}`,
+    serviceType: ["Estate planning", "Probate"],
+    provider: { "@id": ORG_ID },
+    areaServed: {
+      "@type": "AdministrativeArea",
+      name: `${c.name}, ${c.state.name}`,
+      containedInPlace: { "@type": "State", name: c.state.name },
+    },
+    url: absoluteUrl(c.url),
+  };
+}
+
+/** A county office (courthouse, clerk, recorder) as a GovernmentOffice, so assistants can quote the address. */
+export function officeSchema(o: Office | undefined, id: string): Json | null {
+  if (!o?.address) return null;
+  return {
+    "@type": "GovernmentOffice",
+    "@id": id,
+    name: o.name,
+    address: o.address,
+    ...(o.phone ? { telephone: o.phone } : {}),
+    ...(o.url ? { url: o.url } : {}),
   };
 }
 
