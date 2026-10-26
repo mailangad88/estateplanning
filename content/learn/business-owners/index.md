@@ -164,6 +164,8 @@ Related pillars worth reading alongside this one: [trusts](/learn/trusts), [powe
 
 ## More questions people ask
 
+If the building matters as much as the company, [should business real estate be in a separate LLC](/learn/business-owners/should-business-real-estate-be-owned-separately-from-the-operating-company) compares one entity with two, with a worked example and the multi-state issues.
+
 If there is no will at all, [who inherits a business when the owner dies without a will](/learn/business-owners/who-inherits-a-business-when-the-owner-dies-without-a-will) shows how intestacy treats LLC interests, shares and sole proprietorships.
 
 When a co-owner is alive but unable to work, [how a disability buyout provision works](/learn/business-owners/disability-buyout-provision-when-a-business-partner-becomes-incapacitated) explains the trigger, price and funding.

@@ -138,6 +138,10 @@ For a view of the whole picture, our [basics guide](/learn/basics) and the [prob
 
 ## More questions people ask
 
+Before paying for tax-driven planning, [what estate tax planning costs and when it is worth it](/learn/estate-tax/how-much-does-estate-tax-planning-cost) compares fees and yearly upkeep with the tax actually at stake.
+
+If you may someday inherit from a parent, [how to plan for a large expected inheritance](/learn/estate-tax/how-to-plan-if-you-expect-a-large-inheritance-from-a-parent) covers disclaimers, inheritance trusts and how the money affects your own estate.
+
 To learn whether the executor, the estate or the beneficiaries bear the bill, read [who pays the estate tax, the executor or the heirs](/learn/estate-tax/who-pays-the-estate-tax-executor-or-heirs).
 
 If you already own a policy, [how to transfer an existing life insurance policy to an ILIT](/learn/estate-tax/how-to-transfer-an-existing-life-insurance-policy-to-an-ilit) walks through the assignment, Crummey notices and the three-year rule.

@@ -153,6 +153,10 @@ Start with whichever problem would be hardest on your family tomorrow. For many 
 
 ## More questions people ask
 
+If time is short, [can you make a will in hospice](/learn/life-stages/can-you-make-a-will-in-hospice) explains capacity, witnesses and what else to sign the same day.
+
+Before a second wedding, [estate planning before you remarry](/learn/life-stages/estate-planning-before-you-remarry) lists what to settle about the house, accounts, prenup and agents.
+
 When fairness among your children is the sticking point, [should you treat your children equally in your will](/learn/life-stages/should-you-leave-your-children-equal-shares) shows how to weigh need, gifts and caregiving.
 
 If you are raising a grandchild without a court order, [grandparents raising grandchildren](/learn/life-stages/estate-planning-for-grandparents-raising-grandchildren) covers the papers to get and a plan for the child if you cannot continue.

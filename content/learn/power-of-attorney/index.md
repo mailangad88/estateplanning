@@ -180,6 +180,8 @@ If no document is signed in time, read [what happens if you are incapacitated wi
 
 ## More questions people ask
 
+When the money for care has to come from the house, [can a power of attorney sell a parent's house to pay for care](/learn/power-of-attorney/can-a-power-of-attorney-sell-a-parents-house-to-pay-for-care) covers the sale steps, where the proceeds go and the Medicaid traps.
+
 If your document only covers money, [can a power of attorney make medical decisions](/learn/power-of-attorney/can-a-power-of-attorney-make-medical-decisions) explains which form a hospital needs and what to do when a loved one is in a coma.
 
 For everyday banking and bills, [can a power of attorney open or close bank accounts and pay a mortgage](/learn/power-of-attorney/can-a-power-of-attorney-open-or-close-bank-accounts-and-pay-a-mortgage) covers what banks require and where an agent must stop.

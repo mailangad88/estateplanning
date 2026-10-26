@@ -180,6 +180,10 @@ Curious what happens when a plan is missing or out of date? Our guide to [what h
 
 ## More questions people ask
 
+If you have lived in or own property in another state, [what is community property and does it apply in Illinois or New Jersey](/learn/basics/what-is-community-property-and-does-it-apply-in-illinois-or-new-jersey) explains how marital property rules differ.
+
+When a deed or account is held jointly, [what right of survivorship means and whether it overrides your will](/learn/basics/what-does-right-of-survivorship-mean-and-what-does-it-override) shows where it helps and where it backfires.
+
 For the personal side of a plan, [what an ethical will is and how to write a legacy letter](/learn/basics/what-is-an-ethical-will-and-how-to-write-a-legacy-letter) gives prompts and an example.
 
 To keep a plan from being overturned, [what undue influence is and how to protect a will from it](/learn/basics/what-is-undue-influence-in-estate-planning) lists the warning signs and safeguards.

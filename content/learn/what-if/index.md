@@ -138,6 +138,12 @@ Our [plan readiness assessment](/tools/plan-readiness-assessment) shows which of
 
 ## More questions people ask
 
+If your spouse will not plan, [what to do when your spouse refuses to make an estate plan](/learn/what-if/what-if-my-spouse-refuses-to-make-an-estate-plan) shows what you can sign alone and what it leaves uncovered.
+
+If the trust maker has died with assets still in their own name, [can you fund a trust after death](/learn/what-if/can-you-fund-a-trust-after-the-person-who-made-it-has-died) explains the probate route and the few fixes left.
+
+When one child arranged a parent's new will, [what happens if one child took a parent to the lawyer](/learn/what-if/what-if-one-child-took-a-parent-to-the-lawyer-to-change-the-will) lists the red flags and the contest deadlines.
+
 If you want to know what your family faces after a sudden death and the eight steps that close the biggest gaps, read [how to protect your family if you die suddenly](/learn/what-if/protect-your-family-if-you-die-suddenly).
 
 When a parent or spouse has a reverse mortgage, [what happens to a reverse mortgage when the borrower dies](/learn/what-if/what-happens-to-a-reverse-mortgage-when-the-borrower-dies) explains the heirs' deadlines, the 95 percent option and a non-borrowing spouse's rights.

@@ -175,6 +175,8 @@ You can do the first two this month and the rest over time. A good first step is
 
 ## More questions people ask
 
+If you suspect a guardian is misusing a child's funds, [what happens if a guardian mismanages a child's money](/learn/guardianship/what-happens-if-a-guardian-mismanages-a-childs-money) covers accountings, court remedies and prevention.
+
 For the actual clause and the order of backups, [how to name a guardian in your will](/learn/guardianship/how-to-name-a-guardian-in-your-will-with-backups-and-wording) gives sample wording and Illinois and New Jersey rules.
 
 If an adult guardianship is proposed, in place or being misused, [can a guardianship be contested or ended](/learn/guardianship/can-a-guardianship-be-contested-or-ended) covers the steps in both states.
