@@ -1,1 +1,152 @@
-/* Design polish: pages. Loaded after design.css. */
+/* Design polish: pages. Loaded after design.css.
+ * Scope: conversion pages (/pricing, /book, /contact ...), header and mega menu,
+ * footer, phone contact bar, cookie banner, staging banner. */
+
+/* ---------- Header: fit the bar between 1024px and 1440px ---------- */
+.mega__link strong { line-height: 1.3; }
+.mega__link small { margin-top: 4px; }
+.mega__feature p { line-height: 1.55; }
+.mega__footer { border-top: 1px solid var(--border); }
+.mega__footer:hover { background: var(--sand-deep); text-decoration: none; }
+/* Below 1400px the number is hidden, so the phone shows as a round icon button like search. */
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .header-phone { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; border: 1px solid var(--border); background: var(--surface); }
+  .header-phone:hover { border-color: var(--brand); color: var(--brand); }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .site-header__bar { gap: 16px; padding: 0 20px; }
+  .brand { font-size: var(--text-md); gap: 8px; }
+  .brand-mark { width: 32px; height: 32px; }
+  .mega { gap: 8px; }
+  .mega__trigger { padding: 10px 9px; }
+  .mega__actions { gap: 8px; }
+  .mega__actions .button { padding: 10px 16px; }
+  .mega__inner { grid-template-columns: 1fr 280px; gap: 24px; }
+}
+@media (min-width: 1024px) and (max-width: 1099px) {
+  .site-header__bar { gap: 12px; padding: 0 16px; }
+  .mega__trigger { padding: 10px 7px; gap: 2px; }
+  .mega__actions .button { padding: 10px 14px; }
+}
+
+/* ---------- Phone drawer ---------- */
+@media (max-width: 1023px) {
+  .mega__link { padding: 10px 4px; gap: 12px; }
+  .mega__link strong { font-size: var(--text-base); }
+  .mega__item.is-open > .mega__trigger { color: var(--brand); }
+}
+
+/* ---------- Footer: tighter column rhythm ---------- */
+.mega-footer h2 { margin-bottom: 14px; }
+.mega-footer li { padding: 5px 0; }
+.footer-brand p { max-width: 30ch; }
+.footer-legal p { max-width: 110ch; }
+/* The tools list is twice as long as the others: give it two columns of its own so
+   the second row is not one tall column beside two short ones. */
+@media (min-width: 901px) {
+  .mega-footer { grid-template-columns: repeat(3, 1fr); grid-template-areas: "a b c" "d d e" "d d f"; align-items: start; gap: 36px 28px; }
+  .mega-footer > div:nth-child(1) { grid-area: a; }
+  .mega-footer > div:nth-child(2) { grid-area: b; }
+  .mega-footer > div:nth-child(3) { grid-area: c; }
+  .mega-footer > div:nth-child(4) { grid-area: d; }
+  .mega-footer > div:nth-child(5) { grid-area: e; }
+  .mega-footer > div:nth-child(6) { grid-area: f; }
+  .mega-footer > div:nth-child(4) ul { columns: 2; column-gap: 28px; }
+  .mega-footer > div:nth-child(4) li { break-inside: avoid; }
+}
+
+/* ---------- Phone contact bar and cookie banner ---------- */
+@media (max-width: 800px) {
+  :root { --sticky-bar-h: 69px; }
+  .sticky-bar { height: calc(var(--sticky-bar-h) + env(safe-area-inset-bottom)); align-items: stretch; }
+  .sticky-bar a { display: flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 6px; line-height: 1.2; font-size: var(--text-sm); font-weight: 650; }
+  /* The dark footer runs under the bar instead of a cream strip below it, and its last line stays readable. */
+  body { padding-bottom: 0; }
+  footer.site { padding-bottom: calc(var(--sticky-bar-h) + env(safe-area-inset-bottom)); }
+  /* The banner sits just above the bar instead of overlapping it. */
+  .cookie-consent { bottom: calc(var(--sticky-bar-h) + 8px + env(safe-area-inset-bottom)); max-height: calc(100dvh - var(--sticky-bar-h) - var(--header-h) - 24px); overflow-y: auto; }
+}
+.cookie-consent { border-radius: var(--radius); padding: 18px 20px; box-shadow: var(--shadow-lg); }
+.cookie-consent p { line-height: 1.5; margin-bottom: 12px; }
+.cookie-consent .check { margin: 8px 0; line-height: 1.45; }
+.cookie-consent-actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.cookie-consent-actions .button { min-height: 44px; padding: 8px 12px; font-size: var(--text-sm); box-shadow: none; }
+@media (max-width: 380px) {
+  .cookie-consent-actions { grid-template-columns: 1fr 1fr; }
+  .cookie-consent-actions .button:last-child { grid-column: span 2; }
+}
+@media (max-width: 420px) {
+  .cookie-consent { left: 8px; right: 8px; padding: 14px 16px; }
+  .cookie-consent p { font-size: var(--text-xs); }
+  .cookie-consent-actions .button { padding: 8px; }
+}
+
+/* ---------- Staging banner ---------- */
+.staging-banner { font-weight: 600; letter-spacing: 0.01em; padding: 8px 16px; line-height: 1.4; }
+@media (prefers-color-scheme: dark) {
+  .staging-banner { background: #3a3121; color: #f0d08a; border-bottom-color: #5a4a2a; }
+}
+
+/* ---------- Wide layouts inside the 780px page column ---------- */
+/* Pricing tiers and the booking layout break out to the hero width so three tiers fit in a row
+   and the form gets room beside the "what happens" panel. */
+@media (min-width: 901px) {
+  .price-tiers, .book-layout, h2:has(+ .price-tiers) {
+    --breakout: min(var(--wide), calc(100vw - 64px));
+    width: var(--breakout); max-width: none; margin-left: calc(50% - var(--breakout) / 2);
+  }
+}
+
+/* ---------- /pricing: package tiers ---------- */
+.price-tiers { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 20px; align-items: stretch; margin-top: 24px; margin-bottom: 8px; }
+.price-tier { display: flex; flex-direction: column; gap: 0; padding: 28px; border-radius: 20px; box-shadow: var(--shadow-sm); position: relative; }
+.price-tier.is-featured { border: 2px solid var(--brand); padding: 27px; box-shadow: var(--shadow); }
+.price-tier .tag { display: inline-block; align-self: flex-start; padding: 4px 10px; border-radius: 999px; background: var(--clay-tint); color: var(--clay-text); letter-spacing: 0.08em; }
+.price-tier.is-featured .tag { background: var(--brand-tint); color: var(--brand); }
+.price-tier h3 { margin: 14px 0 6px; font-size: var(--text-xl); line-height: 1.2; }
+.price-tier > .notice { margin: 0; font-size: var(--text-sm); line-height: 1.55; min-height: calc(3 * 1.55em); }
+.price-tier__list { list-style: none; padding: 18px 0 0; margin: 18px 0 24px; border-top: 1px solid var(--border); display: grid; gap: 10px; }
+.price-tier__list li { position: relative; padding-left: 30px; font-size: var(--text-sm); line-height: 1.45; margin: 0; }
+.price-tier__list li::before {
+  content: ""; position: absolute; left: 0; top: 1px; width: 20px; height: 20px; border-radius: 50%;
+  background: var(--sage-tint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233f6a4f' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center / 12px no-repeat;
+}
+.price-tier .button { margin-top: auto; align-self: stretch; }
+@media (prefers-color-scheme: dark) {
+  .price-tier__list li::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a9cdb3' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E"); }
+}
+@media (max-width: 900px) { .price-tier > .notice { min-height: 0; } }
+
+/* Pricing comparison tables: framed, with a tinted header row. */
+.price-tiers ~ .table-wrap { border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow-sm); }
+.price-tiers ~ .table-wrap table { margin: 0; }
+.price-tiers ~ .table-wrap th, .price-tiers ~ .table-wrap td { padding: 12px 14px; border: 0; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+.price-tiers ~ .table-wrap tr:last-child > * { border-bottom: 0; }
+.price-tiers ~ .table-wrap thead th { background: var(--sand); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.06em; }
+.price-tiers ~ .table-wrap tbody th { font-weight: 650; }
+
+/* ---------- /book ---------- */
+.book-layout { gap: 48px; margin-top: 40px; }
+/* Each booking step (and the "booked" confirmation) sits on its own card. */
+.book-layout > div > section { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 28px 32px; box-shadow: var(--shadow-sm); margin: 0 0 16px; }
+.book-layout > div > section > h2:first-child { margin: 0 0 16px; font-size: var(--text-xl); }
+.book-layout > div > section .field { margin-bottom: 0; }
+.book-layout > div > section .notice { margin-bottom: 0; }
+.book-layout aside { top: calc(var(--header-h) + 24px); background: var(--sand); border-radius: 20px; padding: 28px; }
+.book-layout aside h2 { margin: 0 0 16px; font-size: var(--text-xl); }
+.book-layout aside h2 ~ h2 { margin-top: 32px; }
+.book-layout aside p { font-size: var(--text-sm); margin: 0 0 10px; }
+.book-layout aside .steps { counter-reset: book-step; gap: 12px; margin: 0; }
+.book-layout aside .steps li { counter-increment: book-step; position: relative; padding: 16px 16px 16px 60px; font-size: var(--text-sm); line-height: 1.5; color: var(--muted); border-radius: var(--radius); }
+.book-layout aside .steps li strong { color: var(--text); font-size: var(--text-base); }
+.book-layout aside .steps li::before {
+  content: counter(book-step); position: absolute; left: 16px; top: 16px; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%;
+  background: var(--brand); color: var(--surface); font-family: var(--font-display); font-weight: 600; font-size: var(--text-sm);
+}
+.book-facts { gap: 8px 10px; margin-top: 20px; }
+.book-facts li { padding: 8px 14px; line-height: 1.3; }
+@media (max-width: 900px) {
+  .book-layout { margin-top: 24px; gap: 28px; }
+  .book-layout > div > section { padding: 22px 18px; }
+  .book-layout aside { padding: 22px 18px; }
+}
