@@ -23,6 +23,8 @@ faqs:
     a: "Bills to raise it have been introduced in the Illinois General Assembly, but the exclusion for deaths on or after January 1, 2013 has stayed at $4 million in the statute. Check the Attorney General's site for the current rule for the year of death."
   - q: "Does Illinois have an inheritance tax?"
     a: "No. Illinois taxes the estate, not the person who receives an inheritance. Heirs do not pay Illinois tax on what they receive, although the estate may have paid tax before they received it. A few other states do tax heirs."
+  - q: "Does Illinois have a gift tax?"
+    a: "No. Illinois does not tax gifts on its own. Taxable lifetime gifts are added back when testing an estate against the $4 million Illinois threshold, though, so large gifts can still affect the estate tax. Federal gift tax rules apply separately."
 related:
   - "illinois"
   - "illinois/illinois-living-trusts"

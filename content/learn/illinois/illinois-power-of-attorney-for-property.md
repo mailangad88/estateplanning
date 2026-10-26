@@ -24,6 +24,8 @@ faqs:
     a: "Yes. The statutory form lets you choose a future effective date or event. Many families prefer an immediate power because a delayed one can require proof of incapacity, which slows down banks and delays help when it is needed."
   - q: "Does my Illinois property power of attorney work after I die?"
     a: "No. The agent's authority ends at your death. After that, your executor or successor trustee takes over under your will or trust. The agent must stop acting and should hand over records and property."
+  - q: "Where can I get an Illinois power of attorney form?"
+    a: "The statutory short form for property is printed in the Illinois Power of Attorney Act (755 ILCS 45/3-3), so the official wording is public. It only works when it is signed by you, signed by one witness who is not your agent, and notarized. Our attorneys can prepare one that fits your family and check that it is signed correctly."
 related:
   - "illinois"
   - "illinois/illinois-healthcare-power-of-attorney"
