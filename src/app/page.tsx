@@ -261,7 +261,9 @@ export default function Home() {
         </ul>
       </Band>
 
-      <FaqList faqs={faqs} />
+      <Band tone="sand" label="Common questions" className="home-faq">
+        <FaqList faqs={faqs} />
+      </Band>
       {/* Client reviews go here once real clients leave them. Never use invented testimonials. */}
     </>
   );

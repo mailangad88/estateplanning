@@ -48,6 +48,7 @@ export function LifeGame({ squares, bookHref, phone, next, senior, library, id =
   const [reached, setReached] = useState(0);
   const [choices, setChoices] = useState<Record<string, Choice>>({});
   const headingRef = useRef<HTMLHeadingElement>(null);
+  const boardRef = useRef<HTMLOListElement>(null);
 
   const whatifs = squares.filter((s) => s.kind === "whatif");
   const planned = whatifs.filter((s) => choices[s.id] === "plan");
@@ -69,7 +70,16 @@ export function LifeGame({ squares, bookHref, phone, next, senior, library, id =
     const to = Math.max(0, Math.min(last, i));
     setAt(to);
     setReached((r) => Math.max(r, to));
-    requestAnimationFrame(() => headingRef.current?.focus({ preventScroll: true }));
+    requestAnimationFrame(() => {
+      headingRef.current?.focus({ preventScroll: true });
+      // On phones the board scrolls sideways: keep the pawn's square in view.
+      const board = boardRef.current;
+      const tile = board?.children[to] as HTMLElement | undefined;
+      if (board && tile && board.scrollWidth > board.clientWidth) {
+        const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        board.scrollTo({ left: tile.offsetLeft - (board.clientWidth - tile.offsetWidth) / 2, behavior: reduce ? "auto" : "smooth" });
+      }
+    });
   }
   function choose(c: Choice) {
     setChoices((prev) => ({ ...prev, [square.id]: c }));
@@ -85,7 +95,7 @@ export function LifeGame({ squares, bookHref, phone, next, senior, library, id =
   return (
     <div className={`lgame${senior ? " lgame--senior" : ""}`}>
       {/* The board: one tile per square, the pawn sits on the current one. */}
-      <ol className="lgame__board" aria-label="Game board" style={{ ["--n" as string]: squares.length }}>
+      <ol ref={boardRef} className="lgame__board" aria-label="Game board" style={{ ["--n" as string]: squares.length }}>
         {squares.map((s, i) => {
           const c = choices[s.id];
           const state = c === "plan" ? "is-covered" : c === "wait" ? "is-risk" : i <= reached ? "is-seen" : "is-ahead";
