@@ -148,6 +148,10 @@ Related life situations have their own pages: [estate planning after divorce](/l
 
 ## More questions people ask
 
+If your spouse develops memory loss, [when your spouse has dementia and you have children from before](/learn/blended-families/when-your-spouse-has-dementia-and-you-have-children-from-before) explains who decides, how care is paid for and how to protect both families.
+
+To decide on the split itself, [how much to leave a second spouse versus your children](/learn/blended-families/how-much-to-leave-a-second-spouse-versus-your-children) compares three common models and shows how to test them with real numbers.
+
 To see which relatives the law counts, [who counts as an heir in a blended family](/learn/blended-families/who-counts-as-an-heir-in-a-blended-family) covers half-siblings, adoption, children born outside marriage and step-grandchildren.
 
 When a spouse, children and stepchildren all want a say, [who should make decisions for you in a blended family](/learn/blended-families/decision-makers-in-a-blended-family) sorts out agents, executors and guardians.

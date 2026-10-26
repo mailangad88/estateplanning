@@ -164,6 +164,10 @@ Related pillars worth reading alongside this one: [trusts](/learn/trusts), [powe
 
 ## More questions people ask
 
+If an owner's marriage ends, [what happens to a business when its owner divorces](/learn/business-owners/divorce-and-the-family-business) covers valuation, buyouts and the plan changes to make.
+
+For the practical first month, [who runs the business and signs the checks after the owner dies](/learn/business-owners/first-30-days-after-a-business-owner-dies) covers bank access, payroll and authority.
+
 If you are weighing a sale against a handoff, [selling your business or passing it on](/learn/business-owners/selling-your-business-or-passing-it-to-family-or-employees) compares the five exits, the tax difference and how a key employee can buy in over time.
 
 When the company is nearly everything you own, [planning for a business-heavy estate](/learn/business-owners/when-the-business-is-most-of-your-estate) covers equalizing children, cash for bills and taxes, and the powers a surviving spouse needs.

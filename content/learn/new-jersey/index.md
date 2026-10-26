@@ -143,6 +143,22 @@ If a death has just happened, find the original will, order certified death cert
 
 ## More questions people ask
 
+To see how joint tenancy, tenancy in common and tenancy by the entirety work at death, read [joint property and tenancy by the entirety in New Jersey](/learn/new-jersey/joint-property-and-tenancy-by-the-entirety-in-new-jersey).
+
+If the person who died worked for the State or a school district, [New Jersey pension survivor benefits](/learn/new-jersey/new-jersey-pension-survivor-benefits-pers-tpaf-pfrs) explains the Division of Pensions and Benefits claim and the beneficiary designation.
+
+To search for forgotten money in a dead person's name, [finding unclaimed property for a New Jersey estate](/learn/new-jersey/finding-unclaimed-property-for-a-new-jersey-estate) lists the documents the Unclaimed Property Administration asks for.
+
+When the family decides to sell, [selling an estate house in New Jersey](/learn/new-jersey/selling-an-estate-house-in-new-jersey) covers who signs the deed, the tax waiver, the realty transfer fee and the nonresident seller payment.
+
+To change a will without creating a dispute, [changing or revoking a will in New Jersey](/learn/new-jersey/changing-or-revoking-a-will-in-new-jersey) explains codicils, later wills, revival and what divorce does.
+
+If a baby arrives after your will is signed, or you want to leave a grown child out, [children left out of a New Jersey will](/learn/new-jersey/children-left-out-of-a-new-jersey-will) covers N.J.S.A. 3B:5-16.
+
+When someone named in a will dies first, [what happens when a beneficiary dies first in New Jersey](/learn/new-jersey/when-a-beneficiary-dies-first-in-new-jersey) explains anti-lapse, the residue and the 120-hour rule.
+
+For gifts to a child, [New Jersey UTMA accounts and gifts to minors](/learn/new-jersey/new-jersey-utma-accounts-and-gifts-to-minors) explains age 21, custodian duties and naming a custodian in a will.
+
 For the order of an executor's work, from qualifying at the Surrogate to the final release, see [executor duties in New Jersey, step by step](/learn/new-jersey/executor-duties-in-new-jersey-step-by-step).
 
 For a family planning around a disability, [special needs planning in New Jersey](/learn/new-jersey/special-needs-planning-in-new-jersey) covers DDD eligibility, NJ ABLE accounts, special needs trusts and the decision at age 18.

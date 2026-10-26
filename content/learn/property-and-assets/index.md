@@ -150,6 +150,12 @@ For a larger picture, start with our guide to [estate planning basics](/learn/ba
 
 ## More questions people ask
 
+Before you leave or accept a house, [check for deed restrictions, flood risk and contamination](/learn/property-and-assets/hidden-property-problems-deed-restrictions-flood-and-contamination) and learn what an heir can do about a problem.
+
+If you own a second home abroad, [what happens to a vacation home in another country](/learn/property-and-assets/vacation-home-in-another-country-when-the-owner-dies) explains local inheritance law, U.S. tax and the second will.
+
+To decide who takes your animal and who steps in first, read [choosing a pet caretaker and a backup](/learn/property-and-assets/choosing-a-pet-caretaker-and-a-backup-in-your-estate-plan).
+
 If you are worried the county will raise the bill after a transfer, [property tax reassessment and transfer tax when a house passes to family](/learn/property-and-assets/property-tax-reassessment-and-transfer-tax-when-a-house-passes-to-family) explains the local rules to check.
 
 When the deed and the money do not match, [who owns the house when a parent helped pay, you bought before marriage, or you live with a partner](/learn/property-and-assets/who-owns-the-house-when-a-parent-helped-pay-or-you-bought-before-marriage) shows what controls.

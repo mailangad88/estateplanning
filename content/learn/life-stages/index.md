@@ -153,6 +153,10 @@ Start with whichever problem would be hardest on your family tomorrow. For many 
 
 ## More questions people ask
 
+Married and unmarried same-sex couples, non-biological parents and chosen family can find the gaps in [estate planning for same-sex couples and LGBTQ families](/learn/life-stages/estate-planning-for-same-sex-couples-and-lgbtq-families).
+
+When a move or a decline in health changes who can help you, [updating your estate plan when you move to assisted living or your health declines](/learn/life-stages/estate-planning-when-you-move-to-assisted-living-or-your-health-declines) gives a first-month checklist.
+
 If you are under 30 and wondering what to sign first, [making a will in your twenties](/learn/life-stages/making-a-will-in-your-twenties) covers the legal age, student loans and first-job beneficiary forms.
 
 While a divorce is still pending, [estate planning during a separation](/learn/life-stages/estate-planning-during-separation-or-a-pending-divorce) explains what your spouse can still inherit and which changes a court may block.

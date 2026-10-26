@@ -138,6 +138,12 @@ For a view of the whole picture, our [basics guide](/learn/basics) and the [prob
 
 ## More questions people ask
 
+When an estate is mostly a farm or family company, [estate tax elections for alternate valuation, 6166 deferral and farm valuation](/learn/estate-tax/estate-tax-elections-alternate-valuation-deferral-and-farm-valuation) explains how an executor can lower the value or spread out the payments.
+
+If you have given more than the annual exclusion, [Form 709, gift splitting and net gifts](/learn/estate-tax/form-709-gift-tax-return-gift-splitting-and-net-gifts) explains who files the return and why it rarely means paying tax.
+
+For larger estates with growing assets, [intentionally defective grantor trusts and sales to an IDGT](/learn/estate-tax/intentionally-defective-grantor-trust-and-sale-to-an-idgt) shows how growth can move out of the estate and what it costs in basis.
+
 To see what the tax looks like in dollars, [how much the federal estate tax is on a $10, $15 or $20 million estate](/learn/estate-tax/estate-tax-on-10-15-and-20-million-dollar-estates) gives worked examples for single people and couples.
 
 If a house or account has two owners, [how the step-up works for spouses, joint owners and community property](/learn/estate-tax/step-up-in-basis-for-married-couples-and-joint-property) explains which share gets a new basis.

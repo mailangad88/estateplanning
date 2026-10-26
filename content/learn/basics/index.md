@@ -180,6 +180,10 @@ Curious what happens when a plan is missing or out of date? Our guide to [what h
 
 ## More questions people ask
 
+If a document's words are tripping you up, [testator, settlor, fiduciary and decedent explained](/learn/basics/estate-planning-words-who-is-who-in-a-plan) defines each role and gift in plain English.
+
+To see why your house can be in your estate but not in probate, read [what an estate is: probate, gross and taxable](/learn/basics/what-an-estate-is-probate-gross-and-taxable-estate).
+
 If someone mentioned a "five year rule" or "seven year rule," [the 3, 5 and 7 year rules explained](/learn/basics/the-3-5-and-7-year-rules-in-estate-planning) shows which are real in the U.S. and which clock applies to your gift.
 
 To set realistic expectations, [what an estate plan can and cannot do](/learn/basics/what-an-estate-plan-can-and-cannot-do) covers taxes, creditors, life insurance and the honest pros and cons.

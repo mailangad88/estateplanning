@@ -148,6 +148,12 @@ No plan makes every account recoverable. Some companies will refuse, some servic
 
 ## More questions people ask
 
+With no will, [who gets your digital accounts, photos and crypto](/learn/digital-assets/who-gets-your-digital-accounts-if-you-die-without-a-will) explains what passes to heirs and what stays locked.
+
+To make a request to a company, [how to ask Apple, Google or Meta for a deceased person's account](/learn/digital-assets/how-to-ask-a-tech-company-for-a-deceased-persons-account) lists the documents, the court order route and the timing.
+
+For everyday accounts, [online banking, Amazon, LinkedIn and password managers after death](/learn/digital-assets/online-banking-amazon-linkedin-and-password-managers-after-death) gives the default outcome and first move for each.
+
 If you are wondering how much of this you can do yourself, [do you need a lawyer for a digital estate plan, and what does it cost](/learn/digital-assets/do-you-need-a-lawyer-for-a-digital-estate-plan-and-what-it-costs) separates the free tools from the legal wording.
 
 For people who want some things to stay private, [keeping your family out of your messages and accounts after you die](/learn/digital-assets/can-you-keep-your-family-out-of-your-private-messages-after-you-die) explains what the law protects and where it fails.
