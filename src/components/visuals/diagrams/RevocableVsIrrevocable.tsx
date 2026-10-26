@@ -43,9 +43,9 @@ export function RevocableVsIrrevocable({ caption, bare, step }: DiagramProps) {
           <S key={r.label} step={step} n={2 + Math.floor(i / 2)}>
             <Card x={40} y={y} w={880} h={54} fill={i % 2 ? "paper" : "sand"} border="none" r={10} />
             <Icon name={r.icon} x={52} y={y + 11} size={30} color="accent" tint="surface" />
-            <Wrap x={92} y={y + 32 - (wrapCount(r.label, 190, 14) - 1) * 8} w={190} size={14} weight={700} text={r.label} lh={16} />
-            <Wrap x={COL.a + 12} y={y + 32 - (wrapCount(r.a, COL.aw - 24, 15) - 1) * 9} w={COL.aw - 24} size={15} text={r.a} lh={18} />
-            <Wrap x={COL.b + 12} y={y + 32 - (wrapCount(r.b, COL.bw - 24, 15) - 1) * 9} w={COL.bw - 24} size={15} text={r.b} lh={18} />
+            <Wrap x={92} y={y + 32 - (wrapCount(r.label, 190, 14) - 1) * 8} w={190} size={15} weight={700} text={r.label} lh={19} />
+            <Wrap x={COL.a + 12} y={y + 32 - (wrapCount(r.a, COL.aw - 24, 15) - 1) * 9} w={COL.aw - 24} size={15} text={r.a} lh={19} />
+            <Wrap x={COL.b + 12} y={y + 32 - (wrapCount(r.b, COL.bw - 24, 15) - 1) * 9} w={COL.bw - 24} size={15} text={r.b} lh={19} />
           </S>
         );
       })}
