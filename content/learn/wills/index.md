@@ -164,6 +164,10 @@ An old will can cause as many problems as no will. See [what happens if you die 
 
 ## More questions people ask
 
+If you are choosing people to sign, [who can witness a will in Illinois or New Jersey](/learn/wills/who-can-witness-a-will-in-illinois-and-new-jersey) explains who is safe and what happens when a beneficiary signs.
+
+Thinking about a template or kit? [Are free templates for a will legal](/learn/wills/are-free-templates-for-a-will-legal) covers what works, what fails and a checklist to run first.
+
 If a beneficiary caused the death, [can someone who kills you inherit from you](/learn/wills/can-someone-who-kills-you-inherit-from-you) explains the slayer rule and how it treats wills, joint property and insurance.
 
 Wondering when the family finds out what a will says? [Is there a reading of the will](/learn/wills/is-there-a-reading-of-the-will) lays out the filing, notice and deadlines in Illinois and New Jersey.

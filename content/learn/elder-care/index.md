@@ -162,6 +162,10 @@ Other pillars worth reading alongside this one: [power of attorney](/learn/power
 
 ## More questions people ask
 
+To turn a daily rate, a monthly rent or an hourly wage into one comparable number, [how much a nursing home costs per month](/learn/elder-care/how-much-does-a-nursing-home-cost-per-month) walks through a sample budget for each type of care.
+
+If a parent's mail is piling up or a hospital will not talk to you, [how to help manage a parent's finances and medical care](/learn/elder-care/how-to-help-manage-your-parents-finances-and-medical-care-before-a-crisis) explains what you can do with no paperwork and which documents to get first.
+
 If you are weighing a policy that pays a death benefit if care is never needed against one with a lower premium, [hybrid long-term care insurance vs traditional policies](/learn/elder-care/hybrid-long-term-care-insurance-vs-traditional-policies) compares them side by side.
 
 To see how the rate, the bed and the resident's monthly income change when Medicaid takes over, read [private pay vs Medicaid in a nursing home](/learn/elder-care/private-pay-vs-medicaid-in-a-nursing-home).

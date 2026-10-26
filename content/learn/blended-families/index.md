@@ -148,6 +148,10 @@ Related life situations have their own pages: [estate planning after divorce](/l
 
 ## More questions people ask
 
+To lock part of your estate for your children while your spouse still has support, read [how an A-B trust works in a second marriage](/learn/blended-families/a-b-trust-for-a-second-marriage).
+
+For the joint-and-survivor rule and a first spouse's QDRO, see [what happens to your pension if you remarry](/learn/blended-families/pension-in-a-second-marriage-survivor-benefits).
+
 If you worry about a challenge, [can my stepchildren contest my will](/learn/blended-families/can-stepchildren-contest-a-will-in-a-blended-family) explains who has standing and how to make the plan hold up.
 
 When one spouse will run a trust that the children inherit later, [naming a spouse as trustee for your kids' inheritance](/learn/blended-families/can-my-spouse-be-trustee-for-my-children-from-a-first-marriage) covers the conflict and four safer setups.

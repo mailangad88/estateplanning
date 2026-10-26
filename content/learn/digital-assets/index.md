@@ -148,6 +148,10 @@ No plan makes every account recoverable. Some companies will refuse, some servic
 
 ## More questions people ask
 
+For coins that are locked, airdropped or borrowed against, [what happens to staked crypto, airdrops and DeFi positions when the owner dies](/learn/digital-assets/what-happens-to-staked-crypto-airdrops-and-defi-positions-when-the-owner-dies) covers lock-ups, liquidation risk and the tax rules.
+
+If a family member left an exchange account, [how to access a deceased person's Coinbase or other crypto exchange account](/learn/digital-assets/how-to-access-a-deceased-persons-coinbase-or-other-crypto-exchange-account) lists the papers to send and the steps in order.
+
 To hand on Bitcoin without exposing your keys, [what happens if you do not tell anyone about your crypto](/learn/digital-assets/what-happens-if-you-do-not-tell-anyone-about-your-crypto) covers instruction letters and seed phrase storage.
 
 For your writing, reviews and pseudonymous accounts, [what happens to your blog, online reviews and anonymous accounts](/learn/digital-assets/what-happens-to-your-blog-online-reviews-and-anonymous-accounts-when-you-die) explains who owns the copyright and what family can do.

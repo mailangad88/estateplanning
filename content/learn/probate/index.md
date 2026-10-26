@@ -154,6 +154,10 @@ State rules matter a great deal here. If you want to see how probate works where
 
 ## More questions people ask
 
+To keep the bill down, [the cheapest way to settle an estate in Illinois or New Jersey](/learn/probate/cheapest-way-to-settle-an-estate-in-illinois-or-new-jersey) ranks the options from affidavit to full probate.
+
+If a death has already happened, [how to avoid probate after someone has died](/learn/probate/how-to-avoid-probate-after-someone-has-died) shows which assets skip court and which cannot.
+
 To pick the right court, [which county do you file probate in](/learn/probate/which-county-do-you-file-probate-in) covers domicile, nursing home stays and second homes.
 
 If something turns up after the case ends, [can you reopen a closed probate estate](/learn/probate/can-you-reopen-a-closed-probate-estate) explains petitions, small estate shortcuts and late claims.

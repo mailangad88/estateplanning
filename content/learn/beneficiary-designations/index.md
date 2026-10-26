@@ -141,6 +141,8 @@ Two situations cause most beneficiary problems we see: [an ex-spouse who is stil
 
 ## More questions people ask
 
+If a named child dies first, [what happens when a child beneficiary dies leaving grandchildren](/learn/beneficiary-designations/what-happens-if-a-child-beneficiary-dies-before-you-and-leaves-grandchildren) shows the per stirpes wording and a dollar example.
+
 Before naming a trust, [does a trust named as beneficiary need its own tax ID and cost more](/learn/beneficiary-designations/does-a-trust-named-as-beneficiary-need-its-own-tax-id-and-cost-more) covers the EIN, yearly tax work and when the cost is worth it.
 
 If two people die close together, [what happens if the owner and beneficiary die at the same time](/learn/beneficiary-designations/what-happens-if-the-owner-and-beneficiary-die-at-the-same-time) explains survival rules and how to word your forms.

@@ -161,6 +161,10 @@ Healthcare directives handle medical decisions and information. The [durable fin
 
 ## More questions people ask
 
+If a form called a MOLST turns up in your family's paperwork, [what a MOLST form is and how it differs from a POLST](/learn/healthcare-directives/what-is-a-molst-form-and-how-it-differs-from-a-polst) explains the naming and what Illinois and New Jersey use.
+
+When a doctor or religiously affiliated hospital objects to an instruction, [what a conscience clause is and what it lets a provider decline](/learn/healthcare-directives/what-is-a-conscience-clause-and-can-a-doctor-decline-your-living-will) explains the transfer duty and how to check policies in advance.
+
 To plan for the first agent being unavailable, [should I name an alternate healthcare agent](/learn/healthcare-directives/should-i-name-an-alternate-healthcare-agent-and-can-i-remove-one) covers backups, triggers and how to replace an agent.
 
 For women of childbearing age, [does a living will cover pregnancy](/learn/healthcare-directives/does-a-living-will-cover-pregnancy) compares the Illinois and New Jersey rules.

@@ -201,6 +201,20 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+If a spouse has died, [Illinois property tax exemptions after a spouse dies](/learn/illinois/illinois-property-tax-exemptions-after-a-spouse-dies) explains which exemptions renew by themselves and which must be re-filed.
+
+For heirs who receive retirement accounts, [Illinois income tax on an inherited IRA or 401(k)](/learn/illinois/do-you-pay-illinois-income-tax-on-an-inherited-ira-or-401k) explains the state treatment and the federal rules that still apply.
+
+On donation, [organ donation in Illinois](/learn/illinois/organ-donation-in-illinois-the-registry-your-will-and-who-decides) covers the registry, why a will is the wrong place for it, and who decides if you never registered.
+
+If a parent's house sits in a land trust, [what happens to an Illinois land trust when the owner dies](/learn/illinois/illinois-land-trust-when-the-owner-dies) explains who holds the beneficial interest and when probate is needed.
+
+For a gun safe in a dead relative's closet, [guns and FOID cards after a death in Illinois](/learn/illinois/illinois-firearms-and-foid-cards-after-a-death) covers storage, inventory and lawful transfer.
+
+To plan for a psychiatric crisis, the [Illinois Declaration for Mental Health Treatment](/learn/illinois/illinois-declaration-for-mental-health-treatment) explains how it differs from a health care power of attorney.
+
+Farm families can read [Illinois farm estate tax and cash rent leases](/learn/illinois/illinois-farm-estate-tax-and-cash-rent-leases) for how the $4 million threshold hits farmland and what happens to a lease at death.
+
 If the person had an IMRF, TRS, SURS or SERS pension, [Illinois pension survivor benefits](/learn/illinois/illinois-pension-survivor-benefits-imrf-trs-surs-sers) explains who is paid and why the beneficiary form beats the will.
 
 Once letters issue, [opening an estate bank account in Illinois](/learn/illinois/opening-an-estate-bank-account-in-illinois) covers the EIN, what the bank asks for and the money mistakes to avoid.

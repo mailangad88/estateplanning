@@ -143,6 +143,18 @@ If a death has just happened, find the original will, order certified death cert
 
 ## More questions people ask
 
+For donor registration and who decides when you did not register, see [organ donation and anatomical gifts in New Jersey](/learn/new-jersey/organ-donation-and-anatomical-gifts-in-new-jersey).
+
+Families inheriting a farm can read [farmland assessment after a death in New Jersey](/learn/new-jersey/new-jersey-farmland-assessment-after-a-death-and-rollback-taxes) for the August 1 application, rollback taxes and keeping the farm in the family.
+
+If the house holds firearms, [inheriting a gun in New Jersey](/learn/new-jersey/inheriting-a-gun-in-new-jersey-permits-and-estate-rules) explains the heir exemption from permits, the 180-day sale route and what the executor should do meanwhile.
+
+For retirement accounts passing to heirs, [New Jersey income tax on an inherited IRA, 401(k) or pension](/learn/new-jersey/new-jersey-income-tax-on-an-inherited-ira-401k-or-pension) shows how the state taxes each withdrawal and how the federal 10-year rule fits.
+
+When a grandparent or relative is raising a child, [New Jersey kinship legal guardianship](/learn/new-jersey/new-jersey-kinship-legal-guardianship-for-grandparents-and-relatives) explains who qualifies, what the court must find and what the parents keep.
+
+For care outside a nursing home, [does New Jersey Medicaid pay for assisted living and home care](/learn/new-jersey/does-new-jersey-medicaid-pay-for-assisted-living-and-home-care) covers the MLTSS screening, who coordinates services and what to settle before a move.
+
 If no one knows where the will is, [how to find a will after someone dies in New Jersey](/learn/new-jersey/how-to-find-a-will-after-a-death-in-new-jersey) covers the Will Registry, safe deposit boxes and what to do with a copy.
 
 Parents of minors can read [how to name a guardian for your children in New Jersey](/learn/new-jersey/naming-a-guardian-for-your-children-in-new-jersey) for the will clause, the other parent's consent and standby guardians.

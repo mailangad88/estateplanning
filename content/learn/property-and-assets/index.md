@@ -150,6 +150,10 @@ For a larger picture, start with our guide to [estate planning basics](/learn/ba
 
 ## More questions people ask
 
+When the home is titled like a vehicle or sits on a rented lot, [what happens to a mobile or manufactured home when the owner dies](/learn/property-and-assets/what-happens-to-a-mobile-or-manufactured-home-when-the-owner-dies) explains the title, park and loan issues.
+
+For units with dues and a board, [what happens to a condo or co-op apartment when the owner dies](/learn/property-and-assets/what-happens-to-a-condo-or-co-op-when-the-owner-dies) covers assessments, liens and board approval.
+
 Before listing an inherited or widowed home, [capital gains when you sell an inherited house or a house after a spouse dies](/learn/property-and-assets/capital-gains-when-you-sell-an-inherited-house-or-a-house-after-a-spouse-dies) shows the numbers.
 
 Once a deed is in a trust, [selling or refinancing a house in your living trust](/learn/property-and-assets/can-you-sell-or-refinance-a-house-that-is-in-your-living-trust) explains who signs and what moving out changes.
