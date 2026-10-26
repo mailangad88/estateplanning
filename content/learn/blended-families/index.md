@@ -148,7 +148,7 @@ Related life situations have their own pages: [estate planning after divorce](/l
 
 ## More questions people ask
 
-If you are wondering whether a spouse can be left out entirely, [the elective share and disinheriting a spouse](/learn/blended-families/spouse-elective-share-and-disinheriting-a-spouse) explains the minimum rights most states guarantee and how a waiver works.
+If you are wondering whether a spouse can be left out entirely, [the elective share and disinheriting a spouse](/learn/blended-families/spouse-elective-share-and-disinheriting-a-spouse) explains the minimum share most states give a surviving spouse and how a waiver works.
 
 For 401(k)s and IRAs, [retirement accounts in a second marriage](/learn/blended-families/retirement-accounts-in-a-second-marriage) covers spousal consent, splitting the account and the tax traps for children.
 
