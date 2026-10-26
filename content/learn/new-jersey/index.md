@@ -143,6 +143,22 @@ If a death has just happened, find the original will, order certified death cert
 
 ## More questions people ask
 
+If a doctor has mentioned a POLST, [the New Jersey POLST form](/learn/new-jersey/new-jersey-polst-form-who-qualifies-who-signs-and-how-it-works) explains who it fits, who signs it and how it relates to your directive.
+
+To see what a trustee must tell you and what you can ask for, read [New Jersey trustee duties to beneficiaries](/learn/new-jersey/new-jersey-trustee-duties-to-beneficiaries-under-the-uniform-trust-code).
+
+When an executor must choose between beneficiary releases and a judge's approval, [court accounting or informal releases](/learn/new-jersey/new-jersey-court-accounting-or-informal-releases-for-an-estate) compares the two.
+
+If an executor has gone quiet, [what New Jersey heirs can do about a slow or silent executor](/learn/new-jersey/what-new-jersey-heirs-can-do-about-a-slow-or-silent-executor) lays out the steps from a letter to the Probate Part.
+
+If you would rather not accept what you were left, [disclaiming an inheritance in New Jersey](/learn/new-jersey/disclaiming-an-inheritance-in-new-jersey) explains the written form, what bars it and who takes the property instead.
+
+For how an executor handles bills, sworn claims and disputes, see [creditor claims and paying debts of a New Jersey estate](/learn/new-jersey/creditor-claims-and-paying-debts-of-a-new-jersey-estate).
+
+When no will turns up, [administering a New Jersey estate without a will](/learn/new-jersey/administering-a-new-jersey-estate-without-a-will) explains who the Surrogate appoints, how to step aside and the surety bond.
+
+If the person named in the will declines, dies or stalls, [when a named New Jersey executor will not or cannot serve](/learn/new-jersey/when-a-named-new-jersey-executor-will-not-or-cannot-serve) covers backups, substitutes and removal.
+
 To see how joint tenancy, tenancy in common and tenancy by the entirety work at death, read [joint property and tenancy by the entirety in New Jersey](/learn/new-jersey/joint-property-and-tenancy-by-the-entirety-in-new-jersey).
 
 If the person who died worked for the State or a school district, [New Jersey pension survivor benefits](/learn/new-jersey/new-jersey-pension-survivor-benefits-pers-tpaf-pfrs) explains the Division of Pensions and Benefits claim and the beneficiary designation.

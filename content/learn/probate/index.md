@@ -154,6 +154,10 @@ State rules matter a great deal here. If you want to see how probate works where
 
 ## More questions people ask
 
+If you are waiting on your share, [can heirs get money before probate ends](/learn/probate/can-heirs-get-money-before-probate-ends) explains partial distributions and why executors hold back a reserve.
+
+To learn who is allowed to start a case and who the court will appoint, read [who can open a probate case](/learn/probate/who-can-open-a-probate-case).
+
 To see how two states differ in practice, [Illinois and New Jersey probate compared](/learn/probate/illinois-and-new-jersey-probate-compared) lines up the courts, notice rules, small estate shortcuts and death taxes.
 
 When debts exceed assets, [what happens when an estate owes more than it has](/learn/probate/what-happens-when-an-estate-owes-more-than-it-has) explains who gets paid and what the family owes.

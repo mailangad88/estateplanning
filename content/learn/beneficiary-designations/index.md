@@ -141,6 +141,12 @@ Two situations cause most beneficiary problems we see: [an ex-spouse who is stil
 
 ## More questions people ask
 
+For a schedule, a trigger list and a simple record system, see [how often to review your beneficiary designations](/learn/beneficiary-designations/how-often-to-review-beneficiary-designations).
+
+When the beneficiary is a trust, a charity or someone abroad, [how to word the form](/learn/beneficiary-designations/beneficiary-form-wording-for-trusts-charities-and-overseas-beneficiaries) shows the exact naming that institutions accept.
+
+If you want retirement money to go to your children or grandchildren, [leaving an IRA or 401(k) to children or grandchildren](/learn/beneficiary-designations/leaving-an-ira-or-401k-to-children-or-grandchildren) covers spouse consent, Roth taxes and rollover limits.
+
 When a family disputes a form, [whether a beneficiary designation can be challenged](/learn/beneficiary-designations/when-a-beneficiary-designation-can-be-challenged) covers undue influence, capacity, the slayer rule and clerical errors.
 
 Before adding a child to an account, [joint ownership versus a beneficiary designation](/learn/beneficiary-designations/joint-ownership-vs-beneficiary-designation) compares control, creditors and fairness.

@@ -201,6 +201,14 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+Once the notice to creditors goes out, [how creditor claims work in an Illinois estate](/learn/illinois/how-creditor-claims-work-in-an-illinois-estate) follows a claim from filing to allowance, dispute or bar date.
+
+For the last step, [closing an Illinois probate estate](/learn/illinois/closing-an-illinois-probate-estate-final-account-and-discharge) explains the closing report, receipts from heirs and the discharge order.
+
+To qualify for nursing home Medicaid, [the Illinois eligibility and planning rules](/learn/illinois/illinois-medicaid-nursing-home-eligibility-and-planning) cover the look-back, allowed transfers and the application.
+
+When there is no executor, [letters of administration and the surety bond in Illinois](/learn/illinois/illinois-letters-of-administration-and-the-surety-bond) explains who may serve and how the bond works.
+
 To change an existing will, [changing or revoking a will in Illinois](/learn/illinois/changing-or-revoking-a-will-in-illinois) explains the four statutory ways to revoke, what divorce does, and when a codicil is enough.
 
 If a child is born after you sign, or a beneficiary dies first, [children born after an Illinois will and lapsed gifts](/learn/illinois/children-born-after-an-illinois-will-and-lapsed-gifts) covers sections 4-10 and 4-11.

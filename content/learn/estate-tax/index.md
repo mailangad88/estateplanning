@@ -138,6 +138,12 @@ For a view of the whole picture, our [basics guide](/learn/basics) and the [prob
 
 ## More questions people ask
 
+The rule that keeps spouses from paying tax at the first death is covered in [the marital deduction explained](/learn/estate-tax/marital-deduction-explained).
+
+On whether entity gifts at a discount still hold up, see [valuation discounts and family limited partnerships](/learn/estate-tax/valuation-discounts-and-family-limited-partnerships).
+
+If most of your wealth is in an IRA or 401(k), [estate tax planning with mostly retirement accounts](/learn/estate-tax/estate-tax-planning-when-your-estate-is-mostly-retirement-accounts) explains the double tax and how to reduce it.
+
 When an estate is mostly a farm or family company, [estate tax elections for alternate valuation, 6166 deferral and farm valuation](/learn/estate-tax/estate-tax-elections-alternate-valuation-deferral-and-farm-valuation) explains how an executor can lower the value or spread out the payments.
 
 If you have given more than the annual exclusion, [Form 709, gift splitting and net gifts](/learn/estate-tax/form-709-gift-tax-return-gift-splitting-and-net-gifts) explains who files the return and why it rarely means paying tax.
