@@ -69,7 +69,7 @@ Lorraine, 66, inherits her husband's IRA. She has her own pension and does not n
 
 ## What about the 10-year rule for children?
 
-Children and most other non-spouse heirs cannot roll the account into their own IRA. They open an inherited IRA and generally must empty it within 10 years under the SECURE Act. A minor child of the owner, a disabled or chronically ill person, and someone not more than 10 years younger than the owner are exceptions, which we explain in [retirement account beneficiaries](/learn/beneficiary-designations/retirement-account-beneficiaries).
+Children and most other non-spouse heirs cannot roll the account into their own IRA. They open an inherited IRA and generally must empty it within 10 years under the SECURE Act. A minor child of the owner, a disabled or chronically ill person, and someone not more than 10 years younger than the owner are exceptions, which we explain in [retirement account beneficiaries](/learn/beneficiary-designations/retirement-account-beneficiaries). The paperwork to start either option is covered in [how to claim an account as a beneficiary](/learn/beneficiary-designations/how-to-claim-an-account-as-a-beneficiary).
 
 For an employer plan, a non-spouse beneficiary can usually move the balance by direct trustee-to-trustee transfer into an inherited IRA. Taking a check payable to yourself generally cuts off that option and creates taxable income. Always ask for a direct transfer.
 

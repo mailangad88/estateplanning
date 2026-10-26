@@ -182,8 +182,6 @@ Curious what happens when a plan is missing or out of date? Our guide to [what h
 
 If you want to sign remotely, [signing estate planning documents electronically or with a remote notary](/learn/basics/sign-estate-planning-documents-electronically) explains which documents allow it.
 
-On a tight budget, [free and low-cost estate planning help](/learn/basics/free-and-low-cost-estate-planning-help) lists legal aid, senior, veteran and employer programs.
-
 If you are helping a parent, [whether you can make an estate plan for someone else](/learn/basics/can-you-make-an-estate-plan-for-someone-else) covers limits, attending the meeting and undue influence.
 
 To list what you own, [how to inventory your assets and value your estate](/learn/basics/how-to-inventory-your-assets-and-value-your-estate) walks through it step by step.
