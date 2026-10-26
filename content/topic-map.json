@@ -135,6 +135,22 @@
         [
           "unfunded-trust",
           "What happens if you never funded your living trust?"
+        ],
+        [
+          "stepparent-dies-without-a-will",
+          "What happens to stepchildren if a stepparent dies without a will?"
+        ],
+        [
+          "unmarried-partner-dies-without-a-will",
+          "What happens to my partner if we are not married and I die without a will?"
+        ],
+        [
+          "minor-inherits-without-a-trust",
+          "What happens if a minor inherits money with no trust?"
+        ],
+        [
+          "disabled-heir-inherits-directly",
+          "What happens if a person on SSI or Medicaid inherits money directly?"
         ]
       ]
     },
@@ -182,6 +198,26 @@
         [
           "disinheriting-or-unequal-shares",
           "How to disinherit someone or leave unequal shares without starting a fight"
+        ],
+        [
+          "self-proving-affidavit-explained",
+          "Self-proving affidavit: what it says, who signs it and what happens without one"
+        ],
+        [
+          "joint-will-vs-mutual-will",
+          "Joint will vs. mutual will: differences, risks and what couples should use instead"
+        ],
+        [
+          "no-contest-clause-in-a-will",
+          "No-contest clauses: do they stop a will challenge, and should you use one?"
+        ],
+        [
+          "changing-a-will-and-codicils",
+          "Changing a will: codicils, new wills and revocation"
+        ],
+        [
+          "lost-original-will",
+          "Lost original will: what to do if you can't find it"
         ]
       ]
     },
@@ -288,6 +324,30 @@
         [
           "can-an-executor-take-money-from-the-estate",
           "Can an executor take money out of the estate?"
+        ],
+        [
+          "is-probate-always-required",
+          "Is probate always required? When you can skip it, even with a will"
+        ],
+        [
+          "is-probate-public",
+          "Is probate public record? What strangers can see and how to keep it private"
+        ],
+        [
+          "what-happens-if-there-is-no-executor",
+          "What happens if there is no executor, or the named executor refuses?"
+        ],
+        [
+          "can-heirs-sell-the-house-during-probate",
+          "Can heirs sell the house during probate? Who has authority and when"
+        ],
+        [
+          "what-happens-to-a-deceased-persons-bank-account",
+          "What happens to a deceased person's bank account, and can you close it without probate?"
+        ],
+        [
+          "what-happens-if-you-ignore-probate",
+          "What happens if you ignore probate? Deadlines, frozen assets and liability"
         ]
       ]
     },
@@ -339,6 +399,26 @@
         [
           "when-a-trustee-does-nothing",
           "What beneficiaries can do when a trustee does nothing"
+        ],
+        [
+          "what-to-do-when-a-trustee-dies",
+          "What are the first steps after the death of a trustee?"
+        ],
+        [
+          "how-long-does-a-trustee-have-to-distribute-assets",
+          "How long does a trustee have to distribute assets?"
+        ],
+        [
+          "do-you-need-an-attorney-to-settle-a-trust",
+          "Do you need an attorney to settle a trust?"
+        ],
+        [
+          "is-trust-administration-public",
+          "Is trust administration public?"
+        ],
+        [
+          "trust-ein-and-65-day-election",
+          "How do I get a trust EIN, and what is the 65-day election?"
         ]
       ]
     },
@@ -409,6 +489,26 @@
         [
           "does-a-living-will-need-a-notary",
           "Does a living will need to be notarized or witnessed?"
+        ],
+        [
+          "advance-directive-vs-living-will-vs-healthcare-proxy",
+          "Advance directive vs. living will vs. healthcare proxy: what each one does"
+        ],
+        [
+          "who-should-be-your-healthcare-agent",
+          "Who should be your healthcare agent? How to choose and what to ask them"
+        ],
+        [
+          "advance-directive-forms-five-wishes-or-a-lawyer",
+          "Advance directive forms: free state forms, Five Wishes or an attorney?"
+        ],
+        [
+          "how-to-document-your-end-of-life-wishes",
+          "How to document your end-of-life wishes, including organ donation"
+        ],
+        [
+          "who-can-overrule-your-healthcare-directive",
+          "Who can overrule your healthcare proxy or living will? When hospitals and families can say no"
         ]
       ]
     },
@@ -436,6 +536,26 @@
         [
           "temporary-and-standby-guardians",
           "Temporary and standby guardians: covering the gap in an emergency"
+        ],
+        [
+          "does-a-guardian-named-in-a-will-hold-up-in-court",
+          "Does a guardian named in a will hold up in court? When judges follow it and when they don't"
+        ],
+        [
+          "can-grandparents-be-named-guardian",
+          "Can grandparents be named guardian? What to weigh before you ask them"
+        ],
+        [
+          "how-to-make-guardianship-legal",
+          "How to make guardianship legal: the will route and the court petition route"
+        ],
+        [
+          "can-a-guardian-be-removed-or-refuse-to-serve",
+          "Can a guardian be removed, or refuse the job? What the court does next"
+        ],
+        [
+          "letter-of-intent-for-your-childrens-guardian",
+          "Letter of intent for your children's guardian: what to write and what to include"
         ]
       ]
     },
@@ -514,6 +634,26 @@
         [
           "family-home-in-second-marriage",
           "Who gets the house? Planning for the family home in a second marriage"
+        ],
+        [
+          "spouse-elective-share-and-disinheriting-a-spouse",
+          "Can you disinherit a spouse? The elective share and what it protects"
+        ],
+        [
+          "retirement-accounts-in-a-second-marriage",
+          "Retirement accounts in a second marriage: who should be the beneficiary?"
+        ],
+        [
+          "life-insurance-in-a-blended-family",
+          "Life insurance in a blended family: using a policy to be fair to everyone"
+        ],
+        [
+          "joint-vs-separate-trusts-for-remarriage",
+          "Joint vs. separate trusts for a second marriage: which fits your family"
+        ],
+        [
+          "life-estate-for-a-surviving-spouse",
+          "Life estate for a surviving spouse: how it works and where it goes wrong"
         ]
       ]
     },
@@ -619,6 +759,26 @@
         [
           "business-owner-incapacity-planning",
           "Incapacity planning for business owners: keeping the doors open"
+        ],
+        [
+          "what-happens-to-a-sole-proprietorship-at-death",
+          "What happens to a sole proprietorship when the owner dies?"
+        ],
+        [
+          "can-i-put-my-business-in-a-living-trust",
+          "Can I put my business in a living trust? LLCs, S corporations and sole proprietorships"
+        ],
+        [
+          "key-person-insurance",
+          "Key person insurance: what it is, who needs it and how it works"
+        ],
+        [
+          "how-a-business-is-valued-for-estate-tax",
+          "How is a business valued for estate tax? Methods, discounts and appraisals"
+        ],
+        [
+          "gifting-business-interests-to-children",
+          "Gifting business interests to your children: tax rules, discounts and family partnerships"
         ]
       ]
     },
@@ -689,6 +849,26 @@
         [
           "long-term-care-insurance",
           "Long-term care insurance and your estate plan"
+        ],
+        [
+          "medicaid-estate-recovery",
+          "Medicaid estate recovery: what the state can claim after death"
+        ],
+        [
+          "medicaid-for-married-couples",
+          "How Medicaid works for a married couple: protecting the spouse at home"
+        ],
+        [
+          "medicaid-compliant-annuity",
+          "Medicaid-compliant annuity: how it works and when it makes sense"
+        ],
+        [
+          "medicaid-asset-protection-trust",
+          "Medicaid asset protection trust: is an irrevocable trust safe from Medicaid?"
+        ],
+        [
+          "income-cap-trust-miller-trust",
+          "Income cap trust (Miller trust): what it is and who needs one"
         ]
       ]
     },
@@ -716,6 +896,26 @@
         [
           "digital-legacy-contacts",
           "How to set up a digital legacy contact with Apple, Google, Facebook and others"
+        ],
+        [
+          "rufadaa-explained",
+          "What is RUFADAA? The digital assets law that decides who can open an account"
+        ],
+        [
+          "what-is-a-digital-executor",
+          "What is a digital executor, and do you need one?"
+        ],
+        [
+          "can-an-executor-access-email",
+          "Can an executor access a deceased person's email? What the law allows"
+        ],
+        [
+          "online-accounts-after-death-checklist",
+          "What happens to digital assets when you die? An online accounts checklist"
+        ],
+        [
+          "crypto-in-a-will-or-a-trust",
+          "Crypto in a will or a trust: which works better for digital assets?"
         ]
       ]
     },

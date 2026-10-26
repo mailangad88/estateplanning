@@ -152,6 +152,20 @@ If you are dealing with a death now, start with [what probate is](/learn/probate
 
 State rules matter a great deal here. If you want to see how probate works where you live, browse our state guides, for example [Texas](/estate-planning/texas), [California](/estate-planning/california), [Florida](/estate-planning/florida) and [New York](/estate-planning/new-york).
 
+## More questions people ask
+
+Having a will does not decide whether a family goes to court, so [is probate always required](/learn/probate/is-probate-always-required) explains how asset titles decide it.
+
+To see what a stranger can read in an estate file and how to limit it, read [is probate public record](/learn/probate/is-probate-public).
+
+If the executor dies, declines or was never named, [what happens if there is no executor](/learn/probate/what-happens-if-there-is-no-executor) explains who the court appoints.
+
+For who may sign the deed and what a title company will ask for, see [can heirs sell the house during probate](/learn/probate/can-heirs-sell-the-house-during-probate).
+
+[What happens to a deceased person's bank account](/learn/probate/what-happens-to-a-deceased-persons-bank-account) covers freezes, affidavits, joint and POD accounts and finding unclaimed money.
+
+If a family has let probate sit, [what happens if you ignore probate](/learn/probate/what-happens-if-you-ignore-probate) lists the costs and how to catch up.
+
 ## How we can help
 
 Probate is manageable once you know which rules apply to you. If you are an executor or heir, an estate planning attorney can explain your state's process and help you avoid mistakes. If you want to keep your own family out of court, try our [plan finder](/plan-finder) to see which documents fit your situation, or book a consultation to talk through your options at your own pace.

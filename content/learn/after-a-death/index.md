@@ -176,6 +176,18 @@ Disagreements are common, and they are usually about communication, timing or se
 
 Call one if the person owned real estate, a business or substantial accounts, if there is no will, if family members disagree, or if you are unsure what you are signing. Many first meetings are a single conversation that tells you whether probate is needed and what to do this month. If the estate is small and simple, you may need very little help, but a quick check can still save you from a mistake that is expensive to undo.
 
+## More questions people ask
+
+If the trustee who died made the trust, or was a successor partway through the job, [the first steps after the death of a trustee](/learn/after-a-death/what-to-do-when-a-trustee-dies) explain who takes over and what to protect.
+
+For what sets the pace of payouts and when delay becomes a problem, see [how long a trustee has to distribute assets](/learn/after-a-death/how-long-does-a-trustee-have-to-distribute-assets).
+
+A trustee deciding whether to hire help can read [do you need an attorney to settle a trust](/learn/after-a-death/do-you-need-an-attorney-to-settle-a-trust).
+
+To see what stays private and what becomes a public record, read [is trust administration public](/learn/after-a-death/is-trust-administration-public).
+
+For the tax ID a trust needs after a death and a timing election that can lower its income tax, see [how to get a trust EIN and the 65-day election](/learn/after-a-death/trust-ein-and-65-day-election).
+
 ## How we can help
 
 Families often tell us the hardest part was not knowing what they did not know. Our attorneys can explain what your state requires, who has authority, what can wait and which steps to take in what order. Start with the [plan finder](/plan-finder) to see where you are, or book a consultation whenever you feel ready. If you are also thinking about your own plan, we are glad to help with that too, when the time is right.

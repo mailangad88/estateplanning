@@ -160,6 +160,18 @@ Many families provide care themselves, and the time and money involved are real.
 
 Other pillars worth reading alongside this one: [power of attorney](/learn/power-of-attorney), [advance healthcare directives](/learn/healthcare-directives), [trusts](/learn/trusts) and [special needs planning](/learn/special-needs).
 
+## More questions people ask
+
+If you are wondering what the state can claim after a parent dies, [Medicaid estate recovery](/learn/elder-care/medicaid-estate-recovery) explains who is protected, what assets are reached and how a family can respond to a claim.
+
+When one spouse needs care and the other stays home, [how Medicaid works for a married couple](/learn/elder-care/medicaid-for-married-couples) explains the protected savings, income allowance and home.
+
+Couples with savings above the protected amount can read about the [Medicaid-compliant annuity](/learn/elder-care/medicaid-compliant-annuity), the rules it must meet and its risks.
+
+To see how an irrevocable trust can keep a home out of the Medicaid count, and where it fails, read about the [Medicaid asset protection trust](/learn/elder-care/medicaid-asset-protection-trust).
+
+If income above your state's cap is blocking Medicaid, the [income cap trust (Miller trust)](/learn/elder-care/income-cap-trust-miller-trust) explains how the monthly routine works.
+
 ## How we can help
 
 Long-term care planning depends on your state, your family and your timeline. Our attorneys can explain the rules that apply to you, help prepare the documents and walk through options with you or an aging parent. Use the [plan finder](/plan-finder) to see where to start, or book a consultation.

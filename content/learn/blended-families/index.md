@@ -146,6 +146,18 @@ Start with an honest list of who you want to provide for and in what order. Then
 
 Related life situations have their own pages: [estate planning after divorce](/learn/life-stages/estate-planning-after-divorce), [estate planning for unmarried couples](/learn/life-stages/estate-planning-for-unmarried-couples), and [estate planning after a spouse dies](/learn/life-stages/estate-planning-after-spouse-dies). If you are planning with a partner you have not married, the rules differ significantly, because unmarried partners have no automatic inheritance rights at all.
 
+## More questions people ask
+
+If you are wondering whether a spouse can be left out entirely, [the elective share and disinheriting a spouse](/learn/blended-families/spouse-elective-share-and-disinheriting-a-spouse) explains the minimum rights most states guarantee and how a waiver works.
+
+For 401(k)s and IRAs, [retirement accounts in a second marriage](/learn/blended-families/retirement-accounts-in-a-second-marriage) covers spousal consent, splitting the account and the tax traps for children.
+
+To give children cash while a spouse keeps the house, see [life insurance in a blended family](/learn/blended-families/life-insurance-in-a-blended-family).
+
+Couples deciding between one trust or two can compare them in [joint vs. separate trusts for a second marriage](/learn/blended-families/joint-vs-separate-trusts-for-remarriage).
+
+If you want your spouse to live in the home for life and your children to inherit it, [a life estate for a surviving spouse](/learn/blended-families/life-estate-for-a-surviving-spouse) shows how it works and where it fails.
+
 ## How we can help
 
 Every blended family has its own mix of relationships and assets, and the best plan comes from understanding those first. Our attorneys can review what you have, explain what your state's rules would do by default, and prepare documents that provide for your spouse and your children. Begin with the [plan finder](/plan-finder) or book a consultation to talk through your situation.

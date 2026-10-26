@@ -136,6 +136,16 @@ You do not need to fix everything at once. For most families, this order covers 
 
 Our [plan readiness assessment](/tools/plan-readiness-assessment) shows which of these you already have. The [plan finder](/plan-finder) asks a few questions about your family and suggests where to start. The [estate planning basics](/learn/basics) section explains each document in plain language.
 
+## More questions people ask
+
+If a stepparent dies without a will, [what happens to stepchildren](/learn/what-if/stepparent-dies-without-a-will) explains who inherits and what stepchildren can still receive.
+
+For couples who never married, [what happens to an unmarried partner without a will](/learn/what-if/unmarried-partner-dies-without-a-will) covers the home, accounts and what to sign.
+
+When a child is named to inherit, [what happens if a minor inherits with no trust](/learn/what-if/minor-inherits-without-a-trust) shows the court process and the age the child gets the money.
+
+For an heir who receives benefits, [what happens if a person on SSI or Medicaid inherits directly](/learn/what-if/disabled-heir-inherits-directly) explains the asset limit and the trusts that protect coverage.
+
 ## How we can help
 
 Our attorneys see these scenarios every week, usually after they have already happened. We would much rather help you before. A first conversation will tell you which gaps matter for your family and which ones can wait. Start with the [plan finder](/plan-finder) and we will be in touch.
