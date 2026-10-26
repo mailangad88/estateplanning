@@ -136,6 +136,18 @@ Yes, often. The exclusion has changed in 2001, 2010, 2013, 2018, and 2025. The 2
 
 For a view of the whole picture, our [basics guide](/learn/basics) and the [probate guide](/learn/probate) show how the rest of the plan fits together.
 
+## More questions people ask
+
+Large estates with fast-growing assets sometimes use a [grantor retained annuity trust](/learn/estate-tax/grantor-retained-annuity-trust) to pass growth to children with little or no gift tax.
+
+The executor's paperwork, including the nine-month deadline and when to file for portability only, is covered in [Form 706, the estate tax return](/learn/estate-tax/form-706-estate-tax-return).
+
+For a plain tour of deductions, gifts and trusts that lower the bill, and the myths about living trusts, read [how to reduce estate taxes legally](/learn/estate-tax/how-to-reduce-estate-taxes).
+
+Couples choosing between a trust and an election can compare them in [bypass trust vs portability](/learn/estate-tax/bypass-trust-vs-portability).
+
+If you are unsure who actually writes the check, [estate tax vs inheritance tax](/learn/estate-tax/estate-tax-vs-inheritance-tax) explains the difference.
+
 ## How we can help
 
 Most families do not owe estate tax, but many still benefit from knowing for certain. Our attorneys can explain which taxes could apply to you, check your state's rules, and help you decide whether any planning is worth the cost. Use the [plan finder](/plan-finder) to get started or book a consultation.

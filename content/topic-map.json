@@ -151,6 +151,26 @@
         [
           "disabled-heir-inherits-directly",
           "What happens if a person on SSI or Medicaid inherits money directly?"
+        ],
+        [
+          "siblings-inherit-house-and-disagree",
+          "What happens if siblings inherit a house and cannot agree?"
+        ],
+        [
+          "adult-child-medical-emergency-no-hipaa",
+          "What happens if my 18-year-old has a medical emergency and I have no HIPAA release?"
+        ],
+        [
+          "both-parents-die-without-a-will",
+          "What happens if both parents die without a will?"
+        ],
+        [
+          "nobody-knows-my-end-of-life-wishes",
+          "What happens if no one knows my end-of-life wishes?"
+        ],
+        [
+          "house-stuck-in-probate",
+          "What happens if the house is stuck in probate?"
         ]
       ]
     },
@@ -269,6 +289,26 @@
         [
           "transfer-house-to-living-trust",
           "How to transfer your house into a living trust, step by step"
+        ],
+        [
+          "what-is-the-downside-of-a-living-trust",
+          "What is the downside of a living trust? Six real drawbacks and how to handle them"
+        ],
+        [
+          "can-a-living-trust-be-contested",
+          "Can a living trust be contested? Grounds, deadlines and how to make one hold up"
+        ],
+        [
+          "does-a-living-trust-protect-assets-from-creditors",
+          "Does a living trust protect assets from creditors? What it does and does not shield"
+        ],
+        [
+          "can-i-be-my-own-trustee",
+          "Can I be my own trustee? When it works and when you need someone else"
+        ],
+        [
+          "what-happens-to-a-living-trust-when-you-die",
+          "What happens to a living trust when you die? A timeline for your family"
         ]
       ]
     },
@@ -454,6 +494,26 @@
         [
           "parent-with-dementia-no-power-of-attorney",
           "My parent has dementia and no power of attorney: what now?"
+        ],
+        [
+          "power-of-attorney-abuse",
+          "Power of attorney abuse: warning signs, what an agent may not do, and where to report it"
+        ],
+        [
+          "power-of-attorney-and-real-estate",
+          "Power of attorney and real estate: can an agent sell, buy or deed your house?"
+        ],
+        [
+          "what-a-power-of-attorney-cannot-do",
+          "What a power of attorney cannot do (including changing your will)"
+        ],
+        [
+          "does-a-power-of-attorney-need-to-be-notarized",
+          "Does a power of attorney need to be notarized or witnessed?"
+        ],
+        [
+          "how-much-does-a-power-of-attorney-cost",
+          "How much does a power of attorney cost? Lawyer, online form and DIY compared"
         ]
       ]
     },
@@ -509,6 +569,22 @@
         [
           "who-can-overrule-your-healthcare-directive",
           "Who can overrule your healthcare proxy or living will? When hospitals and families can say no"
+        ],
+        [
+          "what-happens-without-an-advance-directive",
+          "What happens if you have no advance directive? Who decides when you cannot"
+        ],
+        [
+          "when-does-a-healthcare-directive-take-effect",
+          "When does a healthcare directive take effect? Signing, incapacity and who decides"
+        ],
+        [
+          "how-to-change-or-revoke-an-advance-directive",
+          "Can I change or revoke my advance directive? How to update it the right way"
+        ],
+        [
+          "do-advance-directives-work-in-other-states",
+          "Do advance directives work across states? Travel, moving and second homes"
         ]
       ]
     },
@@ -732,6 +808,26 @@
         [
           "gifting-strategies",
           "Gifting strategies: the annual exclusion, 529 plans and paying bills directly"
+        ],
+        [
+          "grantor-retained-annuity-trust",
+          "Grantor retained annuity trust (GRAT): how it works and who it suits"
+        ],
+        [
+          "form-706-estate-tax-return",
+          "Form 706 estate tax return: who files, what it asks for, and the deadline"
+        ],
+        [
+          "how-to-reduce-estate-taxes",
+          "How to reduce estate taxes legally: what works, what does not, and for whom"
+        ],
+        [
+          "bypass-trust-vs-portability",
+          "Bypass trust vs portability: which fits a married couple?"
+        ],
+        [
+          "estate-tax-vs-inheritance-tax",
+          "Estate tax vs inheritance tax: who pays, who owes, and where"
         ]
       ]
     },
@@ -806,6 +902,26 @@
         [
           "guardianship-alternatives-for-adult-children",
           "Turning 18 with a disability: guardianship and its alternatives"
+        ],
+        [
+          "pooled-special-needs-trusts",
+          "Pooled special needs trusts: how (d)(4)(C) trusts work, and when they beat a (d)(4)(A) trust"
+        ],
+        [
+          "special-needs-trust-ssi-and-medicaid-rules",
+          "How a special needs trust affects SSI and Medicaid: what counts as income and what does not"
+        ],
+        [
+          "special-needs-trust-payback-provision",
+          "Special needs trust payback provision: what happens to the trust when the beneficiary dies"
+        ],
+        [
+          "leaving-an-inheritance-to-a-disabled-child-or-sibling",
+          "Leaving an inheritance to a disabled child or sibling without losing their benefits"
+        ],
+        [
+          "how-to-set-up-a-special-needs-trust",
+          "How to set up a special needs trust for an adult child, and whether you need a lawyer"
         ]
       ]
     },

@@ -161,6 +161,14 @@ Healthcare directives handle medical decisions and information. The [durable fin
 
 ## More questions people ask
 
+If you have signed nothing, [what happens without an advance directive](/learn/healthcare-directives/what-happens-without-an-advance-directive) explains who your state lets decide and where that goes wrong.
+
+To see when your documents start to apply and who certifies incapacity, read [when a healthcare directive takes effect](/learn/healthcare-directives/when-does-a-healthcare-directive-take-effect).
+
+When your wishes or your agent change, [how to change or revoke an advance directive](/learn/healthcare-directives/how-to-change-or-revoke-an-advance-directive) shows how to replace the old version safely.
+
+If you travel, move or keep two homes, [do advance directives work across states](/learn/healthcare-directives/do-advance-directives-work-in-other-states) explains what to re-sign and what to carry.
+
 If the terms are tangled, [advance directive vs. living will vs. healthcare proxy](/learn/healthcare-directives/advance-directive-vs-living-will-vs-healthcare-proxy) shows what each document does and which you need.
 
 Choosing the person who will speak for you is covered in [who should be your healthcare agent](/learn/healthcare-directives/who-should-be-your-healthcare-agent), including backups and what to tell them.
