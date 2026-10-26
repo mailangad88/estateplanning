@@ -148,6 +148,12 @@ No plan makes every account recoverable. Some companies will refuse, some servic
 
 ## More questions people ask
 
+If you hold crypto on a device or own NFTs, [hardware wallets and NFTs after death](/learn/digital-assets/hardware-wallets-and-nfts-after-death) explains what heirs need to get in and what to leave behind.
+
+To reach a loved one's locked phone or cloud photos, [photos, cloud storage and iPhones after death](/learn/digital-assets/photos-and-iphones-after-death) covers the routes that work and what to do first.
+
+If you own a website or domain, [domain names and websites after death](/learn/digital-assets/domain-names-and-websites-after-death) explains renewals, transfers and keeping the address alive.
+
 The state law that decides whether an executor, agent or trustee can open your accounts is covered in [what RUFADAA is](/learn/digital-assets/rufadaa-explained).
 
 To choose someone to handle your online accounts and files, read [what a digital executor is](/learn/digital-assets/what-is-a-digital-executor).

@@ -178,6 +178,20 @@ Call one if the person owned real estate, a business or substantial accounts, if
 
 ## More questions people ask
 
+If the titles on the court forms are confusing, [executor vs administrator vs personal representative](/learn/after-a-death/executor-vs-administrator-vs-personal-representative) explains which applies and what changes.
+
+To see which trustee mistakes can cost real money, read [whether a trustee can be personally liable](/learn/after-a-death/can-a-trustee-be-personally-liable).
+
+For what changes the moment a revocable trust locks and which beneficiaries must get notice, see [when a living trust becomes irrevocable](/learn/after-a-death/when-a-living-trust-becomes-irrevocable).
+
+A trustee handling the family home can follow [how to sell a house held in a trust after the owner dies](/learn/after-a-death/selling-a-house-held-in-a-trust-after-death).
+
+When a trustee will not step aside, [how to remove a trustee](/learn/after-a-death/how-to-remove-a-trustee) covers the grounds and the court process.
+
+To learn whether a will exists and how to get a copy, see [am I entitled to see the will](/learn/after-a-death/can-i-see-the-will-after-someone-dies).
+
+If you live in the house of someone who died, [can I stay in the house after a parent or spouse dies](/learn/after-a-death/can-i-stay-in-the-house-after-a-parent-or-spouse-dies) explains who can ask you to leave.
+
 If the trustee who died made the trust, or was a successor partway through the job, [the first steps after the death of a trustee](/learn/after-a-death/what-to-do-when-a-trustee-dies) explain who takes over and what to protect.
 
 For what sets the pace of payouts and when delay becomes a problem, see [how long a trustee has to distribute assets](/learn/after-a-death/how-long-does-a-trustee-have-to-distribute-assets).

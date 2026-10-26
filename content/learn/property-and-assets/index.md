@@ -148,6 +148,18 @@ Real estate and special assets need a hands-on administrator, and the person nam
 
 For a larger picture, start with our guide to [estate planning basics](/learn/basics) and the list of [core estate planning documents](/learn/basics/estate-planning-documents-checklist). If you are combining families, our [blended families guide](/learn/blended-families) explains how the house can be shared between a spouse and children, and [who gets the house in a second marriage](/learn/blended-families/family-home-in-second-marriage) covers it in depth.
 
+## More questions people ask
+
+For who gets Mom's ring and the piano, [leaving jewelry, heirlooms and sentimental items](/learn/property-and-assets/leaving-jewelry-heirlooms-and-sentimental-items) explains specific gifts, separate memorandums and fair ways to divide belongings.
+
+When a vehicle is titled in one name, [transferring a car, boat, motorcycle or RV after death](/learn/property-and-assets/transfer-a-car-boat-or-rv-after-death) shows which papers and procedures apply.
+
+If you plan to rent an inherited house, [deductions, depreciation and 1031 exchanges on inherited rental property](/learn/property-and-assets/inherited-rental-property-taxes) explains how the tax treatment works.
+
+If a house sits empty after a death, [insurance, repairs and squatters in a vacant inherited house](/learn/property-and-assets/vacant-inherited-house-insurance-repairs-squatters) covers the first weeks and who pays.
+
+To take a name off a title, [removing a name from a deed](/learn/property-and-assets/remove-a-name-from-a-deed) covers living owners, deceased owners and ex-spouses, plus the mortgage catch.
+
 ## How we can help
 
 Property is where good intentions and legal reality most often part ways. Our attorneys can review your deeds and accounts, explain how your state treats each asset, and set up a plan that puts the right things in the right hands. Start with the [plan finder](/plan-finder) or book a consultation.

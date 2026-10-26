@@ -154,6 +154,16 @@ State rules matter a great deal here. If you want to see how probate works where
 
 ## More questions people ask
 
+If you are choosing between a deed and a trust for your home, [is a TOD deed better than a trust](/learn/probate/is-a-tod-deed-better-than-a-trust) shows where the deed works and where it fails.
+
+To learn how an enhanced life estate keeps you in control while skipping probate, read [lady bird deed explained](/learn/probate/lady-bird-deed-explained).
+
+To match your house to a deed, trust or joint title based on your family and state, see [how to avoid probate on your house](/learn/probate/avoid-probate-on-your-house).
+
+The court paper that gives an executor power to act is covered in [letters testamentary and letters of administration](/learn/probate/letters-testamentary-and-letters-of-administration).
+
+Executors who must list assets and report to the court should read [probate inventory and estate accounting](/learn/probate/probate-inventory-and-estate-accounting).
+
 Having a will does not decide whether a family goes to court, so [is probate always required](/learn/probate/is-probate-always-required) explains how asset titles decide it.
 
 To see what a stranger can read in an estate file and how to limit it, read [is probate public record](/learn/probate/is-probate-public).

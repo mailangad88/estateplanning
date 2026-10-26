@@ -139,6 +139,18 @@ A gap or conflict between them is where families get hurt. A thorough review lin
 
 Two situations cause most beneficiary problems we see: [an ex-spouse who is still named](/learn/what-if/ex-spouse-still-beneficiary) and [an account with no beneficiary at all](/learn/what-if/no-beneficiary-named). Both are covered in our guide to [what happens when planning waits](/learn/what-if).
 
+## More questions people ask
+
+If you want one child to receive more than another, [how to set unequal shares on beneficiary forms](/learn/beneficiary-designations/leaving-unequal-shares-with-beneficiary-forms) shows how the percentages work and why naming one child to share with the others goes wrong.
+
+When someone else manages your money, [whether an agent or guardian can change a beneficiary](/learn/beneficiary-designations/can-a-power-of-attorney-or-guardian-change-a-beneficiary) explains the limits and how late changes get challenged.
+
+For worries about debts, lawsuits and divorce, [whether creditors can reach what a beneficiary inherits](/learn/beneficiary-designations/can-creditors-take-what-a-beneficiary-inherits) separates the deceased's debts from the heir's own.
+
+A widow or widower choosing what to do with an IRA can compare [spousal rollover vs. inherited IRA](/learn/beneficiary-designations/spousal-rollover-vs-inherited-ira), including the age 59 and a half penalty and Roth rules.
+
+If you think you may be named on an account, [how to find out and claim the money as a beneficiary](/learn/beneficiary-designations/how-to-claim-an-account-as-a-beneficiary) lists where to search and what paperwork companies ask for.
+
 ## How we can help
 
 Beneficiary forms are easy to ignore until the moment they matter. Our attorneys can review your accounts, policies, and documents together, point out the mismatches, and help you decide whether a trust should be named. Use our [plan finder](/plan-finder) to see where to begin, or book a consultation when you are ready.

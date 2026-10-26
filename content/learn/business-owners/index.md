@@ -164,6 +164,10 @@ Related pillars worth reading alongside this one: [trusts](/learn/trusts), [powe
 
 ## More questions people ask
 
+If you are weighing a sale to your employees, [ESOP basics for business owners](/learn/business-owners/esop-basics-for-business-owners) explains how it works, the tax rules and where it fits in your estate plan.
+
+For farms and ranches, [farm succession planning](/learn/business-owners/farm-succession-planning) covers fairness to off-farm children, special tax rules and handing over management.
+
 If you run the business on your own with no entity, [what happens to a sole proprietorship at death](/learn/business-owners/what-happens-to-a-sole-proprietorship-at-death) explains who can act, what the estate owes and how to leave a plan.
 
 To see whether a revocable trust can hold your LLC, shares or business assets, including the S corporation trust rules, read [can I put my business in a living trust](/learn/business-owners/can-i-put-my-business-in-a-living-trust).

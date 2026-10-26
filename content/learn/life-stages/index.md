@@ -151,6 +151,18 @@ State law decides signing rules, default inheritance, spousal rights, whether co
 
 Start with whichever problem would be hardest on your family tomorrow. For many people that is incapacity, so the first step is powers of attorney and a healthcare directive. For a parent it is the guardian. For a person with a stale beneficiary form it is that form. Our [plan finder](/plan-finder) asks a few questions about your family and shows a short list. Then use [what to bring to your first meeting](/learn/basics/what-to-bring-to-estate-planning-consultation) and, if cost is a concern, our article on [how much an estate plan costs](/learn/basics/how-much-does-estate-planning-cost). It also helps to know the [common mistakes](/learn/basics/common-estate-planning-mistakes) and how to [talk to your family](/learn/basics/talking-to-family-about-estate-plan).
 
+## More questions people ask
+
+If you want to include grandchildren, [leaving an inheritance to grandchildren](/learn/life-stages/leaving-an-inheritance-to-grandchildren) compares trusts, custodial accounts and 529 plans.
+
+As children grow up, [updating your plan when your family grows](/learn/life-stages/updating-your-plan-when-your-family-grows) covers a second baby, an 18th birthday, a wedding and a grandchild.
+
+With a procedure on the calendar, [estate planning before surgery or a hospital stay](/learn/life-stages/estate-planning-before-surgery-or-a-hospital-stay) lists what to sign first.
+
+If no relative can serve, [estate planning with no heirs or family nearby](/learn/life-stages/estate-planning-with-no-heirs-or-family-nearby) explains professional fiduciaries, trust companies and escheat.
+
+To keep siblings from fighting over belongings, [dividing personal property and family heirlooms](/learn/life-stages/dividing-personal-property-and-family-heirlooms) shows how to write a list and talk to your children.
+
 ## How we can help
 
 Our attorneys work with people at every stage on this page, and most first plans take one or two meetings. Start with the [plan finder](/plan-finder) to see which documents fit your situation, or book a consultation to talk through your family, your state and your priorities. There is no obligation, and you can begin with the most pressing piece.

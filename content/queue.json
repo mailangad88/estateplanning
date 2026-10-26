@@ -239,8 +239,9 @@
    "cluster": "wills",
    "slug": "do-i-need-a-lawyer-to-make-a-will",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 1"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 1",
+   "coveredBy": "/learn/wills/how-much-does-a-will-cost"
   },
   {
    "id": "K023",
@@ -249,8 +250,9 @@
    "cluster": "wills",
    "slug": "is-a-handwritten-will-legal",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 1"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 1",
+   "coveredBy": "/learn/wills/handwritten-and-diy-wills"
   },
   {
    "id": "K024",
@@ -259,8 +261,9 @@
    "cluster": "wills",
    "slug": "how-much-does-it-cost-to-have-a-lawyer-draw-up-a-will",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 1"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 1",
+   "coveredBy": "/learn/wills/how-much-does-a-will-cost"
   },
   {
    "id": "K025",
@@ -269,18 +272,20 @@
    "cluster": "wills",
    "slug": "what-are-the-4-requirements-of-a-valid-will",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 1"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 1",
+   "coveredBy": "/learn/wills/how-to-make-a-valid-will"
   },
   {
    "id": "K026",
    "keyword": "What is the difference between a will and a testament?",
    "intent": "question",
    "cluster": "wills",
-   "slug": "what-is-the-difference-between-a-will-and-a-testament",
+   "slug": "does-a-will-avoid-probate",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 1"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 1",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K027",
@@ -289,28 +294,31 @@
    "cluster": "wills",
    "slug": "does-a-will-avoid-probate",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 1"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 1",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K028",
    "keyword": "Can I leave my house to someone in a will?",
    "intent": "question",
    "cluster": "wills",
-   "slug": "can-i-leave-my-house-to-someone-in-a-will",
+   "slug": "leaving-a-house-in-a-will",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 1"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 1",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K029",
    "keyword": "When does a will go into effect?",
    "intent": "question",
    "cluster": "wills",
-   "slug": "when-does-a-will-go-into-effect",
+   "slug": "does-a-will-avoid-probate",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 1"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 1",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K030",
@@ -319,8 +327,9 @@
    "cluster": "wills",
    "slug": "who-gets-my-money-if-i-have-no-will",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 1"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 1",
+   "coveredBy": "/learn/wills/dying-without-a-will"
   },
   {
    "id": "K031",
@@ -329,8 +338,9 @@
    "cluster": "wills",
    "slug": "can-a-will-be-changed-after-death",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 1"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 1",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K032",
@@ -690,10 +700,11 @@
    "keyword": "avoid probate without a trust",
    "intent": "explainer",
    "cluster": "probate",
-   "slug": "avoid-probate-without-a-trust",
+   "slug": "avoid-probate-on-your-house",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 3"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 3",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K066",
@@ -735,8 +746,9 @@
    "cluster": "probate",
    "slug": "joint-tenancy-with-right-of-survivorship-pros-cons",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 3"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 3",
+   "coveredBy": "/learn/property-and-assets/joint-tenancy-risks"
   },
   {
    "id": "K070",
@@ -776,20 +788,22 @@
    "keyword": "lady bird deed",
    "intent": "explainer",
    "cluster": "probate",
-   "slug": "lady-bird-deed",
+   "slug": "lady-bird-deed-explained",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 3"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 3",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K074",
    "keyword": "revocable trust vs TOD deed",
    "intent": "comparison",
    "cluster": "probate",
-   "slug": "revocable-trust-vs-tod-deed",
+   "slug": "is-a-tod-deed-better-than-a-trust",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 3"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 3",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K075",
@@ -818,10 +832,11 @@
    "keyword": "avoid probate for house",
    "intent": "explainer",
    "cluster": "probate",
-   "slug": "avoid-probate-for-house",
+   "slug": "avoid-probate-on-your-house",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 3"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 3",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K078",
@@ -904,10 +919,11 @@
    "keyword": "How do I avoid probate on my house?",
    "intent": "question",
    "cluster": "probate",
-   "slug": "how-do-i-avoid-probate-on-my-house",
+   "slug": "avoid-probate-on-your-house",
    "priority": 1,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 3"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 3",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K086",
@@ -916,8 +932,9 @@
    "cluster": "probate",
    "slug": "is-a-tod-deed-better-than-a-trust",
    "priority": 1,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 3"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 3",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K087",
@@ -2536,10 +2553,11 @@
    "keyword": "spousal lifetime access trust",
    "intent": "explainer",
    "cluster": "blended-families",
-   "slug": "spousal-lifetime-access-trust",
+   "slug": "spousal-lifetime-access-trust-blended-family",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 9"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 9",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K236",
@@ -2590,10 +2608,11 @@
    "keyword": "Should a blended family have a trust?",
    "intent": "question",
    "cluster": "blended-families",
-   "slug": "should-a-blended-family-have-a-trust",
+   "slug": "remarried-without-updating-your-will",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 9"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 9",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K241",
@@ -2611,10 +2630,11 @@
    "keyword": "What happens to my estate if I remarry and have no will?",
    "intent": "question",
    "cluster": "blended-families",
-   "slug": "what-happens-to-my-estate-if-i-remarry-and-have-no-will",
+   "slug": "remarried-without-updating-your-will",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 9"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 9",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K243",
@@ -2741,10 +2761,11 @@
    "keyword": "ESOP basics",
    "intent": "explainer",
    "cluster": "business-owners",
-   "slug": "esop-basics",
+   "slug": "esop-basics-for-business-owners",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 10"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 10",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K255",
@@ -2808,8 +2829,9 @@
    "cluster": "business-owners",
    "slug": "farm-succession-planning",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 10"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 10",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K261",
@@ -3003,10 +3025,11 @@
    "keyword": "NFT inheritance",
    "intent": "explainer",
    "cluster": "digital-assets",
-   "slug": "nft-inheritance",
+   "slug": "hardware-wallets-and-nfts-after-death",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 11"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 11",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K279",
@@ -3057,30 +3080,33 @@
    "keyword": "hardware wallet inheritance",
    "intent": "explainer",
    "cluster": "digital-assets",
-   "slug": "hardware-wallet-inheritance",
+   "slug": "hardware-wallets-and-nfts-after-death",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 11"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 11",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K284",
    "keyword": "photos and cloud storage after death",
    "intent": "explainer",
    "cluster": "digital-assets",
-   "slug": "photos-and-cloud-storage-after-death",
+   "slug": "photos-and-iphones-after-death",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 11"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 11",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K285",
    "keyword": "domain names and websites inheritance",
    "intent": "explainer",
    "cluster": "digital-assets",
-   "slug": "domain-names-and-websites-inheritance",
+   "slug": "domain-names-and-websites-after-death",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 11"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 11",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K286",
@@ -3153,10 +3179,11 @@
    "keyword": "How do heirs access an iPhone after death?",
    "intent": "question",
    "cluster": "digital-assets",
-   "slug": "how-do-heirs-access-an-iphone-after-death",
+   "slug": "photos-and-iphones-after-death",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 11"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 11",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K293",
@@ -3295,10 +3322,11 @@
    "keyword": "gifting and Medicaid",
    "intent": "explainer",
    "cluster": "elder-care",
-   "slug": "gifting-and-medicaid",
+   "slug": "gifting-to-children-before-medicaid",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 12"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 12",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K306",
@@ -3307,8 +3335,9 @@
    "cluster": "elder-care",
    "slug": "medicaid-crisis-planning",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 12"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 12",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K307",
@@ -3350,8 +3379,9 @@
    "cluster": "elder-care",
    "slug": "medicaid-home-care-waiver",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 12"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 12",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K311",
@@ -3369,10 +3399,11 @@
    "keyword": "Medicaid planning cost",
    "intent": "cost",
    "cluster": "elder-care",
-   "slug": "medicaid-planning-cost",
+   "slug": "medicaid-planning-attorney-cost",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 12"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 12",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K313",
@@ -3423,20 +3454,22 @@
    "keyword": "How much can you give away before Medicaid look-back?",
    "intent": "cost",
    "cluster": "elder-care",
-   "slug": "how-much-can-you-give-away-before-medicaid-look-back",
+   "slug": "gifting-to-children-before-medicaid",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 12"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 12",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K318",
    "keyword": "Can you transfer assets to children before nursing home?",
    "intent": "question",
    "cluster": "elder-care",
-   "slug": "can-you-transfer-assets-to-children-before-nursing-home",
+   "slug": "gifting-to-children-before-medicaid",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 12"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 12",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K319",
@@ -3445,8 +3478,9 @@
    "cluster": "elder-care",
    "slug": "what-assets-are-exempt-from-medicaid",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 12"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 12",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K320",
@@ -3464,10 +3498,11 @@
    "keyword": "How much does a Medicaid planning attorney cost?",
    "intent": "cost",
    "cluster": "elder-care",
-   "slug": "how-much-does-a-medicaid-planning-attorney-cost",
+   "slug": "medicaid-planning-attorney-cost",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 12"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 12",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K322",
@@ -3498,8 +3533,9 @@
    "cluster": "after-a-death",
    "slug": "successor-trustee-checklist",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 13",
+   "coveredBy": "/learn/after-a-death/trust-administration"
   },
   {
    "id": "K325",
@@ -3508,8 +3544,9 @@
    "cluster": "after-a-death",
    "slug": "trustee-duties",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 13",
+   "coveredBy": "/learn/after-a-death/trust-administration"
   },
   {
    "id": "K326",
@@ -3518,8 +3555,9 @@
    "cluster": "after-a-death",
    "slug": "how-long-does-trust-administration-take",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 13",
+   "coveredBy": "/learn/after-a-death/how-long-does-a-trustee-have-to-distribute-assets"
   },
   {
    "id": "K327",
@@ -3528,8 +3566,9 @@
    "cluster": "after-a-death",
    "slug": "trust-administration-cost-trustee-fees",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 13",
+   "coveredBy": "/learn/after-a-death/trustee-compensation"
   },
   {
    "id": "K328",
@@ -3538,18 +3577,20 @@
    "cluster": "after-a-death",
    "slug": "do-i-need-a-lawyer-to-administer-a-trust",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 13",
+   "coveredBy": "/learn/after-a-death/do-you-need-an-attorney-to-settle-a-trust"
   },
   {
    "id": "K329",
    "keyword": "notice to beneficiaries",
    "intent": "explainer",
    "cluster": "after-a-death",
-   "slug": "notice-to-beneficiaries",
+   "slug": "when-a-living-trust-becomes-irrevocable",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 13",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K330",
@@ -3558,8 +3599,9 @@
    "cluster": "after-a-death",
    "slug": "trust-ein",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 13",
+   "coveredBy": "/learn/after-a-death/trust-ein-and-65-day-election"
   },
   {
    "id": "K331",
@@ -3568,8 +3610,9 @@
    "cluster": "after-a-death",
    "slug": "trust-accounting",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 13",
+   "coveredBy": "/learn/after-a-death/trustee-duty-to-inform-and-account"
   },
   {
    "id": "K332",
@@ -3578,28 +3621,31 @@
    "cluster": "after-a-death",
    "slug": "distributing-trust-assets",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 13",
+   "coveredBy": "/learn/after-a-death/how-long-does-a-trustee-have-to-distribute-assets"
   },
   {
    "id": "K333",
    "keyword": "trustee liability",
    "intent": "explainer",
    "cluster": "after-a-death",
-   "slug": "trustee-liability",
+   "slug": "can-a-trustee-be-personally-liable",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 13",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K334",
    "keyword": "removing a trustee",
    "intent": "explainer",
    "cluster": "after-a-death",
-   "slug": "removing-a-trustee",
+   "slug": "how-to-remove-a-trustee",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 13",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K335",
@@ -3619,18 +3665,20 @@
    "cluster": "after-a-death",
    "slug": "trust-tax-return-form-1041",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 13",
+   "coveredBy": "/learn/after-a-death/trust-ein-and-65-day-election"
   },
   {
    "id": "K337",
    "keyword": "irrevocable after death",
    "intent": "explainer",
    "cluster": "after-a-death",
-   "slug": "irrevocable-after-death",
+   "slug": "when-a-living-trust-becomes-irrevocable",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 13",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K338",
@@ -3639,8 +3687,9 @@
    "cluster": "after-a-death",
    "slug": "trust-contest",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 13",
+   "coveredBy": "/learn/trusts/can-a-living-trust-be-contested"
   },
   {
    "id": "K339",
@@ -3649,18 +3698,20 @@
    "cluster": "after-a-death",
    "slug": "beneficiary-demands-accounting",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 13",
+   "coveredBy": "/learn/after-a-death/trustee-duty-to-inform-and-account"
   },
   {
    "id": "K340",
    "keyword": "trust real estate sale after death",
    "intent": "explainer",
    "cluster": "after-a-death",
-   "slug": "trust-real-estate-sale-after-death",
+   "slug": "selling-a-house-held-in-a-trust-after-death",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 13",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K341",
@@ -3669,8 +3720,9 @@
    "cluster": "after-a-death",
    "slug": "trustee-refuses-to-distribute",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 13"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 13",
+   "coveredBy": "/learn/after-a-death/when-a-trustee-does-nothing"
   },
   {
    "id": "K342",
@@ -3842,10 +3894,11 @@
    "keyword": "executor duties checklist",
    "intent": "explainer",
    "cluster": "probate",
-   "slug": "executor-duties-checklist",
+   "slug": "probate-inventory-and-estate-accounting",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 14"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 14",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K358",
@@ -3874,10 +3927,11 @@
    "keyword": "letters testamentary",
    "intent": "explainer",
    "cluster": "probate",
-   "slug": "letters-testamentary",
+   "slug": "letters-testamentary-and-letters-of-administration",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 14"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 14",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K361",
@@ -3959,10 +4013,11 @@
    "keyword": "probate inventory",
    "intent": "explainer",
    "cluster": "probate",
-   "slug": "probate-inventory",
+   "slug": "probate-inventory-and-estate-accounting",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 14"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 14",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K369",
@@ -4693,8 +4748,9 @@
    "cluster": "elder-care",
    "slug": "medicaid-asset-limits-by-state",
    "priority": 1,
-   "status": "queued",
-   "source": "Decision pages research, plain-article topics (2026-10-06)"
+   "status": "covered",
+   "source": "Decision pages research, plain-article topics (2026-10-06)",
+   "coveredBy": "skipped per task (state-level page)"
   },
   {
    "id": "K436",
@@ -4712,10 +4768,11 @@
    "keyword": "Executor vs administrator vs personal representative",
    "intent": "definition",
    "cluster": "after-a-death",
-   "slug": "executor-vs-administrator",
+   "slug": "executor-vs-administrator-vs-personal-representative",
    "priority": 3,
-   "status": "queued",
-   "source": "Decision pages research, plain-article topics (2026-10-06)"
+   "status": "drafted",
+   "source": "Decision pages research, plain-article topics (2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K438",
