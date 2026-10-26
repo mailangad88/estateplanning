@@ -73,6 +73,7 @@ export default async function CountyPage({ params }: { params: Promise<Params> }
     { name: c.name, url: c.url },
   ];
   const fees = feesFor(c);
+  const il = c.state.abbr === "IL";
   const faqs = countyFaqs(c);
   const cities = citiesIn(c);
   const neighbours = servedCounties(c.state.slug).filter((n) => n.slug !== c.slug);
@@ -101,7 +102,7 @@ export default async function CountyPage({ params }: { params: Promise<Params> }
       {c.probateCourt && (
         <section className="answer-box" aria-label="Short answer">
           <p className="answer">
-            Estates of {c.name} residents are opened in the {c.probateCourt.name}
+            {il ? "Estates" : "Wills"} of {c.name} residents are {il ? "opened in" : "probated by"} the {c.probateCourt.name}
             {c.seat ? ` in ${c.seat}` : ""}.
             {fees && ` The clerk's schedule effective ${fees.effective} lists ${usd(fees.estate)} to open an estate.`}{" "}
             The probate rules themselves come from {c.state.name} law, so the steps are the same in every county; what
@@ -116,9 +117,9 @@ export default async function CountyPage({ params }: { params: Promise<Params> }
             <tbody>
               {c.seat && <tr><th scope="row">County seat</th><td>{c.seat}</td></tr>}
               {c.circuit && <tr><th scope="row">Court</th><td>{c.circuit}</td></tr>}
-              <OfficeRow label="Probate court" o={c.probateCourt} />
+              <OfficeRow label={il ? "Probate court" : "Surrogate (wills and estates)"} o={c.probateCourt} />
               <OfficeRow label="Circuit clerk (wills and estate filings)" o={c.clerk} />
-              <OfficeRow label="Recorder (deeds and transfer on death instruments)" o={c.recorder} />
+              <OfficeRow label={il ? "Recorder (deeds and transfer on death instruments)" : "County clerk (deeds)"} o={c.recorder} />
               {fees && (
                 <tr>
                   <th scope="row">Fee to open an estate</th>
@@ -164,14 +165,24 @@ export default async function CountyPage({ params }: { params: Promise<Params> }
       })}
       <h2>How probate moves in {c.name}</h2>
       <ProbateTimeline caption={`The usual stages. ${c.state.name} sets the deadlines; the ${c.name} clerk and court handle the filings.`} />
-      <p>
-        For the {c.state.name} timeline in detail, read{" "}
-        <Link href="/learn/illinois/how-long-does-probate-take-in-illinois">how long probate takes in Illinois</Link> and{" "}
-        <Link href="/learn/illinois/illinois-probate-process">the Illinois probate process step by step</Link>. Smaller
-        estates may not need court at all: see the{" "}
-        <Link href="/learn/illinois/illinois-small-estate-affidavit">Illinois small estate affidavit</Link>, or check with
-        the <Link href={`/tools/small-estate-checker?state=${c.state.slug}`}>small estate checker</Link>.
-      </p>
+      {il ? (
+        <p>
+          For the {c.state.name} timeline in detail, read{" "}
+          <Link href="/learn/illinois/how-long-does-probate-take-in-illinois">how long probate takes in Illinois</Link> and{" "}
+          <Link href="/learn/illinois/illinois-probate-process">the Illinois probate process step by step</Link>. Smaller
+          estates may not need court at all: see the{" "}
+          <Link href="/learn/illinois/illinois-small-estate-affidavit">Illinois small estate affidavit</Link>, or check with
+          the <Link href={`/tools/small-estate-checker?state=${c.state.slug}`}>small estate checker</Link>.
+        </p>
+      ) : (
+        <p>
+          The rules come from {c.state.name} law: read our <Link href={stateUrl}>{c.state.name} estate planning guide</Link>{" "}
+          for signing rules, probate options and taxes, and see{" "}
+          <Link href="/learn/probate/how-to-file-probate">how to file probate</Link> for the steps in order. Smaller
+          estates may qualify for a shortcut: check with the{" "}
+          <Link href={`/tools/small-estate-checker?state=${c.state.slug}`}>small estate checker</Link>.
+        </p>
+      )}
       <h2>Free tools for {c.name} families</h2>
       <ul className="chips">
         <li><Link href={`/tools/probate-cost-estimator?state=${c.state.slug}`}>Probate cost estimator</Link></li>

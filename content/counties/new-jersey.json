@@ -1,0 +1,426 @@
+{
+  "_note": "Verified New Jersey county probate facts (County Surrogate). Every note cites one official source. Rendered only when NJ is in SERVED_STATES.",
+  "counties": [
+    {
+      "slug": "atlantic",
+      "name": "Atlantic County",
+      "seat": "Mays Landing",
+      "circuit": "Superior Court of New Jersey, Atlantic Vicinage",
+      "probateCourt": {
+        "name": "Atlantic County Surrogate's Court",
+        "address": "5911 Main Street, Mays Landing, NJ 08330",
+        "url": "https://www.atlanticcountynj.gov/government/county-government/surrogate-s-office",
+        "phone": "(609) 645-5800"
+      },
+      "notes": [
+        "Atlantic County has Surrogate offices at 5911 Main Street, Mays Landing and 1201 Bacharach Blvd., Atlantic City. (source: https://www.atlanticcountynj.gov/government/county-government/surrogate-s-office)",
+        "Both Atlantic Surrogate offices are open Monday to Friday, 8:30am to 4:00pm, and appointments are encouraged. (source: https://www.atlanticcountynj.gov/government/county-government/surrogate-s-office)",
+        "The Atlantic City Surrogate office phone is (609) 343-2341. (source: https://www.atlanticcountynj.gov/government/county-government/surrogate-s-office)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "bergen",
+      "name": "Bergen County",
+      "seat": "Hackensack",
+      "circuit": "Superior Court of New Jersey, Bergen Vicinage",
+      "probateCourt": {
+        "name": "Bergen County Surrogate's Court",
+        "address": "Two Bergen County Plaza, Suite 5000, Hackensack, NJ 07601",
+        "phone": "(201) 336-6700",
+        "url": "https://surrogate.bergencountynj.gov/"
+      },
+      "notes": [
+        "The Bergen County Surrogate's Court is at Two Bergen County Plaza, Suite 5000, Hackensack, on the fifth floor next to the Bergen County Court House. It is open Monday to Friday, 8:30 AM to 4:30 PM, excluding county holidays. (source: https://surrogate.bergencountynj.gov/aboutus.html)",
+        "The Surrogate asks visitors to make an appointment before arriving. The probate page says an appointment is required and the office cannot accommodate walk-ins. (source: https://surrogate.bergencountynj.gov/probate.html)",
+        "To probate a will in Bergen County, bring a completed Will Fact Sheet, the original will, a certified death certificate with a raised seal, names and addresses of immediate next of kin, and payment of statutory fees. (source: https://surrogate.bergencountynj.gov/probate.html)",
+        "The Bergen Surrogate's page says a will cannot be admitted to probate until at least 10 days after the date of death. After probate, the executor must notify beneficiaries and next of kin within 60 days and file proof of mailing with the Surrogate. (source: https://surrogate.bergencountynj.gov/probate.html)",
+        "The Bergen Surrogate's fee page lists probate of a will (first two pages) at $100.00, each additional will page at $5.00, and a certified copy of a will (up to two pages) at $50.00. The page shows no effective date. (source: https://surrogate.bergencountynj.gov/fees.html)",
+        "The Bergen Surrogate's office has said it continues to probate estates and file court documents remotely, as set up in April 2020, per a Notice to the Bar dated 7/20/21. Call (201) 336-6700 to ask what is available now. (source: https://bergencountysurrogate.com)",
+        "Bergen's Surrogate FAQ says personal checks are accepted only if drawn on a New Jersey bank with a New Jersey address, and that Surrogate certificates are generally not issued the same day. (source: https://surrogate.bergencountynj.gov/faq.html)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "burlington",
+      "name": "Burlington County",
+      "seat": "Mount Holly",
+      "circuit": "Superior Court of New Jersey, Burlington Vicinage",
+      "probateCourt": {
+        "name": "Burlington County Surrogate's Court",
+        "url": "https://www.co.burlington.nj.us/Directory.aspx?did=108"
+      },
+      "notes": [
+        "Burlington's published Surrogate fee schedule, current through August 29, 2022, lists $100 to probate a will of up to two pages and $125 for general administration. (source: https://nj-burlingtoncounty.civicplus.com/DocumentCenter/View/16421/BURLINGTON-COUNTY-SURROGATES-COURT-FEE-SCHEDULE)",
+        "Under the same Burlington schedule, each additional will page is $5, a certified copy of a will is $50, and an extra codicil probate is $25. (source: https://nj-burlingtoncounty.civicplus.com/DocumentCenter/View/16421/BURLINGTON-COUNTY-SURROGATES-COURT-FEE-SCHEDULE)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "camden",
+      "name": "Camden County",
+      "seat": "Camden",
+      "circuit": "Superior Court of New Jersey, Camden Vicinage",
+      "probateCourt": {
+        "name": "Camden County Surrogate's Court",
+        "address": "509 Lakeland Road, Blackwood, NJ 08012",
+        "url": "https://www.camdencounty.com/service/surrogate-court/",
+        "phone": "(856) 225-7282"
+      },
+      "notes": [
+        "Camden County Surrogate service is by appointment only, scheduled through the county's online portal, and the office does not accept walk-ins. (source: https://www.camdencounty.com/service/surrogate-court/)",
+        "The Camden Surrogate is open weekdays 8:30 AM to 4:00 PM at 509 Lakeland Road, Blackwood. (source: https://www.camdencounty.com/service/surrogate-court/)",
+        "Camden asks everyone to complete its Estate Information Sheet, and payment is due at the time of service by cash, money order or check. (source: https://www.camdencounty.com/service/surrogate-court/)",
+        "Camden also accepts probate by mail or in a drop box at 509 Lakeland Road; e-filing is limited to approved members of the Bar. (source: https://www.camdencounty.com/service/surrogate-court/)",
+        "Camden's posted fees (page last modified October 25, 2024) are $100 to probate a will of up to two pages and $125 for administration. (source: https://www.camdencounty.com/service/surrogate-court/forms-and-fees/)",
+        "The Camden County Clerk is in Room 102, 520 Market Street, Camden, and offers e-recording and cover-sheet guidance for deeds. (source: https://www.camdencounty.com/service/county-clerk/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26",
+      "recorder": {
+        "name": "Camden County Clerk",
+        "address": "Room 102, 520 Market Street, Camden, NJ 08102",
+        "url": "https://www.camdencounty.com/service/county-clerk/"
+      }
+    },
+    {
+      "slug": "cape-may",
+      "name": "Cape May County",
+      "seat": "Cape May Court House",
+      "circuit": "Superior Court of New Jersey, Cape May Vicinage",
+      "probateCourt": {
+        "name": "Cape May County Surrogate's Court",
+        "address": "9 N Main Street, 3rd Floor, Cape May Court House, NJ 08210",
+        "url": "https://capemaycountynj.gov/545/Surrogate",
+        "phone": "609-463-6666"
+      },
+      "notes": [
+        "The Cape May County Surrogate requires appointments and asks you to contact the office before coming to the courthouse. (source: https://capemaycountynj.gov/545/Surrogate)",
+        "Cape May's mailing address for regular and certified mail is 4 Moore Road, DN 207, Cape May Court House, NJ 08210. (source: https://capemaycountynj.gov/545/Surrogate)",
+        "Cape May requires a completed Information Sheet for all estates; for administration, an original death certificate and vehicle VIN numbers are also needed. (source: https://capemaycountynj.gov/545/Surrogate)",
+        "Cape May lists $100 to probate a will (first two pages) and $125 for general administration; the page gives no effective date. (source: https://capemaycountynj.gov/1779/Fees)",
+        "The Cape May County Clerk's Record Room is at 7 N. Main Street, Cape May Court House, and deeds recorded on paper need a cover sheet or a $20 indexing fee applies; e-recording is available. (source: https://capemaycountynj.gov/920/Document-Recording)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26",
+      "recorder": {
+        "name": "Cape May County Clerk",
+        "address": "7 N. Main Street, Cape May Court House, NJ 08210",
+        "url": "https://capemaycountynj.gov/920/Document-Recording"
+      }
+    },
+    {
+      "slug": "cumberland",
+      "name": "Cumberland County",
+      "seat": "Bridgeton",
+      "circuit": "Superior Court of New Jersey, Cumberland Vicinage",
+      "probateCourt": {
+        "name": "Cumberland County Surrogate's Court",
+        "address": "Cumberland County Court House, 60 W. Broad Street, Suite A-111, Bridgeton, NJ 08302",
+        "url": "https://cumberlandcountynj.gov/surrogate",
+        "phone": "(856) 453-4800"
+      },
+      "notes": [
+        "The Cumberland Surrogate is open weekdays 8:30 AM to 4:30 PM, but visits are by appointment; call first. (source: https://cumberlandcountynj.gov/surrogate)",
+        "In Cumberland, staff prepare probate documents and then schedule a signing appointment where you bring photo ID and a check or cash. (source: https://cumberlandcountynj.gov/surrogate)",
+        "Cumberland has a second Surrogate office at 2745 S Delsea Dr, Vineland, by appointment only, phone (856) 453-4808. (source: https://cumberlandcountynj.gov/surrogate)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "essex",
+      "name": "Essex County",
+      "seat": "Newark",
+      "circuit": "Superior Court of New Jersey, Essex Vicinage",
+      "probateCourt": {
+        "name": "Essex County Surrogate's Court",
+        "address": "Martin Luther King, Jr. Justice Building, 495 Dr. Martin Luther King, Jr. Blvd., Room 212, Newark, NJ 07102",
+        "phone": "973-621-4900",
+        "url": "https://wecare.essexcountynj.org/support/solutions/articles/69000804721-office-of-the-surrogate"
+      },
+      "notes": [
+        "The Essex County Surrogate's Court is in the Martin Luther King, Jr. Justice Building, 495 Dr. Martin Luther King, Jr. Blvd., Room 212, Newark. The county's help page lists the main phone as 973-621-4900. (source: https://wecare.essexcountynj.org/support/solutions/articles/69000804721-office-of-the-surrogate)",
+        "The Essex County Clerk's office says to record a deed, mortgage or lien, contact the Register of Deeds and Mortgages at 973-621-4960. (source: https://www.essexclerk.com/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "gloucester",
+      "name": "Gloucester County",
+      "seat": "Woodbury",
+      "circuit": "Superior Court of New Jersey, Gloucester Vicinage",
+      "probateCourt": {
+        "name": "Gloucester County Surrogate's Court",
+        "address": "17 N Broad Street, Woodbury, NJ 08096",
+        "url": "https://www.gloucestercountynj.gov/521/Surrogate-Court",
+        "phone": "856-853-3282"
+      },
+      "notes": [
+        "The Gloucester County Surrogate is at 17 N Broad Street, Woodbury, open Monday to Friday 8:30 am to 4:30 pm, in-person business by appointment only. (source: https://www.gloucestercountynj.gov/521/Surrogate-Court)",
+        "Appointments with the Gloucester Surrogate are scheduled by calling 856-853-3282, and there is a secure drop box near the rear entrance for original documents. (source: https://www.gloucestercountynj.gov/521/Surrogate-Court)",
+        "Gloucester's Surrogate FAQ lists a $10 filing fee for the Refunding Bond and Release and notes that small estates can use an Affidavit of Surviving Spouse (assets up to $50,000) or Affidavit of Next of Kin (assets up to $20,000). (source: https://gloucestercountynj.gov/m/faq?cat=31)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "hudson",
+      "name": "Hudson County",
+      "seat": "Jersey City",
+      "circuit": "Superior Court of New Jersey, Hudson Vicinage",
+      "probateCourt": {
+        "name": "Hudson County Surrogate's Court",
+        "address": "583 Newark Ave., 4th Floor, Room 407, Jersey City, NJ 07306",
+        "phone": "201-795-6378",
+        "url": "https://www.njcourts.gov/sites/default/files/forms/12217_nj_surrogates.pdf"
+      },
+      "recorder": {
+        "name": "Hudson County Clerk",
+        "address": "257 Cornelison Avenue, 4th Floor, Jersey City, NJ 07302",
+        "url": "https://www.hudsoncountyclerk.org/"
+      },
+      "notes": [
+        "The New Jersey Courts directory (revised 08/2025) lists the Hudson County Surrogate at 583 Newark Ave., 4th Floor, Room 407, Jersey City, phone 201-795-6378. (source: https://www.njcourts.gov/sites/default/files/forms/12217_nj_surrogates.pdf)",
+        "The Hudson County Clerk's office is at 257 Cornelison Avenue, 4th Floor, Jersey City; the listed phone is 201-369-3470. (source: https://www.hudsoncountyclerk.org/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "hunterdon",
+      "name": "Hunterdon County",
+      "seat": "Flemington",
+      "circuit": "Superior Court of New Jersey, Hunterdon Vicinage",
+      "probateCourt": {
+        "name": "Hunterdon County Surrogate's Court",
+        "address": "65 Park Avenue, PO Box 2900, Flemington, NJ 08822",
+        "phone": "908-788-1156",
+        "url": "https://www.co.hunterdon.nj.us/329/Surrogates-Court"
+      },
+      "notes": [
+        "The Hunterdon County Surrogate's Court is at 65 Park Avenue, PO Box 2900, Flemington, NJ 08822; phone 908-788-1156. (source: https://www.co.hunterdon.nj.us/329/Surrogates-Court)",
+        "The Hunterdon Surrogate's page links to online forms and a fee schedule, and notes that filing fees are set by New Jersey statute. (source: https://www.co.hunterdon.nj.us/329/Surrogates-Court)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "mercer",
+      "name": "Mercer County",
+      "seat": "Trenton",
+      "circuit": "Superior Court of New Jersey, Mercer Vicinage",
+      "probateCourt": {
+        "name": "Mercer County Surrogate's Court",
+        "address": "Mercer County Civil Court House, 175 South Broad Street, Fourth Floor, Room 420, Trenton, NJ 08608",
+        "url": "https://mercercounty.org/government/county-surrogate/office-hours-and-locations",
+        "phone": "(609) 989-6331"
+      },
+      "notes": [
+        "The Mercer County Surrogate is open Monday through Friday, 8:30 a.m. to 4:30 p.m., and asks visitors to arrive by 4:00 p.m. (source: https://mercercounty.org/government/county-surrogate/office-hours-and-locations)",
+        "The Mercer Surrogate's mailing address is P.O. Box 8068, Trenton, NJ 08650-0068. (source: https://mercercounty.org/government/county-surrogate/office-hours-and-locations)",
+        "The Mercer County Clerk's Records Room is open to the public 8:30 a.m. to 4:30 p.m. on weekdays. (source: https://www.mercercounty.org/government/county-clerk/office-services/land-records)",
+        "Mercer's land records page lists a deed recording cost of $43 for the first page and $10 for each additional page. (source: https://www.mercercounty.org/government/county-clerk/office-services/land-records)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "middlesex",
+      "name": "Middlesex County",
+      "seat": "New Brunswick",
+      "circuit": "Superior Court of New Jersey, Middlesex Vicinage",
+      "probateCourt": {
+        "name": "Middlesex County Surrogate's Court",
+        "address": "75 Bayard Street, 1st Floor, County Administration Building, New Brunswick, NJ 08901",
+        "url": "https://www.middlesexcountynj.gov/government/departments/department-of-community-services/office-of-the-surrogate",
+        "phone": "732-745-3055"
+      },
+      "notes": [
+        "The Middlesex County Surrogate's Office is by appointment only, and appointments are booked online at middlesexcountysurrogate.as.me. (source: https://www.middlesexcountynj.gov/government/departments/department-of-community-services/office-of-the-surrogate)",
+        "Surrogate hours are 8 AM to 3:45 PM on weekdays, with Tuesday service extending to 6 PM; both are by appointment. (source: https://www.middlesexcountynj.gov/government/departments/department-of-community-services/office-of-the-surrogate)",
+        "The Surrogate's mailing address is PO Box 790, New Brunswick, NJ 08903. (source: https://www.middlesexcountynj.gov/government/departments/department-of-community-services/office-of-the-surrogate)",
+        "Middlesex also has Surrogate satellite offices in Monroe and Woodbridge, scheduled by form; the page asks you to choose the main office or a satellite, not both. (source: https://www.middlesexcountynj.gov/government/departments/department-of-community-services/office-of-the-surrogate/surrogate-satellite-offices)",
+        "The Middlesex County Clerk records deeds at 75 Bayard Street, 4th Floor, New Brunswick, weekdays 8:30 AM to 4:10 PM; appointments are not required but appointment holders get priority. (source: https://www.middlesexcountynj.gov/government/departments/department-of-community-services/office-of-county-clerk/recording-services)",
+        "Paper land recordings in Middlesex need a paper cover sheet or a $20 indexing charge applies; e-recording is also offered. (source: https://www.middlesexcountynj.gov/government/departments/department-of-community-services/office-of-county-clerk/recording-services)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26",
+      "recorder": {
+        "name": "Middlesex County Clerk",
+        "address": "75 Bayard Street, 4th Floor, New Brunswick, NJ 08901",
+        "url": "https://www.middlesexcountynj.gov/government/departments/department-of-community-services/office-of-county-clerk/recording-services"
+      }
+    },
+    {
+      "slug": "monmouth",
+      "name": "Monmouth County",
+      "seat": "Freehold",
+      "circuit": "Superior Court of New Jersey, Monmouth Vicinage",
+      "probateCourt": {
+        "name": "Monmouth County Surrogate's Court",
+        "address": "Hall of Records, 1 East Main Street, Freehold, NJ 07728",
+        "url": "https://www.visitmonmouth.com/Page.aspx?Id=5344",
+        "phone": "(732) 431-7330"
+      },
+      "notes": [
+        "The main Monmouth Surrogate office in Freehold takes walk-ins only, Monday to Friday 8:30 a.m. to 4:00 p.m., and asks you to arrive before 3:30 p.m. (source: https://www.visitmonmouth.com/Page.aspx?Id=5344)",
+        "Monmouth's Shrewsbury and Neptune satellite offices are by appointment only. (source: https://www.visitmonmouth.com/Page.aspx?Id=5344)",
+        "To open an estate in Monmouth, bring a certified death certificate, the original will and codicils if any, photo ID, a completed Decedent Information Sheet, and payment by check or credit card. (source: https://www.visitmonmouth.com/Page.aspx?Id=5344)",
+        "Without a will, Monmouth asks for a list of assets held solely in the decedent's name with no named beneficiary, such as bank accounts, vehicles or real estate. (source: https://www.visitmonmouth.com/Page.aspx?Id=5344)",
+        "The Monmouth Surrogate lists fees starting at $100 to probate a will and $120 to administer an estate without a will; extra pages, certificates and similar items cost more. (source: https://www.visitmonmouth.com/Page.aspx?Id=5344)",
+        "Monmouth lists online filing and mail-in filing as alternatives to visiting in person; questions go to surrogate@co.monmouth.nj.us. (source: https://www.visitmonmouth.com/Page.aspx?Id=5344)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "morris",
+      "name": "Morris County",
+      "seat": "Morristown",
+      "circuit": "Superior Court of New Jersey, Morris Vicinage",
+      "probateCourt": {
+        "name": "Morris County Surrogate's Court",
+        "address": "Administration and Records Building, Fifth Floor, Morristown, NJ (listed by the NJ Courts directory as 10 Court St., 5th Floor, Morristown, NJ 07960)",
+        "phone": "973-285-6500",
+        "url": "https://surrogate.morriscountynj.gov/"
+      },
+      "notes": [
+        "Per the Morris County Surrogate's citizen's guide, the office is in the Administration and Records Building, Fifth Floor, Morristown, phone 973-285-6500. (source: https://www.morriscountynj.gov/files/sharedassets/public/v/1/departments/surrogate/surrogateguide.pdf)",
+        "The Morris County Surrogate's guide says the office is open 8:30 A.M. to 4:30 P.M. Monday through Friday and 4:30 P.M. to 6:30 P.M. on Tuesday, all by appointment only. (source: https://www.morriscountynj.gov/files/sharedassets/public/v/1/departments/surrogate/surrogateguide.pdf)",
+        "To probate a will in Morris County, locate the original will and an original death certificate with a raised seal, and have the names and addresses of everyone named in the will and all next of kin. If the will is not self-proving, a witness must appear or provide proof. (source: https://www.morriscountynj.gov/files/sharedassets/public/v/1/departments/surrogate/surrogateguide.pdf)",
+        "The Morris guide says handwritten, unwitnessed (holographic) wills can be probated only in Superior Court, not by the Surrogate. (source: https://www.morriscountynj.gov/files/sharedassets/public/v/1/departments/surrogate/surrogateguide.pdf)",
+        "Morris County's fee sheet lists probate of a two-page will, including one certificate, at $100, with each additional will page $5 and a certified copy of a will (up to two pages) $50. The sheet shows no effective date. (source: https://www.morriscountynj.gov/files/sharedassets/public/v/2/departments/surrogate/fees-morris-county.pdf)",
+        "The Morris County Surrogate's Court accepts fees by cash or check only and does not accept credit cards. (source: https://surrogate.morriscountynj.gov/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "ocean",
+      "name": "Ocean County",
+      "seat": "Toms River",
+      "circuit": "Superior Court of New Jersey, Ocean Vicinage",
+      "probateCourt": {
+        "name": "Ocean County Surrogate's Court",
+        "address": "118 Washington Street, Toms River, NJ 08753",
+        "url": "https://www.co.ocean.nj.us/surrogate/frmContact.aspx",
+        "phone": "(732) 929-2011"
+      },
+      "notes": [
+        "The Ocean County Surrogate's main office is at 118 Washington Street, Toms River; mail goes to P.O. Box 2191, Toms River, NJ 08754. (source: https://www.co.ocean.nj.us/surrogate/frmContact.aspx)",
+        "Ocean's Southern Service Center at 179 South Main Street, Manahawkin, is open every Friday by appointment. (source: https://www.co.ocean.nj.us/surrogate/frmContact.aspx)",
+        "The Ocean Surrogate's page links to renunciation, information sheet and other forms and a separate service fee page. (source: https://www.co.ocean.nj.us/surrogate/frmContact.aspx)",
+        "The Ocean County Clerk's main location is 118 Washington Street, Toms River, and a 24-hour drop box in front of the courthouse accepts real-estate documents in a sealed envelope, processed the next business day. (source: https://clerk.co.ocean.nj.us/frmRecordsForms)",
+        "The Ocean County Clerk accepts electronic recording through NJCountyRecording.com and lists a recording fee schedule dated January 2026. (source: https://clerk.co.ocean.nj.us/frmRecordsForms)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26",
+      "recorder": {
+        "name": "Ocean County Clerk",
+        "address": "118 Washington Street, Toms River, NJ 08753",
+        "url": "https://clerk.co.ocean.nj.us/frmRecordsForms"
+      }
+    },
+    {
+      "slug": "passaic",
+      "name": "Passaic County",
+      "seat": "Paterson",
+      "circuit": "Superior Court of New Jersey, Passaic Vicinage",
+      "probateCourt": {
+        "name": "Passaic County Surrogate's Court",
+        "address": "71 Hamilton Street, Room 101, Paterson, NJ 07505 (public entrance at 77 Hamilton Street)",
+        "phone": "(973) 881-4760",
+        "url": "https://www.passaiccountynj.org/government/passaic-county-surrogate"
+      },
+      "notes": [
+        "The Passaic County Surrogate is at 71 Hamilton Street, Room 101, Paterson. The county page says the 71 Hamilton Street entrance is closed and visitors should use 77 Hamilton Street. Hours are Monday to Friday, 8:30am to 4:30pm, closed 12:30pm to 1:30pm. (source: https://www.passaiccountynj.org/government/passaic-county-surrogate)",
+        "The Passaic Surrogate's Court is by appointment only. The office also runs Night Court sessions, 5:00pm to 7:00pm, at libraries and municipal buildings in West Milford, Clifton, Wayne, Totowa, Hawthorne and Paterson, also by appointment only with no walk-ins. (source: https://www.passaiccountynj.org/government/passaic-county-surrogate/appointments-night-court)",
+        "To probate a will in Passaic County, bring a death certificate with a raised seal, the original will, names and addresses of next of kin, and government-issued photo ID. A witness must appear unless the will has a self-proving affidavit. (source: https://www.passaiccountynj.org/government/passaic-county-surrogate/will-probate)",
+        "Passaic's Surrogate lists a minimum probate fee of $100.00 for a two-page will with one certificate, with each additional certificate $5. Payment is by cash or check only, and the page shows no date for the fee. (source: https://www.passaiccountynj.org/government/passaic-county-surrogate/will-probate)",
+        "The Passaic Surrogate's page says letters cannot be issued until at least 11 days after the date of death, though the executor can start the paperwork at any time after death. (source: https://www.passaiccountynj.org/government/passaic-county-surrogate/will-probate)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "salem",
+      "name": "Salem County",
+      "seat": "Salem",
+      "circuit": "Superior Court of New Jersey, Salem Vicinage",
+      "probateCourt": {
+        "name": "Salem County Surrogate's Court",
+        "address": "Salem County Courthouse, 92 Market Street, Suite A122, Salem, NJ 08079",
+        "url": "https://surrogate.salemcountynj.gov/contact-us",
+        "phone": "856-935-7510 x8323"
+      },
+      "notes": [
+        "The Salem County Surrogate is open Monday to Friday, 8:30am to 4:30pm, and appointments are required for estates. (source: https://surrogate.salemcountynj.gov/contact-us)",
+        "In Salem, a named executor should bring the original will, a death certificate with a raised seal, payment, and a completed Probate Fact Sheet (can be filled in at the office). (source: https://surrogate.salemcountynj.gov/what-to-do-first/)",
+        "Salem accepts personal check, money order or cash, and does not accept credit or debit cards. (source: https://surrogate.salemcountynj.gov/what-to-do-first/)",
+        "Salem says an executor can be appointed on day 12 after the date of death, though applications may be submitted earlier. (source: https://surrogate.salemcountynj.gov/what-to-do-first/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "sussex",
+      "name": "Sussex County",
+      "seat": "Newton",
+      "circuit": "Superior Court of New Jersey, Sussex Vicinage",
+      "probateCourt": {
+        "name": "Sussex County Surrogate's Office",
+        "address": "One Spring Street, Newton, NJ 07860",
+        "phone": "973-579-0200",
+        "url": "https://www.sussex.nj.us/684/Sussex-County-Surrogates-Office"
+      },
+      "notes": [
+        "The Sussex County Surrogate's Office page lists One Spring Street, Newton, NJ 07860 and phone 973-579-0200. (source: https://www.sussex.nj.us/684/Sussex-County-Surrogates-Office)",
+        "The Sussex Surrogate's page offers General Information Worksheets for estates with a will and without a will, which can be submitted online, plus renunciation forms and a New Jersey Form L-9 real property tax waiver affidavit. (source: https://www.sussex.nj.us/684/Sussex-County-Surrogates-Office)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "union",
+      "name": "Union County",
+      "seat": "Elizabeth",
+      "circuit": "Superior Court of New Jersey, Union Vicinage",
+      "probateCourt": {
+        "name": "Union County Surrogate's Court",
+        "address": "2 Broad Street, Second Floor, Old Annex, Elizabeth, NJ 07207",
+        "phone": "908-527-4280",
+        "url": "https://ucnj.org/surrogate/contact-us/"
+      },
+      "notes": [
+        "The Union County Surrogate's Elizabeth office is at 2 Broad Street, Second Floor, Old Annex, within the Union County Courthouse. Hours are Monday through Friday, 8:30am to 4:00pm; phone 908-527-4280. (source: https://ucnj.org/surrogate/contact-us/)",
+        "Union County also has a Surrogate office in the Colleen Fraser Building, 300 North Avenue East, Westfield, open Mondays, Wednesdays and Fridays by appointment only. (source: https://ucnj.org/surrogate/contact-us/)",
+        "The Union County Surrogate's contact page links to an online appointment booking page. (source: https://ucnj.org/surrogate/contact-us/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "warren",
+      "name": "Warren County",
+      "seat": "Belvidere",
+      "circuit": "Superior Court of New Jersey, Warren Vicinage",
+      "probateCourt": {
+        "name": "Warren County Surrogate's Court",
+        "address": "323 Front Street, Belvidere, NJ 07823",
+        "phone": "908-475-6223",
+        "url": "https://www.warrencountynj.gov/government/warren-county-surrogate-s-court/about-the-surrogate-s-court"
+      },
+      "notes": [
+        "The Warren County Surrogate's Court is at 323 Front Street, Belvidere, NJ 07823, and the county page suggests calling 908-475-6223 for an appointment. Hours are Monday to Friday, 8:00 a.m. to 4:30 p.m. (source: https://www.warrencountynj.gov/government/warren-county-surrogate-s-court/about-the-surrogate-s-court)",
+        "Warren County describes its Surrogate's Court as a county department and branch of the Superior Court, acting as clerk of the Chancery Division's Probate Part. It also handles guardianship appointments and formal accountings. (source: https://www.warrencountynj.gov/government/warren-county-surrogate-s-court/about-the-surrogate-s-court)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    }
+  ]
+}

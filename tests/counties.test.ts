@@ -50,3 +50,19 @@ describe("county pages", () => {
     expect(paths.has("/estate-planning/illinois/chicago")).toBe(true);
   });
 });
+
+describe("New Jersey county pages", () => {
+  const nj = getCounties("new-jersey");
+
+  it("loads New Jersey counties with sourced notes and no Illinois statute text", () => {
+    expect(nj.length).toBeGreaterThan(10);
+    for (const c of nj) for (const n of c.notes) expect(n).toMatch(SOURCE);
+    for (const c of nj) for (const f of countyFaqs(c)) expect(f.a).not.toMatch(/ILCS|Illinois/);
+  });
+
+  it("asks where to probate a will, naming the Surrogate", () => {
+    const bergen = nj.find((c) => c.slug === "bergen")!;
+    expect(countyFaqs(bergen)[0].q).toBe("Where do I probate a will in Bergen County?");
+    expect(feesFor(bergen)).toBeUndefined();
+  });
+});
