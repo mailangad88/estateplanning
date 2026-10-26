@@ -164,6 +164,16 @@ An old will can cause as many problems as no will. See [what happens if you die 
 
 ## More questions people ask
 
+If a beneficiary dies before you, [what happens to a gift in a will when the beneficiary dies first or you both die together](/learn/wills/lapsed-gifts-and-simultaneous-death) explains lapse, anti-lapse laws and survivorship clauses.
+
+To make a gift depend on school, age or behavior, [conditions on an inheritance in a will](/learn/wills/conditions-on-an-inheritance-in-a-will) shows which conditions hold up and when a trust works better.
+
+For the wording of individual gifts, [specific, general and residuary gifts](/learn/wills/specific-general-and-residuary-gifts) covers cars, cash, forgiven loans and what happens when the estate runs short.
+
+After a move, a posting abroad or a change in citizenship, [whether your will is still valid](/learn/wills/will-moving-states-or-living-abroad) lists what to recheck.
+
+If the person you named cannot or will not act, [what happens when your executor dies, refuses or can't serve](/learn/wills/when-your-named-executor-cannot-serve) explains the backup chain.
+
 A will does not keep you out of court, and [does a will avoid probate](/learn/wills/does-a-will-avoid-probate) explains when it takes effect, what the executor can do first and which assets skip probate.
 
 Before you name an heir for the house, [leaving a house in a will](/learn/wills/leaving-a-house-in-a-will) covers the mortgage, joint title, a spouse's rights and shared inheritances.

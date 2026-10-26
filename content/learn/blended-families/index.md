@@ -148,6 +148,8 @@ Related life situations have their own pages: [estate planning after divorce](/l
 
 ## More questions people ask
 
+To keep a second marriage from turning into a family dispute, see [how to prevent inheritance fights in a blended family](/learn/blended-families/preventing-inheritance-fights-in-a-blended-family).
+
 For larger estates, a [spousal lifetime access trust in a blended family](/learn/blended-families/spousal-lifetime-access-trust-blended-family) shows how to support a new spouse while locking in the remainder for your children, and where the divorce risk bites.
 
 If your documents predate your second marriage, [what happens if you remarry and never update your will](/learn/blended-families/remarried-without-updating-your-will) explains the default rules and when a trust is worth it.

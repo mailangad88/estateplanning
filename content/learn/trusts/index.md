@@ -175,6 +175,18 @@ A trust only controls what is titled in its name. Read [what happens if you neve
 
 ## More questions people ask
 
+To change a trust you already signed, [how to change or revoke a living trust](/learn/trusts/how-to-change-or-revoke-a-living-trust) explains amendments, restatements and when the door has closed.
+
+If you want a trust that starts only at death through your will, [what a testamentary trust is](/learn/trusts/testamentary-trusts) compares it with a living trust.
+
+Before buying a trust online or attending a seminar, read [online living trust vs. a lawyer](/learn/trusts/online-living-trust-vs-lawyer) for what works, what fails and how to spot a sales pitch.
+
+Spouses deciding between one trust and two can start with [joint living trusts for married couples](/learn/trusts/joint-living-trust-for-married-couples).
+
+For an asset-by-asset decision on what to retitle and what to leave out, see [what assets go in a living trust](/learn/trusts/what-assets-go-in-a-living-trust).
+
+When a parent is declining, [creating a trust with dementia or a power of attorney](/learn/trusts/creating-a-trust-with-dementia-or-a-power-of-attorney) explains capacity and what an agent may do.
+
 For the honest costs of a trust, including funding gaps, upkeep and the lack of tax or creditor benefits, read [the downsides of a living trust](/learn/trusts/what-is-the-downside-of-a-living-trust).
 
 If you worry that a relative could challenge your plan, or you are a beneficiary questioning one, [can a living trust be contested](/learn/trusts/can-a-living-trust-be-contested) covers grounds, who can sue and deadlines.

@@ -136,6 +136,22 @@
         [
           "what-heirs-can-do-about-a-slow-illinois-executor",
           "What heirs can do about a slow or uncooperative Illinois executor"
+        ],
+        [
+          "illinois-joint-tenancy-and-tenancy-by-the-entirety",
+          "Joint tenancy and tenancy by the entirety in Illinois: how a deed has to read"
+        ],
+        [
+          "illinois-payable-on-death-and-joint-bank-accounts",
+          "Payable-on-death and joint bank accounts in Illinois: who gets the money"
+        ],
+        [
+          "illinois-homestead-exemption-after-a-death",
+          "The Illinois homestead exemption after a death: what a surviving spouse and children keep"
+        ],
+        [
+          "revoking-an-illinois-power-of-attorney",
+          "How to revoke an Illinois power of attorney, or stop an agent who is misusing it"
         ]
       ]
     },
@@ -203,6 +219,30 @@
         [
           "house-stuck-in-probate",
           "What happens if the house is stuck in probate?"
+        ],
+        [
+          "dies-before-signing-their-will",
+          "What happens if someone dies before signing their will?"
+        ],
+        [
+          "house-still-in-late-spouses-name",
+          "What happens if the house is still in my late spouse's name?"
+        ],
+        [
+          "parent-remarries-and-new-spouse-inherits-everything",
+          "What happens if my parent remarries and the new spouse inherits everything?"
+        ],
+        [
+          "siblings-fight-over-a-parents-estate",
+          "What happens if siblings fight over a parent's estate?"
+        ],
+        [
+          "caregiver-cannot-get-medical-or-bank-records",
+          "What happens if a caregiver cannot get medical or bank records?"
+        ],
+        [
+          "executor-overwhelmed-or-unable-to-serve",
+          "What happens if the executor is overwhelmed or cannot do the job?"
         ]
       ]
     },
@@ -282,6 +322,26 @@
         [
           "can-a-will-be-changed-after-death",
           "Can a will be changed after death? What heirs can and cannot do"
+        ],
+        [
+          "lapsed-gifts-and-simultaneous-death",
+          "What happens to a gift in a will if the beneficiary dies first, or you both die together?"
+        ],
+        [
+          "conditions-on-an-inheritance-in-a-will",
+          "Can you put conditions on an inheritance in a will?"
+        ],
+        [
+          "specific-general-and-residuary-gifts",
+          "Specific, general and residuary gifts: how to word who gets what in a will"
+        ],
+        [
+          "will-moving-states-or-living-abroad",
+          "Is your will still valid if you move states, live abroad or are not a US citizen?"
+        ],
+        [
+          "when-your-named-executor-cannot-serve",
+          "What if your executor dies, refuses to serve, or can't do the job?"
         ]
       ]
     },
@@ -353,6 +413,30 @@
         [
           "what-happens-to-a-living-trust-when-you-die",
           "What happens to a living trust when you die? A timeline for your family"
+        ],
+        [
+          "how-to-change-or-revoke-a-living-trust",
+          "How to change or revoke a living trust: amendments, restatements and when it is too late"
+        ],
+        [
+          "testamentary-trusts",
+          "What is a testamentary trust? A trust created in your will, and how it compares to a living trust"
+        ],
+        [
+          "online-living-trust-vs-lawyer",
+          "Online living trust vs. a lawyer: are online trusts valid, and when is DIY a mistake?"
+        ],
+        [
+          "joint-living-trust-for-married-couples",
+          "Joint living trust for married couples: how it works and what happens when one spouse dies"
+        ],
+        [
+          "what-assets-go-in-a-living-trust",
+          "What assets go in a living trust? A sorting guide from house to car to Social Security"
+        ],
+        [
+          "creating-a-trust-with-dementia-or-a-power-of-attorney",
+          "Can someone with dementia create a trust, or can a power of attorney set one up?"
         ]
       ]
     },
@@ -452,6 +536,18 @@
         [
           "probate-inventory-and-estate-accounting",
           "Probate inventory and estate accounting: how to list assets and report to the court"
+        ],
+        [
+          "community-property-with-right-of-survivorship",
+          "Community property with right of survivorship: how it works and why couples use it"
+        ],
+        [
+          "probate-creditor-claims-period",
+          "The probate creditor claims period: how long creditors have to come forward"
+        ],
+        [
+          "probate-lawyer-fee-agreements",
+          "Do probate lawyers charge by the hour or a percentage? How to read a fee agreement"
         ]
       ]
     },
@@ -551,6 +647,26 @@
         [
           "can-i-stay-in-the-house-after-a-parent-or-spouse-dies",
           "Can I stay in the house after a parent or spouse dies?"
+        ],
+        [
+          "how-many-death-certificates-do-i-need",
+          "How many death certificates do I need, what do they cost and how long do they take?"
+        ],
+        [
+          "social-security-after-a-death",
+          "Social Security after a death: reporting it, the $255 payment, survivor benefits and what to give back"
+        ],
+        [
+          "who-pays-for-the-funeral",
+          "Who pays for the funeral, and can you be reimbursed from the estate?"
+        ],
+        [
+          "how-to-disclaim-an-inheritance",
+          "How to disclaim an inheritance: refusing it, the nine-month rule and where it goes instead"
+        ],
+        [
+          "is-an-inheritance-marital-property",
+          "Is an inheritance marital property? What happens in a divorce, and with child support"
         ]
       ]
     },
@@ -606,6 +722,18 @@
         [
           "how-much-does-a-power-of-attorney-cost",
           "How much does a power of attorney cost? Lawyer, online form and DIY compared"
+        ],
+        [
+          "what-does-a-power-of-attorney-agent-have-to-do",
+          "What does a power of attorney agent have to do? Duties, limits and record keeping"
+        ],
+        [
+          "can-you-name-more-than-one-power-of-attorney-agent",
+          "Co-agents and successor agents: how to name more than one power of attorney agent"
+        ],
+        [
+          "power-of-attorney-vs-executor",
+          "Power of attorney vs. executor: who acts for you while alive and after death"
         ]
       ]
     },
@@ -677,6 +805,14 @@
         [
           "do-advance-directives-work-in-other-states",
           "Do advance directives work across states? Travel, moving and second homes"
+        ],
+        [
+          "mental-health-advance-directive",
+          "Mental health advance directive: what it is and how to write one"
+        ],
+        [
+          "palliative-care-hospice-and-comfort-care-orders",
+          "Palliative care, hospice and comfort-care orders: what to put in your directive"
         ]
       ]
     },
@@ -724,6 +860,18 @@
         [
           "letter-of-intent-for-your-childrens-guardian",
           "Letter of intent for your children's guardian: what to write and what to include"
+        ],
+        [
+          "utma-account-vs-trust-for-a-minor-child",
+          "UTMA account vs. trust for a minor child: which one fits your family"
+        ],
+        [
+          "testamentary-trust-for-minor-children",
+          "Testamentary trust for minor children: what a trust inside your will can and cannot do"
+        ],
+        [
+          "guardian-of-the-person-vs-conservator-of-the-estate",
+          "Guardian of the person vs. conservator of a minor's estate: who does what"
         ]
       ]
     },
@@ -795,6 +943,14 @@
         [
           "dividing-personal-property-and-family-heirlooms",
           "How do I divide personal property and family heirlooms fairly among my children?"
+        ],
+        [
+          "estate-planning-documents-at-30-40-and-50",
+          "Estate planning documents by age: what to have at 30, 40 and 50"
+        ],
+        [
+          "updating-your-plan-after-a-windfall-or-business-sale",
+          "Updating your estate plan after an inheritance, windfall or business sale"
         ]
       ]
     },
@@ -850,6 +1006,10 @@
         [
           "remarried-without-updating-your-will",
           "What happens to your estate if you remarry and never update your will, or have no will"
+        ],
+        [
+          "preventing-inheritance-fights-in-a-blended-family",
+          "How to prevent inheritance fights in a blended family"
         ]
       ]
     },
@@ -968,6 +1128,26 @@
         [
           "estate-tax-vs-inheritance-tax",
           "Estate tax vs inheritance tax: who pays, who owes, and where"
+        ],
+        [
+          "what-if-the-estate-cannot-pay-the-estate-tax",
+          "What happens if the estate cannot pay the estate tax?"
+        ],
+        [
+          "how-assets-are-valued-for-estate-tax",
+          "How are assets valued for estate tax? Houses, IRAs, art and crypto"
+        ],
+        [
+          "qualified-personal-residence-trust-qprt",
+          "How does a QPRT save estate tax on your home?"
+        ],
+        [
+          "do-lifetime-gifts-count-toward-the-estate-tax",
+          "Do gifts made before death count toward the estate tax?"
+        ],
+        [
+          "estate-tax-planning-when-you-are-near-the-exemption",
+          "Is estate tax planning worth it if your estate is near the exemption?"
         ]
       ]
     },
@@ -1070,6 +1250,18 @@
         [
           "how-to-set-up-a-special-needs-trust",
           "How to set up a special needs trust for an adult child, and whether you need a lawyer"
+        ],
+        [
+          "can-a-special-needs-trust-own-a-house",
+          "Can a special needs trust own a house? Buying, holding or leaving a home in the trust"
+        ],
+        [
+          "what-can-special-needs-trust-funds-pay-for",
+          "What can special needs trust funds pay for? A practical list, from phones to funerals"
+        ],
+        [
+          "how-much-to-put-in-a-special-needs-trust",
+          "How much should you put in a special needs trust? Sizing it for a lifetime of support"
         ]
       ]
     },
@@ -1153,6 +1345,18 @@
         [
           "what-assets-are-exempt-from-medicaid",
           "What assets are exempt from Medicaid? Home, car, IRA, life insurance and more"
+        ],
+        [
+          "can-a-nursing-home-make-my-children-pay",
+          "Can a nursing home make my children pay my bills? Guarantors and filial responsibility"
+        ],
+        [
+          "paying-for-a-nursing-home-while-waiting-for-medicaid",
+          "How do you pay for a nursing home while waiting for Medicaid approval?"
+        ],
+        [
+          "tax-breaks-when-you-pay-for-a-parents-care",
+          "Tax breaks and tax traps when you pay for a parent's care"
         ]
       ]
     },
@@ -1212,6 +1416,18 @@
         [
           "domain-names-and-websites-after-death",
           "Domain names and websites after death: how to pass them to your heirs"
+        ],
+        [
+          "subscriptions-and-purchased-media-after-death",
+          "Can you inherit Netflix, Kindle books or an iTunes library? Subscriptions and purchased media after death"
+        ],
+        [
+          "how-inherited-crypto-is-taxed",
+          "How is inherited crypto taxed? Date-of-death value, selling and staking income"
+        ],
+        [
+          "paypal-venmo-and-cash-app-after-death",
+          "What happens to PayPal, Venmo and Cash App balances when someone dies?"
         ]
       ]
     },

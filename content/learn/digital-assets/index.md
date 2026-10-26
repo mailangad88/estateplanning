@@ -148,6 +148,12 @@ No plan makes every account recoverable. Some companies will refuse, some servic
 
 ## More questions people ask
 
+For streaming, e-book and game libraries, [subscriptions and purchased media after death](/learn/digital-assets/subscriptions-and-purchased-media-after-death) explains why licenses do not pass by will and how to stop recurring charges.
+
+On the tax side, [how inherited crypto is taxed](/learn/digital-assets/how-inherited-crypto-is-taxed) covers the date-of-death basis, valuing coins, staking income and what heirs report when they sell.
+
+For money sitting in payment apps, [PayPal, Venmo and Cash App after death](/learn/digital-assets/paypal-venmo-and-cash-app-after-death) explains how the executor claims the balance and why family should not log in.
+
 If you hold crypto on a device or own NFTs, [hardware wallets and NFTs after death](/learn/digital-assets/hardware-wallets-and-nfts-after-death) explains what heirs need to get in and what to leave behind.
 
 To reach a loved one's locked phone or cloud photos, [photos, cloud storage and iPhones after death](/learn/digital-assets/photos-and-iphones-after-death) covers the routes that work and what to do first.

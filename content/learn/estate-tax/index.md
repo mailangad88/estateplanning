@@ -138,6 +138,16 @@ For a view of the whole picture, our [basics guide](/learn/basics) and the [prob
 
 ## More questions people ask
 
+If the estate owes tax but lacks cash, [what happens if the estate cannot pay the estate tax](/learn/estate-tax/what-if-the-estate-cannot-pay-the-estate-tax) covers extensions, installments and executor liability.
+
+To see how a house, IRA, artwork or crypto is priced for the return, read [how assets are valued for estate tax](/learn/estate-tax/how-assets-are-valued-for-estate-tax).
+
+Owners with a fast-growing home can read [how a QPRT saves estate tax](/learn/estate-tax/qualified-personal-residence-trust-qprt), including the survival risk and the lost step-up.
+
+For how earlier gifts are added back at death, see [do gifts made before death count toward the estate tax](/learn/estate-tax/do-lifetime-gifts-count-toward-the-estate-tax).
+
+If your estate is close to the line, [estate tax planning near the exemption](/learn/estate-tax/estate-tax-planning-when-you-are-near-the-exemption) helps you decide how much planning is worth it.
+
 Large estates with fast-growing assets sometimes use a [grantor retained annuity trust](/learn/estate-tax/grantor-retained-annuity-trust) to pass growth to children with little or no gift tax.
 
 The executor's paperwork, including the nine-month deadline and when to file for portability only, is covered in [Form 706, the estate tax return](/learn/estate-tax/form-706-estate-tax-return).

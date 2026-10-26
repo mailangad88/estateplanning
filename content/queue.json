@@ -369,10 +369,11 @@
    "keyword": "what assets go in a trust",
    "intent": "explainer",
    "cluster": "trusts",
-   "slug": "what-assets-go-in-a-trust",
+   "slug": "what-assets-go-in-a-living-trust",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 2"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 2",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K035",
@@ -447,8 +448,9 @@
    "cluster": "trusts",
    "slug": "joint-living-trust-for-married-couples",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 2"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 2",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K042",
@@ -457,8 +459,9 @@
    "cluster": "trusts",
    "slug": "trust-funding-checklist",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 2"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 2",
+   "coveredBy": "/learn/trusts/how-to-fund-a-trust"
   },
   {
    "id": "K043",
@@ -476,20 +479,22 @@
    "keyword": "living trust amendment",
    "intent": "explainer",
    "cluster": "trusts",
-   "slug": "living-trust-amendment",
+   "slug": "how-to-change-or-revoke-a-living-trust",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 2"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 2",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K045",
    "keyword": "how to revoke a trust",
    "intent": "explainer",
    "cluster": "trusts",
-   "slug": "how-to-revoke-a-trust",
+   "slug": "how-to-change-or-revoke-a-living-trust",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 2"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 2",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K046",
@@ -498,8 +503,9 @@
    "cluster": "trusts",
    "slug": "irrevocable-trust-and-medicaid",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 2"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 2",
+   "coveredBy": "/learn/elder-care/medicaid-asset-protection-trust"
   },
   {
    "id": "K047",
@@ -508,8 +514,9 @@
    "cluster": "trusts",
    "slug": "trust-for-beneficiaries-who-are-minors",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 2"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 2",
+   "coveredBy": "/learn/trusts/trusts-for-children"
   },
   {
    "id": "K048",
@@ -518,18 +525,20 @@
    "cluster": "trusts",
    "slug": "spendthrift-trust",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 2"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 2",
+   "coveredBy": "/learn/trusts/spendthrift-trusts"
   },
   {
    "id": "K049",
    "keyword": "testamentary trust",
    "intent": "explainer",
    "cluster": "trusts",
-   "slug": "testamentary-trust",
+   "slug": "testamentary-trusts",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 2"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 2",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K050",
@@ -558,10 +567,11 @@
    "keyword": "LegalZoom vs lawyer trust",
    "intent": "comparison",
    "cluster": "trusts",
-   "slug": "legalzoom-vs-lawyer-trust",
+   "slug": "online-living-trust-vs-lawyer",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 2"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 2",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K053",
@@ -856,8 +866,9 @@
    "cluster": "probate",
    "slug": "community-property-with-right-of-survivorship",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 3"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 3",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K080",
@@ -1117,10 +1128,11 @@
    "keyword": "POA agent duties",
    "intent": "explainer",
    "cluster": "power-of-attorney",
-   "slug": "poa-agent-duties",
+   "slug": "what-does-a-power-of-attorney-agent-have-to-do",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 4"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 4",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K104",
@@ -1245,20 +1257,22 @@
    "keyword": "Can I have more than one agent?",
    "intent": "question",
    "cluster": "power-of-attorney",
-   "slug": "can-i-have-more-than-one-agent",
+   "slug": "can-you-name-more-than-one-power-of-attorney-agent",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 4"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 4",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K116",
    "keyword": "Is POA the same as executor?",
    "intent": "question",
    "cluster": "power-of-attorney",
-   "slug": "is-poa-the-same-as-executor",
+   "slug": "power-of-attorney-vs-executor",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 4"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 4",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K117",
@@ -1421,8 +1435,9 @@
    "cluster": "healthcare-directives",
    "slug": "mental-health-advance-directive",
    "priority": 5,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 5"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 5",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K132",
@@ -1552,18 +1567,20 @@
    "cluster": "guardianship",
    "slug": "naming-a-guardian-in-a-will",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 6"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 6",
+   "coveredBy": "/learn/guardianship/does-a-guardian-named-in-a-will-hold-up-in-court"
   },
   {
    "id": "K144",
    "keyword": "guardian vs conservator of minor's estate",
    "intent": "comparison",
    "cluster": "guardianship",
-   "slug": "guardian-vs-conservator-of-minor-s-estate",
+   "slug": "guardian-of-the-person-vs-conservator-of-the-estate",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 6"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 6",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K145",
@@ -1625,20 +1642,22 @@
    "keyword": "trust for minor children",
    "intent": "explainer",
    "cluster": "guardianship",
-   "slug": "trust-for-minor-children",
+   "slug": "testamentary-trust-for-minor-children",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 6"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 6",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K151",
    "keyword": "UTMA vs trust",
    "intent": "comparison",
    "cluster": "guardianship",
-   "slug": "utma-vs-trust",
+   "slug": "utma-account-vs-trust-for-a-minor-child",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 6"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 6",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K152",
@@ -1647,8 +1666,9 @@
    "cluster": "guardianship",
    "slug": "life-insurance-for-children-s-care",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 6"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 6",
+   "coveredBy": "/learn/guardianship/leaving-money-to-minors"
   },
   {
    "id": "K153",
@@ -1677,10 +1697,11 @@
    "keyword": "testamentary trust for kids",
    "intent": "explainer",
    "cluster": "guardianship",
-   "slug": "testamentary-trust-for-kids",
+   "slug": "testamentary-trust-for-minor-children",
    "priority": 3,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 6"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 6",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K156",
@@ -2030,18 +2051,20 @@
    "cluster": "special-needs",
    "slug": "can-a-special-needs-trust-own-a-house",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 7",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K188",
    "keyword": "What can special needs trust funds be used for?",
    "intent": "question",
    "cluster": "special-needs",
-   "slug": "what-can-special-needs-trust-funds-be-used-for",
+   "slug": "what-can-special-needs-trust-funds-pay-for",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 7",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K189",
@@ -2059,10 +2082,11 @@
    "keyword": "How much can you put in a special needs trust?",
    "intent": "cost",
    "cluster": "special-needs",
-   "slug": "how-much-can-you-put-in-a-special-needs-trust",
+   "slug": "how-much-to-put-in-a-special-needs-trust",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 7"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 7",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K191",
@@ -2663,10 +2687,11 @@
    "keyword": "How do I avoid family conflict over inheritance?",
    "intent": "question",
    "cluster": "blended-families",
-   "slug": "how-do-i-avoid-family-conflict-over-inheritance",
+   "slug": "preventing-inheritance-fights-in-a-blended-family",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 9"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 9",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K246",
@@ -3951,8 +3976,9 @@
    "cluster": "probate",
    "slug": "summary-probate",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 14"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 14",
+   "coveredBy": "/learn/probate/small-estate-affidavit"
   },
   {
    "id": "K363",
@@ -4003,10 +4029,11 @@
    "keyword": "probate creditors claims period",
    "intent": "explainer",
    "cluster": "probate",
-   "slug": "probate-creditors-claims-period",
+   "slug": "probate-creditor-claims-period",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 14"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 14",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K368",
@@ -4026,8 +4053,9 @@
    "cluster": "probate",
    "slug": "heir-property",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 14"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 14",
+   "coveredBy": "/learn/property-and-assets/heirs-property"
   },
   {
    "id": "K370",
@@ -4056,10 +4084,11 @@
    "keyword": "probate lawyer cost",
    "intent": "cost",
    "cluster": "probate",
-   "slug": "probate-lawyer-cost",
+   "slug": "probate-lawyer-fee-agreements",
    "priority": 2,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 14"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 14",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K373",
@@ -4462,10 +4491,11 @@
    "keyword": "What happens if someone dies before signing their will?",
    "intent": "scenario",
    "cluster": "what-if",
-   "slug": "unsigned-will",
+   "slug": "dies-before-signing-their-will",
    "priority": 2,
-   "status": "queued",
-   "source": "Angad's what-if request (2026-10-06)"
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K410",
@@ -4494,10 +4524,11 @@
    "keyword": "What happens if the house is still in my late spouse's name?",
    "intent": "scenario",
    "cluster": "what-if",
-   "slug": "house-in-late-spouses-name",
+   "slug": "house-still-in-late-spouses-name",
    "priority": 2,
-   "status": "queued",
-   "source": "Angad's what-if request (2026-10-06)"
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K413",
@@ -4706,40 +4737,44 @@
    "keyword": "What happens if my parent remarries and the new spouse inherits everything?",
    "intent": "scenario",
    "cluster": "what-if",
-   "slug": "new-spouse-takes-all",
+   "slug": "parent-remarries-and-new-spouse-inherits-everything",
    "priority": 1,
-   "status": "queued",
-   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)"
+   "status": "drafted",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K432",
    "keyword": "What happens if siblings fight over a parent's estate?",
    "intent": "scenario",
    "cluster": "what-if",
-   "slug": "family-dispute",
+   "slug": "siblings-fight-over-a-parents-estate",
    "priority": 1,
-   "status": "queued",
-   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)"
+   "status": "drafted",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K433",
    "keyword": "What happens if a caregiver cannot get medical or bank records for the person they care for?",
    "intent": "scenario",
    "cluster": "what-if",
-   "slug": "caregiver-cant-access-records",
+   "slug": "caregiver-cannot-get-medical-or-bank-records",
    "priority": 1,
-   "status": "queued",
-   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)"
+   "status": "drafted",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K434",
    "keyword": "What happens if the executor is overwhelmed or cannot do the job?",
    "intent": "scenario",
    "cluster": "what-if",
-   "slug": "executor-burden",
+   "slug": "executor-overwhelmed-or-unable-to-serve",
    "priority": 1,
-   "status": "queued",
-   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)"
+   "status": "drafted",
+   "source": "Redesign life-journey scenarios (PR #27, 2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K435",

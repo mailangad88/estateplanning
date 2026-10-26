@@ -175,6 +175,12 @@ You can do the first two this month and the rest over time. A good first step is
 
 ## More questions people ask
 
+[UTMA account vs. trust for a minor child](/learn/guardianship/utma-account-vs-trust-for-a-minor-child) compares cost, control and the age a child takes over.
+
+If you want a children's trust written into your will, [testamentary trust for minor children](/learn/guardianship/testamentary-trust-for-minor-children) explains how it works and its limits.
+
+[Guardian of the person vs. conservator of the estate](/learn/guardianship/guardian-of-the-person-vs-conservator-of-the-estate) separates the child's care from the child's money.
+
 If you wonder whether a judge will follow your choice, [does a guardian named in a will hold up in court](/learn/guardianship/does-a-guardian-named-in-a-will-hold-up-in-court) explains when nominations succeed and when they fail.
 
 If your parents are your first thought, [can grandparents be named guardian](/learn/guardianship/can-grandparents-be-named-guardian) covers age, health, money and backups.

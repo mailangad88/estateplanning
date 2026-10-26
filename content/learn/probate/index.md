@@ -154,6 +154,12 @@ State rules matter a great deal here. If you want to see how probate works where
 
 ## More questions people ask
 
+Married couples in community property states can read [community property with right of survivorship](/learn/probate/community-property-with-right-of-survivorship) to see how one form of title skips probate and keeps a full tax basis step-up.
+
+Executors wondering when it is safe to pay heirs should read [the probate creditor claims period](/learn/probate/probate-creditor-claims-period).
+
+Before you sign with a lawyer, [how probate lawyers charge and what a fee agreement should say](/learn/probate/probate-lawyer-fee-agreements) explains hourly, flat and percentage fees.
+
 If you are choosing between a deed and a trust for your home, [is a TOD deed better than a trust](/learn/probate/is-a-tod-deed-better-than-a-trust) shows where the deed works and where it fails.
 
 To learn how an enhanced life estate keeps you in control while skipping probate, read [lady bird deed explained](/learn/probate/lady-bird-deed-explained).

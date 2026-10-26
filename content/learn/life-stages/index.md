@@ -153,6 +153,10 @@ Start with whichever problem would be hardest on your family tomorrow. For many 
 
 ## More questions people ask
 
+For a decade-by-decade checklist, see [estate planning documents at 30, 40 and 50](/learn/life-stages/estate-planning-documents-at-30-40-and-50).
+
+After a large inheritance or sale, [updating your plan after a windfall or business sale](/learn/life-stages/updating-your-plan-after-a-windfall-or-business-sale) lists what to fix first.
+
 If you want to include grandchildren, [leaving an inheritance to grandchildren](/learn/life-stages/leaving-an-inheritance-to-grandchildren) compares trusts, custodial accounts and 529 plans.
 
 As children grow up, [updating your plan when your family grows](/learn/life-stages/updating-your-plan-when-your-family-grows) covers a second baby, an 18th birthday, a wedding and a grandchild.
