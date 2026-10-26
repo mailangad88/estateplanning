@@ -162,6 +162,18 @@ Life stage changes which items matter most. If you are a new parent, the guardia
 
 An old will can cause as many problems as no will. See [what happens if you die with an outdated will](/learn/what-if/outdated-will), and if time is short, [whether it is too late to make a will](/learn/what-if/too-late-for-a-will).
 
+## More questions people ask
+
+A short sworn statement can spare your executor a hunt for witnesses, and [the self-proving affidavit explained](/learn/wills/self-proving-affidavit-explained) covers who signs it, what a notary does and what happens without one.
+
+Couples weighing one shared document should read [joint will vs. mutual will](/learn/wills/joint-will-vs-mutual-will) to see how a joint will can lock in the survivor and what to use instead.
+
+To learn whether a penalty clause really deters a challenge, see [no-contest clauses and how courts treat them](/learn/wills/no-contest-clause-in-a-will).
+
+When life changes after you sign, [changing a will with a codicil, a new will or revocation](/learn/wills/changing-a-will-and-codicils) explains which route fits and how to sign it.
+
+If the original cannot be found, [what to do about a lost original will](/learn/wills/lost-original-will) covers where to search and how a copy can be admitted to probate.
+
 ## How we can help
 
 You do not need to work out the whole plan alone. Our attorneys can review a will you already have, draft a new one with a proper signing, or help you decide whether a trust-based plan fits better. The [plan finder](/plan-finder) takes a few minutes and suggests which documents suit your situation, or you can book a consultation to talk it over. There is no pressure to decide anything on the first call.

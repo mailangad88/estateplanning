@@ -146,6 +146,18 @@ Some families find this easier with a short written note, with the location of t
 
 No plan makes every account recoverable. Some companies will refuse, some services will delete data on a schedule and some licenses end at death. The aim is narrower and achievable: that your family can find the important things, reach the ones that matter most and make informed choices about the rest, instead of starting from nothing during a hard time.
 
+## More questions people ask
+
+The state law that decides whether an executor, agent or trustee can open your accounts is covered in [what RUFADAA is](/learn/digital-assets/rufadaa-explained).
+
+To choose someone to handle your online accounts and files, read [what a digital executor is](/learn/digital-assets/what-is-a-digital-executor).
+
+If you are stuck at an email provider, [can an executor access email](/learn/digital-assets/can-an-executor-access-email) explains what consent, paperwork and court orders are needed.
+
+For a working to-do list after a death, use the [online accounts checklist](/learn/digital-assets/online-accounts-after-death-checklist).
+
+To decide between the two documents for crypto and other digital property, see [crypto in a will or a trust](/learn/digital-assets/crypto-in-a-will-or-a-trust).
+
 ## How we can help
 
 Digital estate planning works best when your legal documents and your practical access plan fit together. Our attorneys can add digital asset provisions to your will, trust and power of attorney, and help you decide who should hold what. Use the [plan finder](/plan-finder) to see where you stand, or book a consultation when you are ready. A short conversation now can save your family a long and frustrating search later.

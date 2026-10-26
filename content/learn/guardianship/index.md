@@ -173,6 +173,18 @@ You can do the first two this month and the rest over time. A good first step is
 - [Leaving money to minor children](/learn/guardianship/leaving-money-to-minors): trusts, UTMA accounts, 529 plans and life insurance compared.
 - [Temporary and standby guardians](/learn/guardianship/temporary-and-standby-guardians): documents that cover emergencies while you are alive.
 
+## More questions people ask
+
+If you wonder whether a judge will follow your choice, [does a guardian named in a will hold up in court](/learn/guardianship/does-a-guardian-named-in-a-will-hold-up-in-court) explains when nominations succeed and when they fail.
+
+If your parents are your first thought, [can grandparents be named guardian](/learn/guardianship/can-grandparents-be-named-guardian) covers age, health, money and backups.
+
+For the steps that make a guardianship official, by will or by court petition, see [how to make guardianship legal](/learn/guardianship/how-to-make-guardianship-legal).
+
+If you worry that a guardian will decline or fail in the job, [can a guardian be removed or refuse to serve](/learn/guardianship/can-a-guardian-be-removed-or-refuse-to-serve) explains what a court does.
+
+To give your guardian practical guidance beyond the will, read [letter of intent for your children's guardian](/learn/guardianship/letter-of-intent-for-your-childrens-guardian).
+
 ## How we can help
 
 Our attorneys can help you choose and name a guardian, set up a trust for your children, and make sure beneficiary forms and emergency documents match. If you are not sure where to begin, our [plan finder](/plan-finder) will suggest the documents that fit your family, and you can book a consultation whenever you are ready.

@@ -162,6 +162,18 @@ Owners who work alone have the opposite problem: no one else knows the business.
 
 Related pillars worth reading alongside this one: [trusts](/learn/trusts), [power of attorney](/learn/power-of-attorney), [estate and gift taxes](/learn/estate-tax) and [probate](/learn/probate).
 
+## More questions people ask
+
+If you run the business on your own with no entity, [what happens to a sole proprietorship at death](/learn/business-owners/what-happens-to-a-sole-proprietorship-at-death) explains who can act, what the estate owes and how to leave a plan.
+
+To see whether a revocable trust can hold your LLC, shares or business assets, including the S corporation trust rules, read [can I put my business in a living trust](/learn/business-owners/can-i-put-my-business-in-a-living-trust).
+
+For cash to keep the company steady when a vital owner or employee is lost, see [key person insurance](/learn/business-owners/key-person-insurance) and how it differs from buy-sell funding.
+
+[How a business is valued for estate tax](/learn/business-owners/how-a-business-is-valued-for-estate-tax) covers fair market value, appraisal methods, discounts and why the number matters even below the exemption.
+
+If you want to start the transfer during your lifetime, [gifting business interests to your children](/learn/business-owners/gifting-business-interests-to-children) explains gift tax, carryover basis, discounts and family limited partnerships.
+
 ## How we can help
 
 A business owner's plan involves your company documents, your personal estate documents, insurance and tax advice. Our attorneys can look at these together and identify where they conflict. You can use the [plan finder](/plan-finder) to see which documents fit your situation, or book a consultation to walk through your business and your family.

@@ -159,6 +159,18 @@ State law controls the name of the documents, the number of witnesses, who may n
 
 Healthcare directives handle medical decisions and information. The [durable financial power of attorney](/learn/power-of-attorney/durable-financial-power-of-attorney) handles money. A will or [trust](/learn/trusts) handles property after death. Together they form a complete incapacity and legacy plan. If you have not yet put these in place, our guide on [what estate planning is](/learn/basics/what-is-estate-planning) shows how to start. Parents of minor children should also consider [naming a guardian](/learn/guardianship), and families of a loved one with disabilities may want to read our [special needs planning guide](/learn/special-needs).
 
+## More questions people ask
+
+If the terms are tangled, [advance directive vs. living will vs. healthcare proxy](/learn/healthcare-directives/advance-directive-vs-living-will-vs-healthcare-proxy) shows what each document does and which you need.
+
+Choosing the person who will speak for you is covered in [who should be your healthcare agent](/learn/healthcare-directives/who-should-be-your-healthcare-agent), including backups and what to tell them.
+
+Not sure whether a free form is enough? [Advance directive forms, Five Wishes or an attorney](/learn/healthcare-directives/advance-directive-forms-five-wishes-or-a-lawyer) compares the options.
+
+To record treatment, organ donation and funeral wishes in the right places, see [how to document your end-of-life wishes](/learn/healthcare-directives/how-to-document-your-end-of-life-wishes).
+
+If you worry a hospital or relative could set your wishes aside, [who can overrule your healthcare directive](/learn/healthcare-directives/who-can-overrule-your-healthcare-directive) explains the limits and what to do.
+
 ## How we can help
 
 Our attorneys prepare healthcare powers of attorney, living wills and HIPAA authorizations that fit together and fit your state, and we help you think through who should speak for you. To see which documents you may still need, try our [plan finder](/plan-finder), or book a consultation to talk through your wishes at your own pace.
