@@ -148,6 +148,8 @@ No plan makes every account recoverable. Some companies will refuse, some servic
 
 ## More questions people ask
 
+To hand on Bitcoin without exposing your keys, [what happens if you do not tell anyone about your crypto](/learn/digital-assets/what-happens-if-you-do-not-tell-anyone-about-your-crypto) covers instruction letters and seed phrase storage.
+
 For your writing, reviews and pseudonymous accounts, [what happens to your blog, online reviews and anonymous accounts](/learn/digital-assets/what-happens-to-your-blog-online-reviews-and-anonymous-accounts-when-you-die) explains who owns the copyright and what family can do.
 
 If you are locked out of a computer or drive, [how to get files from a deceased person's computer, hard drive or cloud storage](/learn/digital-assets/how-to-get-files-from-a-deceased-persons-computer-hard-drive-or-cloud-storage) gives the order to try things in.

@@ -138,6 +138,10 @@ For a view of the whole picture, our [basics guide](/learn/basics) and the [prob
 
 ## More questions people ask
 
+To learn whether the executor, the estate or the beneficiaries bear the bill, read [who pays the estate tax, the executor or the heirs](/learn/estate-tax/who-pays-the-estate-tax-executor-or-heirs).
+
+If you already own a policy, [how to transfer an existing life insurance policy to an ILIT](/learn/estate-tax/how-to-transfer-an-existing-life-insurance-policy-to-an-ilit) walks through the assignment, Crummey notices and the three-year rule.
+
 Once the estate starts earning interest or dividends, [does an estate pay income tax](/learn/estate-tax/does-an-estate-pay-income-tax-form-1041-interest-and-dividends) explains Form 1041, the fiscal-year choice and how the K-1 moves tax to heirs.
 
 To decide between helping your children now and leaving assets at death, [gift vs. inheritance tax](/learn/estate-tax/gift-vs-inheritance-tax-give-now-or-leave-at-death) compares carryover basis with the step-up using real numbers.

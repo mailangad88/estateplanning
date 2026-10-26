@@ -180,6 +180,10 @@ If no document is signed in time, read [what happens if you are incapacitated wi
 
 ## More questions people ask
 
+If your document only covers money, [can a power of attorney make medical decisions](/learn/power-of-attorney/can-a-power-of-attorney-make-medical-decisions) explains which form a hospital needs and what to do when a loved one is in a coma.
+
+For everyday banking and bills, [can a power of attorney open or close bank accounts and pay a mortgage](/learn/power-of-attorney/can-a-power-of-attorney-open-or-close-bank-accounts-and-pay-a-mortgage) covers what banks require and where an agent must stop.
+
 If your springing document is stuck because no doctor will sign, [what to do when a doctor will not certify incapacity](/learn/power-of-attorney/doctor-will-not-certify-incapacity-springing-power-of-attorney) gives the steps in order.
 
 To see why an agent cannot skip probate and when one can fund a trust, read [can a power of attorney avoid probate or fund a trust](/learn/power-of-attorney/can-a-power-of-attorney-avoid-probate-or-fund-a-trust).

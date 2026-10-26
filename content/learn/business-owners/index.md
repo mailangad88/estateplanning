@@ -164,6 +164,10 @@ Related pillars worth reading alongside this one: [trusts](/learn/trusts), [powe
 
 ## More questions people ask
 
+If there is no will at all, [who inherits a business when the owner dies without a will](/learn/business-owners/who-inherits-a-business-when-the-owner-dies-without-a-will) shows how intestacy treats LLC interests, shares and sole proprietorships.
+
+When a co-owner is alive but unable to work, [how a disability buyout provision works](/learn/business-owners/disability-buyout-provision-when-a-business-partner-becomes-incapacitated) explains the trigger, price and funding.
+
 If you are not sure whether your will or your company paperwork controls the stake, [does an operating agreement override your will](/learn/business-owners/does-an-operating-agreement-override-your-will) walks through a worked example.
 
 To pick a successor and tell your family, [how to choose who will run your business after you](/learn/business-owners/how-to-choose-who-will-run-your-business-after-you-family-or-outside-manager) compares family, employees and outside managers.

@@ -150,6 +150,10 @@ For a larger picture, start with our guide to [estate planning basics](/learn/ba
 
 ## More questions people ask
 
+Before listing an inherited or widowed home, [capital gains when you sell an inherited house or a house after a spouse dies](/learn/property-and-assets/capital-gains-when-you-sell-an-inherited-house-or-a-house-after-a-spouse-dies) shows the numbers.
+
+Once a deed is in a trust, [selling or refinancing a house in your living trust](/learn/property-and-assets/can-you-sell-or-refinance-a-house-that-is-in-your-living-trust) explains who signs and what moving out changes.
+
 If an heir receives SSI or Medicaid, [does inheriting a house affect SSI or Medicaid](/learn/property-and-assets/does-inheriting-a-house-affect-ssi-or-medicaid) covers the resource limit and options.
 
 When only one child will keep the house, [how to leave the house to one child and money to another](/learn/property-and-assets/how-to-leave-the-house-to-one-child-and-money-to-another) shows ways to even it out.

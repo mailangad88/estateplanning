@@ -153,6 +153,10 @@ Start with whichever problem would be hardest on your family tomorrow. For many 
 
 ## More questions people ask
 
+When fairness among your children is the sticking point, [should you treat your children equally in your will](/learn/life-stages/should-you-leave-your-children-equal-shares) shows how to weigh need, gifts and caregiving.
+
+If you are raising a grandchild without a court order, [grandparents raising grandchildren](/learn/life-stages/estate-planning-for-grandparents-raising-grandchildren) covers the papers to get and a plan for the child if you cannot continue.
+
 New parents choosing coverage can use [term life insurance when you have a baby](/learn/life-stages/term-life-insurance-when-you-have-a-baby) to size the policy and name the right beneficiary.
 
 For aunts and uncles without children, [leaving an inheritance to nieces and nephews](/learn/life-stages/leaving-an-inheritance-to-nieces-and-nephews) covers naming, minors and New Jersey inheritance tax.
