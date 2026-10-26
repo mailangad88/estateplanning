@@ -18,7 +18,7 @@ const FAQS = [
   { q: "Do you take cases outside your state?", a: "We advise on the law of the state where the attorney is licensed. [Attorney: licensed states]. See [how it works](/how-it-works)." },
   { q: "I only want to know if a trust makes sense. Do I have to book?", a: "No. Try the [will or trust comparison](/tools/will-or-trust), read [living trusts](/living-trusts), or call with a quick question." },
   { q: "Can I text you?", a: "Only after you have opted in to text messages in our form. Please do not text sensitive information. See [text message terms](/legal/sms-terms)." },
-  { q: "Is this a law firm or a referral service?", a: "This is the practice of the attorney named on [about the attorney](/about-the-attorney). We do not pay or accept referral fees. [Attorney: confirm]" },
+  { q: "Is this a law firm or a referral service?", a: "This is a referral website. We match you with an appropriate estate planning attorney in Illinois or New Jersey. [Attorney: how attorneys join the network, how matches are made, and any fees attorneys pay to participate]" },
   { q: "What should I tell you in the first message?", a: "Your name, how to reach you, the county you live in, and one sentence on what is happening. Skip details until we speak." },
 ];
 

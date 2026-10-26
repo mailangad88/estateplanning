@@ -8,6 +8,7 @@ import { noRelationshipText, recordingNoticeText, smsConsentText } from "@/lib/c
 import type { CaptureTool } from "@/lib/lead";
 import type { EducationTopic, QuizAnswers } from "@/lib/quiz";
 import { forgetVisitor, loadVisitor, rememberSubmission, sessionSource, visitorIdForSubmission, type KnownContact } from "@/lib/visitor";
+import FormDisclaimer from "@/components/FormDisclaimer";
 
 export interface LeadResponse {
   served: boolean;
@@ -206,6 +207,7 @@ export default function LeadForm(props: Props) {
         <p className="notice">
           {recordingNoticeText()} We remember the details you enter on this device so you don&apos;t have to type them again.
         </p>
+        <FormDisclaimer />
         {formError && <p className="error" role="alert">{formError}</p>}
         <div className="nav">
           {props.onBack ? (

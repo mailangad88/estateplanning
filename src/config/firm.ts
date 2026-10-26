@@ -8,7 +8,7 @@ import type { BusinessStructure } from "@/lib/fees";
 export const firm = {
   brandName: "Family Plan Law", // PLACEHOLDER brand name
   firmLegalName: "[Firm legal name]",
-  attorneyName: "[Attorney name]",
+  attorneyName: "Sargun Singh",
   attorneyTitle: "Estate planning attorney",
   barNumber: "[Bar number]",
   phone: "(000) 000-0000", // PLACEHOLDER tracked number
@@ -95,11 +95,24 @@ export interface Package {
   excludes: string[];
 }
 
+/**
+ * Sitewide disclaimer (Sargun Singh, 2026-10-25, typos fixed). Shown in the footer, on /book and on every
+ * public form. The site is a referral network that matches visitors with an attorney.
+ */
+export const SITE_DISCLAIMER =
+  "All information on this website is for educational purposes only. It does not constitute legal advice, and it does not create an attorney-client relationship. This is a referral website: we will match you with an appropriate attorney.";
+
+export const SITE_DISCLAIMER_ES =
+  "Toda la información de este sitio web es solo educativa. No constituye asesoría legal ni crea una relación abogado-cliente. Este es un sitio de referencias: lo pondremos en contacto con un abogado adecuado.";
+
+/** Every package includes exactly one round of revisions (Sargun Singh, 2026-10-25). */
+export const PACKAGE_REVISIONS = "One round of revisions to your documents";
+
 /** Flat-fee packages shown on /pricing. Prices are set by the firm. */
 export const packages: Package[] = [
-  { id: "essentials", name: "Essentials", price: "[Flat fee]", for: "One person or a couple with modest assets and no minor children.", includes: ["Will (each spouse)", "Guardian nominations if you have children", "Durable financial power of attorney", "Healthcare power of attorney, living will and HIPAA release", "Signing ceremony"], excludes: ["Trust drafting", "Real estate deeds", "Tax planning", "Court proceedings"] },
-  { id: "complete", name: "Complete", price: "[Flat fee]", for: "Homeowners and families with minor children. The usual fit for families with a home, not the right fit for everyone.", includes: ["Revocable living trust", "Pour-over will", "Financial and healthcare powers of attorney", "Living will and HIPAA release", "Deed transfer of your home into the trust", "Funding checklist plus one review", "Signing ceremony"], excludes: ["Tax planning beyond the trust", "Deeds not listed in the custom scope", "Court proceedings"] },
-  { id: "legacy", name: "Legacy", price: "Quote after consult", for: "Blended families, business owners, property in more than one state, special needs planning or larger estates.", includes: ["Everything in Complete", "Special needs or children's trust provisions", "Additional deeds", "Business interest assignment", "Coordination with your financial advisor or CPA"], excludes: ["Court proceedings", "Tax return preparation", "Work outside the custom scope"] },
+  { id: "essentials", name: "Essentials", price: "[Flat fee]", for: "One person or a couple with modest assets and no minor children.", includes: ["Will (each spouse)", "Guardian nominations if you have children", "Durable financial power of attorney", "Healthcare power of attorney, living will and HIPAA release", "Signing ceremony", PACKAGE_REVISIONS], excludes: ["Revisions after the first round", "Trust drafting", "Real estate deeds", "Tax planning", "Court proceedings"] },
+  { id: "complete", name: "Complete", price: "[Flat fee]", for: "Homeowners and families with minor children. The usual fit for families with a home, not the right fit for everyone.", includes: ["Revocable living trust", "Pour-over will", "Financial and healthcare powers of attorney", "Living will and HIPAA release", "Deed transfer of your home into the trust", "Funding checklist plus one review", "Signing ceremony", PACKAGE_REVISIONS], excludes: ["Revisions after the first round", "Tax planning beyond the trust", "Deeds not listed in the custom scope", "Court proceedings"] },
+  { id: "legacy", name: "Legacy", price: "Quote after consult", for: "Blended families, business owners, property in more than one state, special needs planning or larger estates.", includes: ["Everything in Complete", "Special needs or children's trust provisions", "Additional deeds", "Business interest assignment", "Coordination with your financial advisor or CPA", PACKAGE_REVISIONS], excludes: ["Revisions after the first round", "Court proceedings", "Tax return preparation", "Work outside the custom scope"] },
 ];
 
 /**

@@ -24,6 +24,7 @@ const ROWS: string[][] = [
   ["Guardian nominations", "If you have children", "Yes", "Yes"],
   ["Deed for your primary home into the trust", "Not applicable", "Yes", "Yes, plus other properties"],
   ["Funding help (accounts, beneficiaries)", "Checklist", "Checklist plus one review", "[Attorney: define]"],
+  ["Revisions to your documents", "One round", "One round", "One round"],
   ["Special needs trust, business succession coordination", "No", "Optional add-on", "Included or priced in the quote"],
   ["After signing", "[Attorney: question period]", "[Attorney: check-up call]", "[Attorney: annual review period]"],
 ];
