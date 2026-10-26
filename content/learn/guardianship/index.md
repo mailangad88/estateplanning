@@ -175,6 +175,10 @@ You can do the first two this month and the rest over time. A good first step is
 
 ## More questions people ask
 
+If a child is about to inherit real estate or an IRA, [what happens when a minor inherits a house or retirement account](/learn/guardianship/what-happens-when-a-minor-inherits-a-house-or-retirement-account) explains who holds it and how to avoid court.
+
+To see which documents actually appoint a guardian, [can you name a guardian without a will](/learn/guardianship/can-you-name-a-guardian-without-a-will) compares wills, trusts, letters and handwritten notes.
+
 For a trip, surgery or deployment, [who takes your kids in an emergency](/learn/guardianship/who-takes-your-kids-in-an-emergency-while-you-travel-or-deploy) covers school pickup lists, medical consent and caregiver letters.
 
 If no relative can serve, [professional and public guardians](/learn/guardianship/professional-and-public-guardians-when-no-family-can-serve) explains who the court turns to, who pays and how to avoid it.

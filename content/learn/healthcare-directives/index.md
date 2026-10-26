@@ -161,6 +161,10 @@ Healthcare directives handle medical decisions and information. The [durable fin
 
 ## More questions people ask
 
+For what makes a living will enforceable and where it falls short, see [is a living will legally binding](/learn/healthcare-directives/is-a-living-will-legally-binding).
+
+To check whether a friend, nurse or doctor is allowed to serve, read [who can be your healthcare agent](/learn/healthcare-directives/can-a-doctor-friend-or-nurse-be-your-healthcare-agent).
+
 When a patient cannot decide, [who can sign a DNR for someone else](/learn/healthcare-directives/who-can-sign-a-dnr-for-someone-else) explains the roles of agent, surrogate and family.
 
 For the price side, [how much a living will costs](/learn/healthcare-directives/how-much-does-a-living-will-cost) compares free forms, notary fees and attorney fees.

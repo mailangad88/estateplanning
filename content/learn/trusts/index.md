@@ -175,6 +175,10 @@ A trust only controls what is titled in its name. Read [what happens if you neve
 
 ## More questions people ask
 
+To leave money to grandchildren through a trust, [how to set up a trust for your grandchildren](/learn/trusts/how-to-set-up-a-trust-for-your-grandchildren) compares shared and separate trusts, payout ages and trustees.
+
+For deposit accounts, [should I put my bank accounts in a living trust](/learn/trusts/should-i-put-my-bank-accounts-in-a-living-trust) compares retitling with a payable on death beneficiary.
+
 If someone told you to put your Chicago-area property in a land trust, [Illinois land trust vs living trust](/learn/trusts/illinois-land-trust-vs-living-trust) explains what it does and what it leaves out.
 
 To plan around the calendar, [how long it takes to set up a living trust](/learn/trusts/how-long-does-it-take-to-set-up-a-living-trust) walks through drafting, signing and funding.

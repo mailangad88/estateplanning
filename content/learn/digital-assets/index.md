@@ -148,6 +148,10 @@ No plan makes every account recoverable. Some companies will refuse, some servic
 
 ## More questions people ask
 
+For your writing, reviews and pseudonymous accounts, [what happens to your blog, online reviews and anonymous accounts](/learn/digital-assets/what-happens-to-your-blog-online-reviews-and-anonymous-accounts-when-you-die) explains who owns the copyright and what family can do.
+
+If you are locked out of a computer or drive, [how to get files from a deceased person's computer, hard drive or cloud storage](/learn/digital-assets/how-to-get-files-from-a-deceased-persons-computer-hard-drive-or-cloud-storage) gives the order to try things in.
+
 To handle a loved one's profile, [how to memorialize a deceased person's Facebook or Instagram account](/learn/digital-assets/how-to-memorialize-a-deceased-persons-facebook-or-instagram-account) walks through the requests, proof and the memorialize-or-delete choice.
 
 When mail and spam keep arriving after a death, [how to stop a deceased person's junk mail](/learn/digital-assets/how-to-stop-a-deceased-persons-junk-mail-spam-and-online-marketing) covers the opt-out lists and how the mail can reveal accounts.

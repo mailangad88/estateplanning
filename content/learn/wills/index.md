@@ -164,6 +164,8 @@ An old will can cause as many problems as no will. See [what happens if you die 
 
 ## More questions people ask
 
+To give to a charity through your will, [how to leave money to charity in your will](/learn/wills/how-to-leave-money-to-charity-in-your-will) covers fixed gifts versus percentages, exact legal names and backup wording.
+
 If you wonder whether a will must be registered, [can you file your will with the court while you are alive](/learn/wills/can-you-file-your-will-with-the-court-while-you-are-alive) explains what Illinois and New Jersey require.
 
 Holding an old will? [Do wills expire](/learn/wills/do-wills-expire-is-an-old-will-still-valid) shows what stays valid and a checklist for deciding when to redo it.

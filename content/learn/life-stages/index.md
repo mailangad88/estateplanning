@@ -153,6 +153,10 @@ Start with whichever problem would be hardest on your family tomorrow. For many 
 
 ## More questions people ask
 
+New parents choosing coverage can use [term life insurance when you have a baby](/learn/life-stages/term-life-insurance-when-you-have-a-baby) to size the policy and name the right beneficiary.
+
+For aunts and uncles without children, [leaving an inheritance to nieces and nephews](/learn/life-stages/leaving-an-inheritance-to-nieces-and-nephews) covers naming, minors and New Jersey inheritance tax.
+
 If you are deciding whether to keep the family home, [should you sell the house after your spouse dies](/learn/life-stages/should-you-sell-the-house-after-your-spouse-dies) covers the two-year tax rule and title steps.
 
 For couples who share a home without marrying, [can an unmarried partner stay in the home after you die](/learn/life-stages/can-an-unmarried-partner-stay-in-the-home-after-you-die) explains how the deed decides it.

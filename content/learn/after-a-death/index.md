@@ -178,6 +178,12 @@ Call one if the person owned real estate, a business or substantial accounts, if
 
 ## More questions people ask
 
+For the health insurance side of a death, [what happens to Medicare and medical bills when someone dies](/learn/after-a-death/what-happens-to-medicare-and-medical-bills-when-someone-dies) covers cancelling plans, refunds, unpaid bills and Medicaid recovery.
+
+Before selling the contents of a home, [how an estate sale works](/learn/after-a-death/how-does-an-estate-sale-work) explains who may authorize it, what to remove first and where the money goes.
+
+If you are fronting costs for an estate, [who pays the executor's expenses](/learn/after-a-death/who-pays-the-executors-expenses) explains what qualifies, how to be reimbursed and how it differs from the executor's fee.
+
 For the weeks after the funeral, [how to handle a deceased person's mail and bills](/learn/after-a-death/how-to-handle-a-deceased-persons-mail-and-bills) shows how to sort, forward and pay in the right order.
 
 A widow or widower can start with [what to do when your spouse dies](/learn/after-a-death/what-to-do-when-your-spouse-dies), which sorts what passes automatically from what needs a court.

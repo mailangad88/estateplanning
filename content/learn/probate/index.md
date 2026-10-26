@@ -154,6 +154,8 @@ State rules matter a great deal here. If you want to see how probate works where
 
 ## More questions people ask
 
+If a bank turns down the paperwork, [what to do when a bank refuses a small estate affidavit](/learn/probate/what-to-do-when-a-bank-refuses-a-small-estate-affidavit) explains how to push back and when to open probate.
+
 For the clocks that start at death, see [how long you have to file probate in Illinois or New Jersey](/learn/probate/how-long-do-you-have-to-file-probate-in-illinois-or-new-jersey).
 
 Once you have letters, [how to open an estate bank account](/learn/probate/how-to-open-an-estate-bank-account) covers what the bank needs and what to pay from it.

@@ -148,6 +148,10 @@ Related life situations have their own pages: [estate planning after divorce](/l
 
 ## More questions people ask
 
+If you want a stepchild to inherit as a legal child, [adopting an adult stepchild](/learn/blended-families/adopting-an-adult-stepchild-to-make-them-an-heir) explains how adult adoption works in Illinois and New Jersey and what it can cost your spouse.
+
+When the family company is the main asset, [leaving a business to your children while providing for a second spouse](/learn/blended-families/leaving-a-business-to-your-children-and-providing-for-a-second-spouse) covers voting splits, trusts and insurance.
+
 If you already have an agreement and want to loosen or cancel it, [can a prenup be changed after marriage](/learn/blended-families/can-a-prenup-be-changed-after-marriage) covers the signed-writing rule, enforcement and the 401(k) consent trap.
 
 To stop your money from ending up with a child's or spouse's in-laws, [keeping your inheritance from passing to in-laws](/learn/blended-families/keeping-an-inheritance-from-passing-to-in-laws) explains trusts and final beneficiaries.

@@ -180,6 +180,10 @@ Curious what happens when a plan is missing or out of date? Our guide to [what h
 
 ## More questions people ask
 
+To amend or cancel documents correctly, [how to change or revoke your estate plan](/learn/basics/how-to-change-or-revoke-your-estate-plan-step-by-step) goes document by document.
+
+To know what the first meeting is like, [what happens at an estate planning appointment](/learn/basics/what-happens-at-an-estate-planning-appointment-and-what-the-attorney-will-ask) lists the questions and why they are asked.
+
 If you are wondering how soon you could be finished, [how long it takes to create an estate plan](/learn/basics/how-long-does-it-take-to-create-an-estate-plan) gives a stage-by-stage timeline and what slows it down.
 
 If you keep meaning to start, [why people put off estate planning](/learn/basics/why-people-put-off-estate-planning-and-how-to-start-this-week) answers each common excuse and offers a seven-day plan to begin.

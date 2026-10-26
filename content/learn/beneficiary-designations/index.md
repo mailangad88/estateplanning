@@ -141,6 +141,10 @@ Two situations cause most beneficiary problems we see: [an ex-spouse who is stil
 
 ## More questions people ask
 
+If an account has no beneficiary at all, [what happens with no beneficiary on a bank or brokerage account](/learn/beneficiary-designations/what-happens-if-there-is-no-beneficiary-on-a-bank-or-brokerage-account) explains the probate result and the fix.
+
+When co-beneficiaries dispute a split, [what happens if beneficiaries disagree](/learn/beneficiary-designations/what-if-beneficiaries-disagree-about-how-an-account-or-policy-is-split) covers what companies do and how families settle.
+
 To switch or remove a name on a 401(k), IRA or policy, [how to change the beneficiary on a 401(k), IRA or life insurance policy](/learn/beneficiary-designations/how-to-change-the-beneficiary-on-a-401k-ira-or-life-insurance-policy) walks through each form, spousal consent and the ex-spouse trap.
 
 If you are single with no kids, [who gets your life insurance](/learn/beneficiary-designations/who-gets-your-life-insurance-if-you-are-unmarried-with-no-children) explains the default order and how to make sure your choice is the one paid.
