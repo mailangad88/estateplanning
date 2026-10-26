@@ -17,6 +17,10 @@ import { IS_STAGING } from "@/lib/env";
 import "./globals.css";
 import "@/components/visuals/visuals.css";
 import "./design.css";
+import "./polish/home.css";
+import "./polish/articles.css";
+import "./polish/tools.css";
+import "./polish/pages.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

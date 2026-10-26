@@ -23,7 +23,7 @@ export function EstateTaxThresholds({ caption, bare, step }: DiagramProps) {
       desc={`For ${FIGURES.year} the federal estate tax exclusion is ${usdFigure(FIGURES.federalExemption)} per person, so most estates owe no federal estate tax. Only the value above the exclusion is taxed, at rates that top out at 40 percent. The bar is illustrative and not to scale: a typical estate falls far below the line. Married couples may be able to use a deceased spouse's unused exclusion by filing a return. Some states have their own estate or inheritance tax with lower thresholds.`}
     >
       <Frame h={560} title="Most estates owe no federal estate tax" sub="The 2026 federal exclusion is high. Some states set a lower bar." />
-      <Pill x={820} y={30} text="2026 figures" fill="accentTint" ink="accentDeep" size={14} />
+      <Pill x={792} y={30} text="2026 figures" fill="accentTint" ink="accentDeep" size={15} />
       <S step={step} n={1}>
         <Text x={40} y={136} size={16} weight={600} color="muted">
           Federal estate tax exclusion, 2026, per person
@@ -36,7 +36,7 @@ export function EstateTaxThresholds({ caption, bare, step }: DiagramProps) {
         <Text x={832} y={176} size={15} weight={700} anchor="middle">
           Above it: taxed
         </Text>
-        <Text x={832} y={196} size={14} anchor="middle" color="muted">
+        <Text x={832} y={196} size={15} anchor="middle" color="muted">
           top rate 40%
         </Text>
       </S>

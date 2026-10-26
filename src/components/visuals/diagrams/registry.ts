@@ -47,7 +47,7 @@ export const diagramRegistry: DiagramEntry[] = [
   { name: "SpecialNeedsTrust", component: SpecialNeedsTrust, title: "Direct gift compared with a special needs trust", topics: ["special-needs", "trusts", "ssi", "medicaid", "disability"] },
   { name: "BlendedFamilyPlan", component: BlendedFamilyPlan, title: "A blended family plan compared with all to spouse", topics: ["blended-family", "trusts", "spouse", "second-marriage"] },
   { name: "MedicaidLookback", component: MedicaidLookback, title: "Medicaid look-back window and planning early vs in a crisis", topics: ["medicaid", "long-term-care", "look-back", "elder-care", "gifting"] },
-  { name: "BusinessSuccession", component: BusinessSuccession, title: "Business succession planning: pieces of a plan", topics: ["business", "succession", "buy-sell", "business-owners"] },
+  { name: "BusinessSuccession", component: BusinessSuccession, title: "Business succession planning: pieces of a plan", topics: ["business", "business-succession", "buy-sell", "business-owners"] },
   { name: "DigitalAssets", component: DigitalAssets, title: "Planning for your digital assets", topics: ["digital-assets", "passwords", "crypto", "social-media", "executor"] },
   { name: "RevocableVsIrrevocable", component: RevocableVsIrrevocable, title: "Revocable trust compared with irrevocable trust", topics: ["trusts", "irrevocable", "revocable", "asset-protection", "estate-tax", "medicaid"] },
   { name: "MoneyForMinors", component: MoneyForMinors, title: "Three ways money can reach a child", topics: ["minors", "children", "utma", "guardianship", "trusts", "custodial-account"] },

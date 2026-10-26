@@ -98,8 +98,14 @@ export function planVisuals(input: PlanInput): Segment[] {
   const c = candidates(input);
   const used = new Set<string>();
   const key = (v: VisualSpec) => JSON.stringify(v);
+  let skippedTopDiagram = false;
   const take = (v: VisualSpec | null | undefined): VisualSpec | null => {
     if (!v || used.has(key(v))) return null;
+    // The page already shows this diagram at the top: leave the slot empty rather than repeat it.
+    if (v.type === "diagram" && input.excludeDiagrams?.includes(v.name)) {
+      skippedTopDiagram = true;
+      return null;
+    }
     used.add(key(v));
     if (v.type === "whatif-strip") v.ids.forEach((id) => used.add(key({ type: "whatif", id })));
     if (v.type === "whatif") used.add(`whatif:${v.id}`);
@@ -176,6 +182,7 @@ export function planVisuals(input: PlanInput): Segment[] {
     const heading = hm ? textOf(hm[1]) : "";
     const part = raw;
     let has = false;
+    skippedTopDiagram = false;
 
     // Writer-placed markers, in place.
     const pieces: Segment[] = [];
@@ -214,7 +221,7 @@ export function planVisuals(input: PlanInput): Segment[] {
       const { section: _s, ...spec } = explicit.splice(at, 1)[0];
       after = take(spec as VisualSpec);
     }
-    if (!after && !has && !SKIP.test(heading)) after = auto(heading);
+    if (!after && !has && !skippedTopDiagram && !SKIP.test(heading)) after = auto(heading);
 
     if (pieces.length === 1) {
       // Panels wrap a whole section, so only sections without markers get one.

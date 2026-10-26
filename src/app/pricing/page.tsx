@@ -65,13 +65,13 @@ export default function Pricing() {
       </div>
 
       <h2>The three packages</h2>
-      <ul className="cards">
+      <ul className="cards price-tiers">
         {PACKAGES.map((p) => (
-          <li key={p.name} className="card">
+          <li key={p.name} className={`card price-tier${p.id === "complete" ? " is-featured" : ""}`}>
             <span className="tag">{p.price}</span>
-            <h3 style={{ margin: "4px 0" }}>{p.name}</h3>
+            <h3>{p.name}</h3>
             <p className="notice">{p.for}</p>
-            <ul>{p.includes.map((i) => <li key={i}>{i}</li>)}</ul>
+            <ul className="price-tier__list">{p.includes.map((i) => <li key={i}>{i}</li>)}</ul>
             <Link className="button" href="/plan-finder">Get a quote</Link>
           </li>
         ))}
