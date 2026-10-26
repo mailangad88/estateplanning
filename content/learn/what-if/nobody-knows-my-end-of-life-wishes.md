@@ -87,7 +87,7 @@ A conversation works best when it is specific. Describe what a good day looks li
 
 ## How state law changes this
 
-States differ on the surrogate list and its order, on whether unmarried partners are included, on what happens when the surrogates are equal in rank and disagree, on witness and notary rules for directives, and on how strong the evidence of a patient's wishes must be before life support is withdrawn. A few states require clear and convincing evidence of the patient's wishes. Check your [state guide](/estate-planning/new-york) or ask an attorney in your state. Our article on [who can overrule your healthcare directive](/learn/healthcare-directives/who-can-overrule-your-healthcare-directive) covers what happens when a team or relative disagrees with a signed document.
+States differ on who is on the surrogate list and in what order, and on whether unmarried partners are included. They also differ on what happens when surrogates of equal rank disagree, on witness and notary rules for directives, and on how strong the evidence of a patient's wishes must be before life support is withdrawn. A few states require clear and convincing evidence of the patient's wishes. Check your [state guide](/estate-planning) or ask an attorney in your state. Our article on [who can overrule your healthcare directive](/learn/healthcare-directives/who-can-overrule-your-healthcare-directive) covers what happens when a team or relative disagrees with a signed document.
 
 ## How to prevent it
 
