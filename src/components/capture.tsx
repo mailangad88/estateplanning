@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { smsConsentText } from "@/lib/consent";
 import { filterEvent } from "@/lib/analytics";
 import { useTrackingNumber } from "@/components/TrackedPhone";
+import FormDisclaimer from "@/components/FormDisclaimer";
 
 type Kind = "magnet" | "course" | "newsletter" | "callback" | "question" | "report";
 
@@ -141,6 +142,7 @@ export function EmailCapture({
       {error && <p className="error" role="alert">{error}</p>}
       <button className="button" type="submit" disabled={busy}>{busy ? "Sending…" : cta}</button>
       <p className="notice">No spam. Unsubscribe any time. We never sell your information. <Link href="/legal/privacy">Privacy</Link></p>
+      <FormDisclaimer />
     </form>
   );
 }
@@ -199,6 +201,7 @@ export function CallbackForm({ interest = "callback" }: { interest?: string }) {
       <div className="hp" aria-hidden="true"><input name="website" tabIndex={-1} autoComplete="off" /></div>
       {error && <p className="error" role="alert">{error}</p>}
       <button className="button" type="submit" disabled={busy}>{busy ? "Sending…" : "Request a call back"}</button>
+      <FormDisclaimer />
     </form>
   );
 }

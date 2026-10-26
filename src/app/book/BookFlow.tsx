@@ -7,6 +7,9 @@ import { CallbackForm, track } from "@/components/capture";
 import { firm, US_STATES } from "@/config/firm";
 import { BOOK_TOPICS, bookingNotes, bookTopic, parseBookParams } from "@/lib/book";
 import { isServedState } from "@/lib/planFinder";
+import { stateName } from "@/config/compliance";
+
+const listNames = (codes: string[]) => codes.map(stateName).join(" and ");
 import { loadVisitor } from "@/lib/visitor";
 
 /**
@@ -68,7 +71,7 @@ export default function BookFlow({ servedStates, defaultState }: { servedStates:
         </label>
         {!served && state && (
           <p className="notice" role="status">
-            We can only advise on the law of {servedStates.join(", ")} right now, so we would not be able to help after the call.{" "}
+            Our attorney network covers {listNames(servedStates)} only right now, so we would not be able to match you after the call.{" "}
             <Link href="/not-in-your-state">Here is how to find a licensed estate planning attorney where you live.</Link>
           </p>
         )}

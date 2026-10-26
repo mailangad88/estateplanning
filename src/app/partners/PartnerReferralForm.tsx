@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import FormDisclaimer from "@/components/FormDisclaimer";
 
 /** Referral form on a partner's page. The send button stays off until the partner confirms the person agreed. */
 export default function PartnerReferralForm({ slug, consentText, partnerOrg }: { slug: string; consentText: string; partnerOrg: string }) {
@@ -80,6 +81,7 @@ export default function PartnerReferralForm({ slug, consentText, partnerOrg }: {
         {formError && <p className="error" role="alert">{formError}</p>}
         <button type="submit" className="button" disabled={submitting || !consent}>{submitting ? "Sending…" : "Send referral"}</button>
       </fieldset>
+      <FormDisclaimer />
     </form>
   );
 }
