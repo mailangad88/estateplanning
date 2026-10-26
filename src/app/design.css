@@ -856,3 +856,14 @@ footer.site .footer-cta .button:hover { text-decoration: none; }
 .vk--widget { padding: 0; background: none; border: 0; box-shadow: none; }
 .vk--widget .vk-widget { margin: 0; }
 .vk-widget__more { margin: 10px 0 0; font-size: 0.95rem; }
+
+/* County fee comparison bars (estate-planning/[state]/counties/[county]) */
+.fee-compare { margin: 28px 0; }
+.fee-compare figcaption { font-weight: 600; margin-bottom: 10px; }
+.fee-compare .bars { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+.fee-compare .bar { display: grid; grid-template-columns: 7.5em 1fr 3.5em; align-items: center; gap: 10px; font-size: 0.95rem; }
+.fee-compare .bar-track { background: var(--sky-tint); border-radius: 999px; height: 12px; overflow: hidden; }
+.fee-compare .bar-fill { display: block; height: 100%; background: var(--line, #c9c4b8); border-radius: 999px; }
+.fee-compare .is-current { font-weight: 700; }
+.fee-compare .is-current .bar-fill { background: var(--brand); }
+.fee-compare .bar-value { text-align: right; font-variant-numeric: tabular-nums; }
