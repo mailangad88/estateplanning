@@ -143,6 +143,22 @@ If a death has just happened, find the original will, order certified death cert
 
 ## More questions people ask
 
+If you want to leave a child out, [can you disinherit a child in New Jersey](/learn/new-jersey/can-you-disinherit-a-child-in-new-jersey) explains that children have no forced share, how to write it, and what a caveat or contest looks like.
+
+When a marriage ends, [how divorce affects a New Jersey will, trust, power of attorney and beneficiary forms](/learn/new-jersey/how-divorce-affects-a-new-jersey-will-trust-power-of-attorney-and-beneficiary-forms) shows what the statute fixes and which documents you must change yourself.
+
+For a shared checking or savings account, [joint bank accounts after a death in New Jersey](/learn/new-jersey/joint-bank-accounts-after-a-death-in-new-jersey) explains survivorship under the Multiple-Party Deposit Account Act, the 50% bank release and the inheritance tax.
+
+To see what the old state tax was and what still applies, [the New Jersey estate tax repeal](/learn/new-jersey/new-jersey-estate-tax-history-what-the-2018-repeal-means-for-estates-today) covers the $675,000 and $2 million levels and a 2026 worked example.
+
+If you plan to act alone, [handling a New Jersey estate without a lawyer](/learn/new-jersey/handling-a-new-jersey-estate-without-a-lawyer) shows what the Surrogate does for you, what it leaves to you and where executors stall.
+
+To count how many proofs of authority you need, [the New Jersey Surrogate short certificate](/learn/new-jersey/new-jersey-surrogate-short-certificate-how-many-to-order) explains who asks for one and when it goes stale.
+
+Once a judge has named you, [New Jersey adult guardian duties after appointment](/learn/new-jersey/new-jersey-guardian-duties-reports-and-accountings-after-appointment) covers the bond, the 90-day inventory and periodic reports.
+
+For income the estate earns after death, the [New Jersey fiduciary income tax return (NJ-1041)](/learn/new-jersey/new-jersey-fiduciary-income-tax-return-for-an-estate-nj-1041) explains who files and how it differs from the inheritance tax return.
+
 If a child is about to inherit and nothing is set up, [what happens when a minor inherits money in New Jersey](/learn/new-jersey/minor-inherits-money-in-new-jersey-guardian-of-the-property) explains the Surrogate's guardian of the property, the bond and the handover at 18.
 
 When a death was caused by someone else, [New Jersey wrongful death and survival claims](/learn/new-jersey/new-jersey-wrongful-death-and-survival-claims-for-an-estate) explains who files, who receives the money and how it differs from the probate estate.

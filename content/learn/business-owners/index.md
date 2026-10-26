@@ -164,6 +164,10 @@ Related pillars worth reading alongside this one: [trusts](/learn/trusts), [powe
 
 ## More questions people ask
 
+If you are not sure whether your will or your company paperwork controls the stake, [does an operating agreement override your will](/learn/business-owners/does-an-operating-agreement-override-your-will) walks through a worked example.
+
+To pick a successor and tell your family, [how to choose who will run your business after you](/learn/business-owners/how-to-choose-who-will-run-your-business-after-you-family-or-outside-manager) compares family, employees and outside managers.
+
 To see how creditors can and cannot reach an LLC interest, [what a charging order is](/learn/business-owners/what-is-a-charging-order-and-how-it-affects-llc-interests-and-heirs) covers the protection and its limits for owners and heirs.
 
 Before you budget, [how much business succession planning costs and how long it takes](/learn/business-owners/how-much-does-business-succession-planning-cost-and-how-long-does-it-take) breaks down legal, valuation and insurance costs.

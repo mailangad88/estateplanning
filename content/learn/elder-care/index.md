@@ -162,6 +162,10 @@ Other pillars worth reading alongside this one: [power of attorney](/learn/power
 
 ## More questions people ask
 
+If a house sale is how the bills get paid, [capital gains when you sell a home to pay for nursing home care](/learn/elder-care/capital-gains-when-you-sell-a-home-to-pay-for-nursing-home-care) explains the main-home exclusion, how a facility stay counts, and why a gift can cost more tax than a sale.
+
+To compare your choices side by side, [spend down vs. gifting vs. an asset protection trust](/learn/elder-care/spend-down-vs-gifting-vs-asset-protection-trust-for-medicaid) shows how each works on the same family's numbers and timeline.
+
 To choose between two ways of moving the house, [life estate deed vs irrevocable trust for Medicaid](/learn/elder-care/life-estate-deed-vs-irrevocable-trust-for-medicaid) compares cost, control, taxes and estate recovery.
 
 If you have an animal, [what happens to your pet when you move into a nursing home or assisted living](/learn/elder-care/what-happens-to-your-pet-when-you-move-to-a-nursing-home-or-assisted-living) covers facility policies, a caregiver letter, pet trusts and how Medicaid treats pet money.

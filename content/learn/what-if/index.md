@@ -138,6 +138,12 @@ Our [plan readiness assessment](/tools/plan-readiness-assessment) shows which of
 
 ## More questions people ask
 
+If a parent with memory loss signed a new will, [whether a will can be contested because of dementia](/learn/what-if/can-a-will-be-contested-because-of-dementia) explains capacity, undue influence and the Illinois and New Jersey deadlines.
+
+If you have sold or retitled something your will names, [what happens when you sell the house your will leaves to someone](/learn/what-if/what-happens-if-you-sell-the-house-your-will-leaves-to-someone) explains ademption and how to word the gift.
+
+If you have a will but no trust, [what happens if you die without a living trust](/learn/what-if/what-happens-if-you-die-without-a-living-trust) shows which assets skip court, which do not and when the gap costs the most.
+
 If a parent will not sign anything, [what to do when a parent refuses to make a will or sign a power of attorney](/learn/what-if/what-to-do-if-your-parent-refuses-to-make-a-will-or-sign-a-power-of-attorney) covers the default outcomes and how to change the answer.
 
 When a husband or wife can no longer decide, [what happens if your spouse becomes incapacitated](/learn/what-if/what-happens-if-my-spouse-becomes-incapacitated) shows which joint assets still work and which need a power of attorney.

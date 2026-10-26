@@ -201,6 +201,22 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+To see what the job pays, [how much an executor gets paid in Illinois](/learn/illinois/how-much-does-an-executor-get-paid-in-illinois) explains reasonable compensation, the tax cost of taking it, keeping a time log and how heirs can object.
+
+For income the estate earns after death, [Illinois Form IL-1041 for an estate or trust](/learn/illinois/illinois-form-il-1041-estate-and-trust-income-tax-return) covers who files, the due date, the six-month extension and grantor trusts.
+
+If you are thinking of leaving a child out, [can you disinherit a child in Illinois](/learn/illinois/can-you-disinherit-a-child-in-illinois) explains the exceptions, how to draft it clearly and what a contest looks like.
+
+After a divorce, [how divorce affects your Illinois estate plan](/learn/illinois/how-divorce-affects-your-illinois-estate-plan) goes document by document through the will, trust, power of attorney and beneficiary forms, with a checklist.
+
+Before the house can close, [selling a house in probate in Illinois](/learn/illinois/selling-a-house-in-probate-in-illinois) explains when an independent executor can sign the deed and when a judge must approve the sale.
+
+If you are weighing the do-it-yourself route, [Illinois probate without a lawyer](/learn/illinois/handling-an-illinois-probate-estate-without-a-lawyer) shows which estates are realistic and where executors stall.
+
+When a death was caused by someone else, [Illinois wrongful death and survival claims](/learn/illinois/illinois-wrongful-death-and-survival-claims-for-an-estate) explains who sues and why the money does not follow the will.
+
+If you paid the funeral bill, [paying for a funeral from an Illinois estate](/learn/illinois/paying-for-a-funeral-from-an-illinois-estate) shows where it ranks among claims and how to be repaid.
+
 To retitle a vehicle, [how to transfer a car title after death in Illinois](/learn/illinois/transfer-car-title-after-death-in-illinois) lists the Secretary of State documents and the survivorship, affidavit and probate routes.
 
 For certified copies, [Illinois death certificates and who can order them](/learn/illinois/illinois-death-certificates-who-can-order-county-clerk-or-idph) compares the county clerk with IDPH and shows how to count the copies an executor needs.

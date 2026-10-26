@@ -150,6 +150,10 @@ For a larger picture, start with our guide to [estate planning basics](/learn/ba
 
 ## More questions people ask
 
+If an heir receives SSI or Medicaid, [does inheriting a house affect SSI or Medicaid](/learn/property-and-assets/does-inheriting-a-house-affect-ssi-or-medicaid) covers the resource limit and options.
+
+When only one child will keep the house, [how to leave the house to one child and money to another](/learn/property-and-assets/how-to-leave-the-house-to-one-child-and-money-to-another) shows ways to even it out.
+
 If someone suggested a life estate, [what a life estate deed is and when it ends](/learn/property-and-assets/life-estate-deed-explained-remainder-interest-and-when-it-ends) explains the remainder interest, taxes and risks.
 
 To put a spouse on title, [how to add your spouse to your deed](/learn/property-and-assets/how-to-add-your-spouse-to-your-deed) gives the steps, the Illinois and New Jersey wording and the second-marriage risks.

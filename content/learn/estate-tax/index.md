@@ -138,6 +138,10 @@ For a view of the whole picture, our [basics guide](/learn/basics) and the [prob
 
 ## More questions people ask
 
+Once the estate starts earning interest or dividends, [does an estate pay income tax](/learn/estate-tax/does-an-estate-pay-income-tax-form-1041-interest-and-dividends) explains Form 1041, the fiscal-year choice and how the K-1 moves tax to heirs.
+
+To decide between helping your children now and leaving assets at death, [gift vs. inheritance tax](/learn/estate-tax/gift-vs-inheritance-tax-give-now-or-leave-at-death) compares carryover basis with the step-up using real numbers.
+
 If you are thinking of leaving Illinois or New Jersey, [can you avoid state estate tax by moving](/learn/estate-tax/can-you-avoid-state-estate-tax-by-moving-to-another-state) explains domicile and what stays taxable.
 
 For couples with an older trust, [what a formula clause in a trust does](/learn/estate-tax/what-is-a-formula-clause-in-a-trust) shows how it can fund the wrong amount.

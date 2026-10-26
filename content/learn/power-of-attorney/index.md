@@ -180,6 +180,10 @@ If no document is signed in time, read [what happens if you are incapacitated wi
 
 ## More questions people ask
 
+If your springing document is stuck because no doctor will sign, [what to do when a doctor will not certify incapacity](/learn/power-of-attorney/doctor-will-not-certify-incapacity-springing-power-of-attorney) gives the steps in order.
+
+To see why an agent cannot skip probate and when one can fund a trust, read [can a power of attorney avoid probate or fund a trust](/learn/power-of-attorney/can-a-power-of-attorney-avoid-probate-or-fund-a-trust).
+
 Once the document is signed, [where to keep your power of attorney](/learn/power-of-attorney/where-to-keep-your-power-of-attorney-after-you-sign-it) covers originals, copies, recording and successor agents.
 
 If your spouse is your agent and the marriage is ending, [does divorce cancel a power of attorney](/learn/power-of-attorney/does-divorce-cancel-a-power-of-attorney) explains the Illinois and New Jersey rules and how to revoke.

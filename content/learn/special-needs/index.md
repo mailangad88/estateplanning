@@ -159,6 +159,10 @@ Include the person with a disability in the conversation as much as they are abl
 
 ## More questions people ask
 
+If a policy will fund the trust, [life insurance for a special needs trust](/learn/special-needs/life-insurance-for-a-special-needs-trust) covers the beneficiary form, who should own the policy, and term versus permanent coverage.
+
+For a grown child with mental illness or addiction, [a trust for an adult child with mental illness or addiction](/learn/special-needs/trust-for-an-adult-child-with-mental-illness-or-addiction) explains when to use a special needs, discretionary or spendthrift trust and who should serve as trustee.
+
 Illinois families can read [special needs trust rules in Illinois](/learn/special-needs/special-needs-trust-rules-in-illinois) for how ABLE, DHS services, the PUNS list and payback apply locally.
 
 In the year before the birthday, [what to do when your child with a disability turns 18](/learn/special-needs/what-to-do-when-a-child-with-a-disability-turns-18) gives a timeline for SSI, guardianship choices and signed releases.
