@@ -175,6 +175,12 @@ A trust only controls what is titled in its name. Read [what happens if you neve
 
 ## More questions people ask
 
+To check what your trust actually owns, [how to tell if your trust is funded](/learn/trusts/how-to-tell-if-your-trust-is-actually-funded) gives an account-by-account self-check.
+
+For the lifespan of a trust and the perpetuities rule, [how long a trust can last and how it ends](/learn/trusts/how-long-can-a-trust-last-and-how-does-it-end) explains the options.
+
+To compare after-death costs, [does a trust cost more to administer than probate](/learn/trusts/does-a-trust-cost-more-to-administer-than-probate) sets the two side by side.
+
 If a beneficiary dies before you or before a payout, [what happens to a trust when a beneficiary dies](/learn/trusts/what-happens-to-a-trust-when-a-beneficiary-dies) explains who takes the share.
 
 When someone says you need several trusts, [can you have more than one trust](/learn/trusts/can-you-have-more-than-one-trust) shows which ones do real work.

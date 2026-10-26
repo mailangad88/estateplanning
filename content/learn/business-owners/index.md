@@ -164,6 +164,10 @@ Related pillars worth reading alongside this one: [trusts](/learn/trusts), [powe
 
 ## More questions people ask
 
+For the first week, not the first year, [a business continuity plan covering logins, domains and customer data](/learn/business-owners/business-continuity-plan-logins-domains-and-customer-data) shows what to document.
+
+If you plan to leave the company to your husband or wife, [when your spouse inherits the business](/learn/business-owners/when-your-spouse-inherits-the-business-keep-run-or-sell) compares keeping, managing and selling.
+
 If an owner's marriage ends, [what happens to a business when its owner divorces](/learn/business-owners/divorce-and-the-family-business) covers valuation, buyouts and the plan changes to make.
 
 For the practical first month, [who runs the business and signs the checks after the owner dies](/learn/business-owners/first-30-days-after-a-business-owner-dies) covers bank access, payroll and authority.

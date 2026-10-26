@@ -162,6 +162,12 @@ Other pillars worth reading alongside this one: [power of attorney](/learn/power
 
 ## More questions people ask
 
+If you have an animal, [what happens to your pet when you move into a nursing home or assisted living](/learn/elder-care/what-happens-to-your-pet-when-you-move-to-a-nursing-home-or-assisted-living) covers facility policies, a caregiver letter, pet trusts and how Medicaid treats pet money.
+
+For the mechanics of paying a relative, [payroll and taxes when a family member is your paid caregiver](/learn/elder-care/payroll-and-taxes-when-a-family-member-is-your-paid-caregiver) explains W-2s, Schedule H and withholding.
+
+To protect a parent from scams without taking over, [how to freeze a parent's credit and put safeguards on their accounts](/learn/elder-care/how-to-freeze-a-parents-credit-and-put-safeguards-on-their-accounts) gives a step-by-step sequence.
+
 To see how a penalty is counted and what half-a-loaf gifting really involves, read [how long the Medicaid penalty lasts](/learn/elder-care/half-a-loaf-gifting-and-how-long-the-medicaid-penalty-lasts).
 
 If the spouse at home dies first, [what happens to Medicaid when the healthy spouse dies first](/learn/elder-care/what-happens-to-medicaid-when-the-healthy-spouse-dies-first) explains the will, beneficiary forms and trust that protect the survivor's coverage.

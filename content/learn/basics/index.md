@@ -180,6 +180,10 @@ Curious what happens when a plan is missing or out of date? Our guide to [what h
 
 ## More questions people ask
 
+To see how the documents fit together for your household, [what an estate plan looks like for a single person, a couple or a single parent](/learn/basics/sample-estate-plans-by-household-type) gives side-by-side examples.
+
+If you look after an aging parent, [estate planning when you are the family caregiver](/learn/basics/estate-planning-when-you-are-a-family-caregiver) covers the plan you need for yourself.
+
 If a document's words are tripping you up, [testator, settlor, fiduciary and decedent explained](/learn/basics/estate-planning-words-who-is-who-in-a-plan) defines each role and gift in plain English.
 
 To see why your house can be in your estate but not in probate, read [what an estate is: probate, gross and taxable](/learn/basics/what-an-estate-is-probate-gross-and-taxable-estate).

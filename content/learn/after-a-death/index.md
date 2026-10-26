@@ -178,6 +178,16 @@ Call one if the person owned real estate, a business or substantial accounts, if
 
 ## More questions people ask
 
+If a final paycheck or refund check arrives in the dead person's name, [who gets a deceased person's last paycheck, tax refund and other money owed](/learn/after-a-death/what-happens-to-a-deceased-persons-last-paycheck-refunds-and-money-owed) explains how to collect it.
+
+Before any return is filed, [IRS paperwork for an executor](/learn/after-a-death/irs-paperwork-for-an-executor-form-56-estate-ein-tax-transcripts-and-form-4810) covers Form 56, the estate EIN, tax transcripts and Form 4810.
+
+When an animal is waiting at home, [who takes care of a pet after its owner dies](/learn/after-a-death/who-takes-care-of-a-pet-after-its-owner-dies) covers the first days, legal ownership and rescue options.
+
+If the inheritance is a parcel of ground or a resort week, [inherited vacant land or a timeshare you do not want](/learn/after-a-death/inheriting-vacant-land-or-a-timeshare-you-do-not-want) explains how to keep, sell or decline it.
+
+If a name, date or cause of death is wrong, [how to correct a mistake on a death certificate](/learn/after-a-death/how-to-correct-a-mistake-on-a-death-certificate) shows who can amend it.
+
 If relatives disagree about burial, cremation or the service, [who decides the funeral arrangements](/learn/after-a-death/who-decides-funeral-arrangements-when-family-disagrees) explains the legal ranking and how to resolve a standoff.
 
 When a beneficiary has died, is a child, cannot manage money or owes creditors, [when an heir cannot simply receive their share](/learn/after-a-death/when-an-heir-cannot-receive-their-share-died-minor-incapacitated-or-in-debt) covers who is paid and how to protect it.

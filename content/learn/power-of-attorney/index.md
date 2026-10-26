@@ -180,6 +180,10 @@ If no document is signed in time, read [what happens if you are incapacitated wi
 
 ## More questions people ask
 
+If your first choice is a friend, a partner or someone in another state, [who can legally serve as your agent](/learn/power-of-attorney/who-can-legally-serve-as-a-power-of-attorney-agent) answers the eligibility questions.
+
+On pay, expenses and liability, [can an agent be paid or reimbursed](/learn/power-of-attorney/can-a-power-of-attorney-agent-be-paid-or-reimbursed) draws the line.
+
 If you want to narrow what an agent may do, [how to limit an agent's powers and add safeguards](/learn/power-of-attorney/limiting-an-agents-powers-and-adding-safeguards-in-a-power-of-attorney) covers second signatures, monitors and start dates.
 
 Before you download a form, [are free online and handwritten power of attorney forms valid](/learn/power-of-attorney/are-free-online-and-handwritten-power-of-attorney-forms-valid) explains what makes one hold up and how to sign remotely.

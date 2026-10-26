@@ -148,6 +148,12 @@ No plan makes every account recoverable. Some companies will refuse, some servic
 
 ## More questions people ask
 
+If a spouse shared one login with you, [closing out a deceased spouse's Apple ID](/learn/digital-assets/closing-out-a-deceased-spouses-apple-id-family-sharing-and-shared-logins) covers Family Sharing, subscriptions and locked devices.
+
+To learn how long Google keeps an account and how to save the data in time, read [Gmail, Drive and Google Photos after death](/learn/digital-assets/gmail-drive-and-google-photos-after-death-inactivity-timers-and-how-long-google-keeps-data).
+
+For what a trust can own and what it cannot, see [putting digital assets in a living trust](/learn/digital-assets/can-you-put-digital-assets-in-a-living-trust-what-you-can-assign-and-what-you-cannot).
+
 With no will, [who gets your digital accounts, photos and crypto](/learn/digital-assets/who-gets-your-digital-accounts-if-you-die-without-a-will) explains what passes to heirs and what stays locked.
 
 To make a request to a company, [how to ask Apple, Google or Meta for a deceased person's account](/learn/digital-assets/how-to-ask-a-tech-company-for-a-deceased-persons-account) lists the documents, the court order route and the timing.

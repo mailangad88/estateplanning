@@ -161,6 +161,14 @@ Healthcare directives handle medical decisions and information. The [durable fin
 
 ## More questions people ask
 
+To make sure your donor registration and your living will do not conflict, read [organ donation and your advance directive](/learn/healthcare-directives/organ-donation-and-your-advance-directive).
+
+If a relative needs to see your test results or call your doctor, [medical portal access for an adult child or family member](/learn/healthcare-directives/medical-portal-access-for-an-adult-child-or-family-member) compares proxy access, a HIPAA release and a healthcare agent.
+
+Married couples who assume the spouse decides by default should read [do married couples need advance directives](/learn/healthcare-directives/do-married-couples-need-advance-directives) for the gaps in that default.
+
+Before an overseas trip or a move abroad, [is your US advance directive valid when you travel or live abroad](/learn/healthcare-directives/advance-directive-when-you-travel-or-live-abroad) explains what the document still does and what to carry.
+
 To see who decides about organ donation, autopsy and the funeral once the agent's role ends, read [what your healthcare agent can do after death](/learn/healthcare-directives/healthcare-agent-authority-after-death).
 
 If you are handed an admission packet, [can a healthcare agent sign nursing home admission papers](/learn/healthcare-directives/can-a-healthcare-agent-sign-nursing-home-admission) explains what to sign and what to decline.

@@ -159,6 +159,12 @@ Include the person with a disability in the conversation as much as they are abl
 
 ## More questions people ask
 
+If the person is over 65, [special needs trusts for people over 65](/learn/special-needs/special-needs-trusts-for-people-over-65-dementia-and-a-spouse-on-medicaid) explains the age cutoff, dementia and leaving money to a spouse on Medicaid.
+
+To budget for a trust, [how much a special needs trust costs to set up and keep running](/learn/special-needs/how-much-a-special-needs-trust-costs-to-set-up-and-keep-running) covers the one-time and yearly costs.
+
+Once you have decided on an ABLE account, [choosing and funding an ABLE account](/learn/special-needs/choosing-and-funding-an-able-account-state-plans-fees-and-529-rollovers) covers plan fees, 529 rollovers and who can contribute.
+
 To see what Social Security counts and ignores, [what counts as income and resources for SSI](/learn/special-needs/what-counts-as-income-and-resources-for-ssi) covers resources, in-kind support, deeming and how SSI differs from SSDI and Medicaid.
 
 If you are unsure whether your child needs a special needs trust, [who qualifies as disabled and how to plan by diagnosis](/learn/special-needs/who-qualifies-as-disabled-and-planning-by-diagnosis) explains Social Security's definition and the alternatives.

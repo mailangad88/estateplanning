@@ -138,6 +138,16 @@ Our [plan readiness assessment](/tools/plan-readiness-assessment) shows which of
 
 ## More questions people ask
 
+A disability does not stop you from signing, and [making a will when you are blind, deaf or cannot read, speak or write](/learn/what-if/making-a-will-when-you-are-blind-deaf-or-cannot-read-speak-or-write) explains how marks, reading aloud and interpreters keep it valid.
+
+If a guardianship, a diagnosis or heavy medication is part of the picture, [making a will under guardianship, with a mental illness or on medication](/learn/what-if/making-a-will-under-guardianship-with-mental-illness-or-on-medication) explains how capacity is judged and what evidence helps.
+
+When a house, an IRA form and an early gift make 'equal' unequal, [what happens when a will says to split equally but the assets are not equal](/learn/what-if/will-says-split-equally-but-the-assets-are-not-equal) shows how to make the shares match what you meant.
+
+Once the owner has died, [fixing a beneficiary mistake after death](/learn/what-if/fixing-a-beneficiary-mistake-after-the-account-owner-has-died) covers disclaimers, family agreements and court correction, and the deadlines that apply.
+
+If you added a child to your account to help with bills, [what happens if they spend the money, get sued or die first](/learn/what-if/child-on-your-bank-account-spends-the-money-or-dies-first) explains the risks and safer options.
+
 If you have signed more than one will, [what happens if two wills conflict](/learn/what-if/two-wills-that-conflict) explains which one a court follows and how to clean up.
 
 If a charity in your will has merged or closed, [what happens when it no longer exists](/learn/what-if/charity-named-in-will-no-longer-exists) covers cy pres and backup wording.

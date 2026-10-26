@@ -164,6 +164,12 @@ An old will can cause as many problems as no will. See [what happens if you die 
 
 ## More questions people ask
 
+If you drafted a will on your phone or want to sign on a screen, [are electronic wills legal](/learn/wills/electronic-wills-and-wills-made-on-a-phone-or-in-an-email) explains which states allow it and how to sign safely.
+
+For gift lists, letters to the family and funeral wishes, [do notes, letters and spoken wishes bind your family](/learn/wills/notes-letters-and-spoken-wishes-do-they-bind-your-family) shows what the law enforces and what only guides.
+
+If a will has been hidden, torn up or looks forged, [what families can do about a hidden, forged or destroyed will](/learn/wills/hidden-forged-or-destroyed-wills-what-families-can-do) covers the evidence and first steps.
+
 For a clause-by-clause tour of a will, see [the parts of a will and what each clause does](/learn/wills/parts-of-a-will-what-each-clause-does).
 
 If your heir is a partner, friend or someone abroad, [leaving property to a partner, friend or non-citizen in a will](/learn/wills/leaving-property-to-a-partner-friend-or-non-citizen-in-a-will) covers the tax and family limits.

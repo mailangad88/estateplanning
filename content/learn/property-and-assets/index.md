@@ -150,6 +150,12 @@ For a larger picture, start with our guide to [estate planning basics](/learn/ba
 
 ## More questions people ask
 
+If one heir wants to keep the house, [buying out a sibling or forcing a partition](/learn/property-and-assets/buying-out-a-sibling-or-co-owner-of-an-inherited-house-or-forcing-a-partition) explains pricing, financing and court costs.
+
+When there is no will, [who gets the furniture, car and family photos](/learn/property-and-assets/who-gets-the-furniture-car-and-family-photos-when-there-is-no-will) explains how belongings pass and how families divide them.
+
+To weigh holding costs against a sale, use the [keep or sell worksheet for an inherited house](/learn/property-and-assets/should-you-keep-or-sell-an-inherited-house-a-carrying-cost-and-timing-worksheet).
+
 Before you leave or accept a house, [check for deed restrictions, flood risk and contamination](/learn/property-and-assets/hidden-property-problems-deed-restrictions-flood-and-contamination) and learn what an heir can do about a problem.
 
 If you own a second home abroad, [what happens to a vacation home in another country](/learn/property-and-assets/vacation-home-in-another-country-when-the-owner-dies) explains local inheritance law, U.S. tax and the second will.
