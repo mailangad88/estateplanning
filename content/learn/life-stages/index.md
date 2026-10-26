@@ -153,6 +153,10 @@ Start with whichever problem would be hardest on your family tomorrow. For many 
 
 ## More questions people ask
 
+If you are deciding whether to keep the family home, [should you sell the house after your spouse dies](/learn/life-stages/should-you-sell-the-house-after-your-spouse-dies) covers the two-year tax rule and title steps.
+
+For couples who share a home without marrying, [can an unmarried partner stay in the home after you die](/learn/life-stages/can-an-unmarried-partner-stay-in-the-home-after-you-die) explains how the deed decides it.
+
 Married and unmarried same-sex couples, non-biological parents and chosen family can find the gaps in [estate planning for same-sex couples and LGBTQ families](/learn/life-stages/estate-planning-for-same-sex-couples-and-lgbtq-families).
 
 When a move or a decline in health changes who can help you, [updating your estate plan when you move to assisted living or your health declines](/learn/life-stages/estate-planning-when-you-move-to-assisted-living-or-your-health-declines) gives a first-month checklist.

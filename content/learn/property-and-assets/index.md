@@ -150,6 +150,10 @@ For a larger picture, start with our guide to [estate planning basics](/learn/ba
 
 ## More questions people ask
 
+If someone suggested a life estate, [what a life estate deed is and when it ends](/learn/property-and-assets/life-estate-deed-explained-remainder-interest-and-when-it-ends) explains the remainder interest, taxes and risks.
+
+To put a spouse on title, [how to add your spouse to your deed](/learn/property-and-assets/how-to-add-your-spouse-to-your-deed) gives the steps, the Illinois and New Jersey wording and the second-marriage risks.
+
 If one heir wants to keep the house, [buying out a sibling or forcing a partition](/learn/property-and-assets/buying-out-a-sibling-or-co-owner-of-an-inherited-house-or-forcing-a-partition) explains pricing, financing and court costs.
 
 When there is no will, [who gets the furniture, car and family photos](/learn/property-and-assets/who-gets-the-furniture-car-and-family-photos-when-there-is-no-will) explains how belongings pass and how families divide them.

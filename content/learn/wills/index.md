@@ -164,6 +164,12 @@ An old will can cause as many problems as no will. See [what happens if you die 
 
 ## More questions people ask
 
+If you wonder whether a will must be registered, [can you file your will with the court while you are alive](/learn/wills/can-you-file-your-will-with-the-court-while-you-are-alive) explains what Illinois and New Jersey require.
+
+Holding an old will? [Do wills expire](/learn/wills/do-wills-expire-is-an-old-will-still-valid) shows what stays valid and a checklist for deciding when to redo it.
+
+Before an appointment, read [what to bring to a lawyer to make a will](/learn/wills/what-to-bring-to-a-lawyer-to-make-a-will) for the documents, questions and signing-day steps.
+
 If you drafted a will on your phone or want to sign on a screen, [are electronic wills legal](/learn/wills/electronic-wills-and-wills-made-on-a-phone-or-in-an-email) explains which states allow it and how to sign safely.
 
 For gift lists, letters to the family and funeral wishes, [do notes, letters and spoken wishes bind your family](/learn/wills/notes-letters-and-spoken-wishes-do-they-bind-your-family) shows what the law enforces and what only guides.

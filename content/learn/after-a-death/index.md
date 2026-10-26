@@ -178,6 +178,12 @@ Call one if the person owned real estate, a business or substantial accounts, if
 
 ## More questions people ask
 
+For the weeks after the funeral, [how to handle a deceased person's mail and bills](/learn/after-a-death/how-to-handle-a-deceased-persons-mail-and-bills) shows how to sort, forward and pay in the right order.
+
+A widow or widower can start with [what to do when your spouse dies](/learn/after-a-death/what-to-do-when-your-spouse-dies), which sorts what passes automatically from what needs a court.
+
+When one child received a house or cash before a parent died, [what if a parent gave money or a house to one child](/learn/after-a-death/parent-gave-money-or-a-house-to-one-child-before-death) explains when the gift stands and when it can be challenged.
+
 If a final paycheck or refund check arrives in the dead person's name, [who gets a deceased person's last paycheck, tax refund and other money owed](/learn/after-a-death/what-happens-to-a-deceased-persons-last-paycheck-refunds-and-money-owed) explains how to collect it.
 
 Before any return is filed, [IRS paperwork for an executor](/learn/after-a-death/irs-paperwork-for-an-executor-form-56-estate-ein-tax-transcripts-and-form-4810) covers Form 56, the estate EIN, tax transcripts and Form 4810.

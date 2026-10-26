@@ -148,6 +148,10 @@ Related life situations have their own pages: [estate planning after divorce](/l
 
 ## More questions people ask
 
+If you already have an agreement and want to loosen or cancel it, [can a prenup be changed after marriage](/learn/blended-families/can-a-prenup-be-changed-after-marriage) covers the signed-writing rule, enforcement and the 401(k) consent trap.
+
+To stop your money from ending up with a child's or spouse's in-laws, [keeping your inheritance from passing to in-laws](/learn/blended-families/keeping-an-inheritance-from-passing-to-in-laws) explains trusts and final beneficiaries.
+
 If your spouse develops memory loss, [when your spouse has dementia and you have children from before](/learn/blended-families/when-your-spouse-has-dementia-and-you-have-children-from-before) explains who decides, how care is paid for and how to protect both families.
 
 To decide on the split itself, [how much to leave a second spouse versus your children](/learn/blended-families/how-much-to-leave-a-second-spouse-versus-your-children) compares three common models and shows how to test them with real numbers.

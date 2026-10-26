@@ -138,6 +138,12 @@ For a view of the whole picture, our [basics guide](/learn/basics) and the [prob
 
 ## More questions people ask
 
+If you are thinking of leaving Illinois or New Jersey, [can you avoid state estate tax by moving](/learn/estate-tax/can-you-avoid-state-estate-tax-by-moving-to-another-state) explains domicile and what stays taxable.
+
+For couples with an older trust, [what a formula clause in a trust does](/learn/estate-tax/what-is-a-formula-clause-in-a-trust) shows how it can fund the wrong amount.
+
+Executors deciding whether to hire help can read [can I file Form 706 myself](/learn/estate-tax/can-i-file-form-706-myself-or-do-i-need-an-attorney).
+
 The rule that keeps spouses from paying tax at the first death is covered in [the marital deduction explained](/learn/estate-tax/marital-deduction-explained).
 
 On whether entity gifts at a discount still hold up, see [valuation discounts and family limited partnerships](/learn/estate-tax/valuation-discounts-and-family-limited-partnerships).

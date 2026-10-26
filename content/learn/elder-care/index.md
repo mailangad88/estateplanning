@@ -162,6 +162,8 @@ Other pillars worth reading alongside this one: [power of attorney](/learn/power
 
 ## More questions people ask
 
+To choose between two ways of moving the house, [life estate deed vs irrevocable trust for Medicaid](/learn/elder-care/life-estate-deed-vs-irrevocable-trust-for-medicaid) compares cost, control, taxes and estate recovery.
+
 If you have an animal, [what happens to your pet when you move into a nursing home or assisted living](/learn/elder-care/what-happens-to-your-pet-when-you-move-to-a-nursing-home-or-assisted-living) covers facility policies, a caregiver letter, pet trusts and how Medicaid treats pet money.
 
 For the mechanics of paying a relative, [payroll and taxes when a family member is your paid caregiver](/learn/elder-care/payroll-and-taxes-when-a-family-member-is-your-paid-caregiver) explains W-2s, Schedule H and withholding.

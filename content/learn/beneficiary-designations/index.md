@@ -141,6 +141,10 @@ Two situations cause most beneficiary problems we see: [an ex-spouse who is stil
 
 ## More questions people ask
 
+To switch or remove a name on a 401(k), IRA or policy, [how to change the beneficiary on a 401(k), IRA or life insurance policy](/learn/beneficiary-designations/how-to-change-the-beneficiary-on-a-401k-ira-or-life-insurance-policy) walks through each form, spousal consent and the ex-spouse trap.
+
+If you are single with no kids, [who gets your life insurance](/learn/beneficiary-designations/who-gets-your-life-insurance-if-you-are-unmarried-with-no-children) explains the default order and how to make sure your choice is the one paid.
+
 For a schedule, a trigger list and a simple record system, see [how often to review your beneficiary designations](/learn/beneficiary-designations/how-often-to-review-beneficiary-designations).
 
 When the beneficiary is a trust, a charity or someone abroad, [how to word the form](/learn/beneficiary-designations/beneficiary-form-wording-for-trusts-charities-and-overseas-beneficiaries) shows the exact naming that institutions accept.

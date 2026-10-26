@@ -143,6 +143,22 @@ If a death has just happened, find the original will, order certified death cert
 
 ## More questions people ask
 
+If a child is about to inherit and nothing is set up, [what happens when a minor inherits money in New Jersey](/learn/new-jersey/minor-inherits-money-in-new-jersey-guardian-of-the-property) explains the Surrogate's guardian of the property, the bond and the handover at 18.
+
+When a death was caused by someone else, [New Jersey wrongful death and survival claims](/learn/new-jersey/new-jersey-wrongful-death-and-survival-claims-for-an-estate) explains who files, who receives the money and how it differs from the probate estate.
+
+Before the executor can pay anything, [opening a New Jersey estate bank account](/learn/new-jersey/new-jersey-estate-bank-account-ein-and-tax-waivers) covers the EIN, what the bank needs and the Form L-8 tax waiver.
+
+For the money side of a funeral, [who pays for a funeral in New Jersey](/learn/new-jersey/paying-for-a-funeral-from-a-new-jersey-estate) explains reimbursement and why funeral costs are the first priority claim.
+
+To retitle a vehicle, [how to transfer a car title after death in New Jersey](/learn/new-jersey/transfer-car-title-after-death-in-new-jersey) lists the Motor Vehicle Commission documents for a spouse, executor, heir or TOD beneficiary.
+
+For the first paper an executor needs, [New Jersey death certificates](/learn/new-jersey/new-jersey-death-certificates-who-can-order-and-how-many-you-need) covers who may order, the state fees and how many copies to buy.
+
+When a New Jersey resident has died, [filing the final NJ-1040](/learn/new-jersey/final-new-jersey-income-tax-return-for-someone-who-died) explains who signs, the filing thresholds and how a refund owed to the estate is claimed.
+
+A surviving spouse who wants to keep tax relief should read [property tax relief after a spouse dies in New Jersey](/learn/new-jersey/new-jersey-property-tax-relief-after-a-spouse-dies) for what to refile.
+
 If a doctor has mentioned a POLST, [the New Jersey POLST form](/learn/new-jersey/new-jersey-polst-form-who-qualifies-who-signs-and-how-it-works) explains who it fits, who signs it and how it relates to your directive.
 
 To see what a trustee must tell you and what you can ask for, read [New Jersey trustee duties to beneficiaries](/learn/new-jersey/new-jersey-trustee-duties-to-beneficiaries-under-the-uniform-trust-code).

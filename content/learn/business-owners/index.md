@@ -164,6 +164,10 @@ Related pillars worth reading alongside this one: [trusts](/learn/trusts), [powe
 
 ## More questions people ask
 
+To see how creditors can and cannot reach an LLC interest, [what a charging order is](/learn/business-owners/what-is-a-charging-order-and-how-it-affects-llc-interests-and-heirs) covers the protection and its limits for owners and heirs.
+
+Before you budget, [how much business succession planning costs and how long it takes](/learn/business-owners/how-much-does-business-succession-planning-cost-and-how-long-does-it-take) breaks down legal, valuation and insurance costs.
+
 For the first week, not the first year, [a business continuity plan covering logins, domains and customer data](/learn/business-owners/business-continuity-plan-logins-domains-and-customer-data) shows what to document.
 
 If you plan to leave the company to your husband or wife, [when your spouse inherits the business](/learn/business-owners/when-your-spouse-inherits-the-business-keep-run-or-sell) compares keeping, managing and selling.
