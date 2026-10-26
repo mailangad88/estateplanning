@@ -164,6 +164,10 @@ An old will can cause as many problems as no will. See [what happens if you die 
 
 ## More questions people ask
 
+When the signer is ill or a relative may be pushing, [signing a will with dementia, illness or family pressure](/learn/wills/signing-a-will-with-dementia-illness-or-family-pressure) explains capacity, undue influence and how to document both.
+
+To see what to expect from first call to signing, [how long it takes to make a will](/learn/wills/how-long-it-takes-to-get-a-will-made) walks through each step and what slows it down.
+
 If you are weighing an unusual form, [oral, military, statutory and international wills](/learn/wills/oral-military-statutory-and-international-wills) explains what each does and when it is worth using.
 
 Not sure whether you need one at all? [Do I need a will](/learn/wills/do-i-need-a-will) walks through seven common situations.

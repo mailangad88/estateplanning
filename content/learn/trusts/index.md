@@ -175,6 +175,16 @@ A trust only controls what is titled in its name. Read [what happens if you neve
 
 ## More questions people ask
 
+For the income tax side, [how trusts are taxed](/learn/trusts/how-trusts-are-taxed-rates-ein-and-step-up) covers revocable versus irrevocable trusts, trust tax rates, when a trust needs its own EIN and who gets the step-up in basis.
+
+If you worry about a child's marriage, creditors or addiction, [can a trust protect a child's inheritance](/learn/trusts/keeping-an-inheritance-safe-from-a-childs-divorce-addiction-or-bad-spouse) shows what works and where the protection breaks.
+
+To see how age, family and state change the answer, read [do I need a trust by life stage, family and state](/learn/trusts/do-i-need-a-trust-by-age-family-and-state).
+
+For signing and storage, [witnesses, notaries, filing and where to keep your trust](/learn/trusts/trust-signing-notary-witnesses-and-where-to-keep-the-documents) explains what the law requires and what banks expect.
+
+If you are acting for an aging parent, [setting up a trust for an elderly parent](/learn/trusts/setting-up-a-trust-for-an-elderly-parent) explains who can sign and what each trust does for Medicaid.
+
 If a trust has to outlast you by decades, [what a trust protector and decanting can do](/learn/trusts/what-is-a-trust-protector-and-decanting) explains how it can be fixed without going to court.
 
 To decide how and when your heirs are paid, [trust distribution standards, HEMS and conditions](/learn/trusts/trust-distribution-standards-hems-and-discretion) compares mandatory, discretionary and staged payouts.

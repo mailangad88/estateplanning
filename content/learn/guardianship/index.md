@@ -175,6 +175,10 @@ You can do the first two this month and the rest over time. A good first step is
 
 ## More questions people ask
 
+If you wonder how much control the person you name will really have, [what a guardian can decide for your children](/learn/guardianship/what-a-guardian-can-decide-for-your-children) covers school, religion, medical care, moving and money.
+
+For parents of several young children, [how a family pool trust works](/learn/guardianship/family-pool-trust-for-young-children) explains one shared fund, when it splits, and when separate trusts fit better.
+
 If your first choice is a stepparent, a partner you never married or a single friend, [who can be named guardian](/learn/guardianship/who-can-be-guardian-stepparent-partner-single-or-split-siblings) covers what the law allows and when siblings should be split.
 
 If your child's other parent is a former partner, [whether the surviving parent automatically gets custody](/learn/guardianship/does-the-surviving-parent-get-custody-if-you-die) explains what a will can and cannot do.

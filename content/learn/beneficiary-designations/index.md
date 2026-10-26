@@ -141,6 +141,10 @@ Two situations cause most beneficiary problems we see: [an ex-spouse who is stil
 
 ## More questions people ask
 
+When a family disputes a form, [whether a beneficiary designation can be challenged](/learn/beneficiary-designations/when-a-beneficiary-designation-can-be-challenged) covers undue influence, capacity, the slayer rule and clerical errors.
+
+Before adding a child to an account, [joint ownership versus a beneficiary designation](/learn/beneficiary-designations/joint-ownership-vs-beneficiary-designation) compares control, creditors and fairness.
+
 For the details heirs ask about most, [the inherited IRA 10-year rule, yearly withdrawals and who still gets the stretch](/learn/beneficiary-designations/inherited-ira-10-year-rule-yearly-withdrawals) sorts beneficiaries into their three categories.
 
 Married, remarried or widowed owners can see [whether a spouse must sign off on beneficiary choices](/learn/beneficiary-designations/does-your-spouse-have-to-approve-your-beneficiary-choices), including ERISA consent and community property.

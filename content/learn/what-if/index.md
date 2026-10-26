@@ -138,6 +138,18 @@ Our [plan readiness assessment](/tools/plan-readiness-assessment) shows which of
 
 ## More questions people ask
 
+If no relative can be found, [what happens when an heir is missing or you have no family](/learn/what-if/heir-cannot-be-found-or-no-family-survives) explains the court search, the held share and how the state ends up with the estate.
+
+For people with no relatives or no obvious agent, [what happens if you become incapacitated with no one to speak for you](/learn/what-if/incapacitated-with-no-family-or-no-one-to-name-as-agent) covers default surrogates, court guardians and professional fiduciaries.
+
+If you own a cabin or land in another state, [what happens when you die without a will with property in two states](/learn/what-if/die-without-a-will-owning-property-in-two-states) explains the second court case and how to avoid it.
+
+When the person on a beneficiary form is in trouble, [what happens if a beneficiary is bankrupt, divorcing, in prison or struggling with addiction](/learn/what-if/beneficiary-bankrupt-in-prison-divorcing-or-struggling-with-addiction) shows where the money goes and how a trust slows it down.
+
+If the attorney who drafted your plan is gone or got something wrong, [what happens when your estate planning lawyer dies, retires or makes a mistake](/learn/what-if/estate-planning-lawyer-dies-retires-or-makes-a-mistake) explains how to get your file and fix the plan.
+
+When everything is left to a spouse outright, [what happens if your surviving spouse remarries](/learn/what-if/surviving-spouse-remarries-after-you-die) shows how a new marriage can redirect your estate and how a trust prevents it.
+
 A widowed person whose documents still name their late spouse can read [what happens if you never update your plan after a spouse dies](/learn/what-if/spouse-died-plan-not-updated) to see which roles go empty and what to sign first.
 
 If a form says 'my estate', [what happens when the estate is the beneficiary](/learn/what-if/estate-as-beneficiary) explains the probate, creditor and retirement-account tax effects.

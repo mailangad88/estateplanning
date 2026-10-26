@@ -180,6 +180,12 @@ Curious what happens when a plan is missing or out of date? Our guide to [what h
 
 ## More questions people ask
 
+If someone mentioned a "five year rule" or "seven year rule," [the 3, 5 and 7 year rules explained](/learn/basics/the-3-5-and-7-year-rules-in-estate-planning) shows which are real in the U.S. and which clock applies to your gift.
+
+To set realistic expectations, [what an estate plan can and cannot do](/learn/basics/what-an-estate-plan-can-and-cannot-do) covers taxes, creditors, life insurance and the honest pros and cons.
+
+If you or your spouse are not U.S. citizens, [estate planning for immigrants and non-citizens](/learn/basics/estate-planning-for-immigrants-and-non-citizens) explains which documents apply and where the tax rules differ.
+
 To spare your family guesswork, read [how to plan your own funeral in advance](/learn/basics/plan-your-own-funeral-in-advance), including why a will is the wrong place for funeral wishes.
 
 For the whole paper file, not just the will, [how to organize your estate planning documents](/learn/basics/how-to-organize-your-estate-planning-documents) shows who should hold which copy.

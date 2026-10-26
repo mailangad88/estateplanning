@@ -178,6 +178,16 @@ Call one if the person owned real estate, a business or substantial accounts, if
 
 ## More questions people ask
 
+Where the death happens changes the first calls, so [what to do when someone dies in a hospital, hospice, nursing home, at home or out of state](/learn/after-a-death/what-to-do-when-someone-dies-in-a-hospital-hospice-nursing-home-or-out-of-state) explains who pronounces death and when a coroner steps in.
+
+If you were not named, [left out of the will: what a child or relative can actually do](/learn/after-a-death/left-out-of-the-will-what-a-child-or-relative-can-do) separates real grounds to object from disappointment.
+
+At the end of an estate, [final distribution, receipt and release, and closing the estate](/learn/after-a-death/final-distribution-receipt-and-release-and-closing-the-estate) walks through the payout order, releases and discharge.
+
+For money that pays outside probate, [how to claim life insurance, a pension and VA survivor benefits](/learn/after-a-death/claiming-life-insurance-pension-and-va-survivor-benefits) covers forms, proof and common delays.
+
+If the list feels endless, [do you have to do everything at once after a death](/learn/after-a-death/do-i-have-to-do-everything-at-once-after-a-death) shows what has a deadline and what can wait.
+
 When the house is full and the family is tired, [how to clear out a parent's house](/learn/after-a-death/clearing-out-a-parents-house-after-death) explains who has authority, what to secure first and when a liquidator helps.
 
 For the numbers the court and the IRS ask for, [how an executor values the estate](/learn/after-a-death/how-an-executor-values-the-estate) covers date-of-death values for each type of asset.

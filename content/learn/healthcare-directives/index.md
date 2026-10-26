@@ -161,6 +161,10 @@ Healthcare directives handle medical decisions and information. The [durable fin
 
 ## More questions people ask
 
+To see who decides about organ donation, autopsy and the funeral once the agent's role ends, read [what your healthcare agent can do after death](/learn/healthcare-directives/healthcare-agent-authority-after-death).
+
+If you are handed an admission packet, [can a healthcare agent sign nursing home admission papers](/learn/healthcare-directives/can-a-healthcare-agent-sign-nursing-home-admission) explains what to sign and what to decline.
+
 To understand each treatment you might decline, [what it means to refuse life support](/learn/healthcare-directives/what-it-means-to-refuse-life-support) explains CPR, ventilators, feeding tubes and DNI orders in plain language.
 
 Before you fill in a form, [questions to answer before writing a living will](/learn/healthcare-directives/questions-to-answer-before-writing-a-living-will) gives you a values-history worksheet and advice for talking with an aging parent.

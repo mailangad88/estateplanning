@@ -154,6 +154,10 @@ State rules matter a great deal here. If you want to see how probate works where
 
 ## More questions people ask
 
+If you have already added a name to an account or signed a deed, [does a joint account, power of attorney or life estate avoid probate](/learn/probate/probate-shortcuts-that-do-not-work) shows where each shortcut fails.
+
+To check whether a case exists, [how to look up a probate case](/learn/probate/how-to-look-up-a-probate-case) explains which court to search, how to search by name and what to do when nothing turns up.
+
 When there is no will or the family tree is unclear, [how to prove you are an heir](/learn/probate/how-to-prove-you-are-an-heir) covers the records, heirship hearings and missing relatives.
 
 Surviving spouses and young children have claims that rank ahead of most creditors, explained in [family allowance, homestead and exempt property in probate](/learn/probate/family-allowance-and-homestead-in-probate).

@@ -143,6 +143,22 @@ If a death has just happened, find the original will, order certified death cert
 
 ## More questions people ask
 
+For the order of an executor's work, from qualifying at the Surrogate to the final release, see [executor duties in New Jersey, step by step](/learn/new-jersey/executor-duties-in-new-jersey-step-by-step).
+
+For a family planning around a disability, [special needs planning in New Jersey](/learn/new-jersey/special-needs-planning-in-new-jersey) covers DDD eligibility, NJ ABLE accounts, special needs trusts and the decision at age 18.
+
+If property sits in two states, [New Jersey out-of-state property and ancillary probate](/learn/new-jersey/new-jersey-out-of-state-property-and-ancillary-probate) explains the Surrogate filing and the nonresident inheritance tax.
+
+To close an estate safely, [New Jersey refunding bonds and releases](/learn/new-jersey/new-jersey-refunding-bonds-and-releases-when-an-estate-closes) covers who signs, the Surrogate fee and informal versus formal accounting.
+
+To decide who can choose burial or cremation, [who controls funeral and burial decisions in New Jersey](/learn/new-jersey/who-controls-funeral-and-burial-decisions-in-new-jersey) explains the written appointment and the statutory order of priority.
+
+For email, cloud and social media accounts, [New Jersey's digital assets law](/learn/new-jersey/new-jersey-digital-assets-law) covers what a fiduciary must send and the 60-day response deadline.
+
+To provide for an animal after your death, [pet trusts in New Jersey](/learn/new-jersey/pet-trusts-in-new-jersey) explains N.J.S.A. 3B:31-24, who enforces the trust and where leftover money goes.
+
+If you are in a civil union, a domestic partnership or neither, [domestic partners and civil union partners in New Jersey estate law](/learn/new-jersey/domestic-partners-and-civil-union-partners-in-new-jersey-estate-law) shows what each status gets.
+
 For long-term care costs, [New Jersey Medicaid and nursing home planning](/learn/new-jersey/new-jersey-medicaid-and-nursing-home-planning) explains the NJ FamilyCare MLTSS limits, the five-year look-back and how the community spouse is protected.
 
 If a parent received Medicaid, [New Jersey Medicaid estate recovery](/learn/new-jersey/new-jersey-estate-recovery) covers what the state can claim, who is protected and the 20-day hardship deadline.

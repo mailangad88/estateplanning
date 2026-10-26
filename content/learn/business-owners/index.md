@@ -164,6 +164,12 @@ Related pillars worth reading alongside this one: [trusts](/learn/trusts), [powe
 
 ## More questions people ask
 
+If you are weighing a sale against a handoff, [selling your business or passing it on](/learn/business-owners/selling-your-business-or-passing-it-to-family-or-employees) compares the five exits, the tax difference and how a key employee can buy in over time.
+
+When the company is nearly everything you own, [planning for a business-heavy estate](/learn/business-owners/when-the-business-is-most-of-your-estate) covers equalizing children, cash for bills and taxes, and the powers a surviving spouse needs.
+
+For the short list of essentials, [the documents every business owner needs](/learn/business-owners/documents-every-business-owner-needs) covers the will, power of attorney, disability coverage and the access file that keeps the company running.
+
 If you own rentals, [what happens to rental properties when a landlord dies](/learn/business-owners/landlord-estate-plan-rental-properties-llc-or-trust) compares a living trust and an LLC and covers deposits, leases and loans.
 
 Self-employed writers, designers and consultants can read [whether a freelancer needs an estate plan](/learn/business-owners/freelancer-estate-plan-royalties-copyrights-and-client-work) to see who inherits royalties, copyrights and unpaid invoices.
