@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { PageHeader } from "@/components/ui";
 import { MAGNET_CATEGORIES, MAGNET_FORMATS, getMagnets, magnetsForState } from "@/lib/magnets";
 import { DEFAULT_TOOL_STATE } from "@/config/tools";
-import Library from "./Library";
+import Library, { LibraryGroup } from "./Library";
 
 export const metadata: Metadata = {
   title: "Free estate planning resource library",
@@ -35,20 +35,17 @@ export default function FreeLibrary() {
         Prefer something quicker? Try a <Link href="/quizzes">2-minute quiz</Link> or a <Link href="/tools">free calculator</Link>.
       </p>
       {local.length > 0 && DEFAULT_TOOL_STATE === "IL" && (
-        <section aria-labelledby="illinois">
-          <h2 id="illinois">For Illinois families</h2>
-          <ul className="cards">
-            {local.map((m) => (
-              <li key={m.slug}>
-                <Link href={`/free/${m.slug}`} className="card-link">
-                  <span className="tag">Free {MAGNET_FORMATS[m.format].toLowerCase()}</span>
-                  <strong>{m.title}</strong>
-                  <span className="card-desc">{m.promise}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
+        <LibraryGroup id="illinois" label="For Illinois families" count={local.length}>
+          {local.map((m) => (
+            <li key={m.slug}>
+              <Link href={`/free/${m.slug}`} className="card-link">
+                <span className="tag">Free {MAGNET_FORMATS[m.format].toLowerCase()}</span>
+                <strong>{m.title}</strong>
+                <span className="card-desc">{m.promise}</span>
+              </Link>
+            </li>
+          ))}
+        </LibraryGroup>
       )}
       <Library items={items} categories={MAGNET_CATEGORIES} formats={MAGNET_FORMATS} />
     </>
