@@ -162,6 +162,16 @@ Other pillars worth reading alongside this one: [power of attorney](/learn/power
 
 ## More questions people ask
 
+To see how a penalty is counted and what half-a-loaf gifting really involves, read [how long the Medicaid penalty lasts](/learn/elder-care/half-a-loaf-gifting-and-how-long-the-medicaid-penalty-lasts).
+
+If the spouse at home dies first, [what happens to Medicaid when the healthy spouse dies first](/learn/elder-care/what-happens-to-medicaid-when-the-healthy-spouse-dies-first) explains the will, beneficiary forms and trust that protect the survivor's coverage.
+
+Thinking about borrowing against the house to pay for care? [Reverse mortgage or Medicaid planning](/learn/elder-care/reverse-mortgage-vs-medicaid-planning) covers how Medicaid sees the money and what a nursing home move does to the loan.
+
+For the gray areas that decide eligibility, [what counts as a countable asset for Medicaid](/learn/elder-care/what-counts-as-a-countable-asset-for-medicaid) covers trusts, joint accounts, second homes and unreachable property.
+
+Veterans can read [VA benefits and Medicaid at the same time](/learn/elder-care/va-benefits-and-medicaid-at-the-same-time) for taxes, income counting and the pension reduction in a Medicaid nursing home.
+
 If a policy premium jumps, lapses or a claim is refused, [what to do when long-term care insurance premiums rise or a claim is denied](/learn/elder-care/when-long-term-care-insurance-premiums-rise-or-a-claim-is-denied) lays out the options and appeal steps.
 
 For people with little savings or no relatives, [what happens if you need long-term care and have no money or no family](/learn/elder-care/what-happens-if-you-need-long-term-care-and-have-no-money-or-no-family) explains Medicaid, local help and who can act for you.

@@ -201,6 +201,14 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+To change an existing will, [changing or revoking a will in Illinois](/learn/illinois/changing-or-revoking-a-will-in-illinois) explains the four statutory ways to revoke, what divorce does, and when a codicil is enough.
+
+If a child is born after you sign, or a beneficiary dies first, [children born after an Illinois will and lapsed gifts](/learn/illinois/children-born-after-an-illinois-will-and-lapsed-gifts) covers sections 4-10 and 4-11.
+
+For gifts to a child without a trust, [Illinois UTMA accounts and gifts to minors](/learn/illinois/illinois-utma-accounts-and-gifts-to-minors) explains the age-21 rule and what a custodian must do.
+
+To track down forgotten accounts, [finding unclaimed property for an Illinois estate](/learn/illinois/finding-unclaimed-property-for-an-illinois-estate) shows how to search the Treasurer's I-Cash site and claim for a deceased owner.
+
 To cover a gap in care while you are alive, [Illinois standby and short-term guardians](/learn/illinois/illinois-standby-and-short-term-guardians-for-children) explains the no-court short-term paper, the standby petition, and how long each lasts.
 
 For who decides burial or cremation, [the Illinois Disposition of Remains Act](/learn/illinois/illinois-disposition-of-remains-act) gives the ranked list and the notarized form that overrides it.

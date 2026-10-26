@@ -175,6 +175,10 @@ You can do the first two this month and the rest over time. A good first step is
 
 ## More questions people ask
 
+If the words are confusing, [guardianship vs custody vs adoption](/learn/guardianship/guardianship-vs-custody-vs-adoption) sets out who holds each one, how long it lasts and what it does to inheritance.
+
+For relatives who must go to court, [how to petition for guardianship of a minor child](/learn/guardianship/how-to-petition-for-guardianship-of-a-minor-child) walks through the filing steps and what a judge weighs.
+
 If you wonder how much control the person you name will really have, [what a guardian can decide for your children](/learn/guardianship/what-a-guardian-can-decide-for-your-children) covers school, religion, medical care, moving and money.
 
 For parents of several young children, [how a family pool trust works](/learn/guardianship/family-pool-trust-for-young-children) explains one shared fund, when it splits, and when separate trusts fit better.

@@ -180,6 +180,16 @@ If no document is signed in time, read [what happens if you are incapacitated wi
 
 ## More questions people ask
 
+If you want to narrow what an agent may do, [how to limit an agent's powers and add safeguards](/learn/power-of-attorney/limiting-an-agents-powers-and-adding-safeguards-in-a-power-of-attorney) covers second signatures, monitors and start dates.
+
+Before you download a form, [are free online and handwritten power of attorney forms valid](/learn/power-of-attorney/are-free-online-and-handwritten-power-of-attorney-forms-valid) explains what makes one hold up and how to sign remotely.
+
+When family members distrust an agent, [challenging or removing a power of attorney agent](/learn/power-of-attorney/can-you-challenge-or-remove-a-power-of-attorney-agent-when-siblings-disagree) sets out the steps from asking for records to petitioning a court.
+
+If an agent wants out, [how a power of attorney agent resigns](/learn/power-of-attorney/can-a-power-of-attorney-agent-resign-or-step-down) covers the letter, the handover and who takes over.
+
+For the harder assets, [what a power of attorney can do with retirement accounts, safe deposit boxes, vehicles and businesses](/learn/power-of-attorney/power-of-attorney-and-retirement-accounts-safe-deposit-boxes-vehicles-and-businesses) explains what each institution will ask for.
+
 If you wonder whether an agent may give away your money, or give it to themselves, [can a power of attorney make gifts](/learn/power-of-attorney/can-a-power-of-attorney-make-gifts) covers gifting clauses, the gift tax and the Medicaid look-back.
 
 After a move, or if you own property in another state or abroad, [whether a power of attorney is valid in another state or country](/learn/power-of-attorney/is-a-power-of-attorney-valid-in-another-state-or-abroad) explains what travels and what needs updating.

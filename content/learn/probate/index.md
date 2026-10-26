@@ -154,6 +154,12 @@ State rules matter a great deal here. If you want to see how probate works where
 
 ## More questions people ask
 
+To see how two states differ in practice, [Illinois and New Jersey probate compared](/learn/probate/illinois-and-new-jersey-probate-compared) lines up the courts, notice rules, small estate shortcuts and death taxes.
+
+When debts exceed assets, [what happens when an estate owes more than it has](/learn/probate/what-happens-when-an-estate-owes-more-than-it-has) explains who gets paid and what the family owes.
+
+If the will was signed in, or the person lived in, a different state, [probating a will from another state](/learn/probate/probating-a-will-from-another-state) explains which court takes the case.
+
 If you have already added a name to an account or signed a deed, [does a joint account, power of attorney or life estate avoid probate](/learn/probate/probate-shortcuts-that-do-not-work) shows where each shortcut fails.
 
 To check whether a case exists, [how to look up a probate case](/learn/probate/how-to-look-up-a-probate-case) explains which court to search, how to search by name and what to do when nothing turns up.

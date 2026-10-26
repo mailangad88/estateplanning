@@ -97,6 +97,14 @@
         [
           "estate-planning-for-immigrants-and-non-citizens",
           "Estate planning for immigrants and non-citizens: wills, guardians and a spouse without citizenship"
+        ],
+        [
+          "estate-planning-words-who-is-who-in-a-plan",
+          "Testator, settlor, fiduciary, decedent: the estate planning words explained"
+        ],
+        [
+          "what-an-estate-is-probate-gross-and-taxable-estate",
+          "What is an estate? Probate estate, gross estate and taxable estate explained"
         ]
       ]
     },
@@ -236,6 +244,22 @@
         [
           "pet-trusts-in-illinois",
           "Pet trusts in Illinois: how Section 408 of the Trust Code protects an animal"
+        ],
+        [
+          "changing-or-revoking-a-will-in-illinois",
+          "Changing or revoking a will in Illinois: what the Probate Act allows"
+        ],
+        [
+          "children-born-after-an-illinois-will-and-lapsed-gifts",
+          "Children born after an Illinois will, and what happens to lapsed gifts"
+        ],
+        [
+          "illinois-utma-accounts-and-gifts-to-minors",
+          "Illinois UTMA accounts and gifts to minors: age 21, custodian duties and limits"
+        ],
+        [
+          "finding-unclaimed-property-for-an-illinois-estate",
+          "Finding unclaimed property for an Illinois estate: using I-Cash as an heir or executor"
         ]
       ]
     },
@@ -343,6 +367,38 @@
         [
           "new-jersey-refunding-bonds-and-releases-when-an-estate-closes",
           "New Jersey refunding bonds and releases: how an estate closes without a court accounting"
+        ],
+        [
+          "changing-or-revoking-a-will-in-new-jersey",
+          "Changing or revoking a will in New Jersey: codicils, new wills and divorce"
+        ],
+        [
+          "children-left-out-of-a-new-jersey-will",
+          "Children left out of a New Jersey will: after-born children and disinheriting an adult child"
+        ],
+        [
+          "when-a-beneficiary-dies-first-in-new-jersey",
+          "When a beneficiary dies first in New Jersey: anti-lapse and the 120-hour rule"
+        ],
+        [
+          "new-jersey-utma-accounts-and-gifts-to-minors",
+          "New Jersey UTMA accounts and gifts to minors: age 21, custodians and wills"
+        ],
+        [
+          "joint-property-and-tenancy-by-the-entirety-in-new-jersey",
+          "Joint property and tenancy by the entirety in New Jersey: what happens at death"
+        ],
+        [
+          "new-jersey-pension-survivor-benefits-pers-tpaf-pfrs",
+          "New Jersey pension survivor and death benefits: PERS, TPAF and PFRS"
+        ],
+        [
+          "finding-unclaimed-property-for-a-new-jersey-estate",
+          "Finding unclaimed property for a New Jersey estate: how heirs and executors claim it"
+        ],
+        [
+          "selling-an-estate-house-in-new-jersey",
+          "Selling an estate house in New Jersey: who signs, tax waivers and closing fees"
         ]
       ]
     },
@@ -478,6 +534,26 @@
         [
           "surviving-spouse-remarries-after-you-die",
           "What happens if you die and your surviving spouse remarries?"
+        ],
+        [
+          "two-wills-that-conflict",
+          "What happens if you have two wills that conflict?"
+        ],
+        [
+          "charity-named-in-will-no-longer-exists",
+          "What happens if you leave money to a charity that no longer exists?"
+        ],
+        [
+          "incapacitated-with-only-a-will-or-a-trust",
+          "What happens if you become incapacitated and all you have is a will or a trust?"
+        ],
+        [
+          "family-tries-to-override-your-power-of-attorney",
+          "What happens if your family tries to override your power of attorney?"
+        ],
+        [
+          "family-cannot-find-your-will-or-open-the-safe-deposit-box",
+          "What happens if your family cannot find your will or open your safe deposit box?"
         ]
       ]
     },
@@ -605,6 +681,18 @@
         [
           "how-long-it-takes-to-get-a-will-made",
           "How long does it take to make a will, and what happens at each step?"
+        ],
+        [
+          "parts-of-a-will-what-each-clause-does",
+          "What goes in a last will and testament? The parts of a will, clause by clause"
+        ],
+        [
+          "leaving-property-to-a-partner-friend-or-non-citizen-in-a-will",
+          "Can you leave property in your will to an unmarried partner, a friend or a non-citizen?"
+        ],
+        [
+          "who-pays-debts-expenses-and-taxes-under-your-will",
+          "Who pays the debts, funeral bill and taxes under your will? Drafting the payment clauses"
         ]
       ]
     },
@@ -752,6 +840,14 @@
         [
           "setting-up-a-trust-for-an-elderly-parent",
           "Can I set up a trust for my elderly parent, and will it help with Medicaid?"
+        ],
+        [
+          "what-happens-to-a-trust-when-a-beneficiary-dies",
+          "What happens to a trust when a beneficiary dies?"
+        ],
+        [
+          "can-you-have-more-than-one-trust",
+          "Can you have more than one trust? When separate trusts make sense"
         ]
       ]
     },
@@ -903,6 +999,18 @@
         [
           "how-to-look-up-a-probate-case",
           "How to look up a probate case by name and get copies of the filings"
+        ],
+        [
+          "illinois-and-new-jersey-probate-compared",
+          "Illinois and New Jersey probate compared: two courts, two timelines, two sets of shortcuts"
+        ],
+        [
+          "what-happens-when-an-estate-owes-more-than-it-has",
+          "What happens when an estate owes more than it has (an insolvent estate)"
+        ],
+        [
+          "probating-a-will-from-another-state",
+          "Probating a will from another state: where to file and whether the will still counts"
         ]
       ]
     },
@@ -1074,6 +1182,26 @@
         [
           "do-i-have-to-do-everything-at-once-after-a-death",
           "Do you have to do everything at once after a death? What can wait and how to pace it"
+        ],
+        [
+          "who-decides-funeral-arrangements-when-family-disagrees",
+          "Who decides the funeral arrangements, and what if the family disagrees?"
+        ],
+        [
+          "when-an-heir-cannot-receive-their-share-died-minor-incapacitated-or-in-debt",
+          "When an heir cannot simply receive their share: died, minor, incapacitated or in debt"
+        ],
+        [
+          "inherited-stocks-and-brokerage-accounts-selling-retitling-and-tax",
+          "Inherited stocks and brokerage accounts: can you sell right away, and what is the tax?"
+        ],
+        [
+          "what-to-do-with-an-inheritance-of-cash-in-the-first-year",
+          "You inherited cash: what to do with it, what to report and what to leave alone"
+        ],
+        [
+          "ending-a-deceased-persons-lease-utilities-phone-and-insurance",
+          "Lease, utilities, phone plan and health insurance: what to cancel and what to keep after a death"
         ]
       ]
     },
@@ -1165,6 +1293,26 @@
         [
           "do-i-need-a-power-of-attorney-if-i-have-a-living-trust",
           "Do I need a power of attorney if I have a living trust?"
+        ],
+        [
+          "limiting-an-agents-powers-and-adding-safeguards-in-a-power-of-attorney",
+          "How to limit your agent's powers and add safeguards to a power of attorney"
+        ],
+        [
+          "are-free-online-and-handwritten-power-of-attorney-forms-valid",
+          "Are free online and handwritten power of attorney forms valid?"
+        ],
+        [
+          "can-you-challenge-or-remove-a-power-of-attorney-agent-when-siblings-disagree",
+          "Can you challenge or remove a power of attorney agent? When siblings disagree"
+        ],
+        [
+          "can-a-power-of-attorney-agent-resign-or-step-down",
+          "Can a power of attorney agent resign? How to step down and who takes over"
+        ],
+        [
+          "power-of-attorney-and-retirement-accounts-safe-deposit-boxes-vehicles-and-businesses",
+          "What a power of attorney can do with retirement accounts, safe deposit boxes, vehicles and businesses"
         ]
       ]
     },
@@ -1343,6 +1491,14 @@
         [
           "family-pool-trust-for-young-children",
           "Family pool trust: one shared trust for several young children"
+        ],
+        [
+          "guardianship-vs-custody-vs-adoption",
+          "Guardianship vs custody vs adoption: what each one means for a child"
+        ],
+        [
+          "how-to-petition-for-guardianship-of-a-minor-child",
+          "How to petition for guardianship of a minor child, and what a judge looks for"
         ]
       ]
     },
@@ -1434,6 +1590,14 @@
         [
           "giving-away-assets-after-a-terminal-diagnosis",
           "Should you give away assets or change beneficiaries after a terminal diagnosis?"
+        ],
+        [
+          "estate-planning-for-same-sex-couples-and-lgbtq-families",
+          "Estate planning for same-sex couples and LGBTQ families"
+        ],
+        [
+          "estate-planning-when-you-move-to-assisted-living-or-your-health-declines",
+          "Updating your estate plan when you move to assisted living or your health declines"
         ]
       ]
     },
@@ -1505,6 +1669,14 @@
         [
           "keeping-an-inheritance-separate-in-a-blended-family",
           "Keeping an inheritance separate in a blended family: a child's divorce, a second spouse and the family business"
+        ],
+        [
+          "when-your-spouse-has-dementia-and-you-have-children-from-before",
+          "When your spouse has dementia and you have children from before"
+        ],
+        [
+          "how-much-to-leave-a-second-spouse-versus-your-children",
+          "How much should you leave a second spouse versus your children?"
         ]
       ]
     },
@@ -1715,6 +1887,18 @@
         [
           "charitable-gifts-and-bequests-gift-tax-estate-tax-and-income-tax",
           "Charitable gifts and bequests: when do gift, estate and income taxes apply?"
+        ],
+        [
+          "estate-tax-elections-alternate-valuation-deferral-and-farm-valuation",
+          "Estate tax elections: alternate valuation, 6166 deferral and farm valuation"
+        ],
+        [
+          "form-709-gift-tax-return-gift-splitting-and-net-gifts",
+          "Form 709: who files a gift tax return, gift splitting and net gifts"
+        ],
+        [
+          "intentionally-defective-grantor-trust-and-sale-to-an-idgt",
+          "Intentionally defective grantor trusts and sales to an IDGT"
         ]
       ]
     },
@@ -1818,6 +2002,14 @@
         [
           "documents-every-business-owner-needs",
           "Does a business owner need a will, a power of attorney and disability insurance?"
+        ],
+        [
+          "divorce-and-the-family-business",
+          "What happens to a business when its owner divorces? Planning for co-owner spouses"
+        ],
+        [
+          "first-30-days-after-a-business-owner-dies",
+          "Who runs the business and signs the checks in the first 30 days after the owner dies?"
         ]
       ]
     },
@@ -1909,6 +2101,18 @@
         [
           "capacity-and-marriage-for-adults-with-disabilities",
           "Can an adult with a disability make a will, sign a power of attorney or get married?"
+        ],
+        [
+          "what-counts-as-income-and-resources-for-ssi",
+          "What counts as income and resources for SSI (and what does not)"
+        ],
+        [
+          "who-qualifies-as-disabled-and-planning-by-diagnosis",
+          "Who qualifies as disabled for planning: autism, Down syndrome, ADHD and mental illness"
+        ],
+        [
+          "housing-and-medicaid-waivers-for-adults-with-disabilities",
+          "Housing and Medicaid waivers for adults with disabilities: how the options fit"
         ]
       ]
     },
@@ -2048,6 +2252,26 @@
         [
           "should-you-quit-your-job-to-care-for-a-parent",
           "Should you quit your job to care for a parent? The money questions to settle first"
+        ],
+        [
+          "half-a-loaf-gifting-and-how-long-the-medicaid-penalty-lasts",
+          "How long does the Medicaid penalty last? Half-a-loaf gifting and exempt transfers"
+        ],
+        [
+          "what-happens-to-medicaid-when-the-healthy-spouse-dies-first",
+          "What happens to Medicaid when the healthy spouse dies first?"
+        ],
+        [
+          "reverse-mortgage-vs-medicaid-planning",
+          "Reverse mortgage or Medicaid planning: how a reverse mortgage affects care costs and your heirs"
+        ],
+        [
+          "what-counts-as-a-countable-asset-for-medicaid",
+          "What counts as a countable asset for Medicaid? Trusts, joint accounts, second homes and gray areas"
+        ],
+        [
+          "va-benefits-and-medicaid-at-the-same-time",
+          "Can you get VA benefits and Medicaid at the same time? Taxes, income and the nursing home reduction"
         ]
       ]
     },
@@ -2155,6 +2379,18 @@
         [
           "how-to-create-a-digital-asset-inventory-your-executor-can-use",
           "How to create a digital asset inventory your executor can actually use"
+        ],
+        [
+          "who-gets-your-digital-accounts-if-you-die-without-a-will",
+          "Who gets your digital accounts, photos and crypto if you die without a will"
+        ],
+        [
+          "how-to-ask-a-tech-company-for-a-deceased-persons-account",
+          "How to ask Apple, Google or Meta for a deceased person's account: documents, steps and timing"
+        ],
+        [
+          "online-banking-amazon-linkedin-and-password-managers-after-death",
+          "Online banking, Amazon, LinkedIn and password managers after death: what happens to each"
         ]
       ]
     },
@@ -2254,6 +2490,18 @@
         [
           "who-pays-for-an-inherited-house-upkeep-taxes-and-reimbursing-the-sibling-who-fronts-it",
           "Who pays for an inherited house? Upkeep, taxes and reimbursing the heir who fronts the bills"
+        ],
+        [
+          "hidden-property-problems-deed-restrictions-flood-and-contamination",
+          "Deed restrictions, flood risk and contamination: what to check before you leave or inherit a house"
+        ],
+        [
+          "vacation-home-in-another-country-when-the-owner-dies",
+          "What happens to a vacation home in another country when the owner dies?"
+        ],
+        [
+          "choosing-a-pet-caretaker-and-a-backup-in-your-estate-plan",
+          "Who gets your pet when you die? Choosing a caretaker and a backup"
         ]
       ]
     }

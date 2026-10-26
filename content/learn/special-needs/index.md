@@ -159,6 +159,12 @@ Include the person with a disability in the conversation as much as they are abl
 
 ## More questions people ask
 
+To see what Social Security counts and ignores, [what counts as income and resources for SSI](/learn/special-needs/what-counts-as-income-and-resources-for-ssi) covers resources, in-kind support, deeming and how SSI differs from SSDI and Medicaid.
+
+If you are unsure whether your child needs a special needs trust, [who qualifies as disabled and how to plan by diagnosis](/learn/special-needs/who-qualifies-as-disabled-and-planning-by-diagnosis) explains Social Security's definition and the alternatives.
+
+For planning where an adult with a disability will live, [housing and Medicaid waivers for adults with disabilities](/learn/special-needs/housing-and-medicaid-waivers-for-adults-with-disabilities) covers waivers, waiting lists, group homes and housing vouchers.
+
 Retirement money needs its own handling, and [naming a special needs trust as IRA or 401(k) beneficiary](/learn/special-needs/special-needs-trust-as-ira-beneficiary) explains the payout rules and the conduit versus accumulation choice.
 
 To plan who steps in after you, [who will care for your child or sibling after you are gone](/learn/special-needs/who-cares-for-a-person-with-a-disability-after-parents-die) covers naming a guardian, asking a sibling and what changes for benefits.

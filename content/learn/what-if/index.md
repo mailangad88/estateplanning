@@ -138,6 +138,16 @@ Our [plan readiness assessment](/tools/plan-readiness-assessment) shows which of
 
 ## More questions people ask
 
+If you have signed more than one will, [what happens if two wills conflict](/learn/what-if/two-wills-that-conflict) explains which one a court follows and how to clean up.
+
+If a charity in your will has merged or closed, [what happens when it no longer exists](/learn/what-if/charity-named-in-will-no-longer-exists) covers cy pres and backup wording.
+
+[What happens if you become incapacitated with only a will or a trust](/learn/what-if/incapacitated-with-only-a-will-or-a-trust) shows what each document does while you are alive.
+
+When relatives dislike the agent you picked, [what happens if family tries to override your power of attorney](/learn/what-if/family-tries-to-override-your-power-of-attorney) explains what a court can and cannot do.
+
+[What happens if your family cannot find your will or open your safe deposit box](/learn/what-if/family-cannot-find-your-will-or-open-the-safe-deposit-box) covers searches, bank access and late-found wills.
+
 If no relative can be found, [what happens when an heir is missing or you have no family](/learn/what-if/heir-cannot-be-found-or-no-family-survives) explains the court search, the held share and how the state ends up with the estate.
 
 For people with no relatives or no obvious agent, [what happens if you become incapacitated with no one to speak for you](/learn/what-if/incapacitated-with-no-family-or-no-one-to-name-as-agent) covers default surrogates, court guardians and professional fiduciaries.

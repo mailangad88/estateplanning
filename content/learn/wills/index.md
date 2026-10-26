@@ -164,6 +164,12 @@ An old will can cause as many problems as no will. See [what happens if you die 
 
 ## More questions people ask
 
+For a clause-by-clause tour of a will, see [the parts of a will and what each clause does](/learn/wills/parts-of-a-will-what-each-clause-does).
+
+If your heir is a partner, friend or someone abroad, [leaving property to a partner, friend or non-citizen in a will](/learn/wills/leaving-property-to-a-partner-friend-or-non-citizen-in-a-will) covers the tax and family limits.
+
+To control which gifts carry the bills and taxes, read [who pays debts, expenses and taxes under your will](/learn/wills/who-pays-debts-expenses-and-taxes-under-your-will).
+
 When the signer is ill or a relative may be pushing, [signing a will with dementia, illness or family pressure](/learn/wills/signing-a-will-with-dementia-illness-or-family-pressure) explains capacity, undue influence and how to document both.
 
 To see what to expect from first call to signing, [how long it takes to make a will](/learn/wills/how-long-it-takes-to-get-a-will-made) walks through each step and what slows it down.

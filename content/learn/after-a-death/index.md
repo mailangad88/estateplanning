@@ -178,6 +178,16 @@ Call one if the person owned real estate, a business or substantial accounts, if
 
 ## More questions people ask
 
+If relatives disagree about burial, cremation or the service, [who decides the funeral arrangements](/learn/after-a-death/who-decides-funeral-arrangements-when-family-disagrees) explains the legal ranking and how to resolve a standoff.
+
+When a beneficiary has died, is a child, cannot manage money or owes creditors, [when an heir cannot simply receive their share](/learn/after-a-death/when-an-heir-cannot-receive-their-share-died-minor-incapacitated-or-in-debt) covers who is paid and how to protect it.
+
+If you inherit shares or a brokerage account, [inherited stocks and brokerage accounts](/learn/after-a-death/inherited-stocks-and-brokerage-accounts-selling-retitling-and-tax) explains when you can sell, the stepped-up basis and how to retitle the account.
+
+Once a distribution lands in your account, [what to do with an inherited sum of cash](/learn/after-a-death/what-to-do-with-an-inheritance-of-cash-in-the-first-year) covers taxes, where to park it and the first-year order of use.
+
+For the monthly obligations that keep arriving, [what to cancel and what to keep after a death](/learn/after-a-death/ending-a-deceased-persons-lease-utilities-phone-and-insurance) sorts leases, utilities, phone plans and health coverage.
+
 Where the death happens changes the first calls, so [what to do when someone dies in a hospital, hospice, nursing home, at home or out of state](/learn/after-a-death/what-to-do-when-someone-dies-in-a-hospital-hospice-nursing-home-or-out-of-state) explains who pronounces death and when a coroner steps in.
 
 If you were not named, [left out of the will: what a child or relative can actually do](/learn/after-a-death/left-out-of-the-will-what-a-child-or-relative-can-do) separates real grounds to object from disappointment.

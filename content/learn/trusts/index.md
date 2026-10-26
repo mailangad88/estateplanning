@@ -175,6 +175,10 @@ A trust only controls what is titled in its name. Read [what happens if you neve
 
 ## More questions people ask
 
+If a beneficiary dies before you or before a payout, [what happens to a trust when a beneficiary dies](/learn/trusts/what-happens-to-a-trust-when-a-beneficiary-dies) explains who takes the share.
+
+When someone says you need several trusts, [can you have more than one trust](/learn/trusts/can-you-have-more-than-one-trust) shows which ones do real work.
+
 For the income tax side, [how trusts are taxed](/learn/trusts/how-trusts-are-taxed-rates-ein-and-step-up) covers revocable versus irrevocable trusts, trust tax rates, when a trust needs its own EIN and who gets the step-up in basis.
 
 If you worry about a child's marriage, creditors or addiction, [can a trust protect a child's inheritance](/learn/trusts/keeping-an-inheritance-safe-from-a-childs-divorce-addiction-or-bad-spouse) shows what works and where the protection breaks.
