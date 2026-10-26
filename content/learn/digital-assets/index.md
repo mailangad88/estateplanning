@@ -148,6 +148,12 @@ No plan makes every account recoverable. Some companies will refuse, some servic
 
 ## More questions people ask
 
+If you earn money from a web shop or channel, [what happens to an Etsy shop, YouTube channel or online business at death](/learn/digital-assets/online-business-etsy-shop-or-youtube-channel-after-death) explains what passes to heirs, what the platform keeps and how the income is taxed.
+
+When the keys are missing, [what if nobody can find or unlock a dead person's crypto](/learn/digital-assets/lost-seed-phrase-or-crypto-heirs-cannot-find) covers how to search for hidden coins, what a lost seed phrase means and how exchanges and executors can respond.
+
+To keep your accounts manageable while you are alive but unable to act, [does a power of attorney cover your digital accounts](/learn/digital-assets/power-of-attorney-and-digital-accounts) explains what an agent can reach and how to grant access safely.
+
 For streaming, e-book and game libraries, [subscriptions and purchased media after death](/learn/digital-assets/subscriptions-and-purchased-media-after-death) explains why licenses do not pass by will and how to stop recurring charges.
 
 On the tax side, [how inherited crypto is taxed](/learn/digital-assets/how-inherited-crypto-is-taxed) covers the date-of-death basis, valuing coins, staking income and what heirs report when they sell.

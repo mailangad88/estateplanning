@@ -162,6 +162,16 @@ Other pillars worth reading alongside this one: [power of attorney](/learn/power
 
 ## More questions people ask
 
+If you are counting on Medicare for a nursing home, [what Medicare covers for long-term care](/learn/elder-care/what-medicare-covers-for-long-term-care) explains the three-day rule, the 100-day limit and where coverage stops.
+
+For what happens to monthly income and savings after a move to care, see [Social Security, pensions and bank accounts in a nursing home](/learn/elder-care/income-and-bank-accounts-in-a-nursing-home).
+
+When it is time to pick a facility, [how to choose a nursing home and what rights a resident has](/learn/elder-care/choosing-a-nursing-home-and-knowing-your-rights) covers visits, admission agreements, discharge notices and complaints.
+
+If a parent is slipping but says no to help, [when a parent refuses help](/learn/elder-care/when-a-parent-refuses-help-or-is-not-safe-alone) explains capacity, evaluations and the legal options.
+
+To sort out who does what, [care managers, money managers and fiduciaries](/learn/elder-care/geriatric-care-managers-money-managers-and-fiduciaries) compares the roles and the legal authority each needs.
+
 If an admissions office hands your child a form to sign, [can a nursing home make my children pay](/learn/elder-care/can-a-nursing-home-make-my-children-pay) explains guarantors, responsible-party signatures and filial responsibility laws.
 
 For the weeks between admission and approval, [paying for a nursing home while waiting for Medicaid](/learn/elder-care/paying-for-a-nursing-home-while-waiting-for-medicaid) covers private pay, retroactive coverage, documents and appeals.

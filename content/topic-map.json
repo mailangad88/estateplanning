@@ -61,6 +61,30 @@
         [
           "do-i-need-an-estate-plan-with-few-assets",
           "Do I need an estate plan if I rent, own little, or everything has a beneficiary?"
+        ],
+        [
+          "plan-your-own-funeral-in-advance",
+          "How to plan your own funeral in advance (and where to write the wishes down)"
+        ],
+        [
+          "how-to-organize-your-estate-planning-documents",
+          "How to organize your estate planning documents so your family can find them"
+        ],
+        [
+          "making-an-estate-plan-without-a-lawyer",
+          "Can you make an estate plan without a lawyer? What's legal, what's risky, what works"
+        ],
+        [
+          "how-estate-planning-differs-by-state",
+          "Are estate planning laws different in each state? What changes and what stays the same"
+        ],
+        [
+          "basic-vs-comprehensive-estate-plan",
+          "Basic vs. comprehensive estate plan: what each includes and which document matters most"
+        ],
+        [
+          "estate-planning-vs-elder-law-probate-and-financial-planning",
+          "Estate planning vs. elder law, probate and financial planning: who does what"
         ]
       ]
     },
@@ -152,6 +176,65 @@
         [
           "revoking-an-illinois-power-of-attorney",
           "How to revoke an Illinois power of attorney, or stop an agent who is misusing it"
+        ],
+        [
+          "independent-vs-supervised-administration-in-illinois",
+          "Independent vs. supervised administration in Illinois: what changes for the executor"
+        ],
+        [
+          "illinois-will-contest-six-month-deadline",
+          "Contesting a will in Illinois: the 6-month deadline and how it works"
+        ],
+        [
+          "disclaiming-an-inheritance-in-illinois",
+          "Disclaiming an inheritance in Illinois: how the statute works and what can block it"
+        ],
+        [
+          "illinois-digital-assets-law-for-executors",
+          "Illinois digital assets law: what an executor can get from email and online accounts"
+        ]
+      ]
+    },
+    {
+      "slug": "new-jersey",
+      "name": "New Jersey",
+      "pillar": "New Jersey estate planning and probate: the complete guide",
+      "articles": [
+        [
+          "new-jersey-will-requirements",
+          "New Jersey will requirements: signing, two witnesses and handwritten wills"
+        ],
+        [
+          "new-jersey-probate-process",
+          "New Jersey probate process: Surrogate, letters and the 60-day notice"
+        ],
+        [
+          "new-jersey-inheritance-tax",
+          "New Jersey inheritance tax: who pays, the rates and the tax waivers"
+        ],
+        [
+          "new-jersey-small-estate-affidavit",
+          "New Jersey small estate affidavit: the $50,000 and $20,000 routes"
+        ],
+        [
+          "who-inherits-without-a-will-in-new-jersey",
+          "Who inherits if you die without a will in New Jersey?"
+        ],
+        [
+          "new-jersey-elective-share-for-a-surviving-spouse",
+          "New Jersey elective share for a surviving spouse or partner"
+        ],
+        [
+          "new-jersey-power-of-attorney",
+          "New Jersey power of attorney: signing, durability and agent duties"
+        ],
+        [
+          "new-jersey-advance-directives",
+          "New Jersey advance directives: proxy, instruction and POLST"
+        ],
+        [
+          "new-jersey-executor-commissions-and-probate-timeline",
+          "New Jersey executor commissions and how long an estate takes"
         ]
       ]
     },
@@ -437,6 +520,26 @@
         [
           "creating-a-trust-with-dementia-or-a-power-of-attorney",
           "Can someone with dementia create a trust, or can a power of attorney set one up?"
+        ],
+        [
+          "using-property-in-your-own-living-trust",
+          "Can you still sell, rent out or take money from property in your living trust?"
+        ],
+        [
+          "what-trust-beneficiaries-can-see-and-when",
+          "Can a trust beneficiary see the trust, and should you tell your children about it?"
+        ],
+        [
+          "living-trusts-and-moving-or-owning-property-in-another-state",
+          "Does your living trust still work if you move or own property in another state?"
+        ],
+        [
+          "co-trustees-and-changing-a-trustee",
+          "Co-trustees, resigning and replacing a trustee: how changes in who runs a trust work"
+        ],
+        [
+          "trust-names-explained-dynasty-credit-shelter-family-and-more",
+          "Trust names explained: family, dynasty, credit shelter, discretionary, Crummey and blind trusts"
         ]
       ]
     },
@@ -548,6 +651,26 @@
         [
           "probate-lawyer-fee-agreements",
           "Do probate lawyers charge by the hour or a percentage? How to read a fee agreement"
+        ],
+        [
+          "what-happens-at-a-probate-hearing",
+          "What happens at a probate hearing, and do beneficiaries have to go?"
+        ],
+        [
+          "how-to-object-to-probate",
+          "How to object to probate: caveats, deadlines and who can do it"
+        ],
+        [
+          "executor-not-doing-their-job",
+          "What to do when the executor is not doing their job or won't share information"
+        ],
+        [
+          "what-happens-to-a-mortgage-car-loan-and-student-loans-after-death",
+          "What happens to a mortgage, car loan, student loans and credit cards after death"
+        ],
+        [
+          "formal-vs-informal-probate",
+          "Formal vs informal probate, supervised vs unsupervised, and other probate types"
         ]
       ]
     },
@@ -667,6 +790,26 @@
         [
           "is-an-inheritance-marital-property",
           "Is an inheritance marital property? What happens in a divorce, and with child support"
+        ],
+        [
+          "who-to-notify-after-someone-dies",
+          "Who to notify after someone dies: banks, credit bureaus, the DMV, the IRS and the post office"
+        ],
+        [
+          "how-to-find-a-deceased-persons-accounts-and-assets",
+          "How to find a deceased person's bank accounts, life insurance, safe deposit box and unclaimed property"
+        ],
+        [
+          "does-an-inheritance-affect-medicaid-or-ssi",
+          "Does an inheritance affect Medicaid or SSI benefits, and what can you do before the money arrives?"
+        ],
+        [
+          "tax-on-inherited-ira-401k-annuity-and-savings-bonds",
+          "Do you pay tax on an inherited IRA, 401(k), annuity or savings bond?"
+        ],
+        [
+          "how-long-does-it-take-to-receive-an-inheritance",
+          "How long does it take to receive an inheritance, and can you get it early?"
         ]
       ]
     },
@@ -1061,6 +1204,26 @@
         [
           "how-to-claim-an-account-as-a-beneficiary",
           "How to find out if you are a beneficiary and claim the money"
+        ],
+        [
+          "inherited-ira-10-year-rule-yearly-withdrawals",
+          "Inherited IRA 10-year rule: do you need yearly withdrawals, and who gets the stretch?"
+        ],
+        [
+          "does-your-spouse-have-to-approve-your-beneficiary-choices",
+          "Does your spouse have to sign off on your beneficiary choices? Remarriage, widowhood and community property"
+        ],
+        [
+          "naming-a-minor-incapacitated-or-benefits-recipient-as-beneficiary",
+          "Naming a minor, an incapacitated adult or someone on SSI or Medicaid as beneficiary"
+        ],
+        [
+          "do-beneficiaries-pay-taxes-on-what-they-receive",
+          "Do beneficiaries pay taxes on what they receive? Life insurance, IRAs, annuities and TOD assets"
+        ],
+        [
+          "which-accounts-can-have-a-beneficiary",
+          "Which accounts can have a beneficiary? Bank accounts, 529s, HSAs, pensions, Social Security and more"
         ]
       ]
     },
@@ -1148,6 +1311,18 @@
         [
           "estate-tax-planning-when-you-are-near-the-exemption",
           "Is estate tax planning worth it if your estate is near the exemption?"
+        ],
+        [
+          "is-it-a-taxable-gift-cars-loans-and-down-payments",
+          "Is it a taxable gift? Cars, down payments, loans to your children and other everyday questions"
+        ],
+        [
+          "what-the-estate-can-deduct-before-estate-tax",
+          "What can an estate deduct before the estate tax is figured? Funeral costs, debts, legal fees and charity"
+        ],
+        [
+          "foreign-inheritance-and-us-estate-tax-for-non-citizens",
+          "Do you owe U.S. tax on a foreign inheritance? Form 3520, nonresident aliens and Americans abroad"
         ]
       ]
     },
@@ -1203,6 +1378,30 @@
         [
           "farm-succession-planning",
           "Farm succession planning: keeping the land and the operation in the family"
+        ],
+        [
+          "cross-purchase-vs-entity-redemption",
+          "Cross-purchase vs. entity redemption: which buy-sell structure is better, and how each is taxed"
+        ],
+        [
+          "s-corporation-shares-inherited-by-a-trust",
+          "What happens to S corporation status when a trust inherits the shares? QSST and ESBT elections explained"
+        ],
+        [
+          "business-partner-dies-without-a-buy-sell-agreement",
+          "What if my business partner dies and we have no buy-sell agreement?"
+        ],
+        [
+          "professional-practice-owner-dies",
+          "What happens to a professional practice when the owner dies? Medical, law and other licensed businesses"
+        ],
+        [
+          "personal-guaranties-and-business-debts-at-death",
+          "What happens to business debts, personal guaranties, SBA loans and leases when the owner dies?"
+        ],
+        [
+          "taxes-when-a-family-business-passes-to-heirs",
+          "What taxes do heirs pay on an inherited family business? Estate tax, step-up and selling afterward"
         ]
       ]
     },
@@ -1357,6 +1556,26 @@
         [
           "tax-breaks-when-you-pay-for-a-parents-care",
           "Tax breaks and tax traps when you pay for a parent's care"
+        ],
+        [
+          "what-medicare-covers-for-long-term-care",
+          "What Medicare covers for long-term care: nursing homes, assisted living and home health"
+        ],
+        [
+          "income-and-bank-accounts-in-a-nursing-home",
+          "What happens to your Social Security, pension and bank accounts in a nursing home"
+        ],
+        [
+          "choosing-a-nursing-home-and-knowing-your-rights",
+          "How to choose a nursing home and what rights a resident has"
+        ],
+        [
+          "when-a-parent-refuses-help-or-is-not-safe-alone",
+          "When a parent refuses help: signs they are not safe alone and what you can do"
+        ],
+        [
+          "geriatric-care-managers-money-managers-and-fiduciaries",
+          "Geriatric care managers, daily money managers and fiduciaries: who can help manage a parent's care"
         ]
       ]
     },
@@ -1428,6 +1647,18 @@
         [
           "paypal-venmo-and-cash-app-after-death",
           "What happens to PayPal, Venmo and Cash App balances when someone dies?"
+        ],
+        [
+          "online-business-etsy-shop-or-youtube-channel-after-death",
+          "What happens to an Etsy shop, YouTube channel or online business when the owner dies?"
+        ],
+        [
+          "lost-seed-phrase-or-crypto-heirs-cannot-find",
+          "What if nobody can find or unlock a dead person's crypto? Lost seed phrases, forgotten passwords and exchange problems"
+        ],
+        [
+          "power-of-attorney-and-digital-accounts",
+          "Does a power of attorney cover your digital accounts? Giving an agent access while you are alive"
         ]
       ]
     },
@@ -1479,6 +1710,30 @@
         [
           "remove-a-name-from-a-deed",
           "How to remove a name from a deed: a living owner, a deceased owner or an ex"
+        ],
+        [
+          "mortgage-when-the-homeowner-dies",
+          "What happens to a mortgage when the homeowner dies?"
+        ],
+        [
+          "fixing-title-problems-on-inherited-property",
+          "How to fix title problems on a house you inherited: lost deeds, typos and old names"
+        ],
+        [
+          "keeping-family-land-in-the-family",
+          "How to keep family land or a vacation home in the family for generations"
+        ],
+        [
+          "what-your-will-covers-timeshares-storage-units-safe-deposit-boxes",
+          "Does my will cover a timeshare, storage unit, safe deposit box or farm equipment?"
+        ],
+        [
+          "giving-your-house-to-your-child-taxes-and-trade-offs",
+          "Giving your house to your child now: gift tax, property tax and the basis trap"
+        ],
+        [
+          "joint-tenants-vs-tenants-in-common-vs-entirety",
+          "Joint tenants, tenants in common or tenants by the entirety: how co-owners hold a house"
         ]
       ]
     }
