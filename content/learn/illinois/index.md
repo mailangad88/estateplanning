@@ -201,6 +201,26 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+If a parent wants to stay home, the [Illinois Community Care Program](/learn/illinois/illinois-community-care-program-in-home-care-for-older-adults) explains who qualifies, the $17,500 asset rule, and when the state can recover costs.
+
+If an owner deferred property taxes, the [Illinois senior tax deferral program](/learn/illinois/illinois-senior-citizens-property-tax-deferral-program-and-what-heirs-repay) explains the lien and what heirs must repay.
+
+If your child is turning 18, [the Illinois documents an 18-year-old needs](/learn/illinois/documents-an-18-year-old-needs-in-illinois) explains the health care and property powers of attorney, the HIPAA release and what parents can still do.
+
+If you are marrying again and want your spouse to give up claims on your estate, [Illinois prenup and inheritance rights](/learn/illinois/illinois-prenup-and-inheritance-rights) explains what a premarital agreement can waive, what must be disclosed and how it fits with a will or trust.
+
+If you suspect someone is taking money from an older adult, [how to report elder financial abuse in Illinois](/learn/illinois/how-to-report-elder-financial-abuse-in-illinois) covers the Adult Protective Services hotline, what happens after a report and how documents can prevent it.
+
+To see what a trust can and cannot shield from creditors, read [can you protect assets from creditors with a trust in Illinois](/learn/illinois/can-you-protect-assets-from-creditors-with-a-trust-in-illinois).
+
+For adults with intellectual or developmental disabilities who want help without a guardian, the [Illinois supported decision-making agreement](/learn/illinois/illinois-supported-decision-making-agreement) explains how the Act works and how it compares with guardianship and a power of attorney.
+
+To see exactly when a signed declaration switches on, [the Illinois Living Will Act explained](/learn/illinois/illinois-living-will-act-what-it-covers-and-when-it-applies) covers the terminal condition trigger, the two witnesses and why a health care agent comes first.
+
+If you think a trust was signed under pressure or without capacity, [contesting a trust in Illinois](/learn/illinois/contesting-a-trust-in-illinois-who-can-sue-grounds-and-deadlines) explains the 2-year and 6-month limits and how they differ from a will contest.
+
+When an irrevocable trust no longer fits the family, [changing an irrevocable trust in Illinois](/learn/illinois/changing-an-irrevocable-trust-in-illinois-decanting-and-court-modification) compares decanting, settlement agreements and court modification.
+
 If a spouse has died, [Illinois property tax exemptions after a spouse dies](/learn/illinois/illinois-property-tax-exemptions-after-a-spouse-dies) explains which exemptions renew by themselves and which must be re-filed.
 
 For heirs who receive retirement accounts, [Illinois income tax on an inherited IRA or 401(k)](/learn/illinois/do-you-pay-illinois-income-tax-on-an-inherited-ira-or-401k) explains the state treatment and the federal rules that still apply.
