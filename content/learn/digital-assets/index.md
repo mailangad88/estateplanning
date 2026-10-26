@@ -148,6 +148,10 @@ No plan makes every account recoverable. Some companies will refuse, some servic
 
 ## More questions people ask
 
+To handle a loved one's profile, [how to memorialize a deceased person's Facebook or Instagram account](/learn/digital-assets/how-to-memorialize-a-deceased-persons-facebook-or-instagram-account) walks through the requests, proof and the memorialize-or-delete choice.
+
+When mail and spam keep arriving after a death, [how to stop a deceased person's junk mail](/learn/digital-assets/how-to-stop-a-deceased-persons-junk-mail-spam-and-online-marketing) covers the opt-out lists and how the mail can reveal accounts.
+
 If a spouse shared one login with you, [closing out a deceased spouse's Apple ID](/learn/digital-assets/closing-out-a-deceased-spouses-apple-id-family-sharing-and-shared-logins) covers Family Sharing, subscriptions and locked devices.
 
 To learn how long Google keeps an account and how to save the data in time, read [Gmail, Drive and Google Photos after death](/learn/digital-assets/gmail-drive-and-google-photos-after-death-inactivity-timers-and-how-long-google-keeps-data).

@@ -154,6 +154,10 @@ State rules matter a great deal here. If you want to see how probate works where
 
 ## More questions people ask
 
+For the clocks that start at death, see [how long you have to file probate in Illinois or New Jersey](/learn/probate/how-long-do-you-have-to-file-probate-in-illinois-or-new-jersey).
+
+Once you have letters, [how to open an estate bank account](/learn/probate/how-to-open-an-estate-bank-account) covers what the bank needs and what to pay from it.
+
 If you are waiting on your share, [can heirs get money before probate ends](/learn/probate/can-heirs-get-money-before-probate-ends) explains partial distributions and why executors hold back a reserve.
 
 To learn who is allowed to start a case and who the court will appoint, read [who can open a probate case](/learn/probate/who-can-open-a-probate-case).

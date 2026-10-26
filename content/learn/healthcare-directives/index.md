@@ -161,6 +161,10 @@ Healthcare directives handle medical decisions and information. The [durable fin
 
 ## More questions people ask
 
+When a patient cannot decide, [who can sign a DNR for someone else](/learn/healthcare-directives/who-can-sign-a-dnr-for-someone-else) explains the roles of agent, surrogate and family.
+
+For the price side, [how much a living will costs](/learn/healthcare-directives/how-much-does-a-living-will-cost) compares free forms, notary fees and attorney fees.
+
 To make sure your donor registration and your living will do not conflict, read [organ donation and your advance directive](/learn/healthcare-directives/organ-donation-and-your-advance-directive).
 
 If a relative needs to see your test results or call your doctor, [medical portal access for an adult child or family member](/learn/healthcare-directives/medical-portal-access-for-an-adult-child-or-family-member) compares proxy access, a HIPAA release and a healthcare agent.

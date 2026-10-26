@@ -180,6 +180,10 @@ Curious what happens when a plan is missing or out of date? Our guide to [what h
 
 ## More questions people ask
 
+If you are wondering how soon you could be finished, [how long it takes to create an estate plan](/learn/basics/how-long-does-it-take-to-create-an-estate-plan) gives a stage-by-stage timeline and what slows it down.
+
+If you keep meaning to start, [why people put off estate planning](/learn/basics/why-people-put-off-estate-planning-and-how-to-start-this-week) answers each common excuse and offers a seven-day plan to begin.
+
 To see how the documents fit together for your household, [what an estate plan looks like for a single person, a couple or a single parent](/learn/basics/sample-estate-plans-by-household-type) gives side-by-side examples.
 
 If you look after an aging parent, [estate planning when you are the family caregiver](/learn/basics/estate-planning-when-you-are-a-family-caregiver) covers the plan you need for yourself.

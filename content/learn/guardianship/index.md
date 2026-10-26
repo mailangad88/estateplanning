@@ -175,6 +175,10 @@ You can do the first two this month and the rest over time. A good first step is
 
 ## More questions people ask
 
+For a trip, surgery or deployment, [who takes your kids in an emergency](/learn/guardianship/who-takes-your-kids-in-an-emergency-while-you-travel-or-deploy) covers school pickup lists, medical consent and caregiver letters.
+
+If no relative can serve, [professional and public guardians](/learn/guardianship/professional-and-public-guardians-when-no-family-can-serve) explains who the court turns to, who pays and how to avoid it.
+
 If the words are confusing, [guardianship vs custody vs adoption](/learn/guardianship/guardianship-vs-custody-vs-adoption) sets out who holds each one, how long it lasts and what it does to inheritance.
 
 For relatives who must go to court, [how to petition for guardianship of a minor child](/learn/guardianship/how-to-petition-for-guardianship-of-a-minor-child) walks through the filing steps and what a judge weighs.

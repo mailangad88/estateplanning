@@ -159,6 +159,10 @@ Include the person with a disability in the conversation as much as they are abl
 
 ## More questions people ask
 
+Illinois families can read [special needs trust rules in Illinois](/learn/special-needs/special-needs-trust-rules-in-illinois) for how ABLE, DHS services, the PUNS list and payback apply locally.
+
+In the year before the birthday, [what to do when your child with a disability turns 18](/learn/special-needs/what-to-do-when-a-child-with-a-disability-turns-18) gives a timeline for SSI, guardianship choices and signed releases.
+
 If the person is over 65, [special needs trusts for people over 65](/learn/special-needs/special-needs-trusts-for-people-over-65-dementia-and-a-spouse-on-medicaid) explains the age cutoff, dementia and leaving money to a spouse on Medicaid.
 
 To budget for a trust, [how much a special needs trust costs to set up and keep running](/learn/special-needs/how-much-a-special-needs-trust-costs-to-set-up-and-keep-running) covers the one-time and yearly costs.

@@ -201,6 +201,14 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+To retitle a vehicle, [how to transfer a car title after death in Illinois](/learn/illinois/transfer-car-title-after-death-in-illinois) lists the Secretary of State documents and the survivorship, affidavit and probate routes.
+
+For certified copies, [Illinois death certificates and who can order them](/learn/illinois/illinois-death-certificates-who-can-order-county-clerk-or-idph) compares the county clerk with IDPH and shows how to count the copies an executor needs.
+
+For the income tax side, [filing a final Illinois income tax return for someone who died](/learn/illinois/final-illinois-income-tax-return-for-someone-who-died) covers who files the IL-1040 and how a refund is claimed.
+
+When a child is named to receive money, [what happens when a minor inherits in Illinois](/learn/illinois/when-a-minor-inherits-money-in-illinois) explains the guardian of the estate, restricted accounts and the handoff at 18 or 21.
+
 Once the notice to creditors goes out, [how creditor claims work in an Illinois estate](/learn/illinois/how-creditor-claims-work-in-an-illinois-estate) follows a claim from filing to allowance, dispute or bar date.
 
 For the last step, [closing an Illinois probate estate](/learn/illinois/closing-an-illinois-probate-estate-final-account-and-discharge) explains the closing report, receipts from heirs and the discharge order.

@@ -138,6 +138,12 @@ Our [plan readiness assessment](/tools/plan-readiness-assessment) shows which of
 
 ## More questions people ask
 
+If a parent will not sign anything, [what to do when a parent refuses to make a will or sign a power of attorney](/learn/what-if/what-to-do-if-your-parent-refuses-to-make-a-will-or-sign-a-power-of-attorney) covers the default outcomes and how to change the answer.
+
+When a husband or wife can no longer decide, [what happens if your spouse becomes incapacitated](/learn/what-if/what-happens-if-my-spouse-becomes-incapacitated) shows which joint assets still work and which need a power of attorney.
+
+If you are not close to your relatives, [what happens if you die estranged from your family](/learn/what-if/what-happens-if-you-die-estranged-from-your-family) explains who inherits by default and how to leave your estate to friends or a charity.
+
 A disability does not stop you from signing, and [making a will when you are blind, deaf or cannot read, speak or write](/learn/what-if/making-a-will-when-you-are-blind-deaf-or-cannot-read-speak-or-write) explains how marks, reading aloud and interpreters keep it valid.
 
 If a guardianship, a diagnosis or heavy medication is part of the picture, [making a will under guardianship, with a mental illness or on medication](/learn/what-if/making-a-will-under-guardianship-with-mental-illness-or-on-medication) explains how capacity is judged and what evidence helps.

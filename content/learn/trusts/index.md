@@ -175,6 +175,12 @@ A trust only controls what is titled in its name. Read [what happens if you neve
 
 ## More questions people ask
 
+If someone told you to put your Chicago-area property in a land trust, [Illinois land trust vs living trust](/learn/trusts/illinois-land-trust-vs-living-trust) explains what it does and what it leaves out.
+
+To plan around the calendar, [how long it takes to set up a living trust](/learn/trusts/how-long-does-it-take-to-set-up-a-living-trust) walks through drafting, signing and funding.
+
+Worried the county will drop your exemption? [Does a living trust affect your homestead exemption and property taxes](/learn/trusts/does-a-living-trust-affect-homestead-exemption-and-property-taxes) covers Illinois and New Jersey.
+
 To check what your trust actually owns, [how to tell if your trust is funded](/learn/trusts/how-to-tell-if-your-trust-is-actually-funded) gives an account-by-account self-check.
 
 For the lifespan of a trust and the perpetuities rule, [how long a trust can last and how it ends](/learn/trusts/how-long-can-a-trust-last-and-how-does-it-end) explains the options.
