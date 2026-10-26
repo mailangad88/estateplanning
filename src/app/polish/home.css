@@ -1,1 +1,114 @@
 /* Design polish: home. Loaded after design.css. */
+
+/* ---------- Card grid media ---------- */
+/* Download covers are tall (3:4). Show the top of the cover, title included, rising out of a tinted sleeve,
+   instead of a full-width crop that only showed two giant words. */
+.vcard--cover .vcard__media { padding: 0; place-items: start center; }
+.vcard--cover .vcard__media img {
+  position: absolute; top: 22px; left: 50%; width: 56%; height: auto; max-width: none;
+  object-fit: initial; transform: translateX(-50%); border-radius: 8px 8px 0 0;
+  box-shadow: 0 1px 2px rgb(14 57 64 / 0.12), 0 14px 30px -8px rgb(14 57 64 / 0.28);
+  transition: transform 0.25s ease;
+}
+.vcard--cover:hover .vcard__media img, .vcard--cover:focus-visible .vcard__media img { transform: translate(-50%, -4px); }
+/* Video posters are 16:9, so the frame matches and nothing is cut off. */
+.vcard--poster .vcard__media { aspect-ratio: 16 / 9; }
+/* Card text: a steady rhythm from tag to title to description. */
+.vcard__body { padding: 18px 20px 20px; gap: 8px; }
+.vcard__body .tag { align-self: flex-start; }
+.vcard__body .card-desc { color: var(--muted); font-size: var(--text-sm); line-height: 1.5; }
+.vcard__go { padding-top: 10px; }
+@media (prefers-reduced-motion: reduce) { .vcard--cover .vcard__media img { transition: none; } .vcard--cover:hover .vcard__media img { transform: translateX(-50%); } }
+
+/* ---------- Bands and section heads ---------- */
+.section-head .section-lead { line-height: 1.55; }
+.band-subhead { margin: 56px 0 18px; }
+.band .vcards { margin: 0; }
+.band .vcards + .cta { margin-top: 40px; }
+.band .vcards + .band-subhead { margin-top: 56px; }
+.band-foot { margin-top: 32px; }
+/* Centred one-line links (under the life cycle and the game) keep their arrow on the last word when they wrap. */
+.cycle-more .arrow-link, .lgame-band__more .arrow-link { display: inline; }
+.cycle-more .arrow-link svg, .lgame-band__more .arrow-link svg { display: inline-block; vertical-align: -0.15em; margin-left: 4px; }
+.cycle-more { margin-top: 36px; }
+.lgame-band__more { margin-top: 28px; }
+
+/* Hero: tighter lead, even spacing down to the trust row. */
+.hero-band .eyebrow { margin-bottom: 24px; }
+.hero-x .lead { margin-bottom: 32px; }
+.hero-x .trust-row { margin-top: 32px; }
+.hero-x > * { min-width: 0; }
+
+/* Homepage common questions sit in their own band, centred like the other section heads. */
+.home-faq section { max-width: 820px; margin: 0 auto; }
+.home-faq h2 { margin: 0 0 var(--space-head); text-align: center; font-size: clamp(1.75rem, 3.4vw, 2.6rem); line-height: 1.12; }
+.home-faq details.faq { border-bottom: 1px solid var(--border); }
+.home-faq details.faq:first-of-type { border-top: 1px solid var(--border); }
+.home-faq details.faq summary { font-weight: 600; padding: 4px 0; }
+.home-faq details.faq p { color: var(--muted); max-width: var(--measure); }
+
+/* Hub pages: the card list gets the full page width and a calm start under the hero. */
+.hub-band { padding-top: var(--space-head); }
+.section-head.is-page-title h1 { margin: 0 0 12px; font-size: clamp(2rem, 3.6vw, 3rem); line-height: 1.08; }
+
+/* "When you may not need an attorney" card: icon sits above the text on phones so the copy gets the width. */
+@media (max-width: 600px) {
+  .honest { flex-direction: column; gap: 14px; padding: 22px; }
+}
+
+/* ---------- Stage pages ---------- */
+/* Two hero buttons fit on one line. */
+.stage-hero .cta-row .button.large { min-height: 56px; padding: 14px 24px; font-size: var(--text-base); }
+.stage-hero + .meta { margin-top: 28px; }
+.stage-hooks li { line-height: 1.45; }
+/* The senior phone card: the number shrinks to fit a phone instead of pushing the page sideways. */
+.senior-phone { max-width: 100%; }
+.senior-phone > span { min-width: 0; }
+@media (max-width: 600px) {
+  .senior-phone { gap: 12px; padding: 16px 18px; }
+  .senior-phone > svg { width: 26px; height: 26px; flex: none; }
+  .senior-phone strong { font-size: clamp(1.15rem, 6.2vw, 1.5rem); }
+  .stage-hero .cta-row .button.large { width: 100%; }
+}
+
+/* ---------- Life cycle ---------- */
+.cycle-node__who { line-height: 1.4; }
+
+/* ---------- Life game ---------- */
+.lgame-band .section-head { margin-bottom: 20px; }
+.lgame-all { padding: 0; }
+.lgame-all summary { padding: 14px 20px; min-height: 52px; display: flex; align-items: center; }
+.lgame-all[open] summary { border-bottom: 1px solid var(--border); }
+.lgame-all ul { padding: 4px 20px 20px; }
+.lgame-tray__k { margin-bottom: 14px; }
+/* Phones: the board stays one road that scrolls sideways (with a dashed track), instead of wrapping 4 + 4 + 1. */
+@container lgame (max-width: 600px) {
+  .lgame__board {
+    display: flex; gap: 0; margin: 0 -16px; padding: 36px 16px 10px; overflow-x: auto; overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity; scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 14px, #000 calc(100% - 28px), transparent);
+    mask-image: linear-gradient(90deg, transparent 0, #000 14px, #000 calc(100% - 28px), transparent);
+  }
+  .lgame__board::-webkit-scrollbar { display: none; }
+  .lgame-tile { flex: 0 0 86px; scroll-snap-align: center; }
+  .lgame-tile::before { content: ""; position: absolute; z-index: -1; left: 0; right: 0; top: calc(2px + var(--tile) / 2 - 1.5px); border-top: 3px dashed var(--sand-deep); }
+  .lgame-tile:first-child::before { left: 50%; }
+  .lgame-tile:last-child::before { right: 50%; }
+  .lgame-tile__label { max-width: none; white-space: nowrap; }
+}
+
+/* ---------- Phones ---------- */
+@media (max-width: 600px) {
+  .vcard--cover .vcard__media img { top: 12px; width: 68%; border-radius: 5px 5px 0 0; }
+  .vcard--poster .vcard__media { aspect-ratio: 16 / 9; align-self: center; min-height: 0; margin: 10px 0 10px 10px; border-radius: 10px; }
+  .vcard__body { padding: 14px 16px; gap: 4px; }
+  .band-subhead { margin-top: 44px; }
+  .home-faq h2 { text-align: left; }
+}
+/* Tap targets for pill links (life events, topics, quizzes). */
+@media (pointer: coarse), (max-width: 800px) {
+  .pill-row a { min-height: 44px; display: inline-flex; align-items: center; }
+}
+
+/* The last band runs straight into the footer, with no strip of page colour between. */
+main.container:has(> .home-faq:last-child), main.container:has(> .hub-band:last-child) { padding-bottom: 0; }
