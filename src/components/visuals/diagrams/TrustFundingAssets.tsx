@@ -46,7 +46,7 @@ export function TrustFundingAssets({ caption, bare, step }: DiagramProps) {
             <Text x={x + 18} y={y + 94} size={18} weight={700}>
               {a.title}
             </Text>
-            <Pill x={x + CW - 18 - pillW(a.how, 13)} y={y + 26} text={a.how} fill={t.tint} ink={t.ink} size={13} />
+            <Pill x={x + CW - 18 - pillW(a.how, 15)} y={y + 26} text={a.how} fill={t.tint} ink={t.ink} size={15} />
             <Wrap x={x + 18} y={y + 120} w={CW - 36} size={15} color="muted" text={a.body} lh={19} />
           </S>
         );

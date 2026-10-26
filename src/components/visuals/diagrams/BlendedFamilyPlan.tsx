@@ -25,18 +25,18 @@ export function BlendedFamilyPlan({ caption, bare, step }: DiagramProps) {
           A simple will
         </Text>
         <Person x={100} y={290} size={58} color="accent" />
-        <Text x={100} y={316} size={14} color="muted" anchor="middle">
+        <Text x={100} y={316} size={15} color="muted" anchor="middle">
           Pat
         </Text>
         <Arrow from={{ x: 138, y: 262 }} to={{ x: 200, y: 262 }} color="accent" />
         <Person x={240} y={290} size={58} color="sage" />
-        <Text x={240} y={316} size={14} color="muted" anchor="middle">
+        <Text x={240} y={316} size={15} color="muted" anchor="middle">
           Spouse
         </Text>
         <Arrow from={{ x: 280, y: 262 }} to={{ x: 340, y: 262 }} color="muted" dashed />
         <Person x={372} y={290} size={50} color="clay" child />
         <Person x={408} y={290} size={50} color="clay" child />
-        <Text x={390} y={316} size={14} color="muted" anchor="middle">
+        <Text x={390} y={316} size={15} color="muted" anchor="middle">
           Children
         </Text>
         <Card x={64} y={346} w={382} h={120} fill="sand" border="none" />
@@ -53,23 +53,23 @@ export function BlendedFamilyPlan({ caption, bare, step }: DiagramProps) {
           Spouse first, then the children
         </Text>
         <Person x={546} y={290} size={58} color="accent" />
-        <Text x={546} y={316} size={14} color="muted" anchor="middle">
+        <Text x={546} y={316} size={15} color="muted" anchor="middle">
           Pat
         </Text>
         <Arrow from={{ x: 584, y: 262 }} to={{ x: 618, y: 262 }} color="accent" />
         <Icon name="trust" x={626} y={236} size={52} color="accent" tint="surface" />
-        <Text x={652} y={316} size={14} color="muted" anchor="middle">
+        <Text x={652} y={316} size={15} color="muted" anchor="middle">
           Trust
         </Text>
         <Arrow from={{ x: 688, y: 262 }} to={{ x: 722, y: 262 }} color="accent" />
         <Person x={750} y={290} size={58} color="sage" />
-        <Text x={750} y={316} size={14} color="muted" anchor="middle">
+        <Text x={750} y={316} size={15} color="muted" anchor="middle">
           Spouse
         </Text>
         <Arrow from={{ x: 786, y: 262 }} to={{ x: 822, y: 262 }} color="accent" />
         <Person x={850} y={290} size={50} color="clay" child />
         <Person x={884} y={290} size={50} color="clay" child />
-        <Text x={868} y={316} size={14} color="muted" anchor="middle">
+        <Text x={868} y={316} size={15} color="muted" anchor="middle">
           Children
         </Text>
         <Card x={514} y={346} w={382} h={120} fill="surface" border="none" />
