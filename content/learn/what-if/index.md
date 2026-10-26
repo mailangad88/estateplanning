@@ -138,6 +138,16 @@ Our [plan readiness assessment](/tools/plan-readiness-assessment) shows which of
 
 ## More questions people ask
 
+A widowed person whose documents still name their late spouse can read [what happens if you never update your plan after a spouse dies](/learn/what-if/spouse-died-plan-not-updated) to see which roles go empty and what to sign first.
+
+If a form says 'my estate', [what happens when the estate is the beneficiary](/learn/what-if/estate-as-beneficiary) explains the probate, creditor and retirement-account tax effects.
+
+When a divorce is pending, [what happens if a spouse dies before the decree](/learn/what-if/death-during-divorce) shows why the survivor still inherits and what to do while the case is open.
+
+If the person named in your power of attorney dies, declines or cannot serve, [what happens when the agent is unavailable](/learn/what-if/power-of-attorney-agent-unavailable) explains successor agents and the court fallback.
+
+After a relocation, [what happens if you never update your plan](/learn/what-if/moved-states-plan-not-updated) covers which documents banks and hospitals may question and what a post-move review includes.
+
 If a will was drafted but never signed, [what happens when someone dies before signing](/learn/what-if/dies-before-signing-their-will) explains intestacy, harmless error rules and a family settlement.
 
 When a spouse dies and the deed never changed, [what happens if the house is still in their name](/learn/what-if/house-still-in-late-spouses-name) shows how title decides whether probate is needed.

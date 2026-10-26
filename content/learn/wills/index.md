@@ -164,6 +164,16 @@ An old will can cause as many problems as no will. See [what happens if you die 
 
 ## More questions people ask
 
+If you are weighing an unusual form, [oral, military, statutory and international wills](/learn/wills/oral-military-statutory-and-international-wills) explains what each does and when it is worth using.
+
+Not sure whether you need one at all? [Do I need a will](/learn/wills/do-i-need-a-will) walks through seven common situations.
+
+For the specific signing errors that sink a document, [witness, signature, date and missing-page problems](/learn/wills/will-signing-defects-witnesses-dates-and-missing-pages) covers each one and whether it can be fixed.
+
+After a wedding, a decree or a birth, [what happens to your existing will](/learn/wills/marriage-divorce-or-a-new-baby-and-your-existing-will) explains what the law changes and what you must do.
+
+When your documents seem to disagree, [which controls: will, trust, joint account or beneficiary form](/learn/wills/which-controls-will-trust-joint-account-or-beneficiary-form) shows how to tell.
+
 If a beneficiary dies before you, [what happens to a gift in a will when the beneficiary dies first or you both die together](/learn/wills/lapsed-gifts-and-simultaneous-death) explains lapse, anti-lapse laws and survivorship clauses.
 
 To make a gift depend on school, age or behavior, [conditions on an inheritance in a will](/learn/wills/conditions-on-an-inheritance-in-a-will) shows which conditions hold up and when a trust works better.

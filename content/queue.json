@@ -1183,10 +1183,11 @@
    "keyword": "What are the 3 types of power of attorney?",
    "intent": "question",
    "cluster": "power-of-attorney",
-   "slug": "what-are-the-3-types-of-power-of-attorney",
+   "slug": "what-are-the-three-types-of-power-of-attorney",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 4"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 4",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K109",
@@ -1226,10 +1227,11 @@
    "keyword": "How do I get power of attorney if someone can't sign?",
    "intent": "question",
    "cluster": "power-of-attorney",
-   "slug": "how-do-i-get-power-of-attorney-if-someone-can-t-sign",
+   "slug": "getting-power-of-attorney-when-someone-cannot-sign",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 4"
+   "status": "drafted",
+   "source": "keyword-topic-map.md pillar 4",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K113",
@@ -1249,8 +1251,9 @@
    "cluster": "power-of-attorney",
    "slug": "what-happens-if-no-poa-and-someone-loses-capacity",
    "priority": 4,
-   "status": "queued",
-   "source": "keyword-topic-map.md pillar 4"
+   "status": "covered",
+   "source": "keyword-topic-map.md pillar 4",
+   "coveredBy": "/learn/what-if/incapacitated-without-power-of-attorney"
   },
   {
    "id": "K115",
@@ -4559,8 +4562,9 @@
    "cluster": "what-if",
    "slug": "spouse-died-plan-not-updated",
    "priority": 2,
-   "status": "queued",
-   "source": "Angad's what-if request (2026-10-06)"
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K416",
@@ -4569,8 +4573,9 @@
    "cluster": "what-if",
    "slug": "estate-as-beneficiary",
    "priority": 2,
-   "status": "queued",
-   "source": "Angad's what-if request (2026-10-06)"
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K417",
@@ -4579,8 +4584,9 @@
    "cluster": "what-if",
    "slug": "death-during-divorce",
    "priority": 2,
-   "status": "queued",
-   "source": "Angad's what-if request (2026-10-06)"
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K418",
@@ -4589,8 +4595,9 @@
    "cluster": "what-if",
    "slug": "power-of-attorney-agent-unavailable",
    "priority": 2,
-   "status": "queued",
-   "source": "Angad's what-if request (2026-10-06)"
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K419",
@@ -4599,8 +4606,9 @@
    "cluster": "what-if",
    "slug": "moved-states-plan-not-updated",
    "priority": 2,
-   "status": "queued",
-   "source": "Angad's what-if request (2026-10-06)"
+   "status": "drafted",
+   "source": "Angad's what-if request (2026-10-06)",
+   "drafted": "2026-10-26"
   },
   {
    "id": "K420",

@@ -150,6 +150,12 @@ For a larger picture, start with our guide to [estate planning basics](/learn/ba
 
 ## More questions people ask
 
+To choose the right paper for a transfer, read [quitclaim, warranty, grant and trustee deeds](/learn/property-and-assets/types-of-deeds-quitclaim-warranty-grant-and-trustee-deeds) and what each one promises.
+
+If a parent may have owned oil, gas or other minerals, [what happens to mineral rights and royalties at death](/learn/property-and-assets/mineral-rights-and-royalties-after-the-owner-dies) explains how heirs claim them.
+
+For a spouse's right to stay and what the tax and creditor exemptions do, see [homestead rights at death](/learn/property-and-assets/homestead-rights-at-death-surviving-spouse-and-the-family-home).
+
 If the house has a loan on it, [what happens to a mortgage when the homeowner dies](/learn/property-and-assets/mortgage-when-the-homeowner-dies) explains who pays, what the lender can demand, and what to do with underwater and reverse mortgages.
 
 When a deed is lost, misspelled or still names someone who died, [how to fix title problems on inherited property](/learn/property-and-assets/fixing-title-problems-on-inherited-property) shows how to find the owner of record and pick the right repair.

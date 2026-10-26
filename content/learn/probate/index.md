@@ -154,6 +154,12 @@ State rules matter a great deal here. If you want to see how probate works where
 
 ## More questions people ask
 
+When there is no will or the family tree is unclear, [how to prove you are an heir](/learn/probate/how-to-prove-you-are-an-heir) covers the records, heirship hearings and missing relatives.
+
+Surviving spouses and young children have claims that rank ahead of most creditors, explained in [family allowance, homestead and exempt property in probate](/learn/probate/family-allowance-and-homestead-in-probate).
+
+If the executor is also an heir, [serving as both executor and beneficiary](/learn/probate/executor-who-is-also-a-beneficiary) explains the conflict rules on buying property, early payouts and lawsuits.
+
 If you received a court notice, [what happens at a probate hearing](/learn/probate/what-happens-at-a-probate-hearing) explains what the judge decides and whether beneficiaries need to attend.
 
 To dispute a will or an executor in court, [how to object to probate](/learn/probate/how-to-object-to-probate) covers standing, grounds, caveats and deadlines.

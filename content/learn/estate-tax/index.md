@@ -138,6 +138,12 @@ For a view of the whole picture, our [basics guide](/learn/basics) and the [prob
 
 ## More questions people ask
 
+Wondering whether your house, IRA, life insurance or joint accounts are added up? [What counts toward the federal estate tax](/learn/estate-tax/what-counts-toward-the-estate-tax) goes asset by asset.
+
+For couples weighing a trust that moves wealth out of both estates, the [spousal lifetime access trust (SLAT)](/learn/estate-tax/spousal-lifetime-access-trust-slat) article covers the tax savings, the risk if a spouse dies first, and how it compares with a GRAT.
+
+If you plan to give to grandchildren, the [generation-skipping transfer tax](/learn/estate-tax/generation-skipping-transfer-tax) guide explains the GST exemption, 529 front-loading and which gifts are exempt.
+
 For everyday situations like a car, a down payment or a forgiven loan, [is it a taxable gift](/learn/estate-tax/is-it-a-taxable-gift-cars-loans-and-down-payments) shows what needs reporting and who pays.
 
 To see what comes off before the tax is figured, [what the estate can deduct before the estate tax](/learn/estate-tax/what-the-estate-can-deduct-before-estate-tax) covers funeral costs, debts, legal fees, charity and the double-deduction trap.

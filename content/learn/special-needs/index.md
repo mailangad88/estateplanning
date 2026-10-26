@@ -159,6 +159,12 @@ Include the person with a disability in the conversation as much as they are abl
 
 ## More questions people ask
 
+If someone on SSI is about to receive money, [what to report and how to protect their benefits](/learn/special-needs/ssi-recipient-inheritance-gift-or-settlement-what-to-do) lays out the steps.
+
+Choosing who runs the trust is covered in [who should be trustee of a special needs trust](/learn/special-needs/who-should-be-trustee-of-a-special-needs-trust), including successors and a trust protector.
+
+For the tax side, [how a special needs trust is taxed](/learn/special-needs/how-a-special-needs-trust-is-taxed) covers the tax ID, who files and the dependent question.
+
 If the family home is part of the plan, [can a special needs trust own a house](/learn/special-needs/can-a-special-needs-trust-own-a-house) covers titling, taxes, SSI shelter rules and what happens at your death.
 
 Trustees wondering about a car, a trip, a pet or a caregiver can use [what special needs trust funds can pay for](/learn/special-needs/what-can-special-needs-trust-funds-pay-for) as a working list.

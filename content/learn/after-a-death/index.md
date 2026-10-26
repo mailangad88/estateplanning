@@ -178,6 +178,12 @@ Call one if the person owned real estate, a business or substantial accounts, if
 
 ## More questions people ask
 
+When the house is full and the family is tired, [how to clear out a parent's house](/learn/after-a-death/clearing-out-a-parents-house-after-death) explains who has authority, what to secure first and when a liquidator helps.
+
+For the numbers the court and the IRS ask for, [how an executor values the estate](/learn/after-a-death/how-an-executor-values-the-estate) covers date-of-death values for each type of asset.
+
+Executors who want help and want to limit their own risk can read [hiring a lawyer or accountant and staying protected as executor](/learn/after-a-death/executor-hiring-help-and-staying-protected).
+
 For the order in which to tell banks, credit bureaus, the DMV, the IRS and the post office, see [who to notify after someone dies](/learn/after-a-death/who-to-notify-after-someone-dies).
 
 If the paper trail is thin, [how to find a deceased person's accounts and assets](/learn/after-a-death/how-to-find-a-deceased-persons-accounts-and-assets) gives a search plan for accounts, policies, pensions and safe deposit boxes.

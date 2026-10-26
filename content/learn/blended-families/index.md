@@ -148,6 +148,12 @@ Related life situations have their own pages: [estate planning after divorce](/l
 
 ## More questions people ask
 
+To see which relatives the law counts, [who counts as an heir in a blended family](/learn/blended-families/who-counts-as-an-heir-in-a-blended-family) covers half-siblings, adoption, children born outside marriage and step-grandchildren.
+
+When a spouse, children and stepchildren all want a say, [who should make decisions for you in a blended family](/learn/blended-families/decision-makers-in-a-blended-family) sorts out agents, executors and guardians.
+
+To keep family property in the right branch, [keeping an inheritance separate in a blended family](/learn/blended-families/keeping-an-inheritance-separate-in-a-blended-family) covers a child's divorce, the house and the family business.
+
 To keep a second marriage from turning into a family dispute, see [how to prevent inheritance fights in a blended family](/learn/blended-families/preventing-inheritance-fights-in-a-blended-family).
 
 For larger estates, a [spousal lifetime access trust in a blended family](/learn/blended-families/spousal-lifetime-access-trust-blended-family) shows how to support a new spouse while locking in the remainder for your children, and where the divorce risk bites.

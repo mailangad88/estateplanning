@@ -162,6 +162,12 @@ Other pillars worth reading alongside this one: [power of attorney](/learn/power
 
 ## More questions people ask
 
+When the application is the next step, [how to apply for Medicaid for a parent](/learn/elder-care/how-to-apply-for-medicaid-for-a-parent) covers who can sign, what to gather and what to do after a denial.
+
+To sort out the settings and the bills, [assisted living, memory care, hospice and respite care](/learn/elder-care/assisted-living-memory-care-and-hospice-who-pays) shows what each is and who pays.
+
+If a parent is about to move across state lines or into a child's home, [what happens to Medicaid and the family's money](/learn/elder-care/moving-a-parent-in-with-you-or-to-another-state) covers residency, repaying family and the caregiver child rule.
+
 If you are counting on Medicare for a nursing home, [what Medicare covers for long-term care](/learn/elder-care/what-medicare-covers-for-long-term-care) explains the three-day rule, the 100-day limit and where coverage stops.
 
 For what happens to monthly income and savings after a move to care, see [Social Security, pensions and bank accounts in a nursing home](/learn/elder-care/income-and-bank-accounts-in-a-nursing-home).

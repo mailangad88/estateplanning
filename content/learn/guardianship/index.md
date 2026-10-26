@@ -175,6 +175,12 @@ You can do the first two this month and the rest over time. A good first step is
 
 ## More questions people ask
 
+If your first choice is a stepparent, a partner you never married or a single friend, [who can be named guardian](/learn/guardianship/who-can-be-guardian-stepparent-partner-single-or-split-siblings) covers what the law allows and when siblings should be split.
+
+If your child's other parent is a former partner, [whether the surviving parent automatically gets custody](/learn/guardianship/does-the-surviving-parent-get-custody-if-you-die) explains what a will can and cannot do.
+
+For an aging parent rather than a child, [guardianship of an adult](/learn/guardianship/guardianship-of-an-adult-parent-who-can-petition-and-what-the-court-needs) explains who can file, what the court needs and how to avoid it.
+
 [UTMA account vs. trust for a minor child](/learn/guardianship/utma-account-vs-trust-for-a-minor-child) compares cost, control and the age a child takes over.
 
 If you want a children's trust written into your will, [testamentary trust for minor children](/learn/guardianship/testamentary-trust-for-minor-children) explains how it works and its limits.
