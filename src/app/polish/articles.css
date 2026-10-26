@@ -194,3 +194,8 @@ details.faq summary::after, .faqs summary::after { flex: none; }
   .az a { min-width: 44px; min-height: 44px; }
   .vk-slider__field input { min-height: 44px; }
 }
+
+/* Learn hub: each topic card's title link is a full-height tap target on phones. */
+@media (pointer: coarse), (max-width: 800px) {
+  .hub-grid .card h2 a { display: flex; align-items: center; min-height: 44px; }
+}
