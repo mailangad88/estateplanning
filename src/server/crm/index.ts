@@ -1,7 +1,9 @@
 import type { CrmAdapter } from "@/server/crm/adapter";
+import { BrevoAdapter } from "@/server/crm/brevo";
 import { HubSpotAdapter } from "@/server/crm/hubspot";
 import { LawmaticsAdapter } from "@/server/crm/lawmatics";
 import { MockCrmAdapter } from "@/server/crm/mock";
+import { nurtureOwnerFromEnv } from "@/server/nurture/owner";
 import { CrmSync } from "@/server/crm/sync";
 import { liveCrmConfigured } from "@/server/nurture/owner";
 
@@ -12,12 +14,18 @@ import { liveCrmConfigured } from "@/server/nurture/owner";
  */
 export function crmAdapterFromEnv(env: Record<string, string | undefined> = process.env): CrmAdapter {
   const provider = (env.CRM_PROVIDER ?? "lawmatics").toLowerCase();
-  if (provider !== "lawmatics" && provider !== "hubspot" && provider !== "mock") {
+  if (provider !== "lawmatics" && provider !== "hubspot" && provider !== "brevo" && provider !== "mock") {
     throw new Error(`Unknown CRM_PROVIDER "${provider}"`);
   }
   if (provider === "lawmatics" && env.LAWMATICS_API_TOKEN) return new LawmaticsAdapter({ token: env.LAWMATICS_API_TOKEN });
   if (provider === "hubspot" && env.HUBSPOT_PRIVATE_APP_TOKEN) {
     return new HubSpotAdapter({ token: env.HUBSPOT_PRIVATE_APP_TOKEN, pipelineId: env.HUBSPOT_PIPELINE_ID });
+  }
+  if (provider === "brevo" && env.BREVO_API_KEY) {
+    // Joining a sequence list starts a Brevo automation, so it needs both switches: Brevo owns the
+    // sends (NURTURE_OWNER=crm) and list enrollment is on. Otherwise our sender and Brevo could both send.
+    const enrollLists = env.BREVO_ENROLL_LISTS === "true" && nurtureOwnerFromEnv(env) === "crm";
+    return new BrevoAdapter({ apiKey: env.BREVO_API_KEY, enrollLists });
   }
   if (env.NODE_ENV === "production" && env.CRM_ALLOW_MOCK !== "true") {
     throw new Error(`CRM "${provider}" is not configured (missing token). Set CRM_ALLOW_MOCK=true to run with the mock in production.`);

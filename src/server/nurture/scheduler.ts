@@ -9,6 +9,7 @@ import { audit } from "@/server/audit/log";
 import { STAGES, type ExitReason, type Lead, type Person, type Stage } from "@/server/types";
 import type { Channel, SequenceEnrollment } from "@/server/nurture/types";
 import {
+  CALCULATOR_TOOLS,
   LIFE_EVENT_SEGMENTS,
   getSequence,
   lifeEventSequenceId,
@@ -124,7 +125,12 @@ export async function enrollForNewLead(db: Db, lead: Lead, at: Date): Promise<Se
   if (lead.segments.includes("partner_referral")) return [];
   const out = [await enroll(db, lead.id, "speed_to_lead", at)];
   if (Object.keys(lead.intake?.answers ?? {}).length > 0) out.push(await enroll(db, lead.id, "quiz_follow_up", at));
-  if (lead.segments.some((s) => s.startsWith("resource:"))) out.push(await enroll(db, lead.id, "magnet_follow_up", at));
+  const quiz = Object.keys(lead.intake?.answers ?? {}).length > 0;
+  const guide = lead.segments.some((s) => s.startsWith("resource:"));
+  if (guide) out.push(await enroll(db, lead.id, "magnet_follow_up", at));
+  const calculator = !quiz && !guide && !!lead.capture?.tool && CALCULATOR_TOOLS.includes(lead.capture.tool);
+  if (calculator) out.push(await enroll(db, lead.id, "calculator_follow_up", at));
+  if (!quiz && !guide && !calculator) out.push(await enroll(db, lead.id, "welcome", at));
   const tracks = LIFE_EVENT_SEGMENTS.filter((s) => lead.segments.includes(s));
   for (const [i, seg] of tracks.entries()) out.push(await enroll(db, lead.id, lifeEventSequenceId(seg), new Date(at.getTime() + (3 + 2 * i) * DAY)));
   return out;
