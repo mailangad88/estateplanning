@@ -82,6 +82,8 @@ export interface Lawyer {
   acceptSlaMinutes: number;
   office?: { lat: number; lng: number };
   onCall?: boolean;
+  /** The attorney who takes every incoming lead first and refers on the ones they don't handle. At most one. */
+  primaryIntake?: boolean;
   active: boolean;
   stats: { avgAcceptMinutes: number; showRate: number; reviewScore: number };
 }
@@ -110,7 +112,9 @@ export type ExitReason =
   | "unresponsive"
   | "chose_another_option"
   | "conflict"
-  | "declined_by_all";
+  | "declined_by_all"
+  /** Handed to an attorney outside the platform; tracked in lead_referrals */
+  | "referred_out";
 
 export type PartyRelationship = "spouse" | "partner" | "child" | "beneficiary" | "heir" | "deceased" | "adverse" | "other";
 
@@ -556,6 +560,42 @@ export interface PartnerGift {
   flags: string[];
   loggedBy: string;
   reviewNote?: string;
+}
+
+export type ReferralReason = "conflict" | "capacity" | "practice_area" | "location" | "language" | "client_request" | "other";
+export const REFERRAL_REASONS: ReferralReason[] = ["conflict", "capacity", "practice_area", "location", "language", "client_request", "other"];
+/** pending: sent, no answer yet. accepted: the attorney took it. booked: consult booked. retained: retainer signed. */
+export type ReferralOutcome = "pending" | "accepted" | "booked" | "retained" | "declined" | "no_response";
+export const REFERRAL_OUTCOMES: ReferralOutcome[] = ["pending", "accepted", "booked", "retained", "declined", "no_response"];
+
+/**
+ * A lead the handling attorney passed to someone else: another attorney on the platform (toLawyerId)
+ * or one outside it (outsideName). No fee or payment fields on purpose: nothing of value may be tied
+ * to a referral until the Illinois Rule 5.4 / 7.2 review is done.
+ */
+export interface LeadReferral {
+  id: string;
+  leadId: string;
+  fromLawyerId: string;
+  fromFirmId: string;
+  toLawyerId?: string;
+  toFirmId?: string;
+  /** The new offer to the platform attorney */
+  assignmentId?: string;
+  outsideName?: string;
+  outsideFirm?: string;
+  outsideContact?: string;
+  reason: ReferralReason;
+  note?: string;
+  /** The client agreed to their details going to this attorney (Rule 1.6). Always true. */
+  clientAgreed: true;
+  referredAt: string;
+  referredBy: string;
+  /** Entered by hand for outside referrals; for platform referrals it is read off the offer and the lead. */
+  outcome: ReferralOutcome;
+  outcomeAt?: string;
+  outcomeBy?: string;
+  outcomeNote?: string;
 }
 
 export interface PartnerReferral {

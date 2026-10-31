@@ -19,6 +19,9 @@ import type { OrganizerSummaryView } from "@/server/services/familyPlan";
 
 import { SendRetainer } from "./SendRetainer";
 import { SpouseInvite } from "./SpouseInvite";
+import { ReferLead } from "./ReferLead";
+import { MANUAL_OUTCOMES, OUTCOME_LABELS, REASON_LABELS, referralTargets, referralsForLead } from "@/server/services/referrals";
+import { REFERRAL_REASONS } from "@/server/types";
 import { firstNameOf } from "@/lib/people";
 import { packages, retainerPayments } from "@/config/firm";
 import { STAGES, type MatterType } from "@/server/types";
@@ -108,13 +111,20 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
   const actor = await currentActor();
   if (!actor) return <p>Please <Link href="/portal">sign in</Link>.</p>;
   let view;
+  const rawDb = await getDb();
+  const db = scopedDb(rawDb, actor);
   try {
-    view = await buildCaseView(scopedDb(await getDb(), actor), actor, id);
+    view = await buildCaseView(db, actor, id);
   } catch (err) {
     if (err instanceof ForbiddenError) return <p>You do not have access to this case.</p>;
     notFound();
   }
   const { header: h, sections: s } = view;
+  const referralLog = await referralsForLead(db, actor, id);
+  // The dropdown reads every attorney's eligibility, so it runs unscoped after referralTargets' own policy check.
+  const targets = await referralTargets(rawDb, actor, id).catch(() => null);
+  const lead = await rawDb.leads.get(id);
+  const canRefer = !!targets && !!lead && !lead.exit && STAGES.indexOf(h.stage) >= STAGES.indexOf("offered") && STAGES.indexOf(h.stage) < STAGES.indexOf("retainer_signed");
   const canSendRetainer =
     view.access === "full" && (actor.role === "attorney" || actor.role === "paralegal") && !h.nextStep.startsWith("Closed") &&
     STAGES.indexOf(h.stage) >= STAGES.indexOf("accepted") && STAGES.indexOf(h.stage) <= STAGES.indexOf("proposal_sent");
@@ -136,6 +146,35 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
 
       {view.access === "conflict_card" && h.offerAssignmentId && <OfferActions assignmentId={h.offerAssignmentId} />}
       {view.access === "full" && h.assignedLawyer && actor.role !== "marketing" && <InviteClient leadId={id} />}
+
+      {/* 1b. Who is handling it, and every hand-off */}
+      {(canRefer || referralLog.length > 0) && (
+        <section className="card" id="referrals">
+          <h2>Referrals</h2>
+          <ReferLead
+            leadId={id}
+            canRefer={canRefer}
+            canReferOutside={view.access === "full"}
+            holderName={h.assignedLawyer}
+            targets={targets ?? []}
+            reasons={REFERRAL_REASONS.map((r) => ({ value: r, label: REASON_LABELS[r] }))}
+            outcomes={MANUAL_OUTCOMES.map((o) => ({ value: o, label: OUTCOME_LABELS[o] }))}
+            log={referralLog.map((r) => ({
+              id: r.id,
+              referredAt: r.referredAt,
+              fromName: r.fromName,
+              toName: r.toName,
+              outside: !r.toLawyerId,
+              reasonLabel: REASON_LABELS[r.reason],
+              note: r.note,
+              outcome: r.effective,
+              outcomeLabel: OUTCOME_LABELS[r.effective],
+              outcomeNote: r.outcomeNote,
+              canUpdate: r.canUpdate,
+            }))}
+          />
+        </section>
+      )}
 
       {/* 2. Summary */}
       {s.summary && (

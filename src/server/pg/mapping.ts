@@ -44,7 +44,7 @@ export const TABLES = {
       t("phone", "phone", true), t("bio", "bio", true),
       a("licensedStates", "licensed_states"), a("matterTypes", "matter_types"), a("specialties", "specialties"), a("languages", "languages"),
       n("weeklyCapacity", "weekly_capacity"), n("activeLeadCap", "active_lead_cap"), n("acceptSlaMinutes", "accept_sla_minutes"),
-      j("office", "office", true), b("onCall", "on_call"), b("active", "active"), j("stats", "stats"),
+      j("office", "office", true), b("onCall", "on_call"), b("primaryIntake", "primary_intake"), b("active", "active"), j("stats", "stats"),
     ],
   },
   persons: {
@@ -127,6 +127,16 @@ export const TABLES = {
       a("matterTypes", "matter_types"), t("body", "body"), t("bodySha256", "body_sha256"), j("pdf", "pdf", true),
       t("status", "status"), a("defaultFor", "default_for"), t("createdBy", "created_by"), ts("createdAt", "created_at"),
       t("approvedBy", "approved_by", true), t("approvedByName", "approved_by_name", true), ts("approvedAt", "approved_at", true),
+    ],
+  },
+  leadReferrals: {
+    table: "lead_referrals",
+    columns: [
+      t("id", "id"), t("leadId", "lead_id"), t("fromLawyerId", "from_lawyer_id"), t("fromFirmId", "from_firm_id"),
+      t("toLawyerId", "to_lawyer_id", true), t("toFirmId", "to_firm_id", true), t("assignmentId", "assignment_id", true),
+      t("outsideName", "outside_name", true), t("outsideFirm", "outside_firm", true), t("outsideContact", "outside_contact", true),
+      t("reason", "reason"), t("note", "note", true), b("clientAgreed", "client_agreed"), ts("referredAt", "referred_at"), t("referredBy", "referred_by"),
+      t("outcome", "outcome"), ts("outcomeAt", "outcome_at", true), t("outcomeBy", "outcome_by", true), t("outcomeNote", "outcome_note", true),
     ],
   },
   signatures: {

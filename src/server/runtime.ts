@@ -29,6 +29,8 @@ async function createDb(): Promise<Db> {
     await seedDemo(db);
     const { seedRetainerDemo } = await import("@/server/seedRetainers");
     await seedRetainerDemo(db);
+    const { seedReferralDemo } = await import("@/server/seedReferrals");
+    await seedReferralDemo(db);
   }
   return db;
 }
