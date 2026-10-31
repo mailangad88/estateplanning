@@ -1,0 +1,74 @@
+name: Search and AI visibility
+
+# Weekly check of where familyfutureplanning.com ranks or is cited (Google, AI Overviews, AI Mode, Bing,
+# ChatGPT, Perplexity, Gemini, Claude, Brave). Engines without a secret are skipped, so with no secrets
+# this job costs nothing and only prints which keys are missing. Spend caps live in the script.
+# Results history is kept in the Actions cache; each run's report is the job summary and an artifact.
+on:
+  schedule:
+    - cron: "0 13 * * 1" # Mondays 13:00 UTC (8am Chicago)
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: "core (12 queries) or all (24)"
+        default: core
+        type: choice
+        options: [core, all]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: visibility
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      VISIBILITY_DATA_DIR: .cache/visibility
+      VISIBILITY_MAX_SPEND_USD: ${{ vars.VISIBILITY_MAX_SPEND_USD || '3' }}
+      VISIBILITY_MONTHLY_CAP_USD: ${{ vars.VISIBILITY_MONTHLY_CAP_USD || '15' }}
+      GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+      BING_WEBMASTER_API_KEY: ${{ secrets.BING_WEBMASTER_API_KEY }}
+      DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+      DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+      PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Restore history and spend ledger
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/visibility
+          key: visibility-${{ github.run_id }}
+          restore-keys: visibility-
+      - name: Run tracker
+        run: npm run -s visibility -- run ${{ inputs.scope == 'all' && '--all' || '' }}
+      - name: Save history and spend ledger
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/visibility
+          key: visibility-${{ github.run_id }}
+      - name: Report to job summary
+        if: always()
+        run: test -f .cache/visibility/latest.md && cat .cache/visibility/latest.md >> "$GITHUB_STEP_SUMMARY" || echo "No report (no engine configured)." >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: visibility-report
+          path: |
+            .cache/visibility/latest.md
+            .cache/visibility/results.jsonl
+          if-no-files-found: ignore
+          retention-days: 90
