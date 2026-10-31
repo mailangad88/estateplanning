@@ -254,7 +254,17 @@ describe("scheduler", async () => {
     const ids = (await enrollForNewLead(db, lead, T0)).map((e) => e.sequenceId);
     expect(ids).toEqual(["speed_to_lead", "quiz_follow_up", "life_event_new_parent"]);
     const { db: db2, lead: lead2 } = await fixture();
-    expect((await enrollForNewLead(db2, lead2, T0)).map((e) => e.sequenceId)).toEqual(["speed_to_lead"]);
+    expect((await enrollForNewLead(db2, lead2, T0)).map((e) => e.sequenceId)).toEqual(["speed_to_lead", "welcome"]);
+  });
+
+  it("a calculator lead gets the calculator follow-up instead of the welcome", async () => {
+    const { db, lead } = await fixture({ segments: ["tool:cost_calculator"], capture: { tool: "cost_calculator" } });
+    expect((await enrollForNewLead(db, lead, T0)).map((e) => e.sequenceId)).toEqual(["speed_to_lead", "calculator_follow_up"]);
+  });
+
+  it("a calculator used in heir mode stays on the grief track", async () => {
+    const { db, lead } = await fixture({ capture: { tool: "cost_calculator", result: { mode: "heir" } } });
+    expect((await enrollForNewLead(db, lead, T0)).map((e) => e.sequenceId)).toEqual(["grief_support"]);
   });
 
   it("a guide download adds the guide follow-up", async () => {

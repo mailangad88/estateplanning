@@ -60,6 +60,8 @@ function sms(key: string, body: string, source: string): TemplateCopy {
 }
 
 const SRC = "nurture-sequences.md";
+/** Copy drafted in the Brevo setup work (2026-10-31); attorney approval pending like every template. */
+const DRAFT = "draft 2026-10-31";
 
 export const TEMPLATE_COPY: TemplateCopy[] = [
   // ---- Quiz follow-up (Sequence A) ----
@@ -463,6 +465,154 @@ Here is what a first meeting looks like. We ask about your family, what you own 
 It helps to have a list of assets, beneficiary forms, any existing documents and the names of people you are thinking about naming. To book: {{bookingUrl}}
 
 ${SIGN}`, `${SRC} B5`),
+  // ---- Drafted 2026-10-31 for attorney review: booking, after-consult, welcome, calculator ----
+  email("cb_questionnaire", "A short questionnaire before your call", `
+Hi {{firstName}},
+
+Before your consultation, please fill in the short questionnaire in your secure portal. It asks about the people in your family, what you own in broad terms, and any documents you already have. It takes about 15 minutes, and you can save and come back.
+
+Your answers let the attorney spend the call on your questions instead of on basics.
+
+Questionnaire: {{portalUrl}}
+
+If anything in it is unclear, leave it blank. We will go over it together.
+
+${SIGN}`, `${DRAFT} C questionnaire`, "client"),
+
+  email("ch_objection_timing", "Is now the wrong time, {{firstName}}?", `
+Hi {{firstName}},
+
+When people tell me "not now," it usually means one of three things: a busy season, a family conversation that has not happened yet, or a feeling that the plan can wait until life settles.
+
+All three are fair. Two things are worth knowing. You can sign the most important documents first, such as powers of attorney and a will, and add the rest later. And nothing you decide now is fixed: plans are updated as life changes.
+
+If you would like to pick a later date to revisit this, reply with the month and I will hold onto your notes until then. Or book a short call: {{bookingUrl}}
+
+${SIGN}`, `${DRAFT} D3`),
+
+  email("ch_close", "Closing the loop on your plan", `
+Hi {{firstName}},
+
+I have not heard back, so I will stop following up about the proposal after this note.
+
+Some people decide to use online forms instead, and for a simple situation that can work. If you go that way, check that the will is signed with the witnesses your state requires, that your beneficiary forms match what the will says, and that someone you trust knows where the documents are kept.
+
+If you change your mind, my calendar is here: {{bookingUrl}}
+You will still get an occasional newsletter. You can unsubscribe at any time with the link below.
+
+${SIGN}`, `${DRAFT} D4`),
+
+  email("wl_1_how_it_works", "How {{firmName}} works", `
+Hi {{firstName}},
+
+Thanks for reaching out. Here is how we work, so you know what to expect.
+
+{{firmName}} is an estate planning referral network for Illinois and New Jersey. We do not give legal advice ourselves. We learn a little about your situation and match you with an estate planning attorney licensed in your state who handles that kind of work.
+
+What happens next:
+1. We review what you sent us.
+2. We suggest an attorney and set up a first call.
+3. You decide whether to work with them. There is no obligation.
+
+If you would rather pick a time now: {{bookingUrl}}
+
+The {{firmName}} team`, `${DRAFT} welcome 1`),
+
+  email("wl_2_core_documents", "The documents most plans start with", `
+Hi {{firstName}},
+
+Most estate plans start with the same few documents. Here they are in plain words.
+
+- A will says who receives what you own and, if you have young children, who you would want to raise them.
+- A financial power of attorney names someone to handle money and paperwork if you cannot.
+- A healthcare power of attorney names someone to make medical decisions if you cannot speak for yourself.
+- A living trust is optional. Some families use one to keep assets out of probate court or to manage what young beneficiaries receive.
+
+Which of these you need depends on your family and on Illinois or New Jersey law. That is what the first call with an attorney is for.
+
+Read more: {{resourceUrl}}
+
+The {{firmName}} team`, `${DRAFT} welcome 2`),
+
+  email("wl_3_free_tools", "Free tools to get organized first", `
+Hi {{firstName}},
+
+If you are not ready to talk to an attorney yet, you can still make progress on your own. Our free tools take a few minutes each:
+
+- The plan finder asks a few questions and lists the documents people in a similar situation usually discuss.
+- The will or trust tool compares the two side by side for your state.
+- The checklists help you list accounts, policies and the people you would name.
+
+Start here: {{resourceUrl}}
+
+Whatever you put together will make your first call shorter and more useful.
+
+The {{firmName}} team`, `${DRAFT} welcome 3`),
+
+  email("wl_4_book", "What a first call covers", `
+Hi {{firstName}},
+
+A first call with an attorney in our network usually covers three things:
+
+1. Your family and what you want to happen.
+2. Which documents fit, and why.
+3. The attorney's fee for that work, in writing, before you decide.
+
+You do not need to bring anything. If you have an old will or beneficiary forms, they help, but they are not required.
+
+Pick a time: {{bookingUrl}}
+
+The {{firmName}} team`, `${DRAFT} welcome 4`),
+
+  email("calc_1_result", "About your result, {{firstName}}", `
+Hi {{firstName}},
+
+Thanks for using the tool on our site. A quick word on what your result means.
+
+The tool works from a few answers and general rules for your state. It is a starting point, not a review of your situation. Real answers depend on how your accounts are titled, who is named on beneficiary forms, and family details a short form cannot see.
+
+If you want an attorney licensed in your state to look at the real picture, we can set that up: {{bookingUrl}}
+
+Over the next two weeks we will send a few short notes on what usually changes the answer.
+
+The {{firmName}} team`, `${DRAFT} calculator 1`),
+
+  email("calc_2_what_moves_it", "What changes the answer most", `
+Hi {{firstName}},
+
+When people run the numbers on a plan, a few facts tend to change the result more than anything else:
+
+- How each asset is titled. Accounts with a named beneficiary or a joint owner often pass outside probate.
+- Real estate in more than one state, which can mean a second court process.
+- Whether the beneficiary forms on retirement accounts and life insurance are up to date.
+- Young children or adult children who would need help managing an inheritance.
+
+Checking these takes an afternoon and is often the most useful thing you can do this month.
+
+Checklist: {{resourceUrl}}
+
+The {{firmName}} team`, `${DRAFT} calculator 2`),
+
+  email("calc_3_plan_finder", "Try the plan finder next", `
+Hi {{firstName}},
+
+The tool you used looks at one question. The plan finder looks at the whole picture: family, home, accounts and what you want to happen. It takes about three minutes and lists the topics people in a similar situation usually discuss with an attorney.
+
+Plan finder: {{resourceUrl}}
+
+The {{firmName}} team`, `${DRAFT} calculator 3`),
+
+  email("calc_4_book", "Want an attorney to check it?", `
+Hi {{firstName}},
+
+Online tools are good for a first look. An attorney can tell you what actually applies to your family under Illinois or New Jersey law.
+
+A first call usually covers what you want to happen, which documents fit, and the fee for that work in writing before you decide. There is no obligation.
+
+Pick a time: {{bookingUrl}}
+
+The {{firmName}} team`, `${DRAFT} calculator 4`),
+
 ];
 
 const BY_KEY = new Map(TEMPLATE_COPY.map((t) => [t.key, t]));

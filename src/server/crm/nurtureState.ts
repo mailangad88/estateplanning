@@ -11,7 +11,7 @@ import { STAGES } from "@/server/types";
  * life-event tracks ride with A; no-show recovery with C. "long_term" is the unlettered newsletter track.
  */
 export function sequenceGroup(sequenceId: string): string {
-  if (sequenceId === "speed_to_lead" || sequenceId === "quiz_follow_up" || sequenceId.startsWith("life_event")) return "A";
+  if (sequenceId === "speed_to_lead" || sequenceId === "quiz_follow_up" || sequenceId === "welcome" || sequenceId === "calculator_follow_up" || sequenceId.startsWith("life_event")) return "A";
   switch (sequenceId) {
     case "magnet_follow_up": return "B";
     case "consult_booked": case "no_show_recovery": return "C";

@@ -14,6 +14,46 @@ suppressions, and tells the CRM everything it needs to know so the CRM's automat
 (`LAWMATICS_API_TOKEN`, or `CRM_PROVIDER=hubspot` with `HUBSPOT_PRIVATE_APP_TOKEN`). With the mock or no token it stays
 `internal`, so a missing CRM never silently stops follow-up. An unknown value is reported as an error by the cron sweep.
 
+## Brevo (free plan), added 2026-10-31
+
+Angad asked for a free CRM where he can run email sequences. Research (Claude Doc "Free CRM for email sequences",
+2026-10-31) picked Brevo Free: 300 emails a day, 100,000 contacts, 2,000 contacts in active automations, visual
+automations, API and webhooks. `CRM_PROVIDER=brevo` with `BREVO_API_KEY` turns on `src/server/crm/brevo.ts`.
+
+How it maps:
+
+- **Matter = contact.** Brevo free caps open deals at 50, so stage and capture fields live on the contact as `EP_*`
+  text attributes (the same fields as above, upper-cased), and notes are Brevo CRM notes on the contact.
+- **One list per sequence**, named `ep-seq-<sequence id>`. A Brevo automation for each sequence starts on
+  "contact added to list". The adapter adds contacts only when `BREVO_ENROLL_LISTS=true` **and** `NURTURE_OWNER=crm`,
+  so our sender and Brevo never both send. Leaving lists (opt-out, grief track, do-not-market, client) always runs.
+- **Grief rule in code:** a grief-track contact can only be on `ep-seq-grief_support`; do-not-market contacts only on
+  service sequences (`consult_booked`, `signed_onboarding`, `plan_complete`, `review_request`, `annual_review`).
+- **Suppressions:** a suppressed email is set `emailBlacklisted` in Brevo. Brevo unsubscribes, hard bounces and spam
+  complaints come back at `POST /api/webhooks/brevo` (bearer token or `?token=` = `BREVO_WEBHOOK_SECRET`) and become
+  local suppressions.
+- **Setup script:** `npm run brevo:setup` prints the plan; `-- --apply` creates the folder, lists and attributes;
+  `-- --apply --templates` uploads every email template as an inactive draft named "DRAFT not approved - <key>".
+  `{{resourceUrl}}` and `{{portalUrl}}` become visible `[[...]]` markers to replace by hand.
+- **Texts and call tasks** stay with our app. Brevo SMS needs paid credits and 10DLC, so in `crm` mode text steps
+  are not sent by anyone until that is set up.
+
+New sequences drafted for attorney review: `welcome` (form leads with no quiz, guide or calculator) and
+`calculator_follow_up` (cost calculator, readiness score, will versus trust). Copy also added for
+`cb_questionnaire`, `ch_objection_timing` and `ch_close`.
+
+Account steps for Angad (nothing is created for him):
+
+1. Sign up at brevo.com on the Free plan with the business email.
+2. Senders, domains and dedicated IPs: add the sending domain and the DKIM, DMARC and Brevo-code records in
+   Cloudflare (live-domain DNS change, needs his go-ahead), then add the sender address.
+3. SMTP and API, API keys: create a key, store it in Vercel as `BREVO_API_KEY` (staging first).
+4. Run `npm run brevo:setup -- --apply --templates` once (we can run it).
+5. Webhooks: create a marketing webhook and a transactional webhook to `https://<site>/api/webhooks/brevo`
+   for unsubscribed, hard bounce and spam, with bearer auth = `BREVO_WEBHOOK_SECRET`.
+6. Build each automation in Brevo from its list, using only templates the attorney approved. Leave them paused.
+7. Going live (his approval): `CRM_PROVIDER=brevo`, `NURTURE_OWNER=crm`, `BREVO_ENROLL_LISTS=true`, then activate.
+
 ## What the CRM must be set up with
 
 The app writes these on every enrollment, stage change, exit and opt-out. Create them in the CRM first.
