@@ -7,7 +7,7 @@ import matter from "gray-matter";
 const ROOT = process.cwd();
 const DIR = path.join(ROOT, "content", "magnets");
 const out = process.argv[2] ?? path.join(ROOT, "exports");
-const SITE = process.env.SITE_URL ?? "https://example.com";
+const SITE = (process.env.SITE_URL || process.env.NEXT_PUBLIC_SITE_URL || "https://familyfutureplanning.com").replace(/\/+$/, "");
 fs.mkdirSync(out, { recursive: true });
 
 const csv = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;

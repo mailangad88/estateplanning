@@ -1,7 +1,8 @@
 import { firm } from "@/config/firm";
+import { SITE_URL } from "@/config/site";
 
 /** Public site URL, used for canonical links, the sitemap and structured data. */
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.example.com").replace(/\/$/, "");
+export { SITE_URL };
 
 export function abs(path: string): string {
   return `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
