@@ -12,7 +12,7 @@ export async function POST(request: Request) {
     if (!leadId) throw new Error("No case found");
     const kind = KINDS.find((k) => k === b.kind) ?? "other";
     const doc = await registerDocument(db, actor, { leadId, name: String(b.name ?? "Document"), kind, contentType: String(b.contentType ?? ""), sizeBytes: Number(b.sizeBytes) });
-    // TODO: return a signed upload URL for doc.storageKey so the browser can send the file bytes to storage.
+    // Records the file details only. The client page hides uploads until file storage is connected.
     return { id: doc.id };
   });
 }

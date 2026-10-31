@@ -24,7 +24,7 @@ export interface StateAdvertisingRules {
   name: string;
   /** What every ad, including a website, must identify. */
   identification: string;
-  /** True when the city, town or county of a bona fide office must appear on every page or ad. */
+  /** True when the city, town or county of a bona fide office must appear on every page or ad. Disclosures meets it with firm.officeAddress, which includes the city and state. */
   needsOfficeLocality: boolean;
   /** Label required on ordinary web pages and ads. Null when the rule text requires none. */
   webLabel: string | null;
@@ -223,6 +223,15 @@ export const STATE_RULES: Record<string, StateAdvertisingRules> = {
     ],
     asOf: ASOF,
     notes: "Rule 7.4 restricts certification claims; citing any certificate needs the statement that Illinois does not recognize certification of lawyers in a field (confirm exact text).",
+  },
+  NJ: {
+    ...DEFAULT_RULES,
+    code: "NJ",
+    name: "New Jersey",
+    sources: ["https://www.njcourts.gov/sites/default/files/rules/apprpc.pdf"],
+    asOf: "2026-10-25",
+    notes:
+      "Added 2026-10-25 when New Jersey became a served state. Not researched yet: conservative defaults apply. Before launch, check RPC 7.1 to 7.5 and the Committee on Attorney Advertising's rules, and whether a site that matches visitors with attorneys counts as a lawyer referral service that must register or be approved in New Jersey.",
   },
   OH: {
     code: "OH",

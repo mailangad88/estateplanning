@@ -205,19 +205,33 @@ describe("landing page quality gate", () => {
       return out;
     };
     const pages = [...articles, ...states].map((p) => ({ url: p.url, sh: shingles(p.markdown) }));
-    const dupes: string[] = [];
-    for (let i = 0; i < pages.length; i++) {
-      for (let j = i + 1; j < pages.length; j++) {
-        const a = pages[i].sh;
-        const b = pages[j].sh;
-        let shared = 0;
-        for (const s of a) if (b.has(s)) shared++;
-        const overlap = shared / Math.min(a.size, b.size);
-        if (overlap > 0.15) dupes.push(`${pages[i].url} ~ ${pages[j].url} (${Math.round(overlap * 100)}%)`);
+    // Inverted index: count shared shingles per page pair without comparing every pair of pages.
+    const index = new Map<string, number[]>();
+    pages.forEach((p, i) => {
+      for (const s of p.sh) {
+        const list = index.get(s);
+        if (list) list.push(i);
+        else index.set(s, [i]);
+      }
+    });
+    const shared = new Map<number, number>();
+    for (const list of index.values()) {
+      for (let x = 0; x < list.length; x++) {
+        for (let y = x + 1; y < list.length; y++) {
+          const key = list[x] * pages.length + list[y];
+          shared.set(key, (shared.get(key) ?? 0) + 1);
+        }
       }
     }
+    const dupes: string[] = [];
+    for (const [key, count] of shared) {
+      const i = Math.floor(key / pages.length);
+      const j = key % pages.length;
+      const overlap = count / Math.min(pages[i].sh.size, pages[j].sh.size);
+      if (overlap > 0.15) dupes.push(`${pages[i].url} ~ ${pages[j].url} (${Math.round(overlap * 100)}%)`);
+    }
     expect(dupes).toEqual([]);
-  });
+  }, 30_000);
 
   it("every library article sends readers to the plan finder or a free tool", () => {
     const missing = articles

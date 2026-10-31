@@ -296,7 +296,8 @@ describe("release and feedback to the partner", () => {
     const { lead, referral } = await referred();
     await setReleaseStatus(db, firmAdmin, referral.id, "granted", NOW);
     await setStage(db, "system", lead.id, "retainer_signed", NOW);
-    const text = JSON.stringify(await partnerFeedback(db, partner.id));
+    // referralId is a random UUID, which can contain hex runs like "fee"; leave it out of the text check
+    const text = JSON.stringify((await partnerFeedback(db, partner.id)).map(({ referralId: _id, ...rest }) => rest));
     expect(text).not.toMatch(/Maria|Quintanilla|example\.com|5125550123|TX|new_plan|estate|fee/i);
     expect(Object.keys((await partnerFeedback(db, partner.id))[0]).sort()).toEqual(["message", "referralId", "referredOn", "released", "status"]);
   });

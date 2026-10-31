@@ -18,6 +18,10 @@ import { IS_STAGING } from "@/lib/env";
 import "./globals.css";
 import "@/components/visuals/visuals.css";
 import "./design.css";
+import "./polish/home.css";
+import "./polish/articles.css";
+import "./polish/tools.css";
+import "./polish/pages.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -73,6 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <span>{firm.brandName}</span>
               </Link>
               <p>Wills, living trusts, powers of attorney and healthcare directives, explained plainly and prepared by an estate planning attorney.</p>
+              <p>Email: <a href={`mailto:${firm.email}`}>{firm.email}</a></p>
             </div>
             <MegaFooter />
           </div>

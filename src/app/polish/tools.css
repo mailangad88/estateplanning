@@ -1,0 +1,225 @@
+/* Design polish: tools. Loaded after design.css. */
+/* Covers forms, calculators, quizzes, opt-in boxes, result cards, the plan finder,
+   checklists and the free library. Tokens only: no new colours or one-off font sizes. */
+
+/* ---------- Form fields ---------- */
+label.field { font-size: var(--text-sm); font-weight: 600; line-height: 1.35; color: var(--text); margin-bottom: 18px; }
+label.field input, label.field select, label.field textarea {
+  margin-top: 8px; font-size: var(--text-base); font-weight: 400; line-height: 1.4;
+  border-color: color-mix(in srgb, var(--border) 60%, var(--muted)); background-color: var(--surface);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+label.field input:hover, label.field select:hover, label.field textarea:hover { border-color: var(--brand); }
+label.field textarea { min-height: 112px; resize: vertical; }
+label.field input::placeholder, label.field textarea::placeholder { color: var(--muted); opacity: 0.8; }
+/* One consistent chevron on every select, in place of each browser's own arrow. */
+label.field select, .tools-select {
+  appearance: none; -webkit-appearance: none; padding-right: 44px; cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2356616a' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 14px center; background-size: 18px;
+}
+@media (prefers-color-scheme: dark) {
+  label.field select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a9b3b6' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  }
+}
+/* Range sliders: brand track and thumb instead of the browser's blue. */
+input[type="range"] { accent-color: var(--cta); min-height: 32px; cursor: pointer; }
+label.field input[type="range"] { margin-top: 10px; min-height: 32px; background: none; box-shadow: none; }
+.field-row, .optin__fields { gap: 0 16px; }
+.error { font-weight: 600; margin: -8px 0 16px; }
+.error[role="alert"] { margin: 12px 0; padding: 10px 14px; border-radius: 10px; background: var(--clay-tint); color: var(--clay-text); }
+
+/* Consent and other checkbox rows */
+.check { gap: 12px; margin: 14px 0; line-height: 1.55; color: var(--muted); cursor: pointer; }
+.check input { margin-top: 2px; }
+.check span { color: var(--text); }
+.notice { line-height: 1.55; }
+
+/* Back / Next rows */
+.nav { align-items: center; margin-top: 28px; }
+.nav > span:empty { display: none; }
+.nav > .button:last-child { margin-left: auto; }
+.button:disabled, .button[disabled] { opacity: 0.5; cursor: not-allowed; transform: none; box-shadow: none; }
+@media (max-width: 600px) {
+  .nav { flex-wrap: wrap; }
+  .nav > .button[type="submit"]:only-child, .lead-form .nav > .button[type="submit"] { flex: 1 1 100%; }
+}
+
+/* ---------- Option tiles (radio and checkbox answers) ---------- */
+.option {
+  align-items: center; gap: 14px; min-height: 56px; padding: 14px 18px; margin-bottom: 10px;
+  border-radius: 12px; border-color: var(--border); font-weight: 500; line-height: 1.4;
+  transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
+}
+.option input { margin: 0; }
+.option:hover { border-color: var(--brand); background: color-mix(in srgb, var(--brand-tint) 45%, var(--surface)); }
+.option:has(input:checked) { border-color: var(--brand); background: var(--brand-tint); box-shadow: inset 0 0 0 1px var(--brand); }
+.option:has(input:focus-visible) { outline: 3px solid var(--gold); outline-offset: 2px; }
+.inline-options { gap: 10px; }
+.inline-options .option { min-height: 52px; }
+
+/* Question blocks inside tools */
+.question { margin-bottom: 28px; }
+.question > p, .tool .question legend { font-size: var(--text-base); font-weight: 650; line-height: 1.4; margin: 0 0 10px; }
+
+/* ---------- Progress bars ---------- */
+.progress, .bar, .meter { height: 8px; background: var(--sand-deep); border-radius: 999px; overflow: hidden; }
+.progress { margin: 0 0 14px; }
+.progress span, .bar span, .meter span {
+  display: block; height: 100%; border-radius: 999px;
+  background: linear-gradient(90deg, var(--brand), var(--sage)); transition: width 0.4s ease;
+}
+@media (prefers-reduced-motion: reduce) { .progress span, .bar span, .meter span { transition: none; } }
+
+/* ---------- Tool and calculator cards ---------- */
+.tool, .card:has(> label.field), .card:has(> .question) {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 20px;
+  padding: clamp(20px, 3.4vw, 32px); box-shadow: var(--shadow-sm); margin: 24px 0;
+}
+.tool > :first-child, .card:has(> label.field) > :first-child { margin-top: 0; }
+.card:has(> label.field) > label.field:last-child, .card:has(> label.field) > :last-child { margin-bottom: 0; }
+.card:has(> label.field) .notice { margin: -6px 0 18px; }
+
+/* ---------- Result panels ---------- */
+.result {
+  position: relative; background: var(--surface); border: 1px solid var(--border); border-top: 0;
+  border-radius: 20px; padding: clamp(22px, 3.4vw, 32px); margin: 24px 0; box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.result::before { content: ""; position: absolute; inset: 0 0 auto; height: 5px; background: linear-gradient(90deg, var(--brand), var(--sage)); }
+.result > :first-child { margin-top: 0; }
+.result > :last-child { margin-bottom: 0; }
+.result .big {
+  font-family: var(--font-display); font-weight: 600; font-size: clamp(2rem, 5vw, 2.75rem); line-height: 1.1;
+  letter-spacing: -0.02em; color: var(--brand); font-variant-numeric: lining-nums tabular-nums; margin: 6px 0 12px;
+}
+.result ul { list-style: none; padding: 0; margin: 14px 0; }
+.result ul > li { position: relative; padding-left: 22px; margin: 0 0 8px; }
+.result ul > li::before { content: ""; position: absolute; left: 4px; top: 0.6em; width: 7px; height: 7px; border-radius: 50%; background: var(--sage); }
+.result h2, .result h3 { margin-top: 0; }
+p.result { box-shadow: var(--shadow-sm); }
+
+/* ---------- Lead forms (LeadForm) ---------- */
+.lead-form {
+  background: var(--sand); border-radius: 20px; padding: clamp(22px, 3.6vw, 36px); margin: 32px 0;
+}
+.lead-form legend, .lead-form fieldset > legend {
+  font-family: var(--font-display); font-size: var(--text-xl); font-weight: 600; line-height: 1.25; letter-spacing: -0.01em; margin: 0 0 6px;
+}
+.lead-form fieldset > .notice:first-of-type { margin: 0 0 20px; }
+.lead-form label.field input, .lead-form label.field select, .lead-form label.field textarea { border-color: var(--border); }
+/* A lead form that sits inside a tool card does not get a second frame. */
+.tool .lead-form, .result .lead-form { background: none; padding: 0; margin: 24px 0 0; border-radius: 0; }
+
+/* ---------- Opt-in boxes (MagnetOptIn, quiz gate, email capture) ---------- */
+.cta.optin, form.cta { padding: clamp(22px, 3.4vw, 32px); }
+.cta.optin > strong, form.cta > strong { line-height: 1.2; margin-bottom: 6px; }
+.cta.optin > p:not(.notice) { margin: 0 0 18px; }
+.cta.optin .button, form.cta > .button { margin-top: 4px; }
+.cta.optin .notice, form.cta .notice { margin: 14px 0 0; }
+.cta.optin label.field input { border-color: var(--border); }
+@media (max-width: 600px) { .cta.optin .button, form.cta > .button { width: 100%; } }
+
+/* Magnet landing page */
+.magnet-landing__grid { gap: clamp(24px, 4vw, 40px); }
+.magnet-landing__grid .optin { top: calc(var(--header-h) + 16px); }
+.magnet-landing__grid .card { border-radius: var(--radius); padding: 18px 22px; }
+.benefits li { padding: 7px 0 7px 32px; }
+.benefits li::before {
+  content: ""; left: 0; top: 0.65em; width: 20px; height: 20px; border-radius: 50%;
+  background: var(--sage-tint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233f6a4f' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center / 12px no-repeat;
+}
+.magnet-answers__list { gap: 10px; }
+.magnet-answers__list li { padding: 12px 16px 12px 46px; line-height: 1.45; font-size: var(--text-sm); }
+.magnet-answers__list li::before { left: 14px; top: 12px; width: 22px; height: 22px; line-height: 22px; font-size: var(--text-2xs); }
+
+/* ---------- Quizzes ---------- */
+.quiz .meta { font-size: var(--text-2xs); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--clay-text); margin: 0 0 8px; }
+.quiz .question legend { font-family: var(--font-display); font-size: var(--text-xl); font-weight: 600; line-height: 1.3; margin-bottom: 18px; }
+.quiz-option {
+  display: flex; align-items: center; gap: 14px; min-height: 60px; padding: 14px 20px; margin: 0 0 12px;
+  border-radius: 14px; font-weight: 550; transition: border-color 0.15s, background 0.15s, transform 0.15s;
+}
+.quiz-option::before { content: ""; flex: none; width: 20px; height: 20px; border-radius: 50%; border: 2px solid color-mix(in srgb, var(--border) 40%, var(--muted)); transition: border 0.15s; }
+.quiz-option:hover { border-color: var(--brand); background: color-mix(in srgb, var(--brand-tint) 45%, var(--surface)); transform: translateY(-1px); }
+.quiz-option.is-picked { border-color: var(--brand); background: var(--brand-tint); box-shadow: inset 0 0 0 1px var(--brand); }
+.quiz-option.is-picked::before { border: 6px solid var(--brand); }
+.quiz .linklike { margin-top: 8px; min-height: 44px; }
+.quiz .result .big { margin: 0; }
+.quiz-review { padding-left: 22px; }
+.quiz-review li { padding-left: 4px; }
+
+/* ---------- Plan finder ---------- */
+.plan-finder {
+  max-width: 720px; margin: clamp(24px, 5vw, 56px) auto 0; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: clamp(22px, 4vw, 44px); box-shadow: var(--shadow);
+}
+.plan-finder > .notice:first-of-type, .plan-finder > .progress + .notice {
+  font-size: var(--text-2xs); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--clay-text); margin: 0 0 10px;
+}
+.plan-finder legend { margin-bottom: 8px; }
+.plan-finder legend h1 { font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2rem) !important; line-height: 1.2; font-weight: 600; }
+.plan-finder fieldset > .notice { margin: 0 0 20px; font-size: var(--text-sm); }
+.plan-finder h2:first-child { margin-top: 0; }
+
+/* ---------- Printable checklists ---------- */
+div.checklist ul { display: grid; gap: 8px; margin: 0 0 8px; }
+div.checklist li { margin: 0; }
+div.checklist label {
+  gap: 14px; align-items: flex-start; min-height: 52px; padding: 13px 16px; border: 1px solid var(--border);
+  border-radius: 12px; background: var(--surface); line-height: 1.45; transition: border-color 0.15s, background 0.15s;
+}
+div.checklist label:hover { border-color: var(--brand); }
+div.checklist input { margin-top: 1px; }
+div.checklist label:has(input:checked) { background: var(--sage-tint); border-color: color-mix(in srgb, var(--sage) 50%, var(--border)); }
+div.checklist label:has(input:checked) > :not(input) { color: var(--muted); text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--muted) 60%, transparent); }
+div.checklist h2 { margin-top: 44px; }
+@media (min-width: 601px) { div.checklist > .no-print:first-child { position: sticky; top: calc(var(--header-h) + 8px); z-index: 5; background: color-mix(in srgb, var(--bg) 92%, transparent); padding: 10px 0; backdrop-filter: blur(8px); } }
+@media print {
+  div.checklist label { border: 0; padding: 4px 0; min-height: 0; background: none; }
+}
+
+/* ---------- Free library (/free) ---------- */
+.library-filters {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 20px 20px 2px;
+  box-shadow: var(--shadow-sm); margin-top: 28px; gap: 0 14px;
+}
+.library-filters { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.library-filters > :first-child { grid-column: 1 / -1; }
+.library-filters + .meta { margin: 12px 4px 0; }
+.library-jump { margin: 20px 0 8px; }
+.library-jump ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.library-jump a {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 6px 8px 6px 16px; border-radius: 999px;
+  background: var(--surface); border: 1px solid var(--border); color: var(--text); font-size: var(--text-sm); font-weight: 600;
+  text-decoration: none; transition: border-color 0.15s, background 0.15s;
+}
+.library-jump a:hover { border-color: var(--brand); background: var(--brand-tint); }
+.library-jump a span { display: inline-grid; place-items: center; min-width: 30px; height: 26px; padding: 0 8px; border-radius: 999px; background: var(--sand); color: var(--muted); font-size: var(--text-2xs); font-weight: 700; }
+.library-group { margin-top: var(--space-head); scroll-margin-top: calc(var(--header-h) + 16px); }
+.library-group__head { display: flex; align-items: baseline; gap: 12px; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 18px; }
+.library-group__head h2 { margin: 0; }
+.library-group__count { font-size: var(--text-xs); font-weight: 700; color: var(--muted); }
+.library-group .cards { margin: 0; }
+/* Closed groups show the first six cards (four on phones); the rest stay in the page for search engines and appear with "Show all". */
+.library-group:not(.is-open) .cards > li:nth-child(n + 7) { display: none; }
+.library-group__more { margin-top: 16px; }
+@media (max-width: 600px) {
+  .library-group:not(.is-open) .cards > li:nth-child(n + 5) { display: none; }
+  .library-jump ul { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin: 0 -16px; padding: 0 16px 4px; }
+  .library-jump ul::-webkit-scrollbar { display: none; }
+  .library-jump li { flex: none; }
+  .library-group__more { width: 100%; min-height: 48px; }
+  .library-filters { padding: 16px 16px 0; grid-template-columns: 1fr 1fr; gap: 0 12px; }
+  .library-filters > :nth-child(2) { grid-column: 1 / -1; }
+}
+/* Library cards: tidy rhythm, meta line pinned to the bottom so rows line up. */
+.library-cards .card-link > .meta:last-child { margin-top: auto !important; padding-top: 6px; }
+.library-cards .card-link .card-desc { font-size: var(--text-sm); line-height: 1.5; }
+
+/* Probate vs. trust explainer (probate calculator): the SVG shrinks on phones, so its labels grow in SVG units to stay readable (about 13-15px on screen). */
+@media (max-width: 600px) {
+  .explainer__label { font-size: 26px; }
+  .explainer__cap, .explainer__node .explainer__cap { font-size: 21px; }
+}

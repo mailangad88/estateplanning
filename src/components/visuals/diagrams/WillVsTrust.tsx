@@ -2,7 +2,7 @@ import { Figure } from "../Figure";
 import { Arrow, Card, Pill, Text } from "../primitives";
 import { Icon } from "../icons/Icon";
 import type { ColorName } from "../tokens";
-import { Frame, S, Wrap } from "./shared";
+import { Frame, pillW, S, Wrap } from "./shared";
 import type { DiagramProps } from "./types";
 
 type Row = { icon: string; title: string; body: string; tag?: string };
@@ -37,7 +37,7 @@ function Column({ x, tone, tint, title, icon, rows, step, n }: { x: number; tone
               {r.title}
             </Text>
             <Wrap x={x + 76} y={y + 57} w={w - 96 - (r.tag ? 80 : 0)} text={r.body} size={15} color="muted" />
-            {r.tag ? <Pill x={x + w - 82} y={y + 28} text={r.tag} fill={tint} ink={tone === "accent" ? "accentDeep" : "ink"} size={13} /> : null}
+            {r.tag ? <Pill x={x + w - 16 - pillW(r.tag, 14)} y={y + 28} text={r.tag} fill={tint} ink={tone === "accent" ? "accentDeep" : "ink"} size={14} /> : null}
             {i < rows.length - 1 ? <Arrow from={{ x: x + 40, y: y + 86 }} to={{ x: x + 40, y: y + 102 }} color="muted" head={5} /> : null}
           </g>
         );

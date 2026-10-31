@@ -24,6 +24,8 @@ faqs:
     a: "Yes. The statutory form lets you choose a future effective date or event. Many families prefer an immediate power because a delayed one can require proof of incapacity, which slows down banks and delays help when it is needed."
   - q: "Does my Illinois property power of attorney work after I die?"
     a: "No. The agent's authority ends at your death. After that, your executor or successor trustee takes over under your will or trust. The agent must stop acting and should hand over records and property."
+  - q: "Where can I get an Illinois power of attorney form?"
+    a: "The statutory short form for property is printed in the Illinois Power of Attorney Act (755 ILCS 45/3-3), so the official wording is public. It only works when it is signed by you, signed by one witness who is not your agent, and notarized. Our attorneys can prepare one that fits your family and check that it is signed correctly."
 related:
   - "illinois"
   - "illinois/illinois-healthcare-power-of-attorney"
@@ -106,7 +108,7 @@ An agent who breaks these duties can be made to restore the property. Courts can
 
 You can make the power start now or at a future date or event. Many people choose "effective now" so the agent can act without proof of incapacity. The [springing versus immediate](/learn/power-of-attorney/springing-vs-immediate-power-of-attorney) comparison covers the tradeoffs.
 
-The power ends when you die, when you revoke it, when a stated end date arrives, or when no agent is left to serve. Illinois law lets you revoke at any time while you have capacity, in any manner communicated to the agent or to others involved (755 ILCS 45/2-4). Revoke in writing, and tell your bank and the agent.
+The power ends when you die, when you revoke it, when a stated end date arrives, or when no agent is left to serve. Illinois law lets you revoke at any time while you have capacity, in any manner communicated to the agent or to others involved (755 ILCS 45/2-5). Revoke in writing, and tell your bank and the agent.
 
 If you lose capacity and have no valid power, your family may need to ask the court for a guardian. Our article on [Illinois guardianship](/learn/illinois/illinois-guardianship) explains that process. A property power does not give anyone authority over medical decisions. For that you need the [Illinois health care power of attorney](/learn/illinois/illinois-healthcare-power-of-attorney).
 

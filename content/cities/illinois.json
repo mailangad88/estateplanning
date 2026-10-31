@@ -15,7 +15,10 @@
         "The Cook County Clerk of the Circuit Court lists a Pro Se/Self-Represented Litigant Center and a guide to free and low-cost legal services in Cook County on its probate page (source: https://www.cookcountyclerkofcourt.org/divisions/probate-division).",
         "Cook County's recorder of deeds is the Cook County Clerk's Recordings office (312.603.3974). The Clerk's Property After Death resource guide describes the Illinois Transfer on Death Instrument as a single document that moves a home at death, and points to the Clerk's forms page (source: https://cookcountyclerkil.gov/publications/property-after-death-resource-guide). Confirm the recording requirements for your instrument with that office or an attorney."
       ],
-      "nearby": ["wheaton", "aurora"],
+      "nearby": [
+        "wheaton",
+        "aurora"
+      ],
       "updated": "2026-10-06"
     },
     {
@@ -32,7 +35,10 @@
         "The DuPage County Recorder is at 421 N. County Farm Road, Wheaton, open 8 a.m. to 4:30 p.m. Monday to Friday, and accepts documents in person or by mail. This is the office that records a deed or transfer on death instrument for DuPage property (source: https://www.dupageco.org/recorder/).",
         "The DuPage circuit clerk's filing fee book lists no fee to file a will, and a $300 fee to open a decedent's estate, in the schedule effective September 11, 2026. Fees change, so check the current book (source: https://dupagecircuitclerk.gov/18thJudicial/viewstaticpdf?pdfFile=FilingFeesSchedule.pdf)."
       ],
-      "nearby": ["chicago", "aurora"],
+      "nearby": [
+        "chicago",
+        "aurora"
+      ],
       "updated": "2026-10-06"
     },
     {
@@ -46,11 +52,12 @@
       },
       "localNotes": [
         "Lake County's probate court sits in the main courthouse at 18 N. County St., Waukegan; the Probate Division's phone is 847-377-3260 (source: https://www.19thcircuitcourt.state.il.us/1331/Probate-Court).",
-        "The Lake County probate standing order effective January 12, 2026 requires attorneys and parties to e-file with the Circuit Clerk, and sets hearing days by case type, including Wednesdays for adult guardianships and Fridays for self-represented litigants (source: https://19thcircuitcourt.state.il.us/DocumentCenter/View/5887/DJV-Standing-Order---Procedures-for-Probate-Guardianship-Division-Cases---1-12-26)."
-        ,
+        "The Lake County probate standing order effective January 12, 2026 requires attorneys and parties to e-file with the Circuit Clerk, and sets hearing days by case type, including Wednesdays for adult guardianships and Fridays for self-represented litigants (source: https://19thcircuitcourt.state.il.us/DocumentCenter/View/5887/DJV-Standing-Order---Procedures-for-Probate-Guardianship-Division-Cases---1-12-26).",
         "The Lake County Clerk's Recording Division is at 18 N County St, 6th Floor, Waukegan (847-377-2575, 8:30 a.m. to 5:00 p.m. weekdays). Its deed-recording checklist includes any local municipal transfer tax stamp, which must be obtained before submitting a deed (sources: https://www.lakecountyil.gov/Faq.aspx?QID=558 and https://www.lakecountyil.gov/DocumentCenter/View/3233/Pamphlet---Recording-Deeds-PDF)."
       ],
-      "nearby": ["chicago"],
+      "nearby": [
+        "chicago"
+      ],
       "updated": "2026-10-06"
     },
     {
@@ -68,7 +75,10 @@
         "The Will County Circuit Clerk's fee schedule (effective 07/12/2026, updated 09/03/2026) lists no fee to file a will and a $314 new probate case filing fee. Fees change, so check the current schedule (source: https://www.circuitclerkofwillcounty.com/public-access/fee-schedule).",
         "The Clerk's site offers Zoom virtual court access and a probate forms page (source: https://circuitclerkofwillcounty.com/Court-Forms)."
       ],
-      "nearby": ["aurora", "wheaton"],
+      "nearby": [
+        "aurora",
+        "wheaton"
+      ],
       "updated": "2026-10-06"
     },
     {
@@ -86,8 +96,217 @@
         "The clerk's fee schedule effective 9/1/2026 lists no fee to file a will and $314 to administer a decedent's estate (source: https://cic.countyofkane.org/Documents/FeeSchedule.pdf).",
         "The clerk's site points self-represented people to the Kane County Law Library & Self Help Legal Center (source: https://cic.countyofkane.org/Pages/Online-Court-Records.aspx)."
       ],
-      "nearby": ["wheaton", "joliet"],
+      "nearby": [
+        "wheaton",
+        "joliet"
+      ],
       "updated": "2026-10-06"
+    },
+    {
+      "slug": "evanston",
+      "name": "Evanston",
+      "county": "Cook County",
+      "probateCourt": {
+        "name": "Circuit Court of Cook County, Probate Division",
+        "address": "Richard J. Daley Center, 50 West Washington St., Room 1202, Chicago, IL 60602",
+        "url": "https://www.cookcountyclerkofcourt.org/divisions/probate-division"
+      },
+      "localNotes": [
+        "The Clerk of the Circuit Court lists Evanston in Suburban District 2, served by the Skokie courthouse at 5600 Old Orchard Rd., Skokie, IL 60077. (source: https://www.cookcountyclerkofcourt.org/divisions/suburban-districts-0)",
+        "The Levy Senior Center, 300 Dodge Ave., Evanston, lists free Medicare counseling (SHIP) and Illinois Benefit Access Program help by appointment at 847-866-2919. (source: https://www.cityofevanston.org/departments/prcs/facilities/levy_senior_center/senior_social_services.php)"
+      ],
+      "nearby": [
+        "skokie"
+      ],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "skokie",
+      "name": "Skokie",
+      "county": "Cook County",
+      "probateCourt": {
+        "name": "Circuit Court of Cook County, Probate Division",
+        "address": "Richard J. Daley Center, 50 West Washington St., Room 1202, Chicago, IL 60602",
+        "url": "https://www.cookcountyclerkofcourt.org/divisions/probate-division"
+      },
+      "localNotes": [
+        "The Clerk of the Circuit Court lists Skokie in Suburban District 2, served by the Skokie courthouse at 5600 Old Orchard Rd., Skokie, IL 60077. (source: https://www.cookcountyclerkofcourt.org/divisions/suburban-districts-0)",
+        "Niles Township seniors can call 847-673-9300 to schedule an appointment for legal counsel, according to the Village of Skokie FAQ. (source: https://www.skokie.org/FAQ.aspx?QID=102)"
+      ],
+      "nearby": [
+        "evanston"
+      ],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "schaumburg",
+      "name": "Schaumburg",
+      "county": "Cook County",
+      "probateCourt": {
+        "name": "Circuit Court of Cook County, Probate Division",
+        "address": "Richard J. Daley Center, 50 West Washington St., Room 1202, Chicago, IL 60602",
+        "url": "https://www.cookcountyclerkofcourt.org/divisions/probate-division"
+      },
+      "localNotes": [
+        "The Clerk of the Circuit Court lists Schaumburg in Suburban District 3, served by the Rolling Meadows courthouse at 2121 Euclid Ave., Rolling Meadows, IL 60008. (source: https://www.cookcountyclerkofcourt.org/divisions/suburban-districts-0)",
+        "Schaumburg Township Disability & Senior Services lists a Senior Will Program with appointments with participating attorneys at reduced cost; call 847-285-4541. (source: https://schaumburgtownship.org/services/disability-senior-services/)"
+      ],
+      "nearby": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "oak-park",
+      "name": "Oak Park",
+      "county": "Cook County",
+      "probateCourt": {
+        "name": "Circuit Court of Cook County, Probate Division",
+        "address": "Richard J. Daley Center, 50 West Washington St., Room 1202, Chicago, IL 60602",
+        "url": "https://www.cookcountyclerkofcourt.org/divisions/probate-division"
+      },
+      "localNotes": [
+        "The Clerk of the Circuit Court lists Oak Park in Suburban District 4, served by the Maywood courthouse at 1500 Maybrook Dr., Maywood, IL 60153. (source: https://www.cookcountyclerkofcourt.org/divisions/suburban-districts-0)",
+        "Oak Park Township Senior & Disability Services, 130 South Oak Park Avenue, offers an Advanced Directives Clinic and affordable wills for qualifying residents age 60 and over; call (708) 383-8060. (source: https://oakparktownship.org/senior-services/)"
+      ],
+      "nearby": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "orland-park",
+      "name": "Orland Park",
+      "county": "Cook County",
+      "probateCourt": {
+        "name": "Circuit Court of Cook County, Probate Division",
+        "address": "Richard J. Daley Center, 50 West Washington St., Room 1202, Chicago, IL 60602",
+        "url": "https://www.cookcountyclerkofcourt.org/divisions/probate-division"
+      },
+      "localNotes": [
+        "The Clerk of the Circuit Court lists Orland Park in Suburban District 5, served by the Bridgeview courthouse at 10220 S. 76th Ave., Bridgeview, IL 60455. (source: https://www.cookcountyclerkofcourt.org/divisions/suburban-districts-0)",
+        "Orland Township, 14807 S. Ravinia Avenue, lists a Five Wishes living will program for seniors; call 708-403-4222. (source: https://orlandtownship.org/senior-programs/)"
+      ],
+      "nearby": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "rockford",
+      "name": "Rockford",
+      "county": "Winnebago County",
+      "probateCourt": {
+        "name": "Winnebago County Courthouse",
+        "address": "400 West State Street, Rockford, IL 61101",
+        "url": "https://www.circuitclerk.wincoil.gov/civil-information/probate/probate/"
+      },
+      "localNotes": [
+        "In Rockford, wills are filed at Room 108 of the Winnebago County Courthouse, 400 W State St. The clerk gives you a Will Receipt. (source: https://www.circuitclerk.wincoil.gov/wills/)",
+        "The Winnebago County Law Library on the third floor of the courthouse is open to the public and has Westlaw terminals. (source: https://17thcircuit.illinoiscourts.gov/public-info/court-resources/law-library)"
+      ],
+      "nearby": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "rock-island",
+      "name": "Rock Island",
+      "county": "Rock Island County",
+      "probateCourt": {
+        "name": "Rock Island County Justice Center",
+        "address": "1317 Third Avenue, Rock Island, IL 61201",
+        "url": "https://rockislandcountyil.gov/787/Rock-Island-County-Probate"
+      },
+      "localNotes": [
+        "Probate walk-in is held daily from 9:00 to 9:30 a.m. in Courtroom 402 at the Rock Island County Justice Center, 1317 Third Avenue. (source: https://rockislandcountyil.gov/787/Rock-Island-County-Probate)",
+        "The Recorder's Office is at 1504 3rd Avenue, 2nd Floor, in Rock Island. (source: https://rockislandcountyil.gov/308/Recorders-Office)"
+      ],
+      "nearby": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "alton",
+      "name": "Alton",
+      "county": "Madison County",
+      "probateCourt": {
+        "name": "Madison County Courthouse (Circuit Court, 3rd Judicial Circuit)",
+        "address": "155 N. Main Street, Edwardsville, IL 62025",
+        "url": "https://www.illinoiscourts.gov/courts-directory/100/Madison-County-Courthouse/court/"
+      },
+      "localNotes": [
+        "The Madison County Circuit Clerk has an Alton satellite office at 1700 E. Broadway, open Tuesday and Friday only, 8 a.m. to 4 p.m. (source: https://www.madisoncountyil.gov/departments/circuit_clerk/)",
+        "Alton Township lists Senior Services Plus at 3512 McArthur, Alton, phone 618-465-3298. (source: https://www.altontownshipil.gov/resources)"
+      ],
+      "nearby": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "belleville",
+      "name": "Belleville",
+      "county": "St. Clair County",
+      "probateCourt": {
+        "name": "St. Clair County Courthouse (Circuit Court, 20th Judicial Circuit)",
+        "address": "10 Public Square, Belleville, IL 62220",
+        "url": "https://www.illinoiscourts.gov/courts-directory/109/St-Clair-County-Courthouse/court/"
+      },
+      "localNotes": [
+        "Belleville is the St. Clair County seat. The courthouse, Circuit Clerk and Recorder of Deeds are at 10 Public Square. (source: https://www.illinoiscourts.gov/courts-directory/109/St-Clair-County-Courthouse/court/)",
+        "The St. Clair County Office on Aging is at 201 North Church Street, Belleville, phone (618) 234-4410. (source: https://www.stclaircountyil.gov/departments/office-on-aging)"
+      ],
+      "nearby": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "naperville",
+      "name": "Naperville",
+      "county": "DuPage County",
+      "probateCourt": {
+        "name": "DuPage County Judicial Center",
+        "address": "505 N. County Farm Road, Wheaton, IL 60187",
+        "url": "https://www.illinoiscourts.gov/courts-directory/7/DuPage-County-Courthouse/court/"
+      },
+      "localNotes": [
+        "The City's senior resources page lists DuPage County Community Services at 630-407-6500, ext. 2, and Will County Seniors at 815-723-9713. It also lists the Social Service Unit of the Naperville Police at 630-420-6666. (source: https://www.naperville.il.us/services/senior-services-and-resources/)",
+        "The City's legal assistance page for seniors lists Prairie State Legal Services, which it describes as free legal services for people over 60 and low-income people. It also lists DuPage Legal Aid. (source: https://www.naperville.il.us/services/senior-services-and-resources/legal-assistance/)"
+      ],
+      "nearby": [
+        "wheaton",
+        "aurora"
+      ],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "st-charles",
+      "name": "St. Charles",
+      "county": "Kane County",
+      "localNotes": [
+        "The Kane County Circuit Clerk's main office is at 540 South Randall Road in St. Charles. The phone is 630-232-3413. (source: https://cic.countyofkane.org)",
+        "The Kane County Law Library is on the second floor of the Judicial Center, 37W777 IL Route 38, St. Charles. The phone is 630-406-7126. (source: https://www.kclawlibrary.org/Pages/i-am-representing-myself.aspx)"
+      ],
+      "nearby": [
+        "geneva"
+      ],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "geneva",
+      "name": "Geneva",
+      "county": "Kane County",
+      "localNotes": [
+        "The Kane County Courthouse is at 100 S. Third Street in Geneva. The page does not say which location hears probate. (source: https://www.illinois16thjudicialcircuit.org/Pages/courtAddresses.aspx)",
+        "The Kane County Recorder and the Assessment Office are in the Government Center, Building C, 719 S. Batavia Ave., Geneva. (source: https://clerk.kanecountyil.gov/Elections/Documents/GovernmentGuide.pdf)"
+      ],
+      "nearby": [
+        "st-charles"
+      ],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "yorkville",
+      "name": "Yorkville",
+      "county": "Kendall County",
+      "localNotes": [
+        "The Kendall County Circuit Clerk is at 807 W. John St. in Yorkville. The phone is 630-553-4183. (source: https://www.kendallcountyil.gov/offices/circuit-clerk/probate-deceased)",
+        "The Kendall County Recorder's Office is at 502 S. Main St. in Yorkville. The phone is 630-553-4112. (source: https://www.kendallcountyil.gov/offices/county-clerk-recorder)"
+      ],
+      "nearby": [
+        "aurora"
+      ],
+      "updated": "2026-10-26"
     }
   ]
 }

@@ -10,6 +10,7 @@ import { audit } from "@/server/audit/log";
 import { assertCan, canOnLead, leadAccess, readableVisibilities, requireMfa, type LeadAccess } from "@/server/auth/policy";
 import type { Db } from "@/server/db";
 import { clientSummary, summarizePayments, type PaymentStatusSummary } from "@/lib/retainerPlan";
+import { maskEmail } from "@/lib/people";
 import { MATTER_LABELS } from "@/server/services/leads";
 import { organizerSummaryForLead, type OrganizerSummaryView } from "@/server/services/familyPlan";
 import type {
@@ -25,6 +26,7 @@ import type {
   Intake,
   Lead,
   PaymentRecord,
+  SignatureRecord,
   Task,
 } from "@/server/types";
 
@@ -52,6 +54,7 @@ export interface CaseHeader {
   leadId: string;
   name: string;
   matterType: string;
+  matterKey: Lead["matterType"];
   location: string;
   urgent: boolean;
   score: number;
@@ -71,6 +74,12 @@ export interface CaseHeader {
 /** An engagement with its payments, status and the plain-language summary an attorney can share with the client. */
 export interface EngagementView extends Engagement {
   payments: PaymentRecord[];
+  /** Built-in e-sign signatures: who signed, when, and the document hash they bound to */
+  signatures: Pick<SignatureRecord, "id" | "signerRole" | "expectedName" | "typedName" | "signedAt" | "documentSha256">[];
+  /** The firm template version the letter came from */
+  templateName?: string;
+  /** Joint representation, staff view: where the second client's own invite goes ("r•••@example.com") */
+  spouseEmailHint?: string;
   paymentStatus: PaymentStatusSummary;
   clientSummary?: { headline: string; lines: string[] };
 }
@@ -204,6 +213,7 @@ export async function buildCaseView(db: Db, actor: Actor, leadId: string, now = 
     // Before acceptance the name appears only inside the conflict card, which exists to be checked.
     name: access === "conflict_card" ? "Prospective client" : `${person?.firstName ?? ""} ${person?.lastName ?? ""}`.trim(),
     matterType: MATTER_LABELS[lead.matterType],
+    matterKey: lead.matterType,
     location: lead.county ? `${lead.county} County, ${lead.state}` : lead.state,
     urgent: lead.urgent,
     score: lead.score.score,
@@ -256,9 +266,17 @@ export async function buildCaseView(db: Db, actor: Actor, leadId: string, now = 
     s.engagement = await Promise.all(
       shown.map(async (e): Promise<EngagementView> => {
         const payments = (await db.payments.list(undefined, { engagementId: e.id })).sort((a, b) => a.createdAt.localeCompare(b.createdAt));
+        const signatures = (await db.signatures.list(undefined, { engagementId: e.id }))
+          .sort((a, b) => a.signedAt.localeCompare(b.signedAt))
+          .map(({ id, signerRole, expectedName, typedName, signedAt, documentSha256 }) => ({ id, signerRole, expectedName, typedName, signedAt, documentSha256 }));
+        const template = !client && e.templateId ? await db.retainerTemplates.get(e.templateId) : undefined;
+        const spouse = !client && e.spousePersonId ? await db.persons.get(e.spousePersonId) : undefined;
         return {
           ...e,
           payments,
+          signatures,
+          spouseEmailHint: spouse?.email ? maskEmail(spouse.email) : undefined,
+          templateName: template ? `${template.name} v${template.version}` : undefined,
           paymentStatus: summarizePayments(e.paymentPlan, payments),
           clientSummary: e.packageSelection && e.paymentPlan ? clientSummary(e.packageSelection, e.paymentPlan) : undefined,
         };

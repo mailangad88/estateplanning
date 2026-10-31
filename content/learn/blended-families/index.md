@@ -146,6 +146,50 @@ Start with an honest list of who you want to provide for and in what order. Then
 
 Related life situations have their own pages: [estate planning after divorce](/learn/life-stages/estate-planning-after-divorce), [estate planning for unmarried couples](/learn/life-stages/estate-planning-for-unmarried-couples), and [estate planning after a spouse dies](/learn/life-stages/estate-planning-after-spouse-dies). If you are planning with a partner you have not married, the rules differ significantly, because unmarried partners have no automatic inheritance rights at all.
 
+## More questions people ask
+
+To lock part of your estate for your children while your spouse still has support, read [how an A-B trust works in a second marriage](/learn/blended-families/a-b-trust-for-a-second-marriage).
+
+For the joint-and-survivor rule and a first spouse's QDRO, see [what happens to your pension if you remarry](/learn/blended-families/pension-in-a-second-marriage-survivor-benefits).
+
+If you worry about a challenge, [can my stepchildren contest my will](/learn/blended-families/can-stepchildren-contest-a-will-in-a-blended-family) explains who has standing and how to make the plan hold up.
+
+When one spouse will run a trust that the children inherit later, [naming a spouse as trustee for your kids' inheritance](/learn/blended-families/can-my-spouse-be-trustee-for-my-children-from-a-first-marriage) covers the conflict and four safer setups.
+
+If you want a stepchild to inherit as a legal child, [adopting an adult stepchild](/learn/blended-families/adopting-an-adult-stepchild-to-make-them-an-heir) explains how adult adoption works in Illinois and New Jersey and what it can cost your spouse.
+
+When the family company is the main asset, [leaving a business to your children while providing for a second spouse](/learn/blended-families/leaving-a-business-to-your-children-and-providing-for-a-second-spouse) covers voting splits, trusts and insurance.
+
+If you already have an agreement and want to loosen or cancel it, [can a prenup be changed after marriage](/learn/blended-families/can-a-prenup-be-changed-after-marriage) covers the signed-writing rule, enforcement and the 401(k) consent trap.
+
+To stop your money from ending up with a child's or spouse's in-laws, [keeping your inheritance from passing to in-laws](/learn/blended-families/keeping-an-inheritance-from-passing-to-in-laws) explains trusts and final beneficiaries.
+
+If your spouse develops memory loss, [when your spouse has dementia and you have children from before](/learn/blended-families/when-your-spouse-has-dementia-and-you-have-children-from-before) explains who decides, how care is paid for and how to protect both families.
+
+To decide on the split itself, [how much to leave a second spouse versus your children](/learn/blended-families/how-much-to-leave-a-second-spouse-versus-your-children) compares three common models and shows how to test them with real numbers.
+
+To see which relatives the law counts, [who counts as an heir in a blended family](/learn/blended-families/who-counts-as-an-heir-in-a-blended-family) covers half-siblings, adoption, children born outside marriage and step-grandchildren.
+
+When a spouse, children and stepchildren all want a say, [who should make decisions for you in a blended family](/learn/blended-families/decision-makers-in-a-blended-family) sorts out agents, executors and guardians.
+
+To keep family property in the right branch, [keeping an inheritance separate in a blended family](/learn/blended-families/keeping-an-inheritance-separate-in-a-blended-family) covers a child's divorce, the house and the family business.
+
+To keep a second marriage from turning into a family dispute, see [how to prevent inheritance fights in a blended family](/learn/blended-families/preventing-inheritance-fights-in-a-blended-family).
+
+For larger estates, a [spousal lifetime access trust in a blended family](/learn/blended-families/spousal-lifetime-access-trust-blended-family) shows how to support a new spouse while locking in the remainder for your children, and where the divorce risk bites.
+
+If your documents predate your second marriage, [what happens if you remarry and never update your will](/learn/blended-families/remarried-without-updating-your-will) explains the default rules and when a trust is worth it.
+
+If you are wondering whether a spouse can be left out entirely, [the elective share and disinheriting a spouse](/learn/blended-families/spouse-elective-share-and-disinheriting-a-spouse) explains the minimum share most states give a surviving spouse and how a waiver works.
+
+For 401(k)s and IRAs, [retirement accounts in a second marriage](/learn/blended-families/retirement-accounts-in-a-second-marriage) covers spousal consent, splitting the account and the tax traps for children.
+
+To give children cash while a spouse keeps the house, see [life insurance in a blended family](/learn/blended-families/life-insurance-in-a-blended-family).
+
+Couples deciding between one trust or two can compare them in [joint vs. separate trusts for a second marriage](/learn/blended-families/joint-vs-separate-trusts-for-remarriage).
+
+If you want your spouse to live in the home for life and your children to inherit it, [a life estate for a surviving spouse](/learn/blended-families/life-estate-for-a-surviving-spouse) shows how it works and where it fails.
+
 ## How we can help
 
 Every blended family has its own mix of relationships and assets, and the best plan comes from understanding those first. Our attorneys can review what you have, explain what your state's rules would do by default, and prepare documents that provide for your spouse and your children. Begin with the [plan finder](/plan-finder) or book a consultation to talk through your situation.
