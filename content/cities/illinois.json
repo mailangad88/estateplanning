@@ -307,6 +307,210 @@
         "aurora"
       ],
       "updated": "2026-10-26"
+    },
+    {
+      "slug": "springfield",
+      "name": "Springfield",
+      "county": "Sangamon County",
+      "localNotes": [
+        "AgeLinc, the Area Agency on Aging for this region, is at 2731 S. MacArthur Blvd., Springfield, phone (217) 787-9234 or (800) 252-2918. Its site lists help with benefit access and with Medicare Part D enrollment. (source: https://www.agelinc.org)",
+        "Land of Lincoln Legal Aid's Northern Regional Office is at 1010 South Second Street, Springfield, phone (217) 529-8400. It lists Sangamon among the counties it serves. (source: https://lincolnlegal.org/locations/)",
+        "Sangamon County's Treasurer runs a Senior Citizens Real Estate Tax Deferral program for people 65 and older, who may defer all or part of their real estate taxes. (source: https://sangamonil.gov/departments/s-z/treasurer/senior-citizens-real-estate-tax-deferral)"
+      ],
+      "nearby": [
+        "alton",
+        "decatur"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "peoria",
+      "name": "Peoria",
+      "county": "Peoria County",
+      "localNotes": [
+        "The Peoria Township Assessor is at 427 W. Main Street, Peoria, phone (309) 324-7459, open Monday to Friday, 8:00 to 4:30. The page describes a $5,000 senior exemption at age 65 that requires signing up, and a Senior Assessment Freeze with a $75,000 income limit for 2026. (source: https://peoriatownshipil.com/officials/assessor/)",
+        "Central Illinois Agency on Aging, the Area Agency on Aging for Peoria County, is at 700 Hamilton Blvd., Peoria, phone (309) 674-2071. Its site lists information and assistance and Senior Medicare Patrol fraud-prevention outreach. (source: https://www.agecentral.org)"
+      ],
+      "nearby": [
+        "bloomington"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "champaign",
+      "name": "Champaign",
+      "county": "Champaign County",
+      "localNotes": [
+        "Land of Lincoln Legal Aid's Eastern Regional Office is at 302 North First Street, Champaign, phone (217) 356-1351. It lists Champaign and 14 other counties, including Macon and Vermilion, as its service area. (source: https://lincolnlegal.org/locations/)",
+        "The Champaign County Assessment Office, at 102 E. Main Street, Urbana, phone 217-384-3760, offers a $5,000 Senior Homestead Exemption and a Senior Assessment Freeze. (source: https://www.champaigncountyil.gov/ccao/exemptions.php)"
+      ],
+      "nearby": [
+        "decatur",
+        "danville"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "bloomington",
+      "name": "Bloomington",
+      "county": "McLean County",
+      "localNotes": [
+        "The City of Bloomington Township Assessor is at 607 S. Gridley, Suite A, Bloomington, phone (309) 434-2890. The township office is Suite B, phone 309-434-2730. (source: https://bloomingtoncitytownship.org/services/additional-resources/)",
+        "East Central Illinois Area Agency on Aging is at 1003 Maple Hill Road, Bloomington, phone 309-829-2065. It is the Area Agency on Aging for McLean, Champaign, Macon and Vermilion counties, among others. (source: https://ilaging.illinois.gov/forprofessionals/aaa-list.html)",
+        "For senior property tax exemptions, call the McLean County Supervisor of Assessments at 309-888-5130. The Treasurer, at 309-888-5180, handles the Senior Citizen Tax Deferral program. (source: https://www.mcleancountyil.gov/406/Senior-Citizen-Tax-Information)"
+      ],
+      "nearby": [
+        "peoria"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "decatur",
+      "name": "Decatur",
+      "county": "Macon County",
+      "localNotes": [
+        "Land of Lincoln Legal Aid has a Decatur office at 1620 South Taylorville Road, phone (217) 859-7320, a satellite of its Champaign office. Its list of counties served includes Macon. (source: https://lincolnlegal.org/locations/)",
+        "The Macon County Recorder is at 141 South Main Street, Room 201, Decatur, phone 217-424-1359, and records deeds, mortgages and liens. (source: https://maconcounty.illinois.gov/departments/recorder)",
+        "The Macon County Supervisor of Assessments, at 141 South Main Street, Room 401, Decatur, phone 217-424-1364, lists the Senior Citizens Homestead Exemption, the Senior Assessment Freeze and the Senior Tax Deferral program. (source: https://maconcounty.illinois.gov/departments/supervisor-of-assessments/)"
+      ],
+      "nearby": [
+        "champaign",
+        "springfield",
+        "bloomington"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "quincy",
+      "name": "Quincy",
+      "county": "Adams County",
+      "localNotes": [
+        "The Quincy Township Assessor is at 706 Maine Street, Quincy, phone 217-228-4505, open Monday to Friday, 8:00 AM to 4:00 PM. The page says exemptions are handled by the Adams County Supervisor of Assessments, not the Township Assessor. (source: https://www.quincyil.gov/Government/Quincy-Township/Quincy-Township-Assessor)",
+        "Land of Lincoln Legal Aid has a Quincy office at 926 Broadway Street, Suite C, phone (217) 617-4300. It lists Adams among the counties it serves. (source: https://lincolnlegal.org/locations/)",
+        "West Central Illinois Area Agency on Aging, the Area Agency on Aging for Adams County, lists a mailing address of 639 York Street, Suite 333, Quincy, phone 217-223-7904. (source: https://ilaging.illinois.gov/forprofessionals/aaa-list.html)"
+      ],
+      "nearby": [
+        "springfield"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "danville",
+      "name": "Danville",
+      "county": "Vermilion County",
+      "localNotes": [
+        "CRIS Healthy Aging is at 309 N Franklin Street, Danville, phone (217) 443-2999, open Monday to Friday, 8:00 AM to 4:00 PM. Its site lists Adult Protective Services, Senior Information Services and a Care Coordination Unit for Vermilion County. (source: https://www.agestrong.org)",
+        "Call the Vermilion County Assessment Office at 217-554-1940 to have a Senior Citizens Homestead Exemption application mailed to you. (source: https://www.vercounty.org/supervisor-of-assessments/exemption-information/)",
+        "The Vermilion County Recorder's standard document fee is $69.00 for deeds, mortgages and releases, effective July 1, 2023. (source: https://www.vercounty.org/recorder/recording-fees/)"
+      ],
+      "nearby": [
+        "champaign"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "elgin",
+      "name": "Elgin",
+      "county": "Kane County",
+      "localNotes": [
+        "Elgin Township's main building is at 729 S. McLean Blvd., Elgin, and its Supervisor's Office can be reached at (847) 741-2045, Monday to Friday, 8:00 a.m. to 4:00 p.m. The township lists senior programs including a Senior Utility Assistance Application, a Lending Closet and Ride in Kane. (source: https://elgintownship.com/?p=62)",
+        "The Illinois Department on Aging senior center list shows Senior Services Associates at 101 South Grove, Elgin, IL 60120, phone 847-741-0404. (source: https://ilaging.illinois.gov/content/dam/soi/en/web/aging/resources/documents/seniorcenters.pdf)",
+        "The Kane County senior homestead exemption lowers assessed value by $8,000 for owners age 65 or older. Call the Kane County Assessment Office at 630-208-3818. (source: https://assessments.kanecountyil.gov/Pages/Senior-Homestead.aspx)"
+      ],
+      "nearby": [
+        "st-charles",
+        "geneva",
+        "aurora"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "edwardsville",
+      "name": "Edwardsville",
+      "county": "Madison County",
+      "localNotes": [
+        "Edwardsville Township is at 300 W. Park, Edwardsville, IL 62025, phone (618) 656-0292. Its Senior Services Network page, marked coming soon, lists categories such as health insurance and medical assistance, tax relief assistance, elder justice and abuse, and veterans assistance. (source: https://edwardsvilletownship.com/community-services/senior-services)",
+        "The Madison County Circuit Clerk's main office is in the Madison County Courthouse at 155 N. Main Street, Edwardsville, open Monday to Friday, 8:30 a.m. to 4:30 p.m. Probate falls under civil cases, which must go through an approved e-filing provider. (source: https://www.madisoncountyil.gov/departments/circuit_clerk/)",
+        "Madison County offers a $5,000 Senior Citizens Homestead Exemption for owners age 65 or older. The assessment office phone is (618) 296-6200. (source: https://www.madisoncountyil.gov/departments/chief_county_assesment_office/available_exemptions.php)"
+      ],
+      "nearby": [
+        "alton",
+        "belleville"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "carbondale",
+      "name": "Carbondale",
+      "county": "Jackson County",
+      "localNotes": [
+        "The Illinois Department on Aging lists Senior Adult Services at 409 North Springer Street, Carbondale, IL 62901, phone 618-457-4151. (source: https://ilaging.illinois.gov/content/dam/soi/en/web/aging/resources/documents/seniorcenters.pdf)",
+        "The Egyptian Area Agency on Aging, 200 E. Plaza Dr., Carterville, IL 62918, phone (618) 985-8311, serves Jackson County and 12 other southern counties. Its listed services include the Senior Health Insurance Program (SHIP), Adult Protective Services, Legal Assistance and Ombudsman. (source: https://egyptianaaa.org/senior-centers/)",
+        "The Jackson County Circuit Clerk is at 1001 Walnut Street, Murphysboro, open Monday to Friday, 8:00 a.m. to 4:00 p.m., main number (618) 687-7300. Probate is listed as a department you can ask for by phone. (source: https://jacksoncoilcircuitclerk.gov/contact-us/)"
+      ],
+      "nearby": [
+        "edwardsville"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "kankakee",
+      "name": "Kankakee",
+      "county": "Kankakee County",
+      "localNotes": [
+        "Kankakee County probate filings are handled at the Main Circuit Clerk's Office, Room 209, 450 E. Court Street, Kankakee, IL 60901, phone 815-936-5700. (source: https://kankakeecountyil.gov/502/County-Clerk-of-the-Circuit-Court)",
+        "The Supervisor of Assessments is at 189 East Court Street, Kankakee, phone 815-937-2945. Its page lists forms for the general and senior homestead exemptions, the Senior Assessment Freeze (PTAX-340), and the disabled veteran and returning veterans exemptions. (source: https://www.k3county.net/184/Supervisor-of-Assessments-Office)",
+        "The Illinois Department on Aging lists Kankakee County Community Services, Inc. at 657 East Court Street, Kankakee, IL 60901, with a Senior Center line of 815-933-7883. (source: https://ilaging.illinois.gov/content/dam/soi/en/web/aging/resources/documents/seniorcenters.pdf)"
+      ],
+      "nearby": [
+        "joliet"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "dekalb",
+      "name": "DeKalb",
+      "county": "DeKalb County",
+      "localNotes": [
+        "DeKalb Township's Assessor's Office is at 122 North 1st Street, Ste C/D, DeKalb, IL 60115, phone (815) 758-5454, open weekdays 8:30 a.m. to 4:30 p.m. The page says it can help with information about your property tax assessment. (source: https://dekalbtownship.org/)",
+        "The DeKalb Township Supervisor's Office is at 2323 South 4th Street, DeKalb, phone (815) 758-8282, and the township offers help with financial assistance. (source: https://dekalbtownship.org/)",
+        "The Illinois Department on Aging lists the DeKalb Senior Citizens Center at 330 Grove Street, DeKalb, IL 60115, phone 815-758-4718. (source: https://ilaging.illinois.gov/content/dam/soi/en/web/aging/resources/documents/seniorcenters.pdf)"
+      ],
+      "nearby": [
+        "aurora",
+        "st-charles"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "crystal-lake",
+      "name": "Crystal Lake",
+      "county": "McHenry County",
+      "localNotes": [
+        "The Illinois Department on Aging lists Grand Oaks Active Adults Center at 1401 W. Route 176, Crystal Lake, IL 60014, phone 815-358-2414. (source: https://ilaging.illinois.gov/content/dam/soi/en/web/aging/resources/documents/seniorcenters.pdf)",
+        "The City of Crystal Lake's phone list gives the McHenry County Assessments office as (815) 334-4290 and Veteran's Assistance as (815) 334-4229. (source: https://www.crystallake.org/our-community/resident-information/important-phone-numbers-to-know)",
+        "McHenry County probate filings must be e-filed unless there is good cause, and wills cannot be e-filed. The original will goes to the Civil windows in Room 136 of the courthouse in Woodstock. (source: https://www.mchenrycircuitclerk.org/court-information/probate/)"
+      ],
+      "nearby": [
+        "waukegan",
+        "schaumburg"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "downers-grove",
+      "name": "Downers Grove",
+      "county": "DuPage County",
+      "localNotes": [
+        "The Illinois Department on Aging lists the Downers Grove Township Senior Center at 4341 Saratoga Avenue, Downers Grove, IL 60515, phone 630-719-6670. (source: https://ilaging.illinois.gov/content/dam/soi/en/web/aging/resources/documents/seniorcenters.pdf)",
+        "The Village of Downers Grove has a full-time Social Worker who can refer residents to services including help with elder abuse, and offers a Senior Resource Guide and a taxi coupon program with a 50% subsidy for eligible participants. (source: https://www.downers.us/socialservicesreferrals)",
+        "The DuPage senior homestead exemption reduces equalized assessed value by up to $8,000. The Supervisor of Assessments is at 421 N. County Farm Road, Wheaton, and 630-407-5858 is listed for questions about acceptable ownership documents. (source: https://www.dupagecounty.gov/government/departments/supervisor_of_assessments/exemptions/senior_citizens/)"
+      ],
+      "nearby": [
+        "wheaton",
+        "naperville"
+      ],
+      "updated": "2026-10-31"
     }
   ]
 }

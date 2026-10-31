@@ -17,7 +17,9 @@
         "Both Atlantic Surrogate offices are open Monday to Friday, 8:30am to 4:00pm, and appointments are encouraged. (source: https://www.atlanticcountynj.gov/government/county-government/surrogate-s-office)",
         "The Atlantic City Surrogate office phone is (609) 343-2341. (source: https://www.atlanticcountynj.gov/government/county-government/surrogate-s-office)"
       ],
-      "cities": [],
+      "cities": [
+        "atlantic-city"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -40,7 +42,11 @@
         "The Bergen Surrogate's office has said it continues to probate estates and file court documents remotely, as set up in April 2020, per a Notice to the Bar dated 7/20/21. Call (201) 336-6700 to ask what is available now. (source: https://bergencountysurrogate.com)",
         "Bergen's Surrogate FAQ says personal checks are accepted only if drawn on a New Jersey bank with a New Jersey address, and that Surrogate certificates are generally not issued the same day. (source: https://surrogate.bergencountynj.gov/faq.html)"
       ],
-      "cities": [],
+      "cities": [
+        "hackensack",
+        "paramus",
+        "teaneck"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -78,7 +84,10 @@
         "Camden's posted fees (page last modified October 25, 2024) are $100 to probate a will of up to two pages and $125 for administration. (source: https://www.camdencounty.com/service/surrogate-court/forms-and-fees/)",
         "The Camden County Clerk is in Room 102, 520 Market Street, Camden, and offers e-recording and cover-sheet guidance for deeds. (source: https://www.camdencounty.com/service/county-clerk/)"
       ],
-      "cities": [],
+      "cities": [
+        "cherry-hill",
+        "camden"
+      ],
       "updated": "2026-10-26",
       "recorder": {
         "name": "Camden County Clerk",
@@ -128,7 +137,9 @@
         "In Cumberland, staff prepare probate documents and then schedule a signing appointment where you bring photo ID and a check or cash. (source: https://cumberlandcountynj.gov/surrogate)",
         "Cumberland has a second Surrogate office at 2745 S Delsea Dr, Vineland, by appointment only, phone (856) 453-4808. (source: https://cumberlandcountynj.gov/surrogate)"
       ],
-      "cities": [],
+      "cities": [
+        "vineland"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -146,7 +157,9 @@
         "The Essex County Surrogate's Court is in the Martin Luther King, Jr. Justice Building, 495 Dr. Martin Luther King, Jr. Blvd., Room 212, Newark. The county's help page lists the main phone as 973-621-4900. (source: https://wecare.essexcountynj.org/support/solutions/articles/69000804721-office-of-the-surrogate)",
         "The Essex County Clerk's office says to record a deed, mortgage or lien, contact the Register of Deeds and Mortgages at 973-621-4960. (source: https://www.essexclerk.com/)"
       ],
-      "cities": [],
+      "cities": [
+        "newark"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -188,7 +201,11 @@
         "The New Jersey Courts directory (revised 08/2025) lists the Hudson County Surrogate at 583 Newark Ave., 4th Floor, Room 407, Jersey City, phone 201-795-6378. (source: https://www.njcourts.gov/sites/default/files/forms/12217_nj_surrogates.pdf)",
         "The Hudson County Clerk's office is at 257 Cornelison Avenue, 4th Floor, Jersey City; the listed phone is 201-369-3470. (source: https://www.hudsoncountyclerk.org/)"
       ],
-      "cities": [],
+      "cities": [
+        "jersey-city",
+        "hoboken",
+        "bayonne"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -226,7 +243,11 @@
         "The Mercer County Clerk's Records Room is open to the public 8:30 a.m. to 4:30 p.m. on weekdays. (source: https://www.mercercounty.org/government/county-clerk/office-services/land-records)",
         "Mercer's land records page lists a deed recording cost of $43 for the first page and $10 for each additional page. (source: https://www.mercercounty.org/government/county-clerk/office-services/land-records)"
       ],
-      "cities": [],
+      "cities": [
+        "princeton",
+        "trenton",
+        "hamilton-township"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -248,7 +269,11 @@
         "The Middlesex County Clerk records deeds at 75 Bayard Street, 4th Floor, New Brunswick, weekdays 8:30 AM to 4:10 PM; appointments are not required but appointment holders get priority. (source: https://www.middlesexcountynj.gov/government/departments/department-of-community-services/office-of-county-clerk/recording-services)",
         "Paper land recordings in Middlesex need a paper cover sheet or a $20 indexing charge applies; e-recording is also offered. (source: https://www.middlesexcountynj.gov/government/departments/department-of-community-services/office-of-county-clerk/recording-services)"
       ],
-      "cities": [],
+      "cities": [
+        "edison",
+        "woodbridge",
+        "new-brunswick"
+      ],
       "updated": "2026-10-26",
       "recorder": {
         "name": "Middlesex County Clerk",
@@ -297,7 +322,9 @@
         "Morris County's fee sheet lists probate of a two-page will, including one certificate, at $100, with each additional will page $5 and a certified copy of a will (up to two pages) $50. The sheet shows no effective date. (source: https://www.morriscountynj.gov/files/sharedassets/public/v/2/departments/surrogate/fees-morris-county.pdf)",
         "The Morris County Surrogate's Court accepts fees by cash or check only and does not accept credit cards. (source: https://surrogate.morriscountynj.gov/)"
       ],
-      "cities": [],
+      "cities": [
+        "morristown"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -318,7 +345,11 @@
         "The Ocean County Clerk's main location is 118 Washington Street, Toms River, and a 24-hour drop box in front of the courthouse accepts real-estate documents in a sealed envelope, processed the next business day. (source: https://clerk.co.ocean.nj.us/frmRecordsForms)",
         "The Ocean County Clerk accepts electronic recording through NJCountyRecording.com and lists a recording fee schedule dated January 2026. (source: https://clerk.co.ocean.nj.us/frmRecordsForms)"
       ],
-      "cities": [],
+      "cities": [
+        "toms-river",
+        "lakewood",
+        "brick"
+      ],
       "updated": "2026-10-26",
       "recorder": {
         "name": "Ocean County Clerk",
@@ -344,7 +375,11 @@
         "Passaic's Surrogate lists a minimum probate fee of $100.00 for a two-page will with one certificate, with each additional certificate $5. Payment is by cash or check only, and the page shows no date for the fee. (source: https://www.passaiccountynj.org/government/passaic-county-surrogate/will-probate)",
         "The Passaic Surrogate's page says letters cannot be issued until at least 11 days after the date of death, though the executor can start the paperwork at any time after death. (source: https://www.passaiccountynj.org/government/passaic-county-surrogate/will-probate)"
       ],
-      "cities": [],
+      "cities": [
+        "paterson",
+        "clifton",
+        "wayne"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -401,7 +436,10 @@
         "Union County also has a Surrogate office in the Colleen Fraser Building, 300 North Avenue East, Westfield, open Mondays, Wednesdays and Fridays by appointment only. (source: https://ucnj.org/surrogate/contact-us/)",
         "The Union County Surrogate's contact page links to an online appointment booking page. (source: https://ucnj.org/surrogate/contact-us/)"
       ],
-      "cities": [],
+      "cities": [
+        "elizabeth",
+        "union-township"
+      ],
       "updated": "2026-10-26"
     },
     {
