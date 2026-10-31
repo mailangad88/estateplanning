@@ -19,7 +19,7 @@ import type { PageApproval } from "@/server/types";
 import type { AutomationState } from "@/server/db";
 import type { FactVerification } from "@/lib/facts";
 import { familyPlanBodySchema, summarizePlan } from "@/lib/familyPlan";
-import type { FamilyPlan, FamilyPlanBodyRecord, PlanLinkUse, PlanMfaRecord, PlanSession } from "@/server/types";
+import type { FamilyPlan, FamilyPlanBodyRecord, PlanLinkUse, PlanMfaRecord, PlanSession, RetainerTemplate, SignatureRecord, StoredBlob } from "@/server/types";
 import { configureFamilyPlan, consumeLink, saveOwnPlan } from "@/server/services/familyPlan";
 import {
   deletePlanAccount, exportPlanAccount, listActivity, listDevices, regenerateRecoveryCodes, resolvePlanSession, revokePlanSession, verifyPlanSignIn,
@@ -158,7 +158,25 @@ const fixtures = {
         { n: 2, kind: "installment", amountCents: 150000, dueOn: "2026-11-06", status: "late" },
       ],
     },
+    templateId: "rt_1@1", spouseName: "Bob Lee", spousePersonId: "p3",
+    attachment: { name: "Standard terms.pdf", storageKey: "retainer-templates/f1/abc.pdf", sha256: "a".repeat(64), sizeBytes: 1234 },
+    documentSha256: "d".repeat(64),
   } satisfies Required<Engagement>,
+  retainerTemplates: {
+    id: "rt_1@1", firmId: "f1", templateKey: "rt_1", version: 1, name: "Will package retainer", matterTypes: ["new_plan", "update_plan"],
+    body: "Agreement for {{client_names}}", bodySha256: "b".repeat(64),
+    pdf: { name: "Standard terms.pdf", storageKey: "retainer-templates/f1/abc.pdf", sha256: "a".repeat(64), sizeBytes: 1234 },
+    status: "approved", defaultFor: ["new_plan"], createdBy: "u-attorney", createdAt: T0, approvedBy: "u-attorney", approvedByName: "Lawyer lw1", approvedAt: T0,
+  } satisfies Required<RetainerTemplate>,
+  signatures: {
+    id: "sig1", engagementId: "e1", leadId: "l1", firmId: "f1", signerRole: "client", expectedName: "Ann Lee", typedName: "ann lee",
+    signedByUserId: "u-client", signerPersonId: "p1", signedAt: T0, ipPrefix: "203.0.113.0/24", userAgent: "Safari on iPhone", letterSha256: "c".repeat(64),
+    attachmentSha256: "a".repeat(64), documentSha256: "d".repeat(64), consentVersion: "esign-consent-2026-10-v1", consentAt: T0, intent: true,
+  } satisfies Required<SignatureRecord>,
+  blobs: {
+    id: "retainer-templates/f1/abc.pdf", sha256: "a".repeat(64), contentType: "application/pdf", sizeBytes: 9, data: Buffer.from("%PDF-1.4\n").toString("base64"),
+    firmId: "f1", leadId: "l1", createdBy: "u-attorney", createdAt: T0,
+  } satisfies Required<StoredBlob>,
   payments: {
     id: "pay1", engagementId: "e1", leadId: "l1", firmId: "f1", installmentNo: 1, amountCents: 100000, account: "trust", status: "paid",
     provider: "lawpay", providerPaymentId: "lp_1", linkUrl: "https://pay.example/lp_1", createdAt: T0, paidAt: T0,
@@ -313,6 +331,7 @@ let admin: Pool; // superuser, for seeding schema and raw checks
 let pool: Pool;
 let service: PgDb;
 const as = (s: PgSession) => createPgDb({ pool, session: s });
+const platformRead = () => as({ userId: "u-admin", role: "platform_admin" });
 const platformDb = {
   get feeRuleVersions() { return as({ userId: "u-admin", role: "platform_admin" }).feeRuleVersions; },
   get factVerifications() { return as({ userId: "u-admin", role: "platform_admin" }).factVerifications; },
@@ -360,8 +379,12 @@ suite("postgres integration", () => {
     await service.lawyers.insert(lawyer("lw2", "f2"));
     await service.persons.insert(person);
     await service.persons.insert({ ...person, id: "p2", email: "p2@x.test", householdId: undefined });
+    await service.persons.insert({ ...person, id: "p3", firstName: "Bob", email: "bob@x.test" }); // Ann's spouse, the second client on e1
     await service.users.insert(fixtures.users);
     await service.users.insert({ id: "u-intake", email: "intake@x.test", name: "Intake", role: "intake", active: true });
+    // the two clients on e1, each with their own login (signature rows are bound to them)
+    await service.users.insert({ id: "u-client", email: "client@x.test", name: "Ann Lee", role: "client", firmId: "f1", personId: "p1", active: true });
+    await service.users.insert({ id: "u-spouse", email: "spouse@x.test", name: "Bob Lee", role: "client", firmId: "f1", personId: "p3", active: true });
     await service.leads.insert(lead);
     await service.leads.insert(offerLead);
     await service.comments.insert({ ...fixtures.comments, id: "c1", parentId: undefined });
@@ -462,6 +485,82 @@ suite("postgres integration", () => {
     }
     await expect(service.pageApprovals.update(next.id, { note: "edited" })).rejects.toThrow();
     await expect(attorney.pageApprovals.update(next.id, { note: "edited" })).rejects.toThrow();
+  });
+
+  maybe("retainer templates: each firm sees and writes only its own; only its attorney approves, as themselves; wording is immutable", async () => {
+    const attorney = as({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" });
+    const firmAdmin = as({ userId: "u-fa", role: "firm_admin", firmId: "f1" });
+    const otherAttorney = as({ userId: "u-other", role: "attorney", firmId: "f2", lawyerId: "lw2" });
+    const otherAdmin = as({ userId: "u-fa2", role: "firm_admin", firmId: "f2" });
+    const draft: RetainerTemplate = {
+      ...fixtures.retainerTemplates, id: "rt_1@2", version: 2, status: "draft", defaultFor: [], createdBy: "u-fa",
+      approvedBy: undefined, approvedByName: undefined, approvedAt: undefined, pdf: undefined,
+    };
+    await firmAdmin.retainerTemplates.insert(draft);
+    // another firm sees nothing and cannot write into this firm
+    expect(await otherAttorney.retainerTemplates.list()).toEqual([]);
+    expect(await otherAdmin.retainerTemplates.get("rt_1@1")).toBeUndefined();
+    await expect(otherAdmin.retainerTemplates.insert({ ...draft, id: "rt_x@1", templateKey: "rt_x", version: 1, createdBy: "u-fa2" })).rejects.toThrow();
+    await expect(otherAttorney.retainerTemplates.update("rt_1@2", { status: "retired" })).rejects.toThrow(/not found or not permitted/);
+    // paralegals, intake, marketing, clients: no writes; only same-firm paralegals read
+    expect((await as({ userId: "u-p", role: "paralegal", firmId: "f1", supportsLawyerIds: ["lw1"] }).retainerTemplates.list()).length).toBe(2);
+    for (const role of ["intake", "marketing", "client"] as const) {
+      const s = as({ userId: `u-${role}`, role, firmId: "f1", personId: "p1" });
+      expect(await s.retainerTemplates.list(), role).toEqual([]);
+    }
+    // nobody inserts an already-approved row in a user session
+    await expect(attorney.retainerTemplates.insert({ ...fixtures.retainerTemplates, id: "rt_1@9", version: 9, createdBy: "u-attorney" })).rejects.toThrow();
+    // a firm admin cannot approve; an attorney cannot approve in someone else's name
+    await expect(firmAdmin.retainerTemplates.update("rt_1@2", { status: "approved", approvedBy: "u-fa", approvedAt: T0 })).rejects.toThrow(/attorney/);
+    await expect(attorney.retainerTemplates.update("rt_1@2", { status: "approved", approvedBy: "u-admin", approvedAt: T0 })).rejects.toThrow(/attorney/);
+    // the wording of a saved version never changes, not even for the service role
+    await expect(attorney.retainerTemplates.update("rt_1@2", { body: "changed" })).rejects.toThrow(/new version/);
+    await expect(service.retainerTemplates.update("rt_1@1", { body: "changed" })).rejects.toThrow(/new version/);
+    await expect(service.retainerTemplates.remove("rt_1@1")).rejects.toThrow();
+    const approved = await attorney.retainerTemplates.update("rt_1@2", { status: "approved", approvedBy: "u-attorney", approvedByName: "Lawyer lw1", approvedAt: T0 });
+    expect(approved.status).toBe("approved");
+    // status only moves forward
+    await expect(attorney.retainerTemplates.update("rt_1@2", { status: "draft" })).rejects.toThrow(/cannot move/);
+    await attorney.retainerTemplates.update("rt_1@1", { status: "superseded" });
+    expect((await platformRead().retainerTemplates.list()).length).toBe(2);
+  });
+
+  maybe("signature records and stored blobs are insert-only; clients read their own signatures, nobody reads blobs directly", async () => {
+    await expect(service.signatures.update("sig1", { typedName: "someone else" })).rejects.toThrow(/permission denied/);
+    // even the table owner is stopped by the trigger
+    await expect(admin.query("UPDATE engagement_signatures SET typed_name = 'x'")).rejects.toThrow(/append-only/);
+    await expect(admin.query("DELETE FROM stored_blobs")).rejects.toThrow(/append-only/);
+    await expect(service.signatures.remove("sig1")).rejects.toThrow(/permission denied/);
+    await expect(service.signatures.insert({ ...fixtures.signatures, id: "sig-dup" })).rejects.toThrow(); // one per signer role
+    await expect(service.blobs.update("retainer-templates/f1/abc.pdf", { data: "eA==" })).rejects.toThrow(/permission denied/);
+    const attorney = as({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" });
+    expect((await attorney.signatures.list()).map((s) => s.id)).toEqual(["sig1"]); // before the second client signs below
+    await expect(attorney.signatures.insert({ ...fixtures.signatures, id: "sig2", signerRole: "spouse" })).rejects.toThrow();
+    // each signer signs only their own slot, from their own login, even for the service role
+    const spouseSig = { ...fixtures.signatures, id: "sig-sp", signerRole: "spouse" as const, expectedName: "Bob Lee", typedName: "Bob Lee" };
+    await expect(service.signatures.insert({ ...spouseSig, signedByUserId: "u-client", signerPersonId: "p1" })).rejects.toThrow(/second client/);
+    await expect(service.signatures.insert({ ...spouseSig, signedByUserId: "u-client", signerPersonId: "p3" })).rejects.toThrow(/own client login/);
+    await expect(service.signatures.insert({ ...spouseSig, signedByUserId: "u-attorney", signerPersonId: "p1" })).rejects.toThrow(/own client login/);
+    await expect(service.signatures.insert({ ...spouseSig, signerRole: "client", id: "sig-x", signedByUserId: "u-spouse", signerPersonId: "p3" })).rejects.toThrow(/only the client/);
+    const client = as({ userId: "u-client", role: "client", personId: "p1" });
+    expect((await client.signatures.list()).map((s) => s.id)).toEqual(["sig1"]);
+    // the second client (no access to the lead itself) sees nothing until they sign, then their own row
+    const spouse = as({ userId: "u-spouse", role: "client", personId: "p3" });
+    expect(await spouse.signatures.list()).toEqual([]);
+    await service.signatures.insert({ ...spouseSig, signedByUserId: "u-spouse", signerPersonId: "p3" });
+    expect((await spouse.signatures.list()).map((s) => s.id)).toEqual(["sig-sp"]);
+    const otherClient = as({ userId: "u-c2", role: "client", personId: "p2" });
+    expect(await otherClient.signatures.list()).toEqual([]);
+    const other = as({ userId: "u-other", role: "attorney", firmId: "f2", lawyerId: "lw2" });
+    expect(await other.signatures.list()).toEqual([]);
+    // the second client's person record: visible to whoever sees the engagement, and to themselves
+    expect((await attorney.persons.get("p3"))?.firstName).toBe("Bob");
+    expect((await spouse.persons.get("p3"))?.firstName).toBe("Bob");
+    expect(await other.persons.get("p3")).toBeUndefined();
+    for (const s of [attorney, client, as({ userId: "u-admin", role: "platform_admin" })]) {
+      await expect(s.blobs.list()).rejects.toThrow(); // no grant at all for app_user
+    }
+    expect((await service.blobs.get("retainer-templates/f1/abc.pdf"))?.sha256).toBe("a".repeat(64));
   });
 
   maybe("where pushdown", async () => {

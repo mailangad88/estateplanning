@@ -2,7 +2,7 @@
  * Small helpers shared by the engagement flow (engagement.ts) and the retainer payment
  * flow (retainerPayments.ts), kept apart so the two modules do not import each other.
  */
-import { randomUUID } from "node:crypto";
+import { createHash, randomUUID } from "node:crypto";
 import type { Db } from "@/server/db";
 import { STAGES, type Engagement, type EngagementStatus, type Lead, type Stage } from "@/server/types";
 
@@ -16,6 +16,17 @@ export async function leadFor(db: Db, e: Engagement): Promise<Lead> {
   const lead = await db.leads.get(e.leadId);
   if (!lead) throw new Error(`lead not found: ${e.leadId}`);
   return lead;
+}
+
+export const sha256 = (s: string) => createHash("sha256").update(s).digest("hex");
+
+/**
+ * The hash a signature binds to: the letter text and the attached agreement PDF (if any) together.
+ * Changing a single character of either changes it.
+ */
+export function documentHash(letter: string, attachmentSha256?: string): { letterSha256: string; documentSha256: string } {
+  const letterSha256 = sha256(letter);
+  return { letterSha256, documentSha256: sha256(`engagement-document-v1\nletter:${letterSha256}\nattachment:${attachmentSha256 ?? "none"}`) };
 }
 
 /** Moves the lead stage forward only. */
