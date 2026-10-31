@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { EXPLAINERS } from "@/explainers/data";
-import { CardGrid, PageHeader } from "@/components/ui";
+import { CardGrid, Cta, PageHeader } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Animated estate planning explainers",
@@ -12,7 +12,8 @@ export default function ExplainersIndex() {
   return (
     <>
       <PageHeader kicker="Watch and learn" art="SpotVideoCall" title="Explainers" lead="Two-minute animations of how the main pieces work, each with a full written transcript." />
-      <CardGrid items={EXPLAINERS.map((e) => ({ href: `/explainers/${e.slug}`, title: e.title, description: e.description, tag: "Animated" }))} />
+      <CardGrid media="art" items={EXPLAINERS.map((e) => ({ href: `/explainers/${e.slug}`, title: e.title, description: e.description, tag: "Animated" }))} />
+      <Cta from="explainers" />
     </>
   );
 }

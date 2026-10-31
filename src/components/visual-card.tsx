@@ -47,10 +47,11 @@ function mediaFor(item: CardItem, mode: CardMedia): { media: Media; tone: Tone }
     const v = videos.find((x) => x.slug === slug);
     if (v?.poster) return { media: { kind: "poster", src: v.poster }, tone: t.tone };
   }
+  if (mode === "art") return { media: { kind: "art", src: illustrationSrc(t.art) }, tone: t.tone };
   if (section === "tools") return { media: { kind: "icon", icon: "Calculator" }, tone: t.tone };
   if (section === "quizzes") return { media: { kind: "icon", icon: "ListChecks" }, tone: t.tone };
   const artSections = new Set(["guides", "compare", "life-events", "estate-planning-for", "learn"]);
-  if (mode === "art" || (mode === "auto" && artSections.has(section))) return { media: { kind: "art", src: illustrationSrc(t.art) }, tone: t.tone };
+  if (mode === "auto" && artSections.has(section)) return { media: { kind: "art", src: illustrationSrc(t.art) }, tone: t.tone };
   return { media: { kind: "icon", icon: t.icon }, tone: t.tone };
 }
 

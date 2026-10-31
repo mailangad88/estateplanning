@@ -5,6 +5,8 @@ import { getLessons } from "@/lib/content";
 import { Breadcrumbs, Prose, ReviewNote } from "@/components/ui";
 import { PageHero } from "@/components/page-hero";
 import { EmailCapture } from "@/components/capture";
+import CtaBox from "@/components/CtaBox";
+import { KitFaqs } from "@/components/page-kit";
 
 type Props = { params: Promise<{ day: string }> };
 
@@ -43,6 +45,8 @@ export default async function LessonPage({ params }: Props) {
       ) : (
         <p><Link className="button" href="/plan-finder">Book your consult</Link></p>
       )}
+      <KitFaqs url={`/course/${l.day}`} topic={l.title} context={l.task ?? ""} categories={["Getting started"]} />
+      <CtaBox from="course" />
       <EmailCapture kind="course" interest="7-day-course" title="Get the lessons by email instead" cta="Email me the course" success="You're in. Lesson 1 is on its way." />
     </article>
   );

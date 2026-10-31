@@ -3,6 +3,7 @@ import Link from "next/link";
 import { firm, SERVED_AND, SERVED_OR } from "@/config/firm";
 import { Cta, PageHeader } from "@/components/ui";
 import { Testimonials } from "@/components/Testimonials";
+import { KitFaqs, TopicDiagram } from "@/components/page-kit";
 
 export const metadata: Metadata = {
   title: "About us",
@@ -32,8 +33,11 @@ export default function About() {
         <li>Your information is confidential and shared only with the attorney who may represent you.</li>
         <li>Our intake team are not lawyers and do not give legal advice; every plan is designed and signed off by an attorney.</li>
       </ul>
+      <h2>What happens when you reach out</h2>
+      <TopicDiagram topic="planning process step by step" />
       <Testimonials />
-      <Cta />
+      <KitFaqs url="/about" topic="referral attorney consult" categories={["Working with us", "Cost and process"]} title="Questions about how this works" />
+      <Cta from="about" />
     </>
   );
 }

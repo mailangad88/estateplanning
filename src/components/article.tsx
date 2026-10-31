@@ -11,6 +11,8 @@ import MagnetOptIn from "@/components/MagnetOptIn";
 import { MAGNET_FORMATS, magnetsFor, pillarOf } from "@/lib/magnets";
 import { quizzesFor } from "@/lib/quizzes";
 import { toolFor } from "@/config/tools";
+import CtaBox from "@/components/CtaBox";
+import { KitFaqs } from "@/components/page-kit";
 
 export interface RelatedLink {
   href: string;
@@ -97,7 +99,12 @@ export function ArticlePage(props: {
         widget={tool?.slug}
       />
       {props.after}
-      <FaqList faqs={props.faqs ?? []} />
+      {props.faqs?.length ? (
+        <FaqList faqs={props.faqs} />
+      ) : (
+        <KitFaqs url={props.path} topic={props.title} context={`${props.description} ${props.section.name}`} categories={["Getting started"]} />
+      )}
+      {!props.sensitive && (lead || props.magnet) && <CtaBox topic={props.title.length <= 40 ? props.title : undefined} from={props.section.path.replace(/^\//, "") || "article"} />}
       {lead && !props.sensitive ? (
         <section className="magnet-callout">
           <MagnetOptIn
@@ -114,7 +121,7 @@ export function ArticlePage(props: {
       ) : props.magnet ? (
         <EmailCapture kind="magnet" interest={props.magnet.interest} title={props.magnet.title} body={props.magnet.body} cta={props.magnet.cta} sensitive={props.sensitive} />
       ) : (
-        <Cta />
+        <Cta from={props.section.path.replace(/^\//, "") || "article"} />
       )}
       {related.length > 0 && (
         <section>

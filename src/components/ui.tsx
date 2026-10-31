@@ -72,12 +72,15 @@ export function CardGrid({ items, media }: { items: CardItem[]; media?: CardMedi
   return <VisualCardGrid items={items} media={media} />;
 }
 
-export function Cta({ title = "Talk it through with an attorney", body }: { title?: string; body?: string }) {
+export function Cta({ title = "Talk it through with an attorney", body, from = "cta" }: { title?: string; body?: string; from?: string }) {
   return (
     <aside className="cta">
       <strong>{title}</strong>
       <p>{body ?? "Answer a few questions and we will set up a consult. You get a flat-fee quote before anything is signed."}</p>
-      <Link className="button" href="/plan-finder">Start the plan finder</Link>
+      <p className="cta-actions">
+        <Link className="button" href="/plan-finder">Start the plan finder</Link>
+        <Link className="button secondary" href={`/book?from=${from}`}>Book a consult</Link>
+      </p>
     </aside>
   );
 }

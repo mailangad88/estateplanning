@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { DECISIONS, decisionPath } from "@/config/decisions";
 import { PageHero } from "@/components/page-hero";
-import { Breadcrumbs, CardGrid } from "@/components/ui";
+import { Breadcrumbs, CardGrid, Cta } from "@/components/ui";
+import { KitFaqs } from "@/components/page-kit";
 import { graph, itemListSchema } from "@/lib/schema";
 import { JsonLd } from "@/lib/seo";
 
@@ -28,8 +29,10 @@ export default function DecideHub() {
       />
       <CardGrid
         items={DECISIONS.map((d) => ({ href: decisionPath(d.slug), title: d.h1, description: d.description, tag: `${d.options.length} options compared` }))}
-        media="icon"
+        media="art"
       />
+      <KitFaqs url="/decide" topic="will trust" context="which choose difference compare probate power attorney" categories={["Getting started", "Trusts"]} title="Questions people ask before they choose" />
+      <Cta from="decide" title="Still not sure which one fits?" body="An attorney can look at your family and property and tell you which option fits, with a flat-fee quote first." />
       <JsonLd data={graph(itemListSchema(TITLE, DECISIONS.map((d) => ({ name: d.h1, url: decisionPath(d.slug) }))))} />
     </>
   );

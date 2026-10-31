@@ -21,11 +21,11 @@ export default function BlogIndex() {
         return (
           <section key={pillar}>
             <h2>{g ? g.title : "More questions"}</h2>
-            <CardGrid items={items.map((p) => ({ href: `/blog/${p.slug}`, title: p.title, description: p.description }))} />
+            <CardGrid media="art" items={items.map((p) => ({ href: `/blog/${p.slug}`, title: p.title, description: p.description }))} />
           </section>
         );
       })}
-      <Cta />
+      <Cta from="blog" />
     </>
   );
 }

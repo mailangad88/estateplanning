@@ -22,6 +22,8 @@ import WhoInherits from "@/components/tools/WhoInherits";
 import AssetSorter from "@/components/tools/AssetSorter";
 import InheritanceTimeline from "@/components/tools/InheritanceTimeline";
 import StatePrefill from "@/components/tools/StatePrefill";
+import CtaBox from "@/components/CtaBox";
+import { KitFaqs } from "@/components/page-kit";
 
 const COMPONENTS: Record<string, React.ComponentType> = {
   "estate-tax-estimator": EstateTax,
@@ -84,6 +86,8 @@ export default async function ToolPage({ params }: Props) {
       <div className="answer"><strong>In short</strong>{t.answer}</div>
       {STATE_AWARE[slug] ? <StatePrefill tool={STATE_AWARE[slug]} /> : <Tool />}
       <p className="notice">Estimates are for education only and are not legal, tax or financial advice.</p>
+      <KitFaqs url={`/tools/${t.slug}`} topic={t.title} context={`${t.description} ${t.answer}`} categories={["Cost and process", "Getting started"]} />
+      <CtaBox topic={t.title.length <= 40 ? t.title : undefined} from={`tool-${t.slug}`} />
       <h2>More free tools</h2>
       <CardGrid items={TOOLS.filter((x) => x.slug !== slug).slice(0, 4).map((x) => ({ href: `/tools/${x.slug}`, title: x.title, description: x.description }))} />
       <JsonLd

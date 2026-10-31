@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { videos } from "@/components/visuals/video";
 import { PageHero } from "@/components/page-hero";
-import { Breadcrumbs } from "@/components/ui";
+import { Breadcrumbs, Cta } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Estate planning explainer videos",
@@ -45,6 +45,7 @@ export default function VideosPage() {
           ))}
         </ul>
       )}
+      <Cta from="videos" />
     </>
   );
 }
