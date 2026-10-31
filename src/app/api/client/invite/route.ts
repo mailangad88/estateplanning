@@ -6,7 +6,7 @@ export async function POST(request: Request) {
     const { leadId } = await readJson<{ leadId?: string }>(request);
     if (!leadId) throw new Error("Choose a case");
     const { link } = await inviteClient(db, actor, leadId);
-    // TODO: send the link by email or text through the nurture layer instead of returning it to the attorney's screen.
+    // The attorney copies this link and sends it to the client. Sending it automatically is a later step.
     return { link };
   });
 }

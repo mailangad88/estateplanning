@@ -3,7 +3,7 @@ import type { VideoEntry } from "./types";
 
 /**
  * schema.org VideoObject for one explainer. `siteUrl` is the absolute origin
- * (e.g. https://example.com) because Google requires absolute URLs.
+ * (e.g. https://familyfutureplanning.com) because Google requires absolute URLs.
  * `pageUrl` is the page the video is embedded on.
  */
 export function videoObjectJsonLd(v: VideoEntry, siteUrl: string, pageUrl?: string) {
@@ -34,6 +34,6 @@ export function videoObjectJsonLd(v: VideoEntry, siteUrl: string, pageUrl?: stri
 
 /** Site origin for absolute URLs in structured data. Set NEXT_PUBLIC_SITE_URL in production. */
 export function siteUrl(): string {
-  // Same origin as canonicals and the sitemap (placeholder until the domain is set), never a guessed domain.
+  // Same origin as canonicals and the sitemap (NEXT_PUBLIC_SITE_URL, else the live domain), never a guessed domain.
   return SITE_URL;
 }

@@ -47,9 +47,9 @@ export function LivingTrustFlow({ caption, bare, step }: DiagramProps) {
           Assets you retitled
         </Text>
         <Wrap x={64} y={462} w={380} size={16} text="Pass through the trust to your beneficiaries, privately, without probate." />
-        <Pill x={64} y={512} text="Home" fill="surface" ink="accentDeep" />
-        <Pill x={132} y={512} text="Bank account" fill="surface" ink="accentDeep" />
-        <Pill x={256} y={512} text="Brokerage" fill="surface" ink="accentDeep" />
+        <Pill x={64} y={512} text="Home" fill="surface" ink="accentDeep" size={14} />
+        <Pill x={129} y={512} text="Bank account" fill="surface" ink="accentDeep" size={14} />
+        <Pill x={259} y={512} text="Brokerage" fill="surface" ink="accentDeep" size={14} />
 
         <Card x={490} y={376} w={430} h={190} fill="sand" border="sandDeep" dashed />
         <Icon name="courthouse" x={514} y={396} size={40} color="clay" tint="clayTint" />
@@ -57,8 +57,8 @@ export function LivingTrustFlow({ caption, bare, step }: DiagramProps) {
           Assets left in your own name
         </Text>
         <Wrap x={514} y={462} w={380} size={16} text="Even with a trust, these may still need probate. A will can catch them." />
-        <Pill x={514} y={512} text="Forgotten account" fill="surface" ink="muted" />
-        <Pill x={672} y={512} text="Vehicle" fill="surface" ink="muted" />
+        <Pill x={514} y={512} text="Forgotten account" fill="surface" ink="muted" size={14} />
+        <Pill x={684} y={512} text="Vehicle" fill="surface" ink="muted" size={14} />
       </S>
     </Figure>
   );

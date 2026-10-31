@@ -23,6 +23,8 @@ faqs:
     a: "A child who was in the womb at death inherits as if born during the parent's life (755 ILCS 5/2-3). A child conceived later from genetic material has to meet strict rules, including written consent and notice to the estate within set deadlines."
   - q: "What if a person dies in Illinois with no relatives at all?"
     a: "The statute sends real estate to the county where it sits. It sends most personal property to the county of the decedent's residence, and other property to the state, which delivers it to the State Treasurer (755 ILCS 5/2-1(h)). This only happens when no spouse and no known kin can be found."
+  - q: "Do beneficiary designations override a will in Illinois?"
+    a: "For the account they cover, yes in practice. Life insurance, retirement accounts and payable on death accounts pass to the named beneficiary outside probate, so neither a will nor the intestacy rules control them. Check your designations whenever you update your will, so the two say the same thing."
 related:
   - "illinois"
   - "illinois/illinois-will-requirements"

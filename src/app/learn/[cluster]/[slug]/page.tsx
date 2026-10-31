@@ -17,7 +17,7 @@ import { suggestEmbeds } from "@/lib/page-embeds";
 import { toolFor } from "@/config/tools";
 import { isSensitiveLibraryPage, magnetsForLibrary, siteLinksFor, toolsFor } from "@/lib/site-links";
 import MagnetOptIn from "@/components/MagnetOptIn";
-import { PageMedia } from "@/components/visuals/PageMedia";
+import { PageMedia, pageDiagramNames } from "@/components/visuals/PageMedia";
 import { SensitiveMarker } from "@/components/capture";
 import { MAGNET_FORMATS } from "@/lib/magnets";
 import { articleSchema, breadcrumbSchema, faqSchema, graph } from "@/lib/schema";
@@ -79,6 +79,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
         title={a.title}
         sensitive={sensitive}
         explicit={a.visuals}
+        excludeDiagrams={pageDiagramNames(a.url)}
         downloads={moreOffers.map((o) => ({ slug: o.slug, title: o.title, promise: o.promise }))}
         tools={toolsFor(clusterSlug).map((t) => ({ href: t.url, title: t.title }))}
         related={siteLinksFor(clusterSlug).map((l) => ({ href: l.url, title: l.title, kind: l.kind }))}

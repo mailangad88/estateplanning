@@ -160,6 +160,86 @@ Many families provide care themselves, and the time and money involved are real.
 
 Other pillars worth reading alongside this one: [power of attorney](/learn/power-of-attorney), [advance healthcare directives](/learn/healthcare-directives), [trusts](/learn/trusts) and [special needs planning](/learn/special-needs).
 
+## More questions people ask
+
+To turn a daily rate, a monthly rent or an hourly wage into one comparable number, [how much a nursing home costs per month](/learn/elder-care/how-much-does-a-nursing-home-cost-per-month) walks through a sample budget for each type of care.
+
+If a parent's mail is piling up or a hospital will not talk to you, [how to help manage a parent's finances and medical care](/learn/elder-care/how-to-help-manage-your-parents-finances-and-medical-care-before-a-crisis) explains what you can do with no paperwork and which documents to get first.
+
+If you are weighing a policy that pays a death benefit if care is never needed against one with a lower premium, [hybrid long-term care insurance vs traditional policies](/learn/elder-care/hybrid-long-term-care-insurance-vs-traditional-policies) compares them side by side.
+
+To see how the rate, the bed and the resident's monthly income change when Medicaid takes over, read [private pay vs Medicaid in a nursing home](/learn/elder-care/private-pay-vs-medicaid-in-a-nursing-home).
+
+If a house sale is how the bills get paid, [capital gains when you sell a home to pay for nursing home care](/learn/elder-care/capital-gains-when-you-sell-a-home-to-pay-for-nursing-home-care) explains the main-home exclusion, how a facility stay counts, and why a gift can cost more tax than a sale.
+
+To compare your choices side by side, [spend down vs. gifting vs. an asset protection trust](/learn/elder-care/spend-down-vs-gifting-vs-asset-protection-trust-for-medicaid) shows how each works on the same family's numbers and timeline.
+
+To choose between two ways of moving the house, [life estate deed vs irrevocable trust for Medicaid](/learn/elder-care/life-estate-deed-vs-irrevocable-trust-for-medicaid) compares cost, control, taxes and estate recovery.
+
+If you have an animal, [what happens to your pet when you move into a nursing home or assisted living](/learn/elder-care/what-happens-to-your-pet-when-you-move-to-a-nursing-home-or-assisted-living) covers facility policies, a caregiver letter, pet trusts and how Medicaid treats pet money.
+
+For the mechanics of paying a relative, [payroll and taxes when a family member is your paid caregiver](/learn/elder-care/payroll-and-taxes-when-a-family-member-is-your-paid-caregiver) explains W-2s, Schedule H and withholding.
+
+To protect a parent from scams without taking over, [how to freeze a parent's credit and put safeguards on their accounts](/learn/elder-care/how-to-freeze-a-parents-credit-and-put-safeguards-on-their-accounts) gives a step-by-step sequence.
+
+To see how a penalty is counted and what half-a-loaf gifting really involves, read [how long the Medicaid penalty lasts](/learn/elder-care/half-a-loaf-gifting-and-how-long-the-medicaid-penalty-lasts).
+
+If the spouse at home dies first, [what happens to Medicaid when the healthy spouse dies first](/learn/elder-care/what-happens-to-medicaid-when-the-healthy-spouse-dies-first) explains the will, beneficiary forms and trust that protect the survivor's coverage.
+
+Thinking about borrowing against the house to pay for care? [Reverse mortgage or Medicaid planning](/learn/elder-care/reverse-mortgage-vs-medicaid-planning) covers how Medicaid sees the money and what a nursing home move does to the loan.
+
+For the gray areas that decide eligibility, [what counts as a countable asset for Medicaid](/learn/elder-care/what-counts-as-a-countable-asset-for-medicaid) covers trusts, joint accounts, second homes and unreachable property.
+
+Veterans can read [VA benefits and Medicaid at the same time](/learn/elder-care/va-benefits-and-medicaid-at-the-same-time) for taxes, income counting and the pension reduction in a Medicaid nursing home.
+
+If a policy premium jumps, lapses or a claim is refused, [what to do when long-term care insurance premiums rise or a claim is denied](/learn/elder-care/when-long-term-care-insurance-premiums-rise-or-a-claim-is-denied) lays out the options and appeal steps.
+
+For people with little savings or no relatives, [what happens if you need long-term care and have no money or no family](/learn/elder-care/what-happens-if-you-need-long-term-care-and-have-no-money-or-no-family) explains Medicaid, local help and who can act for you.
+
+Before leaving work to look after a parent, [should you quit your job to care for a parent](/learn/elder-care/should-you-quit-your-job-to-care-for-a-parent) covers leave options, getting paid, and reimbursing yourself safely.
+
+When the application is the next step, [how to apply for Medicaid for a parent](/learn/elder-care/how-to-apply-for-medicaid-for-a-parent) covers who can sign, what to gather and what to do after a denial.
+
+To sort out the settings and the bills, [assisted living, memory care, hospice and respite care](/learn/elder-care/assisted-living-memory-care-and-hospice-who-pays) shows what each is and who pays.
+
+If a parent is about to move across state lines or into a child's home, [what happens to Medicaid and the family's money](/learn/elder-care/moving-a-parent-in-with-you-or-to-another-state) covers residency, repaying family and the caregiver child rule.
+
+If you are counting on Medicare for a nursing home, [what Medicare covers for long-term care](/learn/elder-care/what-medicare-covers-for-long-term-care) explains the three-day rule, the 100-day limit and where coverage stops.
+
+For what happens to monthly income and savings after a move to care, see [Social Security, pensions and bank accounts in a nursing home](/learn/elder-care/income-and-bank-accounts-in-a-nursing-home).
+
+When it is time to pick a facility, [how to choose a nursing home and what rights a resident has](/learn/elder-care/choosing-a-nursing-home-and-knowing-your-rights) covers visits, admission agreements, discharge notices and complaints.
+
+If a parent is slipping but says no to help, [when a parent refuses help](/learn/elder-care/when-a-parent-refuses-help-or-is-not-safe-alone) explains capacity, evaluations and the legal options.
+
+To sort out who does what, [care managers, money managers and fiduciaries](/learn/elder-care/geriatric-care-managers-money-managers-and-fiduciaries) compares the roles and the legal authority each needs.
+
+If an admissions office hands your child a form to sign, [can a nursing home make my children pay](/learn/elder-care/can-a-nursing-home-make-my-children-pay) explains guarantors, responsible-party signatures and filial responsibility laws.
+
+For the weeks between admission and approval, [paying for a nursing home while waiting for Medicaid](/learn/elder-care/paying-for-a-nursing-home-while-waiting-for-medicaid) covers private pay, retroactive coverage, documents and appeals.
+
+Before you file, [tax breaks and traps when you pay for a parent's care](/learn/elder-care/tax-breaks-when-you-pay-for-a-parents-care) covers medical deductions, dependents, gift tax and the tax cost of selling or giving away a parent's house.
+
+Before handing money or a house to your children, read [whether you can give money or a house to your children before applying for Medicaid](/learn/elder-care/gifting-to-children-before-medicaid) for the penalty math and the gifts that are exempt.
+
+If a nursing home stay is already here, [Medicaid crisis planning](/learn/elder-care/medicaid-crisis-planning) explains what can still be done in the first weeks.
+
+To keep a parent at home with Medicaid help, [Medicaid home care waivers](/learn/elder-care/medicaid-home-care-waiver) covers who qualifies, waiting lists and whether a relative can be paid.
+
+When weighing help, [how much Medicaid planning costs and when an attorney is worth it](/learn/elder-care/medicaid-planning-attorney-cost) explains fee structures and do-it-yourself limits.
+
+For an asset-by-asset sort of what counts, see [what assets are exempt from Medicaid](/learn/elder-care/what-assets-are-exempt-from-medicaid).
+
+If you are wondering what the state can claim after a parent dies, [Medicaid estate recovery](/learn/elder-care/medicaid-estate-recovery) explains who is protected, what assets are reached and how a family can respond to a claim.
+
+When one spouse needs care and the other stays home, [how Medicaid works for a married couple](/learn/elder-care/medicaid-for-married-couples) explains the protected savings, income allowance and home.
+
+Couples with savings above the protected amount can read about the [Medicaid-compliant annuity](/learn/elder-care/medicaid-compliant-annuity), the rules it must meet and its risks.
+
+To see how an irrevocable trust can keep a home out of the Medicaid count, and where it fails, read about the [Medicaid asset protection trust](/learn/elder-care/medicaid-asset-protection-trust).
+
+If income above your state's cap is blocking Medicaid, the [income cap trust (Miller trust)](/learn/elder-care/income-cap-trust-miller-trust) explains how the monthly routine works.
+
 ## How we can help
 
 Long-term care planning depends on your state, your family and your timeline. Our attorneys can explain the rules that apply to you, help prepare the documents and walk through options with you or an aging parent. Use the [plan finder](/plan-finder) to see where to start, or book a consultation.

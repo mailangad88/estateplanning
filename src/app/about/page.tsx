@@ -1,29 +1,32 @@
 import type { Metadata } from "next";
-import { firm } from "@/config/firm";
+import Link from "next/link";
+import { firm, SERVED_AND, SERVED_OR } from "@/config/firm";
 import { Cta, PageHeader } from "@/components/ui";
 import { Testimonials } from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "About the firm",
-  description: "Who we are, who we help and how we work.",
+  title: "About us",
+  description: `Who we are, how the referral network works, and how we match you with an estate planning attorney in ${SERVED_OR}.`,
   alternates: { canonical: "/about" },
 };
 
 export default function About() {
   return (
     <>
-      <PageHeader kicker="About us" art="SpotVideoCall" title={`About ${firm.brandName}`} lead={`${firm.brandName} is the client education and intake team of ${firm.firmLegalName}.`} />
-      <h2>{firm.attorneyName}</h2>
-      <p>[Attorney bio, written from the brain-file interviews: why estate planning, who they help most, how they explain things, licensure, bar number {firm.barNumber}, education, community involvement. Include a short video introduction.]</p>
-      <ul>
-        <li>Admitted to practice: {firm.attorneyBio.licensedIn}</li>
-        <li>Education: {firm.attorneyBio.education}</li>
-        <li>{firm.attorneyBio.practiceFocus}</li>
-        {firm.attorneyBio.certification && <li>Certification: {firm.attorneyBio.certification}</li>}
-        {firm.attorneyBio.awards.map((a) => <li key={a}>{a}</li>)}
-      </ul>
+      <PageHeader
+        kicker="About us"
+        art="SpotVideoCall"
+        title={`About ${firm.brandName}`}
+        lead={`${firm.brandName} is a referral website. We match you with an appropriate estate planning attorney in our ${SERVED_AND} network.`}
+      />
+      <h2>Who is responsible for this site</h2>
+      <p>{firm.attorneyName} is the estate planning attorney responsible for this site.</p>
+      <p>
+        Read <Link href="/about-the-attorney">how we choose our attorneys</Link> and what to expect from your first call.
+      </p>
       <h2>How we work</h2>
       <ul>
+        <li>We are a referral website, not a law firm. The attorney we match you with gives the legal advice.</li>
         <li>Plain-English explanations, no jargon.</li>
         <li>A written flat-fee quote before you sign anything.</li>
         <li>Your information is confidential and shared only with the attorney who may represent you.</li>

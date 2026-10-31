@@ -220,7 +220,12 @@ CREATE TABLE engagements (
   reminders_sent       text[] NOT NULL DEFAULT '{}',
   document_ids         text[] NOT NULL DEFAULT '{}',
   package_selection    jsonb,                              -- {tierId, tierName, tierPriceCents, addOns[], totalCents}: attorney-set prices
-  payment_plan         jsonb                               -- {mode, totalCents, account, installments[{n, kind, amountCents, dueOn, status, paymentId, paidAt}]}
+  payment_plan         jsonb,                              -- {mode, totalCents, account, installments[{n, kind, amountCents, dueOn, status, paymentId, paidAt}]}
+  template_id          text,                               -- retainer_templates.id the letter was filled from; NULL = fallback letter
+  spouse_name          text,                               -- joint representation: the second client, who signs too
+  spouse_person_id     text REFERENCES persons(id),        -- the second client's own person (and client login); they sign only their own slot
+  attachment           jsonb,                              -- {name, storageKey, sha256, sizeBytes}: the firm's own agreement PDF
+  document_sha256      text                                -- binds letter + attachment; fixed at approval, recorded on every signature
 );
 CREATE INDEX engagements_lead_idx   ON engagements (lead_id);
 CREATE INDEX engagements_lawyer_idx ON engagements (lawyer_id, status);
@@ -583,6 +588,72 @@ CREATE TABLE plan_sessions (
 );
 CREATE INDEX plan_sessions_plan_idx ON plan_sessions (plan_id);
 
+-- A firm's own retainer (engagement letter) templates. One row per version; the wording of a row never
+-- changes once saved (retainer_template_guard). A version is used only after an attorney of the same firm
+-- approves it. The wording is the receiving attorney's responsibility.
+CREATE TABLE retainer_templates (
+  id              text PRIMARY KEY,                    -- template_key@version
+  firm_id         text NOT NULL REFERENCES firms(id),
+  template_key    text NOT NULL,
+  version         integer NOT NULL CHECK (version >= 1),
+  name            text NOT NULL,
+  matter_types    text[] NOT NULL DEFAULT '{}',
+  body            text NOT NULL,
+  body_sha256     text NOT NULL,
+  pdf             jsonb,                               -- {name, storageKey, sha256, sizeBytes}
+  status          text NOT NULL CHECK (status IN ('draft','approved','superseded','retired')),
+  default_for     text[] NOT NULL DEFAULT '{}',
+  created_by      text NOT NULL,
+  created_at      timestamptz NOT NULL,
+  approved_by     text,
+  approved_by_name text,
+  approved_at     timestamptz,
+  UNIQUE (template_key, version),
+  CHECK (status = 'draft' OR approved_by IS NOT NULL OR status = 'retired')
+);
+CREATE INDEX retainer_templates_firm_idx ON retainer_templates (firm_id, status);
+
+-- One electronic signature made with the built-in e-sign. Insert-only (forbid_mutation trigger, no UPDATE or
+-- DELETE grant): the typed name, time, IP prefix, device summary, the hashes of what was signed and the
+-- version of the electronic-records consent the signer agreed to.
+CREATE TABLE engagement_signatures (
+  id                 text PRIMARY KEY,
+  engagement_id      text NOT NULL REFERENCES engagements(id),
+  lead_id            text NOT NULL REFERENCES leads(id),
+  firm_id            text NOT NULL REFERENCES firms(id),
+  signer_role        text NOT NULL CHECK (signer_role IN ('client','spouse')),
+  expected_name      text NOT NULL,
+  typed_name         text NOT NULL,
+  signed_by_user_id  text NOT NULL REFERENCES users(id),
+  signer_person_id   text NOT NULL REFERENCES persons(id),  -- the person whose slot this is; checked by engagement_signature_signer_guard
+  signed_at          timestamptz NOT NULL,
+  ip_prefix          text,
+  user_agent         text,
+  letter_sha256      text NOT NULL,
+  attachment_sha256  text,
+  document_sha256    text NOT NULL,
+  consent_version    text NOT NULL,
+  consent_at         timestamptz NOT NULL,
+  intent             boolean NOT NULL CHECK (intent),
+  UNIQUE (engagement_id, signer_role)
+);
+CREATE INDEX engagement_signatures_lead_idx ON engagement_signatures (lead_id);
+
+-- Bytes the platform keeps: firm agreement PDFs and generated signed copies. Content is base64 text so the
+-- store needs nothing beyond Postgres; swap for object storage later without changing callers. Only the
+-- service role reads or writes it, after the policy.ts check; insert-only.
+CREATE TABLE stored_blobs (
+  id            text PRIMARY KEY,                      -- storage key
+  sha256        text NOT NULL,
+  content_type  text NOT NULL,
+  size_bytes    bigint NOT NULL CHECK (size_bytes >= 0),
+  data          text NOT NULL,
+  firm_id       text REFERENCES firms(id),
+  lead_id       text REFERENCES leads(id),
+  created_by    text NOT NULL,
+  created_at    timestamptz NOT NULL
+);
+
 -- Hash-chained, append-only (see src/server/audit/log.ts).
 CREATE TABLE audit_events (
   id            text PRIMARY KEY,
@@ -688,6 +759,85 @@ CREATE TRIGGER template_approvals_immutable BEFORE UPDATE OR DELETE ON template_
   FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
 CREATE TRIGGER page_approvals_immutable BEFORE UPDATE OR DELETE ON page_approvals
   FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
+CREATE TRIGGER engagement_signatures_immutable BEFORE UPDATE OR DELETE ON engagement_signatures
+  FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
+CREATE TRIGGER engagement_signatures_no_truncate BEFORE TRUNCATE ON engagement_signatures
+  FOR EACH STATEMENT EXECUTE FUNCTION forbid_mutation();
+CREATE TRIGGER stored_blobs_immutable BEFORE UPDATE OR DELETE ON stored_blobs
+  FOR EACH ROW EXECUTE FUNCTION forbid_mutation();
+
+-- Each signer signs only their own slot, from their own client login: the signing user must be a client whose
+-- person is the signer, and that person must be the lead's client (slot 'client') or the engagement's second
+-- client (slot 'spouse'). One person never fills both slots.
+CREATE FUNCTION engagement_signature_signer_guard() RETURNS trigger LANGUAGE plpgsql AS $$
+DECLARE
+  u_person text; u_role text; lead_person text; e_lead text; e_spouse text;
+BEGIN
+  SELECT person_id, role INTO u_person, u_role FROM users WHERE id = NEW.signed_by_user_id;
+  IF u_role IS DISTINCT FROM 'client' OR u_person IS DISTINCT FROM NEW.signer_person_id THEN
+    RAISE EXCEPTION 'a signature must be made by the signer''s own client login';
+  END IF;
+  SELECT lead_id, spouse_person_id INTO e_lead, e_spouse FROM engagements WHERE id = NEW.engagement_id;
+  SELECT person_id INTO lead_person FROM leads WHERE id = NEW.lead_id;
+  IF e_lead IS DISTINCT FROM NEW.lead_id THEN
+    RAISE EXCEPTION 'signature lead does not match the engagement';
+  END IF;
+  IF NEW.signer_role = 'client' AND NEW.signer_person_id IS DISTINCT FROM lead_person THEN
+    RAISE EXCEPTION 'only the client signs the client slot';
+  END IF;
+  IF NEW.signer_role = 'spouse' AND (e_spouse IS NULL OR NEW.signer_person_id IS DISTINCT FROM e_spouse OR e_spouse = lead_person) THEN
+    RAISE EXCEPTION 'only the second client signs the second client slot';
+  END IF;
+  RETURN NEW;
+END $$;
+CREATE TRIGGER engagement_signatures_signer_guard BEFORE INSERT ON engagement_signatures
+  FOR EACH ROW EXECUTE FUNCTION engagement_signature_signer_guard();
+
+-- Retainer templates: the wording of a saved version never changes, for anyone. Status only moves
+-- draft -> approved | retired and approved -> superseded | retired. In a user session only an attorney of the
+-- template's own firm approves, as themselves; nobody inserts a row that is already approved.
+CREATE FUNCTION retainer_template_guard() RETURNS trigger LANGUAGE plpgsql AS $$
+BEGIN
+  IF TG_OP = 'DELETE' THEN
+    RAISE EXCEPTION 'retainer templates are kept: retire one instead' USING ERRCODE = 'insufficient_privilege';
+  END IF;
+  IF TG_OP = 'INSERT' THEN
+    IF NEW.status <> 'draft' OR NEW.approved_by IS NOT NULL OR NEW.approved_at IS NOT NULL THEN
+      IF current_user = 'app_user' THEN
+        RAISE EXCEPTION 'a new retainer template version starts as a draft' USING ERRCODE = 'insufficient_privilege';
+      END IF;
+    END IF;
+    RETURN NEW;
+  END IF;
+  IF NEW.firm_id IS DISTINCT FROM OLD.firm_id OR NEW.template_key IS DISTINCT FROM OLD.template_key
+     OR NEW.version IS DISTINCT FROM OLD.version OR NEW.name IS DISTINCT FROM OLD.name
+     OR NEW.matter_types IS DISTINCT FROM OLD.matter_types OR NEW.body IS DISTINCT FROM OLD.body
+     OR NEW.body_sha256 IS DISTINCT FROM OLD.body_sha256 OR NEW.pdf IS DISTINCT FROM OLD.pdf
+     OR NEW.created_by IS DISTINCT FROM OLD.created_by OR NEW.created_at IS DISTINCT FROM OLD.created_at THEN
+    RAISE EXCEPTION 'a saved retainer template version cannot be edited: save a new version' USING ERRCODE = 'insufficient_privilege';
+  END IF;
+  IF NEW.status IS DISTINCT FROM OLD.status AND NOT (
+       (OLD.status = 'draft' AND NEW.status IN ('approved','retired'))
+    OR (OLD.status = 'approved' AND NEW.status IN ('superseded','retired'))
+  ) THEN
+    RAISE EXCEPTION 'retainer template status cannot move from % to %', OLD.status, NEW.status USING ERRCODE = 'insufficient_privilege';
+  END IF;
+  IF (NEW.approved_by IS DISTINCT FROM OLD.approved_by OR NEW.approved_at IS DISTINCT FROM OLD.approved_at
+      OR NEW.approved_by_name IS DISTINCT FROM OLD.approved_by_name) THEN
+    IF NOT (OLD.status = 'draft' AND NEW.status = 'approved') THEN
+      RAISE EXCEPTION 'approval is recorded once, when a draft is approved' USING ERRCODE = 'insufficient_privilege';
+    END IF;
+    IF current_user = 'app_user' AND NOT (app_role() = 'attorney' AND NEW.approved_by = app_user_id() AND NEW.firm_id = app_firm_id()) THEN
+      RAISE EXCEPTION 'only an attorney of the firm approves its retainer template, as themselves' USING ERRCODE = 'insufficient_privilege';
+    END IF;
+  END IF;
+  IF NEW.status = 'approved' AND NEW.approved_by IS NULL THEN
+    RAISE EXCEPTION 'an approved retainer template needs its approver' USING ERRCODE = 'insufficient_privilege';
+  END IF;
+  RETURN NEW;
+END $$;
+CREATE TRIGGER retainer_templates_guard BEFORE INSERT OR UPDATE OR DELETE ON retainer_templates
+  FOR EACH ROW EXECUTE FUNCTION retainer_template_guard();
 
 -- Only the assigned attorney approves an engagement (approve_engagement in policy.ts).
 -- Row policies cannot see which column changed, so a trigger guards it for app_user.
@@ -802,6 +952,9 @@ ALTER TABLE family_plan_bodies   ENABLE ROW LEVEL SECURITY;  ALTER TABLE family_
 ALTER TABLE plan_link_uses       ENABLE ROW LEVEL SECURITY;  ALTER TABLE plan_link_uses       FORCE ROW LEVEL SECURITY;
 ALTER TABLE plan_mfa             ENABLE ROW LEVEL SECURITY;  ALTER TABLE plan_mfa             FORCE ROW LEVEL SECURITY;
 ALTER TABLE plan_sessions        ENABLE ROW LEVEL SECURITY;  ALTER TABLE plan_sessions        FORCE ROW LEVEL SECURITY;
+ALTER TABLE retainer_templates   ENABLE ROW LEVEL SECURITY;  ALTER TABLE retainer_templates   FORCE ROW LEVEL SECURITY;
+ALTER TABLE engagement_signatures ENABLE ROW LEVEL SECURITY; ALTER TABLE engagement_signatures FORCE ROW LEVEL SECURITY;
+ALTER TABLE stored_blobs         ENABLE ROW LEVEL SECURITY;  ALTER TABLE stored_blobs         FORCE ROW LEVEL SECURITY;
 ALTER TABLE audit_events         ENABLE ROW LEVEL SECURITY;  ALTER TABLE audit_events         FORCE ROW LEVEL SECURITY;
 
 -- Workers (public intake form, e-sign webhooks, nurture engine, routing) are trusted
@@ -835,6 +988,9 @@ CREATE POLICY service_all ON family_plan_bodies   FOR ALL TO app_service USING (
 CREATE POLICY service_all ON plan_link_uses       FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON plan_mfa             FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON plan_sessions        FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON retainer_templates   FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON engagement_signatures FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON stored_blobs         FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_read ON fee_rule_versions   FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON fact_verifications  FOR SELECT TO app_service USING (true);
 CREATE POLICY service_read ON template_approvals FOR SELECT TO app_service USING (true);
@@ -869,7 +1025,9 @@ CREATE POLICY users_write ON users FOR ALL TO app_user  -- manage_users; firm ad
 
 -- persons: visible with a lead you can read beyond the offer card (leads RLS applies inside)
 CREATE POLICY persons_select ON persons FOR SELECT TO app_user
-  USING (id = app_person_id() OR EXISTS (SELECT 1 FROM leads l WHERE l.person_id = persons.id));
+  USING (id = app_person_id() OR EXISTS (SELECT 1 FROM leads l WHERE l.person_id = persons.id)
+         -- a second client on a joint engagement: visible to whoever can see that engagement (engagements RLS applies)
+         OR EXISTS (SELECT 1 FROM engagements e WHERE e.spouse_person_id = persons.id));
 CREATE POLICY persons_insert ON persons FOR INSERT TO app_user
   WITH CHECK (app_role() IN ('platform_admin','intake'));
 CREATE POLICY persons_update ON persons FOR UPDATE TO app_user
@@ -1057,6 +1215,24 @@ CREATE POLICY plan_sessions_owner ON plan_sessions FOR ALL TO app_user
   USING (app_role() = 'planner' AND plan_id = app_user_id())
   WITH CHECK (app_role() = 'planner' AND plan_id = app_user_id());
 
+-- retainer templates: a firm sees and writes only its own; platform admins read all. Attorneys and firm
+-- admins of the firm save versions; approval is the attorney's alone (retainer_template_guard).
+CREATE POLICY retainer_templates_select ON retainer_templates FOR SELECT TO app_user USING (
+  app_role() = 'platform_admin'
+  OR (app_role() IN ('firm_admin','attorney','paralegal') AND firm_id = app_firm_id())
+);
+CREATE POLICY retainer_templates_insert ON retainer_templates FOR INSERT TO app_user
+  WITH CHECK (app_role() IN ('firm_admin','attorney') AND firm_id = app_firm_id() AND created_by = app_user_id());
+CREATE POLICY retainer_templates_update ON retainer_templates FOR UPDATE TO app_user
+  USING (app_role() IN ('firm_admin','attorney') AND firm_id = app_firm_id())
+  WITH CHECK (app_role() IN ('firm_admin','attorney') AND firm_id = app_firm_id());
+
+-- signature records: read by whoever sees the whole case or is the client on it. Written by the service
+-- role after the policy.ts check; nobody updates or deletes them.
+CREATE POLICY engagement_signatures_select ON engagement_signatures FOR SELECT TO app_user
+  USING (lead_access(lead_id) IN ('full','client') OR (app_role() = 'client' AND signer_person_id = app_person_id()));
+-- stored_blobs: no app_user policy at all. The server reads bytes as the service role after its own check.
+
 -- audit: insert-only for everyone; read by platform_admin, and firm_admin for their leads.
 -- A planner reads the events about its own account (resource family_plan, id = its plan id), for the
 -- activity list on /my-plan/account. Those events carry ids and counts only.
@@ -1080,6 +1256,8 @@ GRANT SELECT, INSERT                 ON documents, comments, activities, invoice
 GRANT SELECT, INSERT                 ON fact_verifications TO app_user;
 GRANT SELECT, INSERT                 ON template_approvals TO app_user;
 GRANT SELECT, INSERT                 ON page_approvals TO app_user;
+GRANT SELECT, INSERT, UPDATE         ON retainer_templates TO app_user;
+GRANT SELECT                         ON engagement_signatures TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON partners TO app_user;
 GRANT SELECT, INSERT                 ON partner_gifts TO app_user;
 GRANT SELECT, UPDATE                 ON partner_referrals TO app_user;
@@ -1099,6 +1277,9 @@ REVOKE UPDATE, DELETE, TRUNCATE ON fee_rule_versions FROM PUBLIC, app_user, app_
 REVOKE UPDATE, DELETE, TRUNCATE ON fact_verifications FROM PUBLIC, app_user, app_service;
 REVOKE UPDATE, DELETE, TRUNCATE ON template_approvals FROM PUBLIC, app_user, app_service;
 REVOKE UPDATE, DELETE, TRUNCATE ON page_approvals FROM PUBLIC, app_user, app_service;
+REVOKE UPDATE, DELETE, TRUNCATE ON engagement_signatures FROM PUBLIC, app_user, app_service;
+REVOKE UPDATE, DELETE, TRUNCATE ON stored_blobs FROM PUBLIC, app_user, app_service;
+REVOKE DELETE, TRUNCATE ON retainer_templates FROM PUBLIC, app_user, app_service;
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, leads, assignments, documents, comments,
   activities, consults, engagements, payments, tasks, billable_events, sequence_enrollments, suppressions TO app_service;
@@ -1107,6 +1288,8 @@ GRANT SELECT, INSERT, UPDATE ON seminars TO app_service;
 GRANT SELECT, INSERT, UPDATE, DELETE ON family_plans, family_plan_bodies TO app_service;
 GRANT SELECT, INSERT ON plan_link_uses TO app_service; -- app_user has no grant at all
 GRANT SELECT, INSERT, UPDATE, DELETE ON plan_mfa, plan_sessions TO app_service;
+GRANT SELECT, INSERT, UPDATE ON retainer_templates TO app_service;
+GRANT SELECT, INSERT ON engagement_signatures, stored_blobs TO app_service;
 GRANT SELECT, INSERT, UPDATE, DELETE ON partners, partner_referrals TO app_service;
 GRANT SELECT, INSERT ON partner_gifts TO app_service;
 GRANT SELECT, INSERT, UPDATE ON crm_deliveries, conversion_events, review_requests TO app_service;

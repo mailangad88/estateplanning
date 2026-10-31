@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { track } from "@/components/capture";
 import type { MagnetSummary } from "@/components/MagnetOptIn";
 import { assignedVariants, useVariant } from "@/lib/experiments";
+import FormDisclaimer from "@/components/FormDisclaimer";
 
 interface Option {
   label: string;
@@ -157,6 +158,7 @@ export default function QuizRunner({
       <p className="notice">
         We'll email you a copy and occasional related tips. Unsubscribe any time. <Link href="/legal/privacy">Privacy</Link>
       </p>
+      <FormDisclaimer />
     </form>
   );
 

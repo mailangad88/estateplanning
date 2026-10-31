@@ -199,6 +199,138 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 <!-- visual: picker id=will-or-trust -->
 
+## More questions people ask
+
+If a parent wants to stay home, the [Illinois Community Care Program](/learn/illinois/illinois-community-care-program-in-home-care-for-older-adults) explains who qualifies, the $17,500 asset rule, and when the state can recover costs.
+
+If an owner deferred property taxes, the [Illinois senior tax deferral program](/learn/illinois/illinois-senior-citizens-property-tax-deferral-program-and-what-heirs-repay) explains the lien and what heirs must repay.
+
+If your child is turning 18, [the Illinois documents an 18-year-old needs](/learn/illinois/documents-an-18-year-old-needs-in-illinois) explains the health care and property powers of attorney, the HIPAA release and what parents can still do.
+
+If you are marrying again and want your spouse to give up claims on your estate, [Illinois prenup and inheritance rights](/learn/illinois/illinois-prenup-and-inheritance-rights) explains what a premarital agreement can waive, what must be disclosed and how it fits with a will or trust.
+
+If you suspect someone is taking money from an older adult, [how to report elder financial abuse in Illinois](/learn/illinois/how-to-report-elder-financial-abuse-in-illinois) covers the Adult Protective Services hotline, what happens after a report and how documents can prevent it.
+
+To see what a trust can and cannot shield from creditors, read [can you protect assets from creditors with a trust in Illinois](/learn/illinois/can-you-protect-assets-from-creditors-with-a-trust-in-illinois).
+
+For adults with intellectual or developmental disabilities who want help without a guardian, the [Illinois supported decision-making agreement](/learn/illinois/illinois-supported-decision-making-agreement) explains how the Act works and how it compares with guardianship and a power of attorney.
+
+To see exactly when a signed declaration switches on, [the Illinois Living Will Act explained](/learn/illinois/illinois-living-will-act-what-it-covers-and-when-it-applies) covers the terminal condition trigger, the two witnesses and why a health care agent comes first.
+
+If you think a trust was signed under pressure or without capacity, [contesting a trust in Illinois](/learn/illinois/contesting-a-trust-in-illinois-who-can-sue-grounds-and-deadlines) explains the 2-year and 6-month limits and how they differ from a will contest.
+
+When an irrevocable trust no longer fits the family, [changing an irrevocable trust in Illinois](/learn/illinois/changing-an-irrevocable-trust-in-illinois-decanting-and-court-modification) compares decanting, settlement agreements and court modification.
+
+If a spouse has died, [Illinois property tax exemptions after a spouse dies](/learn/illinois/illinois-property-tax-exemptions-after-a-spouse-dies) explains which exemptions renew by themselves and which must be re-filed.
+
+For heirs who receive retirement accounts, [Illinois income tax on an inherited IRA or 401(k)](/learn/illinois/do-you-pay-illinois-income-tax-on-an-inherited-ira-or-401k) explains the state treatment and the federal rules that still apply.
+
+On donation, [organ donation in Illinois](/learn/illinois/organ-donation-in-illinois-the-registry-your-will-and-who-decides) covers the registry, why a will is the wrong place for it, and who decides if you never registered.
+
+If a parent's house sits in a land trust, [what happens to an Illinois land trust when the owner dies](/learn/illinois/illinois-land-trust-when-the-owner-dies) explains who holds the beneficial interest and when probate is needed.
+
+For a gun safe in a dead relative's closet, [guns and FOID cards after a death in Illinois](/learn/illinois/illinois-firearms-and-foid-cards-after-a-death) covers storage, inventory and lawful transfer.
+
+To plan for a psychiatric crisis, the [Illinois Declaration for Mental Health Treatment](/learn/illinois/illinois-declaration-for-mental-health-treatment) explains how it differs from a health care power of attorney.
+
+Farm families can read [Illinois farm estate tax and cash rent leases](/learn/illinois/illinois-farm-estate-tax-and-cash-rent-leases) for how the $4 million threshold hits farmland and what happens to a lease at death.
+
+If the person had an IMRF, TRS, SURS or SERS pension, [Illinois pension survivor benefits](/learn/illinois/illinois-pension-survivor-benefits-imrf-trs-surs-sers) explains who is paid and why the beneficiary form beats the will.
+
+Once letters issue, [opening an estate bank account in Illinois](/learn/illinois/opening-an-estate-bank-account-in-illinois) covers the EIN, what the bank asks for and the money mistakes to avoid.
+
+If you are choosing someone for your own will, [who can be an executor in Illinois](/learn/illinois/who-can-be-an-executor-in-illinois) covers the qualifications and how to name backups.
+
+If you moved here with a will signed elsewhere, [whether an out-of-state will is valid in Illinois](/learn/illinois/is-an-out-of-state-will-valid-in-illinois) explains what carries over and what to update.
+
+If a house is coming to you or to you and your siblings, [inheriting a house in Illinois](/learn/illinois/inheriting-a-house-in-illinois) covers title, the mortgage, property taxes and whether to sell or keep it.
+
+If you live in Illinois and own a cabin or land elsewhere, [avoiding ancillary probate on out-of-state property](/learn/illinois/illinois-resident-owning-property-in-another-state) explains why a second case happens and how a trust prevents it.
+
+Couples in a civil union can read [civil union partners and Illinois estate law](/learn/illinois/civil-union-partners-and-illinois-estate-law) for inheritance without a will, spouse rights and the documents to sign.
+
+Parents of a child with a disability can follow [special needs planning in Illinois](/learn/illinois/special-needs-planning-in-illinois-for-a-disabled-child) for the order of trust, ABLE account and guardianship alternatives.
+
+To see what the job pays, [how much an executor gets paid in Illinois](/learn/illinois/how-much-does-an-executor-get-paid-in-illinois) explains reasonable compensation, the tax cost of taking it, keeping a time log and how heirs can object.
+
+For income the estate earns after death, [Illinois Form IL-1041 for an estate or trust](/learn/illinois/illinois-form-il-1041-estate-and-trust-income-tax-return) covers who files, the due date, the six-month extension and grantor trusts.
+
+If you are thinking of leaving a child out, [can you disinherit a child in Illinois](/learn/illinois/can-you-disinherit-a-child-in-illinois) explains the exceptions, how to draft it clearly and what a contest looks like.
+
+After a divorce, [how divorce affects your Illinois estate plan](/learn/illinois/how-divorce-affects-your-illinois-estate-plan) goes document by document through the will, trust, power of attorney and beneficiary forms, with a checklist.
+
+Before the house can close, [selling a house in probate in Illinois](/learn/illinois/selling-a-house-in-probate-in-illinois) explains when an independent executor can sign the deed and when a judge must approve the sale.
+
+If you are weighing the do-it-yourself route, [Illinois probate without a lawyer](/learn/illinois/handling-an-illinois-probate-estate-without-a-lawyer) shows which estates are realistic and where executors stall.
+
+When a death was caused by someone else, [Illinois wrongful death and survival claims](/learn/illinois/illinois-wrongful-death-and-survival-claims-for-an-estate) explains who sues and why the money does not follow the will.
+
+If you paid the funeral bill, [paying for a funeral from an Illinois estate](/learn/illinois/paying-for-a-funeral-from-an-illinois-estate) shows where it ranks among claims and how to be repaid.
+
+To retitle a vehicle, [how to transfer a car title after death in Illinois](/learn/illinois/transfer-car-title-after-death-in-illinois) lists the Secretary of State documents and the survivorship, affidavit and probate routes.
+
+For certified copies, [Illinois death certificates and who can order them](/learn/illinois/illinois-death-certificates-who-can-order-county-clerk-or-idph) compares the county clerk with IDPH and shows how to count the copies an executor needs.
+
+For the income tax side, [filing a final Illinois income tax return for someone who died](/learn/illinois/final-illinois-income-tax-return-for-someone-who-died) covers who files the IL-1040 and how a refund is claimed.
+
+When a child is named to receive money, [what happens when a minor inherits in Illinois](/learn/illinois/when-a-minor-inherits-money-in-illinois) explains the guardian of the estate, restricted accounts and the handoff at 18 or 21.
+
+Once the notice to creditors goes out, [how creditor claims work in an Illinois estate](/learn/illinois/how-creditor-claims-work-in-an-illinois-estate) follows a claim from filing to allowance, dispute or bar date.
+
+For the last step, [closing an Illinois probate estate](/learn/illinois/closing-an-illinois-probate-estate-final-account-and-discharge) explains the closing report, receipts from heirs and the discharge order.
+
+To qualify for nursing home Medicaid, [the Illinois eligibility and planning rules](/learn/illinois/illinois-medicaid-nursing-home-eligibility-and-planning) cover the look-back, allowed transfers and the application.
+
+When there is no executor, [letters of administration and the surety bond in Illinois](/learn/illinois/illinois-letters-of-administration-and-the-surety-bond) explains who may serve and how the bond works.
+
+To change an existing will, [changing or revoking a will in Illinois](/learn/illinois/changing-or-revoking-a-will-in-illinois) explains the four statutory ways to revoke, what divorce does, and when a codicil is enough.
+
+If a child is born after you sign, or a beneficiary dies first, [children born after an Illinois will and lapsed gifts](/learn/illinois/children-born-after-an-illinois-will-and-lapsed-gifts) covers sections 4-10 and 4-11.
+
+For gifts to a child without a trust, [Illinois UTMA accounts and gifts to minors](/learn/illinois/illinois-utma-accounts-and-gifts-to-minors) explains the age-21 rule and what a custodian must do.
+
+To track down forgotten accounts, [finding unclaimed property for an Illinois estate](/learn/illinois/finding-unclaimed-property-for-an-illinois-estate) shows how to search the Treasurer's I-Cash site and claim for a deceased owner.
+
+To cover a gap in care while you are alive, [Illinois standby and short-term guardians](/learn/illinois/illinois-standby-and-short-term-guardians-for-children) explains the no-court short-term paper, the standby petition, and how long each lasts.
+
+For who decides burial or cremation, [the Illinois Disposition of Remains Act](/learn/illinois/illinois-disposition-of-remains-act) gives the ranked list and the notarized form that overrides it.
+
+[Illinois POLST and DNR orders](/learn/illinois/illinois-polst-and-dnr-orders) explains the uniform medical order, who can sign it, and how hospitals and EMS treat it.
+
+To provide for an animal, [pet trusts in Illinois](/learn/illinois/pet-trusts-in-illinois) covers Section 408, enforcement, funding and what happens to leftover money.
+
+If no one holds your health care power of attorney, the [Illinois Health Care Surrogate Act](/learn/illinois/illinois-health-care-surrogate-act-who-decides) explains who the hospital turns to and in what order.
+
+For a parent who received Medicaid long-term care, [Illinois Medicaid estate recovery](/learn/illinois/illinois-medicaid-estate-recovery) covers the $25,000 protection, exempt family members and the hardship waiver.
+
+If a trustee has gone quiet after a death, [what an Illinois trustee must tell beneficiaries](/learn/illinois/illinois-trustee-duty-to-inform-beneficiaries) sets out the 90-day notice and annual accountings.
+
+When a bank or title company wants proof of who the heirs are, [proving heirship in Illinois](/learn/illinois/proving-heirship-in-illinois) explains the affidavit and the court order.
+
+Most estates run with little court oversight, and [independent vs. supervised administration](/learn/illinois/independent-vs-supervised-administration-in-illinois) explains when a judge steps in and how heirs can object.
+
+If you doubt a will, [the Illinois 6-month will contest deadline](/learn/illinois/illinois-will-contest-six-month-deadline) explains who may file, where, and why late notice does not extend the time.
+
+To refuse property in writing, [disclaiming an inheritance in Illinois](/learn/illinois/disclaiming-an-inheritance-in-illinois) covers the form, where to file and the acts that bar it.
+
+For locked email and online accounts, [the Illinois digital assets law for executors](/learn/illinois/illinois-digital-assets-law-for-executors) explains what content and records an executor can request.
+
+A deed to two owners is a tenancy in common unless it says otherwise, and [joint tenancy and tenancy by the entirety in Illinois](/learn/illinois/illinois-joint-tenancy-and-tenancy-by-the-entirety) explains the wording survivorship needs.
+
+For how POD, trust and joint accounts pass at death, see [payable-on-death and joint bank accounts in Illinois](/learn/illinois/illinois-payable-on-death-and-joint-bank-accounts).
+
+The creditor protection that continues for a spouse and young children is explained in [the Illinois homestead exemption after a death](/learn/illinois/illinois-homestead-exemption-after-a-death).
+
+To end a power of attorney, or to act when an agent misuses one, read [how to revoke an Illinois power of attorney](/learn/illinois/revoking-an-illinois-power-of-attorney).
+
+If you were named executor and are not sure you want the job, [can you refuse to be an executor in Illinois](/learn/illinois/can-you-refuse-to-be-executor-in-illinois) explains the 30-day rule, who is disqualified and what a non-resident should expect.
+
+For unpaid bills after a death, [credit card debt after a death in Illinois](/learn/illinois/credit-card-debt-after-death-in-illinois) covers creditor notice, the two-year bar and the order debts are paid.
+
+If no one knows whether a will exists, [how to find out if someone left a will in Illinois](/learn/illinois/finding-a-will-after-a-death-in-illinois) covers where to look, the safe deposit box rules and the duty to file.
+
+When an estate stalls, [what heirs can do about a slow Illinois executor](/learn/illinois/what-heirs-can-do-about-a-slow-illinois-executor) explains removal, ending independent administration and the steps to try first.
+
 ## How we can help
 
 Our attorneys can read your documents, explain which Illinois rules apply and prepare what is missing. The [plan finder](/plan-finder) shows which documents fit your situation, and you can book a consultation from there. This page is general education and is pending attorney review.

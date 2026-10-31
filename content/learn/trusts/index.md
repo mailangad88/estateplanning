@@ -173,6 +173,80 @@ If a trust is not needed, that is a perfectly good outcome. Many families do wel
 
 A trust only controls what is titled in its name. Read [what happens if you never funded your living trust](/learn/what-if/unfunded-trust) before you assume the job is done.
 
+## More questions people ask
+
+When a bank asks to see your trust, [what is a certification of trust](/learn/trusts/what-is-a-certification-of-trust) shows how to prove authority without sharing the plan.
+
+To see what a trust really holds, [Schedule A and the general assignment](/learn/trusts/schedule-a-and-general-assignment-for-a-living-trust) explains the list, the assignment and which assets still need retitling.
+
+To leave money to grandchildren through a trust, [how to set up a trust for your grandchildren](/learn/trusts/how-to-set-up-a-trust-for-your-grandchildren) compares shared and separate trusts, payout ages and trustees.
+
+For deposit accounts, [should I put my bank accounts in a living trust](/learn/trusts/should-i-put-my-bank-accounts-in-a-living-trust) compares retitling with a payable on death beneficiary.
+
+If someone told you to put your Chicago-area property in a land trust, [Illinois land trust vs living trust](/learn/trusts/illinois-land-trust-vs-living-trust) explains what it does and what it leaves out.
+
+To plan around the calendar, [how long it takes to set up a living trust](/learn/trusts/how-long-does-it-take-to-set-up-a-living-trust) walks through drafting, signing and funding.
+
+Worried the county will drop your exemption? [Does a living trust affect your homestead exemption and property taxes](/learn/trusts/does-a-living-trust-affect-homestead-exemption-and-property-taxes) covers Illinois and New Jersey.
+
+To check what your trust actually owns, [how to tell if your trust is funded](/learn/trusts/how-to-tell-if-your-trust-is-actually-funded) gives an account-by-account self-check.
+
+For the lifespan of a trust and the perpetuities rule, [how long a trust can last and how it ends](/learn/trusts/how-long-can-a-trust-last-and-how-does-it-end) explains the options.
+
+To compare after-death costs, [does a trust cost more to administer than probate](/learn/trusts/does-a-trust-cost-more-to-administer-than-probate) sets the two side by side.
+
+If a beneficiary dies before you or before a payout, [what happens to a trust when a beneficiary dies](/learn/trusts/what-happens-to-a-trust-when-a-beneficiary-dies) explains who takes the share.
+
+When someone says you need several trusts, [can you have more than one trust](/learn/trusts/can-you-have-more-than-one-trust) shows which ones do real work.
+
+For the income tax side, [how trusts are taxed](/learn/trusts/how-trusts-are-taxed-rates-ein-and-step-up) covers revocable versus irrevocable trusts, trust tax rates, when a trust needs its own EIN and who gets the step-up in basis.
+
+If you worry about a child's marriage, creditors or addiction, [can a trust protect a child's inheritance](/learn/trusts/keeping-an-inheritance-safe-from-a-childs-divorce-addiction-or-bad-spouse) shows what works and where the protection breaks.
+
+To see how age, family and state change the answer, read [do I need a trust by life stage, family and state](/learn/trusts/do-i-need-a-trust-by-age-family-and-state).
+
+For signing and storage, [witnesses, notaries, filing and where to keep your trust](/learn/trusts/trust-signing-notary-witnesses-and-where-to-keep-the-documents) explains what the law requires and what banks expect.
+
+If you are acting for an aging parent, [setting up a trust for an elderly parent](/learn/trusts/setting-up-a-trust-for-an-elderly-parent) explains who can sign and what each trust does for Medicaid.
+
+If a trust has to outlast you by decades, [what a trust protector and decanting can do](/learn/trusts/what-is-a-trust-protector-and-decanting) explains how it can be fixed without going to court.
+
+To decide how and when your heirs are paid, [trust distribution standards, HEMS and conditions](/learn/trusts/trust-distribution-standards-hems-and-discretion) compares mandatory, discretionary and staged payouts.
+
+If you are weighing a trust against simpler tools, [living trust vs. TOD deed, joint account and beneficiary forms](/learn/trusts/revocable-trust-vs-tod-deed-joint-account-and-beneficiary-forms) compares cost, control and incapacity coverage.
+
+Once the deed is signed, [selling, renting, borrowing against and withdrawing from trust property](/learn/trusts/using-property-in-your-own-living-trust) explains how you keep using what is in your own trust.
+
+To learn what [beneficiaries are entitled to see, how private a trust really is and whether to tell your children](/learn/trusts/what-trust-beneficiaries-can-see-and-when), read this guide.
+
+If you relocate or own land elsewhere, [what happens to a living trust across state lines](/learn/trusts/living-trusts-and-moving-or-owning-property-in-another-state) covers what to update and what to leave alone.
+
+For backup plans, [co-trustees, resignation, incapacity and replacing a trustee](/learn/trusts/co-trustees-and-changing-a-trustee) shows how to write a trustee line of succession.
+
+When an advisor throws out labels, [what family, dynasty, credit shelter, Crummey and other trust names mean](/learn/trusts/trust-names-explained-dynasty-credit-shelter-family-and-more) translates them.
+
+To change a trust you already signed, [how to change or revoke a living trust](/learn/trusts/how-to-change-or-revoke-a-living-trust) explains amendments, restatements and when the door has closed.
+
+If you want a trust that starts only at death through your will, [what a testamentary trust is](/learn/trusts/testamentary-trusts) compares it with a living trust.
+
+Before buying a trust online or attending a seminar, read [online living trust vs. a lawyer](/learn/trusts/online-living-trust-vs-lawyer) for what works, what fails and how to spot a sales pitch.
+
+Spouses deciding between one trust and two can start with [joint living trusts for married couples](/learn/trusts/joint-living-trust-for-married-couples).
+
+For an asset-by-asset decision on what to retitle and what to leave out, see [what assets go in a living trust](/learn/trusts/what-assets-go-in-a-living-trust).
+
+When a parent is declining, [creating a trust with dementia or a power of attorney](/learn/trusts/creating-a-trust-with-dementia-or-a-power-of-attorney) explains capacity and what an agent may do.
+
+For the honest costs of a trust, including funding gaps, upkeep and the lack of tax or creditor benefits, read [the downsides of a living trust](/learn/trusts/what-is-the-downside-of-a-living-trust).
+
+If you worry that a relative could challenge your plan, or you are a beneficiary questioning one, [can a living trust be contested](/learn/trusts/can-a-living-trust-be-contested) covers grounds, who can sue and deadlines.
+
+To see why a revocable trust is not a shield from lawsuits and what does protect assets, read [whether a living trust protects assets from creditors](/learn/trusts/does-a-living-trust-protect-assets-from-creditors).
+
+If you want to keep control of your own trust, [can I be my own trustee](/learn/trusts/can-i-be-my-own-trustee) explains when that works and how to plan the handoff.
+
+For a family-side timeline of the first year after a death, see [what happens to a living trust when you die](/learn/trusts/what-happens-to-a-living-trust-when-you-die).
+
 ## How we can help
 
 Choosing and building the right trust is easier with a short conversation about your assets and your family. The [plan finder](/plan-finder) will suggest which documents suit your situation, and you can book a consultation with one of our attorneys to talk through whether a trust, a will or a combination fits, and to make sure it is drafted, signed and funded under your state's rules.

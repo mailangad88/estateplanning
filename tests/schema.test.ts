@@ -8,7 +8,8 @@ const TABLES = [
   "users", "firms", "lawyers", "persons", "leads", "assignments", "documents", "comments", "activities",
   "consults", "engagements", "payments", "tasks", "fee_rule_versions", "billable_events", "invoices",
   "sequence_enrollments", "suppressions", "fact_verifications", "template_approvals", "page_approvals", "crm_deliveries", "seminars", "partners", "partner_gifts", "partner_referrals",
-  "conversion_events", "review_requests", "family_plans", "family_plan_bodies", "plan_link_uses", "plan_mfa", "plan_sessions", "audit_events",
+  "conversion_events", "review_requests", "family_plans", "family_plan_bodies", "plan_link_uses", "plan_mfa", "plan_sessions",
+  "retainer_templates", "engagement_signatures", "stored_blobs", "audit_events",
 ];
 
 describe("db/schema.sql", () => {
@@ -81,6 +82,36 @@ describe("db/schema.sql", () => {
       expect(userGrants[0].split("--")[0]).not.toMatch(/INSERT/); // created by the service role at sign-in, never by a planner
     }
     expect(sql).toMatch(/CREATE POLICY audit_select ON audit_events[\s\S]*?app_role\(\) = 'planner' AND resource_type = 'family_plan' AND resource_id = app_user_id\(\)/);
+  });
+
+  it("retainer templates are firm-scoped, approved only by the firm's attorney, and their wording is immutable", () => {
+    const select = sql.match(/CREATE POLICY retainer_templates_select[\s\S]*?\);/)![0];
+    expect(select).toMatch(/firm_id = app_firm_id\(\)/);
+    const writes = sql.match(/CREATE POLICY retainer_templates_(insert|update)[\s\S]*?;/g) ?? [];
+    expect(writes.length).toBe(2);
+    for (const w of writes) {
+      expect(w).toMatch(/firm_id = app_firm_id\(\)/);
+      expect(w).not.toMatch(/'(platform_admin|paralegal|intake|marketing|client)'/);
+    }
+    expect(sql).toMatch(/CREATE TRIGGER retainer_templates_guard BEFORE INSERT OR UPDATE OR DELETE ON retainer_templates/);
+    const guard = sql.match(/CREATE FUNCTION retainer_template_guard[\s\S]*?END \$\$;/)![0];
+    expect(guard).toMatch(/app_role\(\) = 'attorney' AND NEW.approved_by = app_user_id\(\) AND NEW.firm_id = app_firm_id\(\)/);
+    expect(guard).toMatch(/NEW.body IS DISTINCT FROM OLD.body/);
+  });
+
+  it("signature records and stored blobs are insert-only; blobs have no user policy", () => {
+    for (const t of ["engagement_signatures", "stored_blobs"]) {
+      expect(sql).toMatch(new RegExp(`CREATE TRIGGER ${t}_immutable BEFORE UPDATE OR DELETE ON ${t}`));
+      expect(sql).toMatch(new RegExp(`REVOKE UPDATE, DELETE, TRUNCATE ON ${t} FROM PUBLIC, app_user, app_service;`));
+      const grants = sql.split("\n").filter((l) => /^GRANT/.test(l) && new RegExp(`\\b${t}\\b`).test(l));
+      for (const g of grants) expect(g).not.toMatch(/UPDATE|DELETE|TRUNCATE/);
+    }
+    expect(sql).not.toMatch(/CREATE POLICY \w+ ON stored_blobs[^;]*TO app_user/);
+    expect(sql.split("\n").filter((l) => /^GRANT/.test(l) && /stored_blobs/.test(l) && /TO app_user/.test(l))).toEqual([]);
+    expect(sql).toMatch(/CREATE POLICY engagement_signatures_select ON engagement_signatures FOR SELECT TO app_user\s+USING \(lead_access\(lead_id\) IN \('full','client'\) OR \(app_role\(\) = 'client' AND signer_person_id = app_person_id\(\)\)\)/);
+    // each signer signs only their own slot, from their own client login
+    expect(sql).toMatch(/CREATE TRIGGER engagement_signatures_signer_guard BEFORE INSERT ON engagement_signatures/);
+    expect(sql).toMatch(/signer_person_id\s+text NOT NULL REFERENCES persons\(id\)/);
   });
 
   it("marketing only gets the aggregate funnel view", () => {

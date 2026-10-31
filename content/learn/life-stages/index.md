@@ -151,6 +151,48 @@ State law decides signing rules, default inheritance, spousal rights, whether co
 
 Start with whichever problem would be hardest on your family tomorrow. For many people that is incapacity, so the first step is powers of attorney and a healthcare directive. For a parent it is the guardian. For a person with a stale beneficiary form it is that form. Our [plan finder](/plan-finder) asks a few questions about your family and shows a short list. Then use [what to bring to your first meeting](/learn/basics/what-to-bring-to-estate-planning-consultation) and, if cost is a concern, our article on [how much an estate plan costs](/learn/basics/how-much-does-estate-planning-cost). It also helps to know the [common mistakes](/learn/basics/common-estate-planning-mistakes) and how to [talk to your family](/learn/basics/talking-to-family-about-estate-plan).
 
+## More questions people ask
+
+If time is short, [can you make a will in hospice](/learn/life-stages/can-you-make-a-will-in-hospice) explains capacity, witnesses and what else to sign the same day.
+
+Before a second wedding, [estate planning before you remarry](/learn/life-stages/estate-planning-before-you-remarry) lists what to settle about the house, accounts, prenup and agents.
+
+When fairness among your children is the sticking point, [should you treat your children equally in your will](/learn/life-stages/should-you-leave-your-children-equal-shares) shows how to weigh need, gifts and caregiving.
+
+If you are raising a grandchild without a court order, [grandparents raising grandchildren](/learn/life-stages/estate-planning-for-grandparents-raising-grandchildren) covers the papers to get and a plan for the child if you cannot continue.
+
+New parents choosing coverage can use [term life insurance when you have a baby](/learn/life-stages/term-life-insurance-when-you-have-a-baby) to size the policy and name the right beneficiary.
+
+For aunts and uncles without children, [leaving an inheritance to nieces and nephews](/learn/life-stages/leaving-an-inheritance-to-nieces-and-nephews) covers naming, minors and New Jersey inheritance tax.
+
+If you are deciding whether to keep the family home, [should you sell the house after your spouse dies](/learn/life-stages/should-you-sell-the-house-after-your-spouse-dies) covers the two-year tax rule and title steps.
+
+For couples who share a home without marrying, [can an unmarried partner stay in the home after you die](/learn/life-stages/can-an-unmarried-partner-stay-in-the-home-after-you-die) explains how the deed decides it.
+
+Married and unmarried same-sex couples, non-biological parents and chosen family can find the gaps in [estate planning for same-sex couples and LGBTQ families](/learn/life-stages/estate-planning-for-same-sex-couples-and-lgbtq-families).
+
+When a move or a decline in health changes who can help you, [updating your estate plan when you move to assisted living or your health declines](/learn/life-stages/estate-planning-when-you-move-to-assisted-living-or-your-health-declines) gives a first-month checklist.
+
+If you are under 30 and wondering what to sign first, [making a will in your twenties](/learn/life-stages/making-a-will-in-your-twenties) covers the legal age, student loans and first-job beneficiary forms.
+
+While a divorce is still pending, [estate planning during a separation](/learn/life-stages/estate-planning-during-separation-or-a-pending-divorce) explains what your spouse can still inherit and which changes a court may block.
+
+Before moving money after bad news, [giving away assets after a terminal diagnosis](/learn/life-stages/giving-away-assets-after-a-terminal-diagnosis) weighs gifts against basis, Medicaid and beneficiary changes.
+
+For a decade-by-decade checklist, see [estate planning documents at 30, 40 and 50](/learn/life-stages/estate-planning-documents-at-30-40-and-50).
+
+After a large inheritance or sale, [updating your plan after a windfall or business sale](/learn/life-stages/updating-your-plan-after-a-windfall-or-business-sale) lists what to fix first.
+
+If you want to include grandchildren, [leaving an inheritance to grandchildren](/learn/life-stages/leaving-an-inheritance-to-grandchildren) compares trusts, custodial accounts and 529 plans.
+
+As children grow up, [updating your plan when your family grows](/learn/life-stages/updating-your-plan-when-your-family-grows) covers a second baby, an 18th birthday, a wedding and a grandchild.
+
+With a procedure on the calendar, [estate planning before surgery or a hospital stay](/learn/life-stages/estate-planning-before-surgery-or-a-hospital-stay) lists what to sign first.
+
+If no relative can serve, [estate planning with no heirs or family nearby](/learn/life-stages/estate-planning-with-no-heirs-or-family-nearby) explains professional fiduciaries, trust companies and escheat.
+
+To keep siblings from fighting over belongings, [dividing personal property and family heirlooms](/learn/life-stages/dividing-personal-property-and-family-heirlooms) shows how to write a list and talk to your children.
+
 ## How we can help
 
 Our attorneys work with people at every stage on this page, and most first plans take one or two meetings. Start with the [plan finder](/plan-finder) to see which documents fit your situation, or book a consultation to talk through your family, your state and your priorities. There is no obligation, and you can begin with the most pressing piece.
