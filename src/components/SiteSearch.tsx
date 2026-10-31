@@ -4,27 +4,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { track } from "@/components/capture";
-
-/** Pagefind's browser API (public/pagefind/pagefind.js, built by scripts/build-search-index.mts). */
-interface Pagefind {
-  init(): Promise<void>;
-  debouncedSearch(q: string, opts?: object, ms?: number): Promise<{ results: { id: string; data(): Promise<Hit> }[] } | null>;
-}
-interface Hit {
-  url: string;
-  excerpt: string;
-  meta: { title?: string; section?: string };
-}
-
-let loader: Promise<Pagefind> | null = null;
-function loadPagefind(): Promise<Pagefind> {
-  const src = "/pagefind/pagefind.js";
-  loader ??= import(/* webpackIgnore: true */ /* turbopackIgnore: true */ src).then(async (pf: Pagefind) => {
-    await pf.init();
-    return pf;
-  });
-  return loader;
-}
+import { loadPagefind, type PagefindHit as Hit } from "@/lib/pagefind";
 
 const MAX_RESULTS = 20;
 

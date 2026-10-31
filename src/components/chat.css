@@ -1,0 +1,68 @@
+/* Website chat ("Ask us"). Uses the design tokens from src/app/design.css. */
+.site-chat { position: fixed; right: 20px; bottom: 20px; z-index: 55; font-family: var(--font-body); }
+.site-chat__launcher {
+  display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border: 0; border-radius: 999px;
+  background: var(--brand); color: #fff; font: inherit; font-weight: 600; cursor: pointer;
+  box-shadow: 0 8px 24px rgb(14 57 64 / 0.28);
+}
+.site-chat__launcher:hover { background: var(--brand-deep); }
+.site-chat__launcher:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+/* Once opened, the panel sits above the cookie bar so the two never fight for clicks. */
+.site-chat:has(.site-chat__panel) { z-index: 65; }
+
+.site-chat__panel {
+  width: min(380px, calc(100vw - 32px)); height: min(600px, calc(100vh - 40px));
+  display: flex; flex-direction: column; background: var(--bg); color: var(--text);
+  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+  box-shadow: 0 18px 48px rgb(14 57 64 / 0.24);
+}
+.site-chat__head { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; padding: 14px 16px; background: var(--brand); color: #fff; }
+.site-chat__title { margin: 0; font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; }
+.site-chat__sub { margin: 2px 0 0; font-size: 0.82rem; color: var(--on-dark-muted); }
+.site-chat__head-actions { display: flex; gap: 4px; }
+.site-chat__icon { width: 32px; height: 32px; border: 0; border-radius: 8px; background: transparent; color: #fff; font-size: 1.3rem; line-height: 1; cursor: pointer; }
+.site-chat__icon:hover, .site-chat__icon:focus-visible { background: rgb(255 255 255 / 0.15); }
+
+.site-chat__log { flex: 1; overflow-y: auto; padding: 14px 14px 6px; display: flex; flex-direction: column; gap: 10px; }
+.site-chat__disclaimer { margin: 0; padding: 8px 10px; font-size: 0.75rem; line-height: 1.4; color: var(--muted); background: var(--sand); border-radius: 8px; }
+.site-chat__msg { max-width: 88%; padding: 10px 12px; border-radius: 14px; font-size: 0.92rem; line-height: 1.45; }
+.site-chat__msg p { margin: 0; }
+.site-chat__msg--bot { align-self: flex-start; background: var(--surface); border: 1px solid var(--border); border-bottom-left-radius: 4px; }
+.site-chat__msg--me { align-self: flex-end; background: var(--brand-tint); color: var(--brand-deep); border-bottom-right-radius: 4px; }
+.site-chat__typing { color: var(--muted); font-style: italic; }
+.site-chat__links { margin: 8px 0 0; padding: 0; list-style: none; display: grid; gap: 4px; }
+.site-chat__links a { color: var(--brand); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+
+.site-chat__chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.site-chat__chip {
+  padding: 7px 12px; border: 1.5px solid var(--brand); border-radius: 999px; background: var(--surface);
+  color: var(--brand); font: inherit; font-size: 0.86rem; font-weight: 600; cursor: pointer;
+}
+.site-chat__chip:hover, .site-chat__chip:focus-visible { background: var(--brand-tint); }
+.site-chat__chip--alt { border-style: dashed; }
+.site-chat__select { display: grid; gap: 4px; font-size: 0.86rem; font-weight: 600; }
+.site-chat__select select { padding: 8px; border-radius: 8px; border: 1px solid var(--border); font: inherit; }
+
+.site-chat__actions { display: grid; gap: 8px; }
+.site-chat__actions .button { width: 100%; text-align: center; }
+.site-chat__call { text-align: center; font-size: 0.86rem; color: var(--brand); }
+
+.site-chat__form .lead-form fieldset { margin: 0; padding: 12px; border-radius: 10px; }
+.site-chat__form .lead-form legend { font-size: 0.95rem; }
+.site-chat__form .lead-form .check span, .site-chat__form .lead-form .notice { font-size: 0.75rem; }
+.site-chat__form .field-row { display: block; }
+
+.site-chat__input { display: flex; gap: 8px; padding: 10px 12px; border-top: 1px solid var(--border); background: var(--surface); }
+.site-chat__input input { flex: 1; min-width: 0; padding: 10px 12px; border: 1px solid var(--border); border-radius: 999px; font: inherit; font-size: 0.92rem; }
+.site-chat__input .button { padding: 8px 16px; }
+.site-chat__foot { margin: 0; padding: 0 12px 10px; font-size: 0.7rem; color: var(--muted); background: var(--surface); }
+
+@media (max-width: 800px) {
+  /* Sits above the phone sticky bar (call / text / book). */
+  .site-chat { right: 12px; bottom: calc(76px + env(safe-area-inset-bottom)); }
+  .site-chat__launcher { padding: 12px; }
+  .site-chat__launcher span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .site-chat:has(.site-chat__panel) { left: 0; right: 0; bottom: 0; top: 0; z-index: 110; }
+  .site-chat__panel { width: 100%; height: 100%; border-radius: 0; border: 0; }
+}
+@media print { .site-chat { display: none; } }
