@@ -116,6 +116,8 @@ Then you generally need probate, or the property may pass another way. A house h
 
 Grace, 44, learns that her father, Leonard, had a checking account of about $40,000 in his name only, a registered car and no house. No one has filed a probate case, and Grace and her sister are the only heirs. Grace checks the statute, completes the affidavit and has it notarized. She gives it to the bank, retitles the car through the Secretary of State and pays the funeral home from the account. She then splits the rest with her sister and keeps records.
 
+Because the affidavit cannot move real estate, families selling a house usually choose between [an heirship affidavit and opening probate](/learn/illinois/heirship-affidavit-vs-probate).
+
 ## How we can help
 
 Our attorneys can look at what your family member owned and tell you whether the affidavit fits or whether another route is safer. Try the [plan finder](/plan-finder) or read about [estate planning in Illinois](/estate-planning/illinois). Planning ahead can help your own family avoid both probate and affidavits.

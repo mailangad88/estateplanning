@@ -201,6 +201,22 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+If you think you own too little to need one, [do I need a will in Illinois if I don't have much](/learn/illinois/do-i-need-a-will) helps you count your assets and shows what the state does by default.
+
+To compare our published flat fees with online forms and hourly lawyers, read [how much estate planning costs in Illinois and Chicago](/learn/illinois/estate-planning-cost).
+
+If you are wondering who would raise your children, [naming a guardian for your children in Illinois](/learn/illinois/naming-a-guardian-for-your-children) explains the will clause, what happens without one, and how to choose when spouses disagree.
+
+For second marriages, [blended family inheritance in Illinois](/learn/illinois/blended-family-inheritance) shows how the default rules treat stepchildren and how a spouse's right to renounce the will shapes your plan.
+
+If your spouse just died and the bank froze the account, [what to do about frozen accounts, bills and the house in the first weeks](/learn/illinois/spouse-died-in-illinois-frozen-accounts-bills-and-the-house) sorts out what freezes and what does not.
+
+If a parent has dementia and never signed one, [whether it is too late for a power of attorney in Illinois](/learn/illinois/dementia-no-power-of-attorney) explains how capacity is judged and when guardianship is the route.
+
+If a parent died and the house is still in their name, [what to do in Illinois](/learn/illinois/parent-died-house-in-their-name) lays out the order families usually go in.
+
+If a title company will not accept an affidavit, [heirship affidavit vs probate in Cook County](/learn/illinois/heirship-affidavit-vs-probate) explains the three papers it may ask for.
+
 If a parent wants to stay home, the [Illinois Community Care Program](/learn/illinois/illinois-community-care-program-in-home-care-for-older-adults) explains who qualifies, the $17,500 asset rule, and when the state can recover costs.
 
 If an owner deferred property taxes, the [Illinois senior tax deferral program](/learn/illinois/illinois-senior-citizens-property-tax-deferral-program-and-what-heirs-repay) explains the lien and what heirs must repay.
