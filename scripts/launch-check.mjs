@@ -20,6 +20,8 @@ const EXT = new Set([".md", ".json", ".ts", ".tsx"]);
 const SKIP = new Set(["content/STYLE.md", "content/LEARN-STYLE.md", "content/states/_template.json", "scripts/launch-check.mjs",
   // Internal research data, never rendered: the question bank holds what people ask, in their words.
   "content/questions.json",
+  // Generated improvement log (npm run page-log): repeats page titles and question-bank examples for the admin view.
+  "content/page-log.json",
   // The studio's list of words its video scripts must not use.
   "src/server/studio/wordlists.ts",
   // Code that detects placeholders, not copy.
