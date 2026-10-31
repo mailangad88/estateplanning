@@ -120,6 +120,8 @@ A valid will lets you choose your own heirs, name an executor and, for parents, 
 
 If a parent died without a will and the house is still in their name, [what to do when the house is still in a parent's name](/learn/illinois/parent-died-house-in-their-name) walks through the options for selling or keeping it.
 
+Related: [who inherits if you have no spouse and no children](/learn/illinois/no-spouse-no-children), [unmarried partners and inheritance](/learn/illinois/unmarried-partners) and [when siblings disagree over an inherited house](/learn/illinois/siblings-disagree-inherited-house).
+
 ## How we can help
 
 If you are not sure what your family would receive today, we can walk through it with you. Our attorneys can compare the Illinois default rules with what you want, and then prepare a will or trust that fits your family. Start with our [plan finder](/plan-finder), or visit our [Illinois estate planning page](/estate-planning/illinois) to book a consultation.

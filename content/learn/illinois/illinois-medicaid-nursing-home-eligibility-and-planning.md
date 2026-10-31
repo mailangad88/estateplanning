@@ -104,6 +104,8 @@ Evelyn, 82, lives in a nursing home in Peoria, and her husband, Frank, is at hom
 
 <!-- visual: whatif id=long-term-care-costs -->
 
+If a relative is paid to provide care, read [paying a family caregiver without Medicaid trouble](/learn/illinois/paying-a-family-caregiver).
+
 ## How we can help
 
 Medicaid planning is easiest before a crisis and still possible during one. Our attorneys can review the look-back, explain the allowances for a spouse at home and help you prepare the application. Use the [plan finder](/plan-finder) or book a consultation. The [Illinois pillar](/learn/illinois) links the other Illinois topics.

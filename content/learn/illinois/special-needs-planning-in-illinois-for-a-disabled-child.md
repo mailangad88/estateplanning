@@ -107,6 +107,8 @@ Name people now, and name backups. A trustee and a guardian do different jobs, a
 
 Three. Parents leave an IRA to the disabled child directly while the will says "trust". Relatives hand the child cash, which can reduce SSI. And families wait to register on PUNS until there is a crisis. A one-hour review of your beneficiary forms often finds the first problem.
 
+When that child is close to adulthood, see [turning 18 with a disability in Illinois](/learn/illinois/turning-18-with-a-disability).
+
 ## How we can help
 
 Our attorneys can draft a supplemental needs trust, update your will and beneficiary forms, prepare powers of attorney, and talk through whether guardianship is needed. Use the [plan finder](/plan-finder) to see where your plan stands, or book a consultation. The sooner the paperwork is in place, the more choices your child will have.

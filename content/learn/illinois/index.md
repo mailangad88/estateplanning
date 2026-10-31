@@ -201,6 +201,20 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+If your child with a disability is approaching 18, [turning 18 with a disability in Illinois](/learn/illinois/turning-18-with-a-disability) compares guardianship, supported decision-making, SSI changes and ABLE accounts.
+
+If you own an Illinois LLC, [what happens to it when you die](/learn/illinois/llc-owner-dies) explains who can sign, what heirs receive and how a buy-sell agreement fits.
+
+If you are single with no children, [who inherits and who decides your care in Illinois](/learn/illinois/no-spouse-no-children) shows the default lists and the documents that replace them.
+
+If siblings disagree about an inherited house, [the four ways out in Illinois](/learn/illinois/siblings-disagree-inherited-house) run from a family talk to a partition case.
+
+If a parent wants to pay the child who cares for them, [paying a family caregiver in Illinois](/learn/illinois/paying-a-family-caregiver) explains the written agreement that keeps Medicaid from calling it a gift.
+
+If a neighbor has told you to put your house in a land trust, [should I put my Chicago house in a land trust, a living trust, or both](/learn/illinois/land-trust-vs-living-trust) matches each kind of owner to the right setup.
+
+If you live with a partner and are not married or in a civil union, [unmarried partner inheritance in Illinois](/learn/illinois/unmarried-partners) shows what your partner gets by default and which documents change it.
+
 If you think you own too little to need one, [do I need a will in Illinois if I don't have much](/learn/illinois/do-i-need-a-will) helps you count your assets and shows what the state does by default.
 
 To compare our published flat fees with online forms and hourly lawyers, read [how much estate planning costs in Illinois and Chicago](/learn/illinois/estate-planning-cost).
