@@ -1,0 +1,1023 @@
+{
+  "_note": "Verified county probate facts. Every note cites one official source. Counties without notes are not published.",
+  "counties": [
+    {
+      "slug": "adams",
+      "name": "Adams County",
+      "seat": "Quincy",
+      "circuit": "8th Judicial Circuit",
+      "probateCourt": {
+        "name": "Adams County Courthouse",
+        "address": "521 Vermont Street, Quincy, IL 62301",
+        "url": "https://www.illinoiscourts.gov/courts-directory/66/Adams-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Adams County Circuit Clerk",
+        "address": "521 Vermont Street, Quincy, IL 62301",
+        "phone": "217-277-2100",
+        "url": "https://www.illinoiscourts.gov/courts-directory/66/Adams-County-Courthouse/court/"
+      },
+      "notes": [
+        "The Self-Help Center and an e-filing kiosk are outside the Circuit Clerk's Office in the Adams County Courthouse. The page also links to statewide eFileIL. (source: https://www.illinoiscourts.gov/courts-directory/66/Adams-County-Courthouse/court/)",
+        "The Adams County law library has public computers for research on the west end of the 2nd floor. Everyone entering the courthouse goes through a metal detector. (source: https://www.illinoiscourts.gov/courts-directory/66/Adams-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "boone",
+      "name": "Boone County",
+      "seat": "Belvidere",
+      "circuit": "17th Judicial Circuit",
+      "probateCourt": {
+        "name": "Boone County Courthouse",
+        "address": "601 N. Main Street, Belvidere, IL 61008",
+        "url": "https://www.boonecircuitclerk.us"
+      },
+      "clerk": {
+        "name": "Boone County Circuit Clerk",
+        "address": "601 N. Main Street, Belvidere, IL 61008",
+        "phone": "815-544-0371",
+        "url": "https://www.boonecircuitclerk.us"
+      },
+      "recorder": {
+        "name": "Boone County Clerk & Recorder",
+        "address": "1212 Logan Avenue, Belvidere, IL 61008",
+        "url": "https://www.boonecountyil.gov/government/departments/clerk___recorder/index.php"
+      },
+      "notes": [
+        "The Boone County Circuit Clerk is at 601 N. Main Street, Belvidere, open Monday to Friday, 8:30 a.m. to 4:30 p.m. The front entrance was closed for construction, with a temporary entrance on Webster Street at the back of the courthouse. (source: https://www.boonecircuitclerk.us)",
+        "The Clerk & Recorder keeps Boone County land records dating to 1838. Certified copies of land records can be requested through an online portal at officialrecordsonline.com. (source: https://www.boonecountyil.gov/government/departments/clerk___recorder/index.php)",
+        "The Clerk & Recorder runs a Deed Fraud Referral Program and points owners to a free Property Fraud Alert sign-up at propertyfraudalert.com/ilboone. Phone is (815) 544-3103. (source: https://www.boonecountyil.gov/news_detail_T5_R188.php)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "champaign",
+      "name": "Champaign County",
+      "seat": "Urbana",
+      "circuit": "6th Judicial Circuit",
+      "probateCourt": {
+        "name": "Champaign County Courthouse",
+        "address": "101 E. Main St., Urbana, IL 61801",
+        "url": "https://www.illinoiscourts.gov/courts-directory/3/Champaign-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Champaign County Circuit Clerk",
+        "address": "101 East Main Street, Urbana, IL 61801",
+        "phone": "217-384-3725",
+        "url": "https://www.illinoiscourts.gov/courts-directory/3/Champaign-County-Courthouse/court/"
+      },
+      "notes": [
+        "The Champaign County Self-Help Center is on the first floor off the main lobby. A retired attorney navigator is there on set days, and appointments are encouraged. (source: https://www.illinoiscourts.gov/courts-directory/3/Champaign-County-Courthouse/court/)",
+        "The law library is in Room 243 of the courthouse. The Circuit Clerk's file viewing room has a computer the public can use to e-file. (source: https://www.illinoiscourts.gov/courts-directory/3/Champaign-County-Courthouse/court/)",
+        "Champaign County is in the 6th Judicial Circuit, with DeWitt, Douglas, Macon, Moultrie and Piatt counties. (source: https://www.illinoiscourts.gov/courts-directory/interactive-map)",
+        "The County Assessment Office is at the Scott M. Bennett Administrative Center, 102 E. Main Street, Urbana, phone 217-384-3760. It offers a $5,000 Senior Homestead Exemption and a Senior Assessment Freeze with a $75,000 income limit. (source: https://www.champaigncountyil.gov/ccao/exemptions.php)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "coles",
+      "name": "Coles County",
+      "seat": "Charleston",
+      "circuit": "5th Judicial Circuit",
+      "probateCourt": {
+        "name": "Coles County Courthouse",
+        "address": "651 Jackson Avenue, Charleston, IL 61920",
+        "url": "https://www.illinoiscourts.gov/courts-directory/74/Coles-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Coles County Circuit Clerk",
+        "address": "651 Jackson Avenue, Room 128, Charleston, IL 61920",
+        "phone": "217-348-0516",
+        "url": "https://fifthcircuitil.com/coles-county/"
+      },
+      "notes": [
+        "The Self-Help Center is in the Circuit Clerk's office, and the law library is on the first floor of the Coles County Courthouse. (source: https://www.illinoiscourts.gov/courts-directory/74/Coles-County-Courthouse/court/)",
+        "E-filing for the Coles County court is available through the e-filing link on the court's page. (source: https://www.illinoiscourts.gov/courts-directory/74/Coles-County-Courthouse/court/)",
+        "Coles County is in the 5th Judicial Circuit, with Clark and Edgar counties. (source: https://www.illinoiscourts.gov/courts-directory/interactive-map)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "cook",
+      "name": "Cook County",
+      "seat": "Chicago",
+      "circuit": "Circuit Court of Cook County",
+      "probateCourt": {
+        "name": "Circuit Court of Cook County, Probate Division",
+        "address": "Richard J. Daley Center, 50 West Washington St., Room 1202, Chicago, IL 60602",
+        "url": "https://www.cookcountyclerkofcourt.org/divisions/probate-division"
+      },
+      "clerk": {
+        "name": "Clerk of the Circuit Court of Cook County",
+        "address": "50 W. Washington, Suite 1001, Chicago, IL 60602-1305",
+        "phone": "(312) 603-5030",
+        "url": "https://www.cookcountyclerkofcourt.org/"
+      },
+      "recorder": {
+        "name": "Cook County Clerk, Recording Division",
+        "address": "118 N. Clark St., Room 120, Chicago, IL 60602",
+        "url": "https://www.cookcountyclerkil.gov/agency/recordings"
+      },
+      "notes": [
+        "The Probate Division is at the Richard J. Daley Center, 50 West Washington St., Room 1202, Chicago. Phone 312-603-6441, Monday to Friday, 8:30 a.m. to 4:30 p.m. (source: https://www.cookcountyclerkofcourt.org/divisions/probate-division)",
+        "There is no fee to file a will. You can file it in person at Room 1202, by mail to the Probate Division, or in person at any of the Clerk's 5 offices. (source: https://www.cookcountyclerkofcourt.org/divisions/probate-division)",
+        "The Probate Division's page says that to open an estate in Cook County you need to hire an attorney, who files the court forms through eFile Illinois. The filing cost is $479.00, with or without a will. (source: https://www.cookcountyclerkofcourt.org/divisions/probate-division)",
+        "After the court issues its order, the Clerk's Office issues Letters of Administration (no will) or Letters of Office (with a will). These are then taken to the Recorder of Deeds at 118 N. Clark Street. (source: https://www.cookcountyclerkofcourt.org/divisions/probate-division)",
+        "The Clerk of the Circuit Court has suburban district courthouses in Skokie, Rolling Meadows, Maywood, Bridgeview and Markham, open 8:30 a.m. to 4:30 p.m. (source: https://www.cookcountyclerkofcourt.org/divisions/suburban-districts-0)",
+        "The Clerk's suburban district lists place these towns as follows. District 2 (Skokie): Des Plaines, Evanston, Glenview, Northbrook, Skokie; District 3 (Rolling Meadows): Arlington Heights, Mount Prospect, Palatine, Schaumburg; District 4 (Maywood): Berwyn, Cicero, Oak Park; District 5 (Bridgeview): Oak Lawn, Orland Park, Tinley Park. These courthouses handle other case types; Cook County probate itself is heard at the Daley Center. (source: https://www.cookcountyclerkofcourt.org/divisions/suburban-districts-0)",
+        "Deeds and Transfer on Death Instruments are recorded at the Clerk's Recording Division, 118 N. Clark St., Room 120, Chicago. Documents cannot be recorded at courthouse satellite offices. (source: https://www.cookcountyclerkil.gov/agency/recordings)",
+        "E-recording goes through an approved submitter company. The page lists a flat $50 fee for e-filed Transfer on Death Instruments. (source: https://www.cookcountyclerkil.gov/recordings/how-to-mail-and-e-record-deeds)",
+        "The Clerk's Recordings Legal Help Desk offers free advice from legal aid attorneys on deed counseling and Transfer on Death Instruments on the third Thursday of each month at 118 N. Clark; call 312-603-5050. (source: https://www.cookcountyclerkil.gov/recordings/recordings-legal-help-desk)",
+        "The Assessor's senior exemption page says a property can stay eligible for a deceased parent who lived there on January 1, 2025, with a death certificate and letters of office or similar papers. A surviving spouse who is 65 or older qualifies in their own name. (source: https://www.cookcountyassessoril.gov/senior-citizen-exemption)",
+        "The Self-Represented Litigant Center is at the Daley Center, Room 602, phone 312-603-3530. The page describes no probate-specific help. (source: https://www.cookcountyclerkofcourt.org/pro-se-slr)"
+      ],
+      "cities": [
+        "chicago",
+        "evanston",
+        "skokie",
+        "schaumburg",
+        "oak-park",
+        "orland-park"
+      ],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "dekalb",
+      "name": "DeKalb County",
+      "seat": "Sycamore",
+      "circuit": "23rd Judicial Circuit",
+      "probateCourt": {
+        "name": "DeKalb County Courthouse (23rd Judicial Circuit)",
+        "address": "133 W State Street, Sycamore, IL 60178",
+        "url": "https://www.illinoiscourts.gov/courts-directory/86/DeKalb-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "DeKalb County Circuit Clerk",
+        "address": "DeKalb County Courthouse, 133 W. State Street, Sycamore, IL 60178",
+        "phone": "815-895-7131",
+        "url": "https://dekalbcounty.org/departments/circuit-clerk/"
+      },
+      "recorder": {
+        "name": "DeKalb County Clerk and Recorder",
+        "url": "https://dekalbcountyclerkil.gov"
+      },
+      "notes": [
+        "The DeKalb County Circuit Clerk says all civil, probate, traffic, criminal and juvenile cases are filed through its office at the courthouse, 133 W. State Street in Sycamore. The civil line is 815-895-7131. (source: https://dekalbcounty.org/departments/circuit-clerk/)",
+        "The 23rd Judicial Circuit civil fee schedule, headed effective 09-21-2026, lists a probate filing fee of $276.00 and $2.00 for additional letters of office. (source: https://dekalbcounty.org/wp-content/uploads/2021/02/ci-civilfees.pdf)",
+        "The Self-Help Legal Center is on the first floor of the courthouse, open Monday to Friday, 8:30 a.m. to 4:30 p.m. with a lunch closure from 12:00 to 1:00. It helps with court forms and e-filing but does not give legal advice. (source: https://dekalbcounty.org/departments/circuit-clerk/self-help-legal-center/)",
+        "The DeKalb County Clerk and Recorder's predictable fee schedule effective January 1, 2025 lists $74.00 to record a standard document. (source: https://dekalbcountyclerkil.gov/wp-content/uploads/2023/09/PredictableFeeSchedule_01.01.2025.pdf)",
+        "The DeKalb County Assessment Office describes a $5,000 Senior Homestead Exemption (PTAX-324) and a Senior Assessment Freeze (PTAX-340) for household income of $75,000 or less. (source: https://dekalbcounty.org/departments/assessment-office/exemptions/list-of-exemptions/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "dupage",
+      "name": "DuPage County",
+      "seat": "Wheaton",
+      "circuit": "18th Judicial Circuit",
+      "probateCourt": {
+        "name": "DuPage County Judicial Center",
+        "address": "505 N. County Farm Road, Wheaton, IL 60187",
+        "url": "https://www.illinoiscourts.gov/courts-directory/7/DuPage-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Clerk of the 18th Judicial Circuit Court",
+        "address": "505 N. County Farm Road, Wheaton, IL 60187",
+        "url": "https://www.dupagecircuitclerk.gov"
+      },
+      "recorder": {
+        "name": "DuPage County Recorder",
+        "address": "421 N. County Farm Road, Wheaton, IL 60187",
+        "phone": "(630) 407-5400",
+        "url": "https://dupagecounty.gov/business_detail_T12_R999.php"
+      },
+      "notes": [
+        "The DuPage fee schedule lists $300.00 to open the administration of a decedent's estate. Filing a will has no fee, not counting copy and certification fees. The schedule is marked effective September 11, 2026. Original wills cannot be filed electronically. (source: https://dupagecircuitclerk.gov/18thJudicial/viewstaticpdf?pdfFile=FilingFeesSchedule.pdf)",
+        "DuPage County civil cases are e-filed through the statewide eFileIL system. The Clerk's page says DuPage moved to eFileIL on July 1, 2019. (source: https://dupagecircuitclerk.gov/efiling.html)",
+        "The DuPage County Recorder's page lists deed recording at $86.00 per document. It also links a Property Transfer on Death Instrument (TODI) form. The page says all fees are subject to change. (source: https://www.dupagecounty.gov/elected_officials/recorder/forms_and_fee_schedules.php)",
+        "The DuPage County Recorder is at 421 N. County Farm Road, Wheaton, IL 60187. The phone is (630) 407-5400. (source: https://dupagecounty.gov/business_detail_T12_R999.php)",
+        "Legal Self Help is in the Law Library on the second floor at the south end of the DuPage County Judicial Center, 505 N. County Farm Road, Wheaton. (source: https://www.illinoiscourts.gov/courts-directory/7/DuPage-County-Courthouse/court/)",
+        "The DuPage Law Library phone is 630-407-8811. Its listed hours are Monday through Friday, 8 a.m. to 4:30 p.m. (source: https://www.dupagecounty.gov/elected_officials/18th_judicial_circuit_court/law_library/)",
+        "The DuPage senior homestead exemption lowers assessed value by up to $8,000 for owners who are 65 by December 31 of the assessment year. Proof of ownership can include a will with a death certificate. Applications go to the Supervisor of Assessments, 421 N. County Farm Road, Wheaton. Call 630-407-5858 with questions. (source: https://www.dupagecounty.gov/government/departments/supervisor_of_assessments/exemptions/senior_citizens/)"
+      ],
+      "cities": [
+        "wheaton",
+        "naperville"
+      ],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "grundy",
+      "name": "Grundy County",
+      "seat": "Morris",
+      "circuit": "13th Judicial Circuit",
+      "probateCourt": {
+        "name": "Grundy County Courthouse (13th Circuit)",
+        "address": "111 East Washington Street, Morris, IL 60450",
+        "url": "https://www.illinoiscourts.gov/courts-directory/90/Grundy-County-Courthouse/court"
+      },
+      "clerk": {
+        "name": "Grundy County Circuit Court Clerk",
+        "address": "111 E Washington St., Room 30, Morris, IL 60450",
+        "phone": "(815) 941-3256",
+        "url": "https://www.grundycountyil.gov/services/circuit_court_clerk/"
+      },
+      "recorder": {
+        "name": "Grundy County Clerk and Recorder",
+        "address": "111 E. Washington Street, Rooms 10, 11 and 12, Morris, IL 60450",
+        "url": "https://www.grundycountyil.gov/services/clerk/index.php"
+      },
+      "notes": [
+        "The Grundy County Courthouse is at 111 East Washington Street in Morris and is open Monday to Friday, 8:00 a.m. to 4:30 p.m. The e-filing kiosk and Self-Help Center are in the Circuit Clerk's Office. (source: https://www.illinoiscourts.gov/courts-directory/90/Grundy-County-Courthouse/court)",
+        "The Circuit Court Clerk's civil division hears estates and guardianships. Its Document Center lists a Small Estates Affidavit. (source: https://www.grundycountyil.gov/services/circuit_court_clerk/civil.php)",
+        "The County Clerk and Recorder's office is in Rooms 10, 11 and 12 of the courthouse. The recording line is (815) 941-3224, and e-Recording is offered. (source: https://www.grundycountyil.gov/services/clerk/index.php)",
+        "For the Senior Citizens Homestead Exemption, owners 65 or older who live in the home may have their assessed value reduced by $5,000. The same page also describes a senior assessment freeze and a property tax deferral program. (source: https://grundycountyil.gov/services/assessor/special_valuations.php)",
+        "Grundy County Health Department Senior Programs, at 1320 Union St. in Morris, help residents 60 and older with benefits referrals, the Community Care Program and home-delivered meals. The page lists (815) 941-3404 and (815) 941-3121. (source: https://www.grundycountyil.gov/services/health/seniors.php)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "jackson",
+      "name": "Jackson County",
+      "seat": "Murphysboro",
+      "circuit": "1st Judicial Circuit",
+      "probateCourt": {
+        "name": "Jackson County Courthouse (Circuit Court, 1st Judicial Circuit)",
+        "address": "1001 Walnut Street, Murphysboro, IL 62966",
+        "url": "https://www.illinoiscourts.gov/courts-directory/91/Jackson-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Jackson County Circuit Clerk",
+        "address": "1001 Walnut Street, P.O. Drawer 730, Murphysboro, IL 62966",
+        "phone": "618-687-7300",
+        "url": "https://jacksoncoilcircuitclerk.gov/contact-us/"
+      },
+      "recorder": {
+        "name": "Jackson County Clerk and Recorder",
+        "address": "1001 Walnut Street, Murphysboro, IL 62966",
+        "url": "https://www.jacksoncounty-il.gov/392/Recording-Documents"
+      },
+      "notes": [
+        "Jackson County is in the 1st Judicial Circuit. The Circuit Clerk is at 1001 Walnut Street, Murphysboro, open Monday to Friday, 8:00 a.m. to 4:00 p.m. with no lunch closure. (source: https://jacksoncoilcircuitclerk.gov/contact-us/)",
+        "The clerk's contact page lists probate as a department you can ask for by phone. The main number is (618) 687-7300. (source: https://jacksoncoilcircuitclerk.gov/contact-us/)",
+        "The clerk's website links to E-File Illinois and the Odyssey eFileIL portal for electronic filing. (source: https://jacksoncoilcircuitclerk.gov/)",
+        "The clerk's filing fee schedule, revised November 4, 2025, lists a $278 filing fee for probate cases other than filing a will, plus a $100 Guardianship Advocacy Fee for most probate cases. Filing a will is $0. (source: http://jacksoncoilcircuitclerk.gov/wp-content/uploads/2025/11/2025-November-4-Filing-Fees-Updated.pdf)",
+        "The Jackson County Clerk and Recorder is at 1001 Walnut Street, Murphysboro. Phone (618) 687-7240. (source: https://www.jacksoncounty-il.gov/392/Recording-Documents)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "kane",
+      "name": "Kane County",
+      "seat": "Geneva",
+      "circuit": "16th Judicial Circuit",
+      "clerk": {
+        "name": "Clerk of the Circuit Court of Kane County",
+        "address": "540 South Randall Road, St. Charles, IL 60174",
+        "phone": "630-232-3413",
+        "url": "https://cic.countyofkane.org"
+      },
+      "recorder": {
+        "name": "Kane County Recorder",
+        "address": "Government Center, Bldg. C, 719 S. Batavia Ave., Geneva, IL 60134",
+        "phone": "630-232-5935",
+        "url": "https://clerk.kanecountyil.gov/Elections/Documents/GovernmentGuide.pdf"
+      },
+      "notes": [
+        "The Kane County fee schedule lists $314.00 for administration of a decedent's estate. Filing a will has no fee. The schedule is marked effective 9/1/2026. (source: https://cic.countyofkane.org/Documents/FeeSchedule.pdf)",
+        "Kane County e-filing runs through the statewide eFileIL site. The Clerk lists CICOfficeOperations@KaneCountyIL.gov for e-filing questions. (source: https://cic.countyofkane.org/Pages/How-To-eFile.aspx)",
+        "The Kane County Circuit Clerk's main office is at 540 South Randall Road, St. Charles. The phone is 630-232-3413. Hours are Monday to Friday, 8:30 AM to 4:30 PM. (source: https://cic.countyofkane.org)",
+        "The Kane County Recorder is in the Government Center, Building C, 719 S. Batavia Ave., Geneva. The phone is 630-232-5935. (source: https://clerk.kanecountyil.gov/Elections/Documents/GovernmentGuide.pdf)",
+        "Kane County local rules require a petition to admit a will to include an exact copy of the will. The representative must generally file an inventory within 60 days after letters issue. (source: https://www.illinois16thjudicialcircuit.org/Documents/localCourtRules/Article_08.pdf)",
+        "The Kane County Law Library is on the second floor of the Judicial Center, 37W777 IL Route 38, St. Charles. The phone is 630-406-7126. (source: https://www.kclawlibrary.org/Pages/i-am-representing-myself.aspx)",
+        "The Kane County senior homestead exemption lowers assessed value by $8,000 for owners age 65 or older. It renews automatically after approval. Call the Assessment Office at 630-208-3818. (source: https://assessments.kanecountyil.gov/Pages/Senior-Homestead.aspx)"
+      ],
+      "cities": [
+        "aurora",
+        "st-charles",
+        "geneva"
+      ],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "kankakee",
+      "name": "Kankakee County",
+      "seat": "Kankakee",
+      "circuit": "21st Judicial Circuit",
+      "probateCourt": {
+        "name": "Kankakee County Courthouse (21st Judicial Circuit)",
+        "address": "450 East Court Street, Kankakee, IL 60901",
+        "url": "https://www.illinoiscourts.gov/courts-directory/24/Kankakee-County-Courthouse-/court/"
+      },
+      "clerk": {
+        "name": "Kankakee County Circuit Clerk",
+        "address": "450 E. Court Street, Kankakee, IL 60901",
+        "phone": "815-936-5700",
+        "url": "https://kankakeecountyil.gov/502/County-Clerk-of-the-Circuit-Court"
+      },
+      "recorder": {
+        "name": "Kankakee County Recorder",
+        "address": "189 East Court Street, Kankakee, IL 60901",
+        "url": "https://k3countyrecorder.com/"
+      },
+      "notes": [
+        "Probate matters are handled at the main Circuit Clerk's Office in Room 209 of the Kankakee County Courthouse, 450 E. Court Street. (source: https://kankakeecountyil.gov/502/County-Clerk-of-the-Circuit-Court)",
+        "The Self-Help Center is on the second floor, outside the Circuit Clerk's office. An e-filing kiosk is inside the clerk's office, and online e-filing is also offered. (source: https://www.illinoiscourts.gov/courts-directory/24/Kankakee-County-Courthouse-/court/)",
+        "The Recorder's office is at 189 East Court Street and offers eRecording. It accepts cash and check only for recordings, and accepts only MyDec PTAX forms made on the Illinois Department of Revenue website. (source: https://k3countyrecorder.com/)",
+        "The Supervisor of Assessments office is at 189 East Court Street, phone 815-937-2945. Its page links general and senior homestead exemption information and the senior assessment freeze form (PTAX-340). (source: https://www.k3county.net/184/Supervisor-of-Assessments-Office)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "kendall",
+      "name": "Kendall County",
+      "seat": "Yorkville",
+      "circuit": "23rd Judicial Circuit",
+      "clerk": {
+        "name": "Kendall County Circuit Clerk",
+        "address": "807 W. John St., Yorkville, IL 60560",
+        "phone": "630-553-4183",
+        "url": "https://www.kendallcountyil.gov/offices/circuit-clerk/probate-deceased"
+      },
+      "recorder": {
+        "name": "Kendall County Recorder's Office",
+        "address": "502 S. Main St., Yorkville, IL 60560",
+        "phone": "630-553-4112",
+        "url": "https://www.kendallcountyil.gov/offices/county-clerk-recorder"
+      },
+      "notes": [
+        "The Kendall County Circuit Clerk page lists 807 W. John St., Yorkville, phone 630-553-4183, Monday to Friday 8:30am to 4:30pm. It says a copy of the will must be filed. Without a will, file a Petition for Letters of Administration. (source: https://www.kendallcountyil.gov/offices/circuit-clerk/probate-deceased)",
+        "Kendall County civil cases must be e-filed through eFileIL. Probate cases get an automatic 9-month status date. Documents are not accepted by fax or email. (source: https://www.kendallcountyil.gov/offices/circuit-clerk/general-information)",
+        "The Kendall County Recorder's Office is at 502 S. Main St., Yorkville. The phone is 630-553-4112. Hours are Monday to Friday, 8:00 a.m. to 4:30 p.m. (source: https://www.kendallcountyil.gov/offices/county-clerk-recorder)"
+      ],
+      "cities": [
+        "yorkville"
+      ],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "knox",
+      "name": "Knox County",
+      "seat": "Galesburg",
+      "circuit": "9th Judicial Circuit",
+      "probateCourt": {
+        "name": "Knox County Courthouse",
+        "address": "200 South Cherry Street, Galesburg, IL 61401",
+        "url": "https://www.knoxcountyil.gov/departments/circuit_clerk/"
+      },
+      "clerk": {
+        "name": "Knox County Circuit Clerk",
+        "address": "200 South Cherry Street, Galesburg, IL 61401",
+        "phone": "309-345-3859",
+        "url": "https://www.knoxcountyil.gov/departments/circuit_clerk/"
+      },
+      "recorder": {
+        "name": "Knox County Recorder",
+        "address": "200 South Cherry Street, Galesburg, IL 61401",
+        "phone": "309-345-6718",
+        "url": "https://www.knoxcountyil.gov/departments/county_recorder/index.php"
+      },
+      "notes": [
+        "The Circuit Clerk lists a separate Probate phone line, 309-345-6733. The main clerk line is 309-345-3859. (source: https://www.knoxcountyil.gov/departments/circuit_clerk/)",
+        "The Recorder is on the third floor of the Knox County Courthouse. Recordings received by 3:30 p.m. are processed the same day. The office also collects the Illinois Real Estate Transfer Tax. (source: https://www.knoxcountyil.gov/departments/county_recorder/index.php)",
+        "Knox County land records can be searched online and offer e-recording. (source: https://www.knoxcountyil.gov/departments/county_recorder/index.php)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "lasalle",
+      "name": "LaSalle County",
+      "seat": "Ottawa",
+      "circuit": "13th Judicial Circuit",
+      "probateCourt": {
+        "name": "LaSalle County Courthouse (13th Circuit)",
+        "address": "119 West Madison St., Ottawa, IL 61350",
+        "url": "https://www.illinoiscourts.gov/courts-directory/98/LaSalle-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "LaSalle County Circuit Clerk",
+        "address": "119 W. Madison St., Ottawa, IL 61350 (Civil Division)",
+        "phone": "815-434-8671",
+        "url": "https://lasallecounty.com/"
+      },
+      "recorder": {
+        "name": "LaSalle County Recorder of Deeds",
+        "address": "707 E Etna Road, Ottawa, IL 61350",
+        "url": "https://lasallecountyil.gov/Directory.aspx?did=35"
+      },
+      "notes": [
+        "The LaSalle County Courthouse is at 119 West Madison St. in Ottawa. The e-Filing Kiosk and Self-Help Center are in the Circuit Clerk's Office, Room 201. (source: https://www.illinoiscourts.gov/courts-directory/98/LaSalle-County-Courthouse/court/)",
+        "The Circuit Clerk keeps a Civil Division at 119 W. Madison St. and a Traffic and Criminal Division at 707 Etna Road, both in Ottawa. (source: https://lasallecounty.com/)",
+        "The Recorder of Deeds office is at 707 E Etna Road in Ottawa, phone 815-434-8226, open Monday to Friday, 8 am to 4:30 pm. (source: https://lasallecountyil.gov/Directory.aspx?did=35)",
+        "The County Assessment Office is at 707 E Etna Road, phone 815-434-8233. Its exemptions page describes the $5,000 Senior Homestead Exemption, the Low-Income Senior Citizens Assessment Freeze, and a tax deferral program run through the County Treasurer. (source: https://lasallecountyil.gov/204/Exemptions)",
+        "The Circuit Clerk's fee schedule is a PDF linked from the clerk's site. Ask the Civil Division at 815-434-8671 for the current probate filing fee. (source: https://lasallecounty.com/fee-schedule)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "lake",
+      "name": "Lake County",
+      "seat": "Waukegan",
+      "circuit": "19th Judicial Circuit",
+      "probateCourt": {
+        "name": "Lake County Courthouse",
+        "address": "18 N. County Street, Waukegan, IL 60085",
+        "url": "https://www.illinoiscourts.gov/courts-directory/96/Lake-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Lake County Circuit Court Clerk",
+        "address": "18 N. County Street, Waukegan, IL 60085",
+        "phone": "847-377-3380",
+        "url": "https://www.lakecountycircuitclerk.org"
+      },
+      "recorder": {
+        "name": "Recording Division of the Lake County Clerk's Office",
+        "address": "18 N. County Street, 6th Floor, Waukegan, IL 60085",
+        "phone": "847-377-2575",
+        "url": "https://www.lakecountyil.gov/2324/Recording-CopyFees"
+      },
+      "notes": [
+        "The Lake County fee schedule lists $284.00 for administration of a decedent's estate. Filing a will only costs $0.00. The schedule is marked effective 09/16/2026. (source: https://www.lakecountycircuitclerk.org/DocumentCenter/View/736)",
+        "Lake County's wills page says to file a will within 30 days after death and that a will cannot be filed before death. Illinois law (755 ILCS 5/6-1) says to file it immediately after the death, so do not wait for the 30 days. Probate petitions must be filed by an attorney. Probate court dates are on Mondays, Tuesdays and Thursdays at 9:00 AM. (source: https://www.lakecountycircuitclerk.org/201/Wills-Probate)",
+        "Lake County uses the statewide e-filing system through a certified filing service provider. The Clerk's page says civil filings must be e-filed unless an exemption applies. (source: https://www.lakecountycircuitclerk.org/186/E-Filing)",
+        "Deeds in Lake County are recorded by the Recording Division of the County Clerk's Office, 18 N. County Street, 6th Floor, Waukegan. The phone is 847-377-2575. The page lists $70 for a standard document. (source: https://www.lakecountyil.gov/2324/Recording-CopyFees)",
+        "The Center for Self-Representation is in the William D. Block Memorial Law Library, first floor of the Lake County Courthouse, 18 N. County St., Waukegan. (source: https://www.illinoiscourts.gov/courts-directory/96/Lake-County-Courthouse/court/)",
+        "The Lake County senior homestead exemption reduces assessed value by $8,000 for owners age 65 or older who live in the home. It does not need yearly renewal, but it does not carry over if the parcel number changes. (source: https://www.lakecountyil.gov/457/Senior-Homestead-Exemption)"
+      ],
+      "cities": [
+        "waukegan"
+      ],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "macon",
+      "name": "Macon County",
+      "seat": "Decatur",
+      "circuit": "6th Judicial Circuit",
+      "probateCourt": {
+        "name": "Macon County Courthouse",
+        "address": "253 E. Wood Street, Decatur, IL 62523",
+        "url": "https://www.illinoiscourts.gov/courts-directory/99/Macon-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Macon County Circuit Clerk",
+        "address": "253 East Wood Street, Room 129, Decatur, IL 62523",
+        "phone": "217-624-4442",
+        "url": "https://cclerk.co.macon.il.us/"
+      },
+      "recorder": {
+        "name": "Macon County Recorder",
+        "address": "141 South Main Street, Room 201, Decatur, IL 62523",
+        "url": "https://maconcounty.illinois.gov/departments/recorder"
+      },
+      "notes": [
+        "The Circuit Clerk's office and an e-filing kiosk are on the first floor of the Macon County Courthouse. The Self-Help Center and Law Library are on the third floor. (source: https://www.illinoiscourts.gov/courts-directory/99/Macon-County-Courthouse/court/)",
+        "The Macon County Recorder is at 141 South Main Street, Room 201, Decatur, phone 217-424-1359. It records deeds, mortgages and liens. (source: https://maconcounty.illinois.gov/departments/recorder)",
+        "The Macon County Supervisor of Assessments, at 141 South Main Street, Room 401, phone 217-424-1364, lists the Senior Citizens Homestead Exemption, the Senior Assessment Freeze and the Senior Tax Deferral program. (source: https://maconcounty.illinois.gov/departments/supervisor-of-assessments/)",
+        "The Macon County Circuit Clerk's fee page lists a $376.00 filing fee for Probate (Decedent's Estate) and a $2.00 fee for a Letter of Office. The page gives no effective date and says fees may change without notice. (source: https://www.cclerk.co.macon.il.us/court-fees/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "macoupin",
+      "name": "Macoupin County",
+      "seat": "Carlinville",
+      "circuit": "7th Judicial Circuit",
+      "probateCourt": {
+        "name": "Macoupin County Courthouse (Circuit Court, 7th Judicial Circuit)",
+        "address": "201 East Main Street, Carlinville, IL 62626",
+        "url": "https://www.illinoiscourts.gov/courts-directory/30/Macoupin-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Macoupin County Circuit Clerk",
+        "address": "201 East Main, Carlinville, IL 62626",
+        "phone": "217-854-3211",
+        "url": "https://macoupincountyil.gov/cat_sev/circuit-clerk/"
+      },
+      "recorder": {
+        "name": "Macoupin County Clerk and Recorder",
+        "address": "201 East Main, Carlinville, IL 62626",
+        "url": "https://macoupincountyil.gov/ova_sev/county-clerk-and-recorder/"
+      },
+      "notes": [
+        "Macoupin County is in the 7th Judicial Circuit. The courthouse and Circuit Clerk are at 201 East Main Street, Carlinville. (source: https://www.illinoiscourts.gov/courts-directory/30/Macoupin-County-Courthouse/court/)",
+        "The Circuit Clerk's page lists the Probate Division at 217-854-3211, extension 922. (source: https://macoupincountyil.gov/cat_sev/circuit-clerk/)",
+        "The County Clerk and Recorder is at 201 East Main, Carlinville. Hours are Monday to Friday, 8:30 a.m. to 4:30 p.m. Phone 217-854-3214. (source: https://macoupincountyil.gov/ova_sev/county-clerk-and-recorder/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "madison",
+      "name": "Madison County",
+      "seat": "Edwardsville",
+      "circuit": "3rd Judicial Circuit",
+      "probateCourt": {
+        "name": "Madison County Courthouse (Circuit Court, 3rd Judicial Circuit)",
+        "address": "155 N. Main Street, Edwardsville, IL 62025",
+        "url": "https://www.illinoiscourts.gov/courts-directory/100/Madison-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Madison County Circuit Clerk",
+        "address": "155 N. Main Street, Edwardsville, IL 62025",
+        "phone": "618-692-6240",
+        "url": "https://www.madisoncountyil.gov/departments/circuit_clerk/"
+      },
+      "recorder": {
+        "name": "Madison County Recorder",
+        "url": "https://www.madisoncountyil.gov/departments/recorder/index.php"
+      },
+      "notes": [
+        "The Madison County Circuit Clerk is open Monday to Friday, 8:30 a.m. to 4:30 p.m. The main office is at the Madison County Courthouse, 155 N. Main Street, Edwardsville. A satellite office at 1700 E. Broadway, Alton, is open Tuesday and Friday only. (source: https://www.madisoncountyil.gov/departments/circuit_clerk/)",
+        "The Circuit Clerk does not accept emailed filings. Civil cases, which include probate, must go through an approved e-filing provider. Self-represented filers have been required to e-file since June 1, 2022, and the clerk offers in-person e-filing help at the courthouse. (source: https://madisoncountyil.gov/departments/circuit_clerk/e-file/)",
+        "The clerk's probate page links to a small estate affidavit form, an estate claim form and a decedent's estate status report. The small estate affidavit page says it is for estates of $150,000 or less, and clerk staff cannot explain how to fill it out. (source: https://www.madisoncountyil.gov/departments/circuit_clerk/small_estate_affidavit.php)",
+        "The clerk posts a \"Fees of the Court\" book, updated 9-8-26, on its website. Check it for the current probate filing fee before you file. (source: https://madisoncountyil.gov/departments/circuit_clerk/e-file/)",
+        "The Madison County Law Library is in the courthouse basement at 155 N. Main Street, Edwardsville. It is open to the public, offers Westlaw on three computers and copies at 10 cents a page. Phone (618) 296-5921. (source: https://www.madisoncountyil.gov/departments/circuit_court/law_library/index.php)",
+        "A Legal Self-Help Center in the Madison County Law Library gives free forms and legal information. Staff cannot give legal advice or prepare documents. Hours are Monday to Friday, 8:30 a.m. to 4:30 p.m. (source: https://www.illinoiscourts.gov/courts-directory/100/Madison-County-Courthouse/court/)",
+        "Low-income residents can book a free 30-minute legal advice appointment on the second and fourth Tuesday of each month. The question must relate to a Madison County case. Call (618) 296-5921 to schedule. (source: https://www.madisoncountyil.gov/departments/circuit_court/law_library/legal_advice_conference_center.php)",
+        "Madison County offers a $5,000 Senior Citizens Homestead Exemption for owners age 65 or older. A separate Low-Income Senior Citizens Assessment Freeze needs household income under $65,000 and a yearly application by July 31. The assessment office phone is (618) 296-6200. (source: https://www.madisoncountyil.gov/departments/chief_county_assesment_office/available_exemptions.php)"
+      ],
+      "cities": [
+        "alton"
+      ],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "mchenry",
+      "name": "McHenry County",
+      "seat": "Woodstock",
+      "circuit": "22nd Judicial Circuit",
+      "probateCourt": {
+        "name": "Michael J. Sullivan Judicial Center",
+        "address": "2200 N. Seminary Avenue, Woodstock, IL 60098",
+        "url": "https://mchenrycountyil.gov/county-government/building-info-directions/courthouse-building"
+      },
+      "clerk": {
+        "name": "McHenry County Circuit Clerk, Civil and Probate",
+        "address": "2200 N. Seminary Avenue, Woodstock, IL 60098",
+        "url": "https://www.mchenrycircuitclerk.org/court-information/probate/"
+      },
+      "recorder": {
+        "name": "McHenry County Recorder",
+        "phone": "815-334-4110",
+        "url": "https://www.mchenrycountyil.gov/departments/county-recorder/general-information"
+      },
+      "notes": [
+        "McHenry County lists $264.00 for administration of a decedent's estate. Filing a will has no fee. The schedule is marked effective October 1, 2026. (source: https://www.mchenrycircuitclerk.org/wp-content/uploads/2026/08/Civil-Filing-Fee-List-Revised-10-01-2026.pdf)",
+        "In McHenry County, all probate filings must be e-filed unless there is good cause. Wills cannot be e-filed. The original will goes to the Civil windows in Room 136 within 30 days after death. (source: https://www.mchenrycircuitclerk.org/court-information/probate/)",
+        "The McHenry County Legal Self-Help Center is in Room 346 of the Michael J. Sullivan Judicial Center, 2200 N. Seminary Avenue, Woodstock. The phone is 815-334-0317. Staff cannot give legal advice. (source: https://www.mchenrycircuitclerk.org/court-information/legal-self-help/)",
+        "The McHenry County Law Library is on the third floor of the Michael J. Sullivan Judicial Center in Woodstock. The phone is 815.334.4166. (source: https://www.22ndcircuitil.gov/law-library/)",
+        "The McHenry County Recorder's phone is 815-334-4110. The page says recorded documents are checked against Illinois recording requirements. (source: https://www.mchenrycountyil.gov/departments/county-recorder/general-information)",
+        "McHenry County lists a senior homestead exemption of up to $8,000 for age 65 or older. A senior assessment freeze is available at household income of $75,000 or less, with applications due July 1. Call the Office of Assessments at (815) 334-4290. (source: https://www.mchenrycountyil.gov/departments/assessments/exemptions)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "mclean",
+      "name": "McLean County",
+      "seat": "Bloomington",
+      "circuit": "11th Judicial Circuit",
+      "probateCourt": {
+        "name": "McLean County Law and Justice Center",
+        "address": "104 W. Front Street, Bloomington, IL 61701",
+        "url": "https://www.illinoiscourts.gov/courts-directory/34/McLean-County-Law-and-Justice-Center/court/"
+      },
+      "clerk": {
+        "name": "McLean County Circuit Clerk",
+        "address": "104 W. Front Street, Room 404, Bloomington, IL 61701",
+        "phone": "309-888-5350",
+        "url": "https://www.mcleancountyil.gov/80/Circuit-Clerk"
+      },
+      "recorder": {
+        "name": "McLean County Clerk, Recording Division",
+        "address": "115 E Washington Street, Room M104, Bloomington, IL 61702",
+        "url": "https://mcleancountyil.gov/index.aspx?NID=791"
+      },
+      "notes": [
+        "Probate is handled by the Circuit Clerk's Civil Division, 4th floor, Room 404 of the Law and Justice Center. The probate phone line is 309-888-5350. (source: https://www.mcleancountyil.gov/578/Civil-Probate)",
+        "The Self-Help Center and Law Library are on the 6th floor of the Law and Justice Center. E-filing kiosks are on the 4th floor in the Circuit Clerk's office and on the 6th floor. (source: https://www.illinoiscourts.gov/courts-directory/34/McLean-County-Law-and-Justice-Center/court/)",
+        "The McLean County civil fee schedule, effective September 17, 2026, lists a $282.00 filing fee for Probate (PR), Administration of Decedent's Estate. (source: https://mcleancountyil.gov/DocumentCenter/View/2751/FeeSchedule-Eff-Sept-17-2026?bidId=)",
+        "Since December 31, 2013, the County Clerk's Office has handled the Recorder's duties at 115 E Washington Street, Room M104, Bloomington, phone 309-888-5170. (source: https://mcleancountyil.gov/index.aspx?NID=791)",
+        "For senior property tax exemptions, call the McLean County Supervisor of Assessments at 309-888-5130. The Treasurer, at 309-888-5180, handles the Senior Citizen Tax Deferral program, due March 1. (source: https://www.mcleancountyil.gov/406/Senior-Citizen-Tax-Information)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "monroe",
+      "name": "Monroe County",
+      "seat": "Waterloo",
+      "circuit": "24th Judicial Circuit",
+      "probateCourt": {
+        "name": "Monroe County Courthouse (Circuit Court, 24th Judicial Circuit)",
+        "address": "100 South Main Street, Waterloo, IL 62298",
+        "url": "https://24thcircuit.illinoiscourts.gov/?p=2"
+      },
+      "clerk": {
+        "name": "Monroe County Circuit Clerk",
+        "address": "100 South Main Street, Room 115, Waterloo, IL 62298",
+        "phone": "618-939-8681",
+        "url": "https://24thcircuit.illinoiscourts.gov/?p=2"
+      },
+      "recorder": {
+        "name": "Monroe County Clerk and Recorder",
+        "url": "https://www.mococlerk.com"
+      },
+      "notes": [
+        "Monroe County is in the 24th Judicial Circuit. The Circuit Clerk's office is at 100 South Main Street, Room 115, Waterloo. Phone (618) 939-8681. (source: https://24thcircuit.illinoiscourts.gov/?p=2)",
+        "The 24th Circuit's Monroe County page links to an e-filing guide on the Circuit Clerk's website. (source: https://24thcircuit.illinoiscourts.gov/?p=2)",
+        "The Monroe County Clerk and Recorder handles land records, including deeds, mortgages and releases. The office is open Monday to Friday, 8:00 a.m. to 4:30 p.m. Phone (618) 939-8623, extension 302. (source: https://www.mococlerk.com)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "ogle",
+      "name": "Ogle County",
+      "seat": "Oregon",
+      "circuit": "15th Judicial Circuit",
+      "probateCourt": {
+        "name": "Ogle County Judicial Center",
+        "address": "106 S. 5th Street, Suite 300, Oregon, IL 61061",
+        "url": "https://www.oglecountyil.gov/departments/circuit_clerk/contact_us.php"
+      },
+      "clerk": {
+        "name": "Ogle County Circuit Clerk",
+        "address": "106 S. 5th Street, Suite 300, Oregon, IL 61061",
+        "phone": "815-732-1130",
+        "url": "https://www.oglecountyil.gov/departments/circuit_clerk/contact_us.php"
+      },
+      "recorder": {
+        "name": "Ogle County Clerk & Recorder",
+        "address": "105 S 5th St, Ste 104, Oregon, IL 61061",
+        "phone": "815-732-1110",
+        "url": "https://www.oglecountyil.gov/departments/county_clerk/index.php"
+      },
+      "notes": [
+        "The Ogle County Circuit Clerk is in the Judicial Center, 106 S. 5th Street, Suite 300, Oregon. The Civil Division number is 815-732-1130 and hours are Monday to Friday, 8:30 a.m. to 4:30 p.m. (source: https://www.oglecountyil.gov/departments/circuit_clerk/contact_us.php)",
+        "The Circuit Clerk's site links to E-File guides, standards and exemptions. (source: https://www.oglecountyil.gov/departments/circuit_clerk/contact_us.php)",
+        "The Circuit Clerk posts a filing fee schedule dated 9-4-2026. Ask the clerk for the current probate fee before filing. (source: https://www.oglecountyil.gov/departments/circuit_clerk/filing_fees.php)",
+        "The County Clerk & Recorder at 105 S 5th St, Ste 104, Oregon indexes recorded property documents, and the original is returned to the person who presented it. Phone is (815) 732-1110. (source: https://www.oglecountyil.gov/departments/county_clerk/index.php)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "peoria",
+      "name": "Peoria County",
+      "seat": "Peoria",
+      "circuit": "10th Judicial Circuit",
+      "probateCourt": {
+        "name": "Peoria County Courthouse",
+        "address": "324 Main Street, Peoria, IL 61602",
+        "url": "https://www.illinoiscourts.gov/courts-directory/38/Peoria-County-Court-Administration/court/"
+      },
+      "clerk": {
+        "name": "Peoria County Circuit Clerk",
+        "address": "324 Main Street, Room G-22, Peoria, IL 61602",
+        "phone": "309-672-6000",
+        "url": "https://www.peoriacounty.gov/1344/Circuit-Clerk"
+      },
+      "recorder": {
+        "name": "Peoria County Clerk, Recording Division",
+        "address": "324 Main Street, Peoria, IL 61602",
+        "url": "https://www.peoriacounty.gov/directory"
+      },
+      "notes": [
+        "Peoria County is in the 10th Judicial Circuit, together with Marshall, Putnam, Stark and Tazewell counties. (source: https://www.illinoiscourts.gov/courts-directory/38/Peoria-County-Court-Administration/court/)",
+        "The Self-Help Center and the law library are in Room 211 of the courthouse. Four public computers there can be used for free legal research and for e-filing with the Circuit Clerk. (source: https://www.illinoiscourts.gov/courts-directory/38/Peoria-County-Court-Administration/court/)",
+        "The Peoria County Circuit Clerk's filing fee list, titled 9/4/26, shows a $281.00 filing fee for Administration of Decedent's Estate. The document does not state a separate effective date. (source: https://www.peoriacounty.gov/DocumentCenter/View/18900/Peoria-County-Circuit-Clerk-Filing-Fees-9426)",
+        "In Peoria County, recording is handled under the County Clerk at 309-672-6090. The county directory lists no separate Recorder of Deeds. (source: https://www.peoriacounty.gov/directory)",
+        "Peoria County offers a $5,000 Senior Homestead Exemption at age 65, a Senior Assessment Freeze with a $65,000 income limit, and a Senior Citizen Tax Deferral program. Call the Supervisor of Assessments at 309-672-6910. (source: https://www.peoriacounty.gov/399/Tax-Relief-Exemptions)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "rock-island",
+      "name": "Rock Island County",
+      "seat": "Rock Island",
+      "circuit": "14th Judicial Circuit",
+      "probateCourt": {
+        "name": "Rock Island County Justice Center",
+        "address": "1317 Third Avenue, Rock Island, IL 61201",
+        "url": "https://rockislandcountyil.gov/787/Rock-Island-County-Probate"
+      },
+      "clerk": {
+        "name": "Rock Island County Circuit Clerk",
+        "address": "1317 Third Avenue, Rock Island, IL 61201",
+        "url": "https://rockislandcountyil.gov/221/Filing-Fees"
+      },
+      "recorder": {
+        "name": "Rock Island County Recorder",
+        "address": "1504 3rd Avenue, 2nd Floor, Rock Island, IL 61201",
+        "phone": "309-558-3360",
+        "url": "https://rockislandcountyil.gov/308/Recorders-Office"
+      },
+      "notes": [
+        "Probate walk-in is held every day from 9:00 to 9:30 a.m. in Courtroom 402. It covers matters such as uncontested opening and closing of estates and petitions to sell real estate. (source: https://rockislandcountyil.gov/787/Rock-Island-County-Probate)",
+        "The county's probate page offers forms for a Petition for Probate and for Letters, a Small Estate Affidavit and an Inventory. (source: https://rockislandcountyil.gov/787/Rock-Island-County-Probate)",
+        "The Recorder's Office is at 1504 3rd Avenue, 2nd Floor, open Monday to Friday, 8 a.m. to 4:30 p.m. It records deeds, mortgages, releases and liens. (source: https://rockislandcountyil.gov/308/Recorders-Office)",
+        "The recording fee schedule effective February 1, 2025 lists $83 for a conforming document and $104 for a non-conforming document. (source: https://rockislandcountyil.gov/314/Fees)",
+        "The county courthouse at 1317 3rd Avenue is open Monday to Friday, 8:00 a.m. to 4:30 p.m. The state courts directory lists a self-help center and a law library there. (source: https://www.illinoiscourts.gov/courts-directory/142/Rock-Island-County-Courthouse/court/)"
+      ],
+      "cities": [
+        "rock-island"
+      ],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "sangamon",
+      "name": "Sangamon County",
+      "seat": "Springfield",
+      "circuit": "7th Judicial Circuit",
+      "probateCourt": {
+        "name": "Sangamon County Courthouse (Sangamon County Complex)",
+        "address": "200 South 9th Street, Springfield, IL 62701",
+        "url": "https://www.illinoiscourts.gov/courts-directory/43/Sangamon-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Sangamon County Circuit Clerk",
+        "address": "200 South 9th Street, Room 405, Springfield, IL 62701",
+        "phone": "217-753-6674",
+        "url": "https://www.sangamoncountycircuitclerk.org"
+      },
+      "recorder": {
+        "name": "Sangamon County Recorder",
+        "url": "https://sangamonil.gov/departments/m-r/recorder"
+      },
+      "notes": [
+        "Probate cases are filed with the Circuit Clerk in Room 405 on the 4th floor of the Sangamon County Courthouse, 200 South 9th Street, Springfield. (source: https://www.illinoiscourts.gov/courts-directory/43/Sangamon-County-Courthouse/court/)",
+        "The Sangamon County Self-Help Center is located in the Circuit Clerk's Office. An online law library terminal is on the 6th floor of the courthouse. (source: https://www.illinoiscourts.gov/courts-directory/43/Sangamon-County-Courthouse/court/)",
+        "The Circuit Clerk's office uses the statewide Electronic Filing Manager and has an e-filing kiosk in Room 405. The clerk advises allowing 30 to 45 minutes at the front counter to e-file. (source: https://www.sangamoncountycircuitclerk.org)",
+        "The Sangamon County fee schedule, marked updated 09/21/2026, lists a filing fee of $276.00 for Administration of Decedent's Estate. (source: https://www.sangamoncountycircuitclerk.org/application/files/8717/8973/7703/9-21-2026_Filing_Fees_Final.pdf)",
+        "The Sangamon County Recorder is a separate office from the County Clerk. Its page links to fee, e-recording and land records search information. (source: https://sangamonil.gov/departments/m-r/recorder)",
+        "The Sangamon County Treasurer runs a Senior Citizens Real Estate Tax Deferral program, and the Supervisor of Assessments handles homestead exemption applications. (source: https://sangamonil.gov/departments/s-z/supervisor-of-assessments/homestead-exemption)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "st-clair",
+      "name": "St. Clair County",
+      "seat": "Belleville",
+      "circuit": "20th Judicial Circuit",
+      "probateCourt": {
+        "name": "St. Clair County Courthouse (Circuit Court, 20th Judicial Circuit)",
+        "address": "10 Public Square, Belleville, IL 62220",
+        "url": "https://www.illinoiscourts.gov/courts-directory/109/St-Clair-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "St. Clair County Circuit Clerk",
+        "address": "10 Public Square, Belleville, IL 62220",
+        "phone": "618-825-2323",
+        "url": "https://www.stclaircountyil.gov/elected-officials/circuitClerk"
+      },
+      "recorder": {
+        "name": "St. Clair County Recorder of Deeds",
+        "address": "10 Public Square, Belleville, IL 62220",
+        "url": "https://www.stclaircountyil.gov/Departments/RecorderofDeeds"
+      },
+      "notes": [
+        "St. Clair County is in the 20th Judicial Circuit. The courthouse is at 10 Public Square, Belleville. (source: https://www.illinoiscourts.gov/courts-directory/109/St-Clair-County-Courthouse/court/)",
+        "The Circuit Clerk requires civil filings, including probate, to be e-filed through Odyssey eFileIL under Supreme Court Rule 9. The clerk's office has public e-filing computers for use during business hours. (source: https://www.stclaircountyil.gov/departments/circuit-clerk/efile)",
+        "The St. Clair County Recorder of Deeds is at 10 Public Square, Belleville. Hours are Monday to Friday, 8:30 a.m. to 5:00 p.m. Items received after 3:00 p.m. are recorded the next business day. Phone (618) 825-2481. (source: https://www.stclaircountyil.gov/Departments/RecorderofDeeds)",
+        "The Recorder's posted fee for recording a deed is $55.00 with the RHSP surcharge, plus transfer tax when it applies. Call the office about a specific document. (source: https://www.stclaircountyil.gov/Departments/RecorderofDeeds)",
+        "A Legal Self-Help Center is inside the Law Library at the St. Clair County Courthouse. It has six stations with internet access, printers and a copier. (source: https://www.illinoiscourts.gov/courts-directory/109/St-Clair-County-Courthouse/court/)",
+        "The St. Clair County Office on Aging is at 201 North Church Street, Belleville. Phone (618) 234-4410. It runs senior activities, caregiver workshops and a Senior Wellness Center. (source: https://www.stclaircountyil.gov/departments/office-on-aging)"
+      ],
+      "cities": [
+        "belleville"
+      ],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "stephenson",
+      "name": "Stephenson County",
+      "seat": "Freeport",
+      "circuit": "15th Judicial Circuit",
+      "probateCourt": {
+        "name": "Stephenson County Courthouse",
+        "address": "15 North Galena Avenue, Freeport, IL 61032",
+        "url": "https://www.illinoiscourts.gov/courts-directory/47/Stephenson-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Stephenson County Circuit Clerk",
+        "address": "15 N. Galena Ave., 2nd Floor, Freeport, IL 61032",
+        "phone": "815-235-8266",
+        "url": "https://stephensoncountyil.gov/government/circuit_clerk_and_court/index.php"
+      },
+      "recorder": {
+        "name": "Stephenson County Clerk and Recorder",
+        "address": "50 West Douglas, Suite 500, Freeport, IL 61032",
+        "phone": "815-235-8289",
+        "url": "https://stephensoncountyil.gov/government/county_clerk_and_recorder/index.php"
+      },
+      "notes": [
+        "The Circuit Clerk is on the 2nd floor of the courthouse at 15 N. Galena Ave., open Monday to Friday, 8:30 a.m. to 4:30 p.m. Press 3 for the Civil Division. (source: https://stephensoncountyil.gov/government/circuit_clerk_and_court/index.php)",
+        "The courthouse has a Self-Help Center and an e-filing kiosk on the 2nd floor next to the Circuit Clerk. The law library is also on the 2nd floor. (source: https://www.illinoiscourts.gov/courts-directory/47/Stephenson-County-Courthouse/court/)",
+        "The County Clerk and Recorder is at 50 West Douglas, Suite 500, open Monday to Friday, 8:30 a.m. to 4:30 p.m. Documents recorded after July 1992 can be searched through the online Tapestry system. (source: https://stephensoncountyil.gov/government/county_clerk_and_recorder/index.php)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "tazewell",
+      "name": "Tazewell County",
+      "seat": "Pekin",
+      "circuit": "10th Judicial Circuit",
+      "probateCourt": {
+        "name": "Tazewell County Courthouse",
+        "address": "342 Court Street, Pekin, IL 61554",
+        "url": "https://www.illinoiscourts.gov/courts-directory/48/Tazewell-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Tazewell County Circuit Clerk",
+        "address": "342 Court Street, Pekin, IL 61554",
+        "phone": "309-477-2214",
+        "url": "https://tazewellcountyil.com/"
+      },
+      "recorder": {
+        "name": "Tazewell County Clerk & Recorder",
+        "address": "McKenzie Building, 11 S. 4th Street, Suite 124 (Recorder), Pekin, IL 61554",
+        "url": "https://tazewell-il.gov/countyclerkrecorder/"
+      },
+      "notes": [
+        "The Tazewell County law library is in Room 103 on the first floor of the courthouse in Pekin. A paralegal is on staff and public computers are available. (source: https://www.illinoiscourts.gov/courts-directory/48/Tazewell-County-Courthouse/court/)",
+        "The Tazewell County Circuit Clerk posts a civil fee schedule titled Sept 10, 2026. Call the Circuit Clerk at 309-477-2214 to confirm the probate filing fee. (source: https://tazewellcountyil.com/fee-schedule/)",
+        "The County Clerk & Recorder is in the McKenzie Building, 11 S. 4th Street, Pekin. The Recorder's phone is 309-477-2210, and the page links to e-recording information. (source: https://tazewell-il.gov/countyclerkrecorder/)",
+        "The Tazewell County Assessment Office is at 11 South Fourth Street, Suite 410, Pekin, phone 309-477-2275. It handles Senior Homestead (Form 324) and Senior Freeze (Form 340) applications. (source: https://tazewell-il.gov/assessments/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "vermilion",
+      "name": "Vermilion County",
+      "seat": "Danville",
+      "circuit": "5th Judicial Circuit",
+      "probateCourt": {
+        "name": "Rita B. Garman Vermilion County Courthouse",
+        "address": "7 North Vermilion Street, Danville, IL 61832",
+        "url": "https://www.illinoiscourts.gov/courts-directory/49/Vermilion-County-Courthouse-Rita-B-Garman-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Vermilion County Circuit Clerk",
+        "address": "7 North Vermilion Street, Danville, IL 61832",
+        "phone": "217-554-7700",
+        "url": "https://www.vercounty.org/circuit-clerk/"
+      },
+      "recorder": {
+        "name": "Vermilion County Recorder",
+        "url": "https://www.vercounty.org/recorder/"
+      },
+      "notes": [
+        "An e-filing kiosk is on the first floor of the Circuit Clerk's office in the Rita B. Garman Vermilion County Courthouse. The court page also links to statewide eFileIL. (source: https://www.illinoiscourts.gov/courts-directory/49/Vermilion-County-Courthouse-Rita-B-Garman-Courthouse/court/)",
+        "Vermilion County is in the 5th Judicial Circuit, with Clark, Coles and Edgar counties. (source: https://www.illinoiscourts.gov/courts-directory/interactive-map)",
+        "The Vermilion County Recorder's standard document fee is $69.00 for deeds, mortgages and releases, effective July 1, 2023. The fee is $19.00 less if the grantor or grantee is a government entity. (source: https://www.vercounty.org/recorder/recording-fees/)",
+        "Call the Vermilion County Assessment Office at 217-554-1940 to have a Senior Citizens Homestead Exemption application mailed to you. (source: https://www.vercounty.org/supervisor-of-assessments/exemption-information/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "whiteside",
+      "name": "Whiteside County",
+      "seat": "Morrison",
+      "circuit": "14th Judicial Circuit",
+      "probateCourt": {
+        "name": "Whiteside County Probate Division",
+        "address": "200 East Knox Street, Morrison, IL 61270",
+        "url": "https://whitesidecountyil.gov/216/Circuit-Clerk"
+      },
+      "clerk": {
+        "name": "Whiteside County Circuit Clerk",
+        "address": "200 East Knox Street, Morrison, IL 61270",
+        "phone": "815-772-5188",
+        "url": "https://whitesidecountyil.gov/216/Circuit-Clerk"
+      },
+      "recorder": {
+        "name": "Whiteside County Recorder",
+        "address": "200 E Knox Street, Floor 2, Morrison, IL 61270",
+        "url": "https://www.whitesidecountyil.gov/285/Recorder---Land-Records"
+      },
+      "notes": [
+        "The Probate Division is at 200 East Knox Street, Morrison, phone 815-772-5168. The Circuit Clerk also has a satellite office at 101 East Third Street, Sterling, phone 815-535-4530. (source: https://whitesidecountyil.gov/216/Circuit-Clerk)",
+        "The county fee schedule, revised October 1, 2025, lists $364.00 to file a decedent's estate. (source: https://whitesidecountyil.gov/DocumentCenter/View/201/Filling-Fees---Civil-Revised-April-2022-PDF)",
+        "The Recorder is at 200 E Knox Street, Floor 2, Morrison, open Monday to Friday, 8:30 a.m. to 4:30 p.m. It accepts only originals or certified copies, and real estate documents must include tax parcel numbers. (source: https://www.whitesidecountyil.gov/285/Recorder---Land-Records)",
+        "Recorder fees listed are $79.00 for a standard document and $99.00 for an irregular document. (source: https://www.whitesidecountyil.gov/285/Recorder---Land-Records)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "will",
+      "name": "Will County",
+      "seat": "Joliet",
+      "circuit": "12th Judicial Circuit",
+      "probateCourt": {
+        "name": "Will County Courthouse (Twelfth Judicial Circuit)",
+        "address": "100 W. Jefferson St., Joliet, IL 60432",
+        "url": "https://www.illinoiscourts.gov/courts-directory/110/Will-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Clerk of the Circuit Court of Will County",
+        "address": "Will County Court House, 100 W. Jefferson Street, Joliet, IL 60432",
+        "phone": "(815) 727-8592",
+        "url": "https://www.circuitclerkofwillcounty.com"
+      },
+      "recorder": {
+        "name": "Will County Recorder of Deeds",
+        "address": "158 N. Scott Street, Joliet, IL 60432-4143",
+        "url": "https://willcountyrecorder.com/"
+      },
+      "notes": [
+        "New estate cases in Will County must be filed electronically, not by mail. The clerk's site has a Small Estate Affidavit and a Decedent Estate Packet of forms. (source: https://www.circuitclerkofwillcounty.com/Civil/Probate)",
+        "The Self-Help Center is in the Law Library on the 3rd floor of the Will County Courthouse. E-filing kiosks are in the Law Library and in the Circuit Clerk's Office. (source: https://www.illinoiscourts.gov/courts-directory/110/Will-County-Courthouse/court/)",
+        "The Recorder of Deeds main office is at 158 N. Scott Street in Joliet, open Monday to Friday, 8:30 AM to 4:30 PM. A Bolingbrook office at 241 Canterbury Lane is open Tuesday and Thursday. (source: https://willcountyrecorder.com/)"
+      ],
+      "cities": [
+        "joliet"
+      ],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "williamson",
+      "name": "Williamson County",
+      "seat": "Marion",
+      "circuit": "1st Judicial Circuit",
+      "probateCourt": {
+        "name": "Williamson County Courthouse (Circuit Court, 1st Judicial Circuit)",
+        "address": "200 West Jefferson Street, Marion, IL 62959",
+        "url": "https://www.illinoiscourts.gov/courts-directory/148/Williamson-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Williamson County Circuit Clerk",
+        "address": "200 West Jefferson Street, Marion, IL 62959",
+        "phone": "618-997-1301",
+        "url": "https://www.williamsoncountyil.gov/departments/circuit-clerk/"
+      },
+      "recorder": {
+        "name": "Williamson County Clerk and Recorder",
+        "address": "407 N. Monroe St, Suite 119, Marion, IL 62959",
+        "url": "https://www.williamsoncountyil.gov/records/land-records/"
+      },
+      "notes": [
+        "Williamson County is in the 1st Judicial Circuit. The Circuit Clerk is at the courthouse, 200 W. Jefferson Street, Marion, open Monday to Friday, 8:00 a.m. to 4:00 p.m. Phone 618-997-1301. (source: https://www.williamsoncountyil.gov/departments/circuit-clerk/)",
+        "The clerk's page lists a probate and guardianship line, extension 3447 on the main number. The page's own link shows extension 3439, so confirm when you call. (source: https://www.williamsoncountyil.gov/departments/circuit-clerk/)",
+        "The 1st Circuit's Williamson County page links to the statewide Illinois e-filing site. (source: https://firstcircuitil.org/circuit-courts/williamson-county/)",
+        "The courthouse listing includes a Self-Help Center link for self-represented litigants. (source: https://www.illinoiscourts.gov/courts-directory/148/Williamson-County-Courthouse/court/)",
+        "Deeds are recorded at the County Clerk and Recorder, 407 N. Monroe St, Suite 119, Marion. Hours are Monday to Friday, 8:00 a.m. to 4:00 p.m. Only original signed documents are accepted, and e-recording is available through approved partners. (source: https://www.williamsoncountyil.gov/records/land-records/)",
+        "A MyDec-generated PTAX form marked \"Closing Completed\" must accompany recorded documents in Williamson County. The office cannot give advice about transferring property. (source: https://www.williamsoncountyil.gov/records/land-records/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "winnebago",
+      "name": "Winnebago County",
+      "seat": "Rockford",
+      "circuit": "17th Judicial Circuit",
+      "probateCourt": {
+        "name": "Winnebago County Courthouse",
+        "address": "400 West State Street, Rockford, IL 61101",
+        "url": "https://www.circuitclerk.wincoil.gov/civil-information/probate/probate/"
+      },
+      "clerk": {
+        "name": "Winnebago County Circuit Clerk",
+        "address": "400 West State Street, Rockford, IL 61101",
+        "phone": "815-319-4500",
+        "url": "https://www.circuitclerk.wincoil.gov/"
+      },
+      "recorder": {
+        "name": "Winnebago County Recorder",
+        "url": "https://wincoil.gov/images/departments/recorder/forms/Predictable%20Fee%20Schedule%202025.pdf"
+      },
+      "notes": [
+        "Wills are filed with the Circuit Clerk in Room 108 of the Winnebago County Courthouse. Bring the original will and any codicils, plus the date of birth and date of death. No fee is listed for filing the will itself. (source: https://www.circuitclerk.wincoil.gov/wills/)",
+        "The clerk's fee list effective July 20, 2026 shows $392.00 to open an Administration of Decedent's Estate case. Claims against an estate cost $25 to $60 depending on the amount. (source: https://www.circuitclerk.wincoil.gov/assets/1/7/Civil_Filing_Fee_List_-_07202026_V1.pdf)",
+        "Probate forms must be e-filed through an approved e-filing service provider. Wills cannot be filed electronically. The clerk's office cannot help prepare documents or give legal advice. (source: https://www.circuitclerk.wincoil.gov/civil-information/probate/probate/)",
+        "The Winnebago County Law Library is on the third floor of the courthouse at 400 W State St. It is open to the public during regular courthouse hours and has two public Westlaw terminals. (source: https://17thcircuit.illinoiscourts.gov/public-info/court-resources/law-library)",
+        "The Recorder's fee schedule effective January 1, 2025 lists $54.00 for a standard-format deed and $66.00 for a non-standard deed. (source: https://wincoil.gov/images/departments/recorder/forms/Predictable%20Fee%20Schedule%202025.pdf)",
+        "The Supervisor of Assessments is at 404 Elm St., Room 301, Rockford, phone (815) 319-4460. The senior citizen homestead exemption is for owners 65 or older who live in the home, and it reduces taxable value by up to $5,000. The low-income senior freeze must be renewed every year. (source: https://wincoil.gov/departments/supervisor-of-assessments/exemption-forms-information)"
+      ],
+      "cities": [
+        "rockford"
+      ],
+      "updated": "2026-10-26"
+    }
+  ]
+}

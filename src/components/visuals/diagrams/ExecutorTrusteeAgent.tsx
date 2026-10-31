@@ -94,22 +94,22 @@ export function ExecutorTrusteeAgent({ caption, bare, step }: DiagramProps) {
             <Text x={x + 78} y={154} size={22} weight={700}>
               {r.name}
             </Text>
-            <Text x={x + 78} y={176} size={14} color="muted">
+            <Text x={x + 78} y={176} size={15} color="muted">
               {r.sub}
             </Text>
             {/* when it acts */}
             <rect x={x + 20} y={210} width={(CW - 44) / 2} height={12} rx={6} style={{ fill: r.life ? c[r.tone] : "var(--v-line, #d9d6cf)" }} opacity={r.life ? 1 : 0.6} />
             <rect x={x + 24 + (CW - 44) / 2} y={210} width={(CW - 44) / 2} height={12} rx={6} style={{ fill: r.death ? c[r.tone] : "var(--v-line, #d9d6cf)" }} opacity={r.death ? 1 : 0.6} />
-            <Text x={x + 20} y={242} size={13} color="muted">
+            <Text x={x + 20} y={242} size={15} color="muted">
               During life
             </Text>
-            <Text x={x + CW - 20} y={242} size={13} color="muted" anchor="end">
+            <Text x={x + CW - 20} y={242} size={15} color="muted" anchor="end">
               After death
             </Text>
             {r.rows.map((t, k) => (
               <g key={k}>
                 <line x1={x + 20} x2={x + CW - 20} y1={rowY(k) - 4} y2={rowY(k) - 4} style={{ stroke: "var(--v-line, #d9d6cf)" }} strokeWidth={1.5} />
-                <Text x={x + 20} y={rowY(k) + 18} size={13} weight={700} color="muted">
+                <Text x={x + 20} y={rowY(k) + 18} size={15} weight={700} color="muted">
                   {labels[k].toUpperCase()}
                 </Text>
                 <Wrap x={x + 20} y={rowY(k) + 40} w={TW} size={15} text={t} lh={20} />

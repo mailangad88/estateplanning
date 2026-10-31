@@ -670,7 +670,7 @@ export function mergePlans(base: FamilyPlanBody, extra: FamilyPlanBody): FamilyP
 
 /** Same wording as EDUCATIONAL_DISCLAIMER in src/server/nurture/compliance.ts (a test keeps them equal). */
 export const FAMILY_PLAN_DISCLAIMER =
-  "This is educational information, not legal advice. Reading it does not create an attorney-client relationship.";
+  "This is educational information, not legal advice. Reading it does not create an attorney-client relationship. This is a referral website: we match you with an appropriate attorney.";
 
 export const FAMILY_PLAN_CONSENT_VERSION = "family-plan-2026-10";
 

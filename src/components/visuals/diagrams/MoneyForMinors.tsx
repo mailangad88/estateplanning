@@ -62,7 +62,7 @@ export function MoneyForMinors({ caption, bare, step }: DiagramProps) {
             <Wrap x={x + 76} y={150} w={190} size={18} weight={700} text={o.title} lh={22} />
             {o.facts.map(([label, text], j) => (
               <g key={label}>
-                <Text x={x + 20} y={214 + j * 96} size={13} weight={700} color="muted">
+                <Text x={x + 20} y={214 + j * 96} size={15} weight={700} color="muted">
                   {label.toUpperCase()}
                 </Text>
                 <Wrap x={x + 20} y={236 + j * 96} w={242} size={15} text={text} lh={19} />

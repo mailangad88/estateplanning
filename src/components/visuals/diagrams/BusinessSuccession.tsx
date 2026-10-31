@@ -40,7 +40,7 @@ export function BusinessSuccession({ caption, bare, step }: DiagramProps) {
             <Card x={x} y={y} w={224} h={150} fill="surface" border="line" />
             <Icon name={p.icon} x={x + 14} y={y + 14} size={32} color={p.tone} tint={p.tint} />
             <Wrap x={x + 56} y={y + 30} w={160} size={16} weight={700} text={p.title} lh={19} />
-            <Wrap x={x + 14} y={y + 74} w={198} size={14} color="muted" text={p.text} lh={17} />
+            <Wrap x={x + 14} y={y + 74} w={200} size={14} color="muted" text={p.text} lh={17} />
           </S>
         );
       })}
@@ -51,13 +51,13 @@ export function BusinessSuccession({ caption, bare, step }: DiagramProps) {
         <Text x={780} y={156} size={17} weight={700}>
           With a plan
         </Text>
-        <Wrap x={738} y={196} w={170} size={14} text="Someone is ready to run it, and the price is already agreed." lh={17} />
+        <Wrap x={738} y={196} w={170} size={15} text="Someone is ready to run it, and the price is already agreed." lh={19} />
         <Card x={722} y={282} w={198} h={150} fill="clayTint" border="clay" />
         <Icon name="question-mark" x={738} y={296} size={32} color="clay" tint="surface" />
         <Text x={780} y={320} size={17} weight={700}>
           With no plan
         </Text>
-        <Wrap x={738} y={360} w={170} size={14} text="No clear decision-maker, and the family may wait years." lh={17} />
+        <Wrap x={738} y={360} w={170} size={15} text="No clear decision-maker, and the family may wait years." lh={19} />
       </S>
       <S step={step} n={7}>
         <Card x={40} y={456} w={880} h={140} fill="sand" border="none" />

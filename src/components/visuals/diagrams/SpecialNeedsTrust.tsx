@@ -28,17 +28,17 @@ export function SpecialNeedsTrust({ caption, bare, step }: DiagramProps) {
           Money goes straight to the person
         </Text>
         <Person x={96} y={290} size={58} color="muted" />
-        <Text x={96} y={316} size={14} color="muted" anchor="middle">
+        <Text x={96} y={316} size={15} color="muted" anchor="middle">
           You
         </Text>
         <Arrow from={{ x: 136, y: 262 }} to={{ x: 190, y: 262 }} color="muted" />
         <Icon name="dollar" x={200} y={236} size={52} color="clay" tint="clayTint" />
-        <Text x={226} y={316} size={14} color="muted" anchor="middle">
+        <Text x={226} y={316} size={15} color="muted" anchor="middle">
           Gift
         </Text>
         <Arrow from={{ x: 268, y: 262 }} to={{ x: 322, y: 262 }} color="muted" />
         <Person x={364} y={290} size={58} color="sage" />
-        <Text x={364} y={316} size={14} color="muted" anchor="middle">
+        <Text x={364} y={316} size={15} color="muted" anchor="middle">
           Beneficiary
         </Text>
         <Card x={64} y={346} w={352} h={120} fill="clayTint" border="none" />
@@ -55,28 +55,28 @@ export function SpecialNeedsTrust({ caption, bare, step }: DiagramProps) {
           A trustee uses it for extras
         </Text>
         <Person x={540} y={290} size={58} color="muted" />
-        <Text x={540} y={316} size={14} color="muted" anchor="middle">
+        <Text x={540} y={316} size={15} color="muted" anchor="middle">
           You
         </Text>
         <Arrow from={{ x: 572, y: 262 }} to={{ x: 608, y: 262 }} color="accent" />
         <Icon name="trust" x={614} y={236} size={52} color="accent" tint="surface" />
-        <Text x={640} y={316} size={14} color="muted" anchor="middle">
+        <Text x={640} y={316} size={15} color="muted" anchor="middle">
           Trust
         </Text>
         <Arrow from={{ x: 676, y: 262 }} to={{ x: 710, y: 262 }} color="accent" />
         <Person x={744} y={290} size={58} color="accent" />
-        <Text x={744} y={316} size={14} color="muted" anchor="middle">
+        <Text x={744} y={316} size={15} color="muted" anchor="middle">
           Trustee
         </Text>
         <Arrow from={{ x: 778, y: 262 }} to={{ x: 814, y: 262 }} color="accent" />
         <Person x={852} y={290} size={58} color="sage" />
-        <Text x={852} y={316} size={14} color="muted" anchor="middle">
+        <Text x={852} y={316} size={15} color="muted" anchor="middle">
           Beneficiary
         </Text>
         {extras.map((e) => {
           const x = px - 16;
-          px += pillW(e, 13) + 8;
-          return <Pill key={e} x={x} y={338} text={e} fill="surface" ink="accentDeep" size={13} />;
+          px += pillW(e, 15) + 8;
+          return <Pill key={e} x={x} y={338} text={e} fill="surface" ink="accentDeep" size={15} />;
         })}
         <Card x={504} y={384} w={392} h={84} fill="sageTint" border="none" />
         <Icon name="check-circle" x={520} y={406} size={32} color="sage" tint="surface" />
