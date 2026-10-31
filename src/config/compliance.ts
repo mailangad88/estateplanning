@@ -24,7 +24,7 @@ export interface StateAdvertisingRules {
   name: string;
   /** What every ad, including a website, must identify. */
   identification: string;
-  /** True when the city, town or county of a bona fide office must appear on every page or ad. */
+  /** True when the city, town or county of a bona fide office must appear on every page or ad. Disclosures meets it with firm.officeAddress, which includes the city and state. */
   needsOfficeLocality: boolean;
   /** Label required on ordinary web pages and ads. Null when the rule text requires none. */
   webLabel: string | null;

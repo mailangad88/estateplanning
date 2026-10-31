@@ -194,7 +194,7 @@ export default function Home() {
                 <h3>When you may not need an attorney</h3>
                 <p>
                   People who are single, own very little, have no dependents, and have named beneficiaries on every account often
-                  manage with a simple will or beneficiary forms. If you are not sure, the plan finder will say so plainly. Consult fee: {firm.consultFee}.
+                  manage with a simple will or beneficiary forms. If you are not sure, the plan finder will say so plainly.
                 </p>
               </div>
             </div>

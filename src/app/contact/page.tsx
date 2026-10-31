@@ -9,7 +9,7 @@ import { abs, breadcrumbLd, JsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Contact us",
-  description: `Call, text, request a call back or book a consultation with an estate planning attorney in ${SERVED_OR}. Office address, hours, and what to expect when you reach out about a will, trust or probate.`,
+  description: `Call, email, request a call back or book a consultation with an estate planning attorney in ${SERVED_OR}. Office address, hours, and what to expect when you reach out about a will, trust or probate.`,
   alternates: { canonical: "/contact" },
 };
 
@@ -41,7 +41,7 @@ export default function Contact() {
       </PageHero>
       <div className="answer">
         <strong>In short</strong>
-        The fastest way to reach us is by phone at {firm.phone}. You can also book a consultation online or request a call back, and a
+        The fastest way to reach us is by phone at {firm.phone}. You can also email <a href={`mailto:${firm.email}`}>{firm.email}</a>, book a consultation online or request a call back, and a
         real person on our intake team will reply. Stated response time: {firm.responseTime}. If someone has just died or a family
         member is in the hospital, call, and tell us that first.
       </div>
@@ -52,6 +52,7 @@ export default function Contact() {
         {firm.textNumber && (
           <li><a className="card-link" href={`sms:${firm.textNumber.replace(/\D/g, "")}`}><span className="tag">Text</span><strong>{firm.textNumber}</strong><span className="card-desc">Text a question. Please leave out private details.</span></a></li>
         )}
+        <li><a className="card-link" href={`mailto:${firm.email}`}><span className="tag">Email</span><strong>{firm.email}</strong><span className="card-desc">Write to us. Please leave out private details.</span></a></li>
         <li><Link className="card-link" href="/book?from=contact"><span className="tag">Online</span><strong>Book a consult</strong><span className="card-desc">Pick a time on the calendar. No questionnaire first.</span></Link></li>
         <li><Link className="card-link" href="/plan-finder"><span className="tag">Not sure</span><strong>Start the plan finder</strong><span className="card-desc">See what people in your situation commonly plan for.</span></Link></li>
       </ul>

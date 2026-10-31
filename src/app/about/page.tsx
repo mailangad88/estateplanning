@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { firm, SERVED_AND, SERVED_OR } from "@/config/firm";
 import { Cta, PageHeader } from "@/components/ui";
-import { Rich } from "@/components/money-page";
 import { Testimonials } from "@/components/Testimonials";
 
 export const metadata: Metadata = {
@@ -20,17 +19,10 @@ export default function About() {
         title={`About ${firm.brandName}`}
         lead={`${firm.brandName} is a referral website. We match you with an appropriate estate planning attorney in our ${SERVED_AND} network.`}
       />
-      <h2>{firm.attorneyName}</h2>
-      <p>{firm.attorneyName} is the estate planning attorney responsible for this site. <Rich text={firm.attorneyShortBio} /></p>
-      <ul>
-        <li>Admitted to practice: <Rich text={firm.attorneyBio.licensedIn} /></li>
-        <li>Education: <Rich text={firm.attorneyBio.education} /></li>
-        <li>{firm.attorneyBio.practiceFocus}</li>
-        {firm.attorneyBio.certification && <li>Certification: {firm.attorneyBio.certification}</li>}
-        {firm.attorneyBio.awards.map((a) => <li key={a}>{a}</li>)}
-      </ul>
+      <h2>Who is responsible for this site</h2>
+      <p>{firm.attorneyName} is the estate planning attorney responsible for this site.</p>
       <p>
-        See the full <Link href="/about-the-attorney">attorney profile</Link>.
+        Read <Link href="/about-the-attorney">how we choose our attorneys</Link> and what to expect from your first call.
       </p>
       <h2>How we work</h2>
       <ul>

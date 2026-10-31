@@ -1,4 +1,4 @@
-import { fees, firm, packages, services, SERVED_AND, SERVED_OR } from "@/config/firm";
+import { fees, firm, packages, SERVED_AND, SERVED_OR } from "@/config/firm";
 import { FIGURES } from "@/config/figures";
 
 /**
@@ -42,8 +42,6 @@ const A = firm.attorneyName;
 /** The attorney a visitor is matched with. The site is a referral network, not a law firm. */
 const MATCHED = "the attorney you are matched with";
 const essentials = packages.find((p) => p.id === "essentials");
-/** Ends a firm.ts value as a sentence, whether or not the value carries its own full stop. */
-const end = (v: string) => (/[.!?]$/.test(v.trim()) ? v.trim() : `${v.trim()}.`);
 
 const wills: MoneyPageData = {
   path: "/wills",
@@ -344,7 +342,7 @@ const poa: MoneyPageData = {
             "A short letter to help your agent present the document to banks",
           ],
         },
-        { p: `Included in the Essentials, Complete and Legacy packages. On its own: ${fees.powerOfAttorneyAlone}. See [pricing](/pricing). The attorney explains your agent's duties in the signing meeting.` },
+        { p: "Included in the Essentials, Complete and Legacy packages. If you want a power of attorney on its own, the attorney quotes it before any work starts. See [pricing](/pricing). The attorney explains your agent's duties in the signing meeting." },
       ],
     },
   ],
@@ -430,7 +428,7 @@ const healthcare: MoneyPageData = {
     {
       h: "Cost",
       blocks: [
-        { p: `Included in every package. On its own: ${fees.healthcareDirectiveAlone}. See [pricing](/pricing). Attorneys do not give medical advice. Talk to your doctor about your health, and the attorney helps put what you decide in writing.` },
+        { p: "Included in every package. If you want a directive on its own, the attorney quotes it before any work starts. See [pricing](/pricing). Attorneys do not give medical advice. Talk to your doctor about your health, and the attorney helps put what you decide in writing." },
       ],
     },
   ],
@@ -530,7 +528,7 @@ const probate: MoneyPageData = {
     {
       h: "Probate help and what it costs",
       blocks: [
-        { p: `${end(services.probate)} The work begins with a short consult to say whether probate is needed and what it will likely take. Consult fee: ${firm.consultFee}. The engagement agreement states the scope and what is billed separately, such as court costs and appraisals. The attorney can also tell you if the estate is small enough that you can handle it yourself.` },
+        { p: "Ask on your first call about probate help and how it is billed. The work begins with a short call with an estate planning attorney, who says whether probate is needed, what it will likely take and the next steps. The engagement agreement states the scope and what is billed separately, such as court costs and appraisals. The attorney can also tell you if the estate is small enough that you can handle it yourself." },
       ],
     },
   ],
@@ -542,7 +540,7 @@ const probate: MoneyPageData = {
     { q: "What if I think the will is invalid, or a sibling is hiding things?", a: "Talk to an attorney soon. Deadlines are short. In Illinois, a will contest must be filed within six months after the will is admitted to probate (755 ILCS 5/8-1). In New Jersey, it is four months after probate, or six months if you lived outside New Jersey at the time (N.J. Court Rule 4:85-1)." },
     { q: "Can I avoid probate now that the person has died?", a: "Sometimes. If assets have a beneficiary or are jointly owned, they pass automatically. If the estate qualifies for a small-estate procedure, that may be used. An attorney can help you check." },
     { q: "Do I have to hire the attorney who drafted the will?", a: "No. You choose the attorney. In Illinois, reasonable fees for the estate's attorney are paid from the estate (755 ILCS 5/27-2). In New Jersey, the estate also commonly pays the executor's legal fees as a cost of administration, and the attorney confirms what applies." },
-    { q: "What does the first call cost, and what will you ask?", a: `Consult fee: ${firm.consultFee}. Expect questions about the date and county of death, whether there was a will, and a rough list of assets and debts. You do not need paperwork in hand.` },
+    { q: "What happens on the first call, and what will you ask?", a: "You talk with an estate planning attorney, who explains the next steps. Expect questions about the date and county of death, whether there was a will, and a rough list of assets and debts. You do not need paperwork in hand." },
   ],
   ctaTitle: "Prefer to talk first?",
   ctaBody: "Call, or leave your number above. If you would rather start online, the plan finder takes about two minutes.",
@@ -634,9 +632,9 @@ const trustAdmin: MoneyPageData = {
           table: {
             head: ["Service", "What it covers", "Fee"],
             rows: [
-              ["Trustee consult", "A consult and a written next-steps plan", fees.trusteeConsult],
-              ["Guided administration", "You do the tasks; the attorney reviews notices, accountings and distributions", fees.guidedTrustAdministration],
-              ["Full administration", "The attorney handles notices, tax coordination, distributions and closing", fees.fullTrustAdministration],
+              ["Trustee consult", "A consult and a written next-steps plan", "Quoted before work starts"],
+              ["Guided administration", "You do the tasks; the attorney reviews notices, accountings and distributions", "Quoted before work starts"],
+              ["Full administration", "The attorney handles notices, tax coordination, distributions and closing", "Quoted before work starts"],
             ],
           },
         },
@@ -735,7 +733,7 @@ const parents: MoneyPageData = {
     { q: "My parents refuse to talk about this. What can I do?", a: "Start small. Ask where their documents are kept, not what is in them. Offer to attend one meeting. Frame it around their wishes. If they still refuse, there is little that can be done legally, so keep a note of what you have asked." },
     { q: "Can I sign for my parent?", a: "Only if they have named you as agent in a signed power of attorney, or you have been appointed guardian by a court. Being a child does not give you the right." },
     { q: "How do we do this if my parent has early dementia?", a: "Capacity is not all or nothing. A person may be able to sign on a good day, and attorneys will assess it. A note from the doctor can help." },
-    { q: "Does a power of attorney cost a lot?", a: `It is among the less expensive documents. The flat fee is ${fees.powerOfAttorneyAlone} on its own, and it is included in each package. See [pricing](/pricing).` },
+    { q: "Does a power of attorney cost a lot?", a: "It is among the less expensive documents. It is included in each package, and on its own the attorney quotes it before any work starts. See [pricing](/pricing)." },
     { q: "Who should be our children's guardian?", a: "Someone with the values, health, energy and finances to raise them, and who has said yes. It does not have to be the richest relative. See [can I name my sister as guardian if my husband disagrees?](/blog/can-i-name-my-sister-as-guardian-if-my-husband-disagrees)" },
     { q: "What if I am divorced or a single parent?", a: `Your plan may matter more. In ${SERVED_AND}, as in most states, the other parent usually keeps custody if you die unless a court finds otherwise. The attorney you are matched with explains how this works for your family. Many single parents name guardians for the case where both parents cannot serve.` },
     { q: "How often should parents update a plan?", a: "Every few years, and after any marriage, divorce, birth, move or large change in assets. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan)." },
@@ -756,7 +754,7 @@ const howItWorks: MoneyPageData = {
   title: "How estate planning works: our process and timeline",
   description: `What happens when you use ${firm.brandName} to find an estate planning attorney: the questionnaire, the consultation, drafting, signing, and what to have ready.`,
   h1: `How estate planning works with ${firm.brandName}`,
-  answer: `You start with a short questionnaire, then a call with a team member who matches you with an estate planning attorney in our network and books your consultation. At the consultation the attorney recommends a plan and quotes a flat fee. If you hire the attorney, they draft the documents, you review them, and you sign them with witnesses and a notary. Typical turnaround: ${end(services.turnaround)}`,
+  answer: `You start with a short questionnaire, then a call with a team member who matches you with an estate planning attorney in our network and books your consultation. At the consultation the attorney recommends a plan and quotes a flat fee. If you hire the attorney, they draft the documents, you review them, and you sign them with witnesses and a notary. Ask on your first call how long your plan will take.`,
   steps: [
     { name: "Questionnaire", text: "Answer questions about your family, property and goals on the plan finder." },
     { name: "Intake call", text: "A team member confirms the basics, matches you with an attorney and books your consultation." },
@@ -768,7 +766,7 @@ const howItWorks: MoneyPageData = {
     { name: "Signing", text: "Documents are signed in front of witnesses and a notary." },
     { name: "After signing", text: "You get copies and instructions to fund the trust, update beneficiaries and tell your agents." },
   ],
-  urgent: { title: "Hospital, diagnosis or surgery coming up?", body: `Tell us on the first call. When documents are urgent: ${end(services.urgentTurnaround)}` },
+  urgent: { title: "Hospital, diagnosis or surgery coming up?", body: "Tell us on the first call. Ask how fast urgent documents can be ready." },
   sections: [
     {
       h: "Step by step",
@@ -779,10 +777,10 @@ const howItWorks: MoneyPageData = {
             rows: [
               ["1. Questionnaire", "You answer questions about your family, property and goals on the [plan finder](/plan-finder)", "You", "About 2 minutes"],
               ["2. Intake call", "A team member confirms the basics, matches you with an attorney in our network and books your consultation. They are not lawyers and do not give legal advice", "Our team", `A short call, within ${firm.responseTime}`],
-              ["3. Consultation", "You talk with the attorney: your family, what you own, what worries you. You get a recommendation and a flat fee", "The attorney", `${firm.consultLength}, ${firm.consultFormat}`],
+              ["3. Consultation", "You talk with the attorney: your family, what you own, what worries you. You get a recommendation and a flat fee", "The attorney", "Ask on your first call"],
               ["4. Engagement", "You sign an engagement agreement and pay a deposit if one applies. This is when the attorney-client relationship begins", "You", "Same day if you decide then"],
               ["5. Information gathering", "A short questionnaire and document upload: names, account list, existing documents", "You", "Varies"],
-              ["6. Drafting", "The attorney drafts your documents", "The attorney", firm.draftingTime],
+              ["6. Drafting", "The attorney drafts your documents", "The attorney", "Ask on your first call"],
               ["7. Review meeting", "You read the drafts and ask questions. Changes are made", "You and the attorney", "Varies"],
               ["8. Signing", `Documents are signed in front of witnesses and a notary, as ${SERVED_OR} law requires`, "You, the attorney, witnesses and a notary", "Varies"],
               ["9. After signing", "You get copies and instructions: fund the trust, update beneficiaries, tell your agents", "You, with the attorney's help", "Varies"],
@@ -825,15 +823,15 @@ const howItWorks: MoneyPageData = {
     {
       h: "What happens after you sign",
       blocks: [
-        { p: `${end(services.afterSigning)} A baby, a move, a divorce or a diagnosis are common reasons to call. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan) and the [plan review reminder](/tools/plan-review-reminder).` },
+        { p: "Ask on your first call what help you get after signing, such as a question period or a check-up. A baby, a move, a divorce or a diagnosis are common reasons to call. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan) and the [plan review reminder](/tools/plan-review-reminder)." },
         { p: "Legal work is done by the attorney you are matched with, or under their supervision. Our team schedules and organizes. Team members are not lawyers and do not give legal advice." },
       ],
     },
   ],
   faqs: [
-    { q: "Do I have to come to the office?", a: `Consultations are by ${firm.consultFormat}. Signing may be in person, or remote where ${SERVED_OR} law allows it for your documents. The attorney confirms which applies.` },
-    { q: "How long from first call to signing?", a: `${end(services.turnaround)} When there is a real reason, such as a hospital stay: ${end(services.urgentTurnaround)}` },
-    { q: "What if I need to change something after signing?", a: `Every package includes one round of revisions before signing. After signing: ${end(services.afterSigning)} Later amendments are quoted separately.` },
+    { q: "Do I have to come to the office?", a: `Ask on your first call how meetings work, and about home or hospital signings if you need one. Signing may be in person, or remote where ${SERVED_OR} law allows it for your documents. The attorney confirms which applies.` },
+    { q: "How long from first call to signing?", a: "Ask on your first call about the usual turnaround. If there is a real reason to hurry, such as a hospital stay, say so, and ask how fast urgent documents can be ready." },
+    { q: "What if I need to change something after signing?", a: "Essentials and Complete include one round of revisions before signing. Ask on your first call what help you get after signing. Later amendments are quoted separately." },
     { q: "Can my spouse come to the consult?", a: "Yes, and many couples attend together. Spouses who both sign an engagement agreement become joint clients, and the attorney explains what that means for confidentiality before you sign." },
     { q: "Is what I tell you confidential?", a: `Information you share with an attorney while seeking legal help is generally protected, even before you hire them. ${SERVED_AND} both cover this in Rule 1.18 of their Rules of Professional Conduct. Our intake team are not lawyers, so share only what is needed on the first call.` },
     { q: "What if I decide not to hire you?", a: "That is fine. You keep the recommendation, and nobody will pressure you. A team member may follow up once or twice at most." },
@@ -850,32 +848,37 @@ const howItWorks: MoneyPageData = {
 
 const aboutAttorney: MoneyPageData = {
   path: "/about-the-attorney",
-  crumb: "About the attorney",
-  title: `${A}, estate planning attorney`,
-  description: `${A} is the estate planning attorney responsible for ${firm.brandName} (Bar No. ${firm.barNumber}). Background, education, how the referral network works, and how to reach us.`,
-  h1: `${A}, estate planning attorney`,
-  schema: "profile",
-  answer: `${A} is the estate planning attorney responsible for ${firm.brandName}, a referral website that matches visitors with an appropriate estate planning attorney in ${SERVED_OR}. ${firm.attorneyShortBio}`,
+  crumb: "Our attorneys",
+  title: "How we choose our attorneys",
+  description: `How ${firm.brandName} chooses the estate planning attorneys in its ${SERVED_AND} network, who is responsible for the site, and what to expect when you reach out.`,
+  h1: "How we choose our attorneys",
+  answer: `${firm.brandName} is a referral website. We match you with an appropriate estate planning attorney in our ${SERVED_AND} network, based on where you live and what you need. ${A} is the estate planning attorney responsible for this site.`,
   sections: [
     {
-      h: "Education and admission",
+      h: "How attorneys join the network",
       blocks: [
         {
-          table: {
-            head: ["Item", "Detail"],
-            rows: [
-              ["Admitted to practice", firm.attorneyBio.licensedIn],
-              ["Bar number", firm.barNumber],
-              ["Education", firm.attorneyBio.education],
-              ["Practice", firm.attorneyBio.practiceFocus],
-              ...(firm.attorneyBio.certification ? [["Certification", firm.attorneyBio.certification]] : []),
-              ...firm.attorneyBio.awards.map((a) => ["Recognition", a]),
-            ],
-          },
+          ul: [
+            `Each attorney is licensed to practice law in ${SERVED_OR}.`,
+            "Each attorney practices estate planning: wills, trusts, powers of attorney, healthcare directives, probate and trust administration.",
+            "Each attorney agrees to give you a written flat-fee quote before any work starts.",
+          ],
         },
-        firm.barLookupUrl
-          ? { p: `[Verify the license on the state bar website](${firm.barLookupUrl})` }
-          : { p: "You can check any attorney's license yourself: in Illinois through the Attorney Registration and Disciplinary Commission (ARDC) lawyer search, and in New Jersey through the New Jersey Courts attorney search." },
+        { p: "You can look up any Illinois lawyer yourself on the [ARDC lawyer search](https://www.iardc.org/Lawyer/Search). It shows whether the lawyer is licensed and any public discipline." },
+      ],
+    },
+    {
+      h: "What to expect",
+      blocks: [
+        {
+          ul: [
+            "You tell us a little about your family and what you need, online or by phone.",
+            "We match you with an estate planning attorney in our network.",
+            "Your first call is with that attorney. They listen, answer your questions and explain the next steps.",
+            "If you want help, you get a flat-fee quote in writing. You decide whether to hire the attorney.",
+          ],
+        },
+        { p: "Book a time on the [booking page](/book), or see [how it works](/how-it-works)." },
       ],
     },
     {
@@ -897,7 +900,7 @@ const aboutAttorney: MoneyPageData = {
     {
       h: "Where we serve",
       blocks: [
-        { p: `${SERVED_AND} only. Office: ${firm.officeAddress}. Consults by ${firm.consultFormat}.` },
+        { p: `${SERVED_AND} only. Office: ${firm.officeAddress}.` },
       ],
     },
     {
@@ -909,9 +912,9 @@ const aboutAttorney: MoneyPageData = {
   ],
   faqs: [
     { q: "Who will handle my matter?", a: `The attorney you are matched with. That may be ${A} or another estate planning attorney in our network. You know who it is before you sign an engagement agreement.` },
-    { q: "What areas of law does this site not cover?", a: "This site covers estate planning only: wills, trusts, powers of attorney, healthcare directives, probate and trust administration. For other matters, such as divorce, criminal defense or personal injury, the state bar's lawyer referral service can help." },
+    { q: "What areas of law does this site not cover?", a: "This site covers estate planning only: wills, trusts, powers of attorney, healthcare directives, probate and trust administration. For other matters, such as divorce or criminal defense, the state bar's lawyer referral service can help." },
     { q: "Which states does this site serve?", a: `${SERVED_AND} only. Attorneys in our network advise on the law of the state where they are licensed. We do not give legal advice about other states' laws.` },
-    { q: "Can I meet before deciding?", a: `Yes. Consult fee: ${firm.consultFee}. See [how it works](/how-it-works).` },
+    { q: "Can I talk to an attorney before deciding?", a: "Yes. Your first call is with an estate planning attorney, who explains the next steps. You do not have to decide on the call. See [how it works](/how-it-works)." },
     { q: "How do you keep my information private?", a: "Please do not send Social Security numbers, account numbers or medical details through the website or by text. The attorney you are matched with explains how to share documents safely. See [privacy](/legal/privacy)." },
   ],
   ctaTitle: "Talk to an attorney",

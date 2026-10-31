@@ -16,7 +16,6 @@ export const metadata: Metadata = {
 // DRAFT: must be reviewed and approved by the attorney before launch (backlog B4).
 export default function AttorneyAdvertising() {
   const rules = rulesFor(servedStates());
-  const bio = firm.attorneyBio;
   return (
     <>
       <PageHero
@@ -29,24 +28,21 @@ export default function AttorneyAdvertising() {
       />
       <p className="notice">Draft pending attorney review.</p>
       <p>
-        This website is attorney advertising for {firm.firmLegalName}. {firm.brandName} is the firm&apos;s own client education and
-        intake team, not a lawyer referral service.
+        This website is attorney advertising by {firm.firmLegalName}. {firm.brandName} is a referral website: we match you with an
+        appropriate estate planning attorney. Responsible attorney: {firm.attorneyName}.
       </p>
 
       <h2>Responsible attorney</h2>
       <ul>
         <li>Name: {firm.attorneyName}, {firm.attorneyTitle.toLowerCase()}</li>
-        <li>Bar number: {firm.barNumber}</li>
-        <li>Admitted to practice: {bio.licensedIn}</li>
-        <li>Education: {bio.education}</li>
-        <li>{bio.practiceFocus}</li>
-        {bio.certification && <li>Certification: {bio.certification}</li>}
-        <li>Office: {firm.officeAddress} ({firm.officeLocality})</li>
+        <li>Office: {firm.officeAddress}</li>
         <li>Phone: {firm.phone}</li>
+        <li>Email: <a href={`mailto:${firm.email}`}>{firm.email}</a></li>
       </ul>
       <p>
         The firm offers legal services only in the states where its attorneys are licensed. Pages that describe another
-        state&apos;s law are general information, and we do not take matters in states where we are not licensed.
+        state&apos;s law are general information, and we do not take matters in states where we are not licensed. You can look up
+        any Illinois lawyer on the <a href="https://www.iardc.org/Lawyer/Search">ARDC lawyer search</a>.
       </p>
 
       <h2>Not legal advice; no attorney-client relationship</h2>

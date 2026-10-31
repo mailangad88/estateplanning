@@ -11,7 +11,7 @@ import { serviceBoardFor } from "@/config/life-game";
 import { LifeGame } from "@/components/life-game";
 import { abs, ATTORNEY_ID, breadcrumbLd, howToLd, JsonLd, SITE_URL } from "@/lib/seo";
 
-const TOKEN = /\[([^\]]+)\]\((\/[^)\s]*)\)|\*\*([^*]+)\*\*|(\[(?:Attorney|Flat fee|Firm|Office|Bar number)[^\]]*\])/g;
+const TOKEN = /\[([^\]]+)\]\((\/[^)\s]*)\)|\*\*([^*]+)\*\*|(\[(?:Attorney|Flat fee|Firm|Company|Office|Bar number)[^\]]*\])/g;
 
 /** Renders the small inline syntax used in page data: [text](/path) links and **bold**. An unfilled firm.ts value is highlighted. */
 export function Rich({ text }: { text: string }) {

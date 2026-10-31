@@ -10,32 +10,15 @@ export const firm = {
   firmLegalName: "[Firm legal name]",
   attorneyName: "Sargun Singh",
   attorneyTitle: "Estate planning attorney",
-  barNumber: "[Bar number]",
   phone: "(000) 000-0000", // PLACEHOLDER tracked number
+  /** Public contact email for the site (a company address, separate from the attorney). */
+  email: "[Company email]",
   officeAddress: "[Office address]",
-  /** City or county and state of a real (bona fide) office. California and Florida require it on every ad. */
-  officeLocality: "[Office city or county, state]",
   officeHours: "[Office hours]",
   /** What the site promises about response time. Keep it true. */
   responseTime: "[Response time, e.g. within one business day]",
-  /** State of licensure. Pages say "your state" until this is filled. */
-  licensedState: "[Firm licensed state]",
-  /** Bio and process facts only the attorney can supply. Pages show them as visible placeholders. */
-  yearsInPractice: "[Attorney: year admitted to practice]",
-  lawSchool: "[Attorney: law school and year]",
-  consultLength: "[Attorney: consult length in minutes]",
-  consultFormat: "[Attorney: phone, video or in person]",
-  consultFee: "[Attorney: consult fee, or no fee]",
-  draftingTime: "[Attorney: typical drafting time]",
   /** Profile URLs (state bar, Google Business Profile and similar) that identify the firm. Empty omits sameAs from structured data. */
   sameAs: [] as string[],
-  /** Profile URLs for the attorney. Empty omits sameAs from structured data. */
-  attorneySameAs: [] as string[],
-  barLookupUrl: null as string | null, // state bar lawyer-lookup URL, set when known
-  /** Attorney headshot under public/, e.g. "/media/attorney.jpg". Null shows no photo and omits image from schema. */
-  attorneyHeadshot: null as string | null,
-  /** Two or three plain sentences in the attorney's own words, shown on the profile and in Person schema. */
-  attorneyShortBio: "[Attorney: two or three sentence bio in your own words]",
   /**
    * Booking page embedded after a consult request (Calendly, Cal.com, Lawmatics or Clio Grow).
    * Must be an https URL the scheduler allows in an iframe. Null keeps the "our team will reach out"
@@ -57,19 +40,6 @@ export const firm = {
    * Changing this changes which fee types the fee engine will allow.
    */
   structure: "in_firm" as BusinessStructure,
-  /**
-   * Attorney bio facts used on /about and /legal/attorney-advertising. Every value must come
-   * from the attorney and be checkable (bar profile, diploma). Never fill these from guesses.
-   */
-  attorneyBio: {
-    licensedIn: "[Attorney bar admissions: state and year for each]",
-    education: "[Attorney law school and year]",
-    practiceFocus: "Practice focused on estate planning",
-    /** Only a certification the attorney actually holds, with the certifying body and area named. Null hides it. */
-    certification: null as string | null,
-    /** Awards only from bodies that do not sell them, with issuer and year. Empty hides the list. */
-    awards: [] as string[],
-  },
   /**
    * Dynamic number insertion. Keys: "source/medium" (exact), "source" (any medium), or "*" + "/medium" (any source).
    * The first-touch source of the visit picks the number; anything unmatched shows `phone`.
@@ -110,30 +80,6 @@ export const fees = {
   essentials: "$2,500",
   complete: "$3,500",
   legacy: "Custom quote",
-  powerOfAttorneyAlone: "[Flat fee]",
-  healthcareDirectiveAlone: "[Flat fee]",
-  trusteeConsult: "[Flat fee]",
-  guidedTrustAdministration: "[Flat fee]",
-  fullTrustAdministration: "[Flat fee]",
-  /** Add-ons on /pricing. */
-  addOn: "[Flat fee]",
-};
-
-/**
- * What the matched attorney does and does not offer. Only the attorney can answer these; each
- * unfilled value blocks the production build until it is filled.
- */
-export const services = {
-  /** e.g. "Yes, in the Chicago area" or "No, signings are at the office or by video where allowed". */
-  mobileSignings: "[Attorney: home or hospital signings, and the area covered]",
-  /** e.g. "Usually two to three weeks from the design meeting". */
-  turnaround: "[Attorney: typical turnaround]",
-  urgentTurnaround: "[Attorney: turnaround when documents are urgent]",
-  probate: "[Attorney: whether probate is handled, and how it is billed]",
-  guardianship: "[Attorney: whether uncontested guardianship petitions are handled]",
-  paymentPlans: "[Attorney: payment plan terms, or none]",
-  /** What happens after signing: question period, check-up call, review. */
-  afterSigning: "[Attorney: question period and check-up after signing]",
 };
 
 /** Essentials and Complete include exactly one round of revisions (Sargun Singh 2026-10-25; Angad 2026-10-31). Legacy sets revisions in its custom quote. */

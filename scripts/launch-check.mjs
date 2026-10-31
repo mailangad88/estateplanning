@@ -43,7 +43,7 @@ const ALLOW = [
   /past experience does not guarantee a similar result/i,
 ];
 
-const PLACEHOLDERS = [/\[(Firm|Attorney|Office|Bar number|Flat fee)[^\]]*\]/, /\[firm placeholder/i, /ATTORNEY TO CONFIRM/, /\[VERIFY[^\]]*\]/, /\[ATTORNEY[^\]]*\]/, /\[STATE\]/, /\bPLACEHOLDER\b/, /\(000\) 000-0000/, /\[Response time/, /\[State check/];
+const PLACEHOLDERS = [/\[(Firm|Company|Attorney|Office|Bar number|Flat fee)[^\]]*\]/, /\[firm placeholder/i, /ATTORNEY TO CONFIRM/, /\[VERIFY[^\]]*\]/, /\[ATTORNEY[^\]]*\]/, /\[STATE\]/, /\bPLACEHOLDER\b/, /\(000\) 000-0000/, /\[Response time/, /\[State check/];
 
 /** Loads STATE_RULES from the typed config (Node type stripping), falling back to a text parse. */
 async function loadStateRules() {

@@ -75,6 +75,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <span>{firm.brandName}</span>
               </Link>
               <p>Wills, living trusts, powers of attorney and healthcare directives, explained plainly and prepared by an estate planning attorney.</p>
+              <p>Email: <a href={`mailto:${firm.email}`}>{firm.email}</a></p>
             </div>
             <MegaFooter />
           </div>
