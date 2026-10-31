@@ -17,6 +17,7 @@ import {
   topicForText,
 } from "@/lib/chat";
 import { DECISIONS } from "@/config/decisions";
+import { SITE_DISCLAIMER } from "@/config/firm";
 import { TOOLS } from "@/config/tools";
 import { leadSubmissionSchema } from "@/lib/lead";
 import { scoreLead, segmentTags, toolTags } from "@/lib/scoring";
@@ -149,7 +150,8 @@ describe("chat placement and copy", () => {
     for (const p of ["/", "/wills", "/learn/probate/x", "/pricing", "/booking-tips"]) expect(chatHiddenOn(p), p).toBe(false);
   });
 
-  it("shows the referral disclaimer", () => {
+  it("shows the sitewide referral disclaimer", () => {
+    expect(CHAT_DISCLAIMER).toBe(SITE_DISCLAIMER);
     expect(CHAT_DISCLAIMER).toMatch(/educational purposes only/);
     expect(CHAT_DISCLAIMER).toMatch(/does not constitute legal advice/);
     expect(CHAT_DISCLAIMER).toMatch(/attorney-client relationship/);

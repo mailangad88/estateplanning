@@ -9,15 +9,11 @@
  * Nothing typed in the chat is sent anywhere until the visitor submits the contact form. Analytics
  * events carry only the topic id and step, never the text.
  */
+import { SITE_DISCLAIMER } from "@/config/firm";
 import { bookHref } from "@/lib/book";
 
-/**
- * Shown at the top of every chat. Same wording as the sitewide referral disclaimer
- * (SITE_DISCLAIMER in src/config/firm.ts once the referral-network change lands).
- */
-export const CHAT_DISCLAIMER =
-  "All information on this website is for educational purposes only. It does not constitute legal advice, and it does not " +
-  "create an attorney-client relationship. This is a referral website: we will match you with an appropriate attorney.";
+/** Shown at the top of every chat: the sitewide referral disclaimer, word for word. */
+export const CHAT_DISCLAIMER = SITE_DISCLAIMER;
 
 export interface ChatLink {
   label: string;
