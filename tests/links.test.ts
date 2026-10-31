@@ -42,7 +42,7 @@ describe("internal links in content", () => {
         const text = fs.readFileSync(path.join(root, dir, f), "utf8");
         for (const m of text.matchAll(/\]\((\/[^)\s]*)\)/g)) {
           const [p, hash] = m[1].split("#");
-          const clean = p.replace(/\/$/, "") || "/";
+          const clean = p.split("?")[0].replace(/\/$/, "") || "/";
           if (clean === "/glossary" && hash && !glossary.has(hash)) broken.push(`${dir}/${f}: ${m[1]}`);
           else if (!paths.has(clean)) broken.push(`${dir}/${f}: ${m[1]}`);
         }

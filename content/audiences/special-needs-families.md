@@ -30,32 +30,32 @@ faqs:
   - q: "What is the difference between a special needs trust and an ABLE account?"
     a: "An ABLE account is simple, and the account owner can use it for housing, food and everyday spending, but yearly contributions are capped and larger balances can count toward SSI limits. A trust can hold large amounts, has a trustee, and can last the beneficiary's lifetime. Many families use both."
   - q: "Who should be the trustee?"
-    a: "Someone who understands the beneficiary and the benefits rules, will keep records, and will outlive you. Many families name a trusted relative with a professional co-trustee or a pooled trust as a backup. [ATTORNEY: whether the firm offers trustee services]."
+    a: "Someone who understands the beneficiary and the benefits rules, will keep records, and will outlive you. Many families name a trusted relative with a professional co-trustee or a pooled trust as a backup."
   - q: "Is the money left over after my child dies lost to the state?"
     a: "In a third-party trust, no: you choose who gets what remains. In a first-party trust funded with the beneficiary's own money, repayment to Medicaid comes first."
   - q: "My child is 17. What do we do about guardianship?"
-    a: "Ask before the 18th birthday. For some young adults a power of attorney and healthcare directive are enough. For others guardianship or a less restrictive option fits better. Capacity matters, and states differ. [State check]."
+    a: "Ask before the 18th birthday. For some young adults a power of attorney and healthcare directive are enough. For others guardianship or a less restrictive option fits better. Capacity matters, and states differ. In Illinois and New Jersey, guardianship of an adult is a court case. If the young adult can understand and sign, a power of attorney may work instead."
   - q: "We already have a will that leaves everything to our children equally. What now?"
-    a: "It is worth a review. Leaving a share outright to a child on benefits is one of the most common mistakes. A will update is often a small flat fee of [Flat fee]."
+    a: "It is worth a review. Leaving a share outright to a child on benefits is one of the most common mistakes. A will update is often a small flat fee set by the attorney. See [pricing](/pricing)."
 reviewed: false
 updated: "2026-10-06"
 ---
 
 ## What is at stake
 
-- **A gift from a grandparent.** A grandparent leaves $60,000 to a grandchild with a disability in the will. The money passes outright, the grandchild goes over the SSI resource limit (generally $2,000 for an individual <!-- verify -->), and loses SSI and often Medicaid until it is spent down. [VERIFY AT PUBLISH: current SSI resource limits on ssa.gov]
-- **The wrong trust.** A first-party special needs trust, funded with the beneficiary's own money, must repay Medicaid at death and generally must be created before a set age. A third-party trust, funded by parents or others, has no payback requirement. Parents who leave their own money in a first-party trust by mistake give up that benefit. [VERIFY AT PUBLISH: age limit and payback rules]
+- **A gift from a grandparent.** A grandparent leaves $60,000 to a grandchild with a disability in the will. The money passes outright, the grandchild goes over the SSI resource limit ($2,000 for an individual or $3,000 for a couple, as of 2026 <!-- verify -->), and loses SSI and often Medicaid until it is spent down.
+- **The wrong trust.** A first-party special needs trust, funded with the beneficiary's own money, must repay Medicaid at death and must be set up before the beneficiary turns 65 (42 U.S.C. 1396p(d)(4)(A)). A third-party trust, funded by parents or others, has no payback requirement. Parents who leave their own money in a first-party trust by mistake give up that benefit.
 - **Retirement accounts and life insurance** that name the person directly cause the same problem.
 - **No one to carry on.** Parents are often the case manager, advocate and decision-maker. A plan with money and no instructions leaves a trustee guessing.
-- **Turning 18.** A parent's authority as guardian ends at 18. Families choose among guardianship, supported decision-making, powers of attorney and healthcare proxies, depending on capacity and state law. [State check]. See [power of attorney vs guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship).
+- **Turning 18.** A parent's authority as guardian ends at 18. Families choose among guardianship, supported decision-making, powers of attorney and healthcare proxies, depending on capacity and state law. See [power of attorney vs guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship).
 
-ABLE accounts changed in 2026: the age at which a disability must have begun was raised, and yearly contributions are tied to the federal gift tax exclusion. [VERIFY AT PUBLISH: confirm current age, limits and the state's ABLE program]. For the trade-offs, see [special needs trust vs ABLE account](/compare/special-needs-trust-vs-able-account).
+ABLE accounts changed in 2026. The disability must now have begun before age 46, up from 26. Yearly contributions from everyone combined are capped at the federal gift tax exclusion, $19,000 for 2026 <!-- verify -->. SSI ignores the first $100,000 in an ABLE account. Illinois and New Jersey each run a state ABLE program, and you can generally open an account in another state's program too. For the trade-offs, see [special needs trust vs ABLE account](/compare/special-needs-trust-vs-able-account).
 
 ## What a plan usually includes
 
 | Piece | What it does |
 |---|---|
-| Third-party special needs trust | Holds your money for extras such as therapies, travel, devices and housing costs. The trustee decides, and the beneficiary cannot demand payments. Drafted so SSI and Medicaid are not interrupted. [ATTORNEY: confirm approach and any state limits on food and shelter payments] |
+| Third-party special needs trust | Holds your money for extras such as therapies, travel, devices and housing costs. The trustee decides, and the beneficiary cannot demand payments. Drafted so SSI and Medicaid are not interrupted. Payments for shelter can reduce SSI, so the trustee needs to know the current rules. |
 | Will and beneficiary updates | Leaves property to the trust, not to the person. Retirement accounts and insurance are named to the trust. See the [beneficiary audit](/checklists/beneficiary-designation-audit). |
 | ABLE account guidance | Day-to-day money for housing, transport and education. |
 | Letter of intent | A living document that tells the trustee and guardian who your child is: routines, doctors, likes, what calms them, who to call. It is not binding and it is very useful. See the [letter of instruction outline](/checklists/letter-of-instruction-outline). |
@@ -63,10 +63,10 @@ ABLE accounts changed in 2026: the age at which a disability must have begun was
 | Adult decision-making plan | Power of attorney, healthcare proxy or guardianship alternatives for age 18. |
 | Family instructions | A short guide for grandparents and relatives on how to leave money safely. |
 
-**What we do not do.** We do not decide benefits eligibility, which belongs to the Social Security Administration and the state Medicaid agency, and we cannot promise a benefit will continue. We design the plan to avoid common problems and say where state rules differ.
+**Limits.** Benefits eligibility is decided by the Social Security Administration and the state Medicaid agency, and no one can promise a benefit will continue. A careful plan avoids common problems and accounts for state rules.
 
-**An honest limit.** If no one in your family receives means-tested benefits and no one expects to, a special needs trust may not be called for. We will say so.
+**An honest limit.** If no one in your family receives means-tested benefits and no one expects to, a special needs trust may not be called for. A good attorney will say so.
 
 ## Next step
 
-Read the [special needs trusts guide](/guides/special-needs-trusts). To talk it through, [book a consultation](/contact).
+Read the [special needs trusts guide](/guides/special-needs-trusts). To talk it through, [book a call](/book?from=audience-special-needs-families) and we will match you with an attorney in our network.

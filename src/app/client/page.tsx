@@ -3,7 +3,7 @@ import { firm } from "@/config/firm";
 import { ForbiddenError } from "@/server/auth/policy";
 import { clientLeadId, clientStatus } from "@/server/services/clientPortal";
 import { currentActor, getDb, scopedDb } from "@/server/runtime";
-import { MessageForm, UploadForm } from "@/app/client/ClientActions";
+import { MessageForm } from "@/app/client/ClientActions";
 import { firstNameOf } from "@/lib/people";
 
 export const dynamic = "force-dynamic";
@@ -85,8 +85,9 @@ export default async function ClientHome() {
       </ul>
       <p className="notice">Not sure what something is? Skip it and tell us in a message.</p>
 
-      <h2>Upload a document</h2>
-      <UploadForm options={s.checklist.map((c) => ({ value: c.kinds[0], label: c.label }))} />
+      <h2>Sending documents</h2>
+      {/* File storage is not connected yet, so the upload form (UploadForm) stays off: it would record a file without keeping it. */}
+      <p>Bring copies to your meeting, or send a message below and your attorney will tell you how to share them securely. Please do not send account numbers or Social Security numbers in a message.</p>
       {s.documents.length > 0 && (
         <ul>{s.documents.map((d) => <li key={d.id}>{d.name} ({when(d.uploadedAt)})</li>)}</ul>
       )}

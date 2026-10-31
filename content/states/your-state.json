@@ -1,75 +1,77 @@
 {
   "code": "XX",
   "name": "Your State",
-  "title": "Estate planning in Your State (template preview)",
-  "description": "Preview of the state landing page template. Replace with real, attorney-written local detail before indexing.",
-  "answer": "This is a preview of the state page template. Each state page goes live only after the attorney fills in the local rules, courts and examples, so it says something no other page on the site says.",
-  "updated": "2026-10-06",
+  "title": "Estate planning in your state: what changes from state to state",
+  "description": "Will signing, probate, small estate limits, state taxes and transfer-on-death deeds all depend on where you live. What differs, with Illinois and New Jersey as examples.",
+  "answer": "The basic tools are the same everywhere: a will, a trust, powers of attorney and beneficiary forms. What changes by state is how a will must be signed, how probate works, the small estate limit, whether the state taxes estates or inheritances, and whether transfer-on-death deeds are allowed. An attorney licensed where you live applies those rules to your plan.",
+  "updated": "2026-10-31",
   "reviewed": false,
   "indexable": false,
   "facts": [
     {
       "label": "Witnesses required for a will",
-      "value": "ATTORNEY TO CONFIRM"
+      "value": "Two in most states, including Illinois and New Jersey. Neither state requires a notary for the will itself."
     },
     {
       "label": "Self-proving affidavit available",
-      "value": "ATTORNEY TO CONFIRM"
+      "value": "Available in most states. New Jersey uses a self-proving affidavit signed before a notary or other officer. Illinois uses a witness attestation clause that does the same job."
     },
     {
       "label": "Small estate procedure threshold",
-      "value": "ATTORNEY TO CONFIRM"
+      "value": "Set by each state. Illinois allows a small estate affidavit for estates up to $150,000 with no real estate. New Jersey has a Surrogate's affidavit for small estates where there is no will."
     },
     {
       "label": "Community property state",
-      "value": "ATTORNEY TO CONFIRM"
+      "value": "Nine states use community property. Illinois and New Jersey do not."
     },
     {
       "label": "State estate or inheritance tax",
-      "value": "ATTORNEY TO CONFIRM"
+      "value": "Most states have neither. Illinois taxes estates over $4 million. New Jersey has no estate tax but taxes some inheritances, such as gifts to siblings."
     },
     {
       "label": "Transfer-on-death deeds allowed",
-      "value": "ATTORNEY TO CONFIRM"
+      "value": "Allowed in many states, including Illinois. New Jersey does not currently allow them."
     },
     {
       "label": "Typical probate timeline",
-      "value": "ATTORNEY TO CONFIRM"
+      "value": "Often several months to more than a year. Creditors have at least 6 months from published notice in Illinois and 9 months from the death in New Jersey, so many estates stay open at least that long."
     }
   ],
   "sections": [
     {
-      "heading": "How probate works in [State]",
-      "body": "Attorney-written: the court, the main steps, what is unusual here."
+      "heading": "How probate works where you live",
+      "body": "Probate is the court process that proves a will, names the executor and oversees paying debts and distributing property. Each state sets its own court, forms and deadlines. In New Jersey, a will is usually probated with the county Surrogate. In Illinois, probate is a case in the county circuit court."
     },
     {
-      "heading": "Making a valid will in [State]",
-      "body": "Attorney-written: signing rules, holographic wills, self-proving affidavits."
+      "heading": "Making a valid will",
+      "body": "Most states require a written will signed by you and two witnesses. Some states accept handwritten wills without witnesses, and Illinois does not. A self-proving affidavit or attestation clause lets the court accept the will without calling the witnesses. Signing rules are strict, so follow your state's rules exactly."
     },
     {
-      "heading": "Trusts and avoiding probate in [State]",
-      "body": "Attorney-written."
+      "heading": "Trusts and avoiding probate",
+      "body": "A funded living trust avoids probate in every state for the property it holds. Beneficiary forms, joint ownership and, where allowed, transfer-on-death deeds do the same for single assets. Which tools fit best depends on your state's probate costs and rules."
     },
     {
-      "heading": "Powers of attorney and health care forms in [State]",
-      "body": "Attorney-written: statutory forms, witness or notary rules."
+      "heading": "Powers of attorney and health care forms",
+      "body": "Each state has its own power of attorney law and health care forms, and some have a statutory form. Witness and notary rules differ. Most states accept documents that were valid where you signed them, but a bank or hospital may still ask questions, so documents that follow your current state's rules work best."
     },
     {
-      "heading": "What we see most often with [State] families",
-      "body": "From the brain file: real, anonymized patterns."
+      "heading": "Where Family Future Planning can help",
+      "body": "Family Future Planning matches people in Illinois and New Jersey with an estate planning attorney in our network. If you live in another state, your state bar's lawyer referral service can help you find a licensed estate planning attorney near you."
     }
   ],
-  "counties": [
-    {
-      "name": "County name",
-      "court": "Probate court name",
-      "notes": "Filing or timing detail only someone local would know"
-    }
-  ],
+  "counties": [],
   "faqs": [
     {
-      "q": "State-specific question",
-      "a": "Attorney-confirmed answer."
+      "q": "Does my will still work if I move to another state?",
+      "a": "Usually yes. Most states accept a will that was valid where it was signed. A move is still a good time for a review, because your new state's rules on spouses, taxes and powers of attorney may change how the plan works."
+    },
+    {
+      "q": "Which state's law applies to my estate?",
+      "a": "Generally the state where you are domiciled when you die, meaning the place you treat as your permanent home. Real estate is the exception: land is governed by the law of the state where it sits, which is why property in two states can mean two probates."
+    },
+    {
+      "q": "Do I need an attorney licensed in my state?",
+      "a": "For a will, trust or deed, yes. Estate planning attorneys are licensed by state, and the documents should follow the rules where you live and where your property is."
     }
   ]
 }

@@ -2,7 +2,7 @@ import type { BusinessStructure } from "@/lib/fees";
 
 /**
  * Single source of firm facts, read by every page, footer, schema block and email.
- * Values in [brackets] or marked PLACEHOLDER are unfilled; `npm run launch-check`
+ * Values in square brackets are unfilled; `npm run launch-check`
  * blocks production deploys until they are replaced.
  */
 export const firm = {
@@ -103,7 +103,7 @@ export const SITE_DISCLAIMER_ES =
 
 /**
  * Every price the site shows, in one place. Values come from the attorney. A value can be a price
- * ("$1,800") or a phrase ("Quoted after your first call"); "[Flat fee]" blocks the production build.
+ * ("$1,800") or a phrase ("Quoted after your first call"). An unfilled value blocks the production build.
  */
 export const fees = {
   essentialsOne: "[Flat fee]",
@@ -121,7 +121,7 @@ export const fees = {
 
 /**
  * What the matched attorney does and does not offer. Only the attorney can answer these; each
- * "[Attorney: ...]" value blocks the production build until it is filled.
+ * unfilled value blocks the production build until it is filled.
  */
 export const services = {
   /** e.g. "Yes, in the Chicago area" or "No, signings are at the office or by video where allowed". */

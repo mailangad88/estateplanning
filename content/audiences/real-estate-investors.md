@@ -30,22 +30,22 @@ faqs:
   - q: "Will moving a rental into a trust trigger the due-on-sale clause?"
     a: "For residential property under five units, federal law protects certain transfers to a revocable trust where you stay a beneficiary. For other property and for transfers to an LLC, it may not. Read the loan and ask the lender where unsure."
   - q: "Should I give my rentals to my children now?"
-    a: "Often not. Gifts generally carry your tax basis to the child, while property left at death usually receives a basis at date-of-death value. Your CPA should compare. The annual gift tax exclusion was $19,000 per recipient for 2025 <!-- verify -->. [VERIFY AT PUBLISH: 2026 figure]"
+    a: "Often not. Gifts generally carry your tax basis to the child, while property left at death usually receives a basis at date-of-death value. Your CPA should compare. The annual gift tax exclusion is $19,000 per recipient for 2026 <!-- verify -->."
   - q: "I own property in three states. Do my heirs go through three probates?"
-    a: "They may, if the properties are in your name alone. Holding them in a trust or LLC, with deeds recorded correctly, usually avoids that. [State check]"
+    a: "They may, if the properties are in your name alone. Holding them in a trust or LLC, with deeds recorded correctly, usually avoids that. Each state's rules apply to property located there."
   - q: "Who runs the properties if I am incapacitated?"
     a: "Whoever you name in a power of attorney and in your trust or LLC documents. Without them, a court may need to appoint someone."
-  - q: "Do you set up LLCs?"
-    a: "[ATTORNEY: yes or no, and in which states]. We coordinate with your CPA and insurer."
+  - q: "Can the attorney set up my LLCs?"
+    a: "Many estate planning attorneys form LLCs for property in their own state. Ask on your first call, and bring your CPA and insurer into the plan."
 reviewed: false
 updated: "2026-10-06"
 ---
 
 ## What is at stake
 
-- **Probate in each state.** Property titled in your name alone in a state other than where you live generally requires probate there too, called ancillary probate. [State check]. Rentals in three states can mean three proceedings. A living trust or LLC holding the properties can avoid that, if the titles were actually changed. See [how to fund a trust](/guides/funding-your-trust).
+- **Probate in each state.** Property titled in your name alone in a state other than where you live generally requires probate there too, called ancillary probate. Rentals in three states can mean three proceedings. A living trust or LLC holding the properties can avoid that, if the titles were actually changed. See [how to fund a trust](/guides/funding-your-trust).
 - **Giving the property away early.** Property inherited at death generally gets a tax basis equal to its value at the date of death. Property you give away during life generally keeps your original basis. For an appreciated rental, that can mean a large capital gains difference for your heirs. Your CPA should model the numbers.
-- **The loan.** Federal law limits lenders from enforcing due-on-sale clauses on certain transfers to a living trust where you stay a beneficiary, and on certain transfers to relatives after a death, but only for residential property with fewer than five dwelling units. It does not cover commercial property or buildings with five or more units. Transfers to an LLC are not covered by those protections. [ATTORNEY: confirm]. Check the loan documents and talk to the lender where needed. See [what happens to a mortgage when the owner dies](/blog/what-happens-to-a-mortgage-when-the-owner-dies).
+- **The loan.** Federal law limits lenders from enforcing due-on-sale clauses on certain transfers to a living trust where you stay a beneficiary, and on certain transfers to relatives after a death, but only for residential property with fewer than five dwelling units. It does not cover commercial property or buildings with five or more units. Transfers to an LLC are not on the list of protected transfers (12 U.S.C. 1701j-3(d)). Check the loan documents and talk to the lender where needed. See [what happens to a mortgage when the owner dies](/blog/what-happens-to-a-mortgage-when-the-owner-dies).
 - **Insurance and title.** Moving a property to an LLC or trust can affect title insurance and liability coverage. A plan lists what needs updating.
 - **Operations if you cannot act.** Tenants, repairs, security deposits and rent collection do not pause. A power of attorney with authority over real estate and entities, plus a named manager, keeps things moving.
 - **Partners and co-owners.** Operating agreements and partnership terms may decide who owns your share after your death. See the [business succession guide](/learn/business-owners/business-succession-planning).
@@ -55,7 +55,7 @@ updated: "2026-10-06"
 
 > An LLC separates the property from your personal assets so a claim from a tenant is aimed at the LLC. A living trust decides who owns your LLC interest or your property after you die and who manages it if you cannot. Many investors use both: the properties in LLCs, the LLC interests in the trust.
 
-[ATTORNEY: state-specific adjustments, such as whether the state's LLC rules or transfer taxes affect the setup, and whether an LLC is the right vehicle in the launch state.]
+State rules can change the setup. Illinois and New Jersey both charge a tax or fee on many deed transfers, and some transfers into a trust or LLC are exempt. The attorney checks this before any deed is recorded.
 
 ## What a plan usually includes
 
@@ -67,12 +67,12 @@ updated: "2026-10-06"
 | Power of attorney with real estate and entity powers | A named agent and a backup. |
 | Successor manager instructions | A short letter for the property manager and the successor trustee. |
 | Basis and tax coordination | Your CPA models gifting vs inheritance. |
-| Out-of-state filings | Deeds recorded in each state. We handle our licensed state and coordinate for others. [ATTORNEY] |
+| Out-of-state filings | Deeds recorded in each state where you own property, by a lawyer licensed there. |
 
-**What we do not do.** We do not give tax advice that belongs to your CPA, we do not make investment recommendations, and we are licensed in one state only. For deeds in another state, we say so and refer out. [ATTORNEY]
+**Limits.** Tax advice belongs to your CPA, and an estate planning attorney does not make investment recommendations. Family Future Planning matches you with attorneys in Illinois and New Jersey. For deeds in another state, you will usually need a lawyer licensed there.
 
-**An honest limit.** For one rental and one home, a will or a simple trust and a good beneficiary plan may be enough. We will not suggest a structure you do not need.
+**An honest limit.** For one rental and one home, a will or a simple trust and a good beneficiary plan may be enough. A good attorney will not suggest a structure you do not need.
 
 ## Next step
 
-Start with the [trust funding checklist](/checklists/trust-funding-checklist), or [book a consultation](/plan-finder).
+Start with the [trust funding checklist](/checklists/trust-funding-checklist), or [book a call](/book?from=audience-real-estate-investors) to be matched with an attorney in our network.

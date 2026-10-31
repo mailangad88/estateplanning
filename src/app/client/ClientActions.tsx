@@ -49,7 +49,7 @@ export function UploadForm({ options }: { options: { value: string; label: strin
     <form onSubmit={(e) => {
       e.preventDefault();
       if (!file) return;
-      // TODO: after registering, request a signed URL and PUT the file bytes to storage. Today only the file details are recorded.
+      // Not rendered until file storage is connected: today only the file details would be recorded.
       void run(async () => { await post("/api/client/documents", { name: file.name, kind, contentType: file.type, sizeBytes: file.size }); setFile(null); });
     }}>
       <label htmlFor="kind">What is this?</label>

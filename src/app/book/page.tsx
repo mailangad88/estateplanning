@@ -23,10 +23,10 @@ const FAQS = [
   { q: "What does the consult cost?", a: `${firm.consultFee}. Package prices are on our [pricing page](/pricing), so you can see them before you book.` },
   { q: "How long is it, and how do we meet?", a: `${firm.consultLength} minutes, by ${firm.consultFormat}.` },
   { q: "Do I have to sign up for anything on the call?", a: "No. You can take the quote home, think it over, and come back when you are ready." },
-  { q: "Who will I talk to?", a: "An estate planning attorney in our network who is licensed in your state and fits what you need. [Attorney: how matching works]" },
-  { q: "Is this a law firm?", a: "No. This is a referral website: we match you with an appropriate attorney, and that attorney gives the legal advice. [Attorney: confirm network disclosure wording]" },
+  { q: "Who will I talk to?", a: "An estate planning attorney in our network who is licensed in your state and fits what you need. We match you based on where you live and the kind of help you are looking for." },
+  { q: "Is this a law firm?", a: "No. This is a referral website: we match you with an appropriate attorney, and that attorney gives the legal advice." },
   { q: "What if I just want to learn first?", a: "Try the [plan finder](/plan-finder), the [will or trust comparison](/tools/will-or-trust) or our [free guides](/guides). Booking is there when you want it." },
-  { q: "Is what I say on the call confidential?", a: "Please do not share account numbers or Social Security numbers. Booking a consult does not by itself make us your lawyer; that starts when we both sign an engagement agreement. [Attorney: confirm confidentiality wording]" },
+  { q: "Is what I say on the call confidential?", a: "Please do not share account numbers or Social Security numbers. Booking a consult does not by itself create an attorney-client relationship; that starts when you and the attorney sign an engagement agreement. What you tell an attorney while seeking legal help is generally kept confidential under Rule 1.18 of the Illinois and New Jersey Rules of Professional Conduct." },
 ];
 
 export default function BookPage() {

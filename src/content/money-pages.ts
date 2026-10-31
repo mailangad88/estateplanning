@@ -1,10 +1,11 @@
-import { firm } from "@/config/firm";
+import { fees, firm, packages, services } from "@/config/firm";
 import { FIGURES } from "@/config/figures";
 
 /**
- * Copy for the service ("money") pages. Facts about the attorney, fees and state rules come from
- * src/config/firm.ts or stay as visible [Attorney: ...] / [Flat fee] placeholders; nothing here is invented.
- * Inline syntax: [text](/path), **bold**, [Attorney: ...] placeholder.
+ * Copy for the service ("money") pages. Facts about the attorney, fees and services come from
+ * src/config/firm.ts (firm, fees, services). State rules are written for Illinois and New Jersey,
+ * the only states the site serves, with the statute cited. Nothing here is invented.
+ * Inline syntax: [text](/path) for links and **bold**.
  */
 export type Block =
   | { p: string }
@@ -38,14 +39,17 @@ export interface MoneyPageData {
 }
 
 const A = firm.attorneyName;
-const FEE = "[Flat fee]";
-const STATE_RULE = (what: string) => `[Attorney: ${what} in your state]`;
+/** The attorney a visitor is matched with. The site is a referral network, not a law firm. */
+const MATCHED = "the attorney you are matched with";
+const essentials = packages.find((p) => p.id === "essentials");
+/** Ends a firm.ts value as a sentence, whether or not the value carries its own full stop. */
+const end = (v: string) => (/[.!?]$/.test(v.trim()) ? v.trim() : `${v.trim()}.`);
 
 const wills: MoneyPageData = {
   path: "/wills",
   crumb: "Wills",
   title: "Wills: what they do, what they cannot do, and what they cost",
-  description: "A will names who gets your property and who raises your children. How wills work, what they cannot do, and how our flat fee for drafting one works.",
+  description: "A will names who gets your property and who raises your children. How wills work, what they cannot do, and how flat fees for drafting one work.",
   h1: "Wills: what they do and what they cannot do",
   answer: "A will is a legal document that says who receives your property when you die, who raises your minor children, and who carries out your instructions. It takes effect only at death, and in most cases it goes through probate. A will must be signed and witnessed in the way your state requires to count.",
   serviceType: "Will drafting",
@@ -96,7 +100,7 @@ const wills: MoneyPageData = {
     {
       h: "How a will is signed",
       blocks: [
-        { p: `A will generally must be in writing, signed by you, and witnessed by adults who are not beneficiaries. The number of witnesses and whether a self-proving affidavit before a notary is available vary by state. ${STATE_RULE("witness count, self-proving affidavit and handwritten will rules")}. See [what makes a will valid](/guides/what-makes-a-will-valid).` },
+        { p: `A will generally must be in writing, signed by you, and witnessed by adults who are not beneficiaries. In Illinois, a will needs at least two credible witnesses, and no notary is required (755 ILCS 5/4-3). Illinois does not accept an unwitnessed handwritten will. In New Jersey, a will needs two witnesses, or it can be handwritten if your signature and the important parts are in your own handwriting (N.J.S.A. 3B:3-2). A New Jersey will can be made self-proving with an affidavit before a notary or attorney (N.J.S.A. 3B:3-4). See [what makes a will valid](/guides/what-makes-a-will-valid).` },
       ],
     },
     {
@@ -106,23 +110,23 @@ const wills: MoneyPageData = {
       ],
     },
     {
-      h: "What we do when we draft your will",
+      h: "What the attorney does when drafting your will",
       blocks: [
         {
           ol: [
-            "We ask about your family, property, accounts and who you trust.",
-            "We draft a will that fits your state's law, with a guardian nomination if you have minor children, and a plan for property you leave to a minor.",
-            "We go over it with you, sign it with witnesses and a notary, and explain where to keep it.",
-            "We point out which beneficiary forms to check, because those override the will.",
+            "Asks about your family, property, accounts and who you trust.",
+            "Drafts a will that fits Illinois or New Jersey law, with a guardian nomination if you have minor children, and a plan for property you leave to a minor.",
+            "Goes over it with you, oversees the signing with witnesses, and explains where to keep it.",
+            "Points out which beneficiary forms to check, because those override the will.",
           ],
         },
-        { p: `${A} drafts and signs off on every will we prepare. ${firm.yearsInPractice}` },
+        { p: "We match you with an estate planning attorney in our network. That attorney drafts your will and gives the legal advice." },
       ],
     },
     {
       h: "What it costs",
       blocks: [
-        { p: `Our will-based package is called Essentials. It starts at ${FEE} for one person and ${FEE} for a couple. It includes [Attorney: confirm list, for example will, durable power of attorney, healthcare directive, one review meeting]. It does not include probate or tax return preparation. See [pricing](/pricing).` },
+        { p: `The will-based package is called Essentials. It starts at ${fees.essentialsOne} for one person and ${fees.essentialsCouple} for a couple. It includes: ${(essentials?.includes ?? []).join("; ").toLowerCase()}. It does not include probate or tax return preparation. See [pricing](/pricing).` },
       ],
     },
   ],
@@ -131,7 +135,7 @@ const wills: MoneyPageData = {
     { q: "Is a will enough, or do I need a trust?", a: "For many people a will is enough. A trust adds value for some people who own real estate, want to skip probate, or have beneficiaries who cannot manage money. The [will or trust comparison](/tools/will-or-trust) shows which way your answers point." },
     { q: "Is a handwritten or online will valid?", a: "It can be, but validity depends on your state's signing rules. A missing witness or signature is a common reason courts reject a document. See [online will vs estate attorney](/compare/online-will-vs-estate-attorney)." },
     { q: "Can I change my will later?", a: "Yes, by signing a new will or a formal amendment called a codicil, as long as you have the mental capacity to do so. Marriage, divorce, a new child and a move to another state are common reasons to review it. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan)." },
-    { q: "Where should I keep my will?", a: `Somewhere your executor can find it quickly and that is safe from fire and loss. [Attorney: whether the firm stores originals]. Many people avoid putting the only original in a bank box that nobody else can open.` },
+    { q: "Where should I keep my will?", a: `Somewhere your executor can find it quickly and that is safe from fire and loss. Ask ${MATCHED} whether they keep originals in safekeeping. Many people avoid putting the only original in a bank box that nobody else can open.` },
     { q: "Who should I pick as executor?", a: "Someone organized, honest and willing, who lives close enough to manage things. They do not have to be a family member. See [choosing an executor](/learn/wills/choosing-an-executor) and the [executor worksheet](/checklists/choosing-an-executor-worksheet)." },
     { q: "Can someone contest my will?", a: "Family members can try. They need a legal reason, such as lack of capacity or undue influence, and there are deadlines that vary by state. Clear documentation and proper signing make a challenge harder." },
     { q: "What happens to a will after I die?", a: "Your executor files it with the probate court. The court confirms it, the executor pays debts, and property is distributed. See [how probate works](/guides/how-probate-works)." },
@@ -149,7 +153,7 @@ const livingTrusts: MoneyPageData = {
   path: "/living-trusts",
   crumb: "Living trusts",
   title: "Living trusts: who often benefits",
-  description: "A revocable living trust can let your family skip probate on your home and accounts. What it does, what it does not do, and how our flat fee works.",
+  description: "A revocable living trust can let your family skip probate on your home and accounts. What it does, what it does not do, and how flat fees work.",
   h1: "Living trusts: what they do and who often benefits",
   answer: "A revocable living trust is a legal arrangement you create during your life. You put property into it, you stay in control as trustee, and when you die a successor trustee passes it to your beneficiaries without going through probate court. It can be changed any time, and it does not reduce your taxes.",
   serviceType: "Living trust preparation",
@@ -239,24 +243,24 @@ const livingTrusts: MoneyPageData = {
       ],
     },
     {
-      h: "What we do",
+      h: "What the attorney does",
       blocks: [
         {
           ol: [
-            "Review your assets and family to decide whether a trust helps. If it does not, we say so.",
-            "Draft the trust and a pour-over will that sweeps stray assets into it.",
-            "Prepare your durable power of attorney and healthcare documents so the plan covers incapacity.",
-            "Prepare the deed for your home and give you a funding checklist for bank, brokerage and beneficiary accounts. [Attorney: what funding help is included at each package level]",
-            "Hold a signing meeting, with witnesses and a notary as your state requires.",
+            "Reviews your assets and family to decide whether a trust helps, and tells you if it does not.",
+            "Drafts the trust and a pour-over will that sweeps stray assets into it.",
+            "Prepares your durable power of attorney and healthcare documents so the plan covers incapacity.",
+            "Prepares the deed for your home and gives you a funding checklist for bank, brokerage and beneficiary accounts. The [pricing](/pricing) page shows the funding help in each package.",
+            "Holds a signing meeting, with witnesses and a notary as Illinois or New Jersey law requires.",
           ],
         },
-        { p: `${A} drafts every trust. [Attorney: a true, checkable statement about trust experience]. We include funding instructions because an unfunded trust does not work.` },
+        { p: "The attorney you are matched with drafts your trust and includes funding instructions, because an unfunded trust does not work." },
       ],
     },
     {
       h: "What it costs",
       blocks: [
-        { p: `Our trust-based package is called Complete. It starts at ${FEE} for one person and ${FEE} for a couple. A second property, a blended family, a business or a special needs provision moves the price. See [pricing](/pricing).` },
+        { p: `The trust-based package is called Complete. It starts at ${fees.completeOne} for one person and ${fees.completeCouple} for a couple. A second property, a blended family, a business or a special needs provision moves the price. See [pricing](/pricing).` },
       ],
     },
   ],
@@ -265,9 +269,9 @@ const livingTrusts: MoneyPageData = {
     { q: "Does a living trust avoid estate tax?", a: "No. A revocable trust is counted in your estate for tax purposes. Federal estate tax applies only above a high exemption, and some states have their own estate or inheritance tax. See [estate and inheritance taxes](/guides/estate-and-inheritance-taxes) and the [estate tax estimator](/tools/estate-tax-estimator)." },
     { q: "Do I lose control of my property?", a: "No. As trustee of a revocable trust you buy, sell and use property as you do now. You can change or cancel the trust whenever you have capacity." },
     { q: "Who should be my successor trustee?", a: "Someone trustworthy and organized who can handle paperwork and difficult family conversations. Many people name a child plus a backup, or a professional if no one fits. See [choosing a trustee](/learn/trusts/choosing-a-trustee) and [executor vs trustee](/compare/executor-vs-trustee)." },
-    { q: "Do I have to put everything in the trust?", a: "No. Retirement accounts and life insurance usually stay out and pass by beneficiary form. Vehicles and small accounts often stay out too. We tell you which assets people usually move." },
-    { q: "What does it mean to fund a trust, and who does it?", a: "Funding means changing ownership of an asset to the trust, such as recording a new deed for your house or retitling a bank account. We prepare the deed and instructions. Some steps, such as bank forms, you complete yourself." },
-    { q: "Will my mortgage lender or insurer object if I move my home into a trust?", a: "Federal law generally prevents a lender from calling a loan due when a home goes into your own revocable trust, but people usually tell their insurer and title company. [Attorney: confirm for your state]" },
+    { q: "Do I have to put everything in the trust?", a: "No. Retirement accounts and life insurance usually stay out and pass by beneficiary form. Vehicles and small accounts often stay out too. The attorney tells you which assets people usually move." },
+    { q: "What does it mean to fund a trust, and who does it?", a: "Funding means changing ownership of an asset to the trust, such as recording a new deed for your house or retitling a bank account. The attorney prepares the deed and instructions. Some steps, such as bank forms, you complete yourself." },
+    { q: "Will my mortgage lender or insurer object if I move my home into a trust?", a: "Federal law generally prevents a lender from calling a home loan due when you move your home into a revocable trust and you stay a beneficiary and keep living there (12 U.S.C. 1701j-3(d)(8)). This applies in Illinois and New Jersey. People still usually tell their insurer and title company." },
     { q: "What happens to the trust when I die?", a: "Your successor trustee gathers the assets, pays debts and taxes, and distributes what is left according to the trust. See [trust administration](/trust-administration)." },
   ],
   related: [
@@ -287,12 +291,12 @@ const poa: MoneyPageData = {
   h1: "Durable power of attorney: who handles your money if you cannot",
   answer: "A durable power of attorney is a document that lets a person you choose, called your agent, manage your finances and property if you cannot. \"Durable\" means it stays valid if you become incapacitated. Without one, your family may need to ask a court for permission to pay your bills, and that can take months.",
   serviceType: "Power of attorney preparation",
-  urgent: { title: "Parent unwell right now?", body: "If this is urgent, call. We will tell you what is possible." },
+  urgent: { title: "Parent unwell right now?", body: "If this is urgent, call. We will match you with an attorney who can tell you what is possible." },
   sections: [
     {
       h: "What an agent can and cannot do",
       blocks: [
-        { p: "An agent can pay bills, manage bank and brokerage accounts, file taxes, deal with insurance and Medicare paperwork, sell or manage property, and run a business, to the extent your document allows. The powers are listed in the document, and some, such as making gifts or changing beneficiaries, may need to be spelled out. [Attorney: state rule on special powers]" },
+        { p: "An agent can pay bills, manage bank and brokerage accounts, file taxes, deal with insurance and Medicare paperwork, sell or manage property, and run a business, to the extent your document allows. The powers are listed in the document, and some, such as making gifts or changing beneficiaries, may need to be spelled out. In New Jersey, an agent cannot make gifts of your property unless the document expressly allows it (N.J.S.A. 46:2B-8.13a). Illinois uses a statutory short form with its own list of powers, including gifts (755 ILCS 45/3-3), and the attorney explains what it covers." },
         { p: "An agent cannot make a will for you, and the authority ends when you die. After death the executor or successor trustee takes over. An agent is a fiduciary, which means a legal duty to act in your interest and keep your money separate from theirs. See [powers of attorney](/guides/powers-of-attorney)." },
       ],
     },
@@ -308,7 +312,7 @@ const poa: MoneyPageData = {
             ],
           },
         },
-        { p: "Many attorneys prefer immediate, with the original held until needed. [Attorney: this firm's practice and your state's rules on springing powers]" },
+        { p: "Many attorneys prefer immediate, with the original held until needed. The attorney you are matched with explains which type they recommend and how it works under Illinois or New Jersey law." },
       ],
     },
     {
@@ -326,11 +330,11 @@ const poa: MoneyPageData = {
     {
       h: "Banks sometimes refuse a valid power of attorney",
       blocks: [
-        { p: "It happens, and it is frustrating. A document written to your state's standards, notarized and shown to your bank ahead of time, reduces the chance. Some states penalize institutions that unreasonably refuse. [Attorney: state rule]" },
+        { p: "It happens, and it is frustrating. A document written to your state's standards, notarized and shown to your bank ahead of time, reduces the chance. In Illinois, a person or bank that refuses a valid power of attorney without reasonable cause can be liable for the damages that causes (755 ILCS 45/2-8). In New Jersey, banks must generally accept a properly signed power of attorney, may refuse only in situations the law lists, and in many cases must give the agent the reason in writing (N.J.S.A. 46:2B-13)." },
       ],
     },
     {
-      h: "What we prepare",
+      h: "What the attorney prepares",
       blocks: [
         {
           ul: [
@@ -340,7 +344,7 @@ const poa: MoneyPageData = {
             "A short letter to help your agent present the document to banks",
           ],
         },
-        { p: `Included in our Essentials, Complete and Legacy packages. On its own: ${FEE}. See [pricing](/pricing). ${A} explains your agent's duties in the signing meeting.` },
+        { p: `Included in the Essentials, Complete and Legacy packages. On its own: ${fees.powerOfAttorneyAlone}. See [pricing](/pricing). The attorney explains your agent's duties in the signing meeting.` },
       ],
     },
   ],
@@ -349,9 +353,9 @@ const poa: MoneyPageData = {
     { q: "When should I sign one?", a: "When you are healthy and clear-headed. Capacity is required to sign, and it can disappear suddenly through a stroke, an accident or dementia." },
     { q: "Can my agent take my money?", a: "They have a legal duty not to misuse it. You can add safeguards: a requirement to give accountings, a limit on gifts, or a second person who must approve large transactions. A trusted agent is still the main safeguard." },
     { q: "Does a power of attorney work after death?", a: "No. Authority ends at death. The executor named in your will, or your successor trustee, takes over. See [what happens to a power of attorney when you die](/blog/what-happens-to-a-power-of-attorney-when-you-die)." },
-    { q: "Does my spouse automatically have this authority?", a: "Usually not. Marriage alone often does not allow a spouse to sell a solely owned asset or deal with accounts in your name. [Attorney: state rule]" },
-    { q: "Is a power of attorney from another state valid here?", a: "Many states recognize out-of-state powers of attorney that were valid where signed, but local institutions may balk. If you have moved, it is common to have yours reviewed. [Attorney: state rule]" },
-    { q: "My parent has dementia and no power of attorney. What now?", a: "A person with dementia may still be able to sign if they understand what the document does on that day. That is a legal question that depends on the person's capacity. If they cannot, the usual route is a guardianship or conservatorship. Call us and we will tell you what applies." },
+    { q: "Does my spouse automatically have this authority?", a: "Usually not, in Illinois or New Jersey. Marriage alone does not make your spouse your agent, so a spouse often cannot sell a solely owned asset or deal with accounts in your name without a power of attorney." },
+    { q: "Is a power of attorney from another state valid here?", a: "Many states recognize out-of-state powers of attorney that were valid where signed, but local institutions may balk. If you have moved to Illinois or New Jersey, it is common to have the attorney you are matched with review yours and confirm how the state treats it." },
+    { q: "My parent has dementia and no power of attorney. What now?", a: "A person with dementia may still be able to sign if they understand what the document does on that day. That is a legal question that depends on the person's capacity. If they cannot, the usual route is a guardianship or conservatorship. Call, and we will match you with an attorney who can tell you what applies." },
   ],
   related: [
     { href: "/guides/powers-of-attorney", title: "Powers of attorney", kind: "Guide" },
@@ -381,11 +385,11 @@ const healthcare: MoneyPageData = {
               ["Healthcare power of attorney (proxy, agent, surrogate)", "Names the person who decides medical matters if you cannot"],
               ["Living will", "States your wishes on life support, feeding tubes and comfort care"],
               ["HIPAA authorization", "Lets named people see your medical records, so they can do the job"],
-              ["POLST or similar medical order [Attorney: name and availability in your state]", "A medical order signed by a clinician for people with a serious illness. Not a replacement for an advance directive"],
+              ["POLST form (in Illinois, the IDPH Uniform POLST form; in New Jersey, the POLST form)", "A medical order signed by a clinician for people with a serious illness. Not a replacement for an advance directive"],
             ],
           },
         },
-        { p: "State terms vary. [Attorney: terminology and statutory form in your state]" },
+        { p: "State terms vary. Illinois uses a statutory short form power of attorney for health care (755 ILCS 45/4-10) and a separate living will declaration (755 ILCS 35/3). New Jersey calls these documents an advance directive: a proxy directive names your health care representative, and an instruction directive states your wishes (N.J.S.A. 26:2H-55, 26:2H-58)." },
       ],
     },
     {
@@ -418,22 +422,24 @@ const healthcare: MoneyPageData = {
     {
       h: "Signing rules",
       blocks: [
-        { p: "[Attorney: witnesses required, notary optional or required, who cannot witness, and whether a statutory form exists in your state]. We prepare the documents to meet your state's requirements, and explain where to store copies and how to give them to your doctors." },
+        { p: "**Illinois.** The statutory health care power of attorney needs one adult witness and no notary. The witness cannot be your agent, a relative of you or your agent, your doctor or certain other health providers, or an owner or operator of the facility where you live (755 ILCS 45/4-10). A living will needs two adult witnesses who would not inherit from you and are not paying for your medical care (755 ILCS 35/3)." },
+        { p: "**New Jersey.** You sign before two adult witnesses, or acknowledge the directive before a notary or attorney. The person you name as your health care representative cannot be a witness (N.J.S.A. 26:2H-56)." },
+        { p: "The attorney you are matched with prepares the documents to meet these rules, and explains where to store copies and how to give them to your doctors." },
       ],
     },
     {
       h: "Cost",
       blocks: [
-        { p: `Included in every package. On its own: ${FEE}. See [pricing](/pricing). We do not give medical advice. Talk to your doctor about your health, and we will make sure what you decide is written down in a way hospitals will accept. [Attorney: your approach to the signing meeting, in one honest sentence]` },
+        { p: `Included in every package. On its own: ${fees.healthcareDirectiveAlone}. See [pricing](/pricing). Attorneys do not give medical advice. Talk to your doctor about your health, and the attorney helps put what you decide in writing.` },
       ],
     },
   ],
   faqs: [
     { q: "What is the difference between a living will and a healthcare power of attorney?", a: "A living will describes the treatment you do or do not want. A healthcare power of attorney names a person who decides when situations arise that the living will did not foresee. Together they often work better than either alone. See [living will vs healthcare power of attorney](/compare/living-will-vs-healthcare-power-of-attorney)." },
     { q: "Do I need both?", a: "Many attorneys suggest both. The agent covers situations you could not predict. The living will helps your agent know what you would say." },
-    { q: "Does the document need to be notarized?", a: "It depends on your state. Some require two witnesses, some a notary, some either. [Attorney: state rule]" },
+    { q: "Does the document need to be notarized?", a: "In Illinois, no. The statutory health care power of attorney needs one witness, and a living will needs two (755 ILCS 45/4-10, 755 ILCS 35/3). In New Jersey, you can use two witnesses or a notary or attorney instead (N.J.S.A. 26:2H-56)." },
     { q: "What if my family disagrees with my choices?", a: "Your agent and your written wishes control, subject to the law. Writing it down can prevent arguments, because your family sees that the decision was yours." },
-    { q: "Can doctors ignore my directive?", a: "A doctor may decline on conscience grounds but generally must transfer your care to someone who will follow it. [Attorney: state rule] Give your agent and your doctor copies." },
+    { q: "Can doctors ignore my directive?", a: "A doctor may decline, but cannot simply walk away. In Illinois, a provider who will not follow your agent's decision must tell the agent promptly and keep caring for you while the agent arranges a transfer (755 ILCS 45/4-7). In New Jersey, a provider or institution that declines must take reasonable steps toward a timely, respectful transfer (N.J.S.A. 26:2H-65). Give your agent and your doctor copies." },
     { q: "I travel. Does my directive work in another state?", a: "Many states honor out-of-state directives that were valid where signed. Carry copies, and consider an update if you move." },
     { q: "What is a HIPAA authorization and why is it separate?", a: "Federal privacy law limits who can see your records. A HIPAA authorization names who may. Without it, your agent may struggle to get information. See [what is a HIPAA release](/blog/what-is-a-hipaa-release-and-why-does-it-belong-in-your-plan)." },
   ],
@@ -478,7 +484,7 @@ const probate: MoneyPageData = {
     {
       h: "Is probate required?",
       blocks: [
-        { p: "Not always. Property passes outside probate when it has a named beneficiary, is held jointly with survivorship, or is in a living trust. Many states offer a simplified process for small estates. [Attorney: small-estate limit in your state, with an as-of date]. See [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets) and [can you skip probate for a small estate?](/blog/can-you-skip-probate-for-a-small-estate)" },
+        { p: "Not always. Property passes outside probate when it has a named beneficiary, is held jointly with survivorship, or is in a living trust. Both states offer a simpler route for small estates. In Illinois, a small estate affidavit can be used when the personal property, not counting real estate or vehicles, is $150,000 or less, for deaths on or after August 15, 2025 (755 ILCS 5/25-1). In New Jersey, when there is no will, a surviving spouse or partner can use an affidavit if the whole estate is $50,000 or less, and other heirs if it is $20,000 or less (N.J.S.A. 3B:10-3, 3B:10-4). Figures as of 2026. See [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets) and [can you skip probate for a small estate?](/blog/can-you-skip-probate-for-a-small-estate)" },
       ],
     },
     {
@@ -488,7 +494,7 @@ const probate: MoneyPageData = {
           ol: [
             "**File the will and petition** in the probate court in the county where the person lived.",
             "**The court appoints the executor** (the person named in the will) or an administrator if there is no will. They receive official authority papers.",
-            "**Notify heirs and creditors.** Creditors have a limited window to make claims. [Attorney: creditor period in your state]",
+            "**Notify heirs and creditors.** Creditors have a limited window to make claims. In Illinois, the deadline is at least six months after the notice is first published, or three months after a known creditor is mailed notice, whichever is later (755 ILCS 5/18-3). In New Jersey, creditors present claims within nine months of the death (N.J.S.A. 3B:22-4).",
             "**Inventory, pay debts and taxes.** The executor values assets, pays bills and files final tax returns.",
             "**Distribute what is left** and close the estate with the court.",
           ],
@@ -499,7 +505,7 @@ const probate: MoneyPageData = {
     {
       h: "How long does it take, and what does it cost?",
       blocks: [
-        { p: "Delays usually come from missing documents, family disputes, real estate that must be sold, or creditor claims. Court filing fees and attorney fees vary by state. [Attorney: typical timeline, filing fees and attorney fee rules in your state, with sources]" },
+        { p: "Delays usually come from missing documents, family disputes, real estate that must be sold, or creditor claims. Court filing fees vary by county. In Illinois, the creditor period means most estates stay open at least six months, and attorney fees are not a set percentage: they must be reasonable (755 ILCS 5/27-2). In New Jersey, many executors wait out the nine-month creditor period before the final distribution." },
         { p: "See [how long does probate take?](/learn/probate/how-long-does-probate-take) and try the [probate cost estimator](/tools/probate-cost-estimator) and the [executor workload tool](/tools/executor-workload) for a rough picture." },
       ],
     },
@@ -512,7 +518,7 @@ const probate: MoneyPageData = {
     {
       h: "If you are an heir, not the executor",
       blocks: [
-        { p: "You usually do not need to hire anyone. In many states you can ask the executor for an inventory and updates. [Attorney: state rule]. If property seems mismanaged, we can talk through your options. We cannot represent both you and the executor in a dispute." },
+        { p: "You usually do not need to hire anyone. You can usually ask the executor for an inventory and updates. If property seems mismanaged, an attorney can talk through your options with you. The executor's attorney cannot also represent you in a dispute." },
       ],
     },
     {
@@ -522,21 +528,21 @@ const probate: MoneyPageData = {
       ],
     },
     {
-      h: "What we do for probate and what it costs",
+      h: "Probate help and what it costs",
       blocks: [
-        { p: `[Attorney: whether the firm handles probate, and how it is billed: flat fee, tiered by estate size, hourly, or a statutory schedule. Remove this section if the firm does not do probate.] We would begin with a short consult to say whether probate is needed and what it will likely take. Consult fee: ${firm.consultFee}. Our engagement agreement states the scope and what is billed separately, such as court costs and appraisals. ${A} will tell you if the estate is small enough that you can handle it yourself.` },
+        { p: `${end(services.probate)} The work begins with a short consult to say whether probate is needed and what it will likely take. Consult fee: ${firm.consultFee}. The engagement agreement states the scope and what is billed separately, such as court costs and appraisals. The attorney can also tell you if the estate is small enough that you can handle it yourself.` },
       ],
     },
   ],
   faqs: [
-    { q: "How long do I have to open probate?", a: "Many states require filing a will with the court within a set time after death, even if no probate is needed. [Attorney: deadline and penalties in your state]. Do not wait." },
-    { q: "Can I pay the funeral bill from the person's bank account?", a: "Often the family pays first and is reimbursed by the estate, because accounts may be frozen. Keep every receipt. [Attorney: state rule]" },
+    { q: "How long do I have to open probate?", a: "In Illinois, whoever has the will must file it with the clerk of the circuit court as soon as they learn of the death, even if no probate is needed, and hiding a will for 30 days after learning of the death is a crime (755 ILCS 5/6-1). In New Jersey, wills are probated through the county surrogate's office. In either state, do not wait." },
+    { q: "Can I pay the funeral bill from the person's bank account?", a: "Often the family pays first and is reimbursed by the estate, because accounts may be frozen. Keep every receipt. In both states, reasonable funeral expenses are among the first debts paid from the estate (755 ILCS 5/18-10; N.J.S.A. 3B:22-2)." },
     { q: "Am I personally responsible for the deceased's debts?", a: "Generally no, with exceptions such as a co-signer, a joint account holder, or community property in some states. Executors who distribute property before paying valid debts can become personally liable, so people commonly wait until the debts are known. See [what happens to debt when someone dies](/learn/probate/dealing-with-debts-in-probate)." },
     { q: "What if there is no will?", a: "The court appoints an administrator, usually a spouse or adult child, and state law decides who inherits. See [what happens if you die without a will](/learn/wills/dying-without-a-will)." },
-    { q: "What if I think the will is invalid, or a sibling is hiding things?", a: "Talk to an attorney soon. Deadlines to contest a will are short in many states. [Attorney: contest period in your state]" },
-    { q: "Can I avoid probate now that the person has died?", a: "Sometimes. If assets have a beneficiary or are jointly owned, they pass automatically. If the estate qualifies for a small-estate procedure, that may be used. We can help you check." },
-    { q: "Do I have to hire the attorney who drafted the will?", a: "No. You choose the attorney. [Attorney: whether the estate pays an executor's counsel fees in your state]" },
-    { q: "What does the first call cost, and what will you ask?", a: `Consult fee: ${firm.consultFee}. We will ask the date and county of death, whether there was a will, and a rough list of assets and debts. You do not need paperwork in hand.` },
+    { q: "What if I think the will is invalid, or a sibling is hiding things?", a: "Talk to an attorney soon. Deadlines are short. In Illinois, a will contest must be filed within six months after the will is admitted to probate (755 ILCS 5/8-1). In New Jersey, it is four months after probate, or six months if you lived outside New Jersey at the time (N.J. Court Rule 4:85-1)." },
+    { q: "Can I avoid probate now that the person has died?", a: "Sometimes. If assets have a beneficiary or are jointly owned, they pass automatically. If the estate qualifies for a small-estate procedure, that may be used. An attorney can help you check." },
+    { q: "Do I have to hire the attorney who drafted the will?", a: "No. You choose the attorney. In Illinois, reasonable fees for the estate's attorney are paid from the estate (755 ILCS 5/27-2). In New Jersey, the estate also commonly pays the executor's legal fees as a cost of administration, and the attorney confirms what applies." },
+    { q: "What does the first call cost, and what will you ask?", a: `Consult fee: ${firm.consultFee}. Expect questions about the date and county of death, whether there was a will, and a rough list of assets and debts. You do not need paperwork in hand.` },
   ],
   ctaTitle: "Prefer to talk first?",
   ctaBody: "Call, or leave your number above. If you would rather start online, the plan finder takes about two minutes.",
@@ -563,7 +569,7 @@ const trustAdmin: MoneyPageData = {
     {
       h: "Your role in plain terms",
       blocks: [
-        { p: "A trustee is a fiduciary. The law holds you to a high standard: act for the beneficiaries, not yourself; keep trust money separate from yours; keep records; communicate. Trustees are generally allowed reasonable compensation and to hire professionals at the trust's expense. [Attorney: state rule]. See [choosing a trustee](/learn/trusts/choosing-a-trustee)." },
+        { p: "A trustee is a fiduciary. The law holds you to a high standard: act for the beneficiaries, not yourself; keep trust money separate from yours; keep records; communicate. Trustees are generally allowed to be paid and to hire professionals at the trust's expense. Illinois allows reasonable compensation (760 ILCS 3/708). New Jersey sets commission rates for fiduciaries by statute (N.J.S.A. 3B:18-25). See [choosing a trustee](/learn/trusts/choosing-a-trustee)." },
       ],
     },
     {
@@ -574,7 +580,7 @@ const trustAdmin: MoneyPageData = {
             "Get certified death certificates.",
             "Find the trust document and all amendments. Read the sections on successor trustees, distributions and special instructions.",
             "Obtain an EIN for the trust, which becomes irrevocable at death, and open a trust account.",
-            "Notify beneficiaries and, where your state requires, heirs, in writing. [Attorney: notice deadline and content in your state]",
+            "Notify beneficiaries in writing. In Illinois, the trustee sends notice within 90 days after the trust becomes irrevocable (760 ILCS 3/813.1). New Jersey sets no fixed deadline, but the trustee must keep beneficiaries reasonably informed (N.J.S.A. 3B:31-67).",
             "Secure assets: home, vehicles, accounts, digital access.",
             "Hold off on distributions until debts, taxes and claims are understood.",
           ],
@@ -596,7 +602,7 @@ const trustAdmin: MoneyPageData = {
             ],
           },
         },
-        { p: "These ranges are common, not promises. [Attorney: confirm and adjust]" },
+        { p: "These ranges are common, not promises. Your trust may move faster or slower." },
       ],
     },
     {
@@ -621,16 +627,16 @@ const trustAdmin: MoneyPageData = {
       ],
     },
     {
-      h: "What we offer and what it costs",
+      h: "Trustee help and what it costs",
       blocks: [
-        { p: `[Attorney: services offered, such as full administration, guided administration where the trustee does the legwork and the firm reviews, or an hourly consult. Fee model for each. Remove what is not offered.] ${A} also writes trusts, so knows which provisions cause trouble. [Attorney: experience administering trusts, only if accurate]` },
+        { p: "Attorneys in our network offer some or all of the services below. The attorney you are matched with confirms what they offer, and the fee, before you commit." },
         {
           table: {
             head: ["Service", "What it covers", "Fee"],
             rows: [
-              ["Trustee consult", "One hour, written next-steps plan", FEE],
-              ["Guided administration", "You do the tasks; we review notices, accountings and distributions", FEE],
-              ["Full administration", "We handle notices, tax coordination, distributions and closing", FEE],
+              ["Trustee consult", "A consult and a written next-steps plan", fees.trusteeConsult],
+              ["Guided administration", "You do the tasks; the attorney reviews notices, accountings and distributions", fees.guidedTrustAdministration],
+              ["Full administration", "The attorney handles notices, tax coordination, distributions and closing", fees.fullTrustAdministration],
             ],
           },
         },
@@ -640,11 +646,11 @@ const trustAdmin: MoneyPageData = {
   faqs: [
     { q: "Do I need a lawyer to be a trustee?", a: "Not legally. Practically, many trustees get advice for any trust with real estate, tax issues or disagreement. An hour with an attorney often costs less than a trustee mistake." },
     { q: "Does a living trust avoid probate entirely?", a: "For assets properly titled in the trust, yes. Assets outside it may still need probate. See [probate](/probate) and [funding your trust](/guides/funding-your-trust)." },
-    { q: "Do I have to tell the beneficiaries?", a: "Usually yes, within a time frame set by your state's law. [Attorney: state rule]" },
+    { q: "Do I have to tell the beneficiaries?", a: "Usually yes. In Illinois, notice is due within 90 days after the trust becomes irrevocable (760 ILCS 3/813.1). In New Jersey, the trustee must keep beneficiaries reasonably informed and answer their requests promptly (N.J.S.A. 3B:31-67)." },
     { q: "Can I pay myself?", a: "Reasonable compensation is generally allowed unless the trust says otherwise, but trustees keep records and are prepared to justify it." },
-    { q: "How long will this take?", a: "Simple trusts can finish in months. Real estate sales, taxes and disputes extend it. [Attorney: typical range]" },
-    { q: "What if a beneficiary is upset or demands money?", a: "Respond in writing, share the trust terms they are entitled to see, and avoid early payments. If a dispute escalates, call us before you reply." },
-    { q: "What taxes apply?", a: "The trust may owe income tax. Inherited property generally gets a step-up in basis to its date-of-death value, which can reduce capital gains on a later sale. [Attorney: confirm]. See [estate and inheritance taxes](/guides/estate-and-inheritance-taxes)." },
+    { q: "How long will this take?", a: "Simple trusts can finish in months. Real estate sales, taxes and disputes extend it. The timeline above shows a common pattern." },
+    { q: "What if a beneficiary is upset or demands money?", a: "Respond in writing, share the trust terms they are entitled to see, and avoid early payments. If a dispute escalates, talk to an attorney before you reply." },
+    { q: "What taxes apply?", a: "The trust may owe income tax. Inherited property generally gets a step-up in basis to its date-of-death value, which can reduce capital gains on a later sale (26 U.S.C. 1014). See [estate and inheritance taxes](/guides/estate-and-inheritance-taxes)." },
     { q: "What if I do not want to be trustee?", a: "You can usually decline or resign, and the trust names the next person. People commonly avoid actions that look like acceptance until they decide." },
   ],
   ctaTitle: "Prefer to talk first?",
@@ -703,7 +709,7 @@ const parents: MoneyPageData = {
           ],
         },
         { p: "**If your parent has already lost capacity.** A power of attorney cannot be signed after capacity is gone. A guardianship or conservatorship may be the only option. See [power of attorney vs guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship)." },
-        { p: `**Long-term care costs.** Some families plan years ahead for nursing home costs. Medicaid has a look-back period for gifts (${FIGURES.medicaidLookbackMonths} months in most states, California differs), and moving a house without advice can cause a penalty. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) and the [Medicaid look-back date tool](/tools/medicaid-lookback-date). [Attorney: whether this firm advises on Medicaid planning]` },
+        { p: `**Long-term care costs.** Some families plan years ahead for nursing home costs. Medicaid has a look-back period for gifts (${FIGURES.medicaidLookbackMonths} months in most states, California differs), and moving a house without advice can cause a penalty. Ask the attorney you are matched with whether they advise on Medicaid planning. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) and the [Medicaid look-back date tool](/tools/medicaid-lookback-date).` },
         { p: "**Do not put your name on your parent's deed as a shortcut.** It can cause gift tax, capital gains tax, creditor exposure and loss of the stepped-up basis. Ask first. See [caring for aging parents](/life-events/caring-for-aging-parents)." },
       ],
     },
@@ -721,7 +727,7 @@ const parents: MoneyPageData = {
             ],
           },
         },
-        { p: `${A} [Attorney: a personal or professional connection to this topic, only if true and shared willingly]. We will meet with you and your parents together if that helps.` },
+        { p: "Many attorneys will meet with you and your parents together, if your parents agree. Ask when you book." },
       ],
     },
   ],
@@ -729,11 +735,11 @@ const parents: MoneyPageData = {
     { q: "My parents refuse to talk about this. What can I do?", a: "Start small. Ask where their documents are kept, not what is in them. Offer to attend one meeting. Frame it around their wishes. If they still refuse, there is little that can be done legally, so keep a note of what you have asked." },
     { q: "Can I sign for my parent?", a: "Only if they have named you as agent in a signed power of attorney, or you have been appointed guardian by a court. Being a child does not give you the right." },
     { q: "How do we do this if my parent has early dementia?", a: "Capacity is not all or nothing. A person may be able to sign on a good day, and attorneys will assess it. A note from the doctor can help." },
-    { q: "Does a power of attorney cost a lot?", a: `It is among the less expensive documents. Our flat fee is ${FEE} on its own, and it is included in each package. See [pricing](/pricing).` },
+    { q: "Does a power of attorney cost a lot?", a: `It is among the less expensive documents. The flat fee is ${fees.powerOfAttorneyAlone} on its own, and it is included in each package. See [pricing](/pricing).` },
     { q: "Who should be our children's guardian?", a: "Someone with the values, health, energy and finances to raise them, and who has said yes. It does not have to be the richest relative. See [can I name my sister as guardian if my husband disagrees?](/blog/can-i-name-my-sister-as-guardian-if-my-husband-disagrees)" },
-    { q: "What if I am divorced or a single parent?", a: "Your plan may matter more. The other parent normally keeps custody if you die unless a court finds otherwise. [Attorney: state rule]. Many single parents name guardians for the case where both parents cannot serve." },
+    { q: "What if I am divorced or a single parent?", a: "Your plan may matter more. In Illinois and New Jersey, as in most states, the other parent usually keeps custody if you die unless a court finds otherwise. The attorney you are matched with explains how this works for your family. Many single parents name guardians for the case where both parents cannot serve." },
     { q: "How often should parents update a plan?", a: "Every few years, and after any marriage, divorce, birth, move or large change in assets. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan)." },
-    { q: "What if my parent lives in a different state?", a: "Documents should fit the state where your parent lives. [Attorney: states where the firm is licensed]. If your parent lives elsewhere, we can point you to the state bar's referral service. We do not receive referral fees." },
+    { q: "What if my parent lives in a different state?", a: "Documents should fit the state where your parent lives. Attorneys in our network practice in Illinois and New Jersey. If your parent lives elsewhere, the state bar's lawyer referral service in that state can help." },
   ],
   related: [
     { href: "/life-events/caring-for-aging-parents", title: "Caring for aging parents", kind: "Life event" },
@@ -748,12 +754,12 @@ const howItWorks: MoneyPageData = {
   path: "/how-it-works",
   crumb: "How it works",
   title: "How estate planning works: our process and timeline",
-  description: `What happens when you hire ${firm.brandName} for estate planning: the questionnaire, the consultation, drafting, signing, and what to have ready.`,
+  description: `What happens when you use ${firm.brandName} to find an estate planning attorney: the questionnaire, the consultation, drafting, signing, and what to have ready.`,
   h1: `How estate planning works with ${firm.brandName}`,
-  answer: `You start with a short questionnaire, then a call with a team member to book a consultation with ${A}. At the consultation the attorney recommends a plan and quotes a flat fee. If you hire us, we draft the documents, you review them, and you sign them with witnesses and a notary. Most clients finish in [Attorney: typical weeks from first call to signing].`,
+  answer: `You start with a short questionnaire, then a call with a team member who matches you with an estate planning attorney in our network and books your consultation. At the consultation the attorney recommends a plan and quotes a flat fee. If you hire the attorney, they draft the documents, you review them, and you sign them with witnesses and a notary. Typical turnaround: ${end(services.turnaround)}`,
   steps: [
     { name: "Questionnaire", text: "Answer questions about your family, property and goals on the plan finder." },
-    { name: "Intake call", text: "A team member confirms the basics, checks for conflicts and books your consultation." },
+    { name: "Intake call", text: "A team member confirms the basics, matches you with an attorney and books your consultation." },
     { name: "Consultation", text: "You talk with the attorney, who recommends a plan and gives a flat fee." },
     { name: "Engagement", text: "You sign an engagement agreement. This is when the attorney-client relationship begins." },
     { name: "Information gathering", text: "You complete a short questionnaire and share names, accounts and existing documents." },
@@ -762,7 +768,7 @@ const howItWorks: MoneyPageData = {
     { name: "Signing", text: "Documents are signed in front of witnesses and a notary." },
     { name: "After signing", text: "You get copies and instructions to fund the trust, update beneficiaries and tell your agents." },
   ],
-  urgent: { title: "Hospital, diagnosis or surgery coming up?", body: "Tell us on the first call. [Attorney: the firm's urgent process and turnaround]" },
+  urgent: { title: "Hospital, diagnosis or surgery coming up?", body: `Tell us on the first call. When documents are urgent: ${end(services.urgentTurnaround)}` },
   sections: [
     {
       h: "Step by step",
@@ -772,14 +778,14 @@ const howItWorks: MoneyPageData = {
             head: ["Step", "What happens", "Who", "How long"],
             rows: [
               ["1. Questionnaire", "You answer questions about your family, property and goals on the [plan finder](/plan-finder)", "You", "About 2 minutes"],
-              ["2. Intake call", "A team member confirms the basics, checks for conflicts and books your consultation. They are not lawyers and do not give legal advice", "Our team", `[Attorney: call length], within ${firm.responseTime}`],
-              ["3. Consultation", `You talk with ${A}: your family, what you own, what worries you. You get a recommendation and a flat fee`, A, `${firm.consultLength}, ${firm.consultFormat}`],
+              ["2. Intake call", "A team member confirms the basics, matches you with an attorney in our network and books your consultation. They are not lawyers and do not give legal advice", "Our team", `A short call, within ${firm.responseTime}`],
+              ["3. Consultation", "You talk with the attorney: your family, what you own, what worries you. You get a recommendation and a flat fee", "The attorney", `${firm.consultLength}, ${firm.consultFormat}`],
               ["4. Engagement", "You sign an engagement agreement and pay a deposit if one applies. This is when the attorney-client relationship begins", "You", "Same day if you decide then"],
-              ["5. Information gathering", "A short questionnaire and document upload: names, account list, existing documents", "You", "[Attorney: time to complete]"],
-              ["6. Drafting", `${A} drafts your documents`, A, firm.draftingTime],
-              ["7. Review meeting", "You read the drafts and ask questions. Changes are made", `You and ${A}`, "[Attorney: meeting length]"],
-              ["8. Signing", "Documents are signed in front of witnesses and a notary, as your state requires", "You, our team, a notary", "[Attorney: signing length]"],
-              ["9. After signing", "You get copies and instructions: fund the trust, update beneficiaries, tell your agents", "You, with our help", "Varies"],
+              ["5. Information gathering", "A short questionnaire and document upload: names, account list, existing documents", "You", "Varies"],
+              ["6. Drafting", "The attorney drafts your documents", "The attorney", firm.draftingTime],
+              ["7. Review meeting", "You read the drafts and ask questions. Changes are made", "You and the attorney", "Varies"],
+              ["8. Signing", "Documents are signed in front of witnesses and a notary, as Illinois or New Jersey law requires", "You, the attorney, witnesses and a notary", "Varies"],
+              ["9. After signing", "You get copies and instructions: fund the trust, update beneficiaries, tell your agents", "You, with the attorney's help", "Varies"],
             ],
           },
         },
@@ -807,31 +813,31 @@ const howItWorks: MoneyPageData = {
     {
       h: "What the first call is and is not",
       blocks: [
-        { p: "It is a short conversation to check that we can help and book a time. It is not legal advice, and no attorney-client relationship begins until you sign an engagement agreement. Please do not send Social Security numbers, account numbers or medical details through the website or by text. We will tell you how to share documents safely later." },
+        { p: "It is a short conversation to check that we can help, match you with an attorney and book a time. It is not legal advice, and no attorney-client relationship begins until you sign an engagement agreement. Please do not send Social Security numbers, account numbers or medical details through the website or by text. We will tell you how to share documents safely later." },
       ],
     },
     {
       h: "How your information is used",
       blocks: [
-        { p: "We use what you tell us to contact you and to prepare for your consultation. We do not sell your information. We contact you by phone, email or text only as you have agreed. Text messages are optional, and you can opt out any time by replying STOP. See [privacy](/legal/privacy), [text message terms](/legal/sms-terms) and [how we work](/legal/how-we-work)." },
+        { p: "We use what you tell us to contact you, match you with an attorney and prepare for your consultation. We do not sell your information. We contact you by phone, email or text only as you have agreed. Text messages are optional, and you can opt out any time by replying STOP. See [privacy](/legal/privacy), [text message terms](/legal/sms-terms) and [how we work](/legal/how-we-work)." },
       ],
     },
     {
       h: "What happens after you sign",
       blocks: [
-        { p: "[Attorney: follow-up the firm offers, for example a check-up call after 12 months]. A baby, a move, a divorce or a diagnosis are common reasons to call. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan) and the [plan review reminder](/tools/plan-review-reminder)." },
-        { p: `Everything is done by or under the supervision of ${A}. Team members schedule and organize. They do not give legal advice or draft documents without the attorney's review. [Attorney: confirm staffing description]` },
+        { p: `${end(services.afterSigning)} A baby, a move, a divorce or a diagnosis are common reasons to call. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan) and the [plan review reminder](/tools/plan-review-reminder).` },
+        { p: "Legal work is done by the attorney you are matched with, or under their supervision. Our team schedules and organizes. Team members are not lawyers and do not give legal advice." },
       ],
     },
   ],
   faqs: [
-    { q: "Do I have to come to the office?", a: `Consultations are by ${firm.consultFormat}. Signing may be in person or by remote notarization where your state allows it. [Attorney: confirm]` },
-    { q: "How long from first call to signing?", a: "[Attorney: usual range]. A faster schedule is possible when there is a real reason, such as a hospital stay." },
-    { q: "What if I need to change something after signing?", a: "[Attorney: how many days of small changes are included]. After that, amendments are quoted separately." },
-    { q: "Can my spouse come to the consult?", a: "Yes, and many couples attend together. Spouses who both sign an engagement agreement become joint clients, and we explain what that means for confidentiality. [Attorney: conflict language]" },
-    { q: "Is what I tell you confidential?", a: "Information shared while seeking legal help is protected in most situations, even before you hire us. [Attorney: confirm for your state]. Share only what is needed on the first call." },
-    { q: "What if I decide not to hire you?", a: "That is fine. You keep the recommendation. We will not pressure you. A team member may follow up once or twice at most. [Attorney: confirm cadence]" },
-    { q: "What if I live outside the state you practice in?", a: "We can only advise on the law of the state where the attorney is licensed. [Attorney: licensed states]. Otherwise the state bar's referral service can help you find someone." },
+    { q: "Do I have to come to the office?", a: `Consultations are by ${firm.consultFormat}. Signing may be in person, or remote where Illinois or New Jersey law allows it for your documents. The attorney confirms which applies.` },
+    { q: "How long from first call to signing?", a: `${end(services.turnaround)} When there is a real reason, such as a hospital stay: ${end(services.urgentTurnaround)}` },
+    { q: "What if I need to change something after signing?", a: `Every package includes one round of revisions before signing. After signing: ${end(services.afterSigning)} Later amendments are quoted separately.` },
+    { q: "Can my spouse come to the consult?", a: "Yes, and many couples attend together. Spouses who both sign an engagement agreement become joint clients, and the attorney explains what that means for confidentiality before you sign." },
+    { q: "Is what I tell you confidential?", a: "Information you share with an attorney while seeking legal help is generally protected, even before you hire them. Illinois and New Jersey both cover this in Rule 1.18 of their Rules of Professional Conduct. Our intake team are not lawyers, so share only what is needed on the first call." },
+    { q: "What if I decide not to hire you?", a: "That is fine. You keep the recommendation, and nobody will pressure you. A team member may follow up once or twice at most." },
+    { q: "What if I live outside Illinois or New Jersey?", a: "Attorneys in our network advise on Illinois and New Jersey law only. If you live elsewhere, your state bar's lawyer referral service can help you find someone." },
   ],
   related: [
     { href: "/pricing", title: "Pricing", kind: "Page" },
@@ -846,26 +852,11 @@ const aboutAttorney: MoneyPageData = {
   path: "/about-the-attorney",
   crumb: "About the attorney",
   title: `${A}, estate planning attorney`,
-  description: `${A} is an estate planning attorney (Bar No. ${firm.barNumber}). Background, education, how the attorney works with clients, and how to reach them.`,
+  description: `${A} is the estate planning attorney responsible for ${firm.brandName} (Bar No. ${firm.barNumber}). Background, education, how the referral network works, and how to reach us.`,
   h1: `${A}, estate planning attorney`,
   schema: "profile",
-  answer: `${A} is an attorney who [Attorney: practice focus, for example wills, living trusts, powers of attorney and the probate and trust administration that follow]. Has practiced since ${firm.yearsInPractice}, is licensed in ${firm.licensedState} (Bar No. ${firm.barNumber}), and personally reviews every plan this firm prepares. [Attorney: confirm every fact in this paragraph]`,
+  answer: `${A} is the estate planning attorney responsible for ${firm.brandName}, a referral website that matches visitors with an appropriate estate planning attorney in Illinois or New Jersey. ${firm.attorneyShortBio}`,
   sections: [
-    {
-      h: "Why this work",
-      blocks: [{ p: "[Attorney: 80 to 150 words in your own words. What made you choose estate planning? What did you see early in your career that stays with you?]" }],
-    },
-    {
-      h: "How I work with clients",
-      blocks: [
-        { p: "[Attorney: 80 to 150 words. What happens in the first meeting? How do you explain things to non-lawyers? What do you decline to do?]" },
-        { p: "[Attorney: optional honest structure, for example: I say so if a trust is not needed; I quote a flat fee before you pay; I answer questions after signing for a stated period]" },
-      ],
-    },
-    {
-      h: "What I see go wrong",
-      blocks: [{ p: "[Attorney: three to five real, anonymized patterns, for example the most common mistake, a plan that failed because of funding or beneficiary forms, a family disagreement a document could have prevented. No client-identifying detail.]" }],
-    },
     {
       h: "Education and admission",
       blocks: [
@@ -873,23 +864,24 @@ const aboutAttorney: MoneyPageData = {
           table: {
             head: ["Item", "Detail"],
             rows: [
-              ["Law school", firm.lawSchool],
-              ["Undergraduate", "[Attorney: school]"],
-              ["Admitted", `${firm.licensedState} Bar, ${firm.yearsInPractice}, Bar No. ${firm.barNumber}`],
-              ["Other bars and courts", "[Attorney: list, or none]"],
-              ["Memberships", "[Attorney: current bar sections and associations only]"],
-              ["Publications or speaking", "[Attorney: list, or remove this row]"],
-              ["Disciplinary record", "[Attorney: confirm before publishing anything here]"],
+              ["Admitted to practice", firm.attorneyBio.licensedIn],
+              ["Bar number", firm.barNumber],
+              ["Education", firm.attorneyBio.education],
+              ["Practice", firm.attorneyBio.practiceFocus],
+              ...(firm.attorneyBio.certification ? [["Certification", firm.attorneyBio.certification]] : []),
+              ...firm.attorneyBio.awards.map((a) => ["Recognition", a]),
             ],
           },
         },
-        ...(firm.barLookupUrl ? [{ p: `[Verify the license on the state bar website](${firm.barLookupUrl})` }] : [{ p: "[Attorney: link to the state bar's lawyer lookup, so visitors can verify the license]" }]),
+        firm.barLookupUrl
+          ? { p: `[Verify the license on the state bar website](${firm.barLookupUrl})` }
+          : { p: "You can check any attorney's license yourself: in Illinois through the Attorney Registration and Disciplinary Commission (ARDC) lawyer search, and in New Jersey through the New Jersey Courts attorney search." },
       ],
     },
     {
-      h: "Practice areas",
+      h: "What the network helps with",
       blocks: [
-        { p: "[Attorney: confirm this list and remove anything not offered]" },
+        { p: "Attorneys in our network handle estate planning matters like these. The attorney you are matched with confirms which they take on before you book." },
         {
           ul: [
             "[Wills](/wills)",
@@ -903,38 +895,26 @@ const aboutAttorney: MoneyPageData = {
       ],
     },
     {
-      h: "Where I practice",
+      h: "Where we serve",
       blocks: [
-        { p: `[Attorney: counties and courts]. Office: ${firm.officeAddress}. Consults by ${firm.consultFormat}. States where licensed: ${firm.licensedState} only, unless the attorney says otherwise.` },
+        { p: `Illinois and New Jersey only. Office: ${firm.officeAddress}. Consults by ${firm.consultFormat}.` },
       ],
-    },
-    {
-      h: "Outside the office",
-      blocks: [{ p: "[Attorney: optional, two sentences of personal detail you are comfortable sharing]" }],
-    },
-    {
-      h: "Our team",
-      blocks: [{ p: "[Attorney: names and roles of staff who speak to clients. They are not attorneys and work under the attorney's supervision.]" }],
     },
     {
       h: "What this site is",
       blocks: [
-        { p: `This site is the marketing and intake arm of ${firm.firmLegalName}. Everyone who contacts us through it is speaking to the practice of ${A}. We do not pay for referrals or share fees with non-lawyers. [Attorney: confirm this is accurate for the launch structure]. See [how we work](/legal/how-we-work), the [disclaimer](/legal/disclaimer) and our [editorial policy](/editorial-policy).` },
+        { p: `${firm.brandName} is a referral website, not a law firm. When you contact us, we match you with an appropriate estate planning attorney in our network. That attorney gives the legal advice, and you decide whether to hire them. ${A} is the attorney responsible for this site. See [how we work](/legal/how-we-work), the [disclaimer](/legal/disclaimer) and our [editorial policy](/editorial-policy).` },
       ],
-    },
-    {
-      h: "Reviews",
-      blocks: [{ p: "[Attorney: link to an independent profile, such as a Google Business Profile or Avvo, only if one exists and is in good standing. We show no star ratings on this site, and use testimonials only where state rules allow, with written consent.]" }],
     },
   ],
   faqs: [
-    { q: `Does ${A} handle every case personally?`, a: "[Attorney: your honest answer, for example that you draft and review every document and staff schedule and assist]" },
-    { q: "What areas of law do you not handle?", a: "[Attorney: for example divorce, criminal defense, personal injury]. We can point you to the state bar's referral service, and we receive no fee for referrals." },
-    { q: "Are you licensed outside your home state?", a: "[Attorney: answer]. We do not give legal advice about other states' laws." },
+    { q: "Who will handle my matter?", a: `The attorney you are matched with. That may be ${A} or another estate planning attorney in our network. You know who it is before you sign an engagement agreement.` },
+    { q: "What areas of law does this site not cover?", a: "This site covers estate planning only: wills, trusts, powers of attorney, healthcare directives, probate and trust administration. For other matters, such as divorce, criminal defense or personal injury, the state bar's lawyer referral service can help." },
+    { q: "Which states does this site serve?", a: "Illinois and New Jersey only. Attorneys in our network advise on the law of the state where they are licensed. We do not give legal advice about other states' laws." },
     { q: "Can I meet before deciding?", a: `Yes. Consult fee: ${firm.consultFee}. See [how it works](/how-it-works).` },
-    { q: "How do you keep my information private?", a: "[Attorney: your systems, for example encrypted upload and no sensitive data by email]. See [privacy](/legal/privacy)." },
+    { q: "How do you keep my information private?", a: "Please do not send Social Security numbers, account numbers or medical details through the website or by text. The attorney you are matched with explains how to share documents safely. See [privacy](/legal/privacy)." },
   ],
-  ctaTitle: `Meet ${A}`,
+  ctaTitle: "Talk to an attorney",
   ctaBody: "Take the two-minute questionnaire, or call and ask us. You get a flat-fee quote before anything is signed.",
   related: [
     { href: "/how-it-works", title: "How it works", kind: "Page" },

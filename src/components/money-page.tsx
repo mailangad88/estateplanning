@@ -13,7 +13,7 @@ import { abs, ATTORNEY_ID, breadcrumbLd, howToLd, JsonLd, SITE_URL } from "@/lib
 
 const TOKEN = /\[([^\]]+)\]\((\/[^)\s]*)\)|\*\*([^*]+)\*\*|(\[(?:Attorney|Flat fee|Firm|Office|Bar number)[^\]]*\])/g;
 
-/** Renders the small inline syntax used in page data: [text](/path), **bold**, and [Attorney: ...] placeholders. */
+/** Renders the small inline syntax used in page data: [text](/path) links and **bold**. An unfilled firm.ts value is highlighted. */
 export function Rich({ text }: { text: string }) {
   const out: React.ReactNode[] = [];
   let last = 0;
@@ -194,7 +194,7 @@ export function MoneyPage({ page }: { page: MoneyPageData }) {
       </section>
       <p className="notice">
         Attorney advertising. This page is general information, not legal advice. Reading it or contacting us does not create an
-        attorney-client relationship; that begins only when we sign a written engagement agreement with you. Laws differ by
+        attorney-client relationship; that begins only when an attorney signs a written engagement agreement with you. Laws differ by
         state and change over time, so check how they apply to your situation before you act.
       </p>
       <JsonLd data={ld} />

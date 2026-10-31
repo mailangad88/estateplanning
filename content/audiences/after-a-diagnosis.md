@@ -28,20 +28,20 @@ faqs:
   - q: "Which document should I sign first?"
     a: "Often the healthcare power of attorney with a HIPAA release, then the financial power of attorney, then the will or trust. If you can only do one meeting, all three can be signed together."
   - q: "I have low energy. Can we do this in short sessions?"
-    a: "Yes. Work can be split into short calls and a brief signing. The signing itself is usually under an hour. [ATTORNEY: confirm]"
+    a: "Yes. Work can be split into short calls and a brief signing. Ask on your first call how the attorney can split the work, and say what times of day suit you best."
   - q: "Can you come to me or do it remotely?"
-    a: "[ATTORNEY: yes or no for at-home or hospital signings, and the area covered.] Remote online notarization is available in many states, but rules and witness requirements differ. [State check]"
+    a: "Ask on your first call whether home or hospital signings are available where you live. Illinois and New Jersey both allow remote notarization, but a will also needs two witnesses, and the rules for witnessing on video are stricter. The attorney confirms which documents can be signed remotely."
   - q: "Do I have to tell my family?"
     a: "No. You decide who knows. Your documents name your agent and can say who is to be told what. Some people keep their plan private until it is needed."
   - q: "What if my memory is already affected?"
     a: "Capacity is not all or nothing, and it can vary day to day. The attorney meets with the person alone and decides whether they understand what they are signing. A note from the treating doctor helps. If signing is no longer possible, there are court-based alternatives."
   - q: "How much does it cost, and will this affect my benefits?"
-    a: "Fees are on the pricing page: [Flat fee]. Signing a power of attorney or a will does not affect benefits. If you are on disability or Medicaid, say so, so the plan avoids transfers that count as gifts."
+    a: "Fees are set by the attorney you are matched with. See [pricing](/pricing). Signing a power of attorney or a will does not affect benefits. If you are on disability or Medicaid, say so, so the plan avoids transfers that count as gifts."
 reviewed: false
 updated: "2026-10-06"
 ---
 
-You do not have to tell us your diagnosis. Share only what you want us to know. We do not name or ask about any condition on this page.
+You do not have to tell us or the attorney your diagnosis. Share only what you want to share. We do not name or ask about any condition on this page.
 
 ## Three documents, in this order
 
@@ -54,25 +54,25 @@ Then, on your own schedule: check beneficiary forms on retirement accounts and i
 ## What is at stake
 
 - **Capacity can change.** A power of attorney and a will require that you understand what you are signing. Treatment, medication or the illness itself can affect that. Signing while you are clear keeps decisions in your hands and out of a courtroom.
-- **Someone has to speak for you.** If no one is named, state default rules decide who makes medical decisions, and that may not be the person you would choose. [State check]
+- **Someone has to speak for you.** If no one is named, state default rules decide who makes medical decisions, and that may not be the person you would choose. In Illinois, the Health Care Surrogate Act lists the order: a guardian, then a spouse, then adult children, then parents, then adult siblings (755 ILCS 40/25).
 - **Money questions arrive early.** Bills, disability insurance, employer benefits and leave. An agent who can act spares a family from sorting it out under stress.
 - **Benefit rules can shift the plan.** If long-term care or Medicaid is likely, transfers made in a hurry can cause a penalty period. Talk to an attorney before giving anything away. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).
 - **Children and a spouse.** Naming a guardian and a trustee matters more now, not less.
 
 Planning is a common response to bad news. It is not a sign of giving up.
 
-## How we make it easier
+## Making it easier
 
-[ATTORNEY: confirm each line before publishing]
+Family Future Planning matches you with an estate planning attorney in our network. Things to ask on your first call:
 
-- A first meeting of [ATTORNEY: 30 to 45] minutes, by phone or video, with a family member present if you want.
-- Signing at home, a hospital or a care facility [ATTORNEY: does the firm do mobile signings, and in what radius], or remote online notarization where the state allows it. [State check: RON status and witness rules]
-- Turnaround when documents are urgent: [ATTORNEY: real turnaround]. We do not promise a date we cannot meet.
+- Whether the first meeting can be by phone or video, with a family member present if you want.
+- Whether home, hospital or care facility signings are available where you live, or whether some documents can be signed remotely.
+- How quickly documents can be ready if timing is urgent.
 
-**What we do not do.** We do not give medical advice or predict outcomes. We do not decide whether you have legal capacity without meeting you. We do not push a bigger plan than is called for.
+**What this page is not.** It is not medical advice and it does not predict outcomes. Only the attorney who meets you can decide whether you can sign. A good attorney will not push a bigger plan than is called for.
 
 **An honest limit.** A trust is not required to do this quickly. For many people, three simple documents are enough for now.
 
 ## Next step
 
-Read about [planning after a serious diagnosis](/life-events/serious-diagnosis). To talk, call or [book a time](/contact) that suits your schedule.
+Read about [planning after a serious diagnosis](/life-events/serious-diagnosis). To talk, [book a time](/book?from=audience-after-a-diagnosis) that suits your schedule.

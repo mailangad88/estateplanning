@@ -25,38 +25,38 @@ related:
   - caregivers
 faqs:
   - q: "Does my will control my SGLI?"
-    a: "Generally no. SGLI pays the person named on the SGLI form. Check the form after any marriage, divorce, birth or other family change. [VERIFY AT PUBLISH: that the form controls over a will, 38 U.S.C. 1970]"
+    a: "Generally no. SGLI pays the person named on the SGLI form. Federal law pays SGLI first to the beneficiary you named in writing (38 U.S.C. 1970(a)), and a will does not change that. Check the form after any marriage, divorce, birth or other family change."
   - q: "I am deploying soon. What is the minimum?"
-    a: "Commonly: a power of attorney suited to your situation, a will naming a guardian if you have children, a healthcare directive, and a beneficiary check on SGLI and TSP. Military legal assistance may be able to do the basics quickly. If you want a private attorney, call and give us your date."
+    a: "Commonly: a power of attorney suited to your situation, a will naming a guardian if you have children, a healthcare directive, and a beneficiary check on SGLI and TSP. Military legal assistance may be able to do the basics quickly. If you want a private attorney, [book a call](/book?from=audience-military-and-veterans) and give us your date."
   - q: "Which state's law governs my will?"
-    a: "Generally the law of the state where you are domiciled when you die, and wills are usually valid if they follow the rules where they were signed or where you live. [State check]. We can help you document your domicile."
+    a: "Generally the law of the state where you are domiciled when you die, and wills are usually valid if they follow the rules where they were signed or where you live. A military will prepared through military legal assistance under 10 U.S.C. 1044d has the same effect as a will made under the law of the state where it is probated. The attorney can help you document your domicile."
   - q: "Is a general power of attorney safe to give my spouse?"
-    a: "Many couples do. It can also let an agent do more than you intended. A limited or special power of attorney is an alternative. Tell us how you want it used."
-  - q: "What is VA Aid and Attendance, and can you help me qualify?"
-    a: "It is a VA pension benefit for some wartime veterans and surviving spouses who need help with daily activities, with income and net worth limits. [VERIFY AT PUBLISH: current rules on va.gov]. [ATTORNEY: whether the firm gives any advice on this and whether accredited]. A VA-accredited representative or veterans service organization can help file at no charge."
-  - q: "Do you offer a military discount?"
-    a: "[ATTORNEY: yes or no, and the terms]. Standard flat fees are on the pricing page."
+    a: "Many couples do. It can also let an agent do more than you intended. A limited or special power of attorney is an alternative. Tell the attorney how you want it used."
+  - q: "What is VA Aid and Attendance, and who can help me apply?"
+    a: "It raises the VA pension for some wartime veterans and surviving spouses who need help with daily activities. Income and net worth limits apply, and VA publishes them on va.gov. Only a VA-accredited attorney, claims agent or veterans service organization may help with a VA claim, and a fee generally cannot be charged before the VA's first decision (38 U.S.C. 5904). A veterans service organization helps for free."
+  - q: "Is there a military discount?"
+    a: "Fees are set by the attorney you are matched with. See [pricing](/pricing), and ask on your first call."
 reviewed: false
 updated: "2026-10-06"
 ---
 
-**Who we are.** [Firm name] is a private law firm. We are not part of the Department of Defense, the VA or any military legal assistance office. [VERIFY AT PUBLISH: VA accreditation rules limit who may be paid to help with VA claims, 38 U.S.C. 5904]
+**Who we are.** Family Future Planning is a private referral service that matches you with an estate planning attorney in our network in Illinois or New Jersey. We are not part of the Department of Defense, the VA or any military legal assistance office.
 
 ## What is at stake
 
-- **SGLI pays the person you named, not your will's beneficiary.** If your marriage, family or wishes changed since you enrolled, the form may name the wrong person. [VERIFY AT PUBLISH: current coverage maximum and how to change beneficiaries on the VA site]
-- **Coverage after you leave.** SGLI continues for a limited period after separation, then converts to VGLI or a private policy. Many veterans forget to re-check beneficiaries on the new policy. [VERIFY AT PUBLISH: length of the post-separation period]
-- **Thrift Savings Plan and pensions.** TSP and FERS have their own beneficiary forms and survivor elections. A will does not override them. [VERIFY AT PUBLISH: TSP form and spousal rights]
+- **SGLI pays the person you named, not your will's beneficiary.** If your marriage, family or wishes changed since you enrolled, the form may name the wrong person. SGLI coverage goes up to $500,000, and you change beneficiaries online through the SGLI Online Enrollment System in milConnect.
+- **Coverage after you leave.** SGLI continues for a limited period after separation, then converts to VGLI or a private policy. Free SGLI coverage lasts 120 days after you leave. You can convert to VGLI within 1 year and 120 days, with no health questions if you apply within 240 days. Many veterans forget to re-check beneficiaries on the new policy.
+- **Thrift Savings Plan and pensions.** TSP and FERS have their own beneficiary forms and survivor elections. The TSP pays the beneficiary on file and cannot honor a will. With no form on file, it pays a spouse first, then children, then parents. A spouse also has rights over some TSP withdrawals and pension elections.
 - **Minor children and a guardian.** If both parents deploy or die, a will names the guardian, and a family care plan from your command usually names a short-term caregiver. They are not the same document. See the [guardianship guide](/guides/guardianship-for-minor-children).
-- **A power of attorney that is too broad.** A general power of attorney given to a spouse before deployment can be useful. It can also let an agent sell a house or move money. Many families choose a limited or special power of attorney. [ATTORNEY: guidance]
-- **Which state's law?** You may be stationed in one state, domiciled in another and own a house in a third. The Servicemembers Civil Relief Act protects keeping your state of legal residence for some purposes. [VERIFY AT PUBLISH: 50 U.S.C. 3911]. See [moving to a new state](/life-events/moving-to-a-new-state).
-- **Aid and Attendance for older veterans and surviving spouses.** This is general education only. [ATTORNEY: confirm accreditation and scope; otherwise point to a veterans service organization]. We do not prepare VA claims unless accredited, and we make no claim about eligibility or amounts. [VERIFY AT PUBLISH: VA accreditation language]
+- **A power of attorney that is too broad.** A general power of attorney given to a spouse before deployment can be useful. It can also let an agent sell a house or move money. Many families choose a limited or special power of attorney for specific tasks. A military power of attorney under 10 U.S.C. 1044b has the same legal effect as one made under the law of the state where it is used.
+- **Which state's law?** You may be stationed in one state, domiciled in another and own a house in a third. The Servicemembers Civil Relief Act says you neither lose nor gain a domicile for tax purposes just because military orders move you, and a spouse gets the same protection (50 U.S.C. 4001). See [moving to a new state](/life-events/moving-to-a-new-state).
+- **Aid and Attendance for older veterans and surviving spouses.** This is general education only. Only VA-accredited representatives may help prepare and file VA claims, and a veterans service organization can help at no charge. This page makes no claim about eligibility or amounts.
 
 ## Military legal assistance or a private attorney
 
 Military legal assistance offices serve active duty, retirees, eligible reservists, dependents and some survivors. They generally provide wills and powers of attorney to those who cannot afford a private lawyer without undue hardship, and services are set by each service's JAG (10 U.S.C. 1044). For many junior service members, that office is a good place to start.
 
-A private attorney fits when you have a house, a business, children who need trusts, property in several states, a blended family or a child with a disability, or when you want a plan you can update from anywhere and review with a spouse at home. [ATTORNEY: tailor]
+A private attorney fits when you have a house, a business, children who need trusts, property in several states, a blended family or a child with a disability, or when you want a plan you can update from anywhere and review with a spouse at home.
 
 ## What a plan usually includes
 
@@ -68,12 +68,12 @@ A private attorney fits when you have a house, a business, children who need tru
 | Beneficiary review | SGLI, VGLI, TSP, FERS, pensions and civilian accounts. See the [beneficiary audit](/checklists/beneficiary-designation-audit). |
 | Family care plan coordination | Making the will and the command's care plan match. |
 | Domicile and state-law review | Where you vote, own property and pay taxes. |
-| Remote signing | Meetings by video and remote notarization where state law allows. [State check] |
+| Remote signing | Meetings by video, and remote notarization, which Illinois and New Jersey both allow for many documents. |
 
-**What we do not do.** We do not file VA claims unless accredited, we do not advise on military discipline or administrative law, and we do not imply any government connection.
+**Limits.** An estate planning attorney does not file VA claims unless accredited, and does not advise on military discipline or administrative law. Family Future Planning has no government connection.
 
 **An honest limit.** For a junior service member with simple needs, military legal assistance may be the right place to start.
 
 ## Next step
 
-Download the beneficiary audit above, or use the [guardian worksheet](/checklists/choosing-a-guardian-worksheet) if you are deploying with children. To talk it over, [book a consultation](/plan-finder).
+Download the beneficiary audit above, or use the [guardian worksheet](/checklists/choosing-a-guardian-worksheet) if you are deploying with children. To talk it over, [book a call](/book?from=audience-military-and-veterans) and we will match you with an attorney in our network.

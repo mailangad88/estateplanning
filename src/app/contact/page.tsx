@@ -9,16 +9,16 @@ import { abs, breadcrumbLd, JsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Contact us",
-  description: `Call, text, request a call back or book a consultation with ${firm.attorneyName}. Office address, hours, and what to expect when you reach out about a will, trust or probate.`,
+  description: "Call, text, request a call back or book a consultation with an estate planning attorney in Illinois or New Jersey. Office address, hours, and what to expect when you reach out about a will, trust or probate.",
   alternates: { canonical: "/contact" },
 };
 
 const FAQS = [
   { q: "Will someone call me back if I leave a message?", a: `That is our aim. Stated response time: ${firm.responseTime}.` },
-  { q: "Do you take cases outside your state?", a: "We advise on the law of the state where the attorney is licensed. [Attorney: licensed states]. See [how it works](/how-it-works)." },
+  { q: "Do you take cases outside Illinois and New Jersey?", a: "No. Attorneys in our network advise on Illinois and New Jersey law only. If you live elsewhere, your state bar's lawyer referral service can help. See [how it works](/how-it-works)." },
   { q: "I only want to know if a trust makes sense. Do I have to book?", a: "No. Try the [will or trust comparison](/tools/will-or-trust), read [living trusts](/living-trusts), or call with a quick question." },
   { q: "Can I text you?", a: "Only after you have opted in to text messages in our form. Please do not text sensitive information. See [text message terms](/legal/sms-terms)." },
-  { q: "Is this a law firm or a referral service?", a: "This is a referral website. We match you with an appropriate estate planning attorney in Illinois or New Jersey. [Attorney: how attorneys join the network, how matches are made, and any fees attorneys pay to participate]" },
+  { q: "Is this a law firm or a referral service?", a: "This is a referral website, not a law firm. We match you with an appropriate estate planning attorney in our Illinois or New Jersey network, based on where you live and what you need. That attorney gives the legal advice, and you decide whether to hire them." },
   { q: "What should I tell you in the first message?", a: "Your name, how to reach you, the county you live in, and one sentence on what is happening. Skip details until we speak." },
 ];
 
@@ -60,14 +60,14 @@ export default function Contact() {
       <CallbackForm />
       <p className="notice">
         Please do not include Social Security numbers, account numbers or medical details. Contacting us does not create an
-        attorney-client relationship, and what you send may not be protected until we agree to represent you.
+        attorney-client relationship, and what you send may not be protected until an attorney agrees to represent you.
       </p>
 
       <h2>Office and hours</h2>
-      <p><Rich text={`${firm.brandName}, ${firm.officeAddress}. Hours: ${firm.officeHours}. [Attorney: parking and accessibility]`} /></p>
+      <p><Rich text={`${firm.brandName}, ${firm.officeAddress}. Hours: ${firm.officeHours}.`} /></p>
 
       <h2>Who answers</h2>
-      <p>Calls are answered by the attorney or a member of the team. The team cannot give legal advice until there is an engagement agreement, but they can tell you what we do and what it costs. See <Link href="/pricing">pricing</Link> and <Link href="/how-it-works">how it works</Link>.</p>
+      <p>The person who answers is not acting as your lawyer and cannot give legal advice, but can explain how we match you with an attorney and what plans commonly cost. See <Link href="/pricing">pricing</Link> and <Link href="/how-it-works">how it works</Link>.</p>
 
       <RichFaqList faqs={FAQS} />
       <JsonLd data={[breadcrumbLd([{ name: "Home", path: "/" }, { name: "Contact", path: "/contact" }]), { "@context": "https://schema.org", "@type": "ContactPage", name: "Contact", url: abs("/contact") }]} />

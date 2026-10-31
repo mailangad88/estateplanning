@@ -36,9 +36,9 @@ faqs:
   - q: "Should my adult children be my agents?"
     a: "Often, but not always. Consider who lives nearby, who is good with money, who stays calm, and whether siblings get along. You can name different people for money and for health decisions, and name backups."
   - q: "What about paying for long-term care?"
-    a: "Start with a conversation about what coverage you have, what you could pay yourself, and what Medicaid would require. Medicaid looks back 60 months in most states <!-- verify -->. [State check: look-back period]. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning)."
+    a: "Start with a conversation about what coverage you have, what you could pay yourself, and what Medicaid would require. Medicaid looks back 60 months at gifts and transfers (42 U.S.C. 1396p(c)), and Illinois and New Jersey both use that period. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning)."
   - q: "What does a pre-retirement review cost?"
-    a: "[Flat fee] for a plan review and updates. See the pricing page."
+    a: "Fees are set by the attorney you are matched with, often as a flat fee for a plan review and updates. See [pricing](/pricing)."
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -46,7 +46,7 @@ updated: "2026-10-06"
 ## What is at stake
 
 - **Beneficiary forms that no longer match your life.** Retirement accounts often hold the largest share of what you own. A form naming a former spouse or a deceased parent can undo your plan. See the [beneficiary designation audit](/checklists/beneficiary-designation-audit).
-- **No power of attorney in place.** If you lose capacity without one, your family may need to ask a court to appoint a guardian. That is slower, public and expensive. [State check: guardianship process]. See [powers of attorney](/guides/powers-of-attorney).
+- **No power of attorney in place.** If you lose capacity without one, your family may need to ask a court to appoint a guardian. That is slower, public and expensive. In both Illinois and New Jersey it means a court case, a medical report and court oversight of the guardian. See [powers of attorney](/guides/powers-of-attorney).
 - **A trust that was never funded.** If the deed and accounts were never retitled, the trust may be empty, and probate may follow anyway. See [funding your trust](/guides/funding-your-trust).
 - **Out-of-date names.** Your will may name your children as minors, a friend who moved away, or a brother who has died.
 - **Care you have not discussed.** A long-term care need can use up savings fast. Talking about it early gives you choices later. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).
@@ -76,7 +76,7 @@ If you have more than one child, explain your choices. A short family talk can p
 
 **You may not need a full redo.** If your documents are recent and the people still fit, a review may only change a few forms.
 
-**What we do not do.** We do not give investment or tax advice on your retirement accounts. A tax professional or financial adviser can help with withdrawals and timing.
+**Not tax advice.** An estate planning attorney does not give investment or tax advice on your retirement accounts. A tax professional or financial adviser can help with withdrawals and timing.
 
 **An honest limit.** Planning ahead for care does not mean Medicaid or any program will pay later. Rules change and differ by state.
 
@@ -86,4 +86,4 @@ If you are helping a parent right now, read [estate planning for caregivers](/es
 
 ## Next step
 
-Start with the [estate planning at retirement guide](/life-events/retirement), then [book a consultation](/plan-finder).
+Start with the [estate planning at retirement guide](/life-events/retirement), then [book a call](/book?from=audience-pre-retirees) to be matched with an attorney in our network.
