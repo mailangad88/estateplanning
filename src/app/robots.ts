@@ -9,13 +9,17 @@ const AI_AGENTS = [
   "Applebot", "GoogleOther", "Amazonbot", "MistralAI-User", "cohere-ai",
 ];
 
+/** Private or per-visitor areas: sign-in screens, dashboards and APIs have nothing to rank and waste crawl budget. */
+const PRIVATE_PATHS = ["/api/", "/portal", "/admin", "/client", "/my-plan", "/unsubscribe"];
+
 export default function robots(): MetadataRoute.Robots {
   // Staging holds draft content: keep every crawler out.
   if (IS_STAGING) return { rules: [{ userAgent: "*", disallow: "/" }] };
   return {
     rules: [
-      { userAgent: "*", allow: "/", disallow: ["/api/", "/portal", "/my-plan", "/api/my-plan"] },
-      ...AI_AGENTS.map((ua) => ({ userAgent: ua, allow: "/", disallow: ["/api/", "/portal", "/my-plan", "/api/my-plan"] })),
+      { userAgent: "*", allow: "/", disallow: PRIVATE_PATHS },
+      // Named groups so each AI crawler sees an explicit welcome (a crawler obeys only its most specific group).
+      ...AI_AGENTS.map((ua) => ({ userAgent: ua, allow: "/", disallow: PRIVATE_PATHS })),
     ],
     sitemap: abs("/sitemap.xml"),
     host: abs("/"),

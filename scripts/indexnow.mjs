@@ -7,6 +7,8 @@
  *
  *   SITE_URL=https://familyfutureplanning.com INDEXNOW_KEY=... node scripts/indexnow.mjs [git-range]
  *
+ *   SITE_URL=... INDEXNOW_KEY=... node scripts/indexnow.mjs --all   (launch day: every URL in the live sitemap)
+ *
  * git-range defaults to HEAD~1..HEAD. Only content files map to URLs. Pages still pending attorney review
  * are skipped when REQUIRE_ATTORNEY_REVIEW=true. Dry run (prints URLs) when INDEXNOW_KEY is unset.
  */
@@ -16,6 +18,47 @@ import fs from "node:fs";
 const range = process.argv[2] ?? "HEAD~1..HEAD";
 const site = (process.env.SITE_URL ?? process.env.NEXT_PUBLIC_SITE_URL ?? "").replace(/\/$/, "");
 const key = process.env.INDEXNOW_KEY;
+
+/** Every <loc> in the live sitemap index and the sitemaps it lists (one level deep). */
+async function sitemapUrls(root) {
+  const locs = (xml) => [...xml.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/g)].map((m) => m[1].replace(/&amp;/g, "&"));
+  const index = await (await fetch(`${root}/sitemap.xml`)).text();
+  const out = [];
+  for (const u of locs(index)) {
+    if (/\.xml($|\?)/.test(u)) out.push(...locs(await (await fetch(u)).text()));
+    else out.push(u);
+  }
+  return [...new Set(out)].filter((u) => u.startsWith(root));
+}
+
+async function submit(urlList) {
+  const host = new URL(site).host;
+  // IndexNow accepts up to 10,000 URLs per request.
+  for (let i = 0; i < urlList.length; i += 10000) {
+    const body = { host, key, keyLocation: `${site}/indexnow-key.txt`, urlList: urlList.slice(i, i + 10000) };
+    const res = await fetch("https://api.indexnow.org/indexnow", {
+      method: "POST",
+      headers: { "Content-Type": "application/json; charset=utf-8" },
+      body: JSON.stringify(body),
+    });
+    console.log(`IndexNow: HTTP ${res.status} for ${body.urlList.length} URLs`);
+    if (res.status >= 400) process.exit(1);
+  }
+}
+
+if (range === "--all") {
+  if (!site) {
+    console.error("Set SITE_URL to the live origin.");
+    process.exit(1);
+  }
+  const urls = await sitemapUrls(site);
+  if (!key) {
+    console.log(`Dry run (set INDEXNOW_KEY to submit). ${urls.length} URLs from ${site}/sitemap.xml`);
+    process.exit(0);
+  }
+  await submit(urls);
+  process.exit(0);
+}
 
 const changed = execSync(`git diff --name-only --diff-filter=AM ${range} -- content/`, { encoding: "utf8" })
   .split("\n")
@@ -49,12 +92,4 @@ if (!site || !key) {
   process.exit(0);
 }
 
-const host = new URL(site).host;
-const body = { host, key, keyLocation: `${site}/indexnow-key.txt`, urlList: paths.map((p) => `${site}${p}`) };
-const res = await fetch("https://api.indexnow.org/indexnow", {
-  method: "POST",
-  headers: { "Content-Type": "application/json; charset=utf-8" },
-  body: JSON.stringify(body),
-});
-console.log(`IndexNow: HTTP ${res.status} for ${body.urlList.length} URLs`);
-if (res.status >= 400) process.exit(1);
+await submit(paths.map((p) => `${site}${p}`));
