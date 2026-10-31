@@ -21,7 +21,7 @@ export function recordingNoticeText(): string {
 export function noRelationshipText(): string {
   return (
     "Submitting this form does not create an attorney-client relationship. Our intake team are not lawyers and cannot give legal advice. " +
-    "Your information is kept confidential and shared only with an attorney at the firm who may represent you."
+    "Your information is kept confidential and shared only with the attorney in our network we match you with."
   );
 }
 

@@ -6,7 +6,7 @@
  *
  * Placeholders are limited to PLACEHOLDERS. Merge fields the research uses that have no placeholder
  * (consult date and time, firm phone, state, fee statement, quiz link) were removed or reworded, and
- * state-specific [STATE] sentences were left out for the attorney to add.
+ * state-specific sentences were left out for the attorney to add.
  */
 import { firm } from "@/config/firm";
 import { EDUCATIONAL_DISCLAIMER } from "@/server/nurture/compliance";

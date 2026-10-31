@@ -57,6 +57,7 @@ describe("dataforseo", () => {
   it("reads credentials and builds basic auth", () => {
     expect(readCredentials({})).toBeNull();
     expect(readCredentials({ DATAFORSEO_USERNAME: "u", DATAFORSEO_PASSWORD: "p" })).toEqual({ login: "u", password: "p" });
+    expect(readCredentials({ DATAFORSEO_LOGIN: "u", DATAFORSEO_PSWD: "p" })).toEqual({ login: "u", password: "p" });
     expect(authHeader("u", "p")).toBe(`Basic ${Buffer.from("u:p").toString("base64")}`);
   });
 });

@@ -7,7 +7,7 @@ import matter from "gray-matter";
 const ROOT = process.cwd();
 const DIR = path.join(ROOT, "content", "magnets");
 const out = process.argv[2] ?? path.join(ROOT, "exports");
-const SITE = process.env.SITE_URL ?? "https://example.com";
+const SITE = (process.env.SITE_URL || process.env.NEXT_PUBLIC_SITE_URL || "https://familyfutureplanning.com").replace(/\/+$/, "");
 fs.mkdirSync(out, { recursive: true });
 
 const csv = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
@@ -29,8 +29,12 @@ for (const f of fs.readdirSync(DIR).filter((x) => x.endsWith(".md") && x !== "RE
       ? `Hola {{first_name | default: ""}}:\n\nAquí tiene su copia de "${data.title}": ${view}\n\nPuede imprimirla o guardarla como PDF.`
       : data.sequence === "G"
         ? `Hi {{first_name | default: "there"}},\n\nHere is your copy of "${data.title}": ${view}\n\nTake it one step at a time. If a question comes up, you can reply to this email.`
-        : `Hi {{first_name | default: "there"}},\n\nHere is your copy of "${data.title}": ${view}\n\nYou can print it or save it as a PDF. If you'd like help putting it into practice, you can book a consult at ${SITE}/plan-finder.`;
-  rows.push([slug, data.tag, data.sequence ?? "B", data.lang ?? "en", data.format, data.title, `${SITE}/free/${slug}`, view, subject, body]);
+        : `Hi {{first_name | default: "there"}},\n\nHere is your copy of "${data.title}": ${view}\n\nYou can print it or save it as a PDF. If you'd like help putting it into practice, you can book a consult at ${SITE}/book?from=magnet-email.`;
+  // Same wording as SITE_DISCLAIMER / SITE_DISCLAIMER_ES in src/config/firm.ts.
+  const footer = es
+    ? "\n\n--\nToda la información de este sitio web es solo educativa. No constituye asesoría legal ni crea una relación abogado-cliente. Este es un sitio de referencias: lo pondremos en contacto con un abogado adecuado."
+    : "\n\n--\nAll information on this website is for educational purposes only. It does not constitute legal advice, and it does not create an attorney-client relationship. This is a referral website: we will match you with an appropriate attorney.";
+  rows.push([slug, data.tag, data.sequence ?? "B", data.lang ?? "en", data.format, data.title, `${SITE}/free/${slug}`, view, subject, body + footer]);
   if (course) {
     for (const m of content.matchAll(/^## Day (\d+):\s*(.+)\n([\s\S]*?)(?=^## Day \d+:|(?![\s\S]))/gm)) {
       courses.push([slug, data.tag, data.sequence ?? "B", m[1], m[2].trim(), m[3].trim()]);

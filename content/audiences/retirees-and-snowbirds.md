@@ -29,7 +29,7 @@ faqs:
   - q: "I have a house in two states. Do I need two wills?"
     a: "Usually not. One will can cover property in both places, but it may still need to be probated in each state. A living trust that holds both properties usually avoids that. An attorney can tell you which fits."
   - q: "Will my bank in my second state accept my home-state power of attorney?"
-    a: "Often yes, since many states accept out-of-state powers of attorney that were valid where signed, but individual banks can refuse. If you spend months each year in another state, signing a second document there or using the bank's own form is inexpensive insurance. [State check]"
+    a: "Often yes, since many states accept out-of-state powers of attorney that were valid where signed, but individual banks can refuse. If you spend months each year in another state, signing a second document there or using the bank's own form is inexpensive insurance. In Illinois, a bank that refuses a valid power of attorney without reasonable cause can be liable for the damages that follow (755 ILCS 45/2-8)."
   - q: "What is domicile and why does it matter?"
     a: "It is your legal home, where you intend to stay. It decides which state's law governs your estate, which state may tax it, and which court handles probate."
   - q: "We are retired and have no complex assets. Do we still need an update?"
@@ -37,19 +37,19 @@ faqs:
   - q: "Do we need a trust?"
     a: "Not always. A trust is most useful for property in more than one state, for privacy, and for avoiding court if one of you becomes incapacitated."
   - q: "How much does it cost?"
-    a: "[Flat fee] for a retirement-stage plan review and two-state plan. See the pricing page."
+    a: "Fees are set by the attorney you are matched with, often as a flat fee for a plan review. See [pricing](/pricing)."
 reviewed: false
 updated: "2026-10-06"
 ---
 
 ## What is at stake
 
-- **Two probates.** Real estate owned in your name in another state generally has to go through that state's court, called ancillary probate, even if your home-state estate avoids it. [State check]. A funded living trust or a transfer-on-death deed can avoid that. See [transfer-on-death deed vs trust](/compare/transfer-on-death-deed-vs-trust) and [funding your trust](/guides/funding-your-trust).
-- **Domicile disputes.** Your domicile is the one place you treat as home, based on facts: where you vote, where your driver's license is, where you spend most of the year, where your doctors are. States that tax estates or income can both claim you. [State check]
-- **A power of attorney or healthcare directive a provider will not accept.** Most states honor out-of-state documents, but banks and hospitals may hesitate. Signing a version that meets the second state's rules can help. [State check]
+- **Two probates.** Real estate owned in your name in another state generally has to go through that state's court, called ancillary probate, even if your home-state estate avoids it. A funded living trust or a transfer-on-death deed can avoid that. See [transfer-on-death deed vs trust](/compare/transfer-on-death-deed-vs-trust) and [funding your trust](/guides/funding-your-trust).
+- **Domicile disputes.** Your domicile is the one place you treat as home, based on facts: where you vote, where your driver's license is, where you spend most of the year, where your doctors are. States that tax estates or income can both claim you. Illinois taxes estates over $4 million. New Jersey has no estate tax but taxes some inheritances, such as gifts to siblings.
+- **A power of attorney or healthcare directive a provider will not accept.** Most states honor out-of-state documents, but banks and hospitals may hesitate. Signing a version that meets the second state's rules can help.
 - **Incapacity far from adult children.** If your agent lives three states away, can they act quickly? A named local backup helps.
 - **An old plan.** Documents signed 15 years ago may name people who have died or moved, or ignore the way you hold accounts now. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan) and [estate planning at retirement](/life-events/retirement).
-- **Long-term care.** Planning ahead involves a 60-month Medicaid look-back in most states <!-- verify -->. [VERIFY AT PUBLISH]. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).
+- **Long-term care.** Planning ahead involves a 60-month Medicaid look-back at gifts and transfers (42 U.S.C. 1396p(c)), which Illinois and New Jersey both use. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).
 
 ## What a plan usually includes
 
@@ -57,16 +57,16 @@ updated: "2026-10-06"
 |---|---|
 | Domicile review | A short written statement of where you live and the steps that support it, such as license, voter registration and declarations. |
 | Two-state property map | A list of each property, how it is titled, and whether it would need probate. |
-| Documents that work in both states | Powers of attorney, healthcare directives and a will signed to meet both states' rules where it matters. [ATTORNEY: licensed in one state only. If the second state is outside licensure, say so and coordinate with that state's counsel] |
+| Documents that work in both states | Powers of attorney, healthcare directives and a will signed to meet both states' rules where it matters. A lawyer licensed in the second state may need to review them. |
 | Living trust and funding | Often the cleanest way to hold both homes and avoid two probates. |
 | Beneficiary audit | Retirement accounts and insurance are common sources of mistakes after retirement. See the [beneficiary audit](/checklists/beneficiary-designation-audit). |
 | Backup agents | Local backups in each state. |
 | Long-term care conversation | What coverage you have and what Medicaid would require. |
 
-**What we do not do.** We do not give tax advice for the other state. We are licensed in one state only. [ATTORNEY: confirm]. If you want a lawyer where your second home is, we say so and refer you to that state's bar referral service. No referral fees.
+**Limits.** Family Future Planning matches you with attorneys in Illinois and New Jersey. Tax advice for the other state, and deeds or court filings there, usually need a lawyer licensed in that state. That state's bar referral service can help you find one.
 
-**An honest limit.** If your second home is in another state, you may need a second lawyer, and we will say so.
+**An honest limit.** If your second home is in another state, you may need a second lawyer, and a good attorney will say so.
 
 ## Next step
 
-Start with the [asset and account inventory](/checklists/asset-and-account-inventory), then [book a consultation](/plan-finder).
+Start with the [asset and account inventory](/checklists/asset-and-account-inventory), then [book a call](/book?from=audience-retirees-and-snowbirds) to be matched with an attorney in our network.

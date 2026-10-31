@@ -37,11 +37,12 @@ export function Band({ tone = "plain", children, className = "", id, label }: { 
   );
 }
 
-export function SectionHead({ kicker, title, lead, center }: { kicker?: string; title: string; lead?: ReactNode; center?: boolean }) {
+export function SectionHead({ kicker, title, lead, center, level = 2 }: { kicker?: string; title: string; lead?: ReactNode; center?: boolean; level?: 1 | 2 }) {
+  const Heading = level === 1 ? "h1" : "h2";
   return (
-    <header className={`section-head${center ? " is-center" : ""}`}>
+    <header className={`section-head${center ? " is-center" : ""}${level === 1 ? " is-page-title" : ""}`}>
       {kicker && <p className="kicker">{kicker}</p>}
-      <h2>{title}</h2>
+      <Heading>{title}</Heading>
       {lead && <p className="section-lead">{lead}</p>}
     </header>
   );

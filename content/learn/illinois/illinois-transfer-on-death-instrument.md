@@ -24,6 +24,8 @@ faqs:
     a: "An owner can revoke only by recording a new TODI that changes the beneficiary or a recorded instrument of revocation, with the same formalities, before death. A later will cannot revoke a TODI, and neither can an unrecorded note or the owner's own act."
   - q: "What is a notice of death affidavit in Illinois?"
     a: "It is a document the beneficiary can record after the owner's death to confirm the transfer. It names the beneficiary and describes the property, the owner's death, and the original instrument. Filing it is helpful for title purposes but is not a condition of the transfer (755 ILCS 27/75)."
+  - q: "Can I leave my house to one child in Illinois?"
+    a: "Yes. You can name that child as the beneficiary of a transfer on death instrument, leave the house to them in your will, or hold it in a living trust. The house can still be reached by creditors after your death, and a surviving spouse may have claims, so check those before you decide."
 related:
   - "illinois"
   - "illinois/illinois-living-trusts"

@@ -21,7 +21,7 @@ export function GuardianshipDecision({ caption, bare, step }: DiagramProps) {
         <Person x={338} y={160} size={40} color="accent" />
         <Person x={374} y={160} size={40} color="sage" />
         <Person x={408} y={160} size={30} color="clay" child />
-        <Wrap x={440} y={138} w={220} size={15} weight={600} text="If both parents die while the children are minors" lh={18} />
+        <Wrap x={440} y={138} w={220} size={15} weight={600} text="If both parents die while the children are minors" lh={19} />
       </S>
       <S step={step} n={2}>
         <Arrow from={{ x: 400, y: 180 }} to={{ x: 255, y: 220 }} color="accent" />

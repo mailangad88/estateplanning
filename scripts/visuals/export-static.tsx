@@ -90,7 +90,9 @@ function loadMagnets(): MagnetMeta[] {
   });
   // Hand-made covers always export, even if their file is missing.
   for (const m of magnets) if (!metas.some((x) => x.slug === m.slug)) metas.push({ slug: m.slug, title: m.title, format: "guide", category: "basics" });
-  return metas.sort((a, b) => a.slug.localeCompare(b.slug));
+  // ONLY=slug1,slug2 limits the export to those covers (handy after a partial run).
+  const only = process.env.ONLY?.split(",").map((x) => x.trim()).filter(Boolean);
+  return metas.filter((m) => !only?.length || only.includes(m.slug)).sort((a, b) => a.slug.localeCompare(b.slug));
 }
 
 /** 1200x630 share image: title on the left, the cover on the right. */

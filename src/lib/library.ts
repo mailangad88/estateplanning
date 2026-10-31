@@ -132,6 +132,30 @@ export interface City {
   updated: string;
 }
 
+export interface Office {
+  name: string;
+  address?: string;
+  phone?: string;
+  url?: string;
+}
+
+export interface County {
+  slug: string;
+  name: string;
+  state: StateInfo;
+  url: string;
+  seat?: string;
+  circuit?: string;
+  probateCourt?: Office;
+  clerk?: Office;
+  recorder?: Office;
+  /** Verified county facts, each citing its official source inline. Counties without notes are not published. */
+  notes: string[];
+  /** Slugs of this county's published city pages. */
+  cities: string[];
+  updated: string;
+}
+
 /* ------------------------------------------------------------------ helpers */
 
 function readJson<T>(file: string): T {
@@ -449,6 +473,32 @@ export function getCities(stateSlug?: string): City[] {
       .filter((c) => c.localNotes?.length)
       .map((c) => ({ ...c, nearby: c.nearby ?? [], state, url: `/estate-planning/${state.slug}/${c.slug}` }));
   });
+}
+
+/**
+ * County pages come from content/counties/{state-slug}.json, with the same rule as cities: a county is
+ * published only when it has verified notes.
+ */
+export function getCounties(stateSlug?: string): County[] {
+  const dir = path.join(ROOT, "counties");
+  if (!fs.existsSync(dir)) return [];
+  const states = getStates();
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".json") && (!stateSlug || f === `${stateSlug}.json`));
+  return files.flatMap((f) => {
+    const state = states.find((s) => `${s.slug}.json` === f);
+    if (!state) return [];
+    const raw = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")) as {
+      counties: Omit<County, "state" | "url">[];
+    };
+    return raw.counties
+      .filter((c) => c.notes?.length)
+      .map((c) => ({ ...c, cities: c.cities ?? [], state, url: `/estate-planning/${state.slug}/counties/${c.slug}` }));
+  });
+}
+
+/** The county page for a city, matched on the city's "county" name ("Cook County"). */
+export function countyForCity(city: City): County | undefined {
+  return getCounties(city.state.slug).find((c) => c.name === city.county);
 }
 
 /** Raw Markdown for a page, with a title line, for llms-full.txt and the /raw/ endpoints. */

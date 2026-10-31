@@ -136,6 +136,104 @@ You do not need to fix everything at once. For most families, this order covers 
 
 Our [plan readiness assessment](/tools/plan-readiness-assessment) shows which of these you already have. The [plan finder](/plan-finder) asks a few questions about your family and suggests where to start. The [estate planning basics](/learn/basics) section explains each document in plain language.
 
+## More questions people ask
+
+If your spouse will not plan, [what to do when your spouse refuses to make an estate plan](/learn/what-if/what-if-my-spouse-refuses-to-make-an-estate-plan) shows what you can sign alone and what it leaves uncovered.
+
+If the trust maker has died with assets still in their own name, [can you fund a trust after death](/learn/what-if/can-you-fund-a-trust-after-the-person-who-made-it-has-died) explains the probate route and the few fixes left.
+
+When one child arranged a parent's new will, [what happens if one child took a parent to the lawyer](/learn/what-if/what-if-one-child-took-a-parent-to-the-lawyer-to-change-the-will) lists the red flags and the contest deadlines.
+
+If you want to know what your family faces after a sudden death and the eight steps that close the biggest gaps, read [how to protect your family if you die suddenly](/learn/what-if/protect-your-family-if-you-die-suddenly).
+
+When a parent or spouse has a reverse mortgage, [what happens to a reverse mortgage when the borrower dies](/learn/what-if/what-happens-to-a-reverse-mortgage-when-the-borrower-dies) explains the heirs' deadlines, the 95 percent option and a non-borrowing spouse's rights.
+
+If a family member owed back taxes or child support, [what happens if you die owing taxes or child support](/learn/what-if/what-happens-if-you-die-owing-taxes-or-child-support) shows who pays, in what order, and how an executor avoids personal liability.
+
+If a parent with memory loss signed a new will, [whether a will can be contested because of dementia](/learn/what-if/can-a-will-be-contested-because-of-dementia) explains capacity, undue influence and the Illinois and New Jersey deadlines.
+
+If you have sold or retitled something your will names, [what happens when you sell the house your will leaves to someone](/learn/what-if/what-happens-if-you-sell-the-house-your-will-leaves-to-someone) explains ademption and how to word the gift.
+
+If you have a will but no trust, [what happens if you die without a living trust](/learn/what-if/what-happens-if-you-die-without-a-living-trust) shows which assets skip court, which do not and when the gap costs the most.
+
+If a parent will not sign anything, [what to do when a parent refuses to make a will or sign a power of attorney](/learn/what-if/what-to-do-if-your-parent-refuses-to-make-a-will-or-sign-a-power-of-attorney) covers the default outcomes and how to change the answer.
+
+When a husband or wife can no longer decide, [what happens if your spouse becomes incapacitated](/learn/what-if/what-happens-if-my-spouse-becomes-incapacitated) shows which joint assets still work and which need a power of attorney.
+
+If you are not close to your relatives, [what happens if you die estranged from your family](/learn/what-if/what-happens-if-you-die-estranged-from-your-family) explains who inherits by default and how to leave your estate to friends or a charity.
+
+A disability does not stop you from signing, and [making a will when you are blind, deaf or cannot read, speak or write](/learn/what-if/making-a-will-when-you-are-blind-deaf-or-cannot-read-speak-or-write) explains how marks, reading aloud and interpreters keep it valid.
+
+If a guardianship, a diagnosis or heavy medication is part of the picture, [making a will under guardianship, with a mental illness or on medication](/learn/what-if/making-a-will-under-guardianship-with-mental-illness-or-on-medication) explains how capacity is judged and what evidence helps.
+
+When a house, an IRA form and an early gift make 'equal' unequal, [what happens when a will says to split equally but the assets are not equal](/learn/what-if/will-says-split-equally-but-the-assets-are-not-equal) shows how to make the shares match what you meant.
+
+Once the owner has died, [fixing a beneficiary mistake after death](/learn/what-if/fixing-a-beneficiary-mistake-after-the-account-owner-has-died) covers disclaimers, family agreements and court correction, and the deadlines that apply.
+
+If you added a child to your account to help with bills, [what happens if they spend the money, get sued or die first](/learn/what-if/child-on-your-bank-account-spends-the-money-or-dies-first) explains the risks and safer options.
+
+If you have signed more than one will, [what happens if two wills conflict](/learn/what-if/two-wills-that-conflict) explains which one a court follows and how to clean up.
+
+If a charity in your will has merged or closed, [what happens when it no longer exists](/learn/what-if/charity-named-in-will-no-longer-exists) covers cy pres and backup wording.
+
+[What happens if you become incapacitated with only a will or a trust](/learn/what-if/incapacitated-with-only-a-will-or-a-trust) shows what each document does while you are alive.
+
+When relatives dislike the agent you picked, [what happens if family tries to override your power of attorney](/learn/what-if/family-tries-to-override-your-power-of-attorney) explains what a court can and cannot do.
+
+[What happens if your family cannot find your will or open your safe deposit box](/learn/what-if/family-cannot-find-your-will-or-open-the-safe-deposit-box) covers searches, bank access and late-found wills.
+
+If no relative can be found, [what happens when an heir is missing or you have no family](/learn/what-if/heir-cannot-be-found-or-no-family-survives) explains the court search, the held share and how the state ends up with the estate.
+
+For people with no relatives or no obvious agent, [what happens if you become incapacitated with no one to speak for you](/learn/what-if/incapacitated-with-no-family-or-no-one-to-name-as-agent) covers default surrogates, court guardians and professional fiduciaries.
+
+If you own a cabin or land in another state, [what happens when you die without a will with property in two states](/learn/what-if/die-without-a-will-owning-property-in-two-states) explains the second court case and how to avoid it.
+
+When the person on a beneficiary form is in trouble, [what happens if a beneficiary is bankrupt, divorcing, in prison or struggling with addiction](/learn/what-if/beneficiary-bankrupt-in-prison-divorcing-or-struggling-with-addiction) shows where the money goes and how a trust slows it down.
+
+If the attorney who drafted your plan is gone or got something wrong, [what happens when your estate planning lawyer dies, retires or makes a mistake](/learn/what-if/estate-planning-lawyer-dies-retires-or-makes-a-mistake) explains how to get your file and fix the plan.
+
+When everything is left to a spouse outright, [what happens if your surviving spouse remarries](/learn/what-if/surviving-spouse-remarries-after-you-die) shows how a new marriage can redirect your estate and how a trust prevents it.
+
+A widowed person whose documents still name their late spouse can read [what happens if you never update your plan after a spouse dies](/learn/what-if/spouse-died-plan-not-updated) to see which roles go empty and what to sign first.
+
+If a form says 'my estate', [what happens when the estate is the beneficiary](/learn/what-if/estate-as-beneficiary) explains the probate, creditor and retirement-account tax effects.
+
+When a divorce is pending, [what happens if a spouse dies before the decree](/learn/what-if/death-during-divorce) shows why the survivor still inherits and what to do while the case is open.
+
+If the person named in your power of attorney dies, declines or cannot serve, [what happens when the agent is unavailable](/learn/what-if/power-of-attorney-agent-unavailable) explains successor agents and the court fallback.
+
+After a relocation, [what happens if you never update your plan](/learn/what-if/moved-states-plan-not-updated) covers which documents banks and hospitals may question and what a post-move review includes.
+
+If a will was drafted but never signed, [what happens when someone dies before signing](/learn/what-if/dies-before-signing-their-will) explains intestacy, harmless error rules and a family settlement.
+
+When a spouse dies and the deed never changed, [what happens if the house is still in their name](/learn/what-if/house-still-in-late-spouses-name) shows how title decides whether probate is needed.
+
+Adult children worried about a parent's second marriage can read [what happens if the new spouse inherits everything](/learn/what-if/parent-remarries-and-new-spouse-inherits-everything) to see why it happens and what the parent can do.
+
+For disputes over wills, executors and belongings, [what happens if siblings fight over a parent's estate](/learn/what-if/siblings-fight-over-a-parents-estate) covers contests, costs and mediation.
+
+A family caregiver turned away by a doctor or bank can see [what happens without access to records](/learn/what-if/caregiver-cannot-get-medical-or-bank-records) and which three documents fix it.
+
+If the named executor is buried or unwilling, [what happens when the executor cannot do the job](/learn/what-if/executor-overwhelmed-or-unable-to-serve) explains delegating, declining, resigning and who steps in.
+
+When siblings co-own an inherited house, [what happens if they cannot agree](/learn/what-if/siblings-inherit-house-and-disagree) explains partition, buyouts and how to avoid a forced sale.
+
+If your child turns 18, [what happens in a medical emergency without a HIPAA release](/learn/what-if/adult-child-medical-emergency-no-hipaa) shows what the hospital can share and the two forms to sign.
+
+For parents of minor children, [what happens if both die without a will](/learn/what-if/both-parents-die-without-a-will) follows the guardian and property decisions a court makes.
+
+If you have never written down your wishes, [what happens when no one knows them](/learn/what-if/nobody-knows-my-end-of-life-wishes) explains the surrogate list and the documents that settle it.
+
+When a home is frozen in a slow estate, [what happens if the house is stuck in probate](/learn/what-if/house-stuck-in-probate) covers carrying costs, causes of delay and ways to move forward.
+
+If a stepparent dies without a will, [what happens to stepchildren](/learn/what-if/stepparent-dies-without-a-will) explains who inherits and what stepchildren can still receive.
+
+For couples who never married, [what happens to an unmarried partner without a will](/learn/what-if/unmarried-partner-dies-without-a-will) covers the home, accounts and what to sign.
+
+When a child is named to inherit, [what happens if a minor inherits with no trust](/learn/what-if/minor-inherits-without-a-trust) shows the court process and the age the child gets the money.
+
+For an heir who receives benefits, [what happens if a person on SSI or Medicaid inherits directly](/learn/what-if/disabled-heir-inherits-directly) explains the asset limit and the trusts that protect coverage.
+
 ## How we can help
 
 Our attorneys see these scenarios every week, usually after they have already happened. We would much rather help you before. A first conversation will tell you which gaps matter for your family and which ones can wait. Start with the [plan finder](/plan-finder) and we will be in touch.

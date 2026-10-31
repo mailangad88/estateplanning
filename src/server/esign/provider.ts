@@ -5,6 +5,7 @@
  * parseWebhook must verify the signature itself rather than trusting the caller.
  */
 import { createHmac, timingSafeEqual } from "node:crypto";
+import type { Db } from "@/server/db";
 
 export type EnvelopeStatus = "sent" | "viewed" | "signed" | "declined" | "voided";
 
@@ -25,13 +26,31 @@ export interface EsignWebhookEvent {
   at: string;
 }
 
+/**
+ * Passed to provider calls that need the platform's own records. External providers ignore it; the built-in
+ * e-sign (src/server/esign/builtin.ts) keeps its state in the engagement and signature tables, so it reads them here.
+ */
+export interface EsignContext {
+  db: Db;
+}
+
+export interface SignedFiles {
+  /** The signed agreement. PDF from external providers; a printable HTML page from the built-in e-sign. */
+  pdf: Uint8Array;
+  auditCertificate: Uint8Array;
+  /** Defaults to application/pdf */
+  contentType?: string;
+  /** File extension for the stored names, default "pdf" */
+  extension?: string;
+}
+
 export interface EsignProvider {
   readonly name: string;
   createEnvelope(input: CreateEnvelopeInput): Promise<{ envelopeId: string; signingUrl?: string }>;
-  getStatus(envelopeId: string): Promise<{ status: EnvelopeStatus; at: string }>;
-  sendReminder(envelopeId: string): Promise<void>;
+  getStatus(envelopeId: string, ctx?: EsignContext): Promise<{ status: EnvelopeStatus; at: string }>;
+  sendReminder(envelopeId: string, ctx?: EsignContext): Promise<void>;
   voidEnvelope(envelopeId: string, reason: string): Promise<void>;
-  downloadSigned(envelopeId: string): Promise<{ pdf: Uint8Array; auditCertificate: Uint8Array }>;
+  downloadSigned(envelopeId: string, ctx?: EsignContext): Promise<SignedFiles>;
   /** Verifies the signature (throws on a bad one) and returns normalized events. */
   parseWebhook(rawBody: string, headers: Record<string, string>): EsignWebhookEvent[];
 }

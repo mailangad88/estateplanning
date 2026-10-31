@@ -75,7 +75,7 @@ export function authHeader(login: string, password: string): string {
 
 export function readCredentials(env: Env = process.env): { login: string; password: string } | null {
   const login = env.DATAFORSEO_LOGIN || env.DATAFORSEO_USERNAME;
-  const password = env.DATAFORSEO_PASSWORD;
+  const password = env.DATAFORSEO_PASSWORD || env.DATAFORSEO_PSWD;
   return login && password ? { login, password } : null;
 }
 

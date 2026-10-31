@@ -16,7 +16,7 @@ export default function EditorialPolicy() {
       <h2>Who writes it</h2>
       <p>Our content starts from recorded answers {firm.attorneyName} gave to the questions clients ask most. Editors turn those answers into articles in plain English. Software, including AI writing tools, may help with research, drafting and formatting. Nothing is marked reviewed until the attorney has checked and approved it; the <Link href="/editorial-policy/review-log">content review log</Link> shows each step and the status of every page.</p>
       <h2>Who reviews it</h2>
-      <p>Each page is reviewed by {firm.attorneyName}, {firm.attorneyTitle.toLowerCase()} (bar number {firm.barNumber}). Pages show &quot;Draft pending attorney review&quot; until that review is done, and the review date once it is.</p>
+      <p>Each page is reviewed by {firm.attorneyName}, {firm.attorneyTitle.toLowerCase()}. Pages show &quot;Draft pending attorney review&quot; until that review is done, and the review date once it is.</p>
       <h2>Keeping it current</h2>
       <p>Pages that cite dollar figures or deadlines are re-checked every January and whenever the law changes. Each page shows the date it was last updated.</p>
       <h2>What this content is not</h2>
