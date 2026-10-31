@@ -1030,12 +1030,12 @@
       "circuit": "9th Judicial Circuit",
       "probateCourt": {
         "name": "McDonough County Courthouse",
-        "address": "#1 Courthouse Square, Macomb, IL 61455",
+        "address": "1 Courthouse Square, Macomb, IL 61455",
         "url": "https://www.illinoiscourts.gov/courts-directory/33/McDonough-County-Courthouse/court"
       },
       "clerk": {
         "name": "McDonough County Circuit Clerk",
-        "address": "#1 Courthouse Square, Macomb, IL 61455",
+        "address": "1 Courthouse Square, Macomb, IL 61455",
         "url": "http://mcg.mcdonough.il.us/circuitclerk.html"
       },
       "notes": [
@@ -1157,13 +1157,13 @@
       },
       "recorder": {
         "name": "Montgomery County Clerk & Recorder",
-        "address": "#1 Courthouse Square, Hillsboro, IL 62049",
+        "address": "1 Courthouse Square, Hillsboro, IL 62049",
         "url": "https://www.montgomerycountyil.gov/county-clerk/"
       },
       "notes": [
         "The Montgomery County courthouse lists a Self-Help Center and an e-filing kiosk, and its Circuit Clerk page links to e-filing information. Courthouse hours are 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/153/Montgomery-County-Courthouse/court/)",
         "The Circuit Clerk's page says the court handles matters from adoption to the probate of an estate, and that personal checks from banks outside Montgomery County are not accepted. (source: https://www.montgomerycountyil.gov/circuit-clerk/)",
-        "The County Clerk and Recorder is on the first floor of the Historic Courthouse at #1 Courthouse Square, open Monday to Friday, 8 a.m. to 4 p.m. The recorder phone is (217) 532-9535. (source: https://www.montgomerycountyil.gov/county-clerk/)"
+        "The County Clerk and Recorder is on the first floor of the Historic Courthouse at 1 Courthouse Square, open Monday to Friday, 8 a.m. to 4 p.m. The recorder phone is (217) 532-9535. (source: https://www.montgomerycountyil.gov/county-clerk/)"
       ],
       "cities": [],
       "updated": "2026-10-31"
