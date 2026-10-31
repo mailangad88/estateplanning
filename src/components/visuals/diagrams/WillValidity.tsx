@@ -33,16 +33,16 @@ export function WillValidity({ caption, bare, step }: DiagramProps) {
             <Text x={104} y={y + 28} size={17} weight={700}>
               {r.title}
             </Text>
-            <Wrap x={104} y={y + 48} w={510} size={14} color="muted" text={r.text} lh={16} />
+            <Wrap x={104} y={y + 48} w={510} size={15} color="muted" text={r.text} lh={19} />
           </S>
         );
       })}
       <S step={step} n={6}>
         <Card x={656} y={112} w={264} h={276} fill="accentTint" border="accent" dashed />
-        <Text x={676} y={142} size={13} weight={700} color="accentDeep">
+        <Text x={676} y={142} size={15} weight={700} color="accentDeep">
           OPTIONAL EXTRA
         </Text>
-        <Doc x={676} y={158} w={62} h={80} label="Will" />
+        <Doc x={676} y={158} w={62} h={80} label="Will" labelSize={14} />
         <Icon name="signature" x={750} y={170} size={40} color="accent" tint="surface" />
         <Text x={800} y={196} size={15} weight={700}>
           Notary
@@ -50,7 +50,7 @@ export function WillValidity({ caption, bare, step }: DiagramProps) {
         <Text x={676} y={266} size={16} weight={700}>
           Self-proving affidavit
         </Text>
-        <Wrap x={676} y={290} w={228} size={14} text="A sworn statement signed by you and your witnesses. Most states accept it, and it can save weeks if a witness has moved." lh={17} />
+        <Wrap x={676} y={290} w={228} size={15} text="A sworn statement signed by you and your witnesses. Most states accept it, and it can save weeks if a witness has moved." lh={19} />
       </S>
       <S step={step} n={7}>
         <Card x={656} y={404} w={264} h={116} fill="goldTint" border="none" />
@@ -58,7 +58,7 @@ export function WillValidity({ caption, bare, step }: DiagramProps) {
         <Text x={712} y={440} size={16} weight={700}>
           Check your state
         </Text>
-        <Wrap x={672} y={468} w={232} size={14} text="Handwritten and electronic wills are accepted in some states, not others." lh={17} />
+        <Wrap x={672} y={468} w={232} size={15} text="Handwritten and electronic wills are accepted in some states, not others." lh={19} />
       </S>
       <S step={step} n={8}>
         <Card x={40} y={546} w={880} h={64} fill="sand" border="none" />

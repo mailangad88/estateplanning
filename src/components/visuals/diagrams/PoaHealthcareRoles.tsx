@@ -28,12 +28,12 @@ export function PoaHealthcareRoles({ caption, bare, step }: DiagramProps) {
     >
       <Frame h={560} title="If you cannot decide, who can?" sub="Four short documents answer it before it matters." />
       <S step={step} n={1}>
-        <Text x={cx(0)} y={134} size={14} weight={700} color="clay">
+        <Text x={cx(0)} y={134} size={15} weight={700} color="clay">
           MONEY
         </Text>
       </S>
       <S step={step} n={2}>
-        <Text x={cx(1)} y={134} size={14} weight={700} color="accent">
+        <Text x={cx(1)} y={134} size={15} weight={700} color="accent">
           HEALTH
         </Text>
       </S>
@@ -47,7 +47,7 @@ export function PoaHealthcareRoles({ caption, bare, step }: DiagramProps) {
             <Text x={x + 18} y={252} size={19} weight={700}>
               {r.title}
             </Text>
-            <Text x={x + 18} y={273} size={14} color="muted">
+            <Text x={x + 18} y={273} size={15} color="muted">
               {r.sub}
             </Text>
             <line x1={x + 18} x2={x + CW - 18} y1={290} y2={290} style={{ stroke: "var(--v-line, #d9d6cf)" }} strokeWidth={2} />

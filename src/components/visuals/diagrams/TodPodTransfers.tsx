@@ -33,7 +33,7 @@ export function TodPodTransfers({ caption, bare, step }: DiagramProps) {
               <Text x={102} y={y + 28} size={15} weight={700}>
                 {a.name}
               </Text>
-              <Text x={102} y={y + 50} size={13} color="muted">
+              <Text x={102} y={y + 50} size={15} color="muted">
                 {a.tag}
               </Text>
             </g>
@@ -50,8 +50,8 @@ export function TodPodTransfers({ caption, bare, step }: DiagramProps) {
           Passes directly
         </Text>
         <Wrap x={408} y={206} w={216} size={15} text="The beneficiary sends a death certificate and ID and fills out a claim form." lh={19} />
-        <Pill x={408} y={300} text="Usually no court approval" fill="surface" ink="accentDeep" size={13} />
-        <Pill x={408} y={344} text="Skips probate" fill="sageTint" ink="ink" size={13} />
+        <Pill x={408} y={300} text="Usually no court approval" fill="surface" ink="accentDeep" size={14} />
+        <Pill x={408} y={344} text="Skips probate" fill="sageTint" ink="ink" size={14} />
         <Arrow from={{ x: 644, y: 263 }} to={{ x: 682, y: 263 }} color="accent" head={7} />
       </S>
       <S step={step} n={3}>
@@ -82,7 +82,7 @@ export function TodPodTransfers({ caption, bare, step }: DiagramProps) {
           "Each account is separate. Different names on different accounts can give uneven results.",
           "The beneficiary gets it outright, and it does not cover incapacity. Check every form against your will or trust.",
         ].map((t, i) => (
-          <Wrap key={i} x={64 + i * 284} y={500} w={256} size={14} text={t} lh={18} />
+          <Wrap key={i} x={64 + i * 284} y={500} w={256} size={15} text={t} lh={19} />
         ))}
       </S>
     </Figure>
