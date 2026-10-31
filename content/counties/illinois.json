@@ -21,7 +21,9 @@
         "The Self-Help Center and an e-filing kiosk are outside the Circuit Clerk's Office in the Adams County Courthouse. The page also links to statewide eFileIL. (source: https://www.illinoiscourts.gov/courts-directory/66/Adams-County-Courthouse/court/)",
         "The Adams County law library has public computers for research on the west end of the 2nd floor. Everyone entering the courthouse goes through a metal detector. (source: https://www.illinoiscourts.gov/courts-directory/66/Adams-County-Courthouse/court/)"
       ],
-      "cities": [],
+      "cities": [
+        "quincy"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -75,7 +77,9 @@
         "Champaign County is in the 6th Judicial Circuit, with DeWitt, Douglas, Macon, Moultrie and Piatt counties. (source: https://www.illinoiscourts.gov/courts-directory/interactive-map)",
         "The County Assessment Office is at the Scott M. Bennett Administrative Center, 102 E. Main Street, Urbana, phone 217-384-3760. It offers a $5,000 Senior Homestead Exemption and a Senior Assessment Freeze with a $75,000 income limit. (source: https://www.champaigncountyil.gov/ccao/exemptions.php)"
       ],
-      "cities": [],
+      "cities": [
+        "champaign"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -173,7 +177,9 @@
         "The DeKalb County Clerk and Recorder's predictable fee schedule effective January 1, 2025 lists $74.00 to record a standard document. (source: https://dekalbcountyclerkil.gov/wp-content/uploads/2023/09/PredictableFeeSchedule_01.01.2025.pdf)",
         "The DeKalb County Assessment Office describes a $5,000 Senior Homestead Exemption (PTAX-324) and a Senior Assessment Freeze (PTAX-340) for household income of $75,000 or less. (source: https://dekalbcounty.org/departments/assessment-office/exemptions/list-of-exemptions/)"
       ],
-      "cities": [],
+      "cities": [
+        "dekalb"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -208,7 +214,8 @@
       ],
       "cities": [
         "wheaton",
-        "naperville"
+        "naperville",
+        "downers-grove"
       ],
       "updated": "2026-10-26"
     },
@@ -271,7 +278,9 @@
         "The clerk's filing fee schedule, revised November 4, 2025, lists a $278 filing fee for probate cases other than filing a will, plus a $100 Guardianship Advocacy Fee for most probate cases. Filing a will is $0. (source: http://jacksoncoilcircuitclerk.gov/wp-content/uploads/2025/11/2025-November-4-Filing-Fees-Updated.pdf)",
         "The Jackson County Clerk and Recorder is at 1001 Walnut Street, Murphysboro. Phone (618) 687-7240. (source: https://www.jacksoncounty-il.gov/392/Recording-Documents)"
       ],
-      "cities": [],
+      "cities": [
+        "carbondale"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -303,7 +312,8 @@
       "cities": [
         "aurora",
         "st-charles",
-        "geneva"
+        "geneva",
+        "elgin"
       ],
       "updated": "2026-10-26"
     },
@@ -334,7 +344,9 @@
         "The Recorder's office is at 189 East Court Street and offers eRecording. It accepts cash and check only for recordings, and accepts only MyDec PTAX forms made on the Illinois Department of Revenue website. (source: https://k3countyrecorder.com/)",
         "The Supervisor of Assessments office is at 189 East Court Street, phone 815-937-2945. Its page links general and senior homestead exemption information and the senior assessment freeze form (PTAX-340). (source: https://www.k3county.net/184/Supervisor-of-Assessments-Office)"
       ],
-      "cities": [],
+      "cities": [
+        "kankakee"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -487,7 +499,9 @@
         "The Macon County Supervisor of Assessments, at 141 South Main Street, Room 401, phone 217-424-1364, lists the Senior Citizens Homestead Exemption, the Senior Assessment Freeze and the Senior Tax Deferral program. (source: https://maconcounty.illinois.gov/departments/supervisor-of-assessments/)",
         "The Macon County Circuit Clerk's fee page lists a $376.00 filing fee for Probate (Decedent's Estate) and a $2.00 fee for a Letter of Office. The page gives no effective date and says fees may change without notice. (source: https://www.cclerk.co.macon.il.us/court-fees/)"
       ],
-      "cities": [],
+      "cities": [
+        "decatur"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -550,7 +564,8 @@
         "Madison County offers a $5,000 Senior Citizens Homestead Exemption for owners age 65 or older. A separate Low-Income Senior Citizens Assessment Freeze needs household income under $65,000 and a yearly application by July 31. The assessment office phone is (618) 296-6200. (source: https://www.madisoncountyil.gov/departments/chief_county_assesment_office/available_exemptions.php)"
       ],
       "cities": [
-        "alton"
+        "alton",
+        "edwardsville"
       ],
       "updated": "2026-10-26"
     },
@@ -582,7 +597,9 @@
         "The McHenry County Recorder's phone is 815-334-4110. The page says recorded documents are checked against Illinois recording requirements. (source: https://www.mchenrycountyil.gov/departments/county-recorder/general-information)",
         "McHenry County lists a senior homestead exemption of up to $8,000 for age 65 or older. A senior assessment freeze is available at household income of $75,000 or less, with applications due July 1. Call the Office of Assessments at (815) 334-4290. (source: https://www.mchenrycountyil.gov/departments/assessments/exemptions)"
       ],
-      "cities": [],
+      "cities": [
+        "crystal-lake"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -613,7 +630,9 @@
         "Since December 31, 2013, the County Clerk's Office has handled the Recorder's duties at 115 E Washington Street, Room M104, Bloomington, phone 309-888-5170. (source: https://mcleancountyil.gov/index.aspx?NID=791)",
         "For senior property tax exemptions, call the McLean County Supervisor of Assessments at 309-888-5130. The Treasurer, at 309-888-5180, handles the Senior Citizen Tax Deferral program, due March 1. (source: https://www.mcleancountyil.gov/406/Senior-Citizen-Tax-Information)"
       ],
-      "cities": [],
+      "cities": [
+        "bloomington"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -703,7 +722,9 @@
         "In Peoria County, recording is handled under the County Clerk at 309-672-6090. The county directory lists no separate Recorder of Deeds. (source: https://www.peoriacounty.gov/directory)",
         "Peoria County offers a $5,000 Senior Homestead Exemption at age 65, a Senior Assessment Freeze with a $65,000 income limit, and a Senior Citizen Tax Deferral program. Call the Supervisor of Assessments at 309-672-6910. (source: https://www.peoriacounty.gov/399/Tax-Relief-Exemptions)"
       ],
-      "cities": [],
+      "cities": [
+        "peoria"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -767,7 +788,9 @@
         "The Sangamon County Recorder is a separate office from the County Clerk. Its page links to fee, e-recording and land records search information. (source: https://sangamonil.gov/departments/m-r/recorder)",
         "The Sangamon County Treasurer runs a Senior Citizens Real Estate Tax Deferral program, and the Supervisor of Assessments handles homestead exemption applications. (source: https://sangamonil.gov/departments/s-z/supervisor-of-assessments/homestead-exemption)"
       ],
-      "cities": [],
+      "cities": [
+        "springfield"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -890,7 +913,9 @@
         "The Vermilion County Recorder's standard document fee is $69.00 for deeds, mortgages and releases, effective July 1, 2023. The fee is $19.00 less if the grantor or grantee is a government entity. (source: https://www.vercounty.org/recorder/recording-fees/)",
         "Call the Vermilion County Assessment Office at 217-554-1940 to have a Senior Citizens Homestead Exemption application mailed to you. (source: https://www.vercounty.org/supervisor-of-assessments/exemption-information/)"
       ],
-      "cities": [],
+      "cities": [
+        "danville"
+      ],
       "updated": "2026-10-26"
     },
     {
