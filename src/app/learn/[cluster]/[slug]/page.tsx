@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import AnswerBox from "@/components/AnswerBox";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import CtaBox from "@/components/CtaBox";
+import BookCta from "@/components/BookCta";
 import Faqs from "@/components/Faqs";
 import JsonLd from "@/components/JsonLd";
 import { PageHero } from "@/components/page-hero";
@@ -71,6 +71,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
         <PageMeta updated={a.updated} words={a.wordCount} reviewed={a.review === "approved"} />
       </PageHero>
       <AnswerBox answer={a.answer} takeaways={a.takeaways} />
+      {!sensitive && <BookCta layout="inline" from="learn-inline" />}
       <PageMedia path={a.url} />
       <Toc headings={a.headings} />
       <RichProse
@@ -113,7 +114,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
           </ul>
         </section>
       )}
-      <CtaBox topic={cluster.name} />
+      <BookCta from="learn-cta" />
       {terms.length > 0 && (
         <section className="terms" aria-labelledby="terms">
           <h2 id="terms">Terms used on this page</h2>

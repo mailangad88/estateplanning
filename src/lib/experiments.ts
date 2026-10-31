@@ -19,6 +19,19 @@ export const EXPERIMENTS = {
   magnet_fields: ["name_email", "email_only"],
   /** Quiz results: show the score first vs ask for email first with a skip link (playbook test 3). */
   quiz_gate: ["result_first", "email_first"],
+  /**
+   * Booking button label on content CTAs: "Book a consult" vs "See open times". The second names what
+   * happens next (a calendar), which the instant-booking research says lifts clicks.
+   */
+  book_cta_copy: ["book_consult", "see_times"],
+  /**
+   * Which action leads on content CTAs: booking first, or the two-minute plan finder first. Control is
+   * booking first because visitors who can book on the spot convert far more often (Smith.ai, Oct 2026:
+   * 64% vs 12%); the challenger checks that holds for our readers.
+   */
+  cta_primary: ["book_first", "plan_finder_first"],
+  /** Desktop exit offer: the free starter kit (email) vs picking a time to talk (booking). */
+  exit_offer: ["starter_kit", "book_call"],
 } as const;
 
 export type ExperimentName = keyof typeof EXPERIMENTS;

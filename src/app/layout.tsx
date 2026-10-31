@@ -60,10 +60,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <p className="kicker">Ready when you are</p>
                 <h2>Talk it through with an attorney, at a flat fee.</h2>
-                <p>Answer a few questions, or just call. Nothing is signed until you have seen the fee.</p>
+                <p>Pick a time, answer a few questions, or just call. Nothing is signed until you have seen the fee.</p>
               </div>
               <p className="cta-row">
-                <Link className="button" href="/plan-finder">Start the plan finder</Link>
+                <Link className="button" href="/book?from=footer">Book a consult</Link>
+                <Link className="button ghost-light" href="/plan-finder">Start the plan finder</Link>
                 <TrackedPhoneLink fallback={firm.phone} className="button ghost-light" />
               </p>
             </div>
