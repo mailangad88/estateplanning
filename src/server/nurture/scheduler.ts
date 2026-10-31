@@ -417,6 +417,7 @@ export async function sweepQuietLeads(db: Db, now: Date): Promise<string[]> {
     );
     if (last > cutoff) continue;
     await enroll(db, lead.id, "long_term", now);
+    await enroll(db, lead.id, "reactivation", now);
     out.push(lead.id);
   }
   return out;

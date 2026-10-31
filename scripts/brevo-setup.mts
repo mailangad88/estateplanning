@@ -13,13 +13,14 @@
 import { BrevoAdapter, BREVO_FOLDER_NAME } from "../src/server/crm/brevo";
 import { brevoCustomAttributes, brevoSequenceLists, brevoTemplatePayload } from "../src/server/crm/brevoSetup";
 import { TEMPLATE_COPY } from "../src/server/nurture/templateCopy";
+import { NEWSLETTER_TEMPLATE } from "../src/server/crm/brevoCampaigns";
 import { firm } from "../src/config/firm";
 
 const apply = process.argv.includes("--apply");
 const templates = process.argv.includes("--templates");
 const lists = brevoSequenceLists();
 const attrs = brevoCustomAttributes();
-const emails = TEMPLATE_COPY.filter((t) => t.channel === "email");
+const emails = [...TEMPLATE_COPY.filter((t) => t.channel === "email"), NEWSLETTER_TEMPLATE];
 
 console.log(`Folder: ${BREVO_FOLDER_NAME}`);
 console.log(`Lists (${lists.length}):\n${lists.map((l) => `  ${l.listName}  (${l.emailSteps} email steps)`).join("\n")}`);

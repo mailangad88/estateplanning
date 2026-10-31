@@ -48,9 +48,28 @@ export function toBrevoHtml(text: string): string {
   return `<!doctype html><html><body style="font-family:Arial,sans-serif;font-size:16px;line-height:1.5;color:#1f2933">${paras.join("")}</body></html>`;
 }
 
+/** /book topic (src/lib/book.ts BOOK_TOPICS) for a template key, by sequence prefix. */
+const TOPIC_BY_PREFIX: [string, string][] = [
+  ["le_new_parent_", "kids"], ["qz_2_guardianship", "kids"], ["le_homeowner_", "trust"], ["le_blended_family_", "will-or-trust"],
+  ["le_caregiver_", "parent"], ["le_widowed_", "review"], ["le_retiring_", "review"], ["le_special_needs_", "trust"],
+  ["g", "probate"], ["calc_", "will-or-trust"],
+];
+
+/**
+ * Booking link for one email: /book?from=email-<key>&topic=<id>, the site's convention for tracing bookings
+ * to their source (see src/lib/book.ts). Grief emails (g*) get the gentle probate topic.
+ */
+export function brevoBookingUrl(base: string, key: string): string {
+  const from = `email-${key.replace(/_/g, "-")}`.slice(0, 60);
+  const topic = TOPIC_BY_PREFIX.find(([p]) => (p === "g" ? /^g\d|^g_/.test(key) : key.startsWith(p)))?.[1];
+  const q = new URLSearchParams({ from, ...(topic ? { topic } : {}) });
+  return `${base.replace(/\/$/, "")}?${q}`;
+}
+
 /** Body for POST /v3/smtp/templates. Always inactive and named as an unapproved draft. */
 export function brevoTemplatePayload(copy: TemplateCopy, vars: BrevoTemplateVars, sender: { email: string; name: string }) {
   if (copy.channel !== "email") throw new Error(`${copy.key} is not an email`);
+  vars = { ...vars, bookingUrl: brevoBookingUrl(vars.bookingUrl, copy.key) };
   const body = toBrevoText(copy.body, vars).replace(/\{\{ unsubscribe \}\}/g, "UNSUBSCRIBE_LINK");
   const html = toBrevoHtml(body).replace(/UNSUBSCRIBE_LINK/g, '<a href="{{ unsubscribe }}">Unsubscribe</a>');
   return {

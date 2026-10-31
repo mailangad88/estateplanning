@@ -42,6 +42,16 @@ New sequences drafted for attorney review: `welcome` (form leads with no quiz, g
 `calculator_follow_up` (cost calculator, readiness score, will versus trust). Copy also added for
 `cb_questionnaire`, `ch_objection_timing` and `ch_close`.
 
+Added 2026-10-31 (second pass): copy for every life-event track (new parents, homeowners, blended families,
+business owners, caregivers, widowed, retirees) plus a new `life_event_special_needs` track; `reactivation`
+(3 emails, started by the quiet-lead sweep alongside `long_term`); copy for `stl_email_confirm`,
+`qz_2_guardianship`, `mg_2_one_thing`, `mg_3_quiz`, `so_portal_invite`, `so_timeline`, `rr_reminder_email_t21`;
+and a monthly newsletter campaign template (`src/server/crm/brevoCampaigns.ts`). Copy says "a first call", never
+"free": the free 15-minute call is one of the offers waiting on Sargun (research/client-pain-points/README.md).
+Every Brevo template's booking link is `/book?from=email-<key>&topic=<id>`. Still without copy: `ch_recap`
+(the attorney writes it), the 12 `lt_newsletter_*` steps (sent from the newsletter template instead) and the
+4 webinar invites. Check new drafts with `npx tsx scripts/check-copy-fragment.mts <file>`.
+
 Account steps for Angad (nothing is created for him):
 
 1. Sign up at brevo.com on the Free plan with the business email.

@@ -360,6 +360,23 @@ const calculatorFollowUp: Sequence = {
   ],
 };
 
+/**
+ * Reactivation: a quiet lead (60 days, no booking) gets three short "still thinking about it?" notes before the
+ * monthly newsletter takes over. Starts with long_term from the quiet-lead sweep. Drafted 2026-10-31.
+ */
+const reactivation: Sequence = {
+  id: "reactivation",
+  name: "Reactivation",
+  trigger: { kind: "unresponsive_or_quiet_60d", description: "Quiet for 60 days without booking, same sweep that starts long_term" },
+  goal: "Restart the conversation and book a call",
+  exitWhen: [BOOKED, EXIT_SET, UNSUB],
+  steps: [
+    step("ra_1_still_on_list", "email", { days: 0 }, ["bf-TODO-reactivation"], "Is a plan still on your list? One question, easy reply"),
+    step("ra_2_one_small_step", "email", { days: 7 }, ["bf-TODO-reactivation"], "One small step that takes 20 minutes"),
+    step("ra_3_last_check", "email", { days: 21 }, ["bf-TODO-reactivation"], "Last personal note before the monthly newsletter"),
+  ],
+};
+
 /** Sequence B: someone downloaded a guide or checklist. Deliver it, then invite the quiz and a consult. */
 const magnetFollowUp: Sequence = {
   id: "magnet_follow_up",
@@ -383,6 +400,7 @@ export const SEQUENCES: Sequence[] = [
   magnetFollowUp,
   welcome,
   calculatorFollowUp,
+  reactivation,
   ...LIFE_EVENT_SEGMENTS.map(lifeEvent),
   consultBooked,
   noShowRecovery,

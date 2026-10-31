@@ -1,11 +1,13 @@
 import { describe, expect, it } from "vitest";
 import { BrevoAdapter, allowedSequences } from "@/server/crm/brevo";
 import { parseBrevoEvents, verifyBrevoWebhook } from "@/server/crm/brevoEvents";
-import { brevoSequenceLists, brevoTemplatePayload, toBrevoText } from "@/server/crm/brevoSetup";
+import { brevoBookingUrl, brevoSequenceLists, brevoTemplatePayload, toBrevoText } from "@/server/crm/brevoSetup";
 import type { NurtureState } from "@/server/crm/adapter";
 import { crmAdapterFromEnv } from "@/server/crm";
 import { nurtureOwnerFromEnv } from "@/server/nurture/owner";
 import { getTemplateCopy } from "@/server/nurture/templateCopy";
+import { NEWSLETTER_TEMPLATE } from "@/server/crm/brevoCampaigns";
+import { lintCopy } from "@/server/nurture/compliance";
 import { buildConsentRecord } from "@/lib/consent";
 import { scoreLead } from "@/lib/scoring";
 import type { Lead, Person } from "@/server/types";
@@ -175,5 +177,25 @@ describe("Brevo setup", () => {
     expect(p.templateName).toBe("DRAFT not approved - wl_1_how_it_works");
     expect(p.htmlContent).toContain('<a href="{{ unsubscribe }}">Unsubscribe</a>');
     expect(p.htmlContent).not.toContain("{{unsubscribeUrl}}");
+    expect(p.htmlContent).toContain("https://x.test/book?from=email-wl-1-how-it-works");
+  });
+
+  it("tags every booking link with its email and topic", () => {
+    expect(brevoBookingUrl("https://x.test/book", "le_new_parent_3")).toBe("https://x.test/book?from=email-le-new-parent-3&topic=kids");
+    expect(brevoBookingUrl("https://x.test/book/", "g3_probate")).toBe("https://x.test/book?from=email-g3-probate&topic=probate");
+    expect(brevoBookingUrl("https://x.test/book", "qz_3_cost")).toBe("https://x.test/book?from=email-qz-3-cost");
+  });
+
+  it("has a list for the new tracks and reactivation", () => {
+    const names = brevoSequenceLists().map((l) => l.listName);
+    for (const id of ["life_event_special_needs", "reactivation"]) expect(names).toContain(`ep-seq-${id}`);
+  });
+
+  it("ships a lint-clean monthly newsletter draft that books through /book", () => {
+    expect(lintCopy(NEWSLETTER_TEMPLATE.body, { requireDisclaimer: true }).issues).toEqual([]);
+    const p = brevoTemplatePayload(NEWSLETTER_TEMPLATE, { firmName: "F", attorneyName: "A", bookingUrl: "https://x.test/book" }, { email: "h@x.test", name: "F" });
+    expect(p.isActive).toBe(false);
+    expect(p.htmlContent).toContain("/book?from=email-newsletter-monthly");
+    expect(p.htmlContent).toContain('<a href="{{ unsubscribe }}">Unsubscribe</a>');
   });
 });
