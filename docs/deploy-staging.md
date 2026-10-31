@@ -18,4 +18,4 @@ Set up (once):
 
 The lawyer portal (`/portal`) needs Postgres and secrets (`DATABASE_URL`, `SESSION_SECRET`, `MFA_ENCRYPTION_KEY`, `EMAIL_TRANSPORT`) and returns an error on staging until they are set.
 
-Going live later is a different project (or removing `SITE_ENV`) with every placeholder filled; `LAUNCH_CHECK=strict npm run launch-check` lists what is left.
+Going live is a different project with every placeholder filled; see `docs/deploy-production.md`. `LAUNCH_CHECK=strict npm run launch-check` lists what is left.

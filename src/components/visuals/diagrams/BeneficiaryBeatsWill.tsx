@@ -24,7 +24,7 @@ export function BeneficiaryBeatsWill({ caption, bare, step }: DiagramProps) {
       <Frame h={600} title="The form on file often wins" sub="These accounts go to the named person, whatever the will says." />
       <S step={step} n={1}>
         <Card x={40} y={120} w={250} h={290} fill="surface" border="line" />
-        <Doc x={64} y={142} w={56} h={72} label="WILL" ink="clay" />
+        <Doc x={64} y={140} w={64} h={82} label="WILL" ink="clay" labelSize={14} />
         <Text x={64} y={248} size={20} weight={700}>
           Your will
         </Text>
@@ -41,7 +41,7 @@ export function BeneficiaryBeatsWill({ caption, bare, step }: DiagramProps) {
               <Text x={436} y={y + 38} size={18} weight={700}>
                 {a.title}
               </Text>
-              <Wrap x={436} y={y + 62} w={224} size={14} color="muted" text={a.note} lh={17} />
+              <Wrap x={436} y={y + 62} w={224} size={15} color="muted" text={a.note} lh={19} />
               <Arrow from={{ x: 672, y: y + 45 }} to={{ x: 760, y: 265 }} color="accent" bend={i === 1 ? 0 : i === 0 ? 14 : -14} />
             </g>
           );

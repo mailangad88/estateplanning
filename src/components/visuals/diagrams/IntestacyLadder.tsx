@@ -71,7 +71,7 @@ export function IntestacyLadder({ caption, bare, highlight }: DiagramProps & { h
           <Text x={718} y={216 + i * 76} size={16} weight={600}>
             {p.label}
           </Text>
-          <Pill x={718} y={224 + i * 76} text="no claim" fill="surface" ink="muted" size={11} />
+          <Pill x={718} y={224 + i * 76} text="no claim" fill="surface" ink="muted" size={14} />
         </g>
       ))}
       <Text x={664} y={436} size={15} color="ink" weight={600}>

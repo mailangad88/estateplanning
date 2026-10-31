@@ -7,7 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import { PageHero } from "@/components/page-hero";
 import PageMeta from "@/components/PageMeta";
 import { servedStates } from "@/config/firm";
-import { getCities, getClusters, getPillar, getStateGuide } from "@/lib/library";
+import { countyForCity, getCities, getClusters, getPillar, getStateGuide } from "@/lib/library";
 import { breadcrumbSchema, cityServiceSchema, graph } from "@/lib/schema";
 
 /**
@@ -57,6 +57,7 @@ export default async function CityPage({ params }: { params: Promise<Params> }) 
     { name: c.state.name, url: `/estate-planning/${c.state.slug}` },
     { name: c.name, url: c.url },
   ];
+  const county = countyForCity(c);
   const nearby = served().filter((n) => n.state.slug === c.state.slug && c.nearby.includes(n.slug));
 
   return (
@@ -100,6 +101,12 @@ export default async function CityPage({ params }: { params: Promise<Params> }) 
             {c.probateCourt.url && <a href={c.probateCourt.url} rel="nofollow">Court website</a>}
           </p>
         </>
+      )}
+      {county && (
+        <p>
+          Courthouse, clerk, recorder and filing fees for the whole county are in our{" "}
+          <Link href={county.url}>{county.name} probate guide</Link>.
+        </p>
       )}
       {guide && (
         <p>

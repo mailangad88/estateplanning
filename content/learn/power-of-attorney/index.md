@@ -178,6 +178,64 @@ The right next article depends on where you are. If you are choosing a document 
 
 If no document is signed in time, read [what happens if you are incapacitated without a power of attorney](/learn/what-if/incapacitated-without-power-of-attorney). It walks through the court process a family faces instead.
 
+## More questions people ask
+
+When the money for care has to come from the house, [can a power of attorney sell a parent's house to pay for care](/learn/power-of-attorney/can-a-power-of-attorney-sell-a-parents-house-to-pay-for-care) covers the sale steps, where the proceeds go and the Medicaid traps.
+
+If your document only covers money, [can a power of attorney make medical decisions](/learn/power-of-attorney/can-a-power-of-attorney-make-medical-decisions) explains which form a hospital needs and what to do when a loved one is in a coma.
+
+For everyday banking and bills, [can a power of attorney open or close bank accounts and pay a mortgage](/learn/power-of-attorney/can-a-power-of-attorney-open-or-close-bank-accounts-and-pay-a-mortgage) covers what banks require and where an agent must stop.
+
+If your springing document is stuck because no doctor will sign, [what to do when a doctor will not certify incapacity](/learn/power-of-attorney/doctor-will-not-certify-incapacity-springing-power-of-attorney) gives the steps in order.
+
+To see why an agent cannot skip probate and when one can fund a trust, read [can a power of attorney avoid probate or fund a trust](/learn/power-of-attorney/can-a-power-of-attorney-avoid-probate-or-fund-a-trust).
+
+Once the document is signed, [where to keep your power of attorney](/learn/power-of-attorney/where-to-keep-your-power-of-attorney-after-you-sign-it) covers originals, copies, recording and successor agents.
+
+If your spouse is your agent and the marriage is ending, [does divorce cancel a power of attorney](/learn/power-of-attorney/does-divorce-cancel-a-power-of-attorney) explains the Illinois and New Jersey rules and how to revoke.
+
+If your first choice is a friend, a partner or someone in another state, [who can legally serve as your agent](/learn/power-of-attorney/who-can-legally-serve-as-a-power-of-attorney-agent) answers the eligibility questions.
+
+On pay, expenses and liability, [can an agent be paid or reimbursed](/learn/power-of-attorney/can-a-power-of-attorney-agent-be-paid-or-reimbursed) draws the line.
+
+If you want to narrow what an agent may do, [how to limit an agent's powers and add safeguards](/learn/power-of-attorney/limiting-an-agents-powers-and-adding-safeguards-in-a-power-of-attorney) covers second signatures, monitors and start dates.
+
+Before you download a form, [are free online and handwritten power of attorney forms valid](/learn/power-of-attorney/are-free-online-and-handwritten-power-of-attorney-forms-valid) explains what makes one hold up and how to sign remotely.
+
+When family members distrust an agent, [challenging or removing a power of attorney agent](/learn/power-of-attorney/can-you-challenge-or-remove-a-power-of-attorney-agent-when-siblings-disagree) sets out the steps from asking for records to petitioning a court.
+
+If an agent wants out, [how a power of attorney agent resigns](/learn/power-of-attorney/can-a-power-of-attorney-agent-resign-or-step-down) covers the letter, the handover and who takes over.
+
+For the harder assets, [what a power of attorney can do with retirement accounts, safe deposit boxes, vehicles and businesses](/learn/power-of-attorney/power-of-attorney-and-retirement-accounts-safe-deposit-boxes-vehicles-and-businesses) explains what each institution will ask for.
+
+If you wonder whether an agent may give away your money, or give it to themselves, [can a power of attorney make gifts](/learn/power-of-attorney/can-a-power-of-attorney-make-gifts) covers gifting clauses, the gift tax and the Medicaid look-back.
+
+After a move, or if you own property in another state or abroad, [whether a power of attorney is valid in another state or country](/learn/power-of-attorney/is-a-power-of-attorney-valid-in-another-state-or-abroad) explains what travels and what needs updating.
+
+If you already have a trust, [why you still need a power of attorney with a living trust](/learn/power-of-attorney/do-i-need-a-power-of-attorney-if-i-have-a-living-trust) shows which assets and agencies the trustee cannot reach.
+
+If you are unsure which kind of document you need, [what the three types of power of attorney are](/learn/power-of-attorney/what-are-the-three-types-of-power-of-attorney) explains general, limited and durable powers and how they combine.
+
+When the person cannot hold a pen, has fading capacity or refuses, [how to get power of attorney when someone can't sign](/learn/power-of-attorney/getting-power-of-attorney-when-someone-cannot-sign) shows what is still possible.
+
+Agencies set their own rules, and [whether a power of attorney works with Social Security, Medicare and the IRS](/learn/power-of-attorney/does-a-power-of-attorney-work-with-social-security-medicare-and-the-irs) lists the extra forms an agent needs.
+
+If you have been named as someone's agent, [what a power of attorney agent has to do](/learn/power-of-attorney/what-does-a-power-of-attorney-agent-have-to-do) covers the legal duties, first-week steps and record keeping.
+
+To decide whether two children should share the role, see [co-agents and successor agents](/learn/power-of-attorney/can-you-name-more-than-one-power-of-attorney-agent).
+
+[Power of attorney vs. executor](/learn/power-of-attorney/power-of-attorney-vs-executor) explains who acts while you are alive and who takes over at death.
+
+If you suspect an agent is misusing the document, [power of attorney abuse](/learn/power-of-attorney/power-of-attorney-abuse) lists the warning signs and the steps to report and stop it.
+
+[Power of attorney and real estate](/learn/power-of-attorney/power-of-attorney-and-real-estate) explains what title companies require and the limits on deeding a house.
+
+[What a power of attorney cannot do](/learn/power-of-attorney/what-a-power-of-attorney-cannot-do) covers changing a will, acting after death and the powers that need explicit wording.
+
+[Does a power of attorney need to be notarized or witnessed](/learn/power-of-attorney/does-a-power-of-attorney-need-to-be-notarized) sets out signing rules, who can witness and what to do if the principal cannot sign.
+
+[How much a power of attorney costs](/learn/power-of-attorney/how-much-does-a-power-of-attorney-cost) compares free forms, online services and attorney fees.
+
 ## How we can help
 
 Our attorneys prepare durable financial and healthcare powers of attorney that match your state's rules and your family's situation, and we can review documents you already have. To see which documents you may be missing, use our [plan finder](/plan-finder), or book a consultation when you are ready to talk through who should act for you.

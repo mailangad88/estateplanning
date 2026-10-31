@@ -47,6 +47,7 @@ import { clearDraft, loadDraft, saveDraft, takeHandoff } from "@/lib/familyPlanH
 import { loadVisitor } from "@/lib/visitor";
 import type { OwnPlan } from "@/server/services/familyPlan";
 import styles from "./FamilyPlanner.module.css";
+import FormDisclaimer from "@/components/FormDisclaimer";
 
 type SaveState = "idle" | "pending" | "saving" | "saved" | "device" | "error";
 type Errors = Record<string, string>;
@@ -666,6 +667,7 @@ function SavePanel({ configured, signedIn, onSignedOut, onClearDevice }: {
           </div>
           {error && <p className="error" role="alert">{error}</p>}
           <button type="submit" className="button" disabled={busy}>{busy ? "Sending…" : "Email me a link"}</button>
+          <FormDisclaimer />
         </form>
       )}
       <p className="notice">

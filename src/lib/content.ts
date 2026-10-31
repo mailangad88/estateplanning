@@ -136,7 +136,11 @@ export function render(markdown: string): { html: string; headings: Heading[] } 
         const n = seen.get(id) ?? 0;
         seen.set(id, n + 1);
         if (n) id = `${id}-${n + 1}`;
-        if (depth === 2) headings.push({ id, text: text.replace(/<[^>]+>/g, "") });
+        if (depth === 2) {
+          // The TOC renders this as plain text, so decode the entities marked escaped.
+          const plain = text.replace(/<[^>]+>/g, "").replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
+          headings.push({ id, text: plain });
+        }
         return `<h${depth} id="${id}">${text}</h${depth}>\n`;
       },
       table(token) {

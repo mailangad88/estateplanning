@@ -5,7 +5,7 @@
  * Google does not use IndexNow; it picks changes up from sitemap.xml lastmod (submit the sitemap once in
  * Search Console).
  *
- *   SITE_URL=https://www.example.com INDEXNOW_KEY=... node scripts/indexnow.mjs [git-range]
+ *   SITE_URL=https://familyfutureplanning.com INDEXNOW_KEY=... node scripts/indexnow.mjs [git-range]
  *
  * git-range defaults to HEAD~1..HEAD. Only content files map to URLs. Pages still pending attorney review
  * are skipped when REQUIRE_ATTORNEY_REVIEW=true. Dry run (prints URLs) when INDEXNOW_KEY is unset.

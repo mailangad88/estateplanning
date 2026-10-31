@@ -182,17 +182,17 @@
   {
     "category": "Cost and process",
     "q": "How much does an estate plan cost?",
-    "a": "Prices depend on what the plan includes. Key factors are whether it has a trust, how many documents are involved, and your family situation. Many firms quote a flat fee for each package so you know the cost upfront. Our current fees are [firm placeholder: flat fee schedule], and we confirm the exact fee before any work begins."
+    "a": "Prices depend on what the plan includes. Key factors are whether it has a trust, how many documents are involved, and your family situation. Many attorneys quote a flat fee for each package so you know the cost upfront. Current package prices are on our pricing page at /pricing, and the attorney you are matched with confirms the exact fee before any work begins."
   },
   {
     "category": "Cost and process",
     "q": "What is a flat fee and what does it include?",
-    "a": "A flat fee is a set price for a defined scope of work, agreed on before the work starts. It usually covers the design meeting, drafting, revisions, and the signing meeting, so you are not billed for every phone call. Our flat fee includes [firm placeholder: list of included services]."
+    "a": "A flat fee is a set price for a defined scope of work, agreed on before the work starts. It usually covers the design meeting, drafting, revisions, and the signing meeting, so you are not billed for every phone call. What each package includes is listed on our pricing page at /pricing."
   },
   {
     "category": "Cost and process",
     "q": "What is not included in a flat fee?",
-    "a": "Flat fees usually cover a defined plan, so work outside that scope may be priced separately. Common examples include recording deeds, transferring business interests, or later amendments. We list these in writing before you sign an engagement letter: [firm placeholder: excluded services and how they are priced]."
+    "a": "Flat fees usually cover a defined plan, so work outside that scope may be priced separately. Common examples include recording deeds, transferring business interests, or later amendments. The attorney lists these in writing before you sign an engagement letter, and our pricing page at /pricing shows common exclusions and add-ons."
   },
   {
     "category": "Cost and process",
@@ -202,7 +202,7 @@
   {
     "category": "Cost and process",
     "q": "How many meetings will I need?",
-    "a": "Many plans take two or three meetings: an initial consultation, a design meeting, and a signing meeting. Some of these can happen by video, though signing often happens in person because of witness and notary rules. Our typical schedule is [firm placeholder: meeting format and timeline]."
+    "a": "Many plans take two or three meetings: an initial consultation, a design meeting, and a signing meeting. Some of these can happen by video, though signing often happens in person because of witness and notary rules. The attorney you are matched with sets the schedule with you. See /how-it-works for the usual steps."
   },
   {
     "category": "Cost and process",
@@ -212,27 +212,27 @@
   {
     "category": "Cost and process",
     "q": "Do I have to pay for updates later?",
-    "a": "Small updates, such as changing an executor, often cost less than a full new plan. Some firms offer review or maintenance programs for a set fee. Our approach to updates is [firm placeholder: update and review policy]."
+    "a": "Small updates, such as changing an executor, often cost less than a full new plan. Some attorneys offer review or maintenance programs for a set fee. Ask the attorney you are matched with how they handle updates."
   },
   {
     "category": "Working with us",
     "q": "How do I book a consultation?",
-    "a": "You can start by answering a few questions in our plan finder at /plan-finder. It helps us understand your goals before we talk. From there, you can choose a time for an initial consultation. Our consultation details are [firm placeholder: consult length, format, and any fee]."
+    "a": "You can start by answering a few questions in our plan finder at /plan-finder, or book directly at /book. We use your answers to match you with an appropriate estate planning attorney. The consult length, format and any fee are shown on the booking page."
   },
   {
     "category": "Working with us",
     "q": "Can we meet by video instead of in person?",
-    "a": "Many parts of the process work well by video, including the first consultation and design meeting. Signing usually happens in person, because many states have specific witness and notary requirements. Our meeting options are [firm placeholder: in-person, video, and phone options]."
+    "a": "Many parts of the process work well by video, including the first consultation and design meeting. Signing often happens in person, because Illinois and New Jersey have specific witness and notary requirements. The attorney you are matched with explains which meetings can be by video."
   },
   {
     "category": "Working with us",
     "q": "Which states do you serve?",
-    "a": "Estate planning documents are governed by state law, so an attorney usually needs to be licensed in your state. If you own property in another state, we may coordinate with a local attorney there. We are licensed in [firm placeholder: states of licensure]."
+    "a": "Illinois and New Jersey only. Estate planning documents are governed by state law, so the attorney we match you with is licensed in your state. If you own property in another state, that attorney may coordinate with a local attorney there."
   },
   {
     "category": "Working with us",
     "q": "Will my information be kept confidential?",
-    "a": "What you share with an attorney while seeking legal advice is generally protected by attorney-client privilege and professional confidentiality rules. That protection lets you speak openly about family, money, and health. Our privacy and data security practices are described at [firm placeholder: privacy policy link]."
+    "a": "What you share with an attorney while seeking legal advice is generally protected by attorney-client privilege and professional confidentiality rules. That protection lets you speak openly about family, money, and health. How this site handles your information is described in our privacy policy at /legal/privacy."
   },
   {
     "category": "Working with us",
@@ -242,11 +242,11 @@
   {
     "category": "Working with us",
     "q": "What happens after my documents are signed?",
-    "a": "You receive your original documents and copies, along with instructions on where to keep them and who should have copies. If you have a trust, the next step is funding it by retitling accounts and updating beneficiaries. Our post-signing support includes [firm placeholder: funding help and follow-up]."
+    "a": "You receive your original documents and copies, along with instructions on where to keep them and who should have copies. If you have a trust, the next step is funding it by retitling accounts and updating beneficiaries. The attorney you are matched with explains what follow-up help they offer."
   },
   {
     "category": "Working with us",
     "q": "What are your office hours and how do I reach you?",
-    "a": "Our office hours are [firm placeholder: office hours]. You can reach us at [firm placeholder: phone and email]. We aim to respond to messages within [firm placeholder: response time]."
+    "a": "Our office hours, phone number and stated response time are on our contact page at /contact. You can also book a consultation at /book or request a call back."
   }
 ]

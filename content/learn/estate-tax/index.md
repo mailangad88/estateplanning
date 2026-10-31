@@ -136,6 +136,80 @@ Yes, often. The exclusion has changed in 2001, 2010, 2013, 2018, and 2025. The 2
 
 For a view of the whole picture, our [basics guide](/learn/basics) and the [probate guide](/learn/probate) show how the rest of the plan fits together.
 
+## More questions people ask
+
+Before paying for tax-driven planning, [what estate tax planning costs and when it is worth it](/learn/estate-tax/how-much-does-estate-tax-planning-cost) compares fees and yearly upkeep with the tax actually at stake.
+
+If you may someday inherit from a parent, [how to plan for a large expected inheritance](/learn/estate-tax/how-to-plan-if-you-expect-a-large-inheritance-from-a-parent) covers disclaimers, inheritance trusts and how the money affects your own estate.
+
+To learn whether the executor, the estate or the beneficiaries bear the bill, read [who pays the estate tax, the executor or the heirs](/learn/estate-tax/who-pays-the-estate-tax-executor-or-heirs).
+
+If you already own a policy, [how to transfer an existing life insurance policy to an ILIT](/learn/estate-tax/how-to-transfer-an-existing-life-insurance-policy-to-an-ilit) walks through the assignment, Crummey notices and the three-year rule.
+
+Once the estate starts earning interest or dividends, [does an estate pay income tax](/learn/estate-tax/does-an-estate-pay-income-tax-form-1041-interest-and-dividends) explains Form 1041, the fiscal-year choice and how the K-1 moves tax to heirs.
+
+To decide between helping your children now and leaving assets at death, [gift vs. inheritance tax](/learn/estate-tax/gift-vs-inheritance-tax-give-now-or-leave-at-death) compares carryover basis with the step-up using real numbers.
+
+If you are thinking of leaving Illinois or New Jersey, [can you avoid state estate tax by moving](/learn/estate-tax/can-you-avoid-state-estate-tax-by-moving-to-another-state) explains domicile and what stays taxable.
+
+For couples with an older trust, [what a formula clause in a trust does](/learn/estate-tax/what-is-a-formula-clause-in-a-trust) shows how it can fund the wrong amount.
+
+Executors deciding whether to hire help can read [can I file Form 706 myself](/learn/estate-tax/can-i-file-form-706-myself-or-do-i-need-an-attorney).
+
+The rule that keeps spouses from paying tax at the first death is covered in [the marital deduction explained](/learn/estate-tax/marital-deduction-explained).
+
+On whether entity gifts at a discount still hold up, see [valuation discounts and family limited partnerships](/learn/estate-tax/valuation-discounts-and-family-limited-partnerships).
+
+If most of your wealth is in an IRA or 401(k), [estate tax planning with mostly retirement accounts](/learn/estate-tax/estate-tax-planning-when-your-estate-is-mostly-retirement-accounts) explains the double tax and how to reduce it.
+
+When an estate is mostly a farm or family company, [estate tax elections for alternate valuation, 6166 deferral and farm valuation](/learn/estate-tax/estate-tax-elections-alternate-valuation-deferral-and-farm-valuation) explains how an executor can lower the value or spread out the payments.
+
+If you have given more than the annual exclusion, [Form 709, gift splitting and net gifts](/learn/estate-tax/form-709-gift-tax-return-gift-splitting-and-net-gifts) explains who files the return and why it rarely means paying tax.
+
+For larger estates with growing assets, [intentionally defective grantor trusts and sales to an IDGT](/learn/estate-tax/intentionally-defective-grantor-trust-and-sale-to-an-idgt) shows how growth can move out of the estate and what it costs in basis.
+
+To see what the tax looks like in dollars, [how much the federal estate tax is on a $10, $15 or $20 million estate](/learn/estate-tax/estate-tax-on-10-15-and-20-million-dollar-estates) gives worked examples for single people and couples.
+
+If a house or account has two owners, [how the step-up works for spouses, joint owners and community property](/learn/estate-tax/step-up-in-basis-for-married-couples-and-joint-property) explains which share gets a new basis.
+
+If a deadline has already slipped, [what to do when the Form 706 deadline has passed](/learn/estate-tax/missed-the-form-706-deadline) covers extensions, penalties and late portability elections.
+
+Deciding whether to make big gifts at all is the subject of [using your estate tax exemption now or waiting](/learn/estate-tax/use-your-estate-tax-exemption-now-or-wait).
+
+For how a gift to charity is taxed, [charitable gifts and bequests under the gift, estate and income tax](/learn/estate-tax/charitable-gifts-and-bequests-gift-tax-estate-tax-and-income-tax) compares giving now with giving at death.
+
+Wondering whether your house, IRA, life insurance or joint accounts are added up? [What counts toward the federal estate tax](/learn/estate-tax/what-counts-toward-the-estate-tax) goes asset by asset.
+
+For couples weighing a trust that moves wealth out of both estates, the [spousal lifetime access trust (SLAT)](/learn/estate-tax/spousal-lifetime-access-trust-slat) article covers the tax savings, the risk if a spouse dies first, and how it compares with a GRAT.
+
+If you plan to give to grandchildren, the [generation-skipping transfer tax](/learn/estate-tax/generation-skipping-transfer-tax) guide explains the GST exemption, 529 front-loading and which gifts are exempt.
+
+For everyday situations like a car, a down payment or a forgiven loan, [is it a taxable gift](/learn/estate-tax/is-it-a-taxable-gift-cars-loans-and-down-payments) shows what needs reporting and who pays.
+
+To see what comes off before the tax is figured, [what the estate can deduct before the estate tax](/learn/estate-tax/what-the-estate-can-deduct-before-estate-tax) covers funeral costs, debts, legal fees, charity and the double-deduction trap.
+
+For cross-border families, [foreign inheritances and U.S. estate tax for non-citizens](/learn/estate-tax/foreign-inheritance-and-us-estate-tax-for-non-citizens) explains reporting on Form 3520, nonresident aliens and Americans living abroad.
+
+If the estate owes tax but lacks cash, [what happens if the estate cannot pay the estate tax](/learn/estate-tax/what-if-the-estate-cannot-pay-the-estate-tax) covers extensions, installments and executor liability.
+
+To see how a house, IRA, artwork or crypto is priced for the return, read [how assets are valued for estate tax](/learn/estate-tax/how-assets-are-valued-for-estate-tax).
+
+Owners with a fast-growing home can read [how a QPRT saves estate tax](/learn/estate-tax/qualified-personal-residence-trust-qprt), including the survival risk and the lost step-up.
+
+For how earlier gifts are added back at death, see [do gifts made before death count toward the estate tax](/learn/estate-tax/do-lifetime-gifts-count-toward-the-estate-tax).
+
+If your estate is close to the line, [estate tax planning near the exemption](/learn/estate-tax/estate-tax-planning-when-you-are-near-the-exemption) helps you decide how much planning is worth it.
+
+Large estates with fast-growing assets sometimes use a [grantor retained annuity trust](/learn/estate-tax/grantor-retained-annuity-trust) to pass growth to children with little or no gift tax.
+
+The executor's paperwork, including the nine-month deadline and when to file for portability only, is covered in [Form 706, the estate tax return](/learn/estate-tax/form-706-estate-tax-return).
+
+For a plain tour of deductions, gifts and trusts that lower the bill, and the myths about living trusts, read [how to reduce estate taxes legally](/learn/estate-tax/how-to-reduce-estate-taxes).
+
+Couples choosing between a trust and an election can compare them in [bypass trust vs portability](/learn/estate-tax/bypass-trust-vs-portability).
+
+If you are unsure who actually writes the check, [estate tax vs inheritance tax](/learn/estate-tax/estate-tax-vs-inheritance-tax) explains the difference.
+
 ## How we can help
 
 Most families do not owe estate tax, but many still benefit from knowing for certain. Our attorneys can explain which taxes could apply to you, check your state's rules, and help you decide whether any planning is worth the cost. Use the [plan finder](/plan-finder) to get started or book a consultation.

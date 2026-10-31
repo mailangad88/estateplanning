@@ -116,6 +116,34 @@ export const TABLES = {
       t("providerEnvelopeId", "provider_envelope_id", true), t("letter", "letter", true), t("approvedBy", "approved_by", true),
       ts("approvedAt", "approved_at", true), j("history", "history"), a("remindersSent", "reminders_sent"),
       a("documentIds", "document_ids"), j("packageSelection", "package_selection", true), j("paymentPlan", "payment_plan", true),
+      t("templateId", "template_id", true), t("spouseName", "spouse_name", true), t("spousePersonId", "spouse_person_id", true), j("attachment", "attachment", true),
+      t("documentSha256", "document_sha256", true),
+    ],
+  },
+  retainerTemplates: {
+    table: "retainer_templates",
+    columns: [
+      t("id", "id"), t("firmId", "firm_id"), t("templateKey", "template_key"), n("version", "version"), t("name", "name"),
+      a("matterTypes", "matter_types"), t("body", "body"), t("bodySha256", "body_sha256"), j("pdf", "pdf", true),
+      t("status", "status"), a("defaultFor", "default_for"), t("createdBy", "created_by"), ts("createdAt", "created_at"),
+      t("approvedBy", "approved_by", true), t("approvedByName", "approved_by_name", true), ts("approvedAt", "approved_at", true),
+    ],
+  },
+  signatures: {
+    table: "engagement_signatures",
+    columns: [
+      t("id", "id"), t("engagementId", "engagement_id"), t("leadId", "lead_id"), t("firmId", "firm_id"), t("signerRole", "signer_role"),
+      t("expectedName", "expected_name"), t("typedName", "typed_name"), t("signedByUserId", "signed_by_user_id"), t("signerPersonId", "signer_person_id"), ts("signedAt", "signed_at"),
+      t("ipPrefix", "ip_prefix", true), t("userAgent", "user_agent", true), t("letterSha256", "letter_sha256"),
+      t("attachmentSha256", "attachment_sha256", true), t("documentSha256", "document_sha256"), t("consentVersion", "consent_version"),
+      ts("consentAt", "consent_at"), b("intent", "intent"),
+    ],
+  },
+  blobs: {
+    table: "stored_blobs",
+    columns: [
+      t("id", "id"), t("sha256", "sha256"), t("contentType", "content_type"), n("sizeBytes", "size_bytes"), t("data", "data"),
+      t("firmId", "firm_id", true), t("leadId", "lead_id", true), t("createdBy", "created_by"), ts("createdAt", "created_at"),
     ],
   },
   payments: {

@@ -47,7 +47,7 @@ export function Figure({ title, desc, width, height, caption, bare, className, r
     <figure className={["v-figure", className].filter(Boolean).join(" ")}>
       {readable ? (
         <div className="v-scroll" tabIndex={0} role="group" aria-label={`${title} (scroll sideways on small screens)`}>
-          <div style={{ minWidth: Math.round(width * 0.68) }}>{svg}</div>
+          <div style={{ minWidth: Math.round(width * 0.8) }}>{svg}</div>
         </div>
       ) : (
         svg

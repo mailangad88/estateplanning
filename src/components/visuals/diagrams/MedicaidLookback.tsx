@@ -18,7 +18,7 @@ export function MedicaidLookback({ caption, bare, step }: DiagramProps) {
     >
       <Frame h={640} title="Medicaid looks back before it pays" sub="Gifts made in the window before you apply can delay coverage." />
       <S step={step} n={1}>
-        <Text x={40} y={150} size={14} weight={600} color="muted">
+        <Text x={40} y={150} size={15} weight={600} color="muted">
           Earlier years
         </Text>
         <Text x={338} y={146} size={16} weight={700} color="accentDeep">
@@ -34,7 +34,7 @@ export function MedicaidLookback({ caption, bare, step }: DiagramProps) {
         <Text x={770} y={150} size={15} weight={700}>
           You apply
         </Text>
-        <Wrap x={774} y={216} w={140} size={14} weight={600} color="clay" text="Penalty period" />
+        <Wrap x={774} y={216} w={140} size={15} weight={600} color="clay" text="Penalty period" />
       </S>
       <S step={step} n={2}>
         <Icon name="dollar" x={184} y={194} size={32} color="sage" tint="sageTint" />
@@ -42,7 +42,7 @@ export function MedicaidLookback({ caption, bare, step }: DiagramProps) {
         <Icon name="dollar" x={524} y={194} size={32} color="clay" tint="clayTint" />
         <Wrap x={540} y={274} w={210} size={15} weight={600} anchor="middle" text="A gift made inside the window" lh={19} />
         <Arrow from={{ x: 566, y: 212 }} to={{ x: 756, y: 212 }} color="clay" dashed />
-        <Wrap x={770} y={258} w={150} size={14} color="muted" text="Medicaid will not pay for care, even if you otherwise qualify" lh={18} />
+        <Wrap x={770} y={258} w={150} size={15} color="muted" text="Medicaid will not pay for care, even if you otherwise qualify" lh={19} />
       </S>
       <S step={step} n={3}>
         <Card x={40} y={340} w={880} h={64} fill="sand" border="none" />

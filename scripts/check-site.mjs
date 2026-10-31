@@ -15,7 +15,7 @@ import path from "node:path";
 
 const ROOT = path.join(process.cwd(), ".next/server/app");
 const PUBLIC = path.join(process.cwd(), "public");
-const SITE = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.example.com").replace(/\/$/, "");
+const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://familyfutureplanning.com").replace(/\/$/, "");
 
 if (!fs.existsSync(ROOT)) {
   console.error("check-site: .next/server/app not found. Run `npm run build` first.");

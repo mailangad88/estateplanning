@@ -54,8 +54,14 @@ describe("siteGraphLd", () => {
     expect(person.name).toBe(firm.attorneyName);
   });
 
+  it("publishes only the attorney's name and job title", () => {
+    const person = nodes(siteGraphLd()).find((n) => n["@id"] === ATTORNEY_ID)!;
+    expect(Object.keys(person).sort()).toEqual(["@id", "@type", "jobTitle", "name"]);
+    expect(person.jobTitle).toBe(firm.attorneyTitle);
+  });
+
   it("omits sameAs unless configured", () => {
-    if (firm.sameAs.length === 0 && firm.attorneySameAs.length === 0) {
+    if (firm.sameAs.length === 0) {
       expect(JSON.stringify(siteGraphLd())).not.toContain("sameAs");
     }
   });

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { firm, servedStates } from "@/config/firm";
+import { firm, servedStates, SITE_DISCLAIMER } from "@/config/firm";
 import { COMPLIANCE_VERSION, rulesFor, stateName } from "@/config/compliance";
 
 /** No-promise-of-results note (B4). Use next to fees, testimonials and anything describing outcomes. */
@@ -24,17 +24,17 @@ function listStates(codes: string[]): string {
  */
 export function Disclosures({ states = servedStates(), variant = "footer" }: { states?: string[]; variant?: "footer" | "page" }) {
   const rules = rulesFor(states);
-  const office = rules.needsOfficeLocality ? `${firm.officeAddress} (${firm.officeLocality})` : firm.officeAddress;
+  // The full office street address names the city and state, which also meets needsOfficeLocality.
+  const office = firm.officeAddress;
   return (
     <div className="disclosures" data-compliance-version={COMPLIANCE_VERSION} data-states={rules.states.join(",")}>
       <p>
-        <strong>{rules.webLabels.join(". ")}.</strong> {firm.firmLegalName}, {office}, {firm.phone}. Responsible attorney:{" "}
-        {firm.attorneyName}, licensed in {listStates(rules.states)} only.
+        <strong>{rules.webLabels.join(". ")}.</strong> {firm.firmLegalName}, {office}, {firm.phone},{" "}
+        <a href={`mailto:${firm.email}`}>{firm.email}</a>. Responsible attorney: {firm.attorneyName}. Our attorney network serves {listStates(rules.states)} only.
       </p>
       <p>
-        The information on this site is general education, not legal advice, and laws differ by state. Reading this site, using a
-        tool or submitting a form does not create an attorney-client relationship; that begins only when an engagement agreement is
-        signed. Please do not send confidential details through the site&apos;s forms. {RESULTS_NOTE}
+        <strong>{SITE_DISCLAIMER}</strong> Laws differ by state. An attorney-client relationship begins only when you and an attorney
+        sign an engagement agreement. Please do not send confidential details through the site&apos;s forms. {RESULTS_NOTE}
       </p>
       {rules.disclaimers.map((d) => (
         <p key={d}>{d}</p>

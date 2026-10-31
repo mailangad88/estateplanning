@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { track } from "@/components/capture";
 import { assignedVariants, useVariant } from "@/lib/experiments";
+import FormDisclaimer from "@/components/FormDisclaimer";
 
 const PROFILE_KEY = "efp-profile";
 const UNLOCKED_KEY = "efp-unlocked";
@@ -130,6 +131,7 @@ export default function MagnetOptIn({ magnet, compact = false, heading }: { magn
           Le enviaremos este recurso y consejos relacionados de vez en cuando. Puede darse de baja cuando quiera. Nunca
           vendemos su información. Solicitarlo no crea una relación abogado-cliente. <Link href="/legal/privacy">Privacidad</Link>
         </p>
+        <FormDisclaimer lang="es" />
       </form>
     );
   }
@@ -188,6 +190,7 @@ export default function MagnetOptIn({ magnet, compact = false, heading }: { magn
           : "We'll email you this resource and occasional related tips. Unsubscribe any time. We never sell your information."}{" "}
         Requesting it does not create an attorney-client relationship. <Link href="/legal/privacy">Privacy</Link>
       </p>
+      <FormDisclaimer />
     </form>
   );
 }

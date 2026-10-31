@@ -7,5 +7,9 @@ export const metadata: Metadata = {
 };
 
 export default function PlanFinderPage() {
-  return <PlanFinder servedStates={servedStates()} />;
+  return (
+    <div className="plan-finder">
+      <PlanFinder servedStates={servedStates()} />
+    </div>
+  );
 }
