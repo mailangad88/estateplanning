@@ -7,7 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import { PageHero } from "@/components/page-hero";
 import PageMeta from "@/components/PageMeta";
 import { servedStates } from "@/config/firm";
-import { getCities, getClusters, getPillar, getStateGuide } from "@/lib/library";
+import { getCities, getClusters, getPillar, getStateGuide, isClusterServed } from "@/lib/library";
 import { breadcrumbSchema, cityServiceSchema, graph } from "@/lib/schema";
 
 /**
@@ -112,7 +112,7 @@ export default async function CityPage({ params }: { params: Promise<Params> }) 
       <h2>Popular guides</h2>
       <ul className="chips">
         {getClusters()
-          .filter((cl) => getPillar(cl.slug))
+          .filter((cl) => getPillar(cl.slug) && isClusterServed(cl.slug))
           .slice(0, 8)
           .map((cl) => (
             <li key={cl.slug}><Link href={cl.url}>{cl.name}</Link></li>

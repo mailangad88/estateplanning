@@ -10,7 +10,7 @@ import { PageHero } from "@/components/page-hero";
 import LinkList from "@/components/LinkList";
 import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
-import { getCluster, getClusterArticles, getClusters, getPillar , isIndexable } from "@/lib/library";
+import { getCluster, getClusterArticles, getClusters, getPillar , isIndexable, isClusterServed } from "@/lib/library";
 import ToolsBox from "@/components/ToolsBox";
 import { siteLinksFor, toolsFor } from "@/lib/site-links";
 import { articleSchema, breadcrumbSchema, faqSchema, graph, itemListSchema } from "@/lib/schema";
@@ -50,7 +50,7 @@ export default async function PillarPage({ params }: { params: Promise<Params> }
     { name: "Learn", url: "/learn" },
     { name: cluster.name, url: cluster.url },
   ];
-  const otherClusters = getClusters().filter((c) => c.slug !== slug && getPillar(c.slug));
+  const otherClusters = getClusters().filter((c) => c.slug !== slug && getPillar(c.slug) && isClusterServed(c.slug));
 
   return (
     <article className="content">
