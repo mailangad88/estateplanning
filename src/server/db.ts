@@ -23,6 +23,7 @@ import type {
   PlanSession,
   Lawyer,
   Lead,
+  LeadReferral,
   Partner,
   PartnerGift,
   PartnerReferral,
@@ -176,6 +177,7 @@ export interface Db {
   planMfa: Collection<PlanMfaRecord>;
   planSessions: Collection<PlanSession>;
   retainerTemplates: Collection<RetainerTemplate>;
+  leadReferrals: Collection<LeadReferral>;
   /** Insert-only */
   signatures: Collection<SignatureRecord>;
   /** Insert-only, keyed by storage key */
@@ -228,6 +230,7 @@ export function createMemoryDb(): Db {
     planMfa: new MemoryCollection(),
     planSessions: new MemoryCollection(),
     retainerTemplates: new MemoryCollection(),
+    leadReferrals: new MemoryCollection(),
     signatures: new MemoryInsertOnly(),
     blobs: new MemoryInsertOnly(),
     audit: new MemoryAppendOnly(),

@@ -19,7 +19,7 @@ import type { PageApproval } from "@/server/types";
 import type { AutomationState } from "@/server/db";
 import type { FactVerification } from "@/lib/facts";
 import { familyPlanBodySchema, summarizePlan } from "@/lib/familyPlan";
-import type { FamilyPlan, FamilyPlanBodyRecord, PlanLinkUse, PlanMfaRecord, PlanSession, RetainerTemplate, SignatureRecord, StoredBlob } from "@/server/types";
+import type { FamilyPlan, FamilyPlanBodyRecord, LeadReferral, PlanLinkUse, PlanMfaRecord, PlanSession, RetainerTemplate, SignatureRecord, StoredBlob } from "@/server/types";
 import { configureFamilyPlan, consumeLink, saveOwnPlan } from "@/server/services/familyPlan";
 import {
   deletePlanAccount, exportPlanAccount, listActivity, listDevices, regenerateRecoveryCodes, resolvePlanSession, revokePlanSession, verifyPlanSignIn,
@@ -85,7 +85,7 @@ const firm2: Firm = { id: "f2", name: "Firm Two", structure: "in_firm" };
 const lawyer = (id: string, firmId: string): Required<Lawyer> => ({
   id, firmId, name: `Lawyer ${id}`, email: `${id}@x.test`, phone: "555", bio: "bio", licensedStates: ["CA", "NV"],
   matterTypes: ["new_plan", "elder_law"], specialties: ["tax"], languages: ["en", "es"], weeklyCapacity: 5,
-  activeLeadCap: 10, acceptSlaMinutes: 30, office: { lat: 1.5, lng: -2.5 }, onCall: true, active: true,
+  activeLeadCap: 10, acceptSlaMinutes: 30, office: { lat: 1.5, lng: -2.5 }, onCall: true, primaryIntake: false, active: true,
   stats: { avgAcceptMinutes: 4, showRate: 0.8, reviewScore: 4.5 },
 });
 const person: Required<Person> = {
@@ -168,6 +168,11 @@ const fixtures = {
     pdf: { name: "Standard terms.pdf", storageKey: "retainer-templates/f1/abc.pdf", sha256: "a".repeat(64), sizeBytes: 1234 },
     status: "approved", defaultFor: ["new_plan"], createdBy: "u-attorney", createdAt: T0, approvedBy: "u-attorney", approvedByName: "Lawyer lw1", approvedAt: T0,
   } satisfies Required<RetainerTemplate>,
+  leadReferrals: {
+    id: "ref1", leadId: "l1", fromLawyerId: "lw2", fromFirmId: "f2", toLawyerId: "lw1", toFirmId: "f1", assignmentId: "a1",
+    outsideName: "Dana Outside", outsideFirm: "Outside LLP", outsideContact: "555-0199", reason: "capacity", note: "full this month",
+    clientAgreed: true, referredAt: T0, referredBy: "u-attorney", outcome: "accepted", outcomeAt: T0, outcomeBy: "u-attorney", outcomeNote: "took it",
+  } satisfies Required<LeadReferral>,
   signatures: {
     id: "sig1", engagementId: "e1", leadId: "l1", firmId: "f1", signerRole: "client", expectedName: "Ann Lee", typedName: "ann lee",
     signedByUserId: "u-client", signerPersonId: "p1", signedAt: T0, ipPrefix: "203.0.113.0/24", userAgent: "Safari on iPhone", letterSha256: "c".repeat(64),
@@ -523,6 +528,27 @@ suite("postgres integration", () => {
     await expect(attorney.retainerTemplates.update("rt_1@2", { status: "draft" })).rejects.toThrow(/cannot move/);
     await attorney.retainerTemplates.update("rt_1@1", { status: "superseded" });
     expect((await platformRead().retainerTemplates.list()).length).toBe(2);
+  });
+
+  maybe("lead referrals: the sending and receiving attorney and firm admins read them, nobody else; app_user cannot write; rows are never deleted", async () => {
+    const seen = async (s: PgSession) => (await as(s).leadReferrals.list()).map((r) => r.id);
+    expect(await seen({ userId: "u-admin", role: "platform_admin" })).toEqual(["ref1"]);
+    expect(await seen({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" })).toEqual(["ref1"]); // received it
+    expect(await seen({ userId: "u-a2", role: "attorney", firmId: "f2", lawyerId: "lw2" })).toEqual(["ref1"]); // sent it
+    expect(await seen({ userId: "u-fa2", role: "firm_admin", firmId: "f2" })).toEqual(["ref1"]);
+    expect(await seen({ userId: "u-fa3", role: "firm_admin", firmId: "f3" })).toEqual([]);
+    expect(await seen({ userId: "u-a3", role: "attorney", firmId: "f1", lawyerId: "lw3" })).toEqual([]);
+    for (const role of ["intake", "marketing", "paralegal", "client"] as const) {
+      expect(await seen({ userId: `u-${role}`, role, firmId: "f1", supportsLawyerIds: ["lw1"], personId: "p1" }), role).toEqual([]);
+    }
+    const admin = as({ userId: "u-admin", role: "platform_admin" });
+    await expect(admin.leadReferrals.insert({ ...fixtures.leadReferrals, id: "ref-x" })).rejects.toThrow();
+    await expect(admin.leadReferrals.update("ref1", { outcome: "retained" })).rejects.toThrow();
+    await expect(service.leadReferrals.remove("ref1")).rejects.toThrow();
+    // the client must have agreed, and a referral names somebody
+    await expect(service.leadReferrals.insert({ ...fixtures.leadReferrals, id: "ref-y", clientAgreed: false as unknown as true })).rejects.toThrow();
+    await expect(service.leadReferrals.insert({ ...fixtures.leadReferrals, id: "ref-z", toLawyerId: undefined, toFirmId: undefined, assignmentId: undefined, outsideName: undefined })).rejects.toThrow();
+    await expect(service.leadReferrals.insert({ ...fixtures.leadReferrals, id: "ref-self", fromLawyerId: "lw1", fromFirmId: "f1" })).rejects.toThrow();
   });
 
   maybe("signature records and stored blobs are insert-only; clients read their own signatures, nobody reads blobs directly", async () => {

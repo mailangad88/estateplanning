@@ -33,6 +33,8 @@ const lawyers: Lawyer[] = [
     activeLeadCap: 25,
     acceptSlaMinutes: 30,
     onCall: true,
+    // Takes every incoming lead first and refers on the rest (in production: Sargun's row).
+    primaryIntake: true,
     active: true,
     stats: { avgAcceptMinutes: 12, showRate: 0.82, reviewScore: 4.9 },
   },
