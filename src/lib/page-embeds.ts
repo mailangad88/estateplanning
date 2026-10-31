@@ -37,6 +37,7 @@ const CLUSTER_DOCS: Record<string, PlanDocKey[]> = {
   "estate-tax": ["trust", "beneficiaries"],
   "what-if": ["will", "trust", "financialPoa", "healthcareProxy"],
   illinois: ["will", "trust", "financialPoa", "healthcareProxy", "transferOnDeath", "guardian"],
+  "new-jersey": ["will", "trust", "financialPoa", "healthcareProxy", "transferOnDeath", "guardian"],
 };
 
 /** The /decide guide that answers "which one should I pick?" for a cluster, refined by slug words. */
@@ -58,6 +59,7 @@ const CLUSTER_DECIDE: Record<string, string> = {
   "estate-tax": "types-of-trusts",
   "what-if": "ways-to-avoid-probate",
   illinois: "ways-to-avoid-probate",
+  "new-jersey": "ways-to-avoid-probate",
 };
 const SLUG_DECIDE: [RegExp, string][] = [
   [/house|home|deed|real-estate|transfer-on-death-instrument/, "how-to-leave-your-house-to-your-children"],

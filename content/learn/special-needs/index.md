@@ -157,6 +157,68 @@ Include the person with a disability in the conversation as much as they are abl
 - [Writing a letter of intent for a loved one with a disability](/learn/special-needs/letter-of-intent): what to include and how to keep it current.
 - [Turning 18 with a disability: guardianship and its alternatives](/learn/special-needs/guardianship-alternatives-for-adult-children): the legal options and SSI changes at 18.
 
+## More questions people ask
+
+If a notice already arrived, [what to do about an SSI overpayment after an inheritance](/learn/special-needs/ssi-overpayment-after-an-inheritance) explains the 60-day appeal, the waiver form and how repayment is withheld.
+
+If a family business or rental property is part of what you want to leave, [whether a special needs trust can own a business or rental property](/learn/special-needs/can-a-special-needs-trust-own-a-business-or-rental-property) covers SSI effects, trustee conflicts and buyout options.
+
+If a trustee has moved away or the remainder beneficiaries have changed, [whether you can change or revoke a special needs trust](/learn/special-needs/can-you-change-or-revoke-a-special-needs-trust) explains what parents can amend and what stays locked.
+
+Before you book a first meeting, [what to ask a special needs planning attorney and what to bring](/learn/special-needs/what-to-ask-a-special-needs-planning-attorney-and-what-to-bring) gives a document checklist and the questions worth asking.
+
+If a policy will fund the trust, [life insurance for a special needs trust](/learn/special-needs/life-insurance-for-a-special-needs-trust) covers the beneficiary form, who should own the policy, and term versus permanent coverage.
+
+For a grown child with mental illness or addiction, [a trust for an adult child with mental illness or addiction](/learn/special-needs/trust-for-an-adult-child-with-mental-illness-or-addiction) explains when to use a special needs, discretionary or spendthrift trust and who should serve as trustee.
+
+Illinois families can read [special needs trust rules in Illinois](/learn/special-needs/special-needs-trust-rules-in-illinois) for how ABLE, DHS services, the PUNS list and payback apply locally.
+
+In the year before the birthday, [what to do when your child with a disability turns 18](/learn/special-needs/what-to-do-when-a-child-with-a-disability-turns-18) gives a timeline for SSI, guardianship choices and signed releases.
+
+If the person is over 65, [special needs trusts for people over 65](/learn/special-needs/special-needs-trusts-for-people-over-65-dementia-and-a-spouse-on-medicaid) explains the age cutoff, dementia and leaving money to a spouse on Medicaid.
+
+To budget for a trust, [how much a special needs trust costs to set up and keep running](/learn/special-needs/how-much-a-special-needs-trust-costs-to-set-up-and-keep-running) covers the one-time and yearly costs.
+
+Once you have decided on an ABLE account, [choosing and funding an ABLE account](/learn/special-needs/choosing-and-funding-an-able-account-state-plans-fees-and-529-rollovers) covers plan fees, 529 rollovers and who can contribute.
+
+To see what Social Security counts and ignores, [what counts as income and resources for SSI](/learn/special-needs/what-counts-as-income-and-resources-for-ssi) covers resources, in-kind support, deeming and how SSI differs from SSDI and Medicaid.
+
+If you are unsure whether your child needs a special needs trust, [who qualifies as disabled and how to plan by diagnosis](/learn/special-needs/who-qualifies-as-disabled-and-planning-by-diagnosis) explains Social Security's definition and the alternatives.
+
+For planning where an adult with a disability will live, [housing and Medicaid waivers for adults with disabilities](/learn/special-needs/housing-and-medicaid-waivers-for-adults-with-disabilities) covers waivers, waiting lists, group homes and housing vouchers.
+
+Retirement money needs its own handling, and [naming a special needs trust as IRA or 401(k) beneficiary](/learn/special-needs/special-needs-trust-as-ira-beneficiary) explains the payout rules and the conduit versus accumulation choice.
+
+To plan who steps in after you, [who will care for your child or sibling after you are gone](/learn/special-needs/who-cares-for-a-person-with-a-disability-after-parents-die) covers naming a guardian, asking a sibling and what changes for benefits.
+
+If you may need nursing home Medicaid yourself, [transferring a house or assets to a disabled child without a penalty](/learn/special-needs/medicaid-transfer-exceptions-for-a-disabled-child) explains the federal exceptions and their risks.
+
+Grandparents who want to help should read [how to leave money to a grandchild with special needs](/learn/special-needs/grandparents-leaving-money-to-a-grandchild-with-special-needs), including how to tell other relatives.
+
+On legal capacity, [whether an adult with a disability can make a will, sign a power of attorney or marry](/learn/special-needs/capacity-and-marriage-for-adults-with-disabilities) explains each standard and how marriage affects SSI.
+
+If someone on SSI is about to receive money, [what to report and how to protect their benefits](/learn/special-needs/ssi-recipient-inheritance-gift-or-settlement-what-to-do) lays out the steps.
+
+Choosing who runs the trust is covered in [who should be trustee of a special needs trust](/learn/special-needs/who-should-be-trustee-of-a-special-needs-trust), including successors and a trust protector.
+
+For the tax side, [how a special needs trust is taxed](/learn/special-needs/how-a-special-needs-trust-is-taxed) covers the tax ID, who files and the dependent question.
+
+If the family home is part of the plan, [can a special needs trust own a house](/learn/special-needs/can-a-special-needs-trust-own-a-house) covers titling, taxes, SSI shelter rules and what happens at your death.
+
+Trustees wondering about a car, a trip, a pet or a caregiver can use [what special needs trust funds can pay for](/learn/special-needs/what-can-special-needs-trust-funds-pay-for) as a working list.
+
+To size the trust, [how much to put in a special needs trust](/learn/special-needs/how-much-to-put-in-a-special-needs-trust) walks through estimating lifetime costs and funding the gap.
+
+If the money is small or no relative can serve as trustee, [pooled special needs trusts](/learn/special-needs/pooled-special-needs-trusts) explains how nonprofit-run (d)(4)(C) trusts compare with a stand-alone (d)(4)(A) trust.
+
+To see which trust payments reduce SSI and which do not, read [how a special needs trust affects SSI and Medicaid](/learn/special-needs/special-needs-trust-ssi-and-medicaid-rules).
+
+For what the state can claim and who gets the remainder after the beneficiary dies, see the [special needs trust payback provision](/learn/special-needs/special-needs-trust-payback-provision).
+
+If you want to leave money to a disabled child, adult sibling or other relative, [leaving an inheritance without losing benefits](/learn/special-needs/leaving-an-inheritance-to-a-disabled-child-or-sibling) shows how.
+
+For the steps from first meeting to funding, and whether you need a lawyer, see [how to set up a special needs trust](/learn/special-needs/how-to-set-up-a-special-needs-trust).
+
 ## How we can help
 
 Special needs planning works best when the legal documents, the benefits rules and the family's actual daily life are designed together. Our attorneys can draft a trust for your state, coordinate beneficiary designations and prepare decision-making documents. You can start with our [plan finder](/plan-finder) or book a consultation to talk through your family's situation.

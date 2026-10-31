@@ -178,6 +178,58 @@ Three things go wrong most often with first-time planners. They sign a will and 
 
 Curious what happens when a plan is missing or out of date? Our guide to [what happens if you put off estate planning](/learn/what-if) walks through the most common scenarios.
 
+## More questions people ask
+
+If you have lived in or own property in another state, [what is community property and does it apply in Illinois or New Jersey](/learn/basics/what-is-community-property-and-does-it-apply-in-illinois-or-new-jersey) explains how marital property rules differ.
+
+When a deed or account is held jointly, [what right of survivorship means and whether it overrides your will](/learn/basics/what-does-right-of-survivorship-mean-and-what-does-it-override) shows where it helps and where it backfires.
+
+For the personal side of a plan, [what an ethical will is and how to write a legacy letter](/learn/basics/what-is-an-ethical-will-and-how-to-write-a-legacy-letter) gives prompts and an example.
+
+To keep a plan from being overturned, [what undue influence is and how to protect a will from it](/learn/basics/what-is-undue-influence-in-estate-planning) lists the warning signs and safeguards.
+
+To amend or cancel documents correctly, [how to change or revoke your estate plan](/learn/basics/how-to-change-or-revoke-your-estate-plan-step-by-step) goes document by document.
+
+To know what the first meeting is like, [what happens at an estate planning appointment](/learn/basics/what-happens-at-an-estate-planning-appointment-and-what-the-attorney-will-ask) lists the questions and why they are asked.
+
+If you are wondering how soon you could be finished, [how long it takes to create an estate plan](/learn/basics/how-long-does-it-take-to-create-an-estate-plan) gives a stage-by-stage timeline and what slows it down.
+
+If you keep meaning to start, [why people put off estate planning](/learn/basics/why-people-put-off-estate-planning-and-how-to-start-this-week) answers each common excuse and offers a seven-day plan to begin.
+
+To see how the documents fit together for your household, [what an estate plan looks like for a single person, a couple or a single parent](/learn/basics/sample-estate-plans-by-household-type) gives side-by-side examples.
+
+If you look after an aging parent, [estate planning when you are the family caregiver](/learn/basics/estate-planning-when-you-are-a-family-caregiver) covers the plan you need for yourself.
+
+If a document's words are tripping you up, [testator, settlor, fiduciary and decedent explained](/learn/basics/estate-planning-words-who-is-who-in-a-plan) defines each role and gift in plain English.
+
+To see why your house can be in your estate but not in probate, read [what an estate is: probate, gross and taxable](/learn/basics/what-an-estate-is-probate-gross-and-taxable-estate).
+
+If someone mentioned a "five year rule" or "seven year rule," [the 3, 5 and 7 year rules explained](/learn/basics/the-3-5-and-7-year-rules-in-estate-planning) shows which are real in the U.S. and which clock applies to your gift.
+
+To set realistic expectations, [what an estate plan can and cannot do](/learn/basics/what-an-estate-plan-can-and-cannot-do) covers taxes, creditors, life insurance and the honest pros and cons.
+
+If you or your spouse are not U.S. citizens, [estate planning for immigrants and non-citizens](/learn/basics/estate-planning-for-immigrants-and-non-citizens) explains which documents apply and where the tax rules differ.
+
+To spare your family guesswork, read [how to plan your own funeral in advance](/learn/basics/plan-your-own-funeral-in-advance), including why a will is the wrong place for funeral wishes.
+
+For the whole paper file, not just the will, [how to organize your estate planning documents](/learn/basics/how-to-organize-your-estate-planning-documents) shows who should hold which copy.
+
+If you are weighing a do-it-yourself plan, [can you make an estate plan without a lawyer](/learn/basics/making-an-estate-plan-without-a-lawyer) covers what is legal and where forms fall short.
+
+State law drives most of your plan, and [how estate planning differs by state](/learn/basics/how-estate-planning-differs-by-state) explains which rules change and what to do after a move.
+
+To decide how much plan you need, [basic vs. comprehensive estate plans](/learn/basics/basic-vs-comprehensive-estate-plan) compares the two and says which document matters most.
+
+If you are unsure which professional you need, [estate planning vs. elder law, probate and financial planning](/learn/basics/estate-planning-vs-elder-law-probate-and-financial-planning) sorts out who does what.
+
+If you want to sign remotely, [signing estate planning documents electronically or with a remote notary](/learn/basics/sign-estate-planning-documents-electronically) explains which documents allow it.
+
+If you are helping a parent, [whether you can make an estate plan for someone else](/learn/basics/can-you-make-an-estate-plan-for-someone-else) covers limits, attending the meeting and undue influence.
+
+To list what you own, [how to inventory your assets and value your estate](/learn/basics/how-to-inventory-your-assets-and-value-your-estate) walks through it step by step.
+
+If you think you own too little to plan, [whether you need an estate plan with few assets](/learn/basics/do-i-need-an-estate-plan-with-few-assets) covers renters, joint owners and beneficiary forms.
+
 ## How we can help
 
 If you are not sure where to begin, the [plan finder](/plan-finder) asks a few questions about your family and property and suggests which documents usually matter for your situation. When you are ready to talk it through, you can book a consultation with one of our attorneys, who can explain how the rules in your state apply and what a plan would involve.

@@ -162,6 +162,70 @@ Owners who work alone have the opposite problem: no one else knows the business.
 
 Related pillars worth reading alongside this one: [trusts](/learn/trusts), [power of attorney](/learn/power-of-attorney), [estate and gift taxes](/learn/estate-tax) and [probate](/learn/probate).
 
+## More questions people ask
+
+If you own a company in Illinois or New Jersey, [Illinois estate tax and New Jersey inheritance tax on a family business](/learn/business-owners/illinois-estate-tax-and-new-jersey-inheritance-tax-on-a-family-business) shows what each state would charge the business and the heir, with worked examples and where the cash comes from.
+
+If the building matters as much as the company, [should business real estate be in a separate LLC](/learn/business-owners/should-business-real-estate-be-owned-separately-from-the-operating-company) compares one entity with two, with a worked example and the multi-state issues.
+
+If there is no will at all, [who inherits a business when the owner dies without a will](/learn/business-owners/who-inherits-a-business-when-the-owner-dies-without-a-will) shows how intestacy treats LLC interests, shares and sole proprietorships.
+
+When a co-owner is alive but unable to work, [how a disability buyout provision works](/learn/business-owners/disability-buyout-provision-when-a-business-partner-becomes-incapacitated) explains the trigger, price and funding.
+
+If you are not sure whether your will or your company paperwork controls the stake, [does an operating agreement override your will](/learn/business-owners/does-an-operating-agreement-override-your-will) walks through a worked example.
+
+To pick a successor and tell your family, [how to choose who will run your business after you](/learn/business-owners/how-to-choose-who-will-run-your-business-after-you-family-or-outside-manager) compares family, employees and outside managers.
+
+To see how creditors can and cannot reach an LLC interest, [what a charging order is](/learn/business-owners/what-is-a-charging-order-and-how-it-affects-llc-interests-and-heirs) covers the protection and its limits for owners and heirs.
+
+Before you budget, [how much business succession planning costs and how long it takes](/learn/business-owners/how-much-does-business-succession-planning-cost-and-how-long-does-it-take) breaks down legal, valuation and insurance costs.
+
+For the first week, not the first year, [a business continuity plan covering logins, domains and customer data](/learn/business-owners/business-continuity-plan-logins-domains-and-customer-data) shows what to document.
+
+If you plan to leave the company to your husband or wife, [when your spouse inherits the business](/learn/business-owners/when-your-spouse-inherits-the-business-keep-run-or-sell) compares keeping, managing and selling.
+
+If an owner's marriage ends, [what happens to a business when its owner divorces](/learn/business-owners/divorce-and-the-family-business) covers valuation, buyouts and the plan changes to make.
+
+For the practical first month, [who runs the business and signs the checks after the owner dies](/learn/business-owners/first-30-days-after-a-business-owner-dies) covers bank access, payroll and authority.
+
+If you are weighing a sale against a handoff, [selling your business or passing it on](/learn/business-owners/selling-your-business-or-passing-it-to-family-or-employees) compares the five exits, the tax difference and how a key employee can buy in over time.
+
+When the company is nearly everything you own, [planning for a business-heavy estate](/learn/business-owners/when-the-business-is-most-of-your-estate) covers equalizing children, cash for bills and taxes, and the powers a surviving spouse needs.
+
+For the short list of essentials, [the documents every business owner needs](/learn/business-owners/documents-every-business-owner-needs) covers the will, power of attorney, disability coverage and the access file that keeps the company running.
+
+If you own rentals, [what happens to rental properties when a landlord dies](/learn/business-owners/landlord-estate-plan-rental-properties-llc-or-trust) compares a living trust and an LLC and covers deposits, leases and loans.
+
+Self-employed writers, designers and consultants can read [whether a freelancer needs an estate plan](/learn/business-owners/freelancer-estate-plan-royalties-copyrights-and-client-work) to see who inherits royalties, copyrights and unpaid invoices.
+
+Owners of licensed or franchised businesses can see [what happens to a franchise, restaurant or trucking company](/learn/business-owners/franchise-restaurant-or-trucking-company-when-the-owner-dies) when permits and approvals do not pass by will.
+
+If your buy-sell plan is still undecided, [cross-purchase versus entity redemption](/learn/business-owners/cross-purchase-vs-entity-redemption) compares the structures, premium deductibility, and the Connelly estate tax trap.
+
+If you own S corporation stock, [what happens when a trust inherits the shares](/learn/business-owners/s-corporation-shares-inherited-by-a-trust) explains QSST and ESBT elections and the deadlines.
+
+With no signed agreement, [what to do when a business partner dies](/learn/business-owners/business-partner-dies-without-a-buy-sell-agreement) covers the first month and the buyout options.
+
+For licensed owners, [what happens to a professional practice at the owner's death](/learn/business-owners/professional-practice-owner-dies) covers medical, law and other practices.
+
+If you signed for loans or a lease, [business debts and personal guaranties at death](/learn/business-owners/personal-guaranties-and-business-debts-at-death) explains what the estate owes and how to protect your family.
+
+For the tax side, [taxes when a family business passes to heirs](/learn/business-owners/taxes-when-a-family-business-passes-to-heirs) covers estate tax, the step-up, Section 754 and selling afterward.
+
+If you are weighing a sale to your employees, [ESOP basics for business owners](/learn/business-owners/esop-basics-for-business-owners) explains how it works, the tax rules and where it fits in your estate plan.
+
+For farms and ranches, [farm succession planning](/learn/business-owners/farm-succession-planning) covers fairness to off-farm children, special tax rules and handing over management.
+
+If you run the business on your own with no entity, [what happens to a sole proprietorship at death](/learn/business-owners/what-happens-to-a-sole-proprietorship-at-death) explains who can act, what the estate owes and how to leave a plan.
+
+To see whether a revocable trust can hold your LLC, shares or business assets, including the S corporation trust rules, read [can I put my business in a living trust](/learn/business-owners/can-i-put-my-business-in-a-living-trust).
+
+For cash to keep the company steady when a vital owner or employee is lost, see [key person insurance](/learn/business-owners/key-person-insurance) and how it differs from buy-sell funding.
+
+[How a business is valued for estate tax](/learn/business-owners/how-a-business-is-valued-for-estate-tax) covers fair market value, appraisal methods, discounts and why the number matters even below the exemption.
+
+If you want to start the transfer during your lifetime, [gifting business interests to your children](/learn/business-owners/gifting-business-interests-to-children) explains gift tax, carryover basis, discounts and family limited partnerships.
+
 ## How we can help
 
 A business owner's plan involves your company documents, your personal estate documents, insurance and tax advice. Our attorneys can look at these together and identify where they conflict. You can use the [plan finder](/plan-finder) to see which documents fit your situation, or book a consultation to walk through your business and your family.

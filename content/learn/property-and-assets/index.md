@@ -148,6 +148,70 @@ Real estate and special assets need a hands-on administrator, and the person nam
 
 For a larger picture, start with our guide to [estate planning basics](/learn/basics) and the list of [core estate planning documents](/learn/basics/estate-planning-documents-checklist). If you are combining families, our [blended families guide](/learn/blended-families) explains how the house can be shared between a spouse and children, and [who gets the house in a second marriage](/learn/blended-families/family-home-in-second-marriage) covers it in depth.
 
+## More questions people ask
+
+When the home is titled like a vehicle or sits on a rented lot, [what happens to a mobile or manufactured home when the owner dies](/learn/property-and-assets/what-happens-to-a-mobile-or-manufactured-home-when-the-owner-dies) explains the title, park and loan issues.
+
+For units with dues and a board, [what happens to a condo or co-op apartment when the owner dies](/learn/property-and-assets/what-happens-to-a-condo-or-co-op-when-the-owner-dies) covers assessments, liens and board approval.
+
+Before listing an inherited or widowed home, [capital gains when you sell an inherited house or a house after a spouse dies](/learn/property-and-assets/capital-gains-when-you-sell-an-inherited-house-or-a-house-after-a-spouse-dies) shows the numbers.
+
+Once a deed is in a trust, [selling or refinancing a house in your living trust](/learn/property-and-assets/can-you-sell-or-refinance-a-house-that-is-in-your-living-trust) explains who signs and what moving out changes.
+
+If an heir receives SSI or Medicaid, [does inheriting a house affect SSI or Medicaid](/learn/property-and-assets/does-inheriting-a-house-affect-ssi-or-medicaid) covers the resource limit and options.
+
+When only one child will keep the house, [how to leave the house to one child and money to another](/learn/property-and-assets/how-to-leave-the-house-to-one-child-and-money-to-another) shows ways to even it out.
+
+If someone suggested a life estate, [what a life estate deed is and when it ends](/learn/property-and-assets/life-estate-deed-explained-remainder-interest-and-when-it-ends) explains the remainder interest, taxes and risks.
+
+To put a spouse on title, [how to add your spouse to your deed](/learn/property-and-assets/how-to-add-your-spouse-to-your-deed) gives the steps, the Illinois and New Jersey wording and the second-marriage risks.
+
+If one heir wants to keep the house, [buying out a sibling or forcing a partition](/learn/property-and-assets/buying-out-a-sibling-or-co-owner-of-an-inherited-house-or-forcing-a-partition) explains pricing, financing and court costs.
+
+When there is no will, [who gets the furniture, car and family photos](/learn/property-and-assets/who-gets-the-furniture-car-and-family-photos-when-there-is-no-will) explains how belongings pass and how families divide them.
+
+To weigh holding costs against a sale, use the [keep or sell worksheet for an inherited house](/learn/property-and-assets/should-you-keep-or-sell-an-inherited-house-a-carrying-cost-and-timing-worksheet).
+
+Before you leave or accept a house, [check for deed restrictions, flood risk and contamination](/learn/property-and-assets/hidden-property-problems-deed-restrictions-flood-and-contamination) and learn what an heir can do about a problem.
+
+If you own a second home abroad, [what happens to a vacation home in another country](/learn/property-and-assets/vacation-home-in-another-country-when-the-owner-dies) explains local inheritance law, U.S. tax and the second will.
+
+To decide who takes your animal and who steps in first, read [choosing a pet caretaker and a backup](/learn/property-and-assets/choosing-a-pet-caretaker-and-a-backup-in-your-estate-plan).
+
+If you are worried the county will raise the bill after a transfer, [property tax reassessment and transfer tax when a house passes to family](/learn/property-and-assets/property-tax-reassessment-and-transfer-tax-when-a-house-passes-to-family) explains the local rules to check.
+
+When the deed and the money do not match, [who owns the house when a parent helped pay, you bought before marriage, or you live with a partner](/learn/property-and-assets/who-owns-the-house-when-a-parent-helped-pay-or-you-bought-before-marriage) shows what controls.
+
+When one heir is covering the bills, [who pays for an inherited house and how to be reimbursed](/learn/property-and-assets/who-pays-for-an-inherited-house-upkeep-taxes-and-reimbursing-the-sibling-who-fronts-it) covers the estate stage, the co-owner stage and the paperwork.
+
+To choose the right paper for a transfer, read [quitclaim, warranty, grant and trustee deeds](/learn/property-and-assets/types-of-deeds-quitclaim-warranty-grant-and-trustee-deeds) and what each one promises.
+
+If a parent may have owned oil, gas or other minerals, [what happens to mineral rights and royalties at death](/learn/property-and-assets/mineral-rights-and-royalties-after-the-owner-dies) explains how heirs claim them.
+
+For a spouse's right to stay and what the tax and creditor exemptions do, see [homestead rights at death](/learn/property-and-assets/homestead-rights-at-death-surviving-spouse-and-the-family-home).
+
+If the house has a loan on it, [what happens to a mortgage when the homeowner dies](/learn/property-and-assets/mortgage-when-the-homeowner-dies) explains who pays, what the lender can demand, and what to do with underwater and reverse mortgages.
+
+When a deed is lost, misspelled or still names someone who died, [how to fix title problems on inherited property](/learn/property-and-assets/fixing-title-problems-on-inherited-property) shows how to find the owner of record and pick the right repair.
+
+To keep a farm, cabin or ancestral land together, [how to keep family land in the family](/learn/property-and-assets/keeping-family-land-in-the-family) covers trusts, LLCs, easements, mineral rights and the written rules that make them work.
+
+For the assets people forget to mention, [what your will covers: timeshares, storage units, safe deposit boxes and farm equipment](/learn/property-and-assets/what-your-will-covers-timeshares-storage-units-safe-deposit-boxes) explains the catch attached to each.
+
+Before you deed your home to a child, [giving your house to your child now](/learn/property-and-assets/giving-your-house-to-your-child-taxes-and-trade-offs) compares gift tax, property tax, basis and Medicaid effects with selling or leaving it at death.
+
+If you co-own a house with a spouse, partner or sibling, [joint tenants vs. tenants in common vs. tenants by the entirety](/learn/property-and-assets/joint-tenants-vs-tenants-in-common-vs-entirety) compares what each form does at death and in a dispute.
+
+For who gets Mom's ring and the piano, [leaving jewelry, heirlooms and sentimental items](/learn/property-and-assets/leaving-jewelry-heirlooms-and-sentimental-items) explains specific gifts, separate memorandums and fair ways to divide belongings.
+
+When a vehicle is titled in one name, [transferring a car, boat, motorcycle or RV after death](/learn/property-and-assets/transfer-a-car-boat-or-rv-after-death) shows which papers and procedures apply.
+
+If you plan to rent an inherited house, [deductions, depreciation and 1031 exchanges on inherited rental property](/learn/property-and-assets/inherited-rental-property-taxes) explains how the tax treatment works.
+
+If a house sits empty after a death, [insurance, repairs and squatters in a vacant inherited house](/learn/property-and-assets/vacant-inherited-house-insurance-repairs-squatters) covers the first weeks and who pays.
+
+To take a name off a title, [removing a name from a deed](/learn/property-and-assets/remove-a-name-from-a-deed) covers living owners, deceased owners and ex-spouses, plus the mortgage catch.
+
 ## How we can help
 
 Property is where good intentions and legal reality most often part ways. Our attorneys can review your deeds and accounts, explain how your state treats each asset, and set up a plan that puts the right things in the right hands. Start with the [plan finder](/plan-finder) or book a consultation.

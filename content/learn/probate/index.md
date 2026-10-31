@@ -152,6 +152,80 @@ If you are dealing with a death now, start with [what probate is](/learn/probate
 
 State rules matter a great deal here. If you want to see how probate works where you live, browse our state guides, for example [Texas](/estate-planning/texas), [California](/estate-planning/california), [Florida](/estate-planning/florida) and [New York](/estate-planning/new-york).
 
+## More questions people ask
+
+To keep the bill down, [the cheapest way to settle an estate in Illinois or New Jersey](/learn/probate/cheapest-way-to-settle-an-estate-in-illinois-or-new-jersey) ranks the options from affidavit to full probate.
+
+If a death has already happened, [how to avoid probate after someone has died](/learn/probate/how-to-avoid-probate-after-someone-has-died) shows which assets skip court and which cannot.
+
+To pick the right court, [which county do you file probate in](/learn/probate/which-county-do-you-file-probate-in) covers domicile, nursing home stays and second homes.
+
+If something turns up after the case ends, [can you reopen a closed probate estate](/learn/probate/can-you-reopen-a-closed-probate-estate) explains petitions, small estate shortcuts and late claims.
+
+If a bank turns down the paperwork, [what to do when a bank refuses a small estate affidavit](/learn/probate/what-to-do-when-a-bank-refuses-a-small-estate-affidavit) explains how to push back and when to open probate.
+
+For the clocks that start at death, see [how long you have to file probate in Illinois or New Jersey](/learn/probate/how-long-do-you-have-to-file-probate-in-illinois-or-new-jersey).
+
+Once you have letters, [how to open an estate bank account](/learn/probate/how-to-open-an-estate-bank-account) covers what the bank needs and what to pay from it.
+
+If you are waiting on your share, [can heirs get money before probate ends](/learn/probate/can-heirs-get-money-before-probate-ends) explains partial distributions and why executors hold back a reserve.
+
+To learn who is allowed to start a case and who the court will appoint, read [who can open a probate case](/learn/probate/who-can-open-a-probate-case).
+
+To see how two states differ in practice, [Illinois and New Jersey probate compared](/learn/probate/illinois-and-new-jersey-probate-compared) lines up the courts, notice rules, small estate shortcuts and death taxes.
+
+When debts exceed assets, [what happens when an estate owes more than it has](/learn/probate/what-happens-when-an-estate-owes-more-than-it-has) explains who gets paid and what the family owes.
+
+If the will was signed in, or the person lived in, a different state, [probating a will from another state](/learn/probate/probating-a-will-from-another-state) explains which court takes the case.
+
+If you have already added a name to an account or signed a deed, [does a joint account, power of attorney or life estate avoid probate](/learn/probate/probate-shortcuts-that-do-not-work) shows where each shortcut fails.
+
+To check whether a case exists, [how to look up a probate case](/learn/probate/how-to-look-up-a-probate-case) explains which court to search, how to search by name and what to do when nothing turns up.
+
+When there is no will or the family tree is unclear, [how to prove you are an heir](/learn/probate/how-to-prove-you-are-an-heir) covers the records, heirship hearings and missing relatives.
+
+Surviving spouses and young children have claims that rank ahead of most creditors, explained in [family allowance, homestead and exempt property in probate](/learn/probate/family-allowance-and-homestead-in-probate).
+
+If the executor is also an heir, [serving as both executor and beneficiary](/learn/probate/executor-who-is-also-a-beneficiary) explains the conflict rules on buying property, early payouts and lawsuits.
+
+If you received a court notice, [what happens at a probate hearing](/learn/probate/what-happens-at-a-probate-hearing) explains what the judge decides and whether beneficiaries need to attend.
+
+To dispute a will or an executor in court, [how to object to probate](/learn/probate/how-to-object-to-probate) covers standing, grounds, caveats and deadlines.
+
+When an estate seems stuck, [what to do when the executor is not doing their job](/learn/probate/executor-not-doing-their-job) lays out the escalation from a letter to a court petition.
+
+For specific loans, [what happens to a mortgage, car loan, student loans and credit cards after death](/learn/probate/what-happens-to-a-mortgage-car-loan-and-student-loans-after-death) takes each debt type in turn.
+
+If the court forms offer several tracks, [formal vs informal probate](/learn/probate/formal-vs-informal-probate) explains supervised, independent and summary options.
+
+Married couples in community property states can read [community property with right of survivorship](/learn/probate/community-property-with-right-of-survivorship) to see how one form of title skips probate and keeps a full tax basis step-up.
+
+Executors wondering when it is safe to pay heirs should read [the probate creditor claims period](/learn/probate/probate-creditor-claims-period).
+
+Before you sign with a lawyer, [how probate lawyers charge and what a fee agreement should say](/learn/probate/probate-lawyer-fee-agreements) explains hourly, flat and percentage fees.
+
+If you are choosing between a deed and a trust for your home, [is a TOD deed better than a trust](/learn/probate/is-a-tod-deed-better-than-a-trust) shows where the deed works and where it fails.
+
+To learn how an enhanced life estate keeps you in control while skipping probate, read [lady bird deed explained](/learn/probate/lady-bird-deed-explained).
+
+To match your house to a deed, trust or joint title based on your family and state, see [how to avoid probate on your house](/learn/probate/avoid-probate-on-your-house).
+
+The court paper that gives an executor power to act is covered in [letters testamentary and letters of administration](/learn/probate/letters-testamentary-and-letters-of-administration).
+
+Executors who must list assets and report to the court should read [probate inventory and estate accounting](/learn/probate/probate-inventory-and-estate-accounting).
+
+Having a will does not decide whether a family goes to court, so [is probate always required](/learn/probate/is-probate-always-required) explains how asset titles decide it.
+
+To see what a stranger can read in an estate file and how to limit it, read [is probate public record](/learn/probate/is-probate-public).
+
+If the executor dies, declines or was never named, [what happens if there is no executor](/learn/probate/what-happens-if-there-is-no-executor) explains who the court appoints.
+
+For who may sign the deed and what a title company will ask for, see [can heirs sell the house during probate](/learn/probate/can-heirs-sell-the-house-during-probate).
+
+[What happens to a deceased person's bank account](/learn/probate/what-happens-to-a-deceased-persons-bank-account) covers freezes, affidavits, joint and POD accounts and finding unclaimed money.
+
+If a family has let probate sit, [what happens if you ignore probate](/learn/probate/what-happens-if-you-ignore-probate) lists the costs and how to catch up.
+
 ## How we can help
 
 Probate is manageable once you know which rules apply to you. If you are an executor or heir, an estate planning attorney can explain your state's process and help you avoid mistakes. If you want to keep your own family out of court, try our [plan finder](/plan-finder) to see which documents fit your situation, or book a consultation to talk through your options at your own pace.

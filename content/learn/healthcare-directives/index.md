@@ -159,6 +159,64 @@ State law controls the name of the documents, the number of witnesses, who may n
 
 Healthcare directives handle medical decisions and information. The [durable financial power of attorney](/learn/power-of-attorney/durable-financial-power-of-attorney) handles money. A will or [trust](/learn/trusts) handles property after death. Together they form a complete incapacity and legacy plan. If you have not yet put these in place, our guide on [what estate planning is](/learn/basics/what-is-estate-planning) shows how to start. Parents of minor children should also consider [naming a guardian](/learn/guardianship), and families of a loved one with disabilities may want to read our [special needs planning guide](/learn/special-needs).
 
+## More questions people ask
+
+If a form called a MOLST turns up in your family's paperwork, [what a MOLST form is and how it differs from a POLST](/learn/healthcare-directives/what-is-a-molst-form-and-how-it-differs-from-a-polst) explains the naming and what Illinois and New Jersey use.
+
+When a doctor or religiously affiliated hospital objects to an instruction, [what a conscience clause is and what it lets a provider decline](/learn/healthcare-directives/what-is-a-conscience-clause-and-can-a-doctor-decline-your-living-will) explains the transfer duty and how to check policies in advance.
+
+To plan for the first agent being unavailable, [should I name an alternate healthcare agent](/learn/healthcare-directives/should-i-name-an-alternate-healthcare-agent-and-can-i-remove-one) covers backups, triggers and how to replace an agent.
+
+For women of childbearing age, [does a living will cover pregnancy](/learn/healthcare-directives/does-a-living-will-cover-pregnancy) compares the Illinois and New Jersey rules.
+
+For what makes a living will enforceable and where it falls short, see [is a living will legally binding](/learn/healthcare-directives/is-a-living-will-legally-binding).
+
+To check whether a friend, nurse or doctor is allowed to serve, read [who can be your healthcare agent](/learn/healthcare-directives/can-a-doctor-friend-or-nurse-be-your-healthcare-agent).
+
+When a patient cannot decide, [who can sign a DNR for someone else](/learn/healthcare-directives/who-can-sign-a-dnr-for-someone-else) explains the roles of agent, surrogate and family.
+
+For the price side, [how much a living will costs](/learn/healthcare-directives/how-much-does-a-living-will-cost) compares free forms, notary fees and attorney fees.
+
+To make sure your donor registration and your living will do not conflict, read [organ donation and your advance directive](/learn/healthcare-directives/organ-donation-and-your-advance-directive).
+
+If a relative needs to see your test results or call your doctor, [medical portal access for an adult child or family member](/learn/healthcare-directives/medical-portal-access-for-an-adult-child-or-family-member) compares proxy access, a HIPAA release and a healthcare agent.
+
+Married couples who assume the spouse decides by default should read [do married couples need advance directives](/learn/healthcare-directives/do-married-couples-need-advance-directives) for the gaps in that default.
+
+Before an overseas trip or a move abroad, [is your US advance directive valid when you travel or live abroad](/learn/healthcare-directives/advance-directive-when-you-travel-or-live-abroad) explains what the document still does and what to carry.
+
+To see who decides about organ donation, autopsy and the funeral once the agent's role ends, read [what your healthcare agent can do after death](/learn/healthcare-directives/healthcare-agent-authority-after-death).
+
+If you are handed an admission packet, [can a healthcare agent sign nursing home admission papers](/learn/healthcare-directives/can-a-healthcare-agent-sign-nursing-home-admission) explains what to sign and what to decline.
+
+To understand each treatment you might decline, [what it means to refuse life support](/learn/healthcare-directives/what-it-means-to-refuse-life-support) explains CPR, ventilators, feeding tubes and DNI orders in plain language.
+
+Before you fill in a form, [questions to answer before writing a living will](/learn/healthcare-directives/questions-to-answer-before-writing-a-living-will) gives you a values-history worksheet and advice for talking with an aging parent.
+
+For getting the paper to the people who need it, [where to keep your advance directive](/learn/healthcare-directives/where-to-keep-your-advance-directive) covers copies, patient portals, registries and what paramedics follow.
+
+For crises that affect judgment, a [mental health advance directive](/learn/healthcare-directives/mental-health-advance-directive) records treatment choices and who decides.
+
+To understand the words used in serious illness, read [palliative care, hospice and comfort-care orders](/learn/healthcare-directives/palliative-care-hospice-and-comfort-care-orders).
+
+If you have signed nothing, [what happens without an advance directive](/learn/healthcare-directives/what-happens-without-an-advance-directive) explains who your state lets decide and where that goes wrong.
+
+To see when your documents start to apply and who certifies incapacity, read [when a healthcare directive takes effect](/learn/healthcare-directives/when-does-a-healthcare-directive-take-effect).
+
+When your wishes or your agent change, [how to change or revoke an advance directive](/learn/healthcare-directives/how-to-change-or-revoke-an-advance-directive) shows how to replace the old version safely.
+
+If you travel, move or keep two homes, [do advance directives work across states](/learn/healthcare-directives/do-advance-directives-work-in-other-states) explains what to re-sign and what to carry.
+
+If the terms are tangled, [advance directive vs. living will vs. healthcare proxy](/learn/healthcare-directives/advance-directive-vs-living-will-vs-healthcare-proxy) shows what each document does and which you need.
+
+Choosing the person who will speak for you is covered in [who should be your healthcare agent](/learn/healthcare-directives/who-should-be-your-healthcare-agent), including backups and what to tell them.
+
+Not sure whether a free form is enough? [Advance directive forms, Five Wishes or an attorney](/learn/healthcare-directives/advance-directive-forms-five-wishes-or-a-lawyer) compares the options.
+
+To record treatment, organ donation and funeral wishes in the right places, see [how to document your end-of-life wishes](/learn/healthcare-directives/how-to-document-your-end-of-life-wishes).
+
+If you worry a hospital or relative could set your wishes aside, [who can overrule your healthcare directive](/learn/healthcare-directives/who-can-overrule-your-healthcare-directive) explains the limits and what to do.
+
 ## How we can help
 
 Our attorneys prepare healthcare powers of attorney, living wills and HIPAA authorizations that fit together and fit your state, and we help you think through who should speak for you. To see which documents you may still need, try our [plan finder](/plan-finder), or book a consultation to talk through your wishes at your own pace.
