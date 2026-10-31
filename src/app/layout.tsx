@@ -11,6 +11,8 @@ import "@fontsource-variable/inter";
 import { TrackedPhoneLink } from "@/components/TrackedPhone";
 import Script from "next/script";
 import Analytics from "@/components/Analytics";
+import WebVitals from "@/components/WebVitals";
+import { cloudflareBeaconToken, searchVerification } from "@/lib/search-verification";
 import CookieConsent, { CookieSettingsButton } from "@/components/CookieConsent";
 import { JsonLd, siteGraphLd, SITE_URL } from "@/lib/seo";
 import { IS_STAGING } from "@/lib/env";
@@ -28,7 +30,10 @@ export const metadata: Metadata = {
   description: "Wills, trusts and powers of attorney, explained plainly by an estate planning attorney.",
   alternates: { types: { "application/rss+xml": "/feed.xml" } },
   ...(IS_STAGING ? { robots: { index: false, follow: false } } : {}),
+  verification: searchVerification(process.env, IS_STAGING),
 };
+
+const CF_BEACON = cloudflareBeaconToken(process.env, IS_STAGING);
 
 // Google Consent Mode v2 defaults. Runs before GTM loads (see Analytics.tsx); applies a saved choice from
 // localStorage and honours Global Privacy Control for the ad_* signals.
@@ -52,6 +57,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <StickyContactBar phone={firm.phone} textNumber={firm.textNumber} />
         <ExitIntent />
         <Analytics />
+        <WebVitals />
+        {CF_BEACON && (
+          <Script src="https://static.cloudflareinsights.com/beacon.min.js" strategy="afterInteractive" data-cf-beacon={JSON.stringify({ token: CF_BEACON })} />
+        )}
         <CookieConsent />
         <JsonLd data={siteGraphLd()} />
         <footer className="site">
