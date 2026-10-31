@@ -281,7 +281,7 @@ def build_hook(s, start, end, fps, fonts):
         k = text(s["kicker"].upper(), 0.36, "gold", y=3.4, font=fonts["bold"])
         pop_in(k, start, fps)
         objs.append(k)
-    t = text(s["text"], s.get("size", 0.72), "paper", y=1.0, width=7.8, font=fonts["bold"])
+    t = text(s["text"], s.get("size", 0.82), "paper", y=1.0, width=7.8, font=fonts["bold"])
     pop_in(t, start, fps, delay=0.1)
     objs.append(t)
     return objs
@@ -414,7 +414,7 @@ def build_end(s, start, end, fps, fonts):
     pop_in(top, start, fps)
     pill = rect(8.0, 1.5, "paper", y=0.6, radius=0.6)
     pop_in(pill, start, fps, delay=0.15, dist=0.2)
-    url = text(s["url"], 0.4, "accent", y=0.6, width=7.6, font=fonts["bold"], z=0.2)
+    url = text(s["url"], 0.34, "accent", y=0.6, width=7.6, font=fonts["bold"], z=0.2)
     pop_in(url, start, fps, delay=0.2, dist=0.2)
     sub = text(s.get("sub", "Link in bio. Illinois families only for now."), 0.36, "accent_tint", y=-1.4, width=7.6, font=fonts["body"])
     pop_in(sub, start, fps, delay=0.35)
@@ -452,7 +452,10 @@ def build(spec, fps, fonts):
     brand = text(spec.get("brand", "Family Future Planning"), 0.3, "muted", y=7.3, font=fonts["bold"], z=0.5)
     bar_bg = rect(FRAME_W, 0.12, "sand", y=-7.94, z=0.5)
     bar = rect(FRAME_W, 0.12, "gold", y=-7.94, z=0.55)
-    bar.location.x = 0
+    # Move the bar's origin to its left edge so it fills left to right.
+    for vtx in bar.data.vertices:
+        vtx.co.x += 0.5
+    bar.location.x = -FRAME_W / 2
     grow_x(bar, 1, total)
     disc = text(spec.get("disclaimer", DEFAULT_DISCLAIMER), 0.24, "muted", y=-7.35, width=8.4, font=fonts["body"], z=0.5)
     # The end card is a solid accent field, so the chrome switches to light text there.

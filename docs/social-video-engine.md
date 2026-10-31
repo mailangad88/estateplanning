@@ -37,7 +37,7 @@ npm run blender:render -- --spec content/social/calendar.json --id v01 --out out
 npm run blender:render -- --spec content/social/calendar.json --id v01 --out out/v01.mp4 --audio vo/v01.m4a
 ```
 
-Rendering is CPU-only (Cycles, one sample, flat emission materials), so it works on any laptop or CI runner.
+Rendering is CPU-only (Cycles, one sample, flat emission materials), so it works on any laptop or CI runner. A 42-second short took about 9 minutes on 4 CPU cores and came out at 1.5 MB.
 
 Scene types: `hook`, `point`, `stat`, `steps`, `myth`, `broll` (needs `video`), `end` (needs `url`). Fonts: Inter
 if installed, otherwise a system sans, otherwise Blender's built-in font; override with `--font`.

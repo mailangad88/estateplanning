@@ -60,8 +60,8 @@
           },
           {
             "type": "stat",
-            "value": "$0",
-            "label": "of real estate can pass by small estate affidavit",
+            "value": "$150K",
+            "label": "Small estate affidavit limit. It cannot transfer a house.",
             "cite": "755 ILCS 5/25-1",
             "seconds": 6.5
           },
