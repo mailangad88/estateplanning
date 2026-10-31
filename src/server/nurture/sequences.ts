@@ -133,6 +133,7 @@ export const LIFE_EVENT_SEGMENTS = [
   "caregiver",
   "widowed",
   "retiring",
+  "special_needs",
 ] as const;
 export type LifeEventSegment = (typeof LIFE_EVENT_SEGMENTS)[number];
 
@@ -147,6 +148,8 @@ const LIFE_EVENT_TOPICS: Record<LifeEventSegment, string[]> = {
   business_owner: ["what-happens-to-the-business", "buy-sell-agreements", "naming-a-successor", "business-and-trust", "valuation-basics", "key-person-risk", "next-step"],
   caregiver: ["power-of-attorney", "healthcare-directives", "long-term-care-costs", "medicaid-basics", "caregiver-authority", "records-to-gather", "next-step"],
   widowed: ["updating-after-a-loss", "beneficiary-forms-to-change", "new-power-of-attorney", "trust-or-will-now", "naming-new-fiduciaries", "talking-with-children", "next-step"],
+  // Gentle track: subjects never name the condition (sensitive-content rule); added 2026-10-31.
+  special_needs: ["planning-for-lifelong-support", "protecting-benefits", "supplemental-needs-trusts", "choosing-a-trustee", "letter-of-intent", "decision-making-at-18", "next-step"],
   retiring: ["estate-plan-before-retirement", "retirement-account-beneficiaries", "power-of-attorney", "healthcare-directives", "avoiding-probate", "required-minimum-distributions-and-heirs", "next-step"],
 };
 /** Days from enrollment: 7 emails across 30 days, roughly twice a week at first and tapering. */
