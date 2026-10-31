@@ -1,0 +1,20 @@
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 16px 0 24px; }
+.card { border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; background: var(--surface); }
+.card b { display: block; font-size: 1.6rem; line-height: 1.1; }
+.card span { font-size: var(--text-xs); color: var(--muted); }
+.bar { height: 8px; border-radius: 4px; background: var(--border); overflow: hidden; margin-top: 8px; }
+.bar i { display: block; height: 100%; background: var(--accent); }
+.low i { background: #c2410c; }
+.mid i { background: #ca8a04; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: end; margin: 12px 0; }
+.filters label { display: grid; gap: 4px; font-size: var(--text-xs); }
+.todo { font-size: var(--text-xs); color: var(--muted); }
+.score { font-variant-numeric: tabular-nums; font-weight: 600; }
+.wrap { overflow-x: auto; }
+.pager { display: flex; gap: 12px; margin: 12px 0; }
+.full { width: min(1240px, calc(100vw - 32px)); position: relative; left: 50%; transform: translateX(-50%); }
+.full table { min-width: 960px; }
+.full td:last-child { min-width: 360px; }
+.filters select, .filters input { max-width: 100%; min-width: 0; }
+.filters label { max-width: 100%; }
+.nowrap { white-space: nowrap; }
