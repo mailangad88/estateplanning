@@ -8,6 +8,7 @@ import { PageHero } from "@/components/page-hero";
 import { PageMedia, pageDiagramNames } from "@/components/visuals/PageMedia";
 import { RichProse } from "@/components/embeds/rich-prose";
 import MagnetOptIn from "@/components/MagnetOptIn";
+import BookCta from "@/components/BookCta";
 import { MAGNET_FORMATS, magnetsFor, pillarOf } from "@/lib/magnets";
 import { quizzesFor } from "@/lib/quizzes";
 import { toolFor } from "@/config/tools";
@@ -72,6 +73,7 @@ export function ArticlePage(props: {
       ) : (
         <p className="lead">{props.description}</p>
       )}
+      {!props.sensitive && <BookCta layout="inline" />}
       {props.before}
       <PageMedia path={props.path} />
       <Toc headings={props.headings} />
@@ -113,9 +115,8 @@ export function ArticlePage(props: {
         </section>
       ) : props.magnet ? (
         <EmailCapture kind="magnet" interest={props.magnet.interest} title={props.magnet.title} body={props.magnet.body} cta={props.magnet.cta} sensitive={props.sensitive} />
-      ) : (
-        <Cta />
-      )}
+      ) : null}
+      {(!props.sensitive || !props.magnet) && <Cta />}
       {related.length > 0 && (
         <section>
           <h2>Keep reading</h2>
