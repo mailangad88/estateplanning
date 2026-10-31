@@ -14,11 +14,12 @@ function files(dir: string): string[] {
 describe("referral network setup (Sargun Singh, 2026-10-25)", () => {
   it("names the attorney", () => expect(firm.attorneyName).toBe("Sargun Singh"));
 
-  it("every package includes exactly one round of revisions", () => {
-    for (const p of packages) {
+  it("Essentials and Complete include exactly one round of revisions; Legacy is a custom quote", () => {
+    for (const p of packages.filter((x) => x.id !== "legacy")) {
       expect(p.includes).toContain(PACKAGE_REVISIONS);
       expect(p.excludes).toContain("Revisions after the first round");
     }
+    expect(packages.map((p) => p.price)).toEqual(["$2,500", "$3,500", "Custom quote"]);
   });
 
   it("the disclaimer says the site is a referral website and gives no legal advice", () => {

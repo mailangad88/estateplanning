@@ -17,8 +17,7 @@ const end = (v: string) => (/[.!?]$/.test(v.trim()) ? v.trim() : `${v.trim()}.`)
 
 const ROWS: string[][] = [
   ["Fits", "One person or a couple, modest assets, no minor children", "Homeowners and families with minor children", "Blended families, business owners, property in more than one state, special needs planning, larger estates"],
-  ["Fee, one person", fees.essentialsOne, fees.completeOne, "Quote after consult"],
-  ["Fee, couple", fees.essentialsCouple, fees.completeCouple, "Quote after consult"],
+  ["Flat fee (one person or a couple)", fees.essentials, fees.complete, fees.legacy],
   ["Will", "Yes", "Pour-over will", "Pour-over will"],
   ["Revocable living trust", "No", "Yes", "Yes, with advanced provisions"],
   ["Durable financial power of attorney", "Yes", "Yes", "Yes"],
@@ -26,7 +25,7 @@ const ROWS: string[][] = [
   ["Guardian nominations", "If you have children", "Yes", "Yes"],
   ["Deed for your primary home into the trust", "Not applicable", "Yes", "Yes, plus other properties"],
   ["Funding help (accounts, beneficiaries)", "Checklist", "Checklist plus one review", "Checklist plus one review"],
-  ["Revisions to your documents", "One round", "One round", "One round"],
+  ["Revisions to your documents", "One round", "One round", "Set in your custom quote"],
   ["Special needs trust, business succession coordination", "No", "Optional add-on", "Included or priced in the quote"],
   ["After signing", services.afterSigning, services.afterSigning, services.afterSigning],
 ];
@@ -41,7 +40,7 @@ const FAQS = [
   { q: "Are there other costs?", a: `Recording a deed costs a county recording fee, which differs by county in ${SERVED_AND}. Notary or witness fees may apply, and extra complexity may add cost. The engagement agreement lists them.` },
   { q: "Why do online services cost less?", a: "They sell forms. You complete the questions, and nobody checks whether the result fits your facts or your state. Some people are comfortable with that. An attorney's fee pays for review and advice. See [online will vs estate attorney](/compare/online-will-vs-estate-attorney)." },
   { q: "Do you offer payment plans?", a: `${end(services.paymentPlans)} If only the most urgent documents are wanted first, such as a power of attorney and healthcare directive, ask about doing those on their own.` },
-  { q: "Do you offer discounts, or update my plan if the law changes?", a: "Couple pricing is shown above. Ask the attorney you are matched with how they handle updates when the law changes. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan)." },
+  { q: "Do you offer discounts, or update my plan if the law changes?", a: "The same flat fee covers one person or a couple. Ask the attorney you are matched with how they handle updates when the law changes. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan)." },
 ];
 
 export default function Pricing() {
@@ -62,8 +61,8 @@ export default function Pricing() {
       </PageHero>
       <div className="answer">
         <strong>In short</strong>
-        Attorneys in our network charge flat fees for estate planning, quoted in writing before you pay. A will-based plan starts at{" "}
-        {fees.essentialsOne}. A plan with a living trust starts at {fees.completeOne}. Complex situations such as blended families, business interests or property in more than one
+        Attorneys in our network charge flat fees for estate planning, quoted in writing before you pay. A will-based plan is a flat{" "}
+        {fees.essentials} and a plan with a living trust is a flat {fees.complete}, for one person or a couple, each with one round of revisions. Complex situations such as blended families, business interests or property in more than one
         state are quoted after a short consult. Everything included and excluded is listed below.
       </div>
 

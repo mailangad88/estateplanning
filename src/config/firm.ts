@@ -106,10 +106,10 @@ export const SITE_DISCLAIMER_ES =
  * ("$1,800") or a phrase ("Quoted after your first call"). An unfilled value blocks the production build.
  */
 export const fees = {
-  essentialsOne: "[Flat fee]",
-  essentialsCouple: "[Flat fee]",
-  completeOne: "[Flat fee]",
-  completeCouple: "[Flat fee]",
+  /** Angad, 2026-10-31: Basic (Essentials) $2,500, second tier (Complete) $3,500, third tier custom. One flat price per plan, whether for one person or a couple. */
+  essentials: "$2,500",
+  complete: "$3,500",
+  legacy: "Custom quote",
   powerOfAttorneyAlone: "[Flat fee]",
   healthcareDirectiveAlone: "[Flat fee]",
   trusteeConsult: "[Flat fee]",
@@ -136,14 +136,14 @@ export const services = {
   afterSigning: "[Attorney: question period and check-up after signing]",
 };
 
-/** Every package includes exactly one round of revisions (Sargun Singh, 2026-10-25). */
+/** Essentials and Complete include exactly one round of revisions (Sargun Singh 2026-10-25; Angad 2026-10-31). Legacy sets revisions in its custom quote. */
 export const PACKAGE_REVISIONS = "One round of revisions to your documents";
 
 /** Flat-fee packages shown on /pricing. Prices are set by the firm. */
 export const packages: Package[] = [
-  { id: "essentials", name: "Essentials", price: fees.essentialsOne, for: "One person or a couple with modest assets and no minor children.", includes: ["Will (each spouse)", "Guardian nominations if you have children", "Durable financial power of attorney", "Healthcare power of attorney, living will and HIPAA release", "Signing ceremony", PACKAGE_REVISIONS], excludes: ["Revisions after the first round", "Trust drafting", "Real estate deeds", "Tax planning", "Court proceedings"] },
-  { id: "complete", name: "Complete", price: fees.completeOne, for: "Homeowners and families with minor children. The usual fit for families with a home, not the right fit for everyone.", includes: ["Revocable living trust", "Pour-over will", "Financial and healthcare powers of attorney", "Living will and HIPAA release", "Deed transfer of your home into the trust", "Funding checklist plus one review", "Signing ceremony", PACKAGE_REVISIONS], excludes: ["Revisions after the first round", "Tax planning beyond the trust", "Deeds not listed in the custom scope", "Court proceedings"] },
-  { id: "legacy", name: "Legacy", price: "Quote after consult", for: "Blended families, business owners, property in more than one state, special needs planning or larger estates.", includes: ["Everything in Complete", "Special needs or children's trust provisions", "Additional deeds", "Business interest assignment", "Coordination with your financial advisor or CPA", PACKAGE_REVISIONS], excludes: ["Revisions after the first round", "Court proceedings", "Tax return preparation", "Work outside the custom scope"] },
+  { id: "essentials", name: "Essentials", price: fees.essentials, for: "One person or a couple with modest assets and no minor children.", includes: ["Will (each spouse)", "Guardian nominations if you have children", "Durable financial power of attorney", "Healthcare power of attorney, living will and HIPAA release", "Signing ceremony", PACKAGE_REVISIONS], excludes: ["Revisions after the first round", "Trust drafting", "Real estate deeds", "Tax planning", "Court proceedings"] },
+  { id: "complete", name: "Complete", price: fees.complete, for: "Homeowners and families with minor children. The usual fit for families with a home, not the right fit for everyone.", includes: ["Revocable living trust", "Pour-over will", "Financial and healthcare powers of attorney", "Living will and HIPAA release", "Deed transfer of your home into the trust", "Funding checklist plus one review", "Signing ceremony", PACKAGE_REVISIONS], excludes: ["Revisions after the first round", "Tax planning beyond the trust", "Deeds not listed in the custom scope", "Court proceedings"] },
+  { id: "legacy", name: "Legacy", price: fees.legacy, for: "Blended families, business owners, property in more than one state, special needs planning or larger estates.", includes: ["Everything in Complete", "Special needs or children's trust provisions", "Additional deeds", "Business interest assignment", "Coordination with your financial advisor or CPA", "Revisions as set in your custom quote"], excludes: ["Court proceedings", "Tax return preparation", "Work outside the custom scope"] },
 ];
 
 /**

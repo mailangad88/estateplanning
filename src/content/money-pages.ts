@@ -126,7 +126,7 @@ const wills: MoneyPageData = {
     {
       h: "What it costs",
       blocks: [
-        { p: `The will-based package is called Essentials. It starts at ${fees.essentialsOne} for one person and ${fees.essentialsCouple} for a couple. It includes: ${(essentials?.includes ?? []).join("; ").toLowerCase()}. It does not include probate or tax return preparation. See [pricing](/pricing).` },
+        { p: `The will-based package is called Essentials. It is a flat ${fees.essentials}, for one person or a couple, with one round of revisions. It includes: ${(essentials?.includes ?? []).join("; ").toLowerCase()}. It does not include probate or tax return preparation. See [pricing](/pricing).` },
       ],
     },
   ],
@@ -260,7 +260,7 @@ const livingTrusts: MoneyPageData = {
     {
       h: "What it costs",
       blocks: [
-        { p: `The trust-based package is called Complete. It starts at ${fees.completeOne} for one person and ${fees.completeCouple} for a couple. A second property, a blended family, a business or a special needs provision moves the price. See [pricing](/pricing).` },
+        { p: `The trust-based package is called Complete. It is a flat ${fees.complete}, for one person or a couple, with one round of revisions. A second property, a blended family, a business or a special needs provision usually means the custom Legacy plan instead. See [pricing](/pricing).` },
       ],
     },
   ],

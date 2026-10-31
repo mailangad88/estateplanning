@@ -49,7 +49,7 @@ export const PACKAGES: Record<string, EngagementPackage> = {
     name: "Will Package",
     includes: ["Last will and testament", "Durable power of attorney", "Health care directive", "One signing meeting"],
     excludes: ["Trust drafting", "Real estate deeds", "Tax planning", "Court proceedings"],
-    defaultFeeCents: 150000, // starting amount, edited per engagement
+    defaultFeeCents: 250000, // Essentials, $2,500 (Angad 2026-10-31)
     feeTreatment: "earned_on_receipt",
   },
   trust_package: {
@@ -57,7 +57,7 @@ export const PACKAGES: Record<string, EngagementPackage> = {
     name: "Revocable Living Trust Package",
     includes: ["Revocable living trust", "Pour-over will", "Durable power of attorney", "Health care directive", "Funding instructions", "One signing meeting"],
     excludes: ["Deed preparation unless listed in custom scope", "Tax planning beyond the trust", "Court proceedings"],
-    defaultFeeCents: 400000, // starting amount, edited per engagement
+    defaultFeeCents: 350000, // Complete, $3,500 (Angad 2026-10-31)
     feeTreatment: "trust_until_milestones",
   },
   couples_trust: {
