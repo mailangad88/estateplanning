@@ -12,3 +12,6 @@ next-env.d.ts
 
 # site search index, built before next build (scripts/build-search-index.mts)
 /public/pagefind/
+
+# visibility tracker and DataForSEO cache, ledger and reports
+/.cache/

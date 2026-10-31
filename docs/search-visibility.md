@@ -48,6 +48,8 @@ until launch day; do the "after go-live" steps only once familyfutureplanning.co
 
 ### Week one
 
+- **Add the visibility tracker keys** (`docs/ai-visibility.md`): Search Console service account and Bing Webmaster API key are free; DataForSEO is already set up; Perplexity, Gemini, Claude and OpenAI keys are optional at a few dollars a month.
+
 10. **PageSpeed check**: pagespeed.web.dev on home, a long article, `/book` and a calculator. Anything under 90 on mobile goes back to Claude.
 11. **Search Console > Pages**: anything "Discovered, not indexed" or "Crawled, not indexed" after two weeks goes to the SEO thread.
 
@@ -77,7 +79,8 @@ requires care with testimonials) apply. Sargun signs off before any review appea
 - Bing indexing (step 7) and IndexNow are the main levers for ChatGPT search and Copilot. Google indexing drives Gemini and AI Overviews. Perplexity and Claude crawl on their own; robots.txt already welcomes them.
 - Every page leads with a short direct answer, has FAQ schema and a named reviewing attorney once approved. The biggest single blocker today: **no page has attorney approval yet**, so with `REQUIRE_ATTORNEY_REVIEW=true` almost nothing gets indexed. Sargun's review queue at `/admin/reviews` is the gate.
 - Track it: the CRM's `channel = ai_assistant` count, Cloudflare/GA4 referrers from chatgpt.com, perplexity.ai, claude.ai, gemini.google.com, copilot.microsoft.com, and the "How did you hear about us?" answer.
-- Optional, paid, off for now: AI visibility trackers (Profound, Otterly, Peec), DataForSEO SERP checks (set up in PR #64).
+- **Weekly rank and citation tracker**: `npm run visibility` checks the money keywords and questions in Google (rank + AI Overview + AI Mode), Bing, ChatGPT, Perplexity, Gemini, Claude and Brave, plus free Search Console and Bing Webmaster data, and lists fixes per query. Runs weekly in GitHub Actions once the keys are added as repository secrets. Costs about $6 a month with every engine on, capped. See `docs/ai-visibility.md` for which keys to add.
+- Paid AI visibility SaaS (Profound, Otterly, Peec) is not needed; the tracker covers it.
 
 ## Costs
 
