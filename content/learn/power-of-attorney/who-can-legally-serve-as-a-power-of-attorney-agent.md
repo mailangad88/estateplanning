@@ -104,4 +104,4 @@ Choosing someone is a decision you can revisit. If the person later moves, falls
 
 ## How we can help
 
-If you have a candidate who does not fit the usual picture, you are in good company, and the document can be built around the person. Our attorneys can prepare a power of attorney for Illinois or New Jersey with the safeguards that suit your choice. The [plan finder](/plan-finder) is a good place to start.
+If you have a candidate who does not fit the usual picture, you are in good company, and the document can be built around the person. Our attorneys can prepare a power of attorney for Illinois with the safeguards that suit your choice. The [plan finder](/plan-finder) is a good place to start.

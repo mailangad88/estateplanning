@@ -100,7 +100,7 @@ If your family insists on being there, that is worth discussing with the attorne
 
 ## How state law changes this
 
-States differ on how many witnesses are needed, whether a mark counts, whether another person may sign for you and how they must do it, and whether a notarized affidavit is needed to prove the will. They also differ on when a will can be validly signed by video. Our [Illinois guide](/estate-planning/illinois) and [New Jersey guide](/estate-planning/new-jersey) explain the local signing rules, and our attorneys adjust the signing for your state and your circumstances.
+States differ on how many witnesses are needed, whether a mark counts, whether another person may sign for you and how they must do it, and whether a notarized affidavit is needed to prove the will. They also differ on when a will can be validly signed by video. Our [Illinois guide](/estate-planning/illinois) explains the local signing rules, and our attorneys adjust the signing for your circumstances.
 
 If you want to see where the rest of your plan stands, the [plan readiness assessment](/tools/plan-readiness-assessment) takes a few minutes. For other situations that catch families off guard, see the [what-if library](/learn/what-if).
 

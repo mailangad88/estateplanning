@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
+import { servedStates } from "@/config/firm";
 import type { VisualSpec } from "@/config/visual-kit";
 
 /**
@@ -60,8 +61,24 @@ export type ReviewStatus = "pending" | "approved";
  * approving pages), pages not marked `review: approved` are noindexed and left out of the sitemap,
  * llms.txt, llms-full.txt and the RSS feed. Unset, every page is indexable (pre-launch previews).
  */
-export function isIndexable(page: { review?: ReviewStatus }): boolean {
+export function isIndexable(page: { review?: ReviewStatus; cluster?: string }): boolean {
+  if (page.cluster && !isClusterServed(page.cluster)) return false;
   return process.env.REQUIRE_ATTORNEY_REVIEW !== "true" || page.review === "approved";
+}
+
+/** Library clusters that only apply to one state. */
+const STATE_CLUSTERS: Record<string, string> = { illinois: "IL", "new-jersey": "NJ" };
+
+/**
+ * A state's library section is hidden (noindexed, left out of listings, the sitemap and llms.txt) until the
+ * state is in SERVED_STATES, so New Jersey pages can sit ready for a later launch. With the "XX"
+ * placeholder (local previews, CI) every section shows.
+ */
+export function isClusterServed(slug: string): boolean {
+  const abbr = STATE_CLUSTERS[slug];
+  if (!abbr) return true;
+  const served = servedStates();
+  return served.includes("XX") || served.includes(abbr);
 }
 
 function asReview(v: unknown): ReviewStatus {

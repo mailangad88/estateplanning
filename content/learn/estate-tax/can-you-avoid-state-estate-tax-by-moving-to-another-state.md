@@ -43,7 +43,7 @@ A real change of domicile generally moves most of your estate out of the old sta
 
 The federal tax stays the same wherever you live: $15,000,000 per person in 2026, with a top rate of 40%. So moving only matters when the problem is a state tax that begins at a much lower level. Our overview of [state estate and inheritance taxes](/learn/estate-tax/state-estate-and-inheritance-taxes) lists which states have them.
 
-The two states we serve work differently. [Illinois has an estate tax](/learn/illinois/illinois-estate-tax) that reaches estates well below the federal level and gives a surviving spouse no portability. [New Jersey has an inheritance tax](/learn/new-jersey/new-jersey-inheritance-tax) on what certain heirs receive, with children and spouses exempt. For New Jersey families whose heirs are children, moving rarely changes the bill, since there often is none.
+Illinois and New Jersey work differently. [Illinois has an estate tax](/learn/illinois/illinois-estate-tax) that reaches estates well below the federal level and gives a surviving spouse no portability. [New Jersey has an inheritance tax](/learn/new-jersey/new-jersey-inheritance-tax) on what certain heirs receive, with children and spouses exempt. For New Jersey families whose heirs are children, moving rarely changes the bill, since there often is none.
 
 ## What can you not take with you?
 

@@ -122,4 +122,4 @@ Priya and Sam, both 36, have a daughter aged 3 and a son aged 6. They choose Pri
 
 ## How we can help
 
-A guardian clause is short, but the decisions around it are not. Our attorneys can help you pick wording that fits Illinois or New Jersey law, line up the backups, and pair the nomination with a trust for your children's money. Start with the [plan finder](/plan-finder) or book a consultation.
+A guardian clause is short, but the decisions around it are not. Our attorneys can help you pick wording that fits Illinois law, line up the backups, and pair the nomination with a trust for your children's money. Start with the [plan finder](/plan-finder) or book a consultation.

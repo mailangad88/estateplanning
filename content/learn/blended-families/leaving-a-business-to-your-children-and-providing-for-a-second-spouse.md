@@ -105,4 +105,4 @@ Bring your accountant to at least one meeting. Valuation, basis and S corporatio
 
 ## How we can help
 
-A plan that protects a spouse and leaves the company to your children takes a trust, a business agreement and the right insurance, all pointing the same way. Our attorneys can map the options for an Illinois or New Jersey business and draft the documents. Start with the [plan finder](/plan-finder) or book a consultation.
+A plan that protects a spouse and leaves the company to your children takes a trust, a business agreement and the right insurance, all pointing the same way. Our attorneys can map the options for an Illinois business and draft the documents. Start with the [plan finder](/plan-finder) or book a consultation.

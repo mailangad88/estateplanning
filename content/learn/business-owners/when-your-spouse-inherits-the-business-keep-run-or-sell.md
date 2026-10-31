@@ -107,4 +107,4 @@ Then revisit the plan after a major change, such as a new partner, a big contrac
 
 ## How we can help
 
-The right answer depends on your spouse, your business and your state, and it is usually a conversation before it is a document. Our attorneys can help you weigh the options and prepare the will, trust and agreements for Illinois or New Jersey. The [plan finder](/plan-finder) gives you a place to begin.
+The right answer depends on your spouse, your business and your state, and it is usually a conversation before it is a document. Our attorneys can help you weigh the options and prepare the will, trust and agreements for Illinois. The [plan finder](/plan-finder) gives you a place to begin.

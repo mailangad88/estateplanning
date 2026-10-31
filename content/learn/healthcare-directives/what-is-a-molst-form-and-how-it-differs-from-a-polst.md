@@ -108,4 +108,4 @@ Use the [plan finder](/plan-finder) to see which documents you have, and the [he
 
 ## How we can help
 
-A medical order belongs to your clinician, but the directive and power of attorney that sit beside it are legal documents. Our attorneys prepare healthcare powers of attorney, living wills and HIPAA authorizations that match the choices on your form. Use the [plan finder](/plan-finder) or book a consultation through our [Illinois](/estate-planning/illinois) or [New Jersey](/estate-planning/new-jersey) page.
+A medical order belongs to your clinician, but the directive and power of attorney that sit beside it are legal documents. Our attorneys prepare healthcare powers of attorney, living wills and HIPAA authorizations that match the choices on your form. Use the [plan finder](/plan-finder) or book a consultation through our [Illinois](/estate-planning/illinois) page.

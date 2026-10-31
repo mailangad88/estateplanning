@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBox from "@/components/CtaBox";
 import JsonLd from "@/components/JsonLd";
 import { PageHero } from "@/components/page-hero";
-import { getClusterArticles, getClusters, getPillar } from "@/lib/library";
+import { getClusterArticles, getClusters, getPillar, isClusterServed } from "@/lib/library";
 import { breadcrumbSchema, graph, itemListSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 };
 
 export default function LearnHub() {
-  const clusters = getClusters().filter((c) => getPillar(c.slug));
+  const clusters = getClusters().filter((c) => getPillar(c.slug) && isClusterServed(c.slug));
   const crumbs = [
     { name: "Home", url: "/" },
     { name: "Learn", url: "/learn" },
