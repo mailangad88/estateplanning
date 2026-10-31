@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SourceTracker from "@/components/SourceTracker";
-import { firm } from "@/config/firm";
+import { firm, servedStates } from "@/config/firm";
 import { ExitIntent, StickyContactBar } from "@/components/capture";
 import { Disclosures } from "@/components/Disclosures";
 import MegaFooter from "@/components/MegaFooter";
@@ -11,6 +11,7 @@ import "@fontsource-variable/inter";
 import { TrackedPhoneLink } from "@/components/TrackedPhone";
 import Script from "next/script";
 import Analytics from "@/components/Analytics";
+import SiteChat from "@/components/SiteChat";
 import CookieConsent, { CookieSettingsButton } from "@/components/CookieConsent";
 import { JsonLd, siteGraphLd, SITE_URL } from "@/lib/seo";
 import { IS_STAGING } from "@/lib/env";
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="main" className="container">{children}</main>
         <StickyContactBar phone={firm.phone} textNumber={firm.textNumber} />
         <ExitIntent />
+        <SiteChat servedStates={servedStates()} firmPhone={firm.phone} />
         <Analytics />
         <CookieConsent />
         <JsonLd data={siteGraphLd()} />
