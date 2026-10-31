@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getHubs } from "@/lib/hubs";
-import { CardGrid, PageHeader } from "@/components/ui";
+import { CardGrid, Cta, PageHeader } from "@/components/ui";
 import { getMagnets } from "@/lib/magnets";
 
 export const metadata: Metadata = {
@@ -34,6 +34,7 @@ export default function Resources() {
           .map((m) => ({ href: `/free/${m.slug}`, title: m.title, description: m.promise, tag: "Free download" }))}
       />
       <p><Link href="/free">See all {getMagnets().length} free downloads</Link></p>
+      <Cta from="resources" />
     </>
   );
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { CardGrid, PageHeader } from "@/components/ui";
+import { CardGrid, Cta, PageHeader } from "@/components/ui";
 import { getQuizzes } from "@/lib/quizzes";
 
 export const metadata: Metadata = {
@@ -13,7 +13,8 @@ export default function Quizzes() {
   return (
     <>
       <PageHeader kicker="Two-minute quizzes" art="SpotQuestions" title="Quizzes" lead="A few minutes each. See your score right away, and get the full answer review by email." />
-      <CardGrid items={quizzes.map((q) => ({ href: `/quizzes/${q.slug}`, title: q.title, description: q.promise, tag: `${q.questions.length} questions` }))} />
+      <CardGrid items={quizzes.map((q) => ({ href: `/quizzes/${q.slug}`, title: q.title, description: q.promise, tag: `${q.questions.length} questions` }))} media="art" />
+      <Cta from="quizzes" />
     </>
   );
 }

@@ -4,6 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBox from "@/components/CtaBox";
 import JsonLd from "@/components/JsonLd";
 import { PageHero } from "@/components/page-hero";
+import { illustrationSrc, topicFor } from "@/lib/visual-topic";
 import { getClusterArticles, getClusters, getPillar } from "@/lib/library";
 import { breadcrumbSchema, graph, itemListSchema } from "@/lib/schema";
 
@@ -47,7 +48,9 @@ export default function LearnHub() {
           const pillar = getPillar(c.slug)!;
           const articles = getClusterArticles(c.slug);
           return (
-            <section key={c.slug} className="card" aria-labelledby={`h-${c.slug}`}>
+            <section key={c.slug} className="card hub-card" aria-labelledby={`h-${c.slug}`}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img className="hub-card__art" src={illustrationSrc(topicFor(c.url, c.name).art)} alt="" loading="lazy" decoding="async" />
               <h2 id={`h-${c.slug}`}><Link href={c.url}>{c.name}</Link></h2>
               <p className="desc">{pillar.description}</p>
               <ul>
@@ -59,7 +62,7 @@ export default function LearnHub() {
           );
         })}
       </div>
-      <CtaBox />
+      <CtaBox from="learn" />
     </div>
   );
 }

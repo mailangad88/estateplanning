@@ -21,6 +21,7 @@ import "./polish/home.css";
 import "./polish/articles.css";
 import "./polish/tools.css";
 import "./polish/pages.css";
+import "./polish/page-kit.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

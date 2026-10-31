@@ -1,0 +1,6 @@
+/* Page kit (components/page-kit.tsx): topic diagram, reused FAQs and hub card art. */
+.kit-visual { margin: var(--space-head, 32px) 0; }
+.kit-faqs { margin: var(--space-head, 32px) 0; }
+.cta .cta-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 0; }
+.hub-card { display: flex; flex-direction: column; }
+.hub-card__art { width: 100%; aspect-ratio: 5 / 3; object-fit: cover; border-radius: 14px; margin-bottom: 14px; background: var(--sand); }

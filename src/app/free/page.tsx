@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { PageHeader } from "@/components/ui";
+import { Cta, PageHeader } from "@/components/ui";
 import { MAGNET_CATEGORIES, MAGNET_FORMATS, getMagnets, magnetsForState } from "@/lib/magnets";
 import { DEFAULT_TOOL_STATE } from "@/config/tools";
 import Library, { LibraryGroup } from "./Library";
@@ -48,6 +48,7 @@ export default function FreeLibrary() {
         </LibraryGroup>
       )}
       <Library items={items} categories={MAGNET_CATEGORIES} formats={MAGNET_FORMATS} />
+      <Cta from="free" title="Rather talk it through than read?" />
     </>
   );
 }

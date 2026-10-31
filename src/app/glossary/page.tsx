@@ -4,6 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBox from "@/components/CtaBox";
 import JsonLd from "@/components/JsonLd";
 import { PageHero } from "@/components/page-hero";
+import { KitFaqs, TopicDiagram } from "@/components/page-kit";
 import { getGlossary as getShortDefinitions } from "@/lib/content";
 import { getGlossary } from "@/lib/library";
 import { absoluteUrl } from "@/config/site";
@@ -76,6 +77,7 @@ export default function GlossaryIndex() {
           <a key={l} href={`#letter-${l}`}>{l}</a>
         ))}
       </nav>
+      <TopicDiagram topic="executor trustee agent roles" />
       {letters.map((l) => (
         <section key={l} aria-labelledby={`letter-${l}`}>
           <h2 id={`letter-${l}`}>{l}</h2>
@@ -107,7 +109,8 @@ export default function GlossaryIndex() {
           </dl>
         </section>
       ))}
-      <CtaBox />
+      <KitFaqs url="/glossary" topic="mean" context="term what is definition difference" categories={["Getting started"]} title="Terms people ask about most" />
+      <CtaBox from="glossary" />
     </div>
   );
 }

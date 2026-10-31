@@ -22,6 +22,8 @@ jobs:
       - run: npm run build
       - name: Check built pages (broken links, JSON-LD, duplicate heading ids)
         run: npm run check:site
+      - name: Check every public page has a visual (no text-only pages); report FAQs, short answers, booking links
+        run: npm run check:page-kit
       # AI-text check (Pangram). Runs only when the PANGRAM_API_KEY secret is set; flags changed content pages
       # that read as mostly AI-written so the attorney rewrites them. See scripts/ai-text-check.mjs.
       - name: AI-text check on changed content

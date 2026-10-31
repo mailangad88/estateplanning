@@ -12,6 +12,7 @@
     "launch-check": "node scripts/launch-check.mjs",
     "prebuild": "node scripts/launch-check.mjs && npm run search:index",
     "check:site": "node scripts/check-site.mjs",
+    "check:page-kit": "node scripts/page-kit.mjs",
     "search:index": "tsx scripts/build-search-index.mts",
     "review:queue": "tsx scripts/review-queue.mts",
     "embeds": "tsx scripts/embeds.mts",
