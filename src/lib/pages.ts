@@ -7,7 +7,9 @@ import { EXPLAINERS } from "@/explainers/data";
 import { getAudiences, getChecklists, getComparisons, getGuides, getLessons, getLifeEvents, getPosts } from "@/lib/content";
 import { getStates } from "@/lib/states";
 import { videos } from "@/components/visuals/video/videos";
-import { getAllArticles, getCluster, getGlossary as getTermPages, getStateGuides, isIndexable } from "@/lib/library";
+import { getAllArticles, getCities, getCluster, getGlossary as getTermPages, getStateGuides, isIndexable } from "@/lib/library";
+import { servedCounties } from "@/lib/counties";
+import { servedStates } from "@/config/firm";
 
 export interface SitePage {
   path: string;
@@ -70,6 +72,17 @@ export function allPages(): SitePage[] {
   }
   pages.push({ path: "/estate-planning/will-rules", title: "Will signing rules by state (50-state table)", description: "Witnesses, handwritten wills and self-proving affidavits in every state, with a CSV download.", updated: TODAY, section: "Laws by state" });
   pages.push({ path: "/estate-planning/illinois-probate-fees", title: "Illinois probate filing fees by county (2026 table)", description: "What Illinois circuit clerks charge to open an estate, file an appearance and file a will, with a CSV download.", updated: TODAY, section: "Laws by state" });
+  // Local pages for served states: county probate guides and city guides (verified notes only).
+  const countyStates = [...new Set(servedCounties().map((c) => c.state))];
+  for (const st of countyStates) {
+    pages.push({ path: `/estate-planning/${st.slug}/counties`, title: `${st.name} probate by county`, description: `Courts, clerks, filing fees and recorders for each ${st.name} county.`, updated: TODAY, section: "Locations" });
+  }
+  for (const c of servedCounties()) {
+    pages.push({ path: c.url, title: `Probate and estate planning in ${c.name}, ${c.state.abbr}`, description: `Where estates are opened, wills filed and deeds recorded in ${c.name}, with fees and local help.`, updated: c.updated, section: "Locations" });
+  }
+  for (const c of getCities().filter((x) => servedStates().includes(x.state.abbr))) {
+    pages.push({ path: c.url, title: `Estate planning in ${c.name}, ${c.state.abbr}`, description: `Wills, trusts and probate for ${c.name} families: the local court, recorder and resources in ${c.county}.`, updated: c.updated, section: "Locations" });
+  }
   for (const s of getStateGuides().filter(isIndexable)) {
     pages.push({ path: s.url, title: s.title, description: s.description, updated: s.updated || TODAY, section: "Laws by state" });
   }

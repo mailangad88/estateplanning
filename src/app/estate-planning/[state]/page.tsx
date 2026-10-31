@@ -12,6 +12,7 @@ import { magnetsForState } from "@/lib/magnets";
 import PageMeta from "@/components/PageMeta";
 import Toc from "@/components/Toc";
 import { servedStates } from "@/config/firm";
+import { servedCounties } from "@/lib/counties";
 import { findByUrl, getCities, getClusterArticles, getPillar, getStateGuide, getStateGuides, isIndexable, refToUrl, type StateFacts } from "@/lib/library";
 import { breadcrumbSchema, faqSchema, graph, stateGuideSchema } from "@/lib/schema";
 import { getStates as getLocalStatePages, type StatePage } from "@/lib/states";
@@ -89,6 +90,7 @@ export default async function StatePage({ params }: { params: Promise<Params> })
 
   const served = servedStates().includes(s.abbr);
   const cities = served ? getCities(s.slug) : [];
+  const counties = served ? servedCounties(s.slug) : [];
   const crumbs = [
     { name: "Home", url: "/" },
     { name: "Laws by state", url: "/estate-planning" },
@@ -205,6 +207,16 @@ export default async function StatePage({ params }: { params: Promise<Params> })
       ))}
       <Faqs faqs={faqs} />
       {served && <CallbackForm interest={`state:${s.abbr}`} />}
+      {counties.length > 0 && (
+        <LinkList
+          id="counties"
+          title={`Probate by county in ${s.name}`}
+          items={[
+            { url: `${s.url}/counties`, title: `All ${s.name} counties`, description: "Courts, clerks, filing fees and recorders, county by county." },
+            ...counties.map((c) => ({ url: c.url, title: `Probate in ${c.name}`, description: c.seat ? `County seat: ${c.seat}` : c.state.name })),
+          ]}
+        />
+      )}
       {cities.length > 0 && (
         <LinkList
           id="cities"
