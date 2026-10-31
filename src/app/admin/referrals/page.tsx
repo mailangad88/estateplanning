@@ -127,8 +127,7 @@ export default async function ReferralsPage({ searchParams }: { searchParams: Pr
         <Monthly r={r} primaryName={primaryName} />
       </section>
 
-      <div className={styles.twoUp}>
-        <section className={styles.chart}>
+      <section className={styles.chart}>
           <h2>Referred to</h2>
           <p>Each attorney who received a lead, with how those referrals turned out.</p>
           <Bars
@@ -140,7 +139,9 @@ export default async function ReferralsPage({ searchParams }: { searchParams: Pr
               total: x.total,
             }))}
           />
-        </section>
+      </section>
+
+      <div className={styles.twoUp}>
         <section className={styles.chart}>
           <h2>Why</h2>
           <p>The reason given for each referral.</p>

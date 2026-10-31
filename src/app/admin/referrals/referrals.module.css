@@ -4,8 +4,10 @@
   --series-elsewhere: #a3a29b;
   --grid: var(--border);
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 28px;
 }
+.viz > * { min-width: 0; }
 @media (prefers-color-scheme: dark) {
   .viz { --series-handled: #3987e5; --series-referred: #d95926; --series-elsewhere: #7d7c76; }
 }
@@ -48,7 +50,8 @@
 .fill:hover::after, .fill:focus-visible::after { opacity: 1; }
 .value { font-size: 0.85rem; color: var(--text); font-variant-numeric: tabular-nums; }
 .empty { color: var(--muted); }
-.twoUp { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.twoUp { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px; }
+.twoUp > * { min-width: 0; }
 .tableWrap { overflow-x: auto; }
 .badge { display: inline-block; font-size: 0.78rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--sand); color: var(--text); white-space: nowrap; }
 .badge[data-tone="good"] { background: var(--sage-tint); color: var(--sage-deep); }
