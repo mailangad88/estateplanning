@@ -201,7 +201,26 @@
         "skokie",
         "schaumburg",
         "oak-park",
-        "orland-park"
+        "orland-park",
+        "arlington-heights",
+        "palatine",
+        "mount-prospect",
+        "des-plaines",
+        "park-ridge",
+        "elk-grove-village",
+        "hoffman-estates",
+        "glenview",
+        "northbrook",
+        "niles",
+        "morton-grove",
+        "lincolnwood",
+        "oak-lawn",
+        "tinley-park",
+        "cicero",
+        "berwyn",
+        "homewood",
+        "la-grange",
+        "western-springs"
       ],
       "updated": "2026-10-26"
     },
@@ -321,7 +340,14 @@
       "cities": [
         "wheaton",
         "naperville",
-        "downers-grove"
+        "downers-grove",
+        "elmhurst",
+        "lombard",
+        "glen-ellyn",
+        "oak-brook",
+        "carol-stream",
+        "addison",
+        "westmont"
       ],
       "updated": "2026-10-26"
     },
@@ -670,7 +696,8 @@
         "aurora",
         "st-charles",
         "geneva",
-        "elgin"
+        "elgin",
+        "batavia"
       ],
       "updated": "2026-10-26"
     },
@@ -729,7 +756,8 @@
         "The Kendall County Recorder's Office is at 502 S. Main St., Yorkville. The phone is 630-553-4112. Hours are Monday to Friday, 8:00 a.m. to 4:30 p.m. (source: https://www.kendallcountyil.gov/offices/county-clerk-recorder)"
       ],
       "cities": [
-        "yorkville"
+        "yorkville",
+        "oswego"
       ],
       "updated": "2026-10-26"
     },
@@ -794,7 +822,14 @@
         "The Lake County senior homestead exemption reduces assessed value by $8,000 for owners age 65 or older who live in the home. It does not need yearly renewal, but it does not carry over if the parcel number changes. (source: https://www.lakecountyil.gov/457/Senior-Homestead-Exemption)"
       ],
       "cities": [
-        "waukegan"
+        "waukegan",
+        "highland-park",
+        "lake-forest",
+        "libertyville",
+        "mundelein",
+        "gurnee",
+        "vernon-hills",
+        "lake-zurich"
       ],
       "updated": "2026-10-26"
     },
@@ -1074,7 +1109,8 @@
         "McHenry County lists a senior homestead exemption of up to $8,000 for age 65 or older. A senior assessment freeze is available at household income of $75,000 or less, with applications due July 1. Call the Office of Assessments at (815) 334-4290. (source: https://www.mchenrycountyil.gov/departments/assessments/exemptions)"
       ],
       "cities": [
-        "crystal-lake"
+        "crystal-lake",
+        "mchenry"
       ],
       "updated": "2026-10-26"
     },
@@ -1620,7 +1656,12 @@
         "The Recorder of Deeds main office is at 158 N. Scott Street in Joliet, open Monday to Friday, 8:30 AM to 4:30 PM. A Bolingbrook office at 241 Canterbury Lane is open Tuesday and Thursday. (source: https://willcountyrecorder.com/)"
       ],
       "cities": [
-        "joliet"
+        "joliet",
+        "plainfield",
+        "romeoville",
+        "new-lenox",
+        "frankfort",
+        "mokena"
       ],
       "updated": "2026-10-26"
     },
