@@ -1,4 +1,4 @@
-import { fees, firm, packages, services } from "@/config/firm";
+import { fees, firm, packages, services, SERVED_AND, SERVED_OR } from "@/config/firm";
 import { FIGURES } from "@/config/figures";
 
 /**
@@ -115,7 +115,7 @@ const wills: MoneyPageData = {
         {
           ol: [
             "Asks about your family, property, accounts and who you trust.",
-            "Drafts a will that fits Illinois or New Jersey law, with a guardian nomination if you have minor children, and a plan for property you leave to a minor.",
+            `Drafts a will that fits ${SERVED_OR} law, with a guardian nomination if you have minor children, and a plan for property you leave to a minor.`,
             "Goes over it with you, oversees the signing with witnesses, and explains where to keep it.",
             "Points out which beneficiary forms to check, because those override the will.",
           ],
@@ -251,7 +251,7 @@ const livingTrusts: MoneyPageData = {
             "Drafts the trust and a pour-over will that sweeps stray assets into it.",
             "Prepares your durable power of attorney and healthcare documents so the plan covers incapacity.",
             "Prepares the deed for your home and gives you a funding checklist for bank, brokerage and beneficiary accounts. The [pricing](/pricing) page shows the funding help in each package.",
-            "Holds a signing meeting, with witnesses and a notary as Illinois or New Jersey law requires.",
+            `Holds a signing meeting, with witnesses and a notary as ${SERVED_OR} law requires.`,
           ],
         },
         { p: "The attorney you are matched with drafts your trust and includes funding instructions, because an unfunded trust does not work." },
@@ -271,7 +271,7 @@ const livingTrusts: MoneyPageData = {
     { q: "Who should be my successor trustee?", a: "Someone trustworthy and organized who can handle paperwork and difficult family conversations. Many people name a child plus a backup, or a professional if no one fits. See [choosing a trustee](/learn/trusts/choosing-a-trustee) and [executor vs trustee](/compare/executor-vs-trustee)." },
     { q: "Do I have to put everything in the trust?", a: "No. Retirement accounts and life insurance usually stay out and pass by beneficiary form. Vehicles and small accounts often stay out too. The attorney tells you which assets people usually move." },
     { q: "What does it mean to fund a trust, and who does it?", a: "Funding means changing ownership of an asset to the trust, such as recording a new deed for your house or retitling a bank account. The attorney prepares the deed and instructions. Some steps, such as bank forms, you complete yourself." },
-    { q: "Will my mortgage lender or insurer object if I move my home into a trust?", a: "Federal law generally prevents a lender from calling a home loan due when you move your home into a revocable trust and you stay a beneficiary and keep living there (12 U.S.C. 1701j-3(d)(8)). This applies in Illinois and New Jersey. People still usually tell their insurer and title company." },
+    { q: "Will my mortgage lender or insurer object if I move my home into a trust?", a: `Federal law generally prevents a lender from calling a home loan due when you move your home into a revocable trust and you stay a beneficiary and keep living there (12 U.S.C. 1701j-3(d)(8)). This applies in ${SERVED_AND}. People still usually tell their insurer and title company.` },
     { q: "What happens to the trust when I die?", a: "Your successor trustee gathers the assets, pays debts and taxes, and distributes what is left according to the trust. See [trust administration](/trust-administration)." },
   ],
   related: [
@@ -312,7 +312,7 @@ const poa: MoneyPageData = {
             ],
           },
         },
-        { p: "Many attorneys prefer immediate, with the original held until needed. The attorney you are matched with explains which type they recommend and how it works under Illinois or New Jersey law." },
+        { p: `Many attorneys prefer immediate, with the original held until needed. The attorney you are matched with explains which type they recommend and how it works under ${SERVED_OR} law.` },
       ],
     },
     {
@@ -353,8 +353,8 @@ const poa: MoneyPageData = {
     { q: "When should I sign one?", a: "When you are healthy and clear-headed. Capacity is required to sign, and it can disappear suddenly through a stroke, an accident or dementia." },
     { q: "Can my agent take my money?", a: "They have a legal duty not to misuse it. You can add safeguards: a requirement to give accountings, a limit on gifts, or a second person who must approve large transactions. A trusted agent is still the main safeguard." },
     { q: "Does a power of attorney work after death?", a: "No. Authority ends at death. The executor named in your will, or your successor trustee, takes over. See [what happens to a power of attorney when you die](/blog/what-happens-to-a-power-of-attorney-when-you-die)." },
-    { q: "Does my spouse automatically have this authority?", a: "Usually not, in Illinois or New Jersey. Marriage alone does not make your spouse your agent, so a spouse often cannot sell a solely owned asset or deal with accounts in your name without a power of attorney." },
-    { q: "Is a power of attorney from another state valid here?", a: "Many states recognize out-of-state powers of attorney that were valid where signed, but local institutions may balk. If you have moved to Illinois or New Jersey, it is common to have the attorney you are matched with review yours and confirm how the state treats it." },
+    { q: "Does my spouse automatically have this authority?", a: `Usually not, in ${SERVED_OR}. Marriage alone does not make your spouse your agent, so a spouse often cannot sell a solely owned asset or deal with accounts in your name without a power of attorney.` },
+    { q: "Is a power of attorney from another state valid here?", a: `Many states recognize out-of-state powers of attorney that were valid where signed, but local institutions may balk. If you have moved to ${SERVED_OR}, it is common to have the attorney you are matched with review yours and confirm how the state treats it.` },
     { q: "My parent has dementia and no power of attorney. What now?", a: "A person with dementia may still be able to sign if they understand what the document does on that day. That is a legal question that depends on the person's capacity. If they cannot, the usual route is a guardianship or conservatorship. Call, and we will match you with an attorney who can tell you what applies." },
   ],
   related: [
@@ -737,9 +737,9 @@ const parents: MoneyPageData = {
     { q: "How do we do this if my parent has early dementia?", a: "Capacity is not all or nothing. A person may be able to sign on a good day, and attorneys will assess it. A note from the doctor can help." },
     { q: "Does a power of attorney cost a lot?", a: `It is among the less expensive documents. The flat fee is ${fees.powerOfAttorneyAlone} on its own, and it is included in each package. See [pricing](/pricing).` },
     { q: "Who should be our children's guardian?", a: "Someone with the values, health, energy and finances to raise them, and who has said yes. It does not have to be the richest relative. See [can I name my sister as guardian if my husband disagrees?](/blog/can-i-name-my-sister-as-guardian-if-my-husband-disagrees)" },
-    { q: "What if I am divorced or a single parent?", a: "Your plan may matter more. In Illinois and New Jersey, as in most states, the other parent usually keeps custody if you die unless a court finds otherwise. The attorney you are matched with explains how this works for your family. Many single parents name guardians for the case where both parents cannot serve." },
+    { q: "What if I am divorced or a single parent?", a: `Your plan may matter more. In ${SERVED_AND}, as in most states, the other parent usually keeps custody if you die unless a court finds otherwise. The attorney you are matched with explains how this works for your family. Many single parents name guardians for the case where both parents cannot serve.` },
     { q: "How often should parents update a plan?", a: "Every few years, and after any marriage, divorce, birth, move or large change in assets. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan)." },
-    { q: "What if my parent lives in a different state?", a: "Documents should fit the state where your parent lives. Attorneys in our network practice in Illinois and New Jersey. If your parent lives elsewhere, the state bar's lawyer referral service in that state can help." },
+    { q: "What if my parent lives in a different state?", a: `Documents should fit the state where your parent lives. Attorneys in our network practice in ${SERVED_AND}. If your parent lives elsewhere, the state bar's lawyer referral service in that state can help.` },
   ],
   related: [
     { href: "/life-events/caring-for-aging-parents", title: "Caring for aging parents", kind: "Life event" },
@@ -784,7 +784,7 @@ const howItWorks: MoneyPageData = {
               ["5. Information gathering", "A short questionnaire and document upload: names, account list, existing documents", "You", "Varies"],
               ["6. Drafting", "The attorney drafts your documents", "The attorney", firm.draftingTime],
               ["7. Review meeting", "You read the drafts and ask questions. Changes are made", "You and the attorney", "Varies"],
-              ["8. Signing", "Documents are signed in front of witnesses and a notary, as Illinois or New Jersey law requires", "You, the attorney, witnesses and a notary", "Varies"],
+              ["8. Signing", `Documents are signed in front of witnesses and a notary, as ${SERVED_OR} law requires`, "You, the attorney, witnesses and a notary", "Varies"],
               ["9. After signing", "You get copies and instructions: fund the trust, update beneficiaries, tell your agents", "You, with the attorney's help", "Varies"],
             ],
           },
@@ -831,13 +831,13 @@ const howItWorks: MoneyPageData = {
     },
   ],
   faqs: [
-    { q: "Do I have to come to the office?", a: `Consultations are by ${firm.consultFormat}. Signing may be in person, or remote where Illinois or New Jersey law allows it for your documents. The attorney confirms which applies.` },
+    { q: "Do I have to come to the office?", a: `Consultations are by ${firm.consultFormat}. Signing may be in person, or remote where ${SERVED_OR} law allows it for your documents. The attorney confirms which applies.` },
     { q: "How long from first call to signing?", a: `${end(services.turnaround)} When there is a real reason, such as a hospital stay: ${end(services.urgentTurnaround)}` },
     { q: "What if I need to change something after signing?", a: `Every package includes one round of revisions before signing. After signing: ${end(services.afterSigning)} Later amendments are quoted separately.` },
     { q: "Can my spouse come to the consult?", a: "Yes, and many couples attend together. Spouses who both sign an engagement agreement become joint clients, and the attorney explains what that means for confidentiality before you sign." },
-    { q: "Is what I tell you confidential?", a: "Information you share with an attorney while seeking legal help is generally protected, even before you hire them. Illinois and New Jersey both cover this in Rule 1.18 of their Rules of Professional Conduct. Our intake team are not lawyers, so share only what is needed on the first call." },
+    { q: "Is what I tell you confidential?", a: `Information you share with an attorney while seeking legal help is generally protected, even before you hire them. ${SERVED_AND} both cover this in Rule 1.18 of their Rules of Professional Conduct. Our intake team are not lawyers, so share only what is needed on the first call.` },
     { q: "What if I decide not to hire you?", a: "That is fine. You keep the recommendation, and nobody will pressure you. A team member may follow up once or twice at most." },
-    { q: "What if I live outside Illinois or New Jersey?", a: "Attorneys in our network advise on Illinois and New Jersey law only. If you live elsewhere, your state bar's lawyer referral service can help you find someone." },
+    { q: `What if I live outside ${SERVED_OR}?`, a: `Attorneys in our network advise on ${SERVED_AND} law only. If you live elsewhere, your state bar's lawyer referral service can help you find someone.` },
   ],
   related: [
     { href: "/pricing", title: "Pricing", kind: "Page" },
@@ -855,7 +855,7 @@ const aboutAttorney: MoneyPageData = {
   description: `${A} is the estate planning attorney responsible for ${firm.brandName} (Bar No. ${firm.barNumber}). Background, education, how the referral network works, and how to reach us.`,
   h1: `${A}, estate planning attorney`,
   schema: "profile",
-  answer: `${A} is the estate planning attorney responsible for ${firm.brandName}, a referral website that matches visitors with an appropriate estate planning attorney in Illinois or New Jersey. ${firm.attorneyShortBio}`,
+  answer: `${A} is the estate planning attorney responsible for ${firm.brandName}, a referral website that matches visitors with an appropriate estate planning attorney in ${SERVED_OR}. ${firm.attorneyShortBio}`,
   sections: [
     {
       h: "Education and admission",
@@ -897,7 +897,7 @@ const aboutAttorney: MoneyPageData = {
     {
       h: "Where we serve",
       blocks: [
-        { p: `Illinois and New Jersey only. Office: ${firm.officeAddress}. Consults by ${firm.consultFormat}.` },
+        { p: `${SERVED_AND} only. Office: ${firm.officeAddress}. Consults by ${firm.consultFormat}.` },
       ],
     },
     {
@@ -910,7 +910,7 @@ const aboutAttorney: MoneyPageData = {
   faqs: [
     { q: "Who will handle my matter?", a: `The attorney you are matched with. That may be ${A} or another estate planning attorney in our network. You know who it is before you sign an engagement agreement.` },
     { q: "What areas of law does this site not cover?", a: "This site covers estate planning only: wills, trusts, powers of attorney, healthcare directives, probate and trust administration. For other matters, such as divorce, criminal defense or personal injury, the state bar's lawyer referral service can help." },
-    { q: "Which states does this site serve?", a: "Illinois and New Jersey only. Attorneys in our network advise on the law of the state where they are licensed. We do not give legal advice about other states' laws." },
+    { q: "Which states does this site serve?", a: `${SERVED_AND} only. Attorneys in our network advise on the law of the state where they are licensed. We do not give legal advice about other states' laws.` },
     { q: "Can I meet before deciding?", a: `Yes. Consult fee: ${firm.consultFee}. See [how it works](/how-it-works).` },
     { q: "How do you keep my information private?", a: "Please do not send Social Security numbers, account numbers or medical details through the website or by text. The attorney you are matched with explains how to share documents safely. See [privacy](/legal/privacy)." },
   ],

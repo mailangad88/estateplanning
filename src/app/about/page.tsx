@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { firm } from "@/config/firm";
+import { firm, SERVED_AND, SERVED_OR } from "@/config/firm";
 import { Cta, PageHeader } from "@/components/ui";
 import { Rich } from "@/components/money-page";
 import { Testimonials } from "@/components/Testimonials";
 
 export const metadata: Metadata = {
   title: "About us",
-  description: "Who we are, how the referral network works, and how we match you with an estate planning attorney in Illinois or New Jersey.",
+  description: `Who we are, how the referral network works, and how we match you with an estate planning attorney in ${SERVED_OR}.`,
   alternates: { canonical: "/about" },
 };
 
@@ -18,7 +18,7 @@ export default function About() {
         kicker="About us"
         art="SpotVideoCall"
         title={`About ${firm.brandName}`}
-        lead={`${firm.brandName} is a referral website. We match you with an appropriate estate planning attorney in our Illinois and New Jersey network.`}
+        lead={`${firm.brandName} is a referral website. We match you with an appropriate estate planning attorney in our ${SERVED_AND} network.`}
       />
       <h2>{firm.attorneyName}</h2>
       <p>{firm.attorneyName} is the estate planning attorney responsible for this site. <Rich text={firm.attorneyShortBio} /></p>

@@ -161,6 +161,16 @@ export function servedStates(): string[] {
     .filter(Boolean);
 }
 
+const STATE_NAMES: Record<string, string> = { IL: "Illinois", NJ: "New Jersey" };
+function servedNames(): string[] {
+  const names = servedStates().map((c) => STATE_NAMES[c]).filter(Boolean);
+  return names.length ? names : ["Illinois"];
+}
+/** "Illinois" or "Illinois and New Jersey", from SERVED_STATES. Every "we serve" sentence uses these. */
+export const SERVED_AND = servedNames().join(" and ");
+/** "Illinois" or "Illinois or New Jersey". */
+export const SERVED_OR = servedNames().join(" or ");
+
 export const US_STATES = [
   "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN",
   "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH",

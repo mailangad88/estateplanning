@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { fees, firm, packages as PACKAGES, services } from "@/config/firm";
+import { fees, firm, packages as PACKAGES, services, SERVED_AND, SERVED_OR } from "@/config/firm";
 import { Rich, RichFaqList } from "@/components/money-page";
 import { Breadcrumbs, Cta, ReviewNote } from "@/components/ui";
 import { PageHero } from "@/components/page-hero";
@@ -38,7 +38,7 @@ const FAQS = [
   { q: "Does the first consultation cost anything?", a: `Consult fee: ${firm.consultFee}. You see it before you book, and the attorney tells you whether it is credited toward the plan.` },
   { q: "Why is a trust more expensive than a will?", a: "It is more documents and more work: the trust, a pour-over will, a deed and funding instructions. Whether it is worth it depends on probate costs in your state, the property you own and your family. See [will vs trust](/learn/trusts/will-vs-trust)." },
   { q: "What is not included?", a: "Probate, trust administration, litigation and will contests, tax return preparation, Medicaid applications, deeds for property outside the state, and work needed because your situation turns out to be more complex than described. The attorney tells you before doing extra work and quotes the difference in writing." },
-  { q: "Are there other costs?", a: "Recording a deed costs a county recording fee, which differs by county in Illinois and New Jersey. Notary or witness fees may apply, and extra complexity may add cost. The engagement agreement lists them." },
+  { q: "Are there other costs?", a: `Recording a deed costs a county recording fee, which differs by county in ${SERVED_AND}. Notary or witness fees may apply, and extra complexity may add cost. The engagement agreement lists them.` },
   { q: "Why do online services cost less?", a: "They sell forms. You complete the questions, and nobody checks whether the result fits your facts or your state. Some people are comfortable with that. An attorney's fee pays for review and advice. See [online will vs estate attorney](/compare/online-will-vs-estate-attorney)." },
   { q: "Do you offer payment plans?", a: `${end(services.paymentPlans)} If only the most urgent documents are wanted first, such as a power of attorney and healthcare directive, ask about doing those on their own.` },
   { q: "Do you offer discounts, or update my plan if the law changes?", a: "Couple pricing is shown above. Ask the attorney you are matched with how they handle updates when the law changes. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan)." },
@@ -124,7 +124,7 @@ export default function Pricing() {
       <p>The <Link href="/tools/probate-cost-estimator">probate cost estimator</Link> and the <Link href="/tools/will-or-trust">will or trust comparison</Link> help you see which way your situation points before you call.</p>
 
       <h2>How you pay</h2>
-      <p><Rich text={end(services.paymentPlans)} /> Before you sign, the attorney explains the deposit, when the balance is due, which payment methods they accept, and how advance fees are held under Illinois or New Jersey rules. You get a receipt.</p>
+      <p><Rich text={end(services.paymentPlans)} /> Before you sign, the attorney explains the deposit, when the balance is due, which payment methods they accept, and how advance fees are held under {SERVED_OR} rules. You get a receipt.</p>
 
       <h2>Fee disclaimer</h2>
       <p>Fees depend on the facts of your situation. The fee shown is a starting point and is not an offer. The final fee is stated in your written engagement agreement. Fees do not include court costs, recording fees or third-party charges.</p>

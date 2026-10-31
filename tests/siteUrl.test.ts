@@ -29,3 +29,17 @@ describe("site URL", () => {
     expect(robots().sitemap).toBe("https://familyfutureplanning.com/sitemap.xml");
   });
 });
+
+describe("served states wording", () => {
+  it("says Illinois only when New Jersey is switched off", async () => {
+    vi.stubEnv("SERVED_STATES", "IL");
+    const { SERVED_AND, SERVED_OR } = await import("@/config/firm");
+    expect([SERVED_AND, SERVED_OR]).toEqual(["Illinois", "Illinois"]);
+  });
+
+  it("names both states when New Jersey is on", async () => {
+    vi.stubEnv("SERVED_STATES", "IL,NJ");
+    const { SERVED_AND, SERVED_OR } = await import("@/config/firm");
+    expect([SERVED_AND, SERVED_OR]).toEqual(["Illinois and New Jersey", "Illinois or New Jersey"]);
+  });
+});

@@ -33,7 +33,7 @@ Until Part 2, the domain points at Vercel but no project claims it, so it shows 
 
 ## Part 2. Make the site live on Vercel (needs Angad's go-ahead)
 
-Before this: every placeholder filled and IL and NJ marked `verified: true` in `src/config/compliance.ts`.
+Before this: every placeholder filled and IL marked `verified: true` in `src/config/compliance.ts`.
 `LAUNCH_CHECK=strict npm run launch-check` must pass, or the production build stops on purpose.
 
 **Vercel plan.** Vercel's free Hobby plan is for personal, non-commercial use. A referral site that generates leads is commercial, so the live project needs Pro
@@ -43,7 +43,7 @@ Before this: every placeholder filled and IL and NJ marked `verified: true` in `
 2. **Environment variables (Production):**
    - `NEXT_PUBLIC_SITE_URL=https://familyfutureplanning.com`
    - `APP_URL=https://familyfutureplanning.com` (sign-in links, invites, alert emails)
-   - `SERVED_STATES=IL,NJ`
+   - `SERVED_STATES=IL` (first launch is Illinois only; add `,NJ` once the attorney signs off on New Jersey)
    - no `SITE_ENV` (that would make it staging)
    - the portal and email secrets from `.env.example` (`SESSION_SECRET`, `MFA_ENCRYPTION_KEY`, `FAMILY_PLAN_KEY`, `DATABASE_URL`, `CRON_SECRET`, `EMAIL_TRANSPORT`, `RESEND_API_KEY`, `EMAIL_FROM`)
    - `OUTBOUND_SEND_MODE=log` until the attorney approves the templates
