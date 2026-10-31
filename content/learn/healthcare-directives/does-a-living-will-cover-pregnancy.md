@@ -107,7 +107,7 @@ No. Some states give a living will no effect during pregnancy, some limit it to 
 
 ## How state law changes this
 
-Besides the pregnancy rule, states differ on the number of witnesses, the use of a notary, the form's wording and how a living will interacts with an agent. Our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides cover the states we serve, and a short consultation can tell you whether your documents say what you think they say.
+Besides the pregnancy rule, states differ on the number of witnesses, the use of a notary, the form's wording and how a living will interacts with an agent. Our [Illinois](/estate-planning/illinois) guide covers the state we serve, and a short consultation can tell you whether your documents say what you think they say.
 
 ## How we can help
 

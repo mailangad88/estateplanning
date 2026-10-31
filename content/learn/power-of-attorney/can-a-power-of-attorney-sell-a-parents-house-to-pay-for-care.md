@@ -98,4 +98,4 @@ If you are not sure whether to sell, speak with an elder law attorney before sig
 
 ## How we can help
 
-Our attorneys help agents decide whether to sell, review the power of attorney for real estate authority, and plan around Medicaid so that proceeds are spent in a way that holds up. Use the [plan finder](/plan-finder), or see our [power of attorney guide](/learn/power-of-attorney) and book a consultation through the [Illinois](/estate-planning/illinois) or [New Jersey](/estate-planning/new-jersey) page.
+Our attorneys help agents decide whether to sell, review the power of attorney for real estate authority, and plan around Medicaid so that proceeds are spent in a way that holds up. Use the [plan finder](/plan-finder), or see our [power of attorney guide](/learn/power-of-attorney) and book a consultation through the [Illinois](/estate-planning/illinois) page.

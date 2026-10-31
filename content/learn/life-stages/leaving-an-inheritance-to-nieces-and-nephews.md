@@ -98,4 +98,4 @@ A will with named nieces and nephews and a backup plan, a financial power of att
 
 ## How we can help
 
-Leaving money to the next generation of your family takes a few clear decisions: who, how much, what if they die first, and who pays any tax. Our attorneys can draft a will or trust for an Illinois or New Jersey resident and show the tax effect in your numbers. Start with the [plan finder](/plan-finder) or book a consultation.
+Leaving money to the next generation of your family takes a few clear decisions: who, how much, what if they die first, and who pays any tax. Our attorneys can draft a will or trust for an Illinois resident and show the tax effect in your numbers. Start with the [plan finder](/plan-finder) or book a consultation.

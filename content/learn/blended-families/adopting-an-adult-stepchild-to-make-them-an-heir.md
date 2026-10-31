@@ -112,4 +112,4 @@ If you are the stepchild, the legal answer is simple: you inherit only if your s
 
 ## How we can help
 
-If you are weighing adoption against a will or trust for a stepchild, our attorneys can lay out what each choice does in Illinois or New Jersey and draft whichever you pick. Start with the [plan finder](/plan-finder) or book a consultation, and bring the names and ages of everyone in the family.
+If you are weighing adoption against a will or trust for a stepchild, our attorneys can lay out what each choice does in Illinois and draft whichever you pick. Start with the [plan finder](/plan-finder) or book a consultation, and bring the names and ages of everyone in the family.

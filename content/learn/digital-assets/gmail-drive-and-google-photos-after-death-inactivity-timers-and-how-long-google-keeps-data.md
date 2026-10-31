@@ -85,7 +85,7 @@ The executor's job is to ask for the least that solves the problem. A family tha
 
 ## How do state laws affect your request?
 
-Both states we serve follow the uniform fiduciary access approach. In Illinois the law is 755 ILCS 70, and in New Jersey it is N.J.S.A. 3B:14-61.1 and the sections after it. In each, an online tool beats a will, a will beats the terms of service, and the content of communications generally needs consent or a court direction. A list of the accounts (without the messages) is easier to get. Our state pages on [Illinois digital assets law](/learn/illinois/illinois-digital-assets-law-for-executors) and [New Jersey digital assets law](/learn/new-jersey/new-jersey-digital-assets-law) give the specifics.
+Illinois and New Jersey both follow the uniform fiduciary access approach. In Illinois the law is 755 ILCS 70, and in New Jersey it is N.J.S.A. 3B:14-61.1 and the sections after it. In each, an online tool beats a will, a will beats the terms of service, and the content of communications generally needs consent or a court direction. A list of the accounts (without the messages) is easier to get. Our state pages on [Illinois digital assets law](/learn/illinois/illinois-digital-assets-law-for-executors) and [New Jersey digital assets law](/learn/new-jersey/new-jersey-digital-assets-law) give the specifics.
 
 Whether the account holder lived in one of those states matters, since the law that applies generally follows where the user lived.
 
