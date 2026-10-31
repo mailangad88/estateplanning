@@ -32,7 +32,7 @@ export const isMergeField = (k: string): k is MergeFieldKey => KEYS.has(k);
 export const fieldLabel = (k: MergeFieldKey) => MERGE_FIELDS.find((f) => f.key === k)!.label;
 
 /** `{{ field }}`, spaces allowed inside the braces. */
-const PLACEHOLDER = /\{\{\s*([a-z_]+)\s*\}\}/g;
+const MERGE_TAG = /\{\{\s*([a-z_]+)\s*\}\}/g;
 
 export type Segment = { text: string } | { field: MergeFieldKey; value?: string };
 
@@ -56,7 +56,7 @@ export function fillTemplate(body: string, values: MergeValues): FillResult {
   const used: MergeFieldKey[] = [];
   let last = 0;
   let text = "";
-  for (const m of body.matchAll(PLACEHOLDER)) {
+  for (const m of body.matchAll(MERGE_TAG)) {
     const before = body.slice(last, m.index);
     if (before) segments.push({ text: before });
     text += before;

@@ -6,7 +6,7 @@ import type { BusinessStructure } from "@/lib/fees";
  * blocks production deploys until they are replaced.
  */
 export const firm = {
-  brandName: "Family Plan Law", // PLACEHOLDER brand name
+  brandName: "Family Future Planning", // matches familyfutureplanning.com
   firmLegalName: "[Firm legal name]",
   attorneyName: "Sargun Singh",
   attorneyTitle: "Estate planning attorney",
@@ -50,7 +50,7 @@ export const firm = {
     ? process.env.NEXT_PUBLIC_CALCOM_LINK!
     : null) as string | null,
   /** Number visitors can text. Must be registered for business texting (10DLC) before launch. Null hides the Text button. */
-  textNumber: "(000) 000-0000" as string | null, // PLACEHOLDER
+  textNumber: null as string | null,
   /**
    * Structure the platform operates under. "in_firm" (Model A in the plan) means
    * the platform is the firm's own marketing and intake department.
@@ -76,11 +76,7 @@ export const firm = {
    * Each number must be a real call-tracking line forwarding to the office before launch.
    */
   trackingNumbers: {
-    "google/cpc": "(000) 000-0000", // PLACEHOLDER Google Ads
-    "bing/cpc": "(000) 000-0000", // PLACEHOLDER Microsoft Ads
-    "facebook/paid_social": "(000) 000-0000", // PLACEHOLDER Meta ads
-    "gbp": "(000) 000-0000", // PLACEHOLDER Google Business Profile (utm_source=gbp)
-    "*/email": "(000) 000-0000", // PLACEHOLDER newsletters and nurture email
+    // Add real call-tracking lines here when they exist, e.g. "google/cpc": "(312) 555-0100".
   } as Record<string, string>,
 };
 
@@ -105,13 +101,48 @@ export const SITE_DISCLAIMER =
 export const SITE_DISCLAIMER_ES =
   "Toda la información de este sitio web es solo educativa. No constituye asesoría legal ni crea una relación abogado-cliente. Este es un sitio de referencias: lo pondremos en contacto con un abogado adecuado.";
 
+/**
+ * Every price the site shows, in one place. Values come from the attorney. A value can be a price
+ * ("$1,800") or a phrase ("Quoted after your first call"); "[Flat fee]" blocks the production build.
+ */
+export const fees = {
+  essentialsOne: "[Flat fee]",
+  essentialsCouple: "[Flat fee]",
+  completeOne: "[Flat fee]",
+  completeCouple: "[Flat fee]",
+  powerOfAttorneyAlone: "[Flat fee]",
+  healthcareDirectiveAlone: "[Flat fee]",
+  trusteeConsult: "[Flat fee]",
+  guidedTrustAdministration: "[Flat fee]",
+  fullTrustAdministration: "[Flat fee]",
+  /** Add-ons on /pricing. */
+  addOn: "[Flat fee]",
+};
+
+/**
+ * What the matched attorney does and does not offer. Only the attorney can answer these; each
+ * "[Attorney: ...]" value blocks the production build until it is filled.
+ */
+export const services = {
+  /** e.g. "Yes, in the Chicago area" or "No, signings are at the office or by video where allowed". */
+  mobileSignings: "[Attorney: home or hospital signings, and the area covered]",
+  /** e.g. "Usually two to three weeks from the design meeting". */
+  turnaround: "[Attorney: typical turnaround]",
+  urgentTurnaround: "[Attorney: turnaround when documents are urgent]",
+  probate: "[Attorney: whether probate is handled, and how it is billed]",
+  guardianship: "[Attorney: whether uncontested guardianship petitions are handled]",
+  paymentPlans: "[Attorney: payment plan terms, or none]",
+  /** What happens after signing: question period, check-up call, review. */
+  afterSigning: "[Attorney: question period and check-up after signing]",
+};
+
 /** Every package includes exactly one round of revisions (Sargun Singh, 2026-10-25). */
 export const PACKAGE_REVISIONS = "One round of revisions to your documents";
 
 /** Flat-fee packages shown on /pricing. Prices are set by the firm. */
 export const packages: Package[] = [
-  { id: "essentials", name: "Essentials", price: "[Flat fee]", for: "One person or a couple with modest assets and no minor children.", includes: ["Will (each spouse)", "Guardian nominations if you have children", "Durable financial power of attorney", "Healthcare power of attorney, living will and HIPAA release", "Signing ceremony", PACKAGE_REVISIONS], excludes: ["Revisions after the first round", "Trust drafting", "Real estate deeds", "Tax planning", "Court proceedings"] },
-  { id: "complete", name: "Complete", price: "[Flat fee]", for: "Homeowners and families with minor children. The usual fit for families with a home, not the right fit for everyone.", includes: ["Revocable living trust", "Pour-over will", "Financial and healthcare powers of attorney", "Living will and HIPAA release", "Deed transfer of your home into the trust", "Funding checklist plus one review", "Signing ceremony", PACKAGE_REVISIONS], excludes: ["Revisions after the first round", "Tax planning beyond the trust", "Deeds not listed in the custom scope", "Court proceedings"] },
+  { id: "essentials", name: "Essentials", price: fees.essentialsOne, for: "One person or a couple with modest assets and no minor children.", includes: ["Will (each spouse)", "Guardian nominations if you have children", "Durable financial power of attorney", "Healthcare power of attorney, living will and HIPAA release", "Signing ceremony", PACKAGE_REVISIONS], excludes: ["Revisions after the first round", "Trust drafting", "Real estate deeds", "Tax planning", "Court proceedings"] },
+  { id: "complete", name: "Complete", price: fees.completeOne, for: "Homeowners and families with minor children. The usual fit for families with a home, not the right fit for everyone.", includes: ["Revocable living trust", "Pour-over will", "Financial and healthcare powers of attorney", "Living will and HIPAA release", "Deed transfer of your home into the trust", "Funding checklist plus one review", "Signing ceremony", PACKAGE_REVISIONS], excludes: ["Revisions after the first round", "Tax planning beyond the trust", "Deeds not listed in the custom scope", "Court proceedings"] },
   { id: "legacy", name: "Legacy", price: "Quote after consult", for: "Blended families, business owners, property in more than one state, special needs planning or larger estates.", includes: ["Everything in Complete", "Special needs or children's trust provisions", "Additional deeds", "Business interest assignment", "Coordination with your financial advisor or CPA", PACKAGE_REVISIONS], excludes: ["Revisions after the first round", "Court proceedings", "Tax return preparation", "Work outside the custom scope"] },
 ];
 

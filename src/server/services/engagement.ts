@@ -38,7 +38,7 @@ export interface EngagementPackage {
   name: string;
   includes: string[];
   excludes: string[];
-  /** PLACEHOLDER amounts: the attorney sets the real fee per engagement */
+  /** Starting amount shown in the portal; the attorney sets the real fee on each engagement. */
   defaultFeeCents: number;
   feeTreatment: FeeTreatment;
 }
@@ -49,7 +49,7 @@ export const PACKAGES: Record<string, EngagementPackage> = {
     name: "Will Package",
     includes: ["Last will and testament", "Durable power of attorney", "Health care directive", "One signing meeting"],
     excludes: ["Trust drafting", "Real estate deeds", "Tax planning", "Court proceedings"],
-    defaultFeeCents: 150000, // PLACEHOLDER
+    defaultFeeCents: 150000, // starting amount, edited per engagement
     feeTreatment: "earned_on_receipt",
   },
   trust_package: {
@@ -57,7 +57,7 @@ export const PACKAGES: Record<string, EngagementPackage> = {
     name: "Revocable Living Trust Package",
     includes: ["Revocable living trust", "Pour-over will", "Durable power of attorney", "Health care directive", "Funding instructions", "One signing meeting"],
     excludes: ["Deed preparation unless listed in custom scope", "Tax planning beyond the trust", "Court proceedings"],
-    defaultFeeCents: 400000, // PLACEHOLDER
+    defaultFeeCents: 400000, // starting amount, edited per engagement
     feeTreatment: "trust_until_milestones",
   },
   couples_trust: {
@@ -65,7 +65,7 @@ export const PACKAGES: Record<string, EngagementPackage> = {
     name: "Couples Trust Package",
     includes: ["Joint or coordinated revocable living trust", "Pour-over wills for each spouse", "Powers of attorney and health care directives for each spouse", "Funding instructions", "One signing meeting"],
     excludes: ["Deed preparation unless listed in custom scope", "Tax planning beyond the trust", "Court proceedings"],
-    defaultFeeCents: 600000, // PLACEHOLDER
+    defaultFeeCents: 600000, // starting amount, edited per engagement
     feeTreatment: "trust_until_milestones",
   },
   special_needs_addon: {
@@ -73,7 +73,7 @@ export const PACKAGES: Record<string, EngagementPackage> = {
     name: "Special Needs Trust Add-on",
     includes: ["Third-party supplemental needs trust", "Letter of intent template"],
     excludes: ["Benefits eligibility applications", "Court proceedings"],
-    defaultFeeCents: 200000, // PLACEHOLDER
+    defaultFeeCents: 200000, // starting amount, edited per engagement
     feeTreatment: "trust_until_milestones",
   },
   administration_flat: {
@@ -81,7 +81,7 @@ export const PACKAGES: Record<string, EngagementPackage> = {
     name: "Trust or Estate Administration (flat fee)",
     includes: ["Guidance through the administration steps for the stated matter", "Required notices and filings listed in the custom scope"],
     excludes: ["Contested matters and litigation", "Tax return preparation", "Court filing fees and costs"],
-    defaultFeeCents: 500000, // PLACEHOLDER
+    defaultFeeCents: 500000, // starting amount, edited per engagement
     feeTreatment: "trust_until_milestones",
   },
 };

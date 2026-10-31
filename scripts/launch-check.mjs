@@ -21,7 +21,9 @@ const SKIP = new Set(["content/STYLE.md", "content/LEARN-STYLE.md", "content/sta
   // Internal research data, never rendered: the question bank holds what people ask, in their words.
   "content/questions.json",
   // The studio's list of words its video scripts must not use.
-  "src/server/studio/wordlists.ts"]);
+  "src/server/studio/wordlists.ts",
+  // Code that detects placeholders, not copy.
+  "src/server/studio/quality.ts"]);
 
 const BANNED = [
   { re: /\bexperts?\b/i, why: "'expert' implies a credential" },
