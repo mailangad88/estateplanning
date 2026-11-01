@@ -10,6 +10,7 @@ import {
   getBacklinks,
   getClusterArticles,
   getClusters,
+  getCounties,
   getGlossary,
   getPillar,
   getStateGuides,
@@ -41,6 +42,9 @@ const validUrls = new Set<string>([
   ...TOOLS.map((t) => `/tools/${t.slug}`),
   ...DECISIONS.map((d) => decisionPath(d.slug)),
   ...getMagnets().map((m) => `/free/${m.slug}`),
+  // Illinois county probate guides (Illinois is the launch state, so these pages are built).
+  ...getCounties("illinois").map((c) => c.url),
+  "/estate-planning/illinois/counties",
   "/book", "/free", "/guides", "/compare", "/blog", "/life-events", "/checklists", "/tools", "/faq", "/resources", "/pricing", "/about", "/contact",
 ]);
 

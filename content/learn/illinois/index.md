@@ -361,6 +361,114 @@ If no one knows whether a will exists, [how to find out if someone left a will i
 
 When an estate stalls, [what heirs can do about a slow Illinois executor](/learn/illinois/what-heirs-can-do-about-a-slow-illinois-executor) explains removal, ending independent administration and the steps to try first.
 
+## Illinois guides by situation
+
+These guides each take one Illinois question further than the overview above. Pick the one that matches where you are.
+
+### Opening and running an Illinois probate estate
+
+- [How to open a probate estate in Illinois, step by step](/learn/illinois/how-to-open-a-probate-estate-in-illinois): The first weeks of an Illinois estate: what to gather, where to file, what the hearing is and when letters arrive.
+- [Filing the original will with the Illinois circuit clerk: the duty and the 30-day clocks](/learn/illinois/filing-the-original-will-with-the-illinois-circuit-clerk): The duty to file the original will with the clerk and how the two 30-day clocks in section 6-3 work.
+- [The Illinois petition for probate and letters of office: what goes in it](/learn/illinois/illinois-petition-for-letters-of-office): What the petition to admit a will and issue letters must say, from heir lists to the independent administration request.
+- [Notice to heirs and legatees in an Illinois probate case: who gets it and when](/learn/illinois/notice-to-heirs-and-legatees-in-illinois-probate): Who must receive the 14-day notice after a will is admitted, what it says, and the 42-day and six-month rights it starts.
+- [The Illinois probate inventory: what an executor lists and when](/learn/illinois/illinois-probate-inventory): What goes on the verified inventory, how to value assets, and how independent and supervised estates treat it differently.
+- [Which Illinois county handles probate when property is in more than one county](/learn/illinois/probate-venue-property-in-two-illinois-counties): Why one Illinois case covers land in many counties, and how venue works for non-residents.
+- [What a guardian ad litem does in an Illinois probate case](/learn/illinois/guardian-ad-litem-in-illinois-probate): When a judge appoints a guardian ad litem for a minor, disabled or unknown heir, what they do and who pays.
+- [Opening a safe deposit box after a death in Illinois](/learn/illinois/safe-deposit-box-after-a-death-in-illinois): The will-search statute versus full removal of box contents with letters or an affidavit.
+- [Seven things that slow down an Illinois probate case, and how to prevent them](/learn/illinois/what-slows-down-illinois-probate): Seven preventable causes of delay in an Illinois estate and a fix for each.
+- [Serving as executor of an Illinois estate when you live in another state](/learn/illinois/non-resident-executor-in-illinois): Illinois rules for an out-of-state executor: residency, bond, remote tasks and local help.
+- [Court fees and fee waivers in Illinois probate](/learn/illinois/illinois-probate-fee-waiver): How Illinois probate court fees work, who can ask for a waiver under 735 ILCS 5/5-105, and cheaper alternatives.
+- [Reopening a closed Illinois estate when an asset turns up later](/learn/illinois/reopening-a-closed-illinois-estate): Options when an asset surfaces after an Illinois estate closes: direct claim, affidavit or new letters.
+
+### Small estates and assets that skip probate in Illinois
+
+- [Who signs an Illinois small estate affidavit, and what the signer takes on](/learn/illinois/who-signs-an-illinois-small-estate-affidavit): Explains who the affiant is, how families choose one, what they swear to and the personal liability that follows.
+- [Using an Illinois small estate affidavit at a bank or brokerage](/learn/illinois/using-an-illinois-small-estate-affidavit-at-a-bank): A holder-by-holder guide to presenting the affidavit at banks, brokerages, transfer agents, employers and insurers.
+- [When an Illinois estate is just over the $150,000 small estate limit](/learn/illinois/illinois-estate-just-over-the-small-estate-limit): Shows how to count honestly near the limit and which court route fits when the estate is over.
+- [Naming beneficiaries on an Illinois TODI: co-owners, backups and lapse](/learn/illinois/todi-beneficiaries-and-contingent-beneficiaries-in-illinois): Covers shares among several beneficiaries, contingent backups, lapse and minors on a transfer on death instrument.
+- [Recording an Illinois transfer on death instrument with the county recorder](/learn/illinois/recording-an-illinois-todi): Walks through recording a TODI before death, where to file, why filings are rejected and how to confirm it.
+- [After the owner dies: the notice of death affidavit for an Illinois TODI](/learn/illinois/notice-of-death-affidavit-for-an-illinois-todi): A beneficiary's checklist for recording the notice of death affidavit and then keeping or selling the house.
+- [Can creditors or Medicaid reach a house passed by an Illinois TODI?](/learn/illinois/todi-creditors-and-medicaid-in-illinois): Explains that a TODI avoids probate but not creditor claims, and lists questions to ask about HFS recovery.
+- [TODI or living trust for an Illinois house: a side-by-side decision](/learn/illinois/todi-vs-living-trust-for-an-illinois-house): Compares cost, control, incapacity, minors and blended families to pick between a TODI and a living trust.
+- [Transfer on death registration for stocks and brokerage accounts in Illinois](/learn/illinois/transfer-on-death-brokerage-accounts-in-illinois): Explains TOD registration under 815 ILCS 10, how to set it up, how beneficiaries claim and the basis step-up.
+- [Joint bank accounts in Illinois when the co-owner was only there to help](/learn/illinois/convenience-accounts-and-joint-account-disputes-in-illinois): Shows how Illinois treats convenience accounts at death, what evidence families use and how to avoid a dispute.
+- [Life insurance with no living beneficiary in Illinois: when the payout goes through probate](/learn/illinois/life-insurance-with-no-living-beneficiary-in-illinois): Explains default payout orders, estate payouts, divorce rules and how to find and claim a policy.
+- [401(k) and IRA beneficiaries for Illinois married couples: spousal consent rules](/learn/illinois/retirement-account-beneficiaries-and-spousal-consent-in-illinois): Explains when federal law requires spousal consent, how to get a valid waiver and what Illinois adds.
+
+### Illinois estate tax and inheritance taxes
+
+- [Illinois estate tax worked examples: $4.5 million, $5 million and $7 million estates](/learn/illinois/illinois-estate-tax-worked-examples): Worked Illinois estate tax figures for $4.5, $5 and $7 million estates, and how a trust brings a couple to zero.
+- [Illinois Form 700: who files the estate tax return, when, and what goes with it](/learn/illinois/illinois-form-700-estate-tax-return): Who files Illinois Form 700, the nine-month deadline, what to gather and attach, and where the return and payment go.
+- [Illinois estate tax for people who live elsewhere but own Illinois property](/learn/illinois/illinois-estate-tax-for-nonresidents): How Illinois taxes a nonresident's Illinois real estate and tangible property, and how the tax is apportioned.
+- [Credit shelter trusts and the Illinois QTIP election for married couples](/learn/illinois/illinois-qtip-election-and-credit-shelter-trusts): How couples use credit shelter trusts and the separate Illinois QTIP election to use both $4 million exclusions.
+- [Life insurance and the Illinois estate tax: when a policy pushes an estate over $4 million](/learn/illinois/life-insurance-and-the-illinois-estate-tax): When a life insurance policy you own pushes an estate over $4 million, and ownership and ILIT options.
+- [Using charitable gifts to lower the Illinois estate tax](/learn/illinois/charitable-gifts-and-the-illinois-estate-tax): How charitable bequests lower the Illinois estate tax and what a gift really costs the family near the $4 million line.
+- [Illinois estate tax vs. federal estate tax: why a $5 million estate can owe one and not the other](/learn/illinois/illinois-vs-federal-estate-tax): Side-by-side comparison of the Illinois $4 million and federal $15 million estate taxes, portability, forms and deadlines.
+- [Lifetime gifts and the Illinois estate tax: no gift tax, but gifts still count](/learn/illinois/lifetime-gifts-and-the-illinois-estate-tax): Why Illinois has no gift tax but adds taxable gifts back, with numbers on annual-exclusion versus large gifts.
+- [Late Illinois estate tax: interest, penalties and extensions](/learn/illinois/illinois-estate-tax-late-filing-interest-and-penalties): Form 700 late filing and payment penalties, interest, extensions and a worked cost of filing late.
+
+### Illinois wills: signing, validity and challenges
+
+- [Are handwritten wills valid in Illinois?](/learn/illinois/handwritten-wills-in-illinois): Illinois has no handwritten-will exception, so a will in your own hand still needs two witnesses, and an unwitnessed one fails to intestacy.
+- [The Illinois Electronic Wills and Remote Witnesses Act: e-signatures and video witnessing](/learn/illinois/illinois-electronic-wills-and-remote-witnesses-act): Compares the three Illinois signing paths (paper, video witnesses, fully electronic) and what executors need under 755 ILCS 6.
+- [Undue influence in Illinois will contests: the presumption and how it is proved](/learn/illinois/undue-influence-will-challenges-in-illinois): Explains the four-part test that raises a presumption of undue influence in Illinois, the evidence that rebuts it and a step list for proof.
+- [Testamentary capacity in Illinois: what a person must understand to sign a will](/learn/illinois/testamentary-capacity-in-illinois): Describes the sound mind and memory standard, the dementia and guardianship rules, and how to document capacity.
+- [When the original will cannot be found in Illinois: copies and the presumption of revocation](/learn/illinois/lost-original-will-in-illinois): Shows how Illinois presumes a missing will was revoked and what proof lets a family admit a copy.
+- [Do no-contest clauses work in Illinois wills and trusts?](/learn/illinois/no-contest-clauses-in-illinois): Explains how Illinois courts read no-contest clauses, who they reach and how to weigh the risk before suing or drafting one.
+- [Renouncing a will as a surviving spouse in Illinois: the share, the deadline and the trade-offs](/learn/illinois/renouncing-a-will-as-a-surviving-spouse-in-illinois): A decision guide with a worked comparison for a spouse choosing between the will and the one-third or one-half share within 7 months.
+- [An estate plan for a single parent in Illinois: guardian, money and the other parent](/learn/illinois/estate-plan-for-a-single-parent-in-illinois): A checklist for single parents covering guardian, trust or UTMA money, emergency guardian papers and the other parent's rights.
+- [Leaving a charitable gift in an Illinois will or trust](/learn/illinois/leaving-a-gift-to-a-charity-in-an-illinois-will): Compares ways to give to charity in Illinois, with IRA tax math, sample wording and steps to check the charity.
+
+### Who inherits in Illinois: family situations
+
+- [Do grandchildren inherit in Illinois when their parent has died?](/learn/illinois/do-grandchildren-inherit-in-illinois): How per stirpes representation, the anti-lapse rule and beneficiary forms decide whether grandchildren take a dead parent's share.
+- [Do half siblings inherit in Illinois?](/learn/illinois/half-siblings-inheritance-in-illinois): Half siblings take the same share as full siblings under 755 ILCS 5/2-1, with worked splits and the proof they need.
+- [Stepchildren and inheritance in Illinois: who gets what without a will](/learn/illinois/stepchildren-and-inheritance-in-illinois): Three family cases showing why stepchildren inherit only through their own parent, adoption or a document.
+- [Adopted children and inheritance in Illinois](/learn/illinois/adopted-children-inheritance-in-illinois): How 755 ILCS 5/2-4 treats adopted children, the birth-family exceptions and what foster children lack.
+- [Inheritance rights of children born outside marriage in Illinois](/learn/illinois/children-born-outside-marriage-inheritance-in-illinois): The ways to prove paternity under 755 ILCS 5/2-2 and the steps for a child or an administrator.
+- [What happens to property in Illinois when there are no heirs at all](/learn/illinois/dying-with-no-heirs-in-illinois): The public administrator, the heir search, payment order and the final escheat to county or state.
+- [Illinois rules that stop a killer or abuser from inheriting](/learn/illinois/illinois-slayer-and-financial-exploitation-rules): The slayer rule and the separate exploitation, abuse and neglect bars, with steps for families.
+- [Lifetime gifts and advancements: does an early gift reduce an Illinois inheritance?](/learn/illinois/advancements-lifetime-gifts-and-inheritance-in-illinois): Why a lifetime gift is usually just a gift, how an advancement changes the math and how to document intent.
+- [Does an ex-spouse inherit in Illinois? Divorce, wills and beneficiary forms](/learn/illinois/ex-spouse-and-inheritance-in-illinois): A document-by-document table of what divorce cancels in Illinois and what an ex can still collect.
+- [The Illinois spouse's award and child's award: money for the family during probate](/learn/illinois/surviving-spouse-award-in-illinois): How to claim the spouse's award, how it ranks against debts, with a worked estate example.
+- [When nieces, nephews and cousins inherit in Illinois](/learn/illinois/nieces-nephews-and-cousins-inheritance-in-illinois): How the statute reaches nieces, nephews, aunts, uncles and cousins, with two-sided splits worked out.
+
+### Illinois powers of attorney and health care decisions
+
+- [Filling out the Illinois statutory short form power of attorney for property, section by section](/learn/illinois/filling-out-the-illinois-statutory-short-form-poa-for-property): A paragraph-by-paragraph walk through the 755 ILCS 45/3-3 form, with common mistakes and a worked example.
+- [Co-agents and successor agents in an Illinois power of attorney](/learn/illinois/co-agents-and-successor-agents-in-illinois): Why the Illinois short forms allow successors but not co-agents, and the default majority-consent rule for custom documents.
+- [What an Illinois power of attorney agent must do: duties, records and accountings](/learn/illinois/illinois-poa-agent-duties-and-record-keeping): The agent's statutory duties, a practical record system and who can demand an accounting.
+- [What to do when a bank refuses an Illinois power of attorney](/learn/illinois/bank-refuses-an-illinois-power-of-attorney): How 755 ILCS 45/2-8 separates reasonable from unreasonable refusals, with a letter and escalation plan.
+- [Can an Illinois agent make gifts or change beneficiaries? The powers you must grant on purpose](/learn/illinois/illinois-poa-gifting-and-beneficiary-change-powers): Power-by-power table of what the Illinois short form withholds and how to draft gift and trust powers with limits.
+- [Using an Illinois power of attorney in another state, or an out-of-state one in Illinois](/learn/illinois/using-an-illinois-power-of-attorney-in-another-state): How powers of attorney travel across state lines, with a packet checklist and when to sign a second document.
+- [Why Social Security will not accept your Illinois power of attorney, and what to do instead](/learn/illinois/social-security-and-an-illinois-power-of-attorney): Representative payee and appointed representative routes, and how they fit with the Illinois agent's powers.
+- [Asking an Illinois court to make a power of attorney agent account for money](/learn/illinois/court-accounting-for-an-illinois-poa-agent): How to request, document and petition for an accounting under 755 ILCS 45/2-10.
+- [Who can and cannot witness an Illinois health care power of attorney](/learn/illinois/witness-rules-for-an-illinois-health-care-power-of-attorney): A who-can-witness table for the one-witness, no-notary health care form.
+- [How an Illinois health care agent decides about life support](/learn/illinois/illinois-health-care-agent-life-support-decisions): A step-by-step approach for agents facing ventilator, CPR and comfort care choices.
+- [Getting a loved one's medical records after a death in Illinois](/learn/illinois/medical-records-after-a-death-in-illinois): Who can request a deceased person's records under HIPAA and Illinois law, and how to ask provider by provider.
+
+### Illinois guardianship and disability planning
+
+- [Who can file for adult guardianship in Illinois, and what the petition needs](/learn/illinois/who-can-file-for-adult-guardianship-in-illinois): Who may petition for an adult guardian, what the physician's report and petition must contain, and what to gather before filing.
+- [Rights of the person in an Illinois guardianship case: notice, a lawyer, a jury](/learn/illinois/rights-of-the-person-in-an-illinois-guardianship-case): The notice, hearing, lawyer, guardian ad litem and jury rights of the adult facing a guardianship petition.
+- [Guardian of the person vs. guardian of the estate in Illinois](/learn/illinois/guardian-of-the-person-vs-guardian-of-the-estate-in-illinois): What each adult guardian role does under 755 ILCS 5/11a-17 and 11a-18, and how courts split or combine them.
+- [Limited vs. plenary guardianship in Illinois](/learn/illinois/limited-vs-plenary-guardianship-in-illinois): Why Illinois favors limited orders, when plenary is used, and how the powers are worded.
+- [Temporary guardianship in Illinois for an emergency](/learn/illinois/temporary-guardianship-in-illinois): The 60-day emergency guardian under 755 ILCS 5/11a-4: what to show, what powers, and what follows.
+- [Ending or changing an Illinois guardianship](/learn/illinois/ending-or-changing-an-illinois-guardianship): How to modify, terminate or replace a guardian, and the evidence the court wants.
+- [What adult guardianship costs in Illinois, and who pays](/learn/illinois/cost-of-guardianship-in-illinois): A line-by-line cost breakdown for an Illinois adult guardianship case and ongoing duties, and who normally pays.
+- [Grandparents becoming guardian of a grandchild in Illinois](/learn/illinois/grandparent-guardianship-of-a-grandchild-in-illinois): How a grandparent raising a grandchild gets legal authority: short-term papers, minor guardianship and the parent's role.
+- [Annual reports and accountings for an Illinois guardian](/learn/illinois/illinois-guardian-reports-and-accountings): What a guardian of the person and of the estate must file, and how to keep clean records.
+- [Guardian bonds in Illinois: when one is required and how to get it](/learn/illinois/illinois-guardian-bond): When an estate guardian needs a surety bond, how the amount is set under 755 ILCS 5/12-5, cost and ways to reduce it.
+- [The Illinois PUNS waiting list and planning for an adult child with a developmental disability](/learn/illinois/puns-waiting-list-and-estate-planning-in-illinois): What PUNS is, how to register, and the trust and letter-of-intent planning to do while waiting for services.
+
+### Illinois trusts and long-term care
+
+- [Funding a living trust in Illinois: deeds, accounts and the assets people miss](/learn/illinois/funding-a-living-trust-in-illinois): The Illinois deed, recording and transfer tax steps for funding a trust, an asset-by-asset retitling table, and the assets most often missed.
+- [What happens in Illinois when a living trust was never funded](/learn/illinois/unfunded-living-trust-in-illinois): Which Illinois route (affidavit, probate or beneficiary form) each unfunded asset takes, with a worked example around the $150,000 affidavit limit.
+- [An Illinois successor trustee's first 90 days: a working checklist](/learn/illinois/illinois-successor-trustee-first-90-days): A day-by-day checklist built around the 30-day will filing and the 90-day beneficiary notice under 760 ILCS 3/813.1.
+- [Pour-over wills in Illinois: why a trust still needs a will](/learn/illinois/pour-over-wills-in-illinois): How a pour-over will works under 755 ILCS 5/4-4, its signing and filing rules, and what it does that a trust cannot.
+- [What happens to a revocable trust in Illinois after divorce](/learn/illinois/revocable-trust-after-divorce-in-illinois): What 760 ILCS 3/605 does and does not do to a revocable or joint trust after an Illinois divorce, with a cleanup checklist.
+
 ## How we can help
 
 Our attorneys can read your documents, explain which Illinois rules apply and prepare what is missing. The [plan finder](/plan-finder) shows which documents fit your situation, and you can book a consultation from there. This page is general education and is pending attorney review.

@@ -25,6 +25,21 @@
     ["trust", "Trust"], ["trustee", "Trustee"], ["undue-influence", "Undue influence"],
     ["utma", "UTMA account"], ["able-account", "ABLE account"], ["buy-sell-agreement", "Buy-sell agreement"],
     ["digital-assets", "Digital assets"], ["fiduciary-duty", "Fiduciary duty"], ["intestate-succession", "Intestate succession"],
-    ["testamentary-capacity", "Testamentary capacity"], ["dnr", "Do-not-resuscitate order (DNR)"], ["generation-skipping-transfer-tax", "Generation-skipping transfer tax"]
+    ["testamentary-capacity", "Testamentary capacity"], ["dnr", "Do-not-resuscitate order (DNR)"], ["generation-skipping-transfer-tax", "Generation-skipping transfer tax"], ["letters-of-office", "Letters of office"],
+    ["letters-of-administration", "Letters of administration"], ["independent-administration", "Independent administration"], ["supervised-administration", "Supervised administration"],
+    ["independent-representative", "Independent representative"], ["spouses-award", "Spouse's award"], ["childs-award", "Child's award"],
+    ["renunciation-of-will", "Renunciation of will"], ["affidavit-of-heirship", "Affidavit of heirship"], ["transfer-on-death-instrument", "Transfer on death instrument (TODI)"],
+    ["notice-of-death-affidavit", "Notice of death affidavit"], ["claims-bar-date", "Claims bar date"], ["legatee", "Legatee"],
+    ["probate-inventory", "Probate inventory"], ["surety-bond", "Surety bond"], ["waiver-of-bond", "Waiver of bond"],
+    ["guardian-ad-litem", "Guardian ad litem"], ["health-care-surrogate", "Health care surrogate"], ["decanting", "Decanting"],
+    ["nonjudicial-settlement-agreement", "Nonjudicial settlement agreement"], ["land-trust", "Land trust"], ["homestead-exemption", "Homestead exemption"],
+    ["escheat", "Escheat"], ["advancement", "Advancement"], ["slayer-rule", "Slayer rule"],
+    ["attestation-clause", "Attestation clause"], ["standby-guardian", "Standby guardian"], ["short-term-guardian", "Short-term guardian"],
+    ["plenary-guardianship", "Plenary guardianship"], ["limited-guardianship", "Limited guardianship"], ["community-spouse-resource-allowance", "Community spouse resource allowance"],
+    ["medicaid-estate-recovery", "Medicaid estate recovery"], ["credit-shelter-trust", "Credit shelter trust"], ["irrevocable-life-insurance-trust", "Irrevocable life insurance trust (ILIT)"],
+    ["domicile", "Domicile"], ["citation-to-recover-assets", "Citation to recover assets"], ["final-account", "Final account"],
+    ["formal-proof-of-will", "Formal proof of will"], ["trust-protector", "Trust protector"], ["successor-agent", "Successor agent"],
+    ["co-agent", "Co-agent"], ["statutory-short-form-power-of-attorney", "Statutory short form power of attorney"], ["illinois-form-700", "Illinois Form 700"],
+    ["publication-of-notice", "Publication of notice"]
   ]
 }
