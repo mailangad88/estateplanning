@@ -136,6 +136,8 @@ Whoever holds the will must file it with the clerk of the circuit court immediat
 
 <!-- visual: whatif id=lost-original-will -->
 
+Not sure you need one at all? [Do I need a will in Illinois if I don't have much?](/learn/illinois/do-i-need-a-will) counts what most people own without noticing, and [what estate planning costs in Illinois](/learn/illinois/estate-planning-cost) lays out the flat fees.
+
 ## How we can help
 
 Getting a will signed correctly is simple when someone walks you through it. Our attorneys can prepare your will, arrange proper witnesses and an attestation clause, and explain whether a video signing makes sense for you. Start with our [plan finder](/plan-finder), or see our [Illinois estate planning page](/estate-planning/illinois) to book a consultation.

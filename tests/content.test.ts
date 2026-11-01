@@ -3,6 +3,7 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { DECISIONS, decisionPath } from "@/config/decisions";
 import { TOOLS } from "@/config/tools";
+import { getMagnets } from "@/lib/magnets";
 import { getChecklists, getComparisons, getGuides, getLifeEvents, getPosts } from "@/lib/content";
 import {
   getAllArticles,
@@ -39,7 +40,8 @@ const validUrls = new Set<string>([
   ...getChecklists().map((c) => `/checklists/${c.slug}`),
   ...TOOLS.map((t) => `/tools/${t.slug}`),
   ...DECISIONS.map((d) => decisionPath(d.slug)),
-  "/guides", "/compare", "/blog", "/life-events", "/checklists", "/tools", "/faq", "/resources", "/pricing", "/about", "/contact",
+  ...getMagnets().map((m) => `/free/${m.slug}`),
+  "/book", "/free", "/guides", "/compare", "/blog", "/life-events", "/checklists", "/tools", "/faq", "/resources", "/pricing", "/about", "/contact",
 ]);
 
 const allPages = [...articles, ...glossary, ...states];

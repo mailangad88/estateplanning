@@ -103,6 +103,8 @@ Choosing the right person matters. Our guides on [how to choose a guardian](/lea
 
 <!-- visual: picker id=guardian -->
 
+Parents choosing who would raise their children can start with [naming a guardian for your children in Illinois](/learn/illinois/naming-a-guardian-for-your-children). If a parent already has dementia and never signed a power of attorney, read [dementia with no power of attorney in Illinois](/learn/illinois/dementia-no-power-of-attorney).
+
 ## How we can help
 
 Our attorneys can help you name a guardian for your children in your will, put powers of attorney in place so your family avoids court, or review a guardianship situation already underway. Start with the [plan finder](/plan-finder) or book a consultation. Our [Illinois estate planning page](/estate-planning/illinois) has more information.

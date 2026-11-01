@@ -201,6 +201,36 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+If your child with a disability is approaching 18, [turning 18 with a disability in Illinois](/learn/illinois/turning-18-with-a-disability) compares guardianship, supported decision-making, SSI changes and ABLE accounts.
+
+If you own an Illinois LLC, [what happens to it when you die](/learn/illinois/llc-owner-dies) explains who can sign, what heirs receive and how a buy-sell agreement fits.
+
+If you are single with no children, [who inherits and who decides your care in Illinois](/learn/illinois/no-spouse-no-children) shows the default lists and the documents that replace them.
+
+If siblings disagree about an inherited house, [the four ways out in Illinois](/learn/illinois/siblings-disagree-inherited-house) run from a family talk to a partition case.
+
+If a parent wants to pay the child who cares for them, [paying a family caregiver in Illinois](/learn/illinois/paying-a-family-caregiver) explains the written agreement that keeps Medicaid from calling it a gift.
+
+If a neighbor has told you to put your house in a land trust, [should I put my Chicago house in a land trust, a living trust, or both](/learn/illinois/land-trust-vs-living-trust) matches each kind of owner to the right setup.
+
+If you live with a partner and are not married or in a civil union, [unmarried partner inheritance in Illinois](/learn/illinois/unmarried-partners) shows what your partner gets by default and which documents change it.
+
+If you think you own too little to need one, [do I need a will in Illinois if I don't have much](/learn/illinois/do-i-need-a-will) helps you count your assets and shows what the state does by default.
+
+To compare our published flat fees with online forms and hourly lawyers, read [how much estate planning costs in Illinois and Chicago](/learn/illinois/estate-planning-cost).
+
+If you are wondering who would raise your children, [naming a guardian for your children in Illinois](/learn/illinois/naming-a-guardian-for-your-children) explains the will clause, what happens without one, and how to choose when spouses disagree.
+
+For second marriages, [blended family inheritance in Illinois](/learn/illinois/blended-family-inheritance) shows how the default rules treat stepchildren and how a spouse's right to renounce the will shapes your plan.
+
+If your spouse just died and the bank froze the account, [what to do about frozen accounts, bills and the house in the first weeks](/learn/illinois/spouse-died-in-illinois-frozen-accounts-bills-and-the-house) sorts out what freezes and what does not.
+
+If a parent has dementia and never signed one, [whether it is too late for a power of attorney in Illinois](/learn/illinois/dementia-no-power-of-attorney) explains how capacity is judged and when guardianship is the route.
+
+If a parent died and the house is still in their name, [what to do in Illinois](/learn/illinois/parent-died-house-in-their-name) lays out the order families usually go in.
+
+If a title company will not accept an affidavit, [heirship affidavit vs probate in Cook County](/learn/illinois/heirship-affidavit-vs-probate) explains the three papers it may ask for.
+
 If a parent wants to stay home, the [Illinois Community Care Program](/learn/illinois/illinois-community-care-program-in-home-care-for-older-adults) explains who qualifies, the $17,500 asset rule, and when the state can recover costs.
 
 If an owner deferred property taxes, the [Illinois senior tax deferral program](/learn/illinois/illinois-senior-citizens-property-tax-deferral-program-and-what-heirs-repay) explains the lien and what heirs must repay.
