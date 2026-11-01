@@ -104,7 +104,8 @@ def reset_scene(fps, scale, threads):
     cam_data.type = "ORTHO"
     cam_data.ortho_scale = FRAME_H  # ortho_scale covers the longer side
     cam = bpy.data.objects.new("Camera", cam_data)
-    cam.location = (0, 0, 10)
+    cam.location = (0, 0, 30)
+    cam_data.clip_end = 100
     scene.collection.objects.link(cam)
     scene.camera = cam
     return scene
@@ -335,7 +336,7 @@ def build_steps(s, start, end, fps, fonts):
     for i, item in enumerate(items):
         y = y0 - i * gap
         dot = circle(0.38, "clay", x=-3.4, y=y)
-        num = text(str(i + 1), 0.42, "paper", x=-3.4, y=y, width=1.0, font=fonts["bold"], z=0.15)
+        num = text(str(i + s.get("start", 1)), 0.42, "paper", x=-3.4, y=y, width=1.0, font=fonts["bold"], z=0.15)
         line = text(item, 0.42, "ink", x=-2.7, y=y, width=6.3, align="LEFT", font=fonts["body"])
         for ob in (dot, num, line):
             pop_in(ob, start, fps, delay=0.2 + i * per, dist=0.3)
@@ -423,6 +424,104 @@ def build_end(s, start, end, fps, fonts):
     return objs
 
 
+def shaded_material(name, col):
+    """Emission material lit by the face normal: flat, noise-free 3D shading at one sample."""
+    key = f"shade_{name}_{col}"
+    if key in _materials:
+        return _materials[key]
+    m = bpy.data.materials.new(key)
+    m.use_nodes = True
+    nt = m.node_tree
+    for n in list(nt.nodes):
+        nt.nodes.remove(n)
+    out = nt.nodes.new("ShaderNodeOutputMaterial")
+    em = nt.nodes.new("ShaderNodeEmission")
+    geo = nt.nodes.new("ShaderNodeNewGeometry")
+    dot = nt.nodes.new("ShaderNodeVectorMath")
+    dot.operation = "DOT_PRODUCT"
+    dot.inputs[1].default_value = (0.45, -0.55, 0.7)
+    rng = nt.nodes.new("ShaderNodeMapRange")
+    rng.inputs["From Min"].default_value = -1.0
+    rng.inputs["From Max"].default_value = 1.0
+    rng.inputs["To Min"].default_value = 0.55
+    rng.inputs["To Max"].default_value = 1.08
+    mul = nt.nodes.new("ShaderNodeVectorMath")
+    mul.operation = "SCALE"
+    mul.inputs[0].default_value = color(col)[:3]
+    nt.links.new(geo.outputs["Normal"], dot.inputs[0])
+    nt.links.new(dot.outputs["Value"], rng.inputs["Value"])
+    nt.links.new(rng.outputs["Result"], mul.inputs["Scale"])
+    nt.links.new(mul.outputs["Vector"], em.inputs["Color"])
+    nt.links.new(em.outputs[0], out.inputs[0])
+    _materials[key] = m
+    return m
+
+
+def _box(parent, size, loc, col):
+    bpy.ops.mesh.primitive_cube_add(size=1, location=loc)
+    ob = bpy.context.active_object
+    ob.scale = size
+    ob.data.materials.append(shaded_material("box", col))
+    ob.parent = parent
+    return ob
+
+
+def build_house(s, start, end, fps, fonts):
+    """A low-poly 3D house that turns slowly, with the line from the script under it."""
+    objs = []
+    pivot = bpy.data.objects.new("house_pivot", None)
+    bpy.context.scene.collection.objects.link(pivot)
+    pivot.location = (0, 1.2, -6.0)
+    pivot.rotation_mode = "ZXY"  # spin around the house's own up axis first, then tilt toward the camera
+    pivot.rotation_euler = (math.radians(-64), 0, math.radians(-30))
+    parts = [
+        _box(pivot, (6.0, 6.0, 0.1), (0, 0, -0.05), "sage"),            # lawn
+        _box(pivot, (3.4, 2.6, 2.0), (0, 0, 1.0), "sand"),               # walls
+        _box(pivot, (0.7, 0.08, 1.2), (0.3, -1.33, 0.6), "clay"),         # door
+        _box(pivot, (0.6, 0.08, 0.55), (-0.9, -1.33, 1.25), "gold"),      # window
+        _box(pivot, (0.6, 0.08, 0.55), (1.15, -1.33, 1.25), "gold"),      # window
+        _box(pivot, (0.4, 0.4, 1.0), (1.0, 0.5, 2.9), "clay"),            # chimney
+        _box(pivot, (1.6, 1.0, 0.08), (0.3, -2.4, 0.04), "paper"),        # path
+    ]
+    bpy.ops.mesh.primitive_cone_add(vertices=4, radius1=2.75, depth=1.5, location=(0, 0, 2.75), rotation=(0, 0, math.radians(45)))
+    roof = bpy.context.active_object
+    roof.scale = (1.0, 0.8, 1.0)
+    roof.data.materials.append(shaded_material("roof", "accent"))
+    roof.parent = pivot
+    parts.append(roof)
+    if s.get("sign"):
+        post = _box(pivot, (0.12, 0.12, 1.2), (-2.2, -2.2, 0.6), "ink")
+        board = _box(pivot, (1.3, 0.08, 0.7), (-2.2, -2.2, 1.3), "paper")
+        parts += [post, board]
+    # turn slowly across the scene, and pop in
+    pivot.keyframe_insert("rotation_euler", index=2, frame=start)
+    pivot.rotation_euler[2] = math.radians(-30 + s.get("turn", 40))
+    pivot.keyframe_insert("rotation_euler", index=2, frame=end)
+    pivot.scale = (0.6, 0.6, 0.6)
+    pivot.keyframe_insert("scale", frame=start)
+    pivot.scale = (1, 1, 1)
+    pivot.keyframe_insert("scale", frame=start + int(0.5 * fps))
+    for fc in _fcurves(pivot):
+        if fc.data_path == "rotation_euler":
+            for kp in fc.keyframe_points:
+                kp.interpolation = "SINE"
+                kp.easing = "EASE_IN_OUT"
+        if fc.data_path == "scale":
+            for kp in fc.keyframe_points:
+                kp.interpolation = "BACK"
+                kp.easing = "EASE_OUT"
+    objs += parts
+    if s.get("kicker"):
+        k = text(s["kicker"].upper(), 0.34, "clay", y=6.2, font=fonts["bold"], z=3)
+        pop_in(k, start, fps)
+        objs.append(k)
+    if s.get("text"):
+        t = text(s["text"], s.get("size", 0.52), "ink", y=-3.7, width=7.8, font=fonts["bold"], z=3)
+        pop_in(t, start, fps, delay=0.3)
+        objs.append(t)
+    return objs
+
+
 BUILDERS = {
     "hook": build_hook,
     "point": build_point,
@@ -430,6 +529,7 @@ BUILDERS = {
     "steps": build_steps,
     "myth": build_myth,
     "broll": build_broll,
+    "house": build_house,
     "end": build_end,
 }
 

@@ -107,6 +107,15 @@ describe("social video calendar", () => {
     }
   });
 
+  it("sends 3D house scenes to Blender and everything else to Remotion", () => {
+    for (const v of cal.videos) {
+      expect(["remotion", "blender"]).toContain(v.renderer);
+      const hasHouse = v.blender.scenes.some((s) => s.type === "house");
+      expect(hasHouse, v.id).toBe(v.renderer === "blender");
+    }
+    expect(cal.videos.filter((v) => v.renderer === "remotion").length).toBeGreaterThan(cal.videos.length / 2);
+  });
+
   it("keeps AI b-roll to objects and places", () => {
     for (const v of cal.videos.filter((x) => x.seedance)) expect(v.seedance!.prompt).toMatch(/no people/i);
   });

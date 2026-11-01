@@ -47,10 +47,11 @@
             "seconds": 5.5
           },
           {
-            "type": "point",
-            "text": "A house skips court only if the paperwork already moved it: a trust, a TODI, or a joint deed.",
+            "type": "house",
             "kicker": "What decides it",
-            "seconds": 7.5
+            "text": "A house skips court only if the paperwork already moved it: a trust, a TODI, or a joint deed.",
+            "seconds": 7.5,
+            "sign": true
           },
           {
             "type": "point",
@@ -99,7 +100,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#ProtectYourFamily"
-      ]
+      ],
+      "renderer": "blender"
     },
     {
       "id": "v02",
@@ -165,7 +167,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#MoneyTips"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v03",
@@ -231,7 +234,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#PersonalFinance"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v04",
@@ -295,7 +299,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#EstatePlanningQuestions"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v05",
@@ -351,7 +356,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#MythBusting"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v06",
@@ -418,7 +424,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#Checklist"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v07",
@@ -487,7 +494,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#ProtectYourFamily"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v08",
@@ -553,7 +561,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#ProtectYourFamily"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v09",
@@ -577,9 +586,9 @@
             "seconds": 5.0
           },
           {
-            "type": "point",
-            "text": "Transfer on death instrument: signed, recorded, and you keep control.",
+            "type": "house",
             "kicker": "What it is",
+            "text": "Transfer on death instrument: signed, recorded, and you keep control.",
             "seconds": 7.0
           },
           {
@@ -615,7 +624,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#MoneyTips"
-      ]
+      ],
+      "renderer": "blender"
     },
     {
       "id": "v10",
@@ -681,7 +691,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#PersonalFinance"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v11",
@@ -744,7 +755,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#EstatePlanningQuestions"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v12",
@@ -799,7 +811,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#MythBusting"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v13",
@@ -860,7 +873,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#Checklist"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v14",
@@ -922,7 +936,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#ProtectYourFamily"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v15",
@@ -988,7 +1003,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#ProtectYourFamily"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v16",
@@ -1051,7 +1067,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#MoneyTips"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v17",
@@ -1113,7 +1130,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#PersonalFinance"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v18",
@@ -1175,7 +1193,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#EstatePlanningQuestions"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v19",
@@ -1196,7 +1215,13 @@
             "type": "myth",
             "myth": "If there's a will, there's no probate.",
             "fact": "A will is the instructions you give the probate court.",
-            "seconds": 11.0
+            "seconds": 9.5
+          },
+          {
+            "type": "house",
+            "kicker": "Your house",
+            "text": "In one name only? Usually probate, will or not.",
+            "seconds": 4.0
           },
           {
             "type": "steps",
@@ -1206,7 +1231,7 @@
               "Joint ownership with a survivor",
               "Beneficiary forms and TODIs"
             ],
-            "seconds": 12.0
+            "seconds": 9.5
           },
           {
             "type": "end",
@@ -1229,7 +1254,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#MythBusting"
-      ]
+      ],
+      "renderer": "blender"
     },
     {
       "id": "v20",
@@ -1271,7 +1297,8 @@
               "List assets and titles",
               "Don't pay debts yourself yet"
             ],
-            "seconds": 8.5
+            "seconds": 8.5,
+            "start": 4
           },
           {
             "type": "end",
@@ -1294,7 +1321,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#Checklist"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v21",
@@ -1360,7 +1388,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#ProtectYourFamily"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v22",
@@ -1426,7 +1455,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#MoneyTips"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v23",
@@ -1448,7 +1478,13 @@
             "type": "hook",
             "text": "Putting the house in your kid's name? Wait.",
             "kicker": "Before you sign",
-            "seconds": 5.5
+            "seconds": 3.5
+          },
+          {
+            "type": "house",
+            "kicker": "Before you sign a deed",
+            "text": "Adding a child to the deed can backfire.",
+            "seconds": 4.0
           },
           {
             "type": "steps",
@@ -1458,7 +1494,7 @@
               "Exposed to your child's debts",
               "Loses the inherited-house tax break"
             ],
-            "seconds": 10.5
+            "seconds": 8.5
           },
           {
             "type": "point",
@@ -1487,7 +1523,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#PersonalFinance"
-      ]
+      ],
+      "renderer": "blender"
     },
     {
       "id": "v24",
@@ -1549,7 +1586,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#EstatePlanningQuestions"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v25",
@@ -1599,7 +1637,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#MythBusting"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v26",
@@ -1660,7 +1699,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#Checklist"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v27",
@@ -1681,7 +1721,13 @@
             "type": "hook",
             "text": "One lives there. One wants to sell. One won't call back.",
             "kicker": "Sound familiar?",
-            "seconds": 5.5
+            "seconds": 3.5
+          },
+          {
+            "type": "house",
+            "kicker": "Mom's house",
+            "text": "Three siblings. One house. Three plans.",
+            "seconds": 4.0
           },
           {
             "type": "steps",
@@ -1692,7 +1738,7 @@
               "Mediation",
               "Court-ordered sale"
             ],
-            "seconds": 11.0
+            "seconds": 9.0
           },
           {
             "type": "point",
@@ -1721,7 +1767,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#ProtectYourFamily"
-      ]
+      ],
+      "renderer": "blender"
     },
     {
       "id": "v28",
@@ -1781,7 +1828,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#MoneyTips"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v29",
@@ -1841,7 +1889,8 @@
         "#EstatePlanning",
         "#Illinois",
         "#PersonalFinance"
-      ]
+      ],
+      "renderer": "remotion"
     },
     {
       "id": "v30",
@@ -1895,7 +1944,12 @@
         "#EstatePlanning",
         "#Illinois",
         "#EstatePlanningQuestions"
-      ]
+      ],
+      "renderer": "remotion"
     }
-  ]
+  ],
+  "renderers": {
+    "remotion": "Text cards, count-up stats, step lists, myth/fact, captions from the voiceover. Fast (about a minute per short). Default.",
+    "blender": "3D house scenes (house type) plus the same card scenes. About 9 minutes per short on 4 CPU cores."
+  }
 }

@@ -5,7 +5,7 @@ import path from "node:path";
 export type Pillar = "fear" | "tip" | "money" | "faq" | "myth" | "checklist";
 
 export interface BlenderScene {
-  type: "hook" | "point" | "stat" | "steps" | "myth" | "broll" | "end";
+  type: "hook" | "point" | "stat" | "steps" | "myth" | "broll" | "house" | "end";
   /** broll only: path to a video file (for example a Seedance shot). */
   video?: string;
   seconds: number;
@@ -19,6 +19,10 @@ export interface BlenderScene {
   myth?: string;
   fact?: string;
   url?: string;
+  /** steps only: number of the first item (to continue a list across scenes). */
+  start?: number;
+  /** house only (Blender): show a yard sign. */
+  sign?: boolean;
 }
 
 export interface CalendarVideo {
@@ -30,6 +34,9 @@ export interface CalendarVideo {
   title: string;
   hook: string;
   voiceover: string[];
+  /** Which renderer makes this video: Remotion (default) or Blender (3D house scenes). */
+  renderer: "remotion" | "blender";
+  /** Scene list shared by both renderers (the key name predates Remotion support). */
   blender: { scenes: BlenderScene[] };
   caption: string;
   hashtags: string[];
@@ -47,6 +54,7 @@ export interface SocialCalendar {
   rules: string[];
   defaults: { fps: number; brand: string; disclaimer: string };
   pillars: Record<Pillar, string>;
+  renderers: Record<"remotion" | "blender", string>;
   videos: CalendarVideo[];
 }
 

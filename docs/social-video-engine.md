@@ -8,7 +8,12 @@ the attorney's review.
 1. **Calendar** (`content/social/calendar.json`): 30 short scripts, one a day. Each one names the worry it
    answers (pillar: fear, money, tip, FAQ, myth, checklist), the voiceover, the on-screen scenes, the caption,
    and the `/tips` page it sends people to.
-2. **Blender render** (`blender/render_short.py`): turns a calendar entry into a 1080x1920 MP4 with the site's
+2. **Render** with one of two free renderers, picked by each video's `renderer` field. **Remotion**
+   (`video/src/social/TipShort.tsx`, the default for 25 of 30) does text cards, count-up stats, step lists,
+   myth/fact cards and burned-in captions timed to the voiceover, in about 40 seconds per short. **Blender**
+   (`blender/render_short.py`, 5 of 30) does the 3D house scenes for videos about the family home.
+   Both read the same scene list, put the disclaimer on every frame and end on the `/tips` URL card.
+   Blender detail: it turns a calendar entry into a 1080x1920 MP4 with the site's
    palette, animated text cards, a progress bar, the disclaimer on every frame and an end card with the URL.
 3. **Optional Seedance 2.0 b-roll** (Higgsfield): a 5-second shot of a place or object (a porch, a kitchen
    table) dropped in as a `broll` scene. Objects and places only, and the clip is tagged "AI-generated footage".
@@ -17,6 +22,20 @@ the attorney's review.
 5. **Tracking**: every caption link carries `utm_source` (instagram, facebook, youtube), `utm_medium=social-video`,
    `utm_campaign=tips-il-launch` and `utm_content=<video id>`. The site's session attribution keeps those for any
    form, and the booking button sends `/book?from=ig-<slug>` (or fb-, yt-) so bookings show the platform.
+
+## Remotion setup (free)
+
+```bash
+cd video && npm ci
+npm run remotion:tips                                  # every video with renderer "remotion"
+npm run remotion:tips -- --id=v03,v20                  # just these
+npm run remotion:tips -- --id=v03 --still=scenes       # one PNG per scene, for review
+npm run remotion:tips -- --id=v03 --audio=vo/v03.m4a   # with a voiceover file placed in video/public/vo/
+```
+
+Output goes to `out/social/`. In cloud sessions set `REMOTION_BROWSER` to the preinstalled headless Chromium.
+A 30-second short renders in about 40 seconds and comes out near 1 MB. Captions can be turned off with
+`--no-captions`. The composition is also in Remotion Studio (`cd video && npm run studio`, Social > TipShort).
 
 ## Blender setup (free)
 
@@ -39,7 +58,8 @@ npm run blender:render -- --spec content/social/calendar.json --id v01 --out out
 
 Rendering is CPU-only (Cycles, one sample, flat emission materials), so it works on any laptop or CI runner. A 42-second short took about 9 minutes on 4 CPU cores and came out at 1.5 MB.
 
-Scene types: `hook`, `point`, `stat`, `steps`, `myth`, `broll` (needs `video`), `end` (needs `url`). Fonts: Inter
+Scene types: `hook`, `point`, `stat`, `steps` (optional `start` number), `myth`, `house` (Blender 3D house, optional
+`sign`; Remotion shows it as a card), `broll` (needs `video`), `end` (needs `url`). Fonts: Inter
 if installed, otherwise a system sans, otherwise Blender's built-in font; override with `--font`.
 
 ## Seedance 2.0 through Higgsfield
