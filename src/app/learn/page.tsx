@@ -4,8 +4,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBox from "@/components/CtaBox";
 import JsonLd from "@/components/JsonLd";
 import { PageHero } from "@/components/page-hero";
-import { illustrationSrc, topicFor } from "@/lib/visual-topic";
-import { getClusterArticles, getClusters, getPillar } from "@/lib/library";
+import { illustrationAlt, illustrationSrc, topicFor } from "@/lib/visual-topic";
+import { getClusterArticles, getClusters, getPillar, isClusterServed } from "@/lib/library";
 import { breadcrumbSchema, graph, itemListSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 };
 
 export default function LearnHub() {
-  const clusters = getClusters().filter((c) => getPillar(c.slug));
+  const clusters = getClusters().filter((c) => getPillar(c.slug) && isClusterServed(c.slug));
   const crumbs = [
     { name: "Home", url: "/" },
     { name: "Learn", url: "/learn" },
@@ -50,7 +50,7 @@ export default function LearnHub() {
           return (
             <section key={c.slug} className="card hub-card" aria-labelledby={`h-${c.slug}`}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img className="hub-card__art" src={illustrationSrc(topicFor(c.url, c.name).art)} alt="" loading="lazy" decoding="async" />
+              <img className="hub-card__art" src={illustrationSrc(topicFor(c.url, c.name).art)} alt={illustrationAlt(topicFor(c.url, c.name).art, c.name)} loading="lazy" decoding="async" />
               <h2 id={`h-${c.slug}`}><Link href={c.url}>{c.name}</Link></h2>
               <p className="desc">{pillar.description}</p>
               <ul>

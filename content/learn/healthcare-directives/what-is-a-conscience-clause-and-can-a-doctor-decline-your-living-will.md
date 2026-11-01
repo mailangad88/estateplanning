@@ -103,4 +103,4 @@ Use the [healthcare directives guide](/learn/healthcare-directives) as a map of 
 
 ## How we can help
 
-Our attorneys write living wills and healthcare powers of attorney with transfer language, alternate agents and the instructions your care team is most likely to question. Try the [plan finder](/plan-finder), or contact us through the [Illinois](/estate-planning/illinois) or [New Jersey](/estate-planning/new-jersey) page to book a consultation.
+Our attorneys write living wills and healthcare powers of attorney with transfer language, alternate agents and the instructions your care team is most likely to question. Try the [plan finder](/plan-finder), or contact us through the [Illinois](/estate-planning/illinois) page to book a consultation.

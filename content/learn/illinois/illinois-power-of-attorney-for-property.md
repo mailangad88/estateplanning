@@ -118,6 +118,8 @@ Some banks ask for their own forms or question older documents. Our article on [
 
 <!-- visual: whatif id=incapacitated-without-power-of-attorney -->
 
+If a parent may already have lost capacity, [dementia with no power of attorney in Illinois](/learn/illinois/dementia-no-power-of-attorney) explains whether signing is still possible.
+
 ## How we can help
 
 Our attorneys can draft an Illinois power of attorney for property to match your family and your accounts, including any gift or trust powers you want. You can start with the [plan finder](/plan-finder) to see which documents fit your situation, or book a consultation to review your current forms. See our [Illinois estate planning page](/estate-planning/illinois) for more.

@@ -109,6 +109,8 @@ If you are the one making a will, assume your spouse has these rights. Leaving a
 
 Do not sign anything or file anything in a rush. Get a copy of the will and find out when, and whether, it has been admitted to probate. Mark the 7-month date on a calendar. Make a list of assets and who gets each one. Then ask an attorney to compare the will with the statutory share, the award and any non-probate assets. Our [Illinois probate guide](/learn/illinois/illinois-probate-process) explains how the court case runs.
 
+For the practical first weeks, such as frozen accounts, bills and the house, see [what to do when your spouse dies in Illinois](/learn/illinois/spouse-died-in-illinois-frozen-accounts-bills-and-the-house).
+
 ## How we can help
 
 A spouse's choice to renounce or accept a will can change a family's finances for years, and the deadline is short. Our attorneys can read the will with you, explain the options and the time limits, and help you file if you decide to. If you are planning your own estate, we can also help you draft documents that treat your spouse and your children the way you intend. Start with our [plan finder](/plan-finder), or see our [Illinois estate planning page](/estate-planning/illinois) to book a consultation.

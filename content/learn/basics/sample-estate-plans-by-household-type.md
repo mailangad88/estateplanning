@@ -118,4 +118,4 @@ Our [consultation checklist](/learn/basics/what-to-bring-to-estate-planning-cons
 
 ## How we can help
 
-If your household sits somewhere between these examples, that is normal, and most real families do. Our [plan finder](/plan-finder) asks a few questions about your family and accounts and points you to the documents that fit. Our attorneys can then turn that list into a plan for Illinois or New Jersey and walk you through each piece before you sign.
+If your household sits somewhere between these examples, that is normal, and most real families do. Our [plan finder](/plan-finder) asks a few questions about your family and accounts and points you to the documents that fit. Our attorneys can then turn that list into a plan for Illinois and walk you through each piece before you sign.

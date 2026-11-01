@@ -21,8 +21,56 @@
         "The Self-Help Center and an e-filing kiosk are outside the Circuit Clerk's Office in the Adams County Courthouse. The page also links to statewide eFileIL. (source: https://www.illinoiscourts.gov/courts-directory/66/Adams-County-Courthouse/court/)",
         "The Adams County law library has public computers for research on the west end of the 2nd floor. Everyone entering the courthouse goes through a metal detector. (source: https://www.illinoiscourts.gov/courts-directory/66/Adams-County-Courthouse/court/)"
       ],
-      "cities": [],
+      "cities": [
+        "quincy"
+      ],
       "updated": "2026-10-26"
+    },
+    {
+      "slug": "alexander",
+      "name": "Alexander County",
+      "seat": "Cairo",
+      "circuit": "1st Judicial Circuit",
+      "probateCourt": {
+        "name": "Alexander County Courthouse",
+        "address": "2000 Washington Avenue, Cairo, IL 62914",
+        "url": "https://www.illinoiscourts.gov/courts-directory/139/Alexander-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Alexander County Circuit Clerk",
+        "address": "2000 Washington Avenue, Cairo, IL 62914",
+        "phone": "618-734-0107",
+        "url": "https://firstcircuitil.org/circuit-courts/alexander-county/"
+      },
+      "notes": [
+        "The Illinois Courts directory lists the Alexander County Courthouse hours as 8 a.m. to noon and 1 p.m. to 4 p.m., so the Circuit Clerk's office is closed over the lunch hour. (source: https://www.illinoiscourts.gov/courts-directory/139/Alexander-County-Courthouse/court/)",
+        "The First Judicial Circuit lists the Alexander County Circuit Clerk at 618-734-0107 (fax 618-734-7003) and gives a separate courtroom and court reporter line at 618-734-0509. (source: https://firstcircuitil.org/circuit-courts/alexander-county/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "bond",
+      "name": "Bond County",
+      "seat": "Greenville",
+      "circuit": "3rd Judicial Circuit",
+      "probateCourt": {
+        "name": "Bond County Courthouse",
+        "address": "200 W. College Avenue, Greenville, IL 62246",
+        "url": "https://www.illinoiscourts.gov/courts-directory/141/Bond-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Bond County Circuit Clerk",
+        "address": "200 W. College Avenue, Greenville, IL 62246",
+        "phone": "618-664-3208",
+        "url": "https://bondcountyil.gov/circuit-clerk/"
+      },
+      "notes": [
+        "The Bond County Circuit Clerk's office in the courthouse at 200 W. College Avenue is open Monday through Friday, 8:00 a.m. to 4:00 p.m. (source: https://bondcountyil.gov/circuit-clerk/)",
+        "The Bond County Circuit Clerk's website offers court case information, jury duty information, forms, FAQs and Zoom links for court, and the office accepts payments 24/7 by phone and through an app. (source: https://circuitclerk.bondcountyil.gov/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
     },
     {
       "slug": "boone",
@@ -54,6 +102,126 @@
       "updated": "2026-10-26"
     },
     {
+      "slug": "brown",
+      "name": "Brown County",
+      "seat": "Mount Sterling",
+      "circuit": "8th Judicial Circuit",
+      "probateCourt": {
+        "name": "Brown County Courthouse",
+        "address": "200 Court Street, Mount Sterling, IL 62353",
+        "url": "https://www.illinoiscourts.gov/courts-directory/67/Brown-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Brown County Circuit Clerk",
+        "address": "200 Court Street, Mount Sterling, IL 62353",
+        "phone": "217-773-2713",
+        "url": "https://www.illinoiscourts.gov/courts-directory/67/Brown-County-Courthouse/court/"
+      },
+      "notes": [
+        "The Self-Help Center and an e-filing kiosk are both in the Circuit Clerk's Office on the second floor of the Brown County Courthouse. (source: https://www.illinoiscourts.gov/courts-directory/67/Brown-County-Courthouse/court/)",
+        "Free parking is available in the lot on the west side of the Brown County Courthouse, which is open 8:30 a.m. to 4:30 p.m. (source: https://www.illinoiscourts.gov/courts-directory/67/Brown-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "bureau",
+      "name": "Bureau County",
+      "seat": "Princeton",
+      "circuit": "13th Judicial Circuit",
+      "probateCourt": {
+        "name": "Bureau County Courthouse",
+        "address": "700 S. Main Street, Princeton, IL 61356",
+        "url": "https://www.illinoiscourts.gov/courts-directory/68/Bureau-County-Circuit-Court/court/"
+      },
+      "clerk": {
+        "name": "Bureau County Circuit Clerk",
+        "address": "700 S. Main Street, Princeton, IL 61356",
+        "phone": "815-872-2001",
+        "url": "https://circuitclerk.bureaucounty-il.gov/contact/"
+      },
+      "notes": [
+        "The Bureau County Circuit Clerk is in Room 100 of the courthouse at 700 S. Main Street and is open Monday through Friday, 8:00 a.m. to 4:00 p.m.; the probate division has its own phone extension (561) at the main number 815-872-2001. (source: https://circuitclerk.bureaucounty-il.gov/contact/)",
+        "Probate records dating back to 1837 are kept in the Circuit Clerk's back office, along with the jury, juvenile and child support departments, and genealogists can visit to research them and request copies. (source: https://circuitclerk.bureaucounty-il.gov/contact/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "calhoun",
+      "name": "Calhoun County",
+      "seat": "Hardin",
+      "circuit": "8th Judicial Circuit",
+      "probateCourt": {
+        "name": "Calhoun County Courthouse",
+        "address": "101 N. County Road, Hardin, IL 62047",
+        "url": "https://www.illinoiscourts.gov/courts-directory/69/Calhoun-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Calhoun County Circuit Clerk",
+        "address": "101 N. County Road, Hardin, IL 62047 (mail: P.O. Box 486, Hardin, IL 62047)",
+        "phone": "618-576-2451",
+        "url": "https://www.calhouncountyil.gov/departments/circuit-clerk/"
+      },
+      "recorder": {
+        "name": "Calhoun County Clerk and Recorder",
+        "address": "301 S. County Rd., Hardin, IL 62047",
+        "url": "https://www.calhouncountyil.gov/departments/county-clerk-and-recorder/"
+      },
+      "notes": [
+        "The Calhoun County Circuit Clerk's office, at the courthouse at 101 N. County Road in Hardin, maintains court records including case filings and judgments; mail goes to P.O. Box 486, Hardin, IL 62047. (source: https://www.calhouncountyil.gov/departments/circuit-clerk/)",
+        "Recorder of deeds work is done by the Calhoun County Clerk and Recorder at 301 S. County Rd., Hardin, a different address from the courthouse, open Monday through Friday, 8:00 a.m. to 4:00 p.m. (source: https://www.calhouncountyil.gov/departments/county-clerk-and-recorder/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "carroll",
+      "name": "Carroll County",
+      "seat": "Mount Carroll",
+      "circuit": "15th Judicial Circuit",
+      "probateCourt": {
+        "name": "Carroll County Courthouse",
+        "address": "301 North Main Street, Mount Carroll, IL 61053",
+        "url": "https://www.carrollcountyil.gov/county_departments/circuit_clerk.php"
+      },
+      "clerk": {
+        "name": "Carroll County Circuit Clerk",
+        "address": "301 North Main Street, Mount Carroll, IL 61053",
+        "phone": "815-244-0230",
+        "url": "https://www.carrollcountyil.gov/county_departments/circuit_clerk.php"
+      },
+      "notes": [
+        "The Carroll County Circuit Clerk's office is open weekdays from 8:30 a.m. to 4:30 p.m.; mail goes to P.O. Box 32, Mt. Carroll, IL 61053 rather than the courthouse street address. (source: https://www.carrollcountyil.gov/county_departments/circuit_clerk.php)",
+        "The 15th Judicial Circuit directs case-specific questions, such as court dates and filings, to the Circuit Clerk of the county where the case is being held. (source: https://15thjudicialcircuit.com/faq/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "cass",
+      "name": "Cass County",
+      "seat": "Virginia",
+      "circuit": "8th Judicial Circuit",
+      "probateCourt": {
+        "name": "Cass County Courthouse",
+        "address": "100 E. Springfield Street, Virginia, IL 62691",
+        "url": "https://www.illinoiscourts.gov/courts-directory/70/Cass-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Cass County Circuit Clerk",
+        "address": "100 E. Springfield Street, Virginia, IL 62691",
+        "phone": "217-452-7225",
+        "url": "https://casscountyil.gov/elected-officials/circuit-court-clerk"
+      },
+      "notes": [
+        "The Cass County Circuit Clerk is open Monday through Friday, 8:00 a.m. to 4:00 p.m., and takes mail at P.O. Box 203, Virginia, IL 62691; the office cannot provide copies of adoption, juvenile or impounded confidential records. (source: https://casscountyil.gov/elected-officials/circuit-court-clerk)",
+        "An e-filing kiosk is in the Circuit Clerk's office in the Cass County Courthouse, and street parking is available around the courthouse. (source: https://www.illinoiscourts.gov/courts-directory/70/Cass-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
       "slug": "champaign",
       "name": "Champaign County",
       "seat": "Urbana",
@@ -75,8 +243,116 @@
         "Champaign County is in the 6th Judicial Circuit, with DeWitt, Douglas, Macon, Moultrie and Piatt counties. (source: https://www.illinoiscourts.gov/courts-directory/interactive-map)",
         "The County Assessment Office is at the Scott M. Bennett Administrative Center, 102 E. Main Street, Urbana, phone 217-384-3760. It offers a $5,000 Senior Homestead Exemption and a Senior Assessment Freeze with a $75,000 income limit. (source: https://www.champaigncountyil.gov/ccao/exemptions.php)"
       ],
-      "cities": [],
+      "cities": [
+        "champaign"
+      ],
       "updated": "2026-10-26"
+    },
+    {
+      "slug": "christian",
+      "name": "Christian County",
+      "seat": "Taylorville",
+      "circuit": "4th Judicial Circuit",
+      "probateCourt": {
+        "name": "Christian County Courthouse",
+        "address": "101 S. Main Street, Taylorville, IL 62568",
+        "url": "https://www.illinoiscourts.gov/courts-directory/71/Christian-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Christian County Circuit Clerk",
+        "address": "101 S. Main Street, Taylorville, IL 62568",
+        "url": "https://www.illinoiscourts.gov/courts-directory/71/Christian-County-Courthouse/court/"
+      },
+      "recorder": {
+        "name": "Christian County Clerk & Recorder",
+        "address": "101 S. Main Street, Taylorville, IL 62568",
+        "url": "https://www.christiancountyil.gov/?p=110"
+      },
+      "notes": [
+        "e-Filing kiosks are available in the hallway of the Christian County Courthouse. Listed hours are 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/71/Christian-County-Courthouse/court/)",
+        "The Christian County Clerk & Recorder is the official land records manager for the county, open Monday to Friday, 8:00 a.m. to 4:00 p.m. The Recorder's phone is 217-824-4960. (source: https://www.christiancountyil.gov/?p=110)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "clark",
+      "name": "Clark County",
+      "seat": "Marshall",
+      "circuit": "5th Judicial Circuit",
+      "probateCourt": {
+        "name": "Clark County Courthouse",
+        "address": "501 Archer Avenue, Marshall, IL 62441",
+        "url": "https://www.illinoiscourts.gov/courts-directory/72/Clark-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Clark County Circuit Clerk",
+        "address": "501 Archer Avenue, Marshall, IL 62441 (mail: P.O. Box 187)",
+        "phone": "217-826-2811",
+        "url": "https://www.clarkcountyil.org/circuit-court"
+      },
+      "notes": [
+        "The Clark County Circuit Clerk's office is on the first floor of the courthouse, which is open weekdays from 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/72/Clark-County-Courthouse/court/)",
+        "Most files in the Clark County Circuit Clerk's office are public record and can be viewed in person with copies available, and copy requests can also be mailed in. (source: https://www.clarkcountyil.org/copy_request-case_disposition-record_search)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "clay",
+      "name": "Clay County",
+      "seat": "Louisville",
+      "circuit": "4th Judicial Circuit",
+      "probateCourt": {
+        "name": "Clay County Courthouse",
+        "address": "111 Chestnut Street, Louisville, IL 62858",
+        "url": "https://www.illinoiscourts.gov/courts-directory/73/Clay-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Clay County Circuit Clerk",
+        "address": "111 Chestnut Street, Louisville, IL 62858 (mail: P.O. Box 100)",
+        "phone": "618-665-3523",
+        "url": "https://www.illinoiscourts.gov/courts-directory/73/Clay-County-Courthouse/court/"
+      },
+      "recorder": {
+        "name": "Clay County Clerk and Recorder",
+        "address": "111 E. Chestnut Street, Room 106, Louisville, IL 62858",
+        "url": "http://claycountyillinois.org/general-information-2/contact-info/"
+      },
+      "notes": [
+        "The Clay County Courthouse at 111 Chestnut Street is open weekdays from 8:00 a.m. to 4:00 p.m., and the state directory places the Circuit Clerk's office inside it. (source: https://www.illinoiscourts.gov/courts-directory/73/Clay-County-Courthouse/court/)",
+        "The Clay County Clerk and Recorder is at 111 E. Chestnut Street, Room 106, in the same courthouse building, with a separate phone number (618-665-3626) from the Circuit Clerk. (source: http://claycountyillinois.org/general-information-2/contact-info/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "clinton",
+      "name": "Clinton County",
+      "seat": "Carlyle",
+      "circuit": "4th Judicial Circuit",
+      "probateCourt": {
+        "name": "Clinton County Courthouse",
+        "address": "850 Fairfax Street, Carlyle, IL 62231",
+        "url": "https://www.illinoiscourts.gov/courts-directory/4/Clinton-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Clinton County Circuit Clerk",
+        "address": "850 Fairfax Street, Carlyle, IL 62231",
+        "phone": "618-594-6600",
+        "url": "https://www.illinoiscourts.gov/courts-directory/4/Clinton-County-Courthouse/court/"
+      },
+      "recorder": {
+        "name": "Clinton County Clerk & Recorder",
+        "address": "850 Fairfax Street, Carlyle, IL 62231",
+        "url": "https://clintonco.illinois.gov/county-offices/county-clerk/"
+      },
+      "notes": [
+        "An e-filing kiosk is in the Circuit Clerk's office by the front counter, with a scanner and printer. The directory also points self-represented litigants to the Circuit Clerk for links, resources and computer access. Listed hours are 7:30 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/4/Clinton-County-Courthouse/court/)",
+        "The County Clerk & Recorder at 850 Fairfax Street is open Monday to Friday, 7:30 a.m. to 4 p.m., phone 618-594-6620. The page says a new Recording Fee Schedule took effect February 1, 2025. (source: https://clintonco.illinois.gov/county-offices/county-clerk/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
     },
     {
       "slug": "coles",
@@ -142,9 +418,74 @@
         "skokie",
         "schaumburg",
         "oak-park",
-        "orland-park"
+        "orland-park",
+        "arlington-heights",
+        "palatine",
+        "mount-prospect",
+        "des-plaines",
+        "park-ridge",
+        "elk-grove-village",
+        "hoffman-estates",
+        "glenview",
+        "northbrook",
+        "niles",
+        "morton-grove",
+        "lincolnwood",
+        "oak-lawn",
+        "tinley-park",
+        "cicero",
+        "berwyn",
+        "homewood",
+        "la-grange",
+        "western-springs"
       ],
       "updated": "2026-10-26"
+    },
+    {
+      "slug": "crawford",
+      "name": "Crawford County",
+      "seat": "Robinson",
+      "circuit": "2nd Judicial Circuit",
+      "probateCourt": {
+        "name": "Crawford County Courthouse",
+        "address": "100 S. Douglas Street, Robinson, IL 62454",
+        "url": "https://www.illinoiscourts.gov/courts-directory/84/Crawford-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Crawford County Circuit Clerk",
+        "address": "100 S. Douglas Street, Robinson, IL 62454",
+        "phone": "618-544-3512",
+        "url": "https://crawfordcountyil.org/circuit-clerk/"
+      },
+      "notes": [
+        "The Crawford County Circuit Clerk's office is on the second floor of the courthouse and is open weekdays from 8:00 a.m. to 4:00 p.m. (source: https://crawfordcountyil.org/circuit-clerk/)",
+        "Besides court filings, the Crawford County Circuit Clerk's office handles traffic fine payments, passport applications and copy requests for court records; staff cannot give legal advice. (source: https://crawfordcountyil.org/circuit-clerk/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "cumberland",
+      "name": "Cumberland County",
+      "seat": "Toledo",
+      "circuit": "5th Judicial Circuit",
+      "probateCourt": {
+        "name": "Cumberland County Courthouse",
+        "address": "1 Courthouse Square, Toledo, IL 62468",
+        "url": "https://www.illinoiscourts.gov/courts-directory/85/Cumberland-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Cumberland County Circuit Clerk",
+        "address": "1 Courthouse Square, Room 107, Toledo, IL 62468",
+        "phone": "217-849-3601",
+        "url": "https://www.illinoiscourts.gov/courts-directory/85/Cumberland-County-Courthouse/court/"
+      },
+      "notes": [
+        "The Circuit Clerk's office is on the first floor of the Cumberland County Courthouse (Room 107), where litigants can use a computer for e-filing. (source: https://www.illinoiscourts.gov/courts-directory/85/Cumberland-County-Courthouse/court/)",
+        "The Cumberland County Courthouse is open weekdays from 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/85/Cumberland-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
     },
     {
       "slug": "dekalb",
@@ -173,8 +514,61 @@
         "The DeKalb County Clerk and Recorder's predictable fee schedule effective January 1, 2025 lists $74.00 to record a standard document. (source: https://dekalbcountyclerkil.gov/wp-content/uploads/2023/09/PredictableFeeSchedule_01.01.2025.pdf)",
         "The DeKalb County Assessment Office describes a $5,000 Senior Homestead Exemption (PTAX-324) and a Senior Assessment Freeze (PTAX-340) for household income of $75,000 or less. (source: https://dekalbcounty.org/departments/assessment-office/exemptions/list-of-exemptions/)"
       ],
-      "cities": [],
+      "cities": [
+        "dekalb"
+      ],
       "updated": "2026-10-26"
+    },
+    {
+      "slug": "dewitt",
+      "name": "DeWitt County",
+      "seat": "Clinton",
+      "circuit": "6th Judicial Circuit",
+      "probateCourt": {
+        "name": "DeWitt County Courthouse",
+        "address": "201 West Washington Street, Clinton, IL 61727",
+        "url": "https://www.illinoiscourts.gov/courts-directory/143/Dewitt-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "DeWitt County Circuit Clerk",
+        "address": "201 West Washington Street, Clinton, IL 61727",
+        "phone": "217-935-7750",
+        "url": "https://www.dewittcountyil.gov/departments/circuit_clerk.php"
+      },
+      "recorder": {
+        "name": "DeWitt County Clerk & Recorder",
+        "address": "201 W. Washington St., Room 109, Clinton, IL 61727",
+        "url": "https://www.dewittcountyil.gov/departments/county_clerk_and_recorder.php"
+      },
+      "notes": [
+        "The DeWitt County Circuit Clerk's office accepts e-filing through the statewide eFileIL system, and has a payment drop box on the northwest side of the courthouse parking lot open 24 hours a day. (source: https://www.dewittcountyil.gov/departments/circuit_clerk.php)",
+        "The Circuit Clerk is open Monday to Friday, 8:30 a.m. to 4:30 p.m., and closes for lunch from noon to 1:00 p.m. (source: https://www.dewittcountyil.gov/departments/circuit_clerk.php)",
+        "The County Clerk and Recorder is in Room 109 at 201 W. Washington St., open Monday to Friday, 8:30 a.m. to 4:30 p.m., phone (217) 935-7780. The office posts recording requirements for deeds on its page. (source: https://www.dewittcountyil.gov/departments/county_clerk_and_recorder.php)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "douglas",
+      "name": "Douglas County",
+      "seat": "Tuscola",
+      "circuit": "6th Judicial Circuit",
+      "probateCourt": {
+        "name": "Douglas County Courthouse",
+        "address": "401 S. Center, Tuscola, IL 61953",
+        "url": "https://www.illinoiscourts.gov/courts-directory/6/Douglas-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Douglas County Circuit Clerk",
+        "address": "401 S. Center, Room 204, Tuscola, IL 61953",
+        "url": "https://www.illinoiscourts.gov/courts-directory/6/Douglas-County-Courthouse/court/"
+      },
+      "notes": [
+        "The Circuit Clerk's Office is in Room 204, where an e-filing kiosk is available. The courthouse is open 8:30 a.m. to 4:30 p.m. (source: https://www.illinoiscourts.gov/courts-directory/6/Douglas-County-Courthouse/court/)",
+        "Mail goes to P.O. Box 50, Tuscola, IL 61953, and the listed phone number is 217-253-2352. (source: https://www.illinoiscourts.gov/courts-directory/6/Douglas-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
     },
     {
       "slug": "dupage",
@@ -208,9 +602,233 @@
       ],
       "cities": [
         "wheaton",
-        "naperville"
+        "naperville",
+        "downers-grove",
+        "elmhurst",
+        "lombard",
+        "glen-ellyn",
+        "oak-brook",
+        "carol-stream",
+        "addison",
+        "westmont"
       ],
       "updated": "2026-10-26"
+    },
+    {
+      "slug": "edgar",
+      "name": "Edgar County",
+      "seat": "Paris",
+      "circuit": "5th Judicial Circuit",
+      "probateCourt": {
+        "name": "Edgar County Courthouse",
+        "address": "115 W. Court Street, Paris, IL 61944",
+        "url": "https://www.illinoiscourts.gov/courts-directory/8/Edgar-County-Courthouse/court"
+      },
+      "clerk": {
+        "name": "Edgar County Circuit Clerk",
+        "address": "115 W. Court Street, Paris, IL 61944",
+        "url": "https://www.illinoiscourts.gov/courts-directory/8/Edgar-County-Courthouse/court"
+      },
+      "notes": [
+        "A dedicated e-filing computer is on the counter in the Circuit Clerk's Office at the Edgar County Courthouse. (source: https://www.illinoiscourts.gov/courts-directory/8/Edgar-County-Courthouse/court)",
+        "The courthouse page lists hours of 8:00 a.m. to 4:00 p.m. and links to online case search. (source: https://www.illinoiscourts.gov/courts-directory/8/Edgar-County-Courthouse/court)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "edwards",
+      "name": "Edwards County",
+      "seat": "Albion",
+      "circuit": "2nd Judicial Circuit",
+      "probateCourt": {
+        "name": "Edwards County Courthouse",
+        "address": "50 E. Main Street, Albion, IL 62806",
+        "url": "https://www.illinoiscourts.gov/courts-directory/9/Edwards-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Edwards County Circuit Clerk",
+        "address": "50 E. Main Street, Suite 7, Albion, IL 62806",
+        "phone": "618-445-2016",
+        "url": "https://www.illinoiscourts.gov/courts-directory/9/Edwards-County-Courthouse/court/"
+      },
+      "notes": [
+        "An e-filing kiosk is located in the Circuit Clerk's office in the Edwards County Courthouse. (source: https://www.illinoiscourts.gov/courts-directory/9/Edwards-County-Courthouse/court/)",
+        "The Edwards County Courthouse at 50 E. Main Street in Albion is open weekdays from 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/9/Edwards-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "effingham",
+      "name": "Effingham County",
+      "seat": "Effingham",
+      "circuit": "4th Judicial Circuit",
+      "probateCourt": {
+        "name": "Effingham County Courthouse",
+        "address": "120 W. Jefferson, Suite 101, Effingham, IL 62401",
+        "url": "https://www.illinoiscourts.gov/courts-directory/10/Effingham-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Effingham County Circuit Clerk",
+        "address": "120 W. Jefferson, Suite 101, Effingham, IL 62401",
+        "phone": "217-342-4065",
+        "url": "https://www.illinoiscourts.gov/courts-directory/10/Effingham-County-Courthouse/court/"
+      },
+      "recorder": {
+        "name": "Effingham County Clerk & Recorder",
+        "url": "https://effinghamcountyil.gov/?p=356"
+      },
+      "notes": [
+        "The Circuit Clerk's lobby in the Effingham County Courthouse has public access terminals and e-filing terminals. The courts directory lists hours of 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/10/Effingham-County-Courthouse/court/)",
+        "The Effingham County Clerk & Recorder keeps the permanent public record of real estate transactions. The office phone is 217-342-6535. (source: https://effinghamcountyil.gov/?p=356)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "fayette",
+      "name": "Fayette County",
+      "seat": "Vandalia",
+      "circuit": "4th Judicial Circuit",
+      "probateCourt": {
+        "name": "Fayette County Courthouse",
+        "address": "221 S. 7th Street, Vandalia, IL 62471",
+        "url": "https://www.illinoiscourts.gov/courts-directory/11/Fayette-County-Courthouse/court"
+      },
+      "clerk": {
+        "name": "Fayette County Circuit Clerk",
+        "address": "221 S. 7th Street, Room 112, Vandalia, IL 62471",
+        "phone": "618-283-5009",
+        "url": "https://www.fayettecountyillinois.gov/county-offices/circuit-clerk/"
+      },
+      "notes": [
+        "The Circuit Clerk is in Room 112 of the courthouse and is open Monday through Friday, 8 a.m. to 4 p.m. (source: https://www.fayettecountyillinois.gov/county-offices/circuit-clerk/)",
+        "All Fayette County civil cases must be e-filed under an Illinois Supreme Court requirement effective January 1, 2018. (source: https://www.fayettecountyillinois.gov/county-offices/circuit-clerk/)",
+        "An e-filing kiosk is available at the courthouse. (source: https://www.illinoiscourts.gov/courts-directory/11/Fayette-County-Courthouse/court)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "ford",
+      "name": "Ford County",
+      "seat": "Paxton",
+      "circuit": "11th Judicial Circuit",
+      "probateCourt": {
+        "name": "Ford County Courthouse",
+        "address": "200 W. State Street, Paxton, IL 60957",
+        "url": "https://www.illinoiscourts.gov/courts-directory/12/Ford-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Ford County Circuit Clerk",
+        "address": "200 W. State Street, Room 106, Paxton, IL 60957",
+        "phone": "217-379-9420",
+        "url": "https://fordcounty.illinois.gov/circuit-clerk/"
+      },
+      "notes": [
+        "The Ford County Circuit Clerk is in Room 106 of the courthouse at 200 W. State Street, open 8:30 a.m. to 4:30 p.m. (source: https://fordcounty.illinois.gov/circuit-clerk/)",
+        "The county's court help page points filers to the Illinois Courts guidance for eFileIL and to the statewide standardized court forms. (source: https://fordcounty.illinois.gov/court-help-resources-for-illinois/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "franklin",
+      "name": "Franklin County",
+      "seat": "Benton",
+      "circuit": "2nd Judicial Circuit",
+      "probateCourt": {
+        "name": "Franklin County Courthouse",
+        "address": "1 Public Square, Benton, IL 62812",
+        "url": "https://illinoiscourts.gov/courts-directory/89/Franklin-County-Courthouse/court"
+      },
+      "clerk": {
+        "name": "Franklin County Circuit Clerk",
+        "address": "1 Public Square, Benton, IL 62812",
+        "phone": "618-435-9800",
+        "url": "https://franklincountyil.gov/circuitclerk/"
+      },
+      "notes": [
+        "The Franklin County Courthouse in Benton has an e-filing kiosk and a law library on site, and lists the statewide eFileIL portal for filing. Hours are Monday to Friday, 8:00 a.m. to 4:00 p.m. (source: https://illinoiscourts.gov/courts-directory/89/Franklin-County-Courthouse/court)",
+        "The Franklin County Circuit Clerk's page lists probates among the case types the office files and maintains, and says it archives historic cases for genealogy and other research. (source: https://franklincountyil.gov/circuitclerk/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "fulton",
+      "name": "Fulton County",
+      "seat": "Lewistown",
+      "circuit": "9th Judicial Circuit",
+      "probateCourt": {
+        "name": "Fulton County Courthouse",
+        "address": "100 N. Main Street, Lewistown, IL 61542",
+        "url": "https://www.illinoiscourts.gov/courts-directory/13/Fulton-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Fulton County Circuit Clerk",
+        "address": "100 N. Main Street, Lewistown, IL 61542",
+        "phone": "309-547-3041",
+        "url": "https://www.illinoiscourts.gov/courts-directory/13/Fulton-County-Courthouse/court/"
+      },
+      "recorder": {
+        "name": "Fulton County Clerk/Recorder",
+        "address": "100 N. Main Street, Room 105, Lewistown, IL 61542",
+        "url": "https://fultoncountyil.gov/officials/elected/county-clerk/county-clerk-contact-and-staff/"
+      },
+      "notes": [
+        "An e-filing computer station with a printer/scanner is in the foyer of the Circuit Clerk's Office on the second floor of the Fulton County Courthouse. Listed hours are 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/13/Fulton-County-Courthouse/court/)",
+        "The Fulton County Clerk/Recorder is in Room 105 of the courthouse, open Monday to Friday, 8:00 a.m. to 4:00 p.m. The page links to eRecording options and a Recorder's Fees page. (source: https://fultoncountyil.gov/officials/elected/county-clerk/county-clerk-contact-and-staff/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "gallatin",
+      "name": "Gallatin County",
+      "seat": "Shawneetown",
+      "circuit": "2nd Judicial Circuit",
+      "probateCourt": {
+        "name": "Gallatin County Courthouse",
+        "address": "484 Lincoln Blvd., East Shawneetown, IL 62984",
+        "url": "https://www.illinoiscourts.gov/courts-directory/144/Gallatin-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Gallatin County Circuit Clerk",
+        "address": "484 Lincoln Blvd., East Shawneetown, IL 62984 (mail: P.O. Box 249, Shawneetown, IL 62984)",
+        "phone": "618-269-3140",
+        "url": "https://www.illinoiscourts.gov/courts-directory/144/Gallatin-County-Courthouse/court/"
+      },
+      "notes": [
+        "The Gallatin County Courthouse is open 9 a.m. to 5 p.m.. (source: https://www.illinoiscourts.gov/courts-directory/144/Gallatin-County-Courthouse/court/)",
+        "The courthouse is on Lincoln Blvd. in East Shawneetown, while the Circuit Clerk's mailing address is P.O. Box 249, Shawneetown, IL 62984. (source: https://www.illinoiscourts.gov/courts-directory/144/Gallatin-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "greene",
+      "name": "Greene County",
+      "seat": "Carrollton",
+      "circuit": "7th Judicial Circuit",
+      "probateCourt": {
+        "name": "Greene County Courthouse",
+        "address": "519 North Main Street, Carrollton, IL 62016",
+        "url": "https://www.illinoiscourts.gov/courts-directory/14/Greene-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Greene County Circuit Clerk",
+        "address": "519 North Main Street, Carrollton, IL 62016",
+        "phone": "217-942-3421",
+        "url": "https://www.illinoiscourts.gov/courts-directory/14/Greene-County-Courthouse/court/"
+      },
+      "notes": [
+        "The e-filing kiosk at the Greene County Courthouse is in the Law Library. (source: https://www.illinoiscourts.gov/courts-directory/14/Greene-County-Courthouse/court/)",
+        "Free parking is available on the street around the Greene County Courthouse, which is open weekdays from 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/14/Greene-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
     },
     {
       "slug": "grundy",
@@ -244,6 +862,155 @@
       "updated": "2026-10-26"
     },
     {
+      "slug": "hamilton",
+      "name": "Hamilton County",
+      "seat": "McLeansboro",
+      "circuit": "2nd Judicial Circuit",
+      "probateCourt": {
+        "name": "Hamilton County Courthouse",
+        "address": "100 South Jackson Street, McLeansboro, IL 62859",
+        "url": "https://www.hamiltoncountyil.gov/departments/circuit-clerk"
+      },
+      "clerk": {
+        "name": "Hamilton County Circuit Clerk",
+        "address": "100 South Jackson Street, McLeansboro, IL 62859",
+        "phone": "618-643-3224",
+        "url": "https://www.hamiltoncountyil.gov/departments/circuit-clerk"
+      },
+      "recorder": {
+        "name": "Hamilton County Clerk and Recorder",
+        "address": "100 South Jackson Street, Room 2, McLeansboro, IL 62859",
+        "url": "https://www.hamiltoncountyil.gov/departments/county-clerk-recorder"
+      },
+      "notes": [
+        "The Hamilton County Circuit Clerk's office at 100 South Jackson Street is open Monday through Friday, 8:00 to 4:00, and is closed on county holidays. (source: https://www.hamiltoncountyil.gov/departments/circuit-clerk)",
+        "The Hamilton County Clerk is in Room 2 of the same courthouse at 100 South Jackson Street. (source: https://cms.hamiltoncountyil.gov/app/uploads/2026/08/Application-DD214.pdf)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "hancock",
+      "name": "Hancock County",
+      "seat": "Carthage",
+      "circuit": "9th Judicial Circuit",
+      "probateCourt": {
+        "name": "Hancock County Courthouse",
+        "address": "500 Main Street, Carthage, IL 62321",
+        "url": "https://www.illinoiscourts.gov/courts-directory/15/Hancock-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Hancock County Circuit Clerk",
+        "address": "500 Main Street, Carthage, IL 62321",
+        "phone": "217-357-2616",
+        "url": "https://www.hancockcounty-il.gov/circuit-clerk/"
+      },
+      "notes": [
+        "The Circuit Clerk's office has an e-filing computer station on the second floor of the courthouse, and the courthouse is open 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/15/Hancock-County-Courthouse/court/)",
+        "The Hancock County Circuit Clerk's page lists 217-357-2616 and e-filing assistance among its services. (source: https://www.hancockcounty-il.gov/circuit-clerk/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "hardin",
+      "name": "Hardin County",
+      "seat": "Elizabethtown",
+      "circuit": "2nd Judicial Circuit",
+      "probateCourt": {
+        "name": "Hardin County Courthouse",
+        "address": "102 E. Market Street, Elizabethtown, IL 62931",
+        "url": "https://www.illinoiscourts.gov/courts-directory/17/Hardin-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Hardin County Circuit Clerk",
+        "address": "102 E. Market Street, Elizabethtown, IL 62931",
+        "phone": "618-287-2735",
+        "url": "https://www.illinoiscourts.gov/courts-directory/17/Hardin-County-Courthouse/court/"
+      },
+      "notes": [
+        "An e-filing kiosk is available at the Circuit Clerk's office in the Hardin County Courthouse. (source: https://www.illinoiscourts.gov/courts-directory/17/Hardin-County-Courthouse/court/)",
+        "The Hardin County Courthouse at 102 E. Market Street is open weekdays from 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/17/Hardin-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "henderson",
+      "name": "Henderson County",
+      "seat": "Oquawka",
+      "circuit": "9th Judicial Circuit",
+      "probateCourt": {
+        "name": "Henderson County Courthouse",
+        "address": "307 Warren Street, Oquawka, IL 61469",
+        "url": "https://www.illinoiscourts.gov/courts-directory/150/Henderson-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Henderson County Circuit Clerk",
+        "address": "307 Warren Street, Oquawka, IL 61469",
+        "phone": "309-867-3121",
+        "url": "https://www.illinoiscourts.gov/courts-directory/150/Henderson-County-Courthouse/court/"
+      },
+      "notes": [
+        "The e-filing kiosk at the Henderson County Courthouse is outside the Main Courtroom. (source: https://www.illinoiscourts.gov/courts-directory/150/Henderson-County-Courthouse/court/)",
+        "Free parking is listed at the Henderson County Courthouse, which is open weekdays from 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/150/Henderson-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "henry",
+      "name": "Henry County",
+      "seat": "Cambridge",
+      "circuit": "14th Judicial Circuit",
+      "probateCourt": {
+        "name": "Henry County Courthouse",
+        "address": "307 W. Center Street, Cambridge, IL 61238",
+        "url": "https://www.illinoiscourts.gov/courts-directory/18/Henry-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Henry County Circuit Clerk",
+        "address": "307 West Center Street, Cambridge, IL 61238",
+        "phone": "309-937-3572",
+        "url": "https://www.henrycty.com/175/Clerk-of-the-Circuit-Court"
+      },
+      "recorder": {
+        "name": "Henry County Recorder",
+        "address": "307 W Center Street, Cambridge, IL 61238",
+        "url": "https://www.henrycty.com/326/Recorder"
+      },
+      "notes": [
+        "The Henry County Self-Help Center is on the main floor of the Judicial wing of the Cambridge courthouse, and the courthouse lists an e-filing kiosk. (source: https://www.illinoiscourts.gov/courts-directory/18/Henry-County-Courthouse/court/)",
+        "The Circuit Clerk's main office in Cambridge is open Monday to Friday, 8 a.m. to 4:30 p.m., and the page links to an eFILE civil cases portal. A Kewanee division at 401 East Third Street handles traffic and ordinance matters. (source: https://www.henrycty.com/175/Clerk-of-the-Circuit-Court)",
+        "The Henry County Recorder records, indexes and maintains documents transferring land, including deeds, mortgages, liens, trusts and easements. Phone is 309-937-3575, open Monday to Friday, 8 a.m. to 4:30 p.m. (source: https://www.henrycty.com/326/Recorder)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "iroquois",
+      "name": "Iroquois County",
+      "seat": "Watseka",
+      "circuit": "21st Judicial Circuit",
+      "probateCourt": {
+        "name": "Iroquois County Courthouse",
+        "address": "550 South 10th Street, Watseka, IL 60970",
+        "url": "https://illinoiscourts.gov/courts-directory/151/Iroquois-County-Courthouse/court"
+      },
+      "clerk": {
+        "name": "Iroquois County Circuit Clerk",
+        "address": "550 South 10th Street, Watseka, IL 60970",
+        "phone": "815-432-6950",
+        "url": "https://illinoiscourts.gov/courts-directory/151/Iroquois-County-Courthouse/court"
+      },
+      "notes": [
+        "The Iroquois County Courthouse in Watseka is open 8:30 a.m. to 4:30 p.m. and offers free parking. The directory page links to an e-filing portal, local rules and orders, and online case search. (source: https://illinoiscourts.gov/courts-directory/151/Iroquois-County-Courthouse/court)",
+        "The Illinois Courts clerk list shows the Iroquois County Circuit Clerk at 550 South 10th Street, Watseka, phone 815/432-6950. (source: https://www.illinoiscourts.gov/circuit-court/circuit-court-clerks)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
       "slug": "jackson",
       "name": "Jackson County",
       "seat": "Murphysboro",
@@ -271,8 +1038,131 @@
         "The clerk's filing fee schedule, revised November 4, 2025, lists a $278 filing fee for probate cases other than filing a will, plus a $100 Guardianship Advocacy Fee for most probate cases. Filing a will is $0. (source: http://jacksoncoilcircuitclerk.gov/wp-content/uploads/2025/11/2025-November-4-Filing-Fees-Updated.pdf)",
         "The Jackson County Clerk and Recorder is at 1001 Walnut Street, Murphysboro. Phone (618) 687-7240. (source: https://www.jacksoncounty-il.gov/392/Recording-Documents)"
       ],
-      "cities": [],
+      "cities": [
+        "carbondale"
+      ],
       "updated": "2026-10-26"
+    },
+    {
+      "slug": "jasper",
+      "name": "Jasper County",
+      "seat": "Newton",
+      "circuit": "4th Judicial Circuit",
+      "probateCourt": {
+        "name": "Jasper County Courthouse",
+        "address": "100 W. Jourdan Street, Newton, IL 62448",
+        "url": "https://www.illinoiscourts.gov/courts-directory/19/Jasper-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Jasper County Circuit Clerk",
+        "address": "100 W. Jourdan Street, Newton, IL 62448",
+        "phone": "618-783-2524",
+        "url": "https://www.illinoiscourts.gov/courts-directory/19/Jasper-County-Courthouse/court/"
+      },
+      "notes": [
+        "An e-filing kiosk is in the Circuit Clerk's Office at the Jasper County Courthouse, and the directory also lists a self-help center there. (source: https://www.illinoiscourts.gov/courts-directory/19/Jasper-County-Courthouse/court/)",
+        "Free parking is listed at the Jasper County Courthouse, which is open weekdays from 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/19/Jasper-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "jefferson",
+      "name": "Jefferson County",
+      "seat": "Mount Vernon",
+      "circuit": "2nd Judicial Circuit",
+      "probateCourt": {
+        "name": "Jefferson County Courthouse",
+        "address": "100 S. 10th Street, Mount Vernon, IL 62864",
+        "url": "https://www.illinoiscourts.gov/courts-directory/92/Jefferson-County-Courthouse-/court/"
+      },
+      "clerk": {
+        "name": "Jefferson County Circuit Clerk",
+        "address": "100 S. 10th Street, Mount Vernon, IL 62864",
+        "phone": "618-244-8007",
+        "url": "https://www.illinoiscourts.gov/courts-directory/92/Jefferson-County-Courthouse-/court/"
+      },
+      "recorder": {
+        "name": "Jefferson County Clerk & Recorder",
+        "address": "100 S. 10th Street, Room 105, Mount Vernon, IL 62864",
+        "url": "https://jeffersoncounty.illinois.gov/services/county_clerk___recorder/"
+      },
+      "notes": [
+        "An e-filing kiosk is in the main lobby of the Jefferson County Courthouse, and the page links to eFileIL. Listed hours are 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/92/Jefferson-County-Courthouse-/court/)",
+        "The County Clerk & Recorder is in Room 105 at 100 South 10th Street, open weekdays 8:00 a.m. to 4:00 p.m. The Recording Department stops recording at 3:30 p.m. to print daily reports; its phone is 618-244-8020 ext. 3. (source: https://jeffersoncounty.illinois.gov/services/county_clerk___recorder/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "jersey",
+      "name": "Jersey County",
+      "seat": "Jerseyville",
+      "circuit": "7th Judicial Circuit",
+      "probateCourt": {
+        "name": "Jersey County Courthouse",
+        "address": "201 West Pearl Street, Jerseyville, IL 62052",
+        "url": "https://www.illinoiscourts.gov/courts-directory/20/Jersey-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Jersey County Circuit Clerk",
+        "address": "201 West Pearl Street, Jerseyville, IL 62052",
+        "phone": "618-498-5571",
+        "url": "https://www.illinoiscourts.gov/courts-directory/20/Jersey-County-Courthouse/court/"
+      },
+      "notes": [
+        "The e-filing kiosk and the Self-Help Center at the Jersey County Courthouse are in the room next to the Circuit Clerk's Office. (source: https://www.illinoiscourts.gov/courts-directory/20/Jersey-County-Courthouse/court/)",
+        "The Jersey County Courthouse at 201 West Pearl Street is open weekdays from 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/20/Jersey-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "jo-daviess",
+      "name": "Jo Daviess County",
+      "seat": "Galena",
+      "circuit": "15th Judicial Circuit",
+      "probateCourt": {
+        "name": "Jo Daviess County Courthouse",
+        "address": "330 North Bench Street, Galena, IL 61036",
+        "url": "https://www.illinoiscourts.gov/courts-directory/21/Jo-Daviess-County-Courthouse/court"
+      },
+      "clerk": {
+        "name": "Jo Daviess County Circuit Clerk",
+        "address": "330 North Bench Street, Suite 2C, Galena, IL 61036",
+        "phone": "815-777-0037",
+        "url": "https://jodaviesscountyil.gov/1215/Circuit-Clerk"
+      },
+      "notes": [
+        "The Circuit Clerk's office is in Suite 2C of the courthouse and is open Monday through Friday, 8 a.m. to 4 p.m., closed on holidays. (source: https://jodaviesscountyil.gov/1215/Circuit-Clerk)",
+        "Civil cases must be e-filed through eFileIL, and the Clerk's Office also accepts e-filed documents in criminal cases. Clerk staff cannot give legal advice. (source: https://jodaviesscountyil.gov/1215/Circuit-Clerk)",
+        "An e-filing kiosk is in the Circuit Clerk's office on the 2nd floor of the courthouse. (source: https://www.illinoiscourts.gov/courts-directory/21/Jo-Daviess-County-Courthouse/court)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "johnson",
+      "name": "Johnson County",
+      "seat": "Vienna",
+      "circuit": "1st Judicial Circuit",
+      "probateCourt": {
+        "name": "Johnson County Courthouse",
+        "address": "105 North 6th Street, Vienna, IL 62995",
+        "url": "https://www.illinoiscourts.gov/courts-directory/93/Johnson-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Johnson County Circuit Clerk",
+        "address": "105 North 6th Street, Vienna, IL 62995 (mail: P.O. Box 517)",
+        "phone": "618-658-4751",
+        "url": "https://firstcircuitil.org/circuit-courts/johnson-county/"
+      },
+      "notes": [
+        "The Johnson County Courthouse is open 8:00 a.m. to noon and 1:00 p.m. to 4:00 p.m., so it closes over the lunch hour, and it has an e-filing kiosk. (source: https://www.illinoiscourts.gov/courts-directory/93/Johnson-County-Courthouse/court/)",
+        "The First Judicial Circuit lists the Johnson County self-help center at the Vienna Carnegie Library, 401 Poplar St., phone 618-658-5051. (source: https://firstcircuitil.org/court-community-directory/legal-help-centers/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
     },
     {
       "slug": "kane",
@@ -303,7 +1193,9 @@
       "cities": [
         "aurora",
         "st-charles",
-        "geneva"
+        "geneva",
+        "elgin",
+        "batavia"
       ],
       "updated": "2026-10-26"
     },
@@ -334,7 +1226,9 @@
         "The Recorder's office is at 189 East Court Street and offers eRecording. It accepts cash and check only for recordings, and accepts only MyDec PTAX forms made on the Illinois Department of Revenue website. (source: https://k3countyrecorder.com/)",
         "The Supervisor of Assessments office is at 189 East Court Street, phone 815-937-2945. Its page links general and senior homestead exemption information and the senior assessment freeze form (PTAX-340). (source: https://www.k3county.net/184/Supervisor-of-Assessments-Office)"
       ],
-      "cities": [],
+      "cities": [
+        "kankakee"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -360,7 +1254,8 @@
         "The Kendall County Recorder's Office is at 502 S. Main St., Yorkville. The phone is 630-553-4112. Hours are Monday to Friday, 8:00 a.m. to 4:30 p.m. (source: https://www.kendallcountyil.gov/offices/county-clerk-recorder)"
       ],
       "cities": [
-        "yorkville"
+        "yorkville",
+        "oswego"
       ],
       "updated": "2026-10-26"
     },
@@ -390,37 +1285,6 @@
         "The Circuit Clerk lists a separate Probate phone line, 309-345-6733. The main clerk line is 309-345-3859. (source: https://www.knoxcountyil.gov/departments/circuit_clerk/)",
         "The Recorder is on the third floor of the Knox County Courthouse. Recordings received by 3:30 p.m. are processed the same day. The office also collects the Illinois Real Estate Transfer Tax. (source: https://www.knoxcountyil.gov/departments/county_recorder/index.php)",
         "Knox County land records can be searched online and offer e-recording. (source: https://www.knoxcountyil.gov/departments/county_recorder/index.php)"
-      ],
-      "cities": [],
-      "updated": "2026-10-26"
-    },
-    {
-      "slug": "lasalle",
-      "name": "LaSalle County",
-      "seat": "Ottawa",
-      "circuit": "13th Judicial Circuit",
-      "probateCourt": {
-        "name": "LaSalle County Courthouse (13th Circuit)",
-        "address": "119 West Madison St., Ottawa, IL 61350",
-        "url": "https://www.illinoiscourts.gov/courts-directory/98/LaSalle-County-Courthouse/court/"
-      },
-      "clerk": {
-        "name": "LaSalle County Circuit Clerk",
-        "address": "119 W. Madison St., Ottawa, IL 61350 (Civil Division)",
-        "phone": "815-434-8671",
-        "url": "https://lasallecounty.com/"
-      },
-      "recorder": {
-        "name": "LaSalle County Recorder of Deeds",
-        "address": "707 E Etna Road, Ottawa, IL 61350",
-        "url": "https://lasallecountyil.gov/Directory.aspx?did=35"
-      },
-      "notes": [
-        "The LaSalle County Courthouse is at 119 West Madison St. in Ottawa. The e-Filing Kiosk and Self-Help Center are in the Circuit Clerk's Office, Room 201. (source: https://www.illinoiscourts.gov/courts-directory/98/LaSalle-County-Courthouse/court/)",
-        "The Circuit Clerk keeps a Civil Division at 119 W. Madison St. and a Traffic and Criminal Division at 707 Etna Road, both in Ottawa. (source: https://lasallecounty.com/)",
-        "The Recorder of Deeds office is at 707 E Etna Road in Ottawa, phone 815-434-8226, open Monday to Friday, 8 am to 4:30 pm. (source: https://lasallecountyil.gov/Directory.aspx?did=35)",
-        "The County Assessment Office is at 707 E Etna Road, phone 815-434-8233. Its exemptions page describes the $5,000 Senior Homestead Exemption, the Low-Income Senior Citizens Assessment Freeze, and a tax deferral program run through the County Treasurer. (source: https://lasallecountyil.gov/204/Exemptions)",
-        "The Circuit Clerk's fee schedule is a PDF linked from the clerk's site. Ask the Civil Division at 815-434-8671 for the current probate filing fee. (source: https://lasallecounty.com/fee-schedule)"
       ],
       "cities": [],
       "updated": "2026-10-26"
@@ -456,9 +1320,149 @@
         "The Lake County senior homestead exemption reduces assessed value by $8,000 for owners age 65 or older who live in the home. It does not need yearly renewal, but it does not carry over if the parcel number changes. (source: https://www.lakecountyil.gov/457/Senior-Homestead-Exemption)"
       ],
       "cities": [
-        "waukegan"
+        "waukegan",
+        "highland-park",
+        "lake-forest",
+        "libertyville",
+        "mundelein",
+        "gurnee",
+        "vernon-hills",
+        "lake-zurich"
       ],
       "updated": "2026-10-26"
+    },
+    {
+      "slug": "lasalle",
+      "name": "LaSalle County",
+      "seat": "Ottawa",
+      "circuit": "13th Judicial Circuit",
+      "probateCourt": {
+        "name": "LaSalle County Courthouse (13th Circuit)",
+        "address": "119 West Madison St., Ottawa, IL 61350",
+        "url": "https://www.illinoiscourts.gov/courts-directory/98/LaSalle-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "LaSalle County Circuit Clerk",
+        "address": "119 W. Madison St., Ottawa, IL 61350 (Civil Division)",
+        "phone": "815-434-8671",
+        "url": "https://lasallecounty.com/"
+      },
+      "recorder": {
+        "name": "LaSalle County Recorder of Deeds",
+        "address": "707 E Etna Road, Ottawa, IL 61350",
+        "url": "https://lasallecountyil.gov/Directory.aspx?did=35"
+      },
+      "notes": [
+        "The LaSalle County Courthouse is at 119 West Madison St. in Ottawa. The e-Filing Kiosk and Self-Help Center are in the Circuit Clerk's Office, Room 201. (source: https://www.illinoiscourts.gov/courts-directory/98/LaSalle-County-Courthouse/court/)",
+        "The Circuit Clerk keeps a Civil Division at 119 W. Madison St. and a Traffic and Criminal Division at 707 Etna Road, both in Ottawa. (source: https://lasallecounty.com/)",
+        "The Recorder of Deeds office is at 707 E Etna Road in Ottawa, phone 815-434-8226, open Monday to Friday, 8 am to 4:30 pm. (source: https://lasallecountyil.gov/Directory.aspx?did=35)",
+        "The County Assessment Office is at 707 E Etna Road, phone 815-434-8233. Its exemptions page describes the $5,000 Senior Homestead Exemption, the Low-Income Senior Citizens Assessment Freeze, and a tax deferral program run through the County Treasurer. (source: https://lasallecountyil.gov/204/Exemptions)",
+        "The Circuit Clerk's fee schedule is a PDF linked from the clerk's site. Ask the Civil Division at 815-434-8671 for the current probate filing fee. (source: https://lasallecounty.com/fee-schedule)"
+      ],
+      "cities": [],
+      "updated": "2026-10-26"
+    },
+    {
+      "slug": "lawrence",
+      "name": "Lawrence County",
+      "seat": "Lawrenceville",
+      "circuit": "2nd Judicial Circuit",
+      "probateCourt": {
+        "name": "Lawrence County Courthouse",
+        "address": "1100 State Street, Lawrenceville, IL 62439",
+        "url": "https://www.illinoiscourts.gov/courts-directory/26/Lawrence-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Lawrence County Circuit Clerk",
+        "address": "1100 State Street, Lawrenceville, IL 62439",
+        "phone": "618-943-2815",
+        "url": "https://www.illinoiscourts.gov/courts-directory/26/Lawrence-County-Courthouse/court/"
+      },
+      "recorder": {
+        "name": "Lawrence County Clerk & Recorder",
+        "address": "1100 State Street, Lawrenceville, IL 62439",
+        "url": "https://lawrencecounty.illinois.gov/departments/county-clerk"
+      },
+      "notes": [
+        "The Lawrence County Circuit Clerk's office is in the courthouse at 1100 State Street, Lawrenceville, and the Illinois Courts directory lists its hours as 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/26/Lawrence-County-Courthouse/court/)",
+        "The Lawrence County Clerk's office also serves as the recorder's office at 1100 State Street. It is open Monday to Friday, 8 a.m. to 4 p.m. (except holidays), and recorder records can be searched for free in person during those hours. (source: https://lawrencecounty.illinois.gov/departments/county-clerk)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "lee",
+      "name": "Lee County",
+      "seat": "Dixon",
+      "circuit": "15th Judicial Circuit",
+      "probateCourt": {
+        "name": "Lee County Courthouse",
+        "address": "309 S. Galena Avenue, Dixon, IL 61021",
+        "url": "https://www.illinoiscourts.gov/courts-directory/27/Lee-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Lee County Circuit Clerk",
+        "address": "309 S. Galena Avenue, Dixon, IL 61021",
+        "url": "https://www.illinoiscourts.gov/courts-directory/27/Lee-County-Courthouse/court/"
+      },
+      "notes": [
+        "E-filing is available in the resource room on the 3rd floor of the Lee County Courthouse. Listed hours are 8:30 a.m. to 4:30 p.m. (source: https://www.illinoiscourts.gov/courts-directory/27/Lee-County-Courthouse/court/)",
+        "The law library is on the 4th floor of the Lee County Courts Building, and an interpreter is provided as needed by contacting court staff. (source: https://www.illinoiscourts.gov/courts-directory/27/Lee-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "livingston",
+      "name": "Livingston County",
+      "seat": "Pontiac",
+      "circuit": "11th Judicial Circuit",
+      "probateCourt": {
+        "name": "Livingston County Law and Justice Center",
+        "address": "110 N. Main Street, Pontiac, IL 61764",
+        "url": "https://www.illinoiscourts.gov/courts-directory/28/Livingston-County-Law-and-Justice-Center/court/"
+      },
+      "clerk": {
+        "name": "Livingston County Circuit Clerk",
+        "address": "110 N. Main Street, Pontiac, IL 61764",
+        "phone": "815-844-2602",
+        "url": "https://www.illinoiscourts.gov/courts-directory/28/Livingston-County-Law-and-Justice-Center/court/"
+      },
+      "notes": [
+        "The Self-Help Center is on the 1st floor near the lobby and entrance, next to the State's Attorney's office. Listed hours are 8:00 a.m. to 4:30 p.m. (source: https://www.illinoiscourts.gov/courts-directory/28/Livingston-County-Law-and-Justice-Center/court/)",
+        "The Circuit Clerk's office in the Law and Justice Center has three e-filing kiosks. (source: https://www.illinoiscourts.gov/courts-directory/28/Livingston-County-Law-and-Justice-Center/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "logan",
+      "name": "Logan County",
+      "seat": "Lincoln",
+      "circuit": "11th Judicial Circuit",
+      "probateCourt": {
+        "name": "Logan County Courthouse",
+        "address": "601 Broadway Street, Lincoln, IL 62656",
+        "url": "https://illinoiscourts.gov/courts-directory/29/Logan-County-Courthouse/court"
+      },
+      "clerk": {
+        "name": "Logan County Circuit Clerk",
+        "address": "601 Broadway Street, P.O. Box 158, Lincoln, IL 62656",
+        "phone": "217-735-2376",
+        "url": "https://logancountyil.gov/index.php?option=com_content&view=article&id=168&Itemid=758&lang=en"
+      },
+      "recorder": {
+        "name": "Logan County Clerk & Recorder",
+        "address": "601 Broadway Street, Lincoln, IL 62656",
+        "url": "https://logancountyil.gov/index.php?option=com_content&view=article&id=167&Itemid=521&lang=en"
+      },
+      "notes": [
+        "The Logan County Circuit Clerk's office has two e-filing stations, one on the civil side and one on the criminal side, and the Self-Help Center terminal is in the same office. (source: https://illinoiscourts.gov/courts-directory/29/Logan-County-Courthouse/court)",
+        "The Circuit Clerk is open Monday to Friday, 8:30 a.m. to 4:30 p.m. Starting April 1, 2026 the office closes for lunch from noon to 1:00 p.m., while the Self-Help Center stays open. (source: https://logancountyil.gov/index.php?option=com_content&view=article&id=168&Itemid=758&lang=en)",
+        "The Logan County Clerk and Recorder records land documents for the county, phone (217) 732-4148, and its website offers recording fees, plat act affidavit information, a Property Fraud Alert and an online land records search. (source: https://logancountyil.gov/index.php?option=com_content&view=article&id=167&Itemid=521&lang=en)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
     },
     {
       "slug": "macon",
@@ -487,7 +1491,9 @@
         "The Macon County Supervisor of Assessments, at 141 South Main Street, Room 401, phone 217-424-1364, lists the Senior Citizens Homestead Exemption, the Senior Assessment Freeze and the Senior Tax Deferral program. (source: https://maconcounty.illinois.gov/departments/supervisor-of-assessments/)",
         "The Macon County Circuit Clerk's fee page lists a $376.00 filing fee for Probate (Decedent's Estate) and a $2.00 fee for a Letter of Office. The page gives no effective date and says fees may change without notice. (source: https://www.cclerk.co.macon.il.us/court-fees/)"
       ],
-      "cities": [],
+      "cities": [
+        "decatur"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -550,9 +1556,129 @@
         "Madison County offers a $5,000 Senior Citizens Homestead Exemption for owners age 65 or older. A separate Low-Income Senior Citizens Assessment Freeze needs household income under $65,000 and a yearly application by July 31. The assessment office phone is (618) 296-6200. (source: https://www.madisoncountyil.gov/departments/chief_county_assesment_office/available_exemptions.php)"
       ],
       "cities": [
-        "alton"
+        "alton",
+        "edwardsville"
       ],
       "updated": "2026-10-26"
+    },
+    {
+      "slug": "marion",
+      "name": "Marion County",
+      "seat": "Salem",
+      "circuit": "4th Judicial Circuit",
+      "probateCourt": {
+        "name": "Marion County Courthouse",
+        "address": "100 E. Main Street, Salem, IL 62881",
+        "url": "https://www.illinoiscourts.gov/courts-directory/31/Marion-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Marion County Circuit Clerk",
+        "address": "100 E. Main Street, Salem, IL 62881",
+        "phone": "618-548-3856",
+        "url": "https://www.illinoiscourts.gov/courts-directory/31/Marion-County-Courthouse/court/"
+      },
+      "notes": [
+        "The Circuit Clerk's office is on the second floor of the Marion County Courthouse, with civil matters in Room 206. The Self-Help Center and an e-filing kiosk are in Room 204. (source: https://www.illinoiscourts.gov/courts-directory/31/Marion-County-Courthouse/court/)",
+        "Listed hours are 8:00 a.m. to 4:00 p.m., and the Circuit Clerk page at marioncountyil.gov gives the same phone, 618-548-3856. (source: https://marioncountyil.gov/?p=305)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "marshall",
+      "name": "Marshall County",
+      "seat": "Lacon",
+      "circuit": "10th Judicial Circuit",
+      "probateCourt": {
+        "name": "Marshall County Courthouse",
+        "address": "122 N. Prairie Street, Lacon, IL 61540",
+        "url": "https://marshallcountyillinois.gov/directory/circuit-clerk/"
+      },
+      "clerk": {
+        "name": "Marshall County Circuit Clerk",
+        "address": "122 N. Prairie Street, Lacon, IL 61540",
+        "phone": "309-246-6435",
+        "url": "https://marshallcountyillinois.gov/directory/circuit-clerk/"
+      },
+      "notes": [
+        "The Marshall County Circuit Clerk's office is at 122 N. Prairie Street (mailing address P.O. Box 328), Lacon, and the clerk's page on the county site includes a link for e-filing. (source: https://marshallcountyillinois.gov/directory/circuit-clerk/)",
+        "The Marshall County Clerk & Recorder is a separate office from the Circuit Clerk and lists weekday hours of 8:30 a.m. to 4:30 p.m. with weekends closed. (source: https://marshallcountyillinois.gov/directory/county-clerk-and-recorder/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "mason",
+      "name": "Mason County",
+      "seat": "Havana",
+      "circuit": "8th Judicial Circuit",
+      "probateCourt": {
+        "name": "Mason County Courthouse",
+        "address": "125 N. Plum Street, Havana, IL 62644",
+        "url": "https://www.illinoiscourts.gov/courts-directory/101/Mason-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Mason County Circuit Clerk",
+        "address": "125 N. Plum Street, Havana, IL 62644",
+        "phone": "309-543-6619",
+        "url": "https://www.illinoiscourts.gov/courts-directory/101/Mason-County-Courthouse/court/"
+      },
+      "notes": [
+        "The Mason County Circuit Clerk's office is in the courthouse at 125 N. Plum Street, Havana, and the Illinois Courts directory lists its hours as 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/101/Mason-County-Courthouse/court/)",
+        "The Mason County website lists courthouse hours of Monday to Friday, 8 a.m. to 4 p.m., and the County Clerk, who is a separate office from the Circuit Clerk, is based at the same courthouse. (source: https://www.masoncountyil.gov/faq.htm)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "massac",
+      "name": "Massac County",
+      "seat": "Metropolis",
+      "circuit": "1st Judicial Circuit",
+      "probateCourt": {
+        "name": "Massac County Courthouse",
+        "address": "1 Superman Square, Room 2D, Metropolis, IL 62960",
+        "url": "https://firstcircuitil.org/circuit-courts/massac-county/"
+      },
+      "clerk": {
+        "name": "Massac County Circuit Clerk",
+        "address": "1 Superman Square, Room 2D, Metropolis, IL 62960",
+        "phone": "618-524-9359",
+        "url": "https://www.massaccountyil.gov/?p=271"
+      },
+      "recorder": {
+        "name": "Massac County Clerk",
+        "address": "1 Superman Square, Metropolis, IL 62960",
+        "url": "https://www.massaccountyil.gov/county-clerk/"
+      },
+      "notes": [
+        "The First Judicial Circuit lists the Massac County Circuit Clerk in Room 2D of the courthouse at One Superman Square, Metropolis, although the Illinois Courts directory shows the courthouse as 101 West 8th Street, so confirm the entrance before visiting. (source: https://firstcircuitil.org/circuit-courts/massac-county/)",
+        "The Massac County Clerk is a separate office, also at 1 Superman Square, open Monday to Friday, 8:00 a.m. to 4:00 p.m. and closed 12:00 to 1:00 for lunch. (source: https://www.massaccountyil.gov/county-clerk/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "mcdonough",
+      "name": "McDonough County",
+      "seat": "Macomb",
+      "circuit": "9th Judicial Circuit",
+      "probateCourt": {
+        "name": "McDonough County Courthouse",
+        "address": "1 Courthouse Square, Macomb, IL 61455",
+        "url": "https://www.illinoiscourts.gov/courts-directory/33/McDonough-County-Courthouse/court"
+      },
+      "clerk": {
+        "name": "McDonough County Circuit Clerk",
+        "address": "1 Courthouse Square, Macomb, IL 61455",
+        "url": "http://mcg.mcdonough.il.us/circuitclerk.html"
+      },
+      "notes": [
+        "An e-filing kiosk is on the first floor in the Circuit Clerk's Office, and the courthouse is open 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/33/McDonough-County-Courthouse/court)",
+        "A computer with internet access is available in the Law Library on the third floor of the courthouse. (source: https://www.illinoiscourts.gov/courts-directory/33/McDonough-County-Courthouse/court)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
     },
     {
       "slug": "mchenry",
@@ -582,7 +1708,10 @@
         "The McHenry County Recorder's phone is 815-334-4110. The page says recorded documents are checked against Illinois recording requirements. (source: https://www.mchenrycountyil.gov/departments/county-recorder/general-information)",
         "McHenry County lists a senior homestead exemption of up to $8,000 for age 65 or older. A senior assessment freeze is available at household income of $75,000 or less, with applications due July 1. Call the Office of Assessments at (815) 334-4290. (source: https://www.mchenrycountyil.gov/departments/assessments/exemptions)"
       ],
-      "cities": [],
+      "cities": [
+        "crystal-lake",
+        "mchenry"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -613,8 +1742,61 @@
         "Since December 31, 2013, the County Clerk's Office has handled the Recorder's duties at 115 E Washington Street, Room M104, Bloomington, phone 309-888-5170. (source: https://mcleancountyil.gov/index.aspx?NID=791)",
         "For senior property tax exemptions, call the McLean County Supervisor of Assessments at 309-888-5130. The Treasurer, at 309-888-5180, handles the Senior Citizen Tax Deferral program, due March 1. (source: https://www.mcleancountyil.gov/406/Senior-Citizen-Tax-Information)"
       ],
-      "cities": [],
+      "cities": [
+        "bloomington"
+      ],
       "updated": "2026-10-26"
+    },
+    {
+      "slug": "menard",
+      "name": "Menard County",
+      "seat": "Petersburg",
+      "circuit": "8th Judicial Circuit",
+      "probateCourt": {
+        "name": "Menard County Courthouse",
+        "address": "102 South Seventh Street, Petersburg, IL 62675",
+        "url": "https://menardcountyil.gov/elected-officials/circuit-court-clerk"
+      },
+      "clerk": {
+        "name": "Menard County Circuit Clerk",
+        "address": "102 South Seventh Street, Petersburg, IL 62675",
+        "phone": "217-632-2615",
+        "url": "https://menardcountyil.gov/elected-officials/circuit-court-clerk"
+      },
+      "recorder": {
+        "name": "Menard County Clerk/Recorder",
+        "address": "102 South Seventh Street, Petersburg, IL 62675",
+        "url": "https://menardcountyil.gov/elected-officials/county-clerkrecorder"
+      },
+      "notes": [
+        "The Menard County Circuit Clerk is on the 2nd floor of the courthouse and is open Monday to Friday, 8:00 a.m. to 4:00 p.m. Computerized court records go back to 1994, and older records require a physical search. (source: https://menardcountyil.gov/elected-officials/circuit-court-clerk)",
+        "The Menard County Clerk/Recorder is on the 1st floor of the courthouse, open Monday to Friday, 8:00 a.m. to 4:00 p.m., with a free terminal for searching land records in the office. (source: https://menardcountyil.gov/elected-officials/county-clerkrecorder)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "mercer",
+      "name": "Mercer County",
+      "seat": "Aledo",
+      "circuit": "14th Judicial Circuit",
+      "probateCourt": {
+        "name": "Mercer County Courthouse",
+        "address": "100 S.E. 3rd Street, Aledo, IL 61231",
+        "url": "https://www.mercercountyil.org/deparments/circuit_clerk.php"
+      },
+      "clerk": {
+        "name": "Mercer County Circuit Clerk",
+        "address": "100 S.E. 3rd Street, Aledo, IL 61231",
+        "phone": "309-582-7122",
+        "url": "https://www.mercercountyil.org/deparments/circuit_clerk.php"
+      },
+      "notes": [
+        "The Mercer County Circuit Clerk's office is on the 3rd floor of the courthouse at 100 S.E. 3rd Street, Aledo, reached through the courthouse line at 309-582-7122, Option 2. (source: https://www.mercercountyil.org/deparments/circuit_clerk.php)",
+        "The county site lists Circuit Clerk office hours as 8 a.m. to 4 p.m. on weekdays and links to the clerk's fee schedule. (source: https://www.mercercountyil.org/deparments/circuit_clerk.php)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
     },
     {
       "slug": "monroe",
@@ -643,6 +1825,80 @@
       ],
       "cities": [],
       "updated": "2026-10-26"
+    },
+    {
+      "slug": "montgomery",
+      "name": "Montgomery County",
+      "seat": "Hillsboro",
+      "circuit": "4th Judicial Circuit",
+      "probateCourt": {
+        "name": "Montgomery County Courthouse",
+        "address": "120 North Main Street, Hillsboro, IL 62049",
+        "url": "https://www.illinoiscourts.gov/courts-directory/153/Montgomery-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Montgomery County Circuit Clerk",
+        "address": "120 North Main St, Room 125, Hillsboro, IL 62049",
+        "phone": "217-532-9540",
+        "url": "https://www.montgomerycountyil.gov/circuit-clerk/"
+      },
+      "recorder": {
+        "name": "Montgomery County Clerk & Recorder",
+        "address": "1 Courthouse Square, Hillsboro, IL 62049",
+        "url": "https://www.montgomerycountyil.gov/county-clerk/"
+      },
+      "notes": [
+        "The Montgomery County courthouse lists a Self-Help Center and an e-filing kiosk, and its Circuit Clerk page links to e-filing information. Courthouse hours are 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/153/Montgomery-County-Courthouse/court/)",
+        "The Circuit Clerk's page says the court handles matters from adoption to the probate of an estate, and that personal checks from banks outside Montgomery County are not accepted. (source: https://www.montgomerycountyil.gov/circuit-clerk/)",
+        "The County Clerk and Recorder is on the first floor of the Historic Courthouse at 1 Courthouse Square, open Monday to Friday, 8 a.m. to 4 p.m. The recorder phone is (217) 532-9535. (source: https://www.montgomerycountyil.gov/county-clerk/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "morgan",
+      "name": "Morgan County",
+      "seat": "Jacksonville",
+      "circuit": "7th Judicial Circuit",
+      "probateCourt": {
+        "name": "Morgan County Courthouse",
+        "address": "300 W. State Street, Jacksonville, IL 62650",
+        "url": "https://www.illinoiscourts.gov/courts-directory/36/Morgan-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Morgan County Circuit Clerk",
+        "address": "300 W. State Street, Jacksonville, IL 62650",
+        "url": "https://www.illinoiscourts.gov/courts-directory/36/Morgan-County-Courthouse/court/"
+      },
+      "notes": [
+        "The e-filing kiosk in the Morgan County Courthouse is in the basement. Listed hours are 8:30 a.m. to 4:30 p.m. (source: https://www.illinoiscourts.gov/courts-directory/36/Morgan-County-Courthouse/court/)",
+        "The law library is on the 3rd floor, and the courthouse parking lot is free. (source: https://www.illinoiscourts.gov/courts-directory/36/Morgan-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "moultrie",
+      "name": "Moultrie County",
+      "seat": "Sullivan",
+      "circuit": "6th Judicial Circuit",
+      "probateCourt": {
+        "name": "Moultrie County Courthouse",
+        "address": "10 South Main Street, Suite 7, Sullivan, IL 61951",
+        "url": "https://www.moultriecountyil.gov/departments/circuit_clerk/"
+      },
+      "clerk": {
+        "name": "Moultrie County Circuit Clerk",
+        "address": "10 South Main Street, Suite 7, Sullivan, IL 61951",
+        "phone": "217-728-4622",
+        "url": "https://www.moultriecountyil.gov/departments/circuit_clerk/"
+      },
+      "notes": [
+        "The Moultrie County Circuit Clerk is in Suite 7 of the courthouse at 10 S. Main Street, Sullivan, with weekday hours of 8:30 a.m. to 4:30 p.m. and a lunch closure from 12:00 to 1:00. (source: https://www.moultriecountyil.gov/departments/circuit_clerk/)",
+        "In the same Sullivan courthouse, the county directory places Probation in Suite 5 and the County Clerk in Suite 6, so recording and court matters are handled at different counters. (source: https://www.moultriecountyil.gov/how_do_i/contact_us/index.php)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
     },
     {
       "slug": "ogle",
@@ -703,8 +1959,198 @@
         "In Peoria County, recording is handled under the County Clerk at 309-672-6090. The county directory lists no separate Recorder of Deeds. (source: https://www.peoriacounty.gov/directory)",
         "Peoria County offers a $5,000 Senior Homestead Exemption at age 65, a Senior Assessment Freeze with a $65,000 income limit, and a Senior Citizen Tax Deferral program. Call the Supervisor of Assessments at 309-672-6910. (source: https://www.peoriacounty.gov/399/Tax-Relief-Exemptions)"
       ],
-      "cities": [],
+      "cities": [
+        "peoria"
+      ],
       "updated": "2026-10-26"
+    },
+    {
+      "slug": "perry",
+      "name": "Perry County",
+      "seat": "Pinckneyville",
+      "circuit": "24th Judicial Circuit",
+      "probateCourt": {
+        "name": "Perry County Courthouse",
+        "address": "1 Public Square, Floor 2, Pinckneyville, IL 62274",
+        "url": "https://www.illinoiscourts.gov/courts-directory/155/Perry-County-Courthouse/court"
+      },
+      "clerk": {
+        "name": "Perry County Circuit Clerk",
+        "address": "1 Public Square, Pinckneyville, IL 62274",
+        "phone": "618-357-6726",
+        "url": "https://perrycountyil.gov/perry-county-circuit-clerk/"
+      },
+      "notes": [
+        "The Perry County Circuit Clerk is open Monday through Friday, 8:00 a.m. to 4:00 p.m., and the page links to statewide eFile. (source: https://perrycountyil.gov/perry-county-circuit-clerk/)",
+        "The Circuit Clerk's page lists 618-357-6726 as the phone number and circuitclerk@perrycountyil.gov as the email. (source: https://perrycountyil.gov/perry-county-circuit-clerk/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "piatt",
+      "name": "Piatt County",
+      "seat": "Monticello",
+      "circuit": "6th Judicial Circuit",
+      "probateCourt": {
+        "name": "Piatt County Courthouse",
+        "address": "101 W. Washington Street, Monticello, IL 61856",
+        "url": "https://www.illinoiscourts.gov/courts-directory/39/Piatt-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Piatt County Circuit Clerk",
+        "address": "101 W. Washington Street, Monticello, IL 61856",
+        "url": "https://www.circuitclerk.piatt.gov/"
+      },
+      "notes": [
+        "Public access terminals with internet and printing are in the Circuit Clerk's Office on the 2nd floor and in the Law Library on the 3rd floor. The courthouse is open 8:30 a.m. to 4:30 p.m. (source: https://www.illinoiscourts.gov/courts-directory/39/Piatt-County-Courthouse/court/)",
+        "An e-filing kiosk with shortcuts and instructions for e-filers is in the public access terminal area, and the page links to statewide eFile. (source: https://www.illinoiscourts.gov/courts-directory/39/Piatt-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "pike",
+      "name": "Pike County",
+      "seat": "Pittsfield",
+      "circuit": "8th Judicial Circuit",
+      "probateCourt": {
+        "name": "Pike County Courthouse",
+        "address": "100 E. Washington Street, Pittsfield, IL 62363",
+        "url": "https://www.illinoiscourts.gov/courts-directory/105/Pike-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Pike County Circuit Clerk",
+        "address": "100 E. Washington Street, Pittsfield, IL 62363",
+        "phone": "217-285-6612",
+        "url": "https://www.illinoiscourts.gov/courts-directory/105/Pike-County-Courthouse/court/"
+      },
+      "notes": [
+        "The Pike County Courthouse, 100 E. Washington Street, Pittsfield, is listed by the Illinois Courts directory as open 8:30 a.m. to 4:30 p.m. (source: https://www.illinoiscourts.gov/courts-directory/105/Pike-County-Courthouse/court/)",
+        "An e-filing kiosk is located in the foyer of the Pike County Circuit Clerk's office. (source: https://www.illinoiscourts.gov/courts-directory/105/Pike-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "pope",
+      "name": "Pope County",
+      "seat": "Golconda",
+      "circuit": "1st Judicial Circuit",
+      "probateCourt": {
+        "name": "Pope County Courthouse",
+        "address": "310 E. Main Street, Golconda, IL 62938",
+        "url": "https://firstcircuitil.org/circuit-courts/pope-county/"
+      },
+      "clerk": {
+        "name": "Pope County Circuit Clerk",
+        "address": "310 E. Main Street, Golconda, IL 62938",
+        "phone": "618-683-8100",
+        "url": "https://firstcircuitil.org/circuit-courts/pope-county/"
+      },
+      "notes": [
+        "The Pope County Circuit Clerk's office is in the courthouse at 310 East Main Street, Golconda (mailing address P.O. Box 438). (source: https://firstcircuitil.org/circuit-courts/pope-county/)",
+        "The First Judicial Circuit states that its circuit clerk offices are open 8:00 a.m. to 4:00 p.m., Monday to Friday, and that some close at noon, so call ahead before driving to Golconda. (source: https://firstcircuitil.org/frequently-asked-questions)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "pulaski",
+      "name": "Pulaski County",
+      "seat": "Mound City",
+      "circuit": "1st Judicial Circuit",
+      "probateCourt": {
+        "name": "Pulaski County Courthouse",
+        "address": "500 Illinois Avenue, Mound City, IL 62963",
+        "url": "https://firstcircuitil.org/circuit-courts/pulaski-county/"
+      },
+      "clerk": {
+        "name": "Pulaski County Circuit Clerk",
+        "address": "500 Illinois Avenue, Mound City, IL 62963",
+        "phone": "618-748-9300",
+        "url": "https://firstcircuitil.org/circuit-courts/pulaski-county/"
+      },
+      "notes": [
+        "The Pulaski County Circuit Clerk's office is in the courthouse at 500 Illinois Avenue, Mound City. (source: https://firstcircuitil.org/circuit-courts/pulaski-county/)",
+        "The First Judicial Circuit states that its circuit clerk offices are open 8:00 a.m. to 4:00 p.m., Monday to Friday, and that some close at noon, so call ahead before visiting Mound City. (source: https://firstcircuitil.org/frequently-asked-questions)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "putnam",
+      "name": "Putnam County",
+      "seat": "Hennepin",
+      "circuit": "10th Judicial Circuit",
+      "probateCourt": {
+        "name": "Putnam County Courthouse",
+        "address": "120 N. 4th Street, Hennepin, IL 61327",
+        "url": "https://putnamil.gov/government/circuit_court_clerk_office/index.php"
+      },
+      "clerk": {
+        "name": "Putnam County Circuit Clerk",
+        "address": "120 N. 4th Street, Hennepin, IL 61327",
+        "phone": "815-925-7016",
+        "url": "https://putnamil.gov/government/circuit_court_clerk_office/index.php"
+      },
+      "notes": [
+        "The Putnam County Circuit Clerk's office is in the courthouse at 120 N. 4th Street, Hennepin, and is open 9:00 a.m. to 4:00 p.m., Monday to Friday, excluding holidays. (source: https://putnamil.gov/government/circuit_court_clerk_office/index.php)",
+        "The Putnam County Circuit Clerk's page states that civil filings must be made electronically, a requirement in effect since January 1, 2018. (source: https://putnamil.gov/government/circuit_court_clerk_office/index.php)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "randolph",
+      "name": "Randolph County",
+      "seat": "Chester",
+      "circuit": "24th Judicial Circuit",
+      "probateCourt": {
+        "name": "Randolph County Courthouse",
+        "address": "One Taylor Street, Chester, IL 62233",
+        "url": "https://illinoiscourts.gov/courts-directory/42/Randolph-County-Courthouse/court"
+      },
+      "clerk": {
+        "name": "Randolph County Circuit Clerk",
+        "address": "One Taylor Street, Chester, IL 62233",
+        "phone": "618-826-5000",
+        "url": "https://illinoiscourts.gov/courts-directory/42/Randolph-County-Courthouse/court"
+      },
+      "recorder": {
+        "name": "Randolph County Clerk & Recorder",
+        "address": "1 Taylor Street, Room 202, Chester, IL 62233",
+        "url": "https://randolphcountyil.gov/county-clerk-recorder/"
+      },
+      "notes": [
+        "The Randolph County Self-Help Center is in the conference room on the 3rd floor of the courthouse, which is open 8:00 a.m. to 4:00 p.m. The page also links to eFileIL. (source: https://illinoiscourts.gov/courts-directory/42/Randolph-County-Courthouse/court)",
+        "The Randolph County Clerk and Recorder is in Room 202 at 1 Taylor Street, phone (618) 826-5000 ext. 191, open Monday to Friday, 8:00 a.m. to 4:00 p.m. The page lists sections for land records and recording fees. (source: https://randolphcountyil.gov/county-clerk-recorder/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "richland",
+      "name": "Richland County",
+      "seat": "Olney",
+      "circuit": "2nd Judicial Circuit",
+      "probateCourt": {
+        "name": "Richland County Courthouse",
+        "address": "103 W. Main Street, Olney, IL 62450",
+        "url": "https://www.illinoiscourts.gov/courts-directory/106/Richland-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Richland County Circuit Clerk",
+        "address": "103 W. Main Street, Olney, IL 62450",
+        "phone": "618-392-2151",
+        "url": "https://www.illinoiscourts.gov/courts-directory/106/Richland-County-Courthouse/court/"
+      },
+      "notes": [
+        "The Richland County Courthouse, 103 W. Main Street, Olney, is open Monday to Friday, 8:00 a.m. to 4:00 p.m., and the Circuit Clerk is listed at Suite 21. (source: https://www.illinoiscourts.gov/courts-directory/106/Richland-County-Courthouse/court/)",
+        "The courthouse has an e-filing kiosk with computers and scanners for filing through eFileIL. (source: https://www.illinoiscourts.gov/courts-directory/106/Richland-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
     },
     {
       "slug": "rock-island",
@@ -740,6 +2186,29 @@
       "updated": "2026-10-26"
     },
     {
+      "slug": "saline",
+      "name": "Saline County",
+      "seat": "Harrisburg",
+      "circuit": "1st Judicial Circuit",
+      "probateCourt": {
+        "name": "Saline County Courthouse",
+        "address": "10 East Poplar, Harrisburg, IL 62946",
+        "url": "https://firstcircuitil.org/circuit-courts/saline-county/"
+      },
+      "clerk": {
+        "name": "Saline County Circuit Clerk",
+        "address": "10 East Poplar Street, Harrisburg, IL 62946",
+        "phone": "618-253-5096",
+        "url": "https://firstcircuitil.org/circuit-courts/saline-county/"
+      },
+      "notes": [
+        "The Saline County page of the First Judicial Circuit lists Mary Kuczynski as Circuit Clerk at the Saline County Courthouse, 10 East Poplar, Harrisburg, phone 618-253-5096, and links to the statewide eFile site. (source: https://firstcircuitil.org/circuit-courts/saline-county/)",
+        "The same page links to Illinois Legal Self-Help Centers resources and lists Saline County Probation at 10 East Poplar Street. (source: https://firstcircuitil.org/circuit-courts/saline-county/)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
+    },
+    {
       "slug": "sangamon",
       "name": "Sangamon County",
       "seat": "Springfield",
@@ -767,8 +2236,32 @@
         "The Sangamon County Recorder is a separate office from the County Clerk. Its page links to fee, e-recording and land records search information. (source: https://sangamonil.gov/departments/m-r/recorder)",
         "The Sangamon County Treasurer runs a Senior Citizens Real Estate Tax Deferral program, and the Supervisor of Assessments handles homestead exemption applications. (source: https://sangamonil.gov/departments/s-z/supervisor-of-assessments/homestead-exemption)"
       ],
-      "cities": [],
+      "cities": [
+        "springfield"
+      ],
       "updated": "2026-10-26"
+    },
+    {
+      "slug": "shelby",
+      "name": "Shelby County",
+      "seat": "Shelbyville",
+      "circuit": "4th Judicial Circuit",
+      "probateCourt": {
+        "name": "Shelby County Courthouse",
+        "address": "301 E. Main Street, Shelbyville, IL 62565",
+        "url": "https://www.illinoiscourts.gov/courts-directory/45/Shelby-County-Courthouse/court"
+      },
+      "clerk": {
+        "name": "Shelby County Circuit Clerk",
+        "address": "301 E. Main Street, Shelbyville, IL 62565",
+        "url": "https://circuitclerk.shelbycounty-il.gov"
+      },
+      "notes": [
+        "The courthouse is open 8:00 a.m. to 4:00 p.m. Mail goes to P.O. Box 469, Shelbyville, IL 62565, and the listed phone numbers are 217-774-4212 and 217-774-4109. (source: https://www.illinoiscourts.gov/courts-directory/45/Shelby-County-Courthouse/court)",
+        "An e-filing kiosk is on the third floor of the courthouse, and the page links to an eFileIL portal. (source: https://www.illinoiscourts.gov/courts-directory/45/Shelby-County-Courthouse/court)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
     },
     {
       "slug": "st-clair",
@@ -803,6 +2296,29 @@
         "belleville"
       ],
       "updated": "2026-10-26"
+    },
+    {
+      "slug": "stark",
+      "name": "Stark County",
+      "seat": "Toulon",
+      "circuit": "10th Judicial Circuit",
+      "probateCourt": {
+        "name": "Stark County Courthouse",
+        "address": "130 West Main Street, Toulon, IL 61483",
+        "url": "https://starkco.illinois.gov/departments/circuit-clerk"
+      },
+      "clerk": {
+        "name": "Stark County Circuit Clerk",
+        "address": "130 West Main Street, Toulon, IL 61483",
+        "phone": "309-286-5941",
+        "url": "https://starkco.illinois.gov/departments/circuit-clerk"
+      },
+      "notes": [
+        "The Stark County Circuit Clerk's office is open Monday to Friday, 8:30 a.m. to 4:30 p.m. (source: https://starkco.illinois.gov/departments/circuit-clerk)",
+        "The Illinois Courts directory gives the Stark County Circuit Clerk's address as 130 West Main Street, Toulon, with mail going to P.O. Box 426. (source: https://www.illinoiscourts.gov/courts-directory/46/Stark-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
     },
     {
       "slug": "stephenson",
@@ -865,6 +2381,29 @@
       "updated": "2026-10-26"
     },
     {
+      "slug": "union",
+      "name": "Union County",
+      "seat": "Jonesboro",
+      "circuit": "1st Judicial Circuit",
+      "probateCourt": {
+        "name": "Union County Courthouse",
+        "address": "309 W. Market Street, Room 108, Jonesboro, IL 62952",
+        "url": "https://firstcircuitil.org/circuit-courts/union-county/"
+      },
+      "clerk": {
+        "name": "Union County Circuit Clerk",
+        "address": "309 W. Market Street, Room 108, Jonesboro, IL 62952",
+        "phone": "618-833-5913",
+        "url": "https://firstcircuitil.org/circuit-courts/union-county/"
+      },
+      "notes": [
+        "The First Judicial Circuit lists the Union County Circuit Clerk in Room 108 of the courthouse at 309 W. Market Street, Jonesboro; older state listings show Room 101, so confirm the room. (source: https://firstcircuitil.org/circuit-courts/union-county/)",
+        "The First Judicial Circuit states that its circuit clerk offices are open 8:00 a.m. to 4:00 p.m., Monday to Friday, and that some close at noon. (source: https://firstcircuitil.org/frequently-asked-questions)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
       "slug": "vermilion",
       "name": "Vermilion County",
       "seat": "Danville",
@@ -890,8 +2429,108 @@
         "The Vermilion County Recorder's standard document fee is $69.00 for deeds, mortgages and releases, effective July 1, 2023. The fee is $19.00 less if the grantor or grantee is a government entity. (source: https://www.vercounty.org/recorder/recording-fees/)",
         "Call the Vermilion County Assessment Office at 217-554-1940 to have a Senior Citizens Homestead Exemption application mailed to you. (source: https://www.vercounty.org/supervisor-of-assessments/exemption-information/)"
       ],
-      "cities": [],
+      "cities": [
+        "danville"
+      ],
       "updated": "2026-10-26"
+    },
+    {
+      "slug": "warren",
+      "name": "Warren County",
+      "seat": "Monmouth",
+      "circuit": "9th Judicial Circuit",
+      "probateCourt": {
+        "name": "Warren County Courthouse",
+        "address": "100 W. Broadway, Monmouth, IL 61462",
+        "url": "https://warrencountyil.gov/offices/circuit-clerk/"
+      },
+      "clerk": {
+        "name": "Warren County Circuit Clerk",
+        "address": "100 W. Broadway, Monmouth, IL 61462",
+        "phone": "309-734-5179",
+        "url": "https://warrencountyil.gov/offices/circuit-clerk/"
+      },
+      "notes": [
+        "The Warren County Circuit Clerk's office at 100 W. Broadway, Monmouth, is open Monday to Friday, 8:00 a.m. to 4:30 p.m. (source: https://www.9thjudicial.org/locations/warren-county/6/location-details)",
+        "An e-filing computer station is set up on the 3rd floor of the Warren County Courthouse. (source: https://www.illinoiscourts.gov/courts-directory/51/Warren-County-Courthouse/court/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "washington",
+      "name": "Washington County",
+      "seat": "Nashville",
+      "circuit": "24th Judicial Circuit",
+      "probateCourt": {
+        "name": "Washington County Judicial Center",
+        "address": "125 E. Elm Street, Nashville, IL 62263",
+        "url": "https://washingtonco.illinois.gov/circuit-clerk/"
+      },
+      "clerk": {
+        "name": "Washington County Circuit Clerk",
+        "address": "125 E. Elm Street, Nashville, IL 62263",
+        "phone": "618-327-4800 ext. 305",
+        "url": "https://washingtonco.illinois.gov/circuit-clerk/"
+      },
+      "recorder": {
+        "name": "Washington County Clerk & Recorder",
+        "address": "101 E. St. Louis Street, Nashville, IL 62263",
+        "url": "https://washingtonco.illinois.gov/county-clerk/"
+      },
+      "notes": [
+        "The Washington County Circuit Clerk's office is at 125 E. Elm Street, Nashville, open weekdays 8:00 a.m. to 4:00 p.m. (source: https://washingtonco.illinois.gov/circuit-clerk/)",
+        "The Circuit Clerk's court fee schedule lists a probate filing fee for testate and intestate estates of $371.00. (source: https://washingtonco.illinois.gov/circuit-clerk/court-fees/)",
+        "The County Clerk & Recorder works from a different building, 101 E. St. Louis Street, Nashville, so recording and court filings are at separate addresses. (source: https://washingtonco.illinois.gov/county-clerk/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "wayne",
+      "name": "Wayne County",
+      "seat": "Fairfield",
+      "circuit": "2nd Judicial Circuit",
+      "probateCourt": {
+        "name": "Wayne County Courthouse",
+        "address": "301 E. Main Street, Fairfield, IL 62837",
+        "url": "https://www.illinoiscourts.gov/courts-directory/53/Wayne-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Wayne County Circuit Clerk",
+        "address": "301 E. Main Street, Fairfield, IL 62837",
+        "phone": "618-842-7684",
+        "url": "https://www.illinoiscourts.gov/courts-directory/53/Wayne-County-Courthouse/court/"
+      },
+      "notes": [
+        "The Wayne County Circuit Clerk's office is in Suite 204 of the courthouse at 301 E. Main Street, Fairfield, and the courthouse is listed as open 8:00 a.m. to 4:30 p.m. (source: https://www.illinoiscourts.gov/courts-directory/53/Wayne-County-Courthouse/court/)",
+        "The Wayne County Clerk is a separate office from the Circuit Clerk, with listed hours of Monday to Friday, 8 a.m. to 4:30 p.m. (source: https://waynecountyil.gov/county-clerk/)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
+    },
+    {
+      "slug": "white",
+      "name": "White County",
+      "seat": "Carmi",
+      "circuit": "2nd Judicial Circuit",
+      "probateCourt": {
+        "name": "White County Courthouse",
+        "address": "301 E. Main Street, Carmi, IL 62821",
+        "url": "https://www.whitecounty-il.gov/circuit-clerk"
+      },
+      "clerk": {
+        "name": "White County Circuit Clerk",
+        "address": "301 E. Main Street, Carmi, IL 62821",
+        "phone": "618-382-2321",
+        "url": "https://www.whitecounty-il.gov/circuit-clerk"
+      },
+      "notes": [
+        "The White County Circuit Clerk's office is in the courthouse at 301 E. Main Street, Carmi, and the Illinois Courts directory lists its hours as 8:00 a.m. to 4:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/54/White-County-Courthouse/court/)",
+        "The White County site says the Circuit Clerk maintains all Circuit Court records and collects all court-related fines and fees. (source: https://www.whitecounty-il.gov/circuit-clerk)"
+      ],
+      "cities": [],
+      "updated": "2026-11-01"
     },
     {
       "slug": "whiteside",
@@ -950,7 +2589,12 @@
         "The Recorder of Deeds main office is at 158 N. Scott Street in Joliet, open Monday to Friday, 8:30 AM to 4:30 PM. A Bolingbrook office at 241 Canterbury Lane is open Tuesday and Thursday. (source: https://willcountyrecorder.com/)"
       ],
       "cities": [
-        "joliet"
+        "joliet",
+        "plainfield",
+        "romeoville",
+        "new-lenox",
+        "frankfort",
+        "mokena"
       ],
       "updated": "2026-10-26"
     },
@@ -1018,6 +2662,34 @@
         "rockford"
       ],
       "updated": "2026-10-26"
+    },
+    {
+      "slug": "woodford",
+      "name": "Woodford County",
+      "seat": "Eureka",
+      "circuit": "11th Judicial Circuit",
+      "probateCourt": {
+        "name": "Woodford County Courthouse",
+        "address": "117 E. Court Street, Eureka, IL 61530",
+        "url": "https://www.illinoiscourts.gov/courts-directory/58/Woodford-County-Courthouse/court/"
+      },
+      "clerk": {
+        "name": "Woodford County Circuit Clerk",
+        "address": "117 E. Court Street, 2nd Floor, Eureka, IL 61530",
+        "phone": "309-467-3312",
+        "url": "https://www.illinoiscourts.gov/courts-directory/58/Woodford-County-Courthouse/court/"
+      },
+      "recorder": {
+        "name": "Woodford County Clerk & Recorder",
+        "address": "115 N Main Street, Room 202, Eureka, IL 61530",
+        "url": "https://woodford-county.org/157"
+      },
+      "notes": [
+        "The Woodford County Circuit Clerk's office is on the 2nd floor of the courthouse, which has an e-filing kiosk there and a law library on the 3rd floor. Courthouse hours are 8:00 a.m. to 5:00 p.m. (source: https://www.illinoiscourts.gov/courts-directory/58/Woodford-County-Courthouse/court/)",
+        "The Woodford County Clerk and Recorder is at 115 N Main Street, Room 202, phone 309-467-2822. The office records, indexes and scans documents qualified to be recorded by statute, including deeds, and holds records since the late 1830s. (source: https://woodford-county.org/157)"
+      ],
+      "cities": [],
+      "updated": "2026-10-31"
     }
   ]
 }

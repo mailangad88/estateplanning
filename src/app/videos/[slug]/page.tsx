@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: "video.other",
       title: v.title,
       description: v.description,
-      images: [{ url: v.poster, width: 1280, height: 720 }],
+      images: [{ url: v.poster, width: 1280, height: 720, alt: `Video still: ${v.title}` }],
       videos: [{ url: v.src, width: 1280, height: 720, type: "video/mp4" }],
     },
   };

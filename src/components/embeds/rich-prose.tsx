@@ -109,7 +109,7 @@ export function VisualEmbed({ v, props, n }: { v: VisualSpec; props: RichProsePr
           <Link href={`/free/${m.slug}`} className="vk-download">
             {coverExists(m.slug) ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={`/media/covers/${m.slug}-600.webp`} alt="" width={600} height={776} loading="lazy" decoding="async" />
+              <img src={`/media/covers/${m.slug}-600.webp`} alt={`Cover of the free download: ${m.title}`} width={600} height={776} loading="lazy" decoding="async" />
             ) : (
               <span className="vk-download__icon"><Download size={28} aria-hidden="true" /></span>
             )}

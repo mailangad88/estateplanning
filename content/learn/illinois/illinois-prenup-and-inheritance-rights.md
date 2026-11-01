@@ -119,6 +119,8 @@ One more point couples miss. If you later divorce, Illinois law cuts off a forme
 
 Timing and independent counsel go to the voluntariness prong of the test. They do not decide the result, but they remove the easy arguments.
 
+For second marriages with children from a first marriage, [blended family inheritance in Illinois](/learn/illinois/blended-family-inheritance) shows what stepchildren and a new spouse receive by default.
+
 ## How we can help
 
 A prenup and an estate plan work best when they are drafted together, so the waiver, the trust and the beneficiary forms all say the same thing. Our attorneys can help you draft or review the agreement, build the will or trust that carries it out, and check the retirement plan consents. Start with our [plan finder](/plan-finder), or see our [Illinois estate planning page](/estate-planning/illinois) to book a consultation.

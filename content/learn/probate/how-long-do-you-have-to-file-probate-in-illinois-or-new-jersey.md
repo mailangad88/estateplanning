@@ -37,7 +37,7 @@ intent: question
 
 Someone has died, a few weeks have passed, and nobody has gone near the courthouse. Is that a problem? Or the other extreme: it has been four years, the house is still in Dad's name, and you want to know whether it is too late. Both are common, and the honest answer is that there is no single "file by this date" rule in Illinois or New Jersey. There are several smaller clocks, and they start at different times.
 
-This page lays out each one for the two states we serve, so you can tell which have already started in your situation. For what probate is and how the process runs, see our [probate guide](/learn/probate).
+This page lays out each one for Illinois and New Jersey, so you can tell which have already started in your situation. For what probate is and how the process runs, see our [probate guide](/learn/probate).
 
 ## Is there a deadline to file probate after someone dies?
 

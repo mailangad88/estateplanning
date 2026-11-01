@@ -99,7 +99,7 @@ A longer period is not always better. A 60-day clause could leave money in limbo
 
 ## How state law changes this
 
-States differ on the length of the survival period, the standard of proof, whether the rule covers insurance, retirement accounts and joint property, and how a contract's own terms interact with the statute. Our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides cover the two states we serve.
+States differ on the length of the survival period, the standard of proof, whether the rule covers insurance, retirement accounts and joint property, and how a contract's own terms interact with the statute. Our [Illinois](/estate-planning/illinois) guide covers the state we serve.
 
 ## How we can help
 

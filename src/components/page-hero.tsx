@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { illustrationSrc, topicFor, type Tone } from "@/lib/visual-topic";
+import { illustrationAlt, illustrationSrc, topicFor, type Tone } from "@/lib/visual-topic";
 import { ICON_MAP } from "@/components/visual-card";
 
 /**
@@ -24,6 +24,7 @@ export function PageHero({
 }) {
   const t = topicFor(path, typeof title === "string" ? title : undefined);
   const src = illustrationSrc(art ?? t.art);
+  const alt = illustrationAlt(art ?? t.art, typeof title === "string" ? title : undefined);
   const Icon = ICON_MAP[t.icon];
   const tn = tone ?? t.tone;
   return (
@@ -42,10 +43,10 @@ export function PageHero({
             {lead && <p className="lead">{lead}</p>}
             {children}
           </div>
-          <div className="art-wrap page-hero__art" aria-hidden="true">
+          <div className="art-wrap page-hero__art">
             <div className="art-frame">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={src} alt="" width={1600} height={960} fetchPriority="high" decoding="async" />
+              <img src={src} alt={alt} width={1600} height={960} fetchPriority="high" decoding="async" />
             </div>
           </div>
         </div>

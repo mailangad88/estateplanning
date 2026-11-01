@@ -8,7 +8,11 @@ export const metadata: Metadata = {
   title: page.title,
   description: page.description,
   alternates: { canonical: page.path },
-  openGraph: { title: page.title, description: page.description },
+  openGraph: {
+    title: page.title,
+    description: page.description,
+    images: [{ url: `/og?title=${encodeURIComponent(page.title)}`, width: 1200, height: 630, alt: `Share card: ${page.title}` }],
+  },
 };
 
 export default function Page() {

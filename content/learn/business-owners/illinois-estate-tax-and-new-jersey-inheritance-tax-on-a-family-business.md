@@ -117,4 +117,4 @@ Illinois figures the tax as if everything were in Illinois, then multiplies it b
 
 ## How we can help
 
-State death taxes are one of the few places where a family business plan can fail because of arithmetic. Our attorneys can sort your heirs by class, estimate the Illinois and New Jersey exposure and design the insurance and agreements around it. Start with the [plan finder](/plan-finder), or read our guide to [state estate and inheritance taxes](/learn/estate-tax/state-estate-and-inheritance-taxes) first.
+State death taxes are one of the few places where a family business plan can fail because of arithmetic. Our attorneys can sort your heirs by class, estimate the Illinois exposure and design the insurance and agreements around it. Start with the [plan finder](/plan-finder), or read our guide to [state estate and inheritance taxes](/learn/estate-tax/state-estate-and-inheritance-taxes) first.

@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import type { ResolvedDoc, ResolvedSquare } from "@/config/life-game";
 import { handOffToPlan } from "@/lib/familyPlanHandoff";
+import { illustrationAlt } from "@/lib/visual-topic";
 
 const ICONS: Record<string, LucideIcon> = {
   Baby, Briefcase, CalendarCheck, FileText, Flag, HandHeart, Heart, House, Landmark, Lock, PiggyBank, ShieldCheck, Stethoscope, Sun, Trophy, Users,
@@ -126,7 +127,7 @@ export function LifeGame({ squares, bookHref, phone, next, senior, library, id =
         <div className={`lgame-card lgame-card--${square.kind}${choice ? ` is-${choice}` : ""}`}>
           {square.art && square.kind !== "finish" && (
             // eslint-disable-next-line @next/next/no-img-element
-            <img className="lgame-card__art" src={`/media/illustrations/${square.art}.webp`} alt="" width={1600} height={960} loading="lazy" decoding="async" />
+            <img className="lgame-card__art" src={`/media/illustrations/${square.art}.webp`} alt={illustrationAlt(square.art, square.label)} width={1600} height={960} loading="lazy" decoding="async" />
           )}
           <div className="lgame-card__body">
             <p className="lgame-card__step">

@@ -118,4 +118,4 @@ Principals can help, too. The document can set pay, bar gifts, require reports a
 
 ## How we can help
 
-If you are drafting a power of attorney, or you are an agent unsure about what you can do, our attorneys can explain the rules that apply in Illinois or New Jersey and prepare the language on pay, expenses and safeguards. Start with the [plan finder](/plan-finder) or see our overview of [power of attorney](/learn/power-of-attorney).
+If you are drafting a power of attorney, or you are an agent unsure about what you can do, our attorneys can explain the rules that apply in Illinois and prepare the language on pay, expenses and safeguards. Start with the [plan finder](/plan-finder) or see our overview of [power of attorney](/learn/power-of-attorney).
