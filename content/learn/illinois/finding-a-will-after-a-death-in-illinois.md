@@ -102,6 +102,8 @@ If you search and find nothing, the estate passes by the intestacy rules. Our pa
 
 If you are the person who will leave a will, tell someone where it is. Our guide to [where to keep your will](/learn/wills/where-to-keep-your-will) covers the practical options.
 
+Found only a copy? See [what to do when the original will is lost](/learn/illinois/lost-will).
+
 ## How we can help
 
 If you cannot tell whether a will exists, or you found one and are not sure what to do with it, our attorneys can help you file it and read the notices. To start your own plan, the [plan finder](/plan-finder) takes a few minutes.

@@ -201,6 +201,14 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+If you are worried about your own money as executor, [am I personally liable as an executor in Illinois](/learn/illinois/executor-personal-liability-in-illinois) lists the mistakes that cost executors and how to avoid them.
+
+If you are retiring to another state, [moving out of Illinois](/learn/illinois/moving-out-of-illinois) explains what happens to your Illinois plan and to Illinois real estate you keep.
+
+If a hospital is discharging a parent to a nursing home and you are asked to sign as responsible party, [what Illinois allows with no power of attorney](/learn/illinois/hospital-no-power-of-attorney) explains who can consent and what to strike.
+
+If the original is missing and only a copy exists, [a lost original will in Illinois](/learn/illinois/lost-will) covers the search, the proof a court looks for and what happens if the copy is rejected.
+
 If your child with a disability is approaching 18, [turning 18 with a disability in Illinois](/learn/illinois/turning-18-with-a-disability) compares guardianship, supported decision-making, SSI changes and ABLE accounts.
 
 If you own an Illinois LLC, [what happens to it when you die](/learn/illinois/llc-owner-dies) explains who can sign, what heirs receive and how a buy-sell agreement fits.
