@@ -103,6 +103,6 @@ If you have a handwritten note and are unsure whether it counts, our attorneys c
 
 ## Sources
 
-- [Illinois Probate Act, Article IV (execution of wills), ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2102&ChapterID=60)
-- [Illinois Probate Act, 755 ILCS 5/7-1 (foreign wills), ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2102&ChapterID=60)
+- [Illinois Probate Act, Article IV (execution of wills), ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2104&ChapterID=60)
+- [Illinois Probate Act, 755 ILCS 5/7-1 (foreign wills), ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2104&ChapterID=60)
 - [Illinois Courts, self-help resources, illinoiscourts.gov](https://www.illinoiscourts.gov/)

@@ -98,6 +98,6 @@ The renunciation deadline is short and the decision is final. Our attorneys can 
 
 ## Sources
 
-- [Probate Act of 1975, 755 ILCS 5/2-8 and 5/15-1, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2102&ChapterID=60)
+- [Probate Act of 1975, 755 ILCS 5/2-8 and 5/15-1, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2104&ChapterID=60)
 - [Illinois Courts, illinoiscourts.gov](https://www.illinoiscourts.gov/)
 - [IRS, estate tax and the marital deduction, irs.gov](https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax)

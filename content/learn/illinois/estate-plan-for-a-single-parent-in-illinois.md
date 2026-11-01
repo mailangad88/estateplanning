@@ -99,6 +99,6 @@ A single parent often has no second person to catch mistakes, so a clear plan he
 
 ## Sources
 
-- [Probate Act of 1975, 755 ILCS 5/11-5 and 11-5.4 (guardians for minors), ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2102&ChapterID=60)
-- [Illinois Uniform Transfers to Minors Act, 760 ILCS 20, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2106&ChapterID=60)
+- [Probate Act of 1975, 755 ILCS 5/11-5 and 11-5.4 (guardians for minors), ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2104&ChapterID=60)
+- [Illinois Uniform Transfers to Minors Act, 760 ILCS 20, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs.asp)
 - [Social Security Administration, survivor benefits, ssa.gov](https://www.ssa.gov/benefits/survivors/)

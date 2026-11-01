@@ -95,6 +95,6 @@ If a clause stands between you and a dispute, our attorneys can read the documen
 
 ## Sources
 
-- [Probate Act of 1975, 755 ILCS 5/8-1, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2102&ChapterID=60)
-- [Illinois Trust Code, 760 ILCS 3, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=4115&ChapterID=60)
+- [Probate Act of 1975, 755 ILCS 5/8-1, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2104&ChapterID=60)
+- [Illinois Trust Code, 760 ILCS 3, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs.asp)
 - [Illinois Courts, illinoiscourts.gov](https://www.illinoiscourts.gov/)

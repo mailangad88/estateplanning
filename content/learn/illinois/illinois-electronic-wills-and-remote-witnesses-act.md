@@ -100,6 +100,6 @@ If you want to sign remotely, our attorneys can explain which path fits your hea
 
 ## Sources
 
-- [Electronic Wills and Remote Witnesses Act, 755 ILCS 6, ilga.gov](https://www.ilga.gov/legislation/ILCS/details?ActID=4176)
+- [Electronic Wills and Remote Witnesses Act, 755 ILCS 6, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs.asp)
 - [Public Act 102-167, ilga.gov](https://ilga.gov/ftp/Public%20Acts/102/102-0167.htm)
-- [Probate Act of 1975, 755 ILCS 5, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2102&ChapterID=60)
+- [Probate Act of 1975, 755 ILCS 5, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2104&ChapterID=60)

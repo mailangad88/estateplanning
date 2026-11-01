@@ -100,5 +100,5 @@ Our attorneys can help you pick the right asset for each gift, write the wording
 ## Sources
 
 - [Illinois Attorney General, Charitable Trust Bureau and charity search, illinoisattorneygeneral.gov](https://illinoisattorneygeneral.gov/charities/)
-- [Illinois Trust Code, 760 ILCS 3, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=4115&ChapterID=60)
+- [Illinois Trust Code, 760 ILCS 3, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs.asp)
 - [IRS, charitable organizations and Tax Exempt Organization Search, irs.gov](https://www.irs.gov/charities-non-profits/tax-exempt-organization-search)

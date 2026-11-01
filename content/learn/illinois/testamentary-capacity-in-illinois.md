@@ -112,6 +112,6 @@ Our attorneys can plan a signing so that the capacity evidence is clear, or revi
 
 ## Sources
 
-- [Probate Act of 1975, 755 ILCS 5/4-1 and 6-4, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2102&ChapterID=60)
+- [Probate Act of 1975, 755 ILCS 5/4-1 and 6-4, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2104&ChapterID=60)
 - [Illinois Courts, guardianship and probate resources, illinoiscourts.gov](https://www.illinoiscourts.gov/)
 - [Illinois Attorney General, illinoisattorneygeneral.gov](https://illinoisattorneygeneral.gov/)

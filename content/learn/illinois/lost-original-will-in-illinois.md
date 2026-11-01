@@ -98,6 +98,6 @@ If the original is missing, our attorneys can gather the file copy and witnesses
 
 ## Sources
 
-- [Probate Act of 1975, 755 ILCS 5/4-7 and 6-4, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2102&ChapterID=60)
+- [Probate Act of 1975, 755 ILCS 5/4-7 and 6-4, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2104&ChapterID=60)
 - [Illinois Courts, illinoiscourts.gov](https://www.illinoiscourts.gov/)
 - [Illinois Attorney General, illinoisattorneygeneral.gov](https://illinoisattorneygeneral.gov/)

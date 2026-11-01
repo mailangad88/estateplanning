@@ -3,7 +3,7 @@ title: "Undue influence in Illinois will contests: the presumption and how it is
 description: "Illinois courts presume undue influence when a trusted helper arranges a will that benefits them. See the four-part test and the evidence that rebuts it."
 updated: "2026-11-01"
 answer: >-
-  In Illinois, undue influence means someone's pressure replaced the maker's own free will in the will. A rebuttable presumption of undue influence arises when a fiduciary relationship exists, the maker was the dependent party, the maker trusted the beneficiary, and the beneficiary prepared or arranged the will. The other side can then present evidence to overcome it.
+  In Illinois, undue influence means someone's pressure replaced the maker's own wishes in the will. A rebuttable presumption of undue influence arises when a fiduciary relationship exists, the maker was the dependent party, the maker trusted the beneficiary, and the beneficiary prepared or arranged the will. The other side can then present evidence to overcome it.
 takeaways:
   - "Ordinary persuasion, affection and family closeness are not undue influence; the test is whether the maker's free agency was overcome."
   - "Illinois courts raise a presumption of undue influence when four facts line up, including that the beneficiary prepared or arranged the will."
@@ -94,6 +94,6 @@ If you suspect undue influence and the clock is running, our attorneys can revie
 
 ## Sources
 
-- [Probate Act of 1975, 755 ILCS 5/8-1, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2102&ChapterID=60)
+- [Probate Act of 1975, 755 ILCS 5/8-1, ilga.gov](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=2104&ChapterID=60)
 - [DeHart v. DeHart, 2013 IL 114137, illinoiscourts.gov](https://www.illinoiscourts.gov/)
 - [Illinois Attorney General, senior and elder resources, illinoisattorneygeneral.gov](https://illinoisattorneygeneral.gov/)
