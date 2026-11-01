@@ -106,4 +106,4 @@ Keep records of the child's health, school and daily life, and keep the relation
 
 ## How we can help
 
-Raising a grandchild is a legal and a financial commitment, and it is easy to put off the paperwork. Our attorneys can explain which route fits your family in Illinois or New Jersey, prepare your own power of attorney, directive and will, and set up a trust for the child. Start with the [plan finder](/plan-finder) or book a consultation.
+Raising a grandchild is a legal and a financial commitment, and it is easy to put off the paperwork. Our attorneys can explain which route fits your family in Illinois, prepare your own power of attorney, directive and will, and set up a trust for the child. Start with the [plan finder](/plan-finder) or book a consultation.

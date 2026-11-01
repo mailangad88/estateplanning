@@ -115,4 +115,4 @@ Weigh the cost honestly. Contests are slow, public and expensive, and many end i
 
 ## How we can help
 
-If your family is blended, the surest protection is a plan designed with the fight in mind. Our attorneys can review your documents, explain what Illinois or New Jersey law would do by default, and help you build a plan that provides for your spouse and your children. Try the [plan finder](/plan-finder) or book a consultation.
+If your family is blended, the surest protection is a plan designed with the fight in mind. Our attorneys can review your documents, explain what Illinois law would do by default, and help you build a plan that provides for your spouse and your children. Try the [plan finder](/plan-finder) or book a consultation.

@@ -103,7 +103,7 @@ You can lower the odds of a fight. Tell your family who your agent is, in a shor
 
 ## How state law changes this
 
-States differ on whether alternates must be named in a certain way, who can witness, whether a notary is optional, what happens on divorce, and how revocation works. Some forms offer a line for "successor" agents and others leave it to a rider. Read the signature page of your form, not just the first page. Our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides cover the rules in the two states we serve.
+States differ on whether alternates must be named in a certain way, who can witness, whether a notary is optional, what happens on divorce, and how revocation works. Some forms offer a line for "successor" agents and others leave it to a rider. Read the signature page of your form, not just the first page. Our [Illinois](/estate-planning/illinois) guide covers the rules in the state we serve.
 
 ## How we can help
 

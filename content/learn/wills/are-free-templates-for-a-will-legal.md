@@ -109,4 +109,4 @@ If you change your mind, make a new will or sign a properly witnessed codicil. O
 
 ## How we can help
 
-If you have a template in a drawer, bring it along. Our attorneys can read it, tell you whether it works for Illinois or New Jersey and fix what does not. You can also use the [plan finder](/plan-finder) to see which documents fit your family before you decide how to prepare them.
+If you have a template in a drawer, bring it along. Our attorneys can read it, tell you whether it works for Illinois and fix what does not. You can also use the [plan finder](/plan-finder) to see which documents fit your family before you decide how to prepare them.

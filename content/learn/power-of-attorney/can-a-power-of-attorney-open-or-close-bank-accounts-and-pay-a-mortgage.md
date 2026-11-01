@@ -110,7 +110,7 @@ If you have already used the power of attorney after death, even for a bill, sto
 
 ## How state law changes this
 
-Illinois and New Jersey both let the principal say how much the agent may do, and both hold the agent to a fiduciary standard. Illinois offers a statutory short form with a standard power list. New Jersey's Revised Durable Power of Attorney Act leaves more to the document's own words, so a vague form can give a bank reason to hesitate. Our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides cover the two states we serve.
+Illinois and New Jersey both let the principal say how much the agent may do, and both hold the agent to a fiduciary standard. Illinois offers a statutory short form with a standard power list. New Jersey's Revised Durable Power of Attorney Act leaves more to the document's own words, so a vague form can give a bank reason to hesitate. Our [Illinois](/estate-planning/illinois) guide covers the state we serve.
 
 ## How we can help
 
