@@ -46,3 +46,36 @@ export function topicFor(...texts: (string | undefined)[]): Topic {
 }
 
 export const illustrationSrc = (art: string) => `/media/illustrations/${art}.webp`;
+
+/**
+ * Alt text for every illustration, describing what the picture shows. Search engines and AI answer
+ * engines read alt text, and screen reader users hear it, so no illustration goes out with an empty alt.
+ */
+export const ILLUSTRATION_ALT: Record<string, string> = {
+  HeroAgingParents: "Illustration of an older couple at home beside a window, with a signed planning document",
+  HeroBlendedFamily: "Illustration of a blended family: two households with their children joined around one home",
+  HeroBusinessSuccession: "Illustration of a family business storefront with a key passing from the owner to the next generation",
+  HeroEstateSettlement: "Illustration of two family members at a table with a document box, settling a loved one's estate",
+  HeroFamilyHome: "Illustration of a family in front of their house, with a will and a shield for protection",
+  HeroGuardianship: "Illustration of parents and the guardians they chose, with children under a rainbow labeled cared for, whatever happens",
+  HeroNewlyweds: "Illustration of a newly married couple with wedding rings and their signed plan",
+  HeroPowersOfAttorney: "Illustration of a power of attorney document branching into health care decisions and money and bills",
+  HeroPreRetirees: "Illustration of a family under a tree with a checklist and savings jar, planning ahead for retirement",
+  HeroProbate: "Illustration of a winding path from a stack of court papers to a family home, showing the probate process",
+  HeroRetirees: "Illustration of a retired couple in front of their home with a phone and a checked document",
+  HeroSpecialNeeds: "Illustration of parents and a protected loved one surrounded by housing, care, benefits and savings",
+  HeroTrusts: "Illustration of a home, bank account and documents flowing into a trust shield and on to the family",
+  HeroWills: "Illustration of a last will directing the home, savings and keepsakes to the people named in it",
+  SpotCalendarReview: "Illustration of a calendar with a checked date and a clock, a reminder to review your plan",
+  SpotChecklist: "Illustration of a checklist on a clipboard with three items checked and a pencil",
+  SpotDocumentsSigned: "Illustration of signed documents with a pen and a check mark",
+  SpotQuestions: "Illustration of a person with questions and a check mark answer",
+  SpotSafeStorage: "Illustration of a locked tablet, a key and a document, showing safe storage of estate papers",
+  SpotVideoCall: "Illustration of a laptop video call with a planner and a family",
+};
+
+/** Alt text for an illustration; adds the page or card subject when given so each picture is described in context. */
+export function illustrationAlt(art: string, subject?: string): string {
+  const base = ILLUSTRATION_ALT[art] ?? "Illustration for this estate planning topic";
+  return subject ? `${base}. Topic: ${subject}` : base;
+}

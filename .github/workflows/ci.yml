@@ -19,11 +19,16 @@ jobs:
       - run: npm ci
       - run: npm run typecheck
       - run: npm test
+      # Build the launch configuration (Illinois only) so county and city pages are checked too.
       - run: npm run build
+        env:
+          SERVED_STATES: IL
       - name: Check built pages (broken links, JSON-LD, duplicate heading ids)
         run: npm run check:site
       - name: Check every public page has a visual (no text-only pages); report FAQs, short answers, booking links
         run: npm run check:page-kit
+      - name: Check every image has alt text and every video has a label, captions and VideoObject data
+        run: npm run check:media
       # AI-text check (Pangram). Runs only when the PANGRAM_API_KEY secret is set; flags changed content pages
       # that read as mostly AI-written so the attorney rewrites them. See scripts/ai-text-check.mjs.
       - name: AI-text check on changed content

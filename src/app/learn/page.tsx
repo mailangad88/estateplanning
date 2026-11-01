@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBox from "@/components/CtaBox";
 import JsonLd from "@/components/JsonLd";
 import { PageHero } from "@/components/page-hero";
-import { illustrationSrc, topicFor } from "@/lib/visual-topic";
+import { illustrationAlt, illustrationSrc, topicFor } from "@/lib/visual-topic";
 import { getClusterArticles, getClusters, getPillar, isClusterServed } from "@/lib/library";
 import { breadcrumbSchema, graph, itemListSchema } from "@/lib/schema";
 
@@ -50,7 +50,7 @@ export default function LearnHub() {
           return (
             <section key={c.slug} className="card hub-card" aria-labelledby={`h-${c.slug}`}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img className="hub-card__art" src={illustrationSrc(topicFor(c.url, c.name).art)} alt="" loading="lazy" decoding="async" />
+              <img className="hub-card__art" src={illustrationSrc(topicFor(c.url, c.name).art)} alt={illustrationAlt(topicFor(c.url, c.name).art, c.name)} loading="lazy" decoding="async" />
               <h2 id={`h-${c.slug}`}><Link href={c.url}>{c.name}</Link></h2>
               <p className="desc">{pillar.description}</p>
               <ul>
