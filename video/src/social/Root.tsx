@@ -1,6 +1,7 @@
 import { Composition, Folder, type CalculateMetadataFunction } from "remotion";
 import { GlossaryCard, FaqQuoteCard, CarouselSlideView, type CarouselProps } from "./Stills";
 import { GlossaryShort, FaqShort, glossaryPlan, faqPlan, FPS, W as VW, H as VH, type GlossaryShortProps, type FaqShortProps } from "./Shorts";
+import { TipShort, tipPlan, getTipVideo, W as TW, H as TH, FPS as TFPS, type TipShortProps } from "./TipShort";
 import { buildCarousel, faq, faqCategories, getFaq, getTerm } from "./data";
 
 type Slug = { slug: string };
@@ -23,6 +24,11 @@ const faqShortMeta: CalculateMetadataFunction<FaqShortProps> = ({ props }) => {
   return { props: { index }, durationInFrames: faqPlan(index).total };
 };
 
+const tipShortMeta: CalculateMetadataFunction<TipShortProps> = ({ props }) => {
+  const id = getTipVideo(props.id).id;
+  return { props: { ...props, id }, durationInFrames: tipPlan(id).total };
+};
+
 const GCard = (w: number, h: number) => (p: Slug) => <GlossaryCard slug={p.slug} width={w} height={h} />;
 const FCard = (w: number, h: number) => (p: Idx) => <FaqQuoteCard index={p.index} width={w} height={h} />;
 const GCard4x5 = GCard(1080, 1350), GCard1x1 = GCard(1080, 1080), FCard4x5 = FCard(1080, 1350), FCardWide = FCard(1200, 627);
@@ -38,5 +44,6 @@ export const SocialCompositions: React.FC = () => (
       defaultProps={{ category: faqCategories[0], slides: [], slide: 0 } satisfies CarouselProps} calculateMetadata={carouselMeta} />
     <Composition id="GlossaryShort" component={GlossaryShort} width={VW} height={VH} fps={FPS} durationInFrames={FPS * 14} defaultProps={{ slug: "probate" }} calculateMetadata={glossaryShortMeta} />
     <Composition id="FaqShort" component={FaqShort} width={VW} height={VH} fps={FPS} durationInFrames={FPS * 20} defaultProps={{ index: 0 }} calculateMetadata={faqShortMeta} />
+    <Composition id="TipShort" component={TipShort} width={TW} height={TH} fps={TFPS} durationInFrames={TFPS * 30} defaultProps={{ id: "v02", captions: true } satisfies TipShortProps} calculateMetadata={tipShortMeta} />
   </Folder>
 );

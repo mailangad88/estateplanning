@@ -30,6 +30,9 @@ export const SENSITIVE_PATH_PREFIXES: readonly string[] = [
   "/compare/special-needs-trust-vs-able-account",
   "/life-events/serious-diagnosis",
   "/life-events/caring-for-aging-parents",
+  // Social magnet pages about illness and care costs
+  "/tips/parent-dementia-no-power-of-attorney",
+  "/tips/will-medicaid-take-the-house",
   // Planned briefs
   "/life-events/estate-planning-after-a-serious-diagnosis",
 ];
