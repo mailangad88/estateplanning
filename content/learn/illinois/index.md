@@ -201,6 +201,14 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+Owners of a Chicago condo or co-op can read [how a transfer on death instrument fits a condo and why co-op shares differ](/learn/illinois/chicago-condo-and-co-op).
+
+Families with property or relatives abroad can read [what an Illinois will covers, overseas guardians and a non-citizen spouse](/learn/illinois/immigrant-families-estate-planning-illinois).
+
+If you are holding a handwritten or online will and need to know whether a court will accept it, [is my will valid in Illinois](/learn/illinois/is-my-will-valid) gives six checks and explains what happens in probate if it fails.
+
+Grandparents weighing a 529, a UTMA account or a trust can start with [leaving money to grandchildren in Illinois without hurting college aid](/learn/illinois/leaving-money-to-grandchildren).
+
 If you are worried about your own money as executor, [am I personally liable as an executor in Illinois](/learn/illinois/executor-personal-liability-in-illinois) lists the mistakes that cost executors and how to avoid them.
 
 If you are retiring to another state, [moving out of Illinois](/learn/illinois/moving-out-of-illinois) explains what happens to your Illinois plan and to Illinois real estate you keep.

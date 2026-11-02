@@ -89,6 +89,8 @@ A TODI is simple and cheap, and it keeps control with you. It suits a single pie
 
 <!-- visual: decision slug=how-to-leave-your-house-to-your-children part=map -->
 
+Own a condo or co-op? Read [what happens to a Chicago condo or co-op when the owner dies](/learn/illinois/chicago-condo-and-co-op).
+
 ## How we can help
 
 Our attorneys can help you decide between a TODI, a living trust, and a will, and prepare and record the documents. The [plan finder](/plan-finder) is a good place to start, or you can book a consultation. See our [Illinois estate planning page](/estate-planning/illinois) for more.
