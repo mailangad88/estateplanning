@@ -118,6 +118,8 @@ A living trust alone does not reduce the tax. See our article on [Illinois livin
 
 The statute sets the exclusion at $4,000,000 for deaths on or after January 1, 2013. Bills to raise it have been filed in recent sessions of the Illinois General Assembly, but we have not seen one become law. The rules that apply are the ones in force on the date of death, so confirm the current figure with the Attorney General or an attorney before relying on this page.
 
+Want to add up your own total? Use the [10-minute Illinois estate tax worksheet](/learn/illinois/will-my-estate-owe-illinois-estate-tax).
+
 ## How we can help
 
 Estate tax planning is one of the places where a small change in a document can have a large effect. Our attorneys can look at your assets, your spouse's assets and your documents, and explain what the Illinois rules mean for your family. Start with our [plan finder](/plan-finder), or see our [Illinois estate planning page](/estate-planning/illinois) to book a consultation.

@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+For same-sex and LGBTQ families, [LGBTQ estate planning in Illinois](/learn/illinois/lgbtq-estate-planning-illinois) covers a non-biological parent's tie to a child, relatives who disagree with your choices, and couples who married late.
+
+To test your own numbers against the $4 million line, [a 10-minute add-it-up worksheet](/learn/illinois/will-my-estate-owe-illinois-estate-tax) walks through the house, 401(k) and life insurance with a couple's example.
+
+If you are raising children while a parent declines, [one checklist for both generations](/learn/illinois/sandwich-generation-estate-planning-illinois) orders the documents by urgency.
+
 Owners of a Chicago condo or co-op can read [how a transfer on death instrument fits a condo and why co-op shares differ](/learn/illinois/chicago-condo-and-co-op).
 
 Families with property or relatives abroad can read [what an Illinois will covers, overseas guardians and a non-citizen spouse](/learn/illinois/immigrant-families-estate-planning-illinois).
