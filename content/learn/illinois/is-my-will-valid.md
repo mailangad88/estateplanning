@@ -120,6 +120,8 @@ Yes. A person with an interest can file a petition to contest a will within 6 mo
 
 If the maker is alive, the fix is easy. A new will, signed properly, replaces the old one. The right time to check a DIY will is while the person who made it can still sign again. See [online will vs. estate attorney](/compare/online-will-vs-estate-attorney) for when a form is enough, and [changing or revoking a will in Illinois](/learn/illinois/changing-or-revoking-a-will-in-illinois).
 
+Can't get to an office? See [how to sign a will or trust remotely in Illinois](/learn/illinois/sign-will-or-trust-remotely-in-illinois).
+
 ## How we can help
 
 If you hold a will and are not sure it works, an Illinois estate planning attorney can read the original, tell you which of the six checks it passes, and explain what the probate court will likely do with it. If the person who made it is alive, the attorney can prepare a will and supervise the signing so nothing is left to argue about later. You can [book a consultation](/book?from=learn-is-my-will-valid&topic=review) or start with the [plan finder](/plan-finder).

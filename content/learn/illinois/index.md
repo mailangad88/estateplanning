@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+If a parent promised you the house out loud, [do verbal promises count in Illinois](/learn/illinois/verbal-promise-inheritance-illinois) explains what the law does instead and how to put the promise on paper.
+
+If you live downstate or cannot travel, [signing a will or trust remotely in Illinois](/learn/illinois/sign-will-or-trust-remotely-in-illinois) explains video witnessing, electronic wills and a step-by-step signing.
+
+When the person who signed a power of attorney dies, [what happens to the agent's authority, the money and the funeral](/learn/illinois/does-a-power-of-attorney-end-at-death-in-illinois) is set out step by step.
+
 For same-sex and LGBTQ families, [LGBTQ estate planning in Illinois](/learn/illinois/lgbtq-estate-planning-illinois) covers a non-biological parent's tie to a child, relatives who disagree with your choices, and couples who married late.
 
 To test your own numbers against the $4 million line, [a 10-minute add-it-up worksheet](/learn/illinois/will-my-estate-owe-illinois-estate-tax) walks through the house, 401(k) and life insurance with a couple's example.
