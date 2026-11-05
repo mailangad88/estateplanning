@@ -130,6 +130,8 @@ Sometimes. If the estate has only personal property below the statutory limit an
 
 Dolores, 61, is named executor in her brother Walter's will. Walter owned a condo and a bank account in his own name. Dolores gives the original will to the circuit court clerk, files a petition, and the judge admits the will and grants independent administration. She mails notice to Walter's two children, publishes the creditor notice and pays the funeral bill and a credit card from the estate account. After the claims period ends, she distributes the money, files her closing report and waits the 42 days. No one objects, and the court discharges her.
 
+Planning ahead instead? See [how to avoid probate in Illinois](/learn/illinois/how-to-avoid-probate-in-illinois), asset by asset.
+
 ## How we can help
 
 Probate paperwork is manageable when you know the order of steps. Our attorneys can explain which of these steps your estate needs and what to expect. Try the [plan finder](/plan-finder) to see which documents fit your situation, or read about [estate planning in Illinois](/estate-planning/illinois) to plan so your own family faces fewer steps.

@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+Thinking of putting a child on your deed to skip probate? [Should I add my child to my deed in Illinois?](/learn/illinois/should-i-add-my-child-to-my-deed-illinois) covers the risks and the Illinois alternatives.
+
+Follow the deed, recording, mortgage and homestead steps in [How to put your house in a living trust in Illinois](/learn/illinois/how-to-put-your-house-in-a-living-trust-in-illinois).
+
+Sort your own assets by the tool that keeps each one out of court in [How to avoid probate in Illinois](/learn/illinois/how-to-avoid-probate-in-illinois).
+
 If a parent promised you the house out loud, [do verbal promises count in Illinois](/learn/illinois/verbal-promise-inheritance-illinois) explains what the law does instead and how to put the promise on paper.
 
 If you live downstate or cannot travel, [signing a will or trust remotely in Illinois](/learn/illinois/sign-will-or-trust-remotely-in-illinois) explains video witnessing, electronic wills and a step-by-step signing.
