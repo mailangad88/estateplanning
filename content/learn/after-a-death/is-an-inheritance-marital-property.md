@@ -122,6 +122,8 @@ If you are the one planning, our [will or trust tool](/tools/will-or-trust) is a
 
 A prenuptial agreement can name inheritances, present and future, as separate property and describe how to keep them separate. It can also deal with income and growth, which the default rules do not. A prenup signed before the wedding, with full disclosure and time to read it, is the strongest tool a couple has for this purpose. See [prenuptial agreements and estate plans](/learn/blended-families/prenuptial-agreements-and-estate-plans).
 
+In Illinois? Read [is an inheritance marital property in Illinois](/learn/illinois/is-inheritance-marital-property-in-illinois).
+
 ## How we can help
 
 Whether you have just inherited, expect to, or want to leave something to a child in a way that survives a divorce, our attorneys can explain how your state treats the money and help you set up accounts or trusts accordingly. Use the [plan finder](/plan-finder) or book a consultation, and bring the estate paperwork you have received so far.

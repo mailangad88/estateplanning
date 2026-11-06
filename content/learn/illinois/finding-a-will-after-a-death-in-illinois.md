@@ -104,6 +104,8 @@ If you are the person who will leave a will, tell someone where it is. Our guide
 
 Found only a copy? See [what to do when the original will is lost](/learn/illinois/lost-will).
 
+For every other step in the first month, use [what to do when someone dies in Illinois: a first 30 days checklist](/learn/illinois/what-to-do-when-someone-dies-in-illinois-first-30-days).
+
 ## How we can help
 
 If you cannot tell whether a will exists, or you found one and are not sure what to do with it, our attorneys can help you file it and read the notices. To start your own plan, the [plan finder](/plan-finder) takes a few minutes.

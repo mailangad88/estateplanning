@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+If a late spouse or parent is still on the deed, see [how to remove a deceased owner from a deed in Illinois](/learn/illinois/how-to-remove-a-deceased-owner-from-a-deed-in-illinois) for what to record and where.
+
+Wondering whether money you inherit is split in a divorce? Read [is an inheritance marital property in Illinois](/learn/illinois/is-inheritance-marital-property-in-illinois) for how mixing, tracing and trusts affect it.
+
+Facing a recent death? Follow the dated [first 30 days checklist for Illinois](/learn/illinois/what-to-do-when-someone-dies-in-illinois-first-30-days), from the funeral decision to the will, probate and tax dates.
+
 Thinking of putting a child on your deed to skip probate? [Should I add my child to my deed in Illinois?](/learn/illinois/should-i-add-my-child-to-my-deed-illinois) covers the risks and the Illinois alternatives.
 
 Follow the deed, recording, mortgage and homestead steps in [How to put your house in a living trust in Illinois](/learn/illinois/how-to-put-your-house-in-a-living-trust-in-illinois).
