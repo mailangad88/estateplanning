@@ -110,6 +110,8 @@ The harder case is a parent whose capacity is slipping. If the parent signs an a
 - Tax and payroll question answered.
 - An attorney has read it if Medicaid may be needed within five years.
 
+Caring for a parent while raising kids? See [planning for two generations at once](/learn/illinois/sandwich-generation-estate-planning-illinois).
+
 ## How we can help
 
 If you are caring for a parent in Illinois, an attorney can review your draft agreement, explain how it fits with a possible Medicaid application and check the power of attorney that governs your parent's money. The rules on transfers are technical and a mistake can be costly, so the attorney you book with will verify them against current state guidance. You can [book a consultation](/book?from=learn-paying-a-family-caregiver&topic=parent), or start with the [plan finder](/plan-finder). More Illinois topics are in the [Illinois guide](/learn/illinois).

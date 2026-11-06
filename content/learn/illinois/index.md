@@ -201,6 +201,46 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+If a late spouse or parent is still on the deed, see [how to remove a deceased owner from a deed in Illinois](/learn/illinois/how-to-remove-a-deceased-owner-from-a-deed-in-illinois) for what to record and where.
+
+Wondering whether money you inherit is split in a divorce? Read [is an inheritance marital property in Illinois](/learn/illinois/is-inheritance-marital-property-in-illinois) for how mixing, tracing and trusts affect it.
+
+Facing a recent death? Follow the dated [first 30 days checklist for Illinois](/learn/illinois/what-to-do-when-someone-dies-in-illinois-first-30-days), from the funeral decision to the will, probate and tax dates.
+
+Thinking of putting a child on your deed to skip probate? [Should I add my child to my deed in Illinois?](/learn/illinois/should-i-add-my-child-to-my-deed-illinois) covers the risks and the Illinois alternatives.
+
+Follow the deed, recording, mortgage and homestead steps in [How to put your house in a living trust in Illinois](/learn/illinois/how-to-put-your-house-in-a-living-trust-in-illinois).
+
+Sort your own assets by the tool that keeps each one out of court in [How to avoid probate in Illinois](/learn/illinois/how-to-avoid-probate-in-illinois).
+
+If a parent promised you the house out loud, [do verbal promises count in Illinois](/learn/illinois/verbal-promise-inheritance-illinois) explains what the law does instead and how to put the promise on paper.
+
+If you live downstate or cannot travel, [signing a will or trust remotely in Illinois](/learn/illinois/sign-will-or-trust-remotely-in-illinois) explains video witnessing, electronic wills and a step-by-step signing.
+
+When the person who signed a power of attorney dies, [what happens to the agent's authority, the money and the funeral](/learn/illinois/does-a-power-of-attorney-end-at-death-in-illinois) is set out step by step.
+
+For same-sex and LGBTQ families, [LGBTQ estate planning in Illinois](/learn/illinois/lgbtq-estate-planning-illinois) covers a non-biological parent's tie to a child, relatives who disagree with your choices, and couples who married late.
+
+To test your own numbers against the $4 million line, [a 10-minute add-it-up worksheet](/learn/illinois/will-my-estate-owe-illinois-estate-tax) walks through the house, 401(k) and life insurance with a couple's example.
+
+If you are raising children while a parent declines, [one checklist for both generations](/learn/illinois/sandwich-generation-estate-planning-illinois) orders the documents by urgency.
+
+Owners of a Chicago condo or co-op can read [how a transfer on death instrument fits a condo and why co-op shares differ](/learn/illinois/chicago-condo-and-co-op).
+
+Families with property or relatives abroad can read [what an Illinois will covers, overseas guardians and a non-citizen spouse](/learn/illinois/immigrant-families-estate-planning-illinois).
+
+If you are holding a handwritten or online will and need to know whether a court will accept it, [is my will valid in Illinois](/learn/illinois/is-my-will-valid) gives six checks and explains what happens in probate if it fails.
+
+Grandparents weighing a 529, a UTMA account or a trust can start with [leaving money to grandchildren in Illinois without hurting college aid](/learn/illinois/leaving-money-to-grandchildren).
+
+If you are worried about your own money as executor, [am I personally liable as an executor in Illinois](/learn/illinois/executor-personal-liability-in-illinois) lists the mistakes that cost executors and how to avoid them.
+
+If you are retiring to another state, [moving out of Illinois](/learn/illinois/moving-out-of-illinois) explains what happens to your Illinois plan and to Illinois real estate you keep.
+
+If a hospital is discharging a parent to a nursing home and you are asked to sign as responsible party, [what Illinois allows with no power of attorney](/learn/illinois/hospital-no-power-of-attorney) explains who can consent and what to strike.
+
+If the original is missing and only a copy exists, [a lost original will in Illinois](/learn/illinois/lost-will) covers the search, the proof a court looks for and what happens if the copy is rejected.
+
 If your child with a disability is approaching 18, [turning 18 with a disability in Illinois](/learn/illinois/turning-18-with-a-disability) compares guardianship, supported decision-making, SSI changes and ABLE accounts.
 
 If you own an Illinois LLC, [what happens to it when you die](/learn/illinois/llc-owner-dies) explains who can sign, what heirs receive and how a buy-sell agreement fits.

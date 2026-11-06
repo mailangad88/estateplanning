@@ -119,6 +119,8 @@ One yes is enough to justify a will. Two or more means you should not wait. All 
 
 Three guides can help you start: the [Illinois intestacy chart](/free/illinois-intestacy-chart) shows your family's default result, [what happens if you die without a will](/free/what-happens-if-you-die-without-a-will) lists the choices a court would make for you, and the [emergency one-pager](/free/emergency-one-pager) gives your family a single page to find things. For the general national view, see [do I need a will](/learn/wills/do-i-need-a-will).
 
+Counting on a spoken promise instead? Read [do verbal promises about the house count in Illinois](/learn/illinois/verbal-promise-inheritance-illinois).
+
 ## How we can help
 
 If you are not sure which side of the line you fall on, an Illinois estate planning attorney can look at your accounts and your family and tell you plainly whether you need a will, a few forms or more. Book a consultation through the [booking page](/book?from=learn-do-i-need-a-will&topic=will-or-trust). Pricing is published, and the [cost of an Illinois plan](/learn/illinois/estate-planning-cost) page lays it out before you commit to anything.

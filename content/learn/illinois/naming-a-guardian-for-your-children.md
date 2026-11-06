@@ -124,6 +124,8 @@ A will's guardian clause says nothing until your death. If you face a surgery, a
 
 New parents can also use the [new parents kit](/free/new-parents-kit) to cover guardian, money and medical papers in one pass.
 
+Family overseas? See [estate planning for immigrant families in Illinois](/learn/illinois/immigrant-families-estate-planning-illinois).
+
 ## How we can help
 
 Choosing a guardian is a family decision, and drafting it correctly is a legal one. An Illinois estate planning attorney can talk through your candidates with you and your spouse, draft the guardian and trustee clauses, and make sure the will is signed and witnessed the way Illinois requires. To get started, use the [plan finder](/plan-finder) or [book a consultation](/book?from=learn-naming-a-guardian-for-your-children&topic=kids). Your state page is [estate planning in Illinois](/estate-planning/illinois).

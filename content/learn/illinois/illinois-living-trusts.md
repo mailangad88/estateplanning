@@ -100,6 +100,8 @@ A living trust is not a tax shield. Its assets are still part of your estate for
 
 <!-- visual: whatif id=unfunded-trust -->
 
+Ready to fund it? Follow [how to put your house in a living trust in Illinois](/learn/illinois/how-to-put-your-house-in-a-living-trust-in-illinois).
+
 ## How we can help
 
 Our attorneys can help you decide if a living trust fits your family, draft the document under the Illinois Trust Code, and prepare the deeds and funding steps. Try the [plan finder](/plan-finder) or the [will or trust tool](/tools/will-or-trust) first if you want a starting point. You can also read about our work on the [Illinois estate planning page](/estate-planning/illinois).
