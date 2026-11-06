@@ -24,7 +24,8 @@
     "blender:render": "python3 blender/render_short.py",
     "remotion:tips": "cd video && node scripts/render-tips.mjs",
     "visibility": "tsx scripts/seo/visibility.mts",
-    "brevo:setup": "tsx scripts/brevo-setup.mts"
+    "brevo:setup": "tsx scripts/brevo-setup.mts",
+    "seo": "tsx scripts/seo/dataforseo.mts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.132.0",
