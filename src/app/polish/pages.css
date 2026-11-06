@@ -189,3 +189,11 @@
 }
 /* Decorative hero art can bleed past the right edge on desktop; never let it create a sideways scroll. */
 html { overflow-x: clip; }
+
+/* Header at 1401-1599px: the full phone number pushed "Book a consult" past the right edge. Show the round phone icon instead. */
+@media (min-width: 1401px) and (max-width: 1599px) {
+  .header-phone span { display: none; }
+  .header-phone { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; border: 1px solid var(--border); background: var(--surface); }
+  .header-phone:hover { border-color: var(--brand); color: var(--brand); }
+}
+.cookie-consent-actions .button { white-space: nowrap; }
