@@ -79,6 +79,7 @@ export type LeadAction =
   | "view_engagement"
   | "manage_tasks"
   | "view_audit"
+  | "refer_lead"
   | "export";
 
 export function canOnLead(actor: Actor, action: LeadAction, lead: Lead, assignments: Assignment[], now = new Date()): boolean {
@@ -112,6 +113,11 @@ export function canOnLead(actor: Actor, action: LeadAction, lead: Lead, assignme
       return access === "full" || access === "intake";
     case "view_audit":
       return actor.role === "platform_admin" || (actor.role === "firm_admin" && access === "full");
+    case "refer_lead":
+      // The attorney holding the lead (an open offer or the accepted case), their firm admin, or a platform
+      // admin passes it to another attorney. Sending it outside the platform also needs full access
+      // (src/server/services/referrals.ts), because the referrer hands the client's details on.
+      return actor.role === "platform_admin" || (actor.role === "attorney" && (access === "full" || access === "conflict_card")) || (actor.role === "firm_admin" && access === "full");
     case "export":
       return actor.role === "platform_admin" && process.env.PORTAL_EXPORT_ENABLED === "true";
   }
@@ -139,6 +145,7 @@ export type GlobalAction =
   | "view_partners"
   | "manage_partners"
   | "view_pipeline"
+  | "view_referrals"
   | "view_retainer_templates"
   | "manage_retainer_templates"
   | "approve_retainer_templates";
@@ -173,6 +180,8 @@ const GLOBAL: Record<GlobalAction, Role[]> = {
   manage_partners: ["platform_admin", "firm_admin"],
   // The pipeline board: every lead the viewer may see, by stage, with retainer status. Rows follow leadAccess.
   view_pipeline: ["platform_admin", "firm_admin"],
+  // Referral log and charts: who handled each lead and who it was passed to. Mirrors lead_referrals RLS.
+  view_referrals: ["platform_admin", "firm_admin"],
   // A firm's own retainer templates, only ever its own firm's (canOnRetainerTemplate). Mirrors retainer_templates RLS.
   view_retainer_templates: ["platform_admin", "firm_admin", "attorney", "paralegal"],
   manage_retainer_templates: ["firm_admin", "attorney"],

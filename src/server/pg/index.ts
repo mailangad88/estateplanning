@@ -308,6 +308,7 @@ export function createPgDb(opts: { pool?: Pool; session?: PgSession } = {}): PgD
     planMfa: col(TABLES.planMfa),
     planSessions: col(TABLES.planSessions),
     retainerTemplates: col(TABLES.retainerTemplates),
+    leadReferrals: col(TABLES.leadReferrals),
     signatures: col(TABLES.signatures),
     blobs: col(TABLES.blobs),
     audit: new PgAudit(pool, session),

@@ -30,3 +30,13 @@ Use empty strings for values that do not apply. Missing or empty settings mean "
 - Clients read consults through `client_consults` (no notes). Marketing reads `lead_funnel_daily` (counts, no PII).
 - `audit_events`, `fee_rule_versions`, `fact_verifications`, `template_approvals` and `page_approvals` are append-only (no grants plus triggers). Chain the next audit hash from `SELECT * FROM audit_last()`.
 - Workers (public intake, e-sign webhooks, nurture, routing accept) connect as `app_service`, which has its own policies and is never used for user-driven requests.
+
+## Primary intake attorney and referrals
+
+One attorney (Sargun) takes every incoming lead first. Mark their row once:
+
+```sql
+UPDATE lawyers SET primary_intake = true WHERE email = '<sargun's portal email>';
+```
+
+At most one row can carry the flag (`lawyers_one_primary_intake`). When they pass a lead on, the portal's "Refer to another attorney" writes a `lead_referrals` row: to a platform attorney (who gets a normal offer) or to someone outside the platform (the lead exits as `referred_out`). Charts and the log are at `/admin/referrals`. There are no fee columns; nothing of value is tied to a referral until the Illinois Rule 5.4 / 7.2 review is done.

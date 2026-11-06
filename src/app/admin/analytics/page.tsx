@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { can } from "@/server/auth/policy";
 import { funnelReport } from "@/server/analytics";
+import { referralReport } from "@/server/services/referrals";
 import { currentActor, getDb, scopedDb } from "@/server/runtime";
 
 export const dynamic = "force-dynamic";
@@ -20,6 +21,7 @@ export default async function AnalyticsPage({ searchParams }: { searchParams: Pr
   const from = sp.from ? new Date(sp.from) : new Date(to.getTime() - 30 * 86_400_000);
   const db = scopedDb(await getDb(), actor);
   const r = await funnelReport(db, actor, { from, to });
+  const refs = can(actor, "view_referrals") ? await referralReport(db, actor, { from, to }) : null;
 
   return (
     <>
@@ -67,6 +69,16 @@ export default async function AnalyticsPage({ searchParams }: { searchParams: Pr
 
       <h2>Consults</h2>
       <p>{r.consults.held} held · show rate {pct(r.consults.showRate)} · signed after consult {pct(r.consults.signedAfterConsultRate)}</p>
+
+      {refs && (
+        <>
+          <h2>Referrals</h2>
+          <p>
+            {refs.routed} leads reached an attorney · {refs.handledByPrimary} handled by {refs.primary?.name ?? "the primary attorney"} · {refs.referredByPrimary} referred on ·{" "}
+            {refs.wentElsewhere} went elsewhere · {refs.rows.length} referrals logged. <Link href={`/admin/referrals?from=${from.toISOString().slice(0, 10)}&to=${to.toISOString().slice(0, 10)}`}>Charts and the full log</Link>
+          </p>
+        </>
+      )}
     </>
   );
 }

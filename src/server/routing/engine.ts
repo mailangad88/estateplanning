@@ -58,7 +58,7 @@ export interface RoutingResult {
   ranked: RankedLawyer[];
   excluded: ExcludedLawyer[];
   /** Which special case decided the first position, if any */
-  special?: "client_choice" | "urgent_on_call" | "returning_client" | "requested_lawyer" | "household";
+  special?: "client_choice" | "primary_intake" | "urgent_on_call" | "returning_client" | "requested_lawyer" | "household";
 }
 
 const DAY_MS = 86_400_000;
@@ -94,8 +94,8 @@ export function hardFilter(lawyer: Lawyer, input: RoutingInput): string | undefi
   }
   if (!lawyer.matterTypes.includes(lead.matterType)) return `Does not handle ${lead.matterType}`;
   if (lead.conflictCard.clearance === "conflict") return "Lead has a conflict";
-  const prior = assignments.find((a) => a.leadId === lead.id && a.lawyerId === lawyer.id && (a.status === "declined" || a.status === "expired"));
-  if (prior) return `Already ${prior.status} this lead`;
+  const prior = assignments.find((a) => a.leadId === lead.id && a.lawyerId === lawyer.id && (a.status === "declined" || a.status === "expired" || a.status === "withdrawn"));
+  if (prior) return prior.status === "withdrawn" ? "Referred this lead on" : `Already ${prior.status} this lead`;
   const open = leads.filter((l) => isOpenLead(l, lawyer.id)).length;
   if (open >= lawyer.activeLeadCap) return `At active lead cap (${open}/${lawyer.activeLeadCap})`;
   const horizon = now.getTime() + 7 * DAY_MS;
@@ -194,6 +194,16 @@ export function rankLawyers(input: RoutingInput): RoutingResult {
     score: Math.round(s.score * 10) / 10,
     reason: `Rank ${i + 1}, score ${s.score.toFixed(1)}: ${s.parts.join("; ")}`,
   }));
+
+  // The primary intake attorney takes every incoming lead first and refers on what they don't handle.
+  // Only the client's own choice (above) comes before them. Once they decline or refer a lead, the
+  // hard filter drops them and the cases below decide.
+  const primary = eligible.find((l) => l.primaryIntake);
+  if (primary) {
+    const front = ranked.find((r) => r.lawyerId === primary.id)!;
+    ranked = [{ ...front, reason: `Primary intake attorney. ${front.reason}` }, ...ranked.filter((r) => r.lawyerId !== primary.id)];
+    return { ranked, excluded, special: "primary_intake" };
+  }
 
   // Special cases are checked before normal ranking and pull one lawyer to the front.
   const householdIds = new Set(input.householdPersonIds ?? []);
