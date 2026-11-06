@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { seoTitle } from "@/lib/seo";
+import OfficialSources from "@/components/OfficialSources";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import AnswerBox from "@/components/AnswerBox";
@@ -37,11 +39,11 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const a = getArticle(cluster, slug);
   if (!a) return {};
   return {
-    title: a.title,
+    title: seoTitle(a.title),
     description: a.description,
     alternates: { canonical: a.url, types: { "text/markdown": `/raw${a.url}.md` } },
     robots: isIndexable(a) ? undefined : { index: false, follow: true },
-    openGraph: { type: "article", title: a.title, description: a.description, url: a.url, modifiedTime: a.updated },
+    openGraph: { type: "article", title: seoTitle(a.title), description: a.description, url: a.url, modifiedTime: a.updated },
   };
 }
 
@@ -88,6 +90,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
         suggested={suggestEmbeds({ url: a.url, cluster: clusterSlug, slug })}
       />
       <ToolsBox items={toolsFor(clusterSlug)} />
+      <OfficialSources cluster={clusterSlug} html={a.html} />
       <Faqs faqs={a.faqs} />
       {sensitive && <SensitiveMarker />}
       {lead && (

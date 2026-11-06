@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { state, city } = await params;
   const c = find(state, city);
   if (!c) return {};
-  const title = `Estate planning attorney in ${c.name}, ${c.state.abbr}: wills, trusts and probate`;
+  const title = `Estate planning in ${c.name}, ${c.state.abbr}: wills, trusts and probate`;
   return {
     title,
     description: `Wills, living trusts, powers of attorney and probate help for families in ${c.name} and ${c.county}. Plain answers, flat-fee quotes and a free plan finder.`,

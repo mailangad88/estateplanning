@@ -76,6 +76,16 @@ export function articleLd(input: ArticleLdInput) {
   };
 }
 
+/**
+ * "123 Main St, Suite 4, Naperville, IL 60540" becomes a schema.org PostalAddress, which Google reads for
+ * local results. Anything that does not parse is passed through as text.
+ */
+export function postalAddress(raw: string): string | Record<string, string> {
+  const m = raw.trim().match(/^(.+),\s*([^,]+),\s*([A-Z]{2})\s+(\d{5}(?:-\d{4})?)$/);
+  if (!m) return raw;
+  return { "@type": "PostalAddress", streetAddress: m[1].trim(), addressLocality: m[2].trim(), addressRegion: m[3], postalCode: m[4], addressCountry: "US" };
+}
+
 function legalServiceNode() {
   const node: Record<string, unknown> = {
     "@type": ["Organization", "LegalService"],
@@ -84,7 +94,7 @@ function legalServiceNode() {
     alternateName: firm.brandName,
     url: SITE_URL,
     telephone: firm.phone,
-    address: firm.officeAddress,
+    address: postalAddress(firm.officeAddress),
     areaServed: stateNames(servedStates()).map((name) => ({ "@type": "State", name, containedInPlace: { "@type": "Country", name: "United States" } })),
     knowsAbout: ["Estate planning", "Wills", "Revocable living trusts", "Powers of attorney", "Probate", "Trust administration"],
     employee: { "@id": ATTORNEY_ID },
@@ -136,4 +146,15 @@ export function howToLd(input: { name: string; description: string; steps: { nam
 
 export function JsonLd({ data }: { data: object | object[] }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
+}
+
+/**
+ * Title for the <title> tag (the H1 keeps the full title). Search results cut titles at about 60 characters,
+ * so a title over 65 characters with a "Topic: detail" shape keeps only the topic when that is 25+ characters.
+ * The brand suffix is added by the layout template.
+ */
+export function seoTitle(title: string): string {
+  if (title.length <= 65) return title;
+  const head = title.split(": ")[0];
+  return head !== title && head.length >= 25 && head.length <= 65 ? head : title;
 }
