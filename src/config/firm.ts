@@ -10,7 +10,7 @@ export const firm = {
   firmLegalName: "[Firm legal name]",
   attorneyName: "Sargun Singh",
   attorneyTitle: "Estate planning attorney",
-  phone: "(000) 000-0000", // PLACEHOLDER tracked number
+  phone: "(630) 656-3059",
   /** Public contact email for the site (a company address, separate from the attorney). */
   email: "[Company email]",
   officeAddress: "[Office address]",

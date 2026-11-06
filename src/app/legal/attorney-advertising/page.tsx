@@ -29,12 +29,11 @@ export default function AttorneyAdvertising() {
       <p className="notice">Draft pending attorney review.</p>
       <p>
         This website is attorney advertising by {firm.firmLegalName}. {firm.brandName} is a referral website: we match you with an
-        appropriate estate planning attorney. Responsible attorney: {firm.attorneyName}.
+        appropriate estate planning attorney.
       </p>
 
-      <h2>Responsible attorney</h2>
+      <h2>Contact for this advertising</h2>
       <ul>
-        <li>Name: {firm.attorneyName}, {firm.attorneyTitle.toLowerCase()}</li>
         <li>Office: {firm.officeAddress}</li>
         <li>Phone: {firm.phone}</li>
         <li>Email: <a href={`mailto:${firm.email}`}>{firm.email}</a></li>

@@ -233,3 +233,4 @@ div.checklist h2 { margin-top: 44px; }
 @media (max-width: 759px) {
   .magnet-landing__grid > .optin { order: -1; }
 }
+.lead-form__trust { margin: 4px 0 12px; padding: 10px 14px; border-left: 3px solid var(--sage, var(--brand)); background: var(--surface); border-radius: 0 10px 10px 0; font-size: var(--text-sm); line-height: 1.5; }

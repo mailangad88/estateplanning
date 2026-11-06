@@ -91,7 +91,7 @@
 /* Pricing tiers and the booking layout break out to the hero width so three tiers fit in a row
    and the form gets room beside the "what happens" panel. */
 @media (min-width: 901px) {
-  .price-tiers, .book-layout, h2:has(+ .price-tiers) {
+  .price-tiers, .book-layout, h2:has(+ .price-tiers), .price-compare, h2:has(+ .price-compare), .price-tiers__note {
     --breakout: min(var(--wide), calc(100vw - 64px));
     width: var(--breakout); max-width: none; margin-left: calc(50% - var(--breakout) / 2);
   }
@@ -204,3 +204,24 @@ html { overflow-x: clip; }
 .book-inline__alt { font-weight: 400; color: var(--muted, inherit); }
 .book-cta .cta-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 @media print { .book-inline { display: none; } }
+
+/* ---------- Focus ring: teal on light backgrounds (gold on cream was hard to see), gold stays on dark bands ---------- */
+:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
+footer.site :focus-visible, .band--brand :focus-visible, .mega__feature :focus-visible, .cycle__hub :focus-visible,
+.site-chat__head :focus-visible, .site-chat__launcher:focus-visible { outline-color: var(--gold); }
+label.field input:focus-visible, label.field select:focus-visible, label.field textarea:focus-visible { outline: 3px solid var(--brand); outline-offset: 1px; }
+
+/* ---------- Footer links: 44px tap height on phones ---------- */
+@media (pointer: coarse), (max-width: 800px) {
+  footer.site li a { display: inline-flex; align-items: center; min-height: 44px; }
+}
+.book-cta .cta-actions { align-items: center; }
+.book-cta__call { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }
+.price-tiers__note { margin-top: 12px; text-align: center; }
+.plan-state-choice { flex-wrap: wrap; gap: 12px; justify-content: flex-start; }
+/* Compare table at full width: equal package columns, a narrower label column. */
+.price-compare table { width: 100%; table-layout: fixed; }
+.price-compare th:first-child, .price-compare td:first-child { width: 22%; }
+@media (max-width: 900px) { .price-compare table { table-layout: auto; min-width: 560px; } }
+.footer-cta__call { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: var(--on-dark); font-weight: 600; }
+.footer-cta__call a { color: var(--on-dark); }

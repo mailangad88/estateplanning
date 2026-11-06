@@ -13,7 +13,7 @@ export function ReviewNote({ reviewed, updated }: { reviewed: boolean; updated: 
     <p className="meta">
       {reviewed ? (
         <>
-          Reviewed by <Link href="/about-the-attorney" rel="author">{firm.attorneyName}</Link>, {firm.attorneyTitle.toLowerCase()}
+          Reviewed by an estate planning attorney in our network
         </>
       ) : (
         "Written by our editorial team · Attorney review in progress"

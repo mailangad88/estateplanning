@@ -20,9 +20,9 @@ const STEPS = [
 ];
 
 const FAQS = [
-  { q: "What happens on the first call?", a: "You talk with an estate planning attorney in our network. They listen, answer your questions and explain the next steps. Package prices are on our [pricing page](/pricing), so you can see them before you book." },
   { q: "How long is it, and does it cost anything?", a: "Ask when you book. The attorney tells you how the first call works before it starts, including any cost." },
   { q: "Do I have to sign up for anything on the call?", a: "No. You can take the quote home, think it over, and come back when you are ready." },
+  { q: "What happens on the first call?", a: "You talk with an estate planning attorney in our network. They listen, answer your questions and explain the next steps. Package prices are on our [pricing page](/pricing), so you can see them before you book." },
   { q: "Who will I talk to?", a: "An estate planning attorney in our network who is licensed in your state and fits what you need. We match you based on where you live and the kind of help you are looking for." },
   { q: "Is this a law firm?", a: "No. This is a referral website: we match you with an appropriate attorney, and that attorney gives the legal advice." },
   { q: "What if I just want to learn first?", a: "Try the [plan finder](/plan-finder), the [will or trust comparison](/tools/will-or-trust) or our [free guides](/guides). Booking is there when you want it." },
@@ -79,7 +79,7 @@ export default function BookPage() {
         </aside>
       </div>
 
-      <RichFaqList faqs={FAQS} />
+      <RichFaqList faqs={FAQS} openFirst={2} />
       <p className="notice">
         Attorney advertising. {SITE_DISCLAIMER} Booking a call does not by itself create an attorney-client relationship.
       </p>

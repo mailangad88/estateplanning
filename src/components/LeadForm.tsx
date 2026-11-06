@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { US_STATES } from "@/config/firm";
-import { toolConfig } from "@/config/tools";
+import { DEFAULT_TOOL_STATE, toolConfig } from "@/config/tools";
 import { HEARD_FROM_OPTIONS } from "@/lib/heardFrom";
 import { noRelationshipText, recordingNoticeText, smsConsentText } from "@/lib/consent";
 import type { CaptureTool } from "@/lib/lead";
@@ -47,6 +47,7 @@ export default function LeadForm(props: Props) {
   const [known, setKnown] = useState<KnownContact>({});
   const [priorTools, setPriorTools] = useState<CaptureTool[]>([]);
   const [submitting, setSubmitting] = useState(false);
+  const formEl = useRef<HTMLFormElement>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [formError, setFormError] = useState<string | null>(null);
 
@@ -106,7 +107,15 @@ export default function LeadForm(props: Props) {
       });
       const data = await res.json();
       if (!res.ok) {
-        setErrors(data.fields ?? {});
+        const fields: Record<string, string> = data.fields ?? {};
+        setErrors(fields);
+        // Move focus to the first field that needs fixing so keyboard and screen-reader users land on it.
+        const order = ["firstName", "email", "phone", "state", "acknowledgedNoRelationship"];
+        const first = order.find((k) => fields[k]);
+        if (first) {
+          const name = first === "acknowledgedNoRelationship" ? "ack" : first;
+          setTimeout(() => formEl.current?.querySelector<HTMLElement>(`[name="${name}"]`)?.focus(), 0);
+        }
         setFormError(data.error ?? "Something went wrong. Please call us.");
         return;
       }
@@ -119,13 +128,20 @@ export default function LeadForm(props: Props) {
     }
   }
 
-  const err = (k: string) => errors[k] && <p className="error">{errors[k]}</p>;
+  const err = (k: string) => errors[k] && <p className="error" id={`lf-${props.tool}-${k}-error`}>{errors[k]}</p>;
+  const inv = (k: string) => (errors[k] ? { "aria-invalid": true as const, "aria-describedby": `lf-${props.tool}-${k}-error` } : {});
 
   return (
-    <form onSubmit={submit} noValidate className="lead-form">
+    <form ref={formEl} onSubmit={submit} noValidate className="lead-form">
       <fieldset>
         <legend>{props.legend}</legend>
         {props.why && <p className="notice">{props.why}</p>}
+        {props.tool !== "chat" && (
+          <p className="lead-form__trust">
+            We match you with an estate planning attorney in our network who is licensed in your state. Flat fees, quoted in
+            writing before you sign. Your details stay confidential.
+          </p>
+        )}
         {returning && (
           <p className="notice">
             Welcome back, {known.firstName}. We filled in the details you gave us before.{" "}
@@ -135,7 +151,7 @@ export default function LeadForm(props: Props) {
         <div className="field-row">
           <label className="field">
             First name
-            <input name="firstName" autoComplete="given-name" required defaultValue={known.firstName} key={`f${known.firstName}`} />
+            <input name="firstName" autoComplete="given-name" required {...inv("firstName")} defaultValue={known.firstName} key={`f${known.firstName}`} />
           </label>
           {props.askLastName && (
             <label className="field">
@@ -147,12 +163,12 @@ export default function LeadForm(props: Props) {
         {err("firstName")}
         <label className="field">
           Email
-          <input name="email" type="email" inputMode="email" autoComplete="email" autoCapitalize="none" spellCheck={false} required defaultValue={known.email} key={`e${known.email}`} />
+          <input {...inv("email")} name="email" type="email" inputMode="email" autoComplete="email" autoCapitalize="none" spellCheck={false} required defaultValue={known.email} key={`e${known.email}`} />
         </label>
         {err("email")}
         <label className="field">
           Mobile phone{phoneOptional && " (optional)"}
-          <input name="phone" type="tel" inputMode="tel" autoComplete="tel" required={!phoneOptional} defaultValue={known.phone} key={`p${known.phone}`} />
+          <input {...inv("phone")} name="phone" type="tel" inputMode="tel" autoComplete="tel" required={!phoneOptional} defaultValue={known.phone} key={`p${known.phone}`} />
           <span className="field-hint">
             {phoneOptional
               ? "Add a number only if you would like a call to talk your result through. Email is enough."
@@ -162,7 +178,7 @@ export default function LeadForm(props: Props) {
         {err("phone")}
         <label className="field">
           State where you live
-          <select name="state" required defaultValue={props.defaultState ?? known.state ?? ""} key={`s${props.defaultState ?? known.state}`}>
+          <select {...inv("state")} name="state" required defaultValue={props.defaultState ?? known.state ?? DEFAULT_TOOL_STATE} key={`s${props.defaultState ?? known.state ?? DEFAULT_TOOL_STATE}`}>
             <option value="" disabled>Choose a state</option>
             {US_STATES.map((s) => <option key={s} value={s}>{s}</option>)}
           </select>
@@ -205,7 +221,7 @@ export default function LeadForm(props: Props) {
           </span>
         </label>
         <label className="check">
-          <input type="checkbox" name="ack" required />
+          <input type="checkbox" name="ack" required {...inv("acknowledgedNoRelationship")} />
           <span>{noRelationshipText()}</span>
         </label>
         {err("acknowledgedNoRelationship")}

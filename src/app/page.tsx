@@ -138,7 +138,7 @@ export default function Home() {
             />
             <p className="cta-row" style={{ marginTop: 32 }}>
               <Link href="/how-it-works" className="arrow-link">See what happens on the call <ArrowRight size={16} aria-hidden="true" /></Link>
-              <Link href="/about-the-attorney" className="arrow-link">About {firm.attorneyName} <ArrowRight size={16} aria-hidden="true" /></Link>
+              <Link href="/about-the-attorney" className="arrow-link">About our attorney network <ArrowRight size={16} aria-hidden="true" /></Link>
             </p>
           </div>
           <div className="art-frame">
