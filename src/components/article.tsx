@@ -8,11 +8,10 @@ import { PageHero } from "@/components/page-hero";
 import { PageMedia, pageDiagramNames } from "@/components/visuals/PageMedia";
 import { RichProse } from "@/components/embeds/rich-prose";
 import MagnetOptIn from "@/components/MagnetOptIn";
+import BookCta from "@/components/BookCta";
 import { MAGNET_FORMATS, magnetsFor, pillarOf } from "@/lib/magnets";
 import { quizzesFor } from "@/lib/quizzes";
 import { toolFor } from "@/config/tools";
-import CtaBox from "@/components/CtaBox";
-import { KitFaqs } from "@/components/page-kit";
 
 export interface RelatedLink {
   href: string;
@@ -74,6 +73,7 @@ export function ArticlePage(props: {
       ) : (
         <p className="lead">{props.description}</p>
       )}
+      {!props.sensitive && <BookCta layout="inline" />}
       {props.before}
       <PageMedia path={props.path} />
       <Toc headings={props.headings} />
@@ -99,12 +99,7 @@ export function ArticlePage(props: {
         widget={tool?.slug}
       />
       {props.after}
-      {props.faqs?.length ? (
-        <FaqList faqs={props.faqs} />
-      ) : (
-        <KitFaqs url={props.path} topic={props.title} context={`${props.description} ${props.section.name}`} categories={["Getting started"]} />
-      )}
-      {!props.sensitive && (lead || props.magnet) && <CtaBox topic={props.title.length <= 40 ? props.title : undefined} from={props.section.path.replace(/^\//, "") || "article"} />}
+      <FaqList faqs={props.faqs ?? []} />
       {lead && !props.sensitive ? (
         <section className="magnet-callout">
           <MagnetOptIn
@@ -120,9 +115,8 @@ export function ArticlePage(props: {
         </section>
       ) : props.magnet ? (
         <EmailCapture kind="magnet" interest={props.magnet.interest} title={props.magnet.title} body={props.magnet.body} cta={props.magnet.cta} sensitive={props.sensitive} />
-      ) : (
-        <Cta from={props.section.path.replace(/^\//, "") || "article"} />
-      )}
+      ) : null}
+      {(!props.sensitive || !props.magnet) && <Cta />}
       {related.length > 0 && (
         <section>
           <h2>Keep reading</h2>

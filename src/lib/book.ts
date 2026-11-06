@@ -58,3 +58,56 @@ export function bookingNotes(topic: string | null, from: string | null): string 
   const parts = [t ? t.note : null, from ? `Booked from: ${from}` : null].filter(Boolean);
   return parts.join(". ");
 }
+
+/**
+ * Best-guess booking topic for a page, from its path. Used so a "Book a consult" link on an article or
+ * tool opens /book with the right topic already picked. Order matters: the first match wins, so the
+ * narrower patterns (will-vs-trust, after a death) sit above the broad ones (will, trust).
+ */
+const PATH_TOPICS: readonly [RegExp, string][] = [
+  [/will-(vs|or)-(a-)?trust|trust-(vs|or)-(a-)?will/, "will-or-trust"],
+  [/probate|after-a-death|executor|someone-died|death-of|settling|inherit|heir|trust-administration|small-estate/, "probate"],
+  [/guardian|children|kids|minor|new-parent|parents-of|blended/, "kids"],
+  [/medicaid|long-term-care|nursing|aging-parent|elder|caregiv|parent/, "parent"],
+  [/power-of-attorney|poa|healthcare|health-care|living-will|advance-directive|hipaa/, "poa"],
+  [/review|update|beneficiar|divorce|remarr/, "review"],
+  [/trust/, "trust"],
+  [/will/, "will"],
+];
+
+export function topicForPath(path: string): string | undefined {
+  const p = path.toLowerCase();
+  return PATH_TOPICS.find(([re]) => re.test(p))?.[1];
+}
+
+/** Short placement slug for a page: its first path segment, or "home". */
+export function fromForPath(path: string): string {
+  const first = path.split(/[?#]/)[0].split("/").filter(Boolean)[0] ?? "home";
+  const slug = first.toLowerCase().replace(/[^a-z0-9-]/g, "").slice(0, 40);
+  return FROM_RE.test(slug) ? slug : "page";
+}
+
+/**
+ * Booking topic and follow-up line for each free tool, shown in the booking card under the tool so
+ * the next step after a result is a time on the calendar. Every tool in config/tools.ts needs a row
+ * (tests/book.test.ts checks).
+ */
+export const TOOL_BOOKING: Record<string, { topic: string; title: string }> = {
+  "plan-readiness-assessment": { topic: "review", title: "Have your score? Go over the gaps with an attorney" },
+  "will-or-trust": { topic: "will-or-trust", title: "Still torn between a will and a trust?" },
+  "estate-tax-estimator": { topic: "trust", title: "Want to talk through what the estimate means for you?" },
+  "probate-cost-estimator": { topic: "trust", title: "Want to keep your family out of probate?" },
+  "life-insurance-needs": { topic: "kids", title: "Make sure the money reaches the people you meant it for" },
+  "guardian-fund-calculator": { topic: "kids", title: "Ready to name a guardian and set the money aside?" },
+  "medicaid-lookback-date": { topic: "parent", title: "Planning around the look-back for a parent?" },
+  "executor-workload": { topic: "probate", title: "Want help with the executor's list?" },
+  "plan-review-reminder": { topic: "review", title: "Time for an update? Have an attorney look it over" },
+  "state-death-tax-checker": { topic: "trust", title: "Want to talk through the tax picture?" },
+  "small-estate-checker": { topic: "probate", title: "Not sure the small estate route fits?" },
+  "medicaid-savings-runway": { topic: "parent", title: "Want to talk through care costs with an attorney?" },
+  "beneficiary-audit": { topic: "review", title: "Found a mismatch? Get it fixed with an attorney" },
+  "guardian-picker": { topic: "kids", title: "Picked your guardian? Put it in writing" },
+  "who-inherits": { topic: "will", title: "Not happy with who would inherit? A will changes it" },
+  "probate-asset-sorter": { topic: "trust", title: "Want fewer assets going through probate?" },
+  "inheritance-timeline": { topic: "probate", title: "Waiting on an estate? Ask what can speed it up" },
+};

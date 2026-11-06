@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BookCta from "@/components/BookCta";
 import { firm } from "@/config/firm";
 import type { Faq, Heading } from "@/lib/content";
 import { decorateSections } from "@/lib/prose-sections";
@@ -72,17 +73,12 @@ export function CardGrid({ items, media }: { items: CardItem[]; media?: CardMedi
   return <VisualCardGrid items={items} media={media} />;
 }
 
-export function Cta({ title = "Talk it through with an attorney", body, from = "cta" }: { title?: string; body?: string; from?: string }) {
-  return (
-    <aside className="cta">
-      <strong>{title}</strong>
-      <p>{body ?? "Answer a few questions and we will set up a consult. You get a flat-fee quote before anything is signed."}</p>
-      <p className="cta-actions">
-        <Link className="button" href="/plan-finder">Start the plan finder</Link>
-        <Link className="button secondary" href={`/book?from=${from}`}>Book a consult</Link>
-      </p>
-    </aside>
-  );
+/**
+ * End-of-page call to action. Booking leads (see BookCta); the plan finder stays as the second option.
+ * Without a title or body it shows the audience offer for the page (config/booking-offers.ts).
+ */
+export function Cta({ title, body, from, topic }: { title?: string; body?: string; from?: string; topic?: string }) {
+  return <BookCta title={title} body={body} from={from} topic={topic} />;
 }
 
 export function PageHeader({ title, lead, children, kicker, art, path }: { title: string; lead?: string; children?: React.ReactNode; kicker?: string; art?: string; path?: string }) {

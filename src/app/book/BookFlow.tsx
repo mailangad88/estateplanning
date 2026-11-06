@@ -22,6 +22,10 @@ export default function BookFlow({ servedStates, defaultState }: { servedStates:
   const [topic, setTopic] = useState<string | null>(null);
   const [state, setState] = useState(defaultState);
   const [booked, setBooked] = useState(false);
+  // One served state (the Illinois launch): confirm it in a line instead of asking, so the calendar is the first thing to do.
+  const single = servedStates.length === 1 ? servedStates[0] : null;
+  const [changingState, setChangingState] = useState(false);
+  const [wantCallback, setWantCallback] = useState(false);
 
   useEffect(() => {
     const p = parseBookParams(window.location.search);
@@ -36,6 +40,25 @@ export default function BookFlow({ servedStates, defaultState }: { servedStates:
   const t = bookTopic(topic);
   const digits = firm.phone.replace(/\D/g, "");
   const scheduler = firm.schedulerUrl && /^https:\/\//i.test(firm.schedulerUrl) ? firm.schedulerUrl : null;
+
+  // No time that fits: a short call-back request keeps the visitor instead of losing them at the calendar.
+  const callbackFallback = wantCallback ? (
+    <CallbackForm interest={topic ? `book_${topic}` : "book"} />
+  ) : (
+    <p>
+      No time that works?{" "}
+      <button
+        type="button"
+        className="linklike"
+        onClick={() => {
+          setWantCallback(true);
+          track("book_callback_open", { from: from ?? "direct" });
+        }}
+      >
+        Ask for a call back instead
+      </button>
+    </p>
+  );
 
   if (booked) {
     return (
@@ -54,8 +77,23 @@ export default function BookFlow({ servedStates, defaultState }: { servedStates:
 
   return (
     <>
+      {single && state === single && !changingState ? (
+        <p className="book-state-line" id="book-state">
+          Booking for <strong>{stateName(single)}</strong> residents.{" "}
+          <button
+            type="button"
+            className="linklike"
+            onClick={() => {
+              setChangingState(true);
+              track("book_state_change");
+            }}
+          >
+            Live somewhere else?
+          </button>
+        </p>
+      ) : (
       <section aria-labelledby="book-state">
-        <h2 id="book-state">1. Where do you live?</h2>
+        <h2 id="book-state">{single ? "Where do you live?" : "1. Where do you live?"}</h2>
         <label className="field" style={{ maxWidth: 320 }}>
           State
           <select
@@ -76,11 +114,12 @@ export default function BookFlow({ servedStates, defaultState }: { servedStates:
           </p>
         )}
       </section>
+      )}
 
       {served && (
         <>
           <section aria-labelledby="book-topic">
-            <h2 id="book-topic">2. What would you like to talk about? <span className="notice">(optional)</span></h2>
+            <h2 id="book-topic">{single ? "1" : "2"}. What would you like to talk about? <span className="notice">(optional)</span></h2>
             <div className="inline-options" role="radiogroup" aria-labelledby="book-topic">
               {BOOK_TOPICS.map((o) => (
                 <label className="option" key={o.id}>
@@ -107,7 +146,7 @@ export default function BookFlow({ servedStates, defaultState }: { servedStates:
           </section>
 
           <section aria-labelledby="book-time">
-            <h2 id="book-time">3. Pick a time</h2>
+            <h2 id="book-time">{single ? "2" : "3"}. Pick a time</h2>
             {firm.calcomLink ? (
               <>
                 <CalcomEmbed
@@ -119,6 +158,7 @@ export default function BookFlow({ servedStates, defaultState }: { servedStates:
                 <p className="notice">
                   Calendar not loading? <a href={`https://cal.com/${firm.calcomLink}`} target="_blank" rel="noopener noreferrer">Open the scheduling page in a new tab</a>, or call {firm.phone}.
                 </p>
+                {callbackFallback}
               </>
             ) : scheduler ? (
               <>
@@ -126,6 +166,7 @@ export default function BookFlow({ servedStates, defaultState }: { servedStates:
                 <p className="notice">
                   Calendar not loading? <a href={scheduler} target="_blank" rel="noopener noreferrer">Open the scheduling page in a new tab</a>.
                 </p>
+                {callbackFallback}
               </>
             ) : (
               <>
