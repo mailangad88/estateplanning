@@ -70,13 +70,17 @@ export default function Pricing() {
             <h3>{p.name}</h3>
             <p className="notice">{p.for}</p>
             <ul className="price-tier__list">{p.includes.map((i) => <li key={i}>{i}</li>)}</ul>
-            <Link className="button" href="/plan-finder">Get a quote</Link>
+            <Link className="button" href="/plan-finder">Get my flat-fee quote</Link>
           </li>
         ))}
       </ul>
+      <p className="notice price-tiers__note">
+        Start with a few short questions, then talk with an attorney in our network. You see the fee in writing before you sign
+        anything.
+      </p>
 
       <h2>Compare the packages</h2>
-      <div className="table-wrap">
+      <div className="table-wrap price-compare" role="region" aria-label="Package comparison table" tabIndex={0}>
         <table>
           <thead>
             <tr><th scope="col"></th>{PACKAGES.map((p) => <th key={p.name} scope="col">{p.name}</th>)}</tr>

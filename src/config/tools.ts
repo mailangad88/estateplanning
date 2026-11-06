@@ -140,8 +140,10 @@ export const toolConfig = {
    * Capture points where the phone number is optional. The website chat asks for email first, so phone is optional there.
    * Research suggests gated downloads convert better with phone optional; add "guide" and
    * "exit_offer" here to test that. Intake and callback should always require it.
+   * Tool result gates (readiness score, will-or-trust, probate cost) only ask for a phone as an
+   * optional second step: the visitor came for a result, not a call (design council, 2026-11-06).
    */
-  phoneOptionalFor: ["chat"] as CaptureTool[],
+  phoneOptionalFor: ["chat", "readiness_score", "will_vs_trust", "cost_calculator"] as CaptureTool[],
 };
 
 /** Federal estate tax basic exclusion per person for 2026 (One Big Beautiful Bill Act). Verify each year. */

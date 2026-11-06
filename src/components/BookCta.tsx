@@ -97,7 +97,11 @@ export default function BookCta({
   // Crisis pages: phone first, calendar second, no plan finder (research: these visitors need help now).
   const actions = offer.callFirst
     ? [call, <Link key="book" className="button secondary" href={href}>{label}</Link>]
-    : [...(order === "book_first" ? [book, finder] : [finder, book]), call];
+    : [
+        ...(order === "book_first" ? [book, finder] : [finder, book]),
+        // Two buttons at most; the phone is a quiet text link so the booking button stays the clear first choice.
+        <a key="call" className="book-cta__call" href={tel}>or call {phone}</a>,
+      ];
   return (
     <aside ref={ref} className="cta book-cta" aria-label="Talk to an attorney" data-offer={offer.id}>
       <strong>{title ?? offer.title}</strong>
