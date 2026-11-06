@@ -47,9 +47,18 @@ async function firstOutboundAt(db: Db, lead: Lead): Promise<number | null> {
   return valid.length ? Math.min(...valid) : null;
 }
 
-function nextActionFor(lead: Lead, contacted: boolean, lane: TriageLane): string {
+/** The playbook's cadence: six touches over ten days, then close as unresponsive. */
+export const MAX_ATTEMPTS = 6;
+
+async function attemptCount(db: Db, lead: Lead): Promise<number> {
+  return (await db.activities.list((a) => a.leadId === lead.id && isHumanOutreach(a))).length;
+}
+
+function nextActionFor(lead: Lead, contacted: boolean, lane: TriageLane, attempts = 0): string {
   if (!contacted && lane === "after_death") return "Call within the hour. Listen first, no sales script";
   if (!contacted) return "Call the lead now";
+  if (lead.stage === "new" && attempts >= MAX_ATTEMPTS) return `No answer after ${attempts} tries: send the last-try text, then close as unresponsive`;
+  if (lead.stage === "new") return `Not reached yet: try again (attempt ${attempts + 1} of ${MAX_ATTEMPTS})`;
   if (lead.stage === "qualified") return "Run the conflict check";
   if (lead.stage === "conflict_check") return "Finish the conflict check";
   return "Complete the intake call and summary";
@@ -85,7 +94,7 @@ export async function intakeQueue(db: Db, actor: Actor, now = new Date()): Promi
       laneReasons: triage.reasons,
       minutesWaiting,
       slaStatus,
-      nextAction: nextActionFor(lead, contacted, triage.lane),
+      nextAction: nextActionFor(lead, contacted, triage.lane, contacted && lead.stage === "new" ? await attemptCount(db, lead) : 0),
       ownerName: owner(lead.intakeOwnerId),
       breached: slaStatus === "breached",
       createdAt: created,

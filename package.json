@@ -16,6 +16,7 @@
     "review:queue": "tsx scripts/review-queue.mts",
     "embeds": "tsx scripts/embeds.mts",
     "review:apply": "tsx scripts/apply-page-approvals.mts",
+    "portal:bootstrap": "tsx scripts/portal-bootstrap.mts",
     "check:ai-text": "node scripts/ai-text-check.mjs"
   },
   "dependencies": {

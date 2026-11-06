@@ -1,11 +1,13 @@
 import { NextResponse } from "next/server";
 import { parseCalcomPayload, pickLead, verifyCalcomSignature } from "@/server/calcom";
-import { setStage } from "@/server/services/leads";
+import { recordCalcomBooking } from "@/server/services/leadWork";
 import { getDb } from "@/server/runtime";
 
 /**
  * Cal.com booking webhooks. A booked or rescheduled consult moves the lead to "consult_booked".
  * A cancellation is acknowledged and logged but leaves the stage alone, so intake can follow up.
+ * Every event lands on the lead's timeline, and the consult row or a call task is added so the
+ * no-show and follow-up steps in the lead handling playbook have something to work from.
  */
 export async function POST(request: Request) {
   const raw = await request.text();
@@ -26,10 +28,6 @@ export async function POST(request: Request) {
     console.warn("calcom webhook: no matching lead", { event: booking.event });
     return NextResponse.json({ ok: true, matched: false });
   }
-  if (booking.event === "BOOKING_CANCELLED") {
-    console.info("calcom webhook: consult cancelled", { leadId: lead.id });
-    return NextResponse.json({ ok: true, matched: true, event: booking.event });
-  }
-  await setStage(db, "system", lead.id, "consult_booked");
+  await recordCalcomBooking(db, lead, booking);
   return NextResponse.json({ ok: true, matched: true, event: booking.event });
 }

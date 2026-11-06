@@ -20,6 +20,9 @@ import type { OrganizerSummaryView } from "@/server/services/familyPlan";
 import { SendRetainer } from "./SendRetainer";
 import { SpouseInvite } from "./SpouseInvite";
 import { ReferLead } from "./ReferLead";
+import { ConsultWork, LeadWork } from "./LeadWork";
+import { canOnLead } from "@/server/auth/policy";
+import { CONTACT_RESULT_LABELS, CONTACT_RESULTS, EXIT_LABELS, MANUAL_EXIT_REASONS, MANUAL_STAGES, outreachAttempts } from "@/server/services/leadWork";
 import { MANUAL_OUTCOMES, OUTCOME_LABELS, REASON_LABELS, referralTargets, referralsForLead } from "@/server/services/referrals";
 import { REFERRAL_REASONS } from "@/server/types";
 import { firstNameOf } from "@/lib/people";
@@ -125,6 +128,14 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
   const targets = await referralTargets(rawDb, actor, id).catch(() => null);
   const lead = await rawDb.leads.get(id);
   const canRefer = !!targets && !!lead && !lead.exit && STAGES.indexOf(h.stage) >= STAGES.indexOf("offered") && STAGES.indexOf(h.stage) < STAGES.indexOf("retainer_signed");
+  const assignments = lead ? await rawDb.assignments.list((a) => a.leadId === id, { leadId: id }) : [];
+  const staff = ["platform_admin", "intake", "attorney", "paralegal", "firm_admin"].includes(actor.role);
+  const canWork = !!lead && staff && (view.access === "full" || view.access === "intake");
+  const canManage = canWork && !!lead && canOnLead(actor, "manage_tasks", lead, assignments);
+  const attempts = canWork ? outreachAttempts(await db.activities.list((a) => a.leadId === id, { leadId: id })) : 0;
+  const canBookConsult = canWork && !!lead && !lead.exit && !!lead.assignedLawyerId && canOnLead(actor, "book_consult", lead, assignments);
+  // Mirrors recordConsultOutcome in caseWork.ts: the consult's attorney, their paralegal or a platform admin.
+  const canRecordConsult = canWork && (actor.role === "platform_admin" || actor.role === "attorney" || actor.role === "paralegal");
   const canSendRetainer =
     view.access === "full" && (actor.role === "attorney" || actor.role === "paralegal") && !h.nextStep.startsWith("Closed") &&
     STAGES.indexOf(h.stage) >= STAGES.indexOf("accepted") && STAGES.indexOf(h.stage) <= STAGES.indexOf("proposal_sent");
@@ -142,6 +153,22 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
           <summary>Why this score</summary>
           <ul>{h.scoreComponents.map((c, i) => <li key={i}>{c.points > 0 ? "+" : ""}{c.points} {c.label}</li>)}</ul>
         </details>
+      )}
+
+      {canWork && lead && (
+        <section className="card" id="work">
+          <h2>Work this lead</h2>
+          <LeadWork
+            leadId={id}
+            attempts={attempts}
+            stage={lead.stage}
+            closed={lead.exit ? { label: EXIT_LABELS[lead.exit.reason], note: lead.exit.note, reopenable: canManage && (MANUAL_EXIT_REASONS as readonly string[]).includes(lead.exit.reason) } : undefined}
+            moveTo={canManage ? MANUAL_STAGES.filter((st) => STAGES.indexOf(st) > STAGES.indexOf(lead.stage)).map((st) => ({ value: st, label: label(st) })) : []}
+            canClose={canManage && STAGES.indexOf(lead.stage) < STAGES.indexOf("retainer_signed")}
+            results={CONTACT_RESULTS.map((r) => ({ value: r, label: CONTACT_RESULT_LABELS[r] }))}
+            exitReasons={MANUAL_EXIT_REASONS.map((r) => ({ value: r, label: EXIT_LABELS[r] }))}
+          />
+        </section>
       )}
 
       {view.access === "conflict_card" && h.offerAssignmentId && <OfferActions assignmentId={h.offerAssignmentId} />}
@@ -273,6 +300,9 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
           <h2>Consult</h2>
           {s.consult.length === 0 ? <p>Not booked yet.</p> : (
             <ul>{s.consult.map((c) => <li key={c.id}>{when(c.at)} · {c.type} · {c.status}{c.outcome ? ` · ${label(c.outcome)}` : ""}{c.notes ? `: ${c.notes}` : ""}</li>)}</ul>
+          )}
+          {(canBookConsult || (canRecordConsult && s.consult.some((c) => c.status === "booked"))) && (
+            <ConsultWork leadId={id} canBook={canBookConsult} canRecord={canRecordConsult} consults={s.consult.map((c) => ({ id: c.id, at: c.at, type: c.type, status: c.status }))} />
           )}
         </section>
       )}

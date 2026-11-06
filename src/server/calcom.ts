@@ -19,6 +19,8 @@ export interface CalcomBooking {
   leadRef?: string;
   /** Lowercased attendee emails */
   emails: string[];
+  /** When the consult starts (ISO), when Cal.com sent a valid one */
+  startTime?: string;
 }
 
 /** Returns null for events this site does not act on or payloads without a usable shape. */
@@ -35,12 +37,14 @@ export function parseCalcomPayload(raw: string): CalcomBooking | null {
   const p = (b.payload && typeof b.payload === "object" ? b.payload : {}) as {
     metadata?: Record<string, unknown>;
     attendees?: { email?: unknown }[];
+    startTime?: unknown;
   };
   const ref = p.metadata?.leadRef;
   const emails = (Array.isArray(p.attendees) ? p.attendees : [])
     .map((a) => (typeof a?.email === "string" ? a.email.trim().toLowerCase() : ""))
     .filter(Boolean);
-  return { event: b.triggerEvent as CalcomEvent, leadRef: typeof ref === "string" && ref ? ref : undefined, emails };
+  const start = typeof p.startTime === "string" && !Number.isNaN(Date.parse(p.startTime)) ? new Date(p.startTime).toISOString() : undefined;
+  return { event: b.triggerEvent as CalcomEvent, leadRef: typeof ref === "string" && ref ? ref : undefined, emails, ...(start ? { startTime: start } : {}) };
 }
 
 export interface LeadLike {
