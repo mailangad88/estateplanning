@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { term } = await params;
   const g = getGlossaryEntry(term);
   if (!g) return {};
-  const title = `${g.term}: meaning in estate planning, with an example`;
+  const title = g.term.length <= 22 ? `${g.term}: meaning in estate planning, with an example` : `${g.term}: meaning and example`;
   return {
     title,
     description: g.short.length > 160 ? `${g.short.slice(0, 157)}...` : g.short,

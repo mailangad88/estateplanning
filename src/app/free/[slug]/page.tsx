@@ -38,9 +38,11 @@ export default async function MagnetLanding({ params }: Props) {
     .map((r) => resolveSlug(r.split("/").pop() ?? r))
     .filter((r): r is NonNullable<typeof r> => r !== null)
     .slice(0, 4);
-  const more = getMagnets()
-    .filter((x) => x.slug !== m.slug && x.category === m.category && x.lang === m.lang)
-    .slice(0, 3);
+  // The next four resources in the same category, wrapping around, so every resource is linked from its
+  // neighbours (a fixed "first three" left most of the library with almost no inbound links).
+  const peers = getMagnets().filter((x) => x.category === m.category && x.lang === m.lang);
+  const at = peers.findIndex((x) => x.slug === m.slug);
+  const more = Array.from({ length: Math.min(4, peers.length - 1) }, (_, i) => peers[(at + 1 + i) % peers.length]);
   const inside = m.format === "email-course" ? m.lessons.map((l) => `Day ${l.day}: ${l.subject}`) : m.headings.map((h) => h.text).filter((t) => !/^(When to talk to an attorney|Next step|Sources|Cuándo hablar con un abogado|Siguiente paso|Fuentes)$/i.test(t));
   const cover = coverPropsFromMagnet(m);
   const es = m.lang === "es";

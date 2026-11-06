@@ -56,3 +56,27 @@ describe("lead alert", () => {
     expect(await sendLeadAlert(record, { LEAD_ALERT_EMAIL: "a@b.com" }, bad)).toEqual({ sent: 0 });
   });
 });
+
+import { postalAddress, seoTitle } from "@/lib/seo";
+import { citesOfficialSource, officialSourcesFor } from "@/config/official-sources";
+
+describe("launch SEO helpers", () => {
+  it("builds a PostalAddress from a one-line address", () => {
+    expect(postalAddress("123 Main St, Suite 4, Naperville, IL 60540")).toEqual({
+      "@type": "PostalAddress", streetAddress: "123 Main St, Suite 4", addressLocality: "Naperville", addressRegion: "IL", postalCode: "60540", addressCountry: "US",
+    });
+    expect(postalAddress("[Office address]")).toBe("[Office address]");
+  });
+  it("shortens long Topic: detail titles only when the topic stands alone", () => {
+    expect(seoTitle("Selling a house in probate in Illinois: when the executor needs court approval")).toBe("Selling a house in probate in Illinois");
+    expect(seoTitle("Short title")).toBe("Short title");
+    const q = "What happens if you become incapacitated and have no family, or no one you trust to name as your agent?";
+    expect(seoTitle(q)).toBe(q);
+  });
+  it("adds official sources only where the article cites none", () => {
+    expect(citesOfficialSource('<a href="https://www.ilga.gov/legislation">x</a>')).toBe(true);
+    expect(citesOfficialSource('<a href="/learn/wills">x</a>')).toBe(false);
+    expect(officialSourcesFor("new-jersey")).toEqual([]);
+    expect(officialSourcesFor("wills").map((s) => s.url)).toContain("https://www.ilga.gov/");
+  });
+});
