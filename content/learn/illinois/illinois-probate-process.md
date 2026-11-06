@@ -25,6 +25,10 @@ faqs:
     a: "No. A will tells the probate court who should receive your property, but the court still oversees the estate. Small estates may use the small estate affidavit, a home can pass by a transfer on death instrument, and assets held in a funded living trust skip probate altogether."
   - q: "What is the Cook County Probate Division?"
     a: "It is the part of the Circuit Court of Cook County that handles estates, wills and guardianships for Chicago and the suburbs. The clerk's probate office is in Room 1202 of the Richard J. Daley Center, 50 West Washington Street, documents are filed through eFile Illinois, and the clerk lists no fee for filing a will."
+  - q: "How do I get independent administration in Illinois?"
+    a: "Ask for it in the petition that opens the estate. The court must grant independent administration unless the will forbids it or supervised administration is required (755 ILCS 5/28-2). Most Illinois estates are handled this way."
+  - q: "Can an heir object to independent administration in Illinois?"
+    a: "Yes. If someone with a stake in the estate objects, the court generally must require supervised administration (755 ILCS 5/28-2). There are exceptions. If the will directs independent administration, for example, supervision is required only if the court finds good cause."
 related:
   - "illinois"
   - "illinois/how-long-does-probate-take-in-illinois"
@@ -125,6 +129,8 @@ Sometimes. If the estate has only personal property below the statutory limit an
 ## Example: Dolores and her brother's estate
 
 Dolores, 61, is named executor in her brother Walter's will. Walter owned a condo and a bank account in his own name. Dolores gives the original will to the circuit court clerk, files a petition, and the judge admits the will and grants independent administration. She mails notice to Walter's two children, publishes the creditor notice and pays the funeral bill and a credit card from the estate account. After the claims period ends, she distributes the money, files her closing report and waits the 42 days. No one objects, and the court discharges her.
+
+Planning ahead instead? See [how to avoid probate in Illinois](/learn/illinois/how-to-avoid-probate-in-illinois), asset by asset.
 
 ## How we can help
 

@@ -38,8 +38,8 @@ export function DigitalAssets({ caption, bare, step }: DiagramProps) {
             <Card x={x} y={116} w={205} h={196} fill="surface" border="line" />
             <Badge x={x + 28} y={146} n={i + 1} r={16} />
             <Icon name={s.icon} x={x + 150} y={130} size={38} color="accent" tint="accentTint" />
-            <Wrap x={x + 16} y={192} w={176} size={15} weight={700} text={s.title} lh={18} />
-            <Wrap x={x + 16} y={234} w={176} size={13} color="muted" text={s.text} lh={16} />
+            <Wrap x={x + 16} y={192} w={180} size={15} weight={700} text={s.title} lh={18} />
+            <Wrap x={x + 16} y={234} w={182} size={14} color="muted" text={s.text} lh={17} />
             {i < 3 ? <Arrow from={{ x: x + 207, y: 214 }} to={{ x: x + 221, y: 214 }} color="accent" head={7} /> : null}
           </S>
         );
@@ -57,7 +57,7 @@ export function DigitalAssets({ caption, bare, step }: DiagramProps) {
               <Text x={x + 54} y={400} size={16} weight={700}>
                 {k.title}
               </Text>
-              <Wrap x={x + 14} y={434} w={180} size={13} color="muted" text={k.text} lh={16} />
+              <Wrap x={x + 14} y={434} w={184} size={14} color="muted" text={k.text} lh={16} />
             </g>
           );
         })}

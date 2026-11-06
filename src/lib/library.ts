@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
+import { servedStates } from "@/config/firm";
 import type { VisualSpec } from "@/config/visual-kit";
 
 /**
@@ -60,8 +61,24 @@ export type ReviewStatus = "pending" | "approved";
  * approving pages), pages not marked `review: approved` are noindexed and left out of the sitemap,
  * llms.txt, llms-full.txt and the RSS feed. Unset, every page is indexable (pre-launch previews).
  */
-export function isIndexable(page: { review?: ReviewStatus }): boolean {
+export function isIndexable(page: { review?: ReviewStatus; cluster?: string }): boolean {
+  if (page.cluster && !isClusterServed(page.cluster)) return false;
   return process.env.REQUIRE_ATTORNEY_REVIEW !== "true" || page.review === "approved";
+}
+
+/** Library clusters that only apply to one state. */
+const STATE_CLUSTERS: Record<string, string> = { illinois: "IL", "new-jersey": "NJ" };
+
+/**
+ * A state's library section is hidden (noindexed, left out of listings, the sitemap and llms.txt) until the
+ * state is in SERVED_STATES, so New Jersey pages can sit ready for a later launch. With the "XX"
+ * placeholder (local previews, CI) every section shows.
+ */
+export function isClusterServed(slug: string): boolean {
+  const abbr = STATE_CLUSTERS[slug];
+  if (!abbr) return true;
+  const served = servedStates();
+  return served.includes("XX") || served.includes(abbr);
 }
 
 function asReview(v: unknown): ReviewStatus {
@@ -129,6 +146,30 @@ export interface City {
   /** Genuinely local, verified detail. City pages without it are not published. */
   localNotes: string[];
   nearby: string[];
+  updated: string;
+}
+
+export interface Office {
+  name: string;
+  address?: string;
+  phone?: string;
+  url?: string;
+}
+
+export interface County {
+  slug: string;
+  name: string;
+  state: StateInfo;
+  url: string;
+  seat?: string;
+  circuit?: string;
+  probateCourt?: Office;
+  clerk?: Office;
+  recorder?: Office;
+  /** Verified county facts, each citing its official source inline. Counties without notes are not published. */
+  notes: string[];
+  /** Slugs of this county's published city pages. */
+  cities: string[];
   updated: string;
 }
 
@@ -449,6 +490,32 @@ export function getCities(stateSlug?: string): City[] {
       .filter((c) => c.localNotes?.length)
       .map((c) => ({ ...c, nearby: c.nearby ?? [], state, url: `/estate-planning/${state.slug}/${c.slug}` }));
   });
+}
+
+/**
+ * County pages come from content/counties/{state-slug}.json, with the same rule as cities: a county is
+ * published only when it has verified notes.
+ */
+export function getCounties(stateSlug?: string): County[] {
+  const dir = path.join(ROOT, "counties");
+  if (!fs.existsSync(dir)) return [];
+  const states = getStates();
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".json") && (!stateSlug || f === `${stateSlug}.json`));
+  return files.flatMap((f) => {
+    const state = states.find((s) => `${s.slug}.json` === f);
+    if (!state) return [];
+    const raw = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")) as {
+      counties: Omit<County, "state" | "url">[];
+    };
+    return raw.counties
+      .filter((c) => c.notes?.length)
+      .map((c) => ({ ...c, cities: c.cities ?? [], state, url: `/estate-planning/${state.slug}/counties/${c.slug}` }));
+  });
+}
+
+/** The county page for a city, matched on the city's "county" name ("Cook County"). */
+export function countyForCity(city: City): County | undefined {
+  return getCounties(city.state.slug).find((c) => c.name === city.county);
 }
 
 /** Raw Markdown for a page, with a title line, for llms-full.txt and the /raw/ endpoints. */

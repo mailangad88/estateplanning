@@ -7,8 +7,8 @@ import type { Scene, VideoPlan } from "../../server/studio/types";
  */
 
 const END_CARD: VideoPlan["endCard"] = {
-  url: "familyplanlaw.com/illinois-probate",
-  firmName: "Family Plan Law",
+  url: "familyfutureplanning.com/illinois-probate",
+  firmName: "Family Future Planning",
   officeAddress: "Office address shown here, Illinois",
   advertisingLabel: "Attorney advertising.",
 };

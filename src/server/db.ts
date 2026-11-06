@@ -23,13 +23,17 @@ import type {
   PlanSession,
   Lawyer,
   Lead,
+  LeadReferral,
   Partner,
   PartnerGift,
   PartnerReferral,
   PageApproval,
   PaymentRecord,
   Person,
+  RetainerTemplate,
   ReviewRequest,
+  SignatureRecord,
+  StoredBlob,
   Task,
   User,
 } from "@/server/types";
@@ -96,6 +100,20 @@ export class MemoryCollection<T extends { id: string }> implements Collection<T>
   }
 }
 
+/**
+ * Insert-only rows (signature records, stored blobs). Mirrors the forbid_mutation triggers in db/schema.sql:
+ * update and remove always fail, so a test against the memory store sees the same refusal as Postgres.
+ */
+export class MemoryInsertOnly<T extends { id: string }> extends MemoryCollection<T> {
+  override async update(id: string): Promise<T> {
+    throw new Error(`rows are immutable: ${id}`);
+  }
+
+  override async remove(id: string): Promise<boolean> {
+    throw new Error(`rows are immutable: ${id}`);
+  }
+}
+
 export class MemoryAppendOnly<T extends { id: string }> implements AppendOnly<T> {
   private items: T[] = [];
   private chain: Promise<unknown> = Promise.resolve();
@@ -158,6 +176,12 @@ export interface Db {
   planLinkUses: Collection<PlanLinkUse>;
   planMfa: Collection<PlanMfaRecord>;
   planSessions: Collection<PlanSession>;
+  retainerTemplates: Collection<RetainerTemplate>;
+  leadReferrals: Collection<LeadReferral>;
+  /** Insert-only */
+  signatures: Collection<SignatureRecord>;
+  /** Insert-only, keyed by storage key */
+  blobs: Collection<StoredBlob>;
   audit: AppendOnly<AuditEvent>;
 }
 
@@ -205,6 +229,10 @@ export function createMemoryDb(): Db {
     planLinkUses: new MemoryCollection(),
     planMfa: new MemoryCollection(),
     planSessions: new MemoryCollection(),
+    retainerTemplates: new MemoryCollection(),
+    leadReferrals: new MemoryCollection(),
+    signatures: new MemoryInsertOnly(),
+    blobs: new MemoryInsertOnly(),
     audit: new MemoryAppendOnly(),
   };
 }

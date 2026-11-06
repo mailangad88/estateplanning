@@ -146,6 +146,74 @@ Some families find this easier with a short written note, with the location of t
 
 No plan makes every account recoverable. Some companies will refuse, some services will delete data on a schedule and some licenses end at death. The aim is narrower and achievable: that your family can find the important things, reach the ones that matter most and make informed choices about the rest, instead of starting from nothing during a hard time.
 
+## More questions people ask
+
+For coins that are locked, airdropped or borrowed against, [what happens to staked crypto, airdrops and DeFi positions when the owner dies](/learn/digital-assets/what-happens-to-staked-crypto-airdrops-and-defi-positions-when-the-owner-dies) covers lock-ups, liquidation risk and the tax rules.
+
+If a family member left an exchange account, [how to access a deceased person's Coinbase or other crypto exchange account](/learn/digital-assets/how-to-access-a-deceased-persons-coinbase-or-other-crypto-exchange-account) lists the papers to send and the steps in order.
+
+To hand on Bitcoin without exposing your keys, [what happens if you do not tell anyone about your crypto](/learn/digital-assets/what-happens-if-you-do-not-tell-anyone-about-your-crypto) covers instruction letters and seed phrase storage.
+
+For your writing, reviews and pseudonymous accounts, [what happens to your blog, online reviews and anonymous accounts](/learn/digital-assets/what-happens-to-your-blog-online-reviews-and-anonymous-accounts-when-you-die) explains who owns the copyright and what family can do.
+
+If you are locked out of a computer or drive, [how to get files from a deceased person's computer, hard drive or cloud storage](/learn/digital-assets/how-to-get-files-from-a-deceased-persons-computer-hard-drive-or-cloud-storage) gives the order to try things in.
+
+To handle a loved one's profile, [how to memorialize a deceased person's Facebook or Instagram account](/learn/digital-assets/how-to-memorialize-a-deceased-persons-facebook-or-instagram-account) walks through the requests, proof and the memorialize-or-delete choice.
+
+When mail and spam keep arriving after a death, [how to stop a deceased person's junk mail](/learn/digital-assets/how-to-stop-a-deceased-persons-junk-mail-spam-and-online-marketing) covers the opt-out lists and how the mail can reveal accounts.
+
+If a spouse shared one login with you, [closing out a deceased spouse's Apple ID](/learn/digital-assets/closing-out-a-deceased-spouses-apple-id-family-sharing-and-shared-logins) covers Family Sharing, subscriptions and locked devices.
+
+To learn how long Google keeps an account and how to save the data in time, read [Gmail, Drive and Google Photos after death](/learn/digital-assets/gmail-drive-and-google-photos-after-death-inactivity-timers-and-how-long-google-keeps-data).
+
+For what a trust can own and what it cannot, see [putting digital assets in a living trust](/learn/digital-assets/can-you-put-digital-assets-in-a-living-trust-what-you-can-assign-and-what-you-cannot).
+
+With no will, [who gets your digital accounts, photos and crypto](/learn/digital-assets/who-gets-your-digital-accounts-if-you-die-without-a-will) explains what passes to heirs and what stays locked.
+
+To make a request to a company, [how to ask Apple, Google or Meta for a deceased person's account](/learn/digital-assets/how-to-ask-a-tech-company-for-a-deceased-persons-account) lists the documents, the court order route and the timing.
+
+For everyday accounts, [online banking, Amazon, LinkedIn and password managers after death](/learn/digital-assets/online-banking-amazon-linkedin-and-password-managers-after-death) gives the default outcome and first move for each.
+
+If you are wondering how much of this you can do yourself, [do you need a lawyer for a digital estate plan, and what does it cost](/learn/digital-assets/do-you-need-a-lawyer-for-a-digital-estate-plan-and-what-it-costs) separates the free tools from the legal wording.
+
+For people who want some things to stay private, [keeping your family out of your messages and accounts after you die](/learn/digital-assets/can-you-keep-your-family-out-of-your-private-messages-after-you-die) explains what the law protects and where it fails.
+
+To make the list your executor will need, [how to create a digital asset inventory](/learn/digital-assets/how-to-create-a-digital-asset-inventory-your-executor-can-use) walks through it step by step and says what to leave out.
+
+To choose between an exchange, a hardware wallet and a shared-key setup, [which crypto custody setup heirs can actually inherit](/learn/digital-assets/crypto-custody-exchange-self-custody-and-multisig-for-heirs) compares the three.
+
+When the phone is locked and the bank sends codes to it, [what to do about a locked phone, texts and the phone number](/learn/digital-assets/locked-phone-after-death-texts-two-factor-codes-and-the-phone-number) lays out the order of steps.
+
+For the small items that fall between categories, [game libraries, smart home devices and reward points after death](/learn/digital-assets/video-game-smart-home-and-loyalty-accounts-after-death) explains what transfers and what does not.
+
+If you earn money from a web shop or channel, [what happens to an Etsy shop, YouTube channel or online business at death](/learn/digital-assets/online-business-etsy-shop-or-youtube-channel-after-death) explains what passes to heirs, what the platform keeps and how the income is taxed.
+
+When the keys are missing, [what if nobody can find or unlock a dead person's crypto](/learn/digital-assets/lost-seed-phrase-or-crypto-heirs-cannot-find) covers how to search for hidden coins, what a lost seed phrase means and how exchanges and executors can respond.
+
+To keep your accounts manageable while you are alive but unable to act, [does a power of attorney cover your digital accounts](/learn/digital-assets/power-of-attorney-and-digital-accounts) explains what an agent can reach and how to grant access safely.
+
+For streaming, e-book and game libraries, [subscriptions and purchased media after death](/learn/digital-assets/subscriptions-and-purchased-media-after-death) explains why licenses do not pass by will and how to stop recurring charges.
+
+On the tax side, [how inherited crypto is taxed](/learn/digital-assets/how-inherited-crypto-is-taxed) covers the date-of-death basis, valuing coins, staking income and what heirs report when they sell.
+
+For money sitting in payment apps, [PayPal, Venmo and Cash App after death](/learn/digital-assets/paypal-venmo-and-cash-app-after-death) explains how the executor claims the balance and why family should not log in.
+
+If you hold crypto on a device or own NFTs, [hardware wallets and NFTs after death](/learn/digital-assets/hardware-wallets-and-nfts-after-death) explains what heirs need to get in and what to leave behind.
+
+To reach a loved one's locked phone or cloud photos, [photos, cloud storage and iPhones after death](/learn/digital-assets/photos-and-iphones-after-death) covers the routes that work and what to do first.
+
+If you own a website or domain, [domain names and websites after death](/learn/digital-assets/domain-names-and-websites-after-death) explains renewals, transfers and keeping the address alive.
+
+The state law that decides whether an executor, agent or trustee can open your accounts is covered in [what RUFADAA is](/learn/digital-assets/rufadaa-explained).
+
+To choose someone to handle your online accounts and files, read [what a digital executor is](/learn/digital-assets/what-is-a-digital-executor).
+
+If you are stuck at an email provider, [can an executor access email](/learn/digital-assets/can-an-executor-access-email) explains what consent, paperwork and court orders are needed.
+
+For a working to-do list after a death, use the [online accounts checklist](/learn/digital-assets/online-accounts-after-death-checklist).
+
+To decide between the two documents for crypto and other digital property, see [crypto in a will or a trust](/learn/digital-assets/crypto-in-a-will-or-a-trust).
+
 ## How we can help
 
 Digital estate planning works best when your legal documents and your practical access plan fit together. Our attorneys can add digital asset provisions to your will, trust and power of attorney, and help you decide who should hold what. Use the [plan finder](/plan-finder) to see where you stand, or book a consultation when you are ready. A short conversation now can save your family a long and frustrating search later.

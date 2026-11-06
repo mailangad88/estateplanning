@@ -24,6 +24,8 @@ faqs:
     a: "An owner can revoke only by recording a new TODI that changes the beneficiary or a recorded instrument of revocation, with the same formalities, before death. A later will cannot revoke a TODI, and neither can an unrecorded note or the owner's own act."
   - q: "What is a notice of death affidavit in Illinois?"
     a: "It is a document the beneficiary can record after the owner's death to confirm the transfer. It names the beneficiary and describes the property, the owner's death, and the original instrument. Filing it is helpful for title purposes but is not a condition of the transfer (755 ILCS 27/75)."
+  - q: "Can I leave my house to one child in Illinois?"
+    a: "Yes. You can name that child as the beneficiary of a transfer on death instrument, leave the house to them in your will, or hold it in a living trust. The house can still be reached by creditors after your death, and a surviving spouse may have claims, so check those before you decide."
 related:
   - "illinois"
   - "illinois/illinois-living-trusts"
@@ -86,6 +88,10 @@ The beneficiary can record a notice of death affidavit. It lists the beneficiary
 A TODI is simple and cheap, and it keeps control with you. It suits a single piece of real estate going to named people. A trust may suit you better if you have several properties, want to plan for incapacity, or want to leave property to children in stages. Our [living trusts in Illinois](/learn/illinois/illinois-living-trusts) article compares those options. Some assets are not real estate at all. For those, see our article on [how to avoid probate](/learn/probate/how-to-avoid-probate) and our [Illinois probate step-by-step](/learn/illinois/illinois-probate-process) guide.
 
 <!-- visual: decision slug=how-to-leave-your-house-to-your-children part=map -->
+
+Own a condo or co-op? Read [what happens to a Chicago condo or co-op when the owner dies](/learn/illinois/chicago-condo-and-co-op).
+
+Thinking of putting a child on the deed instead? Read [should I add my child to my deed in Illinois](/learn/illinois/should-i-add-my-child-to-my-deed-illinois) first.
 
 ## How we can help
 

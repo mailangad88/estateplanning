@@ -50,6 +50,7 @@ export type ExitCondition =
 export type TriggerKind =
   | "lead_created"
   | "quiz_completed"
+  | "tool_completed"
   | "segment_tag"
   | "stage"
   | "consult_no_show"
@@ -132,6 +133,7 @@ export const LIFE_EVENT_SEGMENTS = [
   "caregiver",
   "widowed",
   "retiring",
+  "special_needs",
 ] as const;
 export type LifeEventSegment = (typeof LIFE_EVENT_SEGMENTS)[number];
 
@@ -146,6 +148,8 @@ const LIFE_EVENT_TOPICS: Record<LifeEventSegment, string[]> = {
   business_owner: ["what-happens-to-the-business", "buy-sell-agreements", "naming-a-successor", "business-and-trust", "valuation-basics", "key-person-risk", "next-step"],
   caregiver: ["power-of-attorney", "healthcare-directives", "long-term-care-costs", "medicaid-basics", "caregiver-authority", "records-to-gather", "next-step"],
   widowed: ["updating-after-a-loss", "beneficiary-forms-to-change", "new-power-of-attorney", "trust-or-will-now", "naming-new-fiduciaries", "talking-with-children", "next-step"],
+  // Gentle track: subjects never name the condition (sensitive-content rule); added 2026-10-31.
+  special_needs: ["planning-for-lifelong-support", "protecting-benefits", "supplemental-needs-trusts", "choosing-a-trustee", "letter-of-intent", "decision-making-at-18", "next-step"],
   retiring: ["estate-plan-before-retirement", "retirement-account-beneficiaries", "power-of-attorney", "healthcare-directives", "avoiding-probate", "required-minimum-distributions-and-heirs", "next-step"],
 };
 /** Days from enrollment: 7 emails across 30 days, roughly twice a week at first and tapering. */
@@ -315,6 +319,64 @@ const griefSupport: Sequence = {
   ],
 };
 
+/** Capture tools that are calculators or scorers: their leads get the calculator follow-up. */
+export const CALCULATOR_TOOLS = ["cost_calculator", "readiness_score", "will_vs_trust"];
+
+/**
+ * Welcome: a new lead who came in through a form, not a quiz, guide or calculator (those have their own
+ * follow-up). Explains how the referral network works, what a basic plan holds, and how matching works.
+ * Drafted 2026-10-31 for attorney review.
+ */
+const welcome: Sequence = {
+  id: "welcome",
+  name: "Welcome to the network",
+  trigger: { kind: "lead_created", description: "New lead with no quiz, guide or calculator follow-up" },
+  goal: "Understand how matching works and book a call",
+  exitWhen: [BOOKED, EXIT_SET, UNSUB],
+  steps: [
+    step("wl_1_how_it_works", "email", { days: 1 }, ["bf-TODO-network-how-matching-works"], "How the referral network works, the states it covers, and what happens next"),
+    step("wl_2_core_documents", "email", { days: 4 }, ["bf-TODO-core-documents"], "The documents most plans start with, in plain words"),
+    step("wl_3_free_tools", "email", { days: 8 }, ["bf-TODO-quiz-invite"], "Free tools and checklists to get organized first", { exceptSegments: ["tool:plan_finder"] }),
+    step("wl_4_book", "email", { days: 12 }, ["bf-TODO-what-the-consult-covers"], "What a first call covers and how to book it"),
+  ],
+};
+
+/**
+ * After a calculator or scorer (cost, readiness, will versus trust). Never repeats the person's figures:
+ * the email explains what drives the result and offers the next step. Heir-mode use routes to grief_support
+ * before this is considered. Drafted 2026-10-31 for attorney review.
+ */
+const calculatorFollowUp: Sequence = {
+  id: "calculator_follow_up",
+  name: "Calculator follow-up",
+  trigger: { kind: "tool_completed", description: "Cost calculator, readiness score or will-versus-trust tool completed" },
+  goal: "Turn a tool result into a booked call",
+  exitWhen: [BOOKED, EXIT_SET, UNSUB],
+  steps: [
+    step("calc_1_result", "email", { hours: 1 }, ["bf-TODO-calculator-what-the-result-means"], "What the result means and its limits"),
+    step("calc_2_what_moves_it", "email", { days: 2 }, ["bf-TODO-calculator-what-moves-the-number"], "The few facts that change the answer most"),
+    step("calc_3_plan_finder", "email", { days: 5 }, ["bf-TODO-quiz-invite"], "Invite to the plan finder", { exceptSegments: ["tool:plan_finder"] }),
+    step("calc_4_book", "email", { days: 10 }, ["bf-TODO-what-the-consult-covers"], "What a first call covers and how to book it"),
+  ],
+};
+
+/**
+ * Reactivation: a quiet lead (60 days, no booking) gets three short "still thinking about it?" notes before the
+ * monthly newsletter takes over. Starts with long_term from the quiet-lead sweep. Drafted 2026-10-31.
+ */
+const reactivation: Sequence = {
+  id: "reactivation",
+  name: "Reactivation",
+  trigger: { kind: "unresponsive_or_quiet_60d", description: "Quiet for 60 days without booking, same sweep that starts long_term" },
+  goal: "Restart the conversation and book a call",
+  exitWhen: [BOOKED, EXIT_SET, UNSUB],
+  steps: [
+    step("ra_1_still_on_list", "email", { days: 0 }, ["bf-TODO-reactivation"], "Is a plan still on your list? One question, easy reply"),
+    step("ra_2_one_small_step", "email", { days: 7 }, ["bf-TODO-reactivation"], "One small step that takes 20 minutes"),
+    step("ra_3_last_check", "email", { days: 21 }, ["bf-TODO-reactivation"], "Last personal note before the monthly newsletter"),
+  ],
+};
+
 /** Sequence B: someone downloaded a guide or checklist. Deliver it, then invite the quiz and a consult. */
 const magnetFollowUp: Sequence = {
   id: "magnet_follow_up",
@@ -336,6 +398,9 @@ export const SEQUENCES: Sequence[] = [
   quizFollowUp,
   griefSupport,
   magnetFollowUp,
+  welcome,
+  calculatorFollowUp,
+  reactivation,
   ...LIFE_EVENT_SEGMENTS.map(lifeEvent),
   consultBooked,
   noShowRecovery,

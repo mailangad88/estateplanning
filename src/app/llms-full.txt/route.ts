@@ -20,7 +20,7 @@ export function GET() {
   const out: string[] = [
     `# ${firm.brandName}: full content`,
     "",
-    `General estate planning education from ${firm.firmLegalName}. Not legal advice. Laws vary by state.`,
+    `General estate planning education from ${firm.brandName}, an estate planning referral network that matches visitors with an appropriate attorney. Not legal advice. Laws vary by state.`,
     "",
   ];
   for (const [dir, base] of DIRS) {

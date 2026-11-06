@@ -38,7 +38,8 @@ export function Doc({
   label,
   tone = "surface",
   ink = "accent",
-}: Pos & { w?: number; h?: number; label?: string; tone?: ColorName; ink?: ColorName }) {
+  labelSize,
+}: Pos & { w?: number; h?: number; label?: string; tone?: ColorName; ink?: ColorName; labelSize?: number }) {
   const fold = Math.min(w, h) * 0.22;
   return (
     <g transform={`translate(${x} ${y})`}>
@@ -62,7 +63,7 @@ export function Doc({
         />
       ))}
       {label ? (
-        <Text x={w / 2} y={h * 0.24} size={Math.max(10, w * 0.16)} weight={700} color={ink} anchor="middle">
+        <Text x={w / 2} y={h * 0.24} size={labelSize ?? Math.max(10, w * 0.16)} weight={700} color={ink} anchor="middle">
           {label}
         </Text>
       ) : null}

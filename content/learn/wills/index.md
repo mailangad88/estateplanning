@@ -162,6 +162,76 @@ Life stage changes which items matter most. If you are a new parent, the guardia
 
 An old will can cause as many problems as no will. See [what happens if you die with an outdated will](/learn/what-if/outdated-will), and if time is short, [whether it is too late to make a will](/learn/what-if/too-late-for-a-will).
 
+## More questions people ask
+
+If you are choosing people to sign, [who can witness a will in Illinois or New Jersey](/learn/wills/who-can-witness-a-will-in-illinois-and-new-jersey) explains who is safe and what happens when a beneficiary signs.
+
+Thinking about a template or kit? [Are free templates for a will legal](/learn/wills/are-free-templates-for-a-will-legal) covers what works, what fails and a checklist to run first.
+
+If a beneficiary caused the death, [can someone who kills you inherit from you](/learn/wills/can-someone-who-kills-you-inherit-from-you) explains the slayer rule and how it treats wills, joint property and insurance.
+
+Wondering when the family finds out what a will says? [Is there a reading of the will](/learn/wills/is-there-a-reading-of-the-will) lays out the filing, notice and deadlines in Illinois and New Jersey.
+
+To give to a charity through your will, [how to leave money to charity in your will](/learn/wills/how-to-leave-money-to-charity-in-your-will) covers fixed gifts versus percentages, exact legal names and backup wording.
+
+If you wonder whether a will must be registered, [can you file your will with the court while you are alive](/learn/wills/can-you-file-your-will-with-the-court-while-you-are-alive) explains what Illinois and New Jersey require.
+
+Holding an old will? [Do wills expire](/learn/wills/do-wills-expire-is-an-old-will-still-valid) shows what stays valid and a checklist for deciding when to redo it.
+
+Before an appointment, read [what to bring to a lawyer to make a will](/learn/wills/what-to-bring-to-a-lawyer-to-make-a-will) for the documents, questions and signing-day steps.
+
+If you drafted a will on your phone or want to sign on a screen, [are electronic wills legal](/learn/wills/electronic-wills-and-wills-made-on-a-phone-or-in-an-email) explains which states allow it and how to sign safely.
+
+For gift lists, letters to the family and funeral wishes, [do notes, letters and spoken wishes bind your family](/learn/wills/notes-letters-and-spoken-wishes-do-they-bind-your-family) shows what the law enforces and what only guides.
+
+If a will has been hidden, torn up or looks forged, [what families can do about a hidden, forged or destroyed will](/learn/wills/hidden-forged-or-destroyed-wills-what-families-can-do) covers the evidence and first steps.
+
+For a clause-by-clause tour of a will, see [the parts of a will and what each clause does](/learn/wills/parts-of-a-will-what-each-clause-does).
+
+If your heir is a partner, friend or someone abroad, [leaving property to a partner, friend or non-citizen in a will](/learn/wills/leaving-property-to-a-partner-friend-or-non-citizen-in-a-will) covers the tax and family limits.
+
+To control which gifts carry the bills and taxes, read [who pays debts, expenses and taxes under your will](/learn/wills/who-pays-debts-expenses-and-taxes-under-your-will).
+
+When the signer is ill or a relative may be pushing, [signing a will with dementia, illness or family pressure](/learn/wills/signing-a-will-with-dementia-illness-or-family-pressure) explains capacity, undue influence and how to document both.
+
+To see what to expect from first call to signing, [how long it takes to make a will](/learn/wills/how-long-it-takes-to-get-a-will-made) walks through each step and what slows it down.
+
+If you are weighing an unusual form, [oral, military, statutory and international wills](/learn/wills/oral-military-statutory-and-international-wills) explains what each does and when it is worth using.
+
+Not sure whether you need one at all? [Do I need a will](/learn/wills/do-i-need-a-will) walks through seven common situations.
+
+For the specific signing errors that sink a document, [witness, signature, date and missing-page problems](/learn/wills/will-signing-defects-witnesses-dates-and-missing-pages) covers each one and whether it can be fixed.
+
+After a wedding, a decree or a birth, [what happens to your existing will](/learn/wills/marriage-divorce-or-a-new-baby-and-your-existing-will) explains what the law changes and what you must do.
+
+When your documents seem to disagree, [which controls: will, trust, joint account or beneficiary form](/learn/wills/which-controls-will-trust-joint-account-or-beneficiary-form) shows how to tell.
+
+If a beneficiary dies before you, [what happens to a gift in a will when the beneficiary dies first or you both die together](/learn/wills/lapsed-gifts-and-simultaneous-death) explains lapse, anti-lapse laws and survivorship clauses.
+
+To make a gift depend on school, age or behavior, [conditions on an inheritance in a will](/learn/wills/conditions-on-an-inheritance-in-a-will) shows which conditions hold up and when a trust works better.
+
+For the wording of individual gifts, [specific, general and residuary gifts](/learn/wills/specific-general-and-residuary-gifts) covers cars, cash, forgiven loans and what happens when the estate runs short.
+
+After a move, a posting abroad or a change in citizenship, [whether your will is still valid](/learn/wills/will-moving-states-or-living-abroad) lists what to recheck.
+
+If the person you named cannot or will not act, [what happens when your executor dies, refuses or can't serve](/learn/wills/when-your-named-executor-cannot-serve) explains the backup chain.
+
+A will does not keep you out of court, and [does a will avoid probate](/learn/wills/does-a-will-avoid-probate) explains when it takes effect, what the executor can do first and which assets skip probate.
+
+Before you name an heir for the house, [leaving a house in a will](/learn/wills/leaving-a-house-in-a-will) covers the mortgage, joint title, a spouse's rights and shared inheritances.
+
+If heirs are unhappy with a will, [whether a will can be changed after death](/learn/wills/can-a-will-be-changed-after-death) explains disclaimers, settlement agreements and court corrections.
+
+A short sworn statement can spare your executor a hunt for witnesses, and [the self-proving affidavit explained](/learn/wills/self-proving-affidavit-explained) covers who signs it, what a notary does and what happens without one.
+
+Couples weighing one shared document should read [joint will vs. mutual will](/learn/wills/joint-will-vs-mutual-will) to see how a joint will can lock in the survivor and what to use instead.
+
+To learn whether a penalty clause really deters a challenge, see [no-contest clauses and how courts treat them](/learn/wills/no-contest-clause-in-a-will).
+
+When life changes after you sign, [changing a will with a codicil, a new will or revocation](/learn/wills/changing-a-will-and-codicils) explains which route fits and how to sign it.
+
+If the original cannot be found, [what to do about a lost original will](/learn/wills/lost-original-will) covers where to search and how a copy can be admitted to probate.
+
 ## How we can help
 
 You do not need to work out the whole plan alone. Our attorneys can review a will you already have, draft a new one with a proper signing, or help you decide whether a trust-based plan fits better. The [plan finder](/plan-finder) takes a few minutes and suggests which documents suit your situation, or you can book a consultation to talk it over. There is no pressure to decide anything on the first call.

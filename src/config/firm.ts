@@ -2,40 +2,23 @@ import type { BusinessStructure } from "@/lib/fees";
 
 /**
  * Single source of firm facts, read by every page, footer, schema block and email.
- * Values in [brackets] or marked PLACEHOLDER are unfilled; `npm run launch-check`
+ * Values in square brackets are unfilled; `npm run launch-check`
  * blocks production deploys until they are replaced.
  */
 export const firm = {
-  brandName: "Family Plan Law", // PLACEHOLDER brand name
+  brandName: "Family Future Planning", // matches familyfutureplanning.com
   firmLegalName: "[Firm legal name]",
-  attorneyName: "[Attorney name]",
+  attorneyName: "Sargun Singh",
   attorneyTitle: "Estate planning attorney",
-  barNumber: "[Bar number]",
   phone: "(000) 000-0000", // PLACEHOLDER tracked number
+  /** Public contact email for the site (a company address, separate from the attorney). */
+  email: "[Company email]",
   officeAddress: "[Office address]",
-  /** City or county and state of a real (bona fide) office. California and Florida require it on every ad. */
-  officeLocality: "[Office city or county, state]",
   officeHours: "[Office hours]",
   /** What the site promises about response time. Keep it true. */
   responseTime: "[Response time, e.g. within one business day]",
-  /** State of licensure. Pages say "your state" until this is filled. */
-  licensedState: "[Firm licensed state]",
-  /** Bio and process facts only the attorney can supply. Pages show them as visible placeholders. */
-  yearsInPractice: "[Attorney: year admitted to practice]",
-  lawSchool: "[Attorney: law school and year]",
-  consultLength: "[Attorney: consult length in minutes]",
-  consultFormat: "[Attorney: phone, video or in person]",
-  consultFee: "[Attorney: consult fee, or no fee]",
-  draftingTime: "[Attorney: typical drafting time]",
   /** Profile URLs (state bar, Google Business Profile and similar) that identify the firm. Empty omits sameAs from structured data. */
   sameAs: [] as string[],
-  /** Profile URLs for the attorney. Empty omits sameAs from structured data. */
-  attorneySameAs: [] as string[],
-  barLookupUrl: null as string | null, // state bar lawyer-lookup URL, set when known
-  /** Attorney headshot under public/, e.g. "/media/attorney.jpg". Null shows no photo and omits image from schema. */
-  attorneyHeadshot: null as string | null,
-  /** Two or three plain sentences in the attorney's own words, shown on the profile and in Person schema. */
-  attorneyShortBio: "[Attorney: two or three sentence bio in your own words]",
   /**
    * Booking page embedded after a consult request (Calendly, Cal.com, Lawmatics or Clio Grow).
    * Must be an https URL the scheduler allows in an iframe. Null keeps the "our team will reach out"
@@ -50,7 +33,7 @@ export const firm = {
     ? process.env.NEXT_PUBLIC_CALCOM_LINK!
     : null) as string | null,
   /** Number visitors can text. Must be registered for business texting (10DLC) before launch. Null hides the Text button. */
-  textNumber: "(000) 000-0000" as string | null, // PLACEHOLDER
+  textNumber: null as string | null,
   /**
    * Structure the platform operates under. "in_firm" (Model A in the plan) means
    * the platform is the firm's own marketing and intake department.
@@ -58,29 +41,12 @@ export const firm = {
    */
   structure: "in_firm" as BusinessStructure,
   /**
-   * Attorney bio facts used on /about and /legal/attorney-advertising. Every value must come
-   * from the attorney and be checkable (bar profile, diploma). Never fill these from guesses.
-   */
-  attorneyBio: {
-    licensedIn: "[Attorney bar admissions: state and year for each]",
-    education: "[Attorney law school and year]",
-    practiceFocus: "Practice focused on estate planning",
-    /** Only a certification the attorney actually holds, with the certifying body and area named. Null hides it. */
-    certification: null as string | null,
-    /** Awards only from bodies that do not sell them, with issuer and year. Empty hides the list. */
-    awards: [] as string[],
-  },
-  /**
    * Dynamic number insertion. Keys: "source/medium" (exact), "source" (any medium), or "*" + "/medium" (any source).
    * The first-touch source of the visit picks the number; anything unmatched shows `phone`.
    * Each number must be a real call-tracking line forwarding to the office before launch.
    */
   trackingNumbers: {
-    "google/cpc": "(000) 000-0000", // PLACEHOLDER Google Ads
-    "bing/cpc": "(000) 000-0000", // PLACEHOLDER Microsoft Ads
-    "facebook/paid_social": "(000) 000-0000", // PLACEHOLDER Meta ads
-    "gbp": "(000) 000-0000", // PLACEHOLDER Google Business Profile (utm_source=gbp)
-    "*/email": "(000) 000-0000", // PLACEHOLDER newsletters and nurture email
+    // Add real call-tracking lines here when they exist, e.g. "google/cpc": "(312) 555-0100".
   } as Record<string, string>,
 };
 
@@ -95,11 +61,35 @@ export interface Package {
   excludes: string[];
 }
 
+/**
+ * Sitewide disclaimer (Sargun Singh, 2026-10-25, typos fixed). Shown in the footer, on /book and on every
+ * public form. The site is a referral network that matches visitors with an attorney.
+ */
+export const SITE_DISCLAIMER =
+  "All information on this website is for educational purposes only. It does not constitute legal advice, and it does not create an attorney-client relationship. This is a referral website: we will match you with an appropriate attorney.";
+
+export const SITE_DISCLAIMER_ES =
+  "Toda la información de este sitio web es solo educativa. No constituye asesoría legal ni crea una relación abogado-cliente. Este es un sitio de referencias: lo pondremos en contacto con un abogado adecuado.";
+
+/**
+ * Every price the site shows, in one place. Values come from the attorney. A value can be a price
+ * ("$1,800") or a phrase ("Quoted after your first call"). An unfilled value blocks the production build.
+ */
+export const fees = {
+  /** Angad, 2026-10-31: Basic (Essentials) $2,500, second tier (Complete) $3,500, third tier custom. One flat price per plan, whether for one person or a couple. */
+  essentials: "$2,500",
+  complete: "$3,500",
+  legacy: "Custom quote",
+};
+
+/** Essentials and Complete include exactly one round of revisions (Sargun Singh 2026-10-25; Angad 2026-10-31). Legacy sets revisions in its custom quote. */
+export const PACKAGE_REVISIONS = "One round of revisions to your documents";
+
 /** Flat-fee packages shown on /pricing. Prices are set by the firm. */
 export const packages: Package[] = [
-  { id: "essentials", name: "Essentials", price: "[Flat fee]", for: "One person or a couple with modest assets and no minor children.", includes: ["Will (each spouse)", "Guardian nominations if you have children", "Durable financial power of attorney", "Healthcare power of attorney, living will and HIPAA release", "Signing ceremony"], excludes: ["Trust drafting", "Real estate deeds", "Tax planning", "Court proceedings"] },
-  { id: "complete", name: "Complete", price: "[Flat fee]", for: "Homeowners and families with minor children. The usual fit for families with a home, not the right fit for everyone.", includes: ["Revocable living trust", "Pour-over will", "Financial and healthcare powers of attorney", "Living will and HIPAA release", "Deed transfer of your home into the trust", "Funding checklist plus one review", "Signing ceremony"], excludes: ["Tax planning beyond the trust", "Deeds not listed in the custom scope", "Court proceedings"] },
-  { id: "legacy", name: "Legacy", price: "Quote after consult", for: "Blended families, business owners, property in more than one state, special needs planning or larger estates.", includes: ["Everything in Complete", "Special needs or children's trust provisions", "Additional deeds", "Business interest assignment", "Coordination with your financial advisor or CPA"], excludes: ["Court proceedings", "Tax return preparation", "Work outside the custom scope"] },
+  { id: "essentials", name: "Essentials", price: fees.essentials, for: "One person or a couple with modest assets and no minor children.", includes: ["Will (each spouse)", "Guardian nominations if you have children", "Durable financial power of attorney", "Healthcare power of attorney, living will and HIPAA release", "Signing ceremony", PACKAGE_REVISIONS], excludes: ["Revisions after the first round", "Trust drafting", "Real estate deeds", "Tax planning", "Court proceedings"] },
+  { id: "complete", name: "Complete", price: fees.complete, for: "Homeowners and families with minor children. The usual fit for families with a home, not the right fit for everyone.", includes: ["Revocable living trust", "Pour-over will", "Financial and healthcare powers of attorney", "Living will and HIPAA release", "Deed transfer of your home into the trust", "Funding checklist plus one review", "Signing ceremony", PACKAGE_REVISIONS], excludes: ["Revisions after the first round", "Tax planning beyond the trust", "Deeds not listed in the custom scope", "Court proceedings"] },
+  { id: "legacy", name: "Legacy", price: fees.legacy, for: "Blended families, business owners, property in more than one state, special needs planning or larger estates.", includes: ["Everything in Complete", "Special needs or children's trust provisions", "Additional deeds", "Business interest assignment", "Coordination with your financial advisor or CPA", "Revisions as set in your custom quote"], excludes: ["Court proceedings", "Tax return preparation", "Work outside the custom scope"] },
 ];
 
 /**
@@ -116,6 +106,16 @@ export function servedStates(): string[] {
     .map((s) => s.trim().toUpperCase())
     .filter(Boolean);
 }
+
+const STATE_NAMES: Record<string, string> = { IL: "Illinois", NJ: "New Jersey" };
+function servedNames(): string[] {
+  const names = servedStates().map((c) => STATE_NAMES[c]).filter(Boolean);
+  return names.length ? names : ["Illinois"];
+}
+/** "Illinois" or "Illinois and New Jersey", from SERVED_STATES. Every "we serve" sentence uses these. */
+export const SERVED_AND = servedNames().join(" and ");
+/** "Illinois" or "Illinois or New Jersey". */
+export const SERVED_OR = servedNames().join(" or ");
 
 export const US_STATES = [
   "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN",

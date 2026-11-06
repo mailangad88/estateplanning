@@ -6,7 +6,7 @@ import { firm, packages } from "@/config/firm";
 import { TOOLS } from "@/config/tools";
 import { videos } from "@/components/visuals/video/videos";
 import { getChecklists, getFaqs, getGuides, getLifeEvents, getPosts } from "@/lib/content";
-import { getClusters, getPillar } from "@/lib/library";
+import { getClusters, getPillar, isClusterServed } from "@/lib/library";
 import { CardGrid, FaqList } from "@/components/ui";
 import { EmailCapture } from "@/components/capture";
 import { MAGNET_FORMATS, getMagnets } from "@/lib/magnets";
@@ -194,7 +194,7 @@ export default function Home() {
                 <h3>When you may not need an attorney</h3>
                 <p>
                   People who are single, own very little, have no dependents, and have named beneficiaries on every account often
-                  manage with a simple will or beneficiary forms. If you are not sure, the plan finder will say so plainly. Consult fee: {firm.consultFee}.
+                  manage with a simple will or beneficiary forms. If you are not sure, the plan finder will say so plainly.
                 </p>
               </div>
             </div>
@@ -247,7 +247,7 @@ export default function Home() {
         <h3 className="band-subhead">Browse by topic</h3>
         <ul className="pill-row">
           {getClusters()
-            .filter((c) => getPillar(c.slug))
+            .filter((c) => getPillar(c.slug) && isClusterServed(c.slug))
             .map((c) => (
               <li key={c.slug}><Link href={c.url}>{c.name}</Link></li>
             ))}
@@ -261,7 +261,9 @@ export default function Home() {
         </ul>
       </Band>
 
-      <FaqList faqs={faqs} />
+      <Band tone="sand" label="Common questions" className="home-faq">
+        <FaqList faqs={faqs} />
+      </Band>
       {/* Client reviews go here once real clients leave them. Never use invented testimonials. */}
     </>
   );

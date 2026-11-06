@@ -79,6 +79,7 @@ export type LeadAction =
   | "view_engagement"
   | "manage_tasks"
   | "view_audit"
+  | "refer_lead"
   | "export";
 
 export function canOnLead(actor: Actor, action: LeadAction, lead: Lead, assignments: Assignment[], now = new Date()): boolean {
@@ -112,6 +113,11 @@ export function canOnLead(actor: Actor, action: LeadAction, lead: Lead, assignme
       return access === "full" || access === "intake";
     case "view_audit":
       return actor.role === "platform_admin" || (actor.role === "firm_admin" && access === "full");
+    case "refer_lead":
+      // The attorney holding the lead (an open offer or the accepted case), their firm admin, or a platform
+      // admin passes it to another attorney. Sending it outside the platform also needs full access
+      // (src/server/services/referrals.ts), because the referrer hands the client's details on.
+      return actor.role === "platform_admin" || (actor.role === "attorney" && (access === "full" || access === "conflict_card")) || (actor.role === "firm_admin" && access === "full");
     case "export":
       return actor.role === "platform_admin" && process.env.PORTAL_EXPORT_ENABLED === "true";
   }
@@ -137,7 +143,12 @@ export type GlobalAction =
   | "approve_pages"
   | "manage_seminars"
   | "view_partners"
-  | "manage_partners";
+  | "manage_partners"
+  | "view_pipeline"
+  | "view_referrals"
+  | "view_retainer_templates"
+  | "manage_retainer_templates"
+  | "approve_retainer_templates";
 
 const GLOBAL: Record<GlobalAction, Role[]> = {
   configure_routing: ["platform_admin"],
@@ -167,6 +178,15 @@ const GLOBAL: Record<GlobalAction, Role[]> = {
   // Referral partners, their gift log and release status. Mirrors the partners RLS policies.
   view_partners: ["platform_admin", "firm_admin"],
   manage_partners: ["platform_admin", "firm_admin"],
+  // The pipeline board: every lead the viewer may see, by stage, with retainer status. Rows follow leadAccess.
+  view_pipeline: ["platform_admin", "firm_admin"],
+  // Referral log and charts: who handled each lead and who it was passed to. Mirrors lead_referrals RLS.
+  view_referrals: ["platform_admin", "firm_admin"],
+  // A firm's own retainer templates, only ever its own firm's (canOnRetainerTemplate). Mirrors retainer_templates RLS.
+  view_retainer_templates: ["platform_admin", "firm_admin", "attorney", "paralegal"],
+  manage_retainer_templates: ["firm_admin", "attorney"],
+  // The wording a client signs is a legal judgment: only an attorney of the firm approves a version.
+  approve_retainer_templates: ["attorney"],
 };
 
 export function can(actor: Actor, action: GlobalAction): boolean {
@@ -181,6 +201,17 @@ export function canOnPartner(actor: Actor, action: "view" | "manage", partner: P
   if (!can(actor, action === "view" ? "view_partners" : "manage_partners")) return false;
   if (actor.role === "platform_admin") return true;
   return !!actor.firmId && partner.firmId === actor.firmId;
+}
+
+/**
+ * One retainer template. A firm sees and changes only its own; platform admins may look at any but never
+ * edit or approve another firm's wording. Mirrors the retainer_templates policies and guard in db/schema.sql.
+ */
+export function canOnRetainerTemplate(actor: Actor, action: "view" | "manage" | "approve", template: { firmId: string }): boolean {
+  const global = action === "view" ? "view_retainer_templates" : action === "manage" ? "manage_retainer_templates" : "approve_retainer_templates";
+  if (!can(actor, global)) return false;
+  if (action === "view" && actor.role === "platform_admin") return true;
+  return !!actor.firmId && template.firmId === actor.firmId;
 }
 
 export function assertCan(ok: boolean, message?: string): void {

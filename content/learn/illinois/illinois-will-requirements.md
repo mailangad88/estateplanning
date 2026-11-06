@@ -27,6 +27,10 @@ faqs:
     a: "Yes. Illinois does not require a lawyer. The will must be in writing, signed by you while you are at least 18 and of sound mind, and attested in your presence by at least two credible witnesses (755 ILCS 5/4-1 and 4-3). A handwritten will that nobody witnessed does not meet that rule. Our attorneys can review a will you wrote yourself."
   - q: "Is an oral will valid in Illinois?"
     a: "No. The Probate Act requires a will to be in writing and signed (755 ILCS 5/4-3), so spoken wishes, even recorded ones, do not make a valid will. Put your plan on paper and sign it with two witnesses."
+  - q: "Does divorce cancel a will in Illinois?"
+    a: "Not the whole will. A divorce cancels the gifts and appointments to the former spouse in a will signed before the divorce, and the rest of the will still stands (755 ILCS 5/4-7). It is still wise to sign a new will after a divorce so it says what you now want."
+  - q: "What is a codicil and can I use one in Illinois?"
+    a: "A codicil is a short document that changes part of an existing will. Illinois allows one, but it must be signed and witnessed with the same formalities as a will. Never cross out or add lines on a signed will, because handwritten changes can cause disputes or even revoke parts of it."
 related:
   - "illinois"
   - "illinois/who-inherits-without-a-will-in-illinois"
@@ -131,6 +135,10 @@ To change a will, sign a new one or a witnessed [codicil](/glossary/codicil). Do
 Whoever holds the will must file it with the clerk of the circuit court immediately upon the death (755 ILCS 5/6-1). The statute also makes it a crime to alter or destroy a will, or hide it for 30 days after death, and a court can order production of a will. Our [Illinois probate guide](/learn/illinois/illinois-probate-process) explains what happens next. If there is no valid will, see [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois).
 
 <!-- visual: whatif id=lost-original-will -->
+
+Not sure you need one at all? [Do I need a will in Illinois if I don't have much?](/learn/illinois/do-i-need-a-will) counts what most people own without noticing, and [what estate planning costs in Illinois](/learn/illinois/estate-planning-cost) lays out the flat fees.
+
+Holding a will someone wrote by hand or online? Run the [Illinois will validity check](/learn/illinois/is-my-will-valid).
 
 ## How we can help
 

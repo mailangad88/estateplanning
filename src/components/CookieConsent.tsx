@@ -78,9 +78,9 @@ export default function CookieConsent() {
         <button type="button" className="button" onClick={() => save(true, true)}>Accept all</button>
         <button type="button" className="button" onClick={() => save(false, false)}>Reject all</button>
         {choosing ? (
-          <button type="button" className="button" onClick={() => save(analytics, ads)}>Save choices</button>
+          <button type="button" className="button secondary" onClick={() => save(analytics, ads)}>Save choices</button>
         ) : (
-          <button type="button" className="button" onClick={() => setChoosing(true)}>Choose</button>
+          <button type="button" className="button secondary" onClick={() => setChoosing(true)}>Choose</button>
         )}
       </div>
     </div>

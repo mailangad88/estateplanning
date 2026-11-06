@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import AnswerBox from "@/components/AnswerBox";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import CtaBox from "@/components/CtaBox";
+import BookCta from "@/components/BookCta";
 import Faqs from "@/components/Faqs";
 import JsonLd from "@/components/JsonLd";
 import { PageHero } from "@/components/page-hero";
@@ -17,7 +17,7 @@ import { suggestEmbeds } from "@/lib/page-embeds";
 import { toolFor } from "@/config/tools";
 import { isSensitiveLibraryPage, magnetsForLibrary, siteLinksFor, toolsFor } from "@/lib/site-links";
 import MagnetOptIn from "@/components/MagnetOptIn";
-import { PageMedia } from "@/components/visuals/PageMedia";
+import { PageMedia, pageDiagramNames } from "@/components/visuals/PageMedia";
 import { SensitiveMarker } from "@/components/capture";
 import { MAGNET_FORMATS } from "@/lib/magnets";
 import { articleSchema, breadcrumbSchema, faqSchema, graph } from "@/lib/schema";
@@ -71,6 +71,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
         <PageMeta updated={a.updated} words={a.wordCount} reviewed={a.review === "approved"} />
       </PageHero>
       <AnswerBox answer={a.answer} takeaways={a.takeaways} />
+      {!sensitive && <BookCta layout="inline" from="learn-inline" />}
       <PageMedia path={a.url} />
       <Toc headings={a.headings} />
       <RichProse
@@ -79,6 +80,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
         title={a.title}
         sensitive={sensitive}
         explicit={a.visuals}
+        excludeDiagrams={pageDiagramNames(a.url)}
         downloads={moreOffers.map((o) => ({ slug: o.slug, title: o.title, promise: o.promise }))}
         tools={toolsFor(clusterSlug).map((t) => ({ href: t.url, title: t.title }))}
         related={siteLinksFor(clusterSlug).map((l) => ({ href: l.url, title: l.title, kind: l.kind }))}
@@ -112,7 +114,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
           </ul>
         </section>
       )}
-      <CtaBox topic={cluster.name} />
+      <BookCta from="learn-cta" />
       {terms.length > 0 && (
         <section className="terms" aria-labelledby="terms">
           <h2 id="terms">Terms used on this page</h2>

@@ -21,13 +21,15 @@ export default function AudienceHub() {
           kicker="Plans by life stage"
           title="Estate planning for where you are in life"
           lead="A plan for a newly married couple looks nothing like a plan for a retiree. Pick your stage to see what matters most, and what you can skip."
+          level={1}
         />
         <LifeCycle />
       </Band>
-      <h2>Other situations</h2>
-      <p>Each page covers what is commonly at stake, what a plan usually includes, and what we do not do.</p>
-      <CardGrid items={others.map((a) => ({ href: `/estate-planning-for/${a.slug}`, title: a.title, description: a.description }))} />
-      <Cta />
+      <Band label="Other situations" className="hub-band">
+        <SectionHead title="Other situations" lead="Each page covers what is commonly at stake, what a plan usually includes, and what we do not do." />
+        <CardGrid items={others.map((a) => ({ href: `/estate-planning-for/${a.slug}`, title: a.title, description: a.description }))} />
+        <Cta />
+      </Band>
     </>
   );
 }

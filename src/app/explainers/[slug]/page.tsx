@@ -7,6 +7,7 @@ import { PageHero } from "@/components/page-hero";
 import { JsonLd, breadcrumbLd, howToLd } from "@/lib/seo";
 import { VideoExplainer } from "@/components/visuals/video/VideoExplainer";
 import { EXPLAINER_VIDEO } from "@/components/visuals/video/explainerMap";
+import { KitFaqs } from "@/components/page-kit";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -53,7 +54,8 @@ export default async function ExplainerPage({ params }: Props) {
       <p>{e.outro}</p>
       <h2>Learn more</h2>
       <CardGrid items={e.related.map((r) => ({ href: r, title: r.replace(/^\/[^/]+\//, "").replace(/-/g, " ") }))} />
-      <Cta />
+      <KitFaqs url={`/explainers/${e.slug}`} topic={e.title} context={e.description} categories={["Getting started"]} />
+      <Cta from={`explainer-${e.slug}`} />
       <JsonLd
         data={[
           howToLd({ name: e.title, description: e.description, steps: e.steps.map((s) => ({ name: s.title, text: s.body })) }),

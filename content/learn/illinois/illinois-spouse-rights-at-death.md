@@ -23,6 +23,8 @@ faqs:
     a: "The statute says the award is the spouse's own property and is exempt from judgments, garnishment and attachment while in the hands of the estate's representative (755 ILCS 5/15-1). Other rules may apply once the money is paid out, so ask an attorney."
   - q: "Does a surviving spouse inherit anything if the will leaves everything to the children?"
     a: "Not under the will. But the spouse can renounce it and take a share set by law, and can claim the spouse's award. If there is no will at all, a different rule applies, and the spouse takes one-half with descendants or everything without."
+  - q: "What is the elective share in Illinois?"
+    a: "Illinois does not use that name, but it has the same idea. A surviving spouse can renounce the will and take one-third of the estate if the decedent left descendants, or one-half if not (755 ILCS 5/2-8). The renunciation must be filed within 7 months after the will is admitted to probate."
 related:
   - "illinois"
   - "illinois/who-inherits-without-a-will-in-illinois"
@@ -106,6 +108,8 @@ If you are the one making a will, assume your spouse has these rights. Leaving a
 ## What should a surviving spouse do first?
 
 Do not sign anything or file anything in a rush. Get a copy of the will and find out when, and whether, it has been admitted to probate. Mark the 7-month date on a calendar. Make a list of assets and who gets each one. Then ask an attorney to compare the will with the statutory share, the award and any non-probate assets. Our [Illinois probate guide](/learn/illinois/illinois-probate-process) explains how the court case runs.
+
+For the practical first weeks, such as frozen accounts, bills and the house, see [what to do when your spouse dies in Illinois](/learn/illinois/spouse-died-in-illinois-frozen-accounts-bills-and-the-house).
 
 ## How we can help
 

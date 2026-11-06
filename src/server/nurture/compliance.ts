@@ -34,7 +34,7 @@ export const BANNED_PHRASES = [
 ] as const;
 
 export const EDUCATIONAL_DISCLAIMER =
-  "This is educational information, not legal advice. Reading it does not create an attorney-client relationship.";
+  "This is educational information, not legal advice. Reading it does not create an attorney-client relationship. This is a referral website: we match you with an appropriate attorney.";
 
 export interface LintIssue {
   phrase: string;

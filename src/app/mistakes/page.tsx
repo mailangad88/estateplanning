@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getMistakes } from "@/lib/content";
 import { Cta, PageHeader } from "@/components/ui";
+import { KitFaqs, TopicDiagram } from "@/components/page-kit";
 
 export const metadata: Metadata = {
   title: "Common estate planning mistakes and how families avoid them",
@@ -14,6 +15,7 @@ export default function MistakesPage() {
   return (
     <>
       <PageHeader kicker="Mistakes to avoid" art="HeroProbate" title={`${mistakes.length} estate planning mistakes to avoid`} lead="Each one is common, and each one has a simple fix if it is caught early." />
+      <TopicDiagram topic="plan-review updating when to review" />
       {cats.map((c) => (
         <section key={c}>
           <h2>{c}</h2>
@@ -26,7 +28,8 @@ export default function MistakesPage() {
           ))}
         </section>
       ))}
-      <Cta title="Not sure if your plan has one of these?" body="Answer a few questions and an attorney can review your existing documents with you." />
+      <KitFaqs url="/mistakes" topic="mistake" context="wrong avoid common update review beneficiary" categories={["Getting started"]} title="Questions people ask about getting it right" />
+      <Cta from="mistakes" title="Not sure if your plan has one of these?" body="Answer a few questions and an attorney can review your existing documents with you." />
     </>
   );
 }

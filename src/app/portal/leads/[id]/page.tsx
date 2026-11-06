@@ -17,6 +17,24 @@ import {
 } from "@/lib/familyPlan";
 import type { OrganizerSummaryView } from "@/server/services/familyPlan";
 
+import { SendRetainer } from "./SendRetainer";
+import { SpouseInvite } from "./SpouseInvite";
+import { ReferLead } from "./ReferLead";
+import { MANUAL_OUTCOMES, OUTCOME_LABELS, REASON_LABELS, referralTargets, referralsForLead } from "@/server/services/referrals";
+import { REFERRAL_REASONS } from "@/server/types";
+import { firstNameOf } from "@/lib/people";
+import { packages, retainerPayments } from "@/config/firm";
+import { STAGES, type MatterType } from "@/server/types";
+import { PACKAGES } from "@/server/services/engagement";
+
+/** Starting prices on the Send retainer form, from the platform's placeholder package fees. The attorney sets the real fee. */
+const TIER_DEFAULT_CENTS: Record<string, number> = {
+  essentials: PACKAGES.will_package.defaultFeeCents,
+  complete: PACKAGES.trust_package.defaultFeeCents,
+  legacy: PACKAGES.couples_trust.defaultFeeCents,
+};
+const TIER_FOR_MATTER: Partial<Record<MatterType, string>> = { new_plan: "complete", update_plan: "essentials", special_needs: "legacy", business_succession: "legacy" };
+
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Case", robots: { index: false, follow: false } };
 
@@ -93,13 +111,23 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
   const actor = await currentActor();
   if (!actor) return <p>Please <Link href="/portal">sign in</Link>.</p>;
   let view;
+  const rawDb = await getDb();
+  const db = scopedDb(rawDb, actor);
   try {
-    view = await buildCaseView(scopedDb(await getDb(), actor), actor, id);
+    view = await buildCaseView(db, actor, id);
   } catch (err) {
     if (err instanceof ForbiddenError) return <p>You do not have access to this case.</p>;
     notFound();
   }
   const { header: h, sections: s } = view;
+  const referralLog = await referralsForLead(db, actor, id);
+  // The dropdown reads every attorney's eligibility, so it runs unscoped after referralTargets' own policy check.
+  const targets = await referralTargets(rawDb, actor, id).catch(() => null);
+  const lead = await rawDb.leads.get(id);
+  const canRefer = !!targets && !!lead && !lead.exit && STAGES.indexOf(h.stage) >= STAGES.indexOf("offered") && STAGES.indexOf(h.stage) < STAGES.indexOf("retainer_signed");
+  const canSendRetainer =
+    view.access === "full" && (actor.role === "attorney" || actor.role === "paralegal") && !h.nextStep.startsWith("Closed") &&
+    STAGES.indexOf(h.stage) >= STAGES.indexOf("accepted") && STAGES.indexOf(h.stage) <= STAGES.indexOf("proposal_sent");
 
   return (
     <>
@@ -118,6 +146,35 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
 
       {view.access === "conflict_card" && h.offerAssignmentId && <OfferActions assignmentId={h.offerAssignmentId} />}
       {view.access === "full" && h.assignedLawyer && actor.role !== "marketing" && <InviteClient leadId={id} />}
+
+      {/* 1b. Who is handling it, and every hand-off */}
+      {(canRefer || referralLog.length > 0) && (
+        <section className="card" id="referrals">
+          <h2>Referrals</h2>
+          <ReferLead
+            leadId={id}
+            canRefer={canRefer}
+            canReferOutside={view.access === "full"}
+            holderName={h.assignedLawyer}
+            targets={targets ?? []}
+            reasons={REFERRAL_REASONS.map((r) => ({ value: r, label: REASON_LABELS[r] }))}
+            outcomes={MANUAL_OUTCOMES.map((o) => ({ value: o, label: OUTCOME_LABELS[o] }))}
+            log={referralLog.map((r) => ({
+              id: r.id,
+              referredAt: r.referredAt,
+              fromName: r.fromName,
+              toName: r.toName,
+              outside: !r.toLawyerId,
+              reasonLabel: REASON_LABELS[r.reason],
+              note: r.note,
+              outcome: r.effective,
+              outcomeLabel: OUTCOME_LABELS[r.effective],
+              outcomeNote: r.outcomeNote,
+              canUpdate: r.canUpdate,
+            }))}
+          />
+        </section>
+      )}
 
       {/* 2. Summary */}
       {s.summary && (
@@ -222,14 +279,46 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
 
       {/* 12. Engagement */}
       {s.engagement && (
-        <section>
+        <section id="engagement">
           <h2>Engagement</h2>
-          {s.engagement.length === 0 ? <p>No engagement yet.</p> : (
+          {canSendRetainer && (
+            <SendRetainer
+              hasLive={s.engagement.some((e) => e.status !== "voided")}
+              leadId={id}
+              clientFirstName={h.name.split(" ")[0] || "the client"}
+              tiers={packages.map((p) => ({ id: p.id, name: p.name, defaultCents: TIER_DEFAULT_CENTS[p.id] }))}
+              defaultTierId={TIER_FOR_MATTER[h.matterKey] ?? "complete"}
+              spouseName={s.household?.members.find((m) => m.relationship === "spouse" || m.relationship === "partner")?.name}
+              canApprove={actor.role === "attorney"}
+              planAllowed={retainerPayments.plan.enabled}
+            />
+          )}
+          {s.engagement.length === 0 ? (!canSendRetainer && <p>No engagement yet.</p>) : (
             <ul>
               {s.engagement.map((e) => (
                 <li key={e.id}>
                   {e.packageSelection ? `${e.packageSelection.tierName} package` : label(e.packageId)} · {money(e.feeCents)} · <strong>{e.status}</strong>{" "}
                   {actor.role === "attorney" && <ApproveEngagement engagementId={e.id} status={e.status} />}
+                  <p className="notice">
+                    {e.templateName ? `From your template ${e.templateName}` : "Platform draft letter"}
+                    {e.attachment ? ` + ${e.attachment.name}` : ""}
+                    {e.provider === "builtin" && e.status !== "draft" && e.status !== "approved" && <> · <a href={`/client/sign/${e.id}`}>signing page</a></>}
+                  </p>
+                  {e.signatures.length > 0 && (
+                    <ul>
+                      {e.signatures.map((sig) => (
+                        <li key={sig.id}>Signed by {sig.expectedName} (typed “{sig.typedName}”) {when(sig.signedAt)} · document <code>{sig.documentSha256.slice(0, 12)}…</code></li>
+                      ))}
+                    </ul>
+                  )}
+                  {e.spouseName && e.provider === "builtin" && ["sent", "viewed"].includes(e.status) && !e.signatures.some((x) => x.signerRole === "spouse") && (
+                    canSendRetainer
+                      ? <SpouseInvite engagementId={e.id} spouseFirstName={firstNameOf(e.spouseName)} emailHint={e.spouseEmailHint} />
+                      : <p className="notice">Waiting for {firstNameOf(e.spouseName)}</p>
+                  )}
+                  {e.spouseName && ["sent", "viewed"].includes(e.status) && !e.signatures.some((x) => x.signerRole === "client") && e.signatures.length > 0 && (
+                    <p className="notice">Waiting for {h.name.split(" ")[0]}</p>
+                  )}
                   {e.packageSelection && e.packageSelection.addOns.length > 0 && (
                     <p>Add-ons: {e.packageSelection.addOns.map((a) => `${a.name} (${money(a.priceCents)})`).join(", ")}</p>
                   )}

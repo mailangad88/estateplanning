@@ -34,7 +34,7 @@ export interface SenderDeps {
   templates: TemplateSource;
   email: EmailTransport;
   sms: SmsTransport;
-  /** Public site origin for links, e.g. https://www.example.com */
+  /** Public site origin for links, e.g. https://familyfutureplanning.com */
   baseUrl?: string;
   /** "crm": email and SMS steps are left to the CRM (left unrecorded); call tasks still run. Default "internal". */
   owner?: NurtureOwner;

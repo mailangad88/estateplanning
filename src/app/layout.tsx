@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SourceTracker from "@/components/SourceTracker";
-import { firm } from "@/config/firm";
+import { firm, servedStates } from "@/config/firm";
 import { ExitIntent, StickyContactBar } from "@/components/capture";
 import { Disclosures } from "@/components/Disclosures";
 import MegaFooter from "@/components/MegaFooter";
@@ -11,12 +11,20 @@ import "@fontsource-variable/inter";
 import { TrackedPhoneLink } from "@/components/TrackedPhone";
 import Script from "next/script";
 import Analytics from "@/components/Analytics";
+import SiteChat from "@/components/SiteChat";
+import WebVitals from "@/components/WebVitals";
+import { cloudflareBeaconToken, searchVerification } from "@/lib/search-verification";
 import CookieConsent, { CookieSettingsButton } from "@/components/CookieConsent";
 import { JsonLd, siteGraphLd, SITE_URL } from "@/lib/seo";
 import { IS_STAGING } from "@/lib/env";
 import "./globals.css";
 import "@/components/visuals/visuals.css";
 import "./design.css";
+import "./polish/home.css";
+import "./polish/articles.css";
+import "./polish/tools.css";
+import "./polish/pages.css";
+import "./polish/page-kit.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -24,7 +32,10 @@ export const metadata: Metadata = {
   description: "Wills, trusts and powers of attorney, explained plainly by an estate planning attorney.",
   alternates: { types: { "application/rss+xml": "/feed.xml" } },
   ...(IS_STAGING ? { robots: { index: false, follow: false } } : {}),
+  verification: searchVerification(process.env, IS_STAGING),
 };
+
+const CF_BEACON = cloudflareBeaconToken(process.env, IS_STAGING);
 
 // Google Consent Mode v2 defaults. Runs before GTM loads (see Analytics.tsx); applies a saved choice from
 // localStorage and honours Global Privacy Control for the ad_* signals.
@@ -47,7 +58,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="main" className="container">{children}</main>
         <StickyContactBar phone={firm.phone} textNumber={firm.textNumber} />
         <ExitIntent />
+        <SiteChat servedStates={servedStates()} firmPhone={firm.phone} />
         <Analytics />
+        <WebVitals />
+        {CF_BEACON && (
+          <Script src="https://static.cloudflareinsights.com/beacon.min.js" strategy="afterInteractive" data-cf-beacon={JSON.stringify({ token: CF_BEACON })} />
+        )}
         <CookieConsent />
         <JsonLd data={siteGraphLd()} />
         <footer className="site">
@@ -56,10 +72,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <p className="kicker">Ready when you are</p>
                 <h2>Talk it through with an attorney, at a flat fee.</h2>
-                <p>Answer a few questions, or just call. Nothing is signed until you have seen the fee.</p>
+                <p>Pick a time, answer a few questions, or just call. Nothing is signed until you have seen the fee.</p>
               </div>
               <p className="cta-row">
-                <Link className="button" href="/plan-finder">Start the plan finder</Link>
+                <Link className="button" href="/book?from=footer">Book a consult</Link>
+                <Link className="button ghost-light" href="/plan-finder">Start the plan finder</Link>
                 <TrackedPhoneLink fallback={firm.phone} className="button ghost-light" />
               </p>
             </div>
@@ -71,6 +88,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <span>{firm.brandName}</span>
               </Link>
               <p>Wills, living trusts, powers of attorney and healthcare directives, explained plainly and prepared by an estate planning attorney.</p>
+              <p>Email: <a href={`mailto:${firm.email}`}>{firm.email}</a></p>
             </div>
             <MegaFooter />
           </div>

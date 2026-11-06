@@ -14,6 +14,8 @@ import { extrasFor } from "@/config/magnet-extras";
 import { TOOLS } from "@/config/tools";
 import { getQuiz } from "@/lib/quizzes";
 import { getDecision, decisionPath } from "@/config/decisions";
+import CtaBox from "@/components/CtaBox";
+import { KitAnswer, KitFaqs } from "@/components/page-kit";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -79,6 +81,7 @@ export default async function MagnetLanding({ params }: Props) {
           <Link href={`/free/${a.slug}`} hrefLang={a.lang} lang={a.lang}>{a.lang === "es" ? "También disponible en español" : "Also available in English"}</Link>
         </p>
       ))}
+      {!es && m.description && m.description !== m.promise && <KitAnswer answer={m.description} label="In short" />}
       <div className="magnet-landing__grid">
         <div>
           <div className="magnet-cover" aria-hidden="true"><ResourceCover {...cover} bare /></div>
@@ -116,6 +119,8 @@ export default async function MagnetLanding({ params }: Props) {
           <CardGrid items={tryIt} />
         </section>
       )}
+      {!es && <KitFaqs url={`/free/${m.slug}`} topic={m.title} context={`${m.answers.join(" ")} ${m.category}`} categories={["Getting started"]} />}
+      {!es && <CtaBox from="free-resource" />}
       <ReviewNote reviewed={m.reviewed} updated={m.updated} />
       {related.length > 0 && (
         <section>

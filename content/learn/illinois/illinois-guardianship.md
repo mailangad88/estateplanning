@@ -26,6 +26,8 @@ faqs:
     a: "It ends automatically when the child turns 18. A parent can ask the court to end it sooner by showing a material change in circumstances (755 ILCS 5/11-14.1)."
   - q: "Is guardianship the same as conservatorship in Illinois?"
     a: "Illinois law uses the word guardian for both roles. A guardian of the person makes personal and care decisions, and a guardian of the estate manages money and property, which is the job some other states call a conservator. The court can appoint one person to do both."
+  - q: "Can I name a guardian for my children in an Illinois will?"
+    a: "Yes. A parent can designate a guardian for a minor child in writing, including in a will, signed with at least two credible witnesses (755 ILCS 5/11-5). The court still decides whether the appointment is in the child's best interest, so name a backup choice as well."
 related:
   - "illinois"
   - "illinois/illinois-power-of-attorney-for-property"
@@ -100,6 +102,8 @@ The court may appoint a guardian of the person, the estate, or both when it serv
 Choosing the right person matters. Our guides on [how to choose a guardian](/learn/guardianship/how-to-choose-a-guardian) and on [temporary and standby guardians](/learn/guardianship/temporary-and-standby-guardians) can help. Money left to a child is a separate issue, covered in the [guardian versus trustee](/learn/guardianship/guardian-vs-trustee) article.
 
 <!-- visual: picker id=guardian -->
+
+Parents choosing who would raise their children can start with [naming a guardian for your children in Illinois](/learn/illinois/naming-a-guardian-for-your-children). If a parent already has dementia and never signed a power of attorney, read [dementia with no power of attorney in Illinois](/learn/illinois/dementia-no-power-of-attorney).
 
 ## How we can help
 

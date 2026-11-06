@@ -28,13 +28,13 @@ faqs:
   - q: "My partner and I have an LLC operating agreement. Is that enough?"
     a: "Only if it covers death, disability and exit with a price and a funding method. Many default agreements do not. Bring yours to the first call."
   - q: "Can I put my business in a living trust?"
-    a: "Often yes, by assigning your membership interest or shares to the trust, subject to the operating agreement and any transfer limits. It can speed things up and avoid probate for that asset. [ATTORNEY: confirm approach]"
+    a: "Often yes, by assigning your membership interest or shares to the trust, subject to the operating agreement and any transfer limits. It can speed things up and avoid probate for that asset. Read the operating agreement first, because some require the other owners to consent."
   - q: "What happens to the business if I become disabled?"
     a: "Without an agent, a bank may freeze your signing authority and a court may be needed. A durable power of attorney with business powers, plus a named backup signer, gives continuity."
   - q: "How much does this cost?"
-    a: "Many owners begin with a flat-fee plan for personal documents plus a business review: [Flat fee]. Buy-sell agreements are separate projects and are quoted after we see your documents."
-  - q: "Do you work with my accountant and insurance agent?"
-    a: "Yes, with your permission. We do not pay or receive referral fees from either."
+    a: "Fees are set by the attorney you are matched with. Many owners begin with a flat-fee plan for personal documents plus a business review. See [pricing](/pricing). Buy-sell agreements are usually separate projects, quoted after the attorney sees your documents."
+  - q: "Will the attorney work with my accountant and insurance agent?"
+    a: "Usually yes, with your permission. Ask on your first call how the attorney coordinates with your other advisers."
 reviewed: false
 updated: "2026-10-06"
 ---
@@ -45,25 +45,25 @@ updated: "2026-10-06"
 - **You are in the hospital for six weeks.** Nobody else can sign on the bank account, renew a license, file payroll taxes or sign a lease. A durable power of attorney with authority over business matters, plus bank signature cards, addresses it. See [powers of attorney](/guides/powers-of-attorney).
 - **You die and the business is the main asset.** Without a plan, the executor may be left with a business that loses customers and key employees while probate runs.
 - **Heirs who do not want the business, and heirs who do.** Equal shares do not always mean fair. A plan can give the business to the child who works in it and equalize with other assets or insurance.
-- **Personal liability on business debt.** SBA loans, equipment leases and commercial leases often make you personally liable in ways that outlive your involvement. [ATTORNEY: confirm that the firm reviews these]
-- **Estate tax is usually not the issue.** The 2026 federal exclusion is $15 million per person <!-- verify -->. Some states tax lower estates. [State check]. See [estate and inheritance taxes](/guides/estate-and-inheritance-taxes) and the [estate tax estimator](/tools/estate-tax-estimator).
+- **Personal liability on business debt.** SBA loans, equipment leases and commercial leases often make you personally liable in ways that outlive your involvement. Bring any loan or lease you signed personally to the first meeting, so the plan accounts for it.
+- **Estate tax is usually not the issue.** The 2026 federal exclusion is $15 million per person <!-- verify -->. Illinois taxes estates over $4 million, which a business can reach. New Jersey has no estate tax but taxes some inheritances, such as gifts to siblings. See [estate and inheritance taxes](/guides/estate-and-inheritance-taxes) and the [estate tax estimator](/tools/estate-tax-estimator).
 
 ## What a plan usually includes
 
 | Piece | What it does |
 |---|---|
 | Entity review | Checks that the company is in good standing and that the operating agreement or bylaws say what happens at death, disability, divorce and exit. |
-| Buy-sell agreement | Lets the surviving owner buy the share at a set price or formula, with funding. Drafting involves all owners. [ATTORNEY: conflict-of-interest handling and joint representation] |
+| Buy-sell agreement | Lets the surviving owner buy the share at a set price or formula, with funding. Drafting involves all owners, and each owner may want a separate lawyer. |
 | Power of attorney with business authority | Names who may act for you with banks, vendors and tax authorities. |
-| Will or living trust | Holds your ownership interest so it passes without delay. [State check: whether a trust avoids probate for the interest] |
+| Will or living trust | Holds your ownership interest so it can pass without probate, if the interest is assigned to the trust. |
 | Business continuity letter and key accounts sheet | Where the logins, licenses, insurance, key customers and advisors are. Not secrets: where to find them. |
-| Funding and key-person insurance review | We do not sell insurance. We tell an insurance professional what the agreement needs. |
+| Funding and key-person insurance review | What the agreement needs, so an insurance professional can price it. |
 | Family plan | Who gets the business, who gets other assets, and who manages the transition. |
 
-**What we do not do.** We do not value your business, which is an appraiser's job. We do not give tax advice that belongs to your CPA. We do not represent both sides of a dispute between partners.
+**Limits.** Valuing your business is an appraiser's job, and tax advice belongs to your CPA. One attorney cannot represent both sides of a dispute between partners. Family Future Planning does not sell insurance.
 
 **An honest limit.** If the business is a one-person service with little resale value, a will, a power of attorney and a plan for your clients may be enough.
 
 ## Next step
 
-Read the [guide to business succession planning](/learn/business-owners/business-succession-planning), or [book a consultation](/plan-finder) and bring your operating agreement.
+Read the [guide to business succession planning](/learn/business-owners/business-succession-planning), or [book a call](/book?from=audience-small-business-owners) and bring your operating agreement.

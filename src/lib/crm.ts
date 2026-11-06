@@ -1,4 +1,5 @@
 import { createHmac } from "node:crypto";
+import { leadChannel } from "@/lib/channel";
 import { IS_STAGING } from "@/lib/env";
 import type { ConsentRecord } from "@/lib/consent";
 import type { LeadSubmission } from "@/lib/lead";
@@ -128,6 +129,8 @@ export function flattenLead(lead: LeadRecord): Record<string, FlatValue> {
     content: s.utmContent ?? "",
     landing_page: s.landingPage ?? "",
     referrer: s.referrer ?? "",
+    channel: leadChannel(s).channel,
+    channel_engine: leadChannel(s).engine,
     gclid: s.gclid ?? "",
     gbraid: s.gbraid ?? "",
     wbraid: s.wbraid ?? "",

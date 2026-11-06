@@ -23,6 +23,8 @@ faqs:
     a: "A child who was in the womb at death inherits as if born during the parent's life (755 ILCS 5/2-3). A child conceived later from genetic material has to meet strict rules, including written consent and notice to the estate within set deadlines."
   - q: "What if a person dies in Illinois with no relatives at all?"
     a: "The statute sends real estate to the county where it sits. It sends most personal property to the county of the decedent's residence, and other property to the state, which delivers it to the State Treasurer (755 ILCS 5/2-1(h)). This only happens when no spouse and no known kin can be found."
+  - q: "Do beneficiary designations override a will in Illinois?"
+    a: "For the account they cover, yes in practice. Life insurance, retirement accounts and payable on death accounts pass to the named beneficiary outside probate, so neither a will nor the intestacy rules control them. Check your designations whenever you update your will, so the two say the same thing."
 related:
   - "illinois"
   - "illinois/illinois-will-requirements"
@@ -115,6 +117,10 @@ If there is no spouse and no known kin, the real estate escheats to the county w
 A valid will lets you choose your own heirs, name an executor and, for parents, nominate a guardian for children. See [Illinois will requirements](/learn/illinois/illinois-will-requirements) for how to sign one so that it holds up. A will can also leave gifts to people the statute leaves out. If you want to keep family from receiving a share, see [disinheriting or unequal shares](/learn/wills/disinheriting-or-unequal-shares).
 
 <!-- visual: tool slug=who-inherits -->
+
+If a parent died without a will and the house is still in their name, [what to do when the house is still in a parent's name](/learn/illinois/parent-died-house-in-their-name) walks through the options for selling or keeping it.
+
+Related: [who inherits if you have no spouse and no children](/learn/illinois/no-spouse-no-children), [unmarried partners and inheritance](/learn/illinois/unmarried-partners) and [when siblings disagree over an inherited house](/learn/illinois/siblings-disagree-inherited-house).
 
 ## How we can help
 

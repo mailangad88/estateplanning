@@ -82,6 +82,8 @@ export interface Lawyer {
   acceptSlaMinutes: number;
   office?: { lat: number; lng: number };
   onCall?: boolean;
+  /** The attorney who takes every incoming lead first and refers on the ones they don't handle. At most one. */
+  primaryIntake?: boolean;
   active: boolean;
   stats: { avgAcceptMinutes: number; showRate: number; reviewScore: number };
 }
@@ -110,7 +112,9 @@ export type ExitReason =
   | "unresponsive"
   | "chose_another_option"
   | "conflict"
-  | "declined_by_all";
+  | "declined_by_all"
+  /** Handed to an attorney outside the platform; tracked in lead_referrals */
+  | "referred_out";
 
 export type PartyRelationship = "spouse" | "partner" | "child" | "beneficiary" | "heir" | "deceased" | "adverse" | "other";
 
@@ -314,6 +318,114 @@ export interface Engagement {
   packageSelection?: PackageSelection;
   /** How the fee is paid and the status of each installment */
   paymentPlan?: PaymentPlan;
+  /** The firm's retainer template version the letter was filled from. Absent: the platform's fallback letter. */
+  templateId?: string;
+  /** Joint representation: the second client, who signs too */
+  spouseName?: string;
+  /** The second client's own person record (and client login). They sign only the spouse slot, from their own session. */
+  spousePersonId?: string;
+  /** The firm's own standard agreement (PDF) attached to the letter, shown in full and signed with it */
+  attachment?: EngagementAttachment;
+  /** sha256 binding the letter text and the attachment, fixed when the attorney approves. Every signature records it. */
+  documentSha256?: string;
+}
+
+export interface EngagementAttachment {
+  name: string;
+  /** Key in the blob store (src/server/storage/blobs.ts) */
+  storageKey: string;
+  sha256: string;
+  sizeBytes: number;
+}
+
+// ---------------------------------------------------------------------------
+// Retainer templates (src/server/services/retainerTemplates.ts) and built-in e-sign (src/server/services/signing.ts)
+// ---------------------------------------------------------------------------
+
+/**
+ * - draft: saved, not yet usable
+ * - approved: an attorney of the firm approved this exact wording; usable on new engagements
+ * - superseded: a newer version of the same template was approved
+ * - retired: taken out of use by the firm
+ */
+export type RetainerTemplateStatus = "draft" | "approved" | "superseded" | "retired";
+
+/**
+ * One version of a firm's retainer (engagement letter) template. Each edit is a new row with the next version
+ * number; the wording of a row never changes after it is saved. The wording is the receiving attorney's.
+ * `id` is `${templateKey}@${version}`.
+ */
+export interface RetainerTemplate {
+  id: string;
+  firmId: string;
+  /** Stable across versions */
+  templateKey: string;
+  version: number;
+  name: string;
+  matterTypes: MatterType[];
+  /** Letter text with {{merge_field}} placeholders (src/lib/retainerTemplates.ts) */
+  body: string;
+  /** sha256 of `body` */
+  bodySha256: string;
+  /** The firm's own standard agreement, attached in full to every letter sent from this version */
+  pdf?: EngagementAttachment;
+  status: RetainerTemplateStatus;
+  /** Matter types this version is the firm's default for (one default per matter type per firm) */
+  defaultFor: MatterType[];
+  createdBy: string;
+  createdAt: string;
+  /** The attorney of the firm who approved this exact version */
+  approvedBy?: string;
+  approvedByName?: string;
+  approvedAt?: string;
+}
+
+/**
+ * One electronic signature on an engagement, made with the built-in e-sign. Insert-only: the database refuses
+ * updates and deletes. Holds the typed name, when, a coarse IP prefix and device summary, the hashes of exactly
+ * what was signed and the version of the electronic-records consent the signer agreed to.
+ */
+export interface SignatureRecord {
+  id: string;
+  engagementId: string;
+  leadId: string;
+  firmId: string;
+  signerRole: "client" | "spouse";
+  /** The name printed on the agreement for this signer */
+  expectedName: string;
+  /** What the signer typed */
+  typedName: string;
+  /** The signed-in client user who signed */
+  signedByUserId: string;
+  /** The person whose slot this is: the lead's client, or the engagement's spousePersonId */
+  signerPersonId: string;
+  signedAt: string;
+  /** e.g. "203.0.113.0/24" */
+  ipPrefix?: string;
+  /** e.g. "Safari on iPhone" */
+  userAgent?: string;
+  letterSha256: string;
+  attachmentSha256?: string;
+  documentSha256: string;
+  consentVersion: string;
+  consentAt: string;
+  /** The signer ticked "I intend to sign" */
+  intent: boolean;
+}
+
+/** Bytes kept by the platform: a firm's uploaded agreement PDF or a generated signed copy. Read only by the server after a policy check. */
+export interface StoredBlob {
+  /** The storage key */
+  id: string;
+  sha256: string;
+  contentType: string;
+  sizeBytes: number;
+  /** base64 */
+  data: string;
+  firmId?: string;
+  leadId?: string;
+  createdBy: string;
+  createdAt: string;
 }
 
 export type PaymentStatus = "pending" | "paid" | "failed";
@@ -448,6 +560,42 @@ export interface PartnerGift {
   flags: string[];
   loggedBy: string;
   reviewNote?: string;
+}
+
+export type ReferralReason = "conflict" | "capacity" | "practice_area" | "location" | "language" | "client_request" | "other";
+export const REFERRAL_REASONS: ReferralReason[] = ["conflict", "capacity", "practice_area", "location", "language", "client_request", "other"];
+/** pending: sent, no answer yet. accepted: the attorney took it. booked: consult booked. retained: retainer signed. */
+export type ReferralOutcome = "pending" | "accepted" | "booked" | "retained" | "declined" | "no_response";
+export const REFERRAL_OUTCOMES: ReferralOutcome[] = ["pending", "accepted", "booked", "retained", "declined", "no_response"];
+
+/**
+ * A lead the handling attorney passed to someone else: another attorney on the platform (toLawyerId)
+ * or one outside it (outsideName). No fee or payment fields on purpose: nothing of value may be tied
+ * to a referral until the Illinois Rule 5.4 / 7.2 review is done.
+ */
+export interface LeadReferral {
+  id: string;
+  leadId: string;
+  fromLawyerId: string;
+  fromFirmId: string;
+  toLawyerId?: string;
+  toFirmId?: string;
+  /** The new offer to the platform attorney */
+  assignmentId?: string;
+  outsideName?: string;
+  outsideFirm?: string;
+  outsideContact?: string;
+  reason: ReferralReason;
+  note?: string;
+  /** The client agreed to their details going to this attorney (Rule 1.6). Always true. */
+  clientAgreed: true;
+  referredAt: string;
+  referredBy: string;
+  /** Entered by hand for outside referrals; for platform referrals it is read off the offer and the lead. */
+  outcome: ReferralOutcome;
+  outcomeAt?: string;
+  outcomeBy?: string;
+  outcomeNote?: string;
 }
 
 export interface PartnerReferral {

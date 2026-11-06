@@ -3,6 +3,9 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { PageHero } from "@/components/page-hero";
+import CtaBox from "@/components/CtaBox";
+import { SERVED_AND } from "@/config/firm";
+import { KitFaqs } from "@/components/page-kit";
 import { getStateGuides } from "@/lib/library";
 import { breadcrumbSchema, graph, itemListSchema } from "@/lib/schema";
 
@@ -79,6 +82,8 @@ export default function StatesIndex() {
         <Link href="/learn/estate-tax/state-estate-and-inheritance-taxes">state estate and inheritance taxes</Link> for
         how they work.
       </p>
+      <KitFaqs url="/estate-planning" topic="state law" context="move another state property out of state valid will" categories={["Getting started"]} title="Questions about state rules" />
+      <CtaBox topic={`estate planning in ${SERVED_AND}`} from="states-hub" />
     </div>
   );
 }

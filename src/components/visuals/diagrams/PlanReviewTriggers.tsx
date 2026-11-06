@@ -44,10 +44,10 @@ export function PlanReviewTriggers({ caption, bare, step }: DiagramProps) {
         <Text x={CX} y={CY + 32} size={20} weight={700} anchor="middle">
           years
         </Text>
-        <Text x={CX} y={CY + 56} size={14} color="muted" anchor="middle">
+        <Text x={CX} y={CY + 56} size={15} color="muted" anchor="middle">
           regular review
         </Text>
-        <Text x={CX} y={CY + R + 52} size={14} color="muted" anchor="middle">
+        <Text x={CX} y={CY + R + 52} size={15} color="muted" anchor="middle">
           Many people review on this cycle
         </Text>
       </S>
@@ -62,7 +62,7 @@ export function PlanReviewTriggers({ caption, bare, step }: DiagramProps) {
             <g key={t.text}>
               <Card x={x} y={y} w={208} h={64} fill="surface" border="line" />
               <Icon name={t.icon} x={x + 10} y={y + 15} size={32} color="clay" tint="clayTint" />
-              <Wrap x={x + 52} y={y + 26} w={148} size={14} weight={600} text={t.text} lh={17} />
+              <Wrap x={x + 52} y={y + 26} w={150} size={14} weight={600} text={t.text} lh={18} />
             </g>
           );
         })}

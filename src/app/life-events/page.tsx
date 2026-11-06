@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getLifeEvents } from "@/lib/content";
 import { CardGrid, Cta, PageHeader } from "@/components/ui";
+import { Band } from "@/components/landing";
 
 export const metadata: Metadata = {
   title: "Estate planning for life's big moments",
@@ -12,8 +13,10 @@ export default function LifeEventsIndex() {
   return (
     <>
       <PageHeader kicker="Life events" art="HeroFamilyHome" title="Planning for life's big moments" lead="Most people start or update an estate plan because something in life changed. Find yours." />
-      <CardGrid items={getLifeEvents().map((l) => ({ href: `/life-events/${l.slug}`, title: l.title, description: l.description, tag: l.event }))} />
-      <Cta />
+      <Band label="Life events" className="hub-band">
+        <CardGrid items={getLifeEvents().map((l) => ({ href: `/life-events/${l.slug}`, title: l.title, description: l.description, tag: l.event }))} />
+        <Cta />
+      </Band>
     </>
   );
 }

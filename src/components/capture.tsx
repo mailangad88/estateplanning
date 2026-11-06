@@ -1,10 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import { smsConsentText } from "@/lib/consent";
 import { filterEvent } from "@/lib/analytics";
 import { useTrackingNumber } from "@/components/TrackedPhone";
+import FormDisclaimer from "@/components/FormDisclaimer";
+import { useVariant } from "@/lib/experiments";
+import { bookHref, fromForPath, topicForPath } from "@/lib/book";
 
 type Kind = "magnet" | "course" | "newsletter" | "callback" | "question" | "report";
 
@@ -141,6 +145,7 @@ export function EmailCapture({
       {error && <p className="error" role="alert">{error}</p>}
       <button className="button" type="submit" disabled={busy}>{busy ? "Sending…" : cta}</button>
       <p className="notice">No spam. Unsubscribe any time. We never sell your information. <Link href="/legal/privacy">Privacy</Link></p>
+      <FormDisclaimer />
     </form>
   );
 }
@@ -175,7 +180,19 @@ export function CallbackForm({ interest = "callback" }: { interest?: string }) {
     }
   }
 
-  if (done) return <p className="result" role="status">Thanks. Our intake team will call you at the time you picked.</p>;
+  if (done) {
+    const onBook = typeof window !== "undefined" && window.location.pathname.startsWith("/book");
+    return (
+      <p className="result" role="status">
+        Thanks. Our intake team will call you at the time you picked.
+        {!onBook && (
+          <>
+            {" "}Rather lock in a time now? <Link href={bookHref("callback-thanks", topicForPath(window.location.pathname))}>Pick one on the calendar</Link>.
+          </>
+        )}
+      </p>
+    );
+  }
   return (
     <form className="tool" onSubmit={submit}>
       <div className="row">
@@ -199,6 +216,7 @@ export function CallbackForm({ interest = "callback" }: { interest?: string }) {
       <div className="hp" aria-hidden="true"><input name="website" tabIndex={-1} autoComplete="off" /></div>
       {error && <p className="error" role="alert">{error}</p>}
       <button className="button" type="submit" disabled={busy}>{busy ? "Sending…" : "Request a call back"}</button>
+      <FormDisclaimer />
     </form>
   );
 }
@@ -211,9 +229,17 @@ export function StickyContactBar({ phone: fallback, textNumber }: { phone: strin
     <div className="sticky-bar no-print">
       <a href={`tel:${digits}`} onClick={() => track("click_to_call")}>Call</a>
       {textNumber && <a href={`sms:${textNumber.replace(/\D/g, "")}`} onClick={() => track("click_to_text")}>Text</a>}
-      <Link href="/book?from=sticky" onClick={() => track("cta_book", { from: "sticky" })}>Book a consult</Link>
+      <StickyBook />
     </div>
   );
+}
+
+/** Sticky-bar booking link: carries the page as `from` and the page's topic, so phone bookings trace to a page. */
+function StickyBook() {
+  const p = usePathname() ?? "/";
+  const href = bookHref(`sticky-${fromForPath(p)}`.slice(0, 60), topicForPath(p));
+  if (p.startsWith("/book")) return null;
+  return <Link href={href} onClick={() => track("cta_book", { from: "sticky" })}>Book a consult</Link>;
 }
 
 /**
@@ -222,6 +248,10 @@ export function StickyContactBar({ phone: fallback, textNumber }: { phone: strin
  */
 export function ExitIntent() {
   const [open, setOpen] = useState(false);
+  const offer = useVariant("exit_offer");
+  const [kit, setKit] = useState(false);
+  const offerRef = useRef<string>(offer);
+  offerRef.current = offer;
   useEffect(() => {
     let shown = false;
     try {
@@ -231,9 +261,9 @@ export function ExitIntent() {
     const armAt = Date.now() + 15000;
     const onLeave = (e: MouseEvent) => {
       if (document.documentElement.dataset.sensitive === "1") return;
-      if (e.clientY > 0 || Date.now() < armAt || window.location.pathname.startsWith("/plan-finder")) return;
+      if (e.clientY > 0 || Date.now() < armAt || /^\/(plan-finder|book|intake|callback|portal|admin|client)/.test(window.location.pathname)) return;
       setOpen(true);
-      track("exit_intent_shown");
+      track("exit_intent_shown", { offer: offerRef.current });
       try {
         sessionStorage.setItem("efp-exit", "1");
       } catch {}
@@ -248,9 +278,36 @@ export function ExitIntent() {
     <div className="modal-backdrop no-print" role="dialog" aria-modal="true" aria-labelledby="exit-title" onClick={() => setOpen(false)}>
       <div className="modal" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" aria-label="Close" onClick={() => setOpen(false)}>×</button>
-        <h2 id="exit-title" style={{ marginTop: 0 }}>Before you go: the free estate planning starter kit</h2>
-        <p>Our 12 printable checklists in one email: what to gather, who to name, and what to do after a death.</p>
-        <EmailCapture kind="magnet" interest="starter-kit" title="Email me the starter kit" cta="Send the kit" />
+        {offer === "book_call" ? (
+          <>
+            <h2 id="exit-title" style={{ marginTop: 0 }}>Before you go: want to just ask an attorney?</h2>
+            <p>
+              Pick a time that suits you and we match you with an estate planning attorney in our network. No questionnaire first,
+              and you see the flat fee before anything is signed.
+            </p>
+            <p className="cta-row">
+              <Link
+                className="button"
+                href={bookHref("exit-intent", topicForPath(window.location.pathname))}
+                onClick={() => setOpen(false)}
+              >
+                See open times
+              </Link>
+              {!kit && (
+                <button type="button" className="button secondary" onClick={() => setKit(true)}>
+                  Or email me the free starter kit
+                </button>
+              )}
+            </p>
+            {kit && <EmailCapture kind="magnet" interest="starter-kit" title="Email me the starter kit" cta="Send the kit" />}
+          </>
+        ) : (
+          <>
+            <h2 id="exit-title" style={{ marginTop: 0 }}>Before you go: the free estate planning starter kit</h2>
+            <p>Our 12 printable checklists in one email: what to gather, who to name, and what to do after a death.</p>
+            <EmailCapture kind="magnet" interest="starter-kit" title="Email me the starter kit" cta="Send the kit" />
+          </>
+        )}
       </div>
     </div>
   );

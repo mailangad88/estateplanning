@@ -173,6 +173,52 @@ You can do the first two this month and the rest over time. A good first step is
 - [Leaving money to minor children](/learn/guardianship/leaving-money-to-minors): trusts, UTMA accounts, 529 plans and life insurance compared.
 - [Temporary and standby guardians](/learn/guardianship/temporary-and-standby-guardians): documents that cover emergencies while you are alive.
 
+## More questions people ask
+
+If you suspect a guardian is misusing a child's funds, [what happens if a guardian mismanages a child's money](/learn/guardianship/what-happens-if-a-guardian-mismanages-a-childs-money) covers accountings, court remedies and prevention.
+
+For the actual clause and the order of backups, [how to name a guardian in your will](/learn/guardianship/how-to-name-a-guardian-in-your-will-with-backups-and-wording) gives sample wording and Illinois and New Jersey rules.
+
+If an adult guardianship is proposed, in place or being misused, [can a guardianship be contested or ended](/learn/guardianship/can-a-guardianship-be-contested-or-ended) covers the steps in both states.
+
+If a child is about to inherit real estate or an IRA, [what happens when a minor inherits a house or retirement account](/learn/guardianship/what-happens-when-a-minor-inherits-a-house-or-retirement-account) explains who holds it and how to avoid court.
+
+To see which documents actually appoint a guardian, [can you name a guardian without a will](/learn/guardianship/can-you-name-a-guardian-without-a-will) compares wills, trusts, letters and handwritten notes.
+
+For a trip, surgery or deployment, [who takes your kids in an emergency](/learn/guardianship/who-takes-your-kids-in-an-emergency-while-you-travel-or-deploy) covers school pickup lists, medical consent and caregiver letters.
+
+If no relative can serve, [professional and public guardians](/learn/guardianship/professional-and-public-guardians-when-no-family-can-serve) explains who the court turns to, who pays and how to avoid it.
+
+If the words are confusing, [guardianship vs custody vs adoption](/learn/guardianship/guardianship-vs-custody-vs-adoption) sets out who holds each one, how long it lasts and what it does to inheritance.
+
+For relatives who must go to court, [how to petition for guardianship of a minor child](/learn/guardianship/how-to-petition-for-guardianship-of-a-minor-child) walks through the filing steps and what a judge weighs.
+
+If you wonder how much control the person you name will really have, [what a guardian can decide for your children](/learn/guardianship/what-a-guardian-can-decide-for-your-children) covers school, religion, medical care, moving and money.
+
+For parents of several young children, [how a family pool trust works](/learn/guardianship/family-pool-trust-for-young-children) explains one shared fund, when it splits, and when separate trusts fit better.
+
+If your first choice is a stepparent, a partner you never married or a single friend, [who can be named guardian](/learn/guardianship/who-can-be-guardian-stepparent-partner-single-or-split-siblings) covers what the law allows and when siblings should be split.
+
+If your child's other parent is a former partner, [whether the surviving parent automatically gets custody](/learn/guardianship/does-the-surviving-parent-get-custody-if-you-die) explains what a will can and cannot do.
+
+For an aging parent rather than a child, [guardianship of an adult](/learn/guardianship/guardianship-of-an-adult-parent-who-can-petition-and-what-the-court-needs) explains who can file, what the court needs and how to avoid it.
+
+[UTMA account vs. trust for a minor child](/learn/guardianship/utma-account-vs-trust-for-a-minor-child) compares cost, control and the age a child takes over.
+
+If you want a children's trust written into your will, [testamentary trust for minor children](/learn/guardianship/testamentary-trust-for-minor-children) explains how it works and its limits.
+
+[Guardian of the person vs. conservator of the estate](/learn/guardianship/guardian-of-the-person-vs-conservator-of-the-estate) separates the child's care from the child's money.
+
+If you wonder whether a judge will follow your choice, [does a guardian named in a will hold up in court](/learn/guardianship/does-a-guardian-named-in-a-will-hold-up-in-court) explains when nominations succeed and when they fail.
+
+If your parents are your first thought, [can grandparents be named guardian](/learn/guardianship/can-grandparents-be-named-guardian) covers age, health, money and backups.
+
+For the steps that make a guardianship official, by will or by court petition, see [how to make guardianship legal](/learn/guardianship/how-to-make-guardianship-legal).
+
+If you worry that a guardian will decline or fail in the job, [can a guardian be removed or refuse to serve](/learn/guardianship/can-a-guardian-be-removed-or-refuse-to-serve) explains what a court does.
+
+To give your guardian practical guidance beyond the will, read [letter of intent for your children's guardian](/learn/guardianship/letter-of-intent-for-your-childrens-guardian).
+
 ## How we can help
 
 Our attorneys can help you choose and name a guardian, set up a trust for your children, and make sure beneficiary forms and emergency documents match. If you are not sure where to begin, our [plan finder](/plan-finder) will suggest the documents that fit your family, and you can book a consultation whenever you are ready.

@@ -11,10 +11,15 @@ const nextConfig: NextConfig = {
   },
   async headers() {
     const staging = process.env.SITE_ENV === "staging" || process.env.VERCEL_ENV === "preview";
-    return staging ? [{ source: "/(.*)", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] }] : [];
+    if (staging) return [{ source: "/(.*)", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] }];
+    // The live project is also reachable at its *.vercel.app address: keep that copy out of search
+    // so only the custom domain is indexed.
+    return [{ source: "/(.*)", has: [{ type: "host", value: ".*\\.vercel\\.app" }], headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] }];
   },
   async redirects() {
     return [
+      // Canonical host is the apex. Vercel's domain redirect normally does this first; this is the fallback.
+      { source: "/:path*", has: [{ type: "host", value: "www.familyfutureplanning.com" }], destination: "https://familyfutureplanning.com/:path*", permanent: true },
       { source: "/tools/probate-cost", destination: "/tools/probate-cost-estimator", permanent: true },
       // The first six printable guides moved into the /free resource library.
       ...[

@@ -21,6 +21,8 @@ faqs:
     a: "No. You give the sworn affidavit to the bank, broker or other holder of the property, not to a judge. That is why no probate case is opened. The holder decides whether the affidavit meets the statute."
   - q: "Who can sign a small estate affidavit in Illinois?"
     a: "The person who signs is called the affiant, usually an heir or the person entitled to the property. If the affiant lives outside Illinois, the statute requires them to name a service agent or consent to the circuit court's jurisdiction. Our attorneys can check who is the right person."
+  - q: "How do I get a final paycheck for someone who died in Illinois?"
+    a: "The final paycheck belongs to the estate. If the estate qualifies and no probate case is open, the small estate affidavit can be used to collect it from the employer. If a probate case is open, the executor or administrator collects it using letters of office."
 related:
   - "illinois"
   - "illinois/illinois-probate-process"
@@ -113,6 +115,8 @@ Then you generally need probate, or the property may pass another way. A house h
 ## Example: Grace and her father's accounts
 
 Grace, 44, learns that her father, Leonard, had a checking account of about $40,000 in his name only, a registered car and no house. No one has filed a probate case, and Grace and her sister are the only heirs. Grace checks the statute, completes the affidavit and has it notarized. She gives it to the bank, retitles the car through the Secretary of State and pays the funeral home from the account. She then splits the rest with her sister and keeps records.
+
+Because the affidavit cannot move real estate, families selling a house usually choose between [an heirship affidavit and opening probate](/learn/illinois/heirship-affidavit-vs-probate).
 
 ## How we can help
 
