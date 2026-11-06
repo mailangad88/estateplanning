@@ -150,3 +150,42 @@
   .book-layout > div > section { padding: 22px 18px; }
   .book-layout aside { padding: 22px 18px; }
 }
+
+
+/* ---------- Phone header: the brand name must never push the phone/menu buttons off-screen ---------- */
+@media (max-width: 1023px) {
+  .site-header__bar { min-width: 0; }
+  .site-header .brand { min-width: 0; flex: 1 1 auto; }
+  .site-header__mobile { flex: none; }
+}
+@media (max-width: 560px) {
+  .site-header .brand { font-size: var(--text-md); gap: 8px; white-space: normal; line-height: 1.1; }
+  .site-header .brand > span { max-width: 9.5em; }
+  .site-header .brand-mark { width: 32px; height: 32px; }
+}
+
+/* ---------- Cookie banner: a slim strip that never outweighs the page's own call to action ---------- */
+.cookie-consent:not(.is-choosing) { padding: 12px 16px; }
+.cookie-consent:not(.is-choosing) .cookie-consent-actions { grid-template-columns: 1fr 1fr auto; align-items: center; }
+.cookie-consent-actions .button.secondary { background: var(--surface); }
+.cookie-consent-choose { min-height: 44px; padding: 0 8px; font-size: var(--text-sm); }
+@media (min-width: 801px) {
+  .cookie-consent:not(.is-choosing) { display: flex; align-items: center; gap: 16px; max-width: 900px; }
+  .cookie-consent:not(.is-choosing) p { margin: 0; flex: 1 1 auto; font-size: var(--text-sm); }
+  .cookie-consent:not(.is-choosing) .cookie-consent-actions { flex: none; display: flex; gap: 8px; }
+}
+@media (max-width: 800px) {
+  .cookie-consent:not(.is-choosing) p { font-size: var(--text-xs); margin-bottom: 8px; }
+  .cookie-consent:not(.is-choosing) .cookie-consent-actions .button { min-height: 44px; padding: 6px 10px; }
+}
+@media (max-width: 380px) {
+  .cookie-consent:not(.is-choosing) .cookie-consent-actions { grid-template-columns: 1fr 1fr auto; }
+  .cookie-consent:not(.is-choosing) .cookie-consent-actions > :last-child { grid-column: auto; }
+}
+
+/* ---------- Phone contact bar: two links (no text number yet) get 1fr 2fr so "Book a consult" stays on one line ---------- */
+@media (max-width: 800px) {
+  .sticky-bar:has(> a:nth-child(2):last-child) { grid-template-columns: 1fr 2fr; }
+}
+/* Decorative hero art can bleed past the right edge on desktop; never let it create a sideways scroll. */
+html { overflow-x: clip; }

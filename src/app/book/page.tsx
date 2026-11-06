@@ -33,6 +33,8 @@ export default function BookPage() {
   const served = servedStates();
   const defaultState = served.includes(LAUNCH_STATE.abbr) ? LAUNCH_STATE.abbr : "";
   const digits = firm.phone.replace(/\D/g, "");
+  // Without a calendar the flow ends in a call-back form, so the page must not promise "pick a time".
+  const hasCalendar = Boolean(firm.calcomLink || firm.schedulerUrl);
   return (
     <>
       <PageHero
@@ -40,8 +42,12 @@ export default function BookPage() {
         kicker="Book a consult"
         path="/book"
         art="SpotVideoCall"
-        title="Book a call with an estate planning attorney"
-        lead={`Pick a time below and we will match you with an appropriate estate planning attorney in our ${SERVED_AND} network. No questionnaire first.`}
+        title={hasCalendar ? "Book a call with an estate planning attorney" : "Request a call with an estate planning attorney"}
+        lead={
+          hasCalendar
+            ? `Pick a time below and we will match you with an appropriate estate planning attorney in our ${SERVED_AND} network. No questionnaire first.`
+            : `Tell us the best time to reach you. Our intake team calls to set up your consult with an appropriate estate planning attorney in our ${SERVED_AND} network. No questionnaire first.`
+        }
       >
         <ReviewNote reviewed={false} updated="October 2026" />
         <ul className="book-facts" aria-label="About the consult">

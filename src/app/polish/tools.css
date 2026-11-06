@@ -223,3 +223,13 @@ div.checklist h2 { margin-top: 44px; }
   .explainer__label { font-size: 26px; }
   .explainer__cap, .explainer__node .explainer__cap { font-size: 21px; }
 }
+
+/* Reason line under a form field (why we ask for a phone number). */
+.field-hint { display: block; margin-top: 6px; font-size: var(--text-xs); line-height: 1.45; color: var(--muted); font-weight: 400; }
+.field .error { display: block; margin: 6px 0 0; }
+.field input[aria-invalid="true"] { border-color: var(--error); }
+
+/* Phones: the email opt-in comes straight after the title instead of below the cover and contents list. */
+@media (max-width: 759px) {
+  .magnet-landing__grid > .optin { order: -1; }
+}

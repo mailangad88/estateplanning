@@ -101,13 +101,13 @@ export default function BookFlow({ servedStates, defaultState }: { servedStates:
             {t?.urgent && (
               <p className="notice" role="status">
                 We are sorry for your loss. If there is a deadline, a hearing or a home that needs securing, please call{" "}
-                <a href={`tel:${digits}`}>{firm.phone}</a> so we can help sooner. Otherwise, pick a time below.
+                <a href={`tel:${digits}`}>{firm.phone}</a> so we can help sooner. Otherwise, {firm.calcomLink || scheduler ? "pick a time below" : "leave your details below"}.
               </p>
             )}
           </section>
 
           <section aria-labelledby="book-time">
-            <h2 id="book-time">3. Pick a time</h2>
+            <h2 id="book-time">{firm.calcomLink || scheduler ? "3. Pick a time" : "3. Where should we call you?"}</h2>
             {firm.calcomLink ? (
               <>
                 <CalcomEmbed
@@ -130,8 +130,8 @@ export default function BookFlow({ servedStates, defaultState }: { servedStates:
             ) : (
               <>
                 <p>
-                  Online booking is not switched on yet. Leave your number and the best time to call, and our intake team will set up the
-                  consult with you ({firm.officeHours}). Or call <a href={`tel:${digits}`}>{firm.phone}</a>.
+                  Leave your email, number and the best time to call. Our intake team will call to set up the consult with you
+                  ({firm.officeHours}). Or call <a href={`tel:${digits}`}>{firm.phone}</a>.
                 </p>
                 <CallbackForm interest={topic ? `book_${topic}` : "book"} />
               </>

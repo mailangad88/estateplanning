@@ -20,7 +20,7 @@ const FEATURED_GUIDES = ["how-to-make-a-will", "funding-your-trust", "guardiansh
 
 export const metadata: Metadata = {
   title: { absolute: `Estate planning attorney | ${firm.brandName}` },
-  description: `Wills, living trusts and powers of attorney for families, prepared by ${firm.attorneyName}. Flat fees, a clear plan, and a real person on the phone.`,
+  description: `Wills, living trusts and powers of attorney for families, prepared by an Illinois estate planning attorney in our network. Flat fees, a clear plan, and a real person on the phone.`,
   alternates: { canonical: "/" },
 };
 
@@ -47,17 +47,14 @@ export default function Home() {
       <Band className="hero-band" label="Introduction">
         <div className="hero-x">
           <div>
-            <Link href="/plan-finder" className="eyebrow">
-              <b>2 minutes</b> Find the plan that fits your family <ArrowRight size={14} aria-hidden="true" />
-            </Link>
             <h1>
               Protect the people you love, <em>in plain English.</em>
             </h1>
             <p className="lead">
-              Wills, living trusts and powers of attorney at flat fees, explained plainly, with {firm.attorneyName} on the phone.
+              Wills, living trusts and powers of attorney at flat fees, explained plainly. We match Illinois families with an estate planning attorney in our network.
             </p>
             <p className="cta-row">
-              <Link className="button large" href="/plan-finder">Start the plan finder</Link>
+              <Link className="button large" href="/plan-finder">Find my plan in 2 minutes</Link>
               <Link className="button secondary large" href="/tools/plan-readiness-assessment">Get my readiness score</Link>
             </p>
             <TrustRow

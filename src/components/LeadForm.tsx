@@ -147,12 +147,17 @@ export default function LeadForm(props: Props) {
         {err("firstName")}
         <label className="field">
           Email
-          <input name="email" type="email" inputMode="email" autoComplete="email" required defaultValue={known.email} key={`e${known.email}`} />
+          <input name="email" type="email" inputMode="email" autoComplete="email" autoCapitalize="none" spellCheck={false} required defaultValue={known.email} key={`e${known.email}`} />
         </label>
         {err("email")}
         <label className="field">
           Mobile phone{phoneOptional && " (optional)"}
           <input name="phone" type="tel" inputMode="tel" autoComplete="tel" required={!phoneOptional} defaultValue={known.phone} key={`p${known.phone}`} />
+          <span className="field-hint">
+            {phoneOptional
+              ? "Add a number only if you would like a call to talk your result through. Email is enough."
+              : "So our intake team can call to set up your consult. We call only about your request."}
+          </span>
         </label>
         {err("phone")}
         <label className="field">

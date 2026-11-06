@@ -145,6 +145,11 @@ export function MoneyPage({ page }: { page: MoneyPageData }) {
         path={page.path}
         kicker={page.crumb}
         title={page.h1}
+        lead={
+          callFirst
+            ? "If someone you love has just died, there is no rush to decide everything today. The steps are explained in order below, and you can talk it through with an attorney whenever you are ready."
+            : page.description
+        }
         crumbs={<Breadcrumbs items={[{ href: "/", label: "Home" }, { label: page.crumb }]} />}
       >
         <p className="cta-row no-print">{primary}{secondary}</p>
