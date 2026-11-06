@@ -102,6 +102,8 @@ You can do it directly. A will can say your executor serves without pay, receive
 
 A quick sense of the work helps. In an Illinois formal estate, the executor opens the case, publishes the creditor notice, inventories assets, pays valid claims, files tax returns, sells or distributes property and closes the case. Our page on the [Illinois probate process](/learn/illinois/illinois-probate-process) walks through each stage and [how long probate takes in Illinois](/learn/illinois/how-long-does-probate-take-in-illinois) shows why a year of part-time work is typical.
 
+Before you accept, read [when an Illinois executor can be personally liable](/learn/illinois/executor-personal-liability-in-illinois).
+
 ## How we can help
 
 If you are an executor deciding whether to take pay, or an heir who thinks a fee is too high, our attorneys can read the will and the accounting with you and explain the options. If you are writing your own plan, the [plan finder](/plan-finder) is a quick way to see which documents fit your family, including how to set your executor's pay.

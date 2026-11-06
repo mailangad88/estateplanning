@@ -109,6 +109,8 @@ Pull the recorded deed. You can often get a copy from the county recorder's offi
 
 <!-- visual: whatif id=joint-account-surprise -->
 
+When a co-owner dies, see [how to remove a deceased owner from a deed in Illinois](/learn/illinois/how-to-remove-a-deceased-owner-from-a-deed-in-illinois).
+
 ## How we can help
 
 If you are not sure how your home is titled, or you added a family member to a deed years ago, our attorneys can read the deed with you and explain what happens at each owner's death. The [plan finder](/plan-finder) is a good place to start, and you can book a consultation when you are ready.

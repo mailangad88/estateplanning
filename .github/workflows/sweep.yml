@@ -1,0 +1,31 @@
+name: Lead sweep
+
+# Calls /api/cron/sweep on the live site: SLA alerts for leads nobody has called back, nurture steps that
+# are due, CRM delivery retries, offer re-routing and payment reminders (src/app/api/cron/sweep/route.ts).
+# The site has no Vercel Cron entry (Hobby allows only daily crons), so this is the free scheduler.
+#
+# Turn on: repository variable SWEEP_SITE_URL=https://familyfutureplanning.com and secret CRON_SECRET
+# (same value as on the Vercel project). Off while the variable is empty, so no Actions minutes are used.
+# Every 30 minutes is about 1,440 minutes a month, inside the free 2,000 for a private repository.
+# For faster sweeps use a free external scheduler (cron-job.org, every 5 minutes) with the same request.
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: sweep
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    if: vars.SWEEP_SITE_URL != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Run the sweep
+        env:
+          SITE: ${{ vars.SWEEP_SITE_URL }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+        run: curl -fsS --max-time 60 -X POST -H "Authorization: Bearer $CRON_SECRET" "$SITE/api/cron/sweep" | head -c 2000

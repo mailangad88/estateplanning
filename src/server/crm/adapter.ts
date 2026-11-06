@@ -107,6 +107,7 @@ export const LAWMATICS_STAGE_MAP: StageMap = {
   chose_another_option: "Lost - Chose Another Option",
   conflict: "Lost - Conflict",
   declined_by_all: "Lost - Declined by Attorneys",
+  referred_out: "Referred Out",
 };
 
 /**
@@ -135,6 +136,7 @@ export const HUBSPOT_STAGE_MAP: StageMap = {
   chose_another_option: "ep_lost_other_option",
   conflict: "ep_lost_conflict",
   declined_by_all: "ep_lost_declined",
+  referred_out: "ep_referred_out",
 };
 
 /** An exit reason wins over the stage the lead was in when it left. */

@@ -4,6 +4,7 @@ import Script from "next/script";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import { track } from "@/components/capture";
+import { assignedVariants } from "@/lib/experiments";
 
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
 
@@ -12,7 +13,9 @@ function pageType(path: string): string {
   const map: Record<string, string> = {
     "": "home", guides: "article", blog: "article", compare: "article", "life-events": "article", tools: "tool",
     quizzes: "tool", free: "resource", checklists: "resource", "plan-finder": "lead_form", pricing: "pricing",
-    "estate-planning": "state_page", course: "course",
+    "estate-planning": "state_page", course: "course", learn: "article", explainers: "article", mistakes: "article",
+    "estate-planning-for": "audience", wills: "service", "living-trusts": "service", "power-of-attorney": "service",
+    "healthcare-directives": "service", probate: "service", "trust-administration": "service", book: "book", decide: "tool",
   };
   return map[first] ?? "other";
 }
@@ -44,9 +47,10 @@ export default function Analytics() {
       if (!a) return;
       const href = a.getAttribute("href") ?? "";
       // Call and text taps are already tracked by the sticky bar (click_to_call, click_to_text).
-      if (/^\/(plan-finder|free\/|quizzes\/|tools\/)/.test(href)) {
-        const location = a.closest("header") ? "header" : a.closest(".sticky-bar") ? "sticky" : a.closest(".modal") ? "exit" : "inline";
-        track("cta_click", { cta_id: href.split("?")[0], location, page_type: type });
+      if (/^\/(book|plan-finder|free\/|quizzes\/|tools\/)/.test(href)) {
+        const location = a.closest("header") ? "header" : a.closest(".sticky-bar") ? "sticky" : a.closest(".modal") ? "exit" : a.closest("footer") ? "footer" : "inline";
+        const from = href.startsWith("/book") ? new URLSearchParams(href.split("?")[1] ?? "").get("from") : null;
+        track("cta_click", { cta_id: href.split("?")[0], location, page_type: type, ...(from ? { from } : {}), ...assignedVariants() });
       }
     };
     window.addEventListener("scroll", onScroll, { passive: true });

@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CtaBox from "@/components/CtaBox";
+import AnswerBox from "@/components/AnswerBox";
+import { KitFaqs } from "@/components/page-kit";
 import JsonLd from "@/components/JsonLd";
 import { PageHero } from "@/components/page-hero";
 import { citiesIn, feesFor, servedCounties } from "@/lib/counties";
@@ -58,10 +60,11 @@ export default async function CountiesIndex({ params }: { params: Promise<Params
         title={`${s.name} probate by county`}
         lead="Where estates are opened, where wills are filed, what the clerk charges and where deeds are recorded, county by county."
       />
-      <p>
-        Probate law is the same across {s.name}, but each county has its own courthouse, clerk, fees and recorder. Pick
-        your county, meaning the county where the person who died lived.
-      </p>
+      <AnswerBox
+        label="In short"
+        answer={`Probate law is the same across ${s.name}, but each county has its own courthouse, clerk, fees and recorder. An estate is usually opened in the county where the person who died lived.`}
+      />
+      <p>Pick your county below.</p>
       <div className="table-wrap">
         <table className="facts">
           <thead>
@@ -94,7 +97,8 @@ export default async function CountiesIndex({ params }: { params: Promise<Params
           fees by county</Link>.
         </p>
       )}
-      <CtaBox topic={`probate in ${s.name}`} />
+      <KitFaqs url={url} topic={`${s.name} probate`} context="county court clerk file open estate cost" clusters={[s.slug, "probate"]} title={`Questions about probate in ${s.name}`} />
+      <CtaBox topic={`probate in ${s.name}`} from="counties" />
     </article>
   );
 }

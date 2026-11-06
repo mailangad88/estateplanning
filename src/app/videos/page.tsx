@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { videos } from "@/components/visuals/video";
 import { PageHero } from "@/components/page-hero";
-import { Breadcrumbs } from "@/components/ui";
+import { Breadcrumbs, Cta } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Estate planning explainer videos",
@@ -35,7 +35,7 @@ export default function VideosPage() {
             <li key={v.slug} className="card">
               <Link href={`/videos/${v.slug}`}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={v.poster} alt="" width={640} height={360} loading="lazy" />
+                <img src={v.poster} alt={`Video thumbnail: ${v.title}`} width={640} height={360} loading="lazy" />
               </Link>
               <h2 className="v-video-card__title">
                 <Link href={`/videos/${v.slug}`}>{v.title}</Link>
@@ -45,6 +45,7 @@ export default function VideosPage() {
           ))}
         </ul>
       )}
+      <Cta from="videos" />
     </>
   );
 }

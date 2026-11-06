@@ -114,6 +114,8 @@ States differ on whether a transfer-on-death deed is available, whether life est
 
 For the bigger picture, see [our probate guide](/learn/probate).
 
+Own a home in Illinois? See [should I add my child to my deed in Illinois](/learn/illinois/should-i-add-my-child-to-my-deed-illinois) for the Illinois transfer on death instrument and property tax exemptions.
+
 ## How we can help
 
 If you are thinking about changing the title on your home, our attorneys can compare the options for your state and your family, and prepare the right deed or trust. Use the [plan finder](/plan-finder) to see which approach fits you or schedule a consultation before you sign anything.

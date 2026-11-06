@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getLessons } from "@/lib/content";
-import { PageHeader } from "@/components/ui";
+import { Cta, PageHeader } from "@/components/ui";
+import { KitFaqs } from "@/components/page-kit";
 import { EmailCapture } from "@/components/capture";
 
 export const metadata: Metadata = {
@@ -25,6 +26,8 @@ export default function CourseIndex() {
           </li>
         ))}
       </ol>
+      <KitFaqs url="/course" topic="start" context="first step begin getting started documents" categories={["Getting started"]} />
+      <Cta from="course" />
     </>
   );
 }

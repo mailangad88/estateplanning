@@ -107,4 +107,4 @@ Then run a test. Ask your chosen successor to find the payroll login and the nex
 
 ## How we can help
 
-A continuity plan is a document you write, and our attorneys help with the part that gives it force: the power of attorney, the trust, the operating agreement language and the successor designations in Illinois or New Jersey. The [plan finder](/plan-finder) is a good place to see which of those documents you already have. We can then work through the gaps with you, one weekend at a time.
+A continuity plan is a document you write, and our attorneys help with the part that gives it force: the power of attorney, the trust, the operating agreement language and the successor designations in Illinois. The [plan finder](/plan-finder) is a good place to see which of those documents you already have. We can then work through the gaps with you, one weekend at a time.

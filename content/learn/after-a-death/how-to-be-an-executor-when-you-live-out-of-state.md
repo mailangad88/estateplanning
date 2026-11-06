@@ -132,4 +132,4 @@ Then you may need a second case there. If your mother's house is in Illinois but
 
 ## How we can help
 
-If you are an executor who lives in another state, our attorneys can handle the court filings, explain the bond and agent rules in Illinois or New Jersey, and coordinate with local help so you travel as little as possible. Use the [plan finder](/plan-finder) or book a consultation.
+If you are an executor who lives in another state, our attorneys can handle the court filings, explain the bond and agent rules in Illinois, and coordinate with local help so you travel as little as possible. Use the [plan finder](/plan-finder) or book a consultation.

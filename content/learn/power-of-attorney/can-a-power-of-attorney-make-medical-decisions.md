@@ -70,7 +70,7 @@ What the agent cannot do is consent to surgery, refuse a ventilator, sign a DNR,
 
 Your state's surrogate rules decide. Illinois sets a ranked list in the Health Care Surrogate Act (755 ILCS 40/25): guardian of the person, then spouse, adult child, parent, adult sibling, adult grandchild and close friend. The details, including how disagreements among adult children are settled, are in [who makes medical decisions in Illinois if you have no directive](/learn/illinois/illinois-health-care-surrogate-act-who-decides).
 
-In New Jersey, hospitals generally work with the closest available family, and a dispute can end up in court. That is why our attorneys tell New Jersey clients to sign a proxy directive rather than rely on practice. Our explainer on [what happens without an advance directive](/learn/healthcare-directives/what-happens-without-an-advance-directive) covers the general picture.
+In New Jersey, hospitals generally work with the closest available family, and a dispute can end up in court. That is why we suggest signing a proxy directive in New Jersey rather than relying on practice. Our explainer on [what happens without an advance directive](/learn/healthcare-directives/what-happens-without-an-advance-directive) covers the general picture.
 
 Notice what this means for the financial agent. Being the "power of attorney" gives you no rank on the surrogate list. A daughter who holds a property power of attorney but is estranged from the spouse may sit lower than the spouse for purposes of consent. A son who is a financial agent but has a sister who is the adult child present at the bedside may find the hospital turning to her. The financial form does not change that.
 
@@ -112,7 +112,7 @@ Our article on [what a power of attorney cannot do](/learn/power-of-attorney/wha
 
 ## How state law changes this
 
-States differ in the name of the health care document, the number of witnesses, whether a notary is allowed or required, and the default surrogate list. Some forms combine finances and health in one packet, and a few states allow a single instrument to carry both. Read the title and the scope paragraph rather than assuming. Our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides cover the two states we serve.
+States differ in the name of the health care document, the number of witnesses, whether a notary is allowed or required, and the default surrogate list. Some forms combine finances and health in one packet, and a few states allow a single instrument to carry both. Read the title and the scope paragraph rather than assuming. Our [Illinois](/estate-planning/illinois) guide covers the state we serve.
 
 ## How we can help
 

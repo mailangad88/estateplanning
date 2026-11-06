@@ -7,6 +7,9 @@ import JsonLd from "@/components/JsonLd";
 import { PageHero } from "@/components/page-hero";
 import LinkList from "@/components/LinkList";
 import PageMeta from "@/components/PageMeta";
+import { KitFaqs, TopicDiagram } from "@/components/page-kit";
+import { RichProse } from "@/components/embeds/rich-prose";
+import { diagramFor } from "@/lib/page-faqs";
 import { findByUrl, getBacklinks, getGlossary, getGlossaryEntry, refToUrl } from "@/lib/library";
 import { breadcrumbSchema, definedTermSchema, graph } from "@/lib/schema";
 
@@ -46,6 +49,10 @@ export default async function TermPage({ params }: { params: Promise<Params> }) 
     .filter((x) => x !== undefined && "title" in x)
     .map((x) => x as { url: string; title: string; description: string });
   const mentionedIn = getBacklinks(g.url).filter((p) => !guides.some((x) => x.url === p.url)).slice(0, 8);
+  // The term, its other names and the guides it points to say what the page is about.
+  const topic = [g.term, g.slug, ...g.also, ...g.related, ...g.seeAlso].join(" ");
+  const clusters = g.related.map((r) => r.split("/")[0]);
+  const diagram = diagramFor(topic);
 
   return (
     <article className="content">
@@ -58,7 +65,13 @@ export default async function TermPage({ params }: { params: Promise<Params> }) 
         <p className="answer">{g.short}</p>
         {g.also.length > 0 && <p className="desc">Also called: {g.also.join(", ")}.</p>}
       </section>
-      <div className="prose" dangerouslySetInnerHTML={{ __html: g.html }} />
+      <TopicDiagram topic={topic} />
+      <RichProse
+        html={g.html}
+        path={guides[0]?.url ?? g.url}
+        title={`${g.term} ${guides.map((x) => x.title).join(" ")}`}
+        excludeDiagrams={diagram ? [diagram.name] : []}
+      />
       {seeAlso.length > 0 && (
         <nav aria-labelledby="see-also">
           <h2 id="see-also">Related terms</h2>
@@ -74,7 +87,8 @@ export default async function TermPage({ params }: { params: Promise<Params> }) 
         title="Guides that explain this"
         items={[...guides, ...mentionedIn].map((x) => ({ url: x.url, title: x.title }))}
       />
-      <CtaBox />
+      <KitFaqs url={g.url} topic={g.term} context={topic} clusters={clusters} categories={["Getting started"]} title={`Questions people ask about ${g.term.toLowerCase()}`} />
+      <CtaBox topic={g.term} from="glossary" />
     </article>
   );
 }

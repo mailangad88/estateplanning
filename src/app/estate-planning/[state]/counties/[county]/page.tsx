@@ -99,11 +99,20 @@ export default async function CountyPage({ params }: { params: Promise<Params> }
       >
         <PageMeta updated={c.updated} reviewed={false} />
       </PageHero>
-      {c.probateCourt && (
+      {(c.probateCourt || c.clerk) && (
         <section className="answer-box" aria-label="Short answer">
           <p className="answer">
-            {il ? "Estates" : "Wills"} of {c.name} residents are {il ? "opened in" : "probated by"} the {c.probateCourt.name}
-            {c.seat ? ` in ${c.seat}` : ""}.
+            {c.probateCourt ? (
+              <>
+                {il ? "Estates" : "Wills"} of {c.name} residents are {il ? "opened in" : "probated by"} the {c.probateCourt.name}
+                {c.seat ? ` in ${c.seat}` : ""}.
+              </>
+            ) : (
+              <>
+                {il ? "Estates" : "Wills"} of {c.name} residents are {il ? "opened" : "probated"} by filing with the {c.clerk!.name}
+                {c.clerk!.address ? ` (${c.clerk!.address})` : ""}.
+              </>
+            )}
             {fees && ` The clerk's schedule effective ${fees.effective} lists ${usd(fees.estate)} to open an estate.`}{" "}
             The probate rules themselves come from {c.state.name} law, so the steps are the same in every county; what
             changes is the courthouse, the clerk, the fees and local practice.

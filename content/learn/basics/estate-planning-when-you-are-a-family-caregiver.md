@@ -107,4 +107,4 @@ Some caregivers resist because they fear a fight. The fight is more likely when 
 
 ## How we can help
 
-Caregivers tend to put themselves at the bottom of the list, so we suggest starting with your own documents in the same sitting as your parent's. Use the [plan finder](/plan-finder) to see which documents fit your situation, and our attorneys can prepare both sets for Illinois or New Jersey, including a backup plan if you are the one who cannot show up.
+Caregivers tend to put themselves at the bottom of the list, so we suggest starting with your own documents in the same sitting as your parent's. Use the [plan finder](/plan-finder) to see which documents fit your situation, and our attorneys can prepare both sets for Illinois clients, including a backup plan if you are the one who cannot show up.

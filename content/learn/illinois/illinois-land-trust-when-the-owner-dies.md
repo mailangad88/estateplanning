@@ -122,6 +122,8 @@ Had Teresa signed a one-page assignment to her living trust, her successor trust
 
 If you are the one holding a land trust today, a short review now saves your family this process. Our [Illinois living trusts](/learn/illinois/illinois-living-trusts) page explains the document that usually sits beside it.
 
+Still deciding how to hold title? See [land trust or living trust for a Chicago home](/learn/illinois/land-trust-vs-living-trust).
+
 ## How we can help
 
 Our attorneys can read the land trust agreement, tell you who holds the power of direction today, and handle the estate or trust steps that follow. If you are still planning, use the [plan finder](/plan-finder) to see which documents fit your property, or book a consultation about your Illinois real estate.

@@ -103,6 +103,8 @@ Check it within a few months, and set a firm date at one year. Sooner if any of 
 
 Our reminder tool, the [plan review reminder](/tools/plan-review-reminder), can send a nudge so the review does not wait for the next move.
 
+Leaving Illinois instead? See [what to update when you move out of Illinois](/learn/illinois/moving-out-of-illinois).
+
 ## How we can help
 
 A move is a good moment to ask whether your plan still fits your life, even when the answer is mostly yes. Our attorneys can review an out-of-state will, tell you what should change under Illinois law and prepare the Illinois documents you need. Use the [plan finder](/plan-finder) to see where to begin, or book a consultation and bring everything you signed in the old state.

@@ -15,7 +15,7 @@ export interface OfferResult {
   nextStep?: "refer_to_bar_referral_service_and_long_term_nurture";
 }
 
-async function loadInput(db: Db, lead: Lead, now: Date): Promise<RoutingInput> {
+export async function loadInput(db: Db, lead: Lead, now: Date): Promise<RoutingInput> {
   const person = await db.persons.get(lead.personId);
   if (!person) throw new Error(`person not found for lead ${lead.id}`);
   const household = person.householdId

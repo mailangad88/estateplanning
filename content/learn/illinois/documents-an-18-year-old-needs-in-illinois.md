@@ -126,6 +126,8 @@ This is also the reason to sign early. A form can be made only by a person who u
 
 The forms above assume the student has capacity to sign. If your child has an intellectual or developmental disability, the questions are different: supported decision-making, a representative payee and sometimes guardianship. Start with [what to do when a child with a disability turns 18](/learn/special-needs/what-to-do-when-a-child-with-a-disability-turns-18) and [Illinois special needs planning](/learn/illinois/special-needs-planning-in-illinois-for-a-disabled-child).
 
+If your child has a disability, read [what changes when a child with a disability turns 18](/learn/illinois/turning-18-with-a-disability).
+
 ## How we can help
 
 Our attorneys prepare the full set for young adults, usually in one visit, and can explain the witness and notary rules so the forms hold up. Use the [plan finder](/plan-finder) to see where your family stands, or book a consultation. Our [Illinois estate planning guide](/learn/illinois) lists the other documents Illinois families should have.

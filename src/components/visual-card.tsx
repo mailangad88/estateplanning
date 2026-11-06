@@ -6,7 +6,7 @@ import {
   Flower2, HandHeart, Heart, House, Landmark, ListChecks, Play, Receipt, Scale, ScrollText, ShieldCheck, Stethoscope, Sun,
   Users, type LucideIcon,
 } from "lucide-react";
-import { illustrationSrc, topicFor, type Tone } from "@/lib/visual-topic";
+import { illustrationAlt, illustrationSrc, topicFor, type Tone } from "@/lib/visual-topic";
 import { videos } from "@/components/visuals/video/videos";
 
 export const ICON_MAP: Record<string, LucideIcon> = {
@@ -47,11 +47,20 @@ function mediaFor(item: CardItem, mode: CardMedia): { media: Media; tone: Tone }
     const v = videos.find((x) => x.slug === slug);
     if (v?.poster) return { media: { kind: "poster", src: v.poster }, tone: t.tone };
   }
+  if (mode === "art") return { media: { kind: "art", src: illustrationSrc(t.art) }, tone: t.tone };
   if (section === "tools") return { media: { kind: "icon", icon: "Calculator" }, tone: t.tone };
   if (section === "quizzes") return { media: { kind: "icon", icon: "ListChecks" }, tone: t.tone };
   const artSections = new Set(["guides", "compare", "life-events", "estate-planning-for", "learn"]);
-  if (mode === "art" || (mode === "auto" && artSections.has(section))) return { media: { kind: "art", src: illustrationSrc(t.art) }, tone: t.tone };
+  if (mode === "auto" && artSections.has(section)) return { media: { kind: "art", src: illustrationSrc(t.art) }, tone: t.tone };
   return { media: { kind: "icon", icon: t.icon }, tone: t.tone };
+}
+
+/** Alt text for a card picture: what it is (cover, video still, illustration) and what it is about. */
+function mediaAlt(m: { kind: string; src: string }, title: string): string {
+  if (m.kind === "cover") return `Cover of the free download: ${title}`;
+  if (m.kind === "poster") return `Video thumbnail: ${title}`;
+  const art = m.src.match(/illustrations\/([A-Za-z]+)\./)?.[1];
+  return art ? illustrationAlt(art, title) : `Picture for ${title}`;
 }
 
 /** Picture-first card grid. Covers for downloads, posters for videos, an illustration or a big icon for the rest. */
@@ -69,7 +78,7 @@ export function VisualCardGrid({ items, media = "auto" }: { items: CardItem[]; m
                   <Icon size={44} strokeWidth={1.6} />
                 ) : (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img src={(m as { src: string }).src} alt="" loading="lazy" decoding="async" />
+                  <img src={(m as { src: string }).src} alt={mediaAlt(m as { kind: string; src: string }, item.title)} loading="lazy" decoding="async" />
                 )}
                 {m.kind === "poster" && (
                   <span className="vcard__play">

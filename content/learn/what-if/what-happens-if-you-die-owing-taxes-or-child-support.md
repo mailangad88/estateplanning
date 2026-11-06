@@ -111,7 +111,7 @@ Medicaid recovery is a government claim too, and it is its own subject. Illinois
 
 ## How does state law change this?
 
-States differ on the order of payment, how long creditors have, and whether child support arrears can be claimed. Both states we serve set a deadline for creditor claims. In Illinois, claims are barred two years after death at the latest, and in New Jersey, creditors generally must present claims within nine months. Federal tax claims have their own timing and are not cut off by a state claims window in the same way.
+States differ on the order of payment, how long creditors have, and whether child support arrears can be claimed. Illinois and New Jersey both set a deadline for creditor claims. In Illinois, claims are barred two years after death at the latest, and in New Jersey, creditors generally must present claims within nine months. Federal tax claims have their own timing and are not cut off by a state claims window in the same way.
 
 State death taxes are not the person's own debts, but they are paid from the estate too. New Jersey has an inheritance tax, with a return and payment due eight months after death. Illinois has an estate tax on larger estates. See [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey), and the pages on [New Jersey's inheritance tax](/learn/new-jersey/new-jersey-inheritance-tax) and the [Illinois estate tax](/learn/illinois/illinois-estate-tax).
 

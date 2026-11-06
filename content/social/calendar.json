@@ -1,0 +1,1955 @@
+{
+  "name": "Family Future Planning social calendar: Illinois launch, first 30 shorts",
+  "updated": "2026-10-31",
+  "status": "draft: every script needs the attorney's review before it is published",
+  "cadence": "One short a day, cross-posted to Instagram Reels, Facebook Reels and YouTube Shorts. Day 1 is the first day after the attorney approves the batch.",
+  "rules": [
+    "Illinois only. No outcome promises, no superlatives and no credential claims.",
+    "No offers the attorney has not approved (no 'free call', no response times). The CTA is the /tips page.",
+    "Sensitive videos (a death, dementia, Medicaid) get no countdowns, no urgency words and no ad boosting.",
+    "No real clients, no AI faces presented as real people. Seedance b-roll is objects and places only, labeled as AI-generated where the platform asks.",
+    "Every video shows the disclaimer line and ends on the /tips URL card."
+  ],
+  "defaults": {
+    "fps": 30,
+    "brand": "Family Future Planning",
+    "disclaimer": "Educational only. Not legal advice. Referral service. Attorney advertising."
+  },
+  "pillars": {
+    "fear": "A worry in the viewer's own words, then the answer",
+    "tip": "One small action that takes minutes",
+    "money": "Costs, taxes and money fears",
+    "faq": "A question families ask every week",
+    "myth": "A common belief, corrected",
+    "checklist": "Steps for a hard week"
+  },
+  "videos": [
+    {
+      "id": "v01",
+      "pillar": "fear",
+      "tip": "house-still-in-moms-name",
+      "title": "The house is still in Mom's name",
+      "hook": "Mom passed, and the house is still in her name. Here's why you can't sell it yet.",
+      "voiceover": [
+        "Mom passed, and the house is still in her name. Here's why you can't sell it yet.",
+        "In Illinois, a house skips the court only if the paperwork already moved it. A living trust. A transfer on death instrument. Or a deed shared with someone who's still living.",
+        "If it was in her name alone, the house usually goes through probate first. Even with a will.",
+        "And the small estate affidavit people mention? It doesn't cover real estate.",
+        "This week: get a copy of the deed, order death certificates, and keep the insurance paid.",
+        "The full answer and a free title guide are at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "Mom passed. The house is still in her name.",
+            "kicker": "Illinois",
+            "seconds": 5.5
+          },
+          {
+            "type": "house",
+            "kicker": "What decides it",
+            "text": "A house skips court only if the paperwork already moved it: a trust, a TODI, or a joint deed.",
+            "seconds": 7.5,
+            "sign": true
+          },
+          {
+            "type": "point",
+            "text": "In her name alone? Usually probate first. Even with a will.",
+            "kicker": "The hard part",
+            "seconds": 7.5
+          },
+          {
+            "type": "stat",
+            "value": "$150K",
+            "label": "Small estate affidavit limit. It cannot transfer a house.",
+            "cite": "755 ILCS 5/25-1",
+            "seconds": 6.5
+          },
+          {
+            "type": "steps",
+            "title": "This week",
+            "items": [
+              "Get a copy of the deed",
+              "Order death certificates",
+              "Keep insurance and taxes paid"
+            ],
+            "seconds": 11.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/house-still-in-moms-name",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "The house is still in Mom's name and the title company won't move. Here's what decides whether it needs probate in Illinois, and three things to do this week. Full answer and a free guide at the link in bio.",
+      "seedance": {
+        "seconds": 5,
+        "prompt": "Slow push-in on the front porch of a brick Chicago bungalow at dusk, porch light on, a FOR SALE sign leaning against the steps but not yet in the lawn, autumn leaves, no people, soft natural light, documentary style"
+      },
+      "sensitive": true,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 1,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#ProtectYourFamily"
+      ],
+      "renderer": "blender"
+    },
+    {
+      "id": "v02",
+      "pillar": "tip",
+      "tip": "not-enough-to-need-a-will",
+      "title": "Check your beneficiary forms tonight",
+      "hook": "Your 401(k) ignores your will. Here's the 5-minute check.",
+      "voiceover": [
+        "Your 401(k) ignores your will.",
+        "Retirement accounts and life insurance go to whoever is named on the beneficiary form. Not whoever is in your will.",
+        "So if your ex is still on the form from ten years ago, that's who gets paid.",
+        "Tonight: log in to your 401(k), your IRA, and the life insurance from work. Check the name. Check there's a backup.",
+        "It takes five minutes. Our free beneficiary check walks you through it."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "Your 401(k) ignores your will.",
+            "kicker": "5-minute check",
+            "seconds": 5.0
+          },
+          {
+            "type": "point",
+            "text": "Retirement accounts and life insurance go to the name on the beneficiary form.",
+            "kicker": "How it works",
+            "seconds": 6.5
+          },
+          {
+            "type": "point",
+            "text": "Ex still on the form? That's who gets paid.",
+            "kicker": "Why it matters",
+            "seconds": 6.5
+          },
+          {
+            "type": "steps",
+            "title": "Tonight",
+            "items": [
+              "Log in to your 401(k) and IRA",
+              "Check work life insurance",
+              "Name a backup beneficiary"
+            ],
+            "seconds": 9.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/not-enough-to-need-a-will",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "Your will doesn't control your 401(k) or life insurance. The beneficiary form does. A five-minute check you can do tonight.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 2,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#MoneyTips"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v03",
+      "pillar": "money",
+      "tip": "illinois-estate-tax-4-million",
+      "title": "Illinois estate tax starts at $4 million",
+      "hook": "The federal estate tax won't touch you. Illinois might.",
+      "voiceover": [
+        "The federal estate tax probably won't touch you. Illinois might.",
+        "Illinois has its own estate tax, and it starts at four million dollars. Way below the federal line.",
+        "Add up the house, the 401(k)s, and the life insurance. A lot of suburban couples get close.",
+        "And in Illinois, a spouse can't use the other spouse's unused four million unless the plan is set up for it.",
+        "Run the free estimator at the link to see where you land."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "The federal estate tax won't touch you. Illinois might.",
+            "kicker": "Illinois",
+            "seconds": 6.0
+          },
+          {
+            "type": "stat",
+            "value": "$4M",
+            "label": "Illinois estate tax threshold",
+            "cite": "35 ILCS 405",
+            "seconds": 7.0
+          },
+          {
+            "type": "point",
+            "text": "House + 401(k)s + life insurance. Many suburban couples get close.",
+            "kicker": "Add it up",
+            "seconds": 7.5
+          },
+          {
+            "type": "point",
+            "text": "No portability: a spouse's unused $4M is lost unless the plan uses it.",
+            "kicker": "The catch",
+            "seconds": 7.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/illinois-estate-tax-4-million",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "Illinois taxes estates over $4 million, and life insurance counts. Here's why married couples in the suburbs should check where they stand.",
+      "seedance": {
+        "seconds": 5,
+        "prompt": "Overhead shot of a kitchen table with a calculator, house keys, a closed laptop and a coffee mug, warm morning light moving across the table, no people, no visible text or logos"
+      },
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 3,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#PersonalFinance"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v04",
+      "pillar": "faq",
+      "tip": "how-long-probate-takes-illinois",
+      "title": "How long does probate take in Illinois?",
+      "hook": "How long does probate take in Illinois? The honest answer.",
+      "voiceover": [
+        "How long does probate take in Illinois?",
+        "At least six months for most estates. Creditors get six months from the first published notice to file claims, and that clock can't be sped up.",
+        "Simple estates under independent administration often wrap up in about nine to twelve months.",
+        "What makes it longer: family disputes, a house that's hard to sell, or heirs nobody can find.",
+        "There's a month-by-month timeline at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "How long does probate take in Illinois?",
+            "kicker": "Asked every week",
+            "seconds": 5.5
+          },
+          {
+            "type": "stat",
+            "value": "6 months",
+            "label": "minimum creditor claims period",
+            "cite": "755 ILCS 5/18-3",
+            "seconds": 6.0
+          },
+          {
+            "type": "stat",
+            "value": "9 to 12",
+            "label": "months for many simple estates",
+            "cite": null,
+            "seconds": 6.0
+          },
+          {
+            "type": "point",
+            "text": "Longer with family disputes, a hard-to-sell house, or missing heirs.",
+            "kicker": "What slows it",
+            "seconds": 7.0
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/how-long-probate-takes-illinois",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "Probate in Illinois has a six-month floor. Here's what a typical timeline looks like, and what drags it out.",
+      "seedance": null,
+      "sensitive": true,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 4,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#EstatePlanningQuestions"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v05",
+      "pillar": "myth",
+      "tip": "is-my-online-will-valid",
+      "title": "Myth: a notarized will is enough",
+      "hook": "Myth: if your will is notarized, it's valid.",
+      "voiceover": [
+        "Myth: if your will is notarized, it's valid.",
+        "In Illinois, a notary alone doesn't make a will valid. Two witnesses do. They have to watch you sign, and then sign themselves.",
+        "And if one of those witnesses inherits under the will, their gift can be cut.",
+        "Handwritten will with no witnesses? Illinois doesn't accept it.",
+        "Check yours with the free red-flags checklist at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "myth",
+            "myth": "A notarized will is a valid will.",
+            "fact": "Illinois needs two witnesses who watch you sign. A notary alone isn't enough.",
+            "seconds": 9.5
+          },
+          {
+            "type": "point",
+            "text": "A witness who inherits can lose their gift.",
+            "kicker": "Watch out",
+            "seconds": 7.0
+          },
+          {
+            "type": "point",
+            "text": "Handwritten, no witnesses? Not valid in Illinois.",
+            "kicker": "Also",
+            "seconds": 7.0
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/is-my-online-will-valid",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "Notarized doesn't mean valid. What Illinois actually requires for a will, and the mistake that cuts a witness's gift.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 5,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#MythBusting"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v06",
+      "pillar": "checklist",
+      "tip": "spouse-died-accounts-frozen",
+      "title": "The first bills after a spouse dies",
+      "hook": "If your spouse just died and the bank froze the account, start here.",
+      "voiceover": [
+        "If your spouse just died and the bank froze the account, start here.",
+        "Joint accounts usually pass straight to you. Bring a death certificate and ask the bank to retitle it.",
+        "Accounts in your spouse's name alone may need a small estate affidavit or a court order.",
+        "Illinois also gives a surviving spouse a separate right to support from the estate. It's called the spouse's award, and it's at least twenty thousand dollars.",
+        "Take it one week at a time. The full list is at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "Your spouse died and the bank froze the account.",
+            "kicker": "Start here",
+            "seconds": 5.5
+          },
+          {
+            "type": "point",
+            "text": "Joint accounts usually pass to you. Bring a death certificate.",
+            "kicker": "First",
+            "seconds": 7.5
+          },
+          {
+            "type": "stat",
+            "value": "$20,000+",
+            "label": "the Illinois spouse's award, plus $10,000 per minor child",
+            "cite": "755 ILCS 5/15-1",
+            "seconds": 6.5
+          },
+          {
+            "type": "steps",
+            "title": "This week",
+            "items": [
+              "Call Social Security",
+              "List bills and due dates",
+              "Check work life insurance"
+            ],
+            "seconds": 11.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/spouse-died-accounts-frozen",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "For anyone handling the bills after losing a spouse in Illinois. What usually unfreezes first, and a support right many people never hear about.",
+      "seedance": null,
+      "sensitive": true,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 6,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#Checklist"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v07",
+      "pillar": "fear",
+      "tip": "who-gets-my-kids",
+      "title": "Who raises your kids if you both die?",
+      "hook": "If you and your spouse both died tomorrow, who raises your kids? If you're not sure, a judge decides.",
+      "voiceover": [
+        "If you and your spouse both died tomorrow, who raises your kids?",
+        "If you haven't named anyone, an Illinois judge picks. Relatives can ask for the job, and they don't always agree.",
+        "Naming a guardian in your will tells the court who you want.",
+        "Can't agree on who? Score each person on values, location, age, and how they handle money. Lots of couples pick one person for the kids and another for the money.",
+        "Try the free guardian picker at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "If you both died tomorrow, who raises your kids?",
+            "kicker": "Parents",
+            "seconds": 5.5
+          },
+          {
+            "type": "point",
+            "text": "No guardian named? An Illinois judge decides.",
+            "kicker": "Default",
+            "seconds": 7.0
+          },
+          {
+            "type": "point",
+            "text": "Name one in your will. The court gives it great weight.",
+            "kicker": "The fix",
+            "seconds": 7.0
+          },
+          {
+            "type": "steps",
+            "title": "Can't agree?",
+            "items": [
+              "Score values and location",
+              "Score age and money sense",
+              "Split kids and money roles"
+            ],
+            "seconds": 10.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/who-gets-my-kids",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "The most common reason parents put off a will: they can't agree on a guardian. Here's how couples settle it.",
+      "seedance": {
+        "seconds": 5,
+        "prompt": "Two small backpacks and a pair of kids' rain boots by a front door, morning light through the window, cozy family home, no people, shallow depth of field"
+      },
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 7,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#ProtectYourFamily"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v08",
+      "pillar": "fear",
+      "tip": "parent-dementia-no-power-of-attorney",
+      "title": "Dementia and no power of attorney",
+      "hook": "Mom was diagnosed with dementia and never signed a power of attorney. Is it too late?",
+      "voiceover": [
+        "Mom was diagnosed with dementia and never signed a power of attorney. Is it too late?",
+        "Not always. A diagnosis doesn't automatically mean she can't sign. If she still understands what the document does and who she's choosing, she may be able to sign now.",
+        "If she can't, the family usually needs a court guardianship, which takes longer and costs more.",
+        "That's why timing matters. Ask her doctor to note her abilities at the next visit.",
+        "There's a free dementia legal checklist at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "Dementia diagnosis. No power of attorney.",
+            "kicker": "Is it too late?",
+            "seconds": 5.5
+          },
+          {
+            "type": "point",
+            "text": "A diagnosis alone doesn't mean she can't sign.",
+            "kicker": "Not always",
+            "seconds": 7.5
+          },
+          {
+            "type": "point",
+            "text": "Can't sign anymore? Usually a court guardianship.",
+            "kicker": "Otherwise",
+            "seconds": 7.5
+          },
+          {
+            "type": "steps",
+            "title": "This week",
+            "items": [
+              "Ask her doctor to note her abilities",
+              "List her accounts",
+              "Talk with siblings about who acts"
+            ],
+            "seconds": 11.0
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/parent-dementia-no-power-of-attorney",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "A dementia diagnosis doesn't always close the door on signing a power of attorney. Here's what decides it, and why waiting costs more.",
+      "seedance": null,
+      "sensitive": true,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 8,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#ProtectYourFamily"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v09",
+      "pillar": "tip",
+      "tip": "house-still-in-moms-name",
+      "title": "What a TODI does",
+      "hook": "One form can keep your house out of probate in Illinois.",
+      "voiceover": [
+        "One form can keep your house out of probate in Illinois.",
+        "It's called a transfer on death instrument. You sign it, it gets recorded with the county, and you keep full control of your house while you're alive.",
+        "When you die, the house goes to the person you named, without probate.",
+        "It's not right for everyone. Blended families and people with Medicaid concerns should get advice first.",
+        "The full explainer is at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "One form can keep your house out of probate.",
+            "kicker": "Illinois",
+            "seconds": 5.0
+          },
+          {
+            "type": "house",
+            "kicker": "What it is",
+            "text": "Transfer on death instrument: signed, recorded, and you keep control.",
+            "seconds": 7.0
+          },
+          {
+            "type": "point",
+            "text": "At death, the house goes to who you named. No probate.",
+            "kicker": "What it does",
+            "seconds": 7.0
+          },
+          {
+            "type": "point",
+            "text": "Blended family or Medicaid concerns? Get advice first.",
+            "kicker": "Careful",
+            "seconds": 7.0
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/house-still-in-moms-name",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "Illinois lets you name who gets your house at death with a recorded form, called a TODI. How it works, and when it's not the right tool.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 9,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#MoneyTips"
+      ],
+      "renderer": "blender"
+    },
+    {
+      "id": "v10",
+      "pillar": "money",
+      "tip": "what-does-estate-planning-cost",
+      "title": "What an estate plan costs",
+      "hook": "Scared of a lawyer bill that never ends? Ask this one question first.",
+      "voiceover": [
+        "Scared of a lawyer bill that never ends? Ask this one question first.",
+        "Is it a flat fee, and what exactly does it include?",
+        "Many estate planning attorneys quote a flat fee for a set package. A basic plan is usually a will and powers of attorney for property and health care.",
+        "What changes the price: whether you need a trust, how much you own, and how complicated the family is.",
+        "Our pricing page lists the packages in our network and what each one includes."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "Scared of a bill that never ends?",
+            "kicker": "Ask first",
+            "seconds": 5.5
+          },
+          {
+            "type": "point",
+            "text": "Is it a flat fee, and what does it include?",
+            "kicker": "The question",
+            "seconds": 7.5
+          },
+          {
+            "type": "steps",
+            "title": "A basic plan usually has",
+            "items": [
+              "A will",
+              "Power of attorney for property",
+              "Power of attorney for health care"
+            ],
+            "seconds": 11.0
+          },
+          {
+            "type": "point",
+            "text": "Trust? More assets? Complex family? The price changes.",
+            "kicker": "What moves it",
+            "seconds": 7.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/what-does-estate-planning-cost",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "How estate planning is usually priced, what's in a basic plan, and what makes it cost more.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 10,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#PersonalFinance"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v11",
+      "pillar": "faq",
+      "tip": "will-medicaid-take-the-house",
+      "title": "Will Medicaid take the house?",
+      "hook": "Will the state take Mom's house to pay for the nursing home?",
+      "voiceover": [
+        "Will the state take Mom's house to pay for the nursing home?",
+        "Here's how it works in Illinois. After a Medicaid recipient dies, the state can file a claim against the probate estate.",
+        "But not while a spouse, a child under 21, or a blind or disabled child is still living.",
+        "And moving the house into your name right before applying can backfire. Medicaid looks back five years.",
+        "Find your look-back date with the free tool at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "Will the state take Mom's house?",
+            "kicker": "The real answer",
+            "seconds": 6.0
+          },
+          {
+            "type": "point",
+            "text": "Illinois can claim against the probate estate after death.",
+            "kicker": "How it works",
+            "seconds": 7.5
+          },
+          {
+            "type": "point",
+            "text": "Not while a spouse, a child under 21, or a disabled child survives.",
+            "kicker": "Exceptions",
+            "seconds": 7.5
+          },
+          {
+            "type": "stat",
+            "value": "5 years",
+            "label": "Medicaid look-back for gifts and transfers",
+            "cite": "42 U.S.C. 1396p",
+            "seconds": 7.0
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/will-medicaid-take-the-house",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "The fear that the state takes the house, and what Illinois Medicaid estate recovery actually reaches.",
+      "seedance": null,
+      "sensitive": true,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 11,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#EstatePlanningQuestions"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v12",
+      "pillar": "myth",
+      "tip": "not-enough-to-need-a-will",
+      "title": "Myth: wills are for rich people",
+      "hook": "Myth: you need money to need a will.",
+      "voiceover": [
+        "Myth: you need money to need a will.",
+        "A will is less about money and more about who decides. Who raises your kids. Who handles your affairs. Who gets the car and the savings.",
+        "Without one, Illinois law decides for you. With a spouse and kids, it's half and half. An unmarried partner gets nothing.",
+        "See what Illinois would do with your stuff using the free who-inherits tool at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "myth",
+            "myth": "Wills are for rich people.",
+            "fact": "A will decides who raises your kids and who handles things, not just who gets money.",
+            "seconds": 10.0
+          },
+          {
+            "type": "point",
+            "text": "No will? Illinois picks your heirs.",
+            "kicker": "Default",
+            "seconds": 7.5
+          },
+          {
+            "type": "point",
+            "text": "Unmarried partner? Gets nothing.",
+            "kicker": "Surprise",
+            "seconds": 7.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/not-enough-to-need-a-will",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "Forty percent of people without a will say they don't have enough to need one. Here's what Illinois does if you don't make one.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 12,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#MythBusting"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v13",
+      "pillar": "checklist",
+      "tip": "parent-dementia-no-power-of-attorney",
+      "title": "3 papers every parent over 65 should have",
+      "hook": "If your parents are over 65, make sure these three papers exist.",
+      "voiceover": [
+        "If your parents are over 65, make sure these three papers exist.",
+        "One: a power of attorney for property, so someone can pay bills if they can't.",
+        "Two: a power of attorney for health care, so the right person talks to the doctors.",
+        "Three: a will or trust, so you know what they want.",
+        "Ask where the originals are kept. A copy in a drawer nobody can find doesn't help in a hospital.",
+        "Free checklist at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "Parents over 65? Check for these 3 papers.",
+            "kicker": "Adult kids",
+            "seconds": 6.5
+          },
+          {
+            "type": "steps",
+            "title": "The three",
+            "items": [
+              "Power of attorney for property",
+              "Power of attorney for health care",
+              "A will or trust"
+            ],
+            "seconds": 13.0
+          },
+          {
+            "type": "point",
+            "text": "Ask where the originals are. A lost copy doesn't help in a hospital.",
+            "kicker": "Then",
+            "seconds": 8.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/parent-dementia-no-power-of-attorney",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "A simple conversation starter for adult children: the three documents to ask your parents about, and where the originals should be.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 13,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#Checklist"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v14",
+      "pillar": "fear",
+      "tip": "blended-family-kids-inherit",
+      "title": "Blended families: will my kids get anything?",
+      "hook": "Remarried with kids from your first marriage? Your kids might get nothing.",
+      "voiceover": [
+        "Remarried with kids from your first marriage? Here's the risk.",
+        "If everything goes to your new spouse, it's theirs. When they die, it goes to their heirs. That might not include your children.",
+        "And stepchildren don't inherit from a stepparent by default in Illinois.",
+        "A trust can take care of your spouse for life and then pass to your kids.",
+        "There's a free blended family guide at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "Remarried with kids from before?",
+            "kicker": "The risk",
+            "seconds": 5.0
+          },
+          {
+            "type": "point",
+            "text": "All to your spouse? Then it follows their plan, not yours.",
+            "kicker": "How it slips",
+            "seconds": 6.5
+          },
+          {
+            "type": "point",
+            "text": "Stepchildren don't inherit by default in Illinois.",
+            "kicker": "Also",
+            "seconds": 6.5
+          },
+          {
+            "type": "point",
+            "text": "A trust can provide for your spouse, then your kids.",
+            "kicker": "The fix",
+            "seconds": 6.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/blended-family-kids-inherit",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "How kids from a first marriage get left out by accident, and the setup many blended families use instead.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 14,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#ProtectYourFamily"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v15",
+      "pillar": "fear",
+      "tip": "unmarried-partner-rights",
+      "title": "12 years together, not married",
+      "hook": "Together twelve years but not married? In Illinois, that doesn't count.",
+      "voiceover": [
+        "Together twelve years but not married? In Illinois, that doesn't count.",
+        "There's no common-law marriage here. Without paperwork, your partner inherits nothing from you.",
+        "And at the hospital, your partner comes after your relatives in the list of people who can make decisions.",
+        "A will, updated beneficiary forms, and health care powers of attorney fix most of it.",
+        "More at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "Together 12 years. Not married.",
+            "kicker": "Illinois",
+            "seconds": 4.0
+          },
+          {
+            "type": "point",
+            "text": "No common-law marriage. No paperwork, no inheritance.",
+            "kicker": "The law",
+            "seconds": 5.0
+          },
+          {
+            "type": "point",
+            "text": "At the hospital, relatives come first.",
+            "kicker": "Also",
+            "seconds": 5.0
+          },
+          {
+            "type": "steps",
+            "title": "Fix it",
+            "items": [
+              "Wills",
+              "Beneficiary forms",
+              "Health care powers of attorney"
+            ],
+            "seconds": 8.0
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/unmarried-partner-rights",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "Illinois doesn't recognize common-law marriage. What that means for unmarried partners, and the paperwork that fixes it.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 15,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#ProtectYourFamily"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v16",
+      "pillar": "tip",
+      "tip": "who-gets-my-kids",
+      "title": "Don't name your kids on life insurance",
+      "hook": "Don't name your young kids as your life insurance beneficiary. Here's why.",
+      "voiceover": [
+        "Don't name your young kids directly on your life insurance. Here's why.",
+        "A minor can't receive the money. In Illinois, a court usually appoints a guardian of the estate to hold it until they turn eighteen, with court reports along the way.",
+        "Then at eighteen, it's all theirs, no strings.",
+        "Many parents name a trust instead, or set it up under the Illinois transfers to minors law.",
+        "There's a free calculator for how much a guardian needs at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "Don't name young kids on your life insurance.",
+            "kicker": "Parents",
+            "seconds": 6.0
+          },
+          {
+            "type": "point",
+            "text": "A minor can't receive it. A court-supervised guardian holds it.",
+            "kicker": "Why",
+            "seconds": 8.0
+          },
+          {
+            "type": "stat",
+            "value": "18",
+            "label": "the age they get it all, no strings",
+            "cite": null,
+            "seconds": 7.0
+          },
+          {
+            "type": "point",
+            "text": "Many parents name a trust instead.",
+            "kicker": "Instead",
+            "seconds": 8.0
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/who-gets-my-kids",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "Naming a child directly on a life insurance policy usually means court supervision. What parents do instead.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 16,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#MoneyTips"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v17",
+      "pillar": "money",
+      "tip": "illinois-estate-tax-4-million",
+      "title": "Life insurance counts toward the $4M",
+      "hook": "Your life insurance payout counts toward the Illinois estate tax.",
+      "voiceover": [
+        "Your life insurance payout can count toward the Illinois estate tax.",
+        "If you own the policy, the death benefit is part of your estate. A one-million-dollar policy can push a three-and-a-half-million-dollar estate over the four-million line.",
+        "Some families move the policy into a trust so it doesn't count. That has to be done right, and early.",
+        "Check where you stand with the free estimator at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "Your life insurance can count toward the $4M.",
+            "kicker": "Illinois",
+            "seconds": 5.0
+          },
+          {
+            "type": "point",
+            "text": "Own the policy? The payout is part of your estate.",
+            "kicker": "Why",
+            "seconds": 6.5
+          },
+          {
+            "type": "stat",
+            "value": "$3.5M + $1M",
+            "label": "can cross the $4M Illinois line",
+            "cite": null,
+            "seconds": 6.0
+          },
+          {
+            "type": "point",
+            "text": "Some families use a trust to own the policy.",
+            "kicker": "An option",
+            "seconds": 6.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/illinois-estate-tax-4-million",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "A life insurance payout can push an Illinois estate over $4 million. How that happens and what families do about it.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 17,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#PersonalFinance"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v18",
+      "pillar": "faq",
+      "tip": "spouse-died-accounts-frozen",
+      "title": "Do I owe my spouse's credit card debt?",
+      "hook": "Do you have to pay your spouse's credit cards after they die?",
+      "voiceover": [
+        "Do you have to pay your spouse's credit cards after they die?",
+        "Usually not for a card in their name alone, unless it was joint or you co-signed. Illinois can make a spouse responsible for some family expenses, like medical bills, so ask first.",
+        "The estate pays valid debts first. If there isn't enough, most unsecured debt goes unpaid.",
+        "Collectors may still call. Ask questions before you pay anything out of your own money.",
+        "There's a free guide to debts after a death at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "Do you owe your spouse's credit card debt?",
+            "kicker": "After a death",
+            "seconds": 6.0
+          },
+          {
+            "type": "point",
+            "text": "Their card alone? Usually not. Medical bills can be different.",
+            "kicker": "Short answer",
+            "seconds": 8.5
+          },
+          {
+            "type": "point",
+            "text": "The estate pays valid debts first.",
+            "kicker": "How it works",
+            "seconds": 8.5
+          },
+          {
+            "type": "point",
+            "text": "Don't pay from your own money before you ask.",
+            "kicker": "Careful",
+            "seconds": 8.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/spouse-died-accounts-frozen",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "After a spouse dies, collectors may call. Who actually owes what in Illinois.",
+      "seedance": null,
+      "sensitive": true,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 18,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#EstatePlanningQuestions"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v19",
+      "pillar": "myth",
+      "tip": "house-still-in-moms-name",
+      "title": "Myth: a will avoids probate",
+      "hook": "Myth: if there's a will, there's no probate.",
+      "voiceover": [
+        "Myth: if there's a will, there's no probate.",
+        "A will is the set of instructions you give the probate court. It doesn't skip the court.",
+        "What actually avoids probate: a living trust, joint ownership with a survivor, a beneficiary form, or a transfer on death instrument.",
+        "That's why a house in one person's name usually goes through probate, will or not.",
+        "Full answer at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "myth",
+            "myth": "If there's a will, there's no probate.",
+            "fact": "A will is the instructions you give the probate court.",
+            "seconds": 9.5
+          },
+          {
+            "type": "house",
+            "kicker": "Your house",
+            "text": "In one name only? Usually probate, will or not.",
+            "seconds": 4.0
+          },
+          {
+            "type": "steps",
+            "title": "What skips probate",
+            "items": [
+              "A living trust",
+              "Joint ownership with a survivor",
+              "Beneficiary forms and TODIs"
+            ],
+            "seconds": 9.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/house-still-in-moms-name",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "A will doesn't avoid probate. What does, and why the house is usually the problem.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 19,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#MythBusting"
+      ],
+      "renderer": "blender"
+    },
+    {
+      "id": "v20",
+      "pillar": "checklist",
+      "tip": "how-long-probate-takes-illinois",
+      "title": "Named executor? First 5 things",
+      "hook": "Just found out you're the executor? Do these five things first.",
+      "voiceover": [
+        "Just found out you're the executor? Do these five things first.",
+        "One. Find the original will. In Illinois it has to be filed with the circuit court clerk.",
+        "Two. Order several certified death certificates.",
+        "Three. Secure the house and the car. Keep the insurance going.",
+        "Four. List what the person owned and how each thing was titled.",
+        "Five. Don't pay debts from your own pocket yet.",
+        "Free executor checklist at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "You're the executor. Start here.",
+            "kicker": "First 5 things",
+            "seconds": 6.5
+          },
+          {
+            "type": "steps",
+            "title": "First",
+            "items": [
+              "File the original will",
+              "Order death certificates",
+              "Secure the house and car"
+            ],
+            "seconds": 11.0
+          },
+          {
+            "type": "steps",
+            "title": "Then",
+            "items": [
+              "List assets and titles",
+              "Don't pay debts yourself yet"
+            ],
+            "seconds": 8.5,
+            "start": 4
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/how-long-probate-takes-illinois",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "Named as executor in Illinois? The first five steps, in order.",
+      "seedance": null,
+      "sensitive": true,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 20,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#Checklist"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v21",
+      "pillar": "fear",
+      "tip": "what-does-estate-planning-cost",
+      "title": "DIY will vs attorney",
+      "hook": "A $50 online will or an attorney? Here's the honest tradeoff.",
+      "voiceover": [
+        "A fifty-dollar online will or an attorney? Here's the honest tradeoff.",
+        "An online will can work if your life is simple and it's signed the right way, in front of two witnesses who inherit nothing.",
+        "Where it goes wrong: kids from a prior marriage, a house you want to keep out of probate, a business, or a family member who'll fight.",
+        "The mistakes only show up after you're gone, when nobody can fix them.",
+        "If you already have one, get the free red-flags checklist at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "$50 online will or an attorney?",
+            "kicker": "Honest tradeoff",
+            "seconds": 5.5
+          },
+          {
+            "type": "point",
+            "text": "Online can work for simple lives, signed right.",
+            "kicker": "When DIY works",
+            "seconds": 7.5
+          },
+          {
+            "type": "steps",
+            "title": "When it goes wrong",
+            "items": [
+              "Kids from a prior marriage",
+              "A house to keep out of probate",
+              "A family member who'll fight"
+            ],
+            "seconds": 11.0
+          },
+          {
+            "type": "point",
+            "text": "Mistakes show up after you're gone.",
+            "kicker": "The catch",
+            "seconds": 7.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/what-does-estate-planning-cost",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "When a DIY will is fine, and when it isn't. No sales pitch, just the tradeoff.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 21,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#ProtectYourFamily"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v22",
+      "pillar": "tip",
+      "tip": "parent-dementia-no-power-of-attorney",
+      "title": "Who decides if there's no health care POA",
+      "hook": "No health care power of attorney? Illinois law has a list of who decides.",
+      "voiceover": [
+        "No health care power of attorney? Illinois law has a list of who decides.",
+        "It goes in order: a guardian, then a spouse or civil union partner, then adult children, then parents, then siblings, and on down.",
+        "If three adult kids disagree, that's when it gets hard.",
+        "A health care power of attorney lets you skip the list and name one person.",
+        "More at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "No health care POA? Here's who decides.",
+            "kicker": "Illinois",
+            "seconds": 4.0
+          },
+          {
+            "type": "steps",
+            "title": "The order",
+            "items": [
+              "Guardian",
+              "Spouse or civil union partner",
+              "Adult children, then parents"
+            ],
+            "seconds": 8.0
+          },
+          {
+            "type": "point",
+            "text": "Three kids who disagree? That's when it gets hard.",
+            "kicker": "The problem",
+            "seconds": 5.5
+          },
+          {
+            "type": "point",
+            "text": "A health care POA names one person.",
+            "kicker": "The fix",
+            "seconds": 5.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/parent-dementia-no-power-of-attorney",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "The Illinois Health Care Surrogate Act sets who decides when there's no health care power of attorney.",
+      "seedance": null,
+      "sensitive": true,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 22,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#MoneyTips"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v23",
+      "pillar": "money",
+      "tip": "will-medicaid-take-the-house",
+      "title": "Don't put the house in your kid's name",
+      "hook": "Thinking about putting the house in your kid's name to protect it? Wait.",
+      "voiceover": [
+        "Thinking about putting the house in your kid's name to protect it? Wait.",
+        "It can start Medicaid's five-year penalty clock if you need care.",
+        "It exposes the house to your child's debts and divorce.",
+        "And your child can lose the tax break they'd get by inheriting it instead.",
+        "There are better tools. Get advice before you sign a deed.",
+        "Free guide at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "Putting the house in your kid's name? Wait.",
+            "kicker": "Before you sign",
+            "seconds": 3.5
+          },
+          {
+            "type": "house",
+            "kicker": "Before you sign a deed",
+            "text": "Adding a child to the deed can backfire.",
+            "seconds": 4.0
+          },
+          {
+            "type": "steps",
+            "title": "Three risks",
+            "items": [
+              "Starts Medicaid's 5-year clock",
+              "Exposed to your child's debts",
+              "Loses the inherited-house tax break"
+            ],
+            "seconds": 8.5
+          },
+          {
+            "type": "point",
+            "text": "Get advice before you sign a deed.",
+            "kicker": "Then",
+            "seconds": 7.0
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/will-medicaid-take-the-house",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "Why adding a child to the deed is often the worst way to protect a house.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 23,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#PersonalFinance"
+      ],
+      "renderer": "blender"
+    },
+    {
+      "id": "v24",
+      "pillar": "faq",
+      "tip": "who-gets-my-kids",
+      "title": "Do grandparents automatically get the kids?",
+      "hook": "Do grandparents automatically get the kids if both parents die?",
+      "voiceover": [
+        "Do grandparents automatically get the kids if both parents die?",
+        "No. Nobody gets them automatically.",
+        "Without a will naming a guardian, family members can ask the court, and an Illinois judge decides what's best for the kids.",
+        "Two sets of grandparents and an aunt can all ask. That's how custody fights start.",
+        "Naming a guardian avoids most of that. Free worksheet at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "Do grandparents automatically get the kids?",
+            "kicker": "Parents ask",
+            "seconds": 4.5
+          },
+          {
+            "type": "point",
+            "text": "No. Nobody gets them automatically.",
+            "kicker": "Short answer",
+            "seconds": 6.0
+          },
+          {
+            "type": "point",
+            "text": "Family can ask the court. A judge decides.",
+            "kicker": "What happens",
+            "seconds": 6.0
+          },
+          {
+            "type": "point",
+            "text": "Name a guardian in your will.",
+            "kicker": "Avoid the fight",
+            "seconds": 6.0
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/who-gets-my-kids",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "Grandparents don't automatically get custody in Illinois. What happens instead, and how to avoid a fight.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 24,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#EstatePlanningQuestions"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v25",
+      "pillar": "myth",
+      "tip": "illinois-estate-tax-4-million",
+      "title": "Myth: a living trust saves estate tax",
+      "hook": "Myth: a living trust saves you estate tax.",
+      "voiceover": [
+        "Myth: a living trust saves you estate tax.",
+        "A basic revocable living trust avoids probate. On its own, it doesn't cut estate tax.",
+        "What helps married couples in Illinois is how the trust is written, for example keeping the first spouse's four million from going to waste.",
+        "That's a design choice, not something you get by default.",
+        "More at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "myth",
+            "myth": "A living trust saves estate tax.",
+            "fact": "A basic living trust avoids probate. It doesn't cut tax on its own.",
+            "seconds": 12.0
+          },
+          {
+            "type": "point",
+            "text": "What helps is how it's written, like using both spouses' $4M.",
+            "kicker": "For couples",
+            "seconds": 9.0
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/illinois-estate-tax-4-million",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "Living trusts avoid probate. Saving Illinois estate tax depends on how the trust is written.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 25,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#MythBusting"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v26",
+      "pillar": "checklist",
+      "tip": "is-my-online-will-valid",
+      "title": "Where to keep your original will",
+      "hook": "Where's your original will right now? If you're not sure, neither is your family.",
+      "voiceover": [
+        "Where's your original will right now? If you're not sure, neither is your family.",
+        "In Illinois, the court usually wants the original, not a copy. A missing original can mean extra court steps.",
+        "Keep it somewhere safe that your executor can get to. A fireproof box at home, or with the attorney who drafted it.",
+        "A safe deposit box only in your name can be hard for family to open.",
+        "Tell your executor where it is. Today.",
+        "Free checklist at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "Where's your original will right now?",
+            "kicker": "Quick check",
+            "seconds": 7.0
+          },
+          {
+            "type": "point",
+            "text": "Illinois courts usually want the original.",
+            "kicker": "Why it matters",
+            "seconds": 9.0
+          },
+          {
+            "type": "steps",
+            "title": "Good places",
+            "items": [
+              "A fireproof box at home",
+              "With the attorney who drafted it",
+              "Tell your executor where"
+            ],
+            "seconds": 14.0
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/is-my-online-will-valid",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "A will nobody can find can create extra court steps. Where to keep it and who to tell.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 26,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#Checklist"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v27",
+      "pillar": "fear",
+      "tip": "house-still-in-moms-name",
+      "title": "Siblings can't agree on the house",
+      "hook": "One sibling lives in the house. One wants to sell. One won't return calls.",
+      "voiceover": [
+        "One sibling lives in Mom's house. One wants to sell. One won't return calls.",
+        "This is one of the most common estate fights.",
+        "The options usually go in this order: talk it out, one buys the others out, a mediator, and only then a court-ordered sale.",
+        "Each step costs more and takes longer than the one before.",
+        "There's a free guide for when heirs disagree at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "One lives there. One wants to sell. One won't call back.",
+            "kicker": "Sound familiar?",
+            "seconds": 3.5
+          },
+          {
+            "type": "house",
+            "kicker": "Mom's house",
+            "text": "Three siblings. One house. Three plans.",
+            "seconds": 4.0
+          },
+          {
+            "type": "steps",
+            "title": "The ladder",
+            "items": [
+              "Talk it out",
+              "Buyout",
+              "Mediation",
+              "Court-ordered sale"
+            ],
+            "seconds": 9.0
+          },
+          {
+            "type": "point",
+            "text": "Each step costs more than the last.",
+            "kicker": "Why start low",
+            "seconds": 7.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/house-still-in-moms-name",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "When siblings disagree about a parent's house, there's a ladder of options. Start at the bottom.",
+      "seedance": null,
+      "sensitive": true,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 27,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#ProtectYourFamily"
+      ],
+      "renderer": "blender"
+    },
+    {
+      "id": "v28",
+      "pillar": "tip",
+      "tip": "blended-family-kids-inherit",
+      "title": "Divorced? Check this form",
+      "hook": "Divorced? Your ex might still get your 401(k).",
+      "voiceover": [
+        "Divorced? Your ex might still get your 401(k).",
+        "Divorce doesn't always update beneficiary forms, and a 401(k) usually pays whoever is on the form.",
+        "Check every retirement account and life insurance policy. Change the name. Add a backup.",
+        "Then update your will and powers of attorney too.",
+        "Free checklist at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "Divorced? Your ex might still get your 401(k).",
+            "kicker": "Check this",
+            "seconds": 4.0
+          },
+          {
+            "type": "point",
+            "text": "Divorce doesn't always update the form.",
+            "kicker": "Why",
+            "seconds": 5.5
+          },
+          {
+            "type": "steps",
+            "title": "Do this",
+            "items": [
+              "Check every retirement account",
+              "Check life insurance",
+              "Update your will and POAs"
+            ],
+            "seconds": 8.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/blended-family-kids-inherit",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "After a divorce, beneficiary forms are the most-missed update. What to check.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 28,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#MoneyTips"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v29",
+      "pillar": "money",
+      "tip": "not-enough-to-need-a-will",
+      "title": "You have more than you think",
+      "hook": "You think you don't have enough to need a plan. Add these up.",
+      "voiceover": [
+        "You think you don't have enough to need a plan. Add these up.",
+        "Your 401(k). The life insurance from work, often one or two times your salary. Your car. Your checking and savings. Maybe a house.",
+        "Most people are surprised by the total.",
+        "And the bigger question isn't how much. It's who gets it and who's in charge.",
+        "See who would inherit from you in Illinois at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "Don't have enough to need a plan? Add these up.",
+            "kicker": "Quick math",
+            "seconds": 6.0
+          },
+          {
+            "type": "steps",
+            "title": "Count",
+            "items": [
+              "401(k) or IRA",
+              "Life insurance from work",
+              "Car, savings, maybe a house"
+            ],
+            "seconds": 11.5
+          },
+          {
+            "type": "point",
+            "text": "The bigger question: who gets it and who's in charge.",
+            "kicker": "Then",
+            "seconds": 7.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/not-enough-to-need-a-will",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "Most people have more than they think once they count retirement accounts and work life insurance.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 29,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#PersonalFinance"
+      ],
+      "renderer": "remotion"
+    },
+    {
+      "id": "v30",
+      "pillar": "faq",
+      "tip": "what-does-estate-planning-cost",
+      "title": "What happens on a first consult?",
+      "hook": "Nervous about talking to an estate planning attorney? Here's what the first call is like.",
+      "voiceover": [
+        "Nervous about talking to an estate planning attorney? Here's what the first call is like.",
+        "You talk about your family, what you own, and what worries you. You don't need documents.",
+        "The attorney explains your options in plain English, including when a simpler plan is enough.",
+        "If you want help, you get a flat-fee quote. You don't have to decide on the call.",
+        "Book a time at the link."
+      ],
+      "blender": {
+        "scenes": [
+          {
+            "type": "hook",
+            "text": "What's the first call with an attorney like?",
+            "kicker": "No pressure",
+            "seconds": 8.5
+          },
+          {
+            "type": "steps",
+            "title": "On the call",
+            "items": [
+              "Your family and what worries you",
+              "Options in plain English",
+              "A flat-fee quote, no obligation"
+            ],
+            "seconds": 16.5
+          },
+          {
+            "type": "end",
+            "url": "familyfutureplanning.com/tips/what-does-estate-planning-cost",
+            "seconds": 3.5
+          }
+        ]
+      },
+      "caption": "What happens on a first estate planning consult, so there are no surprises.",
+      "seedance": null,
+      "sensitive": false,
+      "review": {
+        "status": "pending",
+        "reviewer": "attorney",
+        "notes": ""
+      },
+      "day": 30,
+      "hashtags": [
+        "#IllinoisEstatePlanning",
+        "#EstatePlanning",
+        "#Illinois",
+        "#EstatePlanningQuestions"
+      ],
+      "renderer": "remotion"
+    }
+  ],
+  "renderers": {
+    "remotion": "Text cards, count-up stats, step lists, myth/fact, captions from the voiceover. Fast (about a minute per short). Default.",
+    "blender": "3D house scenes (house type) plus the same card scenes. About 9 minutes per short on 4 CPU cores."
+  }
+}

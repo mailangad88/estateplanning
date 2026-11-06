@@ -105,4 +105,4 @@ The family that waits for a calm season rarely gets one. A new baby, a job chang
 
 ## How we can help
 
-If you have been meaning to start, the [plan finder](/plan-finder) is a quiet first step that takes a few minutes and commits you to nothing. When you are ready, our attorneys can meet with you, explain your options in plain language and prepare documents for Illinois or New Jersey. Bring what you have, and we will work out the rest together.
+If you have been meaning to start, the [plan finder](/plan-finder) is a quiet first step that takes a few minutes and commits you to nothing. When you are ready, our attorneys can meet with you, explain your options in plain language and prepare documents for Illinois. Bring what you have, and we will work out the rest together.

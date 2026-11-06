@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { explainerForVideo, getVideo, VideoExplainer, videos } from "@/components/visuals/video";
 import { PageHero } from "@/components/page-hero";
 import { Breadcrumbs, CardGrid } from "@/components/ui";
+import CtaBox from "@/components/CtaBox";
+import { KitAnswer, KitFaqs, firstSentences } from "@/components/page-kit";
 
 export function generateStaticParams() {
   return videos.map((v) => ({ slug: v.slug }));
@@ -21,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: "video.other",
       title: v.title,
       description: v.description,
-      images: [{ url: v.poster, width: 1280, height: 720 }],
+      images: [{ url: v.poster, width: 1280, height: 720, alt: `Video still: ${v.title}` }],
       videos: [{ url: v.src, width: 1280, height: 720, type: "video/mp4" }],
     },
   };
@@ -42,6 +44,7 @@ export default async function VideoPage({ params }: { params: Promise<{ slug: st
         title={v.title}
         lead={v.description}
       />
+      <KitAnswer answer={firstSentences(v.transcript, 2)} label="In short" />
       <VideoExplainer slug={v.slug} pagePath={`/videos/${v.slug}`} transcript={false} />
       {explainerForVideo(v.slug) ? (
         <p>
@@ -62,6 +65,8 @@ export default async function VideoPage({ params }: { params: Promise<{ slug: st
         General education, not legal advice. Laws vary by state. Watching this video does not create an attorney-client
         relationship. Attorney advertising.
       </p>
+      <KitFaqs url={`/videos/${v.slug}`} topic={v.title} context={`${v.topics.join(" ")} ${v.description}`} categories={["Getting started"]} />
+      <CtaBox from={`video-${v.slug}`} />
       {related.length ? (
         <>
           <h2>Related videos</h2>

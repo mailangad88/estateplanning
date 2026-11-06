@@ -18,7 +18,7 @@ export const SCORE_WEIGHTS = {
   /** Consent to text is the one real contactability signal we have at submit time */
   smsConsent: 5,
   /** Capture points where the visitor explicitly asked to talk */
-  directRequest: { intake: 10, callback: 15 } as Partial<Record<CaptureTool, number>>,
+  directRequest: { intake: 10, callback: 15, chat: 10 } as Partial<Record<CaptureTool, number>>,
   /** Everything tools contribute, however many were used. Routing can still use tool behavior; the score cannot be inflated by it. */
   toolSignalCap: 20,
   toolCompletion: 3,
@@ -29,7 +29,7 @@ export const SCORE_WEIGHTS = {
 };
 
 /** Capture points where the visitor explicitly asked to be contacted. Always tier "hot". */
-const DIRECT_REQUESTS: CaptureTool[] = ["intake", "callback"];
+const DIRECT_REQUESTS: CaptureTool[] = ["intake", "callback", "chat"];
 const TOOL_CAPTURES: CaptureTool[] = ["readiness_score", "cost_calculator", "will_vs_trust", "family_plan"];
 
 /** hot = Urgent, grade A or a direct request; warm = everything else that is served. Kept for existing consumers; prefer `grade` and `urgent`. */
@@ -209,7 +209,7 @@ export function scoreLead(input: {
   if (input.smsConsent) add("contact:sms_consent", "Agreed to text messages", w.smsConsent);
 
   const tool = input.capture?.tool ?? "plan_finder";
-  add(`intent:${tool}`, tool === "callback" ? "Asked for a call back" : "Filled in the intake form", w.directRequest[tool] ?? 0);
+  add(`intent:${tool}`, tool === "callback" ? "Asked for a call back" : tool === "chat" ? "Left details in the website chat" : "Filled in the intake form", w.directRequest[tool] ?? 0);
 
   const toolParts = toolComponents(input.capture, input.priorTools ?? []);
   components.push(...toolParts);

@@ -5,7 +5,7 @@ Short, silent, captioned explainer videos for the site. One parameterized compos
 ## Layout
 
 - `src/data/scripts.json`: the 15 scripts (from `research/remotion-video-scripts.json`). Placeholders `{{SITE_URL}}`, `{{FIRM_SHORT_NAME}}`, `{{ATTORNEY_ADVERTISING_LABEL}}` and fact tokens such as `{{usdShort:fedExemptionIndividual}}` are resolved at build time from `src/config.json` and `src/data/videoFacts.json`. `[STATE]` was rewritten to "most states" / "your state".
-- `src/config.json`: the one place for the firm name, the (placeholder) domain `familyplanlaw.com`, advertising label and upload date.
+- `src/config.json`: the one place for the firm name, the live domain `familyfutureplanning.com`, advertising label and upload date.
 - `src/visual/specs.ts`: per-scene visual recipes (icon rows, flows, timelines, bars, calendar strips, compare cards). Add or change a scene's visual here. Templates are in `src/visual/templates.tsx`.
 - `src/lib/captions.js`: builds word-level `Caption[]` (`@remotion/captions`), pages them with `createTikTokStyleCaptions`, and writes WebVTT. Timings are spread across each scene by word weight.
 - Scenes are joined with `@remotion/transitions` (`TransitionSeries`, fade, slide into the CTA card). Headlines are fitted with `@remotion/layout-utils`.

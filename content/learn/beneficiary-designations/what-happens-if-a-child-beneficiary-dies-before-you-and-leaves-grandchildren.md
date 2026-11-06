@@ -102,4 +102,4 @@ You can see the whole subject in our [beneficiary designations guide](/learn/ben
 
 ## How we can help
 
-Our attorneys review beneficiary forms against your will or trust and write contingent designations that keep a deceased child's family in the plan. Start with the [plan finder](/plan-finder), or book a consultation through our [Illinois](/estate-planning/illinois) or [New Jersey](/estate-planning/new-jersey) page.
+Our attorneys review beneficiary forms against your will or trust and write contingent designations that keep a deceased child's family in the plan. Start with the [plan finder](/plan-finder), or book a consultation through our [Illinois](/estate-planning/illinois) page.

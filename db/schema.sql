@@ -57,10 +57,12 @@ CREATE TABLE lawyers (
   accept_sla_minutes  integer NOT NULL CHECK (accept_sla_minutes > 0),
   office              jsonb,                       -- {lat, lng}
   on_call             boolean NOT NULL DEFAULT false,
+  primary_intake      boolean NOT NULL DEFAULT false,  -- takes every incoming lead first; refers on the rest
   active              boolean NOT NULL DEFAULT true,
   stats               jsonb NOT NULL DEFAULT '{"avgAcceptMinutes":0,"showRate":0,"reviewScore":0}'
 );
 CREATE INDEX lawyers_firm_idx ON lawyers (firm_id);
+CREATE UNIQUE INDEX lawyers_one_primary_intake ON lawyers ((true)) WHERE primary_intake;
 
 CREATE TABLE persons (
   id           text PRIMARY KEY,
@@ -613,6 +615,38 @@ CREATE TABLE retainer_templates (
 );
 CREATE INDEX retainer_templates_firm_idx ON retainer_templates (firm_id, status);
 
+-- A lead the handling attorney passed on: to another platform attorney (to_lawyer_id, with a new offer)
+-- or to one outside the platform (outside_name). No fee or payment columns on purpose: nothing of value
+-- may be tied to a referral until the Illinois Rule 5.4 / 7.2 review is done.
+CREATE TABLE lead_referrals (
+  id              text PRIMARY KEY,
+  lead_id         text NOT NULL REFERENCES leads(id),
+  from_lawyer_id  text NOT NULL REFERENCES lawyers(id),
+  from_firm_id    text NOT NULL REFERENCES firms(id),
+  to_lawyer_id    text REFERENCES lawyers(id),
+  to_firm_id      text REFERENCES firms(id),
+  assignment_id   text REFERENCES assignments(id),
+  outside_name    text,
+  outside_firm    text,
+  outside_contact text,
+  reason          text NOT NULL CHECK (reason IN ('conflict','capacity','practice_area','location','language','client_request','other')),
+  note            text,
+  client_agreed   boolean NOT NULL CHECK (client_agreed),   -- Rule 1.6: the client agreed to their details going on
+  referred_at     timestamptz NOT NULL,
+  referred_by     text NOT NULL,
+  outcome         text NOT NULL DEFAULT 'pending' CHECK (outcome IN ('pending','accepted','booked','retained','declined','no_response')),
+  outcome_at      timestamptz,
+  outcome_by      text,
+  outcome_note    text,
+  -- A platform attorney (to_lawyer_id + to_firm_id) or an outside one (outside_name); the service sets only one.
+  CHECK ((to_lawyer_id IS NULL) = (to_firm_id IS NULL)),
+  CHECK (to_lawyer_id IS NOT NULL OR outside_name IS NOT NULL),
+  CHECK (assignment_id IS NULL OR to_lawyer_id IS NOT NULL),
+  CHECK (to_lawyer_id IS NULL OR to_lawyer_id <> from_lawyer_id)
+);
+CREATE INDEX lead_referrals_lead_idx ON lead_referrals (lead_id, referred_at);
+CREATE INDEX lead_referrals_from_idx ON lead_referrals (from_firm_id, referred_at);
+
 -- One electronic signature made with the built-in e-sign. Insert-only (forbid_mutation trigger, no UPDATE or
 -- DELETE grant): the typed name, time, IP prefix, device summary, the hashes of what was signed and the
 -- version of the electronic-records consent the signer agreed to.
@@ -953,6 +987,7 @@ ALTER TABLE plan_link_uses       ENABLE ROW LEVEL SECURITY;  ALTER TABLE plan_li
 ALTER TABLE plan_mfa             ENABLE ROW LEVEL SECURITY;  ALTER TABLE plan_mfa             FORCE ROW LEVEL SECURITY;
 ALTER TABLE plan_sessions        ENABLE ROW LEVEL SECURITY;  ALTER TABLE plan_sessions        FORCE ROW LEVEL SECURITY;
 ALTER TABLE retainer_templates   ENABLE ROW LEVEL SECURITY;  ALTER TABLE retainer_templates   FORCE ROW LEVEL SECURITY;
+ALTER TABLE lead_referrals       ENABLE ROW LEVEL SECURITY;  ALTER TABLE lead_referrals       FORCE ROW LEVEL SECURITY;
 ALTER TABLE engagement_signatures ENABLE ROW LEVEL SECURITY; ALTER TABLE engagement_signatures FORCE ROW LEVEL SECURITY;
 ALTER TABLE stored_blobs         ENABLE ROW LEVEL SECURITY;  ALTER TABLE stored_blobs         FORCE ROW LEVEL SECURITY;
 ALTER TABLE audit_events         ENABLE ROW LEVEL SECURITY;  ALTER TABLE audit_events         FORCE ROW LEVEL SECURITY;
@@ -989,6 +1024,7 @@ CREATE POLICY service_all ON plan_link_uses       FOR ALL TO app_service USING (
 CREATE POLICY service_all ON plan_mfa             FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON plan_sessions        FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON retainer_templates   FOR ALL TO app_service USING (true) WITH CHECK (true);
+CREATE POLICY service_all ON lead_referrals       FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON engagement_signatures FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_all ON stored_blobs         FOR ALL TO app_service USING (true) WITH CHECK (true);
 CREATE POLICY service_read ON fee_rule_versions   FOR SELECT TO app_service USING (true);
@@ -1227,6 +1263,15 @@ CREATE POLICY retainer_templates_update ON retainer_templates FOR UPDATE TO app_
   USING (app_role() IN ('firm_admin','attorney') AND firm_id = app_firm_id())
   WITH CHECK (app_role() IN ('firm_admin','attorney') AND firm_id = app_firm_id());
 
+-- lead referrals: platform admins see all; a firm admin sees the ones its firm sent or received; an attorney
+-- the ones they sent or received. Clients, intake, marketing and paralegals have no path. Written by the
+-- service role after the policy.ts check (src/server/services/referrals.ts).
+CREATE POLICY lead_referrals_select ON lead_referrals FOR SELECT TO app_user USING (
+  app_role() = 'platform_admin'
+  OR (app_role() = 'firm_admin' AND app_firm_id() IN (from_firm_id, to_firm_id))
+  OR (app_role() = 'attorney'   AND app_lawyer_id() IN (from_lawyer_id, to_lawyer_id))
+);
+
 -- signature records: read by whoever sees the whole case or is the client on it. Written by the service
 -- role after the policy.ts check; nobody updates or deletes them.
 CREATE POLICY engagement_signatures_select ON engagement_signatures FOR SELECT TO app_user
@@ -1258,6 +1303,7 @@ GRANT SELECT, INSERT                 ON template_approvals TO app_user;
 GRANT SELECT, INSERT                 ON page_approvals TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON retainer_templates TO app_user;
 GRANT SELECT                         ON engagement_signatures TO app_user;
+GRANT SELECT                         ON lead_referrals TO app_user;
 GRANT SELECT, INSERT, UPDATE         ON partners TO app_user;
 GRANT SELECT, INSERT                 ON partner_gifts TO app_user;
 GRANT SELECT, UPDATE                 ON partner_referrals TO app_user;
@@ -1280,6 +1326,7 @@ REVOKE UPDATE, DELETE, TRUNCATE ON page_approvals FROM PUBLIC, app_user, app_ser
 REVOKE UPDATE, DELETE, TRUNCATE ON engagement_signatures FROM PUBLIC, app_user, app_service;
 REVOKE UPDATE, DELETE, TRUNCATE ON stored_blobs FROM PUBLIC, app_user, app_service;
 REVOKE DELETE, TRUNCATE ON retainer_templates FROM PUBLIC, app_user, app_service;
+REVOKE DELETE, TRUNCATE ON lead_referrals FROM PUBLIC, app_user, app_service;
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON firms, lawyers, persons, users, leads, assignments, documents, comments,
   activities, consults, engagements, payments, tasks, billable_events, sequence_enrollments, suppressions TO app_service;
@@ -1289,6 +1336,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON family_plans, family_plan_bodies TO app_
 GRANT SELECT, INSERT ON plan_link_uses TO app_service; -- app_user has no grant at all
 GRANT SELECT, INSERT, UPDATE, DELETE ON plan_mfa, plan_sessions TO app_service;
 GRANT SELECT, INSERT, UPDATE ON retainer_templates TO app_service;
+GRANT SELECT, INSERT, UPDATE ON lead_referrals TO app_service;
 GRANT SELECT, INSERT ON engagement_signatures, stored_blobs TO app_service;
 GRANT SELECT, INSERT, UPDATE, DELETE ON partners, partner_referrals TO app_service;
 GRANT SELECT, INSERT ON partner_gifts TO app_service;

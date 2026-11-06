@@ -1,4 +1,5 @@
 import { getAllArticles } from "@/lib/library";
+import { SOCIAL_TIPS } from "@/config/social-tips";
 import { describe, expect, it } from "vitest";
 import { filterEvent, isRemarketingEvent } from "@/lib/analytics";
 import { isSensitivePath, SENSITIVE_PATH_PREFIXES } from "@/config/sensitive";
@@ -27,6 +28,7 @@ describe("sensitive paths", () => {
       ...getComparisons().map((c) => `/compare/${c.slug}`),
       ...getLifeEvents().map((l) => `/life-events/${l.slug}`),
       ...getAllArticles().map((a) => a.url),
+      ...SOCIAL_TIPS.map((t) => `/tips/${t.slug}`),
     ]);
     const planned = ["/estate-planning-for/", "/life-events/estate-planning-after-a-serious-diagnosis"];
     for (const p of SENSITIVE_PATH_PREFIXES) expect(existing.has(p) || planned.some((x) => p.startsWith(x)), p).toBe(true);

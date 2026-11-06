@@ -151,7 +151,10 @@
         "The Clerk of the Circuit Court lists Schaumburg in Suburban District 3, served by the Rolling Meadows courthouse at 2121 Euclid Ave., Rolling Meadows, IL 60008. (source: https://www.cookcountyclerkofcourt.org/divisions/suburban-districts-0)",
         "Schaumburg Township Disability & Senior Services lists a Senior Will Program with appointments with participating attorneys at reduced cost; call 847-285-4541. (source: https://schaumburgtownship.org/services/disability-senior-services/)"
       ],
-      "nearby": [],
+      "nearby": [
+        "hoffman-estates",
+        "palatine"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -167,7 +170,10 @@
         "The Clerk of the Circuit Court lists Oak Park in Suburban District 4, served by the Maywood courthouse at 1500 Maybrook Dr., Maywood, IL 60153. (source: https://www.cookcountyclerkofcourt.org/divisions/suburban-districts-0)",
         "Oak Park Township Senior & Disability Services, 130 South Oak Park Avenue, offers an Advanced Directives Clinic and affordable wills for qualifying residents age 60 and over; call (708) 383-8060. (source: https://oakparktownship.org/senior-services/)"
       ],
-      "nearby": [],
+      "nearby": [
+        "berwyn",
+        "cicero"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -183,7 +189,10 @@
         "The Clerk of the Circuit Court lists Orland Park in Suburban District 5, served by the Bridgeview courthouse at 10220 S. 76th Ave., Bridgeview, IL 60455. (source: https://www.cookcountyclerkofcourt.org/divisions/suburban-districts-0)",
         "Orland Township, 14807 S. Ravinia Avenue, lists a Five Wishes living will program for seniors; call 708-403-4222. (source: https://orlandtownship.org/senior-programs/)"
       ],
-      "nearby": [],
+      "nearby": [
+        "tinley-park",
+        "oak-lawn"
+      ],
       "updated": "2026-10-26"
     },
     {
@@ -307,6 +316,871 @@
         "aurora"
       ],
       "updated": "2026-10-26"
+    },
+    {
+      "slug": "springfield",
+      "name": "Springfield",
+      "county": "Sangamon County",
+      "localNotes": [
+        "AgeLinc, the Area Agency on Aging for this region, is at 2731 S. MacArthur Blvd., Springfield, phone (217) 787-9234 or (800) 252-2918. Its site lists help with benefit access and with Medicare Part D enrollment. (source: https://www.agelinc.org)",
+        "Land of Lincoln Legal Aid's Northern Regional Office is at 1010 South Second Street, Springfield, phone (217) 529-8400. It lists Sangamon among the counties it serves. (source: https://lincolnlegal.org/locations/)",
+        "Sangamon County's Treasurer runs a Senior Citizens Real Estate Tax Deferral program for people 65 and older, who may defer all or part of their real estate taxes. (source: https://sangamonil.gov/departments/s-z/treasurer/senior-citizens-real-estate-tax-deferral)"
+      ],
+      "nearby": [
+        "alton",
+        "decatur"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "peoria",
+      "name": "Peoria",
+      "county": "Peoria County",
+      "localNotes": [
+        "The Peoria Township Assessor is at 427 W. Main Street, Peoria, phone (309) 324-7459, open Monday to Friday, 8:00 to 4:30. The page describes a $5,000 senior exemption at age 65 that requires signing up, and a Senior Assessment Freeze with a $75,000 income limit for 2026. (source: https://peoriatownshipil.com/officials/assessor/)",
+        "Central Illinois Agency on Aging, the Area Agency on Aging for Peoria County, is at 700 Hamilton Blvd., Peoria, phone (309) 674-2071. Its site lists information and assistance and Senior Medicare Patrol fraud-prevention outreach. (source: https://www.agecentral.org)"
+      ],
+      "nearby": [
+        "bloomington"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "champaign",
+      "name": "Champaign",
+      "county": "Champaign County",
+      "localNotes": [
+        "Land of Lincoln Legal Aid's Eastern Regional Office is at 302 North First Street, Champaign, phone (217) 356-1351. It lists Champaign and 14 other counties, including Macon and Vermilion, as its service area. (source: https://lincolnlegal.org/locations/)",
+        "The Champaign County Assessment Office, at 102 E. Main Street, Urbana, phone 217-384-3760, offers a $5,000 Senior Homestead Exemption and a Senior Assessment Freeze. (source: https://www.champaigncountyil.gov/ccao/exemptions.php)"
+      ],
+      "nearby": [
+        "decatur",
+        "danville"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "bloomington",
+      "name": "Bloomington",
+      "county": "McLean County",
+      "localNotes": [
+        "The City of Bloomington Township Assessor is at 607 S. Gridley, Suite A, Bloomington, phone (309) 434-2890. The township office is Suite B, phone 309-434-2730. (source: https://bloomingtoncitytownship.org/services/additional-resources/)",
+        "East Central Illinois Area Agency on Aging is at 1003 Maple Hill Road, Bloomington, phone 309-829-2065. It is the Area Agency on Aging for McLean, Champaign, Macon and Vermilion counties, among others. (source: https://ilaging.illinois.gov/forprofessionals/aaa-list.html)",
+        "For senior property tax exemptions, call the McLean County Supervisor of Assessments at 309-888-5130. The Treasurer, at 309-888-5180, handles the Senior Citizen Tax Deferral program. (source: https://www.mcleancountyil.gov/406/Senior-Citizen-Tax-Information)"
+      ],
+      "nearby": [
+        "peoria"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "decatur",
+      "name": "Decatur",
+      "county": "Macon County",
+      "localNotes": [
+        "Land of Lincoln Legal Aid has a Decatur office at 1620 South Taylorville Road, phone (217) 859-7320, a satellite of its Champaign office. Its list of counties served includes Macon. (source: https://lincolnlegal.org/locations/)",
+        "The Macon County Recorder is at 141 South Main Street, Room 201, Decatur, phone 217-424-1359, and records deeds, mortgages and liens. (source: https://maconcounty.illinois.gov/departments/recorder)",
+        "The Macon County Supervisor of Assessments, at 141 South Main Street, Room 401, Decatur, phone 217-424-1364, lists the Senior Citizens Homestead Exemption, the Senior Assessment Freeze and the Senior Tax Deferral program. (source: https://maconcounty.illinois.gov/departments/supervisor-of-assessments/)"
+      ],
+      "nearby": [
+        "champaign",
+        "springfield",
+        "bloomington"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "quincy",
+      "name": "Quincy",
+      "county": "Adams County",
+      "localNotes": [
+        "The Quincy Township Assessor is at 706 Maine Street, Quincy, phone 217-228-4505, open Monday to Friday, 8:00 AM to 4:00 PM. The page says exemptions are handled by the Adams County Supervisor of Assessments, not the Township Assessor. (source: https://www.quincyil.gov/Government/Quincy-Township/Quincy-Township-Assessor)",
+        "Land of Lincoln Legal Aid has a Quincy office at 926 Broadway Street, Suite C, phone (217) 617-4300. It lists Adams among the counties it serves. (source: https://lincolnlegal.org/locations/)",
+        "West Central Illinois Area Agency on Aging, the Area Agency on Aging for Adams County, lists a mailing address of 639 York Street, Suite 333, Quincy, phone 217-223-7904. (source: https://ilaging.illinois.gov/forprofessionals/aaa-list.html)"
+      ],
+      "nearby": [
+        "springfield"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "danville",
+      "name": "Danville",
+      "county": "Vermilion County",
+      "localNotes": [
+        "CRIS Healthy Aging is at 309 N Franklin Street, Danville, phone (217) 443-2999, open Monday to Friday, 8:00 AM to 4:00 PM. Its site lists Adult Protective Services, Senior Information Services and a Care Coordination Unit for Vermilion County. (source: https://www.agestrong.org)",
+        "Call the Vermilion County Assessment Office at 217-554-1940 to have a Senior Citizens Homestead Exemption application mailed to you. (source: https://www.vercounty.org/supervisor-of-assessments/exemption-information/)",
+        "The Vermilion County Recorder's standard document fee is $69.00 for deeds, mortgages and releases, effective July 1, 2023. (source: https://www.vercounty.org/recorder/recording-fees/)"
+      ],
+      "nearby": [
+        "champaign"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "elgin",
+      "name": "Elgin",
+      "county": "Kane County",
+      "localNotes": [
+        "Elgin Township's main building is at 729 S. McLean Blvd., Elgin, and its Supervisor's Office can be reached at (847) 741-2045, Monday to Friday, 8:00 a.m. to 4:00 p.m. The township lists senior programs including a Senior Utility Assistance Application, a Lending Closet and Ride in Kane. (source: https://elgintownship.com/?p=62)",
+        "The Illinois Department on Aging senior center list shows Senior Services Associates at 101 South Grove, Elgin, IL 60120, phone 847-741-0404. (source: https://ilaging.illinois.gov/content/dam/soi/en/web/aging/resources/documents/seniorcenters.pdf)",
+        "The Kane County senior homestead exemption lowers assessed value by $8,000 for owners age 65 or older. Call the Kane County Assessment Office at 630-208-3818. (source: https://assessments.kanecountyil.gov/Pages/Senior-Homestead.aspx)"
+      ],
+      "nearby": [
+        "st-charles",
+        "geneva",
+        "aurora"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "edwardsville",
+      "name": "Edwardsville",
+      "county": "Madison County",
+      "localNotes": [
+        "Edwardsville Township is at 300 W. Park, Edwardsville, IL 62025, phone (618) 656-0292. Its Senior Services Network page, marked coming soon, lists categories such as health insurance and medical assistance, tax relief assistance, elder justice and abuse, and veterans assistance. (source: https://edwardsvilletownship.com/community-services/senior-services)",
+        "The Madison County Circuit Clerk's main office is in the Madison County Courthouse at 155 N. Main Street, Edwardsville, open Monday to Friday, 8:30 a.m. to 4:30 p.m. Probate falls under civil cases, which must go through an approved e-filing provider. (source: https://www.madisoncountyil.gov/departments/circuit_clerk/)",
+        "Madison County offers a $5,000 Senior Citizens Homestead Exemption for owners age 65 or older. The assessment office phone is (618) 296-6200. (source: https://www.madisoncountyil.gov/departments/chief_county_assesment_office/available_exemptions.php)"
+      ],
+      "nearby": [
+        "alton",
+        "belleville"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "carbondale",
+      "name": "Carbondale",
+      "county": "Jackson County",
+      "localNotes": [
+        "The Illinois Department on Aging lists Senior Adult Services at 409 North Springer Street, Carbondale, IL 62901, phone 618-457-4151. (source: https://ilaging.illinois.gov/content/dam/soi/en/web/aging/resources/documents/seniorcenters.pdf)",
+        "The Egyptian Area Agency on Aging, 200 E. Plaza Dr., Carterville, IL 62918, phone (618) 985-8311, serves Jackson County and 12 other southern counties. Its listed services include the Senior Health Insurance Program (SHIP), Adult Protective Services, Legal Assistance and Ombudsman. (source: https://egyptianaaa.org/senior-centers/)",
+        "The Jackson County Circuit Clerk is at 1001 Walnut Street, Murphysboro, open Monday to Friday, 8:00 a.m. to 4:00 p.m., main number (618) 687-7300. Probate is listed as a department you can ask for by phone. (source: https://jacksoncoilcircuitclerk.gov/contact-us/)"
+      ],
+      "nearby": [
+        "edwardsville"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "kankakee",
+      "name": "Kankakee",
+      "county": "Kankakee County",
+      "localNotes": [
+        "Kankakee County probate filings are handled at the Main Circuit Clerk's Office, Room 209, 450 E. Court Street, Kankakee, IL 60901, phone 815-936-5700. (source: https://kankakeecountyil.gov/502/County-Clerk-of-the-Circuit-Court)",
+        "The Supervisor of Assessments is at 189 East Court Street, Kankakee, phone 815-937-2945. Its page lists forms for the general and senior homestead exemptions, the Senior Assessment Freeze (PTAX-340), and the disabled veteran and returning veterans exemptions. (source: https://www.k3county.net/184/Supervisor-of-Assessments-Office)",
+        "The Illinois Department on Aging lists Kankakee County Community Services, Inc. at 657 East Court Street, Kankakee, IL 60901, with a Senior Center line of 815-933-7883. (source: https://ilaging.illinois.gov/content/dam/soi/en/web/aging/resources/documents/seniorcenters.pdf)"
+      ],
+      "nearby": [
+        "joliet"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "dekalb",
+      "name": "DeKalb",
+      "county": "DeKalb County",
+      "localNotes": [
+        "DeKalb Township's Assessor's Office is at 122 North 1st Street, Ste C/D, DeKalb, IL 60115, phone (815) 758-5454, open weekdays 8:30 a.m. to 4:30 p.m. The page says it can help with information about your property tax assessment. (source: https://dekalbtownship.org/)",
+        "The DeKalb Township Supervisor's Office is at 2323 South 4th Street, DeKalb, phone (815) 758-8282, and the township offers help with financial assistance. (source: https://dekalbtownship.org/)",
+        "The Illinois Department on Aging lists the DeKalb Senior Citizens Center at 330 Grove Street, DeKalb, IL 60115, phone 815-758-4718. (source: https://ilaging.illinois.gov/content/dam/soi/en/web/aging/resources/documents/seniorcenters.pdf)"
+      ],
+      "nearby": [
+        "aurora",
+        "st-charles"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "crystal-lake",
+      "name": "Crystal Lake",
+      "county": "McHenry County",
+      "localNotes": [
+        "The Illinois Department on Aging lists Grand Oaks Active Adults Center at 1401 W. Route 176, Crystal Lake, IL 60014, phone 815-358-2414. (source: https://ilaging.illinois.gov/content/dam/soi/en/web/aging/resources/documents/seniorcenters.pdf)",
+        "The City of Crystal Lake's phone list gives the McHenry County Assessments office as (815) 334-4290 and Veteran's Assistance as (815) 334-4229. (source: https://www.crystallake.org/our-community/resident-information/important-phone-numbers-to-know)",
+        "McHenry County probate filings must be e-filed unless there is good cause, and wills cannot be e-filed. The original will goes to the Civil windows in Room 136 of the courthouse in Woodstock. (source: https://www.mchenrycircuitclerk.org/court-information/probate/)"
+      ],
+      "nearby": [
+        "waukegan",
+        "schaumburg"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "downers-grove",
+      "name": "Downers Grove",
+      "county": "DuPage County",
+      "localNotes": [
+        "The Illinois Department on Aging lists the Downers Grove Township Senior Center at 4341 Saratoga Avenue, Downers Grove, IL 60515, phone 630-719-6670. (source: https://ilaging.illinois.gov/content/dam/soi/en/web/aging/resources/documents/seniorcenters.pdf)",
+        "The Village of Downers Grove has a full-time Social Worker who can refer residents to services including help with elder abuse, and offers a Senior Resource Guide and a taxi coupon program with a 50% subsidy for eligible participants. (source: https://www.downers.us/socialservicesreferrals)",
+        "The DuPage senior homestead exemption reduces equalized assessed value by up to $8,000. The Supervisor of Assessments is at 421 N. County Farm Road, Wheaton, and 630-407-5858 is listed for questions about acceptable ownership documents. (source: https://www.dupagecounty.gov/government/departments/supervisor_of_assessments/exemptions/senior_citizens/)"
+      ],
+      "nearby": [
+        "wheaton",
+        "naperville"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "arlington-heights",
+      "name": "Arlington Heights",
+      "county": "Cook County",
+      "localNotes": [
+        "The Arlington Heights Senior Center is at 1801 W. Central Road, phone 847.253.5532; it lists classes, meal programs, transportation resources and senior services through Catholic Charities (source: https://vah.com/residents/senior_center/).",
+        "Arlington Heights Village Hall is at 33 S. Arlington Heights Road, phone 847.368.5000, open Monday through Friday 8 a.m. to 5 p.m. (source: https://www.vah.com/hours_and_locations/).",
+        "Wheeling Township's office, including its Assessor (senior citizen, senior freeze and disabled veteran exemptions, 847-259-1515), is at 1616 N. Arlington Heights Road, Arlington Heights (source: https://wheelingtownship.com).",
+        "The Cook County Clerk's Recordings Division is at 118 N. Clark, Room 120, Chicago, and its page says documents must be recorded there rather than at courthouse satellite offices (source: https://cookcountyclerkil.gov/recordings)."
+      ],
+      "nearby": [
+        "palatine",
+        "schaumburg",
+        "evanston"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "palatine",
+      "name": "Palatine",
+      "county": "Cook County",
+      "localNotes": [
+        "The Palatine Township Assessor's Office is at 721 South Quentin Road, Suite 101, Palatine; the direct line is 847-358-6164. It lists homeowner, senior citizen, low-income senior citizen, disabled veteran and disabled persons exemptions and offers help filing them (source: https://palatinetownship-il.gov/services/assessors-office/).",
+        "Palatine Township's main office line is 847-358-6700, at the same Quentin Road address (source: https://palatinetownship-il.gov/hub/).",
+        "The Cook County Clerk's Recordings Division is at 118 N. Clark, Room 120, Chicago, and its page says documents must be recorded there rather than at courthouse satellite offices (source: https://cookcountyclerkil.gov/recordings).",
+        "The Circuit Court's Rolling Meadows courthouse (Third Municipal District) is at 2121 Euclid Avenue, Rolling Meadows, and the court's page lists probate among the case types not heard in that district (source: https://www.cookcountycourtil.gov/district/third-municipal-district-rolling-meadows)."
+      ],
+      "nearby": [
+        "arlington-heights",
+        "schaumburg",
+        "hoffman-estates"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "mount-prospect",
+      "name": "Mount Prospect",
+      "county": "Cook County",
+      "localNotes": [
+        "The Village's Community Connections Center, a second location for the Human Services Department, is at 1711 W. Algonquin Rd., Mount Prospect, phone (847) 506-4930, open Monday through Friday 11 a.m. to 7:30 p.m. (source: https://www.mountprospect.org/departments/human-services/community-connections-center).",
+        "Elk Grove Township's Assessor's Office, 224-265-6110, handles senior citizen, senior freeze and homeowner exemptions for township residents; confirm which township your address is in (source: https://elkgrovetownship.com/tax-advocacy/).",
+        "The Cook County Clerk's Recordings Division is at 118 N. Clark, Room 120, Chicago, and its page says documents must be recorded there rather than at courthouse satellite offices (source: https://cookcountyclerkil.gov/recordings)."
+      ],
+      "nearby": [
+        "arlington-heights",
+        "des-plaines",
+        "elk-grove-village"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "des-plaines",
+      "name": "Des Plaines",
+      "county": "Cook County",
+      "localNotes": [
+        "The Des Plaines Senior Center (listed as GENCenter) is at 52 East Northwest Highway, phone 847.768.5944, with programs for adults 55+ and delivered meals for homebound residents 60+ or with disabilities (source: https://www.desplainesil.gov/files/assets/city/v/1/human-services/2026-community-resource-guide.pdf).",
+        "City of Des Plaines Human Services is at 1420 Miner Street, phone 847.391.5480 (source: https://www.desplainesil.gov/files/assets/city/v/1/human-services/2026-community-resource-guide.pdf).",
+        "The Maine Township Assessor, 1700 Ballard Road, Park Ridge, 847-297-2510, handles senior citizen, senior freeze and homeowner exemptions and helps seniors with Cook County Treasurer deferral paperwork (source: https://files.mainetown.com/business_detail_T12_R62.php).",
+        "The Cook County Clerk's Recordings Division is at 118 N. Clark, Room 120, Chicago, and its page says documents must be recorded there rather than at courthouse satellite offices (source: https://cookcountyclerkil.gov/recordings)."
+      ],
+      "nearby": [
+        "park-ridge",
+        "mount-prospect",
+        "skokie"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "park-ridge",
+      "name": "Park Ridge",
+      "county": "Cook County",
+      "localNotes": [
+        "The Maine Township Assessor's Office is at 1700 Ballard Road, Park Ridge, phone (847) 297-2510; it lists senior citizen, senior freeze, homeowner, disabled persons and veteran exemptions and states no fees (source: https://files.mainetown.com/business_detail_T12_R62.php).",
+        "Maine Township Senior Services, also at 1700 Ballard Road, lists activities, general and emergency assistance, a food pantry and medical transportation for residents 60+ or with disabilities (source: https://www.desplainesil.gov/files/assets/city/v/1/human-services/2026-community-resource-guide.pdf).",
+        "The Cook County Clerk's Recordings Division is at 118 N. Clark, Room 120, Chicago, and its page says documents must be recorded there rather than at courthouse satellite offices (source: https://cookcountyclerkil.gov/recordings).",
+        "The Circuit Court's Rolling Meadows courthouse (Third Municipal District) is at 2121 Euclid Avenue, Rolling Meadows, and the court's page lists probate among the case types not heard in that district (source: https://www.cookcountycourtil.gov/district/third-municipal-district-rolling-meadows)."
+      ],
+      "nearby": [
+        "des-plaines",
+        "skokie",
+        "chicago"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "elk-grove-village",
+      "name": "Elk Grove Village",
+      "county": "Cook County",
+      "localNotes": [
+        "The Elk Grove Township Assessor's Office is at 600 Landmeier Road, Elk Grove Village (east entrance), phone 224-265-6110; it lists senior citizen, senior freeze, homeowner and disabled veteran exemptions (source: https://elkgrovetownship.com/tax-advocacy/).",
+        "Elk Grove Township's main line is 847.437.0300, and its site lists older adult programming and benefits plus senior/disabled transportation (source: https://elkgrovetownship.com/?p=215).",
+        "The Cook County Clerk's Recordings Division is at 118 N. Clark, Room 120, Chicago, and its page says documents must be recorded there rather than at courthouse satellite offices (source: https://cookcountyclerkil.gov/recordings).",
+        "The Circuit Court's Rolling Meadows courthouse (Third Municipal District) is at 2121 Euclid Avenue, Rolling Meadows, and the court's page lists probate among the case types not heard in that district (source: https://www.cookcountycourtil.gov/district/third-municipal-district-rolling-meadows)."
+      ],
+      "nearby": [
+        "schaumburg",
+        "mount-prospect",
+        "des-plaines"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "hoffman-estates",
+      "name": "Hoffman Estates",
+      "county": "Cook County",
+      "localNotes": [
+        "The Schaumburg Township offices are at 1 Illinois Boulevard, Hoffman Estates; Senior Services is 847-285-4541 and serves township residents 55+ with Medicare/Medicaid/SNAP benefits counseling and free SHIP insurance counseling (source: https://hpil.org/1206/Schaumburg-Township-Older-Adult-Resource).",
+        "The same program lists a Senior Will Program of discounted wills and powers of attorney with a Chicago Bar Association accredited attorney; the page does not say whether Hoffman Estates addresses fall inside the township, so confirm with the Township Locator (source: https://hpil.org/1206/Schaumburg-Township-Older-Adult-Resource).",
+        "The Cook County Clerk's Recordings Division is at 118 N. Clark, Room 120, Chicago, and its page says documents must be recorded there rather than at courthouse satellite offices (source: https://cookcountyclerkil.gov/recordings).",
+        "The Circuit Court's Rolling Meadows courthouse (Third Municipal District) is at 2121 Euclid Avenue, Rolling Meadows, and the court's page lists probate among the case types not heard in that district (source: https://www.cookcountycourtil.gov/district/third-municipal-district-rolling-meadows)."
+      ],
+      "nearby": [
+        "schaumburg",
+        "palatine",
+        "elgin"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "glenview",
+      "name": "Glenview",
+      "county": "Cook County",
+      "localNotes": [
+        "Glenview Senior Services is on the main floor of Village Hall, 2500 East Lake Avenue, phone (847) 904-4366, open 8:30 a.m. to 3:30 p.m. Monday to Friday. It provides information on older adults' benefits, help with energy assistance, tax relief and pharmaceutical assistance, and help with Medicare and health insurance. (source: https://www.glenview.il.us/senior-services)",
+        "The same Glenview page lists adult protective services and a Senior Housing Assistance Program, which was closed for 2026 with the 2027 program to be announced later. (source: https://www.glenview.il.us/senior-services)",
+        "The Cook County Assessor's senior exemption reduces equalized assessed value by $8,000 and renews automatically once applied. A surviving spouse who is 65 or older qualifies in their own name, and a home can stay eligible after a parent who lived there on January 1, 2025 dies, with a death certificate and other papers. (source: https://www.cookcountyassessoril.gov/senior-citizen-exemption)",
+        "Cook County probate is handled at the Probate Division, Richard J. Daley Center, 50 West Washington St., Room 1202, Chicago, phone 312-603-6441, Monday to Friday 8:30 a.m. to 4:30 p.m. There is no fee for filing a will, and it can be filed in person, by mail, or at any of the Clerk's 5 offices. (source: https://www.cookcountyclerkofcourt.org/divisions/probate-division)",
+        "Cook County deeds and Transfer on Death Instruments must be recorded at the Clerk's Recordings Division, 118 N. Clark St., Room 120, Chicago; recording at courthouse satellite offices is not permitted. (source: https://www.cookcountyclerkil.gov/agency/recordings)"
+      ],
+      "nearby": [
+        "northbrook",
+        "skokie"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "northbrook",
+      "name": "Northbrook",
+      "county": "Cook County",
+      "localNotes": [
+        "The Village of Northbrook lists a Home Accessibility Grant Program for low-income homeowners, with grants up to $25,000 for home modifications that address health or safety. Village Hall is at 1225 Cedar Lane, phone 847-272-5050. (source: https://northbrook.il.us/440/Senior-Housing-Resources)",
+        "Northfield Township serves both incorporated and unincorporated Northbrook and provides emergency and general assistance and tax assessment counsel and services. (source: https://northbrook.il.us/579/Other-Government-Jurisdictions)",
+        "Crestwood Place at 1000 Waukegan Road, phone 847-272-0170, is publicly owned independent living for applicants 62 or older. (source: https://northbrook.il.us/440/Senior-Housing-Resources)",
+        "Cook County probate is handled at the Probate Division, Richard J. Daley Center, 50 West Washington St., Room 1202, Chicago, phone 312-603-6441, Monday to Friday 8:30 a.m. to 4:30 p.m. There is no fee for filing a will, and it can be filed in person, by mail, or at any of the Clerk's 5 offices. (source: https://www.cookcountyclerkofcourt.org/divisions/probate-division)"
+      ],
+      "nearby": [
+        "glenview",
+        "highland-park",
+        "skokie"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "niles",
+      "name": "Niles",
+      "county": "Cook County",
+      "localNotes": [
+        "The Village of Niles Senior Center can be reached at 847-588-8420, and its social workers and Family Services at 847-588-8460. Village Hall is at 1000 Civic Center Drive; the directory does not give the Senior Center's own street address. (source: https://www.vniles.com/directory.aspx)",
+        "The Niles Township Assessor's Office is listed at 847-673-9300, no street address shown. (source: https://www.vniles.com/directory.aspx)",
+        "The Cook County Assessor's senior exemption reduces equalized assessed value by $8,000 and renews automatically once applied. A surviving spouse who is 65 or older qualifies in their own name, and a home can stay eligible after a parent who lived there on January 1, 2025 dies, with a death certificate and other papers. (source: https://www.cookcountyassessoril.gov/senior-citizen-exemption)",
+        "Cook County probate is handled at the Probate Division, Richard J. Daley Center, 50 West Washington St., Room 1202, Chicago, phone 312-603-6441, Monday to Friday 8:30 a.m. to 4:30 p.m. There is no fee for filing a will, and it can be filed in person, by mail, or at any of the Clerk's 5 offices. (source: https://www.cookcountyclerkofcourt.org/divisions/probate-division)",
+        "Cook County deeds and Transfer on Death Instruments must be recorded at the Clerk's Recordings Division, 118 N. Clark St., Room 120, Chicago; recording at courthouse satellite offices is not permitted. (source: https://www.cookcountyclerkil.gov/agency/recordings)"
+      ],
+      "nearby": [
+        "skokie",
+        "morton-grove",
+        "lincolnwood"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "morton-grove",
+      "name": "Morton Grove",
+      "county": "Cook County",
+      "localNotes": [
+        "Morton Grove family and senior services run from Village Hall, 6101 Capulina Avenue. Senior programs are at (847) 663-3070 and the Village Social Worker at (847) 663-3072. The page lists free AARP Foundation tax preparation by appointment, a Health Equipment Lending Closet and a Lyft ride program for residents 65 and older. (source: https://www.mortongroveil.org/family-and-senior-services/)",
+        "The Cook County Assessor's senior exemption reduces equalized assessed value by $8,000 and renews automatically once applied. A surviving spouse who is 65 or older qualifies in their own name, and a home can stay eligible after a parent who lived there on January 1, 2025 dies, with a death certificate and other papers. (source: https://www.cookcountyassessoril.gov/senior-citizen-exemption)",
+        "Cook County probate is handled at the Probate Division, Richard J. Daley Center, 50 West Washington St., Room 1202, Chicago, phone 312-603-6441, Monday to Friday 8:30 a.m. to 4:30 p.m. There is no fee for filing a will, and it can be filed in person, by mail, or at any of the Clerk's 5 offices. (source: https://www.cookcountyclerkofcourt.org/divisions/probate-division)",
+        "Cook County deeds and Transfer on Death Instruments must be recorded at the Clerk's Recordings Division, 118 N. Clark St., Room 120, Chicago; recording at courthouse satellite offices is not permitted. (source: https://www.cookcountyclerkil.gov/agency/recordings)"
+      ],
+      "nearby": [
+        "niles",
+        "skokie",
+        "glenview"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "lincolnwood",
+      "name": "Lincolnwood",
+      "county": "Cook County",
+      "localNotes": [
+        "The Village of Lincolnwood's Seniors Matter Rideshare Program offers free Lyft rides to registered residents 65 and older for groceries, pharmacies and medical appointments, until funds run out. (source: https://lincolnwoodil.org/464/Social-Service-Resources)",
+        "Lincolnwood's social service resources page lists Elderwerks, CJE Senior Life, North Shore Senior Center and the Illinois Department on Aging, and gives the Illinois Adult Protective Services 24-hour hotline, 866-800-1409. (source: https://lincolnwoodil.org/464/Social-Service-Resources)",
+        "The Cook County Assessor's senior exemption reduces equalized assessed value by $8,000 and renews automatically once applied. A surviving spouse who is 65 or older qualifies in their own name, and a home can stay eligible after a parent who lived there on January 1, 2025 dies, with a death certificate and other papers. (source: https://www.cookcountyassessoril.gov/senior-citizen-exemption)",
+        "Illinois' Senior Health Insurance Program offers free Medicare counseling statewide at 1-800-252-8966. (source: https://ilaging.illinois.gov/ship)",
+        "Cook County deeds and Transfer on Death Instruments must be recorded at the Clerk's Recordings Division, 118 N. Clark St., Room 120, Chicago; recording at courthouse satellite offices is not permitted. (source: https://www.cookcountyclerkil.gov/agency/recordings)"
+      ],
+      "nearby": [
+        "skokie",
+        "niles",
+        "evanston"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "highland-park",
+      "name": "Highland Park",
+      "county": "Lake County",
+      "localNotes": [
+        "The Highland Park Senior Center is at 1201 Park Avenue West, phone 847.432.4110, open Monday to Thursday 9 AM to 4 PM and Friday 9 AM to 1 PM. It offers counseling services, a social services staff member and a medical equipment loan closet for people 50 and older; membership fees apply to many programs. (source: https://www.cityhpil.com/seniorcenter)",
+        "In Lake County, probate petitions must be filed by an attorney; the main branch is at 18 North County Street, Waukegan, phone 847-377-3380, and probate court dates are Mondays, Tuesdays and Thursdays at 9:00 AM. (source: https://www.lakecountycircuitclerk.org/201/Wills-Probate)",
+        "The Lake County Chief County Assessment Office posted reminders to file for the Senior Homestead Exemption and the Low-Income Senior Citizens Assessment Freeze Homestead Exemption. (source: https://www.lakecountyil.gov/154/Chief-County-Assessment-Office)"
+      ],
+      "nearby": [
+        "waukegan",
+        "northbrook",
+        "evanston"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "oak-lawn",
+      "name": "Oak Lawn",
+      "county": "Cook County",
+      "localNotes": [
+        "The Oak Lawn Senior Center is at the Memorial Activity Center, 5725 W 102nd St., Oak Lawn, IL 60453, phone (708) 529-6733, open Monday to Friday 10:00 a.m. to 2:00 p.m. The page lists exercise classes, arts and crafts and a monthly box lunch, and does not mention benefits or property tax help. (source: https://oaklawn-il.gov/residents/senior_center/)",
+        "The Clerk of the Circuit Court lists Oak Lawn under District 5, the Bridgeview Courthouse, 10220 S. 76th Avenue, Bridgeview, IL 60455, phone (708) 974-6500. Cook County probate itself is heard at the Daley Center in Chicago. (source: https://www.cookcountyclerkofcourt.org/divisions/suburban-districts-0)"
+      ],
+      "nearby": [
+        "orland-park",
+        "tinley-park"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "tinley-park",
+      "name": "Tinley Park",
+      "county": "Cook County",
+      "localNotes": [
+        "The Tinley Park Senior Center is inside the Public Safety Building at 17355 S. 68th Court, phone (708) 444-5150. Membership is free for ages 55 and older, and the page lists guest speakers on safety, health and finance. It says nothing about property tax or benefit help, and its hours differ between the page text and metadata, so call to confirm. (source: https://www.tinleypark.org/residents/senior_information.php)",
+        "The Village runs a senior bus service; to reserve a ride call (708) 532-7433 on weekdays from 8:30 a.m. to 2 p.m. (source: https://www.tinleypark.org/residents/senior_information.php)",
+        "The Clerk of the Circuit Court lists Tinley Park under District 5, the Bridgeview Courthouse, 10220 S. 76th Avenue, Bridgeview, IL 60455, phone (708) 974-6500. (source: https://www.cookcountyclerkofcourt.org/divisions/suburban-districts-0)"
+      ],
+      "nearby": [
+        "orland-park",
+        "oak-lawn",
+        "homewood"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "cicero",
+      "name": "Cicero",
+      "county": "Cook County",
+      "localNotes": [
+        "The Town of Cicero Assessor's Office is at 4949 West Cermak Road, Cicero, IL 60804, phone 708-656-3600 ext. 224. It files the Senior Exemption, Senior Freeze Exemption and Senior Homestead Exemption for residents 65 and over, and gives information on the Homeowners Exemption. (source: https://thetownofcicero.com/government/assessors-office/)",
+        "The Clerk of the Circuit Court lists Cicero under District 4, the Maywood Courthouse, 1500 Maybrook Dr., Maywood, IL 60153, phone 708-865-6040. Cook County probate itself is heard at the Daley Center in Chicago. (source: https://www.cookcountyclerkofcourt.org/divisions/suburban-districts-0)"
+      ],
+      "nearby": [
+        "berwyn",
+        "oak-park",
+        "chicago"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "berwyn",
+      "name": "Berwyn",
+      "county": "Cook County",
+      "localNotes": [
+        "Berwyn Township is at 6600 West 26th Street, Berwyn, IL 60402, main line 708-788-6600; the Township Assessor's phone is (708) 765-4519. The Assessor's page covers the Senior Exemption and the Low-Income Senior Citizens Assessment Freeze, and links a Deceased Senior Freeze Exemption affidavit. (source: https://berwyntownship.org/township/assessors-office/)",
+        "The City of Berwyn's township page lists no dedicated senior services program; it says the Assessor's Office helps homeowners with the senior exemption and senior freeze. (source: https://berwyn-il.gov/government/township)",
+        "The Clerk of the Circuit Court lists Berwyn under District 4, the Maywood Courthouse, 1500 Maybrook Dr., Maywood, IL 60153, phone 708-865-6040. (source: https://www.cookcountyclerkofcourt.org/divisions/suburban-districts-0)"
+      ],
+      "nearby": [
+        "cicero",
+        "oak-park",
+        "la-grange"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "homewood",
+      "name": "Homewood",
+      "county": "Cook County",
+      "localNotes": [
+        "The Homewood-Flossmoor Park District's Irwin Community Center, 18120 S. Highland Ave., Homewood, is listed by the Village of Flossmoor as a senior center with drop-in programs such as bingo and line dancing. No phone number is given. (source: https://flossmoor.org/558/Senior-Services)",
+        "The Clerk of the Circuit Court lists Homewood under District 6, the Markham Courthouse, 16501 South Kedzie, Markham, IL 60428, phone (708) 232-4551. Cook County probate itself is heard at the Daley Center in Chicago. (source: https://www.cookcountyclerkofcourt.org/divisions/suburban-districts-0)",
+        "The Thornton Township Assessor's Office, 333 E. 162nd Street, South Holland, IL 60473, phone (708) 596-6040 ext. 3175, is open Monday to Friday 9:00 a.m. to 4:00 p.m. and helps with Homeowner, Senior Citizen, Senior Freeze and Persons with Disabilities exemptions. (source: https://thorntontownship.com/assessors-office/)"
+      ],
+      "nearby": [
+        "tinley-park",
+        "orland-park"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "la-grange",
+      "name": "La Grange",
+      "county": "Cook County",
+      "localNotes": [
+        "The Lyons Township Assessor's Office is at 6404 Joliet Rd, Countryside (2nd floor of the Township Offices), phone (708) 482-8300 option 1, open Monday to Friday 8:30 a.m. to 4:30 p.m. It files Homeowners, Senior, Senior Freeze, Disability and Veterans exemptions and helps with Certificate of Error forms for exemptions not received. (source: https://lyonstownshipil.gov/?p=279)",
+        "The Village of La Grange main line is 708-579-2300. (source: https://www.villageoflagrange.com/259/Services)",
+        "The Clerk of the Circuit Court lists La Grange under District 5, the Bridgeview Courthouse, 10220 S. 76th Avenue, Bridgeview, IL 60455, phone (708) 974-6500. (source: https://www.cookcountyclerkofcourt.org/divisions/suburban-districts-0)"
+      ],
+      "nearby": [
+        "western-springs",
+        "downers-grove",
+        "berwyn"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "western-springs",
+      "name": "Western Springs",
+      "county": "Cook County",
+      "localNotes": [
+        "The Western Springs Senior Center is at the Grand Avenue Community Center, 4211 Grand Avenue, Western Springs, IL 60558, phone 708-246-3299, open Monday to Friday 12:30 p.m. to 5:00 p.m. for residents 55 and older; the page lists a 2026 membership of $40 for residents and $50 for non-residents. (source: https://wsprings.com/682/Senior-Center)",
+        "The Lyons Township Assessor's Office, 6404 Joliet Rd, Countryside, phone (708) 482-8300 option 1, files Senior and Senior Freeze exemptions and helps with Certificate of Error forms. (source: https://lyonstownshipil.gov/?p=4215)",
+        "The Clerk of the Circuit Court lists Western Springs under District 5, the Bridgeview Courthouse, 10220 S. 76th Avenue, Bridgeview, IL 60455, phone (708) 974-6500. (source: https://www.cookcountyclerkofcourt.org/divisions/suburban-districts-0)"
+      ],
+      "nearby": [
+        "la-grange",
+        "downers-grove",
+        "oak-park"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "elmhurst",
+      "name": "Elmhurst",
+      "county": "DuPage County",
+      "localNotes": [
+        "The City of Elmhurst lists senior tax and fee discounts: discounted vehicle stickers for residents 65 and older, a Utility Tax Rebate of 50% of the Municipal Utility Tax based on household income (apply at the Finance Counter between January 1 and May 15), and a water-bill Capital Investment Recovery Charge discount for households with a Senior Assessment Freeze. City Hall is at 209 N. York St., main phone (630) 530-3000. (source: https://Elmhurst.org/community/senior_services/tax_and_fee_discounts.php)",
+        "The City's page says the Senior Citizen Assessment Freeze and Homestead Exemption are handled by the DuPage County Supervisor of Assessments at (630) 407-5858. Township assessors are York Township, (630) 627-3354, and Addison Township, (630) 530-8161, depending on the property's location. (source: https://Elmhurst.org/community/senior_services/tax_and_fee_discounts.php)",
+        "Addison Township covers the part of Elmhurst north of North Avenue. Its township office is at 401 N. Addison Road, Addison, and its assessor's page describes the Senior Homestead Exemption, which reduces equalized assessed value by $8,000 for owners 65 or older. (source: https://www.addisontownship.com/exemptions/)",
+        "York Township's Assessor's Office, 1502 S. Meyers Rd., Lombard, is open Monday through Friday, 8:30 a.m. to 4:30 p.m., and covers Elmhurst. Its page describes the Low-Income Senior Assessment Freeze, which requires applicants to be 65 or older with 2025 household income of $75,000 or less and to apply every year. (source: https://yorktwsp.com/assessor-home/)"
+      ],
+      "nearby": [
+        "lombard",
+        "addison",
+        "oak-brook"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "lombard",
+      "name": "Lombard",
+      "county": "DuPage County",
+      "localNotes": [
+        "York Township serves Lombard from 1502 S. Meyers Road, Lombard, IL 60148. Its Senior Center lists General Assistance help including a food pantry, utility bill help through LIHEAP, and other financial assistance for York Township residents, Monday through Friday, 8:30 a.m. to 4:30 p.m. (source: https://search.211dupage.gov/search/d79e955d-4b04-57fe-bfcf-501dd1055915)",
+        "The York Township Assessor's Office is at 1502 S. Meyers Rd., Lombard, phone (630) 627-3354, open Monday through Friday, 8:30 a.m. to 4:30 p.m., using the north side entry. The page describes the Low-Income Senior Assessment Freeze (age 65 or older, 2025 household income of $75,000 or less, filed yearly) and says no appointment is required. (source: https://yorktwsp.com/assessor-home/)",
+        "The DuPage Supervisor of Assessments, 421 N. County Farm Road, Wheaton, takes senior homestead exemption applications and can be reached at (630) 407-5858. (source: https://www.dupagecounty.gov/government/departments/supervisor_of_assessments/exemptions/senior_citizens/)"
+      ],
+      "nearby": [
+        "elmhurst",
+        "glen-ellyn",
+        "westmont"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "glen-ellyn",
+      "name": "Glen Ellyn",
+      "county": "DuPage County",
+      "localNotes": [
+        "The Glen Ellyn Senior Center, administered by the Village of Glen Ellyn, is at 493 Forest Avenue and can be reached at 630-858-6343, Monday through Friday, 9:00 a.m. to 1:00 p.m. Its listing includes the Senior Health Insurance Program (SHIP), Ride DuPage, RTA reduced fare cards, and help with Benefits Access applications. (source: https://search.211dupage.gov/search/e887d8ab-27d5-5c72-9a9e-7fc4241609a0)",
+        "York Township's assessor page says the township includes sections of Glen Ellyn. The York Township Assessor's Office is at 1502 S. Meyers Rd., Lombard, phone (630) 627-3354. (source: https://yorktwsp.com/assessor-home/)",
+        "Milton Township, 1492 North Main Street, Wheaton, phone (630) 668-1608, lists Benefits Access, Ride DuPage, Senior Safety Education and general assistance. The listing does not say which Glen Ellyn addresses it serves, so check the property's township first. (source: https://search.211dupage.gov/search/afaf0aab-1f08-5dae-b95f-e73f33bb0549)"
+      ],
+      "nearby": [
+        "wheaton",
+        "lombard",
+        "downers-grove"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "oak-brook",
+      "name": "Oak Brook",
+      "county": "DuPage County",
+      "localNotes": [
+        "Mayslake Village Senior Housing, 1801 35th Street, Oak Brook, IL 60523, phone (630) 850-8232, is listed as providing rental housing for low-income older adults. Hours are Monday through Friday, 9:00 a.m. to 4:00 p.m. (source: https://search.211dupage.gov/search/ffe6fb0d-4cb2-596f-99d3-a8c64b572128)",
+        "York Township's page says the township includes Oak Brook. The York Township Assessor's Office is at 1502 S. Meyers Rd., Lombard, phone (630) 627-3354. (source: https://yorktwsp.com/assessor-home/)",
+        "Downers Grove Township lists Oak Brook as partly in its area. Its Assessor, 4340 Prince Street, Downers Grove, phone 630-719-6630, is open Monday through Friday, 8:30 a.m. to 4:30 p.m. and provides property tax exemption information. (source: https://dgtownship.com/)"
+      ],
+      "nearby": [
+        "elmhurst",
+        "lombard",
+        "downers-grove"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "carol-stream",
+      "name": "Carol Stream",
+      "county": "DuPage County",
+      "localNotes": [
+        "The Village of Carol Stream's police social service resources page lists the Bloomingdale Township Senior Center at (630) 529-7794, the Wayne Township Senior Center at (630) 231-7155, and DuPage County Community Services at (630) 407-6500 for financial assistance and referrals for low-income residents and seniors. The page does not say which township serves which addresses. (source: https://carolstream.org/departments/police-department/police-divisions/social-service/social-service-resources)",
+        "Wayne Township says it contains all or portions of Carol Stream. Its Senior Center, 27W031 North Avenue, West Chicago, is open Monday through Friday, 8:00 a.m. to 4:00 p.m., with free membership for township residents 55 and over. (source: https://www.waynetwp-il.org/seniors/)",
+        "Wayne Township's Senior Center offers Medicare information and counseling through a SHIP counselor by appointment, at (630) 231-7155, for Wayne Township residents. (source: https://search.211dupage.gov/search/b5f96ab7-d20e-58b4-ac13-e62604ab4ee3)"
+      ],
+      "nearby": [
+        "wheaton",
+        "naperville",
+        "schaumburg"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "addison",
+      "name": "Addison",
+      "county": "DuPage County",
+      "localNotes": [
+        "Addison Township, 401 N. Addison Road, Addison, IL 60101, phone 630-530-8161, runs the Assessor's Office for Addison. In-person help is Monday through Friday, 9:00 a.m. to 3:00 p.m.; phone hours are 8:00 a.m. to 4:30 p.m. (source: https://www.addisontownship.com/exemptions/)",
+        "The township's senior page lists DuPage County Human Services Senior Citizen Services at (630) 407-6500 for Circuit Breaker help and the DuPage Treasurer at (630) 407-5900 for property tax deferral, which it says to call before March 1 each year. (source: https://www.addisontownship.com/senior-information/)"
+      ],
+      "nearby": [
+        "elmhurst",
+        "lombard",
+        "carol-stream"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "westmont",
+      "name": "Westmont",
+      "county": "DuPage County",
+      "localNotes": [
+        "The Westmont Park District Senior Center is at 55 East Richmond Street, Westmont, IL 60559, open Monday through Friday, 8:30 a.m. to 4:30 p.m., phone (630) 963-5252. Its listing includes Medicare information and counseling for adults 55 and older, with no fee listed. (source: https://search.211dupage.gov/search/a2877371-6f67-551c-b874-e5206c53beb2)",
+        "Downers Grove Township says it serves the south three-quarters of Westmont. Its Assessor, 4340 Prince Street, Downers Grove, phone 630-719-6630, provides property tax exemption information. (source: https://dgtownship.com/)",
+        "York Township's page says the township includes sections of Westmont. The York Township Assessor's Office is at 1502 S. Meyers Rd., Lombard, phone (630) 627-3354. (source: https://yorktwsp.com/assessor-home/)"
+      ],
+      "nearby": [
+        "downers-grove",
+        "lombard",
+        "oak-brook"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "plainfield",
+      "name": "Plainfield",
+      "county": "Will County",
+      "localNotes": [
+        "Plainfield Township Community Center is at 15014 S DesPlaines St, Plainfield, phone 815.436.2029. Its senior services page lists active adult programs, a senior shuttle (815.436.1112), a medical loan closet, government aid for seniors and an adult day program. (source: https://plainfield-township.com/senior-services/)",
+        "The Plainfield Township Assessor's office can be reached at 815.436.5110 or info@plainfieldassessor.com; the Will County Supervisor of Assessments lists the assessor at 22525 W. Lockport Street, Plainfield. The township page describes a senior assessment freeze for low-income seniors, with a $75,000 maximum household income for the 2026 assessment year (payable 2027) and 2026 renewals due October 1, 2026. (source: https://plainfield-township.com/assessor/ and https://willcountysoa.com/TownshipAssessorInfo)"
+      ],
+      "nearby": [
+        "joliet",
+        "naperville"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "romeoville",
+      "name": "Romeoville",
+      "county": "Will County",
+      "localNotes": [
+        "Romeoville's Senior Connection newsletter lists village senior programs: monthly blood pressure checks, a Knox Box loaner, File of Life holders, monthly TRIAD meetings on insurance, fraud protection and safety, and the Golden Age Club at the Recreation Center, 900 W. Romeo Rd. Senior discount information is at (815) 886-7212. (source: https://www.romeoville.org/Archive.aspx?ADID=914)",
+        "Romeoville homeowners aged 62 and older can get a 10% reduction on water and sewer usage up to 8,000 gallons, and seniors can get a $3 monthly trash discount, with proof of age. The Senior Citizen Discount form is at Village Hall, 1050 West Romeo Road, phone 815-886-7200. (source: https://www.romeoville.org/Archive.aspx?ADID=914 and https://www.romeoville.org/)"
+      ],
+      "nearby": [
+        "joliet",
+        "plainfield"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "new-lenox",
+      "name": "New Lenox",
+      "county": "Will County",
+      "localNotes": [
+        "The New Lenox Township Assessor's office is at 1100 South Cedar Road, phone 815-485-9419, open Monday to Thursday 8:00 a.m. to 3:30 p.m. and Friday 8:00 a.m. to 3:00 p.m. The office page links to a Senior Citizen Homestead Exemption page. (source: https://www.newlenox.org/assessor)",
+        "New Lenox Township Offices, 1100 S. Cedar Road (815-485-6431), take applications for the Guy Sell Senior Housing building at 1090 S. Cedar Road, which has 24 apartments for township residents 62 or older. The township also registers homebound residents over 60 for Meals on Wheels at 815-726-0094. (source: https://newlenox.org/services/senior_services.php)"
+      ],
+      "nearby": [
+        "mokena",
+        "frankfort",
+        "joliet"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "frankfort",
+      "name": "Frankfort",
+      "county": "Will County",
+      "localNotes": [
+        "Frankfort Township's Senior Center is at 20701 Landings Pointe, Frankfort, phone 815-469-4907. Its senior department page lists fall-2026 balance and fitness classes, and the township lists senior activities, Meals on Wheels and senior housing. (source: https://www.frankforttownship.com/senior-department and https://frankfortil.org/community/townships.php)",
+        "The Will County Supervisor of Assessments lists the Frankfort Township assessor at 11000 W. Lincoln Highway, Frankfort, phone (815) 464-3180. (source: https://willcountysoa.com/TownshipAssessorInfo)"
+      ],
+      "nearby": [
+        "mokena",
+        "new-lenox",
+        "orland-park"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "mokena",
+      "name": "Mokena",
+      "county": "Will County",
+      "localNotes": [
+        "Mokena's Senior Essentials page says registered seniors (at least one homeowner 65 or older) get $0.25 per month off the refuse portion of the utility bill. The form is at Village Hall, 11004 Carpenter Street, or by calling (708) 479-3900. (source: https://www.mokena.org/pview.aspx?id=20706&catid=550)",
+        "The same page lists the Mokena Seniors Club, meeting the 3rd and 4th Thursday at 11:30 a.m. at the Frankfort Township Event Centre, 20701 Landings Pointe, Frankfort. It also describes the Will County senior property tax deferral program, with applications at willcountytreasurer.com or (815) 740-4691, Will County Office Building, 302 N. Chicago Street, Joliet. (source: https://www.mokena.org/pview.aspx?id=20706&catid=550)"
+      ],
+      "nearby": [
+        "frankfort",
+        "new-lenox",
+        "orland-park"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "oswego",
+      "name": "Oswego",
+      "county": "Kendall County",
+      "localNotes": [
+        "Oswego offers residents 65 and older a 20% garbage service discount and a $6.00 utility tax credit per village bill, applied for at Village Hall, 100 Parkers Mill. A 50% water and sewer usage discount requires first being approved for the Kendall County Senior Citizen Assessment Freeze Homestead Exemption (Kendall County Assessment Office, 630-553-4146); the Finance Department is at 630-554-3618. (source: https://www.oswegoil.org/residents/for-seniors/senior-utility-discounts)",
+        "Oswego Township is at 99 Boulder Hill Pass, Montgomery, open Monday to Friday, 8:00 to 3:30, with the Assessor listed at 630-554-3214 and General Assistance and Emergency Assistance programs. (source: https://oswegotownship.org/?p=4890)",
+        "The Kendall County Senior TRIAD, a partnership of law enforcement, seniors and service providers focused on crimes against seniors, is promoted by the village; the Senior Service Center number listed is 630-553-5777. (source: https://www.oswegoil.org/residents/for-seniors/senior-triad-622)"
+      ],
+      "nearby": [
+        "yorkville",
+        "aurora",
+        "naperville"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "batavia",
+      "name": "Batavia",
+      "county": "Kane County",
+      "localNotes": [
+        "The Batavia Township Assessor's office is at 201 Houston Street, Suite 300, phone (630) 879-1323, open Monday to Friday 8:00 am to 4:00 pm, email assessor@bataviatownship.com. (source: https://www.bataviatownship.com/?p=155)",
+        "Batavia Township's community links list Senior Services Associates (Illinois Community Care Program), Ride In Kane for riders 65 and older, and township General Assistance; the township phone is (630) 879-1392. (source: https://www.bataviatownship.com/community-links/)",
+        "The Batavia Park District runs senior programs for ages 50+ and the Batavia Senior Citizens Club, which meets monthly on the third Wednesday. Recreation contact is 630-239-0999 ext. 2064; the district is at 327 West Wilson Street. (source: https://bataviaparks.org/program/social-senior-programs/)"
+      ],
+      "nearby": [
+        "geneva",
+        "st-charles",
+        "aurora"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "lake-forest",
+      "name": "Lake Forest",
+      "county": "Lake County",
+      "localNotes": [
+        "Lake Forest's Dickinson Hall Senior Center has a Senior Advocate, Janet Fryer, who gives free, confidential help by phone, at the hall or at home with Medicare, the Benefit Access Program and Senior Citizen's Assessment Freeze applications. Call 847-810-4678. (source: https://cityoflakeforest.com/community/dickinson_hall/services/)",
+        "Shields Township covers Lake Forest north of Route 60 and lists assistance for seniors and low-income residents plus property tax appeal and relief pages. The office is at 906 West Muir Avenue, Lake Bluff, 847-234-0802; the part of Lake Forest south of Route 60 is not in Shields Township. (source: https://www.shieldstownship.com/community/index.php)",
+        "Lake County's senior homestead exemption reduces equalized assessed value by $8,000 for owners 65 or older who live in the home. It does not need yearly renewal, and a new parcel number means a new application; the Chief County Assessment Office help line is 847-377-2100. (source: https://www.lakecountyil.gov/457/Senior-Homestead-Exemption)",
+        "Lake County probate petitions must be filed by an attorney, and the original will must be filed within 30 days after death at a Lake County Circuit Clerk office. Probate court dates are Mondays, Tuesdays and Thursdays at 9:00 AM. (source: https://www.lakecountycircuitclerk.org/201/Wills-Probate)"
+      ],
+      "nearby": [
+        "waukegan",
+        "evanston",
+        "libertyville"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "libertyville",
+      "name": "Libertyville",
+      "county": "Lake County",
+      "localNotes": [
+        "The Libertyville Township Assessor's office is at 359 Merrill Court, Libertyville, 847-362-5900, open Monday through Friday 8:30 am to 4:30 pm. It lists homestead, senior, senior freeze and home improvement exemptions and helps seniors file for the senior homestead exemption. (source: https://libertyvilletownship.us/about-us/assessor)",
+        "Lake County's senior homestead exemption reduces equalized assessed value by $8,000 for owners 65 or older who live in the home. It does not need yearly renewal, and a new parcel number means a new application; the Chief County Assessment Office help line is 847-377-2100. (source: https://www.lakecountyil.gov/457/Senior-Homestead-Exemption)",
+        "Lake County probate petitions must be filed by an attorney, and the original will must be filed within 30 days after death at a Lake County Circuit Clerk office. Probate court dates are Mondays, Tuesdays and Thursdays at 9:00 AM. (source: https://www.lakecountycircuitclerk.org/201/Wills-Probate)"
+      ],
+      "nearby": [
+        "mundelein",
+        "vernon-hills",
+        "lake-forest"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "mundelein",
+      "name": "Mundelein",
+      "county": "Lake County",
+      "localNotes": [
+        "Fremont Township Senior Services, 22385 W. Route 60, Mundelein, 847-223-2847, is open 8:30 to 3:30 Monday through Friday. It offers a free SHIP Medicare counselor, Benefit Access applications, reduced-fare transit passes and Community Care Program referrals. (source: https://fremonttownship.com/?p=488)",
+        "The Fremont Township Assessor's Office helps seniors apply for homestead exemptions and can be reached at 847-223-2846. (source: https://fremonttownship.com/?p=488)",
+        "The Lake County Circuit Clerk lists a Mundelein branch at 105 E Route 83, Mundelein, 847-377-3300; the page does not say which matters that branch handles, so confirm before bringing a will. The main branch is at 18 N. County Street, Waukegan, 847-377-3380. (source: https://www.lakecountycircuitclerk.org/201/Wills-Probate)",
+        "Lake County's senior homestead exemption reduces equalized assessed value by $8,000 for owners 65 or older who live in the home. It does not need yearly renewal, and a new parcel number means a new application; the Chief County Assessment Office help line is 847-377-2100. (source: https://www.lakecountyil.gov/457/Senior-Homestead-Exemption)"
+      ],
+      "nearby": [
+        "libertyville",
+        "vernon-hills",
+        "gurnee"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "gurnee",
+      "name": "Gurnee",
+      "county": "Lake County",
+      "localNotes": [
+        "The Warren Township Senior Center serves Gurnee at 847-244-1101, ext. *501. SHIP counselors help by appointment with Medicare enrollment, Part D and Medigap, and staff help with Benefit Access, LIHEAP, SNAP and Medicaid applications. (source: https://www.gurnee.il.us/residents/senior-services-information)",
+        "Warren Township is at 17801 W. Washington, Gurnee, 847-244-1101, and the Township Assessor's Office is reached at extension 2. (source: https://gurnee.il.us/connect/phone-numbers)",
+        "Lake County's senior homestead exemption reduces equalized assessed value by $8,000 for owners 65 or older who live in the home. It does not need yearly renewal, and a new parcel number means a new application; the Chief County Assessment Office help line is 847-377-2100. (source: https://www.lakecountyil.gov/457/Senior-Homestead-Exemption)",
+        "Lake County probate petitions must be filed by an attorney, and the original will must be filed within 30 days after death at a Lake County Circuit Clerk office. Probate court dates are Mondays, Tuesdays and Thursdays at 9:00 AM. (source: https://www.lakecountycircuitclerk.org/201/Wills-Probate)"
+      ],
+      "nearby": [
+        "waukegan",
+        "libertyville",
+        "mundelein"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "vernon-hills",
+      "name": "Vernon Hills",
+      "county": "Lake County",
+      "localNotes": [
+        "Vernon Hills Village Hall is at 290 Evergreen Drive, 847-367-3700, and the Seniors Center is on its lower level, open Monday through Friday 8:30 a.m. to 4:30 p.m. and staffed by the Vernon Hills Park District. Membership is for adults 55 and older; the page lists activities and trips and does not mention benefits or Medicare help. (source: https://vernonhills.org/379/Seniors-Center)",
+        "Vernon Hills residents are in Libertyville Township north of Route 60 and Vernon Township south of Route 60, so the township assessor depends on the address. The Libertyville Township Assessor is at 359 Merrill Court, Libertyville, 847-362-5900. (source: https://vernonhills.org/366/Community-Resources and https://libertyvilletownship.us/about-us/assessor)",
+        "Lake County's senior homestead exemption reduces equalized assessed value by $8,000 for owners 65 or older who live in the home. It does not need yearly renewal, and a new parcel number means a new application; the Chief County Assessment Office help line is 847-377-2100. (source: https://www.lakecountyil.gov/457/Senior-Homestead-Exemption)"
+      ],
+      "nearby": [
+        "libertyville",
+        "mundelein",
+        "lake-zurich"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "lake-zurich",
+      "name": "Lake Zurich",
+      "county": "Lake County",
+      "localNotes": [
+        "The Ela Township Assessor's Office is at 1155 East IL-22, Lake Zurich, open Monday to Thursday 8:00 AM to 5:00 PM and Friday 8:00 AM to 1:00 PM. Staff help with exemptions. (source: https://elatownship.gov/departments/assessor)",
+        "Ela Township says senior property tax exemptions require owning and living in the property as a primary residence at age 65 or older, with applications online or through the Assessor at 847-438-8370. Its Senior & Disabled Bus for residents 55 and older or with disabilities is 847-438-6677. (source: https://elatownship.gov/service)",
+        "Lake County's senior homestead exemption reduces equalized assessed value by $8,000 for owners 65 or older who live in the home. It does not need yearly renewal, and a new parcel number means a new application; the Chief County Assessment Office help line is 847-377-2100. (source: https://www.lakecountyil.gov/457/Senior-Homestead-Exemption)"
+      ],
+      "nearby": [
+        "vernon-hills",
+        "libertyville",
+        "crystal-lake"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "mchenry",
+      "name": "McHenry",
+      "county": "McHenry County",
+      "localNotes": [
+        "The McHenry Township Senior Center, 3519 North Richmond Road, Johnsburg, 815-344-3555, hosts Senior Services Associates, which gives information and form help on Social Security, Medicare, Medicaid and the Benefit Access Program and offers adult protective services and nursing home ombudsman services. (source: https://www.mchenrytownship.com/supervisor/senior-center/)",
+        "The McHenry Public Library's senior services page lists the McHenry Township Senior Center as a local service for McHenry residents. The page's map link gives 3703 N. Richmond Road, so confirm the address before visiting. (source: https://mchenrylibrary.org/index.php/11-adults/64-senior-services)",
+        "The McHenry Township Assessor's office is open Monday through Friday 8:30 am to 4:30 pm at 815-385-0175 and has an Exemptions page. (source: https://www.mchenrytownship.com)",
+        "McHenry County lists a senior homestead exemption of up to $8,000 for age 65 or older and a low-income senior assessment freeze at household income of $75,000 or less, with applications due July 1. The Office of Assessments is 815-334-4290. (source: https://www.mchenrycountyil.gov/departments/assessments/exemptions)"
+      ],
+      "nearby": [
+        "crystal-lake",
+        "elgin"
+      ],
+      "updated": "2026-10-31"
     }
   ]
 }

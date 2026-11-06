@@ -104,7 +104,7 @@ Review the list whenever you change a beneficiary line. Our overview of [benefic
 
 ## How state law changes this
 
-State law decides whether a trustee must report to beneficiaries, how a fiduciary return is filed, and what protection the trust offers from creditors. Federal rules control the IRA payout period and the EIN. Our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides cover the states we serve.
+State law decides whether a trustee must report to beneficiaries, how a fiduciary return is filed, and what protection the trust offers from creditors. Federal rules control the IRA payout period and the EIN. Our [Illinois](/estate-planning/illinois) guide covers the state we serve.
 
 ## How we can help
 

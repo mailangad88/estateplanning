@@ -4,6 +4,7 @@ import { PageHero } from "@/components/page-hero";
 import { ICON_MAP } from "@/components/visual-card";
 import { topicFor } from "@/lib/visual-topic";
 import { CallbackForm, EmailCapture } from "@/components/capture";
+import { bookHref, topicForPath } from "@/lib/book";
 import { Breadcrumbs, CardGrid, Cta, ReviewNote } from "@/components/ui";
 import { firm } from "@/config/firm";
 import type { MoneyPageData, Block } from "@/content/money-pages";
@@ -131,10 +132,10 @@ export function MoneyPage({ page }: { page: MoneyPageData }) {
   const primary = callFirst ? (
     <a className="button" href={`tel:${digits}`}>Call {firm.phone}</a>
   ) : (
-    <Link className="button" href="/plan-finder">Start the plan finder</Link>
+    <Link className="button" href={bookHref("service-page", topicForPath(page.path))}>Book a consult</Link>
   );
   const secondary = callFirst ? (
-    <Link className="button secondary" href="/book?from=service-page">Book a consult</Link>
+    <Link className="button secondary" href={bookHref("service-page", topicForPath(page.path))}>Book a consult</Link>
   ) : (
     <Link className="button secondary" href="/pricing">See our flat fees</Link>
   );
@@ -190,8 +191,10 @@ export function MoneyPage({ page }: { page: MoneyPageData }) {
         <EmailCapture kind="magnet" interest={page.emailCapture.interest} title={page.emailCapture.title} body={page.emailCapture.body} />
       )}
       <Cta
-        title={page.ctaTitle ?? "Not sure where to start?"}
-        body={page.ctaBody ?? "Take the two-minute questionnaire, or call and ask us. If you may not need an attorney, we will say so. You get a flat-fee quote before anything is signed."}
+        from="service-page-end"
+        topic={topicForPath(page.path)}
+        title={page.ctaTitle}
+        body={page.ctaBody}
       />
       <section>
         <h2>Keep reading</h2>

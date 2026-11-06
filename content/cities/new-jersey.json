@@ -1,0 +1,399 @@
+{
+  "cities": [
+    {
+      "slug": "newark",
+      "name": "Newark",
+      "county": "Essex County",
+      "localNotes": [
+        "The City of Newark Division of Senior Services is at 920 Broad Street, Newark, and its Senior Resource Center is at 94 William Street, 1st floor; the city also lists five ward senior centers. (source: https://www.newarknj.gov/card/newark-senior-services)",
+        "Essex County's Division of Senior Services at 465 Dr. Martin Luther King Blvd., Room 102, Newark serves people 60 and older and lists health insurance counseling (SHIP), Adult Protective Services and legal services among its programs. (source: https://wecare.essexcountynj.org/support/solutions/articles/69000803324-division-of-senior-services)",
+        "The Essex County Surrogate's Court is in the Martin Luther King, Jr. Justice Building, 495 Dr. Martin Luther King, Jr. Blvd., Room 212, Newark; the main phone is 973-621-4900. (source: https://wecare.essexcountynj.org/support/solutions/articles/69000804721-office-of-the-surrogate)",
+        "Essex County's Adult Protective Services agency is FOCUS, Hispanic Center for Human Dev., Inc., at 441-443 Broad St., Newark, phone 866-903-6287. (source: https://www.nj.gov/humanservices/doas/services/a-k/aps/offices.shtml)"
+      ],
+      "nearby": [
+        "elizabeth",
+        "union-township"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "jersey-city",
+      "name": "Jersey City",
+      "county": "Hudson County",
+      "localNotes": [
+        "The Jersey City Division of Senior Affairs is at 394 Central Ave., 2nd Floor, phone (201) 547-5750, and helps with housing assistance, reduced-fare NJ Transit applications and Senior Care Photo ID cards; appointments are preferred. (source: https://www.jerseycitynj.gov/senioraffairs)",
+        "Jersey City lists two senior centers: the Joseph Connors Senior Center at 394 Central Ave., (201) 420-7602, and the Maureen Collier Senior Center at 335 Bergen Avenue, (201) 957-5557. (source: https://www.jerseycitynj.gov/senioraffairs)",
+        "The Hudson County Surrogate is at 583 Newark Ave., 4th Floor, Room 407, Jersey City, phone 201-795-6378. (source: https://www.njcourts.gov/sites/default/files/forms/12217_nj_surrogates.pdf)",
+        "The Hudson County Clerk is at 257 Cornelison Avenue, 4th Floor, Jersey City, phone 201-369-3470. (source: https://www.hudsoncountyclerk.org/)",
+        "The Hudson County SHIP (Medicare counseling) contact is the Department of Aging and Veterans Affairs, 830 Bergen Avenue, Jersey City, 201-369-4313 ext. 4259. (source: https://www.nj.gov/humanservices/doas/assistance/medicare/offices.shtml)"
+      ],
+      "nearby": [
+        "hoboken",
+        "bayonne"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "hoboken",
+      "name": "Hoboken",
+      "county": "Hudson County",
+      "localNotes": [
+        "Hoboken Senior Services is at the Hoboken Multi Service Center, 124 Grand Street, phone (201) 420-2000 ext. 1094, open Monday to Friday 9 a.m. to 4 p.m. (source: https://www.hobokennj.gov/resources/senior-services)",
+        "Hoboken Senior Services lists help with Medicaid, MLTSS, PAAD and SLMB/QMB programs, medical bill assistance, and help with correspondence from government agencies and the Social Security Office. (source: https://www.hobokennj.gov/resources/senior-services)",
+        "Residents probate wills at the Hudson County Surrogate, 583 Newark Ave., 4th Floor, Room 407, Jersey City, phone 201-795-6378. (source: https://www.njcourts.gov/sites/default/files/forms/12217_nj_surrogates.pdf)",
+        "Hudson County Adult Protective Services is at 6100 Adams Street, West New York, phone 201-537-5631. (source: https://www.nj.gov/humanservices/doas/services/a-k/aps/offices.shtml)"
+      ],
+      "nearby": [
+        "jersey-city",
+        "bayonne"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "bayonne",
+      "name": "Bayonne",
+      "county": "Hudson County",
+      "localNotes": [
+        "The Bayonne Office on Aging, phone (201) 858-6119, helps residents 60 and older apply for benefits such as PAAD/Senior Gold, SLMB, SNAP and property tax savings programs. (source: https://www.bayonnenj.org/Departments/office-on-aging)",
+        "The Bayonne Office on Aging offers free SHIP counseling on Medicare, supplement and long-term care policies, Part D plans and appeals, and helps apply for ABD Medicaid, MLTSS and JACC. (source: https://www.bayonnenj.org/Departments/office-on-aging)",
+        "Bayonne City Hall is at 630 Avenue C. Probate for Bayonne residents goes through the Hudson County Surrogate at 583 Newark Ave., 4th Floor, Room 407, Jersey City, phone 201-795-6378. (source: https://www.njcourts.gov/sites/default/files/forms/12217_nj_surrogates.pdf)"
+      ],
+      "nearby": [
+        "jersey-city",
+        "hoboken"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "elizabeth",
+      "name": "Elizabeth",
+      "county": "Union County",
+      "localNotes": [
+        "The Union County Surrogate's main office is at 2 Broad Street, Second Floor, Old Annex, within the Union County Courthouse in Elizabeth, open Monday to Friday 8:30 a.m. to 4:00 p.m.; phone 908-527-4280. (source: https://ucnj.org/surrogate/contact-us/)",
+        "Union County's Surrogate also has a Westfield office at the Colleen Fraser Building, 300 North Avenue East, open Mondays, Wednesdays and Fridays by appointment only. (source: https://ucnj.org/surrogate/contact-us/)",
+        "Union County Adult Protective Services is Catholic Charities of the Archdiocese of Newark, 505 South Avenue E, Cranford, phone 908-497-3902. (source: https://www.nj.gov/humanservices/doas/services/a-k/aps/offices.shtml)"
+      ],
+      "nearby": [
+        "union-township",
+        "newark"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "union-township",
+      "name": "Union Township",
+      "county": "Union County",
+      "localNotes": [
+        "Union Township Municipal offices are at 1976 Morris Avenue, Union, main phone 908-688-2800. (source: https://www.uniontownship.com/)",
+        "Union County residents probate wills at the Surrogate's Elizabeth office, 2 Broad Street, Second Floor, Old Annex, phone 908-527-4280; a Westfield office is open by appointment on Mondays, Wednesdays and Fridays. (source: https://ucnj.org/surrogate/contact-us/)",
+        "The Union County SHIP (Medicare counseling) contact is SAGE Eldercare, 290 Broad Street, Summit, phone 908-273-6999. (source: https://www.nj.gov/humanservices/doas/assistance/medicare/offices.shtml)"
+      ],
+      "nearby": [
+        "elizabeth",
+        "newark"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "paterson",
+      "name": "Paterson",
+      "county": "Passaic County",
+      "localNotes": [
+        "Paterson's Senior Services office is at 165 5th Avenue, Paterson, NJ 07524, open Monday to Friday, 7:30am to 3:30pm, phone (973) 653-5932. The city lists information and advocacy on aging, social services and disability, plus the Paterson Council on Aging. (source: https://www.patersonnj.gov/department/division.php?fDD=9-31)",
+        "The Passaic County Surrogate is at 71 Hamilton Street, Room 101, Paterson (use the 77 Hamilton Street entrance), by appointment only, phone (973) 881-4760. Hours are Monday to Friday, 8:30am to 4:30pm, closed 12:30pm to 1:30pm. (source: https://www.passaiccountynj.org/government/passaic-county-surrogate)",
+        "The Passaic Surrogate also holds 5:00pm to 7:00pm Night Court sessions by appointment at the Passaic County Administration Building, 401 Grand Street, 3rd Floor, Paterson. Clerks accept only check or money order for payment at these sessions. (source: https://www.passaiccountynj.org/government/passaic-county-surrogate/appointments-night-court)",
+        "Adult Protective Services for Passaic County is handled by the Passaic County Board of Social Services, 80 Hamilton Street, Paterson, NJ 07505, phone 973-592-1954. (source: https://www.nj.gov/humanservices/doas/services/a-k/aps/offices.shtml)"
+      ],
+      "nearby": [
+        "clifton",
+        "wayne"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "clifton",
+      "name": "Clifton",
+      "county": "Passaic County",
+      "localNotes": [
+        "The Clifton senior center is at 900 Clifton Avenue, Barn C-5, Clifton, NJ 07013, phone 973-470-2234, open Monday to Friday, 8 AM to 4 PM. It lists help with medical forms, heating and cooling grants, tax forms, and Medicare counseling. (source: https://www.cliftonnj.org/228/Senior-Citizen)",
+        "Clifton's senior office lists rides for seniors and disabled adults without other transportation, Monday to Friday, 8 AM to 4 PM; call 973-470-2235 to schedule. (source: https://www.cliftonnj.org/228/Senior-Citizen)",
+        "The Passaic County Surrogate holds 5:00pm to 7:00pm Night Court sessions by appointment at Clifton's Allwood Library (44 Lyall Road) and Main Library (292 Piaget Avenue), alternating between them. Check the county page for current dates. (source: https://www.passaiccountynj.org/government/passaic-county-surrogate/appointments-night-court)",
+        "Clifton residents use the Passaic County Surrogate at 71 Hamilton Street, Room 101, Paterson, by appointment, phone (973) 881-4760. (source: https://www.passaiccountynj.org/government/passaic-county-surrogate)"
+      ],
+      "nearby": [
+        "paterson",
+        "wayne"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "wayne",
+      "name": "Wayne",
+      "county": "Passaic County",
+      "localNotes": [
+        "Wayne's Assessor's Office is in Town Hall, 475 Valley Road, Wayne, NJ 07470, phone (973) 694-1800 ext. 3349 or 3352, open 8:30am to 4:30pm Monday to Friday and until 7:00pm on Tuesday evenings. (source: https://www.waynetownship.com/assessments/)",
+        "Wayne's assessment page describes a veterans deduction and a senior citizen deduction, and says certain disabled veterans may be granted full exemption on their dwelling house. Applications come from the assessment department. (source: https://www.waynetownship.com/assessments/)",
+        "Wayne for All Ages lists an Alzheimer's support group, blood pressure screenings, health education, and free legal services for qualifying residents. Pre-registration is required for all programs. (source: https://www.waynetownship.com/wayne-for-all-ages/)",
+        "The Passaic County Surrogate holds 5:00pm to 7:00pm Night Court sessions by appointment at the Wayne Municipal Building, 475 Valley Road. Check the county page for current dates. (source: https://www.passaiccountynj.org/government/passaic-county-surrogate/appointments-night-court)"
+      ],
+      "nearby": [
+        "clifton",
+        "paterson"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "hackensack",
+      "name": "Hackensack",
+      "county": "Bergen County",
+      "localNotes": [
+        "Hackensack is the Bergen County seat. The Bergen County Surrogate's Court is at Two Bergen County Plaza, Suite 5000, Hackensack, NJ 07601, phone (201) 336-6700, open Monday to Friday, 8:30 AM to 4:30 PM excluding county holidays. (source: https://surrogate.bergencountynj.gov/aboutus.html)",
+        "The Bergen Surrogate asks for an appointment before arriving and says it cannot accommodate walk-ins. (source: https://surrogate.bergencountynj.gov/probate.html)",
+        "The City of Hackensack Tax Assessor, listed as Art Carlson, Jr., can be reached at (201) 646-3924. The office grants deductions to qualified senior citizens, disabled persons, veterans and widows of veterans. (source: https://www.hackensack.org/tax-accessor)",
+        "Adult Protective Services for Bergen County is the Bergen County Board of Social Services, 218 Route 17 North, Rochelle Park, NJ 07662, phone 201-368-4300. (source: https://www.nj.gov/humanservices/doas/services/a-k/aps/offices.shtml)"
+      ],
+      "nearby": [
+        "paramus",
+        "teaneck"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "paramus",
+      "name": "Paramus",
+      "county": "Bergen County",
+      "localNotes": [
+        "The Paramus Senior Center is at 93 North Farview Avenue, Paramus, NJ 07652, phone 201-265-2100 ext. 6200. The center is open Monday to Friday, 8 a.m. to 3:30 p.m., and the office 8:30 a.m. to 3:00 p.m. (source: https://www.paramusborough.gov/Directory.aspx?DID=29)",
+        "Paramus residents use the Bergen County Surrogate's Court at Two Bergen County Plaza, Suite 5000, Hackensack, phone (201) 336-6700. The Surrogate asks for an appointment before arriving. (source: https://surrogate.bergencountynj.gov/aboutus.html)",
+        "Bergen County Adult Protective Services is the Bergen County Board of Social Services in nearby Rochelle Park, 218 Route 17 North, phone 201-368-4300. (source: https://www.nj.gov/humanservices/doas/services/a-k/aps/offices.shtml)"
+      ],
+      "nearby": [
+        "hackensack",
+        "teaneck"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "teaneck",
+      "name": "Teaneck",
+      "county": "Bergen County",
+      "localNotes": [
+        "Teaneck's Senior Center is on the upper level of the Richard Rodda Community Center, for adults 55 and up, open Monday to Friday, 9:30a.m. to 4:00p.m.; call (201) 837-0171 or (201) 837-7130. A Public Health Nurse is available daily for health consultations and blood pressure checks. (source: https://www.teanecknj.gov/senior-programs)",
+        "Teaneck Social Services is in the Municipal Building, 818 Teaneck Road, within the Health Department, phone (201) 837-1600 ext. 1503, Monday to Thursday 8am to 5:15pm. It provides referrals to social services resources and may provide financial help through the Public Assistance Trust Fund to eligible residents. (source: https://www.teanecknj.gov/social-services)",
+        "Teaneck residents use the Bergen County Surrogate's Court at Two Bergen County Plaza, Suite 5000, Hackensack, phone (201) 336-6700, by appointment. (source: https://surrogate.bergencountynj.gov/aboutus.html)"
+      ],
+      "nearby": [
+        "hackensack",
+        "paramus"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "edison",
+      "name": "Edison",
+      "county": "Middlesex County",
+      "localNotes": [
+        "The Edison Senior Center is listed by Middlesex County at 2963 Woodbridge Avenue, Edison, NJ 08817, phone 732-248-7345. (source: https://middlesexcountynj.gov/government/departments/department-of-community-services/office-of-aging-and-disabled-services/senior-centers)",
+        "Edison's Tax Assessor is at 100 Municipal Boulevard, Edison, NJ 08817, phone 732-248-7211. The township page describes a $250 senior, disabled person or surviving spouse deduction and a $250 veterans deduction, with applications going to the assessor. (source: https://www.edisonnj.org/departments/finance/tax_assessor.php)",
+        "Edison residents probate through the Middlesex County Surrogate at 75 Bayard Street, 1st Floor, New Brunswick, which the county says is by appointment only; phone 732-745-3055. (source: https://www.middlesexcountynj.gov/government/departments/department-of-community-services/office-of-the-surrogate)"
+      ],
+      "nearby": [
+        "woodbridge",
+        "new-brunswick"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "woodbridge",
+      "name": "Woodbridge",
+      "county": "Middlesex County",
+      "localNotes": [
+        "Middlesex County lists six Woodbridge Township senior centers, including Evergreen at 400 Inman Avenue, Colonia (732-726-6261), Five Branches at 1 Brown Avenue, Iselin (732-726-6277) and Hickory at 17 Corrielle Street, Fords (732-726-6288). It lists the Woodbridge Division on Aging separately at 400 Inman Avenue, Colonia, 732-726-6262. (source: https://middlesexcountynj.gov/government/departments/department-of-community-services/office-of-aging-and-disabled-services/senior-centers)",
+        "Woodbridge Township's general municipal number is 732-634-4500 at 1 Main Street, Woodbridge, NJ 07095, and its tax information page links a veteran property tax deduction form. (source: https://www.twp.woodbridge.nj.us/948/Tax-Payer-Information)",
+        "The Middlesex County Surrogate offers a satellite location in Woodbridge in addition to the main office at 75 Bayard Street, New Brunswick; appointments are requested by form. (source: https://www.middlesexcountynj.gov/government/departments/department-of-community-services/office-of-the-surrogate/surrogate-satellite-offices)"
+      ],
+      "nearby": [
+        "edison",
+        "new-brunswick"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "new-brunswick",
+      "name": "New Brunswick",
+      "county": "Middlesex County",
+      "localNotes": [
+        "The New Brunswick Senior Center/Office on Aging is listed by Middlesex County at 81 Huntington Street, New Brunswick, NJ 08901, phone 732-745-5100. (source: https://middlesexcountynj.gov/government/departments/department-of-community-services/office-of-aging-and-disabled-services/senior-centers)",
+        "The Middlesex County Surrogate is in New Brunswick at 75 Bayard Street, 1st Floor, open weekdays 8 a.m. to 3:45 p.m. (until 6 p.m. Tuesdays), by appointment only; phone 732-745-3055. (source: https://www.middlesexcountynj.gov/government/departments/department-of-community-services/office-of-the-surrogate)",
+        "The Middlesex County Office of Aging and Disabled Services is at 75 Bayard Street, 5th Floor, New Brunswick, phone (732) 745-3295. (source: https://www.nj.gov/humanservices/doas/documents/Area%20Agencies on Aging County Listing 8-4-25.pdf)"
+      ],
+      "nearby": [
+        "edison",
+        "woodbridge"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "morristown",
+      "name": "Morristown",
+      "county": "Morris County",
+      "localNotes": [
+        "The Morris County Surrogate is in Morristown, in the Administration and Records Building, Fifth Floor. Per the Surrogate's guide it is open weekdays 8:30 a.m. to 4:30 p.m. plus Tuesday 4:30 to 6:30 p.m., by appointment only; phone 973-285-6500. (source: https://www.morriscountynj.gov/files/sharedassets/public/v/1/departments/surrogate/surrogateguide.pdf)",
+        "The Morris County Division on Aging, Disabilities and Community Programming has a mailing address of PO Box 900, Morristown, NJ 07963-0900 and phone (973) 285-6848. (source: https://www.nj.gov/humanservices/doas/documents/Area%20Agencies on Aging County Listing 8-4-25.pdf)",
+        "Free Medicare (SHIP) counseling in Morris County is run by NORWESCAP, with a Morristown site at 175 South Street; call 973-784-4900 ext. 3501 for an appointment. (source: https://www.morriscountynj.gov/Departments/Aging-Disabilities-Community-Programming/SHIP)"
+      ],
+      "nearby": [
+        "wayne",
+        "newark"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "princeton",
+      "name": "Princeton",
+      "county": "Mercer County",
+      "localNotes": [
+        "Princeton's municipal offices are at 400 Witherspoon Street, Princeton, NJ 08540, phone (609) 924-4141, open weekdays 9:00 a.m. to 5:00 p.m. (source: https://www.princetonnj.gov/)",
+        "Mercer County's tax collector listing gives the Princeton tax collector at 400 Witherspoon Street, phone 609-924-1058. (source: https://www.mercercounty.org/government/board-of-taxation/tax-collectors)",
+        "Princeton residents probate through the Mercer County Surrogate at the Civil Courthouse, 175 South Broad Street, Fourth Floor, Room 420, Trenton; phone (609) 989-6331. Hours are weekdays 8:30 a.m. to 4:30 p.m., arriving by 4:00 p.m. (source: https://mercercounty.org/government/county-surrogate/office-hours-and-locations)"
+      ],
+      "nearby": [
+        "trenton",
+        "hamilton-township"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "trenton",
+      "name": "Trenton",
+      "county": "Mercer County",
+      "localNotes": [
+        "Trenton's Division of Assessment is at 319 E State Street, Room 126, Trenton, NJ 08608, phone 609-989-3083, weekdays 8:30 a.m. to 4:30 p.m. The city posts applications for senior, disabled person and veteran property tax deductions. (source: https://trentonnj.org/192/Division-of-Assessment)",
+        "Trenton's Office on Aging offers free help to residents 60 or older with forms for health insurance, home energy, Lifeline, rent abatement, Social Security and taxes, plus information and referrals. (source: https://trentonnj.org/179)",
+        "The Mercer County Surrogate is in Trenton at the Civil Courthouse, 175 South Broad Street, Fourth Floor, Room 420; phone (609) 989-6331. (source: https://mercercounty.org/government/county-surrogate/office-hours-and-locations)"
+      ],
+      "nearby": [
+        "hamilton-township",
+        "princeton"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "hamilton-township",
+      "name": "Hamilton Township",
+      "county": "Mercer County",
+      "localNotes": [
+        "The Hamilton Township Senior Center is at 409 Cypress Lane, Hamilton, NJ 08619, phone 609-890-3686, for residents 60 and older; hours are weekdays 8:30 a.m. to 4 p.m. and Thursdays until 7 p.m. (source: https://www.hamiltonnj.com/Seniors)",
+        "Hamilton's Municipal Assessor is at 2090 Greenwood Avenue, Hamilton, NJ 08650, phone 609-890-3654. The township's senior deduction checklist lists the application, a supplemental income form, proof of income, photo ID and a utility bill. (source: https://www.hamiltonnj.com/DocumentCenter/View/7343/Senior-Citizen-Checklist)",
+        "The Mercer County Office on Aging has a physical address at 2110 Hamilton Avenue, Hamilton, NJ 08619, phone (609) 989-6661. (source: https://www.nj.gov/humanservices/doas/documents/Area%20Agencies on Aging County Listing 8-4-25.pdf)"
+      ],
+      "nearby": [
+        "trenton",
+        "princeton"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "toms-river",
+      "name": "Toms River",
+      "county": "Ocean County",
+      "localNotes": [
+        "The Toms River Senior Center is at 652 Garfield Avenue, open Monday to Friday, 8 a.m. to 4:30 p.m., at 732-341-1000 ext. 8461 or 8460. It lists outreach help with Medicare, Part D, PAAD and property tax rebates, with SHIP counselors on staff, for adults 60 and older. (source: https://www.tomsrivertownship.com/221/Senior-Services)",
+        "The Toms River Township Tax Assessor is at 33 Washington Street (mail: P.O. Box 728), open Monday to Friday, 8:30 AM to 4:30 PM, at 732-341-1000 ext. 8300, and keeps the township's property tax deduction records. (source: https://www.tomsrivertownship.com/222/Tax-Assessor)",
+        "The Ocean County Surrogate's main office is at 118 Washington Street, Toms River, phone (732) 929-2011. (source: https://www.co.ocean.nj.us/surrogate/frmContact.aspx)",
+        "Ocean County Office of Senior Services, a state-listed SHIP local office, is at 1005 Hooper Avenue, Toms River, phone 800-668-4899. (source: https://www.nj.gov/humanservices/doas/assistance/medicare/offices.shtml)"
+      ],
+      "nearby": [
+        "brick",
+        "lakewood"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "lakewood",
+      "name": "Lakewood",
+      "county": "Ocean County",
+      "localNotes": [
+        "Lakewood Township's Municipal Building is at 231 Third Street, open Monday to Friday, 9 AM to 5 PM, at 732-364-2500. The Tax Assessor is reached at extension 5248 on the main line. (source: https://www.lakewoodnj.gov/contact)",
+        "The township contact page lists Community Services, Inc. (for the elderly) at 732-367-1400. (source: https://www.lakewoodnj.gov/contact)",
+        "Lakewood residents use the Ocean County Surrogate in Toms River, 118 Washington Street, phone (732) 929-2011. The Southern Service Center in Manahawkin is open Fridays by appointment only. (source: https://www.co.ocean.nj.us/surrogate/frmContact.aspx)"
+      ],
+      "nearby": [
+        "toms-river",
+        "brick"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "brick",
+      "name": "Brick",
+      "county": "Ocean County",
+      "localNotes": [
+        "The Brick Senior Center is at 500 Aurora Place, open Monday to Friday, 8 AM to 4 PM, at 732-920-8686. It lists guidance on Medicare, prescription coverage and property taxes, plus help checking eligibility and completing applications. (source: https://www.bricknj.gov/departments/senior_services.php)",
+        "The Brick Township Tax Assessor is at 401 Chambers Bridge Road, direct line 732-262-1069. It lists $250 veteran and senior/disabled deductions, with income and residency rules for the senior deduction, and handles the DVSSE exemption application for qualifying disabled veterans. (source: https://www.bricknj.gov/departments/tax_assessor.php)",
+        "Brick residents use the Ocean County Surrogate in Toms River, 118 Washington Street, phone (732) 929-2011. (source: https://www.co.ocean.nj.us/surrogate/frmContact.aspx)"
+      ],
+      "nearby": [
+        "toms-river",
+        "lakewood"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "cherry-hill",
+      "name": "Cherry Hill",
+      "county": "Camden County",
+      "localNotes": [
+        "Cherry Hill Township Senior Services is at 856-488-7878 (seniors@chnj.gov), listed at 820 Mercer Street. It lists resource referrals, a free weekday senior bus, Medicare open enrollment information and AARP Tax-Aide. (source: https://chnj.gov/102/senior-services)",
+        "The same page lists a property tax deduction of up to $250 for homeowners 65+ or disabled and a veterans' deduction through the Assessor's Office at 856-488-7899. It also lists a 10% sewer rental discount for homeowners 60+ through the Tax Collector at 856-488-7880. (source: https://chnj.gov/102/senior-services)",
+        "Cherry Hill residents use the Camden County Surrogate at 509 Lakeland Road, Blackwood, phone (856) 225-7282. Visits are by appointment through the county's online portal, and walk-ins are not accepted. (source: https://www.camdencounty.com/service/surrogate-court/)"
+      ],
+      "nearby": [
+        "camden"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "camden",
+      "name": "Camden",
+      "county": "Camden County",
+      "localNotes": [
+        "The City of Camden Office of Assessments is in City Hall, 520 Market Street, Room 329. It receives applications for senior citizen deductions, veterans deductions and veterans exemptions; the city main line is 856-757-7000. (source: https://www.camdennj.gov/?p=12552)",
+        "The Camden County Surrogate is at 509 Lakeland Road, Blackwood, phone (856) 225-7282, weekdays 8:30 AM to 4:00 PM. In-person visits require an appointment, and documents can also be mailed or left in the drop box there. (source: https://www.camdencounty.com/service/surrogate-court/)",
+        "Senior Citizens United Community Services, Inc., 537 Nicholson Road, Audubon, phone 856-456-1121, is the state-listed SHIP local office for Camden County. (source: https://www.nj.gov/humanservices/doas/assistance/medicare/offices.shtml)"
+      ],
+      "nearby": [
+        "cherry-hill"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "atlantic-city",
+      "name": "Atlantic City",
+      "county": "Atlantic County",
+      "localNotes": [
+        "Atlantic County has a Surrogate's office in Atlantic City at 1201 Bacharach Blvd., phone (609) 343-2341, open Monday to Friday, 8:30 a.m. to 4:00 p.m. Appointments are encouraged. (source: https://www.atlanticcountynj.gov/government/county-government/surrogate-s-office)",
+        "Atlantic City's City Hall is at 1301 Bacharach Boulevard. (source: https://www.acnj.gov/Departments/Police)",
+        "The Atlantic County Office on Aging is at 101 S. Shore Road, Northfield, and lists SHIP Medicare counseling by appointment at 1 (888) 426-9243 or (609) 645-5965. It also lists South Jersey Legal Services at (609) 348-4200 for free legal help for low-income elderly and disabled residents. (source: https://www.atlanticcountynj.gov/government/county-departments/department-of-human-services/division-of-intergenerational-services/area-agency-on-aging-office-on-aging)"
+      ],
+      "nearby": [
+        "vineland"
+      ],
+      "updated": "2026-10-31"
+    },
+    {
+      "slug": "vineland",
+      "name": "Vineland",
+      "county": "Cumberland County",
+      "localNotes": [
+        "Cumberland County has a Vineland Surrogate office at 2745 S Delsea Dr, phone (856) 453-4808, by appointment only. Appointment hours listed are 8:30 AM to 11:30 AM and 2:00 PM to 3:45 PM, Monday to Friday. (source: https://cumberlandcountynj.gov/surrogate)",
+        "The Vineland Tax Assessor is in City Hall, 640 East Wood St, at (856) 794-4000 ext. 4287. The city lists a $250 deduction for income-qualified homeowners 65+ or disabled, a $250 veterans deduction, and full exemption for qualifying permanently disabled veterans. (source: https://www.vinelandcity.org/tax-assessor/)",
+        "Cumberland County Office on Aging & Disabled, a state-listed SHIP local office, is at 800 East Commerce Street, Bridgeton, phone 856-453-2220. (source: https://www.nj.gov/humanservices/doas/assistance/medicare/offices.shtml)"
+      ],
+      "nearby": [
+        "atlantic-city"
+      ],
+      "updated": "2026-10-31"
+    }
+  ]
+}

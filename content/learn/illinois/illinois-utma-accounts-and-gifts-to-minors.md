@@ -104,6 +104,8 @@ Choose a UTMA account when the amount is modest, the child is healthy, and 21 is
 
 A custodian under the Act can also move the property into a qualified minor's trust under section 15, which is a tool, not a plan. If you are deciding what to leave minor children, the parental choices are covered in [leaving money to minors](/learn/guardianship/leaving-money-to-minors), and the question of who raises them in [Illinois guardianship](/learn/illinois/illinois-guardianship).
 
+Comparing a custodial account with a 529 or a trust? See [leaving money to grandchildren in Illinois](/learn/illinois/leaving-money-to-grandchildren).
+
 ## How we can help
 
 If you are deciding between a UTMA account and a trust, our attorneys can look at the amount, the child and your family, then draft the will or trust that carries it out. The [plan finder](/plan-finder) is a quick way to see where you stand, and a consultation can settle the details.

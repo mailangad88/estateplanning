@@ -20,6 +20,8 @@ const EXT = new Set([".md", ".json", ".ts", ".tsx"]);
 const SKIP = new Set(["content/STYLE.md", "content/LEARN-STYLE.md", "content/states/_template.json", "scripts/launch-check.mjs",
   // Internal research data, never rendered: the question bank holds what people ask, in their words.
   "content/questions.json",
+  // Generated improvement log (npm run page-log): repeats page titles and question-bank examples for the admin view.
+  "content/page-log.json",
   // The studio's list of words its video scripts must not use.
   "src/server/studio/wordlists.ts",
   // Code that detects placeholders, not copy.
@@ -127,6 +129,29 @@ if (ruleProblems.length) {
     failed = true;
   } else {
     console.warn(`${msg} ${ruleProblems.length} issue(s); run with LAUNCH_CHECK=strict to list them.`);
+  }
+}
+
+// Leads must land somewhere. Without a CRM webhook or the portal database, /api/leads only logs the
+// submission: the visitor sees "thanks" and the lead is lost. A lead alert inbox is also required so the
+// attorney hears about each lead within seconds (src/server/leadAlert.ts).
+const env = process.env;
+const leadProblems = [];
+const portalStores = Boolean(env.DATABASE_URL) && env.PORTAL_INGEST_LEADS === "true";
+if (!env.CRM_WEBHOOK_URL && !portalStores) {
+  leadProblems.push("no lead destination: set DATABASE_URL with PORTAL_INGEST_LEADS=true (free Neon Postgres), or CRM_WEBHOOK_URL");
+}
+if (!env.LEAD_ALERT_EMAIL) leadProblems.push("LEAD_ALERT_EMAIL is not set: nobody is emailed when a lead arrives");
+else if (!((env.EMAIL_TRANSPORT === "resend" && env.RESEND_API_KEY) || (env.EMAIL_TRANSPORT === "postmark" && env.POSTMARK_SERVER_TOKEN)) || !env.EMAIL_FROM) {
+  leadProblems.push("LEAD_ALERT_EMAIL is set but no email provider is: set EMAIL_TRANSPORT=resend, RESEND_API_KEY and EMAIL_FROM");
+}
+if (leadProblems.length) {
+  const msg = `Lead handling not ready (${leadProblems.length}).`;
+  if (strict) {
+    console.error(`${msg}\n  ${leadProblems.join("\n  ")}`);
+    failed = true;
+  } else {
+    console.warn(`${msg} Run with LAUNCH_CHECK=strict to list them.`);
   }
 }
 

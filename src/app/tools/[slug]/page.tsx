@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { TOOLS } from "@/config/tools";
-import { Breadcrumbs, CardGrid } from "@/components/ui";
+import { Breadcrumbs, CardGrid, Cta } from "@/components/ui";
 import { PageHero } from "@/components/page-hero";
 import { JsonLd, abs, breadcrumbLd } from "@/lib/seo";
 import EstateTax from "@/components/tools/EstateTax";
@@ -22,6 +22,8 @@ import WhoInherits from "@/components/tools/WhoInherits";
 import AssetSorter from "@/components/tools/AssetSorter";
 import InheritanceTimeline from "@/components/tools/InheritanceTimeline";
 import StatePrefill from "@/components/tools/StatePrefill";
+import { KitFaqs } from "@/components/page-kit";
+import { TOOL_BOOKING } from "@/lib/book";
 
 const COMPONENTS: Record<string, React.ComponentType> = {
   "estate-tax-estimator": EstateTax,
@@ -84,6 +86,13 @@ export default async function ToolPage({ params }: Props) {
       <div className="answer"><strong>In short</strong>{t.answer}</div>
       {STATE_AWARE[slug] ? <StatePrefill tool={STATE_AWARE[slug]} /> : <Tool />}
       <p className="notice">Estimates are for education only and are not legal, tax or financial advice.</p>
+      <KitFaqs url={`/tools/${t.slug}`} topic={t.title} context={`${t.description} ${t.answer}`} categories={["Cost and process", "Getting started"]} />
+      <Cta
+        from={`tool-${t.slug}`.slice(0, 60)}
+        topic={TOOL_BOOKING[slug]?.topic}
+        title={TOOL_BOOKING[slug]?.title ?? "Want to talk through your result?"}
+        body="Bring your result to a call with an estate planning attorney in our network. Pick a time that suits you, with no questionnaire first. You see the flat fee before anything is signed."
+      />
       <h2>More free tools</h2>
       <CardGrid items={TOOLS.filter((x) => x.slug !== slug).slice(0, 4).map((x) => ({ href: `/tools/${x.slug}`, title: x.title, description: x.description }))} />
       <JsonLd

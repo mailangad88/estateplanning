@@ -107,6 +107,10 @@ A civil union does not by itself give a partner any rights to a partner's child,
 
 A civil union ends through a court order, so a breakup without a court order leaves your partner with spousal rights. Update beneficiary forms, powers of attorney and your will once the process starts. [How divorce affects your Illinois estate plan](/learn/illinois/how-divorce-affects-your-illinois-estate-plan) explains what the law changes automatically and what it does not.
 
+Not in a civil union? See [estate planning for unmarried partners in Illinois](/learn/illinois/unmarried-partners).
+
+For more on parentage, hospitals and family challenges, read [estate planning for LGBTQ+ couples and families in Illinois](/learn/illinois/lgbtq-estate-planning-illinois).
+
 ## How we can help
 
 If you are in an Illinois civil union, our attorneys can review your documents, explain where federal rules differ, and prepare wills, powers of attorney and beneficiary updates that fit your relationship. Take the [plan finder](/plan-finder) to see where you stand, or book a consultation.

@@ -12,11 +12,20 @@
     "launch-check": "node scripts/launch-check.mjs",
     "prebuild": "node scripts/launch-check.mjs && npm run search:index",
     "check:site": "node scripts/check-site.mjs",
+    "check:page-kit": "node scripts/page-kit.mjs",
+    "check:media": "node scripts/media-alt.mjs",
+    "page-log": "tsx scripts/page-log.mts",
     "search:index": "tsx scripts/build-search-index.mts",
     "review:queue": "tsx scripts/review-queue.mts",
     "embeds": "tsx scripts/embeds.mts",
     "review:apply": "tsx scripts/apply-page-approvals.mts",
-    "check:ai-text": "node scripts/ai-text-check.mjs"
+    "check:ai-text": "node scripts/ai-text-check.mjs",
+    "social:calendar": "tsx scripts/social/calendar-export.mts",
+    "blender:render": "python3 blender/render_short.py",
+    "remotion:tips": "cd video && node scripts/render-tips.mjs",
+    "visibility": "tsx scripts/seo/visibility.mts",
+    "brevo:setup": "tsx scripts/brevo-setup.mts",
+    "seo": "tsx scripts/seo/dataforseo.mts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.132.0",
