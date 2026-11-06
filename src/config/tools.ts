@@ -137,11 +137,11 @@ export const toolConfig = {
   /** Same for a will-based plan. */
   willPlanFeeDollars: null as { low: number; high: number } | null,
   /**
-   * Capture points where the phone number is optional. Empty means phone is required everywhere.
+   * Capture points where the phone number is optional. The website chat asks for email first, so phone is optional there.
    * Research suggests gated downloads convert better with phone optional; add "guide" and
    * "exit_offer" here to test that. Intake and callback should always require it.
    */
-  phoneOptionalFor: [] as CaptureTool[],
+  phoneOptionalFor: ["chat"] as CaptureTool[],
 };
 
 /** Federal estate tax basic exclusion per person for 2026 (One Big Beautiful Bill Act). Verify each year. */
