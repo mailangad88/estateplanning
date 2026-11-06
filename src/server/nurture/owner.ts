@@ -8,7 +8,8 @@ export type NurtureOwner = "crm" | "internal";
 /** True when a real CRM (not the mock) has its token set. Mirrors crmAdapterFromEnv without building one. */
 export function liveCrmConfigured(env: Record<string, string | undefined> = process.env): boolean {
   const provider = (env.CRM_PROVIDER ?? "lawmatics").toLowerCase();
-  return (provider === "lawmatics" && !!env.LAWMATICS_API_TOKEN) || (provider === "hubspot" && !!env.HUBSPOT_PRIVATE_APP_TOKEN);
+  return (provider === "lawmatics" && !!env.LAWMATICS_API_TOKEN) || (provider === "hubspot" && !!env.HUBSPOT_PRIVATE_APP_TOKEN) ||
+    (provider === "brevo" && !!env.BREVO_API_KEY);
 }
 
 /**
