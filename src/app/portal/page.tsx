@@ -116,6 +116,7 @@ function Nav({ actor }: { actor: Actor }) {
   if (can(actor, "view_retainer_templates")) links.push(["/portal/retainers", "Retainer templates"]);
   if (can(actor, "work_intake_queue")) links.push(["/portal/queue", "Intake queue"]);
   if (can(actor, "view_reports")) links.push(["/admin/analytics", "Analytics"]);
+  if (can(actor, "view_reports")) links.push(["/admin/page-log", "Page log"]);
   if (canStudio(actor, "view_studio")) links.push(["/admin/studio", "Video studio"]);
   if (can(actor, "view_lead_health")) links.push(["/admin/lead-health", "Lead health"]);
   if (can(actor, "manage_firm_capacity")) links.push(["/admin/capacity", "Capacity"]);

@@ -12,6 +12,9 @@ jobs:
       PANGRAM_API_KEY: ${{ secrets.PANGRAM_API_KEY }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history so the page improvement log can date when each page was last touched.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -29,6 +32,17 @@ jobs:
         run: npm run check:page-kit
       - name: Check every image has alt text and every video has a label, captions and VideoObject data
         run: npm run check:media
+      # Page improvement log: scores every page (SEO, AEO, GEO, visuals, FAQs, links, booking CTA, trust).
+      # Writes a job summary and the full CSV as an artifact. Fails only on hard rules (missing disclaimer, banned references).
+      - name: Page improvement log
+        run: npm run page-log -- --ci
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: page-log
+          path: |
+            docs/page-log.md
+            docs/page-log.csv
       # AI-text check (Pangram). Runs only when the PANGRAM_API_KEY secret is set; flags changed content pages
       # that read as mostly AI-written so the attorney rewrites them. See scripts/ai-text-check.mjs.
       - name: AI-text check on changed content

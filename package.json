@@ -14,6 +14,7 @@
     "check:site": "node scripts/check-site.mjs",
     "check:page-kit": "node scripts/page-kit.mjs",
     "check:media": "node scripts/media-alt.mjs",
+    "page-log": "tsx scripts/page-log.mts",
     "search:index": "tsx scripts/build-search-index.mts",
     "review:queue": "tsx scripts/review-queue.mts",
     "embeds": "tsx scripts/embeds.mts",
