@@ -12,6 +12,7 @@ import BookCta from "@/components/BookCta";
 import { MAGNET_FORMATS, magnetsFor, pillarOf } from "@/lib/magnets";
 import { quizzesFor } from "@/lib/quizzes";
 import { toolFor } from "@/config/tools";
+import { KitFaqs } from "@/components/page-kit";
 
 export interface RelatedLink {
   href: string;
@@ -99,7 +100,11 @@ export function ArticlePage(props: {
         widget={tool?.slug}
       />
       {props.after}
-      <FaqList faqs={props.faqs ?? []} />
+      {props.faqs?.length ? (
+        <FaqList faqs={props.faqs} />
+      ) : (
+        <KitFaqs url={props.path} topic={props.title} context={`${props.description} ${props.section.name}`} categories={["Getting started"]} />
+      )}
       {lead && !props.sensitive ? (
         <section className="magnet-callout">
           <MagnetOptIn
