@@ -281,7 +281,7 @@ function LocalStatePage({ s }: { s: StatePage }) {
       <h2>Prefer a call?</h2>
       <CallbackForm interest={`state:${s.code}`} />
       <Cta />
-      <SeoJsonLd data={[{ ...legalServiceLd(), areaServed: s.name }, breadcrumbLd([{ name: "Home", path: "/" }, { name: s.title, path: `/estate-planning/${s.slug}` }])]} />
+      <SeoJsonLd data={[legalServiceLd(), breadcrumbLd([{ name: "Home", path: "/" }, { name: s.title, path: `/estate-planning/${s.slug}` }])]} />
     </article>
   );
 }

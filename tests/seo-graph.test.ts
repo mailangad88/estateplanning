@@ -49,7 +49,7 @@ describe("siteGraphLd", () => {
     const g = siteGraphLd();
     const org = nodes(g).find((n) => n["@id"] === ORG_ID)!;
     const person = nodes(g).find((n) => n["@id"] === ATTORNEY_ID)!;
-    expect(org["@type"]).toEqual(["Organization", "LegalService"]);
+    expect(org["@type"]).toEqual(["Organization", "ProfessionalService"]);
     expect(person["@type"]).toBe("Person");
     expect(person.name).toBe(firm.attorneyName);
   });
