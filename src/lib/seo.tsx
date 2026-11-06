@@ -1,4 +1,4 @@
-import { firm } from "@/config/firm";
+import { firm, servedStates } from "@/config/firm";
 import { SITE_URL } from "@/config/site";
 
 /** Public site URL, used for canonical links, the sitemap and structured data. */
@@ -75,19 +75,50 @@ export function articleLd(input: ArticleLdInput) {
   };
 }
 
+/** True for a firm fact that still holds a placeholder. Placeholders never go into structured data. */
+const unfilled = (v: string | null | undefined) => !v || /\[[^\]]*\]|PLACEHOLDER|\(000\) 000-0000/.test(v);
+
+const STATE_NAMES: Record<string, string> = { IL: "Illinois", NJ: "New Jersey" };
+
+/** Served states as schema.org State places, from SERVED_STATES (defaults to the launch state). */
+export function servedAreaLd() {
+  const names = servedStates().map((c) => STATE_NAMES[c]).filter(Boolean);
+  return (names.length ? names : ["Illinois"]).map((name) => ({ "@type": "State", name, containedInPlace: { "@type": "Country", name: "United States" } }));
+}
+
+/** The office as a PostalAddress, or undefined while any part is a placeholder. */
+export function postalAddressLd() {
+  const a = firm.address;
+  if ([a.streetAddress, a.addressLocality, a.postalCode].some(unfilled)) return undefined;
+  return { "@type": "PostalAddress", ...a };
+}
+
+/**
+ * The business behind the site. It is a referral network that matches visitors with an attorney, not a law
+ * firm, so it is a ProfessionalService rather than a LegalService (Illinois Rule 7.1: don't imply a firm that
+ * isn't one). Name, address and phone come only from config/firm.ts and must match the Google Business
+ * Profile and every directory listing exactly.
+ */
 function legalServiceNode() {
   const node: Record<string, unknown> = {
-    "@type": ["Organization", "LegalService"],
+    "@type": ["Organization", "ProfessionalService"],
     "@id": ORG_ID,
-    name: firm.firmLegalName,
+    name: unfilled(firm.firmLegalName) ? firm.brandName : firm.firmLegalName,
     alternateName: firm.brandName,
+    description: "Estate planning attorney referral network. Matches families with an appropriate attorney for wills, trusts, powers of attorney and probate.",
     url: SITE_URL,
-    telephone: firm.phone,
-    address: firm.officeAddress,
-    areaServed: (process.env.SERVED_STATES ?? "XX").split(",").map((s) => s.trim()),
+    image: abs("/opengraph-image"),
+    areaServed: servedAreaLd(),
     knowsAbout: ["Estate planning", "Wills", "Revocable living trusts", "Powers of attorney", "Probate", "Trust administration"],
     employee: { "@id": ATTORNEY_ID },
   };
+  if (!unfilled(firm.phone)) node.telephone = firm.phone;
+  if (!unfilled(firm.email)) node.email = firm.email;
+  const address = postalAddressLd();
+  if (address) node.address = address;
+  if (firm.openingHours.length) {
+    node.openingHoursSpecification = firm.openingHours.map((h) => ({ "@type": "OpeningHoursSpecification", dayOfWeek: h.days, opens: h.opens, closes: h.closes }));
+  }
   if (firm.sameAs.length) node.sameAs = firm.sameAs;
   return node;
 }
@@ -119,8 +150,8 @@ export function siteGraphLd() {
 
 /** Standalone firm node for pages that override a field, such as areaServed on state pages. */
 export function legalServiceLd() {
-  const { "@id": _id, ...node } = legalServiceNode();
-  return { "@context": "https://schema.org", ...node, employee: { "@type": "Attorney", name: firm.attorneyName } };
+  // Same @id as the layout's node, so search engines merge the two instead of seeing a second business.
+  return { "@context": "https://schema.org", ...legalServiceNode() };
 }
 
 export function howToLd(input: { name: string; description: string; steps: { name: string; text: string }[] }) {

@@ -113,9 +113,18 @@ export function cityServiceSchema(c: City): Json {
   return {
     "@type": "Service",
     "@id": `${absoluteUrl(c.url)}#service`,
-    serviceType: "Estate planning",
+    name: `Estate planning attorney referrals in ${c.name}, ${c.state.abbr}`,
+    serviceType: ["Estate planning", "Wills", "Living trusts", "Powers of attorney", "Probate"],
     provider: { "@id": ORG_ID },
-    areaServed: { "@type": "City", name: `${c.name}, ${c.state.abbr}` },
+    areaServed: {
+      "@type": "City",
+      name: c.name,
+      containedInPlace: {
+        "@type": "AdministrativeArea",
+        name: `${c.county}, ${c.state.name}`,
+        containedInPlace: { "@type": "State", name: c.state.name },
+      },
+    },
     url: absoluteUrl(c.url),
   };
 }

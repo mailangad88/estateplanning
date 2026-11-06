@@ -12,7 +12,7 @@ import JsonLd from "@/components/JsonLd";
 import { PageHero } from "@/components/page-hero";
 import PageMeta from "@/components/PageMeta";
 import { servedStates } from "@/config/firm";
-import { countyForCity, getCities, getClusters, getPillar, getStateGuide, isClusterServed } from "@/lib/library";
+import { countyForCity, getCities, getClusters, getPillar, getStateGuide, isClusterServed, moreCities, nearbyCities } from "@/lib/library";
 import { breadcrumbSchema, cityServiceSchema, graph } from "@/lib/schema";
 
 /**
@@ -43,7 +43,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { state, city } = await params;
   const c = find(state, city);
   if (!c) return {};
-  const title = `Estate planning attorney in ${c.name}, ${c.state.abbr}: wills, trusts and probate`;
+  // "Find an attorney" rather than "attorney in": the site is a referral network, not a firm with an office in every city.
+  const title = `Find an estate planning attorney in ${c.name}, ${c.state.abbr}: wills, trusts and probate`;
   return {
     title,
     description: `Wills, living trusts, powers of attorney and probate help for families in ${c.name} and ${c.county}. Plain answers, flat-fee quotes and a free plan finder.`,
@@ -63,7 +64,9 @@ export default async function CityPage({ params }: { params: Promise<Params> }) 
     { name: c.name, url: c.url },
   ];
   const county = countyForCity(c);
-  const nearby = served().filter((n) => n.state.slug === c.state.slug && c.nearby.includes(n.slug));
+  const all = served();
+  const nearby = nearbyCities(c, all);
+  const more = moreCities(c, all, nearby);
   const fees = county ? feesFor(county) : undefined;
   const court = c.probateCourt;
   const short =
@@ -167,11 +170,19 @@ export default async function CityPage({ params }: { params: Promise<Params> }) 
           <h2>Nearby</h2>
           <ul className="chips">
             {nearby.map((n) => (
-              <li key={n.slug}><Link href={n.url}>{n.name}</Link></li>
+              <li key={n.slug}><Link href={n.url}>Estate planning in {n.name}</Link></li>
             ))}
           </ul>
         </>
       )}
+      <h2>More {c.state.name} city guides</h2>
+      <ul className="chips">
+        {more.map((n) => (
+          <li key={n.slug}><Link href={n.url}>{n.name}</Link></li>
+        ))}
+        <li><Link href={`/estate-planning/${c.state.slug}#cities`}>All {c.state.name} cities</Link></li>
+        <li><Link href={`/estate-planning/${c.state.slug}/counties`}>{c.state.name} county probate guides</Link></li>
+      </ul>
     </article>
   );
 }

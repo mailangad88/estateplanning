@@ -514,6 +514,35 @@ export function getCounties(stateSlug?: string): County[] {
 }
 
 /** The county page for a city, matched on the city's "county" name ("Cook County"). */
+/**
+ * Cities to link from a city page's "Nearby" list. Links run both ways (if A lists B, B links back to A) and
+ * cities in the same county are added, so no city page is left without nearby links.
+ */
+export function nearbyCities(city: City, all: City[], max = 8): City[] {
+  const peers = all.filter((n) => n.state.slug === city.state.slug && n.slug !== city.slug);
+  const listed = city.nearby.map((slug) => peers.find((n) => n.slug === slug)).filter((n): n is City => !!n);
+  const reverse = peers.filter((n) => n.nearby.includes(city.slug));
+  const sameCounty = peers.filter((n) => n.county === city.county);
+  const out: City[] = [];
+  for (const n of [...listed, ...reverse, ...sameCounty]) if (!out.includes(n)) out.push(n);
+  return out.slice(0, max);
+}
+
+/**
+ * A rotating set of other city guides in the same state: the next `count` cities after this one in list
+ * order, wrapping around. Every city page then gets links from `count` other city pages, so none is orphaned.
+ */
+export function moreCities(city: City, all: City[], exclude: City[] = [], count = 6): City[] {
+  const peers = all.filter((n) => n.state.slug === city.state.slug);
+  const i = peers.findIndex((n) => n.slug === city.slug);
+  const out: City[] = [];
+  for (let k = 1; k < peers.length && out.length < count; k++) {
+    const n = peers[(i + k) % peers.length];
+    if (n.slug !== city.slug && !exclude.includes(n)) out.push(n);
+  }
+  return out;
+}
+
 export function countyForCity(city: City): County | undefined {
   return getCounties(city.state.slug).find((c) => c.name === city.county);
 }

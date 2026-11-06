@@ -13,8 +13,30 @@ export const firm = {
   phone: "(000) 000-0000", // PLACEHOLDER tracked number
   /** Public contact email for the site (a company address, separate from the attorney). */
   email: "[Company email]",
-  officeAddress: "[Office address]",
+  /**
+   * The one office address, in parts. It must match the Google Business Profile, Bing Places, Apple Business
+   * Connect and every directory listing character for character (NAP consistency). Use a real, staffed office
+   * (Illinois Rule 7.2 needs the office address of a responsible lawyer or firm on every ad); never a PO box or
+   * virtual mailbox. Placeholders stay in "[Office ...]" so launch-check blocks a production build.
+   */
+  address: {
+    streetAddress: "[Office street address]",
+    addressLocality: "[Office city]",
+    addressRegion: "IL",
+    postalCode: "[Office ZIP]",
+    addressCountry: "US",
+  },
+  /** One-line office address for footers, emails and video end cards, built from `address` so they never drift. */
+  get officeAddress(): string {
+    const a = this.address;
+    return `${a.streetAddress}, ${a.addressLocality}, ${a.addressRegion} ${a.postalCode}`;
+  },
   officeHours: "[Office hours]",
+  /**
+   * Opening hours for structured data, in schema.org form, e.g. [{ days: ["Monday", "Tuesday"], opens: "09:00", closes: "17:00" }].
+   * Must match the hours on the Google Business Profile. Empty omits openingHoursSpecification.
+   */
+  openingHours: [] as { days: string[]; opens: string; closes: string }[],
   /** What the site promises about response time. Keep it true. */
   responseTime: "[Response time, e.g. within one business day]",
   /** Profile URLs (state bar, Google Business Profile and similar) that identify the firm. Empty omits sameAs from structured data. */
