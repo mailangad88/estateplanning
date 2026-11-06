@@ -15,3 +15,5 @@ next-env.d.ts
 
 # page-kit report (npm run check:page-kit)
 /reports/
+# visibility tracker and DataForSEO cache, ledger and reports
+/.cache/

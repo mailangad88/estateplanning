@@ -21,7 +21,8 @@
     "check:ai-text": "node scripts/ai-text-check.mjs",
     "social:calendar": "tsx scripts/social/calendar-export.mts",
     "blender:render": "python3 blender/render_short.py",
-    "remotion:tips": "cd video && node scripts/render-tips.mjs"
+    "remotion:tips": "cd video && node scripts/render-tips.mjs",
+    "visibility": "tsx scripts/seo/visibility.mts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.132.0",

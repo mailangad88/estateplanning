@@ -1,4 +1,5 @@
-import { firm } from "@/config/firm";
+import { firm, servedStates } from "@/config/firm";
+import { stateNames } from "@/lib/served-state-names";
 import { SITE_URL } from "@/config/site";
 
 /** Public site URL, used for canonical links, the sitemap and structured data. */
@@ -84,7 +85,7 @@ function legalServiceNode() {
     url: SITE_URL,
     telephone: firm.phone,
     address: firm.officeAddress,
-    areaServed: (process.env.SERVED_STATES ?? "XX").split(",").map((s) => s.trim()),
+    areaServed: stateNames(servedStates()).map((name) => ({ "@type": "State", name, containedInPlace: { "@type": "Country", name: "United States" } })),
     knowsAbout: ["Estate planning", "Wills", "Revocable living trusts", "Powers of attorney", "Probate", "Trust administration"],
     employee: { "@id": ATTORNEY_ID },
   };

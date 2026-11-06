@@ -1,0 +1,29 @@
+{
+  "_about": "Money keywords and questions the visibility tracker checks in every search and AI engine (npm run visibility). Illinois only for the first launch. 'page' is the page we want cited for the query; 'tier' core runs every time, extended only with --all. Edit freely.",
+  "queries": [
+    { "id": "il-attorney-chicago", "query": "estate planning attorney chicago", "tier": "core", "intent": "hire", "page": "/estate-planning/illinois" },
+    { "id": "il-living-trust-cost", "query": "how much does a living trust cost in illinois", "tier": "core", "intent": "price", "page": "/learn/illinois/illinois-living-trusts" },
+    { "id": "il-will-cost", "query": "how much does a will cost in illinois", "tier": "core", "intent": "price", "page": "/pricing" },
+    { "id": "il-probate-cost", "query": "how much does probate cost in illinois", "tier": "core", "intent": "price", "page": "/learn/illinois/illinois-probate-costs" },
+    { "id": "il-probate-time", "query": "how long does probate take in illinois", "tier": "core", "intent": "question", "page": "/learn/illinois/how-long-does-probate-take-in-illinois" },
+    { "id": "il-small-estate", "query": "illinois small estate affidavit limit", "tier": "core", "intent": "question", "page": "/learn/illinois/illinois-small-estate-affidavit" },
+    { "id": "il-no-will", "query": "who inherits if there is no will in illinois", "tier": "core", "intent": "question", "page": "/learn/illinois/who-inherits-without-a-will-in-illinois" },
+    { "id": "il-estate-tax", "query": "illinois estate tax exemption 2026", "tier": "core", "intent": "question", "page": "/learn/illinois/illinois-estate-tax" },
+    { "id": "il-will-vs-trust", "query": "do I need a will or a living trust in illinois", "tier": "core", "intent": "decide", "page": "/learn/illinois/illinois-living-trusts" },
+    { "id": "il-todi", "query": "illinois transfer on death instrument for a house", "tier": "core", "intent": "question", "page": "/learn/illinois/illinois-transfer-on-death-instrument" },
+    { "id": "il-poa-property", "query": "illinois power of attorney for property form", "tier": "core", "intent": "question", "page": "/learn/illinois/illinois-power-of-attorney-for-property" },
+    { "id": "il-best-way-find-lawyer", "query": "how do I find an affordable estate planning lawyer in illinois", "tier": "core", "intent": "hire", "page": "/book" },
+    { "id": "il-will-requirements", "query": "what makes a will legal in illinois", "tier": "extended", "intent": "question", "page": "/learn/illinois/illinois-will-requirements" },
+    { "id": "il-probate-process", "query": "illinois probate process step by step", "tier": "extended", "intent": "question", "page": "/learn/illinois/illinois-probate-process" },
+    { "id": "il-executor-pay", "query": "how much does an executor get paid in illinois", "tier": "extended", "intent": "question", "page": "/learn/illinois/how-much-does-an-executor-get-paid-in-illinois" },
+    { "id": "il-medicaid-recovery", "query": "illinois medicaid estate recovery house", "tier": "extended", "intent": "question", "page": "/learn/illinois/illinois-medicaid-estate-recovery" },
+    { "id": "il-guardianship", "query": "how to name a guardian for my children in illinois", "tier": "extended", "intent": "question", "page": "/learn/illinois/illinois-guardianship" },
+    { "id": "il-healthcare-poa", "query": "illinois healthcare power of attorney requirements", "tier": "extended", "intent": "question", "page": "/learn/illinois/illinois-healthcare-power-of-attorney" },
+    { "id": "il-spouse-rights", "query": "what does a spouse inherit in illinois", "tier": "extended", "intent": "question", "page": "/learn/illinois/illinois-spouse-rights-at-death" },
+    { "id": "il-inherit-house", "query": "inheriting a house in illinois what to do", "tier": "extended", "intent": "question", "page": "/learn/illinois/inheriting-a-house-in-illinois" },
+    { "id": "il-will-contest", "query": "deadline to contest a will in illinois", "tier": "extended", "intent": "question", "page": "/learn/illinois/illinois-will-contest-six-month-deadline" },
+    { "id": "il-special-needs", "query": "special needs trust illinois disabled child", "tier": "extended", "intent": "question", "page": "/learn/illinois/special-needs-planning-in-illinois-for-a-disabled-child" },
+    { "id": "il-flat-fee", "query": "flat fee estate planning illinois", "tier": "extended", "intent": "price", "page": "/pricing" },
+    { "id": "il-living-trust-naperville", "query": "living trust lawyer naperville", "tier": "extended", "intent": "hire", "page": "/estate-planning/illinois" }
+  ]
+}
