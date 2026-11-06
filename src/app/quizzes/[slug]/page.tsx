@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Breadcrumbs, ReviewNote } from "@/components/ui";
+import { Breadcrumbs, CardGrid, ReviewNote } from "@/components/ui";
 import { PageHero } from "@/components/page-hero";
 import { MAGNET_FORMATS, getMagnet } from "@/lib/magnets";
 import { getQuiz, getQuizzes, maxPoints } from "@/lib/quizzes";
@@ -42,6 +42,8 @@ export default async function QuizPage({ params }: Props) {
       />
       <TopicDiagram topic={`${q.title} ${q.slug} ${q.description}`} />
       <KitFaqs url={`/quizzes/${q.slug}`} topic={q.title.replace(/\b(quiz|check|readiness|iq)\b/gi, "")} context={q.description} categories={["Getting started"]} />
+      <h2>More free checks</h2>
+      <CardGrid items={getQuizzes().filter((x) => x.slug !== q.slug).slice(0, 4).map((x) => ({ href: `/quizzes/${x.slug}`, title: x.title, description: x.description }))} />
       <CtaBox from={`quiz-${q.slug}`} />
       <ReviewNote reviewed={q.reviewed} updated={q.updated} />
       <p className="notice">General information, not legal advice. Laws differ by state.</p>
