@@ -13,6 +13,7 @@ import { cookieFromHeader } from "@/server/auth/session";
 import { linkPlanToNewLead } from "@/server/services/familyPlan";
 import { PLAN_SESSION_COOKIE, resolvePlanSession } from "@/server/services/planAccount";
 import { getMagnet } from "@/lib/magnets";
+import { sendLeadAlert } from "@/server/leadAlert";
 
 export async function POST(request: Request) {
   let json: unknown;
@@ -114,6 +115,9 @@ export async function POST(request: Request) {
     // Hand the lead to the portal backend too. A failure here never loses the lead: the CRM delivery already succeeded.
     await ingest();
   }
+
+  // Tell the firm right away (generic alert, no personal details). Never fails the request.
+  await sendLeadAlert(record);
 
   return NextResponse.json({
     ok: true,
