@@ -106,6 +106,8 @@ Bring the diagnosis and any doctor's notes, a list of accounts and bills, the de
 
 If a hospital is about to discharge your parent to a nursing home, read [signing nursing home papers with no power of attorney](/learn/illinois/hospital-no-power-of-attorney).
 
+If your parent can still sign, [how to get power of attorney for a parent in Illinois](/learn/illinois/how-to-get-power-of-attorney-for-a-parent-in-illinois) walks through the conversation, the two forms and the signing day.
+
 ## How we can help
 
 If your parent may still be able to sign, time matters. An Illinois estate planning attorney can meet your parent, document the signing and prepare the full set of documents. If the court route is the only one, the attorney can explain the petition and the likely steps in your county. You can [book a consultation](/book?from=learn-dementia-no-power-of-attorney&topic=parent) and bring your parent if they are able, or start with the [plan finder](/plan-finder).

@@ -123,6 +123,8 @@ Also review where the original will is kept; see [where to keep your will](/lear
 
 A new diagnosis changes the timeline, and [estate planning after a serious diagnosis](/learn/life-stages/estate-planning-after-a-serious-diagnosis) explains what to sign first.
 
+Retired in Illinois? [Estate planning for retirees in Illinois](/learn/illinois/estate-planning-for-retirees-in-illinois) covers Illinois pensions, Medicaid estate recovery, senior property tax programs and the $4 million estate tax line.
+
 ## How we can help
 
 A retirement review is usually a single meeting. Our [plan finder](/plan-finder) can show which parts of your plan need attention, or you can book a consultation with an estate planning attorney to review your documents, beneficiary forms and long-term care options together. Bring your current documents and the [consultation checklist](/learn/basics/what-to-bring-to-estate-planning-consultation).

@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+Retiring here? [Estate planning for retirees in Illinois](/learn/illinois/estate-planning-for-retirees-in-illinois) walks through the decisions that change at retirement, from 401(k) rollovers and pension survivor forms to nursing home costs, the house, incapacity documents and the $4 million estate tax line.
+
+An adult child cannot get power of attorney alone; [how to get power of attorney for a parent in Illinois](/learn/illinois/how-to-get-power-of-attorney-for-a-parent-in-illinois) walks through the parent's signing, the capacity question, both statutory forms, a parent who refuses, and using the documents at the bank and with Social Security.
+
+Making a plan from scratch? The [Illinois estate planning checklist](/learn/illinois/estate-planning-checklist-illinois) goes document by document, with each Illinois signing rule and what to gather before meeting an attorney.
+
 If a late spouse or parent is still on the deed, see [how to remove a deceased owner from a deed in Illinois](/learn/illinois/how-to-remove-a-deceased-owner-from-a-deed-in-illinois) for what to record and where.
 
 Wondering whether money you inherit is split in a divorce? Read [is an inheritance marital property in Illinois](/learn/illinois/is-inheritance-marital-property-in-illinois) for how mixing, tracing and trusts affect it.
