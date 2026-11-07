@@ -117,6 +117,8 @@ That is a complete plan for a family of their size, and it does not require a tr
 
 Keep originals somewhere safe but reachable. A fireproof box at home, your attorney's vault, or a county court's will-deposit program in some states all work. A safe deposit box can be a problem because access may require a court order after death. Tell your executor and agents where the documents are. More on this in [where to keep your will](/learn/wills/where-to-keep-your-will).
 
+Live in Illinois? The [Illinois estate planning checklist](/learn/illinois/estate-planning-checklist-illinois) names the Illinois form and signing rule for each document on this list.
+
 ## How we can help
 
 If you are not sure which of these documents belong in your plan, the [plan finder](/plan-finder) can suggest a starting set based on your family and property. An attorney can then draft documents that meet your state's signing requirements and coordinate them with your account forms. You can book a consultation whenever you are ready.
