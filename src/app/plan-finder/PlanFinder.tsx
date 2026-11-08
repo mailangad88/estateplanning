@@ -6,6 +6,7 @@ import ConsultScheduler from "@/components/ConsultScheduler";
 import LeadForm, { type LeadResponse } from "@/components/LeadForm";
 import { track } from "@/components/capture";
 import { US_STATES } from "@/config/firm";
+import { stateNames } from "@/lib/served-state-names";
 import {
   isServedState,
   likelyPackage,
@@ -30,6 +31,8 @@ export default function PlanFinder({ servedStates }: { servedStates: string[] })
   const [phase, setPhase] = useState<Phase>("questions");
   const [stepIndex, setStepIndex] = useState(0);
   const [state, setState] = useState("");
+  const [otherState, setOtherState] = useState(false);
+  const served = servedStates.filter((c) => c !== "XX");
   const [answers, setAnswers] = useState<Answers>({});
   const [done, setDone] = useState<LeadResponse | null>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -218,6 +221,7 @@ export default function PlanFinder({ servedStates }: { servedStates: string[] })
 
       {step?.kind === "state" && (
         <form
+          className="tool-step"
           onSubmit={(e) => {
             e.preventDefault();
             submitState();
@@ -227,18 +231,45 @@ export default function PlanFinder({ servedStates }: { servedStates: string[] })
             <legend>
               <h1 ref={headingRef} tabIndex={-1} style={{ margin: 0, fontSize: "inherit" }}>Which state do you live in?</h1>
             </legend>
-            <p className="notice">Estate plans follow the law of your home state, so we check this first.</p>
-            <label className="field">
-              State
-              <select name="state" required value={state} onChange={(e) => setState(e.target.value)}>
-                <option value="" disabled>Choose a state</option>
-                {US_STATES.map((s) => <option key={s} value={s}>{s}</option>)}
-              </select>
-            </label>
-            <div className="nav">
-              <span />
-              <button type="submit" className="button" disabled={!state}>Next</button>
-            </div>
+            <p className="notice">
+              Estate plans follow the law of your home state, so we check this first. About seven short questions, then you see
+              your plan outline. No email needed to start.
+            </p>
+            {served.length > 0 && !otherState ? (
+              <div className="nav plan-state-choice">
+                {served.map((code, i) => (
+                  <button
+                    key={code}
+                    type="button"
+                    className="button"
+                    onClick={() => {
+                      setState(code);
+                      track("plan_finder_state", { served: 1 });
+                      next();
+                    }}
+                  >
+                    I live in {stateNames([code])[0] ?? code}
+                  </button>
+                ))}
+                <button type="button" className="button secondary" onClick={() => { setState(""); setOtherState(true); }}>
+                  Somewhere else
+                </button>
+              </div>
+            ) : (
+              <>
+                <label className="field">
+                  State
+                  <select name="state" required value={state} onChange={(e) => setState(e.target.value)}>
+                    <option value="" disabled>Choose a state</option>
+                    {US_STATES.map((s) => <option key={s} value={s}>{s}</option>)}
+                  </select>
+                </label>
+                <div className="nav">
+                  <span />
+                  <button type="submit" className="button" disabled={!state}>Next</button>
+                </div>
+              </>
+            )}
           </fieldset>
         </form>
       )}

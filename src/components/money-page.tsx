@@ -37,7 +37,7 @@ export function plain(text: string): string {
 }
 
 /** FAQ block that renders inline links and emits FAQPage JSON-LD with the links stripped. */
-export function RichFaqList({ faqs, title = "Common questions" }: { faqs: { q: string; a: string }[]; title?: string }) {
+export function RichFaqList({ faqs, title = "Common questions", openFirst = 0 }: { faqs: { q: string; a: string }[]; title?: string; /** How many of the first answers start open. */ openFirst?: number }) {
   const ld = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -46,8 +46,8 @@ export function RichFaqList({ faqs, title = "Common questions" }: { faqs: { q: s
   return (
     <section>
       <h2>{title}</h2>
-      {faqs.map((f) => (
-        <details className="faq" key={f.q}>
+      {faqs.map((f, i) => (
+        <details className="faq" key={f.q} open={i < openFirst}>
           <summary>{f.q}</summary>
           <p><Rich text={f.a} /></p>
         </details>
@@ -146,6 +146,11 @@ export function MoneyPage({ page }: { page: MoneyPageData }) {
         path={page.path}
         kicker={page.crumb}
         title={page.h1}
+        lead={
+          callFirst
+            ? "If someone you love has just died, there is no rush to decide everything today. The steps are explained in order below, and you can talk it through with an attorney whenever you are ready."
+            : page.description
+        }
         crumbs={<Breadcrumbs items={[{ href: "/", label: "Home" }, { label: page.crumb }]} />}
       >
         <p className="cta-row no-print">{primary}{secondary}</p>

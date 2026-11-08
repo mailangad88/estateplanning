@@ -81,6 +81,20 @@ export default function SiteChat({ servedStates, firmPhone }: { servedStates: st
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open]);
 
+  // On phones the open panel covers the whole screen, so it behaves as a true modal dialog:
+  // everything behind it is made inert (no tabbing or screen-reader reading into the hidden page).
+  const [fullScreen, setFullScreen] = useState(false);
+  useEffect(() => {
+    if (!open || typeof window === "undefined") return;
+    const phone = window.matchMedia("(max-width: 800px)").matches;
+    setFullScreen(phone);
+    if (!phone) return;
+    const behind = Array.from(document.querySelectorAll<HTMLElement>("header, main, footer, .sticky-bar, .cookie-consent, .skip-link"))
+      .filter((el) => !el.closest(".site-chat") && !el.inert);
+    behind.forEach((el) => { el.inert = true; });
+    return () => behind.forEach((el) => { el.inert = false; });
+  }, [open]);
+
   useEffect(() => {
     log.current?.scrollTo({ top: log.current.scrollHeight, behavior: "smooth" });
   }, [msgs, step]);
@@ -223,6 +237,7 @@ export default function SiteChat({ servedStates, firmPhone }: { servedStates: st
           type="button"
           className="site-chat__launcher"
           aria-haspopup="dialog"
+          aria-expanded={false}
           onClick={() => {
             setOpen(true);
             track("chat_open", { page_type: pathname?.split("/")[1] || "home" });
@@ -233,7 +248,7 @@ export default function SiteChat({ servedStates, firmPhone }: { servedStates: st
         </button>
       )}
       {open && (
-        <section className="site-chat__panel" role="dialog" aria-modal="false" aria-labelledby="site-chat-title">
+        <section className="site-chat__panel" role="dialog" aria-modal={fullScreen} aria-labelledby="site-chat-title">
           <header className="site-chat__head">
             <div>
               <p id="site-chat-title" className="site-chat__title">Ask us</p>

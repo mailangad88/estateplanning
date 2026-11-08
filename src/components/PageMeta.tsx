@@ -15,18 +15,17 @@ function formatDate(iso: string): string {
  * engines use to confirm who stands behind the content.
  */
 export default function PageMeta({ updated, words, reviewed = false }: { updated: string; words?: number; reviewed?: boolean }) {
-  const attorney = <Link href="/about-the-attorney" rel="author">{firm.attorneyName}</Link>;
   return (
     <p className="page-meta">
       <span className="review-badge">{reviewed ? "Attorney reviewed" : site.reviewStatus}</span>{" "}
       {reviewed ? (
         <>
-          Reviewed by {attorney}, {firm.attorneyTitle.toLowerCase()}
+          Reviewed by an estate planning attorney in our network
           {updated && <> on <time dateTime={updated}>{formatDate(updated)}</time></>}.
         </>
       ) : (
         <>
-          Written by our editorial team for review by {attorney}.
+          Written by our editorial team. Attorney review in progress.
           {updated && <> Updated <time dateTime={updated}>{formatDate(updated)}</time>.</>}
         </>
       )}

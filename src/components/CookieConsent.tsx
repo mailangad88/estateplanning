@@ -58,7 +58,7 @@ export default function CookieConsent() {
 
   if (!open) return null;
   return (
-    <div className="cookie-consent no-print" role="dialog" aria-label="Cookie choices">
+    <div className={`cookie-consent no-print${choosing ? " is-choosing" : ""}`} role="dialog" aria-label="Cookie choices">
       <p>
         We use analytics and advertising cookies only if you allow them. See our <Link href="/legal/privacy">privacy policy</Link>.
       </p>
@@ -75,12 +75,12 @@ export default function CookieConsent() {
         </div>
       )}
       <div className="cookie-consent-actions">
-        <button type="button" className="button" onClick={() => save(true, true)}>Accept all</button>
-        <button type="button" className="button" onClick={() => save(false, false)}>Reject all</button>
+        <button type="button" className="button secondary" onClick={() => save(true, true)}>Accept all</button>
+        <button type="button" className="button secondary" onClick={() => save(false, false)}>Reject all</button>
         {choosing ? (
           <button type="button" className="button secondary" onClick={() => save(analytics, ads)}>Save choices</button>
         ) : (
-          <button type="button" className="button secondary" onClick={() => setChoosing(true)}>Choose</button>
+          <button type="button" className="linklike cookie-consent-choose" onClick={() => setChoosing(true)}>Choose</button>
         )}
       </div>
     </div>
