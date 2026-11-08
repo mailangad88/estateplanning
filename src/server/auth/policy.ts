@@ -148,7 +148,9 @@ export type GlobalAction =
   | "view_referrals"
   | "view_retainer_templates"
   | "manage_retainer_templates"
-  | "approve_retainer_templates";
+  | "approve_retainer_templates"
+  | "view_lead_desk"
+  | "export_leads";
 
 const GLOBAL: Record<GlobalAction, Role[]> = {
   configure_routing: ["platform_admin"],
@@ -187,6 +189,10 @@ const GLOBAL: Record<GlobalAction, Role[]> = {
   manage_retainer_templates: ["firm_admin", "attorney"],
   // The wording a client signs is a legal judgment: only an attorney of the firm approves a version.
   approve_retainer_templates: ["attorney"],
+  // The leads desk (/admin/leads): the office's daily view of every lead it may see. Rows still follow leadAccess.
+  view_lead_desk: ["platform_admin", "firm_admin", "intake"],
+  // A CSV of leads carries names and contact details: owners and office admins only, and every export is audited.
+  export_leads: ["platform_admin", "firm_admin"],
 };
 
 export function can(actor: Actor, action: GlobalAction): boolean {
