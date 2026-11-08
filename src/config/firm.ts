@@ -21,7 +21,7 @@ export const firm = {
   /** Same hours in schema.org form for structured data. */
   openingHours: { days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], opens: "08:00", closes: "19:00" },
   /** What the site promises about response time. Keep it true. */
-  responseTime: "[Response time, e.g. within one business day]",
+  responseTime: "the same day during office hours", // Angad, 2026-11-08
   /** Profile URLs (state bar, Google Business Profile and similar) that identify the firm. Empty omits sameAs from structured data. */
   sameAs: [] as string[],
   /**
