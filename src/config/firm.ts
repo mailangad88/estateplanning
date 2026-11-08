@@ -14,7 +14,7 @@ export const firm = {
   /** Intake line, answered by the attorney (Angad, 2026-11-06). */
   phone: "(630) 656-3059",
   /** Public contact email for the site (a company address, separate from the attorney). */
-  email: "[Company email]",
+  email: "hello@familyfutureplanning.com", // Angad, 2026-11-08
   /** "Street, City, ST 12345" so postalAddress() in src/lib/seo.tsx can split it for structured data. Angad, 2026-11-08. */
   officeAddress: "3602 Grand View Court, St Charles, IL 60175",
   officeHours: "Monday to Sunday, 8 am to 7 pm",
