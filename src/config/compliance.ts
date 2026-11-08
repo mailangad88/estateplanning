@@ -214,9 +214,9 @@ export const STATE_RULES: Record<string, StateAdvertisingRules> = {
     filing: { required: false, scope: "None found.", fee: null },
     retentionYears: null,
     evidence: "V",
-    verified: false,
-    verifiedBy: null,
-    verifiedOn: null,
+    verified: true,
+    verifiedBy: "Sargun Singh (sign-off relayed by Angad Singh)",
+    verifiedOn: "2026-11-08",
     sources: [
       "https://www.courtrules.net/illinois/illinois-professional-conduct/rule-7-2",
       "https://ruledex.com/illinois/article-viii-illinois-rules-of-professional-conduct-of-2010/rule-7-3-solicitation-of-clients/",
