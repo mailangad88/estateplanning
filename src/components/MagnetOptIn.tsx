@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { track } from "@/components/capture";
-import { assignedVariants, useVariant } from "@/lib/experiments";
+import { assignedVariants } from "@/lib/experiments";
 import FormDisclaimer from "@/components/FormDisclaimer";
 
 const PROFILE_KEY = "efp-profile";
@@ -61,9 +61,9 @@ export default function MagnetOptIn({ magnet, compact = false, heading }: { magn
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const isCourse = magnet.format === "email-course";
-  const ctaVariant = useVariant("magnet_cta");
-  const fieldsVariant = useVariant("magnet_fields");
-  const askName = fieldsVariant === "name_email";
+  // The magnet_cta and magnet_fields tests are paused for launch (design council, 2026-11-06): traffic is too
+  // low to read them, so every visitor gets the stronger arms: email only, and a button that names the thing.
+  const askName = false;
   const viewHref = `/free/${magnet.slug}/view`;
 
   useEffect(() => {
@@ -76,6 +76,11 @@ export default function MagnetOptIn({ magnet, compact = false, heading }: { magn
     const f = new FormData(e.currentTarget);
     const firstName = String(f.get("firstName") ?? "").trim() || undefined;
     const email = String(f.get("email") ?? "").trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setError(magnet.lang === "es" ? "Escriba un email válido, como nombre@ejemplo.com." : "Please enter an email address like name@example.com.");
+      e.currentTarget.querySelector<HTMLInputElement>('input[name="email"]')?.focus();
+      return;
+    }
     setBusy(true);
     setError(null);
     try {
@@ -158,7 +163,7 @@ export default function MagnetOptIn({ magnet, compact = false, heading }: { magn
   }
 
   return (
-    <form className={`cta optin no-print${compact ? " optin--compact" : ""}`} onSubmit={submit}>
+    <form className={`cta optin no-print${compact ? " optin--compact" : ""}`} onSubmit={submit} noValidate>
       <strong>{heading ?? (isCourse ? "Start the free course" : `Get the free ${magnet.formatLabel.toLowerCase()}`)}</strong>
       {!compact && <p>{isCourse ? "One short email a day for five days." : "Open it right away, and we'll email you a copy."}</p>}
       <div className="optin__fields">
@@ -170,19 +175,21 @@ export default function MagnetOptIn({ magnet, compact = false, heading }: { magn
         )}
         <label className="field">
           Email
-          <input name="email" type="email" inputMode="email" required autoComplete="email" defaultValue={profile.email} key={`e${profile.email}`} />
+          <input
+            name="email" type="email" inputMode="email" required autoComplete="email" autoCapitalize="none" spellCheck={false}
+            defaultValue={profile.email} key={`e${profile.email}`}
+            {...(error ? { "aria-invalid": true as const, "aria-describedby": `optin-${magnet.slug}-error` } : {})}
+          />
         </label>
       </div>
       <div className="hp" aria-hidden="true"><input name="website" tabIndex={-1} autoComplete="off" /></div>
-      {error && <p className="error" role="alert">{error}</p>}
+      {error && <p className="error" role="alert" id={`optin-${magnet.slug}-error`}>{error}</p>}
       <button className="button" type="submit" disabled={busy}>
         {busy
           ? "Sending…"
           : isCourse
             ? "Send me day 1"
-            : ctaVariant === "specific"
-              ? `Send me the ${magnet.formatLabel.toLowerCase()}`
-              : "Get instant access"}
+            : `Email me the ${magnet.formatLabel.toLowerCase()}`}
       </button>
       <p className="notice">
         {magnet.sequence === "G"

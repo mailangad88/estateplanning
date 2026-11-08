@@ -7,11 +7,17 @@ import { PageHero } from "@/components/page-hero";
 import { VisualCardGrid, type CardItem, type CardMedia } from "@/components/visual-card";
 
 export function ReviewNote({ reviewed, updated }: { reviewed: boolean; updated: string }) {
+  // Unreviewed pages say so plainly, without the word "draft" sitting next to every booking ask
+  // (design council 2026-11-06). Only attorney-reviewed pages name the attorney as reviewer.
   return (
     <p className="meta">
-      {reviewed ? "Reviewed by " : "Draft pending review by "}
-      <Link href="/about-the-attorney" rel="author">{firm.attorneyName}</Link>
-      {reviewed ? `, ${firm.attorneyTitle.toLowerCase()}` : ""}
+      {reviewed ? (
+        <>
+          Reviewed by an estate planning attorney in our network
+        </>
+      ) : (
+        "Written by our editorial team · Attorney review in progress"
+      )}
       {updated ? ` · Updated ${updated}` : ""} · <Link href="/editorial-policy">How we review</Link>
     </p>
   );

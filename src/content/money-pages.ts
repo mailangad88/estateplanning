@@ -38,7 +38,6 @@ export interface MoneyPageData {
   related: { href: string; title: string; kind: string }[];
 }
 
-const A = firm.attorneyName;
 /** The attorney a visitor is matched with. The site is a referral network, not a law firm. */
 const MATCHED = "the attorney you are matched with";
 const essentials = packages.find((p) => p.id === "essentials");
@@ -852,7 +851,7 @@ const aboutAttorney: MoneyPageData = {
   title: "How we choose our attorneys",
   description: `How ${firm.brandName} chooses the estate planning attorneys in its ${SERVED_AND} network, who is responsible for the site, and what to expect when you reach out.`,
   h1: "How we choose our attorneys",
-  answer: `${firm.brandName} is a referral website. We match you with an appropriate estate planning attorney in our ${SERVED_AND} network, based on where you live and what you need. ${A} is the estate planning attorney responsible for this site.`,
+  answer: `${firm.brandName} is a referral website. We match you with an appropriate estate planning attorney in our ${SERVED_AND} network, based on where you live and what you need.`,
   sections: [
     {
       h: "How attorneys join the network",
@@ -906,12 +905,12 @@ const aboutAttorney: MoneyPageData = {
     {
       h: "What this site is",
       blocks: [
-        { p: `${firm.brandName} is a referral website, not a law firm. When you contact us, we match you with an appropriate estate planning attorney in our network. That attorney gives the legal advice, and you decide whether to hire them. ${A} is the attorney responsible for this site. See [how we work](/legal/how-we-work), the [disclaimer](/legal/disclaimer) and our [editorial policy](/editorial-policy).` },
+        { p: `${firm.brandName} is a referral website, not a law firm. When you contact us, we match you with an appropriate estate planning attorney in our network. That attorney gives the legal advice, and you decide whether to hire them. See [how we work](/legal/how-we-work), the [disclaimer](/legal/disclaimer) and our [editorial policy](/editorial-policy).` },
       ],
     },
   ],
   faqs: [
-    { q: "Who will handle my matter?", a: `The attorney you are matched with. That may be ${A} or another estate planning attorney in our network. You know who it is before you sign an engagement agreement.` },
+    { q: "Who will handle my matter?", a: `The attorney you are matched with. That is an estate planning attorney in our network who fits what you need. You know who it is before you sign an engagement agreement.` },
     { q: "What areas of law does this site not cover?", a: "This site covers estate planning only: wills, trusts, powers of attorney, healthcare directives, probate and trust administration. For other matters, such as divorce or criminal defense, the state bar's lawyer referral service can help." },
     { q: "Which states does this site serve?", a: `${SERVED_AND} only. Attorneys in our network advise on the law of the state where they are licensed. We do not give legal advice about other states' laws.` },
     { q: "Can I talk to an attorney before deciding?", a: "Yes. Your first call is with an estate planning attorney, who explains the next steps. You do not have to decide on the call. See [how it works](/how-it-works)." },

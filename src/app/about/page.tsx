@@ -20,8 +20,7 @@ export default function About() {
         title={`About ${firm.brandName}`}
         lead={`${firm.brandName} is a referral website. We match you with an appropriate estate planning attorney in our ${SERVED_AND} network.`}
       />
-      <h2>Who is responsible for this site</h2>
-      <p>{firm.attorneyName} is the estate planning attorney responsible for this site.</p>
+      <h2>Our attorneys</h2>
       <p>
         Read <Link href="/about-the-attorney">how we choose our attorneys</Link> and what to expect from your first call.
       </p>

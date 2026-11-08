@@ -77,7 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <p className="cta-row">
                 <Link className="button" href="/book?from=footer">Book a consult</Link>
                 <Link className="button ghost-light" href="/plan-finder">Start the plan finder</Link>
-                <TrackedPhoneLink fallback={firm.phone} className="button ghost-light" />
+                <span className="footer-cta__call">or call <TrackedPhoneLink fallback={firm.phone} /></span>
               </p>
             </div>
           </div>

@@ -66,3 +66,12 @@
   .site-chat__panel { width: 100%; height: 100%; border-radius: 0; border: 0; }
 }
 @media print { .site-chat { display: none; } }
+
+/* Until the visitor answers the cookie banner, the launcher waits, so the two never stack over each other. */
+body:has(.cookie-consent) .site-chat:not(:has(.site-chat__panel)) { display: none; }
+/* 44px touch targets for the close and start-over buttons and the answer chips. */
+.site-chat__icon { width: 44px; height: 44px; }
+.site-chat__chip { min-height: 44px; }
+@media (max-width: 800px) {
+  .site-chat__launcher { padding: 14px; }
+}

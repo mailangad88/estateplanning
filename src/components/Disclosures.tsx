@@ -30,7 +30,7 @@ export function Disclosures({ states = servedStates(), variant = "footer" }: { s
     <div className="disclosures" data-compliance-version={COMPLIANCE_VERSION} data-states={rules.states.join(",")}>
       <p>
         <strong>{rules.webLabels.join(". ")}.</strong> {firm.firmLegalName}, {office}, {firm.phone},{" "}
-        <a href={`mailto:${firm.email}`}>{firm.email}</a>. Responsible attorney: {firm.attorneyName}. Our attorney network serves {listStates(rules.states)} only.
+        <a href={`mailto:${firm.email}`}>{firm.email}</a>. Our attorney network serves {listStates(rules.states)} only.
       </p>
       <p>
         <strong>{SITE_DISCLAIMER}</strong> Laws differ by state. An attorney-client relationship begins only when you and an attorney
