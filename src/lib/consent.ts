@@ -4,7 +4,7 @@ import { firm } from "@/config/firm";
  * Consent language shown on every lead form. The exact text and its version are
  * stored with each lead as proof of consent. Bump the version whenever the text changes.
  */
-export const CONSENT_VERSION = "2026-10-06.1";
+export const CONSENT_VERSION = "2026-11-08.1"; // 2026-11-08: firm legal name filled in
 
 export function smsConsentText(): string {
   return (
