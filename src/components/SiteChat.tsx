@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { track } from "@/components/capture";
 import LeadForm from "@/components/LeadForm";
-import { US_STATES } from "@/config/firm";
+import { OTHER_STATE, US_STATES } from "@/config/firm";
 import {
   CHAT_DISCLAIMER,
   CHAT_TOPICS,
@@ -27,6 +27,7 @@ import {
 import { loadPagefind } from "@/lib/pagefind";
 import { loadVisitor } from "@/lib/visitor";
 import "./chat.css";
+import StateOptions from "@/components/StateOptions";
 
 type Step = "topic" | "question" | "state" | "pick_state" | "offer" | "contact" | "done" | "not_covered";
 
@@ -184,7 +185,7 @@ export default function SiteChat({ servedStates, firmPhone }: { servedStates: st
     if (!isCovered(up, covered)) {
       say(
         bot(
-          `Thanks. Right now our network only covers ${coveredList(covered)}, so we can't match you with an attorney in ${stateName(up)}. ` +
+          `Thanks. Right now our network only covers ${coveredList(covered)}, so we can't match you with an attorney in ${up === OTHER_STATE ? "your state" : stateName(up)}. ` +
             "The guides on this site are still free to read, and your state bar's lawyer referral service can connect you with someone licensed there.",
           [{ label: "Help outside our states", href: "/not-in-your-state" }],
         ),
@@ -296,7 +297,7 @@ export default function SiteChat({ servedStates, firmPhone }: { servedStates: st
                 {covered.map((s) => (
                   <button key={s} type="button" className="site-chat__chip" onClick={() => chooseState(s)}>{stateName(s)}</button>
                 ))}
-                <button type="button" className="site-chat__chip site-chat__chip--alt" onClick={() => { say(me("Another state")); setStep("pick_state"); }}>
+                <button type="button" className="site-chat__chip site-chat__chip--alt" onClick={() => { say(me("Another state")); afterState(OTHER_STATE); }}>
                   Another state
                 </button>
               </div>
@@ -305,9 +306,8 @@ export default function SiteChat({ servedStates, firmPhone }: { servedStates: st
             {step === "pick_state" && (
               <label className="site-chat__select">
                 Choose your state
-                <select defaultValue="" onChange={(e) => e.target.value && chooseState(e.target.value)}>
-                  <option value="" disabled>State</option>
-                  {US_STATES.map((s) => <option key={s} value={s}>{stateName(s)}</option>)}
+                <select defaultValue="" onChange={(e) => e.target.value && (e.target.value === OTHER_STATE ? (say(me("Another state")), afterState(OTHER_STATE)) : chooseState(e.target.value))}>
+                  <StateOptions other placeholder="State" />
                 </select>
               </label>
             )}

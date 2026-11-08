@@ -16,6 +16,7 @@ import {
 } from "@/lib/tools/deathTax";
 import { ALL_STATE_CODES, INHERITANCE_TAX_META, STATE_NAMES, STATE_TABLE_SOURCE } from "@/lib/tools/deathTaxData";
 import { Money, usd } from "./shared";
+import StateOptions from "@/components/StateOptions";
 
 const TOOL_ID = "state-death-tax-checker";
 
@@ -96,7 +97,7 @@ export default function DeathTax({ initialState }: { initialState?: string }) {
             State
             <select value={state} onChange={(e) => setState(e.target.value)}>
               <option value="">Choose a state</option>
-              {ALL_STATE_CODES.map((s) => <option key={s} value={s}>{STATE_NAMES[s]}</option>)}
+              <StateOptions current={state} />
             </select>
           </label>
         </fieldset>

@@ -1,9 +1,9 @@
 "use client";
+import StateOptions from "@/components/StateOptions";
 
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { EmailCapture, track } from "@/components/capture";
-import { US_STATES } from "@/config/firm";
 import {
   ACCOUNT_OPTIONS, BAND_LABEL, BAND_LINE, EVENT_OPTIONS, PRIMARY_OPTIONS,
   audit, isCommunityProperty, needsConsultNote,
@@ -138,7 +138,7 @@ export default function BeneficiaryAudit({ initialState }: { initialState?: stri
           Which state do you live in?
           <select value={state} onChange={(e) => setState(e.target.value)}>
             <option value="">Choose a state</option>
-            {US_STATES.map((s) => <option key={s} value={s}>{s}</option>)}
+            <StateOptions current={state} />
           </select>
         </label>
         <label className="field">

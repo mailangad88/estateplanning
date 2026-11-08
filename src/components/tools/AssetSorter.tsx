@@ -1,4 +1,5 @@
 "use client";
+import StateOptions from "@/components/StateOptions";
 
 import Link from "next/link";
 import { useRef, useState } from "react";
@@ -68,7 +69,7 @@ export default function AssetSorter({ initialState }: { initialState?: string })
         <label className="field">
           Your state
           <select value={state} onChange={(e) => setState(e.target.value)}>
-            {Object.entries(STATE_NAMES).map(([c, n]) => <option key={c} value={c}>{n}</option>)}
+            <StateOptions current={state} />
           </select>
         </label>
 

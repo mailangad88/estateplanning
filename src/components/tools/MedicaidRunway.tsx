@@ -10,6 +10,7 @@ const stateName = (code: string) => STATE_NAMES[code] ?? code;
 import { FEDERAL } from "@/lib/tools/medicaidRunwayData";
 import { GROWTH_ASSUMPTION_PCT, compute, formatMonths, validate, type Answers } from "@/lib/tools/medicaidRunway";
 import { Money, usd } from "./shared";
+import StateOptions from "@/components/StateOptions";
 
 const TOOL_ID = "medicaid-savings-runway";
 
@@ -77,7 +78,7 @@ export default function MedicaidRunway({ initialState }: { initialState?: string
           Which state would the care be in?
           <select value={a.state} onChange={(e) => set("state", e.target.value)}>
             <option value="">Choose a state</option>
-            {US_STATES.map((s) => <option key={s} value={s}>{stateName(s)}</option>)}
+            <StateOptions current={a.state} />
           </select>
         </label>
 

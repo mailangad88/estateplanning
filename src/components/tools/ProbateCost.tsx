@@ -4,9 +4,9 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import LeadForm, { type LeadResponse } from "@/components/LeadForm";
 import ProbateVsTrustAnimation from "@/components/ProbateVsTrustAnimation";
-import { US_STATES } from "@/config/firm";
 import { toolConfig } from "@/config/tools";
 import { estimateProbate } from "@/lib/tools/costEstimate";
+import StateOptions from "@/components/StateOptions";
 
 const usd = (n: number) => n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
 const GUIDE = "probate-vs-trust-guide";
@@ -32,8 +32,7 @@ export default function ProbateCost({ initialState }: { initialState?: string } 
         <label className="field">
           State where you live
           <select value={state} onChange={(e) => setState(e.target.value)}>
-            <option value="" disabled>Choose a state</option>
-            {US_STATES.map((s) => <option key={s} value={s}>{s}</option>)}
+            <StateOptions current={state} placeholder="Choose a state" />
           </select>
         </label>
         <label className="field">

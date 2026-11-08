@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { ArrowRight } from "lucide-react";
-import { US_STATES } from "@/config/firm";
 import { estimateProbate } from "@/lib/tools/costEstimate";
+import StateOptions from "@/components/StateOptions";
 
 const usd = (n: number) => n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
 
@@ -26,7 +26,7 @@ export function ProbateSlider({ id, defaultState }: { id: string; defaultState: 
         <label className="vk-slider__state" htmlFor={`${id}-s`}>
           <span>State</span>
           <select id={`${id}-s`} value={state} onChange={(ev) => setState(ev.target.value)}>
-            {US_STATES.map((s) => <option key={s} value={s}>{s}</option>)}
+            <StateOptions current={state} />
           </select>
         </label>
       </div>

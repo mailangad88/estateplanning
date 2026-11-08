@@ -1,4 +1,5 @@
 "use client";
+import StateOptions from "@/components/StateOptions";
 
 import Link from "next/link";
 import "@/components/decision/decision.css";
@@ -154,7 +155,7 @@ export default function WhoInherits({ initialState }: { initialState?: string })
         <label className="field">
           Which state do you live in?
           <select value={state} onChange={(e) => { touch(); setState(e.target.value); }}>
-            {Object.entries(STATE_NAMES).map(([code, n]) => <option key={code} value={code}>{n}</option>)}
+            <StateOptions current={state} />
           </select>
         </label>
 

@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { US_STATES } from "@/config/firm";
 import { DEFAULT_TOOL_STATE, toolConfig } from "@/config/tools";
 import { HEARD_FROM_OPTIONS } from "@/lib/heardFrom";
 import { noRelationshipText, recordingNoticeText, smsConsentText } from "@/lib/consent";
@@ -9,6 +8,7 @@ import type { CaptureTool } from "@/lib/lead";
 import type { EducationTopic, QuizAnswers } from "@/lib/quiz";
 import { forgetVisitor, loadVisitor, rememberSubmission, sessionSource, visitorIdForSubmission, type KnownContact } from "@/lib/visitor";
 import FormDisclaimer from "@/components/FormDisclaimer";
+import StateOptions from "@/components/StateOptions";
 
 export interface LeadResponse {
   served: boolean;
@@ -179,8 +179,7 @@ export default function LeadForm(props: Props) {
         <label className="field">
           State where you live
           <select {...inv("state")} name="state" required defaultValue={props.defaultState ?? known.state ?? DEFAULT_TOOL_STATE} key={`s${props.defaultState ?? known.state ?? DEFAULT_TOOL_STATE}`}>
-            <option value="" disabled>Choose a state</option>
-            {US_STATES.map((s) => <option key={s} value={s}>{s}</option>)}
+            <StateOptions current={props.defaultState ?? known.state ?? DEFAULT_TOOL_STATE} other placeholder="Choose a state" />
           </select>
         </label>
         {err("state")}
