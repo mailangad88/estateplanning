@@ -115,6 +115,8 @@ A few facts push you toward a lawyer almost regardless of cost. A child or spous
 
 Rick, 58, owns a home, a small business and a retirement account, and has two children, one of whom has a history of financial trouble. Software will not ask whether to hold that child's share in trust. A lawyer will.
 
+In Illinois, [do I need a lawyer to make a will in Illinois?](/learn/illinois/do-i-need-a-lawyer-for-a-will-in-illinois) sorts the Illinois situations where a do-it-yourself will tends to fail.
+
 ## How we can help
 
 If you have started a plan on your own, our attorneys can review it for validity and fit, and tell you plainly whether it needs changes. If you have not started, the [plan finder](/plan-finder) will point to the documents most people in your situation need. Either way, the first conversation can be a short one.

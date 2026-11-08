@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+If you are wondering whether a relative left you anything, [how to find out if you are named in a will in Illinois](/learn/illinois/how-to-find-out-if-you-are-named-in-a-will-in-illinois) shows where wills, trusts, beneficiary forms and unclaimed property surface after a death, who gets notice, and which deadlines run from the admission date.
+
+Wondering whether you can write your own will? [Do I need a lawyer to make a will in Illinois?](/learn/illinois/do-i-need-a-lawyer-for-a-will-in-illinois) explains that the law does not require one and sorts the seven Illinois situations where a do-it-yourself will tends to fail.
+
+New parents can see the whole first plan, from guardian and backup to a children's trust, emergency guardian papers and both powers of attorney, in [estate planning for new parents in Illinois](/learn/illinois/estate-planning-for-new-parents-in-illinois).
+
 Retiring here? [Estate planning for retirees in Illinois](/learn/illinois/estate-planning-for-retirees-in-illinois) walks through the decisions that change at retirement, from 401(k) rollovers and pension survivor forms to nursing home costs, the house, incapacity documents and the $4 million estate tax line.
 
 An adult child cannot get power of attorney alone; [how to get power of attorney for a parent in Illinois](/learn/illinois/how-to-get-power-of-attorney-for-a-parent-in-illinois) walks through the parent's signing, the capacity question, both statutory forms, a parent who refuses, and using the documents at the bank and with Social Security.

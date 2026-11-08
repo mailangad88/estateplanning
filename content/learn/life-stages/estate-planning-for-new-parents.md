@@ -116,6 +116,8 @@ Plan to review after each additional child, a move to another state, a significa
 
 A practical way to start: schedule one hour, decide on your guardian and backup guardian, list each insurance and retirement account with its current beneficiary, and gather these facts before you meet an attorney. The [what to bring checklist](/learn/basics/what-to-bring-to-estate-planning-consultation) helps with that.
 
+Raising children in Illinois? [Estate planning for new parents in Illinois](/learn/illinois/estate-planning-for-new-parents-in-illinois) gives the Illinois signing rule for each piece, plus the short-term guardian paper for emergencies.
+
 ## How we can help
 
 If you are expecting or have a newborn, a single meeting with an estate planning attorney can cover all five documents. Our [plan finder](/plan-finder) takes a few minutes and points you to the documents that fit your family, or you can book a consultation to talk through guardians, trusts and insurance. There is no pressure to decide anything at the first conversation.

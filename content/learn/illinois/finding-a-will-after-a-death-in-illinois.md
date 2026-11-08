@@ -106,6 +106,8 @@ Found only a copy? See [what to do when the original will is lost](/learn/illino
 
 For every other step in the first month, use [what to do when someone dies in Illinois: a first 30 days checklist](/learn/illinois/what-to-do-when-someone-dies-in-illinois-first-30-days).
 
+If your question is whether you were left anything, [how to find out if you are named in a will in Illinois](/learn/illinois/how-to-find-out-if-you-are-named-in-a-will-in-illinois) covers the court file, trust notices and beneficiary forms.
+
 ## How we can help
 
 If you cannot tell whether a will exists, or you found one and are not sure what to do with it, our attorneys can help you file it and read the notices. To start your own plan, the [plan finder](/plan-finder) takes a few minutes.
