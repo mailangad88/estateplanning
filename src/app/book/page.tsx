@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { firm, LAUNCH_STATE, servedStates, SITE_DISCLAIMER, SERVED_AND, SERVED_OR } from "@/config/firm";
+import { firm, LAUNCH_STATE, leadStates, SITE_DISCLAIMER, LEAD_STATES_AND } from "@/config/firm";
 import { RichFaqList } from "@/components/money-page";
 import { Breadcrumbs, ReviewNote } from "@/components/ui";
 import { PageHero } from "@/components/page-hero";
@@ -9,7 +9,7 @@ import BookFlow from "./BookFlow";
 
 export const metadata: Metadata = {
   title: "Book a consultation with an estate planning attorney",
-  description: `Pick a time to talk with an estate planning attorney in ${SERVED_OR} about a will, trust, powers of attorney or settling an estate. We match you with an appropriate attorney in our network.`,
+  description: `Pick a time to talk with an estate planning attorney in ${LEAD_STATES_AND.replace(" and ", " or ")} about a will, trust, powers of attorney or settling an estate. We match you with an appropriate attorney in our network.`,
   alternates: { canonical: "/book" },
 };
 
@@ -26,11 +26,11 @@ const FAQS = [
   { q: "Who will I talk to?", a: "An estate planning attorney in our network who is licensed in your state and fits what you need. We match you based on where you live and the kind of help you are looking for." },
   { q: "Is this a law firm?", a: "No. This is a referral website: we match you with an appropriate attorney, and that attorney gives the legal advice." },
   { q: "What if I just want to learn first?", a: "Try the [plan finder](/plan-finder), the [will or trust comparison](/tools/will-or-trust) or our [free guides](/guides). Booking is there when you want it." },
-  { q: "Is what I say on the call confidential?", a: `Please do not share account numbers or Social Security numbers. Booking a consult does not by itself create an attorney-client relationship; that starts when you and the attorney sign an engagement agreement. What you tell an attorney while seeking legal help is generally kept confidential under Rule 1.18 of the ${SERVED_AND} Rules of Professional Conduct.` },
+  { q: "Is what I say on the call confidential?", a: `Please do not share account numbers or Social Security numbers. Booking a consult does not by itself create an attorney-client relationship; that starts when you and the attorney sign an engagement agreement. What you tell an attorney while seeking legal help is generally kept confidential under Rule 1.18 of the ${LEAD_STATES_AND} Rules of Professional Conduct.` },
 ];
 
 export default function BookPage() {
-  const served = servedStates();
+  const served = leadStates();
   const defaultState = served.includes(LAUNCH_STATE.abbr) ? LAUNCH_STATE.abbr : "";
   const digits = firm.phone.replace(/\D/g, "");
   // Without a calendar the flow ends in a call-back form, so the page must not promise "pick a time".
@@ -45,8 +45,8 @@ export default function BookPage() {
         title={hasCalendar ? "Book a call with an estate planning attorney" : "Request a call with an estate planning attorney"}
         lead={
           hasCalendar
-            ? `Pick a time below and we will match you with an appropriate estate planning attorney in our ${SERVED_AND} network. No questionnaire first.`
-            : `Tell us the best time to reach you. Our intake team calls to set up your consult with an appropriate estate planning attorney in our ${SERVED_AND} network. No questionnaire first.`
+            ? `Pick a time below and we will match you with an appropriate estate planning attorney in our ${LEAD_STATES_AND} network. No questionnaire first.`
+            : `Tell us the best time to reach you. Our intake team calls to set up your consult with an appropriate estate planning attorney in our ${LEAD_STATES_AND} network. No questionnaire first.`
         }
       >
         <ReviewNote reviewed={false} updated="October 2026" />

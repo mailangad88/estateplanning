@@ -1,6 +1,6 @@
 import { randomUUID } from "node:crypto";
 import { NextResponse } from "next/server";
-import { servedStates } from "@/config/firm";
+import { leadStates } from "@/config/firm";
 import { buildConsentRecord } from "@/lib/consent";
 import type { LeadRecord } from "@/lib/crm";
 import { effectiveContactMethod, leadSubmissionSchema } from "@/lib/lead";
@@ -56,7 +56,7 @@ export async function POST(request: Request) {
     answers: lead.answers,
     score: scoreLead({
       state: lead.state,
-      servedStates: servedStates(),
+      servedStates: leadStates(),
       answers: lead.answers,
       goals: lead.goals,
       smsConsent: lead.smsConsent,

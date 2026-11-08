@@ -1,4 +1,5 @@
 "use client";
+import StateOptions from "@/components/StateOptions";
 
 import Link from "next/link";
 import { useRef, useState } from "react";
@@ -114,7 +115,7 @@ export default function SmallEstate({ initialState }: { initialState?: string })
             State
             <select value={state} onChange={(e) => { touch(); setState(e.target.value); }}>
               <option value="">Choose a state</option>
-              {Object.entries(STATE_NAMES).map(([code, n]) => <option key={code} value={code}>{n}</option>)}
+              <StateOptions current={state} />
             </select>
           </label>
         </fieldset>

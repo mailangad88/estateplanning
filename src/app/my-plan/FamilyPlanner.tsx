@@ -4,7 +4,8 @@ import Link from "next/link";
 import { useEffect, useId, useRef, useState } from "react";
 import LeadForm from "@/components/LeadForm";
 import { track } from "@/components/capture";
-import { US_STATES } from "@/config/firm";
+import { DROPDOWN_STATES, US_STATES } from "@/config/firm";
+import { stateNames } from "@/lib/served-state-names";
 import { PLAN_DOCS } from "@/config/what-if-scenarios";
 import {
   ASSET_TYPE_LABELS,
@@ -305,7 +306,7 @@ export default function FamilyPlanner({ initial, configured, saved, linkExpired,
       <Section k="people" n={1} status={sections?.people} open>
         <p className="notice">Names only. Spell them the way you would on a form.</p>
         <div className={styles.grid}>
-          <Select label="State you live in" value={body.people.homeState} options={US_STATES.map((s) => [s, s])} error={err("people.homeState")}
+          <Select label="State you live in" value={body.people.homeState} options={[...new Set<string>([...DROPDOWN_STATES, ...(body.people.homeState ? [body.people.homeState] : [])])].map((s) => [s, stateNames([s])[0] ?? s])} error={err("people.homeState")}
             onChange={(v) => update((d) => { d.people.homeState = v as FamilyPlanBody["people"]["homeState"]; })} />
           <Select label="Relationship status" value={body.people.maritalStatus} options={MARITAL_STATUSES.map((s) => [s, MARITAL_LABELS[s]])}
             onChange={(v) => update((d) => { d.people.maritalStatus = v as FamilyPlanBody["people"]["maritalStatus"]; })} />

@@ -4,13 +4,14 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import CalcomEmbed from "@/components/CalcomEmbed";
 import { CallbackForm, track } from "@/components/capture";
-import { firm, US_STATES } from "@/config/firm";
+import { firm } from "@/config/firm";
 import { BOOK_TOPICS, bookingNotes, bookTopic, parseBookParams } from "@/lib/book";
 import { isServedState } from "@/lib/planFinder";
 import { stateName } from "@/config/compliance";
 
 const listNames = (codes: string[]) => codes.map(stateName).join(" and ");
 import { loadVisitor } from "@/lib/visitor";
+import StateOptions from "@/components/StateOptions";
 
 /**
  * Calendar-first booking. Two optional taps (state, topic) sit above the calendar; nothing has to be
@@ -103,8 +104,7 @@ export default function BookFlow({ servedStates, defaultState }: { servedStates:
               track("book_state", { served: isServedState(e.target.value, servedStates) ? 1 : 0 });
             }}
           >
-            <option value="" disabled>Choose a state</option>
-            {US_STATES.map((s) => <option key={s} value={s}>{s}</option>)}
+            <StateOptions current={state} other placeholder="Choose a state" />
           </select>
         </label>
         {!served && state && (

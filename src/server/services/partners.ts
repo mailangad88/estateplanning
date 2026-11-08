@@ -5,7 +5,7 @@
  * without a release (Rule 1.6).
  */
 import { randomUUID } from "node:crypto";
-import { servedStates } from "@/config/firm";
+import { leadStates } from "@/config/firm";
 import { buildConsentRecord } from "@/lib/consent";
 import type { LeadRecord } from "@/lib/crm";
 import {
@@ -271,7 +271,7 @@ export async function submitPartnerReferral(
     contactMethod: input.phone ? "phone" : "email",
     goals: undefined,
     answers: {},
-    score: scoreLead({ state: input.state, servedStates: servedStates(), answers: {}, smsConsent: false, capture: { tool: "intake" } }),
+    score: scoreLead({ state: input.state, servedStates: leadStates(), answers: {}, smsConsent: false, capture: { tool: "intake" } }),
     segments: [PARTNER_SEGMENT, `partner:${partner.refCode}`],
     source: { landingPage: ctx.pageUrl, partnerRef: partner.refCode },
     capture: { tool: "intake", result: { partnerReferral: true } },

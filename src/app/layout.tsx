@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SourceTracker from "@/components/SourceTracker";
-import { firm, servedStates } from "@/config/firm";
+import { firm, leadStates, servedStates } from "@/config/firm";
 import { ExitIntent, StickyContactBar } from "@/components/capture";
 import { Disclosures } from "@/components/Disclosures";
 import MegaFooter from "@/components/MegaFooter";
@@ -58,7 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="main" className="container">{children}</main>
         <StickyContactBar phone={firm.phone} textNumber={firm.textNumber} />
         <ExitIntent />
-        <SiteChat servedStates={servedStates()} firmPhone={firm.phone} />
+        <SiteChat servedStates={leadStates()} firmPhone={firm.phone} />
         <Analytics />
         <WebVitals />
         {CF_BEACON && (

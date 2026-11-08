@@ -117,6 +117,31 @@ export const SERVED_AND = servedNames().join(" and ");
 /** "Illinois" or "Illinois or New Jersey". */
 export const SERVED_OR = servedNames().join(" or ");
 
+/**
+ * The states every "where do you live" dropdown on the site lists (Angad, 2026-11-08: "the dropdown should only
+ * show IL and new jersey right now"). Change this one list to add or remove a state everywhere.
+ *
+ * This is separate from SERVED_STATES on purpose: SERVED_STATES still decides which state content is published
+ * (New Jersey pages stay hidden while it is IL), while leads and bookings from any state listed here are accepted.
+ */
+export const DROPDOWN_STATES = ["IL", "NJ"] as const;
+
+/** Value of the "Another state" choice. A visitor who picks it sees the out-of-state message. */
+export const OTHER_STATE = "OT";
+
+/** States a lead or booking is accepted from: SERVED_STATES plus the dropdown states. "XX" (placeholder) is kept as is. */
+export function leadStates(): string[] {
+  const served = servedStates();
+  if (served.includes("XX")) return served;
+  return [...new Set([...served, ...DROPDOWN_STATES])];
+}
+
+/** "Illinois and New Jersey": the states we accept leads from, for booking and form copy. */
+export const LEAD_STATES_AND = leadStates()
+  .map((c) => STATE_NAMES[c])
+  .filter(Boolean)
+  .join(" and ") || SERVED_AND;
+
 export const US_STATES = [
   "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN",
   "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH",

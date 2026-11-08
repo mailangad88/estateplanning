@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { servedStates } from "@/config/firm";
+import { leadStates } from "@/config/firm";
 import PlanFinder from "./PlanFinder";
 
 export const metadata: Metadata = {
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function PlanFinderPage() {
   return (
     <div className="plan-finder">
-      <PlanFinder servedStates={servedStates()} />
+      <PlanFinder servedStates={leadStates()} />
     </div>
   );
 }

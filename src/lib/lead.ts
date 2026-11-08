@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { US_STATES } from "@/config/firm";
+import { OTHER_STATE, US_STATES } from "@/config/firm";
 import { toolConfig } from "@/config/tools";
 import { HEARD_FROM_VALUES } from "@/lib/heardFrom";
 
@@ -52,7 +52,7 @@ export const leadSubmissionSchema = z.object({
     .transform((v) => v.replace(/\D/g, ""))
     .pipe(z.string().regex(/^(1?\d{10})?$/, "Enter a 10-digit US phone number"))
     .default(""),
-  state: z.enum(US_STATES, "Choose your state"),
+  state: z.enum([...US_STATES, OTHER_STATE], "Choose your state"),
   county: z.string().trim().max(80).optional(),
   preferredContact: z.enum(["phone", "text", "email"]).default("phone"),
   language: z.string().trim().max(40).default("English"),

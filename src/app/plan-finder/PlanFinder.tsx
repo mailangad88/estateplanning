@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import ConsultScheduler from "@/components/ConsultScheduler";
 import LeadForm, { type LeadResponse } from "@/components/LeadForm";
 import { track } from "@/components/capture";
-import { US_STATES } from "@/config/firm";
+import { OTHER_STATE } from "@/config/firm";
 import { stateNames } from "@/lib/served-state-names";
 import {
   isServedState,
@@ -19,6 +19,7 @@ import {
 import { educationTopics, QUESTIONS, type QuizAnswers } from "@/lib/quiz";
 import { loadVisitor } from "@/lib/visitor";
 import { handOffToPlan } from "@/lib/familyPlanHandoff";
+import StateOptions from "@/components/StateOptions";
 
 type Phase = "questions" | "out_of_area" | "result" | "contact" | "done";
 
@@ -99,10 +100,10 @@ export default function PlanFinder({ servedStates }: { servedStates: string[] })
   if (phase === "out_of_area") {
     return (
       <section>
-        <h1 ref={headingRef} tabIndex={-1}>We are not able to help in {state} yet</h1>
+        <h1 ref={headingRef} tabIndex={-1}>We are not able to help in {state === OTHER_STATE ? "your state" : (stateNames([state])[0] ?? state)} yet</h1>
         <p className="lead">
           Estate planning documents follow the law of the state you live in, so you want an attorney licensed there.
-          We only practice in {servedStates.join(", ")}.
+          Our network covers {stateNames(servedStates).join(" and ") || servedStates.join(", ")} only right now.
         </p>
         <p>
           <Link href="/not-in-your-state">Here is how to find a licensed estate planning attorney where you live.</Link>{" "}
@@ -260,8 +261,7 @@ export default function PlanFinder({ servedStates }: { servedStates: string[] })
                 <label className="field">
                   State
                   <select name="state" required value={state} onChange={(e) => setState(e.target.value)}>
-                    <option value="" disabled>Choose a state</option>
-                    {US_STATES.map((s) => <option key={s} value={s}>{s}</option>)}
+                    <StateOptions current={state} other placeholder="Choose a state" />
                   </select>
                 </label>
                 <div className="nav">
