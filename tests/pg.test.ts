@@ -25,6 +25,7 @@ import {
   deletePlanAccount, exportPlanAccount, listActivity, listDevices, regenerateRecoveryCodes, resolvePlanSession, revokePlanSession, verifyPlanSignIn,
 } from "@/server/services/planAccount";
 import { codeFor, signInPlan, useLink } from "./planSignIn";
+import { closeLead, createPhoneLead, deskLeads, exportLeads, logContact, reopenLead } from "@/server/services/leadDesk";
 
 const SCHEMA = readFileSync(join(__dirname, "../db/schema.sql"), "utf8");
 
@@ -935,6 +936,31 @@ suite("postgres integration", () => {
       await expect(as(s).planLinkUses.insert({ id: "jti-x", usedAt: T0 })).rejects.toThrow(/permission denied/);
     }
     await expect(service.planLinkUses.update("jti-pg", { usedAt: T0 })).rejects.toThrow();
+  });
+
+  maybe("leads desk reads, writes and exports through Postgres and row-level security", async () => {
+    const prev = process.env.SERVED_STATES;
+    process.env.SERVED_STATES = "IL";
+    try {
+      const actor = { userId: "u-admin", role: "platform_admin" as const, mfa: true };
+      const lead = await createPhoneLead(service, actor, { firstName: "Desk", lastName: "Caller", phone: "6305559911", email: "desk.caller@x.test", state: "IL", county: "Kane", matterType: "new_plan" });
+      // Reads run in the platform admin's RLS session, as the page does.
+      const row = (await deskLeads(platformRead(), actor)).find((r) => r.id === lead.id)!;
+      expect(row).toMatchObject({ name: "Desk Caller", status: "talking", toolLabel: "Phone call", phone: "6305559911" });
+      await logContact(service, actor, lead.id, { kind: "call", result: "voicemail", note: "Try after 5" });
+      await closeLead(service, actor, lead.id, "unresponsive", "Six tries");
+      expect((await service.leads.get(lead.id))!.exit?.reason).toBe("unresponsive");
+      await reopenLead(service, actor, lead.id);
+      expect((await service.leads.get(lead.id))!.exit).toBeUndefined();
+      const { csv, count } = await exportLeads(platformRead(), actor, { q: "desk caller" });
+      expect(count).toBe(1);
+      expect(csv).toContain("desk.caller@x.test");
+      // Marketing never reaches the desk: the policy refuses before any query runs.
+      await expect(deskLeads(as({ userId: "u-m", role: "marketing" }), { userId: "u-m", role: "marketing", mfa: true })).rejects.toThrow(/office/);
+    } finally {
+      if (prev === undefined) delete process.env.SERVED_STATES;
+      else process.env.SERVED_STATES = prev;
+    }
   });
 
   maybe("audit_events cannot be updated or deleted", async () => {
