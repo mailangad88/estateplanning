@@ -105,6 +105,8 @@ Neither state's death tax is likely to be the deciding factor for most families,
 - **Naming one child as both sole owner and the person in charge of paying the other.** Put a neutral trustee in between.
 - **Relying on a verbal promise.** If you want your plan followed, put it in a signed document. See [unequal shares and fairness](/learn/wills/disinheriting-or-unequal-shares).
 
+In Illinois, [how to leave the house to one child in Illinois](/learn/illinois/how-to-leave-the-house-to-one-child-in-illinois) compares a will, a transfer on death instrument, a trust and a deed for this plan.
+
 ## How we can help
 
 The legal drafting for this is not hard. The hard part is choosing numbers you are comfortable with. Our attorneys can model the options with your actual figures, write the equalizing clause, and help you decide how to tell your children. Start with the [plan finder](/plan-finder) or book a consultation.

@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+Parents who want one child to keep the family home can compare a will, a TODI, a trust and a deed in [how to leave the house to one child in Illinois](/learn/illinois/how-to-leave-the-house-to-one-child-in-illinois), including buyout clauses and ways to head off a contest.
+
+If you have been widowed, [estate planning after your spouse dies in Illinois](/learn/illinois/estate-planning-after-your-spouse-dies-in-illinois) sets out the order for replacing your will, both powers of attorney, beneficiary forms and house title, and rechecking the $4 million estate tax line.
+
+Wondering whether a parent's credit cards, hospital bills or nursing home balance are now yours? [Do you inherit your parents' debt in Illinois](/learn/illinois/do-you-inherit-your-parents-debt-in-illinois) sorts each debt by who owes it after death and when a child can be personally liable.
+
 If you are wondering whether a relative left you anything, [how to find out if you are named in a will in Illinois](/learn/illinois/how-to-find-out-if-you-are-named-in-a-will-in-illinois) shows where wills, trusts, beneficiary forms and unclaimed property surface after a death, who gets notice, and which deadlines run from the admission date.
 
 Wondering whether you can write your own will? [Do I need a lawyer to make a will in Illinois?](/learn/illinois/do-i-need-a-lawyer-for-a-will-in-illinois) explains that the law does not require one and sorts the seven Illinois situations where a do-it-yourself will tends to fail.
