@@ -102,6 +102,8 @@ Then check for other debts that behave differently: a mortgage or car loan is se
 
 A small estate may not go through probate at all, in which case the affidavit signer has duties of their own. Read our guide to the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit) before paying anything.
 
+For every other kind of debt, from nursing home bills to co-signed loans, see [do you inherit your parents' debt in Illinois](/learn/illinois/do-you-inherit-your-parents-debt-in-illinois).
+
 ## How we can help
 
 If a stack of statements is arriving, our attorneys can help you work out what the estate owes, who has to be notified and in what order to pay. The [plan finder](/plan-finder) can also help you decide what to set up now so your own family does not face this.

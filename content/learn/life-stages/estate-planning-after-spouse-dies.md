@@ -102,6 +102,8 @@ Ruth, 74, lost her husband Harold in March. They owned their house as tenants by
 
 Yes. A widowed person has no spouse to fall back on, so the guidance for people living without a partner now applies, including backup agents and a plan for care. See [estate planning if you are single](/learn/life-stages/estate-planning-for-single-people) and [estate planning in retirement](/learn/life-stages/estate-planning-for-retirees). If you are thinking of remarrying, our [blended families guide](/learn/blended-families) and its article on [prenups and your estate plan](/learn/blended-families/prenuptial-agreements-and-estate-plans) discuss how to protect your children.
 
+Widowed in Illinois? [Estate planning after your spouse dies in Illinois](/learn/illinois/estate-planning-after-your-spouse-dies-in-illinois) adds the Illinois house title steps and the $4 million state estate tax line, which has no portability.
+
 ## How we can help
 
 You do not need to do this alone or all at once. Our [plan finder](/plan-finder) can show which documents to update first, and an estate planning attorney can review your spouse's estate and your own plan together, including portability and any trusts. Book a consultation when you are ready, and bring your existing documents and your spouse's death certificate.
