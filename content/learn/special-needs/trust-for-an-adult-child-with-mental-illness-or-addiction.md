@@ -101,6 +101,8 @@ A trust handles money. Your child's health and safety need paper too.
 - Cutting the child out without telling anyone why. A short, kind letter to the trustee prevents years of guessing.
 - Setting a payout at age 40 because the child will be "mature by then."
 
+Planning in Illinois? [How to leave money to a child with addiction in Illinois](/learn/illinois/how-to-leave-money-to-a-child-with-addiction-in-illinois) walks a parent through the Illinois spendthrift rules, the trustee choice and fairness with siblings.
+
 ## How we can help
 
 Writing a trust for a child you are worried about is a hard document to draft, because it has to be strict about money and generous about care. Our attorneys can help you choose between a special needs trust and a discretionary trust and write terms your trustee can use. You can start with the [plan finder](/plan-finder) or book a consultation.

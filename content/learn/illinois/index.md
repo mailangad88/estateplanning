@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+If you are your parent's agent and the house needs to be sold, [can a power of attorney sell a house in Illinois](/learn/illinois/can-a-power-of-attorney-sell-a-house-in-illinois) covers what the title company asks for, where the money goes and who signs the deed when a trust holds the house or your parent has died.
+
+Parents worried about an inheritance landing in the hands of a child who struggles with substance use can read [how to leave money to a child with addiction in Illinois](/learn/illinois/how-to-leave-money-to-a-child-with-addiction-in-illinois), which covers spendthrift trust terms, choosing a sibling or professional trustee, and keeping shares fair.
+
+Worried Medicaid will take a parent's house? [How to protect your house from a nursing home in Illinois](/learn/illinois/protecting-your-house-from-a-nursing-home-in-illinois) goes move by move through a spouse at home, gifts and the look-back, allowed transfers, a TODI or trust, a sale and estate recovery.
+
 Parents who want one child to keep the family home can compare a will, a TODI, a trust and a deed in [how to leave the house to one child in Illinois](/learn/illinois/how-to-leave-the-house-to-one-child-in-illinois), including buyout clauses and ways to head off a contest.
 
 If you have been widowed, [estate planning after your spouse dies in Illinois](/learn/illinois/estate-planning-after-your-spouse-dies-in-illinois) sets out the order for replacing your will, both powers of attorney, beneficiary forms and house title, and rechecking the $4 million estate tax line.

@@ -121,6 +121,8 @@ Do these first, in order:
 4. Review your [will or trust options for the home](/learn/property-and-assets/leaving-your-home-to-children).
 5. Talk with an attorney before signing any deed.
 
+In Illinois, [how to protect your house from a nursing home in Illinois](/learn/illinois/protecting-your-house-from-a-nursing-home-in-illinois) sets each move against the 60-month look-back and Illinois estate recovery.
+
 ## How we can help
 
 Protecting a home from long-term care costs requires matching the right tool to your state's recovery rules and your family's situation. Our attorneys can explain the options and prepare the documents. Use the [plan finder](/plan-finder) or schedule a consultation. For the broader framework, see [Medicaid planning: the basics](/learn/elder-care/medicaid-planning).
