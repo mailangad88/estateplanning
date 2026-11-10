@@ -109,6 +109,8 @@ The power of attorney ends at death, and the agent can no longer sign anything. 
 
 Each state has its own recording rules, its own acknowledgment requirements and, in some places, special rules for homestead property and spouses. Community property states such as [California](/estate-planning/california) and [Texas](/estate-planning/texas) add a spouse's interest to the analysis. Whether the agent can create a trust, whether a gift must be spelled out and whether the document must be recorded before the deed all differ. A local title company and an attorney will know what the county expects.
 
+Selling a parent's home in Illinois? [Can a power of attorney sell a house in Illinois](/learn/illinois/can-a-power-of-attorney-sell-a-house-in-illinois) covers the statutory short form, the agent's duties and who signs when a trust holds the house.
+
 ## How we can help
 
 Our attorneys can draft a power of attorney with clear real estate authority, prepare a limited one for a single closing, or review a document that a title company has questioned. Our [plan finder](/plan-finder) is a good first step, and you can book a consultation when you want to talk it through.
