@@ -117,6 +117,8 @@ Read the successor trustee section twice. Look for who takes over if your first 
 
 You can use a lawyer for the parts that carry risk and handle the paperwork yourself. Some clients ask an attorney to review a document they drafted online. Others pay a flat fee for the trust and do their own account retitling with a checklist. A review is much cheaper than a full engagement, and it catches the structural mistakes. Our page on [how to choose an estate planning attorney](/learn/basics/how-to-choose-an-estate-planning-attorney) lists questions worth asking, and [the cost of estate planning](/learn/basics/how-much-does-estate-planning-cost) puts price ranges in context.
 
+In Illinois, [can I make my own living trust in Illinois](/learn/illinois/can-i-make-my-own-living-trust-in-illinois) lists the steps where homemade trusts usually break, from the deed to the $4 million state estate tax.
+
 ## How we can help
 
 If you have a trust from an online provider, we are glad to read it and tell you plainly what it does and does not do. If you have not started, our [plan finder](/plan-finder) will help you decide whether you need a trust at all, and one of our attorneys can talk through your options without any obligation to sign anything that day.

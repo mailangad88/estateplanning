@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+For the months between a parent's death and the sale, [taking care of a deceased parent's house in Illinois](/learn/illinois/taking-care-of-a-deceased-parents-house-in-illinois) explains who has authority over the house, who pays the mortgage, taxes and utilities, and how to handle a sibling who lives there.
+
+If you own a two-flat, rented condos or a small building, [estate planning for rental property owners in Illinois](/learn/illinois/estate-planning-for-rental-property-owners-in-illinois) compares an LLC, a living trust, a land trust, a TODI and joint title, and shows who collects rent during incapacity and probate.
+
+If you are thinking about a kit or a homemade trust, [can I make my own living trust in Illinois](/learn/illinois/can-i-make-my-own-living-trust-in-illinois) explains what the Trust Code requires and the steps where do-it-yourself trusts usually break, from the deed to the Illinois estate tax.
+
 If you are your parent's agent and the house needs to be sold, [can a power of attorney sell a house in Illinois](/learn/illinois/can-a-power-of-attorney-sell-a-house-in-illinois) covers what the title company asks for, where the money goes and who signs the deed when a trust holds the house or your parent has died.
 
 Parents worried about an inheritance landing in the hands of a child who struggles with substance use can read [how to leave money to a child with addiction in Illinois](/learn/illinois/how-to-leave-money-to-a-child-with-addiction-in-illinois), which covers spendthrift trust terms, choosing a sibling or professional trustee, and keeping shares fair.
