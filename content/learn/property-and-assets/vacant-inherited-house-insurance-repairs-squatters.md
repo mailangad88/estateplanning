@@ -114,6 +114,8 @@ Then the house costs money while the disagreement continues. Property taxes and 
 
 Anyone planning ahead can reduce this risk. A will or trust that says who may live in the house, who pays, and when it should be sold removes the guesswork for the people who come next. Our [guide to leaving your home to children](/learn/property-and-assets/leaving-your-home-to-children) shows how.
 
+For a parent's house in Illinois, [taking care of a deceased parent's house in Illinois](/learn/illinois/taking-care-of-a-deceased-parents-house-in-illinois) explains who is in charge and who pays the bills until it is sold or transferred.
+
 ## How we can help
 
 If you are holding the keys to an empty house and are not sure what you are allowed to do, our attorneys can explain the executor's or trustee's authority, help with the court paperwork and advise on squatters or lender issues. If you want your own house to be easier for your family, the [plan finder](/plan-finder) is a good first step, and you can book a consultation from there.

@@ -128,6 +128,8 @@ Whatever you choose, tell your successor now. Ask whether they want the job, and
 4. Name a successor trustee and, if you have an LLC, a successor manager.
 5. Review your insurance, including liability limits, with the trust as an insured.
 
+Own rentals in Illinois? [Estate planning for rental property owners in Illinois](/learn/illinois/estate-planning-for-rental-property-owners-in-illinois) compares Illinois title options, including land trusts and transfer on death instruments, and who runs the building at each stage.
+
 ## How we can help
 
 Our attorneys can look at how your rentals are titled, what your loans allow and whether a trust, an LLC or both fit your situation. You can start with the [plan finder](/plan-finder) to see which documents apply to you, or book a consultation and bring your deeds and a list of your properties.
