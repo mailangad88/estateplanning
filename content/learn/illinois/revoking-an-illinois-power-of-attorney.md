@@ -100,6 +100,8 @@ Take Frank, whose mother has moderate dementia. His brother Paul, her agent, has
 
 After the principal dies, read [does a power of attorney end at death in Illinois](/learn/illinois/does-a-power-of-attorney-end-at-death-in-illinois).
 
+For a health care power, see [how to revoke a health care power of attorney in Illinois](/learn/illinois/how-to-revoke-a-health-care-power-of-attorney-in-illinois), which covers who to tell at the doctor's office, hospital and care facility.
+
 ## How we can help
 
 Ending a power of attorney is easy to get wrong, and dealing with a family member who holds one is harder still. Our attorneys can help you draft a clean revocation and a new document, or review what an agent has done. The [plan finder](/plan-finder) is a place to begin, and you can book a consultation when you are ready.
