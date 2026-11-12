@@ -102,6 +102,8 @@ Revival is almost never the best answer. Edward revokes his 2018 will with a 202
 5. Update beneficiary designations and any trust to match.
 6. Tell your executor where the new original is kept.
 
+If you know the change you want to make, [how to change a will in Illinois](/learn/illinois/how-to-change-a-will-in-illinois) sorts common changes into codicil or new will.
+
 ## How we can help
 
 If your will no longer fits your family, our attorneys can review it, tell you whether a codicil or a new will makes more sense, and prepare signing instructions that fit Illinois law. You can start with the [plan finder](/plan-finder) to see which documents you may need, or book a consultation to go through your current will line by line.

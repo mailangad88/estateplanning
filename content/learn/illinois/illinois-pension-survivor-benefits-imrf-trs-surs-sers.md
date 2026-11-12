@@ -118,6 +118,8 @@ Naming a trust is allowed, but it needs care. IMRF says it will need the trust t
 - **Forgetting QILDROs.** A court order dividing a pension in a divorce, called a Qualified Illinois Domestic Relations Order, can affect who is paid. SURS says its benefits may not be paid to anyone other than the member unless a QILDRO names an alternate payee.
 - **Treating the pension as part of the will's math.** A parent who gives "equal shares" in the will but names one child on the pension form has unequal shares in practice.
 
+For the rest of a public employee's plan, read [estate planning for teachers and public employees in Illinois](/learn/illinois/estate-planning-for-teachers-and-public-employees-in-illinois).
+
 ## How we can help
 
 Pension forms are easy to forget and hard to fix after a death. Our attorneys can help you collect the right forms, read a benefit letter and decide whether a form should be updated before it is too late. Start with the [plan finder](/plan-finder), or book a consultation and bring the fund's letters and the most recent will.

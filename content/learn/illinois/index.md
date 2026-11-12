@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+Teachers, nurses at public hospitals, police, firefighters and other public workers can line up pension, 403(b), 457(b) and group life forms with a will, guardian and powers of attorney in [estate planning for teachers and public employees in Illinois](/learn/illinois/estate-planning-for-teachers-and-public-employees-in-illinois).
+
+If you want to swap an executor, add a gift or update after a marriage or divorce, [how to change a will in Illinois](/learn/illinois/how-to-change-a-will-in-illinois) shows which change needs a witnessed codicil, which needs a new will, and why pen edits on the original fail.
+
+[How to revoke a health care power of attorney in Illinois](/learn/illinois/how-to-revoke-a-health-care-power-of-attorney-in-illinois) explains the three ways to revoke under 755 ILCS 45/4-6, the 30-day delay option, and how to make sure doctors, hospitals and care facilities stop relying on the old form.
+
 For the months between a parent's death and the sale, [taking care of a deceased parent's house in Illinois](/learn/illinois/taking-care-of-a-deceased-parents-house-in-illinois) explains who has authority over the house, who pays the mortgage, taxes and utilities, and how to handle a sibling who lives there.
 
 If you own a two-flat, rented condos or a small building, [estate planning for rental property owners in Illinois](/learn/illinois/estate-planning-for-rental-property-owners-in-illinois) compares an LLC, a living trust, a land trust, a TODI and joint title, and shows who collects rent during incapacity and probate.
