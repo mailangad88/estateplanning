@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+[Who is next of kin in Illinois](/learn/illinois/who-is-next-of-kin-in-illinois) compares the four separate orders Illinois uses for medical decisions, inheritance, the funeral and appointment as administrator, with a worked family example.
+
+Veterans and service members can see why SGLI and VGLI forms override a will, what to sign before a deployment and what survivors need to claim VA benefits in [estate planning for veterans and military families in Illinois](/learn/illinois/estate-planning-for-veterans-and-military-families-in-illinois).
+
+[How to make a will in Illinois](/learn/illinois/how-to-make-a-will-in-illinois) walks through the ten steps in order, from the asset list and backup choices to signing day with two witnesses and storing the original.
+
 Teachers, nurses at public hospitals, police, firefighters and other public workers can line up pension, 403(b), 457(b) and group life forms with a will, guardian and powers of attorney in [estate planning for teachers and public employees in Illinois](/learn/illinois/estate-planning-for-teachers-and-public-employees-in-illinois).
 
 If you want to swap an executor, add a gift or update after a marriage or divorce, [how to change a will in Illinois](/learn/illinois/how-to-change-a-will-in-illinois) shows which change needs a witnessed codicil, which needs a new will, and why pen edits on the original fail.
