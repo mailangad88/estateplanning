@@ -16,6 +16,66 @@
         "ENABLE_CANVAS_SYNC": "true",
         "EXCALIDRAW_EXPORT_DIR": "docs/diagrams"
       }
+    },
+    "search-console": {
+      "command": "bash",
+      "args": [
+        "scripts/mcp/with-google-creds.sh",
+        "uvx",
+        "mcp-search-console@0.4.2"
+      ],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "${GOOGLE_APPLICATION_CREDENTIALS:-}",
+        "GOOGLE_SERVICE_ACCOUNT_JSON": "${GOOGLE_SERVICE_ACCOUNT_JSON:-}",
+        "GSC_SKIP_OAUTH": "true",
+        "GSC_ALLOW_DESTRUCTIVE": "false"
+      }
+    },
+    "google-analytics": {
+      "command": "bash",
+      "args": [
+        "scripts/mcp/with-google-creds.sh",
+        "uvx",
+        "analytics-mcp@1.1.0"
+      ],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "${GOOGLE_APPLICATION_CREDENTIALS:-}",
+        "GOOGLE_SERVICE_ACCOUNT_JSON": "${GOOGLE_SERVICE_ACCOUNT_JSON:-}",
+        "GOOGLE_CLOUD_PROJECT": "${GOOGLE_CLOUD_PROJECT:-}"
+      }
+    },
+    "seo-audit": {
+      "command": "bash",
+      "args": [
+        "scripts/mcp/with-google-creds.sh",
+        "npx",
+        "-y",
+        "@houtini/seo-audit-console@1.0.5"
+      ],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "${GOOGLE_APPLICATION_CREDENTIALS:-}",
+        "GOOGLE_SERVICE_ACCOUNT_JSON": "${GOOGLE_SERVICE_ACCOUNT_JSON:-}",
+        "SAC_DATA_DIR": ".cache/seo-audit",
+        "CRUX_API_KEY": "${CRUX_API_KEY:-}",
+        "DATAFORSEO_USERNAME": "",
+        "DATAFORSEO_PASSWORD": "",
+        "MAJESTIC_API_KEY": ""
+      }
+    },
+    "clarity": {
+      "command": "npx",
+      "args": ["-y", "@microsoft/clarity-mcp-server@2.0.1"],
+      "env": {
+        "CLARITY_API_TOKEN": "${CLARITY_API_TOKEN:-}"
+      }
+    },
+    "ai-seo": {
+      "command": "npx",
+      "args": ["-y", "@automatelab/ai-seo-mcp@1.0.1"]
+    },
+    "brevo": {
+      "type": "http",
+      "url": "https://mcp.brevo.com/v1/anthropic/mcp"
     }
   }
 }
