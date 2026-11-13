@@ -114,6 +114,8 @@ When no one on the list is available, or the family is in open conflict, a court
 
 It does not give a surrogate power over everything. It does not displace a valid agent. And the surrogate's authority ends when the patient regains capacity, a guardian of the person is appointed, or the patient dies (755 ILCS 40/25).
 
+The surrogate list is only one of several Illinois next-of-kin orders; [who is next of kin in Illinois](/learn/illinois/who-is-next-of-kin-in-illinois) compares it with the inheritance, funeral and administrator lists.
+
 ## How we can help
 
 If you would rather choose your decision-maker than leave it to a statute, our attorneys can prepare a health care power of attorney and living will that fit your family. You can start with the [plan finder](/plan-finder) or book a consultation to talk it through.

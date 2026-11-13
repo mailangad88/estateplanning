@@ -140,6 +140,8 @@ Not sure you need one at all? [Do I need a will in Illinois if I don't have much
 
 Holding a will someone wrote by hand or online? Run the [Illinois will validity check](/learn/illinois/is-my-will-valid).
 
+If you have not started yet, [how to make a will in Illinois](/learn/illinois/how-to-make-a-will-in-illinois) walks through the decisions to make before anything is drafted.
+
 ## How we can help
 
 Getting a will signed correctly is simple when someone walks you through it. Our attorneys can prepare your will, arrange proper witnesses and an attestation clause, and explain whether a video signing makes sense for you. Start with our [plan finder](/plan-finder), or see our [Illinois estate planning page](/estate-planning/illinois) to book a consultation.

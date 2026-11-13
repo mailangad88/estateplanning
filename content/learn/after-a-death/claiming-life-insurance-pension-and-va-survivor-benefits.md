@@ -116,6 +116,8 @@ None of this needs a probate court, unless the estate is the beneficiary or no b
 
 Wendell died at 71 after a stroke. His wife, Rosa, found a life insurance statement from 1998, a pension letter from a steel company, and a discharge paper from the Army. She called the insurer, who paid $50,000 within three weeks. The pension turned out to be a joint and survivor option at half the amount, which began after she filed a form. A county veterans officer reviewed Wendell's service and told her the benefits for a survivor of a non-service-connected death were limited, but she qualified for a flag and burial in the national cemetery, and a pension review to follow later. She spent about two hours on the phone for each claim and had everything in place within two months.
 
+For veterans and service members planning ahead in Illinois, see [estate planning for veterans and military families in Illinois](/learn/illinois/estate-planning-for-veterans-and-military-families-in-illinois).
+
 ## How we can help
 
 If a beneficiary dispute, an insurance denial or a missing policy is slowing a claim, our attorneys can explain your options and help you gather what the insurer needs. You can start with the [plan finder](/plan-finder) or book a consultation.
