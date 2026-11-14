@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+If you own a business, [estate planning for small business owners in Illinois](/learn/illinois/estate-planning-for-small-business-owners-in-illinois) shows what happens to a sole proprietorship, LLC, corporation or partnership at death and which document covers each gap.
+
+Just married? [Estate planning after getting married in Illinois](/learn/illinois/estate-planning-for-newlyweds-in-illinois) explains why marriage does not revoke an old will, what a new spouse inherits by law, whether to hold the home as tenants by the entirety, and a first-year update checklist.
+
+Named in a will and not sure what the role involves? [What does an executor do in Illinois](/learn/illinois/what-does-an-executor-do-in-illinois) lays out the job in order, from filing the will to the discharge order, with a link to the page on each step.
+
 [Who is next of kin in Illinois](/learn/illinois/who-is-next-of-kin-in-illinois) compares the four separate orders Illinois uses for medical decisions, inheritance, the funeral and appointment as administrator, with a worked family example.
 
 Veterans and service members can see why SGLI and VGLI forms override a will, what to sign before a deployment and what survivors need to claim VA benefits in [estate planning for veterans and military families in Illinois](/learn/illinois/estate-planning-for-veterans-and-military-families-in-illinois).

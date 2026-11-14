@@ -110,6 +110,8 @@ Add your spouse to emergency contacts, change your name on accounts if relevant,
 
 If you are buying a home together, read [estate planning when you buy a home](/learn/life-stages/estate-planning-when-you-buy-a-home) before closing, and if you do not plan to have children, see [estate planning for couples without children](/learn/life-stages/estate-planning-for-couples-without-children).
 
+If you live in Illinois, [estate planning for newlyweds in Illinois](/learn/illinois/estate-planning-for-newlyweds-in-illinois) covers spouse rights, tenancy by the entirety and civil unions.
+
 ## How we can help
 
 A newlywed planning session usually takes one meeting. Try the [plan finder](/plan-finder) to see which documents fit your situation, or schedule a consultation with an estate planning attorney to coordinate your beneficiary forms, titles and wills. We can also review a prenup alongside your plan.

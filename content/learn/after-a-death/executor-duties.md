@@ -114,6 +114,8 @@ You are not always required to hire one, but most executors benefit from at leas
 
 If you named an executor in your own will, or are choosing one now, read [how to choose an executor](/learn/wills/choosing-an-executor).
 
+For an Illinois estate step by step, see [what does an executor do in Illinois](/learn/illinois/what-does-an-executor-do-in-illinois).
+
 ## How we can help
 
 If you have just been named executor and are unsure where to begin, our attorneys can explain what is required in your state and help you decide how much support you need. You can use our [plan finder](/plan-finder) to get oriented or book a consultation when it suits you. You do not need to have everything figured out before you reach out.
