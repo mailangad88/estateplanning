@@ -121,6 +121,8 @@ You also remain on the hook for anything you signed personally. Our page on [per
 
 Use the [business succession scorecard](/free/business-succession-scorecard) to rate each risk as red, amber or green, then work through the [buy-sell agreement checklist](/free/buy-sell-agreement-checklist). The [Illinois small business succession guide](/free/illinois-small-business-succession-guide) adds the Illinois LLC Act rules and an emergency file for your successor. The [plan readiness assessment](/tools/plan-readiness-assessment) can also tell you which other documents are missing.
 
+For the rest of a business owner's plan, including sole proprietorships and corporations, see [estate planning for small business owners in Illinois](/learn/illinois/estate-planning-for-small-business-owners-in-illinois).
+
 ## How we can help
 
 Your operating agreement decides more than your will does, and the two are rarely drafted together. An Illinois estate planning attorney can read both side by side, point out where they conflict, and prepare a trust, power of attorney and buy-sell terms that fit how your company actually runs. Start with the [plan finder](/plan-finder), see [estate planning in Illinois](/estate-planning/illinois), or [book a consultation](/book?from=learn-llc-owner-dies&topic=trust).
