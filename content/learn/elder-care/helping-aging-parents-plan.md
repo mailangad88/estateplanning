@@ -122,6 +122,8 @@ Speak with an attorney quickly. Costs mount and bills continue during delay.
 
 Elderly people with cognitive decline are targets for scams and sometimes for relatives. Warning signs include sudden changes in documents, new "friends" who isolate the parent, unexplained withdrawals and unpaid bills. Our guide on [protecting older adults from financial exploitation](/learn/elder-care/elder-financial-abuse) lists the red flags and reporting channels.
 
+If your parents live in Illinois, [helping aging parents with estate planning in Illinois](/learn/illinois/helping-aging-parents-with-estate-planning-in-illinois) has a document audit and the Illinois signing rules.
+
 ## How we can help
 
 Helping a parent plan is easier with an attorney who can talk with them directly, confirm they understand each document, and explain choices in plain language. Our attorneys can meet with your parent, with you present or not, as they prefer. Use the [plan finder](/plan-finder) to see where to start or schedule a consultation for your family.
