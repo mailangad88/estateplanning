@@ -102,6 +102,8 @@ If Dan had not wanted the rifles, Kara would have taken them to a licensed deale
 
 Antiques, machine guns, suppressors and short-barreled rifles follow other rules, including federal approval for some items. Illinois also restricts certain weapons by statute. Before you move or sell anything unusual, ask an attorney. This is the situation where a small mistake carries a criminal penalty for a well-meaning person.
 
+To plan ahead for your own collection, see [estate planning for gun owners in Illinois](/learn/illinois/estate-planning-for-gun-owners-in-illinois).
+
 ## How we can help
 
 Our attorneys can help an executor inventory firearms, decide whether to transfer or sell, and work through the rest of the estate. If you are planning ahead, a will or trust can name who gets each gun and who holds them meanwhile. Use the [plan finder](/plan-finder) to start, or book a consultation to talk through an Illinois estate.

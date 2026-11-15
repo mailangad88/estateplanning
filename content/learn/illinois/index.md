@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+If you are the adult child, [helping aging parents with estate planning in Illinois](/learn/illinois/helping-aging-parents-with-estate-planning-in-illinois) covers auditing their papers, booking the attorney and why your parent must decide alone.
+
+If you own firearms, [estate planning for gun owners in Illinois](/learn/illinois/estate-planning-for-gun-owners-in-illinois) shows how to name recipients who can legally hold them, prepare your executor and write a letter of instruction.
+
+[Will vs. trust in Illinois](/learn/illinois/will-vs-trust-in-illinois) sorts common family situations into a will alone, a will plus a TODI and beneficiary forms, or a living trust, and shows what a trust does for children.
+
 If you own a business, [estate planning for small business owners in Illinois](/learn/illinois/estate-planning-for-small-business-owners-in-illinois) shows what happens to a sole proprietorship, LLC, corporation or partnership at death and which document covers each gap.
 
 Just married? [Estate planning after getting married in Illinois](/learn/illinois/estate-planning-for-newlyweds-in-illinois) explains why marriage does not revoke an old will, what a new spouse inherits by law, whether to hold the home as tenants by the entirety, and a first-year update checklist.
