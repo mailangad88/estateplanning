@@ -111,6 +111,8 @@ Many first-time buyers do well to close in a simple, sensible title, sign the ba
 
 For the bigger picture, see [guide to estate planning by life stage](/learn/life-stages).
 
+If you bought in Illinois, [estate planning after buying a house in Illinois](/learn/illinois/estate-planning-after-buying-a-house-in-illinois) covers Illinois deed wording, the TODI and a 90-day checklist.
+
 ## How we can help
 
 Our attorneys can read the vesting language on your closing documents, explain what it does in your state and prepare a deed, will and powers of attorney before or just after you close. The [plan finder](/plan-finder) takes a few minutes and suggests which documents fit your household, or you can book a consultation if you have a closing date coming up.

@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+If you are in your 20s or 30s with no kids or a new partner, [estate planning in your 20s and 30s in Illinois](/learn/illinois/estate-planning-for-young-adults-in-illinois) covers who inherits, powers of attorney, your 401(k) form and protecting a partner, with a starter checklist.
+
+Empty nesters can work through [updating your estate plan when the kids are grown](/learn/illinois/updating-your-estate-plan-when-kids-are-grown-in-illinois), with a document-by-document review table covering the guardian clause, adult children as executor or agent, equal or unequal shares, and when to move from a will to a trust.
+
+If you just closed on a home, [estate planning after buying a house in Illinois](/learn/illinois/estate-planning-after-buying-a-house-in-illinois) covers how to check your deed, what happens to the mortgage at a death, TODI or trust, life insurance and unmarried co-buyers, with a 90-day checklist.
+
 If you are the adult child, [helping aging parents with estate planning in Illinois](/learn/illinois/helping-aging-parents-with-estate-planning-in-illinois) covers auditing their papers, booking the attorney and why your parent must decide alone.
 
 If you own firearms, [estate planning for gun owners in Illinois](/learn/illinois/estate-planning-for-gun-owners-in-illinois) shows how to name recipients who can legally hold them, prepare your executor and write a letter of instruction.

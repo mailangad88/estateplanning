@@ -105,6 +105,8 @@ This is the one milestone where a delay costs real money. A child who will rely 
 
 States differ on pretermitted children, on the age at which a minor takes property, and on whether a parent's will or a trust can hold money past 18 or 21. Check the rules in your own [state guide](/estate-planning/california) as one example, and ask an attorney before you rely on a default.
 
+Once the kids are adults, [updating your estate plan when kids are grown in Illinois](/learn/illinois/updating-your-estate-plan-when-kids-are-grown-in-illinois) walks through each document under Illinois law.
+
 ## How we can help
 
 If a milestone has passed and your documents have not, the [plan finder](/plan-finder) can show which parts need attention first. Our attorneys can review the will, the trust and the beneficiary forms in one meeting, and update them so the whole family is covered at once.
