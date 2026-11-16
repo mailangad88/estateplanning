@@ -111,6 +111,8 @@ Treat your phone passcode like a key to the house. Without it, your family canno
 
 Anything big resets the list: marriage, a child, a first home, a serious relationship where you share finances, a career change that brings new benefits. Until then, check your beneficiary forms once a year when benefits enrollment opens. It takes ten minutes.
 
+For Illinois residents, [estate planning for young adults in Illinois](/learn/illinois/estate-planning-for-young-adults-in-illinois) explains who inherits without a will and the Illinois power of attorney forms.
+
 ## How we can help
 
 If you are in your twenties and wondering what is actually worth signing, our attorneys can set up a short, inexpensive starter plan and tell you honestly what can wait. You can start with the [plan finder](/plan-finder) to see which documents fit your situation, or book a consultation when you are ready.
