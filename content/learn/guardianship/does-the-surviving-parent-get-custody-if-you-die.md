@@ -116,6 +116,8 @@ For more on what a divorce changes in your plan, see [estate planning after divo
 
 States differ on how they treat unmarried fathers, how much weight a parent's written nomination carries, and the standard for finding a parent unfit. Some states allow a parent to name a guardian only when the other parent is dead or has no custody rights. Others let the court consider a nomination even if the other parent is alive. A lawyer in your state can tell you which applies. Our [state guides](/estate-planning) are a starting point.
 
+For divorced parents in Illinois, [estate planning for divorced parents in Illinois](/learn/illinois/estate-planning-for-divorced-parents-in-illinois) shows how to keep an ex-spouse away from the children's money.
+
 ## How we can help
 
 If your children's other parent worries you, that is a conversation to have in person, with someone who will listen without judging. Our attorneys can help you write a guardian nomination, build a trust that keeps the money out of the wrong hands, and tell you honestly what a will cannot do. Use the [plan finder](/plan-finder) to see which documents fit your family, or book a consultation.
