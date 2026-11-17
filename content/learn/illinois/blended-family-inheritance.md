@@ -33,6 +33,7 @@ related:
 glossary: ["elective-share", "intestate-succession", "heir", "per-stirpes", "qtip-trust", "trustee"]
 review: pending
 intent: situation
+keyword: "estate planning second marriage illinois"
 ---
 
 Linda is 61 and remarried five years ago. She has two grown sons from her first marriage. Her second husband, Ray, has a daughter. They live in Ray's house in Elmhurst, and Linda has her own savings and a 401(k). Linda assumes her sons will inherit from her, and Ray assumes his daughter will inherit from him. Neither has written anything down.

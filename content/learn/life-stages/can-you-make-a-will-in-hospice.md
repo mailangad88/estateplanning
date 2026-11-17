@@ -103,6 +103,8 @@ If you are the one in hospice, say it directly: you want your wishes written dow
 
 If the person has died or can no longer understand what is happening, no one can sign a will for them. A power of attorney does not allow an agent to make a will for the principal. The estate then passes under the intestacy rules. Those rules are covered in [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) and in [New Jersey](/learn/new-jersey/who-inherits-without-a-will-in-new-jersey). The family can still agree among themselves to share things differently once an estate is open, and heirs may use a disclaimer or a family settlement. It is slower and not certain.
 
+For Illinois signing rules and what to sign first, see [can someone in hospice sign a will in Illinois](/learn/illinois/estate-planning-when-someone-is-in-hospice-in-illinois).
+
 ## How we can help
 
 When time is short, the right move is a plain document signed correctly this week. Our attorneys can arrange a bedside signing, handle witnesses and the notary, and prepare the powers of attorney that go with it. Use the [plan finder](/plan-finder) or book a consultation, and tell us the situation is urgent.

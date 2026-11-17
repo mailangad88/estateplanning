@@ -201,6 +201,10 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+If a parent or spouse is in hospice, [what to sign first when someone is in hospice in Illinois](/learn/illinois/estate-planning-when-someone-is-in-hospice-in-illinois) covers bedside and video will signings, signing for someone who cannot hold a pen, and what happens if capacity is gone.
+
+Divorced parents who expect the other parent to raise the children can still choose who controls the money, as explained in [estate planning for divorced parents in Illinois](/learn/illinois/estate-planning-for-divorced-parents-in-illinois).
+
 If you are in your 20s or 30s with no kids or a new partner, [estate planning in your 20s and 30s in Illinois](/learn/illinois/estate-planning-for-young-adults-in-illinois) covers who inherits, powers of attorney, your 401(k) form and protecting a partner, with a starter checklist.
 
 Empty nesters can work through [updating your estate plan when the kids are grown](/learn/illinois/updating-your-estate-plan-when-kids-are-grown-in-illinois), with a document-by-document review table covering the guardian clause, adult children as executor or agent, equal or unequal shares, and when to move from a will to a trust.
