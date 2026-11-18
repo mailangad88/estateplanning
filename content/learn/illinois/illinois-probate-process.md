@@ -132,6 +132,8 @@ Dolores, 61, is named executor in her brother Walter's will. Walter owned a cond
 
 Planning ahead instead? See [how to avoid probate in Illinois](/learn/illinois/how-to-avoid-probate-in-illinois), asset by asset.
 
+If the estate is in Cook County, [how probate works in Cook County](/learn/illinois/how-probate-works-in-cook-county) covers the Daley Center, eFiling and the online case search.
+
 ## How we can help
 
 Probate paperwork is manageable when you know the order of steps. Our attorneys can explain which of these steps your estate needs and what to expect. Try the [plan finder](/plan-finder) to see which documents fit your situation, or read about [estate planning in Illinois](/estate-planning/illinois) to plan so your own family faces fewer steps.

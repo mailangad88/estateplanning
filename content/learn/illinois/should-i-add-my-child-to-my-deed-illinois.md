@@ -115,6 +115,8 @@ For what happens when a house stays in a parent's name, see [inheriting a house 
 
 For the general national picture, see [adding a child to your deed to avoid probate: the risks](/learn/probate/adding-a-child-to-your-deed).
 
+To compare every route side by side, see [how to transfer a house to your child in Illinois](/learn/illinois/how-to-transfer-a-house-to-your-child-in-illinois).
+
 ## How we can help
 
 An Illinois estate planning attorney can read your current deed, explain what a child on the title would mean for your taxes, Medicaid planning and family, and prepare the TODI, trust or power of attorney that does the job without giving the house away. You can [book a consultation](/book?from=learn-should-i-add-my-child-to-my-deed-illinois&topic=trust) or start with the [plan finder](/plan-finder).

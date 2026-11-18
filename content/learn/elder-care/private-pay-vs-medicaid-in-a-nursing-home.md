@@ -106,6 +106,8 @@ Nonpayment is one of the allowed reasons for discharge, which is why the order o
 
 Both states run Medicaid long-term care programs with their own application, income rules and facility lists. In Illinois, our guide to [nursing home eligibility and planning in Illinois](/learn/illinois/illinois-medicaid-nursing-home-eligibility-and-planning) gives the local details. In New Jersey, read [Medicaid and nursing home planning in New Jersey](/learn/new-jersey/new-jersey-medicaid-and-nursing-home-planning). Each state also has a long-term care ombudsman, a free advocate for residents, whose office can tell you about a home's complaint history before you commit.
 
+For Illinois families, [paying for a nursing home before Medicaid in Illinois](/learn/illinois/paying-for-a-nursing-home-before-medicaid-in-illinois) lays out the order money is usually used in.
+
 ## How we can help
 
 The switch from private pay to Medicaid goes more smoothly when the paperwork is ready months ahead. Our attorneys can read the admission agreement, check that your parent's powers of attorney cover the application and map out how long the money will last. Use the [plan finder](/plan-finder) or schedule a consultation, and bring the draft admission agreement if you have one.
