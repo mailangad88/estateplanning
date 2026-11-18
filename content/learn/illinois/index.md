@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+[How to transfer a house to your child in Illinois](/learn/illinois/how-to-transfer-a-house-to-your-child-in-illinois) compares a deed now, joint tenancy, a TODI, a living trust, a will and a life estate on timing, control, tax basis, Medicaid and probate.
+
+Covering the bills between admission and approval, from Medicare rehab days to spending down savings, is explained in [how to pay for a nursing home before Medicaid in Illinois](/learn/illinois/paying-for-a-nursing-home-before-medicaid-in-illinois).
+
+For a Chicago or suburban estate, [how probate works in Cook County](/learn/illinois/how-probate-works-in-cook-county) covers the Probate Division at the Daley Center, why the clerk says to hire an attorney to open an estate, the usual timeline and the clerk's online case search.
+
 If a parent or spouse is in hospice, [what to sign first when someone is in hospice in Illinois](/learn/illinois/estate-planning-when-someone-is-in-hospice-in-illinois) covers bedside and video will signings, signing for someone who cannot hold a pen, and what happens if capacity is gone.
 
 Divorced parents who expect the other parent to raise the children can still choose who controls the money, as explained in [estate planning for divorced parents in Illinois](/learn/illinois/estate-planning-for-divorced-parents-in-illinois).
