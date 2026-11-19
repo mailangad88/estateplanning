@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+Handling an estate in Joliet, Bolingbrook or Plainfield? See [how probate works in Will County](/learn/illinois/how-probate-works-in-will-county) for where the clerk takes the will, how estates are e-filed and what independent administration allows.
+
+[How probate works in DuPage County](/learn/illinois/how-probate-works-in-dupage-county) covers the Wheaton courthouse, filing the will and petition, remote hearings and finding a case online.
+
+Fox Valley families can follow [how probate works in Kane County](/learn/illinois/how-probate-works-in-kane-county), from the Geneva courthouse and the clerk's original-will rule to e-filing, Zoom hearings and the online case search.
+
 [How to transfer a house to your child in Illinois](/learn/illinois/how-to-transfer-a-house-to-your-child-in-illinois) compares a deed now, joint tenancy, a TODI, a living trust, a will and a life estate on timing, control, tax basis, Medicaid and probate.
 
 Covering the bills between admission and approval, from Medicare rehab days to spending down savings, is explained in [how to pay for a nursing home before Medicaid in Illinois](/learn/illinois/paying-for-a-nursing-home-before-medicaid-in-illinois).
