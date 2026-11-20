@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+Rockford families can read [how probate works in Winnebago County, Illinois](/learn/illinois/how-probate-works-in-winnebago-county), covering the courthouse, filing the original will, remote hearings and case lookup.
+
+Lived in Woodstock, Crystal Lake, Algonquin or Huntley? See [how probate works in McHenry County](/learn/illinois/how-probate-works-in-mchenry-county), from the Room 136 will filing to remote hearings and a family farm example.
+
+Lake County, Illinois families can see where the Waukegan courthouse is, how the original will is filed and how remote hearings work in [how probate works in Lake County, Illinois](/learn/illinois/how-probate-works-in-lake-county-illinois).
+
 Handling an estate in Joliet, Bolingbrook or Plainfield? See [how probate works in Will County](/learn/illinois/how-probate-works-in-will-county) for where the clerk takes the will, how estates are e-filed and what independent administration allows.
 
 [How probate works in DuPage County](/learn/illinois/how-probate-works-in-dupage-county) covers the Wheaton courthouse, filing the will and petition, remote hearings and finding a case online.

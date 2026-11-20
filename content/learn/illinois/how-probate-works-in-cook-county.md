@@ -121,7 +121,7 @@ She hires an attorney, who files the petition through eFile and asks for indepen
 
 Gloria opens an estate account, pays the final utility bills and lists the house. She checks the online case search now and then to see each filing on the docket. The house sells in month five. The claims period and the contest window close in month seven with nothing filed. The attorney files the closing report, the 42 days pass, and the court discharges her about nine months after her father's death. A worksheet like the one in the [free Cook County probate guide](/free/cook-county-probate-guide) kept her dates in one place.
 
-If the person lived in a collar county instead, see how probate works in [Kane County](/learn/illinois/how-probate-works-in-kane-county), [DuPage County](/learn/illinois/how-probate-works-in-dupage-county) or [Will County](/learn/illinois/how-probate-works-in-will-county).
+If the person lived in a collar county instead, see how probate works in [Kane County](/learn/illinois/how-probate-works-in-kane-county), [DuPage County](/learn/illinois/how-probate-works-in-dupage-county), [Will County](/learn/illinois/how-probate-works-in-will-county), [Lake County](/learn/illinois/how-probate-works-in-lake-county-illinois) or [McHenry County](/learn/illinois/how-probate-works-in-mchenry-county). For Rockford, see [Winnebago County probate](/learn/illinois/how-probate-works-in-winnebago-county).
 
 ## How we can help
 
