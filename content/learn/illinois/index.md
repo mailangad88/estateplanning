@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+Probate for a Champaign, Urbana, Rantoul or Mahomet family runs through the Urbana courthouse: see [how probate works in Champaign County](/learn/illinois/how-probate-works-in-champaign-county).
+
+Settling an estate in Peoria, Peoria Heights, Chillicothe or Dunlap? See [how probate works in Peoria County](/learn/illinois/how-probate-works-in-peoria-county), including the clerk's office, will filing, Zoom requests and who serves if no one will.
+
+Handling an estate in Springfield, Chatham or Rochester? See [how probate works in Sangamon County](/learn/illinois/how-probate-works-in-sangamon-county), including the courthouse, e-filing, case lookup and a pension example.
+
 Rockford families can read [how probate works in Winnebago County, Illinois](/learn/illinois/how-probate-works-in-winnebago-county), covering the courthouse, filing the original will, remote hearings and case lookup.
 
 Lived in Woodstock, Crystal Lake, Algonquin or Huntley? See [how probate works in McHenry County](/learn/illinois/how-probate-works-in-mchenry-county), from the Room 136 will filing to remote hearings and a family farm example.
