@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+Handling an estate in Bloomington or Normal? See [how probate works in McLean County](/learn/illinois/how-probate-works-in-mclean-county), including the Law and Justice Center, e-filing, remote hearings and what siblings do with a shared house.
+
+If the estate belongs in Belleville, O'Fallon or East St. Louis, [how probate works in St. Clair County, Illinois](/learn/illinois/how-probate-works-in-st-clair-county-illinois) covers the courthouse, the Circuit Clerk, filing the will, Zoom and case lookup.
+
+Madison County, Illinois families can read [how probate works in Madison County, Illinois](/learn/illinois/how-probate-works-in-madison-county-illinois), covering the Edwardsville courthouse, e-filing, Zoom hearings and case search.
+
 Probate for a Champaign, Urbana, Rantoul or Mahomet family runs through the Urbana courthouse: see [how probate works in Champaign County](/learn/illinois/how-probate-works-in-champaign-county).
 
 Settling an estate in Peoria, Peoria Heights, Chillicothe or Dunlap? See [how probate works in Peoria County](/learn/illinois/how-probate-works-in-peoria-county), including the clerk's office, will filing, Zoom requests and who serves if no one will.
