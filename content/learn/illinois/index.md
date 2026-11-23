@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+Kankakee, Bourbonnais, Bradley or Manteno families can read [how probate works in Kankakee County](/learn/illinois/how-probate-works-in-kankakee-county) for the clerk's Room 209, e-filing, remote hearings and Medicaid estate recovery.
+
+Living in Sycamore, DeKalb or Genoa? See [how probate works in DeKalb County, Illinois](/learn/illinois/how-probate-works-in-dekalb-county-illinois), including the courthouse, e-filing and a parent's rented farmland.
+
+Kendall County families can read [how probate works in Kendall County](/learn/illinois/how-probate-works-in-kendall-county), covering the Yorkville Circuit Clerk, will filing, remote appearances and what happens to a parent's mortgaged house.
+
 Handling an estate in Bloomington or Normal? See [how probate works in McLean County](/learn/illinois/how-probate-works-in-mclean-county), including the Law and Justice Center, e-filing, remote hearings and what siblings do with a shared house.
 
 If the estate belongs in Belleville, O'Fallon or East St. Louis, [how probate works in St. Clair County, Illinois](/learn/illinois/how-probate-works-in-st-clair-county-illinois) covers the courthouse, the Circuit Clerk, filing the will, Zoom and case lookup.
