@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+Tazewell County families can read [how probate works in Tazewell County, Illinois](/learn/illinois/how-probate-works-in-tazewell-county), which covers the Pekin courthouse, filing the original will, remote hearings, self-help, case lookup and what to do when only a copy of the will turns up.
+
+Decatur and Macon County families can read [how probate works in Macon County, Illinois](/learn/illinois/how-probate-works-in-macon-county-illinois) for the courthouse, the clerk, the original will and why a pension or 401(k) follows its beneficiary form.
+
+Parent in Moline or Rock Island, executor across the river? See [how probate works in Rock Island County](/learn/illinois/how-probate-works-in-rock-island-county) for the clerk, the will, remote hearings and Illinois venue.
+
 Kankakee, Bourbonnais, Bradley or Manteno families can read [how probate works in Kankakee County](/learn/illinois/how-probate-works-in-kankakee-county) for the clerk's Room 209, e-filing, remote hearings and Medicaid estate recovery.
 
 Living in Sycamore, DeKalb or Genoa? See [how probate works in DeKalb County, Illinois](/learn/illinois/how-probate-works-in-dekalb-county-illinois), including the courthouse, e-filing and a parent's rented farmland.
