@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+Families in Quincy and across the county can read [how probate works in Adams County, Illinois](/learn/illinois/how-probate-works-in-adams-county-illinois), including where to file the original will and what to do if a relative suspects a caregiver pressured the parent.
+
+Vermilion County, Illinois families can see where the Danville Circuit Clerk is, what to do with the original will and how a modest estate avoids court costs in [How probate works in Vermilion County, Illinois](/learn/illinois/how-probate-works-in-vermilion-county).
+
+Settling an estate in Ottawa, Peru, Streator or Mendota? See [how probate works in LaSalle County](/learn/illinois/how-probate-works-in-lasalle-county), including the courthouse, the original will and how cabins, boats and vehicles pass.
+
 Tazewell County families can read [how probate works in Tazewell County, Illinois](/learn/illinois/how-probate-works-in-tazewell-county), which covers the Pekin courthouse, filing the original will, remote hearings, self-help, case lookup and what to do when only a copy of the will turns up.
 
 Decatur and Macon County families can read [how probate works in Macon County, Illinois](/learn/illinois/how-probate-works-in-macon-county-illinois) for the courthouse, the clerk, the original will and why a pension or 401(k) follows its beneficiary form.
