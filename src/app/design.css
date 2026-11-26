@@ -907,3 +907,7 @@ input[type="checkbox"], input[type="radio"] { width: 22px; height: 22px; flex: n
 .fee-compare .is-current { font-weight: 700; }
 .fee-compare .is-current .bar-fill { background: var(--brand); }
 .fee-compare .bar-value { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Staff portal (/portal, /admin): the app shell takes the whole page, so the site's centred column steps aside. */
+main#main:has(> .staff-app) { max-width: none; padding: 0; margin: 0; }
+.staff-app--bare { max-width: 520px; margin: 48px auto; padding: 0 16px; }

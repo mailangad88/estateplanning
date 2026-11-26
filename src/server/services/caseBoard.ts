@@ -62,12 +62,17 @@ async function staffNames(db: Db): Promise<Map<string, User>> {
 }
 
 export async function caseBoard(db: Db, actor: Actor, filters: CaseBoardFilters = {}, now = new Date()): Promise<CaseBoard> {
+  const cards = await caseCards(db, actor, now);
+  return boardFromCards(db, actor, cards, filters, now);
+}
+
+/** Every accepted case the viewer may open, as board cards. No audit entry: callers that show them record their own. */
+export async function caseCards(db: Db, actor: Actor, now = new Date()): Promise<CaseCard[]> {
   requireMfa(actor);
   assertCan(can(actor, "view_case_board"), "The case board is for the case team");
   const visible = (await visibleLeads(db, actor, now)).filter((x) => x.access === "full" && ACCEPTED(x.lead));
   const lawyers = new Map((await db.lawyers.list()).map((l) => [l.id, l]));
   const users = await staffNames(db);
-
   const cards: CaseCard[] = [];
   for (const { lead } of visible) {
     const person = await db.persons.get(lead.personId);
@@ -90,6 +95,10 @@ export async function caseBoard(db: Db, actor: Actor, filters: CaseBoardFilters 
       mine: actor.role === "paralegal" ? lead.assignedParalegalId === actor.userId : actor.role === "attorney" ? lead.assignedLawyerId === actor.lawyerId : false,
     });
   }
+  return cards;
+}
+
+async function boardFromCards(db: Db, actor: Actor, cards: CaseCard[], filters: CaseBoardFilters, now: Date): Promise<CaseBoard> {
 
   const lawyerOptions = [...new Map(cards.filter((c) => c.lawyerId).map((c) => [c.lawyerId!, c.lawyerName ?? c.lawyerId!]))].map(([id, name]) => ({ id, name })).sort((a, b) => a.name.localeCompare(b.name));
   const paralegalOptions = [...new Map(cards.filter((c) => c.paralegalId).map((c) => [c.paralegalId!, c.paralegalName ?? c.paralegalId!]))].map(([id, name]) => ({ id, name })).sort((a, b) => a.name.localeCompare(b.name));
