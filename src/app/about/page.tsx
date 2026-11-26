@@ -18,7 +18,7 @@ export default function About() {
         kicker="About us"
         art="SpotVideoCall"
         title={`About ${firm.brandName}`}
-        lead={`${firm.brandName} is a referral website. We match you with an appropriate estate planning attorney in our ${SERVED_AND} network.`}
+        lead={`${firm.brandName} is run by ${firm.firmLegalName}. We match you with an appropriate estate planning attorney in our ${SERVED_AND} network.`}
       />
       <h2>Our attorneys</h2>
       <p>
@@ -26,7 +26,7 @@ export default function About() {
       </p>
       <h2>How we work</h2>
       <ul>
-        <li>We are a referral website, not a law firm. The attorney we match you with gives the legal advice.</li>
+        <li>The attorney we match you with gives the legal advice, under a written engagement agreement you sign first.</li>
         <li>Plain-English explanations, no jargon.</li>
         <li>A written flat-fee quote before you sign anything.</li>
         <li>Your information is confidential and shared only with the attorney who may represent you.</li>

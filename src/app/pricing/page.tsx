@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { fees, firm, packages as PACKAGES, SERVED_AND, SERVED_OR } from "@/config/firm";
 import { Rich, RichFaqList } from "@/components/money-page";
-import { Breadcrumbs, Cta, ReviewNote } from "@/components/ui";
+import { Breadcrumbs, Cta } from "@/components/ui";
 import { PageHero } from "@/components/page-hero";
 import { breadcrumbLd, JsonLd, abs } from "@/lib/seo";
 
@@ -49,7 +49,6 @@ export default function Pricing() {
         art="SpotCalendarReview"
         title="What estate planning costs"
       >
-        <ReviewNote reviewed={false} updated="October 2026" />
         <p className="cta-row no-print">
           <Link className="button" href="/plan-finder">Start the plan finder</Link>
           <Link className="button secondary" href="/how-it-works">See what happens on the call</Link>

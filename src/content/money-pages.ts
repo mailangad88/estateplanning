@@ -38,7 +38,7 @@ export interface MoneyPageData {
   related: { href: string; title: string; kind: string }[];
 }
 
-/** The attorney a visitor is matched with. The site is a referral network, not a law firm. */
+/** The attorney a visitor is matched with. The site is run by the firm in firm.firmLegalName. */
 const MATCHED = "the attorney you are matched with";
 const essentials = packages.find((p) => p.id === "essentials");
 
@@ -850,7 +850,7 @@ const aboutAttorney: MoneyPageData = {
   title: "How we choose our attorneys",
   description: `How ${firm.brandName} chooses the estate planning attorneys in its ${SERVED_AND} network, who is responsible for the site, and what to expect when you reach out.`,
   h1: "How we choose our attorneys",
-  answer: `${firm.brandName} is a referral website. We match you with an appropriate estate planning attorney in our ${SERVED_AND} network, based on where you live and what you need.`,
+  answer: `${firm.brandName} is run by ${firm.firmLegalName}. We match you with an appropriate estate planning attorney in our ${SERVED_AND} network, based on where you live and what you need.`,
   sections: [
     {
       h: "How attorneys join the network",
@@ -904,7 +904,7 @@ const aboutAttorney: MoneyPageData = {
     {
       h: "What this site is",
       blocks: [
-        { p: `${firm.brandName} is a referral website, not a law firm. When you contact us, we match you with an appropriate estate planning attorney in our network. That attorney gives the legal advice, and you decide whether to hire them. See [how we work](/legal/how-we-work), the [disclaimer](/legal/disclaimer) and our [editorial policy](/editorial-policy).` },
+        { p: `${firm.brandName} is run by ${firm.firmLegalName}. When you contact us, we match you with an appropriate estate planning attorney in our network. That attorney gives the legal advice, and you decide whether to hire them. See [how we work](/legal/how-we-work), the [disclaimer](/legal/disclaimer) and our [editorial policy](/editorial-policy).` },
       ],
     },
   ],

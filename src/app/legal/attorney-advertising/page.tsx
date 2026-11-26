@@ -28,8 +28,8 @@ export default function AttorneyAdvertising() {
       />
       <p className="notice">Draft pending attorney review.</p>
       <p>
-        This website is attorney advertising by {firm.firmLegalName}. {firm.brandName} is a referral website: we match you with an
-        appropriate estate planning attorney.
+        This website is attorney advertising by {firm.firmLegalName}. {firm.brandName} matches you with an appropriate estate planning
+        attorney.
       </p>
 
       <h2>Contact for this advertising</h2>
