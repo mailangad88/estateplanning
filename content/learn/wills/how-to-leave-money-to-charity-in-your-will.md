@@ -1,7 +1,7 @@
 ---
 title: "How to leave money to charity in your will: wording, amounts and mistakes"
 description: "How to leave money to charity in your will: pick a fixed gift or a percentage, use the charity's exact legal name and avoid wording errors that spark disputes."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   To leave money to charity in your will, add a clause that names the charity by its exact legal name, says whether the gift is a dollar amount, a percentage or a specific item, and says what happens if the charity no longer exists. Sign the will with the same formalities as any other will. For retirement accounts, a beneficiary form usually works better than the will.
 takeaways:
@@ -87,13 +87,13 @@ A common plan looks like this: name the charity as a beneficiary of a fixed perc
 
 Only for the small number of estates large enough to owe it. As of 2026 the federal estate tax exclusion is $15,000,000 per person, so most families never pay. Where an estate is above that, gifts to qualifying charities are deductible and there is no dollar cap on the deduction. Our full article on [charitable gifts and bequests](/learn/estate-tax/charitable-gifts-and-bequests-gift-tax-estate-tax-and-income-tax) covers the tax side in detail.
 
-State taxes are a separate question. Illinois has its own estate tax with a lower threshold than the federal one, and New Jersey taxes some inheritances but exempts charitable organizations from its inheritance tax. If you live in either state, see the [Illinois estate planning guide](/estate-planning/illinois) or the [New Jersey guide](/estate-planning/new-jersey) for what applies to you.
+State taxes are a separate question. Illinois has its own estate tax with a lower threshold than the federal one, $4 million. See the [Illinois estate planning guide](/estate-planning/illinois) and [charitable gifts and the Illinois estate tax](/learn/illinois/charitable-gifts-and-the-illinois-estate-tax) for how a bequest fits in.
 
 ## What do families tend to miss?
 
 Charitable gifts rarely cause family fights, but they do cause surprises. Here are the situations that come up most often.
 
-- **A spouse's rights.** In both Illinois and New Jersey a surviving spouse can claim a share of the estate regardless of the will. A large charitable bequest can be reduced if the spouse takes an elective share. See [the elective share explained](/glossary/elective-share).
+- **A spouse's rights.** In Illinois a surviving spouse can renounce the will and claim a share of the estate regardless of what it says. A large charitable bequest can be reduced if the spouse does. See [the elective share explained](/glossary/elective-share).
 - **Loved ones named as co-beneficiaries without knowing.** If a charity receives a percentage of an account along with two children, tell the children. Unexplained delays while a charity processes paperwork are easier to bear when everyone expected them.
 - **Gifts of property the charity cannot take.** Land with an environmental problem, a car or a share in a closely held business may be declined. A cash gift is easier.
 - **Memorial gifts that become stale.** A bequest "in memory of my husband for the cancer wing" may fail if the wing is renamed. Add language that lets the charity use the money for the same general purpose.

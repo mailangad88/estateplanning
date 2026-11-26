@@ -1,12 +1,12 @@
 ---
 title: "Why don't people do estate planning? Seven excuses and a one-week way to start"
-description: "Most people delay estate planning for the same few reasons. See what each excuse costs a family in Illinois or New Jersey and a seven-day plan to begin."
-updated: "2026-10-26"
+description: "Most people delay estate planning for the same few reasons. See what each excuse costs an Illinois family and a seven-day plan to begin."
+updated: "2026-11-26"
 answer: >-
   People skip estate planning because it feels like thinking about death, because they believe they own too little, and because the choices (guardian, executor, who gets what) are hard to make. None of those reasons holds up well. Without documents, state law decides for you, and a short plan can be started in a week.
 takeaways:
   - "The most common reasons are discomfort, a belief that you are not wealthy enough, and difficulty choosing people."
-  - "Without a plan, Illinois or New Jersey intestacy law decides who inherits, who raises minor children and who acts for you if you are ill."
+  - "Without a plan, Illinois intestacy law decides who inherits, who raises minor children and who acts for you if you are ill."
   - "You do not need every answer before starting; a first choice and a backup for each role is enough."
   - "A basic plan can be amended, so an imperfect plan now is better than none."
   - "A seven-day checklist can get you from nothing to a booked signing appointment."
@@ -54,7 +54,7 @@ The reasons fall into seven groups. Seeing yours on the list helps, because each
 
 The state writes your plan for you, and the result is often not what you would have picked. If you die without a will, your property passes under your state's intestacy rules, and a court picks who administers the estate.
 
-Take Illinois. A married person who dies without a will, leaving a spouse and children, does not leave everything to the spouse. Illinois gives the surviving spouse half of the estate and the children share the other half. If those children are minors, the spouse may then need court supervision to handle their share. Our article on [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) has the full order, and the [New Jersey version](/learn/new-jersey/who-inherits-without-a-will-in-new-jersey) shows how the rules differ when some children are not the spouse's.
+Take Illinois. A married person who dies without a will, leaving a spouse and children, does not leave everything to the spouse. Illinois gives the surviving spouse half of the estate and the children share the other half. If those children are minors, the spouse may then need court supervision to handle their share. Our article on [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) has the full order.
 
 <!-- visual: whatif id=die-without-a-will -->
 

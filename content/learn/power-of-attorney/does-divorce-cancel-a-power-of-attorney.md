@@ -1,12 +1,12 @@
 ---
-title: "Does divorce cancel a power of attorney? Ex-spouse as agent in Illinois and New Jersey"
-description: "Does divorce cancel a power of attorney that names your spouse? What Illinois and New Jersey say, why banks may still honor the old paper, and how to revoke it."
-updated: "2026-10-26"
+title: "Does divorce cancel a power of attorney? Ex-spouse as agent in Illinois"
+description: "Does divorce cancel a power of attorney that names your spouse? What Illinois law says, why banks may still honor the old paper, and how to revoke it."
+updated: "2026-11-26"
 answer: >-
-  In Illinois, a divorce or legal separation judgment ends your spouse's role as agent because the spouse is treated as having died on the date of the judgment. New Jersey's health care statute also revokes a spouse's designation on divorce. For other cases, do not rely on the law alone: sign a written revocation and a new power of attorney as soon as you separate.
+  In Illinois, a divorce or legal separation judgment ends your spouse's role as agent because the spouse is treated as having died on the date of the judgment. For a health care form, and for the months before the judgment, do not rely on the law alone: sign a written revocation and a new power of attorney as soon as you separate.
 takeaways:
   - "Illinois treats an ex-spouse agent as having died at the time of the judgment of dissolution or legal separation (755 ILCS 45/2-6)."
-  - "New Jersey ends a spouse's health care designation on divorce unless the directive says otherwise (N.J.S.A. 26:2H-57)."
+  - "Do not count on the divorce statute to handle a health care power of attorney. Replace that form too."
   - "Between filing and judgment, your spouse is still your agent, and that is the risky period."
   - "A bank that never hears about the divorce can keep honoring the old document, so notify each institution in writing."
   - "Divorce also leaves old beneficiary forms, wills and trusts in place; the power of attorney is only one of several documents to redo."
@@ -16,7 +16,7 @@ faqs:
   - q: "What if my spouse is also named as the successor agent?"
     a: "The same rule applies to successors in Illinois, because the former spouse is treated as having died for all purposes of the agency. The next person in line would then serve if one is named. If none is named, you may have no agent at all, which is another reason to sign a new document."
   - q: "Does a divorce cancel my health care power of attorney too?"
-    a: "In New Jersey, yes for a spouse, civil union partner or domestic partner designation, unless your directive says otherwise. In Illinois the health care form follows its own statute, so check the form you signed and replace it anyway. Do not leave a former spouse in charge of medical decisions by oversight."
+    a: "Do not assume it does. In Illinois the health care form follows its own statute, so check the form you signed and replace it anyway. Do not leave a former spouse in charge of medical decisions by oversight."
   - q: "Can an ex-spouse who is still named at my bank take money out?"
     a: "If the bank has no notice of the divorce, it may accept the old document in good faith. That is why sending the bank a copy of the judgment and your signed revocation matters. Tell them the agent's authority has ended and ask for the old document to be removed from your file."
   - q: "Can I remove my spouse as agent without their agreement?"
@@ -25,7 +25,7 @@ related:
   - "power-of-attorney"
   - "power-of-attorney/when-does-power-of-attorney-end"
   - "illinois/revoking-an-illinois-power-of-attorney"
-  - "new-jersey/new-jersey-advance-directives"
+  - "illinois/illinois-healthcare-power-of-attorney"
   - "life-stages/estate-planning-after-divorce"
   - "life-stages/estate-planning-during-separation-or-a-pending-divorce"
   - "beneficiary-designations/life-insurance-beneficiaries"
@@ -36,7 +36,7 @@ intent: question
 
 You signed a power of attorney years ago, and the person you trusted with your bank accounts and your house was your husband or wife. Now the marriage is ending. Does the document disappear on its own, or can your spouse still walk into the bank?
 
-In Illinois, the statute answers it for the final judgment. In New Jersey and in the months before the judgment anywhere, the answer is less comfortable. This page, part of our [power of attorney guide](/learn/power-of-attorney), explains what each state's law says and the practical steps that protect you.
+In Illinois, the statute answers it for the final judgment. For a health care form, and in the months before the judgment, the answer is less comfortable. This page, part of our [power of attorney guide](/learn/power-of-attorney), explains what Illinois law says and the practical steps that protect you.
 
 ## What happens to a power of attorney when you divorce?
 
@@ -44,11 +44,9 @@ If your spouse is the agent, Illinois ends the role when the court enters a judg
 
 The rule does not cancel the whole document, only the spouse's role, and the principal's own wishes in the document stay as written. It also says nothing about what the bank will do if no one tells it.
 
-For health care, New Jersey spells out a rule in its advance directive statute. A spouse's designation as health care representative is revoked on divorce or legal separation, unless the directive says otherwise, and a domestic partner's ends when the partnership ends (N.J.S.A. 26:2H-57). Our page on [New Jersey advance directives](/learn/new-jersey/new-jersey-advance-directives) covers the rest of that rule.
+## What about an Illinois health care power of attorney?
 
-## What about New Jersey financial powers of attorney?
-
-Do not assume. New Jersey's Revised Durable Power of Attorney Act asks for a signed and acknowledged writing and lets you revoke it by destroying the originals or signing a written revocation (see [New Jersey power of attorney](/learn/new-jersey/new-jersey-power-of-attorney)). A reader should treat the divorce question as unsettled for that document and act as if the old power remains alive until it is revoked. That is the cautious course, and it costs a signature.
+Do not assume the divorce rule covers it. The health care form follows its own statute, and our attorneys do not rely on the divorce provision for it. Treat the old form as alive until you replace it. Sign a new health care power of attorney naming someone else, and give copies to your doctors. That is the cautious course, and it costs a signature. Our page on the [Illinois healthcare power of attorney](/learn/illinois/illinois-healthcare-power-of-attorney) explains how the form works.
 
 ## What is the risky period?
 
@@ -77,7 +75,7 @@ In April, Tom does nothing. In May, Rhonda is still a legal agent, and she could
 
 ## What if the agent is not your spouse but your spouse is a problem?
 
-Sometimes the agent is your adult child, and the trouble is that your spouse is hostile to that child. Divorce does not change that arrangement, but it can change the pressure on it. A spouse who loses the agent role may ask a court to oversee your finances, and a pending divorce may bring accounting demands. Keep records. If your agent is asked to account, an Illinois agent must keep a record of receipts, disbursements and significant actions (755 ILCS 45/2-7), and a New Jersey agent has the same record-keeping duty (N.J.S.A. 46:2B-8.13). Tell the agent in plain words that the divorce does not change their job, and ask them to keep your money in your name, separate from theirs.
+Sometimes the agent is your adult child, and the trouble is that your spouse is hostile to that child. Divorce does not change that arrangement, but it can change the pressure on it. A spouse who loses the agent role may ask a court to oversee your finances, and a pending divorce may bring accounting demands. Keep records. If your agent is asked to account, an Illinois agent must keep a record of receipts, disbursements and significant actions (755 ILCS 45/2-7). Tell the agent in plain words that the divorce does not change their job, and ask them to keep your money in your name, separate from theirs.
 
 It also helps to confirm what the divorce settlement says about retirement accounts and the house. An agent should not be the person who discovers, after the fact, that an account has been retitled.
 

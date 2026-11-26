@@ -1,7 +1,7 @@
 ---
 title: "Special needs trusts for people over 65: dementia, age limits and a spouse on Medicaid"
 description: "Can a person over 65 use a special needs trust? How the age 65 cutoff works, when dementia qualifies, and how to leave money to a spouse who needs Medicaid."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A stand-alone first-party special needs trust generally must be set up and funded before the beneficiary turns 65. After that, a pooled trust may work, depending on your state's transfer rules. A third-party trust funded with someone else's money has no age limit, and it is the usual tool for leaving money to a spouse or parent who relies on Medicaid.
 takeaways:
@@ -97,7 +97,7 @@ The answer is to separate the pieces. Her will and beneficiary forms should leav
 2. **Confirm the person's age at the time the money would go into any trust.** Do not wait. A birthday can close a door.
 3. **Collect proof of disability.** Medical records, a physician letter, SSI or SSDI award letters, any prior state disability determination.
 4. **Check capacity.** If the person cannot sign, find out whether a power of attorney or guardian can act.
-5. **Ask the state.** Illinois and New Jersey each have their own Medicaid rules on trusts and transfers. Our guide to [special needs planning in New Jersey](/learn/new-jersey/special-needs-planning-in-new-jersey) is a starting point, and an attorney can explain Illinois practice.
+5. **Ask about Illinois practice.** Illinois has its own Medicaid rules on trusts and transfers. Our guide to [Illinois Medicaid nursing home eligibility and planning](/learn/illinois/illinois-medicaid-nursing-home-eligibility-and-planning) is a starting point, and an attorney can explain how the state applies them to your family.
 6. **Do not deposit or gift until you have the answer.** Moving money is easy and unwinding it is hard.
 
 ## How we can help

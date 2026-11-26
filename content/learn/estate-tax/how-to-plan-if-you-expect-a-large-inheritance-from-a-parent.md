@@ -1,7 +1,7 @@
 ---
 title: "How to plan if you expect a large inheritance from a parent"
 description: "What to do now if you may inherit a lot from a parent: how it affects your own estate tax, disclaimers, inheritance trusts, state taxes and your will."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   An expected inheritance is not yours until it is paid, so do not count it or spend it. But once you receive it, it becomes part of your estate and can push you toward the federal limit of $15 million in 2026 or Illinois's $4 million limit. Plan by asking whether your parent will leave your share in trust, learning how a disclaimer works, and updating your own will.
 takeaways:
@@ -12,7 +12,7 @@ takeaways:
   - "Do not ask a parent to give away appreciated property now to save tax, because inherited assets get a step-up in basis and gifts do not."
 faqs:
   - q: "Do I owe tax on an inheritance I receive from a parent?"
-    a: "Usually not at the federal level. The federal estate tax is paid by the estate, only on estates above $15 million per person in 2026, and the beneficiary does not report an inheritance as income. Illinois taxes estates above $4 million. New Jersey has no estate tax, and children are exempt from its inheritance tax. Retirement accounts are a separate issue because withdrawals are taxed as income."
+    a: "Usually not at the federal level. The federal estate tax is paid by the estate, only on estates above $15 million per person in 2026, and the beneficiary does not report an inheritance as income. Illinois taxes estates above $4 million, and that tax is also paid by the estate, not by you. Retirement accounts are a separate issue because withdrawals are taxed as income."
   - q: "Can I turn down my parent's inheritance and let my kids have it?"
     a: "Yes, with a qualified disclaimer. It must be in writing, delivered within nine months of the death, and you cannot have accepted the property or its benefits. The share then passes as if you had died before your parent, often to your children. A disclaimer you make because you need Medicaid or SSI is treated differently, so ask first."
   - q: "Does an inheritance count as marital property in a divorce?"
@@ -53,7 +53,7 @@ The moment you receive it, it is yours, and it is counted in your estate when yo
 | $4 million to $15 million | None | Possible |
 | Over $15 million | 40 percent on the excess | Possible |
 
-For a married couple, the federal exclusion is $15 million each and unused exclusion can carry to the survivor through portability. Illinois does not carry over the exclusion between spouses, so couples there often use a trust. New Jersey has no estate tax, and a child inheriting from a parent is in the exempt class for New Jersey inheritance tax, though a parent living in another state may have property that is taxed there.
+For a married couple, the federal exclusion is $15 million each and unused exclusion can carry to the survivor through portability. Illinois does not carry over the exclusion between spouses, so couples there often use a trust. A parent living in another state may have property that is taxed under that state's rules, so ask what applies where your parent lives.
 
 Karen's case: at $5.4 million, she has no federal exposure, but she does have exposure under Illinois law, because her estate would exceed $4 million. See [the Illinois estate tax](/learn/illinois/illinois-estate-tax) for how the tax is figured. Your numbers will differ, and the [estate tax estimator](/tools/estate-tax-estimator) can give you a quick read.
 
@@ -68,7 +68,7 @@ The rules are strict:
 3. You cannot have accepted the property or any benefit from it, including income or using the house.
 4. You cannot direct where the property goes. It follows the plan or the law.
 
-A disclaimer is a tool for someone who does not need the money, and who knows who would receive it instead. If you disclaim and the next in line is your sister, she gets it. See our glossary entry on [disclaimers](/glossary/disclaimer) and [disclaiming an inheritance in New Jersey](/learn/new-jersey/disclaiming-an-inheritance-in-new-jersey). If you receive Medicaid or SSI, disclaiming can be treated as a transfer, so ask an attorney first.
+A disclaimer is a tool for someone who does not need the money, and who knows who would receive it instead. If you disclaim and the next in line is your sister, she gets it. See our glossary entry on [disclaimers](/glossary/disclaimer) and [disclaiming an inheritance in Illinois](/learn/illinois/disclaiming-an-inheritance-in-illinois). If you receive Medicaid or SSI, disclaiming can be treated as a transfer, so ask an attorney first.
 
 ## Can my parent leave my share in trust instead of outright?
 

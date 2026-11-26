@@ -37,15 +37,15 @@ faqs:
   - q: "What does it cost?"
     a: "Fees are set by the attorney you are matched with. Personal plans are often flat-fee, and practice-related work is usually quoted separately. See [pricing](/pricing)."
 reviewed: false
-updated: "2026-10-06"
+updated: "2026-11-26"
 ---
 
 ## What is at stake
 
 - **Disability.** A population-level risk, not a physician-specific figure. Physicians often buy own-occupation disability insurance. A plan makes sure a power of attorney and a business partner agreement fit with it.
 - **Practice succession.** A partner leaves or dies, the practice is sold, or the physician is an employee with a non-compete. Buy-sell terms and entity documents matter. See the [business succession guide](/learn/business-owners/business-succession-planning).
-- **Liability exposure.** Malpractice policies have limits. Personal assets in a spouse's name, in trusts, or in exempt accounts such as retirement plans, a homestead or tenancy by the entirety are treated differently depending on state law. For example, Illinois allows tenancy by the entirety only for a married couple's home, while New Jersey allows it more broadly for real estate a married couple owns together. Planning done before any claim, for legitimate reasons, is different from transfers made after a claim arises, which courts can reverse. Fraudulent transfer laws can unwind transfers made to avoid known or likely claims.
-- **Estate tax is usually not the first issue.** The 2026 federal exclusion is $15 million per person <!-- verify -->. Illinois taxes estates over $4 million. New Jersey has no estate tax but taxes some inheritances, such as gifts to siblings. See [estate and inheritance taxes](/guides/estate-and-inheritance-taxes) and the [estate tax estimator](/tools/estate-tax-estimator).
+- **Liability exposure.** Malpractice policies have limits. Personal assets in a spouse's name, in trusts, or in exempt accounts such as retirement plans, a homestead or tenancy by the entirety are treated differently depending on state law. For example, Illinois allows tenancy by the entirety only for a married couple's home, not for other real estate or accounts. Planning done before any claim, for legitimate reasons, is different from transfers made after a claim arises, which courts can reverse. Fraudulent transfer laws can unwind transfers made to avoid known or likely claims.
+- **Estate tax is usually not the first issue.** The 2026 federal exclusion is $15 million per person <!-- verify -->. Illinois taxes estates over $4 million. See [estate and inheritance taxes](/guides/estate-and-inheritance-taxes) and the [estate tax estimator](/tools/estate-tax-estimator).
 - **Young physicians and residents.** The first attending paycheck often arrives with a mortgage, a baby and large student loans. A short plan covers wills, a guardian, powers of attorney, beneficiary forms and coordination with term life insurance.
 - **Entity and title coordination.** Your practice entity, a real estate entity and personal assets should not contradict each other.
 
@@ -56,7 +56,7 @@ updated: "2026-10-06"
 | Foundation plan | Wills or a living trust, powers of attorney, healthcare directives and beneficiary review. |
 | Practice review | Entity documents, partner agreements, buy-sell, and succession or sale readiness. |
 | Disability plan | A power of attorney with practice authority, a backup signer, and coordination with disability insurance. |
-| Titling review | How assets are held, what Illinois or New Jersey law protects, and what is simply good housekeeping. |
+| Titling review | How assets are held, what Illinois law protects, and what is simply good housekeeping. |
 | Spousal planning | Whether a spousal trust or other tool is worth its cost and complexity for your numbers. |
 | Early-career package | A short, flat-fee plan for families with a baby and student debt. |
 | Coordination | With your CPA, insurance agent and financial planner, with your permission. |

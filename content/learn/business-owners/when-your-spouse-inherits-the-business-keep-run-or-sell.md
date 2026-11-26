@@ -1,7 +1,7 @@
 ---
 title: "When your spouse inherits the business: keep it, run it or take the proceeds"
 description: "Leaving a business to your spouse sounds simple, but many spouses do not want to run it. Compare keeping, managing, selling or taking a buyout, and how to plan."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Leaving a business to your spouse works only if your spouse can afford to keep it, wants to run it, or can sell it quickly for a fair price. Many owners are better served by leaving the proceeds of a planned sale, or by a trust that lets a spouse hold the interest while a manager runs it. Federal tax law usually lets assets pass to a spouse without estate tax.
 takeaways:
@@ -18,7 +18,7 @@ faqs:
   - q: "Is there estate tax when a business passes to a spouse?"
     a: "Generally not. Property left outright to a U.S. citizen spouse qualifies for an unlimited marital deduction, and a trust for a spouse can qualify if it meets the rules. The federal estate tax exemption is $15,000,000 per person in 2026, so most families owe none either way."
   - q: "How are community property business interests handled at death?"
-    a: "In community property states, a spouse generally owns half of a business built during the marriage, so only the owner's half passes under the will. Illinois and New Jersey are not community property states, so a business there usually follows title and the plan on file."
+    a: "In community property states, a spouse generally owns half of a business built during the marriage, so only the owner's half passes under the will. Illinois is not a community property state, so a business there usually follows title and the plan on file."
   - q: "What if my spouse wants to keep the business but cannot run it?"
     a: "Hire or promote a manager and give the spouse oversight. A trust can name a trustee with business experience, set pay for the manager and describe when a sale should be considered. Without those instructions, a spouse has to make every decision alone, in grief."
   - q: "Can my spouse sell the business after I die?"
@@ -74,7 +74,7 @@ Joint ownership changes the picture because your spouse already owns part of it.
 - **A sole proprietorship in one name.** The assets belong to that person and pass through the will or a trust. A spouse's name on a bank account does not change who owns the business.
 - **Property held jointly with survivorship.** The surviving spouse takes the whole, outside probate, but the assets may still need to be retitled and licenses changed.
 - **An LLC or corporation with both spouses as owners.** The company documents control. The survivor keeps their own share and receives the deceased spouse's share according to the will, trust or agreement.
-- **Community property states.** In those states, a spouse generally owns half of what was built during the marriage. Illinois and New Jersey do not use community property, so title and documents tend to decide.
+- **Community property states.** In those states, a spouse generally owns half of what was built during the marriage. Illinois does not use community property, so title and documents tend to decide.
 
 In every case, check the operating agreement or bylaws. Our article on [what happens to LLC interests and corporate shares at death](/learn/business-owners/llc-ownership-at-death) explains the default rules and how documents override them.
 

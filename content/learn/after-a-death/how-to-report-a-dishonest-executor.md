@@ -1,7 +1,7 @@
 ---
-title: "How to report a dishonest executor in Illinois or New Jersey: warning signs and who to contact"
-description: "Suspect an executor is stealing or hiding assets? See the warning signs, the records to gather and where to report in Illinois or NJ, from court to police."
-updated: "2026-10-26"
+title: "How to report a dishonest executor in Illinois: warning signs and who to contact"
+description: "Suspect an executor is stealing or hiding assets? See the warning signs, the records to gather and where to report in Illinois, from the probate court to police."
+updated: "2026-11-26"
 answer: >-
   To report a dishonest executor, first collect proof, then go to the probate court that appointed the executor and ask for an accounting or removal. If money was taken, you can also report theft to the police or the county prosecutor. Which route fits depends on whether you are seeing silence, mistakes or actual theft. An attorney can file in the court quickly and keep the estate frozen from further loss.
 takeaways:
@@ -14,9 +14,9 @@ faqs:
   - q: "What are the signs of a bad executor?"
     a: "Common signs are refusing to share any numbers, selling estate property quietly or below value, paying themselves large fees without records, mixing estate money with their own, ignoring bills so the house falls into disrepair, and pressing heirs to sign a release. One sign alone may have an innocent cause. A pattern is what a court takes seriously."
   - q: "Can I report an executor to the attorney general?"
-    a: "In both states the attorney general's office is not the usual place for a private estate dispute. A complaint about theft goes to local police or the county prosecutor, and a civil claim for the estate's money is brought in probate court. A charity named in the will is a different case, because the attorney general may have a role in protecting charitable gifts."
+    a: "In Illinois the attorney general's office is not the usual place for a private estate dispute. A complaint about theft goes to local police or the county prosecutor, and a civil claim for the estate's money is brought in probate court. A charity named in the will is a different case, because the attorney general may have a role in protecting charitable gifts."
   - q: "What if the estate's lawyer is helping the executor take money?"
-    a: "A lawyer's conduct can be reported to the state's attorney disciplinary body: in Illinois, the Attorney Registration and Disciplinary Commission, and in New Jersey, the Office of Attorney Ethics. A discipline complaint does not recover money, so it runs alongside a court petition and does not replace it."
+    a: "A lawyer's conduct can be reported to the state's attorney disciplinary body: in Illinois, that is the Attorney Registration and Disciplinary Commission. A discipline complaint does not recover money, so it runs alongside a court petition and does not replace it."
   - q: "Can I hire a lawyer to look into the estate if I am only a beneficiary?"
     a: "Yes. A beneficiary is an interested person and can ask the court for an inventory and accounting. The attorney's fee for a personal dispute generally comes from you, though a court may shift costs if the executor acted wrongly."
   - q: "Does reporting an executor cost me my inheritance?"
@@ -35,7 +35,7 @@ intent: question
 
 Nadia's mother died in June. Her brother Omar was named executor, and for four months Nadia heard almost nothing except that "it's handled." Then a neighbor mentioned that their mother's car had been sold, and the bank said the estate account had never been opened. Nadia wanted to know what she was allowed to do and whom she could tell.
 
-This page gives you the order of operations. You will see which signs matter, which records to ask for, where each kind of report goes in Illinois and New Jersey, and what to leave alone. If you are weighing removal, our article on [when an executor can be removed](/learn/after-a-death/can-an-executor-be-removed) is the companion piece, and the [after-a-death guide](/learn/after-a-death) places the whole process in context.
+This page gives you the order of operations. You will see which signs matter, which records to ask for, where each kind of report goes in Illinois, and what to leave alone. If you are weighing removal, our article on [when an executor can be removed](/learn/after-a-death/can-an-executor-be-removed) is the companion piece, and the [after-a-death guide](/learn/after-a-death) places the whole process in context.
 
 ## The short version
 
@@ -84,15 +84,15 @@ There are four places. They do different jobs and you can use more than one.
 
 This is the main route because the court appointed the executor and supervises the work. A beneficiary or other interested person can file a petition asking for an accounting, an inventory, an order freezing assets, the executor's removal, or repayment of what was taken. The court has the power to remove an executor and to make the executor repay losses from their own money.
 
-In Illinois, the circuit court in the county where the estate is open handles it, and the removal statute (755 ILCS 5/23-2) lists grounds including waste or mismanagement and failure to file an ordered inventory or accounting. Read [what heirs can do about a slow Illinois executor](/learn/illinois/what-heirs-can-do-about-a-slow-illinois-executor). In New Jersey, the county Surrogate and the Superior Court's Probate Part handle it, and N.J.S.A. 3B:14-21 lists grounds such as misusing estate property and disobeying a court order. Read [what New Jersey heirs can do about a slow or silent executor](/learn/new-jersey/what-new-jersey-heirs-can-do-about-a-slow-or-silent-executor).
+In Illinois, the circuit court in the county where the estate is open handles it, and the removal statute (755 ILCS 5/23-2) lists grounds including waste or mismanagement and failure to file an ordered inventory or accounting. Read [what heirs can do about a slow Illinois executor](/learn/illinois/what-heirs-can-do-about-a-slow-illinois-executor).
 
-### 2. The police or county prosecutor
+### 2. The police or the state's attorney
 
-If you can point to a theft, a forged signature or a fake document, report it to the local police, the state's attorney in an Illinois county or the county prosecutor in New Jersey. A criminal case can punish the wrongdoing, but the prosecutor works for the public. The money still needs a civil claim in probate court to come back to the estate. Often the best order is the court first, because a petition can stop the loss while a criminal case takes months.
+If you can point to a theft, a forged signature or a fake document, report it to the local police or to the state's attorney for the county. A criminal case can punish the wrongdoing, but the prosecutor works for the public. The money still needs a civil claim in probate court to come back to the estate. Often the best order is the court first, because a petition can stop the loss while a criminal case takes months.
 
 ### 3. The lawyer's disciplinary body
 
-If the estate's lawyer is part of the problem, such as signing off on a false accounting, a complaint can go to the Attorney Registration and Disciplinary Commission in Illinois or the Office of Attorney Ethics in New Jersey. This does not recover money, and it does not replace the court case.
+If the estate's lawyer is part of the problem, such as signing off on a false accounting, a complaint can go to the Attorney Registration and Disciplinary Commission in Illinois. This does not recover money, and it does not replace the court case.
 
 ### 4. The financial institution
 
@@ -115,9 +115,9 @@ This takes months, not days. The court acts on notice and a hearing, and a judge
 - **Do not post accusations online.** A false statement about a named person can bring its own claim.
 - **Do not wait too long.** Time limits can apply to claims against a fiduciary, and evidence gets harder to get. Talk to an attorney in the first weeks, not the first year.
 
-## How does state law change this?
+## How does Illinois law shape this?
 
-Both states let an interested person ask the court to supervise an executor, but the paths differ. Illinois estates are often independently administered, which lets the executor act without court approval at each step, and a petition can end that status. New Jersey estates often close with informal releases instead of a court accounting, and the usual request for information goes to the Surrogate or to the executor directly before any action. Time limits and who pays the cost of an accounting vary, so check the current rules with a local attorney. See the guides for [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey).
+Illinois lets an interested person ask the court to supervise an executor. Many Illinois estates are independently administered, which lets the executor act without court approval at each step, and a petition can end that status. Time limits and who pays the cost of an accounting vary, so check the current rules with a local attorney. See the [Illinois estate planning guide](/estate-planning/illinois).
 
 If the problem is a trustee rather than an executor, the pattern is similar but the court and rules differ. See [how to remove a trustee](/learn/after-a-death/how-to-remove-a-trustee).
 

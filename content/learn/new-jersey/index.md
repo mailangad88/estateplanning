@@ -87,6 +87,8 @@ A caveat filed with the Surrogate before an executor is appointed can temporaril
 
 Executor pay and how long the work takes are covered in [New Jersey executor commissions and the probate timeline](/learn/new-jersey/new-jersey-executor-commissions-and-probate-timeline). We do not state numbers here because that article owns them.
 
+For a side-by-side look at how New Jersey probate differs from Illinois, see [Illinois and New Jersey probate compared](/learn/new-jersey/illinois-and-new-jersey-probate-compared).
+
 ## Can a small estate skip probate?
 
 Sometimes, when there is no will. A surviving spouse, civil union partner or domestic partner can take the assets of an intestate estate by filing an affidavit with the Surrogate if the total real and personal assets do not exceed $50,000. The first $10,000 is free from the decedent's debts (N.J.S.A. 3B:10-3). If there is no spouse or partner, one heir can do the same for an estate of $20,000 or less, with the written consent of the other heirs (N.J.S.A. 3B:10-4).

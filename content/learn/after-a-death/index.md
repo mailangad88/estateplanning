@@ -1,7 +1,7 @@
 ---
 title: "What to do when a loved one dies: a practical guide for families"
 description: "A gentle, practical guide for families after a death: what is urgent, what can wait, who has authority, and how probate, trusts, taxes and inheritance work."
-updated: "2026-10-06"
+updated: "2026-11-26"
 answer: >-
   After a death, only a few things are urgent: a legal pronouncement, care for dependents, and arrangements for the body. Next come death certificates, finding the will or trust, and meeting an attorney. Probate, taxes and distributions follow over months. An executor or successor trustee manages the legal work and should avoid distributing assets early.
 takeaways:
@@ -180,13 +180,13 @@ Call one if the person owned real estate, a business or substantial accounts, if
 
 If the estate is a house and little cash, [how to pay for probate when the estate has no cash](/learn/after-a-death/how-to-pay-for-probate-when-the-estate-has-no-cash) explains who fronts the costs and how they are repaid.
 
-If a parent's widow lives in the family home, [does my stepmother get the house](/learn/after-a-death/does-my-stepmother-get-the-house-when-my-father-dies) walks through deed, will and spouse-rights outcomes in Illinois and New Jersey.
+If a parent's widow lives in the family home, [does my stepmother get the house](/learn/after-a-death/does-my-stepmother-get-the-house-when-my-father-dies) walks through deed, will and spouse-rights outcomes under Illinois law.
 
 If farmland came to you, [what to do when you inherit a farm](/learn/after-a-death/what-to-do-when-you-inherit-a-farm) covers the lease, the crop, tax basis and co-heir choices.
 
 If you serve from another state, [how to be an executor when you live out of state](/learn/after-a-death/how-to-be-an-executor-when-you-live-out-of-state) sorts what you can do remotely from what needs local help.
 
-If you suspect an executor is hiding or taking money, [how to report a dishonest executor](/learn/after-a-death/how-to-report-a-dishonest-executor) lists the warning signs, the records to gather and where to report in Illinois or New Jersey.
+If you suspect an executor is hiding or taking money, [how to report a dishonest executor](/learn/after-a-death/how-to-report-a-dishonest-executor) lists the warning signs, the records to gather and where to report in Illinois.
 
 For adult children, [what to do when your mother or father dies](/learn/after-a-death/what-to-do-when-your-mother-or-father-dies) covers the first week, how siblings split the work and what to leave alone.
 

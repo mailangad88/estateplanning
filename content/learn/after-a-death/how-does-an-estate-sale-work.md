@@ -1,7 +1,7 @@
 ---
 title: "How does an estate sale work? Who runs it and what the executor must do first"
 description: "An estate sale sells a home's contents after a death. Learn who may authorize it, what a liquidator charges, what to remove first and how the money is handled."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   An estate sale is a short, organized sale of a house's contents, usually run over a weekend by a company that prices the items, advertises, staffs the sale and keeps a commission. Before it happens, the executor or trustee must have authority to sell, family should claim keepsakes, and valuables and papers must be removed. The proceeds belong to the estate, not to whoever runs it.
 takeaways:
@@ -91,7 +91,7 @@ An illustration with invented numbers: Denise's sale brings in $9,400. The compa
 
 It goes to the estate or the trust. The executor deposits the check in the estate bank account, opened with the estate's tax ID, and not in a personal account. The money is then used to pay expenses or is divided with everything else under the will. If the executor spends estate funds on the cleanout first and wants to be repaid, the proper path is described in our page on [who pays the executor's expenses](/learn/after-a-death/who-pays-the-executors-expenses).
 
-Keep a copy of the sale company's report, the check and the deposit slip. They are part of the accounting an executor eventually prepares. In Illinois a final account may be needed; in New Jersey, family releases or a formal accounting close the file. [How an executor values the estate](/learn/after-a-death/how-an-executor-values-the-estate) explains why a record of the day-of-death value helps.
+Keep a copy of the sale company's report, the check and the deposit slip. They are part of the accounting an executor eventually prepares. In Illinois a final account may be needed before the court closes the estate. [How an executor values the estate](/learn/after-a-death/how-an-executor-values-the-estate) explains why a record of the day-of-death value helps.
 
 ## Are the proceeds taxed?
 
@@ -105,7 +105,7 @@ Plan for it before the sale. Companies handle leftovers in different ways.
 - **Buyout.** Some companies make a lump sum offer for the remaining contents.
 - **Consignment or online sale.** Good for a few valuable pieces that did not move.
 - **Junk removal.** Last, and a cost to the estate.
-- **A local municipal rule.** Some towns require a permit or limit signs and parking for sales at a home. Call the municipal clerk in Illinois or New Jersey before advertising.
+- **A local municipal rule.** Some towns require a permit or limit signs and parking for sales at a home. Call the village or city clerk before advertising.
 
 ## Is an estate sale always the right choice?
 

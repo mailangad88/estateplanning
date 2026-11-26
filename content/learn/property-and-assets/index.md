@@ -1,7 +1,7 @@
 ---
 title: "Planning for your home, real estate and special assets"
 description: "How to plan for your house, out-of-state property, joint accounts, firearms and pets: titling options, probate, taxes and the mistakes that cost families most."
-updated: "2026-10-06"
+updated: "2026-11-26"
 answer: >-
   Real estate and special assets pass according to how they are owned and titled, not just what your will says. Review how each asset is held, decide who should receive it, and use tools such as a living trust, a transfer-on-death deed or a beneficiary designation. Assets with special rules, such as out-of-state land, firearms and pets, need their own instructions.
 takeaways:
@@ -164,7 +164,7 @@ When only one child will keep the house, [how to leave the house to one child an
 
 If someone suggested a life estate, [what a life estate deed is and when it ends](/learn/property-and-assets/life-estate-deed-explained-remainder-interest-and-when-it-ends) explains the remainder interest, taxes and risks.
 
-To put a spouse on title, [how to add your spouse to your deed](/learn/property-and-assets/how-to-add-your-spouse-to-your-deed) gives the steps, the Illinois and New Jersey wording and the second-marriage risks.
+To put a spouse on title, [how to add your spouse to your deed](/learn/property-and-assets/how-to-add-your-spouse-to-your-deed) gives the steps, the Illinois wording and the second-marriage risks.
 
 If one heir wants to keep the house, [buying out a sibling or forcing a partition](/learn/property-and-assets/buying-out-a-sibling-or-co-owner-of-an-inherited-house-or-forcing-a-partition) explains pricing, financing and court costs.
 

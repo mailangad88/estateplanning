@@ -1,7 +1,7 @@
 ---
 title: "What is a life estate deed? Remainder interest, control and when it ends"
 description: "A life estate deed lets you live in your home for life while a child owns the remainder. See when it ends, the tax and Medicaid effects and the risks."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A life estate deed splits ownership of a house in time. The person who signs keeps the right to live in it for the rest of their life (the life estate), and a named person, often a child, holds the remainder interest and takes full ownership at the first owner's death. The house skips probate, but the owner can no longer sell or borrow against it alone.
 takeaways:
@@ -9,7 +9,7 @@ takeaways:
   - "After the deed is recorded, the life tenant cannot sell, mortgage or give away the house without the remainder owner's signature."
   - "The house usually gets a stepped-up tax basis at death because the life tenant kept an interest, unlike an outright gift."
   - "The remainder owner's debts, divorce or death can reach the house, which is the main risk."
-  - "Illinois and New Jersey families often compare a life estate with a transfer on death instrument or a living trust before signing."
+  - "Illinois families often compare a life estate with a transfer on death instrument or a living trust before signing."
 faqs:
   - q: "What is a remainder interest?"
     a: "It is the future ownership right in a property that starts when the life estate ends. The person holding it is called the remainderman. While the life tenant is alive, the remainderman cannot live in the house, collect rent or force a sale, but the interest is real property and can be reached by that person's creditors."
@@ -18,7 +18,7 @@ faqs:
   - q: "Can the remainder owner force me out of my house?"
     a: "Not while you are the life tenant and you keep paying taxes and insurance and do not damage the property. The remainder owner can ask a court to act if the house is being wasted or the taxes go unpaid. Evicting the life tenant is not an option."
   - q: "Does a life estate avoid Medicaid estate recovery?"
-    a: "Not reliably. A life estate ends at death, so the house may not be part of the probate estate. But some states, including New Jersey, define the estate for Medicaid recovery broadly enough to reach assets that pass outside probate. Check the state rule before relying on it."
+    a: "Not reliably. A life estate ends at death, so the house may not be part of the probate estate. Illinois estate recovery is aimed at the probate estate, but some states define the estate more broadly, and the answer for a particular deed depends on current rules. Check before relying on it."
   - q: "Is a life estate better than adding a child to the deed?"
     a: "It avoids some of the problems of joint ownership, because the child does not own a share now that creditors could attach to the whole house. But the child's remainder interest is still exposed, and you lose the ability to sell without the child. For most families a trust or a transfer on death instrument gives more control."
 related:
@@ -89,7 +89,7 @@ Property tax is a local matter. Ask the county assessor whether a senior or home
 
 A life estate deed is a transfer for Medicaid purposes. In most states, giving away the remainder interest starts the 60-month look-back clock, and the value of the gift can lead to a penalty period if you apply within five years. After the five years, the house is no longer counted as yours if you are applying for nursing home Medicaid.
 
-The catch is estate recovery. Some states pursue the house after death even though it passes outside probate. New Jersey is one of the states with a broad definition, which is covered in [New Jersey estate recovery](/learn/new-jersey/new-jersey-estate-recovery). Illinois has its own rules, summarized in [Illinois Medicaid estate recovery](/learn/illinois/illinois-medicaid-estate-recovery). Do not sign a deed meant to protect a house from Medicaid without current advice for your state.
+The catch is estate recovery. Some states pursue the house after death even though it passes outside probate. In Illinois, the Department of Healthcare and Family Services files its claim against the probate estate, and recovery is deferred while a spouse or a child under 21 survives, or a child is blind or disabled. The details are in [Illinois Medicaid estate recovery](/learn/illinois/illinois-medicaid-estate-recovery). Do not sign a deed meant to protect a house from Medicaid without current advice for your state.
 
 ## What are the risks of a life estate?
 
@@ -114,7 +114,7 @@ If your main goals are to stay in your house, avoid probate and keep control, ot
 | Transfer on death deed or instrument | Yes | Yes | Yes |
 | Revocable living trust | Yes | Yes, if the house is retitled | Yes |
 
-Illinois does not have an enhanced life estate in common use, but it does have a transfer on death instrument, covered in [our Illinois TODI article](/learn/illinois/illinois-transfer-on-death-instrument). New Jersey has no TOD deed, so families there usually weigh a trust against a life estate, as described in [transfer on death options in New Jersey](/learn/new-jersey/transfer-on-death-options-in-new-jersey). A spouse who needs to be protected after the owner dies may be a good candidate for a life estate, which is the subject of [the life estate for a surviving spouse](/learn/blended-families/life-estate-for-a-surviving-spouse).
+Illinois does not have an enhanced life estate in common use, but it does have a transfer on death instrument, covered in [our Illinois TODI article](/learn/illinois/illinois-transfer-on-death-instrument). Our comparison of a [TODI and a living trust for an Illinois house](/learn/illinois/todi-vs-living-trust-for-an-illinois-house) helps families weigh those two against a life estate. A spouse who needs to be protected after the owner dies may be a good candidate for a life estate, which is the subject of [the life estate for a surviving spouse](/learn/blended-families/life-estate-for-a-surviving-spouse).
 
 ## How we can help
 

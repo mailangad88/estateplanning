@@ -1,7 +1,7 @@
 ---
 title: "A-B trust for a second marriage: how a bypass trust protects your children"
 description: "How an A-B (bypass or credit shelter) trust works when you remarry: what your spouse can use, who controls the rest, and how it ends up with your children."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   An A-B trust splits your estate into two parts when you die. Part A goes to your surviving spouse outright or in a marital trust. Part B, the bypass trust, is locked in at your death: your spouse can use it for support, but cannot change who receives what is left, so it passes to your children. In a second marriage, B is the part that protects them.
 takeaways:
@@ -16,7 +16,7 @@ faqs:
   - q: "Can my spouse change the B trust after I die?"
     a: "No, not if it is drafted correctly. The terms are fixed at your death. Your spouse may have a say over how income is spent within the limits you set, and can sometimes be given a narrow power to shift shares among your own children, but cannot name new beneficiaries outside the group you chose."
   - q: "Do we still need an A-B trust with a $15 million exemption?"
-    a: "For federal estate tax alone, most couples no longer do, since the basic exclusion is $15,000,000 per person in 2026 and portability lets a spouse carry over the unused part. The trust earns its keep in a blended family for control, not tax. Illinois and New Jersey also have their own state-level rules to check."
+    a: "For federal estate tax alone, most couples no longer do, since the basic exclusion is $15,000,000 per person in 2026 and portability lets a spouse carry over the unused part. The trust earns its keep in a blended family for control, not tax. Illinois also has its own estate tax, with a lower threshold, to check."
   - q: "Who should be trustee of the B trust?"
     a: "If your spouse is trustee and also the person who can spend the money, your children are relying on their goodwill. Many people name an adult child, a trusted friend or a corporate trustee, sometimes with the spouse as co-trustee for day-to-day decisions."
   - q: "What happens to the B trust if my spouse remarries?"
@@ -84,11 +84,11 @@ You pick a formula. There are three common ones.
 
 **Specific assets.** The house and Peter's brokerage account go to B, his retirement accounts go to Alma. This avoids hard arguments about valuation and matches the asset to its purpose.
 
-For larger estates, a formula clause can move the dividing line to use the estate tax exclusion exactly. The page on [bypass trust versus portability](/learn/estate-tax/bypass-trust-vs-portability) explains when that is worth the trouble. With the federal exclusion at $15,000,000 per person in 2026, most families will not owe federal estate tax, so the split is more about family than tax. New Jersey and Illinois each have a state estate tax with a lower threshold, so check the [state death tax checker](/tools/state-death-tax-checker) if your total estate is above a few million dollars.
+For larger estates, a formula clause can move the dividing line to use the estate tax exclusion exactly. The page on [bypass trust versus portability](/learn/estate-tax/bypass-trust-vs-portability) explains when that is worth the trouble. With the federal exclusion at $15,000,000 per person in 2026, most families will not owe federal estate tax, so the split is more about family than tax. Illinois has a state estate tax with a much lower threshold, so check the [state death tax checker](/tools/state-death-tax-checker) if your total estate is above a few million dollars.
 
 ## A worked example
 
-Example only. Peter and Alma live in a New Jersey ranch house worth $520,000, with $380,000 in investments and $500,000 in Peter's 401(k). Peter wants Alma to stay in the house for life and wants his daughters, Dana and Joy, to receive his share after that.
+Example only. Peter and Alma live in a ranch house in Will County worth $520,000, with $380,000 in investments and $500,000 in Peter's 401(k). Peter wants Alma to stay in the house for life and wants his daughters, Dana and Joy, to receive his share after that.
 
 His plan: the house and half of the investments (Peter's half) fund B. Alma gets income from B, and the trustee, Dana, may pay principal for Alma's medical needs. The 401(k) names Alma directly, so she can roll it over and use it for her own retirement. When Alma dies, B passes equally to Dana and Joy.
 

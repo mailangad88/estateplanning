@@ -1,7 +1,7 @@
 ---
 title: "What is a professional or public guardian, and what happens when no family member can serve?"
 description: "When no relative can be guardian, a court may appoint a professional or public guardian. Learn who they are, what they cost and how to avoid that outcome."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A professional guardian is a paid individual or company the court appoints to make decisions for someone who cannot, usually when no suitable relative or friend can serve. A public guardian is a government office that serves as a last resort. For children, a court with no family choice may place the child with the state's child welfare agency.
 takeaways:
@@ -52,7 +52,7 @@ Marguerite, 84, has dementia, no spouse and one son who lives overseas and does 
 
 ## What is a public guardian?
 
-A public guardian is a government office that serves as guardian when nobody else can or will. Names and reach vary by state and sometimes by county. In Illinois, the Office of State Guardian, part of the Guardianship and Advocacy Commission, serves adults with disabilities who have no one to act for them, and some counties such as Cook have a public guardian's office with its own role. New Jersey has an Office of the Public Guardian for Elderly Adults, which serves older adults who have been found incapacitated and have no one else to act. Confirm the current scope with the court, because eligibility rules and caseloads change.
+A public guardian is a government office that serves as guardian when nobody else can or will. Names and reach vary by state and sometimes by county. In Illinois, the Office of State Guardian, part of the Guardianship and Advocacy Commission, serves adults with disabilities who have no one to act for them, and some counties such as Cook have a public guardian's office with its own role. Confirm the current scope with the court, because eligibility rules and caseloads change.
 
 Public guardians generally have large caseloads and limited staff. They can protect someone from harm, consent to care and manage benefits, but they cannot offer the individual attention a family member can. In many places they accept a case only after a court order and only when no private guardian is available.
 

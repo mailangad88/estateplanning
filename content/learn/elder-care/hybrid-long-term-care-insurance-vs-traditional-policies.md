@@ -1,7 +1,7 @@
 ---
 title: "Hybrid long-term care insurance vs traditional policies: which fits your family?"
 description: "Hybrid long-term care insurance vs traditional: how premiums, death benefits, rate increases and Medicaid planning differ, with a table and a worked example."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A traditional long-term care policy pays only for care, usually costs less per dollar of benefit, and can raise
   its premium later. A hybrid policy attaches care benefits to life insurance or an annuity, usually has a fixed
@@ -80,7 +80,7 @@ Five questions usually settle it. Answer them in this order.
 
 ## Does either type help with Medicaid?
 
-Either type can help, but the rules are narrower than the brochure suggests. A state partnership policy lets you protect assets in the amount the policy paid in benefits and still qualify for Medicaid. Not every state has a partnership program, and not every hybrid qualifies as one. Ask the insurer in writing, then check with your state insurance regulator. In Illinois that is the Department of Insurance, and in New Jersey the Department of Banking and Insurance. Both states also run a Senior Health Insurance Program that offers free counseling on policies like these.
+Either type can help, but the rules are narrower than the brochure suggests. A state partnership policy lets you protect assets in the amount the policy paid in benefits and still qualify for Medicaid. Not every state has a partnership program, and not every hybrid qualifies as one. Ask the insurer in writing, then check with your state insurance regulator. In Illinois that is the Department of Insurance. Illinois also runs a Senior Health Insurance Program that offers free counseling on policies like these.
 
 The look-back rule matters most for the lump sum. Paying a premium for a policy that actually provides benefits is not a gift. Moving money around so you can afford the premium, or paying a child to buy a policy for you, can look like a transfer. Run the sequence past an attorney before the check clears.
 

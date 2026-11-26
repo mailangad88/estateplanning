@@ -1,7 +1,7 @@
 ---
 title: "How to leave the house to one child and money to another without starting a fight"
 description: "How do I leave a house to one child and money to another? Four ways to even it out, a worked example, and the valuation traps behind sibling disputes."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   You can leave the house to one child and other assets to another, as long as you say so clearly and the numbers work. Decide whether you want the shares equal in dollars or only in spirit, put the house value in writing, and fund the other child's share with cash, life insurance, retirement accounts or a buyout obligation in the trust.
 takeaways:
@@ -93,9 +93,9 @@ You do not need to control every outcome. You need to decide which outcomes woul
 
 If the plan depends on a formula, yes, at the time of your death. Use a licensed appraiser who is independent of both children. Do not let the child who wants the house set its value. Name the appraiser or method in the trust, and say what date controls: the date of death, or the date of distribution. Also say who pays for the appraisal. Arguments over value are a frequent way for a fair plan to turn into a family fight.
 
-## What about taxes in Illinois and New Jersey?
+## What about taxes in Illinois?
 
-Neither state's death tax is likely to be the deciding factor for most families, but check. Illinois has an estate tax with a $4 million threshold, which can matter if the house plus other assets add up. New Jersey has an inheritance tax, but children are in the exempt class, so a gift to a child from a parent does not trigger it. Our pages on the [Illinois estate tax](/learn/illinois/illinois-estate-tax) and the [New Jersey inheritance tax](/learn/new-jersey/new-jersey-inheritance-tax) give detail. The federal estate tax only applies to estates above $15 million per person in 2026.
+The Illinois estate tax is not likely to be the deciding factor for most families, but check. Illinois has an estate tax with a $4 million threshold, which can matter if the house plus other assets add up. The tax is figured on the whole estate, not on which child gets which asset, so splitting the house and the cash does not change the bill. Our pages on the [Illinois estate tax](/learn/illinois/illinois-estate-tax) and [whether your estate will owe Illinois estate tax](/learn/illinois/will-my-estate-owe-illinois-estate-tax) give detail. The federal estate tax only applies to estates above $15 million per person in 2026.
 
 ## What mistakes should I avoid?
 

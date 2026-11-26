@@ -34,11 +34,11 @@ faqs:
   - q: "Is the money left over after my child dies lost to the state?"
     a: "In a third-party trust, no: you choose who gets what remains. In a first-party trust funded with the beneficiary's own money, repayment to Medicaid comes first."
   - q: "My child is 17. What do we do about guardianship?"
-    a: "Ask before the 18th birthday. For some young adults a power of attorney and healthcare directive are enough. For others guardianship or a less restrictive option fits better. Capacity matters, and states differ. In Illinois and New Jersey, guardianship of an adult is a court case. If the young adult can understand and sign, a power of attorney may work instead."
+    a: "Ask before the 18th birthday. For some young adults a power of attorney and healthcare directive are enough. For others guardianship or a less restrictive option fits better. Capacity matters, and states differ. In Illinois, guardianship of an adult is a court case. If the young adult can understand and sign, a power of attorney may work instead."
   - q: "We already have a will that leaves everything to our children equally. What now?"
     a: "It is worth a review. Leaving a share outright to a child on benefits is one of the most common mistakes. A will update is often a small flat fee set by the attorney. See [pricing](/pricing)."
 reviewed: false
-updated: "2026-10-06"
+updated: "2026-11-26"
 ---
 
 ## What is at stake
@@ -49,7 +49,7 @@ updated: "2026-10-06"
 - **No one to carry on.** Parents are often the case manager, advocate and decision-maker. A plan with money and no instructions leaves a trustee guessing.
 - **Turning 18.** A parent's authority as guardian ends at 18. Families choose among guardianship, supported decision-making, powers of attorney and healthcare proxies, depending on capacity and state law. See [power of attorney vs guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship).
 
-ABLE accounts changed in 2026. The disability must now have begun before age 46, up from 26. Yearly contributions from everyone combined are capped at the federal gift tax exclusion, $19,000 for 2026 <!-- verify -->. SSI ignores the first $100,000 in an ABLE account. Illinois and New Jersey each run a state ABLE program, and you can generally open an account in another state's program too. For the trade-offs, see [special needs trust vs ABLE account](/compare/special-needs-trust-vs-able-account).
+ABLE accounts changed in 2026. The disability must now have begun before age 46, up from 26. Yearly contributions from everyone combined are capped at the federal gift tax exclusion, $19,000 for 2026 <!-- verify -->. SSI ignores the first $100,000 in an ABLE account. Illinois runs a state ABLE program, and you can generally open an account in another state's program too. For the trade-offs, see [special needs trust vs ABLE account](/compare/special-needs-trust-vs-able-account).
 
 ## What a plan usually includes
 

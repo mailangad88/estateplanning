@@ -1,12 +1,12 @@
 ---
-title: "What is the cheapest way to settle an estate in Illinois or New Jersey?"
-description: "The cheapest way to settle an estate is usually to skip court: an affidavit, beneficiary forms or a flat fee. See costs and tradeoffs in Illinois and NJ."
-updated: "2026-10-26"
+title: "What is the cheapest way to settle an estate in Illinois?"
+description: "The cheapest way to settle an estate is usually to skip court: an affidavit, beneficiary forms or a flat fee. See the costs and tradeoffs in Illinois."
+updated: "2026-11-26"
 answer: >-
-  The cheapest way to settle an estate is to avoid a court case when the facts allow it: a small estate affidavit, assets that pass by beneficiary form or joint title, or a recorded transfer on death instrument in Illinois. If probate is required, court fees in both states are modest, so the real savings come from the attorney fee structure, executor pay and avoiding disputes.
+  The cheapest way to settle an estate is to avoid a court case when the facts allow it: a small estate affidavit, assets that pass by beneficiary form or joint title, or a recorded transfer on death instrument in Illinois. If probate is required, Illinois court fees are modest, so the real savings come from the attorney fee structure, executor pay and avoiding disputes.
 takeaways:
   - "Court fees are small. The bill grows from attorney time, bonds, appraisals and fighting, not from the clerk."
-  - "Illinois allows an affidavit up to $150,000 in personal property with no real estate. New Jersey allows $50,000 or $20,000 only if there is no will."
+  - "Illinois allows an affidavit up to $150,000 in personal property, not counting registered vehicles, when no real estate must pass."
   - "Assets with a living beneficiary or co-owner skip probate, so check those before you open anything."
   - "A flat fee or a limited-scope arrangement, where the lawyer does only the hard steps, can cost much less than hourly billing."
   - "Waiving executor commissions and keeping the family in agreement are the cheapest steps of all."
@@ -14,11 +14,11 @@ faqs:
   - q: "What is the cheapest way to avoid probate after someone has died?"
     a: "Look for what already passes outside it: accounts with a payable-on-death beneficiary, jointly owned property, life insurance and retirement accounts with named beneficiaries. For what is left, a small estate affidavit may work if the estate is under the state limit. A recorded Illinois transfer on death instrument also avoids probate for that house."
   - q: "Is it cheaper to do probate myself?"
-    a: "Sometimes, if the estate is simple, nobody objects and you are patient. Both states allow a family member to handle many steps without a lawyer, and our state pages explain how. The risk is a mistake with creditors or taxes that costs more than the lawyer would have."
+    a: "Sometimes, if the estate is simple, nobody objects and you are patient. Illinois allows a family member to handle many steps without a lawyer, and our Illinois pages explain how. The risk is a mistake with creditors or taxes that costs more than the lawyer would have."
   - q: "Do I have to pay the lawyer from my own pocket?"
     a: "No. Attorney fees for the estate are paid from estate funds, which means from the inheritance. That is why heirs should ask for the fee terms in writing before the work begins."
   - q: "Can the estate pay executor fees, and should it?"
-    a: "It can, within each state's rules, and the pay is taxable income to the executor. When the executor is also an heir, waiving the fee and taking the same money as an inheritance is a common way to save tax. It is a personal choice."
+    a: "It can, within Illinois rules, and the pay is taxable income to the executor. When the executor is also an heir, waiving the fee and taking the same money as an inheritance is a common way to save tax. It is a personal choice."
   - q: "Is a trust cheaper than probate for settling an estate?"
     a: "For the estate being settled today, a trust may not exist. If one does, trust administration usually costs less in court fees but still takes legal and accounting work. Whether it is cheaper over a lifetime depends on cost to set up and keep funded."
   - q: "Does closing an estate cost less if I do it quickly?"
@@ -29,13 +29,13 @@ related:
   - "probate/small-estate-affidavit"
   - "probate/probate-lawyer-fee-agreements"
   - "illinois/illinois-probate-costs"
-  - "new-jersey/probate-costs-in-new-jersey"
+  - "illinois/handling-an-illinois-probate-estate-without-a-lawyer"
 glossary: ["probate", "probate-estate", "small-estate-affidavit", "executor", "transfer-on-death", "beneficiary"]
 review: pending
 intent: cost
 ---
 
-Someone has died, there is a house or a bank account, and you want to settle things without handing a third of the estate to professionals. That is a sensible goal, and in many Illinois and New Jersey families it is reachable.
+Someone has died, there is a house or a bank account, and you want to settle things without handing a third of the estate to professionals. That is a sensible goal, and in many Illinois families it is reachable.
 
 The cheapest route depends on what the person owned and whether there is a will. This page ranks the options from least to most costly, shows a worked example, and points out where false economies hide. For the full cost breakdown, see our article on [how much probate costs](/learn/probate/probate-costs).
 
@@ -46,22 +46,22 @@ Try these in order. Each step either solves the problem or shows you what is lef
 1. **Sort the assets.** Separate what passes outside probate from what does not. Our [probate asset sorter](/learn/probate/probate-vs-non-probate-assets) shows how.
 2. **Claim what has a beneficiary.** Life insurance, retirement accounts, payable-on-death accounts and jointly held property go to the named person with a death certificate and a claim form. No court.
 3. **Use a small estate affidavit** for what is left, if the estate qualifies.
-4. **Record a transfer, if one exists.** In Illinois, a recorded transfer on death instrument passes the house without a case. In New Jersey, a house held as tenants by the entirety or jointly goes to the survivor.
+4. **Record a transfer, if one exists.** In Illinois, a recorded transfer on death instrument passes the house without a case. A house held in joint tenancy or tenancy by the entirety goes to the surviving owner, as our page on [Illinois joint tenancy and tenancy by the entirety](/learn/illinois/illinois-joint-tenancy-and-tenancy-by-the-entirety) explains.
 5. **Open a simple probate case** only for what still needs court authority, preferably with a lawyer paid by flat fee.
 
 Skipping straight to step 5 is the most common way families spend more than they have to.
 
 ## How much can you save by skipping court?
 
-You save the attorney's court-related time, the publication cost in Illinois, bond premiums and weeks of waiting. Court fees themselves are not large. Cook County lists a $479 filing fee for an independent administration as of October 2025, and New Jersey Surrogate schedules list $100 to probate a two-page will and $125 for general administration. Those figures do not grow with the estate.
+You save the attorney's court-related time, the publication cost in Illinois, bond premiums and weeks of waiting. Court fees themselves are not large. Cook County lists a $479 filing fee for an independent administration as of October 2025. Other counties set their own fees, and a family that cannot pay can ask about the [Illinois probate fee waiver](/learn/illinois/illinois-probate-fee-waiver). The fee does not grow with the estate.
 
-The larger cost comes from the work. Fees for a lawyer vary by county and by lawyer, and Illinois sets no percentage schedule for them. Our pages on [what probate costs in Illinois](/learn/illinois/illinois-probate-costs) and [probate costs in New Jersey](/learn/new-jersey/probate-costs-in-new-jersey) show every line item.
+The larger cost comes from the work. Fees for a lawyer vary by county and by lawyer, and Illinois sets no percentage schedule for them. Our page on [what probate costs in Illinois](/learn/illinois/illinois-probate-costs) shows every line item.
 
 ## What can a small estate affidavit save?
 
-It can save most of the bill if you qualify. Illinois allows an affidavit for personal property up to $150,000, not counting registered vehicles, as long as no real estate must be transferred and no letters are outstanding. New Jersey is narrower: $50,000 for a surviving spouse or partner, $20,000 for other heirs with their consent, and only when there is no will.
+It can save most of the bill if you qualify. Illinois allows an affidavit for personal property up to $150,000, not counting registered vehicles, as long as no real estate must be transferred and no letters are outstanding.
 
-Here is an example. After Ruth dies in Joliet, her son Daniel finds a checking account with $34,000, a car and no house, because Ruth rented. Daniel can use the Illinois affidavit at the bank, owes no court filing fee and may need an hour of legal review. The same estate in New Jersey with a will would not qualify for the affidavit and would go through a Surrogate's probate. See our articles on the [Illinois](/learn/illinois/illinois-small-estate-affidavit) and [New Jersey](/learn/new-jersey/new-jersey-small-estate-affidavit) affidavits. If a bank refuses, [what to do when a bank refuses a small estate affidavit](/learn/probate/what-to-do-when-a-bank-refuses-a-small-estate-affidavit) explains the next move.
+Here is an example. After Ruth dies in Joliet, her son Daniel finds a checking account with $34,000, a car and no house, because Ruth rented. Daniel can use the Illinois affidavit at the bank, owes no court filing fee and may need an hour of legal review. If Ruth had owned her house in her name alone, the affidavit would not reach it, and Daniel would need to open a case. See our article on the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit). If a bank refuses, [what to do when a bank refuses a small estate affidavit](/learn/probate/what-to-do-when-a-bank-refuses-a-small-estate-affidavit) explains the next move.
 
 <!-- visual: tool slug=small-estate-checker -->
 
@@ -100,7 +100,7 @@ Three cost-cutting moves backfire.
 
 ## Is DIY probate cheaper?
 
-Often, yes, for a simple estate with one house, two accounts and cooperative heirs. It usually requires patience and several trips to the clerk or Surrogate. If you want to try, read how an executor can proceed without a lawyer in [Illinois](/learn/illinois/handling-an-illinois-probate-estate-without-a-lawyer) or [New Jersey](/learn/new-jersey/handling-a-new-jersey-estate-without-a-lawyer), and consider paying for a single review before you file.
+Often, yes, for a simple estate with one house, two accounts and cooperative heirs. It usually requires patience and several trips to the circuit clerk. If you want to try, read [how an executor can handle an Illinois estate without a lawyer](/learn/illinois/handling-an-illinois-probate-estate-without-a-lawyer), and consider paying for a single review before you file.
 
 ## What can you do before death to make this cheaper?
 

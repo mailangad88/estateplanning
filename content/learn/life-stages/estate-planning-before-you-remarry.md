@@ -1,7 +1,7 @@
 ---
 title: "Estate planning before you remarry: what to change before the wedding"
-description: "Thinking of remarrying? A pre-wedding checklist for your house, beneficiary forms, will, prenup and powers of attorney, with Illinois and New Jersey notes."
-updated: "2026-10-26"
+description: "Thinking of remarrying? A pre-wedding checklist for your house, beneficiary forms, will, prenup and powers of attorney, with Illinois law notes."
+updated: "2026-11-26"
 answer: >-
   Before you remarry, decide what your children from before should receive, then make the house, beneficiary forms, will and powers of attorney match that decision. Marriage gives your new spouse legal rights, including an elective share and, for some accounts, automatic claims. Most of the fixes are easiest while you are still single and nobody has to sign away anything.
 takeaways:
@@ -18,7 +18,7 @@ faqs:
   - q: "Do I need a prenup to protect my children?"
     a: "Not always, but it is the clearest way to record what each of you keeps and what each of you waives. Without one, a spouse generally has statutory rights against your estate. A prenup works best when each side has a lawyer and signs weeks before the wedding."
   - q: "Do I need to update my will before the wedding or after?"
-    a: "Update before if you can, and again after the wedding if the documents depend on being married. In Illinois, marriage does not revoke a will, and New Jersey gives a spouse omitted from an earlier will certain protections. Either way the old will stays largely in place, which helps only if it still says what you want."
+    a: "Update before if you can, and again after the wedding if the documents depend on being married. In Illinois, marriage does not revoke a will. The old will stays largely in place, which helps only if it still says what you want."
   - q: "Can my adult children block my remarriage plans?"
     a: "No. Adults have the right to marry. What children can do is raise concerns, and what you can do is reduce the chance of conflict by explaining your plan and putting the arrangements in a trust or agreement."
 related:
@@ -40,7 +40,7 @@ This page is a before-the-wedding checklist: what a marriage changes in the law,
 
 ## What changes legally when you remarry?
 
-Your spouse acquires rights against your estate. In both Illinois and New Jersey, a surviving spouse can claim a share of the estate even if the will says otherwise, and a spouse is first in line if there is no will. Illinois spouse rights are covered in [Illinois spouse rights at death](/learn/illinois/illinois-spouse-rights-at-death), and the general rule in [can you disinherit a spouse](/learn/blended-families/spouse-elective-share-and-disinheriting-a-spouse).
+Your spouse acquires rights against your estate. In Illinois, a surviving spouse can claim a share of the estate even if the will says otherwise, and a spouse is first in line if there is no will. Illinois spouse rights are covered in [Illinois spouse rights at death](/learn/illinois/illinois-spouse-rights-at-death), and the general rule in [can you disinherit a spouse](/learn/blended-families/spouse-elective-share-and-disinheriting-a-spouse).
 
 Your old will does not disappear. Marriage alone does not cancel it. That sounds comforting until you read what it says: a will written during your first marriage may name your late or former spouse, leave nothing to the new one and contain an executor who does not fit anymore. See [remarrying without updating your will](/learn/blended-families/remarried-without-updating-your-will).
 

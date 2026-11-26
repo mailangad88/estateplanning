@@ -19,7 +19,7 @@ related:
   - tools/estate-tax-estimator
   - life-events/death-of-a-parent
 reviewed: false
-updated: "2026-10-06"
+updated: "2026-11-26"
 answers:
   - "Do I pay tax on an inheritance?"
   - "Is inheritance taxable income?"
@@ -52,7 +52,7 @@ Most people who inherit pay no tax on the inheritance itself. The tax questions 
 | Income tax | You | On income the asset earns, or on pre-tax retirement money you withdraw |
 | Capital gains tax | You | On profit when you later sell, measured from a stepped-up value |
 
-Illinois has an estate tax but no inheritance tax. States that have an inheritance tax are commonly listed as Iowa (phased out), Kentucky, Maryland, Nebraska, New Jersey and Pennsylvania. <!-- verify: current list of inheritance tax states --> Check the state of the person who died, and the state where property sits. Pennsylvania, Kentucky and Maryland often tax children and other heirs at different rates. Spouses are commonly exempt. Use the [state death tax checker](/tools/state-death-tax-checker) to look up a state.
+Illinois has an estate tax but no inheritance tax. States that have an inheritance tax are commonly listed as Kentucky, Maryland, Nebraska, New Jersey and Pennsylvania, and Iowa has phased its tax out. <!-- verify: current list of inheritance tax states --> Check the state of the person who died, and the state where property sits. Pennsylvania, Kentucky and Maryland often tax children and other heirs at different rates. Spouses are commonly exempt. Use the [state death tax checker](/tools/state-death-tax-checker) to look up a state.
 
 ## Decision table by asset
 

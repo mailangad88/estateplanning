@@ -1,7 +1,7 @@
 ---
 title: "What if your parent refuses to make a will or sign a power of attorney?"
-description: "A parent who refuses to make a will or sign a power of attorney cannot be forced. See what happens if they never do, and what to try in Illinois or New Jersey."
-updated: "2026-10-26"
+description: "A parent who refuses to make a will or sign a power of attorney cannot be forced. See what happens if they never do, and what to try in Illinois."
+updated: "2026-11-26"
 answer: >-
   You cannot make a will or power of attorney for a parent, and you cannot force them to sign. If they never do, their estate passes under state intestacy law and a court appoints an administrator, and if they lose capacity, a family member may need guardianship. The practical move is to find out why they refuse, then ask for the smallest document first.
 takeaways:
@@ -57,9 +57,9 @@ Each missing document leaves a gap that the state fills with its own default.
 
 <!-- visual: whatif id=die-without-a-will -->
 
-Here is what that looks like in numbers. Say Ruth, a widow in Illinois, owns a $240,000 house and $120,000 in savings in her own name and never signs a will. She has three children. Under 755 ILCS 5/2-1 the three children share equally, so each receives $120,000. That might be exactly what Ruth wanted. It does not match what she told you if she meant the house to go to Kevin, who moved back in to care for her. See [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) or the [New Jersey version](/learn/new-jersey/who-inherits-without-a-will-in-new-jersey) for the actual order.
+Here is what that looks like in numbers. Say Ruth, a widow in Illinois, owns a $240,000 house and $120,000 in savings in her own name and never signs a will. She has three children. Under 755 ILCS 5/2-1 the three children share equally, so each receives $120,000. That might be exactly what Ruth wanted. It does not match what she told you if she meant the house to go to Kevin, who moved back in to care for her. See [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) for the actual order.
 
-If Ruth later has a stroke with no power of attorney, the money and the house are both frozen for practical purposes. Kevin would have to ask a judge to appoint a guardian of her estate. Illinois requires clear and convincing evidence that a person has a disability before a court does that (755 ILCS 5/11a-3), and New Jersey requires physician certifications and a hearing. The ordinary work of [paying her bills and selling the house](/learn/what-if/incapacitated-without-power-of-attorney) turns into a case file.
+If Ruth later has a stroke with no power of attorney, the money and the house are both frozen for practical purposes. Kevin would have to ask a judge to appoint a guardian of her estate. Illinois requires clear and convincing evidence that a person has a disability before a court does that (755 ILCS 5/11a-3), after a petition, a physician's report and a hearing. The ordinary work of [paying her bills and selling the house](/learn/what-if/incapacitated-without-power-of-attorney) turns into a case file.
 
 <!-- visual: whatif id=incapacitated-without-power-of-attorney -->
 
@@ -90,17 +90,17 @@ Do not move your parent's money into your own name to "make it easier." A bank c
 
 ## What if my parent says everything goes to one child?
 
-They are allowed to, and an unequal plan is not a defect. A written, explained choice is far less likely to be overturned than a silent one. What makes a plan suspicious is the circumstances: a parent who changed documents right after a diagnosis, a beneficiary child who found and took the parent to the lawyer, secrecy, isolation from other relatives, or a parent who cannot say what the plan does. In Illinois a will can be contested within six months after admission to probate (755 ILCS 5/8-1), and New Jersey has its own caveat procedure; both are covered in our pages on [Illinois will contests](/learn/illinois/illinois-will-contest-six-month-deadline) and [New Jersey will contests and caveats](/learn/new-jersey/new-jersey-will-contests-and-caveats).
+They are allowed to, and an unequal plan is not a defect. A written, explained choice is far less likely to be overturned than a silent one. What makes a plan suspicious is the circumstances: a parent who changed documents right after a diagnosis, a beneficiary child who found and took the parent to the lawyer, secrecy, isolation from other relatives, or a parent who cannot say what the plan does. In Illinois a will can be contested within six months after admission to probate (755 ILCS 5/8-1), as covered in our pages on [Illinois will contests](/learn/illinois/illinois-will-contest-six-month-deadline) and [undue influence challenges in Illinois](/learn/illinois/undue-influence-will-challenges-in-illinois).
 
 If you are the favored child, the best protection for your parent and for you is to stay out of the lawyer's office, let the parent explain the reasoning in a short signed statement, and consider asking the parent's doctor for a capacity note near the signing date.
 
 ## What if my parent already lacks capacity?
 
-Then the question changes from "will they sign" to "can they." A person with early memory loss can often still sign a power of attorney on a good day if they understand who the agent is and what the agent may do. An attorney will meet with them alone and decide. If the answer is no, the remaining route is guardianship, which in Illinois is governed by 755 ILCS 5/11a and in New Jersey by N.J.S.A. 3B:12 and Court Rule 4:86. The [guardianship alternatives](/learn/special-needs/guardianship-alternatives-for-adult-children) page lists options short of a full order. Moving quickly matters more than moving perfectly.
+Then the question changes from "will they sign" to "can they." A person with early memory loss can often still sign a power of attorney on a good day if they understand who the agent is and what the agent may do. An attorney will meet with them alone and decide. If the answer is no, the remaining route is guardianship, which in Illinois is governed by 755 ILCS 5/11a. The [guardianship alternatives](/learn/special-needs/guardianship-alternatives-for-adult-children) page lists options short of a full order. Moving quickly matters more than moving perfectly.
 
 ## How state law changes this
 
-Every state sets its own intestacy shares, its own witness rules, and its own guardianship process. Illinois and New Jersey both give a court the power to appoint a guardian for an adult only after a hearing with notice to the person. Illinois also has a statutory short form for property powers of attorney, and New Jersey requires specific signing formalities. Your state guide, such as [Illinois](/estate-planning/illinois) or [New Jersey](/estate-planning/new-jersey), summarizes both.
+Every state sets its own intestacy shares, its own witness rules, and its own guardianship process. Illinois gives a court the power to appoint a guardian for an adult only after a hearing with notice to the person. Illinois also has a statutory short form for property powers of attorney, signed with one witness and a notary (755 ILCS 45/3-3). Our [Illinois guide](/estate-planning/illinois) summarizes both.
 
 ## How we can help
 

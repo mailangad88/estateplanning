@@ -11,6 +11,13 @@ export const firm = {
   firmLegalName: "Singh & Kaur Law LLC",
   attorneyName: "Sargun Singh",
   attorneyTitle: "Estate planning attorney",
+  /**
+   * Whether the attorney's name may appear on public pages or in structured data. Off (Angad, 2026-11-06):
+   * the site names no attorney; review stays a process, unnamed. Internal screens still use attorneyName.
+   */
+  publishAttorneyName: false,
+  /** How public pages refer to the reviewer while the name is not published. */
+  attorneyPublicLabel: "a licensed Illinois estate planning attorney",
   /** Intake line, answered by the attorney (Angad, 2026-11-06). */
   phone: "(630) 656-3059",
   /** Public contact email for the site (a company address, separate from the attorney). */
@@ -67,14 +74,14 @@ export interface Package {
 }
 
 /**
- * Sitewide disclaimer (Sargun Singh, 2026-10-25, typos fixed). Shown in the footer, on /book and on every
- * public form. The site is a referral network that matches visitors with an attorney.
+ * Sitewide disclaimer (Sargun Singh, 2026-10-25, typos fixed; referral sentence dropped by Angad 2026-11-26 now that the site names Singh & Kaur Law LLC). Shown in the footer, on /book and on every
+ * public form.
  */
 export const SITE_DISCLAIMER =
-  "All information on this website is for educational purposes only. It does not constitute legal advice, and it does not create an attorney-client relationship. This is a referral website: we will match you with an appropriate attorney.";
+  "All information on this website is for educational purposes only. It does not constitute legal advice, and it does not create an attorney-client relationship.";
 
 export const SITE_DISCLAIMER_ES =
-  "Toda la información de este sitio web es solo educativa. No constituye asesoría legal ni crea una relación abogado-cliente. Este es un sitio de referencias: lo pondremos en contacto con un abogado adecuado.";
+  "Toda la información de este sitio web es solo educativa. No constituye asesoría legal ni crea una relación abogado-cliente.";
 
 /**
  * Every price the site shows, in one place. Values come from the attorney. A value can be a price

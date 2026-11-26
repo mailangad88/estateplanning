@@ -1,7 +1,7 @@
 ---
 title: "Estate planning for blended families: providing for a spouse and children from a prior relationship"
 description: "A complete guide to estate planning when you remarry or have stepchildren: protect your spouse, your children, the family home and your retirement accounts."
-updated: "2026-10-06"
+updated: "2026-11-26"
 answer: >-
   In a blended family, the default legal rules usually favor the surviving spouse, and a spouse can pass everything to their own relatives. To provide for both a spouse and children from a prior relationship, use a trust that supports your spouse for life and then passes to your children, align titles and beneficiary forms with it, and consider a prenuptial or postnuptial agreement.
 takeaways:
@@ -156,7 +156,7 @@ If you worry about a challenge, [can my stepchildren contest my will](/learn/ble
 
 When one spouse will run a trust that the children inherit later, [naming a spouse as trustee for your kids' inheritance](/learn/blended-families/can-my-spouse-be-trustee-for-my-children-from-a-first-marriage) covers the conflict and four safer setups.
 
-If you want a stepchild to inherit as a legal child, [adopting an adult stepchild](/learn/blended-families/adopting-an-adult-stepchild-to-make-them-an-heir) explains how adult adoption works in Illinois and New Jersey and what it can cost your spouse.
+If you want a stepchild to inherit as a legal child, [adopting an adult stepchild](/learn/blended-families/adopting-an-adult-stepchild-to-make-them-an-heir) explains how adult adoption works in Illinois and what it can cost your spouse.
 
 When the family company is the main asset, [leaving a business to your children while providing for a second spouse](/learn/blended-families/leaving-a-business-to-your-children-and-providing-for-a-second-spouse) covers voting splits, trusts and insurance.
 

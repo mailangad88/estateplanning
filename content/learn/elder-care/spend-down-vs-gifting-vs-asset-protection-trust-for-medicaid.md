@@ -1,7 +1,7 @@
 ---
 title: "Spend down vs. gifting vs. an asset protection trust: three ways to qualify for Medicaid"
 description: "Spend down, gift to your children or use an asset protection trust? Compare cost, speed and risk with one family's $300,000 and see which fits your timeline."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Spending down uses your money on allowed things until you reach the Medicaid limit. Gifting moves money to your children but triggers a penalty period. An asset protection trust shields assets only after the 60-month look-back runs out. Spend down works immediately, a trust needs five years of good health, and gifting sits between them and works only with careful math.
 takeaways:
@@ -98,7 +98,7 @@ Notice that in each timeline the question comes before the tool. The article on 
 - Moving money into a child's account. A child's name on your account is a gift when the child withdraws, and it exposes your money to the child's creditors.
 - Forgetting the surviving spouse. If a spouse lives at home, special rules let the couple keep more, and a transfer to the spouse is usually free of penalty. Skipping that step wastes the best protection available.
 - Treating the trust as a tax shelter. It is a Medicaid and probate tool. A trust that gives you the power to take the assets back is counted by Medicaid.
-- Ignoring state rules. The look-back is 60 months in most states, but trust treatment, penalty divisors and rules on the home differ. For Illinois and New Jersey, see our guides to [Illinois Medicaid planning](/learn/illinois/illinois-medicaid-nursing-home-eligibility-and-planning) and [New Jersey Medicaid planning](/learn/new-jersey/new-jersey-medicaid-and-nursing-home-planning).
+- Ignoring state rules. The look-back is 60 months in most states, but trust treatment, penalty divisors and rules on the home differ. For the Illinois rules, see our guide to [Illinois Medicaid planning](/learn/illinois/illinois-medicaid-nursing-home-eligibility-and-planning).
 
 ## How we can help
 

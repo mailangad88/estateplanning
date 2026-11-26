@@ -1,20 +1,20 @@
 ---
-title: "Can you avoid probate after someone has died in Illinois or New Jersey?"
-description: "Probate can sometimes be avoided after a death. See which assets skip court, when an affidavit works and what cannot be fixed in Illinois and New Jersey."
-updated: "2026-10-26"
+title: "Can you avoid probate after someone has died in Illinois?"
+description: "Probate can sometimes be avoided after a death. See which assets skip court, when an Illinois affidavit works and what cannot be fixed after the fact."
+updated: "2026-11-26"
 answer: >-
   Sometimes. After a death you cannot undo a missing plan, but you can often skip court for assets that already pass by beneficiary form, joint title, a trust or a recorded transfer on death instrument, and for a small estate under the affidavit limit. Assets in the person's sole name above those limits, especially a house, usually still need probate.
 takeaways:
   - "Probate is decided by how each asset was titled at death, not by what the family would prefer afterward."
   - "Beneficiary forms, joint ownership, trusts and recorded transfer instruments pass outside court with a death certificate and a claim."
-  - "A small estate affidavit may cover the rest: $150,000 in Illinois with no real estate, $50,000 or $20,000 in New Jersey with no will."
+  - "An Illinois small estate affidavit may cover the rest: up to $150,000 in personal property, with or without a will, but never real estate."
   - "A house in one person's name, without a recorded transfer, generally cannot be moved without a court case."
   - "Do not retitle, sell or withdraw from accounts in the dead person's name until you know which route applies."
 faqs:
   - q: "Can I stop probate once someone has already died?"
     a: "You can stop a court case from being needed for assets that never belonged in it. You cannot turn an asset in sole name into a non-probate asset after death. The sorting step is what shows how much of the estate really needs a court."
   - q: "What if there is a will and the estate is small?"
-    a: "In Illinois, the small estate affidavit works whether or not there is a will, if there is no real estate to transfer and the personal property is within the limit. In New Jersey the affidavit is for estates without a will, so a will there goes through probate even when small."
+    a: "In Illinois, the small estate affidavit works whether or not there is a will, if there is no real estate to transfer and the personal property is within the limit."
   - q: "Can a disclaimer help avoid probate?"
     a: "A disclaimer lets a beneficiary refuse an inheritance, which then passes as if that person had died first. It does not take the asset out of probate. It can redirect where the asset goes or help with a tax or benefits issue."
   - q: "Do I need probate if the house was owned jointly?"
@@ -22,7 +22,7 @@ faqs:
   - q: "Who can claim the money in a payable-on-death account?"
     a: "The named beneficiary, by showing ID and a death certificate to the bank. The executor is not needed. If the beneficiary has also died and no contingent is named, the account may fall back into the estate."
   - q: "What happens to a car if there is no probate?"
-    a: "Each state's motor vehicle agency has its own paperwork for transferring a title after a death, and some allow it without letters. Our state articles on transferring a car title list the documents."
+    a: "The Illinois Secretary of State has its own paperwork for transferring a title after a death, and registered vehicles do not count toward the affidavit limit. Our article on [transferring a car title after death in Illinois](/learn/illinois/transfer-car-title-after-death-in-illinois) lists the documents."
 related:
   - "probate"
   - "probate/probate-vs-non-probate-assets"
@@ -30,6 +30,7 @@ related:
   - "probate/is-probate-always-required"
   - "probate/probate-shortcuts-that-do-not-work"
   - "illinois/illinois-transfer-on-death-instrument"
+  - "illinois/how-to-avoid-probate-in-illinois"
 glossary: ["probate", "probate-estate", "payable-on-death", "transfer-on-death", "joint-tenancy", "small-estate-affidavit"]
 review: pending
 intent: situation
@@ -59,15 +60,15 @@ Our [probate asset sorter](/learn/probate/probate-vs-non-probate-assets) gives a
 
 ## What if the estate is small?
 
-Use the affidavit procedure. In Illinois, someone entitled to the property can sign a small estate affidavit for personal property up to $150,000, not counting registered motor vehicles. It does not cover real estate, and it cannot be used if letters of office are outstanding. In New Jersey, the affidavit is available only without a will: up to $50,000 for a spouse or partner, and up to $20,000 for other heirs with the written consent of the rest.
+Use the affidavit procedure. In Illinois, someone entitled to the property can sign a small estate affidavit for personal property up to $150,000, not counting registered motor vehicles. It does not cover real estate, and it cannot be used if letters of office are outstanding.
 
-Here is how it plays out. Lorraine, 71, dies in Rockford with $62,000 in a savings account, no house and a will. Her niece Joan, named executor, can use the affidavit at the bank in Illinois. If Lorraine had lived in Trenton with a will and $18,000, the family would still open a probate case, because the New Jersey affidavit is for people who die without one. Our articles on the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit) and [New Jersey small estate affidavit](/learn/new-jersey/new-jersey-small-estate-affidavit) show each route.
+Here is how it plays out. Lorraine, 71, dies in Rockford with $62,000 in a savings account, no house and a will. Her niece Joan, named executor, can use the affidavit at the bank, because the Illinois affidavit works whether or not there is a will. If Lorraine had also owned a condo in her own name, the affidavit would not reach it, and Joan would need a probate case for the condo. Our articles on the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit) and [using it at a bank](/learn/illinois/using-an-illinois-small-estate-affidavit-at-a-bank) show the route.
 
 ## Can you avoid probate for a house after the owner has died?
 
 Rarely, unless the paper was done before death. A house in the dead person's sole name with no recorded transfer instrument, no survivor and no trust almost always needs a probate case or, in a small estate, the right court order. A house that already named a beneficiary or co-owner usually does not.
 
-This is where families get stuck. They assume a deed can be signed now by the heirs. It cannot, because they do not yet own it. Our article on [what happens if the house is still in the late spouse's name](/learn/what-if/house-still-in-late-spouses-name) explains the sequence, and [Illinois](/learn/illinois/illinois-transfer-on-death-instrument) and [New Jersey](/learn/new-jersey/transfer-on-death-options-in-new-jersey) have different tools for passing a house outside court.
+This is where families get stuck. They assume a deed can be signed now by the heirs. It cannot, because they do not yet own it. Our article on [what happens if the house is still in the late spouse's name](/learn/what-if/house-still-in-late-spouses-name) explains the sequence, and our page on the [Illinois transfer on death instrument](/learn/illinois/illinois-transfer-on-death-instrument) explains the main tool for passing a house outside court.
 
 ## How do you check, step by step?
 
@@ -77,14 +78,16 @@ Work through the steps in order. Most families can finish the sorting in a week 
 2. Find the paper: deeds, account statements, beneficiary letters, life insurance policies, the trust and the will. See [how to find a deceased person's accounts](/learn/after-a-death/how-to-find-a-deceased-persons-accounts-and-assets).
 3. List each asset with how it is titled and who is named.
 4. Claim every asset with a living beneficiary or co-owner.
-5. Add up what is left in the dead person's sole name, and compare to the affidavit limit in your state.
-6. If a house or a total above the limit remains, plan for probate and ask a lawyer about the cheapest version. See [the cheapest way to settle an estate](/learn/probate/cheapest-way-to-settle-an-estate-in-illinois-or-new-jersey).
+5. Add up what is left in the dead person's sole name, and compare it to the Illinois affidavit limit.
+6. If a house or a total above the limit remains, plan for probate and ask a lawyer about the cheapest version. See [the cheapest way to settle an estate](/learn/probate/cheapest-way-to-settle-an-estate-in-illinois).
 
 <!-- visual: whatif id=house-stuck-in-probate -->
 
-## What do Illinois and New Jersey do differently?
+## What tools does Illinois give families?
 
-The two states hand families different tools. Illinois lets an owner record a transfer on death instrument for a home, and its affidavit works with or without a will but never for real estate. New Jersey has no transfer-on-death deed, so a house usually passes outside court only by survivorship or through a trust, and its affidavit is limited to estates without a will. Side-by-side details are in [Illinois and New Jersey probate compared](/learn/probate/illinois-and-new-jersey-probate-compared).
+Illinois lets an owner record a transfer on death instrument for a home, and its affidavit works with or without a will but never for real estate. A house can also pass to a survivor by joint tenancy, but only if the deed says so: a deed to two or more people is a tenancy in common unless it states "not in tenancy in common but in joint tenancy" (765 ILCS 1005/1). Married couples can hold a homestead as tenants by the entirety. Our page on [how to avoid probate in Illinois](/learn/illinois/how-to-avoid-probate-in-illinois) goes through each tool.
+
+In Cook County, families sometimes hope an affidavit of heirship will move the house. It states who the family is, but it does not give anyone authority to sign a deed, so a title company will usually still want a court-appointed representative. See [heirship affidavit vs. probate](/learn/illinois/heirship-affidavit-vs-probate).
 
 The practical lesson is to look at the county records early. A quick search of the recorder or county clerk for the dead person's property often shows a recorded instrument, a mortgage or a co-owner the family forgot. Our [probate guide](/learn/probate) shows how the pieces fit once you know what you own.
 

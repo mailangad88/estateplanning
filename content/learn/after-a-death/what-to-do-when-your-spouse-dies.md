@@ -1,7 +1,7 @@
 ---
 title: "What to do when your spouse dies: the first month, step by step"
-description: "What a widow or widower does first: death certificates, joint accounts, the house, Social Security, insurance, taxes and your own plan in Illinois or NJ."
-updated: "2026-10-26"
+description: "What a widow or widower does first: death certificates, joint accounts, the house, Social Security, insurance, taxes and your own new plan in Illinois."
+updated: "2026-11-26"
 answer: >-
   When your spouse dies, order at least ten certified death certificates, tell Social Security, keep joint accounts open, and call the executor or an attorney before moving any money. Most spousal assets pass to you by title or beneficiary form, so little of it needs a court. Hold off on big decisions such as selling the house, and update your own documents within a few months.
 takeaways:
@@ -35,7 +35,7 @@ intent: situation
 
 Raymond, 71, lost his wife Carol on a Sunday morning in Elgin. By Tuesday he had a stack of paper from the funeral home, a phone full of condolences and a growing worry that he was supposed to be doing something about the bank. He was not, yet. Most of what feels urgent is not.
 
-This page lists what a surviving spouse needs to do in the first month, in an order that makes sense, and what can wait. It is part of our [after-a-death guide](/learn/after-a-death) and a short version of our broader [guide to what to do when someone dies](/learn/after-a-death/what-to-do-when-someone-dies-checklist), written for a spouse who is probably also the executor. Illinois and New Jersey details are included.
+This page lists what a surviving spouse needs to do in the first month, in an order that makes sense, and what can wait. It is part of our [after-a-death guide](/learn/after-a-death) and a short version of our broader [guide to what to do when someone dies](/learn/after-a-death/what-to-do-when-someone-dies-checklist), written for a spouse who is probably also the executor. Illinois details are included.
 
 ## What do I do in the first few days?
 
@@ -61,9 +61,7 @@ Whether anything must go through court depends on how each asset is titled. This
 | Carol's savings, $24,000 | Carol only, no beneficiary | Needs her will and probate, or a small estate affidavit |
 | Carol's car | Carol only | Retitle through the state; see [transferring a car after death](/learn/property-and-assets/transfer-a-car-boat-or-rv-after-death) |
 
-Only the last two rows involve a court at all, and even those may qualify for a shortcut. Our [small estate checker](/tools/small-estate-checker) and the [Illinois](/learn/illinois/illinois-small-estate-affidavit) and [New Jersey](/learn/new-jersey/new-jersey-small-estate-affidavit) affidavit pages show when. If you want to sort your own list the same way, use the [probate asset sorter](/tools/probate-asset-sorter).
-
-New Jersey adds one useful point. A surviving spouse is in the lowest-tax class for the state inheritance tax, so assets passing to a spouse are not taxed there. See [New Jersey inheritance tax](/learn/new-jersey/new-jersey-inheritance-tax).
+Only the last two rows involve a court at all, and even those may qualify for a shortcut. Our [small estate checker](/tools/small-estate-checker) and the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit) page show when. The Illinois affidavit covers up to $150,000 of personal property and does not reach real estate. If you want to sort your own list the same way, use the [probate asset sorter](/tools/probate-asset-sorter).
 
 ## How do I claim the money that comes to me?
 
@@ -97,7 +95,7 @@ Within a few months. Raymond's will names Carol as executor and sole heir, his p
 
 ## How state law changes this
 
-States differ in how they treat jointly held property, whether a small estate can skip court, how the surviving spouse's allowance works, and whether community property rules apply. Illinois and New Jersey are not community property states. Start with your state guide, [Illinois](/estate-planning/illinois) or [New Jersey](/estate-planning/new-jersey), and ask about local forms.
+States differ in how they treat jointly held property, whether a small estate can skip court, how the surviving spouse's allowance works, and whether community property rules apply. Illinois is not a community property state. Start with the [Illinois estate planning guide](/estate-planning/illinois), and ask about local forms.
 
 ## How we can help
 

@@ -18,7 +18,7 @@ export function GET() {
     "",
     "## Key facts",
     "",
-    `- What it is: a referral website. Visitors book a consult and are matched with an estate planning attorney licensed in their state.`,
+    `- What it is: the estate planning website of ${firm.firmLegalName}. Visitors book a consult and are matched with an estate planning attorney licensed in ${where}.`,
     `- States served: ${where}. Visitors from other states are told so and are not matched.`,
     `- Packages: will, trust and power of attorney packages with published prices; each includes one round of revisions. Prices: ${abs("/pricing")}`,
     `- How it works: ${abs("/how-it-works")} · Book a consult: ${abs("/book")} · Phone: ${firm.phone}`,

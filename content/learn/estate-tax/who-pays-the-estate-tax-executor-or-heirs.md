@@ -1,7 +1,7 @@
 ---
 title: "Who pays the estate tax: the executor or the heirs?"
 description: "Who pays the estate tax, the executor or the heirs? How the estate pays, who bears the cost, what a tax clause does and when an executor is personally liable."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   The executor files the return and pays federal estate tax out of the estate, usually within nine months of death.
   Who ultimately bears the cost is decided by the will's tax clause or, if there is none, by state law. An executor
@@ -18,7 +18,7 @@ faqs:
   - q: "Does the IRS take its estate tax from life insurance?"
     a: "Federal law gives the estate a right to recover a proportionate share of the tax from people who received life insurance that was included in the taxable estate. Many wills override that with their own clause, so the language matters. The actual collection is the executor's job."
   - q: "Do beneficiaries owe estate tax personally?"
-    a: "Generally no. Estate tax is a tax on the estate, and the beneficiary receives what is left. A beneficiary can end up responsible only if the executor has distributed everything and the IRS pursues the recipients. New Jersey's inheritance tax is different, because it is figured on each heir's share."
+    a: "Generally no. Estate tax is a tax on the estate, and the beneficiary receives what is left. A beneficiary can end up responsible only if the executor has distributed everything and the IRS pursues the recipients. The Illinois estate tax works the same way, because it is also a tax on the estate rather than on each heir."
   - q: "What is the deadline for paying the estate tax?"
     a: "The return and the payment are due nine months after the date of death. An executor can request an automatic six-month extension to file with Form 4768, but that does not extend the time to pay unless a separate extension is granted. Interest runs on late payments."
   - q: "What if the estate has no cash to pay the tax?"
@@ -98,7 +98,7 @@ Estates with a house, a business or retirement accounts often face a gap between
 
 ## How does this work with a state estate or inheritance tax?
 
-State taxes follow their own rules. Illinois imposes an estate tax on estates above a $4 million threshold, paid by the estate, and the Illinois return is the executor's job. The [Illinois estate tax guide](/learn/illinois/illinois-estate-tax) has details. New Jersey has no estate tax for deaths since 2018, but it charges an inheritance tax on certain heirs, figured on each heir's share, and the executor generally files and pays it from the estate or collects from the heirs. See [New Jersey inheritance tax](/learn/new-jersey/new-jersey-inheritance-tax).
+State taxes follow their own rules. Illinois imposes an estate tax on estates above a $4 million threshold, paid by the estate, and the Illinois return is the executor's job. The [Illinois estate tax guide](/learn/illinois/illinois-estate-tax) has details. The executor files Illinois Form 700, and our page on the [Illinois Form 700 estate tax return](/learn/illinois/illinois-form-700-estate-tax-return) explains what goes on it. Illinois has no inheritance tax, so heirs do not file a separate state return on what they receive.
 
 An estate can owe both a federal and a state tax, so a tax clause should address each by name. The broader overview, [state estate and inheritance taxes](/learn/estate-tax/state-estate-and-inheritance-taxes), shows how the states compare.
 

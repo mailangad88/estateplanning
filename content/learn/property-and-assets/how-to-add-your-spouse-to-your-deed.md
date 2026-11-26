@@ -1,12 +1,12 @@
 ---
-title: "How to add your spouse to your deed in Illinois or New Jersey"
-description: "Steps to add a spouse to a house deed, how tenancy by the entirety works in Illinois and New Jersey, and the mortgage, tax and second-marriage risks to check."
-updated: "2026-10-26"
+title: "How to add your spouse to your deed in Illinois"
+description: "Steps to add a spouse to a house deed, how tenancy by the entirety works in Illinois, and the mortgage, tax and second-marriage risks to check."
+updated: "2026-11-26"
 answer: >-
   To add your spouse to your deed, you sign and notarize a new deed that conveys the house from you to you and your spouse as tenants by the entirety (or joint tenants), then record it with the county. It is a gift between spouses, so no gift tax applies between US citizens. The surviving spouse takes the whole house at the first death, and your will no longer controls it.
 takeaways:
   - "A new deed, signed before a notary and recorded with the county, is what adds your spouse. A letter or a verbal agreement does not."
-  - "In New Jersey, spouses who take title together hold as tenants by the entirety by default; in Illinois the deed must say so expressly."
+  - "In Illinois, spouses hold their homestead as tenants by the entirety only if the deed says so expressly."
   - "Federal law generally stops a lender from calling the mortgage because you added your spouse."
   - "Once your spouse is on title, the house goes to the survivor at death and your will cannot give it to someone else."
   - "In a second marriage, adding a spouse can disinherit your own children, so look at alternatives first."
@@ -25,7 +25,6 @@ related:
   - "property-and-assets/joint-tenants-vs-tenants-in-common-vs-entirety"
   - "property-and-assets/types-of-deeds-quitclaim-warranty-grant-and-trustee-deeds"
   - "illinois/illinois-joint-tenancy-and-tenancy-by-the-entirety"
-  - "new-jersey/joint-property-and-tenancy-by-the-entirety-in-new-jersey"
   - "blended-families/family-home-in-second-marriage"
 glossary: ["tenancy-by-the-entirety", "joint-tenancy", "step-up-in-basis", "marital-deduction", "probate"]
 review: pending
@@ -34,7 +33,7 @@ intent: situation
 
 Maybe you bought the house before you married. Maybe you refinanced and your spouse's name never made it onto the deed. Maybe a friend told you that if you die first, your spouse will "have to go through probate." You want to know how to add your spouse to the deed and whether you should.
 
-This article gives the steps, the wording that matters in Illinois and New Jersey, and the situations where adding a spouse backfires. For the broader choices on how to hold a home, see our [property and assets guide](/learn/property-and-assets).
+This article gives the steps, the wording that matters in Illinois, and the situations where adding a spouse backfires. For the broader choices on how to hold a home, see our [property and assets guide](/learn/property-and-assets).
 
 ## How do you add a spouse to a house deed?
 
@@ -46,18 +45,18 @@ You sign a new deed, you do not amend the old one. The new deed names you as the
 4. **Draft the deed with the survivorship wording.** The language that creates the entireties tenancy is not optional in Illinois.
 5. **Sign before a notary.** The owner on the old deed must sign. A spouse who is not an owner does not need to sign to receive it, but many attorneys have both sign to waive other claims.
 6. **Complete the transfer-tax form.** A gift between spouses is exempt, but the exemption has to be claimed on the form the county or state requires.
-7. **Record the deed** with the county recorder in Illinois (in Cook County, the County Clerk's recordings division) or the county clerk in New Jersey. Pay the recording fee listed in the county schedule.
+7. **Record the deed** with the county recorder (in Cook County, the County Clerk's recordings division). Pay the recording fee listed in the county schedule.
 8. **Tell the lender, the insurance company and the assessor.** Ask the insurer to add your spouse as an insured.
 
 A deed that is signed but never recorded can fail against a later buyer or creditor. Check that the recorded copy arrives and keep it with your estate documents.
 
-## What does the deed have to say in Illinois and New Jersey?
+## What does the deed have to say in Illinois?
 
-The wording differs, and a deed that follows the wrong state's habits can give you a result you did not intend.
+The wording decides the result, and a deed that follows another state's habits can give you an outcome you did not intend.
 
 In **Illinois**, a conveyance to two people creates a tenancy in common unless the deed expressly declares otherwise. To get survivorship, the deed must say the two hold "in joint tenancy" or, for spouses holding their homestead, "as tenants by the entirety." Without that wording the house does not pass to the survivor automatically. Read more in our article on [Illinois joint tenancy and tenancy by the entirety](/learn/illinois/illinois-joint-tenancy-and-tenancy-by-the-entirety).
 
-In **New Jersey**, a deed to a husband and wife is treated as a tenancy by the entirety by statute, and neither spouse can sever it alone. Even so, a good deed states the tenancy outright so a title company has nothing to question. The rules are in [joint property and tenancy by the entirety in New Jersey](/learn/new-jersey/joint-property-and-tenancy-by-the-entirety-in-new-jersey).
+Tenancy by the entirety in Illinois is limited to a married couple's homestead. Once it is in place, a deed, mortgage or lease of the home is effective only if both spouses sign (765 ILCS 1005/1c), so neither of you can borrow against the house alone. If you later move and set up another homestead together, the old entireties estate turns into a joint tenancy. A deed that tries to create an entireties tenancy for two unmarried people is treated as a joint tenancy instead.
 
 <!-- visual: decision slug=ways-to-hold-title-to-property part=map -->
 
@@ -75,14 +74,14 @@ For most married couples, the answer is no tax today and a small one later. Addi
 
 At the first death, the tax basis of the house steps up on the deceased spouse's half. The survivor's half keeps its old basis. That is a smaller adjustment than if the house had been held solely by the deceased spouse and bequeathed. Our article on [step-up in basis for married couples](/learn/estate-tax/step-up-in-basis-for-married-couples-and-joint-property) shows an example with figures.
 
-Both states generally exempt a no-payment transfer between spouses from their transfer taxes, but the exemption has to be claimed on the transfer form. In practice, the title company or attorney completes it.
+Illinois transfer tax is generally not owed on a deed where the actual consideration is under $100 (35 ILCS 200/31-45), but the exemption has to be claimed on the deed or the transfer declaration. In practice, the title company or attorney completes it.
 
 ## What are the benefits of adding a spouse?
 
 There are three real benefits.
 
 - **Probate avoidance.** The survivor owns the house automatically and records the death certificate to clear title. No court is needed for that asset.
-- **Creditor protection.** In both states, entireties ownership generally protects the home from creditors who have a claim against only one spouse, though not from debts you owe jointly or from federal tax liens.
+- **Creditor protection.** Entireties ownership is often chosen to shield the home from a creditor of only one spouse. It does not reach debts you owe jointly or federal tax liens, and how far it goes in Illinois depends on the debt and the deed, so ask an attorney to look at both.
 - **Clear title for the survivor.** The surviving spouse does not need letters of office or an heirship finding to prove ownership. A death certificate and a short affidavit are normally enough for the recorder and a future buyer.
 
 ## When should you not add your spouse?

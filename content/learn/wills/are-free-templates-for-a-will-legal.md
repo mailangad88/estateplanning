@@ -1,26 +1,26 @@
 ---
-title: "Are free templates for a will legal in Illinois and New Jersey?"
-description: "A free template or kit can make a legal will if you sign it correctly. See what Illinois and New Jersey require, where free forms go wrong, and a checklist."
-updated: "2026-10-26"
+title: "Are free templates for a will legal in Illinois?"
+description: "A free template or kit can make a legal will if you sign it correctly. See what Illinois requires, where free forms go wrong, and a checklist to run first."
+updated: "2026-11-26"
 answer: >-
-  Yes, a free template or store-bought kit can produce a legal will in Illinois or New Jersey, because neither state requires a lawyer. The will must be in writing, signed by an adult of sound mind and witnessed by two people. Most failures come from signing mistakes and from templates that do not fit your family, not from the form itself.
+  Yes, a free template or store-bought kit can produce a legal will in Illinois, because the state does not require a lawyer. The will must be in writing, signed by an adult of sound mind and witnessed by two people. Most failures come from signing mistakes and from templates that do not fit your family, not from the form itself.
 takeaways:
   - "The law cares about how a will is signed, not where the words came from, so a template is legal if the signing rules are met."
-  - "Both states need two witnesses. A notary is optional but makes probate easier."
+  - "Illinois needs two credible witnesses. A notary is optional but makes probate easier."
   - "Free services are usually safe to use, but they do not check whether your answers fit your situation."
   - "Templates fail most often on witnesses, on blank or contradictory clauses, and on assets that a will does not control."
   - "A will kit makes sense for a young single adult with simple wishes. It is a poor fit for minor children, a blended family or a home."
 faqs:
   - q: "Is a will made from a free internet form legally binding?"
-    a: "It is binding if it meets the signing rules of your state, regardless of price. Illinois needs two credible witnesses (755 ILCS 5/4-3) and New Jersey needs two witness signatures (N.J.S.A. 3B:3-2). A printed template that nobody witnessed is just paper."
+    a: "It is binding if it meets the signing rules of your state, regardless of price. Illinois needs two credible witnesses (755 ILCS 5/4-3). A printed template that nobody witnessed is just paper."
   - q: "Are free online services for writing a will safe with my personal information?"
     a: "Safety here means two things: privacy and accuracy. For privacy, read what the site says it does with your data before entering Social Security numbers or account details. For accuracy, remember the service generates a form from your answers and nobody checks it."
   - q: "Can a will kit cause my family problems?"
     a: "It can when the answers are wrong or the signing is sloppy. A common example is a kit will naming one guardian with no backup, or leaving everything to a spouse and then to children with no plan if both die together. Those gaps show up after a death, when you cannot fix them."
   - q: "Do I have to notarize a template will?"
-    a: "No. Neither state makes a notary part of a valid will. A notary comes in for a self-proving affidavit, which lets the court accept the will without tracking down the witnesses. If your template includes one, sign it before the notary at the same sitting."
+    a: "No. Illinois does not make a notary part of a valid will. A notary comes in for a self-proving affidavit, which lets the court accept the will without tracking down the witnesses. If your template includes one, sign it before the notary at the same sitting."
   - q: "Can I just fill in a template by hand?"
-    a: "You can write on a form, but cross-outs and handwritten additions invite disputes. Illinois does not recognize an unwitnessed handwritten will, and New Jersey accepts one only if the signature and material terms are in your handwriting. Print a clean version and sign that."
+    a: "You can write on a form, but cross-outs and handwritten additions invite disputes. Illinois does not recognize an unwitnessed handwritten will, so notes added by hand after signing carry no legal weight. Print a clean version and sign that."
   - q: "What is the fix if I already signed a kit will?"
     a: "Have it read, not rewritten from scratch. A short review can confirm that it was signed correctly and that the clauses do what you think. If gaps appear, a new will or a codicil can repair them."
 related:
@@ -28,7 +28,7 @@ related:
   - "wills/handwritten-and-diy-wills"
   - "wills/how-to-make-a-valid-will"
   - "wills/how-much-does-a-will-cost"
-  - "wills/who-can-witness-a-will-in-illinois-and-new-jersey"
+  - "wills/who-can-witness-a-will-in-illinois"
   - "basics/making-an-estate-plan-without-a-lawyer"
 glossary: ["testator", "self-proving-affidavit", "holographic-will", "executor", "guardian"]
 review: pending
@@ -37,11 +37,11 @@ intent: question
 
 You searched for a free template because a lawyer's fee feels like a lot for a document you hope not to use. That is a reasonable instinct. Whether a free form is legal is the easy part of the question. Whether it does the job you need is the harder one.
 
-Here is how the law treats templates and kits in Illinois and New Jersey, where they usually go wrong, and a short checklist to run before you sign anything you downloaded. For a broader look at writing your own, see our guide to [handwritten and DIY wills](/learn/wills/handwritten-and-diy-wills).
+Here is how Illinois law treats templates and kits, where they usually go wrong, and a short checklist to run before you sign anything you downloaded. For a broader look at writing your own, see our guide to [handwritten and DIY wills](/learn/wills/handwritten-and-diy-wills).
 
 ## Is a will made from a template legal?
 
-It is legal when it is signed the way the law requires. Neither state asks who drafted the words. Illinois asks for a will that is in writing, signed by an adult of sound mind and attested by two credible witnesses (755 ILCS 5/4-1 and 4-3). New Jersey asks for a writing, a signature and at least two witnesses (N.J.S.A. 3B:3-1 and 3B:3-2).
+It is legal when it is signed the way the law requires. Illinois does not ask who drafted the words. Illinois asks for a will that is in writing, signed by an adult of sound mind and attested by two credible witnesses (755 ILCS 5/4-1 and 4-3). Our page on [Illinois will requirements](/learn/illinois/illinois-will-requirements) walks through each one.
 
 That means the form is not the risk. A well-made free template and a $400 draft can both be valid. What invalidates a will is a missing witness, a signer who did not have capacity, or pages that were swapped.
 
@@ -62,7 +62,7 @@ The price of an online service varies, and "free" often means free to draft with
 
 Most problems show up after a death, which is the worst time to find them. These are the failures we see.
 
-- **Signing errors.** The testator signs alone, a witness signs a week later, or only one person witnesses. See [who can witness a will](/learn/wills/who-can-witness-a-will-in-illinois-and-new-jersey).
+- **Signing errors.** The testator signs alone, a witness signs a week later, or only one person witnesses. See [who can witness a will](/learn/wills/who-can-witness-a-will-in-illinois).
 - **No backup choices.** The form names one executor and one guardian. If that person dies, refuses or moves away, the court picks.
 - **Wrong assumptions about the home.** A will does not override a beneficiary form, a joint account or a deed that names a co-owner. Our article on [which document controls](/learn/wills/which-controls-will-trust-joint-account-or-beneficiary-form) explains the order.
 - **Clauses that clash.** A template says "everything to my spouse," and a pasted-in paragraph says "$10,000 to my niece." A court has to guess which one wins.
@@ -84,7 +84,7 @@ It is a weak fit if you have minor children, own a home, have a child with a dis
 
 Run through this checklist. It takes ten minutes and covers most of the real failures.
 
-1. Does the form fit your state, Illinois or New Jersey, or does it say it is for "all states"?
+1. Is the form written for Illinois, or does it say it is for "all states"?
 2. Have you named a backup executor, a backup guardian and a backup beneficiary?
 3. Have you written down what happens if a child or beneficiary dies before you?
 4. Do your beneficiary forms and account titles match the will? See [beneficiary audit](/learn/beneficiary-designations) for what to look for.
@@ -101,9 +101,9 @@ Usually the draft is free and something else is not. Some sites charge to downlo
 
 The other cost is invisible. A form cannot tell you that the home you listed is owned jointly with your brother, so it will pass to him no matter what the will says. It cannot ask whether your daughter receives disability benefits that an outright gift would put at risk. Those are the questions a person sitting across a table asks, and they are the reason many families end up paying for a second version later. Compare that with the lower price of a short attorney visit, and the gap is often smaller than expected. Our [wills guide](/learn/wills) lists the pieces a complete will should cover.
 
-## What about handwritten additions and state differences?
+## What about handwritten additions?
 
-Do not cross out clauses on a signed will or write notes in the margins. In Illinois, an unwitnessed handwritten will is not recognized. New Jersey is more forgiving, and a document can count as a will if the signature and material provisions are in the testator's handwriting, but that route invites a fight and is not a plan.
+Do not cross out clauses on a signed will or write notes in the margins. In Illinois, an unwitnessed handwritten will is not recognized. A note in the margin was never witnessed, so it does not change the will, and it can start an argument about what you meant. Our page on [handwritten wills in Illinois](/learn/illinois/handwritten-wills-in-illinois) explains the rule.
 
 If you change your mind, make a new will or sign a properly witnessed codicil. Our guide to [changing a will and codicils](/learn/wills/changing-a-will-and-codicils) explains both.
 

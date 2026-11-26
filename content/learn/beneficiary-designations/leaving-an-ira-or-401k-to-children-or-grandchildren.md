@@ -1,7 +1,7 @@
 ---
 title: "Leaving an IRA or 401(k) to your children or grandchildren instead of your spouse"
 description: "Can you skip your spouse and name children or grandchildren on an IRA or 401(k)? See spouse consent rules, what heirs can do, Roth taxes and rollover limits."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   You can name your children or grandchildren on an IRA without your spouse's consent in most cases, but a 401(k) generally requires your spouse's written consent to name anyone else. Non-spouse heirs cannot roll the account into their own IRA. They move it to an inherited IRA and, in most cases, must empty it within 10 years.
 takeaways:
@@ -111,7 +111,7 @@ Often not as safe as the owner's own account. In 2014 the U.S. Supreme Court hel
 
 ## How state law changes this
 
-State law affects spousal rights in community property states, creditor protection for inherited accounts, and state income tax on withdrawals. New Jersey has an inheritance tax that can reach some transfers to non-family beneficiaries. Illinois has an estate tax with a lower threshold than the federal one. Read our overview of [New Jersey estate planning](/estate-planning/new-jersey) and [Illinois estate planning](/estate-planning/illinois) if you live in either state.
+State law affects spousal rights in community property states, creditor protection for inherited accounts, and state income tax on withdrawals. Illinois has an estate tax with a lower threshold than the federal one. Read our overview of [Illinois estate planning](/estate-planning/illinois) and our guide to [Illinois income tax on an inherited IRA or 401(k)](/learn/illinois/do-you-pay-illinois-income-tax-on-an-inherited-ira-or-401k) if you live here.
 
 ## How we can help
 

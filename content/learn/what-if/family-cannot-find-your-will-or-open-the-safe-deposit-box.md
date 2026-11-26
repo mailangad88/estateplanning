@@ -1,7 +1,7 @@
 ---
 title: "What happens if your family cannot find your will or open your safe deposit box?"
 description: "A will nobody knows about can be treated as if it never existed. See how families search, how banks handle a box, and how to make your documents easy to find."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   If no one finds your will, the estate may be settled as though you died without one, and state law decides who inherits. If a will turns up later, it can often still be filed, but distributions already made can be hard to undo. A safe deposit box usually needs a court order or the bank's own process for family members to open it.
 takeaways:
@@ -97,7 +97,7 @@ Marcus had not yet been appointed administrator, so nothing had been sold or pai
 
 ## How state law changes this
 
-States differ on whether a person holding a will must deliver it and how soon, whether the court keeps wills in safekeeping, how a safe deposit box may be opened, how long a later-found will can be admitted, and whether a copy suffices. Some states set a deadline after which a will can no longer be admitted. Our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides are a good place to start, and a local attorney can say how the clerk's office works in practice.
+States differ on whether a person holding a will must deliver it and how soon, whether the court keeps wills in safekeeping, how a safe deposit box may be opened, how long a later-found will can be admitted, and whether a copy suffices. Some states set a deadline after which a will can no longer be admitted. Our [Illinois guide](/estate-planning/illinois) and the page on [filing the original will with the Illinois circuit clerk](/learn/illinois/filing-the-original-will-with-the-illinois-circuit-clerk) are a good place to start, and a local attorney can say how the clerk's office works in practice.
 
 ## How to prevent it
 

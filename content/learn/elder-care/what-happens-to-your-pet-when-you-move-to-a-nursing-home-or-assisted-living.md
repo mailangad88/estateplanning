@@ -1,7 +1,7 @@
 ---
 title: "What happens to your pet when you move into a nursing home or assisted living?"
 description: "Can your pet move into care with you? How to name a caregiver, write a care letter, use a pet trust and handle what Medicaid may say about pet money today."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Many assisted living communities accept small pets and some nursing homes allow them, but plenty do not, so most families need a backup caregiver. Write down who will take the animal, give that person authority and a small budget, and consider a pet trust. If Medicaid is likely, set up money for the pet carefully, because funding it can look like a gift.
 takeaways:
@@ -79,7 +79,7 @@ Give a copy to the vet clinic, the caregiver, your power of attorney agent and t
 
 ## Should you use a pet trust?
 
-A pet trust is a legal arrangement in which a trustee holds money and a caregiver looks after the animal, with instructions the trustee must follow. Both [Illinois](/learn/illinois/pet-trusts-in-illinois) and [New Jersey](/learn/new-jersey/pet-trusts-in-new-jersey) have statutes that allow them, and our general article on [pet trusts](/learn/property-and-assets/pet-trusts) explains how they work.
+A pet trust is a legal arrangement in which a trustee holds money and a caregiver looks after the animal, with instructions the trustee must follow. Illinois has a statute that allows them, covered in our page on [pet trusts in Illinois](/learn/illinois/pet-trusts-in-illinois), and our general article on [pet trusts](/learn/property-and-assets/pet-trusts) explains how they work.
 
 A pet trust is not always necessary. A pet trust usually earns its cost in these cases:
 

@@ -1,9 +1,9 @@
 ---
 title: "What is a certification of trust? What it says, who signs it and what banks must accept"
 description: "A certification of trust proves the trust exists and who the trustee is without showing the whole document. See what it holds and what to do if a bank refuses."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
-  A certification of trust is a short signed statement that proves a trust exists, names the current trustee, and lists the trustee's powers, without revealing who gets what. Banks, brokerages and title companies use it in place of the full trust. Both Illinois and New Jersey have trust statutes that allow it, and a business that relies on it is generally protected.
+  A certification of trust is a short signed statement that proves a trust exists, names the current trustee, and lists the trustee's powers, without revealing who gets what. Banks, brokerages and title companies use it in place of the full trust. The Illinois Trust Code allows it, and a business that relies on it is generally protected.
 takeaways:
   - "It is usually one to three pages and leaves out the beneficiaries and distribution terms."
   - "The trustee signs it, and many institutions ask for a notary."
@@ -57,7 +57,7 @@ What stays out is the heart of the plan: the beneficiaries, the shares, the ages
 
 ## Does the law require banks to accept it?
 
-Both states have a statute that says a business can rely on a proper certification, and that protects the business if the facts turn out to be wrong, as long as it did not know better. New Jersey enacted the Uniform Trust Code, and Illinois has its own Trust Code with a similar provision. The details, such as what the certification must contain and how it must be signed, differ from state to state, so the form should be written to fit the state where the trust is administered.
+Illinois has a statute that says a business can rely on a proper certification, and that protects the business if the facts turn out to be wrong, as long as it did not know better. It sits in the Illinois Trust Code, which protects a person who relies on a certification without actual knowledge that it is wrong (760 ILCS 3/1013). The details, such as what the certification must contain and how it must be signed, differ from state to state, so the form should be written to fit the state where the trust is administered.
 
 The statutes also include a second protection for you. A person who asks for the whole trust document after receiving a proper certification can be liable for damages if the court finds the demand was not made in good faith. Most banks know this, but internal policies lag. In practice, the message "our state trust code lets you rely on this" works better when it comes from your attorney's letter than from your own memory of a statute.
 

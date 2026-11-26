@@ -1,13 +1,13 @@
 ---
 title: "Is there a reading of the will? How families really learn what they inherit"
-description: "Movies show a lawyer reading the will aloud. Real families learn through court filings and notices. See the order of events in Illinois and New Jersey."
-updated: "2026-10-26"
+description: "Movies show a lawyer reading the will aloud. Real families learn through court filings and notices. See the order of events in an Illinois estate, step by step."
+updated: "2026-11-26"
 answer: >-
-  No law requires a reading of the will. In real estates, family members learn what they inherit when the will is filed with the court, when the executor sends formal notice, and when the executor shares a copy. In Illinois, notice goes out within 14 days after the court rules on the will. In New Jersey, the executor notifies beneficiaries within 60 days.
+  No law requires a reading of the will. In real estates, family members learn what they inherit when the will is filed with the court, when the executor sends formal notice, and when the executor shares a copy. In Illinois, notice goes out to heirs and named beneficiaries within 14 days after the court rules on the will.
 takeaways:
   - "A formal reading is a movie habit, not a legal step. An executor may hold a family meeting, but nothing requires it."
   - "The usual order is death, filing the will, a court order admitting it, then written notice to heirs and beneficiaries."
-  - "Illinois requires notice within 14 days after the will is admitted; New Jersey sets a 60-day notice to beneficiaries."
+  - "Illinois requires notice within 14 days after the court admits or denies the will."
   - "Being named in a will gives you a right to notice and to see the will, but not a right to be paid on a date you choose."
   - "A short, planned family meeting with a written summary prevents more arguments than a dramatic reading does."
 faqs:
@@ -24,7 +24,7 @@ faqs:
 related:
   - "after-a-death/can-i-see-the-will-after-someone-dies"
   - "after-a-death/how-long-does-it-take-to-receive-an-inheritance"
-  - "new-jersey/new-jersey-probate-process"
+  - "illinois/notice-to-heirs-and-legatees-in-illinois-probate"
   - "illinois/finding-a-will-after-a-death-in-illinois"
   - "probate/is-probate-public"
   - "wills/contesting-a-will"
@@ -35,7 +35,7 @@ intent: question
 
 In the movies, the family gathers in a wood-paneled office the day after the funeral, the lawyer clears his throat, and the will is read to a room of tense relatives. Somebody gasps. Somebody storms out. It makes good television.
 
-Real estates rarely work that way. This page explains how people actually find out what a will says, in what order, and with what deadlines in Illinois and New Jersey. It belongs to our [wills guide](/learn/wills), and it pairs with the more detailed article on [whether you are entitled to see the will](/learn/after-a-death/can-i-see-the-will-after-someone-dies).
+Real estates rarely work that way. This page explains how people actually find out what a will says, in what order, and with what deadlines in Illinois. It belongs to our [wills guide](/learn/wills), and it pairs with the more detailed article on [whether you are entitled to see the will](/learn/after-a-death/can-i-see-the-will-after-someone-dies).
 
 ## Do wills actually get read aloud?
 
@@ -48,9 +48,9 @@ What the law does require is a trail of paper. The will has to be filed with the
 The sequence below is the typical one. Exact timing depends on the county and how busy the court is.
 
 1. **The will is located.** Someone searches the home, the drafting attorney's office or a safe deposit box. Our page on [finding a will in Illinois](/learn/illinois/finding-a-will-after-a-death-in-illinois) shows what the statute asks of whoever holds it.
-2. **The will is filed.** In Illinois, whoever holds the original must file it with the circuit court clerk right after the death. In New Jersey, the executor or attorney brings it to the county Surrogate, and the Surrogate's guidance says probate and letters happen only after the tenth day following the death.
-3. **The court admits the will.** A judge or Surrogate accepts the will and appoints the executor. At this point the will becomes a court record, discussed in [is probate public](/learn/probate/is-probate-public).
-4. **Formal notice goes out.** Illinois law calls for mailing a copy of the petition and order to each heir and named beneficiary within 14 days after the court admits or denies the will. In New Jersey, the executor has 60 days to notify beneficiaries.
+2. **The will is filed.** In Illinois, whoever holds the original must file it with the circuit court clerk right after the death. The steps are in [filing the original will with the Illinois circuit clerk](/learn/illinois/filing-the-original-will-with-the-illinois-circuit-clerk).
+3. **The court admits the will.** A judge accepts the will and appoints the executor. At this point the will becomes a court record, discussed in [is probate public](/learn/probate/is-probate-public).
+4. **Formal notice goes out.** Illinois law calls for mailing a copy of the petition and order to each heir and named beneficiary within 14 days after the court admits or denies the will. Our page on [notice to heirs and legatees in Illinois probate](/learn/illinois/notice-to-heirs-and-legatees-in-illinois-probate) explains who gets it.
 5. **The executor shares the details.** Many executors send a copy of the will along with the notice. If yours does not, you can ask in writing.
 6. **Distributions come later.** The executor must first pay debts and expenses and wait out the creditor period. Our explanation of [how long it takes to receive an inheritance](/learn/after-a-death/how-long-does-it-take-to-receive-an-inheritance) sets realistic expectations.
 
@@ -60,14 +60,14 @@ The sequence below is the typical one. Exact timing depends on the county and ho
 
 It tells you that probate has opened, who the executor is, and what rights you have. It does not always tell you what you were left. In some counties the notice is a form that lists the case number and a deadline to object. You still have to read the will itself, which is in the court file or enclosed.
 
-In Illinois, the notice also explains the right to ask for formal proof of the will within 42 days after the court's order admitting it. A will contest has a separate deadline of six months after admission; our article on the [Illinois six-month contest deadline](/learn/illinois/illinois-will-contest-six-month-deadline) explains how the two differ. In New Jersey, a person who suspects a problem can file a caveat before the appointment, as the [New Jersey probate process](/learn/new-jersey/new-jersey-probate-process) article describes.
+In Illinois, the notice also explains the right to ask for formal proof of the will within 42 days after the court's order admitting it. A will contest has a separate deadline of six months after admission; our article on the [Illinois six-month contest deadline](/learn/illinois/illinois-will-contest-six-month-deadline) explains how the two differ.
 
 | Question | Typical answer |
 | --- | --- |
 | Who must be told? | Heirs and the people named in the will |
 | Who sends the notice? | The executor or the executor's attorney |
-| When? | Illinois: within 14 days after the court rules. New Jersey: within 60 days. |
-| Where can you read the will? | The court file at the clerk or Surrogate; often a copy comes with the notice |
+| When? | Within 14 days after the court rules on the will |
+| Where can you read the will? | The court file at the circuit clerk; often a copy comes with the notice |
 | Does the notice say what you get? | Sometimes; often you must read the will |
 | When is money paid? | After debts, expenses and taxes, often months later |
 
@@ -85,9 +85,9 @@ Consider Naomi, 54, executor for her father. Her two brothers expected a quick p
 
 ## What if the executor will not share the will?
 
-A filed will is generally open to inspection, so you do not need the executor's permission to read it. Ask the clerk or Surrogate for the file. If the will has not been filed, the person holding it may be breaking the law. In Illinois, willfully hiding a will for 30 days after learning of the death is a felony.
+A filed will is generally open to inspection, so you do not need the executor's permission to read it. Ask the circuit clerk for the file. If the will has not been filed, the person holding it may be breaking the law. In Illinois, willfully hiding a will for 30 days after learning of the death is a felony.
 
-If the executor will not answer questions about the estate, write a short letter asking for the will, the case number and a timeline. If that fails, the remedies in our guides on a [slow or silent executor](/learn/illinois/what-heirs-can-do-about-a-slow-illinois-executor) apply, and the New Jersey version is in the [New Jersey article](/learn/new-jersey/what-new-jersey-heirs-can-do-about-a-slow-or-silent-executor).
+If the executor will not answer questions about the estate, write a short letter asking for the will, the case number and a timeline. If that fails, the remedies in our guides on a [slow or silent executor](/learn/illinois/what-heirs-can-do-about-a-slow-illinois-executor) apply.
 
 ## What mistakes do families make when they hear the news?
 

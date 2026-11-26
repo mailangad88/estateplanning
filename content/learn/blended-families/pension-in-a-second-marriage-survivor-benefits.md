@@ -1,14 +1,14 @@
 ---
 title: "What happens to your pension if you remarry? Survivor benefits and a first spouse's claim"
 description: "Who gets your pension when you remarry: the joint-and-survivor rule, a first spouse's QDRO, Social Security survivor benefits and what children can expect."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   If you are married when you retire, a private pension must usually pay your current spouse a survivor benefit unless that spouse signs a written waiver. A first spouse may also hold a court order dividing the pension. Pension money often cannot go to your children at all, so they are protected through other assets, not the pension.
 takeaways:
   - "Most private pensions pay a joint-and-survivor annuity to a current spouse unless the spouse waives it in writing."
   - "A divorce order, called a QDRO, can give a first spouse a share that comes ahead of a second spouse."
   - "Many pensions stop at the death of the last person covered, leaving nothing for children."
-  - "Government pensions, including those in Illinois and New Jersey, follow their own rules about who qualifies as a survivor."
+  - "Government pensions, including Illinois systems such as IMRF, TRS, SURS and SERS, follow their own rules about who qualifies as a survivor."
   - "The election is made when you retire, so the time to compare options is before the paperwork arrives."
 faqs:
   - q: "Can I name my children as beneficiaries of my pension instead of my new spouse?"
@@ -24,7 +24,6 @@ faqs:
 related:
   - "blended-families/retirement-accounts-in-a-second-marriage"
   - "illinois/illinois-pension-survivor-benefits-imrf-trs-surs-sers"
-  - "new-jersey/new-jersey-pension-survivor-benefits-pers-tpaf-pfrs"
   - "after-a-death/claiming-life-insurance-pension-and-va-survivor-benefits"
   - "blended-families/life-insurance-in-a-blended-family"
 glossary: ["beneficiary", "trust", "marital-deduction"]
@@ -62,11 +61,11 @@ If your divorce agreement divided the pension but no order was ever sent to the 
 
 A lump sum, where a plan offers one, changes the picture entirely. Rolled into an IRA, the money can be left to anyone, though a spouse's rights depend on the type of account. See [retirement accounts in a second marriage](/learn/blended-families/retirement-accounts-in-a-second-marriage). Taking a lump sum gives up a lifetime income that cannot run out, which is a serious trade-off for a spouse who depends on it.
 
-## What about government pensions in Illinois and New Jersey?
+## What about government pensions in Illinois?
 
 Public plans are not covered by the federal rules above, so each system sets its own definition of a survivor, its own options at retirement and its own treatment of a divorce order. Teachers, police, firefighters and state workers belong to different systems, and the forms differ.
 
-Our pages on [Illinois pension survivor benefits](/learn/illinois/illinois-pension-survivor-benefits-imrf-trs-surs-sers) and [New Jersey pension survivor benefits](/learn/new-jersey/new-jersey-pension-survivor-benefits-pers-tpaf-pfrs) cover the main systems. Read the plan's own member handbook before you rely on any summary, ours included, because eligibility often depends on when you married and how long.
+In Illinois, IMRF, TRS, SURS and SERS each have their own forms. A spouse who wants an IMRF surviving spouse pension must be the only primary beneficiary on the member's form, and TRS can pay a refund of contributions and survivor benefits to different people. Our page on [Illinois pension survivor benefits](/learn/illinois/illinois-pension-survivor-benefits-imrf-trs-surs-sers) covers the main systems. Read the plan's own member handbook before you rely on any summary, ours included, because eligibility often depends on when you married and how long.
 
 ## Will remarriage affect Social Security survivor benefits?
 

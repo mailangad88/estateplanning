@@ -1,7 +1,7 @@
 ---
 title: "What happens if you have two wills that conflict?"
 description: "Two signed wills, one estate. See how a court decides which one controls, when the older will survives, and how to clean up before your family has to ask."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Usually the later valid will controls. If it says it revokes earlier wills, the old one is cancelled completely. If it says nothing, the court reads the two together and the newer will wins only where they clash. The picture changes if the newer will is challenged, cannot be found, or was written to sit beside the old one on purpose.
 takeaways:
@@ -98,7 +98,7 @@ None of these is rare. Each can leave two documents that both look official.
 
 ## How state law changes this
 
-States agree on the broad rule that a later valid will beats an earlier one. They differ on details that matter in a fight: whether a will can be revoked by a later inconsistent writing, how a destroyed original is treated, whether a handwritten will counts, whether an old will can be revived, and how long heirs have to object. Some states let the court admit a document that missed a formality if there is strong proof the person meant it to be a will, and others do not. Check our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides and ask an attorney about local rules.
+States agree on the broad rule that a later valid will beats an earlier one. They differ on details that matter in a fight: whether a will can be revoked by a later inconsistent writing, how a destroyed original is treated, whether a handwritten will counts, whether an old will can be revived, and how long heirs have to object. Some states let the court admit a document that missed a formality if there is strong proof the person meant it to be a will, and others do not. Check our [Illinois guide](/estate-planning/illinois) and [changing or revoking a will in Illinois](/learn/illinois/changing-or-revoking-a-will-in-illinois), and ask an attorney about local rules.
 
 ## How to prevent it
 

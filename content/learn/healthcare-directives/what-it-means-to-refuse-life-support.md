@@ -1,7 +1,7 @@
 ---
 title: "What it means to refuse life support: CPR, ventilators and feeding tubes explained"
 description: "Plain explanations of CPR, ventilators, feeding tubes and DNI orders, what refusing each one means, and how to record your choice so it is actually followed."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Refusing life support means declining a specific treatment, such as CPR, a breathing machine or a feeding tube, that would only prolong dying or keep you alive in a condition you would not accept. You can decide each treatment separately, and you can stop one that has started. Comfort care continues, and your choices must be written down or known to your agent.
 takeaways:
@@ -104,7 +104,7 @@ If your wishes differ from your family's, say so in the document. Their disagree
 
 ## How state law changes this
 
-States use different forms and wording, and some limit what an agent may do about artificial feeding or what a directive may say during pregnancy. Some recognize a physician's order for out-of-hospital DNR on specific forms only. Many accept directives from other states, though not all treat them identically, as in [do advance directives work in other states](/learn/healthcare-directives/do-advance-directives-work-in-other-states). Start with your state's guide, such as [Illinois](/estate-planning/illinois) or [New Jersey](/estate-planning/new-jersey), and ask an attorney about local wording.
+States use different forms and wording, and some limit what an agent may do about artificial feeding or what a directive may say during pregnancy. Some recognize a physician's order for out-of-hospital DNR on specific forms only. Many accept directives from other states, though not all treat them identically, as in [do advance directives work in other states](/learn/healthcare-directives/do-advance-directives-work-in-other-states). Illinois readers can start with our [Illinois guide](/estate-planning/illinois) and ask an attorney about local wording.
 
 ## How we can help
 

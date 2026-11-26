@@ -1,7 +1,7 @@
 ---
 title: "Where to keep your power of attorney after you sign it: copies, successor agent and recording"
-description: "Signed a power of attorney? Where to keep the original, who gets copies, whether to record it and how to name a successor agent in Illinois or New Jersey."
-updated: "2026-10-26"
+description: "Signed a power of attorney? Where to keep the original, who gets copies, whether to record it and how to name a successor agent in Illinois."
+updated: "2026-11-26"
 answer: >-
   After you sign a power of attorney, keep the original where your agent can reach it, such as a fireproof home file, not a locked safe deposit box. Give your agent and successor agent copies now, give a copy to your bank, and ask your doctor's office for your health care form to be filed. Record it at the county only if it will be used for a real estate deed.
 takeaways:
@@ -16,7 +16,7 @@ faqs:
   - q: "Can I keep my power of attorney in a safe deposit box?"
     a: "You can, but think about who has the key. If only you can open the box and you are in a hospital, the document is locked away. If you use one, name your agent as an authorized box user or keep a certified copy elsewhere."
   - q: "Do I need to register my power of attorney with the state?"
-    a: "No. Neither Illinois nor New Jersey keeps a registry for a financial power of attorney, and it is not filed with a court. Some states have optional registries, so a form from another state may mention one that does not apply here."
+    a: "No. Illinois does not keep a registry for a financial power of attorney, and it is not filed with a court. Some states have optional registries, so a form from another state may mention one that does not apply here."
   - q: "Should my backup agent get a copy of the power of attorney too?"
     a: "Tell your backup agent where the original is, and consider giving them a copy marked as a copy. A successor who cannot find the document when the first agent steps aside loses days, and a backup who lives far away needs to know how to reach it."
   - q: "What do I do with an old power of attorney when I sign a new one?"
@@ -29,7 +29,6 @@ related:
   - "basics/how-to-organize-your-estate-planning-documents"
   - "healthcare-directives/where-to-keep-your-advance-directive"
   - "illinois/illinois-power-of-attorney-for-property"
-  - "new-jersey/new-jersey-power-of-attorney"
 glossary: ["power-of-attorney", "durable-power-of-attorney", "agent", "principal"]
 review: pending
 intent: question
@@ -41,7 +40,7 @@ Most problems with a power of attorney show up after it is signed, not before. A
 
 ## Where should you keep the original power of attorney?
 
-Keep it in a place you can reach and your agent can reach, such as a fireproof document box at home, with a note in your files about where it is. The Illinois statutory form materials suggest keeping the original safe and giving copies to the agent and the bank. The principle holds in New Jersey too.
+Keep it in a place you can reach and your agent can reach, such as a fireproof document box at home, with a note in your files about where it is. The Illinois statutory form materials suggest keeping the original safe and giving copies to the agent and the bank.
 
 The common mistake we see is the safe deposit box. A box rented in your name alone can be opened by nobody else without a court order or a signature card, and a family in a crisis may have to petition a court to get to the document that was meant to avoid one. If you like a bank box, add your agent as a joint user, or keep a copy at home.
 
@@ -72,19 +71,19 @@ If your power is a springing one that begins on a future event, you may not want
 
 ## Can a copy be used, or does the agent need the original?
 
-In most dealings a photocopy works. New Jersey's Act says that third parties may rely on a photocopy of the signed original or a certified copy (N.J.S.A. 46:2B-8.11). Illinois practice is similar, but a financial institution has its own policy, and a title company or county recorder is the most likely to ask for an original or a certified copy.
+In most dealings a photocopy works. A financial institution has its own policy, though, and a title company or county recorder is the most likely to ask for an original or a certified copy. If a bank pushes back on a copy, our page on [what to do when a bank refuses an Illinois power of attorney](/learn/illinois/bank-refuses-an-illinois-power-of-attorney) lists the steps.
 
 A certified copy is a copy that your attorney or a notary certifies as true. Ask for two or three at the signing. They cost little then and are hard to get when the principal cannot attend.
 
 ## Does a power of attorney need to be recorded?
 
-No, not as a general rule. A financial power of attorney is not filed with a court, and neither state keeps a registry for it. The exception is real estate. If your agent will sign a deed or a mortgage for you, the county recorder or title company often wants the power of attorney recorded with the deed in the county where the land sits. That is a function of the transaction, not of the document. For the closing steps see [power of attorney and real estate](/learn/power-of-attorney/power-of-attorney-and-real-estate).
+No, not as a general rule. A financial power of attorney is not filed with a court, and Illinois does not keep a registry for it. The exception is real estate. If your agent will sign a deed or a mortgage for you, the county recorder or title company often wants the power of attorney recorded with the deed in the county where the land sits. That is a function of the transaction, not of the document. For the closing steps see [power of attorney and real estate](/learn/power-of-attorney/power-of-attorney-and-real-estate).
 
 Recording is public. A recorded power of attorney becomes a public record, so do it when it is needed for a sale, not as a habit.
 
 ## Should you name a successor agent?
 
-Yes, almost always. If your agent dies, becomes ill, resigns or divorces you, the power ends in practice unless someone else is named. Without a backup, your family may need a court-appointed guardian, which is the situation you were trying to avoid. Illinois's statutory form has a line for successor agents, and its steps for signing recommend choosing at least one successor. New Jersey allows several agents and spells out what happens to the rest when one drops out, unless the document says otherwise.
+Yes, almost always. If your agent dies, becomes ill, resigns or divorces you, the power ends in practice unless someone else is named. Without a backup, your family may need a court-appointed guardian, which is the situation you were trying to avoid. Illinois's statutory form has a line for successor agents, and its steps for signing recommend choosing at least one successor. A successor steps in when the first agent dies, resigns, becomes incapacitated, is unqualified or declines to serve (755 ILCS 45/2-10.3). Our page on [co-agents and successor agents in Illinois](/learn/illinois/co-agents-and-successor-agents-in-illinois) explains the default rules.
 
 How to choose:
 

@@ -1,7 +1,7 @@
 ---
 title: "Estate planning by life stage: what to put in place and when"
 description: "What to sign and review at each stage of life, from turning 18 to new parenthood, marriage, divorce, retirement and widowhood, with links to the guides that fit you."
-updated: "2026-10-06"
+updated: "2026-11-26"
 answer: >-
   The right estate plan depends on your stage of life, not just your wealth. Young adults need healthcare and
   financial powers of attorney, new parents need a will naming a guardian, couples need updated beneficiaries,
@@ -163,7 +163,7 @@ If you are raising a grandchild without a court order, [grandparents raising gra
 
 New parents choosing coverage can use [term life insurance when you have a baby](/learn/life-stages/term-life-insurance-when-you-have-a-baby) to size the policy and name the right beneficiary.
 
-For aunts and uncles without children, [leaving an inheritance to nieces and nephews](/learn/life-stages/leaving-an-inheritance-to-nieces-and-nephews) covers naming, minors and New Jersey inheritance tax.
+For aunts and uncles without children, [leaving an inheritance to nieces and nephews](/learn/life-stages/leaving-an-inheritance-to-nieces-and-nephews) covers naming, minors and the Illinois estate tax.
 
 If you are deciding whether to keep the family home, [should you sell the house after your spouse dies](/learn/life-stages/should-you-sell-the-house-after-your-spouse-dies) covers the two-year tax rule and title steps.
 

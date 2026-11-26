@@ -1,7 +1,7 @@
 ---
 title: "How long does it take to set up a living trust? A realistic timeline"
 description: "A living trust usually takes a few weeks to draft and sign, then more time to fund. See each stage, what slows it down, and a timeline you can plan around."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Drafting and signing a living trust with an attorney usually takes two to six weeks from the first meeting. Funding it, meaning retitling the house and accounts, adds another few weeks and is the part that most often drags. A trust is not finished until the funding is done, so plan on one to three months in total.
 takeaways:
@@ -38,7 +38,7 @@ Here is a stage-by-stage timeline, what typically slows each stage, and how to s
 
 ## How long does each stage take?
 
-A typical timeline for a married couple in Illinois or New Jersey with a house, bank accounts and retirement accounts looks like this. These are planning ranges based on how the work usually flows, not promises. A complicated family or an out-of-state property stretches them.
+A typical timeline for a married couple in Illinois with a house, bank accounts and retirement accounts looks like this. These are planning ranges based on how the work usually flows, not promises. A complicated family or an out-of-state property stretches them.
 
 | Stage | What happens | Typical time |
 |---|---|---|
@@ -65,7 +65,7 @@ A good first-meeting habit is to bring a one-page list: your assets with approxi
 
 ## What happens at the signing?
 
-Signing is a single meeting of roughly an hour. You review the final documents, sign the trust, and sign the pour-over will, power of attorney and health care directive in front of a notary and, for the will, witnesses. Illinois and New Jersey have their own formalities for each document, so the attorney's office runs the ceremony. See [signing, notary and witnesses for a trust](/learn/trusts/trust-signing-notary-witnesses-and-where-to-keep-the-documents) for what to expect.
+Signing is a single meeting of roughly an hour. You review the final documents, sign the trust, and sign the pour-over will, power of attorney and health care directive in front of a notary and, for the will, witnesses. Illinois has its own formalities for each document, so the attorney's office runs the ceremony. See [signing, notary and witnesses for a trust](/learn/trusts/trust-signing-notary-witnesses-and-where-to-keep-the-documents) for what to expect.
 
 Do not skip anything here to save time. A trust that is not properly signed or notarized can be rejected by a bank or title company years later, when you are not around to fix it.
 

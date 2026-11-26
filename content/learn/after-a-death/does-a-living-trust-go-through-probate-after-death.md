@@ -1,7 +1,7 @@
 ---
 title: "Does a living trust go through probate after death? What still needs a court and what does not"
-description: "Assets titled in a living trust skip probate, but anything left outside it may not. See what needs a court in Illinois or New Jersey and how to sort it."
-updated: "2026-10-26"
+description: "Assets titled in a living trust skip probate, but anything left outside it may not. See what still needs an Illinois court and how to sort it."
+updated: "2026-11-26"
 answer: >-
   No, assets properly titled in a living trust do not go through probate; the successor trustee manages and distributes them without a court. But probate may still be needed for anything the person owned in their own name at death, usually through a pour-over will. Small amounts can often use an affidavit instead. The trustee's first job is to sort which assets are inside the trust and which are not.
 takeaways:
@@ -20,7 +20,7 @@ faqs:
   - q: "Can beneficiaries be paid before the stray asset is collected?"
     a: "Often yes, with care. The trustee can distribute most of the trust and keep a reserve for expenses and for what the pour-over will may bring in. Paying everything out before the debts are known risks having to ask beneficiaries to give money back."
   - q: "Does a trust protect my estate from inheritance tax?"
-    a: "No. Death taxes apply to what a person owned and controlled at death, whether it sits in a trust, a will or an account. New Jersey's inheritance tax and Illinois's estate tax can both reach trust assets."
+    a: "No. Death taxes apply to what a person owned and controlled at death, whether it sits in a trust, a will or an account. The Illinois estate tax, which applies to estates over $4 million, counts trust assets too."
 related:
   - "after-a-death"
   - "after-a-death/trust-administration"
@@ -33,7 +33,7 @@ review: pending
 intent: question
 ---
 
-Rosa, 52, became successor trustee of her mother's living trust in Elizabeth, New Jersey. The trust held the house and two bank accounts, and Rosa expected to close it all without a court. Three weeks in, she opened an old envelope and found a brokerage statement for $27,000 in her mother's name alone. The trust did not own it. Rosa asked the question this page answers: does she now have to open probate?
+Rosa, 52, became successor trustee of her mother's living trust in Naperville, in DuPage County, Illinois. The trust held the house and two bank accounts, and Rosa expected to close it all without a court. Three weeks in, she opened an old envelope and found a brokerage statement for $27,000 in her mother's name alone. The trust did not own it. Rosa asked the question this page answers: does she now have to open probate?
 
 The short answer is that the trust avoids probate for what is inside it, and the outside piece needs its own treatment. This page explains how to sort the two, which assets usually need a court, what a pour-over will does, and what the trustee can do in the meantime. For the full trustee roadmap, read our [trust administration guide](/learn/after-a-death/trust-administration), and for the bigger picture see the [after-a-death guide](/learn/after-a-death).
 
@@ -75,14 +75,14 @@ Two points trip families up. First, the pour-over will is a court document. It m
 
 An executor can be the same person as the successor trustee, and often is. That does not merge the jobs. The executor deals with the probate estate under the court's rules, and the trustee deals with the trust under the trust document.
 
-## A worked example in two states
+## A worked example in Illinois
 
-Return to Rosa. The $27,000 brokerage account is in her mother's name alone. She is a New Jersey resident, and the sole beneficiaries are her and her brother, who are next of kin.
+Return to Rosa. The $27,000 brokerage account is in her mother's name alone. Her mother lived in Illinois, and the sole beneficiaries are Rosa and her brother, who are next of kin.
 
-- **New Jersey.** The Surrogate's small estate affidavit route allows $20,000 for next of kin and $50,000 for a surviving spouse or partner. The $27,000 is above the next-of-kin limit, and there is no spouse, so Rosa likely needs a formal or informal probate case for the account. The pour-over will would then send the proceeds into the trust. See [New Jersey's small estate affidavit](/learn/new-jersey/new-jersey-small-estate-affidavit) for the rules and forms.
-- **Illinois.** The same facts in Illinois would likely fit the small estate affidavit, which as of 2026 covers up to $150,000 of personal property and does not reach real estate. Rosa could collect the account without a case, deposit the money in the trust account and distribute as the trust says. See [Illinois's small estate affidavit](/learn/illinois/illinois-small-estate-affidavit).
+- **The account as it is.** The $27,000 likely fits the Illinois small estate affidavit, which as of 2026 covers up to $150,000 of personal property and does not reach real estate. Rosa could collect the account without a case, deposit the money in the trust account and distribute as the trust says. See [Illinois's small estate affidavit](/learn/illinois/illinois-small-estate-affidavit).
+- **If the stray asset were bigger.** Suppose the envelope had shown $200,000, or a deed to a lake cottage still in her mother's name. The affidavit would not cover either one. Rosa, or whoever the pour-over will names as executor, would open a probate case in the DuPage County circuit court, and the pour-over will would then send the proceeds into the trust.
 
-Same trust, same account, different path. The difference is state law, which is why a trustee should check the local limits before choosing.
+Same trust, different stray asset, different path. That is why a trustee should check the limits before choosing a route.
 
 ## What can the trustee do while probate is pending?
 
@@ -106,7 +106,7 @@ Partly. The trust itself stays private. Our article on [whether trust administra
 
 States differ in four places that matter here: the small estate limits, whether an executor can use informal probate, what a trustee must tell beneficiaries, and the taxes on death.
 
-In Illinois, a living trust avoids probate on what it owns. Read about [Illinois living trusts](/learn/illinois/illinois-living-trusts) and the state guide for [Illinois](/estate-planning/illinois). In New Jersey, a trust keeps assets out of probate, but the state's inheritance tax can still apply to what passes to certain beneficiaries, with a return due eight months after death. See [New Jersey living trusts](/learn/new-jersey/living-trusts-in-new-jersey) and the state guide for [New Jersey](/estate-planning/new-jersey).
+In Illinois, a living trust avoids probate on what it owns. Read about [Illinois living trusts](/learn/illinois/illinois-living-trusts) and the state guide for [Illinois](/estate-planning/illinois). Anything left in the person's own name goes through the circuit court in the county where they lived, unless it fits the small estate affidavit or has a beneficiary form. The Illinois estate tax still counts trust assets for estates over $4 million.
 
 If you are still planning, see [how to avoid probate](/learn/probate/how-to-avoid-probate) for the other tools that keep assets out of court.
 

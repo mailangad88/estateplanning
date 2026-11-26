@@ -3,8 +3,8 @@ import { FIGURES } from "@/config/figures";
 
 /**
  * Copy for the service ("money") pages. Facts about the attorney, fees and services come from
- * src/config/firm.ts (firm, fees, services). State rules are written for Illinois and New Jersey,
- * the only states the site serves, with the statute cited. Nothing here is invented.
+ * src/config/firm.ts (firm, fees, services). State rules are written for Illinois, the only state the
+ * site serves at launch, with the statute cited. Nothing here is invented.
  * Inline syntax: [text](/path) for links and **bold**.
  */
 export type Block =
@@ -38,7 +38,7 @@ export interface MoneyPageData {
   related: { href: string; title: string; kind: string }[];
 }
 
-/** The attorney a visitor is matched with. The site is a referral network, not a law firm. */
+/** The attorney a visitor is matched with. The site is run by the firm in firm.firmLegalName. */
 const MATCHED = "the attorney you are matched with";
 const essentials = packages.find((p) => p.id === "essentials");
 
@@ -97,7 +97,7 @@ const wills: MoneyPageData = {
     {
       h: "How a will is signed",
       blocks: [
-        { p: `A will generally must be in writing, signed by you, and witnessed by adults who are not beneficiaries. In Illinois, a will needs at least two credible witnesses, and no notary is required (755 ILCS 5/4-3). Illinois does not accept an unwitnessed handwritten will. In New Jersey, a will needs two witnesses, or it can be handwritten if your signature and the important parts are in your own handwriting (N.J.S.A. 3B:3-2). A New Jersey will can be made self-proving with an affidavit before a notary or attorney (N.J.S.A. 3B:3-4). See [what makes a will valid](/guides/what-makes-a-will-valid).` },
+        { p: `A will generally must be in writing, signed by you, and witnessed by adults who are not beneficiaries. In Illinois, a will needs at least two credible witnesses, and no notary is required (755 ILCS 5/4-3). Illinois does not accept an unwitnessed handwritten will. See [what makes a will valid](/guides/what-makes-a-will-valid).` },
       ],
     },
     {
@@ -293,7 +293,7 @@ const poa: MoneyPageData = {
     {
       h: "What an agent can and cannot do",
       blocks: [
-        { p: "An agent can pay bills, manage bank and brokerage accounts, file taxes, deal with insurance and Medicare paperwork, sell or manage property, and run a business, to the extent your document allows. The powers are listed in the document, and some, such as making gifts or changing beneficiaries, may need to be spelled out. In New Jersey, an agent cannot make gifts of your property unless the document expressly allows it (N.J.S.A. 46:2B-8.13a). Illinois uses a statutory short form with its own list of powers, including gifts (755 ILCS 45/3-3), and the attorney explains what it covers." },
+        { p: "An agent can pay bills, manage bank and brokerage accounts, file taxes, deal with insurance and Medicare paperwork, sell or manage property, and run a business, to the extent your document allows. The powers are listed in the document, and some, such as making gifts or changing beneficiaries, may need to be spelled out. Illinois uses a statutory short form with its own list of powers, including gifts (755 ILCS 45/3-3), and the attorney explains what it covers." },
         { p: "An agent cannot make a will for you, and the authority ends when you die. After death the executor or successor trustee takes over. An agent is a fiduciary, which means a legal duty to act in your interest and keep your money separate from theirs. See [powers of attorney](/guides/powers-of-attorney)." },
       ],
     },
@@ -327,7 +327,7 @@ const poa: MoneyPageData = {
     {
       h: "Banks sometimes refuse a valid power of attorney",
       blocks: [
-        { p: "It happens, and it is frustrating. A document written to your state's standards, notarized and shown to your bank ahead of time, reduces the chance. In Illinois, a person or bank that refuses a valid power of attorney without reasonable cause can be liable for the damages that causes (755 ILCS 45/2-8). In New Jersey, banks must generally accept a properly signed power of attorney, may refuse only in situations the law lists, and in many cases must give the agent the reason in writing (N.J.S.A. 46:2B-13)." },
+        { p: "It happens, and it is frustrating. A document written to your state's standards, notarized and shown to your bank ahead of time, reduces the chance. In Illinois, a person or bank that refuses a valid power of attorney without reasonable cause can be liable for the damages that causes (755 ILCS 45/2-8)." },
       ],
     },
     {
@@ -382,11 +382,11 @@ const healthcare: MoneyPageData = {
               ["Healthcare power of attorney (proxy, agent, surrogate)", "Names the person who decides medical matters if you cannot"],
               ["Living will", "States your wishes on life support, feeding tubes and comfort care"],
               ["HIPAA authorization", "Lets named people see your medical records, so they can do the job"],
-              ["POLST form (in Illinois, the IDPH Uniform POLST form; in New Jersey, the POLST form)", "A medical order signed by a clinician for people with a serious illness. Not a replacement for an advance directive"],
+              ["POLST form (in Illinois, the IDPH Uniform POLST form)", "A medical order signed by a clinician for people with a serious illness. Not a replacement for an advance directive"],
             ],
           },
         },
-        { p: "State terms vary. Illinois uses a statutory short form power of attorney for health care (755 ILCS 45/4-10) and a separate living will declaration (755 ILCS 35/3). New Jersey calls these documents an advance directive: a proxy directive names your health care representative, and an instruction directive states your wishes (N.J.S.A. 26:2H-55, 26:2H-58)." },
+        { p: "Illinois uses a statutory short form power of attorney for health care (755 ILCS 45/4-10) and a separate living will declaration (755 ILCS 35/3). Other states use other names, such as health care proxy or advance directive, so a document signed elsewhere may look different." },
       ],
     },
     {
@@ -420,7 +420,6 @@ const healthcare: MoneyPageData = {
       h: "Signing rules",
       blocks: [
         { p: "**Illinois.** The statutory health care power of attorney needs one adult witness and no notary. The witness cannot be your agent, a relative of you or your agent, your doctor or certain other health providers, or an owner or operator of the facility where you live (755 ILCS 45/4-10). A living will needs two adult witnesses who would not inherit from you and are not paying for your medical care (755 ILCS 35/3)." },
-        { p: "**New Jersey.** You sign before two adult witnesses, or acknowledge the directive before a notary or attorney. The person you name as your health care representative cannot be a witness (N.J.S.A. 26:2H-56)." },
         { p: "The attorney you are matched with prepares the documents to meet these rules, and explains where to store copies and how to give them to your doctors." },
       ],
     },
@@ -434,9 +433,9 @@ const healthcare: MoneyPageData = {
   faqs: [
     { q: "What is the difference between a living will and a healthcare power of attorney?", a: "A living will describes the treatment you do or do not want. A healthcare power of attorney names a person who decides when situations arise that the living will did not foresee. Together they often work better than either alone. See [living will vs healthcare power of attorney](/compare/living-will-vs-healthcare-power-of-attorney)." },
     { q: "Do I need both?", a: "Many attorneys suggest both. The agent covers situations you could not predict. The living will helps your agent know what you would say." },
-    { q: "Does the document need to be notarized?", a: "In Illinois, no. The statutory health care power of attorney needs one witness, and a living will needs two (755 ILCS 45/4-10, 755 ILCS 35/3). In New Jersey, you can use two witnesses or a notary or attorney instead (N.J.S.A. 26:2H-56)." },
+    { q: "Does the document need to be notarized?", a: "In Illinois, no. The statutory health care power of attorney needs one witness, and a living will needs two (755 ILCS 45/4-10, 755 ILCS 35/3)." },
     { q: "What if my family disagrees with my choices?", a: "Your agent and your written wishes control, subject to the law. Writing it down can prevent arguments, because your family sees that the decision was yours." },
-    { q: "Can doctors ignore my directive?", a: "A doctor may decline, but cannot simply walk away. In Illinois, a provider who will not follow your agent's decision must tell the agent promptly and keep caring for you while the agent arranges a transfer (755 ILCS 45/4-7). In New Jersey, a provider or institution that declines must take reasonable steps toward a timely, respectful transfer (N.J.S.A. 26:2H-65). Give your agent and your doctor copies." },
+    { q: "Can doctors ignore my directive?", a: "A doctor may decline, but cannot simply walk away. In Illinois, a provider who will not follow your agent's decision must tell the agent promptly and keep caring for you while the agent arranges a transfer (755 ILCS 45/4-7). Give your agent and your doctor copies." },
     { q: "I travel. Does my directive work in another state?", a: "Many states honor out-of-state directives that were valid where signed. Carry copies, and consider an update if you move." },
     { q: "What is a HIPAA authorization and why is it separate?", a: "Federal privacy law limits who can see your records. A HIPAA authorization names who may. Without it, your agent may struggle to get information. See [what is a HIPAA release](/blog/what-is-a-hipaa-release-and-why-does-it-belong-in-your-plan)." },
   ],
@@ -481,7 +480,7 @@ const probate: MoneyPageData = {
     {
       h: "Is probate required?",
       blocks: [
-        { p: "Not always. Property passes outside probate when it has a named beneficiary, is held jointly with survivorship, or is in a living trust. Both states offer a simpler route for small estates. In Illinois, a small estate affidavit can be used when the personal property, not counting real estate or vehicles, is $150,000 or less, for deaths on or after August 15, 2025 (755 ILCS 5/25-1). In New Jersey, when there is no will, a surviving spouse or partner can use an affidavit if the whole estate is $50,000 or less, and other heirs if it is $20,000 or less (N.J.S.A. 3B:10-3, 3B:10-4). Figures as of 2026. See [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets) and [can you skip probate for a small estate?](/blog/can-you-skip-probate-for-a-small-estate)" },
+        { p: "Not always. Property passes outside probate when it has a named beneficiary, is held jointly with survivorship, or is in a living trust. Illinois offers a simpler route for small estates: a small estate affidavit can be used when the personal property, not counting real estate or vehicles, is $150,000 or less, for deaths on or after August 15, 2025 (755 ILCS 5/25-1). Figures as of 2026. See [probate vs non-probate assets](/learn/probate/probate-vs-non-probate-assets) and [can you skip probate for a small estate?](/blog/can-you-skip-probate-for-a-small-estate)" },
       ],
     },
     {
@@ -491,7 +490,7 @@ const probate: MoneyPageData = {
           ol: [
             "**File the will and petition** in the probate court in the county where the person lived.",
             "**The court appoints the executor** (the person named in the will) or an administrator if there is no will. They receive official authority papers.",
-            "**Notify heirs and creditors.** Creditors have a limited window to make claims. In Illinois, the deadline is at least six months after the notice is first published, or three months after a known creditor is mailed notice, whichever is later (755 ILCS 5/18-3). In New Jersey, creditors present claims within nine months of the death (N.J.S.A. 3B:22-4).",
+            "**Notify heirs and creditors.** Creditors have a limited window to make claims. In Illinois, the deadline is at least six months after the notice is first published, or three months after a known creditor is mailed notice, whichever is later (755 ILCS 5/18-3).",
             "**Inventory, pay debts and taxes.** The executor values assets, pays bills and files final tax returns.",
             "**Distribute what is left** and close the estate with the court.",
           ],
@@ -502,7 +501,7 @@ const probate: MoneyPageData = {
     {
       h: "How long does it take, and what does it cost?",
       blocks: [
-        { p: "Delays usually come from missing documents, family disputes, real estate that must be sold, or creditor claims. Court filing fees vary by county. In Illinois, the creditor period means most estates stay open at least six months, and attorney fees are not a set percentage: they must be reasonable (755 ILCS 5/27-2). In New Jersey, many executors wait out the nine-month creditor period before the final distribution." },
+        { p: "Delays usually come from missing documents, family disputes, real estate that must be sold, or creditor claims. Court filing fees vary by county. In Illinois, the creditor period means most estates stay open at least six months, and attorney fees are not a set percentage: they must be reasonable (755 ILCS 5/27-2)." },
         { p: "See [how long does probate take?](/learn/probate/how-long-does-probate-take) and try the [probate cost estimator](/tools/probate-cost-estimator) and the [executor workload tool](/tools/executor-workload) for a rough picture." },
       ],
     },
@@ -532,13 +531,13 @@ const probate: MoneyPageData = {
     },
   ],
   faqs: [
-    { q: "How long do I have to open probate?", a: "In Illinois, whoever has the will must file it with the clerk of the circuit court as soon as they learn of the death, even if no probate is needed, and hiding a will for 30 days after learning of the death is a crime (755 ILCS 5/6-1). In New Jersey, wills are probated through the county surrogate's office. In either state, do not wait." },
-    { q: "Can I pay the funeral bill from the person's bank account?", a: "Often the family pays first and is reimbursed by the estate, because accounts may be frozen. Keep every receipt. In both states, reasonable funeral expenses are among the first debts paid from the estate (755 ILCS 5/18-10; N.J.S.A. 3B:22-2)." },
+    { q: "How long do I have to open probate?", a: "In Illinois, whoever has the will must file it with the clerk of the circuit court as soon as they learn of the death, even if no probate is needed, and hiding a will for 30 days after learning of the death is a crime (755 ILCS 5/6-1). Do not wait." },
+    { q: "Can I pay the funeral bill from the person's bank account?", a: "Often the family pays first and is reimbursed by the estate, because accounts may be frozen. Keep every receipt. In Illinois, reasonable funeral expenses are among the first debts paid from the estate (755 ILCS 5/18-10)." },
     { q: "Am I personally responsible for the deceased's debts?", a: "Generally no, with exceptions such as a co-signer, a joint account holder, or community property in some states. Executors who distribute property before paying valid debts can become personally liable, so people commonly wait until the debts are known. See [what happens to debt when someone dies](/learn/probate/dealing-with-debts-in-probate)." },
     { q: "What if there is no will?", a: "The court appoints an administrator, usually a spouse or adult child, and state law decides who inherits. See [what happens if you die without a will](/learn/wills/dying-without-a-will)." },
-    { q: "What if I think the will is invalid, or a sibling is hiding things?", a: "Talk to an attorney soon. Deadlines are short. In Illinois, a will contest must be filed within six months after the will is admitted to probate (755 ILCS 5/8-1). In New Jersey, it is four months after probate, or six months if you lived outside New Jersey at the time (N.J. Court Rule 4:85-1)." },
+    { q: "What if I think the will is invalid, or a sibling is hiding things?", a: "Talk to an attorney soon. Deadlines are short. In Illinois, a will contest must be filed within six months after the will is admitted to probate (755 ILCS 5/8-1)." },
     { q: "Can I avoid probate now that the person has died?", a: "Sometimes. If assets have a beneficiary or are jointly owned, they pass automatically. If the estate qualifies for a small-estate procedure, that may be used. An attorney can help you check." },
-    { q: "Do I have to hire the attorney who drafted the will?", a: "No. You choose the attorney. In Illinois, reasonable fees for the estate's attorney are paid from the estate (755 ILCS 5/27-2). In New Jersey, the estate also commonly pays the executor's legal fees as a cost of administration, and the attorney confirms what applies." },
+    { q: "Do I have to hire the attorney who drafted the will?", a: "No. You choose the attorney. In Illinois, reasonable fees for the estate's attorney are paid from the estate (755 ILCS 5/27-2)." },
     { q: "What happens on the first call, and what will you ask?", a: "You talk with an estate planning attorney, who explains the next steps. Expect questions about the date and county of death, whether there was a will, and a rough list of assets and debts. You do not need paperwork in hand." },
   ],
   ctaTitle: "Prefer to talk first?",
@@ -566,7 +565,7 @@ const trustAdmin: MoneyPageData = {
     {
       h: "Your role in plain terms",
       blocks: [
-        { p: "A trustee is a fiduciary. The law holds you to a high standard: act for the beneficiaries, not yourself; keep trust money separate from yours; keep records; communicate. Trustees are generally allowed to be paid and to hire professionals at the trust's expense. Illinois allows reasonable compensation (760 ILCS 3/708). New Jersey sets commission rates for fiduciaries by statute (N.J.S.A. 3B:18-25). See [choosing a trustee](/learn/trusts/choosing-a-trustee)." },
+        { p: "A trustee is a fiduciary. The law holds you to a high standard: act for the beneficiaries, not yourself; keep trust money separate from yours; keep records; communicate. Trustees are generally allowed to be paid and to hire professionals at the trust's expense. Illinois allows reasonable compensation (760 ILCS 3/708). See [choosing a trustee](/learn/trusts/choosing-a-trustee)." },
       ],
     },
     {
@@ -577,7 +576,7 @@ const trustAdmin: MoneyPageData = {
             "Get certified death certificates.",
             "Find the trust document and all amendments. Read the sections on successor trustees, distributions and special instructions.",
             "Obtain an EIN for the trust, which becomes irrevocable at death, and open a trust account.",
-            "Notify beneficiaries in writing. In Illinois, the trustee sends notice within 90 days after the trust becomes irrevocable (760 ILCS 3/813.1). New Jersey sets no fixed deadline, but the trustee must keep beneficiaries reasonably informed (N.J.S.A. 3B:31-67).",
+            "Notify beneficiaries in writing. In Illinois, the trustee sends notice within 90 days after the trust becomes irrevocable (760 ILCS 3/813.1).",
             "Secure assets: home, vehicles, accounts, digital access.",
             "Hold off on distributions until debts, taxes and claims are understood.",
           ],
@@ -643,7 +642,7 @@ const trustAdmin: MoneyPageData = {
   faqs: [
     { q: "Do I need a lawyer to be a trustee?", a: "Not legally. Practically, many trustees get advice for any trust with real estate, tax issues or disagreement. An hour with an attorney often costs less than a trustee mistake." },
     { q: "Does a living trust avoid probate entirely?", a: "For assets properly titled in the trust, yes. Assets outside it may still need probate. See [probate](/probate) and [funding your trust](/guides/funding-your-trust)." },
-    { q: "Do I have to tell the beneficiaries?", a: "Usually yes. In Illinois, notice is due within 90 days after the trust becomes irrevocable (760 ILCS 3/813.1). In New Jersey, the trustee must keep beneficiaries reasonably informed and answer their requests promptly (N.J.S.A. 3B:31-67)." },
+    { q: "Do I have to tell the beneficiaries?", a: "Usually yes. In Illinois, notice is due within 90 days after the trust becomes irrevocable (760 ILCS 3/813.1)." },
     { q: "Can I pay myself?", a: "Reasonable compensation is generally allowed unless the trust says otherwise, but trustees keep records and are prepared to justify it." },
     { q: "How long will this take?", a: "Simple trusts can finish in months. Real estate sales, taxes and disputes extend it. The timeline above shows a common pattern." },
     { q: "What if a beneficiary is upset or demands money?", a: "Respond in writing, share the trust terms they are entitled to see, and avoid early payments. If a dispute escalates, talk to an attorney before you reply." },
@@ -851,7 +850,7 @@ const aboutAttorney: MoneyPageData = {
   title: "How we choose our attorneys",
   description: `How ${firm.brandName} chooses the estate planning attorneys in its ${SERVED_AND} network, who is responsible for the site, and what to expect when you reach out.`,
   h1: "How we choose our attorneys",
-  answer: `${firm.brandName} is a referral website. We match you with an appropriate estate planning attorney in our ${SERVED_AND} network, based on where you live and what you need.`,
+  answer: `${firm.brandName} is run by ${firm.firmLegalName}. We match you with an appropriate estate planning attorney in our ${SERVED_AND} network, based on where you live and what you need.`,
   sections: [
     {
       h: "How attorneys join the network",
@@ -905,7 +904,7 @@ const aboutAttorney: MoneyPageData = {
     {
       h: "What this site is",
       blocks: [
-        { p: `${firm.brandName} is a referral website, not a law firm. When you contact us, we match you with an appropriate estate planning attorney in our network. That attorney gives the legal advice, and you decide whether to hire them. See [how we work](/legal/how-we-work), the [disclaimer](/legal/disclaimer) and our [editorial policy](/editorial-policy).` },
+        { p: `${firm.brandName} is run by ${firm.firmLegalName}. When you contact us, we match you with an appropriate estate planning attorney in our network. That attorney gives the legal advice, and you decide whether to hire them. See [how we work](/legal/how-we-work), the [disclaimer](/legal/disclaimer) and our [editorial policy](/editorial-policy).` },
       ],
     },
   ],

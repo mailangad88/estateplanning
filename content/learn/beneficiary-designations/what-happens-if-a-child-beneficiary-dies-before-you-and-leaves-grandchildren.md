@@ -1,7 +1,7 @@
 ---
 title: "What happens if a child you named as beneficiary dies before you and leaves grandchildren?"
 description: "If a child named on your IRA, policy or bank form dies first, grandchildren do not automatically inherit. See per stirpes wording, a dollar example and fixes."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   On most beneficiary forms, a child who dies before you simply drops out, and the grandchildren receive nothing unless the form says otherwise. The share goes to your other named beneficiaries, any contingent beneficiary, or the default rule of the account company. To keep a deceased child's share in that child's family, name the grandchildren as contingent beneficiaries or choose per stirpes.
 takeaways:
@@ -35,7 +35,7 @@ intent: scenario
 
 Your three children are named on your IRA, each for a third. Then your oldest dies, leaving two young kids. You may assume those two kids now take their parent's third. On many forms, they do not.
 
-This page explains what usually happens when a named child dies first, how per stirpes wording changes it, and the form-level fixes that keep a deceased child's share in that child's family. It is general education for Illinois and New Jersey readers, not legal advice.
+This page explains what usually happens when a named child dies first, how per stirpes wording changes it, and the form-level fixes that keep a deceased child's share in that child's family. It is general education for Illinois readers, not legal advice.
 
 ## What happens when a beneficiary dies before the account owner?
 
@@ -83,7 +83,7 @@ Yes, in the details. A payable-on-death bank account tends to follow the bank's 
 
 <!-- visual: tool slug=beneficiary-audit -->
 
-Some states have statutes that apply "anti-lapse" rules to certain non-probate transfers, and others apply them only to wills. Illinois and New Jersey have anti-lapse rules for wills, and our article on [when a beneficiary dies first in New Jersey](/learn/new-jersey/when-a-beneficiary-dies-first-in-new-jersey) describes the New Jersey version. Do not assume a statute will rescue a form. The safest course is to write the result you want.
+Some states have statutes that apply "anti-lapse" rules to certain non-probate transfers, and others apply them only to wills. Illinois has an anti-lapse rule for wills: under section 4-11 of the Probate Act, a gift to a descendant who dies first passes to that person's descendants. Our article on [children born after an Illinois will and lapsed gifts](/learn/illinois/children-born-after-an-illinois-will-and-lapsed-gifts) explains it. That rule is written for wills, not beneficiary forms. Do not assume a statute will rescue a form. The safest course is to write the result you want.
 
 ## What goes wrong when the surviving parent is the contingent beneficiary?
 

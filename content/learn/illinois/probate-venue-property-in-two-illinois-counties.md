@@ -1,7 +1,7 @@
 ---
 title: "Which Illinois county handles probate when property is in more than one county"
 description: "Illinois probate is filed in one county, usually where the person lived. See how venue works for land in another county, a cabin or rental, and non-residents."
-updated: "2026-11-01"
+updated: "2026-11-26"
 answer: >-
   An Illinois probate case is filed in one county, generally the county where the person lived at death (755 ILCS 5/5-1). Land or accounts in other Illinois counties do not need a second case. The executor uses certified letters from the home county. If the person lived outside Illinois, the case is filed in a county where Illinois property sits.
 takeaways:
@@ -41,7 +41,7 @@ This page explains how Illinois chooses the county, what to do with land in othe
 
 The proper court is set by the venue section of the Probate Act (755 ILCS 5/5-1). The rule of thumb is simple for an Illinois resident. The estate is opened in the circuit court of the county where the person lived at death. That is called residence or domicile. It is not the county of the executor, the county of the house they were selling or the county of the hospital.
 
-For a non-resident who left property in Illinois, the case goes to a county where that property is located. If property sits in several Illinois counties, the statute gives a way to pick among them, so ask the clerk before you file. Our statewide article on [which county to file probate in](/learn/probate/which-county-do-you-file-probate-in) compares the rules with New Jersey.
+For a non-resident who left property in Illinois, the case goes to a county where that property is located. If property sits in several Illinois counties, the statute gives a way to pick among them, so ask the clerk before you file. Our general article on [which county to file probate in](/learn/probate/which-county-do-you-file-probate-in) explains how venue works when a case could fit more than one place.
 
 | Situation | Where probate is filed | Second Illinois case? |
 |---|---|---|

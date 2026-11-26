@@ -1,7 +1,7 @@
 ---
 title: "Are handwritten wills valid in Illinois?"
 description: "Illinois has no special rule for handwritten wills: yours still needs two witnesses. See what an unwitnessed one means, the intestacy result and how to fix it."
-updated: "2026-11-01"
+updated: "2026-11-26"
 answer: >-
   A handwritten will is valid in Illinois only if it meets the same rules as any other will: it is signed and two credible witnesses watch the signing (755 ILCS 5/4-3). Illinois does not accept an unwitnessed will just because it is in the maker's own handwriting. If it fails, the estate passes under the intestacy rules.
 takeaways:
@@ -56,7 +56,7 @@ The difference is the signing. Here is how common situations come out.
 | Written by hand in a state that allows it, you lived there | Often yes | Illinois may honor it under 755 ILCS 5/7-1 |
 | Written by hand on a phone note or email | No | See our page on electronic wills |
 
-Our article on [witnesses in Illinois and New Jersey](/learn/wills/who-can-witness-a-will-in-illinois-and-new-jersey) shows who is a safe choice.
+Our article on [who can witness a will in Illinois](/learn/wills/who-can-witness-a-will-in-illinois) shows who is a safe choice.
 
 ## What happens if the handwritten will is not valid?
 

@@ -1,7 +1,7 @@
 ---
 title: "Can a special needs trust inherit your IRA or 401(k)? How the payout rules work"
 description: "Naming a disabled child directly on your IRA can cost benefits. Learn how a special needs trust can inherit retirement money and what the payout choices mean."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Yes. A special needs trust can be the beneficiary of an IRA or 401(k), and it is usually safer than naming a person on SSI directly. The trust must be drafted to qualify as a see-through trust, and the beneficiary must meet the tax definition of disabled, which can allow payouts over the beneficiary's lifetime instead of ten years.
 takeaways:
@@ -115,7 +115,7 @@ Other problems:
 
 ## How does state law change this?
 
-The tax rules are federal and apply everywhere. What varies is how states treat the trust itself: whether a state taxes trust income, how the state Medicaid agency treats a third-party trust, and how state court procedures treat trustees. If you live in a state with its own income tax, ask how it taxes accumulated trust income. Our [state estate planning guides](/estate-planning/new-jersey), such as New Jersey's, show how one state handles it, and the [plan finder](/plan-finder) can point you to yours.
+The tax rules are federal and apply everywhere. What varies is how states treat the trust itself: whether a state taxes trust income, how the state Medicaid agency treats a third-party trust, and how state court procedures treat trustees. Illinois has its own income tax, so ask how it taxes accumulated trust income. Our [Illinois estate planning guide](/estate-planning/illinois) is a place to start, and the [plan finder](/plan-finder) can point you to the right next step.
 
 ## How we can help
 

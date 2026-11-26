@@ -1,7 +1,7 @@
 ---
 title: "Power of attorney: protecting yourself if you can't manage your own affairs"
 description: "What a power of attorney is, the types, how to choose an agent, when it ends and how to avoid guardianship. A complete guide to planning for incapacity."
-updated: "2026-10-06"
+updated: "2026-11-26"
 answer: >-
   A power of attorney is a legal document in which you name a trusted person, your agent, to handle your finances or make decisions for you if you cannot. A durable power of attorney keeps working if you become incapacitated, which helps your family avoid a court-supervised guardianship. It ends at your death, when you revoke it, or on the terms you set.
 takeaways:
@@ -192,7 +192,7 @@ To see why an agent cannot skip probate and when one can fund a trust, read [can
 
 Once the document is signed, [where to keep your power of attorney](/learn/power-of-attorney/where-to-keep-your-power-of-attorney-after-you-sign-it) covers originals, copies, recording and successor agents.
 
-If your spouse is your agent and the marriage is ending, [does divorce cancel a power of attorney](/learn/power-of-attorney/does-divorce-cancel-a-power-of-attorney) explains the Illinois and New Jersey rules and how to revoke.
+If your spouse is your agent and the marriage is ending, [does divorce cancel a power of attorney](/learn/power-of-attorney/does-divorce-cancel-a-power-of-attorney) explains the Illinois rule and how to revoke.
 
 If your first choice is a friend, a partner or someone in another state, [who can legally serve as your agent](/learn/power-of-attorney/who-can-legally-serve-as-a-power-of-attorney-agent) answers the eligibility questions.
 

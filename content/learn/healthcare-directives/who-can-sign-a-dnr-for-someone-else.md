@@ -1,9 +1,9 @@
 ---
-title: "Who can sign a DNR for someone else? Agents, surrogates and family in Illinois and New Jersey"
-description: "Who can consent to a do-not-resuscitate order for another person, and can family cancel it? How agents, surrogates and doctors act in Illinois and New Jersey."
-updated: "2026-10-26"
+title: "Who can sign a DNR for someone else? Agents, surrogates and family in Illinois"
+description: "Who can consent to a do-not-resuscitate order for another person, and can family cancel it? How agents, surrogates and doctors act under Illinois law."
+updated: "2026-11-26"
 answer: >-
-  A DNR for someone who cannot decide for themselves is signed by their health care agent, a guardian or a legally recognized surrogate, together with a physician. In Illinois the Health Care Surrogate Act sets the order of surrogates, and in New Jersey a representative signs the POLST with the clinician. Family members outside that chain cannot sign or cancel one on their own.
+  A DNR for someone who cannot decide for themselves is signed by their health care agent, a guardian or a legally recognized surrogate, together with a physician. In Illinois the Health Care Surrogate Act sets the order of surrogates, and the agent or surrogate signs the POLST with a practitioner. Family members outside that chain cannot sign or cancel one on their own.
 takeaways:
   - "A DNR is a medical order, so a doctor, physician assistant or advance practice nurse signs it along with the patient or the patient's decision-maker."
   - "Your health care agent has authority before a court-appointed guardian or the surrogate list."
@@ -14,11 +14,11 @@ faqs:
   - q: "Can I get a DNR if I am young and healthy?"
     a: "You can state that you do not want CPR in a living will, and an adult of sound mind can ask for a DNR order. Doctors and the state forms are written for seriously ill or frail patients, though, and a healthy 30-year-old is usually better served by a health care power of attorney. A medical order is a snapshot of a medical situation."
   - q: "What is an out-of-hospital DNR?"
-    a: "It is a form that tells paramedics and other emergency crews not to start CPR when you are outside the hospital. In Illinois the Uniform POLST form covers that job and Illinois law recognizes out-of-hospital DNR orders sanctioned by other states. In New Jersey the POLST is the portable order."
+    a: "It is a form that tells paramedics and other emergency crews not to start CPR when you are outside the hospital. In Illinois the Uniform POLST form covers that job and Illinois law recognizes out-of-hospital DNR orders sanctioned by other states."
   - q: "Can a hospital write a DNR without asking my family?"
     a: "A hospital physician can write an order after consent from the patient or the legal decision-maker. A physician cannot treat a family member's view as consent unless that person has authority. If you are asked to consent and are unsure whether you have it, ask the nurse who your relative's legal decision-maker is."
   - q: "Can my brother revoke our mother's DNR if he does not agree?"
-    a: "Not unless he is her agent or has surrogate authority and the law allows him to act. A patient with capacity can revoke at any time. A representative in New Jersey can change a POLST for a patient who lost capacity only if the patient authorized it on the form and after consulting the clinician."
+    a: "Not unless he is her agent or has surrogate authority and the law allows him to act. A patient with capacity can revoke at any time. In Illinois, a surrogate can act only within the Health Care Surrogate Act's conditions, and an adult child outside the chain has no say over the order."
   - q: "Does a DNR mean the doctors stop treating her?"
     a: "No. A DNR covers resuscitation if the heart or breathing stops. Antibiotics, pain medicine, oxygen and every other treatment continue unless a separate order says otherwise."
 related:
@@ -28,7 +28,6 @@ related:
   - "healthcare-directives/healthcare-power-of-attorney"
   - "illinois/illinois-polst-and-dnr-orders"
   - "illinois/illinois-health-care-surrogate-act-who-decides"
-  - "new-jersey/new-jersey-polst-form-who-qualifies-who-signs-and-how-it-works"
   - "elder-care/assisted-living-memory-care-and-hospice-who-pays"
 glossary: ["advance-directive", "healthcare-proxy", "agent"]
 review: pending
@@ -37,7 +36,7 @@ intent: question
 
 Your father is 86 and in the hospital with pneumonia. He is confused and cannot follow a conversation. A doctor comes in and asks whether the family wants a DNR on his chart. You and your sister look at each other. Who is supposed to answer, and does it have to be unanimous?
 
-It does not have to be unanimous, but it does have to be the right person. This page, part of our [healthcare directives guide](/learn/healthcare-directives), explains who has authority to sign a do-not-resuscitate order for another adult, what the Illinois and New Jersey laws add, and what to do when relatives disagree.
+It does not have to be unanimous, but it does have to be the right person. This page, part of our [healthcare directives guide](/learn/healthcare-directives), explains who has authority to sign a do-not-resuscitate order for another adult, what Illinois law adds, and what to do when relatives disagree.
 
 ## Who can sign a DNR for someone else?
 
@@ -56,9 +55,9 @@ Illinois' POLST law lets consent for a POLST or DNR-type order come from the ind
 
 The surrogate should follow what the patient would have wanted and use best interests if those wishes are unknown. The Act does not apply if the patient objects, unless the surrogate is a court-appointed guardian. For the priority list, see [who decides under the Illinois Surrogate Act](/learn/illinois/illinois-health-care-surrogate-act-who-decides).
 
-### What does New Jersey say?
+### What does signing look like in Illinois?
 
-New Jersey uses the POLST as the portable order. A form needs the patient's signature if the patient has capacity, or the representative's signature if not, plus the signature and date of the attending physician, physician assistant or advance practice nurse. It does not require a notary or two witnesses. Our article on the [New Jersey POLST](/learn/new-jersey/new-jersey-polst-form-who-qualifies-who-signs-and-how-it-works) walks through the form.
+The patient or the authorized representative prints and signs the consent section, and a qualified practitioner completes the orders with them. The Illinois Department of Public Health says a witness is no longer required, and the line has been removed from the form. Nobody can require the patient to sign one as a condition of admission or care. Our article on [Illinois POLST and DNR orders](/learn/illinois/illinois-polst-and-dnr-orders) walks through the form.
 
 ## Can family members cancel a DNR?
 
@@ -71,13 +70,12 @@ Family members cannot cancel a valid order merely because they disagree. Who can
 | Guardian | Yes, with court rules for end-of-life | Yes, within the same limits |
 | Surrogate (Illinois) | Yes, if the Act's conditions are met | Subject to the same conditions |
 | Adult child without authority | No | No |
-| New Jersey representative | Yes | Only if the patient authorized it on the form |
 
-In New Jersey, if the patient has signed a newer directive that conflicts with the POLST, the clinician must honor the more recent document. In Illinois, the POLST applies when the patient cannot speak for themselves or has no pulse; a patient who can speak can accept or decline care differently from the form.
+In Illinois, the POLST applies when the patient cannot speak for themselves or has no pulse; a patient who can speak can accept or decline care differently from the form.
 
 ## What happens if the family disagrees?
 
-The usual path is an ethics consultation inside the hospital. Both states allow facilities to resolve disputes about capacity or about how a form applies through their own procedures, and a court is the final step. In practice, the process runs like this.
+The usual path is an ethics consultation inside the hospital. Hospitals commonly work through disputes about capacity or about how a form applies using their own procedures, and a court is the final step. In practice, the process runs like this.
 
 1. Ask the attending physician to explain the patient's condition in plain terms, with the specific question the order is deciding.
 2. Ask the nurse or social worker who the legal decision-maker is and request a copy of the directive on file.
@@ -90,9 +88,9 @@ A court case is slow and rarely helps in a crisis. Planning helps more. Our arti
 
 ## An example
 
-Dolores, 79, lives in Trenton, New Jersey. She has advanced heart failure. Two years ago her doctor completed a POLST with her that says no CPR. Her daughter Anita is her named representative. Her son Kevin lives out of state and is upset when he hears about it.
+Dolores, 79, lives in Naperville, in DuPage County. She has advanced heart failure. Two years ago her doctor completed a POLST with her that says no CPR. Her daughter Anita is her named health care agent. Her son Kevin lives out of state and is upset when he hears about it.
 
-During an admission, Dolores is too sleepy to speak. Kevin tells the nurse to take the DNR off. The nurse says Anita is the representative. Kevin has no authority to revoke the order and Dolores did not authorize any representative to change it. The team offers an ethics consultation instead. Kevin joins by phone, hears Dolores's own words from the form and the conversation Anita recalls, and the order stays. Two weeks later Dolores is alert and confirms it herself.
+During an admission, Dolores is too sleepy to speak. Kevin tells the nurse to take the DNR off. The nurse says Anita is the agent. Kevin is not her agent, guardian or surrogate, so he has no authority to revoke the order. The team offers an ethics consultation instead. Kevin joins by phone, hears Dolores's own words from the form and the conversation Anita recalls, and the order stays. Two weeks later Dolores is alert and confirms it herself.
 
 ## What should you ask the doctor before consenting?
 

@@ -1,7 +1,7 @@
 ---
 title: "What happens if you die owing taxes or child support? Who pays and what the estate owes"
 description: "Debts to the IRS, the state or a child support agency are paid from the estate, not by your family. See the payment order, executor risks and what survives."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   If you die owing taxes or child support, the debt is a claim against your estate, not against your children or your spouse. The executor pays it from the probate assets, and government claims get priority attention because an executor who pays others first can be personally liable. Heirs who did not co-sign generally owe nothing from their own money, though some payments, like survivor benefits, can still go to children.
 takeaways:
@@ -107,13 +107,13 @@ If the person has died and you are the executor or a family member:
 
 Federal student loans are discharged when the borrower dies, and a Parent PLUS loan is discharged if either the parent or the student dies. Private loans follow the contract, and a co-signer may owe. See [mortgages, car loans and student loans after death](/learn/probate/what-happens-to-a-mortgage-car-loan-and-student-loans-after-death) for the full picture.
 
-Medicaid recovery is a government claim too, and it is its own subject. Illinois and New Jersey both have estate recovery programs; see [Illinois Medicaid estate recovery](/learn/illinois/illinois-medicaid-estate-recovery) and [New Jersey estate recovery](/learn/new-jersey/new-jersey-estate-recovery).
+Medicaid recovery is a government claim too, and it is its own subject. Illinois has an estate recovery program; see [Illinois Medicaid estate recovery](/learn/illinois/illinois-medicaid-estate-recovery).
 
 ## How does state law change this?
 
-States differ on the order of payment, how long creditors have, and whether child support arrears can be claimed. Illinois and New Jersey both set a deadline for creditor claims. In Illinois, claims are barred two years after death at the latest, and in New Jersey, creditors generally must present claims within nine months. Federal tax claims have their own timing and are not cut off by a state claims window in the same way.
+States differ on the order of payment, how long creditors have, and whether child support arrears can be claimed. Illinois sets a deadline for creditor claims: they are barred two years after death at the latest (755 ILCS 5/18-12). Our page on [how creditor claims work in an Illinois estate](/learn/illinois/how-creditor-claims-work-in-an-illinois-estate) covers the shorter window that opens once notice is published. Federal tax claims have their own timing and are not cut off by a state claims window in the same way.
 
-State death taxes are not the person's own debts, but they are paid from the estate too. New Jersey has an inheritance tax, with a return and payment due eight months after death. Illinois has an estate tax on larger estates. See [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey), and the pages on [New Jersey's inheritance tax](/learn/new-jersey/new-jersey-inheritance-tax) and the [Illinois estate tax](/learn/illinois/illinois-estate-tax).
+State death taxes are not the person's own debts, but they are paid from the estate too. Illinois taxes estates worth more than $4 million, with the return and tax due nine months after death. See our [Illinois guide](/estate-planning/illinois) and the page on the [Illinois estate tax](/learn/illinois/illinois-estate-tax).
 
 ## How we can help
 

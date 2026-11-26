@@ -1,7 +1,7 @@
 ---
 title: "What if my will says to split everything equally but the assets are not equal?"
 description: "A will that says equal shares can still produce unequal results when one child keeps the house, one has an IRA form, or one got money early. Here is why."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   "Equal shares" in a will means equal in value across the probate estate, not equal item by item. The executor must sell, buy out, or divide property in kind to balance the shares. The bigger problem is assets that never pass through the will, such as an IRA or a joint account, and gifts made earlier, which usually are not counted unless the will says so.
 takeaways:
@@ -112,7 +112,7 @@ Siblings can always agree to something different from the will, as long as they 
 
 ## How state law changes this
 
-States differ on advancements, on what a vague phrase like "equal" covers, and on whether a child can force a sale. Illinois and New Jersey both let courts order a partition, a sale of jointly inherited property, when co-owners cannot agree. Probate is the first step in either state, and the [Illinois guide](/estate-planning/illinois) and [New Jersey guide](/estate-planning/new-jersey) cover the process. For other plans that go sideways, browse the [what-if library](/learn/what-if). See also [disinheriting or leaving unequal shares](/learn/wills/disinheriting-or-unequal-shares) and the [wills guide](/learn/wills).
+States differ on advancements, on what a vague phrase like "equal" covers, and on whether a child can force a sale. Illinois lets courts order a partition, a sale of jointly inherited property, when co-owners cannot agree. Probate is usually the first step, and the [Illinois guide](/estate-planning/illinois) covers the process. Our page on [advancements and lifetime gifts in Illinois](/learn/illinois/advancements-lifetime-gifts-and-inheritance-in-illinois) explains when an earlier gift counts against a share. For other plans that go sideways, browse the [what-if library](/learn/what-if). See also [disinheriting or leaving unequal shares](/learn/wills/disinheriting-or-unequal-shares) and the [wills guide](/learn/wills).
 
 ## How we can help
 

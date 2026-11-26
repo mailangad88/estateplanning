@@ -1,7 +1,7 @@
 ---
 title: "What to do when your mother or father dies: the first week and the first month for adult children"
 description: "When your mother or father dies, a few things cannot wait and most can. See the first-week list, how siblings split the work and what to leave alone for now."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   When your mother or father dies, the first week is for the body, the funeral, the home and the surviving parent. Order several death certificates, find the will without moving anything, and leave bank accounts and the house alone until someone has legal authority. Siblings should agree early who speaks to the funeral home, who holds the paperwork, and who sees the lawyer.
 takeaways:
@@ -12,7 +12,7 @@ takeaways:
   - "With siblings, name one point person for each job in writing within the first week."
 faqs:
   - q: "What do I do if my parent died without a will?"
-    a: "Do not worry about finding one for more than a few days. If none exists, state intestacy law decides who inherits, and the court appoints an administrator, often a spouse or an adult child. Our state pages on who inherits without a will in Illinois and New Jersey list the order."
+    a: "Do not worry about finding one for more than a few days. If none exists, state intestacy law decides who inherits, and the court appoints an administrator, often a spouse or an adult child. Our page on who inherits without a will in Illinois lists the order."
   - q: "Do I have to tell Social Security that my parent died?"
     a: "The funeral home usually reports the death, but confirm it. Social Security pays benefits a month behind, so a payment received for the month of death must be returned. A surviving spouse or a minor child may qualify for survivor benefits and should apply promptly."
   - q: "Who gets the call when a parent dies in a hospital or a nursing home?"
@@ -54,7 +54,7 @@ That is the whole first two days. The rest of the list can wait until after the 
 The week is for papers, calls and a family meeting.
 
 1. **Order certified death certificates.** Banks, insurers, pension offices and the motor vehicle agency each want a certified copy. Most families need ten or more. Our article on [how many death certificates you need](/learn/after-a-death/how-many-death-certificates-do-i-need) gives a count by task.
-2. **Find the will without moving it.** Look in the home safe, a file cabinet, or with the parent's lawyer. If you find an original, do not staple, mark or unfold it more than needed. Take it to the county court or Surrogate and ask how to file it, or give it to the executor named in it. A will in a drawer is not a will anyone can act on.
+2. **Find the will without moving it.** Look in the home safe, a file cabinet, or with the parent's lawyer. If you find an original, do not staple, mark or unfold it more than needed. Take it to the circuit court clerk in the county where your parent lived and ask how to file it, or give it to the executor named in it. A will in a drawer is not a will anyone can act on.
 3. **List the people who need to hear.** Employer or former employer, pension payer, Social Security, insurers, landlord or mortgage servicer. [Who to notify after someone dies](/learn/after-a-death/who-to-notify-after-someone-dies) gives the full list.
 4. **Hold a family call.** Agree on roles as below.
 5. **Look after the surviving parent.** If your mother or father lives, check that bills are paid, food is in the house, and someone is staying with them. A death often ends one parent's income, such as a pension or a Social Security check, and starts another.
@@ -87,7 +87,7 @@ These are the mistakes that cause the most harm in the first month.
 
 ## What if there is no will?
 
-If your parent did not leave a will, state law decides who inherits and the court appoints an administrator, who does the executor's job. In both states the surviving spouse and children are first in line, but the shares differ. For Illinois see [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois). For New Jersey see [who inherits without a will in New Jersey](/learn/new-jersey/who-inherits-without-a-will-in-new-jersey).
+If your parent did not leave a will, state law decides who inherits and the court appoints an administrator, who does the executor's job. In Illinois the surviving spouse and children are first in line. A spouse and descendants split the estate half and half (755 ILCS 5/2-1). See [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois).
 
 An example. Priya's father had no will. His assets were a checking account of about $22,000 and a house worth $410,000, both in his name alone. As the three children are his only heirs, each takes an equal one-third by default. No child can sell the house until the court names an administrator. Priya, as the child who offered, petitions for the role after her siblings agree. The court's process, not any one child's decision, gives her authority.
 
@@ -105,7 +105,7 @@ The month is for choosing a lawyer, opening the estate and learning what exists.
 
 ## How does state law change this?
 
-The first-week steps are the same everywhere. The legal pieces differ by state. Illinois requires anyone holding the original will to file it with the circuit court clerk right away, and New Jersey sends the original to the county Surrogate. The small estate shortcuts, the time to file, the creditor claim deadlines and the inheritance or estate taxes are all state matters. Our guides to [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) summarize each.
+The first-week steps are the same everywhere. The legal pieces differ by state. Illinois requires anyone holding the original will to file it with the circuit court clerk right away (755 ILCS 5/6-1). The small estate shortcuts, the time to file, the creditor claim deadlines and the inheritance or estate taxes are all state matters. Our [Illinois estate planning guide](/estate-planning/illinois) summarizes them.
 
 ## How we can help
 

@@ -1,7 +1,7 @@
 ---
 title: "How does an executor value the estate? House, stocks, accounts, cars and personal property at date of death"
 description: "How an executor sets date-of-death values for a house, stocks, bank accounts, cars and belongings, who needs an appraisal, and why the numbers matter for taxes."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   An executor values each asset as of the date of death. Bank accounts use the balance plus interest, stocks use the average of that day's high and low price, a house needs an appraisal, and vehicles and belongings use fair market value. These numbers fill the court inventory, set heirs' tax basis, and decide whether an estate tax return is needed.
 takeaways:
@@ -108,7 +108,7 @@ Appraisals are opinions. If a sibling thinks the house was undervalued, offer to
 
 ## How state law changes this
 
-Some states require a formal appraiser appointed by the court, or ask for appraisals of real estate within a set number of days after appointment. Others let the executor value things with no outside help for a small estate. A handful of states have their own estate or inheritance tax with lower thresholds than the federal one, which makes accurate numbers more important. Our [state death tax checker](/learn/estate-tax/state-estate-and-inheritance-taxes) is a good place to see whether your state applies a tax, and your state's page, such as the [New Jersey guide](/estate-planning/new-jersey), has the local details.
+Some states require a formal appraiser appointed by the court, or ask for appraisals of real estate within a set number of days after appointment. Others let the executor value things with no outside help for a small estate. A handful of states have their own estate or inheritance tax with lower thresholds than the federal one, which makes accurate numbers more important. Our [state death tax checker](/learn/estate-tax/state-estate-and-inheritance-taxes) is a good place to see whether your state applies a tax, and your state's page, such as the [Illinois guide](/estate-planning/illinois), has the local details.
 
 ## How we can help
 

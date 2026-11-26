@@ -1,11 +1,11 @@
 ---
 title: "How to be an executor when you live out of state"
-description: "Yes, an executor can live out of state. See what you can do by phone, what needs a local helper, the Illinois and New Jersey bond rules, and a trip plan."
-updated: "2026-10-26"
+description: "Yes, an executor can live out of state. See what you can do by phone, what needs a local helper, the Illinois bond rule for nonresidents, and a trip plan."
+updated: "2026-11-26"
 answer: >-
-  An executor can live in another state in both Illinois and New Jersey, but expect extra steps: a court may require a bond, New Jersey requires a nonresident to name the Surrogate to accept legal papers, and the house and its contents still need someone on site. Most of the paperwork can be done by mail and phone. Plan one or two trips and hire local help for the rest.
+  An executor of an Illinois estate can live in another state, but expect extra steps: the court may require a bond even if the will waives one, and the house and its contents still need someone on site. Most of the paperwork can be done by mail and phone. Plan one or two trips and hire local help for the rest.
 takeaways:
-  - "Living out of state does not disqualify you. It can add a bond requirement and, in New Jersey, a formal designation for receiving legal papers."
+  - "Living out of state does not disqualify you. It can add a bond requirement, even when the will says no bond is needed."
   - "Banks, the court, the IRS and most agencies can be handled by mail, phone and online. The house, the belongings and the funeral cannot."
   - "Hire a local attorney in the state where the estate is opened. Your home-state lawyer cannot appear in that court unless licensed there."
   - "A vacant house is the biggest risk for a distant executor: insurance, utilities, mail, locks and frost or heat."
@@ -24,7 +24,6 @@ faqs:
 related:
   - "after-a-death/executor-duties"
   - "illinois/who-can-be-an-executor-in-illinois"
-  - "new-jersey/who-can-be-an-executor-in-new-jersey"
   - "after-a-death/executor-hiring-help-and-staying-protected"
   - "property-and-assets/vacant-inherited-house-insurance-repairs-squatters"
   - "probate/ancillary-probate"
@@ -39,14 +38,14 @@ An executor can live out of state, and many do. This page explains how to be an 
 
 ## Can an executor live in a different state?
 
-Yes. Neither Illinois nor New Jersey requires the executor to live in the state. What changes is the paperwork.
+Yes. Illinois does not require the executor to live in the state. The Probate Act asks only that the executor live in the United States. What changes is the paperwork.
 
-| | Illinois | New Jersey |
-|---|---|---|
-| May a nonresident serve? | Yes, if a U.S. resident and otherwise qualified | Yes |
-| Bond | The court may require one for a nonresident, even if the will says none is needed | Required for a nonresident unless the will says no security is needed |
-| Legal papers | Ask the clerk what the court needs for service on a nonresident | A nonresident files a power of attorney naming the Surrogate to receive legal papers |
-| State pages | [Who can be an executor in Illinois](/learn/illinois/who-can-be-an-executor-in-illinois) | [Who can be an executor in New Jersey](/learn/new-jersey/who-can-be-an-executor-in-new-jersey) |
+| Question | Illinois rule |
+|---|---|
+| May a nonresident serve? | Yes, if a U.S. resident and otherwise qualified |
+| Bond | The court may require one for a nonresident, even if the will says none is needed |
+| Legal papers | Ask the clerk what the court needs for service on a nonresident |
+| More detail | [Who can be an executor in Illinois](/learn/illinois/who-can-be-an-executor-in-illinois) |
 
 A bond is an insurance policy that protects the estate if the executor misuses money. The premium comes out of the estate. Our page on the [Illinois surety bond](/learn/illinois/illinois-letters-of-administration-and-the-surety-bond) shows how the amount is set.
 
@@ -69,7 +68,7 @@ Our checklists for [who to notify](/learn/after-a-death/who-to-notify-after-some
 
 ## Who should I hire where the estate is opened?
 
-A local probate attorney, licensed in the state where the case is filed. Your own lawyer at home cannot appear in that court unless they are admitted there. A local attorney also knows how the clerk or Surrogate handles nonresident executors, which forms they want, and whether a short affidavit will do instead of a hearing. Our page on [hiring help and staying protected](/learn/after-a-death/executor-hiring-help-and-staying-protected) explains what to ask.
+A local probate attorney, licensed in the state where the case is filed. Your own lawyer at home cannot appear in that court unless they are admitted there. A local attorney also knows how the circuit clerk handles nonresident executors, which forms they want, and whether a short affidavit will do instead of a hearing. Our page on [hiring help and staying protected](/learn/after-a-death/executor-hiring-help-and-staying-protected) explains what to ask.
 
 Other local people to line up in the first month:
 

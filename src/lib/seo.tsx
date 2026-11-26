@@ -11,7 +11,11 @@ export function abs(path: string): string {
 
 /** Stable node ids so every page can reference the firm and attorney defined once in the layout. */
 export const ORG_ID = `${SITE_URL}/#organization`;
-export const ATTORNEY_ID = `${SITE_URL}/#attorney`;
+/**
+ * The reviewer node. While firm.publishAttorneyName is off the site names no attorney, so reviewedBy and
+ * ProfilePage point at the firm itself and no Person node is published.
+ */
+export const ATTORNEY_ID = firm.publishAttorneyName ? `${SITE_URL}/#attorney` : ORG_ID;
 
 function breadcrumbList(items: { name: string; path: string }[]) {
   return {
@@ -98,8 +102,8 @@ function legalServiceNode() {
     openingHoursSpecification: { "@type": "OpeningHoursSpecification", dayOfWeek: firm.openingHours.days, opens: firm.openingHours.opens, closes: firm.openingHours.closes },
     areaServed: stateNames(servedStates()).map((name) => ({ "@type": "State", name, containedInPlace: { "@type": "Country", name: "United States" } })),
     knowsAbout: ["Estate planning", "Wills", "Revocable living trusts", "Powers of attorney", "Probate", "Trust administration"],
-    employee: { "@id": ATTORNEY_ID },
   };
+  if (firm.publishAttorneyName) node.employee = { "@id": ATTORNEY_ID };
   if (firm.sameAs.length) node.sameAs = firm.sameAs;
   return node;
 }
@@ -124,7 +128,7 @@ export function siteGraphLd() {
     "@graph": [
       { "@type": "WebSite", "@id": `${SITE_URL}/#website`, url: SITE_URL, name: firm.brandName, publisher: { "@id": ORG_ID } },
       legalServiceNode(),
-      attorneyNode(),
+      ...(firm.publishAttorneyName ? [attorneyNode()] : []),
     ],
   };
 }
@@ -132,7 +136,7 @@ export function siteGraphLd() {
 /** Standalone firm node for pages that override a field, such as areaServed on state pages. */
 export function legalServiceLd() {
   const { "@id": _id, ...node } = legalServiceNode();
-  return { "@context": "https://schema.org", ...node, employee: { "@type": "Attorney", name: firm.attorneyName } };
+  return { "@context": "https://schema.org", ...node, ...(firm.publishAttorneyName ? { employee: { "@type": "Attorney", name: firm.attorneyName } } : {}) };
 }
 
 export function howToLd(input: { name: string; description: string; steps: { name: string; text: string }[] }) {

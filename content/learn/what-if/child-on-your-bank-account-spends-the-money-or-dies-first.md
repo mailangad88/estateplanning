@@ -1,7 +1,7 @@
 ---
 title: "What if I add my child to my bank account and they spend the money?"
 description: "Adding a child to your account hands them full access. See what happens if they spend it, get sued, divorce or die first, and safer ways to get help with bills."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A child added as a joint owner can legally withdraw all of the money, and the bank will not stop them. If they spend it, you may have little recourse beyond asking for it back, unless it was taken without your consent. Their creditors and divorcing spouse can also reach the account, and at your death it usually goes to them alone, not to your other children.
 takeaways:
@@ -83,7 +83,7 @@ If a creditor sues the child, a bank can freeze a joint account while it sorts o
 
 For a joint account with a right of survivorship, the surviving owner takes it automatically. Your will does not control it. If Helen's will leaves everything equally to Greg and Joan, but the $200,000 account is joint with Greg, Greg gets all of it and Joan gets half of everything else. That is the surprise in [which document controls](/learn/wills/which-controls-will-trust-joint-account-or-beneficiary-form).
 
-Some states let other heirs argue that the account was only a convenience, opened so the child could pay bills. The estate must usually show this with evidence such as the bank form, the history of deposits and what the owner said. A clear written statement helps. In Illinois, the rules on joint and payable-on-death accounts are covered in [our Illinois article](/learn/illinois/illinois-payable-on-death-and-joint-bank-accounts), and New Jersey has its own rules.
+Some states let other heirs argue that the account was only a convenience, opened so the child could pay bills. The estate must usually show this with evidence such as the bank form, the history of deposits and what the owner said. A clear written statement helps. In Illinois, the rules on joint and payable-on-death accounts are covered in [our Illinois article](/learn/illinois/illinois-payable-on-death-and-joint-bank-accounts), and convenience claims are covered in [convenience accounts and joint account disputes in Illinois](/learn/illinois/convenience-accounts-and-joint-account-disputes-in-illinois).
 
 ## Does it affect taxes or Medicaid?
 

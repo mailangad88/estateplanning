@@ -1,12 +1,12 @@
 ---
 title: "How much does a living will cost? Free forms, notary fees and attorney fees"
-description: "What does a living will cost in Illinois and New Jersey? Free state forms, witness and notary rules, what a lawyer's fee covers, and when paying is worth it."
-updated: "2026-10-26"
+description: "What does a living will cost in Illinois? Free state forms, the two-witness rule, what a lawyer's fee covers, and when paying for help is worth it."
+updated: "2026-11-26"
 answer: >-
   A living will can cost nothing if you use a free state or hospital form, a small notary fee if you choose a notary, or an attorney's flat fee if you want it drafted with your other documents. The form itself is rarely the cost. You are paying for choices about who decides, what to refuse and how the document is signed and kept.
 takeaways:
   - "Free forms from hospitals, state agencies and nonprofits are legally usable when signed with the right witnesses or notary."
-  - "Illinois requires two witnesses for a living will, and New Jersey requires two witnesses or a notary for an advance directive."
+  - "Illinois requires two adult witnesses for a living will, and no notary is part of the requirement."
   - "An attorney's fee is usually quoted as a flat fee and often folded into a full estate plan."
   - "A health care power of attorney matters more than the living will, so budget for both."
   - "The expensive mistake is a free form signed incorrectly, which a hospital may question when it counts."
@@ -14,7 +14,7 @@ faqs:
   - q: "Who pays for a lawyer to prepare healthcare directives?"
     a: "You do, in the normal case, as a flat fee or as part of an estate plan. Legal aid offices, bar association programs and area agencies on aging in many places help older adults and people with low incomes at little or no charge. Hospitals often have social workers who give out free forms and witness signings."
   - q: "Do I have to pay a notary for a living will?"
-    a: "In Illinois the living will needs two witnesses and a notary is not part of the requirement. In New Jersey you may use a notary instead of two witnesses. Notary fees are modest and set by state law, and some banks and libraries notarize for free."
+    a: "No. In Illinois the living will needs two adult witnesses, and a notary is not part of the requirement. The Illinois health care power of attorney needs one adult witness and no notary. If you choose to add a notary anyway, fees are modest and set by state law, and some banks and libraries notarize for free."
   - q: "Does a hospital charge for an advance directive?"
     a: "Hospitals that take Medicare or Medicaid are required to ask whether you have an advance directive and give information about them. Most give out a blank form at no cost. They may not charge you for filling it in."
   - q: "Can my doctor complete the document at no cost?"
@@ -29,7 +29,7 @@ related:
   - "basics/how-much-does-estate-planning-cost"
   - "power-of-attorney/how-much-does-a-power-of-attorney-cost"
   - "illinois/illinois-healthcare-power-of-attorney"
-  - "new-jersey/new-jersey-advance-directives"
+  - "illinois/illinois-living-will-act-what-it-covers-and-when-it-applies"
 glossary: ["living-will", "advance-directive", "healthcare-proxy"]
 review: pending
 intent: cost
@@ -56,10 +56,10 @@ The honest answer for most healthy adults is that the form is cheap and the thin
 
 Four small items add up.
 
-1. **Witnesses or a notary.** Illinois requires two witnesses for a living will. New Jersey requires either two adult witnesses or a notary or other authorized official (N.J.S.A. 26:2H-56). Neighbors and coworkers do this for free. A notary charges a modest fee that state law caps, and some banks do it for customers at no charge.
+1. **Witnesses.** Illinois requires two adult witnesses for a living will. Neighbors and coworkers do this for free. A notary is not required, so there is usually no fee for this step. Our page on the [Illinois Living Will Act](/learn/illinois/illinois-living-will-act-what-it-covers-and-when-it-applies) covers the signing.
 2. **Copies.** Print enough for your agent, your alternate, your doctor, your hospital and yourself.
 3. **Time.** A hospital social worker can walk you through the form in an hour. An attorney visit takes longer but adds drafting.
-4. **A health care power of attorney.** If you only budget for a living will, you have bought the weaker document. The agent named in a power of attorney handles everything the living will does not foresee. Illinois' health care power of attorney needs one adult witness and no notary, and the New Jersey proxy directive uses the same two-witness-or-notary rule.
+4. **A health care power of attorney.** If you only budget for a living will, you have bought the weaker document. The agent named in a power of attorney handles everything the living will does not foresee. Illinois' health care power of attorney needs one adult witness and no notary, so adding it costs little if you sign both at once.
 
 Notice the signing rules. A free form that is signed in front of the wrong witness is a document that a hospital may question. See [whether a living will needs a notary](/learn/healthcare-directives/does-a-living-will-need-a-notary) for the details.
 
@@ -94,15 +94,15 @@ Not always. Here is a rule of thumb from our attorneys.
 
 ## An example
 
-This is invented, and the figures are placeholders for the shape of a decision, not prices. Naomi, 63, lives in Hoboken, New Jersey. She gets a hospital form for free and has two neighbors witness it. Cost to her: a few dollars in printing. Her husband is her representative and her brother is the alternate.
+This is invented, and the figures are placeholders for the shape of a decision, not prices. Naomi, 63, lives in Wheaton, in DuPage County. She gets a free Illinois living will form and has two neighbors witness it. She signs the free statutory health care power of attorney the same day, naming her husband as agent and her brother as successor. Cost to her: a few dollars in printing.
 
-Her friend Elliott, 58, has an estranged adult son and a partner of ten years, and he wants his partner to decide. He asks an attorney for a flat-fee quote that includes the directive, a power of attorney and a HIPAA release, and his partner is named as health care representative with the son's possible objection addressed in writing. Elliott pays more than Naomi. He is paying for the plan to hold up when someone challenges it.
+Her friend Elliott, 58, has an estranged adult son and a partner of ten years, and he wants his partner to decide. He asks an attorney for a flat-fee quote that includes the directive, a power of attorney and a HIPAA release, and his partner is named as health care agent with the son's possible objection addressed in writing. Elliott pays more than Naomi. He is paying for the plan to hold up when someone challenges it.
 
 ## Why do free forms sometimes fail?
 
 The form is not what fails. The signing is, or the content is. We see four patterns. The document was signed with only one witness where two are required. A witness was also the named agent, which most state forms forbid. The form was from another state and the hospital asked questions. Or the instructions were so general that a doctor could not tell whether they applied to the situation in the hospital bed. Each of these is cheap to avoid and expensive to fix once the person cannot sign again.
 
-If you use a free form, read the witness section first. In New Jersey the person you name as representative or alternate cannot witness, and each witness confirms you signed voluntarily and appear to be of sound mind. In Illinois the property and health care forms each carry their own witness rules, so use the form for the right document. After signing, hand copies to your agent and your doctor and ask for yours to be placed in your chart, as described in [where to keep your advance directive](/learn/healthcare-directives/where-to-keep-your-advance-directive).
+If you use a free form, read the witness section first. In Illinois a living will witness cannot be entitled to part of your estate or be responsible for paying for your care. The property and health care forms each carry their own witness rules, so use the form for the right document. After signing, hand copies to your agent and your doctor and ask for yours to be placed in your chart, as described in [where to keep your advance directive](/learn/healthcare-directives/where-to-keep-your-advance-directive).
 
 ## What does a quote usually include?
 

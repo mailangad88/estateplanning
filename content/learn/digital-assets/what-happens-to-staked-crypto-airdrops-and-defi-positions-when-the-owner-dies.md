@@ -1,7 +1,7 @@
 ---
 title: "What happens to staked crypto, airdrops and DeFi positions when the owner dies?"
 description: "What happens to staked crypto when the owner dies? See how lock-ups, airdrops and DeFi loans affect heirs, the tax rules, and what to leave your executor."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Staked crypto, airdropped tokens and DeFi positions are property of the estate like any other crypto, but they are harder to reach. Staked coins may be locked for days or weeks. A DeFi loan can be liquidated if prices fall. Airdrops can arrive after death. The executor needs the keys, a list of wallet addresses and a plan, or the value can be lost.
 takeaways:
@@ -77,7 +77,7 @@ Executors can also see the history of a wallet and notice a smart contract inter
 
 ## What authority does the executor have?
 
-The executor has authority over the digital assets of the estate once the court issues letters, but that authority is only as useful as the access they hold. Under both Illinois and New Jersey law, an executor may request records from online service providers, which helps with exchanges and custodial platforms. It does nothing for a self-custody wallet, since no company holds those keys. Our pages on [Illinois digital assets law](/learn/illinois/illinois-digital-assets-law-for-executors) and [New Jersey digital assets law](/learn/new-jersey/new-jersey-digital-assets-law) explain the request process.
+The executor has authority over the digital assets of the estate once the court issues letters, but that authority is only as useful as the access they hold. Under Illinois law, an executor may request records from online service providers, which helps with exchanges and custodial platforms. It does nothing for a self-custody wallet, since no company holds those keys. Our page on [Illinois digital assets law](/learn/illinois/illinois-digital-assets-law-for-executors) explains the request process.
 
 ## What should you write down now?
 
@@ -99,7 +99,7 @@ If Marcus dies in a falling market, Nadia has two problems. The exchange will mo
 
 ## What does estate tax have to do with it?
 
-For federal estate tax, crypto is valued at its fair market value on the date of death. The federal exclusion is $15 million per person in 2026, so most estates owe nothing federally. Illinois taxes estates over $4 million, and New Jersey has an inheritance tax rather than an estate tax. Loans against crypto reduce the net value only if the debt is real and documented.
+For federal estate tax, crypto is valued at its fair market value on the date of death. The federal exclusion is $15 million per person in 2026, so most estates owe nothing federally. Illinois taxes estates over $4 million, and crypto counts toward that total at its date-of-death value. Loans against crypto reduce the net value only if the debt is real and documented.
 
 For income tax, inherited coins generally get a stepped-up basis to the date-of-death value, so selling soon after death usually produces little gain. That step-up does not apply to gifts made during life.
 

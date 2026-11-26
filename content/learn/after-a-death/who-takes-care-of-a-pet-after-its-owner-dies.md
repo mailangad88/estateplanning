@@ -1,7 +1,7 @@
 ---
 title: "Who takes care of a pet after its owner dies, and who owns it afterward?"
 description: "A dog or cat is waiting at home after a death. See who cares for the animal now, who legally owns it, what a will can say and where a pet goes if no one can."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Someone has to feed the animal today, and that does not require legal authority. Legally, a pet is personal property that belongs to the estate until the will, the trust or the heirs say who gets it. If the will names a person, the executor hands the animal over. If nothing is named, the heirs usually agree, and a rescue is the fallback.
 takeaways:
@@ -20,7 +20,7 @@ faqs:
   - q: "Who pays for the pet's care while the estate is open?"
     a: "The estate can pay reasonable costs of feeding, boarding and veterinary care as an administration expense, as long as the executor keeps receipts. If a relative pays out of pocket, the estate can generally reimburse that person. Save every receipt so that the accounting is clean."
   - q: "Can a pet inherit money?"
-    a: "No. An animal cannot own property. The usual solution is a gift to a person who agrees to care for the pet, or a pet trust in states that allow one, with a trustee who spends the money for the animal's benefit. Illinois and New Jersey both have pet trust laws."
+    a: "No. An animal cannot own property. The usual solution is a gift to a person who agrees to care for the pet, or a pet trust in states that allow one, with a trustee who spends the money for the animal's benefit. Illinois has a pet trust law."
 related:
   - "after-a-death"
   - "after-a-death/clearing-out-a-parents-house-after-death"
@@ -29,7 +29,6 @@ related:
   - "property-and-assets/choosing-a-pet-caretaker-and-a-backup-in-your-estate-plan"
   - "property-and-assets/vacant-inherited-house-insurance-repairs-squatters"
   - "illinois/pet-trusts-in-illinois"
-  - "new-jersey/pet-trusts-in-new-jersey"
 glossary: ["executor", "estate", "decedent", "bequest", "intestate", "heir"]
 review: pending
 intent: situation
@@ -76,7 +75,7 @@ Compare the common approaches:
 
 Tomas, 71, left his terrier to his neighbor Alicia in his will and set aside a sum for her. Alicia took the dog the day after his death and the executor sent the money once the estate had cash. Without the will, his two grown children, living in different states, would have had to work it out themselves while the dog sat in a kennel.
 
-A pet trust is a legal arrangement for the animal's care, with money held by a trustee. Illinois and New Jersey both recognize them, and our pages on [pet trusts in Illinois](/learn/illinois/pet-trusts-in-illinois) and [pet trusts in New Jersey](/learn/new-jersey/pet-trusts-in-new-jersey) describe how they work. The general idea is covered in [pet trusts](/learn/property-and-assets/pet-trusts).
+A pet trust is a legal arrangement for the animal's care, with money held by a trustee. Illinois recognizes them, and our page on [pet trusts in Illinois](/learn/illinois/pet-trusts-in-illinois) describes how they work. The general idea is covered in [pet trusts](/learn/property-and-assets/pet-trusts).
 
 ## What if the will says nothing about the pet?
 

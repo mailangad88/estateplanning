@@ -1,7 +1,7 @@
 ---
 title: "Who gets the furniture, the car and the family photos when there is no will?"
 description: "With no will, belongings pass by state intestacy law, not promises. See who owns the furniture, car and photos and how families divide them without a fight."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Without a will, a person's belongings (the law calls them tangible personal property) pass to heirs under the state's intestacy rules, in the same shares as everything else. In Illinois a spouse and children split the estate half and half. An oral promise that someone could have an item has no legal force, so heirs usually divide things by agreement.
 takeaways:
@@ -27,7 +27,6 @@ related:
   - "property-and-assets/transfer-a-car-boat-or-rv-after-death"
   - "life-stages/dividing-personal-property-and-family-heirlooms"
   - "illinois/who-inherits-without-a-will-in-illinois"
-  - "new-jersey/who-inherits-without-a-will-in-new-jersey"
   - "wills/dying-without-a-will"
   - "after-a-death/clearing-out-a-parents-house-after-death"
 glossary: ["intestate", "heir", "intestate-succession", "executor", "administrator", "estate"]
@@ -43,7 +42,7 @@ This page explains who owns belongings when there is no will, what an oral promi
 
 The estate does, and then the heirs, in the shares the state sets. Nobody inherits "the kitchen" or "the jewelry." The household items are simply part of one pool, along with the accounts and the house, and the pool is divided by the heir list.
 
-In Illinois, a surviving spouse and the descendants share the estate half and half, and a spouse with no descendants takes everything (755 ILCS 5/2-1). New Jersey's rules depend on whose children the descendants are and whether a parent survives, so a spouse does not always take all (N.J.S.A. 3B:5-3 and 3B:5-4). Our state pages, [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) and [in New Jersey](/learn/new-jersey/who-inherits-without-a-will-in-new-jersey), lay out the order. Unmarried partners, stepchildren and friends inherit nothing, however long they lived in the house.
+In Illinois, a surviving spouse and the descendants share the estate half and half, and a spouse with no descendants takes everything (755 ILCS 5/2-1). If there is no spouse, the descendants take everything, and if there are neither, parents and siblings are next. Our page on [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) lays out the full order. Unmarried partners, stepchildren and friends inherit nothing, however long they lived in the house.
 
 The result surprises people. A daughter who cared for her mother for ten years has no better claim to the sewing machine than a son who lived across the country, unless the other heirs agree. Fairness has to come from the family, because the statute does not weigh it.
 
@@ -55,7 +54,7 @@ If you want a promise to be binding, the heirs can make it so. Everyone signs a 
 
 ## What about the car?
 
-The title decides. A vehicle with a surviving co-owner or a transfer-on-death beneficiary named on the title passes to that person with a death certificate. A vehicle in the dead person's name alone belongs to the estate, and a court-appointed administrator, or a small estate affidavit in states that allow one for vehicles, is usually how it is retitled. In Illinois, the small estate affidavit does not count registered vehicles toward its $150,000 limit (755 ILCS 5/25-1), and in New Jersey a family can use the affidavit route for $50,000 or less for a spouse or partner. Our page on [transferring a car, boat or RV after death](/learn/property-and-assets/transfer-a-car-boat-or-rv-after-death) walks through it.
+The title decides. A vehicle with a surviving co-owner or a transfer-on-death beneficiary named on the title passes to that person with a death certificate. A vehicle in the dead person's name alone belongs to the estate, and a court-appointed administrator, or a small estate affidavit in states that allow one for vehicles, is usually how it is retitled. In Illinois, the small estate affidavit does not count registered vehicles toward its $150,000 limit (755 ILCS 5/25-1). Our page on [transferring a car, boat or RV after death](/learn/property-and-assets/transfer-a-car-boat-or-rv-after-death) walks through it.
 
 Until the title is moved, keep the car insured and do not drive it casually. If an heir keeps driving it, the insurer should know about the death.
 

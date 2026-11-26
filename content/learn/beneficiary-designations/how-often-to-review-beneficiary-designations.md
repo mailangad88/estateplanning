@@ -1,7 +1,7 @@
 ---
 title: "How often should you review your beneficiary designations, and what should trigger a check?"
 description: "Review beneficiary forms every few years and after any big life event. Get the trigger list, a simple record system, and how to keep forms matching your will."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Review every beneficiary designation at least once every three years and right after any life event: marriage, divorce, a birth, a death, a new account, a move, or a big change in an heir's life. Keep one dated list of every account, who is named, and the confirmation you received, and check that it matches your will or trust.
 takeaways:
@@ -118,7 +118,7 @@ Fix it the same week, in writing, with the institution's own form. A phone call,
 
 ## How state law changes this
 
-States differ on whether a divorce automatically cancels a former spouse's role on a beneficiary form. Some states revoke it for many non-probate assets, some only for life insurance and some not at all, and federal rules for employer retirement plans can override state law. Rules for community property, spousal rights and the effect of a will also vary. Illinois and New Jersey have their own treatment of these questions, so if you moved to or from either state, check with an attorney. You can start with our overview of [estate planning in Illinois](/estate-planning/illinois) or [estate planning in New Jersey](/estate-planning/new-jersey).
+States differ on whether a divorce automatically cancels a former spouse's role on a beneficiary form. Some states revoke it for many non-probate assets, some only for life insurance and some not at all, and federal rules for employer retirement plans can override state law. Rules for community property, spousal rights and the effect of a will also vary. Illinois revokes a will's gifts to a former spouse and cancels an ex-spouse's designation on many non-probate assets, with exceptions for the divorce judgment and some federal plans. If you moved to or from Illinois, check with an attorney. You can start with our overview of [estate planning in Illinois](/estate-planning/illinois) and our article on [whether an ex-spouse inherits in Illinois](/learn/illinois/ex-spouse-and-inheritance-in-illinois).
 
 ## How we can help
 

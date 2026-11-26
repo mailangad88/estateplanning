@@ -1,20 +1,20 @@
 ---
-title: "Does a living will cover pregnancy? What Illinois and New Jersey law says"
-description: "Does a living will cover pregnancy? Illinois pauses a living will while a live birth is possible; New Jersey lets you state your own wishes. See what to write."
-updated: "2026-10-26"
+title: "Does a living will cover pregnancy? What Illinois law says"
+description: "Does a living will cover pregnancy? Illinois pauses a living will while a live birth is possible. See what the rule means and what to write in your documents."
+updated: "2026-11-26"
 answer: >-
-  It depends on the state. In Illinois, the Living Will Act gives a pregnant patient's declaration no force while her doctor believes the fetus could develop to live birth (755 ILCS 35/3). In New Jersey, a woman may state in her directive what effect it should have if she is pregnant (N.J.S.A. 26:2H-56). Many other states have their own rule, so check before you sign.
+  It depends on the state. In Illinois, the Living Will Act gives a pregnant patient's declaration no force while her doctor believes the fetus could develop to live birth (755 ILCS 35/3). You cannot override that rule in the living will itself, so a healthcare agent who knows your wishes matters more. Other states have their own rules.
 takeaways:
-  - "A pregnancy clause is a state-law question, and Illinois and New Jersey handle it differently."
+  - "A pregnancy clause is a state-law question, and Illinois answers it in the Living Will Act."
   - "Illinois suspends a living will during a pregnancy only while the attending physician believes a live birth is possible."
-  - "New Jersey lets a woman say in her directive what she wants if she is pregnant."
+  - "The Illinois rule sits in the Living Will Act, so a healthcare agent can cover situations the living will does not reach."
   - "Women of childbearing age should read the pregnancy paragraph on any form before signing."
   - "Talk with your agent and doctor in advance, because the form cannot answer every case."
 faqs:
   - q: "Will my living will be ignored if I am pregnant?"
     a: "In Illinois, the living will is set aside only while the attending physician believes the fetus could develop to live birth. Before that point, or if the physician no longer holds that opinion, the declaration can apply. Outside Illinois, the rule varies by state."
-  - q: "Can I write my own instructions about pregnancy in New Jersey?"
-    a: "Yes. The New Jersey statute allows a woman to include what effect her directive should have if she is pregnant. Be specific about the stage of pregnancy and about what you want done, and go over the language with your agent and doctor."
+  - q: "Can I write my own pregnancy instructions in an Illinois living will?"
+    a: "You cannot override the statute in a living will. While the attending physician believes a live birth is possible, the declaration has no force, whatever it says. You can still tell your healthcare agent what you want, in writing and in conversation, and ask an attorney how your documents work together."
   - q: "Does the pregnancy rule apply to a healthcare power of attorney?"
     a: "The Illinois limit appears in the Living Will Act. A healthcare power of attorney is a different statute and the agent decides based on your instructions and values. How the two interact in a pregnancy is a question to put to an attorney who can read your documents together."
   - q: "What if I become pregnant after I sign my living will?"
@@ -27,7 +27,7 @@ related:
   - "healthcare-directives/healthcare-power-of-attorney"
   - "healthcare-directives/is-a-living-will-legally-binding"
   - "illinois/illinois-healthcare-power-of-attorney"
-  - "new-jersey/new-jersey-advance-directives"
+  - "illinois/illinois-living-will-act-what-it-covers-and-when-it-applies"
 glossary: ["living-will", "advance-directive", "healthcare-proxy", "agent", "incapacity"]
 review: pending
 intent: question
@@ -35,7 +35,7 @@ intent: question
 
 A living will says what treatment you do and do not want if you are dying and cannot speak. Most people sign one without thinking about pregnancy. For a woman who could become pregnant, that paragraph matters, and it surprises people when they find it on the form.
 
-The answer depends on the state. This page covers the Illinois and New Jersey rules in plain terms, explains what they mean for how you write your documents, and lists the conversations to have. It is general information, and a woman who is pregnant, trying to conceive or in a high-risk situation should talk with an attorney and her doctor about her own documents. Our [living will overview](/learn/healthcare-directives/living-will) covers the basics.
+The answer depends on the state. This page covers the Illinois rule in plain terms, explains what they mean for how you write your documents, and lists the conversations to have. It is general information, and a woman who is pregnant, trying to conceive or in a high-risk situation should talk with an attorney and her doctor about her own documents. Our [living will overview](/learn/healthcare-directives/living-will) covers the basics.
 
 ## What does Illinois say about a living will during pregnancy?
 
@@ -49,22 +49,23 @@ Three details are worth noting.
 
 The Act also sets the signing rules: you sign, or someone signs at your direction, with two adult witnesses. Those witnesses cannot be entitled to part of your estate or responsible for paying your care. Our page on [the Illinois healthcare power of attorney, living will and POLST](/learn/illinois/illinois-healthcare-power-of-attorney) explains how the documents fit.
 
-## What does New Jersey say?
+## What does the Illinois rule mean for your documents?
 
-New Jersey takes a different approach. The statute on advance directives (N.J.S.A. 26:2H-56) says a female declarant may include in her advance directive what effect it shall have if she is pregnant. So the law does not set a fixed answer. It invites you to write one.
+It means the living will cannot carry your pregnancy wishes on its own. The statute sets the answer, and the wording you choose in the declaration does not change it. A line such as "honor this directive even if I am pregnant" does not give it force while the physician believes a live birth is possible.
 
-That gives you more control and more responsibility. A short phrase such as "honor this directive even if I am pregnant" or "do not apply this directive while I am pregnant" is a legal choice, and a vague line leaves staff and family guessing. Our summary of [New Jersey advance directives](/learn/new-jersey/new-jersey-advance-directives) shows where the form asks about this and how the proxy and instruction directives work.
+That puts more weight on the other documents. Your healthcare agent, named in an Illinois healthcare power of attorney, decides based on your instructions and values. Our page on [what the Illinois Living Will Act covers and when it applies](/learn/illinois/illinois-living-will-act-what-it-covers-and-when-it-applies) explains the narrow case the living will is built for.
 
 <!-- visual: whatif id=end-of-life-wishes-unknown -->
 
-## How the two states compare
+## The Illinois rule at a glance
 
-| Question | Illinois | New Jersey |
-|---|---|---|
-| Is there a built-in rule? | Yes, in the Living Will Act | No fixed rule; the declarant may state her wishes |
-| When does it apply? | While the physician believes live birth is possible | As you write it |
-| Who decides if it applies? | The attending physician | Your document, then the agent or care team |
-| What can you change? | You cannot override the statute in a living will | You choose the effect |
+| Question | Illinois answer |
+|---|---|
+| Is there a built-in rule? | Yes, in the Living Will Act (755 ILCS 35/3) |
+| When does it apply? | While the attending physician believes live birth is possible |
+| Who decides if it applies? | The attending physician |
+| What can you change? | You cannot override the statute in a living will |
+| What still works? | A healthcare agent who knows your wishes |
 
 ## Does it matter if I have a healthcare agent instead?
 
@@ -87,7 +88,7 @@ Lena, 33, is expecting her first child and has a living will from five years ago
 
 ## What should a pregnancy clause actually say?
 
-Where the law lets you write your own, specifics beat slogans. A useful clause names the situation, the stage if it matters to you, and who decides when the facts are unclear. For example: "If I am pregnant when this directive would otherwise apply, I want my agent to decide, after talking with my obstetrician, and my agent knows my wishes." That sentence does not decide the question in advance, but it names the person who will.
+In Illinois the living will cannot hold this clause, so it belongs in your instructions to your healthcare agent. Specifics beat slogans. A useful instruction names the situation, the stage if it matters to you, and who decides when the facts are unclear. For example: "If I am pregnant when this directive would otherwise apply, I want my agent to decide, after talking with my obstetrician, and my agent knows my wishes." That sentence does not decide the question in advance, but it names the person who will.
 
 Three mistakes show up in forms we see.
 
@@ -111,4 +112,4 @@ Besides the pregnancy rule, states differ on the number of witnesses, the use of
 
 ## How we can help
 
-Our attorneys can review your living will and healthcare power of attorney, explain how the pregnancy provision applies in your state, and draft language that matches your wishes. A woman who is expecting or planning to be can book a consultation to update documents quickly. The [plan finder](/plan-finder) is a good place to start.
+Our attorneys can review your living will and healthcare power of attorney, explain how the Illinois pregnancy provision applies to you, and draft language that matches your wishes. A woman who is expecting or planning to be can book a consultation to update documents quickly. The [plan finder](/plan-finder) is a good place to start.

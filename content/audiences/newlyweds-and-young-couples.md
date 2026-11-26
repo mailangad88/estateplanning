@@ -29,9 +29,9 @@ faqs:
   - q: "We own almost nothing. Do we really need documents?"
     a: "A few matter even now. A healthcare directive and a power of attorney let your partner act if you are in an accident. Beneficiary forms decide who gets your 401(k) and any life insurance from work. These cost little and take an afternoon."
   - q: "We are married. Does my spouse get everything if I die with no will?"
-    a: "Often a large share, but not always everything. If you have children, or your parents are living, some states split the estate. Accounts with a named beneficiary skip the will altogether. In Illinois, a spouse takes everything only if there are no descendants, and half if there are (755 ILCS 5/2-1). In New Jersey, the share depends on whether there are children from another relationship or surviving parents (N.J.S.A. 3B:5-3). See the [spouse and no-will article](/blog/does-a-spouse-inherit-everything-if-there-is-no-will)."
+    a: "Often a large share, but not always everything. If you have children, or your parents are living, some states split the estate. Accounts with a named beneficiary skip the will altogether. In Illinois, a spouse takes everything only if there are no descendants, and half if there are (755 ILCS 5/2-1). See the [spouse and no-will article](/blog/does-a-spouse-inherit-everything-if-there-is-no-will)."
   - q: "We live together and are not married. What happens if one of us dies?"
-    a: "In most states your partner inherits nothing by default, and your family does. Your partner may also be left out of hospital decisions. A will, beneficiary forms and healthcare documents fix much of this. Illinois and New Jersey give civil union partners the same rights as spouses, and New Jersey also covers registered domestic partners. See [planning for unmarried couples](/learn/life-stages/estate-planning-for-unmarried-couples)."
+    a: "In most states your partner inherits nothing by default, and your family does. Your partner may also be left out of hospital decisions. A will, beneficiary forms and healthcare documents fix much of this. Illinois gives civil union partners the same rights as spouses. See [planning for unmarried couples](/learn/life-stages/estate-planning-for-unmarried-couples)."
   - q: "Do we need a trust before we buy a house?"
     a: "Usually not. Most young couples with a home and little else do fine with wills, beneficiary forms and a clear way of holding title. A trust can come later, as assets and children arrive. A good attorney will tell you if you do not need one yet."
   - q: "Should we just use an online form?"
@@ -39,14 +39,14 @@ faqs:
   - q: "What does a starter plan cost?"
     a: "Fees are set by the attorney you are matched with, often as a flat fee for a couple's starter plan. See [pricing](/pricing)."
 reviewed: false
-updated: "2026-10-06"
+updated: "2026-11-26"
 ---
 
 ## What is at stake
 
 - **Beneficiary forms that never got updated.** Your 401(k), work life insurance and bank accounts may still name a parent, an ex or no one. Those forms usually override a will. See the [beneficiary designation audit](/checklists/beneficiary-designation-audit).
 - **No one to act if you are hurt.** Without a power of attorney, a spouse may be unable to access your accounts or sign for you. Without a healthcare directive, doctors may turn to your parents. See [powers of attorney](/guides/powers-of-attorney) and [healthcare directives](/guides/healthcare-directives-and-living-wills).
-- **Unmarried partners.** Most states give an unmarried partner no right to inherit and no automatic say in medical care. Your parents or siblings may have both. In Illinois and New Jersey, a civil union changes this, and in New Jersey a registered domestic partnership does too.
+- **Unmarried partners.** Most states give an unmarried partner no right to inherit and no automatic say in medical care. Your parents or siblings may have both. In Illinois, a civil union changes this.
 - **Joint accounts and a joint home.** Joint ownership often passes the whole asset to the survivor. That can be what you want. It can also leave you with one name on a deed and no plan if you both die.
 - **Assuming the law sorts it out.** Without a will, state default rules decide who inherits. They do not know your family.
 

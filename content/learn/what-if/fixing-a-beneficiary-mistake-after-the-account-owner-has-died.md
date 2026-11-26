@@ -1,7 +1,7 @@
 ---
 title: "Can you fix a beneficiary mistake after the account owner has died?"
 description: "The owner can no longer change a beneficiary form, but a wrong name, blank form or old ex can sometimes be corrected. Learn the options and the deadlines."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   The owner's chance to change a beneficiary ended at death, and the plan administrator or insurer pays whoever the form says. A mistake can still sometimes be fixed by a court correcting the form, by the named beneficiary disclaiming or agreeing to share, or by a divorce statute that voids an ex-spouse's designation. Which route applies depends on the type of account and the proof.
 takeaways:
@@ -97,7 +97,7 @@ Then the claim is against the person who received it, not the insurer. A court c
 
 ## How state law changes this
 
-States differ on whether divorce cancels an ex-spouse's designation, on how strong the evidence must be to correct a form, and on the time for disclaimers and claims. Illinois and New Jersey both have rules on divorce and beneficiary forms, but federal law controls many workplace plans, so the plan type matters. See the [Illinois guide](/estate-planning/illinois) and [New Jersey guide](/estate-planning/new-jersey), or read about [whether a will can be changed after death](/learn/wills/can-a-will-be-changed-after-death), which raises related questions.
+States differ on whether divorce cancels an ex-spouse's designation, on how strong the evidence must be to correct a form, and on the time for disclaimers and claims. Illinois has rules on divorce and beneficiary forms, but federal law controls many workplace plans, so the plan type matters. See the [Illinois guide](/estate-planning/illinois) and [how divorce affects your Illinois estate plan](/learn/illinois/how-divorce-affects-your-illinois-estate-plan), or read about [whether a will can be changed after death](/learn/wills/can-a-will-be-changed-after-death), which raises related questions.
 
 ## How to avoid this in your own plan
 

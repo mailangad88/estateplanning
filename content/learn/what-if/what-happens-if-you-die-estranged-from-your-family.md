@@ -1,13 +1,13 @@
 ---
 title: "What happens if you die estranged from your family?"
 description: "Die estranged from family with no will and relatives you have not spoken to in years can inherit. See how to leave your estate to friends or a charity instead."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Without a will, estrangement does not matter to the law. Your spouse, children, parents, siblings and then more distant kin inherit in the order the state sets, whether or not you speak to them. A valid will can leave your estate to friends or a charity instead, and in most states can cut out children, parents and siblings. A spouse is the exception.
 takeaways:
   - "Intestacy ignores relationships. A sibling you have not seen in 20 years inherits before your best friend."
   - "A will is the only way to leave anything to a friend, a partner you did not marry, or a charity."
-  - "In Illinois and New Jersey you can leave a child or parent out of your will, but a surviving spouse can claim a statutory share."
+  - "In Illinois you can leave a child or parent out of your will, but a surviving spouse can claim a statutory share."
   - "Estranged heirs usually receive notice of probate and can contest if they would inherit without the will."
   - "A clear plan, a lawyer's file and backup beneficiaries make a challenge less likely to succeed."
 faqs:
@@ -35,11 +35,11 @@ intent: scenario
 
 Marcus is 58, single, and has not spoken to his sister Dana since their mother's funeral. His closest people are his friend Priya, who drives him to appointments, and his nephew Eli. He has never made a will because he assumes his estate will somehow follow his wishes. It will not. It will follow the state's list of relatives.
 
-This page explains who inherits when a person is estranged from family and has no plan, how to leave property to the people you actually want, who cannot be cut out, and what estranged relatives can do about it. It applies to Illinois and New Jersey, and most of it holds elsewhere. Related situations are in the [what-if library](/learn/what-if).
+This page explains who inherits when a person is estranged from family and has no plan, how to leave property to the people you actually want, who cannot be cut out, and what estranged relatives can do about it. It uses Illinois law, and most of it holds elsewhere. Related situations are in the [what-if library](/learn/what-if).
 
 ## Do estranged relatives still inherit if there is no will?
 
-Yes. Intestacy law does not ask whether you were close. It looks at blood, marriage and adoption. In Illinois the order is spouse and descendants first, then parents, siblings and the descendants of siblings (755 ILCS 5/2-1). New Jersey has a similar ladder; see [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) and [in New Jersey](/learn/new-jersey/who-inherits-without-a-will-in-new-jersey).
+Yes. Intestacy law does not ask whether you were close. It looks at blood, marriage and adoption. In Illinois the order is spouse and descendants first, then parents, siblings and the descendants of siblings (755 ILCS 5/2-1). See [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) for the full ladder, including nieces, nephews and more distant relatives.
 
 Here is Marcus's case. He has $430,000 in a house, savings and a car, all in his own name. His parents have died, and so has his brother Paul, whose son is Eli. With no will, the estate goes to siblings and the descendants of siblings in equal parts by branch. Dana takes half, $215,000. Eli takes his late father's half, $215,000. Priya receives nothing, because she is not related to Marcus. If Eli were also estranged, the result would be the same, since the statute does not ask.
 
@@ -63,15 +63,15 @@ If a friend will act as your executor, name a second person as well. See [choosi
 
 ## Who can't I cut out of my will?
 
-Only a spouse. In Illinois, a spouse who is left little or nothing can renounce the will and take one-third of the estate if you have descendants, or one-half if you do not (755 ILCS 5/2-8), within seven months after the will is admitted. In New Jersey a surviving spouse, civil union partner or domestic partner can elect one-third of the augmented estate (N.J.S.A. 3B:8-1). Our pages on [Illinois spouse rights](/learn/illinois/illinois-spouse-rights-at-death) and the [New Jersey elective share](/learn/new-jersey/new-jersey-elective-share-for-a-surviving-spouse) give the filing windows. A prenuptial or postnuptial agreement can change this.
+Only a spouse. In Illinois, a spouse who is left little or nothing can renounce the will and take one-third of the estate if you have descendants, or one-half if you do not (755 ILCS 5/2-8), within seven months after the will is admitted. Our pages on [Illinois spouse rights](/learn/illinois/illinois-spouse-rights-at-death) and [renouncing a will as a surviving spouse](/learn/illinois/renouncing-a-will-as-a-surviving-spouse-in-illinois) explain the filing. A prenuptial or postnuptial agreement can change this.
 
-If you are separated but not divorced, you are still married. Do not assume the spouse is out of your plan. Divorce itself revokes gifts to a former spouse in a will in both states, but it does not always fix an old beneficiary form on an IRA or a work plan, which is covered in [what happens if your ex is still your beneficiary](/learn/what-if/ex-spouse-still-beneficiary).
+If you are separated but not divorced, you are still married. Do not assume the spouse is out of your plan. In Illinois, a divorce judgment itself cancels gifts to a former spouse in a will, but it does not always fix an old beneficiary form on an IRA or a work plan, which is covered in [what happens if your ex is still your beneficiary](/learn/what-if/ex-spouse-still-beneficiary).
 
 Children and parents can be omitted. The will should say so in a sentence. The cleaner language is neutral: "I have intentionally made no provision for my sister, Dana Whitfield." It does not need to explain why, and it should not insult anyone. A bitter paragraph gives a challenger a story. Our guide to [disinheriting or leaving unequal shares](/learn/wills/disinheriting-or-unequal-shares) covers the wording.
 
 ## Can an estranged relative contest my will?
 
-A relative who would inherit if the will were thrown out has standing to try, which in Marcus's case means Dana. The grounds are narrow: the will was not signed and witnessed properly, Marcus lacked capacity, someone pressured him, or the document was forged. Dislike of the result is not a ground. Illinois allows a contest within six months of admission (755 ILCS 5/8-1), and New Jersey has its own caveat process; see [will contests and caveats](/learn/new-jersey/new-jersey-will-contests-and-caveats).
+A relative who would inherit if the will were thrown out has standing to try, which in Marcus's case means Dana. The grounds are narrow: the will was not signed and witnessed properly, Marcus lacked capacity, someone pressured him, or the document was forged. Dislike of the result is not a ground. Illinois allows a contest within six months of admission (755 ILCS 5/8-1); see [the Illinois six-month contest deadline](/learn/illinois/illinois-will-contest-six-month-deadline).
 
 Estranged heirs sometimes sue because the decision looks unfair, and the strongest answer is boring evidence. What our attorneys suggest:
 
@@ -93,7 +93,7 @@ You can change your will whenever you have capacity. A new will or a short codic
 
 ## How state law changes this
 
-States differ on forced shares for spouses, on whether children can claim anything, on how long a contest can be brought, and on how quickly heirs receive notice. Louisiana has forced heirship for certain children, a rare exception. Illinois and New Jersey do not. Start with your state guide, [Illinois](/estate-planning/illinois) or [New Jersey](/estate-planning/new-jersey), then ask an attorney about the details.
+States differ on forced shares for spouses, on whether children can claim anything, on how long a contest can be brought, and on how quickly heirs receive notice. Louisiana has forced heirship for certain children, a rare exception. Illinois does not. Start with our [Illinois guide](/estate-planning/illinois) and [can you disinherit a child in Illinois](/learn/illinois/can-you-disinherit-a-child-in-illinois), then ask an attorney about the details.
 
 ## How we can help
 

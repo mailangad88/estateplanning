@@ -1,7 +1,7 @@
 ---
 title: "Who can open a probate case? Executors, heirs, creditors and others"
 description: "The named executor usually starts probate, but heirs and sometimes creditors can too. See who has priority, who is left out and how to start if no one steps up."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   The executor named in the will usually opens probate. If there is no will or the executor will not act, state law ranks who may ask the court to appoint an administrator, starting with a surviving spouse and adult children. Other heirs, and in many states creditors, can petition when no one with priority steps forward.
 takeaways:
@@ -49,7 +49,7 @@ The executor named in the will. The person who made the will chose that individu
 
 The named executor is not required to serve. Someone who does not want the job can say no, and in many states can simply never file. Our guide on what happens [if there is no executor](/learn/probate/what-happens-if-there-is-no-executor) covers the situation where the will names no one or every named person refuses.
 
-Anyone else may also offer the will to the court. The person holding the original will has a legal duty to deliver it to the clerk soon after the death, whether or not they want to be executor. In Illinois, the statute asks for the original to be filed with the clerk immediately. In New Jersey, the county Surrogate handles the original, and probate cannot be completed until the tenth day after death. Our overview of [Illinois and New Jersey probate](/learn/probate/illinois-and-new-jersey-probate-compared) lays out the timing in each state.
+Anyone else may also offer the will to the court. The person holding the original will has a legal duty to deliver it to the clerk soon after the death, whether or not they want to be executor. In Illinois, the statute asks for the original to be filed with the clerk immediately. Our guide to [filing the original will with the Illinois circuit clerk](/learn/illinois/filing-the-original-will-with-the-illinois-circuit-clerk) explains the timing and what happens after.
 
 ## Who goes first when there is no will?
 

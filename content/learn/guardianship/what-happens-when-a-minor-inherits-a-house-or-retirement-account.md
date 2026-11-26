@@ -1,9 +1,9 @@
 ---
 title: "What happens when a minor inherits a house or a retirement account?"
-description: "What happens if a minor inherits a house or an IRA: who holds title, whether it can be sold, the IRA clock, and how to plan ahead in Illinois or New Jersey."
-updated: "2026-10-26"
+description: "What happens if a minor inherits a house or an IRA: who holds title, whether it can be sold, the IRA clock, and how to plan ahead in Illinois."
+updated: "2026-11-26"
 answer: >-
-  A child under 18 cannot manage or sell property, so a court usually appoints a guardian of the estate (Illinois) or guardian of the property (New Jersey) to act for the child. A house generally cannot be sold without court approval. An inherited IRA goes to a custodian, and a minor child of the owner gets extra time before the 10-year payout clock runs.
+  A child under 18 cannot manage or sell property, so an Illinois court usually appoints a guardian of the estate to act for the child. A house generally cannot be sold without court approval. An inherited IRA goes to a custodian, and a minor child of the owner gets extra time before the 10-year payout clock runs.
 takeaways:
   - "A minor can own a house or an IRA, but cannot sign a deed, a sale contract or a custodial form."
   - "Without a trust or named custodian, a court-supervised guardian handles the asset, with reports and often a bond."
@@ -25,7 +25,7 @@ related:
   - "guardianship/leaving-money-to-minors"
   - "guardianship/guardian-of-the-person-vs-conservator-of-the-estate"
   - "illinois/when-a-minor-inherits-money-in-illinois"
-  - "new-jersey/minor-inherits-money-in-new-jersey-guardian-of-the-property"
+  - "illinois/illinois-utma-accounts-and-gifts-to-minors"
   - "beneficiary-designations/leaving-an-ira-or-401k-to-children-or-grandchildren"
   - "what-if/minor-inherits-without-a-trust"
 glossary: ["guardian", "utma", "trust", "trustee", "beneficiary", "conservatorship", "step-up-in-basis"]
@@ -41,7 +41,7 @@ This page explains what happens to a house and to a retirement account, who deci
 
 The child owns the share, and someone else has to act for the child. Title passes to the minor through the will or the intestacy rules, but a minor's signature on a deed or a contract is not valid. If the house has to be sold, refinanced or even insured in a new name, the family needs an adult with legal authority.
 
-That adult is usually a court-appointed manager of the child's property. Illinois calls the role a guardian of the estate, and New Jersey calls it a guardian of the property. Our state pages, [when a minor inherits money in Illinois](/learn/illinois/when-a-minor-inherits-money-in-illinois) and [minor inherits money in New Jersey](/learn/new-jersey/minor-inherits-money-in-new-jersey-guardian-of-the-property), walk through the appointment. The key points for a house are the same in both:
+That adult is usually a court-appointed manager of the child's property. Illinois calls the role a guardian of the estate. Our page on [when a minor inherits money in Illinois](/learn/illinois/when-a-minor-inherits-money-in-illinois) walks through the appointment. The key points for a house:
 
 - The guardian reports to the court, and may need a bond.
 - A sale generally needs the judge's approval, a fair price and a reason that benefits the child.
@@ -55,7 +55,7 @@ Take Ben, 9. His father dies without a will and without remarrying. Ben's mother
 
 Then the parent and child are co-owners, and the parent cannot sell the whole house alone. The parent can live there and keep it up, but a sale or a new mortgage touches the child's share and needs court approval. Spouses who own a home jointly with survivorship avoid the problem, because the survivor takes the whole house automatically. Problems arise when one spouse owns the home alone and leaves it by will to the children.
 
-If you are a parent reading this, check how your deed reads. A deed that says "tenants by the entirety" or "joint tenants with right of survivorship" behaves very differently from a house in your name alone. Our guides to [joint tenancy and tenancy by the entirety in Illinois](/learn/illinois/illinois-joint-tenancy-and-tenancy-by-the-entirety) and [New Jersey](/learn/new-jersey/joint-property-and-tenancy-by-the-entirety-in-new-jersey) explain each form.
+If you are a parent reading this, check how your deed reads. A deed that says "tenants by the entirety" or "joint tenants with right of survivorship" behaves very differently from a house in your name alone. Our guide to [joint tenancy and tenancy by the entirety in Illinois](/learn/illinois/illinois-joint-tenancy-and-tenancy-by-the-entirety) explains each form.
 
 ## What happens if a minor inherits a retirement account?
 
@@ -70,7 +70,7 @@ The tax consequence is the other half. Withdrawals are generally taxable income 
 | Option | How it works | Good for | Watch for |
 |---|---|---|---|
 | Revocable or testamentary trust | Trustee holds the house or account for the child | Large assets, houses | Must be signed and funded in advance |
-| UTMA custodian named on a form | Custodian manages until 21 (both states) | Smaller accounts and cash | Child gets everything at 21 |
+| UTMA custodian named on a form | Custodian manages until 21 under the Illinois UTMA | Smaller accounts and cash | Child gets everything at 21 |
 | Life estate or occupancy right for a parent | Parent lives in the house, child owns the remainder | A house the surviving parent needs | Poorly drafted ones cause disputes |
 | Transfer-on-death deed to a trust | House passes to the trust at death | Houses in states that allow it | Trust must exist first |
 | Joint ownership with survivorship | House goes straight to the survivor | Spouses | Does not help when both parents die |

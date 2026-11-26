@@ -1,7 +1,7 @@
 ---
 title: "Gift vs. inheritance tax: give to your children now or leave it at death?"
-description: "Gift or inheritance, which costs your children less in tax? Compare carryover basis and step-up with real numbers, plus Illinois and New Jersey rules on gifts."
-updated: "2026-10-26"
+description: "Gift or inheritance, which costs your children less in tax? Compare carryover basis and step-up with real numbers, plus how Illinois counts gifts for estate tax."
+updated: "2026-11-26"
 answer: >-
   For most families, leaving appreciated property at death costs the children less income tax than giving it during life. A gift keeps your original cost basis, while an inheritance gets a new basis equal to the value at death under the step-up rule. Gifts make sense when the estate is large enough to owe estate tax, when the asset is cash, or when you want to help now.
 takeaways:
@@ -9,7 +9,7 @@ takeaways:
   - "Gifts up to $19,000 per person per year in 2026 need no gift tax return. Larger gifts use your lifetime exemption of $15,000,000, and no tax is due unless that is used up."
   - "Giving makes sense for cash, for fast-growing assets in an estate that may owe estate tax, and for help your child needs now."
   - "A deathbed gift of appreciated stock or a house is usually the costliest mistake, because the child loses the step-up."
-  - "Illinois and New Jersey each look back at gifts in their own taxes, so state rules can change the answer."
+  - "Illinois has no gift tax, but it adds taxable gifts back when testing an estate against its $4 million threshold."
 faqs:
   - q: "Do gifts of stock to my children trigger tax?"
     a: "Not for you in most cases. A gift is not a sale, so you owe no income tax, and gift tax applies only if you exceed the annual exclusion and then your lifetime exemption. The child takes your cost basis, and pays capital gains tax on the whole gain when they sell. Gifts above the annual exclusion need a Form 709."
@@ -18,7 +18,7 @@ faqs:
   - q: "Is it better to add my child to the deed or leave the house in my will?"
     a: "Usually the will or a trust. Adding a child to the deed is a partial gift, so the child gets your old basis on their share, and the house is exposed to their creditors and divorce. A house passed at death gets a new basis for the whole property. A transfer-on-death deed also keeps the step-up."
   - q: "Do my heirs pay tax on an inheritance?"
-    a: "Not federal income tax on the assets themselves. The federal estate tax is paid by the estate, and only above the exemption. A few states, including New Jersey, charge an inheritance tax to certain heirs, but close family members are generally exempt."
+    a: "Not federal income tax on the assets themselves. The federal estate tax is paid by the estate, and only above the exemption. Illinois has an estate tax, not an inheritance tax, so it is also paid by the estate before heirs receive anything, and only on estates over $4 million."
   - q: "Do gifts affect Medicaid eligibility?"
     a: "Yes. A gift made within 60 months of applying for nursing home Medicaid in most states creates a penalty period. The gift tax rules and the Medicaid rules are separate, and a gift that is fine for tax can still be penalized by Medicaid."
 related:
@@ -35,7 +35,7 @@ intent: comparison
 
 Nora, 78, owns 2,000 shares of a company stock she bought in 1995 for $40,000. They are worth $240,000 now. She has two children, and her son Greg wants help with a down payment. Nora wonders whether she should give the shares to Greg today or leave them to him in her will, and which way leaves him with less tax.
 
-For this stock the answer is clear, and it surprises many people: waiting costs Greg less. This page explains why, when that reverses, and what Illinois and New Jersey add. It is part of our [estate tax guide](/learn/estate-tax).
+For this stock the answer is clear, and it surprises many people: waiting costs Greg less. This page explains why, when that reverses, and what Illinois adds. It is part of our [estate tax guide](/learn/estate-tax).
 
 ## Is it better to give assets to your children now or leave them at death?
 
@@ -88,14 +88,16 @@ Adding a child to the deed is a partial gift. If Nora adds Greg to her house dee
 
 Gifts also invite family friction. If one child receives the house early, the others may feel shortchanged. See [what happens when a parent gave money or a house to one child](/learn/after-a-death/parent-gave-money-or-a-house-to-one-child-before-death).
 
-## How do Illinois and New Jersey treat gifts?
+## How does Illinois treat gifts?
 
-Both states look back at lifetime gifts, in different ways.
+Illinois has no gift tax of its own, and no Illinois gift tax return exists. Gifts still matter for the Illinois estate tax, in two ways.
 
-- **Illinois.** The state estate tax applies to estates above $4 million, and its calculation takes certain lifetime gifts into account. A large gift does not necessarily save Illinois estate tax. See the [Illinois estate tax](/learn/illinois/illinois-estate-tax) guide.
-- **New Jersey.** The state has no estate tax but charges an inheritance tax to some heirs. Close family members, such as children and grandchildren, are generally exempt, while siblings and non-relatives pay. Certain gifts made shortly before death can be pulled into the inheritance tax, so a late gift to a sibling or friend is not a safe way around it. See the [New Jersey inheritance tax](/learn/new-jersey/new-jersey-inheritance-tax).
+- **Annual exclusion gifts leave for good.** Gifts up to $19,000 per recipient in 2026 are not taxable gifts and do not come back into the Illinois estate.
+- **Larger gifts are added back.** A gift above the annual exclusion needs a federal Form 709. It then counts as an adjusted taxable gift, which Illinois adds to the estate when testing it against $4 million. A large gift does not necessarily save Illinois estate tax. It helps mainly by moving later growth out of the estate.
 
-Neither state changes the basis rule, which is federal.
+See [lifetime gifts and the Illinois estate tax](/learn/illinois/lifetime-gifts-and-the-illinois-estate-tax) for worked numbers, and the [Illinois estate tax](/learn/illinois/illinois-estate-tax) guide for the threshold itself.
+
+Illinois does not change the basis rule, which is federal.
 
 ## Does Medicaid change the answer?
 

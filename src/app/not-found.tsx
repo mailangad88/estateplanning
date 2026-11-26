@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/ui";
+import { SERVED_OR } from "@/config/firm";
 
 export const metadata: Metadata = {
   title: "Page not found",
@@ -34,7 +35,7 @@ export default function NotFound() {
       </ul>
       <aside className="cta" style={{ marginTop: "2rem" }}>
         <strong>Rather talk it through?</strong>
-        <p>Pick a time and we will match you with an estate planning attorney in Illinois or New Jersey.</p>
+        <p>Pick a time and we will match you with an estate planning attorney in {SERVED_OR}.</p>
         <Link className="button" href="/book?from=404">Book a consult</Link>
       </aside>
     </>

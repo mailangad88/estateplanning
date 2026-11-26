@@ -1,7 +1,7 @@
 ---
 title: "How to change or revoke your estate plan: step by step for each document"
 description: "Can I change my estate plan whenever I want? Usually yes. How to amend or revoke a will, trust, power of attorney and beneficiary forms, and what to avoid."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   You can change or cancel your estate plan at any time while you have legal capacity, but each document has its own method. A will needs a codicil or a new will. A revocable trust needs a written amendment. A power of attorney is revoked in writing and with notice to the agent. Beneficiary forms are changed with the account company, not in your will.
 takeaways:
@@ -27,7 +27,6 @@ related:
   - "wills/changing-a-will-and-codicils"
   - "trusts/how-to-change-or-revoke-a-living-trust"
   - "illinois/changing-or-revoking-a-will-in-illinois"
-  - "new-jersey/changing-or-revoking-a-will-in-new-jersey"
   - "power-of-attorney/when-does-power-of-attorney-end"
 glossary: ["codicil", "revocable-trust", "irrevocable-trust", "power-of-attorney", "beneficiary", "testator"]
 intent: question
@@ -61,7 +60,7 @@ A **codicil** is a short document that amends specific parts of your will. It mu
 
 A **new will** is cleaner. It should begin by revoking all earlier wills and codicils. For anything larger than a name change, we recommend a new will.
 
-Do not write on the original, cross out lines, or staple notes to it. A handwritten change that is not properly signed may be ignored, and in the worst case the marks could be read as revoking the whole will. The detailed rules are in [changing a will and codicils](/learn/wills/changing-a-will-and-codicils), with state versions for [Illinois](/learn/illinois/changing-or-revoking-a-will-in-illinois) and [New Jersey](/learn/new-jersey/changing-or-revoking-a-will-in-new-jersey).
+Do not write on the original, cross out lines, or staple notes to it. A handwritten change that is not properly signed may be ignored, and in the worst case the marks could be read as revoking the whole will. The detailed rules are in [changing a will and codicils](/learn/wills/changing-a-will-and-codicils), with the Illinois version in [changing or revoking a will in Illinois](/learn/illinois/changing-or-revoking-a-will-in-illinois).
 
 ### What if I just want to cancel my will?
 

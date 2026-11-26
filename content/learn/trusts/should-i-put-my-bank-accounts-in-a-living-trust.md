@@ -1,7 +1,7 @@
 ---
 title: "Should I put my bank accounts in a living trust, or name a POD beneficiary?"
 description: "Should you put bank accounts in a living trust? Compare retitling with a POD beneficiary, deposit insurance and what to ask the bank before you change anything."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Often you do not need to retitle bank accounts into a living trust. A payable on death (POD) designation on the account keeps it out of probate with one short form, while retitling puts it under the trustee's control and handles incapacity better. Choose retitling for large or main accounts, POD for small ones, and check deposit insurance limits before naming several beneficiaries.
 takeaways:
@@ -35,7 +35,7 @@ intent: question
 
 You signed the living trust, the lawyer said to "fund" it and you are standing at a bank counter wondering whether the checking account needs to change. The answer is not the same for every account. Some are worth retitling and some are better left alone with one short form.
 
-This page compares the two ways to keep a bank account out of probate, explains the tradeoffs and shows how Illinois and New Jersey families usually handle it. It is part of our [trusts guide](/learn/trusts), and the general question of what belongs in a trust is covered in [what assets go in a living trust](/learn/trusts/what-assets-go-in-a-living-trust).
+This page compares the two ways to keep a bank account out of probate, explains the tradeoffs and shows how Illinois families usually handle it. It is part of our [trusts guide](/learn/trusts), and the general question of what belongs in a trust is covered in [what assets go in a living trust](/learn/trusts/what-assets-go-in-a-living-trust).
 
 ## What are the two ways to keep a bank account out of probate?
 
@@ -92,7 +92,7 @@ Two practical points. First, if you hold a large sum, spreading it over several 
 
 A joint account with a right of survivorship already passes to the survivor without probate, so there may be no reason to retitle it. The problem comes at the second death, because the survivor then owns the account in his or her sole name. Many couples keep a joint checking account for daily use and put savings in the joint trust.
 
-In Illinois, joint and POD accounts carry their own rules, covered in [Illinois payable on death and joint bank accounts](/learn/illinois/illinois-payable-on-death-and-joint-bank-accounts). New Jersey's version is in [transfer on death options in New Jersey](/learn/new-jersey/transfer-on-death-options-in-new-jersey).
+In Illinois, joint and POD accounts carry their own rules, covered in [Illinois payable on death and joint bank accounts](/learn/illinois/illinois-payable-on-death-and-joint-bank-accounts). Disputes over whether a joint account was only for convenience are covered in [convenience accounts and joint account disputes in Illinois](/learn/illinois/convenience-accounts-and-joint-account-disputes-in-illinois).
 
 ## What mistakes do people make?
 

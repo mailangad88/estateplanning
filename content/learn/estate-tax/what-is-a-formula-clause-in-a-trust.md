@@ -1,7 +1,7 @@
 ---
 title: "What is a formula clause in a trust? How married couples fund a bypass trust"
 description: "A formula clause tells the trustee how much goes to a bypass trust and how much to the spouse. In Illinois, an old federal formula can trigger tax too early."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A formula clause is wording in a married couple's trust that sets, by a calculation, how much of the first spouse's estate goes into a bypass (credit shelter) trust and how much goes to the survivor. Written to the federal exemption, a formula can overfund the bypass trust and trigger state estate tax early. Many trusts signed before 2013 need review.
 takeaways:
@@ -19,8 +19,8 @@ faqs:
     a: "Portability protects the federal exemption but does not help with a state that has no portability, such as Illinois. Many couples still want a bypass trust for the state exemption, for growth outside the survivor's estate, or for protecting the children's inheritance in a second marriage."
   - q: "Can a formula clause be changed after one spouse has died?"
     a: "Not freely. After the first death the bypass trust is usually irrevocable. The survivor can sometimes disclaim assets or the trustee can use powers in the document, so the time to revise is while both spouses are living."
-  - q: "Do New Jersey couples need to worry about this?"
-    a: "Less often. New Jersey has no estate tax and exempts children and spouses from its inheritance tax, so overfunding a bypass trust for children does not generally create a New Jersey tax. The federal formula still matters for the survivor's access to the money."
+  - q: "Do Illinois couples under $4 million need to worry about this?"
+    a: "Less about tax, but still about access. If the combined estate is under the Illinois threshold, overfunding a bypass trust does not create Illinois tax at the first death. A federal formula can still put everything in the bypass trust and leave the survivor with limited control over the money."
 related:
   - "estate-tax/bypass-trust-vs-portability"
   - "estate-tax/marital-deduction-explained"
@@ -84,9 +84,13 @@ A disclaimer plan is attractive for couples whose future is uncertain, since the
 
 If the formula refers only to the federal number, ask your attorney to run the first-death numbers for your actual estate and tell you what would happen. Do not rely on a software estimate.
 
-## Does this matter in New Jersey?
+## Does this matter if your estate is under the Illinois threshold?
 
-Less so. New Jersey has no estate tax, and its inheritance tax exempts spouses and children (see [New Jersey inheritance tax](/learn/new-jersey/new-jersey-inheritance-tax)). A New Jersey couple with a federal formula may still end up with the survivor locked out of money. For couples with children from a prior marriage, a bypass or marital trust can be a deliberate choice. Our page on [joint living trusts for married couples](/learn/trusts/joint-living-trust-for-married-couples) covers how those documents are built.
+Less so for tax. If the combined estate is under $4 million, a bypass trust funded at the first death does not create Illinois estate tax. A couple with a federal formula may still end up with the survivor locked out of money, because the formula sends everything to the bypass trust.
+
+For larger Illinois estates, the separate state QTIP election is another tool. Illinois lets the executor make an Illinois election on Form 700 that does not have to match the federal one (35 ILCS 405/2). Our page on [Illinois QTIP elections and credit shelter trusts](/learn/illinois/illinois-qtip-election-and-credit-shelter-trusts) walks through an $8 million example.
+
+For couples with children from a prior marriage, a bypass or marital trust can be a deliberate choice. Our page on [joint living trusts for married couples](/learn/trusts/joint-living-trust-for-married-couples) covers how those documents are built.
 
 ## Pecuniary or fractional: what is the difference?
 

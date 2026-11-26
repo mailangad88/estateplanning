@@ -1,7 +1,7 @@
 ---
 title: "Estate planning: a plain-English guide to protecting your family"
 description: "Start here: what estate planning is, which documents matter, how wills, trusts, probate, powers of attorney and taxes fit together, and where to read next."
-updated: "2026-10-06"
+updated: "2026-11-26"
 answer: >-
   Estate planning is the set of legal documents and account settings that decide who manages your affairs if you are
   incapacitated, who inherits when you die, and who cares for your children. A basic plan includes a will, a financial
@@ -180,7 +180,7 @@ Curious what happens when a plan is missing or out of date? Our guide to [what h
 
 ## More questions people ask
 
-If you have lived in or own property in another state, [what is community property and does it apply in Illinois or New Jersey](/learn/basics/what-is-community-property-and-does-it-apply-in-illinois-or-new-jersey) explains how marital property rules differ.
+If you have lived in or own property in another state, [what is community property and does it apply in Illinois](/learn/basics/what-is-community-property-and-does-it-apply-in-illinois) explains how marital property rules differ.
 
 When a deed or account is held jointly, [what right of survivorship means and whether it overrides your will](/learn/basics/what-does-right-of-survivorship-mean-and-what-does-it-override) shows where it helps and where it backfires.
 

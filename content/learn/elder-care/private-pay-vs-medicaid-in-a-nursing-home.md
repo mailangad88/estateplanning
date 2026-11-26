@@ -1,7 +1,7 @@
 ---
 title: "Private pay vs Medicaid in a nursing home: what changes when Medicaid starts paying"
 description: "Private pay vs Medicaid in a nursing home: how rates, beds and monthly income change once Medicaid takes over, and what to ask the home before admission."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Private pay means the resident or family pays the nursing home's full daily rate. Once Medicaid approves, the home
   is paid a lower state rate, the resident hands over nearly all monthly income except a small personal allowance,
@@ -102,9 +102,11 @@ A nursing home that takes Medicare or Medicaid must follow federal resident righ
 
 Nonpayment is one of the allowed reasons for discharge, which is why the order of events matters. A family that files a complete Medicaid application on time and keeps the home informed is in a far stronger position than one that stops paying and hopes. If the home sends a discharge notice, do not ignore it. The appeal deadline is short, and the long-term care ombudsman can help you write one. Our article on [choosing a nursing home and knowing your rights](/learn/elder-care/choosing-a-nursing-home-and-knowing-your-rights) covers the rights in more detail.
 
-## How does this work in Illinois and New Jersey?
+## How does this work in Illinois?
 
-Both states run Medicaid long-term care programs with their own application, income rules and facility lists. In Illinois, our guide to [nursing home eligibility and planning in Illinois](/learn/illinois/illinois-medicaid-nursing-home-eligibility-and-planning) gives the local details. In New Jersey, read [Medicaid and nursing home planning in New Jersey](/learn/new-jersey/new-jersey-medicaid-and-nursing-home-planning). Each state also has a long-term care ombudsman, a free advocate for residents, whose office can tell you about a home's complaint history before you commit.
+Illinois runs its own Medicaid long-term care program, with its own application, income rules and facility lists. Applications go through the state's ABE (Application for Benefits Eligibility) system, and an agent under a power of attorney or a guardian can apply for a parent who cannot sign. The state reviews transfers made in the 60 months before the application, so gifts made while paying privately can cause a penalty period later. Our guide to [nursing home eligibility and planning in Illinois](/learn/illinois/illinois-medicaid-nursing-home-eligibility-and-planning) gives the local details.
+
+Illinois also has a long-term care ombudsman, a free advocate for residents, whose office can tell you about a home's complaint history before you commit.
 
 ## How we can help
 

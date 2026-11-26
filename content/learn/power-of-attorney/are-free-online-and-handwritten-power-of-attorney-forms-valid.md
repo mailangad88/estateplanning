@@ -1,7 +1,7 @@
 ---
 title: "Are free online and handwritten power of attorney forms valid?"
 description: "A free online or handwritten power of attorney can be valid if it meets your state signing rules. Learn what makes one fail and when a bank refuses it anyway."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A free online or handwritten power of attorney can be legally valid if it names an agent, grants clear powers, is signed by you while competent, and follows your state's notary or witness rules. Validity and acceptance are different things, though, and banks often turn away forms they do not recognize. A verbal agreement is not enough.
 takeaways:
@@ -119,7 +119,7 @@ If your situation includes a trust, a business, rental property or Medicaid plan
 
 ## How state law changes this
 
-State statutes control who must witness, whether a notary alone is sufficient, whether a statutory form is mandatory, and whether remote notarization is available. Some states want witnesses on top of the notary, while others need only the notary. Our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides cover those two states. Always check your own state's rule.
+State statutes control who must witness, whether a notary alone is sufficient, whether a statutory form is mandatory, and whether remote notarization is available. Some states want witnesses on top of the notary, while others need only the notary. Our [Illinois guide](/estate-planning/illinois) covers the Illinois rules. Always check your own state's rule.
 
 ## How we can help
 

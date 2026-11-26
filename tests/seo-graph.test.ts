@@ -45,19 +45,18 @@ describe("articleLd", () => {
 });
 
 describe("siteGraphLd", () => {
-  it("defines the firm and attorney once with stable ids", () => {
+  it("defines the firm once with a stable id", () => {
     const g = siteGraphLd();
     const org = nodes(g).find((n) => n["@id"] === ORG_ID)!;
-    const person = nodes(g).find((n) => n["@id"] === ATTORNEY_ID)!;
     expect(org["@type"]).toEqual(["Organization", "LegalService"]);
-    expect(person["@type"]).toBe("Person");
-    expect(person.name).toBe(firm.attorneyName);
   });
 
-  it("publishes only the attorney's name and job title", () => {
-    const person = nodes(siteGraphLd()).find((n) => n["@id"] === ATTORNEY_ID)!;
-    expect(Object.keys(person).sort()).toEqual(["@id", "@type", "jobTitle", "name"]);
-    expect(person.jobTitle).toBe(firm.attorneyTitle);
+  it("names no attorney while publishAttorneyName is off", () => {
+    if (firm.publishAttorneyName) return;
+    const g = siteGraphLd();
+    expect(ATTORNEY_ID).toBe(ORG_ID);
+    expect(nodes(g).some((n) => n["@type"] === "Person")).toBe(false);
+    expect(JSON.stringify(g)).not.toContain(firm.attorneyName);
   });
 
   it("omits sameAs unless configured", () => {

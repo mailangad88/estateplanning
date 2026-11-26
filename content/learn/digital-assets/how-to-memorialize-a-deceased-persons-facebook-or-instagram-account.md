@@ -1,7 +1,7 @@
 ---
 title: "How to memorialize a deceased person's Facebook or Instagram account"
 description: "Step-by-step help to memorialize or delete a loved one's Facebook or Instagram account, who can ask, what proof is needed, and what a legacy contact can do."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   To memorialize a Facebook or Instagram account, a family member or friend submits a request to Meta with proof of death, such as an obituary link. Memorializing locks the account so no one can log in and keeps the posts visible to the original audience. Deleting the account instead usually requires an immediate family member or executor with documents.
 takeaways:
@@ -89,7 +89,7 @@ A personal profile and a Page are separate things. If the person was the only ad
 
 ## What if the person did not leave a legacy contact?
 
-The family can still act. They need proof of death for memorialization and proof of relationship for deletion. An executor appointed under Illinois or New Jersey law has the clearest standing. The state laws that give an executor access to digital assets are described in [Illinois digital assets law for executors](/learn/illinois/illinois-digital-assets-law-for-executors) and [New Jersey digital assets law](/learn/new-jersey/new-jersey-digital-assets-law). They give a fiduciary limited access to a catalog of the person's communications, not the content, unless the user consented or a court orders it.
+The family can still act. They need proof of death for memorialization and proof of relationship for deletion. An executor appointed by an Illinois court has the clearest standing. The state law that gives an executor access to digital assets is described in [Illinois digital assets law for executors](/learn/illinois/illinois-digital-assets-law-for-executors). It gives a fiduciary limited access to a catalog of the person's communications, not the content, unless the user consented or a court orders it.
 
 If the family cannot agree, take the middle path: memorialize first, since it can be reversed.
 

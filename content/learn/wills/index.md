@@ -1,7 +1,7 @@
 ---
 title: "Wills: what they do, what they don't, and how to make one that holds up"
 description: "A complete guide to wills: what a will does, how to make one valid, choosing an executor, DIY risks, contests, storage and the assets a will can't reach."
-updated: "2026-10-06"
+updated: "2026-11-26"
 answer: >-
   A will is a signed legal document that says who receives your property, who manages your estate as executor, and who will raise your minor children as guardian. It takes effect only at death and covers only assets in your name alone. It must meet state signing rules, and it generally goes through probate before property is distributed.
 takeaways:
@@ -164,17 +164,17 @@ An old will can cause as many problems as no will. See [what happens if you die 
 
 ## More questions people ask
 
-If you are choosing people to sign, [who can witness a will in Illinois or New Jersey](/learn/wills/who-can-witness-a-will-in-illinois-and-new-jersey) explains who is safe and what happens when a beneficiary signs.
+If you are choosing people to sign, [who can witness a will in Illinois](/learn/wills/who-can-witness-a-will-in-illinois) explains who is safe and what happens when a beneficiary signs.
 
 Thinking about a template or kit? [Are free templates for a will legal](/learn/wills/are-free-templates-for-a-will-legal) covers what works, what fails and a checklist to run first.
 
 If a beneficiary caused the death, [can someone who kills you inherit from you](/learn/wills/can-someone-who-kills-you-inherit-from-you) explains the slayer rule and how it treats wills, joint property and insurance.
 
-Wondering when the family finds out what a will says? [Is there a reading of the will](/learn/wills/is-there-a-reading-of-the-will) lays out the filing, notice and deadlines in Illinois and New Jersey.
+Wondering when the family finds out what a will says? [Is there a reading of the will](/learn/wills/is-there-a-reading-of-the-will) lays out the filing, notice and deadlines in Illinois.
 
 To give to a charity through your will, [how to leave money to charity in your will](/learn/wills/how-to-leave-money-to-charity-in-your-will) covers fixed gifts versus percentages, exact legal names and backup wording.
 
-If you wonder whether a will must be registered, [can you file your will with the court while you are alive](/learn/wills/can-you-file-your-will-with-the-court-while-you-are-alive) explains what Illinois and New Jersey require.
+If you wonder whether a will must be registered, [can you file your will with the court while you are alive](/learn/wills/can-you-file-your-will-with-the-court-while-you-are-alive) explains what Illinois requires.
 
 Holding an old will? [Do wills expire](/learn/wills/do-wills-expire-is-an-old-will-still-valid) shows what stays valid and a checklist for deciding when to redo it.
 
