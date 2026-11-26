@@ -3,6 +3,9 @@ import Link from "next/link";
 import { firm } from "@/config/firm";
 import { PageHeader } from "@/components/ui";
 
+/** The site names no attorney while firm.publishAttorneyName is off. */
+const REVIEWER = firm.publishAttorneyName ? firm.attorneyName : "The reviewing attorney";
+
 export const metadata: Metadata = {
   title: "How we write and review our content",
   description: "Who writes our estate planning content, how an attorney reviews it, and how we keep it current.",
@@ -14,7 +17,7 @@ export default function EditorialPolicy() {
     <>
       <PageHeader kicker="How we write" art="SpotDocumentsSigned" title="Editorial and review policy" lead="Every page on this site is meant to be accurate, specific and useful to a family deciding what to do." />
       <h2>Who writes it</h2>
-      <p>Our content starts from recorded answers {firm.attorneyName} gave to the questions clients ask most. Editors turn those answers into articles in plain English. Software, including AI writing tools, may help with research, drafting and formatting. Nothing is marked reviewed until the attorney has checked and approved it; the <Link href="/editorial-policy/review-log">content review log</Link> shows each step and the status of every page.</p>
+      <p>Our content starts from recorded answers {firm.publishAttorneyName ? firm.attorneyName : "our reviewing attorney"} gave to the questions clients ask most. Editors turn those answers into articles in plain English. Software, including AI writing tools, may help with research, drafting and formatting. Nothing is marked reviewed until the attorney has checked and approved it; the <Link href="/editorial-policy/review-log">content review log</Link> shows each step and the status of every page.</p>
       <div className="table-wrap">
         <table>
           <caption>How a page moves from draft to reviewed</caption>
@@ -23,14 +26,14 @@ export default function EditorialPolicy() {
           </thead>
           <tbody>
             <tr><td>1. Research and draft</td><td>Editors, with software help</td><td>Draft pending attorney review</td></tr>
-            <tr><td>2. Legal check</td><td>{firm.attorneyName}</td><td>Draft pending attorney review</td></tr>
-            <tr><td>3. Approved</td><td>{firm.attorneyName}</td><td>Reviewed, with the review date</td></tr>
-            <tr><td>4. Yearly re-check</td><td>Editors and {firm.attorneyName}</td><td>New &quot;Updated&quot; date</td></tr>
+            <tr><td>2. Legal check</td><td>{REVIEWER}</td><td>Draft pending attorney review</td></tr>
+            <tr><td>3. Approved</td><td>{REVIEWER}</td><td>Reviewed, with the review date</td></tr>
+            <tr><td>4. Yearly re-check</td><td>Editors and {firm.publishAttorneyName ? firm.attorneyName : "the reviewing attorney"}</td><td>New &quot;Updated&quot; date</td></tr>
           </tbody>
         </table>
       </div>
       <h2>Who reviews it</h2>
-      <p>Each page is reviewed by {firm.attorneyName}, {firm.attorneyTitle.toLowerCase()}. Pages show &quot;Draft pending attorney review&quot; until that review is done, and the review date once it is.</p>
+      <p>Each page is reviewed by {firm.publishAttorneyName ? `${firm.attorneyName}, ${firm.attorneyTitle.toLowerCase()}` : firm.attorneyPublicLabel}. Pages show &quot;Draft pending attorney review&quot; until that review is done, and the review date once it is.</p>
       <h2>Keeping it current</h2>
       <p>Pages that cite dollar figures or deadlines are re-checked every January and whenever the law changes. Each page shows the date it was last updated.</p>
       <h2>What this content is not</h2>
