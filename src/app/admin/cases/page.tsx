@@ -1,22 +1,20 @@
 import Link from "next/link";
-import { AlertTriangle, Briefcase, CheckCircle2, UserX } from "lucide-react";
+import { AlertTriangle, Briefcase, CheckCircle2, Columns3, List, Search as SearchIcon, UserX } from "lucide-react";
 import { CASE_PHASES, JOURNEY_STEPS } from "@/lib/caseJourney";
 import { can, ForbiddenError } from "@/server/auth/policy";
 import { currentActor, getDb, scopedDb } from "@/server/runtime";
-import { caseBoard, type CaseBoardFilters, type CaseCard } from "@/server/services/caseBoard";
+import { caseBoard, caseJourney, type CaseBoardFilters, type CaseCard, type CaseJourneyView } from "@/server/services/caseBoard";
+import { CasePanel, CaseTable, GROUPS, listHref } from "./CaseList";
 import styles from "./cases.module.css";
 import { initials, StepTrack, TONE } from "./parts";
 
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Cases", robots: { index: false, follow: false } };
 
-type Search = { lawyer?: string; paralegal?: string; stuck?: string; closed?: string };
+type Search = { lawyer?: string; paralegal?: string; stuck?: string; closed?: string; view?: string; q?: string; group?: string; page?: string; open?: string; mine?: string; updated?: string; error?: string };
 
 function hrefWith(sp: Search, patch: Partial<Search>): string {
-  const q = new URLSearchParams();
-  for (const [k, v] of Object.entries({ ...sp, ...patch })) if (v) q.set(k, v);
-  const s = q.toString();
-  return s ? `/admin/cases?${s}` : "/admin/cases";
+  return listHref(sp, { page: undefined, open: undefined, ...patch });
 }
 
 const Q_CHIP: Record<string, string> = { attorney: "Questionnaire: attorney filling in", paralegal: "Questionnaire: with paralegal", ready_for_review: "Questionnaire: ready for attorney" };
@@ -75,6 +73,26 @@ export default async function CasesPage({ searchParams }: { searchParams: Promis
     throw err;
   }
   const isPara = actor.role === "paralegal";
+  const isList = sp.view !== "board";
+  const needle = sp.q?.trim().toLowerCase();
+  const listCards: CaseCard[] = [...board.columns.flatMap((c) => c.cards), ...board.exited]
+    .filter((c) => !needle || [c.name, c.leadId, c.matter, c.lawyerName, c.paralegalName, c.journey.current?.label].some((v) => v?.toLowerCase().includes(needle)))
+    .filter((c) => sp.mine !== "1" || c.mine);
+  let panel: CaseJourneyView | undefined;
+  if (isList && sp.open) {
+    try {
+      panel = await caseJourney(scopedDb(await getDb(), actor), actor, sp.open);
+    } catch (err) {
+      if (!(err instanceof ForbiddenError)) throw err;
+    }
+  }
+  const presets: { label: string; patch: Partial<Search>; on: boolean }[] = [
+    { label: "All open", patch: { stuck: undefined, paralegal: undefined, mine: undefined, closed: undefined }, on: !filters.stuck && !filters.paralegalId && sp.mine !== "1" && !filters.showClosed },
+    ...(actor.role === "attorney" ? [{ label: "My cases", patch: { mine: sp.mine === "1" ? undefined : "1" }, on: sp.mine === "1" }] : []),
+    { label: "Stuck", patch: { stuck: filters.stuck ? undefined : "1" }, on: !!filters.stuck },
+    ...(!isPara ? [{ label: "No paralegal", patch: { paralegal: filters.paralegalId === "none" ? undefined : "none" }, on: filters.paralegalId === "none" }] : []),
+    { label: "Include closed", patch: { closed: filters.showClosed ? undefined : "1" }, on: !!filters.showClosed },
+  ];
   const byPhase = Object.fromEntries(board.columns.map((c) => [c.key, c.cards.length]));
   const allPhases = CASE_PHASES.map((p) => ({ ...p, n: byPhase[p.key] ?? 0 }));
   const shownTotal = board.columns.reduce((n, c) => n + c.cards.length, 0);
@@ -90,6 +108,10 @@ export default async function CasesPage({ searchParams }: { searchParams: Promis
             {" "}{JOURNEY_STEPS.length} steps, in six phases.
           </p>
         </div>
+        <nav className={styles.viewToggle} aria-label="View">
+          <Link href={hrefWith(sp, { view: undefined })} className={isList ? styles.viewOn : ""} aria-current={isList ? "page" : undefined}><List size={16} aria-hidden /> List</Link>
+          <Link href={hrefWith(sp, { view: "board" })} className={!isList ? styles.viewOn : ""} aria-current={!isList ? "page" : undefined}><Columns3 size={16} aria-hidden /> Board</Link>
+        </nav>
       </div>
 
       <ul className={styles.tiles} aria-label="Case totals">
@@ -99,6 +121,49 @@ export default async function CasesPage({ searchParams }: { searchParams: Promis
         <li><Link className={`${styles.tile} ${styles.tileGood} ${filters.showClosed ? styles.tileOn : ""}`} href={hrefWith(sp, { closed: filters.showClosed ? undefined : "1" })}><span className={styles.tileIcon}><CheckCircle2 size={18} aria-hidden /></span><span><span className={styles.tileNum}>{board.counts.closed}</span><span className={styles.tileLabel}>Closed</span></span></Link></li>
       </ul>
 
+      {isList ? (
+        <>
+      <form className={styles.toolbar} method="get" action="/admin/cases">
+        <label className={styles.search}><SearchIcon size={16} aria-hidden /><span className="sr-only">Search cases</span><input type="search" name="q" defaultValue={sp.q ?? ""} placeholder="Search by client, attorney or step" /></label>
+        <label className={styles.toolSelect}>
+          <span>Attorney</span>
+          <select name="lawyer" defaultValue={filters.lawyerId ?? ""}>
+            <option value="">All</option>
+            {board.lawyers.map((l) => <option key={l.id} value={l.id}>{l.name.replace(/,?\s*Esq\.?$/i, "")}</option>)}
+          </select>
+        </label>
+        {!isPara && (
+          <label className={styles.toolSelect}>
+            <span>Paralegal</span>
+            <select name="paralegal" defaultValue={filters.paralegalId ?? ""}>
+              <option value="">All</option>
+              <option value="none">No paralegal yet</option>
+              {board.paralegals.map((l) => <option key={l.id} value={l.id}>{l.name}</option>)}
+            </select>
+          </label>
+        )}
+        <label className={styles.toolSelect}>
+          <span>Group by</span>
+          <select name="group" defaultValue={sp.group ?? ""}>
+            <option value="">None</option>
+            {Object.entries(GROUPS).map(([k, g]) => <option key={k} value={k}>{g.label}</option>)}
+          </select>
+        </label>
+        {filters.stuck && <input type="hidden" name="stuck" value="1" />}
+        {filters.showClosed && <input type="hidden" name="closed" value="1" />}
+        {sp.mine === "1" && <input type="hidden" name="mine" value="1" />}
+        <button className={styles.applyBtn} type="submit">Apply</button>
+      </form>
+      <nav className={styles.presets} aria-label="Saved views">
+        {presets.map((p) => <Link key={p.label} href={hrefWith(sp, p.patch)} className={p.on ? styles.presetOn : ""} aria-current={p.on ? "true" : undefined}>{p.label}</Link>)}
+      </nav>
+      <div className={`${styles.listLayout} ${panel ? styles.listWithPanel : ""}`}>
+        <CaseTable cards={listCards} sp={sp} showParalegal={!isPara} />
+        {panel && <CasePanel view={panel} sp={sp} closeHref={listHref(sp, { open: undefined, updated: undefined, error: undefined })} />}
+      </div>
+        </>
+      ) : (
+        <>
       <div className={styles.journeyBar} aria-label="Cases by phase">
         {allPhases.filter((p) => (p.key !== "closed" || filters.showClosed) && (p.key !== "lead" || p.n > 0)).map((p) => (
           <a key={p.key} href={`#phase-${p.key}`} className={`${styles.journeySeg} ${styles[`t_${p.tone}`]} ${p.n === 0 ? styles.journeyEmpty : ""}`} style={{ flexGrow: Math.max(1, p.n) }}>
@@ -153,7 +218,9 @@ export default async function CasesPage({ searchParams }: { searchParams: Promis
           <ul className={styles.exitedList}>{board.exited.map((c) => <li key={c.leadId}><Card card={c} showParalegal={!isPara} /></li>)}</ul>
         </section>
       )}
-      <p className={styles.note}>{shownTotal} shown. First name and last initial only; open a case for the full journey. A red edge means the case has sat on its step longer than it should. Every view of this page is recorded in the audit log.</p>
+        </>
+      )}
+      <p className={styles.note}>{isList ? listCards.length : shownTotal} shown. First name and last initial only; open a case for the full journey. A red edge means the case has sat on its step longer than it should. Every view of this page is recorded in the audit log.</p>
     </div>
   );
 }

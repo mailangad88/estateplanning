@@ -71,3 +71,11 @@ describe("portal home", () => {
     expect(log.length).toBe(1);
   });
 });
+
+describe("case list links", () => {
+  it("keeps filters and drops one-off notices when opening a case", async () => {
+    const { listHref } = await import("@/app/admin/cases/CaseList");
+    expect(listHref({ q: "owen", group: "phase", updated: "drafted", error: "x" }, { open: "case-1" })).toBe("/admin/cases?q=owen&group=phase&open=case-1");
+    expect(listHref({ open: "case-1" }, { open: undefined })).toBe("/admin/cases");
+  });
+});

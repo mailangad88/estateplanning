@@ -11,9 +11,13 @@ const ACTIONS: StepAction[] = ["done", "skip", "undo"];
 export async function POST(request: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const isForm = (request.headers.get("content-type") ?? "").includes("form");
-  const back = (q: string) => NextResponse.redirect(new URL(`/admin/cases/${encodeURIComponent(id)}?${q}`, request.url), 303);
+  // A form may ask to come back to the case list (with its filters and the side panel open) instead of the journey page.
+  let page = `/admin/cases/${encodeURIComponent(id)}`;
+  const back = (q: string) => NextResponse.redirect(new URL(`${page}${page.includes("?") ? "&" : "?"}${q}`, request.url), 303);
   const res = await withActor(request, async ({ db, actor, request }) => {
     const body = isForm ? Object.fromEntries(await request.formData()) : await request.json().catch(() => ({}));
+    const ret = String(body.return ?? "");
+    if (/^\/admin\/cases(\?[^#\s]*)?$/.test(ret)) page = ret;
     const action = String(body.action ?? "done") as StepAction;
     if (!ACTIONS.includes(action)) throw new Error("action must be done, skip or undo");
     const lead = await updateCaseStep(db, actor, id, String(body.step ?? ""), action, body.note ? String(body.note) : undefined);
