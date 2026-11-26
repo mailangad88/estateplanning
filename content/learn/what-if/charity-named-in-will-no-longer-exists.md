@@ -1,7 +1,7 @@
 ---
 title: "What happens if you leave money to a charity that no longer exists?"
 description: "A charity named in your will may close, merge, rename itself or refuse the gift. Learn what a court does with the money and how to word a gift so it lands."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   If the charity merged or changed its name, the gift usually goes to its successor. If it closed, the court may redirect the money to a similar charity under the cy pres doctrine, but only when your will shows a broader charitable purpose. If it shows no such purpose, the gift can fail and fall to the residue or your heirs.
 takeaways:
@@ -95,7 +95,7 @@ The time and cost drivers in a case like this are the court hearing, notice to t
 
 ## How state law changes this
 
-States differ on how readily courts use cy pres, whether the attorney general must be notified, and whether a gift to a dissolved organization lapses or is redirected. Some states presume general charitable intent unless the will says otherwise. Others require proof. Rules for gifts to churches, to unincorporated groups and to organizations that cease to exist before the will is signed also vary. See our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides, and ask an attorney about local practice.
+States differ on how readily courts use cy pres, whether the attorney general must be notified, and whether a gift to a dissolved organization lapses or is redirected. Some states presume general charitable intent unless the will says otherwise. Others require proof. Rules for gifts to churches, to unincorporated groups and to organizations that cease to exist before the will is signed also vary. See our [Illinois guide](/estate-planning/illinois) and the page on [leaving a gift to a charity in an Illinois will](/learn/illinois/leaving-a-gift-to-a-charity-in-an-illinois-will), and ask an attorney about local practice.
 
 ## How to prevent it
 

@@ -1,7 +1,7 @@
 ---
 title: "Do notes, letters and spoken wishes bind your family? What a will can and cannot enforce"
 description: "A note stapled to a will, a letter to the kids or a promise at the bedside rarely binds anyone. See what carries legal force and how to make your wishes stick."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Notes, letters and spoken wishes generally do not bind your family unless they are part of a properly signed will or another legal document. A letter of instruction can guide your executor on funerals, keepsakes and pets, but heirs and the court are not required to follow it. Anything you need enforced belongs in the will itself.
 takeaways:
@@ -77,7 +77,7 @@ Courts also treat last-minute statements with care, because they are a favorite 
 
 It can express your wishes, but a will is a poor tool for it, and the law often hands the decision to someone you did not choose. The will may not be found for days, and the funeral may be over by the time it is read. Many states give authority over burial and cremation to a spouse first, then adult children, then other relatives, unless you have signed a written appointment naming someone.
 
-Illinois has a statute on this subject, covered in [the Illinois Disposition of Remains Act](/learn/illinois/illinois-disposition-of-remains-act). The [New Jersey funeral and burial decisions](/learn/new-jersey/who-controls-funeral-and-burial-decisions-in-new-jersey) page does the same for that state. In both, the practical answer is the same: name the person who decides, put your preferences in writing, and make sure they know where the paper is.
+Illinois has a statute on this subject, covered in [the Illinois Disposition of Remains Act](/learn/illinois/illinois-disposition-of-remains-act). The practical answer is simple: name the person who decides, put your preferences in writing, and make sure they know where the paper is.
 
 For a family that expects a disagreement, the [who decides funeral arrangements when family disagrees](/learn/after-a-death/who-decides-funeral-arrangements-when-family-disagrees) page describes what happens when no appointment exists. You can also plan ahead using [plan your own funeral in advance](/learn/basics/plan-your-own-funeral-in-advance).
 

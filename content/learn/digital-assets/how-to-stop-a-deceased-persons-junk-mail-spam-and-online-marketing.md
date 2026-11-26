@@ -1,7 +1,7 @@
 ---
 title: "How to stop a deceased person's junk mail, spam and credit card offers"
 description: "Stop junk mail, spam and pre-approved credit offers for someone who has died. See which opt-out lists work, who can sign up and how mail can reveal accounts."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   To stop a deceased person's junk mail, register their name on the Deceased Do Not Contact list run by the DMAchoice program, opt out of pre-screened credit offers at optoutprescreen.com, and ask the credit bureaus to flag the file as deceased. Expect the mail to taper off over about three months, not stop overnight.
 takeaways:
@@ -79,13 +79,13 @@ Without that authority, do not fill out the form yourself in the person's name. 
 
 Treat the inbox as sensitive. Do not reply to messages or click links in them, and do not unsubscribe from anything you do not recognize. A scam sender who gets a click knows the address is live. Read the list of senders instead. Subscriptions you can cancel, receipts from online stores and notices from banks tell you which accounts exist.
 
-Whether you may open the email at all depends on authority, and the rules differ from account to account. We explain this in [can an executor access email](/learn/digital-assets/can-an-executor-access-email). In both Illinois and New Jersey, a fiduciary has a statutory path to a deceased person's digital records. See the state articles on [Illinois digital assets law for executors](/learn/illinois/illinois-digital-assets-law-for-executors) and [New Jersey digital assets law](/learn/new-jersey/new-jersey-digital-assets-law).
+Whether you may open the email at all depends on authority, and the rules differ from account to account. We explain this in [can an executor access email](/learn/digital-assets/can-an-executor-access-email). In Illinois, a fiduciary has a statutory path to a deceased person's digital records. See our article on [Illinois digital assets law for executors](/learn/illinois/illinois-digital-assets-law-for-executors).
 
 Set up a rule to forward or label financial senders so you do not miss a bill. If you are unsure which recurring charges to stop, check the person's card statements and use our checklist on [subscriptions after death](/learn/digital-assets/subscriptions-and-purchased-media-after-death).
 
 ## Can the unclaimed property mail help?
 
-Yes, it is one of the more useful kinds. States hold forgotten bank balances, uncashed checks and insurance payouts. Illinois and New Jersey both keep searchable databases, and an executor can claim on behalf of the estate. The steps are in [finding unclaimed property for an Illinois estate](/learn/illinois/finding-unclaimed-property-for-an-illinois-estate) and [for a New Jersey estate](/learn/new-jersey/finding-unclaimed-property-for-a-new-jersey-estate). Beware of letters that charge a fee to find property for you. The state search is free.
+Yes, it is one of the more useful kinds. States hold forgotten bank balances, uncashed checks and insurance payouts. Illinois keeps a searchable database, and an executor can claim on behalf of the estate. The steps are in [finding unclaimed property for an Illinois estate](/learn/illinois/finding-unclaimed-property-for-an-illinois-estate). Beware of letters that charge a fee to find property for you. The state search is free.
 
 ## When should you worry about fraud?
 

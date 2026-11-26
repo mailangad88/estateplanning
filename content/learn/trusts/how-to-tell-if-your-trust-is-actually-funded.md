@@ -1,7 +1,7 @@
 ---
 title: "How do you know if your trust is funded? A self-check, account by account"
 description: "Signing a living trust does not put anything in it. Use this account-by-account self-check to see what the trust really owns and what still needs retitling."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Your trust is funded only if the assets are titled in the trust's name or name the trust as beneficiary. Check each deed, bank account, brokerage account and policy: the statement or title should read "Your Name, Trustee of the Your Name Trust." Anything still in your personal name will usually need probate, no matter what the trust document says.
 takeaways:
@@ -93,7 +93,7 @@ Step by step, in the order that tends to go smoothly.
 6. **Ask for written confirmation.** Keep the new statement or letter showing the changed title.
 7. **Update the schedule.** If your trust has a list of assets, add the new items with dates.
 
-Illinois and New Jersey residents will find state-specific points in the [Illinois living trusts](/learn/illinois/illinois-living-trusts) and [New Jersey living trusts](/learn/new-jersey/living-trusts-in-new-jersey) pages, including how recording and transfer taxes work for real estate.
+Illinois residents will find state-specific points in the [Illinois living trusts](/learn/illinois/illinois-living-trusts) page, including how recording and transfer taxes work for real estate, and in [funding a living trust in Illinois](/learn/illinois/funding-a-living-trust-in-illinois).
 
 <!-- visual: timeline id=trust-funding -->
 

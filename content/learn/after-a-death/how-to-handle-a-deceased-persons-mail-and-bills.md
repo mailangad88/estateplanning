@@ -1,7 +1,7 @@
 ---
 title: "How to handle a deceased person's mail and bills"
-description: "Sort a deceased person's mail, forward it, stop the junk and pay bills from the right account, in the right order. Plain steps for Illinois and New Jersey."
-updated: "2026-10-26"
+description: "Sort a deceased person's mail, forward it, stop the junk and pay bills from the right account, in the right order. Plain steps for an Illinois estate."
+updated: "2026-11-26"
 answer: >-
   Collect the mail in one place, sort it into bills, financial statements, government notices and junk, and forward it to the executor through the post office once a court appoints one. Do not pay bills from your own money, except the funeral. Once the executor has letters and an estate account, pay in order: secured debts and taxes first, then ordinary bills, as the estate allows.
 takeaways:
@@ -98,7 +98,7 @@ Each state ranks claims by statute, so treat this as a general order and check t
 4. **Last-illness medical bills and the final bills for care.**
 5. **Everything else:** credit cards, personal loans, store accounts.
 
-The key rule is not to pay lower categories while higher ones are unpaid and the estate might be short. Illinois ranks claims in classes (755 ILCS 5/18-10), and New Jersey has its own order. See [how creditor claims work in an Illinois estate](/learn/illinois/how-creditor-claims-work-in-an-illinois-estate) and [creditor claims in New Jersey](/learn/new-jersey/creditor-claims-and-paying-debts-of-a-new-jersey-estate).
+The key rule is not to pay lower categories while higher ones are unpaid and the estate might be short. Illinois ranks claims in classes (755 ILCS 5/18-10). See [how creditor claims work in an Illinois estate](/learn/illinois/how-creditor-claims-work-in-an-illinois-estate).
 
 ## What about autopay and recurring charges?
 
@@ -112,7 +112,7 @@ A simple ledger works: date received, who sent it, amount, whether paid, from wh
 
 ## How state law changes this
 
-Creditor notice periods, the order of payment, and what an executor may do before court appointment differ by state. Illinois executors publish a notice to creditors and set a claims deadline, and New Jersey has its own process and time limits. Your state guide, [Illinois](/estate-planning/illinois) or [New Jersey](/estate-planning/new-jersey), has the local steps.
+Creditor notice periods, the order of payment, and what an executor may do before court appointment differ by state. Illinois executors publish a notice to creditors, and the claim period runs at least 6 months from the first published notice (755 ILCS 5/18-3). The [Illinois estate planning guide](/estate-planning/illinois) has the local steps.
 
 For the marketing lists, spam and online ads, see [how to stop a deceased person's junk mail and spam](/learn/digital-assets/how-to-stop-a-deceased-persons-junk-mail-spam-and-online-marketing).
 

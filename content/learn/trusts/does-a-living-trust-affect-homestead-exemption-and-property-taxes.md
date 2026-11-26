@@ -1,9 +1,9 @@
 ---
 title: "Does a living trust affect your homestead exemption and property taxes?"
-description: "Moving your Illinois or New Jersey home into a revocable trust usually keeps your property tax exemptions, but a missed form can cost you a year of savings."
-updated: "2026-10-26"
+description: "Moving your Illinois home into a revocable trust usually keeps your property tax exemptions, but a missed form can cost you a year of savings."
+updated: "2026-11-26"
 answer: >-
-  A revocable living trust does not normally cost you your homestead exemption or property tax reassessment when you still live in the home. In Illinois and New Jersey, exemptions generally follow who lives in the house and has the beneficial interest. The risk is paperwork: some assessors ask for a trust certification, and a missed form can cost a year of savings.
+  A revocable living trust does not normally cost you your homestead exemption or property tax reassessment when you still live in the home. In Illinois, exemptions generally follow who lives in the house and has the beneficial interest. The risk is paperwork: some assessors ask for a trust certification, and a missed form can cost a year of savings.
 takeaways:
   - "A transfer to your own revocable trust is generally not treated as a sale for property tax purposes."
   - "Exemptions depend on occupancy and beneficial ownership, so you must still live in the home."
@@ -12,7 +12,7 @@ takeaways:
   - "Creditor homestead protection in Illinois is a separate rule from the property tax exemption."
 faqs:
   - q: "Will my property taxes go up if I put my house in a trust?"
-    a: "Not because of the transfer to your own revocable trust. Illinois and New Jersey base the bill on assessed value and tax rates, not on who holds title. Your bill can still change for the usual reasons, such as a new assessment or a rate change."
+    a: "Not because of the transfer to your own revocable trust. Illinois bases the bill on assessed value and tax rates, not on who holds title. Your bill can still change for the usual reasons, such as a new assessment or a rate change."
   - q: "Do I have to re-apply for my senior or homeowner exemption after a deed to a trust?"
     a: "Sometimes. Counties handle it differently. Some carry the exemption forward automatically, and others ask for an affidavit or a copy of the trust certification. Call the assessor or check the website before you record the deed."
   - q: "Does a trust protect my home from creditors under the Illinois homestead exemption?"
@@ -27,7 +27,7 @@ related:
   - "property-and-assets/property-tax-reassessment-and-transfer-tax-when-a-house-passes-to-family"
   - "illinois/illinois-homestead-exemption-after-a-death"
   - "illinois/illinois-living-trusts"
-  - "new-jersey/living-trusts-in-new-jersey"
+  - "illinois/illinois-property-tax-exemptions-after-a-spouse-dies"
 glossary: ["revocable-trust", "living-trust", "trustee", "grantor", "irrevocable-trust"]
 review: pending
 intent: question
@@ -35,13 +35,13 @@ intent: question
 
 You have been told that a living trust keeps your house out of probate. Now your tax bill is the worry. Will the county think you sold the house and raise your assessment? Will the homeowner exemption that takes a bit off your bill every year disappear the day the deed is recorded?
 
-In most cases the answer is no. But the people who lose a year of savings are almost always the ones who never made the phone call. This page covers what a trust does to property taxes and exemptions in Illinois and New Jersey, and the one call and one form that prevent the problem.
+In most cases the answer is no. But the people who lose a year of savings are almost always the ones who never made the phone call. This page covers what a trust does to property taxes and exemptions in Illinois, and the one call and one form that prevent the problem.
 
 ## Does putting a house in a trust trigger a reassessment?
 
 Putting a house in your own revocable trust does not normally trigger a sale-based reassessment. The law looks at who really owns the property. With a revocable trust you are both the person who created it and the person who benefits from it, so nothing has changed hands in a way that tax law cares about.
 
-Illinois and New Jersey both set the bill from assessed value and local tax rates. Neither state has the kind of reassessment-on-transfer rule that other states use. A change of title alone does not reset your assessment. What can still move your bill is the same thing that always could: a countywide reassessment, a new school levy, or an addition to the house.
+Illinois sets the bill from assessed value and local tax rates. It does not have the kind of reassessment-on-transfer rule that other states use. A change of title alone does not reset your assessment. What can still move your bill is the same thing that always could: a countywide reassessment, a new school levy, or an addition to the house.
 
 That does not mean you can skip the paperwork. Counties track ownership through deeds, and a deed to a trustee changes the name on their records.
 
@@ -49,7 +49,7 @@ That does not mean you can skip the paperwork. Counties track ownership through 
 
 Usually yes, if you still live in the home as your primary residence and the trust is one you created for yourself. Exemptions are tied to the person who occupies the house and holds the beneficial interest, not strictly to who holds legal title. A deed to "Maria Santos, Trustee of the Maria Santos Living Trust" leaves Maria as the beneficial owner.
 
-The mechanics differ by county, and this is where people go wrong. Some Illinois counties carry exemptions forward when the deed is recorded. Others send a form asking you to certify that you live in the home and that the trust is the one named on the deed. In New Jersey, programs such as the property tax relief and senior freeze benefits are run through the state Division of Taxation, with eligibility based on your ownership and residence, and a trust-held home may need extra documentation.
+The mechanics differ by county, and this is where people go wrong. Some Illinois counties carry exemptions forward when the deed is recorded. Others send a form asking you to certify that you live in the home and that the trust is the one named on the deed. In Cook County, the homeowner and senior exemptions renew on their own once granted, but the senior freeze must be filed every year. A trust deed is a good reason to confirm that each one is still on the record under the right name.
 
 Because the rules and forms are set by each assessor and each program, the safest approach is one call. Ask exactly what they need after a deed to a revocable trust, and ask them to send it by email.
 
@@ -57,7 +57,7 @@ Because the rules and forms are set by each assessor and each program, the safes
 
 ## A before-you-record checklist
 
-1. **Find your assessor.** In Illinois it is the township or county assessor, depending on where you live. In New Jersey it is the municipal tax assessor.
+1. **Find your assessor.** In Illinois it is the township or county assessor, depending on where you live.
 2. **List your exemptions.** Homeowner, senior, senior freeze, disabled person, veteran. Write down which ones you have now.
 3. **Ask what each requires after a trust deed.** Get the answer in writing.
 4. **Record the deed.** Then file any affidavit within the time the assessor gives you.
@@ -86,13 +86,13 @@ A ten-minute call in October would have avoided it. The cost of the lesson is th
 
 ## What happens to the exemption when you die?
 
-Exemptions end with the person who earned them. After the death of the owner, the house usually loses the senior or homeowner exemption until a new owner qualifies, and the surviving spouse may need to apply in their own name. When the house is held in a trust, the successor trustee should tell the assessor about the death and ask what the surviving spouse or a new owner must file. Handling this in the first months avoids a catch-up bill. The broader steps for a trustee are in the [trust and living trust library](/learn/trusts).
+Exemptions end with the person who earned them. After the death of the owner, the house usually loses the senior or homeowner exemption until a new owner qualifies, and the surviving spouse may need to apply in their own name. Our page on [Illinois property tax exemptions after a spouse dies](/learn/illinois/illinois-property-tax-exemptions-after-a-spouse-dies) covers what to re-file. When the house is held in a trust, the successor trustee should tell the assessor about the death and ask what the surviving spouse or a new owner must file. Handling this in the first months avoids a catch-up bill. The broader steps for a trustee are in the [trust and living trust library](/learn/trusts).
 
 ## What about title insurance and the mortgage?
 
 Those are separate questions from property tax and each has its own answer. Many title insurers will extend coverage to the trustee on request, a lender generally cannot call a loan because you moved your home into your own revocable trust, and the homeowners insurer should be told. The details are in [how to transfer a house into a living trust](/learn/trusts/transfer-house-to-living-trust).
 
-For the broader tax picture of what passes to a child, including how the home is valued, see [property tax reassessment and transfer tax when a house passes to family](/learn/property-and-assets/property-tax-reassessment-and-transfer-tax-when-a-house-passes-to-family). State summaries for [Illinois living trusts](/learn/illinois/illinois-living-trusts) and [living trusts in New Jersey](/learn/new-jersey/living-trusts-in-new-jersey) cover what each state requires for the trust itself.
+For the broader tax picture of what passes to a child, including how the home is valued, see [property tax reassessment and transfer tax when a house passes to family](/learn/property-and-assets/property-tax-reassessment-and-transfer-tax-when-a-house-passes-to-family). Our summary of [Illinois living trusts](/learn/illinois/illinois-living-trusts) covers what the state requires for the trust itself.
 
 ## How we can help
 

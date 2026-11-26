@@ -1,14 +1,14 @@
 ---
 title: "What to do when a bank refuses a small estate affidavit"
 description: "A bank can refuse a small estate affidavit even when the estate qualifies. See the usual reasons, how to push back in writing and when to open probate instead."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   When a bank refuses a small estate affidavit, ask for the reason in writing, check that the estate really qualifies, and send the bank its own form or the statute it must follow. Escalate to the bank's estate or legal department. If the bank still says no, or the estate is over the limit, open a probate case and use the court's letters instead.
 takeaways:
   - "Banks refuse for fixable reasons first: a missing form, an unnotarized signature, a waiting period or a name mismatch."
   - "A refusal can also be right, because the estate may be over the limit, a will may need probate, or the account may already pass to a named beneficiary."
   - "Ask the bank to state the reason and the document it wants in writing, then answer that exact request."
-  - "In Illinois the affidavit goes to the holder; in New Jersey the affidavit is filed with the Surrogate first, which changes what the bank sees."
+  - "In Illinois the affidavit goes straight to the holder with no court filing, so each bank decides on its own whether it meets the statute."
   - "Letters from the court are the fallback, and no bank will refuse them."
 faqs:
   - q: "Can a bank legally refuse a small estate affidavit?"
@@ -20,14 +20,14 @@ faqs:
   - q: "What if the account has a payable on death beneficiary?"
     a: "Then the affidavit is the wrong tool. The beneficiary can claim the account directly with a death certificate and ID, and the money never enters the estate. Ask the bank whether a beneficiary is on file before you do anything else."
   - q: "Can I use a small estate affidavit for a house?"
-    a: "Not in Illinois, where the statute covers personal property only. New Jersey's affidavits count real estate toward the limit, but a title company will usually still want letters before it insures a sale. Plan on probate or a recorded transfer instrument for the house."
+    a: "Not in Illinois, where the statute covers personal property only. A title company will usually want letters before it insures a sale, so plan on probate or a recorded transfer instrument for the house."
 related:
   - "probate/small-estate-affidavit"
   - "probate/is-probate-always-required"
   - "probate/what-happens-to-a-deceased-persons-bank-account"
   - "probate/letters-testamentary-and-letters-of-administration"
   - "illinois/illinois-small-estate-affidavit"
-  - "new-jersey/new-jersey-small-estate-affidavit"
+  - "illinois/using-an-illinois-small-estate-affidavit-at-a-bank"
 glossary: ["small-estate-affidavit", "probate-estate", "payable-on-death", "decedent", "letters-testamentary", "heir"]
 review: pending
 intent: situation
@@ -62,11 +62,13 @@ Banks are cautious because they carry the risk. If they pay the wrong person, a 
 5. **Add an attorney's letter if the bank still hesitates.** A letter on law firm letterhead citing the statute moves many files that a family could not.
 6. **Set a deadline for yourself.** If you have no answer in about thirty days, begin probate instead of waiting.
 
-### Illinois and New Jersey work differently
+### How the Illinois affidavit reaches the bank
 
 In Illinois the person signing hands the sworn affidavit to the bank under 755 ILCS 5/25-1. There is no court filing, so the bank decides on its own whether the document satisfies the statute. See the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit) article for the contents and limit.
 
-In New Jersey the affidavit is signed before the Surrogate and filed there. The bank can look at a Surrogate's record, which usually helps. A New Jersey bank may also ask for an inheritance tax waiver before releasing an account. The [New Jersey small estate affidavit](/learn/new-jersey/new-jersey-small-estate-affidavit) and [New Jersey inheritance tax](/learn/new-jersey/new-jersey-inheritance-tax) pages cover that paperwork.
+Because no judge has looked at the affidavit, the bank carries the review itself. A holder that pays on a proper affidavit is protected under the same statute, which is why banks read these documents slowly and ask for their own forms. Expect each bank, brokerage or transfer agent to review the affidavit separately. Our page on [using an Illinois small estate affidavit at a bank](/learn/illinois/using-an-illinois-small-estate-affidavit-at-a-bank) covers what to bring and how long each type of holder tends to take.
+
+The person who signs, called the affiant, swears to the facts, must pay valid debts first and can be personally liable to creditors and other heirs if the affidavit is wrong. That is one more reason to fix a bank's objection rather than sign a second, looser version. See [who signs an Illinois small estate affidavit](/learn/illinois/who-signs-an-illinois-small-estate-affidavit).
 
 ## An example with real-looking numbers
 
@@ -79,7 +81,7 @@ Now change one fact. Leonard also had a $9,000 savings account at a second bank 
 Sometimes the bank sees something the family missed. These are the common cases:
 
 - **Another account or asset pushes the total over the limit.** The bank may not know, but the affidavit swears the total is within the limit, and signing a false one is serious.
-- **A will exists and a court should admit it.** In New Jersey the small estate affidavits are written for estates without a will.
+- **A will exists and a court should admit it.** The Illinois affidavit can be used with a will, but a will that needs to be enforced, or that someone disputes, belongs in court.
 - **Someone has asked for letters.** In Illinois the affidavit cannot be used if a petition for letters is pending or planned.
 - **The account is jointly owned or has a beneficiary.** Then the money does not belong to the estate and the affidavit is not the right route. The [probate versus non-probate assets](/learn/probate/probate-vs-non-probate-assets) article shows how to sort accounts.
 

@@ -1,9 +1,9 @@
 ---
-title: "Can you make a will in hospice? Deathbed wills in Illinois and New Jersey"
+title: "Can you make a will in hospice? Deathbed wills in Illinois"
 description: "Yes, you can sign a valid will in hospice if you have capacity. See what the test is, who can witness, how to sign quickly and what else to sign the same day."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
-  Yes. Someone in hospice can sign a valid will as long as they understand what a will is, roughly what they own and who their family is, and the will is signed and witnessed the way state law requires. Illinois and New Jersey both require a written will with two witnesses. A spoken wish at the bedside is not a substitute.
+  Yes. Someone in hospice can sign a valid will as long as they understand what a will is, roughly what they own and who their family is, and the will is signed and witnessed the way state law requires. Illinois requires a written will with two witnesses. A spoken wish at the bedside is not a substitute.
 takeaways:
   - "Being in hospice or on pain medication does not by itself make a will invalid; the question is whether the person understood what they were doing."
   - "A deathbed will needs the same signature and two witnesses as any other will."
@@ -20,14 +20,14 @@ faqs:
   - q: "What if the person dies before the will can be signed?"
     a: "Then there is no will. The estate passes under the state's intestacy rules, and a notes or voicemail does not change that. This is why timing matters more than polish."
   - q: "Can a will be signed over video?"
-    a: "Do not assume so. Both states have rules about how witnesses must be present, and remote signing is limited or conditional. Ask the attorney which method the state accepts before relying on one."
+    a: "Do not assume so. Illinois has rules about how witnesses must be present, and remote signing is allowed only under set conditions. Ask the attorney which method the state accepts before relying on one."
 related:
   - "life-stages"
   - "wills/signing-a-will-with-dementia-illness-or-family-pressure"
   - "wills/oral-military-statutory-and-international-wills"
   - "wills/self-proving-affidavit-explained"
   - "illinois/illinois-will-requirements"
-  - "new-jersey/new-jersey-will-requirements"
+  - "illinois/illinois-electronic-wills-and-remote-witnesses-act"
   - "healthcare-directives/palliative-care-hospice-and-comfort-care-orders"
 glossary: ["testator", "testamentary-capacity", "power-of-attorney", "intestate"]
 review: pending
@@ -36,7 +36,7 @@ intent: question
 
 A parent or spouse has weeks, or days, and there is no will. Someone asks whether it is too late, whether the medication matters, whether the nurse can sign. The short answer is that it is rarely too late, and what matters is what the person understands and how the signing is done.
 
-This page explains the legal test, the signing rules in Illinois and New Jersey, what to do when time is short and which other documents to sign at the same visit. It is part of our [life stages guide](/learn/life-stages).
+This page explains the legal test, the signing rules in Illinois, what to do when time is short and which other documents to sign at the same visit. It is part of our [life stages guide](/learn/life-stages).
 
 ## Can you make a will in hospice?
 
@@ -44,9 +44,9 @@ Yes. Hospice is a type of care, not a legal status. A person can make a will the
 
 Medication does not decide the question. Morphine or other pain medicine can cloud thinking, but many hospice patients have clear hours, usually in the morning or after a rested night. Schedule the signing then, and ask the care team when the person is usually most alert.
 
-## What does a valid will need in Illinois and New Jersey?
+## What does a valid will need in Illinois?
 
-A signed paper document and two witnesses. The details differ a little, and our pages on [Illinois will requirements](/learn/illinois/illinois-will-requirements) and [New Jersey will requirements](/learn/new-jersey/new-jersey-will-requirements) lay them out.
+A signed paper document and two witnesses. Our page on [Illinois will requirements](/learn/illinois/illinois-will-requirements) lays out the details. If the witnesses cannot be in the room, ask about the [Illinois Electronic Wills and Remote Witnesses Act](/learn/illinois/illinois-electronic-wills-and-remote-witnesses-act) before relying on video.
 
 | Requirement | What to plan for |
 |---|---|
@@ -57,7 +57,7 @@ A signed paper document and two witnesses. The details differ a little, and our 
 | Self-proving affidavit | A notarized statement from the witnesses, which lets the court accept the will without calling them |
 | Capacity | A short written note by the attorney about the conversation helps later |
 
-Spoken wishes are the biggest trap. Families often say, "Mom told the nurse she wanted Karen to have the house." That is not a will. Our page on [oral, military, statutory and international wills](/learn/wills/oral-military-statutory-and-international-wills) explains the narrow exceptions, and neither state's ordinary rules would treat a bedside comment as a valid will. Notes and letters are similar. See [do notes and spoken wishes bind your family](/learn/wills/notes-letters-and-spoken-wishes-do-they-bind-your-family).
+Spoken wishes are the biggest trap. Families often say, "Mom told the nurse she wanted Karen to have the house." That is not a will. Our page on [oral, military, statutory and international wills](/learn/wills/oral-military-statutory-and-international-wills) explains the narrow exceptions, and Illinois's ordinary rules would not treat a bedside comment as a valid will. Notes and letters are similar. See [do notes and spoken wishes bind your family](/learn/wills/notes-letters-and-spoken-wishes-do-they-bind-your-family).
 
 ## How fast can a will be signed?
 
@@ -91,7 +91,7 @@ The will is only one document, and often not the most useful. Add these.
 - **Beneficiary forms.** Retirement accounts and life insurance ignore the will. Check and update them. See [the beneficiary audit tool](/tools/beneficiary-audit).
 - **A funeral and burial instruction.** Put the wishes in writing and name who decides.
 
-Property that has no beneficiary and is held alone will go through probate under the will. Your attorney can talk about whether a transfer on death deed or a small estate procedure fits. See the pages on [Illinois](/learn/illinois/illinois-small-estate-affidavit) and [New Jersey](/learn/new-jersey/new-jersey-small-estate-affidavit) small estate affidavits.
+Property that has no beneficiary and is held alone will go through probate under the will. Your attorney can talk about whether a transfer on death deed or a small estate procedure fits. See our page on the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit).
 
 ## What should the family not do?
 
@@ -101,7 +101,7 @@ If you are the one in hospice, say it directly: you want your wishes written dow
 
 ## What if it is already too late?
 
-If the person has died or can no longer understand what is happening, no one can sign a will for them. A power of attorney does not allow an agent to make a will for the principal. The estate then passes under the intestacy rules. Those rules are covered in [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) and in [New Jersey](/learn/new-jersey/who-inherits-without-a-will-in-new-jersey). The family can still agree among themselves to share things differently once an estate is open, and heirs may use a disclaimer or a family settlement. It is slower and not certain.
+If the person has died or can no longer understand what is happening, no one can sign a will for them. A power of attorney does not allow an agent to make a will for the principal. The estate then passes under the intestacy rules. Those rules are covered in [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois). The family can still agree among themselves to share things differently once an estate is open, and heirs may use a disclaimer or a family settlement. It is slower and not certain.
 
 ## How we can help
 

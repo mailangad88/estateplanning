@@ -1,7 +1,7 @@
 ---
 title: "Can you change or revoke a special needs trust after it is signed?"
 description: "Can a special needs trust be changed or revoked? What parents can amend, what stays locked, how a trust protector or court fixes problems, and the risks."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A third-party special needs trust that parents create is often revocable and amendable while they are alive, but
   it becomes irrevocable at the first parent's or the last parent's death. A first-party or pooled trust is
@@ -107,9 +107,11 @@ Usually needs legal review:
 - Fixing a clause that requires cash payments to the beneficiary.
 - Adding an asset the trust was not designed to hold, such as a business or house, covered in our article on [special needs trusts and houses](/learn/special-needs/can-a-special-needs-trust-own-a-house).
 
-## What does this look like in New Jersey and Illinois?
+## What does this look like in Illinois?
 
-Both states permit amendments, nonjudicial settlements and court modifications under their own trust codes, and both give effect to a trust protector when the document creates one. The specifics differ on decanting and on what the court needs to see. See our local guides to [special needs planning in New Jersey](/learn/new-jersey/special-needs-planning-in-new-jersey) and [special needs trust rules in Illinois](/learn/special-needs/special-needs-trust-rules-in-illinois) for the points that matter at the benefits level. State agencies run Medicaid, so a trust that was acceptable in one state needs a second look when the beneficiary moves.
+The Illinois Trust Code permits amendments, nonjudicial settlement agreements and court modifications, and Illinois gives effect to a trust protector when the document creates one. A trustee can also decant an irrevocable trust into a new one under Article 12 of the Trust Code, with 60 days' written notice, unless the trust bars it. Our article on [changing an irrevocable trust in Illinois](/learn/illinois/changing-an-irrevocable-trust-in-illinois-decanting-and-court-modification) walks through each route.
+
+For the points that matter at the benefits level, see [special needs trust rules in Illinois](/learn/special-needs/special-needs-trust-rules-in-illinois). State agencies run Medicaid, so a trust that was acceptable in Illinois needs a second look if the beneficiary moves to another state.
 
 ## How we can help
 

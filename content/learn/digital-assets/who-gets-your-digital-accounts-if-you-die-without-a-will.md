@@ -1,7 +1,7 @@
 ---
 title: "Who gets your digital accounts, photos and crypto if you die without a will"
 description: "With no will, state law decides who inherits your crypto, domains and photos, and company rules decide who can log in. See what passes and what does not."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Without a will, valuable digital property such as cryptocurrency, a domain name or a payment-app balance passes under your state's intestacy rules, usually to a spouse and children first. A court-appointed administrator handles it. Access to email, photos and social media is a separate question, because each company's terms and state law decide what an administrator may open.
 takeaways:
@@ -39,7 +39,7 @@ Rafael, 34, was single, kept about $40,000 in Bitcoin on an exchange, ran a smal
 
 It means state law writes the will for you. This is called [intestate succession](/glossary/intestate-succession). Each state lists who inherits in order, usually a spouse and children first, then parents, siblings and more distant relatives. Our article on [dying without a will](/learn/wills/dying-without-a-will) explains the idea, and our [who-inherits tool](/tools/who-inherits) shows an example order.
 
-For digital property, intestacy answers one question only: who owns what the estate owns. It does not say who may open the account, who can talk to the company, or who should keep the photos. Those depend on two other things, the company's terms and the state's digital-access law, which most states have adopted in some form. Illinois and New Jersey are among the states that have. Our explainer on [RUFADAA](/learn/digital-assets/rufadaa-explained) covers that law.
+For digital property, intestacy answers one question only: who owns what the estate owns. It does not say who may open the account, who can talk to the company, or who should keep the photos. Those depend on two other things, the company's terms and the state's digital-access law, which most states have adopted in some form. Illinois is among the states that have. Our explainer on [RUFADAA](/learn/digital-assets/rufadaa-explained) covers that law.
 
 The third piece is a person with authority. With no will there is no named executor, so a court appoints an [administrator](/glossary/administrator), usually a spouse or adult child. Companies treat the court's letters as proof of who may act for the estate. Until the administrator is appointed, even the legal heirs cannot make claims on the estate's behalf. See [letters of administration](/learn/probate/letters-testamentary-and-letters-of-administration) for how that works.
 

@@ -67,7 +67,7 @@ export default function PartnerReferralForm({ slug, consentText, partnerOrg }: {
         <label className="field">Their email<input name="email" type="email" autoComplete="off" required />{err("email")}</label>
         <label className="field">Their phone (optional)<input name="phone" type="tel" autoComplete="off" />{err("phone")}</label>
         <label className="field">Their state
-          <input name="state" maxLength={2} placeholder="TX" autoComplete="off" required />{err("state")}
+          <input name="state" maxLength={2} placeholder="IL" autoComplete="off" required />{err("state")}
         </label>
         <div className="hp" aria-hidden="true">
           <label>Website<input name="website" tabIndex={-1} autoComplete="off" /></label>

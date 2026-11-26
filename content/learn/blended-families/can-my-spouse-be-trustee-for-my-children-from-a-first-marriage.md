@@ -1,7 +1,7 @@
 ---
 title: "Can I name my spouse as trustee and my kids as beneficiaries? Risks in a second marriage"
 description: "Naming a second spouse as trustee with your children as remainder beneficiaries is allowed, but it creates a conflict. Learn the risks and safer setups."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Yes, you can name your spouse as trustee and your children as the beneficiaries who inherit after your spouse. The law allows it, but it puts one person in charge of money that is also theirs to use and that someone else will receive later. Many blended families add an independent co-trustee or limit the spouse's powers to reduce that conflict.
 takeaways:
@@ -16,7 +16,7 @@ faqs:
   - q: "Can the trustee spouse sell the house held in the trust?"
     a: "Only if the trust gives that power. A trust can require the sale to be approved by a co-trustee or by the children, or can limit sale to when the spouse moves or needs care. Say exactly what happens to the sale proceeds."
   - q: "Can my children force my spouse to give them a report on the trust?"
-    a: "Usually yes. Beneficiaries, including remainder beneficiaries, are generally entitled to be told about the trust and to receive periodic reports. Illinois and New Jersey both have statutes on this duty, and the trust document can set the schedule."
+    a: "Usually yes. Beneficiaries, including remainder beneficiaries, are generally entitled to be told about the trust and to receive periodic reports. In Illinois, current and presumptive remainder beneficiaries get an accounting at least once a year under 760 ILCS 3/813.1, and the trust document can add to that."
   - q: "Can I make my adult child the trustee instead of my spouse?"
     a: "Yes, and some couples do. The risk flips. A child who controls the money can be accused of starving the stepparent of funds. Naming both, or a neutral person with guidance in the document, is common."
   - q: "What if my spouse remarries and the trustee is the new spouse's friend?"
@@ -29,7 +29,6 @@ related:
   - "trusts/choosing-a-trustee"
   - "trusts/co-trustees-and-changing-a-trustee"
   - "illinois/illinois-trustee-duty-to-inform-beneficiaries"
-  - "new-jersey/new-jersey-trustee-duties-to-beneficiaries-under-the-uniform-trust-code"
 glossary: ["trustee", "fiduciary-duty", "qtip-trust", "successor-trustee", "revocable-trust", "irrevocable-trust"]
 review: pending
 intent: question
@@ -43,7 +42,7 @@ The most natural answer is the wife. She knows the finances, she lives with the 
 
 Yes. A trustee can also be a beneficiary, including the sole lifetime beneficiary, as long as the trust document does not forbid it and the trustee follows the trust's terms. Courts do not treat the dual role as automatically improper. They look at how the person acted.
 
-What the law demands is that the trustee honor several duties. The trustee must act in good faith, follow the document, keep trust property separate from personal property, and treat the beneficiaries impartially. Impartial matters here. A spouse trustee must give real weight to the children's remainder interest, not just to their own comfort. Our [trustee duties article for New Jersey](/learn/new-jersey/new-jersey-trustee-duties-to-beneficiaries-under-the-uniform-trust-code) and the [Illinois duty to inform beneficiaries](/learn/illinois/illinois-trustee-duty-to-inform-beneficiaries) explain what each state requires.
+What the law demands is that the trustee honor several duties. The trustee must act in good faith, follow the document, keep trust property separate from personal property, and treat the beneficiaries impartially. Impartial matters here. A spouse trustee must give real weight to the children's remainder interest, not just to their own comfort. Our article on the [Illinois duty to inform beneficiaries](/learn/illinois/illinois-trustee-duty-to-inform-beneficiaries) explains what Illinois requires, including notice to qualified beneficiaries within 90 days after the trust becomes irrevocable.
 
 ## Where does a spouse trustee go wrong?
 

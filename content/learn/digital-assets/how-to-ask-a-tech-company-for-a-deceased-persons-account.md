@@ -1,7 +1,7 @@
 ---
 title: "How to ask Apple, Google or Meta for a deceased person's account: documents, steps and timing"
 description: "What to gather before you contact a tech company about a dead person's account, what they usually ask for, when a court order is needed and the timing."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Start with the death certificate and proof of your authority, usually letters from the court naming you executor or administrator. Send the request through the company's deceased-user process, not general support. Many companies release little or no content without a court order that names the account. Expect the process to take weeks, sometimes months.
 takeaways:
@@ -78,7 +78,7 @@ The pattern is the same everywhere. Without prior permission from the owner, the
 
 ## When do you need a court order?
 
-When a company will not release content on letters alone, and the content matters. State law shapes the order. Most states, including Illinois and New Jersey, have adopted some version of the Revised Uniform Fiduciary Access to Digital Assets Act. The act gives a personal representative a path to the catalog of records more easily than to the content, and lets the owner give permission ahead of time through a company tool or a will. The details are in our [RUFADAA explainer](/learn/digital-assets/rufadaa-explained). For Illinois specifically, see our article on [Illinois digital assets law for executors](/learn/illinois/illinois-digital-assets-law-for-executors).
+When a company will not release content on letters alone, and the content matters. State law shapes the order. Most states, including Illinois, have adopted some version of the Revised Uniform Fiduciary Access to Digital Assets Act. The act gives a personal representative a path to the catalog of records more easily than to the content, and lets the owner give permission ahead of time through a company tool or a will. The details are in our [RUFADAA explainer](/learn/digital-assets/rufadaa-explained). For Illinois specifically, see our article on [Illinois digital assets law for executors](/learn/illinois/illinois-digital-assets-law-for-executors).
 
 A petition for an order is usually filed in the probate case the executor already has open. It asks the court to direct the company to disclose records or content. The petition often has to show the following:
 

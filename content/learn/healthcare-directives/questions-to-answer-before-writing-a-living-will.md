@@ -1,7 +1,7 @@
 ---
 title: "Questions to answer before you write a living will (and how to talk to your parents about theirs)"
 description: "A values-history worksheet for end-of-life choices: the questions to ask yourself, what to tell your family, and how to start the talk with an aging parent."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Before you fill in a living will, work out what makes a life worth living for you, which outcomes you would refuse treatment to avoid, who should decide, and what you want your family to hear. Writing those answers down as a values history gives your agent something to follow and makes the form itself quick to complete.
 takeaways:
@@ -124,7 +124,7 @@ Your answers will change. People who have watched an illness up close often revi
 
 ## How state law changes this
 
-States differ on the form's name and wording, the number of witnesses, who cannot witness, and which treatments a directive can address. Some add special rules for pregnancy or for stopping artificial feeding. The values history is not a legal document anywhere, so it supports your signed directive and does not replace it. For a state-specific example, see our guide to [New Jersey advance directives](/learn/new-jersey/new-jersey-advance-directives).
+States differ on the form's name and wording, the number of witnesses, who cannot witness, and which treatments a directive can address. Some add special rules for pregnancy or for stopping artificial feeding. The values history is not a legal document anywhere, so it supports your signed directive and does not replace it. For Illinois readers, our guide to the [Illinois Living Will Act](/learn/illinois/illinois-living-will-act-what-it-covers-and-when-it-applies) explains what the state form covers.
 
 ## How we can help
 

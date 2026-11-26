@@ -1,7 +1,7 @@
 ---
 title: "How to transfer an existing life insurance policy to an ILIT (and the three-year rule)"
 description: "How to transfer an existing life insurance policy to an ILIT: the steps, the three-year rule, gift tax and Crummey notices, and when a new policy is safer."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   You transfer an existing policy to an irrevocable life insurance trust by signing an assignment, changing the
   owner and beneficiary with the insurer, and paying later premiums through gifts to the trust. If the insured dies
@@ -18,7 +18,7 @@ faqs:
   - q: "Does an ILIT need a separate tax return?"
     a: "The trust needs its own taxpayer number. Whether it files an income tax return depends on how it is drafted and whether it earns income. Many ILITs have little income because the premiums go straight to the insurer. An accountant should decide the filing each year, and a gift tax return may be needed for transfers into the trust."
   - q: "Is there a state tax on life insurance proceeds?"
-    a: "Proceeds can be counted in a state estate tax if the insured owned the policy or retained control. Illinois taxes estates above a $4 million threshold, so an owned policy can matter there. New Jersey has no estate tax for recent deaths, and it generally does not charge inheritance tax on life insurance paid to a named beneficiary."
+    a: "Proceeds can be counted in a state estate tax if the insured owned the policy or retained control. Illinois taxes estates above a $4 million threshold, so an owned policy can matter there. Moving the policy to an ILIT, and living at least three years after the transfer, keeps the death benefit out of the Illinois estate."
   - q: "What is the transfer-for-value rule?"
     a: "It is an income tax rule that can make part of a death benefit taxable if a policy is sold or transferred for something of value. A gift to a trust the insured controls for tax purposes is generally an exception. A sale of the policy to a trust, a business or a family member is where the risk appears, so ask before you sell."
   - q: "What happens if the insured dies within the three years?"

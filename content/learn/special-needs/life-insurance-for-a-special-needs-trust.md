@@ -1,7 +1,7 @@
 ---
 title: "Life insurance for a special needs trust: who owns the policy and who is the beneficiary"
 description: "How to fund a special needs trust with life insurance: name the trust as beneficiary, never the child, and choose between term, permanent and second-to-die."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   To use life insurance for a child with a disability, name the third-party special needs trust as the policy's beneficiary, never the child. A death benefit paid straight to a person on SSI or Medicaid can cost them benefits. The parents, or an insurance trust, should own the policy, and a permanent or second-to-die policy fits a lifelong need better than a term policy that expires.
 takeaways:
@@ -68,7 +68,7 @@ Not the child. Ownership of a policy with cash value is a countable resource, an
 | An irrevocable life insurance trust | A separate trust owns the policy | Large estates and estate tax | Extra document and annual steps, see [ILITs](/learn/estate-tax/irrevocable-life-insurance-trust) |
 | A sibling | A brother or sister owns the policy on a parent's life | Rarely wise | The sibling's creditors, divorce or death can disturb it |
 
-For most families, parent ownership with the special needs trust as beneficiary is the right answer. The estate tax issue matters less than people think, since the federal exclusion is $15,000,000 per person in 2026. In Illinois, where the state taxes estates above $4 million, a family with a large policy may want a closer look, and the page on the [Illinois estate tax](/learn/illinois/illinois-estate-tax) explains it. New Jersey has no estate tax, though the [New Jersey special needs planning guide](/learn/new-jersey/special-needs-planning-in-new-jersey) covers its own benefits issues.
+For most families, parent ownership with the special needs trust as beneficiary is the right answer. The estate tax issue matters less than people think, since the federal exclusion is $15,000,000 per person in 2026. In Illinois, where the state taxes estates above $4 million, a family with a large policy may want a closer look, and the page on the [Illinois estate tax](/learn/illinois/illinois-estate-tax) explains it. For the benefits side, see [special needs planning in Illinois](/learn/illinois/special-needs-planning-in-illinois-for-a-disabled-child).
 
 ## Term, whole life or a second-to-die policy?
 

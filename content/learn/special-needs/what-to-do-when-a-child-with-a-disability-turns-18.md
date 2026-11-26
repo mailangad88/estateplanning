@@ -1,7 +1,7 @@
 ---
 title: "What to do when your child with a disability turns 18: SSI, guardianship and paperwork"
 description: "A checklist for the year before your child with a disability turns 18: apply for SSI, weigh guardianship or its options, sign HIPAA and power of attorney forms."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   At 18 the law treats your child as an adult, even if you still do most of their daily decisions. Social Security counts only your child's own income and assets, which often makes them eligible for SSI. You lose automatic access to medical and school records, so start 3 to 6 months before the birthday: apply for SSI, choose between guardianship and lighter alternatives, and sign releases and powers of attorney.
 takeaways:
@@ -82,11 +82,11 @@ The test is not intelligence. It is whether your child understands who they are 
 
 Guardianship is the answer when your child cannot understand or sign documents, cannot make or communicate safe decisions, and no lighter option works. A court finds the person unable to make some or all decisions and appoints a guardian, who may be a parent. The cost depends on the county and the case, and the biggest cost drivers are whether a lawyer, a medical report and a court visitor are required and whether anyone contests it. In a straightforward uncontested case with parents as guardians, the process is shorter than most families fear. It also requires reports to the court each year, which is a duty many parents underestimate.
 
-Courts increasingly ask whether a narrower order would do. A limited guardianship covers only the decisions your child cannot make, such as medical care, and leaves everything else with them. See [guardianship in Illinois](/learn/illinois/illinois-guardianship) and [guardianship in New Jersey](/learn/new-jersey/guardianship-in-new-jersey) for local steps.
+Courts increasingly ask whether a narrower order would do. A limited guardianship covers only the decisions your child cannot make, such as medical care, and leaves everything else with them. See [guardianship in Illinois](/learn/illinois/illinois-guardianship) and [limited vs plenary guardianship in Illinois](/learn/illinois/limited-vs-plenary-guardianship-in-illinois) for local steps.
 
 ## What about school and transition planning?
 
-Federal law requires an IEP to include transition goals by the time a student turns 16, and some states, including Illinois and New Jersey, ask districts to start earlier. Use those meetings to put adult services on the agenda, such as day programs, supported employment and the state's developmental disability agency. A student on a waiting list for adult services should be registered well before graduation, because school entitlements end and adult services are not entitlements.
+Federal law requires an IEP to include transition goals by the time a student turns 16, and some states, including Illinois, ask districts to start earlier. Use those meetings to put adult services on the agenda, such as day programs, supported employment and the state's developmental disability agency. A student on a waiting list for adult services should be registered well before graduation, because school entitlements end and adult services are not entitlements.
 
 ## How do I protect money my child may receive?
 

@@ -1,14 +1,14 @@
 ---
-title: "Can a power of attorney make medical decisions? Financial vs. health care agents in Illinois and New Jersey"
-description: "Can a power of attorney make medical decisions? A financial agent usually cannot. See what each document covers in Illinois and New Jersey, and the coma fix."
-updated: "2026-10-26"
+title: "Can a power of attorney make medical decisions? Financial vs. health care agents in Illinois"
+description: "Can a power of attorney make medical decisions? A financial agent usually cannot. See what each Illinois document covers, and the fix if a parent is in a coma."
+updated: "2026-11-26"
 answer: >-
-  Usually not. A financial power of attorney lets your agent handle money and property, but medical consent comes from a separate document, a health care power of attorney (called a proxy in New Jersey), or from a default surrogate under state law. If one person holds both documents, they can do both jobs. If someone is in a coma and has only the financial form, the hospital turns to family.
+  Usually not. A financial power of attorney lets your agent handle money and property, but medical consent comes from a separate document, a health care power of attorney, or from a default surrogate under state law. If one person holds both documents, they can do both jobs. If someone is in a coma and has only the financial form, the hospital turns to family.
 takeaways:
   - "A power of attorney for property or finances does not authorize consent to treatment, end-of-life choices or nursing home admission."
   - "Medical decisions belong to a health care agent you name, or to a statutory surrogate if you named no one."
   - "A financial agent can still pay medical bills, deal with insurers and apply for benefits."
-  - "Illinois lists surrogates by rank in statute; a New Jersey proxy directive is the dependable way to name your own decision-maker."
+  - "Illinois lists surrogates by rank in statute, but a signed health care power of attorney is the dependable way to name your own decision-maker."
   - "One person can hold both roles, but the documents are signed and witnessed under different rules."
 faqs:
   - q: "Can a power of attorney act for someone who is in a coma?"
@@ -27,7 +27,7 @@ related:
   - "power-of-attorney/what-are-the-three-types-of-power-of-attorney"
   - "healthcare-directives/healthcare-power-of-attorney"
   - "illinois/illinois-health-care-surrogate-act-who-decides"
-  - "new-jersey/new-jersey-advance-directives"
+  - "illinois/illinois-healthcare-power-of-attorney"
 glossary: ["power-of-attorney", "healthcare-proxy", "durable-power-of-attorney", "agent", "principal", "incapacity", "hipaa-authorization"]
 review: pending
 intent: question
@@ -35,7 +35,7 @@ intent: question
 
 A call comes in that your father collapsed at work and is unconscious. You have his power of attorney in a folder at home, so you drive to the hospital with it. A nurse reads the first page and says, kindly, that it covers his finances only. Someone else has to consent to the procedure.
 
-That moment surprises many families, and it is why this question gets asked so often. This page explains what a financial power of attorney does and does not reach, which document handles medical choices in Illinois and New Jersey, and what to do right now if you hold the wrong one. Our [power of attorney guide](/learn/power-of-attorney) covers the wider picture.
+That moment surprises many families, and it is why this question gets asked so often. This page explains what a financial power of attorney does and does not reach, which document handles medical choices in Illinois, and what to do right now if you hold the wrong one. Our [power of attorney guide](/learn/power-of-attorney) covers the wider picture.
 
 ## The short version
 
@@ -50,7 +50,7 @@ It can, but only if the document is written for health care. The words "power of
 
 In Illinois the two are separate statutory forms under the same act. The property form is described in our piece on the [Illinois statutory power of attorney for property](/learn/illinois/illinois-power-of-attorney-for-property): one witness plus a notary. The health care form is covered in [Illinois healthcare power of attorney, living will and POLST](/learn/illinois/illinois-healthcare-power-of-attorney): one adult witness who is not the agent or the attending physician, and no notary.
 
-New Jersey draws the same line. Its Revised Durable Power of Attorney Act is about property, and the [New Jersey advance directive](/learn/new-jersey/new-jersey-advance-directives) is where you name a health care representative, with two adult witnesses or a notary. See [New Jersey power of attorney: signing, durability and agent duties](/learn/new-jersey/new-jersey-power-of-attorney) for the property side.
+Because the signing rules differ, one form cannot quietly do the other's job. A property form that a notary stamped does not become a health care form, and a health care form signed with one witness gives no authority over bank accounts. If you want the same person to handle both, sign both forms and name that person in each. Our page on [witness rules for an Illinois health care power of attorney](/learn/illinois/witness-rules-for-an-illinois-health-care-power-of-attorney) explains who can sign as the witness.
 
 <!-- visual: decision slug=types-of-power-of-attorney part=map -->
 
@@ -70,7 +70,7 @@ What the agent cannot do is consent to surgery, refuse a ventilator, sign a DNR,
 
 Your state's surrogate rules decide. Illinois sets a ranked list in the Health Care Surrogate Act (755 ILCS 40/25): guardian of the person, then spouse, adult child, parent, adult sibling, adult grandchild and close friend. The details, including how disagreements among adult children are settled, are in [who makes medical decisions in Illinois if you have no directive](/learn/illinois/illinois-health-care-surrogate-act-who-decides).
 
-In New Jersey, hospitals generally work with the closest available family, and a dispute can end up in court. That is why we suggest signing a proxy directive in New Jersey rather than relying on practice. Our explainer on [what happens without an advance directive](/learn/healthcare-directives/what-happens-without-an-advance-directive) covers the general picture.
+The list works, but it may not pick the person you would have picked. A spouse ranks ahead of adult children, even if you would have chosen a child. That is why we suggest signing a health care power of attorney rather than relying on the statute. Our explainer on [what happens without an advance directive](/learn/healthcare-directives/what-happens-without-an-advance-directive) covers the general picture.
 
 Notice what this means for the financial agent. Being the "power of attorney" gives you no rank on the surrogate list. A daughter who holds a property power of attorney but is estranged from the spouse may sit lower than the spouse for purposes of consent. A son who is a financial agent but has a sister who is the adult child present at the bedside may find the hospital turning to her. The financial form does not change that.
 

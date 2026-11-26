@@ -1,7 +1,7 @@
 ---
 title: "What happens to a business when its owner divorces? Planning for co-owner spouses"
 description: "How a divorce can reach a business you own or co-own with a spouse, what courts weigh, and how to protect the company and update your succession plan."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A business started or grown during a marriage is often treated as marital property, so a divorce can force a valuation and either a buyout of your spouse's share or a trade for other assets. A prenuptial or postnuptial agreement, a buy-sell agreement and clean records can limit the damage. After filing, your succession documents need updating too.
 takeaways:
@@ -104,7 +104,7 @@ Our page on [estate planning after divorce](/learn/life-stages/estate-planning-a
 
 ## How state law changes this
 
-Community property or equitable division, the treatment of separate-property growth, whether valuation discounts are allowed and whether divorce cancels will provisions all vary by state. Our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides cover the local estate rules, but a business divorce nearly always needs a local family law attorney in addition to estate planning counsel.
+Community property or equitable division, the treatment of separate-property growth, whether valuation discounts are allowed and whether divorce cancels will provisions all vary by state. Our [Illinois estate planning guide](/estate-planning/illinois) covers the local estate rules, but a business divorce nearly always needs a local family law attorney in addition to estate planning counsel.
 
 ## How we can help
 

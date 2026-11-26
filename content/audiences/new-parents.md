@@ -36,18 +36,18 @@ faqs:
   - q: "At what age should my child get the money?"
     a: "There is no right age. Common patterns are payments in stages, such as thirds at 25, 30 and 35, or payments for specific needs like school and a first home, with the trustee deciding. A trustee can be given discretion to delay if a child is not ready."
   - q: "What if the other parent is not in the picture?"
-    a: "Your plan matters more. The surviving legal parent usually has priority to raise the child if you die, unless a court finds otherwise. Illinois and New Jersey both follow this general rule. If you want someone else next in line behind that parent, say so on the first call."
+    a: "Your plan matters more. The surviving legal parent usually has priority to raise the child if you die, unless a court finds otherwise. Illinois follows this general rule. If you want someone else next in line behind that parent, say so on the first call."
   - q: "What does it cost?"
     a: "Fees are set by the attorney you are matched with, often as a flat fee for a couple's wills with a children's trust. See [pricing](/pricing)."
 reviewed: false
-updated: "2026-10-06"
+updated: "2026-11-26"
 ---
 
 ## What is at stake
 
 - **No guardian named.** If both parents die or cannot care for a child, the court decides based on the child's best interests. Relatives can disagree, and the judge may pick someone you would not have. See the [guardianship guide](/guides/guardianship-for-minor-children).
-- **Money goes to the child at 18.** In most states a minor cannot hold much property, so a court may open a supervised account and release it all at 18. That is the age in Illinois and New Jersey. Many parents would rather have a chosen trustee pay for school and housing and release the balance at 25, 30 or in stages. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors).
-- **Life insurance naming the child directly.** Naming a minor as beneficiary on a policy or retirement account generally means a court-supervised account. Naming a trust, or a custodian under your state's UTMA, avoids that. In Illinois and New Jersey, a UTMA account generally ends at 21. See the [beneficiary designation audit](/checklists/beneficiary-designation-audit).
+- **Money goes to the child at 18.** In most states a minor cannot hold much property, so a court may open a supervised account and release it all at 18. That is the age in Illinois. Many parents would rather have a chosen trustee pay for school and housing and release the balance at 25, 30 or in stages. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors).
+- **Life insurance naming the child directly.** Naming a minor as beneficiary on a policy or retirement account generally means a court-supervised account. Naming a trust, or a custodian under your state's UTMA, avoids that. In Illinois, a UTMA account generally ends at 21. See the [beneficiary designation audit](/checklists/beneficiary-designation-audit).
 - **A guardian is not the same as a money manager.** Your sister may be the right person to raise the child and the wrong one to manage $400,000.
 - **One of you becomes unable to act.** Incapacity can happen to a working-age parent. Powers of attorney and healthcare directives cover that.
 

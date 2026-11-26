@@ -1,7 +1,7 @@
 ---
 title: "Does a trust cost more to administer than probate? A line-by-line comparison"
 description: "A trust often costs less after death than probate, but not always. Compare attorney, trustee, court, appraisal and tax costs side by side before you decide."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Administering a trust after death usually costs less than probate, mainly because there is little or no court involvement, but the gap can be small. A trust still needs a trustee, tax filings, appraisals and often an attorney. The savings are largest for real estate, for estates in states with slow or expensive probate, and for families that expect no disputes.
 takeaways:
@@ -27,7 +27,6 @@ related:
   - "after-a-death/trustee-compensation"
   - "probate/probate-costs"
   - "illinois/illinois-probate-costs"
-  - "new-jersey/probate-costs-in-new-jersey"
 glossary: ["probate", "trustee", "successor-trustee", "probate-estate", "fiduciary"]
 review: pending
 intent: cost
@@ -77,7 +76,7 @@ Notice how many rows match. The savings from a trust come mostly from the first 
 
 **Property in more than one state.** Land in a second state can trigger a separate probate there, with its own filings and local counsel. A funded trust can avoid that. See [ancillary probate](/learn/probate/ancillary-probate).
 
-**States with costly probate.** Some states charge fees by a percentage of the estate, and some have slow courts. Two readers in different states may see very different savings. For local figures, look at [Illinois probate costs](/learn/illinois/illinois-probate-costs) and [probate costs in New Jersey](/learn/new-jersey/probate-costs-in-new-jersey).
+**States with costly probate.** Some states charge fees by a percentage of the estate, and some have slow courts. Two readers in different states may see very different savings. For local figures, look at [Illinois probate costs](/learn/illinois/illinois-probate-costs).
 
 **Time.** Faster distribution means shorter periods of upkeep on a vacant house, fewer months of insurance, and less of the legal clock running.
 

@@ -1,7 +1,7 @@
 ---
 title: "What happens to your blog, online reviews and anonymous accounts when you die"
 description: "What happens to my blog and online posts when I die? Who owns the writing, whether reviews stay up, and what family can do about an anonymous account."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Your blog posts, reviews and forum comments mostly stay online unless someone deletes them. You own the copyright in what you wrote, and it passes to your heirs through your will or state intestacy law. The platform owns the account, though, so your family can claim the writing but usually cannot take over a profile or read private messages.
 takeaways:
@@ -78,7 +78,7 @@ The privacy you wanted in life can become a problem after death, in two ways:
 
 If you want the account to stay private, you can still leave instructions. Write a sealed note for your executor listing the handle, platform, login method and what to do: delete it, memorialize it, or hand its contents to a named friend. A [password manager's emergency access](/learn/digital-assets/passwords-and-access) is another way to hand over the key without revealing the contents to everyone.
 
-State law also shapes how much your executor can see. Both Illinois and New Jersey have adopted a version of the uniform law on fiduciary access to digital assets. In general, it lets an executor see a catalog of your communications, such as the sender and date, but not the content of private messages unless you consented in your will or through an online tool. See [Illinois digital assets law for executors](/learn/illinois/illinois-digital-assets-law-for-executors) and [New Jersey digital assets law](/learn/new-jersey/new-jersey-digital-assets-law), and for more on the uniform law, [RUFADAA explained](/learn/digital-assets/rufadaa-explained).
+State law also shapes how much your executor can see. Illinois has adopted a version of the uniform law on fiduciary access to digital assets. In general, it lets an executor see a catalog of your communications, such as the sender and date, but not the content of private messages unless you consented in your will or through an online tool. See [Illinois digital assets law for executors](/learn/illinois/illinois-digital-assets-law-for-executors), and for more on the uniform law, [RUFADAA explained](/learn/digital-assets/rufadaa-explained).
 
 ## How do I plan for my writing and posts?
 

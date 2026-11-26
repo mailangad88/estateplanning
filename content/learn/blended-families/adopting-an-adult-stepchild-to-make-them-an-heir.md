@@ -1,18 +1,18 @@
 ---
 title: "Adult adoption of a stepchild: will it make them your heir?"
-description: "Adult adoption of a stepchild makes them your legal child for inheritance. See how it works in Illinois and New Jersey, what it can cost, and simpler options."
-updated: "2026-10-26"
+description: "Adult adoption of a stepchild makes them your legal child for inheritance. See how it works in Illinois, what it can cost your spouse, and simpler options."
+updated: "2026-11-26"
 answer: >-
   Yes. Once a court finalizes an adult adoption, your stepchild is your legal child and inherits as one if you die without a will, and a gift to "my children" includes them. The adult must consent and a judge must approve. Adoption is permanent, can shrink your spouse's share, and a will or trust often does the job with less risk.
 takeaways:
-  - "A stepchild inherits nothing from you by default, in Illinois, New Jersey or almost anywhere else, unless you name them or adopt them."
+  - "A stepchild inherits nothing from you by default, in Illinois or almost anywhere else, unless you name them or adopt them."
   - "An adult adoption needs the adult's own consent and a court order, and it cannot be quietly undone later."
   - "In Illinois, adding a child can cut your spouse's no-will share from everything to one-half."
-  - "New Jersey already treats stepchildren as Class A for inheritance tax, so adoption saves no New Jersey tax."
+  - "Illinois has no inheritance tax, so adoption does not change the tax on what a stepchild receives."
   - "A will, trust or beneficiary form naming the stepchild usually achieves the goal without changing anyone's legal family."
 faqs:
   - q: "Can a stepchild inherit from a stepparent who has no will?"
-    a: "Not as a stepchild. Intestacy statutes in Illinois and New Jersey list spouses, children, parents and other blood or adoptive relatives, and a stepchild is not on the list. The stepchild only inherits if the stepparent adopted them, or if every closer relative is gone and a statute picks up stepchildren as a last resort, which is rare."
+    a: "Not as a stepchild. The Illinois intestacy statute lists spouses, children, parents and other blood or adoptive relatives, and a stepchild is not on the list. The stepchild only inherits if the stepparent adopted them, or if every closer relative is gone and a statute picks up stepchildren as a last resort, which is rare."
   - q: "Does my stepchild need their other parent's permission to be adopted as an adult?"
     a: "Generally no, because the adult is the one consenting and the other parent has no custody to give up. Courts still ask who the birth parents are and may give notice. Rules differ by state, so an attorney should confirm the local procedure before anyone files."
   - q: "Will an adopted stepchild still inherit from their birth parents?"
@@ -25,7 +25,8 @@ related:
   - "blended-families/stepchildren-inheritance"
   - "blended-families/who-counts-as-an-heir-in-a-blended-family"
   - "blended-families/protecting-children-from-first-marriage"
-  - "new-jersey/new-jersey-inheritance-tax"
+  - "illinois/adopted-children-inheritance-in-illinois"
+  - "illinois/stepchildren-and-inheritance-in-illinois"
   - "illinois/who-inherits-without-a-will-in-illinois"
   - "what-if/stepparent-dies-without-a-will"
 glossary: ["intestate", "heir", "per-stirpes", "beneficiary", "intestate-succession", "bequest"]
@@ -35,7 +36,7 @@ intent: question
 
 You have raised your spouse's child for twenty years, and the law still calls that child a stranger. If you die without a will, a stepchild inherits nothing. Some stepparents hear that and ask whether they can simply adopt the child, even as an adult.
 
-You can, in both Illinois and New Jersey, and it works. It also changes more than the inheritance. This page covers what adoption does, what it can cost your family, the steps, and the cheaper routes that reach the same goal.
+You can in Illinois, and it works. It also changes more than the inheritance. This page covers what adoption does, what it can cost your family, the steps, and the cheaper routes that reach the same goal.
 
 ## Does adopting an adult stepchild make them an heir?
 
@@ -51,9 +52,9 @@ Not unless adopted. Take Joanne, 64, married to Pete for 25 years. Pete's daught
 
 Now suppose Joanne adopted Kayla at 31. In Illinois, a spouse who survives with descendants takes one-half and the descendants take one-half (755 ILCS 5/2-1). Kayla would receive $200,000 at once, and Pete would receive $200,000 instead of $400,000. That is the first thing to weigh: adoption helps the child and can squeeze the spouse, especially when there is no will. With a will that says "everything to my husband, then to Kayla," the trade-off disappears.
 
-## How does an adult adoption work in Illinois and New Jersey?
+## How does an adult adoption work in Illinois?
 
-Both states let a petition for adoption of an adult go to court, and both require the adult's consent. The details below are general. Local forms and the court that hears the case change, so an attorney should confirm them.
+Illinois permits adult adoption through the courts, and it has been used to include stepchildren. The adult must consent. Because the statute treats adult adoptees in some detail, an attorney should check the current text first. The details below are general. Local forms and the court that hears the case change, so an attorney should confirm them.
 
 1. **Confirm the goal.** Write down what you want Kayla to receive and from whom, and check whether a will gets there.
 2. **Get consent in writing.** The adult being adopted must agree. So should your spouse, even if the law does not strictly demand it, since the adoption changes your spouse's share.
@@ -67,12 +68,12 @@ The case is usually shorter than a child adoption because no home study is invol
 
 Four things come up in practice.
 
-- **Your spouse's share can drop.** The Illinois example above is the standard one. In New Jersey, a spouse who survives alongside children who are not the spouse's own is also treated differently from a spouse who survives with shared children only, so check the current rule.
+- **Your spouse's share can drop.** The Illinois example above is the standard one. A spouse who would take everything with no descendants takes one-half once there is a legal child, adopted or not.
 - **Other children get a new sibling.** Their intestate share shrinks. If adoption looks timed to an estate, a sibling may challenge it. The more it looks like a family relationship that already existed, the better it holds up.
 - **Old documents can read oddly.** A grandparent's trust that benefits "descendants" may or may not include a person adopted as an adult. Courts in some states exclude adults adopted late from older class gifts. The adoptee could gain a parent and lose a trust share.
 - **It cannot be reversed.** A will is a pencil. An adoption is a pen.
 
-Another point that surprises people: New Jersey already classifies stepchildren with children for inheritance tax. Under our [New Jersey inheritance tax guide](/learn/new-jersey/new-jersey-inheritance-tax), stepchildren are Class A and owe nothing, so adopting a stepchild saves no New Jersey tax. Illinois has no inheritance tax, though its estate tax kicks in at a lower level than the federal one; see [Illinois estate tax](/learn/illinois/illinois-estate-tax).
+Adoption also brings no tax saving. Illinois has no inheritance tax, so the tax does not turn on whether the person receiving is a child or a stepchild. Its estate tax kicks in at a lower level than the federal one; see [Illinois estate tax](/learn/illinois/illinois-estate-tax). Our page on [adopted children and inheritance in Illinois](/learn/illinois/adopted-children-inheritance-in-illinois) covers how an adoption can change a person's rights in the birth family.
 
 ## What are the alternatives to adopting a stepchild?
 

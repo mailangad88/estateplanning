@@ -1,7 +1,7 @@
 ---
 title: "How to help manage your parent's finances and medical care before there is a crisis"
 description: "When to step in on a parent's money and health decisions, what you can do with no legal authority, and how to get power of attorney and records access."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Step in when you see missed bills, unopened mail, scams or confusing medical visits, and start by asking your parent to sign a power of attorney and a HIPAA release while they still have capacity. Without those documents you can offer help, but banks and doctors do not have to deal with you, and the only legal route left may be guardianship.
 takeaways:
@@ -36,7 +36,7 @@ intent: situation
 
 Marcus noticed it at Thanksgiving. His father, Leon, 79, had always balanced the checkbook to the penny, and now there was a pile of unopened envelopes on the counter, two shutoff notices among them. Leon said he was fine. Marcus wasn't sure whether to push or wait.
 
-Most adult children are in that spot at some point. You are not their parent and they are not your child, and there is a real line between helping and taking over. This article covers when to step in, what you can do with no legal authority at all, which documents change the picture, and what to do if it is already too late for paperwork. It is general education, not legal advice, and the details differ in Illinois and New Jersey and by situation.
+Most adult children are in that spot at some point. You are not their parent and they are not your child, and there is a real line between helping and taking over. This article covers when to step in, what you can do with no legal authority at all, which documents change the picture, and what to do if it is already too late for paperwork. It is general education, not legal advice, and the details depend on Illinois law and on your family's situation.
 
 ## When should an adult child get involved in a parent's finances?
 
@@ -95,7 +95,7 @@ Without either, privacy law lets a doctor listen to you but restricts what the d
 
 ## What if my parent already cannot sign anything?
 
-If your parent no longer understands what a power of attorney does, they cannot sign one, and nobody else can sign it for them. The court is the only route. In Illinois, a guardianship of the estate or person is a petition in the circuit court. In New Jersey, a guardian is appointed through the Superior Court, Chancery Division, Probate Part. Read [guardianship of an adult parent](/learn/guardianship/guardianship-of-an-adult-parent-who-can-petition-and-what-the-court-needs) and the New Jersey explanation in [guardianship in New Jersey](/learn/new-jersey/guardianship-in-new-jersey).
+If your parent no longer understands what a power of attorney does, they cannot sign one, and nobody else can sign it for them. The court is the only route. In Illinois, a guardianship of the estate or person is a petition in the circuit court. An adult child, a spouse, a friend or an agency can file, and the petition must be backed by a physician's report. The court then sets a hearing and appoints a guardian ad litem. Read [guardianship of an adult parent](/learn/guardianship/guardianship-of-an-adult-parent-who-can-petition-and-what-the-court-needs) and our page on [who can file for adult guardianship in Illinois](/learn/illinois/who-can-file-for-adult-guardianship-in-illinois).
 
 A guardian is a heavier tool than a power of attorney. The court appoints, the parent may lose rights, and the guardian must file reports. It is also slower and costs more. Our attorneys point families to it when no document exists and money is at risk, and when a parent needs a decision-maker for placement. Look first at the other options in [guardianship vs power of attorney](/learn/power-of-attorney/power-of-attorney-vs-guardianship).
 
@@ -106,7 +106,7 @@ Act on the records first, and call the authorities second. Ask your parent for p
 Then, depending on what you find:
 
 - Call the bank's fraud department and ask for a flag on unusual activity.
-- Report suspected exploitation to your state's adult protective services agency. Both Illinois and New Jersey have one.
+- Report suspected exploitation to adult protective services. In Illinois, the Department on Aging explains how to report, and the program can investigate financial exploitation.
 - Freeze your parent's credit with the three bureaus, as shown in [how to freeze a parent's credit and put safeguards on accounts](/learn/elder-care/how-to-freeze-a-parents-credit-and-put-safeguards-on-their-accounts).
 - If the relative is the named agent, talk to an attorney about removal. See [power of attorney abuse](/learn/power-of-attorney/power-of-attorney-abuse).
 

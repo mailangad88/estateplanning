@@ -1,7 +1,7 @@
 ---
 title: "Are electronic wills legal? Wills typed on a phone, sent by email or signed on a screen"
 description: "Electronic wills are legal in some states, but a note on your phone or an email to a relative usually is not a will. See what counts and how to sign safely."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   An electronic will can be legal, but only where your state has a statute allowing it and only if you follow that statute's signing and witnessing steps. A will typed in a phone's notes app or sent as an email, with no witnesses, is usually not valid. Some courts will accept it after death, but the family pays to find out.
 takeaways:
@@ -54,7 +54,7 @@ Think about what the old paper rules were guarding against. A will takes effect 
 
 A number of states have passed electronic will laws, many based on a uniform act written for that purpose, and others had temporary emergency rules that were later made permanent or allowed to lapse. Some states recognize only paper wills. Some recognize a will that was valid where it was signed, so a document signed correctly in one state can often be honored in another.
 
-Because this area has moved quickly, you should treat any general statement, including this one, as a starting point. Illinois, for example, has a statute covering electronic wills and video witnessing, and the details are on the [Illinois will requirements](/learn/illinois/illinois-will-requirements) page. For New Jersey, the [New Jersey will requirements](/learn/new-jersey/new-jersey-will-requirements) page lays out what a will needs there. If you live somewhere else, ask the drafting attorney which rule applies on the day you sign.
+Because this area has moved quickly, you should treat any general statement, including this one, as a starting point. Illinois, for example, has a statute covering electronic wills and video witnessing, and the details are on the [Illinois will requirements](/learn/illinois/illinois-will-requirements) page. Our page on the [Illinois Electronic Wills and Remote Witnesses Act](/learn/illinois/illinois-electronic-wills-and-remote-witnesses-act) goes through the steps in order. If you live somewhere else, ask the drafting attorney which rule applies on the day you sign.
 
 ## Why does a note on a phone usually fail?
 
@@ -73,7 +73,7 @@ The last line catches people off guard. A note can be edited by anyone who knows
 
 ### The harmless error exception
 
-A few states have a rule often called harmless error. It lets a judge accept a document as a will, even though it missed a formality, if there is clear and convincing proof you meant it to be your will. New Jersey is among the states with a rule along those lines. Judges have used these rules for unsigned drafts, for a will with one witness instead of two, and occasionally for electronic documents.
+A few states have a rule often called harmless error. It lets a judge accept a document as a will, even though it missed a formality, if there is clear and convincing proof you meant it to be your will. Judges have used these rules for unsigned drafts, for a will with one witness instead of two, and occasionally for electronic documents.
 
 This is a rescue, not a plan. Somebody has to ask the court, the other heirs get to argue, and the judge has to hear evidence about your intent. The note on the phone may win, or it may not. For anyone who wants to see how that plays out for a document nobody signed, the [unsigned will what-if](/learn/what-if/dies-before-signing-their-will) walks through it.
 

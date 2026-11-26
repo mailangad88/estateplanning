@@ -38,7 +38,7 @@ answers:
   - "What estate planning documents should a 50-year-old have?"
   - "What should be in an estate plan for a couple with young children?"
 reviewed: false
-updated: "2026-10-06"
+updated: "2026-11-26"
 ---
 
 **How to use this checklist.** Skip to your life stage and read that section plus the "Everyone" section. Tick what you have, circle what you do not, and do not try to finish in one sitting. The last page, "Fill in what you can," is the one to bring to an attorney.

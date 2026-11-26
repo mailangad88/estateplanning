@@ -1,7 +1,7 @@
 ---
 title: "How long does Google keep a deceased person's account? Gmail, Drive and Google Photos after death"
 description: "Google can delete an account left inactive for two years. See what happens to Gmail, Drive and Photos after a death, and how to save the data in time."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Google does not close an account because the owner died. Its policy currently lets it delete personal accounts that stay inactive for about two years, along with Gmail, Drive and Photos content. A family that wants the data should act well inside that window, either through the owner's Inactive Account Manager setup or by asking Google, with a death certificate and proof of authority.
 takeaways:
@@ -66,7 +66,7 @@ Two points matter in practice. First, inactivity is measured by the account, and
 
 It turns the inactivity clock into a delivery system. The owner opens the Google account settings, finds the digital legacy plan, and chooses a waiting period of 3 to 18 months of inactivity. They name up to 10 trusted contacts and decide which data types each contact may receive. When the timer runs out, Google contacts those people and sends a download link for the chosen data. The owner can also tell Google to delete the account afterward.
 
-This is the only route where the owner's wishes are written down in Google's own system, and the statutes in both of our states give an online tool like this priority over a conflicting will. Our page on [digital legacy contacts](/learn/digital-assets/digital-legacy-contacts) shows the setup steps. If Walter had spent ten minutes on it, Joan would have received an email instead of an error message.
+This is the only route where the owner's wishes are written down in Google's own system, and the Illinois statute gives an online tool like this priority over a conflicting will. Our page on [digital legacy contacts](/learn/digital-assets/digital-legacy-contacts) shows the setup steps. If Walter had spent ten minutes on it, Joan would have received an email instead of an error message.
 
 If the owner did set it up, check the contact's own email, including spam, since Google's notice comes from an automated address.
 
@@ -85,7 +85,7 @@ The executor's job is to ask for the least that solves the problem. A family tha
 
 ## How do state laws affect your request?
 
-Illinois and New Jersey both follow the uniform fiduciary access approach. In Illinois the law is 755 ILCS 70, and in New Jersey it is N.J.S.A. 3B:14-61.1 and the sections after it. In each, an online tool beats a will, a will beats the terms of service, and the content of communications generally needs consent or a court direction. A list of the accounts (without the messages) is easier to get. Our state pages on [Illinois digital assets law](/learn/illinois/illinois-digital-assets-law-for-executors) and [New Jersey digital assets law](/learn/new-jersey/new-jersey-digital-assets-law) give the specifics.
+Illinois follows the uniform fiduciary access approach, and the law is 755 ILCS 70. Under it, an online tool beats a will, a will beats the terms of service, and the content of communications generally needs consent or a court direction. A list of the accounts (without the messages) is easier to get. Our page on [Illinois digital assets law](/learn/illinois/illinois-digital-assets-law-for-executors) gives the specifics.
 
 Whether the account holder lived in one of those states matters, since the law that applies generally follows where the user lived.
 

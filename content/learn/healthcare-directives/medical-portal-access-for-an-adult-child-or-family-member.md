@@ -1,7 +1,7 @@
 ---
 title: "Giving an adult child or family member access to your medical portal"
 description: "Portal proxy access, a HIPAA release and a healthcare agent are three different tools. See what each gives a family member and how to set each one up."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Yes, you can give an adult child access to your medical portal, but not by handing over your password. Ask each provider for its proxy access form, which creates a separate login for them. Pair it with a signed HIPAA authorization so other offices will talk to them, and a healthcare power of attorney so they can decide if you cannot.
 takeaways:
@@ -93,9 +93,9 @@ The same tools work for anyone you trust. A spouse often already has the stronge
 
 Anna, 66, is unmarried and has a close friend, Mark, who handles her appointments. Her sister lives out of state. Without paperwork, the office would speak to the sister, a relative she rarely talks to, and refuse Mark. Anna signed a release and a proxy form for Mark, and named her sister as backup. The sister agreed.
 
-## Illinois and New Jersey
+## What Illinois adds
 
-Both states follow federal HIPAA for privacy of records and add their own rules for sensitive records, such as mental health and substance-use treatment, which may need a specific consent beyond a general release. For decisions rather than records, see the [Illinois health care power of attorney](/learn/illinois/illinois-healthcare-power-of-attorney) and the [New Jersey advance directive](/learn/new-jersey/new-jersey-advance-directives) guides.
+Illinois follows federal HIPAA for privacy of records and adds its own rules for sensitive records, such as mental health and substance-use treatment, which may need a specific consent beyond a general release. For decisions rather than records, see the [Illinois health care power of attorney](/learn/illinois/illinois-healthcare-power-of-attorney) guide. If no agent is named, the [Health Care Surrogate Act](/learn/illinois/illinois-health-care-surrogate-act-who-decides) sets who decides.
 
 ## Does the portal show everything a relative might worry about?
 

@@ -1,7 +1,7 @@
 ---
 title: "Can a power of attorney sell a parent's house to pay for care?"
 description: "Can a power of attorney sell a parent's house to pay for care? When an agent may sell, where the money goes, Medicaid traps and costly errors to avoid."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Yes, if the power of attorney covers real estate, the parent has not recovered capacity, and the sale benefits the parent. The agent signs the deed, the money goes into an account in the parent's name, and it pays for care. The traps are selling under market value, moving the proceeds to the agent, and wrecking Medicaid eligibility by giving money away.
 takeaways:
@@ -35,11 +35,11 @@ intent: question
 
 A parent moves into memory care, the monthly bill arrives, and the house sits empty. If you hold the power of attorney, selling it can feel like the obvious step. Often it is. But the sale decision, the paperwork and what you do with the money are three separate problems, and each has a way to go wrong.
 
-This page covers when an agent can sell, how the sale works, and the Medicaid and tax questions that should come before a listing agreement. It is general education for Illinois and New Jersey families, not legal advice.
+This page covers when an agent can sell, how the sale works, and the Medicaid and tax questions that should come before a listing agreement. It is general education for Illinois families, not legal advice.
 
 ## Can a power of attorney sell a house to pay for a parent's care?
 
-Yes, when the document gives the agent authority over real estate and the sale is for the parent's benefit. Most financial powers of attorney include real estate, but read yours. In an Illinois statutory short form the real estate category is one of the powers the parent initials, so an uninitialed or crossed-out line means no authority. New Jersey documents are drafted individually, and the Revised Durable Power of Attorney Act leaves gifts and similar sensitive powers to what the document says.
+Yes, when the document gives the agent authority over real estate and the sale is for the parent's benefit. Most financial powers of attorney include real estate, but read yours. In an Illinois statutory short form the real estate category is one of the powers the parent initials, so an uninitialed or crossed-out line means no authority. A power of attorney drafted from scratch, rather than on the statutory form, should name real estate clearly so the title company can see it.
 
 The agent must also act as a fiduciary. That means the sale price should be fair, the reason should be the parent's needs, and the agent should avoid conflicts. Our overview of [power of attorney and real estate](/learn/power-of-attorney/power-of-attorney-and-real-estate) covers the closing mechanics, such as the title company's review and recording the document. This page is about the care decision.
 
@@ -70,7 +70,7 @@ The [agent's duties](/learn/power-of-attorney/what-does-a-power-of-attorney-agen
 
 The sale itself is not a gift, but what you do afterwards can be. Proceeds that go to the parent's care at fair rates are spent properly. Proceeds that go to the agent, or to children as "early inheritance," are a transfer. Most states look back five years for transfers made for less than fair value before a Medicaid application, and the penalty is a period of ineligibility. Our articles on the [Medicaid look-back period](/learn/elder-care/medicaid-look-back-period) and [half-a-loaf gifting](/learn/elder-care/half-a-loaf-gifting-and-how-long-the-medicaid-penalty-lasts) show how that penalty is counted.
 
-An agent also cannot give gifts unless the document says so. Under the Illinois statute, gifts and changes of beneficiary are off the table without express authority, and the same prudent rule applies in New Jersey. See [can a power of attorney make gifts](/learn/power-of-attorney/can-a-power-of-attorney-make-gifts).
+An agent also cannot give gifts unless the document says so. Under the Illinois statute, gifts and changes of beneficiary are off the table without express authority. See [can a power of attorney make gifts](/learn/power-of-attorney/can-a-power-of-attorney-make-gifts).
 
 <!-- visual: whatif id=long-term-care-costs -->
 

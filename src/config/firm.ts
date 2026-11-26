@@ -7,16 +7,28 @@ import type { BusinessStructure } from "@/lib/fees";
  */
 export const firm = {
   brandName: "Family Future Planning", // matches familyfutureplanning.com
-  firmLegalName: "[Firm legal name]",
+  /** Angad, 2026-11-08. */
+  firmLegalName: "Singh & Kaur Law LLC",
   attorneyName: "Sargun Singh",
   attorneyTitle: "Estate planning attorney",
+  /**
+   * Whether the attorney's name may appear on public pages or in structured data. Off (Angad, 2026-11-06):
+   * the site names no attorney; review stays a process, unnamed. Internal screens still use attorneyName.
+   */
+  publishAttorneyName: false,
+  /** How public pages refer to the reviewer while the name is not published. */
+  attorneyPublicLabel: "a licensed Illinois estate planning attorney",
+  /** Intake line, answered by the attorney (Angad, 2026-11-06). */
   phone: "(630) 656-3059",
   /** Public contact email for the site (a company address, separate from the attorney). */
-  email: "[Company email]",
-  officeAddress: "[Office address]",
-  officeHours: "[Office hours]",
+  email: "hello@familyfutureplanning.com", // Angad, 2026-11-08
+  /** "Street, City, ST 12345" so postalAddress() in src/lib/seo.tsx can split it for structured data. Angad, 2026-11-08. */
+  officeAddress: "3602 Grand View Court, St Charles, IL 60175",
+  officeHours: "Monday to Sunday, 8 am to 7 pm",
+  /** Same hours in schema.org form for structured data. */
+  openingHours: { days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], opens: "08:00", closes: "19:00" },
   /** What the site promises about response time. Keep it true. */
-  responseTime: "[Response time, e.g. within one business day]",
+  responseTime: "the same day during office hours", // Angad, 2026-11-08
   /** Profile URLs (state bar, Google Business Profile and similar) that identify the firm. Empty omits sameAs from structured data. */
   sameAs: [] as string[],
   /**
@@ -62,14 +74,14 @@ export interface Package {
 }
 
 /**
- * Sitewide disclaimer (Sargun Singh, 2026-10-25, typos fixed). Shown in the footer, on /book and on every
- * public form. The site is a referral network that matches visitors with an attorney.
+ * Sitewide disclaimer (Sargun Singh, 2026-10-25, typos fixed; referral sentence dropped by Angad 2026-11-26 now that the site names Singh & Kaur Law LLC). Shown in the footer, on /book and on every
+ * public form.
  */
 export const SITE_DISCLAIMER =
-  "All information on this website is for educational purposes only. It does not constitute legal advice, and it does not create an attorney-client relationship. This is a referral website: we will match you with an appropriate attorney.";
+  "All information on this website is for educational purposes only. It does not constitute legal advice, and it does not create an attorney-client relationship.";
 
 export const SITE_DISCLAIMER_ES =
-  "Toda la información de este sitio web es solo educativa. No constituye asesoría legal ni crea una relación abogado-cliente. Este es un sitio de referencias: lo pondremos en contacto con un abogado adecuado.";
+  "Toda la información de este sitio web es solo educativa. No constituye asesoría legal ni crea una relación abogado-cliente.";
 
 /**
  * Every price the site shows, in one place. Values come from the attorney. A value can be a price

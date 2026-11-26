@@ -1,7 +1,7 @@
 ---
 title: "Can you make a will if you are blind, deaf, or cannot read, speak or write?"
 description: "Blindness, deafness, a stroke or a tremor does not stop you from making a will. See how signing by mark, reading aloud and interpreters keep it valid."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Yes. A physical disability does not take away the right to make a will. What the law cares about is whether you understand the document and can show that it is yours. If you cannot sign, a mark or another person signing at your direction and in your presence usually works. If you cannot read or speak, the attorney reads it aloud or uses writing or an interpreter, and the witnesses see you confirm it.
 takeaways:
@@ -57,7 +57,7 @@ That said, a disability changes what a court will want to see later. The main wo
 | Cannot speak | Writing, a letter board, a speech device, reliable nods to yes and no questions | Anything where one family member "translates" for you |
 | Cannot write or hold a pen | A mark, a stamp if your state allows it, or another person signing for you at your direction and in your presence | Letting someone sign when you are not in the room |
 
-The last row has a small catch. When another person signs your name, most states want that person to do it in your conscious presence and at your direction, and they often want the witnesses to watch too. Illinois and New Jersey both allow a will to be signed that way, but the details are worth confirming with a lawyer rather than guessing. Do not rely on a form downloaded from a website for this.
+The last row has a small catch. When another person signs your name, most states want that person to do it in your conscious presence and at your direction, and they often want the witnesses to watch too. Illinois allows a will to be signed that way, but the details are worth confirming with a lawyer rather than guessing. Do not rely on a form downloaded from a website for this.
 
 ## Does the will have to be read aloud?
 

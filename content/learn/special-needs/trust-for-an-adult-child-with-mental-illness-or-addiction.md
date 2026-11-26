@@ -1,7 +1,7 @@
 ---
 title: "Trust for an adult child with mental illness or addiction: special needs, discretionary or spendthrift"
 description: "Leaving money to an adult child with mental illness or addiction: when a special needs trust is required, when a spendthrift trust is enough and who serves."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   For an adult child with mental illness or addiction, leave the money in a discretionary trust with a spendthrift clause and an independent trustee, not outright. If the child receives SSI or Medicaid, or likely will, the trust should be drafted as a special needs trust so the inheritance does not cost those benefits. If the child receives neither, a discretionary trust gives more flexibility.
 takeaways:
@@ -49,7 +49,7 @@ The choice turns on one question: does your child receive, or will they probably
 | Child is not on benefits, history of addiction | Discretionary spendthrift trust | Trustee pays bills directly; can withhold cash |
 | Child is stable but impulsive with money | Staged trust with a trustee to ask | Larger payments at later ages with trustee consent |
 
-The word "discretionary" means the trustee, not the child, decides if and when money is paid. The word "spendthrift" means the child cannot sign over or borrow against the trust, and most creditors cannot reach it. Both Illinois and New Jersey have adopted trust codes that recognize spendthrift clauses, though each has exceptions for things like child support. Our page on [spendthrift trusts](/learn/trusts/spendthrift-trusts) explains the limits.
+The word "discretionary" means the trustee, not the child, decides if and when money is paid. The word "spendthrift" means the child cannot sign over or borrow against the trust, and most creditors cannot reach it. The Illinois Trust Code recognizes spendthrift clauses, though it has exceptions for things like child support. Our page on [spendthrift trusts](/learn/trusts/spendthrift-trusts) explains the limits.
 
 ## Does a mental illness diagnosis mean my child needs a special needs trust?
 

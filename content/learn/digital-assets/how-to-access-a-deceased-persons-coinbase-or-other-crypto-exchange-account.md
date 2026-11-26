@@ -1,7 +1,7 @@
 ---
 title: "How to access a deceased person's Coinbase or other crypto exchange account"
 description: "How do you access a deceased person's Coinbase account? Do not log in. Send the exchange a death certificate and court letters. Steps, papers and tax points."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Do not log in to a deceased person's Coinbase or other exchange account, even if you know the password. Contact the exchange's deceased-account team, send the death certificate and the court papers showing you are the executor, and ask it to transfer or sell the holdings to the estate. Expect weeks, and have a small estate affidavit or letters ready.
 takeaways:
@@ -51,8 +51,8 @@ Two consequences follow. The balance is part of the owner's estate and normally 
 
 ## What are the steps?
 
-1. **Get the death certificate.** Order several certified copies. The [Illinois](/learn/illinois/illinois-death-certificates-who-can-order-county-clerk-or-idph) and [New Jersey](/learn/new-jersey/new-jersey-death-certificates-who-can-order-and-how-many-you-need) guides explain who can request them.
-2. **Find out who has authority.** That is the executor named in the will, once the court has issued letters, or an administrator if there is no will. If the estate is small, some exchanges accept a small estate affidavit instead. In Illinois, the affidavit route is for personal property up to $150,000, not counting registered vehicles (see the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit)). In New Jersey, the figures are lower and depend on who is claiming (see the [New Jersey small estate affidavit](/learn/new-jersey/new-jersey-small-estate-affidavit)).
+1. **Get the death certificate.** Order several certified copies. Our guide to [Illinois death certificates](/learn/illinois/illinois-death-certificates-who-can-order-county-clerk-or-idph) explains who can request them.
+2. **Find out who has authority.** That is the executor named in the will, once the court has issued letters, or an administrator if there is no will. If the estate is small, some exchanges accept a small estate affidavit instead. In Illinois, the affidavit route is for personal property up to $150,000, not counting registered vehicles (see the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit)).
 3. **Find the exchange's deceased-account instructions.** Large exchanges publish them on their support pages. Use the official site, typed in by hand, not a link in an email. Scammers target people looking for a dead relative's crypto.
 4. **Submit the documents.** Typical items are the death certificate, the letters or affidavit, your government ID, the account holder's name and email, and sometimes a notarized form.
 5. **Decide what you want done.** The exchange may sell the holdings and send cash to the estate's bank account, or transfer the coins to a wallet or exchange account in the estate's name. Ask what is allowed. Selling is simpler. Transferring keeps the position but requires you to set up an estate account.
@@ -77,13 +77,13 @@ If the exchange can't be found and the person also kept coins in a personal wall
 
 ## What do the laws say about an executor's rights?
 
-Both Illinois and New Jersey have adopted the Revised Uniform Fiduciary Access to Digital Assets Act. It lets an executor ask a custodian for records, and, with the right authority, for the account's contents. The details differ by the type of record, and a company's own online tool can override it. Read the [Illinois digital assets law](/learn/illinois/illinois-digital-assets-law-for-executors) or the [New Jersey version](/learn/new-jersey/new-jersey-digital-assets-law) before relying on it.
+Illinois has adopted the Revised Uniform Fiduciary Access to Digital Assets Act. It lets an executor ask a custodian for records, and, with the right authority, for the account's contents. The details differ by the type of record, and a company's own online tool can override it. Read our page on [Illinois digital assets law](/learn/illinois/illinois-digital-assets-law-for-executors) before relying on it.
 
 For an exchange the practical authority comes from the court papers. The company wants to know it is paying the right person, and letters are the proof.
 
 ## How is the account taxed?
 
-Receiving the crypto is not income. For federal estate tax, the account is valued at fair market value on the date of death. The exclusion is $15 million per person in 2026, so most families owe no federal estate tax. Illinois taxes estates over $4 million. New Jersey has an inheritance tax, from which a spouse or child is exempt.
+Receiving the crypto is not income. For federal estate tax, the account is valued at fair market value on the date of death. The exclusion is $15 million per person in 2026, so most families owe no federal estate tax. Illinois taxes estates over $4 million, and crypto counts toward that total at its date-of-death value. Illinois has no inheritance tax, so the heirs do not pay state tax on what they receive.
 
 For income tax, the heir's basis is generally the date-of-death value. An example makes this concrete.
 

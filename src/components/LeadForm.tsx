@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { US_STATES } from "@/config/firm";
+import { SERVED_OR, US_STATES } from "@/config/firm";
 import { DEFAULT_TOOL_STATE, toolConfig } from "@/config/tools";
 import { HEARD_FROM_OPTIONS } from "@/lib/heardFrom";
 import { noRelationshipText, recordingNoticeText, smsConsentText } from "@/lib/consent";
@@ -138,7 +138,7 @@ export default function LeadForm(props: Props) {
         {props.why && <p className="notice">{props.why}</p>}
         {props.tool !== "chat" && (
           <p className="lead-form__trust">
-            We match you with an estate planning attorney in our network who is licensed in your state. Flat fees, quoted in
+            We match you with an estate planning attorney in our network who is licensed in {SERVED_OR}. Flat fees, quoted in
             writing before you sign. Your details stay confidential.
           </p>
         )}

@@ -1,7 +1,7 @@
 ---
 title: "SSI overpayment after an inheritance: how to appeal, ask for a waiver or repay"
 description: "Got an SSI overpayment notice after an inheritance? See why it happens, the 60-day appeal, the waiver form, how much is withheld and how to stop a repeat."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   An SSI overpayment after an inheritance means Social Security paid you checks for months when the money put you over the $2,000 resource limit. You have 60 days to appeal the notice, you can ask for a waiver on form SSA-632-BK at any time, and if you still receive SSI the usual withholding is 10 percent of the monthly payment unless you ask for a different amount.
 takeaways:
@@ -93,7 +93,7 @@ The mistakes our attorneys see are a pile of small cash withdrawals with no reco
 
 SSI and Medicaid are separate programs, but in many states they move together. If your SSI is cut off for the months you were over the resource limit, ask your state Medicaid office whether coverage was affected and whether you must file a new application. Our article on [how an inheritance affects Medicaid and SSI](/learn/after-a-death/does-an-inheritance-affect-medicaid-or-ssi) describes the Medicaid side.
 
-State planning pages are worth a look if you live in Illinois or New Jersey. Our [special needs planning guide for Illinois](/learn/illinois/special-needs-planning-in-illinois-for-a-disabled-child) and [special needs planning in New Jersey](/learn/new-jersey/special-needs-planning-in-new-jersey) cover how each state's disability services and ABLE programs fit with SSI.
+Our [special needs planning guide for Illinois](/learn/illinois/special-needs-planning-in-illinois-for-a-disabled-child) covers how the state's disability services and ABLE program fit with SSI.
 
 <!-- visual: whatif id=disabled-heir-inherits-directly -->
 

@@ -1,7 +1,7 @@
 ---
 title: "What happens to a vacation home in another country when the owner dies?"
 description: "A condo in Mexico or a cottage in Ireland follows local law, not yours. See how local inheritance rules, U.S. estate tax and a second will fit together."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A vacation home abroad is governed by the inheritance law of the country where it sits, so your U.S. will may not control it. The U.S. still counts its value in your estate for federal estate tax, and your heirs may owe foreign taxes and fees too. Most owners need a local will or local advice, plus a plan for who can act quickly.
 takeaways:
@@ -111,7 +111,7 @@ If the property is rented out, the lease continues after the owner's death in mo
 
 ## How state law changes this
 
-Your U.S. state still governs your U.S. will and the rest of your estate. Illinois and New Jersey follow the usual U.S. rules for valid wills, described in our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides, but neither can change what another country does with land inside its borders. The effect of the U.S. will on the foreign home is a question of foreign law.
+Your U.S. state still governs your U.S. will and the rest of your estate. Illinois follows the usual U.S. rules for valid wills, described in our [Illinois guide](/estate-planning/illinois), but it cannot change what another country does with land inside its borders. The effect of the U.S. will on the foreign home is a question of foreign law.
 
 ## How we can help
 

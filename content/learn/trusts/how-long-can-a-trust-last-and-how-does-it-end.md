@@ -1,7 +1,7 @@
 ---
 title: "How long can a trust last? The rule against perpetuities and the ways a trust ends"
 description: "Some trusts end within a year of a death, others run for generations. See what sets a trust's lifespan, the perpetuities rule and how a trust can close early."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A trust lasts as long as its terms say, up to a limit set by state law. Most family trusts end within a few years of the grantor's death, when the assets are distributed. Others run until a child reaches a set age or for life. Some states cap a trust at roughly 90 years or a life plus 21 years, and a few allow trusts with no limit.
 takeaways:
@@ -107,9 +107,9 @@ Longer is not always safer. Ask these questions before you tell your attorney "k
 
 A flexible approach helps. Many trusts give the trustee discretion to distribute earlier for health, education, a home purchase or a business, and to end the trust if it becomes uneconomical. The [trust distribution standards](/learn/trusts/trust-distribution-standards-hems-and-discretion) page shows how those standards read.
 
-## What does this look like in Illinois and New Jersey?
+## What does this look like in Illinois?
 
-Both states follow the general pattern: a trust runs under its terms and the governing law's outer time limit. Questions about how long your trust may last, and whether your state limits the term, belong with the drafting attorney. The [Illinois living trusts](/learn/illinois/illinois-living-trusts) and [New Jersey living trusts](/learn/new-jersey/living-trusts-in-new-jersey) pages cover points that are particular to each state, including how trustees give notice and account.
+Illinois follows the general pattern: a trust runs under its terms and the governing law's outer time limit. Questions about how long your trust may last, and whether Illinois law limits the term, belong with the drafting attorney. The [Illinois living trusts](/learn/illinois/illinois-living-trusts) page covers points particular to Illinois, and [an Illinois trustee's duty to inform beneficiaries](/learn/illinois/illinois-trustee-duty-to-inform-beneficiaries) explains how trustees give notice and account.
 
 ## How we can help
 

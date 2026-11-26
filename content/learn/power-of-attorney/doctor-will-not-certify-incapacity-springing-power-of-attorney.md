@@ -1,7 +1,7 @@
 ---
 title: "What to do when a doctor will not certify incapacity for a springing power of attorney"
-description: "A springing power of attorney is stuck until a doctor signs. Learn why doctors refuse, who else can certify, and the steps to take in Illinois or New Jersey."
-updated: "2026-10-26"
+description: "A springing power of attorney is stuck until a doctor signs. Learn why doctors refuse, who else can certify, and the steps to take in Illinois."
+updated: "2026-11-26"
 answer: >-
   If a doctor will not certify incapacity, your springing power of attorney stays switched off, and the agent cannot act. First check who the document allows to certify, then send a written request with a HIPAA release, ask a different qualified clinician, and request a formal capacity evaluation. If every route fails, a court can decide, which is slower and public.
 takeaways:
@@ -35,7 +35,7 @@ intent: situation
 
 Linda is 74 and has early Alzheimer's. Two years ago she signed a springing power of attorney naming her daughter Renata as agent, and the document says it starts only when "two physicians certify in writing that I am unable to manage my affairs." Now Linda has missed three mortgage payments and given $4,000 to a caller. Renata walked into the family doctor's office with the document. The doctor said she could not sign anything without a recent exam and would not discuss Linda's health with anyone.
 
-That is the central problem with a springing document, one of the choices covered in our [power of attorney guide](/learn/power-of-attorney). The power sits in a drawer until a doctor says so, and doctors have reasons to hesitate. This page explains why a doctor might refuse, who else can sign, and what to do in order if you are stuck. It applies in Illinois, New Jersey and most other states, because the trigger comes from the document itself.
+That is the central problem with a springing document, one of the choices covered in our [power of attorney guide](/learn/power-of-attorney). The power sits in a drawer until a doctor says so, and doctors have reasons to hesitate. This page explains why a doctor might refuse, who else can sign, and what to do in order if you are stuck. It applies in Illinois and most other states, because the trigger comes from the document itself.
 
 ## Why do doctors refuse to certify incapacity?
 
@@ -52,7 +52,7 @@ Knowing which reason applies tells you what to fix. A privacy refusal needs pape
 
 ## What does the document say, and who can sign?
 
-Read the trigger clause before you call anyone. Both Illinois and New Jersey let the person who signs the power of attorney decide when it starts, and the clause controls. Illinois's statutory form lets the principal choose a future date or event, and the New Jersey statute treats the document as the guide, with a default meaning of disability as being unable to manage property and affairs effectively. Our pages on the [Illinois power of attorney for property](/learn/illinois/illinois-power-of-attorney-for-property) and the [New Jersey power of attorney](/learn/new-jersey/new-jersey-power-of-attorney) cover those rules.
+Read the trigger clause before you call anyone. Illinois lets the person who signs the power of attorney decide when it starts, and the clause controls. The statutory form lets the principal choose a future date or event. Our page on the [Illinois power of attorney for property](/learn/illinois/illinois-power-of-attorney-for-property) covers those rules.
 
 | Wording in the document | Who can usually sign | Common trap |
 | --- | --- | --- |
@@ -83,7 +83,7 @@ Work through these in order. Most families get a signature by step four.
 
 Then the document stays dormant and the agent has no authority. Bills keep coming and accounts stay frozen to the agent. At that point the options narrow to a court process.
 
-In Illinois, a guardianship petition asks the court to find that the person cannot manage their affairs and to appoint someone, and our [Illinois guardianship page](/learn/illinois/illinois-guardianship) describes it. New Jersey runs a similar process, explained in [guardianship in New Jersey](/learn/new-jersey/guardianship-in-new-jersey). Courts also hear a request to confirm that a power of attorney is in effect. Either way, expect public filings, a medical report, a notice to the person and legal fees. Compare that with a one-page letter and you see why the earlier steps are worth the trouble. Our article on [power of attorney vs. guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship) lays out the tradeoffs.
+In Illinois, a guardianship petition asks the court to find that the person cannot manage their affairs and to appoint someone, and our [Illinois guardianship page](/learn/illinois/illinois-guardianship) describes it. Courts also hear a request to confirm that a power of attorney is in effect. Either way, expect public filings, a medical report, a notice to the person and legal fees. Compare that with a one-page letter and you see why the earlier steps are worth the trouble. Our article on [power of attorney vs. guardianship](/learn/power-of-attorney/power-of-attorney-vs-guardianship) lays out the tradeoffs.
 
 ## What does a worked example look like?
 

@@ -1,7 +1,7 @@
 ---
 title: "Can a prenup be changed after marriage? Rules for changing, cancelling and enforcing one"
-description: "Yes, spouses can change or cancel a prenup after the wedding, but only in a signed writing. How courts enforce one in Illinois and New Jersey, and a 401(k) trap"
-updated: "2026-10-26"
+description: "Yes, spouses can change or cancel a prenup after the wedding, but only in a signed writing. How Illinois courts enforce one, and the 401(k) trap"
+updated: "2026-11-26"
 answer: >-
   Yes. After the wedding, spouses can change or cancel a prenup, but only by a written agreement that both of them sign. A verbal deal, an email thread or years of acting differently does not count. Courts enforce a prenup that was signed voluntarily, with honest financial disclosure, and that is not grossly unfair when enforced.
 takeaways:
@@ -39,7 +39,7 @@ It can, but there is a right way to do it. This page covers how to change or can
 
 ## Can you change a prenup after you are married?
 
-Yes, if both spouses agree and sign a written amendment. Illinois and New Jersey both follow the uniform approach: a premarital agreement can be amended or revoked after the wedding only by a written agreement signed by the spouses, and the new paper does not need any payment or trade to be valid. A promise at the kitchen table is not enough, even when both people remember it the same way.
+Yes, if both spouses agree and sign a written amendment. Illinois follows the uniform approach: a premarital agreement can be amended or revoked after the wedding only by a written agreement signed by the spouses (750 ILCS 10/6), and the new paper does not need any payment or trade to be valid. A promise at the kitchen table is not enough, even when both people remember it the same way.
 
 Three practical points matter here.
 
@@ -51,7 +51,7 @@ Third, keep every signed version together. When Tom and Renata's attorney drafte
 
 ## What makes a prenup enforceable?
 
-A prenup is enforced when it is in writing, both people signed it, the signature was voluntary and the financial picture was fairly disclosed. Courts in both states can refuse to enforce a term that was signed under pressure, or that was so one-sided at the moment of enforcement that it shocks the conscience, particularly when the weaker side was kept in the dark about assets.
+A prenup is enforced when it is in writing, both people signed it, the signature was voluntary and the financial picture was fairly disclosed. In Illinois, a spouse can avoid enforcement by proving the agreement was not signed voluntarily. The other route is to prove it was unconscionable when signed and that the spouse had no fair disclosure, did not waive it in writing, and did not otherwise know the other's finances (750 ILCS 10/7). A lopsided deal alone is not enough.
 
 | Factor a court looks at | What helps enforcement | What invites a challenge |
 |---|---|---|
@@ -61,7 +61,7 @@ A prenup is enforced when it is in writing, both people signed it, the signature
 | Fairness | Terms a reasonable person would sign with full information | One spouse left with nothing and no way to support themselves |
 | Signing | Signed by both, witnessed or notarized as the form requires | Unsigned drafts, or a version nobody can find |
 
-One local detail: Illinois lets a court look at a waiver of spousal support if enforcing it would leave a spouse in real hardship, even when the rest of the agreement stands. New Jersey takes a similar view of terms that are unconscionable when enforcement is sought. If your prenup waives support, ask a lawyer how those rules apply to you.
+One local detail: Illinois lets a court require support when a support waiver causes undue hardship from circumstances that were not reasonably foreseeable at signing, even when the rest of the agreement stands (750 ILCS 10/7). If your prenup waives support, ask a lawyer how that rule applies to you. Our page on [Illinois prenups and inheritance rights](/learn/illinois/illinois-prenup-and-inheritance-rights) covers the Act in more detail.
 
 ## Does each spouse need their own lawyer?
 

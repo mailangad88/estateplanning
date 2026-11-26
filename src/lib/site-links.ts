@@ -1,7 +1,7 @@
 import { TOOLS } from "@/config/tools";
 import { DECISIONS, decisionPath } from "@/config/decisions";
 import { getChecklists, getComparisons, getGuides, getLifeEvents, getPosts } from "@/lib/content";
-import { getClusterArticles, getPillar } from "@/lib/library";
+import { getClusterArticles, getPillar, isClusterServed } from "@/lib/library";
 import { magnetsFor, type Magnet } from "@/lib/magnets";
 
 /**
@@ -97,7 +97,7 @@ export function clusterMapPaths(): string[] {
 export function libraryLinksFor(path: string, limit = 4): { href: string; title: string; kind: string }[] {
   const out: { href: string; title: string; kind: string }[] = [];
   for (const [cluster, paths] of Object.entries(BY_CLUSTER)) {
-    if (!paths.includes(path)) continue;
+    if (!paths.includes(path) || !isClusterServed(cluster)) continue;
     const pillar = getPillar(cluster);
     if (pillar) out.push({ href: pillar.url, title: pillar.title, kind: "Library" });
     for (const a of getClusterArticles(cluster).slice(0, 2)) out.push({ href: a.url, title: a.title, kind: "Library" });

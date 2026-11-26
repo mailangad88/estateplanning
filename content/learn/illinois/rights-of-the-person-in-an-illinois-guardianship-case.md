@@ -1,7 +1,7 @@
 ---
 title: "Rights of the person in an Illinois guardianship case: notice, a lawyer, a jury"
 description: "If an Illinois court is deciding whether you need a guardian, you have rights to notice, to attend, to a lawyer and to ask for a jury. See how each one works."
-updated: "2026-11-01"
+updated: "2026-11-26"
 answer: >-
   A person facing an Illinois adult guardianship petition has the right to receive the petition and summons at least 14 days before the hearing, to attend, to be represented by a lawyer, to ask for a jury, and to have a guardian ad litem report to the court. The court must find a disability by clear and convincing evidence.
 takeaways:
@@ -66,7 +66,7 @@ Yes, the person may demand a jury, and the court must honor a timely demand. Thi
 
 The petitioner must prove by clear and convincing evidence that the person is a person with a disability and needs a guardian (755 ILCS 5/11a-3). That is a higher standard than the usual civil test. Evidence includes the physician's report, the guardian ad litem's findings, testimony from caregivers and the person's own answers to the judge's questions.
 
-A bad financial choice, an eccentric lifestyle or a family disagreement does not meet that standard. Our national article on [contesting a guardianship](/learn/guardianship/can-a-guardianship-be-contested-or-ended) compares Illinois with New Jersey.
+A bad financial choice, an eccentric lifestyle or a family disagreement does not meet that standard. Our national article on [contesting a guardianship](/learn/guardianship/can-a-guardianship-be-contested-or-ended) explains how a challenge or an ending usually works.
 
 ## How do these rights play out, step by step?
 

@@ -10,7 +10,7 @@ import PageMeta from "@/components/PageMeta";
 import { KitFaqs, TopicDiagram } from "@/components/page-kit";
 import { RichProse } from "@/components/embeds/rich-prose";
 import { diagramFor } from "@/lib/page-faqs";
-import { findByUrl, getBacklinks, getGlossary, getGlossaryEntry, refToUrl } from "@/lib/library";
+import { findByUrl, getBacklinks, getGlossary, getGlossaryEntry, isClusterServed, refToUrl } from "@/lib/library";
 import { breadcrumbSchema, definedTermSchema, graph } from "@/lib/schema";
 
 type Params = { term: string };
@@ -47,6 +47,8 @@ export default async function TermPage({ params }: { params: Promise<Params> }) 
   const guides = g.related
     .map((r) => findByUrl(refToUrl(r)))
     .filter((x) => x !== undefined && "title" in x)
+    // Hide guides in a state section that is not served yet (the New Jersey library).
+    .filter((x) => !("cluster" in x) || isClusterServed(String((x as { cluster: unknown }).cluster)))
     .map((x) => x as { url: string; title: string; description: string });
   const mentionedIn = getBacklinks(g.url).filter((p) => !guides.some((x) => x.url === p.url)).slice(0, 8);
   // The term, its other names and the guides it points to say what the page is about.

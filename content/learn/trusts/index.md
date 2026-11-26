@@ -1,7 +1,7 @@
 ---
 title: "Trusts explained: revocable, irrevocable and how to choose"
 description: "A plain-English guide to trusts: revocable vs. irrevocable, who does what, how funding works, when a trust beats a will, and what trusts cannot do for taxes."
-updated: "2026-10-06"
+updated: "2026-11-26"
 answer: >-
   A trust is a legal arrangement where a trustee holds property for beneficiaries under written rules. A revocable living trust can be changed anytime and mainly avoids probate and plans for incapacity. An irrevocable trust cannot be easily changed and can serve tax, benefits or protection goals. Which fits depends on your assets, family and state.
 takeaways:
@@ -187,7 +187,7 @@ If someone told you to put your Chicago-area property in a land trust, [Illinois
 
 To plan around the calendar, [how long it takes to set up a living trust](/learn/trusts/how-long-does-it-take-to-set-up-a-living-trust) walks through drafting, signing and funding.
 
-Worried the county will drop your exemption? [Does a living trust affect your homestead exemption and property taxes](/learn/trusts/does-a-living-trust-affect-homestead-exemption-and-property-taxes) covers Illinois and New Jersey.
+Worried the county will drop your exemption? [Does a living trust affect your homestead exemption and property taxes](/learn/trusts/does-a-living-trust-affect-homestead-exemption-and-property-taxes) covers Illinois assessors and exemptions.
 
 To check what your trust actually owns, [how to tell if your trust is funded](/learn/trusts/how-to-tell-if-your-trust-is-actually-funded) gives an account-by-account self-check.
 

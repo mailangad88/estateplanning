@@ -1,7 +1,7 @@
 ---
 title: "Who pays the debts, funeral bill and taxes under your will? Drafting the payment clauses"
 description: "Your will can tell the executor which gifts carry the debts, funeral bill and any estate tax. See the default order, the clauses that change it and an example."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Debts, funeral costs, administration expenses and taxes are paid from the estate before heirs receive anything, usually from the residuary gift first. Your will can change that by naming which assets pay and who bears any estate or inheritance tax. If it is silent, state default rules decide, and they can surprise the person you meant to protect.
 takeaways:
@@ -18,7 +18,7 @@ faqs:
   - q: "What is an exoneration clause?"
     a: "It directs that a debt secured by a specific asset, usually a mortgage, be paid from the rest of the estate so the heir takes the asset free of the loan. Many states presume the opposite unless the will says so. It only works if the estate has enough other money, and it reduces what other heirs receive."
   - q: "Who pays estate tax or inheritance tax, the estate or the heir?"
-    a: "It depends on the tax and on your will. Federal estate tax is paid by the estate, but a tax clause or state apportionment rule can charge it against the beneficiaries. An inheritance tax such as New Jersey's is generally figured on each heir's share. A clause avoids guesswork when a state rule and your intent differ."
+    a: "It depends on the tax and on your will. Federal estate tax is paid by the estate, but a tax clause or state apportionment rule can charge it against the beneficiaries. In states with an inheritance tax, it is generally figured on each heir's share. A clause avoids guesswork when a state rule and your intent differ."
   - q: "What if the estate cannot pay all its debts?"
     a: "The estate is insolvent, and the executor pays in the priority order state law sets until the money runs out. Remaining unsecured debts are generally not collected from heirs, but heirs may receive little or nothing. An executor should not distribute gifts until the creditor period has run."
 related:
@@ -91,7 +91,7 @@ In a modest estate the practical version is simply: pay debts and costs from the
 
 ## Who pays estate and inheritance tax?
 
-Federal estate tax applies only to estates above the exclusion, $15,000,000 per person in 2026, so it will not touch most families. State rules are different. Illinois has an estate tax on estates over $4 million, paid by the estate. New Jersey has no estate tax but charges an inheritance tax on certain heirs, and it is generally figured on the share each heir receives, with a tax waiver step for real estate. Our overview of [state estate and inheritance taxes](/learn/estate-tax/state-estate-and-inheritance-taxes) shows how states differ, and the [state death tax checker](/tools/state-death-tax-checker) can tell you whether your state has one.
+Federal estate tax applies only to estates above the exclusion, $15,000,000 per person in 2026, so it will not touch most families. State rules are different. Illinois has an estate tax on estates over $4 million, paid by the estate. Illinois has no inheritance tax, so heirs do not owe a separate state tax on what they receive. Our overview of [state estate and inheritance taxes](/learn/estate-tax/state-estate-and-inheritance-taxes) shows how states differ, and the [state death tax checker](/tools/state-death-tax-checker) can tell you whether your state has one.
 
 If your estate is taxable, the question of who bears the tax becomes real. The default may be that the residue pays it all, or that every beneficiary pays a share. State law differs, and the rules often reach assets outside the will, such as life insurance. A tax clause avoids the guesswork.
 

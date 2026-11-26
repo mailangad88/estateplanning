@@ -1,7 +1,7 @@
 ---
 title: "What happens to a mobile or manufactured home when the owner dies?"
 description: "What happens to a mobile home when the owner dies? Learn whether it passes like a car or a house, what the park lease and loan do, and the steps heirs take."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A mobile or manufactured home passes to the owner's heirs like other property, but whether it counts as a vehicle or as real estate depends on how it is titled and whether it sits on land the owner owns. Heirs need the title or deed, the park or land arrangement, and any loan sorted out. Without a will or trust, an executor usually needs court authority first.
 takeaways:
@@ -53,13 +53,13 @@ If you are not sure which applies, look for a certificate of title in the deceas
 
 ## How does the home pass if there is a will?
 
-The executor named in the will asks the probate court for letters, then uses them to transfer title. The will can name who gets the home. In Illinois this is a circuit court matter; in New Jersey it runs through the Surrogate in the county. The executor can sign the title transfer or deed to the heir.
+The executor named in the will asks the probate court for letters, then uses them to transfer title. The will can name who gets the home. In Illinois this is a matter for the circuit court in the county where the owner lived. The executor can sign the title transfer or deed to the heir.
 
-If the estate is small and the home is treated as personal property, a small estate affidavit can sometimes replace probate. Illinois sets the limit at $150,000 in personal property, not counting registered motor vehicles. New Jersey's affidavit limits are lower and depend on who is claiming. The affidavit does not cover real estate. See the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit) and the [New Jersey small estate affidavit](/learn/new-jersey/new-jersey-small-estate-affidavit), and then ask the agency which one it will accept for the title.
+If the estate is small and the home is treated as personal property, a small estate affidavit can sometimes replace probate. Illinois sets the limit at $150,000 in personal property, not counting registered motor vehicles. The affidavit does not cover real estate. See the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit), and then ask the agency whether it will accept one for the title.
 
 ## What if there is no will?
 
-State law decides who inherits. In Illinois and New Jersey a surviving spouse takes first, then children share, and the shares depend on who survives. Our pages on [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) and [in New Jersey](/learn/new-jersey/who-inherits-without-a-will-in-new-jersey) explain the order. A court appoints an administrator who handles the title. Expect the process to take longer than with a will.
+State law decides who inherits. In Illinois a surviving spouse and children share, and the shares depend on who survives. Our page on [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) explains the order. A court appoints an administrator who handles the title. Expect the process to take longer than with a will.
 
 <!-- visual: whatif id=die-without-a-will -->
 

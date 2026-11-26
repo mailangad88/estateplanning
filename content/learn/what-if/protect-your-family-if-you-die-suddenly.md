@@ -1,7 +1,7 @@
 ---
 title: "How to protect your family if you die suddenly: what happens and what to do this month"
-description: "If you die suddenly, paper decides everything: forms, titles, a will and a guardian. See what your family faces in Illinois or New Jersey and an eight-step fix."
-updated: "2026-10-26"
+description: "If you die suddenly, paper decides everything: forms, titles, a will and a guardian. See what your Illinois family would face and an eight-step fix."
+updated: "2026-11-26"
 answer: >-
   If you die suddenly, your family is protected only by what already exists on paper. Accounts with a beneficiary, jointly titled property and a funded trust pay out quickly. Everything else waits for a court, and children without a named guardian are placed by a judge. Most gaps close in a few weeks: beneficiary forms, a will with a guardian, a power of attorney and one page of account information.
 takeaways:
@@ -106,9 +106,7 @@ State law decides the shortcut for a small estate and the default rules if there
 
 In Illinois, a small estate affidavit works for personal property up to $150,000 as of 2026, and does not reach real estate. See the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit) page and the state guide for [Illinois](/estate-planning/illinois).
 
-In New Jersey, the affidavit routes are $50,000 for a surviving spouse or partner and $20,000 for next of kin, filed with the county Surrogate. See [New Jersey's small estate affidavit](/learn/new-jersey/new-jersey-small-estate-affidavit) and the state guide for [New Jersey](/estate-planning/new-jersey).
-
-Without a will, each state's intestacy statute decides who inherits and who raises minor children, usually spouse and children first. The details differ enough to matter, so read the rules for [Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) or [New Jersey](/learn/new-jersey/who-inherits-without-a-will-in-new-jersey) rather than guess.
+Without a will, the Illinois intestacy statute decides who inherits, usually spouse and children first, and a court decides who raises minor children. The shares are specific enough to matter, so read [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) rather than guess. Our page on [naming a guardian for your children](/learn/illinois/naming-a-guardian-for-your-children) covers the second question.
 
 ## How we can help
 

@@ -1,7 +1,7 @@
 ---
 title: "Life estate deed vs irrevocable trust for Medicaid: which protects the house better?"
-description: "Life estate deed or irrevocable trust to protect your house from nursing home costs? Compare control, taxes and estate recovery in Illinois and New Jersey."
-updated: "2026-10-26"
+description: "Life estate deed or irrevocable trust to protect your house from nursing home costs? Compare control, taxes and Illinois estate recovery for each one."
+updated: "2026-11-26"
 answer: >-
   A life estate deed is simpler and cheaper but gives you less protection and less flexibility: your children own the house after you and must agree to a sale. An irrevocable trust costs more to set up but can protect the home from a child's creditors and divorce and can keep sale proceeds protected. Both start the 60-month Medicaid look-back.
 takeaways:
@@ -29,7 +29,6 @@ related:
   - "trusts/irrevocable-trusts"
   - "trusts/revocable-living-trust"
   - "illinois/illinois-medicaid-estate-recovery"
-  - "new-jersey/new-jersey-estate-recovery"
 glossary: ["irrevocable-trust", "look-back-period", "estate", "trustee", "grantor"]
 review: pending
 intent: comparison
@@ -65,7 +64,7 @@ In both cases you have given up ownership of something, which is why Medicaid tr
 
 It can, if you complete it more than 60 months before you apply for long-term care Medicaid and the deed names the remainder owners correctly. The value of the remainder you gave away is the gift, calculated from your age and the home's value. If you live five years past the deed, the transfer is outside the look-back and the house is not a countable asset.
 
-The weak spot is the children. They own a real share of the house today, so their problems become the house's problems. A lawsuit judgment against a son, a divorce, a bankruptcy or even a tax lien can attach to his remainder interest. Illinois and New Jersey both let creditors reach what a child owns, and a house with a life estate can be dragged into a dispute you had nothing to do with.
+The weak spot is the children. They own a real share of the house today, so their problems become the house's problems. A lawsuit judgment against a son, a divorce, a bankruptcy or even a tax lien can attach to his remainder interest. A child's creditors can generally reach what that child owns, and a house with a life estate can be dragged into a dispute you had nothing to do with.
 
 ### What about selling the house later?
 
@@ -79,21 +78,21 @@ The trade-offs are cost, rigidity and drafting risk. You cannot take the house b
 
 ## What happens in estate recovery?
 
-Estate recovery is the state's claim against a Medicaid recipient's estate after death, and it is the reason many families look at these tools. The answer depends on how your state defines the estate.
+Estate recovery is the state's claim against a Medicaid recipient's estate after death, and it is the reason many families look at these tools. The answer depends on how the state defines the estate, and some states define it broadly enough to reach a life estate or a living trust.
 
-New Jersey defines it broadly. The state agency's rules reach the person's interest in property passing by survivorship, a life estate or a living trust, so a life estate may not keep the house out of reach. Read our [New Jersey estate recovery](/learn/new-jersey/new-jersey-estate-recovery) article before you rely on one.
+In Illinois, the Department of Healthcare and Family Services (HFS) describes the estate for recovery as the property that is subject to probate, such as a house, a car or cash. HFS says that assets passing directly to a beneficiary outside probate are generally not part of the estate. That is helpful, but it does not settle the narrower question of life estates and trusts, so ask an attorney about your specific deed or trust.
 
-Illinois' Department of Healthcare and Family Services says that assets passing directly to a beneficiary outside probate are generally not part of the estate. That is helpful, but it does not settle the narrower question of life estates and trusts, so use the [Illinois estate recovery](/learn/illinois/illinois-medicaid-estate-recovery) page and ask an attorney about your specific deed or trust.
+A few other Illinois rules shape the risk. HFS does not recover while a spouse, a child under 21, or a blind or disabled child survives. For deaths on or after July 1, 2022, the first $25,000 of the estate is protected. Heirs can also ask for a hardship waiver, but they have to request it and prove it. Our [Illinois estate recovery](/learn/illinois/illinois-medicaid-estate-recovery) page explains each of these.
 
 <!-- visual: decision slug=how-to-leave-your-house-to-your-children part=map -->
 
 ## A worked example
 
-This is an invented example. Lena, 74, owns a house in Edison, New Jersey worth $420,000. She has two children, Marcus and Dana. Marcus is going through a divorce.
+This is an invented example. Lena, 74, owns a house in Naperville, in DuPage County, worth $420,000. She has two children, Marcus and Dana. Marcus owns a small contracting company and is being sued over a job that went wrong.
 
-If Lena signs a life estate deed today, half of the remainder belongs to Marcus the moment the deed is recorded. His wife's lawyer can list that interest in the divorce. If Lena needs to sell in four years, she has to find Marcus and get his signature.
+If Lena signs a life estate deed today, half of the remainder belongs to Marcus the moment the deed is recorded. If the lawsuit ends in a judgment against him, the judgment can attach to that interest. If Lena needs to sell in four years, she has to find Marcus and get his signature.
 
-If Lena signs an irrevocable trust instead, the trustee, Dana, holds title, and Marcus owns nothing yet. The divorce does not reach the house. The trust costs more to set up, and Lena must accept that she cannot change her mind. In both cases, a Medicaid application in the first five years would face a penalty, so Lena has to be able to pay for care privately until the clock runs out.
+If Lena signs an irrevocable trust instead, the trustee, Dana, holds title, and Marcus owns nothing yet. His creditor has no ownership share to attach. The trust costs more to set up, and Lena must accept that she cannot change her mind. In both cases, a Medicaid application in the first five years would face a penalty, so Lena has to be able to pay for care privately until the clock runs out.
 
 ## What do the taxes look like?
 

@@ -1,7 +1,7 @@
 ---
 title: "What to bring to a lawyer to make a will, and can a lawyer refuse to write one?"
-description: "Making a will with a lawyer in Illinois or New Jersey? See what to bring, the questions you will be asked, why a lawyer may decline, and what signing is like."
-updated: "2026-10-26"
+description: "Making a will with a lawyer in Illinois? See what to bring, the questions you will be asked, why a lawyer may decline, and what signing is like."
+updated: "2026-11-26"
 answer: >-
   To make a will with a lawyer, bring a list of your assets and debts, the full names of your beneficiaries, executor and guardian choices (with backups), any older estate documents, and your beneficiary forms. A lawyer can decline to draft a will when there are serious doubts about your capacity, a conflict of interest, or signs someone else is steering the decision.
 takeaways:
@@ -36,7 +36,7 @@ intent: question
 
 Booking the appointment is often the hardest step. Once it is on the calendar, the next worry is showing up unprepared, or being asked questions you cannot answer. You do not need to be a finance person. You need a handful of facts on paper, and an honest idea of who you want to look after your family.
 
-This page lists what to bring to a will appointment with a lawyer in Illinois or New Jersey, what you will be asked, the reasons a lawyer might say no, and what signing day looks like. For the broader subject, start with our [wills guide](/learn/wills).
+This page lists what to bring to a will appointment with a lawyer in Illinois, what you will be asked, the reasons a lawyer might say no, and what signing day looks like. For the broader subject, start with our [wills guide](/learn/wills).
 
 ## What should you bring to a lawyer to make a will?
 
@@ -101,7 +101,7 @@ What the lawyer adds is not the typing. It is checking that your account titles 
 
 ## What happens on signing day?
 
-The signing is short and more formal than most people expect. In both Illinois and New Jersey, your will must be signed in front of witnesses, and the firm will normally provide two who have no interest in your estate. A self-proving affidavit is usually signed in front of a notary at the same time. The [self-proving affidavit explained](/learn/wills/self-proving-affidavit-explained) page tells you why it matters.
+The signing is short and more formal than most people expect. In Illinois, your will must be signed in front of two credible witnesses (755 ILCS 5/4-3), and the firm will normally provide two who have no interest in your estate. A self-proving affidavit is usually signed in front of a notary at the same time. The [self-proving affidavit explained](/learn/wills/self-proving-affidavit-explained) page tells you why it matters.
 
 You should expect to:
 
@@ -115,7 +115,7 @@ Do not take the original home and add edits in the margin. Handwritten changes a
 
 ## A worked example
 
-Example only: Priya, 44, lives in Union County, New Jersey. She has two children under ten, a house with her husband Dev, a 401(k) and a term life policy through work. She walks into the first meeting with a single page listing the house, two bank accounts, the 401(k) and the policy. She has written Dev's sister Anita as her pick for guardian and her own brother Rohan as backup.
+Example only: Priya, 44, lives in Kane County, Illinois. She has two children under ten, a house with her husband Dev, a 401(k) and a term life policy through work. She walks into the first meeting with a single page listing the house, two bank accounts, the 401(k) and the policy. She has written Dev's sister Anita as her pick for guardian and her own brother Rohan as backup.
 
 The lawyer notices the 401(k) beneficiary is her mother, who died three years ago. That form would send the account to whoever the plan says is next, which may be her estate. Fixing one form, which would not have been in any will, protects a large share of what her children will inherit. The meeting took an hour, and that single catch was worth more than the fee.
 

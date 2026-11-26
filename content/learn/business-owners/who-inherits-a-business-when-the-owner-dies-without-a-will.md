@@ -1,7 +1,7 @@
 ---
-title: "Who inherits a business if the owner dies without a will in Illinois or New Jersey?"
-description: "Who inherits a business if the owner dies without a will: how intestacy treats LLC interests, shares and sole proprietorships in Illinois and New Jersey."
-updated: "2026-10-26"
+title: "Who inherits a business if the owner dies without a will in Illinois?"
+description: "Who inherits a business if the owner dies without a will: how Illinois intestacy treats LLC interests, corporate shares and sole proprietorships."
+updated: "2026-11-26"
 answer: >-
   If a business owner dies without a will, the business interest passes under the state's intestacy statute: first to a surviving spouse and children in the shares the statute sets, then to more distant relatives. A court must appoint an administrator before anyone can act. Operating agreements, buy-sell agreements and beneficiary forms can override that result.
 takeaways:
@@ -18,7 +18,7 @@ faqs:
   - q: "Does a business partner inherit my share if I die without a will?"
     a: "Only if a buy-sell agreement or the operating agreement says so, or if you held the interest jointly with survivorship rights. Otherwise your share goes to your heirs, and your partner is left to work with them. Many partnership and LLC agreements give the surviving owners a right to buy the share."
   - q: "How long before an administrator can act on the business?"
-    a: "It varies by county and by whether anyone contests who should serve. Plan on weeks at the least, and longer if the heirs disagree. Our probate timeline articles for Illinois and New Jersey describe the usual steps. Bills, payroll and customers keep moving the whole time."
+    a: "It varies by county and by whether anyone contests who should serve. Plan on weeks at the least, and longer if the heirs disagree. Our article on [how long probate takes in Illinois](/learn/illinois/how-long-does-probate-take-in-illinois) describes the usual steps. Bills, payroll and customers keep moving the whole time."
   - q: "Can a court order the business sold when there is no will?"
     a: "An administrator can sell estate assets to pay debts or divide the estate, usually with court approval for larger or contested steps. A sale is not automatic. Heirs who agree can often buy each other out or keep the company together instead."
 related:
@@ -26,7 +26,7 @@ related:
   - "business-owners/llc-ownership-at-death"
   - "business-owners/what-happens-to-a-sole-proprietorship-at-death"
   - "illinois/who-inherits-without-a-will-in-illinois"
-  - "new-jersey/who-inherits-without-a-will-in-new-jersey"
+  - "illinois/illinois-letters-of-administration-and-the-surety-bond"
   - "wills/dying-without-a-will"
 glossary: ["intestate", "intestate-succession", "administrator", "heir", "probate-estate", "buy-sell-agreement"]
 review: pending
@@ -35,13 +35,13 @@ intent: question
 
 You started the company, you know where everything is, and you have never gotten around to a will. If you die tomorrow, who owns what you built? The honest answer is that the state decides, using a formula written for families in general rather than for your business in particular.
 
-This page explains how that formula treats an LLC, a corporation and a sole proprietorship in Illinois and New Jersey, what the family faces in the first weeks, and which documents can change the result. It belongs to our [business owner planning series](/learn/business-owners).
+This page explains how that formula treats an LLC, a corporation and a sole proprietorship in Illinois, what the family faces in the first weeks, and which documents can change the result. It belongs to our [business owner planning series](/learn/business-owners).
 
 ## Who inherits a business when there is no will?
 
 The business interest goes to your legal heirs in the order the intestacy statute lists. A surviving spouse and descendants come first. If you have neither, parents, siblings and more distant relatives follow. The business is not treated differently from a bank account or a car.
 
-In Illinois, a surviving spouse who is left with descendants takes one-half of the intestate estate and the descendants share the other half. A spouse with no descendants takes everything. In New Jersey, the spouse's share depends in part on whether all of your children are also the spouse's. Our guides to [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) and [in New Jersey](/learn/new-jersey/who-inherits-without-a-will-in-new-jersey) give the exact order for each state.
+In Illinois, a surviving spouse who is left with descendants takes one-half of the intestate estate and the descendants share the other half. A spouse with no descendants takes everything. The spouse's half is the same whether or not the children are also the spouse's, so a stepparent and stepchildren can end up co-owning the company. Our guide to [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) gives the exact order, including parents, siblings and more distant relatives.
 
 Notice what the statute does not ask. It does not ask who has worked in the business for twenty years, who has the skills, or who you would have picked. A daughter who runs the shop and a son who lives abroad get the same share.
 

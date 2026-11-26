@@ -1,7 +1,7 @@
 ---
 title: "Deed restrictions, flood risk and contamination: what to check before you leave or inherit a house"
 description: "A house can carry deed restrictions, a flood map surprise or buried contamination. See how to run a title search, read the restrictions and decide what to do."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Before you leave a house to someone, or accept one, check three things: the recorded title and its deed restrictions, the flood zone and flood insurance history, and any sign of contamination such as an old oil tank. A title search shows liens and restrictions. Flood maps and an environmental review show the risks a standard homeowner's policy will not cover.
 takeaways:
@@ -120,7 +120,7 @@ An executor is a fiduciary and has a duty to protect estate assets, so documenti
 
 ### Can an heir refuse the house?
 
-In most states, yes. An heir can sign a written disclaimer so that the property passes as though that heir had died first. The heir cannot direct where it goes, and generally cannot have accepted rent, lived there or used the property first. Timing is set by state law, so act early. The page on [how to disclaim an inheritance](/learn/after-a-death/how-to-disclaim-an-inheritance) walks through it. Illinois and New Jersey each have their own disclaimer rules, and you can see how Illinois handles it in [disclaiming an inheritance in Illinois](/learn/illinois/disclaiming-an-inheritance-in-illinois).
+In most states, yes. An heir can sign a written disclaimer so that the property passes as though that heir had died first. The heir cannot direct where it goes, and generally cannot have accepted rent, lived there or used the property first. Timing is set by state law, so act early. The page on [how to disclaim an inheritance](/learn/after-a-death/how-to-disclaim-an-inheritance) walks through it. You can see how Illinois handles it in [disclaiming an inheritance in Illinois](/learn/illinois/disclaiming-an-inheritance-in-illinois).
 
 ### Does the tax basis change?
 
@@ -142,7 +142,7 @@ Out-of-state homes add another wrinkle, because records and rules sit in a diffe
 
 ## How state law changes this
 
-Recording systems, seller disclosure duties and cleanup rules are mostly state and local. Many states require a seller to complete a property disclosure form, and some exempt or limit the duty for estates and executors. Illinois and New Jersey each have their own forms and recording offices, and our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides give the starting points. Your attorney should confirm the local rule before an executor signs anything about the condition of a house.
+Recording systems, seller disclosure duties and cleanup rules are mostly state and local. Many states require a seller to complete a property disclosure form, and some exempt or limit the duty for estates and executors. Illinois has its own forms and county recording offices, and our [Illinois guide](/estate-planning/illinois) gives the starting points. Your attorney should confirm the local rule before an executor signs anything about the condition of a house.
 
 ## How we can help
 

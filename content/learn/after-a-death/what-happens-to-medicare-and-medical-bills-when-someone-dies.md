@@ -1,7 +1,7 @@
 ---
 title: "What happens to Medicare and medical bills when someone dies?"
 description: "Medicare ends at death, and the estate, not the family, pays what is owed. See who to call, how premium refunds work, and when relatives do owe medical bills."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Medicare coverage ends when the person dies, and no one inherits it. Medical bills for care the person received are debts of the estate, paid from their assets, not from a child's or spouse's own money, unless that relative co-signed or agreed to be responsible. A surviving spouse should check separately whether their own coverage depended on the person who died.
 takeaways:
@@ -20,7 +20,7 @@ faqs:
   - q: "Will Medicare refund premiums paid after death?"
     a: "Usually yes. If premiums were deducted from the last Social Security payment or paid for a month after death, the money is typically refunded and belongs to the estate. Allow a few weeks, and keep the notice that shows what was returned."
   - q: "Can the state take the house to pay for Medicaid?"
-    a: "Medicaid, which is not the same program as Medicare, can seek repayment from the estate of a person who received long-term care benefits after age 55. Illinois and New Jersey both run estate recovery programs. Exemptions exist for a surviving spouse or a minor or disabled child."
+    a: "Medicaid, which is not the same program as Medicare, can seek repayment from the estate of a person who received long-term care benefits after age 55. Illinois runs an estate recovery program. Exemptions exist for a surviving spouse or a minor or disabled child."
   - q: "What happens to my own coverage if my spouse dies?"
     a: "If you have your own Medicare, nothing changes. If you were covered as a dependent on their employer plan, ask the plan administrator about COBRA, which can continue coverage for up to 36 months after the employee's death, usually at your own expense."
 related:
@@ -29,7 +29,6 @@ related:
   - "after-a-death/who-to-notify-after-someone-dies"
   - "probate/dealing-with-debts-in-probate"
   - "illinois/illinois-medicaid-estate-recovery"
-  - "new-jersey/new-jersey-estate-recovery"
 glossary: ["decedent", "executor", "estate", "personal-representative", "probate-estate", "administrator"]
 review: pending
 intent: question
@@ -60,7 +59,7 @@ Our page on [Social Security after a death](/learn/after-a-death/social-security
 
 ## Who pays the medical bills?
 
-The estate does. Valid medical bills, including those from the final illness, are debts. The executor or administrator pays them from the person's assets, in the order state law sets, before heirs receive their shares. In New Jersey, last-illness bills have their own place in the priority list, described in our page on [creditor claims in a New Jersey estate](/learn/new-jersey/creditor-claims-and-paying-debts-of-a-new-jersey-estate). Illinois sets its own order and deadlines, covered in [how creditor claims work in an Illinois estate](/learn/illinois/how-creditor-claims-work-in-an-illinois-estate).
+The estate does. Valid medical bills, including those from the final illness, are debts. The executor or administrator pays them from the person's assets, in the order state law sets, before heirs receive their shares. Illinois ranks claims in classes (755 ILCS 5/18-10) and sets its own deadlines, covered in [how creditor claims work in an Illinois estate](/learn/illinois/how-creditor-claims-work-in-an-illinois-estate).
 
 If there is not enough money, the creditors are paid in order and the remaining bills go unpaid. Heirs are not asked to make up the shortfall. See [what happens when an estate owes more than it has](/learn/probate/what-happens-when-an-estate-owes-more-than-it-has).
 
@@ -71,7 +70,7 @@ Rarely, but the exceptions are worth knowing before you sign anything.
 - **You co-signed or promised to pay the bill.** A signature on a financial responsibility form makes you liable, no matter who received the care.
 - **You were a joint account holder.** If the debt was in both names, the survivor owes it.
 - **You signed a nursing home contract as the "responsible party" and promised to pay from your own funds.** Federal rules bar a facility that takes Medicare or Medicaid from requiring that promise as a condition of admission. Read what you signed and ask whether it was optional.
-- **Community property or similar rules in other states.** These do not apply in Illinois or New Jersey.
+- **Community property or similar rules in other states.** These do not apply in Illinois.
 
 A relative who simply helped with care, managed the paperwork or paid a few bills out of kindness does not take on the debt.
 
@@ -103,11 +102,11 @@ Do this before worrying about the estate. A gap in coverage is expensive in a wa
 
 Medicare is health insurance for people 65 and older and some younger people with disabilities. Medicaid is a needs-based program that pays for things like nursing home care. They are not the same, and only Medicaid has an estate repayment rule.
 
-Federal law requires states to try to recover certain Medicaid costs from the estate of a person who was 55 or older when they received long-term care benefits, with some limits. Illinois and New Jersey both have programs. They are covered in our pages on [Illinois Medicaid estate recovery](/learn/illinois/illinois-medicaid-estate-recovery) and [New Jersey estate recovery](/learn/new-jersey/new-jersey-estate-recovery). Recovery is generally paused while a surviving spouse is alive or while a child under 21, or a blind or disabled child, survives. If a parent was on Medicaid, tell the estate's attorney before selling the house.
+Federal law requires states to try to recover certain Medicaid costs from the estate of a person who was 55 or older when they received long-term care benefits, with some limits. Illinois has a program, covered in our page on [Illinois Medicaid estate recovery](/learn/illinois/illinois-medicaid-estate-recovery). Recovery is generally paused while a surviving spouse is alive or while a child under 21, or a blind or disabled child, survives. If a parent was on Medicaid, tell the estate's attorney before selling the house.
 
 ## How much time do you have?
 
-Not as much as you might hope on the paperwork, but more than collectors suggest. Notify Social Security and the plans in the first week or two. Hold off paying medical bills until the claims settle, which can take a month or two. A formal creditor claim period runs in the probate case: in Illinois at least six months after publication, in New Jersey nine months from death. The deadlines are different for each estate, so ask the attorney handling it. The same holds for the final tax return, discussed in [final tax returns](/learn/after-a-death/final-tax-returns).
+Not as much as you might hope on the paperwork, but more than collectors suggest. Notify Social Security and the plans in the first week or two. Hold off paying medical bills until the claims settle, which can take a month or two. A formal creditor claim period runs in the probate case: in Illinois at least six months after the first published notice. The deadlines are different for each estate, so ask the attorney handling it. The same holds for the final tax return, discussed in [final tax returns](/learn/after-a-death/final-tax-returns).
 
 Our [after-a-death guide](/learn/after-a-death) collects the other tasks that tend to follow, and the [executor workload tool](/tools/executor-workload) shows how long they usually take.
 

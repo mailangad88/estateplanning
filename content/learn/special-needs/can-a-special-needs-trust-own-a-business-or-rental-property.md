@@ -1,7 +1,7 @@
 ---
 title: "Can a special needs trust own a business or rental property? Family businesses, LLC shares and SSI"
 description: "Yes, a special needs trust can own a family business, LLC interest or rental property. What it means for SSI, trustee conflicts, cash flow and Medicaid payback."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Yes. A special needs trust can own a family business interest, LLC shares or rental property, because the trust is a legal owner like any other. The trouble is practical: a business may produce no cash, the trustee may have a conflict of interest, and any income paid to the beneficiary can reduce SSI. A written plan for management and for a sale should come first.
 takeaways:
@@ -107,7 +107,7 @@ A person who receives SSI can run a small business, but the earnings and assets 
 
 Raymond decided against leaving Alicia a share of the landscaping company. His will leaves the company to Tomas and the four duplexes to a third-party special needs trust for Alicia, with a bank as co-trustee alongside Tomas and a property manager paid from rent. A $500,000 life insurance policy, owned by an irrevocable trust, adds cash for the special needs trust, and Tomas agrees in writing to cover a set amount of Alicia's care if rental income falls short. Alicia's trust pays her rent supplement and activity fees directly to the vendors. She keeps SSI and Medicaid.
 
-For Illinois and New Jersey families the same structure applies, with a state-specific look at the LLC and trust documents. See [special needs trust rules in Illinois](/learn/special-needs/special-needs-trust-rules-in-illinois) or [special needs planning in New Jersey](/learn/new-jersey/special-needs-planning-in-new-jersey).
+For Illinois families the same structure applies, with a state-specific look at the LLC and trust documents. See [special needs trust rules in Illinois](/learn/special-needs/special-needs-trust-rules-in-illinois) for how the Illinois Trust Code and the state's benefits agencies fit with the trust.
 
 ## How we can help
 

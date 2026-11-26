@@ -3,7 +3,7 @@ import Link from "next/link";
 import { firm, SERVED_AND, SERVED_OR } from "@/config/firm";
 import { CallbackForm } from "@/components/capture";
 import { Rich, RichFaqList } from "@/components/money-page";
-import { Breadcrumbs, ReviewNote } from "@/components/ui";
+import { Breadcrumbs } from "@/components/ui";
 import { PageHero } from "@/components/page-hero";
 import { abs, breadcrumbLd, JsonLd } from "@/lib/seo";
 
@@ -18,7 +18,7 @@ const FAQS = [
   { q: `Do you take cases outside ${SERVED_AND}?`, a: `No. Attorneys in our network advise on ${SERVED_AND} law only. If you live elsewhere, your state bar's lawyer referral service can help. See [how it works](/how-it-works).` },
   { q: "I only want to know if a trust makes sense. Do I have to book?", a: "No. Try the [will or trust comparison](/tools/will-or-trust), read [living trusts](/living-trusts), or call with a quick question." },
   { q: "Can I text you?", a: "Only after you have opted in to text messages in our form. Please do not text sensitive information. See [text message terms](/legal/sms-terms)." },
-  { q: "Is this a law firm or a referral service?", a: `This is a referral website, not a law firm. We match you with an appropriate estate planning attorney in our ${SERVED_OR} network, based on where you live and what you need. That attorney gives the legal advice, and you decide whether to hire them.` },
+  { q: "Who runs this site?", a: `${firm.brandName} is run by ${firm.firmLegalName}. We match you with an appropriate estate planning attorney in our ${SERVED_OR} network, based on where you live and what you need. That attorney gives the legal advice, and you decide whether to hire them.` },
   { q: "What should I tell you in the first message?", a: "Your name, how to reach you, the county you live in, and one sentence on what is happening. Skip details until we speak." },
 ];
 
@@ -33,7 +33,6 @@ export default function Contact() {
         art="SpotVideoCall"
         title="Talk to us"
       >
-        <ReviewNote reviewed={false} updated="October 2026" />
         <p className="cta-row no-print">
           <a className="button" href={`tel:${digits}`}>Call {firm.phone}</a>
           <Link className="button secondary" href="/book?from=contact">Book a consult</Link>

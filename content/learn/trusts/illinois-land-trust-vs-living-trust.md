@@ -1,7 +1,7 @@
 ---
 title: "Illinois land trust vs living trust: which one should hold your house?"
 description: "An Illinois land trust hides the owner's name on the deed but does little else. See how it differs from a living trust, and when Illinois owners use both."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   An Illinois land trust holds title to one piece of real estate in a trustee's name, so the owner's name stays off the public deed. A living trust holds many assets, controls what happens at death and during incapacity, and is the document that avoids probate. Land trusts give privacy; living trusts give a plan.
 takeaways:
@@ -19,8 +19,6 @@ faqs:
     a: "The beneficiary usually holds the power of direction and can instruct the trustee to sell, mortgage, or deed the property out. In that sense you keep control, much as you would with a revocable trust, but the terms are in the land trust agreement, so read yours."
   - q: "Who can serve as trustee of an Illinois land trust?"
     a: "Often a bank trust department or a title company. Individuals can serve too, but many owners prefer an institution because it keeps records, signs documents on request and does not die or move away."
-  - q: "Do land trusts exist in New Jersey?"
-    a: "They are uncommon there. New Jersey owners who want a house to pass outside probate usually use a revocable living trust or a transfer on death arrangement, and the deed shows the trustee as owner."
 related:
   - "trusts/revocable-living-trust"
   - "trusts/transfer-house-to-living-trust"
@@ -43,7 +41,7 @@ An Illinois land trust is a trust whose only job is to hold legal title to real 
 
 Illinois treats the beneficiary's interest in a land trust as personal property rather than as an interest in the land itself. That quirk has real effects. It is why you can assign your interest to someone else with a short paper and no new deed, and why the interest can be a probate asset when you die.
 
-The land trust is common in Cook County and the surrounding counties, much less so downstate and almost not at all in New Jersey. Part of the reason is habit. Title companies and bank trust departments in Chicago have written them for generations, and they are comfortable with the paperwork.
+The land trust is common in Cook County and the surrounding counties, and much less so downstate. Part of the reason is habit. Title companies and bank trust departments in Chicago have written them for generations, and they are comfortable with the paperwork.
 
 ## How is a land trust different from a living trust?
 
@@ -102,9 +100,9 @@ Expect a one-time setup fee when the deed and agreement are prepared, then an an
 
 A simple habit helps: keep the land trust agreement, the recorded deed and the trustee's contact in the same binder as your [living trust](/learn/trusts), and note the trust number on your asset list.
 
-## What about New Jersey?
+## What if you also own property outside Illinois?
 
-New Jersey recognizes trusts that hold real estate, but the Illinois-style land trust with an anonymous beneficiary is rare. A New Jersey owner who wants a house to skip the Surrogate's court usually deeds it to the trustee of a [living trust in New Jersey](/learn/new-jersey/living-trusts-in-new-jersey). The deed then names the trustee, and the trust document stays private. If you own property in both states, each parcel should follow its own state's practice.
+The land trust with an anonymous beneficiary is an Illinois habit, and other states do not always use it. If you own a home or rental in another state, that parcel should follow the practice of the state where it sits. Our page on [owning property in another state as an Illinois resident](/learn/illinois/illinois-resident-owning-property-in-another-state) explains how out-of-state real estate fits with your plan.
 
 ## How we can help
 

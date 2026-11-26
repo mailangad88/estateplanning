@@ -50,7 +50,7 @@ export default function ReviewLog() {
 
       <h2>Attorney sign-offs</h2>
       {REVIEW_SIGNOFFS.length === 0 ? (
-        <p>No pages have been signed off by {firm.attorneyName} yet. Every page below shows &quot;Draft pending attorney review&quot; until it is.</p>
+        <p>No pages have been signed off by {firm.publishAttorneyName ? firm.attorneyName : "the reviewing attorney"} yet. Every page below shows &quot;Draft pending attorney review&quot; until it is.</p>
       ) : (
         <ul>
           {REVIEW_SIGNOFFS.map((s) => (

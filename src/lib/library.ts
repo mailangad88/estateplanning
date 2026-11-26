@@ -398,8 +398,11 @@ export function getRelated(article: Article, limit = 6): Article[] {
 }
 
 /** Pages whose body links to the given URL. */
+/** Pages that link to `url`. Articles in a state section that is not served yet (New Jersey) are left out. */
 export function getBacklinks(url: string): (Article | StateGuide)[] {
-  return [...getAllArticles(), ...getStateGuides()].filter((a) => a.url !== url && a.links.includes(url));
+  return [...getAllArticles(), ...getStateGuides()].filter(
+    (a) => a.url !== url && a.links.includes(url) && (!("cluster" in a) || isClusterServed(a.cluster)),
+  );
 }
 
 /* ------------------------------------------------------------------ glossary */

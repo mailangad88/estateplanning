@@ -2,45 +2,45 @@
   "code": "XX",
   "name": "Your State",
   "title": "Estate planning in your state: what changes from state to state",
-  "description": "Will signing, probate, small estate limits, state taxes and transfer-on-death deeds all depend on where you live. What differs, with Illinois and New Jersey as examples.",
+  "description": "Will signing, probate, small estate limits, state taxes and transfer-on-death deeds all depend on where you live. What differs, with Illinois as the example.",
   "answer": "The basic tools are the same everywhere: a will, a trust, powers of attorney and beneficiary forms. What changes by state is how a will must be signed, how probate works, the small estate limit, whether the state taxes estates or inheritances, and whether transfer-on-death deeds are allowed. An attorney licensed where you live applies those rules to your plan.",
-  "updated": "2026-10-31",
+  "updated": "2026-11-26",
   "reviewed": false,
   "indexable": false,
   "facts": [
     {
       "label": "Witnesses required for a will",
-      "value": "Two in most states, including Illinois and New Jersey. Neither state requires a notary for the will itself."
+      "value": "Two in most states, including Illinois. Illinois does not require a notary for the will itself."
     },
     {
       "label": "Self-proving affidavit available",
-      "value": "Available in most states. New Jersey uses a self-proving affidavit signed before a notary or other officer. Illinois uses a witness attestation clause that does the same job."
+      "value": "Available in most states. Illinois uses a witness attestation clause that does the same job."
     },
     {
       "label": "Small estate procedure threshold",
-      "value": "Set by each state. Illinois allows a small estate affidavit for estates up to $150,000 with no real estate. New Jersey has a Surrogate's affidavit for small estates where there is no will."
+      "value": "Set by each state. Illinois allows a small estate affidavit for estates up to $150,000 with no real estate."
     },
     {
       "label": "Community property state",
-      "value": "Nine states use community property. Illinois and New Jersey do not."
+      "value": "Nine states use community property. Illinois does not."
     },
     {
       "label": "State estate or inheritance tax",
-      "value": "Most states have neither. Illinois taxes estates over $4 million. New Jersey has no estate tax but taxes some inheritances, such as gifts to siblings."
+      "value": "Most states have neither. Illinois taxes estates over $4 million and has no inheritance tax."
     },
     {
       "label": "Transfer-on-death deeds allowed",
-      "value": "Allowed in many states, including Illinois. New Jersey does not currently allow them."
+      "value": "Allowed in many states, including Illinois, where it is called a transfer-on-death instrument."
     },
     {
       "label": "Typical probate timeline",
-      "value": "Often several months to more than a year. Creditors have at least 6 months from published notice in Illinois and 9 months from the death in New Jersey, so many estates stay open at least that long."
+      "value": "Often several months to more than a year. In Illinois, creditors have at least 6 months from published notice, so many estates stay open at least that long."
     }
   ],
   "sections": [
     {
       "heading": "How probate works where you live",
-      "body": "Probate is the court process that proves a will, names the executor and oversees paying debts and distributing property. Each state sets its own court, forms and deadlines. In New Jersey, a will is usually probated with the county Surrogate. In Illinois, probate is a case in the county circuit court."
+      "body": "Probate is the court process that proves a will, names the executor and oversees paying debts and distributing property. Each state sets its own court, forms and deadlines. In Illinois, for example, probate is a case in the county circuit court."
     },
     {
       "heading": "Making a valid will",
@@ -56,7 +56,7 @@
     },
     {
       "heading": "Where Family Future Planning can help",
-      "body": "Family Future Planning matches people in Illinois and New Jersey with an estate planning attorney in our network. If you live in another state, your state bar's lawyer referral service can help you find a licensed estate planning attorney near you."
+      "body": "Family Future Planning matches people in Illinois with an estate planning attorney in our network. If you live in another state, your state bar's lawyer referral service can help you find a licensed estate planning attorney near you."
     }
   ],
   "counties": [],

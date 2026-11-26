@@ -1,7 +1,7 @@
 ---
 title: "What happens if you put off estate planning: the scenarios families actually face"
 description: "What really happens when an estate plan is missing, outdated or half finished: no will, no power of attorney, an ex still named, an unfunded trust, and how each is fixed."
-updated: "2026-10-06"
+updated: "2026-11-26"
 review: pending
 answer: >-
   When there is no plan, state law and institutions fill the gap with default rules. A court picks who manages
@@ -150,7 +150,7 @@ When a parent or spouse has a reverse mortgage, [what happens to a reverse mortg
 
 If a family member owed back taxes or child support, [what happens if you die owing taxes or child support](/learn/what-if/what-happens-if-you-die-owing-taxes-or-child-support) shows who pays, in what order, and how an executor avoids personal liability.
 
-If a parent with memory loss signed a new will, [whether a will can be contested because of dementia](/learn/what-if/can-a-will-be-contested-because-of-dementia) explains capacity, undue influence and the Illinois and New Jersey deadlines.
+If a parent with memory loss signed a new will, [whether a will can be contested because of dementia](/learn/what-if/can-a-will-be-contested-because-of-dementia) explains capacity, undue influence and the six-month Illinois deadline to file a contest.
 
 If you have sold or retitled something your will names, [what happens when you sell the house your will leaves to someone](/learn/what-if/what-happens-if-you-sell-the-house-your-will-leaves-to-someone) explains ademption and how to word the gift.
 

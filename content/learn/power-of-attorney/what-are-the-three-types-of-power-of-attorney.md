@@ -1,7 +1,7 @@
 ---
 title: "What are the three types of power of attorney? General, limited and durable"
 description: "General, limited and durable are the three types people usually mean. See what each one lets an agent do, when it ends, and how to pick the right one."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   The three types people usually mean are general, limited (also called special) and durable. A general power of attorney covers most financial matters, a limited one covers a single task or time period, and a durable one keeps working after you lose capacity. Most estate plans use a general, durable document. A healthcare power of attorney is a separate document.
 takeaways:
@@ -105,7 +105,7 @@ A rule of thumb from practice: when in doubt, choose the broader document and co
 
 States disagree on the details even though the categories are common. Some publish a statutory short form with set wording. Some require two witnesses in addition to a notary, some require only a notary. Some treat a power of attorney as durable by default and others do not. A few place extra conditions on gifting powers. A document you signed in another state is usually honored when you move, but the receiving institution may still ask questions, so a refresh after a move is sensible.
 
-Look at our state pages for [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) if you want to see how two states handle statutory forms differently. Signing mechanics are in [does a power of attorney need to be notarized](/learn/power-of-attorney/does-a-power-of-attorney-need-to-be-notarized).
+Our [Illinois guide](/estate-planning/illinois) explains how the Illinois statutory short form works, and [filling out the Illinois statutory short form](/learn/illinois/filling-out-the-illinois-statutory-short-form-poa-for-property) goes through it line by line. Signing mechanics are in [does a power of attorney need to be notarized](/learn/power-of-attorney/does-a-power-of-attorney-need-to-be-notarized).
 
 ## How we can help
 

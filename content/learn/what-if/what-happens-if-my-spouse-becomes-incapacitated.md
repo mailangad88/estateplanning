@@ -1,20 +1,20 @@
 ---
 title: "What happens if my spouse becomes incapacitated?"
-description: "If your spouse can no longer decide, being married gives you less authority than most couples expect. See what you can and cannot do in Illinois or New Jersey."
-updated: "2026-10-26"
+description: "If your spouse can no longer decide, being married gives you less authority than most couples expect. See what you can and cannot do in Illinois, and what to sign now."
+updated: "2026-11-26"
 answer: >-
   Marriage alone does not let you manage an incapacitated spouse's money. You can usually keep using joint bank accounts, and in Illinois a spouse ranks high on the list of who makes medical decisions. But you cannot sign for your spouse on a house deed, a retirement account or anything in their sole name without a power of attorney, or a guardianship order from a court.
 takeaways:
   - "Joint checking and savings usually keep working, but the house, IRAs, 401(k)s and sole-name accounts do not."
   - "Spouses often need both signatures to sell or refinance a home, which a spouse who cannot sign makes impossible."
-  - "Illinois law ranks a spouse near the top for medical decisions when there is no health care agent. New Jersey relies more on a named representative."
+  - "Illinois law ranks a spouse near the top for medical decisions when there is no health care agent, after any court-appointed guardian."
   - "A financial power of attorney signed while your spouse can still understand it avoids a guardianship case."
   - "Planning for long-term care starts with these documents, because Medicaid paperwork also needs someone with authority."
 faqs:
   - q: "Can I just add my name to my spouse's accounts after a stroke?"
     a: "Not without their signature. A bank adds a joint owner on the account holder's instruction. If your spouse cannot give one, the bank will ask for a power of attorney or a court order. Retitling after incapacity can also be questioned later by other family members."
   - q: "Can I sell our house if my spouse has dementia?"
-    a: "If the title lists both of you, a buyer and title company will want your spouse's signature or someone with legal authority to give it. In New Jersey, a house held as tenants by the entirety cannot be sold or mortgaged by one spouse alone (N.J.S.A. 46:3-17.4). Without a power of attorney the route is a court-appointed guardian."
+    a: "If the title lists both of you, a buyer and title company will want your spouse's signature or someone with legal authority to give it. In Illinois, a closing needs the signature of every owner on the deed, whether you hold as joint tenants or as tenants by the entirety. Without a power of attorney the route is a court-appointed guardian."
   - q: "Does my spouse's incapacity change my own will?"
     a: "It does not change the validity of your will, but it exposes a gap. If your spouse is your sole beneficiary and executor, you need a backup for both roles, and you may want a trust so that what you leave does not land in your spouse's name and trigger a guardianship or Medicaid problem."
   - q: "My kids are young and I am the one who is ill. Who takes over?"
@@ -26,7 +26,7 @@ related:
   - "what-if/incapacitated-without-power-of-attorney"
   - "power-of-attorney/durable-financial-power-of-attorney"
   - "illinois/illinois-health-care-surrogate-act-who-decides"
-  - "new-jersey/guardianship-in-new-jersey"
+  - "illinois/illinois-guardianship"
   - "elder-care/medicaid-for-married-couples"
 glossary: ["incapacity", "power-of-attorney", "durable-power-of-attorney", "guardian", "tenancy-by-the-entirety", "joint-tenancy", "agent"]
 review: pending
@@ -35,15 +35,15 @@ intent: scenario
 
 Tom, 67, had a stroke on a Tuesday in Naperville. His wife Linda has been at his bedside for three days. The hospital wants her to sign admission forms, the rehab center wants a payment arrangement, and the mortgage company is asking who is allowed to speak for the account. She assumed that after 40 years of marriage she could handle all of it.
 
-This page explains what a spouse can and cannot do when the other spouse can no longer make decisions, and what to put in place now. It uses Illinois and New Jersey rules, though most of it holds in other states. It is one of the situations in our [what-if library](/learn/what-if). The general version for any adult is on our page about [what happens if you are incapacitated without a power of attorney](/learn/what-if/incapacitated-without-power-of-attorney).
+This page explains what a spouse can and cannot do when the other spouse can no longer make decisions, and what to put in place now. It uses Illinois rules, though most of it holds in other states. It is one of the situations in our [what-if library](/learn/what-if). The general version for any adult is on our page about [what happens if you are incapacitated without a power of attorney](/learn/what-if/incapacitated-without-power-of-attorney).
 
 ## What can I do right away if my spouse is incapacitated?
 
 You can keep using any account that is already joint, take part in medical decisions, and talk to the doctors. That covers a good deal of daily life and nothing more.
 
-In Illinois, if there is no health care agent, the Health Care Surrogate Act puts a guardian first and then the spouse on its priority list (755 ILCS 40/25), so Linda would be the person the hospital asks. New Jersey's [advance directive](/learn/new-jersey/new-jersey-advance-directives) system centers on a named health care representative, and without one, doctors turn to family, with a court case if relatives disagree. Our page on the [Illinois surrogate list](/learn/illinois/illinois-health-care-surrogate-act-who-decides) shows the order.
+In Illinois, if there is no health care agent, the Health Care Surrogate Act puts a guardian first and then the spouse on its priority list (755 ILCS 40/25), so Linda would be the person the hospital asks. A [health care power of attorney](/learn/illinois/illinois-healthcare-power-of-attorney) that names Linda would put her first without relying on the list at all. Our page on the [Illinois surrogate list](/learn/illinois/illinois-health-care-surrogate-act-who-decides) shows the order.
 
-Money is different. A spouse is not an automatic agent for the other spouse's finances in either state.
+Money is different. Illinois does not make a spouse an automatic agent for the other spouse's finances.
 
 ## What can't I do without a power of attorney?
 
@@ -58,15 +58,15 @@ Here is how Tom and Linda's assets sort out. Linda earns $58,000 a year as a sch
 | Tom's car | Tom only | Limited, and a dealer will not retitle it |
 | Tom's life insurance policy | Tom owns it | No changes, loans or beneficiary updates |
 
-The house is the one that surprises people. In New Jersey, spouses who take title together generally hold as tenants by the entirety, and neither can sell or mortgage without the other's written consent (N.J.S.A. 46:3-17.4). Illinois spouses can hold as tenants by the entirety only if the deed says so (765 ILCS 1005/1c). Either way, a closing needs the signature of every owner. If Tom cannot sign and has no agent, Linda cannot do the transaction. See [joint tenancy and tenancy by the entirety in Illinois](/learn/illinois/illinois-joint-tenancy-and-tenancy-by-the-entirety) and the [New Jersey equivalent](/learn/new-jersey/joint-property-and-tenancy-by-the-entirety-in-new-jersey).
+The house is the one that surprises people. Illinois spouses can hold as tenants by the entirety only if the deed says so (765 ILCS 1005/1c). Either way, a closing needs the signature of every owner. If Tom cannot sign and has no agent, Linda cannot do the transaction. See [joint tenancy and tenancy by the entirety in Illinois](/learn/illinois/illinois-joint-tenancy-and-tenancy-by-the-entirety).
 
 <!-- visual: whatif id=incapacitated-without-power-of-attorney -->
 
 ## What happens if there is no power of attorney?
 
-Linda has to ask a court to appoint a guardian of Tom's estate. In Illinois the court must find a disability by clear and convincing evidence, with a petition, notice, a physician's report and a hearing (755 ILCS 5/11a-3). In New Jersey the complaint needs certifications from two doctors, or a doctor and a licensed psychologist, and Tom gets a court-appointed lawyer (R. 4:86-2 and 4:86-4). The judge can pick Linda, and usually does, but she then reports to the court, may need a bond, and asks permission for larger transactions.
+Linda has to ask a court to appoint a guardian of Tom's estate. In Illinois the court must find a disability by clear and convincing evidence, with a petition, notice, a physician's report and a hearing (755 ILCS 5/11a-3). The court also appoints a guardian ad litem to investigate and report at the hearing (755 ILCS 5/11a-10). The judge can pick Linda, and usually does, but she then reports to the court, may need a bond, and asks permission for larger transactions.
 
-It is not a catastrophe. It is slow and it is public, and it costs legal fees at the moment a family is paying for rehab. The [Illinois](/learn/illinois/illinois-guardianship) and [New Jersey](/learn/new-jersey/guardianship-in-new-jersey) guardianship pages walk through each step.
+It is not a catastrophe. It is slow and it is public, and it costs legal fees at the moment a family is paying for rehab. Our [Illinois guardianship](/learn/illinois/illinois-guardianship) page walks through each step, and [the cost of guardianship in Illinois](/learn/illinois/cost-of-guardianship-in-illinois) shows where the money goes.
 
 <!-- visual: whatif id=adult-child-emergency-no-hipaa -->
 
@@ -74,7 +74,7 @@ It is not a catastrophe. It is slow and it is public, and it costs legal fees at
 
 Each spouse needs the same four documents, naming the other as the first agent and a child or friend as the backup.
 
-1. **Financial power of attorney.** A [durable power of attorney](/learn/power-of-attorney/durable-financial-power-of-attorney) stays valid if the signer becomes incapacitated. Illinois has a statutory form for property; New Jersey requires specific signing formalities.
+1. **Financial power of attorney.** A [durable power of attorney](/learn/power-of-attorney/durable-financial-power-of-attorney) stays valid if the signer becomes incapacitated. Illinois has a statutory short form for property, signed with one witness and a notary (755 ILCS 45/3-3).
 2. **Health care power of attorney.** Names who decides if the signer cannot.
 3. **HIPAA release.** Lets the agent and a few others see records right away. See [HIPAA authorization](/learn/healthcare-directives/hipaa-authorization).
 4. **A will or revocable trust that names a backup.** If each spouse names only the other as executor and beneficiary, a second incapacity or death leaves no plan.
@@ -95,7 +95,7 @@ If the incapacity looks long-term, the questions grow: nursing home costs, Medic
 
 ## How state law changes this
 
-States differ on whether a spouse has default authority over medical decisions, how tenancy by the entirety works, and how guardianship cases are run. Some states give a spouse limited power to handle jointly owned assets and others give none. Illinois and New Jersey both treat guardianship as a last resort for adults, and both courts will ask whether a signed power of attorney already exists. Start from your state guide, [Illinois](/estate-planning/illinois) or [New Jersey](/estate-planning/new-jersey), and ask an attorney about the current forms.
+States differ on whether a spouse has default authority over medical decisions, how tenancy by the entirety works, and how guardianship cases are run. Some states give a spouse limited power to handle jointly owned assets and others give none. Illinois treats guardianship as a last resort for adults, and the court will ask whether a signed power of attorney already exists. Start from our [Illinois guide](/estate-planning/illinois) and ask an attorney about the current forms.
 
 ## How we can help
 

@@ -1,7 +1,7 @@
 ---
 title: "How to open an estate bank account as an executor, and how to get access to the money"
-description: "How does an executor get access to a dead person's bank account? What the bank needs, how to open an estate account in Illinois or New Jersey, what to pay."
-updated: "2026-10-26"
+description: "How does an executor get access to a dead person's bank account? What the bank needs, how to open an estate account in Illinois and what to pay from it."
+updated: "2026-11-26"
 answer: >-
   An executor gets access by taking the court-issued letters, a certified death certificate, photo ID and a new federal tax ID (EIN) for the estate to a bank and opening an estate checking account. The money from the dead person's accounts moves into it, and every estate bill is paid from it. Before letters are issued, an executor generally cannot touch the accounts.
 takeaways:
@@ -20,7 +20,7 @@ faqs:
   - q: "Can I put estate money in my own account for a few days?"
     a: "You should not. Mixing estate funds with your own money, even briefly, makes records unreliable and invites a claim that you converted funds. Deposit everything into the estate account and pay bills from it."
   - q: "What if the estate is small and there are no letters?"
-    a: "A small estate affidavit may let a bank release the money to an heir without a full court case. Illinois and New Jersey each have their own limit and form, so check the state page before you sign anything."
+    a: "A small estate affidavit may let a bank release the money to an heir without a full court case. Illinois has its own limit and form, explained on our [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit) page, so check it before you sign anything."
 related:
   - "probate"
   - "probate/letters-testamentary-and-letters-of-administration"
@@ -29,7 +29,7 @@ related:
   - "probate/probate-inventory-and-estate-accounting"
   - "after-a-death/irs-paperwork-for-an-executor-form-56-estate-ein-tax-transcripts-and-form-4810"
   - "illinois/illinois-letters-of-administration-and-the-surety-bond"
-  - "new-jersey/executor-duties-in-new-jersey-step-by-step"
+  - "illinois/opening-an-estate-bank-account-in-illinois"
 glossary: ["executor", "letters-testamentary", "probate", "decedent", "fiduciary", "probate-estate"]
 review: pending
 intent: question
@@ -41,7 +41,7 @@ This page explains how an executor gets access to a dead person's money, how to 
 
 ## How does an executor get access to a dead person's bank account?
 
-You get access by proving the court has given you authority. A will alone does not do that. The document banks want is letters, called letters testamentary when there is a will and letters of administration when there is not. The [difference between them](/learn/probate/letters-testamentary-and-letters-of-administration) is explained in a separate article. In New Jersey the Surrogate issues them; in Illinois the circuit court issues letters of office. Our pages on [executor duties in New Jersey](/learn/new-jersey/executor-duties-in-new-jersey-step-by-step) and [Illinois letters and the surety bond](/learn/illinois/illinois-letters-of-administration-and-the-surety-bond) show how that stage works.
+You get access by proving the court has given you authority. A will alone does not do that. The document banks want is letters, called letters testamentary when there is a will and letters of administration when there is not. The [difference between them](/learn/probate/letters-testamentary-and-letters-of-administration) is explained in a separate article. In Illinois the circuit court issues them, and they are called letters of office. Our pages on [the Illinois petition for letters of office](/learn/illinois/illinois-petition-for-letters-of-office) and [Illinois letters and the surety bond](/learn/illinois/illinois-letters-of-administration-and-the-surety-bond) show how that stage works.
 
 With letters in hand, bring:
 
@@ -103,13 +103,13 @@ The ones our attorneys see most often are small and avoidable.
 
 ## A worked example
 
-Example only: Helen dies in Essex County, New Jersey, and leaves a will naming her son Tomas as executor. She had a checking account with $11,400, a savings account of $26,900 in her name alone, and an IRA with her daughter named as beneficiary.
+Example only: Helen dies in Kane County, Illinois, and leaves a will naming her son Tomas as executor. She had a checking account with $11,400, a savings account of $26,900 in her name alone, and an IRA with her daughter named as beneficiary.
 
-Tomas receives letters from the Surrogate, gets an EIN online and opens "Estate of Helen Alvarez, Tomas Alvarez, Executor" at her bank. He moves both accounts in: $38,300. He pays the funeral home $9,800, pays the final utility bills of $640, and holds the rest while the nine-month creditor period runs. The IRA never touches the account because the daughter claims it directly. At the end Tomas has one statement trail that shows every dollar.
+Tomas receives letters of office from the circuit court, gets an EIN online and opens "Estate of Helen Alvarez, Tomas Alvarez, Executor" at her bank. He moves both accounts in: $38,300. He pays the funeral home $9,800, pays the final utility bills of $640, and holds the rest while the creditor claims period runs, which is the later of six months from the first published notice or three months from mailing. The IRA never touches the account because the daughter claims it directly. At the end Tomas has one statement trail that shows every dollar.
 
 ## Recordkeeping that makes the accounting easy
 
-Estates are eventually reviewed, by a court, by beneficiaries or both. Keep a simple ledger: date, payee, purpose, amount, check number. Keep the statements, the receipts and the correspondence. In Illinois you may need to produce an inventory and accounting for interested persons. In New Jersey, a court accounting or informal releases from beneficiaries close things out; see the [New Jersey court accounting or informal releases](/learn/new-jersey/new-jersey-court-accounting-or-informal-releases-for-an-estate) article. The page on [probate inventory and estate accounting](/learn/probate/probate-inventory-and-estate-accounting) explains what goes into the report.
+Estates are eventually reviewed, by a court, by beneficiaries or both. Keep a simple ledger: date, payee, purpose, amount, check number. Keep the statements, the receipts and the correspondence. In Illinois you may need to produce an inventory and accounting for interested persons. In a supervised estate the inventory is filed with the court, generally within 60 days after letters issue, as our page on the [Illinois probate inventory](/learn/illinois/illinois-probate-inventory) explains. The page on [probate inventory and estate accounting](/learn/probate/probate-inventory-and-estate-accounting) explains what goes into the report.
 
 ## Which bank should the estate account be at?
 
@@ -119,7 +119,7 @@ Ask three practical questions before you sign anything. Does the bank charge a m
 
 Interest is a smaller point than people expect. A large estate holding cash for many months may justify moving part of the money into an interest-bearing account or a short-term certificate, but only if the dates line up with when bills and distributions will come due. Park the money where it is safe and reachable, not where it earns a bit more but takes weeks to release.
 
-For the New Jersey steps, including the inheritance tax waiver banks ask for, see [the New Jersey estate bank account guide](/learn/new-jersey/new-jersey-estate-bank-account-ein-and-tax-waivers).
+For the Illinois steps, including what an Illinois bank asks for and the money mistakes to avoid, see [opening an estate bank account in Illinois](/learn/illinois/opening-an-estate-bank-account-in-illinois).
 
 ## How we can help
 

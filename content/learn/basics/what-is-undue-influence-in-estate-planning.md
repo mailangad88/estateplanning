@@ -1,7 +1,7 @@
 ---
 title: "What is undue influence in estate planning, and how do you protect a will from it?"
-description: "Undue influence means someone overpowered a person's own choice in a will or trust. See the warning signs and how to protect a plan in Illinois and New Jersey."
-updated: "2026-10-26"
+description: "Undue influence means someone overpowered a person's own choice in a will or trust. See the warning signs and how to protect a plan in Illinois."
+updated: "2026-11-26"
 answer: >-
   Undue influence in estate planning means someone used pressure, isolation or a position of trust to overpower a person's own free choice, so that the will, trust or beneficiary form reflects the influencer's wishes instead of the signer's. A court can throw out the parts it caused. Persuasion alone is not undue influence. Coercion that replaces the signer's will is.
 takeaways:
@@ -16,7 +16,7 @@ faqs:
   - q: "Is it undue influence if my child helped me make my will?"
     a: "Not by itself. Helping with a ride to the lawyer or finding paperwork is normal. The concern arises when the child picks the lawyer, sits in on the meetings, controls the conversation and receives a much larger share. Courts look at the whole pattern."
   - q: "Who can challenge a will for undue influence?"
-    a: "Generally someone who would benefit if the will were set aside, such as an heir who would inherit under intestacy or a beneficiary of an earlier will. They must file within the court's deadline. Illinois and New Jersey have short windows, explained in our state articles on will contests."
+    a: "Generally someone who would benefit if the will were set aside, such as an heir who would inherit under intestacy or a beneficiary of an earlier will. They must file within the court's deadline. In Illinois the window is short: generally six months after the will is admitted to probate, as our article on the contest deadline explains."
   - q: "Can a trust or a beneficiary designation be challenged for undue influence?"
     a: "Yes. The same principle applies to living trusts, deeds, powers of attorney and beneficiary forms. A change to a life insurance or retirement account beneficiary shortly before death by a dependent person is a common fact pattern. See our article on challenging a beneficiary designation."
   - q: "How can I make my will hard to challenge?"
@@ -25,7 +25,6 @@ related:
   - "basics"
   - "wills/contesting-a-will"
   - "illinois/illinois-will-contest-six-month-deadline"
-  - "new-jersey/new-jersey-will-contests-and-caveats"
   - "beneficiary-designations/when-a-beneficiary-designation-can-be-challenged"
   - "wills/signing-a-will-with-dementia-illness-or-family-pressure"
 glossary: ["undue-influence", "testamentary-capacity", "testator", "heir", "fiduciary"]
@@ -52,14 +51,14 @@ Undue influence begins when the signer cannot say no. That might be because of f
 
 ## How do courts decide?
 
-Courts in Illinois, New Jersey and most other states look at the circumstances rather than a single test. Four facts tend to matter:
+Courts in Illinois and most other states look at the circumstances rather than a single test. Four facts tend to matter:
 
 1. **A relationship of trust or dependence.** Examples are a caregiver, an adult child with power of attorney, a financial adviser, a spiritual adviser or a new partner.
 2. **A weakened signer.** Illness, grief, cognitive decline or dependence on others for daily needs makes pressure more effective.
 3. **A large benefit to the influencer.** A plan that leaves nearly everything to one person who was not previously a major beneficiary draws attention.
 4. **Involvement in making the document.** Choosing the lawyer, paying for it, sitting in on the meeting, or holding the documents.
 
-When these facts combine, many states shift the burden of proof. In that situation the person who benefits has to show that the gift was freely made. The rule is stated differently in each state, so the details matter. Our articles on [Illinois's six-month contest deadline](/learn/illinois/illinois-will-contest-six-month-deadline) and [New Jersey will contests](/learn/new-jersey/new-jersey-will-contests-and-caveats) set out how a challenge is brought and when.
+When these facts combine, many states shift the burden of proof. In that situation the person who benefits has to show that the gift was freely made. The rule is stated differently in each state, so the details matter. Our article on [Illinois's six-month contest deadline](/learn/illinois/illinois-will-contest-six-month-deadline) sets out how a challenge is brought and when.
 
 ## What are the warning signs?
 

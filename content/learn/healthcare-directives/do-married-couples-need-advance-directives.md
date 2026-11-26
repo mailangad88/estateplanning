@@ -1,7 +1,7 @@
 ---
 title: "Do married couples need advance directives? When a spouse is not enough"
 description: "A spouse often speaks for you by default, but not always, and not in every decision. Learn where marriage falls short and what each spouse should sign."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Yes. In many states a spouse is first in line to decide for you, but that default has gaps: it can be disputed, it fails if you are separated or both hurt, and it says nothing about your wishes. Each spouse should sign a healthcare power of attorney naming the other, plus a backup, and a living will.
 takeaways:
@@ -20,14 +20,14 @@ faqs:
   - q: "Do spouses need to name each other as healthcare agent?"
     a: "Usually that is the right choice, but not always. A spouse who panics, who is far older, or who disagrees with your views on life support may serve you worse than an adult child or a close friend. Name the person who will carry out your instructions."
   - q: "Do civil union and domestic partners get the same default rights as a spouse?"
-    a: "That depends on the state. In New Jersey a civil union partner or domestic partner can be named as health care representative. Default lists in other places may not include partners at all. A signed document removes the question."
+    a: "That depends on the state. Illinois gives a civil union partner the same legal protections and benefits as a spouse (750 ILCS 75/20). An unmarried partner with no civil union has no spousal default in many states. A signed document removes the question."
 related:
   - "healthcare-directives"
   - "healthcare-directives/what-happens-without-an-advance-directive"
   - "healthcare-directives/who-should-be-your-healthcare-agent"
   - "blended-families"
   - "illinois/illinois-health-care-surrogate-act-who-decides"
-  - "new-jersey/domestic-partners-and-civil-union-partners-in-new-jersey-estate-law"
+  - "illinois/civil-union-partners-and-illinois-estate-law"
 glossary: ["advance-directive", "healthcare-proxy", "living-will", "agent", "incapacity", "principal"]
 review: pending
 intent: question
@@ -39,7 +39,7 @@ Marriage does solve a lot. This article shows where it does not, and what a marr
 
 ## Does marriage give your spouse authority to decide?
 
-In most states, a spouse sits first or nearly first on the list of people a hospital turns to when a patient cannot decide and has named no agent. Illinois puts a guardian of the person first, then the spouse, then adult children, parents, siblings, grandchildren and close friends under the Health Care Surrogate Act. Our guide to the [Illinois surrogate order](/learn/illinois/illinois-health-care-surrogate-act-who-decides) covers that list in detail. New Jersey lets you name a spouse, civil union partner or domestic partner as a health care representative in a proxy directive, so the paper is where the authority comes from.
+In most states, a spouse sits first or nearly first on the list of people a hospital turns to when a patient cannot decide and has named no agent. Illinois puts a guardian of the person first, then the spouse, then adult children, parents, siblings, grandchildren and close friends under the Health Care Surrogate Act. Our guide to the [Illinois surrogate order](/learn/illinois/illinois-health-care-surrogate-act-who-decides) covers that list in detail. Notice that a guardian of the person outranks the spouse. A signed healthcare power of attorney sits above the whole list, so the paper is where the authority comes from.
 
 In daily practice, a spouse at the bedside is rarely turned away. The trouble starts in the cases below.
 
@@ -94,7 +94,7 @@ Take Sam, 70, who remarried at 66. His daughters like his wife Joyce but fear sh
 
 ## Does divorce or separation change anything?
 
-A divorce usually ends your ex-spouse's role as agent, but not in every state and not for every document. New Jersey's law, for one, provides that a spouse's designation ends on divorce, separation or dissolution of a civil union unless the directive says otherwise. Legal separation is treated differently from state to state. If your marriage is under strain, sign a new directive now rather than assuming the old one adjusts itself.
+A divorce usually ends your ex-spouse's role as agent, but not in every state and not for every document. In Illinois, the divorce rules that cancel a former spouse's role in a will do not settle the question for a health care power of attorney, so do not rely on them. Our page on [how divorce affects your Illinois estate plan](/learn/illinois/how-divorce-affects-your-illinois-estate-plan) covers each document. Legal separation is treated differently from state to state. If your marriage is under strain, sign a new directive now rather than assuming the old one adjusts itself.
 
 ## A note on same-sex and unmarried couples
 

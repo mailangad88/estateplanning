@@ -1,7 +1,7 @@
 ---
 title: "Probating a will from another state: where to file and whether the will still counts"
 description: "A will signed in one state and probated in another usually still works. Learn how domicile picks the court, when a second case is needed and how to handle it."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   The main probate case is filed in the state and county where the person was domiciled at death, meaning the place they treated as their permanent home. A will signed in another state is usually accepted if it was valid where it was signed or where the person lived. A second case is needed only for real estate in a different state.
 takeaways:
@@ -39,7 +39,7 @@ A will is a piece of paper that was written somewhere, and probate is a court pr
 
 The court of the person's domicile. Domicile means the place a person treated as their permanent home, the place they intended to come back to. It is not the same as where they died, where they were born or where the will was signed.
 
-That is why a retired schoolteacher from Newark who dies in a hospital in Pennsylvania while visiting a daughter is probated in New Jersey, at the Surrogate's office in the county where she lived. Our article on [how probate works in New Jersey](/learn/new-jersey/new-jersey-probate-process) walks through the first steps there. A man who lived in Peoria and passes away on a fishing trip is probated in Illinois, in the circuit court for his county.
+That is why a retired schoolteacher from Wheaton who dies in a hospital in Wisconsin while visiting a daughter is probated in Illinois, in the circuit court of DuPage County, where she lived. Our article on [how probate works in Illinois](/learn/illinois/illinois-probate-process) walks through the first steps there. A man who lived in Peoria and passes away on a fishing trip in Minnesota is also probated in Illinois, in the circuit court for his county.
 
 The main case is called the primary or domiciliary probate. It covers everything that is personal property, wherever it sits: bank accounts, brokerage accounts, vehicles, jewelry. Real estate is the exception, and it comes up further down.
 
@@ -93,7 +93,7 @@ A practical point: if the executor lives far from the home, the real work of sec
 
 ## What if there is a dispute about which state was home?
 
-It does not happen often, but when it does, it is serious. A person with a house in New Jersey and a winter condo elsewhere might leave heirs who disagree about where the "real" home was, often because one state has a tax the heirs want to avoid or a favorable law they prefer. A court will weigh facts. Where did she vote? Which address was on her tax return? Where were her doctors, her church, her mail? How she described the place to friends can count too.
+It does not happen often, but when it does, it is serious. A person with a house in Illinois and a winter condo in another state might leave heirs who disagree about where the "real" home was, often because one state has a tax the heirs want to avoid or a favorable law they prefer. A court will weigh facts. Where did she vote? Which address was on her tax return? Where were her doctors, her church, her mail? How she described the place to friends can count too.
 
 Two states may each claim the person, and each can demand taxes. That costs families a lot of money. People who split the year should settle the question while alive: file taxes consistently, register to vote in one place, get one driver's license, and say so in the will. A clear statement that the will is made by a resident of a particular state does not end the question, but it helps. A [plan review after any move](/learn/what-if/moved-states-plan-not-updated) is the simplest protection.
 

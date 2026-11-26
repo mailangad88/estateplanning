@@ -1,7 +1,7 @@
 ---
 title: "How to get power of attorney for a parent or spouse who can't sign or won't sign"
 description: "A stroke, a tremor, dementia or plain refusal can each block a power of attorney. Learn which problems have a workaround and which can end up in court."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   If the person understands the document but cannot physically sign, another adult can sign their name at their direction and in their presence, or they can make a mark, usually with a notary present. If they lack the mental capacity to understand it, or refuse, a power of attorney is not possible and the family must use other tools or a court.
 takeaways:
@@ -103,7 +103,7 @@ Then no one can create a power of attorney for them, and a forged or rushed sign
 
 ## How state law changes this
 
-The core principles are consistent, but the mechanics vary. States differ on how many witnesses are required, whether a notary must be present, whether remote online notarization works for powers of attorney, and what a guardianship petition requires. Some states give more weight to a capacity letter from a doctor. If the principal lives in a different state from you, the rules of the state where the signing occurs usually govern the formalities. Start with the state guides, such as [Illinois](/estate-planning/illinois) or [New Jersey](/estate-planning/new-jersey), and ask an attorney before the signing day.
+The core principles are consistent, but the mechanics vary. States differ on how many witnesses are required, whether a notary must be present, whether remote online notarization works for powers of attorney, and what a guardianship petition requires. Some states give more weight to a capacity letter from a doctor. If the principal lives in a different state from you, the rules of the state where the signing occurs usually govern the formalities. Start with our [Illinois guide](/estate-planning/illinois) and ask an attorney before the signing day.
 
 ## What to do this week
 

@@ -1,7 +1,7 @@
 ---
 title: "What to do when you inherit a farm"
-description: "Inherited a farm or farmland? Start with the lease, the title and the crop. See first steps, tax basis, co-heir options and Illinois and New Jersey tax points."
-updated: "2026-10-26"
+description: "Inherited a farm or farmland? Start with the lease, the title and the crop. See first steps, tax basis, co-heir options and the Illinois tax points."
+updated: "2026-11-26"
 answer: >-
   When you inherit a farm, protect the current year's crop and lease first, then sort out title, taxes and the other heirs. Find out who is renting or farming the land and on what terms, confirm that insurance and property tax are paid, and get the deed and any court appointment in order. Your tax basis in the land generally resets to its value at death.
 takeaways:
@@ -16,7 +16,7 @@ faqs:
   - q: "What happens to the farm lease when the landowner dies?"
     a: "A valid lease generally continues and binds the heirs, even if it was oral. The rent now goes to the estate, then to the heirs. Ending a lease requires proper notice, and the notice date for a farm tenant can fall months before the lease year ends, so check it quickly."
   - q: "Is inherited farmland taxed when I receive it?"
-    a: "Receiving the land is not income. There is no federal income tax on the inheritance itself, and the basis resets to value at death. The estate may owe estate tax only if it is large, and New Jersey has an inheritance tax that depends on who inherits."
+    a: "Receiving the land is not income. There is no federal income tax on the inheritance itself, and the basis resets to value at death. The estate may owe estate tax only if it is large, Illinois has its own estate tax for estates over $4 million."
   - q: "What if my siblings and I inherit the farm together and cannot agree?"
     a: "Co-owners of land can ask a court to divide it or order a sale if they cannot agree, which can force a sale of the farm. Agreeing on a lease, a buyout price or an LLC early avoids that. Our page on buying out a co-owner explains the options."
   - q: "Who should I call first after inheriting a farm?"
@@ -62,11 +62,10 @@ If a family member farms the land rent-free, decide now whether that continues. 
 
 The inheritance itself is not income, and the land generally takes a new basis equal to its value at death. That "step-up" matters more for farmland than for most assets, because land bought decades ago may have a tiny original cost. Our guide to [step-up in basis](/learn/estate-tax/step-up-in-basis) explains the rule, and it is also covered for the family business in [taxes when a family business passes to heirs](/learn/business-owners/taxes-when-a-family-business-passes-to-heirs).
 
-Four tax points apply to most inherited farms.
+Three tax points apply to most inherited farms.
 
 - **Estate tax.** The federal exclusion is $15,000,000 per person in 2026, so most farms do not owe it. A very large operation might. Farm valuation elections exist for estates that do, as described in [farm valuation and estate tax elections](/learn/estate-tax/estate-tax-elections-alternate-valuation-deferral-and-farm-valuation).
 - **Illinois.** Illinois assesses farmland by its soil productivity, not its market value, and the property tax bill follows. Keep the farmland classification by keeping the land in agricultural use. The state has its own estate tax, covered in [Illinois estate tax](/learn/illinois/illinois-estate-tax).
-- **New Jersey.** The state has an inheritance tax that depends on who inherits, not on the size of the estate alone. See [New Jersey inheritance tax](/learn/new-jersey/new-jersey-inheritance-tax). New Jersey also offers a farmland assessment that lowers the property tax if the land stays in qualifying agricultural use. Selling the land or changing its use can trigger back taxes, so confirm the rules before any change.
 - **Selling grain, livestock or equipment.** Income from the farm after death is taxable to the estate or the heir who receives it. Our guide on [the estate income tax return](/learn/estate-tax/does-an-estate-pay-income-tax-form-1041-interest-and-dividends) explains who files.
 
 ## What if several heirs inherit the farm together?
@@ -109,7 +108,7 @@ Several agencies track farm land by owner, and each needs the new name. Update t
 
 Track the rest of the timeline with the [inheritance timeline tool](/tools/inheritance-timeline).
 
-For state detail, see [Illinois farm estate tax and cash rent leases](/learn/illinois/illinois-farm-estate-tax-and-cash-rent-leases) and [New Jersey farmland assessment after a death](/learn/new-jersey/new-jersey-farmland-assessment-after-a-death-and-rollback-taxes).
+For Illinois detail, see [Illinois farm estate tax and cash rent leases](/learn/illinois/illinois-farm-estate-tax-and-cash-rent-leases).
 
 ## How we can help
 

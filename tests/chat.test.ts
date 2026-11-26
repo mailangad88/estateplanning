@@ -150,12 +150,11 @@ describe("chat placement and copy", () => {
     for (const p of ["/", "/wills", "/learn/probate/x", "/pricing", "/booking-tips"]) expect(chatHiddenOn(p), p).toBe(false);
   });
 
-  it("shows the sitewide referral disclaimer", () => {
+  it("shows the sitewide disclaimer", () => {
     expect(CHAT_DISCLAIMER).toBe(SITE_DISCLAIMER);
     expect(CHAT_DISCLAIMER).toMatch(/educational purposes only/);
     expect(CHAT_DISCLAIMER).toMatch(/does not constitute legal advice/);
     expect(CHAT_DISCLAIMER).toMatch(/attorney-client relationship/);
-    expect(CHAT_DISCLAIMER).toMatch(/referral website/);
   });
 
   it("strips markup from search excerpts", () => {

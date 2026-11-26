@@ -1,7 +1,7 @@
 ---
 title: "Can you make a will under guardianship, with a mental illness or on strong medication?"
 description: "A guardianship, a psychiatric diagnosis or heavy medication does not automatically end your right to make a will. See how capacity is judged and what helps."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Often yes. Capacity to make a will is judged at the moment of signing and asks for less than capacity to manage money or run a household. A guardianship or conservatorship, a diagnosis such as bipolar disorder or schizophrenia, or strong pain medication does not end that right on its own. It does make the will easier to challenge, so the signing needs better evidence.
 takeaways:
@@ -55,7 +55,7 @@ It depends on the state and on what the order says. Three patterns come up.
 
 Two points are consistent almost everywhere. A guardian or conservator cannot generally sign a will for the ward, and cannot change the ward's beneficiary forms. We cover the second point in [whether a power of attorney or guardian can change a beneficiary](/learn/beneficiary-designations/can-a-power-of-attorney-or-guardian-change-a-beneficiary). A few states have a court-approved "statutory will" for people who never had capacity, but that is a narrow tool and the judge picks the terms.
 
-If you are under a guardianship in Illinois or New Jersey, the first thing to read is the order itself. Our [Illinois guardianship article](/learn/illinois/illinois-guardianship) and [New Jersey guardianship article](/learn/new-jersey/guardianship-in-new-jersey) describe how those courts handle an adult's rights.
+If you are under a guardianship in Illinois, the first thing to read is the order itself. Our [Illinois guardianship article](/learn/illinois/illinois-guardianship) describes how the court handles an adult's rights, and [limited vs. plenary guardianship in Illinois](/learn/illinois/limited-vs-plenary-guardianship-in-illinois) explains why the type of order matters.
 
 ## Does a mental illness make a will invalid?
 

@@ -94,7 +94,7 @@ The [small estate checker](/tools/small-estate-checker) can help with step 3. Ba
 
 Open probate when an heir is missing, when the family disagrees, when the debts may exceed the assets, or when the total is close to the limit. Probate adds cost but gives the representative a court order and a creditor claims period that ends the risk. If the estate is just over the limit, see [what to do when an Illinois estate is just over $150,000](/learn/illinois/illinois-estate-just-over-the-small-estate-limit).
 
-Do not sign if the signer would be both the main creditor and the person judging the claims. A court-supervised process is cleaner. Our article on [the cheapest way to settle an estate in Illinois](/learn/probate/cheapest-way-to-settle-an-estate-in-illinois-or-new-jersey) compares the routes.
+Do not sign if the signer would be both the main creditor and the person judging the claims. A court-supervised process is cleaner. Our article on [the cheapest way to settle an estate in Illinois](/learn/probate/cheapest-way-to-settle-an-estate-in-illinois) compares the routes.
 
 ## Can the signer be reimbursed?
 

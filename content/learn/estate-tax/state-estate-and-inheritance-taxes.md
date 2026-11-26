@@ -1,20 +1,20 @@
 ---
 title: "State estate and inheritance taxes: which states tax and how"
 description: "Which states levy an estate tax or inheritance tax as of 2026, how the two differ, and why a state can tax you even when federal estate tax does not apply."
-updated: "2026-10-06"
+updated: "2026-11-26"
 answer: >-
   As of 2026, about a dozen states and Washington, D.C. levy an estate tax, usually with exemptions far below the federal $15 million, and five states levy an inheritance tax. An estate tax is paid by the estate; an inheritance tax is paid by the heirs, and the rate often depends on how closely related they are to the person who died.
 takeaways:
   - "State estate taxes can apply to estates far below the federal exemption of $15 million per person in 2026."
   - "Estate tax is paid by the estate; inheritance tax is paid by the person who receives the assets."
   - "As of 2026, states with an estate tax include Connecticut, Hawaii, Illinois, Maine, Maryland, Massachusetts, Minnesota, New York, Oregon, Rhode Island, Vermont, Washington, and D.C."
-  - "Kentucky, Maryland, Nebraska, New Jersey, and Pennsylvania have inheritance taxes; spouses are usually exempt and children are often treated more favorably than distant relatives."
+  - "Kentucky, Maryland, Nebraska, New Jersey, and Pennsylvania have inheritance taxes; spouses are usually exempt and children are often treated more favorably than distant relatives. Illinois has an estate tax only."
   - "Where you live and where your real estate sits both matter, so owning property in a taxing state can create a state tax bill."
 faqs:
   - q: "Which states have an estate tax in 2026?"
     a: "Connecticut, Hawaii, Illinois, Maine, Maryland, Massachusetts, Minnesota, New York, Oregon, Rhode Island, Vermont, Washington, and the District of Columbia. Exemption amounts differ widely and change, so check the state's revenue department for the current figure."
   - q: "Which states have an inheritance tax?"
-    a: "Kentucky, Maryland, Nebraska, New Jersey, and Pennsylvania. Iowa's inheritance tax was phased out and repealed for deaths in 2025 and later. Maryland is the only state with both an estate tax and an inheritance tax."
+    a: "Kentucky, Maryland, Nebraska, New Jersey, and Pennsylvania. Illinois does not have one. Iowa's inheritance tax was phased out and repealed for deaths in 2025 and later. Maryland is the only state with both an estate tax and an inheritance tax."
   - q: "What is the difference between an estate tax and an inheritance tax?"
     a: "An estate tax is charged on the total estate before assets are distributed, and the executor pays it. An inheritance tax is charged on what each heir receives, and the heir pays it, usually at a rate based on their relationship to the person who died."
   - q: "Does my spouse pay state inheritance tax?"
@@ -76,7 +76,7 @@ A few states, notably New York, have a "cliff": if the estate exceeds the exempt
 
 ## Which states have an inheritance tax?
 
-As of 2026, five states levy an inheritance tax:
+As of 2026, five states levy an inheritance tax. Illinois is not one of them:
 
 - Kentucky
 - Maryland
@@ -108,7 +108,7 @@ Federal [portability](/learn/estate-tax/portability-for-married-couples) lets a 
 
 ## Example: Tom and Gwen
 
-Tom and Gwen, both 72, live in a state with a $4 million estate tax threshold. They own a $1.5 million house, $1 million in brokerage accounts, and $2.5 million in retirement accounts, for $5 million combined. Federally, they owe nothing. If Tom dies first and leaves everything to Gwen, no tax is due at his death because of the marital deduction. But Gwen's estate will be $5 million, over the state threshold, and the state tax could apply when she dies. Their attorney suggests using a trust at Tom's death to use his $4 million state exemption. That changes the state tax picture without affecting what Gwen can use during her life.
+Tom and Gwen, both 72, live in Naperville. Illinois has a $4 million estate tax threshold and no portability. They own a $1.5 million house, $1 million in brokerage accounts, and $2.5 million in retirement accounts, for $5 million combined. Federally, they owe nothing. If Tom dies first and leaves everything to Gwen, no tax is due at his death because of the marital deduction. But Gwen's estate will be $5 million, over the Illinois threshold, and Illinois estate tax could apply when she dies. Their attorney suggests using a trust at Tom's death to use his $4 million Illinois exemption. Our page on [Illinois QTIP elections and credit shelter trusts](/learn/illinois/illinois-qtip-election-and-credit-shelter-trusts) explains how that trust is set up. That changes the state tax picture without affecting what Gwen can use during her life.
 
 ## What can I do about state estate and inheritance tax?
 

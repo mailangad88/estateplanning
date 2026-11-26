@@ -1,7 +1,7 @@
 ---
 title: "Who decides the funeral arrangements, and what if the family disagrees?"
 description: "State law ranks who controls burial or cremation. See the usual order, how written wishes count, and what to do when siblings or a spouse disagree about it."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Who decides is set by state law, and it follows a ranking. Written instructions from the person who died come first in many states, then an agent named on a form, then a spouse, adult children, parents and siblings. Relatives of the same rank who disagree can ask a court to decide, though most disputes settle sooner.
 takeaways:
@@ -54,7 +54,7 @@ Your state decides, and the decision runs down a ranked list. The funeral direct
 | 5 | Siblings | Then grandchildren, grandparents and other next of kin |
 | 6 | Someone who is not family | A close friend, guardian or public administrator, in some states |
 
-The list is not the same everywhere. A few states put the executor named in the will near the top. Others treat a domestic partner as equal to a spouse. Illinois and New Jersey each have their own statute, and we cover them in [who controls funeral and burial decisions in New Jersey](/learn/new-jersey/who-controls-funeral-and-burial-decisions-in-new-jersey) and in [the Illinois Disposition of Remains Act](/learn/illinois/illinois-disposition-of-remains-act). If you are not sure which state's law applies, the funeral home usually knows the answer for the county where the person died.
+The list is not the same everywhere. A few states put the executor named in the will near the top. Others treat a domestic partner as equal to a spouse. Illinois has its own statute, and we cover it in [the Illinois Disposition of Remains Act](/learn/illinois/illinois-disposition-of-remains-act). If you are not sure which state's law applies, the funeral home usually knows the answer for the county where the person died.
 
 ## Do the deceased person's written wishes count?
 

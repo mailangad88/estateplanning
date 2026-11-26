@@ -1,7 +1,7 @@
 ---
 title: "The marital deduction: why spouses owe no estate tax at the first death"
 description: "The unlimited marital deduction lets a spouse leave everything to a citizen spouse tax free. See what qualifies, what it only delays, and where couples slip."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   The marital deduction lets you leave any amount to a U.S. citizen spouse with no federal estate or gift tax. It postpones the tax rather than erasing it, because what the survivor keeps is taxed at the survivor's death. Property must pass outright or in a qualifying trust. A spouse who is not a citizen needs a special trust.
 takeaways:
@@ -20,7 +20,7 @@ faqs:
   - q: "What is the terminable interest rule?"
     a: "It is the IRS rule that blocks the deduction if the spouse's interest could end and pass to someone else, such as a gift that lasts until remarriage. The qualified terminable interest property election is the main exception, and it lets a trust qualify even though the principal goes elsewhere after the spouse dies."
   - q: "How does the marital deduction work with a state estate tax?"
-    a: "Most states that tax estates also allow a marital deduction, so a first death usually creates no state tax either. The state exclusion can be lower than the federal one, which makes the second death the likely point of tax. Illinois is an example, and New Jersey exempts spouses from its inheritance tax."
+    a: "Most states that tax estates also allow a marital deduction, so a first death usually creates no state tax either. The state exclusion can be lower than the federal one, which makes the second death the likely point of tax. Illinois is an example: it taxes estates over $4 million and has no portability, so the second death is where Illinois tax usually lands."
 related:
   - "estate-tax/portability-for-married-couples"
   - "estate-tax/bypass-trust-vs-portability"
@@ -77,7 +77,7 @@ Trusts can qualify too, but they must follow strict rules. The best-known is the
 
 **They assume a trust is needed.** For a couple whose combined estate is under the exclusion, a trust is not needed to avoid federal estate tax. The marital deduction and the exclusion together cover it. Trusts may still make sense for other reasons, such as protecting children from a first marriage. See [bypass trust versus portability](/learn/estate-tax/bypass-trust-vs-portability) for when each tool fits.
 
-**They forget the state.** Federal numbers do not set state numbers. Illinois taxes estates over $4 million and does not offer portability, so a couple with $5 million can face an Illinois estate tax at the second death even though the federal tax is zero. Our guide to the [Illinois estate tax](/learn/illinois/illinois-estate-tax) explains the math. New Jersey has no estate tax but does have an inheritance tax, and a surviving spouse is exempt from it. See the [New Jersey inheritance tax](/learn/new-jersey/new-jersey-inheritance-tax) article.
+**They forget the state.** Federal numbers do not set state numbers. Illinois taxes estates over $4 million and does not offer portability, so a couple with $5 million can face an Illinois estate tax at the second death even though the federal tax is zero. Our guide to the [Illinois estate tax](/learn/illinois/illinois-estate-tax) explains the math, and the page on [Illinois QTIP elections and credit shelter trusts](/learn/illinois/illinois-qtip-election-and-credit-shelter-trusts) shows how couples use the first spouse's Illinois exclusion.
 
 **They ignore a spouse who is not a citizen.** The unlimited deduction is not available, and the first estate may owe tax at once unless the assets go into a qualified domestic trust.
 

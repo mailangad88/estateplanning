@@ -1,7 +1,7 @@
 ---
 title: "What happens if you sell the house or car your will leaves to someone?"
 description: "If you sell, lose or give away property your will names, that gift usually fails. See how ademption works, who gets the proceeds and how to word a will."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   If your will leaves a specific item, such as a house, and you no longer own it when you die, the gift usually fails. This is called ademption. The person named generally does not get the sale money in its place, and the value falls into the rest of your estate. A few states soften the rule, so the wording of the will and your state matter.
 takeaways:
@@ -18,7 +18,7 @@ faqs:
   - q: "What happens if the value of my assets changes after I write my will?"
     a: "It depends on how the gift is written. A gift of a fixed dollar amount stays the same, while a share such as one-third rises or falls with the estate. A specific gift, like a house, passes with whatever value it has at death."
   - q: "What happens if my will names someone who has died?"
-    a: "The gift to that person usually lapses. Many states have an anti-lapse rule that passes the gift to the person's children or other descendants instead, but the rule has limits and the will can override it. Our pages on New Jersey and Illinois lapsed gifts give the details."
+    a: "The gift to that person usually lapses. Many states have an anti-lapse rule that passes the gift to the person's children or other descendants instead, but the rule has limits and the will can override it. Our page on Illinois lapsed gifts gives the details."
   - q: "Does moving a house into my living trust cancel the gift in my will?"
     a: "It can. Once the house belongs to the trust, you no longer own it as an individual, so the will has nothing to give. The house is then controlled by the trust document, and the will gift may fail unless the trust repeats it."
   - q: "Can I give a person a car in my will if I plan to trade it in?"
@@ -28,7 +28,6 @@ related:
   - "wills/do-wills-expire-is-an-old-will-still-valid"
   - "what-if/outdated-will"
   - "illinois/children-born-after-an-illinois-will-and-lapsed-gifts"
-  - "new-jersey/when-a-beneficiary-dies-first-in-new-jersey"
   - "wills/changing-a-will-and-codicils"
 glossary: ["bequest", "residuary-estate", "beneficiary", "testator", "revocable-trust", "pour-over-will"]
 review: pending
@@ -73,7 +72,7 @@ Sometimes. The traditional rule is strict: if the item is gone, the beneficiary 
 - Proceeds still unpaid at death, where the buyer owes the estate part of the price.
 - A condemnation award, if the government took the property.
 
-Illinois and New Jersey both have case law and statutes addressing parts of this area, and the details change which exception applies. The practical lesson does not depend on those details. A buyer who has paid in full and a sale made by you personally are the situation where the beneficiary is most likely to lose out.
+Illinois has case law and statutes addressing parts of this area, and the details change which exception applies. The practical lesson does not depend on those details. A buyer who has paid in full and a sale made by you personally are the situation where the beneficiary is most likely to lose out.
 
 An agent acting under your [power of attorney](/learn/power-of-attorney) selling the house to pay for your care is the common painful version. The child who was promised the house may later argue that the gift should convert to the proceeds. Courts in many states are more willing to say so when the sale was out of the owner's hands, but the outcome is uncertain.
 
@@ -92,7 +91,7 @@ Notice that the beneficiary never did anything wrong in any of these cases. The 
 
 ## What if the beneficiary dies before you instead?
 
-That is a different rule, called lapse. If the person named dies first, the gift usually lapses, unless a state's anti-lapse law passes it to that person's children or other descendants. In New Jersey, the rules for a beneficiary who dies first are covered in [when a beneficiary dies first in New Jersey](/learn/new-jersey/when-a-beneficiary-dies-first-in-new-jersey). Illinois has its own rule, explained in [children born after an Illinois will and lapsed gifts](/learn/illinois/children-born-after-an-illinois-will-and-lapsed-gifts).
+That is a different rule, called lapse. If the person named dies first, the gift usually lapses, unless a state's anti-lapse law passes it to that person's children or other descendants. Illinois has its own rule, explained in [children born after an Illinois will and lapsed gifts](/learn/illinois/children-born-after-an-illinois-will-and-lapsed-gifts).
 
 The two ideas tend to arrive together. A will that names a person who has died and an item that has been sold can fail twice over. Check both when you review.
 

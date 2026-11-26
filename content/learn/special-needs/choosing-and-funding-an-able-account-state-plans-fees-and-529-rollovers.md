@@ -1,7 +1,7 @@
 ---
 title: "Choosing and funding an ABLE account: state plans, fees, 529 rollovers and who can contribute"
 description: "How to pick an ABLE plan, whether you must use your own state's, what fees to compare, how a 529 rollover works and who may add money, including a trust."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   In most cases you can open an ABLE account in any state's plan, not only your own, and the owner is the person with the disability. Compare fees, investment choices, debit card features and any state tax benefit. Family, friends and a special needs trust can contribute, up to the annual limit, and a 529 college account can often be rolled over within that limit.
 takeaways:
@@ -43,7 +43,7 @@ Generally no. ABLE accounts are created by states, but most plans let residents 
 
 A person may have only one ABLE account in general, with a narrow exception for a rollover between accounts, so choose with care. Moving to another plan later is possible, through a program-to-program rollover, but it creates paperwork and sometimes a fee. Treat the choice as a decision that will last, not a trial.
 
-Your state's own plan can still be the right choice. Some states let residents deduct contributions from state income tax, and some give a matching deposit or extra consumer protection. Whether Illinois or New Jersey does is worth confirming on the current plan documents, since states change these terms. Our article on [special needs planning in New Jersey](/learn/new-jersey/special-needs-planning-in-new-jersey) is a place to start for that state.
+Your state's own plan can still be the right choice. Some states let residents deduct contributions from state income tax, and some give a matching deposit or extra consumer protection. Whether Illinois does is worth confirming on the current plan documents, since states change these terms. Our article on [special needs planning in Illinois](/learn/illinois/special-needs-planning-in-illinois-for-a-disabled-child) is a place to start for the Illinois ABLE account.
 
 ## What should you compare between plans?
 

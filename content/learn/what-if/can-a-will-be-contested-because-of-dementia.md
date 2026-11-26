@@ -1,14 +1,14 @@
 ---
 title: "Can a will be contested because the person had dementia?"
-description: "A dementia diagnosis alone does not void a will. See what Illinois and New Jersey courts look at, who must prove what, the deadlines and key evidence."
-updated: "2026-10-26"
+description: "A dementia diagnosis alone does not void a will. See what Illinois courts look at, who must prove what, the 6-month deadline and key evidence."
+updated: "2026-11-26"
 answer: >-
-  Yes, a will can be contested because of dementia, but the diagnosis alone does not make it invalid. The question is whether the person understood what they owned, who their family was and what the document did at the moment they signed. In Illinois the contest deadline is 6 months after the will is admitted. In New Jersey it is generally 4 months.
+  Yes, a will can be contested because of dementia, but the diagnosis alone does not make it invalid. The question is whether the person understood what they owned, who their family was and what the document did at the moment they signed. In Illinois the contest deadline is 6 months after the will is admitted to probate.
 takeaways:
   - "Capacity is judged on the day of signing, so a person with dementia can sign a valid will during a clear stretch."
   - "The person challenging the will usually carries the burden of proving incapacity or undue influence."
   - "A new will that favors a caregiver or someone who helped arrange it draws closer scrutiny than a will that leaves things to children equally."
-  - "Illinois allows 6 months after admission to probate to contest; New Jersey generally allows 4 months."
+  - "Illinois allows 6 months after the will is admitted to probate to file a contest."
   - "Medical records from the weeks around signing, plus the drafting lawyer's notes, usually decide these cases."
 faqs:
   - q: "Can a person with dementia change their will?"
@@ -27,7 +27,7 @@ related:
   - "wills/signing-a-will-with-dementia-illness-or-family-pressure"
   - "wills/contesting-a-will"
   - "illinois/illinois-will-contest-six-month-deadline"
-  - "new-jersey/new-jersey-will-contests-and-caveats"
+  - "illinois/undue-influence-will-challenges-in-illinois"
   - "healthcare-directives/dementia-and-advance-directives"
   - "probate/how-to-object-to-probate"
 glossary: ["testamentary-capacity", "undue-influence", "testator", "probate", "no-contest-clause", "heir"]
@@ -37,7 +37,7 @@ intent: scenario
 
 Margaret was 84 and had been living with Alzheimer's for about three years. In March she signed a new will that left her house to the niece who drove her to appointments, and cut her two sons from half of it to nothing. Margaret died that autumn. Her sons want to know whether they can undo it.
 
-They may be able to, but a diagnosis is not the test. This article explains what a court actually asks about dementia and a will, how the deadlines work in Illinois and New Jersey, and what evidence tends to win or lose these cases. If you are the one making a will while living with memory loss, our article on [signing a will with dementia, illness or family pressure](/learn/wills/signing-a-will-with-dementia-illness-or-family-pressure) covers the planning side.
+They may be able to, but a diagnosis is not the test. This article explains what a court actually asks about dementia and a will, how the Illinois deadline works, and what evidence tends to win or lose these cases. If you are the one making a will while living with memory loss, our article on [signing a will with dementia, illness or family pressure](/learn/wills/signing-a-will-with-dementia-illness-or-family-pressure) covers the planning side.
 
 ## Does a dementia diagnosis make a will invalid?
 
@@ -65,7 +65,7 @@ Families often mix these up, and the difference decides how a case is built.
 
 Dementia cases usually plead both. A frail person is easier to influence, so evidence of confusion supports each claim. Our [undue influence glossary entry](/glossary/undue-influence) gives the short definition.
 
-Both states treat a gift to a helper with extra care. In New Jersey, a confidential relationship plus suspicious circumstances can shift the burden to the person who benefits, as described in our guide to [New Jersey will contests and caveats](/learn/new-jersey/new-jersey-will-contests-and-caveats). In Illinois, a will that benefits someone who held a fiduciary role, such as a power of attorney agent, and who helped procure it can draw the same kind of presumption. That is a reason to be careful about who sits in the lawyer's office.
+Illinois treats a gift to a helper with extra care. A will that benefits someone who held a fiduciary role, such as a power of attorney agent, and who helped procure it can draw a presumption of undue influence. Illinois courts raise that presumption when the maker was the dependent party, trusted the beneficiary, and the beneficiary prepared or arranged the will. Our page on [undue influence in Illinois will contests](/learn/illinois/undue-influence-will-challenges-in-illinois) explains how it is proved and rebutted. That is a reason to be careful about who sits in the lawyer's office.
 
 <!-- visual: whatif id=family-dispute -->
 
@@ -99,16 +99,16 @@ For a family defending a will, the same records matter. One practical point: if 
 
 A medical review of the chart after death is common, and it is more persuasive when it rests on contemporaneous notes. A physician who never met the person is arguing from paper. A physician who examined her a week before signing is giving evidence.
 
-## What are the deadlines in Illinois and New Jersey?
+## What is the deadline in Illinois?
 
 Short, and strict.
 
-| | Illinois | New Jersey |
-| --- | --- | --- |
-| Deadline to contest | 6 months after the will is admitted to probate (755 ILCS 5/8-1) | Generally 4 months after probate (R. 4:85-1) |
-| Where | The probate court handling the estate | Superior Court, Probate Part |
-| Early warning step | Watch for the notice of the will's admission | File a caveat with the county Surrogate before probate |
-| Who can usually file | Heirs and people named in an earlier will | Heirs and people named in an earlier will |
+| | Illinois |
+| --- | --- |
+| Deadline to contest | 6 months after the will is admitted to probate (755 ILCS 5/8-1) |
+| Where | The probate court handling the estate |
+| Early warning step | Watch for the notice of the will's admission |
+| Who can usually file | Heirs and people named in an earlier will |
 
 Missing the deadline usually ends the dispute, even when the facts are good. Our pages on the [Illinois six-month contest deadline](/learn/illinois/illinois-will-contest-six-month-deadline) and the [probate objection process](/learn/probate/how-to-object-to-probate) walk through filing. If you only just learned about the will, count from the date it was admitted, not from the date you found out.
 

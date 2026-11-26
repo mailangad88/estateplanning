@@ -1,7 +1,7 @@
 ---
 title: "What happens to a reverse mortgage when the borrower dies? Deadlines for heirs and a spouse"
-description: "A reverse mortgage comes due when the last borrower dies. See heirs' deadlines, the 95 percent option, a spouse's rights and first steps in IL or NJ now."
-updated: "2026-10-26"
+description: "A reverse mortgage comes due when the last borrower dies. See heirs' deadlines, the 95 percent option, a spouse's rights and first steps for Illinois families."
+updated: "2026-11-26"
 answer: >-
   A reverse mortgage becomes due and payable when the last borrower dies. For the common federally insured type, the servicer sends a notice, heirs generally have about 30 days to respond and about six months to sell, pay off or hand over the house, with extensions possible. The loan is non-recourse, so heirs never owe more than the home is worth, and a non-borrowing spouse may have extra time.
 takeaways:
@@ -47,7 +47,7 @@ When that happens, five things follow.
 2. **Heirs get a short window to respond.** For the common federally insured type, called a home equity conversion mortgage or HECM, the heirs generally have about 30 days to tell the servicer what they plan to do.
 3. **There is a period to resolve it.** The usual period is about six months to sell, pay off or sign the house over. Servicers can often grant extensions in steps, up to about a year in total, when the family is making real progress. The loan documents and the servicer's own notice are the final word.
 4. **Interest keeps running.** Every month of delay adds to the balance and reduces what is left for the family.
-5. **If nothing happens, the lender forecloses.** Both Illinois and New Jersey handle foreclosure through the courts, which gives some time, but fighting a foreclosure is expensive and rarely worth it when the real issue is a missed deadline.
+5. **If nothing happens, the lender forecloses.** Illinois handles foreclosure through the courts, which gives some time, but fighting a foreclosure is expensive and rarely worth it when the real issue is a missed deadline.
 
 The ownership of the house itself is not changed by the loan. Whoever inherits under the will, the trust or the intestacy rules receives the house subject to the lender's lien. Our page on [what happens to a mortgage when the homeowner dies](/learn/property-and-assets/mortgage-when-the-homeowner-dies) covers ordinary loans, and [inheriting a house](/learn/after-a-death/inheriting-a-house) explains the choices heirs have.
 
@@ -110,7 +110,9 @@ Whether you are the borrower or the family, there are concrete steps.
 
 The federal rules for insured reverse mortgages are the same in every state. What differs is the process around them: who can sell the house, how long probate takes and how foreclosure works.
 
-In Illinois, heirs usually need letters of office from the circuit court before an executor can sign a deed. See [inheriting a house in Illinois](/learn/illinois/inheriting-a-house-in-illinois) and the state guide for [Illinois](/estate-planning/illinois). In New Jersey, the county Surrogate issues letters, and tax waivers can add time to a sale. See [inheriting a house in New Jersey](/learn/new-jersey/inheriting-a-house-in-new-jersey) and the state guide for [New Jersey](/estate-planning/new-jersey).
+In Illinois, heirs usually need letters of office from the circuit court before an executor can sign a deed. See [inheriting a house in Illinois](/learn/illinois/inheriting-a-house-in-illinois) and the state guide for [Illinois](/estate-planning/illinois).
+
+If the house has to be sold before the lender's deadline, the executor sells it as part of the probate case. Our page on [selling a house in probate in Illinois](/learn/illinois/selling-a-house-in-probate-in-illinois) explains the steps.
 
 Privately issued reverse mortgages, sometimes called proprietary loans, follow their own contracts. Read the document rather than relying on the HECM rules above.
 

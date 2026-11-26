@@ -1,7 +1,7 @@
 ---
 title: "How do I buy out my siblings' share of an inherited house, and what if a co-owner will not sell?"
 description: "Step through a sibling buyout of an inherited house: appraisal, financing, the deed and taxes, and what a court partition costs if a co-owner refuses."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   To buy out a sibling, agree on a value (usually from an independent appraisal), pay each co-owner their percentage, and record a deed from them to you. If a co-owner refuses to sell or to buy, any owner can ask a court for partition, which usually ends in a sale and costs legal fees, an appraiser and months of time.
 takeaways:
@@ -77,7 +77,7 @@ Keep it short and signed, in this order:
 1. A written buyout agreement stating the price, the date, who pays what, and who bears taxes and utilities until closing.
 2. The deed from each selling sibling to the buyer. A quitclaim or special warranty deed is common, and our page on [types of deeds](/learn/property-and-assets/types-of-deeds-quitclaim-warranty-grant-and-trustee-deeds) explains the difference.
 3. Payment, ideally through a title company or attorney's escrow, so nobody hands over a deed before the money lands.
-4. Recording of the deed with the county recorder. In New Jersey, deeds that are part of a partition are among those the Division of Taxation lists as exempt from the realty transfer fee, so confirm the exemption wording on the deed. In Illinois, ask the county recorder about transfer declarations.
+4. Recording of the deed with the county recorder. In Illinois, ask the county recorder about transfer declarations.
 5. Updated homeowners insurance and, if needed, title insurance for the new owner.
 
 A title company is worth the fee here. A mistake in a deed between siblings is easy to make and hard to fix once someone has died.
@@ -92,7 +92,7 @@ A buyout at far below value can be treated as a partial gift by the seller, whic
 
 Then you are choosing between waiting, negotiating through a mediator, and a court partition action. Mediation is often worth its modest cost, because a neutral person can say what the siblings cannot.
 
-Partition is the legal tool for ending co-ownership. In Illinois the statute is Article XVII of the Code of Civil Procedure (735 ILCS 5/17-101 and following), and in New Jersey partition begins at N.J.S.A. 2A:56-1 and following, brought in the Chancery Division of Superior Court. A court can divide land physically, which rarely suits a single house, or order a sale and split the proceeds. Many states also give the owners who want to stay a chance to buy first, but the rules differ, so ask a local attorney about yours.
+Partition is the legal tool for ending co-ownership. In Illinois the statute is Article XVII of the Code of Civil Procedure (735 ILCS 5/17-101 and following). A court can divide land physically, which rarely suits a single house, or order a sale and split the proceeds. Many states also give the owners who want to stay a chance to buy first, but the rules differ, so ask a local attorney about yours.
 
 What drives the cost:
 

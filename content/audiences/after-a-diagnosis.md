@@ -30,7 +30,7 @@ faqs:
   - q: "I have low energy. Can we do this in short sessions?"
     a: "Yes. Work can be split into short calls and a brief signing. Ask on your first call how the attorney can split the work, and say what times of day suit you best."
   - q: "Can you come to me or do it remotely?"
-    a: "Ask on your first call whether home or hospital signings are available where you live. Illinois and New Jersey both allow remote notarization, but a will also needs two witnesses, and the rules for witnessing on video are stricter. The attorney confirms which documents can be signed remotely."
+    a: "Ask on your first call whether home or hospital signings are available where you live. Illinois allows remote notarization, but a will also needs two witnesses, and the rules for witnessing on video are stricter. The attorney confirms which documents can be signed remotely."
   - q: "Do I have to tell my family?"
     a: "No. You decide who knows. Your documents name your agent and can say who is to be told what. Some people keep their plan private until it is needed."
   - q: "What if my memory is already affected?"
@@ -38,7 +38,7 @@ faqs:
   - q: "How much does it cost, and will this affect my benefits?"
     a: "Fees are set by the attorney you are matched with. See [pricing](/pricing). Signing a power of attorney or a will does not affect benefits. If you are on disability or Medicaid, say so, so the plan avoids transfers that count as gifts."
 reviewed: false
-updated: "2026-10-06"
+updated: "2026-11-26"
 ---
 
 You do not have to tell us or the attorney your diagnosis. Share only what you want to share. We do not name or ask about any condition on this page.

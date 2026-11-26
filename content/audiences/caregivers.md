@@ -36,9 +36,9 @@ faqs:
   - q: "What does a guardianship cost and how long does it take?"
     a: "It varies widely by state and by whether anyone objects. It usually involves court fees, a medical evaluation, often a court-appointed attorney or visitor, and ongoing reports. Ask on your first call whether the attorney handles guardianship petitions. See [pricing](/pricing) for how fees work."
   - q: "We live in a different state from our parent. Does that matter?"
-    a: "Yes. Documents should fit the state where your parent lives. Family Future Planning matches families with attorneys in Illinois and New Jersey. If your parent lives in another state, we will tell you so and suggest that state's bar referral service."
+    a: "Yes. Documents should fit the state where your parent lives. Family Future Planning matches families with attorneys in Illinois. If your parent lives in another state, we will tell you so and suggest that state's bar referral service."
 reviewed: false
-updated: "2026-10-06"
+updated: "2026-11-26"
 ---
 
 ## Where are you right now?
@@ -55,7 +55,7 @@ updated: "2026-10-06"
 - **The hospital wants a decision.** If your father cannot decide and no healthcare agent is named, state law sets a default order of who may decide, often spouse, then adult children. In Illinois the list is a guardian, spouse, adult children, parents, then adult siblings (755 ILCS 40/25). With three siblings who disagree, that default is where fights start.
 - **The house has to be sold to pay for care.** Without authority to sign, a sale waits for a court.
 - **You are paying bills from your own account.** Many caregivers do. Without a written agreement it can look like a gift to a Medicaid reviewer, and it can make siblings suspicious.
-- **A Medicaid look-back is coming.** Federal law sets a 60-month look-back at transfers when someone applies for nursing-home Medicaid (42 U.S.C. 1396p(c)), and Illinois and New Jersey both use it. Moving a house or an account to a child in a hurry can cause a penalty period. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) and the [look-back date calculator](/tools/medicaid-lookback-date).
+- **A Medicaid look-back is coming.** Federal law sets a 60-month look-back at transfers when someone applies for nursing-home Medicaid (42 U.S.C. 1396p(c)), and Illinois uses it. Moving a house or an account to a child in a hurry can cause a penalty period. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning) and the [look-back date calculator](/tools/medicaid-lookback-date).
 
 If this is you, you are not behind. You are doing a hard job with partial paperwork.
 

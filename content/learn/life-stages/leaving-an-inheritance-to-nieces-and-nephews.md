@@ -1,32 +1,32 @@
 ---
 title: "Leaving an inheritance to nieces and nephews: how to do it and what it costs"
-description: "How to leave money to your nieces and nephews without children of your own: naming them, equal shares, minors, and New Jersey inheritance tax at 15% to 16%."
-updated: "2026-10-26"
+description: "How to leave money to your nieces and nephews without children of your own: naming them, equal shares, minors, and when Illinois estate tax applies."
+updated: "2026-11-26"
 answer: >-
-  Yes, you can leave anything to nieces and nephews, but you must name them in a will, trust or beneficiary form, because the default rules reach them only when no spouse, child or parent survives. Name each by full name, decide on equal or unequal shares, and plan for minors. New Jersey taxes the gift at 15% to 16%. Illinois has no inheritance tax.
+  Yes, you can leave anything to nieces and nephews, but you must name them in a will, trust or beneficiary form, because the default rules reach them only when no spouse, child or parent survives. Name each by full name, decide on equal or unequal shares, and plan for minors. Illinois has no inheritance tax, though an estate over $4 million can owe Illinois estate tax.
 takeaways:
   - "Nieces and nephews inherit by default only when you have no spouse, children or parents, and then they share with other siblings' lines."
   - "Name each niece and nephew, or define the group carefully, because 'my nieces and nephews' can include people you never meant."
   - "Decide in advance what happens if a niece dies before you, and whether her children step into her share."
-  - "In New Jersey, nieces and nephews are Class D beneficiaries and pay 15% on the first $700,000 and 16% above."
-  - "Life insurance paid to a named beneficiary can pass to a niece without New Jersey inheritance tax."
+  - "In Illinois, a gift to a niece or nephew who dies before you falls into the residue unless your will names a substitute."
+  - "Illinois has no inheritance tax. An estate worth more than $4 million can owe Illinois estate tax, and gifts to nieces get no marital deduction."
 faqs:
   - q: "Can I leave money to my niece and not my other niece?"
     a: "Yes. Unless you have a spouse with statutory rights, no one is owed anything from you. The cleaner your documents are about the reason, the less likely a left-out relative is to challenge it. A short, kind sentence in a letter next to the will often helps."
   - q: "What if my nephew dies before I do?"
-    a: "Your documents should say. Without direction, the gift may lapse and fall into the residue, or state law may send it to his children. The safest wording names a substitute: 'to my nephew Marcus, or if he does not survive me, to his children in equal shares.'"
+    a: "Your documents should say. Without direction, the gift may lapse. In Illinois, the anti-lapse rule protects gifts to your own descendants, not to a nephew, so his gift generally falls into the residue. The safest wording names a substitute: 'to my nephew Marcus, or if he does not survive me, to his children in equal shares.'"
   - q: "Do my nieces and nephews inherit if I die without a will and have no children?"
-    a: "Only if no spouse, children or parents survive you. In Illinois and New Jersey, siblings and the children of deceased siblings come next. If your sister is alive, she takes her line's share and her children get nothing directly."
+    a: "Only if no spouse, children or parents survive you. In Illinois, siblings and the children of deceased siblings come next. If your sister is alive, she takes her line's share and her children get nothing directly."
   - q: "How do I leave money to a niece who is still a child?"
-    a: "Not outright. Use a trust or a custodian under your state's UTMA, so the money is managed until the age you choose. In both Illinois and New Jersey, a custodianship under a will or trust ends at 21 unless you set a different age."
+    a: "Not outright. Use a trust or a custodian under your state's UTMA, so the money is managed until the age you choose. In Illinois, a custodianship created by a will or trust ends at 21. If you want a later age, use a trust."
   - q: "Can I give money to my nieces and nephews while I'm alive instead?"
-    a: "Yes. You can give up to $19,000 per recipient in 2026 without filing a federal gift tax return. New Jersey can pull gifts made shortly before death into the inheritance tax, so ask about the timing before you rely on this."
+    a: "Yes. You can give up to $19,000 per recipient in 2026 without filing a federal gift tax return. Gifts within that amount leave your estate completely. Larger gifts are added back when Illinois tests your estate against its $4 million threshold."
 related:
   - "life-stages/estate-planning-for-couples-without-children"
   - "life-stages/estate-planning-for-single-people"
-  - "new-jersey/new-jersey-inheritance-tax"
+  - "illinois/nieces-nephews-and-cousins-inheritance-in-illinois"
   - "illinois/who-inherits-without-a-will-in-illinois"
-  - "new-jersey/who-inherits-without-a-will-in-new-jersey"
+  - "illinois/illinois-estate-tax"
   - "beneficiary-designations/naming-a-minor-incapacitated-or-benefits-recipient-as-beneficiary"
   - "wills/lapsed-gifts-and-simultaneous-death"
 glossary: ["per-stirpes", "per-capita", "inheritance-tax", "heir", "bequest", "utma", "residuary-estate"]
@@ -36,13 +36,13 @@ intent: situation
 
 If you have no children, the people you probably want to look after are your sister's kids, your brother's boy, the niece who calls every Sunday. The law does not assume that. It starts with a spouse, then children, then parents, and only then reaches your siblings and their families. A niece might inherit by default, but only after several others have been ruled out.
 
-This page covers how to leave money to nieces and nephews on purpose: what to write, how to split it, how to handle minors, and what it costs in New Jersey. It sits within our [life stages guide](/learn/life-stages).
+This page covers how to leave money to nieces and nephews on purpose: what to write, how to split it, how to handle minors, and when Illinois estate tax comes into it. It sits within our [life stages guide](/learn/life-stages).
 
 ## Can I leave money to my nieces and nephews?
 
 Yes, with a will, trust or beneficiary form. There is no limit on what you may give, and no one in your family can stop you, subject to a surviving spouse's statutory share. Many people with no children use a trust or will to benefit nieces and nephews, a favorite charity or both. The mistake is leaving it to the default.
 
-Here is the default. In Illinois, if you die without a will, with no spouse and no descendants, the estate goes to your parents, brothers and sisters together, and the descendants of a deceased sibling take that sibling's share (755 ILCS 5/2-1). Our guides to [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) and [in New Jersey](/learn/new-jersey/who-inherits-without-a-will-in-new-jersey) lay out the order. If your sister is alive, her children get nothing. If she has died, her children share her portion.
+Here is the default. In Illinois, if you die without a will, with no spouse and no descendants, the estate goes to your parents, brothers and sisters together, and the descendants of a deceased sibling take that sibling's share (755 ILCS 5/2-1). Our guides to [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) and [when nieces, nephews and cousins inherit in Illinois](/learn/illinois/nieces-nephews-and-cousins-inheritance-in-illinois) lay out the order. If your sister is alive, her children get nothing. If she has died, her children share her portion.
 
 ## How should I name nieces and nephews in a will?
 
@@ -63,26 +63,28 @@ Each is legitimate. Only the second and third leave you in control of who gets w
 
 ## What if a niece or nephew dies before me?
 
-The gift can fail. A person who dies before you cannot receive anything, and what happens to their share depends on your wording and on state anti-lapse rules, which differ in how far they protect relatives. Do not leave this to a statute. Say who steps in, using phrases like "or if he does not survive me, to his children in equal shares." Our article on [lapsed gifts and simultaneous death](/learn/wills/lapsed-gifts-and-simultaneous-death) explains the traps.
+The gift can fail. A person who dies before you cannot receive anything, and what happens to their share depends on your wording and on state anti-lapse rules, which differ in how far they protect relatives. Illinois law is narrow here. Under section 4-11 of the Probate Act, a gift to a descendant who dies first passes to that person's descendants, but other lapsed gifts fall into the residue. A niece is not your descendant, so the statute does not save her share for her children. Do not leave this to a statute. Say who steps in, using phrases like "or if he does not survive me, to his children in equal shares." Our article on [lapsed gifts and simultaneous death](/learn/wills/lapsed-gifts-and-simultaneous-death) explains the traps.
 
 Also consider that a nephew may have been the one who looked after you. Fairness is a question for you, not the statute. Some uncles and aunts leave a larger share to the nephew who drove them to appointments for years, and add a line to the will saying so. A short explanation protects the gift.
 
 ## How do I leave money to a niece or nephew who is a minor?
 
-Use a trust or a custodian. If you leave a share outright to a child under 18, the court appoints a guardian of the estate and the child gets everything at 18. Neither is what most aunts and uncles want. A custodian under the UTMA holds the money until 21 in both states, covered in our Illinois and New Jersey guides on [UTMA accounts](/learn/illinois/illinois-utma-accounts-and-gifts-to-minors). A trust lets you pick the age and the rules.
+Use a trust or a custodian. If you leave a share outright to a child under 18, the court appoints a guardian of the estate and the child gets everything at 18. Neither is what most aunts and uncles want. A custodian under the Illinois UTMA must turn the money over at 21, as our guide to [Illinois UTMA accounts](/learn/illinois/illinois-utma-accounts-and-gifts-to-minors) explains. A trust lets you pick the age and the rules.
 
 For a niece with a disability who receives public benefits, an outright gift can end her benefits. Read about [leaving an inheritance to a disabled child or sibling](/learn/special-needs/leaving-an-inheritance-to-a-disabled-child-or-sibling) before you finalize a plan.
 
 ## Do nieces and nephews pay tax on what they inherit?
 
-In Illinois, no inheritance tax applies, though a large estate can owe Illinois estate tax. See [Illinois estate tax](/learn/illinois/illinois-estate-tax). In New Jersey, yes. Nieces and nephews are Class D beneficiaries, who pay 15% on the first $700,000 and 16% above that. Our [New Jersey inheritance tax guide](/learn/new-jersey/new-jersey-inheritance-tax) gives the full class chart.
+Not in Illinois. Illinois has no inheritance tax, so a niece pays no state tax on what she receives. The tax that can apply is the Illinois estate tax, which is figured on the whole estate before anything is handed out. An estate worth more than $4 million, counting certain lifetime gifts, must file an Illinois return, and the tax is due nine months after death. See [Illinois estate tax](/learn/illinois/illinois-estate-tax).
 
-Here is the cost. You leave $100,000 to each of two nieces. Each pays $15,000, so the total tax is $30,000, and the tax return is due eight months after your death. If the will does not say who pays, the nieces may each bear their own tax. If you want them to receive the full amount, say so and set the tax aside from the residue. That lowers what goes to others.
+A gift to a spouse can generally be deducted. A gift to a niece or nephew cannot, so it counts in full toward the $4 million. The federal exclusion is much higher, at $15,000,000 per person in 2026.
+
+Here is how that plays out. Margaret's $600,000 estate in the example above is far below both thresholds, so her nieces and nephews receive the full amounts. Now picture an aunt with a $4.5 million estate. Her estate files an Illinois return and pays tax before the shares are paid. If you want specific gifts to nieces to arrive in full, the will can say the tax comes out of the residue. That lowers what goes to others.
 
 Two ways to reduce the bite:
 
-1. **Life insurance or other named beneficiary assets.** Life insurance paid to a named beneficiary is exempt from New Jersey inheritance tax, so a policy payable to a niece passes without it.
-2. **Gifts during life.** The federal annual exclusion is $19,000 per recipient in 2026. New Jersey can tax gifts made within about three years of death, so ask about the timing rules before relying on this.
+1. **Life insurance ownership.** A life insurance death benefit counts in your Illinois taxable estate if you own the policy or keep any control over it, even though it is paid outside probate. A policy owned by someone else, or by a properly built irrevocable trust, stays out. See [life insurance and the Illinois estate tax](/learn/illinois/life-insurance-and-the-illinois-estate-tax).
+2. **Gifts during life.** The federal annual exclusion is $19,000 per recipient in 2026. Gifts within that amount leave your estate completely. Larger gifts are added back as adjusted taxable gifts when Illinois tests the estate, so they help mainly by moving future growth out. Our page on [lifetime gifts and the Illinois estate tax](/learn/illinois/lifetime-gifts-and-the-illinois-estate-tax) explains the rule.
 
 <!-- visual: tool slug=who-inherits -->
 
@@ -90,7 +92,7 @@ Two ways to reduce the bite:
 
 The common one is assuming the family will sort it out. A widowed uncle tells everyone the house is going to "the kids," meaning his three nieces and nephews, and never signs anything. The default rules then send the house to his surviving sister, who is 80, and her own plan sends it somewhere else. Another is naming one niece as executor without telling the others how the estate will be split, which breeds suspicion before the first bill is paid.
 
-A third is forgetting the beneficiary forms. If your IRA still names a late spouse, it goes to your estate and then through the will, which can add months and, in New Jersey, a different tax result. Check each form against the will. Our [beneficiary audit tool](/tools/beneficiary-audit) walks through it in about ten minutes.
+A third is forgetting the beneficiary forms. If your IRA still names a late spouse, it goes to your estate and then through the will, which can add months to the process. Check each form against the will. Our [beneficiary audit tool](/tools/beneficiary-audit) walks through it in about ten minutes.
 
 ## What documents should an aunt or uncle without children sign?
 

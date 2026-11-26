@@ -1,7 +1,7 @@
 ---
 title: "Can a power of attorney open or close bank accounts and pay a parent's mortgage?"
-description: "Can a power of attorney open or close a bank account or pay a parent's mortgage? What an agent may do, what banks ask for, and the limits in IL and NJ."
-updated: "2026-10-26"
+description: "Can a power of attorney open or close a bank account or pay a parent's mortgage? What an agent may do, what banks ask for, and the limits under Illinois law."
+updated: "2026-11-26"
 answer: >-
   Yes, if the document grants banking powers, which a general financial power of attorney normally does. An agent can open, use and close accounts in the principal's name, pay a mortgage and handle bills, but must keep the principal's money separate and cannot change beneficiaries or add joint owners unless the document says so. Banks may still review the document before they act.
 takeaways:
@@ -39,7 +39,7 @@ Mostly yes. But banks, lenders and the law each add rules about how it is done, 
 
 ## Can a power of attorney open or close a bank account?
 
-Yes, when the document gives banking powers. Illinois's statutory form for property and a typical New Jersey durable power both cover banking, so opening, using and closing accounts is within the agent's job. Check the power list in your copy. If the form is a limited one for a single purpose, such as one real estate closing, banking may not be included.
+Yes, when the document gives banking powers. Illinois's statutory form for property covers banking, so opening, using and closing accounts is within the agent's job. Check the power list in your copy. If the form is a limited one for a single purpose, such as one real estate closing, banking may not be included.
 
 What the agent should do is open any new account in the principal's name only. The signature line reads something like "Dolores Reyes, by Paul Reyes, her agent." The social security number on the account is Dolores's. The money is hers. It is never part of Paul's finances, and Paul's own creditors, divorce or death cannot reach it if the paperwork is clean.
 
@@ -54,7 +54,7 @@ Each bank has its own intake process, and most want the same four things.
 3. A signature card for the agent as agent.
 4. For some banks, a letter or internal form confirming the principal is alive and the document is in force.
 
-New Jersey law lets a third party rely on a photocopy or certified copy of the signed original (N.J.S.A. 46:2B-8.11) and keep relying on it until the bank has actual notice of revocation or death. Illinois statute gives similar comfort to those who accept the form in good faith. Even so, some banks insist on their own form. When one refuses, our article on [what to do when a bank refuses a power of attorney](/learn/power-of-attorney/bank-refuses-power-of-attorney) gives the escalation path, including how to ask for the refusal in writing.
+The Illinois Act protects third parties who rely on the form in good faith, which is meant to make banks comfortable accepting it. Practice still varies by bank. Bring the original or a certified copy, and offer to send a copy ahead. Even so, some banks insist on their own form. When one refuses, our article on [what to do when a bank refuses a power of attorney](/learn/power-of-attorney/bank-refuses-power-of-attorney) gives the escalation path, including how to ask for the refusal in writing.
 
 <!-- visual: whatif id=power-of-attorney-agent-unavailable -->
 
@@ -106,11 +106,11 @@ If siblings are likely to ask questions, send a short summary every quarter. It 
 
 The agent's authority ends. The bank may freeze the account as soon as it learns of the death. The executor named in the will, or the court-appointed administrator, takes over the probate accounts, while accounts with a named beneficiary pass directly. Our piece on [what happens to a deceased person's bank account](/learn/probate/what-happens-to-a-deceased-persons-bank-account) walks through who can access what.
 
-If you have already used the power of attorney after death, even for a bill, stop and talk to an attorney. In New Jersey a third party who acts without notice is protected, but an agent who knew of the death is not.
+If you have already used the power of attorney after death, even for a bill, stop and talk to an attorney. After death, the agent cannot sign a check, withdraw cash or call the broker. The agent must also keep records and give a copy on request to the personal representative after death (755 ILCS 45/2-7).
 
 ## How state law changes this
 
-Illinois and New Jersey both let the principal say how much the agent may do, and both hold the agent to a fiduciary standard. Illinois offers a statutory short form with a standard power list. New Jersey's Revised Durable Power of Attorney Act leaves more to the document's own words, so a vague form can give a bank reason to hesitate. Our [Illinois](/estate-planning/illinois) guide covers the state we serve.
+Illinois lets the principal say how much the agent may do, and holds the agent to a fiduciary standard. Illinois offers a statutory short form with a standard power list. A custom document that leaves more to its own words can give a bank reason to hesitate if the wording is vague. Other states draft these documents differently, so a form signed elsewhere is worth a review. Our [Illinois](/estate-planning/illinois) guide covers the state we serve.
 
 ## How we can help
 

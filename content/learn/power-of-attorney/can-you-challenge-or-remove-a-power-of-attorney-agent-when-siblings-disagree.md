@@ -1,7 +1,7 @@
 ---
 title: "Can you challenge or remove a power of attorney agent? When siblings disagree"
 description: "Siblings fighting over a parent's agent have real options: ask for records, mediate, or petition a court to review or remove the agent. Try them in this order."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Yes. A principal with capacity can revoke at any time. If the principal cannot, a family member or other interested person can usually ask a court to review the agent's actions, order an accounting, or remove the agent for misconduct or incapacity. Disagreement alone is rarely enough. The court looks for a breach of duty or a document that is invalid.
 takeaways:
@@ -127,7 +127,7 @@ Our article on [choosing an agent](/learn/power-of-attorney/choosing-a-power-of-
 
 ## How state law changes this
 
-Removal procedures, who has standing, how long you have to bring a claim and whether the principal's relatives can demand an accounting all vary. Some states give courts broad authority to review powers of attorney. Others limit petitions to specific people. A local attorney can tell you what the court in your county expects. Our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides cover the rules in those two states.
+Removal procedures, who has standing, how long you have to bring a claim and whether the principal's relatives can demand an accounting all vary. Some states give courts broad authority to review powers of attorney. Others limit petitions to specific people. A local attorney can tell you what the court in your county expects. Our [Illinois guide](/estate-planning/illinois) covers the rules here.
 
 ## How we can help
 

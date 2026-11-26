@@ -1,7 +1,7 @@
 ---
 title: "How to word a beneficiary form for a trust, a charity or a beneficiary overseas"
 description: "Exact naming matters on a beneficiary form. See how to word a trust, one or several charities, and a relative abroad, with examples and common delays."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Name a trust by its full title, date and trustee, name a charity by its legal name and tax ID with a percentage, and name an overseas person by full legal name, relationship and a reliable address. Vague wording such as "my family trust" or "the animal shelter" invites delay, because the institution must match your words to a real entity.
 takeaways:
@@ -114,7 +114,7 @@ If your beneficiary is a non-citizen in the United States, or you are, the rules
 
 ## How state law changes this
 
-Banks and brokers apply state law to POD and TOD accounts, and the rules on trusts, charities and non-resident beneficiaries differ in small ways. Some states require a certain form of notice, and some set time limits for a trustee to prove the trust. For Illinois and New Jersey, our guide to [Illinois payable-on-death and joint bank accounts](/learn/illinois/illinois-payable-on-death-and-joint-bank-accounts) and the one on [transfer on death options in New Jersey](/learn/new-jersey/transfer-on-death-options-in-new-jersey) describe how each state treats these accounts.
+Banks and brokers apply state law to POD and TOD accounts, and the rules on trusts, charities and non-resident beneficiaries differ in small ways. Some states require a certain form of notice, and some set time limits for a trustee to prove the trust. For Illinois, our guides to [Illinois payable-on-death and joint bank accounts](/learn/illinois/illinois-payable-on-death-and-joint-bank-accounts) and [transfer on death brokerage accounts in Illinois](/learn/illinois/transfer-on-death-brokerage-accounts-in-illinois) describe how these accounts are treated.
 
 ## How we can help
 

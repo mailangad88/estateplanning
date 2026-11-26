@@ -1,7 +1,7 @@
 ---
 title: "Can you have more than one trust? When separate trusts make sense"
 description: "Yes, you can have several trusts at once. See when a second trust helps, such as for life insurance, a vacation home or each child, and when it just adds cost."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Yes, there is no legal limit on how many trusts one person can create. Most households need only one revocable living trust that divides into separate shares at death. A second trust earns its place when it has a different purpose, such as holding life insurance outside your taxable estate, protecting a vacation home, or managing a child's inheritance under different rules.
 takeaways:
@@ -114,7 +114,7 @@ Neglect is the real cost. An irrevocable trust that never received its policy, o
 
 ## How state law changes this
 
-States differ on whether a trust holding land is respected, on how long a trust can last and on creditor protection. A few states have their own estate or inheritance taxes at lower thresholds, which can make a tax-driven trust relevant earlier. Check our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides and ask an attorney licensed where you live.
+States differ on whether a trust holding land is respected, on how long a trust can last and on creditor protection. Illinois has its own estate tax, which applies to estates above $4 million, so a tax-driven trust can become relevant well below the federal exclusion. Check our [Illinois guide](/estate-planning/illinois) and the page on the [Illinois estate tax](/learn/illinois/illinois-estate-tax), and ask an Illinois attorney how these rules apply to you.
 
 ## How we can help
 

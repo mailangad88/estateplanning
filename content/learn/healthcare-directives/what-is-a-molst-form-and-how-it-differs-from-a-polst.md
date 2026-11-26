@@ -1,13 +1,13 @@
 ---
-title: "What is a MOLST form? How it differs from a POLST and what Illinois and New Jersey use"
-description: "What is a MOLST form? It is a POLST-type medical order under another name. See how it differs, what Illinois and New Jersey use, and what to do if you move."
-updated: "2026-10-26"
+title: "What is a MOLST form? How it differs from a POLST and what Illinois uses"
+description: "What is a MOLST form? It is a POLST-type medical order under another name. See how it differs, what Illinois uses, and what to do if you move to Illinois."
+updated: "2026-11-26"
 answer: >-
-  A MOLST (Medical Orders for Life-Sustaining Treatment) is a portable medical order signed by a clinician and a seriously ill patient that records choices about CPR, hospital transfer and other treatment. It is the same idea as a POLST under a different state name. Illinois and New Jersey both call their version a POLST, so a MOLST is not a separate Illinois or New Jersey form.
+  A MOLST (Medical Orders for Life-Sustaining Treatment) is a portable medical order signed by a clinician and a seriously ill patient that records choices about CPR, hospital transfer and other treatment. It is the same idea as a POLST under a different state name. Illinois calls its version a POLST, so a MOLST is not a separate Illinois form.
 takeaways:
   - "MOLST and POLST describe the same kind of document: a medical order, not an advance directive."
   - "Which acronym applies depends on state law and the state health department that issues the form."
-  - "Illinois and New Jersey use POLST, so a MOLST from another state is a form to bring to your doctor, not to ignore."
+  - "Illinois uses POLST, so a MOLST from another state is a form to bring to your doctor, not to ignore."
   - "A medical order is only as current as your last conversation with your clinician, so review it after any hospital stay."
   - "None of these forms names a decision-maker; that still takes a healthcare power of attorney."
 faqs:
@@ -27,15 +27,14 @@ related:
   - "healthcare-directives/do-advance-directives-work-in-other-states"
   - "healthcare-directives/palliative-care-hospice-and-comfort-care-orders"
   - "illinois/illinois-polst-and-dnr-orders"
-  - "new-jersey/new-jersey-polst-form-who-qualifies-who-signs-and-how-it-works"
 glossary: ["polst", "dnr", "advance-directive", "healthcare-proxy", "living-will", "incapacity"]
 review: pending
 intent: question
 ---
 
-If a hospital social worker handed you a MOLST and you live in Illinois or New Jersey, you may be wondering why the form uses a name your state does not. Or you may have a parent in New York who has one, and now they are moving near you.
+If a hospital social worker handed you a MOLST and you live in Illinois, you may be wondering why the form uses a name Illinois does not. Or you may have a parent in New York who has one, and now they are moving near you.
 
-The short answer is that MOLST and POLST are two names for one tool. This page explains how the names differ, what Illinois and New Jersey actually use, and what to do with a form from somewhere else. It is general education, not legal advice.
+The short answer is that MOLST and POLST are two names for one tool. This page explains how the names differ, what Illinois actually uses, and what to do with a form from somewhere else. It is general education, not legal advice.
 
 ## What does MOLST stand for, and what is the form?
 
@@ -49,7 +48,7 @@ Mostly in the name and the paperwork. The version below is simplified, because f
 
 | Name | What it stands for | Where you might see it |
 |---|---|---|
-| POLST | Physician (or Provider) Orders for Life-Sustaining Treatment | Illinois, New Jersey and many other states |
+| POLST | Physician (or Provider) Orders for Life-Sustaining Treatment | Illinois and many other states |
 | MOLST | Medical Orders for Life-Sustaining Treatment | A smaller group, including New York, Massachusetts and Maryland |
 | POST or MOST | Physician Orders for Scope of Treatment; Medical Orders for Scope of Treatment | A few states with their own naming |
 
@@ -64,11 +63,11 @@ None of these differences changes the main point: the form comes out of a medica
 
 <!-- visual: whatif id=end-of-life-wishes-unknown -->
 
-## What do Illinois and New Jersey use?
+## What does Illinois use?
 
-Both use POLST. In Illinois, the state health department publishes the POLST form, and hospitals, long-term care facilities and emergency crews must honor a qualifying form that is apparent and immediately available. Our article on [Illinois POLST and DNR orders](/learn/illinois/illinois-polst-and-dnr-orders) covers the signing rules. In New Jersey, the form comes from the Physician Orders for Life-Sustaining Treatment Act, and a clinician and either the patient or a representative must sign it. See [New Jersey POLST: who qualifies and who signs](/learn/new-jersey/new-jersey-polst-form-who-qualifies-who-signs-and-how-it-works).
+Illinois uses POLST. In Illinois, the state health department publishes the POLST form, and hospitals, long-term care facilities and emergency crews must honor a qualifying form that is apparent and immediately available. Our article on [Illinois POLST and DNR orders](/learn/illinois/illinois-polst-and-dnr-orders) covers the signing rules.
 
-So there is no MOLST form to request in either state. If someone offers you one, ask whether they mean the state's POLST.
+So there is no MOLST form to request in Illinois. If someone offers you one, ask whether they mean the state's POLST.
 
 ## What if I already have a MOLST from another state?
 

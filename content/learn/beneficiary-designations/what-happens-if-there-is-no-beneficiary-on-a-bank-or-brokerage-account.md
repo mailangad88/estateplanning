@@ -1,7 +1,7 @@
 ---
 title: "What happens if there is no beneficiary on a bank or brokerage account?"
-description: "With no beneficiary on a bank or brokerage account, the money usually goes to your estate and through probate. See Illinois and New Jersey rules and the fix."
-updated: "2026-10-26"
+description: "With no beneficiary on a bank or brokerage account, the money usually goes to your estate and through probate. See the Illinois rules and the fix."
+updated: "2026-11-26"
 answer: >-
   If a bank or brokerage account has no beneficiary and no co-owner, the balance becomes part of the owner's probate estate. An executor must be appointed, creditors can be paid from it, and it passes under the will or, with no will, under state law. Adding a payable-on-death (POD) or transfer-on-death (TOD) beneficiary avoids this, and it usually takes one form.
 takeaways:
@@ -30,7 +30,7 @@ related:
   - "beneficiary-designations/contingent-beneficiaries"
   - "probate/probate-vs-non-probate-assets"
   - "illinois/illinois-payable-on-death-and-joint-bank-accounts"
-  - "new-jersey/transfer-on-death-options-in-new-jersey"
+  - "illinois/transfer-on-death-brokerage-accounts-in-illinois"
 glossary: ["payable-on-death", "transfer-on-death", "probate", "probate-estate", "beneficiary", "contingent-beneficiary", "small-estate-affidavit"]
 review: pending
 intent: question
@@ -50,7 +50,7 @@ Once the executor has letters, the executor collects the balance, pays valid deb
 
 The result is the same. A brokerage account with no TOD registration is a probate asset. The firm will not retitle the shares or sell them for the family until the executor presents letters and a death certificate. The market keeps moving in the meantime, so a family that waits months for letters can watch an account rise or fall with no one able to act.
 
-TOD stands for transfer on death. It is how a brokerage lets you register securities in beneficiary form. New Jersey adopted the Uniform TOD Security Registration Act (N.J.S.A. 3B:30-5), and Illinois allows the same kind of registration. Ask your broker for the TOD form, which is usually a one-page document.
+TOD stands for transfer on death. It is how a brokerage lets you register securities in beneficiary form. Illinois adopted the Uniform TOD Security Registration Act (815 ILCS 10), and the firm's account agreement sets the details. Ask your broker for the TOD form, which is usually a one-page document.
 
 ## When does a bank or brokerage account not need a beneficiary?
 
@@ -71,11 +71,11 @@ A joint account solves some problems and creates others, such as exposure to the
 
 ## Can the family skip probate if the account is small?
 
-Sometimes. Both Illinois and New Jersey have small-estate shortcuts, but they are narrow.
+Sometimes. Illinois has a small-estate shortcut, but it is narrow.
 
 Illinois allows a small estate affidavit when the estate's personal property is under $150,000, with registered motor vehicles not counted, under 755 ILCS 5/25-1. The affidavit goes to the bank or broker, who must pay or deliver the property to the person named. Walt's two accounts total $202,000, which is over the limit, so his children could not use it. See the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit).
 
-New Jersey's rule applies to intestate estates, meaning no will. A surviving spouse or partner can use an affidavit for estates of $50,000 or less (N.J.S.A. 3B:10-3), and heirs can use it for $20,000 or less if there is no spouse or partner (N.J.S.A. 3B:10-4). If the person left a will, the process differs. See [the New Jersey small estate affidavit](/learn/new-jersey/new-jersey-small-estate-affidavit).
+The affidavit never reaches real estate, so a house in the dead owner's sole name still needs a probate case or another transfer method. The person who signs it must pay valid debts first and can be personally liable to creditors and other heirs if the affidavit is wrong. Our article on [who signs an Illinois small estate affidavit](/learn/illinois/who-signs-an-illinois-small-estate-affidavit) explains that role, and [using an Illinois small estate affidavit at a bank](/learn/illinois/using-an-illinois-small-estate-affidavit-at-a-bank) covers what the bank will ask for.
 
 The lesson from Walt's numbers is simple. A small account might qualify for a shortcut. A larger one almost certainly will not.
 
@@ -105,7 +105,7 @@ Walt does this in an afternoon. He names his three children equally, with the gr
 
 ## How state law changes this
 
-Illinois governs bank beneficiaries under the Trust and Payable on Death Accounts Act, and the statute sends proceeds to the last holder's estate if no beneficiary survives. New Jersey treats POD accounts through banking rules and TOD securities through its Uniform TOD Security Registration Act. Our pages on [Illinois POD and joint accounts](/learn/illinois/illinois-payable-on-death-and-joint-bank-accounts) and [transfer on death options in New Jersey](/learn/new-jersey/transfer-on-death-options-in-new-jersey) have the details. The broader comparison with other probate-avoidance steps is in [probate vs. non-probate assets](/learn/probate/probate-vs-non-probate-assets).
+Illinois governs bank beneficiaries under the Trust and Payable on Death Accounts Act, and the statute sends proceeds to the last holder's estate if no beneficiary survives. Brokerage TOD registrations fall under the Illinois Uniform TOD Security Registration Act (815 ILCS 10). Our pages on [Illinois POD and joint accounts](/learn/illinois/illinois-payable-on-death-and-joint-bank-accounts) and [transfer on death brokerage accounts in Illinois](/learn/illinois/transfer-on-death-brokerage-accounts-in-illinois) have the details. The broader comparison with other probate-avoidance steps is in [probate vs. non-probate assets](/learn/probate/probate-vs-non-probate-assets).
 
 For retirement accounts and life insurance, the plan's own default order applies instead; see [what happens if you never named a beneficiary on a 401(k), IRA or life insurance policy](/learn/what-if/no-beneficiary-named).
 

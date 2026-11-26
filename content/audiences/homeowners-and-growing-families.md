@@ -28,9 +28,9 @@ related:
   - pre-retirees
 faqs:
   - q: "Do we need a living trust because we own a house?"
-    a: "Not automatically. A trust can avoid probate on the house, keep your affairs private and let a successor manage things if you are incapacitated. In New Jersey, probate of a will usually starts with a visit to the county Surrogate and is often fairly simple. In Illinois, an estate with real estate or more than $150,000 generally needs a circuit court case. An attorney should tell you plainly if a will is enough."
+    a: "Not automatically. A trust can avoid probate on the house, keep your affairs private and let a successor manage things if you are incapacitated. In Illinois, an estate with real estate or more than $150,000 generally needs a circuit court case. An attorney should tell you plainly if a will is enough."
   - q: "What is wrong with naming my kids as life insurance beneficiaries?"
-    a: "A minor cannot collect the money directly. A court may set up a supervised account, and the child may receive everything at 18 or 21. Naming a trust, or a custodian under your state's UTMA, lets someone you chose manage it. In Illinois and New Jersey, a UTMA account generally ends at 21. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors)."
+    a: "A minor cannot collect the money directly. A court may set up a supervised account, and the child may receive everything at 18 or 21. Naming a trust, or a custodian under your state's UTMA, lets someone you chose manage it. In Illinois, a UTMA account generally ends at 21. See [leaving money to minors](/learn/guardianship/leaving-money-to-minors)."
   - q: "Can the guardian and the money manager be different people?"
     a: "Yes, and often they are. One person raises the children. A trustee pays for their needs and follows your instructions on timing. You can tell the trustee to pay the guardian's reasonable costs, including a larger home or a car."
   - q: "Our plan is ten years old. Does it still work?"
@@ -40,14 +40,14 @@ faqs:
   - q: "What does this cost?"
     a: "Fees are set by the attorney you are matched with, often as a flat fee for a family plan or a plan review. See [pricing](/pricing)."
 reviewed: false
-updated: "2026-10-06"
+updated: "2026-11-26"
 ---
 
 ## What is at stake
 
 - **No guardian named.** If both parents die, a judge picks who raises your children. Relatives may disagree. See the [guardianship guide](/guides/guardianship-for-minor-children).
 - **Insurance and retirement accounts that name a minor.** A policy that pays your child directly generally leads to a court-supervised account. Your plan can name a trust instead. See the [beneficiary designation audit](/checklists/beneficiary-designation-audit).
-- **Money that arrives all at once.** Many states release a minor's assets at 18 or 21. In Illinois and New Jersey, a court-held account ends at 18 and a UTMA account at 21. Most parents would rather have a trustee pay for school and housing and release the rest in stages.
+- **Money that arrives all at once.** Many states release a minor's assets at 18 or 21. In Illinois, a court-held account ends at 18 and a UTMA account at 21. Most parents would rather have a trustee pay for school and housing and release the rest in stages.
 - **A house titled the wrong way.** A deed in one name, or joint with a parent or sibling, can send the home somewhere you did not intend. See [should I put my house in a trust](/blog/should-i-put-my-house-in-a-trust).
 - **An old plan.** Documents from before a second child, a move or a job change may name people who no longer fit. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan).
 

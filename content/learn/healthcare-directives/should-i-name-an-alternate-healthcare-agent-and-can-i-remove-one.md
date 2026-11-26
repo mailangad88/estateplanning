@@ -1,7 +1,7 @@
 ---
 title: "Should I name an alternate healthcare agent? Backups, and how to remove an agent you named"
-description: "Should you name an alternate healthcare agent? Yes. See how a backup steps in, what to write, and how to remove or replace an agent in Illinois and New Jersey."
-updated: "2026-10-26"
+description: "Should you name an alternate healthcare agent? Yes. See how a backup steps in, what to write, and how to remove or replace an agent in Illinois."
+updated: "2026-11-26"
 answer: >-
   Yes, name at least one alternate healthcare agent. The alternate acts only if your first choice cannot be reached, will not serve, has died, or is disqualified, so a single missing person does not leave the decision to the hospital's default list. You can remove an agent at any time while you have capacity by revoking the form and signing a new one.
 takeaways:
@@ -20,7 +20,7 @@ faqs:
   - q: "Do I have to tell my agent I am removing them?"
     a: "You should, and the revocation is cleaner if you do. The law lets you revoke without their consent, but doctors and the agent should hear it from you and receive the new form so the old one is not used by mistake."
   - q: "Does a divorce remove my spouse as healthcare agent?"
-    a: "In many states, and for a spouse in New Jersey, divorce ends the spouse's role unless your document says otherwise. Do not rely on that. Replace the form and name someone new."
+    a: "In many states divorce ends a spouse's role unless your document says otherwise. In Illinois, the health care form is not something to leave to the divorce statute. Replace the form and name someone new."
 related:
   - "healthcare-directives"
   - "healthcare-directives/who-should-be-your-healthcare-agent"
@@ -43,7 +43,7 @@ You should have one, because a first choice fails more often than people expect.
 
 In Illinois that list is set by statute and runs from a guardian through spouse, adult child, parent and sibling to a close friend (see [who makes medical decisions in Illinois if you have no directive](/learn/illinois/illinois-health-care-surrogate-act-who-decides)). An alternate keeps the decision with someone you chose.
 
-The statutory Illinois form has space for successor agents, and New Jersey's directive allows you to name alternates as well. Our summaries of the [Illinois healthcare power of attorney](/learn/illinois/illinois-healthcare-power-of-attorney) and [New Jersey advance directives](/learn/new-jersey/new-jersey-advance-directives) show where on each form to write them.
+The statutory Illinois form has space for successor agents. Our summary of the [Illinois healthcare power of attorney](/learn/illinois/illinois-healthcare-power-of-attorney) shows where on the form to write them.
 
 ## When does the alternate take over?
 
@@ -69,11 +69,11 @@ Pick people the way you would pick for a role: who answers the phone, who can sa
 
 Before you sign, call each person. Tell them the order and show them the document. Ask whether they would carry out a refusal of treatment, because a person who cannot bear to do it is a poor choice even if you love them. Our article on [questions to answer before writing a living will](/learn/healthcare-directives/questions-to-answer-before-writing-a-living-will) helps you put your wishes into words they can use.
 
-One more point on eligibility. In Illinois your attending physician cannot serve as your agent, and a New Jersey agent cannot act as a witness. These limits apply to alternates too, so check each name. Our page on [who can be your healthcare agent](/learn/healthcare-directives/can-a-doctor-friend-or-nurse-be-your-healthcare-agent) lists them.
+One more point on eligibility. In Illinois your attending physician cannot serve as your agent, and your agent and successor agents cannot act as witnesses. These limits apply to alternates too, so check each name. Our page on [who can be your healthcare agent](/learn/healthcare-directives/can-a-doctor-friend-or-nurse-be-your-healthcare-agent) lists them.
 
 ## Can I remove my healthcare agent?
 
-Yes, as long as you have capacity. You do not need the agent's permission, a court order or a lawyer. Illinois lets you revoke a health care power of attorney by destroying it, signing a written revocation, or stating the revocation aloud in front of an adult witness (755 ILCS 45/4-6). New Jersey does not require a formal act either, but a clear signed replacement avoids doubt.
+Yes, as long as you have capacity. You do not need the agent's permission, a court order or a lawyer. Illinois lets you revoke a health care power of attorney by destroying it, signing a written revocation, or stating the revocation aloud in front of an adult witness (755 ILCS 45/4-6). Any of those works, but a clear signed replacement avoids doubt later.
 
 Revoking by itself is not enough. Follow this list.
 
@@ -93,7 +93,7 @@ Ruth, 72, named her brother Alan as agent and her friend Joan as alternate. Alan
 
 Then the agent stays unless a court acts. If you lack capacity, a revocation you attempt may be questioned, and someone else cannot revoke for you in the ordinary way. Family who believe the agent is ignoring your wishes, abusing the role or has a conflict can petition the court to limit the agent or appoint a guardian of the person. It is slow, public and expensive. That is the main reason to choose carefully and to sign a replacement early, when relationships change, rather than wait.
 
-Divorce is the clearest example. In New Jersey, divorce generally ends a spouse's role as healthcare representative unless the document says otherwise, and many states have a similar rule. Do not lean on it. Our article on [whether divorce cancels a power of attorney](/learn/power-of-attorney/does-divorce-cancel-a-power-of-attorney) explains the Illinois and New Jersey versions, and the health care form deserves the same attention as the financial one.
+Divorce is the clearest example. Many states end a spouse's role as healthcare agent on divorce unless the document says otherwise. Do not lean on it. Our article on [whether divorce cancels a power of attorney](/learn/power-of-attorney/does-divorce-cancel-a-power-of-attorney) explains the Illinois rule, and the health care form deserves the same attention as the financial one.
 
 ## What if the agent and my family disagree?
 

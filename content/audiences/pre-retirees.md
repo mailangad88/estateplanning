@@ -36,17 +36,17 @@ faqs:
   - q: "Should my adult children be my agents?"
     a: "Often, but not always. Consider who lives nearby, who is good with money, who stays calm, and whether siblings get along. You can name different people for money and for health decisions, and name backups."
   - q: "What about paying for long-term care?"
-    a: "Start with a conversation about what coverage you have, what you could pay yourself, and what Medicaid would require. Medicaid looks back 60 months at gifts and transfers (42 U.S.C. 1396p(c)), and Illinois and New Jersey both use that period. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning)."
+    a: "Start with a conversation about what coverage you have, what you could pay yourself, and what Medicaid would require. Medicaid looks back 60 months at gifts and transfers (42 U.S.C. 1396p(c)), and Illinois uses that period. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning)."
   - q: "What does a pre-retirement review cost?"
     a: "Fees are set by the attorney you are matched with, often as a flat fee for a plan review and updates. See [pricing](/pricing)."
 reviewed: false
-updated: "2026-10-06"
+updated: "2026-11-26"
 ---
 
 ## What is at stake
 
 - **Beneficiary forms that no longer match your life.** Retirement accounts often hold the largest share of what you own. A form naming a former spouse or a deceased parent can undo your plan. See the [beneficiary designation audit](/checklists/beneficiary-designation-audit).
-- **No power of attorney in place.** If you lose capacity without one, your family may need to ask a court to appoint a guardian. That is slower, public and expensive. In both Illinois and New Jersey it means a court case, a medical report and court oversight of the guardian. See [powers of attorney](/guides/powers-of-attorney).
+- **No power of attorney in place.** If you lose capacity without one, your family may need to ask a court to appoint a guardian. That is slower, public and expensive. In Illinois it means a court case, a medical report and court oversight of the guardian. See [powers of attorney](/guides/powers-of-attorney).
 - **A trust that was never funded.** If the deed and accounts were never retitled, the trust may be empty, and probate may follow anyway. See [funding your trust](/guides/funding-your-trust).
 - **Out-of-date names.** Your will may name your children as minors, a friend who moved away, or a brother who has died.
 - **Care you have not discussed.** A long-term care need can use up savings fast. Talking about it early gives you choices later. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).

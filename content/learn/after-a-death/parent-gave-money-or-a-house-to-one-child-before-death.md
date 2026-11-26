@@ -1,7 +1,7 @@
 ---
 title: "What if your parent gave money or a house to one child before dying?"
 description: "A parent's lifetime gift to one child is usually valid and can't be clawed back. See the exceptions, how to spot a bad transfer and what siblings can do."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A gift a parent made while competent and free of pressure is usually valid, and the other children cannot claim it back or force an equal split. A transfer can be undone if the parent lacked capacity, was pressured, or the gift came from someone misusing a power of attorney. A gift is also not automatically a loan or an advance unless the parent said so in writing.
 takeaways:
@@ -53,7 +53,7 @@ A parent with capacity is entitled to be generous to one child. The law presumes
 | Forgery or fraud | The signature, notary stamp or witness is not genuine | The executor |
 | Loan, not a gift | A note, an email, or a pattern of repayment showed the parent expected the money back | The executor, as a creditor claim |
 
-The common thread is proof. An executor in Illinois or New Jersey can sue to recover a defective transfer, and such lawsuits have their own deadlines, so talk to an attorney soon. For how a power of attorney agent fits in, see [can a power of attorney make gifts](/learn/power-of-attorney/can-a-power-of-attorney-make-gifts) and [power of attorney abuse](/learn/power-of-attorney/power-of-attorney-abuse).
+The common thread is proof. An Illinois executor can sue to recover a defective transfer, and such lawsuits have their own deadlines, so talk to an attorney soon. For how a power of attorney agent fits in, see [can a power of attorney make gifts](/learn/power-of-attorney/can-a-power-of-attorney-make-gifts) and [power of attorney abuse](/learn/power-of-attorney/power-of-attorney-abuse).
 
 <!-- visual: whatif id=family-dispute -->
 
@@ -90,7 +90,7 @@ Siblings who stay out of court usually spend less and speak to each other afterw
 
 ## How state law changes this
 
-States differ on how advancements are proved, how long fraud and undue influence claims can be brought, how a joint account is presumed to be owned, and whether an agent under a power of attorney may make gifts without express authority. Illinois and New Jersey each have statutes on powers of attorney that limit gifts by an agent. Check your state guide, [Illinois](/estate-planning/illinois) or [New Jersey](/estate-planning/new-jersey), and ask an attorney about the deadlines that apply.
+States differ on how advancements are proved, how long fraud and undue influence claims can be brought, how a joint account is presumed to be owned, and whether an agent under a power of attorney may make gifts without express authority. Illinois has a power of attorney statute that limits gifts by an agent. Check the [Illinois estate planning guide](/estate-planning/illinois), and ask an attorney about the deadlines that apply.
 
 ## How we can help
 

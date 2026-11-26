@@ -1,7 +1,7 @@
 ---
 title: "Estate tax vs inheritance tax: who pays, who owes, and where"
 description: "Estate tax is paid by the estate; inheritance tax is paid by the person who receives the money. Learn the difference, who is exempt, and which applies to you."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   An estate tax is paid by the estate, out of the total left behind, before heirs receive anything. An inheritance tax is paid by each heir on what they personally receive, with rates that depend on how closely they are related. The federal government charges only an estate tax. A handful of states charge an inheritance tax, and some charge an estate tax.
 takeaways:

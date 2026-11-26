@@ -1,7 +1,7 @@
 ---
 title: "How to leave your business to your children and still provide for your second wife or husband"
 description: "Leave a family business to your children and still provide for a second spouse: voting splits, trust income, buy-sell terms and life insurance, with an example."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Give the children the ownership and control, and give your spouse income instead of shares. The usual tools are a trust that pays your spouse for life and then passes the business to your children, non-voting and voting interests, a buy-sell agreement, and life insurance. A spouse can also claim a statutory share, so a signed waiver or a real income plan matters.
 takeaways:
@@ -79,7 +79,7 @@ The company never has to be sold to pay Carol, and the children keep the busines
 
 ## What can a surviving spouse claim no matter what?
 
-A statutory share. In Illinois, a spouse who is left less can renounce the will and take one-third of the estate if the decedent left descendants (755 ILCS 5/2-8), as explained in our article on [spouse rights in Illinois](/learn/illinois/illinois-spouse-rights-at-death). New Jersey gives a surviving spouse an elective share of one-third of an augmented estate, described in our guide to the [New Jersey elective share](/learn/new-jersey/new-jersey-elective-share-for-a-surviving-spouse). If the company is the biggest asset, a claim like that can force a payout from the business.
+A statutory share. In Illinois, a spouse who is left less can renounce the will and take one-third of the estate if the decedent left descendants (755 ILCS 5/2-8), or one-half if there are no descendants, as explained in our article on [spouse rights in Illinois](/learn/illinois/illinois-spouse-rights-at-death). If the company is the biggest asset, a claim like that can force a payout from the business.
 
 Three answers work. The spouse signs a waiver in a prenuptial or postnuptial agreement, with full financial disclosure. Or the plan gives her enough, through the trust, insurance or both, that renouncing is not attractive. Or you accept that she may claim a share and keep insurance on hand to pay it. A waiver signed without seeing the company's value tends to be challenged. See how a prenuptial agreement interacts with your plan in our guide to [prenups and estate plans](/learn/blended-families/prenuptial-agreements-and-estate-plans).
 

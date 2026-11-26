@@ -1,9 +1,9 @@
 ---
-title: "Can someone who kills you inherit from you? The slayer rule in Illinois and New Jersey"
+title: "Can someone who kills you inherit from you? The slayer rule in Illinois"
 description: "A person who unlawfully and intentionally kills you generally cannot inherit from you. See how the slayer rule treats wills, joint property, insurance, trusts."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
-  Generally no. Illinois and New Jersey both have slayer statutes, and so do nearly all states. A person who intentionally and unlawfully kills the owner is treated as if they died first, so they cannot take under the will, through intestacy, or as a joint owner. Whether the rule reaches insurance and trusts depends on the wording and the facts.
+  Generally no. Illinois has a slayer statute (755 ILCS 5/2-6), and so do nearly all states. A person who intentionally and unlawfully kills the owner is treated as if they died first, so they cannot take under the will, through intestacy, or as a joint owner. Whether the rule reaches insurance and trusts depends on the wording and the facts.
 takeaways:
   - "The slayer rule applies to intentional, unlawful killing. Accidents and most self-defense cases do not trigger it."
   - "The killer is usually treated as having died first, so the gift passes as if they were not alive."
@@ -18,7 +18,7 @@ faqs:
   - q: "Do the killer's children inherit in their parent's place?"
     a: "Often yes. Because the killer is treated as having died first, a gift that would pass to the killer's descendants if the killer had predeceased can pass to them. Some wills say otherwise, which is another reason to name backups in writing."
   - q: "Does the rule apply to elder abuse or financial exploitation?"
-    a: "Illinois has a separate statute that can cut off inheritance rights of a person who abused, neglected or financially exploited an elderly or disabled person. That is not a slayer case, and the proof required is different. Ask an attorney how New Jersey treats a similar situation before relying on any assumption."
+    a: "Illinois has a separate statute that can cut off inheritance rights of a person who abused, neglected or financially exploited an elderly or disabled person. That is not a slayer case, and the proof required is different. The bar is in 755 ILCS 5/2-6.2 through 2-6.6, and a court decides it, so ask an attorney early."
   - q: "Can a will say the killer still inherits?"
     a: "No. A will cannot override a statute that bars a slayer, because public policy forbids profiting from a killing. A will can, however, make a backup gift to someone else, and that backup is what the family will end up using."
 related:
@@ -39,7 +39,7 @@ This page explains the slayer rule, how it treats each kind of property, how it 
 
 ## What is the slayer rule?
 
-The slayer rule says a person cannot profit from intentionally and unlawfully killing someone. Illinois and New Jersey have it in their probate statutes, and nearly every other state does too. The usual mechanism is simple: the law treats the killer as having died before the victim. Everything that would have passed to the killer instead passes as if the killer were not there to take it.
+The slayer rule says a person cannot profit from intentionally and unlawfully killing someone. Illinois has it in its Probate Act (755 ILCS 5/2-6), and nearly every other state has a version too. Our page on [Illinois slayer and financial exploitation rules](/learn/illinois/illinois-slayer-and-financial-exploitation-rules) covers the statute. The usual mechanism is simple: the law treats the killer as having died before the victim. Everything that would have passed to the killer instead passes as if the killer were not there to take it.
 
 That "died first" fiction does a lot of work. A will gift to the killer fails, and the gift goes to the person named as a backup, or falls into the residuary estate. If there is no will, the killer is skipped in the order of heirs. A joint account the two owned is treated as if the killer had no survivorship right. The rule does not punish the killer's children; it just removes the killer from the line.
 
@@ -72,7 +72,7 @@ Here is an invented case. Robert, 61, dies. His will leaves his $400,000 house a
 
 The court treats Lorraine as having died before Robert. The will's backup clause applies, so Ana takes the house and savings. A life insurance policy of $250,000 named Lorraine, with Ana as contingent beneficiary. The insurer holds the money until it receives the conviction, then pays Ana. A joint checking account of $30,000 was owned by both spouses. Half belonged to Lorraine and half to Robert, and Robert's half joins the estate and passes to Ana.
 
-If Robert had not named Ana as backup, the gift would have fallen into the residuary estate and then to his heirs under intestacy. That would still skip Lorraine, but it would also bring in Robert's own relatives in the order the statute sets. Our article on [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) shows that order, and so does the one for [New Jersey](/learn/new-jersey/who-inherits-without-a-will-in-new-jersey).
+If Robert had not named Ana as backup, the gift would have fallen into the residuary estate and then to his heirs under intestacy. That would still skip Lorraine, but it would also bring in Robert's own relatives in the order the statute sets. Our article on [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) shows that order.
 
 ## What should the family do if this happens?
 
@@ -80,7 +80,7 @@ Move on the practical steps early, because insurers and banks pay out quickly to
 
 1. **Tell the executor in writing.** If the person named as executor is the suspect, ask the court to appoint someone else before any property is touched.
 2. **Notify each institution.** Write to the insurer, the bank and any plan administrator that a claim is pending and ask them to hold funds.
-3. **Ask the probate court to rule.** An interested person can petition the court to declare that the slayer rule applies. In Illinois that happens in the circuit court handling the estate, and in New Jersey in the Superior Court or the Surrogate's proceeding.
+3. **Ask the probate court to rule.** An interested person can petition the court to declare that the slayer rule applies. In Illinois that happens in the circuit court handling the estate.
 4. **Keep the criminal case records.** A certified copy of the judgment of conviction is the most direct evidence the probate court will see.
 5. **Hold off on distributions.** An executor who pays out early can be personally liable if the court later bars the recipient.
 6. **Check the deadlines.** A will contest has a short window; in Illinois, [six months after the will is admitted](/learn/illinois/illinois-will-contest-six-month-deadline). A slayer claim may have its own timing, so ask an attorney right away.

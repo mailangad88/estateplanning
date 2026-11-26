@@ -39,17 +39,17 @@ faqs:
   - q: "How much does it cost?"
     a: "Fees are set by the attorney you are matched with, often as a flat fee for a plan review. See [pricing](/pricing)."
 reviewed: false
-updated: "2026-10-06"
+updated: "2026-11-26"
 ---
 
 ## What is at stake
 
 - **Two probates.** Real estate owned in your name in another state generally has to go through that state's court, called ancillary probate, even if your home-state estate avoids it. A funded living trust or a transfer-on-death deed can avoid that. See [transfer-on-death deed vs trust](/compare/transfer-on-death-deed-vs-trust) and [funding your trust](/guides/funding-your-trust).
-- **Domicile disputes.** Your domicile is the one place you treat as home, based on facts: where you vote, where your driver's license is, where you spend most of the year, where your doctors are. States that tax estates or income can both claim you. Illinois taxes estates over $4 million. New Jersey has no estate tax but taxes some inheritances, such as gifts to siblings.
+- **Domicile disputes.** Your domicile is the one place you treat as home, based on facts: where you vote, where your driver's license is, where you spend most of the year, where your doctors are. States that tax estates or income can both claim you. Illinois taxes estates over $4 million. Your other state may have its own estate or inheritance tax.
 - **A power of attorney or healthcare directive a provider will not accept.** Most states honor out-of-state documents, but banks and hospitals may hesitate. Signing a version that meets the second state's rules can help.
 - **Incapacity far from adult children.** If your agent lives three states away, can they act quickly? A named local backup helps.
 - **An old plan.** Documents signed 15 years ago may name people who have died or moved, or ignore the way you hold accounts now. See [updating your estate plan](/learn/basics/when-to-update-your-estate-plan) and [estate planning at retirement](/life-events/retirement).
-- **Long-term care.** Planning ahead involves a 60-month Medicaid look-back at gifts and transfers (42 U.S.C. 1396p(c)), which Illinois and New Jersey both use. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).
+- **Long-term care.** Planning ahead involves a 60-month Medicaid look-back at gifts and transfers (42 U.S.C. 1396p(c)), which Illinois uses. See [Medicaid and long-term care planning](/learn/elder-care/medicaid-planning).
 
 ## What a plan usually includes
 
@@ -63,7 +63,7 @@ updated: "2026-10-06"
 | Backup agents | Local backups in each state. |
 | Long-term care conversation | What coverage you have and what Medicaid would require. |
 
-**Limits.** Family Future Planning matches you with attorneys in Illinois and New Jersey. Tax advice for the other state, and deeds or court filings there, usually need a lawyer licensed in that state. That state's bar referral service can help you find one.
+**Limits.** Family Future Planning matches you with attorneys in Illinois. Tax advice for the other state, and deeds or court filings there, usually need a lawyer licensed in that state. That state's bar referral service can help you find one.
 
 **An honest limit.** If your second home is in another state, you may need a second lawyer, and a good attorney will say so.
 

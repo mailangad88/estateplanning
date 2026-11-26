@@ -1,7 +1,7 @@
 ---
 title: "What if someone hides, forges or destroys a will? What families can do"
 description: "A will hidden, torn up or forged by someone else can often still be proven or challenged. See the evidence courts want, the deadlines and the first steps."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   If someone else hides or destroys a will, the will usually is not revoked, and a court can admit a copy or other proof of its terms. If a will is forged, it can be challenged and set aside. Only the person who made the will can revoke it. Act quickly, gather copies and witnesses, and talk to a probate attorney about your state's deadlines.
 takeaways:
@@ -73,7 +73,7 @@ The standard of proof for a missing will is higher in many states than for an or
 
 ## What if the will looks forged?
 
-A forged will is a fake document passed off as the real thing, or a real will with pages swapped or a signature added. The remedy is a will contest. The [contesting a will](/learn/wills/contesting-a-will) page covers who can challenge and on what grounds, and the state pages on [Illinois will contests](/learn/illinois/illinois-will-contest-six-month-deadline) and [New Jersey will contests and caveats](/learn/new-jersey/new-jersey-will-contests-and-caveats) cover the timing rules there.
+A forged will is a fake document passed off as the real thing, or a real will with pages swapped or a signature added. The remedy is a will contest. The [contesting a will](/learn/wills/contesting-a-will) page covers who can challenge and on what grounds, and our page on [Illinois will contests](/learn/illinois/illinois-will-contest-six-month-deadline) covers the six-month deadline.
 
 Courts look at the same handful of signals:
 
