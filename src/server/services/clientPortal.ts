@@ -9,7 +9,7 @@
  */
 import { createHash, createHmac, randomUUID, timingSafeEqual } from "node:crypto";
 import { audit } from "@/server/audit/log";
-import { assertCan, ForbiddenError } from "@/server/auth/policy";
+import { assertCan, ForbiddenError, isCaseParalegal } from "@/server/auth/policy";
 import { devLoginEnabled, issueSession } from "@/server/auth/session";
 import type { Db } from "@/server/db";
 import { buildCaseView } from "@/server/portal/caseView";
@@ -60,7 +60,7 @@ export async function inviteClient(db: Db, actor: Actor, leadId: string, now = n
   const ok =
     actor.role === "platform_admin" ||
     (actor.role === "attorney" && !!actor.lawyerId && lead.assignedLawyerId === actor.lawyerId) ||
-    (actor.role === "paralegal" && !!lead.assignedLawyerId && !!actor.supportsLawyerIds?.includes(lead.assignedLawyerId)) ||
+    isCaseParalegal(actor, lead) ||
     (actor.role === "firm_admin" && !!actor.firmId && lead.firmId === actor.firmId && !!lead.assignedLawyerId);
   assertCan(ok, "Only the assigned attorney's team can invite a client");
   if (!lead.assignedLawyerId || !POST_ACCEPT.includes(lead.stage) || lead.exit) throw new Error("Invite the client after the attorney accepts the case");

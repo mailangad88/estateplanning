@@ -48,10 +48,17 @@ export function leadAccess(actor: Actor, lead: Lead, assignments: Assignment[], 
       if (actor.lawyerId && openOfferFor(assignments, lead.id, (a) => a.lawyerId === actor.lawyerId, now)) return "conflict_card";
       return "none";
     case "paralegal":
-      return lead.assignedLawyerId && actor.supportsLawyerIds?.includes(lead.assignedLawyerId) ? "full" : "none";
+      // Only the cases assigned to them (src/server/services/caseBoard.ts assigns), not every case of the
+      // attorneys they support.
+      return isCaseParalegal(actor, lead) ? "full" : "none";
     case "client":
       return actor.personId && lead.personId === actor.personId ? "client" : "none";
   }
+}
+
+/** The paralegal assigned to this accepted case. */
+export function isCaseParalegal(actor: Actor, lead: Pick<Lead, "assignedLawyerId" | "assignedParalegalId">): boolean {
+  return actor.role === "paralegal" && !!lead.assignedLawyerId && !!lead.assignedParalegalId && lead.assignedParalegalId === actor.userId;
 }
 
 /**
@@ -80,6 +87,11 @@ export type LeadAction =
   | "manage_tasks"
   | "view_audit"
   | "refer_lead"
+  | "assign_paralegal"
+  | "update_case_steps"
+  | "edit_questionnaire"
+  | "manage_commission"
+  | "pay_commission"
   | "export";
 
 export function canOnLead(actor: Actor, action: LeadAction, lead: Lead, assignments: Assignment[], now = new Date()): boolean {
@@ -118,6 +130,22 @@ export function canOnLead(actor: Actor, action: LeadAction, lead: Lead, assignme
       // admin passes it to another attorney. Sending it outside the platform also needs full access
       // (src/server/services/referrals.ts), because the referrer hands the client's details on.
       return actor.role === "platform_admin" || (actor.role === "attorney" && (access === "full" || access === "conflict_card")) || (actor.role === "firm_admin" && access === "full");
+    case "assign_paralegal":
+      // The assigned attorney, their firm admin or a platform admin picks (or changes) the case's paralegal.
+      return access === "full" && (actor.role === "platform_admin" || actor.role === "attorney" || actor.role === "firm_admin");
+    case "update_case_steps":
+      // The case team ticks off journey steps on an accepted case. Attorney-only steps (attorney review)
+      // are checked again in src/server/services/caseBoard.ts.
+      return access === "full" && !!lead.assignedLawyerId && ["platform_admin", "firm_admin", "attorney", "paralegal"].includes(actor.role);
+    case "edit_questionnaire":
+      // The attorney fills in the intake questionnaire, the case's paralegal completes it. Firm admins read it.
+      return access === "full" && !!lead.assignedLawyerId && ["platform_admin", "attorney", "paralegal"].includes(actor.role);
+    case "manage_commission":
+      // The case's attorney or the office sets the paralegal's commission rule. Never the paralegal.
+      return access === "full" && (actor.role === "platform_admin" || actor.role === "firm_admin" || actor.role === "attorney");
+    case "pay_commission":
+      // Only the office records a payout.
+      return access === "full" && (actor.role === "platform_admin" || actor.role === "firm_admin");
     case "export":
       return actor.role === "platform_admin" && process.env.PORTAL_EXPORT_ENABLED === "true";
   }
@@ -145,6 +173,8 @@ export type GlobalAction =
   | "view_partners"
   | "manage_partners"
   | "view_pipeline"
+  | "view_case_board"
+  | "view_commissions"
   | "view_referrals"
   | "view_retainer_templates"
   | "manage_retainer_templates"
@@ -180,6 +210,10 @@ const GLOBAL: Record<GlobalAction, Role[]> = {
   manage_partners: ["platform_admin", "firm_admin"],
   // The pipeline board: every lead the viewer may see, by stage, with retainer status. Rows follow leadAccess.
   view_pipeline: ["platform_admin", "firm_admin"],
+  // The case board (/admin/cases). Rows still go through leadAccess: a paralegal sees only their assigned cases.
+  view_case_board: ["platform_admin", "firm_admin", "attorney", "paralegal"],
+  // Paralegal commissions (/admin/commissions). A paralegal sees only their own cases' rows.
+  view_commissions: ["platform_admin", "firm_admin", "attorney", "paralegal"],
   // Referral log and charts: who handled each lead and who it was passed to. Mirrors lead_referrals RLS.
   view_referrals: ["platform_admin", "firm_admin"],
   // A firm's own retainer templates, only ever its own firm's (canOnRetainerTemplate). Mirrors retainer_templates RLS.

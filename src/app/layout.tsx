@@ -12,6 +12,7 @@ import { TrackedPhoneLink } from "@/components/TrackedPhone";
 import Script from "next/script";
 import Analytics from "@/components/Analytics";
 import SiteChat from "@/components/SiteChat";
+import SiteChrome from "@/components/SiteChrome";
 import WebVitals from "@/components/WebVitals";
 import { cloudflareBeaconToken, searchVerification } from "@/lib/search-verification";
 import CookieConsent, { CookieSettingsButton } from "@/components/CookieConsent";
@@ -54,11 +55,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="staging-banner" role="note">Staging preview. Draft content pending attorney review, not a live law firm site. Test submissions only: forms are not sent to the firm.</div>
         )}
         <a href="#main" className="skip-link">Skip to content</a>
-        <SiteHeader brandName={firm.brandName} phone={firm.phone} />
+        <SiteChrome><SiteHeader brandName={firm.brandName} phone={firm.phone} /></SiteChrome>
         <main id="main" className="container">{children}</main>
-        <StickyContactBar phone={firm.phone} textNumber={firm.textNumber} />
-        <ExitIntent />
-        <SiteChat servedStates={servedStates()} firmPhone={firm.phone} />
+        <SiteChrome>
+          <StickyContactBar phone={firm.phone} textNumber={firm.textNumber} />
+          <ExitIntent />
+          <SiteChat servedStates={servedStates()} firmPhone={firm.phone} />
+        </SiteChrome>
         <Analytics />
         <WebVitals />
         {CF_BEACON && (
@@ -66,37 +69,39 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         )}
         <CookieConsent />
         <JsonLd data={siteGraphLd()} />
-        <footer className="site">
-          <div className="footer-cta">
-            <div className="container wide footer-cta__inner">
-              <div>
-                <p className="kicker">Ready when you are</p>
-                <h2>Talk it through with an attorney, at a flat fee.</h2>
-                <p>Pick a time, answer a few questions, or just call. Nothing is signed until you have seen the fee.</p>
+        <SiteChrome>
+          <footer className="site">
+            <div className="footer-cta">
+              <div className="container wide footer-cta__inner">
+                <div>
+                  <p className="kicker">Ready when you are</p>
+                  <h2>Talk it through with an attorney, at a flat fee.</h2>
+                  <p>Pick a time, answer a few questions, or just call. Nothing is signed until you have seen the fee.</p>
+                </div>
+                <p className="cta-row">
+                  <Link className="button" href="/book?from=footer">Book a consult</Link>
+                  <Link className="button ghost-light" href="/plan-finder">Start the plan finder</Link>
+                  <span className="footer-cta__call">or call <TrackedPhoneLink fallback={firm.phone} /></span>
+                </p>
               </div>
-              <p className="cta-row">
-                <Link className="button" href="/book?from=footer">Book a consult</Link>
-                <Link className="button ghost-light" href="/plan-finder">Start the plan finder</Link>
-                <span className="footer-cta__call">or call <TrackedPhoneLink fallback={firm.phone} /></span>
-              </p>
             </div>
-          </div>
-          <div className="container wide footer-main">
-            <div className="footer-brand">
-              <Link href="/" className="brand">
-                <BrandMark />
-                <span>{firm.brandName}</span>
-              </Link>
-              <p>Wills, living trusts, powers of attorney and healthcare directives, explained plainly and prepared by an estate planning attorney.</p>
-              <p>Email: <a href={`mailto:${firm.email}`}>{firm.email}</a></p>
+            <div className="container wide footer-main">
+              <div className="footer-brand">
+                <Link href="/" className="brand">
+                  <BrandMark />
+                  <span>{firm.brandName}</span>
+                </Link>
+                <p>Wills, living trusts, powers of attorney and healthcare directives, explained plainly and prepared by an estate planning attorney.</p>
+                <p>Email: <a href={`mailto:${firm.email}`}>{firm.email}</a></p>
+              </div>
+              <MegaFooter />
             </div>
-            <MegaFooter />
-          </div>
-          <div className="container wide footer-legal">
-            <Disclosures />
-            <p className="notice"><CookieSettingsButton /></p>
-          </div>
-        </footer>
+            <div className="container wide footer-legal">
+              <Disclosures />
+              <p className="notice"><CookieSettingsButton /></p>
+            </div>
+          </footer>
+        </SiteChrome>
         <SourceTracker />
       </body>
     </html>

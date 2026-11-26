@@ -70,7 +70,7 @@ function lead(id: string, personId: string, more: Partial<Lead> = {}): Lead {
     offerSummary: "s",
     conflictCard: { clientName: "Pat Client", parties: [], matterType: "new_plan", state: "IL", clearance: "clear" },
     intake: { summary: "Married, two young children, own a home.", goals: "Name guardians", redFlags: [], deadlines: [], household: { members: [] }, assets: {}, answers: {} },
-    firmId: "f1", assignedLawyerId: "l1",
+    firmId: "f1", assignedLawyerId: "l1", assignedParalegalId: "u-para",
     ...more,
   };
 }

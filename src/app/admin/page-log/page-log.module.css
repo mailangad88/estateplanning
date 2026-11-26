@@ -12,7 +12,7 @@
 .score { font-variant-numeric: tabular-nums; font-weight: 600; }
 .wrap { overflow-x: auto; }
 .pager { display: flex; gap: 12px; margin: 12px 0; }
-.full { width: min(1240px, calc(100vw - 32px)); position: relative; left: 50%; transform: translateX(-50%); }
+.full { width: 100%; max-width: 1240px; }
 .full table { min-width: 960px; }
 .full td:last-child { min-width: 360px; }
 .filters select, .filters input { max-width: 100%; min-width: 0; }

@@ -117,10 +117,14 @@ const lead: Required<Lead> = {
   firmId: "f1", assignedLawyerId: "lw1", previousLawyerId: "lw2", requestedLawyerId: "lw1", clientChoiceLawyerIds: ["lw1", "lw2"],
   crmId: "crm-1", intakeOwnerId: "u-intake",
   capture: { tool: "estate-tax-calculator", resource: "guide", result: { a: 1, b: "x", c: true } }, priorTools: ["quiz"], visitorId: "v-1",
+  assignedParalegalId: "u-para", caseSteps: { documents_gathered: { status: "done", at: T0, by: "u-para", note: "deeds in" } },
+  questionnaire: { answers: { client_full_name: "Ann Lee", children: "K, 7" }, startedAt: T0, startedBy: "u-attorney", updatedAt: T0, updatedBy: "u-para", sentAt: T0, sentBy: "u-attorney", sentTo: "u-para", readyAt: T0, readyBy: "u-para" },
+  commission: { mode: "percent", percent: 10, note: "n", setAt: T0, setBy: "u-attorney", paidAt: T0, paidBy: "u-attorney", paidCents: 35000, paidTo: "u-para" },
 };
 const offerLead: Lead = {
   ...lead, id: "l-offer", personId: "p2", firmId: undefined, assignedLawyerId: undefined, previousLawyerId: undefined,
   requestedLawyerId: undefined, clientChoiceLawyerIds: undefined, intakeOwnerId: undefined, state: "NV", urgent: false, county: undefined,
+  assignedParalegalId: undefined, caseSteps: undefined, questionnaire: undefined, commission: undefined,
 };
 const user = (id: string, role: User["role"], more: Partial<User> = {}): Required<User> => ({
   id, email: `${id}@x.test`, name: id, role, firmId: "f1", lawyerId: "lw1", supportsLawyerIds: ["lw1"], personId: "p1", active: true, ...more,
@@ -387,6 +391,7 @@ suite("postgres integration", () => {
     await service.persons.insert({ ...person, id: "p3", firstName: "Bob", email: "bob@x.test" }); // Ann's spouse, the second client on e1
     await service.users.insert(fixtures.users);
     await service.users.insert({ id: "u-intake", email: "intake@x.test", name: "Intake", role: "intake", active: true });
+    await service.users.insert({ id: "u-para", email: "para@x.test", name: "Para", role: "paralegal", firmId: "f1", supportsLawyerIds: ["lw1"], active: true });
     // the two clients on e1, each with their own login (signature rows are bound to them)
     await service.users.insert({ id: "u-client", email: "client@x.test", name: "Ann Lee", role: "client", firmId: "f1", personId: "p1", active: true });
     await service.users.insert({ id: "u-spouse", email: "spouse@x.test", name: "Bob Lee", role: "client", firmId: "f1", personId: "p3", active: true });
@@ -418,6 +423,19 @@ suite("postgres integration", () => {
     await expect(service.leads.update("nope", { urgent: true })).rejects.toThrow(/not found/);
     await expect(service.leads.insert({ ...lead, id: "x", bogus: 1 } as unknown as Lead)).rejects.toThrow(/unknown field/);
     await service.leads.update("l1", { stage: "offered", exit: lead.exit, stageHistory: lead.stageHistory, intake: lead.intake });
+  });
+
+  maybe("paralegals read only the cases assigned to them; the case team sees its firm's staff", async () => {
+    const mine = as({ userId: "u-para", role: "paralegal", firmId: "f1", supportsLawyerIds: ["lw1"] });
+    expect((await mine.leads.list()).map((l) => l.id)).toEqual(["l1"]);
+    // supporting the same attorney is not enough
+    const other = as({ userId: "u-paralegal", role: "paralegal", firmId: "f1", supportsLawyerIds: ["lw1"] });
+    expect(await other.leads.list()).toEqual([]);
+    const att = as({ userId: "u-attorney", role: "attorney", firmId: "f1", lawyerId: "lw1" });
+    const staff = (await att.users.list()).map((u) => u.id);
+    expect(staff).toContain("u-para");
+    expect(staff).not.toContain("u-client");
+    expect(staff).not.toContain("u-intake");
   });
 
   maybe("fee rule versions: roundtrip, immutable", async () => {

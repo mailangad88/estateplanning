@@ -130,7 +130,7 @@ async function setup(stage: "consult_held" | "new" = "consult_held") {
     offerSummary: "s",
     conflictCard: { clientName: "Pat Client", parties: [], matterType: "new_plan", state: "TX", clearance: "clear" },
     intake: { summary: "s", redFlags: [], deadlines: [], household: { members: [] }, assets: {}, answers: {} },
-    firmId: "f1", assignedLawyerId: "l1",
+    firmId: "f1", assignedLawyerId: "l1", assignedParalegalId: "u-para",
   });
   return { db, esign: new MockEsignProvider("s", () => T0), pay: new MockPaymentProvider() };
 }

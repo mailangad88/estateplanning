@@ -380,8 +380,6 @@
 
 /* The video page breaks out of the narrow reading column to fit the steps and the sidebar. */
 .wide {
-  width: min(1180px, calc(100vw - 32px));
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1180px;
 }

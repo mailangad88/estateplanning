@@ -122,6 +122,10 @@ CREATE TABLE leads (
   capture                   jsonb,                           -- {tool, resource?, result?}: which site tool captured the lead
   prior_tools               text[],                          -- capture tools this visitor used before, oldest first
   visitor_id                text,                            -- browser id used to merge repeat submissions
+  assigned_paralegal_id     text REFERENCES users(id),       -- the paralegal working the case; paralegals see only these
+  case_steps                jsonb,                           -- {step: {status, at, by, note?}}: legal steps after payment
+  questionnaire             jsonb,                           -- attorney intake questionnaire {answers, sentAt, readyAt, ...}; confidential
+  commission                jsonb,                           -- paralegal commission rule and payout {mode, percent|flatCents, paidAt, paidCents, paidTo}
   CHECK (assigned_lawyer_id IS NULL OR firm_id IS NOT NULL)
 );
 CREATE INDEX leads_assigned_lawyer_idx ON leads (assigned_lawyer_id) WHERE assigned_lawyer_id IS NOT NULL;
@@ -130,6 +134,7 @@ CREATE INDEX leads_person_idx       ON leads (person_id);
 CREATE INDEX leads_stage_idx        ON leads (stage, created_at);
 CREATE INDEX leads_intake_owner_idx ON leads (intake_owner_id);
 CREATE INDEX leads_created_idx      ON leads (created_at);
+CREATE INDEX leads_paralegal_idx    ON leads (assigned_paralegal_id) WHERE assigned_paralegal_id IS NOT NULL;
 
 CREATE TABLE assignments (
   id              text PRIMARY KEY,
@@ -763,7 +768,8 @@ BEGIN
       WHERE a.lead_id = l.id AND a.status = 'offered' AND a.expires_at > now() AND a.lawyer_id = app_lawyer_id()
     ) THEN RETURN 'conflict_card'; END IF;
   ELSIF r = 'paralegal' THEN
-    IF l.assigned_lawyer_id IS NOT NULL AND l.assigned_lawyer_id = ANY (app_supports_lawyer_ids()) THEN RETURN 'full'; END IF;
+    -- only the cases assigned to them (isCaseParalegal in policy.ts)
+    IF l.assigned_lawyer_id IS NOT NULL AND l.assigned_paralegal_id IS NOT NULL AND l.assigned_paralegal_id = app_user_id() THEN RETURN 'full'; END IF;
   ELSIF r = 'client' THEN
     IF app_person_id() IS NOT NULL AND l.person_id = app_person_id() THEN RETURN 'client'; END IF;
   END IF;
@@ -1054,7 +1060,9 @@ CREATE POLICY lawyers_write ON lawyers FOR ALL TO app_user  -- manage_firm_capac
   WITH CHECK (app_role() = 'platform_admin' OR (app_role() = 'firm_admin' AND firm_id = app_firm_id()));
 
 CREATE POLICY users_select ON users FOR SELECT TO app_user
-  USING (id = app_user_id() OR app_role() = 'platform_admin' OR (app_role() = 'firm_admin' AND firm_id = app_firm_id()));
+  USING (id = app_user_id() OR app_role() = 'platform_admin' OR (app_role() = 'firm_admin' AND firm_id = app_firm_id())
+         -- the case team sees its own firm's staff (names on the case board, the paralegal picker)
+         OR (app_role() IN ('attorney','paralegal') AND firm_id = app_firm_id() AND role IN ('firm_admin','attorney','paralegal')));
 CREATE POLICY users_write ON users FOR ALL TO app_user  -- manage_users; firm admins cannot mint staff roles
   USING (app_role() = 'platform_admin' OR (app_role() = 'firm_admin' AND firm_id = app_firm_id() AND role IN ('firm_admin','attorney','paralegal')))
   WITH CHECK (app_role() = 'platform_admin' OR (app_role() = 'firm_admin' AND firm_id = app_firm_id() AND role IN ('firm_admin','attorney','paralegal')));

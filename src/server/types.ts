@@ -212,6 +212,57 @@ export interface Lead {
   priorTools?: string[];
   /** Browser id used to merge repeat submissions into one person */
   visitorId?: string;
+  /** The paralegal (users.id) working this case. A paralegal sees only the cases assigned to them. */
+  assignedParalegalId?: string;
+  /** Legal steps after the fee is paid, ticked off by the case team (src/lib/caseJourney.ts) */
+  caseSteps?: Partial<Record<CaseStepKey, CaseStepRecord>>;
+  /** The attorney's intake questionnaire (src/lib/intakeQuestionnaire.ts), handed to the paralegal to complete */
+  questionnaire?: QuestionnaireRecord;
+  /** The paralegal's commission rule and payout on this case (src/lib/commission.ts) */
+  commission?: CommissionRecord;
+}
+
+export interface CommissionRecord {
+  /** Absent: the firm default applies */
+  mode?: "percent" | "flat";
+  /** Whole percent of the fee */
+  percent?: number;
+  flatCents?: number;
+  note?: string;
+  setAt?: string;
+  setBy?: string;
+  /** Recorded by the office when the commission is paid out */
+  paidAt?: string;
+  paidBy?: string;
+  paidCents?: number;
+  /** The paralegal paid (kept even if the case is later reassigned) */
+  paidTo?: string;
+}
+
+export interface QuestionnaireRecord {
+  /** field id -> answer */
+  answers: Record<string, string>;
+  startedAt: string;
+  startedBy: string;
+  updatedAt: string;
+  updatedBy: string;
+  /** Sent to the paralegal: when, by whom, to whom */
+  sentAt?: string;
+  sentBy?: string;
+  sentTo?: string;
+  /** The paralegal marked it complete and ready for the attorney */
+  readyAt?: string;
+  readyBy?: string;
+}
+
+export type CaseStepKey = "documents_gathered" | "drafted" | "attorney_review" | "client_review" | "signed" | "funded" | "delivered" | "closed";
+
+export interface CaseStepRecord {
+  status: "done" | "skipped";
+  at: string;
+  /** users.id */
+  by: string;
+  note?: string;
 }
 
 export type AssignmentStatus = "offered" | "accepted" | "declined" | "expired" | "withdrawn";

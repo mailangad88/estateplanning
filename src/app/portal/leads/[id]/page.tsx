@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ForbiddenError, writableVisibilities } from "@/server/auth/policy";
+import { can, ForbiddenError, writableVisibilities } from "@/server/auth/policy";
 import { buildCaseView, type CommentNode } from "@/server/portal/caseView";
 import { currentActor, getDb, scopedDb } from "@/server/runtime";
 import { ApproveEngagement, CommentForm, InviteClient, OfferActions, RefundPayment } from "@/app/portal/actions";
@@ -131,7 +131,10 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
 
   return (
     <>
-      <p><Link href="/portal">← Back to the portal</Link></p>
+      <p>
+        <Link href="/portal">← Back to the portal</Link>
+        {view.access === "full" && lead?.assignedLawyerId && can(actor, "view_case_board") && <> · <Link href={`/admin/cases/${id}`}>Case journey</Link> · <Link href={`/admin/cases/${id}/intake`}>Intake questionnaire</Link></>}
+      </p>
       {/* 1. Header */}
       <h1>{h.urgent && "⚠ "}{h.name}</h1>
       <p className="lead">{h.matterType} · {h.location} · Score {h.score} (grade {h.grade ?? h.tier}) · {label(h.stage)}{h.assignedLawyer ? ` · ${h.assignedLawyer}` : ""}</p>
