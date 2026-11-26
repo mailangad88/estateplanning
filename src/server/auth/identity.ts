@@ -35,9 +35,21 @@ export interface OidcProvider extends IdentityProvider {
 
 export type SendEmail = (to: string, subject: string, text: string) => Promise<void>;
 
+/**
+ * Sign-in links are requested by the person receiving them, so they go out whenever an email
+ * provider is configured, even while OUTBOUND_SEND_MODE=log holds back nurture and marketing.
+ * Without this, nobody can sign in to the portal until every client email is switched on.
+ */
+export function signInEmailConfigured(env: Record<string, string | undefined> = process.env): boolean {
+  if (!env.EMAIL_FROM) return false;
+  if (env.EMAIL_TRANSPORT === "resend") return Boolean(env.RESEND_API_KEY);
+  if (env.EMAIL_TRANSPORT === "postmark") return Boolean(env.POSTMARK_SERVER_TOKEN);
+  return false;
+}
+
 export const consoleSendEmail: SendEmail = async (to, subject, text) => {
-  if (sendModeFromEnv() === "live") {
-    await emailTransportFromEnv().send({ to, subject, text, stream: "transactional", tag: "sign-in" });
+  if (sendModeFromEnv() === "live" || signInEmailConfigured()) {
+    await emailTransportFromEnv({ ...process.env, OUTBOUND_SEND_MODE: "live" }).send({ to, subject, text, stream: "transactional", tag: "sign-in" });
     return;
   }
   // Printing sign-in links is fine on a laptop and unsafe anywhere else.
