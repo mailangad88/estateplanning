@@ -95,6 +95,7 @@ function legalServiceNode() {
     url: SITE_URL,
     telephone: firm.phone,
     address: postalAddress(firm.officeAddress),
+    openingHoursSpecification: { "@type": "OpeningHoursSpecification", dayOfWeek: firm.openingHours.days, opens: firm.openingHours.opens, closes: firm.openingHours.closes },
     areaServed: stateNames(servedStates()).map((name) => ({ "@type": "State", name, containedInPlace: { "@type": "Country", name: "United States" } })),
     knowsAbout: ["Estate planning", "Wills", "Revocable living trusts", "Powers of attorney", "Probate", "Trust administration"],
     employee: { "@id": ATTORNEY_ID },

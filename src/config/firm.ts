@@ -7,16 +7,21 @@ import type { BusinessStructure } from "@/lib/fees";
  */
 export const firm = {
   brandName: "Family Future Planning", // matches familyfutureplanning.com
-  firmLegalName: "[Firm legal name]",
+  /** Angad, 2026-11-08. */
+  firmLegalName: "Singh & Kaur Law LLC",
   attorneyName: "Sargun Singh",
   attorneyTitle: "Estate planning attorney",
+  /** Intake line, answered by the attorney (Angad, 2026-11-06). */
   phone: "(630) 656-3059",
   /** Public contact email for the site (a company address, separate from the attorney). */
-  email: "[Company email]",
-  officeAddress: "[Office address]",
-  officeHours: "[Office hours]",
+  email: "hello@familyfutureplanning.com", // Angad, 2026-11-08
+  /** "Street, City, ST 12345" so postalAddress() in src/lib/seo.tsx can split it for structured data. Angad, 2026-11-08. */
+  officeAddress: "3602 Grand View Court, St Charles, IL 60175",
+  officeHours: "Monday to Sunday, 8 am to 7 pm",
+  /** Same hours in schema.org form for structured data. */
+  openingHours: { days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], opens: "08:00", closes: "19:00" },
   /** What the site promises about response time. Keep it true. */
-  responseTime: "[Response time, e.g. within one business day]",
+  responseTime: "the same day during office hours", // Angad, 2026-11-08
   /** Profile URLs (state bar, Google Business Profile and similar) that identify the firm. Empty omits sameAs from structured data. */
   sameAs: [] as string[],
   /**
