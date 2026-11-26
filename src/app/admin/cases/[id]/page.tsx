@@ -5,6 +5,8 @@ import { can, ForbiddenError } from "@/server/auth/policy";
 import { currentActor, getDb, scopedDb } from "@/server/runtime";
 import { caseJourney } from "@/server/services/caseBoard";
 import { caseComments } from "@/server/services/questionnaire";
+import { caseCommission } from "@/server/services/commissions";
+import { money } from "@/lib/commission";
 import { questionnaireProgress, questionnaireStage, QUESTIONNAIRE_STAGES } from "@/lib/intakeQuestionnaire";
 import styles from "../cases.module.css";
 import { CaseThread, TONE } from "../parts";
@@ -47,6 +49,7 @@ export default async function CaseJourneyPage({ params, searchParams }: { params
   }
   const { card, canComplete, canUndo, canAssign, paralegalChoices, people } = view;
   const comments = await caseComments(db, actor, card.leadId);
+  const commission = await caseCommission(db, actor, card.leadId);
   const qStage = questionnaireStage(view.lead);
   const qProgress = view.lead.questionnaire ? questionnaireProgress(view.lead.questionnaire.answers) : undefined;
   const qLabel = qStage === "not_started" ? "Not started" : QUESTIONNAIRE_STAGES.find((s) => s.key === qStage)?.label;
@@ -61,6 +64,7 @@ export default async function CaseJourneyPage({ params, searchParams }: { params
       {updatedLabel && <p className={`${styles.flash} ${styles.flashOk}`} role="status">Updated: {updatedLabel}</p>}
       {sp.assigned && <p className={`${styles.flash} ${styles.flashOk}`} role="status">Paralegal updated.</p>}
       {sp.ok === "comment" && <p className={`${styles.flash} ${styles.flashOk}`} role="status">Comment posted.</p>}
+      {sp.ok?.startsWith("commission_") && <p className={`${styles.flash} ${styles.flashOk}`} role="status">{sp.ok === "commission_paid" ? "Commission marked paid." : sp.ok === "commission_unpaid" ? "Payout record removed." : "Commission rule saved."}</p>}
 
       <header className={styles.caseHead}>
         <Ring percent={j.percent} done={j.done} total={j.total} />
@@ -168,6 +172,53 @@ export default async function CaseJourneyPage({ params, searchParams }: { params
             {qProgress && <><div className={styles.qBar}><span style={{ width: `${qProgress.percent}%` }} /></div><p className={styles.stepHint}>{qProgress.percent}% of required answers</p></>}
             <p><Link className="button small" href={`/admin/cases/${card.leadId}/intake`}>{qStage === "not_started" ? "Start the questionnaire" : "Open the questionnaire"}</Link></p>
           </section>
+          {commission && (
+            <section className={styles.panel} id="commission">
+              <h2>Paralegal commission</h2>
+              {!commission.hasParalegal ? <p className={styles.stepHint}>Assign a paralegal first.</p> : (
+                <>
+                  <div className={styles.commissionAmount}>{money(commission.line.amountCents)}</div>
+                  <p className={styles.stepHint}>
+                    {commission.line.mode === "flat" ? "Flat amount" : `${commission.line.percent}% of ${commission.line.feeCents ? money(commission.line.feeCents) : "the fee (none on file yet)"}`}
+                    {commission.line.isDefault ? " · firm default" : ""}{commission.line.feeSource === "package" ? " · fee from the package" : ""}
+                  </p>
+                  <p><span className={`${styles.chip} ${commission.line.status === "paid" ? styles.chipPaid : commission.line.status === "earned" ? styles.chipEarned : styles.chipPending}`}>
+                    {commission.line.status === "paid" ? `Paid ${new Date(commission.line.paidAt!).toLocaleDateString("en-US", { month: "short", day: "numeric" })}` : commission.line.status === "earned" ? "Earned, not paid" : "Pending until the file is closed"}
+                  </span></p>
+                  {commission.line.note && <p className={styles.stepNote}>{commission.line.note}</p>}
+                </>
+              )}
+              {commission.canManage && commission.hasParalegal && (
+                <form className={styles.ruleForm} method="post" action={`/api/admin/cases/${card.leadId}/commission`}>
+                  <input type="hidden" name="intent" value="rule" />
+                  <div className={styles.row}>
+                    <label><input type="radio" name="mode" value="default" defaultChecked={commission.line.isDefault} /> Firm default</label>
+                  </div>
+                  <div className={styles.row}>
+                    <label><input type="radio" name="mode" value="percent" defaultChecked={!commission.line.isDefault && commission.line.mode === "percent"} /> Percent</label>
+                    <input type="number" name="percent" min={0} max={50} step={0.5} defaultValue={commission.line.percent ?? ""} aria-label="Percent of the fee" />%
+                  </div>
+                  <div className={styles.row}>
+                    <label><input type="radio" name="mode" value="flat" defaultChecked={!commission.line.isDefault && commission.line.mode === "flat"} /> Flat $</label>
+                    <input type="number" name="flat" min={0} max={10000} step={1} defaultValue={commission.line.mode === "flat" ? commission.line.amountCents / 100 : ""} aria-label="Flat amount in dollars" />
+                  </div>
+                  <input type="text" name="note" maxLength={500} placeholder="Note (optional)" aria-label="Commission note" />
+                  <button className="button small secondary" type="submit">Save rule</button>
+                </form>
+              )}
+              {commission.canPay && commission.line.status === "earned" && commission.line.amountCents > 0 && (
+                <form method="post" action={`/api/admin/cases/${card.leadId}/commission`} style={{ marginTop: 8 }}>
+                  <button className="button small" name="intent" value="paid" type="submit">Mark {money(commission.line.amountCents)} paid</button>
+                </form>
+              )}
+              {commission.canPay && commission.line.status === "paid" && (
+                <form method="post" action={`/api/admin/cases/${card.leadId}/commission`} style={{ marginTop: 8 }}>
+                  <button className={styles.linkButton} name="intent" value="unpaid" type="submit">Undo payout record</button>
+                </form>
+              )}
+              <p className={styles.stepHint} style={{ marginTop: 8 }}><Link href="/admin/commissions">All commissions</Link></p>
+            </section>
+          )}
           <CaseThread comments={comments} leadId={card.leadId} viewerId={actor.userId} />
           <section className={styles.panel}>
             <h2>Paralegal</h2>

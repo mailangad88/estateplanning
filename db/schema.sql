@@ -125,6 +125,7 @@ CREATE TABLE leads (
   assigned_paralegal_id     text REFERENCES users(id),       -- the paralegal working the case; paralegals see only these
   case_steps                jsonb,                           -- {step: {status, at, by, note?}}: legal steps after payment
   questionnaire             jsonb,                           -- attorney intake questionnaire {answers, sentAt, readyAt, ...}; confidential
+  commission                jsonb,                           -- paralegal commission rule and payout {mode, percent|flatCents, paidAt, paidCents, paidTo}
   CHECK (assigned_lawyer_id IS NULL OR firm_id IS NOT NULL)
 );
 CREATE INDEX leads_assigned_lawyer_idx ON leads (assigned_lawyer_id) WHERE assigned_lawyer_id IS NOT NULL;

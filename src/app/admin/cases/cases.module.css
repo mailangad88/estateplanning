@@ -203,3 +203,39 @@ a.tile:hover { border-color: var(--brand); }
   .qFields { grid-template-columns: 1fr; }
   .qStage { font-size: 0.7rem; }
 }
+
+/* --- commissions --- */
+.bars { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.barRow { display: grid; grid-template-columns: 170px 1fr 110px; gap: 12px; align-items: center; font-size: var(--text-sm); }
+.barName { font-weight: 700; display: flex; align-items: center; gap: 8px; min-width: 0; }
+.barTrack { height: 22px; background: var(--bg); border: 1px solid var(--border); border-radius: 999px; overflow: hidden; display: flex; }
+.barTrack span { display: block; height: 100%; }
+.segPaid { background: var(--sage); }
+.segEarned { background: var(--gold); }
+.segPending { background: repeating-linear-gradient(45deg, var(--sand-deep) 0 6px, var(--sand) 6px 12px); }
+.barTotal { text-align: right; font-weight: 700; font-family: var(--font-display); }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: var(--text-xs); color: var(--muted); margin: 10px 0 0; }
+.legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; }
+.ctable { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-top: 14px; }
+.ctable th { text-align: left; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); background: var(--sand); padding: 9px 12px; }
+.ctable td { padding: 10px 12px; border-top: 1px solid var(--border); font-size: var(--text-sm); vertical-align: top; }
+.ctable td.num { text-align: right; font-weight: 700; white-space: nowrap; }
+.chipEarned { background: var(--gold-tint); color: var(--gold-text); }
+.chipPaid { background: var(--sage-tint); color: var(--sage-deep); }
+.chipPending { background: var(--sand); color: var(--muted); }
+.ethics { background: var(--gold-tint); color: var(--gold-text); border-radius: var(--radius); padding: 10px 14px; font-size: var(--text-xs); margin: 10px 0; }
+.commissionAmount { font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; line-height: 1.1; }
+.ruleForm { display: grid; gap: 8px; margin-top: 8px; }
+.ruleForm .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: var(--text-sm); }
+.ruleForm input[type="number"], .ruleForm input[type="text"] { font: inherit; font-size: var(--text-sm); padding: 6px 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text); width: 110px; }
+.ruleForm input[name="note"] { width: 100%; }
+@media (max-width: 760px) {
+  .barRow { grid-template-columns: 1fr auto; }
+  .barTrack { grid-column: 1 / -1; grid-row: 2; }
+  .ctable thead { display: none; }
+  .ctable, .ctable tbody, .ctable tr, .ctable td { display: block; width: 100%; }
+  .ctable tr { border-top: 1px solid var(--border); padding: 6px 0; }
+  .ctable td { border: 0; padding: 3px 12px; display: flex; justify-content: space-between; gap: 10px; }
+  .ctable td::before { content: attr(data-label); color: var(--muted); font-size: 0.75rem; text-transform: uppercase; }
+  .ctable td.num { text-align: left; }
+}

@@ -218,6 +218,25 @@ export interface Lead {
   caseSteps?: Partial<Record<CaseStepKey, CaseStepRecord>>;
   /** The attorney's intake questionnaire (src/lib/intakeQuestionnaire.ts), handed to the paralegal to complete */
   questionnaire?: QuestionnaireRecord;
+  /** The paralegal's commission rule and payout on this case (src/lib/commission.ts) */
+  commission?: CommissionRecord;
+}
+
+export interface CommissionRecord {
+  /** Absent: the firm default applies */
+  mode?: "percent" | "flat";
+  /** Whole percent of the fee */
+  percent?: number;
+  flatCents?: number;
+  note?: string;
+  setAt?: string;
+  setBy?: string;
+  /** Recorded by the office when the commission is paid out */
+  paidAt?: string;
+  paidBy?: string;
+  paidCents?: number;
+  /** The paralegal paid (kept even if the case is later reassigned) */
+  paidTo?: string;
 }
 
 export interface QuestionnaireRecord {

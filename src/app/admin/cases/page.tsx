@@ -81,7 +81,7 @@ export default async function CasesPage({ searchParams }: { searchParams: Promis
 
   return (
     <div className={styles.board}>
-      <p className={styles.back}><Link href="/portal">← Portal</Link>{can(actor, "view_pipeline") && <> · <Link href="/admin/pipeline">Lead pipeline</Link></>}</p>
+      <p className={styles.back}><Link href="/portal">← Portal</Link>{can(actor, "view_pipeline") && <> · <Link href="/admin/pipeline">Lead pipeline</Link></>}{can(actor, "view_commissions") && <> · <Link href="/admin/commissions">{actor.role === "paralegal" ? "Your commission" : "Commissions"}</Link></>}</p>
       <div className={styles.head}>
         <div>
           <h1>{isPara ? "Your cases" : "Cases"}</h1>

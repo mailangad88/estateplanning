@@ -90,6 +90,8 @@ export type LeadAction =
   | "assign_paralegal"
   | "update_case_steps"
   | "edit_questionnaire"
+  | "manage_commission"
+  | "pay_commission"
   | "export";
 
 export function canOnLead(actor: Actor, action: LeadAction, lead: Lead, assignments: Assignment[], now = new Date()): boolean {
@@ -138,6 +140,12 @@ export function canOnLead(actor: Actor, action: LeadAction, lead: Lead, assignme
     case "edit_questionnaire":
       // The attorney fills in the intake questionnaire, the case's paralegal completes it. Firm admins read it.
       return access === "full" && !!lead.assignedLawyerId && ["platform_admin", "attorney", "paralegal"].includes(actor.role);
+    case "manage_commission":
+      // The case's attorney or the office sets the paralegal's commission rule. Never the paralegal.
+      return access === "full" && (actor.role === "platform_admin" || actor.role === "firm_admin" || actor.role === "attorney");
+    case "pay_commission":
+      // Only the office records a payout.
+      return access === "full" && (actor.role === "platform_admin" || actor.role === "firm_admin");
     case "export":
       return actor.role === "platform_admin" && process.env.PORTAL_EXPORT_ENABLED === "true";
   }
@@ -166,6 +174,7 @@ export type GlobalAction =
   | "manage_partners"
   | "view_pipeline"
   | "view_case_board"
+  | "view_commissions"
   | "view_referrals"
   | "view_retainer_templates"
   | "manage_retainer_templates"
@@ -203,6 +212,8 @@ const GLOBAL: Record<GlobalAction, Role[]> = {
   view_pipeline: ["platform_admin", "firm_admin"],
   // The case board (/admin/cases). Rows still go through leadAccess: a paralegal sees only their assigned cases.
   view_case_board: ["platform_admin", "firm_admin", "attorney", "paralegal"],
+  // Paralegal commissions (/admin/commissions). A paralegal sees only their own cases' rows.
+  view_commissions: ["platform_admin", "firm_admin", "attorney", "paralegal"],
   // Referral log and charts: who handled each lead and who it was passed to. Mirrors lead_referrals RLS.
   view_referrals: ["platform_admin", "firm_admin"],
   // A firm's own retainer templates, only ever its own firm's (canOnRetainerTemplate). Mirrors retainer_templates RLS.

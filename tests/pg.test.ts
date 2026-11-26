@@ -119,11 +119,12 @@ const lead: Required<Lead> = {
   capture: { tool: "estate-tax-calculator", resource: "guide", result: { a: 1, b: "x", c: true } }, priorTools: ["quiz"], visitorId: "v-1",
   assignedParalegalId: "u-para", caseSteps: { documents_gathered: { status: "done", at: T0, by: "u-para", note: "deeds in" } },
   questionnaire: { answers: { client_full_name: "Ann Lee", children: "K, 7" }, startedAt: T0, startedBy: "u-attorney", updatedAt: T0, updatedBy: "u-para", sentAt: T0, sentBy: "u-attorney", sentTo: "u-para", readyAt: T0, readyBy: "u-para" },
+  commission: { mode: "percent", percent: 10, note: "n", setAt: T0, setBy: "u-attorney", paidAt: T0, paidBy: "u-attorney", paidCents: 35000, paidTo: "u-para" },
 };
 const offerLead: Lead = {
   ...lead, id: "l-offer", personId: "p2", firmId: undefined, assignedLawyerId: undefined, previousLawyerId: undefined,
   requestedLawyerId: undefined, clientChoiceLawyerIds: undefined, intakeOwnerId: undefined, state: "NV", urgent: false, county: undefined,
-  assignedParalegalId: undefined, caseSteps: undefined, questionnaire: undefined,
+  assignedParalegalId: undefined, caseSteps: undefined, questionnaire: undefined, commission: undefined,
 };
 const user = (id: string, role: User["role"], more: Partial<User> = {}): Required<User> => ({
   id, email: `${id}@x.test`, name: id, role, firmId: "f1", lawyerId: "lw1", supportsLawyerIds: ["lw1"], personId: "p1", active: true, ...more,
