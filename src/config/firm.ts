@@ -74,14 +74,14 @@ export interface Package {
 }
 
 /**
- * Sitewide disclaimer (Sargun Singh, 2026-10-25, typos fixed). Shown in the footer, on /book and on every
- * public form. The site is a referral network that matches visitors with an attorney.
+ * Sitewide disclaimer (Sargun Singh, 2026-10-25, typos fixed; referral sentence dropped by Angad 2026-11-26 now that the site names Singh & Kaur Law LLC). Shown in the footer, on /book and on every
+ * public form.
  */
 export const SITE_DISCLAIMER =
-  "All information on this website is for educational purposes only. It does not constitute legal advice, and it does not create an attorney-client relationship. This is a referral website: we will match you with an appropriate attorney.";
+  "All information on this website is for educational purposes only. It does not constitute legal advice, and it does not create an attorney-client relationship.";
 
 export const SITE_DISCLAIMER_ES =
-  "Toda la información de este sitio web es solo educativa. No constituye asesoría legal ni crea una relación abogado-cliente. Este es un sitio de referencias: lo pondremos en contacto con un abogado adecuado.";
+  "Toda la información de este sitio web es solo educativa. No constituye asesoría legal ni crea una relación abogado-cliente.";
 
 /**
  * Every price the site shows, in one place. Values come from the attorney. A value can be a price

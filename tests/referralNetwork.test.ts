@@ -22,9 +22,9 @@ describe("referral network setup (Sargun Singh, 2026-10-25)", () => {
     expect(packages.map((p) => p.price)).toEqual(["$2,500", "$3,500", "Custom quote"]);
   });
 
-  it("the disclaimer says the site is a referral website and gives no legal advice", () => {
+  it("the disclaimer says the site is educational and gives no legal advice", () => {
     expect(SITE_DISCLAIMER).toMatch(/educational purposes only/);
-    expect(SITE_DISCLAIMER).toMatch(/referral website/);
+    expect(SITE_DISCLAIMER).not.toMatch(/referral website/);
     expect(SITE_DISCLAIMER).toMatch(/attorney-client relationship/);
   });
 
