@@ -33,7 +33,7 @@ review: pending
 intent: comparison
 ---
 
-Two families, two deaths. In Naperville, Illinois, a retired nurse leaves a house, a checking account and a will. In Princeton, New Jersey, a retired engineer leaves nearly the same list. The paperwork, the offices, the timing and even the tax questions will not match. Most guides to probate describe an average that does not exist, so this page puts two real systems side by side. It is meant for families who own property in both places, for people who might move between them, and for anyone who wants to see how much "probate" varies from one state to the next. The general process is explained in our [probate guide](/learn/probate).
+Two families, two deaths. In Naperville, Illinois, a retired nurse leaves a house, a checking account and a will. In Princeton, New Jersey, a retired engineer leaves nearly the same list. The paperwork, the offices, the timing and even the tax questions will not match. Most guides to probate describe an average that does not exist, so this page puts two real systems side by side. It is meant for families who own property in both places, for people who might move between them, and for anyone who wants to see how much "probate" varies from one state to the next. The general process is explained in our [probate guide](/learn/probate), and the New Jersey rules are collected in our [New Jersey estate planning and probate guide](/learn/new-jersey).
 
 ## Where does a probate case begin in each state?
 

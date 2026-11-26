@@ -20,7 +20,6 @@ answers:
   - "What is the guardianship process in California?"
   - "What is the guardianship process in Florida?"
   - "What is the guardianship process in Georgia?"
-  - "What is the guardianship process in Illinois?"
   - "What is the guardianship process in Massachusetts?"
   - "What is the guardianship process in Michigan?"
   - "What is the guardianship process in New York (Article 81)?"
