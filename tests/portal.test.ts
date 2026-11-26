@@ -74,10 +74,16 @@ describe("after acceptance", async () => {
     expect(view.sections.redFlags?.redFlags).toContain("Possible dispute between siblings");
   });
 
-  it("lets the supporting paralegal in only when they support the assigned attorney", async () => {
-    const para = user("u-paralegal");
-    const access = (await buildCaseView(db, para, "lead-0002", NOW)).access;
-    expect(access).toBe(para.supportsLawyerIds!.includes(offer.lawyerId) ? "full" : "none");
+  it("lets a paralegal in only once the case is assigned to them", async () => {
+    // Supporting the attorney is not enough: a paralegal sees only the cases assigned to them.
+    const para = { ...user("u-paralegal"), supportsLawyerIds: [offer.lawyerId] };
+    await expect(buildCaseView(db, para, "lead-0002", NOW)).rejects.toThrow(ForbiddenError);
+    expect((await visibleLeads(db, para, NOW)).map((x) => x.lead.id)).not.toContain("lead-0002");
+    await db.leads.update("lead-0002", { assignedParalegalId: "u-paralegal" });
+    expect((await buildCaseView(db, para, "lead-0002", NOW)).access).toBe("full");
+    // another paralegal at the same firm still sees nothing
+    const other = { ...para, userId: "u-paralegal-2" };
+    expect(leadAccess(other, (await db.leads.get("lead-0002"))!, [], NOW)).toBe("none");
   });
 
   it("never lets a paralegal approve an engagement", async () => {

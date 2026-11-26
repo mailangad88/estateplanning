@@ -212,6 +212,20 @@ export interface Lead {
   priorTools?: string[];
   /** Browser id used to merge repeat submissions into one person */
   visitorId?: string;
+  /** The paralegal (users.id) working this case. A paralegal sees only the cases assigned to them. */
+  assignedParalegalId?: string;
+  /** Legal steps after the fee is paid, ticked off by the case team (src/lib/caseJourney.ts) */
+  caseSteps?: Partial<Record<CaseStepKey, CaseStepRecord>>;
+}
+
+export type CaseStepKey = "documents_gathered" | "drafted" | "attorney_review" | "client_review" | "signed" | "funded" | "closed";
+
+export interface CaseStepRecord {
+  status: "done" | "skipped";
+  at: string;
+  /** users.id */
+  by: string;
+  note?: string;
 }
 
 export type AssignmentStatus = "offered" | "accepted" | "declined" | "expired" | "withdrawn";

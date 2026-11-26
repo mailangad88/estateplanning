@@ -4,7 +4,7 @@
  */
 import { randomUUID } from "node:crypto";
 import { audit } from "@/server/audit/log";
-import { assertCan, canOnLead, defaultVisibility, ForbiddenError, writableVisibilities } from "@/server/auth/policy";
+import { assertCan, canOnLead, isCaseParalegal, defaultVisibility, ForbiddenError, writableVisibilities } from "@/server/auth/policy";
 import type { Db } from "@/server/db";
 import { setStage } from "@/server/services/leads";
 import type { Actor, Assignment, Comment, Consult, DocumentKind, DocumentRecord, Lead, Task, Visibility } from "@/server/types";
@@ -161,7 +161,7 @@ export async function recordConsultOutcome(
   const consult = await db.consults.get(consultId);
   if (!consult) throw new Error("Consult not found");
   const { lead } = await load(db, consult.leadId);
-  assertCan(actor.role === "platform_admin" || (actor.role === "attorney" && actor.lawyerId === consult.lawyerId) || (actor.role === "paralegal" && !!actor.supportsLawyerIds?.includes(consult.lawyerId)));
+  assertCan(actor.role === "platform_admin" || (actor.role === "attorney" && actor.lawyerId === consult.lawyerId) || (isCaseParalegal(actor, lead) && lead.assignedLawyerId === consult.lawyerId));
   const next = await db.consults.update(consultId, { status: input.status, outcome: input.outcome, notes: input.notes });
   if (input.status === "held") await setStage(db, actor, lead.id, "consult_held", now);
   await audit(db, actor, { action: "consult.outcome", resourceType: "consult", resourceId: consultId, leadId: lead.id, detail: { status: input.status, outcome: input.outcome }, at: now });

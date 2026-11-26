@@ -111,6 +111,7 @@ export default async function PortalHome() {
 
 function Nav({ actor }: { actor: Actor }) {
   const links: [string, string][] = [];
+  if (can(actor, "view_case_board")) links.push(["/admin/cases", actor.role === "paralegal" ? "Your cases" : "Case board"]);
   if (can(actor, "view_pipeline")) links.push(["/admin/pipeline", "Pipeline"]);
   if (can(actor, "view_referrals")) links.push(["/admin/referrals", "Referrals"]);
   if (can(actor, "view_retainer_templates")) links.push(["/portal/retainers", "Retainer templates"]);

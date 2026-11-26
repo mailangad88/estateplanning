@@ -65,7 +65,7 @@ export const TABLES = {
       t("previousLawyerId", "previous_lawyer_id", true), t("requestedLawyerId", "requested_lawyer_id", true),
       a("clientChoiceLawyerIds", "client_choice_lawyer_ids", true), t("crmId", "crm_id", true),
       t("intakeOwnerId", "intake_owner_id", true), j("capture", "capture", true), a("priorTools", "prior_tools", true),
-      t("visitorId", "visitor_id", true),
+      t("visitorId", "visitor_id", true), t("assignedParalegalId", "assigned_paralegal_id", true), j("caseSteps", "case_steps", true),
     ],
   },
   assignments: {
