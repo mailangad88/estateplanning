@@ -8,6 +8,7 @@
  * Offer-stage cards (no accepted attorney yet) stay on /admin/pipeline and the intake queue.
  */
 import { buildJourney, CASE_PHASES, JOURNEY_STEPS, lastLegalStep, nextActionLabel, nextStep, STAGE_AFTER_LEGAL, type CasePhase, type Journey } from "@/lib/caseJourney";
+import { questionnaireStage, type QuestionnaireStage } from "@/lib/intakeQuestionnaire";
 import { audit } from "@/server/audit/log";
 import { assertCan, can, canOnLead, ForbiddenError, requireMfa } from "@/server/auth/policy";
 import type { Db } from "@/server/db";
@@ -28,6 +29,8 @@ export interface CaseCard {
   paralegalName?: string;
   journey: Journey;
   nextAction: string;
+  /** Where the intake questionnaire is */
+  questionnaire: QuestionnaireStage;
   /** Mine: assigned to the viewer (as paralegal) or the viewer's own case (as attorney) */
   mine: boolean;
 }
@@ -83,6 +86,7 @@ export async function caseBoard(db: Db, actor: Actor, filters: CaseBoardFilters 
       paralegalName: para?.name ?? (lead.assignedParalegalId ? "Paralegal" : undefined),
       journey,
       nextAction: nextActionLabel(journey),
+      questionnaire: questionnaireStage(lead),
       mine: actor.role === "paralegal" ? lead.assignedParalegalId === actor.userId : actor.role === "attorney" ? lead.assignedLawyerId === actor.lawyerId : false,
     });
   }
@@ -169,6 +173,7 @@ export async function caseJourney(db: Db, actor: Actor, leadId: string, now = ne
     paralegalName: para?.name,
     journey,
     nextAction: nextActionLabel(journey),
+    questionnaire: questionnaireStage(lead),
     mine: lead.assignedParalegalId === actor.userId || (!!actor.lawyerId && lead.assignedLawyerId === actor.lawyerId),
   };
   const mayUpdate = canOnLead(actor, "update_case_steps", lead, assignments, now) && !lead.exit;

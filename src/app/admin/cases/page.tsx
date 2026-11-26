@@ -19,6 +19,8 @@ function hrefWith(sp: Search, patch: Partial<Search>): string {
   return s ? `/admin/cases?${s}` : "/admin/cases";
 }
 
+const Q_CHIP: Record<string, string> = { attorney: "Questionnaire: attorney filling in", paralegal: "Questionnaire: with paralegal", ready_for_review: "Questionnaire: ready for attorney" };
+
 function Card({ card, showParalegal }: { card: CaseCard; showParalegal: boolean }) {
   const j = card.journey;
   return (
@@ -41,6 +43,7 @@ function Card({ card, showParalegal }: { card: CaseCard; showParalegal: boolean 
         {j.closed && <span className={`${styles.chip} ${styles.chipDone}`}>{j.percent}%</span>}
       </p>
       <p className={styles.next}>Next: {card.nextAction}</p>
+      {Q_CHIP[card.questionnaire] && <p className={styles.next}><span className={`${styles.chip} ${styles.chipQ}`}>{Q_CHIP[card.questionnaire]}</span></p>}
       <div className={styles.people}>
         <span className={styles.person} title="Attorney"><span className={styles.avatar}>{initials(card.lawyerName)}</span>{card.lawyerName?.replace(/,?\s*Esq\.?$/i, "")}</span>
         {showParalegal && (card.paralegalName ? (

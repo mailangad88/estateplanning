@@ -4,6 +4,8 @@ import { ForbiddenError } from "@/server/auth/policy";
 import { createMemoryDb, type Db } from "@/server/db";
 import { actorFor, DEMO_FIRM_ID, DEMO_USERS, seedDemo } from "@/server/seed";
 import { assignParalegal, caseBoard, caseJourney, updateCaseStep } from "@/server/services/caseBoard";
+import { caseComments, markQuestionnaireReady, postCaseComment, questionnaireView, saveQuestionnaire, sendToParalegal } from "@/server/services/questionnaire";
+import { ALL_FIELDS, cleanAnswers, questionnaireStage } from "@/lib/intakeQuestionnaire";
 import type { Actor, Lead } from "@/server/types";
 
 const NOW = new Date("2026-11-26T15:00:00Z");
@@ -135,7 +137,10 @@ describe("ticking off journey steps", () => {
     }
     await expect(updateCaseStep(db, para(), "case-paid", "signed", "skip", undefined, NOW)).rejects.toThrow();
     await updateCaseStep(db, para(), "case-paid", "funded", "skip", "Will-only plan", NOW);
-    const lead = await updateCaseStep(db, para(), "case-paid", "closed", "done", undefined, NOW);
+    await updateCaseStep(db, para(), "case-paid", "delivered", "done", "Originals handed over", NOW);
+    // closing the file is the attorney's call
+    await expect(updateCaseStep(db, para(), "case-paid", "closed", "done", undefined, NOW)).rejects.toThrow(/Only the attorney/);
+    const lead = await updateCaseStep(db, attorneyA(), "case-paid", "closed", "done", undefined, NOW);
     expect(lead.stage).toBe("plan_complete");
     const j = buildJourney(lead, NOW);
     expect(j.closed).toBe(true);
@@ -163,5 +168,76 @@ describe("ticking off journey steps", () => {
 
   it("covers every step with a stage or a legal key", () => {
     for (const s of JOURNEY_STEPS) expect(Boolean(s.doneAtStage) !== Boolean(s.legal), s.key).toBe(true);
+  });
+});
+
+const FULL: Record<string, string> = Object.fromEntries(
+  ALL_FIELDS.filter((f) => f.required).map((f) => [f.id, f.type === "select" ? f.options![0] : f.type === "yesno" ? "Yes" : "Filled in"]),
+);
+
+describe("intake questionnaire", () => {
+  it("starts from what intake knows and keeps only known, valid answers", async () => {
+    const v = await questionnaireView(db, attorneyA(), "case-open", NOW);
+    expect(v.prefilled).toBe(true);
+    expect(v.answers.client_full_name).toBe("Taylor Rivera");
+    expect(v.answers.spouse_name).toBe("Jamie Rivera");
+    expect(cleanAnswers({ marital_status: "Married", bogus: "x", joint_plan: "maybe", client_dob: "not a date" })).toEqual({ marital_status: "Married" });
+  });
+
+  it("goes attorney -> paralegal -> ready -> signed off, with the hand-offs on the thread", async () => {
+    await saveQuestionnaire(db, attorneyA(), "case-open", { client_full_name: "Taylor Rivera" }, NOW);
+    expect(questionnaireStage((await db.leads.get("case-open"))!)).toBe("attorney");
+    // the paralegal cannot see the unassigned case yet
+    await expect(questionnaireView(db, para(), "case-open", NOW)).rejects.toThrow(ForbiddenError);
+    await sendToParalegal(db, attorneyA(), "case-open", "u-paralegal", "Collect the deed please", NOW);
+    let lead = (await db.leads.get("case-open"))!;
+    expect(lead.assignedParalegalId).toBe("u-paralegal");
+    expect(questionnaireStage(lead)).toBe("paralegal");
+    const v = await questionnaireView(db, para(), "case-open", NOW);
+    expect(v.canEdit).toBe(true);
+    expect(v.canSend).toBe(false);
+    expect(v.comments.map((c) => c.body)[0]).toMatch(/Sent the intake questionnaire to Casey Paralegal[\s\S]*Collect the deed/);
+    // not ready while required answers are empty
+    await expect(markQuestionnaireReady(db, para(), "case-open", undefined, NOW)).rejects.toThrow(/required/);
+    await saveQuestionnaire(db, para(), "case-open", FULL, NOW);
+    await postCaseComment(db, para(), "case-open", "Deed received", NOW);
+    await markQuestionnaireReady(db, para(), "case-open", undefined, NOW);
+    lead = (await db.leads.get("case-open"))!;
+    expect(questionnaireStage(lead)).toBe("ready_for_review");
+    // the attorney sees the whole thread
+    expect((await caseComments(db, attorneyA(), "case-open")).map((c) => c.authorId)).toEqual(["u-lawyer-a", "u-paralegal", "u-paralegal"]);
+  });
+
+  it("ticks off 'Info + documents gathered' when marked ready on that step, and locks after attorney review", async () => {
+    await saveQuestionnaire(db, attorneyA(), "case-paid", FULL, NOW);
+    await sendToParalegal(db, attorneyA(), "case-paid", "u-paralegal", undefined, NOW);
+    const lead = await markQuestionnaireReady(db, para(), "case-paid", undefined, NOW);
+    expect(lead.caseSteps?.documents_gathered?.note).toBe("Intake questionnaire complete");
+    await updateCaseStep(db, para(), "case-paid", "drafted", "done", undefined, NOW);
+    await updateCaseStep(db, attorneyA(), "case-paid", "attorney_review", "done", undefined, NOW);
+    expect(questionnaireStage((await db.leads.get("case-paid"))!)).toBe("signed_off");
+    await expect(saveQuestionnaire(db, para(), "case-paid", FULL, NOW)).rejects.toThrow(/locked/);
+    expect((await questionnaireView(db, para(), "case-paid", NOW)).canEdit).toBe(false);
+  });
+
+  it("lets only the attorney side send, and keeps the office read-only", async () => {
+    await saveQuestionnaire(db, attorneyA(), "case-paid", { client_full_name: "X" }, NOW);
+    await expect(sendToParalegal(db, para(), "case-paid", "u-para-2", undefined, NOW)).rejects.toThrow(ForbiddenError);
+    await expect(saveQuestionnaire(db, user("u-firmadmin"), "case-paid", FULL, NOW)).rejects.toThrow(ForbiddenError);
+    expect((await questionnaireView(db, user("u-firmadmin"), "case-paid", NOW)).canSend).toBe(true);
+    await expect(saveQuestionnaire(db, para2, "case-paid", FULL, NOW)).rejects.toThrow(ForbiddenError);
+  });
+
+  it("changes only the fields sent, so a partial save keeps the rest", async () => {
+    await saveQuestionnaire(db, attorneyA(), "case-open", { client_full_name: "Taylor Rivera", children: "Two" }, NOW);
+    const lead = await saveQuestionnaire(db, attorneyA(), "case-open", { children: "" , home: "Condo" }, NOW);
+    expect(lead.questionnaire?.answers).toEqual({ client_full_name: "Taylor Rivera", home: "Condo" });
+  });
+
+  it("records which fields changed in the audit log, never the answers", async () => {
+    await saveQuestionnaire(db, attorneyA(), "case-open", { client_full_name: "Secret Name", attorney_notes: "private" }, NOW);
+    const ev = (await db.audit.list((e) => e.action === "questionnaire.save")).at(-1)!;
+    expect(ev.detail).toEqual({ fields: expect.arrayContaining(["client_full_name", "attorney_notes"]) });
+    expect(JSON.stringify(ev)).not.toContain("Secret Name");
   });
 });

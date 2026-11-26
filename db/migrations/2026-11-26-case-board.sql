@@ -1,4 +1,4 @@
--- 2026-11-26 case board: per-case paralegal assignment and the legal steps after payment.
+-- 2026-11-26 case board: per-case paralegal assignment, the legal steps after payment and the intake questionnaire.
 -- For a database created from db/schema.sql before this date (for example the live Neon database set up
 -- from neon-setup.sql). Run once as the schema owner, before deploying the code that reads these columns:
 --   psql "$DATABASE_URL_OWNER" -v ON_ERROR_STOP=1 -f db/migrations/2026-11-26-case-board.sql
@@ -7,6 +7,7 @@ BEGIN;
 
 ALTER TABLE leads ADD COLUMN IF NOT EXISTS assigned_paralegal_id text REFERENCES users(id);
 ALTER TABLE leads ADD COLUMN IF NOT EXISTS case_steps jsonb;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS questionnaire jsonb;
 CREATE INDEX IF NOT EXISTS leads_paralegal_idx ON leads (assigned_paralegal_id) WHERE assigned_paralegal_id IS NOT NULL;
 
 -- Paralegals now see only the cases assigned to them (was: every case of the attorneys they support).

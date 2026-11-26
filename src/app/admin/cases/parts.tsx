@@ -1,4 +1,5 @@
 import { CASE_PHASES } from "@/lib/caseJourney";
+import type { Comment } from "@/server/types";
 import type { CaseCard } from "@/server/services/caseBoard";
 import styles from "./cases.module.css";
 
@@ -31,3 +32,32 @@ export function StepTrack({ card }: { card: CaseCard }) {
   );
 }
 
+
+const stamp = (iso: string) => new Date(iso).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+
+/** The case's comment thread (firm-visible) with a box to add to it. */
+export function CaseThread({ comments, leadId, viewerId, back }: { comments: Comment[]; leadId: string; viewerId: string; back?: "intake" }) {
+  return (
+    <section className={styles.panel} id="thread" aria-label="Case thread">
+      <h2>Case thread</h2>
+      {comments.length === 0 ? <p className={styles.stepHint}>No comments yet. Notes here are seen by the attorney, the paralegal and the office, never the client.</p> : (
+        <ol className={styles.thread}>
+          {comments.map((c) => (
+            <li key={c.id} className={`${styles.msg} ${c.authorId === viewerId ? styles.msgMine : ""}`}>
+              <span className={`${styles.avatar} ${c.authorId === viewerId ? styles.avatarPara : ""}`} aria-hidden>{initials(c.authorName)}</span>
+              <div>
+                <div className={styles.msgMeta}><b>{c.authorName}</b> · {stamp(c.createdAt)}</div>
+                <div className={styles.msgBody}>{c.body}</div>
+              </div>
+            </li>
+          ))}
+        </ol>
+      )}
+      <form className={styles.threadForm} method="post" action={`/api/admin/cases/${leadId}/comments${back ? `?back=${back}` : ""}`}>
+        <label className={styles.stepHint} htmlFor={`comment-${leadId}`}>Add a comment for the case team</label>
+        <textarea id={`comment-${leadId}`} name="body" required maxLength={10000} placeholder="e.g. Client is sending the deed by Friday" />
+        <button className="button small" type="submit">Post comment</button>
+      </form>
+    </section>
+  );
+}

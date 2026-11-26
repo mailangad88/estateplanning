@@ -216,9 +216,27 @@ export interface Lead {
   assignedParalegalId?: string;
   /** Legal steps after the fee is paid, ticked off by the case team (src/lib/caseJourney.ts) */
   caseSteps?: Partial<Record<CaseStepKey, CaseStepRecord>>;
+  /** The attorney's intake questionnaire (src/lib/intakeQuestionnaire.ts), handed to the paralegal to complete */
+  questionnaire?: QuestionnaireRecord;
 }
 
-export type CaseStepKey = "documents_gathered" | "drafted" | "attorney_review" | "client_review" | "signed" | "funded" | "closed";
+export interface QuestionnaireRecord {
+  /** field id -> answer */
+  answers: Record<string, string>;
+  startedAt: string;
+  startedBy: string;
+  updatedAt: string;
+  updatedBy: string;
+  /** Sent to the paralegal: when, by whom, to whom */
+  sentAt?: string;
+  sentBy?: string;
+  sentTo?: string;
+  /** The paralegal marked it complete and ready for the attorney */
+  readyAt?: string;
+  readyBy?: string;
+}
+
+export type CaseStepKey = "documents_gathered" | "drafted" | "attorney_review" | "client_review" | "signed" | "funded" | "delivered" | "closed";
 
 export interface CaseStepRecord {
   status: "done" | "skipped";

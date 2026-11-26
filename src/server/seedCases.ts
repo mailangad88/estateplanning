@@ -7,6 +7,7 @@ import type { Db } from "@/server/db";
 import { actorFor, DEMO_FIRM_ID, DEMO_USERS, demoRecord } from "@/server/seed";
 import { assignParalegal, updateCaseStep } from "@/server/services/caseBoard";
 import { exitLead, ingestLead, setStage } from "@/server/services/leads";
+import { postCaseComment, saveQuestionnaire, sendToParalegal } from "@/server/services/questionnaire";
 import type { Actor, Stage } from "@/server/types";
 
 const DAY = 86_400_000;
@@ -41,7 +42,7 @@ export async function seedCaseDemo(db: Db, now = new Date()): Promise<void> {
     { id: "case-0106", first: "Ben", last: "Ortiz", business: true, lawyer: "lawyer-b", para: drew, upTo: "paid", daysAgo: 30, legal: [["documents_gathered", "done"], ["drafted", "done", "Trust, pour-over will, POAs"]], idle: 1 },
     { id: "case-0107", first: "Hannah", last: "Wells", lawyer: "lawyer-a", para: casey, upTo: "paid", daysAgo: 38, legal: [["documents_gathered", "done"], ["drafted", "done"], ["attorney_review", "done"], ["client_review", "done", "One revision: changed successor trustee"]], idle: 4 },
     { id: "case-0108", first: "Leo", last: "Fischer", lawyer: "lawyer-a", para: drew, upTo: "paid", daysAgo: 52, legal: [["documents_gathered", "done"], ["drafted", "done"], ["attorney_review", "done"], ["client_review", "done"], ["signed", "done", "Signed at the office with two witnesses"]], idle: 9 },
-    { id: "case-0109", first: "Sofia", last: "Reyes", lawyer: "lawyer-b", para: casey, upTo: "paid", daysAgo: 70, legal: [["documents_gathered", "done"], ["drafted", "done"], ["attorney_review", "done"], ["client_review", "done"], ["signed", "done"], ["funded", "skip", "Will-only plan, nothing to fund"], ["closed", "done"]], idle: 5 },
+    { id: "case-0109", first: "Sofia", last: "Reyes", lawyer: "lawyer-b", para: casey, upTo: "paid", daysAgo: 70, legal: [["documents_gathered", "done"], ["drafted", "done"], ["attorney_review", "done"], ["client_review", "done"], ["signed", "done"], ["funded", "skip", "Will-only plan, nothing to fund"], ["delivered", "done", "Originals handed over at the office"], ["closed", "done"]], idle: 5 },
     { id: "case-0110", first: "Isaac", last: "Moore", lawyer: "lawyer-a", upTo: "consult_held", daysAgo: 15, exit: "chose_another_option", idle: 7 },
   ];
 
@@ -67,10 +68,32 @@ export async function seedCaseDemo(db: Db, now = new Date()): Promise<void> {
     if (s.para) await assignParalegal(db, lawyerActor, lead.id, s.para.userId, new Date(Math.min(t, end)));
     for (const [step, action, note] of legal) {
       t += gap;
-      const who = step === "attorney_review" ? lawyerActor : s.para ?? lawyerActor;
+      const who = step === "attorney_review" || step === "closed" ? lawyerActor : s.para ?? lawyerActor;
       await updateCaseStep(db, who, lead.id, step, action, note, new Date(Math.min(t, end)));
     }
     if (s.exit) await exitLead(db, sys, lead.id, s.exit, "Went with a family friend's attorney", new Date(end));
+  }
+
+  // Questionnaires: one the attorney is still filling in, one handed to Casey with a back-and-forth on the thread.
+  const ago = (h: number) => new Date(now.getTime() - h * 3_600_000);
+  const elena = await db.leads.get("case-0101");
+  if (elena && !elena.questionnaire) {
+    await saveQuestionnaire(db, avery, elena.id, { client_full_name: "Elena Brooks", marital_status: "Married", spouse_name: "Sam Brooks", joint_plan: "Yes", children: "Mia, 6\nNoah, 3", estimated_total: "$250k to $1M" }, ago(20));
+  }
+  const owen = await db.leads.get("case-0104");
+  if (owen && !owen.questionnaire) {
+    await saveQuestionnaire(db, avery, owen.id, {
+      client_full_name: "Owen Carter", client_address: "412 Oak St, Naperville, DuPage County", marital_status: "Married", spouse_name: "Lena Carter", joint_plan: "Yes",
+      children: "Ava, 9\nLiam, 5", special_needs: "No", home: "Naperville home, joint tenancy, about $520k, mortgage $210k", bank_brokerage: "Chase checking and savings ~$40k; Fidelity brokerage ~$120k",
+      retirement: "Owen 401(k) ~$300k (Lena primary); Lena IRA ~$80k", estimated_total: "$1M to $4M", beneficiaries: "Each other first, then the children equally in trust",
+      executor: "Each other, then Owen's sister Kate Carter", guardian: "Kate Carter and her husband, backup Lena's parents", age_of_distribution: "Thirds at 25, 30, 35",
+      package: "Second tier ($3,500)", recommended_documents: "Joint revocable trust, two pour-over wills, POAs for property and health care, deed to the trust",
+      documents_to_collect: "Current deed, Fidelity and 401(k) beneficiary forms, life insurance policies", funding_needed: "Yes",
+      attorney_notes: "Estate near the $4M Illinois line if life insurance counts. Ask about the term policies before drafting.",
+    }, ago(70));
+    await sendToParalegal(db, avery, owen.id, "u-paralegal", "Please collect the deed and the insurance policies, then fill in the POA agents.", ago(68));
+    await postCaseComment(db, casey, owen.id, "Called Lena. Deed and Fidelity forms by email tomorrow; she is checking which term policies they still have.", ago(30));
+    await postCaseComment(db, avery, owen.id, "Thanks. If the term policies are over $1M combined, flag it to me before drafting.", ago(26));
   }
 
   // The retainer demo's paid case belongs to Casey too, so the paralegal sign-in shows a mix.

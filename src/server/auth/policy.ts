@@ -89,6 +89,7 @@ export type LeadAction =
   | "refer_lead"
   | "assign_paralegal"
   | "update_case_steps"
+  | "edit_questionnaire"
   | "export";
 
 export function canOnLead(actor: Actor, action: LeadAction, lead: Lead, assignments: Assignment[], now = new Date()): boolean {
@@ -134,6 +135,9 @@ export function canOnLead(actor: Actor, action: LeadAction, lead: Lead, assignme
       // The case team ticks off journey steps on an accepted case. Attorney-only steps (attorney review)
       // are checked again in src/server/services/caseBoard.ts.
       return access === "full" && !!lead.assignedLawyerId && ["platform_admin", "firm_admin", "attorney", "paralegal"].includes(actor.role);
+    case "edit_questionnaire":
+      // The attorney fills in the intake questionnaire, the case's paralegal completes it. Firm admins read it.
+      return access === "full" && !!lead.assignedLawyerId && ["platform_admin", "attorney", "paralegal"].includes(actor.role);
     case "export":
       return actor.role === "platform_admin" && process.env.PORTAL_EXPORT_ENABLED === "true";
   }

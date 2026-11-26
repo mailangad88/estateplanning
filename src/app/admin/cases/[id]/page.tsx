@@ -4,8 +4,10 @@ import { CASE_PHASES } from "@/lib/caseJourney";
 import { can, ForbiddenError } from "@/server/auth/policy";
 import { currentActor, getDb, scopedDb } from "@/server/runtime";
 import { caseJourney } from "@/server/services/caseBoard";
+import { caseComments } from "@/server/services/questionnaire";
+import { questionnaireProgress, questionnaireStage, QUESTIONNAIRE_STAGES } from "@/lib/intakeQuestionnaire";
 import styles from "../cases.module.css";
-import { TONE } from "../parts";
+import { CaseThread, TONE } from "../parts";
 
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Case journey", robots: { index: false, follow: false } };
@@ -25,7 +27,7 @@ function Ring({ percent, done, total }: { percent: number; done: number; total: 
   );
 }
 
-type Search = { updated?: string; assigned?: string; error?: string };
+type Search = { updated?: string; assigned?: string; ok?: string; error?: string };
 
 export default async function CaseJourneyPage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<Search> }) {
   const actor = await currentActor();
@@ -34,8 +36,9 @@ export default async function CaseJourneyPage({ params, searchParams }: { params
   const { id } = await params;
   const sp = await searchParams;
   let view;
+  const db = scopedDb(await getDb(), actor);
   try {
-    view = await caseJourney(scopedDb(await getDb(), actor), actor, id);
+    view = await caseJourney(db, actor, id);
   } catch (err) {
     if (err instanceof ForbiddenError || (err instanceof Error && /not found/i.test(err.message))) {
       return <div className={styles.board}><p><Link href="/admin/cases">← Cases</Link></p><p>This case is not assigned to you, or it does not exist.</p></div>;
@@ -43,6 +46,10 @@ export default async function CaseJourneyPage({ params, searchParams }: { params
     throw err;
   }
   const { card, canComplete, canUndo, canAssign, paralegalChoices, people } = view;
+  const comments = await caseComments(db, actor, card.leadId);
+  const qStage = questionnaireStage(view.lead);
+  const qProgress = view.lead.questionnaire ? questionnaireProgress(view.lead.questionnaire.answers) : undefined;
+  const qLabel = qStage === "not_started" ? "Not started" : QUESTIONNAIRE_STAGES.find((s) => s.key === qStage)?.label;
   const j = card.journey;
   const phaseIndex = CASE_PHASES.findIndex((p) => p.key === j.phase);
   const updatedLabel = sp.updated ? j.steps.find((s) => s.key === sp.updated)?.label : undefined;
@@ -53,6 +60,7 @@ export default async function CaseJourneyPage({ params, searchParams }: { params
       {sp.error && <p className={`${styles.flash} ${styles.flashErr}`} role="alert">{sp.error}</p>}
       {updatedLabel && <p className={`${styles.flash} ${styles.flashOk}`} role="status">Updated: {updatedLabel}</p>}
       {sp.assigned && <p className={`${styles.flash} ${styles.flashOk}`} role="status">Paralegal updated.</p>}
+      {sp.ok === "comment" && <p className={`${styles.flash} ${styles.flashOk}`} role="status">Comment posted.</p>}
 
       <header className={styles.caseHead}>
         <Ring percent={j.percent} done={j.done} total={j.total} />
@@ -155,6 +163,13 @@ export default async function CaseJourneyPage({ params, searchParams }: { params
 
         <aside className={styles.side}>
           <section className={styles.panel}>
+            <h2>Intake questionnaire</h2>
+            <p><span className={`${styles.chip} ${qStage === "signed_off" ? styles.chipDone : styles.chipQ}`}>{qLabel}</span></p>
+            {qProgress && <><div className={styles.qBar}><span style={{ width: `${qProgress.percent}%` }} /></div><p className={styles.stepHint}>{qProgress.percent}% of required answers</p></>}
+            <p><Link className="button small" href={`/admin/cases/${card.leadId}/intake`}>{qStage === "not_started" ? "Start the questionnaire" : "Open the questionnaire"}</Link></p>
+          </section>
+          <CaseThread comments={comments} leadId={card.leadId} viewerId={actor.userId} />
+          <section className={styles.panel}>
             <h2>Paralegal</h2>
             {canAssign ? (
               <form method="post" action={`/api/admin/cases/${card.leadId}/paralegal`}>
@@ -173,7 +188,7 @@ export default async function CaseJourneyPage({ params, searchParams }: { params
             <h2>How this works</h2>
             <p>Steps go in order. Ticking one off records who and when in the case's audit log.</p>
             <p>Pipeline steps (consult, retainer, payment) also move on their own when the booking, e-sign or payment flow records them.</p>
-            <p>Attorney review is signed off by the attorney only. Every package includes one round of client revisions.</p>
+            <p>Attorney review (which also signs off the questionnaire) and closing the file are for the attorney only. Every package includes one round of client revisions.</p>
           </section>
           <section className={styles.panel}>
             <h2>Case file</h2>

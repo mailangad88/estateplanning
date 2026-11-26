@@ -16,7 +16,7 @@ export const CASE_PHASES = [
   { key: "consult", label: "Consult", tone: "gold" },
   { key: "retainer", label: "Retainer", tone: "terracotta" },
   { key: "drafting", label: "Drafting", tone: "teal" },
-  { key: "signing", label: "Signing & funding", tone: "sage" },
+  { key: "signing", label: "Sign, fund, deliver", tone: "sage" },
   { key: "closed", label: "Closed", tone: "deep" },
 ] as const;
 export type CasePhase = (typeof CASE_PHASES)[number]["key"];
@@ -55,7 +55,8 @@ export const JOURNEY_STEPS: JourneyStepDef[] = [
   { key: "client_review", label: "Client review (1 revision)", hint: "Client read the drafts; one round of changes", phase: "drafting", legal: "client_review", staleAfterDays: 7 },
   { key: "signed", label: "Signing ceremony", hint: "Signed with witnesses and notary", phase: "signing", legal: "signed", staleAfterDays: 14 },
   { key: "funded", label: "Trust funding", hint: "Deeds and accounts retitled to the trust", phase: "signing", legal: "funded", skippable: true, staleAfterDays: 21 },
-  { key: "closed", label: "Closed", hint: "Originals delivered, file closed", phase: "closed", legal: "closed", staleAfterDays: 9999 },
+  { key: "delivered", label: "Plan delivered", hint: "Signed originals and digital copies to the client", phase: "signing", legal: "delivered", staleAfterDays: 7 },
+  { key: "closed", label: "File closed", hint: "Attorney closed the file", phase: "closed", legal: "closed", attorneyOnly: true, staleAfterDays: 9999 },
 ];
 
 export const LEGAL_STEP_KEYS = JOURNEY_STEPS.filter((s) => s.legal).map((s) => s.legal!) as CaseStepKey[];
@@ -200,7 +201,8 @@ export function nextActionLabel(journey: Journey): string {
     client_review: "Client reviews the drafts",
     signed: "Hold the signing ceremony",
     funded: "Fund the trust",
-    closed: "Deliver originals and close the file",
+    delivered: "Deliver the plan to the client",
+    closed: "Attorney closes the file",
   };
   return todo[c.key] ?? c.label;
 }
