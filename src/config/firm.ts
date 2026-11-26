@@ -11,6 +11,13 @@ export const firm = {
   firmLegalName: "Singh & Kaur Law LLC",
   attorneyName: "Sargun Singh",
   attorneyTitle: "Estate planning attorney",
+  /**
+   * Whether the attorney's name may appear on public pages or in structured data. Off (Angad, 2026-11-06):
+   * the site names no attorney; review stays a process, unnamed. Internal screens still use attorneyName.
+   */
+  publishAttorneyName: false,
+  /** How public pages refer to the reviewer while the name is not published. */
+  attorneyPublicLabel: "a licensed Illinois estate planning attorney",
   /** Intake line, answered by the attorney (Angad, 2026-11-06). */
   phone: "(630) 656-3059",
   /** Public contact email for the site (a company address, separate from the attorney). */

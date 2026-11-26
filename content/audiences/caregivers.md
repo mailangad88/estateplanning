@@ -36,7 +36,7 @@ faqs:
   - q: "What does a guardianship cost and how long does it take?"
     a: "It varies widely by state and by whether anyone objects. It usually involves court fees, a medical evaluation, often a court-appointed attorney or visitor, and ongoing reports. Ask on your first call whether the attorney handles guardianship petitions. See [pricing](/pricing) for how fees work."
   - q: "We live in a different state from our parent. Does that matter?"
-    a: "Yes. Documents should fit the state where your parent lives. Family Future Planning matches families with attorneys in Illinois and New Jersey. If your parent lives in another state, we will tell you so and suggest that state's bar referral service."
+    a: "Yes. Documents should fit the state where your parent lives. Family Future Planning matches families with attorneys in Illinois. If your parent lives in another state, we will tell you so and suggest that state's bar referral service."
 reviewed: false
 updated: "2026-10-06"
 ---

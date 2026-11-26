@@ -63,7 +63,7 @@ updated: "2026-10-06"
 | Backup agents | Local backups in each state. |
 | Long-term care conversation | What coverage you have and what Medicaid would require. |
 
-**Limits.** Family Future Planning matches you with attorneys in Illinois and New Jersey. Tax advice for the other state, and deeds or court filings there, usually need a lawyer licensed in that state. That state's bar referral service can help you find one.
+**Limits.** Family Future Planning matches you with attorneys in Illinois. Tax advice for the other state, and deeds or court filings there, usually need a lawyer licensed in that state. That state's bar referral service can help you find one.
 
 **An honest limit.** If your second home is in another state, you may need a second lawyer, and a good attorney will say so.
 

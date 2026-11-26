@@ -40,7 +40,7 @@ reviewed: false
 updated: "2026-10-06"
 ---
 
-**Who we are.** Family Future Planning is a private referral service that matches you with an estate planning attorney in our network in Illinois or New Jersey. We are not part of the Department of Defense, the VA or any military legal assistance office.
+**Who we are.** Family Future Planning is a private referral service that matches you with an estate planning attorney in our network in Illinois. We are not part of the Department of Defense, the VA or any military legal assistance office.
 
 ## What is at stake
 
