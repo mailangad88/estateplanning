@@ -194,7 +194,7 @@ export async function portalHome(db: Db, actor: Actor, now = new Date()): Promis
     if (can(actor, "view_commissions")) actions.push({ href: "/admin/commissions", label: "My commission" });
   } else {
     await freshWork();
-    const unassigned = openCards.filter((c) => !c.paralegalId && c.journey.current?.legal).length;
+    const unassigned = openCards.filter((c) => !c.paralegalId).length;
     kpis.push({ key: "new", label: "New leads to contact", value: String(fresh.length), tone: fresh.length ? "danger" : "good", href: "#work" });
     if (cards.length || can(actor, "view_case_board")) {
       kpis.push(
