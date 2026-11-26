@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+Jackson County families in Murphysboro and Carbondale can read [how probate works in Jackson County, Illinois](/learn/illinois/how-probate-works-in-jackson-county-illinois), which covers the courthouse, the Circuit Clerk, filing the will and what happens when someone dies with no will.
+
+Probate in Ogle County: [how probate works in Ogle County, Illinois](/learn/illinois/how-probate-works-in-ogle-county), covering the Oregon Judicial Center, the Circuit Clerk, remote hearings and an executor who lives out of state.
+
+Settling an estate in Belvidere or elsewhere in Boone County? Read [how probate works in Boone County, Illinois](/learn/illinois/how-probate-works-in-boone-county-illinois) for the courthouse, e-filing, self-help and why a house needs more than a small estate affidavit.
+
 Families in Quincy and across the county can read [how probate works in Adams County, Illinois](/learn/illinois/how-probate-works-in-adams-county-illinois), including where to file the original will and what to do if a relative suspects a caregiver pressured the parent.
 
 Vermilion County, Illinois families can see where the Danville Circuit Clerk is, what to do with the original will and how a modest estate avoids court costs in [How probate works in Vermilion County, Illinois](/learn/illinois/how-probate-works-in-vermilion-county).
