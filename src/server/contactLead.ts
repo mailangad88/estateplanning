@@ -1,4 +1,4 @@
-import { US_STATES, servedStates } from "@/config/firm";
+import { LAUNCH_STATE, US_STATES, servedStates } from "@/config/firm";
 import type { buildConsentRecord } from "@/lib/consent";
 import type { LeadRecord } from "@/lib/crm";
 import { scoreLead } from "@/lib/scoring";
@@ -16,9 +16,10 @@ type Consent = ReturnType<typeof buildConsentRecord>;
  */
 export function contactLeadRecord(input: SubscribeInput, id: string, now: Date, consent: Consent, pageUrl: string): LeadRecord {
   const served = servedStates();
-  const state = input.state && (US_STATES as readonly string[]).includes(input.state.toUpperCase())
-    ? (input.state.toUpperCase() as LeadRecord["contact"]["state"])
-    : ((served[0] ?? "IL") as LeadRecord["contact"]["state"]);
+  const isState = (s: string | undefined): s is string => !!s && (US_STATES as readonly string[]).includes(s.toUpperCase());
+  // The call-back form does not ask for a state; the visitor is booking with the launch-state network.
+  const fallback = served.find(isState) ?? LAUNCH_STATE.abbr;
+  const state = (isState(input.state) ? input.state.toUpperCase() : fallback) as LeadRecord["contact"]["state"];
   const result = input.details
     ? Object.fromEntries(
         Object.entries(input.details)

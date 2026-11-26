@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { buildConsentRecord } from "@/lib/consent";
 import { subscribeSchema } from "@/lib/subscribe";
 import { CONTACT_KINDS, contactLeadRecord } from "@/server/contactLead";
@@ -8,6 +8,9 @@ const now = new Date("2026-11-26T20:37:00.000Z");
 const consent = buildConsentRecord({ smsConsent: false, acknowledgedNoRelationship: false, pageUrl: "", ip: null, userAgent: null, now });
 
 describe("call-back requests become leads", () => {
+  beforeEach(() => vi.stubEnv("SERVED_STATES", "IL"));
+  afterEach(() => vi.unstubAllEnvs());
+
   it("treats call-backs and questions as contact requests, not list sign-ups", () => {
     expect(CONTACT_KINDS.has("callback")).toBe(true);
     expect(CONTACT_KINDS.has("question")).toBe(true);
@@ -42,5 +45,11 @@ describe("call-back requests become leads", () => {
     const lead = contactLeadRecord(input, "id-3", now, consent, "");
     expect(lead.contactMethod).toBe("email");
     expect(lead.contact.firstName).toBe("Website visitor");
+  });
+
+  it("never stores the XX placeholder as a state", () => {
+    vi.stubEnv("SERVED_STATES", "XX");
+    const input = subscribeSchema.parse({ kind: "callback", interest: "book", email: "a@example.com", phone: "3125550100" });
+    expect(contactLeadRecord(input, "id-4", now, consent, "").contact.state).toBe("IL");
   });
 });
