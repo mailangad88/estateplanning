@@ -1,13 +1,13 @@
 ---
-title: "Who can witness a will in Illinois or New Jersey?"
-description: "Who can witness a will in Illinois or New Jersey: two adults who gain nothing from it. See who to avoid, what happens if a beneficiary signs, and how to sign."
-updated: "2026-10-26"
+title: "Who can witness a will in Illinois?"
+description: "Who can witness a will in Illinois: two adults who gain nothing from it. See who to avoid, what happens if a beneficiary signs, and how to sign."
+updated: "2026-11-26"
 answer: >-
-  Both Illinois and New Jersey require two witnesses, and the safest choice is two adults who receive nothing under the will and are not married to anyone who does. In Illinois, a witness who is also a beneficiary can lose the gift. New Jersey is gentler, but a beneficiary witness still invites a challenge. A notary is not a witness unless the notary also signs as one.
+  Illinois requires two witnesses, and the safest choice is two adults who receive nothing under the will and are not married to anyone who does. In Illinois, a witness who is also a beneficiary can lose the gift, and even when the gift survives, a beneficiary witness invites a challenge. A notary is not a witness unless the notary also signs as one.
 takeaways:
-  - "Illinois and New Jersey each require two witnesses who watch you sign or hear you confirm the signature."
+  - "Illinois requires two credible witnesses who attest the will in your presence (755 ILCS 5/4-3)."
   - "In Illinois, a gift to a witness or the witness's spouse can be void unless enough other witnesses signed (755 ILCS 5/4-6)."
-  - "New Jersey does not cancel the will because an interested person witnessed it, but a challenger will use it, so skip the risk."
+  - "Even when a third witness saves the gift, a challenger will ask about a beneficiary who signed, so skip the risk."
   - "Pick witnesses who are younger than you, likely to be reachable in ten years, and have no stake in the outcome."
   - "A self-proving affidavit signed at the same sitting means the witnesses rarely have to appear in court."
 faqs:
@@ -16,7 +16,7 @@ faqs:
   - q: "Can the executor named in my will be a witness?"
     a: "Being named executor is not the same as receiving a gift, so it is not automatically disqualifying. Still, an executor is often also an heir, and the executor will be the one asking the court to accept the will. Using someone else keeps the paper clean."
   - q: "Can a witness be under 18?"
-    a: "Both states ask for witnesses who are competent and able to testify about the signing. Our practice is to use adults only, because a young witness is harder to explain to a judge years later. Choose people who can understand what they are watching."
+    a: "Illinois asks for credible witnesses, meaning people competent to testify about the signing. Our practice is to use adults only, because a young witness is harder to explain to a judge years later. Choose people who can understand what they are watching."
   - q: "Do my witnesses have to read the will?"
     a: "No. Witnesses attest to the signing, not to the contents. You can fold the pages so only the signature page shows, though most people simply say the document is a will. Witnesses should see you sign, or hear you say the signature is yours, and then sign themselves."
   - q: "Can a witness who moved away or died still matter?"
@@ -29,7 +29,6 @@ related:
   - "wills/self-proving-affidavit-explained"
   - "wills/will-signing-defects-witnesses-dates-and-missing-pages"
   - "illinois/illinois-will-requirements"
-  - "new-jersey/new-jersey-will-requirements"
 glossary: ["testator", "self-proving-affidavit", "beneficiary", "executor", "probate"]
 review: pending
 intent: question
@@ -37,15 +36,15 @@ intent: question
 
 You are about to sign your will and someone has to watch. Maybe the attorney's office will supply people, maybe you are doing this at a kitchen table, and either way you want to know whether a cousin, a neighbor or your own daughter is allowed to sign as a witness.
 
-Illinois and New Jersey both want two witnesses. The rules about who counts are looser than most people fear, but one mistake, a witness who is also a beneficiary, can undo part of what you meant to leave. This page covers who to ask, who to avoid, and how to run the signing so the will holds up when it is needed. For the full signing rules, see our guide to [how to make a valid will](/learn/wills/how-to-make-a-valid-will).
+Illinois wants two witnesses. The rules about who counts are looser than most people fear, but one mistake, a witness who is also a beneficiary, can undo part of what you meant to leave. This page covers who to ask, who to avoid, and how to run the signing so the will holds up when it is needed. For the full signing rules, see our guide to [how to make a valid will](/learn/wills/how-to-make-a-valid-will).
 
 ## What does a witness actually do?
 
 A witness is there to prove, years later, that the will was signed by the person it says was signed by, and that the person seemed to know what they were doing. That is the whole job. The witness does not approve the terms, vouch for fairness or promise to care for anyone.
 
-In Illinois the will must be attested in your presence by two or more credible witnesses (755 ILCS 5/4-3). In New Jersey at least two people must sign as witnesses within a reasonable time after seeing you sign or hearing you acknowledge your signature (N.J.S.A. 3B:3-2). Our state pages on [Illinois will requirements](/learn/illinois/illinois-will-requirements) and [New Jersey will requirements](/learn/new-jersey/new-jersey-will-requirements) cover the full statutes.
+In Illinois the will must be attested in your presence by two or more credible witnesses (755 ILCS 5/4-3). Our page on [Illinois will requirements](/learn/illinois/illinois-will-requirements) covers the full statute.
 
-Neither state requires a notary to make a will valid. A notary matters for the optional affidavit that lets the court skip calling the witnesses, which we cover below.
+Illinois does not require a notary to make a will valid. A notary matters for the optional affidavit that lets the court skip calling the witnesses, which we cover below.
 
 ## Who is a safe choice and who is a risky one?
 
@@ -55,7 +54,7 @@ The test is simple: does this person gain anything if the will is accepted? If s
 | --- | --- | --- |
 | Friend or neighbor who inherits nothing | Yes | No stake in the outcome |
 | Employee of the law firm that drafted the will | Yes | Routine, and Illinois protects the firm's role as executor or trustee |
-| Your adult child who is a beneficiary | No | Gift can be voided in Illinois, and invites a challenge in New Jersey |
+| Your adult child who is a beneficiary | No | Gift can be voided, and the signing invites a challenge |
 | Your spouse, if named in the will | No | Same problem, and in Illinois the spouse's gift is at risk too |
 | The person you named executor | Usually fine, but not ideal | Often an heir as well |
 | A person with dementia or serious confusion | No | Cannot reliably testify about the signing |
@@ -71,9 +70,9 @@ Here is an example. Walter, a widower in Naperville, leaves $100,000 to his son 
 
 This is why attorneys in Illinois often have three witnesses sign when family is in the room, and why we ask beneficiaries to wait outside during the signing.
 
-## What about New Jersey?
+## Why use outsiders even if a third witness saves the gift?
 
-New Jersey is gentler on paper. The statute governing interested witnesses says that signing a will as an interested witness does not by itself invalidate the will or any provision of it (N.J.S.A. 3B:3-12). Do not read that as permission.
+A third disinterested witness keeps the gift from being voided under 755 ILCS 5/4-6. It does not keep the signing out of a dispute. Do not read the extra signature as permission to use family.
 
 The problem is practical. If one child witnesses the will and another child contests it, the signing becomes the first thing a lawyer asks about. The witness is also the person least able to testify neutrally. A will that could have been uncontroversial now opens a credibility fight. Ask two outsiders and the issue disappears.
 
@@ -106,7 +105,7 @@ Good habits are cheap. Write each witness's full name, address and phone on a se
 
 ## What if you already used a beneficiary as a witness?
 
-Do not tear up the will. Have it reviewed. In Illinois, a simple fix is often to sign a new will, or confirm the existing one with a properly witnessed codicil that uses two new witnesses. In New Jersey, a quick re-execution still removes the question. Our guide on [changing a will and codicils](/learn/wills/changing-a-will-and-codicils) walks through the choices, and the same fix applies when a trust signing is done carelessly, as in [trust signing, notary and witnesses](/learn/trusts/trust-signing-notary-witnesses-and-where-to-keep-the-documents).
+Do not tear up the will. Have it reviewed. In Illinois, a simple fix is often to sign a new will, or confirm the existing one with a properly witnessed codicil that uses two new witnesses. Either way, a clean re-execution removes the question. Our guide on [changing a will and codicils](/learn/wills/changing-a-will-and-codicils) walks through the choices, and the same fix applies when a trust signing is done carelessly, as in [trust signing, notary and witnesses](/learn/trusts/trust-signing-notary-witnesses-and-where-to-keep-the-documents).
 
 ## How we can help
 

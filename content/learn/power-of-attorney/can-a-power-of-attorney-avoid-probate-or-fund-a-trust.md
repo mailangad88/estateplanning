@@ -1,7 +1,7 @@
 ---
 title: "Can a power of attorney avoid probate? What an agent can and cannot do with a trust"
-description: "A power of attorney cannot avoid probate because it ends at death. See when an agent can fund an existing trust and what Illinois and New Jersey require."
-updated: "2026-10-26"
+description: "A power of attorney cannot avoid probate because it ends at death. See when an agent can fund an existing trust and what Illinois law requires."
+updated: "2026-11-26"
 answer: >-
   No. A power of attorney cannot avoid probate, because it ends at death and the agent has no power after that. What it can do, if the document says so, is move your assets into a trust you already created, which can avoid probate later. An agent usually cannot create a trust, change its terms or name new beneficiaries without express written authority.
 takeaways:
@@ -53,7 +53,7 @@ An agent can fund a trust when three conditions line up.
 2. **The power of attorney reaches it.** The document must give the agent authority over trusts, real estate transactions or "all matters," in words a title company will accept. In Illinois, the statute says an agent has no power to make gifts, to appoint property to others or to change a beneficiary, and cannot revoke or amend a trust, unless the form gives specific authority (755 ILCS 45/3-4). That is the rule that surprises families.
 3. **The transfer matches the plan.** A deed into the trust must benefit the same people the person already chose. Moving property into a revocable trust the person controls leaves ownership essentially unchanged, which is why it is the easiest trust-related act to defend.
 
-New Jersey's Power of Attorney Act treats the agent as a fiduciary who acts only for the principal's benefit (N.J.S.A. 46:2B-8.13), which is the standard a court would apply to any funding transfer. Our page on the [New Jersey power of attorney](/learn/new-jersey/new-jersey-power-of-attorney) describes the agent's duties.
+The Illinois Act also requires an agent to act in good faith for the principal's benefit, with due care, competence and diligence, in line with the document (755 ILCS 45/2-7). That is the standard a court would apply to any funding transfer. Our page on [Illinois agent duties and record keeping](/learn/illinois/illinois-poa-agent-duties-and-record-keeping) describes them.
 
 <!-- visual: whatif id=unfunded-trust -->
 
@@ -76,7 +76,7 @@ Back to Mario. His trust document names Gina as successor trustee. His power of 
 
 Gina gets a deed prepared that conveys the house from Mario to "Mario, trustee of the Mario Rossi Revocable Trust." The title company asks two questions. Does the power of attorney authorize transfers into a trust? Does the trust give Mario the right to add property?
 
-Gina's attorney reads both documents. The trust has a funding clause, and the power of attorney's real estate language is broad. In New Jersey or Illinois a title company may still want an additional certification, but the deed is recorded. The house, assessed at $410,000 in this example, is now in the trust, so after Mario's death it avoids probate and passes under the trust. The attorney also checks that the transfer leaves the homeowner's insurance and property tax exemptions intact.
+Gina's attorney reads both documents. The trust has a funding clause, and the power of attorney's real estate language is broad. In Illinois a title company may still want an additional certification, but the deed is recorded. The house, assessed at $410,000 in this example, is now in the trust, so after Mario's death it avoids probate and passes under the trust. The attorney also checks that the transfer leaves the homeowner's insurance and property tax exemptions intact.
 
 Change one fact: Mario has no trust at all. Then Gina cannot create one, because the document gives no trust powers. The house stays in his name, and probate is likely. Some families discover this only when a death forces the issue.
 
@@ -102,7 +102,7 @@ Our attorneys see the same mistakes every year:
 
 ## How state law changes this
 
-Illinois spells out in the statute that gifts, beneficiary changes and trust changes need specific authority, and the statutory form includes places to grant those powers. New Jersey lets the document control and holds the agent to fiduciary duties, so wording and purpose both matter. Check the living trust rules for each state in our guides to [Illinois living trusts](/learn/illinois/illinois-living-trusts) and [living trusts in New Jersey](/learn/new-jersey/living-trusts-in-new-jersey). Both states also expect real estate transfers to be recorded with the county.
+Illinois spells out in the statute that gifts, beneficiary changes and trust changes need specific authority, and the statutory form includes places to grant those powers. The agent is also held to fiduciary duties, so wording and purpose both matter. Check the trust rules in our guide to [Illinois living trusts](/learn/illinois/illinois-living-trusts). A deed into the trust is recorded with the county where the property sits. Other states handle agent authority differently, so a document signed elsewhere is worth a second look.
 
 For the larger picture of probate-avoidance tools, see [how to avoid probate](/learn/probate/how-to-avoid-probate), and the [will or trust](/tools/will-or-trust) tool if you are not sure which fits you.
 

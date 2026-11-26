@@ -1,7 +1,7 @@
 ---
 title: "What is an ethical will, and how do you write a legacy letter for your family?"
 description: "An ethical will, or legacy letter, shares your values and stories with your family. Learn what it is, how it differs from a legal will, and how to write one."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   An ethical will, also called a legacy letter, is a personal letter or recording in which you tell your family what mattered to you: your values, stories, regrets and hopes. It is not a legal will and does not give away property. You write it in your own words, keep it with your estate planning papers, and can share it during life or after death.
 takeaways:
@@ -49,7 +49,7 @@ The word "will" is misleading, which is why many people prefer "legacy letter." 
 |---|---|---|
 | Purpose | Distribute property, name an executor and guardians | Share values, stories and wishes |
 | Legal effect | Enforceable by a court once it is valid | None |
-| Formalities | Written, signed, witnessed (two witnesses in Illinois and New Jersey) | None |
+| Formalities | Written, signed, witnessed (two witnesses in Illinois) | None |
 | Public? | Usually filed with the probate court | Private unless you choose to share it |
 | Who reads it | A judge, the executor, heirs | The people you wrote it for |
 | Can include instructions about property | Yes | Not enforceable; can state hopes |

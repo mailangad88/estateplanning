@@ -1,7 +1,7 @@
 ---
 title: "Advance healthcare directives: making your medical wishes known"
 description: "A guide to living wills, healthcare powers of attorney, HIPAA releases, DNR and POLST forms, and planning for dementia, so your family is never left guessing."
-updated: "2026-10-06"
+updated: "2026-11-26"
 answer: >-
   Advance healthcare directives are legal documents that state your medical wishes and name someone to decide for you if you cannot speak for yourself. The core set is a healthcare power of attorney, a living will and a HIPAA authorization, with DNR or POLST orders added for serious illness. Together they keep decisions with you and out of court.
 takeaways:
@@ -161,13 +161,13 @@ Healthcare directives handle medical decisions and information. The [durable fin
 
 ## More questions people ask
 
-If a form called a MOLST turns up in your family's paperwork, [what a MOLST form is and how it differs from a POLST](/learn/healthcare-directives/what-is-a-molst-form-and-how-it-differs-from-a-polst) explains the naming and what Illinois and New Jersey use.
+If a form called a MOLST turns up in your family's paperwork, [what a MOLST form is and how it differs from a POLST](/learn/healthcare-directives/what-is-a-molst-form-and-how-it-differs-from-a-polst) explains the naming and which form Illinois uses.
 
 When a doctor or religiously affiliated hospital objects to an instruction, [what a conscience clause is and what it lets a provider decline](/learn/healthcare-directives/what-is-a-conscience-clause-and-can-a-doctor-decline-your-living-will) explains the transfer duty and how to check policies in advance.
 
 To plan for the first agent being unavailable, [should I name an alternate healthcare agent](/learn/healthcare-directives/should-i-name-an-alternate-healthcare-agent-and-can-i-remove-one) covers backups, triggers and how to replace an agent.
 
-For women of childbearing age, [does a living will cover pregnancy](/learn/healthcare-directives/does-a-living-will-cover-pregnancy) compares the Illinois and New Jersey rules.
+For women of childbearing age, [does a living will cover pregnancy](/learn/healthcare-directives/does-a-living-will-cover-pregnancy) explains the Illinois rule that pauses a living will while a live birth is possible.
 
 For what makes a living will enforceable and where it falls short, see [is a living will legally binding](/learn/healthcare-directives/is-a-living-will-legally-binding).
 

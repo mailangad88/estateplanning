@@ -1,7 +1,7 @@
 ---
 title: "How to set up a trust for your grandchildren: types, ages and trustee choices"
 description: "How to set up a trust for your grandchildren: one shared trust or separate shares, payout ages, the trustee and when the generation-skipping tax applies."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   To set up a trust for your grandchildren, you sign a trust agreement naming a trustee, listing the grandchildren as beneficiaries and setting when and how money is paid out. The usual choices are a shared trust that divides later or a separate trust for each grandchild. A trust can be created now or in your will or living trust, and very large gifts may trigger the generation-skipping tax.
 takeaways:
@@ -93,7 +93,7 @@ A good setup names a family trustee with a professional or a trusted friend as c
 
 This is an illustration. Walter, 74, has a $900,000 estate and four grandchildren aged 3, 6, 9 and 14. He wants them to have $200,000 in total for college and a first home. His living trust leaves $200,000 in one pot with his daughter Maria as trustee and his lawyer's firm, or a bank, as successor. The trust pays for tuition and medical needs while the youngest is under 21. When the youngest turns 21, the remaining balance divides into four equal trusts, each paid out at 25, 30 and 35. A fifth grandchild born later shares in the pot. Walter wrote "all of my grandchildren, whenever born" to make sure of that.
 
-If Walter had given each child $50,000 directly in a UTMA account, the money would go to each child at the age set by state law, which is 21 in both Illinois and New Jersey. See [Illinois UTMA accounts](/learn/illinois/illinois-utma-accounts-and-gifts-to-minors) and [New Jersey UTMA accounts](/learn/new-jersey/new-jersey-utma-accounts-and-gifts-to-minors). A trust is the more flexible choice when you want control past 21.
+If Walter had given each child $50,000 directly in a UTMA account, the money would go to each child at the age set by state law, which is 21 in Illinois for gifts like these. See [Illinois UTMA accounts](/learn/illinois/illinois-utma-accounts-and-gifts-to-minors). A trust is the more flexible choice when you want control past 21.
 
 ## When does the generation-skipping tax matter?
 

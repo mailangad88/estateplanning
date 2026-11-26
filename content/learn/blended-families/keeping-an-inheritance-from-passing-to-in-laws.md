@@ -1,7 +1,7 @@
 ---
 title: "How to keep your inheritance from going to in-laws when a spouse or child dies first"
-description: "If your child dies before their spouse, or your spouse dies first, your money can pass to in-laws. See the Illinois and New Jersey rules and how to prevent it."
-updated: "2026-10-26"
+description: "If your child dies before their spouse, or your spouse dies first, your money can pass to in-laws. See the Illinois rules and how to prevent it."
+updated: "2026-11-26"
 answer: >-
   If your child inherits from you outright and then dies, their spouse usually takes a large share, and may take all of it if they have no children. Your spouse can likewise leave what you gave them to their own family. The fix is to leave the money in a trust, not outright, with your chosen heirs named as the final beneficiaries.
 takeaways:
@@ -18,7 +18,7 @@ faqs:
   - q: "How do I make sure my spouse's children do not inherit my house?"
     a: "Say plainly who receives the house after your spouse dies. Options include a life estate, a trust that pays your spouse during life and passes the house to your children afterward, or a deed that keeps your share in a trust. If you simply leave the house to your spouse, the spouse can leave it to anyone."
   - q: "Does an inheritance stay mine in a divorce?"
-    a: "In Illinois and New Jersey an inheritance you keep separate is generally not divided in a divorce, but mixing it into a joint account or putting your spouse on the deed can change that. Separate handling matters more than the original gift."
+    a: "In Illinois an inheritance you keep separate is generally not divided in a divorce, but mixing it into a joint account or putting your spouse on the deed can change that. Separate handling matters more than the original gift."
   - q: "Can a trust keep a grandchild's inheritance away from a stepparent?"
     a: "Yes. A trust for a grandchild holds the money until the age you choose and names who receives it if the grandchild dies. That way a stepparent or a parent's new spouse does not take it under intestacy."
 related:
@@ -47,7 +47,7 @@ Whatever your child owns when they die passes under their own will or, with no w
 | Married, with children | Spouse takes half, children split half | Parents, siblings |
 | Unmarried, no children | Parents, then siblings | The partner |
 
-New Jersey's formula is different in detail, with a fixed dollar amount for the spouse in some cases, but the pattern is the same: the spouse comes first, and a spouse with no shared children often takes the whole estate. The rules look reasonable until you ask where the money came from. If it came from you and you meant it for your child's own children, the spouse's share quietly overrides that.
+The pattern is plain: the spouse comes first, and a married child who leaves no descendants leaves the whole estate to the spouse. The rules look reasonable until you ask where the money came from. If it came from you and you meant it for your child's own children, the spouse's share quietly overrides that.
 
 The page on [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) has the full order.
 
@@ -89,7 +89,7 @@ A widow who inherits outright and remarries has now put your money in play for a
 
 ## Does an inheritance stay separate in a marriage?
 
-Usually, if you keep it that way. In both Illinois and New Jersey, property you receive by inheritance is generally yours alone in a divorce, and the court begins from that. The word "generally" is doing work, because the protection weakens when you deposit the money into a joint account, use it to improve a jointly owned home or retitle assets into both names. The rules for that are in [keeping an inheritance separate](/learn/blended-families/keeping-an-inheritance-separate-in-a-blended-family).
+Usually, if you keep it that way. In Illinois, property you receive by inheritance is generally yours alone in a divorce, and the court begins from that. The word "generally" is doing work, because the protection weakens when you deposit the money into a joint account, use it to improve a jointly owned home or retitle assets into both names. The rules for that are in [keeping an inheritance separate](/learn/blended-families/keeping-an-inheritance-separate-in-a-blended-family).
 
 That is a rule about divorce. At death, a surviving spouse has separate rights, discussed above, that do not care whether the money came from an inheritance.
 

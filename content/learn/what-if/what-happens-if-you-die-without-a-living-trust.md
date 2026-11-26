@@ -1,14 +1,14 @@
 ---
-title: "What happens if you die without a living trust in Illinois or New Jersey?"
+title: "What happens if you die without a living trust in Illinois?"
 description: "No trust is not a disaster if you have a will and beneficiary forms. See what happens to your house and accounts, what probate costs your family, and the gaps."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
-  If you die without a living trust, your property passes under your will, or by state law if there is no will. Assets with a beneficiary or joint owner skip court. Everything in your name alone, like a house, usually goes through probate in Illinois or New Jersey. That takes months, is public, and costs money, but it is a workable path for many families.
+  If you die without a living trust, your property passes under your will, or by state law if there is no will. Assets with a beneficiary or joint owner skip court. Everything in your name alone, like a house, usually goes through probate in Illinois. That takes months, is public, and costs money, but it is a workable path for many families.
 takeaways:
   - "Dying without a trust does not mean your estate falls apart; a will plus beneficiary forms can work."
   - "Probate applies to what is in your name alone. A house is the usual reason a family ends up there."
   - "A trust does more during your life than after your death: it lets someone take over if you lose capacity, without a court."
-  - "Illinois small estates under $150,000 in personal property can use an affidavit; New Jersey's limits are much lower."
+  - "Illinois estates with $150,000 or less in personal property and no real estate to transfer can use a small estate affidavit."
   - "Young children, a second marriage, property in two states and a beneficiary with special needs are the cases where no trust costs the most."
 faqs:
   - q: "What happens if I die without a trust and I have a will?"
@@ -28,7 +28,7 @@ related:
   - "trusts/will-vs-trust"
   - "probate/probate-vs-non-probate-assets"
   - "illinois/illinois-probate-process"
-  - "new-jersey/new-jersey-probate-process"
+  - "illinois/illinois-living-trusts"
   - "power-of-attorney/what-are-the-three-types-of-power-of-attorney"
 glossary: ["living-trust", "probate", "probate-estate", "executor", "pour-over-will", "successor-trustee"]
 review: pending
@@ -37,7 +37,7 @@ intent: scenario
 
 Nadia, 61, lives in Naperville in a house she owns alone, worth about $430,000. She has a will that names her son as executor, a 401(k) with her son as beneficiary and a checking account with no beneficiary at all. She has never set up a trust. If she dies next month, what happens?
 
-Her family will be fine, but they will spend several months in probate court before they can reach the house. This page walks through what happens when someone with no living trust dies in Illinois or New Jersey, which assets skip court, which do not, and the situations where having no trust becomes expensive. If you are still deciding, our guides on [whether you need a living trust](/learn/trusts/do-i-need-a-living-trust) and [will versus living trust](/learn/trusts/will-vs-trust) cover the decision.
+Her family will be fine, but they will spend several months in probate court before they can reach the house. This page walks through what happens when someone with no living trust dies in Illinois, which assets skip court, which do not, and the situations where having no trust becomes expensive. If you are still deciding, our guides on [whether you need a living trust](/learn/trusts/do-i-need-a-living-trust) and [will versus living trust](/learn/trusts/will-vs-trust) cover the decision.
 
 ## What happens to your property if you have no trust?
 
@@ -58,16 +58,20 @@ Nadia's son collects the 401(k) without a court. The house and the checking acco
 
 ## How long does probate take without a trust?
 
-Several months at the least. In Illinois, creditors get at least six months after the notice is published to file claims, so the estate rarely closes sooner than about that. See [how long Illinois probate takes](/learn/illinois/how-long-does-probate-take-in-illinois) for the calendar. New Jersey has a nine-month creditor window from death, and inheritance tax filings for certain heirs are due eight months after death, as covered in our guide to [New Jersey executor commissions and the probate timeline](/learn/new-jersey/new-jersey-executor-commissions-and-probate-timeline).
+Several months at the least. In Illinois, creditors get at least six months after the notice is published to file claims, so the estate rarely closes sooner than about that. See [how long Illinois probate takes](/learn/illinois/how-long-does-probate-take-in-illinois) for the calendar.
 
 Nadia's house cannot be sold or retitled to her son until the court has appointed him and issued letters. That is the real cost of having no trust: a delay in the one asset that matters most.
 
 ## What does it cost without a trust?
 
-Both states have costs, but they work differently.
+Illinois has no fixed percentage fee for probate. The cost is built from several pieces:
 
-- **Illinois.** There is no fixed percentage fee. Costs include a court filing fee, newspaper publication, a bond premium if the court requires one, and attorney fees. Our page on [Illinois probate costs](/learn/illinois/illinois-probate-costs) lists them.
-- **New Jersey.** Surrogate fees are low and flat. Under the schedule, a will probate is about $100 for a short will, as shown in [probate costs in New Jersey](/learn/new-jersey/probate-costs-in-new-jersey). The larger costs are attorney fees and any executor commission, which the statute caps by a sliding percentage (5% on the first $200,000).
+- **A court filing fee** paid to the circuit clerk when the petition is filed.
+- **Newspaper publication** of the notice to creditors.
+- **A bond premium**, if the court requires a bond.
+- **Attorney fees**, which are usually the largest piece.
+
+Our page on [Illinois probate costs](/learn/illinois/illinois-probate-costs) lists them.
 
 A trust has its own price. Setting one up costs more than a will, and the house has to be retitled into it. Be skeptical of anyone who says probate always costs a fixed percentage. It varies by estate, by lawyer and by how smooth the file is.
 
@@ -77,7 +81,7 @@ These figures are an illustration, not a quote. Say Nadia's estate is the $430,0
 
 ## Can a small estate skip probate?
 
-Sometimes. Illinois lets a small estate use an affidavit if the personal property is $150,000 or less, not counting registered vehicles, and there is no real estate that needs to be transferred. See the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit). New Jersey's route is narrower: $50,000 or less for a spouse or partner, and $20,000 or less for another heir, as the [New Jersey small estate affidavit](/learn/new-jersey/new-jersey-small-estate-affidavit) explains. Neither route covers a house.
+Sometimes. Illinois lets a family use a small estate affidavit if the personal property is $150,000 or less, not counting registered vehicles, and there is no real estate that needs to be transferred. See the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit). The affidavit does not cover a house, so a home in your name alone usually means a probate case.
 
 So most homeowners, with or without a trust, are choosing between a probate filing and a retitled house.
 
@@ -97,7 +101,7 @@ Things a trust does not do on its own: lower federal estate tax, protect your as
 
 Four situations tend to turn a manageable estate into a hard one.
 
-- **Minor children.** Without a trust, a child who inherits receives assets through a court-supervised arrangement or, in Illinois and New Jersey, a custodial account that ends at a set age. A trust lets you choose a later age and a trustee you trust. See [what happens when a minor inherits without a trust](/learn/what-if/minor-inherits-without-a-trust).
+- **Minor children.** Without a trust, a child who inherits receives assets through a court-supervised arrangement or, in Illinois, a custodial account that ends at a set age. A trust lets you choose a later age and a trustee you trust. See [what happens when a minor inherits without a trust](/learn/what-if/minor-inherits-without-a-trust).
 - **Second marriages.** Property in your name alone can pass to your spouse outright, and then to the spouse's children. A trust can direct the remainder to your own children at the end.
 - **A beneficiary on benefits.** A direct inheritance can end Medicaid or SSI eligibility. A special needs trust avoids that. Read [what happens when a disabled heir inherits directly](/learn/what-if/disabled-heir-inherits-directly).
 - **A house plus years of dementia risk.** If you are older, the incapacity gap above is the larger risk than probate.
@@ -111,7 +115,7 @@ The [what-if guide](/learn/what-if) lists other gaps worth closing. For this one
 1. Sign a will that names an executor and a backup.
 2. Sign a durable power of attorney for property and a healthcare directive.
 3. Add beneficiaries to every retirement account, insurance policy and bank account. A beneficiary form beats a will.
-4. Consider a transfer-on-death instrument for the house if your state offers one; see [Illinois transfer-on-death instrument](/learn/illinois/illinois-transfer-on-death-instrument) and [transfer-on-death options in New Jersey](/learn/new-jersey/transfer-on-death-options-in-new-jersey).
+4. Consider a transfer-on-death instrument for the house if your state offers one; see [Illinois transfer-on-death instrument](/learn/illinois/illinois-transfer-on-death-instrument) and [TODI vs. living trust for an Illinois house](/learn/illinois/todi-vs-living-trust-for-an-illinois-house).
 5. Review the list every few years or after any big change.
 
 ## How we can help

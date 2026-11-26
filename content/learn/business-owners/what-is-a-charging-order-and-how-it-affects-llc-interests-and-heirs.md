@@ -1,7 +1,7 @@
 ---
 title: "What is a charging order? How it protects LLC interests and what it means for heirs"
-description: "A charging order lets a creditor collect an LLC member's distributions but not take the business. See where it protects Illinois and NJ owners or heirs."
-updated: "2026-10-26"
+description: "A charging order lets a creditor collect an LLC member's distributions but not take the business. See where it protects Illinois owners and their heirs."
+updated: "2026-11-26"
 answer: >-
   A charging order is a court order that lets a creditor of an LLC member collect that member's share of distributions, without taking the membership interest, voting or managing the company. For many LLCs it is the main way a personal creditor can reach the interest. It protects less than people assume, especially for a single-member LLC, a divorce or a tax debt.
 takeaways:
@@ -43,9 +43,9 @@ Suppose Gary owns 40% of an LLC that holds a small apartment building, and a dri
 
 That is all. The driver does not become a member. The driver cannot vote, cannot sell the building and cannot demand a payout. If the manager decides to reinvest profits for the year, the driver waits. Most state LLC laws were written this way so that one member's personal debt does not dismantle the business for the others.
 
-## Does Illinois or New Jersey treat charging orders differently?
+## How does Illinois treat charging orders?
 
-Both states' LLC statutes generally make a charging order the remedy for a creditor of an individual member, which means the creditor cannot simply seize the interest and sell it. Details differ on points that matter, such as whether a court may order foreclosure of the interest in some cases and how a single-member LLC is treated, and courts have shifted over time. Treat a statement like "my LLC is judgment proof" with caution, and ask an attorney how a court in your county has applied the statute.
+The Illinois LLC statute generally makes a charging order the remedy for a creditor of an individual member, which means the creditor cannot simply seize the interest and sell it. State LLC laws vary on points that matter, such as whether a court may order foreclosure of the interest in some cases and how a single-member LLC is treated, and courts have shifted over time. Treat a statement like "my LLC is judgment proof" with caution, and ask an attorney how a court in your county has applied the statute.
 
 ## Can the manager just refuse to pay distributions?
 

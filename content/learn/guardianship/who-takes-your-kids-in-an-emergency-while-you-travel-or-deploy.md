@@ -1,7 +1,7 @@
 ---
 title: "Who takes your kids in an emergency? A caregiver letter, school pickup and medical consent plan"
-description: "Who can pick up your child from school or consent to treatment while you are away? An emergency plan for travel, surgery or deployment in Illinois and NJ."
-updated: "2026-10-26"
+description: "Who can pick up your child from school or consent to treatment while you are away? An emergency plan for travel, surgery or deployment in Illinois."
+updated: "2026-11-26"
 answer: >-
   Without a signed paper, a school or hospital will usually release a child only to a parent or a person listed on file, and a doctor may refuse non-emergency treatment from a relative. Before you travel or deploy, sign a medical consent and caregiver authorization, update the school's pickup list, and name an emergency caregiver your guardian can reach.
 takeaways:
@@ -81,7 +81,7 @@ When the absence is long or the stakes are higher. A signed medical consent is e
 
 Illinois has a specific tool for that. A parent can sign a short-term guardian appointment, in front of two adult witnesses who are not the appointee, with no court filing. It lasts 365 days by default, and military parents can set a longer term. If the child's other parent is alive and involved, that parent usually must consent. Our page on [Illinois standby and short-term guardians](/learn/illinois/illinois-standby-and-short-term-guardians-for-children) walks through the form. Families elsewhere can read the general overview of [temporary and standby guardians](/learn/guardianship/temporary-and-standby-guardians).
 
-New Jersey has a standby guardianship process for parents who are seriously ill, and a court-based option for longer gaps. Because the details and forms differ from Illinois, ask an attorney which paper New Jersey schools and hospitals expect. Our [New Jersey guardianship article](/learn/new-jersey/guardianship-in-new-jersey) gives the overview.
+Illinois also has a standby guardian for a bigger event, such as a parent's death or inability to care for the child. The parent names the standby guardian in writing, but that person must petition the court to be appointed (755 ILCS 5/11-5.3). It fits a parent facing a serious illness better than a trip. The other parent's consent matters here too, unless one of the statute's exceptions applies.
 
 ## What if I am deploying with the military?
 

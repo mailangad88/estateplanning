@@ -1,7 +1,7 @@
 ---
 title: "Can you sell or refinance a house that is in your living trust? What if you move out?"
 description: "You can sell or refinance a house in your revocable living trust. See how the trustee signs, what lenders and title companies want, and what moving out changes."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Yes. While you are alive, a house in your revocable living trust can be sold, refinanced or rented because you, as trustee, still control it. The trustee signs the deed or loan documents, and the title company will ask for a certification of trust. Moving out can affect your homeowners insurance, homestead exemption and mortgage terms, so tell each of them before you go.
 takeaways:
@@ -74,7 +74,7 @@ The trust keeps owning it, and you keep control. Several side effects depend on 
 
 **Insurance.** Homeowners policies often limit coverage for homes that sit empty for 30 to 60 days or are rented. Tell your agent before you move and ask whether you need a vacant-home or landlord policy. Add the trustee as an insured if you have not.
 
-**Property tax exemptions.** A homestead or owner-occupied exemption generally depends on living there. In Illinois, the general homestead exemption is tied to the owner's primary residence, and a trust can qualify if a beneficiary lives in the home. Our article on [whether a living trust affects homestead and property taxes](/learn/trusts/does-a-living-trust-affect-homestead-exemption-and-property-taxes) covers the rules and the Illinois angle. In New Jersey, the property tax relief programs have their own eligibility rules; check with the municipality.
+**Property tax exemptions.** A homestead or owner-occupied exemption generally depends on living there. In Illinois, the general homestead exemption is tied to the owner's primary residence, and a trust can qualify if a beneficiary lives in the home. Our article on [whether a living trust affects homestead and property taxes](/learn/trusts/does-a-living-trust-affect-homestead-exemption-and-property-taxes) covers the rules and the Illinois angle. If a surviving spouse or a senior lives in the home, the [property tax exemptions after a spouse dies](/learn/illinois/illinois-property-tax-exemptions-after-a-spouse-dies) page explains what to check with the county assessor.
 
 **Mortgage terms.** Most mortgages say you will live in the house as your main home, at least for the first year. Moving out for a medical reason or a move to assisted living is common, but tell the servicer if you are going to rent it out.
 

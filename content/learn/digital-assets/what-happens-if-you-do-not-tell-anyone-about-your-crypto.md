@@ -1,7 +1,7 @@
 ---
 title: "What happens if you don't tell anyone about your cryptocurrency? How to pass on Bitcoin safely"
 description: "If you tell no one about your crypto, your heirs may never find it. Learn how to pass Bitcoin to your children safely, without a seed phrase in your will."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   If you tell no one about your cryptocurrency and keep the only copy of the keys, it can be lost for good, because no company can reset a self-custody wallet. To pass Bitcoin to your children, tell a trusted person that it exists, record where the access instructions are, store the seed phrase offline in a secure place, and name the heirs in a will or trust. Never put the seed phrase in the will itself.
 takeaways:
@@ -61,7 +61,7 @@ The first two are not secrets that can hurt you. The third is. That is why it sh
 
 ## Should the seed phrase go in my will?
 
-No. A will tells the court and your family who gets what. In both Illinois and New Jersey, a will is filed with the court after death, and filings are generally open to anyone who asks. Anyone who sees the seed phrase could move the funds before your executor does. Our article on [whether probate is public](/learn/probate/is-probate-public) explains what becomes visible.
+No. A will tells the court and your family who gets what. In Illinois, a will is filed with the court after death, and filings are generally open to anyone who asks. Anyone who sees the seed phrase could move the funds before your executor does. Our article on [whether probate is public](/learn/probate/is-probate-public) explains what becomes visible.
 
 What the will or trust should say is who owns the crypto, in general terms. For example: "I give all my digital assets, including cryptocurrency, to my daughter, Anita." Our guide to [crypto in a will or a trust](/learn/digital-assets/crypto-in-a-will-or-a-trust) covers the wording and when a trust is a better home for it.
 
@@ -103,7 +103,7 @@ Once a year, or after any change of device or exchange, check it. Hand the lette
 
 ## What about taxes and the executor's duties?
 
-Crypto in the estate gets a new tax basis at death in most cases, which is explained in our article on [how inherited crypto is taxed](/learn/digital-assets/how-inherited-crypto-is-taxed). Your executor must also list it as an estate asset and may need to value it on the date of death. An executor who does not know it exists cannot do either. In Illinois and New Jersey, the digital assets statutes help executors deal with online platforms, but they do not open a self-custody wallet. See [Illinois digital assets law](/learn/illinois/illinois-digital-assets-law-for-executors) and [New Jersey's digital assets law](/learn/new-jersey/new-jersey-digital-assets-law).
+Crypto in the estate gets a new tax basis at death in most cases, which is explained in our article on [how inherited crypto is taxed](/learn/digital-assets/how-inherited-crypto-is-taxed). Your executor must also list it as an estate asset and may need to value it on the date of death. An executor who does not know it exists cannot do either. In Illinois, the digital assets statute helps executors deal with online platforms, but it does not open a self-custody wallet. See [Illinois digital assets law](/learn/illinois/illinois-digital-assets-law-for-executors).
 
 ## How we can help
 

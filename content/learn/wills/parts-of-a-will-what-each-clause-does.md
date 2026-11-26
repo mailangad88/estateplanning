@@ -1,7 +1,7 @@
 ---
 title: "What goes in a last will and testament? The parts of a will, clause by clause"
 description: "A last will has a handful of standard clauses, from revoking old wills to naming an executor and a residuary taker. See what each does and what to leave out."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A last will and testament names who gets your property, who serves as executor, and who guards any minor children. Most wills also revoke earlier wills, give a residuary gift for everything not listed, set a survival period, and end with your signature and two witnesses. A simple will is just a short version of these standard clauses.
 takeaways:
@@ -104,7 +104,7 @@ The ending carries the signature and the proof. It usually has three pieces.
 
 - **Executor powers and general provisions.** These give the executor authority to sell property, hire an accountant or lawyer, and divide property in kind. A will with no powers clause forces the executor to ask the court for permission more often.
 - **Testimonium and signature.** Your signature, the date and the place. Sign at the end, after the last line of text, not at the top.
-- **Attestation and self-proving affidavit.** Two witnesses sign beneath a paragraph saying they saw you sign and that you appeared to be of sound mind. A [self-proving affidavit](/learn/wills/self-proving-affidavit-explained), notarized, lets the court accept the will without calling the witnesses back. Illinois and New Jersey both set out witness rules, which you can read in our [Illinois will requirements](/learn/illinois/illinois-will-requirements) and [New Jersey will requirements](/learn/new-jersey/new-jersey-will-requirements) guides.
+- **Attestation and self-proving affidavit.** Two witnesses sign beneath a paragraph saying they saw you sign and that you appeared to be of sound mind. A [self-proving affidavit](/learn/wills/self-proving-affidavit-explained), notarized, lets the court accept the will without calling the witnesses back. Illinois sets out its witness rules in 755 ILCS 5/4-3, which you can read about in our [Illinois will requirements](/learn/illinois/illinois-will-requirements) guide and [who can witness a will in Illinois](/learn/wills/who-can-witness-a-will-in-illinois).
 
 <!-- visual: whatif id=unsigned-will -->
 

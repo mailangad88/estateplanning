@@ -1,7 +1,7 @@
 ---
 title: "How long does it take to create an estate plan? A realistic timeline"
 description: "A simple estate plan can be signed in two to four weeks and a trust plan in four to eight. See each stage, what slows things down and how to speed it up."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A simple estate plan (will, power of attorney, healthcare directive) can usually be drafted and signed within two to four weeks of your first meeting. A plan built around a living trust more often takes four to eight weeks, because the deed and account changes come after signing. Most delays come from missing information, not from the drafting.
 takeaways:
@@ -44,7 +44,7 @@ There are six stages, and only two of them are the attorney's drafting time. The
 2. **Consultation.** One meeting of an hour or two, in person or by video. The attorney explains your choices and you make the big decisions. Our list of [what to bring to the meeting](/learn/basics/what-to-bring-to-estate-planning-consultation) shortens this stage.
 3. **Drafting.** The attorney prepares the documents. For a will-based plan this is often a few business days. A trust, with its schedules and deeds, takes longer.
 4. **Review.** You read the drafts, ask questions and request changes. This stage has no fixed length because it depends on how soon you reply.
-5. **Signing.** A formal appointment with witnesses and a notary. The signing rules are in [Illinois will requirements](/learn/illinois/illinois-will-requirements) and [New Jersey will requirements](/learn/new-jersey/new-jersey-will-requirements).
+5. **Signing.** A formal appointment with witnesses and a notary. The signing rules are in [Illinois will requirements](/learn/illinois/illinois-will-requirements).
 6. **Follow-through.** Deeds are recorded, beneficiary forms updated, and copies delivered to the people who need them.
 
 <!-- visual: timeline id=making-a-plan -->
@@ -103,7 +103,7 @@ You can often cut a week or more by doing the following before the consultation.
 
 When someone is about to have surgery or has received a serious diagnosis, the attorney can work in layers. The power of attorney, healthcare directive and a simple will can often be signed in days. The trust, deeds and fine tuning follow. Our article on [planning after a serious diagnosis](/learn/life-stages/estate-planning-after-a-serious-diagnosis) lays out which documents go first.
 
-The signing itself has to be done properly. Both Illinois and New Jersey require two witnesses for a will. A rushed signing with the wrong witnesses can undo the whole effort. Capacity matters too, and we explain how it is judged in [signing a will with dementia, illness or family pressure](/learn/wills/signing-a-will-with-dementia-illness-or-family-pressure).
+The signing itself has to be done properly. Illinois requires two witnesses for a will. A rushed signing with the wrong witnesses can undo the whole effort. Capacity matters too, and we explain how it is judged in [signing a will with dementia, illness or family pressure](/learn/wills/signing-a-will-with-dementia-illness-or-family-pressure).
 
 ## Does the plan finish at signing?
 

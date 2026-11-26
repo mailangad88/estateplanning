@@ -1,7 +1,7 @@
 ---
 title: "Does inheriting a house affect SSI or Medicaid? What to do before you accept it"
 description: "Does inheriting a house affect SSI or Medicaid? Often yes. See how the $2,000 SSI limit applies, when your home is exempt, and ways to protect benefits."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Yes, it can. SSI counts most property you own as a resource, and the limit is $2,000 for one person in 2026. An inherited house you live in is exempt. One you do not live in usually counts unless you are actively trying to sell it. Medicaid rules vary by program, so talk to an attorney before you accept, sell or disclaim.
 takeaways:
@@ -63,7 +63,7 @@ Marcus rents a small apartment. If he sells the house, the proceeds will push hi
 
 ## What about Medicaid?
 
-Medicaid is several programs under one name. In Illinois and New Jersey, as elsewhere, adults who qualify because they are aged, blind or disabled face an asset test, while some other categories are judged by income only. Long-term care Medicaid has its own rules, including a look-back on gifts and transfers (60 months in most states). A second property is generally countable for these programs, with exceptions for a home a spouse or dependent relative lives in.
+Medicaid is several programs under one name. In Illinois, as elsewhere, adults who qualify because they are aged, blind or disabled face an asset test, while some other categories are judged by income only. Long-term care Medicaid has its own rules, including a look-back on gifts and transfers (60 months in most states). A second property is generally countable for these programs, with exceptions for a home a spouse or dependent relative lives in.
 
 If you are already on Medicaid, an inheritance may need to be reported and can affect eligibility in the same way as for SSI. See [what counts as a countable asset for Medicaid](/learn/elder-care/what-counts-as-a-countable-asset-for-medicaid) for categories, and [the Medicaid look-back period](/learn/elder-care/medicaid-look-back-period) before making any transfer.
 

@@ -1,7 +1,7 @@
 ---
 title: "Organ donation and your advance directive: how the two fit together"
 description: "How to become an organ donor, why a donor registry and a living will can seem to clash, and the one sentence that keeps your directive from blocking donation."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   You become an organ donor by joining your state donor registry, usually at the motor vehicle office or online, not by writing it in a living will alone. Your advance directive should repeat the choice and say you accept short-term ventilator support so donation stays possible. Your healthcare agent can then explain both documents to the hospital.
 takeaways:
@@ -38,7 +38,7 @@ The two documents do different jobs, and they can work together if the wording i
 
 ## How do you become an organ donor?
 
-You become a donor by registering your decision with your state. The usual routes are the donor question at the motor vehicle office when you get or renew a license or state ID, the state's online registry, or a mark on a health insurance or health-system profile. In Illinois the registry runs through the Secretary of State's driver services, and in New Jersey through the Motor Vehicle Commission and a state donor registry. Either way the sign-up takes a few minutes.
+You become a donor by registering your decision with your state. The usual routes are the donor question at the motor vehicle office when you get or renew a license or state ID, the state's online registry, or a mark on a health insurance or health-system profile. In Illinois the registry runs through the Secretary of State's driver services. The sign-up takes a few minutes.
 
 Nearly every state follows a version of the Uniform Anatomical Gift Act. Under it, an adult's own signed decision to donate is a legal gift. That is called first-person authorization. The law does not make the family a co-signer.
 
@@ -80,7 +80,7 @@ If you have a [POLST or DNR order](/learn/healthcare-directives/dnr-and-polst), 
 
 An agent can usually authorize or refuse donation only where you left no instruction. If you registered and wrote it into your directive, the agent's job is to confirm what you chose, not to reopen it. If you were silent, many state laws let the agent consent, often followed in order by a spouse, adult children or parents.
 
-Whether the agent's authority continues after death is a legal question. Medical decisions end at death, but several states extend the agent's power to anatomical gifts, autopsy and disposition of remains. Our article on [healthcare agent authority after death](/learn/healthcare-directives/healthcare-agent-authority-after-death) goes through that handoff. Funeral decisions are often a separate legal track. In New Jersey see [who controls funeral and burial decisions](/learn/new-jersey/who-controls-funeral-and-burial-decisions-in-new-jersey), and in Illinois the [Disposition of Remains Act](/learn/illinois/illinois-disposition-of-remains-act).
+Whether the agent's authority continues after death is a legal question. Medical decisions end at death, but several states extend the agent's power to anatomical gifts, autopsy and disposition of remains. Our article on [healthcare agent authority after death](/learn/healthcare-directives/healthcare-agent-authority-after-death) goes through that handoff. Funeral decisions are often a separate legal track. In Illinois, see our page on the [Disposition of Remains Act](/learn/illinois/illinois-disposition-of-remains-act).
 
 ## What is the difference between organ donation and body donation?
 

@@ -1,7 +1,7 @@
 ---
 title: "How to get files from a deceased person's computer, hard drive or cloud storage"
 description: "How to access a deceased person's computer and files: who has the legal right, what to try first, and how to reach Dropbox, OneDrive and backup drives safely."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Start with the device, not the account. A computer, external drive or phone belongs to the estate, and the executor can take possession of it. Cloud storage is different: the provider holds the data and usually needs a death certificate and court papers. Do not guess passwords repeatedly, because some devices erase or lock themselves after failed attempts.
 takeaways:
@@ -42,7 +42,7 @@ This page, part of our [digital assets planning guide](/learn/digital-assets), c
 
 The executor or administrator does. A computer, external drive, USB stick or tablet is tangible personal property, and it belongs to the estate. Once a court issues letters testamentary or letters of administration, the personal representative can take it into custody and open it. If the estate has not been opened yet, a close family member can usually secure the device, but should not start searching accounts on their own.
 
-Cloud storage is different because the files sit on a company's servers under a contract. Both Illinois and New Jersey follow a version of the uniform law on fiduciary access to digital assets. Under it, a personal representative can generally obtain a catalog of the account and, with the right authority, the contents. The provider may still require a court order or its own online tool. Our guides to [Illinois digital assets law](/learn/illinois/illinois-digital-assets-law-for-executors) and [New Jersey digital assets law](/learn/new-jersey/new-jersey-digital-assets-law) explain the state rules.
+Cloud storage is different because the files sit on a company's servers under a contract. Illinois follows a version of the uniform law on fiduciary access to digital assets. Under it, a personal representative can generally obtain a catalog of the account and, with the right authority, the contents. The provider may still require a court order or its own online tool. Our guide to [Illinois digital assets law](/learn/illinois/illinois-digital-assets-law-for-executors) explains the state rules.
 
 ## What should I do first?
 

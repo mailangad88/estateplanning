@@ -1,7 +1,7 @@
 ---
 title: "Who gets a deceased person's last paycheck, tax refund and other money they were owed?"
 description: "Last wages, a tax refund, a security deposit, an insurance premium credit. See who is entitled to money owed to someone who died, and how to collect it."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Money owed to a person at death is an asset of the estate, so it goes to the executor or administrator, who then uses it for debts and passes the rest to heirs. A surviving spouse or a small estate affidavit can sometimes collect it without a full court case. Payers want a death certificate and proof of authority before they release a check.
 takeaways:
@@ -28,7 +28,6 @@ related:
   - "after-a-death/claiming-life-insurance-pension-and-va-survivor-benefits"
   - "probate/small-estate-affidavit"
   - "illinois/finding-unclaimed-property-for-an-illinois-estate"
-  - "new-jersey/finding-unclaimed-property-for-a-new-jersey-estate"
 glossary: ["executor", "decedent", "estate", "small-estate-affidavit", "probate-estate", "letters-testamentary"]
 review: pending
 intent: question
@@ -87,13 +86,13 @@ Do not deposit it, and do not sign the person's name. A bank will normally refus
 3. Ask them to void the check and reissue it to "the Estate of" the person, or to you as the executor.
 4. Deposit it into the estate's bank account, not your own.
 
-If no executor has been appointed, the estate has no account yet. A small amount may be reachable through a [small estate affidavit](/learn/probate/small-estate-affidavit), a sworn statement that lets certain payers release money without a full court case. Each state sets the dollar limit and waiting period. Illinois and New Jersey each have their own version, explained in our pages on the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit) and the [New Jersey small estate affidavit](/learn/new-jersey/new-jersey-small-estate-affidavit).
+If no executor has been appointed, the estate has no account yet. A small amount may be reachable through a [small estate affidavit](/learn/probate/small-estate-affidavit), a sworn statement that lets certain payers release money without a full court case. Each state sets the dollar limit and waiting period. In Illinois the affidavit covers up to $150,000 of personal property and does not reach real estate, as explained in our page on the [Illinois small estate affidavit](/learn/illinois/illinois-small-estate-affidavit).
 
 ## What if you do not know who owes the estate money?
 
 Look for patterns in the paper trail, then check the state. Bank statements show direct deposits from employers, pension plans and insurers. A tax return shows interest and dividends, which point to accounts. Mail that looks like a junk offer sometimes turns out to be a refund notice.
 
-After that, search state unclaimed property records. States collect dormant accounts, uncashed checks, utility deposits and forgotten insurance money, and they hold them without a deadline for the owner or heirs. Searching is free, and it is the step most families skip. Our pages on finding unclaimed property for an [Illinois estate](/learn/illinois/finding-unclaimed-property-for-an-illinois-estate) and for a [New Jersey estate](/learn/new-jersey/finding-unclaimed-property-for-a-new-jersey-estate) explain what proof the state will ask for. Be wary of anyone who calls offering to find money for a percentage. The state's own search is free.
+After that, search state unclaimed property records. States collect dormant accounts, uncashed checks, utility deposits and forgotten insurance money, and they hold them without a deadline for the owner or heirs. Searching is free, and it is the step most families skip. Our page on finding unclaimed property for an [Illinois estate](/learn/illinois/finding-unclaimed-property-for-an-illinois-estate) explains what proof the state will ask for. Be wary of anyone who calls offering to find money for a percentage. The state's own search is free.
 
 <!-- visual: timeline id=after-a-death -->
 

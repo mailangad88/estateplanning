@@ -1,7 +1,7 @@
 ---
 title: "Is your US advance directive valid when you travel or live abroad?"
 description: "A US living will or healthcare proxy has no automatic force overseas. See what it can still do, what to carry, and when a local document is worth having."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Usually not as a binding legal document. A directive signed under a US state's law has no automatic force in another country, whose own rules on end-of-life care apply. It still serves as strong evidence of your wishes, and your agent can use it. For long stays, pair it with a local document and travel insurance.
 takeaways:
@@ -32,7 +32,7 @@ review: pending
 intent: question
 ---
 
-Paul and Ines, both in their sixties, have booked three weeks in Portugal. Paul has a heart condition. Before the trip he asks his daughter whether his living will, signed in New Jersey, would do anything in a Lisbon hospital. She does not know, and neither did the travel agent.
+Paul and Ines, both in their sixties, have booked three weeks in Portugal. Paul has a heart condition. Before the trip he asks his daughter whether his living will, signed in Illinois, would do anything in a Lisbon hospital. She does not know, and neither did the travel agent.
 
 The honest answer is that it does less than you would hope and more than nothing. This article explains why, and gives you a short checklist for trips and for longer stays. It builds on our article on [directives across state lines](/learn/healthcare-directives/do-advance-directives-work-in-other-states) and our wider guide to [advance healthcare directives](/learn/healthcare-directives).
 

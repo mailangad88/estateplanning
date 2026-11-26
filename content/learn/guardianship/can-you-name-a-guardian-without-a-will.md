@@ -1,14 +1,14 @@
 ---
 title: "Can you name a guardian for your child without a will? Trust, letter or handwritten note"
-description: "Can you name a guardian without a will? See why a living trust, letter or note usually fails, what Illinois and New Jersey allow, and how to fix it fast."
-updated: "2026-10-26"
+description: "Can you name a guardian without a will? See why a living trust, letter or note usually fails, what Illinois allows, and how to fix it fast."
+updated: "2026-11-26"
 answer: >-
-  In practice, you name a guardian in a will. New Jersey's statute points to a will, and Illinois accepts a signed writing with two witnesses, though a will is the safe choice. A living trust, a letter, an email or a note to a friend does not appoint anyone. If you have a trust, add a pour-over will so the nomination sits in a document courts read.
+  In practice, you name a guardian in a will. Illinois also accepts a parent's signed writing with two credible witnesses, though a will is the safe choice. A living trust, a letter, an email or a note to a friend does not appoint anyone. If you have a trust, add a pour-over will so the nomination sits in a document courts read.
 takeaways:
   - "A court reads a will for a guardian nomination. A living trust is a private document that courts do not look to for one."
   - "Illinois allows a parent's written designation with two credible witnesses, but that route is easier to get wrong than a will."
   - "A letter of wishes is useful and persuasive, but it does not name a legally recognized guardian."
-  - "A handwritten will can work in New Jersey but not in Illinois, so a handwritten note is a risky plan in either state."
+  - "Illinois does not accept an unwitnessed handwritten will, so a handwritten note naming a guardian is a risky plan."
   - "Parents with a living trust still need a pour-over will, because that is where the guardian clause lives."
 faqs:
   - q: "Can I name a guardian in my living trust?"
@@ -27,7 +27,7 @@ related:
   - "guardianship/letter-of-intent-for-your-childrens-guardian"
   - "wills/pour-over-will"
   - "wills/how-much-does-a-will-cost"
-  - "new-jersey/guardianship-in-new-jersey"
+  - "illinois/naming-a-guardian-for-your-children"
   - "illinois/illinois-guardianship"
 glossary: ["guardian", "pour-over-will", "living-trust", "holographic-will", "self-proving-affidavit", "testator"]
 review: pending
@@ -36,11 +36,11 @@ intent: question
 
 You have a living trust, or a long email to your sister, or a note in the kitchen drawer that says who should raise your kids. It feels like enough. For the question of who becomes the guardian, it usually is not. A judge looks for a specific kind of document, and most documents parents write do not qualify.
 
-This page sorts the common ways parents try to name a guardian into what works and what does not in Illinois and New Jersey, and gives a quick fix if you have already set something up. The full picture of the topic is in our [guardianship guide](/learn/guardianship).
+This page sorts the common ways parents try to name a guardian into what works and what does not in Illinois, and gives a quick fix if you have already set something up. The full picture of the topic is in our [guardianship guide](/learn/guardianship).
 
 ## Do you need a will to name a guardian for your child?
 
-Yes, for all practical purposes. A will is the document judges look for. In New Jersey, a parent appoints a guardian of the person and of the estate for a child by will (N.J.S.A. 3B:12-13). In Illinois, the statute allows a parent's written designation with at least two credible witnesses (755 ILCS 5/11-5), which a will satisfies, and a stand-alone writing may satisfy if it is executed correctly. The word to notice is "correctly." Illinois courts and clerks work with wills every day and rarely see a stand-alone designation.
+Yes, for all practical purposes. A will is the document judges look for. In Illinois, the statute allows a parent's written designation with at least two credible witnesses (755 ILCS 5/11-5), which a will satisfies, and a stand-alone writing may satisfy if it is executed correctly. The word to notice is "correctly." Illinois courts and clerks work with wills every day and rarely see a stand-alone designation.
 
 Remember what the nomination does. Only a court appoints the guardian, and a will nominates. Our article on [whether a guardian named in a will holds up in court](/learn/guardianship/does-a-guardian-named-in-a-will-hold-up-in-court) explains how much weight a judge gives it.
 
@@ -71,7 +71,7 @@ The fix is a pour-over will. It is a short will that names the guardian and back
 
 ## Is a handwritten guardian nomination valid?
 
-It depends on the state and on how it is written, and the risk is high. New Jersey accepts a will if the signature and the key terms are in the person's own handwriting, even without witnesses, but a court can then require proof the handwriting is yours. Illinois requires the usual two witnesses for a will and does not accept an unwitnessed handwritten one. A handwritten page that says "if we die, Maria gets the kids" and is signed by one parent might be a will in New Jersey and nothing in Illinois. Our guide to [handwritten and DIY wills](/learn/wills/handwritten-and-diy-wills) lists the traps.
+In Illinois, usually not, and the risk is high. Illinois requires the usual two witnesses for a will and does not accept an unwitnessed handwritten one. A handwritten page that says "if we die, Maria gets the kids" and is signed by one parent is not a will in Illinois. Some other states accept handwritten wills, but an Illinois family should not count on that. Our page on [handwritten wills in Illinois](/learn/illinois/handwritten-wills-in-illinois) explains what happens to an unwitnessed one. Our guide to [handwritten and DIY wills](/learn/wills/handwritten-and-diy-wills) lists the traps.
 
 A sensible use of a handwritten note: attach it to your real, signed will as a [letter for your guardian](/learn/guardianship/letter-of-intent-for-your-childrens-guardian), covering routines, schools, medical needs and values. It is not the nomination. It is the owner's manual.
 

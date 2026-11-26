@@ -1,7 +1,7 @@
 ---
 title: "What to ask a special needs planning attorney and what to bring to the first meeting"
 description: "Choosing a special needs planning attorney: what the work involves, how it differs from an online trust or a financial planner, what to bring, and what to ask."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A special needs planning attorney is an estate planning attorney whose work includes trusts and benefit rules for
   people with disabilities. Bring benefit letters, account statements, diagnoses and your current documents. Ask which
@@ -99,13 +99,13 @@ These questions get past the sales conversation to what you will actually receiv
 
 ## How do you find the right attorney?
 
-Search your state bar's lawyer-finder service, ask your child's case manager, call your state developmental disabilities agency, and ask other parents. In Illinois, families often register with the Illinois Department of Human Services for the state's waiver waitlist, and in New Jersey with the Division of Developmental Disabilities. Those offices do not recommend lawyers, but their staff and the parent groups around them know who is familiar with the local process. Meet at least two attorneys, notice whether they explain things in plain words, and choose the one you trust to still be there in 20 years.
+Search your state bar's lawyer-finder service, ask your child's case manager, call your state developmental disabilities agency, and ask other parents. In Illinois, families often register with the Illinois Department of Human Services for the state's waiver waitlist. That office does not recommend lawyers, but its staff and the parent groups around it know who is familiar with the local process. Meet at least two attorneys, notice whether they explain things in plain words, and choose the one you trust to still be there in 20 years.
 
 If you want a picture of the next steps before you call, read [how to set up a special needs trust](/learn/special-needs/how-to-set-up-a-special-needs-trust). Parents of a teenager should also read what happens when a child with a disability [turns 18](/learn/special-needs/what-to-do-when-a-child-with-a-disability-turns-18).
 
 ## What should the attorney explain about your child's own decisions?
 
-A good first meeting also covers who will make decisions for Anika. At 18, parents lose automatic authority in most states, even when the young adult has a significant disability. The attorney should lay out the choices: a healthcare proxy and financial power of attorney if she has capacity to sign them, supported decision-making, a representative payee for Social Security, and guardianship only if nothing lighter works. Guardianship is a court process and is public, so ask what it would cost and how long it would take. Families in Illinois and New Jersey can read the state pages on [guardianship alternatives for adult children](/learn/special-needs/guardianship-alternatives-for-adult-children) before they go, and ask the attorney which local forms the courts expect.
+A good first meeting also covers who will make decisions for Anika. At 18, parents lose automatic authority in most states, even when the young adult has a significant disability. The attorney should lay out the choices: a healthcare proxy and financial power of attorney if she has capacity to sign them, supported decision-making, a representative payee for Social Security, and guardianship only if nothing lighter works. Guardianship is a court process and is public, so ask what it would cost and how long it would take. Families can read our page on [guardianship alternatives for adult children](/learn/special-needs/guardianship-alternatives-for-adult-children) before they go, and ask the attorney which local forms the courts expect.
 
 Ask also about where the money goes while you are alive. Some parents put small amounts into an [ABLE account](/learn/special-needs/able-accounts) for everyday costs and reserve the trust for larger needs. The attorney should explain how those fit together.
 

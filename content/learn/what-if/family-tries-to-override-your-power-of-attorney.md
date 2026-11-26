@@ -1,7 +1,7 @@
 ---
 title: "What happens if your family tries to override your power of attorney?"
 description: "Relatives cannot overrule the agent you chose just by disagreeing. See what a court can do, who can file, and how to make your choice hard to knock over."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Family members cannot override a valid power of attorney by objecting. While you have capacity, only you can change or revoke it. If you do not, relatives can ask a court to review the agent's conduct, limit the agent's powers or remove the agent, but they usually must show a real problem, such as misuse, not just a different opinion.
 takeaways:
@@ -97,7 +97,7 @@ That ending is common when an agent is honest. The cost to the family is real, t
 
 ## How state law changes this
 
-States differ on who can petition, what the petitioner must plead, whether the agent must keep records, whether the court can order a transfer back, and how an agent's duties are described. Many states follow a uniform act, but with changes. A few have special rules for gifts or for real estate. Healthcare agents are governed by separate statutes. Start with our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides and ask an attorney about local practice.
+States differ on who can petition, what the petitioner must plead, whether the agent must keep records, whether the court can order a transfer back, and how an agent's duties are described. Many states follow a uniform act, but with changes. A few have special rules for gifts or for real estate. Healthcare agents are governed by separate statutes. Start with our [Illinois guide](/estate-planning/illinois) and the page on [court accounting for an Illinois POA agent](/learn/illinois/court-accounting-for-an-illinois-poa-agent), and ask an attorney about local practice.
 
 ## How to prevent it
 

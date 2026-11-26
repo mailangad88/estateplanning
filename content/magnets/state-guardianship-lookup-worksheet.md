@@ -20,9 +20,9 @@ answers:
   - "What is the guardianship process in California?"
   - "What is the guardianship process in Florida?"
   - "What is the guardianship process in Georgia?"
+  - "What is the guardianship process in Illinois?"
   - "What is the guardianship process in Massachusetts?"
   - "What is the guardianship process in Michigan?"
-  - "What is the guardianship process in New Jersey?"
   - "What is the guardianship process in New York (Article 81)?"
   - "What is the guardianship process in North Carolina?"
   - "What is the guardianship process in Ohio?"
@@ -36,7 +36,7 @@ related:
   - life-events/moving-to-a-new-state
   - guides/powers-of-attorney
 reviewed: false
-updated: "2026-10-06"
+updated: "2026-11-26"
 ---
 
 **How to use this worksheet.** Guardianship is a state court process, and no two states use exactly the same words, forms or timelines. Start with the term decoder, then fill in the lookup sheet for your state from the court's own website. The starting notes are general and may be out of date, so confirm each one with the court or an attorney licensed in that state. This is general education, not legal advice. Illinois readers can use the [Illinois adult guardianship process guide](/free/illinois-adult-guardianship-process-guide).
@@ -85,9 +85,9 @@ Use these as search terms, not as answers. <!-- verify: each state row against t
 | California | Guardianship (minors) and conservatorship (adults), superior court probate division | Different tracks for general and developmental disability cases |
 | Florida | Guardianship under Chapter 744, circuit court | An examining committee and a court-appointed attorney are common |
 | Georgia | Guardianship and conservatorship, probate court | Medical evidence and a hearing are usual |
+| Illinois | Guardianship of a person with a disability, circuit court | A physician's report and a guardian ad litem are usual |
 | Massachusetts | Guardianship and conservatorship, Probate and Family Court | Medical certificate and forms from the court |
 | Michigan | Guardian and conservator, probate court | Court review each year |
-| New Jersey | Guardianship, Superior Court, Chancery Division, Probate Part | Two physician certifications are common |
 | New York | Article 81 of the Mental Hygiene Law for adults, with a separate route for some developmental disability cases | Hearing and court evaluator; court prefers least restrictive option |
 | North Carolina | Guardianship through the Clerk of Superior Court | A multi-step proceeding, with a guardian ad litem |
 | Ohio | Guardianship, probate court | Medical statement and court investigator |

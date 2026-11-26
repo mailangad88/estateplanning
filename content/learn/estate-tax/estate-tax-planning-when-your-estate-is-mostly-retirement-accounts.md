@@ -1,7 +1,7 @@
 ---
 title: "Estate tax planning when your wealth is mostly in retirement accounts"
 description: "IRAs and 401(k)s count fully toward the estate tax and carry income tax on top. See how heirs get hit twice and which moves can reduce the double bill."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Retirement accounts count toward the estate tax at full value and get no step-up in basis, so heirs may owe income tax on withdrawals too. The usual levers are naming a surviving spouse, leaving pre-tax accounts to charity, converting some money to a Roth account while alive, and spending or gifting from other assets first.
 takeaways:
@@ -86,7 +86,7 @@ An estate made mostly of retirement accounts is often short on cash. The executo
 
 ## How do state taxes change this?
 
-State rules add another layer. Illinois taxes estates above $4 million, so a $5 million estate that is mostly retirement money can owe Illinois estate tax with no federal tax at all. See the [Illinois estate tax](/learn/illinois/illinois-estate-tax). New Jersey has no estate tax but has an inheritance tax. Retirement accounts left to a sibling or a nephew can be taxed there, while a spouse, child or grandchild is exempt. The article on the [New Jersey inheritance tax](/learn/new-jersey/new-jersey-inheritance-tax) shows how the classes work. The [state death tax checker](/tools/state-death-tax-checker) gives a quick read.
+State rules add another layer. Illinois taxes estates above $4 million, so a $5 million estate that is mostly retirement money can owe Illinois estate tax with no federal tax at all. See the [Illinois estate tax](/learn/illinois/illinois-estate-tax). Illinois does not offer portability between spouses, so a couple cannot rely on the first spouse's unused Illinois exclusion at the second death. Our page on [Illinois QTIP elections and credit shelter trusts](/learn/illinois/illinois-qtip-election-and-credit-shelter-trusts) explains how couples plan around that. The [state death tax checker](/tools/state-death-tax-checker) gives a quick read.
 
 ## A simple way to think about it
 

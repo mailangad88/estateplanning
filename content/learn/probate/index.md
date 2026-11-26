@@ -1,7 +1,7 @@
 ---
 title: "Probate explained: how it works, how long it takes and how to avoid it"
 description: "A plain-English guide to probate: what it is, who it affects, what it costs, how long it takes and the tools families use to keep assets out of court."
-updated: "2026-10-06"
+updated: "2026-11-26"
 answer: >-
   Probate is the court process that validates a will, appoints an executor, pays the dead person's debts and
   transfers what is left to heirs. It applies only to assets titled in the decedent's name alone. Typical cases take
@@ -154,7 +154,7 @@ State rules matter a great deal here. If you want to see how probate works where
 
 ## More questions people ask
 
-To keep the bill down, [the cheapest way to settle an estate in Illinois or New Jersey](/learn/probate/cheapest-way-to-settle-an-estate-in-illinois-or-new-jersey) ranks the options from affidavit to full probate.
+To keep the bill down, [the cheapest way to settle an estate in Illinois](/learn/probate/cheapest-way-to-settle-an-estate-in-illinois) ranks the options from affidavit to full probate.
 
 If a death has already happened, [how to avoid probate after someone has died](/learn/probate/how-to-avoid-probate-after-someone-has-died) shows which assets skip court and which cannot.
 
@@ -164,7 +164,7 @@ If something turns up after the case ends, [can you reopen a closed probate esta
 
 If a bank turns down the paperwork, [what to do when a bank refuses a small estate affidavit](/learn/probate/what-to-do-when-a-bank-refuses-a-small-estate-affidavit) explains how to push back and when to open probate.
 
-For the clocks that start at death, see [how long you have to file probate in Illinois or New Jersey](/learn/probate/how-long-do-you-have-to-file-probate-in-illinois-or-new-jersey).
+For the clocks that start at death, see [how long you have to file probate in Illinois](/learn/probate/how-long-do-you-have-to-file-probate-in-illinois).
 
 Once you have letters, [how to open an estate bank account](/learn/probate/how-to-open-an-estate-bank-account) covers what the bank needs and what to pay from it.
 
@@ -172,7 +172,7 @@ If you are waiting on your share, [can heirs get money before probate ends](/lea
 
 To learn who is allowed to start a case and who the court will appoint, read [who can open a probate case](/learn/probate/who-can-open-a-probate-case).
 
-To see how two states differ in practice, [Illinois and New Jersey probate compared](/learn/probate/illinois-and-new-jersey-probate-compared) lines up the courts, notice rules, small estate shortcuts and death taxes.
+To see the whole Illinois process from the first filing to the final account, [how probate works in Illinois](/learn/illinois/illinois-probate-process) lines up the court steps, notice rules and deadlines.
 
 When debts exceed assets, [what happens when an estate owes more than it has](/learn/probate/what-happens-when-an-estate-owes-more-than-it-has) explains who gets paid and what the family owes.
 

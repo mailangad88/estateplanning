@@ -36,7 +36,7 @@ faqs:
   - q: "Will the attorney work with my accountant and insurance agent?"
     a: "Usually yes, with your permission. Ask on your first call how the attorney coordinates with your other advisers."
 reviewed: false
-updated: "2026-10-06"
+updated: "2026-11-26"
 ---
 
 ## What is at stake
@@ -46,7 +46,7 @@ updated: "2026-10-06"
 - **You die and the business is the main asset.** Without a plan, the executor may be left with a business that loses customers and key employees while probate runs.
 - **Heirs who do not want the business, and heirs who do.** Equal shares do not always mean fair. A plan can give the business to the child who works in it and equalize with other assets or insurance.
 - **Personal liability on business debt.** SBA loans, equipment leases and commercial leases often make you personally liable in ways that outlive your involvement. Bring any loan or lease you signed personally to the first meeting, so the plan accounts for it.
-- **Estate tax is usually not the issue.** The 2026 federal exclusion is $15 million per person <!-- verify -->. Illinois taxes estates over $4 million, which a business can reach. New Jersey has no estate tax but taxes some inheritances, such as gifts to siblings. See [estate and inheritance taxes](/guides/estate-and-inheritance-taxes) and the [estate tax estimator](/tools/estate-tax-estimator).
+- **Estate tax is usually not the issue.** The 2026 federal exclusion is $15 million per person <!-- verify -->. Illinois taxes estates over $4 million, which a business can reach. See [estate and inheritance taxes](/guides/estate-and-inheritance-taxes) and the [estate tax estimator](/tools/estate-tax-estimator).
 
 ## What a plan usually includes
 

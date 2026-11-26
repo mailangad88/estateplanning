@@ -1,7 +1,7 @@
 ---
 title: "Who gets your life insurance if you are unmarried with no children?"
-description: "If you are single with no kids, life insurance goes to whoever you named. With no one named, the policy default and Illinois or New Jersey law decide."
-updated: "2026-10-26"
+description: "If you are single with no kids, life insurance goes to whoever you named. With no one named, the policy default and Illinois law decide."
+updated: "2026-11-26"
 answer: >-
   Your life insurance pays whoever is named on the beneficiary form, whether that is a partner, sibling, friend or charity. If you are single with no children and no one is named, the insurer follows its own default order, which often ends at your estate. The estate then passes under your will or, without one, to your parents and siblings under state law.
 takeaways:
@@ -14,7 +14,7 @@ faqs:
   - q: "Can I name a friend or an unmarried partner as my life insurance beneficiary?"
     a: "Yes. You may name anyone you choose, including a friend, a partner, a cousin or a charity. The insurer pays the person named, and your family has no automatic right to challenge the form, though a form signed under pressure or while you lacked capacity can be contested."
   - q: "Can I leave life insurance to my dog or cat?"
-    a: "Not directly, since an animal cannot receive money. Name a trusted person or a pet trust as the beneficiary and leave written instructions. Illinois and New Jersey both recognize pet trusts."
+    a: "Not directly, since an animal cannot receive money. Name a trusted person or a pet trust as the beneficiary and leave written instructions. Illinois recognizes pet trusts under Section 408 of the Trust Code."
   - q: "Do my parents get my life insurance automatically if I am single?"
     a: "Not automatically. They are paid only if they are named or if the policy's default order or your estate reaches them. Employer group policies often have a default order that lists a spouse first and children next, and a parent may or may not appear."
   - q: "Is life insurance money taxable to the person who receives it?"
@@ -57,13 +57,13 @@ Then the policy's default order applies. The order is written in the contract, a
 
 A single person with no children skips the first two steps. Some policies stop at "estate" instead of listing parents and siblings, so you cannot tell from this list which version you have. Ask the insurer or HR for the written default order.
 
-If the money lands in your estate, three bad things can follow. It goes through probate, which takes months in Illinois and New Jersey. It becomes available to pay your creditors. And it passes under your will, or under state law if there is no will. Our article on [never naming a beneficiary](/learn/what-if/no-beneficiary-named) walks through that path in detail.
+If the money lands in your estate, three bad things can follow. It goes through probate, which takes months in Illinois. It becomes available to pay your creditors. And it passes under your will, or under state law if there is no will. Our article on [never naming a beneficiary](/learn/what-if/no-beneficiary-named) walks through that path in detail.
 
 ## Who inherits if there is no will either?
 
-State intestacy law fills the gap, and for a person with no spouse and no children it points to your parents and siblings. In Illinois the order, with no spouse and no descendants, runs to parents, brothers and sisters, and their descendants. New Jersey also looks first to parents, then to siblings and their children, and then further out.
+State intestacy law fills the gap, and for a person with no spouse and no children it points to your parents and siblings. In Illinois the order, with no spouse and no descendants, runs to parents, brothers and sisters, and their descendants. If one parent has died, the surviving parent takes a double share.
 
-An unmarried partner of any length is not an heir in either state. Neither is a friend. Consider Priya, 41, who has a $250,000 employer life policy, no children and a partner of eleven years named Marcus. Her form lists her mother, who died last year. Because Priya never updated it and never made a will, the policy defaults to her estate, her father and her brother inherit, and Marcus gets nothing. A new form naming Marcus and a contingent beneficiary would have prevented the whole result.
+An unmarried partner of any length is not an heir in Illinois. Neither is a friend. Consider Priya, 41, who has a $250,000 employer life policy, no children and a partner of eleven years named Marcus. Her form lists her mother, who died last year. Because Priya never updated it and never made a will, the policy defaults to her estate, her father and her brother inherit, and Marcus gets nothing. A new form naming Marcus and a contingent beneficiary would have prevented the whole result.
 
 <!-- visual: whatif id=no-beneficiary-named -->
 
@@ -82,7 +82,7 @@ Naming a minor directly is the mistake we see most. A court-supervised guardians
 
 ## Should the policy go into a trust?
 
-For most single people a direct beneficiary is enough. A trust earns its cost when the person you are protecting cannot manage a lump sum, when you want the money paid out over years, or when your estate is big enough for tax planning. Only large estates face federal tax, since the 2026 exclusion is $15,000,000 per person. State taxes bite earlier. Illinois has its own estate tax with a much lower threshold, and New Jersey has an inheritance tax on transfers to some relatives, so look at [state estate and inheritance taxes](/learn/estate-tax/state-estate-and-inheritance-taxes) if your total assets are significant.
+For most single people a direct beneficiary is enough. A trust earns its cost when the person you are protecting cannot manage a lump sum, when you want the money paid out over years, or when your estate is big enough for tax planning. Only large estates face federal tax, since the 2026 exclusion is $15,000,000 per person. State taxes bite earlier. Illinois has its own estate tax with a much lower threshold, so look at [state estate and inheritance taxes](/learn/estate-tax/state-estate-and-inheritance-taxes) if your total assets are significant.
 
 ## Can my family challenge who I named?
 

@@ -1,7 +1,7 @@
 ---
 title: "What happens at an estate planning appointment: the questions your attorney will ask"
 description: "What happens at an estate planning appointment? The questions attorneys ask, why they ask them, how long it takes, what is confidential, and what happens next."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   At an estate planning appointment the attorney asks about your family, your assets, how each is owned, who you trust, and what you want to happen if you die or cannot manage your affairs. You then get a recommended plan. Expect 45 minutes to two hours, a confidential conversation, and a draft to review afterward.
 takeaways:
@@ -133,7 +133,7 @@ Usually these four things:
 
 ## What happens after the first meeting?
 
-The attorney drafts the documents, you review them, and you come back to sign with witnesses and, where required, a notary. Illinois and New Jersey both have specific signing requirements for wills, and the attorney handles them. After signing, you update beneficiary forms and, for a trust, retitle your assets. [How long it takes to create an estate plan](/learn/basics/how-long-does-it-take-to-create-an-estate-plan) gives typical timelines.
+The attorney drafts the documents, you review them, and you come back to sign with witnesses and, where required, a notary. Illinois has specific signing requirements for wills, and the attorney handles them. After signing, you update beneficiary forms and, for a trust, retitle your assets. [How long it takes to create an estate plan](/learn/basics/how-long-does-it-take-to-create-an-estate-plan) gives typical timelines.
 
 ## How we can help
 

@@ -1,7 +1,7 @@
 ---
 title: "What happens to a condo or co-op apartment when the owner dies?"
 description: "What happens to a condo when the owner dies? Heirs take the unit with its dues and assessments. A co-op adds board approval. See the steps and what to do first."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A condo passes like any house: by will, trust, deed or state law. The heirs take it with the unpaid dues and any special assessments. A co-op is different because the owner holds shares and a lease, not real estate, so the board may have to approve a new occupant. In both cases the association keeps billing, and the estate has to keep paying.
 takeaways:
@@ -50,13 +50,13 @@ The names get used loosely, so start with the difference.
 | Monthly bill | Common charges, also called HOA fees | Maintenance, which includes the building's taxes and mortgage |
 | Probate route | Same as any real estate | Often handled as personal property |
 
-Both exist in Illinois and New Jersey. A co-op share can be easier to pass in probate because it is personal property, but the board adds a step.
+Both exist in Illinois, and our page on [Chicago condos and co-ops](/learn/illinois/chicago-condo-and-co-op) covers the city details. A co-op share can be easier to pass in probate because it is personal property, but the board adds a step.
 
 ## What happens to a condo when the owner dies?
 
 The unit passes under the owner's will, trust or deed. If the condo is titled in a living trust, the successor trustee can act within days. If it is in the owner's name alone, the executor needs letters from the court to sign a deed, and a no-will estate means an administrator. Read our guide to [putting a house in a living trust](/learn/trusts/transfer-house-to-living-trust) for how the trust route works, which applies to condos too.
 
-Joint ownership changes the result. If two people own with right of survivorship, the survivor takes the whole unit by operation of law and the file is just a death certificate and a new recording. Illinois and New Jersey both have forms of this, including [tenancy by the entirety](/learn/property-and-assets/joint-tenants-vs-tenants-in-common-vs-entirety) for married couples.
+Joint ownership changes the result. If two people own with right of survivorship, the survivor takes the whole unit by operation of law and the file is just a death certificate and a new recording. Illinois has forms of this, including [tenancy by the entirety](/learn/property-and-assets/joint-tenants-vs-tenants-in-common-vs-entirety) for a married couple's homestead.
 
 Meanwhile the association keeps sending bills. Common charges do not pause for a death.
 
@@ -88,7 +88,7 @@ In practice, boards often approve a spouse or child who will live there, and oft
 
 ### An example
 
-Gloria, 71, owned a one-bedroom condo in Evanston with $410 in monthly fees, and no will. Her son Marcus lives in New Jersey. The unit would have a market value of around $300,000. She had fallen three months behind on dues after an illness, and the association had voted a $6,000 roof assessment the week before she died.
+Gloria, 71, owned a one-bedroom condo in Evanston with $410 in monthly fees, and no will. Her son Marcus lives out of state. The unit would have a market value of around $300,000. She had fallen three months behind on dues after an illness, and the association had voted a $6,000 roof assessment the week before she died.
 
 Marcus asked a court to appoint him administrator. Meanwhile the association's attorney warned that a lien would be recorded unless the arrears were paid. The estate paid them from Gloria's savings account once it had letters. Marcus sold the unit for $300,000, a price close to the value at death, so his gain was close to zero because of the step-up in basis. The estate paid the $6,000 assessment at closing. A trust would have let him act weeks sooner.
 
@@ -96,7 +96,7 @@ Marcus asked a court to appoint him administrator. Meanwhile the association's a
 
 An heir generally takes a basis equal to the unit's value on the date of death. Selling soon after for about that figure usually produces little taxable gain. This is the same step-up described in [capital gains when you sell an inherited house](/learn/property-and-assets/capital-gains-when-you-sell-an-inherited-house-or-a-house-after-a-spouse-dies). Gifts made during life do not get the step-up.
 
-Estate tax is the other question. The federal exclusion is $15 million per person in 2026. Illinois taxes estates over $4 million. New Jersey has an inheritance tax rather than an estate tax, and a spouse or child does not pay it.
+Estate tax is the other question. The federal exclusion is $15 million per person in 2026. Illinois taxes estates over $4 million.
 
 ## Should heirs keep or sell the unit?
 

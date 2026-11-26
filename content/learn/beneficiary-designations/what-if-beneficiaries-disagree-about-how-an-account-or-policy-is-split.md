@@ -1,7 +1,7 @@
 ---
 title: "What if beneficiaries disagree about how an account or life insurance policy is split?"
 description: "When co-beneficiaries fight over a split, the form controls and the company may freeze payment. See what insurers do, how to settle it and when a court rules."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   The beneficiary form controls the split, not family opinion, and the company will pay according to its wording. When the wording is unclear or two people make competing claims, the insurer or plan may hold the money or file it with a court (interpleader) so a judge decides. Most disputes are settled earlier by reading the form, a written agreement or mediation.
 takeaways:
@@ -63,7 +63,7 @@ Companies avoid paying the wrong person, because paying twice is expensive. If t
 | Holds everything and waits for an agreement | Both sides say they own the whole | Long delays, no interest in some cases |
 | Files an interpleader in court | The conflict cannot be resolved | A judge decides; the company steps out |
 
-Interpleader is the legal route when an insurer or plan does not want to pick a side. The company deposits the money with the court and asks the judge to decide who is entitled. In Illinois the case goes to the circuit court, and in New Jersey to the Superior Court, often the Chancery Division. Plan on months, not weeks. Fees and costs can come out of the pot, which shrinks everyone's share.
+Interpleader is the legal route when an insurer or plan does not want to pick a side. The company deposits the money with the court and asks the judge to decide who is entitled. In Illinois the case goes to the circuit court. Plan on months, not weeks. Fees and costs can come out of the pot, which shrinks everyone's share.
 
 <!-- visual: whatif id=siblings-inherit-house-disagree -->
 
@@ -87,7 +87,7 @@ Most disputes end faster and cheaper by agreement. Try these steps in order.
 4. **Try mediation.** A neutral mediator costs far less than a contested case, and most mediators are attorneys.
 5. **Use a court only for a real conflict.** Where the form is truly ambiguous or someone alleges pressure, a judge may need to rule.
 
-Keep in mind that a beneficiary who wants to step aside has to follow strict rules for a qualified disclaimer. Our page on [disclaiming an inheritance](/learn/after-a-death/how-to-disclaim-an-inheritance) explains how, and the state-specific rules are in the [Illinois](/learn/illinois/disclaiming-an-inheritance-in-illinois) and [New Jersey](/learn/new-jersey/disclaiming-an-inheritance-in-new-jersey) guides.
+Keep in mind that a beneficiary who wants to step aside has to follow strict rules for a qualified disclaimer. Our page on [disclaiming an inheritance](/learn/after-a-death/how-to-disclaim-an-inheritance) explains how, and the Illinois rules are in our guide to [disclaiming an inheritance in Illinois](/learn/illinois/disclaiming-an-inheritance-in-illinois).
 
 ## What about retirement accounts shared by several beneficiaries?
 

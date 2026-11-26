@@ -38,7 +38,7 @@ faqs:
   - q: "Can the attorney set up my LLCs?"
     a: "Many estate planning attorneys form LLCs for property in their own state. Ask on your first call, and bring your CPA and insurer into the plan."
 reviewed: false
-updated: "2026-10-06"
+updated: "2026-11-26"
 ---
 
 ## What is at stake
@@ -55,7 +55,7 @@ updated: "2026-10-06"
 
 > An LLC separates the property from your personal assets so a claim from a tenant is aimed at the LLC. A living trust decides who owns your LLC interest or your property after you die and who manages it if you cannot. Many investors use both: the properties in LLCs, the LLC interests in the trust.
 
-State rules can change the setup. Illinois and New Jersey both charge a tax or fee on many deed transfers, and some transfers into a trust or LLC are exempt. The attorney checks this before any deed is recorded.
+State rules can change the setup. Illinois charges a transfer tax on many deed transfers, and some transfers into a trust or LLC are exempt. The attorney checks this before any deed is recorded.
 
 ## What a plan usually includes
 
@@ -69,7 +69,7 @@ State rules can change the setup. Illinois and New Jersey both charge a tax or f
 | Basis and tax coordination | Your CPA models gifting vs inheritance. |
 | Out-of-state filings | Deeds recorded in each state where you own property, by a lawyer licensed there. |
 
-**Limits.** Tax advice belongs to your CPA, and an estate planning attorney does not make investment recommendations. Family Future Planning matches you with attorneys in Illinois and New Jersey. For deeds in another state, you will usually need a lawyer licensed there.
+**Limits.** Tax advice belongs to your CPA, and an estate planning attorney does not make investment recommendations. Family Future Planning matches you with attorneys in Illinois. For deeds in another state, you will usually need a lawyer licensed there.
 
 **An honest limit.** For one rental and one home, a will or a simple trust and a good beneficiary plan may be enough. A good attorney will not suggest a structure you do not need.
 

@@ -1,9 +1,9 @@
 ---
 title: "What happens if the account owner and the beneficiary die at the same time? The 120-hour rule"
 description: "What happens if the owner and beneficiary die at the same time? Survival rules like the 120-hour rule decide who counts as first to die and who gets the money."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
-  If you cannot show who survived, state survival laws usually treat the beneficiary as having died first, so the contingent beneficiary gets the money, or the estate does if there is none. Many states apply a 120-hour rule: a person who does not outlive the other by 120 hours (five days) is treated as the first to die. New Jersey follows that rule for wills (N.J.S.A. 3B:3-32).
+  If you cannot show who survived, state survival laws usually treat the beneficiary as having died first, so the contingent beneficiary gets the money, or the estate does if there is none. Many states apply a 120-hour rule: a person who does not outlive the other by 120 hours (five days) is treated as the first to die. Illinois has its own Simultaneous Death Act, and many policies set their own survival period.
 takeaways:
   - "When survival is unclear, the law generally treats the beneficiary as having died before the owner."
   - "A 120-hour survival period is the common default, and a policy or form may set its own period."
@@ -26,7 +26,8 @@ related:
   - "beneficiary-designations/contingent-beneficiaries"
   - "beneficiary-designations/life-insurance-beneficiaries"
   - "beneficiary-designations/what-happens-if-there-is-no-beneficiary-on-a-bank-or-brokerage-account"
-  - "new-jersey/when-a-beneficiary-dies-first-in-new-jersey"
+  - "wills/lapsed-gifts-and-simultaneous-death"
+  - "illinois/life-insurance-with-no-living-beneficiary-in-illinois"
   - "what-if/both-parents-die-without-a-will"
 glossary: ["beneficiary", "contingent-beneficiary", "probate-estate", "heir", "intestate", "per-stirpes"]
 review: pending
@@ -49,7 +50,7 @@ It is a survival requirement. To count as a survivor, a person must be alive 120
 
 The rule exists to stop a bad result. Without it, Ellen's survival of a single night would send Tom's money to Ellen, and then through Ellen's estate to her heirs, who might be her adult children from a first marriage rather than Tom's family. Each family's wishes could be reversed by a few hours.
 
-New Jersey's version, N.J.S.A. 3B:3-32, says that a person who cannot be shown by clear and convincing evidence to have outlived the other by 120 hours is treated as having died first. Our article on [when a beneficiary dies first in New Jersey](/learn/new-jersey/when-a-beneficiary-dies-first-in-new-jersey) explains how that rule works for gifts in a will. Illinois also has survival rules, and the details differ. Because the period and the documents covered vary by statute, do not assume the same answer applies to your insurance policy or IRA.
+Illinois has a Simultaneous Death Act, and many life insurance policies add their own survival requirement, such as outliving the insured by a set number of days. Our article on [Illinois life insurance with no living beneficiary](/learn/illinois/life-insurance-with-no-living-beneficiary-in-illinois) explains what happens when the beneficiary does not meet it, and [lapsed gifts and simultaneous death](/learn/wills/lapsed-gifts-and-simultaneous-death) covers the general rules for wills. Because the period and the documents covered vary by statute, do not assume the same answer applies to your insurance policy or IRA.
 
 <!-- visual: whatif id=both-parents-die-no-will -->
 

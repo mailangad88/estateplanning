@@ -1,7 +1,7 @@
 ---
 title: "Who gets your pet when you die? Choosing a caretaker and a backup"
 description: "Your pet is property in the eyes of the law, so someone must be named. Learn how to pick a caretaker, plan for a refusal and cover the days right after you die."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Your pet passes as property, so your will or trust has to name a person to receive it, and you should name a backup too. Ask the person first, give them a letter of care and some money, and arrange who steps in during the days before the will is read. Without a named caretaker, a court or a shelter decides.
 takeaways:
@@ -24,7 +24,6 @@ faqs:
 related:
   - "property-and-assets/pet-trusts"
   - "illinois/pet-trusts-in-illinois"
-  - "new-jersey/pet-trusts-in-new-jersey"
   - "basics/letter-of-instruction"
   - "wills/specific-general-and-residuary-gifts"
   - "power-of-attorney/durable-financial-power-of-attorney"
@@ -103,7 +102,7 @@ You have three realistic options, and each gives the caretaker a different amoun
 | Written caretaker agreement | A contract setting duties and payments, sometimes funded in installments | Yes, as a contract, but only by the other party |
 | Pet trust | A trust holds the money and a trustee pays the caretaker | Yes. A named person can enforce it |
 
-An outright gift is the simplest, and it works well when you trust the person completely. A trust costs more to set up and makes sense for a long-lived animal or a large sum. Illinois and New Jersey both allow pet trusts, described in [pet trusts in Illinois](/learn/illinois/pet-trusts-in-illinois) and [pet trusts in New Jersey](/learn/new-jersey/pet-trusts-in-new-jersey).
+An outright gift is the simplest, and it works well when you trust the person completely. A trust costs more to set up and makes sense for a long-lived animal or a large sum. Illinois allows pet trusts, as described in [pet trusts in Illinois](/learn/illinois/pet-trusts-in-illinois).
 
 Think about the amount in terms of years and routine costs: food, annual exams, vaccines, medication, grooming and boarding, plus a cushion for emergencies. Ask your vet for a realistic yearly figure for the species and age, and multiply by a reasonable life expectancy. A gift far larger than that can look like a payment for something else, and relatives may challenge it.
 

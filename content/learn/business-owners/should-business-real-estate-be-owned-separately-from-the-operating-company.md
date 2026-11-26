@@ -1,7 +1,7 @@
 ---
 title: "Should your business real estate be in a separate LLC from the operating company?"
-description: "Should business real estate be in a separate LLC? See how owning the building apart from the company helps heirs, what it costs, and how it works in two states."
-updated: "2026-10-26"
+description: "Should business real estate be in a separate LLC? See how owning the building apart from the company helps heirs, what it costs, and what changes across state lines."
+updated: "2026-11-26"
 answer: >-
   Often yes, if the building is worth real money and more than one person will inherit. A separate LLC for the real estate lets the operating company be sold or handed to the child who runs it, while the building stays as an income asset for everyone. The two entities sign a written lease at market rent. It adds paperwork and some cost, so it is a judgment call.
 takeaways:
@@ -49,7 +49,7 @@ The third is the exit. When you sell the business, most buyers want the operatio
 
 This is an invented example to show the logic, not a prediction.
 
-Priya, 62, owns a plumbing supply company in Joliet with the building in the company's name. The company is worth about $1.2 million, the building about $1.4 million with a $400,000 mortgage. Her son Devan runs the shop. Her daughter Mira is a nurse in New Jersey and has no interest in the business.
+Priya, 62, owns a plumbing supply company in Joliet with the building in the company's name. The company is worth about $1.2 million, the building about $1.4 million with a $400,000 mortgage. Her son Devan runs the shop. Her daughter Mira is a nurse in Peoria and has no interest in the business.
 
 | | Everything in one company | Building in its own LLC |
 |---|---|---|
@@ -81,13 +81,13 @@ Skipping the lease is first. Second is paying no rent, or paying rent far from m
 
 ## What if the business or the building is in more than one state?
 
-The state where real estate sits controls how it transfers. A building in Indiana owned personally by an Illinois resident usually needs its own court case in Indiana, called [ancillary probate](/glossary/ancillary-probate), even if the rest of the estate is handled in Illinois. The same is true for a New Jersey resident with a warehouse in Pennsylvania.
+The state where real estate sits controls how it transfers. A building in Indiana owned personally by an Illinois resident usually needs its own court case in Indiana, called [ancillary probate](/glossary/ancillary-probate), even if the rest of the estate is handled in Illinois. The same is true for an Illinois resident with a warehouse in Wisconsin.
 
 An LLC changes the picture. The owner of the building is now the LLC, and your interest in the LLC is personal property, generally handled where you lived. That means one probate case, or none if the interest is in your living trust. Our article on [out-of-state property](/learn/property-and-assets/out-of-state-property) goes through this in more detail.
 
 If the operating company does business in several states, a few other points apply. It may be registered as a foreign entity in each one and owe state filings that continue after your death. A manager or registered agent in each place should not be someone who will disappear when you do. Licenses are often personal, and a regulated trade may need a qualifying individual in each state.
 
-Tax-wise, Illinois taxes estates over $4 million, and New Jersey has an inheritance tax but no estate tax, so a family with property in both should look at both. Real estate in one state can count toward the other state's threshold calculation. The federal exclusion is $15 million per person in 2026.
+Tax-wise, Illinois taxes estates over $4 million, and an Illinois resident's out-of-state real estate still counts when testing the estate against that line. The tax is then reduced by the share of the estate located outside Illinois. Some other states have their own estate or inheritance tax, so a building there may bring a second filing. The federal exclusion is $15 million per person in 2026.
 
 ## Does a separate LLC make estate planning simpler or harder?
 

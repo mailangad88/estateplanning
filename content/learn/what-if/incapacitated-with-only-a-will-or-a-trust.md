@@ -1,7 +1,7 @@
 ---
 title: "What happens if you become incapacitated and all you have is a will or a trust?"
 description: "A will does nothing while you are alive, and a trust covers only what it owns. See who steps in when you cannot act, and which documents fill the gaps."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A will has no power while you are alive, so it does nothing if you become incapacitated. A funded living trust lets your successor trustee manage the assets inside it, but not anything in your own name, and not your medical decisions. For those, your family needs a power of attorney and healthcare documents, or a court order.
 takeaways:
@@ -98,7 +98,7 @@ Time and cost drivers are the court's calendar, the doctor's availability, any o
 
 ## How state law changes this
 
-States set the rules for whether a spouse or adult child can make medical decisions without paperwork, how incapacity under a trust is determined if the document is silent, and how conservatorship and guardianship proceedings work. The names differ too: some states say guardian for both roles, and some use a different term for the financial role. See our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides. A lawyer in your state can tell you which default rules apply.
+States set the rules for whether a spouse or adult child can make medical decisions without paperwork, how incapacity under a trust is determined if the document is silent, and how conservatorship and guardianship proceedings work. The names differ too: some states say guardian for both roles, and some use a different term for the financial role. In Illinois, the [Health Care Surrogate Act](/learn/illinois/illinois-health-care-surrogate-act-who-decides) sets who decides when there is no healthcare power of attorney, and our [Illinois guide](/estate-planning/illinois) covers the rest. A lawyer in your state can tell you which default rules apply.
 
 ## How to prevent it
 

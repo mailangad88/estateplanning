@@ -1,7 +1,7 @@
 ---
 title: "Can I keep using my deceased spouse's Apple ID? Family Sharing, shared logins and closing the account"
 description: "Many couples shared one Apple ID. See what happens to Family Sharing, subscriptions, Apple Pay and locked devices after a death, and how to close it properly."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   You can usually keep using your spouse's Apple ID in practice, but it is not yours. Apple's terms treat an account as personal and non-transferable, and the login can fail or lock at any time. The safer route is to move your own devices, subscriptions and purchases to an Apple ID in your name, then ask Apple to close the old one with a death certificate.
 takeaways:
@@ -111,7 +111,7 @@ A device signed in with the dead person's Apple ID can stay locked to it even af
 
 ## How state law fits in
 
-Both of our states have adopted a version of the uniform fiduciary access law. Illinois's version is in 755 ILCS 70, and New Jersey's is at N.J.S.A. 3B:14-61.1 and following. In both, the account holder's own choices come first, then the will, trust or power of attorney, then the company's terms. Content of communications generally requires the holder's consent or a court order, while a list of what accounts exist is easier to obtain. Our state pages, [Illinois digital assets law for executors](/learn/illinois/illinois-digital-assets-law-for-executors) and [New Jersey's digital assets law](/learn/new-jersey/new-jersey-digital-assets-law), set out the paperwork each state expects.
+Illinois has adopted a version of the uniform fiduciary access law, found in 755 ILCS 70. Under it, the account holder's own choices come first, then the will, trust or power of attorney, then the company's terms. Content of communications generally requires the holder's consent or a court order, while a list of what accounts exist is easier to obtain. Our page on [Illinois digital assets law for executors](/learn/illinois/illinois-digital-assets-law-for-executors) sets out the paperwork the state expects.
 
 ## How can you make this easier for the next spouse?
 

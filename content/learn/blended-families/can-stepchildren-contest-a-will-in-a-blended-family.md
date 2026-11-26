@@ -1,14 +1,14 @@
 ---
 title: "Can my stepchildren contest my will? Who can challenge a blended-family estate plan"
-description: "Can stepchildren contest your will, or your own kids sue your second spouse? See who has standing in Illinois and New Jersey and how to make your plan hold up."
-updated: "2026-10-26"
+description: "Can stepchildren contest your will, or your own kids sue your second spouse? See who has standing in Illinois and how to make your plan hold up."
+updated: "2026-11-26"
 answer: >-
   Stepchildren can contest your will only if they have standing, which usually means they are named in the will or in an earlier one. Children from a first marriage are heirs, so they can always file. A contest must prove a legal defect such as undue influence or lack of capacity. Unfairness alone does not win.
 takeaways:
   - "Standing is the first hurdle: a stepchild who is not an heir and is not named in any will usually cannot bring a contest at all."
   - "Your own children from a first marriage are heirs, so they can challenge a will even if it leaves them little or nothing."
   - "A contest needs a legal ground such as undue influence, lack of capacity, fraud or a signing defect. A will that feels unfair is still valid."
-  - "Illinois allows 6 months after the will is admitted to probate; New Jersey generally allows four months after probate."
+  - "In Illinois, a will contest must be filed within 6 months after the will is admitted to probate."
   - "Most blended-family fights start when a new spouse arranged the signing or a late change favored the new spouse. Clean process prevents most of them."
 faqs:
   - q: "Can a stepchild sue the estate even if they were left nothing?"
@@ -28,7 +28,7 @@ related:
   - "wills/contesting-a-will"
   - "wills/no-contest-clause-in-a-will"
   - "illinois/illinois-will-contest-six-month-deadline"
-  - "new-jersey/new-jersey-will-contests-and-caveats"
+  - "illinois/undue-influence-will-challenges-in-illinois"
 glossary: ["heir", "undue-influence", "no-contest-clause", "testamentary-capacity", "elective-share", "revocable-trust"]
 review: pending
 intent: question
@@ -77,13 +77,13 @@ Yes, but what they sue about decides whether it goes anywhere. The common claims
 
 What the children cannot do is overturn a valid will because the second spouse inherited "too much." If the first parent wanted the spouse to take everything, that is a permitted choice. The better time to protect children is while the parent is alive, with a trust. Our article on [protecting children from a first marriage](/learn/blended-families/protecting-children-from-first-marriage) shows how.
 
-## How long do people have to file in Illinois and New Jersey?
+## How long do people have to file in Illinois?
 
 Short deadlines apply, and they run from probate, not from death.
 
 In Illinois, an interested person must file a petition to contest the will within 6 months after the will is admitted to probate (755 ILCS 5/8-1). Failure to give someone notice does not extend that period. The mechanics are in our [Illinois six-month will contest article](/learn/illinois/illinois-will-contest-six-month-deadline).
 
-In New Jersey, a person who expects to object can file a caveat with the county Surrogate to pause the executor's appointment. After probate, a complaint generally must be filed in Superior Court within four months (R. 4:85-1). Our [New Jersey will contest guide](/learn/new-jersey/new-jersey-will-contests-and-caveats) covers caveats and undue influence.
+The petition is filed in the pending estate, and a jury may be demanded. The question for the court is whether the document is truly the testator's will. For how a challenger tries to prove pressure from a new spouse, see our article on [undue influence will challenges in Illinois](/learn/illinois/undue-influence-will-challenges-in-illinois).
 
 Trusts run on separate clocks, and a trust that holds most of the assets may be the better target for a challenger. If you think you have a claim, do not wait for the family to settle down.
 

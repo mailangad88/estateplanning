@@ -1,7 +1,7 @@
 ---
 title: "Can you put digital assets in a living trust? What you can assign and what you cannot"
 description: "A living trust can hold domain names, crypto, files and online businesses, but not your Apple or Google login. See what to assign and how to word the trust."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   You can put some digital assets in a living trust, mainly property you truly own, such as crypto, a domain name, a website, digital files and an online business. You cannot assign most accounts themselves, like Apple, Google or Facebook, because the terms of service make them personal licenses. For those, the trust gives your trustee authority and consent instead of ownership.
 takeaways:
@@ -30,7 +30,7 @@ related:
   - "trusts/how-to-fund-a-trust"
   - "trusts/revocable-living-trust"
   - "illinois/illinois-living-trusts"
-  - "new-jersey/living-trusts-in-new-jersey"
+  - "illinois/illinois-living-trusts"
 glossary: ["living-trust", "funding", "trustee", "digital-assets", "pour-over-will", "grantor", "successor-trustee"]
 review: pending
 intent: question
@@ -63,7 +63,7 @@ Notice the pattern. Things you made or bought outright move. Things you merely s
 
 Because the terms you clicked say the account is personal and cannot be passed on. These companies treat the account as a service agreement with you, not a piece of property that exists apart from you. A trustee who takes over cannot step into your contract.
 
-That does not leave the trustee empty-handed. Under the uniform fiduciary access laws, a trustee who is not the original account holder can ask a company for a catalogue of electronic communications and other digital assets, and can reach content if the trust consents. In both of our states that is the rule. Illinois's version is in 755 ILCS 70, and New Jersey's is at N.J.S.A. 3B:14-61.1 and following. Our page on [what RUFADAA does](/learn/digital-assets/rufadaa-explained) gives the national picture.
+That does not leave the trustee empty-handed. Under the uniform fiduciary access laws, a trustee who is not the original account holder can ask a company for a catalogue of electronic communications and other digital assets, and can reach content if the trust consents. Illinois follows that rule, and its version is in 755 ILCS 70. Our page on [what RUFADAA does](/learn/digital-assets/rufadaa-explained) gives the national picture.
 
 So the practical move is not to assign these accounts. It is to put your consent in the trust.
 

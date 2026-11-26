@@ -1,7 +1,7 @@
 ---
 title: "How to pay for probate when the estate has no cash"
-description: "If the estate is mostly a house and a car, probate costs still come first. See who fronts the money, how you get repaid, and how to keep costs low in IL or NJ."
-updated: "2026-10-26"
+description: "If the estate is mostly a house and a car, probate costs still come first. See who fronts the money, how you get repaid, and how to keep costs low in Illinois."
+updated: "2026-11-26"
 answer: >-
   When an estate has no cash, the executor or an heir usually pays the first costs personally, keeps every receipt, and is repaid from the estate once an account is open or a sale closes. Court filing fees and a lawyer's retainer come first, but fees can often be deferred until the house sells. Smaller estates may skip court entirely with a small estate affidavit.
 takeaways:
@@ -60,7 +60,7 @@ There are five common sources, in the order people usually try them.
 2. **Open the estate account as soon as you have letters.** Letters testamentary or of administration prove your authority. Then deposit what you can reach. Our page on [opening an estate bank account](/learn/probate/how-to-open-an-estate-bank-account) covers the EIN and bank steps.
 3. **Collect what is owed to the estate.** Final paychecks, refunds and a security deposit are all cash. See [what happens to a deceased person's last paycheck and refunds](/learn/after-a-death/what-happens-to-a-deceased-persons-last-paycheck-refunds-and-money-owed).
 4. **Sell personal property.** A car, a boat or a collection can be sold by the executor once the court has appointed one. Our [vehicle guide](/learn/property-and-assets/transfer-a-car-boat-or-rv-after-death) shows the paperwork.
-5. **Sell the house.** In many estates this is the real source of cash. The sale closes, the mortgage is paid from the proceeds, and what is left flows into the estate account. Our pages on [selling a house in probate in Illinois](/learn/illinois/selling-a-house-in-probate-in-illinois) and [selling an estate house in New Jersey](/learn/new-jersey/selling-an-estate-house-in-new-jersey) describe the approval steps.
+5. **Sell the house.** In many estates this is the real source of cash. The sale closes, the mortgage is paid from the proceeds, and what is left flows into the estate account. Our page on [selling a house in probate in Illinois](/learn/illinois/selling-a-house-in-probate-in-illinois) describes the approval steps.
 
 Life insurance and accounts with a named beneficiary are not estate cash. They go straight to the named person. A beneficiary may choose to help with costs, but the executor cannot demand it.
 

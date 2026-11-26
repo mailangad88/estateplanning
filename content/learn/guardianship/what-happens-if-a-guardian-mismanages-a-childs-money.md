@@ -1,7 +1,7 @@
 ---
 title: "What happens if a guardian mismanages a child's money? How to check and what the court can do"
 description: "A guardian is spending a child's inheritance badly. Learn how to ask for an accounting, what a court can order, and how parents can set up oversight in advance."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A guardian who manages a child's money is a fiduciary answerable to the court. If the money is misused, a relative or the child's lawyer can ask the court to order an accounting, freeze spending, remove the guardian and require repayment, sometimes from a bond. Parents can prevent most of this by leaving the money in a trust with a separate trustee, not with the guardian.
 takeaways:
@@ -20,14 +20,14 @@ faqs:
   - q: "What happens to a guardian who steals from a child?"
     a: "The court can remove the guardian, order repayment, impose a surcharge and send the case to prosecutors. Civil liability follows the guardian personally. A bond may cover some of the loss, but a bond has a limit, so full recovery is not assured."
   - q: "Who can I tell if I suspect a guardian is misusing money?"
-    a: "Start with the court clerk and the judge's chambers for the case, and with the child's attorney or guardian ad litem if one was appointed. In New Jersey the county Surrogate's office takes guardianship filings, and in Illinois the clerk of the circuit court does. A family law or estate attorney can file the motion."
+    a: "Start with the court clerk and the judge's chambers for the case, and with the child's attorney or guardian ad litem if one was appointed. In Illinois the clerk of the circuit court in the county where the case was filed takes guardianship filings. A family law or estate attorney can file the motion."
 related:
   - "guardianship"
   - "guardianship/can-a-guardian-be-removed-or-refuse-to-serve"
   - "guardianship/guardian-vs-trustee"
   - "guardianship/guardian-of-the-person-vs-conservator-of-the-estate"
   - "guardianship/testamentary-trust-for-minor-children"
-  - "new-jersey/minor-inherits-money-in-new-jersey-guardian-of-the-property"
+  - "illinois/illinois-guardian-bond"
 glossary: ["guardian", "fiduciary", "trustee", "trust", "beneficiary"]
 review: pending
 intent: scenario
@@ -39,7 +39,7 @@ This page covers how a court treats a guardian who handles a minor's money, how 
 
 ## What is a guardian allowed to do with a child's money?
 
-Use it for the child, keep it separate and be able to prove it. A guardian of the estate (called a guardian of the property in New Jersey) is a fiduciary, which means the law requires loyalty to the child, not to themselves. The money should sit in an account titled for the child's benefit. Our page on [guardian of the person versus conservator of the estate](/learn/guardianship/guardian-of-the-person-vs-conservator-of-the-estate) explains the two jobs.
+Use it for the child, keep it separate and be able to prove it. A guardian of the estate is a fiduciary, which means the law requires loyalty to the child, not to themselves. The money should sit in an account titled for the child's benefit. Our page on [guardian of the person versus conservator of the estate](/learn/guardianship/guardian-of-the-person-vs-conservator-of-the-estate) explains the two jobs.
 
 | Allowed | Not allowed |
 |---|---|
@@ -67,7 +67,7 @@ None of these proves anything. All of them justify a question.
 ## How do you ask for an accounting?
 
 1. **Write down what you know.** Dates, amounts, names, and where you saw it.
-2. **Find the case.** Call the clerk of the court that appointed the guardian. In Illinois that is the circuit court clerk of the county, and in New Jersey, the county Surrogate or the Superior Court, depending on the type of case. Ask what has been filed.
+2. **Find the case.** Call the clerk of the court that appointed the guardian. In Illinois that is the circuit court clerk of the county. Ask what has been filed.
 3. **Read the filings.** An inventory and periodic accounts should be in the file. Missing ones are themselves a reason for a motion.
 4. **Ask the guardian first, in writing,** if the relationship allows. A short, polite letter asking for a copy of the latest account sometimes ends the matter.
 5. **File a petition or motion.** A relative, the child's other parent, a guardian ad litem or an attorney can ask the court to compel an accounting. A lawyer helps because courts expect specific requests, not general suspicion.
@@ -89,7 +89,7 @@ Judges have a wide range of tools, and they usually start with the mildest one t
 6. Order repayment with interest, sometimes called a surcharge.
 7. Send the matter to prosecutors if funds were taken.
 
-A bond is insurance for the child's money. If a court orders one, a surety company stands behind the guardian up to a stated amount, and the child's estate pays the premium. The company then pursues the guardian for what it has to pay. It is no cure-all: the bond amount may be lower than the loss, and getting repayment takes time. In New Jersey, our page on [guardian of the property for a minor](/learn/new-jersey/minor-inherits-money-in-new-jersey-guardian-of-the-property) explains how it works there.
+A bond is insurance for the child's money. If a court orders one, a surety company stands behind the guardian up to a stated amount, and the child's estate pays the premium. The company then pursues the guardian for what it has to pay. It is no cure-all: the bond amount may be lower than the loss, and getting repayment takes time. In Illinois the bond amount follows the value of the child's personal estate (755 ILCS 5/12-5), and our page on [guardian bonds in Illinois](/learn/illinois/illinois-guardian-bond) explains how it is set and how to lower it.
 
 ## A worked example
 

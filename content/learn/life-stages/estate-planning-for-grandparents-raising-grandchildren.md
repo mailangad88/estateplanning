@@ -1,13 +1,13 @@
 ---
 title: "Grandparents raising grandchildren: legal rights, paperwork and your own estate plan"
 description: "Raising your grandchildren without a court order? Learn your legal rights, the papers to get, and how to plan for the children if something happens to you."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Grandparents raising grandchildren usually have no automatic legal authority, even when the child lives with them full time. A signed parental authorization, a court-ordered guardianship, custody or adoption can fill that gap. You also need your own plan: a power of attorney, healthcare directive, a named backup caregiver and a way to leave money to a child safely.
 takeaways:
   - "Living with a child does not give you the power to sign school forms or consent to treatment. A parent's written authorization or a court order does."
   - "Parental authorization is quick but revocable. Guardianship or custody is slower but gives lasting authority."
-  - "New Jersey has a kinship legal guardianship option that does not end parental rights."
+  - "In Illinois, a parent can sign a short-term guardian designation for up to a year without going to court."
   - "A grandparent's will cannot name a guardian for a child whose parent is alive, so plan for a standby guardian instead."
   - "Leave money to the grandchildren through a trust or custodial account, and keep an eye on benefits the child receives."
 faqs:
@@ -15,8 +15,8 @@ faqs:
     a: "Not automatically. A parent has the right to custody unless a court says otherwise. A grandparent who has cared for the child may be able to get guardianship, custody or, in some cases, adoption through the court. Which route fits depends on whether the parents consent and whether they are expected to return."
   - q: "How can I enroll my grandchild in school or take them to the doctor?"
     a: "Ask the parent to sign a written authorization for school enrollment and medical care, and keep a copy with the child's records. Schools and doctors differ in what they accept, so ask each one what form they use. A court order is more reliable if the parent cannot be reached."
-  - q: "What is a kinship legal guardianship in New Jersey?"
-    a: "It is a court-ordered arrangement under New Jersey's Kinship Legal Guardianship Act that lets a relative or close family friend become the child's legal guardian when the parents cannot raise the child, without terminating parental rights. The caregiver must have been caring for the child and meet the statute's requirements, so ask an attorney to confirm they are met."
+  - q: "How is guardianship different from custody for a grandparent in Illinois?"
+    a: "Guardianship of a minor is a probate case under the Probate Act. Custody is a family case under the Marriage and Dissolution Act, and a nonparent can ask for custody only in limited situations. The two can overlap, so an attorney can tell you which court fits your family."
   - q: "Can a grandparent be paid or get benefits for raising a grandchild?"
     a: "Sometimes. Children may qualify for health coverage or other benefits, and some programs help relative caregivers. Eligibility often depends on the caregiver's legal status and household income. Ask your county or state agency, and talk to an attorney before signing anything that affects benefits."
   - q: "What if I get sick or die while raising my grandchild?"
@@ -27,7 +27,7 @@ related:
   - "guardianship/temporary-and-standby-guardians"
   - "guardianship/how-to-petition-for-guardianship-of-a-minor-child"
   - "illinois/illinois-standby-and-short-term-guardians-for-children"
-  - "new-jersey/guardianship-in-new-jersey"
+  - "illinois/grandparent-guardianship-of-a-grandchild-in-illinois"
   - "life-stages/leaving-an-inheritance-to-grandchildren"
   - "guardianship/leaving-money-to-minors"
 glossary: ["guardian", "power-of-attorney", "utma", "trustee", "special-needs-trust"]
@@ -60,13 +60,13 @@ The first is the fastest and the easiest to lose. It works when the parent is co
 
 Guardianship or custody gives you lasting authority without ending the parent's rights, which is why families choose it when the parent may recover. The process is described in our guide to [petitioning for guardianship of a minor](/learn/guardianship/how-to-petition-for-guardianship-of-a-minor-child). Adoption is final and can reach inheritance, benefits and identity. It is a different decision from the others, and it is usually chosen when the parents will not return.
 
-## What are the Illinois and New Jersey routes?
+## What are the Illinois routes?
 
 Illinois law provides a guardianship of a minor in Article XI of the Probate Act. A court may appoint a guardian when it serves the child's best interest. If a parent is willing and able to make and carry out day-to-day child care decisions, the court generally lacks jurisdiction unless that parent consents or does not object (see our [Illinois guardianship article](/learn/illinois/illinois-guardianship)). For short absences, Illinois also has standby and short-term guardians, covered in [our Illinois guide](/learn/illinois/illinois-standby-and-short-term-guardians-for-children).
 
-New Jersey handles guardianship of the person for minors through the Superior Court, and it also has the Kinship Legal Guardianship Act. That law lets a relative or family friend become the child's legal guardian when the parents cannot raise the child, without ending parental rights. Details such as how long the child must have lived with the caregiver are set by statute, so confirm them with an attorney or the court before relying on them. See also [guardianship in New Jersey](/learn/new-jersey/guardianship-in-new-jersey).
+A parent can also sign a short-term guardian designation for up to a year without going to court. A court guardianship of a minor needs a petition, notice to the parents and a finding that it serves the child. Custody is a separate family case under the Marriage and Dissolution Act, and a nonparent can ask for it only in limited situations. Our page on [grandparent guardianship of a grandchild in Illinois](/learn/illinois/grandparent-guardianship-of-a-grandchild-in-illinois) walks through each path.
 
-Fees, forms and local practice differ by county. A call to the circuit or Superior Court clerk will tell you which forms are used.
+Fees, forms and local practice differ by county. A call to the circuit clerk will tell you which forms are used.
 
 ## What should you do first? A short checklist
 

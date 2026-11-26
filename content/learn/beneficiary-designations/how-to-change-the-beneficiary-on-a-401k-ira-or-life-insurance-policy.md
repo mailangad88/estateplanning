@@ -1,7 +1,7 @@
 ---
 title: "How to change the beneficiary on a 401(k), IRA or life insurance policy"
 description: "Step-by-step ways to change or remove a beneficiary on a 401(k), IRA or life insurance policy, when your spouse must sign, and what an old form still does."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   To change a beneficiary, you complete the plan's or company's own beneficiary form (usually online for a 401(k) or IRA, on paper for a life insurance policy) and the institution records it. A 401(k) generally requires your spouse's signed consent to name anyone else. Your will cannot change a beneficiary form, and an irrevocable beneficiary must agree to be removed.
 takeaways:
@@ -47,7 +47,7 @@ Our article on [whether your spouse has to approve your beneficiary choices](/le
 
 ## How do I change the beneficiary on an IRA?
 
-An IRA is simpler because federal law does not require spousal consent. You fill out the custodian's beneficiary form, usually online, and the new form replaces the old one. A few states with community property rules give a spouse some claim regardless, but Illinois and New Jersey are not community property states.
+An IRA is simpler because federal law does not require spousal consent. You fill out the custodian's beneficiary form, usually online, and the new form replaces the old one. A few states with community property rules give a spouse some claim regardless, but Illinois is not a community property state.
 
 Check one thing before you click submit: some custodians treat "per stirpes" as a checkbox and others as a line of text. If you want a deceased child's share to go to that child's children, make sure the form really says so. Our article on [contingent beneficiaries and per stirpes wording](/learn/beneficiary-designations/contingent-beneficiaries) shows what a good form looks like.
 
@@ -91,7 +91,7 @@ Often the ex-spouse is still paid. The answer depends on the asset, which is why
 | Individual life insurance | Some states cancel it automatically, many only in certain cases. |
 | Bank POD account | Varies by state and by the bank's own rules. |
 
-Both Illinois and New Jersey have rules that can cancel an ex-spouse's designation on some non-employer assets, but neither state's rule reaches an ERISA plan, and a rule that applies is not a substitute for a form that is correct. If your divorce is pending, read [estate planning during a separation](/learn/life-stages/estate-planning-during-separation-or-a-pending-divorce), because some courts freeze changes while a case is open.
+Illinois has rules that can cancel an ex-spouse's designation on some non-employer assets, but that rule does not reach an ERISA plan, and a rule that applies is not a substitute for a form that is correct. If your divorce is pending, read [estate planning during a separation](/learn/life-stages/estate-planning-during-separation-or-a-pending-divorce), because some courts freeze changes while a case is open.
 
 <!-- visual: whatif id=ex-spouse-still-beneficiary -->
 

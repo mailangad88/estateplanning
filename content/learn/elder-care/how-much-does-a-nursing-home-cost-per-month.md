@@ -1,7 +1,7 @@
 ---
 title: "How much does a nursing home cost per month, and what do assisted living and home care cost?"
-description: "How to work out what a nursing home, assisted living or in-home care costs per month in Illinois or New Jersey, with a worked budget and what to ask for."
-updated: "2026-10-26"
+description: "How to work out what a nursing home, assisted living or in-home care costs per month in Illinois, with a worked budget and what to ask for."
+updated: "2026-11-26"
 answer: >-
   A nursing home bills by the day, so the monthly cost is the daily rate times about 30. A private room often runs well over $100,000 a year. Assisted living is usually billed as a base rent plus add-ons for care, and home care is billed by the hour. Prices differ by county, so ask each place for its written rate sheet.
 takeaways:
@@ -49,7 +49,7 @@ Each type of care uses a different unit, which is why quotes are hard to compare
 | Home care agency | An hourly rate, often with a minimum visit | Hourly rate x hours per week x 4.3 |
 | Independent caregiver hired directly | An hourly wage, plus payroll taxes if you are the employer | See [payroll and taxes for a family caregiver](/learn/elder-care/payroll-and-taxes-when-a-family-member-is-your-paid-caregiver) |
 
-A fair warning about numbers you find online. National averages are built from surveys of facilities and say little about a particular town. A county in the Chicago suburbs and a county in southern Illinois will not look alike, and neither will northern New Jersey and the shore. Use averages to see the shape of the problem and use the facility's written rate sheet for the real figure.
+A fair warning about numbers you find online. National averages are built from surveys of facilities and say little about a particular town. A county in the Chicago suburbs and a county in southern Illinois will not look alike, and a home in Cook County may not price like one in Will or Kane. Use averages to see the shape of the problem and use the facility's written rate sheet for the real figure.
 
 ## What does a nursing home cost per month?
 
@@ -106,11 +106,11 @@ Budget for at least two years, then test what happens at five. Many stays are sh
 
 Also count your cash flow, not just the savings. The resident's Social Security and pension go first toward the bill. If a spouse is still living at home, they are entitled to keep a share of income and assets, a point covered in [Medicaid for married couples](/learn/elder-care/medicaid-for-married-couples).
 
-## Illinois and New Jersey: what is local about the price?
+## What is local about the price in Illinois?
 
-Both states set the Medicaid daily rate that a participating nursing home receives, and the resident's own income goes toward it first. The private-pay rate is whatever the facility charges, and in both states it is usually higher than the Medicaid rate. That gap is why some homes limit the number of Medicaid beds. Before admission, ask whether the bed will stay available if the resident converts to Medicaid.
+Illinois sets the Medicaid daily rate that a participating nursing home receives, and the resident's own income goes toward it first. The private-pay rate is whatever the facility charges, and it is usually higher than the Medicaid rate. That gap is why some homes limit the number of Medicaid beds. Before admission, ask whether the bed will stay available if the resident converts to Medicaid.
 
-Our state pages explain the local eligibility rules: [Illinois Medicaid nursing home eligibility](/learn/illinois/illinois-medicaid-nursing-home-eligibility-and-planning) and [New Jersey Medicaid and nursing home planning](/learn/new-jersey/new-jersey-medicaid-and-nursing-home-planning). If you are choosing a facility, read [choosing a nursing home and knowing your rights](/learn/elder-care/choosing-a-nursing-home-and-knowing-your-rights) alongside the price sheet.
+Price and eligibility meet at the 60-month look-back. Illinois reviews transfers made in the 60 months before a long-term care Medicaid application, so money given away to stretch the budget can cause a penalty period later. Applications go through the state's ABE (Application for Benefits Eligibility) system. Our page on [Illinois Medicaid nursing home eligibility](/learn/illinois/illinois-medicaid-nursing-home-eligibility-and-planning) explains the local rules. If you are choosing a facility, read [choosing a nursing home and knowing your rights](/learn/elder-care/choosing-a-nursing-home-and-knowing-your-rights) alongside the price sheet.
 
 ## A checklist before you sign an admission agreement
 

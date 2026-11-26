@@ -1,13 +1,13 @@
 ---
 title: "Should you sell the house after your spouse dies? Timing, taxes and what to do first"
 description: "Sell or keep the house after your spouse dies? The two-year $500,000 tax rule, the step-up in basis, title steps and a worked Illinois-style example here."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Rarely in the first few months, but do not wait past two years. Waiting costs little, yet the tax rules reward a decision inside that window. A surviving spouse can exclude up to $500,000 of gain on a home sold within two years of the death, and half the house usually gets a stepped-up basis. After that, the exclusion falls to $250,000.
 takeaways:
   - "Do not decide in the first months unless the carrying costs are unaffordable; grief is a poor advisor."
   - "A surviving spouse who sells within two years of the death can generally use the $500,000 home sale exclusion, not the $250,000 one."
-  - "For a house owned jointly by spouses in Illinois or New Jersey, usually half gets a new, stepped-up tax basis at death."
+  - "For a house owned jointly by spouses in Illinois, usually half gets a new, stepped-up tax basis at death."
   - "You cannot sell cleanly until the title shows you as the owner, so update the deed or open the estate early."
   - "Compare keeping, selling and downsizing on cost per month, not on feelings about the house."
 faqs:
@@ -62,7 +62,7 @@ Compare that total to your income after your spouse's death, which may be lower.
 
 You cannot sell the house until the records show you as the owner. How you get there depends on the title.
 
-1. **Joint with survivorship, or tenancy by the entirety.** Illinois and New Jersey both let spouses hold title this way, and the survivor generally becomes the sole owner when the other dies. You typically record a certified death certificate and any affidavit the county requires. See [Illinois joint tenancy and tenancy by the entirety](/learn/illinois/illinois-joint-tenancy-and-tenancy-by-the-entirety).
+1. **Joint with survivorship, or tenancy by the entirety.** Illinois lets spouses hold title this way, and the survivor generally becomes the sole owner when the other dies. You typically record a certified death certificate and any affidavit the county requires. See [Illinois joint tenancy and tenancy by the entirety](/learn/illinois/illinois-joint-tenancy-and-tenancy-by-the-entirety).
 2. **In your spouse's name only.** The house goes through the estate, and the executor or administrator usually must be appointed before a buyer's title company will close. Read [a house still in a late spouse's name](/learn/what-if/house-still-in-late-spouses-name) before listing.
 3. **In a living trust.** The successor trustee, which may be you, signs the deed. This is usually the quickest path.
 4. **As tenants in common.** Your spouse's half passes by will, trust or intestacy, which may include someone besides you.
@@ -73,7 +73,7 @@ Many surviving spouses assume they own the house because they lived there for de
 
 Two rules matter, and they work together.
 
-**Stepped-up basis.** When someone dies, most of what they owned gets a new tax basis equal to its value on the date of death. For a house owned jointly by spouses in a non-community-property state such as Illinois or New Jersey, generally half of the house is treated as your spouse's and receives the step-up. Your own half keeps its old basis. The page on [step-up in basis for married couples and joint property](/learn/estate-tax/step-up-in-basis-for-married-couples-and-joint-property) explains the details.
+**Stepped-up basis.** When someone dies, most of what they owned gets a new tax basis equal to its value on the date of death. For a house owned jointly by spouses in a non-community-property state such as Illinois, generally half of the house is treated as your spouse's and receives the step-up. Your own half keeps its old basis. The page on [step-up in basis for married couples and joint property](/learn/estate-tax/step-up-in-basis-for-married-couples-and-joint-property) explains the details.
 
 **The home sale exclusion.** A couple selling a home they have lived in can exclude up to $500,000 of gain, and a single person up to $250,000, if they owned and used the home as their main residence for two of the last five years. A surviving spouse who sells within two years of the date of death, and has not remarried, can generally still use the $500,000 amount. Wait past two years and the limit drops to $250,000.
 
@@ -89,7 +89,7 @@ Here is an example with invented numbers. Joan and Frank paid $180,000 in 1994 a
 | Exclusion available if sold within two years | up to $500,000 |
 | Likely tax on the gain | None |
 
-If Joan waited three years and the house rose to $700,000, her gain would be $310,000, more than the $250,000 she could exclude, and the amount over it could be taxed. The exact figure depends on your own records, so gather the closing statement and receipts for improvements, and have a tax preparer run the numbers. New Jersey does not charge inheritance tax on property passing to a spouse, but the sale itself is still taxed on any gain above the exclusion.
+If Joan waited three years and the house rose to $700,000, her gain would be $310,000, more than the $250,000 she could exclude, and the amount over it could be taxed. The exact figure depends on your own records, so gather the closing statement and receipts for improvements, and have a tax preparer run the numbers.
 
 ## What about the mortgage?
 

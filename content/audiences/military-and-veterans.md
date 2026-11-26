@@ -37,10 +37,10 @@ faqs:
   - q: "Is there a military discount?"
     a: "Fees are set by the attorney you are matched with. See [pricing](/pricing), and ask on your first call."
 reviewed: false
-updated: "2026-10-06"
+updated: "2026-11-26"
 ---
 
-**Who we are.** Family Future Planning is a private referral service that matches you with an estate planning attorney in our network in Illinois or New Jersey. We are not part of the Department of Defense, the VA or any military legal assistance office.
+**Who we are.** Family Future Planning is a private referral service that matches you with an estate planning attorney in our network in Illinois. We are not part of the Department of Defense, the VA or any military legal assistance office.
 
 ## What is at stake
 
@@ -68,7 +68,7 @@ A private attorney fits when you have a house, a business, children who need tru
 | Beneficiary review | SGLI, VGLI, TSP, FERS, pensions and civilian accounts. See the [beneficiary audit](/checklists/beneficiary-designation-audit). |
 | Family care plan coordination | Making the will and the command's care plan match. |
 | Domicile and state-law review | Where you vote, own property and pay taxes. |
-| Remote signing | Meetings by video, and remote notarization, which Illinois and New Jersey both allow for many documents. |
+| Remote signing | Meetings by video, and remote notarization, which Illinois allows for many documents. |
 
 **Limits.** An estate planning attorney does not file VA claims unless accredited, and does not advise on military discipline or administrative law. Family Future Planning has no government connection.
 

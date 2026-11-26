@@ -1,13 +1,13 @@
 ---
 title: "What if my spouse refuses to make an estate plan?"
 description: "If your spouse refuses to make an estate plan, you can still sign your own will, power of attorney and directive. See what that covers and what it misses."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
-  You can make your own will, power of attorney, healthcare directive and beneficiary forms without your spouse signing anything. Those documents control what you own and what you decide. They cannot control your spouse's property, joint assets that pass by title, or the guardian and care questions that need both parents to agree. In Illinois and New Jersey a spouse also keeps a statutory share of your estate.
+  You can make your own will, power of attorney, healthcare directive and beneficiary forms without your spouse signing anything. Those documents control what you own and what you decide. They cannot control your spouse's property, joint assets that pass by title, or the guardian and care questions that need both parents to agree. In Illinois a spouse also keeps a statutory share of your estate.
 takeaways:
   - "Your spouse's refusal does not stop you from signing your own will, power of attorney, healthcare directive and beneficiary forms."
   - "Your documents reach only what you own alone. Joint accounts and a jointly titled house pass to the survivor by title, whatever your will says."
-  - "A spouse who is left little can still claim a statutory share: renunciation in Illinois, the elective share in New Jersey."
+  - "A spouse who is left little can still renounce an Illinois will and claim a statutory share."
   - "Asking for a narrower yes works better than asking for a full plan. A power of attorney and a healthcare directive are the easiest first step."
   - "The real exposure is the refusing spouse's own side: no will, no agent, and no named guardian if you both die."
 faqs:
@@ -25,7 +25,7 @@ related:
   - "wills/do-i-need-a-will"
   - "life-stages/estate-planning-for-newlyweds"
   - "illinois/illinois-spouse-rights-at-death"
-  - "new-jersey/new-jersey-elective-share-for-a-surviving-spouse"
+  - "illinois/renouncing-a-will-as-a-surviving-spouse-in-illinois"
   - "beneficiary-designations/does-your-spouse-have-to-approve-your-beneficiary-choices"
   - "basics/talking-to-family-about-estate-plan"
 glossary: ["elective-share", "joint-tenancy", "durable-power-of-attorney", "intestate", "beneficiary", "guardian"]
@@ -72,7 +72,7 @@ Mostly the refusing spouse's side, and the family's side if you both die. Your o
 Here is an example with invented numbers. Rita owns a $90,000 savings account in her name alone and has two children from an earlier marriage. The house, worth $360,000, is in joint names with Dan. Rita has no will. She dies first.
 
 - The house goes to Dan by title, so no will is needed.
-- The savings account passes by intestacy. In Illinois a spouse and descendants share the estate half and half, so Dan takes $45,000 and her two children split $45,000. Our page on [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) has the full order. New Jersey uses a different formula, set out in [who inherits without a will in New Jersey](/learn/new-jersey/who-inherits-without-a-will-in-new-jersey).
+- The savings account passes by intestacy. In Illinois a spouse and descendants share the estate half and half, so Dan takes $45,000 and her two children split $45,000. Our page on [who inherits without a will in Illinois](/learn/illinois/who-inherits-without-a-will-in-illinois) has the full order.
 - If Rita wanted Dan to have everything, she needed a will. If she wanted her children to have more, she needed one too. Either way, the default is a guess.
 
 The same thing happens on incapacity. If Rita has a stroke and has no power of attorney, Dan cannot simply sign for her on her accounts. The usual route is a guardianship petition in court, which is slow and public. Our page on [incapacity without a power of attorney](/learn/what-if/incapacitated-without-power-of-attorney) walks through it.
@@ -83,7 +83,7 @@ The same thing happens on incapacity. If Rita has a stroke and has no power of a
 
 Not completely, and this is where a reluctant spouse's rights matter. Both states give a surviving spouse a floor.
 
-In Illinois, a spouse who is left less than the law allows can renounce the will and take one-third of the estate if there are descendants, or one-half if not, filing within seven months after the will is admitted. The details are in [a surviving spouse's rights in Illinois](/learn/illinois/illinois-spouse-rights-at-death). In New Jersey the elective share is one-third of the augmented estate, claimed by a complaint filed within six months after a personal representative is appointed. See the [New Jersey elective share](/learn/new-jersey/new-jersey-elective-share-for-a-surviving-spouse).
+In Illinois, a spouse who is left less than the law allows can renounce the will and take one-third of the estate if there are descendants, or one-half if not, filing within seven months after the will is admitted. The details are in [a surviving spouse's rights in Illinois](/learn/illinois/illinois-spouse-rights-at-death).
 
 A signed marital agreement can change these rights, but a will alone cannot. If you are planning around a spouse you expect to resist, talk to an attorney before you sign. The mistake we see is a will that "disinherits" a spouse and then falls apart in court.
 

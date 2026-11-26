@@ -1,7 +1,7 @@
 ---
 title: "Does a trust named as beneficiary need its own tax ID, and does it cost more to administer?"
 description: "Does a trust named as beneficiary need its own tax ID? Usually yes after death. See when the EIN is needed, the yearly costs, and when a trust is worth it."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A revocable trust uses your Social Security number while you live, but once you die and it becomes irrevocable it needs its own EIN (employer identification number) to receive an IRA, 401(k) or other account. Naming a trust does cost more than naming a person: drafting at the start, then trustee work, tax returns and sometimes accounting each year. For many families the protection is still worth it.
 takeaways:
@@ -54,7 +54,7 @@ There are four kinds of cost, and only the first is paid upfront.
 
 1. **Drafting.** The trust has to exist before the form is filled in, and a trust meant to receive retirement money needs specific provisions. This is a one-time cost and is usually part of a broader plan.
 2. **Trustee time.** After death someone must claim the accounts, keep records and make distributions. A family member can serve; a professional trustee is paid. If you name a family trustee, give them a written list of accounts.
-3. **Tax returns.** An irrevocable trust files its own income tax return each year it has income. In Illinois that is the Form IL-1041 (see [Illinois Form IL-1041](/learn/illinois/illinois-form-il-1041-estate-and-trust-income-tax-return)), and in New Jersey a fiduciary return. Accountants charge for this work.
+3. **Tax returns.** An irrevocable trust files its own income tax return each year it has income. In Illinois that is the Form IL-1041 (see [Illinois Form IL-1041](/learn/illinois/illinois-form-il-1041-estate-and-trust-income-tax-return)), filed alongside the federal trust return. Accountants charge for this work.
 4. **Accounting and record keeping.** Even when a court is not involved, the trustee owes beneficiaries reports and clear records.
 
 We do not quote fee ranges because they vary by region, size and complexity. What can be said is that the cost grows with the number of years the trust stays open. A trust that holds money for a minor until 25 costs more to run than one that distributes everything within a year.

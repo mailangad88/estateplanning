@@ -1,7 +1,7 @@
 ---
 title: "Schedule A and the general assignment: how a living trust lists what it owns"
 description: "Schedule A lists what a living trust owns; a general assignment moves furniture and belongings into it. See what each does and which assets need retitling."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Schedule A is a list attached to a living trust that names the assets you meant to put in it. A general assignment is a signed paper that transfers your tangible personal property, such as furniture, jewelry and art, to the trustee. Neither one retitles a house, a bank account or a car. Those need a deed, a bank form or a motor vehicle filing.
 takeaways:
@@ -100,9 +100,9 @@ A mismatch is a warning. If Schedule A lists something that is not in the trust,
 
 The assignment transfers ownership, but it does not decide who gets Grandma's ring. That is a separate choice, made in the trust's distribution terms, in a signed list of gifts, or in a letter to the family. Our article on [leaving jewelry, heirlooms and sentimental items](/learn/property-and-assets/leaving-jewelry-heirlooms-and-sentimental-items) covers how to make those wishes stick. Be aware that a casual handwritten list, with no signature or reference in the trust, may be treated as a wish rather than a command.
 
-## Does an assignment work in Illinois and New Jersey?
+## Does an assignment work in Illinois?
 
-Yes, as a way to move personal property you own. Both states let you transfer personal property into your own revocable trust by a written declaration or assignment, and attorneys in both routinely use one. What differs is the surrounding paperwork: Illinois land is moved by a recorded deed, and a New Jersey deed needs the state's transfer-related forms, as explained in our article on [transferring a house to a living trust](/learn/trusts/transfer-house-to-living-trust). If you move to the other state later, the assignment stays valid, though a quick review is wise. See [living trusts and property in another state](/learn/trusts/living-trusts-and-moving-or-owning-property-in-another-state).
+Yes, as a way to move personal property you own. Illinois lets you transfer personal property into your own revocable trust by a written declaration or assignment, and Illinois attorneys routinely use one. Land is different: Illinois real estate is moved by a recorded deed, as explained in our article on [transferring a house to a living trust](/learn/trusts/transfer-house-to-living-trust). If you move out of Illinois later, the assignment stays valid, though a quick review is wise. See [living trusts and property in another state](/learn/trusts/living-trusts-and-moving-or-owning-property-in-another-state).
 
 Keep in mind that an assignment of ordinary household goods rarely matters to a creditor or the IRS. Its real value is quiet: the family does not need a court order to give away Mom's dresser, and the trustee can act the day after a death.
 

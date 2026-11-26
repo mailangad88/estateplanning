@@ -1,7 +1,7 @@
 ---
 title: "Does an estate pay income tax? Form 1041, interest, dividends and the K-1"
 description: "Yes, an estate can owe income tax on interest, dividends and rent earned after death. See when Form 1041 is due and how the K-1 shifts the tax to heirs."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Yes. After someone dies, the estate is a separate taxpayer and owes income tax on interest, dividends, rent and gains it earns, reported on Form 1041. An estate must file when it has $600 or more of gross income. Income the estate pays out to heirs is usually taxed to them on a Schedule K-1 instead. This is a different tax from the estate tax.
 takeaways:
@@ -9,7 +9,7 @@ takeaways:
   - "Form 1041 is required when the estate has $600 or more in gross income in a tax year, or when any beneficiary is a nonresident alien."
   - "Income the estate distributes to beneficiaries is taxed on their returns through Schedule K-1, usually at lower rates than the estate would pay."
   - "The executor can choose a fiscal year ending on the last day of any month within 12 months of death, which can defer tax and simplify the first return."
-  - "Illinois and New Jersey both require a state fiduciary return when the estate has state-taxable income."
+  - "Illinois has its own fiduciary return, Form IL-1041, which an Illinois estate files alongside the federal Form 1041."
 faqs:
   - q: "Does an estate pay tax on interest and dividends earned after death?"
     a: "Yes. Interest on the estate's bank account, dividends from stock the estate still owns and rent from property are income of the estate. If the estate has $600 or more in gross income for the year, the executor files Form 1041. Income the estate passes to heirs in the same year is generally taxed to them instead."
@@ -93,9 +93,11 @@ Ordinary and necessary costs of running the estate: attorney, accountant and app
 
 When the estate closes, any unused deductions and losses can pass out to the beneficiaries on the final year's K-1. That is a reason to plan the last year of the estate carefully rather than closing the account on the first day it can be done.
 
-## Do Illinois and New Jersey require their own return?
+## Does Illinois require its own return?
 
-Yes, when the estate has income that is taxable in the state. Illinois estates use Form IL-1041 and New Jersey estates use Form NJ-1041. Both follow the federal return closely, but the filing thresholds and the treatment of out-of-state beneficiaries differ, so check the current instructions or ask your preparer. The final individual returns are different forms. We cover them in [filing a final Illinois return](/learn/illinois/final-illinois-income-tax-return-for-someone-who-died) and [a final New Jersey return](/learn/new-jersey/final-new-jersey-income-tax-return-for-someone-who-died). New Jersey also has its own inheritance tax, which is unrelated to income; see the [New Jersey inheritance tax](/learn/new-jersey/new-jersey-inheritance-tax).
+Yes. An Illinois estate files Form IL-1041 when it has net income or loss under Illinois law, when it is an Illinois resident that files a federal return, or when it is a nonresident with Illinois-source income. It is due on the 15th day of the fourth month after the estate's tax year ends, which is April 15 for a calendar-year estate. Illinois gives an automatic six-month extension to file, but the tax is still due by the original date. Our page on [Illinois Form IL-1041](/learn/illinois/illinois-form-il-1041-estate-and-trust-income-tax-return) covers who files and the common mistakes.
+
+The final individual return is a different form. We cover it in [filing a final Illinois return](/learn/illinois/final-illinois-income-tax-return-for-someone-who-died). Illinois also has an estate tax, which is unrelated to income and applies only to estates over $4 million; see the [Illinois estate tax](/learn/illinois/illinois-estate-tax).
 
 ## Common mistakes with the estate's income tax
 

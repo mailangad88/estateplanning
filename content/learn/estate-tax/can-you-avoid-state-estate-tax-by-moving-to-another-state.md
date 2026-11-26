@@ -1,7 +1,7 @@
 ---
 title: "Can you avoid state estate tax by moving to another state?"
-description: "Moving to a state with no estate tax can cut your bill, but only if you truly change domicile and plan around real estate left in Illinois or New Jersey."
-updated: "2026-10-26"
+description: "Moving to a state with no estate tax can cut your bill, but only if you truly change domicile and plan around any real estate you keep in Illinois."
+updated: "2026-11-26"
 answer: >-
   Yes, a genuine move can remove state estate tax or inheritance tax on most of your assets, because those taxes follow your legal home, called your domicile. But real estate and some tangible property stay taxable where they sit, and a state that doubts the move can challenge it. Half-moves, such as keeping the old house as your real home, rarely hold up.
 takeaways:
@@ -15,8 +15,8 @@ faqs:
     a: "There is no set number of days that settles it. States look at intent and facts together: where you vote, hold a driver's license, file taxes, keep your doctors, and spend most of the year. A person who moves fully and cuts old ties can establish a new domicile quickly, while someone who splits time may not."
   - q: "Will Illinois still tax my house if I move to Florida?"
     a: "If you keep the Illinois house, Illinois can tax the value of that real estate when you die, as it does for any nonresident who owns Illinois real property. Selling it or placing it in an entity needs careful planning, because the tax rules for each structure differ."
-  - q: "Does New Jersey tax my estate if I move away?"
-    a: "New Jersey's inheritance tax follows residents' property and New Jersey real estate and tangible property of nonresidents. If you become a legal resident of another state and own no New Jersey real estate, New Jersey inheritance tax generally does not reach you, but the new state's rules start to apply."
+  - q: "Does Illinois still tax my bank and brokerage accounts after I move?"
+    a: "Generally no. For a nonresident, Illinois ties only real estate and tangible personal property located in Illinois to its tax. Accounts, stocks and bonds follow your domicile. Illinois still looks at your total estate to decide whether the $4 million threshold is crossed."
   - q: "Should I move just to avoid estate tax?"
     a: "Rarely on tax alone. Family, health care, income taxes, property taxes and cost of living usually matter more. If your estate is far below the state threshold, moving buys nothing. If it is well above, talk to an attorney about domicile, gifts and trusts first."
   - q: "Can the state claw back gifts if I move?"
@@ -25,7 +25,8 @@ related:
   - "estate-tax/state-estate-and-inheritance-taxes"
   - "estate-tax/estate-tax-vs-inheritance-tax"
   - "illinois/illinois-estate-tax"
-  - "new-jersey/new-jersey-inheritance-tax"
+  - "illinois/illinois-estate-tax-for-nonresidents"
+  - "illinois/moving-out-of-illinois"
   - "wills/will-moving-states-or-living-abroad"
   - "probate/ancillary-probate"
 glossary: ["estate-tax", "inheritance-tax", "ancillary-probate", "decedent", "heir"]
@@ -33,7 +34,7 @@ review: pending
 intent: question
 ---
 
-For years you have heard that people leave Illinois and New Jersey for Florida, Arizona or the Carolinas to save taxes. If your estate is large enough that the state would take a share at your death, the idea is worth thinking about. It can also go badly if you treat it as a paperwork trick.
+For years you have heard that people leave Illinois for Florida, Arizona or the Carolinas to save taxes. If your estate is large enough that the state would take a share at your death, the idea is worth thinking about. It can also go badly if you treat it as a paperwork trick.
 
 This page covers how state estate tax actually follows you, what you cannot move, and how states check whether a move is real.
 
@@ -43,11 +44,11 @@ A real change of domicile generally moves most of your estate out of the old sta
 
 The federal tax stays the same wherever you live: $15,000,000 per person in 2026, with a top rate of 40%. So moving only matters when the problem is a state tax that begins at a much lower level. Our overview of [state estate and inheritance taxes](/learn/estate-tax/state-estate-and-inheritance-taxes) lists which states have them.
 
-Illinois and New Jersey work differently. [Illinois has an estate tax](/learn/illinois/illinois-estate-tax) that reaches estates well below the federal level and gives a surviving spouse no portability. [New Jersey has an inheritance tax](/learn/new-jersey/new-jersey-inheritance-tax) on what certain heirs receive, with children and spouses exempt. For New Jersey families whose heirs are children, moving rarely changes the bill, since there often is none.
+[Illinois has an estate tax](/learn/illinois/illinois-estate-tax) that reaches estates well below the federal level and gives a surviving spouse no portability. It applies once the estate passes $4 million, so a couple who would owe nothing federally can still owe Illinois tax at the second death. Our page on [moving out of Illinois in retirement](/learn/illinois/moving-out-of-illinois) covers what an Illinois plan still does after the move.
 
 ## What can you not take with you?
 
-Real estate, mostly. A state can tax real property inside its borders no matter where the owner lives, and Illinois and New Jersey both do. So the Lake Michigan condo or the shore house stays in the old state's net even after you change your driver's license.
+Real estate, mostly. A state can tax real property inside its borders no matter where the owner lives, and Illinois does. So the Lake Michigan condo or the Galena cabin stays in Illinois's net even after you change your driver's license. Illinois figures a nonresident's tax on the whole estate, then charges only the Illinois share. Our page on the [Illinois estate tax for nonresidents](/learn/illinois/illinois-estate-tax-for-nonresidents) walks through that math.
 
 | Asset | Taxed by old state after a real move? | Why |
 |---|---|---|
@@ -89,7 +90,7 @@ A cleaner move looks different. Frank sells the Naperville house, spends most of
 
 ## What does the income tax side look like?
 
-Estate tax is only one of the taxes that follow a move. Illinois and New Jersey both tax income, and a new state may or may not. A retiree who leaves for a state with no income tax usually saves more each year than the estate tax would ever cost, which is why some people move for income tax and treat the estate tax as a bonus. The reverse also happens. A move to a state with a lower estate tax but a higher property tax can lose money overall. Add up the whole picture with your accountant, and use the federal numbers in our [federal estate tax exemption](/learn/estate-tax/federal-estate-tax-exemption) page as the baseline. The [estate and gift tax library](/learn/estate-tax) has more on the planning tools.
+Estate tax is only one of the taxes that follow a move. Illinois taxes income, and a new state may or may not. A retiree who leaves for a state with no income tax usually saves more each year than the estate tax would ever cost, which is why some people move for income tax and treat the estate tax as a bonus. The reverse also happens. A move to a state with a lower estate tax but a higher property tax can lose money overall. Add up the whole picture with your accountant, and use the federal numbers in our [federal estate tax exemption](/learn/estate-tax/federal-estate-tax-exemption) page as the baseline. The [estate and gift tax library](/learn/estate-tax) has more on the planning tools.
 
 ## Does the new state's probate change things?
 

@@ -1,7 +1,7 @@
 ---
 title: "How much term life insurance do you need when you have a baby?"
 description: "How much term life insurance to buy with a baby: a simple formula, how long the term should run, term versus mortgage insurance, and which beneficiary to name."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Add up your debts, the years of income your family would need replaced, the cost of college and final expenses, then subtract savings and any coverage from work. Buy a term that lasts until your youngest child is independent, usually 20 to 30 years. Choose term over mortgage life insurance, and name a trust or custodian for the child, not the child.
 takeaways:
@@ -89,13 +89,13 @@ Yes. Imagine Priya stays home with the baby instead of working. If she died, Sam
 
 The surviving spouse first, then a trust or a custodian for the child as contingent. Never your baby alone. A child cannot collect, and a court-supervised account lasts until 18 in many cases, with the child receiving everything at once. That result is exactly what most parents do not want.
 
-Our guides on [life insurance beneficiaries](/learn/beneficiary-designations/life-insurance-beneficiaries) and [contingent beneficiaries](/learn/beneficiary-designations/contingent-beneficiaries) show how the forms work. For the money itself, read [leaving money to minor children](/learn/guardianship/leaving-money-to-minors). In Illinois a UTMA custodianship ends at 21, and in New Jersey it also ends at 21 unless you set an earlier age after 18, as covered in our [Illinois UTMA guide](/learn/illinois/illinois-utma-accounts-and-gifts-to-minors) and [New Jersey UTMA guide](/learn/new-jersey/new-jersey-utma-accounts-and-gifts-to-minors).
+Our guides on [life insurance beneficiaries](/learn/beneficiary-designations/life-insurance-beneficiaries) and [contingent beneficiaries](/learn/beneficiary-designations/contingent-beneficiaries) show how the forms work. For the money itself, read [leaving money to minor children](/learn/guardianship/leaving-money-to-minors). In Illinois a UTMA custodianship ends at 21, as covered in our [Illinois UTMA guide](/learn/illinois/illinois-utma-accounts-and-gifts-to-minors).
 
 A trust works better for a larger policy. The trustee pays for the child's needs and releases the balance at ages you choose.
 
 ## Is the death benefit taxable?
 
-Generally not for income tax, when paid to a named beneficiary. The federal estate tax exclusion is $15,000,000 per person in 2026, so a family-sized policy does not trigger it. New Jersey exempts life insurance paid to a named beneficiary from its inheritance tax, according to our [New Jersey inheritance tax guide](/learn/new-jersey/new-jersey-inheritance-tax). Illinois has an estate tax at a lower threshold than the federal one, so a high-earning parent with a large policy and a large estate should ask about ownership. Our article on the [irrevocable life insurance trust](/learn/estate-tax/irrevocable-life-insurance-trust) explains the option.
+Generally not for income tax, when paid to a named beneficiary. The federal estate tax exclusion is $15,000,000 per person in 2026, so a family-sized policy does not trigger it. Illinois has an estate tax at a lower threshold than the federal one, so a high-earning parent with a large policy and a large estate should ask about ownership. Our article on the [irrevocable life insurance trust](/learn/estate-tax/irrevocable-life-insurance-trust) explains the option.
 
 ## What mistakes do new parents make with life insurance?
 

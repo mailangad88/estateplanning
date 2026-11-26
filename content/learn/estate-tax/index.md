@@ -1,7 +1,7 @@
 ---
 title: "Estate and gift taxes: federal rules, state taxes and planning options"
 description: "The 2026 federal exclusion is $15 million per person. Learn how estate, gift, state and inheritance taxes work, who owes, and what planning options exist."
-updated: "2026-10-06"
+updated: "2026-11-26"
 answer: >-
   In 2026, the federal estate and gift tax applies only to amounts above a $15,000,000 per-person exclusion, at rates up to 40%. Married couples can shelter $30 million with portability. A dozen or so states and D.C. have estate taxes at lower thresholds, and five states tax inheritances, so state rules often matter more than federal ones.
 takeaways:
@@ -63,7 +63,7 @@ A quick example. Priya, a widow, has an estate of $9 million. She owes no federa
 
 ## How do states tax estates and inheritances?
 
-Some states tax at much lower levels than the federal government. As of 2026, Connecticut, Hawaii, Illinois, Maine, Maryland, Massachusetts, Minnesota, New York, Oregon, Rhode Island, Vermont, Washington, and the District of Columbia levy an estate tax. Kentucky, Maryland, Nebraska, New Jersey, and Pennsylvania levy an inheritance tax. Maryland has both.
+Some states tax at much lower levels than the federal government. As of 2026, Connecticut, Hawaii, Illinois, Maine, Maryland, Massachusetts, Minnesota, New York, Oregon, Rhode Island, Vermont, Washington, and the District of Columbia levy an estate tax. Kentucky, Maryland, Nebraska, New Jersey, and Pennsylvania levy an inheritance tax. Maryland has both. Illinois has an estate tax only, so Illinois heirs do not pay a separate inheritance tax to the state.
 
 An estate tax is paid by the estate on its total value. An inheritance tax is paid by each heir on what they receive, usually at a rate based on how closely they are related to the person who died. Spouses are generally exempt.
 
@@ -150,7 +150,7 @@ Once the estate starts earning interest or dividends, [does an estate pay income
 
 To decide between helping your children now and leaving assets at death, [gift vs. inheritance tax](/learn/estate-tax/gift-vs-inheritance-tax-give-now-or-leave-at-death) compares carryover basis with the step-up using real numbers.
 
-If you are thinking of leaving Illinois or New Jersey, [can you avoid state estate tax by moving](/learn/estate-tax/can-you-avoid-state-estate-tax-by-moving-to-another-state) explains domicile and what stays taxable.
+If you are thinking of leaving Illinois, [can you avoid state estate tax by moving](/learn/estate-tax/can-you-avoid-state-estate-tax-by-moving-to-another-state) explains domicile and what stays taxable.
 
 For couples with an older trust, [what a formula clause in a trust does](/learn/estate-tax/what-is-a-formula-clause-in-a-trust) shows how it can fund the wrong amount.
 

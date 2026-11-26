@@ -1,12 +1,12 @@
 ---
 title: "What does right of survivorship mean, and does it override your will?"
 description: "What does right of survivorship mean? When one owner dies, the other takes the whole asset, even over the will. See where it applies and when it backfires."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Right of survivorship means that when one co-owner dies, the surviving owner takes the whole asset automatically, outside the will and outside probate. It overrides the will for that asset. It applies to joint tenancy, tenancy by the entirety and many joint bank accounts, but only if the title or account says so. Without those words, a co-owner's share goes to heirs.
 takeaways:
   - "Survivorship passes the asset to the other owner at death by operation of law, so the will never gets a say."
-  - "It must be stated or implied by the form of ownership. Illinois and New Jersey do not presume it for ordinary co-owners."
+  - "It must be stated or implied by the form of ownership. Illinois does not presume it for ordinary co-owners."
   - "Married couples often hold a home as tenants by the entirety, a form with survivorship that also ends on divorce."
   - "The last surviving owner decides who gets the asset, which can disinherit the first owner's children."
   - "Adding a child as joint owner for convenience can expose the asset to the child's creditors and cause unequal inheritances."
@@ -26,7 +26,6 @@ related:
   - "property-and-assets/joint-tenancy-risks"
   - "property-and-assets/joint-tenants-vs-tenants-in-common-vs-entirety"
   - "illinois/illinois-joint-tenancy-and-tenancy-by-the-entirety"
-  - "new-jersey/joint-property-and-tenancy-by-the-entirety-in-new-jersey"
   - "probate/probate-vs-non-probate-assets"
   - "beneficiary-designations/payable-on-death-and-transfer-on-death-accounts"
 glossary: ["joint-tenancy", "tenancy-by-the-entirety", "estate", "beneficiary", "heir"]
@@ -42,7 +41,7 @@ This page explains what right of survivorship means in plain terms, where it app
 
 It means that when one co-owner dies, the other co-owners automatically take the dead owner's share. If there are two owners, the survivor ends up with all of it. The asset does not go through probate and it does not follow the will.
 
-The right comes from how the asset is titled, not from anything you write in a will. A deed that says "to Maria and Tom as joint tenants with right of survivorship" does the job. A deed that says only "to Maria and Tom" does not in Illinois, where co-owners are tenants in common unless the deed says otherwise. New Jersey applies a similar approach, with a special rule for married couples. We explain the forms in [joint tenants vs. tenants in common vs. entirety](/learn/property-and-assets/joint-tenants-vs-tenants-in-common-vs-entirety).
+The right comes from how the asset is titled, not from anything you write in a will. A deed that says "to Maria and Tom as joint tenants with right of survivorship" does the job. A deed that says only "to Maria and Tom" does not in Illinois, where co-owners are tenants in common unless the deed says otherwise. We explain the forms in [joint tenants vs. tenants in common vs. entirety](/learn/property-and-assets/joint-tenants-vs-tenants-in-common-vs-entirety).
 
 ## Which assets can have right of survivorship?
 
@@ -62,9 +61,9 @@ Retirement accounts and life insurance do not use survivorship. They use benefic
 
 Joint tenancy comes first. Any two or more people can hold property this way, as long as they received it at the same time and in equal shares. Each can sell or give away their share during life, which breaks the joint tenancy for that share.
 
-Tenancy by the entirety is for married couples, and in New Jersey for civil union partners as well. It also carries survivorship, and neither spouse can sever it alone. It generally ends if the couple divorces. In Illinois it applies to homestead property. Our articles on [Illinois joint tenancy and tenancy by the entirety](/learn/illinois/illinois-joint-tenancy-and-tenancy-by-the-entirety) and [New Jersey joint property](/learn/new-jersey/joint-property-and-tenancy-by-the-entirety-in-new-jersey) give the state details.
+Tenancy by the entirety is for married couples. It also carries survivorship, and neither spouse can sever it alone. It generally ends if the couple divorces. In Illinois it applies only to the homestead, and only if the deed expressly says so. Our article on [Illinois joint tenancy and tenancy by the entirety](/learn/illinois/illinois-joint-tenancy-and-tenancy-by-the-entirety) gives the details.
 
-Community property with right of survivorship exists in a few states, mainly in the West. Illinois and New Jersey are not among them. See [community property with right of survivorship](/learn/probate/community-property-with-right-of-survivorship) for how that title works.
+Community property with right of survivorship exists in a few states, mainly in the West. Illinois is not one of them. See [community property with right of survivorship](/learn/probate/community-property-with-right-of-survivorship) for how that title works.
 
 ## Does it override a will?
 
@@ -82,7 +81,7 @@ If Ruth had wanted Gene to live there for life with her children to inherit afte
 
 It is simple and cheap when the owners want the survivor to have everything. Spouses with no children from other relationships, who each want the other to get the house and the savings, often use it for just that reason. The survivor can record a death certificate and be done, with no probate case for that asset.
 
-It also avoids probate delays. For a husband and wife in New Jersey who hold a home as tenants by the entirety, the surviving spouse takes it without a court case.
+It also avoids probate delays. For a married couple in Illinois who hold their homestead as tenants by the entirety, the surviving spouse takes it without a court case.
 
 ## When does survivorship backfire?
 
@@ -97,13 +96,13 @@ There is also the problem of a joint account used for bills. A parent adds an ad
 
 ## What does the survivor do after a death?
 
-For a deed, the survivor records a death certificate with the county, along with any affidavit the county asks for. In New Jersey, entirety property needs no Division of Taxation waiver, but joint tenancy between non-spouses can raise tax questions, so ask before recording. For a bank account, the survivor brings a death certificate and identification to the bank, and the account is retitled or closed out. For a vehicle, the survivor takes the title and a death certificate to the motor vehicle agency.
+For a deed, the survivor records a death certificate with the county, along with any affidavit the county asks for. Recorders set their own format rules, so ask the office before you sign anything. For a bank account, the survivor brings a death certificate and identification to the bank, and the account is retitled or closed out. For a vehicle, the survivor takes the title and a death certificate to the motor vehicle agency.
 
 Survivorship also does not cancel debts. A mortgage stays on the house, and a creditor of the deceased owner may still have claims against the estate. A lender cannot generally call a loan because a spouse or family member took over the home after a death, but the payments must continue.
 
 ## How can you check what you have?
 
-1. **Pull the deed** from the county recorder. In Illinois that is the county recorder of deeds; in New Jersey the county clerk.
+1. **Pull the deed** from the county recorder. In most Illinois counties that is the recorder of deeds or the county clerk acting as recorder. In Cook County it is the County Clerk's recordings division.
 2. **Read the account agreements** or ask the bank for the current signature card.
 3. **Look at the statements** for registration wording.
 4. **Write a list** with each asset, the form of ownership and who survives.

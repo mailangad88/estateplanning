@@ -1,14 +1,14 @@
 ---
 title: "Can you leave property in your will to an unmarried partner, a friend or a non-citizen?"
 description: "A will can name almost anyone, but partners, friends and non-citizens face different tax and family-claim rules. See what works, what fails and what to check."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Yes. You can leave property in a will to an unmarried partner, a friend, a charity or a person who is not a U.S. citizen. Only a will, trust or beneficiary form can do it, because the default inheritance rules favor relatives. The limits that remain are a spouse's claim, any forced-share rules abroad, higher inheritance tax in some states, and the effect on benefits.
 takeaways:
   - "Unmarried partners and friends inherit nothing under the default rules, so a will, trust or beneficiary form is the only route."
   - "A will can leave property to a non-citizen, though the tax treatment of a non-citizen spouse is different."
   - "A spouse can claim an elective share even against a will that leaves everything to someone else."
-  - "Some states tax gifts to partners and friends at a higher rate than gifts to children, and New Jersey is one of them."
+  - "Illinois has no inheritance tax, so a gift to a partner or friend is measured the same as a gift to a child under its estate tax."
   - "Name the person precisely, add a backup and check how any shared home is titled."
 faqs:
   - q: "Can I leave my property to an unmarried partner in a will?"
@@ -26,9 +26,9 @@ related:
   - "what-if/unmarried-partner-dies-without-a-will"
   - "basics/estate-planning-for-immigrants-and-non-citizens"
   - "estate-tax/non-citizen-spouse-qdot"
-  - "new-jersey/new-jersey-inheritance-tax"
+  - "illinois/unmarried-partners"
   - "wills/disinheriting-or-unequal-shares"
-  - "new-jersey/domestic-partners-and-civil-union-partners-in-new-jersey-estate-law"
+  - "illinois/civil-union-partners-and-illinois-estate-law"
 glossary: ["testator", "elective-share", "bequest", "intestate", "special-needs-trust", "beneficiary"]
 review: pending
 intent: question
@@ -73,13 +73,13 @@ A common compromise leaves the partner the right to live in the house for life, 
 
 ## Does the state tax a partner or friend more?
 
-Sometimes. There is no federal inheritance tax, and the federal estate tax applies only above $15,000,000 per person in 2026, so most estates owe nothing federally. A few states are different.
+Sometimes. There is no federal inheritance tax, and the federal estate tax applies only above $15,000,000 per person in 2026, so most estates owe nothing federally. A few states add their own tax.
 
-In New Jersey, the inheritance tax sorts heirs into classes. Spouses, civil union and domestic partners, children, grandchildren and parents are exempt. Siblings and children-in-law pay on amounts above the first $25,000. Everyone else, including an unmarried partner who has not registered and a friend, falls in Class D and pays 15 percent on the first $700,000 and 16 percent above. Charities are exempt. Details are on our page about [New Jersey's inheritance tax](/learn/new-jersey/new-jersey-inheritance-tax), and registration is covered in [domestic partners and civil union partners in New Jersey](/learn/new-jersey/domestic-partners-and-civil-union-partners-in-new-jersey-estate-law).
+Illinois has no inheritance tax. It has an estate tax that applies when an estate passes $4 million. A gift to a partner or friend counts the same as a gift to a child for that threshold, and a gift to a surviving spouse is deductible. Our page on [the Illinois estate tax](/learn/illinois/illinois-estate-tax) shows how the threshold works.
 
-Illinois has no inheritance tax. It has an estate tax that applies when an estate passes $4 million. A gift to a partner or friend counts the same as a gift to a child for that threshold, and a gift to a surviving spouse is deductible.
+A partner in an Illinois civil union is in a different position from an unmarried partner. Illinois gives a civil union partner the same legal protections as a spouse (750 ILCS 75/20), so the partner is generally treated like a spouse at death. Federal rules are tied to marriage, which our page on [civil union partners and Illinois estate law](/learn/illinois/civil-union-partners-and-illinois-estate-law) explains. An unmarried partner with no civil union has none of those rights and depends entirely on the will.
 
-Many other states have no inheritance tax at all, and a few have one with a similar class structure. Check yours with the [state death tax checker](/tools/state-death-tax-checker).
+Many other states have no inheritance tax at all, and a few have one that taxes gifts to partners and friends at a higher rate than gifts to children. Check yours with the [state death tax checker](/tools/state-death-tax-checker).
 
 ## Can a non-citizen inherit under a will?
 

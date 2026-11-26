@@ -1,7 +1,7 @@
 ---
 title: "Naming a guardian for your children: a guide for parents"
 description: "Everything parents need to name a guardian: how to choose one, what a court does without a nomination, how to protect your kids' money, and emergency backups."
-updated: "2026-10-06"
+updated: "2026-11-26"
 answer: >-
   To name a guardian for your children, choose a trusted adult and at least one backup, ask them first, and nominate them in a signed will. Pair that with a trust or other plan for your children's money and short-term emergency documents, so your family is covered whether you are gone or only unavailable.
 takeaways:
@@ -177,9 +177,9 @@ You can do the first two this month and the rest over time. A good first step is
 
 If you suspect a guardian is misusing a child's funds, [what happens if a guardian mismanages a child's money](/learn/guardianship/what-happens-if-a-guardian-mismanages-a-childs-money) covers accountings, court remedies and prevention.
 
-For the actual clause and the order of backups, [how to name a guardian in your will](/learn/guardianship/how-to-name-a-guardian-in-your-will-with-backups-and-wording) gives sample wording and Illinois and New Jersey rules.
+For the actual clause and the order of backups, [how to name a guardian in your will](/learn/guardianship/how-to-name-a-guardian-in-your-will-with-backups-and-wording) gives sample wording and the Illinois witness rule.
 
-If an adult guardianship is proposed, in place or being misused, [can a guardianship be contested or ended](/learn/guardianship/can-a-guardianship-be-contested-or-ended) covers the steps in both states.
+If an adult guardianship is proposed, in place or being misused, [can a guardianship be contested or ended](/learn/guardianship/can-a-guardianship-be-contested-or-ended) covers the steps in an Illinois court.
 
 If a child is about to inherit real estate or an IRA, [what happens when a minor inherits a house or retirement account](/learn/guardianship/what-happens-when-a-minor-inherits-a-house-or-retirement-account) explains who holds it and how to avoid court.
 

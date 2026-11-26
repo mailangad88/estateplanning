@@ -1,7 +1,7 @@
 ---
 title: "Should you keep or sell an inherited house? A carrying cost and timing worksheet"
 description: "Weigh keeping an inherited house against selling it: monthly carrying costs, step-up in basis, insurance, co-owners and how long you can reasonably wait."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Sell if the house costs more to hold than it gives back or if co-heirs disagree. Keep it if you will live in it, rent it at a profit, or the family has a plan that everyone signed. No law sets a date to sell, but taxes, insurance and the estate's closing schedule make the first six to twelve months the natural decision window.
 takeaways:
@@ -115,7 +115,7 @@ If one heir wants to keep and the others want cash, a buyout is the usual answer
 
 ## How state law changes this
 
-State rules affect timing and cost. Probate length, whether a court must approve the sale, transfer taxes, and property tax rules differ. In New Jersey, deeds from an executor to an heir under a will or intestacy are among those the Division of Taxation lists as exempt from the realty transfer fee, and our page on [inheriting a house in New Jersey](/learn/new-jersey/inheriting-a-house-in-new-jersey) has the details. In Illinois, the homestead exemption rules after a death are explained in our [Illinois homestead page](/learn/illinois/illinois-homestead-exemption-after-a-death).
+State rules affect timing and cost. Probate length, whether a court must approve the sale, transfer taxes, and property tax rules differ. Our page on [inheriting a house in Illinois](/learn/illinois/inheriting-a-house-in-illinois) covers the Illinois steps. The homestead exemption rules after a death are explained in our [Illinois homestead page](/learn/illinois/illinois-homestead-exemption-after-a-death).
 
 ## How we can help
 

@@ -1,7 +1,7 @@
 ---
 title: "What is a conscience clause? When a doctor or hospital can decline your living will"
 description: "A conscience clause lets some doctors or religious hospitals decline a living will instruction. See the limits, the transfer duty and how to check early."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A conscience clause is a law or hospital policy that lets a clinician or religiously affiliated facility decline to carry out a treatment decision that violates its moral or religious beliefs. It does not erase your living will. In general the provider must tell you promptly and help move you to someone willing to follow it. The practical risk is delay, so check policies before you are admitted.
 takeaways:
@@ -27,7 +27,7 @@ related:
   - "healthcare-directives/what-it-means-to-refuse-life-support"
   - "healthcare-directives/healthcare-power-of-attorney"
   - "illinois/illinois-health-care-surrogate-act-who-decides"
-  - "new-jersey/new-jersey-advance-directives"
+  - "illinois/illinois-living-will-act-what-it-covers-and-when-it-applies"
 glossary: ["living-will", "advance-directive", "healthcare-proxy", "polst", "agent", "hipaa-authorization"]
 review: pending
 intent: question
@@ -35,11 +35,11 @@ intent: question
 
 Marguerite, 79, has a living will that says no feeding tube if she is permanently unconscious. Her daughter just took her to a hospital with a cross on the sign. Will the staff follow the document?
 
-Usually yes, or at least they will help move her to a place that will. A conscience clause is the rule that makes that "or at least" possible. This page explains what a conscience clause is, how far it goes, and what you can do in advance. It is general education for Illinois and New Jersey readers, not legal advice. For the broader set of conflicts, see our article on [who can overrule your healthcare directive](/learn/healthcare-directives/who-can-overrule-your-healthcare-directive).
+Usually yes, or at least they will help move her to a place that will. A conscience clause is the rule that makes that "or at least" possible. This page explains what a conscience clause is, how far it goes, and what you can do in advance. It is general education for Illinois readers, not legal advice. For the broader set of conflicts, see our article on [who can overrule your healthcare directive](/learn/healthcare-directives/who-can-overrule-your-healthcare-directive).
 
 ## What is a conscience clause in health care?
 
-It is a legal or policy protection that lets a doctor, nurse or institution decline to take part in something they find morally or religiously unacceptable. Many states, and federal law, have versions. Illinois has the Health Care Right of Conscience Act, which protects both individuals and institutions that decline to provide certain services based on conscience. New Jersey's advance directive law and its POLST law each address what a provider must do when it objects to an instruction.
+It is a legal or policy protection that lets a doctor, nurse or institution decline to take part in something they find morally or religiously unacceptable. Many states, and federal law, have versions. Illinois has the Health Care Right of Conscience Act, which protects both individuals and institutions that decline to provide certain services based on conscience. Under the Illinois Health Care Surrogate Act, a physician who cannot follow a surrogate's decision for reasons of conscience may decline, and the practical next step is to ask about transfer to another provider.
 
 The clause is a shield for the provider. It is not a license to override the patient. Most of these laws say that a provider who will not comply must tell the patient or agent and must not abandon care. Think of it as a polite refusal with a duty to hand off, not a veto.
 
@@ -64,7 +64,7 @@ What the clinician cannot do is pretend your document does not exist, give treat
 
 A religiously affiliated hospital or nursing home may have written rules on end-of-life care that are stricter than your state's default. Catholic hospitals commonly follow the Ethical and Religious Directives for Catholic Health Care Services, a public document. In many cases these facilities will honor a living will that refuses burdensome treatment, since the church distinguishes between ordinary and extraordinary means. Where they may draw a line is around withdrawing artificial nutrition and hydration in some cases, or around certain sedation practices.
 
-New Jersey's POLST Act says that a religiously affiliated institution may decline to follow a policy contrary to its written rules, but it must disclose those policies and help transfer a patient if a conflict cannot be resolved. That duty to disclose is the useful lever. If the facility has a policy, it must be written down, and you are entitled to ask for it.
+The useful lever is the facility's written policy. A hospital or nursing home with religious rules on end-of-life care usually has them on paper, and you can ask for a copy before admission. If the policy conflicts with your directive, ask in writing how the facility handles a transfer to another provider.
 
 ## How do you check before you are admitted?
 
@@ -97,7 +97,7 @@ Three come up again and again. The first is assuming that "a Catholic hospital w
 
 ## What changes your odds?
 
-A clear, current document with a named agent and an alternate does most of the work. Courts and ethics committees take specific instructions more seriously than general ones. "I do not want a feeding tube if I am permanently unconscious" is stronger than "no heroic measures." Our article on [questions to answer before writing a living will](/learn/healthcare-directives/questions-to-answer-before-writing-a-living-will) helps you get to specific language, and the [living will](/learn/healthcare-directives/living-will) overview explains how states treat the form. For a state-by-state view of who decides when you have not named anyone, see [New Jersey advance directives](/learn/new-jersey/new-jersey-advance-directives).
+A clear, current document with a named agent and an alternate does most of the work. Courts and ethics committees take specific instructions more seriously than general ones. "I do not want a feeding tube if I am permanently unconscious" is stronger than "no heroic measures." Our article on [questions to answer before writing a living will](/learn/healthcare-directives/questions-to-answer-before-writing-a-living-will) helps you get to specific language, and the [living will](/learn/healthcare-directives/living-will) overview explains how states treat the form. For who decides in Illinois when you have not named anyone, see our page on the [Illinois Health Care Surrogate Act](/learn/illinois/illinois-health-care-surrogate-act-who-decides).
 
 Use the [healthcare directives guide](/learn/healthcare-directives) as a map of the whole set.
 

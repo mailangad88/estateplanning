@@ -38,14 +38,14 @@ faqs:
   - q: "I am transgender or nonbinary. What should my documents get right?"
     a: "Your current legal name, the name you use, and any prior names, so accounts, deeds and court records match. You can share your name and pronouns when you book, and ask on your first call how the attorney records prior names."
 reviewed: false
-updated: "2026-10-06"
+updated: "2026-11-26"
 ---
 
 ## What is at stake
 
 - **Medical decisions and visitation.** A healthcare power of attorney and HIPAA release name the person who makes decisions and can talk to doctors, regardless of what a relative says. See [living will vs healthcare power of attorney](/compare/living-will-vs-healthcare-power-of-attorney).
 - **A contested plan.** If a family has not been supportive, an estate plan that is clear, signed correctly and shows capacity helps reduce the chance of a successful challenge.
-- **Funeral and burial decisions.** Many states let you name the person who controls disposition of your remains. If you do not, default rules often give control to a spouse and then to blood relatives. For unmarried partners and chosen family, that matters. In Illinois, you can name an agent in a signed written form under the Disposition of Remains Act (755 ILCS 65/5). In New Jersey, you name a funeral and disposition representative in your will (N.J.S.A. 45:27-22). If you do not, both states start with a spouse, and New Jersey also lists a civil union or domestic partner. See the [funeral and burial wishes worksheet](/checklists/funeral-and-burial-wishes).
+- **Funeral and burial decisions.** Many states let you name the person who controls disposition of your remains. If you do not, default rules often give control to a spouse and then to blood relatives. For unmarried partners and chosen family, that matters. In Illinois, you can name an agent in a signed written form under the Disposition of Remains Act (755 ILCS 65/5). If you do not, the Illinois default list runs from a spouse to adult children, parents and next of kin. An unmarried partner is not on it. See the [funeral and burial wishes worksheet](/checklists/funeral-and-burial-wishes).
 - **Parentage.** Marriage and a birth certificate are not always enough for the non-biological or non-gestational parent. Many family law attorneys recommend an adoption or a court judgment of parentage for added security, because a court judgment is generally recognized across state lines. This is family law work, and the attorney we match you with can coordinate with a family law attorney.
 - **Marriage recognition.** Same-sex marriage is recognized nationwide. The Respect for Marriage Act of 2022 says federal law treats a marriage as valid if it was valid where it took place (1 U.S.C. 7). Couples who never married may have no automatic rights.
 - **Unmarried partners and chosen family.** Without documents, a partner of 20 years may have no legal standing. A will, trust, healthcare directive and beneficiary forms fix most of it. See [estate planning for unmarried couples](/learn/life-stages/estate-planning-for-unmarried-couples).

@@ -1,7 +1,7 @@
 ---
 title: "What happens to a trust when a beneficiary dies?"
 description: "A beneficiary can die before the grantor, before a payout or during a lifetime trust. See who receives their share in each case and how to word the trust."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   It depends on when the beneficiary dies and what the trust says. If they die before the grantor, their share usually goes to named alternates or their descendants. If they die after being entitled to a payout, it may go to their own estate. A trust that is silent leaves the answer to state law and often to a court.
 takeaways:
@@ -116,7 +116,7 @@ The same logic applies to forms that sit outside the trust. If the trust is name
 
 ## How state law changes this
 
-Anti-lapse rules, survivorship periods, and how courts treat a silent trust differ from state to state. Some states apply the same default to wills and trusts, and others treat them differently. Our [Illinois](/estate-planning/illinois) and [New Jersey](/estate-planning/new-jersey) guides show how those two states approach inheritance, and an attorney in your state can tell you which default applies to your trust.
+Anti-lapse rules, survivorship periods, and how courts treat a silent trust differ from state to state. Some states apply the same default to wills and trusts, and others treat them differently. Our [Illinois guide](/estate-planning/illinois) shows how Illinois approaches inheritance, and an attorney in your state can tell you which default applies to your trust.
 
 When the gift passes under a will or by intestacy rather than a trust, see [when an heir cannot receive their share](/learn/after-a-death/when-an-heir-cannot-receive-their-share-died-minor-incapacitated-or-in-debt).
 

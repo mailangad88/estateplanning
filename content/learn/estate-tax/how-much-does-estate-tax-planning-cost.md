@@ -1,12 +1,12 @@
 ---
 title: "How much does estate tax planning cost, and when is it worth paying for?"
 description: "What drives the cost of estate tax planning, from trust drafting and appraisals to yearly upkeep, and how to judge whether the fee is worth the tax at stake."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Estate tax planning costs more than a basic will because it involves trusts, valuations and tax returns, and the fee depends on the number of documents, the type of assets and who does the work. Attorneys quote either a flat fee or an hourly rate. Compare the total, including appraisals and yearly upkeep, with the tax you are trying to avoid, which is 40 percent of the amount over the exclusion.
 takeaways:
   - "Federal estate tax applies only above $15 million per person in 2026, so a family should price the tax at stake before paying for complex planning."
-  - "Illinois taxes estates above $4 million. New Jersey has no estate tax but has an inheritance tax on some heirs. Both change what planning is worth."
+  - "Illinois taxes estates above $4 million and has no portability between spouses, which changes what planning is worth for many couples."
   - "The visible cost is drafting. The hidden costs are appraisals, trust tax returns, trustee fees and the effort of keeping the plan funded."
   - "Ask whether a quote is flat or hourly, what it includes, and what happens if the law changes."
   - "A plan is not worth the same to every family. Some need an updated will and a portability filing, not a trust."
@@ -78,7 +78,7 @@ Compare the tax at stake with the total cost of the plan, then ask whether there
 
 Here is an invented example. Dana, a widow in Illinois, has an estate of $17 million and no unused exclusion from her late husband. The federal exclusion is $15 million, so the exposed amount is $2 million, and the tax at 40 percent is $800,000 before any planning. Illinois adds its own estate tax, since its exclusion is $4 million. If planning cost $25,000 (a made-up figure) and reduced the exposed amount by half, the saving would dwarf the fee. If Dana's estate were $6 million, federal planning would save nothing, because no federal tax is due, and the question would be Illinois, where the answer turns on how much a trust and a marital deduction strategy can shelter.
 
-The mirror case is the family at $2 million that is sold a trust for tax reasons. Federal tax does not apply, Illinois does not either, and in New Jersey the estate tax was repealed in 2018, though an inheritance tax can apply to some heirs. These families can have good reasons to use a trust, but "estate tax" is not one of them. Our article on [planning near the exemption](/learn/estate-tax/estate-tax-planning-when-you-are-near-the-exemption) helps you judge where you fall, and the [estate tax estimator](/tools/estate-tax-estimator) shows rough exposure in a couple of minutes.
+The mirror case is the family at $2 million that is sold a trust for tax reasons. Federal tax does not apply, and the Illinois estate tax does not either, since the estate is well under the $4 million threshold. These families can have good reasons to use a trust, but "estate tax" is not one of them. Our article on [planning near the exemption](/learn/estate-tax/estate-tax-planning-when-you-are-near-the-exemption) helps you judge where you fall, and the [estate tax estimator](/tools/estate-tax-estimator) shows rough exposure in a couple of minutes.
 
 <!-- visual: tool slug=estate-tax-estimator -->
 

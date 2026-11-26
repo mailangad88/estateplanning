@@ -1,7 +1,7 @@
 ---
 title: "Estate planning for business owners: succession, buy-sell agreements and continuity"
 description: "Estate planning for business owners: succession, buy-sell agreements, LLC and corporation ownership at death, family transfers and incapacity planning."
-updated: "2026-10-06"
+updated: "2026-11-26"
 answer: >-
   Estate planning for business owners connects your personal documents to your company. It decides who manages
   the business, who owns it, how ownership is valued and paid for, and what happens if you die or become
@@ -164,7 +164,7 @@ Related pillars worth reading alongside this one: [trusts](/learn/trusts), [powe
 
 ## More questions people ask
 
-If you own a company in Illinois or New Jersey, [Illinois estate tax and New Jersey inheritance tax on a family business](/learn/business-owners/illinois-estate-tax-and-new-jersey-inheritance-tax-on-a-family-business) shows what each state would charge the business and the heir, with worked examples and where the cash comes from.
+If you own a company in Illinois, [Illinois estate tax on a family business](/learn/business-owners/illinois-estate-tax-on-a-family-business) shows what the state would charge when the business pushes an estate past $4 million, with a worked example and where the cash comes from.
 
 If the building matters as much as the company, [should business real estate be in a separate LLC](/learn/business-owners/should-business-real-estate-be-owned-separately-from-the-operating-company) compares one entity with two, with a worked example and the multi-state issues.
 

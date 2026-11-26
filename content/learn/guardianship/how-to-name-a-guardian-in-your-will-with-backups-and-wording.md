@@ -1,9 +1,9 @@
 ---
 title: "How to name a guardian in your will: wording, backup guardians and instructions"
-description: "How to name a guardian for your children in a will, with sample wording, backup guardians in order and what to leave out. Illinois and New Jersey rules."
-updated: "2026-10-26"
+description: "How to name a guardian for your children in a will, with sample wording, backup guardians in order and what to leave out, under Illinois rules."
+updated: "2026-11-26"
 answer: >-
-  Name a guardian in your will by naming the child or children, giving the guardian's full name and relationship, and listing at least one backup who steps in if the first cannot serve. Sign the will with the formalities your state requires. In Illinois a written designation needs two credible witnesses, and in New Jersey a will can appoint guardians of the person and the estate.
+  Name a guardian in your will by naming the child or children, giving the guardian's full name and relationship, and listing at least one backup who steps in if the first cannot serve. Sign the will with the formalities your state requires. In Illinois a written designation, including one in a will, needs at least two credible witnesses.
 takeaways:
   - "A guardian clause needs the children's names, the guardian's full legal name, and a backup in order. Vague wording like 'my sister' invites a dispute."
   - "Name a backup, and a third choice if you can. The first choice may be ill, divorced or living overseas by the time it matters."
@@ -28,7 +28,7 @@ related:
   - "guardianship/letter-of-intent-for-your-childrens-guardian"
   - "guardianship/guardian-vs-trustee"
   - "illinois/illinois-guardianship"
-  - "new-jersey/guardianship-in-new-jersey"
+  - "illinois/naming-a-guardian-for-your-children"
   - "wills/how-to-make-a-valid-will"
 glossary: ["guardian", "testator", "self-proving-affidavit", "trustee"]
 review: pending
@@ -68,15 +68,15 @@ A guardian of the person raises the child: housing, schooling, doctors, daily li
 
 Many parents name a relative to raise the children and a different person, or a bank, to manage money through a trust. That prevents the guardian from having to report to a court for each tuition payment. Our article on [guardian versus trustee](/learn/guardianship/guardian-vs-trustee) shows when each fits. If you do nothing, a court may appoint a guardian of the estate and require reports and a bond.
 
-## What does Illinois or New Jersey require?
+## What does Illinois require?
 
-Both states let a parent nominate a guardian in a will, and neither treats the nomination as an order.
+Illinois lets a parent nominate a guardian in a will, and it does not treat the nomination as an order.
 
 In Illinois, a parent can designate a guardian for a minor in writing, including in a will, and the designation needs at least two credible witnesses (755 ILCS 5/11-5). A minor who is 14 or older may nominate a guardian too. The court still decides what is in the child's best interest. Read the details in [Illinois guardianship](/learn/illinois/illinois-guardianship).
 
-In New Jersey, either parent may appoint a guardian of the person and a guardian of the estate by will for a child who is under 18 and unmarried at the parent's death (N.J.S.A. 3B:12-13), and a surviving parent can also make the appointment (N.J.S.A. 3B:12-15). Our [New Jersey guardianship article](/learn/new-jersey/guardianship-in-new-jersey) has the full steps.
+The person you name must meet basic qualifications. Under the Probate Act the guardian must be at least 18, live in the United States and be of sound mind, among other things (755 ILCS 5/11-3). If only one parent dies, the surviving parent generally keeps authority over the children, so the clause matters most when both parents are gone. Our page on [naming a guardian for your children in Illinois](/learn/illinois/naming-a-guardian-for-your-children) has the full steps.
 
-In both states, sign the will with the witnesses the state requires. A self-proving affidavit lets the court accept the will without calling the witnesses. Our guide to [making a valid will](/learn/wills/how-to-make-a-valid-will) explains the signing.
+Sign the will with the two witnesses Illinois requires. A self-proving affidavit lets the court accept the will without calling the witnesses. Our guide to [making a valid will](/learn/wills/how-to-make-a-valid-will) explains the signing.
 
 <!-- visual: whatif id=no-guardian-named -->
 

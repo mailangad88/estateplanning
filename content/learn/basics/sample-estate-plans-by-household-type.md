@@ -1,7 +1,7 @@
 ---
 title: "What an estate plan looks like for a single person, a couple or a single parent"
 description: "Side-by-side sample estate plans for singles, married couples, unmarried couples, single parents and couples with young children, and what each one adds."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   A basic estate plan has the same core pieces for everyone: a will or trust, a financial power of attorney, a healthcare directive, and correct beneficiary forms. What changes is who fills each role and what gets added. Single parents add guardian and trust planning for the children. Unmarried couples add protections the law gives married couples automatically.
 takeaways:
@@ -21,8 +21,8 @@ faqs:
     a: "The documents are similar, but unmarried partners lose the automatic rights spouses have to inherit, to make medical decisions and to avoid certain taxes. Each partner needs a will or trust naming the other, plus powers of attorney and healthcare directives, because nothing is assumed."
   - q: "How many documents is a typical plan?"
     a: "A simple plan for one adult is commonly four to six documents: a will or trust, a financial power of attorney, a healthcare power of attorney, a living will, and a HIPAA release. Couples sign a set each. Beneficiary forms are separate and are filled out with the account holders."
-  - q: "Do these sample plans apply in Illinois and New Jersey?"
-    a: "The building blocks are the same in both states. The signing rules, the form of the statutory power of attorney and the way property is titled differ, so an attorney in your state should adapt any sample before you sign."
+  - q: "Do these sample plans apply in Illinois?"
+    a: "The building blocks apply in Illinois. The signing rules, the Illinois statutory short form power of attorney and the way property is titled shape the details, so an attorney should adapt any sample to your facts before you sign."
 related:
   - "basics/estate-planning-documents-checklist"
   - "basics/basic-vs-comprehensive-estate-plan"

@@ -1,14 +1,14 @@
 ---
-title: "Do wills expire? Is an old will still valid in Illinois or New Jersey?"
+title: "Do wills expire? Is an old will still valid in Illinois?"
 description: "Does a will expire after 10 or 20 years? No, but old wills go stale. See what stays valid, what changes quietly, and a checklist for deciding to redo yours."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
-  A will does not expire. In Illinois and New Jersey, a properly signed will stays valid until you revoke it, replace it with a newer will, or destroy it, however old it is. What expires is its usefulness: people die, assets change, and a divorce or a new child can alter how the old will works.
+  A will does not expire. In Illinois, a properly signed will stays valid until you revoke it, replace it with a newer will, or destroy it, however old it is. What expires is its usefulness: people die, assets change, and a divorce or a new child can alter how the old will works.
 takeaways:
   - "There is no time limit on a valid will, and you never have to re-sign it to keep it alive."
   - "A newer will that is properly signed replaces the older one, and a divorce can cancel gifts to a former spouse."
   - "The usual damage from an old will is practical: named people who have died, gifts of property you sold, and guardians who are now wrong."
-  - "A will signed in another state is generally honored if it was valid where it was signed, but Illinois and New Jersey details differ."
+  - "A will signed in another state is generally honored in Illinois if it was valid where it was signed, but it is still worth a review."
   - "A review every few years, and after any big life change, is a better rule than an age cutoff."
 faqs:
   - q: "Is a 20 year old will still valid?"
@@ -17,8 +17,8 @@ faqs:
     a: "No. Re-signing does not refresh anything, and a new notary stamp adds nothing to a will that was already properly executed. You only sign again when you change it, using either a codicil or a new will."
   - q: "What if my old will names someone who has died?"
     a: "The gift to that person may fail, and the property falls to a backup you named, or to the residue, or to heirs under state law. If your executor has died, the court appoints someone else, often the next person named. Both are avoidable with a short update."
-  - q: "Does moving from Illinois to New Jersey, or the reverse, cancel my will?"
-    a: "No. A will that was valid where it was signed is generally honored in the other state too. The real risk is that your old documents use terms or forms the new state's court is slower to accept, so an update after a move is worth the small cost."
+  - q: "Does moving to or from Illinois cancel my will?"
+    a: "No. A will that was valid where it was signed is generally honored in the new state too. The real risk is that your old documents use terms or forms the new state's court is slower to accept, so an update after a move is worth the small cost."
   - q: "How do I know if my will is out of date?"
     a: "Read it against a short list: Are the people alive and still your choice? Do you still own what you left? Are the guardian and executor still right? Has your family changed? Any no answer means a review is overdue."
 related:
@@ -27,7 +27,7 @@ related:
   - "wills/marriage-divorce-or-a-new-baby-and-your-existing-will"
   - "what-if/outdated-will"
   - "illinois/changing-or-revoking-a-will-in-illinois"
-  - "new-jersey/changing-or-revoking-a-will-in-new-jersey"
+  - "illinois/is-an-out-of-state-will-valid-in-illinois"
   - "basics/estate-planning-documents-checklist"
 glossary: ["testator", "codicil", "executor", "beneficiary", "residuary-estate"]
 review: pending
@@ -40,13 +40,13 @@ The short answer is that it is still good, with a large asterisk. The paper stay
 
 ## Does a will ever expire?
 
-No. Wills do not carry an expiration date in Illinois, New Jersey or anywhere else in the country. Once you sign it correctly, a will remains your will until one of three things happens:
+No. Wills do not carry an expiration date in Illinois or anywhere else in the country. Once you sign it correctly, a will remains your will until one of three things happens:
 
 1. You revoke it, usually by signing a later will that says so.
 2. You physically destroy it with the intent to revoke it.
 3. A change of law or circumstance cancels part of it, such as a divorce.
 
-You can read how revocation works in each state in our articles on [changing or revoking a will in Illinois](/learn/illinois/changing-or-revoking-a-will-in-illinois) and [in New Jersey](/learn/new-jersey/changing-or-revoking-a-will-in-new-jersey). Time passing is not on the list. A court will admit a 40-year-old will in the same way it admits one signed last month, provided someone can show it was properly executed.
+You can read how revocation works in our article on [changing or revoking a will in Illinois](/learn/illinois/changing-or-revoking-a-will-in-illinois). Time passing is not on the list. A court will admit a 40-year-old will in the same way it admits one signed last month, provided someone can show it was properly executed.
 
 That last condition is the practical catch. If your witnesses have died or cannot be found and your will has no [self-proving affidavit](/learn/wills/self-proving-affidavit-explained), your family may need extra steps to prove the signatures. A will signed years ago without that affidavit is worth checking for this reason alone.
 
@@ -68,7 +68,7 @@ The page on [lapsed gifts and simultaneous death](/learn/wills/lapsed-gifts-and-
 
 ## Will an old will from another state still work?
 
-Generally yes. A will that was validly signed under the law where you lived at the time is treated as valid in most states, and that includes a will signed in a different state and then brought to Illinois or New Jersey. The article on [moving states or living abroad with a will](/learn/wills/will-moving-states-or-living-abroad) covers the details.
+Generally yes. A will that was validly signed under the law where you lived at the time is treated as valid in most states, and that includes a will signed in a different state and then brought to Illinois. The articles on [whether an out-of-state will is valid in Illinois](/learn/illinois/is-an-out-of-state-will-valid-in-illinois) and [moving states or living abroad with a will](/learn/wills/will-moving-states-or-living-abroad) cover the details.
 
 The trouble comes elsewhere. An old will may name an executor who lives two states away, refer to laws or forms that no longer exist, or leave out provisions your new state's courts expect to see. It still works, but your family may spend more time and money getting it admitted.
 

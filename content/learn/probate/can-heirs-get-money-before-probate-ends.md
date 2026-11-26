@@ -1,7 +1,7 @@
 ---
 title: "Can heirs get money before probate ends? Partial distributions explained"
 description: "An executor can sometimes pay heirs part of an inheritance early, but doing it before debts and taxes are settled puts the executor at risk. See how it works."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Sometimes. An executor may make a partial distribution before probate closes if the estate clearly has enough left to pay debts, taxes and expenses. Many courts and lawyers wait until the creditor claim period ends. Paying early without a cushion can make the executor personally liable for unpaid bills, so heirs usually sign a receipt and agree to give money back if needed.
 takeaways:
@@ -85,7 +85,7 @@ A well-run partial distribution follows a short routine.
 5. **Collect a signed receipt.** The heir acknowledges what was received and agrees to return it if the estate needs it.
 6. **Keep a record.** Each payment goes in the estate's accounting, which is shown to the court or to heirs when the case closes.
 
-In Illinois, an executor under independent administration can usually make distributions without asking the judge each time, which gives more flexibility and also puts more responsibility on the executor. The explanation of [independent and supervised administration in Illinois](/learn/illinois/independent-vs-supervised-administration-in-illinois) covers when a family chooses supervision. In New Jersey, the Surrogate and the courts expect a signed release or refunding agreement from beneficiaries at closing, and our article on [refunding bonds and releases in New Jersey](/learn/new-jersey/new-jersey-refunding-bonds-and-releases-when-an-estate-closes) explains what those papers say.
+In Illinois, an executor under independent administration can usually make distributions without asking the judge each time, which gives more flexibility and also puts more responsibility on the executor. The explanation of [independent and supervised administration in Illinois](/learn/illinois/independent-vs-supervised-administration-in-illinois) covers when a family chooses supervision.
 
 ## What if the executor refuses?
 

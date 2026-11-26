@@ -1,14 +1,14 @@
 ---
 title: "Do you pay capital gains if you sell an inherited house or a house after your spouse dies?"
-description: "Capital gains on an inherited house are usually small because of the step-up in basis. See the numbers for heirs and widows in Illinois and New Jersey."
-updated: "2026-10-26"
+description: "Capital gains on an inherited house are usually small because of the step-up in basis. See the numbers for heirs and widows selling a house in Illinois."
+updated: "2026-11-26"
 answer: >-
   Usually only a little, or none. An inherited house gets a new tax basis equal to its value on the date of death, so you owe capital gains only on growth after that date. A surviving spouse who sells within two years of the death may also exclude up to $500,000 of gain on a primary home. Heirs who never lived there cannot use the home sale exclusion.
 takeaways:
   - "The step-up in basis resets the cost of an inherited house to its date-of-death value, which wipes out most of the gain."
   - "Inherited property is treated as held long term, so any gain after death is taxed at long-term rates even if you sell quickly."
   - "A surviving spouse who sells within two years of the death can generally exclude up to $500,000 of gain on the main home if other tests are met."
-  - "In Illinois and New Jersey, which are not community property states, a jointly owned house usually steps up only on the deceased spouse's half."
+  - "In Illinois, which is not a community property state, a jointly owned house usually steps up only on the deceased spouse's half."
   - "A date-of-death appraisal is the most important document for the sale."
 faqs:
   - q: "Do I pay capital gains tax on a house I inherit?"
@@ -20,14 +20,14 @@ faqs:
   - q: "Does the date-of-death value come from the tax assessor?"
     a: "No. The assessed value for property tax is not a reliable stand-in. Use a licensed appraisal as of the date of death, or in some cases another well-supported valuation. The estate may also use the value on the alternate valuation date if the executor elects it for estate tax purposes."
   - q: "Do I owe state tax on the sale of an inherited house?"
-    a: "Illinois and New Jersey both tax capital gains as income, so a gain above the stepped-up basis is taxed at the state level too. New Jersey also has its own inheritance tax and requires a tax waiver before a house leaves a dead owner's name. Those are separate from capital gains."
+    a: "Illinois taxes capital gains as income, so a gain above the stepped-up basis is taxed at the state level too. Illinois has no inheritance tax, and its estate tax is a separate question from capital gains."
 related:
   - "property-and-assets"
   - "after-a-death/inheriting-a-house"
   - "estate-tax/step-up-in-basis"
   - "estate-tax/step-up-in-basis-for-married-couples-and-joint-property"
   - "life-stages/should-you-sell-the-house-after-your-spouse-dies"
-  - "new-jersey/inheriting-a-house-in-new-jersey"
+  - "illinois/inheriting-a-house-in-illinois"
 glossary: ["step-up-in-basis", "decedent", "heir", "joint-tenancy", "estate"]
 review: pending
 intent: question
@@ -35,7 +35,7 @@ intent: question
 
 A parent dies, the house is worth far more than the $90,000 they paid for it in 1984, and you are about to list it. Or you are a widow in your seventies thinking about downsizing. In both cases the first question is the same: how much of the profit goes to the IRS?
 
-The answer for most families is less than they fear, because of one rule. This page shows how that rule works for an heir and for a surviving spouse, with sample numbers, and points out where Illinois and New Jersey add something extra. It is part of our [property and assets series](/learn/property-and-assets).
+The answer for most families is less than they fear, because of one rule. This page shows how that rule works for an heir and for a surviving spouse, with sample numbers, and points out where Illinois adds something extra. It is part of our [property and assets series](/learn/property-and-assets).
 
 ## Do you pay capital gains on a house you inherit?
 
@@ -71,7 +71,7 @@ For most heirs it makes no difference, because the step-up has already removed t
 
 A surviving spouse gets two separate benefits, and people often mix them up.
 
-**The partial step-up.** In a state that is not a community property state, which includes Illinois and New Jersey, a house the spouses owned together generally gets a new basis only for the deceased spouse's half. The survivor's half keeps its old basis. In a community property state, both halves can step up. Our article on [step-up in basis for married couples](/learn/estate-tax/step-up-in-basis-for-married-couples-and-joint-property) goes through the exceptions.
+**The partial step-up.** In a state that is not a community property state, which includes Illinois, a house the spouses owned together generally gets a new basis only for the deceased spouse's half. The survivor's half keeps its old basis. In a community property state, both halves can step up. Our article on [step-up in basis for married couples](/learn/estate-tax/step-up-in-basis-for-married-couples-and-joint-property) goes through the exceptions.
 
 **The larger exclusion.** A surviving spouse who has not remarried can generally still use the $500,000 exclusion if the sale happens within two years of the date of death and the use and ownership tests were met just before the death. After two years, the limit falls back to $250,000 for one person.
 
@@ -106,11 +106,11 @@ The executor usually has the appraisal. If the house is in a trust, the trustee 
 
 <!-- visual: whatif id=house-in-late-spouses-name -->
 
-## What do Illinois and New Jersey add?
+## What does Illinois add?
 
-Both states tax capital gains as ordinary income on the state return, so a gain above the stepped-up basis is taxed twice, federally and by the state. Neither state has a separate capital gains rate for homes.
+Illinois taxes capital gains as ordinary income on the state return, so a gain above the stepped-up basis is taxed twice, federally and by the state. Illinois has no separate capital gains rate for homes.
 
-New Jersey adds a step before the sale. The Division of Taxation must issue a real property tax waiver before a dead owner's house can be transferred, unless it is held as tenants by the entirety or in a trust. Our guide to [inheriting a house in New Jersey](/learn/new-jersey/inheriting-a-house-in-new-jersey) explains Form L-9 and the timing. That waiver is about inheritance tax, not capital gains, but it can delay closing if no one starts early.
+The Illinois step that most often affects timing is authority to sell, not tax. If the house is in the probate estate, an independent executor can sell it without a court order once letters of office issue (755 ILCS 5/28-8), while a supervised representative must petition the court and usually have the sale approved. Our guide to [selling a house in probate in Illinois](/learn/illinois/selling-a-house-in-probate-in-illinois) explains the steps, and [inheriting a house in Illinois](/learn/illinois/inheriting-a-house-in-illinois) covers the rest of the sequence. A delay in getting letters can push a closing back even when the tax picture is simple.
 
 Illinois has no inheritance tax, and its estate tax applies only above a threshold that most homeowners are well under. The details are in [Illinois estate tax](/learn/illinois/illinois-estate-tax).
 

@@ -1,18 +1,18 @@
 ---
 title: "Should you treat your children equally in your will? When fair is not equal"
 description: "Should you leave your children equal shares? See when equal is fair, when to leave one child more, and how to adjust for gifts, caregiving and different needs."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   Equal shares are the default most parents choose, and they are the simplest to defend, but the law does not require them. You may leave one child more than another if you have a reason and you say so clearly. Equal is not always fair when one child needs lifetime support, gave years of care, or already received large gifts.
 takeaways:
-  - "Illinois and New Jersey both let you leave children unequal shares. A parent has no duty to treat adult children alike."
+  - "Illinois lets you leave children unequal shares. A parent has no duty to treat adult children alike."
   - "Equal shares can still be unfair when one child has a disability, a large debt, or already received money for a house or business."
   - "Unequal plans cause fights mostly when the children are surprised. Tell them, or explain your reasons in a letter."
   - "Beneficiary forms, joint accounts and the house often override the will, so shares can come out unequal by accident."
   - "A trust for a child who struggles with money or benefits gives fairness without handing over a lump sum."
 faqs:
   - q: "Can I leave one child more than the others?"
-    a: "Yes. In nearly every state, including Illinois and New Jersey, a parent can leave adult children different amounts. State your intent in the will or a letter, and keep your documents consistent. Unequal shares are more likely to be challenged when the reason is unclear or one child helped arrange the plan."
+    a: "Yes. In nearly every state, including Illinois, a parent can leave adult children different amounts. State your intent in the will or a letter, and keep your documents consistent. Unequal shares are more likely to be challenged when the reason is unclear or one child helped arrange the plan."
   - q: "What if my children have different financial situations?"
     a: "Many parents weigh need, not just equality. A child with a disability, a medical debt, or a low income may receive more, often in a trust. A child who is financially secure may receive the same or less. If you do this, explain the reasoning so no one reads it as favoritism."
   - q: "Should I count money I already gave a child?"
@@ -28,7 +28,6 @@ related:
   - "beneficiary-designations/leaving-unequal-shares-with-beneficiary-forms"
   - "after-a-death/parent-gave-money-or-a-house-to-one-child-before-death"
   - "illinois/can-you-disinherit-a-child-in-illinois"
-  - "new-jersey/can-you-disinherit-a-child-in-new-jersey"
   - "special-needs/special-needs-trust"
 glossary: ["heir", "bequest", "per-stirpes", "residuary-estate", "beneficiary", "special-needs-trust"]
 review: pending
@@ -37,11 +36,11 @@ intent: question
 
 Most parents start with the same sentence: I want to treat them all the same. It sounds simple. Then the details arrive. One daughter lives next door and drives you to appointments. One son borrowed $60,000 for a business. A third child has a disability and will never earn much. Same amounts for all three starts to feel like a different kind of unfair.
 
-This page helps you decide whether equal shares fit your family, how to adjust when they do not, and how to keep the plan from starting an argument. It sits within our [life stages guide](/learn/life-stages). The rules on cutting a child out entirely are in separate articles for [Illinois](/learn/illinois/can-you-disinherit-a-child-in-illinois) and [New Jersey](/learn/new-jersey/can-you-disinherit-a-child-in-new-jersey).
+This page helps you decide whether equal shares fit your family, how to adjust when they do not, and how to keep the plan from starting an argument. It sits within our [life stages guide](/learn/life-stages). The rules on cutting a child out entirely are in our article on [disinheriting a child in Illinois](/learn/illinois/can-you-disinherit-a-child-in-illinois).
 
 ## Does the law require you to treat your children equally?
 
-No. Adult children have no automatic claim on a parent's estate in Illinois, New Jersey or most other states. If you die without a will, state law splits your estate among your children equally by default, but when you sign a will or a trust you can divide it any way you choose. The exception is a young child you have not provided for in some states, and a spouse, who has special rights discussed in our article on the [elective share](/learn/blended-families/spouse-elective-share-and-disinheriting-a-spouse).
+No. Adult children have no automatic claim on a parent's estate in Illinois or most other states. If you die without a will, state law splits your estate among your children equally by default, but when you sign a will or a trust you can divide it any way you choose. The exception is a young child you have not provided for in some states, and a spouse, who has special rights discussed in our article on the [elective share](/learn/blended-families/spouse-elective-share-and-disinheriting-a-spouse).
 
 So the question is not "must I?" but "should I?" That depends on facts only you know.
 

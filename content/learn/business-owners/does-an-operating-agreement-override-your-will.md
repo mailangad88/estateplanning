@@ -1,7 +1,7 @@
 ---
 title: "Does an operating agreement override your will? Who gets your LLC or shares"
 description: "Does an operating agreement override a will? For the LLC interest, usually yes. How shareholder agreements work, what happens with none, and how to align them."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   For the ownership stake in your company, an operating agreement or shareholder agreement usually wins over your will. Your will can leave the LLC interest or shares to your children, but the agreement can still limit who may hold them, force a buyout, or give the heir only a share of profits with no vote.
 takeaways:
@@ -47,7 +47,7 @@ Three kinds of clauses do most of the work:
 - **Admission of new members.** Even if the heir may hold the interest, becoming a voting member is a separate question that often needs a unanimous or majority vote.
 - **Buyout on death.** The company or the surviving members may have the right, or the duty, to purchase the interest from the estate. See [how buy-sell agreements work](/learn/business-owners/buy-sell-agreements) for the pricing and funding side.
 
-Under the default rules of the Illinois and New Jersey LLC statutes, a deceased member's estate generally holds the economic rights, meaning a share of distributions, while management rights stay with the remaining members unless the agreement says otherwise. Check the exact language in your own agreement, because the statutes allow the members to change most of these defaults.
+Under the default rules of the Illinois LLC statute, a deceased member's estate generally holds the economic rights, meaning a share of distributions, while management rights stay with the remaining members unless the agreement says otherwise. Check the exact language in your own agreement, because the statute allows the members to change most of these defaults.
 
 ## What does a shareholder agreement do that a will cannot?
 
@@ -109,7 +109,7 @@ A common mistake is relying on a will written before the company existed or befo
 
 ## What about out-of-state and multi-owner situations?
 
-The LLC is governed by the law of the state where it was formed, usually named in the agreement. Your will is governed by the law of your home state. A New Jersey resident who owns an Illinois LLC may need ancillary probate in Illinois unless the interest sits in a trust. If that sounds like you, look at [property in two states](/learn/property-and-assets/out-of-state-property) and ask whether a trust is the cleaner route.
+The LLC is governed by the law of the state where it was formed, usually named in the agreement. Your will is governed by the law of your home state. So an Illinois resident who owns a Wisconsin LLC has a will read under Illinois law and an operating agreement read under Wisconsin law, and the two need to agree. The LLC interest itself is personal property, generally handled where you lived. Land you own personally in another state is different and may need its own court case there. If that sounds like you, look at [property in two states](/learn/property-and-assets/out-of-state-property) and ask whether a trust is the cleaner route.
 
 For the default rules when there is no agreement, see [what happens to your LLC or corporation shares when you die](/learn/business-owners/llc-ownership-at-death).
 

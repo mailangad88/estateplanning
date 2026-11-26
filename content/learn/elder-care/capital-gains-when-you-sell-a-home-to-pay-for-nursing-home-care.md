@@ -1,7 +1,7 @@
 ---
 title: "Capital gains tax when you sell your home to pay for nursing home care"
 description: "Selling a house to pay for a nursing home? See how the main-home exclusion works, when time in care still counts, and how a gift or inheritance changes the tax."
-updated: "2026-10-26"
+updated: "2026-11-26"
 answer: >-
   If you sold your main home to pay for a nursing home, you may owe little or no capital gains tax. A large part of the gain is excluded when you owned and lived in the house for two of the last five years, and time spent in a licensed care facility can count as time in the home. A house that is gifted to a child first, or sold after your death, is taxed differently.
 takeaways:
@@ -64,7 +64,7 @@ The rule is for licensed facilities, which covers nursing homes and most license
 
 Then the exclusion may be reduced or lost, and this is where families get surprised. A rental house, a second home or a house that has been vacant for more than three of the last five years fails the use test.
 
-If your parent moved out of the house long before entering care, count backward from the closing date and ask whether two of the last five years remain as a main home. If they do not, the gain is taxed as long-term capital gain at federal rates. In Illinois and New Jersey the gain is also income for state income tax purposes. Neither state has a separate break for a nursing home sale.
+If your parent moved out of the house long before entering care, count backward from the closing date and ask whether two of the last five years remain as a main home. If they do not, the gain is taxed as long-term capital gain at federal rates. In Illinois the gain is also income for state income tax purposes, and the state has no separate break for a nursing home sale.
 
 ## How does selling the house affect Medicaid?
 
@@ -102,7 +102,7 @@ The bigger point is timing. If the house sale and the large care payments fall i
 
 ## Who can sign the sale if the owner cannot?
 
-Whoever holds authority. If Arthur signed a [durable power of attorney](/learn/power-of-attorney/durable-financial-power-of-attorney) that covers real estate, Joan can sign the deed as his agent, and title companies in Illinois and New Jersey will usually want to see the document and a lawyer's review of it. If he has no power of attorney and lacks capacity, the only route may be a court guardianship, which adds months. This is the quiet reason to sign the document early. Our page on a [parent with dementia and no power of attorney](/learn/power-of-attorney/parent-with-dementia-no-power-of-attorney) explains what families do when the paper is missing.
+Whoever holds authority. If Arthur signed a [durable power of attorney](/learn/power-of-attorney/durable-financial-power-of-attorney) that covers real estate, Joan can sign the deed as his agent, and title companies in Illinois will usually want to see the document and a lawyer's review of it. If he has no power of attorney and lacks capacity, the only route may be a court guardianship, which adds months. This is the quiet reason to sign the document early. Our page on a [parent with dementia and no power of attorney](/learn/power-of-attorney/parent-with-dementia-no-power-of-attorney) explains what families do when the paper is missing.
 
 ## What to gather before you list the house
 

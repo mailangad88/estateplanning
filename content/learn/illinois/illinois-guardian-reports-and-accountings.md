@@ -1,7 +1,7 @@
 ---
 title: "Annual reports and accountings for an Illinois guardian"
 description: "What an Illinois guardian of an adult files after appointment: the report on the person, the inventory and the accounts of money, plus tips for clean records."
-updated: "2026-11-01"
+updated: "2026-11-26"
 answer: >-
   An Illinois guardian answers to the court. A guardian of the person files periodic reports on the adult's condition and care (755 ILCS 5/11a-17). A guardian of the estate files an inventory soon after appointment and then accounts of income, spending and assets. Local rules set forms and dates, so confirm them with the circuit clerk.
 takeaways:
@@ -27,7 +27,6 @@ related:
   - "illinois/guardian-of-the-person-vs-guardian-of-the-estate-in-illinois"
   - "illinois/illinois-guardian-bond"
   - "illinois/ending-or-changing-an-illinois-guardianship"
-  - "new-jersey/new-jersey-guardian-duties-reports-and-accountings-after-appointment"
 glossary: ["guardian", "fiduciary", "fiduciary-duty", "estate"]
 review: pending
 intent: howto
@@ -35,7 +34,7 @@ intent: howto
 
 The order is signed, and you are now the guardian. The next surprise is the paperwork. The court that gave you authority expects proof, on paper and on a schedule, that you are using it for the person's benefit. The task is manageable, and it is far easier when you set up good habits in the first week.
 
-This page covers the Illinois reporting duties for an adult guardian. It supports our [guardianship overview](/learn/illinois/illinois-guardianship). Readers in New Jersey can compare their duties in [New Jersey guardian reports](/learn/new-jersey/new-jersey-guardian-duties-reports-and-accountings-after-appointment).
+This page covers the Illinois reporting duties for an adult guardian. It supports our [guardianship overview](/learn/illinois/illinois-guardianship).
 
 ## What does the guardian of the person report?
 
