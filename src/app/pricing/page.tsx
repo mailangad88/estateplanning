@@ -4,7 +4,7 @@ import { fees, firm, packages as PACKAGES, SERVED_AND, SERVED_OR } from "@/confi
 import { Rich, RichFaqList } from "@/components/money-page";
 import { Breadcrumbs, Cta } from "@/components/ui";
 import { PageHero } from "@/components/page-hero";
-import { breadcrumbLd, JsonLd, abs } from "@/lib/seo";
+import { breadcrumbLd, JsonLd, abs, ORG_ID } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "What estate planning costs: flat-fee packages",
@@ -131,7 +131,36 @@ export default function Pricing() {
       </p>
       <RichFaqList faqs={FAQS} />
       <Cta />
-      <JsonLd data={[breadcrumbLd([{ name: "Home", path: "/" }, { name: "Pricing", path: "/pricing" }]), { "@context": "https://schema.org", "@type": "WebPage", name: "What estate planning costs", url: abs("/pricing") }]} />
+      <JsonLd data={[breadcrumbLd([{ name: "Home", path: "/" }, { name: "Pricing", path: "/pricing" }]), { "@context": "https://schema.org", "@type": "WebPage", name: "What estate planning costs", url: abs("/pricing"), mainEntity: { "@id": abs("/pricing#packages") } }, packagesLd()]} />
     </>
   );
+}
+
+/**
+ * The packages as an OfferCatalog so search engines and AI assistants can quote the flat fees exactly.
+ * A phrase price ("Custom quote") is listed without a number. Starting fees, stated as such.
+ */
+function packagesLd() {
+  const area = SERVED_AND ? SERVED_AND.split(" and ").map((name) => ({ "@type": "State", name })) : undefined;
+  return {
+    "@context": "https://schema.org",
+    "@type": "OfferCatalog",
+    "@id": abs("/pricing#packages"),
+    name: "Flat-fee estate planning packages",
+    url: abs("/pricing"),
+    itemListElement: PACKAGES.map((p) => {
+      const amount = Number(p.price.replace(/[^0-9.]/g, ""));
+      return {
+        "@type": "Offer",
+        name: `${p.name} estate planning package`,
+        description: `${p.for} Includes: ${p.includes.join("; ")}.`,
+        url: abs("/pricing"),
+        areaServed: area,
+        itemOffered: { "@type": "Service", name: `${p.name} estate plan`, serviceType: "Estate planning", provider: { "@id": ORG_ID } },
+        ...(amount > 0
+          ? { priceSpecification: { "@type": "PriceSpecification", price: amount, priceCurrency: "USD", description: "Starting flat fee; the final fee is set in the written engagement agreement." } }
+          : { description: `${p.for} Priced by custom quote.` }),
+      };
+    }),
+  };
 }

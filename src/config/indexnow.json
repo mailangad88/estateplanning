@@ -1,0 +1,4 @@
+{
+  "//": "IndexNow key. Public by design: search engines fetch it from /indexnow-key.txt to confirm submissions come from this site. INDEXNOW_KEY in the environment overrides it.",
+  "key": "51d168d430056cf139ac44d1e7dfb398"
+}

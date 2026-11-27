@@ -13,6 +13,7 @@ import { MAGNET_FORMATS, magnetsFor, pillarOf } from "@/lib/magnets";
 import { quizzesFor } from "@/lib/quizzes";
 import { toolFor } from "@/config/tools";
 import { KitFaqs } from "@/components/page-kit";
+import ShareBar from "@/components/ShareBar";
 
 export interface RelatedLink {
   href: string;
@@ -122,6 +123,7 @@ export function ArticlePage(props: {
         <EmailCapture kind="magnet" interest={props.magnet.interest} title={props.magnet.title} body={props.magnet.body} cta={props.magnet.cta} sensitive={props.sensitive} />
       ) : null}
       {(!props.sensitive || !props.magnet) && <Cta />}
+      <ShareBar path={props.path} title={props.heading ?? props.title} />
       {related.length > 0 && (
         <section>
           <h2>Keep reading</h2>
