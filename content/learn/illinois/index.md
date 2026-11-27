@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+Families in Marion, Herrin and Carterville can read [how probate works in Williamson County, Illinois](/learn/illinois/how-probate-works-in-williamson-county-illinois) for the courthouse, the clerk, filing the will and how a parent's debts are paid.
+
+Families in Sterling, Rock Falls and Morrison can read [how probate works in Whiteside County](/learn/illinois/how-probate-works-in-whiteside-county) for the courthouse, the clerk, remote hearings and what happens when a parent died on Medicaid.
+
+Grundy County families can read [how probate works in Grundy County, Illinois](/learn/illinois/how-probate-works-in-grundy-county-illinois) for the Morris courthouse, filing the original will, in-person hearings and how a surviving spouse's bank accounts pass.
+
 Jackson County families in Murphysboro and Carbondale can read [how probate works in Jackson County, Illinois](/learn/illinois/how-probate-works-in-jackson-county-illinois), which covers the courthouse, the Circuit Clerk, filing the will and what happens when someone dies with no will.
 
 Probate in Ogle County: [how probate works in Ogle County, Illinois](/learn/illinois/how-probate-works-in-ogle-county), covering the Oregon Judicial Center, the Circuit Clerk, remote hearings and an executor who lives out of state.
