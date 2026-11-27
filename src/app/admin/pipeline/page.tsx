@@ -2,6 +2,7 @@ import Link from "next/link";
 import { can, ForbiddenError } from "@/server/auth/policy";
 import { PIPELINE_COLUMNS, pipelineBoard, RETAINER_LABELS, type PipelineColumn, type PipelineFilters } from "@/server/portal/pipeline";
 import { currentActor, getDb, scopedDb } from "@/server/runtime";
+import LeadPanelSlot from "@/app/portal/leads/LeadPanelSlot";
 import styles from "./pipeline.module.css";
 
 export const dynamic = "force-dynamic";
@@ -14,7 +15,7 @@ const ago = (iso: string, now: Date) => {
 };
 const DAY_RE = /^\d{4}-\d{2}-\d{2}$/;
 
-type Search = { lawyer?: string; column?: string; from?: string; to?: string };
+type Search = { lawyer?: string; column?: string; from?: string; to?: string; lead?: string };
 
 function hrefWith(sp: Search, patch: Partial<Search>): string {
   const q = new URLSearchParams();
@@ -102,9 +103,9 @@ export default async function PipelinePage({ searchParams }: { searchParams: Pro
         <tbody>
           {board.rows.length === 0 && <tr><td className={styles.empty} colSpan={6}>No leads match these filters.</td></tr>}
           {board.rows.map((r) => (
-            <tr key={r.leadId}>
+            <tr key={r.leadId} className={sp.lead === r.leadId ? styles.rowOn : undefined}>
               <td className={styles.who}>
-                <Link href={`/portal/leads/${r.leadId}`}>{r.urgent && <span className={styles.urgent}>Urgent · </span>}{r.label}</Link>
+                <Link href={hrefWith(sp, { lead: r.leadId })} scroll={false}>{r.urgent && <span className={styles.urgent}>Urgent · </span>}{r.label}</Link>
                 <span className={styles.sub}>{r.matter} · {r.state}{r.offerOnly ? " · offer card only" : ""}</span>
               </td>
               <td data-label="Lawyer">{r.lawyerName ?? <span className={styles.sub}>Not assigned</span>}{r.firmName && actor.role === "platform_admin" && <span className={styles.sub}>{r.firmName}</span>}</td>
@@ -119,7 +120,8 @@ export default async function PipelinePage({ searchParams }: { searchParams: Pro
           ))}
         </tbody>
       </table>
-      <p className="notice">First names only. Open a lead for the full case. Every view of this page is recorded in the audit log.</p>
+      <LeadPanelSlot actor={actor} leadId={sp.lead} closeHref={hrefWith(sp, { lead: undefined })} />
+      <p className="notice">First names only. Click a lead for a preview, then open its full page. Every view of this page is recorded in the audit log.</p>
     </div>
   );
 }

@@ -96,3 +96,5 @@ a.kpi:hover { text-decoration: none; box-shadow: 0 6px 18px rgb(27 42 48 / 0.08)
     --t-warn: #f0c66d; --t-warn-bg: #3a2f14; --t-danger: #f0a093; --t-danger-bg: #3b2421; }
   .leadRow:hover { background: #1c272b; }
 }
+
+.leadRowOn, .leadRowOn:hover { background: var(--t-info-bg); box-shadow: inset 3px 0 0 var(--t-info); }

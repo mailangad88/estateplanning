@@ -72,7 +72,7 @@ export default function ShellFrame({ groups, userName, roleLabel, children }: { 
           <button type="button" className={styles.menuBtn} onClick={() => setOpen(true)} aria-label="Open menu" aria-controls="staff-nav" aria-expanded={open}>
             <Menu size={20} aria-hidden />
           </button>
-          <p className={styles.crumb}>{current?.label ?? "Portal"}</p>
+          <p className={styles.crumb}>{path.startsWith("/portal/leads/") ? "Lead" : current?.label ?? "Portal"}</p>
           <div className={styles.who}>
             <span className={styles.role}>{roleLabel}</span>
             <span className={styles.avatar} aria-hidden>{initials(userName)}</span>
