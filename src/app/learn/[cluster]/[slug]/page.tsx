@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ShareBar from "@/components/ShareBar";
 import { seoTitle } from "@/lib/seo";
 import OfficialSources from "@/components/OfficialSources";
 import Link from "next/link";
@@ -131,6 +132,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
           </dl>
         </section>
       )}
+      <ShareBar title={a.title} />
       <LinkList
         id="related"
         title="Keep reading"

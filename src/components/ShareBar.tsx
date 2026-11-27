@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { track } from "@/components/capture";
 import { site } from "@/config/site";
 
@@ -10,7 +11,14 @@ import { site } from "@/config/site";
  * Shared links carry utm_source=share so leads from shares show up as their own channel. Nothing is sent
  * anywhere until the visitor picks an option; the analytics event records only the method.
  */
-export default function ShareBar({ path, title, prompt = "Send this to someone you plan with" }: { path: string; title: string; prompt?: string }) {
+export default function ShareBar({ path: givenPath, title: givenTitle, prompt = "Send this to someone you plan with" }: { path?: string; title?: string; prompt?: string }) {
+  // Path and title default to the current page, so the bar drops into any template.
+  const pathname = usePathname();
+  const path = givenPath ?? pathname ?? "/";
+  const [title, setTitle] = useState(givenTitle ?? "Family Future Planning");
+  useEffect(() => {
+    if (!givenTitle) setTitle(document.title.split(" | ")[0] || "Family Future Planning");
+  }, [givenTitle]);
   const [copied, setCopied] = useState(false);
   // Decided after hydration so the server and first client render match.
   const [canNative, setCanNative] = useState(false);

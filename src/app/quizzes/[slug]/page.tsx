@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ShareBar from "@/components/ShareBar";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, CardGrid, ReviewNote } from "@/components/ui";
 import { PageHero } from "@/components/page-hero";
@@ -48,6 +49,7 @@ export default async function QuizPage({ params }: Props) {
       <ReviewNote reviewed={q.reviewed} updated={q.updated} />
       <p className="notice">General information, not legal advice. Laws differ by state.</p>
       <JsonLd data={[breadcrumbLd([{ name: "Home", path: "/" }, { name: "Quizzes", path: "/quizzes" }, { name: q.title, path: `/quizzes/${q.slug}` }])]} />
+      <ShareBar />
     </article>
   );
 }

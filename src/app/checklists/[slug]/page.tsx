@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ShareBar from "@/components/ShareBar";
 import { notFound } from "next/navigation";
 import { bySlug, getChecklists } from "@/lib/content";
 import { Breadcrumbs, CardGrid, ReviewNote } from "@/components/ui";
@@ -49,6 +50,7 @@ export default async function ChecklistPage({ params }: Props) {
           breadcrumbLd([{ name: "Home", path: "/" }, { name: "Checklists", path: "/checklists" }, { name: c.title, path: `/checklists/${c.slug}` }]),
         ]}
       />
+      <ShareBar />
     </article>
   );
 }

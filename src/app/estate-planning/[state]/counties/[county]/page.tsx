@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ShareBar from "@/components/ShareBar";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -231,6 +232,7 @@ export default async function CountyPage({ params }: { params: Promise<Params> }
           </ul>
         </>
       )}
+      <ShareBar />
     </article>
   );
 }
