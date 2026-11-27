@@ -19,6 +19,8 @@ import type { OrganizerSummaryView } from "@/server/services/familyPlan";
 
 import { leadSnapshot } from "@/server/portal/leadSnapshot";
 import { DetailsList, OpenTasks, StageTracker, StatusChips } from "../LeadParts";
+import { IntakeSection } from "../IntakeSection";
+import { questionnaireBrief } from "@/server/services/questionnaire";
 import styles from "../leads.module.css";
 import { SendRetainer } from "./SendRetainer";
 import { SpouseInvite } from "./SpouseInvite";
@@ -109,8 +111,9 @@ function OrganizerSummary({ view }: { view: OrganizerSummaryView }) {
   );
 }
 
-export default async function CasePage({ params }: { params: Promise<{ id: string }> }) {
+export default async function CasePage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ ok?: string }> }) {
   const { id } = await params;
+  const { ok } = await searchParams;
   const actor = await currentActor();
   if (!actor) return <p>Please <Link href="/portal">sign in</Link>.</p>;
   let view;
@@ -134,9 +137,12 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
 
   const snap = await leadSnapshot(db, view, lead);
   const caseTeam = view.access === "full" && !!lead?.assignedLawyerId && can(actor, "view_case_board");
+  const intake = caseTeam && lead ? await questionnaireBrief(rawDb, actor, lead) : undefined;
+  const intakeWaiting = view.access === "full" && !lead?.assignedLawyerId && !lead?.exit && actor.role !== "marketing";
 
   return (
     <div className={styles.page}>
+      {ok === "created" && <p className={styles.flashOk} role="status">Lead added{h.assignedLawyer ? ` and assigned to ${h.assignedLawyer.replace(/,?\s*Esq\.?$/i, "")}` : lead?.exit ? ". It is outside the states we serve, so it was logged as not a fit" : ""}.</p>}
       <p className={styles.crumbs}><Link href="/portal">Home</Link> › {can(actor, "view_pipeline") ? <Link href="/admin/pipeline">Leads</Link> : "Leads"} › {h.name}</p>
       {/* 1. Header: who, where on the journey, what to do */}
       <header className={styles.hero}>
@@ -147,7 +153,7 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
         </div>
         <div className={styles.heroActions}>
           {caseTeam && <Link href={`/admin/cases/${id}`} className="primary">Case journey</Link>}
-          {caseTeam && <Link href={`/admin/cases/${id}/intake`}>Intake questionnaire</Link>}
+          {caseTeam && <Link href={`/admin/cases/${id}/intake`}>Intake form</Link>}
           {view.access === "conflict_card" && h.offerAssignmentId && <OfferActions assignmentId={h.offerAssignmentId} />}
           {view.access === "full" && h.assignedLawyer && actor.role !== "marketing" && <InviteClient leadId={id} />}
         </div>
@@ -156,6 +162,9 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
 
       <div className={styles.layout}>
       <div className={styles.main}>
+      {/* 1a. The attorney's intake form */}
+      <IntakeSection leadId={id} brief={intake} waiting={intakeWaiting} />
+
       {/* 1b. Who is handling it, and every hand-off */}
       {(canRefer || referralLog.length > 0) && (
         <section id="referrals">

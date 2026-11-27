@@ -295,9 +295,10 @@ a.tile:hover { border-color: var(--brand); }
 .pagerNav a, .pagerNav > span[aria-hidden] { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 8px; border: 1px solid var(--border); color: var(--text); }
 .pagerNav > span[aria-hidden] { opacity: 0.35; }
 
-.panel { position: fixed; top: 0; right: 0; bottom: 0; z-index: 70; width: min(460px, 100vw); overflow: auto; background: var(--surface); border-left: 1px solid var(--border); box-shadow: -18px 0 48px rgb(14 57 64 / 0.18); animation: panelIn 0.18s ease-out; margin: 0; padding: 0; border-radius: 0; max-width: none; float: none; }
+/* The case list's slide-over. Its own class: .panel above is the side cards on the case and intake pages. */
+.slideOver { position: fixed; top: 0; right: 0; bottom: 0; z-index: 70; width: min(460px, 100vw); overflow: auto; background: var(--surface); border-left: 1px solid var(--border); box-shadow: -18px 0 48px rgb(14 57 64 / 0.18); animation: panelIn 0.18s ease-out; margin: 0; padding: 0; border-radius: 0; max-width: none; float: none; }
 @keyframes panelIn { from { transform: translateX(24px); opacity: 0; } to { transform: none; opacity: 1; } }
-@media (prefers-reduced-motion: reduce) { .panel { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .slideOver { animation: none; } }
 .panelBar { position: sticky; top: 0; z-index: 1; display: flex; align-items: center; gap: 6px; padding: 14px 16px; background: var(--brand-deep); color: #e7efee; font-size: 0.8rem; font-weight: 600; }
 .panelBar > span { margin-right: auto; letter-spacing: 0.03em; }
 .panelIcon { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 8px; color: #e7efee; }

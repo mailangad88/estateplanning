@@ -242,6 +242,7 @@ export async function portalHome(db: Db, actor: Actor, now = new Date()): Promis
     }
   }
 
+  if (can(actor, "create_lead")) actions.push({ href: "/portal/leads/new", label: "+ Add a lead" });
   await audit(db, actor, { action: "portal.home", resourceType: "portal", resourceId: actor.firmId ?? "all", detail: { work: work.length, leads: leads.length }, at: now });
   return {
     headline,

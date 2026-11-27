@@ -4,14 +4,14 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import {
   BarChart3, Briefcase, CalendarDays, ClipboardCheck, FileCheck2, FileText, Film, Gauge, HandCoins, HeartPulse, Home, Inbox,
-  LayoutList, LogOut, Menu, MessageSquareText, Percent, Scale, Share2, Star, Target, Users, X, type LucideIcon,
+  LayoutList, LogOut, Menu, MessageSquareText, Percent, Scale, Share2, Star, Target, UserPlus, Users, X, type LucideIcon,
 } from "lucide-react";
 import { activeHref } from "@/lib/navMatch";
 import type { NavGroup, NavIcon } from "@/server/portal/staffNav";
 import styles from "./shell.module.css";
 
 const ICONS: Record<NavIcon, LucideIcon> = {
-  home: Home, board: Briefcase, pipeline: LayoutList, queue: Inbox, referrals: Share2, partners: Users, health: HeartPulse,
+  home: Home, add: UserPlus, board: Briefcase, pipeline: LayoutList, queue: Inbox, referrals: Share2, partners: Users, health: HeartPulse,
   retainers: FileText, fees: Percent, commission: HandCoins, capacity: Gauge,
   analytics: BarChart3, conversions: Target, reviews: Star, seminars: CalendarDays, studio: Film,
   pages: FileCheck2, facts: Scale, templates: MessageSquareText, log: ClipboardCheck,
@@ -72,7 +72,7 @@ export default function ShellFrame({ groups, userName, roleLabel, children }: { 
           <button type="button" className={styles.menuBtn} onClick={() => setOpen(true)} aria-label="Open menu" aria-controls="staff-nav" aria-expanded={open}>
             <Menu size={20} aria-hidden />
           </button>
-          <p className={styles.crumb}>{path.startsWith("/portal/leads/") ? "Lead" : current?.label ?? "Portal"}</p>
+          <p className={styles.crumb}>{path === active ? current?.label : path.startsWith("/portal/leads/") ? "Lead" : current?.label ?? "Portal"}</p>
           <div className={styles.who}>
             <span className={styles.role}>{roleLabel}</span>
             <span className={styles.avatar} aria-hidden>{initials(userName)}</span>

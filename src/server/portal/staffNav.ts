@@ -8,7 +8,7 @@ import { canStudio } from "@/server/studio/access";
 import type { Actor } from "@/server/types";
 
 export type NavIcon =
-  | "home" | "board" | "pipeline" | "queue" | "referrals" | "partners" | "health"
+  | "home" | "add" | "board" | "pipeline" | "queue" | "referrals" | "partners" | "health"
   | "retainers" | "fees" | "commission" | "capacity"
   | "analytics" | "conversions" | "reviews" | "seminars" | "studio"
   | "pages" | "facts" | "templates" | "log";
@@ -25,6 +25,7 @@ export function staffNav(actor: Actor): NavGroup[] {
     {
       label: para ? "Your work" : "Leads & cases",
       items: [
+        [can(actor, "create_lead"), { href: "/portal/leads/new", label: "Add a lead", icon: "add" }],
         [can(actor, "view_case_board"), { href: "/admin/cases", label: para ? "Your cases" : "Case board", icon: "board" }],
         [can(actor, "view_pipeline"), { href: "/admin/pipeline", label: "Lead pipeline", icon: "pipeline" }],
         [can(actor, "work_intake_queue"), { href: "/portal/queue", label: "Intake queue", icon: "queue" }],
