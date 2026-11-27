@@ -337,3 +337,9 @@ table.facts th { width: 34%; background: var(--surface); }
 @media (max-width: 900px) { .book-layout { grid-template-columns: 1fr; gap: 24px; } .book-layout aside { position: static; } }
 .book-facts { list-style: none; padding: 0; margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .book-facts li { padding: 6px 12px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); font-size: var(--text-sm); font-weight: 600; }
+
+/* Share bar (ShareBar.tsx): family-first sharing under articles and tools. */
+.share-bar { margin: 28px 0; padding: 14px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+.share-bar__prompt { margin: 0 0 10px; font-weight: 600; }
+.share-bar__actions { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.share-bar__link { font-size: var(--text-sm); }

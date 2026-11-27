@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ShareBar from "@/components/ShareBar";
 import { notFound } from "next/navigation";
 import { TOOLS } from "@/config/tools";
 import { Breadcrumbs, CardGrid, Cta } from "@/components/ui";
@@ -86,6 +87,7 @@ export default async function ToolPage({ params }: Props) {
       <div className="answer"><strong>In short</strong>{t.answer}</div>
       {STATE_AWARE[slug] ? <StatePrefill tool={STATE_AWARE[slug]} /> : <Tool />}
       <p className="notice">Estimates are for education only and are not legal, tax or financial advice.</p>
+      <ShareBar path={`/tools/${t.slug}`} title={t.title} prompt="Send this tool to your spouse, sibling or parent" />
       <KitFaqs url={`/tools/${t.slug}`} topic={t.title} context={`${t.description} ${t.answer}`} categories={["Cost and process", "Getting started"]} />
       <Cta
         from={`tool-${t.slug}`.slice(0, 60)}

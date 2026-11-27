@@ -1,4 +1,4 @@
-import { firm, servedStates, SITE_DISCLAIMER } from "@/config/firm";
+import { firm, packages, servedStates, SITE_DISCLAIMER } from "@/config/firm";
 import { stateNames } from "@/lib/served-state-names";
 import { allPages } from "@/lib/pages";
 import { abs } from "@/lib/seo";
@@ -20,7 +20,10 @@ export function GET() {
     "",
     `- What it is: the estate planning website of ${firm.firmLegalName}. Visitors book a consult and are matched with an estate planning attorney licensed in ${where}.`,
     `- States served: ${where}. Visitors from other states are told so and are not matched.`,
-    `- Packages: will, trust and power of attorney packages with published prices; each includes one round of revisions. Prices: ${abs("/pricing")}`,
+    `- Packages (flat fees, published at ${abs("/pricing")}): ${packages.map((p) => `${p.name} ${p.price}`).join("; ")}. One price per plan for one person or a couple. Essentials and Complete include one round of revisions.`,
+    ...packages.map((p) => `  - ${p.name} (${p.price}): ${p.includes.join(", ")}.`),
+    `- Free tools: calculators and quizzes at ${abs("/tools")}; printable checklists, worksheets and planners at ${abs("/free")}.`,
+    `- How to cite: link the page you quote, name the source as ${firm.brandName}, and note that it is general information, not legal advice.`,
     `- How it works: ${abs("/how-it-works")} · Book a consult: ${abs("/book")} · Phone: ${firm.phone}`,
     `- How content is written and reviewed: ${abs("/editorial-policy")}`,
     `- Disclaimer: ${SITE_DISCLAIMER}`,

@@ -17,7 +17,10 @@ import fs from "node:fs";
 
 const range = process.argv[2] ?? "HEAD~1..HEAD";
 const site = (process.env.SITE_URL ?? process.env.NEXT_PUBLIC_SITE_URL ?? "").replace(/\/$/, "");
-const key = process.env.INDEXNOW_KEY;
+// The committed public key (src/config/indexnow.json) is the default; INDEXNOW_KEY overrides it.
+// DRY_RUN=1 prints the URLs without submitting.
+const committedKey = JSON.parse(fs.readFileSync(new URL("../src/config/indexnow.json", import.meta.url), "utf8")).key;
+const key = process.env.DRY_RUN ? undefined : process.env.INDEXNOW_KEY || committedKey;
 
 /** Every <loc> in the live sitemap index and the sitemaps it lists (one level deep). */
 async function sitemapUrls(root) {
