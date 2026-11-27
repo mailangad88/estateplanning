@@ -79,3 +79,17 @@ describe("case list links", () => {
     expect(listHref({ open: "case-1" }, { open: undefined })).toBe("/admin/cases");
   });
 });
+
+describe("lead snapshot", () => {
+  it("places a paid case in drafting, lists open tasks and names the paralegal", async () => {
+    const { buildCaseView } = await import("@/server/portal/caseView");
+    const { leadSnapshot } = await import("@/server/portal/leadSnapshot");
+    await db.tasks.insert({ id: "t-1", leadId: "case-mine", title: "Call about the deed", ownerId: "u-paralegal", dueAt: new Date(NOW.getTime() - DAY).toISOString() });
+    const view = await buildCaseView(db, user("u-lawyer-a"), "case-mine", NOW);
+    const snap = await leadSnapshot(db, view, (await db.leads.get("case-mine"))!, NOW);
+    expect(snap.phases.find((p) => p.state === "current")?.key).toBe("drafting");
+    expect(snap.phases.filter((p) => p.state === "done").map((p) => p.key)).toEqual(["lead", "consult", "retainer"]);
+    expect(snap.tasks).toEqual([expect.objectContaining({ title: "Call about the deed", overdue: true })]);
+    expect(snap.details.find((d) => d.label === "Paralegal")?.value).toBe("Casey Paralegal");
+  });
+});

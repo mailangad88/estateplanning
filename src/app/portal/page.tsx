@@ -3,6 +3,7 @@ import { devLoginEnabled } from "@/server/auth/session";
 import { portalHome, type Tone } from "@/server/portal/home";
 import { currentActor, getDb, scopedDb } from "@/server/runtime";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import LeadPanelSlot from "./leads/LeadPanelSlot";
 import styles from "./home.module.css";
 
 export const dynamic = "force-dynamic";
@@ -35,7 +36,7 @@ async function SignIn() {
 
 const TONE_CLASS: Record<Tone, string> = { neutral: styles.tNeutral, info: styles.tInfo, good: styles.tGood, warn: styles.tWarn, danger: styles.tDanger };
 
-export default async function PortalHome() {
+export default async function PortalHome({ searchParams }: { searchParams: Promise<{ lead?: string }> }) {
   const actor = await currentActor();
   if (!actor) return <SignIn />;
   const db = scopedDb(await getDb(), actor);
@@ -60,6 +61,7 @@ export default async function PortalHome() {
   }
 
   const home = await portalHome(db, actor);
+  const { lead: openLead } = await searchParams;
   return (
     <div className={styles.home}>
       <div className={styles.top}>
@@ -111,7 +113,7 @@ export default async function PortalHome() {
             <ul className={styles.leadList}>
               {home.leads.map((l) => (
                 <li key={l.leadId}>
-                  <Link href={l.href} className={styles.leadRow}>
+                  <Link href={l.href.startsWith("/portal/leads/") ? `/portal?lead=${l.leadId}` : l.href} scroll={false} className={`${styles.leadRow} ${openLead === l.leadId ? styles.leadRowOn : ""}`}>
                     <span className={styles.leadAvatar} aria-hidden>{l.name.slice(0, 1)}</span>
                     <span className={styles.leadText}>
                       <span className={styles.leadName}>{l.name}{l.urgent && <span className={`${styles.chip} ${styles.tDanger}`}>Urgent</span>}</span>
@@ -125,6 +127,7 @@ export default async function PortalHome() {
           )}
         </section>
       </div>
+      <LeadPanelSlot actor={actor} leadId={openLead} closeHref="/portal" />
     </div>
   );
 }

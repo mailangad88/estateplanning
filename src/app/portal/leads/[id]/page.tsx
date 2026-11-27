@@ -17,6 +17,9 @@ import {
 } from "@/lib/familyPlan";
 import type { OrganizerSummaryView } from "@/server/services/familyPlan";
 
+import { leadSnapshot } from "@/server/portal/leadSnapshot";
+import { DetailsList, OpenTasks, StageTracker, StatusChips } from "../LeadParts";
+import styles from "../leads.module.css";
 import { SendRetainer } from "./SendRetainer";
 import { SpouseInvite } from "./SpouseInvite";
 import { ReferLead } from "./ReferLead";
@@ -129,30 +132,33 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
     view.access === "full" && (actor.role === "attorney" || actor.role === "paralegal") && !h.nextStep.startsWith("Closed") &&
     STAGES.indexOf(h.stage) >= STAGES.indexOf("accepted") && STAGES.indexOf(h.stage) <= STAGES.indexOf("proposal_sent");
 
+  const snap = await leadSnapshot(db, view, lead);
+  const caseTeam = view.access === "full" && !!lead?.assignedLawyerId && can(actor, "view_case_board");
+
   return (
-    <>
-      <p>
-        <Link href="/portal">← Back to the portal</Link>
-        {view.access === "full" && lead?.assignedLawyerId && can(actor, "view_case_board") && <> · <Link href={`/admin/cases/${id}`}>Case journey</Link> · <Link href={`/admin/cases/${id}/intake`}>Intake questionnaire</Link></>}
-      </p>
-      {/* 1. Header */}
-      <h1>{h.urgent && "⚠ "}{h.name}</h1>
-      <p className="lead">{h.matterType} · {h.location} · Score {h.score} (grade {h.grade ?? h.tier}) · {label(h.stage)}{h.assignedLawyer ? ` · ${h.assignedLawyer}` : ""}</p>
-      <p><strong>Next step:</strong> {h.nextStep}{h.offerExpiresAt ? ` (respond by ${when(h.offerExpiresAt)})` : ""}</p>
+    <div className={styles.page}>
+      <p className={styles.crumbs}><Link href="/portal">Home</Link> › {can(actor, "view_pipeline") ? <Link href="/admin/pipeline">Leads</Link> : "Leads"} › {h.name}</p>
+      {/* 1. Header: who, where on the journey, what to do */}
+      <header className={styles.hero}>
+        <div>
+          <h1>{h.name}</h1>
+          <p className={styles.heroSub}>{h.matterType} · {h.location}{h.assignedLawyer ? ` · ${h.assignedLawyer.replace(/,?\s*Esq\.?$/i, "")}` : ""}</p>
+          <StatusChips snap={snap} stage={label(h.stage)} />
+        </div>
+        <div className={styles.heroActions}>
+          {caseTeam && <Link href={`/admin/cases/${id}`} className="primary">Case journey</Link>}
+          {caseTeam && <Link href={`/admin/cases/${id}/intake`}>Intake questionnaire</Link>}
+          {view.access === "conflict_card" && h.offerAssignmentId && <OfferActions assignmentId={h.offerAssignmentId} />}
+          {view.access === "full" && h.assignedLawyer && actor.role !== "marketing" && <InviteClient leadId={id} />}
+        </div>
+        <div className={styles.heroTrack}><StageTracker snap={snap} /></div>
+      </header>
 
-      {h.scoreComponents && h.scoreComponents.length > 0 && (
-        <details>
-          <summary>Why this score</summary>
-          <ul>{h.scoreComponents.map((c, i) => <li key={i}>{c.points > 0 ? "+" : ""}{c.points} {c.label}</li>)}</ul>
-        </details>
-      )}
-
-      {view.access === "conflict_card" && h.offerAssignmentId && <OfferActions assignmentId={h.offerAssignmentId} />}
-      {view.access === "full" && h.assignedLawyer && actor.role !== "marketing" && <InviteClient leadId={id} />}
-
+      <div className={styles.layout}>
+      <div className={styles.main}>
       {/* 1b. Who is handling it, and every hand-off */}
       {(canRefer || referralLog.length > 0) && (
-        <section className="card" id="referrals">
+        <section id="referrals">
           <h2>Referrals</h2>
           <ReferLead
             leadId={id}
@@ -181,7 +187,7 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
 
       {/* 2. Summary */}
       {s.summary && (
-        <section className="card">
+        <section>
           <h2>Summary</h2>
           {s.summary.summary ? <p style={{ whiteSpace: "pre-line" }}>{s.summary.summary}</p> : <p>{s.summary.offerSummary}</p>}
           {s.summary.goals && <p><strong>In their words:</strong> “{s.summary.goals}”</p>}
@@ -193,7 +199,7 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
         <section>
           <h2>Red flags and deadlines</h2>
           <ul>
-            {s.redFlags.redFlags.map((f) => <li key={f} className="error">{f}</li>)}
+            {s.redFlags.redFlags.map((f) => <li key={f} className={styles.flag}>{f}</li>)}
             {s.redFlags.deadlines.map((d) => <li key={d.label}>{d.label}: {d.date}</li>)}
           </ul>
         </section>
@@ -375,14 +381,12 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
         </section>
       )}
 
-      {/* 13. Tasks */}
-      {s.tasks && (
-        <section>
-          <h2>Tasks</h2>
-          {s.tasks.length === 0 ? <p>No open tasks.</p> : (
-            <ul>{s.tasks.map((t) => <li key={t.id}>{t.doneAt ? "✓ " : ""}{t.title} · due {when(t.dueAt)}</li>)}</ul>
-          )}
-        </section>
+      {/* 13. Done tasks (open ones sit in the side rail) */}
+      {s.tasks && s.tasks.some((t) => t.doneAt) && (
+        <details>
+          <summary>Done tasks ({s.tasks.filter((t) => t.doneAt).length})</summary>
+          <ul>{s.tasks.filter((t) => t.doneAt).map((t) => <li key={t.id}>✓ {t.title} · due {when(t.dueAt)}</li>)}</ul>
+        </details>
       )}
 
       {/* 14. Source and attribution */}
@@ -400,6 +404,19 @@ export default async function CasePage({ params }: { params: Promise<{ id: strin
           <ul>{s.audit.map((e) => <li key={e.id}>{when(e.at)} · {e.actorRole} {e.actorId} · {e.action}</li>)}</ul>
         </details>
       )}
-    </>
+      </div>
+
+      <aside className={styles.rail} aria-label="At a glance">
+        <OpenTasks snap={snap} nextStep={`${h.nextStep}${h.offerExpiresAt ? ` (respond by ${when(h.offerExpiresAt)})` : ""}`} />
+        <DetailsList snap={snap} />
+        {h.scoreComponents && h.scoreComponents.length > 0 && (
+          <details className={styles.block}>
+            <summary className={styles.blockHead}>Why this score</summary>
+            <ul>{h.scoreComponents.map((c, i) => <li key={i}>{c.points > 0 ? "+" : ""}{c.points} {c.label}</li>)}</ul>
+          </details>
+        )}
+      </aside>
+      </div>
+    </div>
   );
 }
