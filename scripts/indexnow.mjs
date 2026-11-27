@@ -38,13 +38,15 @@ async function submit(urlList) {
   const host = new URL(site).host;
   // IndexNow accepts up to 10,000 URLs per request.
   for (let i = 0; i < urlList.length; i += 10000) {
-    const body = { host, key, keyLocation: `${site}/indexnow-key.txt`, urlList: urlList.slice(i, i + 10000) };
+    // The committed key is also served at the standard root location (public/<key>.txt), which engines
+    // check when keyLocation is left out; a rotated env key falls back to /indexnow-key.txt.
+    const body = { host, key, ...(key === committedKey ? {} : { keyLocation: `${site}/indexnow-key.txt` }), urlList: urlList.slice(i, i + 10000) };
     const res = await fetch("https://api.indexnow.org/indexnow", {
       method: "POST",
       headers: { "Content-Type": "application/json; charset=utf-8" },
       body: JSON.stringify(body),
     });
-    console.log(`IndexNow: HTTP ${res.status} for ${body.urlList.length} URLs`);
+    console.log(`IndexNow: HTTP ${res.status} for ${body.urlList.length} URLs ${res.status >= 400 ? await res.text() : ""}`);
     if (res.status >= 400) process.exit(1);
   }
 }

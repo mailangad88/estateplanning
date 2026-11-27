@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ShareBar from "@/components/ShareBar";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -91,6 +92,7 @@ export default async function TermPage({ params }: { params: Promise<Params> }) 
       />
       <KitFaqs url={g.url} topic={g.term} context={topic} clusters={clusters} categories={["Getting started"]} title={`Questions people ask about ${g.term.toLowerCase()}`} />
       <CtaBox topic={g.term} from="glossary" />
+      <ShareBar />
     </article>
   );
 }

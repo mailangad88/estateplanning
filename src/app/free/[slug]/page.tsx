@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ShareBar from "@/components/ShareBar";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import MagnetOptIn from "@/components/MagnetOptIn";
@@ -138,6 +139,7 @@ export default async function MagnetLanding({ params }: Props) {
       )}
       <p className="notice">General information, not legal advice. Laws differ by state. Attorney advertising.</p>
       <JsonLd data={[breadcrumbLd([{ name: "Home", path: "/" }, { name: "Free resources", path: "/free" }, { name: m.title, path: `/free/${m.slug}` }])]} />
+      <ShareBar />
     </article>
   );
 }

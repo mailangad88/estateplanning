@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ShareBar from "@/components/ShareBar";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import AnswerBox from "@/components/AnswerBox";
@@ -282,6 +283,7 @@ function LocalStatePage({ s }: { s: StatePage }) {
       <CallbackForm interest={`state:${s.code}`} />
       <Cta />
       <SeoJsonLd data={[{ ...legalServiceLd(), areaServed: s.name }, breadcrumbLd([{ name: "Home", path: "/" }, { name: s.title, path: `/estate-planning/${s.slug}` }])]} />
+      <ShareBar />
     </article>
   );
 }
