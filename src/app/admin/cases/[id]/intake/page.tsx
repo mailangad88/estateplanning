@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { FileText, Flag, HeartHandshake, Home, Lock, ShieldCheck, Users } from "lucide-react";
+import { Lock } from "lucide-react";
+import { INTAKE_ICONS as ICONS } from "@/components/portal/intakeIcons";
 import { QUESTIONNAIRE, QUESTIONNAIRE_STAGES, type QuestionField } from "@/lib/intakeQuestionnaire";
 import { can, ForbiddenError } from "@/server/auth/policy";
 import { currentActor, getDb, scopedDb } from "@/server/runtime";
@@ -11,7 +12,6 @@ import { CaseThread } from "../../parts";
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Intake questionnaire", robots: { index: false, follow: false } };
 
-const ICONS = { users: Users, home: Home, heart: HeartHandshake, shield: ShieldCheck, file: FileText, flag: Flag };
 const OK: Record<string, string> = { save: "Saved.", send: "Sent to the paralegal. They can see this case now.", ready: "Marked complete. The attorney can review it.", comment: "Comment posted." };
 const when = (iso?: string) => (iso ? new Date(iso).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) : "");
 
@@ -64,7 +64,7 @@ export default async function IntakeQuestionnairePage({ params, searchParams }: 
 
   return (
     <div className={styles.board}>
-      <p className={styles.back}><Link href="/admin/cases">← Cases</Link> · <Link href={`/admin/cases/${card.leadId}`}>Case journey</Link> · <Link href={`/portal/leads/${card.leadId}`}>Full case file</Link></p>
+      <p className={styles.back}><Link href="/admin/cases">← Cases</Link> · <Link href={`/admin/cases/${card.leadId}`}>Case journey</Link> · <Link href={`/portal/leads/${card.leadId}#intake`}>Lead page</Link></p>
       {sp.error && <p className={`${styles.flash} ${styles.flashErr}`} role="alert">{sp.error}</p>}
       {sp.ok && OK[sp.ok] && <p className={`${styles.flash} ${styles.flashOk}`} role="status">{OK[sp.ok]}</p>}
 

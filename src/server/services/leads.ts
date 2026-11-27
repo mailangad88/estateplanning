@@ -51,12 +51,12 @@ function normalizePhone(p: string) {
 
 /**
  * Finds an existing person by email, phone or browser id so one person never
- * becomes two records. Phone is optional on some forms, so an empty phone never matches.
+ * becomes two records. Phone (and, for leads staff enter by hand, email) can be empty, so an empty value never matches.
  */
 export async function findPerson(db: Db, email: string, phone: string, visitorId?: string): Promise<Person | undefined> {
   const e = email.trim().toLowerCase();
   const p = normalizePhone(phone);
-  const byContact = (await db.persons.list((x) => x.email.toLowerCase() === e || (p !== "" && normalizePhone(x.phone) === p)))[0];
+  const byContact = (await db.persons.list((x) => (e !== "" && x.email.toLowerCase() === e) || (p !== "" && normalizePhone(x.phone) === p)))[0];
   if (byContact || !visitorId) return byContact;
   const prior = (await db.leads.list((l) => l.visitorId === visitorId))[0];
   return prior ? await db.persons.get(prior.personId) : undefined;

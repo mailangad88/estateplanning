@@ -51,6 +51,7 @@ export default async function PipelinePage({ searchParams }: { searchParams: Pro
       <p><Link href="/portal">← Portal</Link></p>
       <div className={styles.head}>
         <h1>Pipeline</h1>
+        {can(actor, "create_lead") && <Link href="/portal/leads/new" className="button small">+ Add a lead</Link>}
         <p className="notice">
           {board.total} leads · {signed} with a signed retainer{actor.role === "firm_admin" ? " · your firm's leads only" : ""}
         </p>

@@ -173,6 +173,7 @@ export type GlobalAction =
   | "view_partners"
   | "manage_partners"
   | "view_pipeline"
+  | "create_lead"
   | "view_case_board"
   | "view_commissions"
   | "view_referrals"
@@ -210,6 +211,9 @@ const GLOBAL: Record<GlobalAction, Role[]> = {
   manage_partners: ["platform_admin", "firm_admin"],
   // The pipeline board: every lead the viewer may see, by stage, with retainer status. Rows follow leadAccess.
   view_pipeline: ["platform_admin", "firm_admin"],
+  // Entering a lead by hand (phone call, walk-in, referral). An attorney's own entry is assigned to them; a firm
+  // admin's goes to one of their firm's attorneys, so nobody creates a lead they then cannot see.
+  create_lead: ["platform_admin", "intake", "firm_admin", "attorney"],
   // The case board (/admin/cases). Rows still go through leadAccess: a paralegal sees only their assigned cases.
   view_case_board: ["platform_admin", "firm_admin", "attorney", "paralegal"],
   // Paralegal commissions (/admin/commissions). A paralegal sees only their own cases' rows.

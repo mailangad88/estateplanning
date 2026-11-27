@@ -130,7 +130,7 @@ export function CasePanel({ view, sp, closeHref }: { view: CaseJourneyView; sp: 
   const paidAt = j.steps.find((s) => s.key === "paid")?.at;
   const ret = listHref(sp, { open: card.leadId });
   return (
-    <aside className={styles.panel} aria-label={`Case ${card.name}`}>
+    <aside className={styles.slideOver} aria-label={`Case ${card.name}`}>
       <div className={styles.panelBar}>
         <span>Case {ref(card.leadId)}</span>
         <Link href={`/admin/cases/${card.leadId}`} className={styles.panelIcon} title="Open the full case"><ExternalLink size={16} aria-hidden /><span className="sr-only">Open the full case</span></Link>

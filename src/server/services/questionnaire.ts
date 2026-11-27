@@ -64,6 +64,29 @@ export async function questionnaireView(db: Db, actor: Actor, leadId: string, no
   };
 }
 
+/**
+ * The questionnaire as the lead's own page shows it: answers, stage and progress, without the comment thread.
+ * Writes no audit entry of its own; the lead page's view is already audited. Undefined when this viewer is not on the case team.
+ */
+export async function questionnaireBrief(db: Db, actor: Actor, lead: Lead, now = new Date()): Promise<Omit<QuestionnaireView, "comments" | "canMarkReady"> | undefined> {
+  if (!actor.mfa && process.env.NODE_ENV === "production") return undefined;
+  if (!lead.assignedLawyerId) return undefined;
+  const assignments = await db.assignments.list(undefined, { leadId: lead.id });
+  if (!canOnLead(actor, "view", lead, assignments, now)) return undefined;
+  const stage = questionnaireStage(lead);
+  const answers = lead.questionnaire?.answers ?? prefillAnswers(lead, await db.persons.get(lead.personId));
+  const open = stage !== "signed_off" && !lead.exit;
+  return {
+    answers,
+    prefilled: !lead.questionnaire,
+    record: lead.questionnaire,
+    stage,
+    progress: questionnaireProgress(answers),
+    canEdit: open && canOnLead(actor, "edit_questionnaire", lead, assignments, now),
+    canSend: open && canOnLead(actor, "assign_paralegal", lead, assignments, now),
+  };
+}
+
 export async function saveQuestionnaire(db: Db, actor: Actor, leadId: string, input: Record<string, unknown>, now = new Date()): Promise<Lead> {
   requireMfa(actor);
   const { lead, assignments } = await load(db, leadId);

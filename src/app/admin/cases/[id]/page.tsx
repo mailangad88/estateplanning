@@ -59,7 +59,7 @@ export default async function CaseJourneyPage({ params, searchParams }: { params
 
   return (
     <div className={styles.board}>
-      <p className={styles.back}><Link href="/admin/cases">← Cases</Link> · <Link href={`/portal/leads/${card.leadId}`}>Full case file</Link></p>
+      <p className={styles.back}><Link href="/admin/cases">← Cases</Link> · <Link href={`/portal/leads/${card.leadId}`}>Lead page</Link></p>
       {sp.error && <p className={`${styles.flash} ${styles.flashErr}`} role="alert">{sp.error}</p>}
       {updatedLabel && <p className={`${styles.flash} ${styles.flashOk}`} role="status">Updated: {updatedLabel}</p>}
       {sp.assigned && <p className={`${styles.flash} ${styles.flashOk}`} role="status">Paralegal updated.</p>}
