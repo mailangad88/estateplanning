@@ -201,6 +201,12 @@ If a death has just happened, file the will with the clerk right away, and mark 
 
 ## More questions people ask
 
+Families in the 4th Judicial Circuit can read [how probate works in Effingham County, Illinois](/learn/illinois/how-probate-works-in-effingham-county), which covers the Effingham clerk, filing the will, self-help and what a parent's living trust changes.
+
+Handling an estate in Galesburg or elsewhere in Knox County? See [how probate works in Knox County, Illinois](/learn/illinois/how-probate-works-in-knox-county-illinois), including the courthouse, filing the will and what to do if the original is missing.
+
+Families in Charleston and Mattoon can read [how probate works in Coles County, Illinois](/learn/illinois/how-probate-works-in-coles-county-illinois), which covers the courthouse, the original will and an executor's first 30 days.
+
 Families in Marion, Herrin and Carterville can read [how probate works in Williamson County, Illinois](/learn/illinois/how-probate-works-in-williamson-county-illinois) for the courthouse, the clerk, filing the will and how a parent's debts are paid.
 
 Families in Sterling, Rock Falls and Morrison can read [how probate works in Whiteside County](/learn/illinois/how-probate-works-in-whiteside-county) for the courthouse, the clerk, remote hearings and what happens when a parent died on Medicaid.
